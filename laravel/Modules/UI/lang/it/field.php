@@ -14,38 +14,56 @@ return [
         'edit' => [
             'label' => 'Modifica',
             'tooltip' => 'Modifica campo',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'toggleColumns' => [
             'label' => 'Mostra/Nascondi Colonne',
             'tooltip' => 'Mostra o nascondi colonne della tabella',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'reorderRecords' => [
             'label' => 'Riordina Record',
             'tooltip' => 'Riordina i record della tabella',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'resetFilters' => [
             'label' => 'Reset Filtri',
             'tooltip' => 'Ripristina i filtri predefiniti',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'applyFilters' => [
             'label' => 'Applica Filtri',
             'tooltip' => 'Applica i filtri selezionati',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'openFilters' => [
             'label' => 'Apri Filtri',
             'tooltip' => 'Apri il pannello dei filtri',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'navigation' => [
@@ -59,6 +77,9 @@ return [
         'placeholder' => 'Seleziona modello',
         'helper_text' => 'Modello per la gestione dei campi',
     ],
+<<<<<<< HEAD
     'label' => 'Field',
     'plural_label' => 'Field (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

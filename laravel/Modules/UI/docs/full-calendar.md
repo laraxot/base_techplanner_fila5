@@ -156,8 +156,16 @@ public function eventDidMount(): string
 - [Documentazione ufficiale](https://filamentphp.com/plugins/saade-fullcalendar)
 - [GitHub](https://github.com/saade/filament-fullcalendar)
 - [Esempio Laravel Daily](https://laraveldaily.com/post/filament-show-calendar-of-tasks-with-fullcalendar)
+<<<<<<< HEAD
 - [Modules/UI/docs/full-calendar.md](../modules/ui/docs/full-calendar.md)
 - [Regole .mdc](../.cursor/rules/cursor.mdc), [../.windsurf/rules/windsurf.mdc]
 
 ## Ultimo aggiornamento
 [DATE]
+=======
+- [Modules/UI/docs/full-calendar.md](../Modules/UI/docs/full-calendar.md)
+- [Regole .mdc](../.cursor/rules/cursor.mdc), [../.windsurf/rules/windsurf.mdc]
+
+## Ultimo aggiornamento
+2025-06-04
+>>>>>>> 4b6b99016 (first commit)

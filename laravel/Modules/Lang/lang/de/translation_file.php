@@ -14,6 +14,7 @@ return [
     'fields' => [
         'edit' => [
             'label' => 'edit',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -35,11 +36,23 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'content' => [
             'description' => 'content',
             'helper_text' => 'content',
             'placeholder' => 'content',
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
         ],
@@ -48,6 +61,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'snapshots' => [
             'fields' => [
@@ -65,6 +83,7 @@ return [
                     ],
                 ],
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -81,6 +100,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'key' => [
+            'label' => 'key',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'navigation' => [
@@ -92,6 +119,9 @@ return [
     'model' => [
         'label' => 'translation file.model',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

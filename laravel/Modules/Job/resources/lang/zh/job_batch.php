@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -65,6 +66,32 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'name' => [
+            'label' => '名称',
+        ],
+        'total_jobs' => [
+            'label' => '总任务数',
+        ],
+        'pending_jobs' => [
+            'label' => '待处理任务',
+        ],
+        'failed_jobs' => [
+            'label' => '失败任务',
+        ],
+        'failed_job_ids' => [
+            'label' => '失败任务ID',
+        ],
+        'options' => [
+            'label' => '选项',
+        ],
+        'created_at' => [
+            'label' => '创建时间',
+        ],
+        'finished_at' => [
+            'label' => '完成时间',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -75,4 +102,8 @@ return [
             'label' => '取消',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

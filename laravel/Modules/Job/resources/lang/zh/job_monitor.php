@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -59,6 +60,29 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'job_id' => [
+            'label' => '任务',
+        ],
+        'status' => [
+            'label' => '状态',
+        ],
+        'progress' => [
+            'label' => '进度',
+        ],
+        'start_time' => [
+            'label' => '开始时间',
+        ],
+        'end_time' => [
+            'label' => '结束时间',
+        ],
+        'estimated_completion' => [
+            'label' => '预计完成时间',
+        ],
+        'created_at' => [
+            'label' => '创建时间',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -69,4 +93,8 @@ return [
             'label' => '取消任务',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

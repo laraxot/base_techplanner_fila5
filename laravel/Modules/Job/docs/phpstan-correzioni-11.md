@@ -1,4 +1,8 @@
 # Correzioni PHPStan Livello 10 - Modulo Job
+<<<<<<< HEAD
+=======
+**Data**: 2025-11-05
+>>>>>>> 4b6b99016 (first commit)
 **Errori iniziali**: 31
 **Errori finali**: 0
 **Status**: ✅ COMPLETATO

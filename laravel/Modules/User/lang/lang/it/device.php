@@ -11,6 +11,7 @@ return [
         ],
     ],
     'fields' => [
+<<<<<<< HEAD
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -94,6 +95,45 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+        'id' => [
+            'label' => 'id',
+        ],
+        'mobile_id' => [
+            'label' => 'mobile_id',
+        ],
+        'device' => [
+            'label' => 'device',
+        ],
+        'platform' => [
+            'label' => 'platform',
+        ],
+        'browser' => [
+            'label' => 'browser',
+        ],
+        'version' => [
+            'label' => 'version',
+        ],
+        'is_robot' => [
+            'label' => 'is_robot',
+        ],
+        'robot' => [
+            'label' => 'robot',
+        ],
+        'is_desktop' => [
+            'label' => 'is_desktop',
+        ],
+        'is_mobile' => [
+            'label' => 'is_mobile',
+        ],
+        'is_tablet' => [
+            'label' => 'is_tablet',
+        ],
+        'is_phone' => [
+            'label' => 'is_phone',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -113,6 +153,9 @@ return [
             'label' => 'create',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

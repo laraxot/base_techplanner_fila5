@@ -48,6 +48,7 @@ return [
             'email_sent_error' => 'Errore durante l\'invio dell\'email',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Pages',
     'plural_label' => 'Pages (Plurale)',
     'navigation' => [
@@ -92,4 +93,6 @@ return [
             'label' => 'Elimina Pages',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

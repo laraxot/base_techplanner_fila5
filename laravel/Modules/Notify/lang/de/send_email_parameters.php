@@ -14,6 +14,7 @@ return [
         ],
     ],
     'fields' => [
+<<<<<<< HEAD
         'name' => [
             'label' => 'Nome Area',
             'tooltip' => '',
@@ -44,6 +45,13 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        'name' => 'Nome Area',
+        'parent' => 'Settore di appartenenza',
+        'parent.name' => 'Settore di appartenenza',
+        'parent_name' => 'Settore di appartenenza',
+        'assets' => 'Quantità di asset',
+>>>>>>> 4b6b99016 (first commit)
     ],
     'actions' => [
         'import' => [
@@ -61,6 +69,9 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

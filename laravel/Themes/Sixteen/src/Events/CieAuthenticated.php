@@ -10,7 +10,11 @@ use Themes\Sixteen\Models\User;
 
 /**
  * Evento lanciato quando un utente si autentica con successo tramite CIE
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> 4b6b99016 (first commit)
  * Questo evento permette di reagire all'autenticazione CIE
  * per logging, analytics, integrazione con sistemi esterni, etc.
  */
@@ -21,7 +25,12 @@ class CieAuthenticated
     public function __construct(
         public User $user,
         public array $cieAttributes
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 4b6b99016 (first commit)
 
     /**
      * Ottiene il metodo di autenticazione CIE utilizzato
@@ -103,4 +112,8 @@ class CieAuthenticated
             'timestamp' => now()->toISOString(),
         ];
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4b6b99016 (first commit)

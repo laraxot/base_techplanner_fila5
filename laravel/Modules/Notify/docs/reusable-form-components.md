@@ -163,7 +163,11 @@ These components are used in `SendRecordsNotificationBulkAction` to replace the 
 ## Related Documentation
 - [Send Notification Bulk Action](./send-notification-bulk-action.md)
 - [Enums Documentation](../enums/)
+<<<<<<< HEAD
 - [Filament Extension Rules](../filament_extension_rules.md)
+=======
+- [Filament Extension Rules](../FILAMENT_EXTENSION_RULES.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Last Updated
 December 19, 2025

@@ -37,9 +37,12 @@ return [
                 'help' => 'Benutzerrolle im System',
                 'validation' => 'required|string',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'action' => [
             'label' => 'Aktion',
@@ -88,9 +91,12 @@ return [
                     'color' => 'gray',
                 ],
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'subject' => [
             'label' => 'Objekt',
@@ -114,36 +120,48 @@ return [
                 'help' => 'Beschreibender Name des Objekts',
                 'validation' => 'nullable|string|max:255',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Beschreibung',
             'placeholder' => 'Beschreibung eingeben',
             'help' => 'Detaillierte Beschreibung der Aktivität',
             'validation' => 'nullable|string|max:1000',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'ip_address' => [
             'label' => 'IP-Adresse',
             'placeholder' => 'Z.B. 192.168.1.1',
             'help' => 'IP-Adresse, von der die Aktion ausgeführt wurde',
             'validation' => 'nullable|ip',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'user_agent' => [
             'label' => 'User Agent',
             'placeholder' => 'Browser und Betriebssystem',
             'help' => 'Informationen über den Browser und das System des Benutzers',
             'validation' => 'nullable|string|max:500',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => 'Datum',
@@ -151,9 +169,12 @@ return [
             'help' => 'Datum und Uhrzeit, zu der die Aktivität erstellt wurde',
             'validation' => 'required|date',
             'format' => 'd/m/Y H:i:s',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'properties' => [
             'label' => 'Eigenschaften',
@@ -169,20 +190,27 @@ return [
                 'placeholder' => 'Aktueller Wert',
                 'help' => 'Wert nach der Änderung',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'toggleColumns' => [
             'label' => 'Spalten ein-/ausblenden',
             'help' => 'Spaltensichtbarkeit konfigurieren',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'reorderRecords' => [
             'label' => 'Datensätze neu anordnen',
             'help' => 'Datensätze in der Tabelle neu anordnen',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -198,6 +226,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'resetFilters' => [
+            'label' => 'Filter zurücksetzen',
+        ],
+        'applyFilters' => [
+            'label' => 'Filter anwenden',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'filters' => [
@@ -351,19 +387,33 @@ return [
     'pagination' => [
         'per_page' => '25',
         'options' => [
+<<<<<<< HEAD
             0 => '10',
             1 => '25',
             2 => '50',
             3 => '100',
+=======
+            '0' => '10',
+            '1' => '25',
+            '2' => '50',
+            '3' => '100',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'cache' => [
         'ttl' => '300',
         'tags' => [
+<<<<<<< HEAD
             0 => 'activities',
             1 => 'monitoring',
         ],
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+            '0' => 'activities',
+            '1' => 'monitoring',
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

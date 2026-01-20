@@ -133,3 +133,7 @@
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md)
 - [Filament Class Extension Rules](../filament-class-extension-rules.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2026-01-22*
+>>>>>>> 4b6b99016 (first commit)

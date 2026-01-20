@@ -20,7 +20,12 @@ it('can create and manage tenants', function (): void {
     $tenant = Tenant::factory()->create([
         'name' => 'Test Studio',
         'slug' => 'test-studio',
+<<<<<<< HEAD
         'is_active' => true,
+=======
+        'status' => 'active',
+        'owner_id' => $user->id,
+>>>>>>> 4b6b99016 (first commit)
     ]);
     Assert::isInstanceOf($tenant, Tenant::class);
 
@@ -29,11 +34,21 @@ it('can create and manage tenants', function (): void {
         'id' => $tenant->id,
         'name' => 'Test Studio',
         'slug' => 'test-studio',
+<<<<<<< HEAD
+=======
+        'status' => 'active',
+        'owner_id' => $user->id,
+>>>>>>> 4b6b99016 (first commit)
     ]);
 
     expect($tenant->name)->toBe('Test Studio');
     expect($tenant->slug)->toBe('test-studio');
+<<<<<<< HEAD
     expect($tenant->is_active)->toBeTrue();
+=======
+    expect($tenant->status)->toBe('active');
+    expect($tenant->owner_id)->toBe($user->id);
+>>>>>>> 4b6b99016 (first commit)
 });
 
 it('can manage tenant domains', function (): void {
@@ -125,6 +140,7 @@ it('can manage tenant subscriptions', function (): void {
 });
 
 it('can validate tenant slug uniqueness', function (): void {
+<<<<<<< HEAD
     // Arrange & Act
     $tenant1 = Tenant::factory()->create([
         'name' => 'Studio A',
@@ -133,6 +149,23 @@ it('can validate tenant slug uniqueness', function (): void {
     $tenant2 = Tenant::factory()->create([
         'name' => 'Studio B',
         'slug' => 'studio-b',
+=======
+    // Arrange
+    $user1 = User::factory()->create();
+    $user2 = User::factory()->create();
+
+    // Act
+    $tenant1 = Tenant::factory()->create([
+        'name' => 'Studio A',
+        'slug' => 'studio-a',
+        'owner_id' => $user1->id,
+    ]);
+
+    $tenant2 = Tenant::factory()->create([
+        'name' => 'Studio B',
+        'slug' => 'studio-b',
+        'owner_id' => $user2->id,
+>>>>>>> 4b6b99016 (first commit)
     ]);
 
     // Assert
@@ -152,6 +185,7 @@ it('can validate tenant slug uniqueness', function (): void {
 });
 
 it('can manage tenant status workflow', function (): void {
+<<<<<<< HEAD
     // Arrange - tenant inattivo
     $tenant = Tenant::factory()->create([
         'is_active' => false,
@@ -174,6 +208,30 @@ it('can manage tenant status workflow', function (): void {
 
     // Assert
     expect($tenant->fresh()?->is_active)->toBeTrue();
+=======
+    // Arrange
+    $tenant = Tenant::factory()->create([
+        'status' => 'pending',
+    ]);
+
+    // Act - Pending to Active
+    $tenant->update(['status' => 'active']);
+
+    // Assert
+    expect($tenant->fresh()->status)->toBe('active');
+
+    // Act - Active to Suspended
+    $tenant->update(['status' => 'suspended']);
+
+    // Assert
+    expect($tenant->fresh()->status)->toBe('suspended');
+
+    // Act - Suspended to Active
+    $tenant->update(['status' => 'active']);
+
+    // Assert
+    expect($tenant->fresh()->status)->toBe('active');
+>>>>>>> 4b6b99016 (first commit)
 });
 
 it('can handle tenant domain verification', function (): void {
@@ -206,11 +264,17 @@ it('can handle tenant domain verification', function (): void {
     ]);
 
     // Assert
+<<<<<<< HEAD
     $domainFresh = $domain->fresh();
     Assert::isInstanceOf($domainFresh, TenantDomain::class);
     expect($domainFresh->status)->toBe('active');
     expect($domainFresh->verified_at)->not()->toBeNull();
     expect($domainFresh->verification_token)->toBeNull();
+=======
+    expect($domain->fresh()->status)->toBe('active');
+    expect($domain->fresh()->verified_at)->not()->toBeNull();
+    expect($domain->fresh()->verification_token)->toBeNull();
+>>>>>>> 4b6b99016 (first commit)
 });
 
 it('can manage tenant storage limits', function (): void {
@@ -237,10 +301,15 @@ it('can manage tenant storage limits', function (): void {
     $subscription->update(['current_storage_gb' => 50]);
 
     // Assert
+<<<<<<< HEAD
     $subFresh = $subscription->fresh();
     Assert::isInstanceOf($subFresh, TenantSubscription::class);
     expect($subFresh->current_storage_gb)->toBe(50);
     expect($subFresh->max_storage_gb - $subFresh->current_storage_gb)->toBe(50);
+=======
+    expect($subscription->fresh()->current_storage_gb)->toBe(50);
+    expect($subscription->fresh()->max_storage_gb - $subscription->fresh()->current_storage_gb)->toBe(50);
+>>>>>>> 4b6b99016 (first commit)
 });
 
 it('can manage tenant user limits', function (): void {
@@ -267,10 +336,15 @@ it('can manage tenant user limits', function (): void {
     $subscription->update(['current_users' => 25]);
 
     // Assert
+<<<<<<< HEAD
     $subFresh = $subscription->fresh();
     Assert::isInstanceOf($subFresh, TenantSubscription::class);
     expect($subFresh->current_users)->toBe(25);
     expect($subFresh->max_users - $subFresh->current_users)->toBe(25);
+=======
+    expect($subscription->fresh()->current_users)->toBe(25);
+    expect($subscription->fresh()->max_users - $subscription->fresh()->current_users)->toBe(25);
+>>>>>>> 4b6b99016 (first commit)
 });
 
 it('can handle tenant subscription expiration', function (): void {
@@ -294,9 +368,13 @@ it('can handle tenant subscription expiration', function (): void {
     $subscription->update(['status' => 'expired']);
 
     // Assert
+<<<<<<< HEAD
     $subFresh = $subscription->fresh();
     Assert::isInstanceOf($subFresh, TenantSubscription::class);
     expect($subFresh->status)->toBe('expired');
+=======
+    expect($subscription->fresh()->status)->toBe('expired');
+>>>>>>> 4b6b99016 (first commit)
 });
 
 it('can manage tenant settings hierarchy', function (): void {
@@ -384,10 +462,20 @@ it('can track tenant activity', function (): void {
     $tenant->update(['last_activity_at' => now()]);
 
     // Assert
+<<<<<<< HEAD
     $fresh = $tenant->fresh();
     Assert::isInstanceOf($fresh, Tenant::class);
     expect($fresh->last_activity_at)->not()->toBeNull();
     expect($fresh->last_activity_at->isToday())->toBeTrue();
+=======
+    $this->assertDatabaseHas('tenants', [
+        'id' => $tenant->id,
+        'last_activity_at' => now(),
+    ]);
+
+    expect($tenant->fresh()->last_activity_at)->not()->toBeNull();
+    expect($tenant->fresh()->last_activity_at->isToday())->toBeTrue();
+>>>>>>> 4b6b99016 (first commit)
 });
 
 it('can manage tenant billing cycles', function (): void {
@@ -419,9 +507,15 @@ it('can manage tenant billing cycles', function (): void {
     ]);
 
     // Assert
+<<<<<<< HEAD
     $subFresh = $subscription->fresh();
     Assert::isInstanceOf($subFresh, TenantSubscription::class);
     expect($subFresh->billing_cycle)->toBe('yearly');
     expect($subFresh->billing_amount)->toBe(999.99);
     expect($subFresh->next_billing_date?->isFuture())->toBeTrue();
+=======
+    expect($subscription->fresh()->billing_cycle)->toBe('yearly');
+    expect($subscription->fresh()->billing_amount)->toBe(999.99);
+    expect($subscription->fresh()->next_billing_date->isFuture())->toBeTrue();
+>>>>>>> 4b6b99016 (first commit)
 });

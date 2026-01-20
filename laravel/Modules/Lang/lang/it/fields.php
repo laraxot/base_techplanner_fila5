@@ -60,6 +60,7 @@ return [
         'placeholder' => 'Inserisci le sezioni',
     ],
     'fields' => [
+<<<<<<< HEAD
         'label' => [
             'label' => 'Campi',
             'tooltip' => '',
@@ -72,6 +73,10 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        'label' => 'Campi',
+        'placeholder' => 'Inserisci i campi',
+>>>>>>> 4b6b99016 (first commit)
     ],
     'type' => [
         'label' => 'Tipo',
@@ -145,6 +150,7 @@ return [
         'placeholder' => 'Inserisci valore test',
         'help' => 'Campo per test del sistema',
     ],
+<<<<<<< HEAD
     'label' => 'Fields',
     'plural_label' => 'Fields (Plurale)',
     'navigation' => [
@@ -169,4 +175,6 @@ return [
             'label' => 'Elimina Fields',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

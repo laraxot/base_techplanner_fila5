@@ -36,7 +36,11 @@ Root modulo:
 ├── test02.txt                           # ❌ File temporaneo
 ├── test03.txt                           # ❌ File temporaneo
 ├── test04.txt                           # ❌ File temporaneo
+<<<<<<< HEAD
 ├── test[DATE].txt                   # ❌ File temporaneo
+=======
+├── test2024-12-04.txt                   # ❌ File temporaneo
+>>>>>>> 4b6b99016 (first commit)
 ├── test2222.txt                         # ❌ File temporaneo
 ├── test444.txt                          # ❌ File temporaneo
 ├── test_14_02_2024.txt                  # ❌ File temporaneo
@@ -364,7 +368,15 @@ protected function registerConfig(): void
 ## Collegamenti
 - [Template Standardizzato](../../docs/template-modulo-standardizzato.md)
 - [Ottimizzazioni Master](../../docs/ottimizzazioni-modulari-master.md)
+<<<<<<< HEAD
 - [Modulo UI](../ui/docs/ottimizzazioni-dry-kiss.md)
 
 ---
 
+=======
+- [Modulo UI](../UI/docs/ottimizzazioni-dry-kiss.md)
+
+---
+
+*Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS Activity Module*
+>>>>>>> 4b6b99016 (first commit)

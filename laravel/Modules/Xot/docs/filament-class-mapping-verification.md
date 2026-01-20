@@ -1,5 +1,9 @@
 # Verifica Mapping Classi Filament → XotBase
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-12-23
+>>>>>>> 4b6b99016 (first commit)
 **Obiettivo**: Verificare coerenza tra file di regole e codice esistente
 
 ## ⚠️ Inconsistenze Identificate

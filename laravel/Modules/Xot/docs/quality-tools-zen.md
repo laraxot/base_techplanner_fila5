@@ -1,5 +1,9 @@
 # Lo Zen degli Strumenti di Qualità PHP - La Grande Unificazione
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-05
+>>>>>>> 4b6b99016 (first commit)
 **Filosofia**: Type Safety, Fail Fast, Zero Tolerance
 
 ## 🎯 La Visione Complessiva

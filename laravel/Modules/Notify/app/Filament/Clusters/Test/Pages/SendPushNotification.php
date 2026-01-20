@@ -10,6 +10,11 @@ use Filament\Facades\Filament;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
+=======
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+>>>>>>> 4b6b99016 (first commit)
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -29,8 +34,15 @@ use function Safe\json_encode;
 /**
  * @property \Filament\Schemas\Schema $notificationForm
  */
+<<<<<<< HEAD
 class SendPushNotification extends XotBasePage
 {
+=======
+class SendPushNotification extends XotBasePage implements HasForms
+{
+    use InteractsWithForms;
+
+>>>>>>> 4b6b99016 (first commit)
     // use NavigationLabelTrait;
 
     public ?array $notificationData = [];

@@ -2,6 +2,10 @@
 
 ## Executive Summary
 
+<<<<<<< HEAD
+=======
+**Analysis Date:** 2025-11-18
+>>>>>>> 4b6b99016 (first commit)
 **PHPStan Level:** Maximum (Level 10)
 **Total Errors Found:** 744
 **Files Analyzed:** 3,945
@@ -412,9 +416,15 @@ jobs:
 
 ### Module-Specific Documentation
 
+<<<<<<< HEAD
 - [Geo Module Errors](../../geo/docs/phpstan-errors-2025-12-16.md)
 - [Cms Module Errors](../../cms/docs/phpstan-errors-2025-12-16.md)
 - [Activity Module Errors](../../activity/docs/phpstan-errors-2025-12-16.md)
+=======
+- [Geo Module Errors](../../Geo/docs/phpstan-errors-2025-12-16.md)
+- [Cms Module Errors](../../Cms/docs/phpstan-errors-2025-12-16.md)
+- [Activity Module Errors](../../Activity/docs/phpstan-errors-2025-12-16.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Xot Module TransTrait Errors](phpstan-transtrait-errors-2025-12-16.md)
 
 ### PHPStan Documentation

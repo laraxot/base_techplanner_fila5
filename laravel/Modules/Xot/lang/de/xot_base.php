@@ -9,96 +9,132 @@ return [
             'description' => 'Visualizza dettagli elemento',
             'placeholder' => 'Clicca per visualizzare',
             'help' => 'Visualizza i dettagli completi dell\'elemento selezionato',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'delete' => [
             'label' => 'Elimina',
             'description' => 'Elimina elemento',
             'placeholder' => 'Clicca per eliminare',
             'help' => 'Elimina definitivamente l\'elemento selezionato',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'edit' => [
             'label' => 'Modifica',
             'description' => 'Modifica elemento',
             'placeholder' => 'Clicca per modificare',
             'help' => 'Modifica i dati dell\'elemento selezionato',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'detach' => [
             'label' => 'Scollega',
             'description' => 'Scollega elemento',
             'placeholder' => 'Clicca per scollegare',
             'help' => 'Rimuovi la connessione con l\'elemento selezionato',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'attach' => [
             'label' => 'Collega',
             'description' => 'Collega elemento',
             'placeholder' => 'Clicca per collegare',
             'help' => 'Crea una connessione con l\'elemento selezionato',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'pregnancy_certificate' => [
             'label' => 'Certificato di Gravidanza',
             'description' => 'Documento attestante lo stato di gravidanza',
             'placeholder' => 'Carica certificato di gravidanza',
             'help' => 'Carica il certificato medico che attesta lo stato di gravidanza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'health_card' => [
             'label' => 'Tessera Sanitaria',
             'description' => 'Tessera sanitaria del Sistema Sanitario Nazionale',
             'placeholder' => 'Carica tessera sanitaria',
             'help' => 'Carica la foto fronte/retro della tessera sanitaria',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'identity_document' => [
             'label' => 'Documento di Identità',
             'description' => 'Documento di identità valido (CI, Patente, Passaporto)',
             'placeholder' => 'Carica documento di identità',
             'help' => 'Carica un documento di identità valido e non scaduto',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'isee_certificate' => [
             'label' => 'Certificazione ISEE',
             'description' => 'Indicatore della Situazione Economica Equivalente',
             'placeholder' => 'Carica certificazione ISEE',
             'help' => 'Carica la certificazione ISEE per eventuali agevolazioni economiche',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'certifications' => [
             'label' => 'Certificazioni',
             'description' => 'Certificazioni e documenti aggiuntivi',
             'placeholder' => 'Carica certificazioni',
             'help' => 'Carica eventuali certificazioni mediche o documenti aggiuntivi richiesti',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'certification' => [
             'label' => 'Certificato',
             'description' => 'Certificato medico o documentazione sanitaria',
             'placeholder' => 'Carica certificato',
             'help' => 'Tesserino sanitario o certificato di iscrizione all\'Ordine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'doctor_certificate' => [
             'label' => 'Certificato Medico',
             'description' => 'Certificato di abilitazione o iscrizione all\'Ordine',
             'placeholder' => 'Carica certificato medico',
             'help' => 'Tesserino sanitario o certificato di iscrizione all\'Ordine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'steps' => [
@@ -283,6 +319,9 @@ return [
             'description' => 'Il file caricato non è valido o è troppo grande',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

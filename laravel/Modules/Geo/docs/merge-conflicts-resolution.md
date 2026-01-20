@@ -1,7 +1,11 @@
 # Risoluzione Conflitti di Merge - Modulo Geo
 
 ## Panoramica
+<<<<<<< HEAD
 Data: [DATE]
+=======
+Data: 2025-07-30
+>>>>>>> 4b6b99016 (first commit)
 Conflitti identificati: 34 file
 Strategia: DRY, KISS, analisi contestuale
 
@@ -9,7 +13,11 @@ Strategia: DRY, KISS, analisi contestuale
 
 ### Modelli (8 file)
 - `app/Models/Address.php`
+<<<<<<< HEAD
 - `app/Models/County.php` 
+=======
+- `app/Models/County.php`
+>>>>>>> 4b6b99016 (first commit)
 - `app/Models/GeoNamesCap.php`
 - `app/Models/Location.php`
 - `app/Models/Place.php`
@@ -69,7 +77,11 @@ Strategia: DRY, KISS, analisi contestuale
 
 ## Status Risoluzione
 - [ ] Modelli (3/8) - ✅ Address.php, County.php, GeographicalScopes.php risolti
+<<<<<<< HEAD
 - [ ] Actions (0/12) 
+=======
+- [ ] Actions (0/12)
+>>>>>>> 4b6b99016 (first commit)
 - [ ] Filament (0/5)
 - [ ] Data Objects (0/2)
 - [ ] Services (0/2)
@@ -90,7 +102,11 @@ Strategia: DRY, KISS, analisi contestuale
 ### GeographicalScopes.php ✅
 - **Conflitto**: Già risolto correttamente
 - **Stato**: Utilizza correttamente `GetDistanceExpressionAction` centralizzata
+<<<<<<< HEAD
 - **Implementazione**: 
+=======
+- **Implementazione**:
+>>>>>>> 4b6b99016 (first commit)
   - Scope `scopeWithDistance` per calcolo distanza
   - Scope `scopeOrderByDistance` per ordinamento geografico
   - Metodo `getDistanceExpression` che delega all'action

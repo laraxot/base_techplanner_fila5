@@ -39,4 +39,8 @@ return [
         'icon' => 'heroicon-o-identification',
         'color' => 'warning',
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -47,6 +48,23 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'import_batch_id' => [
+            'label' => 'ID de Lote de Importación',
+        ],
+        'row_index' => [
+            'label' => 'Índice de Fila',
+        ],
+        'errors' => [
+            'label' => 'Errores',
+        ],
+        'data' => [
+            'label' => 'Datos',
+        ],
+        'created_at' => [
+            'label' => 'Creado En',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [

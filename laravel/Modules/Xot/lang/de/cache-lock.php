@@ -19,25 +19,34 @@ return [
             'label' => 'Chiave',
             'placeholder' => 'Inserisci la chiave del lock',
             'help' => 'Identificativo univoco del lock in cache',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'owner' => [
             'label' => 'Proprietario',
             'placeholder' => 'Identificativo del proprietario',
             'help' => 'Identificativo del processo che detiene il lock',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'expiration' => [
             'label' => 'Scadenza',
             'placeholder' => 'Timestamp di scadenza',
             'help' => 'Momento in cui il lock scadrà automaticamente',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -84,6 +93,9 @@ return [
             'lock_extended' => 'Durata del lock estesa',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

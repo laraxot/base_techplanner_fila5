@@ -20,6 +20,7 @@ return [
             'profile' => 'Profile',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Navs',
     'plural_label' => 'Navs (Plurale)',
     'navigation' => [
@@ -64,4 +65,6 @@ return [
             'label' => 'Elimina Navs',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

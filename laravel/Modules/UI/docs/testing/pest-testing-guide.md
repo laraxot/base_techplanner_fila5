@@ -329,11 +329,16 @@ Based on existing UI module tests:
 ## 🔗 Related Documentation
 
 ### **Module Documentation**
+<<<<<<< HEAD
 - [UI Module README](../readme.md)
+=======
+- [UI Module README](../README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Component Architecture](../components.md)
 - [Theme System](../themes.md)
 
 ### **Testing Resources**
+<<<<<<< HEAD
 - [CMS Testing Best Practices](../../cms/project_docs/tests/pestphp-best-practices.md)
 - [Employee Testing Guide](../../employee/project_docs/testing/pest-testing-guide.md)
 - [CMS Testing Best Practices](../../cms/docs/tests/pestphp-best-practices.md)
@@ -342,6 +347,16 @@ Based on existing UI module tests:
 - [Employee Testing Guide](../../employee/docs/testing/pest-testing-guide.md)
 - [CMS Testing Best Practices](../../cms/docs/tests/pestphp-best-practices.md)
 - [Employee Testing Guide](../../employee/docs/testing/pest-testing-guide.md)
+=======
+- [CMS Testing Best Practices](../../Cms/project_docs/tests/pestphp-best-practices.md)
+- [Employee Testing Guide](../../Employee/project_docs/testing/pest-testing-guide.md)
+- [CMS Testing Best Practices](../../Cms/docs/tests/pestphp-best-practices.md)
+- [Employee Testing Guide](../../Employee/docs/testing/pest-testing-guide.md)
+- [CMS Testing Best Practices](../../Cms/docs/tests/pestphp-best-practices.md)
+- [Employee Testing Guide](../../Employee/docs/testing/pest-testing-guide.md)
+- [CMS Testing Best Practices](../../Cms/docs/tests/pestphp-best-practices.md)
+- [Employee Testing Guide](../../Employee/docs/testing/pest-testing-guide.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### **Implementation Files**
 - [UIBusinessLogicTest.php](../../tests/Feature/UIBusinessLogicTest.php)
@@ -349,6 +364,10 @@ Based on existing UI module tests:
 - [CategoryTabsComponentTest.php](../../tests/Feature/CategoryTabsComponentTest.php)
 
 ---
+<<<<<<< HEAD
 
+=======
+**Last Updated**: September 2025
+>>>>>>> 4b6b99016 (first commit)
 **Status**: ✅ PRODUCTION READY
 **Coverage**: UI Components + Business Logic + Service Integration

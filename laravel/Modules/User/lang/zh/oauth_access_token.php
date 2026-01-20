@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -53,6 +54,26 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'user_id' => [
+            'label' => '用户',
+        ],
+        'client_id' => [
+            'label' => '客户端',
+        ],
+        'name' => [
+            'label' => '名称',
+        ],
+        'scopes' => [
+            'label' => '范围',
+        ],
+        'revoked' => [
+            'label' => '已撤销',
+        ],
+        'expires_at' => [
+            'label' => '过期时间',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [

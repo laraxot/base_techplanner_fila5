@@ -81,17 +81,29 @@ use Sushi\Sushi;
 class ComuneSushi extends \Illuminate\Database\Eloquent\Model
 {
     use Sushi;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Disable auto-incrementing IDs
      */
     public $incrementing = false;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * The "type" of the auto-incrementing ID.
      */
     protected $keyType = 'string';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * The attributes that should be cast.
      */
@@ -101,7 +113,11 @@ class ComuneSushi extends \Illuminate\Database\Eloquent\Model
         'cap' => 'array',
         'popolazione' => 'integer',
     ];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Cache duration in seconds (1 week)
      */
@@ -113,13 +129,21 @@ class ComuneSushi extends \Illuminate\Database\Eloquent\Model
     public function getRows()
     {
         $cacheKey = 'sushi_comuni_data';
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 4b6b99016 (first commit)
         return Cache::remember($cacheKey, $this->sushiCacheDuration, function () {
             $path = module_path('Geo', 'Resources/json/comuni.json');
             return json_decode(File::get($path), true);
         });
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Get the connection for the model.
      */
@@ -127,29 +151,49 @@ class ComuneSushi extends \Illuminate\Database\Eloquent\Model
     {
         return 'sushi';
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     // Relazioni
     public function regione()
     {
         return $this->belongsTo(Regione::class, 'regione.codice', 'codice');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     public function provincia()
     {
         return $this->belongsTo(Provincia::class, 'provincia.codice', 'codice');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     // Scope
     public function scopeByRegion($query, string $regionCode)
     {
         return $query->where('regione->codice', $regionCode);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     public function scopeByProvince($query, string $provinceCode)
     {
         return $query->where('provincia->codice', $provinceCode);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     // Metodi statici per compatibilità
     public static function allRegions()
     {
@@ -159,7 +203,11 @@ class ComuneSushi extends \Illuminate\Database\Eloquent\Model
             ->get()
             ->pluck('nome', 'codice');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     public static function getProvincesByRegion(string $regionCode)
     {
         return static::query()
@@ -169,7 +217,11 @@ class ComuneSushi extends \Illuminate\Database\Eloquent\Model
             ->get()
             ->pluck('nome', 'codice');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Clear all cached data
      */
@@ -286,5 +338,9 @@ Basandoci sull'analisi, raccomandiamo l'adozione di Laravel Sushi per il modello
 ## Link Correlati
 - [Documentazione Ufficiale Sushi](https://github.com/calebporzio/sushi)
 - [Guida alla Migrazione](migration-guide.md)
+<<<<<<< HEAD
 - [Benchmark Dettagliati](benchmarks/readme.md)
+=======
+- [Benchmark Dettagliati](benchmarks/README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Documentazione GeoJsonModel](geo-json-model.md)

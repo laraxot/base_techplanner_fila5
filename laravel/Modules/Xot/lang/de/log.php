@@ -29,25 +29,34 @@ return [
                 'alert' => 'Allarme',
                 'emergency' => 'Emergenza',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Contenuto del messaggio',
             'help' => 'Descrizione dettagliata dell\'evento registrato',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'context' => [
             'label' => 'Contesto',
             'placeholder' => 'Informazioni contestuali',
             'help' => 'Dati aggiuntivi relativi all\'evento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'channel' => [
             'label' => 'Canale',
@@ -63,58 +72,82 @@ return [
                 'papertrail' => 'Papertrail',
                 'discord' => 'Discord',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'timestamp' => [
             'label' => 'Data e Ora',
             'help' => 'Momento esatto della registrazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'file' => [
             'label' => 'File',
             'help' => 'File sorgente dell\'evento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'line' => [
             'label' => 'Linea',
             'help' => 'Numero di linea nel file sorgente',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'stack_trace' => [
             'label' => 'Stack Trace',
             'help' => 'Traccia dello stack per debug',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'user' => [
             'label' => 'Utente',
             'help' => 'Utente che ha generato l\'evento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'ip' => [
             'label' => 'Indirizzo IP',
             'help' => 'IP di origine dell\'evento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'user_agent' => [
             'label' => 'User Agent',
             'help' => 'Browser o applicazione client',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -178,12 +211,21 @@ return [
             'label' => 'Periodo di conservazione',
             'help' => 'Giorni di mantenimento dei log',
             'options' => [
+<<<<<<< HEAD
                 7 => '1 settimana',
                 14 => '2 settimane',
                 30 => '1 mese',
                 90 => '3 mesi',
                 180 => '6 mesi',
                 365 => '1 anno',
+=======
+                '7' => '1 settimana',
+                '14' => '2 settimane',
+                '30' => '1 mese',
+                '90' => '3 mesi',
+                '180' => '6 mesi',
+                '365' => '1 anno',
+>>>>>>> 4b6b99016 (first commit)
             ],
         ],
         'max_files' => [
@@ -201,6 +243,9 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

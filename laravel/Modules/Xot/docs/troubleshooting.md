@@ -668,10 +668,18 @@ dd(DB::getQueryLog());
 
 ## 🔗 **Collegamenti e Riferimenti**
 
+<<<<<<< HEAD
 - [**README.md**](readme.md) - Documentazione principale del modulo
+=======
+- [**README.md**](README.md) - Documentazione principale del modulo
+>>>>>>> 4b6b99016 (first commit)
 - [**Best Practices**](best-practices.md) - Best practices per evitare problemi
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Documentazione Laravel**](https://laravel.com/docs) - Troubleshooting generale
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+>>>>>>> 4b6b99016 (first commit)

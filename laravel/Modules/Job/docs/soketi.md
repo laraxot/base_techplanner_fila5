@@ -20,6 +20,7 @@ https://aboutyou.tech/blog/setup-and-scale-a-websocket-server-with-laravel/
 
 https://medium.com/@antoine.lame/using-soketi-with-laravel-902ee1e6b7b
 
+<<<<<<< HEAD
 
 //----------- TESTER 
 https://www.piesocket.com/websocket-tester
@@ -30,3 +31,10 @@ https://www.youtube.com/watch?v=mDnsC-sfG7I
 
 
 
+=======
+//----------- TESTER
+https://www.piesocket.com/websocket-tester
+
+//--------- VIDEO -------------
+https://www.youtube.com/watch?v=mDnsC-sfG7I
+>>>>>>> 4b6b99016 (first commit)

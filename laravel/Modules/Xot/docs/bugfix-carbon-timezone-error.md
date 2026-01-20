@@ -75,6 +75,10 @@ public function registerTimezone(): void
 - [PHP date_default_timezone_set](https://www.php.net/manual/en/function.date-default-timezone-set.php)
 - [Root Bugfix Guidelines](../../../project_docs/bugfix-guidelines.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 4b6b99016 (first commit)
 *Risolto da: Windsurf AI Assistant*
 # Bugfix: Carbon Timezone Error in XotServiceProvider
 
@@ -153,4 +157,8 @@ public function registerTimezone(): void
 - [PHP date_default_timezone_set](https://www.php.net/manual/en/function.date-default-timezone-set.php)
 - [Root Bugfix Guidelines](../../../project_docs/bugfix-guidelines.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 4b6b99016 (first commit)
 *Risolto da: Windsurf AI Assistant*

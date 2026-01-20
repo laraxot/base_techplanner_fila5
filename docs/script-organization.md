@@ -47,7 +47,11 @@ This script will:
 
 Before committing, ensure:
 - [ ] All scripts are in appropriate subdirectories
+<<<<<<< HEAD
 - [ ] No merge conflicts in any file 
+=======
+- [ ] No merge conflicts in any file (check with `grep -r "<<<<<<< HEAD" bashscripts/`)
+>>>>>>> 4b6b99016 (first commit)
 - [ ] `.gitignore` is clean (no conflict markers)
 - [ ] Configuration files are not in `bashscripts/` root
 - [ ] Scripts have shebang (`#!/bin/bash`)

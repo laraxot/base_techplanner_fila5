@@ -533,7 +533,15 @@ class UserResource extends XotBaseResource
 ## Collegamenti
 - [Template Standardizzato](../../docs/template-modulo-standardizzato.md)
 - [Ottimizzazioni Master](../../docs/ottimizzazioni-modulari-master.md)
+<<<<<<< HEAD
 - [Modulo Xot](../xot/docs/ottimizzazioni-dry-kiss.md)
 
 ---
 
+=======
+- [Modulo Xot](../Xot/docs/ottimizzazioni-dry-kiss.md)
+
+---
+
+*Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS User Module*
+>>>>>>> 4b6b99016 (first commit)

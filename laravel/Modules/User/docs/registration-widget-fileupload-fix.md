@@ -120,10 +120,18 @@ Per evitare simili problemi in futuro:
 4. **Documentation**: Documentare i tipi di dati attesi per ogni campo
 ## Riferimenti
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../project_docs/fileupload-foreach-error-fix.md)
+<<<<<<< HEAD
 - [Correzione XotBaseResource: Modules/Xot/project_docs/fileupload-components.md](../../xot/project_docs/fileupload-components.md)
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
+=======
+- [Correzione XotBaseResource: Modules/Xot/project_docs/fileupload-components.md](../../Xot/project_docs/fileupload-components.md)
+- [Problema principale: docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
+- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../Xot/docs/fileupload-components.md)
+- [Registration Widget base: registration-widget.md](./registration-widget.md)
+*Ultimo aggiornamento: 2025-01-03*
+>>>>>>> 4b6b99016 (first commit)
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto
@@ -342,5 +350,9 @@ Per evitare simili problemi in futuro:
 ## Riferimenti
 
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
+<<<<<<< HEAD
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
+=======
+- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../Xot/docs/fileupload-components.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)

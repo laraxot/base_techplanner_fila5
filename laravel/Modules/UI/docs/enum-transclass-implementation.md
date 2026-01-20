@@ -137,3 +137,7 @@ grep -r "__(" Modules/UI/app/Enums/
 - [../filament/no-label-rule.md](../filament/no-label-rule.md)
 - [../clean-code/no-obvious-comments.md](../clean-code/no-obvious-comments.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-08-04*
+>>>>>>> 4b6b99016 (first commit)

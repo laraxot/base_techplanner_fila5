@@ -326,12 +326,20 @@ Tutte le icone sono compatibili con Filament 4.x e versioni successive.
 
 ## 📝 Changelog
 
+<<<<<<< HEAD
 ### v1.1.0 - [DATE]
+=======
+### v1.1.0 - 2025-01-27
+>>>>>>> 4b6b99016 (first commit)
 - **🔧 Icone Aggiuntive**: Aggiunte icone mancanti (cancel, save, logout, showPassword, user-main, user-team, user-user-tenant)
 - **🐛 Bug Fix**: Risolto errore "SvgNotFound" per icona "cancel"
 - **📝 Traduzioni**: Aggiornati file di traduzione per utilizzare prefisso "ui-" corretto
 
+<<<<<<< HEAD
 ### v1.0.0 - [DATE]
+=======
+### v1.0.0 - 2025-01-27
+>>>>>>> 4b6b99016 (first commit)
 - **🎨 Sistema Icone**: Implementato sistema completo di icone SVG
 - **🔧 Registrazione Automatica**: Icone registrate automaticamente
 - **📚 Documentazione**: Documentazione completa del sistema

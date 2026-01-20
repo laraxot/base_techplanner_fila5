@@ -1,5 +1,9 @@
 # PHPStan Syntax Fixes - Modulo Activity
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-11
+>>>>>>> 4b6b99016 (first commit)
 **Versione PHPStan**: 1.12.x
 **Livello**: max
 **Status**: ✅ TUTTI I SYNTAX ERRORS RISOLTI
@@ -148,7 +152,11 @@ use function Safe\json_encode;
 ## 🔗 Collegamenti
 
 - [Analisi Generale PHPStan](../../../project_docs/quality/phpstan-analysis.md)
+<<<<<<< HEAD
 - [PHPStan Quality Rules](./phpstan_quality_rules.md)
+=======
+- [PHPStan Quality Rules](./PHPSTAN_QUALITY_RULES.md)
+>>>>>>> 4b6b99016 (first commit)
 - [PHPStan Fixes Activity (Completo)](./phpstan_fixes_activity.md)
 
 ## 📝 Note
@@ -162,6 +170,10 @@ Questi fix erano necessari per permettere a PHPStan di completare l'analisi del 
 
 ---
 
+<<<<<<< HEAD
 **Fix Completati**: [DATE]
+=======
+**Fix Completati**: 2025-01-11
+>>>>>>> 4b6b99016 (first commit)
 **Priority**: ALTA
 **Impact**: MEDIO (Bloccava analisi modulo Activity)

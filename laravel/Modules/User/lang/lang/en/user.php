@@ -25,6 +25,7 @@ return [
         'bulk_detach' => 'Detach Selected',
     ],
     'fields' => [
+<<<<<<< HEAD
         'name' => [
             'label' => 'Name',
             'tooltip' => '',
@@ -85,6 +86,18 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        'name' => 'Name',
+        'email' => 'Email',
+        'created_at' => 'Created At',
+        'updated_at' => 'Updated At',
+        'role' => 'Role',
+        'active' => 'Active',
+        'id' => 'ID',
+        'password' => 'Password',
+        'password_confirmation' => 'Confirm Password',
+        'email_verified_at' => 'Email Verified At',
+>>>>>>> 4b6b99016 (first commit)
     ],
     'filters' => [
         'active_users' => 'Active Users',
@@ -157,6 +170,7 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -166,4 +180,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

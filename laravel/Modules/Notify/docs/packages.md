@@ -3,9 +3,15 @@
 ## Pacchetti Utilizzati
 
 ### Core
+<<<<<<< HEAD
 - [laraxot/module_xot_fila3](../xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../ui/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila3](../tenant/docs/packages.md) - Gestione multi-tenant
+=======
+- [laraxot/module_xot_fila3](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
+- [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
+- [laraxot/module_tenant_fila3](../Tenant/docs/packages.md) - Gestione multi-tenant
+>>>>>>> 4b6b99016 (first commit)
 
 ### Notifiche
 - [filament/notifications](https://filamentphp.com/docs/notifications) - Sistema notifiche Filament
@@ -56,6 +62,7 @@
 
 
 ## Collegamenti tra versioni di packages.md
+<<<<<<< HEAD
 * [packages.md](../../../gdpr/docs/packages.md)
 * [packages.md](../../../notify/docs/packages.md)
 * [packages.md](../../../xot/docs/packages.md)
@@ -65,6 +72,17 @@
 * [packages.md](../../../job/docs/packages.md)
 * [packages.md](../../../media/docs/packages.md)
 * [packages.md](../../../tenant/docs/packages.md)
+=======
+* [packages.md](../../../Gdpr/docs/packages.md)
+* [packages.md](../../../Notify/docs/packages.md)
+* [packages.md](../../../Xot/docs/packages.md)
+* [packages.md](../../../User/docs/packages.md)
+* [packages.md](../../../UI/docs/packages.md)
+* [packages.md](../../../Lang/docs/packages.md)
+* [packages.md](../../../Job/docs/packages.md)
+* [packages.md](../../../Media/docs/packages.md)
+* [packages.md](../../../Tenant/docs/packages.md)
+>>>>>>> 4b6b99016 (first commit)
 
 
 ### Versione Incoming

@@ -6,7 +6,11 @@ Seguendo i principi **zen** e **minimalista** di Laraxot, la gestione dei conten
 
 ### 🧘 **Principi Zen del Contenuto**
 - **Semplicità**: Informazioni chiare e immediate
+<<<<<<< HEAD
 - **Trasparenza**: Conformità normativa GDPR per dati sanitari  
+=======
+- **Trasparenza**: Conformità normativa GDPR per dati sanitari
+>>>>>>> 4b6b99016 (first commit)
 - **Accessibilità**: Contenuti comprensibili a tutti gli utenti
 - **Fiducia**: Linguaggio professionale e rassicurante
 - **Etica**: Rispetto della privacy e dei diritti del paziente
@@ -16,7 +20,11 @@ Le pagine istituzionali devono:
 - Trasmettere **competenza medica** e **affidabilità**
 - Garantire **compliance normativa** (GDPR, Codice Privacy)
 - Facilitare l'**accessibilità** per tutti i pazienti
+<<<<<<< HEAD
 - Riflettere la **missione** di promozione della salute orale
+=======
+- Riflettere la **missione** di promozione della <slogan>
+>>>>>>> 4b6b99016 (first commit)
 
 ## Struttura delle Pagine Istituzionali
 
@@ -29,7 +37,11 @@ Le pagine istituzionali devono:
 - Team medico con competenze certificate
 - Certificazioni e riconoscimenti
 
+<<<<<<< HEAD
 ### 🔒 **Pagina 14: Privacy Policy**  
+=======
+### 🔒 **Pagina 14: Privacy Policy**
+>>>>>>> 4b6b99016 (first commit)
 **Filosofia**: Trasparenza totale nella gestione dati sanitari
 **Compliance**: GDPR, Codice Privacy, normative sanitarie
 **Componenti strutturati**:
@@ -93,10 +105,19 @@ Le pagine istituzionali devono:
 
 Questa strategia integra:
 - [Gestione Homepage](/var/www/html/_bases/<directory progetto>/project_docs/gestione-homepage.md)
+<<<<<<< HEAD
 - [Best Practice UX](/var/www/html/_bases/<directory progetto>/project_docs/ux-design-principles.md)  
+=======
+- [Best Practice UX](/var/www/html/_bases/<directory progetto>/project_docs/ux-design-principles.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Compliance GDPR](/var/www/html/_bases/<directory progetto>/project_docs/privacy-compliance.md)
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: Gennaio 2025  
 **Revisione**: Conforme regole Laraxot olistica e filosofia zen del contenuto sanitario 
+=======
+**Ultimo aggiornamento**: Gennaio 2025
+**Revisione**: Conforme regole Laraxot olistica e filosofia zen del contenuto sanitario
+>>>>>>> 4b6b99016 (first commit)

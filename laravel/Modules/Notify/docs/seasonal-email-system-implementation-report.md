@@ -1,5 +1,9 @@
 # Report di Revisione Sistema Email Stagionali - Dicembre 2025
 
+<<<<<<< HEAD
+=======
+**Data**: 19 Dicembre 2025  
+>>>>>>> 4b6b99016 (first commit)
 **Progetto**: TechPlanner Laravel Multi-Tenant Application  
 **Moduli Interessati**: Notify, Themes/Sixteen  
 **Stato**: ✅ Revisione Completata  

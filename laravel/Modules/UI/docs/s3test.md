@@ -117,4 +117,8 @@ The component has been updated to comply with PHPStan level 9 requirements:
 - Correct parameter typing
 - Safe function usage
 
+<<<<<<< HEAD
 *
+=======
+*Last Updated: August 2025*
+>>>>>>> 4b6b99016 (first commit)

@@ -142,6 +142,7 @@ return [
             'label' => 'Etichetta',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Blocks',
     'plural_label' => 'Blocks (Plurale)',
     'fields' => [
@@ -164,4 +165,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

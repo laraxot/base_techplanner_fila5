@@ -31,7 +31,11 @@ test('PageContent model extends BaseModel', function () {
 test('PageContent model has translatable fields', function () {
     $pageContent = new PageContent();
 
+<<<<<<< HEAD
     expect(isset($pageContent->translatable))->toBeTrue();
+=======
+    expect(property_exists($pageContent, 'translatable'))->toBeTrue();
+>>>>>>> 4b6b99016 (first commit)
     expect($pageContent->translatable)->toContain('name')
         ->and($pageContent->translatable)->toContain('blocks');
 });

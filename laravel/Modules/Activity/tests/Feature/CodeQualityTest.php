@@ -73,7 +73,11 @@ test('translations exist and are structured', function (): void {
 });
 
 test('views exist and are valid', function (): void {
+<<<<<<< HEAD
     $viewPath = base_path('Modules/Activity/resources/views/filament/list-log-activities.blade.php');
+=======
+    $viewPath = base_path('Modules/Activity/resources/views/filament/pages/list-log-activities.blade.php');
+>>>>>>> 4b6b99016 (first commit)
     expect(file_exists($viewPath))->toBeTrue();
 
     $viewContent = file_get_contents($viewPath);

@@ -25,10 +25,13 @@ return [
                 'placeholder' => 'Seleziona l\'utente',
                 'help' => 'Utente proprietario della sessione',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'connection' => [
             'ip_address' => [
@@ -43,10 +46,13 @@ return [
                 'label' => 'Posizione',
                 'help' => 'Localizzazione geografica approssimativa',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'data' => [
             'payload' => [
@@ -57,10 +63,13 @@ return [
                 'label' => 'Dimensione',
                 'help' => 'Dimensione dei dati in memoria',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'timing' => [
             'created_at' => [
@@ -75,10 +84,13 @@ return [
                 'label' => 'Scadenza',
                 'help' => 'Momento di scadenza previsto',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -141,12 +153,21 @@ return [
             'label' => 'Durata Sessione',
             'help' => 'Tempo massimo di inattività',
             'options' => [
+<<<<<<< HEAD
                 120 => '2 ore',
                 240 => '4 ore',
                 480 => '8 ore',
                 720 => '12 ore',
                 1440 => '1 giorno',
                 10080 => '1 settimana',
+=======
+                '120' => '2 ore',
+                '240' => '4 ore',
+                '480' => '8 ore',
+                '720' => '12 ore',
+                '1440' => '1 giorno',
+                '10080' => '1 settimana',
+>>>>>>> 4b6b99016 (first commit)
             ],
         ],
         'security' => [
@@ -185,6 +206,9 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

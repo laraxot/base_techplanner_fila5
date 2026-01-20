@@ -186,7 +186,11 @@ public function getModels(): array
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
+<<<<<<< HEAD
 - [README.md Modulo Xot](./readme.md)
+=======
+- [README.md Modulo Xot](./README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Service Architecture](./service-architecture.md)
 - [Best Practices](./best-practices.md)
 

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'export_xls' => 'Esporta Dati',
+<<<<<<< HEAD
     'label' => 'Actions',
     'plural_label' => 'Actions (Plurale)',
     'navigation' => [
@@ -48,4 +49,6 @@ return [
             'label' => 'Elimina Actions',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

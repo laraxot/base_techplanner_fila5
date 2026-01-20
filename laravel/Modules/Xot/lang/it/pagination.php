@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
     'previous' => '&laquo; Precedente',
     'next' => 'Successiva &raquo;',
+<<<<<<< HEAD
     'label' => 'Pagination',
     'plural_label' => 'Pagination (Plurale)',
     'navigation' => [
@@ -49,4 +50,6 @@ return [
             'label' => 'Elimina Pagination',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

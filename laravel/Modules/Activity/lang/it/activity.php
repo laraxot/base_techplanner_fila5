@@ -18,9 +18,12 @@ return [
         'id' => [
             'label' => 'ID',
             'help' => 'Identificativo unico dell\'attività',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'log_name' => [
             'label' => 'Nome Log',
@@ -28,7 +31,10 @@ return [
             'placeholder' => 'log_name',
             'helper_text' => 'log_name',
             'description' => 'log_name',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Descrizione',
@@ -36,7 +42,10 @@ return [
             'placeholder' => 'description',
             'helper_text' => 'description',
             'description' => 'description',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'subject_type' => [
             'label' => 'Tipo Soggetto',
@@ -44,7 +53,10 @@ return [
             'placeholder' => 'subject_type',
             'helper_text' => 'subject_type',
             'description' => 'subject_type',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'subject_id' => [
             'label' => 'ID Soggetto',
@@ -52,7 +64,10 @@ return [
             'placeholder' => 'subject_id',
             'helper_text' => 'subject_id',
             'description' => 'subject_id',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'causer_type' => [
             'label' => 'Tipo Causatore',
@@ -60,7 +75,10 @@ return [
             'placeholder' => 'causer_type',
             'helper_text' => 'causer_type',
             'description' => 'causer_type',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'causer_id' => [
             'label' => 'ID Causatore',
@@ -68,7 +86,10 @@ return [
             'placeholder' => 'causer_id',
             'helper_text' => 'causer_id',
             'description' => 'causer_id',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'properties' => [
             'label' => 'Proprietà',
@@ -76,7 +97,10 @@ return [
             'placeholder' => 'properties',
             'helper_text' => 'properties',
             'description' => 'properties',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'batch_uuid' => [
             'label' => 'Batch UUID',
@@ -84,21 +108,30 @@ return [
             'placeholder' => 'batch_uuid',
             'helper_text' => 'batch_uuid',
             'description' => 'batch_uuid',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'help' => 'Data e ora di creazione dell\'attività',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'updated_at' => [
             'label' => 'Data Aggiornamento',
             'help' => 'Data e ora di aggiornamento dell\'attività',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -115,6 +148,9 @@ return [
         'no_activities' => 'Nessuna attività trovata',
         'activity_restored' => 'Attività ripristinata con successo',
     ],
+<<<<<<< HEAD
     'label' => 'Activity',
     'plural_label' => 'Activity (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

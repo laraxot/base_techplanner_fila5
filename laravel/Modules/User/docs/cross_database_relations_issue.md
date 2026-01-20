@@ -83,7 +83,11 @@ $user = User::with('tenants')->find('0199690d-481a-7101-ac17-7518b3959314');
 
 ## Riferimenti Correlati
 
+<<<<<<< HEAD
 - [Quaeris Customer User Table Issue](../../quaeris/docs/customer_user_table_issue.md)
+=======
+- [Quaeris Customer User Table Issue](../../Quaeris/docs/customer_user_table_issue.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Traits Complete Guide](./traits-complete-guide.md)
 - [Jetstream vs Laraxot Philosophy](./jetstream-vs-laraxot-philosophy.md)
 - [Database Errors](./database-errors.md)

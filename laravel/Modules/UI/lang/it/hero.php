@@ -9,27 +9,37 @@ return [
             'description' => 'link',
             'helper_text' => 'link',
             'placeholder' => 'link',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'class' => [
             'label' => 'class',
             'description' => 'class',
             'helper_text' => 'class',
             'placeholder' => 'class',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'label' => [
             'label' => 'label',
             'description' => 'label',
             'helper_text' => 'label',
             'placeholder' => 'label',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'buttons' => [
             'label' => 'buttons',
             'description' => 'buttons',
             'helper_text' => 'buttons',
             'placeholder' => 'buttons',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         '_tpl' => [
@@ -37,25 +47,37 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        '_tpl' => [
+            'label' => '_tpl',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'background' => [
             'label' => 'background',
             'description' => 'background',
             'helper_text' => 'background',
             'placeholder' => 'background',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'text' => [
             'label' => 'text',
             'description' => 'text',
             'helper_text' => 'text',
             'placeholder' => 'text',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'title' => [
             'label' => 'title',
             'description' => 'title',
             'helper_text' => 'title',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'view' => [
@@ -63,6 +85,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'view' => [
+            'label' => 'view',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'sections' => [
@@ -70,6 +97,7 @@ return [
             'heading' => 'empty',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Hero',
     'plural_label' => 'Hero (Plurale)',
     'navigation' => [
@@ -94,4 +122,6 @@ return [
             'label' => 'Elimina Hero',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

@@ -26,6 +26,7 @@ return [
         'edit_coordinates' => 'Modifica coordinate',
         'export' => 'Esporta dati',
     ],
+<<<<<<< HEAD
     'label' => 'Location Map Table',
     'plural_label' => 'Location Map Table (Plurale)',
     'fields' => [
@@ -48,4 +49,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

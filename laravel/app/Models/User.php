@@ -31,7 +31,10 @@ use Illuminate\Notifications\Notifiable;
  * @property string|null $type
  * @property-read \Illuminate\Notifications\DatabaseNotificationCollection<int, \Illuminate\Notifications\DatabaseNotification> $notifications
  * @property-read int|null $notifications_count
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 4b6b99016 (first commit)
  * @method static \Database\Factories\UserFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User newQuery()
@@ -57,7 +60,10 @@ use Illuminate\Notifications\Notifiable;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereType($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereUpdatedBy($value)
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 4b6b99016 (first commit)
  * @mixin \Eloquent
  */
 class User extends Authenticatable

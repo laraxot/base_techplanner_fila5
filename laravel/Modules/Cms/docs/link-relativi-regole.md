@@ -7,7 +7,11 @@
 ### ❌ **VIETATO - Link Assoluti**
 ```markdown
 [Link errato](/var/www/html/_bases/<directory progetto>/docs/file.md)
+<<<<<<< HEAD
 [Link errato](../../laravel/modules/cms/docs/file.md)
+=======
+[Link errato](../../laravel/Modules/Cms/docs/file.md)
+>>>>>>> 4b6b99016 (first commit)
 ```
 
 ### ✅ **CORRETTO - Link Relativi**
@@ -86,16 +90,27 @@ Link: ./components/
 ### **Caso 2: Link ad altro modulo**
 ```markdown
 <!-- PRIMA (ERRATO) -->
+<<<<<<< HEAD
 [Modulo User](/var/www/html/_bases/<directory progetto>/laravel/modules/user/docs/readme.md)
 
 <!-- DOPO (CORRETTO) -->
 [Modulo User](../../user/docs/readme.md)
+=======
+[Modulo User](/var/www/html/_bases/<directory progetto>/laravel/Modules/User/docs/README.md)
+
+<!-- DOPO (CORRETTO) -->
+[Modulo User](../../User/docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 ```
 
 ### **Caso 3: Link interno al modulo**
 ```markdown
 <!-- PRIMA (ERRATO) -->
+<<<<<<< HEAD
 [Componenti](../../laravel/modules/cms/docs/components/header.md)
+=======
+[Componenti](../../laravel/Modules/Cms/docs/components/header.md)
+>>>>>>> 4b6b99016 (first commit)
 
 <!-- DOPO (CORRETTO) -->
 [Componenti](./components/header.md)

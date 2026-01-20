@@ -63,4 +63,8 @@ class DownloadAttachmentPlaceHolder extends XotBasePlaceholder
 ## Collegamenti Utili
 
 -   [Filament Class Extension Rules](../../../docs/filament-class-extension-rules.md)
+<<<<<<< HEAD
 -   [DownloadAttachmentPlaceHolder Documentation](../../cms/docs/filament/forms/components/download-attachment-placeholder.md) (da creare)
+=======
+-   [DownloadAttachmentPlaceHolder Documentation](../../Cms/docs/filament/forms/components/download-attachment-placeholder.md) (da creare)
+>>>>>>> 4b6b99016 (first commit)

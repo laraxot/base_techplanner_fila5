@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://betterprogramming.pub/laravel-fail-retry-or-delay-a-queued-job-from-itself-41e0bb14440c
 
 
@@ -17,4 +18,6 @@ https://websolutionstuff.com/post/laravel-9-cron-job-task-scheduling-tutorial  !
  https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs  !!!!
 
 
+=======
+>>>>>>> 4b6b99016 (first commit)
 

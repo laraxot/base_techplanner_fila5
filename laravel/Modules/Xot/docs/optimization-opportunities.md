@@ -614,4 +614,8 @@ return array_merge(
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> 4b6b99016 (first commit)
 *Autore: Analisi Automatica del Progetto*

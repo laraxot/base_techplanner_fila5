@@ -44,7 +44,11 @@ namespace Modules\User\App\Filament\Widgets;
   }
   ```
 
+<<<<<<< HEAD
 - Per le regole generali e best practice consulta la doc del modulo [Xot](../../xot/project_docs/readme.md).
+=======
+- Per le regole generali e best practice consulta la doc del modulo [Xot](../../Xot/project_docs/README.md).
+>>>>>>> 4b6b99016 (first commit)
 
 ## Regole Tailwind CSS con Filament
 - **IMPORTANTE:** Con Filament 3.x, usare solo `tailwindcss@3.x` (NO 4.x). Riferimento: [Filament Docs](https://filamentphp.com/project_docs/3.x/notifications/installation#installing-tailwind-css).
@@ -57,7 +61,11 @@ namespace Modules\User\App\Filament\Widgets;
   npm run copy
   ```
 - Non usare mai `vendor:publish` per asset dei temi custom.
+<<<<<<< HEAD
 - Vedi anche [README tema One](../../../../themes/one/readme.md)
+=======
+- Vedi anche [README tema One](../../../../Themes/One/README.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Preview custom in Filament
 - **Per anteprime custom nelle pagine Filament usare sempre `ViewEntry`** (mai `CustomEntry`).
@@ -80,6 +88,7 @@ Section::make('Anteprima')
 ## Collegamenti Bidirezionali
 
 ### Modulo Xot (Core)
+<<<<<<< HEAD
 - [README.md](../../xot/project_docs/readme.md) - Indice principale della documentazione
 - [Struttura dei Moduli](../../xot/project_docs/module_structure.md) - Struttura standard dei moduli
 - [Case Sensitivity delle Directory](../../xot/project_docs/directory-case-sensitivity.md) - Regole per la case sensitivity
@@ -97,6 +106,25 @@ Section::make('Anteprima')
 
 ### Documentazione Interna
 - [README del modulo Cms](./readme.md) - Indice principale del modulo Cms
+=======
+- [README.md](../../Xot/project_docs/README.md) - Indice principale della documentazione
+- [Struttura dei Moduli](../../Xot/project_docs/MODULE_STRUCTURE.md) - Struttura standard dei moduli
+- [Case Sensitivity delle Directory](../../Xot/project_docs/DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity
+- [Regole per i Namespace](../../Xot/project_docs/NAMESPACE-RULES.md) - Convenzioni per i namespace
+
+### Filament
+- [Widget Filament](../../Xot/project_docs/filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
+- [Polling nei Widget](../../Xot/project_docs/filament/widgets/FILAMENT_WIDGETS_POLLING.md) - Implementazione del polling
+- [Risorse Filament](../../Xot/project_docs/filament-resources.md) - Struttura delle risorse Filament
+
+### Moduli Correlati
+- [Lang - Filament Translations](../../Lang/project_docs/filament-translations.md) - Traduzioni in Filament
+- [UI - Form Filament Widgets](../../UI/project_docs/form_filament_widgets.md) - Widget per form Filament
+- [User - Filament Best Practices](../../User/project_docs/FILAMENT_BEST_PRACTICES.md) - Best practices per Filament
+
+### Documentazione Interna
+- [README del modulo Cms](./README.md) - Indice principale del modulo Cms
+>>>>>>> 4b6b99016 (first commit)
 - [Filament Widget Registrazione](./filament-widget-registrazione.md) - Widget di registrazione
 - [Filament Widgets in Blade](./filament-widgets-in-blade.md) - Uso dei widget in Blade
 

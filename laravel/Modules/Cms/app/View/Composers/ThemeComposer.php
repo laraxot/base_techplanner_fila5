@@ -147,7 +147,11 @@ class ThemeComposer
     {
         $page = $this->getPageModel($slug);
         if ($page instanceof Page) {
+<<<<<<< HEAD
             return '/'.app()->getLocale().'/'.$slug;
+=======
+            return '/'.app()->getLocale().'/pages/'.$slug;
+>>>>>>> 4b6b99016 (first commit)
         }
 
         return '#';

@@ -129,4 +129,8 @@ return [
     // Stati di elaborazione
     'processing' => 'Elaborazione in corso...',
     'sending' => 'Invio in corso...',
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

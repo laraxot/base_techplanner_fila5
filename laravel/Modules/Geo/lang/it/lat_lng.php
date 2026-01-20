@@ -10,6 +10,7 @@ return [
         'sort' => 30,
     ],
     'fields' => [
+<<<<<<< HEAD
         'latitude' => [
             'label' => 'Latitudine',
             'tooltip' => '',
@@ -22,6 +23,10 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        'latitude' => 'Latitudine',
+        'longitude' => 'Longitudine',
+>>>>>>> 4b6b99016 (first commit)
     ],
     'actions' => [
         'select_position' => 'Seleziona Posizione',
@@ -31,6 +36,9 @@ return [
         'coordinates_updated' => 'Coordinate aggiornate con successo',
         'invalid_coordinates' => 'Coordinate non valide',
     ],
+<<<<<<< HEAD
     'label' => 'Lat Lng',
     'plural_label' => 'Lat Lng (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

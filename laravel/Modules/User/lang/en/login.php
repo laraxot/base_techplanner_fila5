@@ -10,7 +10,10 @@ return [
             'help' => 'Enter your email address to log in',
             'description' => 'email',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'password' => [
             'label' => 'Password',
@@ -18,7 +21,10 @@ return [
             'help' => 'Enter your account password',
             'description' => 'password',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'remember' => [
             'label' => 'Remember me',
@@ -26,33 +32,50 @@ return [
             'help' => 'Keep me logged in on this device',
             'description' => 'remember',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'name' => [
             'label' => 'Full name',
             'placeholder' => 'Enter your full name',
             'help' => 'Your complete name for registration',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'password_confirmation' => [
             'label' => 'Confirm password',
             'placeholder' => 'Repeat your password',
             'help' => 'Repeat the password for confirmation',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
         'login' => [
+<<<<<<< HEAD
             'label' => 'Login',
+=======
+            'label' => 'Sign in',
+>>>>>>> 4b6b99016 (first commit)
             'success' => 'Successfully logged in',
             'error' => 'Invalid credentials',
         ],
         'register' => [
+<<<<<<< HEAD
             'label' => 'Register',
+=======
+            'label' => 'Sign up',
+>>>>>>> 4b6b99016 (first commit)
             'success' => 'Registration completed successfully',
             'error' => 'Unable to complete registration',
         ],
@@ -86,6 +109,7 @@ return [
         'general_error' => 'An error occurred. Please try again later.',
         'unauthorized' => 'You do not have the necessary permissions for this operation.',
     ],
+<<<<<<< HEAD
     'title' => 'Sign in to your account',
     'subtitle_start' => 'Or',
     'subtitle_link' => 'create a new account',
@@ -108,4 +132,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

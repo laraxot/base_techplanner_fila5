@@ -119,6 +119,9 @@ return [
         'get_directions' => 'Wegbeschreibung',
         'copy_coordinates' => 'Koordinaten kopieren',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

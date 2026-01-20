@@ -101,4 +101,8 @@ class AdminPanelProvider extends PanelProvider
 
 ## Collegamenti tra versioni di temi.md
 * [temi.md](docs/regole/temi.md)
+<<<<<<< HEAD
 * [temi.md](laravel/modules/cms/docs/temi.md)
+=======
+* [temi.md](laravel/Modules/Cms/docs/temi.md)
+>>>>>>> 4b6b99016 (first commit)

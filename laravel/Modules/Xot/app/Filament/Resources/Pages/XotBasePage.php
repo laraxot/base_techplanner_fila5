@@ -23,7 +23,11 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
  * following the architectural pattern of never extending Filament classes directly.
  *
  * @property ?string $model
+<<<<<<< HEAD
  * @property array<string, mixed> $data
+=======
+ * @property ?array $data
+>>>>>>> 4b6b99016 (first commit)
  * @property Schema $form
  */
 abstract class XotBasePage extends FilamentPage implements HasForms
@@ -34,8 +38,11 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 
     /**
      * The model class associated with this page, if any.
+<<<<<<< HEAD
      *
      * @var class-string<Model>|null
+=======
+>>>>>>> 4b6b99016 (first commit)
      */
     public static ?string $model = null;
 
@@ -44,7 +51,11 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      *
      * @var array<string, mixed>
      */
+<<<<<<< HEAD
     public array $data = [];
+=======
+    public ?array $data = [];
+>>>>>>> 4b6b99016 (first commit)
 
     /**
      * Get the view that should be used for the page.
@@ -70,6 +81,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
         return $view->toString();
     }
 
+<<<<<<< HEAD
     public function getViewTest(): string
     {
         $class = __CLASS__;
@@ -91,6 +103,8 @@ abstract class XotBasePage extends FilamentPage implements HasForms
         return $view;
     }
 
+=======
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Get navigation label with automatic translation.
      */
@@ -120,6 +134,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function schema(Schema $schema): Schema
     {
+<<<<<<< HEAD
         return $schema->components($this->getFormSchema())
             ->statePath('data')
             ->columns(2);
@@ -138,6 +153,9 @@ abstract class XotBasePage extends FilamentPage implements HasForms
             ->statePath($this->getFormStatePath())
             ->operation($this->getFormContext())
             ->columns(2);
+=======
+        return $schema->components($this->getFormSchema())->statePath('data');
+>>>>>>> 4b6b99016 (first commit)
     }
 
     /**
@@ -162,6 +180,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     }
 
     /**
+<<<<<<< HEAD
      * Get the form model for the page.
      * Filament compatibility method.
      *
@@ -182,6 +201,8 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     }
 
     /**
+=======
+>>>>>>> 4b6b99016 (first commit)
      * Get the resources associated with this page.
      *
      * @return Collection<int, string>
@@ -197,7 +218,11 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     /**
      * Get the form schema for the page.
      *
+<<<<<<< HEAD
      * @return array<int|string, Component>
+=======
+     * @return array<string, Component>
+>>>>>>> 4b6b99016 (first commit)
      */
     protected function getFormSchema(): array
     {
@@ -222,7 +247,10 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     {
         return [
             'data' => $this->data,
+<<<<<<< HEAD
             'record' => $this->record ?? null,
+=======
+>>>>>>> 4b6b99016 (first commit)
         ];
     }
 }

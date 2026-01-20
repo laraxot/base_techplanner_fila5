@@ -9,6 +9,10 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\Gdpr\Database\Factories\ProfileFactory;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\User\Models\BaseProfile;
 use Modules\User\Models\Device;
 use Modules\User\Models\DeviceProfile;
@@ -67,6 +71,10 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property User|null                                                 $user
  * @property string|null                                               $user_name
  *
+<<<<<<< HEAD
+=======
+ * @method static ProfileFactory          factory($count = null, $state = [])
+>>>>>>> 4b6b99016 (first commit)
  * @method static Builder<static>|Profile newModelQuery()
  * @method static Builder<static>|Profile newQuery()
  * @method static Builder<static>|Profile permission($permissions, $without = false)

@@ -458,5 +458,9 @@ Eseguire regolarmente questi controlli:
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-08-04*
+>>>>>>> 4b6b99016 (first commit)
 *Modulo: Xot*
 *Categoria: Traduzioni*

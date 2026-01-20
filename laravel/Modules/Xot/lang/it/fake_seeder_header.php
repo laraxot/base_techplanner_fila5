@@ -6,6 +6,7 @@ return [
     'fields' => [
         'qty' => [
             'label' => 'qty',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -33,6 +34,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Fake Seeder Header',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
 ];

@@ -4,11 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Models;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Employee\Database\Factories\TimeEntryFactory;
 use Modules\TechPlanner\Models\Profile;
+=======
+use Modules\TechPlanner\Models\Profile;
+use Modules\Employee\Database\Factories\TimeEntryFactory;
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+>>>>>>> 4b6b99016 (first commit)
 
 /**
  * Class TimeEntry.
@@ -47,7 +55,10 @@ use Modules\TechPlanner\Models\Profile;
  * @property-read Profile|null $creator
  * @property-read Profile|null $deleter
  * @property-read Profile|null $updater
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 4b6b99016 (first commit)
  * @method static TimeEntryFactory factory($count = null, $state = [])
  * @method static Builder<static>|TimeEntry forEmployee(int $employeeId)
  * @method static Builder<static>|TimeEntry newModelQuery()
@@ -84,17 +95,25 @@ use Modules\TechPlanner\Models\Profile;
  * @method static Builder<static>|TimeEntry whereTimestamp($value)
  * @method static Builder<static>|TimeEntry whereType($value)
  * @method static Builder<static>|TimeEntry withAnomalies()
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 4b6b99016 (first commit)
  * @mixin \Eloquent
  */
 final class TimeEntry extends BaseModel
 {
     public const STATUS_PENDING = 'pending';
+<<<<<<< HEAD
 
     public const STATUS_APPROVED = 'approved';
 
     public const STATUS_AUTO_APPROVED = 'auto_approved';
 
+=======
+    public const STATUS_APPROVED = 'approved';
+    public const STATUS_AUTO_APPROVED = 'auto_approved';
+>>>>>>> 4b6b99016 (first commit)
     public const STATUS_REJECTED = 'rejected';
 
     /** @var list<string> */
@@ -208,3 +227,7 @@ final class TimeEntry extends BaseModel
         return $this->status === self::STATUS_REJECTED;
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)

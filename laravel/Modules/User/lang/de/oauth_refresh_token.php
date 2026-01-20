@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -35,6 +36,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'access_token_id' => [
+            'label' => 'Zugriffstoken',
+        ],
+        'revoked' => [
+            'label' => 'Widerrufen',
+        ],
+        'expires_at' => [
+            'label' => 'Läuft Ab Am',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [

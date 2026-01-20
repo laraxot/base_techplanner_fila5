@@ -13,22 +13,31 @@ return [
             'label' => 'URL Distribuzione CloudFront',
             'placeholder' => 'Inserisci URL CloudFront',
             'helper_text' => 'URL della distribuzione CloudFront configurata',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'iam_user' => [
             'label' => 'Utente/Ruolo IAM',
             'placeholder' => 'Inserisci utente IAM',
             'helper_text' => 'Utente o ruolo IAM utilizzato per l\'accesso AWS',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'aws_config' => [
             'label' => 'Configurazione AWS',
             'placeholder' => 'Configurazione AWS corrente',
             'helper_text' => 'Panoramica della configurazione AWS attuale',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -40,13 +49,21 @@ return [
         ],
         'test_s3_permissions' => [
             'label' => 'Test Permessi',
+<<<<<<< HEAD
             'tooltip' => 'Testa i permessi S3 (ListBucket, PutObject, GetObject, DeleteObject]',
+=======
+            'tooltip' => 'Testa i permessi S3 (ListBucket, PutObject, GetObject, DeleteObject)',
+>>>>>>> 4b6b99016 (first commit)
             'success' => 'Permessi S3 testati con successo',
             'error' => 'Errore nel test dei permessi S3',
         ],
         'test_file_operations' => [
             'label' => 'Test Operazioni File',
+<<<<<<< HEAD
             'tooltip' => 'Testa le operazioni sui file S3 (upload, download, delete]',
+=======
+            'tooltip' => 'Testa le operazioni sui file S3 (upload, download, delete)',
+>>>>>>> 4b6b99016 (first commit)
             'success' => 'Operazioni file testate con successo',
             'error' => 'Errore nel test delle operazioni file',
         ],
@@ -133,6 +150,7 @@ return [
         'full_diagnostic_completed' => 'Diagnostica completa completata',
         'check_cloudfront_settings' => 'Controlla le impostazioni CloudFront nella configurazione',
     ],
+<<<<<<< HEAD
     'label' => 'Awstest',
     'plural_label' => 'Awstest (Plurale)',
     'navigation' => [
@@ -146,4 +164,6 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

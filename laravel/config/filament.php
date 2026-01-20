@@ -98,6 +98,7 @@ return [
     'memory_optimization' => [
         // Enable lazy loading for widgets
         'lazy_widgets' => true,
+<<<<<<< HEAD
 
         // Enable lazy loading for resources
         'lazy_resources' => true,
@@ -108,6 +109,18 @@ return [
         // Limit table pagination
         'table_pagination_limit' => 25,
 
+=======
+        
+        // Enable lazy loading for resources
+        'lazy_resources' => true,
+        
+        // Cache component registrations
+        'cache_components' => true,
+        
+        // Limit table pagination
+        'table_pagination_limit' => 25,
+        
+>>>>>>> 4b6b99016 (first commit)
         // Enable query optimization
         'optimize_queries' => true,
     ],

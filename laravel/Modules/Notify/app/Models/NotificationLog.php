@@ -82,7 +82,10 @@ final class NotificationLog extends BaseModel
         'sent_at',
         'delivered_at',
         'opened_at',
+<<<<<<< HEAD
         'clicked_at',
+=======
+>>>>>>> 4b6b99016 (first commit)
     ];
 
     /**
@@ -125,6 +128,7 @@ final class NotificationLog extends BaseModel
     }
 
     /**
+<<<<<<< HEAD
      * Segna il log come aperto (tracking apertura email).
      */
     public function markAsOpened(): void
@@ -145,6 +149,8 @@ final class NotificationLog extends BaseModel
     }
 
     /**
+=======
+>>>>>>> 4b6b99016 (first commit)
      * Scope per filtrare i log per template.
      */
     public function scopeForTemplate(

@@ -1,6 +1,10 @@
 # Model/Factory/Seeder Audit
 
+<<<<<<< HEAD
 Generated: [DATE] 16:28
+=======
+Generated: 2025-08-22 16:28
+>>>>>>> 4b6b99016 (first commit)
 
 ## Coverage
 | Model | Factory | Seeded |

@@ -1,5 +1,9 @@
 # PHPStan Syntax Errors Fix - Xot Module
 
+<<<<<<< HEAD
+=======
+**Data**: 2026-01-09  
+>>>>>>> 4b6b99016 (first commit)
 **Modulo**: Xot  
 **Livello PHPStan**: 10  
 **Status**: ✅ **COMPLETATO**
@@ -87,4 +91,8 @@ File di traduzione incompleti spesso derivano da:
 
 **Status**: ✅ **COMPLETATO**
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-09
+>>>>>>> 4b6b99016 (first commit)

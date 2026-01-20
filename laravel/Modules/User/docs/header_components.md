@@ -86,5 +86,10 @@
 
 ## Collegamenti Correlati
 - [Documentazione Filament](https://filamentphp.com/docs)
+<<<<<<< HEAD
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session_management.md) 
+=======
+- [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
+- [Gestione Sessione](./SESSION_MANAGEMENT.md) 
+>>>>>>> 4b6b99016 (first commit)

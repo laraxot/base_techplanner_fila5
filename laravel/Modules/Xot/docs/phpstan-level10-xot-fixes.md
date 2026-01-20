@@ -2,6 +2,10 @@
 
 ## 📋 Riepilogo Intervento
 
+<<<<<<< HEAD
+=======
+**Data**: 17 Novembre 2025
+>>>>>>> 4b6b99016 (first commit)
 **Modulo**: Xot
 **Esito**: ✅ **0 ERRORI** - PHPStan Level 10 completato con successo
 

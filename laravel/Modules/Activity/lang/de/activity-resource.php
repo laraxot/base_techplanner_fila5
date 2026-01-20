@@ -7,44 +7,65 @@ return [
         'id' => [
             'label' => 'ID',
             'tooltip' => 'Identificativo univoco dell\'attività999',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Descrizione dell\'attività',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'subject_type' => [
             'label' => 'Tipo Soggetto',
             'tooltip' => 'Tipo di entità soggetta all\'attività',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'subject_id' => [
             'label' => 'ID Soggetto',
             'tooltip' => 'Identificativo dell\'entità soggetta all\'attività',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'causer_type' => [
             'label' => 'Tipo Autore',
             'tooltip' => 'Tipo di entità che ha causato l\'attività',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'causer_id' => [
             'label' => 'ID Autore',
             'tooltip' => 'Identificativo dell\'entità che ha causato l\'attività',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'tooltip' => 'Data e ora di creazione dell\'attività',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -96,6 +117,7 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -105,4 +127,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'register' => [
         'title' => 'Crea il tuo account',
         'subtitle' => 'Unisciti alla community di sviluppatori Laravel più golosa d\'Italia!',
@@ -60,6 +61,8 @@ return [
             'and' => 'e',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
     'navigation' => [
         'name' => 'GDPR',
         'plural' => 'GDPR',
@@ -139,6 +142,7 @@ return [
         'breach_detected' => 'Violazione Rilevata',
         'policy_updated' => 'Policy Aggiornata',
     ],
+<<<<<<< HEAD
     'label' => 'Gdpr',
     'plural_label' => 'Gdpr (Plurale)',
     'fields' => [
@@ -161,4 +165,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

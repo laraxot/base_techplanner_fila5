@@ -1,5 +1,9 @@
 # Fix: Notify TestCase - Database Connection Configuration
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-22
+>>>>>>> 4b6b99016 (first commit)
 **Problema**: Test Notify falliscono con InvalidArgumentException per database connection 'notify'
 **Principio**: Il sito funziona, quindi il test deve riflettere il comportamento reale
 
@@ -82,9 +86,15 @@ protected function setUp(): void
 ## 🔗 Collegamenti
 
 - [Testing Rules](testing-rules.md)
+<<<<<<< HEAD
 - [Activity TestCase Fix](../../activity/docs/testing-testcase-database-connection-fix.md)
 - [Geo TestCase Fix](../../geo/docs/testing-testcase-database-connection-fix.md)
 - [Media TestCase Fix](../../media/docs/testing-testcase-database-connection-fix.md)
+=======
+- [Activity TestCase Fix](../../Activity/docs/testing-testcase-database-connection-fix.md)
+- [Geo TestCase Fix](../../Geo/docs/testing-testcase-database-connection-fix.md)
+- [Media TestCase Fix](../../Media/docs/testing-testcase-database-connection-fix.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

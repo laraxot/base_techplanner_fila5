@@ -4,7 +4,11 @@
 
 **RIDURRE** il numero di file documentation da **migliaia** a **~10 file focalizzati per modulo**, seguendo i principi **KISS** e **DRY**.
 
+<<<<<<< HEAD
 ## 📊 Stato Attuale ([DATE])
+=======
+## 📊 Stato Attuale (2025-11-04)
+>>>>>>> 4b6b99016 (first commit)
 
 | Modulo | File .md Attuali | Target | Riduzione Necessaria |
 |--------|------------------|--------|---------------------|
@@ -33,9 +37,15 @@ model-inheritance-audit.md
 ### 2. File con Date (vietato)
 ```bash
 # ❌ Date nel nome
+<<<<<<< HEAD
 merge-conflict-resolution-[DATE].md
 lessons-learned-[DATE]-merge-conflicts.md
 phpstan-analysis-[DATE].md
+=======
+merge-conflict-resolution-2025-11-04.md
+lessons-learned-2025-11-04-merge-conflicts.md
+phpstan-analysis-2025-08-18.md
+>>>>>>> 4b6b99016 (first commit)
 
 # ✅ Usare CHANGELOG.md invece
 # Oppure nomi generici aggiornati:
@@ -145,7 +155,11 @@ mv Modules/Xot/docs/*-2024-*.md Modules/Xot/docs/archive/
 mv Modules/Xot/docs/*-2025-*.md Modules/Xot/docs/archive/
 
 # Mantenere solo l'ultimo se rilevante
+<<<<<<< HEAD
 mv Modules/Xot/docs/archive/merge-conflict-resolution-[DATE].md \
+=======
+mv Modules/Xot/docs/archive/merge-conflict-resolution-2025-11-04.md \
+>>>>>>> 4b6b99016 (first commit)
    Modules/Xot/docs/merge-conflict-resolution.md
 ```
 
@@ -153,13 +167,21 @@ mv Modules/Xot/docs/archive/merge-conflict-resolution-[DATE].md \
 ```markdown
 # Changelog - Modulo Xot
 
+<<<<<<< HEAD
 ## [DATE] - Merge Conflicts Resolution
+=======
+## 2025-11-04 - Merge Conflicts Resolution
+>>>>>>> 4b6b99016 (first commit)
 - Corretti 18 file con merge conflicts massivi
 - Implementato File Locking Pattern
 - Fix PSR-4 namespace violations
 - Server Laravel ora funzionante
 
+<<<<<<< HEAD
 ## [DATE] - PHPStan Level 10 Achievement
+=======
+## 2025-10-29 - PHPStan Level 10 Achievement
+>>>>>>> 4b6b99016 (first commit)
 - Raggiunto PHPStan Level 10 su tutto il modulo
 - Corretti 500+ type hints
 - Documentazione aggiornata
@@ -172,7 +194,11 @@ mv Modules/Xot/docs/archive/merge-conflict-resolution-[DATE].md \
 ### 1. File Naming (CRITICO)
 - ✅ **kebab-case lowercase**: `my-document.md`
 - ❌ **NO UPPERCASE**: ~~`MY_DOCUMENT.md`~~
+<<<<<<< HEAD
 - ❌ **NO dates**: ~~`analysis-[DATE].md`~~
+=======
+- ❌ **NO dates**: ~~`analysis-2025-11-04.md`~~
+>>>>>>> 4b6b99016 (first commit)
 - ❌ **NO underscores**: ~~`my_document.md`~~
 - ✅ **Exception**: `README.md`, `CHANGELOG.md`
 
@@ -192,7 +218,11 @@ mv Modules/Xot/docs/archive/merge-conflict-resolution-[DATE].md \
 See /var/www/.../Modules/Xot/docs/xotbase-rules.md
 
 <!-- ✅ CORRECT -->
+<<<<<<< HEAD
 See [XotBase Rules](../../xot/docs/xotbase-rules.md)
+=======
+See [XotBase Rules](../../Xot/docs/xotbase-rules.md)
+>>>>>>> 4b6b99016 (first commit)
 ```
 
 ## 📝 Template README.md Standard
@@ -240,10 +270,18 @@ Common issues e soluzioni.
 
 ## References
 - [Doc interna 1](./other-doc.md)
+<<<<<<< HEAD
 - [Doc Xot](../../xot/docs/core-doc.md)
 - [External](https://example.com)
 
 ---
+=======
+- [Doc Xot](../../Xot/docs/core-doc.md)
+- [External](https://example.com)
+
+---
+**Ultimo aggiornamento:** [Data] - [Breve descrizione]
+>>>>>>> 4b6b99016 (first commit)
 ```
 
 ## 🔨 Script di Consolidamento
@@ -352,6 +390,10 @@ Prima di considerare un modulo "consolidato":
 
 ---
 
+<<<<<<< HEAD
 **Created:** [DATE]
+=======
+**Created:** 2025-11-04
+>>>>>>> 4b6b99016 (first commit)
 **Purpose:** Strategic plan per ridurre documentation bloat
 **Target:** ~350 total files across all modules (da ~5,267)

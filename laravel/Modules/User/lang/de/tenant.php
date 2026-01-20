@@ -18,6 +18,7 @@ return [
         'heading' => 'Tenant',
     ],
     'fields' => [
+<<<<<<< HEAD
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -71,6 +72,30 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+        'secondary_color' => [
+            'label' => 'secondary_color',
+        ],
+        'slug' => [
+            'label' => 'slug',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'id' => [
+            'label' => 'id',
+        ],
+        'message' => [
+            'label' => 'message',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -88,6 +113,9 @@ return [
         ],
         'change_password' => 'Cambio password',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

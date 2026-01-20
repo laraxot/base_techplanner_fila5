@@ -11,6 +11,7 @@ return [
     'fields' => [
         'openFilters' => [
             'label' => 'openFilters',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -65,4 +66,26 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+=======
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'values-list' => [
+            'label' => 'values-list',
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

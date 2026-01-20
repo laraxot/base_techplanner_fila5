@@ -69,4 +69,8 @@ docs/git-conflict-resolution/
 - [Regole Git Conflict Resolution](../../.cursor/rules/git-conflict-resolution.mdc)
 
 ---
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-07-31*  
+>>>>>>> 4b6b99016 (first commit)
 *Sistemazione completata: Documentazione riorganizzata secondo convenzioni Laraxot* 

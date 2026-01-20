@@ -145,9 +145,17 @@ done
 
 ## Riferimenti e Collegamenti
 
+<<<<<<< HEAD
 - [Modules/Progressioni/project_docs/plan.md](../../progressioni/project_docs/plan.md) - Piano di verifica sistematica
+=======
+- [Modules/Progressioni/project_docs/plan.md](../../Progressioni/project_docs/plan.md) - Piano di verifica sistematica
+>>>>>>> 4b6b99016 (first commit)
 - [Modules/Xot/project_docs/filament/resources/architecture/forbidden-methods.md](resources/architecture/forbidden-methods.md) - Metodi vietati in XotBaseResource
 - [Modules/Xot/project_docs/filament_best_practices.md](../filament_best_practices.md) - Best practices Filament
 - [/.windsurf/rules/filament-resource-model-alignment.mdc](../../../../.windsurf/rules/filament-resource-model-alignment.mdc) - Regole Windsurf
 - [/.cursor/rules/filament-resource-model-alignment.mdc](../../../../.cursor/rules/filament-resource-model-alignment.mdc) - Regole Cursor
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Luglio 2025 - Dopo correzione errori critici modulo Progressioni*
+>>>>>>> 4b6b99016 (first commit)

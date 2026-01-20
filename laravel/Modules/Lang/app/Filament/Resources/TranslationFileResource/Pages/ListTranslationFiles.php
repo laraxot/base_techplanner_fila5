@@ -18,7 +18,11 @@ class ListTranslationFiles extends XotBaseListRecords
     public function getTableColumns(): array
     {
         return [
+<<<<<<< HEAD
             'key' => TextColumn::make('key')->searchable(['key', 'content']),
+=======
+            TextColumn::make('key')->searchable(['key', 'content']),
+>>>>>>> 4b6b99016 (first commit)
         ];
     }
 

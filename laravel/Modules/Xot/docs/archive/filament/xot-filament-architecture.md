@@ -10,8 +10,13 @@ L'architettura Filament-Xot definisce come il modulo Xot estende e personalizza 
 
 Il sistema è costruito attorno a classi base che forniscono funzionalità comuni:
 
+<<<<<<< HEAD
 - [XotBasePage](modules/xot/project_docs/filament/pages/xotbasepage.md) - Classe base per le pagine Filament
 - [XotBaseWidget](modules/xot/project_docs/filament/widgets/xotbasewidget.md) - Classe base per i widget Filament
+=======
+- [XotBasePage](Modules/Xot/project_docs/filament/pages/xotbasepage.md) - Classe base per le pagine Filament
+- [XotBaseWidget](Modules/Xot/project_docs/filament/widgets/xotbasewidget.md) - Classe base per i widget Filament
+>>>>>>> 4b6b99016 (first commit)
 
 ### Principi Architetturali
 
@@ -58,8 +63,13 @@ L'architettura Filament-Xot definisce come il modulo Xot estende e personalizza 
 
 Il sistema è costruito attorno a classi base che forniscono funzionalità comuni:
 
+<<<<<<< HEAD
 - [XotBasePage](../xot/docs/filament/pages/xotbasepage.md) - Classe base per le pagine Filament
 - [XotBaseWidget](../xot/docs/filament/widgets/xotbasewidget.md) - Classe base per i widget Filament
+=======
+- [XotBasePage](../Xot/docs/filament/pages/xotbasepage.md) - Classe base per le pagine Filament
+- [XotBaseWidget](../Xot/docs/filament/widgets/xotbasewidget.md) - Classe base per i widget Filament
+>>>>>>> 4b6b99016 (first commit)
 
 ### Principi Architetturali
 

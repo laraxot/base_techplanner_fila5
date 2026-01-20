@@ -160,3 +160,7 @@ Prima di creare un nuovo DTO, verificare che:
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-05-12*
+>>>>>>> 4b6b99016 (first commit)

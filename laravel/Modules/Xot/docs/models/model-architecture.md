@@ -1,5 +1,9 @@
 # Model Architecture - Guida Completa
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-10-16
+>>>>>>> 4b6b99016 (first commit)
 **Modulo**: Xot (Base Module)
 **Autore**: Claude Code Analysis
 
@@ -350,7 +354,11 @@ public function getConnectionName(): ?string
 - Namespace: `Modules\Quaeris\Models\*` → Connection: `quaeris`
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
+<<<<<<< HEAD
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
+=======
+**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 
@@ -774,8 +782,13 @@ it('tracks who created the record', function () {
 - [XotBaseModel.php](../../app/Models/XotBaseModel.php) - Base class per modelli standard
 - [XotBasePivot.php](../../app/Models/XotBasePivot.php) - Base class per pivot tables
 - [XotBaseMorphPivot.php](../../app/Models/XotBaseMorphPivot.php) - Base class per morph pivots
+<<<<<<< HEAD
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
 - [CLAUDE.md](../../../claude.md) - Convenzioni generali del progetto
+=======
+- [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
+- [CLAUDE.md](../../../CLAUDE.md) - Convenzioni generali del progetto
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 
@@ -802,6 +815,10 @@ A: Estendi comunque BaseModel, ma usa `setTable()` nel costruttore o in metodi f
 **Prossimo aggiornamento**: Dopo implementazione auto-discovery in XotBaseModel
 # Model Architecture - Guida Completa
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-10-16
+>>>>>>> 4b6b99016 (first commit)
 **Modulo**: Xot (Base Module)
 **Autore**: Claude Code Analysis
 
@@ -1152,7 +1169,11 @@ public function getConnectionName(): ?string
 - Namespace: `Modules\Quaeris\Models\*` → Connection: `quaeris`
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
+<<<<<<< HEAD
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
+=======
+**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 
@@ -1576,8 +1597,13 @@ it('tracks who created the record', function () {
 - [XotBaseModel.php](../../app/Models/XotBaseModel.php) - Base class per modelli standard
 - [XotBasePivot.php](../../app/Models/XotBasePivot.php) - Base class per pivot tables
 - [XotBaseMorphPivot.php](../../app/Models/XotBaseMorphPivot.php) - Base class per morph pivots
+<<<<<<< HEAD
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
 - [CLAUDE.md](../../../claude.md) - Convenzioni generali del progetto
+=======
+- [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
+- [CLAUDE.md](../../../CLAUDE.md) - Convenzioni generali del progetto
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

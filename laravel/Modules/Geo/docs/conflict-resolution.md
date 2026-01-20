@@ -1,6 +1,10 @@
 # Risoluzione Conflitti Git - Modulo Geo
 
+<<<<<<< HEAD
 ## Data: [DATE]
+=======
+## Data: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 ## File Corretti
 
@@ -94,6 +98,7 @@ use function Safe\json_decode;
 
 ## Verifiche Post-Correzione
 
+<<<<<<< HEAD
 
 ### 2. Validazione PHPStan
 ```bash
@@ -155,3 +160,7 @@ php artisan lang:check
 **Ultimo aggiornamento**: [DATE]
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
+=======
+### 1. Controllo Conflitti
+```bash
+>>>>>>> 4b6b99016 (first commit)

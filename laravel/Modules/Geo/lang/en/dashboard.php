@@ -25,10 +25,13 @@ return [
         'places_by_category' => 'Luoghi per Categoria',
         'activity_timeline' => 'Timeline Attività',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

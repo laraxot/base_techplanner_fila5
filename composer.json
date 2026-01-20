@@ -16,6 +16,7 @@
     "require-dev": {
         "filament/upgrade": "~4.0",
         "phpmd/phpmd": "^2.15"
+<<<<<<< HEAD
     },
     "require": {
         "filament/tables": "^5.1",
@@ -26,5 +27,7 @@
         "filament/notifications": "^5.1",
         "filament/widgets": "^5.1",
         "filament/support": "^5.1"
+=======
+>>>>>>> 4b6b99016 (first commit)
     }
 }

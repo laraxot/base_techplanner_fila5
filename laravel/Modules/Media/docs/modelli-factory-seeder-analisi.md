@@ -197,9 +197,15 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 
 ### Moduli Collegati
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Documenti medici
+<<<<<<< HEAD
 - [User Module](../../user/docs/modelli_factory_seeder_analisi.md) - Avatar e documenti utente
 - [Cms Module](../../cms/docs/modelli_factory_seeder_analisi.md) - Contenuti multimediali
 - [Notify Module](../../notify/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
+=======
+- [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Avatar e documenti utente
+- [Cms Module](../../Cms/docs/modelli_factory_seeder_analisi.md) - Contenuti multimediali
+- [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
+>>>>>>> 4b6b99016 (first commit)
 
 ### Librerie e Servizi
 - [Intervention Image](http://image.intervention.io/) - Image processing
@@ -207,5 +213,9 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [FFmpeg](https://ffmpeg.org/) - Video/Audio processing
 - [ImageMagick](https://imagemagick.org/) - Advanced image processing
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)
 *Analisi completa di 4 modelli attivi, sistema media completo*
 *Supporto upload, conversioni, storage locale/cloud*

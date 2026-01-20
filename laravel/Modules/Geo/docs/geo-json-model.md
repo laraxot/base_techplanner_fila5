@@ -135,14 +135,22 @@ Select::make('cap')
 - Se il json cresce molto, valutare slicing o indicizzazione.
 - Per performance, sfruttare cache Laravel.
 - Se serve compatibilità Eloquent, usare macro/traits per Collection.
+<<<<<<< HEAD
 - Collegare questa documentazione a Xot/project_docs/module-structure.md e a <main module>/project_docs/geo-integration.md.
+=======
+- Collegare questa documentazione a Xot/docs/module-structure.md e a <main module>/docs/geo-integration.md.
+>>>>>>> 4b6b99016 (first commit)
 
 ### 5. Collegamenti utili
 
 - [Squire PHP](https://github.com/squirephp/squire)
 - Geo/module_geo.md
 - Xot/module-structure.md
+<<<<<<< HEAD
 - <main module>/project_docs/geo-integration.md
+=======
+- <main module>/docs/geo-integration.md
+>>>>>>> 4b6b99016 (first commit)
 
 ## Confronto: GeoJsonModel vs Laravel Sushi
 

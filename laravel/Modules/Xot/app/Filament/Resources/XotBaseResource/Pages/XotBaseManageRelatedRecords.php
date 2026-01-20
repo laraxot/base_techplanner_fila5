@@ -26,8 +26,12 @@ use Override;
  */
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
+<<<<<<< HEAD
     use HasXotTable;
     use InteractsWithForms;
+=======
+    use HasXotTable, InteractsWithForms;
+>>>>>>> 4b6b99016 (first commit)
     // protected static string $resource;
 
     /**
@@ -109,6 +113,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      */
     public function getTableActions(): array
     {
+<<<<<<< HEAD
         // Preferisci la risorsa correlata per i record nested; altrimenti usa la risorsa della pagina.
         $resource = static::$relatedResource ?? static::getResource();
         // Mostra "view" solo se la risorsa correlata espone quella pagina.
@@ -139,6 +144,14 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     if ($url === '') {
                         $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
                     }
+=======
+        return [
+            'edit' => Action::make('edit')
+                ->label('Modifica')
+                ->icon('heroicon-o-pencil')
+                ->url(function (Model $record): string {
+                    $url = static::getResource()::getUrl('edit', ['record' => $record]);
+>>>>>>> 4b6b99016 (first commit)
 
                     return is_string($url) ? $url : (string) $url;
                 }),

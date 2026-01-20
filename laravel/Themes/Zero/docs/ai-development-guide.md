@@ -36,7 +36,11 @@ The Zero theme has unique conventions that differ from standard Laravel/Filament
 
 The project root contains shared instructions that include Zero theme patterns:
 
+<<<<<<< HEAD
 **Location**: `CLAUDE.md`
+=======
+**Location**: `/var/www/_bases/base_quaeris_fila4_mono/CLAUDE.md`
+>>>>>>> 4b6b99016 (first commit)
 
 **Zero Theme Section**: Documents theme structure, best practices, and integration patterns.
 
@@ -531,7 +535,11 @@ Consider creating a custom MCP server for Zero theme operations:
       "command": "npx",
       "args": ["-y", "zero-theme-mcp-server"],
       "env": {
+<<<<<<< HEAD
         "THEME_PATH": "Themes/Zero"
+=======
+        "THEME_PATH": "/var/www/_bases/base_quaeris_fila4_mono/laravel/Themes/Zero"
+>>>>>>> 4b6b99016 (first commit)
       }
     }
   }

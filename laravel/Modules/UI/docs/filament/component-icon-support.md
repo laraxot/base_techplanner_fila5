@@ -108,6 +108,10 @@ Forms\Components\TextInput::make('name')
 ## Riferimenti
 
 - [Documentazione Filament Forms](https://filamentphp.com/docs/3.x/forms/fields/overview)
+<<<<<<< HEAD
 - [API Components Filament](../ui/docs/filament/components-api.md)
+=======
+- [API Components Filament](../UI/docs/filament/components-api.md)
+>>>>>>> 4b6b99016 (first commit)
 
 > **NOTA**: Questa documentazione segue la regola di centralizzare tutte le documentazioni UI nel modulo UI con collegamenti bidirezionali dagli altri moduli.

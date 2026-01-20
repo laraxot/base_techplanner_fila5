@@ -8,8 +8,12 @@ use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
+<<<<<<< HEAD
 use Filament\Pages\Page;
 // use Filament\Resources\Pages\Page;
+=======
+use Filament\Pages\Page as FilamentPage;
+>>>>>>> 4b6b99016 (first commit)
 use Filament\Schemas\Schema;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -23,8 +27,13 @@ use RuntimeException;
 use UnitEnum;
 
 /**
+<<<<<<< HEAD
  * Classe base astratta per tutte le pagine Filament *standalone* (non legate a risorse specifiche).
  * Fornisce funzionalità comuni e standardizzate per la gestione delle pagine personalizzate.
+=======
+ * Classe base astratta per tutte le pagine Filament non legate a risorse specifiche.
+ * Fornisce funzionalità comuni e standardizzate per la gestione delle pagine.
+>>>>>>> 4b6b99016 (first commit)
  *
  * Implementa:
  * - Sistema di traduzioni integrato
@@ -38,7 +47,11 @@ use UnitEnum;
  *
  * @see \Modules\Xot\docs\xotbasepage_implementation.md Documentazione completa
  */
+<<<<<<< HEAD
 abstract class XotBasePage extends Page implements HasForms
+=======
+abstract class XotBasePage extends FilamentPage implements HasForms
+>>>>>>> 4b6b99016 (first commit)
 {
     use InteractsWithForms;
     use TransTrait;
@@ -317,7 +330,11 @@ abstract class XotBasePage extends Page implements HasForms
     {
         return [
             Action::make('save')
+<<<<<<< HEAD
                 ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
+=======
+                ->label(__('filament-panels::resources/pages/edit-record.form.actions.save.label'))
+>>>>>>> 4b6b99016 (first commit)
                 ->submit('save'),
         ];
     }

@@ -93,6 +93,12 @@ Se si verifica l'errore `Interface "Modules\Notify\Contracts\SMS\SmsActionContra
 
 ## Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Convenzioni di Naming per le Interfacce](./interface_naming_convention.md)
 - [Chiarimento sulla Struttura delle Interfacce](./interface_structure_clarification.md)
 - [Architettura dei Contratti](./contracts_architecture.md)
+=======
+- [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
+- [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
+- [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
+>>>>>>> 4b6b99016 (first commit)

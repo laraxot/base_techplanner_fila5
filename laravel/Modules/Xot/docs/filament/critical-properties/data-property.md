@@ -94,4 +94,8 @@ Questa struttura deriva dall'architettura Livewire+Filament in cui:
 
 - [Livewire Properties Documentation](https://livewire.laravel.com/docs/properties)
 - [Filament Forms Documentation](https://filamentphp.com/docs/3.x/forms/installation)
+<<<<<<< HEAD
 - [RegistrationWidget Example](../../user/docs/filament/widgets/registration-widget.md)
+=======
+- [RegistrationWidget Example](../../User/docs/filament/widgets/registration-widget.md)
+>>>>>>> 4b6b99016 (first commit)

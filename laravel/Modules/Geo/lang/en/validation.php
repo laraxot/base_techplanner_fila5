@@ -111,6 +111,7 @@ return [
             'rule-name' => 'custom-message',
         ],
     ],
+<<<<<<< HEAD
     'attributes' => [
     ],
     'navigation' => [
@@ -126,4 +127,7 @@ return [
     ],
     'actions' => [
     ],
+=======
+    'attributes' => [],
+>>>>>>> 4b6b99016 (first commit)
 ];

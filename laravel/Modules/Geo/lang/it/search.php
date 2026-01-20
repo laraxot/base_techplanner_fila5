@@ -8,89 +8,122 @@ return [
             'label' => 'Ricerca',
             'placeholder' => 'Inserisci il termine di ricerca',
             'help' => 'Termine o frase da cercare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'type' => [
             'label' => 'Tipo',
             'placeholder' => 'Seleziona il tipo di ricerca',
             'help' => 'Tipo di entità da cercare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'location' => [
             'label' => 'Posizione',
             'placeholder' => 'Inserisci la posizione',
             'help' => 'Posizione per la ricerca geografica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'radius' => [
             'label' => 'Raggio',
             'placeholder' => 'Inserisci il raggio di ricerca',
             'help' => 'Raggio di ricerca in chilometri',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'latitude' => [
             'label' => 'Latitudine',
             'placeholder' => 'Inserisci la latitudine',
             'help' => 'Latitudine per la ricerca geografica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'longitude' => [
             'label' => 'Longitudine',
             'placeholder' => 'Inserisci la longitudine',
             'help' => 'Longitudine per la ricerca geografica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'filters' => [
             'label' => 'Filtri',
             'placeholder' => 'Configura i filtri di ricerca',
             'help' => 'Filtri da applicare alla ricerca',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'sort_by' => [
             'label' => 'Ordina per',
             'placeholder' => 'Seleziona il campo di ordinamento',
             'help' => 'Campo per ordinare i risultati',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'sort_direction' => [
             'label' => 'Direzione ordinamento',
             'placeholder' => 'Seleziona la direzione',
             'help' => 'Direzione dell\'ordinamento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'limit' => [
             'label' => 'Limite',
             'placeholder' => 'Inserisci il numero massimo di risultati',
             'help' => 'Numero massimo di risultati da restituire',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'page' => [
             'label' => 'Pagina',
             'placeholder' => 'Inserisci il numero di pagina',
             'help' => 'Numero di pagina per la paginazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -162,6 +195,7 @@ return [
         'recent_searches' => 'Ricerche recenti',
         'related_searches' => 'Ricerche correlate',
     ],
+<<<<<<< HEAD
     'label' => 'Search',
     'plural_label' => 'Search (Plurale)',
     'navigation' => [
@@ -186,4 +220,6 @@ return [
             'label' => 'Elimina Search',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

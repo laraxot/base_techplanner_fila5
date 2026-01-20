@@ -4,9 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Filament\Widgets;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Filament\Notifications\Notification;
 use Illuminate\Database\Eloquent\Collection;
+=======
+use Illuminate\Database\Eloquent\Collection;
+use Carbon\Carbon;
+use Filament\Notifications\Notification;
+>>>>>>> 4b6b99016 (first commit)
 use Illuminate\Support\Facades\Auth;
 use Modules\Employee\Enums\WorkHourStatusEnum;
 use Modules\Employee\Enums\WorkHourTypeEnum;

@@ -1,10 +1,17 @@
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [README modulo Cms](../readme.md)
 - [Documentazione User](/laravel/modules/user/project_docs/header_language_selector_with_flags.md)
 - [Documentazione Sezioni](./sections_structure.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/project_docs/translation_keys_best_practices.md)
+=======
+- [README modulo Cms](../README.md)
+- [Documentazione User](/laravel/Modules/User/project_docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+- [Documentazione Sezioni](./SECTIONS_STRUCTURE.md)
+- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/project_docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Collegamenti Documentazione](/project_docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -49,8 +56,13 @@ Ecco un'implementazione migliorata del selettore di lingua che utilizza le bandi
     >
         {{-- Mostra la bandiera della lingua corrente --}}
         <span class="flex items-center">
+<<<<<<< HEAD
             <x-dynamic-component 
                 :component="'ui-flags.' . $currentLocale" 
+=======
+            <x-dynamic-component
+                :component="'ui-flags.' . $currentLocale"
+>>>>>>> 4b6b99016 (first commit)
                 class="w-6 h-6 rounded-full shadow-sm border border-gray-200"
                 aria-hidden="true"
             />
@@ -60,7 +72,11 @@ Ecco un'implementazione migliorata del selettore di lingua che utilizza le bandi
             </svg>
         </span>
     </button>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     <div
         x-show="open"
         x-transition:enter="transition ease-out duration-100"
@@ -77,8 +93,13 @@ Ecco un'implementazione migliorata del selettore di lingua che utilizza le bandi
                     href="{{ '/' . $locale . request()->getPathInfo() }}"
                     class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 {{ $currentLocale === $locale ? 'bg-gray-100' : '' }}"
                 >
+<<<<<<< HEAD
                     <x-dynamic-component 
                         :component="'ui-flags.' . $locale" 
+=======
+                    <x-dynamic-component
+                        :component="'ui-flags.' . $locale"
+>>>>>>> 4b6b99016 (first commit)
                         class="w-5 h-5 rounded-full mr-3"
                         aria-hidden="true"
                     />

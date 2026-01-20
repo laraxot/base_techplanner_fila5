@@ -15,35 +15,50 @@ return [
             'placeholder' => 'Inserisci email destinatario',
             'helper_text' => '',
             'description' => 'Indirizzo email del destinatario',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'subject' => [
             'label' => 'Oggetto',
             'placeholder' => 'Inserisci oggetto email',
             'helper_text' => '',
             'description' => 'Oggetto dell\'email di test',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'body_html' => [
             'label' => 'Corpo HTML',
             'placeholder' => 'Inserisci contenuto HTML',
             'helper_text' => '',
             'description' => 'Contenuto HTML dell\'email',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'attachment' => [
             'description' => 'Allegato per il test S3',
             'helper_text' => '',
             'placeholder' => 'Seleziona file da allegare',
             'label' => 'Allegato',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'debug_output' => [
             'description' => 'Output di debug per i test',
             'helper_text' => '',
             'placeholder' => 'Output debug',
             'label' => 'Debug Output',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -100,6 +115,9 @@ return [
             'tooltip' => 'Testa operazioni sui file S3',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'S3 Test',
     'plural_label' => 'S3 Test (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

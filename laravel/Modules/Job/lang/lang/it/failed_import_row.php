@@ -6,6 +6,7 @@ return [
     'fields' => [
         'edit' => [
             'label' => 'edit',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -28,4 +29,11 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+        'validation_error' => [
+            'label' => 'validation_error',
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

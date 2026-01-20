@@ -33,7 +33,11 @@ cd laravel
 
 ## Collegamenti alla Documentazione
 
+<<<<<<< HEAD
 - [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md): Documentazione dei conflitti risolti nel modulo UI.
+=======
+- [CONFLITTI_MERGE_RISOLTI.md](CONFLITTI_MERGE_RISOLTI.md): Documentazione dei conflitti risolti nel modulo UI.
+>>>>>>> 4b6b99016 (first commit)
 - [actions/table_layout_toggle.md](actions/table_layout_toggle.md): Documentazione dell'azione TableLayoutToggle.
 - [components.md](components.md): Documentazione dei componenti UI, incluso AddressField.
 
@@ -76,7 +80,11 @@ cd laravel
 
 ## Collegamenti alla Documentazione
 
+<<<<<<< HEAD
 - [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md): Documentazione dei conflitti risolti nel modulo UI.
+=======
+- [CONFLITTI_MERGE_RISOLTI.md](CONFLITTI_MERGE_RISOLTI.md): Documentazione dei conflitti risolti nel modulo UI.
+>>>>>>> 4b6b99016 (first commit)
 - [actions/table_layout_toggle.md](actions/table_layout_toggle.md): Documentazione dell'azione TableLayoutToggle.
 - [components.md](components.md): Documentazione dei componenti UI, incluso AddressField.
 

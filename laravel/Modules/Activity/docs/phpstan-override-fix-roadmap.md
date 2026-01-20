@@ -1,6 +1,10 @@
 # PHPStan Error Resolution Roadmap - Activity Module
 
+<<<<<<< HEAD
 ## Data: [DATE]
+=======
+## Data: 2026-01-08
+>>>>>>> 4b6b99016 (first commit)
 ## Metodologia: Super Mucca - La Litigata Interna
 ## Stato: Da Implementare
 ## Tipo: PHPStan Syntax Error Fix
@@ -229,6 +233,10 @@ Potrebbero esserci altri casi di import duplicati oltre a Override:
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-08
+>>>>>>> 4b6b99016 (first commit)
 **Versione**: 1.0.0
 **Status**: In corso di implementazione

@@ -69,8 +69,13 @@ Modules/<NomeModulo>/
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Modulo Lang](../../lang/project_docs/module_lang.md) - Documentazione principale
 - [Regole Generali](../../xot/project_docs/translations.md) - Regole base
+=======
+- [Modulo Lang](../../Lang/project_docs/module_lang.md) - Documentazione principale
+- [Regole Generali](../../Xot/project_docs/translations.md) - Regole base
+>>>>>>> 4b6b99016 (first commit)
 
 ## Struttura
 
@@ -367,6 +372,7 @@ Action::make('delete')
 - Test di performance
 
 ## Collegamenti tra versioni di translations.md
+<<<<<<< HEAD
 * [translations.md](../../../chart/project_docs/translations.md)
 * [translations.md](../../../reporting/project_docs/translations.md)
 * [translations.md](../../../gdpr/project_docs/translations.md)
@@ -384,6 +390,25 @@ Action::make('delete')
 * [translations.md](../../../activity/project_docs/translations.md)
 * [translations.md](../../../patient/project_docs/translations.md)
 * [translations.md](../../../cms/project_docs/translations.md)
+=======
+* [translations.md](../../../Chart/project_docs/translations.md)
+* [translations.md](../../../Reporting/project_docs/translations.md)
+* [translations.md](../../../Gdpr/project_docs/translations.md)
+* [translations.md](../../../Notify/project_docs/translations.md)
+* [translations.md](../../../Xot/project_docs/roadmap/lang/translations.md)
+* [translations.md](../../../Xot/project_docs/translations.md)
+* [translations.md](../../../Dental/project_docs/translations.md)
+* [translations.md](../../../User/project_docs/translations.md)
+* [translations.md](../../../UI/project_docs/translations.md)
+* [translations.md](../../../Lang/project_docs/packages/translations.md)
+* [translations.md](../../../Lang/project_docs/translations.md)
+* [translations.md](../../../Job/project_docs/translations.md)
+* [translations.md](../../../Media/project_docs/translations.md)
+* [translations.md](../../../Tenant/project_docs/translations.md)
+* [translations.md](../../../Activity/project_docs/translations.md)
+* [translations.md](../../../Patient/project_docs/translations.md)
+* [translations.md](../../../Cms/project_docs/translations.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### Versione Incoming
 

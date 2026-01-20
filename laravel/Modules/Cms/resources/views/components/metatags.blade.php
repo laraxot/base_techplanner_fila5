@@ -14,6 +14,10 @@
         connect-src 'self' https://www.google-analytics.com;
         media-src 'self';
         object-src 'none';
+<<<<<<< HEAD
+=======
+        frame-ancestors 'self';
+>>>>>>> 4b6b99016 (first commit)
         form-action 'self';
         base-uri 'self';
         manifest-src 'self';

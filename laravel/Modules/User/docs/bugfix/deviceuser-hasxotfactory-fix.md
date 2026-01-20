@@ -80,8 +80,13 @@ php artisan tinker
 
 ## Link Correlati
 
+<<<<<<< HEAD
 - [HasXotFactory Documentation](../../xot/docs/traits/hasxotfactory.md)
 - [HasXotFactory Restoration](../../xot/docs/bugfix/hasxotfactory-restoration.md)
+=======
+- [HasXotFactory Documentation](../../Xot/docs/traits/hasxotfactory.md)
+- [HasXotFactory Restoration](../../Xot/docs/bugfix/hasxotfactory-restoration.md)
+>>>>>>> 4b6b99016 (first commit)
 - [BasePivot Documentation](../models/basepivot.md)
 
 ---

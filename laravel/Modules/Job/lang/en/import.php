@@ -21,69 +21,97 @@ return [
             'label' => 'ID',
             'tooltip' => 'Identificativo unico dell\'importazione',
             'placeholder' => 'ID Importazione',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'file' => [
             'label' => 'File',
             'tooltip' => 'Seleziona il file da importare',
             'placeholder' => 'Scegli un file',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'source' => [
             'label' => 'Sorgente',
             'tooltip' => 'Indica la sorgente del file importato',
             'placeholder' => 'Sorgente del file',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'format' => [
             'label' => 'Formato',
             'tooltip' => 'Formato del file importato (CSV, Excel, etc.)',
             'placeholder' => 'Seleziona formato',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'rows' => [
             'label' => 'Righe',
             'tooltip' => 'Numero totale di righe nel file',
             'placeholder' => 'Numero righe',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'processed' => [
             'label' => 'Righe Processate',
             'tooltip' => 'Numero di righe processate con successo',
             'placeholder' => 'Righe processate',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'failed' => [
             'label' => 'Righe Fallite',
             'tooltip' => 'Numero di righe che hanno causato errore durante l\'importazione',
             'placeholder' => 'Righe fallite',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'started_at' => [
             'label' => 'Iniziato il',
             'tooltip' => 'Data e ora di inizio dell\'importazione',
             'placeholder' => 'Data inizio importazione',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'completed_at' => [
             'label' => 'Completato il',
             'tooltip' => 'Data e ora di completamento dell\'importazione',
             'placeholder' => 'Data completamento importazione',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'options' => [
             'label' => 'Opzioni',
             'tooltip' => 'Impostazioni avanzate per l\'importazione',
             'placeholder' => 'Seleziona le opzioni',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -98,6 +126,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'formats' => [
@@ -248,6 +284,9 @@ return [
         'json' => 'JSON',
         'xml' => 'XML',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

@@ -176,7 +176,11 @@ TextInput::make('slug')
 - [Documentazione Package](https://github.com/camya/filament-title-with-slug)
 - [Articolo Laravel News](https://laravel-news.com/generating-slugs-from-a-title-in-filament)
 - [Documentazione Filament](https://filamentphp.com/docs)
+<<<<<<< HEAD
 - [Best Practices UI/UX](./best-practices.md)
+=======
+- [Best Practices UI/UX](./BEST-PRACTICES.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Note Importanti
 

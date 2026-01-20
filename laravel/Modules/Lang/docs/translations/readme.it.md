@@ -64,10 +64,17 @@
 
 ## 📚 Documentazione
 
+<<<<<<< HEAD
 - [Indice del Progetto](../index.md)
 - [Workflow PHPStan](../phpstan_workflow.md)
 - [Panoramica dei Moduli](../modules.md)
 - [Architettura](../architecture.md)
+=======
+- [Indice del Progetto](../INDEX.md)
+- [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
+- [Panoramica dei Moduli](../MODULES.md)
+- [Architettura](../ARCHITECTURE.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 
@@ -150,10 +157,17 @@ Questo progetto è open-source e disponibile sotto la [Licenza MIT](../../LICENS
 
 ## 📚 Documentazione
 
+<<<<<<< HEAD
 - [Indice del Progetto](../index.md)
 - [Workflow PHPStan](../phpstan_workflow.md)
 - [Panoramica dei Moduli](../modules.md)
 - [Architettura](../architecture.md)
+=======
+- [Indice del Progetto](../INDEX.md)
+- [Workflow PHPStan](../PHPSTAN_WORKFLOW.md)
+- [Panoramica dei Moduli](../MODULES.md)
+- [Architettura](../ARCHITECTURE.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

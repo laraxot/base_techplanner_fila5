@@ -49,6 +49,7 @@ return [
         'warning' => 'Attenzione',
         'critical' => 'Critico',
     ],
+<<<<<<< HEAD
     'label' => 'Dashboard',
     'plural_label' => 'Dashboard (Plurale)',
     'fields' => [
@@ -82,4 +83,6 @@ return [
             'label' => 'Elimina Dashboard',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

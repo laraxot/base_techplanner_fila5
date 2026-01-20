@@ -8,6 +8,7 @@ return [
             'label' => 'edit',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'View Team',
         'plural' => 'View Team',
@@ -41,4 +42,10 @@ return [
             'description' => '',
         ],
     ],
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+>>>>>>> 4b6b99016 (first commit)
 ];

@@ -102,8 +102,13 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 - [Struttura dei Moduli](../../../project_docs/architecture/modules.md)
 
 ### Collegamenti ai Moduli
+<<<<<<< HEAD
 - [Notify ServiceProvider](../../notify/project_docs/service-provider.md)
 - [User ServiceProvider](../../user/project_docs/service-provider.md)
+=======
+- [Notify ServiceProvider](../../Notify/project_docs/service-provider.md)
+- [User ServiceProvider](../../User/project_docs/service-provider.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Note Importanti
 
@@ -113,7 +118,11 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 4. Documentare ogni modifica o estensione
 5. Mantenere la coerenza tra i moduli
 ## Collegamenti tra versioni di XotBaseServiceProvider.md
+<<<<<<< HEAD
 * [XotBaseServiceProvider.md](../../../../project_docs/moduli/xot/xotbaseserviceprovider.md)
+=======
+* [XotBaseServiceProvider.md](../../../../project_docs/moduli/xot/XotBaseServiceProvider.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Correzione, motivazione e miglioramenti (2025-05-13)
 
@@ -129,7 +138,11 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 - **Gestione errori e logging**: loggare i casi di fallback e le eccezioni non bloccanti.
 - **Pattern di override**: ogni override deve chiamare sempre `parent::method()`. Vietato cambiare la visibilità delle proprietà/metodi ereditati.
 - **Testabilità**: usare metodi protected per facilitare il mocking nei test.
+<<<<<<< HEAD
 - **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerbladeicons.md), con fallback e validazione dei path.
+=======
+- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerBladeIcons.md), con fallback e validazione dei path.
+>>>>>>> 4b6b99016 (first commit)
 
 ### Consigli di miglioramento
 - Centralizzare la gestione dei path (views, lang, svg, ecc.) in un helper o trait.
@@ -161,7 +174,11 @@ public function boot(): void
 
 ### Collegamenti
 - [Best practices per i provider](./service-provider-best-practices.md)
+<<<<<<< HEAD
 - [Registrazione icone Blade](./registerbladeicons.md)
+=======
+- [Registrazione icone Blade](./registerBladeIcons.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Gestione dei Path delle Traduzioni
 
@@ -195,7 +212,11 @@ $this->loadTranslationsFrom($langPath, $this->nameLower);
 Applicare la stessa regola per la registrazione delle traduzioni JSON.
 
 **Collegamento:**
+<<<<<<< HEAD
 Vedi anche [registerBladeIcons.md](./registerbladeicons.md) per la gestione centralizzata dei path.
+=======
+Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
+>>>>>>> 4b6b99016 (first commit)
 
 ## Console Commands: Religione, Politica, Filosofia, Zen
 

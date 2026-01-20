@@ -35,6 +35,7 @@ return [
             'tooltip' => 'logout',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Health',
     'plural_label' => 'Health (Plurale)',
     'fields' => [
@@ -57,4 +58,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

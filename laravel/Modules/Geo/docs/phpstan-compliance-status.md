@@ -1,5 +1,6 @@
 # PHPStan Level 10 Compliance Status
 
+<<<<<<< HEAD
 
 **Status**: 🚧 REGRESSION DETECTED (8 errors found)
 
@@ -7,6 +8,15 @@
 The Geo module was previously compliant with PHPStan Level 10 (as of [DATE]), but recent code additions have introduced **8 return type errors**. All errors are related to type narrowing and can be resolved with Assert statements and proper PHPDoc annotations.
 
 **See**: [PHPStan Errors Roadmap [DATE]](./phpstan-errors-roadmap-[DATE].md) for detailed fix plan.
+=======
+**Last Updated**: 2026-01-12
+**Status**: 🚧 REGRESSION DETECTED (8 errors found)
+
+## Summary
+The Geo module was previously compliant with PHPStan Level 10 (as of 2025-12-10), but recent code additions have introduced **8 return type errors**. All errors are related to type narrowing and can be resolved with Assert statements and proper PHPDoc annotations.
+
+**See**: [PHPStan Errors Roadmap 2026-01-12](./phpstan-errors-roadmap-2026-01-12.md) for detailed fix plan.
+>>>>>>> 4b6b99016 (first commit)
 
 ## Compliance Verification
 ```bash

@@ -13,7 +13,11 @@ return [
          * `Spatie\Permission\Contracts\Permission` contract.
          */
 
+<<<<<<< HEAD
         // 'permission' => Spatie\Permission\Models\Permission::class,
+=======
+        //'permission' => Spatie\Permission\Models\Permission::class,
+>>>>>>> 4b6b99016 (first commit)
         'permission' => Modules\User\Models\Permission::class,
 
         /*
@@ -25,7 +29,11 @@ return [
          * `Spatie\Permission\Contracts\Role` contract.
          */
 
+<<<<<<< HEAD
         // 'role' => Spatie\Permission\Models\Role::class,
+=======
+        //'role' => Spatie\Permission\Models\Role::class,
+>>>>>>> 4b6b99016 (first commit)
         'role' => Modules\User\Models\Role::class,
 
     ],
@@ -77,8 +85,13 @@ return [
         /*
          * Change this if you want to name the related pivots other than defaults
          */
+<<<<<<< HEAD
         'role_pivot_key' => null, // default 'role_id',
         'permission_pivot_key' => null, // default 'permission_id',
+=======
+        'role_pivot_key' => null, //default 'role_id',
+        'permission_pivot_key' => null, //default 'permission_id',
+>>>>>>> 4b6b99016 (first commit)
 
         /*
          * Change this if you want to name the related model primary key other than

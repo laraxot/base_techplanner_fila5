@@ -58,7 +58,10 @@ return [
             'help' => 'Identificatore univoco del job',
             'tooltip' => 'ID del job',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'queue' => [
             'label' => 'Coda',
@@ -73,7 +76,10 @@ return [
                 'emails' => 'Email',
                 'notifications' => 'Notifiche',
             ],
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'payload' => [
             'label' => 'Payload',
@@ -81,7 +87,10 @@ return [
             'help' => 'Dati associati al job',
             'tooltip' => 'Contenuto del job',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'attempts' => [
             'label' => 'Tentativi',
@@ -89,7 +98,10 @@ return [
             'help' => 'Numero di tentativi per eseguire il job',
             'tooltip' => 'Tentativi di esecuzione',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'reserved_at' => [
             'label' => 'Riservato il',
@@ -97,7 +109,10 @@ return [
             'help' => 'Data e ora in cui il job è stato riservato',
             'tooltip' => 'Quando è stato riservato',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'available_at' => [
             'label' => 'Disponibile il',
@@ -105,14 +120,20 @@ return [
             'help' => 'Data e ora in cui il job è diventato disponibile',
             'tooltip' => 'Quando diventa disponibile',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => 'Creato il',
             'help' => 'Data di creazione del job',
             'tooltip' => 'Data creazione',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'status' => [
             'label' => 'Stato',
@@ -128,7 +149,10 @@ return [
                 'cancelled' => 'Annullato',
                 'retrying' => 'Riprova',
             ],
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'progress' => [
             'label' => 'Progresso',
@@ -136,12 +160,19 @@ return [
             'help' => 'Percentuale di completamento del job',
             'tooltip' => 'Progresso del job',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'type' => [
             'label' => 'Tipo',
             'placeholder' => 'Seleziona il tipo',
+<<<<<<< HEAD
             'help' => 'Tipo di job (e.g., importazione, esportazione]',
+=======
+            'help' => 'Tipo di job (e.g., importazione, esportazione)',
+>>>>>>> 4b6b99016 (first commit)
             'tooltip' => 'Tipo di job',
             'helper_text' => '',
             'options' => [
@@ -154,7 +185,10 @@ return [
                 'cleanup' => 'Pulizia',
                 'sync' => 'Sincronizzazione',
             ],
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'name' => [
             'label' => 'Nome',
@@ -162,7 +196,10 @@ return [
             'help' => 'Nome del job',
             'tooltip' => 'Nome del job',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Descrizione',
@@ -170,7 +207,10 @@ return [
             'help' => 'Descrizione del job',
             'tooltip' => 'Descrizione del job',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'guard_name' => [
             'label' => 'Guard',
@@ -178,7 +218,10 @@ return [
             'help' => 'Guardiano del job',
             'tooltip' => 'Guard di autenticazione',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'permissions' => [
             'label' => 'Permessi',
@@ -186,14 +229,20 @@ return [
             'help' => 'Permessi associati al job',
             'tooltip' => 'Permessi del job',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'updated_at' => [
             'label' => 'Aggiornato il',
             'help' => 'Data dell\'ultimo aggiornamento del job',
             'tooltip' => 'Ultimo aggiornamento',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'first_name' => [
             'label' => 'Nome',
@@ -201,7 +250,10 @@ return [
             'help' => 'Nome del responsabile',
             'tooltip' => 'Nome responsabile',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'last_name' => [
             'label' => 'Cognome',
@@ -209,7 +261,10 @@ return [
             'help' => 'Cognome del responsabile',
             'tooltip' => 'Cognome responsabile',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'email' => [
             'label' => 'Email',
@@ -217,7 +272,10 @@ return [
             'help' => 'Email del responsabile',
             'tooltip' => 'Email responsabile',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'phone' => [
             'label' => 'Telefono',
@@ -225,7 +283,10 @@ return [
             'help' => 'Numero di telefono del responsabile',
             'tooltip' => 'Telefono responsabile',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'address' => [
             'label' => 'Indirizzo',
@@ -233,7 +294,10 @@ return [
             'help' => 'Indirizzo del responsabile',
             'tooltip' => 'Indirizzo responsabile',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'city' => [
             'label' => 'Città',
@@ -241,7 +305,10 @@ return [
             'help' => 'Città del responsabile',
             'tooltip' => 'Città responsabile',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'state' => [
             'label' => 'Stato/Provincia',
@@ -249,7 +316,10 @@ return [
             'help' => 'Stato o provincia del responsabile',
             'tooltip' => 'Stato responsabile',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'zip_code' => [
             'label' => 'CAP',
@@ -257,7 +327,10 @@ return [
             'help' => 'Codice postale del responsabile',
             'tooltip' => 'CAP responsabile',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'country' => [
             'label' => 'Paese',
@@ -265,7 +338,10 @@ return [
             'help' => 'Paese del responsabile',
             'tooltip' => 'Paese responsabile',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'company' => [
             'label' => 'Azienda',
@@ -273,7 +349,10 @@ return [
             'help' => 'Azienda del responsabile',
             'tooltip' => 'Azienda responsabile',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'position' => [
             'label' => 'Posizione',
@@ -281,7 +360,10 @@ return [
             'help' => 'Posizione lavorativa del responsabile',
             'tooltip' => 'Posizione responsabile',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'website' => [
             'label' => 'Sito Web',
@@ -289,7 +371,10 @@ return [
             'help' => 'Sito web del responsabile',
             'tooltip' => 'Sito web responsabile',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'notes' => [
             'label' => 'Note',
@@ -297,7 +382,10 @@ return [
             'help' => 'Note aggiuntive sul job',
             'tooltip' => 'Note del job',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'priority' => [
             'label' => 'Priorità',
@@ -311,7 +399,10 @@ return [
                 'high' => 'Alta',
                 'urgent' => 'Urgente',
             ],
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'scheduled_at' => [
             'label' => 'Programmato per',
@@ -319,21 +410,30 @@ return [
             'help' => 'Data e ora di programmazione del job',
             'tooltip' => 'Quando è programmato',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'started_at' => [
             'label' => 'Iniziato il',
             'help' => 'Data e ora di inizio del job',
             'tooltip' => 'Quando è iniziato',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'finished_at' => [
             'label' => 'Completato il',
             'help' => 'Data e ora di completamento del job',
             'tooltip' => 'Quando è completato',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'error_message' => [
             'label' => 'Messaggio di Errore',
@@ -341,14 +441,20 @@ return [
             'help' => 'Messaggio di errore in caso di fallimento',
             'tooltip' => 'Errore del job',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'retry_count' => [
             'label' => 'Conteggio Riprova',
             'help' => 'Numero di tentativi di riprova',
             'tooltip' => 'Tentativi di riprova',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'max_retries' => [
             'label' => 'Max Riprova',
@@ -356,7 +462,10 @@ return [
             'help' => 'Numero massimo di tentativi di riprova',
             'tooltip' => 'Massimo tentativi',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -539,6 +648,9 @@ return [
         'description' => 'Gestione dei processi in background',
     ],
     'search_placeholder' => 'Cerca per nome, tipo o stato...',
+<<<<<<< HEAD
     'label' => 'Job',
     'plural_label' => 'Job (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

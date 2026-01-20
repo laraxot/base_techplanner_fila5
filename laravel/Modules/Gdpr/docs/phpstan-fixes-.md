@@ -277,7 +277,11 @@ Il modulo GDPR gestisce:
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [← GDPR Module README](./readme.md)
+=======
+- [← GDPR Module README](./README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [← PHPStan Session Report](../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Root Documentation](../../../docs/index.md)
 

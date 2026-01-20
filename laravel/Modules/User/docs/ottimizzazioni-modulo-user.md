@@ -335,7 +335,11 @@ echo "✅ Consolidamento completato!"
 ## Collegamenti Bidirezionali
 
 ### Documentazione Correlata
+<<<<<<< HEAD
 - [README](../readme.md) - Panoramica modulo User
+=======
+- [README](../README.md) - Panoramica modulo User
+>>>>>>> 4b6b99016 (first commit)
 - [Architettura](./core/architecture.md) - Architettura modulo
 - [Convenzioni](./core/conventions.md) - Convenzioni unificate
 
@@ -344,11 +348,20 @@ echo "✅ Consolidamento completato!"
 - [docs/architettura-moduli.md](../../../docs/architettura-moduli.md) - Architettura moduli
 
 ### Documentazione Moduli Correlati
+<<<<<<< HEAD
 - [Xot/docs/ottimizzazioni-modulo-xot.md](../../xot/docs/ottimizzazioni-modulo-xot.md) - Ottimizzazioni modulo Xot
 - [UI/docs/ottimizzazioni-modulo-ui.md](../../ui/docs/ottimizzazioni-modulo-ui.md) - Ottimizzazioni modulo UI
 
 ---
 
+=======
+- [Xot/docs/ottimizzazioni-modulo-xot.md](../../Xot/docs/ottimizzazioni-modulo-xot.md) - Ottimizzazioni modulo Xot
+- [UI/docs/ottimizzazioni-modulo-ui.md](../../UI/docs/ottimizzazioni-modulo-ui.md) - Ottimizzazioni modulo UI
+
+---
+
+**Ultimo aggiornamento:** 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 **Stato:** In implementazione
 **Responsabile:** Team Sviluppo User
 **Priorità:** ALTA (duplicazioni massive identificate)

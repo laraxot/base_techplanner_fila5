@@ -11,6 +11,7 @@ return [
     ],
     'label' => 'Provider SSO',
     'plural_label' => 'Provider SSO',
+<<<<<<< HEAD
     'fields' => [
         'id' => [
             'label' => 'Identificativo',
@@ -42,4 +43,8 @@ return [
             'label' => 'Elimina Sso Provider',
         ],
     ],
+=======
+    'fields' => [],
+    'actions' => [],
+>>>>>>> 4b6b99016 (first commit)
 ];

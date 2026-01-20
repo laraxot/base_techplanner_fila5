@@ -1,7 +1,11 @@
 # 🏛️ AGID Compliance - CMS Module
 
 **Module**: Cms
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+**Date**: 2025-10-02
+>>>>>>> 4b6b99016 (first commit)
 **Reference**: [design-comuni-pagine-statiche v2.4.0](https://github.com/italia/design-comuni-pagine-statiche)
 **Compliance Status**: **80%** ✅
 
@@ -525,5 +529,10 @@ class Page extends BaseModel
 
 ---
 
+<<<<<<< HEAD
 
+=======
+**Last Updated**: 2025-10-02
+**Next Review**: Bi-weekly
+>>>>>>> 4b6b99016 (first commit)
 **Owner**: Cms Module Team

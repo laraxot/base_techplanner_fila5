@@ -1,7 +1,11 @@
 # Aggiornamento File di Traduzione xot_base.php
 
 ## Data Aggiornamento
+<<<<<<< HEAD
 [DATE]
+=======
+2025-01-27
+>>>>>>> 4b6b99016 (first commit)
 
 ## File Modificato
 `Modules/Xot/lang/it/xot_base.php`
@@ -90,3 +94,7 @@ return [
 - [Best Practices Traduzioni](translations-best-practices.md)
 - [Documentazione Principale Traduzioni](../../../project_docs/translation_rules.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 27 Gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)

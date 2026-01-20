@@ -29,6 +29,7 @@ return [
         ],
         'applyFilters' => [
             'label' => 'applyFilters',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -44,6 +45,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'options' => [
             'prefix-icon-color' => [
@@ -230,6 +239,7 @@ return [
                 'helper_text' => 'options.prefix',
                 'description' => 'options.prefix',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -246,159 +256,231 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'value' => [
             'description' => 'value',
             'helper_text' => '',
             'placeholder' => 'value',
             'label' => 'value',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'values-list' => [
             'description' => 'values-list',
             'helper_text' => '',
             'placeholder' => 'values-list',
             'label' => 'values-list',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'user_id' => [
             'label' => 'user_id',
             'placeholder' => 'user_id',
             'helper_text' => '',
             'description' => 'user_id',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'name' => [
             'label' => 'name',
             'placeholder' => 'name',
             'helper_text' => '',
             'description' => 'name',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'slug' => [
             'label' => 'slug',
             'placeholder' => 'slug',
             'helper_text' => '',
             'description' => 'slug',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'category_id' => [
             'label' => 'category_id',
             'placeholder' => 'category_id',
             'helper_text' => '',
             'description' => 'category_id',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'description',
             'placeholder' => 'description',
             'helper_text' => '',
             'description' => 'description',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'details' => [
             'label' => 'details',
             'placeholder' => 'details',
             'helper_text' => '',
             'description' => 'details',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_active' => [
             'label' => 'is_active',
             'placeholder' => 'is_active',
             'helper_text' => '',
             'description' => 'is_active',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'ordering' => [
             'label' => 'ordering',
             'placeholder' => 'ordering',
             'helper_text' => '',
             'description' => 'ordering',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'start_date' => [
             'label' => 'start_date',
             'placeholder' => 'start_date',
             'helper_text' => '',
             'description' => 'start_date',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'end_date' => [
             'label' => 'end_date',
             'placeholder' => 'end_date',
             'helper_text' => '',
             'description' => 'end_date',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'extensions' => [
             'label' => 'extensions',
             'placeholder' => 'extensions',
             'helper_text' => '',
             'description' => 'extensions',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'sections' => [
             'label' => 'sections',
             'placeholder' => 'sections',
             'helper_text' => '',
             'description' => 'sections',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'fields' => [
             'label' => 'fields',
             'placeholder' => 'fields',
             'helper_text' => '',
             'description' => 'fields',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'type' => [
             'label' => 'type',
             'placeholder' => 'type',
             'helper_text' => '',
             'description' => 'type',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'compact' => [
             'label' => 'compact',
             'placeholder' => 'compact',
             'helper_text' => '',
             'description' => 'compact',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'aside' => [
             'label' => 'aside',
             'placeholder' => 'aside',
             'helper_text' => '',
             'description' => 'aside',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'borderless' => [
             'label' => 'borderless',
             'placeholder' => 'borderless',
             'helper_text' => '',
             'description' => 'borderless',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'icon' => [
             'label' => 'icon',
             'placeholder' => 'icon',
             'helper_text' => '',
             'description' => 'icon',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'columns' => [
             'label' => 'columns',
             'placeholder' => 'columns',
             'helper_text' => '',
             'description' => 'columns',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'itemIsDefault' => [
             'description' => 'itemIsDefault',
             'helper_text' => '',
             'placeholder' => 'itemIsDefault',
             'label' => 'itemIsDefault',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'delete' => [
@@ -412,12 +494,21 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'edit' => [
+            'label' => 'edit',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'isActive' => [
             'description' => 'isActive',
             'helper_text' => '',
             'placeholder' => 'isActive',
             'label' => 'isActive',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'status' => [
@@ -431,78 +522,116 @@ return [
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
+=======
+        ],
+        'status' => [
+            'label' => 'status',
+        ],
+        'notes' => [
+            'description' => 'notes',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'responses_count' => [
             'description' => 'responses_count',
             'helper_text' => '',
             'placeholder' => 'responses_count',
             'label' => 'responses_count',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'itemKey' => [
             'description' => 'itemKey',
             'helper_text' => '',
             'placeholder' => 'itemKey',
             'label' => 'itemKey',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'forms_count' => [
             'description' => 'forms_count',
             'helper_text' => '',
             'placeholder' => 'forms_count',
             'label' => 'forms_count',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'responses_exists' => [
             'description' => 'responses_exists',
             'helper_text' => '',
             'placeholder' => 'responses_exists',
             'label' => 'responses_exists',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'logo' => [
             'description' => 'logo',
             'helper_text' => '',
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'category' => [
             'name' => [
                 'description' => 'category.name',
                 'helper_text' => '',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'test_date' => [
             'label' => 'test_date',
             'placeholder' => 'test_date',
             'helper_text' => 'test_date',
             'description' => 'test_date',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'test' => [
             'label' => 'test',
             'placeholder' => 'test',
             'helper_text' => 'test',
             'description' => 'test',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'view' => [
             'label' => 'view',
             'placeholder' => 'view',
             'helper_text' => 'view',
             'description' => 'view',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'address' => [
             'label' => 'address',
             'placeholder' => 'address',
             'helper_text' => 'address',
             'description' => 'address',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -573,6 +702,7 @@ return [
             'heading' => 'address',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Txt',
     'plural_label' => 'Txt (Plurale)',
     'navigation' => [
@@ -586,4 +716,6 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

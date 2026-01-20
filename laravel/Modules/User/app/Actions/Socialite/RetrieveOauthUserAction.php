@@ -8,10 +8,16 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite;
 
+<<<<<<< HEAD
 use Illuminate\Contracts\Events\Dispatcher;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 // use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
 use Laravel\Socialite\Facades\Socialite;
+=======
+use Laravel\Socialite\Contracts\User as SocialiteUserContract;
+use Laravel\Socialite\Facades\Socialite;
+// use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
+>>>>>>> 4b6b99016 (first commit)
 use Laravel\Socialite\Two\InvalidStateException;
 use Modules\User\Events\InvalidState;
 use Spatie\QueueableAction\QueueableAction;
@@ -20,11 +26,14 @@ class RetrieveOauthUserAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     public function __construct(
         private readonly Dispatcher $eventDispatcher,
     ) {
     }
 
+=======
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Execute the action.
      */
@@ -34,17 +43,25 @@ class RetrieveOauthUserAction
             return Socialite::driver($provider)->user();
 
             // SocialiteProviders\Manager\OAuth2\User
+<<<<<<< HEAD
         } catch (InvalidStateException $e) {
             $this->handleInvalidStateException($e);
+=======
+        } catch (InvalidStateException $invalidStateException) {
+            InvalidState::dispatch($invalidStateException);
+>>>>>>> 4b6b99016 (first commit)
         }
 
         return null;
     }
+<<<<<<< HEAD
 
     private function handleInvalidStateException(InvalidStateException $exception): void
     {
         $this->eventDispatcher->dispatch(new InvalidState($exception));
     }
+=======
+>>>>>>> 4b6b99016 (first commit)
 }
 
 /*

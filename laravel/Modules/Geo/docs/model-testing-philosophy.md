@@ -56,9 +56,16 @@ public function test_fillable_fields(): void
 ## Collegamenti
 - [Testing Priority Rule](testing-priority-rule.md)
 - [No RefreshDatabase Rule](no-refresh-database-rule.md)
+<<<<<<< HEAD
 - [Laraxot Framework](../../laravel/modules/xot/docs/laraxot-framework.md)
 
 ---
+=======
+- [Laraxot Framework](../../laravel/Modules/Xot/docs/laraxot-framework.md)
+
+---
+**Ultimo aggiornamento**: Dicembre 2024
+>>>>>>> 4b6b99016 (first commit)
 **Versione**: 1.0
 **Compatibilità**: Laraxot <nome progetto>, Testing Philosophy
 **Compatibilità**: Laraxot <nome progetto>, Testing Philosophy

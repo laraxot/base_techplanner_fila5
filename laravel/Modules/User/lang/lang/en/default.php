@@ -56,11 +56,19 @@ return [
             'must_enable' => 'You must enable Two Factor Authentication to use this application.',
             'not_enabled' => [
                 'title' => 'You have not enabled two factor authentication.',
+<<<<<<< HEAD
                 'description' => 'When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone\'s Google Authenticator application.',
             ],
             'finish_enabling' => [
                 'title' => 'Finish enabling two factor authentication.',
                 'description' => 'To finish enabling two factor authentication, scan the following QR code using your phone\'s authenticator application or enter the setup key and provide the generated OTP code.',
+=======
+                'description' => "When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.",
+            ],
+            'finish_enabling' => [
+                'title' => 'Finish enabling two factor authentication.',
+                'description' => "To finish enabling two factor authentication, scan the following QR code using your phone's authenticator application or enter the setup key and provide the generated OTP code.",
+>>>>>>> 4b6b99016 (first commit)
             ],
             'enabled' => [
                 'notify' => 'Two factor authentication enabled.',
@@ -102,6 +110,7 @@ return [
         'tooltip' => 'Copied!',
     ],
     'fields' => [
+<<<<<<< HEAD
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -206,4 +215,24 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        'avatar' => 'Avatar',
+        'email' => 'Email',
+        'login' => 'Login',
+        'name' => 'Name',
+        'password' => 'Password',
+        'password_confirm' => 'Password confirm',
+        'new_password' => 'New password',
+        'new_password_confirmation' => 'Confirm password',
+        'token_name' => 'Token name',
+        'token_expiry' => 'Token expiry',
+        'abilities' => 'Abilities',
+        '2fa_code' => 'Code',
+        '2fa_recovery_code' => 'Recovery Code',
+        'created' => 'Created',
+        'expires' => 'Expires',
+    ],
+    'or' => 'Or',
+    'cancel' => 'Cancel',
+>>>>>>> 4b6b99016 (first commit)
 ];

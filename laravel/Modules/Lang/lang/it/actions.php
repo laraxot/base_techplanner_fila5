@@ -57,6 +57,7 @@ return [
         'icon' => 'heroicon-o-plus-circle',
         'color' => 'success',
     ],
+<<<<<<< HEAD
     'label' => 'Actions',
     'plural_label' => 'Actions (Plurale)',
     'navigation' => [
@@ -101,4 +102,6 @@ return [
             'label' => 'Elimina Actions',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

@@ -118,8 +118,14 @@ Ogni sezione può contenere diversi tipi di blocchi:
 - Monitoraggio utilizzo
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Documentazione Blocchi](blocks/readme.md)
 - [Documentazione UI](../../ui/project_docs/readme.md)
 - [Documentazione Root](../../../../project_docs/readme.md)
+=======
+- [Documentazione Blocchi](blocks/README.md)
+- [Documentazione UI](../../UI/project_docs/README.md)
+- [Documentazione Root](../../../../project_docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Documentazione Root – Sezioni](../../../../project_docs/sections.md)
 - [Panoramica Gestione Pagine (Root)](../../../../project_docs/page-content-management.md)

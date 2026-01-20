@@ -37,6 +37,7 @@ return [
     'invalid_format' => 'Formato non valido.',
     'value_too_long' => 'Il valore è troppo lungo.',
     'value_too_short' => 'Il valore è troppo corto.',
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Messages',
         'plural' => 'Messages',
@@ -81,4 +82,11 @@ return [
             'label' => 'Elimina Messages',
         ],
     ],
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+    'actions' => [],
+>>>>>>> 4b6b99016 (first commit)
 ];

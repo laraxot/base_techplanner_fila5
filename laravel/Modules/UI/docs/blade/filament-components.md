@@ -104,4 +104,8 @@ Per migrare da componenti personalizzati a componenti Filament:
 
 ## Moduli correlati
 
+<<<<<<< HEAD
 - [User](../../user/docs/blade/using-filament-components.md) - Implementazione dei componenti profilo con Filament
+=======
+- [User](../../User/docs/blade/using-filament-components.md) - Implementazione dei componenti profilo con Filament
+>>>>>>> 4b6b99016 (first commit)

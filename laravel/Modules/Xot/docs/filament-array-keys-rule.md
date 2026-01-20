@@ -1,5 +1,9 @@
 # Filament Array Keys Rule - Array con Chiavi String
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-10
+>>>>>>> 4b6b99016 (first commit)
 **Regola Critica**: Tutti i metodi Filament che restituiscono array devono usare chiavi string
 **Status**: Obbligatorio per PHPStan Level 10
 
@@ -228,3 +232,7 @@ Prima di commit:
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-10*
+>>>>>>> 4b6b99016 (first commit)

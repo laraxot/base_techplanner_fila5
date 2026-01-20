@@ -42,12 +42,15 @@ return new class extends XotBaseMigration {
                 if (! $this->hasColumn('accepted_at')) {
                     $table->timestamp('accepted_at')->nullable();
                 }
+<<<<<<< HEAD
                 if (! $this->hasColumn('ip_address')) {
                     $table->string('ip_address', 45)->nullable();
                 }
                 if (! $this->hasColumn('user_agent')) {
                     $table->string('user_agent')->nullable();
                 }
+=======
+>>>>>>> 4b6b99016 (first commit)
                 // -- Change --
                 if ($this->hasColumn('user_id')) {
                     $table->string('user_id')->nullable()->change();

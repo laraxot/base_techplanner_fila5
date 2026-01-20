@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -53,6 +54,26 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'name' => [
+            'label' => 'Nome',
+        ],
+        'queue' => [
+            'label' => 'Coda',
+        ],
+        'status' => [
+            'label' => 'Stato',
+        ],
+        'last_heartbeat' => [
+            'label' => 'Ultimo battito',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
+        'updated_at' => [
+            'label' => 'Aggiornato il',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -66,4 +87,8 @@ return [
             'label' => 'Riprendi',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

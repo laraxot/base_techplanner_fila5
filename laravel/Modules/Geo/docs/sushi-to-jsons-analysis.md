@@ -40,7 +40,11 @@ Questo documento analizza l'applicabilità del trait `SushiToJsons` al modello `
 class Comune extends Model
 {
     use SushiToJsons;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     protected $schema = [
         'id' => 'string',
         'nome' => 'string',
@@ -51,7 +55,11 @@ class Comune extends Model
         'cap' => 'json',
         'popolazione' => 'integer'
     ];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     protected $casts = [
         'regione' => 'array',
         'provincia' => 'array',
@@ -192,12 +200,20 @@ use Modules\Tenant\Models\Traits\SushiToJsons;
 class Comune extends Model
 {
     use SushiToJsons;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Indica a Sushi di non utilizzare timestamps
      */
     public $timestamps = false;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Definizione dello schema per i campi
      */
@@ -210,7 +226,11 @@ class Comune extends Model
         'codiceCatastale' => 'string',
         'popolazione' => 'integer'
     ];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Cast per le colonne JSON
      */
@@ -219,7 +239,11 @@ class Comune extends Model
         'provincia' => 'array',
         'cap' => 'array',
     ];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Recupera le regioni
      */
@@ -228,9 +252,15 @@ class Comune extends Model
         return $query->where('regione->codice', $regionCode)
                      ->orderBy('nome');
     }
+<<<<<<< HEAD
     
     // Implementazione di altri metodi e scope...
     
+=======
+
+    // Implementazione di altri metodi e scope...
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Prepopola i file JSON dai dati esistenti (da eseguire una tantum)
      */
@@ -238,6 +268,7 @@ class Comune extends Model
     {
         $path = module_path('Geo', 'resources/json/comuni.json');
         $comuni = json_decode(file_get_contents($path), true);
+<<<<<<< HEAD
         
         $basePath = TenantService::filePath('database/content/comuni');
         
@@ -245,6 +276,15 @@ class Comune extends Model
             File::makeDirectory($basePath, 0755, true, true);
         }
         
+=======
+
+        $basePath = TenantService::filePath('database/content/comuni');
+
+        if (!File::exists($basePath)) {
+            File::makeDirectory($basePath, 0755, true, true);
+        }
+
+>>>>>>> 4b6b99016 (first commit)
         foreach ($comuni as $index => $comune) {
             $id = $index + 1;
             $comune['id'] = $id;
@@ -289,29 +329,51 @@ use Illuminate\Support\Facades\Cache;
 trait GeoSushi
 {
     use \Sushi\Sushi;
+<<<<<<< HEAD
     
     protected const CACHE_TTL = 604800; // 1 settimana
     
+=======
+
+    protected const CACHE_TTL = 604800; // 1 settimana
+
+>>>>>>> 4b6b99016 (first commit)
     public function getRows()
     {
         $path = module_path('Geo', 'resources/json/comuni.json');
         $cacheKey = 'geo_comuni_json_' . md5($path);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 4b6b99016 (first commit)
         return Cache::rememberForever($cacheKey, function () use ($path) {
             return json_decode(file_get_contents($path), true);
         });
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     protected function sushiShouldCache()
     {
         return true;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     protected function sushiCacheReferencePath()
     {
         return module_path('Geo', 'resources/json/comuni.json');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Metodo per aggiornare il file JSON principale
      * Implementa la logica di persistenza solo quando necessaria
@@ -320,23 +382,37 @@ trait GeoSushi
     {
         $path = module_path('Geo', 'resources/json/comuni.json');
         $data = json_decode(file_get_contents($path), true);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 4b6b99016 (first commit)
         foreach ($updates as $update) {
             $index = array_search($update['codice'], array_column($data, 'codice'));
             if ($index !== false) {
                 $data[$index] = array_merge($data[$index], $update);
             }
         }
+<<<<<<< HEAD
         
         $result = file_put_contents($path, json_encode($data, JSON_PRETTY_PRINT));
         
+=======
+
+        $result = file_put_contents($path, json_encode($data, JSON_PRETTY_PRINT));
+
+>>>>>>> 4b6b99016 (first commit)
         if ($result) {
             // Invalida la cache
             static::clearSushiCache();
             Cache::forget('geo_comuni_json_' . md5($path));
             return true;
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 4b6b99016 (first commit)
         return false;
     }
 }
@@ -375,5 +451,9 @@ Questo approccio offre il miglior equilibrio tra performance, flessibilità e ma
 
 ---
 
+<<<<<<< HEAD
 *Documento creato il: 28/05/2025*  
+=======
+*Documento creato il: 28/05/2025*
+>>>>>>> 4b6b99016 (first commit)
 *Autore: Team <main module>*

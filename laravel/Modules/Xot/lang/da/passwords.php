@@ -8,6 +8,7 @@ return [
     'sent' => 'Vi har sendt dig et link til at nulstille din adgangskode!',
     'token' => 'Dette link til at nulstille din adgangskode er ugyldig.',
     'user' => 'Vi kan ikke finde en bruger med denne e-mailadresse.',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -21,4 +22,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

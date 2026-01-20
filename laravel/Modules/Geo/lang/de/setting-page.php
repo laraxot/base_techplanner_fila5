@@ -13,16 +13,22 @@ return [
         'google_maps_api_key' => [
             'label' => 'Google Maps API Key',
             'helper' => 'Chiave API per l\'integrazione con Google Maps',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'debugbar_enabled' => [
             'label' => 'Debug Bar',
             'helper' => 'Abilita/Disabilita la barra di debug',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -33,6 +39,9 @@ return [
         'saved' => 'Impostazioni salvate con successo',
         'error' => 'Errore durante il salvataggio delle impostazioni',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

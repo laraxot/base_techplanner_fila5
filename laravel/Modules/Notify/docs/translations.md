@@ -89,7 +89,11 @@ Notification::make()
 - [Gestione Lingue](../../../../docs/architecture/languages.md)
 
 ### Collegamenti ai Moduli
+<<<<<<< HEAD
 - [LangServiceProvider](../../lang/docs/service-provider.md)
+=======
+- [LangServiceProvider](../../Lang/docs/service-provider.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Regole Traduzioni](../../../../docs/regole/traduzioni.md)
 
 ## Note Importanti
@@ -106,6 +110,7 @@ Notification::make()
 
 ```
 ## Collegamenti tra versioni di translations.md
+<<<<<<< HEAD
 * [translations.md](../../../chart/docs/translations.md)
 * [translations.md](../../../reporting/docs/translations.md)
 * [translations.md](../../../gdpr/docs/translations.md)
@@ -123,5 +128,24 @@ Notification::make()
 * [translations.md](../../../activity/docs/translations.md)
 * [translations.md](../../../patient/docs/translations.md)
 * [translations.md](../../../cms/docs/translations.md)
+=======
+* [translations.md](../../../Chart/docs/translations.md)
+* [translations.md](../../../Reporting/docs/translations.md)
+* [translations.md](../../../Gdpr/docs/translations.md)
+* [translations.md](../../../Notify/docs/translations.md)
+* [translations.md](../../../Xot/docs/roadmap/lang/translations.md)
+* [translations.md](../../../Xot/docs/translations.md)
+* [translations.md](../../../Dental/docs/translations.md)
+* [translations.md](../../../User/docs/translations.md)
+* [translations.md](../../../UI/docs/translations.md)
+* [translations.md](../../../Lang/docs/packages/translations.md)
+* [translations.md](../../../Lang/docs/translations.md)
+* [translations.md](../../../Job/docs/translations.md)
+* [translations.md](../../../Media/docs/translations.md)
+* [translations.md](../../../Tenant/docs/translations.md)
+* [translations.md](../../../Activity/docs/translations.md)
+* [translations.md](../../../Patient/docs/translations.md)
+* [translations.md](../../../Cms/docs/translations.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ---

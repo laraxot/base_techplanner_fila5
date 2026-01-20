@@ -69,6 +69,14 @@ class TenantServiceProvider extends XotBaseServiceProvider
 
     public function registerDB(): void
     {
+<<<<<<< HEAD
+=======
+        // Skip database purge/reconnect during testing to preserve test DB mappings
+        if ($this->app->environment('testing')) {
+            return;
+        }
+
+>>>>>>> 4b6b99016 (first commit)
         Schema::defaultStringLength(191);
 
         if (Request::has('act') && Request::input('act') === 'migrate') {
@@ -103,6 +111,7 @@ class TenantServiceProvider extends XotBaseServiceProvider
             }
 
             $name = $module->getSnakeName();
+<<<<<<< HEAD
             $upperName = strtoupper($name);
 
             if (isset($connections[$default]) && is_array($connections[$default]) && ! isset($connections[$name])) {
@@ -118,11 +127,21 @@ class TenantServiceProvider extends XotBaseServiceProvider
 
                 $connections[$name] = $moduleConfig;
             }
+=======
+            // *
+            if (isset($connections[$default]) && ! isset($connections[$name])) {
+                // @var array|float|int|string|null $defaultConnection
+                $defaultConnection = $connections[$default];
+                $connections[$name] = $defaultConnection;
+            }
+            // */
+>>>>>>> 4b6b99016 (first commit)
         }
 
         $data = Arr::set($data, 'connections', $connections);
         Config::set('database', $data);
 
+<<<<<<< HEAD
         // Skip purge/reconnect during testing to preserve test DB mappings
         if (! $this->app->environment('testing')) {
             // Call to a member function prepare() on null
@@ -130,6 +149,12 @@ class TenantServiceProvider extends XotBaseServiceProvider
             DB::purge('mysql');
             DB::reconnect();
         }
+=======
+        // Call to a member function prepare() on null
+        // Database connection [mysql] not configured.
+        DB::purge('mysql');
+        DB::reconnect();
+>>>>>>> 4b6b99016 (first commit)
     }
 
     #[Override]

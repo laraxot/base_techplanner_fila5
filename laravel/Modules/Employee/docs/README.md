@@ -274,9 +274,16 @@ php artisan serve
 
 ---
 
+<<<<<<< HEAD
 **Last Updated**: February 2026  
 **Module Version**: 2.0  
 **Framework**: Laravel 12 + Filament 4  
 **Compliance**: XotBase Extension Rules + English Naming Standards + WCAG 2.1 AA
+=======
+**Last Updated**: January 2025  
+**Module Version**: 2.0  
+**Framework**: Laravel 11 + Filament 3  
+**Compliance**: XotBase Extension Rules + English Naming Standards  
+>>>>>>> 4b6b99016 (first commit)
 
 **⚠️ IMPORTANT**: Always follow XotBase extension rules and English naming conventions. Never extend Filament classes directly.

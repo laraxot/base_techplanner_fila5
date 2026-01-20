@@ -114,9 +114,17 @@ class OauthAccessTokenResource extends XotBaseResource
             ])
             ->recordActions([
                 \Filament\Actions\Action::make('revoke')
+<<<<<<< HEAD
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
                     ->requiresConfirmation()
+=======
+                    ->label(static::trans('actions.revoke.label'))
+                    ->icon('heroicon-o-x-circle')
+                    ->color('danger')
+                    ->requiresConfirmation()
+                    ->modalHeading(static::trans('actions.revoke.label'))
+>>>>>>> 4b6b99016 (first commit)
                     ->action(function (mixed $record) {
                         if ($record instanceof \Illuminate\Database\Eloquent\Model) {
                             if (app(RevokeTokenAction::class)->execute((string) $record->getKey())) {
@@ -132,6 +140,10 @@ class OauthAccessTokenResource extends XotBaseResource
             ])
             ->bulkActions([
                 \Filament\Actions\BulkAction::make('revoke_all_for_user')
+<<<<<<< HEAD
+=======
+                    ->label(static::trans('actions.revoke_all_for_user.label'))
+>>>>>>> 4b6b99016 (first commit)
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
                     ->requiresConfirmation()

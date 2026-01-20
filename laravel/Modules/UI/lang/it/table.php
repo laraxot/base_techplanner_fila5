@@ -10,6 +10,7 @@ return [
             'helper_text' => 'Azioni disponibili per la transizione di stato',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Table',
     'plural_label' => 'Table (Plurale)',
     'navigation' => [
@@ -54,4 +55,6 @@ return [
             'label' => 'Elimina Table',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

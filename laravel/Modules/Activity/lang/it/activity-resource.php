@@ -18,30 +18,42 @@ return [
         'resource_type' => [
             'label' => 'Tipo Risorsa',
             'help' => 'Tipo di risorsa attività',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'resource_id' => [
             'label' => 'ID Risorsa',
             'help' => 'Identificativo della risorsa',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'activity_count' => [
             'label' => 'Numero Attività',
             'help' => 'Numero di attività associate',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'last_activity' => [
             'label' => 'Ultima Attività',
             'help' => 'Data e ora dell\'ultima attività',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -58,6 +70,9 @@ return [
         'no_resources' => 'Nessuna risorsa trovata',
         'resource_exported' => 'Risorsa esportata con successo',
     ],
+<<<<<<< HEAD
     'label' => 'Activity Resource',
     'plural_label' => 'Activity Resource (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

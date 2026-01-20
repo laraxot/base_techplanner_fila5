@@ -62,6 +62,7 @@
 ### Versione HEAD
 
 ## Collegamenti tra versioni di packages.md
+<<<<<<< HEAD
 * [packages.md](../../../gdpr/project_docs/packages.md)
 * [packages.md](../../../notify/project_docs/packages.md)
 * [packages.md](../../../xot/project_docs/packages.md)
@@ -71,6 +72,17 @@
 * [packages.md](../../../job/project_docs/packages.md)
 * [packages.md](../../../media/project_docs/packages.md)
 * [packages.md](../../../tenant/project_docs/packages.md)
+=======
+* [packages.md](../../../Gdpr/project_docs/packages.md)
+* [packages.md](../../../Notify/project_docs/packages.md)
+* [packages.md](../../../Xot/project_docs/packages.md)
+* [packages.md](../../../User/project_docs/packages.md)
+* [packages.md](../../../UI/project_docs/packages.md)
+* [packages.md](../../../Lang/project_docs/packages.md)
+* [packages.md](../../../Job/project_docs/packages.md)
+* [packages.md](../../../Media/project_docs/packages.md)
+* [packages.md](../../../Tenant/project_docs/packages.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### Versione Incoming
 

@@ -4,14 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Actions;
 
+<<<<<<< HEAD
 use Modules\Geo\Contracts\CalculateDistanceActionContract;
+=======
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Geo\Datas\LocationData;
 use Modules\Geo\Exceptions\InvalidLocationException;
 
 readonly class ClusterLocationsAction
 {
     public function __construct(
+<<<<<<< HEAD
         private CalculateDistanceActionContract $distanceCalculator,
+=======
+        private CalculateDistanceAction $distanceCalculator,
+>>>>>>> 4b6b99016 (first commit)
     ) {
     }
 
@@ -30,7 +37,11 @@ readonly class ClusterLocationsAction
         $clusters = [];
 
         foreach ($locations as $location) {
+<<<<<<< HEAD
             if (! $location instanceof LocationData) {
+=======
+            if (! ($location instanceof LocationData)) {
+>>>>>>> 4b6b99016 (first commit)
                 throw InvalidLocationException::invalidData();
             }
 

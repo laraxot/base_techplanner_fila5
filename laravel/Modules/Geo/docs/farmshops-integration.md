@@ -1,5 +1,9 @@
 # 🗺️ FARMSHOPS.EU - INTEGRATION GUIDE
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-10-02
+>>>>>>> 4b6b99016 (first commit)
 **Source**: https://github.com/CodeforKarlsruhe/farmshops.eu
 **Purpose**: Integrare tecnologie e pattern da farmshops.eu in FixCity
 

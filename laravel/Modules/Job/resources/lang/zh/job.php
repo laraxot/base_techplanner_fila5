@@ -22,6 +22,7 @@ return [
     'fields' => [
         'edit' => [
             'label' => '编辑',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -67,6 +68,29 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'payload' => [
+            'label' => '内容',
+        ],
+        'id' => [
+            'label' => 'ID',
+        ],
+        'queue' => [
+            'label' => '队列',
+        ],
+        'attempts' => [
+            'label' => '尝试次数',
+        ],
+        'reserved_at' => [
+            'label' => '保留时间',
+        ],
+        'available_at' => [
+            'label' => '可用时间',
+        ],
+        'created_at' => [
+            'label' => '创建时间',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'navigation' => [
@@ -77,4 +101,8 @@ return [
     ],
     'label' => '任务',
     'plural_label' => '任务',
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

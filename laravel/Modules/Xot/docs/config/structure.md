@@ -144,6 +144,7 @@ return array_merge(require __DIR__.'/../vendor/module/config/module.php', [
 ## Collegamenti
 
 - [Architettura](../architecture/module-structure.md)
+<<<<<<< HEAD
 - [Best Practices](../best-practices.md)
 - [Sicurezza](../security/readme.md)
 - [Performance](../performance/readme.md)
@@ -165,3 +166,26 @@ return array_merge(require __DIR__.'/../vendor/module/config/module.php', [
 * [structure.md](../../../cms/docs/structure.md)
 * [structure.md](../../../cms/docs/themes/structure.md)
 * [structure.md](../../../cms/docs/components/structure.md)
+=======
+- [Best Practices](../BEST-PRACTICES.md)
+- [Sicurezza](../security/README.md)
+- [Performance](../performance/README.md)
+
+## Collegamenti tra versioni di structure.md
+* [structure.md](bashscripts/docs/structure.md)
+* [structure.md](../../../Gdpr/docs/structure.md)
+* [structure.md](../../../Notify/docs/structure.md)
+* [structure.md](../../../Xot/docs/structure.md)
+* [structure.md](../../../Xot/docs/base/structure.md)
+* [structure.md](../../../Xot/docs/config/structure.md)
+* [structure.md](../../../User/docs/structure.md)
+* [structure.md](../../../UI/docs/structure.md)
+* [structure.md](../../../Lang/docs/structure.md)
+* [structure.md](../../../Job/docs/structure.md)
+* [structure.md](../../../Media/docs/structure.md)
+* [structure.md](../../../Tenant/docs/structure.md)
+* [structure.md](../../../Activity/docs/structure.md)
+* [structure.md](../../../Cms/docs/structure.md)
+* [structure.md](../../../Cms/docs/themes/structure.md)
+* [structure.md](../../../Cms/docs/components/structure.md)
+>>>>>>> 4b6b99016 (first commit)

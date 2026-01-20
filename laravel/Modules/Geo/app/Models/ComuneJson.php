@@ -395,7 +395,11 @@ class ComuneJson extends GeoJsonModel
             $comune = static::searchByName($comuneNome, 1)->first();
 
             if (! $comune) {
+<<<<<<< HEAD
                 return;
+=======
+                return null;
+>>>>>>> 4b6b99016 (first commit)
             }
 
             return [

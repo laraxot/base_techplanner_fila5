@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< HEAD
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -40,6 +41,14 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        'name' => 'Nome',
+        'slug' => 'Slug',
+        'class' => 'Classi CSS',
+        'id' => 'ID HTML',
+        'background_color' => 'Colore Sfondo',
+        'text_color' => 'Colore Testo',
+>>>>>>> 4b6b99016 (first commit)
     ],
     'blocks' => [
         'logo' => [
@@ -81,6 +90,7 @@ return [
         'style' => 'Stile',
         'content' => 'Contenuti',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -92,4 +102,6 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

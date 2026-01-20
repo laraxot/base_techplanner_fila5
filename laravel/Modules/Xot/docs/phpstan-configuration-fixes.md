@@ -199,6 +199,10 @@ La configurazione PHPStan implementata mantiene un alto livello di qualità del 
 
 ---
 
+<<<<<<< HEAD
+=======
+**Ultimo Aggiornamento**: Gennaio 2025
+>>>>>>> 4b6b99016 (first commit)
 **PHPStan Version**: 1.10+
 **Laravel Version**: 10+
 **Larastan Version**: 2.9+

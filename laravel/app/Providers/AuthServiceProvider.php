@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Facades\Gate;
+>>>>>>> 4b6b99016 (first commit)
 
 /**
  * AuthServiceProvider dell'applicazione.
@@ -28,3 +32,7 @@ class AuthServiceProvider extends ServiceProvider
         //
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)

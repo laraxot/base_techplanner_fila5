@@ -1,7 +1,11 @@
 # Correzioni Traduzioni Navigation - Modulo Geo
 
 ## Data Intervento
+<<<<<<< HEAD
 **[DATE]** - Sistemazione traduzioni secondo regole DRY + KISS
+=======
+**2025-08-07** - Sistemazione traduzioni secondo regole DRY + KISS
+>>>>>>> 4b6b99016 (first commit)
 
 ## Problema Critico Identificato
 
@@ -75,9 +79,15 @@
 ## Collegamenti
 
 - [Audit Generale Traduzioni Navigation](../../docs/navigation-translations-audit.md)
+<<<<<<< HEAD
 - [Documentazione Modulo Geo](readme.md)
 - [Struttura Geo](structure.md)
 - [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
+=======
+- [Documentazione Modulo Geo](README.md)
+- [Struttura Geo](structure.md)
+- [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Note Tecniche
 
@@ -92,5 +102,9 @@
 - Validare contenuto traduzioni prima del commit
 - Utilizzare linting per file PHP malformati
 
+<<<<<<< HEAD
 *Intervento completato il: [DATE]*
+=======
+*Intervento completato il: 2025-08-07*
+>>>>>>> 4b6b99016 (first commit)
 *Conforme alle regole DRY + KISS*

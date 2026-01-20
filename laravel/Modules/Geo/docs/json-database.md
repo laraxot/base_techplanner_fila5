@@ -127,7 +127,11 @@ class GeoDataService
     public function getCap(string $provinceCode, string $cityCode): ?string
     {
         $cities = $this->getCities($provinceCode);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 4b6b99016 (first commit)
         $city = collect($cities)
             ->firstWhere('id', $cityCode);
 
@@ -166,7 +170,11 @@ class LocationForm
                         ->selectablePlaceholder(false),
 
                     'province' => Select::make('province')
+<<<<<<< HEAD
                         ->options(fn (Get $get) => 
+=======
+                        ->options(fn (Get $get) =>
+>>>>>>> 4b6b99016 (first commit)
                             $geoService->getProvinces($get('region'))
                         )
                         ->searchable()
@@ -177,7 +185,11 @@ class LocationForm
                         ->selectablePlaceholder(false),
 
                     'city' => Select::make('city')
+<<<<<<< HEAD
                         ->options(fn (Get $get) => 
+=======
+                        ->options(fn (Get $get) =>
+>>>>>>> 4b6b99016 (first commit)
                             $geoService->getCities($get('province'))
                         )
                         ->searchable()
@@ -188,7 +200,11 @@ class LocationForm
                         ->selectablePlaceholder(false),
 
                     'cap' => Select::make('cap')
+<<<<<<< HEAD
                         ->options(fn (Get $get) => 
+=======
+                        ->options(fn (Get $get) =>
+>>>>>>> 4b6b99016 (first commit)
                             collect($geoService->getCities($get('province')))
                                 ->firstWhere('id', $get('city'))['cap']
                         )
@@ -266,6 +282,12 @@ class GeoDataValidator
    - API esterna
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Documentazione Squire](../../geo/project_docs/squire-integration.md)
 - [Best Practices Filament](../../../project_docs/filament-best-practices.md)
 - [Clean Code](../../../project_docs/clean-code.md) 
+=======
+- [Documentazione Squire](../../Geo/project_docs/squire-integration.md)
+- [Best Practices Filament](../../../project_docs/filament-best-practices.md)
+- [Clean Code](../../../project_docs/clean-code.md)
+>>>>>>> 4b6b99016 (first commit)

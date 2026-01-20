@@ -15,6 +15,7 @@ return [
             'tooltip' => 'cancel',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Send Records Notification Bulk',
     'plural_label' => 'Send Records Notification Bulk (Plurale)',
     'navigation' => [
@@ -48,4 +49,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

@@ -806,14 +806,23 @@ public function generateWithErrorHandling(array $options = []): string
 
 ## 📚 References
 
+<<<<<<< HEAD
 - [HTML2PDF Best Practices](../xot/docs/html2pdf-best-practices.md)
 - [Lang Module README](./readme.md)
+=======
+- [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
+- [Lang Module README](./README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Spatie Translatable Documentation](https://github.com/spatie/laravel-translatable)
 - [Laravel Localization](https://laravel.com/docs/localization)
 
 ---
 
+<<<<<<< HEAD
 **
+=======
+**Last Updated:** 2025-12-09
+>>>>>>> 4b6b99016 (first commit)
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅

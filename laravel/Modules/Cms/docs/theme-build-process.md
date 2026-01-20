@@ -1,6 +1,10 @@
 # Processo di Build del Tema in il progetto
 
+<<<<<<< HEAD
 Questo documento fornisce una panoramica del processo di build e pubblicazione del tema principale di il progetto. Per una documentazione più dettagliata, consultare il [documento completo nel modulo CMS](../../laravel/modules/cms/project_docs/theme-build-process.md).
+=======
+Questo documento fornisce una panoramica del processo di build e pubblicazione del tema principale di il progetto. Per una documentazione più dettagliata, consultare il [documento completo nel modulo CMS](../../laravel/Modules/Cms/project_docs/theme-build-process.md).
+>>>>>>> 4b6b99016 (first commit)
 
 ## Comandi Principali
 
@@ -37,11 +41,19 @@ Il tema è strettamente integrato con il modulo CMS di il progetto, che fornisce
 - Configurazione dei template
 - Definizione dei blocchi di contenuto
 
+<<<<<<< HEAD
 Per ulteriori dettagli su come funziona l'integrazione, consultare la [documentazione del modulo CMS](../../laravel/modules/cms/project_docs/theme-cms-integration.md).
+=======
+Per ulteriori dettagli su come funziona l'integrazione, consultare la [documentazione del modulo CMS](../../laravel/Modules/Cms/project_docs/theme-cms-integration.md).
+>>>>>>> 4b6b99016 (first commit)
 
 ## Risorse Aggiuntive
 
 - [Sviluppo Frontend in il progetto](./frontend-overview.md)
 - [Personalizzazione del Tema](./theme-customization.md)
 - [Struttura dei Componenti](./theme-components.md)
+<<<<<<< HEAD
 - [Integrazione con Filament](./filament-integration.md) 
+=======
+- [Integrazione con Filament](./filament-integration.md)
+>>>>>>> 4b6b99016 (first commit)

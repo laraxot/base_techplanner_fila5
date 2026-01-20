@@ -59,9 +59,15 @@ The module can be configured through the `config/activity.php` file:
 4. **Privacy Compliance**: Ensure activity logging complies with data protection regulations
 
 ## Related Modules
+<<<<<<< HEAD
 - [User Module](../user/docs/readme.md) - User authentication and management
 - [Notify Module](../notify/docs/index.md) - Notification system
 - [Xot Module](../xot/docs/index.md) - Core base classes
+=======
+- [User Module](../User/docs/README.md) - User authentication and management
+- [Notify Module](../Notify/docs/index.md) - Notification system
+- [Xot Module](../Xot/docs/index.md) - Core base classes
+>>>>>>> 4b6b99016 (first commit)
 
 ## Troubleshooting
 Common issues and solutions:

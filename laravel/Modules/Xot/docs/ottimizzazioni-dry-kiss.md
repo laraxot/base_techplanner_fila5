@@ -126,6 +126,10 @@ Codice pratico.
 - [Doc correlata](./relativa.md)
 - [Root docs](../../../docs/correlata.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: [data]*
+>>>>>>> 4b6b99016 (first commit)
 ```
 
 ### 4. **Sistema Navigazione Centralizzato**
@@ -202,3 +206,7 @@ DOPO:
 `#DRY` `#KISS` `#refactoring` `#documentation` `#xot-module` `#consolidation`
 
 ---
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
+>>>>>>> 4b6b99016 (first commit)

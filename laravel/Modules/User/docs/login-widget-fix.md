@@ -41,9 +41,15 @@ public function mount(): void
 
 Per `LoginWidget`, che non ha un modello associato (`getFormModel()` restituisce `null`), `getFormFill()` restituisce un array vuoto `[]`, che è il comportamento corretto per un form vuoto.
 
+<<<<<<< HEAD
 ### 2. Schema con chiavi stringa e NO label/placeholder
 
 Corretto lo schema per usare array associativo con chiavi stringa (conforme alle regole Filament). **MAI usare `->label()`, `->placeholder()` o `->helperText()`**: il LangServiceProvider risolve automaticamente da `user::login_widget.fields.*` (file `lang/it/login_widget.php`).
+=======
+### 2. Schema con chiavi stringa
+
+Corretto lo schema per usare array associativo con chiavi stringa (conforme alle regole Filament):
+>>>>>>> 4b6b99016 (first commit)
 
 ```php
 #[\Override]
@@ -143,7 +149,11 @@ Tutti i widget Filament che estendono `XotBaseWidget` e usano `statePath('data')
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [XotBaseWidget Documentation](../../xot/docs/readme.md)
+=======
+- [XotBaseWidget Documentation](../../Xot/docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Filament Form State Management](https://filamentphp.com/docs/3.x/forms/fields#state-management)
 - [RegisterWidget Implementation](../app/Filament/Widgets/Auth/RegisterWidget.php) - Esempio corretto
 
@@ -165,3 +175,7 @@ Tutti i widget Filament che estendono `XotBaseWidget` e usano `statePath('data')
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> 4b6b99016 (first commit)

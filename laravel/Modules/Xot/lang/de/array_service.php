@@ -6,6 +6,7 @@ return [
     'gg_in_sede_no_asz' => 'gg_in_sede_no_asz',
     'eta' => 'eta',
     'gg_cateco_posfun' => 'gg_cateco_posfun',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -19,4 +20,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

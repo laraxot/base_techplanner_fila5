@@ -9,13 +9,17 @@ return [
             'description' => 'title',
             'helper_text' => 'title',
             'placeholder' => 'title',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'text' => [
             'label' => 'Testo',
             'description' => 'text',
             'helper_text' => 'text',
             'placeholder' => 'text',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         '_tpl' => [
@@ -23,12 +27,18 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        '_tpl' => [
+            'label' => '_tpl',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'view' => [
             'label' => 'view',
             'description' => 'view',
             'helper_text' => 'view',
             'placeholder' => 'view',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -43,4 +53,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

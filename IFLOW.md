@@ -328,6 +328,7 @@ cd laravel && ./vendor/bin/phpstan analyse --memory-limit=-1
 
 ## 许可证
 
+<<<<<<< HEAD
 本项目是专有软件。保留所有权利。
 
 ## 🚨 NEW MEMORIES - 2026-02-08
@@ -424,3 +425,6 @@ php artisan view:clear
 ```
 
 **LESSON**: SerializableClosure errors sono spesso causati da cache corrotte.
+=======
+本项目是专有软件。保留所有权利。
+>>>>>>> 4b6b99016 (first commit)

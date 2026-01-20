@@ -1,5 +1,9 @@
 # Filosofia dei Componenti Riutilizzabili
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-12-12
+>>>>>>> 4b6b99016 (first commit)
 **Modulo**: Geo
 **Status**: 📚 **DOCUMENTAZIONE**
 

@@ -217,11 +217,19 @@ Il modulo utilizza Filament per fornire interfacce amministrative per:
 - Monitoraggio degli eventi memorizzati
 
 ## Collegamenti
+<<<<<<< HEAD
 - [README.md](./readme.md)
+=======
+- [README.md](./README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Activity Logging Documentation](./activity-logging.md)
 - [Filament Resources Documentation](./filament-resources.md)
 # PHPStan Analysis Report for Activity Module
 
+<<<<<<< HEAD
+=======
+**Date:** December 23, 2025
+>>>>>>> 4b6b99016 (first commit)
 
 **Outcome:**
 The `Activity` module has been analyzed with PHPStan (as part of a full `Modules` directory scan), and **no errors were found**. This indicates that the module currently adheres to the project's PHPStan configuration and coding standards.

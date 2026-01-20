@@ -38,7 +38,11 @@ class HeadernavData extends Data implements Wireable
 
     public static function make(): self
     {
+<<<<<<< HEAD
         if (! self::$instance instanceof HeadernavData) {
+=======
+        if (! (self::$instance instanceof HeadernavData)) {
+>>>>>>> 4b6b99016 (first commit)
             // if (! self::$instance) {
             $data = TenantService::getConfig('appearance');
             $data = Arr::get($data, 'headernav', []);

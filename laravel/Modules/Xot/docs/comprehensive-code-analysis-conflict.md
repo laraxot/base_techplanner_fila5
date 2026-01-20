@@ -414,10 +414,17 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Architettura Moduli](./architecture.md)
 - [Best Practices Laravel 12](./laravel_12_guide.md)
 - [Pattern Filament](./filament_patterns.md)
 - [Performance Optimization](./performance_guide.md)
+=======
+- [Architettura Moduli](./ARCHITECTURE.md)
+- [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
+- [Pattern Filament](./FILAMENT_PATTERNS.md)
+- [Performance Optimization](./PERFORMANCE_GUIDE.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## 📊 Metriche di Qualità
 
@@ -435,7 +442,11 @@ return [
 
 ---
 
+<<<<<<< HEAD
 **Data Analisi**: [DATE]
+=======
+**Data Analisi**: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
 **Stima Effort**: 40-60 ore di refactoring

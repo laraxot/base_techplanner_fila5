@@ -76,4 +76,8 @@ protected function getInfolistSchema(): array
 ## linkback
 
 - [errore override metodo final](project_docs/errors/filament_final_method_override.md)
+<<<<<<< HEAD
 - [linee guida filament](modules/<nome progetto>/project_docs/filament-resources.md)
+=======
+- [linee guida filament](Modules/<nome progetto>/project_docs/filament-resources.md)
+>>>>>>> 4b6b99016 (first commit)

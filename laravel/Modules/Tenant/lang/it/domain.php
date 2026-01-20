@@ -15,6 +15,7 @@ return [
     'fields' => [
         'domain' => [
             'label' => 'Dominio',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -72,6 +73,35 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'domains' => [
+            'label' => 'Domini',
+        ],
+        'list' => [
+            'label' => 'Lista Domini',
+        ],
+        'create' => [
+            'label' => 'Crea Dominio',
+        ],
+        'edit' => [
+            'label' => 'Modifica Dominio',
+        ],
+        'destroy' => [
+            'label' => 'Elimina Dominio',
+        ],
+        'name' => [
+            'label' => 'Nome',
+        ],
+        'rating' => [
+            'label' => 'rating',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -98,6 +128,9 @@ return [
             'label' => 'domain.plural.model',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Domain',
     'plural_label' => 'Domain (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

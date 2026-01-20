@@ -18,11 +18,18 @@ return [
     'fields' => [
         'title' => [
             'label' => 'Titolo Contatto',
+<<<<<<< HEAD
             'placeholder' => 'Inserisci il titolo (es. Studio Dentistico]',
             'help' => 'Nome o titolo principale per identificare il contatto',
             'helper_text' => 'title',
             'description' => 'title',
             'tooltip' => '',
+=======
+            'placeholder' => 'Inserisci il titolo (es. Studio Dentistico)',
+            'help' => 'Nome o titolo principale per identificare il contatto',
+            'helper_text' => 'title',
+            'description' => 'title',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Descrizione',
@@ -30,7 +37,10 @@ return [
             'help' => 'Breve descrizione delle attività e servizi offerti',
             'helper_text' => 'description',
             'description' => 'description',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'email' => [
             'label' => 'Email di Contatto',
@@ -38,7 +48,10 @@ return [
             'help' => 'Indirizzo email principale per le comunicazioni',
             'helper_text' => 'email',
             'description' => 'email',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'phone' => [
             'label' => 'Numero di Telefono',
@@ -46,7 +59,10 @@ return [
             'help' => 'Numero di telefono principale dello studio',
             'helper_text' => 'phone',
             'description' => 'phone',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'address' => [
             'label' => 'Indirizzo Completo',
@@ -54,7 +70,10 @@ return [
             'help' => 'Indirizzo fisico completo dello studio',
             'helper_text' => 'address',
             'description' => 'address',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'map_url' => [
             'label' => 'Link Mappa',
@@ -62,7 +81,10 @@ return [
             'help' => 'URL per aprire la posizione su Google Maps o servizi simili',
             'helper_text' => 'map_url',
             'description' => 'map_url',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -94,6 +116,9 @@ return [
         'loading' => 'Caricamento contatti in corso...',
         'saved' => 'Modifiche salvate correttamente',
     ],
+<<<<<<< HEAD
     'label' => 'Contact',
     'plural_label' => 'Contact (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

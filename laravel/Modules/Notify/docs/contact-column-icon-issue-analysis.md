@@ -135,7 +135,11 @@ La sintassi `@svg()` utilizzata nella view Blade non è compatibile con il siste
 
 ---
 
+<<<<<<< HEAD
 **Data Analisi**: [DATE]  
+=======
+**Data Analisi**: 2025-08-01  
+>>>>>>> 4b6b99016 (first commit)
 **Priorità**: 🔴 ALTA (Funzionalità core non funzionante)  
 **Tempo Stimato Fix**: 5 minuti  
 **Rischio**: 🟢 BASSO (Modifica isolata)

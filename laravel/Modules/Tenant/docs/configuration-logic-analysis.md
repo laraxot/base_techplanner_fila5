@@ -1,6 +1,10 @@
 # Configuration System Architecture - Tenant Module
 
+<<<<<<< HEAD
 ## Data: [DATE]
+=======
+## Data: 2026-01-08
+>>>>>>> 4b6b99016 (first commit)
 ## Metodologia: Super Mucca - La Litigata Interna
 ## File: `Modules/Tenant/app/Services/TenantService.php` e `app/Actions/Config/GetTenantFilePathAction.php`
 
@@ -224,6 +228,10 @@ I contenuti delle pagine sono memorizzati in JSON:
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-08
+>>>>>>> 4b6b99016 (first commit)
 **Versione**: 1.0.0
 **Status**: ✅ Completato

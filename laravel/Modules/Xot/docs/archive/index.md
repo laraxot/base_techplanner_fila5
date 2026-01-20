@@ -7,7 +7,11 @@ Questo documento fornisce un indice della documentazione del modulo Xot, organiz
 - [Architecture](./architecture.md) - Architettura del modulo
 - [Base Classes](./base_classes.md) - Classi base
 - [Service Providers](./service_providers.md) - Provider di servizi
+<<<<<<< HEAD
 - [Volt Folio Best Practices](./volt_folio_best_practices.md) - Best practices per Volt e Folio
+=======
+- [Volt Folio Best Practices](./VOLT_FOLIO_BEST_PRACTICES.md) - Best practices per Volt e Folio
+>>>>>>> 4b6b99016 (first commit)
 
 ## Filament
 - [Filament Integration](./filament_integration.md) - Integrazione con Filament
@@ -21,15 +25,26 @@ Questo documento fornisce un indice della documentazione del modulo Xot, organiz
 
 ## Testing e Quality
 - [Testing](./testing.md) - Testing e quality assurance (usare Pest come test runner)
+<<<<<<< HEAD
 - [Best Practices](./best-practices.md) - Linee guida generali
 - [Security](./security.md) - Sicurezza e hardening
 - [PHPStan Level 10](./phpstan_livello10_linee_guida.md) - Linee guida PHPStan livello 10
+=======
+- [Best Practices](./BEST-PRACTICES.md) - Linee guida generali
+- [Security](./security.md) - Sicurezza e hardening
+- [PHPStan Level 10](./PHPSTAN_LIVELLO10_LINEE_GUIDA.md) - Linee guida PHPStan livello 10
+>>>>>>> 4b6b99016 (first commit)
 
 ## Documentazione Tecnica
 - [Roadmap](./roadmap.md) - Piano di sviluppo futuro
 - [Bottlenecks](./bottlenecks.md) - Analisi performance e ottimizzazioni
+<<<<<<< HEAD
 - [Module Structure](./module_structure.md) - Struttura moduli
 - [Conflitti Merge Risolti](./conflitti_merge_risolti.md) - Documentazione conflitti risolti
+=======
+- [Module Structure](./MODULE_STRUCTURE.md) - Struttura moduli
+- [Conflitti Merge Risolti](./CONFLITTI_MERGE_RISOLTI.md) - Documentazione conflitti risolti
+>>>>>>> 4b6b99016 (first commit)
 
 ## Link Esterni
 - [Laravel Framework](https://laravel.com/project_docs/12.x)

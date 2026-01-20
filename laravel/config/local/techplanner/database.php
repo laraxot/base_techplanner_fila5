@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Modules\Tenant\Services\TenantService;
+
+>>>>>>> 4b6b99016 (first commit)
 return [
     'connections' => [
         'mysql' => [
@@ -39,6 +44,10 @@ return [
             ]) : [],
         ],
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)
         /*
         'user' => [
             'driver' => 'mysql',
@@ -56,6 +65,10 @@ return [
         ],
         */
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DATABASE_URL'),
@@ -64,5 +77,9 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     ], // end connections
 ];

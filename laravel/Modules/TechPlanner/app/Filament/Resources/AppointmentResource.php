@@ -8,6 +8,12 @@ use Filament\Forms;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Textarea;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
+=======
+use Modules\TechPlanner\Filament\Resources\AppointmentResource\Pages\CreateAppointment;
+use Modules\TechPlanner\Filament\Resources\AppointmentResource\Pages\EditAppointment;
+use Modules\TechPlanner\Filament\Resources\AppointmentResource\Pages\ListAppointments;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\TechPlanner\Models\Appointment;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
@@ -47,6 +53,11 @@ class AppointmentResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 4b6b99016 (first commit)
     public static function canEdit(Model $record): bool
     {
         return true;

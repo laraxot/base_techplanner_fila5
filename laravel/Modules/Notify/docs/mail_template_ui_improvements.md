@@ -158,8 +158,13 @@ Section::make('Informazioni Template')
 ## Collegamenti Correlati
 
 - [Documentazione Filament](https://filamentphp.com/docs)
+<<<<<<< HEAD
 - [Best Practices UI/UX](./best-practices.md)
 - [Componenti Filament](./filament_components.md)
+=======
+- [Best Practices UI/UX](./BEST-PRACTICES.md)
+- [Componenti Filament](./FILAMENT_COMPONENTS.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Note Importanti
 

@@ -303,7 +303,11 @@ Creare:
 
 ---
 
+<<<<<<< HEAD
 **Data:** [DATE]
+=======
+**Data:** 2026-01-09
+>>>>>>> 4b6b99016 (first commit)
 **Stato:** Analisi Completata - Pronto per Implementazione
 **Vincitore Litigata:** Posizione B (MySQL)
 **Motivazione:** Correttezza > Velocità + Rispetto indicazioni utente

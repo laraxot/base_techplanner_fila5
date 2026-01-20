@@ -8,22 +8,30 @@ return [
             'label' => 'Indirizzi',
             'placeholder' => 'Seleziona o inserisci un indirizzo',
             'help' => 'Gestione degli indirizzi associati al record',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'name' => [
             'label' => 'Nome Indirizzo',
             'placeholder' => 'Inserisci un nome identificativo',
+<<<<<<< HEAD
             'help' => 'Nome descrittivo per identificare facilmente l\'indirizzo (es. Casa, Ufficio, Studio]',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+            'help' => 'Nome descrittivo per identificare facilmente l\'indirizzo (es. Casa, Ufficio, Studio)',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_primary' => [
             'label' => 'Indirizzo Principale',
             'placeholder' => 'Seleziona se questo è l\'indirizzo principale',
             'help' => 'Indica se questo è l\'indirizzo principale tra tutti quelli registrati',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -51,6 +59,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Addresses Field',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
 ];

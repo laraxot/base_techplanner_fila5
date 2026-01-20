@@ -136,7 +136,11 @@ $safeForm = $form;
 - **File corretti indirettamente**: 9 modelli
 - **Rapporto efficienza**: 1 correzione trait → 3-5 modelli corretti
 
+<<<<<<< HEAD
 ### Aggiornamento [DATE]
+=======
+### Aggiornamento 2025-11-17
+>>>>>>> 4b6b99016 (first commit)
 - Normalizzazione di `getSushiRows()` ulteriormente rafforzata con `array_map` tipizzato e `ksort()` sulle chiavi per garantire `array<int, array<string, mixed>>` coerente in tutti i modelli dipendenti (Geo, Tenant, Xot).
 
 ## Collegamenti
@@ -146,5 +150,9 @@ $safeForm = $form;
 
 ---
 
+<<<<<<< HEAD
+=======
+**Data**: Novembre 2025
+>>>>>>> 4b6b99016 (first commit)
 **PHPStan Level**: 10
 **Status**: ✅ COMPLETATO

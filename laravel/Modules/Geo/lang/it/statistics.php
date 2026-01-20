@@ -8,73 +8,100 @@ return [
             'label' => 'Metrica',
             'placeholder' => 'Seleziona la metrica da calcolare',
             'help' => 'Tipo di metrica statistica da calcolare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'dimension' => [
             'label' => 'Dimensione',
             'placeholder' => 'Seleziona la dimensione di analisi',
             'help' => 'Dimensione per l\'analisi statistica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'time_range' => [
             'label' => 'Intervallo temporale',
             'placeholder' => 'Seleziona l\'intervallo temporale',
             'help' => 'Intervallo temporale per l\'analisi',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'group_by' => [
             'label' => 'Raggruppa per',
             'placeholder' => 'Seleziona i campi di raggruppamento',
             'help' => 'Campi per raggruppare i risultati',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'filters' => [
             'label' => 'Filtri',
             'placeholder' => 'Configura i filtri per l\'analisi',
             'help' => 'Filtri da applicare ai dati',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'sort_by' => [
             'label' => 'Ordina per',
             'placeholder' => 'Seleziona il campo di ordinamento',
             'help' => 'Campo per ordinare i risultati',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'sort_direction' => [
             'label' => 'Direzione ordinamento',
             'placeholder' => 'Seleziona la direzione',
             'help' => 'Direzione dell\'ordinamento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'limit' => [
             'label' => 'Limite',
             'placeholder' => 'Inserisci il numero massimo di risultati',
             'help' => 'Numero massimo di risultati da restituire',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'format' => [
             'label' => 'Formato',
             'placeholder' => 'Seleziona il formato di output',
             'help' => 'Formato per i risultati dell\'analisi',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -212,6 +239,7 @@ return [
         'candlestick' => 'Candeliere',
         'waterfall' => 'Cascata',
     ],
+<<<<<<< HEAD
     'label' => 'Statistics',
     'plural_label' => 'Statistics (Plurale)',
     'navigation' => [
@@ -236,4 +264,6 @@ return [
             'label' => 'Elimina Statistics',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

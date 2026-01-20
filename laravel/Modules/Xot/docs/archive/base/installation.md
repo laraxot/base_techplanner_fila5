@@ -132,6 +132,7 @@ se il branch di un modulo vuole essere pubblicato, eseguire nel modulo
 ### Versione HEAD
 
 ## Collegamenti tra versioni di installation.md
+<<<<<<< HEAD
 * [installation.md](../../../xot/project_docs/filament/installation.md)
 * [installation.md](../../../xot/project_docs/installation.md)
 * [installation.md](../../../xot/project_docs/base/installation.md)
@@ -139,6 +140,15 @@ se il branch di un modulo vuole essere pubblicato, eseguire nel modulo
 * [installation.md](../../../lang/project_docs/installation.md)
 * [installation.md](../../../cms/project_docs/installation.md)
 * [installation.md](../../../../themes/one/project_docs/installation.md)
+=======
+* [installation.md](../../../Xot/project_docs/filament/installation.md)
+* [installation.md](../../../Xot/project_docs/installation.md)
+* [installation.md](../../../Xot/project_docs/base/installation.md)
+* [installation.md](../../../User/project_docs/installation.md)
+* [installation.md](../../../Lang/project_docs/installation.md)
+* [installation.md](../../../Cms/project_docs/installation.md)
+* [installation.md](../../../../Themes/One/project_docs/installation.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### Versione Incoming
 

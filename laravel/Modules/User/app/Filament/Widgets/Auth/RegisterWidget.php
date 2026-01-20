@@ -45,25 +45,52 @@ class RegisterWidget extends XotBaseWidget
         return [
             'user_info' => Section::make()->schema([
                 'first_name' => TextInput::make('first_name')
+<<<<<<< HEAD
+=======
+                    ->label(__('user::auth.fields.first_name'))
+>>>>>>> 4b6b99016 (first commit)
                     ->required()
                     ->string()
                     ->minLength(2)
                     ->maxLength(255)
+<<<<<<< HEAD
                     ->autocomplete('given-name'),
                 'last_name' => TextInput::make('last_name')
+=======
+                    ->autocomplete('given-name')
+                    ->validationAttribute(__('user::auth.fields.first_name')),
+                'last_name' => TextInput::make('last_name')
+                    ->label(__('user::auth.fields.last_name'))
+>>>>>>> 4b6b99016 (first commit)
                     ->required()
                     ->string()
                     ->minLength(2)
                     ->maxLength(255)
+<<<<<<< HEAD
                     ->autocomplete('family-name'),
                 'email' => TextInput::make('email')
+=======
+                    ->autocomplete('family-name')
+                    ->validationAttribute(__('user::auth.fields.last_name')),
+                'email' => TextInput::make('email')
+                    ->label(__('user::auth.fields.email'))
+>>>>>>> 4b6b99016 (first commit)
                     ->required()
                     ->email()
                     ->maxLength(255)
                     ->unique(User::class, 'email')
+<<<<<<< HEAD
                     ->autocomplete('email'),
                 'password_grid' => Grid::make(2)->schema([
                     'password' => TextInput::make('password')
+=======
+                    ->autocomplete('email')
+                    ->validationAttribute(__('user::auth.fields.email'))
+                    ->helperText(__('user::auth.help.email')),
+                'password_grid' => Grid::make(2)->schema([
+                    'password' => TextInput::make('password')
+                        ->label(__('user::auth.fields.password'))
+>>>>>>> 4b6b99016 (first commit)
                         ->password()
                         ->required()
                         ->string()
@@ -82,14 +109,26 @@ class RegisterWidget extends XotBaseWidget
                             'password.regex' => __('user::auth.validation.password.complexity'),
                         ])
                         ->autocomplete('new-password')
+<<<<<<< HEAD
                         ->confirmed(),
                     'password_confirmation' => TextInput::make('password_confirmation')
+=======
+                        ->validationAttribute(__('user::auth.fields.password'))
+                        ->helperText(__('user::auth.help.password'))
+                        ->confirmed(),
+                    'password_confirmation' => TextInput::make('password_confirmation')
+                        ->label(__('user::auth.fields.password_confirmation'))
+>>>>>>> 4b6b99016 (first commit)
                         ->password()
                         ->required()
                         ->string()
                         ->minLength(12)
                         ->maxLength(255)
                         ->autocomplete('new-password')
+<<<<<<< HEAD
+=======
+                        ->validationAttribute(__('user::auth.fields.password_confirmation'))
+>>>>>>> 4b6b99016 (first commit)
                         ->dehydrated(false)
                         ->same('password'),
                 ]),

@@ -11,4 +11,18 @@ trait HasSpatiePermission
 {
     use HasPermissions;
     use HasRoles;
+<<<<<<< HEAD
+=======
+    /*
+        public function roles(): BelongsToMany
+        {
+            return $this->belongsToManyX(Role::class)->using(ModelHasRole::class);
+        }
+
+        public function permissions(): BelongsToMany
+        {
+            return $this->belongsToManyX(Permission::class);
+        }
+        */
+>>>>>>> 4b6b99016 (first commit)
 }

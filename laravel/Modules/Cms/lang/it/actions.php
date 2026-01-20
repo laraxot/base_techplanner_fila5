@@ -208,6 +208,9 @@ return [
             'right' => 'Destra',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Actions',
     'plural_label' => 'Actions (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

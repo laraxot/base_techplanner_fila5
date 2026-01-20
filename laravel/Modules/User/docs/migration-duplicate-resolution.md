@@ -155,8 +155,13 @@ find Modules/User/database/migrations/ -name "*create_*_table.php" | \
 ## 📚 Riferimenti
 
 - [Migration Unicity Rule](./migration-unicity-rule.md)
+<<<<<<< HEAD
 - [XotBaseMigration Commandment](../xot/docs/migration-unicity-commandment.md)
 - [Laraxot Philosophy](../xot/docs/philosophy.md)
+=======
+- [XotBaseMigration Commandment](../Xot/docs/migration-unicity-commandment.md)
+- [Laraxot Philosophy](../Xot/docs/philosophy.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

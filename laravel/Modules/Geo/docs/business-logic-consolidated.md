@@ -238,6 +238,7 @@ User (base)
 ## 🔗 Collegamenti Documentazione
 
 ### Documentazione Moduli
+<<<<<<< HEAD
 - [<nome progetto>](../modules/<nome progetto>/docs/readme.md)
 - [<nome progetto>](../modules/<nome progetto>/docs/readme.md)
 - [User](../modules/user/docs/readme.md)
@@ -245,6 +246,15 @@ User (base)
 - [Media](../modules/media/docs/readme.md)
 - [UI](../modules/ui/docs/readme.md)
 - [Xot](../modules/xot/docs/readme.md)
+=======
+- [<nome progetto>](../Modules/<nome progetto>/docs/README.md)
+- [<nome progetto>](../Modules/<nome progetto>/docs/README.md)
+- [User](../Modules/User/docs/README.md)
+- [Geo](../Modules/Geo/docs/README.md)
+- [Media](../Modules/Media/docs/README.md)
+- [UI](../Modules/UI/docs/README.md)
+- [Xot](../Modules/Xot/docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### Documentazione Tecnica
 - [Architettura](../laraxot-architecture-principles.md)
@@ -254,6 +264,10 @@ User (base)
 
 ---
 
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento**: Gennaio 2025
+>>>>>>> 4b6b99016 (first commit)
 **Versione**: 2.0
 **Autore**: AI Assistant
 **Stato**: Consolidata e Rifattorizzata

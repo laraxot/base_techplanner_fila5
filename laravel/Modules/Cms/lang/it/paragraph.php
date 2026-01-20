@@ -9,6 +9,7 @@ return [
             'placeholder' => 'content',
             'helper_text' => 'content',
             'description' => 'content',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -34,6 +35,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Paragraph',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
 ];

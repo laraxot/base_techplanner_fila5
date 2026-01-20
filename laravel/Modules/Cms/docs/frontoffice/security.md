@@ -134,6 +134,12 @@ export function validateForm(data) {
    - Testare gli input
 
 ## Collegamenti tra versioni di security.md
+<<<<<<< HEAD
 * [security.md](laravel/modules/gdpr/docs/packages/security.md)
 * [security.md](laravel/modules/cms/docs/frontoffice/security.md)
 * [security.md](laravel/themes/one/docs/security.md)
+=======
+* [security.md](laravel/Modules/Gdpr/docs/packages/security.md)
+* [security.md](laravel/Modules/Cms/docs/frontoffice/security.md)
+* [security.md](laravel/Themes/One/docs/security.md)
+>>>>>>> 4b6b99016 (first commit)

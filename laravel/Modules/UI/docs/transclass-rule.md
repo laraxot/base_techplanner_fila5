@@ -1,6 +1,10 @@
 # REGOLA CRITICA: Usa SEMPRE transClass() negli Enum
 
+<<<<<<< HEAD
 ## Data: [DATE]
+=======
+## Data: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 ## ✅ CORRETTO - Implementazione Enum con TransTrait
 
@@ -284,7 +288,11 @@ rules:
 
 - [Translation Standards](../../../docs/translation_standards.md)
 - [Filament Best Practices](../../../docs/filament_best_practices.md)
+<<<<<<< HEAD
 - [TransTrait Documentation](../../xot/docs/trans_trait_usage.md)
+=======
+- [TransTrait Documentation](../../Xot/docs/trans_trait_usage.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Memoria Permanente
 
@@ -295,9 +303,16 @@ rules:
 - SEMPRE struttura espansa nelle traduzioni
 - SEMPRE sincronizzazione IT/EN/DE
 
+<<<<<<< HEAD
 # REGOLA CRITICA: Usa SEMPRE transClass() negli Enum
 
 ## Data: [DATE]
+=======
+*Ultimo aggiornamento: 2025-01-06*
+# REGOLA CRITICA: Usa SEMPRE transClass() negli Enum
+
+## Data: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 ## ✅ CORRETTO - Implementazione Enum con TransTrait
 
@@ -581,7 +596,11 @@ rules:
 
 - [Translation Standards](../../../docs/translation_standards.md)
 - [Filament Best Practices](../../../docs/filament_best_practices.md)
+<<<<<<< HEAD
 - [TransTrait Documentation](../../xot/docs/trans_trait_usage.md)
+=======
+- [TransTrait Documentation](../../Xot/docs/trans_trait_usage.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Memoria Permanente
 
@@ -592,3 +611,7 @@ rules:
 - SEMPRE struttura espansa nelle traduzioni
 - SEMPRE sincronizzazione IT/EN/DE
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 4b6b99016 (first commit)

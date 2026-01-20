@@ -8,6 +8,7 @@ return [
     'sent' => 'Ett mail med länk för återställning av ditt lösenord har nu skickats!',
     'token' => 'Denna kod för att återställa lösenord är ogiltig.',
     'user' => 'Det finns ingen registrerad användare med den e-postadressen.',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -21,4 +22,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

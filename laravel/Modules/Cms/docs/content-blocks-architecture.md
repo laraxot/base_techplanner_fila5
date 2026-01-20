@@ -57,7 +57,11 @@ Builder::make('content_blocks')
     ->blocks([
         Builder\Block::make('hero')
             ->schema([/* campi specifici */]),
+<<<<<<< HEAD
         Builder\Block::make('feature_sections')  
+=======
+        Builder\Block::make('feature_sections')
+>>>>>>> 4b6b99016 (first commit)
             ->schema([/* campi specifici */]),
         // Altri blocchi...
     ])
@@ -145,3 +149,7 @@ Builder::make('content_blocks')
 - [Configurazione Builder](../app/Filament/Resources/PageResource.php)
 - [Theme Components](../../../Themes/One/resources/views/components/blocks/)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)

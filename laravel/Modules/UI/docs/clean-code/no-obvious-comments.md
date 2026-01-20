@@ -97,3 +97,7 @@ public static function init(): self
 - [wizard-steps.md](wizard-steps.md)
 - [wizard-schema-separation.md](wizard-schema-separation.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-08-04*
+>>>>>>> 4b6b99016 (first commit)

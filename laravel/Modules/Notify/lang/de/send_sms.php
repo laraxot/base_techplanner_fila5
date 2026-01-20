@@ -24,28 +24,40 @@ return [
             'helper_text' => 'Seleziona il provider per l\'invio SMS',
             'placeholder' => 'Seleziona un driver',
             'label' => 'Driver',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'message' => [
             'description' => 'Contenuto del messaggio',
             'helper_text' => 'Testo del messaggio da inviare',
             'placeholder' => 'Scrivi il messaggio',
             'label' => 'Messaggio',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'phone' => [
             'description' => 'Numero di telefono',
             'helper_text' => 'Numero del destinatario',
             'placeholder' => 'Inserisci il numero',
             'label' => 'Numero telefono',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'gateway' => [
             'description' => 'Gateway SMS',
             'helper_text' => 'Gateway utilizzato per l\'invio',
             'placeholder' => 'Gateway SMS',
             'label' => 'Gateway',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -67,6 +79,9 @@ return [
         'error' => 'Si è verificato un errore durante l\'invio dell\'SMS',
         'confirmation' => 'Sei sicuro di voler inviare questo SMS?',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

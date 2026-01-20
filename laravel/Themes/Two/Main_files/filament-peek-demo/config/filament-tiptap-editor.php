@@ -1,7 +1,12 @@
 <?php
 
+<<<<<<< HEAD
 use FilamentTiptapEditor\Actions\LinkAction;
 use FilamentTiptapEditor\Actions\MediaAction;
+=======
+use FilamentTiptapEditor\Actions\MediaAction;
+use FilamentTiptapEditor\Actions\LinkAction;
+>>>>>>> 4b6b99016 (first commit)
 use FilamentTiptapEditor\Enums\TiptapOutput;
 
 return [

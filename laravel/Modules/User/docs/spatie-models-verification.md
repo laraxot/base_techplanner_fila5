@@ -105,8 +105,13 @@ class Role extends SpatieRole  // ✅ CORRETTO
 
 - [Spatie Permission Philosophy](spatie-permission-philosophy.md) - Filosofia completa
 - [Vendor Extension Pattern](vendor-extension-pattern.md) - Pattern generale per tutti i vendor
+<<<<<<< HEAD
 - [Third-Party Model Inheritance](../xot/docs/third-party-model-inheritance-philosophy.md) - Documentazione Xot
 - [Critical Architecture Rules](../xot/docs/critical-architecture-rules.md) - Regole critiche
+=======
+- [Third-Party Model Inheritance](../Xot/docs/third-party-model-inheritance-philosophy.md) - Documentazione Xot
+- [Critical Architecture Rules](../Xot/docs/critical-architecture-rules.md) - Regole critiche
+>>>>>>> 4b6b99016 (first commit)
 
 ## 🔍 Verifica Altri Modelli User
 

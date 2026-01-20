@@ -487,6 +487,10 @@ La documentazione deve essere mantenuta aggiornata in:
 
 ---
 
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento**: Dicembre 2024
+>>>>>>> 4b6b99016 (first commit)
 **Versione**: 1.0.0
 **Status**: Production Ready
 **Business Logic**: Completa e documentata

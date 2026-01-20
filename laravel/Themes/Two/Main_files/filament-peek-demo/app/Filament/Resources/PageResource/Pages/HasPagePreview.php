@@ -2,8 +2,13 @@
 
 namespace App\Filament\Resources\PageResource\Pages;
 
+<<<<<<< HEAD
 use App\Filament\Fields\PageContent;
 use Filament\Schemas\Components\Component;
+=======
+use Filament\Schemas\Components\Component;
+use App\Filament\Fields\PageContent;
+>>>>>>> 4b6b99016 (first commit)
 use Pboivin\FilamentPeek\Pages\Actions\PreviewAction;
 use Pboivin\FilamentPeek\Pages\Concerns\HasBuilderPreview;
 use Pboivin\FilamentPeek\Pages\Concerns\HasPreviewModal;

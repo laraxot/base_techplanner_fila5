@@ -202,8 +202,13 @@ class UIServiceProvider extends XotBaseServiceProvider
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Documentazione Folio](https://laravel.com/docs/folio)
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
+<<<<<<< HEAD
 - [Best Practices UI](./ui_best_practices.md)
 - [Guida Componenti](./components_guide.md)
+=======
+- [Best Practices UI](./UI_BEST_PRACTICES.md)
+- [Guida Componenti](./COMPONENTS_GUIDE.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Componenti Blade Filament](https://filamentphp.com/docs/3.x/support/blade-components/overview)
 
 ## Gestione delle Rotte
@@ -658,8 +663,13 @@ class UIServiceProvider extends XotBaseServiceProvider
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Documentazione Folio](https://laravel.com/docs/folio)
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
+<<<<<<< HEAD
 - [Best Practices UI](./ui_best_practices.md)
 - [Guida Componenti](./components_guide.md)
+=======
+- [Best Practices UI](./UI_BEST_PRACTICES.md)
+- [Guida Componenti](./COMPONENTS_GUIDE.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Componenti Blade Filament](https://filamentphp.com/docs/3.x/support/blade-components/overview)
 
 ## Gestione delle Rotte

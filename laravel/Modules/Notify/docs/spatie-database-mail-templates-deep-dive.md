@@ -506,7 +506,11 @@ $email = new SpatieEmail($user, 'welcome-user');
 
 $email->mergeData([
     'activation_code' => '123456',
+<<<<<<< HEAD
     'expires_at' => '[DATE] 12:00',
+=======
+    'expires_at' => '2025-10-30 12:00',
+>>>>>>> 4b6b99016 (first commit)
 ]);
 
 Mail::to($user->email)->send($email);
@@ -924,7 +928,11 @@ test('welcome email is sent', function () {
 - [SpatieEmail Class](../app/Emails/SpatieEmail.php)
 - [MailTemplate Model](../app/Models/MailTemplate.php)
 - [MailTemplateResource](../app/Filament/Resources/MailTemplateResource.php)
+<<<<<<< HEAD
 - [Mail Layouts README](../resources/mail-layouts/readme.md)
+=======
+- [Mail Layouts README](../resources/mail-layouts/README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Spatie Translatable Integration](./spatie-translatable-integration.md)
 
 ---

@@ -26,7 +26,10 @@ return [
             'tooltip' => 'Identificativo univoco universale',
             'helper_text' => 'Codice alfanumerico che identifica in modo univoco il dispositivo nel sistema',
             'help' => 'Identificativo univoco del dispositivo',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'mobile_id' => [
             'label' => 'Mobile ID',
@@ -34,15 +37,23 @@ return [
             'tooltip' => 'Identificativo specifico per dispositivi mobili',
             'helper_text' => 'Codice utilizzato per identificare il dispositivo nelle applicazioni mobile',
             'help' => 'Identificativo mobile del dispositivo',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'languages' => [
             'label' => 'Lingue',
             'placeholder' => 'Aggiungi una lingua',
             'tooltip' => 'Lingue supportate dal dispositivo',
+<<<<<<< HEAD
             'helper_text' => 'Elenco delle lingue configurate o supportate dal dispositivo (formato: it, en, es]',
             'help' => 'Seleziona o digita i codici delle lingue (es. it, en, es]',
             'description' => '',
+=======
+            'helper_text' => 'Elenco delle lingue configurate o supportate dal dispositivo (formato: it, en, es)',
+            'help' => 'Seleziona o digita i codici delle lingue (es. it, en, es)',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'device' => [
             'label' => 'Nome Dispositivo',
@@ -50,23 +61,34 @@ return [
             'tooltip' => 'Nome identificativo del dispositivo',
             'helper_text' => 'Nome descrittivo o modello del dispositivo utilizzato dall\'utente',
             'help' => 'Nome del dispositivo',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'platform' => [
             'label' => 'Piattaforma',
             'placeholder' => 'Inserisci la piattaforma',
             'tooltip' => 'Sistema operativo del dispositivo',
             'helper_text' => 'Sistema operativo o piattaforma su cui funziona il dispositivo',
+<<<<<<< HEAD
             'help' => 'Piattaforma del dispositivo (iOS, Android, Windows, Linux, macOS]',
             'description' => '',
+=======
+            'help' => 'Piattaforma del dispositivo (iOS, Android, Windows, Linux, macOS)',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'browser' => [
             'label' => 'Browser',
             'placeholder' => 'Inserisci il browser',
             'tooltip' => 'Browser web utilizzato',
             'helper_text' => 'Applicazione browser utilizzata per navigare su internet',
+<<<<<<< HEAD
             'help' => 'Browser utilizzato (Chrome, Firefox, Safari, Edge]',
             'description' => '',
+=======
+            'help' => 'Browser utilizzato (Chrome, Firefox, Safari, Edge)',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'version' => [
             'label' => 'Versione',
@@ -74,7 +96,10 @@ return [
             'tooltip' => 'Versione del software',
             'helper_text' => 'Numero di versione del browser o del sistema operativo',
             'help' => 'Versione del browser o sistema operativo',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_robot' => [
             'label' => 'È Robot',
@@ -82,15 +107,22 @@ return [
             'tooltip' => 'Indica se è un bot automatizzato',
             'helper_text' => 'Specifica se il dispositivo è utilizzato da un robot o sistema automatizzato',
             'help' => 'Indica se il dispositivo è un robot o bot automatizzato',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'robot' => [
             'label' => 'Robot',
             'placeholder' => 'Inserisci il tipo di robot',
             'tooltip' => 'Tipo specifico di robot',
             'helper_text' => 'Nome o tipo del robot/crawler se il dispositivo è automatizzato',
+<<<<<<< HEAD
             'help' => 'Tipo di robot se applicabile (Googlebot, Bingbot, etc.]',
             'description' => '',
+=======
+            'help' => 'Tipo di robot se applicabile (Googlebot, Bingbot, etc.)',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_desktop' => [
             'label' => 'È Desktop',
@@ -98,15 +130,23 @@ return [
             'tooltip' => 'Dispositivo desktop o computer fisso',
             'helper_text' => 'Indica se si tratta di un computer desktop o workstation fissa',
             'help' => 'Indica se è un dispositivo desktop o computer fisso',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_mobile' => [
             'label' => 'È Mobile',
             'placeholder' => 'Seleziona se è mobile',
             'tooltip' => 'Dispositivo mobile portatile',
+<<<<<<< HEAD
             'helper_text' => 'Specifica se il dispositivo è mobile (smartphone, tablet o dispositivo portatile]',
             'help' => 'Indica se è un dispositivo mobile (smartphone o tablet]',
             'description' => '',
+=======
+            'helper_text' => 'Specifica se il dispositivo è mobile (smartphone, tablet o dispositivo portatile)',
+            'help' => 'Indica se è un dispositivo mobile (smartphone o tablet)',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_tablet' => [
             'label' => 'È Tablet',
@@ -114,7 +154,10 @@ return [
             'tooltip' => 'Dispositivo tablet con schermo touch',
             'helper_text' => 'Indica se si tratta di un tablet o dispositivo con schermo di medie dimensioni',
             'help' => 'Indica se è un tablet o dispositivo con schermo di medie dimensioni',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_phone' => [
             'label' => 'È Telefono',
@@ -122,7 +165,10 @@ return [
             'tooltip' => 'Smartphone o telefono cellulare',
             'helper_text' => 'Specifica se il dispositivo è uno smartphone o telefono cellulare',
             'help' => 'Indica se è uno smartphone o telefono cellulare',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -271,6 +317,11 @@ return [
         ],
         'total_devices' => 'Totale dispositivi: :count',
     ],
+<<<<<<< HEAD
     'label' => 'Device',
     'plural_label' => 'Device (Plurale)',
+=======
+    'label' => '',
+    'plural_label' => '',
+>>>>>>> 4b6b99016 (first commit)
 ];

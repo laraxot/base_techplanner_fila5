@@ -214,9 +214,15 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 ## 📚 **RIFERIMENTI E REGOLE CORRELATE**
 
 - [Vendor Extension Pattern](vendor-extension-pattern.md) - Pattern generale per estendere classi vendor
+<<<<<<< HEAD
 - [BaseModel Philosophy](../xot/docs/models/model-architecture.md)
 - [External Package Integration](../Xot/docs/models/model-architecture.md#special-cases)
 - [Class Responsibility Separation](../xot/docs/critical-architecture-rules.md)
+=======
+- [BaseModel Philosophy](../Xot/docs/models/model-architecture.md)
+- [External Package Integration](../Xot/docs/models/model-architecture.md#special-cases)
+- [Class Responsibility Separation](../Xot/docs/critical-architecture-rules.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Spatie Permission Methods](spatie-permissions-methods.md)
 - [Roles and Permissions](roles_permissions.md)
 

@@ -112,6 +112,7 @@
 >
 ```
 
+<<<<<<< HEAD
 ## Tecniche W3C di riferimento
 
 Per implementazioni dettagliate (label, focus, link, contrasto, autocomplete, aria-label, reflow):
@@ -127,6 +128,8 @@ Per implementazioni dettagliate (label, focus, link, contrasto, autocomplete, ar
 
 Piano di risoluzione per il tema Two: `laravel/Themes/Two/docs/wcag-techniques-resolution.md`.
 
+=======
+>>>>>>> 4b6b99016 (first commit)
 ## 🔗 Collegamenti
 - [Performance](./performance.md)
 - [UI Standards](./ui-standards.md)

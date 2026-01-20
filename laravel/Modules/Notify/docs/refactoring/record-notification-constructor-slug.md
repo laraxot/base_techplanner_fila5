@@ -1,5 +1,9 @@
 # Refactoring RecordNotification Constructor - Slug Pattern
 
+<<<<<<< HEAD
+=======
+**Data**: 19 Dicembre 2025  
+>>>>>>> 4b6b99016 (first commit)
 **Stato**: ✅ Implementato  
 **Motivazione**: Lazy Resolution, Consistency, DRY + KISS
 
@@ -237,7 +241,11 @@ $notification = new RecordNotification($record, 'welcome');
 
 ## 🔗 Riferimenti
 
+<<<<<<< HEAD
 - [RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md](./record_notification_zen_constructor.md) - Filosofia Zen per costruttore
+=======
+- [RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md](./RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md) - Filosofia Zen per costruttore
+>>>>>>> 4b6b99016 (first commit)
 - [RecordNotification Zen Delegation](./record-notification-zen-delegation.md) - **✅ Pattern attuale**: Delega completa a SpatieEmail
 - [record-notification.md](../notifications/record-notification.md) - Documentazione completa RecordNotification
 - [send-record-notification-action.md](../actions/send-record-notification-action.md) - Documentazione SendRecordNotificationAction

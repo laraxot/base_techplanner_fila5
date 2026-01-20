@@ -60,7 +60,11 @@ abstract class XotBaseChartWidget extends FilamentChartWidget
      *
      * @return array<string, mixed>
      */
+<<<<<<< HEAD
     protected function getOptionsArray(): array
+=======
+    protected function getOptions(): array
+>>>>>>> 4b6b99016 (first commit)
     {
         return [
             'responsive' => true,

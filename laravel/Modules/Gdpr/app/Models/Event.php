@@ -13,6 +13,10 @@ use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Crypt;
+<<<<<<< HEAD
+=======
+use Modules\Gdpr\Database\Factories\EventFactory;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Xot\Contracts\ProfileContract;
 
 use function Safe\json_encode;
@@ -37,6 +41,10 @@ use function Safe\json_encode;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
+<<<<<<< HEAD
+=======
+ * @method static EventFactory          factory($count = null, $state = [])
+>>>>>>> 4b6b99016 (first commit)
  * @method static Builder<static>|Event newModelQuery()
  * @method static Builder<static>|Event newQuery()
  * @method static Builder<static>|Event query()
@@ -62,7 +70,11 @@ class Event extends BaseModel
 {
     use HasUuids;
 
+<<<<<<< HEAD
     protected $table = 'gdpr_events';
+=======
+    // protected $table = 'event';
+>>>>>>> 4b6b99016 (first commit)
 
     public $fillable = [
         'id',

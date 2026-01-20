@@ -49,9 +49,15 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
 
         return [
             Split::make([
+<<<<<<< HEAD
                 'command' => TextColumn::make('command'),
                 'created_at' => TextColumn::make('created_at')->dateTime($date_format),
                 'updated_at' => TextColumn::make('updated_at')->formatStateUsing(static function (
+=======
+                TextColumn::make('command'),
+                TextColumn::make('created_at')->dateTime($date_format),
+                TextColumn::make('updated_at')->formatStateUsing(static function (
+>>>>>>> 4b6b99016 (first commit)
                     ?Carbon $state,
                     ScheduleHistory $record,
                 ): string {
@@ -65,12 +71,20 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
 
                     return (string) $state->diffInSeconds($record->created_at).' seconds';
                 }),
+<<<<<<< HEAD
                 'output' => TextColumn::make('output')->formatStateUsing(
+=======
+                TextColumn::make('output')->formatStateUsing(
+>>>>>>> 4b6b99016 (first commit)
                     static fn (string $state): string => (count(explode('<br />', nl2br($state))) - 1).' rows of output',
                 ),
             ]),
             Panel::make([
+<<<<<<< HEAD
                 'output' => TextColumn::make('output')
+=======
+                TextColumn::make('output')
+>>>>>>> 4b6b99016 (first commit)
                     ->extraAttributes(['class' => '!max-w-max'], true)
                     ->formatStateUsing(static fn (string $state): HtmlString => new HtmlString(nl2br(
                         $state,

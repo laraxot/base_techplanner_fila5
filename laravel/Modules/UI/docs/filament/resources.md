@@ -59,4 +59,8 @@
 
 ## Collegamenti tra versioni di resources.md
 * [resources.md](docs/tecnico/filament/resources.md)
+<<<<<<< HEAD
 * [resources.md](../../../ui/docs/filament/resources.md)
+=======
+* [resources.md](../../../UI/docs/filament/resources.md)
+>>>>>>> 4b6b99016 (first commit)

@@ -37,7 +37,11 @@ class UsersChartWidget extends ChartWidget implements HasActions, HasForms
 
     public function getHeading(): Htmlable|string|null
     {
+<<<<<<< HEAD
         return __('user::widgets.users_chart.heading');
+=======
+        return 'Authentication Log';
+>>>>>>> 4b6b99016 (first commit)
     }
 
     /**
@@ -123,7 +127,11 @@ class UsersChartWidget extends ChartWidget implements HasActions, HasForms
         return [
             'datasets' => [
                 [
+<<<<<<< HEAD
                     'label' => __('user::widgets.users_chart.label'),
+=======
+                    'label' => 'Number of logins executed',
+>>>>>>> 4b6b99016 (first commit)
                     'data' => $chartData,
                 ],
             ],

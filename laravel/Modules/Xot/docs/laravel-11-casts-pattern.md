@@ -160,6 +160,10 @@ Before committing any model:
 
 **CRITICAL**: Always use `protected function casts(): array` in new code and migrate old code when touching files.
 
+<<<<<<< HEAD
 
+=======
+**Last Updated**: 2026-01-13  
+>>>>>>> 4b6b99016 (first commit)
 **Laravel Version**: 11+  
 **Status**: MANDATORY for all new code

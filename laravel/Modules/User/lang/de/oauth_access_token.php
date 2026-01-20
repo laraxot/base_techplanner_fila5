@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -53,6 +54,26 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'user_id' => [
+            'label' => 'Benutzer',
+        ],
+        'client_id' => [
+            'label' => 'Client',
+        ],
+        'name' => [
+            'label' => 'Name',
+        ],
+        'scopes' => [
+            'label' => 'Bereiche',
+        ],
+        'revoked' => [
+            'label' => 'Widerrufen',
+        ],
+        'expires_at' => [
+            'label' => 'Läuft Ab Am',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [

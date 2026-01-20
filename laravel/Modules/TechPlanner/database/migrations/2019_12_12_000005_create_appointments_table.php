@@ -12,6 +12,11 @@ return new class() extends XotBaseMigration
 {
     /**
      * db up.
+<<<<<<< HEAD
+=======
+     *
+     * @return void
+>>>>>>> 4b6b99016 (first commit)
      */
     public function up(): void
     {

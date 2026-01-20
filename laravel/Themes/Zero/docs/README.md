@@ -32,6 +32,7 @@ Per personalizzare:
 2. Modificare gli stili in `resources/css/`
 3. Eseguire `npm run build` (o `npm run dev`) per rigenerare gli asset
 
+<<<<<<< HEAD
 Ricordare di documentare ogni variante o layout personalizzato nella cartella `docs/`.
 
 ## 🤖 AI Development Tools & Skills
@@ -55,3 +56,6 @@ Workflow locale: `.github/workflows/release.yml`.
 - Marco Sottana <marco.sottana@gmail.com>
 
 **License:** MIT
+=======
+Ricordare di documentare ogni variante o layout personalizzato nella cartella `docs/`.
+>>>>>>> 4b6b99016 (first commit)

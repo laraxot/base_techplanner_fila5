@@ -3,10 +3,17 @@
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).
 
 Consulta la documentazione delle traduzioni:
+<<<<<<< HEAD
 - [Introduzione alle Traduzioni](../../lang/project_docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/project_docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/project_docs/module_lang.md)
 - [Traduzioni in Filament](../../lang/project_docs/filament-translations.md) - **IMPORTANTE**: Regole per l'uso delle traduzioni nei componenti Filament
+=======
+- [Introduzione alle Traduzioni](../../Lang/project_docs/introduction.md)
+- [Struttura delle Traduzioni](../../Lang/project_docs/structure.md)
+- [Gestione dei File di Lingua](../../Lang/project_docs/module_lang.md)
+- [Traduzioni in Filament](../../Lang/project_docs/filament-translations.md) - **IMPORTANTE**: Regole per l'uso delle traduzioni nei componenti Filament
+>>>>>>> 4b6b99016 (first commit)
 
 ## Collegamento Bidirezionale
 
@@ -15,6 +22,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 > Aggiorna entrambi i riferimenti se aggiungi nuove chiavi di traduzione o modifichi la struttura.
 
 ## Collegamenti tra versioni di lang-link.md
+<<<<<<< HEAD
 * [lang-link.md](laravel/modules/chart/project_docs/lang-link.md)
 * [lang-link.md](laravel/modules/reporting/project_docs/lang-link.md)
 * [lang-link.md](laravel/modules/gdpr/project_docs/lang-link.md)
@@ -30,3 +38,19 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/modules/patient/project_docs/lang-link.md)
 * [lang-link.md](laravel/modules/cms/project_docs/lang-link.md)
 
+=======
+* [lang-link.md](laravel/Modules/Chart/project_docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Reporting/project_docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Gdpr/project_docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Notify/project_docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Xot/project_docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Dental/project_docs/lang-link.md)
+* [lang-link.md](laravel/Modules/User/project_docs/lang-link.md)
+* [lang-link.md](laravel/Modules/UI/project_docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Job/project_docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Media/project_docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Tenant/project_docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Activity/project_docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Patient/project_docs/lang-link.md)
+* [lang-link.md](laravel/Modules/Cms/project_docs/lang-link.md)
+>>>>>>> 4b6b99016 (first commit)

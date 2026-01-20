@@ -68,4 +68,8 @@
 
 ## Collegamenti tra versioni di standard_ui_components.md
 * [standard_ui_components.md](docs/implementazione/standard_ui_components.md)
+<<<<<<< HEAD
 * [standard_ui_components.md](laravel/modules/cms/docs/standard_ui_components.md)
+=======
+* [standard_ui_components.md](laravel/Modules/Cms/docs/standard_ui_components.md)
+>>>>>>> 4b6b99016 (first commit)

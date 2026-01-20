@@ -1,5 +1,9 @@
 # Refined Italian Text Audit Report
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-08-08 11:20:44
+>>>>>>> 4b6b99016 (first commit)
 **Scope**: Identificazione di VERI testi italiani in file non italiani (escludendo falsi positivi)
 
 ## ✅ Risultato Audit

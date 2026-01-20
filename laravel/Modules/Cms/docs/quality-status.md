@@ -83,11 +83,19 @@ This informs PHPStan that the object has BOTH:
 
 ---
 
+<<<<<<< HEAD
 *
 *PHPStan: PASSED*
 *Status: PRODUCTION READY*
 
 ## Aggiornamento [DATE]
+=======
+*Last Updated: November 15, 2025*
+*PHPStan: PASSED*
+*Status: PRODUCTION READY*
+
+## Aggiornamento 2025-11-18
+>>>>>>> 4b6b99016 (first commit)
 
 - Introdotto il trait `TypedHasRecursiveRelationships` per tipizzare tutti i metodi richiesti dal contratto `HasRecursiveRelationshipsContract`.
 - `Menu`, `LimeQuestion` e i `BaseTreeModel` di Cms/Xot utilizzano ora il trait tipizzato (non più quello del vendor), evitando i fatal error di compatibilità riscontrati da PHPStan.

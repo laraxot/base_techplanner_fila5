@@ -4,14 +4,26 @@ declare(strict_types=1);
 
 return [
     'breadcrumb' => 'Cronologia',
+<<<<<<< HEAD
     'title' => 'Cronologia :record',
     'default_datetime_format' => 'd/m/Y, H:i:s',
+=======
+
+    'title' => 'Cronologia :record',
+
+    'default_datetime_format' => 'd/m/Y, H:i:s',
+
+>>>>>>> 4b6b99016 (first commit)
     'table' => [
         'field' => 'Campo',
         'old' => 'Vecchio',
         'new' => 'Nuovo',
         'restore' => 'Ripristina',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     'events' => [
         'updated' => 'Aggiornato',
         'created' => 'Creato',
@@ -20,16 +32,25 @@ return [
         'restore_successful' => 'Ripristinato con successo',
         'restore_failed' => 'Ripristino fallito',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     'subject' => [
         'type' => 'Tipo',
         'id' => 'ID',
         'unknown' => 'Sconosciuto',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     'metadata' => [
         'log_name' => 'Log',
         'batch_uuid' => 'Batch UUID',
         'properties' => 'Proprietà',
     ],
+<<<<<<< HEAD
     'no_changes' => 'Nessuna modifica registrata',
     'no_description' => 'Nessuna descrizione disponibile',
     'modified' => 'Modificato',
@@ -79,4 +100,13 @@ return [
             'label' => 'Elimina Activities',
         ],
     ],
+=======
+
+    'no_changes' => 'Nessuna modifica registrata',
+    'no_description' => 'Nessuna descrizione disponibile',
+
+    'modified' => 'Modificato',
+    'fields_modified' => ':count campo modificato|:count campi modificati',
+    'anonymous' => 'Utente Anonimo',
+>>>>>>> 4b6b99016 (first commit)
 ];

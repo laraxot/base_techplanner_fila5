@@ -18,44 +18,62 @@ return [
         'id' => [
             'label' => 'ID',
             'placeholder' => 'ID della pagina',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'title' => [
             'label' => 'Titolo',
             'placeholder' => 'Titolo della pagina',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'slug' => [
             'label' => 'Slug',
             'placeholder' => 'Slug della pagina',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'content' => [
             'label' => 'Contenuto',
             'placeholder' => 'Contenuto della pagina',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'meta_title' => [
             'label' => 'Meta Titolo',
             'placeholder' => 'Meta titolo per SEO',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'meta_description' => [
             'label' => 'Meta Descrizione',
             'placeholder' => 'Meta descrizione per SEO',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'status' => [
             'label' => 'Stato',
@@ -66,9 +84,12 @@ return [
                 'scheduled' => 'Programmata',
                 'archived' => 'Archiviata',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'layout' => [
             'label' => 'Layout',
@@ -78,34 +99,47 @@ return [
                 'full-width' => 'Larghezza piena',
                 'sidebar' => 'Con barra laterale',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'parent_id' => [
             'label' => 'Pagina Genitore',
             'placeholder' => 'Seleziona la pagina genitore',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'order' => [
             'label' => 'Ordine',
             'placeholder' => 'Ordine di visualizzazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'lang' => [
             'label' => 'Lingua',
             'placeholder' => 'Seleziona la lingua della pagina',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'placeholder' => 'Data e ora ultima modifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -181,6 +215,44 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'Attiva/Disattiva Colonne',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'view' => [
+            'label' => 'view',
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'message' => [
+            'label' => 'message',
+        ],
+        'footer_blocks' => [
+            'label' => 'footer_blocks',
+        ],
+        'caption' => [
+            'label' => 'caption',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -215,6 +287,9 @@ return [
     'model' => [
         'label' => 'page.model',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

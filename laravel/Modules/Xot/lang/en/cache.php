@@ -19,40 +19,55 @@ return [
             'label' => 'Chiave',
             'placeholder' => 'Inserisci la chiave',
             'help' => 'Chiave identificativa della cache',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'value' => [
             'label' => 'Valore',
             'placeholder' => 'Inserisci il valore',
             'help' => 'Valore memorizzato nella cache',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'ttl' => [
             'label' => 'Tempo di Vita',
             'placeholder' => 'Inserisci il TTL in minuti',
             'help' => 'Tempo di permanenza in cache (in minuti)',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'tags' => [
             'label' => 'Tag',
             'placeholder' => 'Seleziona i tag',
             'help' => 'Tag per raggruppare elementi della cache',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'size' => [
             'label' => 'Dimensione',
             'help' => 'Dimensione occupata in memoria',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'driver' => [
             'label' => 'Driver',
@@ -63,20 +78,27 @@ return [
                 'memcached' => 'Memcached',
                 'array' => 'Array',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'help' => 'Data di inserimento in cache',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'expires_at' => [
             'label' => 'Data Scadenza',
             'help' => 'Data di scadenza della cache',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -110,6 +132,23 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -172,6 +211,9 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

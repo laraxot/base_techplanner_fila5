@@ -13,6 +13,7 @@ return [
         ],
     ],
     'fields' => [
+<<<<<<< HEAD
         'file' => [
             'label' => 'file',
             'tooltip' => '',
@@ -92,12 +93,36 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        'file' => 'file',
+        'file_hint' => 'Upload an attachment',
+        'name' => [
+            'label' => 'Name',
+        ],
+        'guard_name' => 'Guard',
+        'collection_name' => [
+            'label' => 'Collection',
+        ],
+        'filename' => 'Filename',
+        'mime_type' => 'Type',
+        'human_readable_size' => [
+            'label' => 'Size',
+        ],
+        'permissions' => 'Permissions',
+        'updated_at' => 'Updated at',
+        'first_name' => 'First Name',
+        'last_name' => 'Last Name',
+        'select_all' => [
+            'name' => 'Select All',
+            'message' => '',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'creator' => [
             'name' => 'Creator',
             'full_name' => [
                 'label' => 'Creator',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -114,6 +139,12 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'uploaded_at' => 'Updated at',
+        'created_at' => [
+            'label' => 'Uploaded at',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -130,6 +161,9 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

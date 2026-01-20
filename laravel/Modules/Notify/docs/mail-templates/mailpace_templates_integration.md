@@ -95,5 +95,10 @@ $mailTemplate->send($user->email, [
 
 - [Documentazione Maizzle](https://maizzle.com/docs/)
 - [Repository MailPace Templates](https://github.com/mailpace/templates)
+<<<<<<< HEAD
 - [Guida Spatie Email](../spatie_email_usage_guide.md)
 - [Implementazione Slug Field](./slug_field_implementation.md)
+=======
+- [Guida Spatie Email](../SPATIE_EMAIL_USAGE_GUIDE.md)
+- [Implementazione Slug Field](./SLUG_FIELD_IMPLEMENTATION.md)
+>>>>>>> 4b6b99016 (first commit)

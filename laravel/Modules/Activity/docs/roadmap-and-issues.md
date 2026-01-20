@@ -49,7 +49,11 @@
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [← Activity Module README](../readme.md)
+=======
+- [← Activity Module README](../README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [← Root Documentation](../../../docs/index.md)
 
 ---

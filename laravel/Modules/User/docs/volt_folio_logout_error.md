@@ -114,6 +114,12 @@ final class LogoutAction
    - Evitare JavaScript per operazioni critiche
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Best Practices Folio](./routing_best_practices.md)
 - [Best Practices Volt](./volt_best_practices.md)
 - [Gestione Sessione](./session_management.md) 
+=======
+- [Best Practices Folio](./ROUTING_BEST_PRACTICES.md)
+- [Best Practices Volt](./VOLT_BEST_PRACTICES.md)
+- [Gestione Sessione](./SESSION_MANAGEMENT.md) 
+>>>>>>> 4b6b99016 (first commit)

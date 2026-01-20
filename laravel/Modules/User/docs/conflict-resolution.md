@@ -25,3 +25,7 @@
 - Factory utilizza `@var OauthClient` per evitare `mixed`.
 - PHPStan blocca per seeder legacy; verrà affrontato in step successivi.
 
+<<<<<<< HEAD
+=======
+Ultimo aggiornamento: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)

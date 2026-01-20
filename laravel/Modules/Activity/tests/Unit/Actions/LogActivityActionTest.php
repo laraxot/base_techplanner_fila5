@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Actions\LogActivityAction;
 use Modules\User\Models\User;
 
+<<<<<<< HEAD
 test('LogActivityAction can be instantiated', function () {
     $model = new class extends Model
     {
@@ -15,6 +16,18 @@ test('LogActivityAction can be instantiated', function () {
 
         protected $fillable = ['name'];
     };
+=======
+// Modello fittizio per testare LogActivityAction
+class LogActivityActionTestModel extends Model
+{
+    protected $table = 'test_models';
+
+    protected $fillable = ['name'];
+}
+
+test('LogActivityAction can be instantiated', function () {
+    $model = new LogActivityActionTestModel;
+>>>>>>> 4b6b99016 (first commit)
     $user = User::factory()->make();
 
     $action = new LogActivityAction(
@@ -29,6 +42,7 @@ test('LogActivityAction can be instantiated', function () {
 });
 
 test('LogActivityAction can execute', function () {
+<<<<<<< HEAD
     $modelClass = get_class(new class extends Model
     {
         protected $table = 'test_models';
@@ -36,6 +50,9 @@ test('LogActivityAction can execute', function () {
         protected $fillable = ['name'];
     });
     $model = new $modelClass(['name' => 'Test']);
+=======
+    $model = new LogActivityActionTestModel(['name' => 'Test']);
+>>>>>>> 4b6b99016 (first commit)
     $user = User::factory()->create();
 
     $action = new LogActivityAction(

@@ -1,6 +1,10 @@
 # Log delle Correzioni Filament
 
+<<<<<<< HEAD
 ## Data: [DATE]
+=======
+## Data: 2024-12-19
+>>>>>>> 4b6b99016 (first commit)
 
 ### **REGOLA CRITICA IDENTIFICATA: Trait Translatable**
 

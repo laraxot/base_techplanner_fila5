@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace Modules\Gdpr\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Gdpr\Models\Consent;
 
 /**
@@ -21,6 +25,7 @@ class ConsentFactory extends Factory
 
     /**
      * Define the model's default state.
+<<<<<<< HEAD
      *
      * @return array<string, mixed>
      */
@@ -34,5 +39,11 @@ class ConsentFactory extends Factory
             'ip_address' => '127.0.0.1',
             'user_agent' => fake()->userAgent(),
         ];
+=======
+     */
+    public function definition(): array
+    {
+        return [];
+>>>>>>> 4b6b99016 (first commit)
     }
 }

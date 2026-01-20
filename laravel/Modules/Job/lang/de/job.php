@@ -20,109 +20,161 @@ return [
         'id' => [
             'label' => 'ID',
             'tooltip' => 'Eindeutige Job-Kennung',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'queue' => [
             'label' => 'Warteschlange',
             'tooltip' => 'Die Warteschlange, zu der dieser Job gehört',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'payload' => [
             'label' => 'Payload',
             'tooltip' => 'Mit dem Job verknüpfte Daten',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'attempts' => [
             'label' => 'Versuche',
             'tooltip' => 'Anzahl der Versuche, den Job auszuführen',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'reserved_at' => [
             'label' => 'Reserviert am',
             'tooltip' => 'Datum und Uhrzeit, zu der der Job reserviert wurde',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'available_at' => [
             'label' => 'Verfügbar am',
             'tooltip' => 'Datum und Uhrzeit, zu der der Job verfügbar wurde',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => 'Erstellt am',
             'tooltip' => 'Job-Erstellungsdatum',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'status' => [
             'label' => 'Status',
             'tooltip' => 'Aktueller Job-Status',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'progress' => [
             'label' => 'Fortschritt',
             'tooltip' => 'Job-Abschlussprozentsatz',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'type' => [
             'label' => 'Typ',
             'tooltip' => 'Job-Typ (z.B. Import, Export)',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'name' => [
             'label' => 'Name',
             'tooltip' => 'Job-Name',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Beschreibung',
             'tooltip' => 'Job-Beschreibung',
             'placeholder' => 'Geben Sie eine Beschreibung ein',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Job-Wächter',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'permissions' => [
             'label' => 'Berechtigungen',
             'tooltip' => 'Mit dem Job verknüpfte Berechtigungen',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'updated_at' => [
             'label' => 'Aktualisiert am',
             'tooltip' => 'Datum der letzten Job-Aktualisierung',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'first_name' => [
             'label' => 'Vorname',
             'tooltip' => 'Vorname der verantwortlichen Person',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'last_name' => [
             'label' => 'Nachname',
             'tooltip' => 'Nachname der verantwortlichen Person',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'select_all' => [
             'label' => 'Alle auswählen',
             'tooltip' => 'Alle verfügbaren Elemente auswählen',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -161,6 +213,26 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'value' => [
+            'label' => 'value',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -251,6 +323,9 @@ return [
         'notification' => 'Benachrichtigung',
         'cleanup' => 'Bereinigung',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

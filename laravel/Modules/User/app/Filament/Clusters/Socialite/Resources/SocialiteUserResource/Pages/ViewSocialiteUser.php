@@ -11,7 +11,11 @@ use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialiteUserResource;
+<<<<<<< HEAD
 use Modules\User\Filament\Resources\UserResource;
+=======
+use Modules\User\Filament\Clusters\Socialite\Resources\UserResource;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\User\Models\SocialiteUser;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -31,14 +35,22 @@ class ViewSocialiteUser extends XotBaseViewRecord
                     'user_grid' => Grid::make(2)
                         ->schema([
                             'user_name' => TextEntry::make('user.name')
+<<<<<<< HEAD
                                 ->url(function (mixed $state, ?SocialiteUser $record): ?string {
+=======
+                                ->url(function (mixed $state, ?SocialiteUser $record): string|null {
+>>>>>>> 4b6b99016 (first commit)
                                     if (null === $record) {
                                         return null;
                                     }
 
                                     $user = $record->user;
                                     if (($user instanceof Model) && $user->exists) {
+<<<<<<< HEAD
                                         return (string) UserResource::getUrl('view', ['record' => $user]);
+=======
+                                        return UserResource::getUrl('view', ['record' => $user]);
+>>>>>>> 4b6b99016 (first commit)
                                     }
 
                                     return null;
@@ -64,7 +76,11 @@ class ViewSocialiteUser extends XotBaseViewRecord
                                 ->copyable()
                                 ->copyMessage('Email copied'),
                             'avatar' => TextEntry::make('avatar')
+<<<<<<< HEAD
                                 ->url(fn (mixed $state): ?string => is_string($state) && '' !== $state ? $state : null)
+=======
+                                ->url(fn ($state) => $state)
+>>>>>>> 4b6b99016 (first commit)
                                 ->openUrlInNewTab(),
                         ]),
                 ])->columns(1),

@@ -210,5 +210,9 @@ Questo compendio fornisce un punto di partenza per navigare nella documentazione
 
 ---
 
+<<<<<<< HEAD
 *Documento creato il: 28/05/2025*  
+=======
+*Documento creato il: 28/05/2025*
+>>>>>>> 4b6b99016 (first commit)
 *Autore: Team <main module>*

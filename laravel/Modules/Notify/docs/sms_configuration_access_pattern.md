@@ -39,7 +39,11 @@ $timeout = (int) config('sms.timeout', 30);
 1. **Coerenza**: Tutte le configurazioni relative agli SMS devono provenire dal file `config/sms.php`
 2. **Modularità**: Ogni modulo gestisce le proprie configurazioni
 3. **Manutenibilità**: Facilita la manutenzione avendo un'unica fonte di verità per le configurazioni
+<<<<<<< HEAD
 4. **Standardizzazione**: Segue la struttura standardizzata documentata in [SMS_CONFIG_STRUCTURE.md](./sms_config_structure.md)
+=======
+4. **Standardizzazione**: Segue la struttura standardizzata documentata in [SMS_CONFIG_STRUCTURE.md](./SMS_CONFIG_STRUCTURE.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Checklist di Verifica
 
@@ -53,6 +57,12 @@ Per ogni azione SMS, verificare che:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Struttura della Configurazione SMS](./sms_config_structure.md)
 - [Requisiti di Configurazione Netfun](./netfun_config_requirements.md)
 - [Pattern Factory per SMS](./sms_action_factory_analysis.md)
+=======
+- [Struttura della Configurazione SMS](./SMS_CONFIG_STRUCTURE.md)
+- [Requisiti di Configurazione Netfun](./NETFUN_CONFIG_REQUIREMENTS.md)
+- [Pattern Factory per SMS](./SMS_ACTION_FACTORY_ANALYSIS.md)
+>>>>>>> 4b6b99016 (first commit)

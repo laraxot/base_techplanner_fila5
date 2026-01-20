@@ -4,19 +4,33 @@ declare(strict_types=1);
 
 use Illuminate\Support\Collection;
 use Modules\Geo\Actions\OptimizeRouteAction;
+<<<<<<< HEAD
 use Modules\Geo\Contracts\CalculateDistanceActionContract;
+=======
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Geo\Datas\LocationData;
 use Modules\Geo\Tests\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
+=======
+beforeEach(function () {
+    // Create a test double without using readonly class directly
+});
+
+>>>>>>> 4b6b99016 (first commit)
 it('returns same locations when count is 2 or less', function (): void {
     $location1 = new LocationData(latitude: 45.4642, longitude: 9.1900);
     $location2 = new LocationData(latitude: 46.4642, longitude: 10.1900);
 
     // Test with single location
     $singleCollection = collect([$location1]);
+<<<<<<< HEAD
     $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
+=======
+    $calculateDistance = Mockery::mock('alias:CalculateDistanceActionMock1');
+>>>>>>> 4b6b99016 (first commit)
     $action = new OptimizeRouteAction($calculateDistance);
 
     $result = $action->execute($singleCollection);
@@ -38,7 +52,11 @@ it('optimizes route for three locations', function (): void {
 
     $locations = collect([$locationA, $locationC, $locationB]); // Initial order: A, C, B
 
+<<<<<<< HEAD
     $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
+=======
+    $calculateDistance = Mockery::mock('alias:CalculateDistanceActionMock2');
+>>>>>>> 4b6b99016 (first commit)
 
     // Mock distances: A to B is shorter than A to C
     $calculateDistance->shouldReceive('execute')
@@ -64,7 +82,11 @@ it('optimizes route for three locations', function (): void {
 });
 
 it('handles empty collection', function (): void {
+<<<<<<< HEAD
     $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
+=======
+    $calculateDistance = Mockery::mock('alias:CalculateDistanceActionMock3');
+>>>>>>> 4b6b99016 (first commit)
     $action = new OptimizeRouteAction($calculateDistance);
 
     $result = $action->execute(collect([]));
@@ -80,7 +102,11 @@ it('handles route optimization with multiple locations', function (): void {
 
     $locations = collect([$locationA, $locationD, $locationB, $locationC]); // A, D, B, C
 
+<<<<<<< HEAD
     $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
+=======
+    $calculateDistance = Mockery::mock('alias:CalculateDistanceActionMock4');
+>>>>>>> 4b6b99016 (first commit)
 
     // Mock distances: each location is closer to the next in sequence
     $calculateDistance->shouldReceive('execute')
@@ -119,7 +145,11 @@ it('stops optimization when no more locations remain', function (): void {
 
     $locations = collect([$locationA, $locationB]);
 
+<<<<<<< HEAD
     $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
+=======
+    $calculateDistance = Mockery::mock('alias:CalculateDistanceActionMock5');
+>>>>>>> 4b6b99016 (first commit)
     $calculateDistance->shouldReceive('execute')
         ->andReturn(['distance' => ['value' => 1000]]);
 
@@ -138,7 +168,11 @@ it('correctly calculates nearest location', function (): void {
 
     $locations = collect([$locationA, $locationC, $locationB]);
 
+<<<<<<< HEAD
     $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
+=======
+    $calculateDistance = Mockery::mock('alias:CalculateDistanceActionMock6');
+>>>>>>> 4b6b99016 (first commit)
 
     // A to B is closer than A to C
     $calculateDistance->shouldReceive('execute')
@@ -147,10 +181,13 @@ it('correctly calculates nearest location', function (): void {
     $calculateDistance->shouldReceive('execute')
         ->with($locationA, $locationB)
         ->andReturn(['distance' => ['value' => 15000]]);
+<<<<<<< HEAD
     // B to C is called after B is selected as nearest
     $calculateDistance->shouldReceive('execute')
         ->with($locationB, $locationC)
         ->andReturn(['distance' => ['value' => 250000]]);
+=======
+>>>>>>> 4b6b99016 (first commit)
 
     $action = new OptimizeRouteAction($calculateDistance);
     $result = $action->execute($locations);

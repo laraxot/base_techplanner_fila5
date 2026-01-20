@@ -71,7 +71,11 @@ class GetAllIconsAction
 
                 foreach ($files as $file) {
                     // Type narrowing per SplFileInfo
+<<<<<<< HEAD
                     if (! $file instanceof \SplFileInfo) {
+=======
+                    if (! ($file instanceof \SplFileInfo)) {
+>>>>>>> 4b6b99016 (first commit)
                         continue;
                     }
 

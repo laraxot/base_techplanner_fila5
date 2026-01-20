@@ -48,6 +48,12 @@
 - [Best Practices Sicurezza](../../BEST-PRACTICES.md#security)
 - [Linee Guida Sicurezza](../../security/guidelines.md)
 ## Collegamenti tra versioni di status.md
+<<<<<<< HEAD
 * [status.md](../../../xot/docs/roadmap/docs/status.md)
 * [status.md](../../../xot/docs/roadmap/testing/status.md)
 * [status.md](../../../xot/docs/roadmap/security/status.md)
+=======
+* [status.md](../../../Xot/docs/roadmap/docs/status.md)
+* [status.md](../../../Xot/docs/roadmap/testing/status.md)
+* [status.md](../../../Xot/docs/roadmap/security/status.md)
+>>>>>>> 4b6b99016 (first commit)

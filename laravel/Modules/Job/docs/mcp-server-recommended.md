@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)
 # MCP Server Consigliati per il Modulo Job
 
 ## Scopo del Modulo

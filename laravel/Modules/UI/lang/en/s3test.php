@@ -13,15 +13,21 @@ return [
             'label' => 'Test File',
             'placeholder' => 'Upload a file to test S3',
             'helper_text' => 'File will be uploaded to S3 to test configuration',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'debug_output' => [
             'label' => 'Debug Results',
             'placeholder' => 'Test results will appear here',
             'helper_text' => 'Detailed output of AWS configuration tests',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -91,6 +97,7 @@ return [
         'complete' => '✅ Complete',
         'incomplete' => '❌ Incomplete',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -100,4 +107,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

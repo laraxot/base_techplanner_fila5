@@ -1,5 +1,9 @@
 # Troubleshooting: Livewire 404 Error
 
+<<<<<<< HEAD
+=======
+**Data**: 11 Novembre 2025
+>>>>>>> 4b6b99016 (first commit)
 **Errore**: `404 Not Found` su `/livewire/update`
 
 ## 🔍 Problema

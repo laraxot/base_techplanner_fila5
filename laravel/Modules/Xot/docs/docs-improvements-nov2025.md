@@ -155,7 +155,11 @@ docs/
 
 ### Tra moduli (Xot → User)
 ```markdown
+<<<<<<< HEAD
 [user docs](../../user/docs/user-guide.md)
+=======
+[user docs](../../User/docs/user-guide.md)
+>>>>>>> 4b6b99016 (first commit)
 ```
 
 ### All'interno dello stesso modulo

@@ -102,9 +102,17 @@ TextColumn::make('name')
 
 ## 📚 Riferimenti
 
+<<<<<<< HEAD
 - [Filament 4 Migration Guide](../../xot/docs/filament-4-migration-guide.md)
+=======
+- [Filament 4 Migration Guide](../../Xot/docs/filament-4-migration-guide.md)
+>>>>>>> 4b6b99016 (first commit)
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-22*
+>>>>>>> 4b6b99016 (first commit)

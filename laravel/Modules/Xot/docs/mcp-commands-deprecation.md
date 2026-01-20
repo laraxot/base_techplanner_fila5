@@ -139,3 +139,7 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> 4b6b99016 (first commit)

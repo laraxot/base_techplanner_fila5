@@ -19,8 +19,11 @@ return [
         'id' => [
             'label' => 'आईडी',
             'helper_text' => 'टेम्पलेट की विशिष्ट पहचान',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'mailable' => [
             'label' => 'मेलेबल क्लास',
@@ -28,7 +31,10 @@ return [
             'help' => 'ईमेल भेजने वाला PHP क्लास',
             'helper_text' => 'ईमेल भेजने का PHP क्लास',
             'description' => 'मेलेबल',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'subject' => [
             'label' => 'विषय',
@@ -36,7 +42,10 @@ return [
             'help' => 'ईमेल में दिखाई देने वाला विषय',
             'helper_text' => 'ईमेल विषय',
             'description' => 'विषय',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'html_template' => [
             'label' => 'HTML सामग्री',
@@ -44,7 +53,10 @@ return [
             'help' => 'HTML प्रारूप में ईमेल सामग्री',
             'helper_text' => 'ईमेल टेम्पलेट की HTML सामग्री',
             'description' => 'HTML टेम्पलेट',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'text_template' => [
             'label' => 'पाठ सामग्री',
@@ -52,57 +64,82 @@ return [
             'help' => 'HTML का समर्थन नहीं करने वाले क्लाइंट्स के लिए पाठ संस्करण',
             'helper_text' => 'ईमेल टेम्पलेट का पाठ संस्करण',
             'description' => 'पाठ टेम्पलेट',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'version' => [
             'label' => 'संस्करण',
             'help' => 'टेम्पलेट संस्करण संख्या',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => 'बनाया गया',
             'helper_text' => 'टेम्पलेट बनाने की तारीख',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'updated_at' => [
             'label' => 'अंतिम संशोधन',
             'helper_text' => 'टेम्पलेट अंतिम संशोधन की तारीख',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'from_email' => [
             'label' => 'प्रेषक ईमेल',
             'helper_text' => 'प्रेषक का ईमेल पता',
             'placeholder' => 'noreply@example.com',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'from_name' => [
             'label' => 'प्रेषक का नाम',
             'helper_text' => 'प्रदर्शित प्रेषक का नाम',
             'placeholder' => 'कंपनी का नाम',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'variables' => [
             'label' => 'उपलब्ध चर',
             'helper_text' => 'टेम्पलेट में उपयोग किए जा सकने वाले चरों की सूची',
             'placeholder' => 'उदा: {{name}}, {{email}}',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_markdown' => [
             'label' => 'मार्कडाउन उपयोग करें',
             'helper_text' => 'बताता है कि क्या टेम्पलेट मार्कडाउन वाक्य रचना का उपयोग करता है',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'status' => [
             'label' => 'स्थिति',
             'helper_text' => 'टेम्पलेट की वर्तमान स्थिति',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
@@ -141,27 +178,56 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'कॉलम टॉगल करें',
+        ],
+        'reorderRecords' => [
+            'label' => 'रिकॉर्ड पुनः क्रमित करें',
+        ],
+        'resetFilters' => [
+            'label' => 'फ़िल्टर रीसेट करें',
+        ],
+        'applyFilters' => [
+            'label' => 'फ़िल्टर लागू करें',
+        ],
+        'openFilters' => [
+            'label' => 'फ़िल्टर खोलें',
+        ],
+        'layout' => [
+            'label' => 'लेआउट',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'slug' => [
             'label' => 'स्लग',
             'description' => 'स्लग',
             'helper_text' => 'स्लग',
             'placeholder' => 'स्लग',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'name' => [
             'description' => 'टेम्पलेट का नाम',
             'helper_text' => 'टेम्पलेट को पहचानने के लिए वर्णनात्मक नाम',
             'placeholder' => 'उदा: स्वागत, आदेश पुष्टि, पासवर्ड रीसेट',
             'label' => 'टेम्पलेट का नाम',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'params' => [
             'label' => 'पैरामीटर्स',
             'helper_text' => 'टेम्पलेट में उपयोग किए जा सकने वाले पैरामीटर अल्पविराम से अलग करके दर्ज करें',
             'placeholder' => 'name, email, date, company',
             'description' => 'ईमेल टेम्पलेट के लिए उपलब्ध पैरामीटर्स',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'filters' => [
@@ -291,6 +357,9 @@ return [
     'model' => [
         'label' => 'ईमेल टेम्पलेट',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

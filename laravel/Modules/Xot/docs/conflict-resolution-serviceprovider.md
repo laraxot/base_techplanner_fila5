@@ -25,11 +25,21 @@ Questa scelta garantisce:
 - Possibile refactor per la registrazione di risorse custom
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Struttura moduli Xot](./module_namespace_rules.md)
 - [Best Practices Provider](./best-practices.md)
+=======
+- [Struttura moduli Xot](./MODULE_NAMESPACE_RULES.md)
+- [Best Practices Provider](./BEST-PRACTICES.md)
+>>>>>>> 4b6b99016 (first commit)
 - [docs/links.md globale](../../../../docs/links.md)
 
 ## Backlink
 - [docs/links.md](../../../../docs/links.md)
+<<<<<<< HEAD
 - [docs/MODULE_NAMESPACE_RULES.md](./module_namespace_rules.md)
 - [docs/BEST-PRACTICES.md](./best-practices.md)
+=======
+- [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
+- [docs/BEST-PRACTICES.md](./BEST-PRACTICES.md)
+>>>>>>> 4b6b99016 (first commit)

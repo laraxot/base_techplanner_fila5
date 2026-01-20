@@ -243,10 +243,17 @@ if (inAdmin()) { }
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [Xot Helper Functions](../../xot/docs/helpers.md)
 - [Xot RouteService](../../Xot/app/Services/RouteService.php)
 - [Xot GetAllModelsByModuleNameAction](../../Xot/app/Actions/Model/GetAllModelsByModuleNameAction.php)
 - [Helper Architecture Analysis](../../xot/docs/helpers-architecture-analysis.md)
+=======
+- [Xot Helper Functions](../../Xot/docs/helpers.md)
+- [Xot RouteService](../../Xot/app/Services/RouteService.php)
+- [Xot GetAllModelsByModuleNameAction](../../Xot/app/Actions/Model/GetAllModelsByModuleNameAction.php)
+- [Helper Architecture Analysis](../../Xot/docs/helpers-architecture-analysis.md)
+>>>>>>> 4b6b99016 (first commit)
 - [nwidart/laravel-modules GitHub](https://github.com/nWidart/laravel-modules)
 
 ---

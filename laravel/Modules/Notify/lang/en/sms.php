@@ -23,22 +23,31 @@ return [
             'label' => 'Phone Number',
             'placeholder' => 'Enter phone number',
             'helper_text' => 'Enter phone number with international prefix (e.g. +1)',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'message' => [
             'label' => 'Message',
             'placeholder' => 'Enter message',
             'helper_text' => 'Message cannot exceed 160 characters',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'driver' => [
             'label' => 'SMS Provider',
             'placeholder' => 'Select SMS provider',
             'helper_text' => 'Select the SMS provider to use',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'drivers' => [
@@ -57,6 +66,9 @@ return [
         'success' => 'SMS sent successfully',
         'error' => 'An error occurred while sending the SMS',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

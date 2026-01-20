@@ -11,6 +11,7 @@ return [
         'english' => 'Inglese',
         'german' => 'Tedesco',
     ],
+<<<<<<< HEAD
     'label' => 'Widgets',
     'plural_label' => 'Widgets (Plurale)',
     'navigation' => [
@@ -55,4 +56,6 @@ return [
             'label' => 'Elimina Widgets',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

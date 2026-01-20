@@ -102,6 +102,7 @@ return [
         'updated_at' => 'Aggiornato il',
         'deleted_at' => 'Eliminato il',
     ],
+<<<<<<< HEAD
     'label' => 'Panel',
     'plural_label' => 'Panel (Plurale)',
     'fields' => [
@@ -124,4 +125,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

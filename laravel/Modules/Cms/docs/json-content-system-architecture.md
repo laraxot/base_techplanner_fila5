@@ -1,6 +1,10 @@
 # JSON Content System Architecture - CMS Module
 
+<<<<<<< HEAD
 ## Data: [DATE]
+=======
+## Data: 2026-01-08
+>>>>>>> 4b6b99016 (first commit)
 ## Metodologia: Super Mucca - La Litigata Interna
 ## File: `Modules/Cms/app/View/Components/Section.php` e `config/local/laravelpizza/database/content/`
 
@@ -247,6 +251,10 @@ $blocks = SectionModel::getBlocksBySlug($this->slug); // Carica blocchi da JSON
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-08
+>>>>>>> 4b6b99016 (first commit)
 **Versione**: 1.0.0
 **Status**: ✅ Completato

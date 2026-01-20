@@ -8,6 +8,7 @@ return [
             'label' => 'edit',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'View Translation File',
     'plural_label' => 'View Translation File (Plurale)',
     'navigation' => [
@@ -41,4 +42,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

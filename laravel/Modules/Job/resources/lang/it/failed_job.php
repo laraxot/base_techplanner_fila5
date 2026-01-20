@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -47,6 +48,23 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'connection' => [
+            'label' => 'Connessione',
+        ],
+        'queue' => [
+            'label' => 'Coda',
+        ],
+        'payload' => [
+            'label' => 'Contenuto',
+        ],
+        'exception' => [
+            'label' => 'Eccezione',
+        ],
+        'failed_at' => [
+            'label' => 'Fallito il',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -57,4 +75,8 @@ return [
             'label' => 'Elimina',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

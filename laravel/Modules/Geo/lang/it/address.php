@@ -32,7 +32,10 @@ return [
             'help' => 'Tipo di modello associato all\'indirizzo',
             'description' => 'Tipo del modello che possiede questo indirizzo',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'model_id' => [
             'label' => 'ID modello',
@@ -40,7 +43,10 @@ return [
             'help' => 'Identificativo del modello associato',
             'description' => 'ID del modello che possiede questo indirizzo',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'name' => [
             'label' => 'Nome',
@@ -48,7 +54,10 @@ return [
             'help' => 'Un nome identificativo per questo indirizzo, es. "Casa" o "Ufficio"',
             'helper_text' => '',
             'description' => 'Nome identificativo dell\'indirizzo',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Descrizione',
@@ -56,7 +65,10 @@ return [
             'help' => 'Note aggiuntive sull\'indirizzo',
             'description' => 'Descrizione aggiuntiva dell\'indirizzo',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'route' => [
             'label' => 'Via',
@@ -64,7 +76,10 @@ return [
             'help' => 'Nome della via o strada',
             'description' => 'Nome della via o strada',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'street_number' => [
             'label' => 'Numero civico',
@@ -72,7 +87,10 @@ return [
             'help' => 'Numero civico dell\'edificio',
             'description' => 'Numero civico dell\'edificio',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'locality' => [
             'label' => 'Città',
@@ -80,7 +98,10 @@ return [
             'help' => 'Nome della città o località',
             'description' => 'Nome della città o località',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'administrative_area_level_3' => [
             'label' => 'Comune',
@@ -88,7 +109,10 @@ return [
             'help' => 'Comune di appartenenza',
             'description' => 'Comune di appartenenza',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'administrative_area_level_2' => [
             'label' => 'Provincia',
@@ -96,7 +120,10 @@ return [
             'help' => 'Provincia di appartenenza',
             'description' => 'Provincia di appartenenza',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'administrative_area_level_1' => [
             'label' => 'Regione',
@@ -104,7 +131,10 @@ return [
             'help' => 'Regione amministrativa',
             'description' => 'Regione di appartenenza',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'country' => [
             'label' => 'Paese',
@@ -112,7 +142,10 @@ return [
             'help' => 'Paese di appartenenza',
             'description' => 'Paese di appartenenza',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'postal_code' => [
             'label' => 'CAP',
@@ -120,7 +153,10 @@ return [
             'help' => 'Codice di avviamento postale',
             'description' => 'Codice di avviamento postale',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'formatted_address' => [
             'label' => 'Indirizzo formattato',
@@ -128,7 +164,10 @@ return [
             'help' => 'Indirizzo completo formattato',
             'description' => 'Indirizzo completo formattato',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'place_id' => [
             'label' => 'ID luogo',
@@ -136,7 +175,10 @@ return [
             'help' => 'Identificativo Google Maps del luogo',
             'description' => 'Identificativo Google Maps del luogo',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'latitude' => [
             'label' => 'Latitudine',
@@ -144,7 +186,10 @@ return [
             'help' => 'Coordinate geografiche latitudine',
             'description' => 'Coordinate geografiche latitudine',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'longitude' => [
             'label' => 'Longitudine',
@@ -152,12 +197,19 @@ return [
             'help' => 'Coordinate geografiche longitudine',
             'description' => 'Coordinate geografiche longitudine',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'type' => [
             'label' => 'Tipo',
             'placeholder' => 'Seleziona il tipo di indirizzo',
+<<<<<<< HEAD
             'help' => 'Tipo di indirizzo (casa, lavoro, ecc.]',
+=======
+            'help' => 'Tipo di indirizzo (casa, lavoro, ecc.)',
+>>>>>>> 4b6b99016 (first commit)
             'description' => 'Tipo di indirizzo',
             'helper_text' => '',
             'options' => [
@@ -167,7 +219,10 @@ return [
                 'work' => 'Lavoro',
                 'other' => 'Altro',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_primary' => [
             'label' => 'Principale',
@@ -175,7 +230,10 @@ return [
             'description' => 'Indirizzo principale',
             'helper_text' => '',
             'placeholder' => 'Imposta come principale',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'extra_data' => [
             'label' => 'Dati aggiuntivi',
@@ -183,7 +241,10 @@ return [
             'help' => 'Informazioni aggiuntive sull\'indirizzo',
             'description' => 'Dati aggiuntivi dell\'indirizzo',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'full_address' => [
             'label' => 'Indirizzo completo',
@@ -191,7 +252,10 @@ return [
             'help' => 'Indirizzo completo formattato',
             'description' => 'Indirizzo completo formattato',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'street_address' => [
             'label' => 'Indirizzo stradale',
@@ -199,7 +263,10 @@ return [
             'help' => 'Indirizzo stradale completo',
             'description' => 'Indirizzo stradale completo',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'map' => [
             'label' => 'Mappa',
@@ -207,7 +274,10 @@ return [
             'help' => 'Visualizzazione su mappa',
             'description' => 'Visualizzazione su mappa',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'cap' => [
             'label' => 'CAP',
@@ -215,7 +285,10 @@ return [
             'help' => 'Codice di Avviamento Postale',
             'description' => 'Codice di Avviamento Postale',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'region' => [
             'label' => 'Regione',
@@ -223,7 +296,10 @@ return [
             'help' => 'Regione di appartenenza',
             'description' => 'Regione di appartenenza',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'province' => [
             'label' => 'Provincia',
@@ -231,7 +307,10 @@ return [
             'help' => 'Provincia di appartenenza',
             'description' => 'Provincia di appartenenza',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'fax' => [
             'label' => 'Fax',
@@ -239,7 +318,10 @@ return [
             'help' => 'Numero di fax',
             'description' => 'Numero di fax',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'mobile' => [
             'label' => 'Cellulare',
@@ -247,7 +329,10 @@ return [
             'help' => 'Numero di cellulare',
             'description' => 'Numero di cellulare',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'pec' => [
             'label' => 'PEC',
@@ -255,7 +340,10 @@ return [
             'help' => 'Posta Elettronica Certificata',
             'description' => 'Indirizzo di Posta Elettronica Certificata',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'whatsapp' => [
             'label' => 'WhatsApp',
@@ -263,7 +351,10 @@ return [
             'help' => 'Numero di telefono WhatsApp',
             'description' => 'Numero di telefono WhatsApp',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'email' => [
             'label' => 'Email',
@@ -271,7 +362,10 @@ return [
             'help' => 'Indirizzo email',
             'description' => 'Indirizzo email',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'notes' => [
             'label' => 'Note',
@@ -279,7 +373,10 @@ return [
             'help' => 'Note aggiuntive per l\'indirizzo',
             'description' => 'Note aggiuntive',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'columns' => [
@@ -431,6 +528,9 @@ return [
             'description' => 'postal_code',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Address',
     'plural_label' => 'Address (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

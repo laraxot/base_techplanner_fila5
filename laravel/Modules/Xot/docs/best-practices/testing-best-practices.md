@@ -220,14 +220,24 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 
 ## 🔗 **Related Documentation**
 
+<<<<<<< HEAD
 - [Widget Test Patterns](../cms/docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../cms/docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](xotdata_testing.md)
+=======
+- [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
+- [Architecture Separation Rules](../Cms/docs/tests/architecture-separation-rules.md)
+- [XotData Testing Strategy](XOTDATA_TESTING.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 
 **Status**: ✅ Best Practices Validate  
 **Enforcement**: Obbligatorio per tutti i test  
+<<<<<<< HEAD
+=======
+**Version**: 1.0 - Gold Standard
+>>>>>>> 4b6b99016 (first commit)
 **Last Update**: Dicembre 2024 
 ### Esempio unit test semplice
 ```php
@@ -283,5 +293,9 @@ function mockXotData(): void
 - Architecture Separation Rules (Cms)
 - XotData Testing Strategy (XOTDATA_TESTING.md)
 
+<<<<<<< HEAD
+=======
+Status: Best Practices consolidate — Last Update: Dicembre 2024
+>>>>>>> 4b6b99016 (first commit)
 
 

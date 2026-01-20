@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\AuthenticationFactory;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 
@@ -47,6 +51,11 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  *
  * @mixin IdeHelperAuthentication
  *
+<<<<<<< HEAD
+=======
+ * @method static AuthenticationFactory factory($count = null, $state = [])
+ *
+>>>>>>> 4b6b99016 (first commit)
  * @property Model|\Eloquent      $authenticatable
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter

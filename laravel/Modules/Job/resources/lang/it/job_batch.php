@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -65,6 +66,32 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'name' => [
+            'label' => 'Nome',
+        ],
+        'total_jobs' => [
+            'label' => 'Lavori totali',
+        ],
+        'pending_jobs' => [
+            'label' => 'Lavori in sospeso',
+        ],
+        'failed_jobs' => [
+            'label' => 'Lavori falliti',
+        ],
+        'failed_job_ids' => [
+            'label' => 'ID lavori falliti',
+        ],
+        'options' => [
+            'label' => 'Opzioni',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
+        'finished_at' => [
+            'label' => 'Completato il',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -75,4 +102,8 @@ return [
             'label' => 'Annulla',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

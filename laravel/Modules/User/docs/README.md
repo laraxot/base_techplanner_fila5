@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Module Documentation
 
 This directory contains the documentation for the User module.
@@ -19,6 +20,32 @@ The purpose of this documentation is to provide comprehensive information about 
     - `troubleshooting.md`
 
 ## Contribution
+=======
+# User Module - Authentication & Authorization
+
+**Last Update**: 2025-12-05
+**Status**: ✅ Production Ready
+**PHPStan Level**: 10
+**Maintainers**: Laraxot Team
+
+---
+
+## 📋 Table of Contents
+
+- [Business Overview](#-business-overview)
+- [Architecture](#-architecture)
+- [Core Components](#-core-components)
+- [Quick Start](#-quick-start)
+- [Development Guide](#-development-guide)
+- [Security](#-security)
+- [API & Integration](#-api--integration)
+- [Testing](#-testing)
+- [Documentation Index](#-documentation-index)
+
+---
+
+## 🏆 PHPStan Level 10 Compliance
+>>>>>>> 4b6b99016 (first commit)
 
 **Status**: ✅ **0 Errori** (10 → 0)
 **Data Achievement**: Dicembre 15, 2025
@@ -84,7 +111,11 @@ public function getMobileDeviceTokens(): Collection
 
 ### Documentazione Correlata
 - [PHPStan Level 10 Success](../../../docs/phpstan-level-10-success.md) - Achievement generale progetto
+<<<<<<< HEAD
 - [Xot PHPStan Patterns](../../xot/docs/phpstan-patterns-dec-2025.md) - Pattern comuni
+=======
+- [Xot PHPStan Patterns](../../Xot/docs/phpstan-patterns-dec-2025.md) - Pattern comuni
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 
@@ -412,6 +443,78 @@ $user->revokeDevice($deviceId);
 - User assignment to tenants
 - Tenant isolation settings
 
+<<<<<<< HEAD
+=======
+=======
+
+**Features**:
+- User creation and editing
+- Role and permission assignment
+- Profile management
+- Password management
+- Team membership management
+- Account status management
+
+**Permissions Required**:
+- `view_user`: View user list
+- `create_user`: Create new users
+- `edit_user`: Edit existing users
+- `delete_user`: Delete users
+
+#### RoleResource
+**Purpose**: Role management interface
+
+**Features**:
+- Role creation and editing
+- Permission assignment
+- User assignment to roles
+- Role hierarchy management
+
+#### PermissionResource
+**Purpose**: Permission management interface
+
+**Features**:
+- Permission creation
+- Permission grouping
+- Role assignment
+
+#### TeamResource
+**Purpose**: Team management interface
+
+**Features**:
+- Team creation and editing
+- Member management
+- Team invitations
+- Team permissions
+
+#### TenantResource
+**Purpose**: Tenant management interface
+- **User**: `UserResource` (model dinamico via `XotData::getUserClass()`)
+- **Profile**: `ProfileResource`
+- **Team**: `TeamResource` (model dinamico via `XotData::getTeamClass()`)
+- **Tenant**: `TenantResource` (model dinamico via `XotData::getTenantClass()`)
+- **Role**: `RoleResource`
+- **Permission**: `PermissionResource`
+- **AuthenticationLog**: `AuthenticationLogResource`
+- **SocialProvider**: `SocialProviderResource`
+- **SocialiteUser**: `SocialiteUserResource`
+- **Device**: `DeviceResource`
+- **Feature**: `FeatureResource`
+- **PasswordReset**: `PasswordResetResource`
+- **OAuth**:
+  - `ClientResource` (Passport client model)
+  - `OauthAccessTokenResource`
+  - `OauthAuthCodeResource`
+  - `OauthRefreshTokenResource`
+- **SSO**: `SsoProviderResource`
+
+**Features**:
+- Tenant creation and configuration
+- User assignment to tenants
+- Tenant isolation settings
+
+>>>>>>> 2880e04a (.)
+>>>>>>> 4b6b99016 (first commit)
 ### Widgets & Pages
 
 #### LoginWidget
@@ -443,13 +546,29 @@ $user->revokeDevice($deviceId);
 
 #### EditProfile Page
 **Purpose**: User profile editing interface
+<<<<<<< HEAD
 - ✅ **Docs**: Risolti conflitti Git nella cartella `docs/`
 - ✅ **EditProfile.php**: Rimossi marker Git
+=======
+=======
+=======
+#### EditProfile Page
+**Purpose**: User profile editing interface
+>>>>>>> 2880e04a (.)
+- ✅ **Docs**: Risolti conflitti Git nella cartella `docs/`
+
+- ✅ **EditProfile.php**: Rimossi marker Git
+
+>>>>>>> 4b6b99016 (first commit)
 - ✅ **PasswordResetConfirmWidget.php**:
   - Rimossi import duplicati
   - Corrette proprietà duplicate
   - Fixato metodo `confirmPasswordReset()` con if duplicati
   - Corretta logica auto-login dopo reset password
+<<<<<<< HEAD
+=======
+>>>>>>> 32e772a8 (.)
+>>>>>>> 4b6b99016 (first commit)
 
 **Features**:
 - Personal information editing
@@ -558,15 +677,31 @@ return [
     'user_model' => \Modules\User\Models\User::class,
     // Profile configuration
     'profile_model' => \Modules\User\Models\Profile::class,
+<<<<<<< HEAD
 
 #### Architettura e Filosofia
 - [Filosofia Modulo User](./filosofia_modulo_user.md) - Logica, politica, business logic, filosofia, zen
 - [Service Provider Architecture](./service_provider_architecture.md) - Module Pattern, DRY, Separation of Concerns
 - [Passport Integration](./passport_integration.md) - Laravel Passport integrazione completa, filosofia, best practices
+=======
+=======
+=======
+    // Profile configuration
+    'profile_model' => \Modules\User\Models\Profile::class,
+>>>>>>> 2880e04a (.)
+#### Architettura e Filosofia
+- [Filosofia Modulo User](./FILOSOFIA_MODULO_USER.md) - Logica, politica, business logic, filosofia, zen
+- [Service Provider Architecture](./SERVICE_PROVIDER_ARCHITECTURE.md) - Module Pattern, DRY, Separation of Concerns
+- [Passport Integration](./PASSPORT_INTEGRATION.md) - Laravel Passport integrazione completa, filosofia, best practices
+>>>>>>> 4b6b99016 (first commit)
 
 #### Guide Tecniche
 - [Troubleshooting Login Component](./troubleshooting-login-component.md)
 - [Filament Filters and Widgets](./filament-filters-and-widgets.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 32e772a8 (.)
+>>>>>>> 4b6b99016 (first commit)
 
     // Authentication configuration
     'auth' => [
@@ -1068,7 +1203,11 @@ test('user can switch teams', function () {
 - **Fixed**: File locking pattern implementation
 - **Improved**: Security alert widgets
 
+<<<<<<< HEAD
 See [CHANGELOG.md](./changelog.md) for full history.
+=======
+See [CHANGELOG.md](./CHANGELOG.md) for full history.
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 
@@ -1086,13 +1225,18 @@ See [CHANGELOG.md](./changelog.md) for full history.
 - Social login enhancements
 - Advanced audit reporting
 
+<<<<<<< HEAD
 See [ROADMAP.md](./roadmap.md) for details.
+=======
+See [ROADMAP.md](./ROADMAP.md) for details.
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 
 ## 📖 Related Documentation
 
 ### Internal Modules
+<<<<<<< HEAD
 - [Xot Module](../xot/docs/readme.md) - Core foundation
 - [Activity Module](../activity/docs/readme.md) - Activity tracking
 - [Lang Module](../lang/docs/readme.md) - Translations
@@ -1108,6 +1252,17 @@ See [ROADMAP.md](./roadmap.md) for details.
 ### CI & Semantic Versioning
 Workflow locale del modulo in `.github/workflows/semantic-versioning.yml`.
 
+=======
+- [Xot Module](../Xot/docs/README.md) - Core foundation
+- [Activity Module](../Activity/docs/README.md) - Activity tracking
+- [Lang Module](../Lang/docs/README.md) - Translations
+- [Tenant Module](../Tenant/docs/README.md) - Enhanced tenancy
+
+### Project Documentation
+- [CLAUDE.md](../../../CLAUDE.md) - Project architecture
+- [Security Guidelines](../../../docs/security.md)
+
+>>>>>>> 4b6b99016 (first commit)
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)
 - [Laravel Authorization](https://laravel.com/docs/12.x/authorization)
@@ -1123,6 +1278,7 @@ Workflow locale del modulo in `.github/workflows/semantic-versioning.yml`.
 **PHPStan**: Level 10 ✅
 **Test Coverage**: 88%+ ✅
 **Security**: OWASP Compliant ✅
+<<<<<<< HEAD
 
 ## 🚀 Release su GitHub
 Le release sono basate su tag Git e possono includere release notes generate automaticamente.
@@ -1134,3 +1290,5 @@ Workflow locale: `.github/workflows/release.yml`.
 **License:** MIT
 
 Developers are encouraged to contribute to this documentation to keep it accurate and up-to-date.
+=======
+>>>>>>> 4b6b99016 (first commit)

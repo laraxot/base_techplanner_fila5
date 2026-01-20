@@ -1,6 +1,10 @@
 # Regola Critica: NO Services - Solo Spatie QueueableActions
 
+<<<<<<< HEAD
 **Data Creazione**: [DATE]
+=======
+**Data Creazione**: 2025-01-18
+>>>>>>> 4b6b99016 (first commit)
 **Status**: Regola Fondamentale Laraxot
 **Priorità**: CRITICA - Mai Violare
 
@@ -241,6 +245,7 @@ Prima di ogni commit, verifica:
 ---
 
 **Filosofia**: Le Actions sono unità atomiche di business logic, riutilizzabili, testabili e queueable. I Services creano accoppiamento e violano il principio di responsabilità singola.
+<<<<<<< HEAD
 
 ---
 
@@ -343,3 +348,5 @@ class Simple02ChartWidget extends XotBaseChartWidget
 - `Simple11ChartWidget.php` → Self-contained
 - `Simple13ChartWidget.php` → Self-contained
 - `Simple20ChartWidget.php` → Self-contained
+=======
+>>>>>>> 4b6b99016 (first commit)

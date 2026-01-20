@@ -176,10 +176,18 @@ return [
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [**README Modulo UI**](../readme.md)
+=======
+- [**README Modulo UI**](../README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [**Sistema Layout**](../layout/layout-system.md)
 - [**Gestione Asset**](../assets/asset-management.md)
 - [**Personalizzazioni Filament**](../filament/filament-customizations.md)
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 4b6b99016 (first commit)

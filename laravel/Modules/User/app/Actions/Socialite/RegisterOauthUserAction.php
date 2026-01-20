@@ -8,8 +8,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite;
 
+<<<<<<< HEAD
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Database\DatabaseManager;
+=======
+use Illuminate\Support\Facades\DB;
+>>>>>>> 4b6b99016 (first commit)
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Events\Registered;
 use Modules\User\Models\SocialiteUser;
@@ -21,8 +25,12 @@ class RegisterOauthUserAction
 
     public function execute(string $provider, SocialiteUserContract $oauthUser): SocialiteUser
     {
+<<<<<<< HEAD
         /** @var SocialiteUser $socialiteUser */
         $socialiteUser = app(DatabaseManager::class)->transaction(static function () use ($provider, $oauthUser): SocialiteUser {
+=======
+        $socialiteUser = DB::transaction(static function () use ($provider, $oauthUser) {
+>>>>>>> 4b6b99016 (first commit)
             // Create a user
             $user = app(CreateUserAction::class)->execute(
                 provider: $provider,
@@ -37,7 +45,11 @@ class RegisterOauthUserAction
             );
         });
         // Dispatch the registered event
+<<<<<<< HEAD
         app(Dispatcher::class)->dispatch(new Registered($socialiteUser));
+=======
+        Registered::dispatch($socialiteUser);
+>>>>>>> 4b6b99016 (first commit)
 
         // Login the user
         // return app(LoginUserAction::class)->execute($socialiteUser);

@@ -47,4 +47,8 @@ return [
         'no_show' => 'Non presentato',
         'rescheduled' => 'Riprogrammato',
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

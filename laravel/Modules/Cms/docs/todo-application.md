@@ -144,6 +144,7 @@ $clearCompleted = function () {
         <!-- Form Aggiunta Todo -->
         <form wire:submit="addTodo" class="mb-6">
             <div class="flex gap-2">
+<<<<<<< HEAD
                 <input 
                     type="text" 
                     wire:model="description" 
@@ -151,32 +152,57 @@ $clearCompleted = function () {
                     class="flex-1 px-4 py-2 border rounded"
                 >
                 <button 
+=======
+                <input
+                    type="text"
+                    wire:model="description"
+                    placeholder="Cosa devi fare?"
+                    class="flex-1 px-4 py-2 border rounded"
+                >
+                <button
+>>>>>>> 4b6b99016 (first commit)
                     type="submit"
                     class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
                 >
                     Aggiungi
                 </button>
             </div>
+<<<<<<< HEAD
             @error('description') 
+=======
+            @error('description')
+>>>>>>> 4b6b99016 (first commit)
                 <span class="text-red-500 text-sm">{{ $message }}</span>
             @enderror
         </form>
 
         <!-- Filtri -->
         <div class="flex gap-4 mb-4">
+<<<<<<< HEAD
             <button 
+=======
+            <button
+>>>>>>> 4b6b99016 (first commit)
                 wire:click="$set('filter', 'all')"
                 class="@if($filter === 'all') font-bold @endif"
             >
                 Tutti
             </button>
+<<<<<<< HEAD
             <button 
+=======
+            <button
+>>>>>>> 4b6b99016 (first commit)
                 wire:click="$set('filter', 'active')"
                 class="@if($filter === 'active') font-bold @endif"
             >
                 Attivi
             </button>
+<<<<<<< HEAD
             <button 
+=======
+            <button
+>>>>>>> 4b6b99016 (first commit)
                 wire:click="$set('filter', 'completed')"
                 class="@if($filter === 'completed') font-bold @endif"
             >
@@ -188,15 +214,24 @@ $clearCompleted = function () {
         <ul class="space-y-2">
             @foreach ($this->todos as $todo)
                 <li class="flex items-center gap-2 p-2 border rounded">
+<<<<<<< HEAD
                     <input 
                         type="checkbox" 
+=======
+                    <input
+                        type="checkbox"
+>>>>>>> 4b6b99016 (first commit)
                         wire:click="toggleTodo({{ $todo->id }})"
                         @checked($todo->completed)
                     >
                     <span class="flex-1 @if($todo->completed) line-through text-gray-500 @endif">
                         {{ $todo->description }}
                     </span>
+<<<<<<< HEAD
                     <button 
+=======
+                    <button
+>>>>>>> 4b6b99016 (first commit)
                         wire:click="deleteTodo({{ $todo->id }})"
                         class="text-red-500 hover:text-red-700"
                     >
@@ -208,7 +243,11 @@ $clearCompleted = function () {
 
         @if($this->todos->where('completed', true)->count() > 0)
             <div class="mt-4">
+<<<<<<< HEAD
                 <button 
+=======
+                <button
+>>>>>>> 4b6b99016 (first commit)
                     wire:click="clearCompleted"
                     class="text-gray-500 hover:text-gray-700"
                 >
@@ -338,4 +377,8 @@ class TodoTest extends TestCase
 - [Laravel Folio Documentation](https://github.com/laravel/folio)
 - [Laravel Volt Documentation](https://livewire.laravel.com/project_docs/volt)
 - [Livewire Documentation](https://livewire.laravel.com)
+<<<<<<< HEAD
 - [Articolo Originale di Nuno Maduro](https://nunomaduro.com/todo_application_with_laravel_folio_and_volt) 
+=======
+- [Articolo Originale di Nuno Maduro](https://nunomaduro.com/todo_application_with_laravel_folio_and_volt)
+>>>>>>> 4b6b99016 (first commit)

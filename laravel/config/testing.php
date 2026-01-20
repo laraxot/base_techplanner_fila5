@@ -56,7 +56,11 @@ return [
     | Test Performance Optimizations
     |--------------------------------------------------------------------------
     */
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 4b6b99016 (first commit)
     'performance' => [
         'disable_telescope' => true,
         'disable_debugbar' => true,
@@ -70,7 +74,11 @@ return [
     | Test Data Management
     |--------------------------------------------------------------------------
     */
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 4b6b99016 (first commit)
     'data' => [
         'auto_migrate' => true,
         'auto_seed' => false,

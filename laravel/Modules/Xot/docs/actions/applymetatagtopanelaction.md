@@ -38,7 +38,11 @@ In caso di errore durante l'applicazione dei metatag:
 - L'applicazione continua a funzionare
 
 ## Collegamenti
+<<<<<<< HEAD
 - [MetatagData](../datas/metatagdata.md)
+=======
+- [MetatagData](../datas/MetatagData.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Filament Panel Documentation](https://filamentphp.com/docs/panels)
 
 ## Note

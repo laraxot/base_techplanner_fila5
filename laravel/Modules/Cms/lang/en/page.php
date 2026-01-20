@@ -18,44 +18,62 @@ return [
         'id' => [
             'label' => 'ID',
             'placeholder' => 'Page ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'title' => [
             'label' => 'Title',
             'placeholder' => 'Page title',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'slug' => [
             'label' => 'Slug',
             'placeholder' => 'Page slug',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'content' => [
             'label' => 'Content',
             'placeholder' => 'Page content',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'meta_title' => [
             'label' => 'Meta Title',
             'placeholder' => 'Meta title for SEO',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'meta_description' => [
             'label' => 'Meta Description',
             'placeholder' => 'Meta description for SEO',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'status' => [
             'label' => 'Status',
@@ -66,9 +84,12 @@ return [
                 'scheduled' => 'Scheduled',
                 'archived' => 'Archived',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'layout' => [
             'label' => 'Layout',
@@ -78,34 +99,47 @@ return [
                 'full-width' => 'Full Width',
                 'sidebar' => 'With Sidebar',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'parent_id' => [
             'label' => 'Parent Page',
             'placeholder' => 'Select parent page',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'order' => [
             'label' => 'Order',
             'placeholder' => 'Display order',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'lang' => [
             'label' => 'Language',
             'placeholder' => 'Select page language',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'updated_at' => [
             'label' => 'Last Updated',
             'placeholder' => 'Last update date and time',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -181,6 +215,44 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'Toggle Columns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'view' => [
+            'label' => 'view',
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'message' => [
+            'label' => 'message',
+        ],
+        'footer_blocks' => [
+            'label' => 'footer_blocks',
+        ],
+        'caption' => [
+            'label' => 'caption',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -215,6 +287,9 @@ return [
     'model' => [
         'label' => 'page.model',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

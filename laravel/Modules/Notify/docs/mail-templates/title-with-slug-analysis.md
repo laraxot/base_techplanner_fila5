@@ -135,7 +135,11 @@ TitleWithSlugInput::make()
 ```php
 use Camya\Filament\Forms\Components\TitleWithSlugInput;
 
+<<<<<<< HEAD
 public static function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
+=======
+public static function form(Form $form): Form
+>>>>>>> 4b6b99016 (first commit)
 {
     return $form
         ->schema([

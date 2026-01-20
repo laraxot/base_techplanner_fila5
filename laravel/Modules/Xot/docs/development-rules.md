@@ -1,7 +1,11 @@
 # Regole Generali di Sviluppo del Progetto
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Documentazione generale progetto](/docs/readme.md)
+=======
+- [Documentazione generale progetto](/docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Regole Filament](filament-best-practices.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 - [Standard di Codice](code-standards.md)

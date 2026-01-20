@@ -27,7 +27,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property array|null $settings
  * @property bool $is_active
  * @property string|null $logo
+<<<<<<< HEAD
  * @property \Carbon\Carbon|null $last_activity_at
+=======
+>>>>>>> 4b6b99016 (first commit)
  * @property-read string $url
  * @property-read Collection<int, User> $users
  * @property-read int|null $users_count
@@ -88,7 +91,10 @@ class Tenant extends BaseModel
         'country',
         'tax_code',
         'vat_number',
+<<<<<<< HEAD
         'last_activity_at',
+=======
+>>>>>>> 4b6b99016 (first commit)
     ];
 
     /**
@@ -158,7 +164,10 @@ class Tenant extends BaseModel
         return [
             'settings' => 'array',
             'is_active' => 'boolean',
+<<<<<<< HEAD
             'last_activity_at' => 'datetime',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ];
     }
 }

@@ -39,7 +39,10 @@ parameters:
         - ./*/build/*
         - ./*/docs/*
         - ./*/tests/*
+<<<<<<< HEAD
         - ./*/Tests/*
+=======
+>>>>>>> 4b6b99016 (first commit)
         - ./*/packages/*
         - ./*/phpinsights.php
         - ./*/rector.php

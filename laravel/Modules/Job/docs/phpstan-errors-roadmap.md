@@ -1,5 +1,9 @@
 # PHPStan Level 10 Errors Roadmap - Job Module
 
+<<<<<<< HEAD
+=======
+**Data**: 2026-01-09  
+>>>>>>> 4b6b99016 (first commit)
 **Modulo**: Job  
 **Livello PHPStan**: 10  
 **Status**: 🧘 **IN ANALISI**
@@ -157,4 +161,8 @@ return $options;
 
 **Status**: 🧘 **IN ANALISI**
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-09
+>>>>>>> 4b6b99016 (first commit)

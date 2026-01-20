@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return array (
   'actions' => 
   array (
@@ -26,3 +27,14 @@ return array (
   array (
   ),
 );
+=======
+return [
+    'actions' => [
+        'profile' => [
+            'label' => 'profile',
+            'icon' => 'profile',
+            'tooltip' => 'profile',
+        ],
+    ],
+];
+>>>>>>> 4b6b99016 (first commit)

@@ -168,8 +168,13 @@ return [
 ### Versione HEAD
 
 ## Collegamenti tra versioni di permission.md
+<<<<<<< HEAD
 * [permission.md](../../../xot/docs/install/permission.md)
 * [permission.md](../../../tenant/docs/it/config/permission.md)
+=======
+* [permission.md](../../../Xot/docs/install/permission.md)
+* [permission.md](../../../Tenant/docs/it/config/permission.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### Versione Incoming
 

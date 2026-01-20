@@ -472,4 +472,8 @@ return [
         'show_component_info' => env('SIXTEEN_DEBUG_COMPONENTS', false),
         'log_menu_build' => env('SIXTEEN_LOG_MENU', false),
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

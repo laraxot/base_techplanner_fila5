@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -59,6 +60,29 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'connection' => [
+            'label' => 'Connessione',
+        ],
+        'queue' => [
+            'label' => 'Coda',
+        ],
+        'payload' => [
+            'label' => 'Contenuto',
+        ],
+        'attempts' => [
+            'label' => 'Tentativi',
+        ],
+        'reserved_at' => [
+            'label' => 'Riservato il',
+        ],
+        'available_at' => [
+            'label' => 'Disponibile il',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -69,4 +93,8 @@ return [
             'label' => 'Riprova',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

@@ -1,6 +1,10 @@
 # Popolamento Database - Modulo Tenant
 
+<<<<<<< HEAD
 ## Aggiornamento [DATE] – Test Sushi Seeder
+=======
+## Aggiornamento 2025-11-11 – Test Sushi Seeder
+>>>>>>> 4b6b99016 (first commit)
 
 - Rafforzata la type safety del seeder `TestSushiSeeder` utilizzando `Webmozart\Assert` per evitare errori PHPStan (`method.nonObject`) su `create()` e `count()`.
 - Ogni invocazione di `TestSushiModel::factory()` viene validata con `Assert::isInstanceOf` prima di usare i metodi fluenti.
@@ -296,7 +300,11 @@ private function generateRealisticDomain(string $tenantName, string $sector): st
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [README Modulo Tenant](./readme.md)
+=======
+- [README Modulo Tenant](./README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Multi-Tenancy Architecture](./multi-tenancy.md)
 - [Database Schema](./database-schema.md)
 - [Testing Guidelines](./testing.md)

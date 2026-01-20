@@ -17,54 +17,73 @@ return [
             'label' => 'Subject',
             'placeholder' => 'Enter email subject',
             'help' => 'Subject that will appear in the email header',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'template_id' => [
             'label' => 'Email Template',
             'placeholder' => 'Select the email template to use',
             'help' => 'Default template for the email (optional)',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'to' => [
             'label' => 'Recipient',
             'placeholder' => 'recipient@domain.com',
             'help' => 'Email address of the recipient',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'cc' => [
             'label' => 'Carbon Copy (CC)',
             'placeholder' => 'cc@domain.com (optional)',
             'help' => 'Email addresses in carbon copy, separated by commas',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'bcc' => [
             'label' => 'Blind Carbon Copy (BCC)',
             'placeholder' => 'bcc@domain.com (optional)',
             'help' => 'Email addresses in blind carbon copy, separated by commas',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'content' => [
             'label' => 'Text Content',
             'placeholder' => 'Enter the text content of the email',
             'help' => 'Text content of the email (plain text version)',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'body_html' => [
             'label' => 'HTML Content',
             'placeholder' => '<h1>Title</h1><p>Email content in HTML format</p>',
             'help' => 'HTML content of the email to send (optional)',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -76,14 +95,24 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'parameters' => [
+            'label' => 'Template Parameters',
+            'placeholder' => '{\"name\": \"John\", \"surname\": \"Doe\"}',
+            'help' => 'JSON parameters to customize the selected template',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'attachments' => [
             'label' => 'Attachments',
             'placeholder' => 'Select files to attach',
             'help' => 'Files to attach to the email (optional)',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'priority' => [
             'label' => 'Priority',
@@ -94,9 +123,12 @@ return [
                 'high' => 'High',
                 'urgent' => 'Urgent',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -148,6 +180,9 @@ return [
         'parameters_json' => 'Parameters must be in valid JSON format',
         'priority_valid' => 'Priority must be one of the available options',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

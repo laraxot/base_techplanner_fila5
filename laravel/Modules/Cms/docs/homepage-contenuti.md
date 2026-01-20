@@ -5,7 +5,11 @@
 Il testo seguente deve essere mostrato nella homepage del portale il progetto:
 
 ```
+<<<<<<< HEAD
 Benvenuta su Salute Orale,
+=======
+Benvenuta su <slogan>,
+>>>>>>> 4b6b99016 (first commit)
 
 il portale che vuole garantire alle pazienti vulnerabili in
 stato di gravidanza la possibilità di accedere a servizi

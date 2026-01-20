@@ -6,6 +6,7 @@ return [
     'fields' => [
         'name' => [
             'label' => 'name',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -39,6 +40,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Table Layout Enum Test',
+=======
+        ],
+        'email' => [
+            'label' => 'email',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
 ];

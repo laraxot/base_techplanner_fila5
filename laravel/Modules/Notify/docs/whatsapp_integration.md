@@ -536,3 +536,7 @@ Seguendo questa architettura, l'integrazione WhatsApp si inserisce perfettamente
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2023-05-12*
+>>>>>>> 4b6b99016 (first commit)

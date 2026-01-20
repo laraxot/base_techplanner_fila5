@@ -115,7 +115,11 @@ Ogni file modificato verificato con:
 ## Collegamenti
 
 - [Guida PHPStan Level 10](../../docs/phpstan-level10-achievement.md)
+<<<<<<< HEAD
 - [Activity Module Overview](./readme.md)
+=======
+- [Activity Module Overview](./README.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

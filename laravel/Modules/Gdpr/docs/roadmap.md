@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 ## Configuration Standards
 - [x] `.env.testing` is a carbon copy of `.env` with `_test` suffix for database names. No module-specific variables (`NOTIFY_DB_*`) unless they exist in `.env`.
 - [x] `TestCase.php` simplified: single `module:migrate` call, no `migrate:fresh`, no force, no static `$migrated` guards.
 
 ## PHPMD Issues
 ...
+=======
+# Roadmap for Gdpr Module
+
+## PHPMD Issues
+>>>>>>> 4b6b99016 (first commit)
 
 ### LongVariable
 - [x] `app/Datas/GdprData.php:53`: Avoid excessively long variable names like `$cookie_banner_enabled`. Keep variable name length under 20. (Renamed to `$cookie_banner_on`)

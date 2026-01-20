@@ -60,6 +60,7 @@ return [
     ],
     'failed' => 'Le credenziali non corrispondono ai nostri record.',
     'throttle' => 'Troppi tentativi di accesso. Riprova tra :seconds secondi.',
+<<<<<<< HEAD
     'label' => 'Auth',
     'plural_label' => 'Auth (Plurale)',
     'fields' => [
@@ -93,4 +94,6 @@ return [
             'label' => 'Elimina Auth',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

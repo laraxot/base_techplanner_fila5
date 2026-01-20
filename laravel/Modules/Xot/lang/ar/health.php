@@ -8,16 +8,27 @@ return [
             'buttons' => [
                 'refresh' => 'تحديث',
             ],
+<<<<<<< HEAD
             'heading' => 'حالة النظام',
+=======
+
+            'heading' => 'حالة النظام',
+
+>>>>>>> 4b6b99016 (first commit)
             'navigation' => [
                 'group' => 'إعدادات',
                 'label' => 'حالة النظام',
             ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)
             'notifications' => [
                 'check_results' => 'تمت عملية الفحص',
             ],
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -31,4 +42,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

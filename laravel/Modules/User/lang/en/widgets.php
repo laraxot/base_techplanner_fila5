@@ -171,6 +171,7 @@ return [
             'confirm' => 'Are you sure you want to sign out?',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -188,4 +189,6 @@ return [
         'heading' => 'Authentication Log',
         'label' => 'Number of logins executed',
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

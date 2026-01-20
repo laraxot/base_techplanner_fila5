@@ -247,7 +247,11 @@ expect()->extend('toHaveDynamicHeading', function (string $type) {
 ## 🔗 Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< HEAD
 - [RegistrationWidget Documentation](../../../user/docs/filament/widgets/registration-widget.md)
+=======
+- [RegistrationWidget Documentation](../../../User/docs/filament/widgets/registration-widget.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Folio Pages Implementation](../folio-pages.md)
 - [Login Test Implementation](./login-test-implementation.md)
 - [Test Organization Rules](../../../docs/test-organization-rules.md)
@@ -271,5 +275,9 @@ expect()->extend('toHaveDynamicHeading', function (string $type) {
 3. **Database Seeding**: Seed data per test realistici
 4. **Monitoring**: Metriche test in CI/CD
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)
 *Versione PestPHP: 2.x*
 *Compatibilità Laravel: 11.x*

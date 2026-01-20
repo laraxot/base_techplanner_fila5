@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\TeamFactory;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -34,6 +38,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property Collection<int, User>           $users
  * @property int|null                        $users_count
  *
+<<<<<<< HEAD
+=======
+ * @method static TeamFactory  factory($count = null, $state = [])
+>>>>>>> 4b6b99016 (first commit)
  * @method static Builder|Team newModelQuery()
  * @method static Builder|Team newQuery()
  * @method static Builder|Team query()
@@ -71,7 +79,11 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class Team extends BaseTeam
 {
+<<<<<<< HEAD
     // use SoftDeletes;
+=======
+    use SoftDeletes;
+>>>>>>> 4b6b99016 (first commit)
 
     protected $fillable = [
         'user_id',

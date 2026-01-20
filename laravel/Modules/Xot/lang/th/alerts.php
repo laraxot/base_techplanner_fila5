@@ -19,6 +19,7 @@ return [
             'updated_password' => 'รหัสผ่านของผู้ใช้ถูกแก้ไขสำเร็จแล้ว',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -32,4 +33,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

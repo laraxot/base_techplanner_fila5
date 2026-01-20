@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -16,6 +17,17 @@ use Illuminate\Support\Str;
 /**
  * Modello per le persone pubbliche (Public Person)
  *
+=======
+use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
+use Illuminate\Database\Eloquent\Relations\{HasMany, BelongsToMany, MorphMany};
+use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Support\Str;
+use Carbon\Carbon;
+
+/**
+ * Modello per le persone pubbliche (Public Person)
+ * 
+>>>>>>> 4b6b99016 (first commit)
  * Rappresenta amministratori, dirigenti, dipendenti e altre figure
  * pubbliche dell'ente secondo l'ontologia AGID
  */
@@ -187,7 +199,11 @@ class PublicPerson extends Model
         return $query->where('start_date', '<=', now())
             ->where(function ($q) {
                 $q->whereNull('end_date')
+<<<<<<< HEAD
                     ->orWhere('end_date', '>', now());
+=======
+                  ->orWhere('end_date', '>', now());
+>>>>>>> 4b6b99016 (first commit)
             });
     }
 
@@ -205,7 +221,11 @@ class PublicPerson extends Model
     protected function fullName(): Attribute
     {
         return Attribute::make(
+<<<<<<< HEAD
             get: fn () => trim($this->first_name.' '.$this->last_name)
+=======
+            get: fn () => trim($this->first_name . ' ' . $this->last_name)
+>>>>>>> 4b6b99016 (first commit)
         );
     }
 
@@ -215,7 +235,11 @@ class PublicPerson extends Model
     protected function displayName(): Attribute
     {
         return Attribute::make(
+<<<<<<< HEAD
             get: fn () => trim($this->last_name.', '.$this->first_name)
+=======
+            get: fn () => trim($this->last_name . ', ' . $this->first_name)
+>>>>>>> 4b6b99016 (first commit)
         );
     }
 
@@ -256,11 +280,19 @@ class PublicPerson extends Model
     {
         return Attribute::make(
             get: function () {
+<<<<<<< HEAD
                 if (! $this->start_date || $this->start_date->isFuture()) {
                     return false;
                 }
 
                 return ! $this->end_date || $this->end_date->isFuture();
+=======
+                if (!$this->start_date || $this->start_date->isFuture()) {
+                    return false;
+                }
+                
+                return !$this->end_date || $this->end_date->isFuture();
+>>>>>>> 4b6b99016 (first commit)
             }
         );
     }
@@ -272,10 +304,17 @@ class PublicPerson extends Model
     {
         return Attribute::make(
             get: function () {
+<<<<<<< HEAD
                 if (! $this->is_in_office) {
                     return;
                 }
 
+=======
+                if (!$this->is_in_office) {
+                    return null;
+                }
+                
+>>>>>>> 4b6b99016 (first commit)
                 return $this->end_date?->diffInDays(now()) ?? null;
             }
         );
@@ -299,10 +338,16 @@ class PublicPerson extends Model
         return Attribute::make(
             set: function ($value) {
                 $this->attributes['last_name'] = $value;
+<<<<<<< HEAD
                 if (empty($this->attributes['slug']) && ! empty($this->attributes['first_name'])) {
                     $this->attributes['slug'] = Str::slug($this->attributes['first_name'].' '.$value);
                 }
 
+=======
+                if (empty($this->attributes['slug']) && !empty($this->attributes['first_name'])) {
+                    $this->attributes['slug'] = Str::slug($this->attributes['first_name'] . ' ' . $value);
+                }
+>>>>>>> 4b6b99016 (first commit)
                 return $value;
             }
         );
@@ -313,7 +358,11 @@ class PublicPerson extends Model
      */
     public function getFormattedEducation(): array
     {
+<<<<<<< HEAD
         if (! $this->education || ! is_array($this->education)) {
+=======
+        if (!$this->education || !is_array($this->education)) {
+>>>>>>> 4b6b99016 (first commit)
             return [];
         }
 
@@ -322,7 +371,10 @@ class PublicPerson extends Model
                 if (is_string($education)) {
                     return ['degree' => $education];
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4b6b99016 (first commit)
                 return $education;
             })
             ->toArray();
@@ -333,7 +385,11 @@ class PublicPerson extends Model
      */
     public function getFormattedWorkExperience(): array
     {
+<<<<<<< HEAD
         if (! $this->work_experience || ! is_array($this->work_experience)) {
+=======
+        if (!$this->work_experience || !is_array($this->work_experience)) {
+>>>>>>> 4b6b99016 (first commit)
             return [];
         }
 
@@ -342,7 +398,10 @@ class PublicPerson extends Model
                 if (is_string($experience)) {
                     return ['position' => $experience];
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4b6b99016 (first commit)
                 return $experience;
             })
             ->sortByDesc('start_date')
@@ -355,7 +414,11 @@ class PublicPerson extends Model
      */
     public function getFormattedSocialProfiles(): array
     {
+<<<<<<< HEAD
         if (! $this->social_profiles || ! is_array($this->social_profiles)) {
+=======
+        if (!$this->social_profiles || !is_array($this->social_profiles)) {
+>>>>>>> 4b6b99016 (first commit)
             return [];
         }
 
@@ -381,7 +444,11 @@ class PublicPerson extends Model
      */
     public function hasCurriculumVitae(): bool
     {
+<<<<<<< HEAD
         return ! empty($this->cv_file_path) || ! empty($this->curriculum_vitae);
+=======
+        return !empty($this->cv_file_path) || !empty($this->curriculum_vitae);
+>>>>>>> 4b6b99016 (first commit)
     }
 
     /**
@@ -389,11 +456,19 @@ class PublicPerson extends Model
      */
     public function getCvUrl(): ?string
     {
+<<<<<<< HEAD
         if (! $this->cv_file_path) {
             return null;
         }
 
         return asset('storage/'.$this->cv_file_path);
+=======
+        if (!$this->cv_file_path) {
+            return null;
+        }
+
+        return asset('storage/' . $this->cv_file_path);
+>>>>>>> 4b6b99016 (first commit)
     }
 
     /**
@@ -401,7 +476,11 @@ class PublicPerson extends Model
      */
     public function shouldPublishCompensation(): bool
     {
+<<<<<<< HEAD
         return in_array($this->category, ['politician', 'manager', 'consultant'])
+=======
+        return in_array($this->category, ['politician', 'manager', 'consultant']) 
+>>>>>>> 4b6b99016 (first commit)
             && $this->is_public;
     }
 
@@ -450,8 +529,13 @@ class PublicPerson extends Model
 
         // Genera slug se mancante
         static::creating(function ($model) {
+<<<<<<< HEAD
             if (empty($model->slug) && ! empty($model->first_name) && ! empty($model->last_name)) {
                 $model->slug = Str::slug($model->first_name.' '.$model->last_name);
+=======
+            if (empty($model->slug) && !empty($model->first_name) && !empty($model->last_name)) {
+                $model->slug = Str::slug($model->first_name . ' ' . $model->last_name);
+>>>>>>> 4b6b99016 (first commit)
             }
         });
 
@@ -461,7 +545,11 @@ class PublicPerson extends Model
             $counter = 1;
 
             while (static::where('slug', $model->slug)->exists()) {
+<<<<<<< HEAD
                 $model->slug = $originalSlug.'-'.$counter;
+=======
+                $model->slug = $originalSlug . '-' . $counter;
+>>>>>>> 4b6b99016 (first commit)
                 $counter++;
             }
         });
@@ -479,4 +567,8 @@ class PublicPerson extends Model
             }
         });
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4b6b99016 (first commit)

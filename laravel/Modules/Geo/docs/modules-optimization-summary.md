@@ -195,6 +195,7 @@ php artisan docs:validate
 ## 🔗 Collegamenti Documentazione
 
 ### Moduli Principali
+<<<<<<< HEAD
 - [<nome progetto> - Core Business](../modules/<nome progetto>/docs/optimization-analysis.md)
 - [<nome progetto> - Core Business](../modules/<nome progetto>/docs/optimization-analysis.md)
 - [User - Authentication](../modules/user/docs/optimization-analysis.md)
@@ -209,6 +210,22 @@ php artisan docs:validate
 - [Media - File Management](../modules/media/docs/optimization-analysis.md)
 - [Lang - Translations](../modules/lang/docs/optimization-analysis.md)
 - [Notify - Notifications](../modules/notify/docs/optimization-analysis.md)
+=======
+- [<nome progetto> - Core Business](../Modules/<nome progetto>/docs/optimization-analysis.md)
+- [<nome progetto> - Core Business](../Modules/<nome progetto>/docs/optimization-analysis.md)
+- [User - Authentication](../Modules/User/docs/optimization-analysis.md)
+- [Xot - Framework Base](../Modules/Xot/docs/optimization-analysis.md)
+- [UI - Interface Components](../Modules/UI/docs/optimization-analysis.md)
+- [Tenant - Multi-Tenancy](../Modules/Tenant/docs/optimization-analysis.md)
+
+### Moduli di Supporto
+- [Activity - Logging](../Modules/Activity/docs/optimization-analysis.md)
+- [Geo - Geolocation](../Modules/Geo/docs/optimization-analysis.md)
+- [Gdpr - Privacy](../Modules/Gdpr/docs/optimization-analysis.md)
+- [Media - File Management](../Modules/Media/docs/optimization-analysis.md)
+- [Lang - Translations](../Modules/Lang/docs/optimization-analysis.md)
+- [Notify - Notifications](../Modules/Notify/docs/optimization-analysis.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### Documentazione Generale
 - [SOLID Principles](./solid-principles.md)

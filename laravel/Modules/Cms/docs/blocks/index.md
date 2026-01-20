@@ -1,17 +1,30 @@
 # Indice della Documentazione - Blocchi CMS
 
 ## Collegamenti Correlati
+<<<<<<< HEAD
 - [Indice CMS](../index.md)
 - [README CMS](../readme.md)
 - [Blocchi](../blocks.md)
 - [Componenti Blocchi Contenuto](../componenti-blocchi-contenuto.md)
 - [Namespace Componenti Blocchi](../namespace-componenti-blocchi.md)
 - [Documentazione Generale](../../../../../docs/readme.md)
+=======
+- [Indice CMS](../INDEX.md)
+- [README CMS](../README.md)
+- [Blocchi](../blocks.md)
+- [Componenti Blocchi Contenuto](../componenti-blocchi-contenuto.md)
+- [Namespace Componenti Blocchi](../namespace-componenti-blocchi.md)
+- [Documentazione Generale](../../../../../docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
 
 ## Panoramica
 I blocchi sono componenti riutilizzabili che compongono le sezioni del sito. Ogni blocco ha uno scopo specifico e può essere inserito in diverse sezioni tramite i file JSON di configurazione.
+<<<<<<< HEAD
 - [Documentazione Generale <nome progetto>](../../../../../docs/readme.md)
+=======
+- [Documentazione Generale <nome progetto>](../../../../../docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -20,6 +33,7 @@ I blocchi sono componenti riutilizzabili che compongono le sezioni del sito <nom
 ## Blocchi Disponibili
 
 ### Navigazione e Layout
+<<<<<<< HEAD
 - [Header](./header.md) - Blocco header con logo, navigazione e dropdown utente
 - [Footer](./footer.md) - Blocco footer con copyright, link e contatti
 - [Navigation](./navigation.md) - Blocco di navigazione personalizzabile
@@ -46,6 +60,34 @@ I blocchi sono componenti riutilizzabili che compongono le sezioni del sito <nom
 - [Map](./map.md) - Blocco per mappe
 - [Social](./social.md) - Blocco per link social
 - [Search](./search.md) - Blocco per ricerca
+=======
+- [Header](./HEADER.md) - Blocco header con logo, navigazione e dropdown utente
+- [Footer](./FOOTER.md) - Blocco footer con copyright, link e contatti
+- [Navigation](./NAVIGATION.md) - Blocco di navigazione personalizzabile
+- [Container](./CONTAINER.md) - Blocco container per strutturare il layout
+
+### Contenuti
+- [Hero](./HERO.md) - Blocco hero per sezioni in evidenza
+- [Text](./TEXT.md) - Blocco testo per contenuti testuali
+- [CTA](./CTA.md) - Blocco call-to-action per conversioni
+- [Features](./FEATURES.md) - Blocco per elencare caratteristiche/servizi
+- [Testimonials](./TESTIMONIALS.md) - Blocco per testimonianze
+- [Team](./TEAM.md) - Blocco per presentare il team
+- [FAQ](./FAQ.md) - Blocco per domande frequenti
+- [Pricing](./PRICING.md) - Blocco per piani tariffari
+
+### Media
+- [Image](./IMAGE.md) - Blocco per immagini singole
+- [Gallery](./GALLERY.md) - Blocco per gallerie di immagini
+- [Video](./VIDEO.md) - Blocco per contenuti video
+- [Slider](./SLIDER.md) - Blocco per carousel/slider
+
+### Interattivi
+- [Form](./FORM.md) - Blocco per form di contatto
+- [Map](./MAP.md) - Blocco per mappe
+- [Social](./SOCIAL.md) - Blocco per link social
+- [Search](./SEARCH.md) - Blocco per ricerca
+>>>>>>> 4b6b99016 (first commit)
 
 ## Struttura dei Blocchi
 
@@ -80,3 +122,7 @@ L'implementazione di un blocco richiede:
 - I blocchi devono supportare la localizzazione tramite le chiavi del file JSON
 - L'implementazione deve seguire le convenzioni di naming del progetto
 
+<<<<<<< HEAD
+=======
+Ultimo aggiornamento: 14 Maggio 2025
+>>>>>>> 4b6b99016 (first commit)

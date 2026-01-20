@@ -37,6 +37,7 @@ return [
         ],
     ],
     'fields' => [
+<<<<<<< HEAD
         'id' => [
             'label' => 'ID',
             'tooltip' => '',
@@ -139,6 +140,25 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        'id' => ['label' => 'ID'],
+        'lang' => ['label' => 'Lingua'],
+        'value' => ['label' => 'Valore'],
+        'key' => ['label' => 'Chiave'],
+        'namespace' => ['label' => 'Namespace'],
+        'group' => ['label' => 'Gruppo'],
+        'item' => ['label' => 'Elemento'],
+        'name' => 'Nome Utente',
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+        'email' => 'Email',
+        'is_active' => 'Stato account',
+        'color' => 'Colore',
+        'asset_id_root' => 'Abitazione',
+        'asset_id' => 'Asset',
+        'type' => 'tipo',
+        'user_name' => 'nome utente',
+>>>>>>> 4b6b99016 (first commit)
     ],
     'filters' => [
         'is_active' => [
@@ -164,6 +184,9 @@ return [
     'act' => [
         'publish_item_trans' => 'pubblica modifiche riga',
     ],
+<<<<<<< HEAD
     'label' => 'Translation',
     'plural_label' => 'Translation (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

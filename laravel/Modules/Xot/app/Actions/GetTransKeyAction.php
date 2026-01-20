@@ -35,7 +35,11 @@ class GetTransKeyAction
             $backtrace = array_slice(debug_backtrace(), 2);
             $res = Arr::first(
                 $backtrace,
+<<<<<<< HEAD
                 fn (array $item): bool => isset($item['object']) && explode('\\', get_class($item['object']))[0] === 'Modules',
+=======
+                fn (array $item): bool => (isset($item['object']) && explode('\\', get_class($item['object']))[0] === 'Modules'),
+>>>>>>> 4b6b99016 (first commit)
             );
 
             if ($res === null || ! isset($res['object'])) {
@@ -74,7 +78,11 @@ class GetTransKeyAction
         $arr = explode('_', $class_snake);
         $first = $arr[0];
         $last = $arr[count($arr) - 1];
+<<<<<<< HEAD
         if (in_array($first, ['dashboard', 'list', 'get', 'manage', 'edit', 'view', 'create'], strict: true)) {
+=======
+        if (in_array($first, ['dashboard', 'list', 'get', 'manage', 'edit', 'view'], strict: true)) {
+>>>>>>> 4b6b99016 (first commit)
             $class_snake = implode('_', array_slice($arr, 1));
         }
         if (in_array($last, ['action'], strict: true)) {

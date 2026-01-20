@@ -46,9 +46,12 @@ return [
                 'placeholder' => 'Inserisci l\'URL canonico',
                 'help' => 'URL canonico per evitare contenuti duplicati',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'social' => [
             'og_title' => [
@@ -76,10 +79,13 @@ return [
                     'player' => 'Card per contenuti multimediali',
                 ],
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'site' => [
             'sitename' => [
@@ -102,10 +108,13 @@ return [
                 'placeholder' => 'Inserisci il copyright',
                 'help' => 'Informazioni sul copyright del sito',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'appearance' => [
             'logo_header' => [
@@ -136,10 +145,13 @@ return [
                     'help' => 'Codice colore esadecimale',
                 ],
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'contact' => [
             'email' => [
@@ -157,10 +169,13 @@ return [
                 'placeholder' => 'Inserisci l\'indirizzo',
                 'help' => 'Indirizzo fisico dell\'attività',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -223,6 +238,9 @@ return [
             'oversized_image' => 'Immagine social troppo grande',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

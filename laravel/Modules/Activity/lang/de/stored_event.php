@@ -19,9 +19,12 @@ return [
             'label' => 'ID',
             'help' => 'Identificativo unico dell\'evento archiviato',
             'validation' => 'required|integer|min:1',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'event_class' => [
             'label' => 'Classe Evento',
@@ -29,9 +32,12 @@ return [
             'help' => 'Nome completo della classe che rappresenta l\'evento',
             'validation' => 'required|string|max:255',
             'searchable' => '1',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'event_properties' => [
             'label' => 'Proprietà Evento',
@@ -40,9 +46,12 @@ return [
             'validation' => 'required|json',
             'type' => 'json',
             'format' => 'json',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'aggregate_uuid' => [
             'label' => 'UUID Aggregato',
@@ -50,9 +59,12 @@ return [
             'help' => 'Identificativo unico dell\'aggregato di appartenenza',
             'validation' => 'required|uuid',
             'searchable' => '1',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'aggregate_version' => [
             'label' => 'Versione Aggregato',
@@ -60,18 +72,24 @@ return [
             'help' => 'Numero di versione dell\'aggregato',
             'validation' => 'required|integer|min:1',
             'sortable' => '1',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'event_version' => [
             'label' => 'Versione Evento',
             'placeholder' => 'Versione dell\'evento',
             'help' => 'Numero di versione del formato evento',
             'validation' => 'nullable|string|max:20',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'meta_data' => [
             'label' => 'Metadata',
@@ -80,9 +98,12 @@ return [
             'validation' => 'nullable|json',
             'type' => 'json',
             'format' => 'json',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
@@ -91,9 +112,12 @@ return [
             'validation' => 'required|date',
             'format' => 'd/m/Y H:i:s',
             'sortable' => '1',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_by' => [
             'label' => 'Creato Da',
@@ -101,18 +125,24 @@ return [
             'help' => 'Utente che ha generato l\'evento',
             'validation' => 'nullable|integer|exists:users,id',
             'searchable' => '1',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'updated_by' => [
             'label' => 'Aggiornato Da',
             'placeholder' => 'Utente aggiornatore',
             'help' => 'Utente che ha aggiornato l\'evento',
             'validation' => 'nullable|integer|exists:users,id',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'stream_name' => [
             'label' => 'Nome Stream',
@@ -120,9 +150,12 @@ return [
             'help' => 'Identificativo del flusso a cui appartiene l\'evento',
             'validation' => 'nullable|string|max:255',
             'searchable' => '1',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'stream_position' => [
             'label' => 'Posizione Stream',
@@ -130,17 +163,23 @@ return [
             'help' => 'Posizione sequenziale dell\'evento nel flusso',
             'validation' => 'nullable|integer|min:0',
             'sortable' => '1',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'toggleColumns' => [
             'label' => 'Mostra/Nascondi Colonne',
             'placeholder' => '',
             'help' => 'Configura la visibilità delle colonne nella tabella',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'filters' => [
@@ -332,19 +371,32 @@ return [
     'pagination' => [
         'per_page' => '50',
         'options' => [
+<<<<<<< HEAD
             0 => '25',
             1 => '50',
             2 => '100',
             3 => '200',
+=======
+            '0' => '25',
+            '1' => '50',
+            '2' => '100',
+            '3' => '200',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'simple' => '',
     ],
     'cache' => [
         'ttl' => '600',
         'tags' => [
+<<<<<<< HEAD
             0 => 'stored_events',
             1 => 'event_sourcing',
             2 => 'monitoring',
+=======
+            '0' => 'stored_events',
+            '1' => 'event_sourcing',
+            '2' => 'monitoring',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'event_sourcing' => [
@@ -363,6 +415,9 @@ return [
         'performance_tracking' => '1',
         'audit_trail' => '1',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

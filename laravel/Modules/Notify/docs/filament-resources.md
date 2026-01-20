@@ -245,12 +245,20 @@ public static function getTableActions(): array
 - [Gestione Notifiche](../../../../project_docs/architecture/notifications.md)
 
 ### Collegamenti ai Moduli
+<<<<<<< HEAD
 - [XotBaseResource](../../xot/project_docs/xotbaseresource.md)
+=======
+- [XotBaseResource](../../Xot/project_docs/XotBaseResource.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Architettura Filament](../../../../docs/architecture/filament.md)
 - [Gestione Notifiche](../../../../docs/architecture/notifications.md)
 
 ### Collegamenti ai Moduli
+<<<<<<< HEAD
 - [XotBaseResource](../../xot/docs/xotbaseresource.md)
+=======
+- [XotBaseResource](../../Xot/docs/XotBaseResource.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Gestione Template](../template-management.md)
 
 ## Note Importanti
@@ -271,6 +279,7 @@ public static function getTableActions(): array
 ## Collegamenti tra versioni di filament-resources.md
 * [filament-resources.md](../../../../project_docs/tecnico/filament/filament-resources.md)
 * [filament-resources.md](../../../../project_docs/regole/filament-resources.md)
+<<<<<<< HEAD
 * [filament-resources.md](../../gdpr/project_docs/filament-resources.md)
 * [filament-resources.md](../../xot/project_docs/filament-resources.md)
 * [filament-resources.md](../../patient/project_docs/filament-resources.md)
@@ -281,6 +290,18 @@ public static function getTableActions(): array
 * [filament-resources.md](../../xot/docs/filament-resources.md)
 * [filament-resources.md](../../patient/docs/filament-resources.md)
 * [filament-resources.md](../../cms/docs/filament-resources.md)
+=======
+* [filament-resources.md](../../Gdpr/project_docs/filament-resources.md)
+* [filament-resources.md](../../Xot/project_docs/filament-resources.md)
+* [filament-resources.md](../../Patient/project_docs/filament-resources.md)
+* [filament-resources.md](../../Cms/project_docs/filament-resources.md)
+* [filament-resources.md](../../../../docs/tecnico/filament/filament-resources.md)
+* [filament-resources.md](../../../../docs/regole/filament-resources.md)
+* [filament-resources.md](../../Gdpr/docs/filament-resources.md)
+* [filament-resources.md](../../Xot/docs/filament-resources.md)
+* [filament-resources.md](../../Patient/docs/filament-resources.md)
+* [filament-resources.md](../../Cms/docs/filament-resources.md)
+>>>>>>> 4b6b99016 (first commit)
 
 
 ---

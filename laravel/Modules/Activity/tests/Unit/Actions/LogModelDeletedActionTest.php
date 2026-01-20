@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Actions\LogModelDeletedAction;
 use Modules\User\Models\User;
 
+<<<<<<< HEAD
 test('LogModelDeletedAction can be instantiated', function () {
     $model = new class extends Model
     {
@@ -15,6 +16,18 @@ test('LogModelDeletedAction can be instantiated', function () {
 
         protected $fillable = ['name'];
     };
+=======
+// Modello fittizio per testare LogModelDeletedAction
+class LogModelDeletedActionTestModel extends Model
+{
+    protected $table = 'test_models';
+
+    protected $fillable = ['name'];
+}
+
+test('LogModelDeletedAction can be instantiated', function () {
+    $model = new LogModelDeletedActionTestModel;
+>>>>>>> 4b6b99016 (first commit)
     $user = User::factory()->make();
 
     $action = new LogModelDeletedAction($model, $user);

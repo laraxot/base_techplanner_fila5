@@ -38,12 +38,20 @@ I nomi specifici dell'applicazione devono apparire solo:
 4. Usare esempi generici nelle spiegazioni
 
 ## Collegamenti Bidirezionali
+<<<<<<< HEAD
 - [README](readme.md)
+=======
+- [README](README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Design System](design-system.md)
 - [Componenti](components.md)
 
 ## Vedi Anche
+<<<<<<< HEAD
 - [Documentazione Principale](../../../docs/readme.md)
+=======
+- [Documentazione Principale](../../../docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Standard di Codice](../../../docs/standards/coding-standards.md)
 # Regole di Naming nei Moduli
 
@@ -83,11 +91,19 @@ I nomi specifici dell'applicazione devono apparire solo:
 4. Usare esempi generici nelle spiegazioni
 
 ## Collegamenti Bidirezionali
+<<<<<<< HEAD
 - [README](readme.md)
+=======
+- [README](README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Design System](design-system.md)
 - [Componenti](components.md)
 
 ## Vedi Anche
+<<<<<<< HEAD
 - [Documentazione Principale](../../../project_docs/readme.md)
+=======
+- [Documentazione Principale](../../../project_docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Standard di Codice](../../../project_docs/standards/coding-standards.md)
 - [Best Practices](../../../project_docs/standards/best-practices.md)

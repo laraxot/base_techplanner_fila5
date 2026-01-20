@@ -120,6 +120,7 @@ public function store(Request $request, CreateUserAction $action)
     $action->onQueue('users')->execute($userData);
 }
 ```
+<<<<<<< HEAD
 
 ## Caso Speciale: Filament Widgets
 
@@ -172,3 +173,5 @@ class SimpleChartWidget extends XotBaseChartWidget
 - [Chart Widget Best Practices (Quaeris)](../../../quaeris/docs/chart-widget-best-practices.md)
 - [Critical No Services Rule](../critical-no-services-rule.md)
 ```
+=======
+>>>>>>> 4b6b99016 (first commit)

@@ -8,41 +8,56 @@ return [
             'label' => 'Indirizzo',
             'placeholder' => 'Inserisci l\'indirizzo da geocodificare',
             'help' => 'Indirizzo completo da convertire in coordinate',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'latitude' => [
             'label' => 'Latitudine',
             'placeholder' => 'Inserisci la latitudine',
             'help' => 'Coordinate geografiche - latitudine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'longitude' => [
             'label' => 'Longitudine',
             'placeholder' => 'Inserisci la longitudine',
             'help' => 'Coordinate geografiche - longitudine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'accuracy' => [
             'label' => 'Precisione',
             'placeholder' => 'Seleziona la precisione',
             'help' => 'Livello di precisione della geocodifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'provider' => [
             'label' => 'Provider',
             'placeholder' => 'Seleziona il provider',
             'help' => 'Servizio di geocodifica da utilizzare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -67,6 +82,7 @@ return [
         'invalid_coordinates' => 'Coordinate geografiche non valide',
         'no_results_found' => 'Nessun risultato trovato',
     ],
+<<<<<<< HEAD
     'label' => 'Geocoding',
     'plural_label' => 'Geocoding (Plurale)',
     'navigation' => [
@@ -91,4 +107,6 @@ return [
             'label' => 'Elimina Geocoding',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

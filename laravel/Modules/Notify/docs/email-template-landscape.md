@@ -111,4 +111,8 @@ Link: https://filamentphp.com/plugins/visual-builder-email-templates
 - Integrare pipeline CI/CD per lint e test email
 
 ---
+<<<<<<< HEAD
 *Documento generato il [DATE]T21:41:18+02:00*
+=======
+*Documento generato il 2025-05-05T21:41:18+02:00*
+>>>>>>> 4b6b99016 (first commit)

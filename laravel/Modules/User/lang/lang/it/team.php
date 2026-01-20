@@ -11,6 +11,7 @@ return [
         ],
     ],
     'fields' => [
+<<<<<<< HEAD
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -23,6 +24,10 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+>>>>>>> 4b6b99016 (first commit)
     ],
     'actions' => [
         'import' => [
@@ -41,6 +46,9 @@ return [
             'label' => 'create',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

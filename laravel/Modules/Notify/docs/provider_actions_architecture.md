@@ -74,6 +74,10 @@ Le azioni di provider devono sempre:
        message: $smsData->body,
        sender: $smsData->from,
        reference: null,
+<<<<<<< HEAD
+=======
+       scheduledDate: null
+>>>>>>> 4b6b99016 (first commit)
    );
    ```
 

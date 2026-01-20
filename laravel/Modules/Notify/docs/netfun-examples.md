@@ -242,6 +242,10 @@ public function sendReminder(Appointment $appointment)
         // Invia il promemoria
         $appointment->patient->notify(
             new AppointmentReminderNotification(
+<<<<<<< HEAD
+=======
+                appointmentDate: $appointment->date,
+>>>>>>> 4b6b99016 (first commit)
                 doctorName: $appointment->doctor->name,
                 location: $appointment->location,
                 notes: $appointment->notes

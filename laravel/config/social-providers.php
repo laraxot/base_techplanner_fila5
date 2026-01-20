@@ -19,4 +19,8 @@ return [
             'updated_by' => '',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

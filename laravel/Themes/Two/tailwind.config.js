@@ -21,11 +21,14 @@ export default {
           800: '#075985',
           900: '#0c4a6e',
         },
+<<<<<<< HEAD
         brand: {
           blue: '#1E5A96',
           green: '#2D8659',
           orange: '#D35400',
         },
+=======
+>>>>>>> 4b6b99016 (first commit)
         secondary: {
           50: '#f8fafc',
           100: '#f1f5f9',

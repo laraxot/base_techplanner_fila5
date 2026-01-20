@@ -10,7 +10,11 @@ use Themes\Sixteen\Models\User;
 
 /**
  * Evento lanciato quando un utente effettua il logout da SPID
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> 4b6b99016 (first commit)
  * Questo evento permette di reagire al logout SPID per cleanup,
  * logging, sincronizzazione con sistemi esterni, etc.
  */
@@ -21,7 +25,12 @@ class SpidLoggedOut
     public function __construct(
         public User $user,
         public array $spidAttributes
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 4b6b99016 (first commit)
 
     /**
      * Ottiene il provider SPID utilizzato
@@ -51,4 +60,8 @@ class SpidLoggedOut
             'logout_timestamp' => now()->toISOString(),
         ];
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4b6b99016 (first commit)

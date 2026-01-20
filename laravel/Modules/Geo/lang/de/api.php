@@ -8,73 +8,100 @@ return [
             'label' => 'Endpoint',
             'placeholder' => 'API-Endpoint eingeben',
             'help' => 'URL des API-Endpoints',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'method' => [
             'label' => 'Methode',
             'placeholder' => 'HTTP-Methode auswählen',
             'help' => 'HTTP-Methode für die Anfrage',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'headers' => [
             'label' => 'Header',
             'placeholder' => 'Anfrage-Header konfigurieren',
             'help' => 'HTTP-Header für die Anfrage',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'parameters' => [
             'label' => 'Parameter',
             'placeholder' => 'Anfrageparameter konfigurieren',
             'help' => 'Parameter für die API-Anfrage',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'body' => [
             'label' => 'Body',
             'placeholder' => 'Anfrage-Body eingeben',
             'help' => 'HTTP-Anfrage-Body',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'timeout' => [
             'label' => 'Timeout',
             'placeholder' => 'Timeout in Sekunden eingeben',
             'help' => 'Anfrage-Timeout in Sekunden',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'retries' => [
             'label' => 'Wiederholungen',
             'placeholder' => 'Anzahl der Wiederholungen eingeben',
             'help' => 'Anzahl der Wiederholungen für die Anfrage',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'rate_limit' => [
             'label' => 'Rate-Limit',
             'placeholder' => 'Rate-Limit eingeben',
             'help' => 'Anfragen pro Minute Limit',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'authentication' => [
             'label' => 'Authentifizierung',
             'placeholder' => 'Authentifizierung konfigurieren',
             'help' => 'API-Authentifizierungskonfiguration',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -165,6 +192,7 @@ return [
         'multipart' => 'Multipart',
     ],
     'status_codes' => [
+<<<<<<< HEAD
         200 => '200 - OK',
         201 => '201 - Created',
         204 => '204 - No Content',
@@ -188,5 +216,19 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
+=======
+        '200' => '200 - OK',
+        '201' => '201 - Created',
+        '204' => '204 - No Content',
+        '400' => '400 - Bad Request',
+        '401' => '401 - Unauthorized',
+        '403' => '403 - Forbidden',
+        '404' => '404 - Not Found',
+        '429' => '429 - Too Many Requests',
+        '500' => '500 - Internal Server Error',
+        '502' => '502 - Bad Gateway',
+        '503' => '503 - Service Unavailable',
+        '504' => '504 - Gateway Timeout',
+>>>>>>> 4b6b99016 (first commit)
     ],
 ];

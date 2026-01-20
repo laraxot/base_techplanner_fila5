@@ -1,8 +1,12 @@
 {
     "id": "1",
     "name": {
+<<<<<<< HEAD
         "it": "Header Navigation",
         "en": "Header Navigation"
+=======
+        "it": "headeryyy"
+>>>>>>> 4b6b99016 (first commit)
     },
     "slug": "header",
     "blocks": {
@@ -11,6 +15,7 @@
                 "type": "navigation",
                 "slug": "nav1",
                 "data": {
+<<<<<<< HEAD
                     "view": "themes.two::components.sections.header.v1",
                     "brand": "Sottana Service",
                     "brand_subtitle": null,
@@ -141,12 +146,38 @@
                             "type": "link"
                         }
                     ]
+=======
+                    "view": "pub_theme::components.blocks.navigation.simple",
+                    "items": [
+                        {
+                            "label": "Amministrazione",
+                            "url": "\/",
+                            "type": "link"
+                        },
+                        {
+                            "label": "{{ __('pub_theme::header.links.Project.label') }}",
+                            "url": "{{ route('pages.view',['slug'=>'progetto']) }}",
+                            "type": "link"
+                        },
+                        {
+                            "label": "Partecipanti",
+                            "url": "{{ route('pages.view',['slug'=>'partners']) }}",
+                            "type": "link"
+                        }
+                    ],
+                    "alignment": null,
+                    "orientation": null
+>>>>>>> 4b6b99016 (first commit)
                 }
             }
         ]
     },
     "created_at": "2025-07-08T09:02:57.000000Z",
+<<<<<<< HEAD
     "updated_at": "2026-02-07T10:00:00.000000Z",
+=======
+    "updated_at": "2025-08-29T11:03:49.000000Z",
+>>>>>>> 4b6b99016 (first commit)
     "created_by": null,
     "updated_by": "01985ae8-8039-71ea-88c7-54ebce6295b0"
 }

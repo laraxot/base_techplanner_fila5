@@ -9,6 +9,7 @@ return [
         'icon' => 'heroicon-o-envelope',
         'sort' => 34,
     ],
+<<<<<<< HEAD
     'label' => 'Team Invitation',
     'plural_label' => 'Team Invitation (Plurale)',
     'fields' => [
@@ -42,4 +43,10 @@ return [
             'label' => 'Elimina Team Invitation',
         ],
     ],
+=======
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+    'actions' => [],
+>>>>>>> 4b6b99016 (first commit)
 ];

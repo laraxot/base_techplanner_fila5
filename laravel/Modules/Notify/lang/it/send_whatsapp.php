@@ -23,15 +23,21 @@ return [
             'label' => 'Destinatario',
             'placeholder' => 'Inserisci il numero',
             'helper_text' => 'Numero di telefono del destinatario',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Scrivi il messaggio',
             'helper_text' => 'Contenuto del messaggio WhatsApp',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -47,6 +53,9 @@ return [
         'error' => 'Si è verificato un errore durante l\'invio del messaggio WhatsApp',
         'confirmation' => 'Sei sicuro di voler inviare questo messaggio WhatsApp?',
     ],
+<<<<<<< HEAD
     'label' => 'Send Whatsapp',
     'plural_label' => 'Send Whatsapp (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

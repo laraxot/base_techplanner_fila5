@@ -144,5 +144,10 @@ Il blocco può essere utilizzato in vari contesti:
 - [Analytics Integration](../marketing/analytics.md)
 
 ## Collegamenti tra versioni di social.md
+<<<<<<< HEAD
 * [social.md](laravel/modules/tenant/docs/it/config/social.md)
 * [social.md](laravel/modules/cms/docs/blocks/social.md)
+=======
+* [social.md](laravel/Modules/Tenant/docs/it/config/social.md)
+* [social.md](laravel/Modules/Cms/docs/blocks/social.md)
+>>>>>>> 4b6b99016 (first commit)

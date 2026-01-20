@@ -141,4 +141,8 @@ class MediaConvertResource extends XotBaseResource
 ## Collegamenti Bidirezionali
 
 - [Documento principale risoluzione conflitti](risoluzione_conflitti.md)
+<<<<<<< HEAD
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
+=======
+- [Documentazione modulo Media](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
+>>>>>>> 4b6b99016 (first commit)

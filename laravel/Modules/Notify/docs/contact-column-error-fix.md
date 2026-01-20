@@ -3,6 +3,10 @@
 ## 📋 Riepilogo della Correzione
 
 **File**: `laravel/Modules/Notify/app/Filament/Tables/Columns/ContactColumn.php`
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 **Stato**: ✅ **CORRETTO** - Errori risolti completamente
 
 ## 🚨 Errori Identificati e Risolti
@@ -341,3 +345,7 @@ La ContactColumn ora:
 - ✅ Mostra correttamente le icone
 - ✅ Mostra solo i contatti del record specifico
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-06* 
+>>>>>>> 4b6b99016 (first commit)

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -16,6 +17,17 @@ use Illuminate\Support\Str;
 /**
  * Modello per le notizie comunali (Municipal News)
  *
+=======
+use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
+use Illuminate\Database\Eloquent\Relations\{BelongsTo, MorphMany, BelongsToMany};
+use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Support\Str;
+use Carbon\Carbon;
+
+/**
+ * Modello per le notizie comunali (Municipal News)
+ * 
+>>>>>>> 4b6b99016 (first commit)
  * Rappresenta notizie, comunicati stampa, avvisi pubblici
  * e altre comunicazioni dell'ente secondo l'ontologia AGID
  */
@@ -152,7 +164,11 @@ class MunicipalNews extends Model
      */
     public const PRIORITY_LEVELS = [
         1 => 'Bassa',
+<<<<<<< HEAD
         2 => 'Normale',
+=======
+        2 => 'Normale', 
+>>>>>>> 4b6b99016 (first commit)
         3 => 'Alta',
         4 => 'Urgente',
         5 => 'Critica',
@@ -247,7 +263,11 @@ class MunicipalNews extends Model
             ->where('publication_date', '<=', now())
             ->where(function ($q) {
                 $q->whereNull('expiry_date')
+<<<<<<< HEAD
                     ->orWhere('expiry_date', '>', now());
+=======
+                  ->orWhere('expiry_date', '>', now());
+>>>>>>> 4b6b99016 (first commit)
             });
     }
 
@@ -376,7 +396,11 @@ class MunicipalNews extends Model
                 if ($this->is_expired) {
                     return false;
                 }
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 4b6b99016 (first commit)
                 return $this->publication_date <= now();
             }
         );
@@ -412,10 +436,16 @@ class MunicipalNews extends Model
                 if ($this->reading_time) {
                     return $this->reading_time;
                 }
+<<<<<<< HEAD
 
                 // Stima basata su 200 parole al minuto
                 $wordCount = str_word_count(strip_tags($this->content));
 
+=======
+                
+                // Stima basata su 200 parole al minuto
+                $wordCount = str_word_count(strip_tags($this->content));
+>>>>>>> 4b6b99016 (first commit)
                 return max(1, ceil($wordCount / 200));
             }
         );
@@ -437,7 +467,11 @@ class MunicipalNews extends Model
     protected function featuredImageUrl(): Attribute
     {
         return Attribute::make(
+<<<<<<< HEAD
             get: fn () => $this->featured_image ? asset('storage/'.$this->featured_image) : null
+=======
+            get: fn () => $this->featured_image ? asset('storage/' . $this->featured_image) : null
+>>>>>>> 4b6b99016 (first commit)
         );
     }
 
@@ -452,7 +486,10 @@ class MunicipalNews extends Model
                 if (empty($this->attributes['slug'])) {
                     $this->attributes['slug'] = Str::slug($value);
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4b6b99016 (first commit)
                 return $value;
             }
         );
@@ -466,6 +503,7 @@ class MunicipalNews extends Model
         return Attribute::make(
             set: function ($value) {
                 $this->attributes['content'] = $value;
+<<<<<<< HEAD
 
                 // Auto-calcola reading time se non impostato
                 if (! isset($this->attributes['reading_time'])) {
@@ -473,6 +511,15 @@ class MunicipalNews extends Model
                     $this->attributes['reading_time'] = max(1, ceil($wordCount / 200));
                 }
 
+=======
+                
+                // Auto-calcola reading time se non impostato
+                if (!isset($this->attributes['reading_time'])) {
+                    $wordCount = str_word_count(strip_tags($value));
+                    $this->attributes['reading_time'] = max(1, ceil($wordCount / 200));
+                }
+                
+>>>>>>> 4b6b99016 (first commit)
                 return $value;
             }
         );
@@ -486,7 +533,11 @@ class MunicipalNews extends Model
         if ($this->excerpt) {
             return $this->excerpt;
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 4b6b99016 (first commit)
         return Str::limit(strip_tags($this->content), $length);
     }
 
@@ -495,7 +546,11 @@ class MunicipalNews extends Model
      */
     public function getFormattedTags(): array
     {
+<<<<<<< HEAD
         if (! $this->tags || ! is_array($this->tags)) {
+=======
+        if (!$this->tags || !is_array($this->tags)) {
+>>>>>>> 4b6b99016 (first commit)
             return [];
         }
 
@@ -511,7 +566,11 @@ class MunicipalNews extends Model
      */
     public function getFormattedExternalLinks(): array
     {
+<<<<<<< HEAD
         if (! $this->external_links || ! is_array($this->external_links)) {
+=======
+        if (!$this->external_links || !is_array($this->external_links)) {
+>>>>>>> 4b6b99016 (first commit)
             return [];
         }
 
@@ -520,7 +579,10 @@ class MunicipalNews extends Model
                 if (is_string($link)) {
                     return ['url' => $link, 'title' => parse_url($link, PHP_URL_HOST)];
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4b6b99016 (first commit)
                 return $link;
             })
             ->toArray();
@@ -531,7 +593,11 @@ class MunicipalNews extends Model
      */
     public function getFormattedAttachments(): array
     {
+<<<<<<< HEAD
         if (! $this->attachments || ! is_array($this->attachments)) {
+=======
+        if (!$this->attachments || !is_array($this->attachments)) {
+>>>>>>> 4b6b99016 (first commit)
             return [];
         }
 
@@ -541,14 +607,24 @@ class MunicipalNews extends Model
                     return [
                         'path' => $attachment,
                         'name' => basename($attachment),
+<<<<<<< HEAD
                         'url' => asset('storage/'.$attachment),
+=======
+                        'url' => asset('storage/' . $attachment),
+>>>>>>> 4b6b99016 (first commit)
                         'size' => null,
                         'type' => pathinfo($attachment, PATHINFO_EXTENSION),
                     ];
                 }
+<<<<<<< HEAD
 
                 return array_merge([
                     'url' => isset($attachment['path']) ? asset('storage/'.$attachment['path']) : null,
+=======
+                
+                return array_merge([
+                    'url' => isset($attachment['path']) ? asset('storage/' . $attachment['path']) : null,
+>>>>>>> 4b6b99016 (first commit)
                 ], $attachment);
             })
             ->toArray();
@@ -559,7 +635,11 @@ class MunicipalNews extends Model
      */
     public function getFormattedGallery(): array
     {
+<<<<<<< HEAD
         if (! $this->gallery || ! is_array($this->gallery)) {
+=======
+        if (!$this->gallery || !is_array($this->gallery)) {
+>>>>>>> 4b6b99016 (first commit)
             return [];
         }
 
@@ -568,14 +648,24 @@ class MunicipalNews extends Model
                 if (is_string($image)) {
                     return [
                         'path' => $image,
+<<<<<<< HEAD
                         'url' => asset('storage/'.$image),
+=======
+                        'url' => asset('storage/' . $image),
+>>>>>>> 4b6b99016 (first commit)
                         'caption' => null,
                         'alt' => null,
                     ];
                 }
+<<<<<<< HEAD
 
                 return array_merge([
                     'url' => isset($image['path']) ? asset('storage/'.$image['path']) : null,
+=======
+                
+                return array_merge([
+                    'url' => isset($image['path']) ? asset('storage/' . $image['path']) : null,
+>>>>>>> 4b6b99016 (first commit)
                 ], $image);
             })
             ->toArray();
@@ -611,7 +701,11 @@ class MunicipalNews extends Model
      */
     public function shouldBeArchived(): bool
     {
+<<<<<<< HEAD
         return $this->is_expired ||
+=======
+        return $this->is_expired || 
+>>>>>>> 4b6b99016 (first commit)
                ($this->expiry_date && $this->expiry_date->isPast());
     }
 
@@ -640,7 +734,11 @@ class MunicipalNews extends Model
             'articleSection' => $this->category,
             'keywords' => is_array($this->seo_keywords) ? implode(', ', $this->seo_keywords) : null,
             'wordCount' => str_word_count(strip_tags($this->content)),
+<<<<<<< HEAD
             'timeRequired' => 'PT'.$this->estimated_reading_time.'M',
+=======
+            'timeRequired' => 'PT' . $this->estimated_reading_time . 'M',
+>>>>>>> 4b6b99016 (first commit)
         ];
     }
 
@@ -706,7 +804,11 @@ class MunicipalNews extends Model
             $counter = 1;
 
             while (static::where('slug', $model->slug)->exists()) {
+<<<<<<< HEAD
                 $model->slug = $originalSlug.'-'.$counter;
+=======
+                $model->slug = $originalSlug . '-' . $counter;
+>>>>>>> 4b6b99016 (first commit)
                 $counter++;
             }
         });
@@ -716,6 +818,7 @@ class MunicipalNews extends Model
             if (is_null($model->news_status)) {
                 $model->news_status = 'draft';
             }
+<<<<<<< HEAD
 
             if (is_null($model->priority_level)) {
                 $model->priority_level = 2; // Normale
@@ -729,6 +832,21 @@ class MunicipalNews extends Model
                 $model->language = 'it';
             }
 
+=======
+            
+            if (is_null($model->priority_level)) {
+                $model->priority_level = 2; // Normale
+            }
+            
+            if (is_null($model->urgency_level)) {
+                $model->urgency_level = 2; // Normale
+            }
+            
+            if (is_null($model->language)) {
+                $model->language = 'it';
+            }
+            
+>>>>>>> 4b6b99016 (first commit)
             if (is_null($model->revision_number)) {
                 $model->revision_number = 1;
             }
@@ -736,9 +854,15 @@ class MunicipalNews extends Model
 
         // Auto-publish se la data è raggiunta
         static::updating(function ($model) {
+<<<<<<< HEAD
             if ($model->news_status === 'approved' &&
                 $model->publication_date <= now() &&
                 ! $model->is_published) {
+=======
+            if ($model->news_status === 'approved' && 
+                $model->publication_date <= now() && 
+                !$model->is_published) {
+>>>>>>> 4b6b99016 (first commit)
                 $model->is_published = true;
                 $model->news_status = 'published';
             }
@@ -752,4 +876,8 @@ class MunicipalNews extends Model
             }
         });
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4b6b99016 (first commit)

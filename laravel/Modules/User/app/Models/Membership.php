@@ -6,7 +6,13 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\ProfileContract;
+=======
+use Modules\User\Database\Factories\MembershipFactory;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Models\Traits\HasXotFactory;
+>>>>>>> 4b6b99016 (first commit)
 
 /**
  * Modules\User\Models\Membership.
@@ -48,12 +54,21 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $deleter
  *
+<<<<<<< HEAD
+=======
+ * @method static MembershipFactory          factory($count = null, $state = [])
+>>>>>>> 4b6b99016 (first commit)
  * @method static Builder<static>|Membership whereId($value)
  *
  * @mixin \Eloquent
  */
 class Membership extends BasePivot
 {
+<<<<<<< HEAD
+=======
+    use HasXotFactory;
+
+>>>>>>> 4b6b99016 (first commit)
     /** @var string */
     protected $connection = 'user';
 

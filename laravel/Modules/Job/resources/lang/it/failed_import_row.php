@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -47,6 +48,23 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'import_batch_id' => [
+            'label' => 'ID batch importazione',
+        ],
+        'row_index' => [
+            'label' => 'Indice riga',
+        ],
+        'errors' => [
+            'label' => 'Errori',
+        ],
+        'data' => [
+            'label' => 'Dati',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -57,4 +75,8 @@ return [
             'label' => 'Correggi riga',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

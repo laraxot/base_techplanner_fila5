@@ -6,6 +6,10 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\TenantUserFactory;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 
@@ -46,6 +50,11 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
+<<<<<<< HEAD
+=======
+ * @method static TenantUserFactory factory($count = null, $state = [])
+ *
+>>>>>>> 4b6b99016 (first commit)
  * @mixin \Eloquent
  */
 class TenantUser extends BasePivot

@@ -191,6 +191,12 @@ php artisan test --filter=TestClass
 ## Collegamenti
 
 - [Git Documentation](https://git-scm.com/doc)
+<<<<<<< HEAD
 - [Workflow Git](../../../xot/docs/git/workflow.md)
 - [Best Practices](../../../xot/docs/best-practices/git.md)
 - [CI/CD Pipeline](../../../xot/docs/ci-cd/readme.md)
+=======
+- [Workflow Git](../../../Xot/docs/git/workflow.md)
+- [Best Practices](../../../Xot/docs/best-practices/git.md)
+- [CI/CD Pipeline](../../../Xot/docs/ci-cd/README.md)
+>>>>>>> 4b6b99016 (first commit)

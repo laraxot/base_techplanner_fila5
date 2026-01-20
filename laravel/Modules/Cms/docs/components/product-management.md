@@ -479,5 +479,10 @@ $products = computed(function () {
 - [Filament Forms](https://filamentphp.com/docs/forms)
 
 ## Collegamenti tra versioni di product-management.md
+<<<<<<< HEAD
 * [product-management.md](laravel/modules/cms/docs/product-management.md)
 * [product-management.md](laravel/modules/cms/docs/components/product-management.md)
+=======
+* [product-management.md](laravel/Modules/Cms/docs/product-management.md)
+* [product-management.md](laravel/Modules/Cms/docs/components/product-management.md)
+>>>>>>> 4b6b99016 (first commit)

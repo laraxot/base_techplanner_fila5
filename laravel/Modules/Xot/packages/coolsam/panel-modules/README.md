@@ -11,6 +11,378 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 
+<<<<<<< HEAD
+=======
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+
+>>>>>>> 4b6b99016 (first commit)
 v2, [see the documentation here](https://github.com/savannabits/filament-modules/tree/main#readme) to get started.**
 
 For example, if you have two modules (**Blog** and **Pos**), you should be able to have filament installed in each module with separate resources as below:
@@ -108,11 +480,19 @@ composer test
 
 ## Changelog
 
+<<<<<<< HEAD
 Please see [CHANGELOG](changelog.md) for more information on what has changed recently.
 
 ## Contributing
 
 Please see [CONTRIBUTING](contributing.md) for details.
+=======
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+>>>>>>> 4b6b99016 (first commit)
 
 ## Security Vulnerabilities
 
@@ -125,4 +505,8 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## License
 
+<<<<<<< HEAD
 The MIT License (MIT). Please see [License File](license.md) for more information.
+=======
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+>>>>>>> 4b6b99016 (first commit)

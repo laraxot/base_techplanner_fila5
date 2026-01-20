@@ -132,7 +132,11 @@ test('any user type can login successfully', function (): void {
 
 ## 📖 **Collegamenti**
 
+<<<<<<< HEAD
 - [XotData Architecture](../../modules/xot/docs/best-practices.md)
+=======
+- [XotData Architecture](../../Modules/Xot/docs/best-practices.md)
+>>>>>>> 4b6b99016 (first commit)
 - [UserContract Interface](../../Modules/Xot/Contracts/UserContract.php)
 - [Modular Testing Guide](../../docs/testing/modular-independence.md)
 
@@ -140,4 +144,8 @@ test('any user type can login successfully', function (): void {
 
 **Status**: ✅ COMPLETATO
 **Priorità**: 🚨 P0 - CRITICO (ora risolto)
+<<<<<<< HEAD
+=======
+**Ultimo Aggiornamento**: 2025-01-16
+>>>>>>> 4b6b99016 (first commit)
 **Validato**: Test in passing ✅

@@ -164,6 +164,13 @@ grep -r "database.*saluteora\|app.*saluteora" Modules/Notify/
 ## Collegamenti
 
 - [../../../docs/module_reusability_guidelines.md](../../../docs/module_reusability_guidelines.md)
+<<<<<<< HEAD
 - [../../Xot/docs/xotdata_usage.md](../../xot/docs/xotdata_usage.md)
 - [testing_best_practices.md](testing_best_practices.md)
 
+=======
+- [../../Xot/docs/xotdata_usage.md](../../Xot/docs/xotdata_usage.md)
+- [testing_best_practices.md](testing_best_practices.md)
+
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)

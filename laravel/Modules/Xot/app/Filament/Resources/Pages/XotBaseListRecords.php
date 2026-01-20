@@ -58,6 +58,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
     {
         return ['id' => 'desc'];
     }
+<<<<<<< HEAD
     
     /**
      * Get the header actions.
@@ -65,11 +66,23 @@ abstract class XotBaseListRecords extends FilamentListRecords
      * @return array<string, Action|\Filament\Actions\ActionGroup>
      *
      * @phpstan-ignore method.childReturnType
+=======
+
+    /**
+     * Get the header actions.
+     *
+     * @return array<string, Action>
+>>>>>>> 4b6b99016 (first commit)
      */
     protected function getHeaderActions(): array
     {
         return [
+<<<<<<< HEAD
             'create' => \Filament\Actions\CreateAction::make()->icon('heroicon-o-plus'),
+=======
+            // \Filament\Actions\CreateAction::make(),
+            // ExportXlsAction::make('export_xls'),
+>>>>>>> 4b6b99016 (first commit)
         ];
     }
 

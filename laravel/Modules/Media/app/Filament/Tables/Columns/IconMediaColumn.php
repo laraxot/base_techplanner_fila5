@@ -20,6 +20,10 @@ class IconMediaColumn extends IconColumn
                 return $record->getFirstMedia($attachment);
             }
 
+<<<<<<< HEAD
+=======
+            return null;
+>>>>>>> 4b6b99016 (first commit)
         })
             ->icon('heroicon-o-document-text')
             ->color(function ($record) use ($attachment): string {
@@ -42,20 +46,32 @@ class IconMediaColumn extends IconColumn
             ->action(function (array $arguments, Request $request) use ($attachment) {
                 // Skip action if record is not available or doesn't have media capabilities
                 if (! isset($arguments['record'])) {
+<<<<<<< HEAD
                     return;
+=======
+                    return null;
+>>>>>>> 4b6b99016 (first commit)
                 }
 
                 $record = $arguments['record'];
 
                 // Verify record is an object and has the required method
                 if (! is_object($record) || ! method_exists($record, 'getFirstMedia')) {
+<<<<<<< HEAD
                     return;
+=======
+                    return null;
+>>>>>>> 4b6b99016 (first commit)
                 }
 
                 /** @var Media|null $media */
                 $media = $record->getFirstMedia($attachment);
                 if ($media === null) {
+<<<<<<< HEAD
                     return;
+=======
+                    return null;
+>>>>>>> 4b6b99016 (first commit)
                 }
 
                 return $media->toInlineResponse($request);

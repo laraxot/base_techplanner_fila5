@@ -9,6 +9,11 @@ use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
+=======
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+>>>>>>> 4b6b99016 (first commit)
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
@@ -24,8 +29,15 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 /**
  * @property \Filament\Schemas\Schema $emailForm
  */
+<<<<<<< HEAD
 class SendEmail extends XotBasePage
 {
+=======
+class SendEmail extends XotBasePage implements HasForms
+{
+    use InteractsWithForms;
+
+>>>>>>> 4b6b99016 (first commit)
     // use NavigationLabelTrait;
 
     public ?array $emailData = [];

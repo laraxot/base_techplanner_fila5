@@ -246,5 +246,10 @@ $emit = function ($event) {
 - [Esempi di Componenti Volt](https://github.com/livewire/volt/tree/main/examples)
 
 ## Collegamenti tra versioni di volt-introduction.md
+<<<<<<< HEAD
 * [volt-introduction.md](laravel/modules/cms/docs/volt-introduction.md)
 * [volt-introduction.md](laravel/modules/cms/docs/components/volt-introduction.md)
+=======
+* [volt-introduction.md](laravel/Modules/Cms/docs/volt-introduction.md)
+* [volt-introduction.md](laravel/Modules/Cms/docs/components/volt-introduction.md)
+>>>>>>> 4b6b99016 (first commit)

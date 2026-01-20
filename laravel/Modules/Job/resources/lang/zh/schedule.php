@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -59,6 +60,29 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'command' => [
+            'label' => '命令',
+        ],
+        'expression' => [
+            'label' => 'Cron表达式',
+        ],
+        'description' => [
+            'label' => '描述',
+        ],
+        'timezone' => [
+            'label' => '时区',
+        ],
+        'status' => [
+            'label' => '状态',
+        ],
+        'created_at' => [
+            'label' => '创建时间',
+        ],
+        'updated_at' => [
+            'label' => '更新时间',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -72,4 +96,8 @@ return [
             'label' => '禁用',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

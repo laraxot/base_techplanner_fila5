@@ -244,7 +244,11 @@ private function getSolutionForError(?string $errorCode): string
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione Generale Media](../readme.md)
+=======
+- [Documentazione Generale Media](../README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Best Practice Traduzioni](../../../docs/translation-standards.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
 - [PHPStan Level 10 Fixes](./phpstan_level10_fixes.md)

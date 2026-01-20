@@ -30,6 +30,7 @@ return [
             'tooltip' => 'logout',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Tenant Profile',
         'plural' => 'Tenant Profile',
@@ -63,4 +64,10 @@ return [
             'description' => '',
         ],
     ],
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+>>>>>>> 4b6b99016 (first commit)
 ];

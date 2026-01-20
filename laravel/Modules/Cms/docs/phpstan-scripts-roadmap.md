@@ -1,5 +1,9 @@
 # PHPStan Level 10 - Scripts Utility Roadmap
 
+<<<<<<< HEAD
+=======
+**Data**: 2026-01-09  
+>>>>>>> 4b6b99016 (first commit)
 **Modulo**: Cms  
 **Livello PHPStan**: 10  
 **Errori Totali**: 32  
@@ -237,7 +241,11 @@ cd /var/www/_bases/base_laravelpizza/laravel
 
 **Status**: 🔄 **IN IMPLEMENTAZIONE**
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-09
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 
@@ -294,4 +302,8 @@ cd /var/www/_bases/base_laravelpizza/laravel
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-09
+>>>>>>> 4b6b99016 (first commit)

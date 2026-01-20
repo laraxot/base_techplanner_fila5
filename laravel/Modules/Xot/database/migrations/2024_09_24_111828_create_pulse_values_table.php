@@ -12,6 +12,12 @@ return new class extends XotBaseMigration
      */
     public function up(): void
     {
+<<<<<<< HEAD
+=======
+        if (! $this->shouldRun()) {
+            return;
+        }
+>>>>>>> 4b6b99016 (first commit)
         // -- CREATE --
         $this->tableCreate(function (Blueprint $table): void {
             $table->id();

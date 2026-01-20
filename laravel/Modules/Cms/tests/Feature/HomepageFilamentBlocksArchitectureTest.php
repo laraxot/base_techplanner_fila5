@@ -32,7 +32,11 @@ describe('Homepage Filament Builder Blocks - CMS Module', function () {
     });
 
     test('json content structure is properly loaded by cms', function () {
+<<<<<<< HEAD
         $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
+=======
+        $homepageJsonPath = config_path('local/<nome progetto>/database/content/pages/home.json');
+>>>>>>> 4b6b99016 (first commit)
         expect(file_exists($homepageJsonPath))->toBeTrue('Homepage JSON must exist for CMS');
 
         $homepageData = json_decode(file_get_contents($homepageJsonPath), true);
@@ -74,7 +78,11 @@ describe('Homepage Filament Builder Blocks - CMS Module', function () {
 
         // Load homepage blocks
         $homepageData = json_decode(
+<<<<<<< HEAD
             file_get_contents(config_path('local/<nome progetto>/database/content/home.json')),
+=======
+            file_get_contents(config_path('local/<nome progetto>/database/content/pages/home.json')),
+>>>>>>> 4b6b99016 (first commit)
             true,
         );
 
@@ -93,7 +101,11 @@ describe('Homepage Filament Builder Blocks - CMS Module', function () {
 
         // Load expected content from JSON
         $homepageData = json_decode(
+<<<<<<< HEAD
             file_get_contents(config_path('local/<nome progetto>/database/content/home.json')),
+=======
+            file_get_contents(config_path('local/<nome progetto>/database/content/pages/home.json')),
+>>>>>>> 4b6b99016 (first commit)
             true,
         );
 
@@ -121,7 +133,11 @@ describe('Homepage Filament Builder Blocks - CMS Module', function () {
 
         // Load blocks to verify theme views
         $homepageData = json_decode(
+<<<<<<< HEAD
             file_get_contents(config_path('local/<nome progetto>/database/content/home.json')),
+=======
+            file_get_contents(config_path('local/<nome progetto>/database/content/pages/home.json')),
+>>>>>>> 4b6b99016 (first commit)
             true,
         );
 
@@ -136,7 +152,11 @@ describe('Homepage Filament Builder Blocks - CMS Module', function () {
 
     test('cms handles multilingual content correctly', function () {
         $homepageData = json_decode(
+<<<<<<< HEAD
             file_get_contents(config_path('local/<nome progetto>/database/content/home.json')),
+=======
+            file_get_contents(config_path('local/<nome progetto>/database/content/pages/home.json')),
+>>>>>>> 4b6b99016 (first commit)
             true,
         );
 
@@ -173,7 +193,11 @@ describe('Homepage Filament Builder Blocks - CMS Module', function () {
     });
 
     test('cms json storage pattern is consistent', function () {
+<<<<<<< HEAD
         $pagesPath = config_path('local/<nome progetto>/database/content/');
+=======
+        $pagesPath = config_path('local/<nome progetto>/database/content/pages/');
+>>>>>>> 4b6b99016 (first commit)
         expect(file_exists($pagesPath))->toBeTrue('CMS pages directory should exist');
 
         $homepageJsonPath = $pagesPath.'home.json';
@@ -201,7 +225,11 @@ describe('Homepage Filament Builder Blocks - CMS Module', function () {
 
     test('cms blade syntax processing works in json', function () {
         $homepageData = json_decode(
+<<<<<<< HEAD
             file_get_contents(config_path('local/<nome progetto>/database/content/home.json')),
+=======
+            file_get_contents(config_path('local/<nome progetto>/database/content/pages/home.json')),
+>>>>>>> 4b6b99016 (first commit)
             true,
         );
 

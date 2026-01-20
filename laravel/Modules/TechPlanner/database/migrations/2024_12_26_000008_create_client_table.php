@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Geo\Enums\AddressItemEnum;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class() extends XotBaseMigration
@@ -22,6 +26,11 @@ return new class() extends XotBaseMigration
             // null = CREATE context (no hasColumn checks), true = include legacy fields
             AddressItemEnum::columns($table, null, true);
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 4b6b99016 (first commit)
             $this->addCommonFields($table);
         });
 
@@ -57,6 +66,13 @@ return new class() extends XotBaseMigration
             // $this = UPDATE context (uses hasColumn), true = include legacy fields
             AddressItemEnum::columns($table, $this, true);
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> 4b6b99016 (first commit)
             $this->updateTimestamps($table, true);
         });
     }

@@ -113,7 +113,11 @@ php artisan user:balance {userId}
 
 ## 🤝 Contributi
 
+<<<<<<< HEAD
 I contributi sono ben accetti! Si prega di leggere le nostre [linee guida per i contributi](./contributing.md) prima di inviare pull request.
+=======
+I contributi sono ben accetti! Si prega di leggere le nostre [linee guida per i contributi](./CONTRIBUTING.md) prima di inviare pull request.
+>>>>>>> 4b6b99016 (first commit)
 
 ## 📄 Licenza
 
@@ -213,8 +217,13 @@ class PredictionContract extends Model
 - [Glossario Prediction Market](./08_glossario.md)
 - [Confronto Approcci](../shop/07_confronto_approcci.md)
 - [Build from Scratch](../shop/build_from_scratch.md)
+<<<<<<< HEAD
 - [README Shop](../shop/readme.md)
 - [README Bank](../bank/readme.md)
+=======
+- [README Shop](../shop/README.md)
+- [README Bank](../bank/README.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 **Questa documentazione è neutra e riutilizzabile, senza riferimenti a progetti specifici, e segue le regole di neutralità e modularità.**

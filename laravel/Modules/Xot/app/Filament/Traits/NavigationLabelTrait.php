@@ -11,7 +11,11 @@ use UnitEnum;
 
 trait NavigationLabelTrait
 {
+<<<<<<< HEAD
     use TransTrait;
+=======
+    use TransFuncTrait;
+>>>>>>> 4b6b99016 (first commit)
 
     // public function getModelLabel(): string
     // {

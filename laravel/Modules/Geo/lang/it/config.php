@@ -8,78 +8,108 @@ return [
             'label' => 'Chiave',
             'placeholder' => 'Inserisci la chiave di configurazione',
             'help' => 'Chiave identificativa per la configurazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'value' => [
             'label' => 'Valore',
             'placeholder' => 'Inserisci il valore di configurazione',
             'help' => 'Valore della configurazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'type' => [
             'label' => 'Tipo',
             'placeholder' => 'Seleziona il tipo di valore',
             'help' => 'Tipo di dato per la configurazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'group' => [
             'label' => 'Gruppo',
             'placeholder' => 'Inserisci il gruppo di configurazione',
             'help' => 'Gruppo per organizzare le configurazioni',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Descrizione della configurazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_public' => [
             'label' => 'Pubblica',
             'help' => 'Indica se la configurazione è pubblica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_encrypted' => [
             'label' => 'Crittografata',
             'help' => 'Indica se la configurazione è crittografata',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_required' => [
             'label' => 'Obbligatoria',
             'help' => 'Indica se la configurazione è obbligatoria',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'validation_rules' => [
             'label' => 'Regole di validazione',
             'placeholder' => 'Configura le regole di validazione',
             'help' => 'Regole di validazione per il valore',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'default_value' => [
             'label' => 'Valore predefinito',
             'placeholder' => 'Inserisci il valore predefinito',
             'help' => 'Valore predefinito per la configurazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -178,6 +208,7 @@ return [
         'csv' => 'CSV',
         'txt' => 'Testo',
     ],
+<<<<<<< HEAD
     'label' => 'Config',
     'plural_label' => 'Config (Plurale)',
     'navigation' => [
@@ -202,4 +233,6 @@ return [
             'label' => 'Elimina Config',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

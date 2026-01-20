@@ -501,8 +501,13 @@ try {
 ## 🔗 Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< HEAD
 - [Ptv - SendMailByRecord Complete Guide](../../../ptv/docs/pdf-email-attachments-complete-guide.md)
 - [Notify - Email Attachments](../../../notify/docs/email-sending/attachments_usage.md)
+=======
+- [Ptv - SendMailByRecord Complete Guide](../../../Ptv/docs/pdf-email-attachments-complete-guide.md)
+- [Notify - Email Attachments](../../../Notify/docs/email-sending/attachments_usage.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Xot - View Conventions](../conventions/view-naming.md)
 
 ### File Correlati
@@ -516,6 +521,10 @@ try {
 
 ---
 
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento:** 2025-01-22
+>>>>>>> 4b6b99016 (first commit)
 **Versione:** 1.0
 **Stato:** ✅ Production Ready
 **PHPStan Level:** 10

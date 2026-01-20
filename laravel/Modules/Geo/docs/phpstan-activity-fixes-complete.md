@@ -40,3 +40,7 @@ array_merge(
 \Modules\Module\Database\Factories\ModelFactory::new()
 ```
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)

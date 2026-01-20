@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 @volt('dashboard.index')
+=======
+>>>>>>> 4b6b99016 (first commit)
 <?php
 
 use function Livewire\Volt\{state, mount};
@@ -77,4 +80,7 @@ mount(function () {
         </div>
     </x-filament::page>
 </div>
+<<<<<<< HEAD
 @endvolt
+=======
+>>>>>>> 4b6b99016 (first commit)

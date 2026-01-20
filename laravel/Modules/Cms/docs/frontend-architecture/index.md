@@ -10,7 +10,14 @@
 - [Manutenzione](../frontend-architecture/debugging.md)
 
 ## Collegamenti tra versioni di index.md
+<<<<<<< HEAD
 * [index.md](laravel/modules/xot/docs/contracts/index.md)
 * [index.md](laravel/modules/cms/docs/frontend-architecture/index.md)
 * [index.md](laravel/themes/one/docs/roadmap/philosophy/index.md)
 * [index.md](laravel/themes/one/docs/roadmap/inspiration/index.md)
+=======
+* [index.md](laravel/Modules/Xot/docs/contracts/index.md)
+* [index.md](laravel/Modules/Cms/docs/frontend-architecture/index.md)
+* [index.md](laravel/Themes/One/docs/roadmap/philosophy/index.md)
+* [index.md](laravel/Themes/One/docs/roadmap/inspiration/index.md)
+>>>>>>> 4b6b99016 (first commit)

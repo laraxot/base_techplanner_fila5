@@ -19,7 +19,11 @@
 ### ⚠️ AREE DI MIGLIORAMENTO CRITICHE
 
 #### 1. Riusabilità Compromessa (CRITICO)
+<<<<<<< HEAD
 - **194+ occorrenze hardcoded** di "<nome progetto>" 
+=======
+- **194+ occorrenze hardcoded** di "<nome progetto>"
+>>>>>>> 4b6b99016 (first commit)
 - **Path assoluti** in configurazioni e esempi
 - **Content specifico** per <main module> in examples
 - **URL hardcoded** in documentazione
@@ -61,7 +65,11 @@ return [
         'domain' => config('app.domain'),
         'business_type' => config('app.business_type', 'organization'),
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     'content' => [
         'default_templates' => [
             'homepage' => 'cms::templates.homepage',
@@ -69,7 +77,11 @@ return [
             'about' => 'cms::templates.about',
         ],
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     'seo' => [
         'default_meta' => [
             'title' => config('app.name') . ' - {{page_title}}',
@@ -83,12 +95,21 @@ return [
 ```blade
 {{-- templates/services.blade.php --}}
 <x-cms::page>
+<<<<<<< HEAD
     <x-cms::hero 
         title="I nostri servizi"
         subtitle="Scopri tutti i servizi offerti da {{ config('app.name') }}"
     />
     
     <x-cms::services-grid 
+=======
+    <x-cms::hero
+        title="I nostri servizi"
+        subtitle="Scopri tutti i servizi offerti da {{ config('app.name') }}"
+    />
+
+    <x-cms::services-grid
+>>>>>>> 4b6b99016 (first commit)
         :services="$services"
         business-type="{{ config('app.business_type', 'organization') }}"
     />
@@ -155,7 +176,11 @@ class ContentCacheService
     public function getCachedPage(string $slug): ?Page
     {
         $cacheKey = $this->cachePrefix . 'page_' . $slug;
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 4b6b99016 (first commit)
         return cache()->remember($cacheKey, $this->defaultTtl, function () use ($slug) {
             return Page::with(['blocks', 'media', 'seo'])
                 ->where('slug', $slug)
@@ -213,7 +238,11 @@ class SeoService
     public function generateStructuredData(Page $page): array
     {
         $businessType = config('app.business_type', 'Organization');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 4b6b99016 (first commit)
         return [
             '@context' => 'https://schema.org',
             '@type' => $businessType,
@@ -322,3 +351,7 @@ php artisan cms:seo-audit
 - [Content Management Guide](content-management/)
 - [SEO Best Practices](seo/)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)

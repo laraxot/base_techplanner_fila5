@@ -56,7 +56,10 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+=======
+>>>>>>> 4b6b99016 (first commit)
 class StoredEvent extends SpatieStoredEvent
 {
     use HasXotFactory;
@@ -77,6 +80,7 @@ class StoredEvent extends SpatieStoredEvent
         'updated_by',
         'created_by',
     ];
+<<<<<<< HEAD
 
     /**
      * Get the attributes that should be cast.
@@ -90,4 +94,6 @@ class StoredEvent extends SpatieStoredEvent
             'meta_data' => SchemalessAttributes::class,
         ];
     }
+=======
+>>>>>>> 4b6b99016 (first commit)
 }

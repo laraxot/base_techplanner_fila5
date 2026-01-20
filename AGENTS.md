@@ -1,5 +1,6 @@
 # AGENTS.md
 
+<<<<<<< HEAD
 This file provides essential guidance for agentic coding agents working in this Laravel modular application with Filament v5.
 
 ## 🚨 CRITICAL NEW Rules
@@ -144,6 +145,9 @@ Vedi: [docs/continuous-improvement-lessons.md](docs/continuous-improvement-lesso
 
 - Git tiene traccia automaticamente delle modifiche
 - Le date appesantiscono la manutenzione e creano merge conflict
+=======
+This file provides essential guidance for agentic coding agents working in this Laravel modular application with Filament v4.
+>>>>>>> 4b6b99016 (first commit)
 
 ## Build/Lint/Test Commands
 
@@ -214,6 +218,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 ### Critical Architecture Rules
 
+<<<<<<< HEAD
 #### 🔄 **GIT COMMIT/PUSH RULE** - CRITICAL RULE
 **SEMPRE fare git commit e git push quando il codice è stabile e funzionante!**
 
@@ -312,6 +317,8 @@ name('pages.services');
 <!-- Your HTML/Blade content -->
 ```
 
+=======
+>>>>>>> 4b6b99016 (first commit)
 #### 1. NEVER Extend Filament Directly
 ```php
 // ❌ WRONG

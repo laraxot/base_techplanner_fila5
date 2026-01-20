@@ -1,6 +1,10 @@
 # 🐄✨ DRY & KISS Analysis - Modulo Gdpr
 
+<<<<<<< HEAD
 **Data Analisi:** [DATE]
+=======
+**Data Analisi:** 2025-12-02
+>>>>>>> 4b6b99016 (first commit)
 **Status:** ✅ REFACTORING COMPLETATO (Parziale)
 
 ---
@@ -26,7 +30,11 @@
 
 ---
 
+<<<<<<< HEAD
 ## ✅ AZIONI COMPLETATE ([DATE])
+=======
+## ✅ AZIONI COMPLETATE (2025-12-02)
+>>>>>>> 4b6b99016 (first commit)
 
 ### 1. Refactoring Base Models
 I seguenti file sono stati refactorati per estendere le classi base di `Modules\Xot` e rimuovere codice duplicato (~150 LOC rimosse):

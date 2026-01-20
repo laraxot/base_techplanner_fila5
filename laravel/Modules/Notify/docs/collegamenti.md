@@ -1,8 +1,14 @@
 # Collegamenti Documentazione Notify
 
+<<<<<<< HEAD
 - [README Notify](readme.md)
 - [Architettura del modulo](architecture.md)
 - [CRUD Template Email Filament](crud-template-email-filament.md)
+=======
+- [README Notify](README.md)
+- [Architettura del modulo](architecture.md)
+- [CRUD Template Email Filament](CRUD-template-email-filament.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Panoramica Template Email](email-template-landscape.md)
 - [Deep Dive Template Email](email-templates-deep-dive.md)
 - [Analisi Tools Esterni](codebrisk-tools-analysis.md)

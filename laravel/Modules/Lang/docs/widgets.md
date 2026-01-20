@@ -192,9 +192,17 @@ The widget includes robust error handling:
 
 ## Links
 
+<<<<<<< HEAD
 - [Lang Module Documentation](../readme.md)
+=======
+- [Lang Module Documentation](../README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Translation Management](./translations.md)
 - [Internationalization Best Practices](./i18n-best-practices.md)
 - [Widget vs Livewire Components](../../../project_docs/widget_vs_livewire_components.md)
 
+<<<<<<< HEAD
 *
+=======
+*Last updated: January 2025*
+>>>>>>> 4b6b99016 (first commit)

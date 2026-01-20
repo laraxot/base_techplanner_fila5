@@ -12,6 +12,7 @@ return [
     'whatsapp' => [
         'label' => 'WhatsApp',
     ],
+<<<<<<< HEAD
     'label' => 'Channel Enum',
     'plural_label' => 'Channel Enum (Plurale)',
     'navigation' => [
@@ -56,4 +57,6 @@ return [
             'label' => 'Elimina Channel Enum',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

@@ -195,11 +195,19 @@ Activity dipende da User per `causedBy()`. Assicurarsi che:
 
 - Pattern di riferimento: `Modules/Job/tests/TestCase.php`
 - Filosofia: `Modules/Job/docs/testcase-philosophy-analysis.md`
+<<<<<<< HEAD
 - Documentazione generale: `laravel/docs/test-corrections-complete-[DATE].md`
 
 ---
 
 **Data:** [DATE]
+=======
+- Documentazione generale: `laravel/docs/test-corrections-complete-2026-01-09.md`
+
+---
+
+**Data:** 2026-01-09
+>>>>>>> 4b6b99016 (first commit)
 **Stato:** Pronto per implementazione
 **Righe:** 156 → ~40 (-74%)
 **Filosofia:** MySQL Production = MySQL Tests ✅

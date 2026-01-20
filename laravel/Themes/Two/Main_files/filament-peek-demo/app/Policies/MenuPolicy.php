@@ -2,10 +2,17 @@
 
 namespace App\Policies;
 
+<<<<<<< HEAD
 use App\Models\Menu;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Auth\Access\Response;
 use Modules\User\Models\User;
+=======
+use Illuminate\Auth\Access\Response;
+use App\Models\Menu;
+use Modules\User\Models\User;
+use Illuminate\Auth\Access\HandlesAuthorization;
+>>>>>>> 4b6b99016 (first commit)
 
 class MenuPolicy
 {

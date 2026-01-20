@@ -8,64 +8,89 @@ return [
             'label' => 'Nome provincia',
             'placeholder' => 'Inserisci il nome della provincia',
             'help' => 'Nome ufficiale della provincia',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'code' => [
             'label' => 'Sigla',
             'placeholder' => 'Inserisci la sigla della provincia',
+<<<<<<< HEAD
             'help' => 'Sigla della provincia (es. RM, MI, TO]',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+            'help' => 'Sigla della provincia (es. RM, MI, TO)',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'region' => [
             'label' => 'Regione',
             'placeholder' => 'Seleziona la regione',
             'help' => 'Regione di appartenenza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'country' => [
             'label' => 'Paese',
             'placeholder' => 'Seleziona il paese',
             'help' => 'Paese di appartenenza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'capital' => [
             'label' => 'Capoluogo',
             'placeholder' => 'Inserisci il capoluogo',
             'help' => 'Capoluogo della provincia',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'population' => [
             'label' => 'Popolazione',
             'placeholder' => 'Inserisci il numero di abitanti',
             'help' => 'Numero di abitanti della provincia',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'area' => [
             'label' => 'Superficie',
             'placeholder' => 'Inserisci la superficie in km²',
             'help' => 'Superficie della provincia in chilometri quadrati',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_active' => [
             'label' => 'Attiva',
             'help' => 'Indica se la provincia è attiva nel sistema',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -82,6 +107,7 @@ return [
         'province_activated' => 'Provincia attivata con successo',
         'province_deactivated' => 'Provincia disattivata con successo',
     ],
+<<<<<<< HEAD
     'label' => 'Province',
     'plural_label' => 'Province (Plurale)',
     'navigation' => [
@@ -106,4 +132,6 @@ return [
             'label' => 'Elimina Province',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

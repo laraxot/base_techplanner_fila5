@@ -410,7 +410,11 @@ return [
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [AddressItemEnum Documentation](../../geo/docs/enums/address-item-enum.md) - Pattern gemello
+=======
+- [AddressItemEnum Documentation](../../Geo/docs/enums/address-item-enum.md) - Pattern gemello
+>>>>>>> 4b6b99016 (first commit)
 - [Notify Module Architecture](../architecture.md)
 - [ContactTypeEnum Source](../../Notify/app/Enums/ContactTypeEnum.php)
 

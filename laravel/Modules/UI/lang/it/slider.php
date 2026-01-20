@@ -9,6 +9,7 @@ return [
             'description' => 'method',
             'helper_text' => 'method',
             'placeholder' => 'method',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         '_tpl' => [
@@ -46,6 +47,14 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Slider',
+=======
+        ],
+        '_tpl' => [
+            'label' => '_tpl',
+        ],
+        'view' => [
+            'label' => 'view',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
 ];

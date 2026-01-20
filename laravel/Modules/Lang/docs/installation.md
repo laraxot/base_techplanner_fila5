@@ -19,6 +19,7 @@ php artisan module_lang:install
 
 ```
 ## Collegamenti tra versioni di installation.md
+<<<<<<< HEAD
 * [installation.md](../../../xot/docs/filament/installation.md)
 * [installation.md](../../../xot/docs/installation.md)
 * [installation.md](../../../xot/docs/base/installation.md)
@@ -26,6 +27,15 @@ php artisan module_lang:install
 * [installation.md](../../../lang/docs/installation.md)
 * [installation.md](../../../cms/docs/installation.md)
 * [installation.md](../../../../themes/one/docs/installation.md)
+=======
+* [installation.md](../../../Xot/docs/filament/installation.md)
+* [installation.md](../../../Xot/docs/installation.md)
+* [installation.md](../../../Xot/docs/base/installation.md)
+* [installation.md](../../../User/docs/installation.md)
+* [installation.md](../../../Lang/docs/installation.md)
+* [installation.md](../../../Cms/docs/installation.md)
+* [installation.md](../../../../Themes/One/docs/installation.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### Versione Incoming
 

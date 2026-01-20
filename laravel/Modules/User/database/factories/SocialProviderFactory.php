@@ -5,13 +5,21 @@ declare(strict_types=1);
 namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+<<<<<<< HEAD
+=======
+use Modules\User\Models\SocialProvider;
+>>>>>>> 4b6b99016 (first commit)
 
 class SocialProviderFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      */
+<<<<<<< HEAD
     protected $model = \Modules\User\Models\SocialProvider::class;
+=======
+    protected $model = SocialProvider::class;
+>>>>>>> 4b6b99016 (first commit)
 
     /**
      * Define the model's default state.

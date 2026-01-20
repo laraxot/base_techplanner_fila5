@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -35,6 +36,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'access_token_id' => [
+            'label' => 'Token de Acceso',
+        ],
+        'revoked' => [
+            'label' => 'Revocado',
+        ],
+        'expires_at' => [
+            'label' => 'Expira En',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
