@@ -7,6 +7,7 @@ namespace Modules\Cms\Datas;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Livewire\Wireable;
 use Modules\Cms\Actions\ResolveBlockQueryAction;
@@ -15,6 +16,9 @@ use function Safe\fclose;
 use function Safe\fopen;
 use function Safe\fread;
 
+=======
+use Livewire\Wireable;
+>>>>>>> 4b6b99016 (first commit)
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\DataCollection;
@@ -26,12 +30,16 @@ class BlockData extends Data implements Wireable
 
     public string $type;
 
+<<<<<<< HEAD
     public ?string $slug = null;
 
+=======
+>>>>>>> 4b6b99016 (first commit)
     public array $data;
 
     public string $view;
 
+<<<<<<< HEAD
     public bool $livewire = false;
 
     public string $livewireComponentName = '';
@@ -49,6 +57,11 @@ class BlockData extends Data implements Wireable
             $data = array_merge($data, $dynamicData);
         }
 
+=======
+    public function __construct(string $type, array $data)
+    {
+        $this->type = $type;
+>>>>>>> 4b6b99016 (first commit)
         $this->data = $data;
         Assert::string($view = Arr::get($data, 'view', 'ui::empty'), '['.__LINE__.']['.__FILE__.']');
 
@@ -79,6 +92,7 @@ class BlockData extends Data implements Wireable
         }
 
         $this->view = $view;
+<<<<<<< HEAD
         $this->livewire = $this->detectLivewire($view);
         if ($this->livewire) {
             $this->livewireComponentName = $this->normalizeComponentName($view);
@@ -127,6 +141,11 @@ class BlockData extends Data implements Wireable
     }
 
     public static function collection(EloquentCollection|Collection|array $data): DataCollection|array
+=======
+    }
+
+    public static function collection(EloquentCollection|Collection|array $data): DataCollection
+>>>>>>> 4b6b99016 (first commit)
     {
         return self::collect($data, DataCollection::class);
     }

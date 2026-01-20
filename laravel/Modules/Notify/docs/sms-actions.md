@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pattern per le Azioni SMS 
 
 ## Struttura e Convenzioni
@@ -16,28 +17,46 @@ Esempio:
 Questa corrispondenza è essenziale per garantire che tutti i driver configurati possano essere utilizzati in modo coerente attraverso l'interfaccia comune.
 
 ## 1. Interfaccia Comune
+=======
+# Azioni SMS
+
+## Interfaccia
+>>>>>>> 4b6b99016 (first commit)
 
 Tutte le azioni di invio SMS devono implementare l'interfaccia `SmsActionInterface`:
 
 ```php
+<<<<<<< HEAD
 <?php
 
 namespace Modules\Notify\Contracts;
 
 use Modules\Notify\Datas\SmsData;
+=======
+namespace Modules\Notify\Contracts\SMS;
+>>>>>>> 4b6b99016 (first commit)
 
 interface SmsActionInterface
 {
     /**
+<<<<<<< HEAD
      * Invia un SMS utilizzando il provider specifico.
      *
      * @param SmsData $smsData I dati del messaggio SMS
      * @return array Risultato dell'operazione
+=======
+     * Esegue l'invio dell'SMS
+     *
+     * @param SmsData $smsData I dati del messaggio SMS
+     * @return array Risultato dell'operazione
+     * @throws \Exception In caso di errore durante l'invio
+>>>>>>> 4b6b99016 (first commit)
      */
     public function execute(SmsData $smsData): array;
 }
 ```
 
+<<<<<<< HEAD
 Questa interfaccia garantisce che tutte le azioni SMS abbiano un metodo `execute` che accetta un oggetto `SmsData` come parametro.
 
 ## 2. Struttura delle Azioni SMS
@@ -251,3 +270,57 @@ Seguire questo pattern garantisce:
 
 ---
 
+=======
+## Struttura
+
+Le azioni SMS sono organizzate secondo questa struttura:
+
+1. **Contratti**: Le interfacce sono definite in `app/Contracts/SMS/`
+2. **Implementazioni**: Le azioni concrete sono in `app/Actions/SMS/`
+3. **Regole**:
+   - Ogni azione deve implementare `SmsActionInterface`
+   - Il metodo `execute()` deve accettare solo `SmsData`
+   - Deve restituire un array con i dettagli dell'operazione
+   - Deve gestire e loggare gli errori appropriatamente
+
+## Provider Supportati
+
+- Netfun
+- Altri provider da aggiungere...
+
+## Esempio di Utilizzo
+
+```php
+$smsData = new SmsData(
+    to: '+393331234567',
+    body: 'Il tuo codice OTP è: 123456',
+    from: ''
+    from: '<nome progetto>'
+);
+
+$action = new SendNetfunSMSAction();
+$result = $action->execute($smsData);
+```
+
+## Best Practices
+
+1. **Validazione**:
+   - Validare sempre i dati in ingresso
+   - Verificare il formato del numero di telefono
+   - Controllare la lunghezza del messaggio
+
+2. **Gestione Errori**:
+   - Usare try/catch per gestire le eccezioni
+   - Loggare gli errori con dettagli
+   - Implementare retry per fallimenti temporanei
+
+3. **Performance**:
+   - Utilizzare le code per l'invio
+   - Implementare rate limiting
+   - Monitorare l'uso dell'API
+
+4. **Sicurezza**:
+   - Validare l'input degli utenti
+   - Sanitizzare i messaggi
+   - Proteggere le chiavi API
+>>>>>>> 4b6b99016 (first commit)

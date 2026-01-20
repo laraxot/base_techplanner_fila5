@@ -49,10 +49,13 @@ return [
                 'placeholder' => 'e.g. Consultations',
                 'helper_text' => 'Description of Monday afternoon activities',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'tuesday' => [
             'morning' => [
@@ -99,10 +102,13 @@ return [
                 'placeholder' => 'e.g. Consultations',
                 'helper_text' => 'Description of Tuesday afternoon activities',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'wednesday' => [
             'morning' => [
@@ -149,10 +155,13 @@ return [
                 'placeholder' => 'e.g. Consultations',
                 'helper_text' => 'Description of Wednesday afternoon activities',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'thursday' => [
             'morning' => [
@@ -199,10 +208,13 @@ return [
                 'placeholder' => 'e.g. Consultations',
                 'helper_text' => 'Description of Thursday afternoon activities',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'friday' => [
             'morning' => [
@@ -249,10 +261,13 @@ return [
                 'placeholder' => 'e.g. Consultations',
                 'helper_text' => 'Description of Friday afternoon activities',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'saturday' => [
             'morning' => [
@@ -299,10 +314,13 @@ return [
                 'placeholder' => 'e.g. Consultations',
                 'helper_text' => 'Description of Saturday afternoon activities',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'sunday' => [
             'morning' => [
@@ -345,24 +363,33 @@ return [
                 'placeholder' => 'e.g. Consultations',
                 'helper_text' => 'Description of Sunday afternoon activities',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'schedule' => [
             'label' => 'Schedule',
             'placeholder' => 'Configure opening hours',
             'helper_text' => 'Complete availability schedule management',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'availability' => [
             'label' => 'Availability',
             'placeholder' => 'Set your availability',
             'helper_text' => 'Configure when you are available for appointments',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'sections' => [
@@ -392,6 +419,7 @@ return [
         'schedule_saved' => 'Schedule saved successfully',
         'invalid_time_range' => 'Invalid time: end time must be after start time',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -401,4 +429,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

@@ -20,5 +20,11 @@
 
 ## Collegamenti
 - [docs root](../../../../docs/actions.md)
+<<<<<<< HEAD
 - [docs Lang](../../lang/docs/filament-label.md)
 
+=======
+- [docs Lang](../../Lang/docs/filament-label.md)
+
+Ultimo aggiornamento: maggio 2025.
+>>>>>>> 4b6b99016 (first commit)

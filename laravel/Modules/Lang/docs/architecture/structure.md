@@ -474,6 +474,7 @@ tests/Unit
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
+<<<<<<< HEAD
 * [structure.md](../../../gdpr/docs/structure.md)
 * [structure.md](../../../notify/docs/structure.md)
 * [structure.md](../../../xot/docs/structure.md)
@@ -489,9 +490,30 @@ tests/Unit
 * [structure.md](../../../cms/docs/structure.md)
 * [structure.md](../../../cms/docs/themes/structure.md)
 * [structure.md](../../../cms/docs/components/structure.md)
+=======
+* [structure.md](../../../Gdpr/docs/structure.md)
+* [structure.md](../../../Notify/docs/structure.md)
+* [structure.md](../../../Xot/docs/structure.md)
+* [structure.md](../../../Xot/docs/base/structure.md)
+* [structure.md](../../../Xot/docs/config/structure.md)
+* [structure.md](../../../User/docs/structure.md)
+* [structure.md](../../../UI/docs/structure.md)
+* [structure.md](../../../Lang/docs/structure.md)
+* [structure.md](../../../Job/docs/structure.md)
+* [structure.md](../../../Media/docs/structure.md)
+* [structure.md](../../../Tenant/docs/structure.md)
+* [structure.md](../../../Activity/docs/structure.md)
+* [structure.md](../../../Cms/docs/structure.md)
+* [structure.md](../../../Cms/docs/themes/structure.md)
+* [structure.md](../../../Cms/docs/components/structure.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Struttura della Registrazione dei Console Commands
 
 - Tutti i comandi console sono autoregistrati tramite la struttura di XotBaseServiceProvider.
 - Non aggiungere mai manualmente $this->commands([...]) nei provider.
+<<<<<<< HEAD
 - Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./philosophy.md)
+=======
+- Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
+>>>>>>> 4b6b99016 (first commit)

@@ -54,27 +54,37 @@ return [
             'description' => 'email',
             'helper_text' => '',
             'placeholder' => 'email',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'password' => [
             'label' => 'password',
             'description' => 'password',
             'helper_text' => '',
             'placeholder' => 'password',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'remember' => [
             'label' => 'remember',
             'description' => 'remember',
             'helper_text' => '',
             'placeholder' => 'remember',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'cap' => [
             'description' => 'cap',
             'helper_text' => 'cap',
             'placeholder' => 'cap',
             'label' => 'cap',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'city' => [
@@ -82,6 +92,11 @@ return [
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
+=======
+        ],
+        'city' => [
+            'description' => 'city',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'options' => [
             'prefix-icon-color' => [
@@ -268,17 +283,23 @@ return [
                 'helper_text' => 'options.prefix',
                 'description' => 'options.prefix',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'itemIsDefault' => [
             'description' => 'itemIsDefault',
             'helper_text' => 'itemIsDefault',
             'placeholder' => 'itemIsDefault',
             'label' => 'itemIsDefault',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'zeusData' => [
             1 => [
@@ -299,170 +320,243 @@ return [
                 'placeholder' => 'zeusData.2',
                 'label' => 'zeusData.2',
             ],
+<<<<<<< HEAD
             4 => [
+=======
+            [
+>>>>>>> 4b6b99016 (first commit)
                 'description' => 'zeusData.4',
                 'helper_text' => 'zeusData.4',
                 'placeholder' => 'zeusData.4',
                 'label' => 'zeusData.4',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'user_id' => [
             'label' => 'user_id',
             'placeholder' => 'user_id',
             'helper_text' => 'user_id',
             'description' => 'user_id',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'name' => [
             'label' => 'name',
             'placeholder' => 'name',
             'helper_text' => 'name',
             'description' => 'name',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'slug' => [
             'label' => 'slug',
             'placeholder' => 'slug',
             'helper_text' => 'slug',
             'description' => 'slug',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'category_id' => [
             'label' => 'category_id',
             'placeholder' => 'category_id',
             'helper_text' => 'category_id',
             'description' => 'category_id',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'description',
             'placeholder' => 'description',
             'helper_text' => 'description',
             'description' => 'description',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'details' => [
             'label' => 'details',
             'placeholder' => 'details',
             'helper_text' => 'details',
             'description' => 'details',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_active' => [
             'label' => 'is_active',
             'placeholder' => 'is_active',
             'helper_text' => 'is_active',
             'description' => 'is_active',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'ordering' => [
             'label' => 'ordering',
             'placeholder' => 'ordering',
             'helper_text' => 'ordering',
             'description' => 'ordering',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'start_date' => [
             'label' => 'start_date',
             'placeholder' => 'start_date',
             'helper_text' => 'start_date',
             'description' => 'start_date',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'end_date' => [
             'label' => 'end_date',
             'placeholder' => 'end_date',
             'helper_text' => 'end_date',
             'description' => 'end_date',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'extensions' => [
             'label' => 'extensions',
             'placeholder' => 'extensions',
             'helper_text' => 'extensions',
             'description' => 'extensions',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'sections' => [
             'label' => 'sections',
             'placeholder' => 'sections',
             'helper_text' => 'sections',
             'description' => 'sections',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'fields' => [
             'label' => 'fields',
             'placeholder' => 'fields',
             'helper_text' => 'fields',
             'description' => 'fields',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'type' => [
             'label' => 'type',
             'placeholder' => 'type',
             'helper_text' => 'type',
             'description' => 'type',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'compact' => [
             'label' => 'compact',
             'placeholder' => 'compact',
             'helper_text' => 'compact',
             'description' => 'compact',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'aside' => [
             'label' => 'aside',
             'placeholder' => 'aside',
             'helper_text' => 'aside',
             'description' => 'aside',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'borderless' => [
             'label' => 'borderless',
             'placeholder' => 'borderless',
             'helper_text' => 'borderless',
             'description' => 'borderless',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'icon' => [
             'label' => 'icon',
             'placeholder' => 'icon',
             'helper_text' => 'icon',
             'description' => 'icon',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'columns' => [
             'label' => 'columns',
             'placeholder' => 'columns',
             'helper_text' => 'columns',
             'description' => 'columns',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'itemKey' => [
             'description' => 'itemKey',
             'helper_text' => 'itemKey',
             'placeholder' => 'itemKey',
             'label' => 'itemKey',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'values' => [
             'label' => 'values',
             'placeholder' => 'values',
             'helper_text' => 'values',
             'description' => 'values',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'itemValue' => [
             'label' => 'itemValue',
             'placeholder' => 'itemValue',
             'helper_text' => 'itemValue',
             'description' => 'itemValue',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'steps' => [
@@ -470,6 +564,7 @@ return [
             'label' => 'Credenziali',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Set Default Tenant For Urls',
     'plural_label' => 'Set Default Tenant For Urls (Plurale)',
     'navigation' => [
@@ -483,4 +578,6 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

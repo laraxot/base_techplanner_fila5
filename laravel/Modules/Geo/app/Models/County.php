@@ -16,12 +16,16 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|County newQuery()
  * @method static Builder<static>|County query()
  *
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 4b6b99016 (first commit)
  * @property ProfileContract|null $deleter
  *
  * @method static CountyFactory factory($count = null, $state = [])
  *
  * @mixin \Eloquent
+<<<<<<< HEAD
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  *
@@ -32,6 +36,8 @@ use Modules\Xot\Contracts\ProfileContract;
  *                                                                                                  >>>>>>> 65bf1208 (.)
  *
  * @mixin \Eloquent
+=======
+>>>>>>> 4b6b99016 (first commit)
  */
 class County extends BaseModel
 {

@@ -240,4 +240,8 @@
 - Verificare la conformità agli standard web
 - Testare su diversi browser
 - Controllare l'accessibilità
+<<<<<<< HEAD
 - Validare il codice HTML/CSS 
+=======
+- Validare il codice HTML/CSS
+>>>>>>> 4b6b99016 (first commit)

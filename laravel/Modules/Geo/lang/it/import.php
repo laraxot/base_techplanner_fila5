@@ -7,80 +7,111 @@ return [
         'file' => [
             'label' => 'File',
             'placeholder' => 'Seleziona il file da importare',
+<<<<<<< HEAD
             'help' => 'File da importare (CSV, Excel, GeoJSON, Shapefile]',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+            'help' => 'File da importare (CSV, Excel, GeoJSON, Shapefile)',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'format' => [
             'label' => 'Formato',
             'placeholder' => 'Seleziona il formato del file',
             'help' => 'Formato del file da importare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'encoding' => [
             'label' => 'Codifica',
             'placeholder' => 'Seleziona la codifica',
             'help' => 'Codifica del file da importare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'delimiter' => [
             'label' => 'Delimitatore',
             'placeholder' => 'Inserisci il delimitatore',
             'help' => 'Delimitatore per file CSV',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'has_headers' => [
             'label' => 'Ha intestazioni',
             'help' => 'Il file ha una riga di intestazioni',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'skip_rows' => [
             'label' => 'Righe da saltare',
             'placeholder' => 'Inserisci il numero di righe da saltare',
             'help' => 'Numero di righe da saltare all\'inizio',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'mapping' => [
             'label' => 'Mappatura campi',
             'placeholder' => 'Configura la mappatura dei campi',
             'help' => 'Mappatura tra campi del file e campi del database',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'validation_rules' => [
             'label' => 'Regole di validazione',
             'placeholder' => 'Configura le regole di validazione',
             'help' => 'Regole di validazione per i dati importati',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'update_existing' => [
             'label' => 'Aggiorna esistenti',
             'help' => 'Aggiorna i record esistenti invece di crearne di nuovi',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'batch_size' => [
             'label' => 'Dimensione batch',
             'placeholder' => 'Inserisci la dimensione del batch',
             'help' => 'Numero di record da processare per batch',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -130,6 +161,7 @@ return [
         'ascii' => 'ASCII',
     ],
     'delimiters' => [
+<<<<<<< HEAD
         'comma' => 'Virgola (,]',
         'semicolon' => 'Punto e virgola (;]',
         'tab' => 'Tab',
@@ -160,4 +192,12 @@ return [
             'label' => 'Elimina Import',
         ],
     ],
+=======
+        'comma' => 'Virgola (,)',
+        'semicolon' => 'Punto e virgola (;)',
+        'tab' => 'Tab',
+        'pipe' => 'Pipe (|)',
+        'space' => 'Spazio',
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

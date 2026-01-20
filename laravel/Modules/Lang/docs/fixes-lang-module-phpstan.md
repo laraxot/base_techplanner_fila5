@@ -84,5 +84,9 @@
 18 settembre 2025
 
 ## Backlinks
+<<<<<<< HEAD
 - [Lang Module Overview](../readme.md)
+=======
+- [Lang Module Overview](../README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Translation System Documentation](./translation-system.md)

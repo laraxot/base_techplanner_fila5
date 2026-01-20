@@ -131,7 +131,15 @@ class LoginWidget extends XotBaseWidget
 ## Backlink e Riferimenti
 - [best-practices/filament-widgets.md](best-practices/filament-widgets.md)
 - [login_filament_widget_error.md](login_filament_widget_error.md)
+<<<<<<< HEAD
 - [../../Themes/Sixteen/docs/login-agid-correct-implementation.md](../../themes/sixteen/docs/login-agid-correct-implementation.md)
 - [../../Themes/Sixteen/project_docs/login-agid-correct-implementation.md](../../themes/sixteen/project_docs/login-agid-correct-implementation.md)
 ---
 **QUESTA È UNA REGOLA ASSOLUTA E INVIOLABILE**
+=======
+- [../../Themes/Sixteen/docs/login-agid-correct-implementation.md](../../Themes/Sixteen/docs/login-agid-correct-implementation.md)
+- [../../Themes/Sixteen/project_docs/login-agid-correct-implementation.md](../../Themes/Sixteen/project_docs/login-agid-correct-implementation.md)
+---
+**QUESTA È UNA REGOLA ASSOLUTA E INVIOLABILE**
+*Ultimo aggiornamento: agosto 2025*
+>>>>>>> 4b6b99016 (first commit)

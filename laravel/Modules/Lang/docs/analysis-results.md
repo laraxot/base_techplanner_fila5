@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 # Risultati Analisi Modulo Lang - [DATE]
 
 ## Data
 [DATE]
+=======
+# Risultati Analisi Modulo Lang - 2025-01-06
+
+## Data
+2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 ## Strumenti Utilizzati
 - PHPStan Livello 10
@@ -89,7 +96,15 @@
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Quality Improvements](./quality-improvements-[date].md)
 - [Index Documentation](./index.md)
 - [Best Practices](./best_practices.md)
 
+=======
+- [Quality Improvements](./quality-improvements-2025-01-06.md)
+- [Index Documentation](./index.md)
+- [Best Practices](./BEST_PRACTICES.md)
+
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 4b6b99016 (first commit)

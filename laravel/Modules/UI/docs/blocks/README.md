@@ -23,6 +23,11 @@ Block components are modular UI elements used to build sections in the frontend.
 
 ## Related Documentation
 
+<<<<<<< HEAD
 - [Section Architecture](../sections/readme.md)
 - [Theme Components](../components/readme.md)
+=======
+- [Section Architecture](../sections/README.md)
+- [Theme Components](../components/README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Data Handling in Blade](../blade-data-handling.md)

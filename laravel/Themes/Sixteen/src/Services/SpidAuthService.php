@@ -146,7 +146,11 @@ class SpidAuthService
         }
 
         $decodedResponse = base64_decode($samlResponse);
+<<<<<<< HEAD
         $responseDoc = new DOMDocument();
+=======
+        $responseDoc = new DOMDocument;
+>>>>>>> 4b6b99016 (first commit)
         $responseDoc->loadXML($decodedResponse);
 
         // Valida la signature

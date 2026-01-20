@@ -10,7 +10,11 @@ use Themes\Sixteen\Models\User;
 
 /**
  * Evento lanciato quando un utente effettua il logout da CIE
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> 4b6b99016 (first commit)
  * Questo evento permette di reagire al logout CIE per cleanup,
  * logging, sincronizzazione con sistemi esterni, etc.
  */
@@ -21,7 +25,12 @@ class CieLoggedOut
     public function __construct(
         public User $user,
         public array $cieAttributes
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 4b6b99016 (first commit)
 
     /**
      * Ottiene il metodo di autenticazione CIE utilizzato
@@ -59,4 +68,8 @@ class CieLoggedOut
             'logout_timestamp' => now()->toISOString(),
         ];
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4b6b99016 (first commit)

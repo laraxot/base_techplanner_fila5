@@ -3,7 +3,11 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\File;
+<<<<<<< HEAD
 use Modules\Notify\Tests\TestCase;
+=======
+use Tests\TestCase;
+>>>>>>> 4b6b99016 (first commit)
 
 uses(TestCase::class);
 

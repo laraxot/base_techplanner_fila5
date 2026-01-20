@@ -11,6 +11,7 @@ return [
         'title' => 'Er snart tilbage.',
         'description' => 'Er snart tilbage.',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -24,4 +25,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

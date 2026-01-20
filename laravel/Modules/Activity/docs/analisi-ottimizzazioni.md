@@ -51,7 +51,11 @@ phpstan-fixes.md / phpstan_fixes.md
 ### ❌ file di test temporanei
 **problema**: presenza file test temporanei non rimossi
 ```
+<<<<<<< HEAD
 test.txt, test02.txt, test03.txt, test04.txt, test[DATE].txt, test2222.txt, test444.txt
+=======
+test.txt, test02.txt, test03.txt, test04.txt, test2024-12-04.txt, test2222.txt, test444.txt
+>>>>>>> 4b6b99016 (first commit)
 ```
 
 **impatto**: clutter repository, confusione sviluppatori

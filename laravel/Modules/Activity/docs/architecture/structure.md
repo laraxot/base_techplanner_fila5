@@ -281,7 +281,11 @@ workbench/routes
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Torna a README](./readme.md)
+=======
+- [Torna a README](./README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Vai a Roadmap](./roadmap.md)
 - [Vai a Bottlenecks](./bottlenecks.md)
 
@@ -348,6 +352,7 @@ workbench/routes
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
+<<<<<<< HEAD
 * [structure.md](laravel/modules/gdpr/docs/structure.md)
 * [structure.md](laravel/modules/notify/docs/structure.md)
 * [structure.md](laravel/modules/xot/docs/structure.md)
@@ -363,6 +368,23 @@ workbench/routes
 * [structure.md](laravel/modules/cms/docs/structure.md)
 * [structure.md](laravel/modules/cms/docs/themes/structure.md)
 * [structure.md](laravel/modules/cms/docs/components/structure.md)
+=======
+* [structure.md](laravel/Modules/Gdpr/docs/structure.md)
+* [structure.md](laravel/Modules/Notify/docs/structure.md)
+* [structure.md](laravel/Modules/Xot/docs/structure.md)
+* [structure.md](laravel/Modules/Xot/docs/base/structure.md)
+* [structure.md](laravel/Modules/Xot/docs/config/structure.md)
+* [structure.md](laravel/Modules/User/docs/structure.md)
+* [structure.md](laravel/Modules/UI/docs/structure.md)
+* [structure.md](laravel/Modules/Lang/docs/structure.md)
+* [structure.md](laravel/Modules/Job/docs/structure.md)
+* [structure.md](laravel/Modules/Media/docs/structure.md)
+* [structure.md](laravel/Modules/Tenant/docs/structure.md)
+* [structure.md](laravel/Modules/Activity/docs/structure.md)
+* [structure.md](laravel/Modules/Cms/docs/structure.md)
+* [structure.md](laravel/Modules/Cms/docs/themes/structure.md)
+* [structure.md](laravel/Modules/Cms/docs/components/structure.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Architettura Event Sourcing e Activity Log
 

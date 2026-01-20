@@ -9,6 +9,7 @@ return [
         'light_mode' => 'Tema chiaro',
         'dark_mode' => 'Tema scuro',
     ],
+<<<<<<< HEAD
     'label' => 'Widgets',
     'plural_label' => 'Widgets (Plurale)',
     'navigation' => [
@@ -53,4 +54,6 @@ return [
             'label' => 'Elimina Widgets',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

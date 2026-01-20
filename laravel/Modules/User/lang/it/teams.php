@@ -10,31 +10,46 @@ return [
             'placeholder' => 'Inserisci il nome del team',
             'helper_text' => 'Nome identificativo del team',
             'description' => 'Il nome che identifica questo team',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'personal_team' => [
             'label' => 'Team Personale',
             'helper_text' => 'Indica se questo è un team personale',
             'description' => 'Un team personale è associato a un singolo utente',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'owner' => [
             'label' => 'Proprietario',
             'helper_text' => 'Utente proprietario del team',
             'description' => 'L\'utente che ha creato e gestisce questo team',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'helper_text' => 'Data di creazione del team',
             'description' => 'Data e ora in cui è stato creato il team',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'helper_text' => 'Data dell\'ultima modifica',
             'description' => 'Data e ora dell\'ultima modifica al team',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -80,6 +95,7 @@ return [
             'description' => 'Utente che ha creato questo team',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Teams',
         'plural' => 'Teams',
@@ -93,4 +109,9 @@ return [
     ],
     'label' => 'Teams',
     'plural_label' => 'Teams (Plurale)',
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+>>>>>>> 4b6b99016 (first commit)
 ];

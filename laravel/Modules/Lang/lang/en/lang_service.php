@@ -8,36 +8,51 @@ return [
             'label' => 'Language',
             'placeholder' => 'Select language',
             'helper_text' => 'Currently selected interface language',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'available_languages' => [
             'label' => 'Available Languages',
             'placeholder' => 'Available languages list',
             'helper_text' => 'Languages available for interface selection',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'value' => [
             'label' => 'Value',
             'placeholder' => 'Enter value',
             'helper_text' => 'Translation value',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'key' => [
             'label' => 'Key',
             'placeholder' => 'Enter translation key',
             'helper_text' => 'Unique identifier for the translation',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'locale' => [
             'label' => 'Locale',
             'placeholder' => 'Select locale',
             'helper_text' => 'Language locale code (e.g. it, en, de)',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -105,6 +120,9 @@ return [
         'heading' => 'Language Service',
         'description' => 'Manage translations and available languages in the system',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

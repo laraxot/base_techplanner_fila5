@@ -8,14 +8,18 @@ return [
             'label' => 'Chiave',
             'placeholder' => 'Inserisci la chiave della cache',
             'help' => 'Chiave identificativa per i dati in cache',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'value' => [
             'label' => 'Valore',
             'placeholder' => 'Inserisci il valore da memorizzare',
             'help' => 'Valore da memorizzare in cache',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -27,46 +31,68 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'ttl' => [
+            'label' => 'TTL (Time To Live)',
+            'placeholder' => 'Inserisci il tempo di vita in secondi',
+            'help' => 'Tempo di vita dei dati in cache in secondi',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'tags' => [
             'label' => 'Tag',
             'placeholder' => 'Inserisci i tag per la cache',
             'help' => 'Tag per organizzare e invalidare la cache',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'driver' => [
             'label' => 'Driver',
             'placeholder' => 'Seleziona il driver della cache',
             'help' => 'Driver della cache da utilizzare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'connection' => [
             'label' => 'Connessione',
             'placeholder' => 'Seleziona la connessione',
             'help' => 'Connessione per il driver della cache',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'prefix' => [
             'label' => 'Prefisso',
             'placeholder' => 'Inserisci il prefisso per le chiavi',
             'help' => 'Prefisso per le chiavi della cache',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'serializer' => [
             'label' => 'Serializzatore',
             'placeholder' => 'Seleziona il serializzatore',
             'help' => 'Serializzatore per i dati della cache',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -75,7 +101,11 @@ return [
         'value_required' => 'Il valore è obbligatorio',
         'ttl_numeric' => 'Il TTL deve essere numerico',
         'ttl_min' => 'Il TTL deve essere almeno 0',
+<<<<<<< HEAD
         'ttl_max' => 'Il TTL non può superare 86400 (24 ore]',
+=======
+        'ttl_max' => 'Il TTL non può superare 86400 (24 ore)',
+>>>>>>> 4b6b99016 (first commit)
         'driver_required' => 'Il driver è obbligatorio',
         'connection_required' => 'La connessione è obbligatoria',
         'prefix_invalid' => 'Il prefisso non è valido',
@@ -148,6 +178,7 @@ return [
         'disk_usage' => 'Uso disco',
         'network_usage' => 'Uso rete',
     ],
+<<<<<<< HEAD
     'label' => 'Cache',
     'plural_label' => 'Cache (Plurale)',
     'navigation' => [
@@ -172,4 +203,6 @@ return [
             'label' => 'Elimina Cache',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

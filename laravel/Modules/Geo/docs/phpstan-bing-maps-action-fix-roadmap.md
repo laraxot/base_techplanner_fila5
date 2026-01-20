@@ -1,5 +1,9 @@
 # PHPStan Fix Roadmap - GetAddressFromBingMapsAction - Gennaio 2026
 
+<<<<<<< HEAD
+=======
+**Data**: 2026-01-09  
+>>>>>>> 4b6b99016 (first commit)
 **File**: `Modules/Geo/app/Actions/Bing/GetAddressFromBingMapsAction.php`  
 **Errore**: Method should return `array<string, mixed>` but returns `array`  
 **Linea**: 178 (metodo `extractLocationFromResponse`)  
@@ -175,6 +179,12 @@ L'errore PHPStan è stato risolto con successo! Ecco le modifiche implementate:
 ## 🔗 Riferimenti
 
 - [GetAddressFromBingMapsAction.php](../app/Actions/Bing/GetAddressFromBingMapsAction.php)
+<<<<<<< HEAD
 - [PHPStan Code Quality Guide](../../../xot/docs/phpstan-code-quality-guide.md)
 - [Geo Module PHPStan Fixes](./phpstan-fixes-gennaio-2025.md)
 - [Pattern Type Safety](../../../xot/docs/phpstan-patterns.md)
+=======
+- [PHPStan Code Quality Guide](../../../Xot/docs/phpstan-code-quality-guide.md)
+- [Geo Module PHPStan Fixes](./phpstan-fixes-gennaio-2025.md)
+- [Pattern Type Safety](../../../Xot/docs/phpstan-patterns.md)
+>>>>>>> 4b6b99016 (first commit)

@@ -1,6 +1,10 @@
 # PHPMD Report (CMS)
 
+<<<<<<< HEAD
 ## esecuzione [DATE]
+=======
+## esecuzione 2025-11-12
+>>>>>>> 4b6b99016 (first commit)
 - Comando: `./vendor/bin/phpmd Modules/Cms text Modules/Cms/phpmd.ruleset.xml`
 - Risultato: **non concluso** per numero elevato di violazioni + file non parsabili.
 

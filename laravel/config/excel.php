@@ -15,7 +15,11 @@ return [
         | Here you can specify how big the chunk should be.
         |
         */
+<<<<<<< HEAD
         'chunk_size' => 1000,
+=======
+        'chunk_size'             => 1000,
+>>>>>>> 4b6b99016 (first commit)
 
         /*
         |--------------------------------------------------------------------------
@@ -42,6 +46,7 @@ return [
         | Configure e.g. delimiter, enclosure and line ending for CSV exports.
         |
         */
+<<<<<<< HEAD
         'csv' => [
             'delimiter' => ',',
             'enclosure' => '"',
@@ -51,6 +56,17 @@ return [
             'excel_compatibility' => false,
             'output_encoding' => '',
             'test_auto_detect' => true,
+=======
+        'csv'                    => [
+            'delimiter'              => ',',
+            'enclosure'              => '"',
+            'line_ending'            => PHP_EOL,
+            'use_bom'                => false,
+            'include_separator_line' => false,
+            'excel_compatibility'    => false,
+            'output_encoding'        => '',
+            'test_auto_detect'       => true,
+>>>>>>> 4b6b99016 (first commit)
         ],
 
         /*
@@ -61,6 +77,7 @@ return [
         | Configure e.g. default title, creator, subject,...
         |
         */
+<<<<<<< HEAD
         'properties' => [
             'creator' => '',
             'lastModifiedBy' => '',
@@ -75,6 +92,22 @@ return [
     ],
 
     'imports' => [
+=======
+        'properties'             => [
+            'creator'        => '',
+            'lastModifiedBy' => '',
+            'title'          => '',
+            'description'    => '',
+            'subject'        => '',
+            'keywords'       => '',
+            'category'       => '',
+            'manager'        => '',
+            'company'        => '',
+        ],
+    ],
+
+    'imports'            => [
+>>>>>>> 4b6b99016 (first commit)
 
         /*
         |--------------------------------------------------------------------------
@@ -87,7 +120,11 @@ return [
         | you can enable it by setting read_only to false.
         |
         */
+<<<<<<< HEAD
         'read_only' => true,
+=======
+        'read_only'    => true,
+>>>>>>> 4b6b99016 (first commit)
 
         /*
         |--------------------------------------------------------------------------
@@ -111,7 +148,11 @@ return [
         | Available options: none|slug|custom
         |
         */
+<<<<<<< HEAD
         'heading_row' => [
+=======
+        'heading_row'  => [
+>>>>>>> 4b6b99016 (first commit)
             'formatter' => 'slug',
         ],
 
@@ -123,12 +164,21 @@ return [
         | Configure e.g. delimiter, enclosure and line ending for CSV imports.
         |
         */
+<<<<<<< HEAD
         'csv' => [
             'delimiter' => null,
             'enclosure' => '"',
             'escape_character' => '\\',
             'contiguous' => false,
             'input_encoding' => Csv::GUESS_ENCODING,
+=======
+        'csv'          => [
+            'delimiter'        => null,
+            'enclosure'        => '"',
+            'escape_character' => '\\',
+            'contiguous'       => false,
+            'input_encoding'   => Csv::GUESS_ENCODING,
+>>>>>>> 4b6b99016 (first commit)
         ],
 
         /*
@@ -139,6 +189,7 @@ return [
         | Configure e.g. default title, creator, subject,...
         |
         */
+<<<<<<< HEAD
         'properties' => [
             'creator' => '',
             'lastModifiedBy' => '',
@@ -149,6 +200,18 @@ return [
             'category' => '',
             'manager' => '',
             'company' => '',
+=======
+        'properties'   => [
+            'creator'        => '',
+            'lastModifiedBy' => '',
+            'title'          => '',
+            'description'    => '',
+            'subject'        => '',
+            'keywords'       => '',
+            'category'       => '',
+            'manager'        => '',
+            'company'        => '',
+>>>>>>> 4b6b99016 (first commit)
         ],
 
         /*
@@ -159,10 +222,17 @@ return [
        | Configure middleware that is executed on getting a cell value
        |
        */
+<<<<<<< HEAD
         'cells' => [
             'middleware' => [
                 // \Maatwebsite\Excel\Middleware\TrimCellValue::class,
                 // \Maatwebsite\Excel\Middleware\ConvertEmptyCellValuesToNull::class,
+=======
+        'cells'        => [
+            'middleware' => [
+                //\Maatwebsite\Excel\Middleware\TrimCellValue::class,
+                //\Maatwebsite\Excel\Middleware\ConvertEmptyCellValuesToNull::class,
+>>>>>>> 4b6b99016 (first commit)
             ],
         ],
 
@@ -178,6 +248,7 @@ return [
     |
     */
     'extension_detector' => [
+<<<<<<< HEAD
         'xlsx' => Excel::XLSX,
         'xlsm' => Excel::XLSX,
         'xltx' => Excel::XLSX,
@@ -193,6 +264,23 @@ return [
         'html' => Excel::HTML,
         'csv' => Excel::CSV,
         'tsv' => Excel::TSV,
+=======
+        'xlsx'     => Excel::XLSX,
+        'xlsm'     => Excel::XLSX,
+        'xltx'     => Excel::XLSX,
+        'xltm'     => Excel::XLSX,
+        'xls'      => Excel::XLS,
+        'xlt'      => Excel::XLS,
+        'ods'      => Excel::ODS,
+        'ots'      => Excel::ODS,
+        'slk'      => Excel::SLK,
+        'xml'      => Excel::XML,
+        'gnumeric' => Excel::GNUMERIC,
+        'htm'      => Excel::HTML,
+        'html'     => Excel::HTML,
+        'csv'      => Excel::CSV,
+        'tsv'      => Excel::TSV,
+>>>>>>> 4b6b99016 (first commit)
 
         /*
         |--------------------------------------------------------------------------
@@ -203,7 +291,11 @@ return [
         | Available options: Excel::MPDF | Excel::TCPDF | Excel::DOMPDF
         |
         */
+<<<<<<< HEAD
         'pdf' => Excel::DOMPDF,
+=======
+        'pdf'      => Excel::DOMPDF,
+>>>>>>> 4b6b99016 (first commit)
     ],
 
     /*
@@ -223,11 +315,19 @@ return [
     | [x] PhpOffice\PhpSpreadsheet\Cell\AdvancedValueBinder::class
     |
     */
+<<<<<<< HEAD
     'value_binder' => [
         'default' => Maatwebsite\Excel\DefaultValueBinder::class,
     ],
 
     'cache' => [
+=======
+    'value_binder'       => [
+        'default' => Maatwebsite\Excel\DefaultValueBinder::class,
+    ],
+
+    'cache'        => [
+>>>>>>> 4b6b99016 (first commit)
         /*
         |--------------------------------------------------------------------------
         | Default cell caching driver
@@ -244,7 +344,11 @@ return [
         | Drivers: memory|illuminate|batch
         |
         */
+<<<<<<< HEAD
         'driver' => 'memory',
+=======
+        'driver'      => 'memory',
+>>>>>>> 4b6b99016 (first commit)
 
         /*
         |--------------------------------------------------------------------------
@@ -256,7 +360,11 @@ return [
         | Here you can tweak the memory limit to your liking.
         |
         */
+<<<<<<< HEAD
         'batch' => [
+=======
+        'batch'       => [
+>>>>>>> 4b6b99016 (first commit)
             'memory_limit' => 60000,
         ],
 
@@ -272,7 +380,11 @@ return [
         | at "null" it will use the default store.
         |
         */
+<<<<<<< HEAD
         'illuminate' => [
+=======
+        'illuminate'  => [
+>>>>>>> 4b6b99016 (first commit)
             'store' => null,
         ],
 
@@ -308,7 +420,11 @@ return [
     */
     'transactions' => [
         'handler' => 'db',
+<<<<<<< HEAD
         'db' => [
+=======
+        'db'      => [
+>>>>>>> 4b6b99016 (first commit)
             'connection' => null,
         ],
     ],
@@ -326,7 +442,11 @@ return [
         | and the create file (file).
         |
         */
+<<<<<<< HEAD
         'local_path' => storage_path('framework/cache/laravel-excel'),
+=======
+        'local_path'          => storage_path('framework/cache/laravel-excel'),
+>>>>>>> 4b6b99016 (first commit)
 
         /*
         |--------------------------------------------------------------------------
@@ -338,7 +458,11 @@ return [
         | If omitted the default permissions of the filesystem will be used.
         |
         */
+<<<<<<< HEAD
         'local_permissions' => [
+=======
+        'local_permissions'   => [
+>>>>>>> 4b6b99016 (first commit)
             // 'dir'  => 0755,
             // 'file' => 0644,
         ],
@@ -357,8 +481,13 @@ return [
         | in conjunction with queued imports and exports.
         |
         */
+<<<<<<< HEAD
         'remote_disk' => null,
         'remote_prefix' => null,
+=======
+        'remote_disk'         => null,
+        'remote_prefix'       => null,
+>>>>>>> 4b6b99016 (first commit)
 
         /*
         |--------------------------------------------------------------------------

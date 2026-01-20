@@ -10,6 +10,10 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Resources\Pages\PageRegistration;
+<<<<<<< HEAD
+=======
+use Filament\Tables\Table;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\User\Filament\Resources\SsoProviderResource\Pages;
 use Modules\User\Filament\Resources\SsoProviderResource\RelationManagers\UsersRelationManager;
 use Modules\User\Models\SsoProvider;
@@ -19,6 +23,11 @@ class SsoProviderResource extends XotBaseResource
 {
     protected static ?string $model = SsoProvider::class;
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * @return array<string, \Filament\Support\Components\Component>
      */
@@ -82,4 +91,8 @@ class SsoProviderResource extends XotBaseResource
             'edit' => Pages\EditSsoProvider::route('/{record}/edit'),
         ];
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4b6b99016 (first commit)

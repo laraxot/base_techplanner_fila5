@@ -40,7 +40,11 @@
     'channels' => ['mail'],
     'status' => 'success',
     'execution_time' => 0.5,
+<<<<<<< HEAD
     'timestamp' => '[DATE] 10:00:00',
+=======
+    'timestamp' => '2024-03-20 10:00:00',
+>>>>>>> 4b6b99016 (first commit)
     'metadata' => [
         'queue' => 'notifications',
         'attempt' => 1,

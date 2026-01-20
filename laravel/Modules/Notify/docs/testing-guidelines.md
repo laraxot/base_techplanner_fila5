@@ -42,7 +42,11 @@ describe('Notification Management', function () {
             'user_id' => $this->user->id,
             'notification_type_id' => $this->notificationType->id,
             'template_id' => $template->id,
+<<<<<<< HEAD
             'data' => json_encode(['date' => '[DATE] 10:00']),
+=======
+            'data' => json_encode(['date' => '2024-01-15 10:00']),
+>>>>>>> 4b6b99016 (first commit)
             'scheduled_at' => now()->addHour(),
         ]);
 
@@ -142,12 +146,20 @@ describe('Email Template System', function () {
         $data = [
             'patient_name' => 'John Doe',
             'doctor_name' => 'Smith',
+<<<<<<< HEAD
             'date' => '[DATE]',
+=======
+            'date' => '2024-01-15',
+>>>>>>> 4b6b99016 (first commit)
         ];
 
         $rendered = $template->render($data);
 
+<<<<<<< HEAD
         expect($rendered)->toBe('Hello John Doe, your appointment with Dr. Smith is on [DATE]');
+=======
+        expect($rendered)->toBe('Hello John Doe, your appointment with Dr. Smith is on 2024-01-15');
+>>>>>>> 4b6b99016 (first commit)
     });
 });
 ```

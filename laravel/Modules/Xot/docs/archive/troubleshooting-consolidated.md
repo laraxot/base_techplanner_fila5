@@ -592,5 +592,9 @@ php artisan view:clear
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-08-04*
+>>>>>>> 4b6b99016 (first commit)
 *Modulo: Xot*
 *Categoria: Troubleshooting*

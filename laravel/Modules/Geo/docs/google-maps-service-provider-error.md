@@ -4,6 +4,10 @@
 Errore: `Class "Cheesegrits\FilamentGoogleMaps\FilamentGoogleMapsServiceProvider" not found`
 
 ## Contesto
+<<<<<<< HEAD
+=======
+- **Data**: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 - **Ambiente**: Produzione (sottana.com)
 - **PHP**: 8.4.8
 - **Laravel**: 12.30.1
@@ -80,3 +84,7 @@ Il ServiceProvider deve essere registrato nel `composer.json` del modulo:
 - Testare funzionalità di mappe dopo installazione
 - Aggiornare documentazione se si cambia pacchetto
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 4b6b99016 (first commit)

@@ -23,6 +23,7 @@ return [
             'placeholder' => 'Selecionar tipo de layout',
             'tooltip' => 'Escolher entre visualização em lista e em grelha',
             'help' => 'Escolha o tipo de layout adequado para visualizar os dados',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -36,4 +37,8 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

@@ -45,6 +45,10 @@ if (is_dir($modulesPath)) {
     }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)
 // Check if the application has already been bootstrapped
 if (! isset($app)) {
     // Define the path to the application bootstrap file
@@ -52,7 +56,11 @@ if (! isset($app)) {
 
     // Ensure the application bootstrap file exists
     if (! file_exists($appPath)) {
+<<<<<<< HEAD
         echo 'Laravel application bootstrap file not found.'.PHP_EOL;
+=======
+        echo "Laravel application bootstrap file not found.".PHP_EOL;
+>>>>>>> 4b6b99016 (first commit)
         exit(1);
     }
 
@@ -67,6 +75,10 @@ if (! isset($app)) {
     $consoleKernel->bootstrap();
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)
 // Manually register the service providers for modules
 if (class_exists(Nwidart\Modules\Facades\Module::class)) {
     foreach (\Nwidart\Modules\Facades\Module::getOrdered() as $module) {
@@ -76,4 +88,8 @@ if (class_exists(Nwidart\Modules\Facades\Module::class)) {
             $app->register($serviceProvider);
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4b6b99016 (first commit)

@@ -1,16 +1,30 @@
+<<<<<<< HEAD
 name: Update Changelog
+=======
+name: "Update Changelog"
+>>>>>>> 4b6b99016 (first commit)
 
 on:
   release:
     types: [released]
 
+<<<<<<< HEAD
+=======
+permissions:
+  contents: write
+
+>>>>>>> 4b6b99016 (first commit)
 jobs:
   update:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
+<<<<<<< HEAD
         uses: actions/checkout@v4
+=======
+        uses: actions/checkout@v3
+>>>>>>> 4b6b99016 (first commit)
         with:
           ref: main
 
@@ -21,8 +35,16 @@ jobs:
           release-notes: ${{ github.event.release.body }}
 
       - name: Commit updated CHANGELOG
+<<<<<<< HEAD
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           branch: main
           commit_message: Update CHANGELOG
           file_pattern: CHANGELOG.md
+=======
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: main
+          commit_message: Update CHANGELOG
+          file_pattern: CHANGELOG.md
+>>>>>>> 4b6b99016 (first commit)

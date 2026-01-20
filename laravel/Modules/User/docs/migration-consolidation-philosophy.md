@@ -237,9 +237,15 @@ find Modules/User/database/migrations -name "*create_roles_table.php"
 
 ## 📚 Riferimenti
 
+<<<<<<< HEAD
 - [Migration Unicity Commandment](../../xot/docs/migration-unicity-commandment.md)
 - [Migration Philosophy](../../xot/docs/migration-philosophy.md)
 - [XotBaseMigration Documentation](../../xot/docs/migration-base-rules.md)
+=======
+- [Migration Unicity Commandment](../../Xot/docs/migration-unicity-commandment.md)
+- [Migration Philosophy](../../Xot/docs/migration-philosophy.md)
+- [XotBaseMigration Documentation](../../Xot/docs/migration-base-rules.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

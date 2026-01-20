@@ -6,6 +6,10 @@ namespace Modules\Activity\Filament\Pages;
 
 use Exception;
 use Filament\Forms\Components\Field;
+<<<<<<< HEAD
+=======
+use Filament\Forms\Contracts\HasForms;
+>>>>>>> 4b6b99016 (first commit)
 use Filament\Notifications\Notification;
 use Filament\Pages\Concerns\InteractsWithFormActions;
 use Filament\Resources\Pages\Concerns\InteractsWithRecord;
@@ -39,7 +43,11 @@ use Webmozart\Assert\Assert;
  * @see XotBasePage
  * @see \Modules\Activity\docs\errori\route-method-does-not-exist.md
  */
+<<<<<<< HEAD
 abstract class ListLogActivities extends XotBasePage
+=======
+abstract class ListLogActivities extends XotBasePage implements HasForms
+>>>>>>> 4b6b99016 (first commit)
 {
     use CanPaginate;
     use InteractsWithFormActions;

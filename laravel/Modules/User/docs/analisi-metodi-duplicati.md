@@ -141,7 +141,11 @@ protected function registerObservers(): void
 ## Link Correlati
 
 - 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
+<<<<<<< HEAD
 - 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
+=======
+- 📖 [Modulo Xot - Classi Base](../../Xot/docs/analisi-metodi-duplicati.md)
+>>>>>>> 4b6b99016 (first commit)
 - 📖 [Architettura User](./core/architecture.md)
 - 📖 [Regole Business Logic](./business-logic-deep-dive.md)
 

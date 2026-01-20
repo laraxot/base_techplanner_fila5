@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -53,6 +54,26 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'job_id' => [
+            'label' => 'ID lavoro',
+        ],
+        'importable_type' => [
+            'label' => 'Tipo importabile',
+        ],
+        'file_path' => [
+            'label' => 'Percorso file',
+        ],
+        'status' => [
+            'label' => 'Stato',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
+        'completed_at' => [
+            'label' => 'Completato il',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -63,4 +84,8 @@ return [
             'label' => 'Carica',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

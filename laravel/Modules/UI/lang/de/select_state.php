@@ -10,7 +10,10 @@ return [
             'help' => 'Aktueller Zustand der Auswahl',
             'description' => 'Auswählbarer Zustand',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'message' => [
             'label' => 'Nachricht',
@@ -18,6 +21,7 @@ return [
             'help' => 'Informative Nachricht für die Auswahl',
             'description' => 'Nachrichtentext',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -32,4 +36,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

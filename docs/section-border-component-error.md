@@ -81,4 +81,8 @@ Il comando `php artisan view:cache` ora viene eseguito senza errori e il compone
 - I componenti Blade devono essere registrati correttamente per essere accessibili
 - La cache delle view deve essere pulita dopo modifiche ai componenti
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 4b6b99016 (first commit)
 

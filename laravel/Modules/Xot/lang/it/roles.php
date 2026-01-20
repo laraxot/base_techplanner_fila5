@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
     'administrator' => 'Amministratore',
     'user' => 'Utente',
+<<<<<<< HEAD
     'label' => 'Roles',
     'plural_label' => 'Roles (Plurale)',
     'navigation' => [
@@ -49,4 +50,6 @@ return [
             'label' => 'Elimina Roles',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

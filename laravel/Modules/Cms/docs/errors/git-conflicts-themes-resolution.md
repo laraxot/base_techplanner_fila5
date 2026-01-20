@@ -184,4 +184,8 @@ php artisan view:clear
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 6 gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)
 *Autore: Sistema di Risoluzione Conflitti Git*

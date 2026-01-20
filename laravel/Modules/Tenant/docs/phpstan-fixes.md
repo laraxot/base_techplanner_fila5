@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # PHPStan Fixes - Tenant Module - [DATE]
+=======
+# PHPStan Fixes - Tenant Module - 2025-10-13
+>>>>>>> 4b6b99016 (first commit)
 
 ## Summary
 
@@ -136,11 +140,19 @@ beforeEach(function (): void {
 
 ---
 
+<<<<<<< HEAD
 *
+=======
+*Last Updated: 2025-10-13*
+>>>>>>> 4b6b99016 (first commit)
 *Progress: 71% complete (24 errors remaining)*
 *Module Status: Partial completion - major issues resolved*
 # PHPStan Analysis Report and Fix Plan for Tenant Module
 
+<<<<<<< HEAD
+=======
+**Date:** December 23, 2025
+>>>>>>> 4b6b99016 (first commit)
 
 **Overview:**
 The `Tenant` module currently has 689 PHPStan errors spread across several test files. These errors primarily stem from missing type information, incorrect class imports, and unsafe function usage. This document outlines a prioritized plan to systematically address these issues.

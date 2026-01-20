@@ -718,5 +718,9 @@ chown www-data:tenant_acme config/tenant_acme/
 ---
 
 **Document Version**: 1.0
+<<<<<<< HEAD
 
+=======
+**Last Updated**: 5 Novembre 2025
+>>>>>>> 4b6b99016 (first commit)
 **Status**: 📘 Authoritative Reference

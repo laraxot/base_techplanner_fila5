@@ -206,10 +206,17 @@ Modules/User/
 
 ## Collegamenti
 - [Console Commands Philosophy](console_commands_philosophy.md)
+<<<<<<< HEAD
 - [User Models](../models/readme.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
 - [README.md](../readme.md)
+=======
+- [User Models](../models/README.md)
+- [Role Management](../models/role-management.md)
+- [Password Management](../password.md)
+- [README.md](../README.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Aggiornamenti Recenti
 
@@ -243,3 +250,7 @@ Modules/User/
 - [ ] Logging strutturato
 - [ ] Metriche di utilizzo
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-27*
+>>>>>>> 4b6b99016 (first commit)

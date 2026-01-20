@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
+<<<<<<< HEAD
         'label' => 'Codici Autorizzazione OAuth',
         'plural_label' => 'Codici Autorizzazione OAuth',
         'group' => 'OAuth',
@@ -52,11 +53,39 @@ return [
             'placeholder' => 'Seleziona la data',
             'helper_text' => 'Data e ora di scadenza del codice',
             'description' => 'Data di scadenza',
+=======
+        'label' => 'OAuth Authorization Codes',
+        'group' => '',
+        'icon' => 'heroicon-o-code-bracket',
+        'sort' => 31,
+    ],
+    'label' => 'Codice di autorizzazione OAuth',
+    'plural_label' => 'Codici di autorizzazione OAuth',
+    'fields' => [
+        'id' => [
+            'label' => 'ID',
+        ],
+        'user_id' => [
+            'label' => 'Utente',
+        ],
+        'client_id' => [
+            'label' => 'Client',
+        ],
+        'scopes' => [
+            'label' => 'Ambiti',
+        ],
+        'revoked' => [
+            'label' => 'Revocato',
+        ],
+        'expires_at' => [
+            'label' => 'Scade il',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
         'revoke' => [
             'label' => 'Revoca',
+<<<<<<< HEAD
             'tooltip' => 'Revoca il codice',
             'helper_text' => 'Revoca questo codice',
             'description' => 'Azione per revocare il codice',
@@ -66,4 +95,9 @@ return [
     'messages' => [
         'revoked' => 'Codice revocato con successo',
     ],
+=======
+            'success' => 'Codice di autorizzazione revocato con successo',
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

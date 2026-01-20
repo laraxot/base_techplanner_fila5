@@ -88,7 +88,11 @@ find Modules/User/app/Filament/Resources -name "SocialProviderResource.php"
 ## 📚 Riferimenti
 
 - [Passport Cluster Resources Only Rule](./passport-cluster-resources-only-rule.md)
+<<<<<<< HEAD
 - [Filosofia Modulo User](./filosofia_modulo_user.md)
+=======
+- [Filosofia Modulo User](./FILOSOFIA_MODULO_USER.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Laravel Passport Documentation](https://laravel.com/docs/passport)
 - [Laravel Socialite Documentation](https://laravel.com/docs/socialite)
 

@@ -9,19 +9,26 @@ return [
             'description' => 'img_uuid',
             'helper_text' => 'img_uuid',
             'placeholder' => 'img_uuid',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'video' => [
             'label' => 'video',
             'description' => 'video',
             'helper_text' => 'video',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'caption' => [
             'label' => 'caption',
             'description' => 'caption',
             'helper_text' => 'caption',
             'placeholder' => 'caption',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -36,4 +43,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

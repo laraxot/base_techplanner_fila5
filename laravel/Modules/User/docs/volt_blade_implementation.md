@@ -1,10 +1,17 @@
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
+=======
+- [README modulo User](./README.md)
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
+- [Analisi dell'Errore di Implementazione](./VOLT_BLADE_IMPLEMENTATION_ERROR.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Introduzione
 
@@ -282,6 +289,12 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
+<<<<<<< HEAD
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session_management.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
+=======
+- [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
+- [Gestione Sessione](./SESSION_MANAGEMENT.md)
+- [Tema One Documentation](../../Themes/One/docs/README.md) 
+>>>>>>> 4b6b99016 (first commit)

@@ -154,7 +154,11 @@
 
 ### Collegamenti Interni
 - [Bottlenecks](bottlenecks.md)
+<<<<<<< HEAD
 - [Best Practices](best-practices.md)
+=======
+- [Best Practices](BEST-PRACTICES.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Testing](testing.md)
 
 ### Versione HEAD
@@ -176,6 +180,7 @@
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](bashscripts/project_docs/roadmap.md)
 * [roadmap.md](docs/roadmap.md)
+<<<<<<< HEAD
 * [roadmap.md](../../../gdpr/project_docs/roadmap.md)
 * [roadmap.md](../../../notify/project_docs/roadmap.md)
 * [roadmap.md](../../../xot/project_docs/roadmap.md)
@@ -190,6 +195,22 @@
 * [roadmap.md](../../../patient/project_docs/roadmap.md)
 * [roadmap.md](../../../cms/project_docs/roadmap.md)
 * [roadmap.md](../../../../themes/one/project_docs/roadmap.md)
+=======
+* [roadmap.md](../../../Gdpr/project_docs/roadmap.md)
+* [roadmap.md](../../../Notify/project_docs/roadmap.md)
+* [roadmap.md](../../../Xot/project_docs/roadmap.md)
+* [roadmap.md](../../../Dental/project_docs/roadmap.md)
+* [roadmap.md](../../../User/project_docs/roadmap.md)
+* [roadmap.md](../../../UI/project_docs/roadmap.md)
+* [roadmap.md](../../../Lang/project_docs/roadmap.md)
+* [roadmap.md](../../../Job/project_docs/roadmap.md)
+* [roadmap.md](../../../Media/project_docs/roadmap.md)
+* [roadmap.md](../../../Tenant/project_docs/roadmap.md)
+* [roadmap.md](../../../Activity/project_docs/roadmap.md)
+* [roadmap.md](../../../Patient/project_docs/roadmap.md)
+* [roadmap.md](../../../Cms/project_docs/roadmap.md)
+* [roadmap.md](../../../../Themes/One/project_docs/roadmap.md)
+>>>>>>> 4b6b99016 (first commit)
 
 
 ---
@@ -253,6 +274,10 @@ Overall Module Completion: 82%
    - User authentication (100%)
    - Password validation rules (100%)
    - Status: ✅ Completed
+<<<<<<< HEAD
+=======
+   - Date: 2025-04-01
+>>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Code Coverage: 98%
      * Security Audit: Passed
@@ -270,6 +295,10 @@ Overall Module Completion: 82%
    - HasAuthenticationLogTrait (100%)
    - PasswordValidationRules trait (100%)
    - Status: ✅ Completed
+<<<<<<< HEAD
+=======
+   - Date: 2025-04-01
+>>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Code Coverage: 96%
      * PHPStan Level: 7
@@ -285,6 +314,10 @@ Overall Module Completion: 82%
    - Team user relationships (100%)
    - Role management within teams (100%)
    - Status: ✅ Completed
+<<<<<<< HEAD
+=======
+   - Date: 2025-04-01
+>>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Code Coverage: 95%
      * Performance: 150ms avg response
@@ -300,6 +333,10 @@ Overall Module Completion: 82%
    - Tenant user relationships (100%)
    - Multi-tenancy support (100%)
    - Status: ✅ Completed
+<<<<<<< HEAD
+=======
+   - Date: 2025-04-01
+>>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Code Coverage: 97%
      * Data Isolation: 100%
@@ -319,6 +356,10 @@ Overall Module Completion: 82%
    - Fix undefined property access (30%)
    - Priority: High
    - Status: In Progress
+<<<<<<< HEAD
+=======
+   - Target Date: Q2 2025
+>>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Files Analyzed: 65/100
      * Critical Issues: 8
@@ -331,6 +372,10 @@ Overall Module Completion: 82%
    - Advanced filtering (50%)
    - Priority: High
    - Status: In Progress
+<<<<<<< HEAD
+=======
+   - Target Date: Q2 2025
+>>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Log Coverage: 85%
      * Alert Accuracy: 95%
@@ -343,6 +388,10 @@ Overall Module Completion: 82%
    - Permission inheritance (35%)
    - Priority: Medium
    - Status: In Progress
+<<<<<<< HEAD
+=======
+   - Target Date: Q3 2025
+>>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Permission Types: 25/40
      * Role Types: 8/12
@@ -354,6 +403,10 @@ Overall Module Completion: 82%
    - Profile verification system (35%)
    - Priority: Medium
    - Status: In Progress
+<<<<<<< HEAD
+=======
+   - Target Date: Q3 2025
+>>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Field Coverage: 50%
      * Settings Types: 15/30
@@ -366,6 +419,10 @@ Overall Module Completion: 82%
    - Profile synchronization (20%)
    - Priority: Low
    - Status: In Progress
+<<<<<<< HEAD
+=======
+   - Target Date: Q4 2025
+>>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Providers: 2/8
      * Auth Success Rate: 95%
@@ -378,6 +435,10 @@ Overall Module Completion: 82%
    - Update deprecated methods (35%)
    - Priority: High
    - Status: In Progress
+<<<<<<< HEAD
+=======
+   - Target Date: Q2 2025
+>>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Code Removed: 15k lines
      * Complexity Reduction: 25%
@@ -389,6 +450,10 @@ Overall Module Completion: 82%
    - Add code examples (35%)
    - Priority: Medium
    - Status: In Progress
+<<<<<<< HEAD
+=======
+   - Target Date: Q3 2025
+>>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Doc Coverage: 45%
      * Example Coverage: 40%

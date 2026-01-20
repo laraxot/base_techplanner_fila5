@@ -1,5 +1,9 @@
 # Correzione PHPStan XotBaseRelationManager - Versione Finale ✅
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-12-23
+>>>>>>> 4b6b99016 (first commit)
 **File**: `app/Filament/Resources/RelationManagers/XotBaseRelationManager.php`
 **Status**: ✅ COMPLETATO E VERIFICATO
 

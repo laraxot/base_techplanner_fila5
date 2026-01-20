@@ -221,3 +221,7 @@ Errore: Proprietà mancanti nel template
 - [Page Model](../app/Models/Page.php)
 - [Theme Components](../../../Themes/One/resources/views/components/blocks/)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)

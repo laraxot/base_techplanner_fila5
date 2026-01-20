@@ -141,6 +141,10 @@ class PassportDashboard extends XotBasePage
     {
         return [
             Action::make('passport_install')
+<<<<<<< HEAD
+=======
+                ->label(static::trans('actions.install.label'))
+>>>>>>> 4b6b99016 (first commit)
                 ->icon('heroicon-o-arrow-down-tray')
                 ->color('success')
                 ->disabled(fn () => $this->isRunning)
@@ -149,6 +153,10 @@ class PassportDashboard extends XotBasePage
                 ->action(fn () => $this->executeCommand('passport:install --uuids')),
 
             Action::make('passport_keys')
+<<<<<<< HEAD
+=======
+                ->label(static::trans('actions.generate_keys.label'))
+>>>>>>> 4b6b99016 (first commit)
                 ->icon('heroicon-o-key')
                 ->color('primary')
                 ->disabled(fn () => $this->isRunning)
@@ -156,6 +164,10 @@ class PassportDashboard extends XotBasePage
                 ->action(fn () => $this->executeCommand('passport:keys')),
 
             Action::make('passport_purge')
+<<<<<<< HEAD
+=======
+                ->label(static::trans('actions.purge_tokens.label'))
+>>>>>>> 4b6b99016 (first commit)
                 ->icon('heroicon-o-trash')
                 ->color('warning')
                 ->disabled(fn () => $this->isRunning)
@@ -164,6 +176,10 @@ class PassportDashboard extends XotBasePage
                 ->action(fn () => $this->executeCommand('passport:purge')),
 
             Action::make('passport_hash')
+<<<<<<< HEAD
+=======
+                ->label(static::trans('actions.hash_secrets.label'))
+>>>>>>> 4b6b99016 (first commit)
                 ->icon('heroicon-o-lock-closed')
                 ->color('danger')
                 ->disabled(fn () => $this->isRunning)

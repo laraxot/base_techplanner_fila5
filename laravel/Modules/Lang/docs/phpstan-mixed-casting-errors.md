@@ -209,16 +209,27 @@ Dopo aver applicato le correzioni:
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [SafeFloatCastAction Documentation](../../xot/docs/safe-casting-actions.md)
+=======
+- [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
+>>>>>>> 4b6b99016 (first commit)
 - [PHP Type Casting](https://www.php.net/manual/en/language.types.type-juggling.php)
 - [PHPStan Mixed Type](https://phpstan.org/writing-php-code/phpdoc-types#mixed)
 
 ## Backlink
 
 - [Root PHPStan Rules](../../../docs/phpstan_rules.md)
+<<<<<<< HEAD
 - [Lang Module Structure](./readme.md)
 - [Xot Safe Casting Actions](../../xot/docs/safe-casting-actions.md)
 
+=======
+- [Lang Module Structure](./README.md)
+- [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
+
+*Ultimo aggiornamento: 2025-07-31*
+>>>>>>> 4b6b99016 (first commit)
 # PHPStan Mixed Type Casting Errors
 
 ## Problema
@@ -430,13 +441,24 @@ Dopo aver applicato le correzioni:
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [SafeFloatCastAction Documentation](../../xot/docs/safe-casting-actions.md)
+=======
+- [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
+>>>>>>> 4b6b99016 (first commit)
 - [PHP Type Casting](https://www.php.net/manual/en/language.types.type-juggling.php)
 - [PHPStan Mixed Type](https://phpstan.org/writing-php-code/phpdoc-types#mixed)
 
 ## Backlink
 
 - [Root PHPStan Rules](../../../docs/phpstan_rules.md)
+<<<<<<< HEAD
 - [Lang Module Structure](./readme.md)
 - [Xot Safe Casting Actions](../../xot/docs/safe-casting-actions.md)
 
+=======
+- [Lang Module Structure](./README.md)
+- [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
+
+*Ultimo aggiornamento: 2025-07-31*
+>>>>>>> 4b6b99016 (first commit)

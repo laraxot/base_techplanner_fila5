@@ -211,4 +211,8 @@ php artisan test --coverage
 - [Theme Components](../theme_components.md)
 - [Modules Documentation](../modules/)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)
 

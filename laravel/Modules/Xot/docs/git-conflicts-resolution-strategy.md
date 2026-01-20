@@ -2,7 +2,11 @@
 
 ## Contesto
 
+<<<<<<< HEAD
 **Data analisi:** [DATE]
+=======
+**Data analisi:** 2025-01-27
+>>>>>>> 4b6b99016 (first commit)
 **File con conflitti identificati:** 586 file PHP
 **Approccio:** Risoluzione manuale focalizzata su business logic
 
@@ -232,6 +236,10 @@ I conflitti sono stati causati da:
 
 ## Stato Corrente
 
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento:** 2025-01-27
+>>>>>>> 4b6b99016 (first commit)
 
 ### Completati ✅
 - [x] Analisi complessiva (586 file identificati)

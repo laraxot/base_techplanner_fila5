@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Filament\Resources\ClientResource\Pages;
 
+<<<<<<< HEAD
+=======
+use Modules\Geo\Actions\UpdateCoordinatesAction;
+use Illuminate\Database\Eloquent\Collection;
+>>>>>>> 4b6b99016 (first commit)
 use Exception;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
@@ -13,23 +18,41 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\Relation;
+=======
+use Illuminate\Database\Eloquent\Relations\Relation;
+use Illuminate\Support\Arr;
+>>>>>>> 4b6b99016 (first commit)
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Session;
 use Livewire\Attributes\On;
+<<<<<<< HEAD
 use Modules\Geo\Actions\UpdateCoordinatesAction;
 use Modules\Geo\Filament\Actions\UpdateCoordinatesBulkAction;
 use Modules\Geo\Filament\Tables\Columns\AddressColumn; // NEW IMPORT
 use Modules\Notify\Filament\Actions\SendRecordsNotificationBulkAction;
 use Modules\Notify\Filament\Tables\Columns\ContactColumn;
+=======
+use Modules\Notify\Filament\Tables\Columns\ContactColumn;
+use Modules\Notify\Filament\Actions\SendRecordsNotificationBulkAction; // NEW IMPORT
+use Modules\Geo\Filament\Actions\UpdateCoordinatesBulkAction;
+use Modules\Geo\Filament\Tables\Columns\AddressColumn;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\TechPlanner\Filament\Imports\ClientImporter;
 use Modules\TechPlanner\Filament\Resources\ClientResource;
 use Modules\TechPlanner\Models\Client;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Override;
+<<<<<<< HEAD
+=======
+use Throwable;
+
+use function Safe\preg_replace;
+>>>>>>> 4b6b99016 (first commit)
 
 /**
  * @property ClientResource $resource
@@ -85,7 +108,11 @@ class ListClients extends XotBaseListRecords
             'company_name' => TextColumn::make('company_name')
                 ->searchable()
                 ->sortable()
+<<<<<<< HEAD
                 // ->formatStateUsing(fn($record) => dddx($record))
+=======
+                //->formatStateUsing(fn($record) => dddx($record))
+>>>>>>> 4b6b99016 (first commit)
                 ->wrap(),
             'fiscal_code' => TextColumn::make('fiscal_code')->toggleable(isToggledHiddenByDefault: true),
             'full_address' => TextColumn::make('full_address')
@@ -105,6 +132,11 @@ class ListClients extends XotBaseListRecords
         return $columns;
     }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 4b6b99016 (first commit)
     public function getTableFilters(): array
     {
         // Cache del filtro attività per ridurre query e memory usage
@@ -186,7 +218,11 @@ class ListClients extends XotBaseListRecords
                 // Collect errors for notification
                 $resultErrors = is_array($result->errors) ? $result->errors : [];
                 foreach ($resultErrors as $error) {
+<<<<<<< HEAD
                     if (! is_array($error)) {
+=======
+                    if (!is_array($error)) {
+>>>>>>> 4b6b99016 (first commit)
                         continue;
                     }
                     $model = isset($error['model']) ? (string) $error['model'] : 'Unknown';
@@ -297,6 +333,10 @@ class ListClients extends XotBaseListRecords
         $this->applySort('distance');
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     protected function getTableQuery(): Builder
     {
         $query = parent::getTableQuery();

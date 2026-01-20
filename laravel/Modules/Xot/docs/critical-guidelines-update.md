@@ -30,8 +30,13 @@ find translations.md)
 
 **DOPO (CORRETTO):**
 ```markdown
+<<<<<<< HEAD
 - [Traduzioni](../../xot/docs/translations.md)
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
+=======
+- [Traduzioni](../../Xot/docs/translations.md)
+- [Standard Traduzioni](../../Xot/docs/translation-standards.md)
+>>>>>>> 4b6b99016 (first commit)
 ```
 
 #### C. Struttura Documentazione Corretta
@@ -162,7 +167,11 @@ find  --include="*.php" | grep -v "static" | grep -v "::"
 
 ---
 
+<<<<<<< HEAD
 **DATA EFFETTIVA**: [DATE]
+=======
+**DATA EFFETTIVA**: 2025-08-20
+>>>>>>> 4b6b99016 (first commit)
 **PRIORITÀ**: CRITICA
 **RESPONSABILE**: Tutto il team sviluppo
 

@@ -2,18 +2,32 @@
 
 namespace App\Providers\Filament;
 
+<<<<<<< HEAD
+=======
+use Filament\Pages\Dashboard;
+use Filament\Widgets\AccountWidget;
+use Filament\Widgets\FilamentInfoWidget;
+>>>>>>> 4b6b99016 (first commit)
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Navigation\NavigationGroup;
+<<<<<<< HEAD
 use Filament\Pages\Dashboard;
+=======
+use Filament\Pages;
+>>>>>>> 4b6b99016 (first commit)
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Assets\Js;
 use Filament\Support\Colors\Color;
 use Filament\Support\Facades\FilamentAsset;
+<<<<<<< HEAD
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
+=======
+use Filament\Widgets;
+>>>>>>> 4b6b99016 (first commit)
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;

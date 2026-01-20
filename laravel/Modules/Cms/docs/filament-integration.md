@@ -125,13 +125,21 @@ public function test_filament_components_rendering()
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione CMS](../readme.md)
+=======
+- [Documentazione CMS](../README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Best Practices](../best_practices/theme-reusability.md)
 - [Configurazione](../config.md)
 - [Testing](../testing.md)
 
 ## Collegamenti Bidirezionali
+<<<<<<< HEAD
 - [README](readme.md) - Documentazione principale del modulo
+=======
+- [README](README.md) - Documentazione principale del modulo
+>>>>>>> 4b6b99016 (first commit)
 - [Architettura](architecture.md) - Architettura del sistema CMS
 - [Componenti](filament-components.md) - Componenti Filament
 - [Form](filament-forms.md) - Sistema di form
@@ -140,6 +148,7 @@ public function test_filament_components_rendering()
 - [Personalizzazioni](filament-personalizzazioni-avanzate.md) - Personalizzazioni avanzate
 
 ## Vedi Anche
+<<<<<<< HEAD
 - [Modulo UI](../ui/project_docs/readme.md) - Componenti di interfaccia
 - [Modulo Xot](../xot/project_docs/readme.md) - Classi base e utilities
 - [Modulo Theme](../theme/project_docs/readme.md) - Gestione temi
@@ -153,3 +162,17 @@ public function test_filament_components_rendering()
 * [filament-integration.md](laravel/modules/cms/project_docs/roadmap/features/filament-integration.md)
 * [filament-integration.md](laravel/modules/cms/project_docs/filament-integration.md)
 
+=======
+- [Modulo UI](../UI/project_docs/README.md) - Componenti di interfaccia
+- [Modulo Xot](../Xot/project_docs/README.md) - Classi base e utilities
+- [Modulo Theme](../Theme/project_docs/README.md) - Gestione temi
+- [Documentazione Filament](https://filamentphp.com/docs) - Documentazione ufficiale
+- [Best Practices](https://filamentphp.com/project_docs/3.x/best-practices) - Best practices Filament
+- [Componenti Blade](https://filamentphp.com/project_docs/3.x/support/blade-components) - Componenti Blade
+- [Testing](../testing.md)
+
+## Collegamenti tra versioni di filament-integration.md
+* [filament-integration.md](laravel/Modules/Xot/project_docs/laraxot/filament-integration.md)
+* [filament-integration.md](laravel/Modules/Cms/project_docs/roadmap/features/filament-integration.md)
+* [filament-integration.md](laravel/Modules/Cms/project_docs/filament-integration.md)
+>>>>>>> 4b6b99016 (first commit)

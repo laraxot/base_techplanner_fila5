@@ -8,48 +8,66 @@ return [
             'label' => 'CAP',
             'placeholder' => 'Inserisci il CAP',
             'help' => 'Codice di avviamento postale',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'municipality' => [
             'label' => 'Comune',
             'placeholder' => 'Seleziona il comune',
             'help' => 'Comune di appartenenza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'province' => [
             'label' => 'Provincia',
             'placeholder' => 'Seleziona la provincia',
             'help' => 'Provincia di appartenenza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'region' => [
             'label' => 'Regione',
             'placeholder' => 'Seleziona la regione',
             'help' => 'Regione di appartenenza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'country' => [
             'label' => 'Paese',
             'placeholder' => 'Seleziona il paese',
             'help' => 'Paese di appartenenza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'help' => 'Indica se il CAP è attivo nel sistema',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -67,6 +85,7 @@ return [
         'postal_code_activated' => 'CAP attivato con successo',
         'postal_code_deactivated' => 'CAP disattivato con successo',
     ],
+<<<<<<< HEAD
     'label' => 'Postal Code',
     'plural_label' => 'Postal Code (Plurale)',
     'navigation' => [
@@ -91,4 +110,6 @@ return [
             'label' => 'Elimina Postal Code',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

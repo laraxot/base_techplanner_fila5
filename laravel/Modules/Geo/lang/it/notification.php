@@ -8,87 +8,120 @@ return [
             'label' => 'Tipo',
             'placeholder' => 'Seleziona il tipo di notifica',
             'help' => 'Tipo di notifica da inviare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'title' => [
             'label' => 'Titolo',
             'placeholder' => 'Inserisci il titolo della notifica',
             'help' => 'Titolo della notifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Inserisci il messaggio della notifica',
             'help' => 'Contenuto della notifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'recipients' => [
             'label' => 'Destinatari',
             'placeholder' => 'Seleziona i destinatari',
             'help' => 'Utenti che riceveranno la notifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'channels' => [
             'label' => 'Canali',
             'placeholder' => 'Seleziona i canali di notifica',
             'help' => 'Canali attraverso cui inviare la notifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'priority' => [
             'label' => 'Priorità',
             'placeholder' => 'Seleziona la priorità',
             'help' => 'Livello di priorità della notifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'scheduled_at' => [
             'label' => 'Programmata per',
             'placeholder' => 'Seleziona data e ora',
             'help' => 'Data e ora di invio programmato',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'expires_at' => [
             'label' => 'Scade il',
             'placeholder' => 'Seleziona data e ora',
             'help' => 'Data e ora di scadenza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'data' => [
             'label' => 'Dati aggiuntivi',
             'placeholder' => 'Inserisci dati aggiuntivi',
             'help' => 'Dati aggiuntivi per la notifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_read' => [
             'label' => 'Letta',
             'help' => 'Indica se la notifica è stata letta',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_sent' => [
             'label' => 'Inviata',
             'help' => 'Indica se la notifica è stata inviata',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -158,7 +191,11 @@ return [
         'mail' => 'Email',
         'database' => 'Database',
         'broadcast' => 'Broadcast',
+<<<<<<< HEAD
         'nexmo' => 'SMS (Nexmo]',
+=======
+        'nexmo' => 'SMS (Nexmo)',
+>>>>>>> 4b6b99016 (first commit)
         'slack' => 'Slack',
         'telegram' => 'Telegram',
         'push' => 'Push Notification',
@@ -183,6 +220,7 @@ return [
         'cancelled' => 'Annullata',
         'expired' => 'Scaduta',
     ],
+<<<<<<< HEAD
     'label' => 'Notification',
     'plural_label' => 'Notification (Plurale)',
     'navigation' => [
@@ -207,4 +245,6 @@ return [
             'label' => 'Elimina Notification',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

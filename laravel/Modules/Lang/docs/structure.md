@@ -1,6 +1,10 @@
 # Modulo Lang
 
+<<<<<<< HEAD
 Data: [DATE] 19:09:56
+=======
+Data: 2025-04-23 19:09:56
+>>>>>>> 4b6b99016 (first commit)
 
 ## Informazioni generali
 
@@ -474,6 +478,7 @@ tests/Unit
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/project_docs/structure.md)
+<<<<<<< HEAD
 * [structure.md](../../../gdpr/project_docs/structure.md)
 * [structure.md](../../../notify/project_docs/structure.md)
 * [structure.md](../../../xot/project_docs/structure.md)
@@ -489,9 +494,30 @@ tests/Unit
 * [structure.md](../../../cms/project_docs/structure.md)
 * [structure.md](../../../cms/project_docs/themes/structure.md)
 * [structure.md](../../../cms/project_docs/components/structure.md)
+=======
+* [structure.md](../../../Gdpr/project_docs/structure.md)
+* [structure.md](../../../Notify/project_docs/structure.md)
+* [structure.md](../../../Xot/project_docs/structure.md)
+* [structure.md](../../../Xot/project_docs/base/structure.md)
+* [structure.md](../../../Xot/project_docs/config/structure.md)
+* [structure.md](../../../User/project_docs/structure.md)
+* [structure.md](../../../UI/project_docs/structure.md)
+* [structure.md](../../../Lang/project_docs/structure.md)
+* [structure.md](../../../Job/project_docs/structure.md)
+* [structure.md](../../../Media/project_docs/structure.md)
+* [structure.md](../../../Tenant/project_docs/structure.md)
+* [structure.md](../../../Activity/project_docs/structure.md)
+* [structure.md](../../../Cms/project_docs/structure.md)
+* [structure.md](../../../Cms/project_docs/themes/structure.md)
+* [structure.md](../../../Cms/project_docs/components/structure.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Struttura della Registrazione dei Console Commands
 
 - Tutti i comandi console sono autoregistrati tramite la struttura di XotBaseServiceProvider.
 - Non aggiungere mai manualmente $this->commands([...]) nei provider.
+<<<<<<< HEAD
 - Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./philosophy.md)
+=======
+- Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
+>>>>>>> 4b6b99016 (first commit)

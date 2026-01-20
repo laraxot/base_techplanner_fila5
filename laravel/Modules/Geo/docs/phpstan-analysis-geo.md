@@ -4,7 +4,11 @@
 
 **PHPStan Level 10**: ⚠️ **ANALYSIS ISSUE** - Cannot complete analysis
 
+<<<<<<< HEAD
 **Last Analysis**: [DATE]
+=======
+**Last Analysis**: 2025-11-05
+>>>>>>> 4b6b99016 (first commit)
 
 ## 🎯 Module Overview
 
@@ -83,7 +87,11 @@ PHPStan analysis on the Geo module consistently times out or hangs, preventing c
 
 ---
 
+<<<<<<< HEAD
 **Analysis Date**: [DATE]
+=======
+**Analysis Date**: 2025-11-05
+>>>>>>> 4b6b99016 (first commit)
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1
 **Status**: ⚠️ Analysis Blocked - Requires Investigation

@@ -19,36 +19,51 @@ return [
             'label' => 'Nome',
             'tooltip' => 'Nome del job monitorato',
             'placeholder' => 'Inserisci nome del job',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Guard associato al job',
             'placeholder' => 'Seleziona guard',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'permissions' => [
             'label' => 'Permessi',
             'tooltip' => 'Permessi associati al job',
             'placeholder' => 'Seleziona permessi',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'updated_at' => [
             'label' => 'Aggiornato il',
             'tooltip' => 'Data dell\'ultimo aggiornamento del job monitorato',
             'placeholder' => 'Data di aggiornamento',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome dell\'utente che gestisce il job',
             'placeholder' => 'Nome del responsabile',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -109,6 +124,9 @@ return [
         'job_stopped' => 'Monitoraggio del job fermato',
     ],
     'title' => 'job monitor',
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

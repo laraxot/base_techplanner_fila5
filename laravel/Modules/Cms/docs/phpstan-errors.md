@@ -1,6 +1,10 @@
 # PHPStan Errors - Cms Module
 
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+**Date**: 2025-12-16
+>>>>>>> 4b6b99016 (first commit)
 **PHPStan Level**: 10
 **Total Errors in Module**: ~15
 
@@ -328,7 +332,11 @@ Same as Error 1 - correct the import and add proper type hint.
 **Current**: 🔴 **15 errors** requiring fixes
 **Priority**: 🔥 **HIGH** - Core CMS functionality affected
 **Owner**: Cms Module Team
+<<<<<<< HEAD
 
+=======
+**Last Updated**: 2025-12-16
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

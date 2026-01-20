@@ -9,6 +9,7 @@ return [
             'placeholder' => 'blocks',
             'helper_text' => 'blocks',
             'description' => 'blocks',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -23,4 +24,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

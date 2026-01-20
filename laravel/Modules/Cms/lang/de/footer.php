@@ -7,8 +7,11 @@ return [
         'view' => [
             'label' => 'Visualizzazione',
             'tooltip' => 'Seleziona la visualizzazione da mostrare',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -19,6 +22,7 @@ return [
             'color' => 'primary',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -28,4 +32,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

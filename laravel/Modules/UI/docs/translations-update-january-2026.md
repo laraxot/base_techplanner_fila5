@@ -140,9 +140,15 @@ Tutte le traduzioni seguono la struttura espansa:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Laraxot Translation Philosophy](../../xot/docs/translation-philosophy.md)
 - [Translation Standards](../../xot/docs/translation-standards.md)
 - [UI Module Documentation](../readme.md)
+=======
+- [Laraxot Translation Philosophy](../../Xot/docs/translation-philosophy.md)
+- [Translation Standards](../../Xot/docs/translation-standards.md)
+- [UI Module Documentation](../README.md)
+>>>>>>> 4b6b99016 (first commit)
 
 *Intervento completato il: 2026-01-22*
 *Conforme alle regole DRY + KISS*

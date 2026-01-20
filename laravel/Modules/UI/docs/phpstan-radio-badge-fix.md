@@ -1,7 +1,11 @@
 # Correzione Errori PHPStan - RadioBadge.php
 
 ## Data Aggiornamento
+<<<<<<< HEAD
 [DATE]
+=======
+2025-01-27
+>>>>>>> 4b6b99016 (first commit)
 
 ## File Modificato
 `Modules/UI/app/Filament/Forms/Components/RadioBadge.php`
@@ -147,7 +151,11 @@ class RadioBadge extends Radio
 # Correzione Errori PHPStan - RadioBadge.php
 
 ## Data Aggiornamento
+<<<<<<< HEAD
 [DATE]
+=======
+2025-01-27
+>>>>>>> 4b6b99016 (first commit)
 
 ## File Modificato
 `Modules/UI/app/Filament/Forms/Components/RadioBadge.php`

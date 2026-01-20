@@ -46,5 +46,10 @@ return [
 ```
 
 ### Riferimenti
+<<<<<<< HEAD
 - [TRANSLATION_KEYS_RULES.md](../../lang/docs/translation_keys_rules.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../lang/docs/translation_keys_best_practices.md) 
+=======
+- [TRANSLATION_KEYS_RULES.md](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md) 
+>>>>>>> 4b6b99016 (first commit)

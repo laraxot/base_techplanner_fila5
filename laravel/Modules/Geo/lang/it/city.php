@@ -8,73 +8,100 @@ return [
             'label' => 'Nome città',
             'placeholder' => 'Inserisci il nome della città',
             'help' => 'Nome ufficiale della città',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'province' => [
             'label' => 'Provincia',
             'placeholder' => 'Seleziona la provincia',
             'help' => 'Provincia di appartenenza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'region' => [
             'label' => 'Regione',
             'placeholder' => 'Seleziona la regione',
             'help' => 'Regione di appartenenza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'country' => [
             'label' => 'Paese',
             'placeholder' => 'Seleziona il paese',
             'help' => 'Paese di appartenenza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'postal_code' => [
             'label' => 'CAP',
             'placeholder' => 'Inserisci il CAP',
             'help' => 'Codice di avviamento postale',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'latitude' => [
             'label' => 'Latitudine',
             'placeholder' => 'Inserisci la latitudine',
             'help' => 'Coordinate geografiche - latitudine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'longitude' => [
             'label' => 'Longitudine',
             'placeholder' => 'Inserisci la longitudine',
             'help' => 'Coordinate geografiche - longitudine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'population' => [
             'label' => 'Popolazione',
             'placeholder' => 'Inserisci il numero di abitanti',
             'help' => 'Numero di abitanti della città',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'area' => [
             'label' => 'Superficie',
             'placeholder' => 'Inserisci la superficie in km²',
             'help' => 'Superficie della città in chilometri quadrati',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -91,6 +118,7 @@ return [
         'geocoding_success' => 'Geocoding completato con successo',
         'geocoding_error' => 'Errore durante il geocoding',
     ],
+<<<<<<< HEAD
     'label' => 'City',
     'plural_label' => 'City (Plurale)',
     'navigation' => [
@@ -115,4 +143,6 @@ return [
             'label' => 'Elimina City',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

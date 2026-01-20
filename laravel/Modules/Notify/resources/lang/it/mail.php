@@ -47,6 +47,7 @@ return [
                 'placeholder' => 'Seleziona i canali',
                 'tooltip' => 'Canali di invio disponibili',
                 'options' => [
+<<<<<<< HEAD
                     'email' => [
                         'label' => 'Email',
                     ],
@@ -62,6 +63,13 @@ return [
                     'telegram' => [
                         'label' => 'Telegram',
                     ],
+=======
+                    'email' => ['label' => 'Email'],
+                    'sms' => ['label' => 'SMS'],
+                    'push' => ['label' => 'Push Notification'],
+                    'whatsapp' => ['label' => 'WhatsApp'],
+                    'telegram' => ['label' => 'Telegram'],
+>>>>>>> 4b6b99016 (first commit)
                 ],
             ],
             'variables' => [
@@ -93,6 +101,7 @@ return [
             'category' => [
                 'label' => 'Categoria',
                 'options' => [
+<<<<<<< HEAD
                     'welcome' => [
                         'label' => 'Benvenuto',
                     ],
@@ -102,17 +111,27 @@ return [
                     'notification' => [
                         'label' => 'Notifica',
                     ],
+=======
+                    'welcome' => ['label' => 'Benvenuto'],
+                    'reminder' => ['label' => 'Promemoria'],
+                    'notification' => ['label' => 'Notifica'],
+>>>>>>> 4b6b99016 (first commit)
                 ],
             ],
             'is_active' => [
                 'label' => 'Stato',
                 'options' => [
+<<<<<<< HEAD
                     'active' => [
                         'label' => 'Attivo',
                     ],
                     'inactive' => [
                         'label' => 'Inattivo',
                     ],
+=======
+                    'active' => ['label' => 'Attivo'],
+                    'inactive' => ['label' => 'Inattivo'],
+>>>>>>> 4b6b99016 (first commit)
                 ],
             ],
         ],
@@ -148,6 +167,7 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -161,4 +181,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

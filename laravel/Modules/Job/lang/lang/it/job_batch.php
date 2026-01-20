@@ -11,6 +11,7 @@ return [
     'fields' => [
         'failed_job_ids' => [
             'label' => 'failed_job_ids',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -25,4 +26,8 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

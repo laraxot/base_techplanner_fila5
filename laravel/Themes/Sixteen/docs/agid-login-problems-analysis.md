@@ -340,3 +340,7 @@
 - [Vite Theme Integration](vite-theme-integration.md)
 - [Route Patterns](route-patterns.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-06* 
+>>>>>>> 4b6b99016 (first commit)

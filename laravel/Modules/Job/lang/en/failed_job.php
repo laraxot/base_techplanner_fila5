@@ -25,6 +25,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -106,6 +107,37 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'uuid' => [
+            'label' => 'UUID',
+        ],
+        'connection' => [
+            'label' => 'Connessione',
+        ],
+        'queue' => [
+            'label' => 'Coda',
+        ],
+        'payload' => [
+            'label' => 'Payload',
+        ],
+        'exception' => [
+            'label' => 'Eccezione',
+        ],
+        'failed_at' => [
+            'label' => 'Fallito il',
+        ],
+        'attempts' => 'Tentativi',
+        'max_attempts' => 'Tentativi Massimi',
+        'status' => 'Stato',
+        'created_at' => 'Creato il',
+        'updated_at' => 'Aggiornato il',
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -196,6 +228,9 @@ return [
         'sort' => '93',
         'icon' => 'job-failed-job',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

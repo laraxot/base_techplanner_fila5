@@ -8,6 +8,7 @@ return [
         'edit' => 'Modifica dati negozio',
     ],
     'fields' => [
+<<<<<<< HEAD
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -30,5 +31,10 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
+=======
+        'name' => 'Nome',
+        'phone' => 'Telefono',
+        'email' => 'Email',
+>>>>>>> 4b6b99016 (first commit)
     ],
 ];

@@ -79,6 +79,14 @@ class Attachment extends BaseModelLang implements HasMedia
         'attachment',
     ];
 
+<<<<<<< HEAD
+=======
+    protected $casts = [
+        // 'title' => 'array',
+        'attachment' => 'array',
+    ];
+
+>>>>>>> 4b6b99016 (first commit)
     protected array $schema = [
         'id' => 'integer',
         'title' => 'json',

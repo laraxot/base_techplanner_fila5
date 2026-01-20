@@ -9,14 +9,20 @@ return [
             'placeholder' => 'template_slug',
             'helper_text' => 'template_slug',
             'description' => 'template_slug',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'channels' => [
             'label' => 'channels',
             'placeholder' => 'channels',
             'helper_text' => 'channels',
             'description' => 'channels',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -31,6 +37,7 @@ return [
             'tooltip' => 'submit',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Send Notification Bulk',
     'plural_label' => 'Send Notification Bulk (Plurale)',
     'navigation' => [
@@ -44,4 +51,6 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

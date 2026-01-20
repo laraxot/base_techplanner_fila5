@@ -2,9 +2,15 @@
 
 namespace Database\Factories;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 use Modules\User\Models\User;
+=======
+use Modules\User\Models\User;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+>>>>>>> 4b6b99016 (first commit)
 
 /**
  * @extends Factory<User>

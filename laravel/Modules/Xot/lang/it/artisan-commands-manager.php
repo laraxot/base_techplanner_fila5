@@ -54,6 +54,7 @@ return [
         'disabled' => 'Non è possibile eseguire altri comandi mentre un comando è in esecuzione.',
         'scroll' => 'L\'output si aggiorna automaticamente e scorre verso il basso.',
     ],
+<<<<<<< HEAD
     'label' => 'Artisan Commands Manager',
     'plural_label' => 'Artisan Commands Manager (Plurale)',
     'fields' => [
@@ -87,4 +88,6 @@ return [
             'label' => 'Elimina Artisan Commands Manager',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

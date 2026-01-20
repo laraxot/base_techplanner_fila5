@@ -47,11 +47,19 @@ public function getFormattedAddressAttribute(): string
 public function getFormattedAddressAttribute(): string
 {
     $value = $this->some_property;
+<<<<<<< HEAD
     
     if (is_string($value)) {
         return $value;
     }
     
+=======
+
+    if (is_string($value)) {
+        return $value;
+    }
+
+>>>>>>> 4b6b99016 (first commit)
     return ''; // fallback sicuro
 }
 ```
@@ -66,6 +74,32 @@ public function getFormattedAddressAttribute(): string
 }
 ```
 
+<<<<<<< HEAD
+=======
+## Correzione Effettuata
+
+I metodi seguenti sono stati aggiornati con le correzioni appropriate:
+
+### Place Model
+- `getFormattedAddressAttribute()` - Corretto utilizzando `SafeStringCastAction`
+
+### Address Model
+- `getFormattedAddressAttribute()` - Aggiunti controlli di tipo espliciti per tutti gli attributi
+- `getFullAddressAttribute()` - Aggiunti controlli di tipo espliciti per tutti gli attributi
+- `getStreetAddressAttribute()` - Aggiunti controlli di tipo espliciti per tutti gli attributi
+
+### Employee Model
+- `getStatusLabelAttribute()` - Aggiunto controllo di tipo esplicito per l'attributo status
+
+## Risultato
+
+Dopo le correzioni:
+- Nessun errore PHPStan per i metodi menzionati
+- Comportamento funzionale mantenuto
+- Sicurezza dei tipi migliorata
+- Conformità alle best practices del progetto
+
+>>>>>>> 4b6b99016 (first commit)
 ## Pattern di Correzione per Place Model
 
 ### Analisi del Metodo
@@ -93,7 +127,11 @@ public function getFormattedAddressAttribute(): string
 {
     // Utilizzo di safe casting per garantire string
     $address = \Modules\Xot\Actions\Cast\SafeStringCastAction::cast($this->address, '');
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     // Formattazione aggiuntiva se necessaria
     return trim($address) ?: 'Indirizzo non disponibile';
 }
@@ -114,6 +152,7 @@ public function getDataAttribute(): array
 public function getDataAttribute(): array
 {
     $data = $this->data;
+<<<<<<< HEAD
     
     if (is_array($data)) {
         return $data;
@@ -123,6 +162,17 @@ public function getDataAttribute(): array
         return json_decode($data, true) ?: [];
     }
     
+=======
+
+    if (is_array($data)) {
+        return $data;
+    }
+
+    if (is_string($data)) {
+        return json_decode($data, true) ?: [];
+    }
+
+>>>>>>> 4b6b99016 (first commit)
     return [];
 }
 ```
@@ -156,6 +206,7 @@ public function getIsActiveAttribute(): bool
 public function getIsActiveAttribute(): bool
 {
     $value = $this->is_active;
+<<<<<<< HEAD
     
     if (is_bool($value)) {
         return $value;
@@ -169,6 +220,21 @@ public function getIsActiveAttribute(): bool
         return in_array(strtolower($value), ['true', '1', 'yes', 'on'], true);
     }
     
+=======
+
+    if (is_bool($value)) {
+        return $value;
+    }
+
+    if (is_numeric($value)) {
+        return (bool) $value;
+    }
+
+    if (is_string($value)) {
+        return in_array(strtolower($value), ['true', '1', 'yes', 'on'], true);
+    }
+
+>>>>>>> 4b6b99016 (first commit)
     return false;
 }
 ```
@@ -184,7 +250,11 @@ public function getFormattedValueAttribute(): string
     if (!isset($this->value)) {
         return '';
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     return \Modules\Xot\Actions\Cast\SafeStringCastAction::cast($this->value, '');
 }
 ```
@@ -215,7 +285,11 @@ public function getFormattedAddressAttribute(): string
         $this->city,
         $this->postal_code,
     ]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     return implode(', ', $components);
 }
 ```
@@ -248,7 +322,11 @@ grep -n "Attribute.*string" Modules/*/Models/*.php | grep -v "SafeStringCastActi
 
 - [Laravel Accessors & Mutators](https://laravel.com/project_docs/eloquent-mutators)
 - [PHPStan Return Types](https://phpstan.org/writing-php-code/phpdoc-types#return-types)
+<<<<<<< HEAD
 - [Safe Casting Actions](../../xot/project_docs/safe-casting-actions.md)
+=======
+- [Safe Casting Actions](../../Xot/project_docs/safe-casting-actions.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Backlink
 
@@ -256,3 +334,7 @@ grep -n "Attribute.*string" Modules/*/Models/*.php | grep -v "SafeStringCastActi
 - [Geo Module Structure](./structure.md)
 - [Class Not Found Errors](./class_not_found_errors.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-07-31*
+>>>>>>> 4b6b99016 (first commit)

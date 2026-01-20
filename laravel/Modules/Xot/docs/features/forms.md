@@ -28,7 +28,11 @@ ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/custom_errors.txt}
 
 ## Collegamenti tra versioni di forms.md
 * [forms.md](docs/tecnico/filament/forms.md)
+<<<<<<< HEAD
 * [forms.md](../../../xot/docs/features/forms.md)
+=======
+* [forms.md](../../../Xot/docs/features/forms.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### Versione Incoming
 

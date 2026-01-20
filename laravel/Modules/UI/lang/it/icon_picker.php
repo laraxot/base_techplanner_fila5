@@ -6,15 +6,19 @@ return [
     'fields' => [
         'newstate' => [
             'label' => 'newstate',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'pack' => [
             'label' => 'pack',
             'description' => 'pack',
             'helper_text' => 'pack',
             'placeholder' => 'pack',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'icon' => [
@@ -46,6 +50,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Icon Picker',
+=======
+        ],
+        'icon' => [
+            'label' => 'icon',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
 ];

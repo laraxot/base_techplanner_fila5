@@ -8,36 +8,51 @@ return [
             'label' => 'Sprache',
             'placeholder' => 'Sprache auswählen',
             'helper_text' => 'Aktuell ausgewählte Benutzersprache',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'available_languages' => [
             'label' => 'Verfügbare Sprachen',
             'placeholder' => 'Liste verfügbarer Sprachen',
             'helper_text' => 'Für die Benutzeroberfläche verfügbare Sprachen',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'value' => [
             'label' => 'Wert',
             'placeholder' => 'Wert eingeben',
             'helper_text' => 'Übersetzungswert',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'key' => [
             'label' => 'Schlüssel',
             'placeholder' => 'Übersetzungsschlüssel eingeben',
             'helper_text' => 'Eindeutige Kennung für die Übersetzung',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'locale' => [
             'label' => 'Gebietsschema',
             'placeholder' => 'Gebietsschema auswählen',
             'helper_text' => 'Sprachgebietsschema-Code (z.B. it, en, de)',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -105,6 +120,9 @@ return [
         'heading' => 'Sprachdienst',
         'description' => 'Verwalten Sie Übersetzungen und verfügbare Sprachen im System',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

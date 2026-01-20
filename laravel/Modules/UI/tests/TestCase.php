@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\UI\Tests;
 
+<<<<<<< HEAD
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Modules\UI\Providers\UIServiceProvider;
@@ -32,4 +33,10 @@ abstract class TestCase extends BaseTestCase
             UIServiceProvider::class,
         ];
     }
+=======
+use Modules\Xot\Tests\TestCase as BaseTestCase;
+
+abstract class TestCase extends BaseTestCase
+{
+>>>>>>> 4b6b99016 (first commit)
 }

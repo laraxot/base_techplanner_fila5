@@ -37,9 +37,12 @@ return [
                 'help' => '用户在系统中的角色',
                 'validation' => 'required|string',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'action' => [
             'label' => '操作',
@@ -88,9 +91,12 @@ return [
                     'color' => 'gray',
                 ],
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'subject' => [
             'label' => '主题',
@@ -114,36 +120,48 @@ return [
                 'help' => '对象的描述性名称',
                 'validation' => 'nullable|string|max:255',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => '描述',
             'placeholder' => '输入描述',
             'help' => '活动的详细描述',
             'validation' => 'nullable|string|max:1000',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'ip_address' => [
             'label' => 'IP地址',
             'placeholder' => '例如 192.168.1.1',
             'help' => '执行操作的IP地址',
             'validation' => 'nullable|ip',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'user_agent' => [
             'label' => '用户代理',
             'placeholder' => '浏览器和操作系统',
             'help' => '关于用户浏览器和系统的信息',
             'validation' => 'nullable|string|max:500',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => '日期',
@@ -151,9 +169,12 @@ return [
             'help' => '活动创建的日期和时间',
             'validation' => 'required|date',
             'format' => 'd/m/Y H:i:s',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'properties' => [
             'label' => '属性',
@@ -169,20 +190,27 @@ return [
                 'placeholder' => '当前值',
                 'help' => '更改后的值',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'toggleColumns' => [
             'label' => '显示/隐藏列',
             'help' => '配置列可见性',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'reorderRecords' => [
             'label' => '重新排序记录',
             'help' => '重新排序表中的记录',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -198,6 +226,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'resetFilters' => [
+            'label' => '重置筛选器',
+        ],
+        'applyFilters' => [
+            'label' => '应用筛选器',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'filters' => [
@@ -351,19 +387,33 @@ return [
     'pagination' => [
         'per_page' => '25',
         'options' => [
+<<<<<<< HEAD
             0 => '10',
             1 => '25',
             2 => '50',
             3 => '100',
+=======
+            '0' => '10',
+            '1' => '25',
+            '2' => '50',
+            '3' => '100',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'cache' => [
         'ttl' => '300',
         'tags' => [
+<<<<<<< HEAD
             0 => 'activities',
             1 => 'monitoring',
         ],
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+            '0' => 'activities',
+            '1' => 'monitoring',
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

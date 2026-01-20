@@ -1,7 +1,11 @@
 # Risoluzione Conflitti Git e Correzione Errori PHPStan - Modulo Notify
 
 ## Data
+<<<<<<< HEAD
 [DATE]
+=======
+2025-11-24
+>>>>>>> 4b6b99016 (first commit)
 
 ## Riepilogo Esecutivo
  **Tutti i 147 errori PHPStan nel modulo Notify sono stati risolti con successo**
@@ -167,7 +171,11 @@ Durante la risoluzione:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Git Conflicts Guide](../../geo/docs_project/git-conflicts-resolution-guide.md)
+=======
+- [Git Conflicts Guide](../../Geo/docs_project/git-conflicts-resolution-guide.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Notify Best Practices](best-practices.md)
 - [PHPStan Configuration](../../phpstan.neon)
 - [PHPStan User Guide](https://phpstan.org/user-guide/getting-started)

@@ -46,7 +46,11 @@ return [
         'afternoon_hours' => 'Orari del pomeriggio',
     ],
     'notes' => [
+<<<<<<< HEAD
         'format_hint' => 'Utilizzare il formato 24 ore (es. 14:30 per le 2:30 del pomeriggio]',
+=======
+        'format_hint' => 'Utilizzare il formato 24 ore (es. 14:30 per le 2:30 del pomeriggio)',
+>>>>>>> 4b6b99016 (first commit)
         'empty_hint' => 'Lasciare vuoto significa "chiuso"',
     ],
     'validation' => [
@@ -71,6 +75,7 @@ return [
             'afternoon' => 'pomeriggio',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Opening Hours',
     'plural_label' => 'Opening Hours (Plurale)',
     'navigation' => [
@@ -115,4 +120,6 @@ return [
             'label' => 'Elimina Opening Hours',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

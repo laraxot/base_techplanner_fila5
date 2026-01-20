@@ -287,6 +287,7 @@ $gdprTests = [
 ## 📎 Key Documentation Links
 
 ### Primary Documentation
+<<<<<<< HEAD
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/project_docs/factories/userfactory-implementation-final.md)
 - [User Module Integration](../laravel/modules/user/project_docs/user_factory_advanced_integration.md)
 - [Advanced Analysis](../laravel/modules/<nome progetto>/project_docs/factories/userfactory-advanced-improvements-analysis.md)
@@ -295,6 +296,16 @@ $gdprTests = [
 - [Model Architecture](../laravel/modules/<nome progetto>/project_docs/models/single-table-inheritance.md)
 - [State Management](../laravel/modules/<nome progetto>/project_docs/models/states.md)
 - [Cross-Module Relations](../laravel/modules/<nome progetto>/project_docs/models/doctor-studio-relationship.md)
+=======
+- [<nome progetto> Factory Implementation](../laravel/Modules/<nome progetto>/project_docs/factories/UserFactory-implementation-final.md)
+- [User Module Integration](../laravel/Modules/User/project_docs/user_factory_advanced_integration.md)
+- [Advanced Analysis](../laravel/Modules/<nome progetto>/project_docs/factories/UserFactory-advanced-improvements-analysis.md)
+
+### Technical References
+- [Model Architecture](../laravel/Modules/<nome progetto>/project_docs/models/single-table-inheritance.md)
+- [State Management](../laravel/Modules/<nome progetto>/project_docs/models/states.md)
+- [Cross-Module Relations](../laravel/Modules/<nome progetto>/project_docs/models/doctor-studio-relationship.md)
+>>>>>>> 4b6b99016 (first commit)
 
 **🎉 MISSION ACCOMPLISHED - UserFactory Advanced Implementation Complete! 🎉**
 # UserFactory Advanced Implementation - COMPLETE ✅
@@ -586,6 +597,7 @@ $gdprTests = [
 ## 📎 Key Documentation Links
 
 ### Primary Documentation
+<<<<<<< HEAD
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md)
 - [User Module Integration](../laravel/modules/user/docs/user_factory_advanced_integration.md)
 - [Advanced Analysis](../laravel/modules/<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
@@ -594,5 +606,15 @@ $gdprTests = [
 - [Model Architecture](../laravel/modules/<nome progetto>/docs/models/single-table-inheritance.md)
 - [State Management](../laravel/modules/<nome progetto>/docs/models/states.md)
 - [Cross-Module Relations](../laravel/modules/<nome progetto>/docs/models/doctor-studio-relationship.md)
+=======
+- [<nome progetto> Factory Implementation](../laravel/Modules/<nome progetto>/docs/factories/UserFactory-implementation-final.md)
+- [User Module Integration](../laravel/Modules/User/docs/user_factory_advanced_integration.md)
+- [Advanced Analysis](../laravel/Modules/<nome progetto>/docs/factories/UserFactory-advanced-improvements-analysis.md)
+
+### Technical References
+- [Model Architecture](../laravel/Modules/<nome progetto>/docs/models/single-table-inheritance.md)
+- [State Management](../laravel/Modules/<nome progetto>/docs/models/states.md)
+- [Cross-Module Relations](../laravel/Modules/<nome progetto>/docs/models/doctor-studio-relationship.md)
+>>>>>>> 4b6b99016 (first commit)
 
 **🎉 MISSION ACCOMPLISHED - UserFactory Advanced Implementation Complete! 🎉**

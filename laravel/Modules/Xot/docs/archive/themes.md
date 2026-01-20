@@ -84,8 +84,16 @@ Per personalizzare un tema:
 8. **Documentazione**: Documenta tutto accuratamente
 ## Collegamenti tra versioni di themes.md
 * [themes.md](docs/rules/themes.md)
+<<<<<<< HEAD
 * [themes.md](../../../xot/project_docs/themes.md)
 * [themes.md](../../../cms/project_docs/frontoffice/themes.md)
 
 * [README.md Tema One](laravel/themes/one/project_docs/readme.md)
 * [Convenzioni Namespace Tema One](laravel/themes/one/project_docs/namespace-conventions.md)b6f667c (.)
+=======
+* [themes.md](../../../Xot/project_docs/themes.md)
+* [themes.md](../../../Cms/project_docs/frontoffice/themes.md)
+
+* [README.md Tema One](laravel/Themes/One/project_docs/README.md)
+* [Convenzioni Namespace Tema One](laravel/Themes/One/project_docs/namespace-conventions.md)b6f667c (.)
+>>>>>>> 4b6b99016 (first commit)

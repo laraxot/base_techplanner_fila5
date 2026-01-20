@@ -6,11 +6,27 @@ Nel progetto il progetto, i temi sono componenti di presentazione separati dai m
 
 ## Posizionamento Corretto
 
+<<<<<<< HEAD
+=======
+I temi devono essere posizionati nella directory `/var/www/html/<directory progetto>/laravel/Themes/` e **NON** nella directory Modules.
+
+### Struttura Corretta
+```
+/var/www/html/<directory progetto>/laravel/
+>>>>>>> 4b6b99016 (first commit)
 I temi devono essere posizionati nella directory `laravel/Themes/` e **NON** nella directory Modules.
 
 ### Struttura Corretta
 ```
 laravel/
+<<<<<<< HEAD
+=======
+I temi devono essere posizionati nella directory `/var/www/html/_bases/<directory progetto>/laravel/Themes/` e **NON** nella directory Modules.
+
+### Struttura Corretta
+```
+/var/www/html/_bases/<directory progetto>/laravel/
+>>>>>>> 4b6b99016 (first commit)
 ├── Modules/           # Componenti funzionali
 │   ├── Xot/
 │   ├── User/
@@ -23,7 +39,13 @@ laravel/
 
 Il tema principale utilizzato in il progetto è ThemeOne, basato su Filament 3, che deve essere installato in:
 ```
+<<<<<<< HEAD
 laravel/Themes/One/
+=======
+/var/www/html/<directory progetto>/laravel/Themes/One/
+laravel/Themes/One/
+/var/www/html/_bases/<directory progetto>/laravel/Themes/One/
+>>>>>>> 4b6b99016 (first commit)
 ```
 
 ### Installazione Corretta
@@ -101,4 +123,8 @@ class AdminPanelProvider extends PanelProvider
 
 ## Collegamenti tra versioni di temi.md
 * [temi.md](docs/regole/temi.md)
+<<<<<<< HEAD
 * [temi.md](laravel/modules/cms/docs/temi.md)
+=======
+* [temi.md](laravel/Modules/Cms/docs/temi.md)
+>>>>>>> 4b6b99016 (first commit)

@@ -173,6 +173,10 @@ curl -I http://127.0.0.1:8001/quaeris/admin/gaia/survey-pdfs
 
 ---
 
+<<<<<<< HEAD
+=======
+**Data**: 27 Gennaio 2025
+>>>>>>> 4b6b99016 (first commit)
 **Modulo**: UI
 **Tipo**: Bug Fix
 **Priorità**: Alta

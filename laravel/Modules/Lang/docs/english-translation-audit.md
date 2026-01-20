@@ -11,36 +11,60 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 1. **Modules/UI/lang/en/opening_hours.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 2. **Modules/Notify/lang/en/test_smtp.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 3. **Modules/Notify/lang/en/send_email.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 ### File con Mix Italiano/Inglese
 
 1. **Modules/<nome progetto>/lang/en/find_doctor_widget.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Placeholder in italiano
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 2. **Modules/UI/lang/en/opening_hours_field.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Mancavano molte voci presenti in italiano + sintassi array() invece di []
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
    - Aggiunte: Tutte le voci mancanti (morning, afternoon, morning_label, afternoon_label, etc.)
    - Convertito: Sintassi short array []
 
 3. **Modules/<nome progetto>/lang/en/doctor.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Sintassi array() invece di [] + molte voci mancanti dalla versione italiana
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
    - Aggiunte: Tutte le voci mancanti (steps, fields, filters, actions, messages, sections, validation, empty_state, specialties)
    - Convertito: Sintassi short array []
    - Struttura: Allineata completamente con la versione italiana
@@ -48,7 +72,11 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 4. **Modules/<nome progetto>/lang/de/doctor.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Era completamente in italiano invece che in tedesco + sintassi array() invece di []
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
    - Tradotto: Tutto il contenuto in tedesco appropriato
    - Aggiunte: Tutte le voci mancanti dalla versione italiana
    - Convertito: Sintassi short array []
@@ -56,14 +84,22 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 5. **Modules/<nome progetto>/lang/en/user_type_enum.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
    - Traduzioni: Complete in inglese (Doctor, Patient, Administrator)
    - Convertito: Sintassi short array [] + declare(strict_types=1)
 
 6. **Modules/<nome progetto>/lang/de/user_type_enum.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
    - Traduzioni: Complete in tedesco (Arzt, Patient, Administrator)
    - Convertito: Sintassi short array [] + declare(strict_types=1)
 
@@ -293,12 +329,20 @@ return array(
 ## Collegamenti
 
 - [Regole Traduzioni](../../docs/translation-standards.md)
+<<<<<<< HEAD
 - [Best Practices Filament](../../docs/filament-best-practices.md)
+=======
+- [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 **Status**: In corso
 # Audit Traduzioni Inglesi - <nome progetto>
 
@@ -313,36 +357,60 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 1. **Modules/UI/lang/en/opening_hours.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 2. **Modules/Notify/lang/en/test_smtp.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 3. **Modules/Notify/lang/en/send_email.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 ### File con Mix Italiano/Inglese
 
 1. **Modules/<nome progetto>/lang/en/find_doctor_widget.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Placeholder in italiano
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 2. **Modules/UI/lang/en/opening_hours_field.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Mancavano molte voci presenti in italiano + sintassi array() invece di []
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
    - Aggiunte: Tutte le voci mancanti (morning, afternoon, morning_label, afternoon_label, etc.)
    - Convertito: Sintassi short array []
 
 3. **Modules/<nome progetto>/lang/en/doctor.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Sintassi array() invece di [] + molte voci mancanti dalla versione italiana
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
    - Aggiunte: Tutte le voci mancanti (steps, fields, filters, actions, messages, sections, validation, empty_state, specialties)
    - Convertito: Sintassi short array []
    - Struttura: Allineata completamente con la versione italiana
@@ -350,7 +418,11 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 4. **Modules/<nome progetto>/lang/de/doctor.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Era completamente in italiano invece che in tedesco + sintassi array() invece di []
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
    - Tradotto: Tutto il contenuto in tedesco appropriato
    - Aggiunte: Tutte le voci mancanti dalla versione italiana
    - Convertito: Sintassi short array []
@@ -358,14 +430,22 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
 5. **Modules/<nome progetto>/lang/en/user_type_enum.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
    - Traduzioni: Complete in inglese (Doctor, Patient, Administrator)
    - Convertito: Sintassi short array [] + declare(strict_types=1)
 
 6. **Modules/<nome progetto>/lang/de/user_type_enum.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
+<<<<<<< HEAD
    - Risolto: [DATE]
+=======
+   - Risolto: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
    - Traduzioni: Complete in tedesco (Arzt, Patient, Administrator)
    - Convertito: Sintassi short array [] + declare(strict_types=1)
 
@@ -595,10 +675,18 @@ return array(
 ## Collegamenti
 
 - [Regole Traduzioni](../../docs/translation-standards.md)
+<<<<<<< HEAD
 - [Best Practices Filament](../../docs/filament-best-practices.md)
+=======
+- [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 **Status**: In corso

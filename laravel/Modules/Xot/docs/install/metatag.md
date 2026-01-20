@@ -36,8 +36,13 @@ return [
 ### Versione HEAD
 
 ## Collegamenti tra versioni di metatag.md
+<<<<<<< HEAD
 * [metatag.md](../../../xot/docs/install/metatag.md)
 * [metatag.md](../../../tenant/docs/it/config/metatag.md)
+=======
+* [metatag.md](../../../Xot/docs/install/metatag.md)
+* [metatag.md](../../../Tenant/docs/it/config/metatag.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### Versione Incoming
 

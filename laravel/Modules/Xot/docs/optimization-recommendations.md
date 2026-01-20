@@ -316,6 +316,10 @@ php artisan xot:test-framework
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)
 # Raccomandazioni di Ottimizzazione - Modulo Xot
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -634,3 +638,7 @@ php artisan xot:test-framework
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)

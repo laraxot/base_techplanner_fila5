@@ -9,6 +9,7 @@ return [
             'placeholder' => 'channels',
             'helper_text' => 'channels',
             'description' => 'channels',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -34,6 +35,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Channel Checkbox List',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
 ];

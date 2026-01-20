@@ -399,7 +399,11 @@ php artisan lang:missing --locale=it,en,de
 
 ### Collegamenti Esterni
 - [Translation Standards](../../../project_docs/translation-standards.md)
+<<<<<<< HEAD
 - [Theme Documentation](../../../themes/two/project_docs/readme.md)
+=======
+- [Theme Documentation](../../../Themes/Two/project_docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Note per Sviluppatori
 

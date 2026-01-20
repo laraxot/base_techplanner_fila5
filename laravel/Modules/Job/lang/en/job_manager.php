@@ -19,132 +19,187 @@ return [
             'label' => 'ID',
             'tooltip' => 'Identificativo unico del Job Manager',
             'placeholder' => 'ID del Manager',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'name' => [
             'label' => 'Name',
             'tooltip' => 'Name of the Job Manager',
             'placeholder' => 'Enter name',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Description',
             'tooltip' => 'Brief description of the job manager',
             'placeholder' => 'Job Manager description',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'status' => [
             'label' => 'Status',
             'tooltip' => 'Current status of the Job Manager',
             'placeholder' => 'Select status',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'type' => [
             'label' => 'Type',
             'tooltip' => 'Type of Job Manager',
             'placeholder' => 'Select type',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'priority' => [
             'label' => 'Priority',
             'tooltip' => 'Execution priority of the job manager',
             'placeholder' => 'Select priority',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'max_attempts' => [
             'label' => 'Max Attempts',
             'tooltip' => 'Maximum number of attempts to run the job manager',
             'placeholder' => 'Max attempts',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'timeout' => [
             'label' => 'Timeout',
             'tooltip' => 'Maximum execution time for the job manager',
             'placeholder' => 'Timeout',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => 'Created At',
             'tooltip' => 'Creation date of the Job Manager',
             'placeholder' => 'Creation date',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'updated_at' => [
             'label' => 'Updated At',
             'tooltip' => 'Date of last update',
             'placeholder' => 'Update date',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'last_run' => [
             'label' => 'Last Run',
             'tooltip' => 'Date and time of last execution',
             'placeholder' => 'Last run',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'next_run' => [
             'label' => 'Next Run',
             'tooltip' => 'Date and time of next execution',
             'placeholder' => 'Next run',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'cron_expression' => [
             'label' => 'Cron Expression',
             'tooltip' => 'Cron expression for job scheduling',
             'placeholder' => 'Enter cron expression',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'output' => [
             'label' => 'Output',
             'tooltip' => 'Job execution output',
             'placeholder' => 'Output',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'error' => [
             'label' => 'Error',
             'tooltip' => 'Error message if the job fails',
             'placeholder' => 'Error',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Guard associated with the Job Manager',
             'placeholder' => 'Select Guard',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'permissions' => [
             'label' => 'Permissions',
             'tooltip' => 'Permissions associated with the Job Manager',
             'placeholder' => 'Select permissions',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome dell\'utente associato',
             'placeholder' => 'Inserisci nome',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'last_name' => [
             'label' => 'Cognome',
             'tooltip' => 'Cognome dell\'utente associato',
             'placeholder' => 'Inserisci cognome',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -171,6 +226,20 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -273,6 +342,9 @@ return [
         'high' => 'Alta',
         'urgent' => 'Urgente',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

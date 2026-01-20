@@ -207,7 +207,11 @@ Prima di ogni commit in qualsiasi modulo, verificare:
 
 - [Regola Cursor](../../.cursor/rules/eloquent-properties.md)
 - [Memoria Cursor](../../.cursor/memories)
+<<<<<<< HEAD
 - [Linee Guida AI](../../.ai/guidelines/core.md)
+=======
+- [Linee Guida AI](../../.ai/guidelines/CORE.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Esempio Corretto](../../Notify/app/Notifications/GenericNotification.php)
 
 ## Esempi di Correzione
@@ -243,4 +247,8 @@ Questa regola si applica a tutti i moduli che estendono Xot:
 - [PHP Magic Methods](https://www.php.net/manual/en/language.oop5.magic.php)
 - [PHPStan Eloquent Analysis](https://phpstan.org/user-guide/rule-levels)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> 4b6b99016 (first commit)
 *Regola applicabile a tutti i moduli*

@@ -40,7 +40,11 @@ Questo pattern consente:
 - Compliance con gli standard di qualità PHPStan livello 10
 
 ---
+<<<<<<< HEAD
 **Ultima modifica:** [DATE]
+=======
+**Ultima modifica:** 2025-04-16
+>>>>>>> 4b6b99016 (first commit)
 **Collegamento indice:** [../../../../docs/index.md](../../../../docs/index.md)
 
 ## Metodi Validati

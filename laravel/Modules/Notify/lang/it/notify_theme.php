@@ -16,16 +16,22 @@ return [
             'tooltip' => 'Nome del tema',
             'placeholder' => 'es: Tema Aziendale',
             'help' => 'Inserisci un nome descrittivo per il tema',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Descrizione del tema',
             'placeholder' => 'es: Tema standard per le comunicazioni aziendali',
             'help' => 'Breve descrizione dello scopo del tema',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'colors' => [
             'label' => 'Colori',
@@ -48,8 +54,11 @@ return [
                     'placeholder' => 'es: #F5A623',
                 ],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'typography' => [
             'label' => 'Tipografia',
@@ -67,8 +76,11 @@ return [
                     'placeholder' => 'es: Helvetica, Arial, sans-serif',
                 ],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'layout' => [
             'label' => 'Layout',
@@ -84,8 +96,11 @@ return [
                     'tooltip' => 'Stile del piè di pagina',
                 ],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'assets' => [
             'label' => 'Risorse',
@@ -101,22 +116,31 @@ return [
                     'tooltip' => 'Immagine di sfondo',
                 ],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_default' => [
             'label' => 'Predefinito',
             'tooltip' => 'Imposta come tema predefinito',
             'help' => 'Il tema predefinito verrà utilizzato per tutte le notifiche senza tema specifico',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato di attivazione del tema',
             'help' => 'Solo i temi attivi possono essere utilizzati',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -150,9 +174,12 @@ return [
                 'cancel' => 'No, annulla',
             ],
         ],
+<<<<<<< HEAD
         'delete' => [
             'tooltip' => 'delete',
         ],
+=======
+>>>>>>> 4b6b99016 (first commit)
     ],
     'messages' => [
         'created' => [
@@ -183,6 +210,9 @@ return [
     'model' => [
         'label' => 'Tema Notifica',
     ],
+<<<<<<< HEAD
     'label' => 'Notify Theme',
     'plural_label' => 'Notify Theme (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

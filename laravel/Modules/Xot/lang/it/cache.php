@@ -15,16 +15,27 @@ return [
             'buttons' => [
                 'refresh' => 'Refresh',
             ],
+<<<<<<< HEAD
             'heading' => 'Application Health',
+=======
+
+            'heading' => 'Application Health',
+
+>>>>>>> 4b6b99016 (first commit)
             'navigation' => [
                 'group' => 'Settings',
                 'label' => 'Application Health',
             ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)
             'notifications' => [
                 'check_results' => 'Check results from',
             ],
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Cache',
     'plural_label' => 'Cache (Plurale)',
     'fields' => [
@@ -58,4 +69,6 @@ return [
             'label' => 'Elimina Cache',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

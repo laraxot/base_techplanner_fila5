@@ -38,7 +38,11 @@ BaseUser (Modules\User\Models\BaseUser)
 
 ### Campi del Database
 
+<<<<<<< HEAD
 La tabella `users` contiene campi comuni a tutti i tipi di utenti, oltre a campi specifici per ciascun tipo. Per una documentazione dettagliata sulla mappatura dei campi, consulta la [Mappatura dei Campi Database nel Modulo Patient](/laravel/modules/patient/docs/database_field_mapping.md).
+=======
+La tabella `users` contiene campi comuni a tutti i tipi di utenti, oltre a campi specifici per ciascun tipo. Per una documentazione dettagliata sulla mappatura dei campi, consulta la [Mappatura dei Campi Database nel Modulo Patient](/laravel/Modules/Patient/docs/DATABASE_FIELD_MAPPING.md).
+>>>>>>> 4b6b99016 (first commit)
 
 ## Registrazione degli Utenti
 
@@ -65,7 +69,11 @@ I dottori devono passare attraverso un processo di moderazione:
 7. Invio email di approvazione/rifiuto
 8. Accesso al sistema (se approvato)
 
+<<<<<<< HEAD
 Per una documentazione dettagliata sul processo di registrazione dei dottori, consulta il [Processo di Registrazione dei Dottori](/laravel/modules/patient/docs/doctor_registration_process.md).
+=======
+Per una documentazione dettagliata sul processo di registrazione dei dottori, consulta il [Processo di Registrazione dei Dottori](/laravel/Modules/Patient/docs/DOCTOR_REGISTRATION_PROCESS.md).
+>>>>>>> 4b6b99016 (first commit)
 
 ## Gestione dei File
 
@@ -77,7 +85,11 @@ Per una documentazione dettagliata sulla gestione dei file, consulta la [Gestion
 
 ### 1. Utilizzo dei Campi Corretti
 
+<<<<<<< HEAD
 Assicurarsi di utilizzare i campi corretti per ciascun tipo di utente, come documentato nella [Mappatura dei Campi Database](/laravel/modules/patient/docs/database_field_mapping.md).
+=======
+Assicurarsi di utilizzare i campi corretti per ciascun tipo di utente, come documentato nella [Mappatura dei Campi Database](/laravel/Modules/Patient/docs/DATABASE_FIELD_MAPPING.md).
+>>>>>>> 4b6b99016 (first commit)
 
 ### 2. Gestione degli Stati
 
@@ -105,7 +117,12 @@ $request->validate([
 ## Documentazione Correlata
 
 - [Pattern di Ereditarietà dei Modelli](/docs/model-inheritance-patterns.md)
+<<<<<<< HEAD
 - [Mappatura dei Campi Database nel Modulo Patient](/laravel/modules/patient/docs/database_field_mapping.md)
 - [Processo di Registrazione dei Dottori](/laravel/modules/patient/docs/doctor_registration_process.md)
+=======
+- [Mappatura dei Campi Database nel Modulo Patient](/laravel/Modules/Patient/docs/DATABASE_FIELD_MAPPING.md)
+- [Processo di Registrazione dei Dottori](/laravel/Modules/Patient/docs/DOCTOR_REGISTRATION_PROCESS.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Gestione dei File Upload in Filament](/docs/filament-file-uploads.md)
 - [Migrazioni del Database](/docs/database-migrations.md)

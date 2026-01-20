@@ -14,6 +14,7 @@ return [
     'updated_by' => 'updated_by',
     'deleted_at' => 'deleted_at',
     'deleted_by' => 'deleted_by',
+<<<<<<< HEAD
     'label' => 'Xls Action',
     'plural_label' => 'Xls Action (Plurale)',
     'navigation' => [
@@ -58,4 +59,6 @@ return [
             'label' => 'Elimina Xls Action',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

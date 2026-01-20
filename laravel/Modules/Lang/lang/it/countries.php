@@ -3,6 +3,10 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+=======
+    // Europa
+>>>>>>> 4b6b99016 (first commit)
     'it' => 'Italia',
     'fr' => 'Francia',
     'de' => 'Germania',
@@ -47,6 +51,10 @@ return [
     'ge' => 'Georgia',
     'am' => 'Armenia',
     'az' => 'Azerbaigian',
+<<<<<<< HEAD
+=======
+    // Americhe
+>>>>>>> 4b6b99016 (first commit)
     'us' => 'Stati Uniti d\'America',
     'ca' => 'Canada',
     'mx' => 'Messico',
@@ -89,6 +97,10 @@ return [
     'kn' => 'Saint Kitts e Nevis',
     'dm' => 'Dominica',
     'bs' => 'Bahamas',
+<<<<<<< HEAD
+=======
+    // Asia
+>>>>>>> 4b6b99016 (first commit)
     'cn' => 'Cina',
     'jp' => 'Giappone',
     'kr' => 'Corea del Sud',
@@ -133,6 +145,10 @@ return [
     'kg' => 'Kirghizistan',
     'tj' => 'Tagikistan',
     'tm' => 'Turkmenistan',
+<<<<<<< HEAD
+=======
+    // Africa
+>>>>>>> 4b6b99016 (first commit)
     'eg' => 'Egitto',
     'ly' => 'Libia',
     'tn' => 'Tunisia',
@@ -187,6 +203,10 @@ return [
     'ao' => 'Angola',
     'aq' => 'Antartide',
     'zr' => 'Zaire',
+<<<<<<< HEAD
+=======
+    // Oceania
+>>>>>>> 4b6b99016 (first commit)
     'au' => 'Australia',
     'ax' => 'Isole Aland',
     'nz' => 'Nuova Zelanda',
@@ -204,6 +224,10 @@ return [
     'pw' => 'Palau',
     'fm' => 'Micronesia',
     'mh' => 'Isole Marshall',
+<<<<<<< HEAD
+=======
+    // Altri
+>>>>>>> 4b6b99016 (first commit)
     'xk' => 'Kosovo',
     'va' => 'Città del Vaticano',
     'sm' => 'San Marino',
@@ -256,6 +280,7 @@ return [
     'mp' => 'Isole Marianne Settentrionali',
     'um' => 'Isole Minori Esterne degli Stati Uniti',
     'eh' => 'Sahara Occidentale',
+<<<<<<< HEAD
     'label' => 'Countries',
     'plural_label' => 'Countries (Plurale)',
     'navigation' => [
@@ -300,4 +325,6 @@ return [
             'label' => 'Elimina Countries',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

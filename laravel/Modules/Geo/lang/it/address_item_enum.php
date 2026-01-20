@@ -107,7 +107,11 @@ return [
     ],
     'pec' => [
         'label' => 'PEC',
+<<<<<<< HEAD
         'description' => 'Indirizzo di posta elettronica certificata (PEC] associato all\'indirizzo',
+=======
+        'description' => 'Indirizzo di posta elettronica certificata (PEC) associato all\'indirizzo',
+>>>>>>> 4b6b99016 (first commit)
         'icon' => 'heroicon-o-shield-check',
         'color' => 'purple',
     ],
@@ -129,6 +133,7 @@ return [
         'icon' => 'heroicon-o-document-text',
         'color' => 'gray',
     ],
+<<<<<<< HEAD
     'label' => 'Address Item Enum',
     'plural_label' => 'Address Item Enum (Plurale)',
     'navigation' => [
@@ -173,4 +178,6 @@ return [
             'label' => 'Elimina Address Item Enum',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

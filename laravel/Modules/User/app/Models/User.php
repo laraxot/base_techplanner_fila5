@@ -9,6 +9,10 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\UserFactory;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
@@ -61,6 +65,10 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property Collection<int, OauthAccessToken>                 $tokens
  * @property int|null                                          $tokens_count
  *
+<<<<<<< HEAD
+=======
+ * @method static UserFactory          factory($count = null, $state = [])
+>>>>>>> 4b6b99016 (first commit)
  * @method static Builder|User         newModelQuery()
  * @method static Builder|User         newQuery()
  * @method static Builder|User         permission($permissions, $without = false)

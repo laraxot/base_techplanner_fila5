@@ -26,6 +26,12 @@ trait CreatesApplication
         // Explicitly set the base path before requiring bootstrap/app.php
         $_ENV['APP_BASE_PATH'] = $basePath;
 
+<<<<<<< HEAD
+=======
+        // Explicitly set the base path before requiring bootstrap/app.php
+        $_ENV['APP_BASE_PATH'] = $basePath;
+
+>>>>>>> 4b6b99016 (first commit)
         $app = require $basePath.'/bootstrap/app.php';
 
         // Bind essential paths if they are not correctly resolved
@@ -37,11 +43,14 @@ trait CreatesApplication
         $app->make(Kernel::class)->bootstrap();
         $app->boot(); // Ensure all service providers are booted
 
+<<<<<<< HEAD
         // CRITICAL: DO NOT force database connections!
         // TenantServiceProvider automatically configures module connections
         // by reading DB_DATABASE from .env.testing
         // Forcing connections here destroys the dynamic configuration system
 
+=======
+>>>>>>> 4b6b99016 (first commit)
         return $app;
     }
 }

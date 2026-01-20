@@ -1,6 +1,10 @@
 # Analisi Completa TableLayoutEnum
 
+<<<<<<< HEAD
 ## Data: [DATE]
+=======
+## Data: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 ## Panoramica
 
@@ -333,9 +337,16 @@ class TableLayoutEnumTest extends TestCase
 - [Translation Standards](../../../docs/translation_standards.md)
 - [Filament Best Practices](../../../docs/filament_best_practices.md)
 
+<<<<<<< HEAD
 # Analisi Completa TableLayoutEnum
 
 ## Data: [DATE]
+=======
+*Ultimo aggiornamento: 2025-01-06*
+# Analisi Completa TableLayoutEnum
+
+## Data: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 ## Panoramica
 
@@ -668,3 +679,7 @@ class TableLayoutEnumTest extends TestCase
 - [Translation Standards](../../../docs/translation_standards.md)
 - [Filament Best Practices](../../../docs/filament_best_practices.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 4b6b99016 (first commit)

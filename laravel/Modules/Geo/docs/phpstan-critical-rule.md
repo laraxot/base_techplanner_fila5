@@ -129,3 +129,7 @@ Questa regola è documentata anche in:
 
 **RICORDA**: Il file `phpstan.neon` è SACRO. Non si tocca MAI. Punto.
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)

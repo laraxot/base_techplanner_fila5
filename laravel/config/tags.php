@@ -24,5 +24,9 @@ return [
          * The fully qualified class name of the pivot model.
          */
         'class_name' => Illuminate\Database\Eloquent\Relations\MorphPivot::class,
+<<<<<<< HEAD
     ],
+=======
+    ]
+>>>>>>> 4b6b99016 (first commit)
 ];

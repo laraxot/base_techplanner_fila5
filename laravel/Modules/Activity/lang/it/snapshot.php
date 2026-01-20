@@ -20,34 +20,47 @@ return [
             'placeholder' => 'model_type',
             'helper_text' => 'model_type',
             'description' => 'model_type',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'model_id' => [
             'label' => 'model_id',
             'placeholder' => 'model_id',
             'helper_text' => 'model_id',
             'description' => 'model_id',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'state' => [
             'label' => 'state',
             'placeholder' => 'state',
             'helper_text' => 'state',
             'description' => 'state',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_by_type' => [
             'label' => 'created_by_type',
             'placeholder' => 'created_by_type',
             'helper_text' => 'created_by_type',
             'description' => 'created_by_type',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_by_id' => [
             'label' => 'created_by_id',
             'placeholder' => 'created_by_id',
             'helper_text' => 'created_by_id',
             'description' => 'created_by_id',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -62,6 +75,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Snapshot',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
 ];

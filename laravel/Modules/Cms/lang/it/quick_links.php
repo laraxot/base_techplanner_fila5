@@ -9,34 +9,47 @@ return [
             'placeholder' => 'title',
             'helper_text' => 'title',
             'description' => 'title',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'links' => [
             'label' => 'links',
             'placeholder' => 'links',
             'helper_text' => 'links',
             'description' => 'links',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'label' => [
             'label' => 'label',
             'placeholder' => 'label',
             'helper_text' => 'label',
             'description' => 'label',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'url' => [
             'label' => 'url',
             'placeholder' => 'url',
             'helper_text' => 'url',
             'description' => 'url',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'target' => [
             'label' => 'target',
             'placeholder' => 'target',
             'helper_text' => 'target',
             'description' => 'target',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -62,6 +75,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Quick Links',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
 ];

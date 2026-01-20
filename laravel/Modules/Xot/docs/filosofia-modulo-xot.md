@@ -1,6 +1,10 @@
 # Analisi Approfondita del Modulo Xot
 
+<<<<<<< HEAD
 > **Generato**: [DATE]
+=======
+> **Generato**: 2025-12-24
+>>>>>>> 4b6b99016 (first commit)
 > **Scopo**: Documentare la filosofia, logica, business logic e architettura del modulo Xot
 
 ---
@@ -381,5 +385,10 @@ Il modulo Xot rappresenta **l'incarnazione perfetta dei principi DRY+KISS applic
 
 - [XotBaseResource Documentation](./consolidated/filament/resources/xot-base-resource.md)
 - [Base Classes Documentation](./consolidated/base-classes.md)
+<<<<<<< HEAD
 - [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
 - [Filament 4 Laraxot Rules](./filament_4_laraxot_rules.md)
+=======
+- [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
+- [Filament 4 Laraxot Rules](./FILAMENT_4_LARAXOT_RULES.md)
+>>>>>>> 4b6b99016 (first commit)

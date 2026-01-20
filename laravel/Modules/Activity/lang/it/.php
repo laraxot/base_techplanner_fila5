@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return array (
   'sections' => 
   array (
@@ -40,3 +41,25 @@ return array (
   array (
   ),
 );
+=======
+return [
+    'sections' => [
+        'empty' => [
+            'label' => 'empty',
+            'heading' => '',
+        ],
+    ],
+    'actions' => [
+        'logout' => [
+            'tooltip' => 'logout',
+            'icon' => 'logout',
+            'label' => 'logout',
+        ],
+        'profile' => [
+            'tooltip' => 'profile',
+            'icon' => 'profile',
+            'label' => 'profile',
+        ],
+    ],
+];
+>>>>>>> 4b6b99016 (first commit)

@@ -16,6 +16,7 @@ return [
             'email_sent' => 'Email inviate',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Columns',
     'plural_label' => 'Columns (Plurale)',
     'navigation' => [
@@ -60,4 +61,6 @@ return [
             'label' => 'Elimina Columns',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

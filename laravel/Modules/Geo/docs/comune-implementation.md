@@ -41,7 +41,11 @@ Il modello `Comune` implementa direttamente il trait `Sushi` di Laravel per gest
 public function getRows(): array
 {
     $cacheKey = 'sushi_comuni_data';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     return Cache::remember($cacheKey, 604800, function () {
         $path = module_path('Geo', 'resources/json/comuni.json');
         return json_decode(File::get($path), true);
@@ -92,4 +96,8 @@ protected $casts = [
 
 - [Documentazione Sushi](https://github.com/calebporzio/sushi)
 - [GeoJsonModel vs Sushi](geo-sushi-comparison.md)
+<<<<<<< HEAD
 - [Analisi Implementazione](comune-sushi-analisi.md) 
+=======
+- [Analisi Implementazione](comune-sushi-analisi.md)
+>>>>>>> 4b6b99016 (first commit)

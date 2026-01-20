@@ -23,27 +23,37 @@ return [
             'description' => 'email',
             'helper_text' => '',
             'placeholder' => 'email',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'password' => [
             'label' => 'password',
             'description' => 'password',
             'helper_text' => '',
             'placeholder' => 'password',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'remember' => [
             'label' => 'remember',
             'description' => 'remember',
             'helper_text' => '',
             'placeholder' => 'remember',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'cap' => [
             'description' => 'cap',
             'helper_text' => 'cap',
             'placeholder' => 'cap',
             'label' => 'cap',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'city' => [
@@ -62,4 +72,11 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+        ],
+        'city' => [
+            'description' => 'city',
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

@@ -111,9 +111,19 @@ public function sendEmailVerificationNotification(): void;
 
 ## 📚 Riferimenti
 
+<<<<<<< HEAD
 - [PHPStan Code Quality Guide](../../xot/docs/phpstan_code_quality_guide.md)
 - [Cms Module README](./readme.md)
 - [DataCollection Best Practices](../../xot/docs/spatie-data-best-practices.md)
 
 ---
 
+=======
+- [PHPStan Code Quality Guide](../../Xot/docs/phpstan_code_quality_guide.md)
+- [Cms Module README](./README.md)
+- [DataCollection Best Practices](../../Xot/docs/spatie-data-best-practices.md)
+
+---
+
+*Ultimo aggiornamento: 2025-01-10*
+>>>>>>> 4b6b99016 (first commit)

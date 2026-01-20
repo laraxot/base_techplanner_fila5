@@ -9,34 +9,47 @@ return [
             'placeholder' => 'blocks',
             'helper_text' => 'blocks',
             'description' => 'blocks',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'content_blocks' => [
             'label' => 'content_blocks',
             'placeholder' => 'content_blocks',
             'helper_text' => 'content_blocks',
             'description' => 'content_blocks',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'sidebar_blocks' => [
             'label' => 'sidebar_blocks',
             'placeholder' => 'sidebar_blocks',
             'helper_text' => 'sidebar_blocks',
             'description' => 'sidebar_blocks',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'footer_blocks' => [
             'label' => 'footer_blocks',
             'placeholder' => 'footer_blocks',
             'helper_text' => 'footer_blocks',
             'description' => 'footer_blocks',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'content' => [
             'label' => 'content',
             'placeholder' => 'content',
             'helper_text' => 'content',
             'description' => 'content',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -62,6 +75,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Page Content Builder',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
 ];

@@ -405,7 +405,11 @@ class TestData
         return [
             'appointment' => [
                 'name' => 'John Doe',
+<<<<<<< HEAD
                 'date' => '[DATE]',
+=======
+                'date' => '2024-03-20',
+>>>>>>> 4b6b99016 (first commit)
             ],
             'payment' => [
                 'name' => 'John Doe',

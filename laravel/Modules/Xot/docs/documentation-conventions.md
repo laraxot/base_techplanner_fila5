@@ -64,7 +64,11 @@
 
 2. **Da root a modulo**: La documentazione root deve linkare ai documenti specifici dei moduli:
    ```markdown
+<<<<<<< HEAD
    Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/docs/nome_documento.md)
+=======
+   Vedi anche: [Implementazione nel modulo Xot](/laravel/Modules/Xot/docs/nome_documento.md)
+>>>>>>> 4b6b99016 (first commit)
    ```
 
 ## Manutenzione della documentazione
@@ -102,6 +106,13 @@ Utilizzare script nella cartella `bashscripts` per automatizzare le verifiche e 
 
 - [Documentazione generale](../../../docs/documentation_rules.md)
 - [Convenzioni di naming in generale](../../../docs/naming_conventions.md)
+<<<<<<< HEAD
 - [Regole per ServiceProvider](../../indennitacondizionilavoro/docs/service_provider.md)
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
 
+=======
+- [Regole per ServiceProvider](../../IndennitaCondizioniLavoro/docs/service_provider.md)
+- [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
+
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> 4b6b99016 (first commit)

@@ -110,4 +110,9 @@ Questo documento elenca tutti i file che contengono conflitti di merge  nel modu
 
 ---
 
+<<<<<<< HEAD
 **Stato**: In corso di analisi 
+=======
+**Ultimo aggiornamento**: Gennaio 2025
+**Stato**: In corso di analisi
+>>>>>>> 4b6b99016 (first commit)

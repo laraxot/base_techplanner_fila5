@@ -160,3 +160,7 @@ Il macro `generateSlug` è stato disabilitato temporaneamente. Per riabilitarlo:
 2. Aggiornare i metodi utilizzati
 3. Testare in ambiente di sviluppo
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 4b6b99016 (first commit)

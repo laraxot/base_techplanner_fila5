@@ -369,7 +369,11 @@ php artisan queue:prune-failed --hours=48
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [← User Module README](./readme.md)
+=======
+- [← User Module README](./README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [← PHPStan Fixes 2025-10-01](./phpstan-fixes-2025-10-01.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
 - [← Root Documentation](../../../docs/index.md)

@@ -8,6 +8,7 @@ return [
             'label' => 'activeLocale',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Lang Base Edit Record',
     'plural_label' => 'Lang Base Edit Record (Plurale)',
     'navigation' => [
@@ -41,4 +42,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

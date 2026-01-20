@@ -11,6 +11,10 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Modules\User\Contracts\UserContract;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\ProfileFactory;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -65,6 +69,10 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property UserContract|null                                         $user
  * @property string|null                                               $user_name
  *
+<<<<<<< HEAD
+=======
+ * @method static ProfileFactory          factory($count = null, $state = [])
+>>>>>>> 4b6b99016 (first commit)
  * @method static Builder<static>|Profile newModelQuery()
  * @method static Builder<static>|Profile newQuery()
  * @method static Builder<static>|Profile permission($permissions, $without = false)

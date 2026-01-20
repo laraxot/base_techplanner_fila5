@@ -365,6 +365,7 @@ find docs/ -name "*old*" -o -name "*backup*" -o -name "*deprecated*"
 
 🐄 **MU-UU-UU!** 🐄
 
+<<<<<<< HEAD
 
 
 --- Merged from dry-kiss-analysis-2025-10-15.md ---
@@ -491,3 +492,5 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 **Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
 
+=======
+>>>>>>> 4b6b99016 (first commit)

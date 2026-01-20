@@ -1,5 +1,9 @@
 # Analisi Errori PHPStan - Modulo UI
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-12-23
+>>>>>>> 4b6b99016 (first commit)
 **Modulo**: UI
 **Livello PHPStan**: max
 **Status**: ✅ Corretto (0 errori)

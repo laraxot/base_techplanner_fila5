@@ -2,7 +2,12 @@
 
 ## Introduzione
 
+<<<<<<< HEAD
 Questo documento esplora i pattern di design più efficaci per le email moderne, basati sull'analisi di numerosi framework e risorse specializzate nel settore. L'obiettivo è fornire linee guida per creare email che massimizzino l'engagement mantenendo compatibilità cross-client e aderenza alle best practices di SaluteOra.
+=======
+Questo documento esplora i pattern di design più efficaci per le email moderne, basati sull'analisi di numerosi framework e risorse specializzate nel settore. L'obiettivo è fornire linee guida per creare email che massimizzino l'engagement mantenendo compatibilità cross-client e aderenza alle best practices di .
+Questo documento esplora i pattern di design più efficaci per le email moderne, basati sull'analisi di numerosi framework e risorse specializzate nel settore. L'obiettivo è fornire linee guida per creare email che massimizzino l'engagement mantenendo compatibilità cross-client e aderenza alle best practices di <nome progetto>.
+>>>>>>> 4b6b99016 (first commit)
 
 ## Pattern Principali
 
@@ -345,7 +350,14 @@ return [
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [Responsive Email Templates](./responsive_email_templates.md)
 - [Email Best Practices](./mail-templates/email_best_practices.md)
 - [HTML Email Compatibility](./mail-templates/html_email_compatibility.md)
 - [Spatie Email Integration](./spatie_email_usage_guide.md)
+=======
+- [Responsive Email Templates](./RESPONSIVE_EMAIL_TEMPLATES.md)
+- [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
+- [HTML Email Compatibility](./mail-templates/HTML_EMAIL_COMPATIBILITY.md)
+- [Spatie Email Integration](./SPATIE_EMAIL_USAGE_GUIDE.md)
+>>>>>>> 4b6b99016 (first commit)

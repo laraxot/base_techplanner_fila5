@@ -74,7 +74,11 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
+<<<<<<< HEAD
             // 'model' => App\User::class,
+=======
+            //'model' => App\User::class,
+>>>>>>> 4b6b99016 (first commit)
             'model' => Modules\User\Models\User::class,
         ],
 

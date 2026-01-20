@@ -121,11 +121,19 @@ public static function table(Table $table): Table
             if ($record->status === 'critical') {
                 return 'bg-danger-500/10';
             }
+<<<<<<< HEAD
             
             if ($record->status === 'warning') {
                 return 'bg-warning-500/10';
             }
             
+=======
+
+            if ($record->status === 'warning') {
+                return 'bg-warning-500/10';
+            }
+
+>>>>>>> 4b6b99016 (first commit)
             return '';
         });
 }
@@ -139,11 +147,19 @@ TextColumn::make('stock')
         if ($state <= 0) {
             return 'danger';
         }
+<<<<<<< HEAD
         
         if ($state < 10) {
             return 'warning';
         }
         
+=======
+
+        if ($state < 10) {
+            return 'warning';
+        }
+
+>>>>>>> 4b6b99016 (first commit)
         return 'success';
     })
 ```
@@ -352,12 +368,20 @@ class MiaRisorsa extends XotBaseResource
 class MiaRisorsa extends XotBaseResource
 {
     protected static ?string $navigationIcon = 'heroicon-o-document';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     public static function getRelations(): array
     {
         return [];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     public static function getFormSchema(): array
     {
         return [

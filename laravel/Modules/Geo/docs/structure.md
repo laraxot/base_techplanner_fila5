@@ -1,5 +1,9 @@
 # Modulo Geo
 
+<<<<<<< HEAD
+=======
+Data: 2025-04-23 19:09:55
+>>>>>>> 4b6b99016 (first commit)
 
 ## Informazioni generali
 

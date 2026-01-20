@@ -725,16 +725,28 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [IsTenant Trait](../../User/app/Models/Traits/IsTenant.php)
 
 ### **Documentazione Moduli**
+<<<<<<< HEAD
 - [Cms Architecture](../../cms/docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../user/docs/traits_complete_guide.md)
+=======
+- [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
+- [User Module Traits](../../User/docs/traits_complete_guide.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
+<<<<<<< HEAD
 - [Cms Architecture](../../cms/project_docs/architecture-xotdata-pattern.md)
 - [Cms Architecture](../../cms/project_docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../user/project_docs/traits_complete_guide.md)
 - [User Module Traits](../../user/project_docs/traits_complete_guide.md)
+=======
+- [Cms Architecture](../../Cms/project_docs/architecture-xotdata-pattern.md)
+- [Cms Architecture](../../Cms/project_docs/architecture-xotdata-pattern.md)
+- [User Module Traits](../../User/project_docs/traits_complete_guide.md)
+- [User Module Traits](../../User/project_docs/traits_complete_guide.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Testing Strategy](../../<nome progetto>/project_docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/project_docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)

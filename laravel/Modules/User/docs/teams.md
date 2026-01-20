@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 description:
 globs:
@@ -31,3 +32,6 @@ La migrazione estende `XotBaseMigration` e utilizza i metodi helper per garantir
 
 **Collegamento bidirezionale:** Aggiornare anche la documentazione generale per puntare a questo file.
 
+=======
+# Gestione dei Teams
+>>>>>>> 4b6b99016 (first commit)

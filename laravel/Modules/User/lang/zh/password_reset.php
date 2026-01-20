@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -35,6 +36,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'email' => [
+            'label' => '邮箱',
+        ],
+        'token' => [
+            'label' => '令牌',
+        ],
+        'created_at' => [
+            'label' => '创建时间',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [

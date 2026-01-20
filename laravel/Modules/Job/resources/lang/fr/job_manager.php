@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -65,6 +66,32 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'name' => [
+            'label' => 'Nom',
+        ],
+        'queue' => [
+            'label' => 'File d\'attente',
+        ],
+        'status' => [
+            'label' => 'Statut',
+        ],
+        'progress' => [
+            'label' => 'Progrès',
+        ],
+        'started_at' => [
+            'label' => 'Démarré À',
+        ],
+        'last_heartbeat' => [
+            'label' => 'Dernier Battement',
+        ],
+        'created_at' => [
+            'label' => 'Créé À',
+        ],
+        'updated_at' => [
+            'label' => 'Mis À Jour À',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [

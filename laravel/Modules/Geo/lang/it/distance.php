@@ -8,54 +8,75 @@ return [
             'label' => 'Origine',
             'placeholder' => 'Seleziona il punto di origine',
             'help' => 'Punto di partenza per il calcolo della distanza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'destination' => [
             'label' => 'Destinazione',
             'placeholder' => 'Seleziona il punto di destinazione',
             'help' => 'Punto di arrivo per il calcolo della distanza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'waypoints' => [
             'label' => 'Punti intermedi',
             'placeholder' => 'Aggiungi punti intermedi',
             'help' => 'Punti intermedi per il calcolo della distanza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'transport_mode' => [
             'label' => 'Modalità di trasporto',
             'placeholder' => 'Seleziona la modalità',
             'help' => 'Mezzo di trasporto per il calcolo',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'avoid_tolls' => [
             'label' => 'Evita pedaggi',
             'help' => 'Evita strade a pedaggio nel calcolo',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'avoid_highways' => [
             'label' => 'Evita autostrade',
             'help' => 'Evita le autostrade nel calcolo',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'optimize_waypoints' => [
             'label' => 'Ottimizza punti intermedi',
             'help' => 'Ottimizza l\'ordine dei punti intermedi',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -98,6 +119,7 @@ return [
         'ferries' => 'Traghetti',
         'indoor' => 'Indoor',
     ],
+<<<<<<< HEAD
     'label' => 'Distance',
     'plural_label' => 'Distance (Plurale)',
     'navigation' => [
@@ -122,4 +144,6 @@ return [
             'label' => 'Elimina Distance',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

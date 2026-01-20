@@ -3,6 +3,12 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+=======
+    // ==============================================
+    // NAVIGATION & STRUCTURE
+    // ==============================================
+>>>>>>> 4b6b99016 (first commit)
     'navigation' => [
         'label' => 'Job',
         'plural_label' => 'Job',
@@ -11,17 +17,32 @@ return [
         'sort' => 50,
         'badge' => 'Gestione processi in background',
     ],
+<<<<<<< HEAD
+=======
+    // ==============================================
+    // MODEL INFORMATION
+    // ==============================================
+>>>>>>> 4b6b99016 (first commit)
     'model' => [
         'label' => 'Job',
         'plural' => 'Job',
         'description' => 'Processi in background e code di elaborazione',
     ],
+<<<<<<< HEAD
+=======
+    // ==============================================
+    // FIELDS - STRUTTURA ESPANSA OBBLIGATORIA
+    // ==============================================
+>>>>>>> 4b6b99016 (first commit)
     'fields' => [
         'id' => [
             'label' => 'ID',
             'tooltip' => 'Identificativo univoco del job',
             'helper_text' => 'Identificativo numerico univoco del job nel sistema',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'queue' => [
             'label' => 'Coda',
@@ -29,7 +50,10 @@ return [
             'tooltip' => 'Nome della coda di elaborazione',
             'helper_text' => 'Coda specifica in cui il job è stato accodato per l\'elaborazione',
             'help' => 'Specifica la coda di priorità per l\'elaborazione',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'payload' => [
             'label' => 'Payload',
@@ -37,7 +61,10 @@ return [
             'tooltip' => 'Dati e parametri del job',
             'helper_text' => 'Informazioni e dati specifici necessari per l\'esecuzione del job',
             'help' => 'Contiene i dati serializzati necessari per l\'esecuzione',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'attempts' => [
             'label' => 'Tentativi',
@@ -45,13 +72,19 @@ return [
             'tooltip' => 'Numero di tentativi di esecuzione',
             'helper_text' => 'Numero di volte che il job è stato tentato di eseguire',
             'help' => 'Indica quante volte il job ha tentato l\'esecuzione',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'reserved_at' => [
             'label' => 'Riservato alle',
             'tooltip' => 'Data di riserva del job',
             'helper_text' => 'Data e ora in cui il job è stato riservato per l\'esecuzione',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'available_at' => [
             'label' => 'Disponibile alle',
@@ -59,21 +92,35 @@ return [
             'tooltip' => 'Data di disponibilità per l\'esecuzione',
             'helper_text' => 'Data e ora in cui il job diventa disponibile per l\'esecuzione',
             'help' => 'Specifica quando il job può essere elaborato',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'tooltip' => 'Data di creazione del job',
             'helper_text' => 'Data e ora in cui il job è stato creato nel sistema',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'tooltip' => 'Data dell\'ultima modifica',
             'helper_text' => 'Data e ora dell\'ultimo aggiornamento del job',
+<<<<<<< HEAD
             'description' => '',
         ],
     ],
+=======
+        ],
+    ],
+    // ==============================================
+    // ACTIONS - STRUTTURA ESPANSA OBBLIGATORIA
+    // ==============================================
+>>>>>>> 4b6b99016 (first commit)
     'actions' => [
         'create' => [
             'label' => 'Nuovo Job',
@@ -181,6 +228,12 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
+=======
+    // ==============================================
+    // SECTIONS - ORGANIZZAZIONE FORM
+    // ==============================================
+>>>>>>> 4b6b99016 (first commit)
     'sections' => [
         'basic_info' => [
             'label' => 'Informazioni Base',
@@ -198,6 +251,12 @@ return [
             'icon' => 'heroicon-o-document-text',
         ],
     ],
+<<<<<<< HEAD
+=======
+    // ==============================================
+    // FILTERS - RICERCA E FILTRI
+    // ==============================================
+>>>>>>> 4b6b99016 (first commit)
     'filters' => [
         'queue' => [
             'label' => 'Coda',
@@ -221,6 +280,12 @@ return [
             'placeholder' => 'Seleziona il periodo',
         ],
     ],
+<<<<<<< HEAD
+=======
+    // ==============================================
+    // MESSAGES - FEEDBACK UTENTE
+    // ==============================================
+>>>>>>> 4b6b99016 (first commit)
     'messages' => [
         'empty_state' => 'Nessun job trovato',
         'search_placeholder' => 'Cerca job...',
@@ -237,6 +302,12 @@ return [
         'error_permission' => 'Non hai i permessi per eseguire questa azione.',
         'success_operation' => 'Operazione completata con successo',
     ],
+<<<<<<< HEAD
+=======
+    // ==============================================
+    // VALIDATION - MESSAGGI DI VALIDAZIONE
+    // ==============================================
+>>>>>>> 4b6b99016 (first commit)
     'validation' => [
         'queue_required' => 'La coda è obbligatoria',
         'payload_required' => 'Il payload è obbligatorio',
@@ -245,12 +316,24 @@ return [
         'available_at_required' => 'La data di disponibilità è obbligatoria',
         'available_at_after' => 'La data di disponibilità deve essere futura',
     ],
+<<<<<<< HEAD
+=======
+    // ==============================================
+    // DESCRIPTIONS - DESCRIZIONI CONTESTUALI
+    // ==============================================
+>>>>>>> 4b6b99016 (first commit)
     'descriptions' => [
         'job_purpose' => 'Gestione dei processi in background e code di elaborazione',
         'queue_system' => 'Sistema di code per l\'elaborazione asincrona dei task',
         'retry_mechanism' => 'Meccanismo di ri-tentativo per job falliti',
         'monitoring' => 'Monitoraggio dello stato e delle performance dei job',
     ],
+<<<<<<< HEAD
+=======
+    // ==============================================
+    // OPTIONS - OPZIONI E VALORI PREDEFINITI
+    // ==============================================
+>>>>>>> 4b6b99016 (first commit)
     'options' => [
         'queues' => [
             'default' => 'Default',
@@ -272,6 +355,9 @@ return [
             'low' => 'Bassa',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

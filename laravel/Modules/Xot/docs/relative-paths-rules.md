@@ -1,10 +1,17 @@
 # Regole per i Percorsi Relativi nella Documentazione
 
 > **Collegamenti correlati**
+<<<<<<< HEAD
 > - [README.md documentazione generale](../../../../docs/readme.md)
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
+=======
+> - [README.md documentazione generale](../../../../docs/README.md)
+> - [Struttura dei Prompt](./prompts.md)
+> - [Regole per i Prompt](./PROMPT_RULES.md)
+> - [README.md toolkit bashscripts](../../../../bashscripts/docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Regola Fondamentale
 
@@ -17,38 +24,64 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 ### Da un file nella root del progetto verso un modulo
 
 ```markdown
+<<<<<<< HEAD
 [Modulo Xot](./laravel/modules/xot/docs/readme.md)
+=======
+[Modulo Xot](./laravel/Modules/Xot/docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 ```
 
 ### Da un file in un modulo verso un altro modulo
 
 ```markdown
+<<<<<<< HEAD
 [Altro Modulo](../../../altromodulo/docs/readme.md)
+=======
+[Altro Modulo](../../../AltroModulo/docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 ```
 
 ### Da un file in un modulo verso la root
 
 ```markdown
+<<<<<<< HEAD
 [Documentazione Root](../../../../docs/readme.md)
+=======
+[Documentazione Root](../../../../docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 ```
 
 ## Errori Comuni da Evitare
 
 1. **MAI utilizzare percorsi assoluti** come:
    ```markdown
+<<<<<<< HEAD
    [ERRATO](../xot/docs/readme.md)
+=======
+   [ERRATO](../Xot/docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
    ```
 
 2. **MAI utilizzare percorsi che iniziano con /**:
    ```markdown
+<<<<<<< HEAD
    [ERRATO](/docs/readme.md)
    [ERRATO](/laravel/modules/xot/docs/readme.md)
+=======
+   [ERRATO](/docs/README.md)
+   [ERRATO](/laravel/Modules/Xot/docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
    ```
 
 3. **MAI utilizzare percorsi che non tengono conto della posizione relativa del file sorgente**:
    ```markdown
+<<<<<<< HEAD
    [ERRATO](modules/xot/docs/readme.md) <!-- Da un file nella root -->
    [ERRATO](../xot/docs/readme.md) <!-- Da un file in un modulo, senza contare correttamente i livelli -->
+=======
+   [ERRATO](Modules/Xot/docs/README.md) <!-- Da un file nella root -->
+   [ERRATO](../Xot/docs/README.md) <!-- Da un file in un modulo, senza contare correttamente i livelli -->
+>>>>>>> 4b6b99016 (first commit)
    ```
 
 ## Come Calcolare Correttamente i Percorsi Relativi

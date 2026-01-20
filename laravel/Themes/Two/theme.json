@@ -22,8 +22,12 @@
     "config": {
         "active": true,
         "default": false
+<<<<<<< HEAD
     },
     "providers": [
         "Themes\\Two\\Providers\\ThemeServiceProvider"
     ]
+=======
+    }
+>>>>>>> 4b6b99016 (first commit)
 }

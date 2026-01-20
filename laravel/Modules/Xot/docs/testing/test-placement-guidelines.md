@@ -72,3 +72,7 @@ Dopo aver aggiunto o spostato test:
 - [ ] PHPStan livello 9+ passa senza errori
 - [ ] Documentazione aggiornata (questo file & root docs)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-07-06 – aggiunte linee guida per prevenire posizionamenti errati (es. `MetatagDataTest`).*
+>>>>>>> 4b6b99016 (first commit)

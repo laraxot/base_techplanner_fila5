@@ -482,9 +482,15 @@ grep -h "class Base.*Model extends" Modules/*/app/Models/Base*.php | sort | uniq
 
 ## Link Correlati
 
+<<<<<<< HEAD
 - [User Module Model Inheritance Rules](../../user/docs/model-inheritance-rules.md)
 - [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
 - [Geo Model Inheritance Pattern](../../geo/docs/model-inheritance-pattern.md)
+=======
+- [User Module Model Inheritance Rules](../../User/docs/model-inheritance-rules.md)
+- [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
+- [Geo Model Inheritance Pattern](../../Geo/docs/model-inheritance-pattern.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

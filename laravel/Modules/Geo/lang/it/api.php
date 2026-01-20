@@ -8,73 +8,100 @@ return [
             'label' => 'Endpoint',
             'placeholder' => 'Inserisci l\'endpoint dell\'API',
             'help' => 'URL dell\'endpoint dell\'API',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'method' => [
             'label' => 'Metodo',
             'placeholder' => 'Seleziona il metodo HTTP',
             'help' => 'Metodo HTTP per la richiesta',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'headers' => [
             'label' => 'Headers',
             'placeholder' => 'Configura gli headers della richiesta',
             'help' => 'Headers HTTP per la richiesta',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'parameters' => [
             'label' => 'Parametri',
             'placeholder' => 'Configura i parametri della richiesta',
             'help' => 'Parametri per la richiesta API',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'body' => [
             'label' => 'Body',
             'placeholder' => 'Inserisci il body della richiesta',
             'help' => 'Body della richiesta HTTP',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'timeout' => [
             'label' => 'Timeout',
             'placeholder' => 'Inserisci il timeout in secondi',
             'help' => 'Timeout per la richiesta in secondi',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'retries' => [
             'label' => 'Tentativi',
             'placeholder' => 'Inserisci il numero di tentativi',
             'help' => 'Numero di tentativi per la richiesta',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'rate_limit' => [
             'label' => 'Limite di frequenza',
             'placeholder' => 'Inserisci il limite di frequenza',
             'help' => 'Limite di richieste per minuto',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'authentication' => [
             'label' => 'Autenticazione',
             'placeholder' => 'Configura l\'autenticazione',
             'help' => 'Configurazione dell\'autenticazione API',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -165,6 +192,7 @@ return [
         'multipart' => 'Multipart',
     ],
     'status_codes' => [
+<<<<<<< HEAD
         200 => '200 - OK',
         201 => '201 - Created',
         204 => '204 - No Content',
@@ -201,5 +229,19 @@ return [
         'delete' => [
             'label' => 'Elimina Api',
         ],
+=======
+        '200' => '200 - OK',
+        '201' => '201 - Created',
+        '204' => '204 - No Content',
+        '400' => '400 - Bad Request',
+        '401' => '401 - Unauthorized',
+        '403' => '403 - Forbidden',
+        '404' => '404 - Not Found',
+        '429' => '429 - Too Many Requests',
+        '500' => '500 - Internal Server Error',
+        '502' => '502 - Bad Gateway',
+        '503' => '503 - Service Unavailable',
+        '504' => '504 - Gateway Timeout',
+>>>>>>> 4b6b99016 (first commit)
     ],
 ];

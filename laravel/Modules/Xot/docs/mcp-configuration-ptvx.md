@@ -1,6 +1,11 @@
 # Configurazione MCP per base_ptvx_fila4_mono
 
+<<<<<<< HEAD
 **Data Creazione**: [DATE]  
+=======
+**Data Creazione**: 2026-01-12  
+**Ultimo Aggiornamento**: 2026-01-12  
+>>>>>>> 4b6b99016 (first commit)
 **Status**: ✅ Configurazione Completa e Ottimizzata
 
 ---

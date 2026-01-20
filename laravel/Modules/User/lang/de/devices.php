@@ -6,6 +6,7 @@ return [
     'fields' => [
         'login_at' => [
             'label' => 'login_at',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -28,4 +29,11 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+        'logout_at' => [
+            'label' => 'logout_at',
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

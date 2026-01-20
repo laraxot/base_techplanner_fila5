@@ -8,47 +8,65 @@ return [
             'label' => 'Dati',
             'placeholder' => 'Inserisci i dati da validare',
             'help' => 'Dati da sottoporre a validazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'rules' => [
             'label' => 'Regole',
             'placeholder' => 'Configura le regole di validazione',
             'help' => 'Regole di validazione da applicare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'custom_messages' => [
             'label' => 'Messaggi personalizzati',
             'placeholder' => 'Configura i messaggi di errore personalizzati',
             'help' => 'Messaggi di errore personalizzati per le regole',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'custom_attributes' => [
             'label' => 'Attributi personalizzati',
             'placeholder' => 'Configura i nomi degli attributi personalizzati',
             'help' => 'Nomi personalizzati per gli attributi nei messaggi di errore',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'bail' => [
             'label' => 'Interrompi al primo errore',
             'help' => 'Interrompi la validazione al primo errore',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'stop_on_first_failure' => [
             'label' => 'Ferma al primo fallimento',
             'help' => 'Ferma la validazione al primo fallimento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -129,6 +147,7 @@ return [
         'skipped' => 'Validazione saltata',
         'pending' => 'Validazione in attesa',
     ],
+<<<<<<< HEAD
     'label' => 'Validation',
     'plural_label' => 'Validation (Plurale)',
     'navigation' => [
@@ -153,4 +172,6 @@ return [
             'label' => 'Elimina Validation',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

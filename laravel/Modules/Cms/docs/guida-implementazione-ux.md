@@ -30,23 +30,39 @@ Questa guida fornisce indicazioni pratiche su come implementare i principi UX do
   --primary: hsl(220, 70%, 50%);
   --primary-focus: hsl(220, 70%, 40%);
   --primary-content: hsl(220, 70%, 98%);
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 4b6b99016 (first commit)
   /* Colori secondari */
   --secondary: hsl(250, 60%, 50%);
   --secondary-focus: hsl(250, 60%, 40%);
   --secondary-content: hsl(250, 60%, 98%);
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 4b6b99016 (first commit)
   /* Colori neutrali */
   --neutral: hsl(220, 10%, 40%);
   --neutral-focus: hsl(220, 10%, 30%);
   --neutral-content: hsl(220, 10%, 98%);
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 4b6b99016 (first commit)
   /* Colori di stato */
   --success: hsl(150, 80%, 40%);
   --warning: hsl(40, 90%, 50%);
   --error: hsl(0, 90%, 60%);
   --info: hsl(200, 90%, 60%);
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 4b6b99016 (first commit)
   /* Background e testo */
   --base-100: hsl(220, 20%, 98%);
   --base-200: hsl(220, 20%, 95%);
@@ -170,11 +186,19 @@ TextInput::make('name')
     <x-dashboard.card title="Pazienti">
         <!-- contenuto card -->
     </x-dashboard.card>
+<<<<<<< HEAD
     
     <x-dashboard.card title="Appuntamenti">
         <!-- contenuto card -->
     </x-dashboard.card>
     
+=======
+
+    <x-dashboard.card title="Appuntamenti">
+        <!-- contenuto card -->
+    </x-dashboard.card>
+
+>>>>>>> 4b6b99016 (first commit)
     <x-dashboard.card title="Dati ISEE">
         <!-- contenuto card -->
     </x-dashboard.card>
@@ -192,7 +216,11 @@ TextInput::make('name')
             <div>{{ $action }}</div>
         @endif
     </div>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     <div>
         {{ $slot }}
     </div>
@@ -225,7 +253,11 @@ Organizzare gli elementi dashboard in ordine di importanza:
             <button class="btn btn-outline">Documenti</button>
         </div>
     </div>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     <!-- Contenuto principale -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <!-- Colonna sinistra -->
@@ -234,10 +266,17 @@ Organizzare gli elementi dashboard in ordine di importanza:
             <div class="card bg-white shadow rounded-lg mb-6">
                 <!-- Contenuto card -->
             </div>
+<<<<<<< HEAD
             
             <!-- Altre sezioni -->
         </div>
         
+=======
+
+            <!-- Altre sezioni -->
+        </div>
+
+>>>>>>> 4b6b99016 (first commit)
         <!-- Colonna destra (sidebar) -->
         <div>
             <!-- Informazioni riassuntive e azioni -->
@@ -255,27 +294,46 @@ Organizzare gli elementi dashboard in ordine di importanza:
 <div x-data="{ activeTab: 'info' }">
     <div class="border-b mb-4">
         <nav class="flex -mb-px">
+<<<<<<< HEAD
             <button 
                 @click="activeTab = 'info'" 
+=======
+            <button
+                @click="activeTab = 'info'"
+>>>>>>> 4b6b99016 (first commit)
                 :class="{'border-primary text-primary': activeTab === 'info', 'border-transparent': activeTab !== 'info'}"
                 class="px-4 py-2 border-b-2 font-medium text-sm">
                 Informazioni
             </button>
+<<<<<<< HEAD
             <button 
                 @click="activeTab = 'documents'" 
+=======
+            <button
+                @click="activeTab = 'documents'"
+>>>>>>> 4b6b99016 (first commit)
                 :class="{'border-primary text-primary': activeTab === 'documents', 'border-transparent': activeTab !== 'documents'}"
                 class="px-4 py-2 border-b-2 font-medium text-sm">
                 Documenti
             </button>
+<<<<<<< HEAD
             <button 
                 @click="activeTab = 'appointments'" 
+=======
+            <button
+                @click="activeTab = 'appointments'"
+>>>>>>> 4b6b99016 (first commit)
                 :class="{'border-primary text-primary': activeTab === 'appointments', 'border-transparent': activeTab !== 'appointments'}"
                 class="px-4 py-2 border-b-2 font-medium text-sm">
                 Appuntamenti
             </button>
         </nav>
     </div>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     <div x-show="activeTab === 'info'">
         <!-- Contenuto tab info -->
     </div>
@@ -451,7 +509,11 @@ Repeater::make('documents')
     ->schema([
         // campi documento
     ])
+<<<<<<< HEAD
     ->itemLabel(fn (array $state): ?string => 
+=======
+    ->itemLabel(fn (array $state): ?string =>
+>>>>>>> 4b6b99016 (first commit)
         $state['title'] ?? null
     )
     ->collapsible()
@@ -466,4 +528,8 @@ Per approfondimenti, consultare:
 - [Leggi di UX applicate a il progetto](/project_docs/07-frontend/leggi-ux.md)
 - [UX del Wizard di Registrazione](/project_docs/07-frontend/ux-wizard-registrazione-paziente.md)
 - [DaisyUI Documentation](https://daisyui.com/components/)
+<<<<<<< HEAD
 - [Filament Documentation](https://filamentphp.com/project_docs/forms) 
+=======
+- [Filament Documentation](https://filamentphp.com/project_docs/forms)
+>>>>>>> 4b6b99016 (first commit)

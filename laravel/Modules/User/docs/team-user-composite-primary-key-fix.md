@@ -259,4 +259,8 @@ $membership = Membership::where('team_id', $team->id)
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: novembre 2025*
+>>>>>>> 4b6b99016 (first commit)
 *Status: IMPLEMENTATO E VALIDATO*

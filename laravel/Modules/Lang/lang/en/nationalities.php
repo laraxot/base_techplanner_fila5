@@ -3,6 +3,10 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+=======
+    // Europe
+>>>>>>> 4b6b99016 (first commit)
     'it' => 'Italian',
     'fr' => 'French',
     'de' => 'German',
@@ -47,6 +51,10 @@ return [
     'ge' => 'Georgian',
     'am' => 'Armenian',
     'az' => 'Azerbaijani',
+<<<<<<< HEAD
+=======
+    // Americas
+>>>>>>> 4b6b99016 (first commit)
     'us' => 'American',
     'ca' => 'Canadian',
     'mx' => 'Mexican',
@@ -89,6 +97,10 @@ return [
     'kn' => 'Kittitian',
     'dm' => 'Dominican',
     'bs' => 'Bahamian',
+<<<<<<< HEAD
+=======
+    // Asia
+>>>>>>> 4b6b99016 (first commit)
     'cn' => 'Chinese',
     'jp' => 'Japanese',
     'kr' => 'South Korean',
@@ -133,6 +145,10 @@ return [
     'kg' => 'Kyrgyz',
     'tj' => 'Tajik',
     'tm' => 'Turkmen',
+<<<<<<< HEAD
+=======
+    // Africa
+>>>>>>> 4b6b99016 (first commit)
     'eg' => 'Egyptian',
     'ly' => 'Libyan',
     'tn' => 'Tunisian',
@@ -187,6 +203,10 @@ return [
     'ao' => 'Angolan',
     'aq' => 'Antarctic',
     'zr' => 'Zairian',
+<<<<<<< HEAD
+=======
+    // Oceania
+>>>>>>> 4b6b99016 (first commit)
     'au' => 'Australian',
     'ax' => 'Alandish',
     'nz' => 'New Zealander',
@@ -204,6 +224,10 @@ return [
     'pw' => 'Palauan',
     'fm' => 'Micronesian',
     'mh' => 'Marshallese',
+<<<<<<< HEAD
+=======
+    // Others
+>>>>>>> 4b6b99016 (first commit)
     'xk' => 'Kosovar',
     'va' => 'Vatican',
     'sm' => 'Sammarinese',
@@ -256,6 +280,7 @@ return [
     'mp' => 'Northern Mariana Islander',
     'um' => 'U.S. Minor Outlying Islands',
     'eh' => 'Western Sahara',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -269,4 +294,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

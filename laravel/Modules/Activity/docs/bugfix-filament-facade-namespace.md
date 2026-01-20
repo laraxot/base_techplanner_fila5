@@ -2,7 +2,11 @@
 
 ## 🐛 Errore
 
+<<<<<<< HEAD
 **Data:** [DATE]
+=======
+**Data:** 2025-01-22
+>>>>>>> 4b6b99016 (first commit)
 **File:** `Modules/Activity/app/Filament/Actions/ListLogActivitiesAction.php:69`
 **Messaggio:** `Class "Filament\Support\Facades\Filament" not found`
 
@@ -218,12 +222,21 @@ Usare sempre file esistenti del progetto come riferimento per i namespace.
 
 - [ListLogActivitiesAction.php](../app/Filament/Actions/ListLogActivitiesAction.php) - File fixato
 - [XotBasePage.php](../../Xot/app/Filament/Pages/XotBasePage.php) - Reference corretta
+<<<<<<< HEAD
 - [Activity Module README](./readme.md)
 
 ### Regole e Best Practices
 
 - [Filament Best Practices](../../xot/docs/filament-best-practices.md)
 - [Namespace Rules](../../../docs/module_namespace_rules.md)
+=======
+- [Activity Module README](./README.md)
+
+### Regole e Best Practices
+
+- [Filament Best Practices](../../Xot/docs/FILAMENT-BEST-PRACTICES.md)
+- [Namespace Rules](../../../docs/MODULE_NAMESPACE_RULES.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 
@@ -257,7 +270,11 @@ Usare sempre file esistenti del progetto come riferimento per i namespace.
 
 ---
 
+<<<<<<< HEAD
 **Ultimo Aggiornamento:** [DATE]
+=======
+**Ultimo Aggiornamento:** 2025-01-22
+>>>>>>> 4b6b99016 (first commit)
 **Autore:** Analisi Errore + Fix Namespace
 **Stato:** ✅ RISOLTO - Pronto per produzione
 **Severity:** 🔴 CRITICA (500 error)

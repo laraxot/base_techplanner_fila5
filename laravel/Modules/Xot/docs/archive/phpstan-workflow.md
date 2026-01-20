@@ -1,7 +1,11 @@
 
 # Workflow Analisi PHPStan
 
+<<<<<<< HEAD
 > **Nota**: Per una panoramica completa sulla gestione della documentazione e delle regole, consultare [DOCUMENTATION_MANAGEMENT.md](documentation_management.md)
+=======
+> **Nota**: Per una panoramica completa sulla gestione della documentazione e delle regole, consultare [DOCUMENTATION_MANAGEMENT.md](DOCUMENTATION_MANAGEMENT.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## REGOLE FONDAMENTALI
 - ⚠️ **NON INTERROMPERE MAI L'ANALISI** finché non si raggiunge il livello 7

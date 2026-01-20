@@ -90,9 +90,12 @@ return [
                 'helper_text' => 'Critical level setting',
                 'description' => 'Critical level description',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'resources' => [
@@ -102,8 +105,11 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

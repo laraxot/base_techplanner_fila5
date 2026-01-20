@@ -10,7 +10,10 @@ return [
             'help' => 'اسم تعريف العنصر',
             'description' => 'اسم الكائن',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'edit-name' => [
             'label' => 'تعديل الاسم',
@@ -18,7 +21,10 @@ return [
             'help' => 'تعديل الاسم الموجود',
             'description' => 'إجراء لتعديل الاسم',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'change-state' => [
             'label' => 'تغيير الحالة',
@@ -26,7 +32,10 @@ return [
             'help' => 'تعديل الحالة الحالية',
             'description' => 'إجراء لتغيير الحالة',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'state' => [
             'label' => 'الحالة',
@@ -34,7 +43,10 @@ return [
             'help' => 'الحالة الحالية للعنصر',
             'description' => 'حالة النظام الحالية',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'message' => [
             'label' => 'الرسالة',
@@ -42,7 +54,10 @@ return [
             'help' => 'رسالة إعلامية',
             'description' => 'نص الرسالة',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'messages' => [
@@ -56,6 +71,7 @@ return [
             'title' => 'خطأ في الانتقال',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -67,4 +83,6 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

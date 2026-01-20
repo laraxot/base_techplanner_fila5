@@ -158,5 +158,11 @@ cd laravel
 
 - [PHPStan Complete Success](./phpstan-complete-success.md)
 - [PHPStan Corrections Summary](./phpstan-corrections-summary-2025.md)
+<<<<<<< HEAD
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
 
+=======
+- [Filament Class Extension Rules](../../Xot/docs/filament-class-extension-rules.md)
+
+*Ultimo aggiornamento: 2025-01-02*
+>>>>>>> 4b6b99016 (first commit)

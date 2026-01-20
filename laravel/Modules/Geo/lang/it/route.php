@@ -8,70 +8,97 @@ return [
             'label' => 'Nome percorso',
             'placeholder' => 'Inserisci il nome del percorso',
             'help' => 'Nome identificativo del percorso',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Descrizione dettagliata del percorso',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'start_point' => [
             'label' => 'Punto di partenza',
             'placeholder' => 'Seleziona il punto di partenza',
             'help' => 'Punto di inizio del percorso',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'end_point' => [
             'label' => 'Punto di arrivo',
             'placeholder' => 'Seleziona il punto di arrivo',
             'help' => 'Punto di destinazione del percorso',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'waypoints' => [
             'label' => 'Punti intermedi',
             'placeholder' => 'Aggiungi punti intermedi',
             'help' => 'Punti intermedi del percorso',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'transport_mode' => [
             'label' => 'Modalità di trasporto',
             'placeholder' => 'Seleziona la modalità',
             'help' => 'Mezzo di trasporto per il percorso',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'avoid_tolls' => [
             'label' => 'Evita pedaggi',
             'help' => 'Evita strade a pedaggio',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'avoid_highways' => [
             'label' => 'Evita autostrade',
             'help' => 'Evita le autostrade',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'optimize_waypoints' => [
             'label' => 'Ottimizza punti intermedi',
             'help' => 'Ottimizza l\'ordine dei punti intermedi',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -105,6 +132,7 @@ return [
         'ferries' => 'Traghetti',
         'indoor' => 'Indoor',
     ],
+<<<<<<< HEAD
     'label' => 'Route',
     'plural_label' => 'Route (Plurale)',
     'navigation' => [
@@ -129,4 +157,6 @@ return [
             'label' => 'Elimina Route',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

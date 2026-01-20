@@ -65,11 +65,15 @@ class RegionFactory extends Factory
      */
     public function northern(): static
     {
+<<<<<<< HEAD
         /*
          * @param  array<string, mixed>  $attributes
          * @return array<string, mixed>
          */
         return $this->state(function (array $attributes, ?\Illuminate\Database\Eloquent\Model $model = null) {
+=======
+        return $this->state(function (array $attributes): array {
+>>>>>>> 4b6b99016 (first commit)
             $regioniNord = [
                 'Lombardia',
                 'Piemonte',
@@ -84,12 +88,18 @@ class RegionFactory extends Factory
             /** @var string $regionName */
             $regionName = $this->faker->randomElement($regioniNord);
 
+<<<<<<< HEAD
             /** @var array<string, mixed> $result */
             $result = array_merge($attributes, [
                 'name' => $regionName,
             ]);
 
             return $result;
+=======
+            return array_merge($attributes, [
+                'name' => $regionName,
+            ]);
+>>>>>>> 4b6b99016 (first commit)
         });
     }
 
@@ -98,11 +108,15 @@ class RegionFactory extends Factory
      */
     public function central(): static
     {
+<<<<<<< HEAD
         /*
          * @param  array<string, mixed>  $attributes
          * @return array<string, mixed>
          */
         return $this->state(function (array $attributes, ?\Illuminate\Database\Eloquent\Model $model = null) {
+=======
+        return $this->state(function (array $attributes): array {
+>>>>>>> 4b6b99016 (first commit)
             $regioniCentro = [
                 'Lazio',
                 'Toscana',
@@ -115,12 +129,18 @@ class RegionFactory extends Factory
             /** @var string $regionName */
             $regionName = $this->faker->randomElement($regioniCentro);
 
+<<<<<<< HEAD
             /** @var array<string, mixed> $result */
             $result = array_merge($attributes, [
                 'name' => $regionName,
             ]);
 
             return $result;
+=======
+            return array_merge($attributes, [
+                'name' => $regionName,
+            ]);
+>>>>>>> 4b6b99016 (first commit)
         });
     }
 
@@ -129,11 +149,15 @@ class RegionFactory extends Factory
      */
     public function southern(): static
     {
+<<<<<<< HEAD
         /*
          * @param  array<string, mixed>  $attributes
          * @return array<string, mixed>
          */
         return $this->state(function (array $attributes, ?\Illuminate\Database\Eloquent\Model $model = null) {
+=======
+        return $this->state(function (array $attributes): array {
+>>>>>>> 4b6b99016 (first commit)
             $regioniSud = [
                 'Campania',
                 'Puglia',
@@ -146,12 +170,18 @@ class RegionFactory extends Factory
             /** @var string $regionName */
             $regionName = $this->faker->randomElement($regioniSud);
 
+<<<<<<< HEAD
             /** @var array<string, mixed> $result */
             $result = array_merge($attributes, [
                 'name' => $regionName,
             ]);
 
             return $result;
+=======
+            return array_merge($attributes, [
+                'name' => $regionName,
+            ]);
+>>>>>>> 4b6b99016 (first commit)
         });
     }
 

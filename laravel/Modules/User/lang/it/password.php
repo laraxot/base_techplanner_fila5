@@ -11,6 +11,7 @@ return [
         ],
     ],
     'fields' => [
+<<<<<<< HEAD
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -71,33 +72,66 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+        'otp_expiration_minutes' => [
+            'help' => 'Durata in minuti della validità della password temporanea',
+        ],
+        'otp_length' => [
+            'help' => 'Lunghezza del codice OTP',
+        ],
+        'expires_in' => [
+            'help' => 'Il numero di giorni prima che la password scadrà',
+        ],
+        'min' => [
+            'help' => 'La dimensione minima della password',
+        ],
+        'mixedCase' => [
+            'help' => 'la password richiede almeno una lettera maiuscola e una minuscola',
+        ],
+        'letters' => [
+            'help' => 'la password richiede almeno una lettera',
+        ],
+        'numbers' => [
+            'help' => 'la password richiede almeno un numero',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'symbols' => [
             'help' => 'la password richiede almeno un simbolo',
             'label' => [
                 'help' => 'la password richiede almeno un simbolo',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'uncompromised' => [
             'help' => 'Se la password non deve essere stata compromessa in data leaks',
             'label' => [
                 'help' => 'Se la password non deve essere stata compromessa in data leaks',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'compromisedThreshold' => [
             'help' => 'Il numero di volte che una password può apparire in data leaks prima di essere considerata compromessa',
             'label' => [
                 'help' => 'Il numero di volte che una password può apparire in data leaks prima di essere considerata compromessa',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'new_password' => [
             'label' => 'new_password',
@@ -107,21 +141,30 @@ return [
             'description' => 'new_password',
             'helper_text' => 'new_password',
             'placeholder' => 'new_password',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Inserisci la password',
             'helper_text' => 'La password deve essere di almeno 8 caratteri',
             'description' => 'Password',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
             'placeholder' => 'Conferma la password',
             'helper_text' => 'Reinserisci la password per confermare',
             'description' => 'Conferma Password',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -142,6 +185,11 @@ return [
             'label' => 'updateDataAction',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Password',
     'plural_label' => 'Password (Plurale)',
+=======
+    'label' => '',
+    'plural_label' => '',
+>>>>>>> 4b6b99016 (first commit)
 ];

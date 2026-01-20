@@ -43,6 +43,7 @@ Utilizzo di namespace specifico del tema (`sixteen::`, `two::`, `zero::`) invece
 
 ## Architettura del Sistema
 
+<<<<<<< HEAD
 ### 1. Configurazione tema attivo (SSoT tenant)
 
 **Unica fonte runtime:** `config/local/techplanner/xra.php` letta da `XotData::make()` via `TenantService::getConfig('xra')`.
@@ -70,6 +71,15 @@ echo PHP_EOL . Modules\Xot\Datas\XotData::make()->getPubThemeViewPath('pages');
 ```
 
 ### 2. Registrazione namespace
+=======
+### 1. Configurazione Tema Attivo
+```php
+// config/local/techplanner/xra.php
+'pub_theme' => 'Sixteen',  // Tema attualmente attivo
+```
+
+### 2. Registrazione Namespace
+>>>>>>> 4b6b99016 (first commit)
 ```php
 // Themes/Sixteen/app/Providers/ThemeServiceProvider.php
 public function boot(): void
@@ -227,11 +237,14 @@ Ogni volta che si lavora con temi e CMS, consultare questa regola per garantire 
 
 ## Changelog Errori Risolti
 
+<<<<<<< HEAD
 ### 2026-06-06 — `/it` serviva Sixteen invece di Two
 **Causa**: override temporaneo `pub_theme => 'Sixteen'` in `xra.php` per fix partial `language-switcher` (esistono solo nel header Design Comuni di Sixteen). Confusione con doc BMAD §7 “Folio FO shell (Sixteen)” che descrive **pattern Fixcity**, non il tenant TechPlanner.
 **Soluzione**: ripristinare `'pub_theme' => 'Two'` in `xra.php`; allineare header CMS ai partial del tema Two; `php artisan config:clear && view:clear`.
 **Prevenzione**: non cambiare tema per workaround view — portare i partial mancanti nel tema canonico o adattare `header.json`.
 
+=======
+>>>>>>> 4b6b99016 (first commit)
 ### 2025-01-06 - Errore "view not found: pub_theme::components.blocks.navigation.simple"
 **Causa**: `CmsServiceProvider` non registrato in `config/app.php`
 **Impatto**: Namespace `pub_theme::` non risolto, blocchi CMS non funzionanti
@@ -246,12 +259,21 @@ Ogni volta che si lavora con temi e CMS, consultare questa regola per garantire 
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [LLM Wiki — public theme resolution](./laravel/docs/wiki/concepts/public-theme-resolution-and-vite-assets.md) (second brain agenti)
 - [Tenant: nome → pub_theme](./laravel/Modules/Tenant/docs/tenant-name-to-pub-theme.md)
 - [CMS System Documentation](./cms_system.md)
 - [Theme Components](./theme_components.md)
 - [Prevenzione push GH008 / LFS / merge artifacts](./git-lfs-push-gh008-prevention.md)
+=======
+- [CMS System Documentation](./cms_system.md)
+- [Theme Components](./theme_components.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Configurazione Tema](../laravel/config/local/techplanner/xra.php)
 - [ThemeServiceProvider Sixteen](../laravel/Themes/Sixteen/app/Providers/ThemeServiceProvider.php)
 - [CmsServiceProvider](../laravel/Modules/Cms/app/Providers/CmsServiceProvider.php)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)

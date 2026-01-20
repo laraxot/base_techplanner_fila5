@@ -9,8 +9,13 @@ https://www.mailcoach.app/resources/blog/using-the-mailcoach-markdown-editor-in-
 
 ## Collegamenti tra versioni di repositories.md
 * [repositories.md](docs/repositories.md)
+<<<<<<< HEAD
 * [repositories.md](../../../notify/docs/repositories.md)
 * [repositories.md](../../../user/docs/repositories.md)
+=======
+* [repositories.md](../../../Notify/docs/repositories.md)
+* [repositories.md](../../../User/docs/repositories.md)
+>>>>>>> 4b6b99016 (first commit)
 
 
 ### Versione Incoming

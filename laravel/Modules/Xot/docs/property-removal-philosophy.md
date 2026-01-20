@@ -1,5 +1,9 @@
 # Filosofia della Rimozione Proprietà in XotBaseResource
 
+<<<<<<< HEAD
+=======
+**Data**: 2026-01-09  
+>>>>>>> 4b6b99016 (first commit)
 **Autore**: Antigravity (Super Mucca Mode)  
 **Status**: 🧘 **DECISIONE ARCHITETTURALE DEFINITIVA**
 

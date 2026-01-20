@@ -88,5 +88,9 @@ Dopo la modifica, verifica con:
 
 ---
 
+<<<<<<< HEAD
 *Risolto: [DATE]*
+=======
+*Risolto: 2025-01-10*
+>>>>>>> 4b6b99016 (first commit)
 *Architecture Version: XotBase 2.1*

@@ -157,6 +157,7 @@ class ProvinceFactory extends Factory
      */
     public function northern(): static
     {
+<<<<<<< HEAD
         return $this->state(
             /** @param array<string, mixed> $attributes */
             /** @return array<string, mixed> */
@@ -221,6 +222,66 @@ class ProvinceFactory extends Factory
 
                 return $result;
             });
+=======
+        return $this->state(function (array $attributes): array {
+            $provinceNord = [
+                'Milano',
+                'Torino',
+                'Genova',
+                'Bologna',
+                'Venezia',
+                'Verona',
+                'Brescia',
+                'Bergamo',
+                'Padova',
+                'Parma',
+                'Modena',
+                'Reggio Emilia',
+                'Ravenna',
+                'Ferrara',
+                'Forlì-Cesena',
+                'Rimini',
+                'Piacenza',
+                'Como',
+                'Varese',
+                'Monza e Brianza',
+                'Cremona',
+                'Mantova',
+                'Pavia',
+                'Sondrio',
+                'Lecco',
+                'Lodi',
+                'Trento',
+                'Bolzano',
+                'Udine',
+                'Trieste',
+                'Pordenone',
+                'Gorizia',
+                'Belluno',
+                'Treviso',
+                'Vicenza',
+                'Rovigo',
+                'La Spezia',
+                'Imperia',
+                'Savona',
+                'Aosta',
+                'Novara',
+                'Cuneo',
+                'Asti',
+                'Alessandria',
+                'Vercelli',
+                'Biella',
+                'Verbano-Cusio-Ossola',
+            ];
+
+            /** @var string $provinceName */
+            $provinceName = $this->faker->randomElement($provinceNord);
+
+            return array_merge($attributes, [
+                'name' => $provinceName,
+            ]);
+        });
+>>>>>>> 4b6b99016 (first commit)
     }
 
     /**
@@ -228,6 +289,7 @@ class ProvinceFactory extends Factory
      */
     public function central(): static
     {
+<<<<<<< HEAD
         return $this->state(
             /** @param array<string, mixed> $attributes */
             /** @return array<string, mixed> */
@@ -273,6 +335,47 @@ class ProvinceFactory extends Factory
 
                 return $result;
             });
+=======
+        return $this->state(function (array $attributes): array {
+            $provinceCentro = [
+                'Roma',
+                'Firenze',
+                'Pisa',
+                'Livorno',
+                'Siena',
+                'Arezzo',
+                'Grosseto',
+                'Lucca',
+                'Pistoia',
+                'Prato',
+                'Massa-Carrara',
+                'Perugia',
+                'Terni',
+                'Ancona',
+                'Pesaro e Urbino',
+                'Macerata',
+                'Ascoli Piceno',
+                'Fermo',
+                'Viterbo',
+                'Rieti',
+                'Frosinone',
+                'Latina',
+                "L'Aquila",
+                'Teramo',
+                'Pescara',
+                'Chieti',
+                'Campobasso',
+                'Isernia',
+            ];
+
+            /** @var string $provinceName */
+            $provinceName = $this->faker->randomElement($provinceCentro);
+
+            return array_merge($attributes, [
+                'name' => $provinceName,
+            ]);
+        });
+>>>>>>> 4b6b99016 (first commit)
     }
 
     /**
@@ -280,6 +383,7 @@ class ProvinceFactory extends Factory
      */
     public function southern(): static
     {
+<<<<<<< HEAD
         return $this->state(
             /** @param array<string, mixed> $attributes */
             /** @return array<string, mixed> */
@@ -332,6 +436,54 @@ class ProvinceFactory extends Factory
 
                 return $result;
             });
+=======
+        return $this->state(function (array $attributes): array {
+            $provinceSud = [
+                'Napoli',
+                'Salerno',
+                'Caserta',
+                'Avellino',
+                'Benevento',
+                'Bari',
+                'Taranto',
+                'Brindisi',
+                'Lecce',
+                'Foggia',
+                'Barletta-Andria-Trani',
+                'Potenza',
+                'Matera',
+                'Cosenza',
+                'Catanzaro',
+                'Reggio Calabria',
+                'Crotone',
+                'Vibo Valentia',
+                'Palermo',
+                'Catania',
+                'Messina',
+                'Siracusa',
+                'Ragusa',
+                'Trapani',
+                'Agrigento',
+                'Caltanissetta',
+                'Enna',
+                'Cagliari',
+                'Sassari',
+                'Nuoro',
+                'Oristano',
+                'Olbia-Tempio',
+                'Ogliastra',
+                'Medio Campidano',
+                'Carbonia-Iglesias',
+            ];
+
+            /** @var string $provinceName */
+            $provinceName = $this->faker->randomElement($provinceSud);
+
+            return array_merge($attributes, [
+                'name' => $provinceName,
+            ]);
+        });
+>>>>>>> 4b6b99016 (first commit)
     }
 
     /**

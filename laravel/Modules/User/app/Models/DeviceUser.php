@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\DeviceUserFactory;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -55,6 +59,11 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  *
  * @property ProfileContract|null $deleter
  *
+<<<<<<< HEAD
+=======
+ * @method static DeviceUserFactory factory($count = null, $state = [])
+ *
+>>>>>>> 4b6b99016 (first commit)
  * @mixin \Eloquent
  */
 class DeviceUser extends BasePivot

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📚 **Indice Documentazione Modulo Gdpr**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -29,3 +30,6 @@
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+=======
+# Documentation Index
+>>>>>>> 4b6b99016 (first commit)

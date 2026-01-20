@@ -36,15 +36,27 @@ class AuthenticationLogResource extends XotBaseResource
         return $table
             ->columns([
                 TextColumn::make('id')
+<<<<<<< HEAD
+=======
+                    ->label('ID')
+>>>>>>> 4b6b99016 (first commit)
                     ->searchable()
                     ->sortable(),
 
                 TextColumn::make('authenticatable_type')
+<<<<<<< HEAD
+=======
+                    ->label('Authenticatable Type')
+>>>>>>> 4b6b99016 (first commit)
                     ->formatStateUsing(fn (?string $state): string => null !== $state ? Str::afterLast($state, '\\') : '')
                     ->searchable()
                     ->sortable(),
 
                 TextColumn::make('authenticatable.name')
+<<<<<<< HEAD
+=======
+                    ->label('User')
+>>>>>>> 4b6b99016 (first commit)
                     ->searchable()
                     ->sortable()
                     ->url(function (AuthenticationLog $record): ?string {
@@ -57,6 +69,7 @@ class AuthenticationLogResource extends XotBaseResource
                     }, shouldOpenInNewTab: true),
 
                 TextColumn::make('ip_address')
+<<<<<<< HEAD
                     ->searchable()
                     ->sortable()
                     ->copyable(),
@@ -66,18 +79,47 @@ class AuthenticationLogResource extends XotBaseResource
                     ->searchable(isIndividual: true),
 
                 IconColumn::make('login_successful')
+=======
+                    ->label('IP Address')
+                    ->searchable()
+                    ->sortable()
+                    ->copyable()
+                    ->copyMessage('IP address copied')
+                    ->copyMessageDuration(2000),
+
+                TextColumn::make('user_agent')
+                    ->label('User Agent')
+                    ->limit(50)
+                    ->tooltip(fn (AuthenticationLog $record): ?string => $record->user_agent)
+                    ->searchable(isIndividual: true),
+
+                IconColumn::make('login_successful')
+                    ->label('Success')
+>>>>>>> 4b6b99016 (first commit)
                     ->boolean()
                     ->sortable(),
 
                 TextColumn::make('login_at')
+<<<<<<< HEAD
+=======
+                    ->label('Login Time')
+>>>>>>> 4b6b99016 (first commit)
                     ->dateTime()
                     ->sortable(),
 
                 TextColumn::make('logout_at')
+<<<<<<< HEAD
+=======
+                    ->label('Logout Time')
+>>>>>>> 4b6b99016 (first commit)
                     ->dateTime()
                     ->sortable(),
 
                 IconColumn::make('cleared_by_user')
+<<<<<<< HEAD
+=======
+                    ->label('Cleared by User')
+>>>>>>> 4b6b99016 (first commit)
                     ->boolean()
                     ->sortable(),
             ])
@@ -89,8 +131,15 @@ class AuthenticationLogResource extends XotBaseResource
                 // Filter by date range
                 Filter::make('login_date')
                     ->schema([
+<<<<<<< HEAD
                         DatePicker::make('login_from'),
                         DatePicker::make('login_until'),
+=======
+                        DatePicker::make('login_from')
+                            ->label('Login From'),
+                        DatePicker::make('login_until')
+                            ->label('Login Until'),
+>>>>>>> 4b6b99016 (first commit)
                     ])
                     ->query(function (Builder $query, array $data): Builder {
                         $loginFrom = $data['login_from'] ?? null;
@@ -121,6 +170,10 @@ class AuthenticationLogResource extends XotBaseResource
             ])
             ->recordActions([
                 Action::make('view_user')
+<<<<<<< HEAD
+=======
+                    ->label('View User')
+>>>>>>> 4b6b99016 (first commit)
                     ->icon('heroicon-o-user')
                     ->url(function (AuthenticationLog $record): ?string {
                         $authenticatable = $record->authenticatable;
@@ -164,6 +217,10 @@ class AuthenticationLogResource extends XotBaseResource
                     Grid::make(2)
                         ->schema([
                             Select::make('authenticatable_type')
+<<<<<<< HEAD
+=======
+                                ->label('Authenticatable Type')
+>>>>>>> 4b6b99016 (first commit)
                                 ->options([
                                     User::class => 'User',
                                     // Add other authenticatable types as needed
@@ -172,6 +229,10 @@ class AuthenticationLogResource extends XotBaseResource
                                 ->searchable(),
 
                             TextInput::make('authenticatable_id')
+<<<<<<< HEAD
+=======
+                                ->label('Authenticatable ID')
+>>>>>>> 4b6b99016 (first commit)
                                 ->required()
                                 ->numeric(),
                         ]),
@@ -179,15 +240,27 @@ class AuthenticationLogResource extends XotBaseResource
                     Grid::make(2)
                         ->schema([
                             TextInput::make('ip_address')
+<<<<<<< HEAD
                                 ->maxLength(45),
 
                             TextInput::make('user_agent')
                                 ->maxLength(500),
+=======
+                                ->label('IP Address')
+                                ->maxLength(45)
+                                ->placeholder('e.g., 192.168.1.1'),
+
+                            TextInput::make('user_agent')
+                                ->label('User Agent')
+                                ->maxLength(500)
+                                ->placeholder('User agent string'),
+>>>>>>> 4b6b99016 (first commit)
                         ]),
 
                     Grid::make(3)
                         ->schema([
                             Toggle::make('login_successful')
+<<<<<<< HEAD
                                 ->inline(false),
 
                             TextInput::make('login_at'),
@@ -196,6 +269,22 @@ class AuthenticationLogResource extends XotBaseResource
                         ]),
 
                     Toggle::make('cleared_by_user')
+=======
+                                ->label('Login Successful')
+                                ->inline(false),
+
+                            TextInput::make('login_at')
+                                ->label('Login Time')
+                                ->placeholder('YYYY-MM-DD HH:MM:SS'),
+
+                            TextInput::make('logout_at')
+                                ->label('Logout Time')
+                                ->placeholder('YYYY-MM-DD HH:MM:SS'),
+                        ]),
+
+                    Toggle::make('cleared_by_user')
+                        ->label('Cleared by User')
+>>>>>>> 4b6b99016 (first commit)
                         ->inline(false),
                 ]),
         ];

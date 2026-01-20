@@ -36,13 +36,17 @@ return [
             'placeholder' => 'Ingrese el nombre',
             'description' => 'nombre',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Ingrese el email',
             'description' => 'email',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'created_at' => [
@@ -74,17 +78,36 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'created_at' => [
+            'label' => 'Fecha de Creación',
+        ],
+        'updated_at' => [
+            'label' => 'Última Modificación',
+        ],
+        'role' => [
+            'label' => 'Rol',
+        ],
+        'active' => 'Activo',
+        'id' => [
+            'label' => 'ID',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'password' => [
             'label' => 'Contraseña',
             'placeholder' => 'Ingrese la contraseña',
             'description' => 'contraseña',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'password_confirmation' => [
             'label' => 'Confirmar Contraseña',
             'placeholder' => 'Confirme la contraseña',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -94,10 +117,16 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'email_verified_at' => [
+            'label' => 'Email Verificado el',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'current_password' => [
             'label' => 'Contraseña Actual',
             'placeholder' => 'Ingrese la contraseña actual',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -113,6 +142,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'roles' => [
+            'label' => 'Roles',
+        ],
+        'permissions' => [
+            'label' => 'Permisos',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'status' => [
             'label' => 'Estado',
@@ -121,6 +158,7 @@ return [
                 'inactive' => 'Inactivo',
                 'blocked' => 'Bloqueado',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -250,6 +288,71 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'last_login' => [
+            'label' => 'Último Inicio de Sesión',
+        ],
+        'avatar' => [
+            'label' => 'Avatar',
+        ],
+        'language' => [
+            'label' => 'Idioma',
+        ],
+        'timezone' => [
+            'label' => 'Zona Horaria',
+        ],
+        'password_expires_at' => [
+            'label' => 'Expiración de Contraseña',
+        ],
+        'verified' => [
+            'label' => 'Verificado',
+        ],
+        'unverified' => [
+            'label' => 'No Verificado',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'isActive' => [
+            'label' => 'isActive',
+        ],
+        'deactivate' => [
+            'label' => 'deactivate',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'view' => [
+            'label' => 'view',
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'detach' => [
+            'label' => 'detach',
+        ],
+        'attach' => [
+            'label' => 'attach',
+        ],
+        'changePassword' => [
+            'label' => 'changePassword',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'filters' => [
@@ -363,6 +466,9 @@ return [
     'model' => [
         'label' => 'Usuario',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

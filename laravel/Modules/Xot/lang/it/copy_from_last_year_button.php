@@ -8,6 +8,7 @@ return [
             'label' => 'copy_from_last_year',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Copy From Last Year Button',
     'plural_label' => 'Copy From Last Year Button (Plurale)',
     'navigation' => [
@@ -41,4 +42,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

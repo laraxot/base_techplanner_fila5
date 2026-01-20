@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\Gdpr\Database\Factories\ConsentFactory;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -30,6 +34,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property Treatment|null       $treatment
  * @property ProfileContract|null $updater
  *
+<<<<<<< HEAD
+=======
+ * @method static ConsentFactory          factory($count = null, $state = [])
+>>>>>>> 4b6b99016 (first commit)
  * @method static Builder<static>|Consent newModelQuery()
  * @method static Builder<static>|Consent newQuery()
  * @method static Builder<static>|Consent query()
@@ -59,6 +67,7 @@ class Consent extends BaseModel
 
     public $incrementing = false;
 
+<<<<<<< HEAD
     public $fillable = [
         'id',
         'subject_id',
@@ -72,6 +81,9 @@ class Consent extends BaseModel
         'ip_address',
         'user_agent',
     ];
+=======
+    public $fillable = ['subject_id', 'treatment_id'];
+>>>>>>> 4b6b99016 (first commit)
 
     public function treatment(): BelongsTo
     {

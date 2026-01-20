@@ -1,5 +1,9 @@
 # Nota: Forms Components Base Classes
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-12-23
+>>>>>>> 4b6b99016 (first commit)
 **Status**: Mapping aggiornato per riflettere realtà codice
 
 ## 📋 Classi Rimosse dal Mapping

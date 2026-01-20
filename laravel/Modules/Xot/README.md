@@ -1,5 +1,6 @@
 # Modulo Xot - Framework Base
 
+<<<<<<< HEAD
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
 [![Filament 5.x](https://img.shields.io/badge/Filament-5.x-blue.svg)](https://filamentphp.com/)
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
@@ -7,10 +8,15 @@
 
 > **Version**: 3.0 - DRY + KISS Documentation Refactor  
 > **Status**: ✅ Core Framework Module  
+=======
+> **Version**: 3.0 - DRY + KISS Documentation Refactor
+> **Status**: ✅ Core Framework Module
+>>>>>>> 4b6b99016 (first commit)
 > **Last Updated**: December 2025
 
 ## 📋 Overview
 
+<<<<<<< HEAD
 Il modulo **Xot** è il cuore del framework Laraxot: nessun altro modulo funziona senza di lui. Fornisce le classi base (XotBaseResource, XotBaseModel, XotBaseServiceProvider, ecc.), i service provider e le convenzioni che abilitano tutti i moduli del sistema.
 
 > **🔴 Obbligatorio:** tutti i moduli Laraxot estendono le classi Xot, mai quelle di Filament o Laravel direttamente. **[Perché →](docs/readme.md)** · **[Base classes →](docs/filament/readme.md)**
@@ -22,6 +28,9 @@ php artisan module:list | grep Xot   # Verifica che sia attivo
 ```
 
 Poi nelle tue classi: `extends XotBaseResource`, `extends XotBaseModel`, `extends XotBaseServiceProvider`. **[Guida estensione →](docs/development/readme.md)**
+=======
+Il modulo **Xot** è il cuore del framework Laraxot, fornendo le classi base, i service provider e le funzionalità fondamentali che abilitano tutti gli altri moduli del sistema.
+>>>>>>> 4b6b99016 (first commit)
 
 ## 🏗️ Architecture
 
@@ -84,7 +93,11 @@ php artisan xot:status
 
 ## 🔗 Related Documentation
 
+<<<<<<< HEAD
 - [Laraxot Main Docs](../../docs/ai-guidelines.md) - Documentazione generale
+=======
+- [Laraxot Main Docs](../../docs/AI-GUIDELINES.md) - Documentazione generale
+>>>>>>> 4b6b99016 (first commit)
 - [Architecture Rules](../../docs/fundamentals/architecture-rules.md) - Regole critiche
 - [Module Structure](../../docs/fundamentals/module-structure.md) - Come strutturare moduli
 
@@ -96,10 +109,13 @@ php artisan xot:status
 
 ---
 
+<<<<<<< HEAD
 **📖 [Docs](docs/readme.md)** · **🏗️ [Architettura](docs/conventions/readme.md)** · **✅ [PHPStan](docs/standards/readme.md)** · **🤝 Contribuisci seguendo le [best practices](docs/best-practices/readme.md)**
 
 ---
 
+=======
+>>>>>>> 4b6b99016 (first commit)
 **Module Type**: Core Framework
 **Critical Level**: 🔴 Maximum (Required by all modules)
 **Architecture**: SOLID, DRY, KISS compliant
@@ -395,7 +411,11 @@ php artisan test --filter=XotBaseResourceTest
 ## 📚 Documentazione COMPLETA
 
 ### 🎯 **Guide Principali**
+<<<<<<< HEAD
 - [📖 Documentazione Completa](docs/readme.md)
+=======
+- [📖 Documentazione Completa](docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [🏗️ Base Classes](docs/base-classes.md)
 - [🔧 Service Providers](docs/service-providers.md)
 - [🎨 Filament Integration](docs/filament-integration.md)

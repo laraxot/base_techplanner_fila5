@@ -1,9 +1,15 @@
 # Best Practices per l'Implementazione del Logout
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [README modulo User](./readme.md)
 - [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
+=======
+- [README modulo User](./README.md)
+- [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
+- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

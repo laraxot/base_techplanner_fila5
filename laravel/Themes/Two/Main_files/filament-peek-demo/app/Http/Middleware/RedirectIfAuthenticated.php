@@ -13,7 +13,11 @@ class RedirectIfAuthenticated
     /**
      * Handle an incoming request.
      *
+<<<<<<< HEAD
      * @param  Closure(Request):Response  $next
+=======
+     * @param Closure(Request):Response $next
+>>>>>>> 4b6b99016 (first commit)
      */
     public function handle(Request $request, Closure $next, string ...$guards): Response
     {

@@ -16,16 +16,22 @@ return [
             'tooltip' => 'Nome del tema',
             'placeholder' => 'es: Tema Aziendale',
             'help' => 'Inserisci un nome descrittivo per il tema',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Descrizione del tema',
             'placeholder' => 'es: Tema standard per le comunicazioni aziendali',
             'help' => 'Breve descrizione dello scopo del tema',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'colors' => [
             'label' => 'Colori',
@@ -63,8 +69,11 @@ return [
                     'placeholder' => 'es: #D0021B',
                 ],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'typography' => [
             'label' => 'Tipografia',
@@ -87,7 +96,11 @@ return [
                     'options' => [
                         'small' => [
                             'label' => 'Piccolo',
+<<<<<<< HEAD
                             'tooltip' => 'Testo piccolo (es: note]',
+=======
+                            'tooltip' => 'Testo piccolo (es: note)',
+>>>>>>> 4b6b99016 (first commit)
                         ],
                         'normal' => [
                             'label' => 'Normale',
@@ -95,13 +108,20 @@ return [
                         ],
                         'large' => [
                             'label' => 'Grande',
+<<<<<<< HEAD
                             'tooltip' => 'Testo grande (es: titoli]',
+=======
+                            'tooltip' => 'Testo grande (es: titoli)',
+>>>>>>> 4b6b99016 (first commit)
                         ],
                     ],
                 ],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'layout' => [
             'label' => 'Layout',
@@ -121,8 +141,11 @@ return [
                     'tooltip' => 'Spaziatura tra gli elementi',
                 ],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'assets' => [
             'label' => 'Risorse',
@@ -142,22 +165,31 @@ return [
                     'tooltip' => 'Set di icone del tema',
                 ],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_default' => [
             'label' => 'Predefinito',
             'tooltip' => 'Imposta come tema predefinito',
             'help' => 'Il tema predefinito verrà utilizzato per tutte le notifiche senza tema specifico',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato di attivazione del tema',
             'help' => 'Solo i temi attivi possono essere utilizzati',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -236,6 +268,9 @@ return [
             'tooltip' => 'Filtra per tipo di tema',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Notify Themes',
     'plural_label' => 'Notify Themes (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

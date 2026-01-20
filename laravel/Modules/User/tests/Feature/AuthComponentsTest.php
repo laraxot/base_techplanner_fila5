@@ -4,12 +4,19 @@ declare(strict_types=1);
 
 use Illuminate\Support\Facades\View;
 use Modules\User\Models\User;
+<<<<<<< HEAD
 use Modules\User\Tests\TestCase;
+=======
+>>>>>>> 4b6b99016 (first commit)
 
 use function Pest\Laravel\actingAs;
 use function Pest\Laravel\get;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(Modules\User\Tests\TestCase::class);
+>>>>>>> 4b6b99016 (first commit)
 
 describe('Auth Components Tests', function (): void {
     test('auth components exist and work correctly', function (): void {
@@ -84,6 +91,7 @@ describe('Authentication Flow with Reorganized Components', function (): void {
 
 describe('User Profile Components Tests', function (): void {
     test('profile pages use reorganized components correctly', function (): void {
+<<<<<<< HEAD
         $user = User::factory()->create();
 
         if (class_exists(Modules\User\Models\Profile::class)) {
@@ -103,6 +111,14 @@ describe('User Profile Components Tests', function (): void {
         /** @var Illuminate\Contracts\Auth\Authenticatable $user */
         $response = actingAs($user, 'web')->get('/it/profile/edit');
 
+=======
+        /** @var User */
+        $user = User/* @phpstan-ignore-line */ ::factory()->create();
+
+        $response = actingAs($user)->get('/it/profile/edit');
+
+        /* @phpstan-ignore-next-line method.nonObject */
+>>>>>>> 4b6b99016 (first commit)
         $response->assertStatus(200);
     });
 });

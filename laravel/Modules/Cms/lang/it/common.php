@@ -44,6 +44,7 @@ return [
         'now' => 'Adesso',
         'ago' => 'fa',
     ],
+<<<<<<< HEAD
     'label' => 'Common',
     'plural_label' => 'Common (Plurale)',
     'navigation' => [
@@ -77,4 +78,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

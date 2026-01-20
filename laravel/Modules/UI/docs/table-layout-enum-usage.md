@@ -278,7 +278,11 @@ $columns = $this->layout->getTableColumns($listColumns, $gridColumns);
 - [Filament Components Guide](components.md)
 - [Translation Standards](translations.md)
 - [Table Components](table-components.md)
+<<<<<<< HEAD
 - [HasXotTable Trait](../../xot/docs/has-xot-table.md)
+=======
+- [HasXotTable Trait](../../Xot/docs/has-xot-table.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Root Documentation: UI Components](../../../docs/components/ui-components.md)
 # TableLayoutEnum Usage Guide
 

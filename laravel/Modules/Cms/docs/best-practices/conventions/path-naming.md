@@ -150,4 +150,8 @@ ls -la
 ## Collegamenti
 - [Struttura Moduli](../architecture/module-structure.md)
 - [Documentazione Root – Naming Conventions](../../../../docs/regole/naming-convention.md)
+<<<<<<< HEAD
 - [Documentazione Root – Indice](../../../../docs/readme.md)
+=======
+- [Documentazione Root – Indice](../../../../docs/README.md)
+>>>>>>> 4b6b99016 (first commit)

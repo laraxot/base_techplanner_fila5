@@ -117,6 +117,10 @@ Questo permette:
 - Stili specifici per sezione via slug
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Documentazione Blocchi](../blocks/readme.md)
+=======
+- [Documentazione Blocchi](../blocks/README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Gestione Sezioni](../section-management.md)
 - [Documentazione Root](../../../../docs/components.md)

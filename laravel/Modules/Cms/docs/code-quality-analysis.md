@@ -138,7 +138,11 @@
 
 - [PHPMD Report](./phpmd-report.md) - Analisi precedente PHPMD
 - [Filament Integration](./filament_integration.md) - Integrazione Filament
+<<<<<<< HEAD
 - [Testing Guidelines](./testing.md) - Linee guida testing
+=======
+- [Testing Guidelines](./TESTING.md) - Linee guida testing
+>>>>>>> 4b6b99016 (first commit)
 - [Optimization Analysis](./optimization-analysis.md) - Analisi ottimizzazioni
 
 ---
@@ -159,6 +163,7 @@ Il modulo CMS presenta problemi critici che bloccano l'analisi completa e richie
 **Ultimo Aggiornamento:** 24 Novembre 2025
 **Versione Analisi:** 1.0
 **Status:** ❌ CRITICAL - Requires Immediate Fixes
+<<<<<<< HEAD
 
 
 --- Merged from code-quality-analysis-2025-11-24.md ---
@@ -324,3 +329,5 @@ Il modulo CMS presenta problemi critici che bloccano l'analisi completa e richie
 **Ultimo Aggiornamento:** 24 Novembre 2025
 **Versione Analisi:** 1.0
 **Status:** ❌ CRITICAL - Requires Immediate Fixes
+=======
+>>>>>>> 4b6b99016 (first commit)

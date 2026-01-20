@@ -12,8 +12,13 @@ https://medium.com/@dkthelearner/mastering-laravel-pipeline-and-query-builder-fo
 ### Versione HEAD
 
 ## Collegamenti tra versioni di filter.md
+<<<<<<< HEAD
 * [filter.md](../../../xot/docs/actions/filter.md)
 * [filter.md](../../../xot/docs/links/filter.md)
+=======
+* [filter.md](../../../Xot/docs/actions/filter.md)
+* [filter.md](../../../Xot/docs/links/filter.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### Versione Incoming
 

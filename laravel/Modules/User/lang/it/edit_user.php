@@ -28,6 +28,7 @@ return [
     'fields' => [
         'password' => [
             'label' => 'password',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -58,4 +59,17 @@ return [
     ],
     'label' => 'Edit User',
     'plural_label' => 'Edit User (Plurale)',
+=======
+        ],
+        'email' => [
+            'label' => 'email',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+    ],
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+>>>>>>> 4b6b99016 (first commit)
 ];

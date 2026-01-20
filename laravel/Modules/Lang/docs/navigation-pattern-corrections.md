@@ -1,7 +1,11 @@
 # Correzioni Pattern ".navigation" - Gennaio 2025
 
 ## Data Intervento
+<<<<<<< HEAD
 **[DATE]** - Sistemazione traduzioni secondo regole DRY + KISS
+=======
+**2025-01-22** - Sistemazione traduzioni secondo regole DRY + KISS
+>>>>>>> 4b6b99016 (first commit)
 
 ## Problema Identificato
 
@@ -236,8 +240,13 @@ Ogni sezione `navigation` deve includere:
 
 - [Errori Comuni Traduzione](errori-comuni-traduzione.md)
 - [Traduzioni Navigation Audit](traduzioni-navigation-2025.md)
+<<<<<<< HEAD
 - [Best Practices Traduzioni](../../xot/docs/translation-standards.md)
 - [NavigationLabelTrait Explained](../../xot/docs/filament/navigation-label-trait-explained.md)
+=======
+- [Best Practices Traduzioni](../../Xot/docs/translation-standards.md)
+- [NavigationLabelTrait Explained](../../Xot/docs/filament/navigation-label-trait-explained.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Note Tecniche
 
@@ -247,5 +256,9 @@ Ogni sezione `navigation` deve includere:
 - Icone scelte per semantica appropriata
 - Gruppi organizzati per dominio logico
 
+<<<<<<< HEAD
 *Intervento completato il: [DATE]*
+=======
+*Intervento completato il: 2025-01-22*
+>>>>>>> 4b6b99016 (first commit)
 *Conforme alle regole DRY + KISS*

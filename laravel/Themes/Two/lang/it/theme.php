@@ -1,7 +1,11 @@
 <?php
+<<<<<<< HEAD
 
 declare(strict_types=1);
 
+=======
+declare(strict_types=1);
+>>>>>>> 4b6b99016 (first commit)
 return [
     /*
     |--------------------------------------------------------------------------

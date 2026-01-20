@@ -13,8 +13,13 @@ return [
 ### Versione HEAD
 
 ## Collegamenti tra versioni di app.md
+<<<<<<< HEAD
 * [app.md](../../../xot/docs/install/app.md)
 * [app.md](../../../tenant/docs/it/config/app.md)
+=======
+* [app.md](../../../Xot/docs/install/app.md)
+* [app.md](../../../Tenant/docs/it/config/app.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### Versione Incoming
 

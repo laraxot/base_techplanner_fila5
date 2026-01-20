@@ -18,6 +18,7 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  * - Usa solo componenti Filament importati
  * - Validazione e sicurezza integrate
  * - Facilmente estendibile (2FA, captcha, login social).
+<<<<<<< HEAD
  *
  * VIETATO: ->label(), ->placeholder(), ->helperText(). Le traduzioni sono gestite
  * automaticamente da LangServiceProvider tramite i file in Modules/User/lang/.
@@ -30,6 +31,11 @@ class LoginWidget extends XotBaseWidget
     /** Vista del widget (evita lookup da GetViewByClassAction che cerca login-widget). */
     protected string $view = 'user::filament.widgets.auth.login';
 
+=======
+ */
+class LoginWidget extends XotBaseWidget
+{
+>>>>>>> 4b6b99016 (first commit)
     /**
      * @return array<string, Field>
      */
@@ -80,6 +86,7 @@ class LoginWidget extends XotBaseWidget
         // throw $e;
         // }
     }
+<<<<<<< HEAD
 
     /**
      * Invocato dal form della view (wire:submit.prevent="save"); delega a login().
@@ -88,4 +95,6 @@ class LoginWidget extends XotBaseWidget
     {
         $this->login();
     }
+=======
+>>>>>>> 4b6b99016 (first commit)
 }

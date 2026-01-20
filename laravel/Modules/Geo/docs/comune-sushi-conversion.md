@@ -52,12 +52,20 @@ use Sushi\Sushi;
 class Comune extends Model
 {
     use Sushi;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Indica a Sushi di non utilizzare timestamps
      */
     public $timestamps = false;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Definisce le colonne del modello
      */
@@ -67,7 +75,11 @@ class Comune extends Model
         'cap' => 'array',
         'popolazione' => 'integer',
     ];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Carica i dati dal file JSON
      */
@@ -75,12 +87,20 @@ class Comune extends Model
     {
         $path = module_path('Geo', 'resources/json/comuni.json');
         $cacheKey = 'geo_comuni_json_' . md5($path);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 4b6b99016 (first commit)
         return cache()->rememberForever($cacheKey, function () use ($path) {
             return json_decode(file_get_contents($path), true);
         });
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Scope per filtrare per regione
      */
@@ -89,7 +109,11 @@ class Comune extends Model
         return $query->where('regione->codice', $regionCode)
                      ->orderBy('nome');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Scope per filtrare per provincia
      */
@@ -98,7 +122,11 @@ class Comune extends Model
         return $query->where('provincia->codice', $provinceCode)
                      ->orderBy('nome');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Scope per cercare per nome
      */
@@ -107,7 +135,11 @@ class Comune extends Model
         return $query->where('nome', 'like', '%' . $name . '%')
                      ->orderBy('nome');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Scope per filtrare per CAP
      */
@@ -117,7 +149,11 @@ class Comune extends Model
         // Richiede una soluzione personalizzata o un'estensione
         return $query->whereRaw("JSON_CONTAINS(cap, '\"$cap\"')");
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Verifica se il CAP è valido
      */
@@ -125,7 +161,11 @@ class Comune extends Model
     {
         return self::byCap($cap)->exists();
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Relazione con la regione
      */
@@ -133,7 +173,11 @@ class Comune extends Model
     {
         // Implementazione della relazione se necessario
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Relazione con la provincia
      */
@@ -179,11 +223,19 @@ public static function byProvince(string $provinceCode): Collection
 public static function searchByName(string $name, int $limit = 0): Collection
 {
     $query = static::query()->searchByName($name);
+<<<<<<< HEAD
     
     if ($limit > 0) {
         $query->limit($limit);
     }
     
+=======
+
+    if ($limit > 0) {
+        $query->limit($limit);
+    }
+
+>>>>>>> 4b6b99016 (first commit)
     return $query->get();
 }
 ```
@@ -305,14 +357,24 @@ use Sushi\Sushi;
 class Comune extends Model
 {
     use Sushi;
+<<<<<<< HEAD
     
     public $timestamps = false;
     
+=======
+
+    public $timestamps = false;
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Durata della cache in secondi (1 settimana)
      */
     protected const CACHE_TTL = 604800;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Definisce le colonne del modello
      */
@@ -322,7 +384,11 @@ class Comune extends Model
         'cap' => 'array',
         'popolazione' => 'integer',
     ];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Ottiene i dati dal file JSON con caching
      */
@@ -330,16 +396,28 @@ class Comune extends Model
     {
         $path = module_path('Geo', 'resources/json/comuni.json');
         $cacheKey = 'geo_comuni_json_' . md5($path);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 4b6b99016 (first commit)
         return Cache::rememberForever($cacheKey, function () use ($path) {
             return json_decode(file_get_contents($path), true);
         });
     }
+<<<<<<< HEAD
     
     // Scopes Eloquent per query comuni
     
     // + implementazione dei metodi attuali per compatibilità
     
+=======
+
+    // Scopes Eloquent per query comuni
+
+    // + implementazione dei metodi attuali per compatibilità
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Pulisce tutta la cache
      */

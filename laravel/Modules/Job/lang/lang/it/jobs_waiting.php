@@ -6,6 +6,7 @@ return [
     'fields' => [
         'status' => [
             'label' => 'status',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -52,4 +53,23 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+        'display_name' => [
+            'label' => 'display_name',
+        ],
+        'queue' => [
+            'label' => 'queue',
+        ],
+        'attempts' => [
+            'label' => 'attempts',
+        ],
+        'reserved_at' => [
+            'label' => 'reserved_at',
+        ],
+        'created_at' => [
+            'label' => 'created_at',
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

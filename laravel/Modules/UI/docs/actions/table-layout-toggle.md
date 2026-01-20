@@ -50,7 +50,11 @@ class MyListRecords extends ListRecords
 4. Mantenere la persistenza dello stato
 
 ## Collegamenti alla Documentazione
+<<<<<<< HEAD
 - [Risoluzione Conflitti UI](../conflitti_merge_risolti.md): Documentazione dei conflitti risolti
+=======
+- [Risoluzione Conflitti UI](../CONFLITTI_MERGE_RISOLTI.md): Documentazione dei conflitti risolti
+>>>>>>> 4b6b99016 (first commit)
 - [Test di Risoluzione Conflitti](../test_conflicts_resolution.md): Test automatici che verificano la corretta risoluzione
 
 [Torna alla documentazione UI](/docs/modules/module_ui.md#actions)
@@ -106,7 +110,11 @@ class MyListRecords extends ListRecords
 4. Mantenere la persistenza dello stato
 
 ## Collegamenti alla Documentazione
+<<<<<<< HEAD
 - [Risoluzione Conflitti UI](../conflitti_merge_risolti.md): Documentazione dei conflitti risolti
+=======
+- [Risoluzione Conflitti UI](../CONFLITTI_MERGE_RISOLTI.md): Documentazione dei conflitti risolti
+>>>>>>> 4b6b99016 (first commit)
 - [Test di Risoluzione Conflitti](../test_conflicts_resolution.md): Test automatici che verificano la corretta risoluzione
 
 [Torna alla documentazione UI](/docs/modules/module_ui.md#actions)

@@ -5,8 +5,13 @@ declare(strict_types=1);
 return [
     'sections' => [
         'empty' => [
+<<<<<<< HEAD
             'label' => 'Vuoto',
             'heading' => 'Nessun Dato',
+=======
+            'label' => '',
+            'heading' => '',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -26,6 +31,7 @@ return [
             'tooltip' => 'il-mio-profilo',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Main Dashboard',
     'plural_label' => 'Main Dashboard (Plurale)',
     'navigation' => [
@@ -59,4 +65,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

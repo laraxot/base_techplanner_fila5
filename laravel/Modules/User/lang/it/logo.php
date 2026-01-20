@@ -9,21 +9,30 @@ return [
             'placeholder' => 'logo',
             'helper_text' => 'logo',
             'description' => 'logo',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'logo_dark' => [
             'label' => 'logo_dark',
             'placeholder' => 'logo_dark',
             'helper_text' => 'logo_dark',
             'description' => 'logo_dark',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'logo_height' => [
             'label' => 'logo_height',
             'placeholder' => 'logo_height',
             'helper_text' => 'logo_height',
             'description' => 'logo_height',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -44,6 +53,11 @@ return [
         'sort' => 10,
         'icon' => 'heroicon-o-photo',
     ],
+<<<<<<< HEAD
     'label' => 'Logo',
     'plural_label' => 'Logo (Plurale)',
+=======
+    'label' => '',
+    'plural_label' => '',
+>>>>>>> 4b6b99016 (first commit)
 ];

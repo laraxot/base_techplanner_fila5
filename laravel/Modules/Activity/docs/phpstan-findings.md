@@ -1,5 +1,9 @@
 # PHPStan Findings - Activity Module
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-10-10
+>>>>>>> 4b6b99016 (first commit)
 **Livello**: MAX (9)
 **Status**: ✅ MODELS CORRETTI
 
@@ -84,4 +88,8 @@ Rimuovere @mixin per classi IdeHelper* generate da ide-helper package (non esist
 
 ---
 
+<<<<<<< HEAD
 **Aggiornato**: [DATE]T10:54:56+02:00
+=======
+**Aggiornato**: 2025-10-10T10:54:56+02:00
+>>>>>>> 4b6b99016 (first commit)

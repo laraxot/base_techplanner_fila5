@@ -6,6 +6,10 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\TeamPermissionFactory;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -32,6 +36,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
+<<<<<<< HEAD
+=======
+ * @method static TeamPermissionFactory factory($count = null, $state = [])
+ *
+>>>>>>> 4b6b99016 (first commit)
  * @mixin \Eloquent
  */
 class TeamPermission extends BaseModel

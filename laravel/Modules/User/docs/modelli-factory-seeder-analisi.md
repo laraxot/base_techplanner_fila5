@@ -183,9 +183,16 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 
 ### Moduli Collegati
 - [<nome progetto> Module](../../<nome progetto>/project_docs/modelli_factory_seeder_analisi.md)
+<<<<<<< HEAD
 - [Tenant Module](../../tenant/project_docs/modelli_factory_seeder_analisi.md)
 - [Notify Module](../../notify/project_docs/modelli_factory_seeder_analisi.md)
 
+=======
+- [Tenant Module](../../Tenant/project_docs/modelli_factory_seeder_analisi.md)
+- [Notify Module](../../Notify/project_docs/modelli_factory_seeder_analisi.md)
+
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)
 *Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*
 # Analisi Modelli, Factory e Seeder - Modulo User
 
@@ -372,7 +379,14 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 
 ### Moduli Collegati
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md)
+<<<<<<< HEAD
 - [Tenant Module](../../tenant/docs/modelli_factory_seeder_analisi.md)
 - [Notify Module](../../notify/docs/modelli_factory_seeder_analisi.md)
 
+=======
+- [Tenant Module](../../Tenant/docs/modelli_factory_seeder_analisi.md)
+- [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md)
+
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)
 *Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*

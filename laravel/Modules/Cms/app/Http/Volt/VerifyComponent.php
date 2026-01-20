@@ -13,7 +13,11 @@ use Webmozart\Assert\Assert;
 /**
  * Summary of VerifyComponent.
  *
+<<<<<<< HEAD
  * @see https://github.com/thedevdojo/genesis/blob/main/stubs/class/resources/views/auth/verify.blade.php
+=======
+ * @see https://github.com/thedevdojo/genesis/blob/main/stubs/class/resources/views/pages/auth/verify.blade.php
+>>>>>>> 4b6b99016 (first commit)
  */
 class VerifyComponent extends Component
 {

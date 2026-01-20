@@ -19,7 +19,11 @@ return [
                 'name' => 'Mappa',
                 'group' => 'Geo',
                 'sort' => 10,
+<<<<<<< HEAD
                 'icon' => 'ui-geo-map',
+=======
+                'icon' => 'ui-geo-map', // Questo è già corretto
+>>>>>>> 4b6b99016 (first commit)
                 'badge' => [
                     'color' => 'info',
                     'label' => 'Interattiva',
@@ -44,7 +48,11 @@ return [
                 'name' => 'Posizioni',
                 'group' => 'Geo',
                 'sort' => 20,
+<<<<<<< HEAD
                 'icon' => 'ui-geo-location',
+=======
+                'icon' => 'ui-geo-location', // Questo è già corretto
+>>>>>>> 4b6b99016 (first commit)
                 'badge' => [
                     'color' => 'warning',
                     'label' => 'Da Verificare',
@@ -102,6 +110,7 @@ return [
             'date_range' => 'Periodo',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Geo',
     'plural_label' => 'Geo (Plurale)',
     'fields' => [
@@ -135,4 +144,6 @@ return [
             'label' => 'Elimina Geo',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

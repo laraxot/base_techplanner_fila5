@@ -8,36 +8,52 @@ return [
             'label' => 'Lingua',
             'placeholder' => 'Seleziona la lingua',
             'helper_text' => 'Lingua attualmente selezionata per l\'interfaccia',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'available_languages' => [
             'label' => 'Lingue Disponibili',
             'placeholder' => 'Elenco lingue disponibili',
             'helper_text' => 'Lingue disponibili per la selezione nell\'interfaccia',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'value' => [
             'label' => 'Valore',
             'placeholder' => 'Inserisci il valore',
             'helper_text' => 'Valore della traduzione',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'key' => [
             'label' => 'Chiave',
             'placeholder' => 'Inserisci la chiave di traduzione',
             'helper_text' => 'Chiave identificativa per la traduzione',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'locale' => [
             'label' => 'Locale',
             'placeholder' => 'Seleziona il locale',
+<<<<<<< HEAD
             'helper_text' => 'Codice locale della lingua (es. it, en, de]',
             'tooltip' => '',
             'description' => '',
+=======
+            'helper_text' => 'Codice locale della lingua (es. it, en, de)',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -105,6 +121,9 @@ return [
         'heading' => 'Servizio Lingue',
         'description' => 'Gestisci le traduzioni e le lingue disponibili nel sistema',
     ],
+<<<<<<< HEAD
     'label' => 'Lang Service',
     'plural_label' => 'Lang Service (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

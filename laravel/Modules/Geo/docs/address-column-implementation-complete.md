@@ -1,6 +1,10 @@
 # AddressColumn Implementation Complete
 
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+**Date**: 2025-12-12
+>>>>>>> 4b6b99016 (first commit)
 **Module**: Geo
 **Status**: ✅ **COMPLETED**
 

@@ -5,7 +5,10 @@ declare(strict_types=1);
 return [
     'login' => [
         'title' => 'Sign in to your account',
+<<<<<<< HEAD
         'back_to_home' => 'Back to home',
+=======
+>>>>>>> 4b6b99016 (first commit)
         'or' => 'or',
         'create_account' => 'create a new account',
         'forgot_password' => 'Forgot your password?',

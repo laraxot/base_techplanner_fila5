@@ -48,6 +48,12 @@
 - [Best Practices Performance](../../BEST-PRACTICES.md#performance)
 - [Performance Guidelines](../../performance/optimization.md)
 ## Collegamenti tra versioni di optimization.md
+<<<<<<< HEAD
 * [optimization.md](../../../xot/docs/roadmap/performance/optimization.md)
 * [optimization.md](../../../job/docs/optimization.md)
 * [optimization.md](../../../cms/docs/roadmap/performance/optimization.md)
+=======
+* [optimization.md](../../../Xot/docs/roadmap/performance/optimization.md)
+* [optimization.md](../../../Job/docs/optimization.md)
+* [optimization.md](../../../Cms/docs/roadmap/performance/optimization.md)
+>>>>>>> 4b6b99016 (first commit)

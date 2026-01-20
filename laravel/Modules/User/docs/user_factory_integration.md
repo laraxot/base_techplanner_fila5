@@ -340,6 +340,7 @@ public function test_bulk_sti_creation()
 ## Links to Documentation
 
 ### SaluteOra Module
+<<<<<<< HEAD
 - [UserFactory Improvements Analysis](../saluteora/docs/factories/userfactory-improvements-analysis.md)
 - [Model Architecture](../saluteora/docs/model-architecture.md)
 - [STI Implementation](../saluteora/docs/model-inheritance.md)
@@ -348,6 +349,16 @@ public function test_bulk_sti_creation()
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
 - [Traits Complete Guide](../user/docs/traits_complete_guide.md)
 - [Authentication Framework](../user/docs/authentication.md)
+=======
+- [UserFactory Improvements Analysis](../SaluteOra/docs/factories/UserFactory-improvements-analysis.md)
+- [Model Architecture](../SaluteOra/docs/model-architecture.md)
+- [STI Implementation](../SaluteOra/docs/model-inheritance.md)
+
+### User Module
+- [BaseUser Documentation](../User/docs/baseuser_conflicts.md)
+- [Traits Complete Guide](../User/docs/traits_complete_guide.md)
+- [Authentication Framework](../User/docs/authentication.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

@@ -17,6 +17,7 @@ return [
     'fields' => [
         'name' => [
             'label' => 'name',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -56,4 +57,23 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

@@ -45,6 +45,7 @@
     "laravel-docs": {
         "command": "npx",
         "args": ["-y", "@assistant-ui/mcp-docs-server"]
+<<<<<<< HEAD
     },
     "laravel-boost": {
       "command": "/var/www/_bases/base_quaeris_fila5_mono/bashscripts/mcp/laravel-boost-wrapper.sh",
@@ -52,6 +53,8 @@
       "env": {
         "LARAVEL_PROJECT_ROOT": "/var/www/_bases/base_quaeris_fila5_mono/laravel"
       }
+=======
+>>>>>>> 4b6b99016 (first commit)
     }
   }
 }

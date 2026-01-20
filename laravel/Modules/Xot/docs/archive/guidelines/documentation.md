@@ -103,7 +103,11 @@ Breve descrizione...
 [Configurazione](configuration.md)
 
 ## Utilizzo
+<<<<<<< HEAD
 [Guide all'uso](usage/readme.md)
+=======
+[Guide all'uso](usage/README.md)
+>>>>>>> 4b6b99016 (first commit)
 ```
 
 ## Manutenzione
@@ -159,13 +163,25 @@ php artisan api:generate
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Convenzioni di Codice](../conventions/readme.md)
 - [Architettura](../architecture/readme.md)
 - [Best Practices](../best-practices/readme.md)
+=======
+- [Convenzioni di Codice](../conventions/README.md)
+- [Architettura](../architecture/README.md)
+- [Best Practices](../best-practices/README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Markdown Guide](https://www.markdownguide.org)
 
 ## Collegamenti tra versioni di documentation.md
 * [documentation.md](docs/rules/documentation.md)
+<<<<<<< HEAD
 * [documentation.md](../../../xot/project_docs/documentation.md)
 * [documentation.md](../../../xot/project_docs/guidelines/documentation.md)
 * [documentation.md](../../../cms/project_docs/roadmap/features/documentation.md)
+=======
+* [documentation.md](../../../Xot/project_docs/documentation.md)
+* [documentation.md](../../../Xot/project_docs/guidelines/documentation.md)
+* [documentation.md](../../../Cms/project_docs/roadmap/features/documentation.md)
+>>>>>>> 4b6b99016 (first commit)

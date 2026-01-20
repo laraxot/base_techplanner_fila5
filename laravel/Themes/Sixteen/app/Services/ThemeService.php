@@ -4,12 +4,22 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Services;
 
+<<<<<<< HEAD
 /**
  * Servizio per la gestione del tema Sixteen.
  *
  * Questo servizio fornisce metodi per la gestione
  * delle configurazioni e funzionalità del tema.
  *
+=======
+use Themes\Sixteen\Services\MenuBuilder;
+/**
+ * Servizio per la gestione del tema Sixteen.
+ * 
+ * Questo servizio fornisce metodi per la gestione
+ * delle configurazioni e funzionalità del tema.
+ * 
+>>>>>>> 4b6b99016 (first commit)
  * Enhanced version integrating with the new Menu Builder System
  */
 class ThemeService
@@ -26,7 +36,12 @@ class ThemeService
 
     public function __construct(
         protected MenuBuilder $menuBuilder
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 4b6b99016 (first commit)
 
     /**
      * Ottiene il nome del tema.
@@ -73,6 +88,11 @@ class ThemeService
 
     /**
      * Inizializza le risorse del tema.
+<<<<<<< HEAD
+=======
+     *
+     * @return void
+>>>>>>> 4b6b99016 (first commit)
      */
     public function initialize(): void
     {
@@ -129,7 +149,11 @@ class ThemeService
             'implemented' => 26,
             'compliance_percentage' => 48,
             'critical_missing' => ['dropdown', 'pagination', 'spid_integration'],
+<<<<<<< HEAD
             'status' => 'in_development',
+=======
+            'status' => 'in_development'
+>>>>>>> 4b6b99016 (first commit)
         ];
     }
 
@@ -144,12 +168,20 @@ class ThemeService
     /**
      * Ottiene le configurazioni del tema.
      */
+<<<<<<< HEAD
     public function getConfig(?string $key = null, mixed $default = null): mixed
+=======
+    public function getConfig(string $key = null, mixed $default = null): mixed
+>>>>>>> 4b6b99016 (first commit)
     {
         if ($key === null) {
             return config('sixteen');
         }
 
+<<<<<<< HEAD
         return config('sixteen.'.$key, $default);
+=======
+        return config('sixteen.' . $key, $default);
+>>>>>>> 4b6b99016 (first commit)
     }
 }

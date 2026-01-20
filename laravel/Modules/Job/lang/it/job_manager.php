@@ -19,132 +19,187 @@ return [
             'label' => 'ID',
             'tooltip' => 'Identificativo unico del Job Manager',
             'placeholder' => 'ID del Manager',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome del Job Manager',
             'placeholder' => 'Inserisci nome',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Breve descrizione del job manager',
             'placeholder' => 'Descrizione del Job Manager',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'status' => [
             'label' => 'Stato',
             'tooltip' => 'Stato corrente del Job Manager',
             'placeholder' => 'Seleziona stato',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'type' => [
             'label' => 'Tipo',
             'tooltip' => 'Tipo di Job Manager',
             'placeholder' => 'Seleziona tipo',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'priority' => [
             'label' => 'Priorità',
             'tooltip' => 'Priorità di esecuzione del job manager',
             'placeholder' => 'Seleziona priorità',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'max_attempts' => [
             'label' => 'Tentativi Massimi',
             'tooltip' => 'Numero massimo di tentativi per eseguire il job manager',
             'placeholder' => 'Tentativi massimi',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'timeout' => [
             'label' => 'Timeout',
             'tooltip' => 'Tempo massimo per l\'esecuzione del job manager',
             'placeholder' => 'Timeout',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => 'Creato il',
             'tooltip' => 'Data di creazione del Job Manager',
             'placeholder' => 'Data di creazione',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'updated_at' => [
             'label' => 'Aggiornato il',
             'tooltip' => 'Data dell\'ultimo aggiornamento',
             'placeholder' => 'Data aggiornamento',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'last_run' => [
             'label' => 'Ultima Esecuzione',
             'tooltip' => 'Data e ora dell\'ultima esecuzione',
             'placeholder' => 'Ultima esecuzione',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'next_run' => [
             'label' => 'Prossima Esecuzione',
             'tooltip' => 'Data e ora della prossima esecuzione',
             'placeholder' => 'Prossima esecuzione',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'cron_expression' => [
             'label' => 'Espressione Cron',
             'tooltip' => 'Espressione cron per la pianificazione del job',
             'placeholder' => 'Inserisci espressione cron',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'output' => [
             'label' => 'Output',
             'tooltip' => 'Output dell\'esecuzione del job',
             'placeholder' => 'Output',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'error' => [
             'label' => 'Errore',
             'tooltip' => 'Messaggio di errore se il job fallisce',
             'placeholder' => 'Errore',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Guard a cui è associato il Job Manager',
             'placeholder' => 'Seleziona Guard',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'permissions' => [
             'label' => 'Permessi',
             'tooltip' => 'Permessi associati al Job Manager',
             'placeholder' => 'Seleziona permessi',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome dell\'utente associato',
             'placeholder' => 'Inserisci nome',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'last_name' => [
             'label' => 'Cognome',
             'tooltip' => 'Cognome dell\'utente associato',
             'placeholder' => 'Inserisci cognome',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -177,6 +232,23 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -279,6 +351,9 @@ return [
         'high' => 'Alta',
         'urgent' => 'Urgente',
     ],
+<<<<<<< HEAD
     'label' => 'Job Manager',
     'plural_label' => 'Job Manager (Plurale)',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

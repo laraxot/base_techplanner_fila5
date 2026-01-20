@@ -1,5 +1,9 @@
 # Fix: Activity TestCase - Database Connection Configuration
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-22
+>>>>>>> 4b6b99016 (first commit)
 **Problema**: Test Activity falliscono con "Database connection [activity] not configured"
 **Principio**: Il sito funziona, quindi il test deve riflettere il comportamento reale
 

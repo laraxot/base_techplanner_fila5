@@ -22,6 +22,7 @@ return [
         'region_required_for_province' => 'You must select a region before choosing the province',
         'region_province_required_for_cap' => 'You must select region and province before choosing the postal code',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -35,4 +36,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

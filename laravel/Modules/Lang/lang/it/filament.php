@@ -34,6 +34,7 @@ return [
             'icon' => 'heroicon-o-arrows-up-down',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Filament',
     'plural_label' => 'Filament (Plurale)',
     'navigation' => [
@@ -78,4 +79,6 @@ return [
             'label' => 'Elimina Filament',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

@@ -7,6 +7,7 @@ return [
     'next_month' => 'Next month',
     'today' => 'Today',
     'months' => [
+<<<<<<< HEAD
         0 => 'January',
         1 => 'February',
         2 => 'March',
@@ -51,4 +52,29 @@ return [
     ],
     'actions' => [
     ],
+=======
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December',
+    ],
+    'weekdays' => [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+    ],
+    'weekdays_short' => ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+>>>>>>> 4b6b99016 (first commit)
 ];

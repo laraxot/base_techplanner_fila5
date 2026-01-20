@@ -1,6 +1,10 @@
 # Pulizia e Ottimizzazione Codice TechPlanner
 
 **Data:** 2025-02-03
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento:** 22:21
+>>>>>>> 4b6b99016 (first commit)
 
 ## Modifiche Implementate
 

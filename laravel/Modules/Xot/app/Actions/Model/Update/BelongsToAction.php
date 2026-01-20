@@ -34,7 +34,10 @@ class BelongsToAction
          */
 
         if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
+<<<<<<< HEAD
             /** @phpstan-ignore-next-line argument.unresolvableType */
+=======
+>>>>>>> 4b6b99016 (first commit)
             $related_id = Arr::first($relationDTO->data);
             if ($related_id === null) {
                 return;

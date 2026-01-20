@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -41,6 +42,20 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'user_id' => [
+            'label' => '用户',
+        ],
+        'team_id' => [
+            'label' => '团队',
+        ],
+        'role' => [
+            'label' => '角色',
+        ],
+        'joined_at' => [
+            'label' => '加入时间',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [

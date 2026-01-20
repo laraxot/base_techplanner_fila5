@@ -219,8 +219,13 @@ app/Policies/OauthClientPolicy.php
 ## 🔗 Collegamenti
 
 - [passport.md](./passport.md) - Documentazione completa Passport
+<<<<<<< HEAD
 - [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia modulo User
 - [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md) - Business logic approfondita
+=======
+- [FILOSOFIA_MODULO_USER.md](./FILOSOFIA_MODULO_USER.md) - Filosofia modulo User
+- [BUSINESS_LOGIC_DEEP_DIVE.md](./BUSINESS_LOGIC_DEEP_DIVE.md) - Business logic approfondita
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

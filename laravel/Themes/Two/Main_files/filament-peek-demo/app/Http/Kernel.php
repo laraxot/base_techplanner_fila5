@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+<<<<<<< HEAD
 use App\Http\Middleware\Authenticate;
 use App\Http\Middleware\EncryptCookies;
 use App\Http\Middleware\PreventRequestsDuringMaintenance;
@@ -26,6 +27,32 @@ use Illuminate\Routing\Middleware\ThrottleRequests;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+=======
+use App\Http\Middleware\TrustProxies;
+use Illuminate\Http\Middleware\HandleCors;
+use App\Http\Middleware\PreventRequestsDuringMaintenance;
+use Illuminate\Foundation\Http\Middleware\ValidatePostSize;
+use App\Http\Middleware\TrimStrings;
+use Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull;
+use App\Http\Middleware\EncryptCookies;
+use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
+use Illuminate\Session\Middleware\StartSession;
+use Illuminate\View\Middleware\ShareErrorsFromSession;
+use App\Http\Middleware\VerifyCsrfToken;
+use Illuminate\Routing\Middleware\SubstituteBindings;
+use Illuminate\Routing\Middleware\ThrottleRequests;
+use App\Http\Middleware\Authenticate;
+use Illuminate\Auth\Middleware\AuthenticateWithBasicAuth;
+use Illuminate\Session\Middleware\AuthenticateSession;
+use Illuminate\Http\Middleware\SetCacheHeaders;
+use Illuminate\Auth\Middleware\Authorize;
+use App\Http\Middleware\RedirectIfAuthenticated;
+use Illuminate\Auth\Middleware\RequirePassword;
+use Illuminate\Foundation\Http\Middleware\HandlePrecognitiveRequests;
+use App\Http\Middleware\ValidateSignature;
+use Illuminate\Auth\Middleware\EnsureEmailIsVerified;
+use Illuminate\Foundation\Http\Kernel as HttpKernel;
+>>>>>>> 4b6b99016 (first commit)
 
 class Kernel extends HttpKernel
 {

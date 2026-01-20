@@ -283,11 +283,19 @@ protected function getInfolistSchema()
 
 ## Note di Manutenzione
 
+<<<<<<< HEAD
 - **Data Creazione**: [DATE]
 - **Motivazione**: Documentazione della risoluzione dell'errore FatalError in ViewLocation
 - **Autore**: AI Assistant
 - **Stato**: Completato e verificato
 - **Ultimo Aggiornamento**: [DATE]
+=======
+- **Data Creazione**: 2025-01-06
+- **Motivazione**: Documentazione della risoluzione dell'errore FatalError in ViewLocation
+- **Autore**: AI Assistant
+- **Stato**: Completato e verificato
+- **Ultimo Aggiornamento**: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

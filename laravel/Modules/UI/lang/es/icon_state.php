@@ -10,7 +10,10 @@ return [
             'help' => 'Nombre identificativo del elemento',
             'description' => 'Nombre del objeto',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'edit-name' => [
             'label' => 'Editar nombre',
@@ -18,7 +21,10 @@ return [
             'help' => 'Modificar el nombre existente',
             'description' => 'Acción para modificar el nombre',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'change-state' => [
             'label' => 'Cambiar estado',
@@ -26,7 +32,10 @@ return [
             'help' => 'Modificar el estado actual',
             'description' => 'Acción para cambiar el estado',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'state' => [
             'label' => 'Estado',
@@ -34,7 +43,10 @@ return [
             'help' => 'Estado actual del elemento',
             'description' => 'Condición actual del sistema',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'message' => [
             'label' => 'Mensaje',
@@ -42,7 +54,10 @@ return [
             'help' => 'Mensaje informativo',
             'description' => 'Texto del mensaje',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'messages' => [
@@ -56,6 +71,7 @@ return [
             'title' => 'Error en la transición',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -67,4 +83,6 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

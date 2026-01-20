@@ -1,5 +1,9 @@
 # PHPStan MAX Level Findings - Xot Module
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-10-10
+>>>>>>> 4b6b99016 (first commit)
 **Livello**: MAX (9)
 **Modulo**: Xot
 

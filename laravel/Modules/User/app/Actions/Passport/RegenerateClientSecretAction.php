@@ -15,12 +15,15 @@ class RegenerateClientSecretAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     public function __construct(
         private readonly OauthClient $oauthClientModel,
         private readonly Str $stringHelper,
     ) {
     }
 
+=======
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Rigenera il secret di un client OAuth2.
      *
@@ -31,10 +34,17 @@ class RegenerateClientSecretAction
     public function execute(OauthClient|string $client): string
     {
         if (is_string($client)) {
+<<<<<<< HEAD
             $client = $this->oauthClientModel->findOrFail($client);
         }
 
         $newSecret = $this->stringHelper->random(40);
+=======
+            $client = OauthClient::findOrFail($client);
+        }
+
+        $newSecret = Str::random(40);
+>>>>>>> 4b6b99016 (first commit)
         $client->secret = $newSecret;
         $client->save();
 

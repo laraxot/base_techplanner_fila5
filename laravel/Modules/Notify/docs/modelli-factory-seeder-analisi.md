@@ -260,9 +260,15 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 
 ### Moduli Collegati
 - [ Module](../../<nome modulo>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+<<<<<<< HEAD
 - [User Module](../../user/docs/modelli_factory_seeder_analisi.md) - Notifiche utente
 - [Media Module](../../media/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
 - [Lang Module](../../lang/docs/modelli_factory_seeder_analisi.md) - Localizzazione
+=======
+- [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Notifiche utente
+- [Media Module](../../Media/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
+- [Lang Module](../../Lang/docs/modelli_factory_seeder_analisi.md) - Localizzazione
+>>>>>>> 4b6b99016 (first commit)
 
 ### Servizi Esterni
 - [Mailgun](https://www.mailgun.com/) - Email delivery service
@@ -270,6 +276,10 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Twilio](https://www.twilio.com/) - SMS service
 - [Firebase](https://firebase.google.com/) - Push notifications
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)
 *Analisi completa di 10 modelli attivi, 4 file backup da rimuovere*
 *Sistema notifiche multi-canale completo*
 # Analisi Modelli, Factory e Seeder - Modulo Notify
@@ -536,9 +546,15 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 ### Moduli Collegati
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+<<<<<<< HEAD
 - [User Module](../../user/docs/modelli_factory_seeder_analisi.md) - Notifiche utente
 - [Media Module](../../media/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
 - [Lang Module](../../lang/docs/modelli_factory_seeder_analisi.md) - Localizzazione
+=======
+- [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Notifiche utente
+- [Media Module](../../Media/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
+- [Lang Module](../../Lang/docs/modelli_factory_seeder_analisi.md) - Localizzazione
+>>>>>>> 4b6b99016 (first commit)
 
 ### Servizi Esterni
 - [Mailgun](https://www.mailgun.com/) - Email delivery service
@@ -546,5 +562,9 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Twilio](https://www.twilio.com/) - SMS service
 - [Firebase](https://firebase.google.com/) - Push notifications
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)
 *Analisi completa di 10 modelli attivi, 4 file backup da rimuovere*
 *Sistema notifiche multi-canale completo*

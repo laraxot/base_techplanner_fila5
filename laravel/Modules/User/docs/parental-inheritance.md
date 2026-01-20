@@ -322,3 +322,7 @@ $typeValue = is_object($user->type) && method_exists($user->type, 'value')
 - [Modulo User - Architettura Base](./user-architecture.md)
 - [<nome progetto> - Implementazione STI](../../<nome progetto>/docs/user-types.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> 4b6b99016 (first commit)

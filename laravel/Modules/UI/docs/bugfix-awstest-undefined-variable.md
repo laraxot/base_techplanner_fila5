@@ -126,4 +126,8 @@ Ogni metodo di test implementa:
 5. **User Feedback**: Notifiche chiare per successo/errore
 6. **Documentazione**: File markdown nella cartella docs del modulo
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)
 *Errore risolto: ErrorException Undefined variable $results*

@@ -9,20 +9,27 @@ return [
             'placeholder' => 'email',
             'helper_text' => '',
             'description' => 'email',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'password' => [
             'label' => 'password',
             'placeholder' => 'password',
             'helper_text' => '',
             'description' => 'password',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'password_confirmation' => [
             'label' => 'password_confirmation',
             'placeholder' => 'password_confirmation',
             'helper_text' => '',
             'description' => 'password_confirmation',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -37,4 +44,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

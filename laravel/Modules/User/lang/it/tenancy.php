@@ -8,6 +8,7 @@ return [
         'edit' => 'Modifica dati negozio',
     ],
     'fields' => [
+<<<<<<< HEAD
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -26,12 +27,22 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        'name' => 'Nome',
+        'phone' => 'Telefono',
+        'email' => 'Email',
+>>>>>>> 4b6b99016 (first commit)
     ],
     'actions' => [
         'register_tenant' => [
             'label' => 'Aggiungi Studio',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Tenancy',
     'plural_label' => 'Tenancy (Plurale)',
+=======
+    'label' => '',
+    'plural_label' => '',
+>>>>>>> 4b6b99016 (first commit)
 ];

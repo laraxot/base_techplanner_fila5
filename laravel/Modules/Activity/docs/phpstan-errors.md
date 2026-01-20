@@ -1,6 +1,10 @@
 # PHPStan Errors - Activity Module
 
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+**Date**: 2025-12-16
+>>>>>>> 4b6b99016 (first commit)
 **PHPStan Level**: 10
 **Total Errors in Module**: 2
 
@@ -164,5 +168,9 @@ trait HasEvents
 **Current**: 🟡 **2 errors** - Missing return types
 **Priority**: Medium - Easy fix, affects multiple models
 **Owner**: Activity Module Team
+<<<<<<< HEAD
 
+=======
+**Last Updated**: 2025-12-16
+>>>>>>> 4b6b99016 (first commit)
 **Fix Complexity**: ⭐ (Very Easy - Just add return types)

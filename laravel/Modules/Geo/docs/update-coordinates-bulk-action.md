@@ -1,5 +1,9 @@
 # UpdateCoordinatesBulkAction - Azione Riutilizzabile per Aggiornamento Coordinate
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-27
+>>>>>>> 4b6b99016 (first commit)
 **Modulo**: Geo
 **Status**: ✅ **IMPLEMENTATO**
 
@@ -154,8 +158,16 @@ public function getTableBulkActions(): array
 ## Collegamenti
 
 - [Filosofia Componenti Riutilizzabili](./reusable-components-philosophy.md)
+<<<<<<< HEAD
 - [Pattern QueueableActions](../../xot/docs/queueable-actions-pattern.md)
+=======
+- [Pattern QueueableActions](../../Xot/docs/queueable-actions-pattern.md)
+>>>>>>> 4b6b99016 (first commit)
 - [GetAddressDataFromFullAddressAction](./../app/Actions/GetAddressDataFromFullAddressAction.php)
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-27*
+>>>>>>> 4b6b99016 (first commit)

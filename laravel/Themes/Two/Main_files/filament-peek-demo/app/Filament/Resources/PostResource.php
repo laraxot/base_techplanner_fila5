@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+<<<<<<< HEAD
 use App\Filament\Fields\PostContent;
 use App\Filament\Fields\PostFooter;
 use App\Filament\Resources\PostResource\Pages\CreatePost;
@@ -27,6 +28,36 @@ use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+=======
+use Filament\Schemas\Schema;
+use Filament\Schemas\Components\Grid;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\DateTimePicker;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Toggle;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Components\Actions;
+use Filament\Forms\Components\FileUpload;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\EditAction;
+use Filament\Actions\DeleteAction;
+use Filament\Tables\Filters\SelectFilter;
+use Filament\Tables\Filters\TernaryFilter;
+use App\Filament\Resources\PostResource\Pages\ListPosts;
+use App\Filament\Resources\PostResource\Pages\CreatePost;
+use App\Filament\Resources\PostResource\Pages\EditPost;
+use App\Filament\Fields\PostContent;
+use App\Filament\Fields\PostFooter;
+use App\Filament\Resources\PostResource\Pages;
+use App\Models\Post;
+use Filament\Forms;
+use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+use Filament\Tables;
+use Filament\Tables\Table;
+use Illuminate\Support\Str;
+>>>>>>> 4b6b99016 (first commit)
 use Pboivin\FilamentPeek\Forms\Actions\InlinePreviewAction;
 use Pboivin\FilamentPeek\Tables\Actions\ListPreviewAction;
 
@@ -34,9 +65,15 @@ class PostResource extends Resource
 {
     protected static ?string $model = Post::class;
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-newspaper';
 
     protected static string|\UnitEnum|null $navigationGroup = 'Blog';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-newspaper';
+
+    protected static string | \UnitEnum | null $navigationGroup = 'Blog';
+>>>>>>> 4b6b99016 (first commit)
 
     public static function form(Schema $schema): Schema
     {

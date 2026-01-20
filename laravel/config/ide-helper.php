@@ -122,7 +122,11 @@ return [
     'include_helpers' => false,
 
     'helper_files' => [
+<<<<<<< HEAD
         base_path().'/vendor/laravel/framework/src/Illuminate/Support/helpers.php',
+=======
+        base_path() . '/vendor/laravel/framework/src/Illuminate/Support/helpers.php',
+>>>>>>> 4b6b99016 (first commit)
     ],
 
     /*

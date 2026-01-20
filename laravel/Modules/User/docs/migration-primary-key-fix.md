@@ -115,7 +115,11 @@ $this->tableCreate(static function (Blueprint $table): void {
 ## Collegamenti
 
 - [Teams Migration Compliance](./teams-migration-laraxot-compliance.md)
+<<<<<<< HEAD
 - [Migration Best Practices](../../xot/docs/migration-standards.md)
+=======
+- [Migration Best Practices](../../Xot/docs/migration-standards.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Primary Key Rules](../../../docs/development/migration_fixes_summary.md)
 
 ## Status
@@ -124,3 +128,7 @@ $this->tableCreate(static function (Blueprint $table): void {
 ✅ **Migrazione funzionante**
 ✅ **Documentazione aggiornata**
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-15*
+>>>>>>> 4b6b99016 (first commit)

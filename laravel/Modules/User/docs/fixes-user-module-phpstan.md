@@ -162,3 +162,7 @@ Gli errori rimanenti (94) sono principalmente:
 3. **Actions**: Usare proprietà readonly solo quando necessario e inizializzarle correttamente
 4. **Test**: Creare sempre test di validazione per le correzioni PHPStan
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: dicembre 2024*
+>>>>>>> 4b6b99016 (first commit)

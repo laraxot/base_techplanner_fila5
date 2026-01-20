@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'months' => [
+<<<<<<< HEAD
         0 => 'January',
         1 => 'February',
         2 => 'March',
@@ -16,6 +17,20 @@ return [
         9 => 'October',
         10 => 'November',
         11 => 'December',
+=======
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December',
+>>>>>>> 4b6b99016 (first commit)
     ],
     'days_short' => [
         'mon' => 'Mon',
@@ -45,10 +60,13 @@ return [
     ],
     'no_dates_available' => 'No dates available',
     'selected_date' => 'Selected date',
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

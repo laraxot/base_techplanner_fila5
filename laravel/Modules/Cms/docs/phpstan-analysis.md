@@ -1,5 +1,9 @@
 # PHPStan Analysis - Cms Module
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-10-10T12:40:18+02:00
+>>>>>>> 4b6b99016 (first commit)
 **Livello**: MAX (9)
 **Errori Totali**: 767
 

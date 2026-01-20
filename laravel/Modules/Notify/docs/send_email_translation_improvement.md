@@ -279,11 +279,19 @@ php -l Modules/Notify/lang/it/send_email.php
 
 ### Documentazione Correlata
 - [Regole Traduzioni Laraxot](../../../docs/translation-standards.md)
+<<<<<<< HEAD
 - [Best Practice Filament](../../../docs/filament-best-practices.md)
 - [Regole Traduzioni Laraxot](../../../project_docs/translation-standards.md)
 - [Best Practice Filament](../../../docs/filament-best-practices.md)- [Regole Traduzioni Laraxot](../../../project_docs/translation-standards.md)
 - [Best Practice Filament](../../../project_docs/filament-best-practices.md)
 - [Struttura Modulo Notify](./readme.md)
+=======
+- [Best Practice Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
+- [Regole Traduzioni Laraxot](../../../project_docs/translation-standards.md)
+- [Best Practice Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../project_docs/translation-standards.md)
+- [Best Practice Filament](../../../project_docs/FILAMENT-BEST-PRACTICES.md)
+- [Struttura Modulo Notify](./README.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### File Modificati
 - `laravel/Modules/Notify/lang/it/send_email.php` - File principale migliorato

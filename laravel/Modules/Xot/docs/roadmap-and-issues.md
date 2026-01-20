@@ -322,7 +322,11 @@ function xot_config(string $key): mixed
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [← Xot Module README](./readme.md)
+=======
+- [← Xot Module README](./README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [← Best Practices](./best-practices.md)
 - [← Troubleshooting](./troubleshooting.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)

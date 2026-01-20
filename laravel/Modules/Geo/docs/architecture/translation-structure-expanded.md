@@ -153,8 +153,13 @@ I file di traduzione non italiani (en, de) contengono testo italiano invece dell
 - [Principi DRY/KISS](/docs/dry-kiss-principles.md)
 
 ### Documentazione Moduli Correlati
+<<<<<<< HEAD
 - [User Module Translations](/modules/user/docs/translation-guidelines.md)
 - [<main module> Module Translations](/modules/<main module>/docs/multilingual-support.md)
+=======
+- [User Module Translations](/Modules/User/docs/translation-guidelines.md)
+- [<main module> Module Translations](/Modules/<main module>/docs/multilingual-support.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### File di Implementazione
 - `lang/it/location.php` - Template italiano (riferimento)
@@ -183,3 +188,7 @@ I file di traduzione non italiani (en, de) contengono testo italiano invece dell
 **Stato**: Implementazione in corso
 **Priorità**: Alta
 **Responsabile**: Sistema automatico DRY/KISS
+<<<<<<< HEAD
+=======
+**Data**: 2025-08-08
+>>>>>>> 4b6b99016 (first commit)

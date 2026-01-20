@@ -61,7 +61,10 @@ class Locality extends BaseModel
             ->get()
             ->map(static fn ($row) => $row);
 
+<<<<<<< HEAD
         /* @var array<int, array<string, mixed>> */
+=======
+>>>>>>> 4b6b99016 (first commit)
         return $rows->toArray();
     }
 

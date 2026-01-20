@@ -10,6 +10,10 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Foundation\Auth\Access\Authorizable;
 use Illuminate\Support\Carbon;
 use Laravel\Passport\Client as PassportClient;
+<<<<<<< HEAD
+=======
+use Laravel\Passport\Database\Factories\ClientFactory;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Xot\Contracts\UserContract;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
 use Spatie\Permission\Traits\HasRoles;
@@ -37,9 +41,14 @@ use Spatie\Permission\Traits\HasRoles;
  * @property int|null                                 $tokens_count
  * @property UserContract|null                        $user
  * @property \Illuminate\Database\Eloquent\Model|null $owner
+<<<<<<< HEAD
  * @property string|null                              $updated_by
  * @property string|null                              $created_by
  *
+=======
+ *
+ * @method static ClientFactory       factory($count = null, $state = [])
+>>>>>>> 4b6b99016 (first commit)
  * @method static Builder|OauthClient newModelQuery()
  * @method static Builder|OauthClient newQuery()
  * @method static Builder|OauthClient query()
@@ -54,9 +63,20 @@ use Spatie\Permission\Traits\HasRoles;
  * @method static Builder|OauthClient whereSecret($value)
  * @method static Builder|OauthClient whereUpdatedAt($value)
  * @method static Builder|OauthClient whereUserId($value)
+<<<<<<< HEAD
  * @method static Builder|OauthClient whereCreatedBy($value)
  * @method static Builder|OauthClient whereUpdatedBy($value)
  *
+=======
+ *
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ *
+ * @method static Builder|OauthClient whereCreatedBy($value)
+ * @method static Builder|OauthClient whereUpdatedBy($value)
+ *
+ * @mixin IdeHelperOauthClient
+>>>>>>> 4b6b99016 (first commit)
  * @mixin \Eloquent
  */
 class OauthClient extends PassportClient implements AuthorizableContract
@@ -71,7 +91,10 @@ class OauthClient extends PassportClient implements AuthorizableContract
      * @var string
      */
     public $guard_name = 'api';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4b6b99016 (first commit)
     /** @var string */
     protected $connection = 'user';
 
@@ -137,6 +160,14 @@ class OauthClient extends PassportClient implements AuthorizableContract
      *
      * @param iterable<string> $permissions
      */
+<<<<<<< HEAD
+=======
+    /**
+     * Check if client has any of the given permissions.
+     *
+     * @param iterable<string> $permissions
+     */
+>>>>>>> 4b6b99016 (first commit)
     private function hasAnyPermission(iterable $permissions): bool
     {
         /** @var iterable<string> $permissions */

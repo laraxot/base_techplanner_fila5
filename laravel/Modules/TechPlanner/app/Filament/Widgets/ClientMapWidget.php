@@ -7,6 +7,10 @@ namespace Modules\TechPlanner\Filament\Widgets;
 use Filament\Schemas\Components\Component;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
+=======
+use Livewire\Attributes\Reactive;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\TechPlanner\Filament\Resources\ClientResource;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Override;

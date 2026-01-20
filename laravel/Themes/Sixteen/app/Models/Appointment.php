@@ -2,11 +2,17 @@
 
 namespace Themes\Sixteen\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+=======
+use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
+use Illuminate\Database\Eloquent\Relations\{BelongsTo, MorphTo};
+use Illuminate\Database\Eloquent\Casts\{Attribute, AsArrayObject};
+>>>>>>> 4b6b99016 (first commit)
 
 /**
  * Modello Appuntamento - Gestione prenotazioni servizi comunali
@@ -49,6 +55,7 @@ class Appointment extends Model
      * Stati appuntamento conformi AGID
      */
     const STATUS_PENDING = 'pending';      // In attesa di conferma
+<<<<<<< HEAD
 
     const STATUS_CONFIRMED = 'confirmed';  // Confermato
 
@@ -56,12 +63,18 @@ class Appointment extends Model
 
     const STATUS_CANCELLED = 'cancelled';  // Cancellato
 
+=======
+    const STATUS_CONFIRMED = 'confirmed';  // Confermato
+    const STATUS_COMPLETED = 'completed';  // Completato
+    const STATUS_CANCELLED = 'cancelled';  // Cancellato
+>>>>>>> 4b6b99016 (first commit)
     const STATUS_NO_SHOW = 'no_show';      // Non presentato
 
     /**
      * Tipi di servizio supportati
      */
     const SERVICE_ANAGRAFE = 'anagrafe';
+<<<<<<< HEAD
 
     const SERVICE_TRIBUTI = 'tributi';
 
@@ -69,6 +82,11 @@ class Appointment extends Model
 
     const SERVICE_URP = 'urp';
 
+=======
+    const SERVICE_TRIBUTI = 'tributi';
+    const SERVICE_SUAP = 'suap';
+    const SERVICE_URP = 'urp';
+>>>>>>> 4b6b99016 (first commit)
     const SERVICE_OTHER = 'other';
 
     /**
@@ -109,7 +127,11 @@ class Appointment extends Model
     public function scopeUpcoming($query)
     {
         return $query->where('appointment_date', '>=', now()->toDateString())
+<<<<<<< HEAD
             ->where('status', self::STATUS_CONFIRMED);
+=======
+                    ->where('status', self::STATUS_CONFIRMED);
+>>>>>>> 4b6b99016 (first commit)
     }
 
     /**
@@ -160,7 +182,11 @@ class Appointment extends Model
     protected function timeSlot(): Attribute
     {
         return Attribute::make(
+<<<<<<< HEAD
             get: fn () => $this->start_time->format('H:i').' - '.$this->end_time->format('H:i')
+=======
+            get: fn () => $this->start_time->format('H:i') . ' - ' . $this->end_time->format('H:i')
+>>>>>>> 4b6b99016 (first commit)
         );
     }
 
@@ -179,7 +205,11 @@ class Appointment extends Model
      */
     public function needsReminder(): bool
     {
+<<<<<<< HEAD
         return ! $this->reminder_sent
+=======
+        return !$this->reminder_sent 
+>>>>>>> 4b6b99016 (first commit)
             && $this->status === self::STATUS_CONFIRMED
             && $this->appointment_date->isTomorrow()
             && now()->hour < 18; // Invio solo prima delle 18
@@ -230,4 +260,8 @@ class Appointment extends Model
             self::SERVICE_OTHER => 'Altro',
         ];
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4b6b99016 (first commit)

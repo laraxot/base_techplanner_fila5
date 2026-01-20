@@ -11,6 +11,7 @@
 ## Collegamenti ai Moduli
 
 ### Moduli con Traduzioni
+<<<<<<< HEAD
 - [Modulo Patient](../../patient/docs/translations.md) - Traduzioni per il modulo paziente
 - [Modulo User](../../user/docs/translations.md) - Traduzioni per la gestione utenti
 - [Modulo UI](../../ui/docs/translations.md) - Traduzioni per i componenti UI
@@ -27,6 +28,24 @@
 
 ### Regole Generali
 - [Regole Traduzioni](../../xot/docs/translations.md) - Documentazione base sulle traduzioni
+=======
+- [Modulo Patient](../../Patient/docs/translations.md) - Traduzioni per il modulo paziente
+- [Modulo User](../../User/docs/translations.md) - Traduzioni per la gestione utenti
+- [Modulo UI](../../UI/docs/translations.md) - Traduzioni per i componenti UI
+- [Modulo Cms](../../Cms/docs/translations.md) - Traduzioni per il CMS
+- [Modulo Media](../../Media/docs/translations.md) - Traduzioni per la gestione media
+- [Modulo Dental](../../Dental/docs/translations.md) - Traduzioni per il modulo dentale
+- [Modulo Activity](../../Activity/docs/translations.md) - Traduzioni per le attività
+- [Modulo Chart](../../Chart/docs/translations.md) - Traduzioni per i grafici
+- [Modulo Gdpr](../../Gdpr/docs/translations.md) - Traduzioni per la privacy
+- [Modulo Job](../../Job/docs/translations.md) - Traduzioni per i job
+- [Modulo Notify](../../Notify/docs/translations.md) - Traduzioni per le notifiche
+- [Modulo Reporting](../../Reporting/docs/translations.md) - Traduzioni per i report
+- [Modulo Tenant](../../Tenant/docs/translations.md) - Traduzioni per il multi-tenant
+
+### Regole Generali
+- [Regole Traduzioni](../../Xot/docs/translations.md) - Documentazione base sulle traduzioni
+>>>>>>> 4b6b99016 (first commit)
 - [Composer merge plugin](composer-merge-plugin.md) - Integrazione pacchetti locali
 
 ### Versione Incoming
@@ -286,8 +305,13 @@ public function testTranslations()
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Modulo Patient](../../patient/docs/translations.md) - Esempio di implementazione delle traduzioni
 - [Regole Generali Traduzioni](../../xot/docs/translations.md)
+=======
+- [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
+- [Regole Generali Traduzioni](../../Xot/docs/translations.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Esempi
 

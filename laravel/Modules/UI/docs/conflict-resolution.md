@@ -1,7 +1,11 @@
 # Git Conflict Resolution Audit
 
 ## Data
+<<<<<<< HEAD
 - [DATE]
+=======
+- 2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 ## File Coinvolti
 
@@ -38,3 +42,7 @@
 Tutte le verifiche hanno avuto esito positivo.
 
 ---
+<<<<<<< HEAD
+=======
+Ultimo aggiornamento: 2025-01-06
+>>>>>>> 4b6b99016 (first commit)

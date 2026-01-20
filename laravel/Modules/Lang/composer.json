@@ -1,5 +1,6 @@
 {
     "name": "laraxot/module_lang_fila3",
+<<<<<<< HEAD
     "description": "Internationalization and localization module for the Laraxot ecosystem: translations, languages, and locale management.",
     "keywords": [
         "laraxot",
@@ -12,6 +13,9 @@
         "translations",
         "localization"
     ],
+=======
+    "description": "",
+>>>>>>> 4b6b99016 (first commit)
     "license": "MIT",
     "homepage": "https://github.com/laraxot/module_lang_fila3.git",
     "authors": [
@@ -26,9 +30,13 @@
         "rinvex/countries": "^9.1",
         "spatie/laravel-sluggable": "*"
     },
+<<<<<<< HEAD
     "require-comment": {
         
     },
+=======
+    "repositories_comment": "Local path package (lara-zeus/spatie-translatable) moved to root composer.json for proper priority. DO NOT add Packagist here.",
+>>>>>>> 4b6b99016 (first commit)
     "repositories": [
         {
             "type": "path",
@@ -42,6 +50,7 @@
             "type": "path",
             "url": "../UI"
         }
+<<<<<<< HEAD
         
     ],
     "repositories-comment": [
@@ -54,6 +63,8 @@
             "url": "https://packagist.org",
             "canonical": false
         }
+=======
+>>>>>>> 4b6b99016 (first commit)
     ],
     "autoload": {
         "psr-4": {

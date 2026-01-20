@@ -80,8 +80,12 @@ class ImportCsvAction
         $excludedColumns = ['id'];
 
         return array_map(
+<<<<<<< HEAD
             function ($column) use ($conn, $tbl) {
                 /** @var string $column */
+=======
+            function (string $column) use ($conn, $tbl) {
+>>>>>>> 4b6b99016 (first commit)
                 $type = $conn->getColumnType($tbl, $column);
 
                 return new ColumnData(

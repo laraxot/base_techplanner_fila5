@@ -40,4 +40,7 @@ vendor/
 *.bakcup
 *.backup.*
 node_modules
+<<<<<<< HEAD
 *.*Zone.Identifier
+=======
+>>>>>>> 4b6b99016 (first commit)

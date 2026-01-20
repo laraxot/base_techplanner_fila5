@@ -18,27 +18,37 @@ return [
         'id' => [
             'label' => 'ID',
             'placeholder' => 'ID del contenuto pagina',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Nome del contenuto',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'slug' => [
             'label' => 'Slug',
             'placeholder' => 'Slug del contenuto pagina',
             'description' => 'slug',
             'helper_text' => 'slug',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'blocks' => [
             'label' => 'Blocchi',
             'placeholder' => 'Blocchi di contenuto',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -54,17 +64,29 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_by' => [
             'label' => 'Creato da',
             'placeholder' => 'Creato da',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'updated_by' => [
             'label' => 'Aggiornato da',
             'placeholder' => 'Aggiornato da',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -116,6 +138,32 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'view' => [
+            'label' => 'view',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -142,6 +190,9 @@ return [
     'model' => [
         'label' => 'page content.model',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

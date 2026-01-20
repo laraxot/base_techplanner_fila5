@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lang Module
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -169,6 +170,8 @@ php artisan lang:publish
 **Quality**: PHPStan Level 10
 
 *Traduzioni automatiche per tutto l'ecosistema: 3 lingue, auto-risoluzione, editor visuale in Filament.*
+=======
+>>>>>>> 4b6b99016 (first commit)
 # 🌍 Lang - Il SISTEMA di TRADUZIONI più POTENTE! 🗣️
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
@@ -647,7 +650,11 @@ php artisan test --filter=SyncTest
 ## 📚 Documentazione COMPLETA
 
 ### 🎯 **Guide Principali**
+<<<<<<< HEAD
 - [📖 Documentazione Completa](docs/readme.md)
+=======
+- [📖 Documentazione Completa](docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [🌍 Gestione Lingue](docs/languages.md)
 - [🤖 Auto-Translation](docs/auto-translate.md)
 - [📊 Analytics](docs/analytics.md)

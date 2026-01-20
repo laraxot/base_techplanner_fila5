@@ -1,5 +1,9 @@
 # Analisi Metodi Duplicati - Modulo Notify
 
+<<<<<<< HEAD
+=======
+**Data Generazione**: 2025-10-15 06:41:17
+>>>>>>> 4b6b99016 (first commit)
 **Totale Gruppi di Duplicati**: 
 
 ## Sommario Esecutivo

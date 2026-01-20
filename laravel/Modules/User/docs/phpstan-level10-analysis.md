@@ -244,7 +244,11 @@ These fixes are **local to User module** and won't affect other modules.
 
 - [BaseUser.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/app/Models/BaseUser.php) - Already fixed
 - [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php) - Fixed in Xot
+<<<<<<< HEAD
 - [Passport Documentation](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/modules/user/docs/passport.md)
+=======
+- [Passport Documentation](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/docs/passport.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

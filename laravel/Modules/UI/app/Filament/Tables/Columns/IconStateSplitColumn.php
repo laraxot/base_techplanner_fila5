@@ -141,7 +141,11 @@ final class IconStateSplitColumn extends Column
         try {
             $record = $this->getRecordForTransition($recordId);
             $state = $record->getAttribute('state');
+<<<<<<< HEAD
             if (! $state instanceof State) {
+=======
+            if (! ($state instanceof State)) {
+>>>>>>> 4b6b99016 (first commit)
                 throw new \Exception(__('ui::icon_state.messages.invalid_state_instance'));
             }
             $state->transitionTo($stateClass);
@@ -181,7 +185,11 @@ final class IconStateSplitColumn extends Column
             }
 
             $stateInstance = new $stateClassItem($record);
+<<<<<<< HEAD
             if (! $stateInstance instanceof StateContract) {
+=======
+            if (! ($stateInstance instanceof StateContract)) {
+>>>>>>> 4b6b99016 (first commit)
                 return null;
             }
 

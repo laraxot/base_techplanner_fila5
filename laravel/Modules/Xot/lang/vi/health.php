@@ -8,16 +8,27 @@ return [
             'buttons' => [
                 'refresh' => 'Làm mới',
             ],
+<<<<<<< HEAD
             'heading' => 'Tình trạng ứng dụng',
+=======
+
+            'heading' => 'Tình trạng ứng dụng',
+
+>>>>>>> 4b6b99016 (first commit)
             'navigation' => [
                 'group' => 'Cài đặt',
                 'label' => 'Tình trạng ứng dụng',
             ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)
             'notifications' => [
                 'check_results' => 'Kết quả được kiểm tra từ',
             ],
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -31,4 +42,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

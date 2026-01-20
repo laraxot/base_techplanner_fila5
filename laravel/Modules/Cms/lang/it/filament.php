@@ -36,7 +36,11 @@ return [
                         'fields' => [
                             'label' => 'Etichetta Link',
                             'url' => 'URL',
+<<<<<<< HEAD
                             'icon' => 'Icona (opzionale]',
+=======
+                            'icon' => 'Icona (opzionale)',
+>>>>>>> 4b6b99016 (first commit)
                         ],
                     ],
                 ],
@@ -83,6 +87,7 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Filament',
     'plural_label' => 'Filament (Plurale)',
     'navigation' => [
@@ -127,4 +132,6 @@ return [
             'label' => 'Elimina Filament',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

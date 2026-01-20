@@ -41,3 +41,7 @@ class EventServiceProvider extends ServiceProvider
         return false;
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)

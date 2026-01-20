@@ -311,11 +311,19 @@ Ho creato uno script intelligente (`smart_populate_models.php`) che:
 ## 🔗 Collegamenti Documentazione
 
 ### Documentazione Moduli
+<<<<<<< HEAD
 - [<nome progetto> Factory](../modules/<nome progetto>/docs/factory-issues-analysis.md)
 - [<nome progetto> Factory](../modules/<nome progetto>/docs/factory-issues-analysis.md)
 - [User Factory](../modules/user/docs/factory-audit-lessons-learned.md)
 - [Geo Factory](../modules/geo/docs/factory-creation-geo-module.md)
 - [Media Factory](../modules/media/docs/readme.md)
+=======
+- [<nome progetto> Factory](../Modules/<nome progetto>/docs/factory-issues-analysis.md)
+- [<nome progetto> Factory](../Modules/<nome progetto>/docs/factory-issues-analysis.md)
+- [User Factory](../Modules/User/docs/factory-audit-lessons-learned.md)
+- [Geo Factory](../Modules/Geo/docs/factory-creation-geo-module.md)
+- [Media Factory](../Modules/Media/docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### Documentazione Tecnica
 - [Business Logic](../business-logic-consolidated.md)
@@ -325,6 +333,10 @@ Ho creato uno script intelligente (`smart_populate_models.php`) che:
 
 ---
 
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento**: Gennaio 2025
+>>>>>>> 4b6b99016 (first commit)
 **Versione**: 2.0
 **Autore**: AI Assistant
 **Stato**: Consolidata e Completa

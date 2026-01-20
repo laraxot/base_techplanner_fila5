@@ -36,7 +36,11 @@ class AddressField extends Field
                 'zip' => null,
             ];
 
+<<<<<<< HEAD
             if (! $record instanceof Model) {
+=======
+            if (! ($record instanceof Model)) {
+>>>>>>> 4b6b99016 (first commit)
                 return;
             }
 

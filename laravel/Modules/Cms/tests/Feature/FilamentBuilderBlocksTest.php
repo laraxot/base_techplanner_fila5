@@ -109,7 +109,11 @@ describe('Filament Builder Blocks System', function () {
 
     test('block views follow theme pattern', function () {
         // Test with actual homepage JSON
+<<<<<<< HEAD
         $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
+=======
+        $homepageJsonPath = config_path('local/<nome progetto>/database/content/pages/home.json');
+>>>>>>> 4b6b99016 (first commit)
         if (! file_exists($homepageJsonPath)) {
             $this->assertTrue(true);
 
@@ -146,7 +150,11 @@ describe('Filament Builder Blocks System', function () {
     });
 
     test('json storage pattern is consistent', function () {
+<<<<<<< HEAD
         $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
+=======
+        $homepageJsonPath = config_path('local/<nome progetto>/database/content/pages/home.json');
+>>>>>>> 4b6b99016 (first commit)
         if (! file_exists($homepageJsonPath)) {
             $this->assertTrue(true);
 
@@ -215,7 +223,11 @@ describe('Filament Builder Blocks System', function () {
         $this->assertStringContainsString('slug="home"', $content);
 
         // Verify blocks are rendered
+<<<<<<< HEAD
         $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
+=======
+        $homepageJsonPath = config_path('local/<nome progetto>/database/content/pages/home.json');
+>>>>>>> 4b6b99016 (first commit)
         if (! file_exists($homepageJsonPath)) {
             $this->assertTrue(true);
 
@@ -249,7 +261,11 @@ describe('Filament Builder Blocks System', function () {
     });
 
     test('block data validation and security', function () {
+<<<<<<< HEAD
         $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
+=======
+        $homepageJsonPath = config_path('local/<nome progetto>/database/content/pages/home.json');
+>>>>>>> 4b6b99016 (first commit)
         if (! file_exists($homepageJsonPath)) {
             $this->assertTrue(true);
 
@@ -322,7 +338,11 @@ describe('Filament Builder Blocks System', function () {
 
     test('performance considerations are implemented', function () {
         // Test that JSON loading is efficient
+<<<<<<< HEAD
         $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
+=======
+        $homepageJsonPath = config_path('local/<nome progetto>/database/content/pages/home.json');
+>>>>>>> 4b6b99016 (first commit)
         if (! file_exists($homepageJsonPath)) {
             $this->assertTrue(true);
 

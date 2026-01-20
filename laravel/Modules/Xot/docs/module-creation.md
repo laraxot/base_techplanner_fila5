@@ -185,6 +185,12 @@ NomeModulo/
 ## Link Utili
 - [service-provider-best-practices.md](service-provider-best-practices.md)
 - [blade-component-registration.md](blade-component-registration.md)
+<<<<<<< HEAD
 - [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
 - [XotBaseRouteServiceProvider.md](xotbaserouteserviceprovider.md)
 - [XotBaseEventServiceProvider.md](xotbaseeventserviceprovider.md)
+=======
+- [XotBaseServiceProvider.md](XotBaseServiceProvider.md)
+- [XotBaseRouteServiceProvider.md](XotBaseRouteServiceProvider.md)
+- [XotBaseEventServiceProvider.md](XotBaseEventServiceProvider.md)
+>>>>>>> 4b6b99016 (first commit)

@@ -202,7 +202,11 @@ $consent->delete();
 
 ### Guide Principali
 
+<<<<<<< HEAD
 - [README.md](./readme.md) - Overview modulo
+=======
+- [README.md](./README.md) - Overview modulo
+>>>>>>> 4b6b99016 (first commit)
 - [implementation-guide.md](./implementation-guide.md) - Guida implementazione
 - [api.md](./api.md) - API reference
 - [testing.md](./testing.md) - Testing guide

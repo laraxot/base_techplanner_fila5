@@ -57,11 +57,17 @@ Modules/User/database/migrations/
 ├── 2024_01_01_000001_create_users_table.php
 ├── 2024_01_01_000011_create_roles_table.php      # Single authoritative
 ├── 2024_01_01_000021_create_permissions_table.php
+<<<<<<< HEAD
 └── 2026_02_22_000000_create_profiles_table.php   # Modifiche: stessa migrazione, timestamp aggiornato
 ```
 
 Modifiche schema: editare la stessa migrazione e aggiornare il timestamp nel nome file.
 
+=======
+└── 2024_06_15_143000_add_team_id_to_roles.php    # Schema evolution
+```
+
+>>>>>>> 4b6b99016 (first commit)
 ### ❌ WRONG
 ```
 Modules/User/database/migrations/
@@ -74,6 +80,7 @@ Modules/User/database/migrations/
 
 ### ✅ CREATE NEW MIGRATION
 - **New Table**: `create_{table}_table.php`
+<<<<<<< HEAD
 - **Data Migrations**: `migrate_{purpose}.php` (solo trasformazioni dati)
 
 ### ❌ NEVER CREATE NEW MIGRATION
@@ -90,6 +97,28 @@ Modules/User/database/migrations/
 - **Modifiche**: Modificare questo file e aggiornare il timestamp nel nome
 
 ### 2. Data Migration Migrations
+=======
+- **Schema Changes**: `add_{column}_to_{table}.php`
+- **Data Migrations**: `migrate_{purpose}.php`
+
+### ❌ NEVER CREATE NEW MIGRATION
+- **Same Table**: Never create multiple `create_{table}_table.php` files
+- **Minor Changes**: Use existing migration or create schema evolution migration
+
+## Migration Types
+
+### 1. Table Creation Migrations
+- **Pattern**: `{timestamp}_create_{table}_table.php`
+- **Purpose**: Define base table schema
+- **Rule**: Exactly ONE per table per module
+
+### 2. Schema Evolution Migrations
+- **Pattern**: `{timestamp}_{action}_{table}.php`
+- **Purpose**: Modify existing table schema
+- **Examples**: `add_column`, `remove_column`, `change_column`
+
+### 3. Data Migration Migrations
+>>>>>>> 4b6b99016 (first commit)
 - **Pattern**: `{timestamp}_migrate_{purpose}.php`
 - **Purpose**: Transform or seed data
 - **Examples**: `migrate_user_roles`, `seed_default_permissions`

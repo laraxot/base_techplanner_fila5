@@ -269,7 +269,10 @@ abstract class XotBaseMigration extends LaravelMigration
         $xot = XotData::make();
         $userClass = $xot->getUserClass();
 
+<<<<<<< HEAD
         // Check and add each timestamp column only if it doesn't exist
+=======
+>>>>>>> 4b6b99016 (first commit)
         if (! $this->hasColumn('created_at')) {
             $table->timestamp('created_at')->nullable();
         }
@@ -278,7 +281,10 @@ abstract class XotBaseMigration extends LaravelMigration
             $table->timestamp('updated_at')->nullable();
         }
 
+<<<<<<< HEAD
         // Check and add foreign key columns only if they don't exist
+=======
+>>>>>>> 4b6b99016 (first commit)
         if (! $this->hasColumn('updated_by')) {
             $table->foreignIdFor($userClass, 'updated_by')->nullable();
         }
@@ -287,6 +293,7 @@ abstract class XotBaseMigration extends LaravelMigration
             $table->foreignIdFor($userClass, 'created_by')->nullable();
         }
 
+<<<<<<< HEAD
         // Handle soft deletes
         if ($hasSoftDeletes) {
             if (! $this->hasColumn('deleted_at')) {
@@ -300,6 +307,17 @@ abstract class XotBaseMigration extends LaravelMigration
             if ($this->hasColumn('deleted_at') && ! $this->hasColumn('deleted_by')) {
                 $table->foreignIdFor($userClass, 'deleted_by')->nullable();
             }
+=======
+        if ($hasSoftDeletes && ! $this->hasColumn('deleted_at')) {
+            $table->softDeletes();
+            if (! $this->hasColumn('deleted_by')) {
+                $table->foreignIdFor($userClass, 'deleted_by')->nullable();
+            }
+        }
+
+        if ($this->hasColumn('deleted_at') && ! $this->hasColumn('deleted_by')) {
+            $table->foreignIdFor($userClass, 'deleted_by')->nullable();
+>>>>>>> 4b6b99016 (first commit)
         }
     }
 
@@ -369,6 +387,7 @@ abstract class XotBaseMigration extends LaravelMigration
     {
         return DB::connection($this->getConnection())->getDriverName();
     }
+<<<<<<< HEAD
 
     /**
      * Determine if the migration should run.
@@ -534,6 +553,8 @@ abstract class XotBaseMigration extends LaravelMigration
             $conn->statement('ALTER TABLE '.$pivotTable.' MODIFY '.$fkColumn.' BIGINT UNSIGNED NULL');
         }
     }
+=======
+>>>>>>> 4b6b99016 (first commit)
 }
 
 // end XotBaseMigration

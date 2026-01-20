@@ -57,11 +57,19 @@ Verificare che:
 - Il styling Tailwind sia disponibile nel contesto Filament
 - Altri widget di autenticazione abbiano componenti simili per coerenza
 ## Collegamenti
+<<<<<<< HEAD
 - [User Module Documentation](readme.md)
+=======
+- [User Module Documentation](README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
 - [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 4b6b99016 (first commit)
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto
@@ -153,8 +161,16 @@ Verificare che:
 - Altri widget di autenticazione abbiano componenti simili per coerenza
 
 ## Collegamenti
+<<<<<<< HEAD
 - [User Module Documentation](readme.md)
+=======
+- [User Module Documentation](README.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
 - [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 4b6b99016 (first commit)

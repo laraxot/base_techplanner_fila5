@@ -161,7 +161,11 @@ grep -r "public static function table(Table" laravel/Modules/*/app/Filament/Reso
 - [NavigationLabelTrait](../../app/Filament/Traits/NavigationLabelTrait.php)
 - [HasXotTable Trait](../../app/Filament/Traits/HasXotTable.php)
 - [XotBaseResource](../../app/Filament/Resources/XotBaseResource.php)
+<<<<<<< HEAD
 - [Regole Traduzioni](../../../xot/docs/translation-philosophy.md)
+=======
+- [Regole Traduzioni](../../../Xot/docs/translation-philosophy.md)
+>>>>>>> 4b6b99016 (first commit)
 - [No Table Override](./no-table-override.md)
 
 ### ⚠️ Note Importanti

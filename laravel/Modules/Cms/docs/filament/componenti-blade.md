@@ -152,4 +152,8 @@ Per domande o problemi con i componenti Filament:
 
 ## Collegamenti tra versioni di componenti-blade.md
 * [componenti-blade.md](docs/filament/componenti-blade.md)
+<<<<<<< HEAD
 * [componenti-blade.md](laravel/modules/cms/docs/filament/componenti-blade.md)
+=======
+* [componenti-blade.md](laravel/Modules/Cms/docs/filament/componenti-blade.md)
+>>>>>>> 4b6b99016 (first commit)

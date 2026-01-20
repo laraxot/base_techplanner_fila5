@@ -1,5 +1,9 @@
 # Fix: IndividualFolioRoutesTest - Path Corrections
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-22
+>>>>>>> 4b6b99016 (first commit)
 **Problema**: Test fallisce con path errati per file JSON
 **Principio**: Il sito funziona, quindi il test deve essere corretto per riflettere il comportamento reale
 

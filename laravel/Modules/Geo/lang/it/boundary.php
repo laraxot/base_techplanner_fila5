@@ -8,72 +8,99 @@ return [
             'label' => 'Nome confine',
             'placeholder' => 'Inserisci il nome del confine',
             'help' => 'Nome identificativo del confine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Descrizione dettagliata del confine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'type' => [
             'label' => 'Tipo',
             'placeholder' => 'Seleziona il tipo di confine',
             'help' => 'Tipo di confine amministrativo',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'level' => [
             'label' => 'Livello',
             'placeholder' => 'Seleziona il livello',
             'help' => 'Livello amministrativo del confine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'parent_boundary' => [
             'label' => 'Confine padre',
             'placeholder' => 'Seleziona il confine padre',
             'help' => 'Confine amministrativo superiore',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'geometry' => [
             'label' => 'Geometria',
             'placeholder' => 'Inserisci la geometria',
             'help' => 'Geometria del confine in formato GeoJSON',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'area' => [
             'label' => 'Superficie',
             'placeholder' => 'Inserisci la superficie in km²',
             'help' => 'Superficie del confine in chilometri quadrati',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'perimeter' => [
             'label' => 'Perimetro',
             'placeholder' => 'Inserisci il perimetro in km',
             'help' => 'Perimetro del confine in chilometri',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'help' => 'Indica se il confine è attivo nel sistema',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -104,6 +131,7 @@ return [
         'custom' => 'Personalizzato',
     ],
     'boundary_levels' => [
+<<<<<<< HEAD
         0 => 'Paese',
         1 => 'Regione',
         2 => 'Provincia',
@@ -136,5 +164,15 @@ return [
         'delete' => [
             'label' => 'Elimina Boundary',
         ],
+=======
+        '0' => 'Paese',
+        '1' => 'Regione',
+        '2' => 'Provincia',
+        '3' => 'Comune',
+        '4' => 'Distretto',
+        '5' => 'Quartiere',
+        '6' => 'CAP',
+        '7' => 'Personalizzato',
+>>>>>>> 4b6b99016 (first commit)
     ],
 ];

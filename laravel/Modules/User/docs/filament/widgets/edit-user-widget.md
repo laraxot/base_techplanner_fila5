@@ -93,8 +93,13 @@ __('user::profile.no_permission')
 - [UpdateUserAction.php](../../app/Actions/User/UpdateUserAction.php)
 - [View Template](../../../../Themes/One/resources/views/filament/widgets/edit-user.blade.php)
 - [Documentazione RegistrationWidget](./registration-widget.md)
+<<<<<<< HEAD
 - [Documentazione Xot sulla proprietà $data](../../../xot/docs/filament/widgets/data-property.md)
 - [Documentazione Xot sulla proprietà $data](../../../xot/project_docs/filament/widgets/data-property.md)
+=======
+- [Documentazione Xot sulla proprietà $data](../../../Xot/docs/filament/widgets/data-property.md)
+- [Documentazione Xot sulla proprietà $data](../../../Xot/project_docs/filament/widgets/data-property.md)
+>>>>>>> 4b6b99016 (first commit)
 ## Esempi di implementazione specifica
 ### Action per Doctor
 namespace Modules\<nome modulo>\Actions\Doctor;
@@ -111,3 +116,7 @@ namespace Modules\<nome progetto>\Actions\Patient;
 ---
 **Nota:**
 Se vuoi estendere la logica di aggiornamento per un nuovo tipo di utente, crea una nuova Action seguendo la convenzione e aggiorna la documentazione del modulo specifico. La documentazione generale delle regole e delle convenzioni si trova nel modulo Xot e va sempre collegata da qui.
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: dicembre 2024*
+>>>>>>> 4b6b99016 (first commit)

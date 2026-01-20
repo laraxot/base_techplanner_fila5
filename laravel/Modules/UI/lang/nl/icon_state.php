@@ -10,7 +10,10 @@ return [
             'help' => 'Identificerende naam van het element',
             'description' => 'Objectnaam',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'edit-name' => [
             'label' => 'Naam bewerken',
@@ -18,7 +21,10 @@ return [
             'help' => 'Bestaande naam wijzigen',
             'description' => 'Actie om de naam te wijzigen',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'change-state' => [
             'label' => 'Status wijzigen',
@@ -26,7 +32,10 @@ return [
             'help' => 'Huidige status wijzigen',
             'description' => 'Actie om de status te wijzigen',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'state' => [
             'label' => 'Status',
@@ -34,7 +43,10 @@ return [
             'help' => 'Huidige status van het element',
             'description' => 'Huidige systeemconditie',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'message' => [
             'label' => 'Bericht',
@@ -42,7 +54,10 @@ return [
             'help' => 'Informatief bericht',
             'description' => 'Berichttekst',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'messages' => [
@@ -56,6 +71,7 @@ return [
             'title' => 'Overgangsfout',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -67,4 +83,6 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

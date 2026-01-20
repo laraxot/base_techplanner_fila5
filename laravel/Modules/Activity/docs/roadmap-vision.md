@@ -1,5 +1,9 @@
 # Activity Module - Complete Roadmap 2026
 
+<<<<<<< HEAD
+=======
+**Generated**: 2026-01-02
+>>>>>>> 4b6b99016 (first commit)
 **Status**: Event Sourcing & Audit Foundation
 **Methodology**: Super Mucca (DRY + KISS + Deep Understanding)
 **PHPStan Level**: 10 ✅ (0 errors)
@@ -411,22 +415,38 @@ class Activity extends SpatieActivity
 ## 📝 **DECISION LOG**
 
 ### **Snapshot Strategy Decision**
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+**Date**: 2026-01-02
+>>>>>>> 4b6b99016 (first commit)
 **Decision**: Create snapshots every 50 events automatically
 **Rationale**: Balance memory usage with snapshot storage overhead
 
 ### **Tenant Isolation Decision**
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+**Date**: 2026-01-02
+>>>>>>> 4b6b99016 (first commit)
 **Decision**: Use global scopes with automatic tenant_id injection
 **Rationale**: Transparent isolation without code changes in existing modules
 
 ### **Performance Optimization Decision**
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+**Date**: 2026-01-02
+>>>>>>> 4b6b99016 (first commit)
 **Decision**: Partition activities by month, index by causer/subject
 **Rationale**: Optimize for most common query patterns
 
 ### **Event Sourcing Integration Decision**
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+**Date**: 2026-01-02
+>>>>>>> 4b6b99016 (first commit)
 **Decision**: Keep Spatie ActivityLog and Event Sourcing separate but complementary
 **Rationale**: Different use cases - ActivityLog for audit, Event Sourcing for state
 

@@ -229,3 +229,7 @@ php artisan notify:benchmark
 - [Piano Implementazione](../../../docs/module_reusability_implementation_plan.md)
 - [Script Controllo](../../../bashscripts/check_module_reusability.sh)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)

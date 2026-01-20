@@ -1,5 +1,9 @@
 # Cyclomatic Complexity Report - Module: Xot
 
+<<<<<<< HEAD
+=======
+**Generated:** 2025-10-01 19:44:12
+>>>>>>> 4b6b99016 (first commit)
 **Analyzer:** Super Mucca 🐮
 
 ---

@@ -187,7 +187,11 @@ cd Modules/User
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Analisi Completa](./model_inheritance_analysis.md)
+=======
+- [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -381,7 +385,11 @@ cd Modules/User
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Analisi Completa](./model_inheritance_analysis.md)
+=======
+- [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -575,7 +583,11 @@ cd Modules/User
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Analisi Completa](./model_inheritance_analysis.md)
+=======
+- [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)

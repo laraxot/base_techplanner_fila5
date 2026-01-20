@@ -24,7 +24,10 @@ return [
             'label' => 'ID',
             'tooltip' => 'Identificativo univoco del ruolo',
             'helper_text' => 'Identificativo numerico univoco del ruolo nel sistema',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'name' => [
             'label' => 'Nome Ruolo',
@@ -38,20 +41,30 @@ return [
                 'min' => 'Il nome deve essere di almeno :min caratteri',
                 'max' => 'Il nome non può superare i :max caratteri',
             ],
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'placeholder' => 'Seleziona la guardia',
             'tooltip' => 'Nome della guardia per questo ruolo, es. "web"',
             'helper_text' => 'Sistema di autenticazione utilizzato per questo ruolo',
+<<<<<<< HEAD
             'help' => 'Specifica il sistema di autenticazione (web, api, ecc.]',
+=======
+            'help' => 'Specifica il sistema di autenticazione (web, api, ecc.)',
+>>>>>>> 4b6b99016 (first commit)
             'options' => [
                 'web' => 'Web',
                 'api' => 'API',
                 'sanctum' => 'Sanctum',
             ],
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'permissions' => [
             'label' => 'Permessi',
@@ -59,13 +72,19 @@ return [
             'tooltip' => 'Permessi associati a questo ruolo',
             'helper_text' => 'Elenco dei permessi specifici assegnati a questo ruolo',
             'help' => 'Seleziona i permessi che questo ruolo può esercitare',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'users_count' => [
             'label' => 'Numero Utenti',
             'tooltip' => 'Numero di utenti assegnati a questo ruolo',
             'helper_text' => 'Conteggio degli utenti che attualmente hanno questo ruolo assegnato',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Descrizione',
@@ -73,19 +92,28 @@ return [
             'tooltip' => 'Descrizione dettagliata del ruolo e delle sue funzioni',
             'helper_text' => 'Testo descrittivo che spiega lo scopo e le responsabilità del ruolo',
             'help' => 'Fornisci una descrizione chiara delle funzioni del ruolo',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'tooltip' => 'Data di creazione del ruolo',
             'helper_text' => 'Data e ora in cui il ruolo è stato creato nel sistema',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'tooltip' => 'Data dell\'ultima modifica del ruolo',
             'helper_text' => 'Data e ora dell\'ultimo aggiornamento del ruolo',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'team_id' => [
             'label' => 'ID Team',
@@ -93,7 +121,10 @@ return [
             'tooltip' => 'Team associato al ruolo',
             'helper_text' => 'Team specifico al quale questo ruolo appartiene',
             'help' => 'Seleziona il team per cui questo ruolo è valido',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'values' => [
             'label' => 'Valori',
@@ -110,16 +141,22 @@ return [
                 'true' => 'Sì',
                 'false' => 'No',
             ],
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'team' => [
             'name' => [
                 'label' => 'team.name',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -398,5 +435,9 @@ return [
         'user' => 'Utente',
     ],
     'label' => 'role',
+<<<<<<< HEAD
     'plural_label' => 'Role (Plurale)',
+=======
+    'plural_label' => '',
+>>>>>>> 4b6b99016 (first commit)
 ];

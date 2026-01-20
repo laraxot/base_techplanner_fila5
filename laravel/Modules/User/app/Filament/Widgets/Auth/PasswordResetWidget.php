@@ -46,7 +46,11 @@ class PasswordResetWidget extends XotBaseWidget
                 ->maxLength(255)
                 ->extraInputAttributes(['class' => 'text-center']),
             'error_display' => Placeholder::make('error_display')
+<<<<<<< HEAD
                 ->hiddenLabel()
+=======
+                ->label('')
+>>>>>>> 4b6b99016 (first commit)
                 ->content(function ($_get) {
                     $error = Session::get('error');
 

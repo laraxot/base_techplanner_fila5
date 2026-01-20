@@ -107,7 +107,11 @@ class SelectStateColumn extends SelectColumn
                 return;
             }
 
+<<<<<<< HEAD
             if (! $record->state instanceof State) {
+=======
+            if (! ($record->state instanceof State)) {
+>>>>>>> 4b6b99016 (first commit)
                 return;
             }
 

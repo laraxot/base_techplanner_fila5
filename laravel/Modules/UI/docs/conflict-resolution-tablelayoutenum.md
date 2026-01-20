@@ -65,9 +65,15 @@ Il file `Modules/UI/app/Enums/TableLayoutEnum.php` presenta un conflitto Git nel
 ## Collegamenti Correlati
 
 - [UI Components](../components/volt.md)
+<<<<<<< HEAD
 - [PHPStan Level 10 Fixes](../../xot/docs/phpstan-level10-fixes.md)
 - [Translation Standards](../../lang/docs/translation-standards.md)
 - [Best Practices](../../xot/docs/translation-keys-best-practices.md)
+=======
+- [PHPStan Level 10 Fixes](../../Xot/docs/phpstan-level10-fixes.md)
+- [Translation Standards](../../Lang/docs/translation-standards.md)
+- [Best Practices](../../Xot/docs/translation-keys-best-practices.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Note per Sviluppatori Futuri
 
@@ -150,6 +156,7 @@ Il file `Modules/UI/app/Enums/TableLayoutEnum.php` presenta un conflitto Git nel
 ## Collegamenti Correlati
 
 - [UI Components](../components/volt.md)
+<<<<<<< HEAD
 - [PHPStan Level 10 Fixes](../../xot/project_docs/phpstan-level10-fixes.md)
 - [Translation Standards](../../lang/project_docs/translation-standards.md)
 - [Best Practices](../../xot/project_docs/translation-keys-best-practices.md)
@@ -159,6 +166,17 @@ Il file `Modules/UI/app/Enums/TableLayoutEnum.php` presenta un conflitto Git nel
 - [PHPStan Level 10 Fixes](../../xot/project_docs/phpstan-level10-fixes.md)
 - [Translation Standards](../../lang/project_docs/translation-standards.md)
 - [Best Practices](../../xot/project_docs/translation-keys-best-practices.md)
+=======
+- [PHPStan Level 10 Fixes](../../Xot/project_docs/phpstan-level10-fixes.md)
+- [Translation Standards](../../Lang/project_docs/translation-standards.md)
+- [Best Practices](../../Xot/project_docs/translation-keys-best-practices.md)
+- [PHPStan Level 10 Fixes](../../Xot/project_docs/phpstan-level10-fixes.md)
+- [Translation Standards](../../Lang/project_docs/translation-standards.md)
+- [Best Practices](../../Xot/project_docs/translation-keys-best-practices.md)
+- [PHPStan Level 10 Fixes](../../Xot/project_docs/phpstan-level10-fixes.md)
+- [Translation Standards](../../Lang/project_docs/translation-standards.md)
+- [Best Practices](../../Xot/project_docs/translation-keys-best-practices.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Note per Sviluppatori Futuri
 

@@ -1,5 +1,9 @@
 # PHPStan Syntax Fixes - Modulo Job
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-11
+>>>>>>> 4b6b99016 (first commit)
 **Versione PHPStan**: 1.12.x
 **Livello**: max
 **Status**: ✅ IMPORT CONFLICT RISOLTO
@@ -214,7 +218,11 @@ $traits = class_uses($obj);    // ❌ Può ritornare false!
 
 ---
 
+<<<<<<< HEAD
 **Fix Completato**: [DATE]
+=======
+**Fix Completato**: 2025-01-11
+>>>>>>> 4b6b99016 (first commit)
 **Priority**: ALTA
 **Impact**: BASSO (Solo 1 test file)
 **Type Safety**: MIGLIORATA ✅

@@ -1,5 +1,9 @@
 # Array Keys in Filament Methods - Regole Obbligatorie
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-18
+>>>>>>> 4b6b99016 (first commit)
 **Status**: ✅ Regola consolidata
 **Priorità**: CRITICA
 

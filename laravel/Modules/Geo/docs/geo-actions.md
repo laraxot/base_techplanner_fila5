@@ -1,6 +1,10 @@
 # Geo Actions Architecture
 
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+**Date**: 2025-12-18
+>>>>>>> 4b6b99016 (first commit)
 
 ## Overview
 This document describes the reusable actions available in the Geo module.

@@ -398,7 +398,11 @@ Restituisce il testo di aiuto tradotto per il layout.
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [TransTrait Documentation](../../xot/docs/filament/trans-trait.md)
+=======
+- [TransTrait Documentation](../../Xot/docs/filament/trans-trait.md)
+>>>>>>> 4b6b99016 (first commit)
 - [UI Module Architecture](architecture_rules.md)
 - [Filament Best Practices](../../../docs/filament_best_practices.md)
 - [Translation Standards](../../../docs/translation_standards.md)

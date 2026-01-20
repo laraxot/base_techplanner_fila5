@@ -798,8 +798,16 @@ private function exportTablesToCSV(string $mdbFile): array
 - [Array Types Fixes](./phpstan-array-types-fixes.md)
 - [PHPStan Level 10 Guidelines](./phpstan-level10-guidelines.md)
 
+<<<<<<< HEAD
 # PHPStan Analysis Report for Xot Module
 
+=======
+*Ultimo aggiornamento: 6 Gennaio 2025*
+*Ultimo aggiornamento: 6 Gennaio 2025*
+# PHPStan Analysis Report for Xot Module
+
+**Date:** December 23, 2025
+>>>>>>> 4b6b99016 (first commit)
 
 **Outcome (Initial Scan):**
 The `Xot` module was initially analyzed with PHPStan individually, and **no errors were found**. This indicated adherence to the project's PHPStan configuration and coding standards at that time.

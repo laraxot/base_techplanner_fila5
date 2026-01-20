@@ -1,5 +1,9 @@
 # Analisi PHPMD - Tutti i Moduli
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-12-23
+>>>>>>> 4b6b99016 (first commit)
 **Strumento**: PHPMD (PHP Mess Detector)
 **Rules**: codesize, unusedcode, naming, design, controversial, cleancode
 

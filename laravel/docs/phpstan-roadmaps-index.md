@@ -150,3 +150,7 @@ Per tracciare il progresso, aggiornare questo documento con:
 ---
 
 *Documento creato il: Gennaio 2025*  
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)

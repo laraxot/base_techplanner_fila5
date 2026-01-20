@@ -81,22 +81,38 @@ Creato file `optimization_recommendations.md` in ogni modulo con:
 
 1. **Xot PathHelper** (2 ore)
    - Problema: Path hardcoded bloccano framework
+<<<<<<< HEAD
    - Soluzione: [Xot optimization_recommendations.md](../laravel/modules/xot/docs/optimization_recommendations.md)
 
 2. **Notify Riusabilità** (2 giorni)
    - Problema: 336 occorrenze bloccano notifiche
    - Soluzione: [Notify optimization_recommendations.md](../laravel/modules/notify/docs/optimization_recommendations.md)
+=======
+   - Soluzione: [Xot optimization_recommendations.md](../laravel/Modules/Xot/docs/optimization_recommendations.md)
+
+2. **Notify Riusabilità** (2 giorni)
+   - Problema: 336 occorrenze bloccano notifiche
+   - Soluzione: [Notify optimization_recommendations.md](../laravel/Modules/Notify/docs/optimization_recommendations.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### 🟡 ALTA (Settimana 2)
 **Obiettivo**: Moduli core riutilizzabili
 
 3. **User Restructuring** (1 giorno)
    - Problema: README gigantesco + hardcoding
+<<<<<<< HEAD
    - Soluzione: [User optimization_recommendations.md](../laravel/modules/user/docs/optimization_recommendations.md)
 
 4. **Cms Generalization** (1 giorno)
    - Problema: Content troppo specifico
    - Soluzione: [Cms optimization_recommendations.md](../laravel/modules/cms/docs/optimization_recommendations.md)
+=======
+   - Soluzione: [User optimization_recommendations.md](../laravel/Modules/User/docs/optimization_recommendations.md)
+
+4. **Cms Generalization** (1 giorno)
+   - Problema: Content troppo specifico
+   - Soluzione: [Cms optimization_recommendations.md](../laravel/Modules/Cms/docs/optimization_recommendations.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### 🟢 NORMALE (Settimana 3)
 **Obiettivo**: Ottimizzazioni performance e DX

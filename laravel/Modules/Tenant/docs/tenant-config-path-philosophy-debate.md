@@ -1,5 +1,9 @@
 # Tenant Config Path Philosophy - THE FURIOUS DEBATE
 
+<<<<<<< HEAD
+=======
+**Data**: 2026-01-08
+>>>>>>> 4b6b99016 (first commit)
 **Status**: 🔥 FURIOUS INTERNAL DEBATE
 **Issue**: Quale è la struttura path CORRETTA per i config tenant?
 **Filosofia**: DRY + KISS + SOLID + Domain-Driven Design
@@ -336,15 +340,24 @@ L'app usa SOLO `config/local/laravelpizza/`.
 
 ### 2. Documentazione
 - ✅ Questo file documenta la filosofia
+<<<<<<< HEAD
 - ✅ [Tenant Config Path Verification](../../themes/meetup/docs/tenant-config-path-verification.md) - Verifica e guida pratica
 - ✅ Aggiornati tutti i doc con path corretto ([DATE])
+=======
+- ✅ [Tenant Config Path Verification](../../Themes/Meetup/docs/tenant-config-path-verification.md) - Verifica e guida pratica
+- ✅ Aggiornati tutti i doc con path corretto (2025-01-22)
+>>>>>>> 4b6b99016 (first commit)
 
 ### 3. Correzione File Doc Esistenti
 Cercare e correggere in TUTTI i doc:
 - ❌ `config/laravelpizza.local/`
 - ✅ `config/local/laravelpizza/`
 
+<<<<<<< HEAD
 **Status**: ✅ Completato ([DATE])
+=======
+**Status**: ✅ Completato (2025-01-22)
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

@@ -1,5 +1,9 @@
 # PHPStan Level 10 Errors Roadmap - UI Module
 
+<<<<<<< HEAD
+=======
+**Data**: 2026-01-09  
+>>>>>>> 4b6b99016 (first commit)
 **Modulo**: UI  
 **Livello PHPStan**: 10  
 **Status**: 🧘 **IN ANALISI**
@@ -112,4 +116,8 @@
 
 **Status**: 🧘 **IN ANALISI**
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-09
+>>>>>>> 4b6b99016 (first commit)

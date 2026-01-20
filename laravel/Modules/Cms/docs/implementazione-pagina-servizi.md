@@ -9,7 +9,11 @@
 ## 📊 Vision e Filosofia Implementata
 
 ### Missione Sociale
+<<<<<<< HEAD
 - **Democratizzazione**: Accesso gratuito alla salute orale per gestanti vulnerabili
+=======
+- **Democratizzazione**: Accesso gratuito alla <slogan> per gestanti vulnerabili
+>>>>>>> 4b6b99016 (first commit)
 - **Umanità**: Oltre la tecnologia, toccare il cuore delle persone
 - **Inclusività**: Nessuna discriminazione, massima apertura sociale
 - **Competenza Medica**: Expertise certificata e protocolli sicuri
@@ -153,7 +157,11 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 - **Bounce Rate**: <45% sulle sezioni chiave
 
 ### SEO
+<<<<<<< HEAD
 - **Keywords**: salute orale gravidanza, odontoiatra gratuito gestanti
+=======
+- **Keywords**: <slogan> gravidanza, odontoiatra gratuito gestanti
+>>>>>>> 4b6b99016 (first commit)
 - **Structured Data**: MedicalOrganization, MedicalService
 - **Meta Tags**: Ottimizzati per search intent
 
@@ -166,18 +174,30 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 
 ### Strategici
 - [Strategia Contenuti CMS](pages-content-strategy.md)
+<<<<<<< HEAD
 - [Componenti Servizi](../../themes/one/project_docs/components/services-blocks.md)
+=======
+- [Componenti Servizi](../../Themes/One/project_docs/components/services-blocks.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Content Strategy Frontend](../../../project_docs/frontend/content-strategy.md)
 
 ### Tecnici
 - [Blocks Architecture](blocks.md)
+<<<<<<< HEAD
 - [Component System](../../themes/one/project_docs/components.md)
+=======
+- [Component System](../../Themes/One/project_docs/components.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Content Management](content-management.md)
 
 ### Filosofici
 - [Architettura Sistema](../../../project_docs/architettura_sistema.md)
 - [Rules](../../../project_docs/rules.md)
+<<<<<<< HEAD
 - [README Principale](../../../project_docs/readme.md)
+=======
+- [README Principale](../../../project_docs/README.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## ✅ Checklist Completamento
 
@@ -252,9 +272,18 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 
 ---
 
+<<<<<<< HEAD
 **Data Implementazione**: 15 Gennaio 2025  
 **Versione Documentazione**: 1.0.0  
 **Maintainer**: Team <main module>  
 **Review**: Approvazione stakeholder medici, tecnici, UX
 
 *Implementazione completata seguendo rigorosamente la filosofia <main module>: democratizzazione dell'accesso alla salute orale attraverso tecnologia umana, competente e inclusiva.* 
+=======
+**Data Implementazione**: 15 Gennaio 2025
+**Versione Documentazione**: 1.0.0
+**Maintainer**: Team <main module>
+**Review**: Approvazione stakeholder medici, tecnici, UX
+
+*Implementazione completata seguendo rigorosamente la filosofia <main module>: democratizzazione dell'accesso alla <slogan> attraverso tecnologia umana, competente e inclusiva.*
+>>>>>>> 4b6b99016 (first commit)

@@ -210,6 +210,7 @@ Le stesse correzioni sono state applicate a:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [README Modulo Geo](readme.md) - Documentazione principale
 - [Translation Standards](../../lang/docs/translation-helper-text-standards.md) - Standard traduzioni
 - [Address Implementation](address-implementation.md) - Implementazione indirizzi
@@ -434,7 +435,15 @@ Le stesse correzioni sono state applicate a:
 
 - [README Modulo Geo](readme.md) - Documentazione principale
 - [Translation Standards](../../lang/docs/translation-helper-text-standards.md) - Standard traduzioni
+=======
+- [README Modulo Geo](README.md) - Documentazione principale
+- [Translation Standards](../../Lang/docs/translation-helper-text-standards.md) - Standard traduzioni
+>>>>>>> 4b6b99016 (first commit)
 - [Address Implementation](address-implementation.md) - Implementazione indirizzi
 
 ---
 
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento**: 27 Gennaio 2025
+>>>>>>> 4b6b99016 (first commit)

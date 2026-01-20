@@ -17,8 +17,15 @@
 **Latest Update (Corrected Migration Structure)**: Updated the migration files for `doctor_team` table on 2025-05-16 to use the correct structure with `tableCreate` and `tableUpdate` methods from `XotBaseMigration`. Also updated project rules in `.mdc` files to enforce this convention. Attempted migration again to resolve the `Internal Server Error`.
 
 **Related Documentation**:
+<<<<<<< HEAD
 - [User Module Overview](../index.md)
 - [Team Management](./team_management.md)
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../database_structure.md)
+=======
+- [User Module Overview](../INDEX.md)
+- [Team Management](./TEAM_MANAGEMENT.md)
+- [BaseUser Model](./BaseUser.md)
+- [Database Structure](../DATABASE_STRUCTURE.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)

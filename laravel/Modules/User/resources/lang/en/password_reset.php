@@ -13,6 +13,7 @@ return [
     'label' => 'Password Reset',
     'plural_label' => 'Password Resets',
     'fields' => [
+<<<<<<< HEAD
         'email' => [
             'label' => 'Email',
             'tooltip' => '',
@@ -33,5 +34,10 @@ return [
         ],
     ],
     'actions' => [
+=======
+        'email' => ['label' => 'Email'],
+        'token' => ['label' => 'Token'],
+        'created_at' => ['label' => 'Created At'],
+>>>>>>> 4b6b99016 (first commit)
     ],
 ];

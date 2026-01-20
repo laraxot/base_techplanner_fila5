@@ -1,10 +1,17 @@
 # Utilizzo dei componenti Blade di Filament
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.
+<<<<<<< HEAD
 > La documentazione completa sui componenti Blade si trova nel [modulo UI](../../../ui/docs/blade/component-registration.md).
 ## Regola fondamentale: utilizzare i componenti Filament
 Nel progetto , **abbiamo l'obbligo di utilizzare i componenti Blade forniti da Filament quando disponibili**, invece di creare componenti personalizzati che duplicano funzionalità già esistenti.
 > La documentazione completa sui componenti Blade si trova nel [modulo UI](../../../ui/project_docs/blade/component-registration.md).
+=======
+> La documentazione completa sui componenti Blade si trova nel [modulo UI](../../../UI/docs/blade/component-registration.md).
+## Regola fondamentale: utilizzare i componenti Filament
+Nel progetto , **abbiamo l'obbligo di utilizzare i componenti Blade forniti da Filament quando disponibili**, invece di creare componenti personalizzati che duplicano funzionalità già esistenti.
+> La documentazione completa sui componenti Blade si trova nel [modulo UI](../../../UI/project_docs/blade/component-registration.md).
+>>>>>>> 4b6b99016 (first commit)
 Nel progetto <nome progetto>, **abbiamo l'obbligo di utilizzare i componenti Blade forniti da Filament quando disponibili**, invece di creare componenti personalizzati che duplicano funzionalità già esistenti.
 ## Migrazione da componenti personalizzati a componenti Filament
 ### Dropdown personalizzato vs Filament Dropdown

@@ -196,13 +196,21 @@ class Place extends BaseModel implements HasGeolocation
     #[\Override]
     public function getLatitude(): ?float
     {
+<<<<<<< HEAD
         /* @phpstan-ignore-line */ return $this->latitude;
+=======
+        return $this->latitude;
+>>>>>>> 4b6b99016 (first commit)
     }
 
     #[\Override]
     public function getLongitude(): ?float
     {
+<<<<<<< HEAD
         /* @phpstan-ignore-line */ return $this->longitude;
+=======
+        return $this->longitude;
+>>>>>>> 4b6b99016 (first commit)
     }
 
     #[\Override]

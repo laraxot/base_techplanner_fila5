@@ -24,6 +24,7 @@ return [
         'tooltip' => 'Zwischen Listen- und Rasteransicht wechseln',
         'helper_text' => 'Anzeigetyp ändern',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -37,4 +38,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

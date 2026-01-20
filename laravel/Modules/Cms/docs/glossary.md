@@ -102,8 +102,14 @@ Elemento interattivo che:
 - Gestire le performance
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Documentazione Componenti](./components/readme.md)
 - [Guida allo Stile](./style/readme.md)
 - [Convenzioni Layout](./layout/readme.md)
+=======
+- [Documentazione Componenti](./components/README.md)
+- [Guida allo Stile](./style/README.md)
+- [Convenzioni Layout](./layout/README.md)
+>>>>>>> 4b6b99016 (first commit)
 
 [Fonte: sopralerighe.org](https://www.sopralerighe.org/sito-web-glossario-tecnico/)

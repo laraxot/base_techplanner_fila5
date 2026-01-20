@@ -181,10 +181,17 @@ return new class () extends XotBaseMigration {
 
 ## Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Documentazione XotBaseMigration](../../xot/docs/rules/laraxot-rules.md)
 - [Standard Migrazioni](../../../docs/regole/standard_migrazioni.md)
 - [Best Practices Database](../../../docs/best-practices/database.md)
 - [Gestione Errori](./error_handling.md)
+=======
+- [Documentazione XotBaseMigration](../../Xot/docs/rules/LARAXOT-RULES.md)
+- [Standard Migrazioni](../../../docs/regole/standard_migrazioni.md)
+- [Best Practices Database](../../../docs/best-practices/database.md)
+- [Gestione Errori](./ERROR_HANDLING.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Supporto
 

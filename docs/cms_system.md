@@ -282,3 +282,7 @@ Ogni tema può avere le proprie implementazioni dei blocchi mantenendo la stessa
 - [Configurazione Homepage](../laravel/config/local/techplanner/database/content/pages/home.json)
 - [Configurazione Header](../laravel/config/local/techplanner/database/content/sections/header.json)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)

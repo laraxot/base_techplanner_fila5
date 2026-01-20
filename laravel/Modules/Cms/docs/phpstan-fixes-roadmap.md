@@ -1,6 +1,10 @@
 # PHPStan Level 10 Fixes Roadmap - Modulo Cms
 
+<<<<<<< HEAD
 **Data Creazione**: [DATE]  
+=======
+**Data Creazione**: 2025-01-27  
+>>>>>>> 4b6b99016 (first commit)
 **Errori Totali**: 6 errori  
 **Status**: 🟡 In Progress
 

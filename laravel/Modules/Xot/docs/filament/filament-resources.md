@@ -93,9 +93,15 @@ return [
 ## Collegamenti tra versioni di filament-resources.md
 * [filament-resources.md](docs/tecnico/filament/filament-resources.md)
 * [filament-resources.md](docs/regole/filament-resources.md)
+<<<<<<< HEAD
 * [filament-resources.md](../../../gdpr/project_docs/filament-resources.md)
 * [filament-resources.md](../../../xot/project_docs/filament-resources.md)
 * [filament-resources.md](../../../cms/project_docs/filament-resources.md)
+=======
+* [filament-resources.md](../../../Gdpr/project_docs/filament-resources.md)
+* [filament-resources.md](../../../Xot/project_docs/filament-resources.md)
+* [filament-resources.md](../../../Cms/project_docs/filament-resources.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ### Versione Incoming
 

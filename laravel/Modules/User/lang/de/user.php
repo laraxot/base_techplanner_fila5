@@ -17,41 +17,57 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
             'description' => 'name',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci l\'email',
             'description' => 'email',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Inserisci la password',
             'description' => 'password',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
             'placeholder' => 'Conferma la password',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'current_password' => [
             'label' => 'Password Attuale',
             'placeholder' => 'Inserisci la password attuale',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -73,6 +89,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'role' => [
+            'label' => 'Ruolo',
+        ],
+        'roles' => [
+            'label' => 'Ruoli',
+        ],
+        'permissions' => [
+            'label' => 'Permessi',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'status' => [
             'label' => 'Stato',
@@ -81,6 +108,7 @@ return [
                 'inactive' => 'Inattivo',
                 'blocked' => 'Bloccato',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -222,6 +250,77 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'last_login' => [
+            'label' => 'Ultimo Accesso',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+        ],
+        'avatar' => [
+            'label' => 'Avatar',
+        ],
+        'language' => [
+            'label' => 'Lingua',
+        ],
+        'timezone' => [
+            'label' => 'Fuso Orario',
+        ],
+        'password_expires_at' => [
+            'label' => 'Scadenza Password',
+        ],
+        'verified' => [
+            'label' => 'Verificato',
+        ],
+        'unverified' => [
+            'label' => 'Non Verificato',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'isActive' => [
+            'label' => 'isActive',
+        ],
+        'deactivate' => [
+            'label' => 'deactivate',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'view' => [
+            'label' => 'view',
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'email_verified_at' => [
+            'label' => 'Email Verificata il',
+        ],
+        'detach' => [
+            'label' => 'detach',
+        ],
+        'attach' => [
+            'label' => 'attach',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -244,6 +343,10 @@ return [
         'reset_link_sent' => 'Link per il reset della password inviato',
         'email_verified' => 'Email verificata con successo',
         'impersonating' => 'Stai impersonando l\'utente :name',
+<<<<<<< HEAD
+=======
+        // Added for LoginWidget
+>>>>>>> 4b6b99016 (first commit)
         'credentials_incorrect' => 'Die angegebenen Anmeldedaten sind nicht korrekt',
         'login_success' => 'Anmeldung erfolgreich',
         'validation_error' => 'Validierungsfehler',
@@ -266,6 +369,9 @@ return [
     'model' => [
         'label' => 'Utente',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

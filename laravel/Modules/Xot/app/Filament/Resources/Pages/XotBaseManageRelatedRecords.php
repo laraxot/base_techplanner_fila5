@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
 use Filament\Forms\Concerns\InteractsWithForms;
@@ -15,6 +16,10 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Override;
+=======
+use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
+use Modules\Xot\Filament\Traits\HasXotTable;
+>>>>>>> 4b6b99016 (first commit)
 
 /**
  * ---
@@ -22,6 +27,7 @@ use Override;
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
     use HasXotTable;
+<<<<<<< HEAD
     use InteractsWithForms;
     use NavigationLabelTrait;
 
@@ -161,4 +167,6 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
             //     ->url(fn (Model $record): string => static::getResource()::getUrl('view', ['record' => $record])),
         ];
     }
+=======
+>>>>>>> 4b6b99016 (first commit)
 }

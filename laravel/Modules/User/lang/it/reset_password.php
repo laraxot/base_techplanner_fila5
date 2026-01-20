@@ -13,6 +13,7 @@ return [
     'password_if_not_requested' => 'Se non hai richiesto una reimpostazione della password, non è necessario alcun ulteriore intervento.',
     'reset_password' => 'Clicca qui per reimpostare la tua password',
     'click_to_confirm' => 'Clicca qui per confermare il tuo account:',
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Reset Password',
         'plural' => 'Reset Password',
@@ -57,4 +58,11 @@ return [
             'label' => 'Elimina Reset Password',
         ],
     ],
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+    'actions' => [],
+>>>>>>> 4b6b99016 (first commit)
 ];

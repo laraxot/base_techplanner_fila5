@@ -8,7 +8,10 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Carbon;
 use Modules\Cms\Database\Factories\PageFactory;
+<<<<<<< HEAD
 use Modules\Cms\Models\Traits\HasBlocks;
+=======
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Tenant\Models\Traits\SushiToJsons;
 use Modules\Xot\Contracts\ProfileContract;
 
@@ -188,14 +191,20 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class Page extends BaseModelLang
 {
+<<<<<<< HEAD
     use HasBlocks;
+=======
+>>>>>>> 4b6b99016 (first commit)
     use SushiToJsons;
 
     /** @var array<int, string> */
     public $translatable = [
         'title',
         // 'description',
+<<<<<<< HEAD
         'blocks',
+=======
+>>>>>>> 4b6b99016 (first commit)
         'content_blocks',
         'sidebar_blocks',
         'footer_blocks',
@@ -207,7 +216,10 @@ class Page extends BaseModelLang
         'slug',
         'title',
         'middleware',
+<<<<<<< HEAD
         'blocks',
+=======
+>>>>>>> 4b6b99016 (first commit)
         'content_blocks',
         'sidebar_blocks',
         'footer_blocks',
@@ -220,7 +232,10 @@ class Page extends BaseModelLang
         'middleware' => 'json',
         'content' => 'string',
         'description' => 'string',
+<<<<<<< HEAD
         'blocks' => 'json',
+=======
+>>>>>>> 4b6b99016 (first commit)
         'content_blocks' => 'json',
         'sidebar_blocks' => 'json',
         'footer_blocks' => 'json',

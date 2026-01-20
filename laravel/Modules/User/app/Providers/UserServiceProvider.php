@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\Rules\Password;
+<<<<<<< HEAD
 use Livewire\Livewire;
 use Modules\User\Filament\Widgets\Auth\ForgotPasswordWidget;
 use Modules\User\Filament\Widgets\Auth\LoginWidget;
@@ -22,6 +23,8 @@ use Modules\User\Filament\Widgets\Auth\PasswordResetConfirmWidget;
 use Modules\User\Filament\Widgets\Auth\PasswordResetWidget;
 use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Filament\Widgets\Auth\ResetPasswordWidget;
+=======
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Notify\Emails\SpatieEmail;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Contracts\UserContract;
@@ -40,7 +43,10 @@ class UserServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
+<<<<<<< HEAD
         $this->registerLivewireAuthWidgets();
+=======
+>>>>>>> 4b6b99016 (first commit)
         // $this->registerEventListener();
         $this->registerPasswordRules();
         $this->registerPulse();
@@ -48,6 +54,7 @@ class UserServiceProvider extends XotBaseServiceProvider
         $this->registerPolicies();
     }
 
+<<<<<<< HEAD
     /**
      * Registra i widget Livewire auth per le viste Blade/Folio.
      * In Livewire v4, resolveClassComponentClassName con namespace '::' cerca SOLO in classNamespaces
@@ -70,6 +77,8 @@ class UserServiceProvider extends XotBaseServiceProvider
         }
     }
 
+=======
+>>>>>>> 4b6b99016 (first commit)
     #[\Override]
     public function register(): void
     {
@@ -105,6 +114,7 @@ class UserServiceProvider extends XotBaseServiceProvider
             // ✅ FIX CRITICO: Imposta il destinatario dell'email con metodo Laravel standard
             if (method_exists($notifiable, 'getEmailForPasswordReset')) {
                 $emailAddress = $notifiable->getEmailForPasswordReset();
+<<<<<<< HEAD
                 if (is_string($emailAddress)) {
                     $email->to($emailAddress);
                 } else {
@@ -116,6 +126,15 @@ class UserServiceProvider extends XotBaseServiceProvider
                     $email->to($emailAddress);
                 } else {
                     throw new \InvalidArgumentException('Email address must be a string.');
+=======
+                if (is_string($emailAddress) || is_array($emailAddress) || is_object($emailAddress)) {
+                    $email->to($emailAddress);
+                }
+            } elseif (isset($notifiable->email)) {
+                $emailAddress = $notifiable->email;
+                if (is_string($emailAddress) || is_array($emailAddress) || is_object($emailAddress)) {
+                    $email->to($emailAddress);
+>>>>>>> 4b6b99016 (first commit)
                 }
             } else {
                 // Fallback per debug
@@ -149,6 +168,7 @@ class UserServiceProvider extends XotBaseServiceProvider
             ]);
             if (method_exists($notifiable, 'getEmailForPasswordReset')) {
                 $emailAddress = $notifiable->getEmailForPasswordReset();
+<<<<<<< HEAD
                 if (is_string($emailAddress)) {
                     $email->to($emailAddress);
                 } else {
@@ -160,6 +180,15 @@ class UserServiceProvider extends XotBaseServiceProvider
                     $email->to($emailAddress);
                 } else {
                     throw new \InvalidArgumentException('Email address must be a string.');
+=======
+                if (is_string($emailAddress) || is_array($emailAddress) || is_object($emailAddress)) {
+                    $email->to($emailAddress);
+                }
+            } elseif (isset($notifiable->email)) {
+                $emailAddress = $notifiable->email;
+                if (is_string($emailAddress) || is_array($emailAddress) || is_object($emailAddress)) {
+                    $email->to($emailAddress);
+>>>>>>> 4b6b99016 (first commit)
                 }
             }
 

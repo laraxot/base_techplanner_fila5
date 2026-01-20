@@ -125,7 +125,11 @@ Estendere `Filament\Pages\Page` direttamente solo per:
 ## Documentazione Correlata
 
 - [Regole XotBase](../../../bashscripts/docs/xotbase_critical_rules.md)
+<<<<<<< HEAD
 - [XotBasePage Implementation](../../../xot/docs/xotbasepage_implementation.md)
+=======
+- [XotBasePage Implementation](../../../Xot/docs/xotbasepage_implementation.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Filament Namespace Rules](./filament-namespace-rules.md)
 
 ---

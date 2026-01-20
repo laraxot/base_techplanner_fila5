@@ -2,7 +2,11 @@
 
 Tutte le modifiche significative al modulo Xot saranno documentate in questo file.
 
+<<<<<<< HEAD
 ## [[DATE]] - Sessione Fix Critica
+=======
+## [2025-06-04] - Sessione Fix Critica
+>>>>>>> 4b6b99016 (first commit)
 
 ### Fixed
 - **HasXotTable.php**: Risolti if duplicati (3x) e array malformati da merge conflict

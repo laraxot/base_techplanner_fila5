@@ -17,7 +17,11 @@
         <img
             class="w-full {{ $ratioClass }} object-cover object-center"
             src="{{ $src }}"
+<<<<<<< HEAD
             alt="{{ $alt ?: '' }}"
+=======
+            @if ($alt) alt="{{ $alt }}" @endif
+>>>>>>> 4b6b99016 (first commit)
         >
         <figcaption>{{ $caption }}</figcaption>
     </figure>
@@ -25,6 +29,10 @@
     <img
         class="w-full {{ $ratioClass }}"
         src="{{ $src }}"
+<<<<<<< HEAD
         alt="{{ $alt ?: '' }}"
+=======
+        @if ($alt) alt="{{ $alt }}" @endif
+>>>>>>> 4b6b99016 (first commit)
     >
 @endif

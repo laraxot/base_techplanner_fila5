@@ -11,6 +11,7 @@ return [
     'fields' => [
         'status' => [
             'label' => 'status',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -49,4 +50,20 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+        ],
+        'name' => [
+            'label' => 'Nome',
+        ],
+        'queue' => [
+            'label' => 'queue',
+        ],
+        'progress' => [
+            'label' => 'progress',
+        ],
+        'started_at' => [
+            'label' => 'started_at',
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

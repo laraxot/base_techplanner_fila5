@@ -7,7 +7,11 @@ return [
     'enable_ads' => '1',
     'main_module' => 'TechPlanner',
     'primary_lang' => 'it',
+<<<<<<< HEAD
     'pub_theme' => 'Two',
+=======
+    'pub_theme' => 'Sixteen',
+>>>>>>> 4b6b99016 (first commit)
     'show_trans_key' => false,
     'disable_admin_dynamic_route' => true, // dovremmo cancellarlo
     'disable_frontend_dynamic_route' => false,

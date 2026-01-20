@@ -41,9 +41,12 @@ return [
                     'error' => 'Errore',
                 ],
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'details' => [
             'dependencies' => [
@@ -72,10 +75,13 @@ return [
                 'placeholder' => 'URL della documentazione',
                 'help' => 'Pagina web del modulo',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'system' => [
             'order' => [
@@ -91,10 +97,13 @@ return [
                 'label' => 'Namespace',
                 'help' => 'Namespace PHP del modulo',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'timestamps' => [
             'created_at' => [
@@ -105,10 +114,13 @@ return [
                 'label' => 'Ultimo Aggiornamento',
                 'help' => 'Data dell\'ultimo aggiornamento',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -189,6 +201,9 @@ return [
             'migrations_pending' => 'Ci sono migrazioni in sospeso',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

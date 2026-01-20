@@ -1,11 +1,18 @@
 # Two Theme - Documentation Index
 
+<<<<<<< HEAD
 **Theme Version**: 2.0
+=======
+**Last Update**: 13 Dicembre 2025  
+**Status**: ✅ Available  
+**Theme Version**: 1.0
+>>>>>>> 4b6b99016 (first commit)
 
 ## 📚 Quick Navigation
 
 ### 🎯 Essential Reading
 1. [README.md](./README.md) - Theme overview
+<<<<<<< HEAD
 2. [Deployment e validazione](./deployment-and-validation.md) - Produzione sottana.net, auto-deploy su master
 3. [Comprehensive Site Analysis](./comprehensive-site-analysis.md) - ⭐ Complete analysis of target vs local site
 4. [Map Integration](./map-integration.md) - Map implementation
@@ -40,12 +47,29 @@
 - **Status**: Available
 - **Compliance**: Laraxot standards
 - **Replication Status**: 95%+ achieved
+=======
+
+### 🎨 Theme Characteristics
+- **Style**: Minimalist, clean design
+- **Target**: Simple business sites
+- **Framework**: Bootstrap
+- **Components**: Basic Blade components
+
+### 📊 Module Statistics
+
+- **Total Docs**: 5 files
+- **Status**: Available
+- **Compliance**: Laraxot standards
+>>>>>>> 4b6b99016 (first commit)
 
 ### 🔗 Related Resources
 
 - [Cms Module](../../Modules/Cms/docs/README.md)
 - [UI Module](../../Modules/UI/docs/README.md)
+<<<<<<< HEAD
 - [Xot Module](../../Modules/Xot/docs/README.md)
+=======
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

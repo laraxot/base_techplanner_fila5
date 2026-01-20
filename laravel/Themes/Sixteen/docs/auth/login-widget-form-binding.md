@@ -93,3 +93,7 @@ class RegisterWidget extends XotBaseWidget
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> 4b6b99016 (first commit)

@@ -163,9 +163,17 @@ Schema::table('activity_log', function($table) { /* stessa logica */ });
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Modules/Activity/docs/database/migrations.md](../laravel/modules/activity/docs/database/migrations.md)
 - [.cursor/rules/migration-morphs-polymorphic.md](../.cursor/rules/migration-morphs-polymorphic.md)
 - [.cursor/rules/migration-complete-rules.mdc](../.cursor/rules/migration-complete-rules.mdc)
 
+=======
+- [Modules/Activity/docs/database/migrations.md](../laravel/Modules/Activity/docs/database/migrations.md)
+- [.cursor/rules/migration-morphs-polymorphic.md](../.cursor/rules/migration-morphs-polymorphic.md)
+- [.cursor/rules/migration-complete-rules.mdc](../.cursor/rules/migration-complete-rules.mdc)
+
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 4b6b99016 (first commit)
 *Autore: Sistema di AI Learning <nome progetto>*
 *Motivazione: Comprensione profonda architettura morphs polymorphic*

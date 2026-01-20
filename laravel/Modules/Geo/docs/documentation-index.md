@@ -17,7 +17,11 @@ Questo documento fornisce un indice completo e organizzato di tutta la documenta
 
 Documenti che forniscono una panoramica generale del modulo Geo, della sua architettura e dei suoi componenti principali.
 
+<<<<<<< HEAD
 - [README.md](readme.md) - Introduzione generale al modulo Geo
+=======
+- [README.md](README.md) - Introduzione generale al modulo Geo
+>>>>>>> 4b6b99016 (first commit)
 - [module_geo.md](module_geo.md) - Panoramica dettagliata del modulo
 - [architecture.md](architecture.md) - Architettura del modulo Geo
 - [structure.md](structure.md) - Struttura del modulo e organizzazione dei file
@@ -71,9 +75,15 @@ Documenti che confrontano le diverse strategie implementative e approcci.
 
 Guide tecniche e tutorial per l'utilizzo e l'implementazione delle funzionalità del modulo Geo.
 
+<<<<<<< HEAD
 - [COMPREHENSIVE_GUIDE.md](comprehensive_guide.md) - Guida completa al modulo
 - [TECHNICAL.md](technical.md) - Documentazione tecnica
 - [ADVANCED_FEATURES.md](advanced_features.md) - Funzionalità avanzate
+=======
+- [COMPREHENSIVE_GUIDE.md](COMPREHENSIVE_GUIDE.md) - Guida completa al modulo
+- [TECHNICAL.md](TECHNICAL.md) - Documentazione tecnica
+- [ADVANCED_FEATURES.md](ADVANCED_FEATURES.md) - Funzionalità avanzate
+>>>>>>> 4b6b99016 (first commit)
 - [tutorial.md](tutorial.md) - Tutorial passo-passo
 - [migration-guide.md](migration-guide.md) - Guida alla migrazione
 
@@ -148,4 +158,8 @@ Alcuni documenti potrebbero avere nomi simili ma contenuti diversi, in particola
 ---
 
 *Documento creato il: 28/05/2025*
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 28/05/2025*
+>>>>>>> 4b6b99016 (first commit)
 *Autore: Team <main module>*

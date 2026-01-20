@@ -52,6 +52,7 @@ return [
         'hex_color' => '#6b7280',
         'description' => 'Note di contatto',
     ],
+<<<<<<< HEAD
     'label' => 'Contact Type Enum',
     'plural_label' => 'Contact Type Enum (Plurale)',
     'navigation' => [
@@ -96,4 +97,6 @@ return [
             'label' => 'Elimina Contact Type Enum',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

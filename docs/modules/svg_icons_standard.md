@@ -377,3 +377,7 @@ protected static ?string $navigationIcon = 'employee-icon';
 - [Development Strategy](../development/testing_strategy.md)
 - [Filament Best Practices](../filament/)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 4b6b99016 (first commit)

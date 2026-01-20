@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -53,6 +54,26 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'email' => [
+            'label' => '邮箱',
+        ],
+        'team_id' => [
+            'label' => '团队',
+        ],
+        'role' => [
+            'label' => '角色',
+        ],
+        'invited_by_id' => [
+            'label' => '邀请人',
+        ],
+        'accepted_at' => [
+            'label' => '接受时间',
+        ],
+        'expires_at' => [
+            'label' => '过期时间',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [

@@ -2,8 +2,13 @@
 
 namespace Modules\Employee\Database\Factories;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Employee\Models\TimeRecord;
+=======
+use Modules\Employee\Models\TimeRecord;
+use Illuminate\Database\Eloquent\Factories\Factory;
+>>>>>>> 4b6b99016 (first commit)
 
 class TimeRecordFactory extends Factory
 {
@@ -20,3 +25,7 @@ class TimeRecordFactory extends Factory
         return [];
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)

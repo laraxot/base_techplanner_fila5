@@ -6,6 +6,10 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\ModelHasPermissionFactory;
+>>>>>>> 4b6b99016 (first commit)
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -16,6 +20,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string $model_type
  * @property string $model_id
  *
+<<<<<<< HEAD
+=======
+ * @method static ModelHasPermissionFactory  factory($count = null, $state = [])
+>>>>>>> 4b6b99016 (first commit)
  * @method static Builder|ModelHasPermission newModelQuery()
  * @method static Builder|ModelHasPermission newQuery()
  * @method static Builder|ModelHasPermission query()

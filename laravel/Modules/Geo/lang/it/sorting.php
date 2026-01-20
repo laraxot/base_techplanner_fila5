@@ -8,56 +8,78 @@ return [
             'label' => 'Campo',
             'placeholder' => 'Seleziona il campo per l\'ordinamento',
             'help' => 'Campo del database per l\'ordinamento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'direction' => [
             'label' => 'Direzione',
             'placeholder' => 'Seleziona la direzione dell\'ordinamento',
+<<<<<<< HEAD
             'help' => 'Direzione dell\'ordinamento (crescente/decrescente]',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+            'help' => 'Direzione dell\'ordinamento (crescente/decrescente)',
+>>>>>>> 4b6b99016 (first commit)
         ],
         'priority' => [
             'label' => 'Priorità',
             'placeholder' => 'Inserisci la priorità dell\'ordinamento',
             'help' => 'Priorità di applicazione dell\'ordinamento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'help' => 'Indica se l\'ordinamento è attivo',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Descrizione dell\'ordinamento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'custom_function' => [
             'label' => 'Funzione personalizzata',
             'placeholder' => 'Inserisci la funzione personalizzata',
             'help' => 'Funzione personalizzata per l\'ordinamento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'nulls_position' => [
             'label' => 'Posizione valori nulli',
             'placeholder' => 'Seleziona la posizione dei valori nulli',
             'help' => 'Posizione dei valori nulli nell\'ordinamento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'validation' => [
@@ -146,10 +168,17 @@ return [
     'sorting_directions' => [
         'asc' => 'Crescente',
         'desc' => 'Decrescente',
+<<<<<<< HEAD
         'asc_nulls_first' => 'Crescente (nulli prima]',
         'asc_nulls_last' => 'Crescente (nulli dopo]',
         'desc_nulls_first' => 'Decrescente (nulli prima]',
         'desc_nulls_last' => 'Decrescente (nulli dopo]',
+=======
+        'asc_nulls_first' => 'Crescente (nulli prima)',
+        'asc_nulls_last' => 'Crescente (nulli dopo)',
+        'desc_nulls_first' => 'Decrescente (nulli prima)',
+        'desc_nulls_last' => 'Decrescente (nulli dopo)',
+>>>>>>> 4b6b99016 (first commit)
     ],
     'nulls_positions' => [
         'first' => 'Prima',
@@ -157,11 +186,19 @@ return [
         'ignore' => 'Ignora',
     ],
     'sorting_priorities' => [
+<<<<<<< HEAD
         1 => 'Molto bassa',
         2 => 'Bassa',
         3 => 'Media',
         4 => 'Alta',
         5 => 'Molto alta',
+=======
+        '1' => 'Molto bassa',
+        '2' => 'Bassa',
+        '3' => 'Media',
+        '4' => 'Alta',
+        '5' => 'Molto alta',
+>>>>>>> 4b6b99016 (first commit)
     ],
     'sorting_types' => [
         'simple' => 'Semplice',
@@ -173,6 +210,7 @@ return [
         'date' => 'Data',
         'boolean' => 'Booleano',
     ],
+<<<<<<< HEAD
     'label' => 'Sorting',
     'plural_label' => 'Sorting (Plurale)',
     'navigation' => [
@@ -197,4 +235,6 @@ return [
             'label' => 'Elimina Sorting',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

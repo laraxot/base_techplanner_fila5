@@ -1,6 +1,10 @@
 # Development Workflow Rules - UI Module
 
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+**Date**: 2025-12-15
+>>>>>>> 4b6b99016 (first commit)
 **Status**: Active
 **Purpose**: Document the mandatory development workflow for UI module
 
@@ -146,10 +150,17 @@
 
 ## 📚 Related Documentation
 
+<<<<<<< HEAD
 - [Xot Philosophy](../xot/docs/philosophy-complete.md)
 - [PSR-4 Autoloading Error Analysis](./psr4-autoloading-error-analysis.md)
 - [Development Guidelines](../../../docs/development/readme.md)
 - [Git Workflow](../../../docs/git-conflict-resolution/readme.md)
+=======
+- [Xot Philosophy](../Xot/docs/philosophy-complete.md)
+- [PSR-4 Autoloading Error Analysis](./psr4-autoloading-error-analysis.md)
+- [Development Guidelines](../../../docs/development/README.md)
+- [Git Workflow](../../../docs/git-conflict-resolution/README.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## ⚠️ Consequences of Skipping Steps
 

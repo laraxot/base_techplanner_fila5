@@ -9,34 +9,47 @@ return [
             'placeholder' => 'Items',
             'helper_text' => 'Items',
             'description' => 'Items',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'label' => [
             'label' => 'Label',
             'placeholder' => 'Label',
             'helper_text' => 'Label',
             'description' => 'Label',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'url' => [
             'label' => 'Url',
             'placeholder' => 'Url',
             'helper_text' => 'Url',
             'description' => 'Url',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'style' => [
             'label' => 'Style',
             'placeholder' => 'Style',
             'helper_text' => 'Style',
             'description' => 'Style',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'icon' => [
             'label' => 'Icon',
             'placeholder' => 'Icon',
             'helper_text' => 'Icon',
             'description' => 'Icon',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -51,4 +64,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+    ],
+>>>>>>> 4b6b99016 (first commit)
 ];

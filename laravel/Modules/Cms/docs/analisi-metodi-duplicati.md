@@ -200,11 +200,19 @@ protected function casts(): array
 ## Link Correlati
 
 - 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
+<<<<<<< HEAD
 - 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
+=======
+- 📖 [Modulo Xot - Classi Base](../../Xot/docs/analisi-metodi-duplicati.md)
+>>>>>>> 4b6b99016 (first commit)
 - 📖 [Convenzioni Namespace Filament](./convenzioni-namespace-filament.md)
 - 📖 [Gestione Temi](./frontoffice/create-theme.md)
 
 ---
 
+<<<<<<< HEAD
 **Data:** [DATE]
+=======
+**Data:** 2025-10-15
+>>>>>>> 4b6b99016 (first commit)
 **Status:** 📋 Draft per Review

@@ -36,6 +36,10 @@ This document analyses the provided screenshot and derives a faithful, optimized
 
 ### mapping from current module capabilities
 - `TimeClockWidget` already builds day sessions for TODAY. We can generalize to a service:
+<<<<<<< HEAD
+=======
+  - `TimeEntriesService::buildSessionsForRange(int $userId, Carbon $start, Carbon $end): array{byDate: array<string, list<TimeEntrySessionView>>, summary: WeekSummaryView, contracts: list<DayContractView>}`.
+>>>>>>> 4b6b99016 (first commit)
   - Reuse the same pairing logic (IN → OUT) applied to an entire range.
 
 ### implementation outline

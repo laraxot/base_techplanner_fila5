@@ -10,31 +10,46 @@ return [
             'placeholder' => 'Enter team name',
             'helper_text' => 'Team identifying name',
             'description' => 'The name that identifies this team',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'personal_team' => [
             'label' => 'Personal Team',
             'helper_text' => 'Indicates if this is a personal team',
             'description' => 'A personal team is associated with a single user',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'owner' => [
             'label' => 'Owner',
             'helper_text' => 'Team owner user',
             'description' => 'The user who created and manages this team',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => 'Created At',
             'helper_text' => 'Team creation date',
             'description' => 'Date and time when the team was created',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
         'updated_at' => [
             'label' => 'Last Modified',
             'helper_text' => 'Last modification date',
             'description' => 'Date and time of the last team modification',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -80,6 +95,7 @@ return [
             'description' => 'User who created this team',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -89,4 +105,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

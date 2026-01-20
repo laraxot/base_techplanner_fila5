@@ -1,6 +1,10 @@
 # 🌍 PHPStan Progress Report - Modulo Lang
 
+<<<<<<< HEAD
 ## Data: [DATE]
+=======
+## Data: 2025-01-22
+>>>>>>> 4b6b99016 (first commit)
 ## Status: 🔄 IN PROGRESS (38 errori rimanenti, da 58)
 
 ## 🧘 LA FILOSOFIA DEL MODULO LANG
@@ -26,7 +30,11 @@ Il modulo Lang è il **guardiano delle lingue**, colui che permette alla conosce
 
 ## 📊 PROGRESSO DELLA PURIFICAZIONE
 
+<<<<<<< HEAD
 ### Aggiornamento [DATE] – ciclo PHPStan lvl 10, PHPMD, PHPInsights
+=======
+### Aggiornamento 2025-11-17 – ciclo PHPStan lvl 10, PHPMD, PHPInsights
+>>>>>>> 4b6b99016 (first commit)
 
 - ✅ **LangField** ora usa type-hint `Model` + `Assert::isInstanceOf` per accedere a `post` in sicurezza. Eliminati gli ultimi 2 errori PHPStan sul cast e sul `@property` di `Post`.
 - ✅ Esecuzione `./vendor/bin/phpstan analyse Modules/Lang --memory-limit=-1` → **0 errori**.

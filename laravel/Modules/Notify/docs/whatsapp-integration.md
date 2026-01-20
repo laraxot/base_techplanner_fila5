@@ -2,7 +2,12 @@
 
 ## Panoramica
 
+<<<<<<< HEAD
 Questo documento descrive l'architettura e l'implementazione dell'integrazione WhatsApp nel modulo Notify di SaluteOra, seguendo gli stessi standard e pattern utilizzati per l'invio di email e SMS.
+=======
+Questo documento descrive l'architettura e l'implementazione dell'integrazione WhatsApp nel modulo Notify di , seguendo gli stessi standard e pattern utilizzati per l'invio di email e SMS.
+Questo documento descrive l'architettura e l'implementazione dell'integrazione WhatsApp nel modulo Notify di <nome progetto>, seguendo gli stessi standard e pattern utilizzati per l'invio di email e SMS.
+>>>>>>> 4b6b99016 (first commit)
 
 ## Architettura
 
@@ -197,7 +202,11 @@ final class SendTwilioWhatsAppAction implements WhatsAppProviderActionInterface
 
     private string $accountSid;
     private string $authToken;
+<<<<<<< HEAD
     private string $baseUrl = 'https://api.twilio.com/[DATE]';
+=======
+    private string $baseUrl = 'https://api.twilio.com/2010-04-01';
+>>>>>>> 4b6b99016 (first commit)
     private array $vars = [];
     protected bool $debug;
     protected int $timeout;
@@ -399,7 +408,12 @@ $action = app(SendTwilioWhatsAppAction::class);
 
 $whatsAppData = new WhatsAppData(
     to: '+393401234567',
+<<<<<<< HEAD
     body: 'Questo è un messaggio di test da SaluteOra',
+=======
+    body: 'Questo è un messaggio di test da ',
+    body: 'Questo è un messaggio di test da <nome progetto>',
+>>>>>>> 4b6b99016 (first commit)
 );
 
 $result = $action->execute($whatsAppData);
@@ -532,7 +546,16 @@ L'integrazione WhatsApp  segue gli stessi pattern e standard utilizzati per l'in
 3. **Estensibilità**: È facile aggiungere nuovi provider WhatsApp
 4. **Testabilità**: Le azioni sono facilmente testabili grazie all'interfaccia comune
 
+<<<<<<< HEAD
 Seguendo questa architettura, l'integrazione WhatsApp si inserisce perfettamente nell'ecosistema di notifiche di SaluteOra, mantenendo la coerenza con le altre modalità di comunicazione.
 
 ---
 
+=======
+Seguendo questa architettura, l'integrazione WhatsApp si inserisce perfettamente nell'ecosistema di notifiche di , mantenendo la coerenza con le altre modalità di comunicazione.
+Seguendo questa architettura, l'integrazione WhatsApp si inserisce perfettamente nell'ecosistema di notifiche di <nome progetto>, mantenendo la coerenza con le altre modalità di comunicazione.
+
+---
+
+*Ultimo aggiornamento: 2023-05-12*
+>>>>>>> 4b6b99016 (first commit)

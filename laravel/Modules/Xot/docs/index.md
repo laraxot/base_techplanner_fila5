@@ -1,7 +1,11 @@
 # 📚 Index of Xot Module Documentation
 
 ## 🎯 Quick Start
+<<<<<<< HEAD
 - [**README.md**](readme.md) - General overview
+=======
+- [**README.md**](README.md) - General overview
+>>>>>>> 4b6b99016 (first commit)
 - [**Architecture**](architecture/architecture.md) - System architecture
 - [**Best Practices**](best-practices/best-practices.md) - Development guidelines
 
@@ -46,12 +50,15 @@
 ### 🛠️ Bash Scripts & Automation
 - [BashScripts Organization](bashscripts/bashscripts-organization.md)
 
+<<<<<<< HEAD
 ### 🤖 AI & Development Tools
 - [Claude Context (Laravel)](../../../claude.md)
 - [AI Agents Guide](../../../../agents.md)
 - [Cursor Rules & Skills](../../../../.cursor/readme.md)
 - [Skills di progetto](../../../../.cursor/skills/)
 
+=======
+>>>>>>> 4b6b99016 (first commit)
 ### 🚨 Troubleshooting
 - [**CCR DeepSeek Fix**](troubleshooting/ccr-deepseek-fix.md) - Resolve 400 API error
 - [General Troubleshooting](troubleshooting.md)

@@ -98,7 +98,11 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      * @return array<int|string, Column|LayoutComponent>
      */
     #[Override]
+<<<<<<< HEAD
     protected function getTableColumns(): array
+=======
+    public function getTableColumns(): array
+>>>>>>> 4b6b99016 (first commit)
     {
         $index = Arr::get($this->getResource()::getPages(), 'index');
         if (! $index) {
@@ -157,6 +161,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     }
 
     // */
+<<<<<<< HEAD
     /**
      * Get table actions.
      *
@@ -165,6 +170,8 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      *
      * @return array<string, \Filament\Actions\Action>
      */
+=======
+>>>>>>> 4b6b99016 (first commit)
     public function getTableActions(): array
     {
         $actions = [];
@@ -192,6 +199,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         return $actions;
     }
 
+<<<<<<< HEAD
     /**
      * Get table bulk actions.
      *
@@ -199,6 +207,8 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      *
      * @return array<string, \Filament\Actions\BulkAction>
      */
+=======
+>>>>>>> 4b6b99016 (first commit)
     public function getTableBulkActions(): array
     {
         $actions = [];
@@ -214,6 +224,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         return $actions;
     }
 
+<<<<<<< HEAD
     /**
      * Get table header actions.
      *
@@ -221,6 +232,8 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      *
      * @return array<string, \Filament\Actions\Action>
      */
+=======
+>>>>>>> 4b6b99016 (first commit)
     public function getTableHeaderActions(): array
     {
         $actions = [];

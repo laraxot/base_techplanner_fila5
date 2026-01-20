@@ -48,12 +48,17 @@ $this->tableUpdate(function (Blueprint $table) {
 
 ### Migration Types and Their Purpose
 
+<<<<<<< HEAD
 #### 1. Table Creation Migrations (UNICA per tabella)
+=======
+#### 1. Table Creation Migrations
+>>>>>>> 4b6b99016 (first commit)
 - **Pattern**: `{timestamp}_create_{table}_table.php`
 - **Purpose**: Define the base table schema
 - **Rule**: Exactly ONE per table per module
 - **Example**: `2024_01_01_000011_create_roles_table.php`
 
+<<<<<<< HEAD
 #### 2. Modifiche allo schema: stessa migrazione
 - **Regola**: Per modificare campi o aggiungere colonne, **NON** creare nuove migrazioni separate
 - **Procedura**: Modificare la **stessa** migrazione esistente e aggiornare il **timestamp** nel nome del file
@@ -63,6 +68,18 @@ $this->tableUpdate(function (Blueprint $table) {
 #### 3. Data Migration Migrations (solo per trasformazioni dati)
 - **Pattern**: `{timestamp}_migrate_{purpose}.php`
 - **Purpose**: Transform or seed data (NON modifiche schema)
+=======
+#### 2. Schema Evolution Migrations
+- **Pattern**: `{timestamp}_{action}_{table}.php`
+- **Purpose**: Modify existing table schema
+- **Examples**:
+  - `2024_06_15_add_email_to_users.php`
+  - `2024_07_20_remove_old_column_from_posts.php`
+
+#### 3. Data Migration Migrations
+- **Pattern**: `{timestamp}_migrate_{purpose}.php`
+- **Purpose**: Transform or seed data
+>>>>>>> 4b6b99016 (first commit)
 - **Examples**:
   - `2024_08_10_migrate_user_roles.php`
   - `2024_09_15_seed_default_permissions.php`
@@ -96,20 +113,31 @@ Modules/User/database/migrations/
 ├── 2024_01_01_000001_create_users_table.php
 ├── 2024_01_01_000011_create_roles_table.php      # Single authoritative
 ├── 2024_01_01_000021_create_permissions_table.php
+<<<<<<< HEAD
 └── 2026_02_22_000000_create_profiles_table.php   # Modifiche: stessa migrazione, timestamp aggiornato
 ```
 
 **NON** creare `add_team_id_to_roles.php` separata: modificare `create_roles_table.php` e aggiornare il timestamp.
 
+=======
+└── 2024_06_15_143000_add_team_id_to_roles.php    # Schema evolution
+```
+
+>>>>>>> 4b6b99016 (first commit)
 #### Schema Evolution Approach
 
 When you need to modify a table:
 
 1. **NEVER** create a new `create_table` migration
+<<<<<<< HEAD
 2. **NEVER** creare migrazioni separate tipo `add_column_to_table`
 3. **ALWAYS** modificare la **stessa** migrazione esistente
 4. **ALWAYS** aggiornare il timestamp nel nome del file
 5. **USE** `XotBaseMigration::tableUpdate()` per aggiunte sicure
+=======
+2. **ALWAYS** create a schema evolution migration
+3. **USE** `XotBaseMigration::tableUpdate()` for safe modifications
+>>>>>>> 4b6b99016 (first commit)
 
 ### XotBaseMigration Best Practices
 
@@ -173,6 +201,7 @@ Each module should:
 3. Document migration dependencies in module README
 4. Follow consistent naming conventions
 
+<<<<<<< HEAD
 ### Main-Module Dependency Rule
 
 **Modelli strettamente dipendenti dal main_module** (es. Profile): la migrazione deve stare nel modulo main (es. TechPlanner), NON in moduli generici (User). Profile è dominio del main_module.
@@ -427,6 +456,8 @@ protected function registerLivewireAuthWidgets(): void
 | Form non funziona | `$wire` non definito | Verificare Alpine.js (vedi sezione precedente) |
 | Labels in inglese | Traduzioni mancanti | Aggiungere in lang/xx/ |
 
+=======
+>>>>>>> 4b6b99016 (first commit)
 ### Exception Cases
 
 **The ONLY exception** to the one-migration-per-table rule:

@@ -692,7 +692,11 @@ return [
 - [NavigationLabelTrait Source](../../Xot/app/Filament/Traits/NavigationLabelTrait.php)
 - [GetTransKeyAction Source](../../Xot/app/Actions/GetTransKeyAction.php)
 - [LangServiceProvider Source](../../Lang/app/Providers/LangServiceProvider.php)
+<<<<<<< HEAD
 - [Translation Philosophy](../../xot/docs/translation-philosophy.md)
+=======
+- [Translation Philosophy](../../Xot/docs/translation-philosophy.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

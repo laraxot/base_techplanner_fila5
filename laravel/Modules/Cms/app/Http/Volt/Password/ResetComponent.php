@@ -10,7 +10,11 @@ use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
 
 /**
+<<<<<<< HEAD
  * @see https://github.com/thedevdojo/genesis/blob/main/stubs/class/resources/views/auth/password/reset.blade.php
+=======
+ * @see https://github.com/thedevdojo/genesis/blob/main/stubs/class/resources/views/pages/auth/password/reset.blade.php
+>>>>>>> 4b6b99016 (first commit)
  */
 #[Layout('cms::layouts.auth')]
 class ResetComponent extends Component

@@ -8,6 +8,7 @@ return [
             'label' => 'delete',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Edit Failed Import Row',
     'plural_label' => 'Edit Failed Import Row (Plurale)',
     'navigation' => [
@@ -41,4 +42,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

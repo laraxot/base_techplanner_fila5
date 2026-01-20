@@ -128,7 +128,11 @@ trait HasAddresses
     {
         return $this->morphMany(Address::class, 'addressable');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Get the primary address for this model.
      */
@@ -137,7 +141,11 @@ trait HasAddresses
         return $this->morphOne(Address::class, 'addressable')
             ->where('is_primary', true);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Get addresses of a specific type.
      */
@@ -146,7 +154,11 @@ trait HasAddresses
         return $this->morphMany(Address::class, 'addressable')
             ->where('type', $type);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Get the home address for this model.
      */
@@ -155,7 +167,11 @@ trait HasAddresses
         return $this->morphOne(Address::class, 'addressable')
             ->where('type', Address::TYPE_HOME);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Get the work address for this model.
      */
@@ -164,7 +180,11 @@ trait HasAddresses
         return $this->morphOne(Address::class, 'addressable')
             ->where('type', Address::TYPE_WORK);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Get the billing address for this model.
      */
@@ -173,7 +193,11 @@ trait HasAddresses
         return $this->morphOne(Address::class, 'addressable')
             ->where('type', Address::TYPE_BILLING);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     /**
      * Get the shipping address for this model.
      */
@@ -191,7 +215,11 @@ Utilizzo del trait:
 class Doctor extends Model
 {
     use HasAddresses;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     // ... altri metodi e proprietà
 }
 
@@ -223,25 +251,41 @@ class AddressForm
                     Forms\Components\TextInput::make('street_address')
                         ->label('address-form.fields.street_address')
                         ->required(),
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 4b6b99016 (first commit)
                     Forms\Components\TextInput::make('address_line2')
                         ->label('address-form.fields.address_line2'),
                 ])
                 ->columns(2),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 4b6b99016 (first commit)
             Forms\Components\Grid::make()
                 ->schema([
                     // Componenti per regione, provincia e comune
                     // ... componenti geografici specifici per l'Italia
                 ])
                 ->columns(3),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 4b6b99016 (first commit)
             Forms\Components\Grid::make()
                 ->schema([
                     Forms\Components\TextInput::make('postal_code')
                         ->label('address-form.fields.postal_code')
                         ->required(),
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 4b6b99016 (first commit)
                     Forms\Components\Select::make('type')
                         ->label('address-form.fields.type')
                         ->options(function () {
@@ -249,7 +293,11 @@ class AddressForm
                         })
                         ->default(Address::TYPE_HOME)
                         ->required(),
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 4b6b99016 (first commit)
                     Forms\Components\Toggle::make('is_primary')
                         ->label('address-form.fields.is_primary')
                         ->default(false),
@@ -257,7 +305,11 @@ class AddressForm
                 ->columns(3),
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     public static function saveAddress(Model $model, array $data): void
     {
         $address = $model->addresses()->updateOrCreate(
@@ -276,7 +328,11 @@ class AddressForm
                 'country_code' => $data['country_code'] ?? 'IT',
             ]
         );
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 4b6b99016 (first commit)
         // Se questo è l'indirizzo principale, imposta tutti gli altri come non principali
         if ($data['is_primary'] ?? false) {
             $model->addresses()
@@ -313,7 +369,11 @@ trait HasAddress
     {
         return json_decode($this->attributes['address_data'] ?? '{}', true);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 4b6b99016 (first commit)
     public function setAddressAttribute(array $value): void
     {
         $this->attributes['address_data'] = json_encode($value);

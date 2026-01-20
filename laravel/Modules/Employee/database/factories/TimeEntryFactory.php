@@ -4,8 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Database\Factories;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Employee\Models\TimeEntry;
+=======
+use Modules\Employee\Models\TimeEntry;
+use Illuminate\Database\Eloquent\Factories\Factory;
+>>>>>>> 4b6b99016 (first commit)
 
 class TimeEntryFactory extends Factory
 {
@@ -22,3 +27,7 @@ class TimeEntryFactory extends Factory
         return [];
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b6b99016 (first commit)

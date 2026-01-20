@@ -81,6 +81,7 @@ return [
     'login' => [
         'title' => 'Accedi al tuo account',
         'subtitle' => 'Inserisci le tue credenziali per accedere',
+<<<<<<< HEAD
         'heading' => 'Pannello clienti :brand',
         'support_copy' => 'Accedi all’area riservata per scaricare documenti, richiedere verifiche e seguire lo stato delle attività pianificate per il tuo studio.',
         'benefits' => [
@@ -96,11 +97,17 @@ return [
         'with_github' => 'Continua con GitHub',
         'or_continue_with' => 'oppure continua con email e password',
         'email' => 'Email',
+=======
+        'email' => 'Indirizzo email',
+>>>>>>> 4b6b99016 (first commit)
         'email_placeholder' => 'esempio@email.com',
         'password' => 'Password',
         'password_placeholder' => '••••••••',
         'remember' => 'Ricordami',
+<<<<<<< HEAD
         'remember_me' => 'Ricordami',
+=======
+>>>>>>> 4b6b99016 (first commit)
         'email_structured' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci la tua email',
@@ -115,8 +122,11 @@ return [
         'submit' => 'Accedi',
         'forgot_password' => 'Password dimenticata?',
         'no_account' => 'Non hai un account?',
+<<<<<<< HEAD
         'create_account' => 'Crea account',
         'logging_in' => 'Accesso in corso…',
+=======
+>>>>>>> 4b6b99016 (first commit)
         'register' => 'Registrati',
         'success' => 'Accesso effettuato con successo.',
         'failed' => 'Credenziali non valide.',
@@ -280,7 +290,11 @@ return [
             'generic' => 'Si è verificato un errore durante il reset della password. Riprova più tardi.',
             'possible_causes' => 'Possibili cause:',
             'causes' => [
+<<<<<<< HEAD
                 'expired_token' => 'Il link di reset è scaduto (valido per 60 minuti]',
+=======
+                'expired_token' => 'Il link di reset è scaduto (valido per 60 minuti)',
+>>>>>>> 4b6b99016 (first commit)
                 'invalid_email' => 'L\'indirizzo email non corrisponde a nessun account',
                 'already_used' => 'Il link di reset è già stato utilizzato',
             ],
@@ -294,6 +308,7 @@ return [
         'token' => 'Il token di reset password non è valido.',
         'user' => 'Non riusciamo a trovare un utente con questo indirizzo email.',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Auth',
         'plural' => 'Auth',
@@ -338,4 +353,11 @@ return [
             'label' => 'Elimina Auth',
         ],
     ],
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+    'actions' => [],
+>>>>>>> 4b6b99016 (first commit)
 ];

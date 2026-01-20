@@ -245,6 +245,7 @@
 - Documentazione aggiornata
 
 ## Collegamenti tra versioni di bottlenecks.md
+<<<<<<< HEAD
 * [bottlenecks.md](../../../gdpr/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../xot/project_docs/bottlenecks.md)
 * [bottlenecks.md](../../../xot/project_docs/performance/bottlenecks.md)
@@ -255,4 +256,16 @@
 * [bottlenecks.md](../../../job/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../media/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../patient/project_docs/roadmap/bottlenecks.md)
+=======
+* [bottlenecks.md](../../../Gdpr/project_docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Xot/project_docs/bottlenecks.md)
+* [bottlenecks.md](../../../Xot/project_docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Xot/project_docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../../User/project_docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../../UI/project_docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../../Lang/project_docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Job/project_docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Media/project_docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Patient/project_docs/roadmap/bottlenecks.md)
+>>>>>>> 4b6b99016 (first commit)
 

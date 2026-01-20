@@ -59,6 +59,7 @@ return [
             'deleted' => 'Template email eliminato con successo',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Mail',
     'plural_label' => 'Mail (Plurale)',
     'navigation' => [
@@ -103,4 +104,6 @@ return [
             'label' => 'Elimina Mail',
         ],
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

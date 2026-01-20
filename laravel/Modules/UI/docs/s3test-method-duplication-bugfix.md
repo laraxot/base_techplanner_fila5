@@ -187,7 +187,11 @@ public function testAndReturnData(): array // Viola SRP
 - [Best Practices](best-practices.md) - Migliori pratiche
 
 ## Data Correzione
+<<<<<<< HEAD
 [DATE]
+=======
+2025-01-06
+>>>>>>> 4b6b99016 (first commit)
 
 ## Correzioni Aggiuntive Implementate
 

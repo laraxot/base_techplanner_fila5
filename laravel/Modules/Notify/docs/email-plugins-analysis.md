@@ -270,4 +270,8 @@ class MailAnalytics
 ## Vedi Anche
 - [Filament Documentation](https://filamentphp.com/docs)
 - [Laravel Mail](https://laravel.com/project_docs/mail)
+<<<<<<< HEAD
+=======
+- [Laravel Mail](https://laravel.com/docs/mail)
+>>>>>>> 4b6b99016 (first commit)
 - [Spatie Packages](https://spatie.be/open-source) 

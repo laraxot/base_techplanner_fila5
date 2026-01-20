@@ -6,6 +6,7 @@ return [
     'fields' => [
         'message' => [
             'label' => 'message',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -27,6 +28,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'view' => [
+            'label' => 'view',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -34,6 +46,7 @@ return [
             'label' => 'create',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Xot Base List Records',
     'plural_label' => 'Xot Base List Records (Plurale)',
     'navigation' => [
@@ -47,4 +60,6 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];

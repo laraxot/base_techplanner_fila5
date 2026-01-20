@@ -97,3 +97,7 @@ Il file ora segue la struttura espansa obbligatoria per le regole Laraxot:
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 4b6b99016 (first commit)

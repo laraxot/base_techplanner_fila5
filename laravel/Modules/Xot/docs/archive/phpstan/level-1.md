@@ -54,6 +54,7 @@ aurmich/dev
 aurmich/dev
 
 ## Collegamenti tra versioni di level_1.md
+<<<<<<< HEAD
 * [level_1.md](laravel/modules/chart/project_docs/phpstan/level_1.md)
 * [level_1.md](laravel/modules/reporting/project_docs/phpstan/level_1.md)
 * [level_1.md](laravel/modules/gdpr/project_docs/phpstan/level_1.md)
@@ -69,6 +70,23 @@ aurmich/dev
 * [level_1.md](laravel/modules/activity/project_docs/phpstan/level_1.md)
 * [level_1.md](laravel/modules/patient/project_docs/phpstan/level_1.md)
 * [level_1.md](laravel/modules/cms/project_docs/phpstan/level_1.md)
+=======
+* [level_1.md](laravel/Modules/Chart/project_docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Reporting/project_docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Gdpr/project_docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Notify/project_docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Xot/project_docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Dental/project_docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/User/project_docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/UI/project_docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Lang/project_docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Job/project_docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Media/project_docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Tenant/project_docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Activity/project_docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Patient/project_docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Cms/project_docs/phpstan/level_1.md)
+>>>>>>> 4b6b99016 (first commit)
 # Rapporto PHPStan Livello 1 per il modulo Xot
 
 Data analisi: 2025-04-15 21:52:32
@@ -125,6 +143,7 @@ aurmich/dev
 aurmich/dev
 
 ## Collegamenti tra versioni di level_1.md
+<<<<<<< HEAD
 * [level_1.md](laravel/modules/chart/docs/phpstan/level_1.md)
 * [level_1.md](laravel/modules/reporting/docs/phpstan/level_1.md)
 * [level_1.md](laravel/modules/gdpr/docs/phpstan/level_1.md)
@@ -140,3 +159,20 @@ aurmich/dev
 * [level_1.md](laravel/modules/activity/docs/phpstan/level_1.md)
 * [level_1.md](laravel/modules/patient/docs/phpstan/level_1.md)
 * [level_1.md](laravel/modules/cms/docs/phpstan/level_1.md)
+=======
+* [level_1.md](laravel/Modules/Chart/docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Reporting/docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Gdpr/docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Notify/docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Xot/docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Dental/docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/User/docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/UI/docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Lang/docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Job/docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Media/docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Tenant/docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Activity/docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Patient/docs/phpstan/level_1.md)
+* [level_1.md](laravel/Modules/Cms/docs/phpstan/level_1.md)
+>>>>>>> 4b6b99016 (first commit)

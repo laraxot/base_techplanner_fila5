@@ -53,4 +53,8 @@ class MedicalDirectorResource extends XotBaseResource
             'edit' => EditMedicalDirector::route('/{record}/edit'),
         ];
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4b6b99016 (first commit)

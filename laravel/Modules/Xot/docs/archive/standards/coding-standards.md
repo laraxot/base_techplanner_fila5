@@ -2,7 +2,11 @@
 
 > **Nota**: Questo documento è correlato a [Convenzioni](../../../project_docs/conventions.md) e [Naming Conventions](../../../project_docs/naming-conventions.md). Per una panoramica completa, consulta tutti i documenti correlati.
 
+<<<<<<< HEAD
 Questo documento contiene gli standard di codice specifici per il progetto il progetto. Per le linee guida generali sulla scrittura del codice, consultare la [documentazione del modulo Xot](../code-standards.md).
+=======
+Questo documento contiene gli standard di codice specifici per il progetto il progetto. Per le linee guida generali sulla scrittura del codice, consultare la [documentazione del modulo Xot](../CODE-STANDARDS.md).
+>>>>>>> 4b6b99016 (first commit)
 
 ## Principi Fondamentali in il progetto
 
@@ -78,7 +82,11 @@ Il codice del progetto il progetto **deve** aderire ai seguenti principi fondame
 
 > **Nota**: Questo documento è correlato a [Convenzioni](../../../project_docs/conventions.md) e [Naming Conventions](../../../project_docs/naming-conventions.md). Per una panoramica completa, consulta tutti i documenti correlati.
 
+<<<<<<< HEAD
 Questo documento contiene gli standard di codice specifici per il progetto il progetto. Per le linee guida generali sulla scrittura del codice, consultare la [documentazione del modulo Xot](../code-standards.md).
+=======
+Questo documento contiene gli standard di codice specifici per il progetto il progetto. Per le linee guida generali sulla scrittura del codice, consultare la [documentazione del modulo Xot](../CODE-STANDARDS.md).
+>>>>>>> 4b6b99016 (first commit)
 
 ## Principi Fondamentali in il progetto
 
@@ -347,7 +355,11 @@ class StorePatientRequest extends FormRequest
 
 - [Convenzioni](../../../project_docs/conventions.md)
 - [Naming Conventions](../../../project_docs/naming-conventions.md)
+<<<<<<< HEAD
 - [Documentazione Xot](../code-standards.md)
+=======
+- [Documentazione Xot](../CODE-STANDARDS.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Collegamenti Documentazione](../../../../project_docs/collegamenti-documentazione.md)## Documentazione del Codice
 
 ### PHPDoc
@@ -602,12 +614,21 @@ git commit -m "fix: correzione calcolo età paziente"
 - Alert su errori
 
 ## Collegamenti tra versioni di coding-standards.md
+<<<<<<< HEAD
 * [coding-standards.md](../../../xot/project_docs/standards/coding-standards.md)
 * [coding-standards.md](../../../xot/project_docs/conventions/coding-standards.md)
+=======
+* [coding-standards.md](../../../Xot/project_docs/standards/coding-standards.md)
+* [coding-standards.md](../../../Xot/project_docs/conventions/coding-standards.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ## Collegamenti Correlati
 
 - [Convenzioni](../../../project_docs/conventions.md)
 - [Naming Conventions](../../../project_docs/naming-conventions.md)
+<<<<<<< HEAD
 - [Documentazione Xot](../code-standards.md)
+=======
+- [Documentazione Xot](../CODE-STANDARDS.md)
+>>>>>>> 4b6b99016 (first commit)
 - [Collegamenti Documentazione](../../../../project_docs/collegamenti-documentazione.md)

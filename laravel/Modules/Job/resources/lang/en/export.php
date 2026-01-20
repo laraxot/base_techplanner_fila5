@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -59,6 +60,29 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'job_id' => [
+            'label' => 'Job ID',
+        ],
+        'exportable_type' => [
+            'label' => 'Exportable Type',
+        ],
+        'file_path' => [
+            'label' => 'File Path',
+        ],
+        'format' => [
+            'label' => 'Format',
+        ],
+        'status' => [
+            'label' => 'Status',
+        ],
+        'created_at' => [
+            'label' => 'Created At',
+        ],
+        'completed_at' => [
+            'label' => 'Completed At',
+>>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'actions' => [
@@ -69,4 +93,8 @@ return [
             'label' => 'Download',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 4b6b99016 (first commit)

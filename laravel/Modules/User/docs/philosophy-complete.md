@@ -252,9 +252,15 @@ class DoctorScope implements Scope
 ## 🔗 Collegamenti
 
 - [Business Logic Deep Dive](./business-logic-deep-dive.md)
+<<<<<<< HEAD
 - [Architecture README](./architecture/readme.md)
 - [Xot Module Foundation](../../xot/docs/philosophy-complete.md)
 - [Tenant Module Integration](../../tenant/docs/philosophy.md)
+=======
+- [Architecture README](./architecture/README.md)
+- [Xot Module Foundation](../../Xot/docs/philosophy-complete.md)
+- [Tenant Module Integration](../../Tenant/docs/philosophy.md)
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 

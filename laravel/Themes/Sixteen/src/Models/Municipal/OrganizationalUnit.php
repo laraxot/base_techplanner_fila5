@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -12,11 +13,20 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+=======
+use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
+use Illuminate\Database\Eloquent\Relations\{HasMany, BelongsTo, MorphMany, BelongsToMany};
+use Illuminate\Database\Eloquent\Casts\Attribute;
+>>>>>>> 4b6b99016 (first commit)
 use Illuminate\Support\Str;
 
 /**
  * Modello per le unità organizzative
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> 4b6b99016 (first commit)
  * Rappresenta uffici, dipartimenti, settori e altre unità organizzative
  * dell'ente secondo l'ontologia AGID
  */
@@ -209,12 +219,20 @@ class OrganizationalUnit extends Model
             get: function () {
                 $path = collect([$this->name]);
                 $current = $this;
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 4b6b99016 (first commit)
                 while ($current->parent) {
                     $current = $current->parent;
                     $path->prepend($current->name);
                 }
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 4b6b99016 (first commit)
                 return $path->implode(' › ');
             }
         );
@@ -239,12 +257,20 @@ class OrganizationalUnit extends Model
             get: function () {
                 $level = 0;
                 $current = $this;
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 4b6b99016 (first commit)
                 while ($current->parent) {
                     $level++;
                     $current = $current->parent;
                 }
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 4b6b99016 (first commit)
                 return $level;
             }
         );
@@ -271,7 +297,10 @@ class OrganizationalUnit extends Model
                 if (empty($this->attributes['slug'])) {
                     $this->attributes['slug'] = Str::slug($value);
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4b6b99016 (first commit)
                 return $value;
             }
         );
@@ -282,7 +311,11 @@ class OrganizationalUnit extends Model
      */
     public function getFormattedCompetences(): array
     {
+<<<<<<< HEAD
         if (! $this->competences || ! is_array($this->competences)) {
+=======
+        if (!$this->competences || !is_array($this->competences)) {
+>>>>>>> 4b6b99016 (first commit)
             return [];
         }
 
@@ -291,7 +324,10 @@ class OrganizationalUnit extends Model
                 if (is_string($competence)) {
                     return ['title' => $competence];
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4b6b99016 (first commit)
                 return $competence;
             })
             ->toArray();
@@ -302,7 +338,11 @@ class OrganizationalUnit extends Model
      */
     public function getFormattedServices(): array
     {
+<<<<<<< HEAD
         if (! $this->services_provided || ! is_array($this->services_provided)) {
+=======
+        if (!$this->services_provided || !is_array($this->services_provided)) {
+>>>>>>> 4b6b99016 (first commit)
             return [];
         }
 
@@ -311,7 +351,10 @@ class OrganizationalUnit extends Model
                 if (is_string($service)) {
                     return ['name' => $service];
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4b6b99016 (first commit)
                 return $service;
             })
             ->toArray();
@@ -322,14 +365,22 @@ class OrganizationalUnit extends Model
      */
     public function getFormattedOfficeHours(): array
     {
+<<<<<<< HEAD
         if (! $this->office_hours || ! is_array($this->office_hours)) {
+=======
+        if (!$this->office_hours || !is_array($this->office_hours)) {
+>>>>>>> 4b6b99016 (first commit)
             return [];
         }
 
         $days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
         $dayNames = [
             'monday' => 'Lunedì',
+<<<<<<< HEAD
             'tuesday' => 'Martedì',
+=======
+            'tuesday' => 'Martedì', 
+>>>>>>> 4b6b99016 (first commit)
             'wednesday' => 'Mercoledì',
             'thursday' => 'Giovedì',
             'friday' => 'Venerdì',
@@ -340,7 +391,10 @@ class OrganizationalUnit extends Model
         return collect($days)
             ->mapWithKeys(function ($day) use ($dayNames) {
                 $hours = $this->office_hours[$day] ?? null;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4b6b99016 (first commit)
                 return [$dayNames[$day] => $hours];
             })
             ->filter()
@@ -358,7 +412,11 @@ class OrganizationalUnit extends Model
 
         $todayHours = $this->office_hours[$currentDay] ?? null;
 
+<<<<<<< HEAD
         if (! $todayHours || ! is_array($todayHours)) {
+=======
+        if (!$todayHours || !is_array($todayHours)) {
+>>>>>>> 4b6b99016 (first commit)
             return false;
         }
 
@@ -449,9 +507,17 @@ class OrganizationalUnit extends Model
             $counter = 1;
 
             while (static::where('slug', $model->slug)->exists()) {
+<<<<<<< HEAD
                 $model->slug = $originalSlug.'-'.$counter;
+=======
+                $model->slug = $originalSlug . '-' . $counter;
+>>>>>>> 4b6b99016 (first commit)
                 $counter++;
             }
         });
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4b6b99016 (first commit)

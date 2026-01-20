@@ -3,7 +3,11 @@
 ## Introduzione
 Questa guida spiega come integrare il provider Netfun come canale custom per l'invio di SMS in Laravel, seguendo le best practice del framework e sfruttando il pacchetto [`spatie/laravel-queueable-action`](https://github.com/spatie/laravel-queueable-action) per la gestione asincrona.
 
+<<<<<<< HEAD
 > **IMPORTANTE**: Prima di procedere, assicurati che la [configurazione richiesta per Netfun](./netfun_config_requirements.md) sia stata completata correttamente nel file `config/sms.php` del modulo Notify.
+=======
+> **IMPORTANTE**: Prima di procedere, assicurati che la [configurazione richiesta per Netfun](./NETFUN_CONFIG_REQUIREMENTS.md) sia stata completata correttamente nel file `config/sms.php` del modulo Notify.
+>>>>>>> 4b6b99016 (first commit)
 
 ---
 
@@ -97,7 +101,11 @@ $response = Http::post($endpoint, $payload);
 
 ### 1.2. Configurazione
 
+<<<<<<< HEAD
 **IMPORTANTE**: Il modulo Notify attualmente utilizza l'autenticazione username/password per Netfun, non l'autenticazione API key descritta qui. Per dettagli sui metodi di autenticazione supportati, consultare la [documentazione sui metodi di autenticazione Netfun](./netfun_authentication_methods.md).
+=======
+**IMPORTANTE**: Il modulo Notify attualmente utilizza l'autenticazione username/password per Netfun, non l'autenticazione API key descritta qui. Per dettagli sui metodi di autenticazione supportati, consultare la [documentazione sui metodi di autenticazione Netfun](./NETFUN_AUTHENTICATION_METHODS.md).
+>>>>>>> 4b6b99016 (first commit)
 
 Configurazione con API key in `config/sms.php` (documentata ma non implementata nel modulo):
 

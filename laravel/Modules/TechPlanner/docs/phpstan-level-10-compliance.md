@@ -1,5 +1,9 @@
 # PHPStan Level 10 Compliance - TechPlanner Module
 
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento**: 2025-12-10  
+>>>>>>> 4b6b99016 (first commit)
 **Status**: ✅ Completamente conforme a PHPStan Level 10
 
 ## 📊 Stato Corrente

@@ -18,7 +18,11 @@ abstract class BaseModel extends XotBaseModel
     protected function casts(): array
     {
         return [
+<<<<<<< HEAD
             // 'id' => 'string',
+=======
+            'id' => 'string',
+>>>>>>> 4b6b99016 (first commit)
             'uuid' => 'string',
             'published_at' => 'datetime',
             'verified_at' => 'datetime',

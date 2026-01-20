@@ -450,6 +450,10 @@ If 'fields' key missing:
 
 ---
 
+<<<<<<< HEAD
+=======
+**Version**: 2.0 (Round 2 - Near Miss)
+>>>>>>> 4b6b99016 (first commit)
 **Date**: 2026-01-09
 **Author**: AI Assistant (after furious self-litigation)
 **Reviewed By**: User (prevented error before it happened)

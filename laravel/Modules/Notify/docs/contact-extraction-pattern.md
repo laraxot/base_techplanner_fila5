@@ -1,5 +1,9 @@
 # Pattern DRY: Estrazione Attributi Contatti da Modelli
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-18  
+>>>>>>> 4b6b99016 (first commit)
 **Modulo**: Notify  
 **Status**: ✅ Pattern consolidato
 

@@ -33,8 +33,11 @@ auth.json
 *.log
 *.old
 *.phar
+<<<<<<< HEAD
 # Merge conflict backup symlinks (Git LFS GH008 se committati)
 *~cc6378f*
+=======
+>>>>>>> 4b6b99016 (first commit)
 laravel/database/migrations/
 laravel/stubs/
 laravel/lang/vendor/
@@ -53,13 +56,18 @@ bashscripts/
 laravel/docker/
 
 .ai/
+<<<<<<< HEAD
 .ai-context/
 .claude/
 .clauderules/
+=======
+.claude/
+>>>>>>> 4b6b99016 (first commit)
 .cursor/
 .gemini/
 .windsurf/
 .flow/
+<<<<<<< HEAD
 .iflow/
 .junie/
 .phive/
@@ -82,3 +90,12 @@ laravel/config/local/techplanner/database/content/information_schema_tables.json
 # Vector DB locale agenti — mai in git
 **/ruvector.db
 ruvector.db
+=======
+.junie/
+.phive/
+.vscode/
+.ai-context/
+.clauderules/
+bashscripts/
+laravel/config/net/sottana/database/content/information_schema_tables.json
+>>>>>>> 4b6b99016 (first commit)

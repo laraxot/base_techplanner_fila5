@@ -27,6 +27,7 @@ return [
         'finished' => 'Die Anwendung wurde erfolgreich Installiert.',
         'exit' => 'Hier Klicken zum Beenden',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -40,4 +41,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 4b6b99016 (first commit)
 ];
