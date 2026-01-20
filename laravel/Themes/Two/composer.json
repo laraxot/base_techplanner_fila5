@@ -1,0 +1,28 @@
+{
+    "name": "<nome progetto>/theme-two",
+    "description": "Tema Two per <nome progetto>",
+    "type": "theme",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "<nome progetto>\\Themes\\Two\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "<nome progetto>\\Themes\\Two\\ThemeServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "*",
+        "filament/filament": "*"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "pestphp/pest": "^2.0"
+    },
+    "minimum-stability": "dev"
+}
