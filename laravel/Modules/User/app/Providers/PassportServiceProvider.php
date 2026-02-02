@@ -20,6 +20,9 @@ use Webmozart\Assert\Assert;
  *
  * Configura Laravel Passport per l'autenticazione OAuth2.
  * Utilizza la configurazione centralizzata da config/user/passport.php.
+ *
+ * @SuppressWarnings("PHPMD.StaticAccess")
+ * @SuppressWarnings("PHPMD.CouplingBetweenObjects")
  */
 class PassportServiceProvider extends ServiceProvider
 {
