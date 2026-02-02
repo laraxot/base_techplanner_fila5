@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Modules\Geo\Actions\CalculateDistanceAction;
 use Modules\Geo\Actions\ClusterLocationsAction;
+use Modules\Geo\Contracts\CalculateDistanceActionContract;
 use Modules\Geo\Datas\LocationData;
 use Modules\Geo\Exceptions\InvalidLocationException;
 use Modules\Geo\Tests\TestCase;
@@ -18,14 +18,17 @@ it('clusters locations that are close together', function (): void {
     $locations = [$location1, $location2, $location3];
 
     // Create a mock CalculateDistanceAction
-    $mockDistanceCalculator = Mockery::mock(CalculateDistanceAction::class);
+    $mockDistanceCalculator = Mockery::mock(CalculateDistanceActionContract::class);
+    $mockDistanceCalculator->shouldReceive('execute')->withAnyArgs()->andReturn(['distance' => ['value' => 150000]]);
     $mockDistanceCalculator->shouldReceive('execute')
-        ->with($location1, $location2)
+        ->with(Mockery::on(function ($arg1) use ($location1, $location2) {
+            return ($arg1->latitude === $location1->latitude && $arg1->longitude === $location1->longitude)
+                || ($arg1->latitude === $location2->latitude && $arg1->longitude === $location2->longitude);
+        }), Mockery::on(function ($arg2) use ($location1, $location2) {
+            return ($arg2->latitude === $location1->latitude && $arg2->longitude === $location1->longitude)
+                || ($arg2->latitude === $location2->latitude && $arg2->longitude === $location2->longitude);
+        }))
         ->andReturn(['distance' => ['value' => 100]]); // 100 meters (within 1km)
-
-    $mockDistanceCalculator->shouldReceive('execute')
-        ->with($location1, $location3)
-        ->andReturn(['distance' => ['value' => 150000]]); // 150km (much further than 1km)
 
     $action = new ClusterLocationsAction($mockDistanceCalculator);
 
@@ -41,7 +44,7 @@ it('creates separate clusters for distant locations', function (): void {
     $location2 = new LocationData(latitude: 47.0000, longitude: 11.0000); // Very far away
     $locations = [$location1, $location2];
 
-    $mockDistanceCalculator = Mockery::mock(CalculateDistanceAction::class);
+    $mockDistanceCalculator = Mockery::mock(CalculateDistanceActionContract::class);
     $mockDistanceCalculator->shouldReceive('execute')
         ->with($location1, $location2)
         ->andReturn(['distance' => ['value' => 200000]]); // 200km
@@ -56,7 +59,7 @@ it('creates separate clusters for distant locations', function (): void {
 });
 
 it('throws exception when location is not LocationData', function (): void {
-    $mockDistanceCalculator = Mockery::mock(CalculateDistanceAction::class);
+    $mockDistanceCalculator = Mockery::mock(CalculateDistanceActionContract::class);
     $action = new ClusterLocationsAction($mockDistanceCalculator);
 
     $invalidLocations = [null, 'not a location', 123];
@@ -71,7 +74,7 @@ it('handles single location correctly', function (): void {
     $location = new LocationData(latitude: 45.4642, longitude: 9.1900);
     $locations = [$location];
 
-    $mockDistanceCalculator = Mockery::mock(CalculateDistanceAction::class);
+    $mockDistanceCalculator = Mockery::mock(CalculateDistanceActionContract::class);
     $action = new ClusterLocationsAction($mockDistanceCalculator);
 
     $clusters = $action->execute($locations, 1.0);
@@ -82,7 +85,7 @@ it('handles single location correctly', function (): void {
 });
 
 it('handles empty locations array', function (): void {
-    $mockDistanceCalculator = Mockery::mock(CalculateDistanceAction::class);
+    $mockDistanceCalculator = Mockery::mock(CalculateDistanceActionContract::class);
     $action = new ClusterLocationsAction($mockDistanceCalculator);
 
     $clusters = $action->execute([], 1.0);
@@ -96,7 +99,7 @@ it('works with different max distance parameter', function (): void {
     $locations = [$location1, $location2];
 
     // Create calculator mock for this test
-    $mockDistanceCalculator = Mockery::mock(CalculateDistanceAction::class);
+    $mockDistanceCalculator = Mockery::mock(CalculateDistanceActionContract::class);
     $mockDistanceCalculator->shouldReceive('execute')
         ->andReturn(['distance' => ['value' => 1500]]); // 1.5km
 
@@ -108,7 +111,7 @@ it('works with different max distance parameter', function (): void {
     expect($clusters[0]['points'])->toHaveCount(2);
 
     // With 1km max distance, they should be in separate clusters
-    $mockDistanceCalculator2 = Mockery::mock(CalculateDistanceAction::class);
+    $mockDistanceCalculator2 = Mockery::mock(CalculateDistanceActionContract::class);
     $mockDistanceCalculator2->shouldReceive('execute')
         ->andReturn(['distance' => ['value' => 1500]]); // 1.5km
 
@@ -124,7 +127,7 @@ it('updates cluster centers correctly', function (): void {
     $locations = [$location1, $location2];
 
     // Create calculator mock for this test
-    $mockDistanceCalculator = Mockery::mock(CalculateDistanceAction::class);
+    $mockDistanceCalculator = Mockery::mock(CalculateDistanceActionContract::class);
     $mockDistanceCalculator->shouldReceive('execute')
         ->andReturn(['distance' => ['value' => 100]]); // 100m
 

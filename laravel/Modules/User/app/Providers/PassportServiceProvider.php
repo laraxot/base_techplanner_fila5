@@ -100,14 +100,14 @@ class PassportServiceProvider extends ServiceProvider
         $clientModel = config('user.passport.client_model', OauthClient::class);
         Assert::stringNotEmpty($clientModel);
 
-        // @phpstan-ignore argument.type - Passport v5 compatibility issue
-        \Laravel\Passport\Passport::useTokenModel($tokenModel);
-        // @phpstan-ignore argument.type - Passport v5 compatibility issue
-        \Laravel\Passport\Passport::useRefreshTokenModel($refreshTokenModel);
-        // @phpstan-ignore argument.type - Passport v5 compatibility issue
-        \Laravel\Passport\Passport::useAuthCodeModel($authCodeModel);
-        // @phpstan-ignore argument.type - Passport v5 compatibility issue
-        \Laravel\Passport\Passport::useClientModel($clientModel);
+        /* @var class-string<\Laravel\Passport\Token> $tokenModel */
+        Passport::useTokenModel($tokenModel);
+        /* @var class-string<\Laravel\Passport\RefreshToken> $refreshTokenModel */
+        Passport::useRefreshTokenModel($refreshTokenModel);
+        /* @var class-string<\Laravel\Passport\AuthCode> $authCodeModel */
+        Passport::useAuthCodeModel($authCodeModel);
+        /* @var class-string<\Laravel\Passport\Client> $clientModel */
+        Passport::useClientModel($clientModel);
 
         // @phpstan-ignore-next-line - method_exists check kept for backward compatibility with older Passport versions
         if (method_exists(Passport::class, 'useDeviceCodeModel')) {
