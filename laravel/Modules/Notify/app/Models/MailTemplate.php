@@ -14,6 +14,7 @@ use Spatie\MailTemplates\Interfaces\MailTemplateInterface;
 use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
+use Spatie\Translatable\HasTranslations;
 
 /**
  * @property int $id
@@ -78,8 +79,10 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
     use HasSlug;
 
     // use SoftDeletes;
-    // NOTE: Translation functionality is now handled by Filament 5's built-in system
-    // For JSON columns that store translations, ensure they're properly configured in database migrations
+    use HasTranslations;
+
+    /** @var list<string> */
+    public array $translatable = ['subject', 'html_template', 'text_template', 'sms_template'];
 
     /** @var string */
     protected $connection = 'notify';

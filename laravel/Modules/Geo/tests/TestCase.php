@@ -6,69 +6,46 @@ namespace Modules\Geo\Tests;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
+use Modules\Geo\Providers\GeoServiceProvider;
+use Modules\User\Providers\UserServiceProvider;
+use Modules\Xot\Providers\XotServiceProvider;
 use Modules\Xot\Tests\CreatesApplication;
 
 /**
  * Base test case for Geo module.
  *
- * Uses SQLite shared memory database following Activity/TestCase.php pattern.
+ * Uses MySQL from .env.testing.
  */
 abstract class TestCase extends BaseTestCase
 {
     use CreatesApplication;
     use DatabaseTransactions;
 
+    protected static bool $migrated = false;
+
     protected function setUp(): void
     {
         parent::setUp();
 
-        $dbName = 'file:memdb_geo_'.Str::random(10).'?mode=memory&cache=shared';
+        if (! self::$migrated) {
+            $this->artisan('migrate:fresh', [
+                '--force' => true,
+            ]);
 
-        $connections = [
-            'sqlite',
-            'mysql',
-            'mariadb',
-            'pgsql',
-            'activity',
-            'cms',
-            'gdpr',
-            'geo',
-            'job',
-            'lang',
-            'media',
-            'meetup',
-            'notify',
-            'seo',
-            'tenant',
-            'ui',
-            'user',
-            'xot',
+            $this->artisan('module:migrate', [
+                '--force' => true,
+            ]);
+
+            self::$migrated = true;
+        }
+    }
+
+    protected function getPackageProviders($app): array
+    {
+        return [
+            GeoServiceProvider::class,
+            UserServiceProvider::class,
+            XotServiceProvider::class,
         ];
-
-        foreach ($connections as $conn) {
-            $this->app['config']->set("database.connections.{$conn}.driver", 'sqlite');
-            $this->app['config']->set("database.connections.{$conn}.database", $dbName);
-        }
-
-        foreach ($connections as $conn) {
-            DB::purge($conn);
-        }
-
-        foreach ($connections as $conn) {
-            try {
-                $pdo = DB::connection($conn)->getPdo();
-                if ($pdo instanceof \PDO && method_exists($pdo, 'sqliteCreateFunction')) {
-                    $pdo->sqliteCreateFunction('md5', static fn (?string $value): ?string => null === $value ? null : md5($value));
-                    $pdo->sqliteCreateFunction('unhex', static fn (?string $value): ?string => $value);
-                }
-            } catch (\Throwable) {
-            }
-        }
-
-        $this->artisan('module:migrate', ['module' => 'Xot', '--force' => true]);
-        $this->artisan('module:migrate', ['module' => 'User', '--force' => true]);
-        $this->artisan('module:migrate', ['module' => 'Geo', '--force' => true]);
     }
 }

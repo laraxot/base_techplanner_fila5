@@ -5,7 +5,7 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Modules\Geo\Models\Comune;
-use Tests\TestCase;
+use Modules\Geo\Tests\TestCase;
 
 uses(TestCase::class);
 
