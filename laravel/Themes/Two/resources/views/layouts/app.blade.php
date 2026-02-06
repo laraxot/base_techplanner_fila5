@@ -16,19 +16,25 @@
         </style>
 
         @filamentStyles
-        @vite('resources/css/app.css', 'themes/Two/build')
+        @vite('resources/css/app.css', 'themes/Two')
     </head>
 
     <body class="antialiased font-sans bg-base-100 text-base-content selection:bg-primary selection:text-primary-content">
         {{-- Navigation --}}
         <x-blocks.navigation.simple 
             :brand="config('app.name')" 
+            brandSubtitle="Gestione Tecnica"
             :menu_items="[
-                ['label' => 'Homepage', 'url' => '/it'],
-                ['label' => 'Features', 'url' => '#features'],
-                ['label' => 'Prezzi', 'url' => '#pricing'],
-                ['label' => 'Contatti', 'url' => '/it/contact'],
+                ['label' => 'Home', 'url' => '/' . app()->getLocale(), 'active' => request()->is(app()->getLocale())],
+                ['label' => 'Chi Siamo', 'url' => '/' . app()->getLocale() . '/chi-siamo'],
+                ['label' => 'Servizi', 'url' => '/' . app()->getLocale() . '/servizi'],
+                ['label' => 'Blog', 'url' => '/' . app()->getLocale() . '/blog'],
+                ['label' => 'FAQ', 'url' => '/' . app()->getLocale() . '/faq'],
+                ['label' => 'Contatti', 'url' => '/' . app()->getLocale() . '/contatti'],
             ]" 
+            ctaLabel="Richiedi Consulenza"
+            ctaUrl="/contatti"
+            ctaIcon="phone"
         />
 
         <main class="relative min-h-screen">
@@ -48,7 +54,7 @@
         @footer
         
         @filamentScripts
-        @vite('resources/js/app.js', 'themes/Two/build')
+        @vite('resources/js/app.js', 'themes/Two')
     </body>
 
 </html>

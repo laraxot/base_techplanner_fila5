@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ $title ? "$title — " : '' }}{{ config('app.name') }}</title>
 
-        @vite(['resources/css/app.css'])
+        @vite(['resources/css/app.css'], 'themes/Two')
 
         @livewireStyles
     </head>
