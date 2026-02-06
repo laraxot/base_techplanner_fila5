@@ -1,26 +1,34 @@
 {{--
 /**
  * Services Cards Block - Theme Two
- * Card servizi con icona cerchio, titolo, descrizione e link
+ * Professional service cards with colored top border, icon, title, description and link
  */
 --}}
 
-<section class="py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         @if(isset($title))
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">{{ $title }}</h2>
-        @endif
-
-        @if(isset($description))
-            <p class="text-lg text-center text-gray-600 mb-14 max-w-2xl mx-auto">{{ $description }}</p>
+            <div class="text-center mb-14">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{{ $title }}</h2>
+                @if(isset($description))
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">{{ $description }}</p>
+                @endif
+            </div>
         @endif
 
         @if(isset($services) && is_array($services))
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-{{ min(count($services), 3) }} gap-8">
-                @foreach($services as $service)
-                    <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                @foreach($services as $index => $service)
+                    @php
+                        $colors = ['emerald', 'blue', 'indigo'];
+                        $color = $service['color'] ?? $colors[$index % count($colors)];
+                    @endphp
+                    <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+                        {{-- Colored top border --}}
+                        <div class="absolute top-0 left-0 right-0 h-1 bg-{{ $color }}-500"></div>
+
                         @if(isset($service['icon']))
-                            <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
+                            <div class="w-14 h-14 rounded-xl bg-{{ $color }}-50 text-{{ $color }}-600 flex items-center justify-center mb-6 group-hover:bg-{{ $color }}-500 group-hover:text-white transition-all duration-300">
                                 <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                                     @switch($service['icon'])
                                         @case('shield-check')
@@ -28,6 +36,9 @@
                                         @break
                                         @case('bolt')
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+                                        @break
+                                        @case('wrench')
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17l-4.655 4.655a2.25 2.25 0 01-3.182-3.182l4.655-4.655M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 4.655"/>
                                         @break
                                         @case('document-check')
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9.375-9zM10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"/>
@@ -53,7 +64,7 @@
 
                         @if(isset($service['url']))
                             <a href="{{ $service['url'] }}"
-                               class="inline-flex items-center gap-1 text-emerald-600 font-semibold hover:text-emerald-700 group-hover:gap-2 transition-all duration-300">
+                               class="inline-flex items-center gap-1.5 text-{{ $color }}-600 font-semibold hover:text-{{ $color }}-700 group-hover:gap-2.5 transition-all duration-300 text-sm">
                                 {{ $service['link_label'] ?? 'Scopri di più' }}
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                             </a>
