@@ -16,7 +16,10 @@
 - **Components**: Basic Blade components
 
 ### 📊 Module Statistics
-
+- [Modern UI Overhaul](modern-ui-overhaul.md)
+- [MCP Integration Status](mcp-integration.md)
+- [UI/UX Research](mcp-ui-ux.md)
+- [PHPStan Status](phpstan-compliance-status.md)
 - **Total Docs**: 5 files
 - **Status**: Available
 - **Compliance**: Laraxot standards
