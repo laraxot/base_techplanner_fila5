@@ -11,6 +11,8 @@
         "nwidart/laravel-modules": "*"
     },
     "require-dev": {
+    },
+    "require-dev-comment": {
         "barryvdh/laravel-debugbar": "*",
         "carthage-software/mago": "*",
         "filament/upgrade": "^5.0",
