@@ -206,6 +206,11 @@ php artisan test --coverage
 - [`analysis/`](./analysis/) - Technical analysis, implementation studies, and architectural reviews
   - Various analysis files for specific implementations and corrections
 
+### 🎯 Site Replication Documentation
+- [`site-replication-complete-summary.md`](./site-replication-complete-summary.md) - ⭐ NEW: Complete summary of site replication from target site
+- [`site-comparison-analysis.md`](./site-comparison-analysis.md) - Analysis of differences between sites
+- [`site-comparison.md`](./site-comparison.md) - Site comparison overview
+
 ### 🔧 Maintenance and Troubleshooting
 - [`maintenance/`](./maintenance/) - Maintenance procedures and operational guides
   - [`git-merge-conflicts.md`](./maintenance/git-merge-conflicts.md) - Git conflict resolution procedures

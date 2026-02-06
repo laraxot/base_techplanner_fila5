@@ -12,12 +12,12 @@
 {{-- Header Navigation - Dynamic Target Site Parity --}}
 <header x-data="{ mobileMenuOpen: false, scrolled: false }" 
         x-init="window.addEventListener('scroll', () => { scrolled = window.pageYOffset > 50 })"
-        :class="scrolled ? 'bg-[#1E5A96] shadow-lg py-2' : 'bg-white/10 backdrop-blur-md border-b border-white/20 py-4'"
+        :class="scrolled ? 'bg-brand-blue shadow-lg py-2' : 'bg-white/10 backdrop-blur-md border-b border-white/20 py-4'"
         class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
     <div class="container mx-auto px-4 flex justify-between items-center">
         {{-- Logo --}}
         <a href="/{{ app()->getLocale() }}" class="flex items-center space-x-2 group">
-            <div class="w-10 h-10 bg-[#E67E22] rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
+            <div class="w-10 h-10 bg-brand-orange rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
                 <span class="text-white font-bold text-xl">TP</span>
             </div>
             <div class="flex flex-col">
@@ -32,9 +32,9 @@
         <nav class="hidden md:flex space-x-8" role="navigation" aria-label="Menu principale">
             @forelse($menuItems as $item)
                 <a href="{{ $item['url'] ?? '#' }}" 
-                   class="text-white hover:text-[#E67E22] transition-colors font-medium text-sm lg:text-base relative group">
+                   class="text-white hover:text-brand-orange transition-colors font-medium text-sm lg:text-base relative group">
                     {{ $item['label'] ?? '' }}
-                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#E67E22] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
                 </a>
             @empty
                 <a href="#services" class="text-white hover:text-[#E67E22] transition-colors font-medium relative group">
@@ -54,7 +54,7 @@
 
         {{-- CTA Button --}}
         <div class="flex items-center space-x-4">
-            <a href="{{ $ctaUrl }}" class="bg-[#E67E22] hover:bg-[#d35400] text-white px-6 py-2 rounded-lg transition-all duration-300 font-medium shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+            <a href="{{ $ctaUrl }}" class="bg-brand-orange hover:bg-brand-orange/90 text-white px-6 py-2 rounded-lg transition-all duration-300 font-medium shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                 {{ $ctaLabel }}
             </a>
 
@@ -78,12 +78,12 @@
          x-transition:leave-end="opacity-0 -translate-y-2"
          @click.away="mobileMenuOpen = false"
          x-cloak
-         class="md:hidden bg-[#1E5A96]/95 backdrop-blur-lg border-t border-white/10 shadow-2xl overflow-hidden mt-2">
+         class="md:hidden bg-brand-blue/95 backdrop-blur-lg border-t border-white/10 shadow-2xl overflow-hidden mt-2">
         <div class="px-4 py-6 space-y-4">
             @foreach($menuItems as $item)
                 <a href="{{ $item['url'] ?? '#' }}" 
                    @click="mobileMenuOpen = false"
-                   class="block py-2 text-white border-b border-white/5 hover:text-[#E67E22] transition-colors font-medium">
+                   class="block py-2 text-white border-b border-white/5 hover:text-brand-orange transition-colors font-medium">
                     {{ $item['label'] ?? '' }}
                 </a>
             @endforeach
