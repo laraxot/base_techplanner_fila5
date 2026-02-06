@@ -1,28 +1,48 @@
 {{-- CTA Banner Block - Theme Two --}}
-<section class="py-12 {{ $background_color ?? 'bg-slate-800' }}">
-    <div class="max-w-4xl mx-auto px-4 text-center {{ $text_color ?? 'text-white' }}">
-        @if(isset($title))
-            <h2 class="text-3xl font-bold mb-4">{{ $title }}</h2>
+@props([
+    'title' => '',
+    'description' => '',
+    'cta_primary' => ['label' => 'Inizia', 'url' => '#'],
+    'cta_secondary' => ['label' => 'Scopri', 'url' => '#'],
+    'background_gradient' => 'from-primary to-secondary',
+    'text_color' => 'text-primary-content'
+])
+
+<section class="py-20 relative overflow-hidden">
+    {{-- Dynamic Gradient Background --}}
+    <div class="absolute inset-0 bg-gradient-to-br {{ $background_gradient }} opacity-90"></div>
+    
+    {{-- Overlay pattern --}}
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+
+    <div class="max-w-5xl mx-auto px-6 relative z-10 text-center {{ $text_color }}">
+        @if($title)
+            <h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight drop-shadow-lg">
+                {{ $title }}
+            </h2>
         @endif
 
-        @if(isset($description))
-            <p class="text-lg mb-8 opacity-90">{{ $description }}</p>
+        @if($description)
+            <p class="text-xl md:text-2xl mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed font-medium">
+                {{ $description }}
+            </p>
         @endif
 
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            @if(isset($cta_primary))
-                <a href="{{ $cta_primary['url'] ?? '#' }}" 
-                   class="bg-white text-slate-900 px-6 py-3 rounded font-semibold hover:bg-gray-100 transition">
-                    {{ $cta_primary['label'] ?? 'Inizia' }}
+        <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            @if(isset($cta_primary['label']))
+                <a href="{{ $cta_primary['url'] }}" 
+                   class="btn btn-lg btn-neutral px-10 shadow-2xl hover:scale-105 transition-all duration-300">
+                    {{ $cta_primary['label'] }}
                 </a>
             @endif
 
-            @if(isset($cta_secondary))
-                <a href="{{ $cta_secondary['url'] ?? '#' }}" 
-                   class="border border-white text-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-slate-900 transition">
-                    {{ $cta_secondary['label'] ?? 'Scopri' }}
+            @if(isset($cta_secondary['label']))
+                <a href="{{ $cta_secondary['url'] }}" 
+                   class="btn btn-lg btn-outline border-white text-white hover:bg-white hover:text-primary px-10 transition-all duration-300">
+                    {{ $cta_secondary['label'] }}
                 </a>
             @endif
         </div>
     </div>
 </section>
+

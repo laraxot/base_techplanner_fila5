@@ -1,0 +1,19 @@
+questo 
+http://127.0.0.1:8000/it
+deve diventare uguale a 
+https://lightseagreen-dogfish-560272.hostingersite.com/
+
+ricordati che noi lo gestiamo a blocchi gestiti da https://filamentphp.com/docs/5.x/forms/builder  e che i contenuti della homepage sono dentro 
+/var/www/_bases/base_techplanner_fila5/laravel/config/local/techplanner/database/content/pages/home.json  e se devi creare nuovi blocchi li crei dentro 
+laravel/Themes/Two/resources/views/components/blocks
+
+usa gli mcp per crearti screenshots e salvarteli dentro laravel/Themes/Two/docs e poi analizzali e crei documentazione dentro laravel/Themes/Two/docs sul cosa fare per replicare 
+https://lightseagreen-dogfish-560272.hostingersite.com/
+dentro 
+http://127.0.0.1:8000/it (che e' il nostro)
+anzi il nostro deve essere ancora piu' bello percio' le migliorie le documenti dentro laravel/Themes/Two/docs, poi studi aggiorni e migliori le cartelle docs dentro i moduli e dentro i temi
+
+ricordati che il nostro e' un sito multilingua, seo ready , inbound marketing ready , adsense ready , percio' utilizza anche internet per prendere le informazioni mancanti e documentarle dentro le cartelle docs dentro i moduli e dentro i temi 
+
+
+la tua memoria sono le cartelle docs dentro i moduli e dentro i temi, percio' edvi costantemente aggiornarle e studiarle e cerca sempre di imparare dai tuoi errori

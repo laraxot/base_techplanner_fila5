@@ -1,33 +1,49 @@
-@tailwind base;
+@import 'tailwindcss';
+@plugin "daisyui";
 
-:root {
-    --main-nav-height: 4rem;
+@theme {
+    --color-primary-soft: oklch(0.9 0.05 250);
+    --color-glass-white: rgba(255, 255, 255, 0.1);
+    
+    --animate-float: float 3s ease-in-out infinite;
+    
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
 }
 
-a, .prose a {
-    @apply text-green-800 no-underline font-medium;
+/* Glassmorphism Utility */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.prose img {
-    @apply bg-gray-200;
-}
+/* Required by all components */
+@import '../../vendor/filament/support/resources/css/index.css';
 
-@tailwind components;
 
-.main-nav {
-    height: var(--main-nav-height);
-}
+/* Required by actions and tables */
+@import '../../vendor/filament/actions/resources/css/index.css';
 
-.main-nav a {
-    @apply text-inherit font-normal;
-}
+/* Required by actions, forms and tables */
+@import '../../vendor/filament/forms/resources/css/index.css';
 
-.site-intro {
-    height: calc(100vh - var(--main-nav-height));
-}
+/* Required by actions and infolists */
+@import '../../vendor/filament/infolists/resources/css/index.css';
 
-.site-intro > * {
-    margin-top: calc(-1 * var(--main-nav-height));
-}
+/* Required by notifications */
+@import '../../vendor/filament/notifications/resources/css/index.css';
 
-@tailwind utilities;
+/* Required by actions, infolists, forms, schemas and tables */
+@import '../../vendor/filament/schemas/resources/css/index.css';
+
+/* Required by tables */
+@import '../../vendor/filament/tables/resources/css/index.css';
+
+/* Required by widgets */
+@import '../../vendor/filament/widgets/resources/css/index.css';
+
+@variant dark (&:where(.dark, .dark *));
