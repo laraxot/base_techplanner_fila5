@@ -61,7 +61,7 @@ Usiamo MCP servers per migliorare la qualità della UI/UX generata dall'AI, forn
 - **Backend**: Laravel + Filament v5 + Livewire
 - **Build**: Vite 6.x
 - **Componenti**: Blade components + Filament components
-- **Output build**: `public_html/themes/Two/dist/`
+- **Output build**: `public_html/themes/Two/` (manifest.json + assets/)
 
 ## Come Usare gli MCP nel Workflow
 

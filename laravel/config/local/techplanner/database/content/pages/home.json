@@ -12,75 +12,219 @@
                 "type": "hero",
                 "slug": "hero-section",
                 "data": {
-                    "view": "pub_theme::components.blocks.hero.main",
-                    "title": "Benvenuto in TechPlanner",
-                    "subtitle": "La rivoluzione nella gestione tecnica aziendale",
-                    "description": "Ottimizza ogni processo, automatizza la pianificazione e potenzia la produttività del tuo team con la piattaforma più avanzata sul mercato.",
-                    "background_image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2069",
-                    "ctaPrimary": {
-                        "label": "Inizia la Prova Gratuita",
-                        "url": "/register",
-                        "style": "primary"
-                    },
-                    "ctaSecondary": {
-                        "label": "Guarda come funziona",
-                        "url": "#features",
-                        "style": "secondary"
-                    }
+                    "view": "pub_theme::components.blocks.hero.simple",
+                    "title": "Radioprotezione e Sicurezza Radiologica per Studi Dentistici e Veterinari",
+                    "subtitle": "Conformità normativa garantita, sicurezza pazienti e staff, controlli periodici certificati secondo D.Lgs 101/2020 e Direttiva 2013/59/Euratom.",
+                    "primary_cta_label": "Richiedi Controllo Radioprotezione",
+                    "primary_cta_url": "/it/contact",
+                    "secondary_cta_label": "Scopri i Servizi",
+                    "secondary_cta_url": "/it/servizi",
+                    "image": "https://images.unsplash.com/photo-1581595219315-a187dd40c322",
+                    "stats": [
+                        {"label": "Conformità D.Lgs 101/2020", "value": "100%"},
+                        {"label": "Esperti Qualificati", "value": "Certificato"},
+                        {"label": "Intervento in 24/48h", "value": "Rapido"}
+                    ]
                 }
             },
             {
-                "type": "features",
-                "slug": "features-grid",
+                "type": "services-grid",
+                "slug": "main-services",
                 "data": {
-                    "view": "pub_theme::components.blocks.features.grid",
-                    "title": "Eccellenza Operativa",
-                    "description": "Strumenti progettati per scalare la tua azienda verso il successo",
-                    "features": [
+                    "view": "pub_theme::components.blocks.services.grid",
+                    "title": "I Nostri Servizi",
+                    "subtitle": "Soluzioni complete per la sicurezza radiologica",
+                    "services": [
                         {
-                            "icon": "heroicon-o-users",
-                            "title": "Smart HR Management",
-                            "description": "Algoritmi intelligenti per la gestione del personale e valutazione delle performance.",
-                            "url": "/employee/admin",
-                            "color": "primary"
+                            "title": "Controllo Radioprotezione",
+                            "description": "Verifiche periodiche e straordinarie per apparecchiature radiologiche in ambito odontoiatrico e veterinario. Garanzia di conformità al D.Lgs 101/2020.",
+                            "icon": "heroicon-o-shield-check",
+                            "url": "/it/servizi"
                         },
                         {
-                            "icon": "heroicon-o-chart-bar",
-                            "title": "Predictive Analytics",
-                            "description": "Prevedi i trend e prendi decisioni basate sui dati con reportistica real-time.",
-                            "url": "/chart/admin",
-                            "color": "secondary"
+                            "title": "Controllo Elettromedicali",
+                            "description": "Manutenzione preventiva e verifiche di sicurezza elettrica su tutti i dispositivi medici (IEC 62353), assicurando funzionalità e sicurezza per pazienti e operatori.",
+                            "icon": "heroicon-o-wrench-screwdriver",
+                            "url": "/it/servizi"
                         },
                         {
-                            "icon": "heroicon-o-sparkles",
-                            "title": "Automazione Totale",
-                            "description": "Elimina i task ripetitivi e focalizzati su ciò che conta davvero per il tuo business.",
-                            "url": "/admin/settings",
-                            "color": "accent"
+                            "title": "Documentazione e Conformità",
+                            "description": "Gestione completa della documentazione obbligatoria: registri di controllo, nomine esperti qualificati, relazioni tecniche e comunicazioni agli organi competenti.",
+                            "icon": "heroicon-o-document-check",
+                            "url": "/it/servizi"
                         }
                     ]
                 }
             },
             {
-                "type": "cta",
-                "slug": "final-cta",
+                "type": "why-critical",
+                "slug": "why-radioprotection",
                 "data": {
-                    "view": "pub_theme::components.blocks.cta.banner",
-                    "title": "Trasforma la tua Azienda Oggi",
-                    "description": "Oltre 500 aziende leader utilizzano già TechPlanner per dominare il loro mercato.",
-                    "background_gradient": "from-indigo-600 via-blue-700 to-primary",
-                    "text_color": "text-white",
-                    "cta_primary": {
-                        "label": "Accedi Ora",
-                        "url": "/admin"
-                    },
-                    "cta_secondary": {
-                        "label": "Parla con un esperto",
-                        "url": "/contact"
-                    }
+                    "view": "pub_theme::components.blocks.why-critical.grid",
+                    "title": "Perché la Radioprotezione è Critica?",
+                    "subtitle": "Non è solo burocrazia: è la base per operare in sicurezza e legalità nel settore sanitario.",
+                    "points": [
+                        {
+                            "title": "Rischi e Sanzioni",
+                            "description": "La mancata conformità comporta sanzioni penali e amministrative pesanti, oltre al rischio di sospensione dell'attività.",
+                            "icon": "heroicon-o-exclamation-triangle"
+                        },
+                        {
+                            "title": "Obblighi Normativi",
+                            "description": "Rispetto rigoroso del D.Lgs 101/2020 e della Direttiva 2013/59/Euratom per la tutela della salute.",
+                            "icon": "heroicon-o-book-open"
+                        },
+                        {
+                            "title": "Sicurezza Persone",
+                            "description": "Protezione fondamentale per operatori, pazienti e pubblico contro i rischi delle radiazioni ionizzanti.",
+                            "icon": "heroicon-o-user-group"
+                        },
+                        {
+                            "title": "Responsabilità Legale",
+                            "description": "L'esercente è legalmente responsabile. Una gestione corretta è l'unica tutela in caso di contenziosi.",
+                            "icon": "heroicon-o-scale"
+                        }
+                    ]
                 }
             }
-
+,
+            {
+                "type": "sectors",
+                "slug": "industry-sectors",
+                "data": {
+                    "view": "pub_theme::components.blocks.sectors.split",
+                    "title": "Settori di Specializzazione",
+                    "subtitle": "Competenza verticale per esigenze specifiche",
+                    "sectors": [
+                        {
+                            "title": "Manufacturing",
+                            "description": "Ottimizzazione per aziende manifatturiere",
+                            "use_cases": [
+                                "Gestione Turni e Presenze",
+                                "Pianificazione Produzione",
+                                "Controllo Qualità",
+                                "Manutenzione Preventiva"
+                            ],
+                            "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+                        },
+                        {
+                            "title": "Services",
+                            "description": "Soluzioni per servizi professionali",
+                            "use_cases": [
+                                "Gestione Progetti",
+                                "Resource Allocation",
+                                "Client Relationship",
+                                "Performance Tracking"
+                            ],
+                            "image": "https://images.unsplash.com/photo-1551434678-e076c223a692"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "what-we-do",
+                "slug": "our-approach",
+                "data": {
+                    "view": "pub_theme::components.blocks.what-we-do.checklist",
+                    "title": "Cosa Facciamo",
+                    "subtitle": "Il nostro approccio copre ogni aspetto della gestione tecnica aziendale",
+                    "checklist": [
+                        {
+                            "icon": "heroicon-o-cpu-chip",
+                            "title": "Automazione Intelligente",
+                            "description": "Sostituiamo processi manuali con algoritmi efficienti e affidabili."
+                        },
+                        {
+                            "icon": "heroicon-o-chart-pie",
+                            "title": "Analytics Avanzati",
+                            "description": "Dashboard in tempo reale per decisioni basate sui dati."
+                        },
+                        {
+                            "icon": "heroicon-o-users-group",
+                            "title": "Gestione Team",
+                            "description": "Ottimizzazione risorse umane con performance tracking e scheduling."
+                        },
+                        {
+                            "icon": "heroicon-o-lock-closed",
+                            "title": "Sicurezza",
+                            "description": "Protezione dati e conformità GDPR per totale tranquillità."
+                        },
+                        {
+                            "icon": "heroicon-o-document-text",
+                            "title": "Reporting",
+                            "description": "Reportistica dettagliata e personalizzabile per stakeholder."
+                        },
+                        {
+                            "icon": "heroicon-o-arrows-pointing-out",
+                            "title": "Integrazione",
+                            "description": "Connessione con i tuoi sistemi esistenti senza interruzioni."
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "testimonials",
+                "slug": "customer-reviews",
+                "data": {
+                    "view": "pub_theme::components.blocks.testimonials.grid",
+                    "title": "Dicono di Noi",
+                    "subtitle": "La tranquillità di chi ha scelto la sicurezza certificata",
+                    "testimonials": [
+                        {
+                            "name": "Dr. Roberto Magni",
+                            "role": "Centro Odontoiatrico Magni",
+                            "location": "Padova, PD",
+                            "avatar": "https://images.unsplash.com/photo-1537368910025-700350fe46c7",
+                            "rating": 5,
+                            "quote": "La gestione della radioprotezione era un incubo burocratico. Con Marco abbiamo non solo messo tutto in regola secondo il D.Lgs 101/2020, ma dormiamo sonni tranquilli sapendo che i controlli sono precisi e puntuali.",
+                            "date": "15 gennaio 2026"
+                        },
+                        {
+                            "name": "Dr.ssa Elena Visentin",
+                            "role": "Clinica Veterinaria San Marco",
+                            "location": "Mestre, VE",
+                            "avatar": "https://images.unsplash.com/photo-1594824476967-48c8b964273f",
+                            "rating": 5,
+                            "quote": "Professionalità assoluta nel controllo delle nostre apparecchiature radiologiche. Le verifiche sono meticolose e le spiegazioni chiare. Un partner indispensabile per la sicurezza del nostro staff e dei pazienti animali.",
+                            "date": "20 novembre 2025"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "resources",
+                "slug": "free-resources",
+                "data": {
+                    "view": "pub_theme::components.blocks.resources.grid",
+                    "title": "Risorse Utili per il Tuo Studio",
+                    "subtitle": "Scarica le nostre guide gratuite per approfondire gli obblighi di radioprotezione e gestire al meglio la sicurezza.",
+                    "resources": [
+                        {
+                            "title": "Guida Radioprotezione Odontoiatrica",
+                            "description": "Vademecum essenziale sugli obblighi di legge e le buone prassi per lo studio dentistico.",
+                            "icon": "heroicon-o-document-text",
+                            "download_url": "/downloads/guida-odontoiatria.pdf"
+                        },
+                        {
+                            "title": "Guida Radioprotezione Veterinaria",
+                            "description": "Manuale operativo per la gestione del rischio radiologico nelle cliniche veterinarie.",
+                            "icon": "heroicon-o-document-text",
+                            "download_url": "/downloads/guida-veterinaria.pdf"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "newsletter",
+                "slug": "email-subscription",
+                "data": {
+                    "view": "pub_theme::components.blocks.newsletter.form",
+                    "title": "Rimani Aggiornato",
+                    "description": "Iscriviti alla nostra newsletter per ricevere aggiornamenti normativi, consigli pratici e offerte esclusive per il tuo studio.",
+                    "cta_label": "Iscriviti",
+                    "privacy_note": "Niente spam, solo contenuti di qualità. Puoi disiscriverti quando vuoi."
+                }
+            }
         ]
     },
     "sidebar_blocks": {

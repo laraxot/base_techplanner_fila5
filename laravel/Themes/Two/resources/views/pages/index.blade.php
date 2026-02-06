@@ -36,12 +36,7 @@ new class extends Component
                 </div>
             </div>
 
-            {{-- Sidebar Destra (1/4 larghezza) - Occupa 1 colonna su 4 --}}
-            <div class="lg:col-span-1">
-                <div class="bg-white rounded-lg shadow-sm p-6">
-                    <x-page side="sidebar" slug="home" />
-                </div>
-            </div>
+            
         </div>
     </div>
     @endvolt
