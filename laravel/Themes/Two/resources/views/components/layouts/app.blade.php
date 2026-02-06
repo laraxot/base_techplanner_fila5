@@ -8,25 +8,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ $title ? "$title — " : '' }}{{ config('app.name') }}</title>
-        {{--
-        @vite(['resources/css/app.css'])
-
-        @livewireStyles
-        --}}
-
+       
         <style>
             [x-cloak] {
                 display: none !important;
             }
         </style>
         @filamentStyles
-        @vite(['Resources/css/filament/admin/theme.css', 'Resources/css/app.css'], 'themes/Two/dist')
-        {{-- <link crossorigin="anonymous" media="all" rel="stylesheet" href="{{ $_theme->asset('pub_theme::dist/assets/theme.css') }}" />
-        <link crossorigin="anonymous" media="all" rel="stylesheet" href="{{ $_theme->asset('pub_theme::dist/assets/app.css') }}" /> --}}
-
-        {{--
-        @vite(['Resources/css/filament/admin/theme.css','Resources/css/app.css'],'themes/Two/dist')
-        --}}
+        @vite(['resources/css/app.css'], 'themes/Two')
+        
 
     </head>
     <body class="bg-white">
@@ -40,7 +30,7 @@
                             </div>
                         @endif
 
-                        <x-menu name="main" />
+                        
                     </nav>
                 </x-std >
             </header>
@@ -60,17 +50,10 @@
                 </x-std>
             </footer>
         </div>
-        {{--
-        @livewireScripts
-        --}}
         @livewire('notifications')
 
         @filamentScripts
-        @vite(['Resources/js/app.js'], 'themes/Two/dist')
+        @vite(['resources/js/app.js'], 'themes/Two')
 
-        {{-- <script src="{{ $_theme->asset('pub_theme::dist/assets/app2.js') }}" ></script> --}}
-        {{--
-        @vite('Resources/js/app.js','../laravel/Themes/Two/Resources/dist')
-        --}}
     </body>
 </html>

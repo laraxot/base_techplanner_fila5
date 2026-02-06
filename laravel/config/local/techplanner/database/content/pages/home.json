@@ -14,16 +14,16 @@
                 "data": {
                     "view": "pub_theme::components.blocks.hero.main",
                     "title": "Benvenuto in TechPlanner",
-                    "subtitle": "Sistema avanzato di gestione tecnica e pianificazione aziendale",
-                    "description": "Gestisci dipendenti, progetti e risorse in modo efficiente con il nostro sistema integrato.",
-                    "background_image": "/images/hero-bg.jpg",
-                    "cta_primary": {
-                        "label": "Inizia Ora",
-                        "url": "/admin",
+                    "subtitle": "La rivoluzione nella gestione tecnica aziendale",
+                    "description": "Ottimizza ogni processo, automatizza la pianificazione e potenzia la produttività del tuo team con la piattaforma più avanzata sul mercato.",
+                    "background_image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2069",
+                    "ctaPrimary": {
+                        "label": "Inizia la Prova Gratuita",
+                        "url": "/register",
                         "style": "primary"
                     },
-                    "cta_secondary": {
-                        "label": "Scopri di Più",
+                    "ctaSecondary": {
+                        "label": "Guarda come funziona",
                         "url": "#features",
                         "style": "secondary"
                     }
@@ -34,115 +34,29 @@
                 "slug": "features-grid",
                 "data": {
                     "view": "pub_theme::components.blocks.features.grid",
-                    "title": "Funzionalità Principali",
-                    "description": "Tutto quello che ti serve per gestire la tua azienda",
+                    "title": "Eccellenza Operativa",
+                    "description": "Strumenti progettati per scalare la tua azienda verso il successo",
                     "features": [
                         {
                             "icon": "heroicon-o-users",
-                            "title": "Gestione Dipendenti",
-                            "description": "Gestisci il personale, presenze e performance in un unico posto",
+                            "title": "Smart HR Management",
+                            "description": "Algoritmi intelligenti per la gestione del personale e valutazione delle performance.",
                             "url": "/employee/admin",
-                            "color": "blue"
+                            "color": "primary"
                         },
                         {
                             "icon": "heroicon-o-chart-bar",
-                            "title": "Analytics & Report",
-                            "description": "Visualizza statistiche dettagliate e genera report personalizzati",
+                            "title": "Predictive Analytics",
+                            "description": "Prevedi i trend e prendi decisioni basate sui dati con reportistica real-time.",
                             "url": "/chart/admin",
-                            "color": "green"
+                            "color": "secondary"
                         },
                         {
-                            "icon": "heroicon-o-cog-6-tooth",
-                            "title": "Configurazione",
-                            "description": "Personalizza il sistema secondo le tue esigenze aziendali",
+                            "icon": "heroicon-o-sparkles",
+                            "title": "Automazione Totale",
+                            "description": "Elimina i task ripetitivi e focalizzati su ciò che conta davvero per il tuo business.",
                             "url": "/admin/settings",
-                            "color": "purple"
-                        },
-                        {
-                            "icon": "heroicon-o-calendar",
-                            "title": "Pianificazione",
-                            "description": "Organizza progetti, scadenze e milestone importanti",
-                            "url": "/admin/planning",
-                            "color": "orange"
-                        },
-                        {
-                            "icon": "heroicon-o-shield-check",
-                            "title": "Sicurezza",
-                            "description": "Controllo accessi avanzato e audit trail completo",
-                            "url": "/admin/security",
-                            "color": "red"
-                        },
-                        {
-                            "icon": "heroicon-o-document-text",
-                            "title": "Documentazione",
-                            "description": "Guide complete e documentazione tecnica sempre aggiornata",
-                            "url": "/docs",
-                            "color": "indigo"
-                        }
-                    ]
-                }
-            },
-            {
-                "type": "stats",
-                "slug": "stats-section",
-                "data": {
-                    "view": "pub_theme::components.blocks.stats.overview",
-                    "title": "TechPlanner in Numeri",
-                    "background_color": "bg-gray-50",
-                    "stats": [
-                        {
-                            "number": "500+",
-                            "label": "Aziende Attive",
-                            "description": "Utilizzano TechPlanner quotidianamente"
-                        },
-                        {
-                            "number": "15.000+",
-                            "label": "Dipendenti Gestiti",
-                            "description": "Attraverso la nostra piattaforma"
-                        },
-                        {
-                            "number": "99.9%",
-                            "label": "Uptime",
-                            "description": "Affidabilità garantita 24/7"
-                        },
-                        {
-                            "number": "50+",
-                            "label": "Integrazioni",
-                            "description": "Con i principali software aziendali"
-                        }
-                    ]
-                }
-            },
-            {
-                "type": "testimonials",
-                "slug": "testimonials",
-                "data": {
-                    "view": "pub_theme::components.blocks.testimonials.carousel",
-                    "title": "Cosa Dicono i Nostri Clienti",
-                    "testimonials": [
-                        {
-                            "content": "TechPlanner ha rivoluzionato la gestione del nostro personale. Ora tutto è più efficiente e organizzato.",
-                            "author": "Marco Rossi",
-                            "role": "CEO",
-                            "company": "Innovazione S.r.l.",
-                            "avatar": "/images/testimonial-1.jpg",
-                            "rating": 5
-                        },
-                        {
-                            "content": "L'interfaccia è intuitiva e le funzionalità sono esattamente quello che cercavamo per la nostra PMI.",
-                            "author": "Laura Bianchi",
-                            "role": "HR Manager",
-                            "company": "Tech Solutions",
-                            "avatar": "/images/testimonial-2.jpg",
-                            "rating": 5
-                        },
-                        {
-                            "content": "Il supporto tecnico è eccezionale e l'implementazione è stata rapida e senza problemi.",
-                            "author": "Giuseppe Verdi",
-                            "role": "IT Director",
-                            "company": "Manifattura Italiana",
-                            "avatar": "/images/testimonial-3.jpg",
-                            "rating": 5
+                            "color": "accent"
                         }
                     ]
                 }
@@ -152,22 +66,21 @@
                 "slug": "final-cta",
                 "data": {
                     "view": "pub_theme::components.blocks.cta.banner",
-                    "title": "Pronto a Iniziare?",
-                    "description": "Unisciti alle centinaia di aziende che hanno già scelto TechPlanner per gestire il loro business.",
-                    "background_color": "bg-blue-600",
+                    "title": "Trasforma la tua Azienda Oggi",
+                    "description": "Oltre 500 aziende leader utilizzano già TechPlanner per dominare il loro mercato.",
+                    "background_gradient": "from-indigo-600 via-blue-700 to-primary",
                     "text_color": "text-white",
                     "cta_primary": {
-                        "label": "Accedi al Sistema",
-                        "url": "/admin",
-                        "style": "white"
+                        "label": "Accedi Ora",
+                        "url": "/admin"
                     },
                     "cta_secondary": {
-                        "label": "Richiedi Demo",
-                        "url": "/contact",
-                        "style": "outline-white"
+                        "label": "Parla con un esperto",
+                        "url": "/contact"
                     }
                 }
             }
+
         ]
     },
     "sidebar_blocks": {
