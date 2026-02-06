@@ -1,0 +1,14 @@
+{
+    "mcpServers": {
+        "flowbite": {
+            "type": "stdio",
+            "command": "npx",
+            "args": ["-y", "flowbite-mcp"]
+        },
+        "daisyui": {
+            "type": "stdio",
+            "command": "npx",
+            "args": ["-y", "daisyui@latest", "mcp"]
+        }
+    }
+}

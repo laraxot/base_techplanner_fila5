@@ -1,10 +1,1 @@
-{
-    "id": "2",
-    "name": null,
-    "slug": "footer",
-    "blocks": [],
-    "created_at": "2025-07-08T09:07:40.000000Z",
-    "updated_at": "2025-07-08T09:07:40.000000Z",
-    "created_by": null,
-    "updated_by": null
-}
+{'id': '2', 'name': {'it': 'Footer Marco Sottana'}, 'slug': 'footer', 'blocks': {'it': [{'type': 'footer', 'slug': 'main-footer', 'data': {'view': 'pub_theme::components.sections.footer', 'brand': {'name': 'Marco Sottana', 'subtitle': 'Consulenza Sicurezza', 'description': 'Esperto qualificato in radioprotezione e sicurezza radiologica per studi dentistici e veterinari. Conformità normativa D.Lgs 101/2020.'}, 'social': {'linkedin': 'https://linkedin.com/in/marcosottana', 'facebook': 'https://facebook.com/marcosottana', 'instagram': 'https://instagram.com/marcosottana'}, 'normative': {'title': 'Normative & Certificazioni', 'items': ['D.Lgs 101/2020 - Radioprotezione', 'Direttiva 2013/59/Euratom', 'IEC 62353 - Dispositivi Elettromedicali', 'Certificato Esperto Qualificato']}, 'services': {'title': 'Servizi', 'items': ['Controllo Radioprotezione', 'Controllo Elettromedicali', 'Documentazione e Conformità', 'Formazione e Consulenza', 'Audit e Ispezioni', 'Biosicurezza']}, 'contact': {'title': 'Contatti', 'address': 'Via Venco 86/A', 'city': '31021 Mogliano Veneto TV', 'email': 'info@marcosottana.it', 'phone': '+39 041 123 4567', 'piva': 'IT12345678901', 'rea': 'TV-123456'}, 'legal': {'copyright': '© 2026 Marco Sottana – Consulenza Sicurezza. Tutti i diritti riservati.', 'links': [{'label': 'Privacy Policy', 'url': '/it/privacy'}, {'label': 'Termini e Condizioni', 'url': '/it/terms'}]}}}]}, 'created_at': '2025-07-08T09:07:40.000000Z', 'updated_at': '2025-08-29T11:03:49.000000Z', 'created_by': null, 'updated_by': '01985ae8-8039-71ea-88c7-54ebce6295b0'}

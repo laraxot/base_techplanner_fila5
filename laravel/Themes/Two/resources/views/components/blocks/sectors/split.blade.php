@@ -2,9 +2,10 @@
     'title' => '',
     'subtitle' => '',
     'sectors' => [],
+    'id' => 'settori',
 ])
 
-<div class="bg-white py-20">
+<div id="{{ $id }}" class="bg-white py-20 scroll-mt-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Header -->
         <div class="text-center mb-16">
