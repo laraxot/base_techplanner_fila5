@@ -36,13 +36,16 @@
                     </div>
                 </div>
 
-                <!-- Company & Location -->
-                <p class="text-xs text-primary font-semibold mb-2">
-                    {{ $testimonial['company'] }}
-                </p>
-                <p class="text-xs text-gray-500 mb-3">
-                    {{ $testimonial['location'] }}
-                </p>
+                <!-- Metadata -->
+                <div class="mb-4">
+                    <p class="text-xs text-primary font-bold uppercase tracking-wider mb-1">
+                        {{ $testimonial['role'] ?? ($testimonial['company'] ?? '') }}
+                    </p>
+                    <p class="text-xs text-gray-500">
+                        {{ $testimonial['location'] ?? '' }}
+                    </p>
+                </div>
+
 
                 <!-- Quote -->
                 <p class="text-sm text-gray-700 leading-relaxed mb-3 italic">
