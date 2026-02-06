@@ -1,7 +1,8 @@
 {
     "id": "1",
     "title": {
-        "it": "TechPlanner - Sistema di Gestione Tecnica"
+        "it": "TechPlanner - Sistema di Gestione Tecnica",
+        "en": "TechPlanner - Technical Management System"
     },
     "slug": "home",
     "middleware": null,
@@ -19,7 +20,7 @@
                     "primary_cta_url": "/it/contact",
                     "secondary_cta_label": "Scopri i Servizi",
                     "secondary_cta_url": "/it/servizi",
-                    "image": "https://images.unsplash.com/photo-1581595219315-a187dd40c322",
+                    "image": "/themes/Two/resources/images/hero-bg.jpg",
                     "stats": [
                         {
                             "label": "Conformità D.Lgs 101/2020",
@@ -114,7 +115,7 @@
                                 "Ortopantomografia (OPT) - Controllo qualità e sicurezza per panoramiche dentali",
                                 "CBCT (Cone Beam) - Protocolli avanzati per tomografia computerizzata a fascio conico"
                             ],
-                            "image": "/themes/Two/Main_files/images/radiologia-veterinaria.jpg"
+                            "image": "/themes/Two/resources/images/radiologia-veterinaria.jpg"
                         },
                         {
                             "title": "Medicina Veterinaria",
@@ -124,7 +125,7 @@
                                 "Biosicurezza Radiologica - Procedure per contenimento e protezione durante esami su animali",
                                 "Fluoroscopia e Arco a C - Verifiche per sistemi di radiologia interventistica veterinaria"
                             ],
-                            "image": "/themes/Two/Main_files/images/medical-equipment.jpg"
+                            "image": "/themes/Two/resources/images/medical-equipment.jpg"
                         }
                     ]
                 }
@@ -144,22 +145,22 @@
                             "description": "Monitoraggio dell'esposizione alle radiazioni per il personale esposto e l'ambiente."
                         },
                         {
-                            "icon": "heroicono-shield-check",
+                            "icon": "heroicon-o-shield-check",
                             "title": "Schermature",
                             "description": "Verifica dell'adeguatezza delle barriere protettive e dei DPI (camici, collari)."
                         },
                         {
-                            "icon": "heroicono-cpu-chip",
+                            "icon": "heroicon-o-cpu-chip",
                             "title": "Apparecchiature Radiologiche",
                             "description": "Controllo di costanza, tensione, corrente e tempi di esposizione dei generatori."
                         },
                         {
-                            "icon": "heroicono-light-bulb",
+                            "icon": "heroicon-o-light-bulb",
                             "title": "Sistemi di Protezione",
                             "description": "Test su interblocchi, segnaletica luminosa e acustica di sicurezza."
                         },
                         {
-                            "icon": "heroicono-document-check",
+                            "icon": "heroicon-o-document-check",
                             "title": "Documentazione e Registri",
                             "description": "Audit sulla corretta tenuta del registro macchine e delle schede dosimetriche."
                         }
@@ -179,7 +180,7 @@
                             "name": "Dr. Roberto Magni",
                             "role": "Centro Odontoiatrico Magni",
                             "location": "Padova, PD",
-                            "avatar": "/themes/Two/Main_files/images/dr-roberto-magni.jpg",
+                            "avatar": "/themes/Two/resources/images/dr-roberto-magni.jpg",
                             "rating": 5,
                             "quote": "La gestione della radioprotezione era un incubo burocratico. Con Marco abbiamo non solo messo tutto in regola secondo il D.Lgs 101/2020, ma dormiamo sonni tranquilli sapendo che i controlli sono precisi e puntuali.",
                             "date": "15 gennaio 2026"
@@ -188,7 +189,7 @@
                             "name": "Dr.ssa Elena Visentin",
                             "role": "Clinica Veterinaria San Marco",
                             "location": "Mestre, VE",
-                            "avatar": "/themes/Two/Main_files/images/dr-elena-visentin.jpg",
+                            "avatar": "/themes/Two/resources/images/dr-elena-visentin.jpg",
                             "rating": 5,
                             "quote": "Professionalità assoluta nel controllo delle nostre apparecchiature radiologiche. Le verifiche sono meticolose e le spiegazioni chiare. Un partner indispensabile per la sicurezza del nostro staff e dei pazienti animali.",
                             "date": "20 novembre 2025"
@@ -197,7 +198,7 @@
                             "name": "Dr. Paolo Verdi",
                             "role": "Studio Odontoiatrico Verdi",
                             "location": "Treviso, TV",
-                            "avatar": "/themes/Two/Main_files/images/dr-paolo-verdi.jpg",
+                            "avatar": "/themes/Two/resources/images/dr-paolo-verdi.jpg",
                             "rating": 5,
                             "quote": "Ho richiesto un audit completo sugli elettromedicali e la radioprotezione. Servizio eccellente, report dettagliati e piena disponibilità. La competenza tecnica di Marco è evidente.",
                             "date": "5 dicembre 2025"
@@ -206,7 +207,7 @@
                             "name": "Dr.ssa Giulia Bianchi",
                             "role": "VetLife Ambulatorio",
                             "location": "Vicenza, VI",
-                            "avatar": "/themes/Two/Main_files/images/dr-giulia-bianchi.jpg",
+                            "avatar": "/themes/Two/resources/images/dr-giulia-bianchi.jpg",
                             "rating": 5,
                             "quote": "Finalmente qualcuno che conosce le specificità della radiologia veterinaria. I consigli sulle schermature e le procedure di sicurezza hanno migliorato notevolmente il nostro flusso di lavoro.",
                             "date": "1 febbraio 2026"
@@ -248,6 +249,196 @@
                     "privacy_note": "Niente spam, solo contenuti di qualità. Puoi disiscriverti quando vuoi."
                 }
             }
+        ],
+        "en": [
+            {
+                "type": "hero",
+                "slug": "hero-section",
+                "data": {
+                    "view": "pub_theme::components.blocks.hero.simple",
+                    "title": "Radiation Protection and Radiological Safety for Dental and Veterinary Clinics",
+                    "subtitle": "Guaranteed regulatory compliance, patient and staff safety, certified periodic checks according to Legislative Decree 101/2020 and Directive 2013/59/Euratom.",
+                    "primary_cta_label": "Request Radiation Protection Check",
+                    "primary_cta_url": "/en/contact",
+                    "secondary_cta_label": "Explore Services",
+                    "secondary_cta_url": "/en/services",
+                    "image": "/themes/Two/resources/images/hero-bg.jpg",
+                    "stats": [
+                        {
+                            "label": "D.Lgs 101/2020 Compliance",
+                            "value": "100%"
+                        },
+                        {
+                            "label": "Qualified Experts",
+                            "value": "Certified"
+                        },
+                        {
+                            "label": "In-person in 24/48h",
+                            "value": "Rapid"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "services-grid",
+                "slug": "main-services",
+                "data": {
+                    "view": "pub_theme::components.blocks.services.grid",
+                    "title": "Our Services",
+                    "subtitle": "Complete solutions for radiological safety",
+                    "id": "services",
+                    "services": [
+                        {
+                            "title": "Radiation Protection Control",
+                            "description": "Periodic and extraordinary checks for radiological equipment in the dental and veterinary fields. Guaranteed compliance with Legislative Decree 101/2020.",
+                            "icon": "heroicon-o-shield-check",
+                            "url": "/en/services"
+                        },
+                        {
+                            "title": "Electromedical Control",
+                            "description": "Preventive maintenance and electrical safety checks on all medical devices (IEC 62353), ensuring functionality and safety for patients and operators.",
+                            "icon": "heroicon-o-wrench-screwdriver",
+                            "url": "/en/services"
+                        },
+                        {
+                            "title": "Documentation and Compliance",
+                            "description": "Complete management of mandatory documentation: control registers, appointments of qualified experts, technical reports, and communications to competent bodies.",
+                            "icon": "heroicon-o-document-check",
+                            "url": "/en/services"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "why-critical",
+                "slug": "why-radioprotection",
+                "data": {
+                    "view": "pub_theme::components.blocks.why-critical.grid",
+                    "title": "Why is Radiation Protection Critical?",
+                    "subtitle": "It's not just bureaucracy: it's the foundation for operating safely and legally in the healthcare sector.",
+                    "points": [
+                        {
+                            "title": "Risks and Sanctions",
+                            "description": "Non-compliance carries heavy criminal and administrative penalties, as well as the risk of activity suspension.",
+                            "icon": "heroicon-o-exclamation-triangle"
+                        },
+                        {
+                            "title": "Regulatory Obligations",
+                            "description": "Strict adherence to Legislative Decree 101/2020 and Directive 2013/59/Euratom for health protection.",
+                            "icon": "heroicon-o-book-open"
+                        },
+                        {
+                            "title": "People's Safety",
+                            "description": "Fundamental protection for operators, patients, and the public against the risks of ionizing radiation.",
+                            "icon": "heroicon-o-user-group"
+                        },
+                        {
+                            "title": "Legal Responsibility",
+                            "description": "The operator is legally responsible. Correct management is the only protection in case of litigation.",
+                            "icon": "heroicon-o-scale"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "sectors",
+                "slug": "industry-sectors",
+                "data": {
+                    "view": "pub_theme::components.blocks.sectors.split",
+                    "title": "Specialization Sectors",
+                    "subtitle": "Vertical expertise for specific needs",
+                    "id": "sectors",
+                    "sectors": [
+                        {
+                            "title": "Dentistry",
+                            "description": "Millimeter precision for dental diagnostics",
+                            "use_cases": [
+                                "Intraoral Radiographs - X-ray tube verification for periapical and bitewing RX",
+                                "Orthopantomography (OPT) - Quality and safety control for dental panoramics",
+                                "CBCT (Cone Beam) - Advanced protocols for cone beam computed tomography"
+                            ],
+                            "image": "/themes/Two/resources/images/radiologia-veterinaria.jpg"
+                        },
+                        {
+                            "title": "Veterinary Medicine",
+                            "description": "Safety adapted to animal clinical needs",
+                            "use_cases": [
+                                "Digital and Analog Radiology - Checks on fixed and portable RX systems for animals",
+                                "Radiological Biosafety - Procedures for containment and protection during animal exams",
+                                "Fluoroscopy and C-Arm - Verifications for veterinary interventional radiology systems"
+                            ],
+                            "image": "/themes/Two/resources/images/medical-equipment.jpg"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "what-we-do",
+                "slug": "our-approach",
+                "data": {
+                    "view": "pub_theme::components.blocks.what-we-do.checklist",
+                    "title": "What We Control",
+                    "subtitle": "Our verification protocol covers every aspect of radiological safety. From machine efficiency to structural protection, nothing is left to chance to ensure total compliance with Legislative Decree 101/2020.",
+                    "id": "controls",
+                    "checklist": [
+                        {
+                            "icon": "heroicon-o-chart-bar",
+                            "title": "Dosimetry",
+                            "description": "Monitoring of radiation exposure for exposed personnel and the environment."
+                        },
+                        {
+                            "icon": "heroicon-o-shield-check",
+                            "title": "Shielding",
+                            "description": "Verification of the adequacy of protective barriers and PPE (gowns, collars)."
+                        },
+                        {
+                            "icon": "heroicon-o-cpu-chip",
+                            "title": "Radiological Equipment",
+                            "description": "Control of constancy, voltage, current, and exposure times of generators."
+                        },
+                        {
+                            "icon": "heroicon-o-light-bulb",
+                            "title": "Protection Systems",
+                            "description": "Tests on interlocks, light signals, and acoustic safety signals."
+                        },
+                        {
+                            "icon": "heroicon-o-document-check",
+                            "title": "Documentation and Registers",
+                            "description": "Audit on the correct maintenance of the machine register and dosimetry sheets."
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "testimonials",
+                "slug": "customer-reviews",
+                "data": {
+                    "view": "pub_theme::components.blocks.testimonials.grid",
+                    "title": "What They Say About Us",
+                    "subtitle": "The peace of mind of those who chose certified safety",
+                    "id": "testimonials",
+                    "testimonials": [
+                        {
+                            "name": "Dr. Roberto Magni",
+                            "role": "Magni Dental Center",
+                            "location": "Padua, PD",
+                            "avatar": "/themes/Two/resources/images/dr-roberto-magni.jpg",
+                            "rating": 5,
+                            "quote": "Managing radiation protection was a bureaucratic nightmare. With Marco, we not only set everything in order according to Legislative Decree 101/2020, but we also sleep soundly knowing the checks are precise and timely.",
+                            "date": "January 15, 2026"
+                        },
+                        {
+                            "name": "Dr. Elena Visentin",
+                            "role": "San Marco Veterinary Clinic",
+                            "location": "Mestre, VE",
+                            "avatar": "/themes/Two/resources/images/dr-elena-visentin.jpg",
+                            "rating": 5,
+                            "quote": "Absolute professionalism in controlling our radiological equipment. The verifications are meticulous and the explanations clear. An indispensable partner for the safety of our staff and animal patients.",
+                            "date": "November 20, 2025"
+                        }
+                    ]
+                }
+            }
         ]
     },
     "sidebar_blocks": {
@@ -281,29 +472,20 @@
                         }
                     ]
                 }
-            },
+            }
+        ],
+        "en": [
             {
-                "type": "system-info",
-                "slug": "system-info",
+                "type": "quick-links",
+                "slug": "quick-links",
                 "data": {
-                    "view": "pub_theme::components.blocks.sidebar.system-info",
-                    "title": "Informazioni Sistema",
-                    "info": [
+                    "view": "pub_theme::components.blocks.sidebar.quick-links",
+                    "title": "Quick Access",
+                    "links": [
                         {
-                            "label": "Versione",
-                            "value": "{{ app()->version() }}"
-                        },
-                        {
-                            "label": "Ambiente",
-                            "value": "{{ app()->environment() }}"
-                        },
-                        {
-                            "label": "Lingua",
-                            "value": "{{ app()->getLocale() }}"
-                        },
-                        {
-                            "label": "Tema",
-                            "value": "Sixteen"
+                            "label": "Admin Dashboard",
+                            "url": "/admin",
+                            "icon": "heroicon-o-squares-2x2"
                         }
                     ]
                 }
@@ -311,10 +493,11 @@
         ]
     },
     "footer_blocks": {
-        "it": []
+        "it": [],
+        "en": []
     },
     "created_at": "2025-07-08T09:02:57.000000Z",
-    "updated_at": "2025-01-06T15:30:00.000000Z",
+    "updated_at": "2026-02-06T18:00:00.000000Z",
     "created_by": null,
     "updated_by": "01985ae8-8039-71ea-88c7-54ebce6295b0"
 }
