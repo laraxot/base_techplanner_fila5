@@ -21,18 +21,9 @@
                     "secondary_cta_url": "/it/servizi",
                     "image": "https://images.unsplash.com/photo-1581595219315-a187dd40c322",
                     "stats": [
-                        {
-                            "label": "Conformità D.Lgs 101/2020",
-                            "value": "100%"
-                        },
-                        {
-                            "label": "Esperti Qualificati",
-                            "value": "Certificato"
-                        },
-                        {
-                            "label": "Intervento in 24/48h",
-                            "value": "Rapido"
-                        }
+                        {"label": "Conformità D.Lgs 101/2020", "value": "100%"},
+                        {"label": "Esperti Qualificati", "value": "Certificato"},
+                        {"label": "Intervento in 24/48h", "value": "Rapido"}
                     ]
                 }
             },
@@ -43,7 +34,6 @@
                     "view": "pub_theme::components.blocks.services.grid",
                     "title": "I Nostri Servizi",
                     "subtitle": "Soluzioni complete per la sicurezza radiologica",
-                    "id": "servizi",
                     "services": [
                         {
                             "title": "Controllo Radioprotezione",
@@ -96,7 +86,8 @@
                         }
                     ]
                 }
-            },
+            }
+,
             {
                 "type": "sectors",
                 "slug": "industry-sectors",
@@ -104,7 +95,6 @@
                     "view": "pub_theme::components.blocks.sectors.split",
                     "title": "Settori di Specializzazione",
                     "subtitle": "Competenza verticale per esigenze specifiche",
-                    "id": "settori",
                     "sectors": [
                         {
                             "title": "Odontoiatria",
@@ -114,7 +104,7 @@
                                 "Ortopantomografia (OPT) - Controllo qualità e sicurezza per panoramiche dentali",
                                 "CBCT (Cone Beam) - Protocolli avanzati per tomografia computerizzata a fascio conico"
                             ],
-                            "image": "/themes/Two/Main_files/images/radiologia-veterinaria.jpg"
+                            "image": "https://images.unsplash.com/photo-1660220617553-95cb021c0a5e"
                         },
                         {
                             "title": "Medicina Veterinaria",
@@ -124,7 +114,7 @@
                                 "Biosicurezza Radiologica - Procedure per contenimento e protezione durante esami su animali",
                                 "Fluoroscopia e Arco a C - Verifiche per sistemi di radiologia interventistica veterinaria"
                             ],
-                            "image": "/themes/Two/Main_files/images/medical-equipment.jpg"
+                            "image": "https://images.unsplash.com/photo-1657778752500-9da406aa813f"
                         }
                     ]
                 }
@@ -136,7 +126,6 @@
                     "view": "pub_theme::components.blocks.what-we-do.checklist",
                     "title": "Cosa Controlliamo",
                     "subtitle": "Il nostro protocollo di verifica copre ogni aspetto della sicurezza radiologica. Dall'efficienza delle macchine alla protezione strutturale, nulla viene lasciato al caso per garantire la totale conformità al D.Lgs 101/2020.",
-                    "id": "controlli",
                     "checklist": [
                         {
                             "icon": "heroicon-o-chart-bar",
@@ -173,13 +162,12 @@
                     "view": "pub_theme::components.blocks.testimonials.grid",
                     "title": "Dicono di Noi",
                     "subtitle": "La tranquillità di chi ha scelto la sicurezza certificata",
-                    "id": "testimonianze",
                     "testimonials": [
                         {
                             "name": "Dr. Roberto Magni",
                             "role": "Centro Odontoiatrico Magni",
                             "location": "Padova, PD",
-                            "avatar": "/themes/Two/Main_files/images/dr-roberto-magni.jpg",
+                            "avatar": "https://images.unsplash.com/photo-1537368910025-700350fe46c7",
                             "rating": 5,
                             "quote": "La gestione della radioprotezione era un incubo burocratico. Con Marco abbiamo non solo messo tutto in regola secondo il D.Lgs 101/2020, ma dormiamo sonni tranquilli sapendo che i controlli sono precisi e puntuali.",
                             "date": "15 gennaio 2026"
@@ -188,28 +176,10 @@
                             "name": "Dr.ssa Elena Visentin",
                             "role": "Clinica Veterinaria San Marco",
                             "location": "Mestre, VE",
-                            "avatar": "/themes/Two/Main_files/images/dr-elena-visentin.jpg",
+                            "avatar": "https://images.unsplash.com/photo-1594824476967-48c8b964273f",
                             "rating": 5,
                             "quote": "Professionalità assoluta nel controllo delle nostre apparecchiature radiologiche. Le verifiche sono meticolose e le spiegazioni chiare. Un partner indispensabile per la sicurezza del nostro staff e dei pazienti animali.",
                             "date": "20 novembre 2025"
-                        },
-                        {
-                            "name": "Dr. Paolo Verdi",
-                            "role": "Studio Odontoiatrico Verdi",
-                            "location": "Treviso, TV",
-                            "avatar": "/themes/Two/Main_files/images/dr-paolo-verdi.jpg",
-                            "rating": 5,
-                            "quote": "Ho richiesto un audit completo sugli elettromedicali e la radioprotezione. Servizio eccellente, report dettagliati e piena disponibilità. La competenza tecnica di Marco è evidente.",
-                            "date": "5 dicembre 2025"
-                        },
-                        {
-                            "name": "Dr.ssa Giulia Bianchi",
-                            "role": "VetLife Ambulatorio",
-                            "location": "Vicenza, VI",
-                            "avatar": "/themes/Two/Main_files/images/dr-giulia-bianchi.jpg",
-                            "rating": 5,
-                            "quote": "Finalmente qualcuno che conosce le specificità della radiologia veterinaria. I consigli sulle schermature e le procedure di sicurezza hanno migliorato notevolmente il nostro flusso di lavoro.",
-                            "date": "1 febbraio 2026"
                         }
                     ]
                 }

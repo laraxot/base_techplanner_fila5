@@ -1,1 +1,32 @@
-{"id": "1", "name": {"it": "Header Radioprotezione"}, "slug": "header", "blocks": {"it": [{"type": "navigation", "slug": "nav-main", "data": {"view": "pub_theme::components.blocks.navigation.simple", "brand": "Radioprotezione", "items": [{"label": "Servizi", "url": "#servizi", "type": "link"}, {"label": "Settori", "url": "#settori", "type": "link"}, {"label": "Controlli", "url": "#controlli", "type": "link"}, {"label": "Testimonianze", "url": "#testimonianze", "type": "link"}, {"label": "Contatti", "url": "#contatti", "type": "link"}], "cta": {"label": "Contattaci", "url": "#contatti"}}}]}, "created_at": "2025-07-08T09:02:57.000000Z", "updated_at": "2025-08-29T11:03:49.000000Z", "created_by": null, "updated_by": "01985ae8-8039-71ea-88c7-54ebce6295b0"}
+{
+    "id": "1",
+    "name": {"it": "Header Navigation"},
+    "slug": "header",
+    "blocks": {
+        "it": [
+            {
+                "type": "navigation",
+                "slug": "nav1",
+                "data": {
+                    "view": "pub_theme::components.blocks.navigation.simple",
+                    "brand": "Marco Sottana",
+                    "brand_subtitle": "Consulenza Sicurezza",
+                    "cta_label": "Richiedi Consulenza",
+                    "cta_url": "/it/contatti",
+                    "items": [
+                        {"label": "Home", "url": "/it", "type": "link"},
+                        {"label": "Chi Siamo", "url": "/it/chi-siamo", "type": "link"},
+                        {"label": "Servizi", "url": "/it/servizi", "type": "link"},
+                        {"label": "Blog", "url": "/it/blog", "type": "link"},
+                        {"label": "FAQ", "url": "/it/faq", "type": "link"},
+                        {"label": "Contatti", "url": "/it/contatti", "type": "link"}
+                    ]
+                }
+            }
+        ]
+    },
+    "created_at": "2025-07-08T09:02:57.000000Z",
+    "updated_at": "2026-02-06T16:38:00.000000Z",
+    "created_by": null,
+    "updated_by": "01985ae8-8039-71ea-88c7-54ebce6295b0"
+}
