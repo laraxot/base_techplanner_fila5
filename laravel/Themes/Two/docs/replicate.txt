@@ -75,3 +75,6 @@ la blade per il footer dovresti aver capito che e' laravel/Themes/Two/resources/
 quando sei in un punto "stabile" che sei sicuro che tutto funziona fa anche git commit e git push , questa e' una regola importante che devi sempre ricordare percio' fa tutto quello che serve per ricordarla sia te che gli altri agenti ai
 
 devi migliorare lo sfondo dell headernav perche' dopo i caratteri bianchi su bianco non si legge nulla , percio' cerca di migliorare la ui/ux, sempre prima devi studiare, aggiornare e migliorare le cartelle docs dentro i moduli e dentro i temi, imparando dai tuoi errori e cercando di migliorarti sempre aggiornando le tue rules, le tue memoeries, le tue skills e anche quelle degli altri agenti ai
+
+
+creare laravel/Themes/Two/resources/views/pages/pages/about/index.blade.php e' sbagliato perche' c'e' gia' /var/www/_bases/base_techplanner_fila5/laravel/Themes/Two/resources/views/pages/pages/[slug].blade.php  percio' andando su /it/pages/about va a leggere il json about.json .. cerca di capire al meglio la filosofia, religione, politica, religione poi condividila con gli altri agenti ai, poi procedi 
