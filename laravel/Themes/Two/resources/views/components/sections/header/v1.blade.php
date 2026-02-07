@@ -54,8 +54,8 @@
     }"
     @scroll.window="scrolled = (window.scrollY > 50)"
     :class="scrolled
-        ? 'bg-[#0f2b46]/95 backdrop-blur-lg shadow-lg border-b border-white/10'
-        : 'bg-gradient-to-b from-black/40 to-transparent'"
+        ? 'bg-[#0f2b46]/98 backdrop-blur-lg shadow-lg border-b border-white/10'
+        : 'bg-[#0f2b46]/90 backdrop-blur-sm shadow-md border-b border-white/5'"
     class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
 >
     <div class="container mx-auto px-4 sm:px-6">
