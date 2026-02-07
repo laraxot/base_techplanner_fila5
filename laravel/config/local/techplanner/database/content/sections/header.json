@@ -18,11 +18,11 @@
                     "cta_url": "/it/contatti",
                     "items": [
                         {"label": "Home", "url": "/it", "type": "link", "active": true},
-                        {"label": "Chi Siamo", "url": "/it/chi-siamo", "type": "link"},
-                        {"label": "Servizi", "url": "/it/servizi", "type": "link"},
-                        {"label": "Blog", "url": "/it/blog", "type": "link"},
-                        {"label": "FAQ", "url": "/it/faq", "type": "link"},
-                        {"label": "Contatti", "url": "/it/contatti", "type": "link"}
+                        {"label": "Chi Siamo", "url": "/it/pages/about", "type": "link"},
+                        {"label": "Servizi", "url": "/it/pages/services", "type": "link"},
+                        {"label": "Blog", "url": "/it/pages/blog", "type": "link"},
+                        {"label": "FAQ", "url": "/it/pages/faqs", "type": "link"},
+                        {"label": "Contatti", "url": "/it/pages/contacts", "type": "link"}
                     ]
                 }
             }
@@ -39,11 +39,32 @@
                     "cta_url": "/en/contact",
                     "items": [
                         {"label": "Home", "url": "/en", "type": "link", "active": true},
-                        {"label": "About Us", "url": "/en/about", "type": "link"},
-                        {"label": "Services", "url": "/en/services", "type": "link"},
-                        {"label": "Blog", "url": "/en/blog", "type": "link"},
-                        {"label": "FAQ", "url": "/en/faq", "type": "link"},
-                        {"label": "Contact", "url": "/en/contact", "type": "link"}
+                        {"label": "About Us", "url": "/en/pages/about", "type": "link"},
+                        {"label": "Services", "url": "/en/pages/services", "type": "link"},
+                        {"label": "Blog", "url": "/en/pages/blog", "type": "link"},
+                        {"label": "FAQ", "url": "/en/pages/faqs", "type": "link"},
+                        {"label": "Contact", "url": "/en/pages/contacts", "type": "link"}
+                    ]
+                }
+            }
+        ],
+        "de": [
+            {
+                "type": "navigation",
+                "slug": "nav1",
+                "data": {
+                    "view": "pub_theme::components.blocks.navigation.simple",
+                    "brand": "Marco Sottana",
+                    "brand_subtitle": "Sicherheitsberatung",
+                    "cta_label": "Konsultation Anfordern",
+                    "cta_url": "/de/kontakt",
+                    "items": [
+                        {"label": "Startseite", "url": "/de", "type": "link", "active": true},
+                        {"label": "Über Uns", "url": "/de/pages/about", "type": "link"},
+                        {"label": "Dienstleistungen", "url": "/de/pages/services", "type": "link"},
+                        {"label": "Blog", "url": "/de/pages/blog", "type": "link"},
+                        {"label": "FAQ", "url": "/de/pages/faqs", "type": "link"},
+                        {"label": "Kontakt", "url": "/de/pages/contacts", "type": "link"}
                     ]
                 }
             }
