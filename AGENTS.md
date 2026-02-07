@@ -71,6 +71,36 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 ### Critical Architecture Rules
 
+#### 🚫 **CONTROLLERS ARE BANNED** - CRITICAL RULE
+**NEVER create or use traditional Laravel Controllers in this project!**
+
+This project uses **Folio + Volt + Laraxot** architecture:
+- **Folio**: File-based routing (`resources/views/pages/`)
+- **Volt**: Reactive components for interactivity  
+- **Actions**: For business logic (when needed)
+- **NO Controllers**: Traditional `app/Http/Controllers/` are forbidden
+
+```php
+// ❌ NEVER DO THIS - BANNED!
+// app/Http/Controllers/PagesController.php
+class PagesController extends Controller {
+    public function services() { ... }
+    public function blog() { ... }
+}
+
+// ❌ NEVER DO THIS - BANNED!
+// routes/web.php
+Route::get('/services', [PagesController::class, 'services']);
+
+// ✅ CORRECT - Use Folio pages
+// resources/views/pages/services.blade.php
+<?php
+use function Laravel\Folio\{name};
+name('pages.services');
+?>
+<!-- Your HTML/Blade content -->
+```
+
 #### 1. NEVER Extend Filament Directly
 ```php
 // ❌ WRONG

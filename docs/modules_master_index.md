@@ -1,8 +1,8 @@
 # TechPlanner Modules - Master Index
 
-**Last Update**: 13 Dicembre 2025  
+**Last Update**: 7 Febbraio 2026  
 **PHPStan Status**: ✅ Level 10 - 0 Errori  
-**Total Modules**: 14
+**Total Modules**: 15
 
 ## 🎯 Core Modules
 
@@ -33,6 +33,7 @@ Gestione clienti, appuntamenti, dispositivi e compliance.
 **Essential Reading**:
 - [README.md](../Modules/TechPlanner/docs/README.md)
 - [00-index.md](../Modules/TechPlanner/docs/00-index.md)
+- [GDPR Compliance Analysis](../Modules/TechPlanner/docs/gdpr-compliance-analysis.md) - ⭐ NEW: Complete GDPR requirements and implementation guide
 
 ---
 
@@ -54,6 +55,11 @@ Sistema notifiche, email, SMS, template.
 - ContactTypeEnum (phone, mobile, email, PEC, WhatsApp, fax)
 - Notification templates
 - Multi-channel delivery
+
+**NEW**: [Inbound Marketing Strategy](../Modules/Notify/docs/inbound-marketing-strategy.md) - ⭐ NEW: Complete inbound marketing strategy with funnel analysis
+
+**Essential Reading**:
+- [Inbound Marketing Strategy](../Modules/Notify/docs/inbound-marketing-strategy.md) - ⭐ NEW: Complete inbound marketing and lead generation strategy
 
 ---
 
@@ -160,6 +166,17 @@ Gestione GDPR, privacy, consensi.
 
 ---
 
+### Seo (Search Engine Optimization)
+**Docs**: 12 files | **Status**: ✅ Compliant  
+**Path**: [Modules/Seo/docs/](../Modules/Seo/docs/)
+
+Ottimizzazione SEO, meta tags, structured data.
+
+**Essential Reading**:
+- [SEO Optimization Report](../Modules/Seo/docs/seo-optimization-report.md) - ⭐ NEW: Complete SEO strategy and implementation guide
+
+---
+
 ## 📊 Global Statistics
 
 | Metric | Value |
@@ -197,6 +214,11 @@ Gestione GDPR, privacy, consensi.
 3. Usa Safe Cast Actions
 4. Verifica con PHPStan Level 10
 5. Aggiorna documentazione
+
+### ⚠️ Component-Specific Rules
+- **Componenti UI nel modulo UI**: Solo componenti agnostici e riutilizzabili tra temi
+- **Componenti UI nei temi**: Componenti specifici del tema con classi CSS/variabili proprie
+- **Esempio**: `service-card` è specifico del tema Sixteen/Two (usa variabili CSS `--italia-blue-*`), quindi NON va in Modules/UI
 
 ## 🎯 Philosophy
 
