@@ -36,7 +36,7 @@
                             $iconName = str_replace('heroicon-o-', '', $service['icon']);
                             $componentName = 'heroicon-o-' . $iconName;
                             // Valid Heroicons components
-                            $validIcons = ['bolt', 'check-circle', 'light-bulb', 'heart', 'user-group', 'shield-check', 'academic-cap', 'fire', 'star', 'home', 'information-circle'];
+                            $validIcons = ['bolt', 'lightning-bolt', 'check-circle', 'light-bulb', 'heart', 'user-group', 'shield-check', 'academic-cap', 'fire', 'star', 'home', 'information-circle'];
                         @endphp
                         @if(in_array($iconName, $validIcons))
                             <x-dynamic-component :component="$componentName" class="w-16 h-16 {{ $textColors[$ci] }}" />
