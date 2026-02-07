@@ -89,3 +89,5 @@ la pagina https://lightseagreen-dogfish-560272.hostingersite.com/contatti a noi 
 l'headernav dentro https://lightseagreen-dogfish-560272.hostingersite.com/ quando ti sposti in basso si trasforma trasformando lo sfondo in bianco non trasparente e il colore del testo in nero per tenere la ui/ux .. controlla 
 
 la pagina http://127.0.0.1:8000/it/pages/about dovrebbe essere uguale a https://lightseagreen-dogfish-560272.hostingersite.com/chi-siamo  ma non lo e' parti pure dal footer e analizza pezzo per pezzo , 
+
+questo file laravel/target_about.html  doveva essere dentro una sottocartella di laravel/Themes/Two/Main_files capisci la regola e ricordatela sempre e spiegala anche agli altri agenti ai
