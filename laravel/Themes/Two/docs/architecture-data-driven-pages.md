@@ -13,12 +13,27 @@ Instead, the architecture is **strictly data-driven**:
 -   **Separation of Concerns**: Content is in JSON (easy to edit/manage), Structure is in Components.
 -   **Maintainability**: Fixing a bug in `[slug].blade.php` fixes it for ALL content pages.
 
+
 ## The Rule (The Law)
 > **NEVER** create a directory like `pages/about/index.blade.php` if `about` is just a content page.
 > **ALWAYS** check if usage of `[slug].blade.php` + `about.json` is sufficient.
+
+## Forbidden Practices: No Controllers
+> **NEVER** create Laravel Controllers (e.g., `PagesController`, `BlogController`) for frontend pages.
+> **NEVER** define routes in `routes/web.php` for content pages (e.g., `Route::get('/about', ...)`).
+
+**Why?**
+-   We use **Laravel Folio** for routing.
+-   We use **Livewire Volt** for logic.
+-   We use **Laraxot** for architecture.
+
+**Correct Approach:**
+-   Routing: Handled automatically by `Themes/Two/resources/views/pages/pages/[slug].blade.php`.
+-   Logic: Handled by View Components (Blocks) or Volt components if interactivity is needed.
+-   Data: Sourced from strict JSON files in `config/local/techplanner/database/content/pages/`.
 
 ## How to add a new page
 1.  Create `config/local/techplanner/database/content/pages/my-new-page.json`.
 2.  Define the `blocks` (Hero, Text, Grid, etc.) inside that JSON.
 3.  Visit `/it/pages/my-new-page` (or configured route).
-4.  **DONE**. No Blade file needed.
+4.  **DONE**. No Blade file needed. No Controller needed. No Route needed.

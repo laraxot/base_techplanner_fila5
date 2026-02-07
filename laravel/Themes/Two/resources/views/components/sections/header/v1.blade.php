@@ -54,18 +54,18 @@
     }"
     @scroll.window="scrolled = (window.scrollY > 50)"
     :class="scrolled
-        ? 'bg-[#0f2b46]/98 backdrop-blur-lg shadow-lg border-b border-white/10'
-        : 'bg-[#0f2b46]/90 backdrop-blur-sm shadow-md border-b border-white/5'"
+        ? 'bg-white/95 backdrop-blur-lg shadow-xl border-b border-gray-100 text-gray-900 py-2'
+        : 'bg-gradient-to-b from-black/95 to-transparent text-white py-4'"
     class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
 >
     <div class="container mx-auto px-4 sm:px-6">
-        <div class="flex items-center justify-between h-16 md:h-20">
+        <div class="flex items-center justify-between h-16 md:h-20" :class="scrolled ? 'h-16' : 'h-20'">
 
             {{-- Brand --}}
             <a href="{{ LaravelLocalization::getLocalizedURL($currentLocale, '/') }}" class="flex flex-col leading-tight shrink-0 group">
-                <span class="font-bold text-lg md:text-xl text-white group-hover:text-white/90 transition-colors">{{ $brandName }}</span>
+                <span class="font-bold text-lg md:text-xl transition-colors" :class="scrolled ? 'text-gray-900' : 'text-white'">{{ $brandName }}</span>
                 @if($brandSubtitle)
-                    <span class="text-xs md:text-sm text-white/70 font-normal">{{ $brandSubtitle }}</span>
+                    <span class="text-xs md:text-sm font-normal transition-colors" :class="scrolled ? 'text-gray-500' : 'text-white/80'">{{ $brandSubtitle }}</span>
                 @endif
             </a>
 
@@ -84,11 +84,15 @@
                     @endphp
                     <a
                         href="{{ $item['url'] }}"
-                        class="relative px-3 py-2 text-sm font-medium transition-colors text-white/90 hover:text-white"
+                        class="relative px-3 py-2 text-sm font-medium transition-colors hover:opacity-80"
+                        :class="scrolled ? ({{ $isActive ? 'true' : 'false' }} ? 'text-[#1E5A96]' : 'text-gray-700 hover:text-[#1E5A96]') : 'text-white/90 hover:text-white'"
                         @if($isActive) aria-current="page" @endif
                     >
                         {{ $item['label'] }}
-                        <span class="absolute bottom-0 left-3 right-3 h-0.5 bg-white rounded-full transition-all duration-200 {{ $isActive ? 'opacity-100' : 'opacity-0' }}"></span>
+                        <span class="absolute bottom-0 left-3 right-3 h-0.5 rounded-full transition-all duration-200"
+                              :class="scrolled ? 'bg-[#1E5A96]' : 'bg-white'"
+                              class="{{ $isActive ? 'opacity-100' : 'opacity-0' }}"
+                        ></span>
                     </a>
                 @endforeach
             </nav>
@@ -101,7 +105,8 @@
                     <button
                         @click="langOpen = !langOpen"
                         @click.away="langOpen = false"
-                        class="flex items-center space-x-1.5 text-white/80 hover:text-white transition-colors focus:outline-none"
+                        class="flex items-center space-x-1.5 transition-colors focus:outline-none"
+                        :class="scrolled ? 'text-gray-700 hover:text-[#1E5A96]' : 'text-white/80 hover:text-white'"
                         aria-label="Change language"
                     >
                         <span class="text-sm font-medium uppercase">{{ $currentLocale }}</span>
@@ -146,22 +151,24 @@
                                 <img
                                     src="{{ auth()->user()->avatar_url ?? 'https://ui-avatars.com/api/?name='.urlencode(auth()->user()->name ?? 'U').'&color=7F9CF5&background=EBF4FF&size=32' }}"
                                     alt=""
-                                    class="w-8 h-8 rounded-full border-2 border-white/30 group-hover:border-white/60 transition-colors object-cover"
+                                    class="w-8 h-8 rounded-full border-2 transition-colors object-cover"
+                                    :class="scrolled ? 'border-gray-200 group-hover:border-[#1E5A96]' : 'border-white/30 group-hover:border-white/60'"
                                 >
-                                <span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-green-400 border-2 border-[#0f2b46] rounded-full"></span>
+                                <span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-green-400 border-2 rounded-full" :class="scrolled ? 'border-white' : 'border-[#0f2b46]'"></span>
                             </div>
                         </button>
-                        <div
-                            x-show="userOpen"
-                            x-transition:enter="transition ease-out duration-100"
-                            x-transition:enter-start="opacity-0 scale-95"
-                            x-transition:enter-end="opacity-100 scale-100"
-                            x-transition:leave="transition ease-in duration-75"
-                            x-transition:leave-start="opacity-100 scale-100"
-                            x-transition:leave-end="opacity-0 scale-95"
-                            class="absolute right-0 mt-2 w-52 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden"
-                            style="display: none;"
-                        >
+<!-- ... dropdown content ... -->
+                    <div
+                        x-show="userOpen"
+                        x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="opacity-0 scale-95"
+                        x-transition:enter-end="opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="opacity-100 scale-100"
+                        x-transition:leave-end="opacity-0 scale-95"
+                        class="absolute right-0 mt-2 w-52 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden"
+                        style="display: none;"
+                    >
                             <div class="px-4 py-3 border-b border-gray-100 bg-gray-50/50">
                                 <p class="text-sm font-semibold text-gray-900 truncate">{{ auth()->user()->name ?? '' }}</p>
                                 <p class="text-xs text-gray-500 truncate">{{ auth()->user()->email ?? '' }}</p>
@@ -182,14 +189,17 @@
                                     {{ __('Esci') }}
                                 </button>
                             </form>
-                        </div>
+                    </div>
                     </div>
                 @endauth
 
                 {{-- CTA Button - white border style matching reference --}}
                 <a
                     href="{{ $ctaUrl }}"
-                    class="inline-flex items-center px-5 py-2.5 text-sm font-semibold text-white border border-white/70 rounded-lg hover:bg-white hover:text-[#1E5A96] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/40"
+                    class="inline-flex items-center px-5 py-2.5 text-sm font-semibold border rounded-lg transition-all duration-200 focus:outline-none focus:ring-2"
+                    :class="scrolled 
+                        ? 'text-white bg-[#1E5A96] border-[#1E5A96] hover:bg-[#164273] hover:border-[#164273] focus:ring-[#1E5A96]/40' 
+                        : 'text-white border-white/70 hover:bg-white hover:text-[#1E5A96] focus:ring-white/40'"
                 >
                     {{-- Phone icon --}}
                     <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -218,7 +228,8 @@
                 {{-- Hamburger --}}
                 <button
                     @click="mobileOpen = !mobileOpen"
-                    class="p-2 rounded-md text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/30"
+                    class="p-2 rounded-md transition-colors focus:outline-none focus:ring-2"
+                    :class="scrolled ? 'text-gray-700 hover:bg-gray-100 focus:ring-gray-300' : 'text-white hover:bg-white/10 focus:ring-white/30'"
                     aria-label="Toggle menu"
                     :aria-expanded="mobileOpen.toString()"
                 >

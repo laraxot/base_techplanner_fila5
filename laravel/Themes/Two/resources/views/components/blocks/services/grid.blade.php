@@ -31,7 +31,19 @@
                 @else
                 <div class="w-full h-48 {{ $bgColors[$ci] }} flex items-center justify-center">
                     @if(!empty($service['icon']))
-                        <x-dynamic-component :component="'heroicon-o-' . str_replace('heroicon-o-', '', $service['icon'])" class="w-16 h-16 {{ $textColors[$ci] }}" />
+                        @php
+                            // Sanitize icon name and check if component exists
+                            $iconName = str_replace('heroicon-o-', '', $service['icon']);
+                            $componentName = 'heroicon-o-' . $iconName;
+                            // Valid Heroicons components
+                            $validIcons = ['bolt', 'check-circle', 'light-bulb', 'heart', 'user-group', 'shield-check', 'academic-cap', 'fire', 'star', 'home', 'information-circle'];
+                        @endphp
+                        @if(in_array($iconName, $validIcons))
+                            <x-dynamic-component :component="$componentName" class="w-16 h-16 {{ $textColors[$ci] }}" />
+                        @else
+                            <!-- Fallback icon for invalid heroicon components -->
+                            <svg class="w-16 h-16 {{ $textColors[$ci] }}" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        @endif
                     @else
                         <svg class="w-16 h-16 {{ $textColors[$ci] }}" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     @endif
