@@ -1,6 +1,9 @@
 {
     "id": "1",
-    "name": {"it": "Header Navigation"},
+    "name": {
+        "it": "Header Navigation",
+        "en": "Header Navigation"
+    },
     "slug": "header",
     "blocks": {
         "it": [
@@ -14,7 +17,7 @@
                     "cta_label": "Richiedi Consulenza",
                     "cta_url": "/it/contatti",
                     "items": [
-                        {"label": "Home", "url": "/it", "type": "link"},
+                        {"label": "Home", "url": "/it", "type": "link", "active": true},
                         {"label": "Chi Siamo", "url": "/it/chi-siamo", "type": "link"},
                         {"label": "Servizi", "url": "/it/servizi", "type": "link"},
                         {"label": "Blog", "url": "/it/blog", "type": "link"},
@@ -23,10 +26,31 @@
                     ]
                 }
             }
+        ],
+        "en": [
+            {
+                "type": "navigation",
+                "slug": "nav1",
+                "data": {
+                    "view": "pub_theme::components.blocks.navigation.simple",
+                    "brand": "Marco Sottana",
+                    "brand_subtitle": "Safety Consulting",
+                    "cta_label": "Request Consultation",
+                    "cta_url": "/en/contact",
+                    "items": [
+                        {"label": "Home", "url": "/en", "type": "link", "active": true},
+                        {"label": "About Us", "url": "/en/about", "type": "link"},
+                        {"label": "Services", "url": "/en/services", "type": "link"},
+                        {"label": "Blog", "url": "/en/blog", "type": "link"},
+                        {"label": "FAQ", "url": "/en/faq", "type": "link"},
+                        {"label": "Contact", "url": "/en/contact", "type": "link"}
+                    ]
+                }
+            }
         ]
     },
     "created_at": "2025-07-08T09:02:57.000000Z",
-    "updated_at": "2026-02-06T16:38:00.000000Z",
+    "updated_at": "2026-02-07T10:00:00.000000Z",
     "created_by": null,
     "updated_by": "01985ae8-8039-71ea-88c7-54ebce6295b0"
 }

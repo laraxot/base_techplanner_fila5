@@ -1,7 +1,9 @@
+@volt('profile.index')
 <?php
 
 use function Livewire\Volt\{state, mount};
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 state([
     'name' => '',
@@ -64,8 +66,8 @@ $updatePassword = function() {
                     <div class="space-y-4">
                         <div>
                             <x-input-label for="name" :value="__('Nome')" />
-                            <x-text-input wire:model="first_name" id="first_name" class="block mt-1 w-full" type="text" name="first_name" required />
-                            <x-input-error :messages="$errors->get('first_name')" class="mt-2" />
+                            <x-text-input wire:model="name" id="name" class="block mt-1 w-full" type="text" name="name" required />
+                            <x-input-error :messages="$errors->get('name')" class="mt-2" />
                         </div>
 
                         <div>
@@ -119,3 +121,4 @@ $updatePassword = function() {
         </div>
     </x-filament::page>
 </div>
+@endvolt

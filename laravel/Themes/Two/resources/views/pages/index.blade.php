@@ -17,7 +17,10 @@ use Modules\Tenant\Services\TenantService;
 $base_middleware = [];
 
 name('home');
-middleware($base_middleware);
+// Only set middleware if it's not empty (fixes PHP 8.3.30 SerializableClosure bug)
+if (!empty($base_middleware)) {
+    middleware($base_middleware);
+}
 
 new class extends Component
 {
@@ -27,12 +30,8 @@ new class extends Component
 
 <x-layouts.app>
     @volt('home')
-    <div class="min-h-screen bg-gray-100">
-                <div class="bg-white rounded-lg shadow-sm p-6">
-                    <x-page side="content" slug="home" />
-                </div>
-
-            
+    <div>
+        <x-page side="content" slug="home" />
     </div>
     @endvolt
 </x-layouts.app>

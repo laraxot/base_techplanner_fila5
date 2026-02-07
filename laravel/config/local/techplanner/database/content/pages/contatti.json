@@ -1,0 +1,85 @@
+{
+    "id": "6",
+    "title": {
+        "it": "Contatti - Richiedi Consulenza Radioprotezione",
+        "en": "Contact - Request Radiation Protection Consultation"
+    },
+    "slug": "contatti",
+    "middleware": null,
+    "content": null,
+    "content_blocks": {
+        "it": [
+            {
+                "type": "hero",
+                "slug": "hero-contatti",
+                "data": {
+                    "view": "pub_theme::components.blocks.hero.simple",
+                    "title": "Contattaci",
+                    "subtitle": "Siamo a tua disposizione per qualsiasi informazione sulla radioprotezione del tuo studio",
+                    "image": "/themes/Two/Main_files/images/contact-hero.jpg"
+                }
+            },
+            {
+                "type": "contact-info",
+                "slug": "contact-details",
+                "data": {
+                    "view": "pub_theme::components.blocks.contact.info",
+                    "title": "Come Contattarci",
+                    "subtitle": "Scegli il modo più comodo per raggiungerci",
+                    "info": {
+                        "phone": "+39 XXX XXX XXXX",
+                        "email": "info@marcosottana.it",
+                        "address": "Via Vanzo 86/A, 31021 Mogliano Veneto (TV)",
+                        "hours": "Lun-Ven: 09:00-18:00"
+                    },
+                    "social": {
+                        "linkedin": "https://linkedin.com/in/marcosottana",
+                        "facebook": "https://facebook.com/marcosottana.consulenza"
+                    }
+                }
+            },
+            {
+                "type": "contact-form",
+                "slug": "contact-form",
+                "data": {
+                    "view": "pub_theme::components.blocks.contact.form",
+                    "title": "Richiedi una Consulenza",
+                    "subtitle": "Compila il form e ti ricontatteremo entro 24 ore",
+                    "fields": [
+                        {"name": "nome", "label": "Nome e Cognome", "type": "text", "required": true},
+                        {"name": "email", "label": "Email", "type": "email", "required": true},
+                        {"name": "telefono", "label": "Telefono", "type": "tel", "required": false},
+                        {"name": "studio", "label": "Nome Studio", "type": "text", "required": false},
+                        {"name": "tipo", "label": "Tipo di Studio", "type": "select", "options": ["Odontoiatrico", "Veterinario", "Altro"]},
+                        {"name": "messaggio", "label": "Messaggio", "type": "textarea", "required": true}
+                    ],
+                    "submit_label": "Invia Richiesta",
+                    "privacy_text": "Inviando questo form accetti la nostra Privacy Policy."
+                }
+            },
+            {
+                "type": "map",
+                "slug": "location-map",
+                "data": {
+                    "view": "pub_theme::components.blocks.map.embed",
+                    "title": "Dove Siamo",
+                    "address": "Via Vanzo 86/A, 31021 Mogliano Veneto TV",
+                    "coordinates": {"lat": 45.5648, "lng": 12.2347}
+                }
+            }
+        ],
+        "en": [
+            {
+                "type": "hero",
+                "slug": "hero-contact",
+                "data": {
+                    "view": "pub_theme::components.blocks.hero.simple",
+                    "title": "Contact Us",
+                    "subtitle": "We are at your disposal for any information on radiation protection for your clinic"
+                }
+            }
+        ]
+    },
+    "created_at": "2025-07-08T09:02:57.000000Z",
+    "updated_at": "2026-02-06T18:00:00.000000Z"
+}

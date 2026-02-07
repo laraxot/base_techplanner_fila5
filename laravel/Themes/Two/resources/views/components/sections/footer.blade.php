@@ -1,5 +1,5 @@
 @php
-    $footerBlock = Arr::first($blocks, fn($item) => $item->slug == 'main-footer');
+    $footerBlock = Arr::first($blocks, fn($item) => $item->slug == 'footer');
     $data = $footerBlock->data ?? [];
     $brand = $data['brand'] ?? [];
     $social = $data['social'] ?? [];
@@ -9,7 +9,7 @@
     $legal = $data['legal'] ?? [];
 @endphp
 
-<footer class="bg-gradient-to-br from-[#1E5A96] via-[#164575] to-[#0d2d4d] text-white">
+<footer class="bg-gradient-to-br from-brand-blue via-brand-blue/90 to-black text-white">
     <div class="container mx-auto px-4 py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {{-- Branding & About --}}
@@ -21,18 +21,18 @@
                 </p>
                 <div class="flex space-x-4">
                     @if($social['linkedin'] ?? null)
-                        <a href="{{ $social['linkedin'] }}" class="p-2 bg-white/10 rounded-lg hover:bg-[#2D8659] transition-colors" target="_blank" rel="noopener noreferrer">
-                            <x-heroicon-o-linkedin class="w-5 h-5" />
+                        <a href="{{ $social['linkedin'] ?? '#' }}" class="p-2 bg-white/10 rounded-lg hover:bg-brand-green transition-colors" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <x-filament::icon icon="techplanner-linkedin" class="w-5 h-5 text-current" />
                         </a>
                     @endif
                     @if($social['facebook'] ?? null)
-                        <a href="{{ $social['facebook'] }}" class="p-2 bg-white/10 rounded-lg hover:bg-[#2D8659] transition-colors" target="_blank" rel="noopener noreferrer">
-                            <x-heroicon-o-facebook class="w-5 h-5" />
+                        <a href="{{ $social['facebook'] ?? '#' }}" class="p-2 bg-white/10 rounded-lg hover:bg-brand-green transition-colors" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <x-filament::icon icon="techplanner-facebook" class="w-5 h-5 text-current" />
                         </a>
                     @endif
                     @if($social['instagram'] ?? null)
-                        <a href="{{ $social['instagram'] }}" class="p-2 bg-white/10 rounded-lg hover:bg-[#2D8659] transition-colors" target="_blank" rel="noopener noreferrer">
-                            <x-heroicon-o-camera class="w-5 h-5" />
+                        <a href="{{ $social['instagram'] ?? '#' }}" class="p-2 bg-white/10 rounded-lg hover:bg-brand-green transition-colors" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <x-heroicon-o-camera class="w-5 h-5 text-current" />
                         </a>
                     @endif
                 </div>
@@ -40,7 +40,7 @@
 
             {{-- Normative --}}
             <div>
-                <span class="text-lg font-semibold mb-4 block text-[#E67E22] flex items-center">
+                <span class="text-lg font-semibold mb-4 block text-brand-orange flex items-center">
                     <x-heroicon-o-shield-check class="w-5 h-5 mr-2" />
                     {{ $normative['title'] ?? 'Normative & Certificazioni' }}
                 </span>
@@ -58,7 +58,7 @@
                 <span class="text-lg font-semibold mb-4 block">{{ $services['title'] ?? 'Servizi' }}</span>
                 <ul class="space-y-2 text-gray-300 text-sm">
                     @foreach($services['items'] ?? [] as $item)
-                        <li><a class="hover:text-[#2D8659] transition-colors" href="/it/servizi">{{ $item }}</a></li>
+                        <li><a class="hover:text-brand-green transition-colors" href="/it/servizi">{{ $item }}</a></li>
                     @endforeach
                 </ul>
             </div>
@@ -69,7 +69,7 @@
                 <ul class="space-y-3 text-sm">
                     @if($contact['address'] ?? null)
                         <li class="flex items-start space-x-3">
-                            <x-heroicon-o-map-pin class="w-5 h-5 text-[#2D8659] flex-shrink-0 mt-1" />
+                            <x-heroicon-o-map-pin class="w-5 h-5 text-brand-green flex-shrink-0 mt-1" />
                             <span class="text-gray-300">{{ $contact['address'] }}<br>{{ $contact['city'] ?? '' }}</span>
                         </li>
                     @endif
@@ -86,12 +86,16 @@
                         </li>
                     @endif
                 </ul>
-                @if($contact['piva'] ?? null || $contact['rea'] ?? null)
+                @php
+                    $hasPiva = isset($contact['piva']) && $contact['piva'];
+                    $hasRea = isset($contact['rea']) && $contact['rea'];
+                @endphp
+                @if($hasPiva || $hasRea)
                     <div class="mt-4 pt-4 border-t border-white/10">
-                        @if($contact['piva'] ?? null)
+                        @if($hasPiva)
                             <p class="text-xs text-gray-400">P.IVA: {{ $contact['piva'] }}</p>
                         @endif
-                        @if($contact['rea'] ?? null)
+                        @if($hasRea)
                             <p class="text-xs text-gray-400">REA: {{ $contact['rea'] }}</p>
                         @endif
                     </div>

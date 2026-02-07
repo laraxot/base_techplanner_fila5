@@ -1,0 +1,208 @@
+{
+    "id": "2",
+    "title": {
+        "it": "Servizi - Marco Sottana Consulenza Sicurezza",
+        "en": "Services - Marco Sottana Safety Consulting"
+    },
+    "slug": "services",
+    "middleware": null,
+    "content": null,
+    "content_blocks": {
+        "it": [
+            {
+                "type": "hero-internal",
+                "slug": "services-hero",
+                "data": {
+                    "view": "pub_theme::components.blocks.hero.internal",
+                    "title": "Servizi di Consulenza Specializzata",
+                    "subtitle": "Soluzioni complete per garantire la massima sicurezza, igiene e conformità normativa nel tuo studio dentistico o clinica veterinaria",
+                    "breadcrumb_label": "Servizi"
+                }
+            },
+            {
+                "type": "services-cards",
+                "slug": "service-cards-grid",
+                "data": {
+                    "view": "pub_theme::components.blocks.services.cards-image",
+                    "services": [
+                        {
+                            "title": "Protocolli di Sicurezza Pazienti",
+                            "description": "Implementazione di protocolli avanzati per garantire la sicurezza dei pazienti in studi dentistici e veterinari.",
+                            "image": "https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=600&h=400&fit=crop",
+                            "url": "/it/contatti"
+                        },
+                        {
+                            "title": "Formazione Igiene Personale",
+                            "description": "Programmi di formazione completi per il personale su pratiche igieniche e protocolli di sicurezza.",
+                            "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop",
+                            "url": "/it/contatti"
+                        },
+                        {
+                            "title": "Sterilizzazione Attrezzature",
+                            "description": "Procedure certificate per la sterilizzazione e la manutenzione delle attrezzature mediche.",
+                            "image": "https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=600&h=400&fit=crop",
+                            "url": "/it/contatti"
+                        },
+                        {
+                            "title": "Gestione Rifiuti Sanitari",
+                            "description": "Soluzioni complete per la gestione e lo smaltimento conforme dei rifiuti sanitari.",
+                            "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop",
+                            "url": "/it/contatti"
+                        },
+                        {
+                            "title": "Conformità Normativa",
+                            "description": "Audit completi e supporto per mantenere la conformità con tutte le normative vigenti.",
+                            "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&h=400&fit=crop",
+                            "url": "/it/contatti"
+                        },
+                        {
+                            "title": "Biosicurezza Veterinaria",
+                            "description": "Protocolli specializzati per la biosicurezza nelle cliniche veterinarie e benessere animale.",
+                            "image": "https://images.unsplash.com/photo-1682001370529-878ec33a474f?w=600&h=400&fit=crop",
+                            "url": "/it/contatti"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "sector-detail",
+                "slug": "sector-odontoiatria",
+                "data": {
+                    "view": "pub_theme::components.blocks.sectors.detail",
+                    "title": "Odontoiatria",
+                    "sector_subtitle": "Consulenza Specializzata per Studi Dentistici",
+                    "description": "Gli studi dentistici affrontano sfide uniche in termini di sicurezza e igiene. Dalla sterilizzazione degli strumenti alla gestione dei rifiuti speciali, ogni aspetto richiede attenzione e competenza specifica.",
+                    "focus_areas": [
+                        "Sterilizzazione e tracciabilità strumenti",
+                        "Protezione da contaminazione crociata",
+                        "Gestione rifiuti sanitari pericolosi",
+                        "Sicurezza radiologica e apparecchiature",
+                        "Formazione continua del personale",
+                        "Protocolli di emergenza medica"
+                    ],
+                    "compliance_text": "Conformità con normative ASL, linee guida nazionali ed europee per studi odontoiatrici, protocolli di sterilizzazione e disinfezione certificati.",
+                    "cta_label": "Consulenza per Studi Dentistici",
+                    "cta_url": "/it/contatti",
+                    "image": "https://images.unsplash.com/photo-1616391182219-e080b4d1043a?w=800&h=600&fit=crop",
+                    "reversed": false,
+                    "bg": "bg-white"
+                }
+            },
+            {
+                "type": "sector-detail",
+                "slug": "sector-veterinaria",
+                "data": {
+                    "view": "pub_theme::components.blocks.sectors.detail",
+                    "title": "Medicina Veterinaria",
+                    "sector_subtitle": "Consulenza Specializzata per Cliniche Veterinarie",
+                    "description": "Le cliniche veterinarie richiedono protocolli di biosicurezza rigorosi per proteggere il personale, gli animali e prevenire la diffusione di zoonosi. La nostra esperienza garantisce sicurezza a 360 gradi.",
+                    "focus_areas": [
+                        "Protocolli di biosicurezza e controllo infezioni",
+                        "Gestione zoonosi e protezione personale",
+                        "Smaltimento rifiuti biologici veterinari",
+                        "Sicurezza in sala operatoria veterinaria",
+                        "Benessere animale e gestione stress",
+                        "Formazione su gestione animali aggressivi"
+                    ],
+                    "compliance_text": "Conformità con normative veterinarie regionali e nazionali, linee guida FNOVI, protocolli di biosicurezza certificati, registri sanitari completi.",
+                    "cta_label": "Consulenza per Cliniche Veterinarie",
+                    "cta_url": "/it/contatti",
+                    "image": "https://images.unsplash.com/photo-1682001370529-878ec33a474f?w=800&h=600&fit=crop",
+                    "reversed": true,
+                    "bg": "bg-gray-50"
+                }
+            },
+            {
+                "type": "cta-banner",
+                "slug": "services-cta",
+                "data": {
+                    "view": "pub_theme::components.blocks.cta.banner",
+                    "title": "Inizia Oggi il Tuo Percorso verso la Conformità",
+                    "subtitle": "Contattaci per una consulenza personalizzata e scopri come possiamo aiutare il tuo studio",
+                    "cta_label": "Richiedi Consulenza Gratuita",
+                    "cta_url": "/it/contatti"
+                }
+            }
+        ],
+        "en": [
+            {
+                "type": "hero-internal",
+                "slug": "services-hero",
+                "data": {
+                    "view": "pub_theme::components.blocks.hero.internal",
+                    "title": "Specialized Consulting Services",
+                    "subtitle": "Complete solutions to ensure maximum safety, hygiene and regulatory compliance in your dental or veterinary clinic",
+                    "breadcrumb_label": "Services"
+                }
+            },
+            {
+                "type": "services-cards",
+                "slug": "service-cards-grid",
+                "data": {
+                    "view": "pub_theme::components.blocks.services.cards-image",
+                    "services": [
+                        {
+                            "title": "Patient Safety Protocols",
+                            "description": "Implementation of advanced protocols to ensure patient safety in dental and veterinary clinics.",
+                            "image": "https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=600&h=400&fit=crop",
+                            "url": "/en/contact"
+                        },
+                        {
+                            "title": "Staff Hygiene Training",
+                            "description": "Comprehensive training programs for staff on hygiene practices and safety protocols.",
+                            "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop",
+                            "url": "/en/contact"
+                        },
+                        {
+                            "title": "Equipment Sterilization",
+                            "description": "Certified procedures for the sterilization and maintenance of medical equipment.",
+                            "image": "https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=600&h=400&fit=crop",
+                            "url": "/en/contact"
+                        },
+                        {
+                            "title": "Medical Waste Management",
+                            "description": "Complete solutions for compliant management and disposal of medical waste.",
+                            "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop",
+                            "url": "/en/contact"
+                        },
+                        {
+                            "title": "Regulatory Compliance",
+                            "description": "Complete audits and support to maintain compliance with all current regulations.",
+                            "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&h=400&fit=crop",
+                            "url": "/en/contact"
+                        },
+                        {
+                            "title": "Veterinary Biosafety",
+                            "description": "Specialized protocols for biosafety in veterinary clinics and animal welfare.",
+                            "image": "https://images.unsplash.com/photo-1682001370529-878ec33a474f?w=600&h=400&fit=crop",
+                            "url": "/en/contact"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "cta-banner",
+                "slug": "services-cta",
+                "data": {
+                    "view": "pub_theme::components.blocks.cta.banner",
+                    "title": "Start Your Journey to Compliance Today",
+                    "subtitle": "Contact us for a personalized consultation and discover how we can help your practice",
+                    "cta_label": "Request Free Consultation",
+                    "cta_url": "/en/contact"
+                }
+            }
+        ]
+    },
+    "sidebar_blocks": {
+        "it": [],
+        "en": []
+    },
+    "footer_blocks": {
+        "it": [],
+        "en": []
+    },
+    "created_at": "2025-07-08T09:02:57.000000Z",
+    "updated_at": "2026-02-06T20:20:00.000000Z",
+    "created_by": null,
+    "updated_by": "01985ae8-8039-71ea-88c7-54ebce6295b0"
+}

@@ -5,9 +5,7 @@
     'privacy_note' => '',
 ])
 
-<section class="py-20">
-    <div class="container mx-auto px-4">
-        <div class="bg-gradient-to-br from-[#2D8659] to-[#1a5e3a] rounded-2xl p-8 md:p-14 text-center text-white">
+<section id="contatti" class="py-20 bg-gradient-to-r from-brand-green to-brand-green/90 text-white">
             {{-- Icon --}}
             <div class="w-16 h-16 bg-white/15 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
