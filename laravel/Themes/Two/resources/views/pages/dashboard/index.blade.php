@@ -1,3 +1,4 @@
+@volt('dashboard.index')
 <?php
 
 use function Livewire\Volt\{state, mount};
@@ -76,3 +77,4 @@ mount(function () {
         </div>
     </x-filament::page>
 </div>
+@endvolt

@@ -1,6 +1,5 @@
 @props([
     'animated' => true,
-    'progress' => 75,
     'class' => ''
 ])
 
@@ -17,22 +16,14 @@ $containerClasses = implode(' ', [
 @endphp
 
 <div class="{{ $containerClasses }}">
-    @if($animated)
-        <div class="bg-gradient-primary h-full rounded-full relative overflow-hidden progress-animate">
-            <!-- Animated Shine Effect -->
-            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full animate-shine"></div>
-            <!-- Progress Indicator -->
-            <div class="absolute right-2 top-1/2 -translate-y-1/2 w-2 h-2 bg-white rounded-full shadow-sm"></div>
-        </div>
-    @else
-        <div class="bg-gradient-primary h-full rounded-full relative overflow-hidden" style="width: {{ $progress }}%">
-            <!-- Progress Indicator -->
-            <div class="absolute right-2 top-1/2 -translate-y-1/2 w-2 h-2 bg-white rounded-full shadow-sm"></div>
-        </div>
-    @endif
+    <div class="bg-gradient-primary h-full rounded-full relative overflow-hidden progress-animate">
+        <!-- Animated Shine Effect -->
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full animate-shine"></div>
+        <!-- Progress Indicator -->
+        <div class="absolute right-2 top-1/2 -translate-y-1/2 w-2 h-2 bg-white rounded-full shadow-sm"></div>
+    </div>
 </div>
 
-@if($animated)
 <style>
 @keyframes shine {
     0% { transform: translateX(-100%); }
@@ -53,4 +44,3 @@ $containerClasses = implode(' ', [
     100% { width: 100%; }
 }
 </style>
-@endif

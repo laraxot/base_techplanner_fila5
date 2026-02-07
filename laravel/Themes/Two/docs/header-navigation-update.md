@@ -65,6 +65,9 @@
 - ✅ 橙色CTA按钮
 - ✅ 白色文本 + 橙色hover效果
 - ✅ 移动菜单with Alpine.js transitions
+- ✅ 多语言支持 (Lang Module + LaravelLocalization)
+- ✅ 用户认证状态显示 (Avatar + Dropdown)
+- ✅ 严格遵循 JSON 数据结构 (Foreach Loops)
 
 ### 2. header.json 配置更新
 

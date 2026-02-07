@@ -1,53 +1,26 @@
 @props([
     'title' => '',
-    'siteName' => config('app.name'),
 ])
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    {{--  
     <head>
         <meta charset="utf-8">
+        <meta name="application-name" content="{{ config('app.name') }}">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>{{ $title ? "$title — " : '' }}{{ config('app.name') }}</title>
 
+        <style>[x-cloak] { display: none !important; }</style>
+
+        @filamentStyles
         @vite(['resources/css/app.css'], 'themes/Two')
-
-        @livewireStyles
     </head>
-    --}}
-    <x-metatags />
-    <body class="bg-white">
-        <div class="flex flex-col min-h-screen">
-            <header class="bg-black text-white">
-                <x-container>
-                    <nav class="main-nav flex items-center">
-                        @if ($siteName)
-                            <div class="text-2xl">
-                                <a href="/">{{ $siteName }}</a>
-                            </div>
-                        @endif
-
-                        <x-menu name="main" />
-                    </nav>
-                </x-container>
-            </header>
-
-            <main>
-                {!! $slot ?? '' !!}
-            </main>
-
-            <div class="mt-16"></div>
-
-            <footer class="mt-auto text-center">
-                <x-container class="text-gray-700">
-                    <div class="flex flex-col lg:flex-row items-center justify-center space-x-4">
-                        <span>Copyright © {{ date('Y') }} ACME inc.</span>
-                        <x-menu name="footer" />
-                    </div>
-                </x-container>
-            </footer>
-        </div>
+    <body class="antialiased font-sans bg-white text-gray-900">
+        {!! $slot ?? '' !!}
 
         @livewireScripts
+        @filamentScripts
+        @vite(['resources/js/app.js'], 'themes/Two')
     </body>
 </html>

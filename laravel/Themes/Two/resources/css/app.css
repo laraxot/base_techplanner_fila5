@@ -2,14 +2,35 @@
 @plugin "daisyui";
 
 @theme {
+    /* Original Brand Colors */
+    --color-brand-blue: #1E5A96;
+    --color-brand-green: #2D8659;
+    --color-brand-orange: #E67E22;
+    
+    /* Target Website Color Palette */
+    --color-primary-light: oklch(0.65 0.15 250);
+    --color-primary-dark: oklch(0.45 0.20 280);
+    --color-text-primary: oklch(0.2 0.02 250);
+    --color-text-secondary: oklch(0.4 0.02 250);
+    --color-text-tertiary: oklch(0.6 0.02 250);
+    
+    /* Glassmorphism Colors */
     --color-primary-soft: oklch(0.9 0.05 250);
     --color-glass-white: rgba(255, 255, 255, 0.1);
     
+    /* Custom Animations */
     --animate-float: float 3s ease-in-out infinite;
+    --animate-progress: progress 3s ease-in-out infinite;
     
     @keyframes float {
         0%, 100% { transform: translateY(0); }
         50% { transform: translateY(-10px); }
+    }
+    
+    @keyframes progress {
+        0% { width: 0%; }
+        50% { width: 70%; }
+        100% { width: 100%; }
     }
 }
 
@@ -19,6 +40,39 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Target Website Utilities */
+.glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Primary Gradient Background */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+}
+
+/* Text Colors */
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-tertiary { color: var(--color-text-tertiary); }
+
+/* Countdown Item Gradient */
+.bg-gradient-countdown {
+    background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+}
+
+/* Progress Bar Animation */
+.progress-animate {
+    animation: var(--animate-progress);
+}
+
+/* Floating Animation */
+.float-animate {
+    animation: var(--animate-float);
 }
 
 /* Required by all components */

@@ -1,6 +1,6 @@
 # Two Theme - Documentation Index
 
-**Last Update**: 6 Febbraio 2026  
+**Last Update**: 7 Febbraio 2026  
 **Status**: ✅ Available & Under Development  
 **Theme Version**: 2.0
 
@@ -8,10 +8,13 @@
 
 ### 🎯 Essential Reading
 1. [README.md](./README.md) - Theme overview
-2. [Site Replication Strategy](./site-replication-strategy.md) - ⭐ NEW: Complete strategy to surpass target site
-3. [Screenshots Analysis](./screenshots-analysis.md) - ⭐ NEW: Visual comparison with screenshots
-4. [Header Navigation Update](./header-navigation-update.md) - Recent header changes
-5. [Target Website Comparison](./target-website-comparison.md) - Analysis of target site
+2. [Comprehensive Site Analysis](./comprehensive-site-analysis.md) - ⭐ NEW: Complete analysis of target vs local site (conversion, GDPR, SEO, inbound marketing)
+3. [Analysis Complete Summary](./analysis-complete-summary.md) - ⭐ NEW: Final summary report with all findings
+4. [Replication Status](./replication-status.md) - Final replication status report
+5. [Site Replication Strategy](./site-replication-strategy.md) - Complete strategy to surpass target site
+6. [Screenshots Analysis](./screenshots-analysis.md) - Visual comparison with screenshots
+7. [Header Navigation Update](./header-navigation-update.md) - Recent header changes
+8. [Target Website Comparison](./target-website-comparison.md) - Analysis of target site
 
 ### 🎨 Theme Characteristics
 - **Style**: Professional medical/radioprotection design

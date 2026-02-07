@@ -1,0 +1,262 @@
+{
+    "id": "4",
+    "title": {
+        "it": "Contatti - TechPlanner Radioprotezione",
+        "en": "Contacts - TechPlanner Radiation Protection"
+    },
+    "slug": "contacts",
+    "middleware": null,
+    "content": null,
+    "content_blocks": {
+        "it": [
+            {
+                "type": "hero",
+                "slug": "contacts-hero",
+                "data": {
+                    "view": "pub_theme::components.blocks.hero.contacts",
+                    "title": "Contattaci",
+                    "subtitle": "Siamo a tua disposizione per qualsiasi esigenza di radioprotezione, elettromedicali e consulenza tecnica",
+                    "primary_cta": {
+                        "label": "Chiama Ora",
+                        "url": "tel:+393480123456"
+                    },
+                    "secondary_cta": {
+                        "label": "Richiedi Consulenza",
+                        "url": "#contact-form"
+                    }
+                }
+            },
+            {
+                "type": "contact-methods",
+                "slug": "contact-channels",
+                "data": {
+                    "view": "pub_theme::components.blocks.contact.methods",
+                    "title": "Come Raggiungerci",
+                    "methods": [
+                        {
+                            "type": "phone",
+                            "title": "Telefono",
+                            "description": "Chiamaci per assistenza immediata",
+                            "value": "+39 348 0123 456",
+                            "url": "tel:+393480123456",
+                            "hours": "Lun-Ven: 9:00-18:00",
+                            "icon": "phone",
+                            "color": "emerald"
+                        },
+                        {
+                            "type": "email",
+                            "title": "Email",
+                            "description": "Invia le tue richieste via email",
+                            "value": "info@techplanner.it",
+                            "url": "mailto:info@techplanner.it",
+                            "hours": "Risposta entro 24 ore",
+                            "icon": "email",
+                            "color": "teal"
+                        },
+                        {
+                            "type": "address",
+                            "title": "Sede Operativa",
+                            "description": "Visita la nostra sede",
+                            "value": "Via Roma 123, 35131 Padova (PD)",
+                            "hours": "Su appuntamento",
+                            "icon": "location",
+                            "color": "cyan"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "contact-form",
+                "slug": "contact-form-section",
+                "data": {
+                    "view": "pub_theme::components.blocks.contact.form",
+                    "title": "Invia una Richiesta",
+                    "subtitle": "Compila il modulo sottostante e ti risponderemo il prima possibile",
+                    "fields": [
+                        {
+                            "name": "first_name",
+                            "label": "Nome",
+                            "type": "text",
+                            "required": true,
+                            "width": "half"
+                        },
+                        {
+                            "name": "last_name",
+                            "label": "Cognome",
+                            "type": "text",
+                            "required": true,
+                            "width": "half"
+                        },
+                        {
+                            "name": "email",
+                            "label": "Email",
+                            "type": "email",
+                            "required": true,
+                            "width": "full"
+                        },
+                        {
+                            "name": "phone",
+                            "label": "Telefono",
+                            "type": "tel",
+                            "required": false,
+                            "width": "full"
+                        },
+                        {
+                            "name": "company",
+                            "label": "Azienda/Studio",
+                            "type": "text",
+                            "required": false,
+                            "width": "full"
+                        },
+                        {
+                            "name": "service_type",
+                            "label": "Tipo di Servizio Richiesto",
+                            "type": "select",
+                            "required": true,
+                            "width": "full",
+                            "options": [
+                                {"value": "radioprotezione", "label": "Controllo Radioprotezione"},
+                                {"value": "elettromedicali", "label": "Controllo Elettromedicali"},
+                                {"value": "documentazione", "label": "Documentazione e Conformità"},
+                                {"value": "consulenza", "label": "Consulenza Generale"},
+                                {"value": "formazione", "label": "Formazione del Personale"},
+                                {"value": "altro", "label": "Altro"}
+                            ]
+                        },
+                        {
+                            "name": "message",
+                            "label": "Messaggio",
+                            "type": "textarea",
+                            "required": true,
+                            "width": "full",
+                            "placeholder": "Descrivi brevemente la tua richiesta..."
+                        }
+                    ],
+                    "submit_button": {
+                        "label": "Invia Richiesta",
+                        "icon": "send"
+                    }
+                }
+            },
+            {
+                "type": "working-hours",
+                "slug": "office-hours",
+                "data": {
+                    "view": "pub_theme::components.blocks.contact.hours",
+                    "title": "Orari di Lavoro",
+                    "schedule": [
+                        {
+                            "day": "Lunedì - Venerdì",
+                            "hours": "09:00 - 18:00"
+                        },
+                        {
+                            "day": "Sabato",
+                            "hours": "09:00 - 12:00"
+                        },
+                        {
+                            "day": "Domenica",
+                            "hours": "Chiuso"
+                        },
+                        {
+                            "day": "Emergenze",
+                            "hours": "24/7",
+                            "highlight": true
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "social-links",
+                "slug": "social-media",
+                "data": {
+                    "view": "pub_theme::components.blocks.contact.social",
+                    "title": "Seguici sui Social",
+                    "description": "Rimani aggiornato su normative, novità e consigli pratici",
+                    "platforms": [
+                        {
+                            "name": "Facebook",
+                            "url": "#",
+                            "icon": "facebook",
+                            "color": "blue"
+                        },
+                        {
+                            "name": "Twitter",
+                            "url": "#",
+                            "icon": "twitter",
+                            "color": "sky"
+                        },
+                        {
+                            "name": "LinkedIn",
+                            "url": "#",
+                            "icon": "linkedin",
+                            "color": "blue"
+                        },
+                        {
+                            "name": "YouTube",
+                            "url": "#",
+                            "icon": "youtube",
+                            "color": "red"
+                        }
+                    ]
+                }
+            }
+        ],
+        "en": [
+            {
+                "type": "hero",
+                "slug": "contacts-hero",
+                "data": {
+                    "view": "pub_theme::components.blocks.hero.contacts",
+                    "title": "Contact Us",
+                    "subtitle": "We are available for any radiation protection, electromedical and technical consulting needs",
+                    "primary_cta": {
+                        "label": "Call Now",
+                        "url": "tel:+393480123456"
+                    },
+                    "secondary_cta": {
+                        "label": "Request Consultation",
+                        "url": "#contact-form"
+                    }
+                }
+            }
+        ]
+    },
+    "sidebar_blocks": {
+        "it": [
+            {
+                "type": "quick-response",
+                "slug": "quick-response",
+                "data": {
+                    "view": "pub_theme::components.blocks.sidebar.quick-response",
+                    "title": "Risposta Rapida Garantita",
+                    "features": [
+                        {
+                            "icon": "clock",
+                            "title": "Richieste Urgenti",
+                            "description": "Risposta entro 2 ore per emergenze"
+                        },
+                        {
+                            "icon": "check",
+                            "title": "Consulenza Personalizzata",
+                            "description": "Proposta su misura entro 24 ore"
+                        },
+                        {
+                            "icon": "bolt",
+                            "title": "Supporto Tecnico",
+                            "description": "Assistenza continua durante tutto il processo"
+                        }
+                    ]
+                }
+            }
+        ],
+        "en": []
+    },
+    "footer_blocks": {
+        "it": [],
+        "en": []
+    },
+    "created_at": "2026-02-06T12:00:00.000000Z",
+    "updated_at": "2026-02-06T18:00:00.000000Z",
+    "created_by": null,
+    "updated_by": "01985ae8-8039-71ea-88c7-54ebce6295b0"
+}

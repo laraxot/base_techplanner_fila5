@@ -26,6 +26,9 @@
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <!-- Alpine.js (must be loaded before cookie-consent for $dispatch to work) -->
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
 
     <body>

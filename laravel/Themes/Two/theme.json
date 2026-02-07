@@ -22,5 +22,8 @@
     "config": {
         "active": true,
         "default": false
-    }
+    },
+    "providers": [
+        "Themes\\Two\\Providers\\ThemeServiceProvider"
+    ]
 }
