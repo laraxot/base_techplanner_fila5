@@ -41,5 +41,26 @@ laravel/Themes/{ThemeName}/Main_files/
 
 Vedi: [Main Files Organization Rule](../../Themes/Two/docs/main-files-organization-rule.md)
 
+## 🚨 **Risoluzione Errori Critici**
+
+### Errore: SerializableClosure in isset or empty
+
+**Causa**: Cache bootstrap corrotte dopo modifiche al codice.
+
+**Soluzione**:
+```bash
+cd /var/www/_bases/base_techplanner_fila5/laravel && \
+rm -rf bootstrap/cache/* && \
+php artisan cache:clear && \
+php artisan config:clear && \
+php artisan route:clear && \
+php artisan view:clear && \
+php artisan optimize
+```
+
+Vedi: [SerializableClosure Error Fix](../../Themes/Two/docs/serializable-closure-error-fix.md)
+
+**Quando usare**: Dopo modifiche al codice, aggiornamenti, o errori di routing Folio
+
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
