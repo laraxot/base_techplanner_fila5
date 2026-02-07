@@ -80,3 +80,10 @@ devi migliorare lo sfondo dell headernav perche' dopo i caratteri bianchi su bia
 creare laravel/Themes/Two/resources/views/pages/pages/about/index.blade.php e' sbagliato perche' c'e' gia' /var/www/_bases/base_techplanner_fila5/laravel/Themes/Two/resources/views/pages/pages/[slug].blade.php  percio' andando su /it/pages/about va a leggere il json about.json .. cerca di capire al meglio la filosofia, religione, politica, religione poi condividila con gli altri agenti ai, poi procedi 
 
 questa pagina https://lightseagreen-dogfish-560272.hostingersite.com/chi-siamo a noi corrisponde http://127.0.0.1:8000/it/pages/about , capisci da solo il perche' e avverti anche gli altri agenti ai
+
+la pagina https://lightseagreen-dogfish-560272.hostingersite.com/servizi  a noi corrisponde a http://127.0.0.1:8000/it/pages/services
+la pagina https://lightseagreen-dogfish-560272.hostingersite.com/blog  a noi corrisponde a http://127.0.0.1:8000/it/pages/blog
+la pagina https://lightseagreen-dogfish-560272.hostingersite.com/faq a noi corrisponde a http://127.0.0.1:8000/it/pages/faqs 
+la pagina https://lightseagreen-dogfish-560272.hostingersite.com/contatti a noi corrisponde a http://127.0.0.1:8000/it/pages/contacts
+
+l'headernav dentro https://lightseagreen-dogfish-560272.hostingersite.com/ quando ti sposti in basso si trasforma trasformando lo sfondo in bianco  e il colore del testo in nero per tenere la ui/ux .. controlla 
