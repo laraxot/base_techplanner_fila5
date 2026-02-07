@@ -67,15 +67,26 @@
     $currentPath = request()->path();
 @endphp
 
-<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent py-4" style="transform: none;">
+<header 
+    x-data="{ 
+        mobileMenuOpen: false, 
+        scrolled: false 
+    }" 
+    @scroll.window="scrolled = (window.pageYOffset > 50)"
+    :class="[
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4',
+        scrolled ? 'bg-[#0f2b46]/95 backdrop-blur-lg shadow-xl border-b border-white/20' : 'bg-[#0f2b46]/90 backdrop-blur-md border-b border-white/10'
+    ]"
+    style="transform: none;"
+>
     <div class="container mx-auto px-4">
         <div class="flex items-center justify-between">
             {{-- Logo & Brand --}}
-            <a href="{{ LaravelLocalization::getLocalizedURL($currentLocale, '/') }}" class="flex items-center space-x-2" data-discover="true">
-                <div class="font-bold text-xl transition-colors text-white">
+            <a href="{{ LaravelLocalization::getLocalizedURL($currentLocale, '/') }}" class="flex items-center space-x-2 group" data-discover="true">
+                <div class="font-bold text-xl transition-colors text-white drop-shadow-md">
                     <span class="block">{{ $brandName }}</span>
                     @if($brandSubtitle)
-                        <span class="text-sm font-normal text-gray-200">{{ $brandSubtitle }}</span>
+                        <span class="text-sm font-normal text-gray-200 drop-shadow-sm">{{ $brandSubtitle }}</span>
                     @endif
                 </div>
             </a>

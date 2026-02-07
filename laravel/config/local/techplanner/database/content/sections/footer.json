@@ -51,6 +51,92 @@
                         "piva": "IT12345678901",
                         "rea": "TV-123456"
                     },
+                    "newsletter": {
+                        "title": "Rimani Aggiornato",
+                        "description": "Ricevi consigli esclusivi su sicurezza e radioprotezione",
+                        "placeholder": "La tua email",
+                        "button": "Iscriviti",
+                        "success_message": "Grazie per l'iscrizione!",
+                        "privacy_note": "Acconsento al trattamento dei dati secondo la privacy policy"
+                    },
+                    "certifications": {
+                        "title": "Certificazioni & Badge",
+                        "items": [
+                            {
+                                "name": "Esperto Qualificato Radioprotezione",
+                                "issuer": "Ministero della Salute",
+                                "valid_until": "2025-12-31",
+                                "badge": "/images/certificates/eq-badge.png"
+                            },
+                            {
+                                "name": "Certificato IEC 62353",
+                                "issuer": "CEI",
+                                "valid_until": "2025-06-30",
+                                "badge": "/images/certificates/iec-badge.png"
+                            },
+                            {
+                                "name": "Auditor Qualificato UNI CEI EN",
+                                "issuer": "ACCREDIA",
+                                "valid_until": "2025-09-30",
+                                "badge": "/images/certificates/auditor-badge.png"
+                            }
+                        ]
+                    },
+                    "testimonials": {
+                        "title": "Dicono di Noi",
+                        "items": [
+                            {
+                                "text": "Professionale e competente, ha risolto tutte le nostre problematiche di conformità.",
+                                "author": "Dr. Marco Rossi",
+                                "role": "Studio Dentistico Rossi",
+                                "location": "Treviso"
+                            },
+                            {
+                                "text": "Servizio impeccabile e tempi di intervento rapidissimi. Altamente raccomandato.",
+                                "author": "Dott.ssa Laura Bianchi",
+                                "role": "Clinica Veterinaria Aurora",
+                                "location": "Venezia"
+                            }
+                        ]
+                    },
+                    "quick_actions": {
+                        "title": "Contatti Rapidi",
+                        "call_us": {
+                            "phone": "+39 041 123 4567",
+                            "label": "Chiama Ora",
+                            "description": "Lun-Ven 9:00-18:00"
+                        },
+                        "whatsapp": {
+                            "number": "+39 333 1234567",
+                            "label": "WhatsApp",
+                            "description": "Risposta immediata"
+                        },
+                        "appointment": {
+                            "url": "/it/prenota-consultazione",
+                            "label": "Prenota Consultazione",
+                            "description": "Valutazione gratuita"
+                        }
+                    },
+                    "trust_seals": {
+                        "title": "Garanzie e Sicurezza",
+                        "seals": [
+                            {
+                                "name": "GDPR Compliant",
+                                "icon": "shield-check",
+                                "description": "Protezione dati garantita"
+                            },
+                            {
+                                "name": "ISO 9001",
+                                "icon": "certificate",
+                                "description": "Sistema qualità certificato"
+                            },
+                            {
+                                "name": "Assicurazione RC",
+                                "icon": "umbrella",
+                                "description": "Copertura assicurativa completa"
+                            }
+                        ]
+                    },
                     "legal": {
                         "copyright": "© 2026 Marco Sottana – Consulenza Sicurezza. Tutti i diritti riservati.",
                         "links": [
@@ -65,6 +151,10 @@
                             {
                                 "label": "Termini e Condizioni",
                                 "url": "/it/pages/terms"
+                            },
+                            {
+                                "label": "Policy Qualità",
+                                "url": "/it/pages/qualita"
                             }
                         ]
                     }
@@ -116,6 +206,92 @@
                         "piva": "IT12345678901",
                         "rea": "TV-123456"
                     },
+                    "newsletter": {
+                        "title": "Stay Updated",
+                        "description": "Receive exclusive tips on safety and radiation protection",
+                        "placeholder": "Your email",
+                        "button": "Subscribe",
+                        "success_message": "Thank you for subscribing!",
+                        "privacy_note": "I consent to data processing according to privacy policy"
+                    },
+                    "certifications": {
+                        "title": "Certifications & Badges",
+                        "items": [
+                            {
+                                "name": "Qualified Expert Radiation Protection",
+                                "issuer": "Ministry of Health",
+                                "valid_until": "2025-12-31",
+                                "badge": "/images/certificates/eq-badge.png"
+                            },
+                            {
+                                "name": "IEC 62353 Certificate",
+                                "issuer": "CEI",
+                                "valid_until": "2025-06-30",
+                                "badge": "/images/certificates/iec-badge.png"
+                            },
+                            {
+                                "name": "Qualified Auditor UNI CEI EN",
+                                "issuer": "ACCREDIA",
+                                "valid_until": "2025-09-30",
+                                "badge": "/images/certificates/auditor-badge.png"
+                            }
+                        ]
+                    },
+                    "testimonials": {
+                        "title": "What They Say",
+                        "items": [
+                            {
+                                "text": "Professional and competent, solved all our compliance issues.",
+                                "author": "Dr. Marco Rossi",
+                                "role": "Rossi Dental Studio",
+                                "location": "Treviso"
+                            },
+                            {
+                                "text": "Impeccable service and very fast response times. Highly recommended.",
+                                "author": "Dr. Laura Bianchi",
+                                "role": "Aurora Veterinary Clinic",
+                                "location": "Venice"
+                            }
+                        ]
+                    },
+                    "quick_actions": {
+                        "title": "Quick Contacts",
+                        "call_us": {
+                            "phone": "+39 041 123 4567",
+                            "label": "Call Now",
+                            "description": "Mon-Fri 9:00-18:00"
+                        },
+                        "whatsapp": {
+                            "number": "+39 333 1234567",
+                            "label": "WhatsApp",
+                            "description": "Instant response"
+                        },
+                        "appointment": {
+                            "url": "/en/book-consultation",
+                            "label": "Book Consultation",
+                            "description": "Free evaluation"
+                        }
+                    },
+                    "trust_seals": {
+                        "title": "Guarantees and Security",
+                        "seals": [
+                            {
+                                "name": "GDPR Compliant",
+                                "icon": "shield-check",
+                                "description": "Guaranteed data protection"
+                            },
+                            {
+                                "name": "ISO 9001",
+                                "icon": "certificate",
+                                "description": "Certified quality system"
+                            },
+                            {
+                                "name": "Professional Insurance",
+                                "icon": "umbrella",
+                                "description": "Complete insurance coverage"
+                            }
+                        ]
+                    },
                     "legal": {
                         "copyright": "© 2026 Marco Sottana – Safety Consultancy. All rights reserved.",
                         "links": [
@@ -130,6 +306,10 @@
                             {
                                 "label": "Terms and Conditions",
                                 "url": "/en/pages/terms"
+                            },
+                            {
+                                "label": "Quality Policy",
+                                "url": "/en/pages/quality"
                             }
                         ]
                     }

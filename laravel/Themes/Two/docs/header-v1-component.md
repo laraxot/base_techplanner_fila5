@@ -45,8 +45,17 @@ Themes/Two/resources/views/components/sections/header/v1.blade.php
 ### 5. Design Responsive
 - Mobile-first approach
 - Hamburger menu su mobile
-- Scroll effect: header trasparente -> bianco con shadow
+- **Header background**: Glassmorphism effect con `bg-[#0f2b46]/90 backdrop-blur-md` per garantire leggibilità del testo bianco su qualsiasi sfondo
 - Breakpoint: lg (1024px) per desktop nav
+
+## Problema UI/UX Risolto
+
+**Problema**: Header con `bg-transparent` e testo bianco (`text-white`) risulta illeggibile su sfondi chiari della pagina.
+
+**Soluzione**: Implementato sfondo scuro semi-trasparente con effetto blur:
+- `bg-[#0f2b46]/90` - Sfondo blu scuro con 90% opacità
+- `backdrop-blur-md` - Effetto glassmorphism per modernità
+- Bordo inferiore sottile per separazione visiva
 
 ## Struttura JSON (header.json)
 
@@ -104,4 +113,4 @@ Oppure incluso automaticamente dal layout:
 
 ---
 
-*Componente già implementato e funzionante*
+*Componente aggiornato con glassmorphism per migliore leggibilità*
