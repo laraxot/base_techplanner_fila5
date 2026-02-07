@@ -1,54 +1,54 @@
+@props([
+    'title' => 'Rimani Aggiornato',
+    'description' => 'Iscriviti alla nostra newsletter per ricevere aggiornamenti.',
+    'placeholder' => 'La tua email',
+    'button_label' => 'Iscriviti',
+    'privacy_text' => '',
+    'bg_color' => 'gradient',
+])
+
 @php
-    $title = $data['title'] ?? 'Rimani Aggiornato';
-    $description = $data['description'] ?? 'Iscriviti alla nostra newsletter per ricevere aggiornamenti.';
-    $placeholder = $data['placeholder'] ?? 'La tua email';
-    $buttonLabel = $data['button_label'] ?? 'Iscriviti';
-    $privacyText = $data['privacy_text'] ?? '';
-    $bgColor = $data['bg_color'] ?? 'gradient';
+    $bgClass = match($bg_color) {
+        'gradient' => 'bg-gradient-to-br from-[#1e3a5f] via-[#1a5a6f] to-emerald-700',
+        'brand-blue' => 'bg-gradient-to-br from-[#1E5A96] to-[#164575]',
+        'brand-green' => 'bg-gradient-to-r from-[#2D8659] to-[#2D8659]/90',
+        default => 'bg-gradient-to-br from-[#1E5A96] to-[#164575]',
+    };
 @endphp
 
-<section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-4">
-        <div class="bg-gradient-to-r from-[#1E5A96] to-[#2D8659] rounded-xl p-8 md:p-12 text-white">
-            {{-- Icon --}}
-            <div class="flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+<section class="py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="{{ $bgClass }} rounded-3xl p-10 lg:p-16 text-center text-white shadow-xl">
+            {{-- Mail Icon --}}
+            <div class="w-16 h-16 mx-auto mb-6 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-sm">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
                 </svg>
             </div>
-            
-            {{-- Title --}}
-            <h3 class="text-3xl font-bold text-center mb-4">{{ $title }}</h3>
-            
-            {{-- Description --}}
-            <p class="text-center text-gray-100 mb-8 max-w-2xl mx-auto">{{ $description }}</p>
-            
-            {{-- Form --}}
-            <form class="max-w-md mx-auto">
-                <div class="flex flex-col sm:flex-row gap-3">
-                    <input 
-                        type="email" 
-                        placeholder="{{ $placeholder }}" 
-                        class="flex-1 px-4 py-3 rounded-lg text-gray-900 bg-white focus:ring-2 focus:ring-white focus:outline-none"
-                        required
-                    >
-                    <button 
-                        type="submit" 
-                        class="inline-flex items-center justify-center text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 bg-white text-[#1E5A96] hover:bg-gray-100"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
-                            <path d="m21.854 2.147-10.94 10.939"></path>
-                        </svg>
-                        {{ $buttonLabel }}
-                    </button>
-                </div>
-                
-                @if($privacyText)
-                    <p class="text-xs text-gray-200 mt-3 text-center">{{ $privacyText }}</p>
-                @endif
+
+            @if($title)
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">{{ $title }}</h2>
+            @endif
+
+            @if($description)
+                <p class="text-lg text-white/80 mb-8 max-w-2xl mx-auto">{{ $description }}</p>
+            @endif
+
+            <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" @submit.prevent>
+                <input type="email"
+                       placeholder="{{ $placeholder }}"
+                       class="flex-1 px-5 py-4 rounded-xl bg-white border-0 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E67E22] text-base shadow-inner"
+                       required>
+                <button type="submit"
+                        class="px-8 py-4 bg-[#E67E22] hover:bg-[#d35400] text-white rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 whitespace-nowrap shadow-lg">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>
+                    {{ $button_label }}
+                </button>
             </form>
+
+            @if($privacy_text)
+                <p class="text-sm text-white/50 mt-5">{{ $privacy_text }}</p>
+            @endif
         </div>
     </div>
 </section>

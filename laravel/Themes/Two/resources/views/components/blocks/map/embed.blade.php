@@ -1,7 +1,10 @@
+@props([
+    'title' => 'Dove Siamo',
+    'address' => '',
+    'coordinates' => [],
+])
+
 @php
-    $title = $data['title'] ?? 'Dove Siamo';
-    $address = $data['address'] ?? '';
-    $coordinates = $data['coordinates'] ?? [];
     $lat = $coordinates['lat'] ?? null;
     $lng = $coordinates['lng'] ?? null;
 @endphp

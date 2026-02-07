@@ -1,9 +1,9 @@
-@php
-    $title = $data['title'] ?? '';
-    $subtitle = $data['subtitle'] ?? '';
-    $breadcrumb_label = $data['breadcrumb_label'] ?? '';
-    $image = $data['image'] ?? null;
-@endphp
+@props([
+    'title' => '',
+    'subtitle' => '',
+    'breadcrumb_label' => '',
+    'image' => null,
+])
 
 <section class="pt-24 pb-12 bg-gradient-to-r from-[#1E5A96] to-[#164575] text-white">
     <div class="container mx-auto px-4">

@@ -1,8 +1,13 @@
+@props([
+    'title' => 'Blog',
+    'subtitle' => '',
+    'search_placeholder' => 'Cerca articoli...',
+    'featured_categories' => [],
+])
+
 @php
-    $title = $data['title'] ?? 'Blog';
-    $subtitle = $data['subtitle'] ?? '';
-    $searchPlaceholder = $data['search_placeholder'] ?? 'Cerca articoli...';
-    $featuredCategories = $data['featured_categories'] ?? [];
+    $searchPlaceholder = $search_placeholder;
+    $featuredCategories = $featured_categories;
 @endphp
 
 <section class="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 py-20 lg:py-28">
