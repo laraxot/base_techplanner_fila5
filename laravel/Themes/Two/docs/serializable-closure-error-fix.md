@@ -29,10 +29,11 @@ php artisan route:clear
 php artisan view:clear
 ```
 
-### Passo 3: Ricostruisci l'Ottimizzazione
+### Passo 3: Riavvia il Server
 
 ```bash
-php artisan optimize
+# Riavvia il server di sviluppo
+php artisan serve --host=127.0.0.1 --port=8000
 ```
 
 ### Passo 4: Verifica
@@ -51,9 +52,15 @@ rm -rf bootstrap/cache/* && \
 php artisan cache:clear && \
 php artisan config:clear && \
 php artisan route:clear && \
-php artisan view:clear && \
-php artisan optimize
+php artisan view:clear
 ```
+
+## ⚠️ IMPORTANTE: NON usare php artisan optimize
+
+**ATTENZIONE**: In questo ambiente, `php artisan optimize` può ricreare le cache corrotte. 
+Usa solo il comando sopra SENZA `php artisan optimize`.
+
+Per ambiente di produzione, controlla prima se `php artisan optimize` causa problemi.
 
 ## 📋 Quando Usare Questa Soluzione
 
@@ -67,19 +74,16 @@ php artisan optimize
 ### Errore: Route non trovate
 ```bash
 php artisan route:clear
-php artisan optimize
 ```
 
 ### Errore: View non compilate
 ```bash
 php artisan view:clear
-php artisan optimize
 ```
 
 ### Errore: Config non aggiornate
 ```bash
 php artisan config:clear
-php artisan optimize
 ```
 
 ## 🔧 Perché Questo Funziona
@@ -89,7 +93,7 @@ php artisan optimize
 3. **config:clear** - Rimuove la cache della configurazione
 4. **route:clear** - Rimuove la cache delle rotte
 5. **view:clear** - Rimuove le viste compilate
-6. **optimize** - Ricostruisce tutte le cache in modo corretto
+6. **NON optimize** - Evita di ricreare le cache corrotte
 
 ## 📚 Riferimenti
 
@@ -101,3 +105,4 @@ php artisan optimize
 **Nota**: Questa è una soluzione standard per problemi di cache in Laravel 12.x
 **Data**: 7 Febbraio 2026
 **Applicabile a**: Tutti i progetti Laravel con Folio e ottimizzazione abilitata
+**IMPORTANTE**: Non usare `php artisan optimize` in questo ambiente!
