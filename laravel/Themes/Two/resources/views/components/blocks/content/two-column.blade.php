@@ -1,9 +1,9 @@
-@php
-    $title = $data['title'] ?? '';
-    $content = $data['content'] ?? '';
-    $image = $data['image'] ?? '';
-    $features = $data['features'] ?? [];
-@endphp
+@props([
+    'title' => '',
+    'content' => '',
+    'image' => '',
+    'features' => [],
+])
 
 <section class="py-16 bg-white">
     <div class="container mx-auto px-4">

@@ -1,9 +1,11 @@
-@php
-    $title = $data['title'] ?? 'Come Contattarci';
-    $subtitle = $data['subtitle'] ?? 'Scegli il modo più comodo per raggiungerci';
-    $info = $data['info'] ?? [];
-    $social = $data['social'] ?? [];
-@endphp
+@props([
+    'title' => 'Come Contattarci',
+    'subtitle' => 'Scegli il modo più comodo per raggiungerci',
+    'info' => [],
+    'social' => [],
+    'coordinates' => [],
+    'address' => '',
+])
 
 <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
@@ -108,13 +110,13 @@
 
             {{-- Map Preview --}}
             <div class="bg-gray-200 rounded-lg overflow-hidden h-96 flex items-center justify-center">
-                @if(!empty($data['coordinates']) && !empty($data['address']))
+                @if(!empty($coordinates) && !empty($address))
                     <iframe
                         width="100%"
                         height="100%"
                         frameborder="0"
                         style="border:0"
-                        src="https://www.google.com/maps?q={{ urlencode($data['address']) }}&output=embed"
+                        src="https://www.google.com/maps?q={{ urlencode($address) }}&output=embed"
                         allowfullscreen>
                     </iframe>
                 @else

@@ -1,12 +1,15 @@
-@props(['data' => []])
+@props([
+    'title' => 'Chi Siamo',
+    'subtitle' => '',
+    'stats' => [],
+    'primary_cta' => null,
+    'secondary_cta' => null,
+    'image' => '/themes/Two/Main_files/images/hero-bg.jpg',
+])
 
 @php
-    $title = $data['title'] ?? 'Chi Siamo';
-    $subtitle = $data['subtitle'] ?? '';
-    $stats = $data['stats'] ?? [];
-    $primaryCta = $data['primary_cta'] ?? null;
-    $secondaryCta = $data['secondary_cta'] ?? null;
-    $image = $data['image'] ?? '/themes/Two/Main_files/images/hero-bg.jpg';
+    $primaryCta = $primary_cta;
+    $secondaryCta = $secondary_cta;
 @endphp
 
 <section class="relative min-h-[70vh] flex items-center justify-center overflow-hidden">

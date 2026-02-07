@@ -1,6 +1,9 @@
 @props([
     'title' => '',
 ])
+@php
+    $metatag = \Modules\Xot\Datas\MetatagData::make();
+@endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -9,7 +12,10 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ $title ? "$title — " : '' }}{{ config('app.name') }}</title>
+        <title>{{ $metatag->getTitle() ?? ($title ? "$title — " : '') }}{{ config('app.name') }}</title>
+        @if($metatag->getDescription())
+        <meta name="description" content="{{ $metatag->getDescription() }}">
+        @endif
 
         <style>[x-cloak] { display: none !important; }</style>
 

@@ -1,8 +1,12 @@
+@props([
+    'title' => 'Domande Frequenti',
+    'subtitle' => '',
+    'search_placeholder' => 'Cerca una domanda...',
+    'stats' => [],
+])
+
 @php
-    $title = $data['title'] ?? 'Domande Frequenti';
-    $subtitle = $data['subtitle'] ?? '';
-    $searchPlaceholder = $data['search_placeholder'] ?? 'Cerca una domanda...';
-    $stats = $data['stats'] ?? [];
+    $searchPlaceholder = $search_placeholder;
 @endphp
 
 <section class="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 py-20 lg:py-28">

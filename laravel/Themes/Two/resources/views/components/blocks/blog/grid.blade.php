@@ -1,7 +1,10 @@
+@props([
+    'title' => 'Articoli Recenti',
+    'subtitle' => '',
+    'articles' => [],
+])
+
 @php
-    $title = $data['title'] ?? 'Articoli Recenti';
-    $subtitle = $data['subtitle'] ?? '';
-    $articles = $data['articles'] ?? [];
     
     $categoryColors = [
         'Radioprotezione' => 'blue',

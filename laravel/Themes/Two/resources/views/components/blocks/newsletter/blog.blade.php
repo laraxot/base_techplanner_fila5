@@ -1,7 +1,11 @@
+@props([
+    'title' => 'Rimani Aggiornato',
+    'description' => 'Iscriviti per ricevere gli ultimi articoli e aggiornamenti normativi direttamente nella tua casella email.',
+    'cta_label' => 'Iscriviti alla Newsletter',
+])
+
 @php
-    $title = $data['title'] ?? 'Rimani Aggiornato';
-    $description = $data['description'] ?? 'Iscriviti per ricevere gli ultimi articoli e aggiornamenti normativi direttamente nella tua casella email.';
-    $ctaLabel = $data['cta_label'] ?? 'Iscriviti alla Newsletter';
+    $ctaLabel = $cta_label;
 @endphp
 
 <section class="py-16 bg-gray-50">

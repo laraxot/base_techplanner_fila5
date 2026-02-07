@@ -1,26 +1,10 @@
 @php
-    use Illuminate\Support\Arr;
     use Illuminate\Support\Str;
     use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
-    // DEBUG: Verifica struttura dati
     $blocks = $blocks ?? [];
-    $debugInfo = [
-        'type' => gettype($blocks),
-        'count' => is_countable($blocks) ? count($blocks) : 0,
-        'first' => null
-    ];
-    
-    if (is_array($blocks) && count($blocks) > 0) {
-        $first = $blocks[0];
-        $debugInfo['first'] = [
-            'type' => gettype($first),
-            'keys' => is_array($first) ? array_keys($first) : (is_object($first) ? get_object_vars($first) : null)
-        ];
-    }
-    
-    // Initialize default data with fallbacks
-    $navData = [];
+
+    // Initialize defaults
     $brandName = 'Marco Sottana';
     $brandSubtitle = 'Consulenza Sicurezza';
     $items = [];
@@ -28,253 +12,221 @@
     $ctaUrl = '/it/contatti';
 @endphp
 
-{{-- DEBUG OUTPUT --}}
-@if(app()->environment('local'))
-<!-- DEBUG: {{ json_encode($debugInfo) }} -->
-@endif
-
-{{-- Render any non-nav blocks first (e.g. Alerts/Banners) --}}
+{{-- Extract nav1 block data, render other blocks (alerts/banners) --}}
 @foreach($blocks as $block)
     @php
-        // Handle both object and array syntax
         $blockSlug = is_object($block) ? ($block->slug ?? null) : ($block['slug'] ?? null);
         $blockData = is_object($block) ? ($block->data ?? []) : ($block['data'] ?? []);
     @endphp
-    
-    @if($blockSlug !== 'nav1')
+
+    @if($blockSlug === 'nav1')
+        @php
+            $brandName = $blockData['brand'] ?? $brandName;
+            $brandSubtitle = $blockData['brand_subtitle'] ?? $brandSubtitle;
+            $items = $blockData['items'] ?? $items;
+            $ctaLabel = $blockData['cta_label'] ?? $ctaLabel;
+            $ctaUrl = $blockData['cta_url'] ?? $ctaUrl;
+        @endphp
+    @else
         @php
             $blockView = is_object($block) ? ($block->view ?? null) : ($block['view'] ?? null);
         @endphp
-        @if(isset($blockView))
+        @if(isset($blockView) && view()->exists($blockView))
             @include($blockView, $blockData)
         @endif
-    @else
-        @php
-            // Capture nav1 data for the main header layout
-            $navData = $blockData;
-            $brandName = $navData['brand'] ?? $brandName;
-            $brandSubtitle = $navData['brand_subtitle'] ?? $brandSubtitle;
-            $items = $navData['items'] ?? $items;
-            $ctaLabel = $navData['cta_label'] ?? $ctaLabel;
-            $ctaUrl = $navData['cta_url'] ?? $ctaUrl;
-        @endphp
     @endif
 @endforeach
 
 @php
-    $currentLocale = \LaravelLocalization::getCurrentLocale();
-    $supportedLocales = \LaravelLocalization::getSupportedLocales();
+    $currentLocale = LaravelLocalization::getCurrentLocale();
+    $supportedLocales = LaravelLocalization::getSupportedLocales();
     $currentPath = request()->path();
 @endphp
 
-<header 
-    x-data="{ 
-        mobileMenuOpen: false, 
-        scrolled: false 
-    }" 
-    @scroll.window="scrolled = (window.pageYOffset > 50)"
-    :class="[
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4',
-        scrolled ? 'bg-[#0f2b46]/95 backdrop-blur-lg shadow-xl border-b border-white/20' : 'bg-[#0f2b46]/90 backdrop-blur-md border-b border-white/10'
-    ]"
-    style="transform: none;"
+{{-- Main Header --}}
+<header
+    x-data="{
+        scrolled: false,
+        mobileOpen: false,
+        init() {
+            this.scrolled = window.scrollY > 50;
+        }
+    }"
+    @scroll.window="scrolled = (window.scrollY > 50)"
+    :class="scrolled
+        ? 'bg-[#0f2b46]/95 backdrop-blur-lg shadow-lg border-b border-white/10'
+        : 'bg-gradient-to-b from-black/40 to-transparent'"
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
 >
-    <div class="container mx-auto px-4">
-        <div class="flex items-center justify-between">
-            {{-- Logo & Brand --}}
-            <a href="{{ LaravelLocalization::getLocalizedURL($currentLocale, '/') }}" class="flex items-center space-x-2 group" data-discover="true">
-                <div class="font-bold text-xl transition-colors text-white drop-shadow-md">
-                    <span class="block">{{ $brandName }}</span>
-                    @if($brandSubtitle)
-                        <span class="text-sm font-normal text-gray-200 drop-shadow-sm">{{ $brandSubtitle }}</span>
-                    @endif
-                </div>
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="flex items-center justify-between h-16 md:h-20">
+
+            {{-- Brand --}}
+            <a href="{{ LaravelLocalization::getLocalizedURL($currentLocale, '/') }}" class="flex flex-col leading-tight shrink-0 group">
+                <span class="font-bold text-lg md:text-xl text-white group-hover:text-white/90 transition-colors">{{ $brandName }}</span>
+                @if($brandSubtitle)
+                    <span class="text-xs md:text-sm text-white/70 font-normal">{{ $brandSubtitle }}</span>
+                @endif
             </a>
-            
-            {{-- Desktop Navigation --}}
-            <nav class="hidden md:flex items-center space-x-8">
+
+            {{-- Desktop Nav --}}
+            <nav class="hidden lg:flex items-center space-x-1 xl:space-x-2" aria-label="Main navigation">
                 @foreach($items as $item)
                     @php
+                        $itemPath = ltrim($item['url'] ?? '', '/');
                         $isActive = false;
-                        if (isset($item['active']) && $item['active']) {
+                        // Exact match for home
+                        if ($itemPath === $currentLocale && ($currentPath === $currentLocale || $currentPath === $currentLocale.'/')) {
                             $isActive = true;
-                        } elseif (str_contains($currentPath, ltrim($item['url'], '/'))) {
+                        } elseif ($itemPath !== $currentLocale && $itemPath && Str::startsWith($currentPath, $itemPath)) {
                             $isActive = true;
                         }
                     @endphp
-                    <a 
-                        href="{{ $item['url'] }}" 
-                        class="font-medium transition-colors relative group text-white hover:text-gray-200 {{ $isActive ? 'text-white' : '' }}"
-                        data-discover="true"
+                    <a
+                        href="{{ $item['url'] }}"
+                        class="relative px-3 py-2 text-sm font-medium transition-colors text-white/90 hover:text-white"
+                        @if($isActive) aria-current="page" @endif
                     >
                         {{ $item['label'] }}
-                        <span class="absolute bottom-0 left-0 h-0.5 transition-all group-hover:w-full bg-white {{ $isActive ? 'w-full' : 'w-0' }}"></span>
+                        <span class="absolute bottom-0 left-3 right-3 h-0.5 bg-white rounded-full transition-all duration-200 {{ $isActive ? 'opacity-100' : 'opacity-0' }}"></span>
                     </a>
                 @endforeach
             </nav>
-            
-            {{-- Right Actions: Lang, Auth, CTA --}}
-            <div class="hidden md:flex items-center space-x-6">
-                {{-- Language Switcher --}}
-                <div class="relative" x-data="{ open: false }">
-                    <button 
-                        @click="open = !open" 
-                        @click.away="open = false"
-                        class="flex items-center space-x-1 text-white/90 hover:text-white transition-colors focus:outline-none"
-                    >
-                        @php
-                            $flagCode = $currentLocale === 'en' ? 'gb' : $currentLocale;
-                            $flagUrl = asset("modules/ui/svg/flags/{$flagCode}.svg");
-                        @endphp
-                        <img src="{{ $flagUrl }}" alt="{{ $currentLocale }}" class="w-5 h-5 rounded-full shadow-sm object-cover" />
-                        <x-heroicon-o-chevron-down class="w-3 h-3 text-white/70" />
-                    </button>
 
-                    <div 
-                        x-show="open" 
+            {{-- Right Actions --}}
+            <div class="hidden lg:flex items-center space-x-4">
+
+                {{-- Language Switcher --}}
+                <div class="relative" x-data="{ langOpen: false }">
+                    <button
+                        @click="langOpen = !langOpen"
+                        @click.away="langOpen = false"
+                        class="flex items-center space-x-1.5 text-white/80 hover:text-white transition-colors focus:outline-none"
+                        aria-label="Change language"
+                    >
+                        <span class="text-sm font-medium uppercase">{{ $currentLocale }}</span>
+                        <svg class="w-3.5 h-3.5 transition-transform" :class="langOpen ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        x-show="langOpen"
                         x-transition:enter="transition ease-out duration-100"
-                        x-transition:enter-start="transform opacity-0 scale-95"
-                        x-transition:enter-end="transform opacity-100 scale-100"
+                        x-transition:enter-start="opacity-0 scale-95"
+                        x-transition:enter-end="opacity-100 scale-100"
                         x-transition:leave="transition ease-in duration-75"
-                        x-transition:leave-start="transform opacity-100 scale-100"
-                        x-transition:leave-end="transform opacity-0 scale-95"
-                        class="absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-xl py-1 border border-gray-100 overflow-hidden"
+                        x-transition:leave-start="opacity-100 scale-100"
+                        x-transition:leave-end="opacity-0 scale-95"
+                        class="absolute right-0 mt-2 w-36 bg-white rounded-lg shadow-xl py-1 border border-gray-100 overflow-hidden"
                         style="display: none;"
                     >
                         @foreach($supportedLocales as $localeCode => $properties)
-                            @if($localeCode !== $currentLocale)
-                                <a 
-                                    href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}" 
-                                    class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
-                                >
-                                    @php
-                                        $flagCode = $localeCode === 'en' ? 'gb' : $localeCode;
-                                        $flagUrl = asset("modules/ui/svg/flags/{$flagCode}.svg");
-                                    @endphp
-                                    <img src="{{ $flagUrl }}" alt="{{ $localeCode }}" class="w-4 h-4 mr-3 rounded-full object-cover" />
-                                    {{ $properties['native'] }}
-                                </a>
-                            @endif
+                            <a
+                                href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
+                                class="flex items-center px-4 py-2 text-sm transition-colors {{ $localeCode === $currentLocale ? 'bg-blue-50 text-[#1E5A96] font-semibold' : 'text-gray-700 hover:bg-gray-50' }}"
+                                hreflang="{{ $localeCode }}"
+                            >
+                                <span class="uppercase text-xs font-bold mr-3 w-5 text-center">{{ $localeCode }}</span>
+                                {{ $properties['native'] }}
+                            </a>
                         @endforeach
                     </div>
                 </div>
 
-                {{-- Auth Dropdown --}}
+                {{-- Auth --}}
                 @auth
-                    <div class="relative" x-data="{ open: false }">
-                        <button 
-                            @click="open = !open" 
-                            @click.away="open = false"
+                    <div class="relative" x-data="{ userOpen: false }">
+                        <button
+                            @click="userOpen = !userOpen"
+                            @click.away="userOpen = false"
                             class="flex items-center space-x-2 focus:outline-none group"
+                            aria-label="User menu"
                         >
                             <div class="relative">
-                                <img 
-                                    src="{{ auth()->user()->avatar_url ?? 'https://ui-avatars.com/api/?name='.urlencode(auth()->user()->name).'&color=7F9CF5&background=EBF4FF' }}" 
-                                    alt="{{ auth()->user()->name }}" 
-                                    class="w-8 h-8 rounded-full border-2 border-white/20 group-hover:border-brand-orange transition-colors object-cover"
+                                <img
+                                    src="{{ auth()->user()->avatar_url ?? 'https://ui-avatars.com/api/?name='.urlencode(auth()->user()->name ?? 'U').'&color=7F9CF5&background=EBF4FF&size=32' }}"
+                                    alt=""
+                                    class="w-8 h-8 rounded-full border-2 border-white/30 group-hover:border-white/60 transition-colors object-cover"
                                 >
-                                <span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-500 border-2 border-white rounded-full"></span>
+                                <span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-green-400 border-2 border-[#0f2b46] rounded-full"></span>
                             </div>
                         </button>
-
-                        <div 
-                            x-show="open" 
+                        <div
+                            x-show="userOpen"
                             x-transition:enter="transition ease-out duration-100"
-                            x-transition:enter-start="transform opacity-0 scale-95"
-                            x-transition:enter-end="transform opacity-100 scale-100"
+                            x-transition:enter-start="opacity-0 scale-95"
+                            x-transition:enter-end="opacity-100 scale-100"
                             x-transition:leave="transition ease-in duration-75"
-                            x-transition:leave-start="transform opacity-100 scale-100"
-                            x-transition:leave-end="transform opacity-0 scale-95"
-                            class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl py-1 border border-gray-100"
+                            x-transition:leave-start="opacity-100 scale-100"
+                            x-transition:leave-end="opacity-0 scale-95"
+                            class="absolute right-0 mt-2 w-52 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden"
                             style="display: none;"
                         >
-                            <div class="px-4 py-3 border-b border-gray-100">
-                                <p class="text-sm font-medium text-gray-900 truncate">{{ auth()->user()->name }}</p>
-                                <p class="text-xs text-gray-500 truncate">{{ auth()->user()->email }}</p>
+                            <div class="px-4 py-3 border-b border-gray-100 bg-gray-50/50">
+                                <p class="text-sm font-semibold text-gray-900 truncate">{{ auth()->user()->name ?? '' }}</p>
+                                <p class="text-xs text-gray-500 truncate">{{ auth()->user()->email ?? '' }}</p>
                             </div>
-                            
-                            {{-- Dashboard Link --}}
-                            <a href="/admin" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-blue">
-                                <x-heroicon-o-squares-2x2 class="w-4 h-4 mr-3 text-gray-400" />
+                            <a href="/admin" class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1E5A96] transition-colors">
+                                <svg class="w-4 h-4 mr-3 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
                                 Dashboard
                             </a>
-
-                            {{-- Profile Link --}}
-                            <a href="/profile" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-blue">
-                                <x-heroicon-o-user class="w-4 h-4 mr-3 text-gray-400" />
+                            <a href="/profile" class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1E5A96] transition-colors">
+                                <svg class="w-4 h-4 mr-3 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                                 {{ __('Profilo') }}
                             </a>
-
-                            <div class="border-t border-gray-100 my-1"></div>
-
-                            {{-- Logout --}}
+                            <div class="border-t border-gray-100"></div>
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
-                                <button type="submit" class="flex w-full items-center px-4 py-2 text-sm text-red-600 hover:bg-red-50">
-                                    <x-heroicon-o-arrow-right-start-on-rectangle class="w-4 h-4 mr-3 text-red-400" />
+                                <button type="submit" class="flex w-full items-center px-4 py-2.5 text-sm text-red-600 hover:bg-red-50 transition-colors">
+                                    <svg class="w-4 h-4 mr-3 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
                                     {{ __('Esci') }}
                                 </button>
                             </form>
                         </div>
                     </div>
-                @else
-                    <a 
-                        href="{{ route('login') }}" 
-                        class="text-sm font-medium text-white hover:text-brand-orange transition-colors"
-                    >
-                        Accedi
-                    </a>
                 @endauth
 
-                {{-- CTA Button --}}
-                <a 
-                    href="{{ $ctaUrl }}" 
-                    class="hidden lg:inline-flex items-center justify-center px-5 py-2 text-sm font-bold text-white transition-all duration-200 bg-[#E67E22] rounded-lg hover:bg-[#d35400] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#E67E22] focus:ring-offset-transparent"
+                {{-- CTA Button - white border style matching reference --}}
+                <a
+                    href="{{ $ctaUrl }}"
+                    class="inline-flex items-center px-5 py-2.5 text-sm font-semibold text-white border border-white/70 rounded-lg hover:bg-white hover:text-[#1E5A96] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/40"
                 >
+                    {{-- Phone icon --}}
+                    <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
                     {{ $ctaLabel }}
                 </a>
             </div>
 
-            {{-- Mobile Menu Button --}}
-            <div class="flex items-center md:hidden space-x-4">
-                 {{-- Mobile Lang Switcher --}}
-                <div class="relative" x-data="{ open: false }">
-                     <button @click="open = !open" class="flex items-center text-white focus:outline-none">
-                         @php 
-                            $flagCode = $currentLocale === 'en' ? 'gb' : $currentLocale; 
-                            $flagUrl = asset("modules/ui/svg/flags/{$flagCode}.svg");
-                         @endphp
-                         <img src="{{ $flagUrl }}" alt="{{ $currentLocale }}" class="w-6 h-6 rounded-full object-cover" />
-                     </button>
-                      <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-12 bg-white rounded shadow-lg overflow-hidden z-50">
+            {{-- Mobile: Lang + Hamburger --}}
+            <div class="flex items-center lg:hidden space-x-3">
+                {{-- Mobile Lang --}}
+                <div class="relative" x-data="{ mLang: false }">
+                    <button @click="mLang = !mLang" @click.away="mLang = false" class="text-white/80 hover:text-white text-sm font-bold uppercase focus:outline-none">
+                        {{ $currentLocale }}
+                    </button>
+                    <div x-show="mLang" x-transition class="absolute right-0 mt-2 w-28 bg-white rounded-lg shadow-xl py-1 border border-gray-100 overflow-hidden z-50" style="display: none;">
                         @foreach($supportedLocales as $localeCode => $properties)
-                             @if($localeCode !== $currentLocale)
-                                <a href="{{ LaravelLocalization::getLocalizedURL($localeCode) }}" class="block p-2 hover:bg-gray-100 flex justify-center">
-                                     @php 
-                                        $flagCode = $localeCode === 'en' ? 'gb' : $localeCode; 
-                                        $flagUrl = asset("modules/ui/svg/flags/{$flagCode}.svg");
-                                     @endphp
-                                     <img src="{{ $flagUrl }}" alt="{{ $localeCode }}" class="w-5 h-5 rounded-full object-cover" />
-                                </a>
-                             @endif
+                            <a href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}" class="block px-3 py-2 text-sm {{ $localeCode === $currentLocale ? 'bg-blue-50 text-[#1E5A96] font-bold' : 'text-gray-700 hover:bg-gray-50' }}" hreflang="{{ $localeCode }}">
+                                {{ strtoupper($localeCode) }} - {{ $properties['native'] }}
+                            </a>
                         @endforeach
-                      </div>
+                    </div>
                 </div>
 
-                <button 
-                    @click="mobileMenuOpen = !mobileMenuOpen" 
-                    type="button" 
-                    class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" 
-                    aria-controls="mobile-menu" 
-                    :aria-expanded="mobileMenuOpen"
-                    x-data="{ mobileMenuOpen: false }"
+                {{-- Hamburger --}}
+                <button
+                    @click="mobileOpen = !mobileOpen"
+                    class="p-2 rounded-md text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/30"
+                    aria-label="Toggle menu"
+                    :aria-expanded="mobileOpen.toString()"
                 >
-                    <span class="sr-only">Open main menu</span>
-                    <svg x-show="!mobileMenuOpen" class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    <svg x-show="!mobileOpen" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
-                    <svg x-show="mobileMenuOpen" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    <svg x-show="mobileOpen" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display: none;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
@@ -282,67 +234,57 @@
     </div>
 
     {{-- Mobile Menu --}}
-    <div 
-        class="md:hidden bg-gray-900/95 backdrop-blur-xl border-t border-white/10" 
-        id="mobile-menu" 
-        x-show="mobileMenuOpen"
+    <div
+        x-show="mobileOpen"
         x-transition:enter="transition ease-out duration-200"
         x-transition:enter-start="opacity-0 -translate-y-2"
         x-transition:enter-end="opacity-100 translate-y-0"
         x-transition:leave="transition ease-in duration-150"
         x-transition:leave-start="opacity-100 translate-y-0"
         x-transition:leave-end="opacity-0 -translate-y-2"
+        class="lg:hidden bg-[#0f2b46]/98 backdrop-blur-xl border-t border-white/10"
         style="display: none;"
-        x-data="{ mobileMenuOpen: false }"
     >
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div class="container mx-auto px-4 py-4 space-y-1">
             @foreach($items as $item)
                 @php
-                    $isActive = false;
-                    if (isset($item['active']) && $item['active']) {
-                        $isActive = true;
-                    } elseif (str_contains($currentPath, ltrim($item['url'], '/'))) {
-                        $isActive = true;
-                    }
+                    $itemPath = ltrim($item['url'] ?? '', '/');
+                    $isActive = ($currentPath === $itemPath) || ($itemPath !== $currentLocale && $itemPath && Str::startsWith($currentPath, $itemPath));
                 @endphp
-                <a 
-                    href="{{ $item['url'] }}" 
-                    class="block px-3 py-2 rounded-md text-base font-medium text-white {{ $isActive ? 'text-brand-orange' : 'hover:text-brand-orange' }} hover:bg-white/5 transition-colors"
+                <a
+                    href="{{ $item['url'] }}"
+                    class="block px-4 py-3 rounded-lg text-base font-medium transition-colors {{ $isActive ? 'text-white bg-white/10' : 'text-white/80 hover:text-white hover:bg-white/5' }}"
                 >
                     {{ $item['label'] }}
                 </a>
             @endforeach
-            
-             @auth
-                <div class="border-t border-white/10 pt-4 mt-4 pb-2">
-                    <div class="flex items-center px-3 mb-3">
-                         {{-- Mobile User Info --}}
-                         <div class="flex-shrink-0">
-                             <img class="h-10 w-10 rounded-full border-2 border-brand-orange" src="{{ auth()->user()->avatar_url ?? 'https://ui-avatars.com/api/?name='.urlencode(auth()->user()->name).'&color=7F9CF5&background=EBF4FF' }}" alt="">
-                        </div>
+
+            @auth
+                <div class="border-t border-white/10 pt-4 mt-3">
+                    <div class="flex items-center px-4 mb-3">
+                        <img class="w-10 h-10 rounded-full border-2 border-white/20" src="{{ auth()->user()->avatar_url ?? 'https://ui-avatars.com/api/?name='.urlencode(auth()->user()->name ?? 'U').'&color=7F9CF5&background=EBF4FF' }}" alt="">
                         <div class="ml-3">
-                            <div class="text-base font-medium leading-none text-white">{{ auth()->user()->name }}</div>
-                            <div class="text-sm font-medium leading-none text-gray-400 mt-1">{{ auth()->user()->email }}</div>
+                            <p class="text-sm font-semibold text-white">{{ auth()->user()->name ?? '' }}</p>
+                            <p class="text-xs text-white/60">{{ auth()->user()->email ?? '' }}</p>
                         </div>
                     </div>
-                    <a href="/admin" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">Dashboard</a>
-                    <a href="/profile" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">Profilo</a>
+                    <a href="/admin" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5 rounded-lg">Dashboard</a>
+                    <a href="/profile" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5 rounded-lg">{{ __('Profilo') }}</a>
                     <form method="POST" action="{{ route('logout') }}" class="mt-1">
                         @csrf
-                        <button type="submit" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-red-400 hover:text-red-300 hover:bg-white/5">Esci</button>
+                        <button type="submit" class="block w-full text-left px-4 py-2 text-sm text-red-400 hover:text-red-300 hover:bg-white/5 rounded-lg">{{ __('Esci') }}</button>
                     </form>
-                </div>
-            @else
-                 <div class="border-t border-white/10 pt-4 mt-4">
-                    <a href="{{ route('login') }}" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brand-orange hover:bg-white/5 text-center">Accedi</a>
                 </div>
             @endauth
 
-            <div class="mt-4 px-3 pb-4">
-                <a 
-                    href="{{ $ctaUrl }}" 
-                    class="flex items-center justify-center w-full px-5 py-3 text-base font-bold text-white bg-[#E67E22] rounded-lg hover:bg-[#d35400] transition-colors shadow-lg"
+            <div class="pt-3 mt-2">
+                <a
+                    href="{{ $ctaUrl }}"
+                    class="flex items-center justify-center w-full px-5 py-3 text-base font-semibold text-white border border-white/70 rounded-lg hover:bg-white hover:text-[#1E5A96] transition-all"
                 >
+                    <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
                     {{ $ctaLabel }}
                 </a>
             </div>

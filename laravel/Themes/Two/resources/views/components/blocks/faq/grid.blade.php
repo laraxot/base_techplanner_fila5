@@ -1,7 +1,7 @@
-@php
-    $title = $data['title'] ?? 'Risposte rapide ai tuoi dubbi';
-    $faqs = $data['faqs'] ?? [];
-@endphp
+@props([
+    'title' => 'Risposte rapide ai tuoi dubbi',
+    'faqs' => [],
+])
 
 <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">

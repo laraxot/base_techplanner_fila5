@@ -1,3 +1,5 @@
+<?php
+/*
 # Piano di Implementazione Miglioramenti Conversione
 
 **Basato su:** Report di Analisi Conversione  
@@ -50,6 +52,7 @@ resources/views/components/blocks/
 <tool_call>write
 <arg_key>content</arg_key>
 <arg_value>@php
+*/
 use function Laravel\Folio\{name, middleware};
 
 name('about');

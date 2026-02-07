@@ -1,8 +1,13 @@
+@props([
+    'title' => 'Non hai trovato la risposta che cercavi?',
+    'subtitle' => '',
+    'primary_cta' => [],
+    'secondary_cta' => [],
+])
+
 @php
-    $title = $data['title'] ?? 'Non hai trovato la risposta che cercavi?';
-    $subtitle = $data['subtitle'] ?? '';
-    $primaryCta = $data['primary_cta'] ?? [];
-    $secondaryCta = $data['secondary_cta'] ?? [];
+    $primaryCta = $primary_cta;
+    $secondaryCta = $secondary_cta;
 @endphp
 
 <section class="py-16 bg-blue-900">

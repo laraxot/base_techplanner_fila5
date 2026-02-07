@@ -1,9 +1,14 @@
+@props([
+    'title' => 'Richiedi una Consulenza',
+    'subtitle' => 'Compila il form e ti ricontatteremo entro 24 ore',
+    'fields' => [],
+    'submit_label' => 'Invia Richiesta',
+    'privacy_text' => 'Inviando questo form accetti la nostra Privacy Policy.',
+])
+
 @php
-    $title = $data['title'] ?? 'Richiedi una Consulenza';
-    $subtitle = $data['subtitle'] ?? 'Compila il form e ti ricontatteremo entro 24 ore';
-    $fields = $data['fields'] ?? [];
-    $submitLabel = $data['submit_label'] ?? 'Invia Richiesta';
-    $privacyText = $data['privacy_text'] ?? 'Inviando questo form accetti la nostra Privacy Policy.';
+    $submitLabel = $submit_label;
+    $privacyText = $privacy_text;
 @endphp
 
 <section class="py-16 bg-white">
