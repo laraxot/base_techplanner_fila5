@@ -30,5 +30,16 @@
 - [Media](../../Media/docs/README.md) - Gestione file e immagini cloud.
 - [Xot](../../Xot/docs/README.md) - Core framework.
 
+## 📁 **Regole Organizzazione File Target**
+
+**CRITICAL**: Tutti i file HTML di riferimento del sito target devono essere salvati dentro:
+```
+laravel/Themes/{ThemeName}/Main_files/
+```
+
+**MAI** nella root di `laravel/` o del progetto!
+
+Vedi: [Main Files Organization Rule](../../Themes/Two/docs/main-files-organization-rule.md)
+
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
