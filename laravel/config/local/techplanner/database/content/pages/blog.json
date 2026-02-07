@@ -29,19 +29,18 @@
                 "type": "search-section",
                 "slug": "blog-search",
                 "data": {
-                    "view": "laravel.components.blog.search-bar",
+                    "view": "pub_theme::components.blocks.hero.simple",
                     "title": "Trova l'Articolo Perfetto",
-                    "subtitle": "Cerca tra centinaia di guide, aggiornamenti normativi e approfondimenti",
-                    "placeholder": "Cerca per argomento, normativa o parola chiave...",
-                    "show_advanced": true,
-                    "show_suggestions": true
+                    "subtitle": "Cerca tra centinaia di guide, aggiornamenti normativi e consigli per mantenere il tuo studio sempre conforme e sicuro",
+                    "primary_cta_label": "Esplora gli Articoli",
+                    "primary_cta_url": "#articles"
                 }
             },
             {
                 "type": "categories-filter",
                 "slug": "blog-categories",
                 "data": {
-                    "view": "laravel.components.blog.category-filter",
+                    "view": "cms::components.blog.category-filter",
                     "title": "Esplora per Categoria",
                     "subtitle": "Filtra gli articoli per area di interesse",
                     "style": "pills",
@@ -86,7 +85,7 @@
                 "type": "featured-articles",
                 "slug": "blog-featured",
                 "data": {
-                    "view": "laravel.components.blog.featured-grid",
+                    "view": "cms::components.blog.featured-grid",
                     "title": "Articoli in Evidenza",
                     "subtitle": "I contenuti più richiesti e attuali della nostra community",
                     "articles": [
@@ -181,7 +180,7 @@
                 "type": "articles-grid",
                 "slug": "blog-articles",
                 "data": {
-                    "view": "laravel.components.blog.articles-grid",
+                    "view": "cms::components.blog.articles-grid",
                     "title": "Tutti gli Articoli",
                     "subtitle": "Esplora la nostra raccolta di guide, aggiornamenti e approfondimenti",
                     "layout": "grid",
