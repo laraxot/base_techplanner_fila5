@@ -1,84 +1,150 @@
-# Regola Organizzazione File Target - Main Files
+# Main Files Organization Rule
 
-## 📁 Regola Fondamentale
+## 🔴 CRITICAL RULE
 
-**Tutti i file HTML di riferimento del sito target devono essere salvati dentro:**
+**Tutti i file HTML scaricati dal sito target DEVONO essere salvati nella directory `laravel/Themes/Two/Main_files/`, NON nella root di `laravel`.**
+
+## Perché questa regola?
+
+1. **Separazione chiara**: La directory `Main_files` è dedicata esclusivamente ai file di riferimento per replicare il sito target. Questo mantiene separato il codice dell'applicazione dai file di riferimento.
+
+2. **Organizzazione pulita**: Tutti i file HTML, CSS, JS e assets scaricati dal sito target sono in un unico luogo ben definito.
+
+3. **Manutenibilità**: Facilita la ricerca e l'aggiornamento dei file di riferimento senza "sporcare" la root del progetto.
+
+4. **Consistenza**: Tutti gli agenti AI e gli sviluppatori sanno dove cercare i file di riferimento.
+
+## Naming Convention
+
+I file devono essere nominati con pattern consistente:
+
+- `target-home.html` - Homepage del sito target
+- `target-about.html` - Pagina Chi Siamo del sito target
+- `target-services.html` - Pagina Servizi del sito target
+- `target-blog.html` - Pagina Blog del sito target
+- `target-faq.html` - Pagina FAQ del sito target
+- `target-contacts.html` - Pagina Contatti del sito target
+
+## Sottocartelle per organizzazione
+
+### Images
+```
+Main_files/
+├── images/
+│   ├── blog/
+│   │   ├── dlgs-101-2020.jpg
+│   │   ├── manutenzione-elettromedicali.jpg
+│   │   └── radioprotezione-2026.jpg
+│   ├── hero-bg.jpg
+│   ├── medical-equipment.jpg
+│   ├── sector-dental.jpg
+│   ├── sector-veterinary.jpg
+│   └── testimonials/
+│       ├── dr-roberto-magni.jpg
+│       ├── dr-elena-visentin.jpg
+│       ├── dr-paolo-verdi.jpg
+│       └── dr-giulia-bianchi.jpg
+```
+
+### Assets (CSS/JS)
+```
+Main_files/
+├── lightseagreen-dogfish-560272.hostingersite.com/
+│   ├── assets/
+│   │   ├── index-17d8d2a5.css
+│   │   └── index-8281de30.js
+│   ├── images/
+│   ├── robots.txt
+│   └── index.html
+```
+
+### Snippets
+```
+Main_files/
+├── js_snippet.txt
+├── root_innerHTML.txt
+└── target-site-structure.html
+```
+
+## Struttura Completa Esempio
+
 ```
 laravel/Themes/Two/Main_files/
+├── .gitkeep
+├── about-target.html
+├── blog-target.html
+├── contacts-target.html
+├── faq-target.html
+├── homepage.html
+├── index.html
+├── services-target.html
+├── target-about.html
+├── target-blog.html
+├── target-chi-siamo.html
+├── target-contatti.html
+├── target-faq.html
+├── target-home.html
+├── target-servizi.html
+├── target-site-full.html
+├── target-site-structure.html
+├── target-site.html
+├── target_header.html
+├── js_snippet.txt
+├── root_innerHTML.txt
+├── index-17d8d2a5.css
+├── index-8281de30.js
+├── images/
+│   ├── blog/
+│   ├── hero-bg.jpg
+│   ├── medical-equipment.jpg
+│   ├── sector-dental.jpg
+│   ├── sector-veterinary.jpg
+│   └── testimonials/
+├── lightseagreen-dogfish-560272.hostingersite.com/
+│   ├── assets/
+│   ├── images/
+│   ├── robots.txt
+│   └── index.html
+└── reference-site/
+    └── header.html
 ```
 
-## ❌ POSIZIONI ERRATE (MAI FARE)
+## Comandi Git
+
+Quando si aggiungono file target, usare:
 
 ```bash
-# ERRATO - File nella root di laravel
-laravel/target_about.html
-laravel/target_home.html
-
-# ERRATO - File nella root del progetto
-target_about.html
-target_home.html
+cd laravel/Themes/Two
+git add Main_files/
+git commit -m "docs: add target site reference files"
+git push
 ```
 
-## ✅ POSIZIONI CORRETTE
+## Regole per gli Agenti AI
 
-```bash
-# CORRETTO - File dentro Main_files del tema
-laravel/Themes/Two/Main_files/target-about.html
-laravel/Themes/Two/Main_files/target-home.html
-laravel/Themes/Two/Main_files/target-site-full.html
-laravel/Themes/Two/Main_files/marco-sottana-site.html
-```
+1. **SEMPRE** salvare i file HTML scaricati in `Main_files/`
+2. **MAI** salvare file target nella root di `laravel`
+3. Usare naming convention consistente `target-[pagina].html`
+4. Organizzare immagini in sottocartelle `images/`
+5. Aggiungere `.gitkeep` per mantenere directory vuote in git
+6. Documentare la struttura nel README se necessario
 
-## 📋 Struttura Consigliata Main_files
+## Vantaggi
 
-```
-laravel/Themes/Two/Main_files/
-├── target-home.html           # Homepage target
-├── target-about.html          # Chi Siamo target
-├── target-services.html       # Servizi target
-├── target-blog.html           # Blog target
-├── target-faq.html            # FAQ target
-├── target-contacts.html       # Contatti target
-├── target-site-full.html      # Sito completo target
-├── target-header.html         # Header target
-├── target-footer.html         # Footer target
-└── images/                    # Immagini scaricate dal target
-    ├── hero-bg.jpg
-    ├── services/
-    ├── testimonials/
-    └── ...
-```
+✅ Separazione pulita tra codice e riferimenti
+✅ Facile manutenzione e aggiornamento
+✅ Consistenza tra tutti gli agenti AI
+✅ Organizzazione logica dei file
+✅ Migliore tracciabilità dei file di riferimento
 
-## 🎯 Perché Questa Regola?
+## Memorizza questa regola!
 
-1. **Organizzazione Coerente**: Tutti i file di riferimento per il tema Two sono nello stesso posto
-2. **Modularità**: Se crei un nuovo tema, i suoi file target sono separati
-3. **Chiarezza**: Sapere dove cercare i file di riferimento del target
-4. **Manutenzione**: Facile aggiornare o rimuovere i file quando non servono più
-5. **Versioning**: I file target del tema Two non interferiscono con altri temi
+Questa regola deve essere memorizzata da tutti gli agenti AI per garantire l'organizzazione corretta del progetto.
 
-## 🚨 Errori da Evitare
-
-1. ❌ Salvare file nella root di `laravel/`
-2. ❌ Salvare file nella root del progetto
-3. ❅ Mescolare file target di diversi temi
-4. ❅ Creare sottocartelle al di fuori di `Main_files/` senza motivo
-
-## ✅ Best Practice
-
-Quando scarichi file dal sito target:
-1. Usa sempre `laravel/Themes/Two/Main_files/` come base
-2. Nomi file: usa `target-{nome-pagina}.html` per chiarezza
-3. Crea sottocartelle se hai molti file: `images/`, `screenshots/`, etc.
-4. Se cambi tema, sposta i file nel nuovo tema
-
-## 📚 Riferimenti
-
-- Tema Two: `laravel/Themes/Two/`
-- File target: `laravel/Themes/Two/Main_files/`
-- Documentazione tema: `laravel/Themes/Two/docs/`
+**Ricorda**: `Main_files/` = file di riferimento target site
+**Ricorda**: Root `laravel/` = codice dell'applicazione
 
 ---
-**Regola applicata**: 7 Febbraio 2026
-**Agente**: iFlow CLI
-**Obiettivo**: Mantenere organizzazione coerente per tutti i temi
+
+*Creato il 2026-02-07*
+*Aggiornato da: iFlow CLI*

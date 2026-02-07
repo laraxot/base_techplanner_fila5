@@ -91,3 +91,5 @@ l'headernav dentro https://lightseagreen-dogfish-560272.hostingersite.com/ quand
 la pagina http://127.0.0.1:8000/it/pages/about dovrebbe essere uguale a https://lightseagreen-dogfish-560272.hostingersite.com/chi-siamo  ma non lo e' parti pure dal footer e analizza pezzo per pezzo , 
 
 questo file laravel/target_about.html  doveva essere dentro una sottocartella di laravel/Themes/Two/Main_files capisci la regola e ricordatela sempre e spiegala anche agli altri agenti ai
+
+questa pagina http://127.0.0.1:8000/it/pages/blog dovrebbe essere uguale a https://lightseagreen-dogfish-560272.hostingersite.com/blog , come sempre prima studi aggiorni e migliori le cartelle docs dentro i moduli e dentro i temi, ti installi e configuri gli mcp che ti possono aiutare a raggiungere il tuo scopo , poi implementi poi controlli 
