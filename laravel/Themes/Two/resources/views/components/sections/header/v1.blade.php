@@ -3,7 +3,21 @@
     use Illuminate\Support\Str;
     use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
+    // DEBUG: Verifica struttura dati
     $blocks = $blocks ?? [];
+    $debugInfo = [
+        'type' => gettype($blocks),
+        'count' => is_countable($blocks) ? count($blocks) : 0,
+        'first' => null
+    ];
+    
+    if (is_array($blocks) && count($blocks) > 0) {
+        $first = $blocks[0];
+        $debugInfo['first'] = [
+            'type' => gettype($first),
+            'keys' => is_array($first) ? array_keys($first) : (is_object($first) ? get_object_vars($first) : null)
+        ];
+    }
     
     // Initialize default data with fallbacks
     $navData = [];
@@ -12,10 +26,12 @@
     $items = [];
     $ctaLabel = 'Richiedi Consulenza';
     $ctaUrl = '/it/contatti';
-
-    // Iterate blocks as requested to extract data or render misc blocks
-    // This allows for future blocks (e.g. top bar alerts) to be rendered just by adding them to JSON
 @endphp
+
+{{-- DEBUG OUTPUT --}}
+@if(app()->environment('local'))
+<!-- DEBUG: {{ json_encode($debugInfo) }} -->
+@endif
 
 {{-- Render any non-nav blocks first (e.g. Alerts/Banners) --}}
 @foreach($blocks as $block)
