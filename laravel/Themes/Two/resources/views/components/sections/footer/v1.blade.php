@@ -1,22 +1,33 @@
 @php
-    // Usa i blocks passati dal layout (può essere array o DataCollection)
-    if (!isset($blocks) || empty($blocks)) {
-        $footerData = \Illuminate\Support\Facades\Config::get('local.techplanner.database.content.sections.footer');
-        $locale = app()->getLocale();
-        $blocks = $footerData['blocks'][$locale] ?? [];
+    use Illuminate\Support\Str;
+    
+    // Enhanced Footer Data Processing - Trust Hub Architecture
+    $locale = app()->getLocale();
+    
+    // Primary data source with fallback chain
+    $footerData = null;
+    
+    // 1. Try passed blocks first
+    if (isset($blocks) && !empty($blocks)) {
+        $footerData = $blocks;
     }
     
-    // Converti DataCollection in array se necessario
-    if ($blocks instanceof \Spatie\LaravelData\DataCollection) {
-        $blocks = $blocks->toArray();
-    } elseif (!is_array($blocks)) {
-        $blocks = [];
+    // 2. Fallback to config if no blocks passed
+    if (!$footerData) {
+        $configData = \Illuminate\Support\Facades\Config::get('local.techplanner.database.content.sections.footer');
+        $footerData = $configData['blocks'][$locale] ?? [];
     }
     
-    // Estrai i dati dal primo blocco footer
+    // Convert DataCollection to array if needed
+    if ($footerData instanceof \Spatie\LaravelData\DataCollection) {
+        $footerData = $footerData->toArray();
+    } elseif (!is_array($footerData)) {
+        $footerData = [];
+    }
+    
+    // Extract main footer block with enhanced error handling
     $footerBlock = null;
-    foreach ($blocks as $block) {
-        // Gestisci sia array che oggetti
+    foreach ($footerData as $block) {
         $blockType = is_array($block) ? ($block['type'] ?? '') : ($block->type ?? '');
         $blockSlug = is_array($block) ? ($block['slug'] ?? '') : ($block->slug ?? '');
         
@@ -26,35 +37,84 @@
         }
     }
     
-    // Se non trovato nei blocks, prova a leggere direttamente da config
-    if (empty($footerBlock)) {
-        $footerData = \Illuminate\Support\Facades\Config::get('local.techplanner.database.content.sections.footer');
-        $locale = app()->getLocale();
-        $blocksFromConfig = $footerData['blocks'][$locale] ?? [];
-        foreach ($blocksFromConfig as $block) {
-            if (($block['type'] ?? '') === 'footer' && ($block['slug'] ?? '') === 'main-footer') {
-                $footerBlock = $block['data'] ?? [];
-                break;
-            }
-        }
-    }
+    // Final fallback with comprehensive defaults
+    $footerBlock = $footerBlock ?? [];
     
-    // Fallback defaults
-    $brand = $footerBlock['brand'] ?? ['name' => 'Marco Sottana', 'subtitle' => 'Consulenza Sicurezza', 'description' => 'Esperto qualificato in radioprotezione.'];
-    $social = $footerBlock['social'] ?? [];
-    $normative = $footerBlock['normative'] ?? ['title' => 'Normative', 'items' => []];
-    $services = $footerBlock['services'] ?? ['title' => 'Servizi', 'items' => []];
-    $contact = $footerBlock['contact'] ?? ['title' => 'Contatti'];
-    $newsletter = $footerBlock['newsletter'] ?? [];
-    $certifications = $footerBlock['certifications'] ?? [];
-    $testimonials = $footerBlock['testimonials'] ?? [];
-    $quickActions = $footerBlock['quick_actions'] ?? [];
-    $trustSeals = $footerBlock['trust_seals'] ?? [];
-    $legal = $footerBlock['legal'] ?? ['copyright' => '© 2026 Marco Sottana', 'links' => []];
+    // Enhanced data extraction with null safety
+    $brand = array_merge([
+        'name' => 'Marco Sottana',
+        'subtitle' => 'Consulenza Sicurezza', 
+        'description' => 'Esperto qualificato in radioprotezione e sicurezza radiologica per studi dentistici e veterinari. Conformità normativa D.Lgs 101/2020.'
+    ], $footerBlock['brand'] ?? []);
+    
+    $social = array_merge([
+        'linkedin' => null,
+        'facebook' => null, 
+        'instagram' => null
+    ], $footerBlock['social'] ?? []);
+    
+    $normative = array_merge([
+        'title' => 'Normative & Certificazioni',
+        'items' => []
+    ], $footerBlock['normative'] ?? []);
+    
+    $services = array_merge([
+        'title' => 'Servizi',
+        'items' => []
+    ], $footerBlock['services'] ?? []);
+    
+    $contact = array_merge([
+        'title' => 'Contatti',
+        'address' => null,
+        'city' => null,
+        'email' => null,
+        'phone' => null,
+        'piva' => null,
+        'rea' => null
+    ], $footerBlock['contact'] ?? []);
+    
+    $newsletter = array_merge([
+        'title' => 'Rimani Aggiornato',
+        'description' => 'Ricevi consigli esclusivi su sicurezza e radioprotezione',
+        'placeholder' => 'La tua email',
+        'button' => 'Iscriviti',
+        'privacy_note' => 'Acconsento al trattamento dei dati secondo la privacy policy'
+    ], $footerBlock['newsletter'] ?? []);
+    
+    $certifications = array_merge([
+        'title' => 'Certificazioni & Badge',
+        'items' => []
+    ], $footerBlock['certifications'] ?? []);
+    
+    $testimonials = array_merge([
+        'title' => 'Dicono di Noi',
+        'items' => []
+    ], $footerBlock['testimonials'] ?? []);
+    
+    $quickActions = array_merge([
+        'title' => 'Contatti Rapidi',
+        'call_us' => ['phone' => null, 'label' => 'Chiama Ora', 'description' => 'Lun-Ven 9:00-18:00'],
+        'whatsapp' => ['number' => null, 'label' => 'WhatsApp', 'description' => 'Risposta immediata'],
+        'appointment' => ['url' => null, 'label' => 'Prenota Consultazione', 'description' => 'Valutazione gratuita']
+    ], $footerBlock['quick_actions'] ?? []);
+    
+    $trustSeals = array_merge([
+        'title' => 'Garanzie e Sicurezza',
+        'seals' => []
+    ], $footerBlock['trust_seals'] ?? []);
+    
+    $legal = array_merge([
+        'copyright' => '© 2026 Marco Sottana – Consulenza Sicurezza. Tutti i diritti riservati.',
+        'links' => []
+    ], $footerBlock['legal'] ?? []);
+    
+    // Generate unique IDs for Alpine.js components
+    $newsletterId = 'newsletter-' . Str::random(8);
+    $backToTopId = 'backtotop-' . Str::random(8);
 @endphp
 
 {{-- TOP BAR: Newsletter + Trust Seals --}}
-@if(!empty($newsletter) || !empty($trustSeals))
+@if(!empty($newsletter) || !empty($trustSeals['seals']))
 <div class="bg-gradient-to-r from-[#2D8659] to-[#1e6b47] text-white py-4">
     <div class="container mx-auto px-4">
         <div class="flex flex-col lg:flex-row items-center justify-between gap-4">
@@ -67,7 +127,13 @@
                         <h4 class="font-bold text-sm">{{ $newsletter['title'] }}</h4>
                         <p class="text-xs text-green-100">{{ $newsletter['description'] }}</p>
                     </div>
-                    <form class="flex gap-2 w-full sm:w-auto" x-data="{ submitted: false }" @submit.prevent="submitted = true; setTimeout(() => submitted = false, 3000)">
+                    <form class="flex gap-2 w-full sm:w-auto" 
+                          x-data="{ submitted: false }" 
+                          @submit.prevent="
+                              submitted = true; 
+                              setTimeout(() => submitted = false, 3000);
+                              $event.target.submit();
+                          ">
                         <input 
                             type="email" 
                             placeholder="{{ $newsletter['placeholder'] }}" 
@@ -99,8 +165,8 @@
             @if(!empty($trustSeals['seals']))
             <div class="flex items-center gap-4">
                 @foreach($trustSeals['seals'] as $seal)
-                <div class="flex items-center gap-2 text-xs">
-                    <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                <div class="flex items-center gap-2 text-xs group cursor-pointer">
+                    <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                         @switch($seal['icon'])
                             @case('shield-check')
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -136,7 +202,7 @@
 <footer class="bg-gradient-to-br from-[#0f2b46] via-[#1a3a5c] to-[#0d1f35] text-white relative overflow-hidden">
     {{-- Background Pattern --}}
     <div class="absolute inset-0 opacity-5">
-        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.4"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.4\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
     </div>
     
     <div class="container mx-auto px-4 py-12 relative z-10">
@@ -180,7 +246,7 @@
                 <div class="border-t border-white/10 pt-4">
                     <h4 class="font-bold text-sm mb-3">{{ $quickActions['title'] }}</h4>
                     <div class="space-y-2">
-                        @if(!empty($quickActions['call_us']))
+                        @if(!empty($quickActions['call_us']['phone']))
                         <a href="tel:{{ $quickActions['call_us']['phone'] }}" class="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors group">
                             <div class="w-8 h-8 bg-[#2D8659] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -194,7 +260,7 @@
                         </a>
                         @endif
                         
-                        @if(!empty($quickActions['whatsapp']))
+                        @if(!empty($quickActions['whatsapp']['number']))
                         <a href="https://wa.me/{{ str_replace(['+', ' ', '-'], '', $quickActions['whatsapp']['number']) }}" target="_blank" class="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors group">
                             <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -208,7 +274,7 @@
                         </a>
                         @endif
                         
-                        @if(!empty($quickActions['appointment']))
+                        @if(!empty($quickActions['appointment']['url']))
                         <a href="{{ $quickActions['appointment']['url'] }}" class="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors group">
                             <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -234,14 +300,12 @@
                     </svg>
                     {{ $normative['title'] }}
                 </h3>
-                <ul class="space-y-2">
+                <div class="space-y-4">
                     @foreach($normative['items'] ?? [] as $item)
-                        <li class="text-gray-300 text-sm flex items-start group cursor-pointer">
-                            <svg class="w-4 h-4 text-[#2D8659] mr-2 mt-0.5 flex-shrink-0 group-hover:scale-125 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            <span class="group-hover:text-white transition-colors">{{ $item }}</span>
-                        </li>
+                        <div>
+                            <h4 class="font-bold text-sm text-white">{{ $item['label'] ?? '' }}</h4>
+                            <p class="text-gray-400 text-xs">{{ $item['description'] ?? '' }}</p>
+                        </div>
                     @endforeach
                 </ul>
             </div>
@@ -300,10 +364,14 @@
                         </li>
                     @endif
                 </ul>
-                @if(!empty($contact['piva']))
+                @if(!empty($contact['piva']) || !empty($contact['rea']))
                     <div class="mt-4 pt-4 border-t border-white/10 text-xs text-gray-400">
-                        <p>P.IVA: {{ $contact['piva'] }}</p>
-                        <p>REA: {{ $contact['rea'] }}</p>
+                        @if(!empty($contact['piva']))
+                            <p>P.IVA: {{ $contact['piva'] }}</p>
+                        @endif
+                        @if(!empty($contact['rea']))
+                            <p>REA: {{ $contact['rea'] }}</p>
+                        @endif
                     </div>
                 @endif
             </div>
@@ -377,6 +445,9 @@
         x-transition:enter="transition ease-out duration-300"
         x-transition:enter-start="opacity-0 transform translate-y-2"
         x-transition:enter-end="opacity-100 transform translate-y-0"
+        x-transition:leave="transition ease-in duration-75"
+        x-transition:leave-start="opacity-100 transform translate-y-0"
+        x-transition:leave-end="opacity-0 transform translate-y-2"
         x-on:scroll.window="visible = (window.pageYOffset > 300)"
         @click="window.scrollTo({top: 0, behavior: 'smooth'})"
         class="fixed bottom-6 right-6 w-12 h-12 bg-[#2D8659] text-white rounded-full shadow-lg hover:bg-[#236b47] transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center group"
@@ -386,4 +457,3 @@
         </svg>
     </button>
 </footer>
-

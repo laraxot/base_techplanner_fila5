@@ -53,8 +53,8 @@
     }"
     @scroll.window="scrolled = (window.scrollY > 50)"
     :class="scrolled
-        ? 'bg-white shadow-lg border-b border-gray-200 text-gray-900 py-2'
-        : 'bg-transparent text-white py-4'"
+        ? 'bg-[#0f2b46]/100 shadow-xl border-b border-white/20 text-white py-2'
+        : 'bg-[#0f2b46]/95 backdrop-blur-md text-white py-4'"
     class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
 >
     <div class="container mx-auto px-4 sm:px-6">
@@ -62,9 +62,9 @@
 
             {{-- Brand --}}
             <a href="{{ LaravelLocalization::getLocalizedURL($currentLocale, '/') }}" class="flex flex-col leading-tight shrink-0 group">
-                <span class="font-bold text-lg md:text-xl transition-colors" :class="scrolled ? 'text-gray-900' : 'text-white'">{{ $brandName }}</span>
+                <span class="font-bold text-lg md:text-xl transition-colors" :class="scrolled ? 'text-white' : 'text-white'">{{ $brandName }}</span>
                 @if($brandSubtitle)
-                    <span class="text-xs md:text-sm font-normal transition-colors" :class="scrolled ? 'text-gray-500' : 'text-white/80'">{{ $brandSubtitle }}</span>
+                    <span class="text-xs md:text-sm font-normal transition-colors" :class="scrolled ? 'text-white/80' : 'text-white/80'">{{ $brandSubtitle }}</span>
                 @endif
             </a>
 
@@ -84,12 +84,12 @@
                     <a
                         href="{{ $item['url'] }}"
                         class="relative px-3 py-2 text-sm font-medium transition-colors hover:opacity-80"
-                        :class="scrolled ? ({{ $isActive ? 'true' : 'false' }} ? 'text-[#1E5A96]' : 'text-gray-700 hover:text-[#1E5A96]') : 'text-white/90 hover:text-white'"
+                        :class="'text-white/90 hover:text-white'"
                         @if($isActive) aria-current="page" @endif
                     >
                         {{ $item['label'] }}
-                        <span class="absolute bottom-0 left-3 right-3 h-0.5 rounded-full transition-all duration-200"
-                              :class="scrolled ? 'bg-[#1E5A96]' : 'bg-white'"
+                        <span class="absolute bottom-0 left-3 right-3 h-0.5 rounded-full transition-all duration-200 bg-white"
+                              :class="scrolled ? 'bg-white' : 'bg-white'"
                               class="{{ $isActive ? 'opacity-100' : 'opacity-0' }}"
                         ></span>
                     </a>
@@ -104,8 +104,7 @@
                     <button
                         @click="langOpen = !langOpen"
                         @click.away="langOpen = false"
-                        class="flex items-center space-x-1.5 transition-colors focus:outline-none"
-                        :class="scrolled ? 'text-gray-700 hover:text-[#1E5A96]' : 'text-white/80 hover:text-white'"
+                        class="flex items-center space-x-1.5 transition-colors focus:outline-none text-white/80 hover:text-white"
                         aria-label="Change language"
                     >
                         <span class="text-sm font-medium uppercase">{{ $currentLocale }}</span>
@@ -227,8 +226,7 @@
                 {{-- Hamburger --}}
                 <button
                     @click="mobileOpen = !mobileOpen"
-                    class="p-2 rounded-md transition-colors focus:outline-none focus:ring-2"
-                    :class="scrolled ? 'text-gray-700 hover:bg-gray-100 focus:ring-gray-300' : 'text-white hover:bg-white/10 focus:ring-white/30'"
+                    class="p-2 rounded-md transition-colors focus:outline-none focus:ring-2 text-white hover:bg-white/10 focus:ring-white/30"
                     aria-label="Toggle menu"
                     :aria-expanded="mobileOpen.toString()"
                 >
