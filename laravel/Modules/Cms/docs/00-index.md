@@ -13,6 +13,7 @@
 - 🧱 **[Content Blocks System](./blocks/)** - Guida al sistema di blocchi trascinabili.
 - 🧬 **[XotData Pattern](./architecture-xotdata-pattern.md)** - Gestione dei dati tipizzati nel CMS.
 - 🧩 **[Page Rendering](./livewire/page-show.md)** - Ciclo di vita del rendering delle pagine Volt.
+- 📜 **[Folio Dynamic Pages Philosophy](../../Themes/Two/docs/folio-dynamic-pages-philosophy.md)** - Filosofia, Religione, Politica e Zen del routing Folio per pagine dinamiche. CRITICO: leggere prima di creare qualsiasi pagina!
 
 ## 🎨 **Frontend & Theming**
 - 💅 **[Theming System](./themes/)** - Creazione e personalizzazione dei temi.
