@@ -71,6 +71,47 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 ### Critical Architecture Rules
 
+#### 🔄 **GIT COMMIT/PUSH RULE** - CRITICAL RULE
+**SEMPRE fare git commit e git push quando il codice è stabile e funzionante!**
+
+Questa regola è FONDAMENTALE per tutti gli agenti AI:
+
+1. **Quando fare commit/push**:
+   - ✅ Dopo aver completato una feature funzionante
+   - ✅ Quando i test passano senza errori
+   - ✅ Quando PHPStan non riporta errori critici
+   - ✅ Quando il sito è in uno stato "stabile" e visitabile
+
+2. **Processo obbligatorio**:
+   ```bash
+   # 1. Testare che tutto funzioni
+   php artisan test --compact
+   
+   # 2. Verificare code quality
+   ./vendor/bin/phpstan analyse
+   ./vendor/bin/pint
+   
+   # 3. Commit con messaggio descrittivo
+   git add .
+   git commit -m "feat: implement header nav with scroll effect and footer enhancements"
+   
+   # 4. Push immediato
+   git push
+   ```
+
+3. **Messaggi di commit standard**:
+   - `feat:` nuove funzionalità
+   - `fix:` bug corretti  
+   - `refactor:` codice migliorato
+   - `docs:` documentazione aggiornata
+   - `style:` formatting code (auto-generated)
+
+4. **MAI fare commit di codice rotto!**
+   - ❌ Codice con errori PHP fatali
+   - ❌ Test che falliscono
+   - ❌ PHPStan errors non risolti
+   - ❌ Funzionalità incomplete o non testate
+
 #### 🚫 **CONTROLLERS ARE BANNED** - CRITICAL RULE
 **NEVER create or use traditional Laravel Controllers in this project!**
 

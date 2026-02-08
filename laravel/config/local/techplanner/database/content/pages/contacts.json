@@ -1,8 +1,8 @@
 {
     "id": "4",
     "title": {
-        "it": "Contatti - TechPlanner Radioprotezione",
-        "en": "Contacts - TechPlanner Radiation Protection"
+        "it": "Contatti - Marco Sottana Consulenza Sicurezza",
+        "en": "Contacts - Marco Sottana Safety Consulting"
     },
     "slug": "contacts",
     "middleware": null,
@@ -15,14 +15,14 @@
                 "data": {
                     "view": "pub_theme::components.blocks.hero.contacts",
                     "title": "Contattaci",
-                    "subtitle": "Siamo a tua disposizione per qualsiasi esigenza di radioprotezione, elettromedicali e consulenza tecnica",
+                    "subtitle": "Siamo a tua disposizione per qualsiasi esigenza di radioprotezione, elettromedicali e consulenza tecnica per studi dentistici e cliniche veterinarie",
                     "primary_cta": {
                         "label": "Chiama Ora",
-                        "url": "tel:+393480123456"
+                        "url": "tel:+39 XXX XXX XXXX"
                     },
                     "secondary_cta": {
-                        "label": "Richiedi Consulenza",
-                        "url": "#contact-form"
+                        "label": "Invia Email",
+                        "url": "mailto:info@marcosottana.it"
                     }
                 }
             },
@@ -37,8 +37,8 @@
                             "type": "phone",
                             "title": "Telefono",
                             "description": "Chiamaci per assistenza immediata",
-                            "value": "+39 348 0123 456",
-                            "url": "tel:+393480123456",
+                            "value": "+39 XXX XXX XXXX",
+                            "url": "tel:+39XXXXXXXXXX",
                             "hours": "Lun-Ven: 9:00-18:00",
                             "icon": "phone",
                             "color": "emerald"
@@ -47,17 +47,27 @@
                             "type": "email",
                             "title": "Email",
                             "description": "Invia le tue richieste via email",
-                            "value": "info@techplanner.it",
-                            "url": "mailto:info@techplanner.it",
+                            "value": "info@marcosottana.it",
+                            "url": "mailto:info@marcosottana.it",
                             "hours": "Risposta entro 24 ore",
                             "icon": "email",
                             "color": "teal"
                         },
                         {
+                            "type": "pec",
+                            "title": "PEC",
+                            "description": "Posta Elettronica Certificata",
+                            "value": "sottanamarco@pec.it",
+                            "url": "mailto:sottanamarco@pec.it",
+                            "hours": "Comunicazioni ufficiali",
+                            "icon": "shield",
+                            "color": "blue"
+                        },
+                        {
                             "type": "address",
                             "title": "Sede Operativa",
                             "description": "Visita la nostra sede",
-                            "value": "Via Roma 123, 35131 Padova (PD)",
+                            "value": "Via Vanzo 86/A, 31021 Mogliano Veneto (TV)",
                             "hours": "Su appuntamento",
                             "icon": "location",
                             "color": "cyan"
@@ -71,7 +81,7 @@
                 "data": {
                     "view": "pub_theme::components.blocks.contact.form",
                     "title": "Invia una Richiesta",
-                    "subtitle": "Compila il modulo sottostante e ti risponderemo il prima possibile",
+                    "subtitle": "Compila il modulo sottostante e ti risponderemo il prima possibile con una consulenza personalizzata",
                     "fields": [
                         {
                             "name": "first_name",
@@ -120,6 +130,8 @@
                                 {"value": "documentazione", "label": "Documentazione e Conformità"},
                                 {"value": "consulenza", "label": "Consulenza Generale"},
                                 {"value": "formazione", "label": "Formazione del Personale"},
+                                {"value": "veterinario", "label": "Servizi Veterinari"},
+                                {"value": "dentistico", "label": "Servizi Dentistici"},
                                 {"value": "altro", "label": "Altro"}
                             ]
                         },
@@ -129,7 +141,7 @@
                             "type": "textarea",
                             "required": true,
                             "width": "full",
-                            "placeholder": "Descrivi brevemente la tua richiesta..."
+                            "placeholder": "Descrivi brevemente la tua richiesta e le tue esigenze specifiche..."
                         }
                     ],
                     "submit_button": {
@@ -166,36 +178,56 @@
                 }
             },
             {
+                "type": "company-info",
+                "slug": "company-details",
+                "data": {
+                    "view": "pub_theme::components.blocks.contact.info",
+                    "title": "Informazioni Aziendali",
+                    "details": [
+                        {
+                            "label": "Ragione Sociale",
+                            "value": "Marco Sottana - Consulenza Sicurezza"
+                        },
+                        {
+                            "label": "Partita IVA",
+                            "value": "05532540266"
+                        },
+                        {
+                            "label": "Codice REA",
+                            "value": "TV - 451911"
+                        },
+                        {
+                            "label": "Settore",
+                            "value": "Consulenza radioprotezione e sicurezza sanitaria"
+                        }
+                    ]
+                }
+            },
+            {
                 "type": "social-links",
                 "slug": "social-media",
                 "data": {
                     "view": "pub_theme::components.blocks.contact.social",
                     "title": "Seguici sui Social",
-                    "description": "Rimani aggiornato su normative, novità e consigli pratici",
+                    "description": "Rimani aggiornato su normative, novità e consigli pratici per la sicurezza del tuo studio",
                     "platforms": [
                         {
-                            "name": "Facebook",
-                            "url": "#",
-                            "icon": "facebook",
-                            "color": "blue"
-                        },
-                        {
-                            "name": "Twitter",
-                            "url": "#",
-                            "icon": "twitter",
-                            "color": "sky"
-                        },
-                        {
                             "name": "LinkedIn",
-                            "url": "#",
+                            "url": "https://linkedin.com/in/marcosottana",
                             "icon": "linkedin",
                             "color": "blue"
                         },
                         {
-                            "name": "YouTube",
-                            "url": "#",
-                            "icon": "youtube",
-                            "color": "red"
+                            "name": "Facebook",
+                            "url": "https://facebook.com/marcosottana",
+                            "icon": "facebook",
+                            "color": "blue"
+                        },
+                        {
+                            "name": "Instagram",
+                            "url": "https://instagram.com/marcosottana",
+                            "icon": "instagram",
+                            "color": "pink"
                         }
                     ]
                 }
@@ -208,15 +240,54 @@
                 "data": {
                     "view": "pub_theme::components.blocks.hero.contacts",
                     "title": "Contact Us",
-                    "subtitle": "We are available for any radiation protection, electromedical and technical consulting needs",
+                    "subtitle": "We are available for any radiation protection, electromedical and technical consulting needs for dental practices and veterinary clinics",
                     "primary_cta": {
                         "label": "Call Now",
-                        "url": "tel:+393480123456"
+                        "url": "tel:+39 XXX XXX XXXX"
                     },
                     "secondary_cta": {
-                        "label": "Request Consultation",
-                        "url": "#contact-form"
+                        "label": "Send Email",
+                        "url": "mailto:info@marcosottana.it"
                     }
+                }
+            },
+            {
+                "type": "contact-methods",
+                "slug": "contact-channels",
+                "data": {
+                    "view": "pub_theme::components.blocks.contact.methods",
+                    "title": "How to Reach Us",
+                    "methods": [
+                        {
+                            "type": "phone",
+                            "title": "Phone",
+                            "description": "Call us for immediate assistance",
+                            "value": "+39 XXX XXX XXXX",
+                            "url": "tel:+39XXXXXXXXXX",
+                            "hours": "Mon-Fri: 9:00-18:00",
+                            "icon": "phone",
+                            "color": "emerald"
+                        },
+                        {
+                            "type": "email",
+                            "title": "Email",
+                            "description": "Send your requests via email",
+                            "value": "info@marcosottana.it",
+                            "url": "mailto:info@marcosottana.it",
+                            "hours": "Response within 24 hours",
+                            "icon": "email",
+                            "color": "teal"
+                        },
+                        {
+                            "type": "address",
+                            "title": "Office",
+                            "description": "Visit our office",
+                            "value": "Via Vanzo 86/A, 31021 Mogliano Veneto (TV), Italy",
+                            "hours": "By appointment",
+                            "icon": "location",
+                            "color": "cyan"
+                        }
+                    ]
                 }
             }
         ]
@@ -256,7 +327,7 @@
         "en": []
     },
     "created_at": "2026-02-06T12:00:00.000000Z",
-    "updated_at": "2026-02-06T18:00:00.000000Z",
+    "updated_at": "2026-02-08T04:56:00.000000Z",
     "created_by": null,
     "updated_by": "01985ae8-8039-71ea-88c7-54ebce6295b0"
 }
