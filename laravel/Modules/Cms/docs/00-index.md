@@ -1,116 +1,126 @@
-# 📚 **Indice Documentazione Modulo Cms**
+# Cms Module Documentation
 
-**Last Update**: 31 Gennaio 2026
-**Status**: ✅ PHPStan Level 10 Compliant
-**Module Version**: 2.3.0
+## Overview
 
-## 🎯 **Lettura Essenziale**
-1. [README.md](./README.md) - Panoramica completa, Quick Start e Architettura.
-2. [roadmap.md](./roadmap.md) - Stato avanzamento e obiettivi 2026.
-3. [philosophy.md](./philosophy.md) - Visione "Zen" della gestione contenuti modulare.
+The Cms module handles content management, page rendering, and multi-language support through a flexible block-based system.
 
-## 🏗️ **Architettura e Blocchi**
-- 🧱 **[Content Blocks System](./blocks/)** - Guida al sistema di blocchi trascinabili.
-- 🔄 **[Block Data Flow](./block-data-flow.md)** - Come i dati fluiscono dal JSON ai Blade del tema.
-- 🧬 **[XotData Pattern](./architecture-xotdata-pattern.md)** - Gestione dei dati tipizzati nel CMS.
-- 🧩 **[Page Rendering](./livewire/page-show.md)** - Ciclo di vita del rendering delle pagine Volt.
-- 📜 **[Folio Dynamic Pages Philosophy](../../Themes/Two/docs/folio-dynamic-pages-philosophy.md)** - Filosofia, Religione, Politica e Zen del routing Folio per pagine dinamiche. CRITICO: leggere prima di creare qualsiasi pagina!
+## Key Components
 
-## 🎨 **Frontend & Theming**
-- 💅 **[Theming System](./themes/)** - Creazione e personalizzazione dei temi.
-- 🌐 **[SEO & Metatags](./metatag-population-strategy.md)** - Strategie per l'ottimizzazione sui motori di ricerca.
-- ⚡ **[Volt Components](./components/)** - Libreria di componenti interattivi pronti all'uso.
+### Page Model
+- **Location**: `app/Models/Page.php`
+- **Purpose**: Manages page content with multi-language JSON fields
+- **Fields**: `title`, `content_blocks`, `sidebar_blocks`, `footer_blocks`
 
-## 🧪 **Qualità e Sviluppo**
-- ✅ **[PHPStan Compliance](./phpstan-level-10-compliance.md)** - Traguardi di analisi statica.
-- 🔬 **[Testing Guidelines](./tests/architecture-separation-rules.md)** - Come scrivere test per il CMS.
-- 🧹 **[PHPMD & Complexity](./cyclomatic-complexity-report.md)** - Report sulla pulizia del codice.
+### Page Component
+- **Location**: `app/View/Components/Page.php`
+- **Purpose**: Renders pages using block-based architecture
+- **Features**: Multi-language support, block processing, component resolution
 
-## 🔗 **Moduli Correlati**
-- [UI](../../UI/docs/README.md) - Componenti grafici base.
-- [Media](../../Media/docs/README.md) - Gestione file e immagini cloud.
-- [Xot](../../Xot/docs/README.md) - Core framework.
+### BlockData System
+- **Location**: `app/Datas/BlockData.php`
+- **Purpose**: Manages individual block data and view resolution
+- **Features**: Type safety, view existence validation, data merging
 
-## 📁 **Regole Organizzazione File Target**
+## Multi-Language Support
 
-**CRITICAL**: Tutti i file HTML di riferimento del sito target devono essere salvati dentro:
-```
-laravel/Themes/{ThemeName}/Main_files/
+### Language Detection Logic
+```php
+// In Page component
+$current_lang = app()->getLocale();
+if (in_array($current_lang, $locales)) {
+    $blocks = $blocks[$current_lang];
+} elseif (in_array('it', $locales)) {
+    $blocks = $blocks['it']; // Fallback to Italian
+}
 ```
 
-**MAI** nella root di `laravel/` o del progetto!
-
-Vedi: [Main Files Organization Rule](../../Themes/Two/docs/main-files-organization-rule.md)
-
-## 🚨 **Risoluzione Errori Critici**
-
-### Errore: SerializableClosure in isset or empty
-
-**Causa**: Cache bootstrap corrotte dopo modifiche al codice.
-
-**Soluzione**:
-```bash
-cd /var/www/_bases/base_techplanner_fila5/laravel && \
-rm -rf bootstrap/cache/* && \
-php artisan cache:clear && \
-php artisan config:clear && \
-php artisan route:clear && \
-php artisan view:clear && \
-php artisan optimize
+### Content Structure
+```json
+{
+  "title": {
+    "it": "Titolo Italiano",
+    "en": "English Title"
+  },
+  "content_blocks": {
+    "it": [...],
+    "en": [...]
+  }
+}
 ```
 
-Vedi: [SerializableClosure Error Fix](../../Themes/Two/docs/serializable-closure-error-fix.md)
+## Block System Architecture
 
-**Quando usare**: Dopo modifiche al codice, aggiornamenti, o errori di routing Folio
+### Block Types
+- **Hero**: Page header sections
+- **Services**: Service listings and grids
+- **Content**: General content sections
+- **Forms**: Contact and interaction forms
+- **Testimonials**: Customer reviews
+- **Resources**: Downloads and guides
 
-### Errore: htmlspecialchars() Argument Type Mismatch
+### Component Resolution
+Blocks use view paths like:
+- `pub_theme::components.blocks.hero.simple`
+- `pub_theme::components.blocks.services.grid`
+- `pub_theme::components.blocks.newsletter.simple`
 
-**Causa**: Il footer v1.blade.php passava array a `{{ }}` che chiama `htmlspecialchars()`.
+## Important Notes
 
-**Soluzione**: Rimuovere controllo `is_array()` e trattare sempre items come array con chiavi 'label' e 'description'.
+### Critical Issues Identified (2026-02-08)
+1. **Missing Component**: `hero.fullscreen.blade.php` referenced but non-existent
+2. **Content Disparity**: Italian version has 9 blocks vs English 3 blocks
+3. **Component Duplication**: 32+ hero variants across themes
 
-Vedi: [Footer Error Resolution](./footer-error-resolution-2026-02-08.md)
+### Recommendations
+1. **Audit Component References**: Ensure all referenced views exist
+2. **Standardize Content**: Maintain parity between language versions
+3. **Consolidate Components**: Reduce redundant hero component variants
 
-**Quando usare**: Quando si ottiene errore `htmlspecialchars(): Argument #1 ($string) must be of type string, array given` nel footer
+## File Structure
 
-### Workflow Improvements - 2026-02-08
-
-**Nuovo**: Sistema migliorato per prevenire errori frontend e migliorare qualità codice.
-
-**Caratteristiche**:
-- Validazione automatica componenti
-- Standardizzazione strutture dati
-- Validazione contrasto WCAG
-- Workflow Git automatizzato
-
-Vedi: [Workflow Improvements 2026-02-08](./2026-02-08-workflow-improvements.md)
-
-**Quando usare**: Come riferimento per miglioramenti processo sviluppo e prevenzione errori
-
-### Footer UI/UX Issues - 2026-02-08
-
-**Problema**: Footer con sfondo troppo scuro e testo poco leggibile, non conforme WCAG.
-
-**Soluzione**: 
-- Sfondo aggiornato da blu scuro a blu più chiaro (`#1e40af` → `#1e40af`)
-- Colori testo migliorati per contrasto WCAG AA
-- Bordi resi più visibili
-- Spaziatura colonne aumentata
-
-Vedi: [Footer UI/UX Analysis](./footer-ui-ux-analysis-2026-02-08.md) | [Fixes Applied](./footer-ui-ux-fixes-applied-2026-02-08.md)
-
-**Quando usare**: Come riferimento per problemi UI/UX nel footer e standard WCAG
-
-### Errore: Unable to locate a class or view for component [theme::...]
-
-**Causa**: Tentativo di chiamare direttamente un componente del tema bypassando il sistema CMS. I componenti del tema sono auto-registrati e gestiti dal componente `Section`.
-
-**Soluzione corretta**: 
-Usare sempre il componente Section del modulo CMS:
-```blade
-<x-section slug="footer" />
 ```
-**MAI** usare `<x-two::... />` o simili per componenti gestiti via JSON.
+Modules/Cms/
+├── app/
+│   ├── Models/Page.php
+│   ├── View/Components/
+│   │   ├── Page.php
+│   │   └── PageContent.php
+│   └── Datas/BlockData.php
+├── resources/views/
+│   └── components/
+│       ├── page.blade.php
+│       └── page-content.blade.php
+└── docs/
+    ├── 00-index.md (this file)
+    ├── page-translation-strategy.md
+    ├── block-component-guidelines.md
+    └── multi-language-content-management.md
+```
 
----
-*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+## Dependencies
+
+- **Xot Module**: Base functionality and data structures
+- **Lang Module**: Multi-language support (if available)
+- **Themes**: Component rendering (active: "Two")
+
+## Best Practices
+
+1. **Always verify component existence** before referencing in page data
+2. **Maintain content parity** across all supported languages
+3. **Use consistent data structures** for similar block types
+4. **Test multi-language functionality** thoroughly
+5. **Document custom block types** and their required data structure
+
+## Testing
+
+- Use Pest testing framework
+- Test multi-language scenarios
+- Verify component rendering
+- Test data validation and fallbacks
+
+## Recent Changes
+
+### 2026-02-08
+- Identified critical missing component issue
+- Documented content disparity between languages
+- Created comprehensive duplicate content analysis
