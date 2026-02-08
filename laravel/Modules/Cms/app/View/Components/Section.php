@@ -62,7 +62,9 @@ class Section extends Component
     public function render(): ViewContract
     {
         $view = 'pub_theme::components.sections.'.$this->slug.'.'.$this->tpl;
-        $view_params = [];
+        $view_params = [
+            'blocks' => $this->blocks,
+        ];
 
         return view($view, $view_params);
 

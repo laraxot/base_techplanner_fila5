@@ -93,3 +93,6 @@ la pagina http://127.0.0.1:8000/it/pages/about dovrebbe essere uguale a https://
 questo file laravel/target_about.html  doveva essere dentro una sottocartella di laravel/Themes/Two/Main_files capisci la regola e ricordatela sempre e spiegala anche agli altri agenti ai
 
 questa pagina http://127.0.0.1:8000/it/pages/blog dovrebbe essere uguale a https://lightseagreen-dogfish-560272.hostingersite.com/blog , come sempre prima studi aggiorni e migliori le cartelle docs dentro i moduli e dentro i temi, ti installi e configuri gli mcp che ti possono aiutare a raggiungere il tuo scopo , poi implementi poi controlli 
+
+il footer nostro si vede male ! non si legge nulla , gli elementi non sono ben ordinati, aiutati con gli mcp, fa screenshots, fa tutto quello che serve per capire che il footer che hai fatto non e' completato, e dopo che lohai fatto controllalo facendo altri screenshot e analizzando , non farmi perdere tempo
+per capire il passaggio delle variabili al footer e' meglio prima che te studi a fondo laravel/Modules/Cms/app/View/Components/Section.php , come vedi passiamo gia' variabili al footer
