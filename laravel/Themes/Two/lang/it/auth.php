@@ -200,4 +200,4 @@ return [
         'loading_failed' => 'Errore di caricamento',
         'please_refresh' => 'Si è verificato un errore. Ricarica la pagina e riprova.',
     ],
-]; 
+];

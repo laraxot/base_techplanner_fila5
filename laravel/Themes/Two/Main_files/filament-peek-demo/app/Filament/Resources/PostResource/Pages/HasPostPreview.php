@@ -2,9 +2,9 @@
 
 namespace App\Filament\Resources\PostResource\Pages;
 
-use Filament\Schemas\Components\Component;
 use App\Filament\Fields\PostContent;
 use App\Filament\Fields\PostFooter;
+use Filament\Schemas\Components\Component;
 use Pboivin\FilamentPeek\Pages\Actions\PreviewAction;
 use Pboivin\FilamentPeek\Pages\Concerns\HasBuilderPreview;
 use Pboivin\FilamentPeek\Pages\Concerns\HasPreviewModal;

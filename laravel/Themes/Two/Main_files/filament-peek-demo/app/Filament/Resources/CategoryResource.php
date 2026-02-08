@@ -2,29 +2,26 @@
 
 namespace App\Filament\Resources;
 
-use Filament\Schemas\Schema;
-use Filament\Forms\Components\TextInput;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Actions\ActionGroup;
-use Filament\Actions\EditAction;
-use Filament\Actions\DeleteAction;
 use App\Filament\Resources\CategoryResource\Pages\ManageCategories;
-use App\Filament\Resources\CategoryResource\Pages;
 use App\Models\Category;
-use Filament\Forms;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\EditAction;
+use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
-use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
-use Filament\Tables;
+use Filament\Schemas\Schema;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
+use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
 
 class CategoryResource extends Resource
 {
     protected static ?string $model = Category::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-tag';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-tag';
 
-    protected static string | \UnitEnum | null $navigationGroup = 'Blog';
+    protected static string|\UnitEnum|null $navigationGroup = 'Blog';
 
     public static function form(Schema $schema): Schema
     {

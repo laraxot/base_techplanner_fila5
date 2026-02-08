@@ -1,7 +1,7 @@
 <?php
 
-use FilamentTiptapEditor\Actions\MediaAction;
 use FilamentTiptapEditor\Actions\LinkAction;
+use FilamentTiptapEditor\Actions\MediaAction;
 use FilamentTiptapEditor\Enums\TiptapOutput;
 
 return [
