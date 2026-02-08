@@ -9,8 +9,11 @@ use Modules\Xot\Providers\XotBaseThemeServiceProvider;
 class ThemeServiceProvider extends XotBaseThemeServiceProvider
 {
     public string $name = 'Two';
+
     public string $nameLower = 'two';
+
     protected string $module_dir = __DIR__;
+
     protected string $module_ns = __NAMESPACE__;
 
     public function register(): void

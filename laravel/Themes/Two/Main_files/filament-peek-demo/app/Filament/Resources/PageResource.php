@@ -2,25 +2,22 @@
 
 namespace App\Filament\Resources;
 
-use Filament\Schemas\Schema;
-use Filament\Schemas\Components\Grid;
-use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Actions;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Actions\ActionGroup;
-use Filament\Actions\EditAction;
-use Filament\Actions\DeleteAction;
-use App\Filament\Resources\PageResource\Pages\ListPages;
+use App\Filament\Fields\PageContent;
 use App\Filament\Resources\PageResource\Pages\CreatePage;
 use App\Filament\Resources\PageResource\Pages\EditPage;
-use App\Filament\Fields\PageContent;
-use App\Filament\Resources\PageResource\Pages;
+use App\Filament\Resources\PageResource\Pages\ListPages;
 use App\Models\Page;
-use Filament\Forms;
-use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
-use Filament\Tables;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\EditAction;
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Actions;
+use Filament\Schemas\Components\Grid;
+use Filament\Schemas\Schema;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
+use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
 use Pboivin\FilamentPeek\Forms\Actions\InlinePreviewAction;
 use Pboivin\FilamentPeek\Tables\Actions\ListPreviewAction;
 
@@ -28,9 +25,9 @@ class PageResource extends Resource
 {
     protected static ?string $model = Page::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document';
 
-    protected static string | \UnitEnum | null $navigationGroup = 'Site';
+    protected static string|\UnitEnum|null $navigationGroup = 'Site';
 
     public static function form(Schema $schema): Schema
     {
