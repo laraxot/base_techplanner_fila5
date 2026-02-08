@@ -1,85 +1,9 @@
-# AGENTS.md
+# AGENTS.md - Complete AI Agent Guidelines
 
-This file provides essential guidance for agentic coding agents working in this Laravel modular application with Filament v4.
+> **Last Updated**: 2026-02-08  
+> **Purpose**: Comprehensive guidelines for all AI agents working on this Laravel modular application
 
-## 🚨 CRITICAL NEW RULES (2026-02-08)
-
-### Frontend Development - NO Controllers
-
-**MAI, MAI, MAI usare Controllers tradizionali per il frontend. SEMPRE usare Folio + Volt.**
-
-```php
-// ❌ SBAGLIATO - MAI FARE QUESTO
-// app/Http/Controllers/PagesController.php
-class PagesController extends Controller {
-    public function about() {
-        return view('pages.about');
-    }
-}
-
-// ✅ CORRETTO - Folio Pages
-// resources/views/pages/chi-si-siamo.blade.php
-<x-page side="content" slug="about">
-    <h1>Chi Siamo</h1>
-</x-page>
-```
-
-**DOCUMENTAZIONE COMPLETA**: [docs/critical-frontend-rules.md](docs/critical-frontend-rules.md)
-
-### Component Validation Before Creating Pages
-
-**SEMPRE verificare l'esistenza dei componenti prima di definire i blocchi JSON.**
-
-```bash
-# Verification script
-for view in "pub_theme::components.blocks.hero.about" "pub_theme::components.content.split"; do
-    view_path=$(echo $view | sed 's/pub_theme::/laravel\/Themes\/Two\/resources\/views\//g')
-    if [ ! -f "$view_path" ]; then
-        echo "❌ Missing: $view_path"
-    fi
-done
-```
-
-### WCAG Contrast Requirements
-
-**SEMPRE calcolare il rapporto di contrasto prima di scegliere i colori.**
-
-```php
-// WCAG AA requires 4.5:1 for normal text
-// WCAG AAA requires 7:1 for normal text
-
-// ❌ SBAGLIATO - Contrasto 4.2:1 (sotto AA)
-text-gray-400 (#9CA3AF) su #0F3460
-
-// ✅ CORRETTO - Contrasto 6:1 (AA)
-text-gray-200 (#E5E7EB) su #0F3460
-
-// ✅ CORRETTO - Contrasto 7:1 (AAA)
-text-gray-100 (#F3F4F6) su #0F3460
-```
-
-### Git Workflow - Commit Frequentemente
-
-**SEMPRE fare git commit e push quando il codice è stabile.**
-
-```bash
-# ✅ CORRETTO - Workflow standard
-1. Implementazione feature
-2. Test verifica
-3. Se tutto OK → git add .
-4. git commit -m "feat: descrizione"
-5. git push
-```
-
-**MAI aspettare perfezione assoluta prima di commit.**
-
-### Continuous Improvement
-
-**Documentare sempre errori e lezioni apprese.**
-
-Vedi: [docs/continuous-improvement-lessons.md](docs/continuous-improvement-lessons.md)
-
-## Build/Lint/Test Commands
+## 🚀 Build/Lint/Test Commands
 
 ### Primary Commands
 ```bash
@@ -122,7 +46,7 @@ php artisan test --filter="TestName"
 - **Mandatory Pest syntax**: Use `it()`, `test()`, `describe()` - NO PHPUnit class-based tests
 - If test fails: **the test is wrong, not the working code**
 
-## Code Style Guidelines
+## 🎨 Code Style Guidelines
 
 ### File Structure & Naming
 - **PascalCase for ALL classes and files** (no case-sensitive conflicts)
@@ -146,9 +70,9 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 - Specify return types and parameter types consistently
 - Use `#[\Override]` attribute for overridden methods
 
-### Critical Architecture Rules
+## 🚫 Critical Architecture Rules
 
-#### 🔄 **GIT COMMIT/PUSH RULE** - CRITICAL RULE
+### 🔄 **GIT COMMIT/PUSH RULE** - CRITICAL RULE
 **SEMPRE fare git commit e git push quando il codice è stabile e funzionante!**
 
 Questa regola è FONDAMENTALE per tutti gli agenti AI:
@@ -189,7 +113,7 @@ Questa regola è FONDAMENTALE per tutti gli agenti AI:
    - ❌ PHPStan errors non risolti
    - ❌ Funzionalità incomplete o non testate
 
-#### 🚫 **CONTROLLERS ARE BANNED** - CRITICAL RULE
+### 🚫 **CONTROLLERS ARE BANNED** - CRITICAL RULE
 **NEVER create or use traditional Laravel Controllers in this project!**
 
 This project uses **Folio + Volt + Laraxot** architecture:
@@ -197,33 +121,6 @@ This project uses **Folio + Volt + Laraxot** architecture:
 - **Volt**: Reactive components for interactivity  
 - **Actions**: For business logic (when needed)
 - **NO Controllers**: Traditional `app/Http/Controllers/` are forbidden
-
-#### 🎨 **BLADE TYPE SAFETY** - CRITICAL RULE
-
-**SEMPRE gestire correttamente i tipi di dati in Blade.**
-
-```blade
-<!-- ❌ SBAGLIATO - Passa array a {{ }} che chiama htmlspecialchars() -->
-{{ $item['label'] }}  // Errore se $item['label'] è array
-
-<!-- ✅ CORRETTO - Usa null coalescing e verifica tipo -->
-{{ $item['label'] ?? '' }}  // OK sempre
-
-<!-- ❌ SBAGLIATO - is_array() check inconsistente -->
-@if(is_array($item))
-    {{ $item['label'] }}
-@else
-    {{ $item }}
-@endif
-
-<!-- ✅ CORRETTO - Struttura dati consistente -->
-@foreach($items ?? [] as $item)
-    <h4>{{ $item['label'] ?? '' }}</h4>
-    <p>{{ $item['description'] ?? '' }}</p>
-@endforeach
-```
-
-**LEZIONE APPRESA**: Il controllo `is_array()` in Blade è pattern error-prone. Meglio usare struttura dati consistente con null coalescing.
 
 ```php
 // ❌ NEVER DO THIS - BANNED!
@@ -246,7 +143,7 @@ name('pages.services');
 <!-- Your HTML/Blade content -->
 ```
 
-#### 1. NEVER Extend Filament Directly
+### 1. NEVER Extend Filament Directly
 ```php
 // ❌ WRONG
 use Filament\Resources\Resource;
@@ -260,7 +157,7 @@ class MyResource extends XotBaseResource {}
 use Modules\Lang\Filament\Resources\LangBaseResource;
 ```
 
-#### 2. NEVER Redeclare Inherited Traits
+### 2. NEVER Redeclare Inherited Traits
 ```php
 // ❌ WRONG - Redundant trait declaration
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
@@ -278,7 +175,7 @@ class MyRelationManager extends XotBaseRelationManager {
 }
 ```
 
-#### 3. ServiceProvider Single Responsibility
+### 3. ServiceProvider Single Responsibility
 ```php
 // ❌ WRONG - Mixed concerns
 class UserServiceProvider extends XotBaseServiceProvider {
@@ -291,7 +188,7 @@ class UserServiceProvider extends XotBaseServiceProvider {
 }
 ```
 
-#### 4. NEVER Use property_exists() with Eloquent
+### 4. NEVER Use property_exists() with Eloquent
 ```php
 // ❌ GRAVEMENTE ERRATO
 if (property_exists($user, 'full_name') && $user->full_name) { }
@@ -300,25 +197,25 @@ if (property_exists($user, 'full_name') && $user->full_name) { }
 if (isset($user->full_name) && $user->full_name) { }
 ```
 
-### Database & Models
+## 🗄️ Database & Models
 - Migrations auto-discovered from all modules
 - Use descriptive timestamps in migration names
 - Models extend base classes from Xot module
 - Follow Laravel naming conventions for tables/columns
 
-### Frontend Development
+## 🎨 Frontend Development
 - Tailwind CSS v4 via Vite with `@tailwindcss/vite`
 - Filament handles most UI - avoid custom frontend unless necessary
 - Build assets with `npm run build`
 
-### PHPStan Compliance
+## 🔍 PHPStan Compliance
 - Runs at **level max** (most strict)
 - **Zero tolerance**: ALL errors must be resolved
 - Focus analysis on `./Modules/` directory
 - Use `--memory-limit=-1` for large runs
 - Configuration in `phpstan.neon` - never pass level parameter
 
-### Pest Testing Standards
+## 🧪 Pest Testing Standards
 ```php
 <?php
 
@@ -341,7 +238,7 @@ describe('User Management', function () {
 });
 ```
 
-## Module Development Workflow
+## 📦 Module Development Workflow
 
 1. **Determine module ownership** for new functionality
 2. **Check `module.json`** for dependencies before adding cross-module code
@@ -350,7 +247,7 @@ describe('User Management', function () {
 5. **Extend XotBase classes** for all Filament components
 6. **Run PHPStan** and resolve ALL errors before considering work complete
 
-## Quality Gates
+## ✅ Quality Gates
 
 Before completing any task, ensure:
 - ✅ PHPStan passes with zero errors (`./vendor/bin/phpstan analyse`)
@@ -360,7 +257,7 @@ Before completing any task, ensure:
 - ✅ No case-sensitive file naming conflicts
 - ✅ No trait redeclarations from parent classes
 
-## Common Patterns
+## 🔄 Common Patterns
 
 ### Resource Extension
 ```php
@@ -398,3 +295,135 @@ class MyModel extends BaseModel
         return isset($this->name) ? $this->name : 'Unknown';
     }
 }
+```
+
+## 🧠 Error Resolution Patterns
+
+### Serializable Closure Errors
+When encountering `Cannot access offset of type Laravel\SerializableClosure\Serializers\Native`:
+
+1. **Check Folio middleware** for inline closures
+2. **Remove problematic closures** from service providers
+3. **Implement direct logic** in page templates instead
+4. **Test multi-language routes** thoroughly
+5. **Document the fix** in module docs
+
+### PHPStan Level 10 Errors
+Follow the [phpstan-level10](.claude/skills/phpstan-level10) skill for comprehensive resolution.
+
+### Translation Violations
+Never use hardcoded strings in Filament components:
+```php
+// ❌ WRONG
+TextInput::make('email')->label('Email Address')
+
+// ✅ CORRECT
+TextInput::make('email')->label(__('user.email'))
+```
+
+## 📚 Documentation Standards
+
+### Module Documentation
+- Each module must have `docs/00-index.md` or `docs/README.md`
+- Use relative links for cross-module references
+- Follow naming conventions: lowercase `.md` files (except `README.md`)
+- Update roadmaps after significant changes
+
+### API Documentation
+- Document all public methods and classes
+- Include parameter types and return types
+- Provide usage examples
+- Link to related modules and functionality
+
+## 🎯 Agent Memory & Learning
+
+### Error Pattern Recognition
+- **Serializable Closure**: Folio middleware with inline closures
+- **PHPStan L10**: Missing types, array shapes, property_exists() usage
+- **Translation violations**: Hardcoded labels in Filament components
+- **XotBase violations**: Direct Filament extensions
+
+### Solution Templates
+- **Bug fixes**: Use [laraxot-bugfix-workflow](.claude/skills/laraxot-bugfix-workflow)
+- **Code quality**: Use [phpstan-level10](.claude/skills/phpstan-level10)
+- **Documentation**: Use [laraxot-docs-workflow](.claude/skills/laraxot-docs-workflow)
+- **Module audit**: Use [module-audit](.claude/skills/module-audit)
+
+### Continuous Improvement
+1. **Learn from errors** - Document patterns and solutions
+2. **Update skills** - Enhance skill files with new patterns
+3. **Share knowledge** - Update documentation for other agents
+4. **Test thoroughly** - Verify fixes work in all contexts
+5. **Communicate clearly** - Document decisions and trade-offs
+
+## 🚀 Advanced Agent Capabilities
+
+### Multi-Module Coordination
+- Understand module dependencies and relationships
+- Coordinate changes across related modules
+- Maintain consistency in patterns and conventions
+
+### Performance Optimization
+- Identify bottlenecks in module interactions
+- Optimize database queries and eager loading
+- Balance code quality with performance requirements
+
+### Security Considerations
+- Follow Laravel security best practices
+- Validate user inputs properly
+- Implement proper authorization checks
+
+### Testing Strategies
+- Write comprehensive unit and feature tests
+- Use proper test data and factories
+- Test edge cases and error conditions
+
+## 📋 Quick Reference Checklist
+
+### Before Commit
+- [ ] PHPStan Level 10 passes
+- [ ] Code formatted with Pint
+- [ ] Tests pass (Pest syntax)
+- [ ] No XotBase violations
+- [ ] No translation violations
+- [ ] Documentation updated
+
+### After Major Changes
+- [ ] Update module roadmap
+- [ ] Document new patterns
+- [ ] Test multi-language functionality
+- [ ] Verify performance impact
+- [ ] Update related documentation
+
+### Error Resolution
+- [ ] Identify root cause
+- [ ] Implement minimal fix
+- [ ] Test thoroughly
+- [ ] Document solution
+- [ ] Update skills/patterns
+
+---
+
+## 🎖️ Agent Excellence Standards
+
+### Technical Excellence
+- **Zero tolerance** for PHPStan errors
+- **Strict adherence** to architectural patterns
+- **Comprehensive testing** of all functionality
+- **Performance awareness** in all solutions
+
+### Documentation Excellence
+- **Complete coverage** of all changes
+- **Clear explanations** of complex concepts
+- **Consistent formatting** across all documentation
+- **Relative linking** for maintainability
+
+### Collaboration Excellence
+- **Clear communication** of decisions and trade-offs
+- **Knowledge sharing** through updated skills and docs
+- **Pattern recognition** and solution templates
+- **Continuous learning** from errors and successes
+
+---
+
+*This document serves as the complete guide for all AI agents working on this Laravel modular application. Update it regularly with new patterns, solutions, and lessons learned.*

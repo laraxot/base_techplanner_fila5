@@ -329,3 +329,98 @@ cd laravel && ./vendor/bin/phpstan analyse --memory-limit=-1
 ## 许可证
 
 本项目是专有软件。保留所有权利。
+
+## 🚨 NEW MEMORIES - 2026-02-08
+
+### Frontend Architecture - Folio + Volt Only
+
+**CRITICAL**: MAI usare Controllers per il frontend. Usare SEMPRE Folio + Volt.
+
+```blade
+<!-- ✅ CORRETTO - Folio Page -->
+<!-- resources/views/pages/chi-si-siamo.blade.php -->
+<x-page side="content" slug="about">
+    <h1>Chi Siamo</h1>
+</x-page>
+
+<!-- ❌ SBAGLIATO - Controller -->
+<!-- app/Http/Controllers/PagesController.php -->
+class PagesController extends Controller {
+    public function about() { ... }
+}
+```
+
+**DOCUMENTAZIONE**: [docs/critical-frontend-rules.md](docs/critical-frontend-rules.md)
+
+### Blade Type Safety - htmlspecialchars() Error
+
+**CRITICAL**: Mai passare array a `{{ }}` in Blade.
+
+```blade
+<!-- ❌ SBAGLIATO -->
+{{ $item['label'] }}  // Errore se array
+
+<!-- ✅ CORRETTO -->
+{{ $item['label'] ?? '' }}  // Type-safe
+```
+
+**LESSON**: Il pattern `is_array()` check è error-prone. Usare sempre struttura dati consistente con null coalescing.
+
+### WCAG Contrast Requirements
+
+**CRITICAL**: Calcolare sempre il rapporto di contrasto prima di scegliere colori.
+
+```css
+/* ❌ SBAGLIATO - 4.2:1 (sotto AA) */
+text-gray-400 su #0F3460
+
+/* ✅ CORRETTO - 6:1 (AA) */
+text-gray-200 su #0F3460
+
+/* ✅ CORRETTO - 7:1 (AAA) */
+text-gray-100 su #0F3460
+```
+
+### Component Validation Before JSON Definition
+
+**CRITICAL**: SEMPRE verificare esistenza componenti prima di definire blocchi JSON.
+
+```bash
+# Script di verifica
+for view in "pub_theme::components.blocks.hero.about"; do
+    view_path=$(echo $view | sed 's/pub_theme::/laravel\/Themes\/Two\/resources\/views\//g')
+    if [ ! -f "$view_path" ]; then
+        echo "❌ Missing: $view_path"
+    fi
+done
+```
+
+### Git Workflow - Commit Frequently
+
+**CRITICAL**: MAI aspettare perfezione assoluta. Commit frequentemente quando stabile.
+
+```bash
+# Workflow standard
+1. Implementazione
+2. Test verifica
+3. Se OK → git add .
+4. git commit -m "feat: descrizione"
+5. git push
+```
+
+**DOCUMENTAZIONE**: [docs/continuous-improvement-lessons.md](docs/continuous-improvement-lessons.md)
+
+### Cache Clearing Strategy
+
+**CRITICAL**: Dopo ogni modifica al codice frontend, pulire tutte le cache.
+
+```bash
+cd /var/www/_bases/base_techplanner_fila5/laravel
+rm -rf bootstrap/cache/*
+php artisan cache:clear
+php artisan config:clear
+php artisan route:clear
+php artisan view:clear
+```
+
+**LESSON**: SerializableClosure errors sono spesso causati da cache corrotte.

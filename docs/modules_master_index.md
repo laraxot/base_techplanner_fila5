@@ -4,6 +4,39 @@
 **PHPStan Status**: ✅ Level 10 - 0 Errori  
 **Total Modules**: 15
 
+## 🎯 Project-Level Documentation (NEW)
+
+### Critical Frontend Rules
+**Status**: ✅ OBBLIGATORIO  
+**Path**: [critical-frontend-rules.md](./critical-frontend-rules.md)
+
+Regole fondamentali per sviluppo frontend:
+- NO Controllers per frontend - Folio + Volt OBBLIGATORIO
+- Struttura File as Database - JSON Pages
+- URL Mapping e Slug System
+- Component Architecture
+- Theme Asset Management
+
+**Essential Reading** per tutti gli agenti AI:
+- Folio routing patterns
+- Component validation
+- WCAG contrast requirements
+- Translation system
+
+### Continuous Improvement Lessons
+**Status**: 📚 IN CONTINUOUS UPDATE  
+**Path**: [continuous-improvement-lessons.md](./continuous-improvement-lessons.md)
+
+Lezioni apprese dai miei errori:
+- Frontend development lessons
+- UI/UX best practices
+- Blade template issues
+- Git workflow improvements
+- Data structure validation
+- Component architecture
+
+**Ultimo Aggiornamento**: 2026-02-08
+
 ## 🎯 Core Modules
 
 ### Xot (Core Framework)
@@ -87,6 +120,8 @@ Sistema gestione contenuti, pagine, sezioni, blocchi.
 **Essential Reading**:
 - [00-index.md](../Modules/Cms/docs/00-index.md)
 - [phpstan_compliance_dec_2025.md](../Modules/Cms/docs/phpstan_compliance_dec_2025.md)
+- [Workflow Improvements 2026-02-08](../Modules/Cms/docs/2026-02-08-workflow-improvements.md) - ⭐ NEW: System migliorato per prevenire errori frontend
+- [Footer Error Resolution](../Modules/Cms/docs/footer-error-resolution-2026-02-08.md) - ⭐ NEW: Fix per htmlspecialchars() error
 
 ---
 
