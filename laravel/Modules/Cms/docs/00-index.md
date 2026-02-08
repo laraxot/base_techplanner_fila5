@@ -11,6 +11,7 @@
 
 ## 🏗️ **Architettura e Blocchi**
 - 🧱 **[Content Blocks System](./blocks/)** - Guida al sistema di blocchi trascinabili.
+- 🔄 **[Block Data Flow](./block-data-flow.md)** - Come i dati fluiscono dal JSON ai Blade del tema.
 - 🧬 **[XotData Pattern](./architecture-xotdata-pattern.md)** - Gestione dei dati tipizzati nel CMS.
 - 🧩 **[Page Rendering](./livewire/page-show.md)** - Ciclo di vita del rendering delle pagine Volt.
 - 📜 **[Folio Dynamic Pages Philosophy](../../Themes/Two/docs/folio-dynamic-pages-philosophy.md)** - Filosofia, Religione, Politica e Zen del routing Folio per pagine dinamiche. CRITICO: leggere prima di creare qualsiasi pagina!
@@ -61,6 +62,41 @@ php artisan optimize
 Vedi: [SerializableClosure Error Fix](../../Themes/Two/docs/serializable-closure-error-fix.md)
 
 **Quando usare**: Dopo modifiche al codice, aggiornamenti, o errori di routing Folio
+
+### Errore: htmlspecialchars() Argument Type Mismatch
+
+**Causa**: Il footer v1.blade.php passava array a `{{ }}` che chiama `htmlspecialchars()`.
+
+**Soluzione**: Rimuovere controllo `is_array()` e trattare sempre items come array con chiavi 'label' e 'description'.
+
+Vedi: [Footer Error Resolution](./footer-error-resolution-2026-02-08.md)
+
+**Quando usare**: Quando si ottiene errore `htmlspecialchars(): Argument #1 ($string) must be of type string, array given` nel footer
+
+### Workflow Improvements - 2026-02-08
+
+**Nuovo**: Sistema migliorato per prevenire errori frontend e migliorare qualità codice.
+
+**Caratteristiche**:
+- Validazione automatica componenti
+- Standardizzazione strutture dati
+- Validazione contrasto WCAG
+- Workflow Git automatizzato
+
+Vedi: [Workflow Improvements 2026-02-08](./2026-02-08-workflow-improvements.md)
+
+**Quando usare**: Come riferimento per miglioramenti processo sviluppo e prevenzione errori
+
+### Errore: Unable to locate a class or view for component [theme::...]
+
+**Causa**: Tentativo di chiamare direttamente un componente del tema bypassando il sistema CMS. I componenti del tema sono auto-registrati e gestiti dal componente `Section`.
+
+**Soluzione corretta**: 
+Usare sempre il componente Section del modulo CMS:
+```blade
+<x-section slug="footer" />
+```
+**MAI** usare `<x-two::... />` o simili per componenti gestiti via JSON.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
