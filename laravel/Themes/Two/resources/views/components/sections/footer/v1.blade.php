@@ -222,7 +222,7 @@
                     </div>
                 
                     {{-- Quick Actions Section --}}
-                        <div class="border-t border-white/10 bg-gradient-to-r from-[#0d2a4a] to-[#122a48]">                        <div class="container mx-auto px-6 py-6">
+                        <div class="border-t border-white/10 bg-gradient-to-r from-[#2c5282] to-[#1e3a8a]">                        <div class="container mx-auto px-6 py-6">
                             <div class="flex flex-wrap justify-center items-center gap-4">
                                 @if(!empty($quickActions['call']['phone']))
                                 <a href="tel:{{ $quickActions['call']['phone'] }}" 
@@ -258,11 +258,11 @@
                 
                     {{-- Testimonials Section --}}
                         @if(!empty($testimonials['items']) && count($testimonials['items']) > 0)
-                        <div class="border-t border-blue-300/20 bg-[0b2540]">                        <div class="container mx-auto px-6 py-8">
+                        <div class="border-t border-blue-300/20 bg-[#1a365d]">                        <div class="container mx-auto px-6 py-8">
                             <h3 class="text-center text-xl font-bold mb-6 text-white">{{ $testimonials['title'] ?? 'Dicono di Noi' }}</h3>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
                                 @foreach($testimonials['items'] as $testimonial)
-                                                <div class="bg-[#0f3460]/80 backdrop-blur-md p-6 rounded-xl border border-white/15 hover:bg-[#0f3460] transition-all duration-300">                                    <svg class="w-8 h-8 text-orange-400 mb-3" fill="currentColor" viewBox="0 0 24 24">
+                                                <div class="bg-[#2c5282]/80 backdrop-blur-md p-6 rounded-xl border border-white/15 hover:bg-[#1e3a8a] transition-all duration-300">                                    <svg class="w-8 h-8 text-orange-400 mb-3" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                                     </svg>
                                     <p class="text-blue-200 mb-4 italic leading-relaxed">{{ $testimonial['text'] ?? '' }}</p>
@@ -284,11 +284,11 @@
                 
                     {{-- Certifications Section --}}
                         @if(!empty($certifications['items']) && count($certifications['items']) > 0)
-                        <div class="border-t border-white/10 bg-[#0c2744]">                        <div class="container mx-auto px-6 py-6">
+                        <div class="border-t border-white/10 bg-[#1a365d]">                        <div class="container mx-auto px-6 py-6">
                             <h3 class="text-center text-lg font-bold mb-4 text-white">{{ $certifications['title'] ?? 'Certificazioni' }}</h3>
                             <div class="flex flex-wrap justify-center items-center gap-6">
                                 @foreach($certifications['items'] as $cert)
-                                                <div class="flex flex-col items-center gap-1 bg-[#0f3460]/60 px-4 py-3 rounded-lg border border-white/15">                                    <div class="flex items-center gap-2 text-orange-400">
+                                                <div class="flex flex-col items-center gap-1 bg-[#2c5282]/60 px-4 py-3 rounded-lg border border-white/15">                                    <div class="flex items-center gap-2 text-orange-400">
                                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                         </svg>
@@ -306,7 +306,7 @@
                     @endif
                 
                     {{-- Newsletter Section --}}
-    <div class="border-t border-blue-300/20 bg-[0b2540]">
+    <div class="border-t border-blue-300/20 bg-[#1a365d]">
         <div class="container mx-auto px-6 py-8">
             <div class="max-w-2xl mx-auto text-center">
                 <h3 class="text-xl font-bold mb-4 text-white">Rimani aggiornato</h3>
@@ -326,7 +326,7 @@
     </div>
     
     {{-- Trust Seals Section --}}
-    <div class="border-t border-white/10 bg-[#0a2342]">
+    <div class="border-t border-white/10 bg-[#1e3a8a]">
         <div class="container mx-auto px-6 py-6">
             <div class="flex flex-wrap justify-center items-center gap-8">
                 <div class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors cursor-pointer group">
@@ -352,7 +352,7 @@
     </div>
     
     {{-- Bottom Bar --}}
-    <div class="border-t border-white/10 bg-[#081e38]">
+    <div class="border-t border-white/10 bg-[#1a365d]">
         <div class="container mx-auto px-6 py-5">
             <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
                 <p>{{ $legal['copyright'] ?? '© 2026' }}</p>
