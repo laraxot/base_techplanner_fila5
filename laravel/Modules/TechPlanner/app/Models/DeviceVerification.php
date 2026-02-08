@@ -22,6 +22,7 @@ use Illuminate\Support\Carbon;
  * @property string|null $deleted_by
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|DeviceVerification newModelQuery()
  * @method static Builder<static>|DeviceVerification newQuery()
  * @method static Builder<static>|DeviceVerification query()
@@ -35,7 +36,9 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|DeviceVerification whereUpdatedAt($value)
  * @method static Builder<static>|DeviceVerification whereUpdatedBy($value)
  * @method static Builder<static>|DeviceVerification whereVerificationDate($value)
+ *
  * @property-read Profile|null $deleter
+ *
  * @mixin \Eloquent
  */
 class DeviceVerification extends BaseModel

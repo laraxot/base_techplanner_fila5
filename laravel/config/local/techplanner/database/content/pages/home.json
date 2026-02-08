@@ -1,8 +1,8 @@
 {
     "id": "1",
     "title": {
-        "it": "Radioprotezione e Sicurezza Studi Dentistici e Veterinari | Marco Sottana",
-        "en": "Radiation Protection and Safety for Dental and Veterinary Studios | Marco Sottana"
+        "it": "Consulenza Sicurezza Studi Professionali | Marco Sottana",
+        "en": "Safety Consulting for Professional Studios | Marco Sottana"
     },
     "slug": "home",
     "middleware": null,
@@ -14,8 +14,8 @@
                 "slug": "hero-section",
                 "data": {
                     "view": "pub_theme::components.blocks.hero.simple",
-                    "title": "Radioprotezione e Sicurezza Radiologica per Studi Dentistici e Veterinari",
-                    "subtitle": "Conformità normativa garantita, sicurezza pazienti e staff, controlli periodici certificati secondo D.Lgs 101/2020 e Direttiva 2013/59/Euratom.",
+                    "title": "Consulenza Sicurezza e Conformità per Studi Professionali",
+                    "subtitle": "Specialisti in radioprotezione, elettromedicali e sicurezza per studi dentistici e cliniche veterinarie. Conformità D.Lgs 101/2020 e massima tutela di pazienti e operatori.",
                     "primary_cta_label": "Richiedi Consulenza",
                     "primary_cta_url": "/it/contatti",
                     "secondary_cta_label": "Scopri i Servizi",

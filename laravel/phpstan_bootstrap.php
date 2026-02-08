@@ -45,7 +45,6 @@ if (is_dir($modulesPath)) {
     }
 }
 
-
 // Check if the application has already been bootstrapped
 if (! isset($app)) {
     // Define the path to the application bootstrap file
@@ -53,7 +52,7 @@ if (! isset($app)) {
 
     // Ensure the application bootstrap file exists
     if (! file_exists($appPath)) {
-        echo "Laravel application bootstrap file not found.".PHP_EOL;
+        echo 'Laravel application bootstrap file not found.'.PHP_EOL;
         exit(1);
     }
 
@@ -67,7 +66,6 @@ if (! isset($app)) {
     $consoleKernel = $app->make(Illuminate\Contracts\Console\Kernel::class);
     $consoleKernel->bootstrap();
 }
-
 
 // Manually register the service providers for modules
 if (class_exists(Nwidart\Modules\Facades\Module::class)) {

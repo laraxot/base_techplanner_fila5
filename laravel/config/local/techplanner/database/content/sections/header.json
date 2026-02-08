@@ -11,7 +11,7 @@
                 "type": "navigation",
                 "slug": "nav1",
                 "data": {
-                    "view": "pub_theme::components.blocks.navigation.simple",
+                    "view": "themes.two::components.sections.header.v1",
                     "brand": "Marco Sottana",
                     "brand_subtitle": "Consulenza Sicurezza",
                     "cta_label": "Richiedi Consulenza",
@@ -32,7 +32,7 @@
                 "type": "navigation",
                 "slug": "nav1",
                 "data": {
-                    "view": "pub_theme::components.blocks.navigation.simple",
+                    "view": "themes.two::components.sections.header.v1",
                     "brand": "Marco Sottana",
                     "brand_subtitle": "Safety Consulting",
                     "cta_label": "Request Consultation",
@@ -53,7 +53,7 @@
                 "type": "navigation",
                 "slug": "nav1",
                 "data": {
-                    "view": "pub_theme::components.blocks.navigation.simple",
+                    "view": "themes.two::components.sections.header.v1",
                     "brand": "Marco Sottana",
                     "brand_subtitle": "Sicherheitsberatung",
                     "cta_label": "Konsultation Anfordern",

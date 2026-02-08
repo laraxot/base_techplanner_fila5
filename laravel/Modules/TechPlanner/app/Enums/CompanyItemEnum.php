@@ -31,7 +31,7 @@ use Modules\Xot\Filament\Traits\TransTrait;
  * - Stato operativo (business_closed)
  * - Settore merceologico (activity)
  */
-enum CompanyItemEnum: string implements HasLabel, HasIcon, HasColor
+enum CompanyItemEnum: string implements HasColor, HasIcon, HasLabel
 {
     use TransTrait;
 
@@ -78,13 +78,13 @@ enum CompanyItemEnum: string implements HasLabel, HasIcon, HasColor
         $cases = self::cases();
         /** @var array<string, TextInput|Toggle> $result */
         $result = [];
-        
+
         foreach ($cases as $item) {
             $fieldName = $item->value;
             $label = $item->getLabel();
             $icon = $item->getIcon();
             $isRequired = $item === self::COMPANY_NAME;
-            
+
             if ($item === self::BUSINESS_CLOSED) {
                 $result[$fieldName] = Toggle::make($fieldName)
                     ->label($label);
@@ -92,13 +92,13 @@ enum CompanyItemEnum: string implements HasLabel, HasIcon, HasColor
                 $input = TextInput::make($fieldName)
                     ->label($label)
                     ->prefixIcon($icon);
-                
+
                 if ($isRequired) {
                     $input->required();
                 } else {
                     $input->nullable();
                 }
-                
+
                 $result[$fieldName] = $input;
             }
         }

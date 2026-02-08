@@ -1,15 +1,38 @@
 # Soluzione Errore: SerializableClosure in isset or empty
 
-## 🚨 Errore
+## Errore
 
 ```
-TypeError: Cannot access offset of type Laravel\SerializableClosure\Serializers\Native 
+TypeError: Cannot access offset of type Laravel\SerializableClosure\Serializers\Native
 in isset or empty
 ```
 
-## 🔍 Causa
+## Causa REALE (Aggiornamento Feb 2026)
 
-Questo errore si verifica quando le cache ottimizzate (bootstrap/cache/*) contengono serializable closures corrotte o incompatibili con la versione attuale del codice.
+~~Questo errore si verifica quando le cache ottimizzate contengono serializable closures corrotte.~~
+
+**CAUSA VERA**: File Folio malformati che usano `@php` con `use function Laravel\Folio\{name, middleware}`. La keyword `middleware` viene importata come SerializableClosure e causa il TypeError quando Folio cerca di risolvere le rotte.
+
+### Cause specifiche identificate:
+1. **Syntax `@php` con Folio imports**: `@php use function Laravel\Folio\{name, middleware};` wrappa `middleware` in un SerializableClosure
+2. **File duplicati con stessa route name**: Multipli file che definiscono `name('contacts')` creano conflitti
+3. **Mix `@extends` con Folio**: `@extends('layouts.app')` non è compatibile con pagine Folio
+4. **Pulire le cache da sole NON risolve** — bisogna eliminare i file malformati
+
+### File problematici eliminati (Feb 2026):
+- `pages/contacts.blade.php` — duplicato `name('contacts')`
+- `pages/contacts-en.blade.php` — duplicato `name('contacts')`
+- `pages/contatti.blade.php` — `@php use function Laravel\Folio\{name, middleware}` malformato
+- `pages/about.blade.php` — `@extends('layouts.app')` incompatibile con Folio
+- `pages/chi-siamo.blade.php` — conteneva artefatti tool_call nel PHP
+- `pages/services.blade.php` — `@extends('layouts.app')` incompatibile
+- `pages/servizi.blade.php` — malformato con artefatti `<!--[if BLOCK]-->`
+- `pages/faq.blade.php` — DOPPIA dichiarazione Folio name
+- `pages/show-contact.blade.php` — vista standalone obsoleta
+
+### Vedere anche:
+- `docs/folio-page-file-rules.md` — Regole complete per file Folio
+- `docs/folio-architecture-error-analysis.md` — Analisi architetturale errori
 
 ## ✅ Soluzione Completa
 

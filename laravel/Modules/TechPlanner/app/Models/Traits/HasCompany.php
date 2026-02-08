@@ -4,14 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Models\Traits;
 
-use Illuminate\Support\Arr;
-use Webmozart\Assert\Assert;
-use Illuminate\Database\Eloquent\Builder;
-
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Arr;
 use Modules\TechPlanner\Enums\CompanyItemEnum;
-use Illuminate\Database\Eloquent\Relations\MorphOne;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 /**
  * Trait HasContact.
@@ -24,15 +19,14 @@ use Illuminate\Database\Eloquent\Relations\MorphMany;
  */
 trait HasCompany
 {
-
-     /**
+    /**
      * Initialize the trait
      *
      * @return void
      */
     protected function initializeHasCompany()
     {
-        $fields=Arr::map(CompanyItemEnum::cases(), fn ($item) => $item->value);
+        $fields = Arr::map(CompanyItemEnum::cases(), fn ($item) => $item->value);
         $this->mergeFillable($fields);
     }
 }
