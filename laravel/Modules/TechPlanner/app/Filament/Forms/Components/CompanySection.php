@@ -8,7 +8,6 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Modules\TechPlanner\Enums\CompanyItemEnum;
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
-use Override;
 
 /**
  * CompanySection - Sezione Form per dati aziendali

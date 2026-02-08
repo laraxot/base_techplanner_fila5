@@ -1,3 +1,7 @@
+> **CORRECTION (2026-02-08)**: This doc references `two::` and `@include` patterns which are WRONG.
+> Use `<x-section slug="header" />` in layouts. View namespace is `pub_theme::` not `two::`.
+> See `folio-page-file-rules.md` for the authoritative reference.
+
 # Header Navigation Component v1
 
 ## Data: 2026-02-07

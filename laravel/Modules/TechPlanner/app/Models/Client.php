@@ -4,17 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Models;
 
-use Modules\Geo\Models\Address;
-use UnitEnum;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Modules\Geo\Enums\AddressItemEnum;
+use Modules\Geo\Models\Address;
 use Modules\Geo\Models\Traits\GeographicalScopes;
 use Modules\Geo\Models\Traits\HasAddress;
 use Modules\Xot\Models\Traits\HasDynamicFillable;
 use Override;
+use UnitEnum;
+
 use function Safe\preg_match;
 use function Safe\preg_replace;
 
@@ -66,6 +67,7 @@ use function Safe\preg_replace;
  * @property-read int|null $legal_representatives_count
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|Client newModelQuery()
  * @method static Builder<static>|Client newQuery()
  * @method static Builder<static>|Client query()
@@ -103,6 +105,7 @@ use function Safe\preg_replace;
  * @method static Builder<static>|Client whereVatNumber(string $value)
  * @method static Builder<static>|Client whereWhatsapp(string $value)
  * @method static Builder<static>|Client withDistance(float $latitude, float $longitude, float $radiusKm = 10)
+ *
  * @property string|null $company_office
  * @property string|null $activity
  * @property string|null $updated_by
@@ -123,6 +126,7 @@ use function Safe\preg_replace;
  * @property-read int|null $medical_directors_count
  * @property-read Collection<int, PhoneCall> $phoneCalls
  * @property-read int|null $phone_calls_count
+ *
  * @method static Builder<static>|Client inCity(string $city)
  * @method static Builder<static>|Client inPostalCode(string $postalCode)
  * @method static Builder<static>|Client inProvince(string $province)
@@ -146,12 +150,12 @@ use function Safe\preg_replace;
  * @method static Collection<int, static> get($columns = ['*'])
  * @method static int update(array $values)
  * @method static void chunk(int $count, callable $callback)
+ *
  * @mixin \Eloquent
  */
 class Client extends BaseModel
 {
     use GeographicalScopes;
-
     use HasAddress;
     use HasDynamicFillable;
 
@@ -200,7 +204,7 @@ class Client extends BaseModel
         if ($replaced === null || is_array($replaced)) {
             return trim($address);
         }
-        
+
         return trim($replaced);
     }
 
@@ -358,10 +362,10 @@ class Client extends BaseModel
     {
         $phone = preg_replace('/[^+\d]/', '', $value);
         $whatsapp = preg_replace('/[^+\d]/', '', $value);
-        
+
         $phoneClean = is_string($phone) ? $phone : '';
         $whatsappClean = is_string($whatsapp) ? $whatsapp : '';
-        
+
         return match ($type) {
             'phone', 'mobile' => 'tel:'.$phoneClean,
             'email', 'pec' => 'mailto:'.$value,

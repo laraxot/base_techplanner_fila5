@@ -20,11 +20,7 @@
     </head>
 
     <body class="antialiased font-sans bg-base-100 text-base-content selection:bg-primary selection:text-primary-content">
-        {{-- Dynamic Header Section --}}
-        @php
-            $headerSection = \Modules\Cms\Models\Section::getBlocksBySlug('header');
-        @endphp
-        @include('two::components.sections.header.v1', ['blocks' => $headerSection])
+        <x-section slug="header" />
 
         <main class="relative min-h-screen">
             {{ $slot }}
@@ -32,11 +28,7 @@
 
         @livewire('notifications')
 
-        {{-- Dynamic Footer Section --}}
-        @php
-             $footerSection = \Modules\Cms\Models\Section::getBlocksBySlug('footer');
-        @endphp
-        @include('two::components.sections.footer.v1', ['blocks' => $footerSection])
+        <x-section slug="footer" />
         
         @filamentScripts
         @vite('resources/js/app.js', 'themes/Two')

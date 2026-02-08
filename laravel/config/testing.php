@@ -56,7 +56,7 @@ return [
     | Test Performance Optimizations
     |--------------------------------------------------------------------------
     */
-    
+
     'performance' => [
         'disable_telescope' => true,
         'disable_debugbar' => true,
@@ -70,7 +70,7 @@ return [
     | Test Data Management
     |--------------------------------------------------------------------------
     */
-    
+
     'data' => [
         'auto_migrate' => true,
         'auto_seed' => false,

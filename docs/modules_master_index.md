@@ -122,6 +122,8 @@ Sistema gestione contenuti, pagine, sezioni, blocchi.
 - [phpstan_compliance_dec_2025.md](../Modules/Cms/docs/phpstan_compliance_dec_2025.md)
 - [Workflow Improvements 2026-02-08](../Modules/Cms/docs/2026-02-08-workflow-improvements.md) - ⭐ NEW: System migliorato per prevenire errori frontend
 - [Footer Error Resolution](../Modules/Cms/docs/footer-error-resolution-2026-02-08.md) - ⭐ NEW: Fix per htmlspecialchars() error
+- [Footer UI/UX Analysis](../Modules/Cms/docs/footer-ui-ux-analysis-2026-02-08.md) - ⭐ NEW: Analisi completa problemi UI/UX footer e soluzioni
+- [Footer UI/UX Fixes Applied](../Modules/Cms/docs/footer-ui-ux-fixes-applied-2026-02-08.md) - ⭐ NEW: Fix applicati per miglioramento contrasto WCAG e leggibilità
 
 ---
 

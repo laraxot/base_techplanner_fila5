@@ -1,3 +1,7 @@
+> **CORRECTION (2026-02-08)**: This doc references `two::` and `@include` patterns which are WRONG.
+> Use `<x-section slug="footer" />` in layouts. View namespace is `pub_theme::` not `two::`.
+> See `folio-page-file-rules.md` for the authoritative reference.
+
 # Footer Component v1 - Theme Two
 
 ## Descrizione

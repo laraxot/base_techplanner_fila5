@@ -35,6 +35,7 @@ use Illuminate\Support\Carbon;
  * @property string|null $deleted_by
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|MedicalDirector newModelQuery()
  * @method static Builder<static>|MedicalDirector newQuery()
  * @method static Builder<static>|MedicalDirector query()
@@ -65,7 +66,9 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|MedicalDirector distinct()
  * @method static mixed pluck($column, $key = null)
  * @method static array toArray()
+ *
  * @property-read Profile|null $deleter
+ *
  * @mixin \Eloquent
  */
 class MedicalDirector extends BaseModel

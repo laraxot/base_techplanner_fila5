@@ -48,6 +48,7 @@ use Override;
  * @property-read bool $needs_verification
  * @property-read Profile|null $updater
  * @property-read int|null $verifications_count
+ *
  * @method static Builder<static>|Device newModelQuery()
  * @method static Builder<static>|Device newQuery()
  * @method static Builder<static>|Device query()
@@ -75,7 +76,9 @@ use Override;
  * @method static Builder<static>|Device whereUpdatedAt($value)
  * @method static Builder<static>|Device whereUpdatedBy($value)
  * @method static Builder<static>|Device whereWarrantyExpiration($value)
+ *
  * @property-read Profile|null $deleter
+ *
  * @mixin \Eloquent
  */
 class Device extends BaseModel

@@ -42,6 +42,7 @@ use Illuminate\Support\Carbon;
  * @property-read Profile|null $updater
  * @property-read Collection<int, DeviceVerification> $verifications
  * @property-read int|null $verifications_count
+ *
  * @method static Builder<static>|Machine newModelQuery()
  * @method static Builder<static>|Machine newQuery()
  * @method static Builder<static>|Machine query()
@@ -69,7 +70,9 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|Machine whereUpdatedAt($value)
  * @method static Builder<static>|Machine whereUpdatedBy($value)
  * @method static Builder<static>|Machine whereWarrantyExpiration($value)
+ *
  * @property-read Profile|null $deleter
+ *
  * @mixin \Eloquent
  */
 class Machine extends Device

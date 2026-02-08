@@ -87,6 +87,20 @@ Vedi: [Workflow Improvements 2026-02-08](./2026-02-08-workflow-improvements.md)
 
 **Quando usare**: Come riferimento per miglioramenti processo sviluppo e prevenzione errori
 
+### Footer UI/UX Issues - 2026-02-08
+
+**Problema**: Footer con sfondo troppo scuro e testo poco leggibile, non conforme WCAG.
+
+**Soluzione**: 
+- Sfondo aggiornato da blu scuro a blu più chiaro (`#1e40af` → `#1e40af`)
+- Colori testo migliorati per contrasto WCAG AA
+- Bordi resi più visibili
+- Spaziatura colonne aumentata
+
+Vedi: [Footer UI/UX Analysis](./footer-ui-ux-analysis-2026-02-08.md) | [Fixes Applied](./footer-ui-ux-fixes-applied-2026-02-08.md)
+
+**Quando usare**: Come riferimento per problemi UI/UX nel footer e standard WCAG
+
 ### Errore: Unable to locate a class or view for component [theme::...]
 
 **Causa**: Tentativo di chiamare direttamente un componente del tema bypassando il sistema CMS. I componenti del tema sono auto-registrati e gestiti dal componente `Section`.

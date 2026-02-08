@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Modules\User\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Modules\User\Models\User;
 
 class DatabaseSeeder extends Seeder
 {

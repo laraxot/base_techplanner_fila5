@@ -4,14 +4,15 @@ declare(strict_types=1);
 
 namespace Tests;
 
+use Dotenv\Dotenv;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Application;
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Dotenv\Dotenv; // Added for explicit Dotenv loading in createApplication
-use Mockery; // Added
+use Illuminate\Foundation\Testing\TestCase as BaseTestCase; // Added for explicit Dotenv loading in createApplication
+
+// Added
 
 // Manually require Composer's autoloader to ensure it's loaded
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__.'/../vendor/autoload.php';
 
 abstract class TestCase extends BaseTestCase
 {
@@ -26,8 +27,6 @@ abstract class TestCase extends BaseTestCase
         $xotBaseMigrationClass = \Modules\Xot\Database\Migrations\XotBaseMigration::class;
         $mockModelClass = \Illuminate\Database\Eloquent\Model::class;
 
-
-        
         // Explicitly set the base path before requiring bootstrap/app.php
         $basePath = realpath(__DIR__.'/../'); // Adjust path for tests/ directory
         $_ENV['APP_BASE_PATH'] = $basePath; // Set in $_ENV for early access

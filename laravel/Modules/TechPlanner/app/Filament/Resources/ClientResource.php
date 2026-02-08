@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Filament\Resources;
 
-use Override;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Modules\Geo\Filament\Forms\Components\AddressSection;
@@ -12,6 +11,7 @@ use Modules\Notify\Filament\Forms\Components\ContactSection;
 use Modules\TechPlanner\Filament\Forms\Components\CompanySection;
 use Modules\TechPlanner\Models\Client;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+use Override;
 
 /**
  * @property ClientResource $resource

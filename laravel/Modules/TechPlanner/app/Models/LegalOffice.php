@@ -28,6 +28,7 @@ use Illuminate\Support\Carbon;
  * @property string|null $deleted_by
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|LegalOffice newModelQuery()
  * @method static Builder<static>|LegalOffice newQuery()
  * @method static Builder<static>|LegalOffice query()
@@ -46,7 +47,9 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|LegalOffice whereProvince($value)
  * @method static Builder<static>|LegalOffice whereUpdatedAt($value)
  * @method static Builder<static>|LegalOffice whereUpdatedBy($value)
+ *
  * @property-read Profile|null $deleter
+ *
  * @mixin \Eloquent
  */
 class LegalOffice extends BaseModel

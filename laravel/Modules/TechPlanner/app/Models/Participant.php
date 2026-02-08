@@ -14,6 +14,7 @@ use Modules\TechPlanner\Database\Factories\ParticipantFactoryFactory;
  * @method static Builder<static>|Participant newModelQuery()
  * @method static Builder<static>|Participant newQuery()
  * @method static Builder<static>|Participant query()
+ *
  * @mixin \Eloquent
  */
 class Participant extends Model

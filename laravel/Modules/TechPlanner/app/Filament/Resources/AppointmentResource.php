@@ -8,9 +8,6 @@ use Filament\Forms;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Textarea;
 use Illuminate\Database\Eloquent\Model;
-use Modules\TechPlanner\Filament\Resources\AppointmentResource\Pages\CreateAppointment;
-use Modules\TechPlanner\Filament\Resources\AppointmentResource\Pages\EditAppointment;
-use Modules\TechPlanner\Filament\Resources\AppointmentResource\Pages\ListAppointments;
 use Modules\TechPlanner\Models\Appointment;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
@@ -49,8 +46,6 @@ class AppointmentResource extends XotBaseResource
             'notes' => Textarea::make('notes')->maxLength(65535)->columnSpanFull(),
         ];
     }
-
-
 
     public static function canEdit(Model $record): bool
     {
