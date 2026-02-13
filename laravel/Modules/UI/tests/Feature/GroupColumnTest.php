@@ -190,9 +190,9 @@ describe('GroupColumn view rendering', function (): void {
 
         // The view logic: skip if empty($value) && $value !== 0 && $value !== '0'
         // So zeros should be kept
-        expect(empty($record->empty_field) && $record->empty_field !== 0 && $record->empty_field !== '0')->toBeTrue();
-        expect(empty($record->null_field) && $record->null_field !== 0 && $record->null_field !== '0')->toBeTrue();
-        expect(empty($record->zero_int) && $record->zero_int !== 0 && $record->zero_int !== '0')->toBeFalse();
-        expect(empty($record->zero_string) && $record->zero_string !== 0 && $record->zero_string !== '0')->toBeFalse();
+        expect(empty($record->empty_field) && 0 !== $record->empty_field && '0' !== $record->empty_field)->toBeTrue();
+        expect(empty($record->null_field) && 0 !== $record->null_field && '0' !== $record->null_field)->toBeTrue();
+        expect(empty($record->zero_int) && 0 !== $record->zero_int && '0' !== $record->zero_int)->toBeFalse();
+        expect(empty($record->zero_string) && 0 !== $record->zero_string && '0' !== $record->zero_string)->toBeFalse();
     });
 });
