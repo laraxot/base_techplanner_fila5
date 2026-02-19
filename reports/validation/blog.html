@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="application-name" content="Laravel">
-        <meta name="csrf-token" content="44qrETnIXyvDr0urI8XMqQeegkbPQyTPgEf2c9qs">
+        <meta name="csrf-token" content="V1jCqtsbbSZAhqzaBedYsWnuyvqwAWHNPjLTOua1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>SottanaLaravel</title>
@@ -214,7 +214,6 @@
     });
 })();
 </script>
-<!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}[wire\:cloak] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
 </head>
     <body class="antialiased font-sans bg-white text-gray-900">
         <header
@@ -279,11 +278,11 @@
                         href="/it"
                         class="relative px-3 py-2 text-sm font-medium transition-colors hover:opacity-80"
                         :class="scrolled ? 'text-gray-700 hover:text-gray-900' : 'text-white/90 hover:text-white'"
-                         aria-current="page"                     >
+                                            >
                         Home
                         <span class="absolute bottom-0 left-3 right-3 h-0.5 rounded-full transition-all duration-200"
                               :class="scrolled ? 'bg-[#1E5A96]' : 'bg-white'"
-                              class="opacity-100"
+                              class="opacity-0"
                         ></span>
                     </a>
                                                         <a
@@ -312,11 +311,11 @@
                         href="/it/blog"
                         class="relative px-3 py-2 text-sm font-medium transition-colors hover:opacity-80"
                         :class="scrolled ? 'text-gray-700 hover:text-gray-900' : 'text-white/90 hover:text-white'"
-                                            >
+                         aria-current="page"                     >
                         Blog
                         <span class="absolute bottom-0 left-3 right-3 h-0.5 rounded-full transition-all duration-200"
                               :class="scrolled ? 'bg-[#1E5A96]' : 'bg-white'"
-                              class="opacity-0"
+                              class="opacity-100"
                         ></span>
                     </a>
                                                         <a
@@ -372,7 +371,7 @@
                         style="display: none;"
                     >
                                                     <a
-                                href="https://sottana.net/de"
+                                href="https://sottana.net/de/blog"
                                 class="flex items-center px-4 py-2 text-sm transition-colors text-gray-700 hover:bg-gray-50"
                                 hreflang="de"
                             >
@@ -380,7 +379,7 @@
                                 Deutsch
                             </a>
                                                     <a
-                                href="https://sottana.net/en"
+                                href="https://sottana.net/en/blog"
                                 class="flex items-center px-4 py-2 text-sm transition-colors text-gray-700 hover:bg-gray-50"
                                 hreflang="en"
                             >
@@ -388,7 +387,7 @@
                                 English
                             </a>
                                                     <a
-                                href="https://sottana.net/es"
+                                href="https://sottana.net/es/blog"
                                 class="flex items-center px-4 py-2 text-sm transition-colors text-gray-700 hover:bg-gray-50"
                                 hreflang="es"
                             >
@@ -396,7 +395,7 @@
                                 español
                             </a>
                                                     <a
-                                href="https://sottana.net/it"
+                                href="https://sottana.net/it/blog"
                                 class="flex items-center px-4 py-2 text-sm transition-colors bg-blue-50 text-[#1E5A96] font-semibold"
                                 hreflang="it"
                             >
@@ -432,16 +431,16 @@
                         it
                     </button>
                     <div x-show="mLang" x-transition class="absolute right-0 mt-2 w-28 bg-white rounded-lg shadow-xl py-1 border border-gray-100 overflow-hidden z-50" style="display: none;">
-                                                    <a href="https://sottana.net/de" class="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50" hreflang="de">
+                                                    <a href="https://sottana.net/de/blog" class="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50" hreflang="de">
                                 DE - Deutsch
                             </a>
-                                                    <a href="https://sottana.net/en" class="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50" hreflang="en">
+                                                    <a href="https://sottana.net/en/blog" class="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50" hreflang="en">
                                 EN - English
                             </a>
-                                                    <a href="https://sottana.net/es" class="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50" hreflang="es">
+                                                    <a href="https://sottana.net/es/blog" class="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50" hreflang="es">
                                 ES - español
                             </a>
-                                                    <a href="https://sottana.net/it" class="block px-3 py-2 text-sm bg-blue-50 text-[#1E5A96] font-bold" hreflang="it">
+                                                    <a href="https://sottana.net/it/blog" class="block px-3 py-2 text-sm bg-blue-50 text-[#1E5A96] font-bold" hreflang="it">
                                 IT - italiano
                             </a>
                                             </div>
@@ -551,284 +550,508 @@
     </div>
 </header>
 
-    <div wire:key="lw-4007806382-3" wire:snapshot="{&quot;data&quot;:[],&quot;memo&quot;:{&quot;id&quot;:&quot;D23FTz5k8bXrmlmrefqh&quot;,&quot;name&quot;:&quot;volt-anonymous-fragment-eyJuYW1lIjoiaG9tZSIsInBhdGgiOiJUaGVtZXNcL1R3b1wvcmVzb3VyY2VzXC92aWV3c1wvcGFnZXNcL2luZGV4LmJsYWRlLnBocCJ9&quot;,&quot;path&quot;:&quot;it&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;release&quot;:&quot;a-a-a&quot;,&quot;attributes&quot;:{&quot;lang&quot;:&quot;it&quot;,&quot;_theme&quot;:{},&quot;isMobile&quot;:false,&quot;isTablet&quot;:false,&quot;isDesktop&quot;:false},&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;it&quot;,&quot;islands&quot;:[]},&quot;checksum&quot;:&quot;0f3189d3dc2c80cec7cf805b5ec50d1ae50aee60c037b1609618f2ba26895650&quot;}" wire:effects="{&quot;partials&quot;:[]}" wire:id="D23FTz5k8bXrmlmrefqh" wire:name="volt-anonymous-fragment-eyJuYW1lIjoiaG9tZSIsInBhdGgiOiJUaGVtZXNcL1R3b1wvcmVzb3VyY2VzXC92aWV3c1wvcGFnZXNcL2luZGV4LmJsYWRlLnBocCJ9">
-        <!--[if BLOCK]><![endif]-->    <div class="page-content-content" data-slug="home" data-side="content">
+    <div>
+        <div class="page-content-content" data-slug="blog" data-side="content">
         <div>
-        <!--[if BLOCK]><![endif]-->        <!--[if BLOCK]><![endif]-->            
-            <section class="relative h-screen flex items-center justify-center overflow-hidden">
-    
-    <div class="absolute inset-0 z-0 bg-gradient-to-br from-brand-blue via-brand-blue/90 to-black">
-        <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:24px_24px] opacity-30"></div>
-        <!--[if BLOCK]><![endif]-->            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-overlay"
-                 style="background-image: url('/themes/Two/resources/images/hero-bg.jpg');"></div>
-        <!--[if ENDBLOCK]><![endif]-->    </div>
-
+                            
+            <section class="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 py-20 lg:py-28">
+    <div class="absolute inset-0 bg-black/30"></div>
     
     <div class="container mx-auto px-4 relative z-10">
-        <div class="max-w-4xl">
-            <!--[if BLOCK]><![endif]-->                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">Consulenza Sicurezza e Conformità per Studi Professionali</h1>
-            <!--[if ENDBLOCK]><![endif]-->
-            <!--[if BLOCK]><![endif]-->                <p class="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed max-w-2xl">Specialisti in radioprotezione, elettromedicali e sicurezza per studi dentistici e cliniche veterinarie. Conformità D.Lgs 101/2020 e massima tutela di pazienti e operatori.</p>
-            <!--[if ENDBLOCK]><![endif]-->
+        <div class="text-center max-w-4xl mx-auto">
             
-            <div class="flex flex-col sm:flex-row gap-4">
-                <!--[if BLOCK]><![endif]-->                    <a href="/it/contatti"
-                       class="inline-flex items-center justify-center font-semibold rounded-lg bg-brand-green hover:bg-brand-green/90 text-white text-lg px-8 py-4 group shadow-xl transition-all hover:-translate-y-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
-                        Richiedi Consulenza
-                    </a>
-                <!--[if ENDBLOCK]><![endif]-->
-                <!--[if BLOCK]><![endif]-->                    <a href="/it/servizi"
-                       class="inline-flex items-center justify-center font-semibold rounded-lg bg-white/10 text-white hover:bg-white hover:text-brand-blue border border-white/30 text-lg px-8 py-4 backdrop-blur-sm transition-all shadow-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                        Scopri i Servizi
-                    </a>
-                <!--[if ENDBLOCK]><![endif]-->            </div>
-
+            <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+                Blog e Risorse
+            </h1>
             
-            <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->        </div>
-    </div>
-
-    
-    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-gray-50 to-transparent z-10"></div>
-</section>        <!--[if ENDBLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->            
-            <section id="servizi" class="py-20 bg-white scroll-mt-20">
-    <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">I Nostri Servizi</h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Soluzioni complete per la sicurezza e conformità del tuo studio</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!--[if BLOCK]><![endif]-->                        <div class="group bg-white border border-gray-100 border-t-brand-blue border-t-4 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                
-                <!--[if BLOCK]><![endif]-->                <div class="w-full h-48 bg-brand-blue/10 flex items-center justify-center">
-                    <!--[if BLOCK]><![endif]-->                                                <!--[if BLOCK]><![endif]-->                            <svg class="w-16 h-16 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
-</svg>                        <!--[if ENDBLOCK]><![endif]-->                    <!--[if ENDBLOCK]><![endif]-->                </div>
-                <!--[if ENDBLOCK]><![endif]-->
-                <div class="p-8">
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Autorizzazioni Sanitarie</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed text-sm">Supporto completo per ottenere e mantenere le autorizzazioni sanitarie necessarie per studi dentistici e cliniche veterinarie con apparecchiature radiologiche.</p>
-
-                    <a href="/it/servizi"
-                       class="inline-flex items-center text-brand-blue font-semibold text-sm hover:underline group-hover:translate-x-1 transform transition-all duration-300">
-                        Scopri di più
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                    </a>
-                </div>
-            </div>
-                                    <div class="group bg-white border border-gray-100 border-t-brand-green border-t-4 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                
-                <!--[if BLOCK]><![endif]-->                <div class="w-full h-48 bg-brand-green/10 flex items-center justify-center">
-                    <!--[if BLOCK]><![endif]-->                                                <!--[if BLOCK]><![endif]-->                            <!-- Fallback icon for invalid heroicon components -->
-                            <svg class="w-16 h-16 text-brand-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                        <!--[if ENDBLOCK]><![endif]-->                    <!--[if ENDBLOCK]><![endif]-->                </div>
-                <!--[if ENDBLOCK]><![endif]-->
-                <div class="p-8">
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Controllo Apparecchi RX ed Elettromedicali</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed text-sm">Verifiche periodiche di sicurezza e funzionalità su apparecchiature radiologiche (RX, OPT, CBCT) e dispositivi elettromedicali (IEC 62353).</p>
-
-                    <a href="/it/servizi"
-                       class="inline-flex items-center text-brand-green font-semibold text-sm hover:underline group-hover:translate-x-1 transform transition-all duration-300">
-                        Scopri di più
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                    </a>
-                </div>
-            </div>
-                                    <div class="group bg-white border border-gray-100 border-t-brand-orange border-t-4 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                
-                <!--[if BLOCK]><![endif]-->                <div class="w-full h-48 bg-brand-orange/10 flex items-center justify-center">
-                    <!--[if BLOCK]><![endif]-->                                                <!--[if BLOCK]><![endif]-->                            <!-- Fallback icon for invalid heroicon components -->
-                            <svg class="w-16 h-16 text-brand-orange" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                        <!--[if ENDBLOCK]><![endif]-->                    <!--[if ENDBLOCK]><![endif]-->                </div>
-                <!--[if ENDBLOCK]><![endif]-->
-                <div class="p-8">
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Documenti di Valutazione del Rischio</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed text-sm">Redazione e aggiornamento di tutti i documenti obbligatori: DVR, relazioni tecniche, nomine degli esperti di radioprotezione e registri di controllo.</p>
-
-                    <a href="/it/servizi"
-                       class="inline-flex items-center text-brand-orange font-semibold text-sm hover:underline group-hover:translate-x-1 transform transition-all duration-300">
-                        Scopri di più
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                    </a>
-                </div>
-            </div>
-            <!--[if ENDBLOCK]><![endif]-->        </div>
-    </div>
-</section>        <!--[if ENDBLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->            
-            <section class="py-20 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white scroll-mt-20">
-    <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-            <p class="text-sm font-semibold uppercase tracking-widest text-brand-green mb-3">Sicurezza e Compliance</p>
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Perché la Radioprotezione è Critica?</h2>
-            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Non è solo burocrazia: è la base per operare in sicurezza e legalità nel settore sanitario.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->        </div>
-    </div>
-</section>        <!--[if ENDBLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->            
-            <div id="settori" class="bg-white py-20 scroll-mt-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Header -->
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Settori di Specializzazione
-            </h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                Competenza verticale per esigenze specifiche
-            </p>
-        </div>
-
-        <!-- Sectors -->
-        <div class="space-y-16">
-            <!--[if BLOCK]><![endif]-->                        <div class="bg-gradient-to-br from-brand-blue/10 to-brand-blue/5 p-8 rounded-2xl border border-brand-blue/20">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <!-- Content -->
-                    <div class="order-1">
-                        <!--[if BLOCK]><![endif]-->                        <p class="text-sm font-semibold text-brand-blue uppercase tracking-wide mb-2">
-                            Precisione millimetrica per la diagnostica dentale
-                        </p>
-                        <!--[if ENDBLOCK]><![endif]-->                        
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4">
-                            Odontoiatria
-                        </h3>
+            
+                            <p class="text-xl text-purple-100 mb-8">
+                    Guide pratiche, aggiornamenti normativi e consigli per mantenere il tuo studio sempre conforme e sicuro
+                </p>
                         
-                        <p class="text-lg text-gray-600 mb-6">
-                            Gli studi dentistici richiedono controlli specifici per diverse tipologie di apparecchiature radiologiche, dalle RX endorali alle panoramiche e ai sistemi CBCT.
-                        </p>
-
-                        <!--[if BLOCK]><![endif]-->                        <ul class="space-y-4">
-                            <!--[if BLOCK]><![endif]-->                            <li class="flex items-start">
-                                <span class="w-2 h-2 bg-brand-blue rounded-full mt-2.5 mr-3 flex-shrink-0"></span>
-                                <span class="text-gray-700">
-                                    <strong>Radiografie Endorali - Verifica tubi radiogeni per RX periapicali e bitewing</strong>
-                                </span>
-                            </li>
-                                                        <li class="flex items-start">
-                                <span class="w-2 h-2 bg-brand-blue rounded-full mt-2.5 mr-3 flex-shrink-0"></span>
-                                <span class="text-gray-700">
-                                    <strong>Ortopantomografia (OPT) - Controllo qualità e sicurezza per panoramiche dentali</strong>
-                                </span>
-                            </li>
-                                                        <li class="flex items-start">
-                                <span class="w-2 h-2 bg-brand-blue rounded-full mt-2.5 mr-3 flex-shrink-0"></span>
-                                <span class="text-gray-700">
-                                    <strong>CBCT (Cone Beam) - Protocolli avanzati per tomografia computerizzata a fascio conico</strong>
-                                </span>
-                            </li>
-                            <!--[if ENDBLOCK]><![endif]-->                        </ul>
-                        <!--[if ENDBLOCK]><![endif]-->
-                        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->                    </div>
-
-                    <!-- Image -->
-                    <div class="order-2 lg:order-1">
-                        <div class="relative overflow-hidden rounded-2xl shadow-lg">
-                            <img src="/themes/Two/resources/images/medical-equipment.jpg"
-                                 alt="Odontoiatria"
-                                 class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
-                                 loading="lazy">
-                        </div>
-                    </div>
+            
+            <div class="max-w-2xl mx-auto mb-12">
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        placeholder="Cerca articoli..."
+                        class="w-full px-6 py-4 rounded-full text-gray-900 bg-white shadow-lg focus:outline-none focus:ring-4 focus:ring-purple-300 transition-all"
+                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="absolute right-6 top-1/2 -translate-y-1/2 w-6 h-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
                 </div>
             </div>
-                                    <div class="bg-gradient-to-br from-brand-green/10 to-brand-green/5 p-8 rounded-2xl border border-brand-green/20">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <!-- Content -->
-                    <div class="order-1 lg:order-2">
-                        <!--[if BLOCK]><![endif]-->                        <p class="text-sm font-semibold text-brand-green uppercase tracking-wide mb-2">
-                            Sicurezza adattata alle esigenze cliniche animali
-                        </p>
-                        <!--[if ENDBLOCK]><![endif]-->                        
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4">
-                            Medicina Veterinaria
-                        </h3>
-                        
-                        <p class="text-lg text-gray-600 mb-6">
-                            Le cliniche veterinarie richiedono protocolli specifici per la radiologia veterinaria, dai sistemi portatili alle apparecchiature fisse.
-                        </p>
-
-                        <!--[if BLOCK]><![endif]-->                        <ul class="space-y-4">
-                            <!--[if BLOCK]><![endif]-->                            <li class="flex items-start">
-                                <span class="w-2 h-2 bg-brand-green rounded-full mt-2.5 mr-3 flex-shrink-0"></span>
-                                <span class="text-gray-700">
-                                    <strong>Radiologia Digitale e Analogica - Controlli su sistemi RX fissi e portatili per animali</strong>
-                                </span>
-                            </li>
-                            <!--[if ENDBLOCK]><![endif]-->                        </ul>
-                        <!--[if ENDBLOCK]><![endif]-->
-                        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->                    </div>
-
-                    <!-- Image -->
-                    <div class="order-2">
-                        <div class="relative overflow-hidden rounded-2xl shadow-lg">
-                            <img src="/themes/Two/resources/images/veterinary-radiology.jpg"
-                                 alt="Medicina Veterinaria"
-                                 class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
-                                 loading="lazy">
-                        </div>
+            
+            
+                            <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+                                            <span class="inline-flex items-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-medium border border-white/30 hover:bg-white/30 transition-all cursor-pointer">
+                            <span class="w-2 h-2 rounded-full bg-blue-400 mr-2"></span>
+                            Dentistica
+                            <span class="ml-2 text-xs opacity-75">(18)</span>
+                        </span>
+                                            <span class="inline-flex items-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-medium border border-white/30 hover:bg-white/30 transition-all cursor-pointer">
+                            <span class="w-2 h-2 rounded-full bg-green-400 mr-2"></span>
+                            Veterinaria
+                            <span class="ml-2 text-xs opacity-75">(12)</span>
+                        </span>
+                                            <span class="inline-flex items-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-medium border border-white/30 hover:bg-white/30 transition-all cursor-pointer">
+                            <span class="w-2 h-2 rounded-full bg-orange-400 mr-2"></span>
+                            Normative
+                            <span class="ml-2 text-xs opacity-75">(15)</span>
+                        </span>
+                                            <span class="inline-flex items-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-medium border border-white/30 hover:bg-white/30 transition-all cursor-pointer">
+                            <span class="w-2 h-2 rounded-full bg-purple-400 mr-2"></span>
+                            Formazione
+                            <span class="ml-2 text-xs opacity-75">(8)</span>
+                        </span>
+                                    </div>
                     </div>
-                </div>
-            </div>
-            <!--[if ENDBLOCK]><![endif]-->        </div>
     </div>
-</div>        <!--[if ENDBLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->            
-            <section id="controlli" class="py-20 bg-gray-50 scroll-mt-20">
+</section>                                
+            <section class="py-20 bg-gray-50">
     <div class="container mx-auto px-4">
         
         <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Cosa Controlliamo?</h2>
-            <p class="text-lg text-gray-600 leading-relaxed mb-8 max-w-4xl mx-auto">Il nostro protocollo di verifica copre ogni aspetto della sicurezza radiologica. Dall&#039;efficienza delle macchine alla protezione strutturale, nulla viene lasciato al caso per garantire la totale conformità al D.Lgs 101/2020.</p>
-
-            <div class="bg-brand-orange/10 border-l-4 border-brand-orange p-6 rounded-r-xl max-w-3xl mx-auto text-left">
-                <h4 class="font-bold text-brand-orange mb-2">Perché è fondamentale?</h4>
-                <p class="text-gray-700 text-sm leading-relaxed">Un controllo accurato previene guasti, sovraesposizioni e sanzioni, proteggendo il tuo investimento e la tua reputazione professionale.</p>
-            </div>
-        </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Articoli in Evidenza</h2>
+                            <p class="text-xl text-gray-600 max-w-3xl mx-auto">I contenuti più richiesti e attuali della nostra community</p>
+                    </div>
 
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!--[if BLOCK]><![endif]-->                                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 ">
-                    <div class="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mb-6">
-                        <!--[if BLOCK]><![endif]-->                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
-                        <!--[if ENDBLOCK]><![endif]-->                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Dosimetria</h3>
-                    <p class="text-gray-600 leading-relaxed">Monitoraggio dell&#039;esposizione alle radiazioni per il personale esposto e l&#039;ambiente.</p>
-                </div>
-                                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 ">
-                    <div class="w-12 h-12 bg-brand-green rounded-lg flex items-center justify-center mb-6">
-                        <!--[if BLOCK]><![endif]-->                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                        <!--[if ENDBLOCK]><![endif]-->                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Schermature</h3>
-                    <p class="text-gray-600 leading-relaxed">Verifica dell&#039;adeguatezza delle barriere protettive e dei DPI (camici, collari).</p>
-                </div>
-                                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 ">
-                    <div class="w-12 h-12 bg-brand-orange rounded-lg flex items-center justify-center mb-6">
-                        <!--[if BLOCK]><![endif]-->                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                        <!--[if ENDBLOCK]><![endif]-->                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Apparecchiature Radiologiche</h3>
-                    <p class="text-gray-600 leading-relaxed">Controllo di costanza, tensione, corrente e tempi di esposizione dei generatori.</p>
-                </div>
-                                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 md:col-span-2 lg:col-span-2">
-                    <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-6">
-                        <!--[if BLOCK]><![endif]-->                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
-                        <!--[if ENDBLOCK]><![endif]-->                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Sistemi di Protezione</h3>
-                    <p class="text-gray-600 leading-relaxed">Test su segnaletica.</p>
-                </div>
-                                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 ">
-                    <div class="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center mb-6">
-                        <!--[if BLOCK]><![endif]-->                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                        <!--[if ENDBLOCK]><![endif]-->                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Documentazione e Registri</h3>
-                    <p class="text-gray-600 leading-relaxed">Audit sulla corretta tenuta della documentazione obbligatoria.</p>
-                </div>
-            <!--[if ENDBLOCK]><![endif]-->        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                                            
+                <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-[#1E5A96] group">
+                    
+                                            <div class="relative h-56 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=800&amp;q=80" 
+                                alt="Sicurezza negli Studi Dentistici: Guida Completa 2026"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                            >
+                            
+                                                            <span class="absolute top-4 left-4 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-[#1E5A96]">
+                                    Dentistica
+                                </span>
+                                                    </div>
+                                        
+                    
+                    <div class="p-6">
+                        
+                                                    <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-[#1E5A96] transition-colors">
+                                <a href="#">
+                                    Sicurezza negli Studi Dentistici: Guida Completa 2026
+                                </a>
+                            </h3>
+                                                
+                        
+                                                    <p class="text-gray-600 text-sm mb-4 line-clamp-3 leading-relaxed">
+                                Tutto quello che devi sapere per garantire la massima sicurezza nel tuo studio dentistico secondo le normative più recenti.
+                            </p>
+                                                
+                        
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                            <div class="flex items-center space-x-4">
+                                                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                            <line x1="16" x2="16" y1="2" y2="6"></line>
+                                            <line x1="8" x2="8" y1="2" y2="6"></line>
+                                            <line x1="3" x2="21" y1="10" y2="10"></line>
+                                        </svg>
+                                        1 Febbraio 2026
+                                    </span>
+                                                                                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12,6 12,12 16,14"></polyline>
+                                        </svg>
+                                        8 min lettura
+                                    </span>
+                                                            </div>
+                            
+                            <a href="#" class="inline-flex items-center text-[#2D8659] hover:text-[#1E5A96] font-semibold group-hover:translate-x-1 transition-all">
+                                Leggi
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                                            
+                <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-purple-600 group">
+                    
+                                            <div class="relative h-56 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1628009368231-7603352989c3?w=800&amp;q=80" 
+                                alt="Biosicurezza Veterinaria: Proteggi il Tuo Team e gli Animali"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                            >
+                            
+                                                            <span class="absolute top-4 left-4 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-purple-50 text-purple-600">
+                                    Veterinaria
+                                </span>
+                                                    </div>
+                                        
+                    
+                    <div class="p-6">
+                        
+                                                    <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-[#1E5A96] transition-colors">
+                                <a href="#">
+                                    Biosicurezza Veterinaria: Proteggi il Tuo Team e gli Animali
+                                </a>
+                            </h3>
+                                                
+                        
+                                                    <p class="text-gray-600 text-sm mb-4 line-clamp-3 leading-relaxed">
+                                Protocolli essenziali di biosicurezza per cliniche veterinarie che garantiscono la salute di staff e pazienti animali.
+                            </p>
+                                                
+                        
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                            <div class="flex items-center space-x-4">
+                                                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                            <line x1="16" x2="16" y1="2" y2="6"></line>
+                                            <line x1="8" x2="8" y1="2" y2="6"></line>
+                                            <line x1="3" x2="21" y1="10" y2="10"></line>
+                                        </svg>
+                                        28 Gennaio 2026
+                                    </span>
+                                                                                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12,6 12,12 16,14"></polyline>
+                                        </svg>
+                                        10 min lettura
+                                    </span>
+                                                            </div>
+                            
+                            <a href="#" class="inline-flex items-center text-[#2D8659] hover:text-[#1E5A96] font-semibold group-hover:translate-x-1 transition-all">
+                                Leggi
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                                            
+                <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-[#1E5A96] group">
+                    
+                                            <div class="relative h-56 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&amp;q=80" 
+                                alt="Normative ATECO 74.99.21: Cosa Devi Sapere"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                            >
+                            
+                                                            <span class="absolute top-4 left-4 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-[#1E5A96]">
+                                    Normative
+                                </span>
+                                                    </div>
+                                        
+                    
+                    <div class="p-6">
+                        
+                                                    <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-[#1E5A96] transition-colors">
+                                <a href="#">
+                                    Normative ATECO 74.99.21: Cosa Devi Sapere
+                                </a>
+                            </h3>
+                                                
+                        
+                                                    <p class="text-gray-600 text-sm mb-4 line-clamp-3 leading-relaxed">
+                                Analisi dettagliata delle normative ATECO 74.99.21 per studi dentistici e veterinari. Cosa cambia e come adeguarsi.
+                            </p>
+                                                
+                        
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                            <div class="flex items-center space-x-4">
+                                                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                            <line x1="16" x2="16" y1="2" y2="6"></line>
+                                            <line x1="8" x2="8" y1="2" y2="6"></line>
+                                            <line x1="3" x2="21" y1="10" y2="10"></line>
+                                        </svg>
+                                        20 Gennaio 2026
+                                    </span>
+                                                                                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12,6 12,12 16,14"></polyline>
+                                        </svg>
+                                        6 min lettura
+                                    </span>
+                                                            </div>
+                            
+                            <a href="#" class="inline-flex items-center text-[#2D8659] hover:text-[#1E5A96] font-semibold group-hover:translate-x-1 transition-all">
+                                Leggi
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                    </div>
+        
+        
+                    <div class="text-center mt-12">
+                <a href="/it/pages/blog" class="inline-flex items-center justify-center bg-[#1E5A96] hover:bg-[#164575] text-white text-lg px-8 py-4 rounded-lg font-semibold shadow-lg transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    Vedi Tutti gli Articoli
+                </a>
+            </div>
+            </div>
+</section>                                
+            <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Tutti gli Articoli</h2>
+                            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Esplora la nostra raccolta di guide, aggiornamenti e approfondimenti</p>
+                    </div>
+
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                                            
+                <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-[#E67E22] group">
+                    
+                                            <div class="relative h-56 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&amp;q=80" 
+                                alt="Manutenzione Elettromedicali: IEC 62353 Spiegato Semplice"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                            >
+                            
+                                                            <span class="absolute top-4 left-4 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-orange-50 text-[#E67E22]">
+                                    Elettromedicali
+                                </span>
+                                                    </div>
+                                        
+                    
+                    <div class="p-6">
+                        
+                                                    <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-[#1E5A96] transition-colors">
+                                <a href="#">
+                                    Manutenzione Elettromedicali: IEC 62353 Spiegato Semplice
+                                </a>
+                            </h3>
+                                                
+                        
+                                                    <p class="text-gray-600 text-sm mb-4 line-clamp-3 leading-relaxed">
+                                Comprendi la normativa IEC 62353 per la sicurezza elettrica dei dispositivi medici.
+                            </p>
+                                                
+                        
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                            <div class="flex items-center space-x-4">
+                                                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                            <line x1="16" x2="16" y1="2" y2="6"></line>
+                                            <line x1="8" x2="8" y1="2" y2="6"></line>
+                                            <line x1="3" x2="21" y1="10" y2="10"></line>
+                                        </svg>
+                                        1 Febbraio 2026
+                                    </span>
+                                                                                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12,6 12,12 16,14"></polyline>
+                                        </svg>
+                                        6 min lettura
+                                    </span>
+                                                            </div>
+                            
+                            <a href="#" class="inline-flex items-center text-[#2D8659] hover:text-[#1E5A96] font-semibold group-hover:translate-x-1 transition-all">
+                                Leggi
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                                            
+                <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-purple-600 group">
+                    
+                                            <div class="relative h-56 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=800&amp;q=80" 
+                                alt="Sicurezza negli Studi Veterinari: Guida Completa 2026"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                            >
+                            
+                                                            <span class="absolute top-4 left-4 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-purple-50 text-purple-600">
+                                    Veterinaria
+                                </span>
+                                                    </div>
+                                        
+                    
+                    <div class="p-6">
+                        
+                                                    <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-[#1E5A96] transition-colors">
+                                <a href="#">
+                                    Sicurezza negli Studi Veterinari: Guida Completa 2026
+                                </a>
+                            </h3>
+                                                
+                        
+                                                    <p class="text-gray-600 text-sm mb-4 line-clamp-3 leading-relaxed">
+                                Tutto quello che devi sapere per garantire la massima sicurezza nel tuo studio veterinario.
+                            </p>
+                                                
+                        
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                            <div class="flex items-center space-x-4">
+                                                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                            <line x1="16" x2="16" y1="2" y2="6"></line>
+                                            <line x1="8" x2="8" y1="2" y2="6"></line>
+                                            <line x1="3" x2="21" y1="10" y2="10"></line>
+                                        </svg>
+                                        18 Gennaio 2026
+                                    </span>
+                                                                                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12,6 12,12 16,14"></polyline>
+                                        </svg>
+                                        7 min lettura
+                                    </span>
+                                                            </div>
+                            
+                            <a href="#" class="inline-flex items-center text-[#2D8659] hover:text-[#1E5A96] font-semibold group-hover:translate-x-1 transition-all">
+                                Leggi
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                                            
+                <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-[#1E5A96] group">
+                    
+                                            <div class="relative h-56 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1515372039744-b8e02a90ae80?w=800&amp;q=80" 
+                                alt="Formazione Obbligatoria: Scadenze e Novità 2026"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                            >
+                            
+                                                            <span class="absolute top-4 left-4 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-[#1E5A96]">
+                                    Formazione
+                                </span>
+                                                    </div>
+                                        
+                    
+                    <div class="p-6">
+                        
+                                                    <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-[#1E5A96] transition-colors">
+                                <a href="#">
+                                    Formazione Obbligatoria: Scadenze e Novità 2026
+                                </a>
+                            </h3>
+                                                
+                        
+                                                    <p class="text-gray-600 text-sm mb-4 line-clamp-3 leading-relaxed">
+                                Aggiornamenti sulla formazione obbligatoria per operatori sanitari.
+                            </p>
+                                                
+                        
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                            <div class="flex items-center space-x-4">
+                                                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                            <line x1="16" x2="16" y1="2" y2="6"></line>
+                                            <line x1="8" x2="8" y1="2" y2="6"></line>
+                                            <line x1="3" x2="21" y1="10" y2="10"></line>
+                                        </svg>
+                                        12 Gennaio 2026
+                                    </span>
+                                                                                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12,6 12,12 16,14"></polyline>
+                                        </svg>
+                                        8 min lettura
+                                    </span>
+                                                            </div>
+                            
+                            <a href="#" class="inline-flex items-center text-[#2D8659] hover:text-[#1E5A96] font-semibold group-hover:translate-x-1 transition-all">
+                                Leggi
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                    </div>
+        
+        
+                    <div class="text-center mt-12">
+                <a href="/it/pages/blog" class="inline-flex items-center justify-center bg-[#1E5A96] hover:bg-[#164575] text-white text-lg px-8 py-4 rounded-lg font-semibold shadow-lg transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    Vedi Tutti gli Articoli
+                </a>
+            </div>
+            </div>
+</section>                                
+            <section class="py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-br from-[#1e3a5f] via-[#1a5a6f] to-emerald-700 rounded-3xl p-10 lg:p-16 text-center text-white shadow-xl">
+            
+            <div class="w-16 h-16 mx-auto mb-6 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-sm">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+                </svg>
+            </div>
+
+                            <h2 class="text-3xl lg:text-4xl font-bold mb-4">Rimani Aggiornato</h2>
+            
+                            <p class="text-lg text-white/80 mb-8 max-w-2xl mx-auto">Iscriviti alla newsletter per ricevere gli ultimi articoli e aggiornamenti normativi</p>
+            
+            <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" @submit.prevent>
+                <input type="email"
+                       placeholder="La tua email professionale"
+                       class="flex-1 px-5 py-4 rounded-xl bg-white border-0 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E67E22] text-base shadow-inner"
+                       required>
+                <button type="submit"
+                        class="px-8 py-4 bg-[#E67E22] hover:bg-[#d35400] text-white rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 whitespace-nowrap shadow-lg">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>
+                    Iscriviti Ora
+                </button>
+            </form>
+
+                            <p class="text-sm text-white/50 mt-5">Rispettiamo la tua privacy. Puoi cancellarti in qualsiasi momento.</p>
+                    </div>
     </div>
-</section>        <!--[if ENDBLOCK]><![endif]-->            <!--[if BLOCK]><![endif]-->            
-                    <!--[if ENDBLOCK]><![endif]-->    <!--[if ENDBLOCK]><![endif]--></div>    </div>
-<!--[if ENDBLOCK]><![endif]-->    </div>
+</section>            </div>    </div>
+    </div>
    
     <footer class="text-white relative overflow-hidden" style="background: linear-gradient(135deg, #1E5A96 0%, #164575 50%, #0d2d4d 100%);">
     <div class="container mx-auto px-6 py-12 lg:py-16">
@@ -999,7 +1222,7 @@
 </footer>
 
         <!-- Livewire Scripts -->
-<script src="https://sottana.net/vendor/livewire/livewire.js?id=cfc5c1ae"   data-csrf="44qrETnIXyvDr0urI8XMqQeegkbPQyTPgEf2c9qs" data-module-url="https://sottana.net/livewire-1483a163" data-update-uri="https://sottana.net/livewire-1483a163/update" data-navigate-once="true"></script>
+<script src="https://sottana.net/vendor/livewire/livewire.js?id=cfc5c1ae"   data-csrf="V1jCqtsbbSZAhqzaBedYsWnuyvqwAWHNPjLTOua1" data-module-url="https://sottana.net/livewire-1483a163" data-update-uri="https://sottana.net/livewire-1483a163/update" data-navigate-once="true"></script>
         <script>
         window.filamentData = []    </script>
 
@@ -1165,6 +1388,5 @@
 
 <div class="lcc-backdrop js-lcc-backdrop" style="display: none"></div>
 <script type="text/javascript" src="https://sottana.net/vendor/cookie-consent/js/cookie-consent.js"></script>
-
 </body>
 </html>

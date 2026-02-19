@@ -56,8 +56,13 @@ Il file `docs/pagespeed-frontoffice-urls.txt` (in root progetto) contiene un URL
 - **Best Practices**: obiettivo ≥ 90.
 - **SEO**: obiettivo ≥ 90.
 
+## Validazione a fondo
+
+Per markup (W3C), incolla HTML, script automatico, axe-core e uso MCP: [Validazione frontoffice a fondo](validation-in-depth.md).
+
 ## Collegamenti
 
+- [Validazione a fondo (W3C, axe, MCP)](validation-in-depth.md)
 - [Deployment e validazione](./deployment-and-validation.md)
 - [WCAG compliance plan](./wcag-compliance-plan.md)
 - [Validazione MAUVE](./mauve-accessibility-validation.md)

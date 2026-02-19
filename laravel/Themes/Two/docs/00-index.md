@@ -11,6 +11,7 @@
 4. [Map Integration](./map-integration.md) - Map implementation
 5. [Map Free Rules](./map-free-rules.md) - ✅ Regola FREE ONLY per mappe
 6. [PageSpeed frontoffice](./pagespeed-frontoffice-validation.md) - Validazione performance/accessibilità su pagespeed.web.dev
+7. [Validazione a fondo](./validation-in-depth.md) - W3C, incolla HTML, script, axe-core, MCP
 
 ### 🎨 Theme Characteristics
 - **Style**: Professional medical/radioprotection design
