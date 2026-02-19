@@ -111,6 +111,11 @@ The application is built using Nwidart Laravel Modules package with the followin
 - `vendor/bin/phpstan analyse` - Run PHPStan static analysis
 - `php artisan module:make-command CommandName ModuleName` - Create new module command
 
+### Deployment e validazione (sottana.net)
+- Sito in produzione: https://sottana.net
+- Push su branch `master` attiva l’auto-deploy
+- Dopo modifiche: verificare su produzione le pagine coinvolte (es. [deployment-and-validation.md](deployment-and-validation.md))
+
 ## 🔍 Pre-Implementation Checklist
 
 **Before ANY Filament implementation:**

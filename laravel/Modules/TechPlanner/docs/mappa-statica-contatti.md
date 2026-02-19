@@ -6,7 +6,12 @@ Implementare mappa statica cliccabile nella pagina contatti che apre Google Maps
 ## Indirizzo
 **Via Vanzo 86/A, 31021 Mogliano Veneto TV**
 - Coordinate: 45.5633, 12.2506 (calcolate con Nominatim/OpenStreetMap)
-- Zoom consigliato: 15
+- Zoom consigliato: 17-18 per screenshot
+
+## Validazione produzione
+- Sito live: https://sottana.net
+- Pagina contatti: https://sottana.net/it/contatti
+- Verificare mappa e link "Ottieni Indicazioni" dopo deploy (push su `master` = auto-deploy)
 
 ## Immagine Mappa
 
