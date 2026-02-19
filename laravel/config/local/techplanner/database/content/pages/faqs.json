@@ -46,12 +46,12 @@
                     "faqs": [
                         {
                             "question": "Qual è la frequenza obbligatoria per i controlli di radioprotezione?",
-                            "answer": "La frequenza dei controlli dipende dal tipo di apparecchiatura e dall'utilizzo: Controlli di costanza: Annuali per apparecchiature radiologiche fisse; Verifiche straordinarie: Dopo riparazioni o modifiche tecniche; Controlli dosimetrici: Trimestrali per personale esposto; Verifica schermature: Ogni 5 anni o dopo modifiche strutturali.",
+                            "answer": "La frequenza dei controlli dipende dal tipo di apparecchiatura e dall'utilizzo: Controlli di costanza: Annuali per apparecchiature radiologiche fisse; Verifica schermature: Ogni 5 anni o dopo modifiche strutturali.",
                             "category": "radioprotezione"
                         },
                         {
-                            "question": "Chi è l'Esperto Qualificato e quando è obbligatorio nominarlo?",
-                            "answer": "L'Esperto Qualificato (EQ) è un professionista con competenze specifiche in radioprotezione, iscritto nell'elenco nazionale del Ministero della Salute. È obbligatorio nominare un EQ quando sono presenti apparecchiature radiologiche (RX, OPT, CBCT) o l'attività implica rischio di esposizione a radiazioni ionizzanti.",
+                            "question": "Chi è l'Esperto di radioprotezione e quando è obbligatorio nominarlo?",
+                            "answer": "L'Esperto di radioprotezione è un professionista con competenze specifiche in radioprotezione, iscritto nell'elenco nazionale del Ministero della Salute. È obbligatorio nominarlo quando sono presenti apparecchiature radiologiche (RX, OPT, CBCT) o l'attività implica rischio di esposizione a radiazioni ionizzanti.",
                             "category": "generali"
                         },
                         {

@@ -1,8 +1,8 @@
 {
     "id": "4",
     "title": {
-        "it": "Contatti - Marco Sottana Consulenza Sicurezza",
-        "en": "Contacts - Marco Sottana Safety Consulting"
+        "it": "Contatti - Sottana Service",
+        "en": "Contacts - Sottana Service"
     },
     "slug": "contacts",
     "middleware": null,
@@ -18,11 +18,11 @@
                     "subtitle": "Siamo a tua disposizione per qualsiasi esigenza di radioprotezione, elettromedicali e consulenza tecnica per studi dentistici e cliniche veterinarie",
                     "primary_cta": {
                         "label": "Chiama Ora",
-                        "url": "tel:+39 XXX XXX XXXX"
+                        "url": "tel:+39041455552"
                     },
                     "secondary_cta": {
                         "label": "Invia Email",
-                        "url": "mailto:info@marcosottana.it"
+                        "url": "mailto:studio@sottana.com"
                     }
                 }
             },
@@ -37,18 +37,28 @@
                             "type": "phone",
                             "title": "Telefono",
                             "description": "Chiamaci per assistenza immediata",
-                            "value": "+39 XXX XXX XXXX",
-                            "url": "tel:+39XXXXXXXXXX",
+                            "value": "+39 041 455552",
+                            "url": "tel:+39041455552",
                             "hours": "Lun-Ven: 9:00-18:00",
                             "icon": "phone",
                             "color": "emerald"
                         },
                         {
+                            "type": "phone",
+                            "title": "Cellulare",
+                            "description": "Chiama o WhatsApp",
+                            "value": "+39 347 58 96 127",
+                            "url": "tel:+393475896127",
+                            "hours": "Lun-Ven: 9:00-18:00",
+                            "icon": "phone",
+                            "color": "green"
+                        },
+                        {
                             "type": "email",
                             "title": "Email",
                             "description": "Invia le tue richieste via email",
-                            "value": "info@marcosottana.it",
-                            "url": "mailto:info@marcosottana.it",
+                            "value": "studio@sottana.com",
+                            "url": "mailto:studio@sottana.com",
                             "hours": "Risposta entro 24 ore",
                             "icon": "email",
                             "color": "teal"
@@ -125,14 +135,38 @@
                             "required": true,
                             "width": "full",
                             "options": [
-                                {"value": "radioprotezione", "label": "Controllo Radioprotezione"},
-                                {"value": "elettromedicali", "label": "Controllo Elettromedicali"},
-                                {"value": "documentazione", "label": "Documentazione e Conformità"},
-                                {"value": "consulenza", "label": "Consulenza Generale"},
-                                {"value": "formazione", "label": "Formazione del Personale"},
-                                {"value": "veterinario", "label": "Servizi Veterinari"},
-                                {"value": "dentistico", "label": "Servizi Dentistici"},
-                                {"value": "altro", "label": "Altro"}
+                                {
+                                    "value": "radioprotezione",
+                                    "label": "Controllo Radioprotezione"
+                                },
+                                {
+                                    "value": "elettromedicali",
+                                    "label": "Controllo Elettromedicali"
+                                },
+                                {
+                                    "value": "documentazione",
+                                    "label": "Documentazione e Conformità"
+                                },
+                                {
+                                    "value": "consulenza",
+                                    "label": "Consulenza Generale"
+                                },
+                                {
+                                    "value": "formazione",
+                                    "label": "Formazione del Personale"
+                                },
+                                {
+                                    "value": "veterinario",
+                                    "label": "Servizi Veterinari"
+                                },
+                                {
+                                    "value": "dentistico",
+                                    "label": "Servizi Dentistici"
+                                },
+                                {
+                                    "value": "altro",
+                                    "label": "Altro"
+                                }
                             ]
                         },
                         {
@@ -186,7 +220,7 @@
                     "details": [
                         {
                             "label": "Ragione Sociale",
-                            "value": "Marco Sottana - Consulenza Sicurezza"
+                            "value": "Sottana Service"
                         },
                         {
                             "label": "Partita IVA",
@@ -202,35 +236,6 @@
                         }
                     ]
                 }
-            },
-            {
-                "type": "social-links",
-                "slug": "social-media",
-                "data": {
-                    "view": "pub_theme::components.blocks.contact.social",
-                    "title": "Seguici sui Social",
-                    "description": "Rimani aggiornato su normative, novità e consigli pratici per la sicurezza del tuo studio",
-                    "platforms": [
-                        {
-                            "name": "LinkedIn",
-                            "url": "https://linkedin.com/in/marcosottana",
-                            "icon": "linkedin",
-                            "color": "blue"
-                        },
-                        {
-                            "name": "Facebook",
-                            "url": "https://facebook.com/marcosottana",
-                            "icon": "facebook",
-                            "color": "blue"
-                        },
-                        {
-                            "name": "Instagram",
-                            "url": "https://instagram.com/marcosottana",
-                            "icon": "instagram",
-                            "color": "pink"
-                        }
-                    ]
-                }
             }
         ],
         "en": [
@@ -243,11 +248,11 @@
                     "subtitle": "We are available for any radiation protection, electromedical and technical consulting needs for dental practices and veterinary clinics",
                     "primary_cta": {
                         "label": "Call Now",
-                        "url": "tel:+39 XXX XXX XXXX"
+                        "url": "tel:+39041455552"
                     },
                     "secondary_cta": {
                         "label": "Send Email",
-                        "url": "mailto:info@marcosottana.it"
+                        "url": "mailto:studio@sottana.com"
                     }
                 }
             },
@@ -262,18 +267,28 @@
                             "type": "phone",
                             "title": "Phone",
                             "description": "Call us for immediate assistance",
-                            "value": "+39 XXX XXX XXXX",
-                            "url": "tel:+39XXXXXXXXXX",
+                            "value": "+39 041 455552",
+                            "url": "tel:+39041455552",
                             "hours": "Mon-Fri: 9:00-18:00",
                             "icon": "phone",
                             "color": "emerald"
                         },
                         {
+                            "type": "phone",
+                            "title": "Mobile",
+                            "description": "Call or WhatsApp",
+                            "value": "+39 347 58 96 127",
+                            "url": "tel:+393475896127",
+                            "hours": "Mon-Fri: 9:00-18:00",
+                            "icon": "phone",
+                            "color": "green"
+                        },
+                        {
                             "type": "email",
                             "title": "Email",
                             "description": "Send your requests via email",
-                            "value": "info@marcosottana.it",
-                            "url": "mailto:info@marcosottana.it",
+                            "value": "studio@sottana.com",
+                            "url": "mailto:studio@sottana.com",
                             "hours": "Response within 24 hours",
                             "icon": "email",
                             "color": "teal"

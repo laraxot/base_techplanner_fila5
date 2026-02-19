@@ -1,8 +1,8 @@
 {
     "id": "2",
     "title": {
-        "it": "Servizi - Marco Sottana Consulenza Sicurezza",
-        "en": "Services - Marco Sottana Safety Consulting"
+        "it": "Servizi - Sottana Service",
+        "en": "Services - Sottana Service"
     },
     "slug": "services",
     "middleware": null,
@@ -14,7 +14,7 @@
                 "slug": "services-hero",
                 "data": {
                     "view": "pub_theme::components.blocks.hero.internal",
-                    "title": "Servizi di Consulenza Specializzata",
+                    "title": "Autorizzazioni Sanitarie, Controllo Apparecchi RX ed Elettromedicali, Documenti di Valutazione del Rischio",
                     "subtitle": "Soluzioni complete per garantire la massima sicurezza, igiene e conformità normativa nel tuo studio dentistico o clinica veterinaria",
                     "breadcrumb_label": "Servizi"
                 }
@@ -26,39 +26,21 @@
                     "view": "pub_theme::components.blocks.services.cards-image",
                     "services": [
                         {
-                            "title": "Protocolli di Sicurezza Pazienti",
-                            "description": "Implementazione di protocolli avanzati per garantire la sicurezza dei pazienti in studi dentistici e veterinari.",
-                            "image": "https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=600&h=400&fit=crop",
-                            "url": "/it/contatti"
-                        },
-                        {
-                            "title": "Formazione Igiene Personale",
-                            "description": "Programmi di formazione completi per il personale su pratiche igieniche e protocolli di sicurezza.",
-                            "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop",
-                            "url": "/it/contatti"
-                        },
-                        {
-                            "title": "Sterilizzazione Attrezzature",
-                            "description": "Procedure certificate per la sterilizzazione e la manutenzione delle attrezzature mediche.",
-                            "image": "https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=600&h=400&fit=crop",
-                            "url": "/it/contatti"
-                        },
-                        {
-                            "title": "Gestione Rifiuti Sanitari",
-                            "description": "Soluzioni complete per la gestione e lo smaltimento conforme dei rifiuti sanitari.",
-                            "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop",
-                            "url": "/it/contatti"
-                        },
-                        {
-                            "title": "Conformità Normativa",
-                            "description": "Audit completi e supporto per mantenere la conformità con tutte le normative vigenti.",
+                            "title": "Autorizzazioni Sanitarie",
+                            "description": "Assistenza completa per l'ottenimento e il rinnovo delle autorizzazioni sanitarie per studi dentistici e cliniche veterinarie con apparecchiature radiologiche.",
                             "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&h=400&fit=crop",
                             "url": "/it/contatti"
                         },
                         {
-                            "title": "Biosicurezza Veterinaria",
-                            "description": "Protocolli specializzati per la biosicurezza nelle cliniche veterinarie e benessere animale.",
-                            "image": "https://images.unsplash.com/photo-1682001370529-878ec33a474f?w=600&h=400&fit=crop",
+                            "title": "Controllo Apparecchi RX ed Elettromedicali",
+                            "description": "Verifiche periodiche di sicurezza su apparecchiature radiologiche (RX endorale, OPT, CBCT) e dispositivi elettromedicali secondo IEC 62353.",
+                            "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop",
+                            "url": "/it/contatti"
+                        },
+                        {
+                            "title": "Documenti di Valutazione del Rischio",
+                            "description": "Redazione di DVR, relazioni tecniche, nomine degli esperti di radioprotezione e tutta la documentazione obbligatoria per la conformità normativa.",
+                            "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop",
                             "url": "/it/contatti"
                         }
                     ]
@@ -89,30 +71,6 @@
                 }
             },
             {
-                "type": "sector-detail",
-                "slug": "sector-veterinaria",
-                "data": {
-                    "view": "pub_theme::components.blocks.sectors.detail",
-                    "title": "Medicina Veterinaria",
-                    "sector_subtitle": "Consulenza Specializzata per Cliniche Veterinarie",
-                    "description": "Le cliniche veterinarie richiedono protocolli di biosicurezza rigorosi per proteggere il personale, gli animali e prevenire la diffusione di zoonosi. La nostra esperienza garantisce sicurezza a 360 gradi.",
-                    "focus_areas": [
-                        "Protocolli di biosicurezza e controllo infezioni",
-                        "Gestione zoonosi e protezione personale",
-                        "Smaltimento rifiuti biologici veterinari",
-                        "Sicurezza in sala operatoria veterinaria",
-                        "Benessere animale e gestione stress",
-                        "Formazione su gestione animali aggressivi"
-                    ],
-                    "compliance_text": "Conformità con normative veterinarie regionali e nazionali, linee guida FNOVI, protocolli di biosicurezza certificati, registri sanitari completi.",
-                    "cta_label": "Consulenza per Cliniche Veterinarie",
-                    "cta_url": "/it/contatti",
-                    "image": "https://images.unsplash.com/photo-1682001370529-878ec33a474f?w=800&h=600&fit=crop",
-                    "reversed": true,
-                    "bg": "bg-gray-50"
-                }
-            },
-            {
                 "type": "cta-banner",
                 "slug": "services-cta",
                 "data": {
@@ -130,8 +88,8 @@
                 "slug": "services-hero",
                 "data": {
                     "view": "pub_theme::components.blocks.hero.internal",
-                    "title": "Specialized Consulting Services",
-                    "subtitle": "Complete solutions to ensure maximum safety, hygiene and regulatory compliance in your dental or veterinary clinic",
+                    "title": "Sanitary Authorizations, RX and Electromedical Equipment Control, Risk Assessment Documents",
+                    "subtitle": "Complete solutions to ensure maximum safety, hygiene and regulatory compliance in your dental or veterinary practice",
                     "breadcrumb_label": "Services"
                 }
             },
@@ -142,39 +100,21 @@
                     "view": "pub_theme::components.blocks.services.cards-image",
                     "services": [
                         {
-                            "title": "Patient Safety Protocols",
-                            "description": "Implementation of advanced protocols to ensure patient safety in dental and veterinary clinics.",
-                            "image": "https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=600&h=400&fit=crop",
-                            "url": "/en/contact"
-                        },
-                        {
-                            "title": "Staff Hygiene Training",
-                            "description": "Comprehensive training programs for staff on hygiene practices and safety protocols.",
-                            "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop",
-                            "url": "/en/contact"
-                        },
-                        {
-                            "title": "Equipment Sterilization",
-                            "description": "Certified procedures for the sterilization and maintenance of medical equipment.",
-                            "image": "https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=600&h=400&fit=crop",
-                            "url": "/en/contact"
-                        },
-                        {
-                            "title": "Medical Waste Management",
-                            "description": "Complete solutions for compliant management and disposal of medical waste.",
-                            "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop",
-                            "url": "/en/contact"
-                        },
-                        {
-                            "title": "Regulatory Compliance",
-                            "description": "Complete audits and support to maintain compliance with all current regulations.",
+                            "title": "Sanitary Authorizations",
+                            "description": "Full assistance for obtaining and renewing sanitary authorizations for dental practices and veterinary clinics with radiological equipment.",
                             "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&h=400&fit=crop",
                             "url": "/en/contact"
                         },
                         {
-                            "title": "Veterinary Biosafety",
-                            "description": "Specialized protocols for biosafety in veterinary clinics and animal welfare.",
-                            "image": "https://images.unsplash.com/photo-1682001370529-878ec33a474f?w=600&h=400&fit=crop",
+                            "title": "RX and Electromedical Equipment Control",
+                            "description": "Periodic safety checks on radiological equipment (intraoral RX, OPT, CBCT) and electromedical devices according to IEC 62353.",
+                            "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop",
+                            "url": "/en/contact"
+                        },
+                        {
+                            "title": "Risk Assessment Documents",
+                            "description": "Drafting of DVR, technical reports, appointments of radiation protection experts and all mandatory documentation for regulatory compliance.",
+                            "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop",
                             "url": "/en/contact"
                         }
                     ]

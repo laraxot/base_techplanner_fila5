@@ -4,8 +4,7 @@ declare(strict_types=1);
 
 return [
     'brand' => [
-        'name' => 'Marco Sottana',
-        'subtitle' => 'Consulenza Sicurezza',
+        'name' => 'Sottana Service',
     ],
     'navigation' => [
         'home' => 'Home',

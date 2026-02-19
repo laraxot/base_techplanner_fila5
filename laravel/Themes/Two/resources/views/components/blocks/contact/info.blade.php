@@ -28,8 +28,25 @@
                         </div>
                         <div>
                             <h3 class="font-semibold text-gray-900">Telefono</h3>
-                            <a href="tel:{{ $info['phone'] }}" class="text-blue-600 hover:text-blue-700">
+                            <a href="tel:{{ str_replace(' ', '', $info['phone']) }}" class="text-blue-600 hover:text-blue-700">
                                 {{ $info['phone'] }}
+                            </a>
+                        </div>
+                    </div>
+                @endif
+
+                {{-- Mobile Phone --}}
+                @if(!empty($info['phone_mobile']))
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Cellulare / WhatsApp</h3>
+                            <a href="tel:{{ str_replace(' ', '', $info['phone_mobile']) }}" class="text-blue-600 hover:text-blue-700">
+                                {{ $info['phone_mobile'] }}
                             </a>
                         </div>
                     </div>
@@ -108,15 +125,16 @@
                 @endif
             </div>
 
-            {{-- Map Preview --}}
+            {{-- Map Preview (OpenStreetMap) --}}
             <div class="bg-gray-200 rounded-lg overflow-hidden h-96 flex items-center justify-center">
                 @if(!empty($coordinates) && !empty($address))
+                    @php $encodedAddress = urlencode($address); @endphp
                     <iframe
                         width="100%"
                         height="100%"
                         frameborder="0"
                         style="border:0"
-                        src="https://www.google.com/maps?q={{ urlencode($address) }}&output=embed"
+                        src="https://nominatim.openstreetmap.org/search?format=iframe&q={{ $encodedAddress }}"
                         allowfullscreen>
                     </iframe>
                 @else

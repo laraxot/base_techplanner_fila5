@@ -79,7 +79,7 @@
                             id="telefono"
                             {{ $phoneField['required'] ?? false ? 'required' : '' }}
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                            placeholder="{{ $phoneField['placeholder'] ?? '+39 XXX XXX XXXX' }}"
+                            placeholder="{{ $phoneField['placeholder'] ?? '+39 347 58 96 127' }}"
                         >
                     </div>
                 @endif

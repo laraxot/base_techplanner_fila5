@@ -1,6 +1,6 @@
 @props([
-    'brand' => 'Marco Sottana',
-    'brand_subtitle' => 'Consulenza Sicurezza',
+    'brand' => 'Sottana Service',
+    'brand_subtitle' => '',
     'items' => [],
     'cta_label' => 'Richiedi Consulenza',
     'cta_url' => '/contatti',
@@ -15,6 +15,24 @@
         <div class="flex items-center justify-between">
             {{-- Logo --}}
             <a href="/{{ app()->getLocale() }}" class="flex items-center space-x-2 group">
+                <svg class="w-9 h-9 md:w-10 md:h-10 transition-colors duration-300 shrink-0"
+                     :class="scrolled ? 'text-[#1E5A96]' : 'text-white'"
+                     viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" focusable="false">
+                    <g transform="translate(100 0) scale(-1 1)">
+                        <ellipse cx="45" cy="60" rx="25" ry="20" fill="currentColor" opacity="0.9"/>
+                        <ellipse cx="30" cy="50" rx="18" ry="22" fill="currentColor"/>
+                        <path d="M 12 50 Q 5 45 3 40 Q 2 35 4 30 Q 6 25 10 28 Q 12 30 12 35 Q 12 40 14 45 Q 15 48 12 50 Z" fill="currentColor"/>
+                        <ellipse cx="20" cy="40" rx="12" ry="15" fill="currentColor" opacity="0.7"/>
+                        <circle cx="25" cy="48" r="3" fill="white"/>
+                        <circle cx="25" cy="48" r="1.5" fill="currentColor"/>
+                        <path d="M 8 45 L 5 35 L 8 40 Z" fill="currentColor" opacity="0.8"/>
+                        <ellipse cx="35" cy="75" rx="6" ry="8" fill="currentColor"/>
+                        <ellipse cx="55" cy="75" rx="6" ry="8" fill="currentColor"/>
+                        <path d="M 68 60 Q 75 55 78 50" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+                        <circle cx="78" cy="50" r="2" fill="currentColor"/>
+                    </g>
+                </svg>
                 <div class="font-bold text-xl transition-colors duration-300"
                      :class="scrolled ? 'text-[#1E5A96]' : 'text-white'">
                     <span class="block">{{ $brand }}</span>
