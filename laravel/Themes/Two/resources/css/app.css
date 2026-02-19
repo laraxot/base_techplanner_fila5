@@ -101,3 +101,136 @@
 @import '../../../../vendor/filament/widgets/resources/css/index.css';
 
 @variant dark (&:where(.dark, .dark *));
+
+/* WCAG 2.1 AA Accessibility Improvements */
+
+/* Screen reader only content */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.sr-only:focus,
+.focus\:not-sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+
+/* Enhanced Focus Indicators for WCAG 2.1 AA compliance */
+:where(a, button, input, select, textarea, summary, [tabindex]:not([tabindex="-1"])):focus-visible {
+    outline: 3px solid #1E5A96 !important;
+    outline-offset: 3px !important;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0 2px rgba(30, 90, 150, 0.3) !important;
+}
+
+/* Ensure focus is never completely removed */
+*:focus {
+    outline: none;
+}
+
+*:focus-visible {
+    outline: 3px solid #1E5A96 !important;
+    outline-offset: 3px !important;
+}
+
+/* Ensure minimum touch target size (44x44px) for mobile */
+button, 
+a[role="button"],
+input[type="submit"],
+input[type="button"] {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* Improve color contrast for text - WCAG 2.1 AA compliance */
+.text-white\/80 {
+    color: rgba(255, 255, 255, 0.95); /* Improved from 0.8 to 0.95 for better contrast */
+}
+
+.text-white\/90 {
+    color: rgba(255, 255, 255, 1); /* Improved from 0.9 to 1.0 */
+}
+
+.text-white\/95 {
+    color: rgba(255, 255, 255, 0.98); /* High contrast for footer text */
+}
+
+/* Ensure sufficient contrast for non-text elements (icons, borders) */
+.text-blue-100\/80 {
+    color: rgba(255, 255, 255, 0.95); /* Changed to white for better contrast on dark background */
+}
+
+.text-blue-100\/90 {
+    color: rgba(255, 255, 255, 0.98); /* Changed to white for better contrast */
+}
+
+.text-blue-200 {
+    color: rgba(255, 255, 255, 0.95); /* Changed to white for better contrast */
+}
+
+.text-blue-200\/70 {
+    color: rgba(255, 255, 255, 0.95); /* Changed to white for better contrast */
+}
+
+.text-gray-200 {
+    color: rgba(255, 255, 255, 0.95); /* Changed to white for better contrast on dark footer */
+}
+
+/* Reflow support - ensure content doesn't require horizontal scrolling at 320px */
+@media (max-width: 320px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Prevent horizontal overflow */
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* Ensure flex items wrap properly */
+    .flex {
+        flex-wrap: wrap;
+    }
+    
+    /* Ensure grid items don't overflow */
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* Ensure text doesn't overflow */
+    p, span, h1, h2, h3, h4, h5, h6 {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+}
+
+/* Ensure form elements don't overflow on small screens */
+@media (max-width: 320px) {
+    input, select, textarea {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+    }
+    
+    /* Ensure labels and inputs fit */
+    label {
+        display: block;
+        width: 100%;
+    }
+}

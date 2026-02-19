@@ -126,11 +126,11 @@
                         "links": [
                             {
                                 "label": "Privacy Policy",
-                                "url": "/it/pages/privacy"
+                                "url": "/it/privacy"
                             },
                             {
                                 "label": "Termini e Condizioni",
-                                "url": "/it/pages/terms"
+                                "url": "/it/terms"
                             }
                         ]
                     }
@@ -243,7 +243,7 @@
                             "label": "WhatsApp"
                         },
                         "appointment": {
-                            "url": "/en/pages/contacts",
+                            "url": "/en/contacts",
                             "label": "Book Appointment"
                         }
                     },
@@ -252,11 +252,11 @@
                         "links": [
                             {
                                 "label": "Privacy Policy",
-                                "url": "/en/pages/privacy"
+                                "url": "/en/privacy"
                             },
                             {
                                 "label": "Terms and Conditions",
-                                "url": "/en/pages/terms"
+                                "url": "/en/terms"
                             }
                         ]
                     }
