@@ -52,7 +52,7 @@
                         "items": [
                             {
                                 "type": "address",
-                                "value": "Via Vanzo 86/A, 31021 Mogliano Veneto TV"
+                                "value": "Via Vanzo 86, 31021 Mogliano Veneto TV"
                             },
                             {
                                 "type": "email",
@@ -117,9 +117,9 @@
                         }
                     },
                     "map": {
-                        "address": "Via Vanzo 86/A, 31021 Mogliano Veneto TV",
-                        "embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.5!2d12.4!3d45.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDMzJzAwLjAiTiAxMsIyNC4wJM!5e0!3m2!1sit!2sit!4v1",
-                        "link": "https://www.google.com/maps/search/?api=1&query=Via+Vanzo+86%2FA+31021+Mogliano+Veneto+TV"
+                        "address": "Via Vanzo 86, 31021 Mogliano Veneto TV",
+                        "embed_url": "https://www.openstreetmap.org/export/embed.html?bbox=12.2406%2C45.5533%2C12.2606%2C45.5733&layer=mapnik&marker=45.5633%2C12.2506",
+                        "link": "https://www.google.com/maps/search/?api=1&query=Via+Vanzo+86%2C+31021+Mogliano+Veneto+TV"
                     },
                     "legal": {
                         "copyright": "© 2026 Sottana Service - Consulenza Sicurezza e Radioprotezione. Tutti i diritti riservati.",
@@ -183,7 +183,7 @@
                         "items": [
                             {
                                 "type": "address",
-                                "value": "Via Vanzo 86/A, 31021 Mogliano Veneto TV, Italy"
+                                "value": "Via Vanzo 86, 31021 Mogliano Veneto TV, Italy"
                             },
                             {
                                 "type": "email",
