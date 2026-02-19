@@ -1,6 +1,5 @@
 # AGENTS.md - Complete AI Agent Guidelines
 
-> **Last Updated**: 2026-02-08  
 > **Purpose**: Comprehensive guidelines for all AI agents working on this Laravel modular application
 
 ## 🚀 Build/Lint/Test Commands
@@ -320,6 +319,47 @@ TextInput::make('email')->label('Email Address')
 // ✅ CORRECT
 TextInput::make('email')->label(__('user.email'))
 ```
+
+## ♿ WCAG Accessibility Guidelines
+
+### Regole Fondamentali
+
+1. **MAI rimuovere il focus indicator** (`outline: none` senza sostituto)
+2. **Contrasto minimo 4.5:1** per testo normale, 3:1 per testo grande
+3. **Label per tutti i form inputs** - usare `<label for="id">`
+4. **Link con testo descrittivo** - mai link vuoti o con sole icone
+5. **Autocomplete** su tutti i form fields appropriati
+6. **Reflow 320px** - layout deve funzionare a 320px width
+
+### Tecniche WCAG Obbligatorie
+
+| Codice | Descrizione | File Reference |
+|--------|-------------|---------------|
+| H44 | Label form elements | [W3C](https://www.w3.org/WAI/WCAG21/Techniques/html/H44) |
+| G195 | Focus visible | [W3C](https://www.w3.org/WAI/WCAG21/Techniques/general/G195) |
+| G18 | Contrast ratio 4.5:1 | [W3C](https://www.w3.org/WAI/WCAG21/Techniques/general/G18) |
+| H30 | Link text | [W3C](https://www.w3.org/WAI/WCAG21/Techniques/html/H30) |
+| H98 | Autocomplete | [W3C](https://www.w3.org/WAI/WCAG21/Techniques/html/H98) |
+| C38 | Reflow 320px | [W3C](https://www.w3.org/WAI/WCAG21/Techniques/css/C38) |
+
+### Validazione
+
+- **MAUVE++**: https://mauve.isti.cnr.it/ (validatore italiano WCAG)
+- **WAVE**: https://wave.webaim.org/
+- **axe-core**: `npx @axe-core/cli https://sottana.net/it`
+
+### Documentazione
+
+Vedi piano completo: `Themes/Two/docs/wcag-compliance-plan.md`
+
+### Pre-Commit Accessibility Check
+
+- [ ] Tutti i form hanno label con `for` attribute
+- [ ] Focus indicator visibile (outline 3px, contrasto 3:1)
+- [ ] Contrasto 4.5:1 verificato
+- [ ] Link con testo o aria-label
+- [ ] Autocomplete su form fields
+- [ ] Layout funziona a 320px
 
 ## 📚 Documentation Standards
 
