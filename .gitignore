@@ -51,16 +51,20 @@ bashscripts/
 laravel/docker/
 
 .ai/
+.ai-context/
 .claude/
+.clauderules/
 .cursor/
 .gemini/
 .windsurf/
 .flow/
+.iflow/
 .junie/
 .phive/
 .vscode/
+.windsurf/
+.zai/
 .ai-context/
-.clauderules/
 bashscripts/
 laravel/config/net/sottana/database/content/information_schema_tables.json
 *.*Indentifier
