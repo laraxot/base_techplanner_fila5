@@ -4,6 +4,8 @@
 **Target**: Conformità WCAG 2.1 Level AA  
 **Status**: In Lavorazione
 
+**Riferimenti W3C**: [wcag-techniques-resolution.md](wcag-techniques-resolution.md) — tecniche H44, F78, G195, H30, C8, C38, G18, H98, ARIA6 e ordine di intervento.
+
 ---
 
 ## 📋 Executive Summary
