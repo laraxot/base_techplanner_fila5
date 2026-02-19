@@ -39,8 +39,8 @@
 
 ### Componente: `pub_theme::components.blocks.map.static-clickable`
 1. **Prioritaria**: Immagine PNG statica pre-generata (se disponibile)
-2. **Fallback**: OpenStreetMap iframe embed (gratuito)
-3. **Navigazione**: Link OpenStreetMap per indicazioni
+2. **Fallback**: Placeholder testuale + pulsante Google Maps (link, NON API)
+3. **Navigazione**: Link Google Maps (gratuito, NON API)
 
 ### Componente: `pub_theme::components.blocks.map.embed`
 - Usa OpenStreetMap iframe
