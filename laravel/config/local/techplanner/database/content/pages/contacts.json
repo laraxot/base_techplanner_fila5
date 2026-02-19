@@ -77,7 +77,7 @@
                             "type": "address",
                             "title": "Sede Operativa",
                             "description": "Visita la nostra sede",
-                            "value": "Via Vanzo 86/A, 31021 Mogliano Veneto (TV)",
+                            "value": "Via Vanzo 86, 31021 Mogliano Veneto (TV)",
                             "hours": "Su appuntamento",
                             "icon": "location",
                             "color": "cyan"
@@ -236,6 +236,19 @@
                         }
                     ]
                 }
+            },
+            {
+                "type": "map",
+                "slug": "location-map",
+                "data": {
+                    "view": "pub_theme::components.blocks.map.static-clickable",
+                    "title": "Dove Siamo",
+                    "address": "Via Vanzo 86/A, 31021 Mogliano Veneto TV",
+                    "coordinates": {
+                        "lat": 45.5633,
+                        "lng": 12.2506
+                    }
+                }
             }
         ],
         "en": [
@@ -297,7 +310,7 @@
                             "type": "address",
                             "title": "Office",
                             "description": "Visit our office",
-                            "value": "Via Vanzo 86/A, 31021 Mogliano Veneto (TV), Italy",
+                            "value": "Via Vanzo 86, 31021 Mogliano Veneto (TV), Italy",
                             "hours": "By appointment",
                             "icon": "location",
                             "color": "cyan"

@@ -2,7 +2,7 @@
 
 This file provides essential guidance for agentic coding agents working in this Laravel modular application with Filament v4.
 
-## 🚨 CRITICAL NEW RULES (2026-02-08)
+## 🚨 CRITICAL NEW Rules
 
 ### Frontend Development - NO Controllers
 
@@ -58,6 +58,24 @@ text-gray-200 (#E5E7EB) su #0F3460
 text-gray-100 (#F3F4F6) su #0F3460
 ```
 
+### Map Integration - FREE Only
+
+**SEMPRE usare servizi gratuiti per le mappe. MAI usare Google Maps API a pagamento.**
+
+```bash
+# ✅ CORRETTO - Servizi Free
+- OpenStreetMap (OSM) iframe embed
+- OpenStreetMap Static Maps
+- Nominatim per geocoding
+- Screenshot manuale da OSM
+
+# ❌ SBAGLIATO - Google Maps API
+- Google Maps Static API (richiede billing)
+- Google Maps Embed API (richiede API key con billing)
+```
+
+**Link a Google Maps ammesso solo per navigazione (direzioni), non per visualizzazione.**
+
 ### Git Workflow - Commit Frequentemente
 
 **SEMPRE fare git commit e push quando il codice è stabile.**
@@ -78,6 +96,12 @@ text-gray-100 (#F3F4F6) su #0F3460
 **Documentare sempre errori e lezioni apprese.**
 
 Vedi: [docs/continuous-improvement-lessons.md](docs/continuous-improvement-lessons.md)
+
+### Documentation Rules
+
+**MAI scrivere date nei file .md** (es. "Last Update: 19 Febbraio 2026")
+- Git tiene traccia automaticamente delle modifiche
+- Le date appesantiscono la manutenzione e creano merge conflict
 
 ## Build/Lint/Test Commands
 

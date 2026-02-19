@@ -1,28 +1,20 @@
 # Two Theme - Documentation Index
 
-**Last Update**: 7 Febbraio 2026  
-**Status**: ✅ Available & Under Development  
 **Theme Version**: 2.0
 
 ## 📚 Quick Navigation
 
 ### 🎯 Essential Reading
 1. [README.md](./README.md) - Theme overview
-2. [Comprehensive Site Analysis](./comprehensive-site-analysis.md) - ⭐ NEW: Complete analysis of target vs local site (conversion, GDPR, SEO, inbound marketing)
-3. [Analysis Complete Summary](./analysis-complete-summary.md) - ⭐ NEW: Final summary report with all findings
-4. [Replication Status](./replication-status.md) - Final replication status report
-5. [Site Replication Strategy](./site-replication-strategy.md) - Complete strategy to surpass target site
-6. [Screenshots Analysis](./screenshots-analysis.md) - Visual comparison with screenshots
-7. [Header Navigation Update](./header-navigation-update.md) - Recent header changes
-8. [Target Website Comparison](./target-website-comparison.md) - Analysis of target site
-9. [Footer Target Complete Analysis](./footer-target-complete-analysis.md) - ⭐ NEW: Complete footer analysis and implementation
-10. [Footer Fix Complete](./footer-fix-complete.md) - ⭐ NEW: Footer error resolution documentation
+2. [Comprehensive Site Analysis](./comprehensive-site-analysis.md) - ⭐ Complete analysis of target vs local site
+3. [Map Integration](./map-integration.md) - Map implementation with OpenStreetMap
+4. [Map Free Rules](./map-free-rules.md) - ✅ Regola FREE ONLY per mappe
 
 ### 🎨 Theme Characteristics
 - **Style**: Professional medical/radioprotection design
 - **Target**: Dental and veterinary clinics
 - **Framework**: Tailwind CSS v4 + Alpine.js
-- **Components**: Modern Blade components with React-inspired patterns
+- **Components**: Modern Blade components
 
 ### 📊 Module Statistics
 - [Site Replication Strategy](./site-replication-strategy.md) - ⭐ NEW

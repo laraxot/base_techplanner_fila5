@@ -265,23 +265,25 @@
                 </div>
                 @endif
 
-                {{-- OpenStreetMap --}}
+                {{-- OpenStreetMap (gratuito) --}}
                 <div class="mt-4">
-                    <a href="https://www.openstreetmap.org/directions?engine=graphhopper_foot&route=%3F%3F%3F%3D{{ urlencode($address) }}" 
+                    <a href="https://www.openstreetmap.org/?mlat=45.5786&mlon=12.2364#map=16/45.5786/12.2364" 
                        target="_blank"
                        rel="noopener noreferrer"
-                       class="block w-full h-32 rounded-lg overflow-hidden border border-white/20 hover:border-white/40 transition-colors">
+                       class="block w-full h-32 rounded-lg overflow-hidden border border-white/20 hover:border-white/40 transition-colors relative group">
                         <iframe 
-                            src="https://www.openstreetmap.org/export/embed.html?bbox=12.29%2C45.46%2C12.51%2C45.60&layer=mapnik&marker=45.53%2C12.40"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=12.2264%2C45.5686%2C12.2464%2C45.5886&amp;layer=mapnik&amp;marker=45.5786%2C12.2364"
                             width="100%" 
                             height="100%" 
-                            style="border:0;" 
+                            style="border:0;filter: grayscale(30%) contrast(1.1);" 
                             allowfullscreen="" 
                             loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade"
                             title="Mappa posizione">
                         </iframe>
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
                     </a>
+                    <p class="text-xs text-blue-200/70 mt-1">Clicca per aprire la mappa</p>
                 </div>
             </div>
         </div>
