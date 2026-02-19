@@ -120,7 +120,7 @@ $subscribeNewsletter = function () {
                             aria-label="Cerca articoli per titolo, contenuto o argomento"
                             class="w-full px-6 py-4 pr-12 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
                         >
-                        <svg class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                         </svg>
                     </div>
@@ -137,7 +137,8 @@ $subscribeNewsletter = function () {
                     @if($this->selectedCategory || $this->selectedTag || $this->search)
                         <button 
                             wire:click="resetFilters"
-                            class="px-3 py-1 text-sm bg-red-100 text-red-700 rounded-full hover:bg-red-200 transition-colors"
+                            aria-label="Rimuovi tutti i filtri di ricerca"
+                            class="px-3 py-1 text-sm bg-red-100 text-red-700 rounded-full hover:bg-red-200 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 rounded-md"
                         >
                             Reset Filtri
                         </button>
@@ -267,10 +268,11 @@ $subscribeNewsletter = function () {
                         <nav class="flex items-center space-x-2">
                             {{-- Previous --}}
                             @if($this->posts->currentPage() > 1)
-                                <button 
-                                    wire:click="goToPage({{ $this->posts->currentPage() - 1 }})"
-                                    class="px-3 py-2 text-sm bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
-                                >
+                    <button 
+                        wire:click="goToPage({{ $this->posts->currentPage() - 1 }})"
+                        aria-label="Vai alla pagina precedente"
+                        class="px-3 py-2 text-sm bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-[#1E5A96]"
+                    >
                                     Precedente
                                 </button>
                             @endif
@@ -280,7 +282,9 @@ $subscribeNewsletter = function () {
                                 @if($page['url'])
                                     <button 
                                         wire:click="goToPage({{ $page['page'] }})"
-                                        class="px-3 py-2 text-sm {{ $page['active'] ? 'bg-brand-blue text-white' : 'bg-white border border-gray-300 hover:bg-gray-50' }} rounded-lg transition-colors"
+                                        aria-label="Vai alla pagina {{ $page['label'] }}"
+                                        @if($page['active']) aria-current="page" @endif
+                                        class="px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#1E5A96] {{ $page['active'] ? 'bg-brand-blue text-white' : 'bg-white border border-gray-300 hover:bg-gray-50' }} rounded-lg transition-colors"
                                     >
                                         {{ $page['label'] }}
                                     </button>
@@ -291,7 +295,8 @@ $subscribeNewsletter = function () {
                             @if($this->posts->hasMorePages())
                                 <button 
                                     wire:click="goToPage({{ $this->posts->currentPage() + 1 }})"
-                                    class="px-3 py-2 text-sm bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+                                    aria-label="Vai alla pagina successiva"
+                                    class="px-3 py-2 text-sm bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-[#1E5A96]"
                                 >
                                     Successiva
                                 </button>
@@ -311,7 +316,8 @@ $subscribeNewsletter = function () {
                     </p>
                     <button 
                         wire:click="resetFilters"
-                        class="px-6 py-2 bg-brand-blue text-white rounded-lg hover:bg-blue-700 transition-colors"
+                        aria-label="Rimuovi tutti i filtri e mostra tutti gli articoli"
+                        class="px-6 py-2 bg-brand-blue text-white rounded-lg hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96]"
                     >
                         Resetta tutti i filtri
                     </button>

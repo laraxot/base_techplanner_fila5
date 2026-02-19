@@ -226,7 +226,7 @@
         
         {{-- No Results --}}
         <div id="no-results-{{ $gridId }}" class="hidden text-center py-12">
-            <svg class="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
             <h3 class="text-lg font-medium text-gray-900 mb-2">Nessun servizio trovato</h3>
@@ -278,7 +278,7 @@
                 class="px-3 py-2 text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] {{ $currentPage === $totalPages ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300' }}"
                 {{ $currentPage === $totalPages ? 'disabled aria-disabled="true"' : '' }}
             >
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                 </svg>
             </button>
