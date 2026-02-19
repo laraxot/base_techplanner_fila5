@@ -77,18 +77,34 @@ MAUVE++ è un validatore di accessibilità sviluppato dal CNR (ISTI - HIIS Lab) 
 ## Status Validazione
 
 - [x] Sito deployato su https://sottana.net
+- [x] axe-core eseguito (5 issue accessibilità trovate)
 - [ ] Home page validata (da fare manualmente su MAUVE)
 - [ ] Contatti validata
 - [ ] Servizi validata
+
+## PageSpeed Insights
+
+**Sito**: https://pagespeed.web.dev/
+
+PageSpeed Insights richiede un account Google e API key per uso programmatico. Per validazione manuale:
+
+1. Vai su https://pagespeed.web.dev/
+2. Inserisci l'URL della pagina
+3. Clicca "Analyze"
+
+### Pagine da testare:
+- https://pagespeed.web.dev/report?url=https://sottana.net/it
+- https://pagespeed.web.dev/report?url=https://sottana.net/it/contatti
+- https://pagespeed.web.dev/report?url=https://sottana.net/it/servizi
 
 ## Note Tecniche
 
 MAUVE richiede autenticazione e JavaScript per funzionare correttamente. Per validazione automatizzata, usare:
 
 ```bash
-# Lighthouse
-lighthouse https://sottana.net/it --view
+# axe-core (accessibilità)
+npx @axe-core/cli https://sottana.net/it --tags wcag2a,wcag2aa
 
-# axe-core
-npx @axe-core/cli https://sottana.net/it
+# Lighthouse (performance + accessibilità)
+lighthouse https://sottana.net/it --view
 ```
