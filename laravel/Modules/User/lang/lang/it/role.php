@@ -16,22 +16,56 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'guard_name' => [
             'label' => 'Guard',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
-        'permissions' => 'Permessi',
-        'updated_at' => 'Aggiornato il',
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
+        'permissions' => [
+            'label' => 'Permessi',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Aggiornato il',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'first_name' => [
+            'label' => 'Nome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'last_name' => [
+            'label' => 'Cognome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
         'select_all' => [
             'name' => 'Seleziona Tutti',
             'message' => '',
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'team' => [
             'name' => [
                 'label' => 'team.name',
             ],
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [
@@ -48,4 +82,6 @@ return [
             ],
         ],
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
 ];

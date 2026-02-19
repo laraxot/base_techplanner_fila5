@@ -10,8 +10,18 @@ return [
         'sort' => 30,
     ],
     'fields' => [
-        'latitude' => 'Latitudine',
-        'longitude' => 'Longitudine',
+        'latitude' => [
+            'label' => 'Latitudine',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'longitude' => [
+            'label' => 'Longitudine',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
     ],
     'actions' => [
         'select_position' => 'Seleziona Posizione',
@@ -21,4 +31,6 @@ return [
         'coordinates_updated' => 'Coordinate aggiornate con successo',
         'invalid_coordinates' => 'Coordinate non valide',
     ],
+    'label' => 'Lat Lng',
+    'plural_label' => 'Lat Lng (Plurale)',
 ];

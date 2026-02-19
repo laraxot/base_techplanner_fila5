@@ -52,4 +52,48 @@ return [
         'event_updated' => 'Evento aggiornato con successo',
         'event_deleted' => 'Evento eliminato con successo',
     ],
+    'label' => 'Calendar',
+    'plural_label' => 'Calendar (Plurale)',
+    'navigation' => [
+        'name' => 'Calendar',
+        'plural' => 'Calendar',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Calendar',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Calendar',
+        ],
+        'edit' => [
+            'label' => 'Modifica Calendar',
+        ],
+        'delete' => [
+            'label' => 'Elimina Calendar',
+        ],
+    ],
 ];

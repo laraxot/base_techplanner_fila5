@@ -47,7 +47,7 @@ return [
             'label' => 'Tipo',
             'placeholder' => 'Tipo di menu',
             'tooltip' => 'Categoria del menu',
-            'description' => 'Tipologia di menu (principale, footer, sidebar)',
+            'description' => 'Tipologia di menu (principale, footer, sidebar]',
             'helper_text' => '',
             'options' => [
                 'main' => 'Principale',
@@ -59,7 +59,7 @@ return [
             'label' => 'Stato',
             'placeholder' => 'Stato del menu',
             'tooltip' => 'Stato di pubblicazione del menu',
-            'description' => 'Stato corrente del menu (attivo, inattivo, bozza)',
+            'description' => 'Stato corrente del menu (attivo, inattivo, bozza]',
             'helper_text' => '',
             'options' => [
                 'active' => 'Attivo',
@@ -128,24 +128,28 @@ return [
             'placeholder' => 'items',
             'helper_text' => 'items',
             'description' => 'items',
+            'tooltip' => '',
         ],
         'url' => [
             'label' => 'url',
             'placeholder' => 'url',
             'helper_text' => 'url',
             'description' => 'url',
+            'tooltip' => '',
         ],
         'target' => [
             'label' => 'target',
             'placeholder' => 'target',
             'helper_text' => 'target',
             'description' => 'target',
+            'tooltip' => '',
         ],
         'icon' => [
             'label' => 'icon',
             'placeholder' => 'icon',
             'helper_text' => 'icon',
             'description' => 'icon',
+            'tooltip' => '',
         ],
     ],
     'actions' => [
@@ -172,4 +176,6 @@ return [
         'tooltip' => 'Modello dati del menu',
         'description' => 'Rappresentazione del modello del menu nel sistema',
     ],
+    'label' => 'Menu',
+    'plural_label' => 'Menu (Plurale)',
 ];

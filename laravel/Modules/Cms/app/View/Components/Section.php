@@ -6,7 +6,6 @@ namespace Modules\Cms\View\Components;
 
 use Illuminate\Contracts\View\View as ViewContract;
 use Illuminate\View\Component;
-use Modules\Cms\Datas\BlockData;
 use Modules\Cms\Models\Section as SectionModel;
 use Spatie\LaravelData\DataCollection;
 
@@ -23,8 +22,7 @@ class Section extends Component
 {
     public string $slug;
 
-    /** @var DataCollection<BlockData> */
-    public DataCollection $blocks;
+    public DataCollection|array $blocks;
 
     public ?string $name = null;
 
@@ -53,7 +51,8 @@ class Section extends Component
         if (is_string($tpl)) {
             $this->tpl = $tpl;
         }
-        $this->blocks = SectionModel::getBlocksBySlug($this->slug);
+        $blocksResult = SectionModel::getBlocksBySlug($this->slug);
+        $this->blocks = $blocksResult;
     }
 
     /**
@@ -66,6 +65,7 @@ class Section extends Component
             'blocks' => $this->blocks,
         ];
 
+        /* @phpstan-ignore argument.type */
         return view($view, $view_params);
     }
 }

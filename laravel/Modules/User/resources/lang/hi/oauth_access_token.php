@@ -14,24 +14,45 @@ return [
     'fields' => [
         'id' => [
             'label' => 'आईडी',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'user_id' => [
             'label' => 'उपयोगकर्ता',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'client_id' => [
             'label' => 'क्लाइंट',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'name' => [
             'label' => 'नाम',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'scopes' => [
             'label' => 'स्कोप',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'revoked' => [
             'label' => 'रद्द किया गया',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'expires_at' => [
             'label' => 'समाप्ति तिथि',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

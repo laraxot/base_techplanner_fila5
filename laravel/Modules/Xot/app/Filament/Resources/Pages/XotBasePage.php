@@ -23,7 +23,7 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
  * following the architectural pattern of never extending Filament classes directly.
  *
  * @property ?string $model
- * @property ?array $data
+ * @property array<string, mixed> $data
  * @property Schema $form
  */
 abstract class XotBasePage extends FilamentPage implements HasForms
@@ -34,6 +34,8 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 
     /**
      * The model class associated with this page, if any.
+     *
+     * @var class-string<Model>|null
      */
     public static ?string $model = null;
 
@@ -42,7 +44,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      *
      * @var array<string, mixed>
      */
-    public ?array $data = [];
+    public array $data = [];
 
     /**
      * Get the view that should be used for the page.
@@ -67,7 +69,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 
         return $view->toString();
     }
-    
+
     public function getViewTest(): string
     {
         $class = __CLASS__;
@@ -88,7 +90,6 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 
         return $view;
     }
-    
 
     /**
      * Get navigation label with automatic translation.
@@ -129,7 +130,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
         return 'data';
     }
 
-    public function form(Schema $schema): Schema
+    final public function form(Schema $schema): Schema
     {
         return $schema
             ->components($this->getFormSchema())
@@ -164,9 +165,9 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      * Get the form model for the page.
      * Filament compatibility method.
      *
-     * @return Model|string|null
+     * @return class-string<Model>|null
      */
-    public function getFormModel(): Model|string|null
+    protected function getFormModel(): Model|string|null
     {
         return static::$model;
     }
@@ -174,10 +175,8 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     /**
      * Get the form context for the page.
      * Filament compatibility method.
-     *
-     * @return string|null
      */
-    public function getFormContext(): ?string
+    protected function getFormContext(): ?string
     {
         return 'edit';
     }
@@ -198,7 +197,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     /**
      * Get the form schema for the page.
      *
-     * @return array<string, Component>
+     * @return array<int|string, Component>
      */
     protected function getFormSchema(): array
     {
@@ -223,6 +222,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     {
         return [
             'data' => $this->data,
+            'record' => $this->record ?? null,
         ];
     }
 }

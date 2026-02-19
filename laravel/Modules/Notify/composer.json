@@ -1,17 +1,18 @@
 {
   "name": "laraxot/module_notify_fila3",
-  "description": "notify module dedicated to managing notifications",
+  "description": "Notification management module for the Laraxot ecosystem: email, SMS, WhatsApp, Telegram, and FCM push.",
   "keywords": [
     "laraxot",
     "laravel",
     "filament",
     "module_notify",
-    "Laravel",
-    "Notify module",
-    "Notify",
-    "Emails",
-    "Smss",
-    "Whatsapp"
+    "notify",
+    "notifications",
+    "email",
+    "sms",
+    "whatsapp",
+    "telegram",
+    "fcm"
   ],
   "homepage": "https://github.com/laraxot/module_notify_fila3.git",
   "license": "MIT",
@@ -49,13 +50,15 @@
     "illuminate/contracts": "*",
     "illuminate/support": "*",
     "irazasyed/telegram-bot-sdk": "*",
-    "kreait/laravel-firebase": "*",
-    "laravel-notification-channels/fcm": "*",
     "laravel-notification-channels/telegram": "*",
     "phpdocumentor/type-resolver": "*",
-    "spatie/laravel-database-mail-templates": "^3.7",
+    "spatie/laravel-database-mail-templates": "*",
     "symfony/http-client": "*",
     "symfony/postmark-mailer": "*"
+  },
+  "require-comment": {
+    "kreait/laravel-firebase": "*",
+    "laravel-notification-channels/fcm": "*"
   },
   "repositories": [
     {

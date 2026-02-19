@@ -14,21 +14,39 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'connection' => [
             'label' => 'Connexion',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'queue' => [
             'label' => 'File d\'attente',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'payload' => [
             'label' => 'Charge Utile',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'exception' => [
             'label' => 'Exception',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'failed_at' => [
             'label' => 'Échoué À',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

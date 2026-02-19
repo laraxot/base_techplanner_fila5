@@ -14,27 +14,51 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'command' => [
             'label' => '命令',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'expression' => [
             'label' => 'Cron表达式',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'description' => [
             'label' => '描述',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'timezone' => [
             'label' => '时区',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'status' => [
             'label' => '状态',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'created_at' => [
             'label' => '创建时间',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'updated_at' => [
             'label' => '更新时间',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

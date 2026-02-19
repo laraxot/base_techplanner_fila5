@@ -15,6 +15,9 @@ use Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect;
 use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
+
+use function Safe\realpath;
+
 use Webmozart\Assert\Assert;
 
 class FolioVoltServiceProvider extends ServiceProvider
@@ -43,7 +46,7 @@ class FolioVoltServiceProvider extends ServiceProvider
         try {
             // Verifica se siamo in ambiente console e se il problema "env" è presente
             // In questo caso, usa array vuoto per permettere al server di partire
-            if (app()->runningInConsole()) {
+            if (app()->runningInConsole() && ! app()->environment('testing')) {
                 // Durante il bootstrap dei comandi artisan, potrebbe esserci un problema
                 // con la risoluzione di "env" come classe. Usiamo array vuoto come fallback.
                 $base_middleware = [];
@@ -55,6 +58,11 @@ class FolioVoltServiceProvider extends ServiceProvider
                         $base_middleware = [];
                     }
                 }
+            }
+
+            // Assicuriamoci che 'web' sia presente se non siamo in console (o siamo in testing)
+            if (! \in_array('web', $base_middleware, true)) {
+                array_unshift($base_middleware, 'web');
             }
         } catch (\Exception $e) {
             // Se c'è un errore nel caricamento della configurazione middleware, usa array vuoto
@@ -97,6 +105,17 @@ class FolioVoltServiceProvider extends ServiceProvider
                     ]);
             }
             $paths[] = $theme_path;
+        }
+
+        // Theme Livewire block components: livewire/ → blocks.events.detail, components/blocks → events.detail
+        $theme_views = \dirname($theme_path);
+        $theme_livewire = $theme_views.\DIRECTORY_SEPARATOR.'livewire';
+        if (File::exists($theme_livewire) && File::isDirectory($theme_livewire)) {
+            $paths[] = realpath($theme_livewire);
+        }
+        $theme_components_blocks = $theme_views.\DIRECTORY_SEPARATOR.'components'.\DIRECTORY_SEPARATOR.'blocks';
+        if (File::exists($theme_components_blocks) && File::isDirectory($theme_components_blocks)) {
+            $paths[] = realpath($theme_components_blocks);
         }
 
         foreach ($modules as $module) {

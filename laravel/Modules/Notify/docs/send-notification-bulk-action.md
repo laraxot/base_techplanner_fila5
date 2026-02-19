@@ -1,6 +1,5 @@
 # SendNotificationBulkAction - Implementazione Completa
 
-**Data**: 2025-01-18  
 **Status**: ✅ Implementazione completata e PHPStan Level 10 compliant  
 **Module**: Notify
 
@@ -318,11 +317,11 @@ Vedi: [Actions Calling Actions Pattern](./actions-calling-actions-pattern.md)
 - [MailTemplate Model](./models.md#mailtemplate)
 - [RecordNotification Class](../../app/Notifications/RecordNotification.php)
 - [TechPlanner Client Management](../TechPlanner/docs/README.md#client-management)
-- [Geo Module Reusable Components Philosophy](../Geo/docs/reusable-components-philosophy.md)
-- [Xot Filament Class Extension Rules](../Xot/docs/filament-class-extension-rules.md)
+- [Geo Module Reusable Components Philosophy](../geo/docs/reusable-components-philosophy.md)
+- [Xot Filament Class Extension Rules](../xot/docs/filament-class-extension-rules.md)
 
 ---
 
-**Ultimo aggiornamento**: 2025-01-18  
+**Ultimo aggiornamento**: [DATE]  
 **PHPStan Level**: ✅ 10  
 **Quality**: ✅ PHPMD, PHPInsights compliant

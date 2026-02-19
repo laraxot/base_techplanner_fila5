@@ -13,8 +13,25 @@ return [
     'label' => 'Reset Password',
     'plural_label' => 'Reset Password',
     'fields' => [
-        'email' => ['label' => 'Email'],
-        'token' => ['label' => 'Token'],
-        'created_at' => ['label' => 'Creato il'],
+        'email' => [
+            'label' => 'Email',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'token' => [
+            'label' => 'Token',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'actions' => [
     ],
 ];

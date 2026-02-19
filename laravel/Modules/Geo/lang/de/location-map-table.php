@@ -26,4 +26,8 @@ return [
         'edit_coordinates' => 'Modifica coordinate',
         'export' => 'Esporta dati',
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
 ];

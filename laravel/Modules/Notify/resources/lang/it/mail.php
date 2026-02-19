@@ -47,11 +47,21 @@ return [
                 'placeholder' => 'Seleziona i canali',
                 'tooltip' => 'Canali di invio disponibili',
                 'options' => [
-                    'email' => ['label' => 'Email'],
-                    'sms' => ['label' => 'SMS'],
-                    'push' => ['label' => 'Push Notification'],
-                    'whatsapp' => ['label' => 'WhatsApp'],
-                    'telegram' => ['label' => 'Telegram'],
+                    'email' => [
+                        'label' => 'Email',
+                    ],
+                    'sms' => [
+                        'label' => 'SMS',
+                    ],
+                    'push' => [
+                        'label' => 'Push Notification',
+                    ],
+                    'whatsapp' => [
+                        'label' => 'WhatsApp',
+                    ],
+                    'telegram' => [
+                        'label' => 'Telegram',
+                    ],
                 ],
             ],
             'variables' => [
@@ -83,16 +93,26 @@ return [
             'category' => [
                 'label' => 'Categoria',
                 'options' => [
-                    'welcome' => ['label' => 'Benvenuto'],
-                    'reminder' => ['label' => 'Promemoria'],
-                    'notification' => ['label' => 'Notifica'],
+                    'welcome' => [
+                        'label' => 'Benvenuto',
+                    ],
+                    'reminder' => [
+                        'label' => 'Promemoria',
+                    ],
+                    'notification' => [
+                        'label' => 'Notifica',
+                    ],
                 ],
             ],
             'is_active' => [
                 'label' => 'Stato',
                 'options' => [
-                    'active' => ['label' => 'Attivo'],
-                    'inactive' => ['label' => 'Inattivo'],
+                    'active' => [
+                        'label' => 'Attivo',
+                    ],
+                    'inactive' => [
+                        'label' => 'Inattivo',
+                    ],
                 ],
             ],
         ],
@@ -127,5 +147,18 @@ return [
                 ],
             ],
         ],
+    ],
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
     ],
 ];

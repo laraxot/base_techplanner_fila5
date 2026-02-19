@@ -14,30 +14,57 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'name' => [
             'label' => 'Nombre',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'total_jobs' => [
             'label' => 'Trabajos Totales',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'pending_jobs' => [
             'label' => 'Trabajos Pendientes',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'failed_jobs' => [
             'label' => 'Trabajos Fallidos',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'failed_job_ids' => [
             'label' => 'IDs de Trabajos Fallidos',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'options' => [
             'label' => 'Opciones',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'created_at' => [
             'label' => 'Creado En',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'finished_at' => [
             'label' => 'Finalizado En',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

@@ -14,4 +14,8 @@ return [
             'tooltip' => 'Abmelden',
         ],
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
 ];

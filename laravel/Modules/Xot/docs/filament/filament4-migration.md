@@ -1,6 +1,8 @@
 # Filament 5.x Migration Guide
 
+<<<<<<< .merge_file_qfsRXJ
 **Data**: 2026-01-30
+=======
 **Versione Attuale**: Filament 5.1.1
 
 > [!NOTE]
@@ -54,7 +56,6 @@ Chart.register(ChartDataLabels);
 
 *Ultimo aggiornamento: 2026-01-30*
 
-**Data**: 2026-01-30
 **Versione Attuale**: Filament 5.1.1
 
 > [!NOTE]
@@ -108,7 +109,7 @@ Chart.register(ChartDataLabels);
 
 *Ultimo aggiornamento: 2026-01-30*
 
-**Data**: 2026-01-30
+>>>>>>> .merge_file_IH2DQ4
 **Versione Attuale**: Filament 5.1.1
 
 > [!NOTE]

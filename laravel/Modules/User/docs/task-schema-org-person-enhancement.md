@@ -1,6 +1,5 @@
-# Task: Schema.org Person Enhancement - 2026-02-10
+# Task: Schema.org Person Enhancement - [DATE]
 
-**Created**: 2026-02-10  
 **Module**: User  
 **Status**: Pending  
 **Priority**: Medium  
@@ -90,7 +89,7 @@ Based on comprehensive research of Schema.org documentation, I've identified key
 ## Related Files
 
 - [tasks-schema-org-person.md](./tasks-schema-org-person.md) - Existing person tasks
-- [place-address-schemaorg.md](../Geo/docs/place-address-schemaorg.md) - Address documentation
+- [place-address-schemaorg.md](../geo/docs/place-address-schemaorg.md) - Address documentation
 - [architecture.md](./architecture.md) - User module architecture
 
 ## Implementation Details
@@ -334,4 +333,3 @@ class UserResource extends JsonResource
 ---
 
 **Created by**: AI Assistant  
-**Last Updated**: 2026-02-10

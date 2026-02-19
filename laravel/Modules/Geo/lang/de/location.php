@@ -119,4 +119,6 @@ return [
         'get_directions' => 'Wegbeschreibung',
         'copy_coordinates' => 'Koordinaten kopieren',
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
 ];

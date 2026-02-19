@@ -14,43 +14,81 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'name' => [
             'label' => 'Nome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'host' => [
             'label' => 'Host',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'port' => [
             'label' => 'Porta',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'username' => [
             'label' => 'Nome de Usuário',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'password' => [
             'label' => 'Senha',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'encryption' => [
             'label' => 'Criptografia',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'from_address' => [
             'label' => 'Endereço Remetente',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'from_name' => [
             'label' => 'Nome Remetente',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'status' => [
             'label' => 'Status',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'last_tested_at' => [
             'label' => 'Último Teste Em',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'created_at' => [
             'label' => 'Criado Em',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'body_html' => [
             'description' => 'Corpo HTML',
             'helper_text' => 'Conteúdo HTML do email',
+            'label' => '',
+            'tooltip' => '',
         ],
     ],
     'actions' => [

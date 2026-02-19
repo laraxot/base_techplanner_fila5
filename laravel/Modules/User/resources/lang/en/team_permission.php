@@ -13,13 +13,55 @@ return [
     'label' => 'Team Permission',
     'plural_label' => 'Team Permissions',
     'fields' => [
-        'id' => ['label' => 'ID'],
-        'team_id' => ['label' => 'Team'],
-        'team.name' => ['label' => 'Team'],
-        'user_id' => ['label' => 'User'],
-        'user.name' => ['label' => 'User'],
-        'permission' => ['label' => 'Permission'],
-        'created_at' => ['label' => 'Created At'],
-        'updated_at' => ['label' => 'Updated At'],
+        'id' => [
+            'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'team_id' => [
+            'label' => 'Team',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'team.name' => [
+            'label' => 'Team',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'user_id' => [
+            'label' => 'User',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'user.name' => [
+            'label' => 'User',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'permission' => [
+            'label' => 'Permission',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Created At',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Updated At',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'actions' => [
     ],
 ];

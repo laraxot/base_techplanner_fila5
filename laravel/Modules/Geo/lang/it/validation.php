@@ -8,29 +8,47 @@ return [
             'label' => 'Dati',
             'placeholder' => 'Inserisci i dati da validare',
             'help' => 'Dati da sottoporre a validazione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'rules' => [
             'label' => 'Regole',
             'placeholder' => 'Configura le regole di validazione',
             'help' => 'Regole di validazione da applicare',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'custom_messages' => [
             'label' => 'Messaggi personalizzati',
             'placeholder' => 'Configura i messaggi di errore personalizzati',
             'help' => 'Messaggi di errore personalizzati per le regole',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'custom_attributes' => [
             'label' => 'Attributi personalizzati',
             'placeholder' => 'Configura i nomi degli attributi personalizzati',
             'help' => 'Nomi personalizzati per gli attributi nei messaggi di errore',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'bail' => [
             'label' => 'Interrompi al primo errore',
             'help' => 'Interrompi la validazione al primo errore',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'stop_on_first_failure' => [
             'label' => 'Ferma al primo fallimento',
             'help' => 'Ferma la validazione al primo fallimento',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'validation' => [
@@ -110,5 +128,29 @@ return [
         'partial' => 'Validazione parziale',
         'skipped' => 'Validazione saltata',
         'pending' => 'Validazione in attesa',
+    ],
+    'label' => 'Validation',
+    'plural_label' => 'Validation (Plurale)',
+    'navigation' => [
+        'name' => 'Validation',
+        'plural' => 'Validation',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Validation',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Validation',
+        ],
+        'edit' => [
+            'label' => 'Modifica Validation',
+        ],
+        'delete' => [
+            'label' => 'Elimina Validation',
+        ],
     ],
 ];

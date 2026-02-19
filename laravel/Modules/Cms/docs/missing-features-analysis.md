@@ -1,6 +1,6 @@
 # Analisi Funzionalità Mancanti - Modulo Cms
 
-**Data Analisi**: 2026-01-22  
+**Data Analisi**: [DATE]  
 **Versione LimeSurvey Upstream**: 5.4.x+  
 **Repository Upstream**: https://github.com/LimeSurvey/LimeSurvey
 
@@ -156,11 +156,10 @@ Nessuna funzionalità critica mancante - il modulo Cms è ben implementato
 
 ## Collegamenti
 
-- [Modulo Quaeris](../Quaeris/docs/README.md)
-- [Modulo Limesurvey](../Limesurvey/docs/README.md)
-- [Cms README](./README.md)
+- [Modulo Quaeris](../quaeris/docs/readme.md)
+- [Modulo Limesurvey](../limesurvey/docs/readme.md)
+- [Cms README](./readme.md)
 
 ---
 
-**Ultimo Aggiornamento**: 2026-01-22  
-**Prossima Revisione**: 2026-02-22
+**Prossima Revisione**: [DATE]

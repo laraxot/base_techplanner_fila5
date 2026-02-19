@@ -1,6 +1,5 @@
 # PHPStan Level 10 - Scripts Utility Roadmap
 
-**Data**: 2026-01-09  
 **Modulo**: Cms  
 **Livello PHPStan**: 10  
 **Errori Totali**: 32  
@@ -238,7 +237,7 @@ cd /var/www/_bases/base_laravelpizza/laravel
 
 **Status**: 🔄 **IN IMPLEMENTAZIONE**
 
-**Ultimo aggiornamento**: 2026-01-09
+**Ultimo aggiornamento**: [DATE]
 
 ---
 
@@ -295,4 +294,4 @@ cd /var/www/_bases/base_laravelpizza/laravel
 
 ---
 
-**Ultimo aggiornamento**: 2026-01-09
+**Ultimo aggiornamento**: [DATE]

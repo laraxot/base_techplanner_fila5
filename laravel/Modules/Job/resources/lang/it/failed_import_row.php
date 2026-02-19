@@ -14,21 +14,39 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'import_batch_id' => [
             'label' => 'ID batch importazione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'row_index' => [
             'label' => 'Indice riga',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'errors' => [
             'label' => 'Errori',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'data' => [
             'label' => 'Dati',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'created_at' => [
             'label' => 'Creato il',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

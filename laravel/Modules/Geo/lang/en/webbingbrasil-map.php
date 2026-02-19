@@ -27,4 +27,10 @@ return [
         'marker_removed' => 'Marker removed successfully',
         'marker_updated' => 'Marker updated successfully',
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
+    ],
 ];

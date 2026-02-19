@@ -7,29 +7,47 @@ return [
         'name' => [
             'placeholder' => 'name',
             'description' => 'name',
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
         ],
         'client_name' => [
             'description' => 'client_name',
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
         ],
         'client_id' => [
             'description' => 'client_id',
             'label' => 'client_id',
             'placeholder' => 'client_id',
             'helper_text' => 'client_id',
+            'tooltip' => '',
         ],
         'plain_secret' => [
             'label' => 'plain_secret',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'secret' => [
             'label' => 'secret',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'id' => [
             'label' => 'id',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'recordId' => [
             'description' => 'recordId',
             'placeholder' => 'recordId',
             'helper_text' => 'recordId',
+            'label' => '',
+            'tooltip' => '',
         ],
     ],
     'actions' => [
@@ -64,4 +82,13 @@ return [
             'tooltip' => 'associateAnother',
         ],
     ],
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
 ];

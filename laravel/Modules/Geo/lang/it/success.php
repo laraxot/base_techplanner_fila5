@@ -141,4 +141,48 @@ return [
         'change_effected' => 'Cambio effettuato con successo',
         'transformation_realized' => 'Trasformazione realizzata con successo',
     ],
+    'label' => 'Success',
+    'plural_label' => 'Success (Plurale)',
+    'navigation' => [
+        'name' => 'Success',
+        'plural' => 'Success',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Success',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Success',
+        ],
+        'edit' => [
+            'label' => 'Modifica Success',
+        ],
+        'delete' => [
+            'label' => 'Elimina Success',
+        ],
+    ],
 ];

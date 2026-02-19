@@ -633,14 +633,14 @@ private function generateFallbackPdf($user, Exception $e): string
 
 ## 📚 References
 
-- [HTML2PDF Best Practices](../../Xot/docs/html2pdf-best-practices.md)
-- [Activity Module README](./README.md)
+- [HTML2PDF Best Practices](../../xot/docs/html2pdf-best-practices.md)
+- [Activity Module README](./readme.md)
 - [Filament Actions Documentation](https://filamentphp.com/docs/3.x/actions/overview)
 - [Spatie Activity Log](https://spatie.be/docs/laravel-activitylog)
 
 ---
 
-**Last Updated:** 2025-12-09
+**
 **Version:** 1.0.0
  **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅

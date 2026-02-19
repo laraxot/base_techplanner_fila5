@@ -14,27 +14,51 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'job_id' => [
             'label' => 'ID del trabajo',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'exportable_type' => [
             'label' => 'Tipo exportable',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'file_path' => [
             'label' => 'Ruta del archivo',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'format' => [
             'label' => 'Formato',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'status' => [
             'label' => 'Estado',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'created_at' => [
             'label' => 'Creado en',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'completed_at' => [
             'label' => 'Completado en',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

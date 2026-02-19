@@ -11,19 +11,41 @@ return [
         ],
     ],
     'fields' => [
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
+        'first_name' => [
+            'label' => 'Nome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'last_name' => [
+            'label' => 'Cognome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
         'secondary_color' => [
             'label' => 'secondary_color',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'slug' => [
             'label' => 'slug',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'name' => [
             'label' => 'name',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'id' => [
             'label' => 'id',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [
@@ -41,4 +63,6 @@ return [
         ],
         'change_password' => 'Cambio password',
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
 ];

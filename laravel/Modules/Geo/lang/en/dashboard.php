@@ -25,4 +25,10 @@ return [
         'places_by_category' => 'Luoghi per Categoria',
         'activity_timeline' => 'Timeline Attività',
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
+    ],
 ];

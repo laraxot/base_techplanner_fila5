@@ -14,4 +14,8 @@ return [
             'tooltip' => 'Cerrar sesión',
         ],
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
 ];

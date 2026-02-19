@@ -22,7 +22,7 @@ Il modulo **Job** trasforma il background processing in un asset strategico per 
 Non serve toccare il file `crontab`. Ogni task è definibile via database e gestibile tramite l'interfaccia Filament.
 
 ### 🧘 **Philosophical Design**
-"Un job ben scritto non si accorge di essere in background". Il modulo garantisce che l'ambiente di esecuzione sia coerente e traccabile.
+"Un job ben scritto non si accorge di essere in background". Il modulo garantisce che l'ambiente di esecuzione sia coerente e tracciabile.
 
 ## 🚀 **Quick Start**
 
@@ -46,3 +46,15 @@ Accedere alla sezione **Job Monitor** in Filament per visualizzare grafici di th
 **🔄 Ultimo aggiornamento**: 31 Gennaio 2026
 **📦 Versione**: 2.3.0
 **✅ PHPStan level 10**: Compliance nativa garantita
+
+## 🚀 Release su GitHub
+Le release sono basate su tag Git e possono includere release notes generate automaticamente.
+Workflow locale: `.github/workflows/release.yml`.
+
+
+## 📄 License & Authors
+
+**Authors:**
+- Marco Sottana <marco.sottana@gmail.com>
+
+**License:** MIT
