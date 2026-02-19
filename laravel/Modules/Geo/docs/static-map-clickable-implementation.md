@@ -1,7 +1,7 @@
 # Mappa Statica Cliccabile - Implementazione
 
 ## Obiettivo
-Implementare una mappa statica (immagine PNG) che, al click, apre OpenStreetMap con l'indirizzo di destinazione. Questo approccio è preferibile rispetto a mappe interattive embedded per:
+Implementare una mappa statica (immagine PNG) che, al click, apre Google Maps con l'indirizzo/coordinate di destinazione (link gratuito, NON API). Questo approccio è preferibile rispetto a mappe interattive embedded per:
 - Performance migliori (nessun JavaScript pesante)
 - Caricamento più veloce
 - Esperienza utente semplice e diretta
@@ -20,58 +20,46 @@ Implementare una mappa statica (immagine PNG) che, al click, apre OpenStreetMap 
 
 ## Soluzioni Disponibili
 
-### 1. OpenStreetMap Export Image API (UNICA SOLUZIONE CONSENTITA)
+### 1. Screenshot manuale (consigliato)
 **Vantaggi:**
-- Gratuito, nessuna API key richiesta
-- Nessun limite di costo
-- Open source
+- Nessuna API key
+- Nessuna dipendenza runtime
+- Massima fedeltà visiva (se screenshot da Google Maps UI)
 
 **Svantaggi:**
-- Qualità leggermente inferiore a Google Maps
-- Meno opzioni di personalizzazione
+- Va rigenerata manualmente se cambia l’indirizzo o lo zoom
 
-**URL Pattern:**
-```
-https://render.openstreetmap.org/cgi-bin/export?
-  bbox=12.2197,45.5498,12.2497,45.5798
-  &scale=10000
-  &format=png
-```
-
-**Limiti:**
-- Immagini non possono superare 4,000,000 pixel
-- Server applica limiti CPU/memoria
-- Rate limit: evitare richieste eccessive
-
-**⚠️ IMPORTANTE:** Non scaricare tiles direttamente dai server OpenStreetMap (viola policy). Usare solo Export API.
+**Nota:** usare screenshot dalla UI (Google Maps o OpenStreetMap) senza chiamare API.
 
 ## Implementazione Scelta
 
-**Soluzione: OpenStreetMap Export Image API + PNG statico salvato**
+**Soluzione: PNG statica salvata localmente + link Google Maps**
 
 **🚨 REGOLA CRITICA:** MAI usare Google Maps API, Mapbox API o servizi a pagamento. Solo OpenStreetMap o servizi gratuiti.
 
 ### Fase 1: Generazione Mappa Statica
-1. Generare mappa statica usando OpenStreetMap Export API
-2. Salvare PNG in `Modules/TechPlanner/resources/images/map-via-vanzo.png`
+1. Generare la PNG tramite screenshot manuale (UI)
+2. Salvare PNG in `public/modules/techplanner/images/map-via-vanzo.png`
 3. Verificare che l'indirizzo sia chiaramente visibile
 
 ### Fase 2: Componente Blade
 Creare componente `pub_theme::components.blocks.map.static-clickable` che:
 - Mostra l'immagine PNG statica
-- Al click, apre OpenStreetMap con link diretto all'indirizzo
+- Al click, apre Google Maps con link diretto all'indirizzo/coordinate (link gratuito, NON API)
 - Supporta responsive design
 - Include attributi accessibilità
 
-### Fase 3: Link OpenStreetMap
-**Pattern URL OpenStreetMap (search):**
+### Fase 3: Link Google Maps
+**Pattern URL Google Maps (search):**
+
 ```
-https://www.openstreetmap.org/search?query=Via+Vanzo+86%2FA%2C+31021+Mogliano+Veneto+TV
+https://www.google.com/maps/search/?api=1&query=Via+Vanzo+86%2FA%2C+31021+Mogliano+Veneto+TV
 ```
 
-Oppure con coordinate (marker + zoom):
+Oppure con coordinate:
+
 ```
-https://www.openstreetmap.org/?mlat=45.5633&mlon=12.2506#map=17/45.5633/12.2506
+https://www.google.com/maps?q=45.5633,12.2506
 ```
 
 ## Struttura File
@@ -99,8 +87,8 @@ laravel/
 ## Componente Blade - Specifiche
 
 ### Props
-- `image_path`: Path relativo all'immagine PNG (default: `techplanner::images.map-via-vanzo`)
-- `address`: Indirizzo completo per OpenStreetMap
+- `image_path`: Path relativo all'immagine PNG
+- `address`: Indirizzo completo per Google Maps
 - `coordinates`: Array con `lat` e `lng` (opzionale, per link diretto coordinate)
 - `title`: Titolo sezione (default: "Dove Siamo")
 - `alt`: Testo alternativo immagine (default: "Mappa ubicazione")

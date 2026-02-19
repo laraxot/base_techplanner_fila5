@@ -22,7 +22,7 @@
                     },
                     "secondary_cta": {
                         "label": "Invia Email",
-                        "url": "mailto:amministrazione@sottana.com"
+                        "url": "mailto:studio@sottana.com"
                     }
                 }
             },
@@ -57,8 +57,8 @@
                             "type": "email",
                             "title": "Email",
                             "description": "Invia le tue richieste via email",
-                            "value": "amministrazione@sottana.com",
-                            "url": "mailto:amministrazione@sottana.com",
+                            "value": "studio@sottana.com",
+                            "url": "mailto:studio@sottana.com",
                             "hours": "Risposta entro 24 ore",
                             "icon": "email",
                             "color": "teal"
@@ -255,7 +255,7 @@
                     },
                     "secondary_cta": {
                         "label": "Send Email",
-                        "url": "mailto:amministrazione@sottana.com"
+                        "url": "mailto:studio@sottana.com"
                     }
                 }
             },
@@ -290,8 +290,8 @@
                             "type": "email",
                             "title": "Email",
                             "description": "Send your requests via email",
-                            "value": "amministrazione@sottana.com",
-                            "url": "mailto:amministrazione@sottana.com",
+                            "value": "studio@sottana.com",
+                            "url": "mailto:studio@sottana.com",
                             "hours": "Response within 24 hours",
                             "icon": "email",
                             "color": "teal"

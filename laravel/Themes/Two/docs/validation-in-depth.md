@@ -7,8 +7,9 @@ Procedura completa per validare markup, performance, accessibilità e best pract
 | Strumento | Cosa valida | Come | Automazione |
 |-----------|-------------|------|-------------|
 | **PageSpeed Insights** | Performance, Accessibility, Best Practices, SEO | Web manuale o Lighthouse CLI | Manuale; API con quota limitata |
-| **W3C Nu Validator** | Markup HTML5 | URL, incolla HTML, o POST API | Script bash + API (senza quota su POST) |
+| **W3C Nu Validator** | Markup HTML5 | URL, **incolla HTML**, o POST API | Script bash + API (senza quota su POST) |
 | **axe-core CLI** | Accessibilità (WCAG) | URL o HTML salvato | `npx @axe-core/cli` |
+| **A11y MCP** | Accessibilità (axe-core) | **URL o incolla HTML** via tool MCP | `test_accessibility` / `test_html_string` |
 | **Browser MCP** | Apertura pagine/siti validazione | Navigazione e snapshot | Limitato (snapshot non sempre adatto a form) |
 
 ---
@@ -22,6 +23,7 @@ Procedura completa per validare markup, performance, accessibilità e best pract
   lighthouse https://sottana.net/it --view --output=html --output-path=./reports/psi-it.html
   ```
 - **Elenco URL**: `docs/pagespeed-frontoffice-urls.txt` (root progetto).
+- **Elenco URL**: `laravel/docs/pagespeed-frontoffice-urls.txt`.
 - Dettaglio: [pagespeed-frontoffice-validation.md](pagespeed-frontoffice-validation.md).
 
 ---
@@ -60,11 +62,11 @@ Il validator accetta **HTML in POST** senza quota per URL:
 ./bashscripts/validation/validate-frontoffice-w3c.sh
 ```
 
-- Legge gli URL da `docs/pagespeed-frontoffice-urls.txt`.
-- Per ogni URL: scarica l’HTML in `reports/validation/{slug}.html`, invia POST al Nu Validator, salva il report in `reports/validation/{slug}-w3c.json`.
+- Legge gli URL da `laravel/docs/pagespeed-frontoffice-urls.txt`.
+- Per ogni URL: scarica l’HTML in `laravel/storage/validation/w3c/{slug}.html`, invia POST al Nu Validator, salva il report in `laravel/storage/validation/w3c/{slug}.json`.
 - In console: conteggio errori e warning per pagina e totali.
 
-Report aggregato degli ultimi risultati: [reports/validation/w3c-report.md](../../../reports/validation/w3c-report.md) (path dalla root progetto).
+Report aggregato (se necessario) può essere generato a partire dai JSON in `laravel/storage/validation/w3c/`.
 
 ---
 
@@ -94,10 +96,33 @@ Installazione globale (opzionale): `npm install -g @axe-core/cli`.
   - Verificare che la pagina di risultati sia caricata (snapshot).
 - **Limitazione**: l’automazione completa (compilare form, cliccare Analyze, estrarre punteggi) non è affidabile perché lo snapshot può restituire “Unsupported content type” o strutture non adatte al targeting degli input; l’uso è quindi **di supporto** (aprire il sito di validazione) più che fully automated.
 
-### 4.2 Altri MCP
+### 4.2 A11y MCP (accessibilità – incolla HTML o URL)
 
-- **mcp_web_fetch**: utile per scaricare HTML di una pagina (es. per poi inviarlo al validator via POST o incollarlo in Nu).
-- Nessun MCP dedicato “PageSpeed” o “W3C validator” è richiesto: il flusso principale resta script (W3C) + uso manuale o Lighthouse (PageSpeed) + axe-core.
+Esistono **MCP server** che espongono axe-core per test di accessibilità. Puoi validare **per URL** oppure **incollando HTML** (utile per pagine non pubblicate o snippet).
+
+**Opzione A – a11y-mcp-server** (ronantakizawa/a11ymcp):
+
+- **Tool**: `test_accessibility` (URL) e **`test_html_string`** (HTML incollato).
+- Tag WCAG: es. `["wcag2aa"]`. Viewport opzionale (es. mobile 390×844).
+- Config Cursor: in root progetto il file `.mcp.json` include già il server `a11y-accessibility`; dopo aver riavviato Cursor puoi usare i tool dall’assistente.
+
+**Opzione B – a11y-mcp** (priyankark/a11y-mcp):
+
+- **Tool**: `audit_webpage` (URL) e `get_summary` (URL). Include snippet HTML nei risultati.
+- Config: `"command": "npx", "args": ["a11y-mcp"]`.
+
+**Flusso “incolla HTML”**:
+
+1. Ottieni l’HTML (sorgente pagina dal browser oppure da `reports/validation/{slug}.html` dopo lo script W3C).
+2. Usa il tool **`test_html_string`** (Opzione A) con parametro `html` = contenuto incollato.
+3. Interpreta il JSON restituito (violations, contrast, ARIA, ecc.).
+
+Riferimenti: [a11y-mcp-server](https://github.com/ronantakizawa/a11ymcp), [a11y-mcp](https://github.com/priyankark/a11y-mcp), [mcpservers.org](https://mcpservers.org).
+
+### 4.3 Altri MCP
+
+- **mcp_web_fetch**: utile per scaricare HTML di una pagina (es. per POST al W3C o per incollarlo in Nu / in `test_html_string`).
+- Nessun MCP dedicato “PageSpeed” o “W3C validator”: il flusso principale resta script (W3C) + uso manuale o Lighthouse (PageSpeed) + axe-core CLI o A11y MCP.
 
 ---
 
@@ -120,11 +145,20 @@ Le voci “Da correggere” sono prioritarie per conformità markup; Alpine/Live
 
 ---
 
-## 6. Checklist validazione pre-release
+## 6. Dove “incollare HTML” (riepilogo)
+
+| Obiettivo | Dove incollare | Strumento |
+|-----------|----------------|-----------|
+| **Markup HTML5** | [validator.w3.org/nu/#textarea](https://validator.w3.org/nu/#textarea) | Validate by Direct Input → Check |
+| **Accessibilità WCAG** | Tool MCP `test_html_string` (parametro `html`) | A11y MCP (a11y-mcp-server) |
+
+L’HTML da incollare si ottiene: “Visualizza sorgente pagina” nel browser, oppure dai file `reports/validation/{slug}.html` generati dallo script W3C.
+
+## 7. Checklist validazione pre-release
 
 - [ ] PageSpeed: tutte le URL in `docs/pagespeed-frontoffice-urls.txt` verificate (manuale o Lighthouse).
-- [ ] W3C: eseguito `./bashscripts/validation/validate-frontoffice-w3c.sh` e letti i totali; eventuale incolla HTML su [Nu #textarea](https://validator.w3.org/nu/#textarea) per pagine critiche.
-- [ ] axe-core: almeno homepage e contatti con `npx @axe-core/cli <url>`.
+- [ ] W3C: eseguito `./bashscripts/validation/validate-frontoffice-w3c.sh` e letti i totali; eventuale **incolla HTML** su [Nu #textarea](https://validator.w3.org/nu/#textarea) per pagine critiche.
+- [ ] Accessibilità: axe-core (`npx @axe-core/cli <url>`) oppure **A11y MCP** (`test_accessibility` per URL o `test_html_string` per HTML incollato).
 - [ ] Errori W3C “Da correggere” (iframe in `<a>`, duplicate `class`, heading skip, `style` in body) affrontati e documentati.
 
 ---

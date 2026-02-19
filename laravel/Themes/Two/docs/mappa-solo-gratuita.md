@@ -13,8 +13,8 @@
 **Componente:** `pub_theme::components.blocks.map.static-clickable`
 
 **Servizi Utilizzati:**
-- ✅ OpenStreetMap Export API (per mappa statica)
-- ✅ OpenStreetMap (apertura pagina con marker/search)
+- ✅ Screenshot manuale (UI) per PNG statica (no API)
+- ✅ Link Google Maps per navigazione (gratuito, NON API)
 
 **Servizi NON Utilizzati:**
 - ❌ Google Maps Static API
@@ -34,8 +34,8 @@ $imageUrl = "https://render.openstreetmap.org/cgi-bin/export?bbox={$bbox}&scale=
 ### Link Destinazione
 
 ```php
-// Link OpenStreetMap (gratuito)
-$mapUrl = "https://www.openstreetmap.org/search?query={$address}";
+// Link Google Maps (gratuito, NON API)
+$mapUrl = "https://www.google.com/maps/search/?api=1&query={$address}";
 ```
 
 ## Verifica
@@ -43,8 +43,8 @@ $mapUrl = "https://www.openstreetmap.org/search?query={$address}";
 Prima di ogni commit, verificare:
 - [ ] Nessuna chiamata a Google Maps API
 - [ ] Nessuna chiamata a Mapbox API
-- [ ] Solo OpenStreetMap per mappe statiche
-- [ ] Link destinazione solo OpenStreetMap
+- [ ] PNG statica via screenshot manuale (no API)
+- [ ] Link destinazione: solo Google Maps link (NON API)
 
 ## Documentazione Correlata
 

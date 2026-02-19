@@ -47,7 +47,7 @@ Installazione: `npm install -g lighthouse`
 
 ### Script batch (elenco URL)
 
-Il file `docs/pagespeed-frontoffice-urls.txt` (in root progetto) contiene un URL per riga. Si può usare per uno script che apre PageSpeed o chiama l’API (con chiave API propria, quota pubblica è limitata).
+Il file `laravel/docs/pagespeed-frontoffice-urls.txt` contiene un URL per riga. Si può usare per script batch con Lighthouse / axe / W3C.
 
 ## Categorie e obiettivi
 
@@ -64,6 +64,7 @@ Per markup (W3C), incolla HTML, script automatico, axe-core e uso MCP: [Validazi
 
 - [Validazione a fondo (W3C, axe, MCP)](validation-in-depth.md)
 - [Deployment e validazione](./deployment-and-validation.md)
+- [Validazione batch (Lighthouse, axe, W3C)](frontoffice-validation-batch.md)
 - [WCAG compliance plan](./wcag-compliance-plan.md)
 - [Validazione MAUVE](./mauve-accessibility-validation.md)
 - [PageSpeed Insights](https://pagespeed.web.dev/)
