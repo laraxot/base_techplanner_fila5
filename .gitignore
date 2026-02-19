@@ -69,3 +69,4 @@ bashscripts/
 laravel/config/net/sottana/database/content/information_schema_tables.json
 *.*Indentifier
 *.*Zone.Identifier
+lighthouse.*
