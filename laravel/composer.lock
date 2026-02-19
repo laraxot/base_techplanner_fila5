@@ -937,7 +937,7 @@
         },
         {
             "name": "coolsam/panel-modules",
-            "version": "dev-dev",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "Modules/Xot/./packages/coolsam/panel-modules",
