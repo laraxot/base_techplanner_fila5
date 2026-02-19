@@ -1,7 +1,6 @@
 # 🗺️ GUIDA INTEGRAZIONE MAPPA INTERATTIVA
 
 **Modulo**: UI (User Interface)
-**Data**: 2025-01-27
 **Versione**: 1.0
 **Stato**: 🚧 IN SVILUPPO
 
@@ -585,15 +584,14 @@ class GeocodingService
 - [Livewire Components](https://laravel-livewire.com/docs/2.x/quickstart)
 
 ### 📖 Documentazione Correlata
-- [Farmshops.eu Analysis](../Geo/docs/farmshops-analysis.md)
+- [Farmshops.eu Analysis](../geo/docs/farmshops-analysis.md)
 - [Geo Module Documentation](../Geo/docs/)
 - [UI Component API](component-api.md)
 - [Styling Guide](styling-guide.md)
 
 ---
 
-**Last Updated**: 2025-01-27
-**Next Review**: 2025-02-27
+
 **Status**: 🚧 IN SVILUPPO
 **Confidence Level**: 90%
 

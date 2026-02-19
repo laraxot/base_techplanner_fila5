@@ -14,21 +14,39 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'name' => [
             'label' => '名称',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'description' => [
             'label' => '描述',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'color' => [
             'label' => '颜色',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'created_at' => [
             'label' => '创建时间',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'updated_at' => [
             'label' => '更新时间',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

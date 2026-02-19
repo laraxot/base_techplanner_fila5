@@ -27,6 +27,7 @@ return [
             'help' => 'Model type associated with the address',
             'description' => 'Type of model that owns this address',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'model_id' => [
             'label' => 'Model ID',
@@ -34,6 +35,7 @@ return [
             'help' => 'Identifier of the associated model',
             'description' => 'ID of the model that owns this address',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'name' => [
             'label' => 'Name',
@@ -41,6 +43,7 @@ return [
             'help' => 'An identifying name for this address, e.g. "Home" or "Office"',
             'helper_text' => '',
             'description' => 'Address identifying name',
+            'tooltip' => '',
         ],
         'description' => [
             'label' => 'Description',
@@ -48,6 +51,7 @@ return [
             'help' => 'Additional notes about the address',
             'description' => 'Additional address description',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'street' => [
             'label' => 'Street',
@@ -55,6 +59,7 @@ return [
             'help' => 'Street address including number',
             'description' => 'Street address',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'city' => [
             'label' => 'City',
@@ -62,6 +67,7 @@ return [
             'help' => 'City name',
             'description' => 'City name',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'state' => [
             'label' => 'State/Province',
@@ -69,6 +75,7 @@ return [
             'help' => 'State or province name',
             'description' => 'State or province',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'postal_code' => [
             'label' => 'Postal Code',
@@ -76,6 +83,7 @@ return [
             'help' => 'ZIP or postal code',
             'description' => 'Postal code',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'country' => [
             'label' => 'Country',
@@ -83,6 +91,7 @@ return [
             'help' => 'Country name',
             'description' => 'Country name',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'latitude' => [
             'label' => 'Latitude',
@@ -90,6 +99,7 @@ return [
             'help' => 'Geographic latitude coordinate',
             'description' => 'Latitude coordinate',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'longitude' => [
             'label' => 'Longitude',
@@ -97,18 +107,23 @@ return [
             'help' => 'Geographic longitude coordinate',
             'description' => 'Longitude coordinate',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'is_primary' => [
             'label' => 'Primary Address',
             'help' => 'Mark as primary address',
             'description' => 'Whether this is the primary address',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'is_verified' => [
             'label' => 'Verified Address',
             'help' => 'Address has been verified',
             'description' => 'Whether this address has been verified',
             'helper_text' => '',
+            'tooltip' => '',
         ],
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
 ];

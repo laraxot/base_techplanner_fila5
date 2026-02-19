@@ -14,24 +14,45 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'job_id' => [
             'label' => '任务ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'importable_type' => [
             'label' => '可导入类型',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'file_path' => [
             'label' => '文件路径',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'status' => [
             'label' => '状态',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'created_at' => [
             'label' => '创建时间',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'completed_at' => [
             'label' => '完成时间',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

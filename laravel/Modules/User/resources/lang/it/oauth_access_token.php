@@ -8,4 +8,10 @@ return [
         'icon' => 'heroicon-o-key',
         'sort' => 9,
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
+    ],
 ];

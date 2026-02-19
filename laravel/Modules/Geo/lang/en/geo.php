@@ -190,4 +190,8 @@ return [
             'date_range' => 'Periodo',
         ],
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
 ];

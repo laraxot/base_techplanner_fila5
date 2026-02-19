@@ -26,10 +26,16 @@ return [
             'label' => 'Nome Indirizzo',
             'placeholder' => 'es. Sede Principale, Filiale Nord, Casa',
             'help' => 'Nome identificativo per questo indirizzo (visibile solo con più indirizzi)',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'is_primary' => [
             'label' => 'Indirizzo Principale',
             'help' => 'Designa questo come indirizzo principale (solo uno può essere principale)',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'messages' => [
@@ -49,5 +55,16 @@ return [
         'name_visibility' => 'Il campo nome è visibile solo quando hai più di un indirizzo',
         'primary_exclusivity' => 'Impostando questo come principale, tutti gli altri diventeranno secondari',
         'single_primary' => 'Con un solo indirizzo, questo è automaticamente il principale',
+    ],
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'actions' => [
     ],
 ];

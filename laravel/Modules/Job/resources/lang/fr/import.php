@@ -14,24 +14,45 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'job_id' => [
             'label' => 'ID de l\'Emploi',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'importable_type' => [
             'label' => 'Type Importable',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'file_path' => [
             'label' => 'Chemin du Fichier',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'status' => [
             'label' => 'Statut',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'created_at' => [
             'label' => 'Créé À',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'completed_at' => [
             'label' => 'Complété À',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

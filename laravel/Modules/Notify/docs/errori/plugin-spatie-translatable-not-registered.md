@@ -362,12 +362,11 @@ Prima di usare `LangBase*`:
 - [Spatie Laravel Translatable](https://spatie.be/docs/laravel-translatable/v6/introduction)
 
 ### Documentazione Interna
-- [Lang Module README](../../../Lang/docs/README.md)
-- [Filament Panel Configuration](../../../Xot/docs/filament/panel-configuration.md)
+- [Lang Module README](../../../lang/docs/readme.md)
+- [Filament Panel Configuration](../../../xot/docs/filament/panel-configuration.md)
 
 ---
 
-**Created**: 27 Ottobre 2025  
 **Status**: ⏳ ATTENDE DECISIONE  
 **Priority**: P1 (blocca funzionalità)  
 **Next Step**: Decidere se MailTemplate deve essere traducibile

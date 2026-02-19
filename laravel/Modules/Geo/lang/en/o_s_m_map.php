@@ -7,4 +7,10 @@ return [
         'label' => 'Navigation Label',
         'group' => 'Geo',
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
+    ],
 ];

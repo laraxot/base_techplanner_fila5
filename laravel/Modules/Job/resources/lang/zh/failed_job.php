@@ -14,21 +14,39 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'connection' => [
             'label' => '连接',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'queue' => [
             'label' => '队列',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'payload' => [
             'label' => '内容',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'exception' => [
             'label' => '异常',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'failed_at' => [
             'label' => '失败时间',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

@@ -10,6 +10,22 @@ return [
     'fields' => [
         'location' => [
             'label' => 'location',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'label' => 'Dotswan Map',
+    'plural_label' => 'Dotswan Map (Plurale)',
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Dotswan Map',
+        ],
+        'edit' => [
+            'label' => 'Modifica Dotswan Map',
+        ],
+        'delete' => [
+            'label' => 'Elimina Dotswan Map',
         ],
     ],
 ];

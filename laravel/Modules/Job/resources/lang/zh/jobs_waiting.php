@@ -14,27 +14,51 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'connection' => [
             'label' => '连接',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'queue' => [
             'label' => '队列',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'payload' => [
             'label' => '内容',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'attempts' => [
             'label' => '尝试次数',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'reserved_at' => [
             'label' => '保留时间',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'available_at' => [
             'label' => '可用时间',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'created_at' => [
             'label' => '创建时间',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

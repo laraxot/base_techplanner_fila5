@@ -13,4 +13,8 @@ return [
             'tooltip' => 'Riordina Record',
         ],
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
 ];

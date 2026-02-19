@@ -9,6 +9,7 @@ return [
             'placeholder' => 'recipient',
             'helper_text' => 'recipient',
             'description' => 'recipient',
+            'tooltip' => '',
         ],
     ],
     'actions' => [
@@ -26,4 +27,13 @@ return [
             'tooltip' => 'logout',
         ],
     ],
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
 ];

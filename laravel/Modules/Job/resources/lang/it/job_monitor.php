@@ -14,27 +14,51 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'job_id' => [
             'label' => 'Lavoro',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'status' => [
             'label' => 'Stato',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'progress' => [
             'label' => 'Progresso',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'start_time' => [
             'label' => 'Ora inizio',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'end_time' => [
             'label' => 'Ora fine',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'estimated_completion' => [
             'label' => 'Completamento stimato',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'created_at' => [
             'label' => 'Creato il',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

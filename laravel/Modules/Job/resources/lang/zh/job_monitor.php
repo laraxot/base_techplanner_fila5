@@ -14,27 +14,51 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'job_id' => [
             'label' => '任务',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'status' => [
             'label' => '状态',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'progress' => [
             'label' => '进度',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'start_time' => [
             'label' => '开始时间',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'end_time' => [
             'label' => '结束时间',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'estimated_completion' => [
             'label' => '预计完成时间',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'created_at' => [
             'label' => '创建时间',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

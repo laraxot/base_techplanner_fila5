@@ -14,43 +14,81 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'name' => [
             'label' => 'Name',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'host' => [
             'label' => 'Host',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'port' => [
             'label' => 'Port',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'username' => [
             'label' => 'Username',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'password' => [
             'label' => 'Password',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'encryption' => [
             'label' => 'Encryption',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'from_address' => [
             'label' => 'From Address',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'from_name' => [
             'label' => 'From Name',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'status' => [
             'label' => 'Status',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'last_tested_at' => [
             'label' => 'Last Tested At',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'created_at' => [
             'label' => 'Created At',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'body_html' => [
             'description' => 'HTML Body',
             'helper_text' => 'HTML content of the email',
+            'label' => '',
+            'tooltip' => '',
         ],
     ],
     'actions' => [

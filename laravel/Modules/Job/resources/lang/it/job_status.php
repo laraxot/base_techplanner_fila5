@@ -14,21 +14,39 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'name' => [
             'label' => 'Nome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'description' => [
             'label' => 'Descrizione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'color' => [
             'label' => 'Colore',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'created_at' => [
             'label' => 'Creato il',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'updated_at' => [
             'label' => 'Aggiornato il',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

@@ -13,10 +13,16 @@ return [
         'google_maps_api_key' => [
             'label' => 'Google Maps API Key',
             'helper' => 'Chiave API per l\'integrazione con Google Maps',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'debugbar_enabled' => [
             'label' => 'Debug Bar',
             'helper' => 'Abilita/Disabilita la barra di debug',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [
@@ -27,4 +33,6 @@ return [
         'saved' => 'Impostazioni salvate con successo',
         'error' => 'Errore durante il salvataggio delle impostazioni',
     ],
+    'label' => 'Setting Page',
+    'plural_label' => 'Setting Page (Plurale)',
 ];

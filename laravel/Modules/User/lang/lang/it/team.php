@@ -11,8 +11,18 @@ return [
         ],
     ],
     'fields' => [
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
+        'first_name' => [
+            'label' => 'Nome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'last_name' => [
+            'label' => 'Cognome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
     ],
     'actions' => [
         'import' => [
@@ -31,4 +41,6 @@ return [
             'label' => 'create',
         ],
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
 ];

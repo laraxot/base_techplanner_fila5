@@ -65,12 +65,13 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 {
     use HasChildren;
     use HasRoles;
-    use HasUuids;
+
+    // use HasUuids;
     use InteractsWithMedia;
     use IsProfileTrait;
     use Notifiable;
     use SchemalessAttributesTrait;
-    use SoftDeletes;
+    // use SoftDeletes;
 
     /**
      * Undocumented variable.
@@ -178,7 +179,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     protected function casts(): array
     {
         return [
-            'id' => 'string',
+            // 'id' => 'string',
             'uuid' => 'string',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',

@@ -487,7 +487,7 @@ class StudioCardSelectorTest extends DuskTestCase
 ## 📖 **Collegamenti Documentazione**
 
 ### Modulo UI
-- [Components Overview](./README.md)
+- [Components Overview](./readme.md)
 - [Form Components Guide](../form-components.md)
 - [Accessibility Guidelines](../accessibility.md)
 
@@ -506,4 +506,4 @@ class StudioCardSelectorTest extends DuskTestCase
 **Reusability**: 🔄 High - Cross-module compatible
 **Complexity**: 🟡 Medium - Custom view with Alpine.js
 **Maintenance**: 🟢 Low - Well-documented and tested
-**Last Updated**: January 2025
+

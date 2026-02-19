@@ -18,10 +18,11 @@ return [
     'fields' => [
         'title' => [
             'label' => 'Titolo Contatto',
-            'placeholder' => 'Inserisci il titolo (es. Studio Dentistico)',
+            'placeholder' => 'Inserisci il titolo (es. Studio Dentistico]',
             'help' => 'Nome o titolo principale per identificare il contatto',
             'helper_text' => 'title',
             'description' => 'title',
+            'tooltip' => '',
         ],
         'description' => [
             'label' => 'Descrizione',
@@ -29,6 +30,7 @@ return [
             'help' => 'Breve descrizione delle attività e servizi offerti',
             'helper_text' => 'description',
             'description' => 'description',
+            'tooltip' => '',
         ],
         'email' => [
             'label' => 'Email di Contatto',
@@ -36,6 +38,7 @@ return [
             'help' => 'Indirizzo email principale per le comunicazioni',
             'helper_text' => 'email',
             'description' => 'email',
+            'tooltip' => '',
         ],
         'phone' => [
             'label' => 'Numero di Telefono',
@@ -43,6 +46,7 @@ return [
             'help' => 'Numero di telefono principale dello studio',
             'helper_text' => 'phone',
             'description' => 'phone',
+            'tooltip' => '',
         ],
         'address' => [
             'label' => 'Indirizzo Completo',
@@ -50,6 +54,7 @@ return [
             'help' => 'Indirizzo fisico completo dello studio',
             'helper_text' => 'address',
             'description' => 'address',
+            'tooltip' => '',
         ],
         'map_url' => [
             'label' => 'Link Mappa',
@@ -57,6 +62,7 @@ return [
             'help' => 'URL per aprire la posizione su Google Maps o servizi simili',
             'helper_text' => 'map_url',
             'description' => 'map_url',
+            'tooltip' => '',
         ],
     ],
     'actions' => [
@@ -88,4 +94,6 @@ return [
         'loading' => 'Caricamento contatti in corso...',
         'saved' => 'Modifiche salvate correttamente',
     ],
+    'label' => 'Contact',
+    'plural_label' => 'Contact (Plurale)',
 ];

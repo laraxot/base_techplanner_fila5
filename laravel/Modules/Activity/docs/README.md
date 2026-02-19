@@ -6,7 +6,7 @@
 
 > **🚀 Modulo Activity**: Il sistema di "scatola nera" dell'applicazione. Traccia ogni azione utente, mutamento di stato e evento di dominio, fornendo una cronologia immutabile e analizzabile.
 
-## 📋 **Panoramica**
+## Contribution
 
 Il modulo **Activity** non è un semplice logger, ma un'infrastruttura completa per la conformità, la sicurezza e la business intelligence.
 
@@ -56,3 +56,15 @@ class Project extends Model {
 **🔄 Ultimo aggiornamento**: 31 Gennaio 2026
 **📦 Versione**: 2.3.0
 **✅ PHPStan level 10**: Compliance nativa garantita
+
+## 🚀 Release su GitHub
+Le release sono basate su tag Git e possono includere release notes generate automaticamente.
+Workflow locale: `.github/workflows/release.yml`.
+
+
+## 📄 License & Authors
+
+**Authors:**
+- Marco Sottana <marco.sottana@gmail.com>
+
+**License:** MIT

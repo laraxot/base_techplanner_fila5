@@ -14,27 +14,51 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'command' => [
             'label' => 'Comando',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'expression' => [
             'label' => 'Espressione cron',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'description' => [
             'label' => 'Descrizione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'timezone' => [
             'label' => 'Fuso orario',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'status' => [
             'label' => 'Stato',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'created_at' => [
             'label' => 'Creato il',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'updated_at' => [
             'label' => 'Aggiornato il',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

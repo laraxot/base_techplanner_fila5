@@ -7,18 +7,26 @@ return [
         'recipient' => [
             'label' => 'Recipient',
             'helper_text' => 'Enter the phone number in international format (e.g. +393401234567).',
+            'tooltip' => '',
+            'description' => '',
         ],
         'to' => [
             'label' => 'Recipient',
             'helper_text' => 'Enter the phone number in international format (e.g. +393401234567).',
+            'tooltip' => '',
+            'description' => '',
         ],
         'message' => [
             'label' => 'Message',
             'helper_text' => 'Enter the message content (max 160 characters for a single SMS).',
+            'tooltip' => '',
+            'description' => '',
         ],
         'driver' => [
             'label' => 'SMS Driver',
             'helper_text' => 'Select the provider for sending the SMS.',
+            'tooltip' => '',
+            'description' => '',
         ],
     ],
     'actions' => [
@@ -51,4 +59,13 @@ return [
             'label' => 'Provider',
         ],
     ],
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
 ];

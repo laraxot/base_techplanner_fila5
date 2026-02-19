@@ -14,21 +14,39 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'connection' => [
             'label' => 'Conexión',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'queue' => [
             'label' => 'Cola',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'payload' => [
             'label' => 'Carga Útil',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'exception' => [
             'label' => 'Excepción',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'failed_at' => [
             'label' => 'Fallido En',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

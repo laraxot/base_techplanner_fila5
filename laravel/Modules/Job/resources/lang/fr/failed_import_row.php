@@ -14,21 +14,39 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'import_batch_id' => [
             'label' => 'ID du Lot d\'Importation',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'row_index' => [
             'label' => 'Index de Ligne',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'errors' => [
             'label' => 'Erreurs',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'data' => [
             'label' => 'Données',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
         'created_at' => [
             'label' => 'Créé À',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

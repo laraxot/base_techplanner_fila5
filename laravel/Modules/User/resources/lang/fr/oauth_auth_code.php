@@ -9,4 +9,10 @@ return [
         'icon' => 'heroicon-o-code-bracket',
         'sort' => 27,
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
+    ],
 ];

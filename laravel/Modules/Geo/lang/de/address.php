@@ -27,6 +27,7 @@ return [
             'help' => 'Mit der Adresse verknüpfter Modelltyp',
             'description' => 'Typ des Modells, das diese Adresse besitzt',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'model_id' => [
             'label' => 'Modell-ID',
@@ -34,6 +35,7 @@ return [
             'help' => 'Kennung des verknüpften Modells',
             'description' => 'ID des Modells, das diese Adresse besitzt',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'name' => [
             'label' => 'Name',
@@ -41,6 +43,7 @@ return [
             'help' => 'Ein identifizierender Name für diese Adresse, z.B. "Zuhause" oder "Büro"',
             'helper_text' => '',
             'description' => 'Identifizierender Adressname',
+            'tooltip' => '',
         ],
         'description' => [
             'label' => 'Beschreibung',
@@ -48,6 +51,7 @@ return [
             'help' => 'Zusätzliche Hinweise zur Adresse',
             'description' => 'Zusätzliche Adressbeschreibung',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'street' => [
             'label' => 'Straße',
@@ -55,6 +59,7 @@ return [
             'help' => 'Straßenadresse mit Hausnummer',
             'description' => 'Straßenadresse',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'city' => [
             'label' => 'Stadt',
@@ -62,6 +67,7 @@ return [
             'help' => 'Stadtname',
             'description' => 'Stadtname',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'state' => [
             'label' => 'Bundesland/Provinz',
@@ -69,6 +75,7 @@ return [
             'help' => 'Bundesland oder Provinz',
             'description' => 'Bundesland oder Provinz',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'postal_code' => [
             'label' => 'Postleitzahl',
@@ -76,6 +83,7 @@ return [
             'help' => 'PLZ oder Postleitzahl',
             'description' => 'Postleitzahl',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'country' => [
             'label' => 'Land',
@@ -83,6 +91,7 @@ return [
             'help' => 'Ländername',
             'description' => 'Ländername',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'latitude' => [
             'label' => 'Breitengrad',
@@ -90,6 +99,7 @@ return [
             'help' => 'Geografische Breitengrad-Koordinate',
             'description' => 'Breitengrad-Koordinate',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'longitude' => [
             'label' => 'Längengrad',
@@ -97,18 +107,23 @@ return [
             'help' => 'Geografische Längengrad-Koordinate',
             'description' => 'Längengrad-Koordinate',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'is_primary' => [
             'label' => 'Primäre Adresse',
             'help' => 'Als primäre Adresse markieren',
             'description' => 'Ob dies die primäre Adresse ist',
             'helper_text' => '',
+            'tooltip' => '',
         ],
         'is_verified' => [
             'label' => 'Verifizierte Adresse',
             'help' => 'Adresse wurde überprüft',
             'description' => 'Ob diese Adresse überprüft wurde',
             'helper_text' => '',
+            'tooltip' => '',
         ],
     ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
 ];
