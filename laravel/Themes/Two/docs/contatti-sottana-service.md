@@ -1,7 +1,4 @@
-# Aggiornamento Dati Contatto - Sottana Service
-
-## Data Ultimo Aggiornamento
-2026-02-19
+# Dati Contatto e Brand - Sottana Service
 
 ## Dati Aziendali Corretti
 
@@ -11,9 +8,13 @@
 | Email | studio@sottana.com |
 | Telefono Fisso | +39 041 455552 |
 | Telefono Mobile | +39 347 58 96 127 |
-| Indirizzo | Via Vanzo 86/A, 31021 Mogliano Veneto TV |
+| Indirizzo | via Vanzo 86/A, 31021 Mogliano Veneto TV |
 | P.IVA | 05532540266 |
 |REA | TV - 451911 |
+
+### Coordinate Geografiche
+- **Latitudine**: 45.5786
+- **Longitudine**: 12.2364
 
 ### Brand
 | Campo | Valore |
@@ -22,8 +23,9 @@
 | Logo | Elefante stilizzato SVG (nel header) |
 
 ### Mappa
-- Embed: iframe Google Maps
-- Link navigazione: Google Maps con indirizzo
+- **Provider**: OpenStreetMap (GRATUITO)
+- **Implementazione**: iframe embed + link diretto
+- **Regola**: MAI usare Google Maps API (a pagamento)
 
 ## File Modificati
 

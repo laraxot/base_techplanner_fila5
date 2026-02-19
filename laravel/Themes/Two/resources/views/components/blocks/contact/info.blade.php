@@ -7,6 +7,16 @@
     'address' => '',
 ])
 
+@php
+    // Valori di default per la mappa
+    $defaultAddress = 'Via Vanzo 86/A, 31021 Mogliano Veneto TV';
+    $defaultCoordinates = ['lat' => 45.5633, 'lng' => 12.2506];
+    
+    // Usa i valori passati o i default
+    $mapAddress = $address ?: $defaultAddress;
+    $mapCoordinates = !empty($coordinates) ? $coordinates : $defaultCoordinates;
+@endphp
+
 <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
         {{-- Section Title --}}
@@ -125,26 +135,13 @@
                 @endif
             </div>
 
-            {{-- Map Preview (OpenStreetMap) --}}
+            {{-- Map Preview (Google Maps - preciso per indirizzi italiani) --}}
             <div class="bg-gray-200 rounded-lg overflow-hidden h-96 flex items-center justify-center">
-                @if(!empty($coordinates) && !empty($address))
-                    @php $encodedAddress = urlencode($address); @endphp
-                    <iframe
-                        width="100%"
-                        height="100%"
-                        frameborder="0"
-                        style="border:0"
-                        src="https://nominatim.openstreetmap.org/search?format=iframe&q={{ $encodedAddress }}"
-                        allowfullscreen>
-                    </iframe>
-                @else
-                    <div class="text-center text-gray-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                        </svg>
-                        <p>Mappa non disponibile</p>
-                    </div>
-                @endif
+                @include('pub_theme::components.blocks.map.static-clickable', [
+                    'title' => 'Dove Siamo',
+                    'address' => $mapAddress,
+                    'coordinates' => $mapCoordinates,
+                ])
             </div>
         </div>
     </div>
