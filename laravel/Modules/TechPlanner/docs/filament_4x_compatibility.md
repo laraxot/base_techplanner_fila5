@@ -83,4 +83,3 @@ if ($query instanceof \Illuminate\Database\Eloquent\Relations\Relation) {
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Documentazione Eloquent Relations](https://laravel.com/docs/eloquent-relationships)
 
-*Ultimo aggiornamento: 2025-01-27*
