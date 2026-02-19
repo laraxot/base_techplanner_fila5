@@ -19,6 +19,10 @@
 - **Framework**: Tailwind CSS v4 + Alpine.js
 - **Components**: Modern Blade components
 
+### ♿ Accessibilità
+- [Piano WCAG 2.1 AA](wcag-compliance-plan.md) - Checklist e implementazione
+- [Tecniche W3C e risoluzione](wcag-techniques-resolution.md) - H44, F78, G195, H30, C8, C38, G18, H98, ARIA6
+
 ### 📊 Module Statistics
 - [Site Replication Strategy](./site-replication-strategy.md) - ⭐ NEW
 - [Screenshots Analysis](./screenshots-analysis.md) - ⭐ NEW

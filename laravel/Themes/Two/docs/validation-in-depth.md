@@ -22,7 +22,6 @@ Procedura completa per validare markup, performance, accessibilità e best pract
   npm install -g lighthouse
   lighthouse https://sottana.net/it --view --output=html --output-path=./reports/psi-it.html
   ```
-- **Elenco URL**: `docs/pagespeed-frontoffice-urls.txt` (root progetto).
 - **Elenco URL**: `laravel/docs/pagespeed-frontoffice-urls.txt`.
 - Dettaglio: [pagespeed-frontoffice-validation.md](pagespeed-frontoffice-validation.md).
 
@@ -62,9 +61,8 @@ Il validator accetta **HTML in POST** senza quota per URL:
 ./bashscripts/validation/validate-frontoffice-w3c.sh
 ```
 
-- Legge gli URL da `laravel/docs/pagespeed-frontoffice-urls.txt`.
-- Per ogni URL: scarica l’HTML in `laravel/storage/validation/w3c/{slug}.html`, invia POST al Nu Validator, salva il report in `laravel/storage/validation/w3c/{slug}.json`.
-- In console: conteggio errori e warning per pagina e totali.
+ - Per ogni URL: scarica l’HTML in `laravel/storage/validation/w3c/{slug}.html`, invia POST al Nu Validator, salva il report in `laravel/storage/validation/w3c/{slug}.json`.
+ - In console: conteggio errori e warning per pagina e totali.
 
 Report aggregato (se necessario) può essere generato a partire dai JSON in `laravel/storage/validation/w3c/`.
 
