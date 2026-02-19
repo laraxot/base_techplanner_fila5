@@ -1,8 +1,8 @@
 {
     "id": "1",
     "title": {
-        "it": "Consulenza Sicurezza Studi Professionali | Marco Sottana",
-        "en": "Safety Consulting for Professional Studios | Marco Sottana"
+        "it": "Consulenza Sicurezza Studi Professionali | Sottana Service",
+        "en": "Safety Consulting for Professional Studios | Sottana Service"
     },
     "slug": "home",
     "middleware": null,
@@ -29,26 +29,26 @@
                 "data": {
                     "view": "pub_theme::components.blocks.services.grid",
                     "title": "I Nostri Servizi",
-                    "subtitle": "Soluzioni complete per la sicurezza radiologica",
+                    "subtitle": "Soluzioni complete per la sicurezza e conformità del tuo studio",
                     "id": "servizi",
                     "services": [
                         {
-                            "title": "Controllo Radioprotezione",
-                            "description": "Verifiche periodiche e straordinarie per apparecchiature radiologiche in ambito odontoiatrico e veterinario. Garanzia di conformità al D.Lgs 101/2020.",
+                            "title": "Autorizzazioni Sanitarie",
+                            "description": "Supporto completo per ottenere e mantenere le autorizzazioni sanitarie necessarie per studi dentistici e cliniche veterinarie con apparecchiature radiologiche.",
                             "icon": "heroicon-o-shield-check",
                             "url": "/it/servizi",
                             "cta": "Scopri di più"
                         },
                         {
-                            "title": "Controllo Elettromedicali",
-                            "description": "Manutenzione preventiva e verifiche di sicurezza elettrica su tutti i dispositivi medici (IEC 62353), assicurando funzionalità e sicurezza per pazienti e operatori.",
+                            "title": "Controllo Apparecchi RX ed Elettromedicali",
+                            "description": "Verifiche periodiche di sicurezza e funzionalità su apparecchiature radiologiche (RX, OPT, CBCT) e dispositivi elettromedicali (IEC 62353).",
                             "icon": "heroicon-o-wrench-screwdriver",
                             "url": "/it/servizi",
                             "cta": "Scopri di più"
                         },
                         {
-                            "title": "Documentazione e Conformità",
-                            "description": "Gestione completa della documentazione obbligatoria: registri di controllo, nomine esperti qualificati, relazioni tecniche e comunicazioni agli organi competenti.",
+                            "title": "Documenti di Valutazione del Rischio",
+                            "description": "Redazione e aggiornamento di tutti i documenti obbligatori: DVR, relazioni tecniche, nomine degli esperti di radioprotezione e registri di controllo.",
                             "icon": "heroicon-o-clipboard-document",
                             "url": "/it/servizi",
                             "cta": "Scopri di più"
@@ -111,11 +111,9 @@
                         {
                             "title": "Medicina Veterinaria",
                             "subtitle": "Sicurezza adattata alle esigenze cliniche animali",
-                            "description": "Le cliniche veterinarie richiedono protocolli specifici per la radiologia veterinaria, dai sistemi portatili alle apparecchiature fisse e la fluoroscopia.",
+                            "description": "Le cliniche veterinarie richiedono protocolli specifici per la radiologia veterinaria, dai sistemi portatili alle apparecchiature fisse.",
                             "use_cases": [
-                                "Radiologia Digitale e Analogica - Controlli su sistemi RX fissi e portatili per animali",
-                                "Biosicurezza Radiologica - Procedure per contenimento e protezione durante esami su animali",
-                                "Fluoroscopia e Arco a C - Verifiche per sistemi di radiologia interventistica veterinaria"
+                                "Radiologia Digitale e Analogica - Controlli su sistemi RX fissi e portatili per animali"
                             ],
                             "image": "/themes/Two/resources/images/veterinary-radiology.jpg"
                         }
@@ -149,12 +147,12 @@
                         },
                         {
                             "title": "Sistemi di Protezione",
-                            "description": "Test su interblocchi, segnaletica luminosa e acustica di sicurezza.",
+                            "description": "Test su segnaletica.",
                             "icon": "heroicono-light-bulb"
                         },
                         {
                             "title": "Documentazione e Registri",
-                            "description": "Audit sulla corretta tenuta del registro macchine e delle schede dosimetriche.",
+                            "description": "Audit sulla corretta tenuta della documentazione obbligatoria.",
                             "icon": "heroicono-document-check"
                         }
                     ]
@@ -203,45 +201,6 @@
                         }
                     ]
                 }
-            },
-            {
-                "type": "resources",
-                "slug": "resources-section",
-                "data": {
-                    "view": "pub_theme::components.blocks.resources.grid",
-                    "title": "Risorse Utili per il Tuo Studio",
-                    "subtitle": "Scarica le nostre guide gratuite per approfondire gli obblighi di radioprotezione e gestire al meglio la sicurezza.",
-                    "id": "risorse",
-                    "resources": [
-                        {
-                            "title": "Guida Radioprotezione Odontoiatrica",
-                            "description": "Vademecum essenziale sugli obblighi di legge e le buone prassi per lo studio dentistico.",
-                            "icon": "heroicon-o-book-open",
-                            "cta": "Scarica Gratis",
-                            "cta_url": "#"
-                        },
-                        {
-                            "title": "Guida Radioprotezione Veterinaria",
-                            "description": "Manuale operativo per la gestione del rischio radiologico nelle cliniche veterinarie.",
-                            "icon": "heroicon-o-book-open",
-                            "cta": "Scarica Gratis",
-                            "cta_url": "#"
-                        }
-                    ]
-                }
-            },
-            {
-                "type": "newsletter",
-                "slug": "newsletter-section",
-                "data": {
-                    "view": "pub_theme::components.blocks.newsletter.simple",
-                    "title": "Rimani Aggiornato",
-                    "description": "Iscriviti alla nostra newsletter per ricevere aggiornamenti normativi, consigli pratici e offerte esclusive per il tuo studio.",
-                    "placeholder": "La tua email",
-                    "button_label": "Iscriviti",
-                    "privacy_text": "Niente spam, solo contenuti di qualità. Puoi disiscriverti quando vuoi.",
-                    "bg_color": "brand-blue"
-                }
             }
         ],
         "en": [
@@ -258,9 +217,18 @@
                     "secondary_cta_url": "/en/services",
                     "image": "https://images.unsplash.com/photo-1613186267015-46dc938f2b8f?w=1920&q=80",
                     "stats": [
-                        {"label": "D.Lgs 101/2020 Compliance", "value": "100%"},
-                        {"label": "Qualified Experts", "value": "Certified"},
-                        {"label": "Intervention in 24/48h", "value": "Fast"}
+                        {
+                            "label": "D.Lgs 101/2020 Compliance",
+                            "value": "100%"
+                        },
+                        {
+                            "label": "Radiation Protection Experts",
+                            "value": "Certified"
+                        },
+                        {
+                            "label": "Intervention in 24/48h",
+                            "value": "Fast"
+                        }
                     ]
                 }
             },

@@ -1,8 +1,8 @@
 {
     "id": "5",
     "title": {
-        "it": "Chi Siamo - Marco Sottana Consulenza Sicurezza",
-        "en": "About Us - Marco Sottana Safety Consulting"
+        "it": "Chi Siamo - Sottana Service",
+        "en": "About Us - Sottana Service"
     },
     "slug": "about",
     "middleware": null,
@@ -15,7 +15,7 @@
                 "data": {
                     "view": "pub_theme::components.blocks.hero.about",
                     "title": "Chi Siamo",
-                    "subtitle": "Marco Sottana - Consulenza Sicurezza. Sicurezza e Igiene nei Tuoi Studi Professionali dal 2025.",
+                    "subtitle": "Sottana Service. Sicurezza e Igiene nei Tuoi Studi Professionali dal 2025.",
                     "primary_cta": {
                         "label": "Scopri il Team",
                         "url": "#team"
@@ -50,7 +50,7 @@
                 "data": {
                     "view": "pub_theme::components.blocks.content.split",
                     "title": "La Nostra Storia",
-                    "content": "<p class='text-lg leading-relaxed text-gray-700'>Marco Sottana Consulenza Sicurezza nasce nel 2025 dalla passione del nostro fondatore, Marco Sottana, Esperto Qualificato in radioprotezione con una missione chiara: garantire la massima sicurezza e conformità negli studi professionali.</p><p class='mt-4 text-gray-600'>Specializzandoci esclusivamente in studi dentistici e cliniche veterinarie, abbiamo rapidamente acquisito una reputazione di eccellenza nel nord Italia, servendo professionisti che cercano un partner affidabile per la gestione della sicurezza radiologica ed elettrica.</p><p class='mt-4 text-gray-600'>La nostra filosofia si basa su tre pilastri: competenza tecnica senza compromessi, supporto completo al cliente e conformità garantita secondo le normative vigenti.</p>",
+                    "content": "<p class='text-lg leading-relaxed text-gray-700'>Sottana Service nasce nel 2025 dalla passione del nostro fondatore, Marco Sottana, Esperto di radioprotezione con una missione chiara: garantire la massima sicurezza e conformità negli studi professionali.</p><p class='mt-4 text-gray-600'>Specializzandoci esclusivamente in studi dentistici e cliniche veterinarie, abbiamo rapidamente acquisito una reputazione di eccellenza nel nord Italia, servendo professionisti che cercano un partner affidabile per la gestione della sicurezza radiologica ed elettrica.</p><p class='mt-4 text-gray-600'>La nostra filosofia si basa su tre pilastri: competenza tecnica senza compromessi, supporto completo al cliente e conformità garantita secondo le normative vigenti.</p>",
                     "image": "/themes/Two/Main_files/images/medical-equipment.jpg",
                     "reverse": false
                 }
@@ -106,8 +106,8 @@
                     "members": [
                         {
                             "name": "Marco Sottana",
-                            "role": "Fondatore & Esperto Qualificato",
-                            "description": "Esperto Qualificato in radioprotezione con 10+ anni di esperienza. Specializzato in controlli su apparecchiature dentali e veterinarie. Fondatore di Consulenza Sicurezza.",
+                            "role": "Fondatore & Esperto di radioprotezione",
+                            "description": "Esperto di radioprotezione con 10+ anni di experience. Specializzato in controlli su apparecchiature dentali e veterinarie. Fondatore di Sottana Service.",
                             "image": "/themes/Two/Main_files/images/dr-roberto-magni.jpg",
                             "certifications": ["EQ Ministero Salute", "ISO 9001 Lead Auditor"]
                         },

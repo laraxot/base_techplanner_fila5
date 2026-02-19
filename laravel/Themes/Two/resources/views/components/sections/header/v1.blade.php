@@ -4,8 +4,8 @@
     $blocks = $blocks ?? [];
 
     // Initialize defaults
-    $brandName = 'Marco Sottana';
-    $brandSubtitle = 'Consulenza Sicurezza';
+    $brandName = 'Sottana Service';
+    $brandSubtitle = null;
     $items = [];
     $ctaLabel = 'Richiedi Consulenza';
     $ctaUrl = '/it/contatti';
@@ -61,11 +61,42 @@
         <div class="flex items-center justify-between h-16 md:h-20" :class="scrolled ? 'h-16' : 'h-20'">
 
             {{-- Brand --}}
-            <a href="{{ LaravelLocalization::getLocalizedURL($currentLocale, '/') }}" class="flex flex-col leading-tight shrink-0 group">
+            <a href="{{ LaravelLocalization::getLocalizedURL($currentLocale, '/') }}" class="flex items-center space-x-3 shrink-0 group">
+                {{-- Logo Elefante --}}
+                <svg class="w-10 h-10 md:w-12 md:h-12 transition-colors shrink-0" :class="scrolled ? 'text-gray-900' : 'text-white'" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Elefante stilizzato di profilo con proboscide a destra -->
+                    <!-- Corpo principale -->
+                    <ellipse cx="50" cy="60" rx="25" ry="20" fill="currentColor" opacity="0.9"/>
+                    
+                    <!-- Testa -->
+                    <ellipse cx="65" cy="50" rx="18" ry="22" fill="currentColor"/>
+                    
+                    <!-- Proboscide (a destra) -->
+                    <path d="M 83 50 Q 95 45 97 40 Q 98 35 96 30 Q 94 25 90 28 Q 88 30 88 35 Q 88 40 86 45 Q 85 48 83 50 Z" fill="currentColor"/>
+                    
+                    <!-- Orecchio -->
+                    <ellipse cx="75" cy="40" rx="12" ry="15" fill="currentColor" opacity="0.7"/>
+                    
+                    <!-- Occhio -->
+                    <circle cx="70" cy="48" r="3" fill="white"/>
+                    <circle cx="70" cy="48" r="1.5" fill="currentColor"/>
+                    
+                    <!-- Zanna -->
+                    <path d="M 87 45 L 90 35 L 87 40 Z" fill="currentColor" opacity="0.8"/>
+                    
+                    <!-- Gamba anteriore -->
+                    <ellipse cx="60" cy="75" rx="6" ry="8" fill="currentColor"/>
+                    
+                    <!-- Gamba posteriore -->
+                    <ellipse cx="40" cy="75" rx="6" ry="8" fill="currentColor"/>
+                    
+                    <!-- Coda -->
+                    <path d="M 27 60 Q 20 55 17 50" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+                    <circle cx="17" cy="50" r="2" fill="currentColor"/>
+                </svg>
+                
+                {{-- Nome Brand --}}
                 <span class="font-bold text-lg md:text-xl transition-colors" :class="scrolled ? 'text-gray-900' : 'text-white'">{{ $brandName }}</span>
-                @if($brandSubtitle)
-                    <span class="text-xs md:text-sm font-normal transition-colors" :class="scrolled ? 'text-gray-600' : 'text-white/80'">{{ $brandSubtitle }}</span>
-                @endif
             </a>
 
             {{-- Desktop Nav --}}

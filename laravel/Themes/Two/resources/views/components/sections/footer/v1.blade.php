@@ -89,15 +89,17 @@
 
     // Use values from block or defaults
     $address = $findContactValue('address') ?? 'Via Vanzo 86/A, 31021 Mogliano Veneto TV';
-    $email = $findContactValue('email') ?? 'sottanamarco@pec.it';
-    $phone = $findContactValue('phone') ?? '+39 XXX XXX XXXX';
+    $phone = $findContactValue('phone') ?? '+39 041 455552';
+    $mobile = $findContactValue('mobile') ?? '+39 347 58 96 127';
+    $email = $findContactValue('email') ?? 'studio@sottana.com';
     
     // Prepare items for the view loop if they don't exist in block data
     if (empty($contactItems)) {
         $contactItems = [
             ['type' => 'address', 'value' => $address],
             ['type' => 'email', 'value' => $email],
-            ['type' => 'phone', 'value' => $phone],
+            ['type' => 'phone', 'value' => $phone, 'label' => 'Fisso'],
+            ['type' => 'mobile', 'value' => $mobile, 'label' => 'Mobile'],
         ];
     }
     
@@ -232,23 +234,55 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                                 </svg>
                                 @break
+                            @case('phone_mobile')
+                            @case('mobile')
+                                <svg class="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                                @break
                             @default
                                 <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                 </svg>
                         @endswitch
-                        <span class="text-sm text-gray-200">{{ is_array($item) ? ($item['value'] ?? '') : $item }}</span>
+                        <div class="flex flex-col">
+                            <span class="text-sm text-gray-200">
+                                @if(isset($item['label']) && $item['label'])
+                                    <span class="text-xs text-green-400">{{ $item['label'] }}: </span>
+                                @endif
+                                {{ is_array($item) ? ($item['value'] ?? '') : $item }}
+                            </span>
+                        </div>
                     </li>
                     @endforeach
                 </ul>
                 
                 {{-- P.IVA & REA --}}
                 @if(!empty($contact['piva']) || !empty($contact['rea']))
-                <div class="mt-6 pt-4 border-t border-white/30 text-xs text-gray-200">
+                <div class="mt-4 pt-4 border-t border-white/30 text-xs text-gray-200">
                     @if(!empty($contact['piva']))<p class="text-gray-200">P.IVA: {{ $contact['piva'] }}</p>@endif
                     @if(!empty($contact['rea']))<p class="text-gray-200">REA: {{ $contact['rea'] }}</p>@endif
                 </div>
                 @endif
+
+                {{-- OpenStreetMap --}}
+                <div class="mt-4">
+                    <a href="https://www.openstreetmap.org/directions?engine=graphhopper_foot&route=%3F%3F%3F%3D{{ urlencode($address) }}" 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="block w-full h-32 rounded-lg overflow-hidden border border-white/20 hover:border-white/40 transition-colors">
+                        <iframe 
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=12.29%2C45.46%2C12.51%2C45.60&layer=mapnik&marker=45.53%2C12.40"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Mappa posizione">
+                        </iframe>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

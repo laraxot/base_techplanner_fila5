@@ -1,8 +1,8 @@
 {
     "id": "3",
     "title": {
-        "it": "FAQ - Domande Frequenti - Marco Sottana Consulenza Sicurezza",
-        "en": "FAQ - Frequently Asked Questions - Marco Sottana Safety Consulting"
+        "it": "FAQ - Domande Frequenti - Sottana Service",
+        "en": "FAQ - Frequently Asked Questions - Sottana Service"
     },
     "slug": "faq",
     "middleware": null,
@@ -89,11 +89,11 @@
                             "questions": [
                                 {
                                     "question": "Quali sono gli obblighi del D.Lgs 101/2020 per gli studi dentistici?",
-                                    "answer": "Il D.Lgs 101/2020 attua la direttiva 2013/59/Euratom e impone: nomina di Esperto Qualificato, valutazione di rischio, programma di controllo qualità, formazione specifica del personale, sorveglianza dosimetrica esposta, e mantenimento di tutta la documentazione aggiornata."
+                                    "answer": "Il D.Lgs 101/2020 attua la direttiva 2013/59/Euratom e impone: nomina di Esperto di radioprotezione, valutazione di rischio, programma di controllo qualità, formazione specifica del personale, sorveglianza dosimetrica esposta, e mantenimento di tutta la documentazione aggiornata."
                                 },
                                 {
                                     "question": "Con quale frequenza devono essere eseguiti i controlli di radioprotezione?",
-                                    "answer": "I controlli devono essere eseguiti con cadenza annuale per la verifica di funzionalità e sicurezza delle apparecchiature radiogene. Inoltre, sono previsti controlli semestrali per alcuni parametri specifici e verifiche straordinarie in caso di modifiche o riparazioni."
+                                    "answer": "I controlli devono essere eseguiti con cadenza annuale per la verifica di funzionalità e sicurezza delle apparecchiature radiogene. Inoltre, sono previsti controlli semestrali per alcuni parametri specifici."
                                 },
                                 {
                                     "question": "Cosa include la sorveglianza dosimetrica per il personale esposto?",
@@ -101,7 +101,7 @@
                                 },
                                 {
                                     "question": "Quali documenti devono essere sempre presenti nello studio?",
-                                    "answer": "Documentazione obbligatoria include: valutazione di rischio, programma di autocontrollo, certificati di controllo delle apparecchiature, registro della formazione del personale, fascicoli dosimetrici, nominativa dell'Esperto Qualificato, e verbali delle verifiche periodiche."
+                                    "answer": "Documentazione obbligatoria include: valutazione di rischio, programma di autocontrollo, certificati di controllo delle apparecchiature, registro della formazione del personale, fascicoli dosimetrici, nominativa dell'Esperto di radioprotezione, e verbali delle verifiche periodiche."
                                 }
                             ]
                         },
@@ -126,8 +126,8 @@
                             "name": "Normative",
                             "questions": [
                                 {
-                                    "question": "Chi è l'Esperto Qualificato e quali sono i suoi compiti?",
-                                    "answer": "L'Esperto Qualificato è un professionista iscritto negli elenchi nominativi autorizzati dal Ministero della Salute. Compiti: valutazione di rischio, consulenza tecnica, supervisione del programma di autocontrollo, formazione del personale, e interfaccia con le autorità sanitarie."
+                                    "question": "Chi è l'Esperto di radioprotezione e quali sono i suoi compiti?",
+                                    "answer": "L'Esperto di radioprotezione è un professionista iscritto negli elenchi nominativi autorizzati dal Ministero della Salute. Compiti: valutazione di rischio, consulenza tecnica, supervisione del programma di autocontrollo, formazione del personale, e interfaccia con le autorità sanitarie."
                                 },
                                 {
                                     "question": "Quali sono le sanzioni per mancato rispetto delle normative?",
@@ -135,7 +135,7 @@
                                 },
                                 {
                                     "question": "Cosa cambia con la nuova normativa europea?",
-                                    "answer": "Le nuove normative europee introducono requisiti più stringenti per la giustificazione delle pratiche radiologiche, ottimizzazione della dose, formazione obbligatoria specifica, e sistemi di tracciabilità più rigorosi. È importante rimanere aggiornati attraverso consulenza specializzata."
+                                    "answer": "Le nuove normative europee introducono requisiti più stringenti per la giustificazione delle pratiche radiologiche, ottimizzazione della dose, formazione obbligatoria specifica, e sistemi di tracciabilità più rigorosi."
                                 }
                             ]
                         },
@@ -172,12 +172,13 @@
                     },
                     "secondary_cta": {
                         "label": "Invia Email",
-                        "url": "mailto:info@marcosottana.it"
+                        "url": "mailto:studio@sottana.com"
                     },
                     "show_phone": true,
-                    "phone": "+39 XXX XXX XXXX",
+                    "phone": "+39 041 455552",
+                    "phone_mobile": "+39 347 58 96 127",
                     "show_email": true,
-                    "email": "info@marcosottana.it"
+                    "email": "studio@sottana.com"
                 }
             }
         ],
@@ -262,7 +263,7 @@
                             "questions": [
                                 {
                                     "question": "What are the obligations of D.Lgs 101/2020 for dental practices?",
-                                    "answer": "D.Lgs 101/2020 implements directive 2013/59/Euratom and requires: appointment of Qualified Expert, risk assessment, quality control program, specific staff training, exposed dosimetric surveillance, and maintaining all updated documentation."
+                                    "answer": "D.Lgs 101/2020 implements directive 2013/59/Euratom and requires: appointment of Radiation Protection Expert, risk assessment, quality control program, specific staff training, exposed dosimetric surveillance, and maintaining all updated documentation."
                                 },
                                 {
                                     "question": "How often should radiation protection controls be performed?",
@@ -274,7 +275,7 @@
                                 },
                                 {
                                     "question": "Which documents must always be present in the practice?",
-                                    "answer": "Mandatory documentation includes: risk assessment, self-control program, equipment control certificates, staff training register, dosimetric files, Qualified Expert nomination, and periodic verification reports."
+                                    "answer": "Mandatory documentation includes: risk assessment, self-control program, equipment control certificates, staff training register, dosimetric files, Radiation Protection Expert nomination, and periodic verification reports."
                                 }
                             ]
                         },
@@ -299,8 +300,8 @@
                             "name": "Regulations",
                             "questions": [
                                 {
-                                    "question": "Who is the Qualified Expert and what are his duties?",
-                                    "answer": "The Qualified Expert is a professional registered in the authorized nominal lists of the Ministry of Health. Duties: risk assessment, technical consultancy, supervision of self-control program, staff training, and interface with health authorities."
+                                    "question": "Who is the Radiation Protection Expert and what are his duties?",
+                                    "answer": "The Radiation Protection Expert is a professional registered in the authorized nominal lists of the Ministry of Health. Duties: risk assessment, technical consultancy, supervision of self-control program, staff training, and interface with health authorities."
                                 },
                                 {
                                     "question": "What are the penalties for non-compliance with regulations?",
@@ -345,12 +346,13 @@
                     },
                     "secondary_cta": {
                         "label": "Send Email",
-                        "url": "mailto:info@marcosottana.it"
+                        "url": "mailto:studio@sottana.com"
                     },
                     "show_phone": true,
-                    "phone": "+39 XXX XXX XXXX",
+                    "phone": "+39 041 455552",
+                    "phone_mobile": "+39 347 58 96 127",
                     "show_email": true,
-                    "email": "info@marcosottana.it"
+                    "email": "studio@sottana.com"
                 }
             }
         ]

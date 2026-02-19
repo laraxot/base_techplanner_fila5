@@ -1,8 +1,8 @@
 {
     "id": "6",
     "title": {
-        "it": "Contatti - Richiedi Consulenza Radioprotezione",
-        "en": "Contact - Request Radiation Protection Consultation"
+        "it": "Contatti - Sottana Service",
+        "en": "Contact - Sottana Service"
     },
     "slug": "contatti",
     "middleware": null,
@@ -27,8 +27,9 @@
                     "title": "Come Contattarci",
                     "subtitle": "Scegli il modo più comodo per raggiungerci",
                     "info": {
-                        "phone": "+39 XXX XXX XXXX",
-                        "email": "info@marcosottana.it",
+                        "phone": "+39 041 455552 / +39 347 58 96 127",
+                        "phone_mobile": "+39 347 58 96 127",
+                        "email": "studio@sottana.com",
                         "address": "Via Vanzo 86/A, 31021 Mogliano Veneto (TV)",
                         "hours": "Lun-Ven: 09:00-18:00"
                     },
@@ -46,12 +47,46 @@
                     "title": "Richiedi una Consulenza",
                     "subtitle": "Compila il form e ti ricontatteremo entro 24 ore",
                     "fields": [
-                        {"name": "nome", "label": "Nome e Cognome", "type": "text", "required": true},
-                        {"name": "email", "label": "Email", "type": "email", "required": true},
-                        {"name": "telefono", "label": "Telefono", "type": "tel", "required": false},
-                        {"name": "studio", "label": "Nome Studio", "type": "text", "required": false},
-                        {"name": "tipo", "label": "Tipo di Studio", "type": "select", "options": ["Odontoiatrico", "Veterinario", "Altro"]},
-                        {"name": "messaggio", "label": "Messaggio", "type": "textarea", "required": true}
+                        {
+                            "name": "nome",
+                            "label": "Nome e Cognome",
+                            "type": "text",
+                            "required": true
+                        },
+                        {
+                            "name": "email",
+                            "label": "Email",
+                            "type": "email",
+                            "required": true
+                        },
+                        {
+                            "name": "telefono",
+                            "label": "Telefono",
+                            "type": "tel",
+                            "required": false
+                        },
+                        {
+                            "name": "studio",
+                            "label": "Nome Studio",
+                            "type": "text",
+                            "required": false
+                        },
+                        {
+                            "name": "tipo",
+                            "label": "Tipo di Studio",
+                            "type": "select",
+                            "options": [
+                                "Odontoiatrico",
+                                "Veterinario",
+                                "Altro"
+                            ]
+                        },
+                        {
+                            "name": "messaggio",
+                            "label": "Messaggio",
+                            "type": "textarea",
+                            "required": true
+                        }
                     ],
                     "submit_label": "Invia Richiesta",
                     "privacy_text": "Inviando questo form accetti la nostra Privacy Policy."
@@ -64,7 +99,10 @@
                     "view": "pub_theme::components.blocks.map.embed",
                     "title": "Dove Siamo",
                     "address": "Via Vanzo 86/A, 31021 Mogliano Veneto TV",
-                    "coordinates": {"lat": 45.5648, "lng": 12.2347}
+                    "coordinates": {
+                        "lat": 45.5648,
+                        "lng": 12.2347
+                    }
                 }
             }
         ],

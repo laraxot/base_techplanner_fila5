@@ -39,6 +39,7 @@ parameters:
         - ./*/build/*
         - ./*/docs/*
         - ./*/tests/*
+        - ./*/Tests/*
         - ./*/packages/*
         - ./*/phpinsights.php
         - ./*/rector.php

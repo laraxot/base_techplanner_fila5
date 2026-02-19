@@ -17,12 +17,13 @@
                 </div>
             </div>
 
-            {{-- Optional Map or Image --}}
+            {{-- Optional Map or Image (OpenStreetMap) --}}
             <div class="h-full min-h-[400px] bg-gray-200 rounded-xl overflow-hidden relative">
+                @php $address = 'Via Vanzo 86/A, 31021 Mogliano Veneto TV'; @endphp
                 <iframe 
                     width="100%" 
                     height="100%" 
-                    src="https://maps.google.com/maps?q=Via%20Venco%2086%2FA%2C%2031021%20Mogliano%20Veneto%20TV&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                    src="https://nominatim.openstreetmap.org/search?format=iframe&q={{ urlencode($address) }}" 
                     frameborder="0" 
                     scrolling="no" 
                     marginheight="0" 

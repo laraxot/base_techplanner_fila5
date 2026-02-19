@@ -73,6 +73,7 @@
             "@php artisan migrate",
             "@php artisan livewire:publish --assets",
             "@php artisan filament:upgrade",
+            "@php artisan config:cache",
             "@php artisan filament:optimize",
             "@php artisan optimize",
             "@php artisan route:clear",

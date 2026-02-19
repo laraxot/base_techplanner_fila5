@@ -94,7 +94,7 @@
                 "slug": "why-choose-us",
                 "data": {
                     "view": "pub_theme::components.blocks.features.grid",
-                    "title": "Perché Scegliere Marco Sottana",
+                    "title": "Perché Scegliere Sottana Service",
                     "subtitle": "I vantaggi concreti di affidarsi alla nostra esperienza e competenza",
                     "features": [
                         {
@@ -235,7 +235,7 @@
                 "slug": "why-choose-us",
                 "data": {
                     "view": "pub_theme::components.blocks.features.grid",
-                    "title": "Why Choose Marco Sottana",
+                    "title": "Why Choose Sottana Service",
                     "subtitle": "Concrete advantages of relying on our experience and expertise",
                     "features": [
                         {
