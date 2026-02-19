@@ -243,7 +243,7 @@
                 "data": {
                     "view": "pub_theme::components.blocks.map.static-clickable",
                     "title": "Dove Siamo",
-                    "address": "Via Vanzo 86/A, 31021 Mogliano Veneto TV",
+                    "address": "Via Vanzo 86, 31021 Mogliano Veneto TV",
                     "coordinates": {
                         "lat": 45.5633,
                         "lng": 12.2506
