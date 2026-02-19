@@ -10,6 +10,7 @@
 3. [Comprehensive Site Analysis](./comprehensive-site-analysis.md) - ⭐ Complete analysis of target vs local site
 4. [Map Integration](./map-integration.md) - Map implementation
 5. [Map Free Rules](./map-free-rules.md) - ✅ Regola FREE ONLY per mappe
+6. [PageSpeed frontoffice](./pagespeed-frontoffice-validation.md) - Validazione performance/accessibilità su pagespeed.web.dev
 
 ### 🎨 Theme Characteristics
 - **Style**: Professional medical/radioprotection design

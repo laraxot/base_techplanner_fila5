@@ -38,8 +38,8 @@
     
     // Extract sections with defaults
     $brand = $footerBlock['brand'] ?? [
-        'name' => 'Marco Sottana',
-        'subtitle' => 'Consulenza Sicurezza',
+        'name' => 'Sottana Service',
+        'subtitle' => 'Consulenza Sicurezza e Radioprotezione',
         'description' => 'Specialisti in radioprotezione e sicurezza per studi dentistici e cliniche veterinarie. Partner di fiducia per la conformità normativa.'
     ];
     
@@ -53,7 +53,7 @@
                 'description' => 'Attuazione della direttiva 2013/59/Euratom per la sicurezza radiologica.'
             ],
             [
-                'label' => 'Esperti Qualificati',
+                'label' => 'Esperti di Radioprotezione',
                 'description' => 'Professionisti iscritti negli elenchi nominativi autorizzati.'
             ],
             [
@@ -111,7 +111,7 @@
     ];
     
     $legal = $footerBlock['legal'] ?? [
-        'copyright' => '© 2026 Marco Sottana - Consulenza Sicurezza. Tutti i diritti riservati.',
+        'copyright' => '© 2026 Sottana Service - Consulenza Sicurezza e Radioprotezione. Tutti i diritti riservati.',
         'links' => [
              ['label' => 'Privacy Policy', 'url' => LaravelLocalization::getLocalizedURL(null, '/privacy', [], true)],
              ['label' => 'Termini e Condizioni', 'url' => LaravelLocalization::getLocalizedURL(null, '/terms', [], true)]
