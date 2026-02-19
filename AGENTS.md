@@ -91,6 +91,33 @@ text-gray-100 (#F3F4F6) su #0F3460
 
 **MAI aspettare perfezione assoluta prima di commit.**
 
+### Deployment e validazione produzione
+
+- **Sito in produzione**: https://sottana.net
+- **Deploy**: push sul branch `master` attiva l'auto-deploy
+- Dopo modifiche a frontend, contatti o mappa: verificare su produzione (es. https://sottana.net/it/contatti)
+- Doc: [docs/deployment-and-validation.md](docs/deployment-and-validation.md)
+
+### Accessibilità - WCAG 2.1
+
+**Validatore**: [MAUVE++](https://mauve.isti.cnr.it/) (CNR - ISTI)
+- Account richiesto per validazione completa
+- Documentazione: [laravel/Themes/Two/docs/wcag-compliance-plan.md](laravel/Themes/Two/docs/wcag-compliance-plan.md)
+
+**Problematiche WCAG Risolte**:
+- H44: Label form controls
+- G195: Focus indicator visibile
+- G18: Contrasto minimo 4.5:1
+- H98: Autocomplete form
+- C38: Reflow 320px
+- H30: Link descrittivi
+
+**Validazione CLI**:
+```bash
+lighthouse https://sottana.net/it --view
+npx @axe-core/cli https://sottana.net/it
+```
+
 ### Continuous Improvement
 
 **Documentare sempre errori e lezioni apprese.**

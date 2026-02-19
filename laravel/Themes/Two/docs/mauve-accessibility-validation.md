@@ -38,9 +38,19 @@ MAUVE++ è un validatore di accessibilità sviluppato dal CNR (ISTI - HIIS Lab) 
 
 ## Pagine da Validare (Sottana Service)
 
-- Home: http://127.0.0.1:8002/it
-- Contatti: http://127.0.0.1:8002/it/contatti
-- Servizi: http://127.0.0.1:8002/it/servizi
+- **Production**: https://sottana.net/it
+- **Contatti**: https://sottana.net/it/contatti
+- **Servizi**: https://sottana.net/it/servizi
+- **Blog**: https://sottana.net/it/blog
+
+## Riferimenti
+
+- **Piano WCAG Completo**: [wcag-compliance-plan.md](./wcag-compliance-plan.md)
+- **Strumenti CLI**: 
+  ```bash
+  lighthouse https://sottana.net/it --view
+  npx @axe-core/cli https://sottana.net/it
+  ```
 
 ## Regole di Accessibilità (WCAG 2.1)
 
@@ -63,3 +73,22 @@ MAUVE++ è un validatore di accessibilità sviluppato dal CNR (ISTI - HIIS Lab) 
 - Form labels per tutti gli input
 - Heading strutturati correttamente (h1, h2, h3...)
 - Links con testi descriptivi
+
+## Status Validazione
+
+- [x] Sito deployato su https://sottana.net
+- [ ] Home page validata (da fare manualmente su MAUVE)
+- [ ] Contatti validata
+- [ ] Servizi validata
+
+## Note Tecniche
+
+MAUVE richiede autenticazione e JavaScript per funzionare correttamente. Per validazione automatizzata, usare:
+
+```bash
+# Lighthouse
+lighthouse https://sottana.net/it --view
+
+# axe-core
+npx @axe-core/cli https://sottana.net/it
+```
