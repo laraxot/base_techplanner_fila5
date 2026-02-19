@@ -9,4 +9,4 @@ Route::get('/', function () {
 // Frontend pages are handled by Laravel Folio + Volt in resources/views/pages
 
 // Frontend pages are handled by Laravel Folio + Volt
-// See resources/views/pages/
+// See resources/views/

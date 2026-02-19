@@ -42,7 +42,7 @@ declare(strict_types=1);
         
         <div class="flex flex-wrap gap-3 justify-center">
             @foreach($tags as $tag)
-                <a href="/it/pages/blog?tag={{ $tag['slug'] }}" 
+                <a href="/it/blog?tag={{ $tag['slug'] }}" 
                    class="group inline-flex items-center px-4 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 hover:-translate-y-1
                           bg-white border border-gray-200 text-gray-700 hover:border-blue-500 hover:text-blue-600 hover:shadow-md">
                     <span class="relative">

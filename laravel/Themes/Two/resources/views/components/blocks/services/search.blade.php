@@ -130,7 +130,9 @@
                 <select 
                     id="category-filter-{{ $searchId }}"
                     name="category"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    autocomplete="off"
+                    aria-describedby="category-filter-help-{{ $searchId }}"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
                 >
                     <option value="">Tutte le categorie</option>
                     @foreach($categories as $category)
@@ -149,7 +151,9 @@
                 <select 
                     id="status-filter-{{ $searchId }}"
                     name="status"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    autocomplete="off"
+                    aria-describedby="status-filter-help-{{ $searchId }}"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
                 >
                     <option value="">Tutti gli stati</option>
                     <option value="active">Attivo</option>
@@ -187,7 +191,9 @@
                 <select 
                     id="availability-filter-{{ $searchId }}"
                     name="availability"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    autocomplete="off"
+                    aria-describedby="availability-filter-help-{{ $searchId }}"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
                 >
                     <option value="">Tutte le disponibilità</option>
                     <option value="24-7">24/7</option>
@@ -204,7 +210,9 @@
                 <select 
                     id="audience-filter-{{ $searchId }}"
                     name="audience"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    autocomplete="off"
+                    aria-describedby="audience-filter-help-{{ $searchId }}"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
                 >
                     <option value="">Tutti</option>
                     <option value="citizens">Cittadini</option>
@@ -222,7 +230,9 @@
                 <select 
                     id="priority-filter-{{ $searchId }}"
                     name="priority"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    autocomplete="off"
+                    aria-describedby="priority-filter-help-{{ $searchId }}"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
                 >
                     <option value="">Tutte le priorità</option>
                     <option value="high">Alta</option>

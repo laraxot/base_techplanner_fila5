@@ -44,6 +44,7 @@
 
 {{-- Main Header --}}
 <header
+    role="banner"
     x-data="{
         scrolled: false,
         mobileOpen: false,
@@ -61,9 +62,17 @@
         <div class="flex items-center justify-between h-16 md:h-20" :class="scrolled ? 'h-16' : 'h-20'">
 
             {{-- Brand --}}
-            <a href="{{ LaravelLocalization::getLocalizedURL($currentLocale, '/') }}" class="flex items-center space-x-3 shrink-0 group">
+            <a href="{{ LaravelLocalization::getLocalizedURL($currentLocale, '/') }}" 
+               aria-label="Vai alla homepage"
+               class="flex items-center space-x-3 shrink-0 group focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96] rounded-md">
                 {{-- Logo Elefante --}}
-                <svg class="w-10 h-10 md:w-12 md:h-12 transition-colors shrink-0" :class="scrolled ? 'text-gray-900' : 'text-white'" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-10 h-10 md:w-12 md:h-12 transition-colors shrink-0" 
+                     :class="scrolled ? 'text-gray-900' : 'text-white'" 
+                     viewBox="0 0 100 100" 
+                     fill="none" 
+                     xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true"
+                     role="img">
                     <!-- Elefante stilizzato di profilo con proboscide a destra -->
                     <!-- Corpo principale -->
                     <ellipse cx="50" cy="60" rx="25" ry="20" fill="currentColor" opacity="0.9"/>
@@ -114,7 +123,7 @@
                     @endphp
                     <a
                         href="{{ $item['url'] }}"
-                        class="relative px-3 py-2 text-sm font-medium transition-colors hover:opacity-80"
+                        class="relative px-3 py-2 text-sm font-medium transition-colors hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96] rounded-md"
                         :class="scrolled ? 'text-gray-700 hover:text-gray-900' : 'text-white/90 hover:text-white'"
                         @if($isActive) aria-current="page" @endif
                     >
@@ -135,12 +144,21 @@
                     <button
                         @click="langOpen = !langOpen"
                         @click.away="langOpen = false"
-                        class="flex items-center space-x-1.5 transition-colors focus:outline-none"
+                        class="flex items-center space-x-1.5 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96] rounded-md px-2 py-1"
                         :class="scrolled ? 'text-gray-600 hover:text-gray-900' : 'text-white/80 hover:text-white'"
-                        aria-label="Change language"
+                        aria-label="Cambia lingua"
+                        aria-expanded="false"
+                        :aria-expanded="langOpen.toString()"
+                        aria-haspopup="true"
                     >
                         <span class="text-sm font-medium uppercase">{{ $currentLocale }}</span>
-                        <svg class="w-3.5 h-3.5 transition-transform" :class="langOpen ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <svg class="w-3.5 h-3.5 transition-transform" 
+                             :class="langOpen ? 'rotate-180' : ''" 
+                             fill="none" 
+                             viewBox="0 0 24 24" 
+                             stroke="currentColor" 
+                             stroke-width="2"
+                             aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
@@ -152,14 +170,18 @@
                         x-transition:leave="transition ease-in duration-75"
                         x-transition:leave-start="opacity-100 scale-100"
                         x-transition:leave-end="opacity-0 scale-95"
+                        role="menu"
+                        aria-label="Seleziona lingua"
                         class="absolute right-0 mt-2 w-36 bg-white rounded-lg shadow-xl py-1 border border-gray-100 overflow-hidden"
                         style="display: none;"
                     >
                         @foreach($supportedLocales as $localeCode => $properties)
                             <a
                                 href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
-                                class="flex items-center px-4 py-2 text-sm transition-colors {{ $localeCode === $currentLocale ? 'bg-blue-50 text-[#1E5A96] font-semibold' : 'text-gray-700 hover:bg-gray-50' }}"
+                                role="menuitem"
+                                class="flex items-center px-4 py-2 text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:ring-inset {{ $localeCode === $currentLocale ? 'bg-blue-50 text-[#1E5A96] font-semibold' : 'text-gray-700 hover:bg-gray-50' }}"
                                 hreflang="{{ $localeCode }}"
+                                @if($localeCode === $currentLocale) aria-current="true" @endif
                             >
                                 <span class="uppercase text-xs font-bold mr-3 w-5 text-center">{{ $localeCode }}</span>
                                 {{ $properties['native'] }}
@@ -174,13 +196,16 @@
                         <button
                             @click="userOpen = !userOpen"
                             @click.away="userOpen = false"
-                            class="flex items-center space-x-2 focus:outline-none group"
-                            aria-label="User menu"
+                            class="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96] rounded-md group"
+                            aria-label="Menu utente"
+                            aria-expanded="false"
+                            :aria-expanded="userOpen.toString()"
+                            aria-haspopup="true"
                         >
                             <div class="relative">
                                 <img
                                     src="{{ auth()->user()->avatar_url ?? 'https://ui-avatars.com/api/?name='.urlencode(auth()->user()->name ?? 'U').'&color=7F9CF5&background=EBF4FF&size=32' }}"
-                                    alt=""
+                                    alt="Avatar di {{ auth()->user()->name ?? 'Utente' }}"
                                     class="w-8 h-8 rounded-full border-2 transition-colors object-cover"
                                     :class="scrolled ? 'border-gray-300 group-hover:border-[#1E5A96]' : 'border-white/30 group-hover:border-white/60'"
                                 >
@@ -196,6 +221,8 @@
                         x-transition:leave="transition ease-in duration-75"
                         x-transition:leave-start="opacity-100 scale-100"
                         x-transition:leave-end="opacity-0 scale-95"
+                        role="menu"
+                        aria-label="Menu utente"
                         class="absolute right-0 mt-2 w-52 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden"
                         style="display: none;"
                     >
@@ -203,19 +230,25 @@
                                 <p class="text-sm font-semibold text-gray-900 truncate">{{ auth()->user()->name ?? '' }}</p>
                                 <p class="text-xs text-gray-500 truncate">{{ auth()->user()->email ?? '' }}</p>
                             </div>
-                            <a href="/admin" class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1E5A96] transition-colors">
-                                <svg class="w-4 h-4 mr-3 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                            <a href="/admin" 
+                               role="menuitem"
+                               class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1E5A96] transition-colors focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:ring-inset">
+                                <svg class="w-4 h-4 mr-3 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
                                 Dashboard
                             </a>
-                            <a href="/profile" class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1E5A96] transition-colors">
-                                <svg class="w-4 h-4 mr-3 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            <a href="/profile" 
+                               role="menuitem"
+                               class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1E5A96] transition-colors focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:ring-inset">
+                                <svg class="w-4 h-4 mr-3 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                                 {{ __('Profilo') }}
                             </a>
                             <div class="border-t border-gray-100"></div>
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
-                                <button type="submit" class="flex w-full items-center px-4 py-2.5 text-sm text-red-600 hover:bg-red-50 transition-colors">
-                                    <svg class="w-4 h-4 mr-3 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
+                                <button type="submit" 
+                                        role="menuitem"
+                                        class="flex w-full items-center px-4 py-2.5 text-sm text-red-600 hover:bg-red-50 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-inset">
+                                    <svg class="w-4 h-4 mr-3 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
                                     {{ __('Esci') }}
                                 </button>
                             </form>
@@ -226,13 +259,14 @@
                 {{-- CTA Button - white border style matching reference --}}
                 <a
                     href="{{ $ctaUrl }}"
-                    class="inline-flex items-center px-5 py-2.5 text-sm font-semibold border rounded-lg transition-all duration-200 focus:outline-none focus:ring-2"
+                    aria-label="{{ $ctaLabel }} - {{ __('Apri pagina contatti') }}"
+                    class="inline-flex items-center px-5 py-2.5 text-sm font-semibold border rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
                     :class="scrolled 
-                        ? 'text-gray-900 bg-white border-gray-300 hover:bg-gray-50 hover:border-gray-400 focus:ring-gray-300/40' 
-                        : 'text-white border-white/70 hover:bg-white hover:text-[#1E5A96] focus:ring-white/40'"
+                        ? 'text-gray-900 bg-white border-gray-300 hover:bg-gray-50 hover:border-gray-400 focus:ring-[#1E5A96]' 
+                        : 'text-white border-white/70 hover:bg-white hover:text-[#1E5A96] focus:ring-white'"
                 >
                     {{-- Phone icon --}}
-                    <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                     </svg>
                     {{ $ctaLabel }}
@@ -243,12 +277,27 @@
             <div class="flex items-center lg:hidden space-x-3">
                 {{-- Mobile Lang --}}
                 <div class="relative" x-data="{ mLang: false }">
-                    <button @click="mLang = !mLang" @click.away="mLang = false" class="text-white/80 hover:text-white text-sm font-bold uppercase focus:outline-none">
+                    <button @click="mLang = !mLang" 
+                            @click.away="mLang = false" 
+                            class="text-white/80 hover:text-white text-sm font-bold uppercase focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white rounded-md px-2 py-1"
+                            aria-label="Cambia lingua"
+                            aria-expanded="false"
+                            :aria-expanded="mLang.toString()"
+                            aria-haspopup="true">
                         {{ $currentLocale }}
                     </button>
-                    <div x-show="mLang" x-transition class="absolute right-0 mt-2 w-28 bg-white rounded-lg shadow-xl py-1 border border-gray-100 overflow-hidden z-50" style="display: none;">
+                    <div x-show="mLang" 
+                         x-transition 
+                         role="menu"
+                         aria-label="Seleziona lingua"
+                         class="absolute right-0 mt-2 w-28 bg-white rounded-lg shadow-xl py-1 border border-gray-100 overflow-hidden z-50" 
+                         style="display: none;">
                         @foreach($supportedLocales as $localeCode => $properties)
-                            <a href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}" class="block px-3 py-2 text-sm {{ $localeCode === $currentLocale ? 'bg-blue-50 text-[#1E5A96] font-bold' : 'text-gray-700 hover:bg-gray-50' }}" hreflang="{{ $localeCode }}">
+                            <a href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}" 
+                               role="menuitem"
+                               class="block px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:ring-inset {{ $localeCode === $currentLocale ? 'bg-blue-50 text-[#1E5A96] font-bold' : 'text-gray-700 hover:bg-gray-50' }}" 
+                               hreflang="{{ $localeCode }}"
+                               @if($localeCode === $currentLocale) aria-current="true" @endif>
                                 {{ strtoupper($localeCode) }} - {{ $properties['native'] }}
                             </a>
                         @endforeach
@@ -258,15 +307,29 @@
                 {{-- Hamburger --}}
                 <button
                     @click="mobileOpen = !mobileOpen"
-                    class="p-2 rounded-md transition-colors focus:outline-none focus:ring-2"
-                    :class="scrolled ? 'text-gray-700 hover:bg-gray-100 focus:ring-gray-300/30' : 'text-white hover:bg-white/10 focus:ring-white/30'"
-                    aria-label="Toggle menu"
+                    class="p-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2"
+                    :class="scrolled ? 'text-gray-700 hover:bg-gray-100 focus:ring-[#1E5A96]' : 'text-white hover:bg-white/10 focus:ring-white'"
+                    aria-label="Apri/chiudi menu di navigazione"
                     :aria-expanded="mobileOpen.toString()"
+                    aria-controls="mobile-menu"
                 >
-                    <svg x-show="!mobileOpen" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg x-show="!mobileOpen" 
+                         class="w-6 h-6" 
+                         fill="none" 
+                         viewBox="0 0 24 24" 
+                         stroke="currentColor" 
+                         stroke-width="2"
+                         aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
-                    <svg x-show="mobileOpen" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display: none;">
+                    <svg x-show="mobileOpen" 
+                         class="w-6 h-6" 
+                         fill="none" 
+                         viewBox="0 0 24 24" 
+                         stroke="currentColor" 
+                         stroke-width="2" 
+                         style="display: none;"
+                         aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
@@ -275,7 +338,8 @@
     </div>
 
     {{-- Mobile Menu --}}
-    <div
+    <nav
+        id="mobile-menu"
         x-show="mobileOpen"
         x-transition:enter="transition ease-out duration-200"
         x-transition:enter-start="opacity-0 -translate-y-2"
@@ -283,8 +347,10 @@
         x-transition:leave="transition ease-in duration-150"
         x-transition:leave-start="opacity-100 translate-y-0"
         x-transition:leave-end="opacity-0 -translate-y-2"
+        role="navigation"
+        aria-label="Navigazione mobile"
         class="lg:hidden"
-                    :class="scrolled ? 'bg-white border-t border-gray-200' : 'bg-[#0f2b46]/98 backdrop-blur-xl border-t border-white/10'"
+        :class="scrolled ? 'bg-white border-t border-gray-200' : 'bg-[#0f2b46]/98 backdrop-blur-xl border-t border-white/10'"
         style="display: none;"
     >
         <div class="container mx-auto px-4 py-4 space-y-1">
@@ -295,10 +361,12 @@
                 @endphp
                 <a
                     href="{{ $item['url'] }}"
-                    class="block px-4 py-3 rounded-lg text-base font-medium transition-colors"
+                    x-data="{ isActive: {{ $isActive ? 'true' : 'false' }} }"
+                    class="block px-4 py-3 rounded-lg text-base font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2"
                     :class="scrolled 
-                        ? ($isActive ? 'text-gray-900 bg-gray-100' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50') 
-                        : ($isActive ? 'text-white bg-white/10' : 'text-white/80 hover:text-white hover:bg-white/5')"
+                        ? (isActive ? 'text-gray-900 bg-gray-100 focus:ring-[#1E5A96]' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:ring-[#1E5A96]') 
+                        : (isActive ? 'text-white bg-white/10 focus:ring-white' : 'text-white/80 hover:text-white hover:bg-white/5 focus:ring-white')"
+                    @if($isActive) aria-current="page" @endif
                 >
                     {{ $item['label'] }}
                 </a>
@@ -307,17 +375,20 @@
             @auth
                 <div class="border-t border-white/10 pt-4 mt-3">
                     <div class="flex items-center px-4 mb-3">
-                        <img class="w-10 h-10 rounded-full border-2 border-white/20" src="{{ auth()->user()->avatar_url ?? 'https://ui-avatars.com/api/?name='.urlencode(auth()->user()->name ?? 'U').'&color=7F9CF5&background=EBF4FF' }}" alt="">
+                        <img class="w-10 h-10 rounded-full border-2 border-white/20" src="{{ auth()->user()->avatar_url ?? 'https://ui-avatars.com/api/?name='.urlencode(auth()->user()->name ?? 'U').'&color=7F9CF5&background=EBF4FF' }}" alt="Avatar di {{ auth()->user()->name ?? 'Utente' }}">
                         <div class="ml-3">
                             <p class="text-sm font-semibold text-white">{{ auth()->user()->name ?? '' }}</p>
                             <p class="text-xs text-white/60">{{ auth()->user()->email ?? '' }}</p>
                         </div>
                     </div>
-                    <a href="/admin" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5 rounded-lg">Dashboard</a>
-                    <a href="/profile" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5 rounded-lg">{{ __('Profilo') }}</a>
+                    <a href="/admin" 
+                       class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5 rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0f2b46]">Dashboard</a>
+                    <a href="/profile" 
+                       class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5 rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0f2b46]">{{ __('Profilo') }}</a>
                     <form method="POST" action="{{ route('logout') }}" class="mt-1">
                         @csrf
-                        <button type="submit" class="block w-full text-left px-4 py-2 text-sm text-red-400 hover:text-red-300 hover:bg-white/5 rounded-lg">{{ __('Esci') }}</button>
+                        <button type="submit" 
+                                class="block w-full text-left px-4 py-2 text-sm text-red-400 hover:text-red-300 hover:bg-white/5 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-[#0f2b46]">{{ __('Esci') }}</button>
                     </form>
                 </div>
             @endauth
@@ -325,14 +396,15 @@
             <div class="pt-3 mt-2">
                 <a
                     href="{{ $ctaUrl }}"
-                    class="flex items-center justify-center w-full px-5 py-3 text-base font-semibold text-white border border-white/70 rounded-lg hover:bg-white hover:text-[#1E5A96] transition-all"
+                    aria-label="{{ $ctaLabel }} - {{ __('Apri pagina contatti') }}"
+                    class="flex items-center justify-center w-full px-5 py-3 text-base font-semibold text-white border border-white/70 rounded-lg hover:bg-white hover:text-[#1E5A96] transition-all focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0f2b46]"
                 >
-                    <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                     </svg>
                     {{ $ctaLabel }}
                 </a>
             </div>
         </div>
-    </div>
+    </nav>
 </header>

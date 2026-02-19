@@ -17,16 +17,36 @@
         <meta name="description" content="{{ $metatag->getDescription() }}">
         @endif
 
+        {{-- Resource Hints for Performance --}}
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+        {{-- Critical CSS inline --}}
         <style>[x-cloak] { display: none !important; }</style>
 
+        {{-- Non-blocking CSS loading --}}
         @filamentStyles
         @vite(['resources/css/app.css'], 'themes/Two')
     </head>
     <body class="antialiased font-sans bg-white text-gray-900">
-        {!! $slot ?? '' !!}
+        {{-- Skip to main content link for accessibility --}}
+        <a href="#main-content" 
+           class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-[#1E5A96] focus:text-white focus:rounded-md focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96]">
+            Vai al contenuto principale
+        </a>
+        
+        <main id="main-content" role="main">
+            {!! $slot ?? '' !!}
+        </main>
 
+        {{-- Alpine.js - Loaded with defer for non-blocking --}}
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+        
+        {{-- Livewire and Filament Scripts --}}
         @livewireScripts
         @filamentScripts
+        
+        {{-- Application JS --}}
         @vite(['resources/js/app.js'], 'themes/Two')
     </body>
 </html>

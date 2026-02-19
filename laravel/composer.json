@@ -78,6 +78,20 @@
             "@php artisan optimize",
             "@php artisan route:clear",
             "@php artisan serve"
+        ],
+        "refresh": [
+            "rm -rf ./app/View/Components/vendor/",
+            "rm -rf ./resources/views/vendor/",
+            "@php artisan vendor:publish --all",
+            "rm -rf database/migrations/*",
+            "rm -rf ./app/View/Components/vendor/",
+            "@php artisan migrate",
+            "@php artisan livewire:publish --assets",
+            "@php artisan filament:upgrade",
+            "@php artisan config:cache",
+            "@php artisan filament:optimize",
+            "@php artisan optimize",
+            "@php artisan route:clear"
         ]
     },
     "repositories": [

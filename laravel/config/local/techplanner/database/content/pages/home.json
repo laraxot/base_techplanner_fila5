@@ -162,7 +162,8 @@
                 "type": "testimonials",
                 "slug": "testimonials-section",
                 "data": {
-                    "view": "pub_theme::components.blocks.testimonials.grid",
+                    "view": "ui::empty",
+                    "view_2": "pub_theme::components.blocks.testimonials.slider",
                     "title": "Dicono di Noi",
                     "subtitle": "La tranquillità di chi ha scelto la sicurezza certificata",
                     "id": "testimonials",

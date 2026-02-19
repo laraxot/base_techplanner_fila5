@@ -37,10 +37,13 @@
                             type="{{ $nameField['type'] ?? 'text' }}"
                             name="nome"
                             id="nome"
-                            {{ $nameField['required'] ?? false ? 'required' : '' }}
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                            autocomplete="name"
+                            {{ $nameField['required'] ?? false ? 'required aria-required="true"' : '' }}
+                            aria-describedby="nome-help"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
                             placeholder="{{ $nameField['placeholder'] ?? 'Inserisci il tuo nome completo' }}"
                         >
+                        <p id="nome-help" class="sr-only">Inserisci il tuo nome e cognome completo</p>
                     </div>
                 @endif
 
@@ -57,10 +60,13 @@
                             type="{{ $emailField['type'] ?? 'email' }}"
                             name="email"
                             id="email"
-                            {{ $emailField['required'] ?? false ? 'required' : '' }}
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                            autocomplete="email"
+                            {{ $emailField['required'] ?? false ? 'required aria-required="true"' : '' }}
+                            aria-describedby="email-help"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
                             placeholder="{{ $emailField['placeholder'] ?? 'esempio@email.com' }}"
                         >
+                        <p id="email-help" class="sr-only">Inserisci il tuo indirizzo email</p>
                     </div>
                 @endif
 
@@ -77,10 +83,13 @@
                             type="{{ $phoneField['type'] ?? 'tel' }}"
                             name="telefono"
                             id="telefono"
-                            {{ $phoneField['required'] ?? false ? 'required' : '' }}
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                            autocomplete="tel"
+                            {{ $phoneField['required'] ?? false ? 'required aria-required="true"' : '' }}
+                            aria-describedby="telefono-help"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
                             placeholder="{{ $phoneField['placeholder'] ?? '+39 347 58 96 127' }}"
                         >
+                        <p id="telefono-help" class="sr-only">Inserisci il tuo numero di telefono</p>
                     </div>
                 @endif
 
@@ -97,10 +106,13 @@
                             type="{{ $studioField['type'] ?? 'text' }}"
                             name="studio"
                             id="studio"
-                            {{ $studioField['required'] ?? false ? 'required' : '' }}
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                            autocomplete="organization"
+                            {{ $studioField['required'] ?? false ? 'required aria-required="true"' : '' }}
+                            aria-describedby="studio-help"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
                             placeholder="{{ $studioField['placeholder'] ?? 'Nome del tuo studio' }}"
                         >
+                        <p id="studio-help" class="sr-only">Inserisci il nome del tuo studio professionale</p>
                     </div>
                 @endif
 
@@ -116,14 +128,17 @@
                         <select
                             name="tipo"
                             id="tipo"
-                            {{ $tipoField['required'] ?? false ? 'required' : '' }}
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors bg-white"
+                            autocomplete="organization-title"
+                            {{ $tipoField['required'] ?? false ? 'required aria-required="true"' : '' }}
+                            aria-describedby="tipo-help"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors bg-white"
                         >
                             <option value="">Seleziona tipo di studio</option>
                             @foreach($tipoField['options'] ?? [] as $option)
                                 <option value="{{ $option }}">{{ $option }}</option>
                             @endforeach
                         </select>
+                        <p id="tipo-help" class="sr-only">Seleziona il tipo di studio professionale</p>
                     </div>
                 @endif
 
@@ -140,10 +155,13 @@
                             name="messaggio"
                             id="messaggio"
                             rows="5"
-                            {{ $messageField['required'] ?? false ? 'required' : '' }}
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none"
+                            autocomplete="off"
+                            {{ $messageField['required'] ?? false ? 'required aria-required="true"' : '' }}
+                            aria-describedby="messaggio-help"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors resize-none"
                             placeholder="{{ $messageField['placeholder'] ?? 'Descrivi la tua richiesta...' }}"
                         ></textarea>
+                        <p id="messaggio-help" class="sr-only">Descrivi la tua richiesta di consulenza</p>
                     </div>
                 @endif
 
@@ -154,21 +172,25 @@
                         name="privacy"
                         type="checkbox"
                         required
-                        class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mt-1"
+                        aria-required="true"
+                        aria-describedby="privacy-help"
+                        class="w-4 h-4 text-[#1E5A96] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#1E5A96] mt-1"
                     >
                     <label for="privacy" class="ml-3 text-sm text-gray-600">
                         {{ $privacyText }}
                     </label>
+                    <p id="privacy-help" class="sr-only">Devi accettare la privacy policy per inviare il form</p>
                 </div>
 
                 {{-- Submit Button --}}
                 <div>
                     <button
                         type="submit"
-                        class="w-full px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 transition-all duration-200 transform hover:scale-[1.02]"
+                        aria-label="{{ $submitLabel }} - {{ __('Invia il form di contatto') }}"
+                        class="w-full px-8 py-4 bg-[#1E5A96] text-white font-semibold rounded-lg hover:bg-[#164575] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96] transition-all duration-200 transform hover:scale-[1.02]"
                     >
                         <span class="flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                             </svg>
                             {{ $submitLabel }}
