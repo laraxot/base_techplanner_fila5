@@ -5,19 +5,20 @@
 ])
 
 @php
-    $displayAddress = $address ?: 'Via Vanzo 86, 31021 Mogliano Veneto TV';
-    $lat = $coordinates['lat'] ?? 45.5633;
-    $lng = $coordinates['lng'] ?? 12.2506;
-    $offset = 0.010;
+    $displayAddress = $address ?: 'Via Vanzo 86/A, 31021 Mogliano Veneto TV';
 
-    // OpenStreetMap embed (gratuito, nessuna API key, funziona sempre)
-    $bboxMin = ($lng - $offset) . '%2C' . ($lat - $offset);
-    $bboxMax = ($lng + $offset) . '%2C' . ($lat + $offset);
-    $osmSrc = "https://www.openstreetmap.org/export/embed.html?bbox={$bboxMin}%2C{$bboxMax}&layer=mapnik&marker={$lat}%2C{$lng}";
+    // Link navigazione Google Maps (gratuito, non è una chiamata API)
+    if (!empty($coordinates['lat']) && !empty($coordinates['lng'])) {
+        $mapsUrl = 'https://www.google.com/maps?q='.$coordinates['lat'].','.$coordinates['lng'];
+    } else {
+        $mapsUrl = 'https://www.google.com/maps/search/?api=1&query='.urlencode($displayAddress);
+    }
 
-    // Link Google Maps per navigazione (gratuito - non è una chiamata API)
-    $encodedAddress = urlencode($displayAddress);
-    $mapsUrl = "https://www.google.com/maps/search/?api=1&query={$encodedAddress}";
+    // PNG locale (screenshot manuale da Google Maps UI) - niente richieste esterne a runtime.
+    $imagePath = public_path('modules/techplanner/images/map-via-vanzo.png');
+    $imageUrl = asset('modules/techplanner/images/map-via-vanzo.png');
+
+    $hasLocalImage = file_exists($imagePath) && filesize($imagePath) > 1000;
 @endphp
 
 <section class="py-16 bg-gray-50">
@@ -31,38 +32,45 @@
         </div>
 
         <div class="max-w-4xl mx-auto">
-            {{-- Mappa OpenStreetMap - gratuita, precisa, sempre disponibile --}}
-            <div class="rounded-xl shadow-lg overflow-hidden border border-gray-200">
-                <iframe
-                    src="{{ $osmSrc }}"
-                    width="100%"
-                    height="450"
-                    frameborder="0"
-                    style="border:0; display:block;"
-                    allowfullscreen
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    title="Mappa: {{ $displayAddress }}"
-                    aria-label="Mappa ubicazione - {{ $displayAddress }}"
-                ></iframe>
-            </div>
+            {{-- Mappa statica (PNG locale) + link Google Maps --}}
+            <a
+                href="{{ $mapsUrl }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block bg-white rounded-xl shadow-lg overflow-hidden group"
+                aria-label="Apri {{ $displayAddress }} su Google Maps"
+            >
+                @if($hasLocalImage)
+                    <img
+                        src="{{ $imageUrl }}"
+                        alt="Mappa: {{ $displayAddress }}"
+                        class="w-full h-auto transition-opacity duration-200 group-hover:opacity-90"
+                        loading="lazy"
+                    />
+                @else
+                    <div class="w-full h-[450px] flex items-center justify-center bg-gray-50">
+                        <div class="text-center px-6">
+                            <p class="text-gray-900 font-semibold">{{ $displayAddress }}</p>
+                            <p class="text-gray-600 text-sm mt-2">Apri la posizione su Google Maps</p>
+                        </div>
+                    </div>
+                @endif
+            </a>
 
-            {{-- Call to action: apri Google Maps per navigazione --}}
-            <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+            {{-- Pulsante apertura Google Maps navigazione --}}
+            <div class="mt-6 text-center">
                 <a
                     href="{{ $mapsUrl }}"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-md"
-                    style="color:#fff;"
+                    class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-md"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    Apri su Google Maps
+                    Ottieni Indicazioni su Google Maps
                 </a>
-                <span class="text-sm text-gray-500">{{ $displayAddress }}</span>
             </div>
         </div>
     </div>

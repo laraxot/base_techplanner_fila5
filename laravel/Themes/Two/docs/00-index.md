@@ -6,9 +6,10 @@
 
 ### 🎯 Essential Reading
 1. [README.md](./README.md) - Theme overview
-2. [Comprehensive Site Analysis](./comprehensive-site-analysis.md) - ⭐ Complete analysis of target vs local site
-3. [Map Integration](./map-integration.md) - Map implementation with OpenStreetMap
-4. [Map Free Rules](./map-free-rules.md) - ✅ Regola FREE ONLY per mappe
+2. [Deployment e validazione](./deployment-and-validation.md) - Produzione sottana.net, auto-deploy su master
+3. [Comprehensive Site Analysis](./comprehensive-site-analysis.md) - ⭐ Complete analysis of target vs local site
+4. [Map Integration](./map-integration.md) - Map implementation
+5. [Map Free Rules](./map-free-rules.md) - ✅ Regola FREE ONLY per mappe
 
 ### 🎨 Theme Characteristics
 - **Style**: Professional medical/radioprotection design
