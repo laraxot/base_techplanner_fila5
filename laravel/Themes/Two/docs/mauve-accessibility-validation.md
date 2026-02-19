@@ -79,8 +79,31 @@ MAUVE++ è un validatore di accessibilità sviluppato dal CNR (ISTI - HIIS Lab) 
 - [x] Sito deployato su https://sottana.net
 - [x] axe-core eseguito (5 issue accessibilità trovate)
 - [x] Performance base misurata (curl)
+- [x] W3C HTML Validator eseguito (72-75 errori rilevati)
 - [ ] PageSpeed Insights (da fare manualmente)
 - [ ] MAUVE++ (da fare manualmente)
+
+## Problemi Rilevati
+
+### 1. Errori W3C HTML Validator
+
+Il sito ha **72-75 errori HTML** rilevati dal W3C Validator:
+
+**Principali categorie:**
+- Attributi Blade non compilati (`:class`, `x-data`, `@click`, `@scroll.window`)
+- Attributi duplicati `class`
+- Direttive Livewire/Blade non processate
+
+**Causa**: Le viste Blade non vengono compilate in produzione. Questo può accadere se:
+- `php artisan view:cache` non è stato eseguito
+- C'è un problema con la configurazione di produzione
+
+**Soluzione**: Eseguire `php artisan view:cache` sul server di produzione
+
+### 2. Errori Accessibilità (axe-core)
+
+- 2 errori contrasto colori (`text-brand-orange`)
+- 3 errori link senza testo visibile
 
 ## Performance Base (curl)
 

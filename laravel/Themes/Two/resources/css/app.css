@@ -6,6 +6,8 @@
     --color-brand-blue: #1E5A96;
     --color-brand-green: #2D8659;
     --color-brand-orange: #E67E22;
+    /* Darker orange for WCAG AA contrast on light backgrounds (4.5:1+) */
+    --color-brand-orange-dark: #B85C00;
     
     /* Target Website Color Palette */
     --color-primary-light: oklch(0.65 0.15 250);

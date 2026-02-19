@@ -171,4 +171,3 @@ private function formatContacts(Client $record): string
 - [x] **Documentato** la soluzione
 - [x] **Aggiornato** le regole e memorie
 
-*Ultimo aggiornamento: 2025-01-06* 

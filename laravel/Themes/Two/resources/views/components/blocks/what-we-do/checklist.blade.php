@@ -15,7 +15,7 @@
             <p class="text-lg text-gray-600 leading-relaxed mb-8 max-w-4xl mx-auto">{{ $subtitle }}</p>
 
             <div class="bg-brand-orange/10 border-l-4 border-brand-orange p-6 rounded-r-xl max-w-3xl mx-auto text-left">
-                <h4 class="font-bold text-brand-orange mb-2">{{ $callout_title }}</h4>
+                <h3 class="font-bold text-brand-orange-dark mb-2">{{ $callout_title }}</h3>
                 <p class="text-gray-700 text-sm leading-relaxed">{{ $callout_text }}</p>
             </div>
         </div>

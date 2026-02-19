@@ -6,10 +6,10 @@
 ])
 
 @php
-    $iconColors = ['text-brand-blue', 'text-brand-green', 'text-brand-orange'];
+    $iconColors = ['text-brand-blue', 'text-brand-green', 'text-brand-orange-dark'];
     $borderColors = ['border-t-brand-blue', 'border-t-brand-green', 'border-t-brand-orange'];
     $bgColors = ['bg-brand-blue/10', 'bg-brand-green/10', 'bg-brand-orange/10'];
-    $textColors = ['text-brand-blue', 'text-brand-green', 'text-brand-orange'];
+    $textColors = ['text-brand-blue', 'text-brand-green', 'text-brand-orange-dark'];
 @endphp
 
 <section id="{{ $id }}" class="py-20 bg-white scroll-mt-20">
