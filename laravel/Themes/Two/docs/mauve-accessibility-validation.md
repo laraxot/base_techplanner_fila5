@@ -78,9 +78,23 @@ MAUVE++ è un validatore di accessibilità sviluppato dal CNR (ISTI - HIIS Lab) 
 
 - [x] Sito deployato su https://sottana.net
 - [x] axe-core eseguito (5 issue accessibilità trovate)
-- [ ] Home page validata (da fare manualmente su MAUVE)
-- [ ] Contatti validata
-- [ ] Servizi validata
+- [x] Performance base misurata (curl)
+- [ ] PageSpeed Insights (da fare manualmente)
+- [ ] MAUVE++ (da fare manualmente)
+
+## Performance Base (curl)
+
+| Pagina | Tempo | Dimensione | Status |
+|--------|-------|------------|--------|
+| Home | 0.35s | 76KB | 200 |
+| Contatti | 0.35s | 77KB | 200 |
+| Servizi | 0.35s | 53KB | 200 |
+| Blog | 0.35s | 85KB | 200 |
+
+Note:
+- Tutte le pagine caricano in < 400ms
+- HTTPS attivo
+- Laravel session attive
 
 ## PageSpeed Insights
 
