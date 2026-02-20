@@ -26,20 +26,20 @@ Verificare **ogni** URL su [https://pagespeed.web.dev/](https://pagespeed.web.de
 ### Home - https://sottana.net/it (Mobile)
 | Metrica | Valore |
 |---------|--------|
-| Performance | 91% |
+| Performance | 96% |
 | Accessibility | 90% ⚠️ |
 | Best Practices | 96% |
 | SEO | 100% |
 
-### Problemi Identificati
-- **Contrasto**: text-brand-orange su sfondo chiaro
-- **Link name**: Social links senza aria-label
-- **Heading**: h4 invece di h3
+### Problemi identificati (fix in repo, richiesto deploy)
+- **Contrasto**: override in `app.css` per `#main-content .text-brand-orange` con `--color-brand-orange-dark` (!important).
+- **Link name**: social con `aria-label` che inizia con nome piattaforma (LinkedIn:, Facebook:, Instagram:) + `<span class="sr-only">`.
+- **Heading**: componente checklist usa `h3` e `text-orange-700` per "Perché è fondamentale?".
 
-### Errori JS Console
-- `$isActive is not defined` - Alpine.js mobile menu
-- `$dispatch is not defined` - Cookie consent
-- 404: hero-bg.jpg, medical-equipment.jpg
+### Errori JS Console (fix in repo / da deploy)
+- `$isActive is not defined`: menu mobile header v1 usa solo classi server-side, nessun `:class` Alpine; dopo deploy scompare.
+- `$dispatch is not defined`: cookie-consent (vendor), non modificabile dal tema.
+- 404 immagini: path aggiornati a `/themes/Two/images/`; **copiare** `hero-bg.jpg`, `medical-equipment.jpg`, `veterinary-radiology.jpg` in `public/themes/Two/images/` in deploy.
 
 ## Come validare
 
