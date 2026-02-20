@@ -24,7 +24,7 @@ In caso di dubbi su API 5.x: [Filament 5.x Docs](https://filamentphp.com/docs/5.
 - Risorse, pagine e widget Filament nel modulo estendono le classi base Xot (es. `XotBaseResource`, `XotBasePage`), non le classi Filament direttamente.
 - Pattern e convenzioni Filament 5.x sono descritti in:
   - [Modules/Xot/docs/filament](../../Xot/docs/filament) (se esiste guida 5.x)
-  - Regola progetto: [.cursor/rules/filament-version.mdc](../../../../../../.cursor/rules/filament-version.mdc)
+  - Regola progetto: `.cursor/rules/filament-version.mdc` (Filament 5.x)
 
 ## Collegamenti
 
