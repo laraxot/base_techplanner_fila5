@@ -6,24 +6,50 @@
 
 **Riferimenti W3C**: [wcag-techniques-resolution.md](wcag-techniques-resolution.md) — tecniche H44, F78, G195, H30, C8, C38, G18, H98, ARIA6 e ordine di intervento.
 
+**Validazione**: Report MAUVE++ del 19 Feb 2026
+
 ---
 
 ## 📋 Executive Summary
 
-Questo documento descrive il piano completo per risolvere tutti i problemi di accessibilità WCAG 2.1 AA identificati nei report MAUVE++ e PageSpeed Insights per il tema Two del progetto sottana.net.
+Questo documento descrive il piano completo per risolvere tutti i problemi di accessibilità WCAG 2.1 AA identificati nei report MAUVE++ per il tema Two del progetto sottana.net.
 
-### Problemi Identificati
+### Problemi Identificati (MAUVE++ 19 Feb 2026)
 
-Dai report di audit accessibilità, sono stati identificati i seguenti problemi critici:
+**ERRORI - Critical:**
+| Tecnica | Occorrenze | Descrizione |
+|---------|------------|-------------|
+| ARIA6 | 26 | aria-label per oggetti |
+| G18 | 25 | Contrasto insufficiente (4.5:1) |
+| G195 | 5 | Focus indicator non visibile |
+| F78 | 5 | Focus indicator rimosso |
+| C21 | 5 | Line spacing CSS |
+| H30 | 4 | Link senza testo descrittivo |
 
-1. **H44** - Select e checkbox senza label associati (5 occorrenze)
-2. **F78/G195** - Focus indicator non visibile o rimosso (5 occorrenze)
-3. **H30** - Link senza testo descrittivo (26 occorrenze)
-4. **C8** - Letter-spacing che causa problemi di leggibilità (1 occorrenza)
-5. **C38** - Problemi di reflow con flexbox (5 occorrenze)
-6. **G18** - Contrasto insufficiente tra testo e sfondo (43 occorrenze)
-7. **H98** - Autocomplete mancante su form inputs (3 occorrenze)
-8. **ARIA6** - aria-label su elementi che non possono essere trovati (26 occorrenze)
+**WARNING - Important:**
+| Tecnica | Occorrenze | Descrizione |
+|---------|------------|-------------|
+| F96 | 85 | aria-label non corrisponde a nome visibile |
+| ARIA11 | 3 | ARIA landmarks mancanti |
+| H67 | 2 | Null alt text |
+| G162 | 1 | Label positioning |
+| C12-13-14 | 5 | Font sizes |
+
+---
+
+## 🎯 Priorità di Intervento
+
+### FASE 1 - Critical (ERRORI)
+1. **G18** (25 occ) - Contrasto colori
+2. **F78/G195** (10 occ) - Focus indicator
+3. **H30** (4 occ) - Link text
+4. **ARIA6** (26 occ) - aria-label
+
+### FASE 2 - Important (WARNING)
+1. **F96** (85 occ) - aria-label vs visible name
+2. **ARIA11** (3 occ) - Landmarks
+3. **C21** (5 occ) - Line spacing
+4. **H67** (2 occ) - Alt text
 
 ---
 
