@@ -1,34 +1,147 @@
 # Compatibilità Filament 5.x - Modulo Cms
 
-**Status**: attivo  
-**Versione Filament**: ^5.0 (progetto base)  
-**Regola**: i nomi dei file .md sono in minuscolo con trattino; un solo file per la compatibilità Filament (5.x).
+**Status**: ✅ ATTIVO  
+**Versione Filament**: ^5.0 (versione corrente del progetto)  
+**Regola**: I nomi dei file .md sono in minuscolo con trattino; un solo file per la compatibilità Filament (5.x).
 
-## Contesto
+## Panoramica
 
-Questo progetto usa **Filament 5.x**. La documentazione di compatibilità deve riferirsi alla versione in uso, non alla 4.x. Per la migrazione da 4 a 5 vedi la [guida ufficiale](https://filamentphp.com/docs/5.x/panels/upgrade) e i requisiti (Livewire 4, Tailwind 4, Laravel 11.28+, PHP 8.2+).
+Questo progetto usa **Filament 5.x** come framework per l'interfaccia di amministrazione. Tutti i moduli devono essere compatibili con Filament 5.x e seguire i pattern definiti in questa documentazione.
 
-## Riferimenti da 4.x (storico)
+## Requisiti di Sistema
 
-Le correzioni applicate in passato per Filament 4.x restano valide dove le API non sono cambiate in 5.x:
+- Laravel 11.28+
+- PHP 8.2+
+- Livewire v4
+- Node.js 18+
+- Tailwind CSS v4.1+
 
-- **SectionPreview / make()**: uso di `parent::make($name)` dove richiesto.
-- **Dashboard / getNavigationIcon()**: tipo `string|null`; cast `(string) $icon->value` per BackedEnum se presente.
-- **Proprietà view**: non statica dove Filament lo richiede.
-- **PHPDoc**: tipi di ritorno e parametri espliciti per PHPStan.
+## Differenze Principali da Filament 4.x
 
-In caso di dubbi su API 5.x: [Filament 5.x Docs](https://filamentphp.com/docs/5.x).
+### Schema System
+Filament 5.x usa un sistema dichiarativo Schema:
 
-## Modulo Cms e Filament 5.x
+```php
+// Filament 5.x
+use Filament\Forms\Components\TextInput;
 
-- Risorse, pagine e widget Filament nel modulo estendono le classi base Xot (es. `XotBaseResource`, `XotBasePage`), non le classi Filament direttamente.
-- Pattern e convenzioni Filament 5.x sono descritti in:
-  - [Modules/Xot/docs/filament](../../Xot/docs/filament) (se esiste guida 5.x)
-  - Regola progetto: `.cursor/rules/filament-version.mdc` (Filament 5.x)
+public static function getFormSchema(): array
+{
+    return [
+        TextInput::make('name'),
+    ];
+}
+```
 
-## Collegamenti
+### Panel Configuration
+```php
+use Filament\Panel;
+use Filament\PanelProvider;
 
-- [Filament 5.x Documentation](https://filamentphp.com/docs/5.x)
-- [Filament 5.x Upgrade Guide](https://filamentphp.com/docs/5.x/panels/upgrade)
-- [Indice documentazione Cms](00-index.md)
-- Documentazione storica 4.x: [archive/filament-4x-compatibility.md](archive/filament-4x-compatibility.md) (solo riferimento)
+class AdminPanelProvider extends PanelProvider
+{
+    public function panel(Panel $panel): Panel
+    {
+        return $panel
+            ->id('admin')
+            ->path('admin')
+            ->resources([
+                UserResource::class,
+            ])
+            ->widgets([
+                StatsOverviewWidget::class,
+            ]);
+    }
+}
+```
+
+## Classi XotBase Obbligatorie
+
+Tutti i componenti Filament in questo progetto DEVONO estendere le classi XotBase:
+
+### Resources
+```php
+// ❌ SBAGLIATO
+use Filament\Resources\Resource;
+class UserResource extends Resource {}
+
+// ✅ CORRETTO
+use Modules\Xot\Filament\Resources\XotBaseResource;
+class UserResource extends XotBaseResource {}
+```
+
+### Relation Managers
+```php
+// ❌ SBAGLIATO
+use Filament\Resources\RelationManagers\RelationManager;
+class PostsRelationManager extends RelationManager {}
+
+// ✅ CORRETTO
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+class PostsRelationManager extends XotBaseRelationManager {}
+```
+
+### Widgets
+```php
+// ❌ SBAGLIATO
+use Filament\Widgets\Widget;
+class StatsWidget extends Widget {}
+
+// ✅ CORRETTO
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+class StatsWidget extends XotBaseWidget {}
+```
+
+## Pattern Comuni
+
+### Form Fields
+Tutti i campi form devono usare chiavi di traduzione:
+
+```php
+// ❌ SBAGLIATO
+TextInput::make('email')->label('Email Address')
+
+// ✅ CORRETTO
+TextInput::make('email')->label(__('user.email'))
+```
+
+### Table Columns
+```php
+use Filament\Tables\Columns\TextColumn;
+
+public static function getTableColumns(): array
+{
+    return [
+        TextColumn::make('name'),
+    ];
+}
+```
+
+## Risoluzione Problemi Comuni
+
+### Errore Null Query
+Se `getFilteredTableQuery()` restituisce null:
+
+```php
+$query = $livewire->getFilteredTableQuery();
+if ($query === null) {
+    throw new \Exception('Query is null');
+}
+$rows = $query->get();
+```
+
+### Registrazione Widget
+Assicurarsi che i widget siano registrati nel PanelProvider:
+
+```php
+->widgets([
+    StatsOverviewWidget::class,
+])
+```
+
+## Riferimenti
+
+- [Filament 5.x Documentazione Ufficiale](https://filamentphp.com/docs/5.x)
+- [Filament 5.x Guida Upgrade](https://filamentphp.com/docs/5.x/panels/upgrade)
+- [Classi XotBase](../Xot/docs/filament-xotbase-classes.md)
+- [Testing Filament](../Xot/docs/filament-testing.md)
