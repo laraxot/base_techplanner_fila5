@@ -23,13 +23,15 @@ Verificare **ogni** URL su [https://pagespeed.web.dev/](https://pagespeed.web.de
 
 ## Risultati Ultima Validazione (20 Feb 2026)
 
-### Home - https://sottana.net/it (Mobile)
-| Metrica | Valore |
-|---------|--------|
-| Performance | 96% |
-| Accessibility | 90% ⚠️ |
-| Best Practices | 96% |
-| SEO | 100% |
+### Home - https://sottana.net/it
+| Metrica | Mobile | Desktop |
+|---------|--------|---------|
+| Performance | 96% | **100%** |
+| Accessibility | 90% ⚠️ | 90% ⚠️ |
+| Best Practices | 96% | 96% |
+| SEO | 100% | 100% |
+
+I problemi sotto persistono sul live finché non si esegue il deploy del tema + asset immagini.
 
 ### Problemi identificati (fix in repo, richiesto deploy)
 - **Contrasto**: override in `app.css` per `#main-content .text-brand-orange` con `--color-brand-orange-dark` (!important).
@@ -39,7 +41,19 @@ Verificare **ogni** URL su [https://pagespeed.web.dev/](https://pagespeed.web.de
 ### Errori JS Console (fix in repo / da deploy)
 - `$isActive is not defined`: menu mobile header v1 usa solo classi server-side, nessun `:class` Alpine; dopo deploy scompare.
 - `$dispatch is not defined`: cookie-consent (vendor), non modificabile dal tema.
-- 404 immagini: path aggiornati a `/themes/Two/images/`; **copiare** `hero-bg.jpg`, `medical-equipment.jpg`, `veterinary-radiology.jpg` in `public/themes/Two/images/` in deploy.
+- 404 immagini: path aggiornati a `/themes/Two/images/`; **copiare** i file sotto in `public/themes/Two/images/` in deploy.
+
+## Checklist deploy per PageSpeed (sottana.net)
+
+Per far scomparire 404, $isActive e migliorare accessibilità dopo il deploy:
+
+1. **Deploy del tema Two** (view, CSS, config già corretti in repo).
+2. **Creare la cartella e copiare le immagini** sul server:
+   - `public/themes/Two/images/` deve esistere
+   - Copiare al suo interno: `hero-bg.jpg`, `medical-equipment.jpg`, `veterinary-radiology.jpg`  
+     (origine tipica: `Themes/Two/Main_files/images/` o `Themes/Two/resources/images/`).
+3. **Cache**: dopo il deploy eseguire `php artisan view:clear` e, se usate, svuotare cache CDN/proxy.
+4. **Rieseguire PageSpeed** su https://sottana.net/it (Mobile + Desktop) e verificare che 404 e $isActive siano spariti e che il contrasto/heading risultino corretti.
 
 ## Come validare
 

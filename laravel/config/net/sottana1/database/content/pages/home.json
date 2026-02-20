@@ -20,7 +20,7 @@
                     "primary_cta_url": "/it/contatti",
                     "secondary_cta_label": "Scopri i Servizi",
                     "secondary_cta_url": "/it/servizi",
-                    "image": "/themes/Two/resources/images/hero-bg.jpg"
+                    "image": "/images/hero-bg.jpg"
                 }
             },
             {
@@ -106,7 +106,7 @@
                                 "Ortopantomografia (OPT) - Controllo qualità e sicurezza per panoramiche dentali",
                                 "CBCT (Cone Beam) - Protocolli avanzati per tomografia computerizzata a fascio conico"
                             ],
-                            "image": "/themes/Two/images/medical-equipment.jpg"
+                            "image": "/images/medical-equipment.jpg"
                         },
                         {
                             "title": "Medicina Veterinaria",

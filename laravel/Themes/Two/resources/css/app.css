@@ -193,10 +193,17 @@ footer .text-gray-400 {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* PageSpeed / WCAG: text-brand-orange on light backgrounds (e.g. cards, callouts) needs 4.5:1 */
-#main-content .text-brand-orange,
-main .text-brand-orange {
+/* PageSpeed / WCAG: text-brand-orange on light backgrounds needs 4.5:1 contrast */
+.text-brand-orange:not(.bg-brand-orange):not(.border-brand-orange):not(.from-brand-orange):not(.to-brand-orange):not(.via-brand-orange) {
     color: var(--color-brand-orange-dark) !important;
+}
+
+/* WCAG: border-brand-orange on light backgrounds needs darker shade */
+.border-brand-orange:not(.bg-white):not(.bg-gray-50):not(.bg-brand-blue):not(.bg-brand-green) {
+    border-color: var(--color-brand-orange-dark) !important;
+}
+.border-t-brand-orange:not(.bg-white):not(.bg-gray-50):not(.bg-brand-blue):not(.bg-brand-green) {
+    border-top-color: var(--color-brand-orange-dark) !important;
 }
 
 /* Reflow support - ensure content doesn't require horizontal scrolling at 320px */
