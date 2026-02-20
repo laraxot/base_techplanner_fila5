@@ -361,11 +361,7 @@
                 @endphp
                 <a
                     href="{{ $item['url'] }}"
-                    x-data="{ isActive: {{ $isActive ? 'true' : 'false' }} }"
-                    class="block px-4 py-3 rounded-lg text-base font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2"
-                    :class="scrolled 
-                        ? (isActive ? 'text-gray-900 bg-gray-100 focus:ring-[#1E5A96]' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:ring-[#1E5A96]') 
-                        : (isActive ? 'text-white bg-white/10 focus:ring-white' : 'text-white/80 hover:text-white hover:bg-white/5 focus:ring-white')"
+                    class="block px-4 py-3 rounded-lg text-base font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 {{ $isActive ? 'text-gray-900 bg-gray-100 focus:ring-[#1E5A96]' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:ring-[#1E5A96]' }}"
                     @if($isActive) aria-current="page" @endif
                 >
                     {{ $item['label'] }}

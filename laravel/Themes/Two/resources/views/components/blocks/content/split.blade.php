@@ -21,9 +21,12 @@
             
             {{-- Image --}}
             @if($image)
+                @php
+                    $imageSrc = str_starts_with($image, '/themes/Two/') ? asset(ltrim($image, '/')) : $image;
+                @endphp
                 <div class="{{ $reverse ? 'lg:col-start-1' : '' }}">
                     <div class="relative overflow-hidden rounded-2xl shadow-lg">
-                        <img src="{{ $image }}" 
+                        <img src="{{ $imageSrc }}" 
                              alt="{{ $title }}" 
                              class="w-full h-80 lg:h-96 object-cover hover:scale-105 transition-transform duration-500"
                              loading="lazy">

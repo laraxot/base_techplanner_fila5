@@ -16,6 +16,7 @@
         </style>
 
         @filamentStyles
+        @livewireStyles
         @vite('resources/css/app.css', 'themes/Two')
     </head>
 
@@ -29,11 +30,12 @@
         @livewire('notifications')
 
         <x-section slug="footer" />
-        
+
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" crossorigin="anonymous"></script>
+        @livewireScripts
         @filamentScripts
         @vite('resources/js/app.js', 'themes/Two')
     </body>
 
 
 </html>
-
