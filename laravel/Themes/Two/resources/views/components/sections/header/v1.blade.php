@@ -128,9 +128,8 @@
                         @if($isActive) aria-current="page" @endif
                     >
                         {{ $item['label'] }}
-                        <span class="absolute bottom-0 left-3 right-3 h-0.5 rounded-full transition-all duration-200"
+                        <span class="absolute bottom-0 left-3 right-3 h-0.5 rounded-full transition-all duration-200 {{ $isActive ? 'opacity-100' : 'opacity-0' }}"
                               :class="scrolled ? 'bg-[#1E5A96]' : 'bg-white'"
-                              class="{{ $isActive ? 'opacity-100' : 'opacity-0' }}"
                         ></span>
                     </a>
                 @endforeach
