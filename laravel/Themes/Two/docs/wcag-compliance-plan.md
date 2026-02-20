@@ -4,9 +4,9 @@
 **Target**: Conformità WCAG 2.1 Level AA  
 **Status**: In Lavorazione
 
-**Riferimenti W3C**: [wcag-techniques-resolution.md](wcag-techniques-resolution.md) — tecniche H44, F78, G195, H30, C8, C38, G18, H98, ARIA6 e ordine di intervento.
+**Riferimenti W3C**: [wcag-techniques-resolution.md](wcag-techniques-resolution.md) — tecniche H44, H67, F78, G195, H30, F96, C8, C21, C38, C12-13-14, G18, G162, H98, ARIA6, ARIA11 e ordine di intervento.
 
-**Validazione**: Report MAUVE++ del 19 Feb 2026
+**Validazione**: Report MAUVE++ (vedi cartella report / output tool)
 
 ---
 
@@ -14,46 +14,120 @@
 
 Questo documento descrive il piano completo per risolvere tutti i problemi di accessibilità WCAG 2.1 AA identificati nei report MAUVE++ per il tema Two del progetto sottana.net.
 
-### Problemi Identificati (MAUVE++ 19 Feb 2026)
+### Problemi Identificati (MAUVE++)
 
-**ERRORI - Critical:**
+**ERRORI (Critical):**
 | Tecnica | Occorrenze | Descrizione |
 |---------|------------|-------------|
+| F96 | 85 | Label in Name: nome accessibile non contiene testo visibile |
 | ARIA6 | 26 | aria-label per oggetti |
 | G18 | 25 | Contrasto insufficiente (4.5:1) |
 | G195 | 5 | Focus indicator non visibile |
 | F78 | 5 | Focus indicator rimosso |
-| C21 | 5 | Line spacing CSS |
+| C21 | 5 | Line spacing in CSS |
 | H30 | 4 | Link senza testo descrittivo |
 
-**WARNING - Important:**
+**WARNING (Important):**
 | Tecnica | Occorrenze | Descrizione |
 |---------|------------|-------------|
-| F96 | 85 | aria-label non corrisponde a nome visibile |
-| ARIA11 | 3 | ARIA landmarks mancanti |
-| H67 | 2 | Null alt text |
-| G162 | 1 | Label positioning |
-| C12-13-14 | 5 | Font sizes |
+| C12-13-14 | 5 | Font size percent/em/named |
+| ARIA11 | 3 | ARIA landmarks per regioni pagina |
+| H67 | 2 | img decorative: null alt |
+| G162 | 1 | Posizione label (prima/sopra campo; dopo checkbox) |
 
 ---
 
 ## 🎯 Priorità di Intervento
 
 ### FASE 1 - Critical (ERRORI)
-1. **G18** (25 occ) - Contrasto colori
-2. **F78/G195** (10 occ) - Focus indicator
-3. **H30** (4 occ) - Link text
-4. **ARIA6** (26 occ) - aria-label
+1. **F96** (85 occ) - Label in Name: nome accessibile deve contenere testo visibile
+2. **ARIA6** (26 occ) - aria-label per oggetti
+3. **G18** (25 occ) - Contrasto 4.5:1
+4. **F78/G195** (5+5 occ) - Focus visibile
+5. **C21** (5 occ) - Line-height in CSS
+6. **H30** (4 occ) - Testo link descrittivo
 
 ### FASE 2 - Important (WARNING)
-1. **F96** (85 occ) - aria-label vs visible name
-2. **ARIA11** (3 occ) - Landmarks
-3. **C21** (5 occ) - Line spacing
-4. **H67** (2 occ) - Alt text
+1. **C12-13-14** (5 occ) - Font size rem/em
+2. **ARIA11** (3 occ) - Landmark regions
+3. **H67** (2 occ) - img decorative alt=""
+4. **G162** (1 occ) - Posizione label form
 
 ---
 
-## 🎯 Tecniche WCAG da Implementare
+## 📍 Analisi Dettagliata HTML (MAUVE++ 20 Feb 2026)
+
+### ARIA6 - SVG Icons Senza Label
+Trovati nelle seguenti posizioni:
+- Line 316: Logo SVG - manca aria-label
+- Line 371: Chevron dropdown - manca aria-label  
+- Line 397: Phone icon in CTA button - manca aria-label
+- Line 414-419: Menu hamburger icons - manca aria-label
+- Line 479, 488, 517, 529, etc.: Service card icons
+- Line 711-757: Card icons (Dosimetria, Schermature, etc.)
+- Line 783-797: Social footer icons (LinkedIn, Facebook, Instagram)
+- Line 802, 843, 852, 860, 868: Contact icons
+
+### H30 - Link Senza Testo Descrittivo
+- Line 783: LinkedIn link - solo SVG
+- Line 788: Facebook link - solo SVG
+- Line 793: Instagram link - solo SVG
+
+### G18 - Contrasto Insufficiente
+- `text-gray-400` su sfondo scuro
+- `text-blue-200`, `text-blue-100/90` su sfondo blu scuro
+- `text-brand-orange` su sfondo chiaro (parzialmente corretto)
+
+### F78/G195 - Focus Indicator
+Cookie consent buttons - focus non visibile
+
+### ARIA11 - Landmarks
+- Mancano landmarks espliciti su alcune sezioni
+
+### H67 - Alt Text
+- Immagini con alt text non ottimale
+
+---
+
+## 🔧 Soluzioni Dettagliate
+
+### 1. Fix ARIA6 (SVG Icons)
+```blade
+<!-- ✅ CORRETTO -->
+<svg aria-hidden="true" class="w-10 h-10">...</svg>
+```
+
+### 2. Fix H30 (Social Links)
+```blade
+<!-- ✅ CORRETTO -->
+<a href="..." aria-label="Profilo LinkedIn">
+  <svg aria-hidden="true">...</svg>
+</a>
+```
+
+### 3. Fix G18 (Contrasto)
+```blade
+<!-- ✅ CORRETTO -->
+<span class="text-white">Testo</span>  <!-- invece di text-gray-400 -->
+```
+
+### 4. Fix F78/G195 (Focus)
+```css
+.lcc-button:focus {
+  outline: 3px solid #1E5A96 !important;
+  outline-offset: 2px;
+}
+```
+
+---
+
+## 📁 File da Modificare
+
+1. `resources/views/components/sections/header/v1.blade.php`
+2. `resources/views/components/sections/footer/v1.blade.php`
+3. `resources/views/components/blocks/services/grid.blade.php`
+4. `resources/css/app.css`
+5. Cookie consent config
 
 ### 1. H44: Using label elements to associate text labels with form controls
 
@@ -313,6 +387,93 @@ Questo documento descrive il piano completo per risolvere tutti i problemi di ac
 <label for="email">Email</label>
 <input id="email" aria-label="Indirizzo email" ...>
 {{-- Usa solo il label, aria-label sovrascrive --}}
+```
+
+---
+
+### 9. F96: Label in Name (2.5.3) – priorità alta (85 occorrenze)
+
+**Problema**: Il nome accessibile (aria-label / aria-labelledby) non contiene il testo visibile del controllo. Gli utenti voice/speech pronunciano il testo visibile; se aria-label è diverso, il comando fallisce.
+
+**Soluzione**:
+- Per link/bottoni con **testo visibile**: non usare aria-label che sostituisce il testo, oppure usare aria-label che **include** la stringa visibile (es. bottone "Invia" → aria-label="Invia messaggio" ok; "Invia" → aria-label="Cerca" no).
+- Preferire testo visibile + eventuale sr-only per contesto aggiuntivo, senza sovrascrivere con aria-label diverso.
+
+**Pattern**:
+```blade
+{{-- ✅ CORRETTO - testo visibile coincide con nome accessibile --}}
+<button type="submit">Invia</button>
+
+{{-- ✅ CORRETTO - aria-label include il testo visibile --}}
+<button type="submit" aria-label="Invia messaggio di contatto">Invia</button>
+
+{{-- ❌ ERRATO - F96 --}}
+<button aria-label="Cerca nel sito">Vai</button>
+```
+
+**File da verificare**: Tutti i componenti con bottoni/link che hanno sia testo visibile sia aria-label (header, footer, form, CTA).
+
+---
+
+### 10. H67: Immagini decorative (null alt)
+
+**Problema**: Immagini decorative devono essere ignorate dalle AT: usare `alt=""`. Non usare `title` per immagini decorative.
+
+**Soluzione**: Per ogni `<img>` puramente decorativa: `alt=""`. Nessun titolo necessario.
+
+**Pattern**:
+```blade
+{{-- ✅ CORRETTO --}}
+<img src="decoration.svg" alt="" role="presentation">
+
+{{-- ❌ EVITARE --}}
+<img src="decoration.svg" alt=" " title="decorazione">
+```
+
+---
+
+### 11. ARIA11: Landmark regions
+
+**Problema**: Le regioni della pagina devono essere identificabili (banner, main, navigation, contentinfo, complementary, search). Landmark multipli dello stesso tipo devono avere nome accessibile univoco.
+
+**Soluzione**:
+- Header principale: `role="banner"` (o `<header>` in cima al body).
+- Nav: `role="navigation"` con `aria-label` o `aria-labelledby` se più di un blocco nav.
+- Contenuto principale: `role="main"` (o `<main>`).
+- Footer: `role="contentinfo"` (o `<footer>`).
+- Form di ricerca: `role="search"`.
+
+**Pattern**: Vedere [ARIA11](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA11). Due nav → `aria-label="Navigazione principale"` e `aria-label="Link utili"` (o simile).
+
+---
+
+### 12. G162: Posizione label nei form
+
+**Problema**: Label devono essere in posizione prevedibile: **prima** del campo (sopra o a sinistra); per checkbox/radio **dopo** il controllo.
+
+**Soluzione**: Verificare form contatti e altri: label sopra o a sinistra di input/select/textarea; per checkbox/radio, label subito dopo l’input.
+
+---
+
+### 13. C12-13-14: Dimensioni font (resize text)
+
+**Problema**: Testo deve poter essere ridimensionato (1.4.4, 1.4.5): usare unità relative (%, em, rem) o dimensioni named.
+
+**Soluzione**: Evitare font-size solo in px per blocchi di testo; preferire rem/em in `app.css` e utility Tailwind.
+
+---
+
+### 14. C21: Line spacing (line-height)
+
+**Problema**: Per 1.4.12 Text Spacing, lo spazio tra le righe deve essere specificabile in CSS; valore tra 1.5 e 2 agevola la lettura.
+
+**Soluzione**: In `app.css` o classi di contenuto: `line-height: 1.5` (o 1.75) per paragrafi e blocchi di testo.
+
+**CSS**:
+```css
+.prose p, .content p {
+    line-height: 1.6;
+}
 ```
 
 ---
