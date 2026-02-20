@@ -16,7 +16,6 @@ declare(strict_types=1);
         ['name' => 'Radiologia', 'count' => 14, 'slug' => 'radiologia'],
         ['name' => 'TC', 'count' => 12, 'slug' => 'tc'],
         ['name' => 'RM', 'count' => 11, 'slug' => 'rm'],
-        ['name' => 'Fluoroscopia', 'count' => 10, 'slug' => 'fluoroscopia'],
         ['name' => 'Mammografia', 'count' => 9, 'slug' => 'mammografia'],
         ['name' => 'Dentale', 'count' => 8, 'slug' => 'dentale'],
         ['name' => 'Accreditamento', 'count' => 7, 'slug' => 'accreditamento'],
