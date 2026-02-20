@@ -65,7 +65,7 @@
                     "compliance_text": "Conformità con normative ASL, linee guida nazionali ed europee per studi odontoiatrici, protocolli di sterilizzazione e disinfezione certificati.",
                     "cta_label": "Consulenza per Studi Dentistici",
                     "cta_url": "/it/contatti",
-                    "image": "https://images.unsplash.com/photo-1593054326164-5f12638848c6?w=800&h=600&fit=crop",
+                    "image": "/themes/Two/images/service-odontoiatria.jpg",
                     "reversed": false,
                     "bg": "bg-white"
                 }

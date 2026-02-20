@@ -15,7 +15,7 @@
                 "data": {
                     "view": "pub_theme::components.blocks.hero.about",
                     "title": "Chi Siamo",
-                    "subtitle": "Sottana Service. Sicurezza ed igiene nei tuoi studi professionali.",
+                    "subtitle": "Sottana Service. Sicurezza ed igiene per i tuoi studi professionali.",
                     "primary_cta": {
                         "label": "Contattaci",
                         "url": "/contacts"
@@ -29,7 +29,7 @@
                 "data": {
                     "view": "pub_theme::components.blocks.content.split",
                     "title": "La Nostra Storia",
-                    "content": "<p class='text-lg leading-relaxed text-gray-700'>Sottana Service nasce con una missione chiara: garantire la massima sicurezza e conformità negli studi professionali.</p><p class='mt-4 text-gray-600'>Specializzandoci esclusivamente in studi dentistici e cliniche veterinarie, forniamo supporto ai professionisti che cercano un partner affidabile per la gestione della sicurezza radiologica ed elettrica.</p><p class='mt-4 text-gray-600'>La nostra filosofia si basa su tre pilastri: competenza tecnica senza compromessi, supporto completo al cliente e conformità garantita secondo le normative vigenti.</p>",
+                    "content": "<p class='text-lg leading-relaxed text-gray-700'>Sottana Service nasce con una missione chiara: garantire la massima sicurezza e conformità negli studi professionali.</p><p class='mt-4 text-gray-600'>Forniamo supporto ai professionisti che cercano un partner affidabile per la gestione della sicurezza, igiene e radioprotezione nei loro studi.</p><p class='mt-4 text-gray-600'>La nostra filosofia si basa su tre pilastri: competenza tecnica senza compromessi, supporto completo al cliente e conformità garantita secondo le normative vigenti.</p>",
                     "image": "/themes/Two/images/medical-equipment.jpg",
                     "reverse": false
                 }
@@ -187,12 +187,8 @@
                 "data": {
                     "view": "pub_theme::components.blocks.hero.about",
                     "title": "About Us",
-                    "subtitle": "For over 10 years serving healthcare safety in northern Italy. Experience, competence and passion for radiation protection.",
+                    "subtitle": "Serving healthcare safety in northern Italy. Competence and passion for radiation protection.",
                     "primary_cta": {
-                        "label": "Meet Our Team",
-                        "url": "#team"
-                    },
-                    "secondary_cta": {
                         "label": "Contact Us",
                         "url": "/contacts"
                     }

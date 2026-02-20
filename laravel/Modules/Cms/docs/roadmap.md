@@ -1,309 +1,216 @@
-# Roadmap Modulo Cms - [DATE]
+# 🎯 CMS MODULE - ROADMAP 2025
 
-**Modulo**: Cms (Content Management System)
-**Scopo**: Gestione contenuti dinamici con sistema blocks, pagine multi-lingua, menu gerarchici e integrazione Folio/Volt.
-**Stato Generale**: 75%
-**PHPStan Level 10**: 0 errori (10 suppressioni inline in app/)
-**File PHP**: 111 in app/
-**Test Files**: 91
-**Documentazione**: 315 docs
+**Modulo**: Cms ([Description])  
+**Status**: 0% COMPLETATO  
+**Priority**: LOW  
+**PHPStan**: 🚧 Level 0 (N/A errori)  
+**Filament**: 🚧 4.x Compatibile  
 
 ---
 
-## Stato Attuale
+## 🎯 MODULE OVERVIEW
 
-Il modulo Cms fornisce:
-- **Pagine dinamiche** con slug-based routing e content blocks JSON
-- **Sistema Blocks** modulare (Paragraph, Navigation, Newsletter, Logo, Social, Links)
-- **Menu gerarchici** con `HasRecursiveRelationships`
-- **Modelli Sushi** per configurazione e moduli (no database)
-- **FolioVoltServiceProvider** per routing file-based multi-lingua
-- **DTOs** Wireable per Livewire (BlockData, FooterData, HeadernavData)
-- **Integrazione Filament** per admin content management
+Il modulo **Cms** [descrizione del modulo].
 
----
-
-## Tasks
-
-| # | Task | File | Priorita' | % |
-|---|------|------|-----------|---|
-| 1 | Ridurre suppressioni PHPStan (10) | [task-ridurre-phpstan-suppressioni.md](task-ridurre-phpstan-suppressioni.md) | Alta | 0% |
-| 2 | Completare sistema blocks | [task-completare-sistema-blocks.md](task-completare-sistema-blocks.md) | Alta | 60% |
-| 3 | Migliorare test Folio/Volt routing | [task-test-folio-volt-routing.md](task-test-folio-volt-routing.md) | Media | 40% |
-| 4 | Consolidare documentazione (315 file) | [task-consolidare-documentazione.md](task-consolidare-documentazione.md) | Media | 20% |
-| 5 | Implementare versioning pagine | [task-versioning-pagine.md](task-versioning-pagine.md) | Bassa | 0% |
-
----
-
-## Note
-
-- Buona copertura test (91 file)
-- 10 suppressioni PHPStan da risolvere
-- Sistema blocks funzionante ma estensibile
-
-
---- Merged from roadmap-2026-01-30.md ---
-
-# Roadmap Modulo Cms - 2026-01-30
-
-**Modulo**: Cms (Content Management System)
-**Scopo**: Gestione contenuti dinamici con sistema blocks, pagine multi-lingua, menu gerarchici e integrazione Folio/Volt.
-**Stato Generale**: 75%
-**PHPStan Level 10**: 0 errori (10 suppressioni inline in app/)
-**File PHP**: 111 in app/
-**Test Files**: 91
-**Documentazione**: 315 docs
+### 🏗️ Architettura Modulo
+```
+Cms Module
+├── 🏛️ Core Features
+│   ├── [Feature 1]
+│   ├── [Feature 2]
+│   └── [Feature 3]
+│
+├── 🔧 Services
+│   ├── [Service 1]
+│   ├── [Service 2]
+│   └── [Service 3]
+│
+└── 🛠️ Utilities
+    ├── [Utility 1]
+    ├── [Utility 2]
+    └── [Utility 3]
+```
 
 ---
 
-## Stato Attuale
+## ✅ COMPLETED FEATURES
 
-Il modulo Cms fornisce:
-- **Pagine dinamiche** con slug-based routing e content blocks JSON
-- **Sistema Blocks** modulare (Paragraph, Navigation, Newsletter, Logo, Social, Links)
-- **Menu gerarchici** con `HasRecursiveRelationships`
-- **Modelli Sushi** per configurazione e moduli (no database)
-- **FolioVoltServiceProvider** per routing file-based multi-lingua
-- **DTOs** Wireable per Livewire (BlockData, FooterData, HeadernavData)
-- **Integrazione Filament** per admin content management
+### 🏛️ Core Features
+- [ ] **Feature 1**: [Description]
+- [ ] **Feature 2**: [Description]
+- [ ] **Feature 3**: [Description]
 
----
+### 🔧 Services
+- [ ] **Service 1**: [Description]
+- [ ] **Service 2**: [Description]
+- [ ] **Service 3**: [Description]
 
-## Tasks
-
-| # | Task | File | Priorita' | % |
-|---|------|------|-----------|---|
-| 1 | Ridurre suppressioni PHPStan (10) | [task-ridurre-phpstan-suppressioni.md](task-ridurre-phpstan-suppressioni.md) | Alta | 0% |
-| 2 | Completare sistema blocks | [task-completare-sistema-blocks.md](task-completare-sistema-blocks.md) | Alta | 60% |
-| 3 | Migliorare test Folio/Volt routing | [task-test-folio-volt-routing.md](task-test-folio-volt-routing.md) | Media | 40% |
-| 4 | Consolidare documentazione (315 file) | [task-consolidare-documentazione.md](task-consolidare-documentazione.md) | Media | 20% |
-| 5 | Implementare versioning pagine | [task-versioning-pagine.md](task-versioning-pagine.md) | Bassa | 0% |
+### 🛠️ Technical Excellence
+- [ ] **PHPStan Level 9**: 0 errori
+- [ ] **Filament 4.x**: Compatibilità completa
+- [ ] **Type Safety**: Type hints completi
+- [ ] **Error Handling**: Gestione errori robusta
+- [ ] **Testing Setup**: Configurazione test
 
 ---
 
-## Note
+## 🚧 IN PROGRESS FEATURES
 
-- Buona copertura test (91 file)
-- 10 suppressioni PHPStan da risolvere
-- Sistema blocks funzionante ma estensibile
+### 🚀 [Feature Name] (Priority: HIGH)
+**Status**: 0% COMPLETATO  
+**Timeline**: Q1 2025
 
+#### 📋 Tasks
+- [ ] **Task 1** (Priority: HIGH)
+  - [ ] Subtask 1
+  - [ ] Subtask 2
+  - [ ] Subtask 3
 
---- Merged from roadmap-2026-01-31.md ---
-
-# Cms Module - Content Management Roadmap
-
-**Data**: 2026-01-31
-**Status**: 🟡 In Progress (75% Completato)
-**Priorità**: Alta
-**Obiettivo**: 100% completamento con advanced blocks, SEO e versioning
-
----
-
-## 📊 Stato Attuale
-
-### Completamento Globale: **75%**
-
-| Componente | Completamento | Stato |
-|-----------|--------------|-------|
-| Page Management System | 100% | ✅ |
-| Block-Based Content Builder | 100% | ✅ |
-| Folio File-Based Routing | 100% | ✅ |
-| Volt Components | 100% | ✅ |
-| Filament Integration | 100% | ✅ |
-| Menu Management | 100% | ✅ |
-| Media Integration | 100% | ✅ |
-| Custom Layouts | 100% | ✅ |
-| Advanced Block Types | 60% | 🔄 |
-| SEO Optimization Features | 50% | 🔄 |
-| Content Versioning | 0% | ❌ |
-| Content Scheduling | 0% | ❌ |
-| Filament 5.x Migration | 0% | ❌ |
-| PHPStan Level 10 | 95% | ✅ |
-| Test Coverage | 75% | ✅ |
+#### 🎯 Success Criteria
+- [ ] Criterion 1
+- [ ] Criterion 2
+- [ ] Criterion 3
 
 ---
 
-## ✅ Funzionalità Completate
+## 📅 PLANNED FEATURES
 
-### 1. Page Management System (100%)
-- ✅ Create/Edit/Delete pages
-- ✅ Page hierarchy (parent/child)
-- ✅ Page status (draft, published, archived)
-- ✅ Page templates
-- ✅ Page permissions
-- ✅ Page revisions
+### 🚀 [Feature Name] (Priority: MEDIUM)
+**Timeline**: Q2 2025
 
-### 2. Block-Based Content Builder (100%)
-- ✅ Drag & drop interface
-- ✅ Basic block types (text, image, video)
-- ✅ Block ordering
-- ✅ Block nesting
-- ✅ Block settings
+#### 📋 Features
+- [ ] **Feature 1** (Priority: MEDIUM)
+  - [ ] Subtask 1
+  - [ ] Subtask 2
+  - [ ] Subtask 3
 
-### 3. Folio File-Based Routing (100%)
-- ✅ File-based page routing
-- ✅ Automatic route generation
-- ✅ Dynamic parameters
-- ✅ Route caching
-
-### 4. Volt Components (100%)
-- ✅ Interactive components
-- ✅ Live wire integration
-- ✅ Reactive data binding
-- ✅ Event handling
-
-### 5. Menu Management (100%)
-- ✅ Create/Edit/Delete menus
-- ✅ Menu hierarchy
-- ✅ Menu items with links
-- ✅ Active state detection
-
-### 6. Media Integration (100%)
-- ✅ Image selection from media library
-- ✅ Video embedding
-- ✅ File uploads
-- ✅ Image optimization
+#### 🎯 Success Criteria
+- [ ] Criterion 1
+- [ ] Criterion 2
+- [ ] Criterion 3
 
 ---
 
-## 🔄 Funzionalità in Corso
+## 🛠️ TECHNICAL IMPROVEMENTS
 
-### 1. Advanced Block Types (60%)
-**Status**: Basic blocks implemented
-**Priorità**: Alta
-**File interessati**: `app/Filament/Resources/BlockResource.php`
+### 🔧 Code Quality (Priority: HIGH)
+**Status**: 0% COMPLETATO
 
-**Task da completare**:
-- [ ] Implementa carousel block
-- [ ] Add testimonial block
-- [ ] Add pricing table block
-- [ ] Add accordion block
-- [ ] Add tab block
-- [ ] Add form block
-- [ ] Add social media block
-- [ ] Add gallery block
-- [ ] Add map block
-- [ ] Add countdown block
-- [ ] Add chart block
-- [ ] Test suite completa
+#### 🚧 In Progress
+- [ ] **Testing Coverage** (Priority: HIGH)
+  - [ ] Unit tests for models
+  - [ ] Feature tests for resources
+  - [ ] Integration tests for API
+  - [ ] Browser tests for UI
+
+- [ ] **Performance Optimization** (Priority: MEDIUM)
+  - [ ] Database query optimization
+  - [ ] Caching implementation
+  - [ ] Memory usage optimization
+  - [ ] Response time improvement
+
+#### 🎯 Success Criteria
+- [ ] Test coverage > 80%
+- [ ] Response time < 200ms
+- [ ] Memory usage < 50MB
+- [ ] Zero critical issues
+
+---
+
+## 🎯 SUCCESS METRICS
+
+### 📊 Technical Metrics
+- [ ] **PHPStan Level 9**: 0 errori
+- [ ] **Filament 4.x**: Compatibile
+- [ ] **Test Coverage**: 80% (target)
+- [ ] **Response Time**: < 200ms
+- [ ] **Memory Usage**: < 50MB
+- [ ] **Uptime**: > 99.9%
+
+### 📈 Business Metrics
+- [ ] **Feature Adoption**: > 80%
+- [ ] **User Satisfaction**: > 4.5/5
+- [ ] **Performance Score**: > 90
+- [ ] **Error Rate**: < 1%
+
+---
+
+## 🛠️ IMPLEMENTATION PLAN
+
+### 🎯 Q1 2025 (January - March)
+**Focus**: Core Development
+
+#### January 2025
+- [ ] Module setup
+- [ ] Basic features
+- [ ] Core functionality
+- [ ] Testing setup
+
+#### February 2025
+- [ ] Advanced features
+- [ ] Integration testing
+- [ ] Performance optimization
 - [ ] Documentation
 
-**Stima tempo**: 5-6 giorni
-**Assegnao a**: TBD
-
-### 2. SEO Optimization Features (50%)
-**Status**: Basic SEO implemented
-**Priorità**: Alta
-**File interessati**: `app/Models/Page.php`
-
-**Task da completare**:
-- [ ] Implementa meta tag management
-- [ ] Add OpenGraph integration
-- [ ] Add Twitter Card integration
-- [ ] Add Schema.org markup
-- [ ] Add canonical URL management
-- [ ] Add sitemap integration
-- [ ] Add robots.txt management
-- [ ] Add structured data testing
-- [ ] Test suite completa
-
-**Stima tempo**: 4-5 giorni
-**Assegnao a**: TBD
+#### March 2025
+- [ ] Final testing
+- [ ] Production deployment
+- [ ] User training
+- [ ] Monitoring setup
 
 ---
 
-## 📋 Task da Fare
+## 🎯 IMMEDIATE NEXT STEPS (Next 30 Days)
 
-### Priorità ALTA (Questa settimana)
+### Week 1: Module Setup
+- [ ] Create module structure
+- [ ] Set up basic classes
+- [ ] Configure testing
+- [ ] Set up documentation
 
-#### 1.1 Completa Advanced Block Types
-- [ ] **Task**: Implementa 12+ advanced block types
-- [ ] **File**: `app/Filament/Resources/BlockResource.php`
-- [ ] **Responsabile**: TBD
-- [ ] **Stima**: 5-6 giorni
-- [ ] **Percentuale**: 60% → 100%
-- [ ] **Output**: 20+ block types con documentazione
+### Week 2: Core Development
+- [ ] Implement core features
+- [ ] Create services
+- [ ] Add utilities
+- [ ] Basic testing
 
-#### 1.2 Implementa Content Versioning
-- [ ] **Task**: Crea sistema di versioning per content
-- [ ] **File**: `app/Models/PageVersion.php`
-- [ ] **Responsabile**: TBD
-- [ ] **Stima**: 4-5 giorni
-- [ ] **Percentuale**: 0% → 100%
-- [ ] **Output**: Versioning system con restore e diff
+### Week 3: Integration
+- [ ] Integrate with other modules
+- [ ] Test integrations
+- [ ] Performance testing
+- [ ] Bug fixing
 
-### Priorità MEDIA (Prossime 2 settimane)
-
-#### 1.3 Completa SEO Optimization Features
-- [ ] **Task**: Implementa advanced SEO features
-- [ ] **File**: `app/Models/Page.php`
-- [ ] **Responsabile**: TBD
-- [ ] **Stima**: 4-5 giorni
-- [ ] **Percentuale**: 50% → 100%
-- [ ] **Output**: SEO completo con structured data
-
-#### 1.4 Migrate to Filament 5.x
-- [ ] **Task**: Aggiorna da Filament 3.x a 5.x
-- [ ] **File**: `composer.json`, `app/Filament/*`
-- [ ] **Responsabile**: TBD
-- [ ] **Stima**: 2-3 giorni
-- [ ] **Percentuale**: 0% → 100%
-- [ ] **Output**: Filament 5.x completo compatibile
-
-### Priorità BASSA (Prossimo mese)
-
-#### 1.5 Implementa Content Scheduling
-- [ ] **Task**: Aggiunge scheduling per publish/unpublish
-- [ ] **File**: `app/Services/ContentScheduleService.php`
-- [ ] **Responsabile**: TBD
-- [ ] **Stima**: 3-4 giorni
-- [ ] **Percentuale**: Nuovo (0%)
-- [ ] **Output**: Scheduling con job queue
-
-#### 1.6 Crea Content Template Library
-- [ ] **Task**: Crea template library per common layouts
-- [ ] **File**: `app/Models/PageTemplate.php`
-- [ ] **Responsabile**: TBD
-- [ ] **Stima**: 4-5 giorni
-- [ ] **Percentuale**: Nuovo (0%)
-- [ ] **Output**: 10+ templates ready-to-use
+### Week 4: Documentation & Testing
+- [ ] Complete documentation
+- [ ] Final testing
+- [ ] Performance optimization
+- [ ] Production preparation
 
 ---
 
-## 📊 Metriche di Progresso
+## 🏆 SUCCESS CRITERIA
 
-### Completamento Totale: 75%
+### ✅ Q1 2025 Goals
+- [ ] Core features implemented
+- [ ] Basic testing complete
+- [ ] Documentation started
+- [ ] Integration working
 
-| Area | Corrente | Target | Gap | Azione |
-|------|---------|--------|-----|--------|
-| Page Management | 100% | 100% | 0% | ✅ Completo |
-| Block Builder | 100% | 100% | 0% | ✅ Completo |
-| Folio + Volt | 100% | 100% | 0% | ✅ Completo |
-| Advanced Blocks | 60% | 100% | 40% | Complete blocks |
-| SEO Features | 50% | 100% | 50% | Complete SEO |
-| Content Versioning | 0% | 100% | 100% | Implement versioning |
-| Content Scheduling | 0% | 100% | 100% | Implement scheduling |
-
----
-
-## 🎯 Prossimi Passi
-
-1. **Settimana 1**: Complete advanced blocks + Content versioning
-2. **Settimana 2**: Complete SEO features + Filament 5.x migration
-3. **Settimana 3**: Content scheduling + Template library
-4. **Settimana 4**: Testing e polish
+### 🎯 2025 Year-End Goals
+- [ ] All planned features implemented
+- [ ] Test coverage > 80%
+- [ ] Performance optimized
+- [ ] Documentation complete
+- [ ] Production ready
+- [ ] User satisfaction > 4.5/5
 
 ---
 
-## 📝 Note Importanti
-
-- **PHPStan Level 10**: Mantenere standard attuale (95%)
-- **Test Coverage**: Aumentare da 75% a 90%+
-- **Folio + Volt**: Tutte le front office pages DEVONO usare Folio + Volt
-- **No Controllers**: Non usare controller tradizionali per front office
+**Last Updated**: 2025-10-01
+**Next Review**: 2025-11-01
+**Status**: 🚧 PLANNING  
+**Confidence Level**: 70%  
 
 ---
 
-**Responsabile**: TBD
-**Last Updated**: 2026-01-31
-**Next Review**: 2026-02-07
+*Questa roadmap è specifica per il modulo Cms e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*

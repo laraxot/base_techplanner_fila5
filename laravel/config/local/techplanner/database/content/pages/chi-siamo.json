@@ -15,7 +15,7 @@
                 "data": {
                     "view": "pub_theme::components.blocks.hero.simple",
                     "title": "Chi Siamo",
-                    "subtitle": "Esperti in sicurezza e igiene per studi professionali sanitari",
+                    "subtitle": "Sottana Service. Sicurezza e igiene nei tuoi studi professionali.",
                     "primary_cta_label": "Contattaci",
                     "primary_cta_url": "/it/contatti",
                     "secondary_cta_label": "Scopri i Servizi",
@@ -30,7 +30,7 @@
                     "view": "pub_theme::components.blocks.about.profile",
                     "name": "Sottana Service",
                     "title": "Consulente Specializzato in Sicurezza e Igiene",
-                    "description": "Con una specializzazione verticale nel settore dentistico e veterinario, mi dedico a garantire che gli studi professionali mantengano i più alti standard di sicurezza e igiene, assicurando la piena conformità normativa.\n\nLa mia missione è semplificare la complessità normativa, fornendo soluzioni pratiche e immediate che permettono ai professionisti di concentrarsi su ciò che sanno fare meglio: prendersi cura dei loro pazienti.",
+                    "description": "Sottana Service nasce dalla passione del nostro fondatore, Marco Sottana, consulente specializzato con una missione chiara: garantire la massima sicurezza e conformità negli studi professionali.\n\nCon una specializzazione verticale nel settore dentistico e veterinario, ci dedichiamo a garantire che gli studi professionali mantengano i più alti standard di sicurezza e igiene, assicurando la piena conformità normativa.\n\nLa nostra missione è semplificare la complessità normativa, fornendo soluzioni pratiche e immediate che permettono ai professionisti di concentrarsi su ciò che sanno fare meglio: prendersi cura dei loro pazienti.",
                     "image": "/themes/Two/images/dr-roberto-magni.jpg",
                     "features": [
                         {
@@ -58,44 +58,12 @@
                 }
             },
             {
-                "type": "stats-overview",
-                "slug": "results-numbers",
-                "data": {
-                    "view": "pub_theme::components.blocks.stats.overview",
-                    "title": "I Nostri Risultati in Numeri",
-                    "subtitle": "Dati concreti che testimoniano l'efficacia della nostra consulenza",
-                    "background_color": "bg-gray-50",
-                    "stats": [
-                        {
-                            "number": "100+",
-                            "label": "Studi Soddisfatti",
-                            "description": "Professionisti che ci hanno scelto per la sicurezza"
-                        },
-                        {
-                            "number": "0",
-                            "label": "Non Conformità",
-                            "description": "Zero problemi durante ispezioni ASL"
-                        },
-                        {
-                            "number": "24/48h",
-                            "label": "Risposta Rapida",
-                            "description": "Intervento tempestivo su tutta richiesta"
-                        },
-                        {
-                            "number": "5★",
-                            "label": "Valutazione Clienti",
-                            "description": "Feedback eccellente da tutti i nostri partner"
-                        }
-                    ]
-                }
-            },
-            {
                 "type": "features-grid",
                 "slug": "why-choose-us",
                 "data": {
                     "view": "pub_theme::components.blocks.features.grid",
                     "title": "Perché Scegliere Sottana Service",
-                    "subtitle": "I vantaggi concreti di affidarsi alla nostra esperienza e competenza",
+                    "subtitle": "I vantaggi concreti di affidarsi alla nostra competenza",
                     "features": [
                         {
                             "title": "Specializzazione Verticale",
@@ -104,8 +72,8 @@
                             "color": "blue"
                         },
                         {
-                            "title": "Esperienza Comprovata",
-                            "description": "Dal 2025 al servizio di professionisti sanitari in tutto il Veneto. Decine di studi soddisfatti testimoniano la qualità del nostro lavoro.",
+                            "title": "Esperienza e Professionalità",
+                            "description": "Al servizio di professionisti sanitari in tutto il Veneto. Numerosi studi soddisfatti testimoniano la qualità del nostro lavoro.",
                             "icon": "chart-bar",
                             "color": "green"
                         },
@@ -117,19 +85,19 @@
                         },
                         {
                             "title": "Supporto Continuativo",
-                            "description": "Non ti lasciamo solo dopo la consulenza. Offriamo assistenza continua, aggiornamenti normativi e formazione ricorrente per il tuo team.",
+                            "description": "Non ti lasciamo solo dopo la consulenza. Offriamo assistenza continua, aggiornamenti normativi e formazione ricorrente.",
                             "icon": "lifebuoy",
                             "color": "orange"
                         },
                         {
                             "title": "Prezzi Competitivi",
-                            "description": "Tariffe trasparenti e competitive senza sorprese. Investire nella sicurezza non deve svuotare il portafoglio. Preventivi chiari e personalizzati.",
+                            "description": "Tariffe trasparenti e competitive senza sorprese. Investire nella sicurezza con preventivi chiari e personalizzati.",
                             "icon": "currency-euro",
                             "color": "green"
                         },
                         {
                             "title": "Risultati Provati",
-                            "description": "I nostri clienti vedono miglioramenti tangibili: processi più efficienti, personale più preparato, pazienti più soddisfatti e zero non conformità.",
+                            "description": "I nostri clienti vedono miglioramenti tangibili: processi più efficienti, personale più preparato e zero non conformità.",
                             "icon": "trophy",
                             "color": "blue"
                         }

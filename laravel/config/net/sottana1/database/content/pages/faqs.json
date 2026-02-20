@@ -64,7 +64,7 @@
                     },
                     "secondary_cta": {
                         "label": "Invia Email",
-                        "url": "mailto:info@techplanner.it"
+                        "url": "mailto:studio@sottana.net"
                     }
                 }
             }
@@ -78,24 +78,7 @@
                     "title": "Frequently Asked Questions",
                     "subtitle": "Find answers to common questions about radiation protection, electromedical devices and regulatory compliance",
                     "search_placeholder": "Search a question...",
-                    "stats": [
-                        {
-                            "label": "Questions Answered",
-                            "value": "150+"
-                        },
-                        {
-                            "label": "Satisfied Clients",
-                            "value": "98%"
-                        },
-                        {
-                            "label": "Quick Response",
-                            "value": "24/48h"
-                        },
-                        {
-                            "label": "Years Experience",
-                            "value": "10+"
-                        }
-                    ]
+                    "stats": []
                 }
             }
         ]
