@@ -112,4 +112,3 @@ Time: Ora
 2. Verificare ServiceProvider registrato
 3. Pulire cache traduzioni: `php artisan config:clear`
 
-*Standard Laraxot - Ultimo aggiornamento: 2025-08-07*

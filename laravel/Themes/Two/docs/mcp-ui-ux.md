@@ -1,6 +1,5 @@
 # MCP Servers per UI/UX - Tema Two
 
-> Ultimo aggiornamento: Febbraio 2026
 
 ## Filosofia
 

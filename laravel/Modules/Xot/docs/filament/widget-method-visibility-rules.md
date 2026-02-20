@@ -97,8 +97,6 @@ must be public (as in class HasXotTable)
 - [HasXotTable Trait Source](../../../Modules/Xot/app/Filament/Traits/HasXotTable.php)
 - [Widget Table Configuration](../../../modules/xot/docs/filament/widget-table-configuration.md)
 
-*Ultimo aggiornamento: 2026-01-27*
 <<<<<<< .merge_file_3TpUGS
 =======
-*Ultimo aggiornamento: 2025-01-27*
 >>>>>>> .merge_file_46PPqg

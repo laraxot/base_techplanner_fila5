@@ -1,0 +1,7 @@
+vedo che hai creato 
+laravel/Modules/Cms/docs/filament_4x_compatibility.md
+laravel/Modules/Cms/docs/filament-4x-compatibility.md
+
+ti ricordo che in questo progetto stiamo usando filament 5.x   percio' ci dovrebbe essere un file che documenta le modifiche per la compatibilità con filament 5.x
+
+capisci la regola, aggiorna studia e migliora le cartelle docs dentro i moduli e dentro i temi , aggiorna le tue rules, le tue memories e le tue skills 

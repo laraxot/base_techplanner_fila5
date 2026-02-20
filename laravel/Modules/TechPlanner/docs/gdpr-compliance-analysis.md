@@ -281,7 +281,6 @@ class ConsentLog extends Model
    - Sito: www.garanteprivacy.it
 
 10. MODIFICHE ALL'INFORMATIVA
-    - Ultimo aggiornamento: [DATA]
     - Notifica utenti: 30 giorni prima
 
 11. COOKIE POLICY

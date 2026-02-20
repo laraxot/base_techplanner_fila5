@@ -71,7 +71,6 @@ Verificare che:
 - [Translation Standards](translation_standards.md)
 - [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
 
-*Ultimo aggiornamento: giugno 2025*
 # Risoluzione Conflitti MailTemplate.php
 
 ## Contesto del Conflitto
@@ -145,4 +144,3 @@ Verificare che:
 - [Translation Standards](translation_standards.md)
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
 
-*Ultimo aggiornamento: giugno 2025*

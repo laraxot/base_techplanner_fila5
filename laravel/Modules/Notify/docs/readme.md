@@ -433,7 +433,6 @@ Log::channel('email')->info('Email sent', [
 
 ---
 
-**Ultimo aggiornamento:** 2025-01-22  
 **Versione:** 2.1.0  
 **Stato:** ✅ Production Ready  
 **PHPStan Level:** 10
