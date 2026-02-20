@@ -50,26 +50,27 @@
                     "subtitle": "I contenuti più richiesti e attuali della nostra community",
                     "articles": [
                         {
-                            "title": "Sicurezza negli Studi Dentistici: Guida Completa 2026",
-                            "excerpt": "Tutto quello che devi sapere per garantire la massima sicurezza nel tuo studio dentistico secondo le normative più recenti.",
+                            "title": "La sicurezza elettrica degli elettromedicali",
+                            "excerpt": "Perché la verifica IEC 62353 è fondamentale per il tuo studio.",
                             "date": "1 Febbraio 2026",
-                            "category": "Dentistica",
-                            "image": "https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=800&q=80",
-                            "reading_time": "8 min lettura",
-                            "url": "#"
+                            "category": "Elettromedicali",
+                            "image": "/themes/Two/images/medical-equipment.jpg",
+                            "reading_time": "5 min lettura",
+                            "url": "/it/blog/sicurezza-elettromedicali"
                         },
                         {
-                            "title": "Normative ATECO 74.99.21: Cosa Devi Sapere",
-                            "excerpt": "Analisi dettagliata delle normative ATECO 74.99.21 per studi dentistici e veterinari. Cosa cambia e come adeguarsi.",
+                            "title": "Le novità del D.Lgs 101/2020",
+                            "excerpt": "Guida pratica ai cambiamenti normativi per la radioprotezione.",
                             "date": "20 Gennaio 2026",
                             "category": "Normative",
-                            "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
-                            "reading_time": "6 min lettura",
-                            "url": "#"
+                            "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+                            "reading_time": "8 min lettura",
+                            "url": "/it/blog/novita-dlgs-101-2020"
                         }
                     ]
                 }
-            },
+            }
+,
             {
                 "type": "articles-grid",
                 "slug": "blog-articles",
@@ -79,31 +80,22 @@
                     "subtitle": "Esplora la nostra raccolta di guide, aggiornamenti e approfondimenti",
                     "articles": [
                         {
-                            "title": "Manutenzione Elettromedicali: IEC 62353 Spiegato Semplice",
+                            "title": "Manutenzione Elettromedicali",
                             "excerpt": "Comprendi la normativa IEC 62353 per la sicurezza elettrica dei dispositivi medici.",
                             "date": "1 Febbraio 2026",
                             "category": "Elettromedicali",
-                            "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+                            "image": "/themes/Two/images/medical-equipment.jpg",
                             "reading_time": "6 min lettura",
-                            "url": "#"
+                            "url": "/it/blog/sicurezza-elettromedicali"
                         },
                         {
-                            "title": "Sicurezza negli Studi Veterinari: Guida Completa 2026",
-                            "excerpt": "Tutto quello che devi sapere per garantire la massima sicurezza nel tuo studio veterinario.",
-                            "date": "18 Gennaio 2026",
-                            "category": "Veterinaria",
-                            "image": "https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=800&q=80",
-                            "reading_time": "7 min lettura",
-                            "url": "#"
-                        },
-                        {
-                            "title": "Formazione Obbligatoria: Scadenze e Novità 2026",
-                            "excerpt": "Aggiornamenti sulla formazione obbligatoria per operatori sanitari.",
-                            "date": "12 Gennaio 2026",
-                            "category": "Formazione",
-                            "image": "https://images.unsplash.com/photo-1515372039744-b8e02a90ae80?w=800&q=80",
+                            "title": "Le novità del D.Lgs 101/2020",
+                            "excerpt": "Guida pratica ai cambiamenti normativi per la radioprotezione.",
+                            "date": "20 Gennaio 2026",
+                            "category": "Normative",
+                            "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
                             "reading_time": "8 min lettura",
-                            "url": "#"
+                            "url": "/it/blog/novita-dlgs-101-2020"
                         }
                     ]
                 }
@@ -157,7 +149,7 @@
                             "category": "Dentistry",
                             "image": "https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=800&q=80",
                             "reading_time": "8 min read",
-                            "url": "#"
+                            "url": "/en/blog/safety-dental-practices"
                         }
                     ]
                 }

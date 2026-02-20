@@ -15,33 +15,12 @@
                 "data": {
                     "view": "pub_theme::components.blocks.hero.about",
                     "title": "Chi Siamo",
-                    "subtitle": "Sottana Service. Sicurezza e Igiene nei Tuoi Studi Professionali dal 2025.",
+                    "subtitle": "Sottana Service. Sicurezza ed igiene per i tuoi studi professionali.",
                     "primary_cta": {
-                        "label": "Scopri il Team",
-                        "url": "#team"
-                    },
-                    "secondary_cta": {
                         "label": "Contattaci",
                         "url": "/contacts"
                     },
-                    "stats": [
-                        {
-                            "label": "Anni di Esperienza",
-                            "value": "1+"
-                        },
-                        {
-                            "label": "Studi Assistiti",
-                            "value": "50+"
-                        },
-                        {
-                            "label": "Formazioni Erogate",
-                            "value": "100+"
-                        },
-                        {
-                            "label": "Conformità Raggiunta",
-                            "value": "100%"
-                        }
-                    ]
+                    "stats": []
                 }
             },
             {
@@ -50,7 +29,7 @@
                 "data": {
                     "view": "pub_theme::components.blocks.content.split",
                     "title": "La Nostra Storia",
-                    "content": "<p class='text-lg leading-relaxed text-gray-700'>Sottana Service nasce nel 2025 dalla passione del nostro fondatore, Sottana Service, Esperto di radioprotezione con una missione chiara: garantire la massima sicurezza e conformità negli studi professionali.</p><p class='mt-4 text-gray-600'>Specializzandoci esclusivamente in studi dentistici e cliniche veterinarie, abbiamo rapidamente acquisito una reputazione di eccellenza nel nord Italia, servendo professionisti che cercano un partner affidabile per la gestione della sicurezza radiologica ed elettrica.</p><p class='mt-4 text-gray-600'>La nostra filosofia si basa su tre pilastri: competenza tecnica senza compromessi, supporto completo al cliente e conformità garantita secondo le normative vigenti.</p>",
+                    "content": "<p class='text-lg leading-relaxed text-gray-700'>Sottana Service nasce con una missione chiara: garantire la massima sicurezza e conformità negli studi professionali.</p><p class='mt-4 text-gray-600'>Forniamo supporto ai professionisti che cercano un partner affidabile per la gestione della sicurezza, igiene e radioprotezione nei loro studi.</p><p class='mt-4 text-gray-600'>La nostra filosofia si basa su tre pilastri: competenza tecnica senza compromessi, supporto completo al cliente e conformità garantita secondo le normative vigenti.</p>",
                     "image": "/themes/Two/images/medical-equipment.jpg",
                     "reverse": false
                 }
@@ -97,38 +76,6 @@
                 }
             },
             {
-                "type": "team",
-                "slug": "our-team",
-                "data": {
-                    "view": "pub_theme::components.blocks.about.team",
-                    "title": "Il Nostro Team",
-                    "subtitle": "Professionisti qualificati con esperienza specifica nel settore radiologico e elettromedicale",
-                    "members": [
-                        {
-                            "name": "Sottana Service",
-                            "role": "Fondatore & Esperto di radioprotezione",
-                            "description": "Esperto di radioprotezione con 10+ anni di experience. Specializzato in controlli su apparecchiature dentali e veterinarie. Fondatore di Sottana Service.",
-                            "image": "/themes/Two/Main_files/images/dr-roberto-magni.jpg",
-                            "certifications": ["EQ Ministero Salute", "ISO 9001 Lead Auditor"]
-                        },
-                        {
-                            "name": "D.ssa Elena Visentin",
-                            "role": "Responsabile Qualità e Formazione",
-                            "description": "Specialista in sistemi di gestione qualità ISO 9001. Esperta in documentazione tecnica, processi di conformità normativa e formazione del personale.",
-                            "image": "/themes/Two/Main_files/images/dr-elena-visentin.jpg",
-                            "certifications": ["ISO 9001 Lead Auditor", "Lead Auditor"]
-                        },
-                        {
-                            "name": "Ing. Paolo Verdi",
-                            "role": "Tecnico Elettromedicale Senior",
-                            "description": "Perito industriale specializzato in controlli elettromedicali IEC 62353. Certificato per manutenzione su dispositivi medici di Classe II e III con esperienza decennale.",
-                            "image": "/themes/Two/Main_files/images/dr-paolo-verdi.jpg",
-                            "certifications": ["IEC 62353", "Perito Industriale"]
-                        }
-                    ]
-                }
-            },
-            {
                 "type": "company-data",
                 "slug": "company-info",
                 "data": {
@@ -143,10 +90,6 @@
                         {
                             "label": "REA",
                             "value": "TV - 451911"
-                        },
-                        {
-                            "label": "PEC",
-                            "value": "sottanamarco@pec.it"
                         },
                         {
                             "label": "Sede",
@@ -175,13 +118,12 @@
                             ]
                         },
                         {
-                            "title": "Esperienza Pluriennale",
-                            "description": "Oltre 15 anni di attività nel campo dei controlli periodici e della consulenza radioprotezione.",
+                            "title": "Esperienza",
+                            "description": "Anni di attività nel campo dei controlli periodici e della consulenza radioprotezione.",
                             "icon": "<svg class='w-7 h-7 text-brand-blue' fill='none' stroke='currentColor' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'/></svg>",
                             "features": [
-                                "500+ controlli effettuati",
-                                "50+ studi seguiti",
-                                "15+ anni di esperienza",
+                                "Controlli periodici",
+                                "Consulenza specifica",
                                 "Aggiornamento costante"
                             ]
                         },
@@ -204,7 +146,7 @@
                                 "Consulenza telefonica",
                                 "Supporto documentazione",
                                 "Formazione personale",
-                                "Assenza rapida"
+                                "Assistenza rapida"
                             ]
                         },
                         {
@@ -245,12 +187,8 @@
                 "data": {
                     "view": "pub_theme::components.blocks.hero.about",
                     "title": "About Us",
-                    "subtitle": "For over 10 years serving healthcare safety in northern Italy. Experience, competence and passion for radiation protection.",
+                    "subtitle": "Serving healthcare safety in northern Italy. Competence and passion for radiation protection.",
                     "primary_cta": {
-                        "label": "Meet Our Team",
-                        "url": "#team"
-                    },
-                    "secondary_cta": {
                         "label": "Contact Us",
                         "url": "/contacts"
                     }
