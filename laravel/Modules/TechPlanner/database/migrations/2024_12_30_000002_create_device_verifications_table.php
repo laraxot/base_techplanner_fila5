@@ -11,7 +11,7 @@ return new class() extends XotBaseMigration
     {
         $this->tableCreate(function (Blueprint $table): void {
             $table->bigIncrements('id');
-            $table->foreignId('device_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('device_id')->constrained('machines')->cascadeOnDelete();
             $table->date('verification_date')->index();
             $table->date('next_verification_date')->index();
             $table->string('result')->index();
