@@ -249,5 +249,4 @@ $issues = $this->analyzeMemoryIssues($verbose);
 - [PHPStan Level 10 Analysis - Notify Module](../Modules/Notify/docs/phpstan-level10-analysis.md)
 - [Quality Improvements - Notify Module](../Modules/Notify/docs/quality-improvements-2025-01-06.md)
 
-*Ultimo aggiornamento: 2025-01-06*
 

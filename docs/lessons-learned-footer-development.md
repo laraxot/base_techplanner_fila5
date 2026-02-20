@@ -1,6 +1,5 @@
 # Lessons Learned - Footer Development
 
-## Date: 2026-02-08
 
 ## Lesson 1: Footer Background - Use Inline Styles
 

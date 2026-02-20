@@ -156,5 +156,4 @@ Creato script `scripts/analyze-all-modules.sh` per automatizzare l'analisi di tu
 - [Notify Module PHPStan Analysis](../Modules/Notify/docs/phpstan-level10-analysis.md)
 - [Xot Module PHPStan Fixes](../Modules/Xot/docs/phpstan-level10-fixes.md)
 
-*Ultimo aggiornamento: 2025-01-06*
 

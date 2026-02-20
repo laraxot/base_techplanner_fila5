@@ -216,4 +216,3 @@ protected function casts(): array
 **IMPATTO: ALTO**  
 **EFFORT: MEDIO**  
 
-*Ultimo aggiornamento: Agosto 2025*

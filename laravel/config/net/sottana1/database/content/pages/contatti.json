@@ -26,17 +26,17 @@
                     "view": "pub_theme::components.blocks.contact.info",
                     "title": "Come Contattarci",
                     "subtitle": "Scegli il modo più comodo per raggiungerci",
-                    "address": "Via Vanzo 86/A, 31021 Mogliano Veneto (TV)",
+                    "address": "Via Vanzo 86, 31021 Mogliano Veneto (TV)",
                     "coordinates": {
                         "lat": 45.5648,
                         "lng": 12.2347
                     },
                     "info": {
-                        "phone": "+39 041 455552 / +39 347 58 96 127",
+                        "phone": "+39 041 455552",
                         "phone_mobile": "+39 347 58 96 127",
-                        "email": "studio@sottana.com",
-                        "address": "Via Vanzo 86/A, 31021 Mogliano Veneto (TV)",
-                        "hours": "Lun-Ven: 09:00-18:00"
+                        "email": "studio@sottana.net",
+                        "address": "Via Vanzo 86, 31021 Mogliano Veneto (TV)",
+                        "hours": "Lun-Ven: 09:00-18:00 | Sabato Chiuso"
                     },
                     "social": {
                         "linkedin": "https://linkedin.com/in/marcosottana",
@@ -50,7 +50,7 @@
                 "data": {
                     "view": "pub_theme::components.blocks.contact.form",
                     "title": "Richiedi una Consulenza",
-                    "subtitle": "Compila il form e ti ricontatteremo entro 24 ore",
+                    "subtitle": "Compila il form e ti ricontatteremo il prima possibile",
                     "fields": [
                         {
                             "name": "nome",
@@ -97,19 +97,6 @@
                     "privacy_text": "Inviando questo form accetti la nostra Privacy Policy."
                 }
             },
-            {
-                "type": "map",
-                "slug": "location-map",
-                "data": {
-                    "view": "pub_theme::components.blocks.map.static-clickable",
-                    "title": "Dove Siamo",
-                    "address": "Via Vanzo 86/A, 31021 Mogliano Veneto TV",
-                    "coordinates": {
-                        "lat": 45.5648,
-                        "lng": 12.2347
-                    }
-                }
-            }
         ],
         "en": [
             {

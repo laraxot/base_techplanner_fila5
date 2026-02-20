@@ -1,6 +1,5 @@
 # Bug Fix: Duplicate PageRegistration Import
 
-**Date:** 2025-02-03
 **Module:** Activity
 **File:** `Modules/Activity/app/Filament/Resources/ActivityResource.php`
 

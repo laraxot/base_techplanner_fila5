@@ -17,24 +17,8 @@
                     "title": "Domande Frequenti",
                     "subtitle": "Trova risposte alle domande più comuni su radioprotezione, elettromedicali e conformità normativa",
                     "search_placeholder": "Cerca una domanda...",
-                    "stats": [
-                        {
-                            "label": "Domande Risposte",
-                            "value": "150+"
-                        },
-                        {
-                            "label": "Clienti Soddisfatti",
-                            "value": "98%"
-                        },
-                        {
-                            "label": "Risposta Rapida",
-                            "value": "24/48h"
-                        },
-                        {
-                            "label": "Anni di Esperienza",
-                            "value": "10+"
-                        }
-                    ]
+                    "stats": [],
+                    "id": "faq-hero"
                 }
             },
             {
@@ -46,7 +30,7 @@
                     "faqs": [
                         {
                             "question": "Qual è la frequenza obbligatoria per i controlli di radioprotezione?",
-                            "answer": "La frequenza dei controlli dipende dal tipo di apparecchiatura e dall'utilizzo: Controlli di costanza: Annuali per apparecchiature radiologiche fisse; Verifica schermature: Ogni 5 anni o dopo modifiche strutturali.",
+                            "answer": "La frequenza dei controlli è stabilita dal D.Lgs 101/2020 e dipende dalla tipologia di apparecchiatura e dal suo utilizzo. In genere, le verifiche periodiche di sicurezza e funzionalità hanno cadenza annuale, mentre la valutazione dello stato di radioprotezione e la verifica delle schermature vengono effettuate con periodicità stabilita dall'Esperto di Radioprotezione (solitamente ogni 2-5 anni) o in caso di modifiche sostanziali alla struttura.",
                             "category": "radioprotezione"
                         },
                         {

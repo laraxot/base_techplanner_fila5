@@ -14,8 +14,8 @@
                 "slug": "hero-section",
                 "data": {
                     "view": "pub_theme::components.blocks.hero.simple",
-                    "title": "Consulenza Sicurezza e Conformità per Studi Professionali",
-                    "subtitle": "Specialisti in radioprotezione, elettromedicali e sicurezza per studi dentistici e cliniche veterinarie. Conformità D.Lgs 101/2020 e massima tutela di pazienti e operatori.",
+                    "title": "Conformità D.Lgs 101/2020 e massima tutela di pazienti e operatori.",
+                    "subtitle": "Specialisti in radioprotezione, elettromedicali e sicurezza per studi dentistici e cliniche veterinarie.",
                     "primary_cta_label": "Richiedi Consulenza",
                     "primary_cta_url": "/it/contatti",
                     "secondary_cta_label": "Scopri i Servizi",
@@ -146,8 +146,8 @@
                             "icon": "heroicono-cpu-chip"
                         },
                         {
-                            "title": "Sistemi di Protezione",
-                            "description": "Test su segnaletica.",
+                            "title": "Verifica Segnaletica di Sicurezza",
+                            "description": "Test e verifiche periodiche sulla cartellonistica e sui segnali luminosi di avvertimento obbligatori per garantire la massima sicurezza negli ambienti radiologici.",
                             "icon": "heroicono-light-bulb"
                         },
                         {

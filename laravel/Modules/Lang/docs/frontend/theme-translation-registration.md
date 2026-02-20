@@ -58,14 +58,12 @@ $this->loadTranslationsFrom($path, 'pub_theme');
 ### Comando di Test
 ```bash
 php artisan tinker --execute="
-echo 'Date: ' . trans('pub_theme::appointment.fields.date.label') . PHP_EOL;
 echo 'Time: ' . trans('pub_theme::appointment.fields.time.label') . PHP_EOL;
 "
 ```
 
 ### Output Atteso
 ```
-Date: Data
 Time: Ora
 ```
 

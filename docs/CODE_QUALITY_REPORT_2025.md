@@ -93,4 +93,3 @@
 
 ---
 
-*Ultimo aggiornamento: Gennaio 2025*

@@ -272,4 +272,3 @@ public function getFormSchema(): array
 - [Architecture](./architecture.md)
 - [Laraxot Conventions](./laraxot.md)
 
-*Ultimo aggiornamento: Gennaio 2025 - Post doppio errore critico*

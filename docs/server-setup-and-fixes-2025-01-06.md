@@ -107,5 +107,4 @@ Quando si usa `updateTimestamps()` di XotBaseMigration, non chiamare anche `$tab
 - [Xot Module PHPStan Fixes](../Modules/Xot/docs/phpstan-level10-fixes.md)
 - [PHPStan Level 10 Fixes](./phpstan-level10-fixes-2025-01-06.md)
 
-*Ultimo aggiornamento: 2025-01-06*
 

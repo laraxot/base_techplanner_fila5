@@ -131,4 +131,3 @@
 - [ ] Test di validazione PHPStan
 - [ ] Test funzionali del modulo
 
-*Ultimo aggiornamento: $(date)* 

@@ -97,5 +97,4 @@ Nessun file `rector.php` trovato nei temi. Possibile creare configurazione stand
 - [Two Theme Docs](../Themes/Two/docs/README.md)
 - [Zero Theme Docs](../Themes/Zero/docs/README.md)
 
-*Ultimo aggiornamento: 2025-01-06*
 

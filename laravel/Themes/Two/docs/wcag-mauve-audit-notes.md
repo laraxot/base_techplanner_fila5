@@ -54,6 +54,26 @@ Riferimento: report PageSpeed (mobile) su https://sottana.net/it.
 - Link social footer: già con `aria-label` univoci (LinkedIn, Facebook, Instagram). Contrasto footer gestito in app.css.
 - Ordine intestazioni: checklist usa h2 (titolo sezione) → h3 (callout "Perché è fondamentale?") → h3 (titoli card).
 
+## Elenco esiti MAUVE++ (riferimento)
+
+| Criterio | Tech | Tipo | Occ. | Azione tema |
+|----------|------|------|------|-------------|
+| 1.1.1 | H67 | Warning | 2 | Immagini che AT deve ignorare: `alt=""` senza title. Corretto: `home/article.blade.php` (img con alt=""), `blocks/image.blade.php` (alt sempre presente, vuoto se non fornito). |
+| 1.3.1, 2.4.1 | ARIA11 | Warning | 3 | Landmark: header (banner), main (id main-content), footer (contentinfo) già in layout; slot beforeMain/afterMain. |
+| 1.3.1, 3.3.2 | G162 | Warning | 1 | Label vicino/associato al controllo (form). Verificare singolo caso in form contatti/servizi. |
+| 1.4.4, 1.4.5 | C12-13-14 | Warning | 5 | Font size: `html { font-size: 100% }` in app.css; cookie consent in vendor (override non possibile). |
+| 2.5.3 | F96 | Warning | 85 | Ogni `aria-label`/`aria-labelledby` deve corrispondere al nome visibile. Audit puntuale; header lingua e link social già allineati. |
+| 1.1.1 | ARIA6 | Error | 26 | Oggetti con etichetta: icone/SVG decorativi `aria-hidden="true"`; nome accessibile sul controllo (link/button). Header e footer v1 già conformi. |
+| 1.4.3 | G18 | Error | 25 | Contrasto ≥4.5:1. Footer v1 e override app.css (text-white, text-gray-100, brand-orange-dark) applicati; altri blocchi da verificare. |
+| 1.4.11, 2.4.7 | G195, F78 | Error | 5 ciascuno | Focus visibile: `:focus-visible` in app.css per a, button, input, select, textarea; override `.lcc-button:focus-visible` per cookie consent. |
+| 1.4.12 | C21 | Error | 5 | Line-height: body, p, li, label, .lcc-modal in app.css (1.5); cookie consent da vendor. |
+| 2.4.4 | H30 | Error | 4 | Testo link descrittivo o aria-label. Corretto: home/article.blade.php (aria-label su link immagine, categoria, articolo, autore, anteprima); footer/header già con aria-label su link social e CTA. |
+
+## Correzioni 2026-02 (H67, alt obbligatorio, H30)
+
+- **home/article.blade.php**: img con `alt=""`; link immagine con `aria-label="Vai all'articolo: ..."`; link categoria/articolo/autore/anteprima con aria-label descrittivo; icona freccia `aria-hidden="true"`.
+- **components/blocks/image.blade.php**: attributo `alt` sempre emesso (`alt="{{ $alt ?: '' }}"`) per evitare img senza alt (H67/ARIA6).
+
 ## Verifica post-modifiche
 
 Dopo deploy, rieseguire MAUVE++ su:

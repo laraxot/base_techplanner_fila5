@@ -17,7 +17,7 @@
         <img
             class="w-full {{ $ratioClass }} object-cover object-center"
             src="{{ $src }}"
-            @if ($alt) alt="{{ $alt }}" @endif
+            alt="{{ $alt ?: '' }}"
         >
         <figcaption>{{ $caption }}</figcaption>
     </figure>
@@ -25,6 +25,6 @@
     <img
         class="w-full {{ $ratioClass }}"
         src="{{ $src }}"
-        @if ($alt) alt="{{ $alt }}" @endif
+        alt="{{ $alt ?: '' }}"
     >
 @endif

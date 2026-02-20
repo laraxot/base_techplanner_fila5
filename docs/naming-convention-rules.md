@@ -80,5 +80,4 @@ Questa regola si applica a:
 
 ---
 
-*Ultimo aggiornamento: 2025-07-30*
 *Stato: Implementato e verificato in tutto il progetto*

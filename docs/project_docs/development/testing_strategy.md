@@ -211,5 +211,4 @@ php artisan test --coverage
 - [Theme Components](../theme_components.md)
 - [Modules Documentation](../modules/)
 
-*Ultimo aggiornamento: Gennaio 2025*
 

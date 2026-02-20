@@ -627,7 +627,6 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 function countdownTimer() {
     return {
         timer: { days: 0, hours: 0, minutes: 0, seconds: 0 },
-        targetDate: null,
         interval: null,
 
         startCountdown() {

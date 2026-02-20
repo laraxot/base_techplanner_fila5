@@ -1,6 +1,5 @@
 # Site Replication Report: Local vs Target
 
-**Date:** 2026-02-06  
 **Local Site:** http://127.0.0.1:8000/it  
 **Target Site:** https://lightseagreen-dogfish-560272.hostingersite.com/
 
