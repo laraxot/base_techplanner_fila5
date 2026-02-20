@@ -51,7 +51,7 @@
                     "view": "pub_theme::components.blocks.content.split",
                     "title": "La Nostra Storia",
                     "content": "<p class='text-lg leading-relaxed text-gray-700'>Sottana Service nasce nel 2025 dalla passione del nostro fondatore, Sottana Service, Esperto di radioprotezione con una missione chiara: garantire la massima sicurezza e conformità negli studi professionali.</p><p class='mt-4 text-gray-600'>Specializzandoci esclusivamente in studi dentistici e cliniche veterinarie, abbiamo rapidamente acquisito una reputazione di eccellenza nel nord Italia, servendo professionisti che cercano un partner affidabile per la gestione della sicurezza radiologica ed elettrica.</p><p class='mt-4 text-gray-600'>La nostra filosofia si basa su tre pilastri: competenza tecnica senza compromessi, supporto completo al cliente e conformità garantita secondo le normative vigenti.</p>",
-                    "image": "/themes/Two/Main_files/images/medical-equipment.jpg",
+                    "image": "/themes/Two/images/medical-equipment.jpg",
                     "reverse": false
                 }
             },

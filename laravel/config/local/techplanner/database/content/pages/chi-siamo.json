@@ -36,17 +36,17 @@
                         {
                             "title": "Certificazioni e Qualifiche",
                             "description": "Certificazioni professionali e aggiornamento continuo sulle normative del settore",
-                            "icon": "heroicon-o-academic-cap"
+                            "icon": "academic-cap"
                         },
                         {
                             "title": "Specializzazione Verticale",
                             "description": "Focus esclusivo su studi dentistici e cliniche veterinarie",
-                            "icon": "heroicono-bolt"
+                            "icon": "bolt"
                         },
                         {
                             "title": "Approccio Personalizzato",
                             "description": "Ogni studio ha esigenze uniche, ogni soluzione è su misura",
-                            "icon": "heroicon-o-user"
+                            "icon": "user"
                         }
                     ],
                     "company_info": {
@@ -100,37 +100,37 @@
                         {
                             "title": "Specializzazione Verticale",
                             "description": "Focus esclusivo su studi dentistici e cliniche veterinarie. Conosciamo a fondo le sfide specifiche del tuo settore e offriamo soluzioni mirate.",
-                            "icon": "heroicono-bolt",
+                            "icon": "bolt",
                             "color": "blue"
                         },
                         {
                             "title": "Esperienza Comprovata",
                             "description": "Dal 2025 al servizio di professionisti sanitari in tutto il Veneto. Decine di studi soddisfatti testimoniano la qualità del nostro lavoro.",
-                            "icon": "heroicon-o-chart-bar",
+                            "icon": "chart-bar",
                             "color": "green"
                         },
                         {
                             "title": "Conformità Garantita",
                             "description": "Ti assicuriamo la piena conformità con tutte le normative vigenti. Zero preoccupazioni durante le ispezioni, massima tranquillità operativa.",
-                            "icon": "heroicon-o-shield-check",
+                            "icon": "shield-check",
                             "color": "blue"
                         },
                         {
                             "title": "Supporto Continuativo",
                             "description": "Non ti lasciamo solo dopo la consulenza. Offriamo assistenza continua, aggiornamenti normativi e formazione ricorrente per il tuo team.",
-                            "icon": "heroicono-support",
+                            "icon": "lifebuoy",
                             "color": "orange"
                         },
                         {
                             "title": "Prezzi Competitivi",
                             "description": "Tariffe trasparenti e competitive senza sorprese. Investire nella sicurezza non deve svuotare il portafoglio. Preventivi chiari e personalizzati.",
-                            "icon": "heroicono-currency-euro",
+                            "icon": "currency-euro",
                             "color": "green"
                         },
                         {
                             "title": "Risultati Provati",
                             "description": "I nostri clienti vedono miglioramenti tangibili: processi più efficienti, personale più preparato, pazienti più soddisfatti e zero non conformità.",
-                            "icon": "heroicono-trophy",
+                            "icon": "trophy",
                             "color": "blue"
                         }
                     ]
@@ -177,17 +177,17 @@
                         {
                             "title": "Certifications and Qualifications",
                             "description": "Professional certifications and continuous updating on sector regulations",
-                            "icon": "heroicon-o-academic-cap"
+                            "icon": "academic-cap"
                         },
                         {
                             "title": "Vertical Specialization",
                             "description": "Exclusive focus on dental practices and veterinary clinics",
-                            "icon": "heroicono-bolt"
+                            "icon": "bolt"
                         },
                         {
                             "title": "Personalized Approach",
                             "description": "Every practice has unique needs, every solution is tailor-made",
-                            "icon": "heroicon-o-user"
+                            "icon": "user"
                         }
                     ],
                     "company_info": {
@@ -241,37 +241,37 @@
                         {
                             "title": "Vertical Specialization",
                             "description": "Exclusive focus on dental practices and veterinary clinics. We know the specific challenges of your sector inside out and offer targeted solutions.",
-                            "icon": "heroicon-o-bolt",
+                            "icon": "bolt",
                             "color": "blue"
                         },
                         {
                             "title": "Proven Experience",
                             "description": "Serving healthcare professionals throughout Veneto since 2025. Dozens of satisfied practices testify to the quality of our work.",
-                            "icon": "heroicon-o-chart-bar",
+                            "icon": "chart-bar",
                             "color": "green"
                         },
                         {
                             "title": "Guaranteed Compliance",
                             "description": "We ensure full compliance with all applicable regulations. Zero worries during inspections, maximum operational peace of mind.",
-                            "icon": "heroicon-o-shield-check",
+                            "icon": "shield-check",
                             "color": "blue"
                         },
                         {
                             "title": "Continuous Support",
                             "description": "We don't leave you alone after the consultation. We offer ongoing assistance, regulatory updates and recurring training for your team.",
-                            "icon": "heroicon-o-support",
+                            "icon": "lifebuoy",
                             "color": "orange"
                         },
                         {
                             "title": "Competitive Pricing",
                             "description": "Transparent and competitive rates with no surprises. Investing in safety shouldn't empty your wallet. Clear and personalized quotes.",
-                            "icon": "heroicono-currency-euro",
+                            "icon": "currency-euro",
                             "color": "green"
                         },
                         {
                             "title": "Proven Results",
                             "description": "Our clients see tangible improvements: more efficient processes, better prepared staff, more satisfied patients and zero non-compliance.",
-                            "icon": "heroicon-o-trophy",
+                            "icon": "trophy",
                             "color": "blue"
                         }
                     ]

@@ -193,6 +193,12 @@ footer .text-gray-400 {
     color: rgba(255, 255, 255, 0.9);
 }
 
+/* PageSpeed / WCAG: text-brand-orange on light backgrounds (e.g. cards, callouts) needs 4.5:1 */
+#main-content .text-brand-orange,
+main .text-brand-orange {
+    color: var(--color-brand-orange-dark);
+}
+
 /* Reflow support - ensure content doesn't require horizontal scrolling at 320px */
 @media (max-width: 320px) {
     .container {

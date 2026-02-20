@@ -25,8 +25,11 @@
             <div class="group bg-white border border-gray-100 {{ $borderColors[$ci] }} border-t-4 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 {{-- Image or Icon --}}
                 @if(isset($service['image']) && !empty($service['image']))
+                @php
+                    $imgSrc = str_starts_with($service['image'], '/themes/Two/') ? asset(ltrim($service['image'], '/')) : $service['image'];
+                @endphp
                 <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-{{ $bgColors[$ci] }} to-gray-100">
-                    <img src="{{ $service['image'] }}" alt="{{ $service['title'] ?? '' }}" class="w-full h-48 object-cover" loading="lazy">
+                    <img src="{{ $imgSrc }}" alt="{{ $service['title'] ?? '' }}" class="w-full h-48 object-cover" loading="lazy">
                 </div>
                 @else
                 <div class="w-full h-48 {{ $bgColors[$ci] }} flex items-center justify-center">
