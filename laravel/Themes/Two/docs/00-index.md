@@ -21,7 +21,9 @@
 
 ### ♿ Accessibilità
 - [Piano WCAG 2.1 AA](wcag-compliance-plan.md) - Checklist e implementazione
-- [Tecniche W3C e risoluzione](wcag-techniques-resolution.md) - H44, F78, G195, H30, C8, C38, G18, H98, ARIA6
+- [Tecniche W3C e risoluzione](wcag-techniques-resolution.md) - H44, H67, F78, G195, H30, F96, C8, C21, C38, G18, G162, H98, ARIA6, ARIA11
+- [Checklist audit](wcag-audit-checklist.md) - Spunta errori/warning dall’audit (F96, ARIA6, G18, …)
+- [Contenuto GitHub Issue](github-wcag-issue.md) / [Contenuto GitHub Discussion](github-wcag-discussion.md) - Template per issue e discussion (issue #4 già commentata con link ai doc)
 
 ### 📊 Module Statistics
 - [Site Replication Strategy](./site-replication-strategy.md) - ⭐ NEW

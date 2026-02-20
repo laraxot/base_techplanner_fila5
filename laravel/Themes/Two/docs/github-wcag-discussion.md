@@ -16,6 +16,6 @@ Stiamo allineando il lavoro su WCAG 2.1 AA per il tema Two (frontoffice sottana.
 
 - **Tecniche e risoluzione**: [wcag-techniques-resolution.md](./wcag-techniques-resolution.md)
 - **Piano e checklist**: [wcag-compliance-plan.md](./wcag-compliance-plan.md)
-- **Issue dedicata**: (linkare qui l’issue quando creata)
+- **Issue dedicata**: [Issue #4 – WCAG 2.1 AA Compliance](https://github.com/laraxot/base_techplanner_fila5/issues/4) (commento con link ai doc e ordine multi‑agente: [commento](https://github.com/laraxot/base_techplanner_fila5/issues/4#issuecomment-3929835639)).
 
 Se avete già aperto un’issue o una discussion su WCAG/accessibilità per il tema Two, rispondete a questo thread con il link così le colleghiamo.

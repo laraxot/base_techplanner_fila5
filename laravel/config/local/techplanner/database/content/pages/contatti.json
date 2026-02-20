@@ -28,8 +28,8 @@
                     "subtitle": "Scegli il modo più comodo per raggiungerci",
                     "address": "Via Vanzo 86/A, 31021 Mogliano Veneto (TV)",
                     "coordinates": {
-                        "lat": 45.5648,
-                        "lng": 12.2347
+                        "lat": 45.5633,
+                        "lng": 12.2506
                     },
                     "info": {
                         "phone": "+39 041 455552 / +39 347 58 96 127",
@@ -101,12 +101,12 @@
                 "type": "map",
                 "slug": "location-map",
                 "data": {
-                    "view": "pub_theme::components.blocks.map.embed",
+                    "view": "pub_theme::components.blocks.map.static-clickable",
                     "title": "Dove Siamo",
                     "address": "Via Vanzo 86/A, 31021 Mogliano Veneto TV",
                     "coordinates": {
-                        "lat": 45.5648,
-                        "lng": 12.2347
+                        "lat": 45.5633,
+                        "lng": 12.2506
                     }
                 }
             }

@@ -61,8 +61,8 @@ Il validator accetta **HTML in POST** senza quota per URL:
 ./bashscripts/validation/validate-frontoffice-w3c.sh
 ```
 
- - Per ogni URL: scarica l’HTML in `laravel/storage/validation/w3c/{slug}.html`, invia POST al Nu Validator, salva il report in `laravel/storage/validation/w3c/{slug}.json`.
- - In console: conteggio errori e warning per pagina e totali.
+- Per ogni URL: scarica l’HTML in `laravel/storage/validation/w3c/{slug}.html`, invia POST al Nu Validator, salva il report in `laravel/storage/validation/w3c/{slug}.json`.
+- In console: conteggio errori e warning per pagina e totali.
 
 Report aggregato (se necessario) può essere generato a partire dai JSON in `laravel/storage/validation/w3c/`.
 

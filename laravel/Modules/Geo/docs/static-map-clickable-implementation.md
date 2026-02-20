@@ -158,3 +158,7 @@ Per mappe statiche cliccabili:
 - ✅ OpenStreetMap Nominatim (gratuito)
 - ✅ OpenStreetMap Tile Servers (gratuito)
 - ✅ Link Google Maps per navigazione (gratuito, non è API)
+
+
+## Aggiornamento 2026
+L'indirizzo è stato confermato come **Via Vanzo 86, Mogliano Veneto**. La mappa è stata implementata come PNG statico in `Modules/TechPlanner/resources/images/map-via-vanzo.png`.

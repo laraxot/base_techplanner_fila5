@@ -182,6 +182,17 @@ input[type="button"] {
     color: rgba(255, 255, 255, 0.95); /* Changed to white for better contrast on dark footer */
 }
 
+/* Footer / contentinfo: ensure orange and gray text meet 4.5:1 on dark blue */
+[role="contentinfo"] .text-orange-400,
+footer .text-orange-400 {
+    color: #fcd34d; /* amber-300, ~4.5:1 on #0d2d4d */
+}
+
+[role="contentinfo"] .text-gray-400,
+footer .text-gray-400 {
+    color: rgba(255, 255, 255, 0.9);
+}
+
 /* Reflow support - ensure content doesn't require horizontal scrolling at 320px */
 @media (max-width: 320px) {
     .container {
