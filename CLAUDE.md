@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Architecture
 
-This is a Laravel application built with a **modular architecture** using the `nwidart/laravel-modules` package and **Filament v4** as the admin panel framework. The codebase follows a domain-driven design approach where each module represents a specific business domain.
+This is a Laravel application built with a **modular architecture** using the `nwidart/laravel-modules` package and **Filament v5** as the admin panel framework. The codebase follows a domain-driven design approach where each module represents a specific business domain.
 
 ### Dual-Root Structure
 The project has a unique dual-root structure:
