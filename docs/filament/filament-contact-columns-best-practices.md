@@ -279,4 +279,3 @@ Questo pattern può essere riutilizzato in altri moduli che hanno informazioni d
 **IMPATTO: MEDIO**  
 **EFFORT: BASSO**  
 
-*Ultimo aggiornamento: Agosto 2025*

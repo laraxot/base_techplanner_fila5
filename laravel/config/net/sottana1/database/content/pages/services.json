@@ -65,9 +65,33 @@
                     "compliance_text": "Conformità con normative ASL, linee guida nazionali ed europee per studi odontoiatrici, protocolli di sterilizzazione e disinfezione certificati.",
                     "cta_label": "Consulenza per Studi Dentistici",
                     "cta_url": "/it/contatti",
-                    "image": "https://images.unsplash.com/photo-1616391182219-e080b4d1043a?w=800&h=600&fit=crop",
+                    "image": "https://images.unsplash.com/photo-1593054326164-5f12638848c6?w=800&h=600&fit=crop",
                     "reversed": false,
                     "bg": "bg-white"
+                }
+            },
+            {
+                "type": "sector-detail",
+                "slug": "sector-veterinaria",
+                "data": {
+                    "view": "pub_theme::components.blocks.sectors.detail",
+                    "title": "Medicina Veterinaria",
+                    "sector_subtitle": "Consulenza Specializzata per Cliniche Veterinarie",
+                    "description": "Le cliniche veterinarie richiedono protocolli specifici per la sicurezza radiologica e la gestione delle apparecchiature. Dalla radiologia digitale ai sistemi portatili, ogni aspetto necessita di competenza dedicata.",
+                    "focus_areas": [
+                        "Radiologia digitale e analogica",
+                        "Sistemi RX fissi e portatili",
+                        "Protezione operatori e animali",
+                        "Gestione dosimetria personale",
+                        "Formazione specifica veterinaria",
+                        "Conformità normative settore"
+                    ],
+                    "compliance_text": "Conformità con normative ASL, linee guida nazionali per cliniche veterinarie, protocolli di sicurezza radiologica certificati e documentazione completa per gli organi di controllo.",
+                    "cta_label": "Consulenza per Cliniche Veterinarie",
+                    "cta_url": "/it/contatti",
+                    "image": "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&h=600&fit=crop",
+                    "reversed": true,
+                    "bg": "bg-gray-50"
                 }
             },
             {

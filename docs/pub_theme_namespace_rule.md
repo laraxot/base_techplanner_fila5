@@ -227,4 +227,3 @@ Ogni volta che si lavora con temi e CMS, consultare questa regola per garantire 
 - [ThemeServiceProvider Sixteen](../laravel/Themes/Sixteen/app/Providers/ThemeServiceProvider.php)
 - [CmsServiceProvider](../laravel/Modules/Cms/app/Providers/CmsServiceProvider.php)
 
-*Ultimo aggiornamento: Gennaio 2025*

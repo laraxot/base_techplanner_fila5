@@ -303,7 +303,7 @@
                 <button @click="window.scrollTo({top: 0, behavior: 'smooth'})" 
                         class="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors group border border-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0F3460]"
                         aria-label="Torna all'inizio della pagina">
-                    <svg class="w-4 h-4 text-gray-200 group-hover:text-white group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <svg class="w-4 h-4 text-white/95 group-hover:text-white group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
                     </svg>
                 </button>

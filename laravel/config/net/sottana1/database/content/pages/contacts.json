@@ -22,7 +22,7 @@
                     },
                     "secondary_cta": {
                         "label": "Invia Email",
-                        "url": "mailto:amministrazione@sottana.com"
+                        "url": "mailto:studio@sottana.net"
                     }
                 }
             },
@@ -57,9 +57,9 @@
                             "type": "email",
                             "title": "Email",
                             "description": "Invia le tue richieste via email",
-                            "value": "amministrazione@sottana.com",
-                            "url": "mailto:amministrazione@sottana.com",
-                            "hours": "Risposta entro 24 ore",
+                            "value": "studio@sottana.net",
+                            "url": "mailto:studio@sottana.net",
+                            "hours": "",
                             "icon": "email",
                             "color": "teal"
                         },
@@ -187,57 +187,13 @@
                         },
                         {
                             "day": "Sabato",
-                            "hours": "09:00 - 12:00"
+                            "hours": "Chiuso"
                         },
                         {
                             "day": "Domenica",
                             "hours": "Chiuso"
-                        },
-                        {
-                            "day": "Emergenze",
-                            "hours": "24/7",
-                            "highlight": true
                         }
                     ]
-                }
-            },
-            {
-                "type": "company-info",
-                "slug": "company-details",
-                "data": {
-                    "view": "pub_theme::components.blocks.contact.info",
-                    "title": "Informazioni Aziendali",
-                    "details": [
-                        {
-                            "label": "Ragione Sociale",
-                            "value": "Sottana Service"
-                        },
-                        {
-                            "label": "Partita IVA",
-                            "value": "05532540266"
-                        },
-                        {
-                            "label": "Codice REA",
-                            "value": "TV - 451911"
-                        },
-                        {
-                            "label": "Settore",
-                            "value": "Consulenza radioprotezione e sicurezza sanitaria"
-                        }
-                    ]
-                }
-            },
-            {
-                "type": "map",
-                "slug": "location-map",
-                "data": {
-                    "view": "pub_theme::components.blocks.map.static-clickable",
-                    "title": "Dove Siamo",
-                    "address": "Via Vanzo 86, 31021 Mogliano Veneto TV",
-                    "coordinates": {
-                        "lat": 45.5633,
-                        "lng": 12.2506
-                    }
                 }
             }
         ],
@@ -255,7 +211,7 @@
                     },
                     "secondary_cta": {
                         "label": "Send Email",
-                        "url": "mailto:amministrazione@sottana.com"
+                        "url": "mailto:studio@sottana.net"
                     }
                 }
             },
@@ -290,9 +246,9 @@
                             "type": "email",
                             "title": "Email",
                             "description": "Send your requests via email",
-                            "value": "amministrazione@sottana.com",
-                            "url": "mailto:amministrazione@sottana.com",
-                            "hours": "Response within 24 hours",
+                            "value": "studio@sottana.net",
+                            "url": "mailto:studio@sottana.net",
+                            "hours": "",
                             "icon": "email",
                             "color": "teal"
                         },
@@ -332,6 +288,23 @@
                         {
                             "icon": "bolt",
                             "title": "Supporto Tecnico",
+                            "description": "Assistenza continua durante tutto il processo"
+                        }
+                    ]
+                }
+            }
+        ],
+        "en": []
+    },
+    "footer_blocks": {
+        "it": [],
+        "en": []
+    },
+    "created_at": "2026-02-06T12:00:00.000000Z",
+    "updated_at": "2026-02-08T04:56:00.000000Z",
+    "created_by": null,
+    "updated_by": "01985ae8-8039-71ea-88c7-54ebce6295b0"
+}o",
                             "description": "Assistenza continua durante tutto il processo"
                         }
                     ]

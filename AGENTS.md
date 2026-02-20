@@ -126,7 +126,6 @@ Vedi: [docs/continuous-improvement-lessons.md](docs/continuous-improvement-lesso
 
 ### Documentation Rules
 
-**MAI scrivere date nei file .md** (es. "Last Update: 19 Febbraio 2026")
 - Git tiene traccia automaticamente delle modifiche
 - Le date appesantiscono la manutenzione e creano merge conflict
 

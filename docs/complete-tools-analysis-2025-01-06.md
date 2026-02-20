@@ -151,8 +151,7 @@ cd /var/www/_bases/base_techplanner_fila4_mono/laravel
 - [Tools Analysis Report](./tools-analysis-report-2025-01-06.md)
 - [Module Analysis Report](./module-analysis-report-2025-01-06.md)
 - [Final PHPStan Corrections](./final-phpstan-corrections-2025-01-06.md)
-- [Complete Analysis Summary](./complete-analysis-summary-2025-01-06.md)
+- [Complete Analysis Summary](./complete-analysis-summary.md)
 
-*Ultimo aggiornamento: 2025-01-06*
 
 

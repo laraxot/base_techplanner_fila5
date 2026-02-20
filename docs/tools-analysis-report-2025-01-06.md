@@ -72,8 +72,7 @@ Analisi in corso...
 ## Collegamenti
 
 - [Module Analysis Report](./module-analysis-report-2025-01-06.md)
-- [Complete Analysis Summary](./complete-analysis-summary-2025-01-06.md)
+- [Complete Analysis Summary](./complete-analysis-summary.md)
 - [Final PHPStan Corrections](./final-phpstan-corrections-2025-01-06.md)
 
-*Ultimo aggiornamento: 2025-01-06*
 

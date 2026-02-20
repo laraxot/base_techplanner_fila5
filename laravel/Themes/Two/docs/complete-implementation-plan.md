@@ -218,7 +218,6 @@ $countdownClasses = implode(' ', [
 function countdownTimer(targetDate) {
     return {
         timer: { days: 0, hours: 0, minutes: 0, seconds: 0 },
-        targetDate: new Date(targetDate),
         interval: null,
         units: [
             { key: 'days', label: "{{ __('Days') }}" },

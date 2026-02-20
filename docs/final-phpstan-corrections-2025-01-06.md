@@ -120,7 +120,6 @@ $errorMessages->push($errorMessage);
 
 - [Final PHPStan Fixes](./final-phpstan-fixes-2025-01-06.md)
 - [Module Analysis Report](./module-analysis-report-2025-01-06.md)
-- [Complete Analysis Summary](./complete-analysis-summary-2025-01-06.md)
+- [Complete Analysis Summary](./complete-analysis-summary.md)
 
-*Ultimo aggiornamento: 2025-01-06*
 

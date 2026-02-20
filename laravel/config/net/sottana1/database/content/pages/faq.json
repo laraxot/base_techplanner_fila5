@@ -17,24 +17,7 @@
                     "title": "Domande Frequenti",
                     "subtitle": "Tutto quello che devi sapere sulla sicurezza radiologica, controlli e conformità normativa per studi dentistici e cliniche veterinarie",
                     "search_placeholder": "Cerca nelle FAQ...",
-                    "stats": [
-                        {
-                            "label": "Domande Risposte",
-                            "value": "150+"
-                        },
-                        {
-                            "label": "Clienti Soddisfatti",
-                            "value": "98%"
-                        },
-                        {
-                            "label": "Risposta Rapida",
-                            "value": "24/48h"
-                        },
-                        {
-                            "label": "Anni di Esperienza",
-                            "value": "10+"
-                        }
-                    ]
+                    "stats": []
                 }
             },
             {
@@ -93,7 +76,7 @@
                                 },
                                 {
                                     "question": "Con quale frequenza devono essere eseguiti i controlli di radioprotezione?",
-                                    "answer": "I controlli devono essere eseguiti con cadenza annuale per la verifica di funzionalità e sicurezza delle apparecchiature radiogene. Inoltre, sono previsti controlli semestrali per alcuni parametri specifici."
+                                    "answer": "I controlli di radioprotezione devono essere eseguiti obbligatoriamente con cadenza annuale per la verifica di funzionalità e sicurezza delle apparecchiature radiogene. Per alcuni parametri specifici (come la verifica dei parametri di esposizione) sono previsti controlli semestrali. In caso di modifiche alle apparecchiature o riparazioni, è obbligatorio eseguire un controllo straordinario prima del riutilizzo."
                                 },
                                 {
                                     "question": "Cosa include la sorveglianza dosimetrica per il personale esposto?",
