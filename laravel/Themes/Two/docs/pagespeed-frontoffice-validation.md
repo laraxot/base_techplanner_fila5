@@ -21,6 +21,26 @@ Verificare **ogni** URL su [https://pagespeed.web.dev/](https://pagespeed.web.de
 | 8 | Termini        | https://sottana.net/it/termini |
 | 9 | Cookie         | https://sottana.net/it/cookie |
 
+## Risultati Ultima Validazione (20 Feb 2026)
+
+### Home - https://sottana.net/it (Mobile)
+| Metrica | Valore |
+|---------|--------|
+| Performance | 91% |
+| Accessibility | 90% ⚠️ |
+| Best Practices | 96% |
+| SEO | 100% |
+
+### Problemi Identificati
+- **Contrasto**: text-brand-orange su sfondo chiaro
+- **Link name**: Social links senza aria-label
+- **Heading**: h4 invece di h3
+
+### Errori JS Console
+- `$isActive is not defined` - Alpine.js mobile menu
+- `$dispatch is not defined` - Cookie consent
+- 404: hero-bg.jpg, medical-equipment.jpg
+
 ## Come validare
 
 1. Aprire [https://pagespeed.web.dev/](https://pagespeed.web.dev/).
