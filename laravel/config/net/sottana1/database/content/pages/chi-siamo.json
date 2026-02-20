@@ -57,38 +57,6 @@
                 }
             },
             {
-                "type": "stats-overview",
-                "slug": "results-numbers",
-                "data": {
-                    "view": "pub_theme::components.blocks.stats.overview",
-                    "title": "I Nostri Risultati in Numeri",
-                    "subtitle": "Dati concreti che testimoniano l'efficacia della nostra consulenza",
-                    "background_color": "bg-gray-50",
-                    "stats": [
-                        {
-                            "number": "100+",
-                            "label": "Studi Soddisfatti",
-                            "description": "Professionisti che ci hanno scelto per la sicurezza"
-                        },
-                        {
-                            "number": "0",
-                            "label": "Non Conformità",
-                            "description": "Zero problemi durante ispezioni ASL"
-                        },
-                        {
-                            "number": "24/48h",
-                            "label": "Risposta Rapida",
-                            "description": "Intervento tempestivo su tutta richiesta"
-                        },
-                        {
-                            "number": "5★",
-                            "label": "Valutazione Clienti",
-                            "description": "Feedback eccellente da tutti i nostri partner"
-                        }
-                    ]
-                }
-            },
-            {
                 "type": "features-grid",
                 "slug": "why-choose-us",
                 "data": {
@@ -104,7 +72,7 @@
                         },
                         {
                             "title": "Esperienza Comprovata",
-                            "description": "Dal 2025 al servizio di professionisti sanitari in tutto il Veneto. Decine di studi soddisfatti testimoniano la qualità del nostro lavoro.",
+                            "description": "Al servizio di professionisti sanitari in tutto il Veneto. Decine di studi soddisfatti testimoniano la qualità del nostro lavoro.",
                             "icon": "heroicon-o-chart-bar",
                             "color": "green"
                         },
@@ -197,38 +165,6 @@
                 }
             },
             {
-                "type": "stats-overview",
-                "slug": "results-numbers",
-                "data": {
-                    "view": "pub_theme::components.blocks.stats.overview",
-                    "title": "Our Results in Numbers",
-                    "subtitle": "Concrete data that testifies to the effectiveness of our consulting",
-                    "background_color": "bg-gray-50",
-                    "stats": [
-                        {
-                            "number": "100+",
-                            "label": "Satisfied Practices",
-                            "description": "Professionals who chose us for safety"
-                        },
-                        {
-                            "number": "0",
-                            "label": "Non-Compliance",
-                            "description": "Zero problems during ASL inspections"
-                        },
-                        {
-                            "number": "24/48h",
-                            "label": "Rapid Response",
-                            "description": "Prompt intervention on any request"
-                        },
-                        {
-                            "number": "5★",
-                            "label": "Client Rating",
-                            "description": "Excellent feedback from all our partners"
-                        }
-                    ]
-                }
-            },
-            {
                 "type": "features-grid",
                 "slug": "why-choose-us",
                 "data": {
@@ -244,7 +180,7 @@
                         },
                         {
                             "title": "Proven Experience",
-                            "description": "Serving healthcare professionals throughout Veneto since 2025. Dozens of satisfied practices testify to the quality of our work.",
+                            "description": "Serving healthcare professionals throughout Veneto. Dozens of satisfied practices testify to the quality of our work.",
                             "icon": "heroicon-o-chart-bar",
                             "color": "green"
                         },

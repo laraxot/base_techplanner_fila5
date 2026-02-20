@@ -233,16 +233,6 @@
                             "color": "emerald"
                         },
                         {
-                            "type": "phone",
-                            "title": "Mobile",
-                            "description": "Call or WhatsApp",
-                            "value": "+39 347 58 96 127",
-                            "url": "tel:+393475896127",
-                            "hours": "Mon-Fri: 9:00-18:00",
-                            "icon": "phone",
-                            "color": "green"
-                        },
-                        {
                             "type": "email",
                             "title": "Email",
                             "description": "Send your requests via email",
@@ -263,6 +253,28 @@
                         }
                     ]
                 }
+            },
+            {
+                "type": "working-hours",
+                "slug": "office-hours",
+                "data": {
+                    "view": "pub_theme::components.blocks.contact.hours",
+                    "title": "Office Hours",
+                    "schedule": [
+                        {
+                            "day": "Monday - Friday",
+                            "hours": "09:00 - 18:00"
+                        },
+                        {
+                            "day": "Saturday",
+                            "hours": "Closed"
+                        },
+                        {
+                            "day": "Sunday",
+                            "hours": "Closed"
+                        }
+                    ]
+                }
             }
         ]
     },
@@ -276,35 +288,13 @@
                     "title": "Risposta Rapida Garantita",
                     "features": [
                         {
-                            "icon": "clock",
-                            "title": "Richieste Urgenti",
-                            "description": "Risposta entro 2 ore per emergenze"
-                        },
-                        {
                             "icon": "check",
                             "title": "Consulenza Personalizzata",
-                            "description": "Proposta su misura entro 24 ore"
+                            "description": "Proposta personalizzata"
                         },
                         {
                             "icon": "bolt",
                             "title": "Supporto Tecnico",
-                            "description": "Assistenza continua durante tutto il processo"
-                        }
-                    ]
-                }
-            }
-        ],
-        "en": []
-    },
-    "footer_blocks": {
-        "it": [],
-        "en": []
-    },
-    "created_at": "2026-02-06T12:00:00.000000Z",
-    "updated_at": "2026-02-08T04:56:00.000000Z",
-    "created_by": null,
-    "updated_by": "01985ae8-8039-71ea-88c7-54ebce6295b0"
-}o",
                             "description": "Assistenza continua durante tutto il processo"
                         }
                     ]
