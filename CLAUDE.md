@@ -13,7 +13,7 @@ The project has a unique dual-root structure:
 
 ### Core Technologies
 - **Laravel Framework**: Base web application framework
-- **Filament v4**: Admin panel framework for all UI components
+- **Filament v5**: Admin panel framework for all UI components
 - **Laravel Modules**: Modular architecture implementation with `wikimedia/composer-merge-plugin`
 - **Pest**: Testing framework (with strict .env.testing configuration)
 - **Vite**: Frontend build tool with Tailwind CSS v4
@@ -60,7 +60,7 @@ Modules/ModuleName/
 ```
 
 ### Filament Integration
-All admin interfaces are built using Filament v4:
+All admin interfaces are built using Filament v5:
 - Resources are located in `Modules/*/app/Filament/Resources/`
 - Custom pages in `Modules/*/app/Filament/Pages/`
 - Widgets in `Modules/*/app/Filament/Widgets/`
