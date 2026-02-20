@@ -22,7 +22,7 @@
                     },
                     "secondary_cta": {
                         "label": "Invia Email",
-                        "url": "mailto:studio@sottana.com"
+                        "url": "mailto:studio@sottana.net"
                     }
                 }
             },
@@ -57,9 +57,9 @@
                             "type": "email",
                             "title": "Email",
                             "description": "Invia le tue richieste via email",
-                            "value": "studio@sottana.com",
-                            "url": "mailto:studio@sottana.com",
-                            "hours": "Risposta entro 24 ore",
+                            "value": "studio@sottana.net",
+                            "url": "mailto:studio@sottana.net",
+                            "hours": "",
                             "icon": "email",
                             "color": "teal"
                         },
@@ -187,57 +187,13 @@
                         },
                         {
                             "day": "Sabato",
-                            "hours": "09:00 - 12:00"
+                            "hours": "Chiuso"
                         },
                         {
                             "day": "Domenica",
                             "hours": "Chiuso"
-                        },
-                        {
-                            "day": "Emergenze",
-                            "hours": "24/7",
-                            "highlight": true
                         }
                     ]
-                }
-            },
-            {
-                "type": "company-info",
-                "slug": "company-details",
-                "data": {
-                    "view": "pub_theme::components.blocks.contact.info",
-                    "title": "Informazioni Aziendali",
-                    "details": [
-                        {
-                            "label": "Ragione Sociale",
-                            "value": "Sottana Service"
-                        },
-                        {
-                            "label": "Partita IVA",
-                            "value": "05532540266"
-                        },
-                        {
-                            "label": "Codice REA",
-                            "value": "TV - 451911"
-                        },
-                        {
-                            "label": "Settore",
-                            "value": "Consulenza radioprotezione e sicurezza sanitaria"
-                        }
-                    ]
-                }
-            },
-            {
-                "type": "map",
-                "slug": "location-map",
-                "data": {
-                    "view": "pub_theme::components.blocks.map.static-clickable",
-                    "title": "Dove Siamo",
-                    "address": "Via Vanzo 86, 31021 Mogliano Veneto TV",
-                    "coordinates": {
-                        "lat": 45.5633,
-                        "lng": 12.2506
-                    }
                 }
             }
         ],
@@ -255,7 +211,7 @@
                     },
                     "secondary_cta": {
                         "label": "Send Email",
-                        "url": "mailto:studio@sottana.com"
+                        "url": "mailto:studio@sottana.net"
                     }
                 }
             },
@@ -277,22 +233,12 @@
                             "color": "emerald"
                         },
                         {
-                            "type": "phone",
-                            "title": "Mobile",
-                            "description": "Call or WhatsApp",
-                            "value": "+39 347 58 96 127",
-                            "url": "tel:+393475896127",
-                            "hours": "Mon-Fri: 9:00-18:00",
-                            "icon": "phone",
-                            "color": "green"
-                        },
-                        {
                             "type": "email",
                             "title": "Email",
                             "description": "Send your requests via email",
-                            "value": "studio@sottana.com",
-                            "url": "mailto:studio@sottana.com",
-                            "hours": "Response within 24 hours",
+                            "value": "studio@sottana.net",
+                            "url": "mailto:studio@sottana.net",
+                            "hours": "",
                             "icon": "email",
                             "color": "teal"
                         },
@@ -304,6 +250,28 @@
                             "hours": "By appointment",
                             "icon": "location",
                             "color": "cyan"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "working-hours",
+                "slug": "office-hours",
+                "data": {
+                    "view": "pub_theme::components.blocks.contact.hours",
+                    "title": "Office Hours",
+                    "schedule": [
+                        {
+                            "day": "Monday - Friday",
+                            "hours": "09:00 - 18:00"
+                        },
+                        {
+                            "day": "Saturday",
+                            "hours": "Closed"
+                        },
+                        {
+                            "day": "Sunday",
+                            "hours": "Closed"
                         }
                     ]
                 }
@@ -320,14 +288,9 @@
                     "title": "Risposta Rapida Garantita",
                     "features": [
                         {
-                            "icon": "clock",
-                            "title": "Richieste Urgenti",
-                            "description": "Risposta entro 2 ore per emergenze"
-                        },
-                        {
                             "icon": "check",
                             "title": "Consulenza Personalizzata",
-                            "description": "Proposta su misura entro 24 ore"
+                            "description": "Proposta personalizzata"
                         },
                         {
                             "icon": "bolt",

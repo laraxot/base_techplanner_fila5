@@ -65,9 +65,33 @@
                     "compliance_text": "Conformità con normative ASL, linee guida nazionali ed europee per studi odontoiatrici, protocolli di sterilizzazione e disinfezione certificati.",
                     "cta_label": "Consulenza per Studi Dentistici",
                     "cta_url": "/it/contatti",
-                    "image": "https://images.unsplash.com/photo-1616391182219-e080b4d1043a?w=800&h=600&fit=crop",
+                    "image": "/themes/Two/images/service-odontoiatria.jpg",
                     "reversed": false,
                     "bg": "bg-white"
+                }
+            },
+            {
+                "type": "sector-detail",
+                "slug": "sector-veterinaria",
+                "data": {
+                    "view": "pub_theme::components.blocks.sectors.detail",
+                    "title": "Medicina Veterinaria",
+                    "sector_subtitle": "Consulenza Specializzata per Cliniche Veterinarie",
+                    "description": "Le cliniche veterinarie richiedono protocolli specifici per la sicurezza radiologica e la gestione delle apparecchiature. Dalla radiologia digitale ai sistemi portatili, ogni aspetto necessita di competenza dedicata.",
+                    "focus_areas": [
+                        "Radiologia digitale e analogica",
+                        "Sistemi RX fissi e portatili",
+                        "Protezione operatori e animali",
+                        "Gestione dosimetria personale",
+                        "Formazione specifica veterinaria",
+                        "Conformità normative settore"
+                    ],
+                    "compliance_text": "Conformità con normative ASL, linee guida nazionali per cliniche veterinarie, protocolli di sicurezza radiologica certificati e documentazione completa per gli organi di controllo.",
+                    "cta_label": "Consulenza per Cliniche Veterinarie",
+                    "cta_url": "/it/contatti",
+                    "image": "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&h=600&fit=crop",
+                    "reversed": true,
+                    "bg": "bg-gray-50"
                 }
             },
             {
@@ -118,6 +142,54 @@
                             "url": "/en/contact"
                         }
                     ]
+                }
+            },
+            {
+                "type": "sector-detail",
+                "slug": "sector-dentistry",
+                "data": {
+                    "view": "pub_theme::components.blocks.sectors.detail",
+                    "title": "Dentistry",
+                    "sector_subtitle": "Specialized Consulting for Dental Practices",
+                    "description": "Dental practices face unique challenges in terms of safety and hygiene. From instrument sterilization to special waste management, every aspect requires specific attention and expertise.",
+                    "focus_areas": [
+                        "Sterilization and instrument traceability",
+                        "Cross-contamination protection",
+                        "Hazardous medical waste management",
+                        "Radiological safety and equipment",
+                        "Continuous staff training",
+                        "Medical emergency protocols"
+                    ],
+                    "compliance_text": "Compliance with ASL regulations, national and European guidelines for dental practices, certified sterilization and disinfection protocols.",
+                    "cta_label": "Consultation for Dental Practices",
+                    "cta_url": "/en/contact",
+                    "image": "/themes/Two/images/service-odontoiatria.jpg",
+                    "reversed": false,
+                    "bg": "bg-white"
+                }
+            },
+            {
+                "type": "sector-detail",
+                "slug": "sector-veterinary",
+                "data": {
+                    "view": "pub_theme::components.blocks.sectors.detail",
+                    "title": "Veterinary Medicine",
+                    "sector_subtitle": "Specialized Consulting for Veterinary Clinics",
+                    "description": "Veterinary clinics require specific protocols for radiological safety and equipment management. From digital radiology to portable systems, every aspect needs dedicated expertise.",
+                    "focus_areas": [
+                        "Digital and analog radiology",
+                        "Fixed and portable RX systems",
+                        "Operator and animal protection",
+                        "Personal dosimetry management",
+                        "Specific veterinary training",
+                        "Sector regulatory compliance"
+                    ],
+                    "compliance_text": "Compliance with ASL regulations, national guidelines for veterinary clinics, certified radiological safety protocols and complete documentation for control bodies.",
+                    "cta_label": "Consultation for Veterinary Clinics",
+                    "cta_url": "/en/contact",
+                    "image": "/themes/Two/images/radiologia-veterinaria.jpg",
+                    "reversed": true,
+                    "bg": "bg-gray-50"
                 }
             },
             {
