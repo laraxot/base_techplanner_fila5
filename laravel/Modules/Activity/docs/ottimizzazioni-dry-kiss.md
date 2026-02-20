@@ -368,4 +368,3 @@ protected function registerConfig(): void
 
 ---
 
-*Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS Activity Module*

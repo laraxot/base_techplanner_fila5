@@ -165,4 +165,3 @@ Tutti i widget Filament che estendono `XotBaseWidget` e usano `statePath('data')
 
 ---
 
-*Ultimo aggiornamento: Dicembre 2024*

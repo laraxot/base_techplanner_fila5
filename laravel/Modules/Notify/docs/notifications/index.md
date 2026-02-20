@@ -44,4 +44,3 @@
 3. I canali devono utilizzare le factory per la creazione delle azioni
 4. Le factory devono gestire la selezione del driver predefinito
 
-Ultimo aggiornamento: 14 Maggio 2025

@@ -54,7 +54,6 @@ Chart.register(ChartDataLabels);
 - [Filament 5.x Upgrade Guide](https://filamentphp.com/docs/5.x/upgrade-guide)
 - [Livewire 4.x Upgrade Guide](https://livewire.laravel.com/docs/4.x/upgrading)
 
-*Ultimo aggiornamento: 2026-01-30*
 
 **Versione Attuale**: Filament 5.1.1
 
@@ -107,7 +106,6 @@ Chart.register(ChartDataLabels);
 - [Filament 5.x Upgrade Guide](https://filamentphp.com/docs/5.x/upgrade-guide)
 - [Livewire 4.x Upgrade Guide](https://livewire.laravel.com/docs/4.x/upgrading)
 
-*Ultimo aggiornamento: 2026-01-30*
 
 >>>>>>> .merge_file_IH2DQ4
 **Versione Attuale**: Filament 5.1.1
@@ -161,4 +159,3 @@ Chart.register(ChartDataLabels);
 - [Filament 5.x Upgrade Guide](https://filamentphp.com/docs/5.x/upgrade-guide)
 - [Livewire 4.x Upgrade Guide](https://livewire.laravel.com/docs/4.x/upgrading)
 
-*Ultimo aggiornamento: 2026-01-30*
