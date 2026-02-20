@@ -34,10 +34,18 @@
            class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-[#1E5A96] focus:text-white focus:rounded-md focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96]">
             Vai al contenuto principale
         </a>
-        
+
+        @if(isset($beforeMain))
+            {!! $beforeMain !!}
+        @endif
+
         <main id="main-content" role="main">
             {!! $slot ?? '' !!}
         </main>
+
+        @if(isset($afterMain))
+            {!! $afterMain !!}
+        @endif
 
         {{-- Alpine.js - Loaded with defer for non-blocking --}}
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" integrity="sha384-..." crossorigin="anonymous"></script>

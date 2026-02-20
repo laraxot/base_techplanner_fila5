@@ -16,7 +16,7 @@
                     "view": "pub_theme::components.blocks.hero.simple",
                     "title": "Contattaci",
                     "subtitle": "Siamo a tua disposizione per qualsiasi informazione sulla radioprotezione del tuo studio",
-                    "image": "/themes/Two/Main_files/images/contact-hero.jpg"
+                    "image": "/images/hero-bg.jpg"
                 }
             },
             {

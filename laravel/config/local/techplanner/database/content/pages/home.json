@@ -172,7 +172,7 @@
                             "name": "Dr. Roberto Magni",
                             "role": "Centro Odontoiatrico Magni",
                             "location": "Padova, PD",
-                            "image": "/themes/Two/resources/images/testimonial-1.jpg",
+                            "image": "/themes/Two/images/testimonial-1.jpg",
                             "content": "La gestione della radioprotezione era un incubo burocratico. Con Marco abbiamo non solo messo tutto in regola secondo il D.Lgs 101/2020, ma dormiamo sonni tranquilli sapendo che i controlli sono precisi e puntuali.",
                             "date": "15 gennaio 2026"
                         },
@@ -180,7 +180,7 @@
                             "name": "Dr.ssa Elena Visentin",
                             "role": "Clinica Veterinaria San Marco",
                             "location": "Mestre, VE",
-                            "image": "/themes/Two/resources/images/testimonial-2.jpg",
+                            "image": "/themes/Two/images/testimonial-2.jpg",
                             "content": "Professionalità assoluta nel controllo delle nostre apparecchiature radiologiche. Le verifiche sono meticolose e le spiegazioni chiare. Un partner indispensabile per la sicurezza del nostro staff e dei pazienti animali.",
                             "date": "20 novembre 2025"
                         },
@@ -188,7 +188,7 @@
                             "name": "Dr. Paolo Verdi",
                             "role": "Studio Odontoiatrico Verdi",
                             "location": "Treviso, TV",
-                            "image": "/themes/Two/resources/images/testimonial-3.jpg",
+                            "image": "/themes/Two/images/testimonial-3.jpg",
                             "content": "Ho richiesto un audit completo sugli elettromedicali e la radioprotezione. Servizio eccellente, report dettagliati e piena disponibilità. La competenza tecnica di Marco è evidente.",
                             "date": "5 dicembre 2025"
                         },
@@ -196,7 +196,7 @@
                             "name": "Dr.ssa Giulia Bianchi",
                             "role": "VetLife Ambulatorio",
                             "location": "Vicenza, VI",
-                            "image": "/themes/Two/resources/images/testimonial-4.jpg",
+                            "image": "/themes/Two/images/testimonial-4.jpg",
                             "content": "Finalmente qualcuno che conosce le specificità della radiologia veterinaria. I consigli sulle schermature e le procedure di sicurezza hanno migliorato notevolmente il nostro flusso di lavoro.",
                             "date": "1 febbraio 2026"
                         }
