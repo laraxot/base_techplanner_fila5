@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This file provides essential guidance for agentic coding agents working in this Laravel modular application with Filament v4.
+This file provides essential guidance for agentic coding agents working in this Laravel modular application with Filament v5.
 
 ## 🚨 CRITICAL NEW Rules
 
