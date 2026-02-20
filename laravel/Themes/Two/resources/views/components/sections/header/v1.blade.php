@@ -63,8 +63,8 @@
 
             {{-- Brand --}}
             <a href="{{ LaravelLocalization::getLocalizedURL($currentLocale, '/') }}" 
-               aria-label="Vai alla homepage"
-               class="flex items-center space-x-3 shrink-0 group focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96] rounded-md">
+               aria-label="Sottana Service - Home"
+               class="flex items-center space-x-3 shrink-0 group focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96] rounded-md transition-all">
                 {{-- Logo Elefante --}}
                 <svg class="w-10 h-10 md:w-12 md:h-12 transition-colors shrink-0" 
                      :class="scrolled ? 'text-gray-900' : 'text-white'" 
@@ -73,33 +73,17 @@
                      xmlns="http://www.w3.org/2000/svg"
                      aria-hidden="true"
                      role="img">
+                    <title>Logo Sottana Service</title>
                     <!-- Elefante stilizzato di profilo con proboscide a destra -->
-                    <!-- Corpo principale -->
                     <ellipse cx="50" cy="60" rx="25" ry="20" fill="currentColor" opacity="0.9"/>
-                    
-                    <!-- Testa -->
                     <ellipse cx="65" cy="50" rx="18" ry="22" fill="currentColor"/>
-                    
-                    <!-- Proboscide (a destra) -->
                     <path d="M 83 50 Q 95 45 97 40 Q 98 35 96 30 Q 94 25 90 28 Q 88 30 88 35 Q 88 40 86 45 Q 85 48 83 50 Z" fill="currentColor"/>
-                    
-                    <!-- Orecchio -->
                     <ellipse cx="75" cy="40" rx="12" ry="15" fill="currentColor" opacity="0.7"/>
-                    
-                    <!-- Occhio -->
                     <circle cx="70" cy="48" r="3" fill="white"/>
                     <circle cx="70" cy="48" r="1.5" fill="currentColor"/>
-                    
-                    <!-- Zanna -->
                     <path d="M 87 45 L 90 35 L 87 40 Z" fill="currentColor" opacity="0.8"/>
-                    
-                    <!-- Gamba anteriore -->
                     <ellipse cx="60" cy="75" rx="6" ry="8" fill="currentColor"/>
-                    
-                    <!-- Gamba posteriore -->
                     <ellipse cx="40" cy="75" rx="6" ry="8" fill="currentColor"/>
-                    
-                    <!-- Coda -->
                     <path d="M 27 60 Q 20 55 17 50" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
                     <circle cx="17" cy="50" r="2" fill="currentColor"/>
                 </svg>
@@ -109,7 +93,7 @@
             </a>
 
             {{-- Desktop Nav --}}
-            <nav class="hidden lg:flex items-center space-x-1 xl:space-x-2" aria-label="Main navigation">
+            <nav class="hidden lg:flex items-center space-x-1 xl:space-x-2" aria-label="Menu principale">
                 @foreach($items as $item)
                     @php
                         $itemPath = ltrim($item['url'] ?? '', '/');
@@ -211,7 +195,6 @@
                                 <span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-green-400 border-2 rounded-full" :class="scrolled ? 'border-white' : 'border-[#0f2b46]'"></span>
                             </div>
                         </button>
-<!-- ... dropdown content ... -->
                     <div
                         x-show="userOpen"
                         x-transition:enter="transition ease-out duration-100"
@@ -258,7 +241,7 @@
                 {{-- CTA Button - white border style matching reference --}}
                 <a
                     href="{{ $ctaUrl }}"
-                    aria-label="{{ $ctaLabel }} - {{ __('Apri pagina contatti') }}"
+                    aria-label="{{ $ctaLabel }} - {{ __('Vai ai contatti') }}"
                     class="inline-flex items-center px-5 py-2.5 text-sm font-semibold border rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
                     :class="scrolled 
                         ? 'text-gray-900 bg-white border-gray-300 hover:bg-gray-50 hover:border-gray-400 focus:ring-[#1E5A96]' 
@@ -391,7 +374,7 @@
             <div class="pt-3 mt-2">
                 <a
                     href="{{ $ctaUrl }}"
-                    aria-label="{{ $ctaLabel }} - {{ __('Apri pagina contatti') }}"
+                    aria-label="{{ $ctaLabel }} - {{ __('Vai ai contatti') }}"
                     class="flex items-center justify-center w-full px-5 py-3 text-base font-semibold text-white border border-white/70 rounded-lg hover:bg-white hover:text-[#1E5A96] transition-all focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0f2b46]"
                 >
                     <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">

@@ -20,7 +20,7 @@
                     "primary_cta_url": "/it/contatti",
                     "secondary_cta_label": "Scopri i Servizi",
                     "secondary_cta_url": "/it/servizi",
-                    "image": "/themes/Two/resources/images/hero-bg.jpg"
+                    "image": "/themes/Two/images/hero-bg.jpg"
                 }
             },
             {
@@ -31,7 +31,7 @@
                     "name": "Sottana Service",
                     "title": "Consulente Specializzato in Sicurezza e Igiene",
                     "description": "Con una specializzazione verticale nel settore dentistico e veterinario, mi dedico a garantire che gli studi professionali mantengano i più alti standard di sicurezza e igiene, assicurando la piena conformità normativa.\n\nLa mia missione è semplificare la complessità normativa, fornendo soluzioni pratiche e immediate che permettono ai professionisti di concentrarsi su ciò che sanno fare meglio: prendersi cura dei loro pazienti.",
-                    "image": "/themes/Two/resources/images/dr-roberto-magni.jpg",
+                    "image": "/themes/Two/images/dr-roberto-magni.jpg",
                     "features": [
                         {
                             "title": "Certificazioni e Qualifiche",
@@ -160,7 +160,7 @@
                     "primary_cta_url": "/en/contacts",
                     "secondary_cta_label": "Explore Services",
                     "secondary_cta_url": "/en/services",
-                    "image": "/themes/Two/resources/images/hero-bg.jpg"
+                    "image": "/themes/Two/images/hero-bg.jpg"
                 }
             },
             {
@@ -171,7 +171,7 @@
                     "name": "Sottana Service",
                     "title": "Specialized Safety and Hygiene Consultant",
                     "description": "With vertical specialization in the dental and veterinary sector, I am dedicated to ensuring that professional practices maintain the highest standards of safety and hygiene, ensuring full regulatory compliance.\n\nMy mission is to simplify regulatory complexity, providing practical and immediate solutions that allow professionals to focus on what they do best: taking care of their patients.",
-                    "image": "/themes/Two/resources/images/dr-roberto-magni.jpg",
+                    "image": "/themes/Two/images/dr-roberto-magni.jpg",
                     "features": [
                         {
                             "title": "Certifications and Qualifications",

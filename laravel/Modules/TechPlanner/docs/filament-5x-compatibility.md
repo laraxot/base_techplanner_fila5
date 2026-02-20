@@ -1,0 +1,38 @@
+# Filament 5.x compatibility - modulo TechPlanner
+
+**Versione Filament:** v5.2.1
+
+## Stato compatibilità
+
+Il modulo TechPlanner è **compatibile** con Filament 5.x. Nessun breaking change funzionale rispetto a Filament 4.x.
+
+## Note specifiche modulo
+
+- Il fix precedente (Filament 4.x) per `ListClients` — type checking su `getTableQuery()` — resta valido
+- Le risorse client/progetto seguono i pattern standard `XotBaseResource`
+
+## Regole architetturali
+
+Tutte le classi Filament **devono** estendere le classi `XotBase*`:
+
+| Tipo | Classe base |
+|------|------------|
+| Resource | `XotBaseResource` |
+| ListRecords | `XotBaseListRecords` |
+| CreateRecord | `XotBaseCreateRecord` |
+| EditRecord | `XotBaseEditRecord` |
+| ViewRecord | `XotBaseViewRecord` |
+| Widget | `XotBaseWidget` |
+
+## Checklist modulo
+
+- [x] Nessun import diretto da `Filament\*` base classes
+- [x] Fix `ListClients::getTableQuery()` (da Filament 4.x) confermato compatibile
+- [ ] Verificare compatibilità con Livewire 4.x dopo upgrade
+- [ ] Verificare Tailwind CSS 4.1+ dopo upgrade
+
+## Riferimenti
+
+- [Guida upgrade Filament 5 (Xot)](../../Xot/docs/filament-5-upgrade-guide.md)
+- [Regole Laraxot per Filament 5 (Xot)](../../Xot/docs/filament-5-laraxot-rules.md)
+- [Documentazione ufficiale](https://filamentphp.com/docs/5.x/upgrade-guide)

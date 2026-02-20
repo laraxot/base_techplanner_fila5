@@ -6,7 +6,7 @@ Riferimento: report MAUVE++ su https://sottana.net (WCAG 2.1 AA, viewport deskto
 
 ### F96 – Label in Name (2.5.3)
 - **Header**: Pulsante lingua – `aria-label="Cambia lingua (attuale: {{ $currentLocale }})"` così il nome accessibile contiene il testo visibile (es. "it").
-- **Footer**: Link social – `aria-label` che inizia con il nome piattaforma: "LinkedIn - ...", "Facebook - ...", "Instagram - ..." per comandi voice ("Click LinkedIn").
+- **Footer**: Link social – `aria-label` descrittivi tipo "Apri profilo LinkedIn (si apre in nuova scheda)" / "Seguici su LinkedIn (si apre in una nuova finestra)" per H30 e voice.
 - Link mappa: `aria-label` con indirizzo e testo sr-only per H30.
 
 ### ARIA11 – Landmark
@@ -16,8 +16,8 @@ Riferimento: report MAUVE++ su https://sottana.net (WCAG 2.1 AA, viewport deskto
 
 ### G18 – Contrasto
 - Override in `resources/css/app.css` per `.text-blue-200`, `.text-blue-100/*`, `.text-gray-200` su sfondo scuro.
-- Footer v1: titolo "Normative" da `text-orange-400` a `text-orange-300`; barra bassa da `text-gray-300` a `text-white/90`.
-- Override per `[role="contentinfo"] .text-orange-400` e `.text-gray-400`.
+- **Footer v1 (2026-02)**: testo su sfondo gradient blu reso conforme WCAG AA 4.5:1: `text-white` per titoli e sottotitolo brand, `text-gray-100` per descrizioni/paragrafi/barra bassa; titolo "Normative & Certificazioni" e servizi/contatti in `text-white` o `text-gray-100`. Icona back-to-top `text-gray-200` su `#0F3460`.
+- Override per `[role="contentinfo"]` dove necessario.
 
 ### H30 – Scopo link
 - Link mappa footer: `aria-label` descrittivo + `<span class="sr-only">Apri mappa della nostra sede su OpenStreetMap</span>`.
@@ -32,10 +32,11 @@ Gli errori/warning su **cookie-consent** (F78, G195, C12, C21, G162) riguardano 
 - Issue o PR al repository del pacchetto cookie-consent.
 - Documentare in [wcag-compliance-plan.md](wcag-compliance-plan.md) come “esterno al tema”.
 
-## Layout e landmark main
+## Layout e landmark main (aggiornato 2026-02)
 
-- **`resources/views/layouts/app.blade.php`**: `<main role="main" id="main-content">` attorno allo slot.
-- **`resources/views/components/layouts/main.blade.php`**: già `<main id="main-content" role="main">` con skip link. Attenzione: se questo layout riceve come slot l’intero corpo (header + content + footer), il landmark main avvolge troppo; in quel caso la struttura andrebbe separata (header fuori da main, main solo sul contenuto centrale, footer fuori).
+- **Struttura**: header e footer fuori da `<main>` (slot `beforeMain` / `afterMain` in `app.blade.php` e `main.blade.php`). Ordine: skip link, header, main, footer.
+- **`components/layouts/app.blade.php`**: usa `beforeMain` e `afterMain` per header e footer; slot default = solo contenuto pagina.
+- **`components/layouts/main.blade.php`**: renderizza `beforeMain`, poi `<main id="main-content" role="main">` (solo slot default), poi `afterMain`; skip link a #main-content. Attenzione: se questo layout riceve come slot l’intero corpo (header + content + footer), il landmark main avvolge troppo; in quel caso la struttura andrebbe separata (header fuori da main, main solo sul contenuto centrale, footer fuori).
 
 ## PageSpeed Insights – correzioni applicate
 
