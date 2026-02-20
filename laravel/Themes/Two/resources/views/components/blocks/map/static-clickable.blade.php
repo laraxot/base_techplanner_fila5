@@ -37,9 +37,9 @@
                 href="{{ $mapsUrl }}"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="block bg-white rounded-xl shadow-lg overflow-hidden group"
-                aria-label="Apri {{ $displayAddress }} su Google Maps"
+                class="block bg-white rounded-xl shadow-lg overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
             >
+                <span class="sr-only">Apri {{ $displayAddress }} su Google Maps</span>
                 @if($hasLocalImage)
                     <img
                         src="{{ $imageUrl }}"
@@ -63,7 +63,7 @@
                     href="{{ $mapsUrl }}"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-md"
+                    class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
