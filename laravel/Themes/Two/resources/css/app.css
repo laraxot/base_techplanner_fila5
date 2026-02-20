@@ -196,7 +196,7 @@ footer .text-gray-400 {
 /* PageSpeed / WCAG: text-brand-orange on light backgrounds (e.g. cards, callouts) needs 4.5:1 */
 #main-content .text-brand-orange,
 main .text-brand-orange {
-    color: var(--color-brand-orange-dark);
+    color: var(--color-brand-orange-dark) !important;
 }
 
 /* Reflow support - ensure content doesn't require horizontal scrolling at 320px */
@@ -249,6 +249,13 @@ main .text-brand-orange {
 .lcc-button {
     min-height: 44px;
     min-width: 44px;
+    line-height: 1.5; /* C21 - WCAG 1.4.12 Text Spacing */
+}
+
+/* C21: Line height for all cookie modal text */
+.lcc-modal p,
+.lcc-modal .lcc-content {
+    line-height: 1.5;
 }
 
 .lcc-button:focus-visible {
