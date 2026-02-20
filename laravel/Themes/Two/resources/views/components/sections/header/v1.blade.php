@@ -146,7 +146,7 @@
                         @click.away="langOpen = false"
                         class="flex items-center space-x-1.5 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96] rounded-md px-2 py-1"
                         :class="scrolled ? 'text-gray-600 hover:text-gray-900' : 'text-white/80 hover:text-white'"
-                        aria-label="Cambia lingua"
+                        aria-label="Cambia lingua (attuale: {{ $currentLocale }})"
                         aria-expanded="false"
                         :aria-expanded="langOpen.toString()"
                         aria-haspopup="true"
@@ -280,7 +280,7 @@
                     <button @click="mLang = !mLang" 
                             @click.away="mLang = false" 
                             class="text-white/80 hover:text-white text-sm font-bold uppercase focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white rounded-md px-2 py-1"
-                            aria-label="Cambia lingua"
+                            aria-label="Cambia lingua (attuale: {{ $currentLocale }})"
                             aria-expanded="false"
                             :aria-expanded="mLang.toString()"
                             aria-haspopup="true">

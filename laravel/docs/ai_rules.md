@@ -23,6 +23,19 @@
     - PHPStan level 10 (via `phpstan.neon`).
     - Zero errors policy.
 
+### Accessibility (WCAG 2.1 AA)
+- **Accessibility Standards (WCAG 2.1 AA)**:
+    - **H44/G162**: All inputs MUST have an associated `<label>` (visible preferred) or `aria-label`. Labels above/left for inputs, after for checkboxes.
+    - **F78/G195**: NEVER remove focus outlines (`outline: none`) without a visible replacement (`focus-visible`).
+    - **H30**: Link text must describe destination ("Read more" -> `aria-label="Read more about X"`).
+    - **F96**: `aria-label` MUST contain the visible label text (e.g., button "Go" -> `aria-label="Go to destination"`, NOT `aria-label="Submit"`).
+    - **H67**: Decorative images MUST have `alt=""` and NO `title` attribute.
+    - **C12**: Use relative units (`rem`, `em`) for font sizes (Tailwind defaults), never fixed `px`.
+    - **C21**: Body text must have line-height >= 1.5 (`leading-relaxed`).
+    - **ARIA11**: Use semantic HTML5 landmarks (`<main>`, `<nav>`, `<header>`, `<footer>`, `<aside>`) or ARIA roles.
+    - **G18**: Contrast ratio must be >= 4.5:1 for normal text (check gray-500 vs white).
+    - **H98**: Use `autocomplete` attributes on personal data inputs.
+
 ### Workflow
 - **Super Mucca**:
     - Understand business logic first.
