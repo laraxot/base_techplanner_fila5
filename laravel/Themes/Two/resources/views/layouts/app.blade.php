@@ -22,7 +22,7 @@
     <body class="antialiased font-sans bg-base-100 text-base-content selection:bg-primary selection:text-primary-content">
         <x-section slug="header" />
 
-        <main class="relative min-h-screen">
+        <main role="main" id="main-content" class="relative min-h-screen">
             {{ $slot }}
         </main>
 
