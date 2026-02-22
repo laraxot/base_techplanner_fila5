@@ -40,7 +40,7 @@ middleware(['guest']);
                 <h1 class="text-4xl xl:text-5xl font-bold leading-tight mb-6">
                     {{ __('user::auth.login.welcome_back') }}
                 </h1>
-                <p class="text-lg text-white/80 leading-relaxed max-w-sm">
+                <p class="text-lg leading-relaxed max-w-sm" style="color: rgba(255,255,255,0.8);">
                     {{ __('user::auth.login.welcome_message') }}
                 </p>
 
@@ -48,11 +48,11 @@ middleware(['guest']);
                 <div class="mt-16 grid grid-cols-2 gap-6">
                     <div class="rounded-2xl px-5 py-4" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);">
                         <p class="text-2xl font-bold">ISO 9001</p>
-                        <p class="text-sm text-white/60 mt-1">{{ __('Certificazione qualità') }}</p>
+                        <p class="text-sm mt-1" style="color: rgba(255,255,255,0.6);">{{ __('Certificazione qualità') }}</p>
                     </div>
                     <div class="rounded-2xl px-5 py-4" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);">
                         <p class="text-2xl font-bold">GDPR</p>
-                        <p class="text-sm text-white/60 mt-1">{{ __('Conformità normativa') }}</p>
+                        <p class="text-sm mt-1" style="color: rgba(255,255,255,0.6);">{{ __('Conformità normativa') }}</p>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@ middleware(['guest']);
                 {{-- Mobile: logo --}}
                 <div class="mb-8 flex justify-center lg:hidden">
                     <a href="{{ url('/'.app()->getLocale()) }}"
-                       class="focus:outline-none focus:ring-2 focus:ring-[#1E5A96] rounded-lg">
+                       class="focus:outline-none focus:ring-2 rounded-lg" style="outline-color: #1E5A96;">
                         <x-pub_theme::ui.logo class="h-12 w-auto" />
                     </a>
                 </div>
@@ -83,12 +83,19 @@ middleware(['guest']);
                             {{ __('Inserisci le tue credenziali per accedere') }}
                         </p>
 
-                        @livewire('user::filament.widgets.auth.login-widget')
+                        {{--
+                            REGOLA FONDAMENTALE: i form sono SEMPRE gestiti tramite Filament Widget.
+                            Si usa il riferimento alla classe PHP come da docs Filament:
+                            https://filamentphp.com/docs/widgets/adding-a-widget-to-a-blade-view
+                            MAI usare form HTML plain. MAI usare alias stringa con @livewire().
+                        --}}
+                        @livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
 
                         {{-- Link torna alla home --}}
                         <div class="mt-8 text-center">
                             <a href="{{ url('/'.app()->getLocale()) }}"
-                               class="inline-flex items-center gap-1.5 text-xs text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-[#1E5A96] rounded">
+                               class="inline-flex items-center gap-1.5 text-xs text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors focus:outline-none focus:ring-2 rounded"
+                               style="--tw-ring-color: #1E5A96;">
                                 <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                                 </svg>
