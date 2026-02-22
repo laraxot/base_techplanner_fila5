@@ -177,6 +177,24 @@ Each module should:
 
 **Modelli strettamente dipendenti dal main_module** (es. Profile): la migrazione deve stare nel modulo main (es. TechPlanner), NON in moduli generici (User). Profile è dominio del main_module.
 
+### Profile with UUID for Android/Postgres
+
+Per tabelle che devono essere compatibili con applicazioni Android e Postgres, usare:
+- `id` auto-increment (bigint)
+- `uuid` colonna separata per referenziazione esterna
+
+### Screenshots and Docs Location
+
+**REGOLA**: Gli screenshot e la documentazione visuale devono essere salvati nelle cartelle `docs/` dentro i moduli e i temi, MAI in `/tmp` o altre posizioni.
+
+### Alpine.js and Livewire in Themes
+
+**REGOLA**: Alpine.js è fornito automaticamente da Livewire/Filament. NON includere Alpine.js nel bundle del tema.
+
+### Filament Widgets in Blade Views
+
+**REGOLA**: I form devono essere gestiti SEMPRE tramite Filament Widget, NON con form HTML tradizionali.
+
 ### Exception Cases
 
 **The ONLY exception** to the one-migration-per-table rule:

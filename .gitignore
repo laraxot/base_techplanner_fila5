@@ -72,3 +72,4 @@ laravel/config/net/sottana/database/content/information_schema_tables.json
 lighthouse.*
 laravel/config/local/techplanner/database/content/information_schema_tables.json
 /reports/
+/reports/
