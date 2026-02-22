@@ -48,22 +48,21 @@ $this->tableUpdate(function (Blueprint $table) {
 
 ### Migration Types and Their Purpose
 
-#### 1. Table Creation Migrations
+#### 1. Table Creation Migrations (UNICA per tabella)
 - **Pattern**: `{timestamp}_create_{table}_table.php`
 - **Purpose**: Define the base table schema
 - **Rule**: Exactly ONE per table per module
 - **Example**: `2024_01_01_000011_create_roles_table.php`
 
-#### 2. Schema Evolution Migrations
-- **Pattern**: `{timestamp}_{action}_{table}.php`
-- **Purpose**: Modify existing table schema
-- **Examples**:
-  - `2024_06_15_add_email_to_users.php`
-  - `2024_07_20_remove_old_column_from_posts.php`
+#### 2. Modifiche allo schema: stessa migrazione
+- **Regola**: Per modificare campi o aggiungere colonne, **NON** creare nuove migrazioni separate
+- **Procedura**: Modificare la **stessa** migrazione esistente e aggiornare il **timestamp** nel nome del file
+- **Esempio**: Se `2024_01_01_000011_create_profiles_table.php` deve aggiungere `uuid`, si modifica quel file e si rinomina in `2026_02_22_000000_create_profiles_table.php`
+- **Motivazione**: Una sola fonte di verità, DRY, KISS
 
-#### 3. Data Migration Migrations
+#### 3. Data Migration Migrations (solo per trasformazioni dati)
 - **Pattern**: `{timestamp}_migrate_{purpose}.php`
-- **Purpose**: Transform or seed data
+- **Purpose**: Transform or seed data (NON modifiche schema)
 - **Examples**:
   - `2024_08_10_migrate_user_roles.php`
   - `2024_09_15_seed_default_permissions.php`
@@ -97,16 +96,20 @@ Modules/User/database/migrations/
 ├── 2024_01_01_000001_create_users_table.php
 ├── 2024_01_01_000011_create_roles_table.php      # Single authoritative
 ├── 2024_01_01_000021_create_permissions_table.php
-└── 2024_06_15_143000_add_team_id_to_roles.php    # Schema evolution
+└── 2026_02_22_000000_create_profiles_table.php   # Modifiche: stessa migrazione, timestamp aggiornato
 ```
+
+**NON** creare `add_team_id_to_roles.php` separata: modificare `create_roles_table.php` e aggiornare il timestamp.
 
 #### Schema Evolution Approach
 
 When you need to modify a table:
 
 1. **NEVER** create a new `create_table` migration
-2. **ALWAYS** create a schema evolution migration
-3. **USE** `XotBaseMigration::tableUpdate()` for safe modifications
+2. **NEVER** creare migrazioni separate tipo `add_column_to_table`
+3. **ALWAYS** modificare la **stessa** migrazione esistente
+4. **ALWAYS** aggiornare il timestamp nel nome del file
+5. **USE** `XotBaseMigration::tableUpdate()` per aggiunte sicure
 
 ### XotBaseMigration Best Practices
 
