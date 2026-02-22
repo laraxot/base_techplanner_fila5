@@ -6,13 +6,23 @@
 ## Errore 1: ComponentNotFoundException
 Unable to find component: [user::filament.widgets.auth.login-widget] su GET /it/auth/login (Folio, Theme Two).
 
-**Causa:** Livewire risolve il componente per nome (alias) dopo la prima render; l’alias non era registrato nel Finder o ci sono problemi di risoluzione nelle architetture modulari.
+**Causa root (Livewire v4):** `Finder::resolveClassComponentClassName()` quando il nome contiene `::` cerca SOLO in `$this->classNamespaces` e ignora `$this->classComponents`. Quindi `Livewire::component(‘user::...’, $class)` non funziona: il componente viene registrato in `classComponents` ma non viene trovato. Livewire converte `ClassName::class` → alias `user::filament.widgets.auth.login-widget` → poi fallisce a trovarlo.
 
-**Soluzione Mandatoria:** **NON** usare la sintassi con alias tag (`<livewire:... />`) o alias stringa (`@livewire('alias')`). Usa sempre la **referenza diretta alla classe** PHP:
+**Soluzione:** Usare `Livewire::addComponent($class)` invece di `Livewire::component($alias, $class)`. Il metodo `addComponent` usa hash deterministico (`lw<crc32>`) come nome, compatibile con `@livewire(ClassName::class)`.
+
+```php
+// ❌ SBAGLIATO — alias :: non funziona in Livewire v4
+Livewire::component(‘user::filament.widgets.auth.login-widget’, LoginWidget::class);
+
+// ✅ CORRETTO
+Livewire::addComponent(LoginWidget::class);
+```
+
+**Nel Blade:** usare sempre la classe:
 ```blade
 @livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
 ```
-Questo garantisce che Livewire trovi sempre il componente indipendentemente dalla registrazione degli alias.
+Non usare la stringa alias `@livewire(‘user::filament.widgets.auth.login-widget’)`.
 
 ## Errore 2: MethodNotAllowedHttpException
 The POST method is not supported for route it/auth/login. Supported methods: GET, HEAD.
@@ -123,11 +133,13 @@ Nel modulo User esistono diversi componenti per la gestione del login:
 - **Uso:** Widget riutilizzabile per embedding in pagine Folio/Blade (es. `/it/auth/login`)
 - **View:** `user::filament.widgets.auth.login` (definita nel widget; non usare il lookup automatico che cerca `login-widget`)
 
-**Embedding in Blade/Volt:** preferire la classe PHP; l’alias è registrato in `UserServiceProvider::registerLivewireAuthWidgets()` quindi entrambe le forme funzionano:
+**Embedding in Blade/Volt:** usare SEMPRE la classe PHP:
 ```blade
 @livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
 ```
-Oppure tag: `<livewire:user::filament.widgets.auth.login-widget />`. La registrazione evita `ComponentNotFoundException` quando Livewire risolve il nome dopo la prima render (es. richieste successive).
+NON usare `<livewire:user::filament.widgets.auth.login-widget />` né `@livewire(‘user::...’)` — in Livewire v4 la risoluzione via namespace `::` non funziona con `addComponent`/`component` standard.
+
+La registrazione in `UserServiceProvider::registerLivewireAuthWidgets()` usa `Livewire::addComponent($class)` (hash-based) che è compatibile con `::class`.
 
 ### 3. Componente Livewire Standalone
 - **Path:** `Modules/User/app/Http/Livewire/Auth/Login.php`

@@ -49,6 +49,7 @@
 
         {{-- Alpine.js - Loaded with defer for non-blocking --}}
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+
         
         {{-- Livewire and Filament Scripts --}}
         @livewireScripts
