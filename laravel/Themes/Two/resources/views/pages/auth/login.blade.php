@@ -13,7 +13,7 @@ middleware(['guest']);
     @endphp
 @endif
 
-<x-pub_theme::layouts.guest :title="__('user::auth.login.title')">
+<x-layouts.base :title="__('user::auth.login.title')">
 
     {{-- Split layout: brand panel sx + form panel dx --}}
     <div class="flex min-h-screen">
@@ -110,4 +110,4 @@ middleware(['guest']);
         </div>
     </div>
 
-</x-pub_theme::layouts.guest>
+</x-layouts.base>

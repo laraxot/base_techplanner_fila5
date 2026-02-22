@@ -3,25 +3,39 @@
 ## Errore 1: ComponentNotFoundException
 Unable to find component: [user::filament.widgets.auth.login-widget] su GET /it/auth/login (Folio, Theme Two).
 
-**Causa:** Livewire risolve il componente per nome (alias) dopo la prima render; l’alias non era registrato nel Finder.
+**Causa root (Livewire v4):** `Finder::resolveClassComponentClassName()` quando il nome contiene `::` (es. `user::filament.widgets.auth.login-widget`) cerca SOLO in `$classNamespaces` e restituisce `null` senza controllare `$classComponents`. Quindi `Livewire::component(‘user::...’, $class)` non funziona: il componente viene registrato in `classComponents` ma non viene trovato durante la risoluzione.
 
-**Soluzione:** Registrazione degli auth widget nel modulo User: `UserServiceProvider::registerLivewireAuthWidgets()` registra gli alias con `Livewire::component($name, $class)`.
+**Soluzione corretta:** Usare `Livewire::addComponent($class)` in `UserServiceProvider::registerLivewireAuthWidgets()` — registra il componente con hash deterministico (`lw<crc32>`), compatibile con `@livewire(ClassName::class)`.
+
+```php
+// ❌ SBAGLIATO — user:: alias non funziona in Livewire v4
+Livewire::component(‘user::filament.widgets.auth.login-widget’, LoginWidget::class);
+
+// ✅ CORRETTO — hash-based, compatibile con ::class
+Livewire::addComponent(LoginWidget::class);
+```
 
 ## Errore 2: MethodNotAllowedHttpException
 The POST method is not supported for route it/auth/login. Supported methods: GET, HEAD.
 
-**Causa:** Il form di login può inviare un POST nativo (submit prima del binding Livewire o JS disabilitato); Folio registra solo GET per la pagina.
+**Causa:** Era stato aggiunto un form HTML con `<form method="POST" action="{{ route(‘login’) }}">` nel blade. Folio gestisce solo GET per le sue pagine.
 
-**Soluzione corretta (Volt + Folio + Laraxot):** Non si aggiungono rotte in `web.php`. Frontend e auth sono gestiti solo da Volt + Folio + Laraxot; niente rotte custom, niente controller. Il form deve essere solo il Filament LoginWidget (wire:submit.prevent). Se si ottiene 405, verificare che non ci sia un form HTML con action route('login').
+**Soluzione corretta (Volt + Folio + Laraxot):** Non si aggiungono rotte in `web.php`. Frontend e auth sono gestiti solo da Volt + Folio + Laraxot; niente rotte custom, niente controller. Il form deve essere SOLO il Filament LoginWidget (`wire:submit.prevent`). Non aggiungere fallback POST in web.php.
 
 ## Regola architetturale
-- I form di autenticazione si gestiscono **solo** con Filament widget; mai form HTML con method POST e route('login').
-- **Non creare rotte né controller** per frontend/auth: solo Volt + Folio + Laraxot. Vedere `.cursor/rules/no_web_php_front_backoffice.mdc`, `.cursor/rules/filament-login-widget.mdc` e [auth-login-page.md](auth-login-page.md).
+- I form di autenticazione si gestiscono **solo** con Filament widget; MAI form HTML con method POST e route(‘login’).
+- **Non creare rotte né controller** per frontend/auth: solo Volt + Folio + Laraxot.
+- **Non aggiungere rotte POST fallback** in web.php per auth pages Folio.
+
+## Uso corretto del widget (Filament)
+Nel Blade usare sempre la **classe** (non la stringa alias):
+```blade
+@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
+```
+Non usare `@livewire(‘user::filament.widgets.auth.login-widget’)` — la stringa alias con `::` non funziona in Livewire v4.
 
 ## Riferimenti
 - [auth-login-page.md](auth-login-page.md)
 - [Modules/User/docs/troubleshooting-login-component.md](../../../Modules/User/docs/troubleshooting-login-component.md)
-
-
-## Uso corretto del widget (Filament)
-Usare sempre la **classe** nel Blade, mai la stringa alias: `@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)`. Non usare `@livewire('user::filament.widgets.auth.login-widget')`. Riferimento: https://filamentphp.com/docs/3.x/widgets/adding-a-widget-to-a-blade-view
+- `Modules/User/app/Providers/UserServiceProvider.php` — `registerLivewireAuthWidgets()`
+- `vendor/livewire/livewire/src/Finder/Finder.php` — `resolveClassComponentClassName()`

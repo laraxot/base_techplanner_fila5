@@ -32,7 +32,11 @@
     </head>
 
     <body>
-        @yield('body')
+        @isset($slot)
+            {{ $slot }}
+        @else
+            @yield('body')
+        @endisset
 
         @livewire('notifications')
 
