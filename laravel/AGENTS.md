@@ -142,6 +142,38 @@ name('pages.services');
 <!-- Your HTML/Blade content -->
 ```
 
+### 🚫 **FORMS MUST USE FILAMENT WIDGETS** - CRITICAL RULE
+**NEVER create HTML forms manually in Blade views!**
+
+All forms (login, register, contact, etc.) must use Filament widgets via `@livewire`:
+
+```php
+// ❌ NEVER DO THIS - FORBIDDEN!
+// resources/views/pages/auth/login.blade.php
+<form method="POST" action="/login">
+    @csrf
+    <input type="email" name="email">
+    <input type="password" name="password">
+    <button type="submit">Accedi</button>
+</form>
+
+// ✅ CORRECT - Use Filament Widget
+// resources/views/pages/auth/login.blade.php
+@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
+```
+
+**Why:**
+- Filament widgets handle validation, CSRF, security automatically
+- Consistent UI across the application
+- Better developer experience with form building
+
+**How to add a Filament widget to a Blade page:**
+```blade
+@livewire(\Modules\YourModule\Filament\Widgets\YourWidget::class)
+```
+
+**See also:** [Filament Widgets Documentation](https://filamentphp.com/docs/3.x/widgets/adding-a-widget-to-a-blade-view)
+
 ### 1. NEVER Extend Filament Directly
 ```php
 // ❌ WRONG
