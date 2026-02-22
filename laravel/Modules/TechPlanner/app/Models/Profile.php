@@ -22,8 +22,9 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 /**
- * @property string $id
- * @property string $user_id
+ * @property int $id
+ * @property string $uuid
+ * @property string|null $user_id
  * @property string|null $first_name
  * @property string|null $last_name
  * @property string|null $fiscal_code
