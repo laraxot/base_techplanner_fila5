@@ -43,22 +43,14 @@
             {!! $afterMain !!}
         @endif
 
-<<<<<<< HEAD
-        {{-- Alpine.js: importato in app.js, vedi docs/fix/layout.txt --}}
-=======
         {{-- Alpine.js: required by Livewire --}}
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
         
->>>>>>> 500ef461 (fix: add Alpine.js CDN for production)
         {{-- Livewire and Filament Scripts --}}
         @livewireScripts
         @filamentScripts
         
-<<<<<<< HEAD
-        {{-- Application JS (include alpine.js via import in app.js) --}}
-=======
         {{-- Application JS --}}
->>>>>>> 500ef461 (fix: add Alpine.js CDN for production)
         @vite(['resources/js/app.js'], 'themes/Two')
     </body>
 </html>
