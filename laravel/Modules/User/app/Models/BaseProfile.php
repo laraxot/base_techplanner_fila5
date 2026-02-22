@@ -68,11 +68,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 {
     use HasChildren;
     use HasRoles;
-<<<<<<< HEAD
     // use HasUuids;
-=======
-    use HasUuids;
->>>>>>> 01737773 (docs: update deployment troubleshooting section and improve migration guidelines; remove unused profile migrations)
     use InteractsWithMedia;
     use IsProfileTrait;
     use Notifiable;

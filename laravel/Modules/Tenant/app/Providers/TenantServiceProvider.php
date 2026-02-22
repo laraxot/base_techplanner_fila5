@@ -49,6 +49,7 @@ class TenantServiceProvider extends XotBaseServiceProvider
     public function registerMorphMap(): void
     {
         $map = TenantService::config('morph_map');
+        
         if (! \is_array($map)) {
             $map = [];
         }
@@ -62,7 +63,7 @@ class TenantServiceProvider extends XotBaseServiceProvider
                 $typedMap[$alias] = $modelClass;
             }
         }
-
+        
         /** @var array<string, class-string<Model>> $typedMap */
         Relation::morphMap($typedMap);
     }
