@@ -18,6 +18,18 @@ Tutte le classi Filament **devono** estendere le classi `XotBase*`:
 | EditRecord | `XotBaseEditRecord` |
 | ViewRecord | `XotBaseViewRecord` |
 | Widget | `XotBaseWidget` |
+## Inclusione nei Blade View
+
+Per includere un widget Filament (che è un componente Livewire) all'interno di una vista Blade o di una pagina Folio, **non** usare la sintassi del tag `<livewire:module::widget-name />` a meno che non sia esplicitamente registrato. 
+
+La sintassi corretta e sicura per Filament 5.x è l'uso diretto della classe:
+
+```blade
+@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
+```
+
+Questo evita errori di `ComponentNotFoundException` nelle architetture modulari.
+
 
 ## Checklist modulo
 
