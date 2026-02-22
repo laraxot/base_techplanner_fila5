@@ -43,9 +43,12 @@
             {!! $afterMain !!}
         @endif
 
-        {{-- Alpine.js loaded via Livewire (CDN) - required for Livewire/Filament --}}
+        {{-- Alpine.js: importato in app.js, vedi docs/fix/layout.txt --}}
         {{-- Livewire and Filament Scripts --}}
         @livewireScripts
         @filamentScripts
+        
+        {{-- Application JS (include alpine.js via import in app.js) --}}
+        @vite(['resources/js/app.js'], 'themes/Two')
     </body>
 </html>
