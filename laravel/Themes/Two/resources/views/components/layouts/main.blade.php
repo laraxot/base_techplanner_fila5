@@ -49,6 +49,6 @@
         @filamentScripts
         
         {{-- Application JS --}}
-        @vite(['resources/js/app.js', 'resources/js/alpine.js'], 'themes/Two')
+        @vite(['resources/js/app.js'], 'themes/Two')
     </body>
 </html>
