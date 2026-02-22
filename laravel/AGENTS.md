@@ -239,6 +239,30 @@ if (isset($user->full_name) && $user->full_name) { }
 - Filament handles most UI - avoid custom frontend unless necessary
 - Build assets with `npm run build`
 
+### 🚫 **NO CDN FOR THEME ASSETS** - CRITICAL RULE
+**NEVER load JavaScript libraries from CDN in theme layouts!**
+
+Theme assets (CSS/JS) must be built locally:
+```bash
+cd laravel/Themes/ThemeName
+npm install
+npm run build
+npm run copy
+```
+
+**Alpine.js**: Already included in Livewire/Filament bundle. NEVER load from CDN:
+- ❌ **WRONG:** `<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js">`
+- ✅ **CORRECT:** No Alpine script needed. Livewire provides it.
+
+Loading Alpine from CDN causes "Detected multiple instances of Alpine running" errors.
+
+### 📸 Screenshots Location
+**ALWAYS save screenshots in docs subfolders inside modules/themes, NEVER in /tmp**
+
+- ✅ **CORRECT:** `Modules/ModuleName/docs/screenshots/page.png`
+- ✅ **CORRECT:** `Themes/Two/docs/fix/screenshots/error.png`
+- ❌ **WRONG:** `/tmp/screenshot.png`
+
 ## 🔍 PHPStan Compliance
 - Runs at **level max** (most strict)
 - **Zero tolerance**: ALL errors must be resolved
