@@ -43,9 +43,6 @@
             {!! $afterMain !!}
         @endif
 
-        {{-- Alpine.js: required by Livewire --}}
-        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-        
         {{-- Livewire and Filament Scripts --}}
         @livewireScripts
         @filamentScripts
