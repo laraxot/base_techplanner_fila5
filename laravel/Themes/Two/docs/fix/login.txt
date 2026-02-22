@@ -37,6 +37,9 @@ Non usare `@livewire(‘user::filament.widgets.auth.login-widget’)` — la str
 ## VIETATO ->label(), ->placeholder(), ->helperText()
 Le traduzioni sono gestite da LangServiceProvider tramite i file in Modules/User/lang/. Mai usare questi metodi nei widget auth. Per nascondere una label usare ->hiddenLabel(), non ->label(''). Vedi .cursor/rules/no-filament-labels.mdc
 
+## Errore $wire / Multiple Alpine
+Se compaiono "Alpine Expression Error: $wire is not defined" o "Detected multiple instances of Alpine running", vedi [login-alpine.txt](login-alpine.txt).
+
 ## Riferimenti
 - [auth-login-page.md](auth-login-page.md)
 - [Modules/User/docs/troubleshooting-login-component.md](../../../Modules/User/docs/troubleshooting-login-component.md)

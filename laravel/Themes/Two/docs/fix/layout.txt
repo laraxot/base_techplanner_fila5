@@ -14,12 +14,13 @@ CSS e JS sono dentro il tema e vengono serviti da `@vite(['resources/css/app.css
 
 ## Alpine.js
 
-Alpine.js è **già incluso** nel bundle di Livewire/Filament. Non serve caricarlo da CDN.
+Alpine.js è **già incluso** nel bundle di Livewire/Filament. Non serve caricarlo da CDN né nel tema.
 
 - **Sbagliato:** `<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js">`
-- **Corretto:** Nessuno script Alpine nei layout. Livewire lo fornisce.
+- **Sbagliato:** `import './alpine.js'` in app.js (con Alpine.start())
+- **Corretto:** Nessuno script Alpine nei layout né in app.js. Livewire lo fornisce.
 
-Caricare Alpine da CDN causa "Detected multiple instances of Alpine running" e conflitti.
+Caricare Alpine (da CDN o da app.js) causa "Detected multiple instances of Alpine running" e "$wire is not defined" nei form Filament. Vedi [login-alpine.txt](login-alpine.txt).
 
 ## Vite: solo app.js come entry point
 

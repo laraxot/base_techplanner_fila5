@@ -39,6 +39,8 @@
 
         @livewire('notifications')
 
+        {{-- Livewire prima di Filament: necessario per $wire nei form (LoginWidget, ecc.) --}}
+        @livewireScripts
         @filamentScripts
         @vite(['resources/js/app.js'], 'themes/Two')
     </body>
