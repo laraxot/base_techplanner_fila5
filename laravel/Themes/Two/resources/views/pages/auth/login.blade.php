@@ -43,51 +43,7 @@
             <div class="relative mt-12 w-full max-w-lg lg:mt-0">
                 <div class="absolute -inset-1 rounded-3xl bg-gradient-to-br from-white/40 via-white/10 to-white/40 blur-2xl"></div>
                 <div class="relative rounded-3xl bg-white px-6 py-8 text-gray-900 shadow-2xl shadow-black/15 ring-1 ring-white/50 sm:px-10">
-                    <form method="POST" action="{{ route('login') }}" class="space-y-5">
-                        @csrf
-                        
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700">{{ __('user::auth.login.email') }}</label>
-                            <input 
-                                type="email" 
-                                name="email" 
-                                id="email" 
-                                value="{{ old('email') }}"
-                                autocomplete="email" 
-                                required
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1E5A96] focus:ring-[#1E5A96] sm:text-sm"
-                            >
-                            @error('email')
-                                <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
-                            @enderror
-                        </div>
-
-                        <div>
-                            <label for="password" class="block text-sm font-medium text-gray-700">{{ __('user::auth.login.password') }}</label>
-                            <input 
-                                type="password" 
-                                name="password" 
-                                id="password" 
-                                autocomplete="current-password" 
-                                required
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1E5A96] focus:ring-[#1E5A96] sm:text-sm"
-                            >
-                            @error('password')
-                                <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
-                            @enderror
-                        </div>
-
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center">
-                                <input type="checkbox" name="remember" id="remember" class="h-4 w-4 rounded border-gray-300 text-[#1E5A96] focus:ring-[#1E5A96]">
-                                <label for="remember" class="ml-2 block text-sm text-gray-700">{{ __('user::auth.login.remember_me') }}</label>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-[#1E5A96] to-[#164575] text-white font-semibold hover:from-[#164575] hover:to-[#0d2d4d] focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:ring-offset-2">
-                            {{ __('user::auth.login.submit') }}
-                        </button>
-                    </form>
+                    @livewire('user::filament.widgets.auth.login-widget')
                 </div>
             </div>
         </div>
