@@ -21,6 +21,9 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  */
 class LoginWidget extends XotBaseWidget
 {
+    /** Vista del widget (evita lookup da GetViewByClassAction che cerca login-widget). */
+    protected string $view = 'user::filament.widgets.auth.login';
+
     /**
      * @return array<string, Field>
      */
@@ -29,13 +32,18 @@ class LoginWidget extends XotBaseWidget
     {
         return [
             'email' => TextInput::make('email')
+                ->label(__('user::auth.login.email'))
+                ->placeholder(__('user::auth.login.email_placeholder'))
                 ->email()
                 ->required()
                 ->autofocus(),
             'password' => TextInput::make('password')
+                ->label(__('user::auth.login.password'))
+                ->placeholder(__('user::auth.login.password_placeholder'))
                 ->password()
                 ->required(),
-            'remember' => Checkbox::make('remember'),
+            'remember' => Checkbox::make('remember')
+                ->label(__('user::auth.login.remember_me')),
         ];
     }
 
@@ -70,5 +78,13 @@ class LoginWidget extends XotBaseWidget
         // La validazione Filament gestisce automaticamente gli errori
         // throw $e;
         // }
+    }
+
+    /**
+     * Invocato dal form della view (wire:submit.prevent="save"); delega a login().
+     */
+    public function save(): void
+    {
+        $this->login();
     }
 }

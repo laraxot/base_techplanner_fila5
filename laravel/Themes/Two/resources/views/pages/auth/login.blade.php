@@ -1,30 +1,16 @@
 <?php
 
-use function Livewire\Volt\{state, mount};
+use function Livewire\Volt\layout;
+use Modules\User\Filament\Widgets\Auth\LoginWidget;
 
-state([
-    'email' => '',
-    'password' => '',
-    'remember' => false,
-]);
-
-$login = function() {
-    if (auth()->attempt([
-        'email' => $this->email,
-        'password' => $this->password,
-    ], $this->remember)) {
-        return redirect()->intended('/dashboard');
-    }
-
-    $this->addError('email', 'Credenziali non valide');
-};
+layout('pub_theme::layouts.auth');
 
 ?>
 
-<x-filament::page>
-    <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-        <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-            <livewire:user::filament.widgets.auth.login-widget />
-        </div>
+@section('title', __('user::auth.login.title'))
+
+<div class="flex flex-col sm:justify-center items-center py-8 sm:py-12">
+    <div class="w-full sm:max-w-md px-6 py-8 sm:px-8 sm:py-10 bg-white dark:bg-gray-800/80 shadow-xl rounded-2xl border border-gray-200/80 dark:border-gray-700/80 overflow-hidden">
+        @livewire(LoginWidget::class)
     </div>
-</x-filament::page>
+</div>

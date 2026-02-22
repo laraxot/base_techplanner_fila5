@@ -99,8 +99,14 @@ Nel modulo User esistono diversi componenti per la gestione del login:
 
 ### 2. Widget Filament
 - **Path:** `Modules/User/app/Filament/Widgets/Auth/LoginWidget.php`
-- **Uso:** Widget riutilizzabile per embedding
-- **View:** `pub_theme::filament.widgets.auth.login`
+- **Uso:** Widget riutilizzabile per embedding in pagine Folio/Blade (es. `/it/auth/login`)
+- **View:** `user::filament.widgets.auth.login` (definita nel widget; non usare il lookup automatico che cerca `login-widget`)
+
+**Embedding in Blade/Volt:** usare sempre la classe PHP, mai il tag con alias:
+```blade
+@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
+```
+Non usare `<livewire:user::filament.widgets.auth.login-widget />` (alias non registrato → ComponentNotFoundException).
 
 ### 3. Componente Livewire Standalone
 - **Path:** `Modules/User/app/Http/Livewire/Auth/Login.php`
@@ -201,6 +207,7 @@ php artisan config:cache  # Solo in produzione
 - [Modulo User README](../readme.md)
 - [Modulo Xot Service Provider Architecture](../xot/docs/service-provider-architecture.md)
 - [Filament Filters and Widgets](./filament-filters-and-widgets.md)
+- [Theme Two – Pagina login](../../Themes/Two/docs/auth-login-page.md)
 
 ## Risolto Da
 Autore: Sistema di documentazione automatica
