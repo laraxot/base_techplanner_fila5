@@ -13,9 +13,16 @@ middleware(['guest']);
     @endphp
 @endif
 
-<x-layouts.base :title="__('user::auth.login.title')">
+{{--
+    Layout: usa base direttamente (non guest) perché abbiamo un full-screen split layout.
+    Il layout guest avvolge il contenuto in max-w-md, incompatibile con la split layout a due pannelli.
+    REGOLA FONDAMENTALE: i form sono SEMPRE gestiti tramite Filament Widget.
+    Chiamata widget: @livewire(ClassName::class) — come da docs Filament.
+    https://filamentphp.com/docs/widgets/adding-a-widget-to-a-blade-view
+--}}
+<x-layouts.base>
 
-    {{-- Split layout: brand panel sx + form panel dx --}}
+    {{-- Full-screen split layout: brand panel sx + form panel dx --}}
     <div class="flex min-h-screen">
 
         {{-- Left: brand panel --}}
@@ -44,13 +51,15 @@ middleware(['guest']);
                     {{ __('user::auth.login.welcome_message') }}
                 </p>
 
-                {{-- Decorative stats --}}
+                {{-- Decorative trust badges --}}
                 <div class="mt-16 grid grid-cols-2 gap-6">
-                    <div class="rounded-2xl px-5 py-4" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);">
+                    <div class="rounded-2xl px-5 py-4"
+                         style="background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);">
                         <p class="text-2xl font-bold">ISO 9001</p>
                         <p class="text-sm mt-1" style="color: rgba(255,255,255,0.6);">{{ __('Certificazione qualità') }}</p>
                     </div>
-                    <div class="rounded-2xl px-5 py-4" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);">
+                    <div class="rounded-2xl px-5 py-4"
+                         style="background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);">
                         <p class="text-2xl font-bold">GDPR</p>
                         <p class="text-sm mt-1" style="color: rgba(255,255,255,0.6);">{{ __('Conformità normativa') }}</p>
                     </div>
@@ -59,10 +68,11 @@ middleware(['guest']);
         </div>
 
         {{-- Right: form panel --}}
-        <div class="flex w-full lg:w-1/2 xl:w-2/5 items-center justify-center bg-gray-50 dark:bg-gray-900 px-6 sm:px-10 py-12">
+        <div class="flex w-full lg:w-1/2 xl:w-2/5 items-center justify-center px-6 sm:px-10 py-12"
+             style="background-color: #f9fafb;">
             <div class="w-full max-w-md">
 
-                {{-- Mobile: logo --}}
+                {{-- Mobile: logo (visible only on small screens) --}}
                 <div class="mb-8 flex justify-center lg:hidden">
                     <a href="{{ url('/'.app()->getLocale()) }}"
                        class="focus:outline-none focus:ring-2 rounded-lg" style="outline-color: #1E5A96;">
@@ -74,28 +84,25 @@ middleware(['guest']);
                 <div class="relative">
                     <div class="absolute -inset-1 rounded-3xl blur-2xl opacity-30"
                          style="background: linear-gradient(135deg, #1E5A96, #2D8659);"></div>
-                    <div class="relative rounded-3xl bg-white dark:bg-gray-800 px-8 py-10 shadow-2xl ring-1 ring-gray-200/80 dark:ring-gray-700/80">
+                    <div class="relative rounded-3xl bg-white px-8 py-10 shadow-2xl"
+                         style="ring: 1px solid rgba(229,231,235,0.8);">
 
-                        <h2 id="login-heading" class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                        <h2 id="login-heading" class="text-2xl font-bold mb-2" style="color: #111827;">
                             {{ __('user::auth.login.title') }}
                         </h2>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">
+                        <p class="text-sm mb-8" style="color: #6b7280;">
                             {{ __('Inserisci le tue credenziali per accedere') }}
                         </p>
 
-                        {{--
-                            REGOLA FONDAMENTALE: i form sono SEMPRE gestiti tramite Filament Widget.
-                            Si usa il riferimento alla classe PHP come da docs Filament:
-                            https://filamentphp.com/docs/widgets/adding-a-widget-to-a-blade-view
-                            MAI usare form HTML plain. MAI usare alias stringa con @livewire().
-                        --}}
                         @livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
 
-                        {{-- Link torna alla home --}}
+                        {{-- Back to home link --}}
                         <div class="mt-8 text-center">
                             <a href="{{ url('/'.app()->getLocale()) }}"
-                               class="inline-flex items-center gap-1.5 text-xs text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors focus:outline-none focus:ring-2 rounded"
-                               style="--tw-ring-color: #1E5A96;">
+                               class="inline-flex items-center gap-1.5 text-xs transition-colors focus:outline-none focus:ring-2 rounded"
+                               style="color: #9ca3af;"
+                               onmouseover="this.style.color='#4b5563'"
+                               onmouseout="this.style.color='#9ca3af'">
                                 <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                                 </svg>

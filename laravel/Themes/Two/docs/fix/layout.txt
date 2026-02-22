@@ -1,0 +1,33 @@
+# Fix: Alpine.js e asset nel tema Two
+
+## Regola architetturale: NO CDN per JS/CSS del tema
+
+**NON caricare Alpine.js (né altri asset) da CDN nei layout del tema.**
+
+Il tema Two ha build proprio:
+- `cd laravel/Themes/Two`
+- `npm install`
+- `npm run build`
+- `npm run copy`
+
+CSS e JS sono dentro il tema e vengono serviti da `@vite(['resources/css/app.css'], 'themes/Two')` e `@vite(['resources/js/app.js'], 'themes/Two')`.
+
+## Alpine.js
+
+Alpine.js è **già incluso** nel bundle di Livewire/Filament. Non serve caricarlo da CDN.
+
+- **Sbagliato:** `<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js">`
+- **Corretto:** Nessuno script Alpine nei layout. Livewire lo fornisce.
+
+Caricare Alpine da CDN causa "Detected multiple instances of Alpine running" e conflitti.
+
+## Layout interessati
+
+- `resources/views/components/layouts/base.blade.php`
+- `resources/views/components/layouts/main.blade.php`
+- `resources/views/layouts/app.blade.php`
+
+## Riferimenti
+
+- Build tema: `cd laravel/Themes/Two && npm install && npm run build && npm run copy`
+- [laravel-boost.mdc](../../../.cursor/rules/laravel-boost.mdc): Alpine incluso in Livewire, non caricare manualmente

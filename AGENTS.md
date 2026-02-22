@@ -84,6 +84,10 @@ text-gray-100 (#F3F4F6) su #0F3460
 
 **Link a Google Maps ammesso solo per navigazione (direzioni), non per visualizzazione.**
 
+### Theme Assets - NO CDN per Alpine/JS
+
+**I temi (es. Two) hanno build proprio: `cd laravel/Themes/Two && npm install && npm run build && npm run copy`.** CSS e JS sono dentro il tema, serviti da `@vite(..., 'themes/Two')`. **NON caricare Alpine.js da CDN** nei layout: Livewire/Filament lo fornisce già. Caricare da CDN causa "Detected multiple instances of Alpine running". Regola: [.cursor/rules/theme-two-assets.mdc](.cursor/rules/theme-two-assets.mdc), [laravel/Themes/Two/docs/fix/layout.txt](laravel/Themes/Two/docs/fix/layout.txt).
+
 ### Git Workflow - Commit Frequentemente
 
 **SEMPRE fare git commit e push quando il codice è stabile.**
