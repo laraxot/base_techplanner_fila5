@@ -83,11 +83,7 @@ middleware(['guest']);
                             {{ __('Inserisci le tue credenziali per accedere') }}
                         </p>
 
-                        @livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
-                        {{--
-                            Regola: i form sono gestiti tramite Filament widget utilizzando la classe del widget.
-                            Riferimento documentazione: https://filamentphp.com/docs/3.x/widgets/adding-a-widget-to-a-blade-view
-                        --}}
+                        @livewire('user::filament.widgets.auth.login-widget')
 
                         {{-- Link torna alla home --}}
                         <div class="mt-8 text-center">
