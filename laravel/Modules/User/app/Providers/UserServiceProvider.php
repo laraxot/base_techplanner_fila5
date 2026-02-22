@@ -15,6 +15,13 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\Rules\Password;
+use Livewire\Livewire;
+use Modules\User\Filament\Widgets\Auth\ForgotPasswordWidget;
+use Modules\User\Filament\Widgets\Auth\LoginWidget;
+use Modules\User\Filament\Widgets\Auth\PasswordResetConfirmWidget;
+use Modules\User\Filament\Widgets\Auth\PasswordResetWidget;
+use Modules\User\Filament\Widgets\Auth\RegisterWidget;
+use Modules\User\Filament\Widgets\Auth\ResetPasswordWidget;
 use Modules\Notify\Emails\SpatieEmail;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Contracts\UserContract;
@@ -33,6 +40,7 @@ class UserServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
+        $this->registerLivewireAuthWidgets();
         // $this->registerEventListener();
         $this->registerPasswordRules();
         $this->registerPulse();

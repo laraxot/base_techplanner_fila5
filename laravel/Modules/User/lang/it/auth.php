@@ -81,6 +81,15 @@ return [
     'login' => [
         'title' => 'Accedi al tuo account',
         'subtitle' => 'Inserisci le tue credenziali per accedere',
+        'heading' => 'Pannello clienti :brand',
+        'support_copy' => 'Accedi all’area riservata per scaricare documenti, richiedere verifiche e seguire lo stato delle attività pianificate per il tuo studio.',
+        'benefits' => [
+            'quick_support' => 'Assistenza rapida da parte del nostro team tecnico.',
+            'secure_area' => 'Area riservata protetta con verifica delle credenziali.',
+            'documents_ready' => 'Documentazione sempre disponibile e aggiornata.',
+        ],
+        'back_to_site' => 'Torna al sito',
+        'need_help' => 'Hai bisogno di aiuto?',
         'welcome_back' => 'Bentornato',
         'welcome_message' => 'Inserisci le tue credenziali per accedere.',
         'with_google' => 'Continua con Google',
