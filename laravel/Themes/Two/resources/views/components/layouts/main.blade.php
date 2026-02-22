@@ -17,10 +17,6 @@
         <meta name="description" content="{{ $metatag->getDescription() }}">
         @endif
 
-        {{-- Resource Hints for Performance --}}
-        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-
         {{-- Critical CSS inline --}}
         <style>[x-cloak] { display: none !important; }</style>
 
@@ -47,15 +43,12 @@
             {!! $afterMain !!}
         @endif
 
-        {{-- Alpine.js - Loaded with defer for non-blocking --}}
-        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
-
-        
+        {{-- Alpine.js: built locally, see docs/fix/layout.txt --}}
         {{-- Livewire and Filament Scripts --}}
         @livewireScripts
         @filamentScripts
         
         {{-- Application JS --}}
-        @vite(['resources/js/app.js'], 'themes/Two')
+        @vite(['resources/js/app.js', 'resources/js/alpine.js'], 'themes/Two')
     </body>
 </html>

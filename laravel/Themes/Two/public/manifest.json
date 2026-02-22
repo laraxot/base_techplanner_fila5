@@ -1,7 +1,13 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-BPyrmXZT.css",
+    "file": "assets/app-B-jpPk_i.css",
     "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/alpine.js": {
+    "file": "assets/alpine-BI5MqpgW.js",
+    "name": "alpine",
+    "src": "resources/js/alpine.js",
     "isEntry": true
   },
   "resources/js/app.js": {

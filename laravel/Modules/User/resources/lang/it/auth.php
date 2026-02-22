@@ -7,6 +7,8 @@ return [
         'title' => 'Accedi al tuo account',
         'welcome_back' => 'Bentornato',
         'welcome_message' => 'Inserisci le tue credenziali per accedere.',
+        'google' => 'Google',
+        'github' => 'GitHub',
         'with_google' => 'Continua con Google',
         'with_github' => 'Continua con GitHub',
         'or_continue_with' => 'oppure continua con email e password',
