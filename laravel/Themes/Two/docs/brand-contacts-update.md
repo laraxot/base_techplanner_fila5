@@ -1,5 +1,8 @@
 # Dati Contatto e Brand - Marco Sottana Consulenza Sicurezza
 
+## Ultimo Aggiornamento
+2026-02-19
+
 ## Dati Aziendali
 
 ### Brand

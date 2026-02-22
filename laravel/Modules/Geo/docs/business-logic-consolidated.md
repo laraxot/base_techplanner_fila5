@@ -254,6 +254,7 @@ User (base)
 
 ---
 
+**Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 2.0
 **Autore**: AI Assistant
 **Stato**: Consolidata e Rifattorizzata

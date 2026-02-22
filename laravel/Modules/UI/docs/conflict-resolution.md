@@ -38,3 +38,4 @@
 Tutte le verifiche hanno avuto esito positivo.
 
 ---
+Ultimo aggiornamento: [DATE]

@@ -201,5 +201,6 @@ public function getFormFill(): array
 - [Modules/Xot/docs/fileupload-components.md](../laravel/modules/xot/docs/fileupload-components.md)
 - [Modules/User/docs/registration-widget.md](../laravel/modules/user/docs/registration-widget.md)
 
+*Ultimo aggiornamento: [DATE]*
 *Autore: AI Assistant*
 *Versione: 1.0*

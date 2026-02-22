@@ -358,6 +358,7 @@ echo "✅ Consolidamento completato!"
 
 ---
 
+**Ultimo aggiornamento:** [DATE]
 **Stato:** In implementazione
 **Responsabile:** Team Sviluppo UI
 **Priorità:** ALTA (duplicazioni massive identificate)

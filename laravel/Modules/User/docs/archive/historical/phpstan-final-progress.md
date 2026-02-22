@@ -52,3 +52,4 @@ Da identificare e correggere sistematicamente.
 
 ---
 
+*Ultimo aggiornamento: [DATE]*

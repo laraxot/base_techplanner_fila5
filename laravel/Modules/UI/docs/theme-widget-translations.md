@@ -229,3 +229,4 @@ Includi sempre esempi pratici:
 
 ---
 
+*Ultimo aggiornamento: Dicembre 2024*

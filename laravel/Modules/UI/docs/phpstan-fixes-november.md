@@ -194,3 +194,4 @@ Quando serve fare type narrowing di una variabile usata più volte, estrarre il 
 
 ---
 
+*Ultimo aggiornamento: 11 Novembre 2025*

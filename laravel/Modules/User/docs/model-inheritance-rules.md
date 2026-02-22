@@ -255,6 +255,7 @@ Il comando dovrebbe restituire solo:
 
 ---
 
+*Ultimo aggiornamento: 15 ottobre 2025*
 *Autore: Refactoring automatico con Claude Code*
 
 ## Aggiornamento 2025-11

@@ -122,3 +122,4 @@ Questi colori sono coerenti con:
 
 ---
 
+*Ultimo aggiornamento: 2026-02-11*

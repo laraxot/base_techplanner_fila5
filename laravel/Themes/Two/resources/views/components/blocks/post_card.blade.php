@@ -8,7 +8,7 @@
         <img
             class="absolute top-0 left-0 w-full h-full p-0 m-0 opacity-20 object-center object-cover"
             src="{{ $post->getMainImage() }}"
-            alt="{{ $title ?? $name ?? "Immagine" }}"
+            alt=""
         >
         <div class="relative z-1 p-4">
             {{ $text ?: $post->title }}

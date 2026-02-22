@@ -97,3 +97,4 @@ Definire il comportamento tramite trait che implementa il metodo.
 - [Contratti Xot](../../xot/project_docs/contracts.md)
 - [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
 
+*Ultimo aggiornamento: [DATE]*

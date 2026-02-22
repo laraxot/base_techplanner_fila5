@@ -347,3 +347,4 @@ class CleanupTemporaryFilesJob extends Job
 - [docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
 - [Modules/User/docs/registration-widget.md](../../user/docs/registration-widget.md)
 
+*Ultimo aggiornamento: [DATE]*

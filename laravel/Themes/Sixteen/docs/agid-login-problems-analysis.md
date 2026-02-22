@@ -340,3 +340,4 @@
 - [Vite Theme Integration](vite-theme-integration.md)
 - [Route Patterns](route-patterns.md)
 
+*Ultimo aggiornamento: 2025-01-06* 

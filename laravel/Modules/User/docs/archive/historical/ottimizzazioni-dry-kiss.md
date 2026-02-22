@@ -537,3 +537,4 @@ class UserResource extends XotBaseResource
 
 ---
 
+*Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS User Module*

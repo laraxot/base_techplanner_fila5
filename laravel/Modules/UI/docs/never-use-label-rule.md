@@ -351,3 +351,4 @@ rules:
 
 - SEMPRE testare le traduzioni prima del commit
 
+*Ultimo aggiornamento: [DATE]*

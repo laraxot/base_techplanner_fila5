@@ -67,3 +67,4 @@ return [
 - [Factory Pattern Guidelines](../../../docs/factory-pattern.md)
 - [PHPStan Compliance Guide](../phpstan-fixes.md)
 
+*Ultimo aggiornamento: [DATE]*

@@ -1,5 +1,6 @@
 # Analisi Footer - Confronto Target vs Locale
 
+## Data: 2026-02-08
 
 ## Footer Target (https://lightseagreen-dogfish-560272.hostingersite.com/termini)
 

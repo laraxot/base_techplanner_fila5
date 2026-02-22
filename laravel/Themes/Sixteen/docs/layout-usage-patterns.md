@@ -194,3 +194,4 @@ php artisan cache:clear
 - [Layout App](resources/views/layouts/app.blade.php)
 - [Layout Base](resources/views/layouts/base.blade.php)
 
+*Ultimo aggiornamento: 2025-01-06* 

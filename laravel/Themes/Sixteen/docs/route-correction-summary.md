@@ -166,3 +166,4 @@ foreach ($pages as $page) {
 - [Login Page](resources/views/pages/auth/login.blade.php)
 - [Route File](resources/views/pages/pages/[slug].blade.php)
 
+*Ultimo aggiornamento: 2025-01-06* 

@@ -516,6 +516,7 @@ try {
 
 ---
 
+**Ultimo aggiornamento:** 2025-01-22
 **Versione:** 1.0
 **Stato:** ✅ Production Ready
 **PHPStan Level:** 10

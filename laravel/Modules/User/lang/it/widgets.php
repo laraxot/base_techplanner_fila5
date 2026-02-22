@@ -215,8 +215,4 @@ return [
             'label' => 'Elimina Widgets',
         ],
     ],
-    'users_chart' => [
-        'heading' => 'Log Accessi',
-        'label' => 'Numero di accessi eseguiti',
-    ],
 ];

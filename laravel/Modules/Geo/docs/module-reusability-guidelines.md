@@ -239,3 +239,4 @@ class <nome progetto>SpecificService
 - [docs/laraxot_conventions.md](laraxot_conventions.md)
 - [docs/module_architecture.md](module_architecture.md)
 
+*Ultimo aggiornamento: gennaio 2025*

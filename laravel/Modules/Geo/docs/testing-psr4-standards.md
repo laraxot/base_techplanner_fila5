@@ -263,4 +263,5 @@ Prima di committare file di test:
 
 ---
 
+*Ultimo aggiornamento: [DATE]*
 *Standard: PSR-4, PHPStan livello 9+, Laraxot conventions*

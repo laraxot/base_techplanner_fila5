@@ -1,21 +1,4 @@
-# Errori Comuni Filament - Metodi Duplicati
-
-## Errori di Metodi Duplicati
-
-### 1. Cannot Redeclare getResource() in XotBaseListRecords
-
-**Errore:**
-```
-Cannot redeclare Modules\Xot\Filament\Resources\Pages\XotBaseListRecords::getResource()
-```
-
-**Causa:**
-Il metodo `getResource()` è stato dichiarato due volte nella classe `XotBaseListRecords`, probabilmente a causa di un merge conflict mal risolto o di un copia-incolla accidentale.
-
-**Soluzione:**
-Rimuovere la dichiarazione duplicata del metodo, mantenendo solo una versione.
-
-Vedi [XotBaseListRecords getResource Duplicate Fix](../../Xot/docs/filament/xotbaselistrecords-getresource-duplicate-fix.md) per dettagli completi.
+# Errori Comuni Filament nel Modulo Activity
 
 ## Errori di Metodi Statici
 
@@ -179,4 +162,4 @@ class ListSnapshots extends ListRecords
 - [ ] Testare il funzionamento delle liste dopo le modifiche
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
-- [ ] Eseguire PHPStan per verificare altri possibili errori 
+- [ ] Eseguire PHPStan per verificare altri possibili errori

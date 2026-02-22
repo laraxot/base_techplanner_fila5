@@ -60,12 +60,13 @@ use function Safe\json_encode;
  */
 class Event extends BaseModel
 {
-    use HasUuids;
+    use \Modules\Xot\Models\Traits\HasUuid;
 
     protected $table = 'gdpr_events';
 
     public $fillable = [
         'id',
+        'uuid',
         'action',
         'treatment_id',
         'consent_id',
@@ -86,5 +87,16 @@ class Event extends BaseModel
     public function setIpAttribute(?string $value): void
     {
         $this->attributes['ip'] = Crypt::encrypt($value);
+    }
+
+    protected function casts(): array
+    {
+        return [
+            'id' => 'integer',
+            'uuid' => 'string',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+        ];
     }
 }

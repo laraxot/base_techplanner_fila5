@@ -35,21 +35,16 @@ declare(strict_types=1);
                     </div>
                     
                     {{-- Search Input --}}
-                    <label for="blog-search-input" class="sr-only">Cerca articoli</label>
                     <input type="text" 
-                           id="blog-search-input"
                            name="q" 
                            placeholder="{{ $placeholder }}" 
-                           autocomplete="off"
-                           aria-label="Cerca articoli per argomento, normativa o parola chiave"
                            class="flex-1 py-5 px-4 text-lg text-gray-700 bg-transparent border-none focus:outline-none focus:ring-0 placeholder-gray-400"
                            x-model="searchQuery"
                            @keydown.enter.prevent="search">
                     
                     {{-- Search Button --}}
                     <button type="submit" 
-                            aria-label="Esegui ricerca articoli"
-                            class="px-8 py-5 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                            class="px-8 py-5 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105">
                         Cerca
                     </button>
                 </div>
@@ -58,17 +53,13 @@ declare(strict_types=1);
             {{-- Advanced Filters Toggle --}}
             @if($show_advanced)
                 <button @click="showAdvanced = !showAdvanced" 
-                        aria-label="Mostra/Nascondi opzioni avanzate di ricerca"
-                        aria-expanded="false"
-                        :aria-expanded="showAdvanced.toString()"
-                        class="mt-4 text-blue-600 hover:text-blue-800 font-medium flex items-center justify-center mx-auto transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md px-2 py-1">
+                        class="mt-4 text-blue-600 hover:text-blue-800 font-medium flex items-center justify-center mx-auto transition-colors duration-200">
                     <span>Opzioni avanzate</span>
                     <svg class="w-5 h-5 ml-2 transform transition-transform duration-200" 
                          :class="{ 'rotate-180': showAdvanced }" 
                          fill="none" 
                          stroke="currentColor" 
-                         viewBox="0 0 24 24"
-                         aria-hidden="true">
+                         viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </button>
@@ -80,11 +71,8 @@ declare(strict_types=1);
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {{-- Date Range --}}
                         <div>
-                            <label for="blog-search-date" class="block text-sm font-semibold text-gray-700 mb-2">Data</label>
-                            <select id="blog-search-date" 
-                                    name="date"
-                                    autocomplete="off"
-                                    class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent">
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Data</label>
+                            <select class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                                 <option value="">Tutte le date</option>
                                 <option value="7days">Ultimi 7 giorni</option>
                                 <option value="30days">Ultimi 30 giorni</option>
@@ -95,11 +83,8 @@ declare(strict_types=1);
                         
                         {{-- Category --}}
                         <div>
-                            <label for="blog-search-category" class="block text-sm font-semibold text-gray-700 mb-2">Categoria</label>
-                            <select id="blog-search-category" 
-                                    name="category"
-                                    autocomplete="off"
-                                    class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent">
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Categoria</label>
+                            <select class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                                 <option value="">Tutte le categorie</option>
                                 <option value="radioprotezione">Radioprotezione</option>
                                 <option value="normativa">Normativa</option>
@@ -112,11 +97,8 @@ declare(strict_types=1);
                         
                         {{-- Sort By --}}
                         <div>
-                            <label for="blog-search-sort" class="block text-sm font-semibold text-gray-700 mb-2">Ordina per</label>
-                            <select id="blog-search-sort" 
-                                    name="sort"
-                                    autocomplete="off"
-                                    class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent">
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Ordina per</label>
+                            <select class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                                 <option value="relevance">Rilevanza</option>
                                 <option value="date-desc">Più recenti</option>
                                 <option value="date-asc">Più vecchi</option>

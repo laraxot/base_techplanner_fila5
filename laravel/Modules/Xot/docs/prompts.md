@@ -16,11 +16,13 @@ I prompt definiscono regole operative riutilizzabili tra progetti. Devono essere
 4. Verificare che i prompt restino project-agnostic.
 
 ## Collegamenti
+<<<<<<< .merge_file_ooazFP
 - [regole prompt consolidate](./consolidated/prompt-rules.md)
 - [organizzazione bashscripts](./bashscripts-organization-1.md)
 - [regole documentazione](./consolidated/documentation-rules.md)
 - [prompts consolidati](./consolidated/prompts.md)
 - [indice documentazione](./00-index.md)
+=======
 - [Documentazione Generale](./documentation.md)
 - [Regole del Progetto](./rules.md)
 - [Miglioramenti al Prompt docs.txt](./prompt_docs_improvements.md)
@@ -144,3 +146,4 @@ Il prompt `docs.txt` serve come:
    ```markdown
    [Documento](./path/relativo) #tag-correlati
    ```
+>>>>>>> .merge_file_rJcEWm

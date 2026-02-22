@@ -36,15 +36,18 @@ class AuthenticationLogResource extends XotBaseResource
         return $table
             ->columns([
                 TextColumn::make('id')
+                    ->label('ID')
                     ->searchable()
                     ->sortable(),
 
                 TextColumn::make('authenticatable_type')
+                    ->label('Authenticatable Type')
                     ->formatStateUsing(fn (?string $state): string => null !== $state ? Str::afterLast($state, '\\') : '')
                     ->searchable()
                     ->sortable(),
 
                 TextColumn::make('authenticatable.name')
+                    ->label('User')
                     ->searchable()
                     ->sortable()
                     ->url(function (AuthenticationLog $record): ?string {
@@ -57,27 +60,36 @@ class AuthenticationLogResource extends XotBaseResource
                     }, shouldOpenInNewTab: true),
 
                 TextColumn::make('ip_address')
+                    ->label('IP Address')
                     ->searchable()
                     ->sortable()
-                    ->copyable(),
+                    ->copyable()
+                    ->copyMessage('IP address copied')
+                    ->copyMessageDuration(2000),
 
                 TextColumn::make('user_agent')
+                    ->label('User Agent')
                     ->limit(50)
+                    ->tooltip(fn (AuthenticationLog $record): ?string => $record->user_agent)
                     ->searchable(isIndividual: true),
 
                 IconColumn::make('login_successful')
+                    ->label('Success')
                     ->boolean()
                     ->sortable(),
 
                 TextColumn::make('login_at')
+                    ->label('Login Time')
                     ->dateTime()
                     ->sortable(),
 
                 TextColumn::make('logout_at')
+                    ->label('Logout Time')
                     ->dateTime()
                     ->sortable(),
 
                 IconColumn::make('cleared_by_user')
+                    ->label('Cleared by User')
                     ->boolean()
                     ->sortable(),
             ])
@@ -89,8 +101,10 @@ class AuthenticationLogResource extends XotBaseResource
                 // Filter by date range
                 Filter::make('login_date')
                     ->schema([
-                        DatePicker::make('login_from'),
-                        DatePicker::make('login_until'),
+                        DatePicker::make('login_from')
+                            ->label('Login From'),
+                        DatePicker::make('login_until')
+                            ->label('Login Until'),
                     ])
                     ->query(function (Builder $query, array $data): Builder {
                         $loginFrom = $data['login_from'] ?? null;
@@ -121,6 +135,7 @@ class AuthenticationLogResource extends XotBaseResource
             ])
             ->recordActions([
                 Action::make('view_user')
+                    ->label('View User')
                     ->icon('heroicon-o-user')
                     ->url(function (AuthenticationLog $record): ?string {
                         $authenticatable = $record->authenticatable;
@@ -164,6 +179,7 @@ class AuthenticationLogResource extends XotBaseResource
                     Grid::make(2)
                         ->schema([
                             Select::make('authenticatable_type')
+                                ->label('Authenticatable Type')
                                 ->options([
                                     User::class => 'User',
                                     // Add other authenticatable types as needed
@@ -172,6 +188,7 @@ class AuthenticationLogResource extends XotBaseResource
                                 ->searchable(),
 
                             TextInput::make('authenticatable_id')
+                                ->label('Authenticatable ID')
                                 ->required()
                                 ->numeric(),
                         ]),
@@ -179,23 +196,33 @@ class AuthenticationLogResource extends XotBaseResource
                     Grid::make(2)
                         ->schema([
                             TextInput::make('ip_address')
-                                ->maxLength(45),
+                                ->label('IP Address')
+                                ->maxLength(45)
+                                ->placeholder('e.g., 192.168.1.1'),
 
                             TextInput::make('user_agent')
-                                ->maxLength(500),
+                                ->label('User Agent')
+                                ->maxLength(500)
+                                ->placeholder('User agent string'),
                         ]),
 
                     Grid::make(3)
                         ->schema([
                             Toggle::make('login_successful')
+                                ->label('Login Successful')
                                 ->inline(false),
 
-                            TextInput::make('login_at'),
+                            TextInput::make('login_at')
+                                ->label('Login Time')
+                                ->placeholder('YYYY-MM-DD HH:MM:SS'),
 
-                            TextInput::make('logout_at'),
+                            TextInput::make('logout_at')
+                                ->label('Logout Time')
+                                ->placeholder('YYYY-MM-DD HH:MM:SS'),
                         ]),
 
                     Toggle::make('cleared_by_user')
+                        ->label('Cleared by User')
                         ->inline(false),
                 ]),
         ];

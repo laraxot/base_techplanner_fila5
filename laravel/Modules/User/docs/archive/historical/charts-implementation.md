@@ -561,6 +561,7 @@ class UsersChartWidgetTest extends TestCase
 
 ---
 
+**Ultimo aggiornamento:** Dicembre 2025
 **Modulo:** User
 **Framework:** Laraxot/PTVX
 **Filament:** 4.x

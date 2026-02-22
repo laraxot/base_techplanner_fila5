@@ -18,14 +18,14 @@
     "require": {
         "php": "^8.3",
         "laravel/framework": "*",
-        "filament/tables": "5.x-dev",
-        "filament/schemas": "5.x-dev",
-        "filament/forms": "5.x-dev",
-        "filament/infolists": "5.x-dev",
-        "filament/actions": "5.x-dev",
-        "filament/notifications": "5.x-dev",
-        "filament/widgets": "5.x-dev",
-        "filament/support": "5.x-dev"
+        "filament/tables": "^5.1",
+        "filament/schemas": "^5.1",
+        "filament/forms": "^5.1",
+        "filament/infolists": "^5.1",
+        "filament/actions": "^5.1",
+        "filament/notifications": "^5.1",
+        "filament/widgets": "^5.1",
+        "filament/support": "^5.1"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10",

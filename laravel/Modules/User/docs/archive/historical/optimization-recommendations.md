@@ -275,6 +275,7 @@ php artisan user:benchmark  # Target: < 100ms
 - [Linee Guida Riusabilità](../../../project_docs/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
 
+*Ultimo aggiornamento: gennaio 2025*
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -552,3 +553,4 @@ php artisan user:benchmark  # Target: < 100ms
 - [Linee Guida Riusabilità](../../../docs/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
 
+*Ultimo aggiornamento: gennaio 2025*

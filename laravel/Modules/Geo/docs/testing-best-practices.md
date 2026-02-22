@@ -602,5 +602,6 @@ describe('Edge Cases', function () {
 
 ---
 
+**Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 1.0
 **Compatibilità**: Pest 2.x+, Laravel 12.x, PHP 8.3+

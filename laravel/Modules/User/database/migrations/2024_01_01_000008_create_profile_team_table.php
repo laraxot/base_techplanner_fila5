@@ -19,11 +19,12 @@ return new class extends XotBaseMigration {
         // -- CREATE --
         $this->tableCreate(static function (Blueprint $table): void {
             $table->id();
-            $table->unsignedBigInteger('profile_id')->nullable()->index();
+            $table->uuid('profile_id')->nullable()->index();
             $table->foreignId('team_id');
             $table->string('role')->nullable();
             $table->text('permissions')->nullable();
 
+            // Indice univoco per evitare duplicati profile_id + team_id
             $table->unique(['profile_id', 'team_id']);
         });
 

@@ -244,6 +244,7 @@ Common issues e soluzioni.
 - [External](https://example.com)
 
 ---
+**Ultimo aggiornamento:** [Data] - [Breve descrizione]
 ```
 
 ## 🔨 Script di Consolidamento

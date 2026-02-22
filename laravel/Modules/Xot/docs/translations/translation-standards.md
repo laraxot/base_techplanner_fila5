@@ -272,3 +272,4 @@ return [
 3. **Organizzazione**: Struttura gerarchica coerente
 4. **Naming**: Convenzioni standardizzate
 
+*Ultimo aggiornamento: Giugno 2025*

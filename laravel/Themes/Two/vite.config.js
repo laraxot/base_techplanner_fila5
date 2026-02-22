@@ -6,12 +6,8 @@ export default defineConfig({
     plugins: [
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],
-            //publicDirectory: '../../../public_html',
-            //buildDirectory: 'themes/Two',
-            outDir: './public',
-            buildDirectory: '.',
-            emptyOutDir: false,
-            manifest: 'manifest.json',
+            publicDirectory: '../../../public_html',
+            buildDirectory: 'themes/Two',
             refresh: true,
         }),
         tailwindcss(),

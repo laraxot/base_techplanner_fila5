@@ -27,20 +27,15 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        {{-- Alpine.js: fornito da Livewire/Filament nel bundle, NON da CDN. Vedi docs/fix/layout.txt --}}
+        <!-- Alpine.js (must be loaded before cookie-consent for $dispatch to work) -->
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
 
     <body>
-        @isset($slot)
-            {{ $slot }}
-        @else
-            @yield('body')
-        @endisset
+        @yield('body')
 
         @livewire('notifications')
 
-        {{-- Livewire prima di Filament: necessario per $wire nei form (LoginWidget, ecc.) --}}
-        @livewireScripts
         @filamentScripts
         @vite(['resources/js/app.js'], 'themes/Two')
     </body>

@@ -78,6 +78,7 @@ Il conflitto riguarda la logica di recupero e gestione dei dati geografici.
 - [components.md](components.md)
 - [Modules/UI/docs/](../docs/)
 
+*Ultimo aggiornamento: 29 luglio 2025*
 # Risoluzione Conflitto LocationSelector.php
 
 ## Problema Identificato
@@ -160,3 +161,4 @@ Il conflitto riguarda la logica di recupero e gestione dei dati geografici.
 - [Modules/UI/project_docs/](../project_docs/)
 - [Modules/UI/project_docs/](../project_docs/)
 
+*Ultimo aggiornamento: 29 luglio 2025*

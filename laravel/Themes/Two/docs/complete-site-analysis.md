@@ -3,6 +3,7 @@
 ## Executive Summary
 
 **Project:** Marco Sottana - Radioprotezione e Sicurezza  
+**Date:** 2026-02-07  
 **Target Site:** https://lightseagreen-dogfish-560272.hostingersite.com/  
 **Local Site:** http://127.0.0.1:8000/it  
 

@@ -37,7 +37,7 @@ pages/pages/                              # ALL content pages
 ├── contacts/index.blade.php              # Contacts page
 ├── blog/index.blade.php                  # Blog listing
 ├── blog/[slug].blade.php                 # Blog post
-└── auth/login.blade.php                  # Auth pages (vedi [auth-login-page](auth-login-page.md))
+└── auth/login.blade.php                  # Auth pages
 ```
 
 ## NEVER Create These Files

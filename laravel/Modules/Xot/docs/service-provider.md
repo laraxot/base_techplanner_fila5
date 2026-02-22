@@ -85,5 +85,6 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 
 ---
 
+**Ultimo aggiornamento:** [DATE]
 
 **Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.

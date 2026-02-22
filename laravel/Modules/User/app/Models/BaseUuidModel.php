@@ -15,8 +15,6 @@ use Modules\Xot\Traits\Updater;
  */
 abstract class BaseUuidModel extends XotBaseUuidModel
 {
-    use HasUuids;
-
     // use Searchable;
     // //use Cachable;
     use HasXotFactory;
@@ -31,17 +29,7 @@ abstract class BaseUuidModel extends XotBaseUuidModel
      */
     public static $snakeAttributes = true;
 
-    /** @var bool */
-    public $incrementing = false;
-
-    /** @var bool */
-    public $timestamps = true;
-
-    /** @var string */
-    protected $keyType = 'string';
-
-    /** @var string */
-    protected $primaryKey = 'id';
+    /* REMOVED properties that are now handled by XotBaseUuidModel */
 
     /** @var int */
     protected $perPage = 30;

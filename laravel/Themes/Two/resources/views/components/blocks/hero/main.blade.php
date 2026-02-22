@@ -8,19 +8,11 @@
     'stats' => [],
 ])
 
-<section class="relative min-h-[90vh] flex flex-col justify-center overflow-hidden">
+<section class="relative min-h-[90vh] flex flex-col justify-center overflow-hidden"
+    style="background-image: url('{{ $backgroundImage ?: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&q=80' }}'); background-size: cover; background-position: center;">
     
-    {{-- Background Image Overlay --}}
-    <div class="absolute inset-0 z-0">
-        <img src="{{ $backgroundImage ?: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&q=80' }}" 
-             alt="{{ $title }}"
-             fetchpriority="high"
-             loading="eager"
-             class="w-full h-full object-cover"
-             width="1920"
-             height="1080">
-        <div class="absolute inset-0 bg-gradient-to-r from-[#0f2744]/90 via-[#1a3a5c]/80 to-[#0f2744]/70"></div>
-    </div>
+    {{-- Dark overlay --}}
+    <div class="absolute inset-0 bg-gradient-to-r from-[#0f2744]/90 via-[#1a3a5c]/80 to-[#0f2744]/70"></div>
 
     {{-- Content --}}
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">

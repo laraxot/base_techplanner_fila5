@@ -5,7 +5,6 @@ declare(strict_types=1);
 return [
     'login' => [
         'title' => 'Sign in to your account',
-        'back_to_home' => 'Back to home',
         'or' => 'or',
         'create_account' => 'create a new account',
         'forgot_password' => 'Forgot your password?',

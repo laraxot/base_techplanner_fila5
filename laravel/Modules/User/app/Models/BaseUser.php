@@ -134,17 +134,17 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     use HasModules;
     use HasSpatiePermission;
     use HasTeams;
-    use HasUuids;
     use HasXotFactory;
     use InteractsWithMedia;
     use Notifiable;
+    use \Modules\Xot\Models\Traits\HasUuid;
 
     // use SoftDeletes;
     use Traits\HasTenants;
     use XotTraits\RelationX;
 
     /** @var bool */
-    public $incrementing = false;
+    public $incrementing = true;
 
     /** @var Pivot|null */
     public $pivot;
@@ -156,7 +156,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     protected $primaryKey = 'id';
 
     /** @var string */
-    protected $keyType = 'string';
+    protected $keyType = 'int';
 
     /** @var string */
     protected $childColumn = 'type';
@@ -164,6 +164,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /** @var list<string> */
     protected $fillable = [
         'id',
+        'uuid',
         // 'ente',
         // 'matr',
         'name',
@@ -504,11 +505,12 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     protected function casts(): array
     {
         return [
-            'id' => 'string',
+            'id' => 'integer',
+            'uuid' => 'string',
             'email_verified_at' => 'datetime',
             // 'password' => 'hashed', //Call to undefined cast [hashed] on column [password] in model [Modules\User\Models\User].
             'is_active' => 'boolean',
-            'roles.pivot.id' => 'string',
+            'roles.pivot.id' => 'integer',
             // https://github.com/beitsafe/laravel-uuid-auditing
             // ALTER TABLE model_has_role CHANGE COLUMN `id` `id` CHAR(37) NOT NULL DEFAULT uuid();
 

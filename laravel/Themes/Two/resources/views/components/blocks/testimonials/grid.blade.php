@@ -27,7 +27,7 @@
                     @endif
                     <div class="flex-1">
                         <h3 class="text-xl font-bold mb-1">{{ $testimonial['name'] ?? '' }}</h3>
-                        <p class="text-brand-orange-dark font-medium mb-4">{{ $testimonial['role'] ?? '' }}</p>
+                        <p class="text-brand-orange font-medium mb-4">{{ $testimonial['role'] ?? '' }}</p>
                         <p class="text-white/90 italic leading-relaxed">"{{ $testimonial['quote'] ?? $testimonial['content'] ?? '' }}"</p>
                         @if(!empty($testimonial['date']))
                             <p class="text-white/40 text-sm mt-4">{{ $testimonial['date'] }}</p>

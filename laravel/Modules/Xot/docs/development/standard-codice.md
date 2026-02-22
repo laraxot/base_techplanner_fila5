@@ -97,6 +97,7 @@ class PatientData
         return new self(
             firstName: $data['first_name'],
             lastName: $data['last_name'],
+            birthDate: isset($data['birth_date']) ? new DateTime($data['birth_date']) : null,
             isActive: $data['is_active'] ?? true,
         );
     }

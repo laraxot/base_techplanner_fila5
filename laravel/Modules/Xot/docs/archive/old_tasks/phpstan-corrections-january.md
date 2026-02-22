@@ -144,4 +144,5 @@ return BlockData::collection([]);
 
 ---
 
+*Ultimo aggiornamento: 2025-01-10*
 

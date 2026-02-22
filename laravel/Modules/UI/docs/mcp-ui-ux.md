@@ -1,5 +1,6 @@
 # MCP Servers per UI/UX - Modulo UI
 
+> Ultimo aggiornamento: Febbraio 2026
 
 ## Scopo
 

@@ -24,7 +24,7 @@ export default {
         brand: {
           blue: '#1E5A96',
           green: '#2D8659',
-          orange: '#D35400',
+          orange: '#E67E22',
         },
         secondary: {
           50: '#f8fafc',

@@ -181,3 +181,4 @@ ls -la resources/dist/assets/
 - [Vite Config](vite.config.js)
 - [Package.json](package.json)
 
+*Ultimo aggiornamento: 2025-01-06* 

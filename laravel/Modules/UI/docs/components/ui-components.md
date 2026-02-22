@@ -183,3 +183,4 @@ return [
 
 ---
 
+*Ultimo aggiornamento: giugno 2025*

@@ -53,14 +53,13 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class Consent extends BaseModel
 {
-    use HasUuids;
+    use \Modules\Xot\Models\Traits\HasUuid;
 
     // protected $table = 'consent';
 
-    public $incrementing = false;
-
     public $fillable = [
         'id',
+        'uuid',
         'subject_id',
         'treatment_id',
         'user_id',
@@ -76,5 +75,17 @@ class Consent extends BaseModel
     public function treatment(): BelongsTo
     {
         return $this->belongsTo(Treatment::class);
+    }
+
+    protected function casts(): array
+    {
+        return [
+            'id' => 'integer',
+            'uuid' => 'string',
+            'accepted_at' => 'datetime',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+        ];
     }
 }

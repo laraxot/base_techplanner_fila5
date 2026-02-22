@@ -228,3 +228,4 @@ Prima di commit:
 
 ---
 
+*Ultimo aggiornamento: [DATE]*

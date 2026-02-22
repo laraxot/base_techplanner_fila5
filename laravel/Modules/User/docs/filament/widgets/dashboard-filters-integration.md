@@ -146,3 +146,4 @@ protected function getFooterWidgets(): array
 - **Problema**: Widget non riceveva filtri Dashboard
 - **Soluzione**: Accesso sicuro con fallback appropriati
 - **Impatto**: Risolto per tutti i widget che usano lo stesso pattern
+*Ultimo aggiornamento: Gennaio 2025*

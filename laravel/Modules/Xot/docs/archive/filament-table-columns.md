@@ -43,6 +43,7 @@ public function getTableColumns(): array
 
 ---
 
+**Ultimo aggiornamento:** 2025-05-13
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 # Regola Generale: Metodo getTableColumns per Filament Table (Xot)
@@ -90,5 +91,6 @@ public function getTableColumns(): array
 
 ---
 
+**Ultimo aggiornamento:** 2025-05-13
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.

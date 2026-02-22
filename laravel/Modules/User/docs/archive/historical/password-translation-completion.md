@@ -115,4 +115,5 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 4. **Usare icone e colori appropriati** per l'UX
 
 ---
+*Ultimo aggiornamento: [DATE]*
 *Autore: Sistema di Audit Traduzioni*

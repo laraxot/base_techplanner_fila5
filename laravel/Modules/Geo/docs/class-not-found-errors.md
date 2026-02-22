@@ -257,3 +257,4 @@ Includere controlli PHPStan nella pipeline:
 - [Geo Module Structure](./structure.md)
 - [Employee PHPStan Covariance](../../employee/project_docs/phpstan_covariance_issues.md)
 
+*Ultimo aggiornamento: [DATE]*

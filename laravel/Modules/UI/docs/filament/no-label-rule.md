@@ -103,3 +103,4 @@ find Modules/UI/ -name "*.php" -exec grep -l "->label(" {} \;
 - [label-translation-system.md](label-translation-system.md)
 - [best-practices.md](best-practices.md)
 
+*Ultimo aggiornamento: 2025-08-04*

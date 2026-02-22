@@ -160,3 +160,4 @@ cd laravel
 - [PHPStan Corrections Summary](./phpstan-corrections-summary-2025.md)
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
 
+*Ultimo aggiornamento: [DATE]*

@@ -4,7 +4,7 @@
         <div class="row">
           <div class="col-12">
             <div class="it-header-slim-wrapper-content">
-              <a class="d-lg-block navbar-brand" target="_blank" href="{{ config('app.url', '/') }}" aria-label="Vai al portale {{ config('app.name', 'Nome della Regione') }} - link esterno - apertura nuova scheda" title="Vai al portale {{ config('app.name', 'Nome della Regione') }}">{{ config('app.name', 'Nome della Regione') }}</a>
+              <a class="d-lg-block navbar-brand" target="_blank" href="#" aria-label="Vai al portale {Nome della Regione} - link esterno - apertura nuova scheda" title="Vai al portale {Nome della Regione}">Nome della Regione</a>
               <div class="it-header-slim-right-zone" role="navigation">
                 <div class="nav-item dropdown">
                   <button type="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="languages" aria-haspopup="true">
@@ -19,8 +19,8 @@
                       <div class="col-12">
                         <div class="link-list-wrapper">
                           <ul class="link-list">
-                            <li><a class="dropdown-item list-item" href="{{ LaravelLocalization::getLocalizedURL('it', null, [], true) }}"><span>ITA <span class="visually-hidden">selezionata</span></span></a></li>
-                            <li><a class="dropdown-item list-item" href="{{ LaravelLocalization::getLocalizedURL('en', null, [], true) }}"><span>ENG</span></a></li>
+                            <li><a class="dropdown-item list-item" href="#"><span>ITA <span class="visually-hidden">selezionata</span></span></a></li>
+                            <li><a class="dropdown-item list-item" href="#"><span>ENG</span></a></li>
                           </ul>
                         </div>
                       </div>

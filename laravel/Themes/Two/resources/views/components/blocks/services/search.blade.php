@@ -48,7 +48,7 @@
                 
                 {{-- Search Icon --}}
                 <div class="absolute left-4 top-1/2 transform -translate-y-1/2">
-                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                     </svg>
                 </div>
@@ -57,10 +57,10 @@
                 <button 
                     type="button" 
                     id="clear-search-{{ $searchId }}"
-                    class="absolute right-12 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors hidden focus:outline-none focus:ring-2 focus:ring-[#1E5A96] rounded-md"
-                    aria-label="Cancella testo di ricerca"
+                    class="absolute right-12 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors hidden"
+                    aria-label="Cancella ricerca"
                 >
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                     </svg>
                 </button>
@@ -68,8 +68,8 @@
                 {{-- Search Button --}}
                 <button 
                     type="submit"
-                    aria-label="Esegui ricerca servizi"
-                    class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96]"
+                    class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition-colors"
+                    aria-label="Cerca"
                 >
                     Cerca
                 </button>
@@ -100,17 +100,16 @@
         @endif
         
         {{-- Advanced Filters Toggle --}}
-                <button 
-                    type="button"
-                    id="toggle-filters-{{ $searchId }}"
-                    class="mt-4 text-primary-600 hover:text-primary-700 text-sm font-medium flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-[#1E5A96] rounded-md px-2 py-1"
-                    aria-expanded="{{ $filtersOpen ? 'true' : 'false' }}"
-                    aria-controls="advanced-filters-{{ $searchId }}"
-                    aria-label="Mostra/Nascondi filtri avanzati di ricerca"
-                >
-                        <svg class="w-4 h-4 transform transition-transform {{ $filtersOpen ? 'rotate-180' : '' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
+        <button 
+            type="button"
+            id="toggle-filters-{{ $searchId }}"
+            class="mt-4 text-primary-600 hover:text-primary-700 text-sm font-medium flex items-center gap-1"
+            aria-expanded="{{ $filtersOpen ? 'true' : 'false' }}"
+            aria-controls="advanced-filters-{{ $searchId }}"
+        >
+            <svg class="w-4 h-4 transform transition-transform {{ $filtersOpen ? 'rotate-180' : '' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
             Filtri avanzati
         </button>
     </div>
@@ -131,9 +130,7 @@
                 <select 
                     id="category-filter-{{ $searchId }}"
                     name="category"
-                    autocomplete="off"
-                    aria-describedby="category-filter-help-{{ $searchId }}"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                 >
                     <option value="">Tutte le categorie</option>
                     @foreach($categories as $category)
@@ -152,9 +149,7 @@
                 <select 
                     id="status-filter-{{ $searchId }}"
                     name="status"
-                    autocomplete="off"
-                    aria-describedby="status-filter-help-{{ $searchId }}"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                 >
                     <option value="">Tutti gli stati</option>
                     <option value="active">Attivo</option>
@@ -165,38 +160,23 @@
             
             {{-- Authentication Filter --}}
             <div class="filter-group">
-                <fieldset>
-                    <legend class="block text-sm font-medium text-gray-700 mb-2">
-                        Autenticazione richiesta
-                    </legend>
-                    <div class="space-y-2" role="radiogroup" aria-labelledby="auth-legend-{{ $searchId }}">
-                        <label class="flex items-center">
-                            <input type="radio" 
-                                   id="auth-all-{{ $searchId }}"
-                                   name="auth" 
-                                   value="all" 
-                                   checked 
-                                   class="mr-2 focus:outline-none focus:ring-2 focus:ring-[#1E5A96]">
-                            <span class="text-sm">Tutti</span>
-                        </label>
-                        <label class="flex items-center">
-                            <input type="radio" 
-                                   id="auth-required-{{ $searchId }}"
-                                   name="auth" 
-                                   value="required" 
-                                   class="mr-2 focus:outline-none focus:ring-2 focus:ring-[#1E5A96]">
-                            <span class="text-sm">Con autenticazione</span>
-                        </label>
-                        <label class="flex items-center">
-                            <input type="radio" 
-                                   id="auth-optional-{{ $searchId }}"
-                                   name="auth" 
-                                   value="optional" 
-                                   class="mr-2 focus:outline-none focus:ring-2 focus:ring-[#1E5A96]">
-                            <span class="text-sm">Senza autenticazione</span>
-                        </label>
-                    </div>
-                </fieldset>
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                    Autenticazione richiesta
+                </label>
+                <div class="space-y-2">
+                    <label class="flex items-center">
+                        <input type="radio" name="auth" value="all" checked class="mr-2">
+                        <span class="text-sm">Tutti</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="auth" value="required" class="mr-2">
+                        <span class="text-sm">Con autenticazione</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="auth" value="optional" class="mr-2">
+                        <span class="text-sm">Senza autenticazione</span>
+                    </label>
+                </div>
             </div>
             
             {{-- Availability Filter --}}
@@ -207,9 +187,7 @@
                 <select 
                     id="availability-filter-{{ $searchId }}"
                     name="availability"
-                    autocomplete="off"
-                    aria-describedby="availability-filter-help-{{ $searchId }}"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                 >
                     <option value="">Tutte le disponibilità</option>
                     <option value="24-7">24/7</option>
@@ -226,9 +204,7 @@
                 <select 
                     id="audience-filter-{{ $searchId }}"
                     name="audience"
-                    autocomplete="off"
-                    aria-describedby="audience-filter-help-{{ $searchId }}"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                 >
                     <option value="">Tutti</option>
                     <option value="citizens">Cittadini</option>
@@ -246,9 +222,7 @@
                 <select 
                     id="priority-filter-{{ $searchId }}"
                     name="priority"
-                    autocomplete="off"
-                    aria-describedby="priority-filter-help-{{ $searchId }}"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                 >
                     <option value="">Tutte le priorità</option>
                     <option value="high">Alta</option>
@@ -263,16 +237,14 @@
             <button 
                 type="button"
                 id="reset-filters-{{ $searchId }}"
-                aria-label="Ripristina tutti i filtri ai valori predefiniti"
-                class="text-gray-600 hover:text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#1E5A96] rounded-md px-2 py-1"
+                class="text-gray-600 hover:text-gray-800 text-sm"
             >
                 Resetta filtri
             </button>
             
             <button 
                 type="submit"
-                aria-label="Applica i filtri selezionati"
-                class="bg-primary-600 text-white px-6 py-2 rounded-md hover:bg-primary-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96]"
+                class="bg-primary-600 text-white px-6 py-2 rounded-md hover:bg-primary-700 transition-colors"
             >
                 Applica filtri
             </button>

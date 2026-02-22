@@ -91,3 +91,4 @@ public function panel(Panel $panel): Panel
 - [Architettura Filament](../../../project_docs/filament_best_practices.md)
 - [Configurazione Moduli](../../../project_docs/module_architecture.md)
 
+*Ultimo aggiornamento: 2025-01-06*

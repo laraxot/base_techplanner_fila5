@@ -126,6 +126,7 @@ Codice pratico.
 - [Doc correlata](./relativa.md)
 - [Root docs](../../../docs/correlata.md)
 
+*Ultimo aggiornamento: [data]*
 ```
 
 ### 4. **Sistema Navigazione Centralizzato**
@@ -202,3 +203,4 @@ DOPO:
 `#DRY` `#KISS` `#refactoring` `#documentation` `#xot-module` `#consolidation`
 
 ---
+*Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*

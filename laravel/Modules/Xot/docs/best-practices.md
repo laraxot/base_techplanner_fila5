@@ -763,6 +763,7 @@ public function createModel(array $data): MioModello
 
 ---
 
+*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 # Best Practices per Laraxot
 
 ## Riferimenti al modello User

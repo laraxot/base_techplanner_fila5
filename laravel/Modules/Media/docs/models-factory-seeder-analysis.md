@@ -31,3 +31,4 @@
 ## Stato Generale: ✅ COMPLETO
 
 ---
+*Ultimo aggiornamento: [DATE]*

@@ -296,3 +296,4 @@ php artisan geo:test-api-integration
 - [Google Places Integration](google-places.md)
 - [Address Model Documentation](models/address.md)
 
+*Ultimo aggiornamento: gennaio 2025*

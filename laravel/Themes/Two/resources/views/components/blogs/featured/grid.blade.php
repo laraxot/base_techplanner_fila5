@@ -99,7 +99,7 @@ declare(strict_types=1);
                     <div class="p-6">
                         {{-- Title --}}
                         <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
-                            <a href="/it/blog/{{ $article['id'] }}">
+                            <a href="/it/pages/blog/{{ $article['id'] }}">
                                 {{ $article['title'] }}
                             </a>
                         </h3>
@@ -153,7 +153,7 @@ declare(strict_types=1);
                                 </span>
                             </div>
                             
-                            <a href="/it/blog/{{ $article['id'] }}" 
+                            <a href="/it/pages/blog/{{ $article['id'] }}" 
                                class="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors duration-200">
                                 Leggi di più →
                             </a>

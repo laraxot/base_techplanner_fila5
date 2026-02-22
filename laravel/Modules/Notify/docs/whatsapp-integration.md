@@ -536,3 +536,4 @@ Seguendo questa architettura, l'integrazione WhatsApp si inserisce perfettamente
 
 ---
 
+*Ultimo aggiornamento: [DATE]*

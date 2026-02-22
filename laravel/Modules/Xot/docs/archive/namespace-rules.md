@@ -95,5 +95,6 @@ Se incontri errori come `name is empty on [Modules\NomeModulo\Providers\RouteSer
 
 ---
 
+**Ultimo aggiornamento:** 2025-05-13
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.

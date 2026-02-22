@@ -348,3 +348,4 @@ $email->mergeData([
 ---
 
 **Creato per facilitare lo sviluppo di template email professionali**  
+*Ultimo aggiornamento: [DATE]*

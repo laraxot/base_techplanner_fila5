@@ -1,5 +1,7 @@
 # Map Integration - Theme Two
 
+**Last Update**: 19 Febbraio 2026
+**Status**: ✅ OpenStreetMap Embed
 
 ## Panoramica
 

@@ -236,3 +236,4 @@ Per documentazione completa, vedere:
 - [Widget Table Method Final Analysis](../../../modules/quaeris/docs/widget-table-method-final-analysis.md)
 - [Widget Property Initialization Pattern](../../../modules/quaeris/docs/widget-property-initialization-pattern.md)
 
+*Ultimo aggiornamento: 2025-01-27*

@@ -156,3 +156,4 @@ done
 
 Ogni model DEVE avere la sua factory. È obbligatorio per il corretto funzionamento del sistema.
 
+*Ultimo aggiornamento: 2025-01-06*

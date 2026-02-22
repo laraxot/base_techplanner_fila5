@@ -133,6 +133,7 @@ class Comune extends Model
 
 ---
 
+**Ultimo aggiornamento:** {{date('Y-m-d')}}
 Responsabile: Cascade AI 
 
 ## Policy aggiornata: niente trait per una sola classe

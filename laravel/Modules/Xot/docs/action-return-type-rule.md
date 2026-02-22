@@ -1,5 +1,6 @@
 # Rule: File-generating Action closures MUST return StreamedResponse
 
+## Date: February 2026
 
 ## Rule
 

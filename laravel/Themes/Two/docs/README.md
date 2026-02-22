@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Theme Two Documentation\n\nActive theme for Sottana Service.\n\n## Updates\n- Brand: Sottana Service\n- Header: Updated with Elephant Logo and Sottana Service name.\n- Footer: Updated with new brand and contacts.
-=======
 # 📚 Documentazione Tema Two - TechPlanner
 
 ## 🎯 Panoramica
@@ -236,21 +233,17 @@ export default defineConfig({
 
 ### WCAG 2.1 AA Compliance
 
-**📋 Documentazione Completa**: Vedi [WCAG Compliance Plan](wcag-compliance-plan.md) per il piano dettagliato di risoluzione di tutti i problemi di accessibilità.
-
 #### Focus Management
 ```css
-/* High visibility focus styles - WCAG 2.1 AA compliant */
-:where(a, button, input, select, textarea, summary, [tabindex]:not([tabindex="-1"])):focus-visible {
-    outline: 3px solid #1E5A96 !important;
-    outline-offset: 3px !important;
-    box-shadow: 0 0 0 2px rgba(30, 90, 150, 0.3) !important;
+/* High visibility focus styles */
+.focus-visible {
+  @apply outline-2 outline-offset-2 outline-blue-600;
 }
 
 .skip-link {
   @apply absolute -top-full left-0 transform -translate-y-full;
-  @apply p-2 bg-[#1E5A96] text-white rounded;
-  @apply focus:outline-none focus:ring-2 focus:ring-[#1E5A96];
+  @apply p-2 bg-blue-600 text-white rounded;
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-300;
 }
 ```
 
@@ -265,26 +258,9 @@ export default defineConfig({
 ```
 
 #### Color Contrast
-- WCAG AA contrast ratio minimo 4.5:1 per testo normale
-- WCAG AA contrast ratio minimo 3:1 per elementi non testuali
-- Tutti i testi hanno contrasto verificato e migliorato
-- Indicatori di stato usano colori e icone con contrasto sufficiente
-
-#### Form Accessibility
-- Tutti i form inputs hanno label associati tramite `for` e `id`
-- Autocomplete appropriato su tutti gli inputs
-- `aria-describedby` per help text
-- `aria-required="true"` per campi obbligatori
-
-#### Link Accessibility
-- Tutti i link hanno testo descrittivo o `aria-label`
-- Link icon-only hanno sempre `aria-label` descrittivo
-- Link esterni hanno `rel="noopener noreferrer"`
-
-#### Reflow Support
-- Layout funziona correttamente a 320px di larghezza
-- Nessuno scroll orizzontale su viewport piccoli
-- Form elements si adattano correttamente con flexbox
+- WCAG AA contrast ratio minimo 4.5:1
+- Tutti i testi hanno contrasto verificato
+- Indicatori di stato usano colori e icone
 
 ---
 
@@ -483,8 +459,6 @@ php artisan view:clear
 
 ### Documentazione del Tema
 - **[📋 README](README.md)** - Questa guida principale del tema Two
-- **[♿ WCAG Compliance Plan](wcag-compliance-plan.md)** - Piano completo di risoluzione problemi WCAG 2.1 AA identificati da MAUVE++ e PageSpeed Insights
-- **[🐛 GitHub Issue Template](github-issue-wcag.md)** - Template per issue GitHub su accessibilità
 - **[✅ Final Completion Report](final-completion-report.md)** - Report finale: 100% completamento della replica del sito target (6 Febbraio 2026)
 - **[🔍 Website Differences Analysis](website-differences-analysis-and-fixes.md)** - Analisi dettagliata delle differenze e correzioni applicate
 - **[🎯 Improvement Plan](improvement-plan.md)** - Piano completo di miglioramento per rendere TechPlanner ancora più bello del sito target
@@ -519,4 +493,3 @@ Per supporto o domande sul tema Two:
 ---
 
 *Questa documentazione è mantenuta attivamente dal team TechPlanner per garantire sempre informazioni aggiornate e precise.*
->>>>>>> 84dc3c11a (.)

@@ -364,6 +364,7 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - ✅ **Gestione Password**: Hash e scadenza
 - ✅ **Eventi**: Dispatched NewPasswordSet
 
+*Ultimo aggiornamento: 2025-01-27*
 
 
 

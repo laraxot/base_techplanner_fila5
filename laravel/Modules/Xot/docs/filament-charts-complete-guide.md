@@ -927,6 +927,7 @@ class BlogPostsChartTest extends TestCase
 
 ---
 
+**Ultimo aggiornamento:** Dicembre 2025
 **Versione Filament:** 4.x
 **Chart.js:** 4.x
 **Framework:** Laraxot/PTVX

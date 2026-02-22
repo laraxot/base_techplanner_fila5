@@ -292,3 +292,4 @@
 ---
 
 *Report generato: 2026-02-07*
+*Ultimo aggiornamento: 2026-02-07*

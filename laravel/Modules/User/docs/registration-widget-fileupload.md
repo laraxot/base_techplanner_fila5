@@ -124,6 +124,7 @@ Per evitare simili problemi in futuro:
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
+*Ultimo aggiornamento: [DATE]*
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto

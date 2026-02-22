@@ -1,4 +1,7 @@
-# Dati Contatto e Brand - Sottana Service
+# Aggiornamento Dati Contatto - Sottana Service
+
+## Data Ultimo Aggiornamento
+2026-02-19
 
 ## Dati Aziendali Corretti
 
@@ -8,19 +11,9 @@
 | Email | studio@sottana.com |
 | Telefono Fisso | +39 041 455552 |
 | Telefono Mobile | +39 347 58 96 127 |
-| Indirizzo | via Vanzo 86/A, 31021 Mogliano Veneto TV |
+| Indirizzo | Via Vanzo 86/A, 31021 Mogliano Veneto TV |
 | P.IVA | 05532540266 |
 |REA | TV - 451911 |
-
-### Coordinate Geografiche (Nominatim)
-- **Latitudine**: 45.5633
-- **Longitudine**: 12.2506
-- Indirizzo: Via Vanzo 86/A, 31021 Mogliano Veneto TV
-
-### Produzione e validazione
-- **Sito live**: https://sottana.net
-- **Contatti**: https://sottana.net/it/contatti
-- **Deploy**: push su branch `master` → auto-deploy; verificare contatti e mappa dopo il deploy
 
 ### Brand
 | Campo | Valore |
@@ -29,10 +22,8 @@
 | Logo | Elefante stilizzato SVG (nel header) |
 
 ### Mappa
-- **Implementazione**: PNG statica (se presente) oppure iframe Google Maps embed (gratuito, non API)
-- **Link navigazione**: Google Maps con coordinate (gratuito, non API)
-- **Regola**: MAI usare Google Maps API a pagamento; screenshot manuale da Google Maps UI o iframe embed consentiti
-- **Componente**: `pub_theme::components.blocks.map.static-clickable`
+- Embed: iframe Google Maps
+- Link navigazione: Google Maps con indirizzo
 
 ## File Modificati
 
@@ -67,12 +58,11 @@
 - `type: "phone_mobile"` o `"mobile"` - cellulare
 
 ### Mappa
-- PNG statica (opzionale) in `public/modules/techplanner/images/map-via-vanzo.png`
-- Fallback: iframe Google Maps embed (gratuito)
-- Link navigazione: coordinate 45.5633, 12.2506
-- Validazione produzione: https://sottana.net/it/contatti
+- Utilizza iframe embed Google Maps
+- Link diretto per navigazione completa
+- Coordinate: Via Vanzo 86/A, Mogliano Veneto
 
-## Collegamenti
-- [Deployment e validazione](./deployment-and-validation.md)
-- [Mappa statica implementazione](./mappa-statica-implementazione-completa.md)
-- [Genera mappa manuale](../../Modules/TechPlanner/docs/genera-mappa-manuale.md)
+## Prossimi Passi
+- [ ] Verificare visualizzazione mappa nel frontend
+- [ ] Testare link telefonici
+- [ ] Integrare modulo Geo per mappa dinamica

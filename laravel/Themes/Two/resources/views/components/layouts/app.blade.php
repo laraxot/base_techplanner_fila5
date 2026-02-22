@@ -1,11 +1,8 @@
 <x-layouts.main>
-    <x-slot name="beforeMain">
-        <x-section slug="header"/>
-    </x-slot>
+    <x-section slug="header"/>
 
     {{ $slot }}
-
-    <x-slot name="afterMain">
-        <x-section slug="footer"/>
-    </x-slot>
+   
+    <x-section slug="footer"/>
+   
 </x-layouts.main>

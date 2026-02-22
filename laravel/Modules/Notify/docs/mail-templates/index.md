@@ -58,3 +58,4 @@
 ## Note sulla Manutenzione
 Questa documentazione viene aggiornata regolarmente. Prima di apportare modifiche al codice dei template email, consultare la documentazione pertinente e aggiornare i documenti correlati.
 
+Ultimo aggiornamento: 14 Maggio 2025

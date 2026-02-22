@@ -1,5 +1,6 @@
 # 📚 **Indice Documentazione Modulo Xot (Core Engine)**
 
+**Last Update**: 31 Gennaio 2026
 **Status**: ✅ PHPStan Level 10 Compliant
 **Module Version**: 3.0.0
 

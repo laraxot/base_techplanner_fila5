@@ -25,5 +25,6 @@ Questa pagina raccoglie la regola e i collegamenti per l’adozione del metodo `
 
 ---
 
+**Ultimo aggiornamento:** 2025-05-13
 
 **Link bidirezionale:** Aggiornare anche le docs dei moduli coinvolti.

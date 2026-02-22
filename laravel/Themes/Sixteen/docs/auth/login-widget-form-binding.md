@@ -93,3 +93,4 @@ class RegisterWidget extends XotBaseWidget
 
 ---
 
+*Ultimo aggiornamento: Dicembre 2024*
