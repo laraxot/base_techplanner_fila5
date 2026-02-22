@@ -21,6 +21,12 @@ Alpine.js è **già incluso** nel bundle di Livewire/Filament. Non serve caricar
 
 Caricare Alpine da CDN causa "Detected multiple instances of Alpine running" e conflitti.
 
+## Vite: solo app.js come entry point
+
+Il file `resources/js/alpine.js` è **importato** in `app.js` (non è un entry point Vite).
+- **Sbagliato:** `@vite(['resources/js/app.js', 'resources/js/alpine.js'], 'themes/Two')` → alpine.js non è nel manifest
+- **Corretto:** `@vite(['resources/js/app.js'], 'themes/Two')` → alpine.js è incluso nel bundle app.js
+
 ## Layout interessati
 
 - `resources/views/components/layouts/base.blade.php`
