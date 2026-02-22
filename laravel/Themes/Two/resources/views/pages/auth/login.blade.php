@@ -1,51 +1,110 @@
-<x-layouts.app>
-    <section class="relative bg-gradient-to-br from-[#1E5A96] via-[#164575] to-[#0d2d4d] text-white">
-        <div class="absolute inset-0">
-            <div class="h-full w-full bg-[radial-gradient(rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:22px_22px] opacity-50"></div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/10"></div>
-        </div>
+<?php
+use function Laravel\Folio\name;
+use function Laravel\Folio\middleware;
 
-        <div class="relative mx-auto flex min-h-[calc(100vh-6rem)] max-w-6xl flex-col items-center justify-center px-6 py-16 lg:flex-row lg:items-stretch lg:gap-16">
-            <div class="max-w-xl space-y-6 text-center lg:text-left">
-                <span class="inline-flex items-center rounded-full bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-white/80">
-                    {{ __('user::auth.login.title') }}
-                </span>
-                <h1 class="text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
-                    {{ __('user::auth.login.heading', ['brand' => config('app.name')]) }}
+name('login');
+middleware(['guest']);
+?>
+
+@if (auth()->check())
+    @php
+        redirect()->intended('/')->send();
+        return;
+    @endphp
+@endif
+
+<x-pub_theme::layouts.guest :title="__('user::auth.login.title')">
+
+    {{-- Split layout: brand panel sx + form panel dx --}}
+    <div class="flex min-h-screen">
+
+        {{-- Left: brand panel --}}
+        <div class="hidden lg:flex lg:w-1/2 xl:w-3/5 relative overflow-hidden"
+             style="background: linear-gradient(135deg, #0f2b46 0%, #1E5A96 60%, #2D8659 100%);">
+            {{-- decorative blobs --}}
+            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full opacity-20"
+                     style="background: radial-gradient(circle, #2D8659, transparent);"></div>
+                <div class="absolute bottom-0 right-0 w-80 h-80 rounded-full opacity-20"
+                     style="background: radial-gradient(circle, #E67E22, transparent);"></div>
+            </div>
+
+            <div class="relative flex flex-col justify-center px-16 xl:px-24 text-white z-10">
+                {{-- Logo --}}
+                <a href="{{ url('/'.app()->getLocale()) }}"
+                   class="inline-flex items-center gap-3 mb-12 group focus:outline-none focus:ring-2 focus:ring-white/50 rounded-lg"
+                   aria-label="{{ __('Torna alla home') }}">
+                    <x-pub_theme::ui.logo class="h-14 w-auto" />
+                </a>
+
+                <h1 class="text-4xl xl:text-5xl font-bold leading-tight mb-6">
+                    {{ __('user::auth.login.welcome_back') }}
                 </h1>
-                <p class="text-base md:text-lg text-white/80 leading-relaxed">
-                    {{ __('user::auth.login.support_copy') }}
+                <p class="text-lg text-white/80 leading-relaxed max-w-sm">
+                    {{ __('user::auth.login.welcome_message') }}
                 </p>
-                <ul class="space-y-3 text-left text-sm text-white/85">
-                    <li class="flex items-start gap-3">
-                        <span class="mt-1 h-2 w-2 rounded-full bg-brand-green" aria-hidden="true"></span>
-                        <span>{{ __('user::auth.login.benefits.quick_support') }}</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="mt-1 h-2 w-2 rounded-full bg-brand-orange" aria-hidden="true"></span>
-                        <span>{{ __('user::auth.login.benefits.secure_area') }}</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="mt-1 h-2 w-2 rounded-full bg-white/80" aria-hidden="true"></span>
-                        <span>{{ __('user::auth.login.benefits.documents_ready') }}</span>
-                    </li>
-                </ul>
-                <div class="space-x-0 space-y-3 pt-6 sm:flex sm:items-center sm:gap-4 sm:space-y-0">
-                    <a href="/it" class="inline-flex items-center justify-center rounded-lg border border-white/30 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-white hover:text-brand-blue focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent">
-                        {{ __('user::auth.login.back_to_site') }}
-                    </a>
-                    <a href="/it/contatti" class="inline-flex items-center justify-center rounded-lg bg-brand-green px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-green/90 focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-offset-2 focus:ring-offset-transparent">
-                        {{ __('user::auth.login.need_help') }}
-                    </a>
-                </div>
-            </div>
 
-            <div class="relative mt-12 w-full max-w-lg lg:mt-0">
-                <div class="absolute -inset-1 rounded-3xl bg-gradient-to-br from-white/40 via-white/10 to-white/40 blur-2xl"></div>
-                <div class="relative rounded-3xl bg-white px-6 py-8 text-gray-900 shadow-2xl shadow-black/15 ring-1 ring-white/50 sm:px-10">
-                    @livewire('user::filament.widgets.auth.login-widget')
+                {{-- Decorative stats --}}
+                <div class="mt-16 grid grid-cols-2 gap-6">
+                    <div class="rounded-2xl px-5 py-4" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);">
+                        <p class="text-2xl font-bold">ISO 9001</p>
+                        <p class="text-sm text-white/60 mt-1">{{ __('Certificazione qualità') }}</p>
+                    </div>
+                    <div class="rounded-2xl px-5 py-4" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);">
+                        <p class="text-2xl font-bold">GDPR</p>
+                        <p class="text-sm text-white/60 mt-1">{{ __('Conformità normativa') }}</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-</x-layouts.app>
+
+        {{-- Right: form panel --}}
+        <div class="flex w-full lg:w-1/2 xl:w-2/5 items-center justify-center bg-gray-50 dark:bg-gray-900 px-6 sm:px-10 py-12">
+            <div class="w-full max-w-md">
+
+                {{-- Mobile: logo --}}
+                <div class="mb-8 flex justify-center lg:hidden">
+                    <a href="{{ url('/'.app()->getLocale()) }}"
+                       class="focus:outline-none focus:ring-2 focus:ring-[#1E5A96] rounded-lg">
+                        <x-pub_theme::ui.logo class="h-12 w-auto" />
+                    </a>
+                </div>
+
+                {{-- Card glassmorphism --}}
+                <div class="relative">
+                    <div class="absolute -inset-1 rounded-3xl blur-2xl opacity-30"
+                         style="background: linear-gradient(135deg, #1E5A96, #2D8659);"></div>
+                    <div class="relative rounded-3xl bg-white dark:bg-gray-800 px-8 py-10 shadow-2xl ring-1 ring-gray-200/80 dark:ring-gray-700/80">
+
+                        <h2 id="login-heading" class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                            {{ __('user::auth.login.title') }}
+                        </h2>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">
+                            {{ __('Inserisci le tue credenziali per accedere') }}
+                        </p>
+
+                        @livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
+                        {{--
+                            Regola: i form sono gestiti tramite Filament widget utilizzando la classe del widget.
+                            Riferimento documentazione: https://filamentphp.com/docs/3.x/widgets/adding-a-widget-to-a-blade-view
+                        --}}
+
+                        {{-- Link torna alla home --}}
+                        <div class="mt-8 text-center">
+                            <a href="{{ url('/'.app()->getLocale()) }}"
+                               class="inline-flex items-center gap-1.5 text-xs text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-[#1E5A96] rounded">
+                                <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                                </svg>
+                                {{ __('Torna alla home') }}
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</x-pub_theme::layouts.guest>
