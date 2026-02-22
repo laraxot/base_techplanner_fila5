@@ -4,6 +4,14 @@ This file provides essential guidance for agentic coding agents working in this 
 
 ## 🚨 CRITICAL NEW Rules
 
+### Volt + Folio + Laraxot: niente rotte né controller in web.php
+
+**Frontend e pagine auth sono gestiti solo da Volt + Folio + Laraxot.** Non creare rotte in `web.php` (né GET né POST) per frontend/auth; non creare controller per le pagine. Eccezioni: solo casi documentati (es. logout). Non aggiungere rotte POST “di fallback” (es. per auth/login): il submit è solo via Livewire/Filament widget. Regola: [.cursor/rules/no_web_php_front_backoffice.mdc](.cursor/rules/no_web_php_front_backoffice.mdc).
+
+### Auth Forms - Solo Filament Widget
+
+**I form di autenticazione (login, register, reset password) si gestiscono SEMPRE con Filament widget (LoginWidget, RegisterWidget, ecc.), MAI con form HTML tradizionali.** Vietato `<form method="POST" action="{{ route('login') }}">` con @csrf e input raw nelle pagine tema. Usare `@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)` (e widget analoghi). Regola: [.cursor/rules/filament-login-widget.mdc](.cursor/rules/filament-login-widget.mdc).
+
 ### Frontend Development - NO Controllers
 
 **MAI, MAI, MAI usare Controllers tradizionali per il frontend. SEMPRE usare Folio + Volt.**

@@ -27,7 +27,7 @@ layout('pub_theme::layouts.auth');
 </div>
 ```
 
-**Regola:** usare sempre `@livewire(LoginWidget::class)`, mai il tag `<livewire:user::filament.widgets.auth.login-widget />` (alias non registrato → ComponentNotFoundException).
+**Regola:** usare sempre il Filament LoginWidget, mai un form HTML tradizionale (method POST, action route('login'), @csrf, input raw). I form di autenticazione in questo progetto si gestiscono solo con Filament widget. Preferire `@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)`.
 
 ## Logo sulle pagine auth
 
@@ -39,8 +39,14 @@ Login e register usano il componente **logo configurabile** del tema:
 
 Non usare icone fisse (es. `meetup-logo`): usare sempre `<x-pub_theme::ui.logo />` per avere un logo unico e modificabile da config.
 
+## Anti-pattern da evitare
+Non sostituire il widget con un form HTML classico:
+- Vietato: `<form method="POST" action="{{ route('login') }}">` con @csrf e input email/password/remember.
+- Motivo: architettura unica (Filament widget), validazione e UX coerenti, registrazione Livewire necessaria.
+
 ## Collegamenti
 
 - [Troubleshooting login (modulo User)](../../Modules/User/docs/troubleshooting-login-component.md)
+- [Regola Cursor: form auth solo Filament widget](../../../.cursor/rules/filament-login-widget.mdc)
 - [Folio page file rules](folio-page-file-rules.md)
 - [Tenant – config metatag](../../Modules/Tenant/docs/it/config/metatag.md)

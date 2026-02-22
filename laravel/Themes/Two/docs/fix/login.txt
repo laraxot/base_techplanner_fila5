@@ -1,0 +1,27 @@
+# Fix: login page (ComponentNotFoundException + Method Not Allowed)
+
+## Errore 1: ComponentNotFoundException
+Unable to find component: [user::filament.widgets.auth.login-widget] su GET /it/auth/login (Folio, Theme Two).
+
+**Causa:** Livewire risolve il componente per nome (alias) dopo la prima render; l’alias non era registrato nel Finder.
+
+**Soluzione:** Registrazione degli auth widget nel modulo User: `UserServiceProvider::registerLivewireAuthWidgets()` registra gli alias con `Livewire::component($name, $class)`.
+
+## Errore 2: MethodNotAllowedHttpException
+The POST method is not supported for route it/auth/login. Supported methods: GET, HEAD.
+
+**Causa:** Il form di login può inviare un POST nativo (submit prima del binding Livewire o JS disabilitato); Folio registra solo GET per la pagina.
+
+**Soluzione corretta (Volt + Folio + Laraxot):** Non si aggiungono rotte in `web.php`. Frontend e auth sono gestiti solo da Volt + Folio + Laraxot; niente rotte custom, niente controller. Il form deve essere solo il Filament LoginWidget (wire:submit.prevent). Se si ottiene 405, verificare che non ci sia un form HTML con action route('login').
+
+## Regola architetturale
+- I form di autenticazione si gestiscono **solo** con Filament widget; mai form HTML con method POST e route('login').
+- **Non creare rotte né controller** per frontend/auth: solo Volt + Folio + Laraxot. Vedere `.cursor/rules/no_web_php_front_backoffice.mdc`, `.cursor/rules/filament-login-widget.mdc` e [auth-login-page.md](auth-login-page.md).
+
+## Riferimenti
+- [auth-login-page.md](auth-login-page.md)
+- [Modules/User/docs/troubleshooting-login-component.md](../../../Modules/User/docs/troubleshooting-login-component.md)
+
+
+## Uso corretto del widget (Filament)
+Usare sempre la **classe** nel Blade, mai la stringa alias: `@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)`. Non usare `@livewire('user::filament.widgets.auth.login-widget')`. Riferimento: https://filamentphp.com/docs/3.x/widgets/adding-a-widget-to-a-blade-view

@@ -615,4 +615,10 @@ it('has emails', function (string $email) {
 | overflow-ellipsis | text-ellipsis |
 | decoration-slice | box-decoration-slice |
 | decoration-clone | box-decoration-clone |
-</laravel-boost-guidelines>
+
+- **Architectural Rule for Auth Widgets (Filament + Folio)**: 
+    - NEVER use raw HTML forms for auth (login, registration, password recovery) on the frontend.
+    - ALWAYS use Filament Widgets (e.g., `Modules\User\Filament\Widgets\Auth\LoginWidget`).
+    - Render widgets in Blade/Folio views using **DIRECT CLASS PHP REFERENCE** (e.g., `@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)`).
+    - NEVER use alias tag syntax (`<livewire:... />`) or string alias (`@livewire('alias')`) for auth widgets, as it may cause `ComponentNotFoundException` in modular environments.
+    - STRICT RULE: **No traditional routes or controllers**. Do NOT add POST routes in `web.php` to handle form submissions; submission must be handled entirely by the Livewire/Volt component.
