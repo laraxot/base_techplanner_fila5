@@ -529,6 +529,9 @@ Il modulo TechPlanner rappresenta un **dominio business complesso** gestito con 
 - [troubleshooting.md](./troubleshooting.md) - Errori comuni e soluzioni
 - [phpstan-level-10-compliance.md](./phpstan-level-10-compliance.md) - Compliance PHPStan
 
+### Profile e main_module
+Profile è strettamente dipendente da TechPlanner (main_module). La migrazione `create_profiles_table` sta in TechPlanner, non in User. Vedi [convert-id-uuid-to-bigint](../../Xot/docs/database/convert-id-uuid-to-bigint.md).
+
 ### Moduli Correlati
 - [Xot Module](../../Xot/docs/README.md) - Foundation module
 - [Geo Module](../../Geo/docs/README.md) - Geographic services

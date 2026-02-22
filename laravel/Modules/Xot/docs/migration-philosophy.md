@@ -173,6 +173,10 @@ Each module should:
 3. Document migration dependencies in module README
 4. Follow consistent naming conventions
 
+### Main-Module Dependency Rule
+
+**Modelli strettamente dipendenti dal main_module** (es. Profile): la migrazione deve stare nel modulo main (es. TechPlanner), NON in moduli generici (User). Profile è dominio del main_module.
+
 ### Exception Cases
 
 **The ONLY exception** to the one-migration-per-table rule:
