@@ -1,24 +1,28 @@
 @if (auth()->check())
-    <?php return redirect()->intended('/dashboard'); ?>
+    @php
+        redirect()->intended('/')->send();
+        return;
+    @endphp
 @endif
 
-<x-pub_theme::layouts.guest title="Accedi - Sottana Service">
-    <div class="text-center mb-8">
-        <a href="{{ route('pages.view', ['slug' => 'home']) }}" class="inline-block mb-4">
-            <x-pub_theme::ui.logo class="h-16 w-auto" />
+<x-pub_theme::layouts.guest :title="__('user::auth.login.title')">
+    <div class="w-full">
+        <a
+            href="{{ url('/') }}"
+            class="mb-6 inline-flex items-center gap-2 text-sm font-medium text-gray-600 transition hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded"
+            aria-label="{{ __('pub_theme::auth.login.back_to_home') }}"
+        >
+            <svg class="h-5 w-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            {{ __('pub_theme::auth.login.back_to_home') }}
         </a>
-        <h2 class="text-2xl font-bold text-gray-900">Accedi al tuo account</h2>
-        <p class="mt-2 text-sm text-gray-600">Inserisci le tue credenziali per continuare</p>
-    </div>
 
-    @livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
-
-    <div class="mt-6 text-center">
-        <p class="text-sm text-gray-600">
-            Non hai un account?
-            <a href="{{ route('register') }}" class="font-medium text-primary-600 hover:text-primary-500 transition-colors">
-                Registrati ora
-            </a>
-        </p>
+        <section aria-labelledby="login-heading" id="login-form-section">
+            <h1 id="login-heading" class="sr-only">
+                {{ __('user::auth.login.title') }}
+            </h1>
+            @livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
+        </section>
     </div>
 </x-pub_theme::layouts.guest>
