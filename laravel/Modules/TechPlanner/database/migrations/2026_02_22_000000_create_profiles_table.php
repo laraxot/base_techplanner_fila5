@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
@@ -64,7 +65,8 @@ class CreateProfilesTable extends XotBaseMigration
 
     protected function ensureUuidColumn(string $tableName): void
     {
-        if (! $this->hasColumn('uuid')) {
+        $columns = Schema::getColumnListing($tableName);
+        if (! in_array('uuid', $columns, true)) {
             $this->tableUpdate(function (Blueprint $table) use ($tableName): void {
                 $table->uuid('uuid')->unique()->nullable()->after('id');
             });
@@ -138,11 +140,11 @@ class CreateProfilesTable extends XotBaseMigration
                 continue;
             }
 
-            $conn = DB::connection($this->getConnection());
-            $columns = $conn->getColumnListing($pivotTable);
+            $columns = Schema::getColumnListing($pivotTable);
 
             // Aggiorna foreign keys che referenziano profile
             if (in_array('profile_id', $columns, true)) {
+                $conn = DB::connection($this->getConnection());
                 if ($conn->getDriverName() === 'mysql') {
                     $conn->statement('ALTER TABLE '.$pivotTable.' MODIFY profile_id BIGINT UNSIGNED NULL');
                 }
@@ -162,31 +164,34 @@ class CreateProfilesTable extends XotBaseMigration
 
     protected function addMissingColumns(Blueprint $table): void
     {
-        if (! $table->hasColumn('uuid')) {
+        $tableName = $table->getTable();
+        $columns = Schema::getColumnListing($tableName);
+
+        if (! in_array('uuid', $columns, true)) {
             $table->uuid('uuid')->unique()->nullable()->after('id');
         }
-        if (! $table->hasColumn('user_id')) {
+        if (! in_array('user_id', $columns, true)) {
             $table->string('user_id', 36)->index()->nullable()->after('uuid');
         }
-        if (! $table->hasColumn('email')) {
+        if (! in_array('email', $columns, true)) {
             $table->string('email')->nullable()->after('last_name');
         }
-        if (! $table->hasColumn('phone')) {
+        if (! in_array('phone', $columns, true)) {
             $table->string('phone')->nullable()->after('email');
         }
-        if (! $table->hasColumn('avatar')) {
+        if (! in_array('avatar', $columns, true)) {
             $table->string('avatar')->nullable()->after('bio');
         }
-        if (! $table->hasColumn('timezone')) {
+        if (! in_array('timezone', $columns, true)) {
             $table->string('timezone')->nullable()->after('avatar');
         }
-        if (! $table->hasColumn('locale')) {
+        if (! in_array('locale', $columns, true)) {
             $table->string('locale')->nullable()->after('timezone');
         }
-        if (! $table->hasColumn('preferences')) {
+        if (! in_array('preferences', $columns, true)) {
             $table->json('preferences')->nullable()->after('locale');
         }
-        if (! $table->hasColumn('status')) {
+        if (! in_array('status', $columns, true)) {
             $table->string('status')->nullable()->after('preferences');
         }
     }
