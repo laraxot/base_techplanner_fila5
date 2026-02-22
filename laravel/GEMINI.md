@@ -626,3 +626,11 @@ it('has emails', function (string $email) {
     - Use `npm run build` and `npm run copy` (from the theme's `resources/html` directory if applicable, or the theme root) to deploy assets to `public_html/themes/{ThemeName}`.
     - Use `@vite(['resources/js/app.js'], 'themes/{ThemeName}')` in layouts to load bundled assets.
     - STRICT RULE: **No traditional routes or controllers**. Do NOT add POST routes in `web.php` to handle form submissions; submission must be handled entirely by the Livewire/Volt component.
+
+- **Translation Rule (Laraxot Architecture)**:
+    - **STRICTLY FORBIDDEN**: Using `->label()`, `->placeholder()`, `->tooltip()`, or `->helperText()` with explicit strings or `__()`/`trans()` functions inside Filament resources, pages, or widgets.
+    - **MANDATORY**: All translations MUST be handled automatically by `Modules\Xot\Providers\XotBaseServiceProvider` via `LangServiceProvider`.
+    - **STRUCTURE**: Translations must be located in `Modules/{ModuleName}/lang/{locale}/{resource}.php`.
+    - **KEYS**: The translation file MUST contain `navigation`, `label`, `plural_label`, `fields` (for labels and placeholders), and `actions`.
+    - **EXAMPLE**: Filament will automatically look for `user::login_widget.fields.email.label` for the `email` field in `LoginWidget`.
+    - **REASONING**: This ensures a clean separation of concerns, DRY principles, and makes the application easily localizable without touching PHP code.

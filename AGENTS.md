@@ -12,6 +12,10 @@ This file provides essential guidance for agentic coding agents working in this 
 
 **I form di autenticazione (login, register, reset password) si gestiscono SEMPRE con Filament widget (LoginWidget, RegisterWidget, ecc.), MAI con form HTML tradizionali.** Vietato `<form method="POST" action="{{ route('login') }}">` con @csrf e input raw nelle pagine tema. Usare `@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)` (e widget analoghi). Regola: [.cursor/rules/filament-login-widget.mdc](.cursor/rules/filament-login-widget.mdc).
 
+### Filament - VIETATO ->label(), ->placeholder(), ->helperText()
+
+**Le traduzioni sono gestite da LangServiceProvider tramite i file in `Modules/<Modulo>/lang/`.** Mai usare `->label()`, `->placeholder()` o `->helperText()` nei componenti Filament. Per nascondere una label usare `->hiddenLabel()`, non `->label('')`. Regola: [.cursor/rules/no-filament-labels.mdc](.cursor/rules/no-filament-labels.mdc).
+
 ### Frontend Development - NO Controllers
 
 **MAI, MAI, MAI usare Controllers tradizionali per il frontend. SEMPRE usare Folio + Volt.**

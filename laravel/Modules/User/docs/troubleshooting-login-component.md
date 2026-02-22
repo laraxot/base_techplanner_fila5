@@ -3,6 +3,8 @@
 ## Regola architetturale
 **I form di autenticazione (login, register, reset password) si gestiscono solo con Filament widget** (LoginWidget, RegisterWidget, ecc.). Vietato usare form HTML tradizionali (`<form method="POST" action="{{ route('login') }}">` con @csrf e input raw) nelle pagine tema. Vedere `.cursor/rules/filament-login-widget.mdc`.
 
+**VIETATO ->label(), ->placeholder(), ->helperText():** Le traduzioni sono gestite automaticamente da LangServiceProvider tramite i file in `Modules/User/lang/`. Mai usare questi metodi nei widget auth. Vedere `.cursor/rules/no-filament-labels.mdc`.
+
 ## Errore 1: ComponentNotFoundException
 Unable to find component: [user::filament.widgets.auth.login-widget] su GET /it/auth/login (Folio, Theme Two).
 
