@@ -34,7 +34,14 @@ return new class extends XotBaseMigration
 };
 ```
 
+## Metodi riutilizzabili
+
+### convertUuidPrimaryKeyToBigintWithUuidColumn
+
+Per convertire id da UUID a bigint + colonna uuid. Vedi [convert-uuid-id-to-bigint](convert-uuid-id-to-bigint.md).
+
 ## Related Documentation
+- [convert-uuid-id-to-bigint](convert-uuid-id-to-bigint.md)
 - [User Module Database Errors](../../user/project_docs/database_errors.md)
 - [Xot Base Classes](../xot_base_classes.md)
 - [Code Quality](../code_quality.md)

@@ -149,6 +149,96 @@ abstract class XotBaseMigration extends LaravelMigration
         }
     }
 
+    /**
+     * Restituisce il tipo di una colonna per una tabella specifica.
+     */
+    public function getColumnTypeForTable(string $table, string $column): string
+    {
+        try {
+            return $this->getConn()->getColumnType($table, $column);
+        } catch (Exception $e) {
+            return 'not-exists';
+        }
+    }
+
+    /**
+     * Converte id primario da UUID a bigint auto-increment con colonna uuid.
+     *
+     * Per tabelle con id UUID che devono passare a id bigint + uuid (app Android, API, Postgres).
+     * Crea tabella_temp, copia dati (id->uuid), aggiorna FK nelle tabelle correlate, sostituisce.
+     *
+     * @param string $newTableColumnsSql corpo CREATE TABLE (colonne tra parentesi, es. "uuid CHAR(36) NULL UNIQUE, user_id VARCHAR(36) NULL")
+     * @param array<int, string> $insertColumns colonne da copiare (id diventa uuid automaticamente)
+     * @param array<int, array{table: string, fk_column: string, unique_with?: array<int, string>}> $relatedTableFks tabelle con FK uuid da convertire
+     */
+    protected function convertUuidPrimaryKeyToBigintWithUuidColumn(
+        string $newTableColumnsSql,
+        array $insertColumns,
+        array $relatedTableFks = []
+    ): void {
+        $table = $this->getTable();
+        $newTable = $table.'_new';
+
+        if ($this->getConn()->hasTable($newTable)) {
+            $this->query('DROP TABLE '.$newTable);
+        }
+
+        $this->query("CREATE TABLE {$newTable} (id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, {$newTableColumnsSql})");
+
+        $cols = implode(', ', array_merge(['uuid'], $insertColumns));
+        $selectCols = implode(', ', array_merge(['id'], $insertColumns));
+        $this->query("INSERT INTO {$newTable} ({$cols}) SELECT {$selectCols} FROM {$table}");
+
+        foreach ($relatedTableFks as $config) {
+            $relTable = $config['table'];
+            $fkCol = $config['fk_column'];
+            $uniqueWith = $config['unique_with'] ?? null;
+            if ($this->getConn()->hasTable($relTable) && in_array($this->getColumnTypeForTable($relTable, $fkCol), ['string', 'guid', 'char', 'varchar'], true)) {
+                $this->convertForeignKeyFromUuidToBigint($relTable, $fkCol, $newTable, $uniqueWith);
+            }
+        }
+
+        $this->query('DROP TABLE '.$table);
+        $this->query("RENAME TABLE {$newTable} TO {$table}");
+    }
+
+    /**
+     * Converte una colonna FK da UUID a bigint in una tabella correlata.
+     *
+     * @param string $table tabella con la FK
+     * @param string $fkColumn colonna FK (uuid)
+     * @param string $lookupTable tabella di lookup (es. profiles_new) con uuid e id
+     * @param array<int, string>|null $uniqueWith colonne per indice unique composto (es. ['profile_id', 'team_id'])
+     */
+    protected function convertForeignKeyFromUuidToBigint(string $table, string $fkColumn, string $lookupTable, ?array $uniqueWith = null): void
+    {
+        $tempCol = $fkColumn.'_new';
+        if (! $this->getConn()->hasColumn($table, $tempCol)) {
+            $this->query("ALTER TABLE {$table} ADD COLUMN {$tempCol} BIGINT UNSIGNED NULL");
+        }
+        $this->query("
+            UPDATE {$table} t
+            INNER JOIN {$lookupTable} ln ON ln.uuid COLLATE utf8mb4_unicode_ci = t.{$fkColumn} COLLATE utf8mb4_unicode_ci
+            SET t.{$tempCol} = ln.id
+        ");
+        $indexes = DB::connection($this->model->getConnectionName())->select("SHOW INDEX FROM {$table} WHERE Column_name = '{$fkColumn}'");
+        $dropped = [];
+        foreach ($indexes as $idx) {
+            $name = $idx->Key_name;
+            if ('PRIMARY' !== $name && ! in_array($name, $dropped, true)) {
+                $this->query("ALTER TABLE {$table} DROP INDEX `{$name}`");
+                $dropped[] = $name;
+            }
+        }
+        $this->query("ALTER TABLE {$table} DROP COLUMN {$fkColumn}");
+        $this->query("ALTER TABLE {$table} CHANGE {$tempCol} {$fkColumn} BIGINT UNSIGNED NULL");
+        $this->query("ALTER TABLE {$table} ADD INDEX {$table}_{$fkColumn}_index ({$fkColumn})");
+        if (null !== $uniqueWith && [] !== $uniqueWith) {
+            $cols = implode(', ', $uniqueWith);
+            $this->query("ALTER TABLE {$table} ADD UNIQUE {$table}_{$fkColumn}_unique ({$cols})");
+        }
+    }
+
     public function isColumnType(string $column, string $type): bool
     {
         return $this->hasColumn($column) && $this->getColumnType($column) === $type;

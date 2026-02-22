@@ -25,6 +25,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * Represents a user profile with relationships to devices, teams, and roles.
  *
  * @property int                                                       $id
+ * @property string|null                                               $uuid
  * @property string                                                    $first_name
  * @property string                                                    $last_name
  * @property string                                                    $user_name

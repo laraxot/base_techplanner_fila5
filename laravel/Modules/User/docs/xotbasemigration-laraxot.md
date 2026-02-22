@@ -31,7 +31,15 @@ Questo documento spiega la filosofia Laraxot per le migrazioni nel modulo User, 
 - **Flow naturale**: CREATE e UPDATE fluiscono armoniosamente
 - **Equilibrio**: Controlli e modifiche in perfetto equilibrio
 
-## Pattern Obbligatorio
+## Regole Naming e Struttura
+
+### 1 migrazione per modello
+
+- **Un solo file** per tabella/modello
+- **Nome**: `{YYYY}_{MM}_{DD}_{HHMMSS}_create_{table}_table.php`
+- **Modifiche**: aggiornare la stessa migrazione e il **timestamp** nel nome file
+
+### Pattern Obbligatorio
 
 ### 1. Struttura Base
 

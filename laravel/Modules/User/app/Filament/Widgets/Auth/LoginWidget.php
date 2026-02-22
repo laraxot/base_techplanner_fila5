@@ -7,6 +7,7 @@ namespace Modules\User\Filament\Widgets\Auth;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\TextInput;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Modules\Xot\Datas\XotData;
@@ -57,12 +58,12 @@ class LoginWidget extends XotBaseWidget
         /** @var array<string, mixed> $data */
         $data = $this->form->getState();
 
-        $credentials = [
-            'email' => is_string($data['email'] ?? null) ? $data['email'] : '',
-            'password' => is_string($data['password'] ?? null) ? $data['password'] : '',
-        ];
+       
+        $credentials = Arr::only($data, ['email', 'password']);
+        
 
         $remember = isset($data['remember']) && true === $data['remember'];
+
 
         if (Auth::attempt($credentials, $remember)) {
             session()->regenerate();
@@ -73,15 +74,7 @@ class LoginWidget extends XotBaseWidget
         $user = $userClass::where('email', $credentials['email'])->first();
 
         $this->addError('data.email', __('auth.failed'));
-        // } catch (ValidationException $e) {
-        // dddx([
-        //    'credentials' => $credentials,
-        //    'remember' => $remember,
-        //    'e' => $e,
-        // ]);
-        // La validazione Filament gestisce automaticamente gli errori
-        // throw $e;
-        // }
+        
     }
 
     /**

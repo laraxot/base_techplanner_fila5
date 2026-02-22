@@ -68,7 +68,11 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 {
     use HasChildren;
     use HasRoles;
+<<<<<<< HEAD
     // use HasUuids;
+=======
+    use HasUuids;
+>>>>>>> 01737773 (docs: update deployment troubleshooting section and improve migration guidelines; remove unused profile migrations)
     use InteractsWithMedia;
     use IsProfileTrait;
     use Notifiable;
@@ -100,6 +104,16 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
      * Property Modules\Xot\Models\Profile::$guard_name is never read, only written.
      */
     // private string $guard_name = 'web';
+
+    /**
+     * Colonne che ricevono UUID generato automaticamente (non id, che è auto-increment).
+     *
+     * @return list<string>
+     */
+    public function uniqueIds(): array
+    {
+        return ['uuid'];
+    }
 
     /** @var list<string> */
     protected $fillable = [

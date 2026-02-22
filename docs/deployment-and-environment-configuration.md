@@ -472,6 +472,29 @@ timeout 300
 
 ## 🚨 Troubleshooting
 
+### Errore: Access denied for user (Connection: user)
+
+**Sintomo**: `SQLSTATE[HY000] [1045] Access denied for user 'xxx'@'localhost' (using password: YES) (Connection: user, Database: xxx_user)`
+
+**Causa**: Le credenziali in `.env` sono sbagliate per l'ambiente. Il progetto usa la connessione `user` per il modulo User (tabella `users`). Le variabili `DB_DATABASE_USER`, `DB_USERNAME_USER`, `DB_PASSWORD_USER` devono corrispondere al database MySQL del server di destinazione.
+
+**Soluzione**:
+1. Accedi al pannello hosting (es. Ploi) e recupera le credenziali MySQL per sottana.com
+2. Aggiorna `.env` sul server con i valori corretti:
+   ```env
+   DB_DATABASE=xxx_data          # Database principale
+   DB_USERNAME=xxx_usr
+   DB_PASSWORD=xxx
+
+   DB_DATABASE_USER=xxx_user     # Database utenti (connessione 'user')
+   DB_USERNAME_USER=xxx_usr
+   DB_PASSWORD_USER=xxx
+   ```
+3. Esegui `php artisan config:clear` e `php artisan config:cache`
+4. Verifica: `php artisan tinker --execute="DB::connection('user')->getPdo();"`
+
+**Nota**: Se usi un unico database per tutto, imposta `DB_DATABASE_USER=DB_DATABASE` e `DB_USERNAME_USER=DB_USERNAME`, `DB_PASSWORD_USER=DB_PASSWORD`.
+
 ### Common Deployment Issues
 
 #### 1. Cache Issues

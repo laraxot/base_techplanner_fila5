@@ -8,6 +8,10 @@ alwaysApply: false
 ## Introduzione
 Per tutte le migrazioni dei moduli, si utilizza la classe base personalizzata `XotBaseMigration` invece delle classi standard Laravel. Questo garantisce coerenza, estendibilità e compatibilità con le regole del progetto.
 
+## Regola: 1 migrazione per modello
+- Un solo file per tabella. Nome: `{date}_create_{table}_table.php`
+- Per modificare o aggiungere campi: aggiornare la stessa migrazione e il **timestamp** nel nome file
+
 ## Pattern Consigliati
 - **Controllo colonne**: Usare sempre `$this->hasColumn('nome_colonna')` invece di `Schema::hasColumn()`.
 - **Controllo tabelle**: Usare `$this->hasTable()` invece di `Schema::hasTable()`.
