@@ -229,6 +229,22 @@ if (isset($user->full_name) && $user->full_name) { }
 ```
 
 ## 🗄️ Database & Models
+
+### 🚨 CRITICAL: Migration Rules
+
+1. **ONE migration per table**: Only ONE migration creates each table. To modify, edit SAME file and UPDATE timestamp in filename. NEVER create separate `add_column_to_table.php` migrations.
+
+2. **ALWAYS use XotBaseMigration**:
+```php
+use Modules\Xot\Database\Migrations\XotBaseMigration;
+return new class extends XotBaseMigration { ... };
+```
+
+3. **main_module Rule**: Models strictly dependent on main_module (Profile, Tenant, Team): migration goes in main module (TechPlanner), NOT in User.
+
+4. **UUID → Bigint**: Use `convertIdFromUuidToBigintIfNeeded()` for legacy UUID conversion (adds uuid column for external use).
+
+### Standard
 - Migrations auto-discovered from all modules
 - Use descriptive timestamps in migration names
 - Models extend base classes from Xot module
@@ -250,11 +266,13 @@ npm run build
 npm run copy
 ```
 
-**Alpine.js**: Already included in Livewire/Filament bundle. NEVER load from CDN:
-- ❌ **WRONG:** `<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js">`
-- ✅ **CORRECT:** No Alpine script needed. Livewire provides it.
+**Alpine.js**: 
+- **Locale (dev):** Already included in Livewire/Filament bundle. No CDN needed.
+- **Produzione:** Use CDN: `<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>`
 
-Loading Alpine from CDN causes "Detected multiple instances of Alpine running" errors.
+**Why:** In production, the local theme build may not be deployed, but Livewire/Filament always need Alpine.js. Loading from CDN avoids "multiple instances" errors when local bundle is missing.
+
+Note: Build local theme assets with `npm run build && npm run copy` for full local delivery.
 
 ### 📸 Screenshots Location
 **ALWAYS save screenshots in docs subfolders inside modules/themes, NEVER in /tmp**
