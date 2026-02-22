@@ -71,3 +71,4 @@ laravel/config/net/sottana/database/content/information_schema_tables.json
 *.*Zone.Identifier
 lighthouse.*
 laravel/config/local/techplanner/database/content/information_schema_tables.json
+*.*Zone.Identifier
