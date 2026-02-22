@@ -40,3 +40,4 @@ vendor/
 *.bakcup
 *.backup.*
 node_modules
+*.*Zone.Identifier
