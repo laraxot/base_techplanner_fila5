@@ -39,7 +39,10 @@
 
         @livewire('notifications')
 
+<<<<<<< HEAD
         {{-- Livewire prima di Filament: necessario per $wire nei form (LoginWidget, ecc.) --}}
+=======
+>>>>>>> 55947e58 (.)
         @livewireScripts
         @filamentScripts
         @vite(['resources/js/app.js'], 'themes/Two')

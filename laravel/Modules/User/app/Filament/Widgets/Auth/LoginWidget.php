@@ -19,9 +19,14 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  * - Validazione e sicurezza integrate
  * - Facilmente estendibile (2FA, captcha, login social).
  *
+<<<<<<< HEAD
  * VIETATO: ->label(), ->placeholder(), ->helperText(). Le traduzioni sono gestite
  * automaticamente da LangServiceProvider tramite i file in Modules/User/lang/.
  * Vedi .cursor/rules/no-filament-labels.mdc
+=======
+ * Traduzioni: LangServiceProvider risolve automaticamente da user::login_widget
+ * (lang/it/login_widget.php). MAI usare ->label(), ->placeholder(), ->helperText().
+>>>>>>> 55947e58 (.)
  */
 class LoginWidget extends XotBaseWidget
 {
