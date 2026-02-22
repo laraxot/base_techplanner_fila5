@@ -50,22 +50,23 @@ class UserServiceProvider extends XotBaseServiceProvider
 
     /**
      * Registra i widget Livewire auth per le viste Blade/Folio.
-     * Permette a Livewire di risolvere l'alias (es. user::filament.widgets.auth.login-widget)
-     * usato dopo la prima renderizzazione quando si usa @livewire(LoginWidget::class).
+     * In Livewire v4, resolveClassComponentClassName con namespace '::' cerca SOLO in classNamespaces
+     * (non in classComponents), quindi Livewire::component('user::...', class) non funziona.
+     * Usare addComponent($class) che usa hash-based naming, compatibile con @livewire(Class::class).
      */
     protected function registerLivewireAuthWidgets(): void
     {
         $widgets = [
-            'user::filament.widgets.auth.login-widget' => LoginWidget::class,
-            'user::filament.widgets.auth.register-widget' => RegisterWidget::class,
-            'user::filament.widgets.auth.reset-password-widget' => ResetPasswordWidget::class,
-            'user::filament.widgets.auth.password-reset-widget' => PasswordResetWidget::class,
-            'user::filament.widgets.auth.forgot-password-widget' => ForgotPasswordWidget::class,
-            'user::filament.widgets.auth.password-reset-confirm-widget' => PasswordResetConfirmWidget::class,
+            LoginWidget::class,
+            RegisterWidget::class,
+            ResetPasswordWidget::class,
+            PasswordResetWidget::class,
+            ForgotPasswordWidget::class,
+            PasswordResetConfirmWidget::class,
         ];
 
-        foreach ($widgets as $name => $class) {
-            Livewire::component($name, $class);
+        foreach ($widgets as $class) {
+            Livewire::addComponent($class);
         }
     }
 
