@@ -634,3 +634,8 @@ it('has emails', function (string $email) {
     - **KEYS**: The translation file MUST contain `navigation`, `label`, `plural_label`, `fields` (for labels and placeholders), and `actions`.
     - **EXAMPLE**: Filament will automatically look for `user::login_widget.fields.email.label` for the `email` field in `LoginWidget`.
     - **REASONING**: This ensures a clean separation of concerns, DRY principles, and makes the application easily localizable without touching PHP code.
+
+- **ID and UUID Standard (Architectural Rule)**:
+    - **Primary Key**: Models MUST use an autoincrementing integer `id()` as the primary key for optimal database performance and simplified internal relationships.
+    - **UUID Column**: Models MUST also include a separate `uuid` column (with a unique index). This UUID is dedicated to external integration, mobile applications (Android/iOS), and cross-database compatibility (Postgres).
+    - **Implementation**: The `id` is handled by database defaults. The `uuid` must be automatically generated upon record creation, typically through the model's `booted()` method (`static::creating`).
