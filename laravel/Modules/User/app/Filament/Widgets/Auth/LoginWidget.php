@@ -18,6 +18,10 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  * - Usa solo componenti Filament importati
  * - Validazione e sicurezza integrate
  * - Facilmente estendibile (2FA, captcha, login social).
+ *
+ * VIETATO: ->label(), ->placeholder(), ->helperText(). Le traduzioni sono gestite
+ * automaticamente da LangServiceProvider tramite i file in Modules/User/lang/.
+ * Vedi .cursor/rules/no-filament-labels.mdc
  */
 class LoginWidget extends XotBaseWidget
 {
@@ -32,18 +36,13 @@ class LoginWidget extends XotBaseWidget
     {
         return [
             'email' => TextInput::make('email')
-                ->label(__('user::auth.login.email'))
-                ->placeholder(__('user::auth.login.email_placeholder'))
                 ->email()
                 ->required()
                 ->autofocus(),
             'password' => TextInput::make('password')
-                ->label(__('user::auth.login.password'))
-                ->placeholder(__('user::auth.login.password_placeholder'))
                 ->password()
                 ->required(),
-            'remember' => Checkbox::make('remember')
-                ->label(__('user::auth.login.remember_me')),
+            'remember' => Checkbox::make('remember'),
         ];
     }
 

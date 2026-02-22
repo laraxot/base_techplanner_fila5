@@ -34,6 +34,9 @@ Nel Blade usare sempre la **classe** (non la stringa alias):
 ```
 Non usare `@livewire(‘user::filament.widgets.auth.login-widget’)` — la stringa alias con `::` non funziona in Livewire v4.
 
+## VIETATO ->label(), ->placeholder(), ->helperText()
+Le traduzioni sono gestite da LangServiceProvider tramite i file in Modules/User/lang/. Mai usare questi metodi nei widget auth. Per nascondere una label usare ->hiddenLabel(), non ->label(''). Vedi .cursor/rules/no-filament-labels.mdc
+
 ## Riferimenti
 - [auth-login-page.md](auth-login-page.md)
 - [Modules/User/docs/troubleshooting-login-component.md](../../../Modules/User/docs/troubleshooting-login-component.md)
