@@ -23,3 +23,4 @@ Homestead.json
 Homestead.yaml
 Thumbs.db
 config/net/sottana/database/content/information_schema_tables.json
+config/local/techplanner/database/content/information_schema_tables.json
