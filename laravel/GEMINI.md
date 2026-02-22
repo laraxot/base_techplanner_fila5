@@ -617,8 +617,12 @@ it('has emails', function (string $email) {
 | decoration-clone | box-decoration-clone |
 
 - **Architectural Rule for Auth Widgets (Filament + Folio)**: 
-    - NEVER use raw HTML forms for auth (login, registration, password recovery) on the frontend.
-    - ALWAYS use Filament Widgets (e.g., `Modules\User\Filament\Widgets\Auth\LoginWidget`).
     - Render widgets in Blade/Folio views using **DIRECT CLASS PHP REFERENCE** (e.g., `@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)`).
     - NEVER use alias tag syntax (`<livewire:... />`) or string alias (`@livewire('alias')`) for auth widgets, as it may cause `ComponentNotFoundException` in modular environments.
+
+- **Architectural Rule for Asset Management (Themes)**:
+    - **NO EXTERNAL CDNs** (e.g., `cdn.jsdelivr.net`, `unpkg.com`) for core assets like Alpine.js, Tailwind, or jQuery in theme-based projects.
+    - All assets MUST be managed locally via `npm`, bundled via `Vite`, and served from the theme's `resources/js` or `resources/css`.
+    - Use `npm run build` and `npm run copy` (from the theme's `resources/html` directory if applicable, or the theme root) to deploy assets to `public_html/themes/{ThemeName}`.
+    - Use `@vite(['resources/js/app.js'], 'themes/{ThemeName}')` in layouts to load bundled assets.
     - STRICT RULE: **No traditional routes or controllers**. Do NOT add POST routes in `web.php` to handle form submissions; submission must be handled entirely by the Livewire/Volt component.
