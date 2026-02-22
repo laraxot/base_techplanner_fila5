@@ -4,19 +4,10 @@
     "src": "resources/css/app.css",
     "isEntry": true
   },
-  "resources/js/alpine.js": {
-    "file": "assets/alpine-BI5MqpgW.js",
-    "name": "alpine",
-    "src": "resources/js/alpine.js",
-    "isEntry": true
-  },
   "resources/js/app.js": {
-    "file": "assets/app-CmTmVDlh.js",
+    "file": "assets/app-l0sNRNKZ.js",
     "name": "app",
     "src": "resources/js/app.js",
-    "isEntry": true,
-    "imports": [
-      "resources/js/alpine.js"
-    ]
+    "isEntry": true
   }
 }
