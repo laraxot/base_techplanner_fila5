@@ -40,10 +40,9 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  */
 class Snapshot extends SpatieSnapshot
 {
-    use HasXotFactory;
-
     /** @var string */
     protected $connection = 'activity';
+    use HasXotFactory;
 
     /** @var list<string> */
     protected $fillable = ['id', 'aggregate_uuid', 'aggregate_version', 'state', 'created_at', 'updated_at'];

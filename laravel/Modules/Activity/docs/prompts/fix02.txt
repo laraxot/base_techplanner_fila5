@@ -2,7 +2,17 @@
 
 ## Azione
 
-Rimuovere la connessione `'activity'` da `laravel/config/database.php`.
+Rimuovere la connessione `'activity'` da `laravel/config/database.php` (se presente).
+
+Blocco da rimuovere (variante con url e DB_*_ACTIVITY):
+```php
+'activity' => [
+    'driver' => 'mysql',
+    'url' => env('DB_URL'),
+    'host' => env('DB_HOST_ACTIVITY', env('DB_HOST', '127.0.0.1')),
+    ...
+],
+```
 
 ## Perché
 

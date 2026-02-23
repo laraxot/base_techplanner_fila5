@@ -13,6 +13,13 @@ TenantServiceProvider crea la connessione 'activity' per ogni modulo (getSnakeNa
 
 - StoredEvent, Activity, Snapshot, BaseModel (Activity), BaseActivity (Xot)
 
+## Modelli - pattern obbligatorio
+
+```php
+/** @var string */
+protected $connection = 'activity';
+```
+
 ## Anti-pattern: $connection = null
 
 **MAI** usare `protected $connection = null` nel modulo Activity. Null = connessione default (mysql), rompe coerenza e DatabaseTransactions. Vedi [basemodel-connection-why-activity-not-null](basemodel-connection-why-activity-not-null.md).

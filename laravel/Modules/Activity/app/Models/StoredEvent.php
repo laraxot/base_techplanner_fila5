@@ -59,10 +59,9 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
 class StoredEvent extends SpatieStoredEvent
 {
-    use HasXotFactory;
-
     /** @var string */
     protected $connection = 'activity';
+    use HasXotFactory;
 
     protected $fillable = [
         'id',

@@ -20,7 +20,7 @@ TenantServiceProvider crea la connessione 'activity' a runtime per ogni modulo (
 - BaseModel.php (Activity)
 - BaseActivity.php (Xot)
 
-Pattern PHPDoc: `/** @var string|null */` (contratto Eloquent getConnectionName(): ?string)
+Pattern PHPDoc: `/** @var string */` (valore sempre 'activity')
 
 ## Perché NON $connection = null
 

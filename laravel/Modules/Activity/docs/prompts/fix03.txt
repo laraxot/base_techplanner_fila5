@@ -31,18 +31,14 @@ Se le variabili non sono impostate, usa i valori della connessione default (mysq
 - [fix02](fix02.txt)
 - [testing-coverage-policy](../testing-coverage-policy.md)
 
--------------------------------------------------------------
+## Modelli Activity - $connection obbligatoria
 
-dentro i files 
-- laravel/Modules/Activity/app/Models/Activity.php
-- laravel/Modules/Activity/app/Models/BaseModel.php
-- laravel/Modules/Activity/app/Models/Snapshot.php
-- laravel/Modules/Activity/app/Models/StoredEvent.php
+Nei file Activity.php, BaseModel.php, Snapshot.php, StoredEvent.php deve esserci:
+```php
+/** @var string */
+protected $connection = 'activity';
+```
 
-ci DEVE essere 
- /** @var string */
-    protected $connection = 'activity';
-
-capisci da solo il perche' , la regola poi aggiorna le cartelle docs dentro i moduli e dentro i temi , poi aggiorna le tue rules, le tue memories e le tue skills 
+Regola: fix01. TenantServiceProvider crea la connessione; i modelli la dichiarano.
 
 

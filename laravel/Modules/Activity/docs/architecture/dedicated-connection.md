@@ -1,75 +1,82 @@
 # Activity Module — Database Connection: Pattern Corretto
 
-> **Nota**: Questo documento è parzialmente obsoleto. La regola attuale è in [fix01](../prompts/fix01.txt): i modelli Activity DEVONO avere `protected $connection = 'activity'`. TenantServiceProvider crea la connessione a runtime. NON usare `$connection = null`.
+## Regola definitiva
 
-## Regola attuale (fix01)
+**Tutti i modelli del modulo Activity DEVONO dichiarare:**
 
-**I modelli DEVONO avere `protected $connection = 'activity'`.** Vedi [basemodel-connection-why-activity-not-null](../basemodel-connection-why-activity-not-null.md).
+```php
+/** @var string */
+protected $connection = 'activity';
+```
+
+Questo vale per: `BaseModel`, `Activity`, `Snapshot`, `StoredEvent`.
 
 ---
 
-## Sezione storica (approccio Spatie config)
+## Perché `/** @var string */` e NON `/** @var string|null */`
 
-Spatie fornisce meccanismi per configurare la connessione tramite config. Nel progetto Laraxot usiamo invece TenantServiceProvider + $connection nei modelli.
+- La connessione `'activity'` è **garantita e sempre presente** in `database.php`
+- Il tipo `string` (non nullable) è più preciso — non c'è caso in cui la connessione sia null
+- `XotBaseModel` usa la stessa convenzione: `/** @var string */ $connection = 'xot'`
+- I moduli che sovrascrivono `$connection` mantengono il tipo `string` non nullable
+
+```
+Eloquent\Model::$connection      → protected $connection;     (implicitly nullable)
+XotBaseModel::$connection        → /** @var string */ = 'xot' (stringa garantita)
+BaseModel::$connection           → /** @var string */ = 'activity' (stessa convenzione)
+Activity/Snapshot/StoredEvent    → /** @var string */ = 'activity' (tutti allineati)
+```
 
 ---
 
-## Perché NON hardcodare `$connection` nel modello
+## Configurazione in database.php
 
-### 1. Spatie ha già il meccanismo
-`config/activitylog.php`:
-```php
-'database_connection' => env('ACTIVITY_LOGGER_DB_CONNECTION'),
-```
-La connessione si configura via `.env` → config → Spatie la applica internamente.
-Se metti `$connection` nel modello, **bypaschi questo sistema** e rompi il flusso di configurazione.
+La connessione `activity` deve esistere in `config/database.php` con fallback ai valori default:
 
-### 2. I modelli Spatie non sono registrati nel config
-`config/event-sourcing.php` usa ancora i modelli di default Spatie:
-```php
-'stored_event_model' => Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent::class,
-'snapshot_model' => Spatie\EventSourcing\Snapshots\EloquentSnapshot::class,
-```
-I nostri `StoredEvent` e `Snapshot` NON sono registrati — quindi `$connection` hardcoded verrebbe ignorato o causerebbe errori.
-
-### 3. Aggiunge infrastruttura inesistente
-Una connessione `activity` in `database.php` richiederebbe:
-- Un database `laravel_activity` che non esiste
-- Credenziali separate
-- Migrazioni con `Schema::connection('activity')`
-- Tutto questo per **zero benefici concreti** nella fase attuale
-
-### 4. Viola il principio DRY/Separation of Concerns
-Il config di Spatie esiste esattamente per questo. Aggiungere `$connection` al modello duplica la responsabilità.
-
----
-
-## Pattern corretto se si vuole una connessione dedicata in futuro
-
-### Step 1: env / config (NON il modello)
-```bash
-# .env
-ACTIVITY_LOGGER_DB_CONNECTION=activity
-```
-
-### Step 2: Registrare i modelli custom in Spatie config
-```php
-// config/event-sourcing.php
-'stored_event_model' => Modules\Activity\Models\StoredEvent::class,
-'snapshot_model' => Modules\Activity\Models\Snapshot::class,
-
-// config/activitylog.php
-'activity_model' => Modules\Activity\Models\Activity::class,
-'database_connection' => env('ACTIVITY_LOGGER_DB_CONNECTION'),
-```
-
-### Step 3: Solo ALLORA aggiungere la connessione a database.php
 ```php
 'activity' => [
     'driver' => 'mysql',
-    'database' => env('DB_DATABASE_ACTIVITY', 'laravel_activity'),
-    // ...
+    'url' => env('DB_URL'),
+    'host' => env('DB_HOST_ACTIVITY', env('DB_HOST', '127.0.0.1')),
+    'port' => env('DB_PORT_ACTIVITY', env('DB_PORT', '3306')),
+    'database' => env('DB_DATABASE_ACTIVITY', env('DB_DATABASE', 'laravel')),
+    'username' => env('DB_USERNAME_ACTIVITY', env('DB_USERNAME', 'root')),
+    'password' => env('DB_PASSWORD_ACTIVITY', env('DB_PASSWORD', '')),
+    // ... parametri standard mysql
 ],
+```
+
+Il **doppio fallback** `env('DB_DATABASE_ACTIVITY', env('DB_DATABASE'))` è la chiave:
+- **In testing**: nessun `DB_DATABASE_ACTIVITY` in `.env.testing` → usa `DB_DATABASE` → stesso DB fisico
+- **In production**: se si vuole DB separato, aggiungere `DB_DATABASE_ACTIVITY` al `.env`
+
+---
+
+## .env.testing — NESSUNA variabile ACTIVITY
+
+```bash
+# ✅ CORRETTO — .env.testing
+DB_DATABASE=techplanner_data_test
+DB_USERNAME=marco
+DB_PASSWORD=marco
+# NESSUNA DB_DATABASE_ACTIVITY, DB_USERNAME_ACTIVITY, DB_PASSWORD_ACTIVITY
+```
+
+Il fallback in `database.php` garantisce che la connessione `activity` usi automaticamente
+`techplanner_data_test` senza configurazione aggiuntiva nei test.
+
+---
+
+## TestCase — connectionsToTransact
+
+Il `TestCase` del modulo Activity deve includere `'activity'` per il rollback automatico:
+
+```php
+protected $connectionsToTransact = [
+    'mysql',
+    'activity',
+    'user',
+];
 ```
 
 ---
@@ -77,75 +84,22 @@ ACTIVITY_LOGGER_DB_CONNECTION=activity
 ## Anti-Pattern da evitare
 
 ```php
-// ❌ SBAGLIATO — bypassa il config Spatie
-class Activity extends SpatieActivity
-{
-    protected $connection = 'activity'; // NON FARE QUESTO
-}
-
-// ❌ SBAGLIATO — connessione in database.php senza modelli registrati
-'activity' => [
-    'database' => env('DB_DATABASE_ACTIVITY', 'laravel_activity'),
-    // Inutile se i modelli usano ancora il default Spatie
-],
-```
-
----
-
-## Caso speciale: BaseModel e l'override di XotBaseModel
-
-`BaseModel` del modulo Activity estende `XotBaseModel`, che dichiara:
-```php
-/** @var string */
-protected $connection = 'xot';
-```
-
-Poiché `BaseModel` non appartiene al modulo Xot, deve dichiarare la propria connessione con tipo corretto:
-
-```php
-// ✅ CORRETTO — connessione 'activity' con tipo string|null per compatibilità PHPStan
-abstract class BaseModel extends XotBaseModel
-{
-    /** @var string|null */
-    protected $connection = 'activity';
-}
-```
-
-### Perché `/** @var string|null */` e NON `/** @var string */`?
-
-Catena di ereditarietà:
-```
-Eloquent\Model::$connection      → protected $connection;              (implicitly nullable = string|null)
-XotBaseModel::$connection        → /** @var string */ = 'xot'          (RESTRINGE a string — troppo forte)
-BaseModel::$connection           → /** @var string|null */ = 'activity' (RIPRISTINA compatibilità Eloquent)
-```
-
-- `XotBaseModel` fa un'assunzione troppo restrittiva dichiarando `@var string`
-- `BaseModel` deve usare `@var string|null` per essere compatibile con `Illuminate\Database\Eloquent\Model`
-- Il valore `'activity'` è una stringa valida nel tipo `string|null`
-- PHPStan Level 10 flaggherebbe `@var string` come incompatibile con la definizione originale Eloquent
-
-### NON confondere con `$connection = null`
-
-```php
-// ❌ SBAGLIATO — annulla la connessione, usa il default (mysql), NON è la connessione Activity
-protected $connection = null;
-
-// ✅ CORRETTO — connessione Activity esplicita
+// ❌ SBAGLIATO — nullable quando non serve
 /** @var string|null */
 protected $connection = 'activity';
+
+// ❌ SBAGLIATO — null annulla la connessione dedicata, usa mysql default
+protected $connection = null;
+
+// ❌ SBAGLIATO — nessuna connessione = eredita 'xot' da XotBaseModel
+// (per modelli Activity NON è corretto usare la connessione 'xot')
 ```
 
 ---
 
 ## Lezione appresa
 
-Il pattern `user` (connessione dedicata) esiste per ragioni specifiche legate a Passport/OAuth.
-**Non copiare meccanicamente i pattern senza capire il contesto.**
-Ogni modulo con connessione dedicata deve avere:
-1. Il config del package che supporta la configurazione della connessione
-2. I modelli custom registrati nel config del package
-3. La connessione in `database.php`
-4. Il database fisicamente esistente
-
-Se uno di questi manca, la connessione dedicata è **inutile o dannosa**.
+- La connessione `'activity'` deve **esistere in database.php** — senza di essa tutti i test falliscono
+- Il fallback `env('DB_DATABASE_ACTIVITY', env('DB_DATABASE'))` permette testing senza DB separato
+- Il pattern `user` (OAuth/Passport) e il pattern `activity` seguono la stessa logica: connessione named con fallback
+- Doc correlata: `laravel/Modules/Activity/docs/database-connections.md`

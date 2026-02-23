@@ -35,15 +35,13 @@ Usa la connessione dedicata creata da TenantServiceProvider per il modulo Activi
 ## Conclusione
 
 ```php
-// ✅ CORRETTO - PHPDoc string|null per contratto Eloquent (getConnectionName(): ?string)
-/** @var string|null */
+// ✅ CORRETTO
+/** @var string */
 protected $connection = 'activity';
 
-// ❌ ERRATO - non usare null come valore
+// ❌ ERRATO - non usare null
 protected $connection = null;
 ```
-
-La annotazione `@var string|null` riflette il tipo di ritorno di `getConnectionName()` in Eloquent. Il valore assegnato è `'activity'`.
 
 ## Collegamenti
 
