@@ -20,10 +20,8 @@ test('StoredEvent model can be instantiated', function () {
     expect($storedEvent)->toBeInstanceOf(StoredEvent::class);
 });
 
-test('BaseModel model can be instantiated', function () {
-    $baseModel = new BaseModel;
-
-    expect($baseModel)->toBeInstanceOf(BaseModel::class);
+test('BaseModel is abstract and cannot be instantiated', function () {
+    expect((new \ReflectionClass(BaseModel::class))->isAbstract())->toBeTrue();
 });
 
 test('Snapshot model has correct connection', function () {
@@ -36,10 +34,4 @@ test('StoredEvent model has correct connection', function () {
     $storedEvent = new StoredEvent;
 
     expect($storedEvent->getConnectionName())->toBeString();
-});
-
-test('BaseModel model has correct connection', function () {
-    $baseModel = new BaseModel;
-
-    expect($baseModel->getConnectionName())->toBeString();
 });

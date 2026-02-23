@@ -162,31 +162,31 @@ class CreateProfilesTable extends XotBaseMigration
 
     protected function addMissingColumns(Blueprint $table): void
     {
-        if (! $table->hasColumn('uuid')) {
+        if (! $this->hasColumn('uuid')) {
             $table->uuid('uuid')->unique()->nullable()->after('id');
         }
-        if (! $table->hasColumn('user_id')) {
+        if (! $this->hasColumn('user_id')) {
             $table->string('user_id', 36)->index()->nullable()->after('uuid');
         }
-        if (! $table->hasColumn('email')) {
+        if (! $this->hasColumn('email')) {
             $table->string('email')->nullable()->after('last_name');
         }
-        if (! $table->hasColumn('phone')) {
+        if (! $this->hasColumn('phone')) {
             $table->string('phone')->nullable()->after('email');
         }
-        if (! $table->hasColumn('avatar')) {
+        if (! $this->hasColumn('avatar')) {
             $table->string('avatar')->nullable()->after('bio');
         }
-        if (! $table->hasColumn('timezone')) {
+        if (! $this->hasColumn('timezone')) {
             $table->string('timezone')->nullable()->after('avatar');
         }
-        if (! $table->hasColumn('locale')) {
+        if (! $this->hasColumn('locale')) {
             $table->string('locale')->nullable()->after('timezone');
         }
-        if (! $table->hasColumn('preferences')) {
+        if (! $this->hasColumn('preferences')) {
             $table->json('preferences')->nullable()->after('locale');
         }
-        if (! $table->hasColumn('status')) {
+        if (! $this->hasColumn('status')) {
             $table->string('status')->nullable()->after('preferences');
         }
     }

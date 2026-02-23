@@ -109,12 +109,18 @@ class TenantServiceProvider extends XotBaseServiceProvider
                 /** @var array<string, mixed> $moduleConfig */
                 $moduleConfig = $connections[$default];
 
+                $databaseFallback = $moduleConfig['database'] ?? $moduleConfig['DB_DATABASE'] ?? null;
+                $usernameFallback = $moduleConfig['username'] ?? $moduleConfig['DB_USERNAME'] ?? null;
+                $passwordFallback = $moduleConfig['password'] ?? $moduleConfig['DB_PASSWORD'] ?? null;
+                $hostFallback = $moduleConfig['host'] ?? $moduleConfig['DB_HOST'] ?? '127.0.0.1';
+                $portFallback = $moduleConfig['port'] ?? $moduleConfig['DB_PORT'] ?? '3306';
+
                 // Override with module-specific env variables if they exist
-                $moduleConfig['database'] = env("DB_DATABASE_{$upperName}", $moduleConfig['database']);
-                $moduleConfig['username'] = env("DB_USERNAME_{$upperName}", $moduleConfig['username']);
-                $moduleConfig['password'] = env("DB_PASSWORD_{$upperName}", $moduleConfig['password']);
-                $moduleConfig['host'] = env("DB_HOST_{$upperName}", $moduleConfig['host'] ?? '127.0.0.1');
-                $moduleConfig['port'] = env("DB_PORT_{$upperName}", $moduleConfig['port'] ?? '3306');
+                $moduleConfig['database'] = env("DB_DATABASE_{$upperName}", $databaseFallback);
+                $moduleConfig['username'] = env("DB_USERNAME_{$upperName}", $usernameFallback);
+                $moduleConfig['password'] = env("DB_PASSWORD_{$upperName}", $passwordFallback);
+                $moduleConfig['host'] = env("DB_HOST_{$upperName}", $hostFallback);
+                $moduleConfig['port'] = env("DB_PORT_{$upperName}", $portFallback);
 
                 $connections[$name] = $moduleConfig;
             }
