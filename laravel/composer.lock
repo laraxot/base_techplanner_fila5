@@ -358,30 +358,30 @@
         },
         {
             "name": "blade-ui-kit/blade-icons",
-            "version": "1.8.1",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/driesvints/blade-icons.git",
-                "reference": "47e7b6f43250e6404e4224db8229219cd42b543c"
+                "reference": "caa92fde675d7a651c38bf73ca582ddada56f318"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/driesvints/blade-icons/zipball/47e7b6f43250e6404e4224db8229219cd42b543c",
-                "reference": "47e7b6f43250e6404e4224db8229219cd42b543c",
+                "url": "https://api.github.com/repos/driesvints/blade-icons/zipball/caa92fde675d7a651c38bf73ca582ddada56f318",
+                "reference": "caa92fde675d7a651c38bf73ca582ddada56f318",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "^8.0|^9.0|^10.0|^11.0|^12.0",
-                "illuminate/filesystem": "^8.0|^9.0|^10.0|^11.0|^12.0",
-                "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0",
-                "illuminate/view": "^8.0|^9.0|^10.0|^11.0|^12.0",
+                "illuminate/contracts": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+                "illuminate/filesystem": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+                "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+                "illuminate/view": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
                 "php": "^7.4|^8.0",
-                "symfony/console": "^5.3|^6.0|^7.0",
-                "symfony/finder": "^5.3|^6.0|^7.0"
+                "symfony/console": "^5.3|^6.0|^7.0|^8.0",
+                "symfony/finder": "^5.3|^6.0|^7.0|^8.0"
             },
             "require-dev": {
                 "mockery/mockery": "^1.5.1",
-                "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0|^10.0",
+                "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
                 "phpunit/phpunit": "^9.0|^10.5|^11.0"
             },
             "bin": [
@@ -435,7 +435,7 @@
                     "type": "paypal"
                 }
             ],
-            "time": "2026-01-20T09:46:32+00:00"
+            "time": "2026-02-23T10:42:23+00:00"
         },
         {
             "name": "brick/math",
@@ -6708,16 +6708,16 @@
         },
         {
             "name": "nette/schema",
-            "version": "v1.3.4",
+            "version": "v1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/schema.git",
-                "reference": "086497a2f34b82fede9b5a41cc8e131d087cd8f7"
+                "reference": "f0ab1a3cda782dbc5da270d28545236aa80c4002"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/schema/zipball/086497a2f34b82fede9b5a41cc8e131d087cd8f7",
-                "reference": "086497a2f34b82fede9b5a41cc8e131d087cd8f7",
+                "url": "https://api.github.com/repos/nette/schema/zipball/f0ab1a3cda782dbc5da270d28545236aa80c4002",
+                "reference": "f0ab1a3cda782dbc5da270d28545236aa80c4002",
                 "shasum": ""
             },
             "require": {
@@ -6725,8 +6725,10 @@
                 "php": "8.1 - 8.5"
             },
             "require-dev": {
+                "nette/phpstan-rules": "^1.0",
                 "nette/tester": "^2.6",
-                "phpstan/phpstan": "^2.0@stable",
+                "phpstan/extension-installer": "^1.4@stable",
+                "phpstan/phpstan": "^2.1.39@stable",
                 "tracy/tracy": "^2.8"
             },
             "type": "library",
@@ -6767,9 +6769,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/schema/issues",
-                "source": "https://github.com/nette/schema/tree/v1.3.4"
+                "source": "https://github.com/nette/schema/tree/v1.3.5"
             },
-            "time": "2026-02-08T02:54:00+00:00"
+            "time": "2026-02-23T03:47:12+00:00"
         },
         {
             "name": "nette/utils",
@@ -10301,16 +10303,16 @@
         },
         {
             "name": "spatie/laravel-event-sourcing",
-            "version": "7.14.0",
+            "version": "7.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-event-sourcing.git",
-                "reference": "61d32dd0323ffbc7212f8f572ee454711b0fecda"
+                "reference": "55a0819d38e14e5c3bce89310b1de40f2def2d98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-event-sourcing/zipball/61d32dd0323ffbc7212f8f572ee454711b0fecda",
-                "reference": "61d32dd0323ffbc7212f8f572ee454711b0fecda",
+                "url": "https://api.github.com/repos/spatie/laravel-event-sourcing/zipball/55a0819d38e14e5c3bce89310b1de40f2def2d98",
+                "reference": "55a0819d38e14e5c3bce89310b1de40f2def2d98",
                 "shasum": ""
             },
             "require": {
@@ -10324,6 +10326,7 @@
                 "spatie/better-types": "^1.0",
                 "spatie/laravel-package-tools": "^1.19",
                 "spatie/laravel-schemaless-attributes": "^2.5.1",
+                "spatie/php-attribute-reader": "^1.0",
                 "symfony/finder": "^6.0|^7.2.2|^8.0",
                 "symfony/polyfill-php82": ">=1.31",
                 "symfony/property-access": "^6.0|^7.2.3|^8.0",
@@ -10381,7 +10384,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-event-sourcing/issues",
-                "source": "https://github.com/spatie/laravel-event-sourcing/tree/7.14.0"
+                "source": "https://github.com/spatie/laravel-event-sourcing/tree/7.15.0"
             },
             "funding": [
                 {
@@ -10389,30 +10392,30 @@
                     "type": "custom"
                 }
             ],
-            "time": "2026-02-22T09:02:49+00:00"
+            "time": "2026-02-22T23:16:35+00:00"
         },
         {
             "name": "spatie/laravel-health",
-            "version": "1.37.0",
+            "version": "1.38.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-health.git",
-                "reference": "2d3a68ae2f855d3997a85deb819898a4b7720d49"
+                "reference": "9c7cc3cc9d96eec33f090c5bc0894f128a5386e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-health/zipball/2d3a68ae2f855d3997a85deb819898a4b7720d49",
-                "reference": "2d3a68ae2f855d3997a85deb819898a4b7720d49",
+                "url": "https://api.github.com/repos/spatie/laravel-health/zipball/9c7cc3cc9d96eec33f090c5bc0894f128a5386e4",
+                "reference": "9c7cc3cc9d96eec33f090c5bc0894f128a5386e4",
                 "shasum": ""
             },
             "require": {
                 "dragonmantank/cron-expression": "^3.3.1",
                 "guzzlehttp/guzzle": "^6.5|^7.4.5|^7.2",
-                "illuminate/console": "^11.0|^12.0",
-                "illuminate/contracts": "^11.0|^12.0",
-                "illuminate/database": "^11.0|^12.0",
-                "illuminate/notifications": "^11.0|^12.0",
-                "illuminate/support": "^11.0|^12.0",
+                "illuminate/console": "^11.0|^12.0|^13.0",
+                "illuminate/contracts": "^11.0|^12.0|^13.0",
+                "illuminate/database": "^11.0|^12.0|^13.0",
+                "illuminate/notifications": "^11.0|^12.0|^13.0",
+                "illuminate/support": "^11.0|^12.0|^13.0",
                 "laravel/serializable-closure": "^1.3|^2.0",
                 "nunomaduro/termwind": "^1.0|^2.0",
                 "php": "^8.2",
@@ -10426,12 +10429,12 @@
                 "laravel/horizon": "^5.9.10",
                 "laravel/slack-notification-channel": "^2.4|^3.2",
                 "nunomaduro/collision": "^5.10|^6.2.1|^6.1|^8.0",
-                "orchestra/testbench": "^9.0|^10.0",
+                "orchestra/testbench": "^9.0|^10.0|^11.0",
                 "pestphp/pest": "^2.34|^3.0|^4.0",
                 "pestphp/pest-plugin-laravel": "^2.3|^3.0|^4.0",
                 "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-phpunit": "^1.1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0|^2.0",
+                "phpstan/phpstan-phpunit": "^1.1.1|^2.0",
                 "phpunit/phpunit": "^9.5.21|^9.5.10|^10.5|^11.0|^12.0",
                 "spatie/laravel-ray": "^1.30",
                 "spatie/pest-plugin-snapshots": "^1.1|^2.3|^3.0",
@@ -10474,7 +10477,7 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/spatie/laravel-health/tree/1.37.0"
+                "source": "https://github.com/spatie/laravel-health/tree/1.38.0"
             },
             "funding": [
                 {
@@ -10482,7 +10485,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-12T16:31:50+00:00"
+            "time": "2026-02-22T18:44:51+00:00"
         },
         {
             "name": "spatie/laravel-medialibrary",
@@ -11421,6 +11424,64 @@
                 }
             ],
             "time": "2026-02-21T14:20:19+00:00"
+        },
+        {
+            "name": "spatie/php-attribute-reader",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/php-attribute-reader.git",
+                "reference": "46e7484d7b51f5b22d672745c541e48c5a385404"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/php-attribute-reader/zipball/46e7484d7b51f5b22d672745c541e48c5a385404",
+                "reference": "46e7484d7b51f5b22d672745c541e48c5a385404",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^1.0|^2.0|^3.0|^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Attributes\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A clean API for working with PHP attributes",
+            "homepage": "https://github.com/spatie/php-attribute-reader",
+            "keywords": [
+                "attributes",
+                "php-attribute-reader",
+                "reflection",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/php-attribute-reader/issues",
+                "source": "https://github.com/spatie/php-attribute-reader/tree/1.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-02-23T09:01:55+00:00"
         },
         {
             "name": "spatie/php-structure-discoverer",
@@ -18446,16 +18507,16 @@
         },
         {
             "name": "nunomaduro/phpinsights",
-            "version": "v2.13.3",
+            "version": "v2.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/phpinsights.git",
-                "reference": "ae780a92e2b15d8cf64d2e0c1cd2b86e16a2e882"
+                "reference": "609826e31d4914edbc94eb28f4f6ec4d229cf292"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/phpinsights/zipball/ae780a92e2b15d8cf64d2e0c1cd2b86e16a2e882",
-                "reference": "ae780a92e2b15d8cf64d2e0c1cd2b86e16a2e882",
+                "url": "https://api.github.com/repos/nunomaduro/phpinsights/zipball/609826e31d4914edbc94eb28f4f6ec4d229cf292",
+                "reference": "609826e31d4914edbc94eb28f4f6ec4d229cf292",
                 "shasum": ""
             },
             "require": {
@@ -18465,28 +18526,28 @@
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "ext-tokenizer": "*",
-                "friendsofphp/php-cs-fixer": "^3.88.2",
+                "friendsofphp/php-cs-fixer": "^3.94.2",
                 "league/container": "^5.1.0",
-                "php": "^8.1",
+                "php": "^8.3",
                 "php-parallel-lint/php-parallel-lint": "^1.4.0",
                 "psr/container": "^2.0.2",
                 "psr/simple-cache": "^2.0|^3.0",
-                "sebastian/diff": "^5.1.1|^6.0.2|^7.0.0",
+                "sebastian/diff": "^6.0.2|^7.0.0",
                 "slevomat/coding-standard": "^8.22.1",
-                "squizlabs/php_codesniffer": "^3.13.4",
-                "symfony/cache": "^6.4.20|^7.3.4",
-                "symfony/console": "^6.4.20|^7.3.4",
-                "symfony/finder": "^6.4.17|^7.3.2",
-                "symfony/http-client": "^6.4.19|^7.3.4",
-                "symfony/process": "^6.4.20|^7.3.4"
+                "squizlabs/php_codesniffer": "^3.13.5",
+                "symfony/cache": "^7.4.5|^8.0.5",
+                "symfony/console": "^7.4.4|^8.0.4",
+                "symfony/finder": "^7.4.5|^8.0.5",
+                "symfony/http-client": "^7.4.5|^8.0.5",
+                "symfony/process": "^7.4.5|^8.0.5"
             },
             "require-dev": {
-                "illuminate/console": "^10.48.28|^11.44.2|^12.33",
-                "illuminate/support": "^10.48.28|^11.44.2|^12.33",
+                "illuminate/console": "^11.44.2|^12.52|^13.0",
+                "illuminate/support": "^11.44.2|^12.52|^13.0",
                 "mockery/mockery": "^1.6.12",
-                "phpstan/phpstan": "^2.1.31",
-                "phpunit/phpunit": "^10.5.45|^11.5.42",
-                "symfony/var-dumper": "^6.4.18|^7.3.4"
+                "phpstan/phpstan": "^2.1.39",
+                "phpunit/phpunit": "^11.5.55|^12.5.14",
+                "symfony/var-dumper": "^7.4.4|^8.0.4"
             },
             "suggest": {
                 "ext-simplexml": "It is needed for the checkstyle formatter"
@@ -18528,7 +18589,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nunomaduro/phpinsights/issues",
-                "source": "https://github.com/nunomaduro/phpinsights/tree/v2.13.3"
+                "source": "https://github.com/nunomaduro/phpinsights/tree/v2.14.0"
             },
             "funding": [
                 {
@@ -18536,7 +18597,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-16T20:10:07+00:00"
+            "time": "2026-02-23T10:09:16+00:00"
         },
         {
             "name": "nunomaduro/pokio",
@@ -19747,11 +19808,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.39",
+            "version": "2.1.40",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c6f73a2af4cbcd99c931d0fb8f08548cc0fa8224",
-                "reference": "c6f73a2af4cbcd99c931d0fb8f08548cc0fa8224",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/9b2c7aeb83a75d8680ea5e7c9b7fca88052b766b",
+                "reference": "9b2c7aeb83a75d8680ea5e7c9b7fca88052b766b",
                 "shasum": ""
             },
             "require": {
@@ -19796,7 +19857,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-11T14:48:56+00:00"
+            "time": "2026-02-23T15:04:35+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",

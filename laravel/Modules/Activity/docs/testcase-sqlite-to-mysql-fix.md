@@ -76,77 +76,48 @@ use Modules\Xot\Tests\CreatesApplication;
  */
 abstract class TestCase extends BaseTestCase
 {
-       use DatabaseTransactions;
-
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        $this->artisan('migrate', ['--database' => 'activity']);
-        use CreatesApplication;
- $this->artisan('migrate', ['--database' => 'user']);
-        $this->artisan('migrate', ['--database' => 'xot']);
-    }
-
-    /**
-### Pattern Corretto (come Job Module)
-
-```php
-<?php
-
-declare(strict_types=1);
-
-namespace Modules\Activity\Tests;
-
-use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Modules\Activity\Providers\ActivityServiceProvider;
-use Modules\User\Providers\UserServiceProvider;
-use Modules\Xot\Providers\XotServiceProvider;
-use Modules\Xot\Tests\CreatesApplication;
-
-/**
- * Base test case for Activity module.
- *
- * Uses MySQL from .env.testing (NOT SQLite).
- */
-abstract class TestCase extends BaseTestCase
-{
     use CreatesApplication;
     use DatabaseTransactions;
 
+    protected $connectionsToTransact = [
+        'mysql',
+        'activity',
+        'user',
+    ];
+
     protected function setUp(): void
     {
         parent::setUp();
-
-        $this->artisan('migrate', ['--database' => 'activity']);
-        $this->artisan('migrate', ['--database' => 'user']);
-        $this->artisan('migrate', ['--database' => 'xot']);
     }
 
     /**
-     * @param \Illuminate\Foundation\Application $app
      * @return array<int, class-string>
      */
     protected function getPackageProviders($app): array
     {
         return [
-            ActivityServiceProvider::class,
-            UserServiceProvider::class,
             XotServiceProvider::class,
+            TenantServiceProvider::class,
+            UserServiceProvider::class,
+            ActivityServiceProvider::class,
         ];
     }
 }
 ```
 
+### Perché TenantServiceProvider è obbligatorio
+
+TenantServiceProvider crea la connessione `'activity'` a runtime per ogni modulo. Senza di esso:
+- La connessione `'activity'` non esiste
+- I modelli Activity usano fallback su `'xot'` o `'mysql'`
+- I test falliscono aspettandosi `getConnectionName() === 'activity'`
+
 ### Cosa Cambia
 
-- ✅ Da 156 righe a ~40 righe (-74%)
+- ✅ TenantServiceProvider registra connessione 'activity'
+- ✅ DatabaseTransactions copre ['mysql', 'activity', 'user']
 - ✅ Usa MySQL da .env.testing
-- ✅ Usa migration reali (no Schema::create)
-- ✅ DatabaseTransactions per isolation
 - ✅ Nessun override di configurazione
-- ✅ Nessun commento ovvio
 - ✅ Rispetta DRY + KISS
 
 ---

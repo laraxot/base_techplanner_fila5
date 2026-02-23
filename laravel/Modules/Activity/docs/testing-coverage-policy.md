@@ -23,6 +23,7 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 
 - Il TestCase usa `DatabaseTransactions` per rollback automatico tra test
 - `$connectionsToTransact = ['mysql', 'activity', 'user']` per coprire tutte le connessioni
+- **CRITICO**: La connessione `activity` DEVE essere inclusa. Senza di essa, ActivityLoggerTest getRecent fallisce per inquinamento dati.
 - Nessuna migrazione nel setUp: le migrazioni vanno eseguite una volta: `php artisan migrate --env=testing`
 
 ### 4. Connessioni Database
@@ -81,12 +82,12 @@ tests/
 - [ ] Coverage 100% su app/
 - [ ] PHPStan livello 10 passa
 
-## Fix StoredEvent meta_data Cast
+## Riferimenti Documentazione
 
-Per compatibilità con Laravel 12 e `spatie/laravel-schemaless-attributes`, il cast `meta_data` in `StoredEvent` deve usare `Spatie\SchemalessAttributes\Casts\SchemalessAttributes` (custom cast), NON `Spatie\SchemalessAttributes\SchemalessAttributes` (value object). Vedi [Modules/Xot/docs/spatie-schemaless-attributes.md](../../Xot/docs/spatie-schemaless-attributes.md).
-
-## Collegamenti
-
+- [Laravel Modules Testing](https://laravelmodules.com/docs/12/advanced/tests)
+- [Pest Coverage](https://pestphp.com/docs/test-coverage)
+- [Laravel Testing](https://laravel.com/docs/12.x/testing)
+- [testing-errors-fixes](testing-errors-fixes.md) - Errori risolti e correzioni
 - [testing-rules](testing-rules.md)
 - [testing-strategy-implementation](testing-strategy-implementation.md)
 - [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)

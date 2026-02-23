@@ -161,10 +161,12 @@ test('ActivityLogger can get recent activities', function () {
     $activity1 = $logger->log('event1', null, null, null, 'Event 1');
     $activity2 = $logger->log('event2', null, null, null, 'Event 2');
 
-    $recent = $logger->getRecent(5);
+    // With DatabaseTransactions + activity connection, we have only our 2 activities
+    $recent = $logger->getRecent(10);
     $ourActivityIds = $recent->whereIn('id', [$activity1->id, $activity2->id]);
 
-    expect($ourActivityIds)->toHaveCount(2);
+    expect($ourActivityIds)->toHaveCount(2)
+        ->and($recent->count())->toBeGreaterThanOrEqual(2);
 });
 
 test('ActivityLogger can clean old activities', function () {

@@ -29,12 +29,13 @@ abstract class TestCase extends BaseTestCase
     /**
      * Connections to wrap in transactions for automatic rollback.
      * MANDATORY: must include every connection used by this module's models.
-     * Activity models use default connection (mysql). User models use 'user'.
+     * Activity models use 'activity'. User models use 'user'.
      *
      * @var array<int, string>
      */
     protected $connectionsToTransact = [
         'mysql',
+        'activity',
         'user',
     ];
 
