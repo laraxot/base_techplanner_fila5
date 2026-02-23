@@ -39,6 +39,18 @@ Login e register usano il componente **logo configurabile** del tema:
 
 Non usare icone fisse (es. `meetup-logo`): usare sempre `<x-pub_theme::ui.logo />` per avere un logo unico e modificabile da config.
 
+## Pulsanti Social Login
+
+Il LoginWidget mostra pulsanti per Google, GitHub e Microsoft quando configurati in `config/services.php`:
+
+- **Google**: visibile se `GOOGLE_CLIENT_ID` in `.env`
+- **GitHub**: visibile se `GITHUB_CLIENT_ID` in `.env`
+- **Microsoft**: visibile se `MICROSOFT_CLIENT_ID` in `.env`
+
+Le traduzioni usano `user::auth.social.google`, `user::auth.social.github`, `user::auth.social.microsoft` (vedi [Auth Social Login Translations](../../Modules/User/docs/auth-social-login-translations.md)).
+
+I pulsanti usano colori espliciti per visibilità (WCAG AA): evitare classi Tailwind non definite che possono risultare bianche su bianco.
+
 ## Anti-pattern da evitare
 Non sostituire il widget con un form HTML classico:
 - Vietato: `<form method="POST" action="{{ route('login') }}">` con @csrf e input email/password/remember.
@@ -46,6 +58,7 @@ Non sostituire il widget con un form HTML classico:
 
 ## Collegamenti
 
+- [Auth Social Login Translations (modulo User)](../../Modules/User/docs/auth-social-login-translations.md)
 - [Troubleshooting login (modulo User)](../../Modules/User/docs/troubleshooting-login-component.md)
 - [Regola Cursor: form auth solo Filament widget](../../../.cursor/rules/filament-login-widget.mdc)
 - [Folio page file rules](folio-page-file-rules.md)

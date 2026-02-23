@@ -38,11 +38,17 @@ class PagesController extends Controller {
 
 **DOCUMENTAZIONE COMPLETA**: [docs/critical-frontend-rules.md](docs/critical-frontend-rules.md)
 
+### Composer Module Dependencies - CRITICAL RULE
+
+**Le dipendenze specifiche di un modulo vanno in `Modules/{ModuleName}/composer.json`, MAI nel root `laravel/composer.json`.**
+
+Esempio: `socialiteproviders/microsoft` (OAuth login) → `Modules/User/composer.json`. Regola: [.cursor/rules/composer-module-dependencies.mdc](.cursor/rules/composer-module-dependencies.mdc).
+
 ### Laravel Socialite + Microsoft OAuth - CRITICAL RULE
 
 **Per implementare autenticazione Microsoft OAuth, seguire ESATTAMENTE questa struttura:**
 
-1. **Installation**: `composer require laravel/socialite socialiteproviders/microsoft dutchcodingcompany/filament-socialite`
+1. **Installation**: Aggiungere `socialiteproviders/microsoft` a `Modules/User/composer.json` (require), poi `cd laravel && composer go`. **MAI** `composer require` nel root.
 
 2. **Configuration** in `config/services.php`:
 ```php
@@ -106,6 +112,128 @@ it('can handle successful OAuth callback', function () {
 7. **Documentation**: Aggiornare `Modules/User/docs/socialite-microsoft-integration.md` con tutti i dettagli di implementazione.
 
 **DOCUMENTAZIONE COMPLETA**: [laravel/Modules/User/docs/socialite-microsoft-integration.md](laravel/Modules/User/docs/socialite-microsoft-integration.md)
+
+### Test-Driven Development (TDD) in Laravel Modules - CRITICAL RULE
+
+**Per implementare TDD in Laravel Modules con Pest, seguire ESATTAMENTE questa struttura:**
+
+1. **Setup TDD Environment**:
+```bash
+# Install Pest with Laravel plugin
+composer require pestphp/pest-plugin-laravel --dev
+
+# Initialize Pest in module
+./vendor/bin/pest --init
+
+# Install coverage driver
+composer require pcov/clobber --dev
+```
+
+2. **TDD Directory Structure per Module**:
+```
+Modules/User/
+├── tests/
+│   ├── Feature/          # Test funzionalità complete
+│   │   └── OAuthTest.php
+│   │   └── UserRegistrationTest.php
+│   ├── Unit/             # Test unitari isolati
+│   │   └── Actions/
+│   │       └── CreateUserActionTest.php
+│   │   └── Models/
+│   │       └── UserTest.php
+│   ├── Pest.php          # Configurazione Pest
+│   └── TestCase.php      # Base TestCase del modulo
+```
+
+3. **Red-Green-Refactor Cycle**:
+```php
+// Step 1: RED - Scrivi test che fallisce
+it('can create user with Microsoft OAuth', function () {
+    $socialiteUser = Mockery::mock(SocialiteUser::class);
+    $socialiteUser->shouldReceive('getId')->andReturn('ms-123');
+    $socialiteUser->shouldReceive('getEmail')->andReturn('test@example.com');
+    
+    Socialite::shouldReceive('driver->user')->andReturn($socialiteUser);
+    
+    $response = $this->get('/auth/microsoft/callback?code=test');
+    $response->assertRedirect('/dashboard');
+    
+    $this->assertDatabaseHas('users', [
+        'microsoft_id' => 'ms-123',
+        'email' => 'test@example.com',
+    ]);
+});
+
+// Step 2: GREEN - Scrivi codice minimo per far passare il test
+class CreateUserFromOAuthAction extends Action {
+    public function execute(SocialiteUser $socialiteUser): User {
+        return User::create([
+            'microsoft_id' => $socialiteUser->getId(),
+            'email' => $socialiteUser->getEmail(),
+            'name' => $socialiteUser->getName(),
+        ]);
+    }
+}
+
+// Step 3: REFACTOR - Migliora il codice mantenendo i test verdi
+class CreateUserFromOAuthAction extends Action {
+    public function execute(SocialiteUser $socialiteUser): User {
+        return DB::transaction(function () use ($socialiteUser) {
+            $user = User::create([
+                'microsoft_id' => $socialiteUser->getId(),
+                'email' => $socialiteUser->getEmail(),
+                'name' => $socialiteUser->getName(),
+            ]);
+            
+            Activity::log("User created via OAuth: {$user->email}");
+            
+            return $user;
+        });
+    }
+}
+```
+
+4. **TDD Best Practices for Modules**:
+- **NEVER use RefreshDatabase** - Usa `DatabaseTransactions` o `setUp/tearDown`
+- **Isola i test per modulo** - Ogni modulo ha il proprio TestCase
+- **Mock dipendenze esterne** - OAuth, API, servizi di terze parti
+- **Testa le Actions** - Ogni QueueableAction deve avere un test unitario
+- **Coverage 100%** - Tutti i path di codice devono essere testati
+- **Test driven development** - Scrivi il test prima della feature
+
+5. **Coverage Analysis**:
+```bash
+# Genera report coverage
+./vendor/bin/pest --coverage --min=100
+
+# Coverage specifico per modulo
+./vendor/bin/pest Modules/User/tests --coverage --min=100
+
+# Report HTML per analisi dettagliata
+./vendor/bin/pest --coverage --coverage-html coverage/
+```
+
+6. **Continuous TDD Workflow**:
+```bash
+# 1. Scrivi test rosso
+./vendor/bin/pest --filter="test_name"
+
+# 2. Scrivi codice minimo
+# 3. Esegui test fino a verde
+./vendor/bin/pest
+
+# 4. Refactor con sicurezza
+./vendor/bin/pint
+./vendor/bin/phpstan analyse
+./vendor/bin/pest
+
+# 5. Commit con messaggio descrittivo
+git add .
+git commit -m "feat: implement OAuth with TDD"
+git push
+```
+
+**DOCUMENTAZIONE COMPLETA**: [laravel/Modules/Xot/docs/tdd-laravel-pestd-complete-guide.md](laravel/Modules/Xot/docs/tdd-laravel-pestd-complete-guide.md)
 
 ### Component Validation Before Creating Pages
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0dd800604d2e9845734635548d18495b",
+    "content-hash": "c069370cdf07ed05044dba13de4dd3c1",
     "packages": [
         {
             "name": "aaronfrancis/fast-paginate",
@@ -937,7 +937,7 @@
         },
         {
             "name": "coolsam/panel-modules",
-            "version": "dev-master",
+            "version": "dev-dev",
             "dist": {
                 "type": "path",
                 "url": "Modules/Xot/./packages/coolsam/panel-modules",
@@ -9599,6 +9599,57 @@
                 "source": "https://github.com/socialiteproviders/manager"
             },
             "time": "2025-02-24T19:33:30+00:00"
+        },
+        {
+            "name": "socialiteproviders/microsoft",
+            "version": "4.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocialiteProviders/Microsoft.git",
+                "reference": "33ac5df3e13e0430bcff04031d606bda88f2b27f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocialiteProviders/Microsoft/zipball/33ac5df3e13e0430bcff04031d606bda88f2b27f",
+                "reference": "33ac5df3e13e0430bcff04031d606bda88f2b27f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "firebase/php-jwt": "^7.0",
+                "php": "^8.0",
+                "socialiteproviders/manager": "^4.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SocialiteProviders\\Microsoft\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Faust",
+                    "email": "hello@brianfaust.de"
+                }
+            ],
+            "description": "Microsoft OAuth2 Provider for Laravel Socialite",
+            "keywords": [
+                "laravel",
+                "microsoft",
+                "oauth",
+                "provider",
+                "socialite"
+            ],
+            "support": {
+                "docs": "https://socialiteproviders.com/microsoft",
+                "issues": "https://github.com/socialiteproviders/providers/issues",
+                "source": "https://github.com/socialiteproviders/providers"
+            },
+            "time": "2026-02-18T14:40:47+00:00"
         },
         {
             "name": "spatie/better-types",
@@ -22457,5 +22508,5 @@
         "php": "^8.2"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }

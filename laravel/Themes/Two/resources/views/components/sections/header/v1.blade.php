@@ -173,7 +173,21 @@
                     </div>
                 </div>
 
-                {{-- Auth --}}
+                {{-- Auth: guest = Login, auth = user dropdown --}}
+                @guest
+                    <a href="{{ route('login') }}"
+                       class="text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96] rounded-md px-3 py-2"
+                       :class="scrolled ? 'text-gray-700 hover:text-gray-900' : 'text-white/90 hover:text-white'">
+                        {{ __('pub_theme::header.auth.login') }}
+                    </a>
+                    @if(Route::has('register'))
+                        <a href="{{ route('register') }}"
+                           class="text-sm font-semibold px-4 py-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2"
+                           :class="scrolled ? 'bg-[#1E5A96] text-white hover:bg-[#174a7a] focus:ring-[#1E5A96]' : 'bg-white/20 text-white hover:bg-white/30 focus:ring-white border border-white/50'">
+                            {{ __('pub_theme::header.auth.register') }}
+                        </a>
+                    @endif
+                @endguest
                 @auth
                     <div class="relative" x-data="{ userOpen: false }">
                         <button
@@ -368,6 +382,19 @@
                         <button type="submit" 
                                 class="block w-full text-left px-4 py-2 text-sm text-red-400 hover:text-red-300 hover:bg-white/5 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-[#0f2b46]">{{ __('Esci') }}</button>
                     </form>
+                </div>
+            @else
+                <div class="border-t border-white/10 pt-4 mt-3 space-y-2">
+                    <a href="{{ route('login') }}"
+                       class="block px-4 py-3 text-sm font-medium text-white/90 hover:text-white hover:bg-white/5 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0f2b46]">
+                        {{ __('pub_theme::header.auth.login') }}
+                    </a>
+                    @if(Route::has('register'))
+                        <a href="{{ route('register') }}"
+                           class="block px-4 py-3 text-sm font-semibold text-center text-[#0f2b46] bg-white/90 hover:bg-white rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0f2b46]">
+                            {{ __('pub_theme::header.auth.register') }}
+                        </a>
+                    @endif
                 </div>
             @endauth
 

@@ -12,4 +12,6 @@ return [
     'portfolio' => 'Portfolio',
     'news' => 'Notizie',
     'blog' => 'Blog',
+    'login_cta' => 'Accedi',
+    'dashboard_cta' => 'Area personale',
 ];
