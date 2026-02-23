@@ -231,6 +231,7 @@ I moduli usano il database default. NON creare connessioni dedicate per modulo. 
 
 ## Collegamenti
 
+- [TDD Laravel Guide](tdd-laravel-guide.md)
 - [Testing Strategy](./testing_strategy.md)
 - [Performance Guidelines](../performance/)
 - [Laraxot Conventions](../laraxot_conventions.md)

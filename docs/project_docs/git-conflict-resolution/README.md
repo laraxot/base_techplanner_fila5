@@ -55,11 +55,12 @@ docs/git-conflict-resolution/
 
 ## Best Practices per Risoluzione Conflitti
 
-1. **Identificazione**: Utilizzare `git status` e `grep` per identificare i conflitti
-2. **Documentazione**: Documentare ogni decisione di risoluzione
-3. **Verifica**: Eseguire PHPStan dopo la risoluzione
-4. **Organizzazione**: Spostare la documentazione nella struttura corretta del progetto
-5. **Pulizia**: Rimuovere sempre file temporanei dalla root
+1. **Identificazione**: `grep -r "<<<<<<< Updated upstream" .` per conflitti merge
+2. **Regola buon scout**: Lasciare ogni file migliore di come lo si è trovato
+3. **Documentazione**: Documentare ogni decisione di risoluzione
+4. **Verifica**: Eseguire PHPStan dopo la risoluzione
+5. **Organizzazione**: Spostare la documentazione nella struttura corretta del progetto
+6. **Pulizia**: Rimuovere sempre file temporanei dalla root
 
 ## Collegamenti
 

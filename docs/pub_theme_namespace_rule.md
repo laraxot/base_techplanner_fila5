@@ -3,7 +3,7 @@
 ## ⚠️ ERRORE CRITICO DA NON RIPETERE
 
 ### Descrizione dell'Errore
-Utilizzo di namespace specifico del tema (`sixteen::`, `two::`, `zero::`) invece dell'alias dinamico `pub_theme::` nelle configurazioni CMS e nei componenti.
+Utilizzo di namespace specifico del tema (`sixteen::`, `two::`, `themes.two::`, `zero::`) invece dell'alias dinamico `pub_theme::` nelle configurazioni CMS e nei componenti. Anche `pub_theme:` (manca un `:`) è errato.
 
 ### Regola Fondamentale
 
@@ -31,12 +31,15 @@ Utilizzo di namespace specifico del tema (`sixteen::`, `two::`, `zero::`) invece
 {
     "view": "sixteen::components.blocks.hero.main",
     "view": "two::components.blocks.navigation.simple",
+    "view": "themes.two::components.sections.header.v1",
     "view": "zero::layouts.app"
 }
 ```
 
 ```blade
 @include('sixteen::components.header')
+@include('themes.two::components.sections.header_bi5', ['blocks' => $blocks])
+@include('pub_theme:components.header')  {{-- ERRORE: manca : in pub_theme:: --}}
 <x-sixteen::button>Click me</x-sixteen::button>
 @lang('sixteen::navigation.home')
 ```

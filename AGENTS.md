@@ -38,6 +38,75 @@ class PagesController extends Controller {
 
 **DOCUMENTAZIONE COMPLETA**: [docs/critical-frontend-rules.md](docs/critical-frontend-rules.md)
 
+### Laravel Socialite + Microsoft OAuth - CRITICAL RULE
+
+**Per implementare autenticazione Microsoft OAuth, seguire ESATTAMENTE questa struttura:**
+
+1. **Installation**: `composer require laravel/socialite socialiteproviders/microsoft dutchcodingcompany/filament-socialite`
+
+2. **Configuration** in `config/services.php`:
+```php
+'microsoft' => [
+    'client_id' => env('MICROSOFT_CLIENT_ID'),
+    'client_secret' => env('MICROSOFT_CLIENT_SECRET'),
+    'redirect' => env('MICROSOFT_REDIRECT_URI'),
+    'tenant' => env('MICROSOFT_TENANT_ID', 'common'),
+],
+```
+
+3. **User Model Requirements**:
+```php
+// NEVER use property_exists() on Eloquent models
+// Use isset() or hasAttribute() instead
+protected function casts(): array
+{
+    return [
+        'microsoft_token_expires_at' => 'datetime',
+        'email_verified_at' => 'datetime',
+    ];
+}
+```
+
+4. **Filament Plugin Configuration** (in ServiceProvider):
+```php
+FilamentSocialitePlugin::make()
+    ->providers([
+        Provider::make('microsoft')
+            ->label('Microsoft')
+            ->icon('fab-microsoft')
+            ->color('primary')
+            ->stateless(false),
+    ])
+    ->registration(true)
+    ->createUserUsing(function (string $provider, SocialiteUser $socialiteUser) {
+        return app(CreateUserFromOAuthAction::class)->execute($socialiteUser);
+    })
+```
+
+5. **Critical Security Rules**:
+- ✅ Store tokens in encrypted columns: `$table->text('microsoft_refresh_token')->nullable()->encrypted();`
+- ✅ Validate OAuth state parameter in every callback
+- ✅ Implement tenant isolation for multi-tenant scenarios
+- ✅ Use Activity module to log all OAuth events
+- ✅ NEVER log plain tokens in Activity logs
+- ✅ Implement token refresh logic before expiration
+
+6. **Testing Requirements** (100% coverage):
+```php
+// Pest test pattern for OAuth
+it('can handle successful OAuth callback', function () {
+    $socialiteUser = Mockery::mock(SocialiteUser::class);
+    Socialite::shouldReceive('driver->user')->andReturn($socialiteUser);
+    
+    $response = $this->get('/auth/microsoft/callback?state=valid&code=auth');
+    $response->assertRedirect('/admin');
+});
+```
+
+7. **Documentation**: Aggiornare `Modules/User/docs/socialite-microsoft-integration.md` con tutti i dettagli di implementazione.
+
+**DOCUMENTAZIONE COMPLETA**: [laravel/Modules/User/docs/socialite-microsoft-integration.md](laravel/Modules/User/docs/socialite-microsoft-integration.md)
+
 ### Component Validation Before Creating Pages
 
 **SEMPRE verificare l'esistenza dei componenti prima di definire i blocchi JSON.**
@@ -187,6 +256,11 @@ php artisan test --filter="TestName"
 - Use `DatabaseTransactions` instead when needed
 - **Mandatory Pest syntax**: Use `it()`, `test()`, `describe()` - NO PHPUnit class-based tests
 - If test fails: **the test is wrong, not the working code**
+
+### TDD (Test-Driven Development)
+- Ciclo RED-GREEN-REFACTOR: scrivi test che fallisce → codice minimo → refactor
+- Per nuove feature e bugfix: test prima, poi implementazione
+- Doc: [docs/development/tdd-laravel-guide.md](docs/development/tdd-laravel-guide.md)
 
 ## Code Style Guidelines
 
