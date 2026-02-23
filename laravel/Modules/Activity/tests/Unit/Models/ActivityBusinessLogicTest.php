@@ -8,11 +8,9 @@ use Modules\Activity\Models\Activity;
 
 describe('Activity Business Logic', function () {
     test('activity has correct connection configured', function () {
-        $reflection = new \ReflectionClass(Activity::class);
-        $property = $reflection->getProperty('connection');
-        $property->setAccessible(true);
+        $activity = new Activity();
 
-        expect($property->getValue($reflection->newInstanceWithoutConstructor()))->toBe('activity');
+        expect($activity->getConnectionName())->toBe('activity');
     });
 
     test('activity has expected fillable fields', function () {

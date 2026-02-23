@@ -51,6 +51,44 @@ protected function setUp(): void
 
 ## Soluzione
 
+### Pattern Corretto (include TenantServiceProvider)
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Activity\Tests;
+
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Modules\Activity\Providers\ActivityServiceProvider;
+use Modules\Tenant\Providers\TenantServiceProvider;
+use Modules\User\Providers\UserServiceProvider;
+use Modules\Xot\Providers\XotServiceProvider;
+use Modules\Xot\Tests\CreatesApplication;
+
+/**
+ * Base test case for Activity module.
+ *
+ * Uses MySQL from .env.testing (NOT SQLite).
+ * TenantServiceProvider è NECESSARIO per registrare la connessione 'activity'.
+ */
+abstract class TestCase extends BaseTestCase
+{
+       use DatabaseTransactions;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->artisan('migrate', ['--database' => 'activity']);
+        use CreatesApplication;
+ $this->artisan('migrate', ['--database' => 'user']);
+        $this->artisan('migrate', ['--database' => 'xot']);
+    }
+
+    /**
 ### Pattern Corretto (come Job Module)
 
 ```php

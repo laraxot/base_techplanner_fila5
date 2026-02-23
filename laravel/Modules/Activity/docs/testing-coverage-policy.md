@@ -28,17 +28,17 @@ Raggiungere e mantenere **100% coverage** con Pest sul modulo Activity.
 ### 4. Connessioni Database
 
 - **mysql**: connessione default
-- **activity**: modelli Activity, Snapshot, StoredEvent (mappata da TenantServiceProvider)
-- **user**: modelli User (mappata da TenantServiceProvider)
+- **activity**: modelli Activity, Snapshot, StoredEvent (creata da TenantServiceProvider a runtime)
+- **user**: modelli User
 
-**Setup minimo .env.testing per Activity:**
+**Regola**: database.php NON deve contenere 'activity'. I modelli Activity DEVONO avere `$connection = 'activity'`. Vedi [fix01](prompts/fix01.txt).
+
+**Setup minimo .env.testing:**
 ```env
 DB_DATABASE=techplanner_data_test
 DB_DATABASE_USER=techplanner_data_test
-DB_DATABASE_ACTIVITY=techplanner_activity_test
 ```
-
-Per evitare conflitti di schema, `DB_DATABASE_USER` può puntare allo stesso database di `DB_DATABASE` in ambiente test.
+NON aggiungere DB_DATABASE_ACTIVITY: TenantServiceProvider usa il fallback dal default (stesso DB). Vedi [fix03](prompts/fix03.txt).
 
 **Migrazioni pre-test:**
 ```bash

@@ -6,7 +6,9 @@ namespace Modules\Activity\Tests;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Modules\Activity\Models\Activity;
 use Modules\Activity\Providers\ActivityServiceProvider;
+use Modules\Tenant\Providers\TenantServiceProvider;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Providers\XotServiceProvider;
 use Modules\Xot\Tests\CreatesApplication;
@@ -27,16 +29,21 @@ abstract class TestCase extends BaseTestCase
     /**
      * Connections to wrap in transactions for automatic rollback.
      * MANDATORY: must include every connection used by this module's models.
-     * Activity models use $connection = 'activity' (separate PDO handle).
-     * Without this, Activity data is NEVER rolled back between tests.
+     * Activity models use default connection (mysql). User models use 'user'.
      *
      * @var array<int, string>
      */
     protected $connectionsToTransact = [
         'mysql',
-        'activity',
         'user',
     ];
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        // NO manual delete: DatabaseTransactions rollback provides isolation.
+        // Deleting here would be rolled back and cause data accumulation.
+    }
 
     /**
      * @return array<int, class-string>
@@ -45,6 +52,7 @@ abstract class TestCase extends BaseTestCase
     {
         return [
             XotServiceProvider::class,
+            TenantServiceProvider::class,
             UserServiceProvider::class,
             ActivityServiceProvider::class,
         ];

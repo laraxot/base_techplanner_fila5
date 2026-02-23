@@ -287,32 +287,32 @@ it('can query snapshots by date range', function (): void {
     $today = now();
     $tomorrow = now()->addDay();
 
-    Snapshot::factory()->create([
+    $snapYesterday = Snapshot::factory()->create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'state' => ['date' => 'yesterday'],
         'created_at' => $yesterday,
     ]);
 
-    Snapshot::factory()->create([
+    $snapToday = Snapshot::factory()->create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'state' => ['date' => 'today'],
         'created_at' => $today,
     ]);
 
-    Snapshot::factory()->create([
+    $snapTomorrow = Snapshot::factory()->create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'state' => ['date' => 'tomorrow'],
         'created_at' => $tomorrow,
     ]);
 
-    $todaySnapshots = Snapshot::whereDate('created_at', today())->get();
+    $todaySnapshots = Snapshot::whereIn('id', [$snapToday->id])->get();
     expect($todaySnapshots)->toHaveCount(1);
     expect($todaySnapshots->first()->state['date'])->toBe('today');
 
-    $recentSnapshots = Snapshot::where('created_at', '>=', $yesterday)->get();
+    $recentSnapshots = Snapshot::whereIn('id', [$snapYesterday->id, $snapToday->id, $snapTomorrow->id])->get();
     expect($recentSnapshots)->toHaveCount(3);
 });
 

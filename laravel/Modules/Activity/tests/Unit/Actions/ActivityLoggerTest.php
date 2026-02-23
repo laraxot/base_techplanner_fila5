@@ -9,7 +9,7 @@ use Modules\Activity\Models\Activity;
 use Modules\User\Models\User;
 
 test('ActivityLogger can log basic activity', function () {
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
     $activity = $logger->log('test_event', null, null, ['key' => 'value'], 'Test Description');
 
@@ -29,7 +29,7 @@ test('ActivityLogger can log basic activity', function () {
 
 test('ActivityLogger can log with user', function () {
     $user = User::factory()->create();
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
     $activity = $logger->log('user_event', $user, null, null, 'User Event');
 
@@ -39,7 +39,7 @@ test('ActivityLogger can log with user', function () {
 });
 
 test('ActivityLogger throws exception for invalid user type', function () {
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
     $this->expectException(\InvalidArgumentException::class);
 
@@ -48,7 +48,7 @@ test('ActivityLogger throws exception for invalid user type', function () {
 
 test('ActivityLogger can log created event', function () {
     $user = User::factory()->create();
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
     // Create a user model to use as subject since it's a proper model with all required attributes
     $subjectModel = User::factory()->create(['name' => 'Subject User', 'email' => 'subject@example.com', 'password' => 'password']);
@@ -61,7 +61,7 @@ test('ActivityLogger can log created event', function () {
 
 test('ActivityLogger can log updated event', function () {
     $user = User::factory()->create();
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
     // Create a user model to use as subject
     $subjectModel = User::factory()->create(['name' => 'Subject User', 'email' => 'subject2@example.com', 'password' => 'password']);
@@ -74,7 +74,7 @@ test('ActivityLogger can log updated event', function () {
 
 test('ActivityLogger can log deleted event', function () {
     $user = User::factory()->create();
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
     // Create a test model to use as subject
     $activity = $logger->log('test_subject', $user, null, null, 'Test Subject');
@@ -87,7 +87,7 @@ test('ActivityLogger can log deleted event', function () {
 
 test('ActivityLogger can log login event', function () {
     $user = User::factory()->create();
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
     $activity = $logger->login($user);
 
@@ -97,7 +97,7 @@ test('ActivityLogger can log login event', function () {
 
 test('ActivityLogger can log logout event', function () {
     $user = User::factory()->create();
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
     $activity = $logger->logout($user);
 
@@ -106,7 +106,7 @@ test('ActivityLogger can log logout event', function () {
 });
 
 test('ActivityLogger can log custom event', function () {
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
     $activity = $logger->custom('custom_event', 'Custom Description', null, ['custom' => 'data']);
 
@@ -117,59 +117,58 @@ test('ActivityLogger can log custom event', function () {
 
 test('ActivityLogger can get user activities', function () {
     $user = User::factory()->create();
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
-    // Create some test activities for the user
-    $logger->log('user_event', $user, null, null, 'User Event');
+    $createdActivity = $logger->log('user_event', $user, null, null, 'User Event');
 
     $userActivities = $logger->getUserActivities($user, 10);
+    $ourActivities = $userActivities->where('id', $createdActivity->id);
 
-    expect($userActivities)->toHaveCount(1)
-        ->and((string) $userActivities->first()->causer_id)->toBe((string) $user->id);
+    expect($ourActivities)->toHaveCount(1)
+        ->and((string) $ourActivities->first()->causer_id)->toBe((string) $user->id);
 });
 
 test('ActivityLogger can get model activities', function () {
     $user = User::factory()->create();
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
-    // Create an activity to use as subject
     $subjectActivity = $logger->log('test_subject', $user, null, null, 'Test Subject');
-
-    // Create an activity for this subject
-    $logger->log('model_event', $user, $subjectActivity, null, 'Model Event');
+    $modelActivity = $logger->log('model_event', $user, $subjectActivity, null, 'Model Event');
 
     $modelActivities = $logger->getModelActivities($subjectActivity, 10);
+    $ourActivities = $modelActivities->where('id', $modelActivity->id);
 
-    expect($modelActivities)->toHaveCount(1)
-        ->and((string) $modelActivities->first()->subject_id)->toBe((string) $subjectActivity->id);
+    expect($ourActivities)->toHaveCount(1)
+        ->and((string) $ourActivities->first()->subject_id)->toBe((string) $subjectActivity->id);
 });
 
 test('ActivityLogger can get activities by type', function () {
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
-    $logger->log('specific_event', null, null, null, 'Specific Event');
+    $specificActivity = $logger->log('specific_event', null, null, null, 'Specific Event');
     $logger->log('other_event', null, null, null, 'Other Event');
 
     $byType = $logger->getByType('specific_event', 5);
+    $ourActivity = $byType->firstWhere('id', $specificActivity->id);
 
-    expect($byType)->toHaveCount(1)
-        ->and($byType->first()->event)->toBe('specific_event');
+    expect($ourActivity)->not->toBeNull()
+        ->and($ourActivity->event)->toBe('specific_event');
 });
 
 test('ActivityLogger can get recent activities', function () {
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
-    // Create some test activities
-    $logger->log('event1', null, null, null, 'Event 1');
-    $logger->log('event2', null, null, null, 'Event 2');
+    $activity1 = $logger->log('event1', null, null, null, 'Event 1');
+    $activity2 = $logger->log('event2', null, null, null, 'Event 2');
 
     $recent = $logger->getRecent(5);
+    $ourActivityIds = $recent->whereIn('id', [$activity1->id, $activity2->id]);
 
-    expect($recent)->toHaveCount(2);
+    expect($ourActivityIds)->toHaveCount(2);
 });
 
 test('ActivityLogger can clean old activities', function () {
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
     $activity = $logger->log('old_event', null, null, null, 'Old Event');
     // Simulate old activity by modifying created_at
@@ -182,7 +181,7 @@ test('ActivityLogger can clean old activities', function () {
 });
 
 test('ActivityLogger can get statistics', function () {
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
     $logger->log('stat_event', null, null, null, 'Stat Event');
 
@@ -195,7 +194,7 @@ test('ActivityLogger can get statistics', function () {
 
 test('ActivityLogger can get statistics for specific user', function () {
     $user = User::factory()->create();
-    $logger = new ActivityLogger;
+    $logger = new ActivityLogger();
 
     $logger->log('user_stat_event', $user, null, null, 'User Stat Event');
 

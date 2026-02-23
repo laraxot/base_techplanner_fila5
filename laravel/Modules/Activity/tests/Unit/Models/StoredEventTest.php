@@ -16,11 +16,7 @@ test('StoredEvent model can be instantiated', function () {
 });
 
 test('StoredEvent model has correct connection', function () {
-    $reflection = new \ReflectionClass(StoredEvent::class);
-    $storedEvent = $reflection->newInstanceWithoutConstructor();
+    $storedEvent = new StoredEvent();
 
-    $property = $reflection->getProperty('connection');
-    $property->setAccessible(true);
-
-    expect($property->getValue($storedEvent))->toBe('activity');
+    expect($storedEvent->getConnectionName())->toBe('activity');
 });

@@ -16,11 +16,7 @@ test('Snapshot model can be instantiated', function () {
 });
 
 test('Snapshot model has correct connection', function () {
-    $reflection = new \ReflectionClass(Snapshot::class);
-    $snapshot = $reflection->newInstanceWithoutConstructor();
+    $snapshot = new Snapshot();
 
-    $property = $reflection->getProperty('connection');
-    $property->setAccessible(true);
-
-    expect($property->getValue($snapshot))->toBe('activity');
+    expect($snapshot->getConnectionName())->toBe('activity');
 });

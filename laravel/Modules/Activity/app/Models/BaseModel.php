@@ -15,17 +15,15 @@ use Modules\Xot\Models\XotBaseModel;
  * - Updater trait
  * - Standard casts (published_at, timestamps, audit fields)
  *
+ * NOTE: XotBaseModel imposta la connessione predefinita su "xot".
+ * Questo modulo sovrascrive la proprietà per forzare l'uso del
+ * database dedicato all'Event Sourcing (`activity`).
+ *
  * @see \Modules\Xot\Models\XotBaseModel
  */
 abstract class BaseModel extends XotBaseModel
 {
-    /**
-     * The connection name for the model.
-     *
-     * This is the ONLY property specific to Activity module.
-     *
-     * @var string
-     */
+    /** @var string */
     protected $connection = 'activity';
 
     /**

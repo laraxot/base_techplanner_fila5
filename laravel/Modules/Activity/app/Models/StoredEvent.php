@@ -61,9 +61,8 @@ class StoredEvent extends SpatieStoredEvent
 {
     use HasXotFactory;
 
+    /** @var string */
     protected $connection = 'activity';
-
-    protected $table = 'stored_events';
 
     protected $fillable = [
         'id',

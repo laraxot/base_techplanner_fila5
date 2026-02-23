@@ -21,6 +21,13 @@ Il Tema Two è un tema moderno e responsive per TechPlanner, progettato con le s
 
 ## 🏗️ Architettura Componenti
 
+### Connessioni al database
+
+- Non definire connessioni dedicate ai moduli (ad esempio `activity`) dentro `config/database.php`
+- Il provisioning delle connessioni modulari è centralizzato nel `TenantServiceProvider`, che clona la connessione di default applicando gli override tramite variabili `DB_*_MODULE`
+- Questa regola garantisce parità tra ambiente locale, build del tema e deployment
+- I modelli dei moduli che dispongono di una connessione dedicata (es. `Activity`) la forzano tramite il rispettivo `BaseModel` (`protected $connection = 'activity'`) così che tutte le query usino il canale corretto
+
 ### Sistema a Blocchi
 
 Il tema utilizza un sistema di blocchi basato su JSON per gestire i contenuti dinamicamente:

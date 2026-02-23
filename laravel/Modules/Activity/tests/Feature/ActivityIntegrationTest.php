@@ -164,14 +164,18 @@ test('activity module handles concurrent operations correctly', function () {
     \assert($user instanceof User);
     expect($user)->not->toBeNull();
 
+    $testRunId = Str::uuid()->toString();
+    $logName = "concurrency_test_{$testRunId}";
+
     $concurrentActivities = [];
     $concurrentSnapshots = [];
 
     $promises = [];
 
     for ($i = 0; $i < 10; $i++) {
-        $promises[] = function () use ($user, &$concurrentActivities, &$concurrentSnapshots, $i) {
+        $promises[] = function () use ($user, $logName, &$concurrentActivities, &$concurrentSnapshots, $i) {
             $activity = Activity::factory()->create([ // @phpstan-ignore-line method.nonObject
+                'log_name' => $logName,
                 'causer_type' => User::class,
                 'causer_id' => $user->id,
                 'properties' => ['iteration' => $i, 'timestamp' => now()->toISOString()],
@@ -187,6 +191,7 @@ test('activity module handles concurrent operations correctly', function () {
                         'activity_id' => $activity->id,
                         'iteration' => $i,
                         'user_id' => $user->id,
+                        'test_run' => $logName,
                     ],
                 ]);
                 \assert($snapshot instanceof Snapshot);
@@ -204,8 +209,7 @@ test('activity module handles concurrent operations correctly', function () {
     expect($results)->toHaveCount(10)->each->toBeTrue();
 
     $userActivities = Activity::query()
-        ->where('causer_type', User::class)
-        ->where('causer_id', (string) $user->id)
+        ->whereIn('id', $concurrentActivities)
         ->get();
     expect($userActivities)->toHaveCount(10);
 
@@ -355,10 +359,12 @@ test('activity module supports bulk operations efficiently', function () {
     \assert($user instanceof User);
     expect($user)->not->toBeNull();
 
+    $bulkLogName = 'bulk_operation_'.Str::uuid()->toString();
+
     $activitiesData = [];
     for ($i = 0; $i < 100; $i++) {
         $activitiesData[] = [
-            'log_name' => 'bulk_operation',
+            'log_name' => $bulkLogName,
             'description' => "Bulk activity {$i}",
             'causer_type' => User::class,
             'causer_id' => (string) $user->id,
@@ -370,7 +376,7 @@ test('activity module supports bulk operations efficiently', function () {
 
     Activity::insert($activitiesData);
 
-    $bulkActivities = Activity::where('log_name', 'bulk_operation')->get();
+    $bulkActivities = Activity::where('log_name', $bulkLogName)->get();
 
     expect($bulkActivities)->toHaveCount(100);
 
@@ -393,7 +399,7 @@ test('activity module supports bulk operations efficiently', function () {
     $userActivities = Activity::query()
         ->where('causer_type', User::class)
         ->where('causer_id', (string) $user->id)
-        ->where('log_name', 'bulk_operation')
+        ->where('log_name', $bulkLogName)
         ->get();
     expect($userActivities)->toHaveCount(100);
 });

@@ -225,6 +225,10 @@ grep -r "RefreshDatabase" Modules/*/tests/ --include="*.php" | wc -l
 
 Questa regola deve essere applicata SUBITO a tutti i test esistenti prima di procedere con qualsiasi altro sviluppo.
 
+## Database Connections
+
+I moduli usano il database default. NON creare connessioni dedicate per modulo. Vedi [database-connections](../../.cursor/rules/database-connections.mdc).
+
 ## Collegamenti
 
 - [Testing Strategy](./testing_strategy.md)

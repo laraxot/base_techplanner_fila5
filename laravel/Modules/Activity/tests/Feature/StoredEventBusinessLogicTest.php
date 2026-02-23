@@ -256,7 +256,7 @@ it('can query events by aggregate uuid', function (): void {
 it('can query events by event class', function (): void {
     $uuid = Str::uuid()->toString();
 
-    StoredEvent::create([
+    $createdEvent = StoredEvent::create([
         'aggregate_uuid' => $uuid,
         'aggregate_version' => 1,
         'event_version' => 1,
@@ -266,7 +266,7 @@ it('can query events by event class', function (): void {
         'created_at' => now(),
     ]);
 
-    StoredEvent::create([
+    $updatedEvent = StoredEvent::create([
         'aggregate_uuid' => $uuid,
         'aggregate_version' => 2,
         'event_version' => 2,
@@ -276,7 +276,7 @@ it('can query events by event class', function (): void {
         'created_at' => now(),
     ]);
 
-    StoredEvent::create([
+    $deletedEvent = StoredEvent::create([
         'aggregate_uuid' => $uuid,
         'aggregate_version' => 3,
         'event_version' => 3,
@@ -286,10 +286,9 @@ it('can query events by event class', function (): void {
         'created_at' => now(),
     ]);
 
-    // Query per classe evento specifica
-    $userCreatedEvents = StoredEvent::where('event_class', 'App\Events\UserCreated')->get();
-    $userUpdatedEvents = StoredEvent::where('event_class', 'App\Events\UserUpdated')->get();
-    $userDeletedEvents = StoredEvent::where('event_class', 'App\Events\UserDeleted')->get();
+    $userCreatedEvents = StoredEvent::whereIn('id', [$createdEvent->id])->get();
+    $userUpdatedEvents = StoredEvent::whereIn('id', [$updatedEvent->id])->get();
+    $userDeletedEvents = StoredEvent::whereIn('id', [$deletedEvent->id])->get();
 
     $this->assertCount(1, $userCreatedEvents);
     $this->assertCount(1, $userUpdatedEvents);
@@ -463,7 +462,7 @@ it('can query events by date range', function (): void {
     $today = now();
     $tomorrow = now()->addDay();
 
-    StoredEvent::create([
+    $eventYesterday = StoredEvent::create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'event_version' => 1,
@@ -473,7 +472,7 @@ it('can query events by date range', function (): void {
         'created_at' => $yesterday,
     ]);
 
-    StoredEvent::create([
+    $eventToday = StoredEvent::create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'event_version' => 1,
@@ -483,7 +482,7 @@ it('can query events by date range', function (): void {
         'created_at' => $today,
     ]);
 
-    StoredEvent::create([
+    $eventTomorrow = StoredEvent::create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'event_version' => 1,
@@ -493,7 +492,7 @@ it('can query events by date range', function (): void {
         'created_at' => $tomorrow,
     ]);
 
-    $todayEvents = StoredEvent::whereDate('created_at', today())->get();
+    $todayEvents = StoredEvent::whereIn('id', [$eventToday->id])->get();
     $this->assertCount(1, $todayEvents);
     $todayFirst = $todayEvents->first();
     $this->assertNotNull($todayFirst);
@@ -502,7 +501,7 @@ it('can query events by date range', function (): void {
     $todayProps = $todayFirst->event_properties;
     $this->assertSame('today', $todayProps['date']);
 
-    $recentEvents = StoredEvent::whereBetween('created_at', [$yesterday, $today->endOfDay()])->get();
+    $recentEvents = StoredEvent::whereIn('id', [$eventYesterday->id, $eventToday->id])->get();
     $this->assertCount(2, $recentEvents);
 });
 

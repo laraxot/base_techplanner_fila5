@@ -62,8 +62,7 @@ abstract class TestCase extends BaseTestCase
      */
     protected $connectionsToTransact = [
         'mysql',
-        '{module_snake}',  // DEVE corrispondere a $connection nei Model del modulo
-        'user',
+        'user',  // Solo se User models sono usati. Per moduli che usano default: solo 'mysql'
     ];
 
     // NO setUp() override - NON NECESSARIO
@@ -80,12 +79,12 @@ abstract class TestCase extends BaseTestCase
 5.  **No config overrides**: No `config(['xra.pub_theme' => ...])`, no `XotData::make()->update()`.
 
 ```php
-// Example for Activity module:
+// Example for Activity module (usa default connection):
 protected $connectionsToTransact = [
     'mysql',
-    'activity',  // Activity models use $connection = 'activity'
     'user',
 ];
+// NOTA: I moduli NON hanno connessioni dedicate. Vedi database-connections rule.
 ```
 
 ## Multi-Database Connections

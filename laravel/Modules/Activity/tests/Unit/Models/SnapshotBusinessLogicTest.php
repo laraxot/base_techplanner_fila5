@@ -9,11 +9,9 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot;
 
 describe('Snapshot Business Logic', function () {
     test('snapshot has correct connection configured', function () {
-        $reflection = new \ReflectionClass(Snapshot::class);
-        $property = $reflection->getProperty('connection');
-        $property->setAccessible(true);
+        $snapshot = new Snapshot();
 
-        expect($property->getValue($reflection->newInstanceWithoutConstructor()))->toBe('activity');
+        expect($snapshot->getConnectionName())->toBe('activity');
     });
 
     test('snapshot has expected fillable fields for event sourcing', function () {

@@ -244,6 +244,13 @@ return new class extends XotBaseMigration { ... };
 
 4. **UUID → Bigint**: Use `convertIdFromUuidToBigintIfNeeded()` for legacy UUID conversion (adds uuid column for external use).
 
+### 🚫 **NO Module-Specific Database Connections** - CRITICAL RULE (with Activity exception)
+**NEVER create dedicated database connections for modules (e.g. `cms`, `gdpr`) in config/database.php.**
+
+- All modules use the default connection (mysql)
+- Exception: **`activity` module** uses dedicated `'activity'` connection for event sourcing isolation
+- See: [database-connections](.cursor/rules/database-connections.mdc)
+
 ### Standard
 - Migrations auto-discovered from all modules
 - Use descriptive timestamps in migration names
