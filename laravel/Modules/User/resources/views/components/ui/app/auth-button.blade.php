@@ -9,9 +9,7 @@
         <div class="nav-item dropdown">
             <button type="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="user-dropdown-trigger">
                 <span class="rounded-icon" aria-hidden="true">
-                    <svg class="icon icon-primary">
-                        <use xlink:href="{{ asset('assets/bootstrap-italia/dist/svg/sprites.svg#it-user') }}"></use>
-                    </svg>
+                    <x-filament::icon icon="heroicon-o-user" class="icon icon-primary" />
                 </span>
                 <span class="d-none d-lg-block">{{ $user->name ?? $user->email }}</span>
             </button>
@@ -46,9 +44,7 @@
 @else
     <a class="btn btn-primary btn-icon btn-full" href="{{ route('login') }}" data-element="personal-area-login">
         <span class="rounded-icon" aria-hidden="true">
-            <svg class="icon icon-primary">
-                <use xlink:href="{{ asset('assets/bootstrap-italia/dist/svg/sprites.svg#it-user') }}"></use>
-            </svg>
+            <x-filament::icon icon="heroicon-o-user" class="icon icon-primary" />
         </span>
         <span class="d-none d-lg-block">{{ __('user::auth.auth_button.personal_area') }}</span>
     </a>
