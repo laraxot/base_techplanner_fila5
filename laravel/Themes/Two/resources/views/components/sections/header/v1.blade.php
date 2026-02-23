@@ -387,12 +387,12 @@
                 <div class="border-t border-white/10 pt-4 mt-3 space-y-2">
                     <a href="{{ route('login') }}"
                        class="block px-4 py-3 text-sm font-medium text-white/90 hover:text-white hover:bg-white/5 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0f2b46]">
-                        {{ __('pub_theme::header.auth.login') }}
+                        {{ __('Accedi') }}
                     </a>
                     @if(Route::has('register'))
                         <a href="{{ route('register') }}"
                            class="block px-4 py-3 text-sm font-semibold text-center text-[#0f2b46] bg-white/90 hover:bg-white rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0f2b46]">
-                            {{ __('pub_theme::header.auth.register') }}
+                            {{ __('Registrati') }}
                         </a>
                     @endif
                 </div>

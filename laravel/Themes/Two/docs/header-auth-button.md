@@ -18,8 +18,9 @@ Il pulsante Login nell'header nav permette agli utenti guest di accedere rapidam
 - **@guest**: link "Accedi" prima del CTA
 
 ### Traduzioni
-- `theme::header.auth.login` → "Accedi"
-- `theme::header.auth.register` → "Registrati"
+- `pub_theme::header.auth.login` → "Accedi" (IT) / "Login" (EN)
+- `pub_theme::header.auth.register` → "Registrati" (IT) / "Register" (EN)
+- File: `Themes/Two/lang/{locale}/header.php` (namespace `pub_theme` da CmsServiceProvider)
 
 ### Route
 - Login: `route('login')` (locale-aware, es. `/it/auth/login`)

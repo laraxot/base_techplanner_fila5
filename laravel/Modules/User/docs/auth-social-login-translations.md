@@ -74,13 +74,17 @@ Evitare classi Tailwind non definite (es. `from-primary-600`) che possono risult
 
 ## Icone Brand (No SVG Inline)
 
-I pulsanti social usano icone da `Modules/UI/resources/svg/`:
+I pulsanti social usano icone da `Modules/UI/resources/svg/` tramite `<x-filament::icon>`:
 
-- `ui-google` (google.svg)
+- `ui-google` (google.svg in root) — preferito rispetto a `ui-brands.google`
 - `ui-brands.github` (brands/github.svg)
 - `ui-brands.microsoft` (brands/microsoft.svg)
 
 **Vietato** SVG inline: vedi [No SVG Hardcoded](../../UI/docs/no-svg-hardcoded-in-blade.md).
+
+```blade
+<x-filament::icon icon="ui-google" class="w-5 h-5 flex-shrink-0" />
+```
 
 ## SocialLoginWidget (Riutilizzabile)
 

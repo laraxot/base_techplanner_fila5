@@ -249,8 +249,8 @@ if (isset($user->full_name) && $user->full_name) { }
 
 **Perché:** Livewire richiede un root HTML tag per il rendering. Senza, si ottiene l'errore "Missing root tag".
 
-### 7. Social Login Icons - NO Hardcoded SVG
-**Gli SVG non vanno hardcoded nelle Blade view. Usare `<x-filament::icon>`.**
+### 7. SVG Icons - NO Hardcoded in Blade
+**Gli SVG non vanno hardcoded nelle Blade view. Usare `<x-filament::icon>` o `@svg()`.**
 
 ```blade
 {{-- ❌ SBAGLIATO - SVG hardcoded --}}
@@ -258,12 +258,21 @@ if (isset($user->full_name) && $user->full_name) { }
     <path d="..."/>
 </svg>
 
-{{-- ✅ CORRETTO - Icona Filament --}}
+{{-- ✅ CORRETTO - Icona UI module --}}
 <x-filament::icon icon="ui-google" class="w-5 h-5" />
 <x-filament::icon icon="ui-brands.microsoft" class="w-5 h-5" />
+<x-filament::icon icon="ui-brands.github" class="w-5 h-5" />
 ```
 
-**Nota:** Le icone `ui-*` sono fornite da Filament e non servono file SVG separati.
+**Icone disponibili nel modulo UI:**
+- `ui-google` → `Modules/UI/resources/svg/google.svg`
+- `ui-brands.microsoft` → `Modules/UI/resources/svg/brands/microsoft.svg`
+- `ui-brands.github` → `Modules/UI/resources/svg/brands/github.svg`
+- `ui-login` → `Modules/UI/resources/svg/login.svg`
+- `ui-logout` → `Modules/UI/resources/svg/logout.svg`
+- Heroicons: `heroicon-o-*`, `heroicon-s-*` (già registrati da Filament)
+
+**Documentazione:** [Modules/UI/docs/no-svg-hardcoded-in-blade.md](Modules/UI/docs/no-svg-hardcoded-in-blade.md)
 
 ### 8. Social Login Providers - Dynamic Configuration
 **I widget di login social DEVONO mostrare solo i provider configurati.**

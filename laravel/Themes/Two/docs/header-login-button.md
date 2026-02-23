@@ -7,17 +7,17 @@ Nella navigazione header del tema Two (`pub_theme::components.sections.header.v1
 - ✅ Pulsante CTA: "Richiedi Consulenza"
 - ❌ Utenti NON loggati: nessun modo per accedere!
 
-## Soluzione Proposta
+## Soluzione Implementata
 
-Aggiungere un pulsante di login per gli utenti non autenticati, posizionato accanto al pulsante CTA.
+Aggiunto pulsante di login per gli utenti non autenticati, posizionato accanto al pulsante CTA.
 
 ### Posizionamento
 
 ```
-[Brand] [Nav Links] ... [Lang] [Login] [CTA]
+[Brand] [Nav Links] ... [Lang] [Accedi] [CTA]
 ```
 
-Il login button sarà posizionato:
+Il login button è posizionato:
 - Tra language switcher e CTA button
 - Stesso stile del pulsante CTA (border white/transparent)
 - Testo: "Accedi" con icon user
@@ -29,29 +29,54 @@ Il login button sarà posizionato:
 | Guest | [Lang] [Accedi] [CTA] |
 | Auth  | [Lang] [User Avatar] [CTA] |
 
+### File Modificato
+
+- `Themes/Two/resources/views/components/sections/header/v1.blade.php`
+
 ### Implementazione
 
-Modificare `Themes/Two/resources/views/components/sections/header.v1`:
+#### Desktop
+```blade
+@guest
+    <a href="{{ route('login') }}" class="...">
+        <x-filament::icon icon="ui-login" class="w-4 h-4" />
+        {{ __('Accedi') }}
+    </a>
+@endguest
+```
 
-1. Aggiungere blocco `@guest` prima del pulsante CTA (riga 241)
-2. Mostrare pulsante "Accedi" con link a `/auth/login`
-3. Mantenere stile coerente con design esistente
+#### Mobile Menu
+```blade
+@guest
+    <a href="{{ route('login') }}" class="...">
+        <x-filament::icon icon="ui-login" class="w-4 h-4" />
+        {{ __('Accedi') }}
+    </a>
+    @if(Route::has('register'))
+        <a href="{{ route('register') }}">{{ __('Registrati') }}</a>
+    @endif
+@endauth
+```
 
-### File da Modificare
+### Icone Utilizzate
 
-- `laravel/Themes/Two/resources/views/components/sections/header.v1`
+- **Login**: `<x-filament::icon icon="ui-login" />` (da `Modules/UI/resources/svg/login.svg`)
+- **User**: Icona nel dropdown utente (avatar)
+- **Phone**: `<x-filament::icon icon="heroicon-o-phone" />` per CTA
 
-### Test
+### Test Effettuati
 
-- Verificare che utente non loggato veda pulsante "Accedi"
-- Verificare che utente loggato veda avatar dropdown
-- Verificare accessibilità (aria-label, focus states)
-- Verificare responsività su mobile
+- [x] Utente non loggato vede pulsante "Accedi"
+- [x] Utente loggato vede avatar dropdown
+- [x] Link punta a `/auth/login` (route login)
+- [x] Accessibilità: aria-label, focus states
+- [x] Responsività: visibile su desktop, nel menu mobile
 
 ### Traduzioni
 
-Aggiungere chiavi mancanti in `Modules/Lang/resources/lang/it/auth.php`:
-- `header.login` = "Accedi"
+Già presenti in `Modules/Lang/lang/it/auth.php` e `header.php`:
+- `Accedi` = "Accedi"
+- `Esci` = "Esci"
 
 ## Note UX
 
@@ -61,3 +86,9 @@ Il pulsante di login è standard per siti che offrono:
 - Consulenze riservate
 
 La posizione (accanto al CTA) è coerente con pattern Bootstrap Italia.
+
+## Riferimenti
+
+- [Regola SVG no hardcoded](../../Modules/UI/docs/no-svg-hardcoded-in-blade.md)
+- [Icon System UI Module](../../Modules/UI/docs/icon-system.md)
+- [Header Component](components/sections/header/v1.blade.php)
