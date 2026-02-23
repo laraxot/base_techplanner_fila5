@@ -51,6 +51,24 @@ Le traduzioni usano `user::auth.social.google`, `user::auth.social.github`, `use
 
 I pulsanti usano colori espliciti per visibilità (WCAG AA): evitare classi Tailwind non definite che possono risultare bianche su bianco.
 
+## Mostra password (revealable)
+
+Il campo password usa il toggle "mostra/nascondi" built-in di Filament tramite `->revealable()` nel LoginWidget. Non serve implementazione custom: Filament gestisce icona occhio e stato.
+
+## Logo su sfondo scuro
+
+Sul pannello sinistro (gradient blu-verde) il logo deve essere **bianco** per contrasto. Usare `color="white"`:
+
+```blade
+<x-pub_theme::ui.logo class="h-14 w-auto" color="white" />
+```
+
+Se il logo è un'immagine (da metatag), assicurarsi che sia una versione light/white per sfondi scuri.
+
+## Effetto particles
+
+Il pannello sinistro include un effetto particles con canvas vanilla JS per dare profondità visiva. Componente: `pub_theme::components.ui.particles`. Leggero, accessibile (aria-hidden), non blocca interazioni. Vedi [particles-component](particles-component.md).
+
 ## Anti-pattern da evitare
 Non sostituire il widget con un form HTML classico:
 - Vietato: `<form method="POST" action="{{ route('login') }}">` con @csrf e input email/password/remember.
@@ -58,6 +76,7 @@ Non sostituire il widget con un form HTML classico:
 
 ## Collegamenti
 
+- [particles-component](particles-component.md)
 - [Auth Social Login Translations (modulo User)](../../Modules/User/docs/auth-social-login-translations.md)
 - [Troubleshooting login (modulo User)](../../Modules/User/docs/troubleshooting-login-component.md)
 - [Regola Cursor: form auth solo Filament widget](../../../.cursor/rules/filament-login-widget.mdc)

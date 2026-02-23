@@ -21,6 +21,7 @@
     <img
         src="{{ $logoSrc }}"
         alt="{{ $logoAlt }}"
+        @if ($color === 'white') style="filter: brightness(0) invert(1);" @endif
         {{ $attributes->merge(['class' => $class]) }}
     />
 @else

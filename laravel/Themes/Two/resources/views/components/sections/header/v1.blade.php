@@ -232,7 +232,7 @@
                                 <svg class="w-4 h-4 mr-3 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
                                 Dashboard
                             </a>
-                            <a href="/profile" 
+                            <a href="{{ LaravelLocalization::getLocalizedURL($currentLocale, '/profile') }}" 
                                role="menuitem"
                                class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1E5A96] transition-colors focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:ring-inset">
                                 <svg class="w-4 h-4 mr-3 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
@@ -375,7 +375,7 @@
                     </div>
                     <a href="/admin" 
                        class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5 rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0f2b46]">Dashboard</a>
-                    <a href="/profile" 
+                    <a href="{{ LaravelLocalization::getLocalizedURL($currentLocale, '/profile') }}" 
                        class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5 rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0f2b46]">{{ __('Profilo') }}</a>
                     <form method="POST" action="{{ route('logout') }}" class="mt-1">
                         @csrf

@@ -1,6 +1,7 @@
 @php
     $user = auth()->user();
-    $profileUrl = Route::has('profile') ? route('profile') : (Route::has('filament.pages.profile') ? route('filament.pages.profile') : route('home'));
+    $locale = app()->getLocale();
+    $profileUrl = url($locale . '/profile');
     $dashboardUrl = Route::has('filament.pages.dashboard') ? route('filament.pages.dashboard') : null;
 @endphp
 
