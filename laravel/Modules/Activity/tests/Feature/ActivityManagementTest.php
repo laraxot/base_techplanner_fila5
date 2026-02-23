@@ -74,8 +74,8 @@ test('activity belongs to user', function () {
     expect($activity)->not->toBeNull();
 
     $causer = $activity->causer;
-    if ($causer !== null) {
-        expect($causer)->toBeInstanceOf(User::class)
-            ->and($causer->id)->toBe($user->id);
-    }
+    \assert($causer instanceof User);
+    expect($causer)->not->toBeNull()
+        ->toBeInstanceOf(User::class);
+    expect($causer->id)->toBe($user->id);
 });

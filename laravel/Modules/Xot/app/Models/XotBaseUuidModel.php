@@ -11,10 +11,7 @@ namespace Modules\Xot\Models;
  */
 abstract class XotBaseUuidModel extends XotBaseModel
 {
-    use Traits\HasUuid;
-
-    /** @var bool */
-    public $incrementing = true;
+    public $incrementing = false;
 
     /** @var bool */
     public $timestamps = true;
@@ -22,13 +19,11 @@ abstract class XotBaseUuidModel extends XotBaseModel
     /** @var int */
     protected $perPage = 30;
 
-    /** @var string */
-    protected $keyType = 'int';
+    protected $keyType = 'string';
 
     /** @var list<string> */
     protected $fillable = [
         'id',
-        'uuid',
     ];
 
     /**
@@ -37,8 +32,7 @@ abstract class XotBaseUuidModel extends XotBaseModel
     protected function casts(): array
     {
         return [
-            'id' => 'integer',
-            'uuid' => 'string',
+            'id' => 'string',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',

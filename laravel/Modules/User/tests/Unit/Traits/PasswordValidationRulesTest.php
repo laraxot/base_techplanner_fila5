@@ -10,6 +10,16 @@ test('PasswordValidationRules trait can be used', function () {
     $testClass = new class {
         use PasswordValidationRules;
 
+test('PasswordValidationRules trait can be used', function () {
+    $testClass = new PasswordValidationRulesTestClass();
+
+    expect($testClass)->toBeInstanceOf(PasswordValidationRulesTestClass::class);
+});
+
+test('PasswordValidationRules trait provides passwordRules method', function () {
+    $testClass = new class {
+        use PasswordValidationRules;
+
         public function getPasswordRules()
         {
             return $this->passwordRules();

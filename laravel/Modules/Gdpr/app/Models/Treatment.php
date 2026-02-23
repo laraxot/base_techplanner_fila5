@@ -53,13 +53,13 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class Treatment extends BaseModel
 {
-    use \Modules\Xot\Models\Traits\HasUuid;
+    use HasUuids;
 
     // protected $table = 'treatment';
+    public $incrementing = false;
 
     protected $fillable = [
         'id',
-        'uuid',
         'active',
         'required',
         'name',
@@ -68,17 +68,4 @@ class Treatment extends BaseModel
         'documentUrl',
         'weight',
     ];
-
-    protected function casts(): array
-    {
-        return [
-            'id' => 'integer',
-            'uuid' => 'string',
-            'active' => 'boolean',
-            'required' => 'boolean',
-            'created_at' => 'datetime',
-            'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
-        ];
-    }
 }

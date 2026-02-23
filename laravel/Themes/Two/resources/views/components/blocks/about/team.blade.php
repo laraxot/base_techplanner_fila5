@@ -26,7 +26,7 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div class="absolute bottom-4 left-4 right-4 text-white">
                             <h3 class="text-xl font-bold">{{ $member['name'] ?? 'Nome' }}</h3>
-                            <p class="text-brand-orange font-medium">{{ $member['role'] ?? 'Ruolo' }}</p>
+                            <p class="text-brand-orange-dark font-medium">{{ $member['role'] ?? 'Ruolo' }}</p>
                         </div>
                     </div>
 

@@ -67,7 +67,6 @@ class Role extends SpatieRole
     use HasXotFactory;
     use RelationX;
     use Updater;
-    use \Modules\Xot\Models\Traits\HasUuid;
 
     // use HasUuids;
 
@@ -85,8 +84,6 @@ class Role extends SpatieRole
 
     /** @var list<string> */
     protected $fillable = [
-        'id',
-        'uuid',
         'name',
         'guard_name',
         'display_name',
@@ -127,8 +124,7 @@ class Role extends SpatieRole
     protected function casts(): array
     {
         return [
-            'id' => 'integer',
-            'uuid' => 'string',
+            'id' => 'int',
             'name' => 'string',
             'guard_name' => 'string',
             'created_at' => 'datetime',

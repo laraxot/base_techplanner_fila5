@@ -219,14 +219,13 @@ test('activity with batch scope returns correct results', function () {
 
     Activity::factory()->create(['batch_uuid' => null]); // @phpstan-ignore-line method.nonObject
 
-    $activitiesWithBatch = Activity::hasBatch()
-        ->where('id', $withBatch->id)
-        ->get();
+    $activitiesWithBatch = Activity::hasBatch()->get();
 
+    $firstActivity = $activitiesWithBatch->first();
     $this->assertCount(1, $activitiesWithBatch);
-    $retrievedActivity = $activitiesWithBatch->first();
-    \assert($retrievedActivity instanceof Activity);
-    $this->assertSame($withBatch->id, $retrievedActivity->id);
+    \assert($firstActivity instanceof Activity);
+    $this->assertNotNull($firstActivity);
+    $this->assertSame($withBatch->id, $firstActivity->id);
 });
 
 test('activity properties support complex nested structures', function () {

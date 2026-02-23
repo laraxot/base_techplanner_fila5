@@ -14,31 +14,3 @@ protected $connectionsToTransact = [
     ];
 cercati da solo il perche' , 
 hai fatto un sacco di errori, devi cercare di andare molto a fondo con la tua analisi e fare il possibile per migliorarti , dai tuoi errori cerca sempre di imparare , e costantemente devi aumentare il tuo livello di confidenza, ti ricordo che devi sempre costantemente aggiornare, studiare e migliorare le cartelle docs che sono sia la tua memoria che la memoria degli altri agenti ai percio' trovi anche le analisi degli altri agenti ai, nel caso aggiorna e migliora anche le tue rules le tue memories e le tue skills
-
-
-
-dal file laravel/config/database.php
-togli 
- 'activity' => [
-            'driver' => 'mysql',
-            'url' => env('DB_URL'),
-            'host' => env('DB_HOST_ACTIVITY', env('DB_HOST', '127.0.0.1')),
-            'port' => env('DB_PORT_ACTIVITY', env('DB_PORT', '3306')),
-            'database' => env('DB_DATABASE_ACTIVITY', env('DB_DATABASE', 'laravel')),
-            'username' => env('DB_USERNAME_ACTIVITY', env('DB_USERNAME', 'root')),
-            'password' => env('DB_PASSWORD_ACTIVITY', env('DB_PASSWORD', '')),
-            'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => env('DB_CHARSET', 'utf8mb4'),
-            'collation' => env('DB_COLLATION', 'utf8mb4_unicode_ci'),
-            'prefix' => '',
-            'prefix_indexes' => true,
-            'strict' => true,
-            'engine' => null,
-            'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
-            ]) : [],
-        ],
-
-capisci da solo il perche' e la regola, poi aggiorna, studia e migliora le cartelle docs dentro i moduli e dentro i temi, aggiorna le tue rules le tue memories e le tue skills
-
-----------------------

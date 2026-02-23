@@ -20,7 +20,7 @@ declare(strict_types=1);
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-wrap gap-3 justify-center">
             @foreach($categories as $category)
-                <a href="{{ $category['id'] === 'all' ? '/it/pages/blog' : '/it/pages/blog?category=' . $category['slug'] }}" 
+                <a href="{{ $category['id'] === 'all' ? '/it/blog' : '/it/blog?category=' . $category['slug'] }}" 
                    class="inline-flex items-center px-5 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 hover:-translate-y-1
                           {{ $active_category === $category['id'] 
                               ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/30' 

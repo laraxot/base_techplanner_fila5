@@ -1,4 +1,4 @@
-<footer class="bg-white">
+<footer class="bg-white" role="contentinfo">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Informazioni -->
@@ -42,11 +42,11 @@
                 </h3>
                 <ul class="space-y-2">
                     <li class="text-gray-600">
-                        <i class="fas fa-envelope mr-2"></i>
+                        <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
                         {{ config('mail.from.address') }}
                     </li>
                     <li class="text-gray-600">
-                        <i class="fas fa-phone mr-2"></i>
+                        <i class="fas fa-phone mr-2" aria-hidden="true"></i>
                         {{ config('app.phone') }}
                     </li>
                 </ul>

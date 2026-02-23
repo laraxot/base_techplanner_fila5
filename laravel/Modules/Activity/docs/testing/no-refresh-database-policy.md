@@ -35,7 +35,7 @@ Il progetto usa **multiple connessioni database**:
 // Modelli con connection custom
 class Activity extends BaseModel
 {
-    // Usa connessione default (nessun $connection dedicato)
+    protected $connection = 'activity';  // ← Connessione dedicata
 }
 
 class MailTemplate extends BaseModel

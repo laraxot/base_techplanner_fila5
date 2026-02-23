@@ -85,9 +85,13 @@
                     </div>
 
                     <!-- Image -->
+                    @php
+                        $sectorImg = $sector['image'] ?? '';
+                        $sectorImgSrc = $sectorImg && str_starts_with($sectorImg, '/themes/Two/') ? asset(ltrim($sectorImg, '/')) : $sectorImg;
+                    @endphp
                     <div class="{{ $loop->odd ? 'order-2 lg:order-1' : 'order-2' }}">
                         <div class="relative overflow-hidden rounded-2xl shadow-lg">
-                            <img src="{{ $sector['image'] }}"
+                            <img src="{{ $sectorImgSrc }}"
                                  alt="{{ $sector['title'] }}"
                                  class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
                                  loading="lazy">

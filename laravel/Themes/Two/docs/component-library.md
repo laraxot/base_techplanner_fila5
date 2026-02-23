@@ -201,7 +201,6 @@
 function countdownTimer() {
     return {
         timer: { days: 0, hours: 0, minutes: 0, seconds: 0 },
-        targetDate: new Date().getTime() + (30 * 24 * 60 * 60 * 1000),
         interval: null,
 
         startCountdown() {

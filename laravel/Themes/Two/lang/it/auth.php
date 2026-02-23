@@ -10,6 +10,7 @@ return [
     */
     'login' => [
         'title' => 'Accedi al tuo account',
+        'back_to_home' => 'Torna alla home',
         'or' => 'oppure',
         'create_account' => 'crea un nuovo account',
         'forgot_password' => 'Hai dimenticato la password?',

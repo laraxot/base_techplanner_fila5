@@ -161,4 +161,3 @@ $debug = $config['drivers'][$driver]['debug'] ?? $config['debug'];
 
 ---
 
-*Ultimo aggiornamento: [DATE]*

@@ -159,4 +159,3 @@ $navData = $headerData['blocks'][$locale][0]['data'] ?? null;
 ---
 
 *Created by: iFlow CLI*
-*Last Updated: 2026-02-07*

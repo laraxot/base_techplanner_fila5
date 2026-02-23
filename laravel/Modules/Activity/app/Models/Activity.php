@@ -105,9 +105,9 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  */
 class Activity extends SpatieActivity
 {
-    /** @var string */
-    protected $connection = 'activity';
     use HasXotFactory;
+
+    protected $connection = 'activity';
 
     /** @var list<string> */
     protected $fillable = [

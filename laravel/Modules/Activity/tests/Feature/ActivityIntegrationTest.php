@@ -60,9 +60,8 @@ test('activity module models work together in integrated scenarios', function ()
     expect($storedEvent)->not->toBeNull();
 
     $causer = $activity->causer;
-    if ($causer !== null) {
-        expect($causer->id)->toBe($user->id);
-    }
+    expect($causer)->not->toBeNull()
+        ->and($causer->id)->toBe($user->id);
 
     $state = $snapshot->state;
     expect($state)->toBeArray();
@@ -164,18 +163,14 @@ test('activity module handles concurrent operations correctly', function () {
     \assert($user instanceof User);
     expect($user)->not->toBeNull();
 
-    $testRunId = Str::uuid()->toString();
-    $logName = "concurrency_test_{$testRunId}";
-
     $concurrentActivities = [];
     $concurrentSnapshots = [];
 
     $promises = [];
 
     for ($i = 0; $i < 10; $i++) {
-        $promises[] = function () use ($user, $logName, &$concurrentActivities, &$concurrentSnapshots, $i) {
+        $promises[] = function () use ($user, &$concurrentActivities, &$concurrentSnapshots, $i) {
             $activity = Activity::factory()->create([ // @phpstan-ignore-line method.nonObject
-                'log_name' => $logName,
                 'causer_type' => User::class,
                 'causer_id' => $user->id,
                 'properties' => ['iteration' => $i, 'timestamp' => now()->toISOString()],
@@ -191,7 +186,6 @@ test('activity module handles concurrent operations correctly', function () {
                         'activity_id' => $activity->id,
                         'iteration' => $i,
                         'user_id' => $user->id,
-                        'test_run' => $logName,
                     ],
                 ]);
                 \assert($snapshot instanceof Snapshot);
@@ -209,7 +203,8 @@ test('activity module handles concurrent operations correctly', function () {
     expect($results)->toHaveCount(10)->each->toBeTrue();
 
     $userActivities = Activity::query()
-        ->whereIn('id', $concurrentActivities)
+        ->where('causer_type', User::class)
+        ->where('causer_id', (string) $user->id)
         ->get();
     expect($userActivities)->toHaveCount(10);
 
@@ -226,32 +221,27 @@ test('activity module supports complex query patterns', function () {
     \assert($user2 instanceof User);
     expect($user2)->not->toBeNull();
 
-    $batchId = Str::random(8);
-    $securityLog = "security_{$batchId}";
-    $auditLog = "audit_{$batchId}";
-    $applicationLog = "application_{$batchId}";
-
-    Activity::factory()->count(3)->create([ // @phpstan-ignore-line method.nonObject
-        'log_name' => $securityLog,
+    $securityActivities = Activity::factory()->count(3)->create([ // @phpstan-ignore-line method.nonObject
+        'log_name' => 'security',
         'causer_type' => User::class,
         'causer_id' => $user1->id,
     ]);
 
-    Activity::factory()->count(2)->create([ // @phpstan-ignore-line method.nonObject
-        'log_name' => $auditLog,
+    $auditActivities = Activity::factory()->count(2)->create([ // @phpstan-ignore-line method.nonObject
+        'log_name' => 'audit',
         'causer_type' => User::class,
         'causer_id' => $user2->id,
     ]);
 
-    Activity::factory()->count(4)->create([ // @phpstan-ignore-line method.nonObject
-        'log_name' => $applicationLog,
+    $applicationActivities = Activity::factory()->count(4)->create([ // @phpstan-ignore-line method.nonObject
+        'log_name' => 'application',
         'causer_type' => User::class,
         'causer_id' => $user1->id,
     ]);
 
     $complexQuery = Activity::query()
         ->where('causer_type', User::class)
-        ->whereIn('log_name', [$securityLog, $auditLog])
+        ->whereIn('log_name', ['security', 'audit'])
         ->where(function ($query) use ($user1, $user2) {
             $query->where('causer_id', $user1->id)
                 ->orWhere('causer_id', $user2->id);
@@ -262,11 +252,17 @@ test('activity module supports complex query patterns', function () {
 
     expect($results)->toHaveCount(5);
 
-    $securityResults = $results->where('log_name', $securityLog);
-    $auditResults = $results->where('log_name', $auditLog);
+    $securityResults = $results->where('log_name', 'security');
+    $auditResults = $results->where('log_name', 'audit');
 
     expect($securityResults)->toHaveCount(3);
     expect($auditResults)->toHaveCount(2);
+
+    $user1Results = $results->where('causer_id', $user1->id);
+    $user2Results = $results->where('causer_id', $user2->id);
+
+    expect($user1Results)->toHaveCount(3);
+    expect($user2Results)->toHaveCount(2);
 });
 
 test('activity module handles data consistency across models', function () {
@@ -359,12 +355,10 @@ test('activity module supports bulk operations efficiently', function () {
     \assert($user instanceof User);
     expect($user)->not->toBeNull();
 
-    $bulkLogName = 'bulk_operation_'.Str::uuid()->toString();
-
     $activitiesData = [];
     for ($i = 0; $i < 100; $i++) {
         $activitiesData[] = [
-            'log_name' => $bulkLogName,
+            'log_name' => 'bulk_operation',
             'description' => "Bulk activity {$i}",
             'causer_type' => User::class,
             'causer_id' => (string) $user->id,
@@ -376,7 +370,7 @@ test('activity module supports bulk operations efficiently', function () {
 
     Activity::insert($activitiesData);
 
-    $bulkActivities = Activity::where('log_name', $bulkLogName)->get();
+    $bulkActivities = Activity::where('log_name', 'bulk_operation')->get();
 
     expect($bulkActivities)->toHaveCount(100);
 
@@ -393,13 +387,13 @@ test('activity module supports bulk operations efficiently', function () {
 
     expect($firstActivityProperties)->toHaveKey('index', 0)
         ->and($lastActivityProperties)->toHaveKey('index', 99)
-        ->and((string) $firstActivity->causer_id)->toBe((string) $user->id)
-        ->and((string) $lastActivity->causer_id)->toBe((string) $user->id);
+        ->and($firstActivity->causer_id)->toBe($user->id)
+        ->and($lastActivity->causer_id)->toBe($user->id);
 
     $userActivities = Activity::query()
         ->where('causer_type', User::class)
         ->where('causer_id', (string) $user->id)
-        ->where('log_name', $bulkLogName)
+        ->where('log_name', 'bulk_operation')
         ->get();
     expect($userActivities)->toHaveCount(100);
 });

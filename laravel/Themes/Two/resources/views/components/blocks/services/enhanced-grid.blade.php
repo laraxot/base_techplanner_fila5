@@ -47,13 +47,17 @@
             @if($showSearch)
             <div class="lg:col-span-2">
                 <div class="relative">
+                    <label for="search-{{ $gridId }}" class="sr-only">Cerca servizi</label>
                     <input 
                         type="text" 
                         id="search-{{ $gridId }}"
+                        name="search"
                         placeholder="Cerca servizi..."
-                        class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        autocomplete="off"
+                        aria-label="Cerca servizi per nome o descrizione"
+                        class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
                     />
-                    <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                     </svg>
                 </div>
@@ -64,7 +68,12 @@
             <div class="flex gap-2">
                 {{-- Category Filter --}}
                 @if($showFilters && $categories)
-                <select id="category-filter-{{ $gridId }}" class="px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                <label for="category-filter-{{ $gridId }}" class="sr-only">Filtra per categoria</label>
+                <select id="category-filter-{{ $gridId }}" 
+                        name="category"
+                        autocomplete="off"
+                        aria-label="Filtra servizi per categoria"
+                        class="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent">
                     <option value="">Tutte le categorie</option>
                     @foreach($categories as $category)
                     <option value="{{ $category['id'] ?? $category }}">{{ $category['name'] ?? $category }}</option>
@@ -73,7 +82,12 @@
                 @endif
                 
                 {{-- Sort --}}
-                <select id="sort-{{ $gridId }}" class="px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                <label for="sort-{{ $gridId }}" class="sr-only">Ordina servizi</label>
+                <select id="sort-{{ $gridId }}" 
+                        name="sort"
+                        autocomplete="off"
+                        aria-label="Ordina servizi"
+                        class="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent">
                     <option value="name">Nome (A-Z)</option>
                     <option value="name-desc">Nome (Z-A)</option>
                     <option value="category">Categoria</option>
@@ -86,20 +100,20 @@
                     <button 
                         type="button" 
                         onclick="changeView('{{ $gridId }}', 'grid')"
-                        class="px-3 py-2 text-sm font-medium rounded-l-md {{ $currentView === 'grid' ? 'bg-primary-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50' }} border-r border-gray-300"
-                        title="Vista griglia"
+                        aria-label="Mostra servizi in vista griglia"
+                        class="px-3 py-2 text-sm font-medium rounded-l-md {{ $currentView === 'grid' ? 'bg-primary-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50' }} border-r border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1E5A96]"
                     >
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
                         </svg>
                     </button>
                     <button 
                         type="button" 
                         onclick="changeView('{{ $gridId }}', 'list')"
-                        class="px-3 py-2 text-sm font-medium -ml-px {{ $currentView === 'list' ? 'bg-primary-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50' }} border-r border-gray-300"
-                        title="Vista elenco"
+                        aria-label="Mostra servizi in vista elenco"
+                        class="px-3 py-2 text-sm font-medium -ml-px {{ $currentView === 'list' ? 'bg-primary-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50' }} border-r border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1E5A96]"
                     >
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
                     </button>
@@ -114,7 +128,9 @@
                 <div class="flex flex-wrap gap-2">
                     <!-- Active filter chips will be added here -->
                 </div>
-                <button onclick="clearAllFilters('{{ $gridId }}')" class="text-sm text-primary-600 hover:text-primary-700">
+                <button onclick="clearAllFilters('{{ $gridId }}')" 
+                        aria-label="Rimuovi tutti i filtri attivi"
+                        class="text-sm text-primary-600 hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-[#1E5A96] rounded-md px-1">
                     Rimuovi tutti
                 </button>
             </div>
@@ -210,12 +226,14 @@
         
         {{-- No Results --}}
         <div id="no-results-{{ $gridId }}" class="hidden text-center py-12">
-            <svg class="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
             <h3 class="text-lg font-medium text-gray-900 mb-2">Nessun servizio trovato</h3>
             <p class="text-gray-600 mb-4">Prova a modificare i filtri o la ricerca</p>
-            <button onclick="clearAllFilters('{{ $gridId }}')" class="text-primary-600 hover:text-primary-700 font-medium">
+            <button onclick="clearAllFilters('{{ $gridId }}')" 
+                    aria-label="Rimuovi tutti i filtri e mostra tutti i servizi"
+                    class="text-primary-600 hover:text-primary-700 font-medium focus:outline-none focus:ring-2 focus:ring-[#1E5A96] rounded-md px-2 py-1">
                 Rimuovi filtri
             </button>
         </div>
@@ -228,10 +246,11 @@
             {{-- Previous Button --}}
             <button 
                 onclick="changePage('{{ $gridId }}', {{ $currentPage - 1 }})"
-                class="px-3 py-2 text-sm font-medium rounded-md {{ $currentPage === 1 ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300' }}"
-                {{ $currentPage === 1 ? 'disabled' : '' }}
+                aria-label="Vai alla pagina precedente"
+                class="px-3 py-2 text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] {{ $currentPage === 1 ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300' }}"
+                {{ $currentPage === 1 ? 'disabled aria-disabled="true"' : '' }}
             >
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
                 </svg>
             </button>
@@ -241,7 +260,9 @@
                 @if($i === 1 || $i === $totalPages || ($i >= $currentPage - 2 && $i <= $currentPage + 2))
                     <button 
                         onclick="changePage('{{ $gridId }}', {{ $i }})"
-                        class="px-3 py-2 text-sm font-medium rounded-md {{ $i === $currentPage ? 'bg-primary-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300' }}"
+                        aria-label="Vai alla pagina {{ $i }}"
+                        @if($i === $currentPage) aria-current="page" @endif
+                        class="px-3 py-2 text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] {{ $i === $currentPage ? 'bg-primary-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300' }}"
                     >
                         {{ $i }}
                     </button>
@@ -253,10 +274,11 @@
             {{-- Next Button --}}
             <button 
                 onclick="changePage('{{ $gridId }}', {{ $currentPage + 1 }})"
-                class="px-3 py-2 text-sm font-medium rounded-md {{ $currentPage === $totalPages ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300' }}"
-                {{ $currentPage === $totalPages ? 'disabled' : '' }}
+                aria-label="Vai alla pagina successiva"
+                class="px-3 py-2 text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] {{ $currentPage === $totalPages ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300' }}"
+                {{ $currentPage === $totalPages ? 'disabled aria-disabled="true"' : '' }}
             >
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                 </svg>
             </button>

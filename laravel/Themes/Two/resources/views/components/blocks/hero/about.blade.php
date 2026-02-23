@@ -4,7 +4,7 @@
     'stats' => [],
     'primary_cta' => null,
     'secondary_cta' => null,
-    'image' => '/themes/Two/Main_files/images/hero-bg.jpg',
+    'image' => null,
 ])
 
 @php
@@ -12,11 +12,14 @@
     $secondaryCta = $secondary_cta;
 @endphp
 
+@php
+    $heroImage = $image ?? asset('themes/Two/images/hero-bg.jpg');
+@endphp
 <section class="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
     {{-- Background --}}
     <div class="absolute inset-0 z-0">
         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-             style="background-image: url('{{ $image }}');">
+             style="background-image: url('{{ $heroImage }}');">
         </div>
         <div class="absolute inset-0 bg-gradient-to-r from-brand-blue/95 via-brand-blue/80 to-brand-blue/60"></div>
     </div>

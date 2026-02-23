@@ -10,7 +10,7 @@ use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent as SpatieStored
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventCollection;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder;
 use Spatie\EventSourcing\StoredEvents\ShouldBeStored;
-use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
+use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 /**
  * Class StoredEvent.
@@ -23,7 +23,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property int $event_version
  * @property string $event_class
  * @property array<array-key, mixed> $event_properties
- * @property \Spatie\SchemalessAttributes\SchemalessAttributes $meta_data
+ * @property SchemalessAttributes $meta_data
  * @property string $created_at
  * @property string|null $updated_by
  * @property string|null $created_by
@@ -59,9 +59,11 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
 class StoredEvent extends SpatieStoredEvent
 {
-    /** @var string */
-    protected $connection = 'activity';
     use HasXotFactory;
+
+    protected $connection = 'activity';
+
+    protected $table = 'stored_events';
 
     protected $fillable = [
         'id',
