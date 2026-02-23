@@ -25,6 +25,7 @@ Il pulsante Login nell'header nav permette agli utenti guest di accedere rapidam
 ### Route
 - Login: `route('login')` (locale-aware, es. `/it/auth/login`)
 - Register: `route('register')` se registrazione abilitata
+- Profilo: `/{locale}/profile` (es. `/it/profile`) - vedi [profile-page](profile-page.md)
 
 ## Situazione Precedente (header_bi5)
 
