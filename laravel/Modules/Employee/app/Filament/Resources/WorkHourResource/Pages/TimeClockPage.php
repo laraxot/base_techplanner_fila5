@@ -12,7 +12,6 @@ use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Grid;
-use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
@@ -52,9 +51,15 @@ class TimeClockPage extends XotBasePage
     }
 
     #[Override]
-    public function form(Schema $schema): Schema
+    public function getFormStatePath(): string
     {
-        return $schema->components([
+        return 'filters';
+    }
+
+    #[Override]
+    protected function getFormSchema(): array
+    {
+        return [
             Grid::make(4)->schema([
                 DatePicker::make('date_from')
                     ->label('From Date')
@@ -73,7 +78,7 @@ class TimeClockPage extends XotBasePage
                     ->options(WorkHourStatusEnum::class)
                     ->placeholder('All Statuses'),
             ]),
-        ])->statePath('filters');
+        ];
     }
 
     public function table(Table $table): Table

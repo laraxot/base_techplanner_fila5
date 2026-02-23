@@ -71,9 +71,13 @@ laravel/config/net/sottana/database/content/information_schema_tables.json
 *.*Zone.Identifier
 lighthouse.*
 laravel/config/local/techplanner/database/content/information_schema_tables.json
-<<<<<<< .merge_file_sTSNNn
 /reports/
 /reports/
-=======
 *.*Zone.Identifier
->>>>>>> .merge_file_9zkZfD
+laravel/--cache-directory/
+laravel/coverage/
+laravel/coverage_report/
+laravel/coverage_xml/
+tests/coverage/
+coverage/
+coverage.xml/

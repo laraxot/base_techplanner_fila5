@@ -34,7 +34,7 @@ test('ActivityLogger can log with user', function () {
     $activity = $logger->log('user_event', $user, null, null, 'User Event');
 
     expect($activity)->toBeInstanceOf(Activity::class)
-        ->and($activity->causer_id)->toBe($user->id)
+        ->and((string) $activity->causer_id)->toBe((string) $user->id)
         ->and($activity->causer_type)->toBe(User::class);
 });
 
@@ -125,7 +125,7 @@ test('ActivityLogger can get user activities', function () {
     $userActivities = $logger->getUserActivities($user, 10);
 
     expect($userActivities)->toHaveCount(1)
-        ->and($userActivities->first()->causer_id)->toBe($user->id);
+        ->and((string) $userActivities->first()->causer_id)->toBe((string) $user->id);
 });
 
 test('ActivityLogger can get model activities', function () {
@@ -141,7 +141,7 @@ test('ActivityLogger can get model activities', function () {
     $modelActivities = $logger->getModelActivities($subjectActivity, 10);
 
     expect($modelActivities)->toHaveCount(1)
-        ->and($modelActivities->first()->subject_id)->toBe($subjectActivity->id);
+        ->and((string) $modelActivities->first()->subject_id)->toBe((string) $subjectActivity->id);
 });
 
 test('ActivityLogger can get activities by type', function () {

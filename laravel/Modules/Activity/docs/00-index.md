@@ -21,6 +21,7 @@
 ## 🧪 **Qualità e Testing**
 - ✅ **[PHPStan Compliance](./phpstan-analysis.md)** - Report sulla stabilità Level 10.
 - 🔬 **[Testing Strategy](./testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
+- 📊 **[Testing Coverage Policy](./testing-coverage-policy.md)** - Regole per coverage 100% con .env.testing.
 - 🧹 **[PHPMD Fixes](./phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
 
 ## 🔗 **Moduli Correlati**

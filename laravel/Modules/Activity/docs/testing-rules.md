@@ -10,8 +10,9 @@
 ### 2. **NO RefreshDatabase - MAI**
 - **MAI** usare `use RefreshDatabase` nei test
 - **MAI** usare `RefreshDatabase` trait
-- Utilizzare `.env.testing` con SQLite in-memory
-- Usare `DatabaseTransactions` se necessario (raro)
+- **MAI** usare `migrate:fresh` nei test
+- Utilizzare `.env.testing` con MySQL e database suffisso `_test`
+- Usare `DatabaseTransactions` per rollback tra test
 
 ### 3. **Configurazione Testing**
 - Tutti i test devono leggere `.env.testing`
@@ -86,7 +87,7 @@ php bashscripts/test_conversion/convert_phpunit_to_pest.php
 5. Estendere classi Filament direttamente invece di XotBase/LangBase
 
 ### ✅ Best Practices
-1. Usare `.env.testing` con SQLite in-memory
+1. Usare `.env.testing` con MySQL e database `_test`
 2. Scrivere test in formato Pest functional
 3. Usare `DatabaseTransactions` invece di `RefreshDatabase`
 4. Seguire la struttura esistente dei test
