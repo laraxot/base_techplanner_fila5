@@ -228,6 +228,93 @@ if (property_exists($user, 'full_name') && $user->full_name) { }
 if (isset($user->full_name) && $user->full_name) { }
 ```
 
+### 6. Widget Root Tag - CRITICAL RULE
+**TUTTI i widget Filament DEVONO avere un root HTML tag nella loro view Blade.**
+
+```blade
+{{-- ❌ SBAGLIATO - Widget senza root tag --}}
+@if ($condition)
+    <div>Content</div>
+@endif
+
+{{-- ✅ CORRETTO - Sempre un root tag --}}
+@if ($condition)
+    <div>
+        <div>Content</div>
+    </div>
+@else
+    <div class="hidden"></div>
+@endif
+```
+
+**Perché:** Livewire richiede un root HTML tag per il rendering. Senza, si ottiene l'errore "Missing root tag".
+
+### 7. Social Login Icons - NO Hardcoded SVG
+**Gli SVG non vanno hardcoded nelle Blade view. Usare `<x-filament::icon>`.**
+
+```blade
+{{-- ❌ SBAGLIATO - SVG hardcoded --}}
+<svg xmlns="http://www.w3.org/2000/svg">
+    <path d="..."/>
+</svg>
+
+{{-- ✅ CORRETTO - Icona Filament --}}
+<x-filament::icon icon="ui-google" class="w-5 h-5" />
+<x-filament::icon icon="ui-brands.microsoft" class="w-5 h-5" />
+```
+
+**Nota:** Le icone `ui-*` sono fornite da Filament e non servono file SVG separati.
+
+### 8. Social Login Providers - Dynamic Configuration
+**I widget di login social DEVONO mostrare solo i provider configurati.**
+
+```php
+public function getProviders(): array
+{
+    $providers = [];
+    
+    if (config('services.google.client_id')) {
+        $providers[] = ['driver' => 'google', 'label' => __('user::auth.social.google')];
+    }
+    
+    if (config('services.microsoft.client_id')) {
+        $providers[] = ['driver' => 'microsoft', 'label' => __('user::auth.social.microsoft')];
+    }
+    
+    return $providers;
+}
+```
+
+### 9. Translation Namespace for Auth
+**Le traduzioni per autenticazione usano il namespace `user::auth.*`**
+
+```php
+// ❌ SBAGLIATO
+__('user::auth.login.google')
+
+// ✅ CORRETTO
+__('user::auth.social.google')  // per social login
+__('user::auth.login.email')    // per login email
+```
+
+### 5. Composer Module Dependencies - CRITICAL RULE
+**Le dipendenze specifiche di un modulo vanno in `Modules/{ModuleName}/composer.json`, MAI nel root `laravel/composer.json`.**
+
+```php
+// ❌ SBAGLIATO - Dependency in laravel/composer.json
+"require": {
+    "socialiteproviders/microsoft": "^4.8"
+}
+
+// ✅ CORRETTO - Dependency in Modules/User/composer.json
+// (per OAuth/login, la dipendenza va nel modulo User)
+```
+
+**Esempi:**
+- Microsoft OAuth → `Modules/User/composer.json`
+- Google OAuth → `Modules/User/composer.json`
+- Geo features → `Modules/Geo/composer.json`
+
 ## 🗄️ Database & Models
 
 ### 🚨 CRITICAL: Migration Rules
@@ -280,6 +367,20 @@ npm run copy
 **Why:** In production, the local theme build may not be deployed, but Livewire/Filament always need Alpine.js. Loading from CDN avoids "multiple instances" errors when local bundle is missing.
 
 Note: Build local theme assets with `npm run build && npm run copy` for full local delivery.
+
+### 🎨 Theme View Namespaces - CRITICAL RULE
+
+**SEMPRE usare `pub_theme::` come namespace per le view dei temi, MAI `themes.two::` o simili.**
+
+```php
+// ❌ SBAGLIATO
+@include('themes.two::components.sections.header')
+
+// ✅ CORRETTO
+@include('pub_theme::components.sections.header')
+```
+
+**Perché:** Il tema attivo viene registrato dinamicamente come namespace `pub_theme` in CmsServiceProvider. Usare `pub_theme::` garantisce compatibilità tra temi diversi.
 
 ### 📸 Screenshots Location
 **ALWAYS save screenshots in docs subfolders inside modules/themes, NEVER in /tmp**
