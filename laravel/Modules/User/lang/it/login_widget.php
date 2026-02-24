@@ -41,6 +41,8 @@ return [
         ],
         'showPassword' => [
             'tooltip' => 'showPassword',
+            'icon' => 'showPassword',
+            'label' => 'showPassword',
         ],
     ],
     'messages' => [
