@@ -21,7 +21,9 @@ test('StoredEvent model can be instantiated', function () {
 });
 
 test('BaseModel model can be instantiated', function () {
-    $baseModel = new BaseModel;
+    $baseModel = new class extends BaseModel
+    {
+    };
 
     expect($baseModel)->toBeInstanceOf(BaseModel::class);
 });
@@ -39,7 +41,9 @@ test('StoredEvent model has correct connection', function () {
 });
 
 test('BaseModel model has correct connection', function () {
-    $baseModel = new BaseModel;
+    $baseModel = new class extends BaseModel
+    {
+    };
 
     expect($baseModel->getConnectionName())->toBeString();
 });
