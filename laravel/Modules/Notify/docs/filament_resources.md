@@ -241,11 +241,11 @@ public static function getTableActions(): array
 ## Collegamenti Bidirezionali
 
 ### Collegamenti nella Root
-- [Architettura Filament](../../../../project_docs/architecture/filament.md)
-- [Gestione Notifiche](../../../../project_docs/architecture/notifications.md)
+- [Architettura Filament](../../../../../docs/project/architecture/filament.md)
+- [Gestione Notifiche](../../../../../docs/project/architecture/notifications.md)
 
 ### Collegamenti ai Moduli
-- [XotBaseResource](../../xot/project_docs/xotbaseresource.md)
+- [XotBaseResource](../../Xot/project_docs/XotBaseResource.md)
 - [Gestione Template](../template-management.md)
 
 ## Note Importanti
@@ -264,12 +264,12 @@ public static function getTableActions(): array
 6. I campi JSON sono validati correttamente
 7. Le traduzioni seguono la struttura corretta 
 ## Collegamenti tra versioni di filament-resources.md
-* [filament-resources.md](../../../../project_docs/tecnico/filament/filament-resources.md)
-* [filament-resources.md](../../../../project_docs/regole/filament-resources.md)
-* [filament-resources.md](../../gdpr/project_docs/filament-resources.md)
-* [filament-resources.md](../../xot/project_docs/filament-resources.md)
-* [filament-resources.md](../../patient/project_docs/filament-resources.md)
-* [filament-resources.md](../../cms/project_docs/filament-resources.md)
+* [filament-resources.md](../../../../../docs/project/tecnico/filament/filament-resources.md)
+* [filament-resources.md](../../../../../docs/project/regole/filament-resources.md)
+* [filament-resources.md](../../Gdpr/project_docs/filament-resources.md)
+* [filament-resources.md](../../Xot/project_docs/filament-resources.md)
+* [filament-resources.md](../../Patient/project_docs/filament-resources.md)
+* [filament-resources.md](../../Cms/project_docs/filament-resources.md)
 
 
 ---

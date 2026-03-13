@@ -5,68 +5,60 @@ declare(strict_types=1);
 namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Modules\User\Models\User;
 
+/**
+ * @extends Factory<User>
+ */
 class UserFactory extends Factory
 {
-    /**
-     * The name of the factory's corresponding model.
-     *
-     * @var class-string<Model>
-     */
     protected $model = User::class;
 
     /**
-     * Define the model's default state.
-     *
      * @return array<string, mixed>
      */
     public function definition(): array
     {
         return [
             'id' => (string) Str::uuid(),
-            'first_name' => fake()->firstName(),
-            'last_name' => fake()->lastName(),
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'password' => Hash::make('password123'),
             'remember_token' => Str::random(10),
-            'lang' => fake()->randomElement(['it', 'en', 'de']),
             'is_active' => true,
-            'is_otp' => false,
-            'password_expires_at' => fake()->optional()->dateTimeBetween('now', '+1 year'),
+            'lang' => 'it',
+            'type' => 'customer_user',
+            'state' => 'active',
         ];
     }
 
-    /**
-     * Indicate that the user should be active.
-     */
     public function active(): static
     {
-        return $this->state(fn (array $_attributes) => [
+        return $this->state(fn (): array => [
             'is_active' => true,
         ]);
     }
 
-    /**
-     * Indicate that the user should be inactive.
-     */
     public function inactive(): static
     {
-        return $this->state(fn (array $_attributes) => [
+        return $this->state(fn (): array => [
             'is_active' => false,
         ]);
     }
 
-    /**
-     * Indicate that the user's email address should be unverified.
-     */
+    public function verified(): static
+    {
+        return $this->state(fn (): array => [
+            'email_verified_at' => now(),
+        ]);
+    }
+
     public function unverified(): static
     {
-        return $this->state(fn (array $_attributes) => [
+        return $this->state(fn (): array => [
             'email_verified_at' => null,
         ]);
     }

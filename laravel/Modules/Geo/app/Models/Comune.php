@@ -62,6 +62,21 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static ComuneFactory factory($count = null, $state = [])
  *
+ * @property int|null    $altitudine
+ * @property string|null $codice_catastale
+ * @property float|null  $lat
+ * @property float|null  $lng
+ * @property string|null $sigla_provincia
+ * @property float|null  $superficie
+ * @property string|null $zona_altimetrica
+ *
+ * @method static Builder<static>|Comune whereAltitudine($value)
+ * @method static Builder<static>|Comune whereLat($value)
+ * @method static Builder<static>|Comune whereLng($value)
+ * @method static Builder<static>|Comune whereSiglaProvincia($value)
+ * @method static Builder<static>|Comune whereSuperficie($value)
+ * @method static Builder<static>|Comune whereZonaAltimetrica($value)
+ *
  * @mixin \Eloquent
  */
 class Comune extends BaseModel

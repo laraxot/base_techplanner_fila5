@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Modules\UI\Tests\Feature;
+
 use Tests\TestCase;
 
 uses(TestCase::class);

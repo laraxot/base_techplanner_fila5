@@ -1,5 +1,18 @@
 # Laraxot Migration Architecture Philosophy
 
+## 🚨 ABSOLUTE RULE: NEVER USE DESTRUCTIVE MIGRATION COMMANDS
+
+**FORBIDDEN - NEVER USE THESE COMMANDS:**
+- `php artisan migrate:fresh`
+- `php artisan migrate --force` 
+- `php artisan migrate:refresh`
+- `php artisan migrate:fresh --seed`
+- Any variation of destructive migration commands
+
+**REASON**: These commands destroy data, drop tables, or recreate databases without safeguards. They are dangerous in production, shared environments, or when data integrity matters.
+
+**ALTERNATIVE**: Use proper migration updates following Laraxot philosophy - one migration per table, modify existing migrations with timestamp updates, never drop or recreate.
+
 ## Core Migration Principles
 
 ### The Single Source of Truth Principle
@@ -8,7 +21,7 @@
 
 ### Why This Architecture Matters
 
-1. **Predictable Schema Evolution**: Clear, linear progression of database changes
+1. **<nome progetto>able Schema Evolution**: Clear, linear progression of database changes
 2. **Environment Consistency**: Same migration order across all environments
 3. **Maintainability**: Single file to modify for each table's base schema
 4. **DRY Compliance**: Eliminates redundant schema definitions

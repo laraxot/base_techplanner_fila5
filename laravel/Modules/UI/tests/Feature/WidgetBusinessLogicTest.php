@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Modules\UI\Tests\Feature;
+
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Livewire\Livewire;
 use Modules\UI\Filament\Widgets\GroupWidget;

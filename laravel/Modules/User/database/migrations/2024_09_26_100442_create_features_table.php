@@ -15,21 +15,14 @@ return new class extends XotBaseMigration {
      */
     public function up(): void
     {
-        // -- CREATE --
         $this->tableCreate(static function (Blueprint $table): void {
             $table->id();
             $table->string('name');
             $table->string('scope');
             $table->text('value');
-
             $table->unique(['name', 'scope']);
-        });
-        // -- UPDATE --
-        $this->tableUpdate(function (Blueprint $table): void {
-            $this->updateTimestamps(
-                table: $table,
-                hasSoftDeletes: true,
-            );
+            $table->timestamps();
+            $table->softDeletes();
         });
     }
 };

@@ -65,15 +65,6 @@ final class SendBotmanTelegramAction
      */
     public function execute(TelegramData $telegramData): array
     {
-        // Log di debug se abilitato
-        if ($this->debug) {
-            Log::debug('Invio Telegram BotMan', [
-                'chat_id' => $telegramData->chatId,
-                'message_length' => strlen($telegramData->text),
-                'type' => $telegramData->type,
-            ]);
-        }
-
         $client = new Client([
             'timeout' => $this->timeout,
             'base_uri' => $this->apiUrl,
@@ -133,7 +124,7 @@ final class SendBotmanTelegramAction
             $this->vars['status_txt'] = $responseContent;
             $this->vars['response_data'] = $responseData;
 
-            Log::info('Telegram BotMan inviato con successo', [
+            Log::debug('Telegram BotMan inviato con successo', [
                 'chat_id' => $telegramData->chatId,
                 'response_code' => $statusCode,
             ]);

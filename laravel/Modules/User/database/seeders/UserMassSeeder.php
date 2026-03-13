@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Database\Seeders;
 
 use Carbon\Carbon;
+use Illuminate\Console\Command;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Modules\User\Models\AuthenticationLog;
@@ -28,7 +29,7 @@ class UserMassSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->command->info('🚀 Inizializzazione seeding di massa per modulo User...');
+        $this->info('Inizializzazione seeding di massa per modulo User...');
 
         $startTime = microtime(true);
 
@@ -54,10 +55,10 @@ class UserMassSeeder extends Seeder
             $endTime = microtime(true);
             $executionTime = round($endTime - $startTime, 2);
 
-            $this->command->info("🎉 Seeding modulo User completato in {$executionTime} secondi!");
+            $this->info("Seeding modulo User completato in {$executionTime} secondi.");
             $this->displaySummary();
         } catch (\Exception $e) {
-            $this->command->error('❌ Errore durante il seeding: '.$e->getMessage());
+            $this->error('Errore durante il seeding: '.$e->getMessage());
             throw $e;
         }
     }
@@ -67,7 +68,7 @@ class UserMassSeeder extends Seeder
      */
     private function createAdvancedRolesAndPermissions(): void
     {
-        $this->command->info('🔐 Creazione ruoli e permessi avanzati...');
+        $this->info('Creazione ruoli e permessi avanzati...');
 
         // Permessi avanzati
         $advancedPermissions = [
@@ -128,12 +129,12 @@ class UserMassSeeder extends Seeder
             $role->syncPermissions($rolePermissions);
         }
 
-        $this->command->info(
-            '✅ Creati '.
+        $this->info(
+            'Creati '.
             count($advancedPermissions).
                 ' permessi avanzati e '.
                 count($advancedRoles).
-                ' ruoli specializzati',
+                ' ruoli specializzati.',
         );
     }
 
@@ -142,7 +143,7 @@ class UserMassSeeder extends Seeder
      */
     private function createSpecializedTeams(): void
     {
-        $this->command->info('👥 Creazione team specializzati...');
+        $this->info('Creazione team specializzati...');
 
         $specializedTeams = [
             [
@@ -189,7 +190,7 @@ class UserMassSeeder extends Seeder
             Team::firstOrCreate(['name' => $teamData['name']], $teamData);
         }
 
-        $this->command->info('✅ Creati '.count($specializedTeams).' team specializzati');
+        $this->info('Creati '.count($specializedTeams).' team specializzati.');
     }
 
     /**
@@ -197,19 +198,21 @@ class UserMassSeeder extends Seeder
      */
     private function createUsersWithProfiles(): void
     {
-        $this->command->info('👤 Creazione utenti con profili completi...');
+        $this->info('Creazione utenti con profili completi...');
 
         // Crea 200 utenti generici
-        $users = User::factory()
-            ->count(200)
-            ->create([
-                'email_verified_at' => Carbon::now(),
-                'created_at' => Carbon::now()->subDays(rand(1, 365)),
-            ]);
+        $userFactory = \Modules\User\Database\Factories\UserFactory::new();
+        /** @var \Illuminate\Database\Eloquent\Collection<int, User> $users */
+        $users = $userFactory->count(200)->create([
+            'email_verified_at' => Carbon::now(),
+            'created_at' => Carbon::now()->subDays(rand(1, 365)),
+        ]);
 
         // Crea profili per tutti gli utenti
+        $profileFactory = \Modules\User\Database\Factories\ProfileFactory::new();
         foreach ($users as $user) {
-            Profile::factory()->create([
+            // @phpstan-ignore-next-line
+            $profileFactory->create([
                 'user_id' => $user->id,
                 'created_at' => $user->created_at,
                 'updated_at' => $user->updated_at,
@@ -217,13 +220,14 @@ class UserMassSeeder extends Seeder
         }
 
         // Assegna ruoli casuali
+        /** @var \Illuminate\Database\Eloquent\Collection<int, \Spatie\Permission\Models\Role> $roles */
         $roles = Role::all();
         foreach ($users as $user) {
             $randomRole = $roles->random();
             $user->assignRole($randomRole);
         }
 
-        $this->command->info('✅ Creati '.$users->count().' utenti con profili completi');
+        $this->info('Creati '.$users->count().' utenti con profilo.');
     }
 
     /**
@@ -231,16 +235,16 @@ class UserMassSeeder extends Seeder
      */
     private function createAuthenticationLogs(): void
     {
-        $this->command->info('📝 Creazione log di autenticazione...');
+        $this->info('Creazione log di autenticazione...');
 
         // Crea 1000 log di autenticazione
-        $logs = AuthenticationLog::factory()
-            ->count(1000)
-            ->create([
-                'created_at' => Carbon::now()->subDays(rand(1, 30)),
-            ]);
+        $logFactory = \Modules\User\Database\Factories\AuthenticationLogFactory::new();
+        /** @var \Illuminate\Database\Eloquent\Collection<int, AuthenticationLog> $logs */
+        $logs = $logFactory->count(1000)->create([
+            'created_at' => Carbon::now()->subDays(rand(1, 30)),
+        ]);
 
-        $this->command->info('✅ Creati '.$logs->count().' log di autenticazione');
+        $this->info('Creati '.$logs->count().' log di autenticazione.');
     }
 
     /**
@@ -248,16 +252,17 @@ class UserMassSeeder extends Seeder
      */
     private function createUserDevices(): void
     {
-        $this->command->info('📱 Creazione dispositivi utente...');
+        $this->info('Creazione dispositivi utente...');
 
         // Crea 500 dispositivi
-        $devices = Device::factory()
-            ->count(500)
+        $deviceFactory = \Modules\User\Database\Factories\DeviceFactory::new();
+        /** @var \Illuminate\Database\Eloquent\Collection<int, Device> $devices */
+        $devices = $deviceFactory->count(500)
             ->create([
                 'created_at' => Carbon::now()->subDays(rand(1, 90)),
             ]);
 
-        $this->command->info('✅ Creati '.$devices->count().' dispositivi utente');
+        $this->info('Creati '.$devices->count().' dispositivi.');
     }
 
     /**
@@ -265,16 +270,16 @@ class UserMassSeeder extends Seeder
      */
     private function createSocialProviders(): void
     {
-        $this->command->info('🔗 Creazione provider social...');
+        $this->info('Creazione provider social...');
 
         // Crea 100 provider social
-        $providers = SocialProvider::factory()
-            ->count(100)
-            ->create([
-                'created_at' => Carbon::now()->subDays(rand(1, 180)),
-            ]);
+        $providerFactory = \Modules\User\Database\Factories\SocialProviderFactory::new();
+        /** @var \Illuminate\Database\Eloquent\Collection<int, SocialProvider> $providers */
+        $providers = $providerFactory->count(100)->create([
+            'created_at' => Carbon::now()->subDays(rand(1, 180)),
+        ]);
 
-        $this->command->info('✅ Creati '.$providers->count().' provider social');
+        $this->info('Creati '.$providers->count().' provider social.');
     }
 
     /**
@@ -282,62 +287,61 @@ class UserMassSeeder extends Seeder
      */
     private function displaySummary(): void
     {
-        $this->command->info('📊 RIASSUNTO DATI CREATI PER MODULO USER:');
-        $this->command->info('┌─────────────────────────────────────┐');
+        $this->info('RIASSUNTO DATI CREATI PER MODULO USER:');
+        $this->info('-------------------------------------');
 
         try {
             // Conta utenti
             $totalUsers = User::count();
             $verifiedUsers = User::whereNotNull('email_verified_at')->count();
 
-            $this->command->info('│ 👥 Utenti totali:           '.
-            str_pad((string) $totalUsers, 6, ' ', STR_PAD_LEFT).
-                ' │');
-            $this->command->info('│    - Verificati:             '.
-            str_pad((string) $verifiedUsers, 6, ' ', STR_PAD_LEFT).
-                ' │');
+            $this->info('Utenti totali: '.str_pad((string) $totalUsers, 6, ' ', STR_PAD_LEFT));
+            $this->info('Utenti verificati: '.str_pad((string) $verifiedUsers, 6, ' ', STR_PAD_LEFT));
 
             // Conta profili
             $totalProfiles = Profile::count();
 
-            $this->command->info('│ 👤 Profili totali:          '.
-            str_pad((string) $totalProfiles, 6, ' ', STR_PAD_LEFT).
-                ' │');
+            $this->info('Profili totali: '.str_pad((string) $totalProfiles, 6, ' ', STR_PAD_LEFT));
 
             // Conta ruoli e permessi
             $totalRoles = Role::count();
             $totalPermissions = Permission::count();
             $totalTeams = Team::count();
 
-            $this->command->info('│ 🔐 Ruoli:                  '.
-            str_pad((string) $totalRoles, 6, ' ', STR_PAD_LEFT).
-                ' │');
-            $this->command->info('│ 🔑 Permessi:               '.
-            str_pad((string) $totalPermissions, 6, ' ', STR_PAD_LEFT).
-                ' │');
-            $this->command->info('│ 👥 Team:                   '.
-            str_pad((string) $totalTeams, 6, ' ', STR_PAD_LEFT).
-                ' │');
+            $this->info('Ruoli totali: '.str_pad((string) $totalRoles, 6, ' ', STR_PAD_LEFT));
+            $this->info('Permessi totali: '.str_pad((string) $totalPermissions, 6, ' ', STR_PAD_LEFT));
+            $this->info('Team totali: '.str_pad((string) $totalTeams, 6, ' ', STR_PAD_LEFT));
 
             // Conta log e dispositivi
             $totalLogs = AuthenticationLog::count();
             $totalDevices = Device::count();
             $totalProviders = SocialProvider::count();
 
-            $this->command->info('│ 📝 Log autenticazione:      '.
-            str_pad((string) $totalLogs, 6, ' ', STR_PAD_LEFT).
-                ' │');
-            $this->command->info('│ 📱 Dispositivi:             '.
-            str_pad((string) $totalDevices, 6, ' ', STR_PAD_LEFT).
-                ' │');
-            $this->command->info('│ 🔗 Provider social:         '.
-            str_pad((string) $totalProviders, 6, ' ', STR_PAD_LEFT).
-                ' │');
+            $this->info('Log autenticazione: '.str_pad((string) $totalLogs, 6, ' ', STR_PAD_LEFT));
+            $this->info('Dispositivi: '.str_pad((string) $totalDevices, 6, ' ', STR_PAD_LEFT));
+            $this->info('Provider social: '.str_pad((string) $totalProviders, 6, ' ', STR_PAD_LEFT));
         } catch (\Exception $e) {
-            $this->command->info('│ ❌ Errore nel conteggio: '.$e->getMessage());
+            $this->info('Errore nel conteggio: '.$e->getMessage());
         }
 
-        $this->command->info('└─────────────────────────────────────┘');
-        $this->command->info('');
+        $this->info('-------------------------------------');
+        $this->info('');
+    }
+
+    private function info(string $message): void
+    {
+        $command = $this->getConsoleCommand();
+        $command->info($message);
+    }
+
+    private function error(string $message): void
+    {
+        $command = $this->getConsoleCommand();
+        $command->error($message);
+    }
+
+    private function getConsoleCommand(): Command
+    {
+        return $this->command;
     }
 }

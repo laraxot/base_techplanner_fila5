@@ -1,6 +1,7 @@
 
 # Compatibilità Filament 4.x - Modulo Notify
 
+**Data**: 2025-01-27
 **Status**: ✅ COMPLETATO
 **Versione Filament**: 4.0.17
 
@@ -78,8 +79,8 @@ UPDATE templates SET counter = ? WHERE id = ?
 
 ## 🔗 Collegamenti
 
-- [Rapporto Aggiornamento Filament 4.x](../../docs/filament_4x_upgrade_report.md)
+- [Rapporto Aggiornamento Filament 4.x](../../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Documentazione Eloquent](https://laravel.com/docs/eloquent)
 
-*Ultimo aggiornamento: [DATE]*
+*Ultimo aggiornamento: 2025-01-27*

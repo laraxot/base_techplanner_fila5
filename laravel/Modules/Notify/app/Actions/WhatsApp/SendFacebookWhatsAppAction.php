@@ -66,15 +66,6 @@ final class SendFacebookWhatsAppAction
      */
     public function execute(WhatsAppData $whatsAppData): array
     {
-        // Log di debug se abilitato
-        if ($this->debug) {
-            Log::debug('Invio WhatsApp Facebook', [
-                'to' => $whatsAppData->recipient,
-                'message_length' => strlen($whatsAppData->body),
-                'type' => $whatsAppData->type,
-            ]);
-        }
-
         $client = new Client([
             'timeout' => $this->timeout,
             'headers' => [
@@ -123,7 +114,7 @@ final class SendFacebookWhatsAppAction
             $this->vars['status_txt'] = $responseContent;
             $this->vars['response_data'] = $responseData;
 
-            Log::info('WhatsApp Facebook inviato con successo', [
+            Log::debug('WhatsApp Facebook inviato con successo', [
                 'to' => $whatsAppData->recipient,
                 'response_code' => $statusCode,
             ]);

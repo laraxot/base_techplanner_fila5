@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Log;
 use Kreait\Firebase\Contract\Messaging;
 use Kreait\Firebase\Exception\FirebaseException;
 use Kreait\Firebase\Exception\MessagingException;
+use Kreait\Firebase\Messaging\Message;
 use Kreait\Firebase\Messaging\MulticastSendReport;
 use Kreait\Firebase\Messaging\RegistrationToken;
 use Kreait\Firebase\Messaging\RegistrationTokens;
@@ -89,9 +90,14 @@ final class FirebaseCloudMessagingChannel
          * @var list<RegistrationToken|string>|RegistrationToken|RegistrationTokens|non-empty-string
          */
         $registrationTokens = $userDeviceTokens->toArray();
+        $message = $notification->toCloudMessage();
+
+        if (! $message instanceof Message) {
+            throw new Exception('Invalid Firebase multicast message payload.');
+        }
 
         return $this->firebaseCloudMessaging->sendMulticast(
-            message: $notification->toCloudMessage(),
+            message: $message,
             registrationTokens: $registrationTokens,
         );
     }

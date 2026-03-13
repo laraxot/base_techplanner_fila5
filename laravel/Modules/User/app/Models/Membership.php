@@ -50,6 +50,16 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static Builder<static>|Membership whereId($value)
  *
+ * @property array<array-key, mixed>|null $permissions
+ * @property string|null                  $joined_at
+ *
+ * @method static Builder<static>|Membership whereJoinedAt($value)
+ * @method static Builder<static>|Membership wherePermissions($value)
+ *
+ * @property string $uuid
+ *
+ * @method static Builder<static>|Membership whereUuid($value)
+ *
  * @mixin \Eloquent
  */
 class Membership extends BasePivot

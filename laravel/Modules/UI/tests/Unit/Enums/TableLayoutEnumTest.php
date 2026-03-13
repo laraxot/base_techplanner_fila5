@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-uses(Modules\UI\Tests\TestCase::class);
+namespace Modules\UI\Tests\Unit\Enums;
+
+uses(\Modules\UI\Tests\TestCase::class);
 
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;

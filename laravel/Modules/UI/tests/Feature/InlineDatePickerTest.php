@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Modules\UI\Tests\Feature;
+
 use Carbon\Exceptions\InvalidFormatException;
 use Filament\Forms\Components\Field;
 use Filament\Forms\Forms\Components\InlineDatePicker;

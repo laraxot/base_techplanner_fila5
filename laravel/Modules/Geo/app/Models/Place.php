@@ -113,6 +113,16 @@ use function Safe\json_encode;
  * @method static Builder<static>|Place whereUpdatedAt($value)
  * @method static Builder<static>|Place whereUpdatedBy($value)
  *
+ * @property string|null $name
+ * @property string|null $slug
+ * @property string|null $description
+ * @property int|null    $place_type_id
+ *
+ * @method static Builder<static>|Place whereDescription($value)
+ * @method static Builder<static>|Place whereName($value)
+ * @method static Builder<static>|Place wherePlaceTypeId($value)
+ * @method static Builder<static>|Place whereSlug($value)
+ *
  * @mixin \Eloquent
  */
 class Place extends BaseModel implements HasGeolocation

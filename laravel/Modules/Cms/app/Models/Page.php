@@ -6,6 +6,7 @@ namespace Modules\Cms\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Carbon;
 use Modules\Cms\Database\Factories\PageFactory;
 use Modules\Cms\Models\Traits\HasBlocks;
@@ -184,6 +185,10 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static PageFactory factory($count = null, $state = [])
  *
+ * @property array<array-key, mixed>|null $blocks
+ *
+ * @method static Builder<static>|Page whereBlocks($value)
+ *
  * @mixin \Eloquent
  */
 class Page extends BaseModelLang
@@ -235,9 +240,21 @@ class Page extends BaseModelLang
         return $this->getSushiRows();
     }
 
+    public static function findUniqueBySlug(string $slug): ?self
+    {
+        try {
+            /** @var self $page */
+            $page = self::query()->where('slug', $slug)->sole();
+
+            return $page;
+        } catch (ModelNotFoundException) {
+            return null;
+        }
+    }
+
     public static function getMiddlewareBySlug(string $slug): array
     {
-        $page = self::where('slug', $slug)->first();
+        $page = self::findUniqueBySlug($slug);
 
         if (! $page instanceof Page) {
             return [];

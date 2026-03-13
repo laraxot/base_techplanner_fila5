@@ -15,13 +15,20 @@
 - 🧱 **[Base Templates](./base-templates.md)** - Struttura HTML responsive per messaggi transazionali.
 
 ## ⚙️ **Configurazione Avanzata**
+- 📦 **[Composer Dependencies](./composer-dependencies.md)** - Firebase, FCM, Telegram: package nel modulo Notify, mai nel root.
+- 📦 **[Riferimento pacchetti](../../../../docs/composer-packages-reference.md)** | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md) - AWS, Telegram, Postmark, Spatie mail templates
 - 🛠️ **[Channel Provider](./provider-actions-architecture.md)** - Come estendere il modulo con nuovi driver.
 - 🏷️ **[Acronym Naming](./acronym-naming-conventions.md)** - Standard per la denominazione dei driver e canali.
 - 🔄 **[Queue Management](./monitoring.md)** - Monitoraggio delle code e dei fallback.
 
 ## 🧪 **Qualità e Sviluppo**
 - ✅ **[PHPStan Analysis](./phpstan-fixes.md)** - Report di conformità Level 10.
+- 🚨 **[PHPStan Cluster 2026-03-10](./phpstan-cluster-2026-03-10.md)** - Modelli canonici mancanti per log/canali e impatto su factory/controller.
+- 🧭 **[No Orphan Http Controllers](./no-orphan-http-controllers.md)** - I controller web senza route o boundary chiaro non devono restare nel modulo.
+- 🚫 **[No NotificationTrackingController](./no-notification-tracking-controller.md)** - Il tracking notifiche non deve vivere in un controller HTTP legacy.
 - 🔬 **[Testing Guidelines](./testing.md)** - Mocking dei canali e verifica invio.
+- 📘 **[Docs-First Workflow](./docs-first-workflow.md)** - Sequenza obbligatoria docs -> codice -> tracking GitHub.
+- 🧪 **PSR-4 Test Helpers** - Nei file Pest usare helper anonimi o support file dedicati; evitare classi top-level extra che rompono `composer dump-autoload`.
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./translation-cleanup-plan.md)** - Rimozione dei 500+ file obsoleti accumulati.
@@ -33,3 +40,7 @@
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+
+## Dependency Intelligence
+
+- [Dependency intelligence](dependency-intelligence.md)

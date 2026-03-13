@@ -21,6 +21,18 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  *
  * @method static PlaceTypeFactory factory($count = null, $state = [])
  *
+ * @property string                          $id
+ * @property string                          $name
+ * @property string|null                     $description
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ *
+ * @method static Builder<static>|PlaceType whereCreatedAt($value)
+ * @method static Builder<static>|PlaceType whereDescription($value)
+ * @method static Builder<static>|PlaceType whereId($value)
+ * @method static Builder<static>|PlaceType whereName($value)
+ * @method static Builder<static>|PlaceType whereUpdatedAt($value)
+ *
  * @mixin \Eloquent
  */
 class PlaceType extends BaseModel

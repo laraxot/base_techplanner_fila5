@@ -95,6 +95,15 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder<static>|Profile withoutRole($roles, $guard = null)
  *
  * @property ProfileContract|null $deleter
+ * @property string|null          $fiscal_code
+ * @property string|null          $notes
+ *
+ * @method static Builder<static>|Profile                         childrenWith(array $relations)
+ * @method static Builder<static>|Profile                         childrenWithCount(array $relations)
+ * @method static \Modules\Gdpr\Database\Factories\ProfileFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Profile                         whereFiscalCode($value)
+ * @method static Builder<static>|Profile                         whereNotes($value)
+ * @method static Builder<static>|Profile                         byUuid(string $uuid)
  *
  * @mixin \Eloquent
  */

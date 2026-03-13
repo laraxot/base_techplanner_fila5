@@ -19,7 +19,7 @@ name('register');
 
 <x-layouts.app>
     <x-slot name="title">
-        {{ __('gdpr::register.title') }} - LaravelPizza Community
+        {{ __('gdpr::register.title') }} - <nome progetto> Community
     </x-slot>
 
     <x-slot name="description">
@@ -27,7 +27,7 @@ name('register');
     </x-slot>
 
     <x-slot name="keywords">
-        Laravel meetup, Laravel community, PHP developer community, Laravel tutorials, Laravel workshops, Laravel networking, LaravelPizza
+        Laravel meetup, Laravel community, PHP developer community, Laravel tutorials, Laravel workshops, Laravel networking, <nome progetto>
     </x-slot>
 
     <section
@@ -46,7 +46,7 @@ name('register');
             <div class="space-y-10">
                 <div class="text-center space-y-6">
                     <a href="{{ \LaravelLocalization::localizeUrl('/') }}" class="inline-block group" aria-label="{{ config('app.name') }}">
-                        <x-pub_theme::ui.logo class="h-16 w-auto md:h-20 transition-transform duration-300 group-hover:scale-110" />
+                        <x-ui.logo class="h-16 w-auto md:h-20 transition-transform duration-300 group-hover:scale-110" />
                     </a>
 
                     <div class="space-y-3">

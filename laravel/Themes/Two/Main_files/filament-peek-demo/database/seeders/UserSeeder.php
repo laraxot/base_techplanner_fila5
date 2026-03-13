@@ -9,7 +9,7 @@ class UserSeeder extends Seeder
 {
     public function run()
     {
-        $admin = new User();
+        $admin = new User;
         $admin->name = 'Admin';
         $admin->email = 'admin@test.test';
         $admin->password = bcrypt($admin->email);

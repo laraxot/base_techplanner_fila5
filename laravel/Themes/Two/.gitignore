@@ -41,3 +41,4 @@ vendor/
 *.backup.*
 node_modules
 *.*Zone.Identifier
+_docs/

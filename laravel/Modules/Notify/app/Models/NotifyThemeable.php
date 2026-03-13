@@ -6,7 +6,6 @@ namespace Modules\Notify\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
-use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * Modules\Notify\Models\NotifyThemeable.
@@ -19,7 +18,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property int|null $notify_theme_id
- *
  * @method static Builder|NotifyThemeable newModelQuery()
  * @method static Builder|NotifyThemeable newQuery()
  * @method static Builder|NotifyThemeable query()
@@ -31,19 +29,14 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|NotifyThemeable whereNotifyThemeId($value)
  * @method static Builder|NotifyThemeable whereUpdatedAt($value)
  * @method static Builder|NotifyThemeable whereUpdatedBy($value)
- *
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
- *
  * @method static Builder<static>|NotifyThemeable whereDeletedAt($value)
  * @method static Builder<static>|NotifyThemeable whereDeletedBy($value)
- *
  * @mixin IdeHelperNotifyThemeable
- *
- * @property-read ProfileContract|null $deleter
- *
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $deleter
  * @mixin \Eloquent
  */
 class NotifyThemeable extends BaseMorphPivot

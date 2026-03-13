@@ -175,7 +175,8 @@ class AppointmentReminder extends Notification
         $smsData = new NetfunSmsData(
             recipient: $phoneNumber,
             message: "Promemoria: appuntamento il {$this->appointment->date}",
-            sender: 'SaluteOra',
+            sender: '',
+            sender: '<nome progetto>',
             reference: 'app_' . $this->appointment->id
         );
         

@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Modules\Activity\Tests\Unit\Actions;
+
 uses(\Modules\Activity\Tests\TestCase::class);
 
 use Modules\Activity\Actions\LogActivityAction;
@@ -14,7 +16,7 @@ use Modules\Activity\Models\Activity;
 use Modules\User\Models\User;
 
 test('LogActivityAction can execute', function () {
-    $user = User::factory()->create(['name' => 'Test User', 'email' => 'test@example.com', 'password' => 'password']);
+    $user = User::factory()->create(['name' => 'Test User', 'password' => 'password']);
 
     $action = new LogActivityAction(
         type: 'test_event',
@@ -44,7 +46,7 @@ test('LogActivityAction throws exception for empty type', function () {
 });
 
 test('LogUserLoginAction can execute', function () {
-    $user = User::factory()->create(['name' => 'Test User', 'email' => 'login@example.com', 'password' => 'password']);
+    $user = User::factory()->create(['name' => 'Test User', 'password' => 'password']);
 
     $action = new LogUserLoginAction($user);
 
@@ -55,7 +57,7 @@ test('LogUserLoginAction can execute', function () {
 });
 
 test('LogUserLogoutAction can execute', function () {
-    $user = User::factory()->create(['name' => 'Test User', 'email' => 'logout@example.com', 'password' => 'password']);
+    $user = User::factory()->create(['name' => 'Test User', 'password' => 'password']);
 
     $action = new LogUserLogoutAction($user);
 
@@ -66,8 +68,8 @@ test('LogUserLogoutAction can execute', function () {
 });
 
 test('LogModelCreatedAction can execute', function () {
-    $user = User::factory()->create(['name' => 'Test User', 'email' => 'created@example.com', 'password' => 'password']);
-    $model = User::factory()->create(['name' => 'Subject User', 'email' => 'subject@example.com', 'password' => 'password']);
+    $user = User::factory()->create(['name' => 'Test User', 'password' => 'password']);
+    $model = User::factory()->create(['name' => 'Subject User', 'password' => 'password']);
 
     $action = new LogModelCreatedAction($model, $user);
 
@@ -78,8 +80,8 @@ test('LogModelCreatedAction can execute', function () {
 });
 
 test('LogModelUpdatedAction can execute', function () {
-    $user = User::factory()->create(['name' => 'Test User', 'email' => 'updated@example.com', 'password' => 'password']);
-    $model = User::factory()->create(['name' => 'Subject User', 'email' => 'subject2@example.com', 'password' => 'password']);
+    $user = User::factory()->create(['name' => 'Test User', 'password' => 'password']);
+    $model = User::factory()->create(['name' => 'Subject User', 'password' => 'password']);
 
     $action = new LogModelUpdatedAction($model, $user);
 
@@ -90,8 +92,8 @@ test('LogModelUpdatedAction can execute', function () {
 });
 
 test('LogModelDeletedAction can execute', function () {
-    $user = User::factory()->create(['name' => 'Test User', 'email' => 'deleted@example.com', 'password' => 'password']);
-    $model = User::factory()->create(['name' => 'Subject User', 'email' => 'subject3@example.com', 'password' => 'password']);
+    $user = User::factory()->create(['name' => 'Test User', 'password' => 'password']);
+    $model = User::factory()->create(['name' => 'Subject User', 'password' => 'password']);
 
     $action = new LogModelDeletedAction($model, $user);
 

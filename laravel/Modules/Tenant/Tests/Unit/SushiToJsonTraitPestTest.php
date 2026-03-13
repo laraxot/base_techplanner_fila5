@@ -10,11 +10,6 @@ use Modules\Tenant\Models\TestSushiModel;
 use Modules\Tenant\Services\TenantService;
 use Tests\TestCase;
 
-/**
- * @property TestSushiModel $model
- * @property string $testDirectory
- * @property string $testJsonPath
- */
 uses(TestCase::class);
 
 beforeEach(function () {
