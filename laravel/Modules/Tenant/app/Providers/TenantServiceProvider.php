@@ -105,16 +105,16 @@ class TenantServiceProvider extends XotBaseServiceProvider
             $name = $module->getSnakeName();
             $upperName = strtoupper($name);
 
-            if (isset($connections[$default]) && ! isset($connections[$name])) {
+            if (isset($connections[$default]) && is_array($connections[$default]) && ! isset($connections[$name])) {
                 /** @var array<string, mixed> $moduleConfig */
                 $moduleConfig = $connections[$default];
 
                 // Override with module-specific env variables if they exist
-                $moduleConfig['database'] = env("DB_DATABASE_{$upperName}", $moduleConfig['database']);
-                $moduleConfig['username'] = env("DB_USERNAME_{$upperName}", $moduleConfig['username']);
-                $moduleConfig['password'] = env("DB_PASSWORD_{$upperName}", $moduleConfig['password']);
-                $moduleConfig['host'] = env("DB_HOST_{$upperName}", $moduleConfig['host'] ?? '127.0.0.1');
-                $moduleConfig['port'] = env("DB_PORT_{$upperName}", $moduleConfig['port'] ?? '3306');
+                $moduleConfig['database'] = env("DB_DATABASE_{$upperName}", Arr::get($moduleConfig, 'database'));
+                $moduleConfig['username'] = env("DB_USERNAME_{$upperName}", Arr::get($moduleConfig, 'username'));
+                $moduleConfig['password'] = env("DB_PASSWORD_{$upperName}", Arr::get($moduleConfig, 'password'));
+                $moduleConfig['host'] = env("DB_HOST_{$upperName}", Arr::get($moduleConfig, 'host', '127.0.0.1'));
+                $moduleConfig['port'] = env("DB_PORT_{$upperName}", Arr::get($moduleConfig, 'port', '3306'));
 
                 $connections[$name] = $moduleConfig;
             }
