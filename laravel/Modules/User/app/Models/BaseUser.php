@@ -133,7 +133,10 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     use HasChildren;
     use HasModules;
     use HasSpatiePermission;
-    use HasTeams;
+    use HasTeams {
+        HasTeams::teams insteadof HasSpatiePermission;
+        HasSpatiePermission::teams as permissionTeams;
+    }
     use HasUuids;
     use HasXotFactory;
     use InteractsWithMedia;

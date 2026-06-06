@@ -246,6 +246,8 @@ Ogni volta che si lavora con temi e CMS, consultare questa regola per garantire 
 
 ## Collegamenti
 
+- [LLM Wiki — public theme resolution](./laravel/docs/wiki/concepts/public-theme-resolution-and-vite-assets.md) (second brain agenti)
+- [Tenant: nome → pub_theme](./laravel/Modules/Tenant/docs/tenant-name-to-pub-theme.md)
 - [CMS System Documentation](./cms_system.md)
 - [Theme Components](./theme_components.md)
 - [Prevenzione push GH008 / LFS / merge artifacts](./git-lfs-push-gh008-prevention.md)
