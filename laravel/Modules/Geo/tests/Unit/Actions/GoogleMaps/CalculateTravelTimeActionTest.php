@@ -76,7 +76,7 @@ it('returns error for invalid response status', function (): void {
 it('returns error when no route found', function (): void {
     config(['services.google.maps_api_key' => 'test_key']);
 
-    $mockHandler->append(new Response(200, [], json_encode([)))
+    $mockHandler->append(new Response(200, [], json_encode([
         'status' => 'OK',
         'rows' => [[
             'elements' => [[
