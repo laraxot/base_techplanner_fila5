@@ -14,7 +14,12 @@ use Modules\User\Contracts\TeamContract;
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
+use Spatie\LaravelData\Concerns\WireableData;
+use Spatie\LaravelData\Data;
+use Webmozart\Assert\Assert;
+
 use function Safe\realpath;
+
 /**
  * Class Modules\Xot\Datas\XotData.
  * ----.
@@ -113,7 +118,17 @@ class XotData extends Data implements Wireable
         );
         Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
 
-/* @var class-string<Model&UserContract> $class */
+        /* @var class-string<Model&UserContract> $class */
+        return $class;
+    }
+
+    public function getUserByEmail(string $email): UserContract
+    {
+        $user_class = $this->getUserClass();
+        $userInstance = new $user_class();
+        if (! in_array('email', $userInstance->getFillable(), true)) {
+            throw new \Exception("Attribute 'email' not found in model ".$userInstance::class);
+        }
 
         /** @var (Model&UserContract)|null $user */
         $user = $user_class::query()->where('email', $email)->first();
@@ -121,12 +136,13 @@ class XotData extends Data implements Wireable
         if ($user === null) {
             throw new \Exception('user not found for email '.$email);
         }
+
         Assert::implementsInterface($user, UserContract::class, '['.__LINE__.']['.class_basename($this).']');
 
         return $user;
     }
 
-public function findUserByEmail(string $email): ?UserContract
+    public function findUserByEmail(string $email): ?UserContract
     {
         $userClass = $this->getUserClass();
 
@@ -135,6 +151,24 @@ public function findUserByEmail(string $email): ?UserContract
 
         return $user;
     }
+
+    /**
+     * @return class-string<Model&TeamContract>
+     */
+    public function getTeamClass(): string
+    {
+        Assert::classExists($this->team_class, '['.__LINE__.']['.class_basename($this).']');
+        // Assert::isInstanceOf($team_class, Model::class, '['.__LINE__.']['.class_basename($this).']');
+        Assert::isAOf(
+            $this->team_class,
+            Model::class,
+            '['.__LINE__.']['.class_basename($this).']['.$this->team_class.']',
+        );
+        Assert::implementsInterface(
+            $this->team_class,
+            TeamContract::class,
+            '['.$this->team_class.']['.__LINE__.']['.class_basename($this).']',
+        );
 
         /** @var class-string<Model&TeamContract> $teamClass */
         $teamClass = $this->team_class;
@@ -166,7 +200,7 @@ public function findUserByEmail(string $email): ?UserContract
             '['.__LINE__.']['.class_basename($this).']['.$this->tenant_class.']',
         );
 
-/** @var class-string<Model&TenantContract> $tenantClass */
+        /** @var class-string<Model&TenantContract> $tenantClass */
         $tenantClass = $this->tenant_class;
 
         return $tenantClass;
@@ -218,7 +252,7 @@ public function findUserByEmail(string $email): ?UserContract
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
-/* @var class-string<Model&ProfileContract> $class */
+        /* @var class-string<Model&ProfileContract> $class */
         return $class;
     }
 
@@ -260,7 +294,7 @@ public function findUserByEmail(string $email): ?UserContract
     public function iAmSuperAdmin(): bool
     {
         $user = Auth::user();
-if ($user === null) {
+        if ($user === null) {
             return false;
         }
 
@@ -271,12 +305,12 @@ if ($user === null) {
         // Utilizziamo un'asserzione per garantire che hasRole restituisca un booleano
         $result = $user->hasRole('super-admin');
 
-return $result === true;
+        return $result === true;
     }
 
     public function getProfileModel(): ProfileContract
     {
-if ($this->profile !== null) {
+        if ($this->profile !== null) {
             return $this->profile;
         }
 
@@ -294,7 +328,7 @@ if ($this->profile !== null) {
     /**
      * Update the XotData instance.
      *
-* @param  array<string, mixed>  $data
+     * @param  array<string, mixed>  $data
      */
     public function update(array $data): self
     {
@@ -366,7 +400,23 @@ if ($this->profile !== null) {
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
-/* @var class-string<Model&UserContract> $class */
+        /* @var class-string<Model&UserContract> $class */
+        return $class;
+    }
+
+    public function getUserResourceClassByType(string $type): string
+    {
+        $class = $this->getUserClassByType($type);
+
+        // Extract the module name from the class namespace
+        $moduleName = Str::before(Str::after($class, 'Modules\\'), '\\');
+
+        // Build the resource class path
+        $resourceClass = Str::of($class)
+            ->replace('\\Models\\', '\\Filament\\Resources\\')
+            ->append('Resource')
+            ->toString();
+
         // If missing, fallback (still PSR-4: NEVER put literal "app\" in the PHP namespace segment)
         if (! class_exists($resourceClass)) {
             $resourceClass =
@@ -414,7 +464,7 @@ if ($this->profile !== null) {
 
         // $enum_class = Arr::get($user_class::casts(),'type',null);
         $enum_class = Arr::get($castsResult, 'type', null);
-if ($enum_class === null) {
+        if ($enum_class === null) {
             $enum_class = Str::of($user_class)
                 ->replace('\\Models\\', '\\Enums\\')
                 ->append('TypeEnum')
@@ -441,7 +491,7 @@ if ($enum_class === null) {
         if (! $this->force_ssl) {
             return false;
         }
-if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] === 'localhost') {
+        if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] === 'localhost') {
             return false;
         }
         if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] === '127.0.0.1') {

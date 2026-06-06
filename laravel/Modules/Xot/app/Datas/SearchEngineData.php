@@ -29,13 +29,13 @@ final class SearchEngineData extends Data
         public readonly string $meili_key = '',
         public readonly bool $enable_local = true,
         public readonly array $searchable = [],
-) {}
+    ) {}
 
     /**
      * Create a new instance of SearchEngineData with default values.
      */
     public static function make(): static
     {
-return new self();
+        return new self();
     }
 }

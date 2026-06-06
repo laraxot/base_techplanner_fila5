@@ -6,7 +6,7 @@ namespace Modules\Notify\Datas;
 
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
-class SmsData
+final class SmsData
 {
     public string $from;
 
@@ -33,6 +33,6 @@ class SmsData
      */
     public static function from(array $data): static
     {
-        return new static($data);
+        return new self($data);
     }
 }

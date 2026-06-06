@@ -21,7 +21,7 @@ final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
     protected static bool $isLazy = true;
 
     #[\Override]
-public function getHeading(): string
+    public function getHeading(): string
     {
         return self::transClass($this->model, 'widgets.user_type_registrations_chart.heading');
     }
@@ -38,7 +38,7 @@ public function getHeading(): string
 
         // Verifica se i filtri sono disponibili e validi
         if (is_array($filters) && ! empty($filters)) {
-$startDate = self::parseFilterDate($filters['startDate'] ?? null);
+            $startDate = self::parseFilterDate($filters['startDate'] ?? null);
             $endDate = self::parseFilterDate($filters['endDate'] ?? null);
         }
 
@@ -62,7 +62,7 @@ $startDate = self::parseFilterDate($filters['startDate'] ?? null);
             return [
                 'datasets' => [
                     [
-'label' => self::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
+                        'label' => self::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
                         'data' => $data->map(fn (mixed $value) => $value instanceof TrendValue
                             ? $value->aggregate
                             : 0),
@@ -81,7 +81,7 @@ $startDate = self::parseFilterDate($filters['startDate'] ?? null);
             return [
                 'datasets' => [
                     [
-'label' => self::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
+                        'label' => self::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
                         'data' => [],
                         'backgroundColor' => 'rgba(59, 130, 246, 0.5)',
                         'borderColor' => 'rgb(59, 130, 246)',

@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 use Webmozart\Assert\Assert;
 
 use function Safe\file_get_contents;
+
 class ExecuteSqlFileCommand extends Command
 {
     /**
@@ -64,7 +65,7 @@ class ExecuteSqlFileCommand extends Command
         ]);
 
         try {
-$connection = DB::connection('temp');
+            $connection = DB::connection('temp');
             $connection->getPdo()->exec($sql);
             $this->info('File .sql eseguito con successo!');
         } catch (\Exception $e) {

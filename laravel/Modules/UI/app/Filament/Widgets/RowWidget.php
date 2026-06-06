@@ -9,9 +9,9 @@ declare(strict_types=1);
 namespace Modules\UI\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
-abstract class RowWidget extends XotBaseWidget
+abstract class RowWidget extends XotBaseSchemaWidget
 {
     public array $grid = [];
 

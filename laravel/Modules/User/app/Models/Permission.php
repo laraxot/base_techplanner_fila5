@@ -8,6 +8,12 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Models\Traits\HasXotFactory;
+use Modules\Xot\Models\Traits\RelationX;
+use Modules\Xot\Traits\Updater;
+use Spatie\Permission\Models\Permission as SpatiePermission;
+
+/**
  * @property int $id
  * @property string $name
  * @property string $guard_name
@@ -36,7 +42,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Permission whereUpdatedBy($value)
  * @method static Builder<static>|Permission withoutPermission($permissions)
  * @method static Builder<static>|Permission withoutRole($roles, $guard = null)
-* @method static static firstOrCreate(array $attributes, array $values = [])
+ * @method static static firstOrCreate(array $attributes, array $values = [])
  * @method static static updateOrCreate(array $attributes, array $values = [])
  *
  * @property ProfileContract|null $creator
@@ -53,7 +59,8 @@ class Permission extends SpatiePermission
     use RelationX;
     use Updater;
 
-protected $connection = 'user';
+    protected $connection = 'user';
+
     protected $table = 'permissions';
 
     /** @var list<string> */

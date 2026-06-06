@@ -20,7 +20,31 @@ use function Safe\define;
 use function Safe\fopen;
 use function Safe\preg_match_all;
 
-$defaultConn = Config::get('database.default');
+if (! defined('STDIN')) {
+    define('STDIN', fopen('php://stdin', 'r'));
+}
+
+// ----- TODO
+// --  1) capire come far fare da chiamato non da consolle "scout:import"
+
+/**
+ * Class ArtisanService.
+ */
+class ArtisanService
+{
+    /**
+     * @throws FileNotFoundException
+     */
+    public static function act(string $act): string
+    {
+        // da fare anche in noconsole, e magari mettere un policy
+        $module_name = Request::input('module', '');
+        if (! is_string($module_name)) {
+            $module_name = '';
+        }
+        switch ($act) {
+            case 'migrate':
+                $defaultConn = Config::get('database.default');
                 $purgeConn = \is_string($defaultConn) && $defaultConn !== '' ? $defaultConn : 'mysql';
                 DB::purge($purgeConn);
                 DB::reconnect($purgeConn);
@@ -117,7 +141,7 @@ $defaultConn = Config::get('database.default');
             $log = '';
         }
         $content = '';
-if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
+        if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
             $content = File::get(storage_path('logs/'.$log));
         }
 
@@ -130,7 +154,7 @@ if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
         /** @var array<int, string> $urls */
         $urls = [];
         $urlsRaw = $matches[1];
-if ($urlsRaw !== []) {
+        if ($urlsRaw !== []) {
             $urls = array_values(array_unique($urlsRaw));
         }
 
@@ -189,7 +213,7 @@ if ($urlsRaw !== []) {
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
-if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
+            if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
                 // Parameter #1 $paths of static method Illuminate\Filesystem\Filesystem::delete() expects array|string, Symfony\Component\Finder\SplFileInfo given.
                 echo '<br/>'.$file->getRealPath();
 
@@ -205,7 +229,7 @@ if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
         $files = File::files(storage_path('framework/sessions'));
 
         foreach ($files as $file) {
-if ($file->getExtension() === '' && $file->getRealPath() !== false) {
+            if ($file->getExtension() === '' && $file->getRealPath() !== false) {
                 // echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -221,7 +245,7 @@ if ($file->getExtension() === '' && $file->getRealPath() !== false) {
     {
         $files = File::files(storage_path('debugbar'));
         foreach ($files as $file) {
-if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
+            if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
                 // echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -234,7 +258,7 @@ if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
     }
 
     /**
-* @param  array<string, mixed>  $arguments
+     * @param  array<string, mixed>  $arguments
      */
     public static function exe(string $command, array $arguments = []): string
     {
@@ -244,7 +268,7 @@ if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
             Artisan::call($command, $arguments);
 
             return $output.'[<pre>'.Artisan::output().'</pre>]'; // dato che mi carico solo le route minime menufull.delete non esiste.. impostare delle route comuni.
-} catch (Exception $exception) {
+        } catch (Exception $exception) {
             // throw new Exception('['.__LINE__.']['.class_basename(__CLASS__).']');
             return '[<pre>'.$exception->getMessage().'</pre>]';
 

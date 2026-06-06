@@ -11,11 +11,13 @@ use Modules\Geo\Datas\GeoData;
 // ---- services --
 use Modules\Geo\Services\GeoService;
 
+use function Safe\json_decode;
+
 /**
  * Modules\Geo\Models\Traits\GeoTrait.
  *
- * @property float  $latitude
- * @property float  $longitude
+ * @property float $latitude
+ * @property float $longitude
  * @property string $country.
  * @property string $country.
  * @property string $administrative_area_level_2.
@@ -38,6 +40,21 @@ use Modules\Geo\Services\GeoService;
  */
 trait GeoTrait
 {
+    private function isJsonString(string $value): bool
+    {
+        if ($value === '') {
+            return false;
+        }
+
+        try {
+            json_decode($value);
+
+            return true;
+        } catch (\JsonException) {
+            return false;
+        }
+    }
+
     /*
      * @return array
      *
@@ -80,9 +97,11 @@ trait GeoTrait
     {
         $q = $query;
         if ($lat > 0 && $lng > 0) {
+            /** @var literal-string $haversine */
             $haversine = GeoService::haversine($lat, $lng);
+            $selectExpression = '*,'.$haversine.' AS distance';
 
-            return $query->selectRaw("*,{$haversine} AS distance")->orderBy('distance');
+            return $query->selectRaw($selectExpression)->orderBy('distance');
         }
 
         return $q;
@@ -97,9 +116,11 @@ trait GeoTrait
     ): Builder {
         $q = $query;
         if ($lat > 0 && $lng > 0) {
+            /** @var literal-string $haversine */
             $haversine = GeoService::setLatitudeLongitudeField('lat', 'lng')->haversine($lat, $lng);
+            $selectExpression = '*,'.$haversine.' AS distance';
 
-            return $query->selectRaw("*,{$haversine} AS distance")->orderBy('distance');
+            return $query->selectRaw($selectExpression)->orderBy('distance');
         }
 
         return $q;
@@ -151,19 +172,19 @@ trait GeoTrait
        ,', \"lng\":',' ')
        ,'}','')
        ,'))')
-       ), ST_GeomFromText('POINT(".$lat.' '.$lng.")')
+       ), ST_GeomFromText(?)
        )";
 
-        // dddx($query->whereNotNull($polygon_field)->whereRaw($sql)->toSql());
+        $pointWkt = sprintf('POINT(%F %F)', $lat, $lng);
 
-        return $query->whereNotNull($polygon_field)->whereRaw($sql);
+        return $query->whereNotNull($polygon_field)->whereRaw($sql, [$pointWkt]);
     }
 
     // ---- mutators ----
 
     public function getAddress(): string
     {
-        if ('' === $this->country) {
+        if ($this->country === '') {
             $this->country = 'Italia';
         }
 
@@ -187,15 +208,15 @@ trait GeoTrait
             return (float) $value;
         }
         $address = $this->address;
-        if (null === $address) {
+        if ($address === null) {
             return null;
         }
-        if (is_string($address) && isJson($address)) {
+        if (is_string($address) && $this->isJsonString($address)) {
             $geo = GeoData::from(json_decode($address, true, 512, JSON_THROW_ON_ERROR));
             $latlng = $geo->latlng;
             $lat = is_float($latlng['lat'] ?? null) || is_int($latlng['lat'] ?? null) ? (float) ($latlng['lat']) : null;
             $lng = is_float($latlng['lng'] ?? null) || is_int($latlng['lng'] ?? null) ? (float) ($latlng['lng']) : null;
-            if (null !== $lat && null !== $lng) {
+            if ($lat !== null && $lng !== null) {
                 $this->update([
                     'latitude' => $lat,
                     'longitude' => $lng,
@@ -234,7 +255,7 @@ trait GeoTrait
     {
         // *
 
-        if (is_string($value) && isJson((string) $value)) {
+        if (is_string($value) && $this->isJsonString((string) $value)) {
             /*
              * @var array<string, mixed>
              */
@@ -276,8 +297,7 @@ trait GeoTrait
     }
 
     /**
-     * @param mixed $value
-     *
+     * @param  mixed  $value
      * @return bool|mixed|string
      */
     /*
@@ -311,10 +331,10 @@ trait GeoTrait
      */
     public function getFullAddressAttribute(?string $value): ?string
     {
-        if (null === $this->address) {
+        if ($this->address === null) {
             return null;
         }
-        if (is_string($this->address) && isJson($this->address)) {
+        if (is_string($this->address) && $this->isJsonString($this->address)) {
             /*
              * $addr = json_decode($this->address);
              * if (\is_object($addr)) {

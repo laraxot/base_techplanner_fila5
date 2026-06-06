@@ -82,7 +82,6 @@ class BuildWeeklyTimeTableAction
             /** @var \Carbon\Carbon $currentCarbon */
             $currentCarbon = $current;
             $days[$dateKey] = [
-                // @phpstan-ignore-next-line
                 'date' => Carbon::parse($currentCarbon)->format('d/m'),
                 // @phpstan-ignore-next-line
                 'dayName' => Carbon::parse($currentCarbon)->locale('it')->format('D'),

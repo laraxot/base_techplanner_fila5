@@ -4,6 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+use Filament\Schemas\Schema;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Str;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
@@ -30,26 +38,36 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
     {
         return 'getResetPasswordFormSchema';
     }
+
     public function mount(): void
     {
         $this->form->fill();
     }
 
     /**
-if (! $user instanceof Model) {
+     * @return RedirectResponse|void
+     */
+    public function resetPassword()
+    {
+        $data = $this->form->getState();
+
+        $reset_data = Arr::only($data, ['email', 'password', 'password_confirmation', 'token']);
+        $status = Password::reset($reset_data, function (Authenticatable $user, string $password): void {
+            if (! $user instanceof Model) {
                 return;
             }
+
             $user->forceFill([
                 'password' => Hash::make($password),
                 'remember_token' => Str::random(60),
             ])->save();
         });
 
-if ($status === Password::PASSWORD_RESET) {
+        if ($status === Password::PASSWORD_RESET) {
             session()->flash('status', __($status));
 
             return redirect()->route('login');
         }
-$this->addError('email', __(is_string($status) ? $status : 'passwords.generic_error'));
+        $this->addError('email', __(is_string($status) ? $status : 'passwords.generic_error'));
     }
 }

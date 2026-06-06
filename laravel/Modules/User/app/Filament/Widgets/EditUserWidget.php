@@ -23,7 +23,7 @@ use Webmozart\Assert\Assert;
  * - Determina dinamicamente la risorsa, il modello e l'action da eseguire
  * - Delega la logica di salvataggio a una UpdateAction specifica del modulo
  *
-* @property string $type
+ * @property string $type
  * @property string $resource
  * @property string $model
  * @property string $action
@@ -65,7 +65,46 @@ class EditUserWidget extends XotBaseSchemaWidget
             ->toString();
 
         $record = $this->getFormModel($userId);
-$this->record = $record;
+        $this->record = $record;
+        $data = $this->getFormFill();
+
+        $this->form->fill($data);
+        $this->form->model($record);
+        $this->data = $data;
+    }
+
+    /**
+     * Ottiene i dati per il riempimento del form.
+     *
+     * @return array<string, mixed>
+     */
+    public function getFormFill(): array
+    {
+        $model = $this->record;
+        // Se il modello ha un ID, significa che è stato trovato nel database
+        if ($model->exists) {
+            try {
+                /** @var array<string, mixed> $result */
+                $result = $model->toArray();
+
+                return $result;
+            } catch (\Exception $e) {
+                // Se toArray() fallisce (problemi con enum), usa getAttributes()
+                Log::warning("Errore in toArray() per modello {$this->model}: ".$e->getMessage());
+
+                /** @var array<string, mixed> $result */
+                $result = $model->getAttributes();
+                // Gestisci specificamente gli enum se presenti
+                if (isset($result['type']) && ($model->type ?? null) instanceof \BackedEnum) {
+                    $result['type'] = $model->type->value;
+                }
+
+                return $result;
+            }
+        }
+        // Se è un nuovo modello, restituisci solo i campi fillable con valori null
+        $fillable = $model->getFillable();
+        $appends = $model->getAppends();
         /** @var array<int, string> $fields */
         $fields = array_merge($fillable, $appends);
 
@@ -85,7 +124,7 @@ $this->record = $record;
         $schema = $this->resource::getFormSchemaWidget();
         Assert::isArray($schema, 'Schema must be array');
 
-/* @var array<int|string, Component> $result */
+        /* @var array<int|string, Component> $result */
         return self::normalizeFormSchema($schema);
     }
 
@@ -98,7 +137,7 @@ $this->record = $record;
     {
         $data = $this->form->getState();
         $record = $this->record;
-$actionInstance = app($this->action);
+        $actionInstance = app($this->action);
         if (! is_object($actionInstance) || ! method_exists($actionInstance, 'execute')) {
             throw new \RuntimeException(sprintf('Update action [%s] must expose execute().', $this->action));
         }
@@ -128,8 +167,6 @@ $actionInstance = app($this->action);
      */
     protected function getFormModel(?string $userId = null): Model
     {
-        /** @var class-string<Model> $modelClass */
-        $modelClass = $this->model;
         if ($userId) {
             $user = $this->model::findOrFail($userId);
             Assert::isInstanceOf($user, Model::class);

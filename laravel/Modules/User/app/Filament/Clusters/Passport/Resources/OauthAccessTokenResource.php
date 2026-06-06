@@ -9,6 +9,12 @@ use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
+use Filament\Notifications\Notification;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Grid;
+use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
@@ -22,7 +28,17 @@ use Illuminate\Support\Collection;
 use Modules\User\Actions\Passport\RevokeAllUserTokensAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport;
-protected static ?string $model = OauthAccessToken::class;
+use Modules\User\Filament\Resources\UserResource;
+use Modules\User\Models\OauthAccessToken;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+
+use function Safe\json_encode;
+
+class OauthAccessTokenResource extends XotBaseResource
+{
+    protected static ?string $cluster = Passport::class;
+
+    protected static ?string $model = OauthAccessToken::class;
 
     public static function table(Table $table): Table
     {
@@ -33,7 +49,7 @@ protected static ?string $model = OauthAccessToken::class;
                     ->sortable()
                     ->copyable(),
 
-TextColumn::make('user.name')
+                TextColumn::make('user.name')
                     ->searchable()
                     ->sortable()
                     ->url(function (mixed $record): ?string {
@@ -41,7 +57,7 @@ TextColumn::make('user.name')
                             return null;
                         }
                         $user = $record->user;
-if ($user !== null && method_exists($user, 'exists') && $user->exists) {
+                        if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -49,7 +65,7 @@ if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                     })
                     ->openUrlInNewTab(),
 
-TextColumn::make('client.name')
+                TextColumn::make('client.name')
                     ->searchable()
                     ->sortable(),
 
@@ -71,7 +87,7 @@ TextColumn::make('client.name')
                         return is_string($state) ? $state : null;
                     }),
 
-IconColumn::make('revoked')
+                IconColumn::make('revoked')
                     ->boolean()
                     ->color(fn (bool $state): string => $state ? 'danger' : 'success'),
 
@@ -96,7 +112,7 @@ IconColumn::make('revoked')
                     }),
             ])
             ->filters([
-Filter::make('revoked')
+                Filter::make('revoked')
                     ->query(fn (Builder $query) => $query->where('revoked', true)),
 
                 Filter::make('expired')
@@ -121,7 +137,7 @@ Filter::make('revoked')
                         }
                     })
                     ->visible(fn (mixed $record) => $record instanceof OauthAccessToken && ! $record->revoked),
-DeleteAction::make(),
+                DeleteAction::make(),
             ])
             ->bulkActions([
                 BulkAction::make('revoke_all_for_user')
@@ -141,13 +157,13 @@ DeleteAction::make(),
                             ->success()
                             ->send();
                     }),
-DeleteBulkAction::make(),
+                DeleteBulkAction::make(),
             ])
             ->defaultSort('created_at', 'desc');
     }
 
     /**
-* @return array<string, Column>
+     * @return array<string, Column>
      */
     public static function getTableColumns(): array
     {

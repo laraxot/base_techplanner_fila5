@@ -41,7 +41,8 @@ trait HasExtraTrait
             Model::class,
             '['.__LINE__.']['.class_basename($this).']['.$extra_class.']',
         );
-/** @var class-string<Model> $extraClass */
+
+        /** @var class-string<Model> $extraClass */
         $extraClass = $extra_class;
 
         return $this->morphOne($extraClass, 'model');
@@ -73,7 +74,7 @@ trait HasExtraTrait
     }
 
     /**
-* @param  int|float|string|array<string, mixed>|bool|null  $value
+     * @param  int|float|string|array<string, mixed>|bool|null  $value
      */
     public function setExtra(string $name, int|float|string|array|bool|null $value): void
     {

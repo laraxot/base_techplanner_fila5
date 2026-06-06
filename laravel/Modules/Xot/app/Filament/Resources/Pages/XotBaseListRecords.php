@@ -19,7 +19,7 @@ use Webmozart\Assert\Assert;
 /**
  * Base class for list records pages.
  *
-* @property ?string $model
+ * @property ?string $model
  * @property ?string $resource
  * @property ?string $slug
  * @property TableLayoutEnum $layoutView
@@ -65,7 +65,18 @@ abstract class XotBaseListRecords extends FilamentListRecords
      * Get the header actions.
      *
      * @return array<string, Action|ActionGroup>
-protected function paginateTableQueryOLD(Builder $query): Paginator
+     */
+    protected function getHeaderActions(): array
+    {
+        return [
+            'create' => CreateAction::make()->icon('heroicon-o-plus'),
+        ];
+    }
+
+    /**
+     * Paginate the table query.
+     */
+    protected function paginateTableQueryOLD(Builder $query): Paginator
     {
         $perPage = $this->getTableRecordsPerPage();
         $perPageValue = $perPage === 'all' ? $query->count() : (is_numeric($perPage) ? (int) $perPage : null);

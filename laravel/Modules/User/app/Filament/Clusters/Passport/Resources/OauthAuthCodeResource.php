@@ -69,12 +69,12 @@ class OauthAuthCodeResource extends XotBaseResource
     {
         return $table
             ->columns([
-TextColumn::make('id')
+                TextColumn::make('id')
                     ->searchable()
                     ->sortable()
                     ->copyable(),
 
-TextColumn::make('user_id')
+                TextColumn::make('user_id')
                     ->searchable()
                     ->sortable(),
 
@@ -94,13 +94,13 @@ TextColumn::make('user_id')
                     ->sortable(),
             ])
             ->recordActions([
-Action::make('revoke')
+                Action::make('revoke')
                     ->label(static::trans('actions.revoke.label'))
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
                     ->requiresConfirmation()
                     ->modalHeading(static::trans('actions.revoke.label'))
-->action(function (mixed $record): void {
+                    ->action(function (mixed $record): void {
                         if ($record instanceof OauthAuthCode) {
                             $record->revoked = true;
                             $record->save();
@@ -111,12 +111,12 @@ Action::make('revoke')
                         }
                     })
                     ->visible(fn (mixed $record) => $record instanceof OauthAuthCode && ! $record->revoked),
-DeleteAction::make(),
+                DeleteAction::make(),
             ]);
     }
 
     /**
-* @return array<string, PageRegistration>
+     * @return array<string, PageRegistration>
      */
     #[\Override]
     public static function getPages(): array

@@ -14,6 +14,7 @@ use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Traits\HasXotForm;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+
 /**
  * Base page for Filament related-record managers.
  */
@@ -23,13 +24,26 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     use HasXotTable;
     use NavigationLabelTrait;
 
-protected static string $recordTitleAttribute = 'name';
+    protected static string $recordTitleAttribute = 'name';
+
     public static function getNavigationGroup(): string
     {
         return '';
     }
 
-public function schema(Schema $schema): Schema
+    public function getTitle(): string
+    {
+        return static::transFunc(__FUNCTION__).' - '.$this->getRecordTitle();
+    }
+
+    public function getRecordTitle(): string
+    {
+        $value = $this->record->{static::$recordTitleAttribute};
+
+        return (string) $value;
+    }
+
+    public function schema(Schema $schema): Schema
     {
         return $schema->components($this->getFormSchema());
     }
@@ -42,18 +56,11 @@ public function schema(Schema $schema): Schema
         return [];
     }
 
-    /**
-     * Restituisce l'heading della tabella.
-     * Override esplicito per compatibilità con Filament 5.2 (Htmlable|string|null).
-     */
     protected function getTableHeading(): Htmlable|string|null
     {
         return $this->getTableHeadingFromTrait();
     }
 
-    /**
-     * Chiamata interna per getTableHeading (evita ricorsione con HasXotTable).
-     */
     private function getTableHeadingFromTrait(): ?string
     {
         $key = static::getKeyTrans('table.heading');
@@ -63,9 +70,6 @@ public function schema(Schema $schema): Schema
     }
 
     /**
-     * Definisce le colonne della tabella per la visualizzazione dei record correlati.
-     * Questo metodo può essere sovrascritto nelle classi figlie.
-     *
      * @return array<string, TextColumn>
      */
     #[\Override]
@@ -85,9 +89,6 @@ public function schema(Schema $schema): Schema
     }
 
     /**
-     * Definisce le azioni dell'intestazione della tabella.
-     * Questo metodo può essere sovrascritto nelle classi figlie.
-     *
      * @return array<string, Action>
      */
     protected function getTableHeaderActions(): array
@@ -98,9 +99,6 @@ public function schema(Schema $schema): Schema
     }
 
     /**
-* Definisce le azioni per ogni riga della tabella.
-     * Questo metodo può essere sovrascritto nelle classi figlie.
-     *
      * @return array<string, Action>
      */
     protected function getTableActions(): array

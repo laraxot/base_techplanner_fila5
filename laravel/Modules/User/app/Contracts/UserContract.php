@@ -20,7 +20,7 @@ interface UserContract extends Authenticatable
 {
     /**
      * Get the primary key for the model.
-*
+     *
      * @return mixed
      */
     public function getKey();
@@ -134,7 +134,7 @@ interface UserContract extends Authenticatable
     /**
      * Create a new personal access token for the user.
      *
-* @param  array<int, string>  $scopes
+     * @param  array<int, string>  $scopes
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;
 

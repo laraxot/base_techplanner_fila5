@@ -131,7 +131,7 @@ class SpatieEmail extends TemplateMailable
      */
     public function envelope(): Envelope
     {
-        $envelope = new Envelope;
+        $envelope = new Envelope();
 
         // Set the recipient if available
         if ($this->recipient) {
@@ -216,8 +216,27 @@ class SpatieEmail extends TemplateMailable
 
         foreach ($attachments as $item) {
             $attachment = null;
-            if (isset($item['path']) && file_exists($item['path'])) {
-                $attachment = $this->getAttachmentFromPath($item);
+            if (isset($item['path']) && is_string($item['path']) && file_exists($item['path'])) {
+                $path = $item['path'];
+                if (isset($item['as'], $item['mime']) && is_string($item['as']) && is_string($item['mime'])) {
+                    $attachment = $this->getAttachmentFromPath([
+                        'path' => $path,
+                        'as' => $item['as'],
+                        'mime' => $item['mime'],
+                    ]);
+                } elseif (isset($item['as']) && is_string($item['as'])) {
+                    $attachment = $this->getAttachmentFromPath([
+                        'path' => $path,
+                        'as' => $item['as'],
+                    ]);
+                } elseif (isset($item['mime']) && is_string($item['mime'])) {
+                    $attachment = $this->getAttachmentFromPath([
+                        'path' => $path,
+                        'mime' => $item['mime'],
+                    ]);
+                } else {
+                    $attachment = $this->getAttachmentFromPath(['path' => $path]);
+                }
             }
 
             if ($attachment === null && isset($item['data'])) {
@@ -246,7 +265,6 @@ class SpatieEmail extends TemplateMailable
 
     public function buildSms(): string
     {
-        /* @phpstan-ignore method.notFound */
         /** @var MailTemplate $mailTemplate */
         $mailTemplate = $this->getMailTemplate();
         $sms_template = $mailTemplate->sms_template;

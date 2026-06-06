@@ -27,7 +27,45 @@ use function Safe\json_encode;
 
 class OauthAccessTokenResource extends XotBaseResource
 {
-if ($user !== null && method_exists($user, 'exists') && $user->exists) {
+    protected static ?string $model = OauthAccessToken::class;
+
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-key';
+
+    protected static ?int $navigationSort = 5;
+
+    public static function getNavigationLabel(): string
+    {
+        return __('OAuth Access Tokens');
+    }
+
+    public static function getPluralLabel(): string
+    {
+        return __('OAuth Access Tokens');
+    }
+
+    public static function getModelLabel(): string
+    {
+        return __('OAuth Access Token');
+    }
+
+    public static function table(Table $table): Table
+    {
+        return $table
+            ->columns([
+                TextColumn::make('id')
+                    ->searchable()
+                    ->sortable()
+                    ->copyable(),
+
+                TextColumn::make('user.name')
+                    ->searchable()
+                    ->sortable()
+                    ->url(function (mixed $record): ?string {
+                        if (! $record instanceof OauthAccessToken) {
+                            return null;
+                        }
+                        $user = $record->user;
+                        if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -46,7 +84,7 @@ if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
-if ($state === null) {
+                        if ($state === null) {
                             return null;
                         }
                         if (is_array($state)) {

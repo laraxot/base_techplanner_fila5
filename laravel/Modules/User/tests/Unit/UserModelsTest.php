@@ -9,6 +9,30 @@ use Modules\User\Models\Permission;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Role;
 use Modules\User\Models\Socialite;
+use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
+
+uses(TestCase::class)->in(__DIR__);
+
+it('can create a user with basic attributes', function () {
+    $user = User::factory()->create([
+        'name' => 'John Doe',
+        'email' => 'john@example.com',
+        'password' => bcrypt('password123'),
+    ]);
+
+    expect($user)->toBeInstanceOf(User::class);
+    expect($user->name)->toBe('John Doe');
+    expect($user->email)->toBe('john@example.com');
+    expect($user->exists)->toBeTrue();
+});
+
+it('can create a user with profile', function () {
+    $user = User::factory()->withProfile()->create([
+        'name' => 'Jane Smith',
+        'email' => 'jane@example.com',
+    ]);
+
     expect($user->profile)->toBeInstanceOf(Profile::class);
     expect($user->profile->user_id)->toBe($user->id);
 });
@@ -19,35 +43,35 @@ it('can authenticate a user', function () {
         'password' => bcrypt('secret123'),
     ]);
 
-$this->assertTrue(auth()->attempt([
+    $this->assertTrue(auth()->attempt([
         'email' => 'auth@example.com',
         'password' => 'secret123',
     ]));
 });
 
 it('can create a user role', function () {
-$role = Role::factory()->create([
+    $role = Role::factory()->create([
         'name' => 'admin',
         'guard_name' => 'web',
     ]);
 
-expect($role)->toBeInstanceOf(Role::class);
+    expect($role)->toBeInstanceOf(Role::class);
     expect($role->name)->toBe('admin');
 });
 
 it('can create a user permission', function () {
-$permission = Permission::factory()->create([
+    $permission = Permission::factory()->create([
         'name' => 'edit_posts',
         'guard_name' => 'web',
     ]);
 
-expect($permission)->toBeInstanceOf(Permission::class);
+    expect($permission)->toBeInstanceOf(Permission::class);
     expect($permission->name)->toBe('edit_posts');
 });
 
 it('can assign role to user', function () {
     $user = User::factory()->create();
-$role = Role::factory()->create([
+    $role = Role::factory()->create([
         'name' => 'editor',
         'guard_name' => 'web',
     ]);
@@ -59,7 +83,7 @@ $role = Role::factory()->create([
 
 it('can attach permission to user', function () {
     $user = User::factory()->create();
-$permission = Permission::factory()->create([
+    $permission = Permission::factory()->create([
         'name' => 'delete_users',
         'guard_name' => 'web',
     ]);
@@ -70,7 +94,7 @@ $permission = Permission::factory()->create([
 });
 
 it('can create a tenant user', function () {
-$tenant = Tenant::factory()->create([
+    $tenant = Tenant::factory()->create([
         'name' => 'Test Tenant',
         'domain' => 'tenant.example.com',
     ]);
@@ -96,6 +120,6 @@ it('can create a user with socialite data', function () {
         'token' => 'google_token',
     ]);
 
-expect($user->socialite->first())->toBeInstanceOf(Socialite::class);
+    expect($user->socialite->first())->toBeInstanceOf(Socialite::class);
     expect($user->socialite->first()->provider)->toBe('google');
 });

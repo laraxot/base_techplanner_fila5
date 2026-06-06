@@ -13,7 +13,7 @@ use SocialiteProviders\Microsoft\Provider;
 class SocialiteServiceProvider extends BaseSocialiteServiceProvider
 {
     /**
-* Register the provider services.
+     * Register the provider services.
      */
     public function register(): void
     {
@@ -24,6 +24,13 @@ class SocialiteServiceProvider extends BaseSocialiteServiceProvider
     }
 
     /**
+     * Bootstrap the provider services.
+     */
+    public function boot(): void
+    {
+        parent::boot();
+
+        Event::listen(function (SocialiteWasCalled $event): void {
             $event->extendSocialite('microsoft', Provider::class);
         });
     }

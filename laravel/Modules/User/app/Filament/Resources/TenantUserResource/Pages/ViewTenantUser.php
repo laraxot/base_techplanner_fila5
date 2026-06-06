@@ -8,6 +8,13 @@ use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Modules\User\Filament\Resources\TenantUserResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+
+/**
+ * Class ViewTenantUser.
+ */
+class ViewTenantUser extends XotBaseViewRecord
+{
     protected static string $resource = TenantUserResource::class;
 
     /**

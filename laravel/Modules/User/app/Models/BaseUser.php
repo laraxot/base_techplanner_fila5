@@ -46,7 +46,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * functionality for the application. It extends Laravel's Authenticatable class
  * and implements the required interfaces for Filament and multi-tenancy.
  *
-* @property Collection<int, OauthClient> $clients
+ * @property Collection<int, OauthClient> $clients
  * @property int|null $clients_count
  * @property Team|null $currentTeam
  * @property Collection<int, Device> $devices
@@ -142,7 +142,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     use Traits\HasTenants;
     use XotTraits\RelationX;
 
-public $incrementing = false;
+    public $incrementing = false;
 
     public ?Pivot $pivot = null;
 
@@ -153,6 +153,7 @@ public $incrementing = false;
     protected $keyType = 'string';
 
     protected string $childColumn = 'type';
+
     protected $fillable = [
         'id',
         // 'ente',
@@ -193,7 +194,13 @@ public $incrementing = false;
     /** @var array<string, class-string> */
     protected $childTypes = [];
 
-*/
+    protected $attributes = [
+        'is_active' => true,
+    ];
+
+    /**
+     * Guard coerente con Spatie/Permission: deve essere 'web'.
+     */
     protected string $guard_name = 'web';
 
     public function __construct(array $attributes = [])
@@ -283,7 +290,7 @@ public $incrementing = false;
     public function canAccessPanel(Panel $panel): bool
     {
         // $panel->default('admin');
-if ($panel->getId() !== 'admin') {
+        if ($panel->getId() !== 'admin') {
             $role = $panel->getId();
             /*
              * $xot = XotData::make();
@@ -306,12 +313,12 @@ if ($panel->getId() !== 'admin') {
 
     public function detach(Model $model): void
     {
-$this->teams()->detach($model);
+        $this->teams()->detach($model);
     }
 
     public function attach(Model $model): void
     {
-$this->teams()->attach($model);
+        $this->teams()->attach($model);
     }
 
     public function treeLabel(): string
@@ -347,7 +354,7 @@ $this->teams()->attach($model);
     public function getProviderField(string $provider, string $field): string
     {
         $socialiteUser = $this->socialiteUsers()->firstWhere(['provider' => $provider]);
-if ($socialiteUser === null) {
+        if ($socialiteUser === null) {
             throw new \Exception('SocialiteUser not found');
         }
 
@@ -359,7 +366,7 @@ if ($socialiteUser === null) {
     /**
      * Get the entity's notifications.
      *
-* @return MorphMany<Notification, $this>
+     * @return MorphMany<Notification, $this>
      */
     public function notifications(): MorphMany
     {
@@ -369,7 +376,7 @@ if ($socialiteUser === null) {
     /**
      * Get the user's latest authentication log.
      *
-* @return MorphOne<AuthenticationLog, $this>
+     * @return MorphOne<AuthenticationLog, $this>
      */
     public function latestAuthentication(): MorphOne
     {
@@ -378,18 +385,18 @@ if ($socialiteUser === null) {
 
     public function getFullNameAttribute(?string $value): string
     {
-if ($value !== null) {
+        if ($value !== null) {
             return $value;
         }
 
         $fullName = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
 
-return $fullName !== '' ? $fullName : ($this->email ?? 'User');
+        return $fullName !== '' ? $fullName : ($this->email ?? 'User');
     }
 
     public function getNameAttribute(?string $value): string
     {
-if ($value !== null) {
+        if ($value !== null) {
             return $value;
         }
 
@@ -408,7 +415,7 @@ if ($value !== null) {
                 return true;
             }
 
-return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
+            return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
         })();
         if ($isTesting) {
             // Do not call update() here to avoid hitting the database.
@@ -419,7 +426,7 @@ return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') 
 
         try {
             $value = $candidate;
-while (self::firstWhere(['name' => $value]) !== null) {
+            while (self::firstWhere(['name' => $value]) !== null) {
                 $i++;
                 $value = $name.'-'.$i;
             }
@@ -472,7 +479,7 @@ while (self::firstWhere(['name' => $value]) !== null) {
         return $this->morphMany(OauthClient::class, 'owner');
     }
 
-/**
+    /**
      * Find the user instance for the given username.
      */
     public static function findForPassport(string $username): ?self
@@ -509,21 +516,5 @@ while (self::firstWhere(['name' => $value]) !== null) {
             'created_by' => 'string',
             'deleted_by' => 'string',
         ];
-    }
-
-    /**
-     * Find the user instance for the given username.
-     */
-    public static function findForPassport(string $username): ?self
-    {
-        return static::where('email', $username)->first();
-    }
-
-    /**
-     * Validate the password of the user for the given password.
-     */
-    public function validateForPassportPasswordGrant(string $password): bool
-    {
-        return Hash::check($password, (string) $this->password);
     }
 }

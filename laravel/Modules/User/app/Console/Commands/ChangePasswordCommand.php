@@ -13,13 +13,13 @@ use Webmozart\Assert\Assert;
 
 class ChangePasswordCommand extends Command
 {
-protected $signature = 'user:change-password {--email= : Email dell\'utente}';
+    protected $signature = 'user:change-password {--email= : Email dell\'utente}';
 
     protected $description = 'Change user password';
 
     public function handle(): void
     {
-$emailInput = $this->option('email') ?? $this->ask('Enter the user email:');
+        $emailInput = $this->option('email') ?? $this->ask('Enter the user email:');
         Assert::string($emailInput);
 
         $email = strtolower(trim($emailInput));
@@ -30,7 +30,7 @@ $emailInput = $this->option('email') ?? $this->ask('Enter the user email:');
             return;
         }
 
-$user = XotData::make()->findUserByEmail($email);
+        $user = XotData::make()->findUserByEmail($email);
 
         if ($user === null) {
             $this->error("Utente non trovato per email: {$email}");
@@ -46,8 +46,10 @@ $user = XotData::make()->findUserByEmail($email);
 
             return;
         }
-$pwdData = PasswordData::make();
+
+        $pwdData = PasswordData::make();
         $passwordExpiryDateTime = now()->addDays($pwdData->expires_in);
+
         $user = tap($user)->update([
             'password_expires_at' => $passwordExpiryDateTime,
             'is_otp' => false,

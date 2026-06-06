@@ -20,8 +20,7 @@ readonly class GetGeocodingDataAction
 
     public function __construct(
         private Client $client,
-    ) {
-    }
+    ) {}
 
     /**
      * Ottiene i dati di geocodifica per un indirizzo.
@@ -108,7 +107,7 @@ readonly class GetGeocodingDataAction
          * } $data */
         $data = json_decode($response, true);
 
-        if ('OK' !== $data['status'] || empty($data['results'])) {
+        if ($data['status'] !== 'OK' || empty($data['results'])) {
             Log::warning('Geocodifica fallita', [
                 'status' => $data['status'],
                 'error' => $data['error_message'] ?? 'Nessun risultato trovato',
@@ -117,6 +116,9 @@ readonly class GetGeocodingDataAction
             return GeocodingData::error($data['status']);
         }
 
-        return GeocodingData::fromGoogleResponse($data);
+        return GeocodingData::fromGoogleResponse([
+            'status' => $data['status'],
+            'results' => $data['results'],
+        ]);
     }
 }

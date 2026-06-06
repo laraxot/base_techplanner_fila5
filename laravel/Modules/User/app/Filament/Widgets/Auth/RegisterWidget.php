@@ -39,7 +39,7 @@ class RegisterWidget extends XotBaseSchemaWidget
 
     protected static ?string $maxHeight = '600px';
 
-protected static function formClass(): string
+    protected static function formClass(): string
     {
         return UserForm::class;
     }
@@ -47,6 +47,11 @@ protected static function formClass(): string
     protected static function schemaMethod(): string
     {
         return 'getRegisterFormSchema';
+    }
+
+    public static function canView(): bool
+    {
+        return ! Auth::check();
     }
 
     /**
@@ -59,7 +64,7 @@ protected static function formClass(): string
 
     public function submit(): void
     {
-/** @var array<string, mixed> $data */
+        /** @var array<string, mixed> $data */
         $data = $this->form->getState();
 
         $userClass = XotData::make()->getUserClass();
@@ -103,7 +108,7 @@ protected static function formClass(): string
         Auth::login($user);
 
         Notification::make()
-->title(__('user::auth.register.success.text'))
+            ->title(__('user::auth.register.success.text'))
             ->success()
             ->send();
 

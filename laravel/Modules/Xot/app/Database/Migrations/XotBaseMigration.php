@@ -41,7 +41,7 @@ abstract class XotBaseMigration extends LaravelMigration
      */
     public function getModelClass(): string
     {
-if ($this->model_class !== null) {
+        if ($this->model_class !== null) {
             return $this->model_class;
         }
 
@@ -62,7 +62,7 @@ if ($this->model_class !== null) {
         $mod_path = Module::getPath();
 
         // Controllo che $filename sia valido prima di passarlo a Str::of()
-$mod_name = $filename !== false ? Str::of($filename)->after($mod_path)->explode(\DIRECTORY_SEPARATOR)[1] : ''; // Fallback nel caso in cui $filename non sia valido.
+        $mod_name = $filename !== false ? Str::of($filename)->after($mod_path)->explode(\DIRECTORY_SEPARATOR)[1] : ''; // Fallback nel caso in cui $filename non sia valido.
 
         $modelClass = Str::of('\Modules\\'.$mod_name.'\Models\\'.$name)
             ->replace('/', \DIRECTORY_SEPARATOR)
@@ -70,7 +70,23 @@ $mod_name = $filename !== false ? Str::of($filename)->after($mod_path)->explode(
 
         Assert::stringNotEmpty($modelClass);
         Assert::classExists($modelClass);
-Assert::subclassOf($modelClass, Model::class);
+        Assert::subclassOf($modelClass, Model::class);
+
+        /* @var class-string<Model> $modelClass */
+        $this->model_class = $modelClass;
+
+        return $modelClass;
+    }
+
+    public function getTable(): string
+    {
+        return $this->model->getTable();
+    }
+
+    public function getConn(): Builder
+    {
+        $connectionName = $this->model->getConnectionName();
+        // 如果连接名是 'user' 但数据库不存在，使用默认连接
         if ($connectionName === 'user' && ! DB::connection($connectionName)->getDatabaseName()) {
             $default = config('database.default');
             $connectionName = is_string($default) ? $default : 'mariadb';
@@ -101,7 +117,7 @@ Assert::subclassOf($modelClass, Model::class);
     /**
      * Get the table indexes using Doctrine's schema manager.
      *
-*
+     *
      * @return array<Index>
      *
      * @throws \Doctrine\DBAL\Exception
@@ -114,7 +130,7 @@ Assert::subclassOf($modelClass, Model::class);
     /**
      * Add common fields to the table.
      *
-* @param  Blueprint  $table  The table blueprint
+     * @param  Blueprint  $table  The table blueprint
      */
     public function addCommonFields(Blueprint $table): void
     {
@@ -203,7 +219,7 @@ Assert::subclassOf($modelClass, Model::class);
      */
     public function dropPrimaryKey(): void
     {
-if ($this->driver() === 'sqlite') {
+        if ($this->driver() === 'sqlite') {
             return;
         }
         $sql = 'ALTER TABLE '.$this->getTable().' DROP PRIMARY KEY;';
@@ -273,7 +289,51 @@ if ($this->driver() === 'sqlite') {
         return 0;
     }
 
-if ($this->hasColumn('model_id') && $this->getColumnType('model_id') === 'bigint') {
+    public function updateTimestamps(Blueprint $table, bool $hasSoftDeletes = false): void
+    {
+        $xot = XotData::make();
+        $userClass = $xot->getUserClass();
+
+        // Check and add each timestamp column only if it doesn't exist
+        if (! $this->hasColumn('created_at')) {
+            $table->timestamp('created_at')->nullable();
+        }
+
+        if (! $this->hasColumn('updated_at')) {
+            $table->timestamp('updated_at')->nullable();
+        }
+
+        // Check and add foreign key columns only if they don't exist
+        if (! $this->hasColumn('updated_by')) {
+            $table->foreignIdFor($userClass, 'updated_by')->nullable();
+        }
+
+        if (! $this->hasColumn('created_by')) {
+            $table->foreignIdFor($userClass, 'created_by')->nullable();
+        }
+
+        // Handle soft deletes
+        if ($hasSoftDeletes) {
+            if (! $this->hasColumn('deleted_at')) {
+                $table->softDeletes();
+            }
+            if (! $this->hasColumn('deleted_by')) {
+                $table->foreignIdFor($userClass, 'deleted_by')->nullable();
+            }
+        } else {
+            // If soft deletes are not requested but deleted_at exists, add deleted_by
+            if ($this->hasColumn('deleted_at') && ! $this->hasColumn('deleted_by')) {
+                $table->foreignIdFor($userClass, 'deleted_by')->nullable();
+            }
+        }
+    }
+
+    public function updateUser(Blueprint $table): void
+    {
+        $methodName = 'updateUserKey'.Str::studly($this->model->getKeyType());
+        $this->{$methodName}($table);
+
+        if ($this->hasColumn('model_id') && $this->getColumnType('model_id') === 'bigint') {
             $table->string('model_id', 36)->index()->change();
         }
 
@@ -288,7 +348,7 @@ if ($this->hasColumn('model_id') && $this->getColumnType('model_id') === 'bigint
             $table->uuid('id')->primary()->first();
         }
 
-if ($this->hasColumn('id') && $this->getColumnType('id') === 'bigint') {
+        if ($this->hasColumn('id') && $this->getColumnType('id') === 'bigint') {
             $table->uuid('id')->change();
         }
 
@@ -335,13 +395,27 @@ if ($this->hasColumn('id') && $this->getColumnType('id') === 'bigint') {
         return DB::connection($this->getConnection())->getDriverName();
     }
 
-protected function isMysqlFamilyDriver(?string $driver = null): bool
+    protected function isMysqlFamilyDriver(?string $driver = null): bool
     {
         $driver ??= $this->driver();
 
         return in_array($driver, ['mysql', 'mariadb'], true);
     }
 
+    /**
+     * Determine if the migration should run.
+     * This method provides a hook for conditional migration execution.
+     * Returns true by default to maintain backward compatibility.
+     */
+    public function shouldRun(): bool
+    {
+        return true;
+    }
+
+    /**
+     * Convert table id from UUID to bigint, adding uuid column.
+     * Use when migrating legacy installations with uuid primary keys.
+     *
      * @param  \Closure(Blueprint): void  $createNewTableSchema  Schema for the new table (id bigint + uuid + data columns)
      * @param  list<string>  $dataColumns  Column names to copy (excluding id, uuid)
      * @param  array{pivot_table?: string, pivot_fk?: string, pivot_post_update?: \Closure}  $options  Optional pivot table config
@@ -396,7 +470,7 @@ protected function isMysqlFamilyDriver(?string $driver = null): bool
     protected array $uuidToBigintIdMapping = [];
 
     /**
-* @param  \Closure(Blueprint): void  $createNewTableSchema
+     * @param  \Closure(Blueprint): void  $createNewTableSchema
      * @param  list<string>  $dataColumns
      * @param  array{pivot_table?: string, pivot_fk?: string, pivot_post_update?: \Closure}  $options
      */
@@ -413,7 +487,7 @@ protected function isMysqlFamilyDriver(?string $driver = null): bool
                 $blueprint->uuid('uuid')->nullable()->after('id');
             }, $table);
             $conn->table($table)->update(['uuid' => DB::raw('id')]);
-if ($this->isMysqlFamilyDriver($conn->getDriverName())) {
+            if ($this->isMysqlFamilyDriver($conn->getDriverName())) {
                 $conn->statement('ALTER TABLE '.$table.' MODIFY uuid CHAR(36) NOT NULL');
             }
         }
@@ -424,7 +498,7 @@ if ($this->isMysqlFamilyDriver($conn->getDriverName())) {
 
         $pivotTable = $options['pivot_table'] ?? null;
         $pivotFk = $options['pivot_fk'] ?? null;
-if ($pivotTable !== null && $pivotFk !== null && $this->hasTable($pivotTable)) {
+        if ($pivotTable !== null && $pivotFk !== null && $this->hasTable($pivotTable)) {
             $this->updatePivotTableFkFromUuidToBigint($table, $pivotTable, $pivotFk);
             $postUpdate = $options['pivot_post_update'] ?? null;
             if ($postUpdate instanceof \Closure) {
@@ -437,7 +511,7 @@ if ($pivotTable !== null && $pivotFk !== null && $this->hasTable($pivotTable)) {
     }
 
     /**
-* @param  list<string>  $dataColumns
+     * @param  list<string>  $dataColumns
      */
     protected function copyDataWithUuidToBigintMapping(string $oldTable, string $newTable, array $dataColumns): void
     {
@@ -456,7 +530,7 @@ if ($pivotTable !== null && $pivotFk !== null && $this->hasTable($pivotTable)) {
             }
             $this->uuidToBigintIdMapping[(string) $row->id] = $newId;
             $conn->table($newTable)->insert($data);
-$newId++;
+            $newId++;
         }
     }
 
@@ -468,14 +542,14 @@ $newId++;
         foreach ($rows as $p) {
             $p = (object) $p;
             $newId = $this->uuidToBigintIdMapping[(string) $p->id] ?? null;
-if ($newId !== null) {
+            if ($newId !== null) {
                 $conn->table($pivotTable)
                     ->where($fkColumn, $p->id)
                     ->update([$fkColumn => (string) $newId]);
             }
         }
 
-if ($this->isMysqlFamilyDriver($conn->getDriverName())) {
+        if ($this->isMysqlFamilyDriver($conn->getDriverName())) {
             $db = $conn->getDatabaseName();
             $constraint = $conn->selectOne(
                 "SELECT CONSTRAINT_NAME FROM information_schema.TABLE_CONSTRAINTS 
@@ -486,7 +560,7 @@ if ($this->isMysqlFamilyDriver($conn->getDriverName())) {
             $constraintName = is_object($constraint) && isset($constraint->CONSTRAINT_NAME)
                 ? (string) $constraint->CONSTRAINT_NAME
                 : null;
-if ($constraintName !== null) {
+            if ($constraintName !== null) {
                 $conn->statement('ALTER TABLE '.$pivotTable.' DROP INDEX '.$constraintName);
             }
             $conn->statement('ALTER TABLE '.$pivotTable.' MODIFY '.$fkColumn.' BIGINT UNSIGNED NULL');

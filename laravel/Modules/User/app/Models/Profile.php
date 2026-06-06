@@ -7,6 +7,24 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Notifications\DatabaseNotification;
+use Illuminate\Notifications\DatabaseNotificationCollection;
+use Illuminate\Support\Carbon;
+use Modules\Media\Models\Media;
+use Modules\User\Contracts\UserContract;
+use Modules\Xot\Contracts\ProfileContract;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
+use Spatie\Permission\Traits\HasRoles;
+use Spatie\SchemalessAttributes\SchemalessAttributes;
+use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttributes;
+
+/**
+ * User Profile Model.
+ *
+ * Represents a user profile with relationships to devices, teams, and roles.
+ *
  * @property int $id
  * @property string $first_name
  * @property string $last_name
@@ -59,7 +77,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  *
  * @mixin IdeHelperProfile
  *
-* @property string|null $user_id
+ * @property string|null $user_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -160,7 +178,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property string|null $type
  * @property string|null $birth_date
  * @property string|null $gender
-* @property bool $is_active
+ * @property bool $is_active
  *
  * @method static Builder<static>|Profile whereBirthDate($value)
  * @method static Builder<static>|Profile whereExtra($value)
@@ -178,7 +196,7 @@ class Profile extends BaseProfile implements HasMedia
     use InteractsWithMedia;
 
     /**
-* The table associated with the model.
+     * The table associated with the model.
      */
     protected $table = 'profiles';
 
@@ -209,13 +227,6 @@ class Profile extends BaseProfile implements HasMedia
             'extra',
         ];
     }
-
-    /**
-* The table associated with the model.
-     *
-     * @var string
-     */
-    protected $table = 'profiles';
 
     /**
      * Generate Schema.org ProfilePage/Person JSON-LD structured data.

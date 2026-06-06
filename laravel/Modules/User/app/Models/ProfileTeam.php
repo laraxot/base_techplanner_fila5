@@ -15,7 +15,7 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
-* @property string $id
+ * @property string $id
  * @property int $team_id
  * @property string|null $user_id
  * @property string|null $role
@@ -42,7 +42,7 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @mixin IdeHelperProfileTeam
  *
-* @property ProfileContract|null $deleter
+ * @property ProfileContract|null $deleter
  * @property Team|null $team
  * @property User|null $user
  * @property string|null $profile_id
@@ -60,8 +60,6 @@ class ProfileTeam extends TeamUser
 {
     /**
      * The table associated with the model.
-*
-     * @var string
      */
     protected $table = 'profile_team';
 }

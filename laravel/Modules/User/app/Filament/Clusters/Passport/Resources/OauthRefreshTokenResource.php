@@ -8,6 +8,10 @@ use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
+use Filament\Forms\Components\DateTimePicker;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
+use Filament\Notifications\Notification;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
@@ -32,7 +36,7 @@ class OauthRefreshTokenResource extends XotBaseResource
     /**
      * Get the form schema for the resource.
      *
-* @return array<string, Component>
+     * @return array<string, Component>
      */
     #[\Override]
     public static function getFormSchema(): array
@@ -55,7 +59,7 @@ class OauthRefreshTokenResource extends XotBaseResource
         ];
     }
 
-public static function table(Table $table): Table
+    public static function table(Table $table): Table
     {
         return $table
             ->columns([
@@ -64,7 +68,7 @@ public static function table(Table $table): Table
                     ->sortable()
                     ->copyable(),
 
-TextColumn::make('access_token_id')
+                TextColumn::make('access_token_id')
                     ->searchable()
                     ->sortable(),
 
@@ -80,7 +84,7 @@ TextColumn::make('access_token_id')
                 // Add filters for revoked status, expiration
             ])
             ->recordActions([
-Action::make('revoke')
+                Action::make('revoke')
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
                     ->requiresConfirmation()
@@ -93,7 +97,7 @@ Action::make('revoke')
                         }
                     })
                     ->visible(fn (mixed $record) => $record instanceof OauthRefreshToken && ! (bool) $record->getAttribute('revoked')),
-DeleteAction::make(),
+                DeleteAction::make(),
             ])
             ->bulkActions([
                 BulkActionGroup::make([
@@ -104,7 +108,7 @@ DeleteAction::make(),
     }
 
     /**
-* @return array<string, PageRegistration>
+     * @return array<string, PageRegistration>
      */
     #[\Override]
     public static function getPages(): array

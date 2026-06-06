@@ -111,7 +111,7 @@ trait HasXotTable
     public function getGridTableColumns(): array
     {
         return [
-Stack::make(array_values($this->getTableColumns())),
+            Stack::make(array_values($this->getTableColumns())),
         ];
     }
 
@@ -198,7 +198,7 @@ Stack::make(array_values($this->getTableColumns())),
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
             ->heading($this->getTableHeading())
-->columns($this->layoutView->getTableColumns(array_values($this->getTableColumns()), $this->getGridTableColumns()))
+            ->columns($this->layoutView->getTableColumns(array_values($this->getTableColumns()), $this->getGridTableColumns()))
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->filters($this->getTableFilters())
             ->filtersLayout(FiltersLayout::AboveContent)
@@ -215,12 +215,12 @@ Stack::make(array_values($this->getTableColumns())),
         // Configurazioni opzionali personalizzabili
         $sortColumn = $this->getDefaultTableSortColumn();
         $sortDirection = $this->getDefaultTableSortDirection();
-if ($sortColumn !== null && $sortDirection !== null) {
+        if ($sortColumn !== null && $sortDirection !== null) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
 
         $pollInterval = $this->getTablePollInterval();
-if ($pollInterval !== null) {
+        if ($pollInterval !== null) {
             $table = $table->poll($pollInterval);
         }
 
@@ -350,7 +350,7 @@ if ($pollInterval !== null) {
     /**
      * Get model class.
      *
-*
+     *
      * @return class-string<Model>
      *
      * @throws \Exception Se non viene trovata una classe modello valida
@@ -395,7 +395,7 @@ if ($pollInterval !== null) {
      */
     public function getTableSearch(): ?string
     {
-$search = $this->tableSearch ?? null;
+        $search = $this->tableSearch ?? null;
 
         return $search !== null ? (string) $search : null;
     }

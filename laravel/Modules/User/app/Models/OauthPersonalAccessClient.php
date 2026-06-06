@@ -7,13 +7,14 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
-* @property string $id
+ * @property string $id
  * @property string $client_id
  * @property OauthClient|null $client
  */
 class OauthPersonalAccessClient extends BaseModel
 {
-protected $table = 'oauth_personal_access_clients';
+    protected $table = 'oauth_personal_access_clients';
+
     protected $connection = 'user';
 
     /** @var list<string> */

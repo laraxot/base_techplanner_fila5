@@ -10,6 +10,20 @@ use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Pages\Concerns\InteractsWithFormActions;
 use Filament\Schemas\Schema;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Schema as DatabaseSchema;
+use Modules\User\Datas\PasswordData;
+use Modules\User\Events\NewPasswordSet;
+use Modules\User\Http\Response\PasswordResetResponse;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Filament\Pages\XotBasePage;
+use Modules\Xot\Filament\Traits\NavigationPageLabelTrait;
+use Webmozart\Assert\Assert;
+
+/**
  * @property Schema $form
  * @property Schema $editProfileForm
  * @property Schema $editPasswordForm
@@ -51,12 +65,12 @@ class PasswordExpired extends XotBasePage
         Assert::string($currentPassword = Arr::get($data, 'current_password'));
         Assert::string($password = Arr::get($data, 'password'));
         $user = Auth::user();
-if ($user === null) {
+        if ($user === null) {
             return null;
         }
 
         // check if current password is correct
-if ($user->password === null || ! Hash::check($currentPassword, $user->password)) {
+        if ($user->password === null || ! Hash::check($currentPassword, $user->password)) {
             Notification::make()
                 ->title(__('user::otp.notifications.wrong_password.title'))
                 ->body(__('user::otp.notifications.wrong_password.body'))

@@ -15,22 +15,22 @@ trait EnumTrait
 
     public function getLabel(): string
     {
-return $this->transClass(static::class, 'values.'.$this->value.'.label');
+        return $this->transClass(static::class, 'values.'.$this->value.'.label');
     }
 
     public function getColor(): string
     {
-return $this->transClass(static::class, 'values.'.$this->value.'.color');
+        return $this->transClass(static::class, 'values.'.$this->value.'.color');
     }
 
     public function getIcon(): string
     {
-return $this->transClass(static::class, 'values.'.$this->value.'.icon');
+        return $this->transClass(static::class, 'values.'.$this->value.'.icon');
     }
 
     public function getDescription(): string
     {
-return $this->transClass(static::class, 'values.'.$this->value.'.description');
+        return $this->transClass(static::class, 'values.'.$this->value.'.description');
     }
 
     /**
@@ -100,7 +100,7 @@ return $this->transClass(static::class, 'values.'.$this->value.'.description');
      * ```
      */
     /**
-* @param  Blueprint  $table  The table blueprint
+     * @param  Blueprint  $table  The table blueprint
      * @param  XotBaseMigration|null  $migration  XotBaseMigration instance for UPDATE context (provides hasColumn())
      */
     public static function columns(Blueprint $table, ?XotBaseMigration $migration = null): void
@@ -110,7 +110,7 @@ return $this->transClass(static::class, 'values.'.$this->value.'.description');
         // }
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
-if ($migration === null || ! $migration->hasColumn($name)) {
+            if ($migration === null || ! $migration->hasColumn($name)) {
                 $definition($table);
             }
         }
@@ -139,7 +139,7 @@ if ($migration === null || ! $migration->hasColumn($name)) {
      */
     public static function getColumnNames(): array
     {
-return array_values(array_map(static fn ($case): string => (string) $case->value, static::cases()));
+        return array_values(array_map(static fn ($case): string => (string) $case->value, static::cases()));
     }
 
     /**

@@ -16,6 +16,16 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+use Modules\Xot\Models\Traits\HasXotFactory;
+use Modules\Xot\Models\Traits\RelationX;
+use Modules\Xot\Traits\Updater;
+use Spatie\Permission\Models\Role as SpatieRole;
+use Webmozart\Assert\Assert;
+
+/**
+ * Modules\User\Models\Role.
+ *
  * @property int $id
  * @property string $uuid
  * @property string|null $team_id
@@ -49,7 +59,7 @@ use Modules\Xot\Contracts\UserContract;
  * @method static Builder|Role withoutPermission($permissions)
  * @method static Builder|Role whereDescription($value)
  * @method static Builder|Role whereDisplayName($value)
-* @method static static firstOrCreate(array $attributes, array $values = [])
+ * @method static static firstOrCreate(array $attributes, array $values = [])
  * @method static static updateOrCreate(array $attributes, array $values = [])
  *
  * @property ProfileContract|null $creator
@@ -75,7 +85,8 @@ class Role extends SpatieRole
 
     final public const ROLE_USER = 3;
 
-protected $connection = 'user';
+    protected $connection = 'user';
+
     protected $keyType = 'int';
 
     /** @var list<string> */

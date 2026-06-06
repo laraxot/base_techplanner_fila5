@@ -10,6 +10,7 @@ use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_replace;
+
 /**
  * Class RouteDynService.
  */
@@ -21,7 +22,7 @@ class RouteDynService
     // private static ?string $curr = null;
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      */
     private static function requireStringValue(array $v, string $key): string
     {
@@ -32,7 +33,7 @@ class RouteDynService
     }
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      * @return array<string, mixed>
      */
     public static function getGroupOpts(array $v, ?string $namespace): array
@@ -45,7 +46,7 @@ class RouteDynService
     }
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      */
     public static function getPrefix(array $v, ?string $namespace): string
     {
@@ -56,7 +57,7 @@ class RouteDynService
         $name = self::requireStringValue($v, 'name');
         $prefix = mb_strtolower($name);
         $param_name = self::getParamName($v, $namespace);
-if ($param_name !== '') {
+        if ($param_name !== '') {
             return $prefix.'/{'.$param_name.'}';
         }
 
@@ -64,7 +65,7 @@ if ($param_name !== '') {
     }
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      */
     public static function getAs(array $v, ?string $_namespace): string
     {
@@ -89,7 +90,7 @@ if ($param_name !== '') {
     }
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      */
     public static function getNamespace(array $v, ?string $namespace): ?string
     {
@@ -99,7 +100,7 @@ if ($param_name !== '') {
 
         $namespace = self::requireStringValue($v, 'name');
         $namespace = str_replace(['{', '}'], '', $namespace);
-if ($namespace === '') {
+        if ($namespace === '') {
             return null;
         }
 
@@ -107,7 +108,7 @@ if ($namespace === '') {
     }
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      */
     public static function getAct(array $v, ?string $_namespace): string
     {
@@ -136,7 +137,7 @@ if ($namespace === '') {
     }
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      */
     public static function getParamName(array $v, ?string $_namespace): string
     {
@@ -152,7 +153,7 @@ if ($namespace === '') {
     }
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      * @return array<int, string>
      */
     public static function getParamsName(array $v, ?string $namespace): array
@@ -163,7 +164,7 @@ if ($namespace === '') {
     }
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      * @return array<string, mixed>
      */
     public static function getResourceOpts(array $v, ?string $namespace): array
@@ -181,7 +182,7 @@ if ($namespace === '') {
             $opts['only'] = $v['only'];
         }
 
-if ($param_name === '' && ! isset($opts['only'])) {
+        if ($param_name === '' && ! isset($opts['only'])) {
             $opts['only'] = ['index'];
         }
 
@@ -191,7 +192,7 @@ if ($param_name === '' && ! isset($opts['only'])) {
     }
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      */
     public static function getController(array $v, ?string $_namespace): string
     {
@@ -208,7 +209,7 @@ if ($param_name === '' && ! isset($opts['only'])) {
     }
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      */
     public static function getUri(array $v, ?string $_namespace): string
     {
@@ -219,7 +220,7 @@ if ($param_name === '' && ! isset($opts['only'])) {
     }
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      * @return array<int, string>
      */
     public static function getMethod(array $v, ?string $_namespace): array
@@ -238,7 +239,7 @@ if ($param_name === '' && ! isset($opts['only'])) {
     }
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      */
     public static function getUses(array $v, ?string $namespace): string
     {
@@ -249,7 +250,7 @@ if ($param_name === '' && ! isset($opts['only'])) {
     }
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      * @return array<string, mixed>
      */
     public static function getCallback(array $v, ?string $namespace, ?string $curr): array
@@ -257,7 +258,7 @@ if ($param_name === '' && ! isset($opts['only'])) {
         $name = self::requireStringValue($v, 'name');
         $as = Str::slug($name);
         $uses = self::getUses($v, $namespace);
-if ($curr !== null) {
+        if ($curr !== null) {
             $uses = '\\'.self::$namespace_start.'\\'.$curr.'\\'.$uses;
         } else {
             $uses = '\\'.self::$namespace_start.'\\'.$uses;
@@ -267,7 +268,7 @@ if ($curr !== null) {
     }
 
     /**
-* @param  array<int, array<string, mixed>>  $array
+     * @param  array<int, array<string, mixed>>  $array
      */
     public static function dynamic_route(
         array $array,
@@ -277,7 +278,7 @@ if ($curr !== null) {
     ): void {
         Assert::notEmpty($array, 'The $array parameter cannot be empty.');
 
-if ($namespace_start !== null) {
+        if ($namespace_start !== null) {
             self::$namespace_start = $namespace_start;
         }
 
@@ -296,7 +297,7 @@ if ($namespace_start !== null) {
     }
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      */
     public static function createRouteResource(array $v, ?string $namespace): void
     {
@@ -311,7 +312,7 @@ if ($namespace_start !== null) {
     }
 
     /**
-* @param  array<string, mixed>  $v
+     * @param  array<string, mixed>  $v
      */
     public static function createRouteSubs(array $v, ?string $namespace, ?string $curr): void
     {
@@ -320,7 +321,7 @@ if ($namespace_start !== null) {
         }
 
         $sub_namespace = self::getNamespace($v, $namespace);
-$curr = $curr === null ? $sub_namespace : $curr;
+        $curr = $curr === null ? $sub_namespace : $curr;
         Assert::isArray($subs = $v['subs']);
         /** @var array<int, array<string, mixed>> $subsList */
         $subsList = array_values($subs);
@@ -355,7 +356,7 @@ $curr = $curr === null ? $sub_namespace : $curr;
      */
     public static function prefixedResourceNames(string $prefix): array
     {
-if (mb_substr($prefix, -1) === '.') {
+        if (mb_substr($prefix, -1) === '.') {
             $prefix = mb_substr($prefix, 0, -1);
         }
 

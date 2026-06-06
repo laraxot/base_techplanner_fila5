@@ -49,7 +49,34 @@ class StateOverviewWidget extends XotBaseSchemaWidget
      *
      * @return array<int|string, Component>
      */
-if ($this->cacheKey === '') {
+    public function getFormSchema(): array
+    {
+        return [];
+    }
+
+    /**
+     * Dati da passare alla vista.
+     *
+     * @return array<string, mixed>
+     */
+    protected function getViewData(): array
+    {
+        return [
+            'states' => $this->getStates(),
+            // 'title' => $this->getWidgetTitle(),
+        ];
+    }
+
+    protected function getCacheKey(): string
+    {
+        try {
+            $cacheKey = 'states-'.class_basename($this->model).'-'.class_basename($this->stateClass);
+            $cacheKey = Str::slug($cacheKey);
+            $this->cacheKey = $cacheKey;
+
+            return $cacheKey;
+        } catch (\Error $e) {
+            if ($this->cacheKey === '') {
                 $this->cacheKey = Str::uuid()->toString();
             }
 

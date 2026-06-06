@@ -16,7 +16,7 @@ use Modules\Xot\Datas\XotData;
 /**
  * Modules\User\Models\TeamInvitation.
  *
-* @property int $id
+ * @property int $id
  * @property string|null $team_id
  * @property string $email
  * @property string|null $role
@@ -35,7 +35,7 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|TeamInvitation whereTeamId($value)
  * @method static Builder|TeamInvitation whereUpdatedAt($value)
  *
-* @property string $uuid
+ * @property string $uuid
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
@@ -53,7 +53,7 @@ use Modules\Xot\Datas\XotData;
  * @mixin IdeHelperTeamInvitation
  *
  * @property ProfileContract|null $deleter
-* @property Carbon|null $accepted_at
+ * @property Carbon|null $accepted_at
  * @property Carbon|null $declined_at
  * @property string|null $user_id
  *
@@ -66,7 +66,6 @@ use Modules\Xot\Datas\XotData;
  */
 class TeamInvitation extends BaseModel
 {
-/** @var string */
     protected $connection = 'user';
 
     /** @var list<string> */

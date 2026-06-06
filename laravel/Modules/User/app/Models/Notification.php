@@ -15,7 +15,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  *
  * @method static DatabaseNotificationCollection<int, static> all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static> get($columns = ['*'])
-* @method static Builder|Notification newModelQuery()
+ * @method static Builder|Notification newModelQuery()
  * @method static Builder|Notification newQuery()
  * @method static Builder|Notification query()
  * @method static Builder|Notification read()
@@ -35,7 +35,6 @@ class Notification extends BaseNotification
 {
     use HasXotFactory;
 
-/** @var string */
     protected $connection = 'user';
 
     // protected $fillable = ['id', 'user_id', 'client_id', 'name', 'scopes', 'revoked', 'expires_at'];

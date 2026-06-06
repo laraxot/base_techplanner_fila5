@@ -102,7 +102,7 @@ class PassportServiceProvider extends ServiceProvider
 
         $tokenModel = $models['token'] ?? OauthToken::class;
         Assert::stringNotEmpty($tokenModel);
-Assert::subclassOf($tokenModel, Token::class);
+        Assert::subclassOf($tokenModel, Token::class);
 
         $refreshTokenModel = $models['refresh_token'] ?? OauthRefreshToken::class;
         Assert::stringNotEmpty($refreshTokenModel);
@@ -121,7 +121,7 @@ Assert::subclassOf($tokenModel, Token::class);
         Passport::useAuthCodeModel($authCodeModel);
         Passport::useClientModel($clientModel);
 
-$deviceCodeModel = $models['device_code'] ?? OauthDeviceCode::class;
+        $deviceCodeModel = $models['device_code'] ?? OauthDeviceCode::class;
         Assert::stringNotEmpty($deviceCodeModel);
         Assert::subclassOf($deviceCodeModel, DeviceCode::class);
         Passport::useDeviceCodeModel($deviceCodeModel);
@@ -151,8 +151,6 @@ $deviceCodeModel = $models['device_code'] ?? OauthDeviceCode::class;
         }
 
         if (! empty($scopes)) {
-// PHPStan: dopo i controlli Assert, l'array è garantito essere array<string, string>
-            /** @var array<string, string> $typedScopes */
             $typedScopes = $scopes;
             Passport::tokensCan($typedScopes);
         }

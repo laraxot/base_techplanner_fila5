@@ -79,12 +79,12 @@ class OauthClientResource extends XotBaseResource
     /**
      * Get the model class for the resource from Passport.
      *
-* @return class-string<Model>
+     * @return class-string<Model>
      */
     public static function getModel(): string
     {
         $model = LaravelPassport::clientModel();
-if (! class_exists($model)) {
+        if (! class_exists($model)) {
             return OauthClient::class;
         }
 

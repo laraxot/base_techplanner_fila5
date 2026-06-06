@@ -11,7 +11,7 @@ use Laravel\Passport\Token as PassportToken;
 /**
  * Modules\User\Models\OauthAccessToken.
  *
-* @property string $id
+ * @property string $id
  * @property string|null $user_id
  * @property string $client_id
  * @property string|null $name
@@ -37,7 +37,7 @@ use Laravel\Passport\Token as PassportToken;
  * @method static Builder|OauthAccessToken whereUserId($value)
  *
  * @property OauthRefreshToken|null $refreshToken
-* @property string|null $updated_by
+ * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
@@ -46,7 +46,7 @@ use Laravel\Passport\Token as PassportToken;
  * @method static Builder<static>|OauthAccessToken whereDeletedAt($value)
  * @method static Builder<static>|OauthAccessToken whereDeletedBy($value)
  * @method static Builder<static>|OauthAccessToken whereUpdatedBy($value)
-* @method static static create(array $attributes = [])
+ * @method static static create(array $attributes = [])
  * @method static static firstOrCreate(array $attributes, array $values = [])
  * @method static static updateOrCreate(array $attributes, array $values = [])
  *
@@ -58,6 +58,5 @@ use Laravel\Passport\Token as PassportToken;
  */
 class OauthAccessToken extends PassportToken
 {
-/** @var string */
     protected $connection = 'user';
 }

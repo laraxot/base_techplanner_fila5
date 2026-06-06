@@ -26,7 +26,7 @@ class Change extends Component
 
     public XotData $xot;
 
-public UserContract $user;
+    public UserContract $user;
 
     public function mount(): void
     {
@@ -56,7 +56,7 @@ public UserContract $user;
         if (! $this->user->switchTeam($team)) {
             abort(403);
         }
-if ($team !== null) {
+        if ($team !== null) {
             // TeamSwitched::dispatch($team->fresh(), $this->user);
             TeamSwitched::dispatch($team, $this->user);
         }
@@ -78,7 +78,7 @@ if ($team !== null) {
         $view_params = [
             'view' => $view,
         ];
-if ($this->teams === []) {
+        if ($this->teams === []) {
             $view = 'ui::livewire.empty';
         }
 

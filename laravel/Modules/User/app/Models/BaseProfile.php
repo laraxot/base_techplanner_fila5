@@ -7,7 +7,23 @@ namespace Modules\User\Models;
 // // use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-* @property int $id
+use Illuminate\Notifications\DatabaseNotification;
+use Illuminate\Notifications\DatabaseNotificationCollection;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Str;
+use Modules\Media\Models\Media;
+use Modules\User\Models\Traits\IsProfileTrait;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Contracts\UserContract;
+use Parental\HasChildren;
+use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
+use Spatie\Permission\Traits\HasRoles;
+use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
+use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
+
+/**
+ * @property int $id
  * @property string $uuid
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra
  * @property string $avatar
@@ -40,7 +56,7 @@ use Illuminate\Database\Eloquent\Collection;
  * @method static Builder|ProfileContract query()
  * @method static Builder|ProfileContract role($roles, $guard = null, $without = false)
  * @method static Builder|ProfileContract byUuid(string $uuid)
-* @method static Builder|BaseProfile withExtraAttributes()
+ * @method static Builder|BaseProfile withExtraAttributes()
  * @method static Builder|ProfileContract withoutPermission($permissions)
  * @method static Builder|ProfileContract withoutRole($roles, $guard = null)
  *
@@ -57,18 +73,6 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     use IsProfileTrait;
     use Notifiable;
     use SchemalessAttributesTrait;
-/** @var list<string> */
-    protected array $formlessAttributes = [
-        'extra',
-    ];
-
-    /**
-     * Scope per lookup da API/Android/Postgres (usa uuid, non id).
-     */
-    public function scopeByUuid(Builder $query, string $uuid): Builder
-    {
-        return $query->where('uuid', $uuid);
-    }
 
     /**
      * Undocumented variable.
@@ -108,10 +112,18 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         'user',
     ];
 
-    /** @var array */
-    protected $formlessAttributes = [
+    /** @var list<string> */
+    protected array $formlessAttributes = [
         'extra',
     ];
+
+    /**
+     * Scope per lookup da API/Android/Postgres (usa uuid, non id).
+     */
+    public function scopeByUuid(Builder $query, string $uuid): Builder
+    {
+        return $query->where('uuid', $uuid);
+    }
 
     // ✅ CORRETTO: NON implementare scopeWithExtraAttributes() manualmente
     // Il trait SchemalessAttributesTrait lo fornisce automaticamente!
@@ -125,7 +137,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     public function getAvatarUrl(): string
     {
         $avatar = $this->getFirstMediaUrl('avatar');
-if ($avatar !== '') {
+        if ($avatar !== '') {
             return $avatar;
         }
 
@@ -157,13 +169,13 @@ if ($avatar !== '') {
         $locale = config('app.locale');
         $defaultLocale = 'it';
 
-if ($locale === null || ! is_string($locale)) {
+        if ($locale === null || ! is_string($locale)) {
             $locale = $defaultLocale;
         }
 
         $userLang = $this->lang;
 
-if ($userLang === null || ! is_string($userLang)) {
+        if ($userLang === null || ! is_string($userLang)) {
             return $locale;
         }
 

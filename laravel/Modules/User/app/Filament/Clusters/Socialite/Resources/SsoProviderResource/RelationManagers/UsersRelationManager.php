@@ -5,6 +5,19 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource\RelationManagers;
 
 use Filament\Tables\Columns\Column;
+use Filament\Tables\Columns\TextColumn;
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+
+/**
+ * Users Relation Manager for SSO Provider Resource.
+ */
+class UsersRelationManager extends XotBaseRelationManager
+{
+    protected static string $relationship = 'users';
+
+    protected static ?string $recordTitleAttribute = 'name';
+
+    /**
      * @return array<string, Column>
      */
     #[\Override]

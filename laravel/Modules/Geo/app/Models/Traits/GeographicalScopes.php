@@ -6,6 +6,7 @@ namespace Modules\Geo\Models\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Query\Expression;
+use Webmozart\Assert\Assert;
 
 trait GeographicalScopes
 {
@@ -30,20 +31,28 @@ trait GeographicalScopes
         float $longitude,
         ?string $alias = null,
     ): Expression|\Illuminate\Contracts\Database\Query\Expression {
-        $sql = "
-            (6371 * acos(
-                cos(radians({$latitude})) *
+        $sql = sprintf(
+            '(6371 * acos(
+                cos(radians(%F)) *
                 cos(radians(latitude)) *
-                cos(radians(longitude) - radians({$longitude})) +
-                sin(radians({$latitude})) *
+                cos(radians(longitude) - radians(%F)) +
+                sin(radians(%F)) *
                 sin(radians(latitude))
-            ))
-        ";
-        if (null !== $alias) {
-            $sql .= " AS {$alias}";
+            ))',
+            $latitude,
+            $longitude,
+            $latitude,
+        );
+        if ($alias !== null) {
+            $sql .= sprintf(' AS %s', $alias);
         }
 
-        return new Expression($sql);
+        Assert::string($sql);
+
+        /** @var literal-string $literalSql */
+        $literalSql = $sql;
+
+        return new Expression($literalSql);
 
         // AS distance
     }

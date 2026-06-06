@@ -9,5 +9,6 @@ use Modules\Xot\Traits\EnumTrait;
 enum SystemRole: string
 {
     use EnumTrait;
+
     case SuperAdmin = '%';
 }

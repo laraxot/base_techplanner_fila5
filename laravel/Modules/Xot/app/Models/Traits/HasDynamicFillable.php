@@ -20,7 +20,7 @@ trait HasDynamicFillable
     {
         $fillable = array_values(parent::getFillable());
 
-if ($this->dynamicFillableEnums === []) {
+        if ($this->dynamicFillableEnums === []) {
             return $fillable;
         }
 

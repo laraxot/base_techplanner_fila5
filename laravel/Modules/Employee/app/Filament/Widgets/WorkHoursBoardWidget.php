@@ -11,7 +11,7 @@ use Modules\Employee\Actions\BuildTimelineVisualizationAction;
 use Modules\Employee\Actions\BuildWorkHoursForRangeAction;
 use Modules\Employee\Actions\ExportTimeDataAction;
 use Modules\Employee\Actions\GetCurrentEmployeeDataAction;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 use Override;
 
 /**
@@ -24,7 +24,7 @@ use Override;
  * - Indicatori di stato (arancione "Problemi", verde completato, etc.)
  * - Navigazione settimana e export functionality
  */
-class WorkHoursBoardWidget extends XotBaseWidget
+class WorkHoursBoardWidget extends XotBaseSchemaWidget
 {
     protected string $view = 'employee::filament.widgets.work-hours-board';
 
@@ -139,14 +139,17 @@ class WorkHoursBoardWidget extends XotBaseWidget
             // Calcola ore totali giorno
             $totalHours = 0;
             if (! empty($dayBlocks)) {
-                $durations = array_column($dayBlocks, 'duration');
+                /** @var array<int, float|int> $durations */
+                $durations = array_values(array_map(
+                    static fn (mixed $duration): float => is_numeric($duration) ? (float) $duration : 0.0,
+                    array_column($dayBlocks, 'duration'),
+                ));
                 $totalHours = array_sum($durations);
             }
 
-            /** @var \Carbon\Carbon $currentCarbon */
+            /** @var Carbon $currentCarbon */
             $currentCarbon = $current;
             $days[$dateKey] = [
-                // @phpstan-ignore-next-line
                 'date' => Carbon::parse($currentCarbon)->format('d'),
                 // @phpstan-ignore-next-line
                 'dayName' => Carbon::parse($currentCarbon)->locale('it')->translatedFormat('D'),

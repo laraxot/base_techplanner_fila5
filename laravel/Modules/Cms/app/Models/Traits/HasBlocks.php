@@ -29,6 +29,18 @@ trait HasBlocks
         }
         $blocks = $this->{$field};
 
+        // Handle translatable fields: if blocks is an array with locale keys,
+        // extract the current language's content
+        if (is_array($blocks)) {
+            $primary_lang = XotData::make()->primary_lang;
+            // Check if this looks like a translatable structure (has locale keys)
+            $localeKeys = ['it', 'en', 'fr', 'de', 'es', $primary_lang];
+            $hasLocaleKeys = count(array_intersect(array_keys($blocks), $localeKeys)) > 0;
+            if ($hasLocaleKeys) {
+                $blocks = $this->getTranslation($field, $primary_lang);
+            }
+        }
+
         if (! is_array($blocks)) {
             $primary_lang = XotData::make()->primary_lang;
             $blocks = $this->getTranslation($field, $primary_lang);
@@ -49,8 +61,9 @@ trait HasBlocks
             $type = (string) ($block['type'] ?? 'unknown');
             $data = (array) ($block['data'] ?? []);
             $slug = isset($block['slug']) ? (string) $block['slug'] : null;
+            $active = (bool) ($block['active'] ?? true);
 
-            $blockDataInstances[(string) $key] = new BlockData($type, $data, $slug);
+            $blockDataInstances[(string) $key] = new BlockData($type, $data, $slug, $active);
         }
 
         /* @var array<string, BlockData> $blockDataInstances */
@@ -85,8 +98,13 @@ trait HasBlocks
     }
 
     /**
-     * Get blocks for a record by slug.
+     * Get blocks by slug for a specific side.
      *
+     * Cercato il record per slug, itera sui blocchi e filtra per side quando fornito.
+     * Struttura attesa: blocks = [{type, data, slug?, side?}, ...]
+     *
+     * @param  string  $slug  The section/page slug
+     * @param  string|null  $side  The side to get blocks for (null for all blocks)
      * @return array<string, BlockData>
      */
     public static function getBlocksBySlug(string $slug, ?string $side = null): array

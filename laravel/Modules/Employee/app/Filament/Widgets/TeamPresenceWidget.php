@@ -12,7 +12,7 @@ use Filament\Schemas\Components\Actions;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Modules\Employee\Models\Employee;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 use Override;
 
 /**
@@ -21,7 +21,7 @@ use Override;
  * Displays current team presence status with department filtering
  * and detailed view capabilities.
  */
-class TeamPresenceWidget extends XotBaseWidget
+class TeamPresenceWidget extends XotBaseSchemaWidget
 {
     protected static ?int $sort = 4;
 

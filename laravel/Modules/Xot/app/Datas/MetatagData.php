@@ -394,7 +394,7 @@ class MetatagData extends Data implements Wireable
     /**
      * Get the default Filament colors configuration.
      *
-* @return array<string, array<int, string>|string>
+     * @return array<string, array<int, string>|string>
      */
     public function getFilamentColors(): array
     {
@@ -405,7 +405,7 @@ class MetatagData extends Data implements Wireable
      * Get all colors with proper type handling.
      * Converts custom colors to Filament color format for compatibility.
      *
-* @return array<string, array<int, string>|string>
+     * @return array<string, array<int, string>|string>
      */
     public function getAllColors(): array
     {
@@ -645,7 +645,7 @@ class MetatagData extends Data implements Wireable
      * Concatenate a title to the existing title.
      * This method allows adding page-specific titles to the base site title.
      *
-* @param  string|null  $title  The title to concatenate
+     * @param  string|null  $title  The title to concatenate
      */
     public function concatTitle(?string $title): self
     {
@@ -667,7 +667,7 @@ class MetatagData extends Data implements Wireable
      * Concatenate a description to the existing description.
      * This method allows adding page-specific descriptions to the base site description.
      *
-* @param  string|null  $description  The description to concatenate
+     * @param  string|null  $description  The description to concatenate
      */
     public function concatDescription(?string $description): self
     {

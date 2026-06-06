@@ -39,7 +39,15 @@ class LoginWidget extends XotBaseSchemaWidget
 
     public function login(): void
     {
-$remember = isset($data['remember']) && $data['remember'] === true;
+        /** @var array<string, mixed> $data */
+        $data = $this->form->getState();
+
+        $credentials = [
+            'email' => is_string($data['email'] ?? null) ? $data['email'] : '',
+            'password' => is_string($data['password'] ?? null) ? $data['password'] : '',
+        ];
+
+        $remember = isset($data['remember']) && $data['remember'] === true;
 
         if (Auth::attempt($credentials, $remember)) {
             session()->regenerate();

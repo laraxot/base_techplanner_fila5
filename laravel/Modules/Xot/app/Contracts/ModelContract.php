@@ -16,7 +16,7 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\Xot\Contracts\ModelContract.
  *
-* @property int $id
+ * @property int $id
  * @property int|null $user_id
  * @property string|null $post_type
  * @property Carbon|null $created_at
@@ -24,7 +24,7 @@ use Illuminate\Support\Carbon;
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property string|null $title
-* @property bool $is_reclamed
+ * @property bool $is_reclamed
  * @property bool $table_enable
  * @property Pivot|null $pivot
  * @property string $tennant_name
@@ -89,7 +89,7 @@ interface ModelContract
     public function toArray();
 
     /**
-* Create a new instance of the given model.
+     * Create a new instance of the given model.
      *
      * @param  array  $attributes
      * @param  bool  $exists

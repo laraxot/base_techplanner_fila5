@@ -30,7 +30,7 @@ class UserResource extends XotBaseResource
     //    static::$extendFormCallback = $callback;
     // }
 
-/**
+    /**
      * @return array<string, Component>
      */
     #[\Override]

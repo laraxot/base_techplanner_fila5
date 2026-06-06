@@ -21,7 +21,7 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  * This widget handles the user logout process including session invalidation,
  * event dispatching, and proper redirection with localization support.
  *
-* @method void mount() Initialize the widget and form state.
+ * @method void mount() Initialize the widget and form state.
  * @method array<string, Component> getFormSchema() Define the form schema for the logout confirmation.
  * @method void logout() Handle the user logout process.
  * @method array<string, Action> getFormActions() Define the form actions (logout and cancel buttons).
@@ -48,7 +48,22 @@ class LogoutWidget extends XotBaseSchemaWidget
     public bool $isLoggingOut = false;
 
     /**
-public function getFormSchema(): array
+     * Mount the widget and initialize the form.
+     */
+    public function mount(): void
+    {
+        $this->form->fill();
+    }
+
+    /**
+     * Get the form schema for the logout confirmation.
+     *
+     * This method implements the abstract method from XotBaseWidget.
+     * Do not override the form() method as it's declared as final.
+     *
+     * @return array<string, Component>
+     */
+    public function getFormSchema(): array
     {
         return [
             'message' => View::make('user::filament.widgets.auth.logout-message')->columnSpanFull(),
@@ -76,7 +91,7 @@ public function getFormSchema(): array
 
             // Get the authenticated user before logging out
             $user = $this->getAuthenticatedUser();
-if ($user === null) {
+            if ($user === null) {
                 $this->handleNoUserScenario();
 
                 return;
@@ -97,7 +112,6 @@ if ($user === null) {
      *
      * @return array<string, Action>
      */
-#[\Override]
     public function getFormActions(): array
     {
         return [

@@ -4,6 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+use Filament\Notifications\Notification;
+use Filament\Schemas\Schema;
+use Illuminate\Auth\Events\PasswordReset;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Str;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -25,12 +34,12 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 
     public ?string $email = null;
 
-public string $currentState = 'form';
+    public string $currentState = 'form';
 
     public ?string $errorMessage = null;
 
     /**
-* @return class-string<UserForm>
+     * @return class-string<UserForm>
      */
     protected static function formClass(): string
     {
@@ -47,12 +56,13 @@ public string $currentState = 'form';
         parent::mount();
         $this->token = $token;
         $this->email = $email;
+
         if ($this->email) {
             $this->form->fill(['email' => $this->email]);
         }
     }
 
-public function confirmPasswordReset(): void
+    public function confirmPasswordReset(): void
     {
         if ($this->currentState !== 'form') {
             return;
@@ -70,7 +80,7 @@ public function confirmPasswordReset(): void
                     'password' => $data['password'],
                 ],
                 static function (Authenticatable $user, string $password): void {
-/** @var Model&Authenticatable $user */
+                    /** @var Model&Authenticatable $user */
                     $user->setAttribute('password', Hash::make($password));
                     $user->setRememberToken(Str::random(60));
                     $user->save();
@@ -79,7 +89,7 @@ public function confirmPasswordReset(): void
                 },
             );
 
-if ($response === Password::PASSWORD_RESET) {
+            if ($response === Password::PASSWORD_RESET) {
                 $this->currentState = 'success';
 
                 Notification::make()
@@ -89,7 +99,13 @@ if ($response === Password::PASSWORD_RESET) {
                     ->duration(8000)
                     ->send();
 
-$this->js('setTimeout(() => { window.location.href = "'.route('login').'"; }, 3000);');
+                Assert::string($email = $data['email'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
+                /** @var UserContract $user */
+                $user = XotData::make()->getUserByEmail($email);
+                Assert::isInstanceOf($user, Authenticatable::class);
+                Auth::guard()->login($user);
+
+                $this->js('setTimeout(() => { window.location.href = "'.route('login').'"; }, 3000);');
             } else {
                 $this->handleResetError(is_string($response) ? $response : 'passwords.generic_error');
             }
@@ -98,9 +114,6 @@ $this->js('setTimeout(() => { window.location.href = "'.route('login').'"; }, 30
         }
     }
 
-    /**
-     * Reset the widget to allow another attempt.
-     */
     public function resetForm(): void
     {
         $this->currentState = 'form';
@@ -108,31 +121,22 @@ $this->js('setTimeout(() => { window.location.href = "'.route('login').'"; }, 30
         $this->form->fill(['email' => $this->email ?? '']);
     }
 
-    /**
-     * Get the current state for the view.
-     */
     public function getCurrentState(): string
     {
         return $this->currentState;
     }
 
-    /**
-     * Get the error message if any.
-     */
     public function getErrorMessage(): ?string
     {
         return $this->errorMessage;
     }
 
-    /**
-     * Check if the form should be shown.
-     */
     public function shouldShowForm(): bool
     {
         return \in_array($this->currentState, ['form', 'loading'], strict: true);
     }
 
-public function isLoading(): bool
+    public function isLoading(): bool
     {
         return $this->currentState === 'loading';
     }
@@ -146,11 +150,11 @@ public function isLoading(): bool
     {
         return $this->currentState === 'error';
     }
+
     protected function handleResetError(string $response): void
     {
         $this->currentState = 'error';
 
-// Map Laravel password reset responses to user-friendly messages
         $errorMessages = [
             Password::INVALID_TOKEN => __('user::auth.password_reset.errors.invalid_token'),
             Password::INVALID_USER => __('user::auth.password_reset.errors.invalid_user'),

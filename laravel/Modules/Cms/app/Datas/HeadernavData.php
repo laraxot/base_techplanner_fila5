@@ -29,16 +29,14 @@ class HeadernavData extends Data implements Wireable
 
     /**
      * The view path.
-     *
-     * @var string
      */
-    public $view = 'cms::components.headernav';
+    public string $view = 'cms::components.headernav';
 
     private static ?self $instance = null;
 
     public static function make(): self
     {
-        if (! self::$instance instanceof HeadernavData) {
+        if (! self::$instance instanceof self) {
             $data = TenantService::getConfig('appearance');
             $data = Arr::get($data, 'headernav', []);
             self::$instance = self::from($data);

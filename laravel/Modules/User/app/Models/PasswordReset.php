@@ -11,7 +11,7 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Modules\User\Models\PasswordReset.
  *
-* @property int $id
+ * @property int $id
  * @property string $email
  * @property string $token
  * @property Carbon|null $created_at
@@ -34,7 +34,7 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
-* @property string|null $uuid
+ * @property string|null $uuid
  *
  * @method static Builder<static>|PasswordReset whereUuid($value)
  *
@@ -57,8 +57,6 @@ class PasswordReset extends BaseModel
 
     /**
      * The table associated with the model.
-*
-     * @var string
      */
     protected $table = 'password_resets';
 }

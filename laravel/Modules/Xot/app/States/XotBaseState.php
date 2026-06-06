@@ -10,7 +10,14 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Modules\Xot\Contracts\StateContract;
 use Modules\Xot\Filament\Traits\TransTrait;
-* @property string $name Il nome dello stato
+
+/**
+ * Abstract base class for appointment state management.
+ *
+ * Defines the state machine configuration and required methods
+ * that must be implemented by each concrete state class.
+ *
+ * @property string $name Il nome dello stato
  * @property string $value Il valore dello stato nel database
  */
 abstract class XotBaseState implements StateContract
@@ -21,8 +28,9 @@ abstract class XotBaseState implements StateContract
 
     public static function getName(): string
     {
-return static::$name ?? Str::of(class_basename(static::class))->snake()->toString();
+        return static::$name ?? Str::of(class_basename(static::class))->snake()->toString();
     }
+
     public function label(): string
     {
         return static::transClass(static::class, 'states.'.static::getName().'.label');
@@ -30,6 +38,10 @@ return static::$name ?? Str::of(class_basename(static::class))->snake()->toStrin
         // return 'Annullato';
     }
 
+    public function color(): string
+    {
+        return static::transClass(static::class, 'states.'.static::getName().'.color');
+    }
 
     public function bgColor(): string
     {
@@ -38,6 +50,12 @@ return static::$name ?? Str::of(class_basename(static::class))->snake()->toStrin
         // return 'info';
     }
 
+    public function icon(): string
+    {
+        return static::transClass(static::class, 'states.'.static::getName().'.icon');
+
+        // return 'heroicon-o-x-circle';
+    }
 
     public function modalHeading(): string
     {
@@ -46,6 +64,14 @@ return static::$name ?? Str::of(class_basename(static::class))->snake()->toStrin
         // return 'Annulla Appuntamento';
     }
 
+    public function modalDescription(): string
+    {
+        // $appointment non utilizzata - rimossa
+
+        return static::transClass(static::class, 'states.'.static::getName().'.modal_description');
+
+        // return 'Sei sicuro di voler annullare questo appuntamento?';
+    }
 
     public function modalFormSchema(): array
     {
@@ -57,7 +83,7 @@ return static::$name ?? Str::of(class_basename(static::class))->snake()->toStrin
     /**
      * Fill form data for modal.
      *
-* @param  array<string, mixed>  $arguments
+     * @param  array<string, mixed>  $arguments
      * @param  array<string, mixed>  $data
      * @return array<string, mixed>
      */
@@ -71,7 +97,15 @@ return static::$name ?? Str::of(class_basename(static::class))->snake()->toStrin
      *
      * @return array<string, mixed>
      */
-* @param  array<string, mixed>  $arguments
+    public function modalFillFormByRecord(Model $record): array
+    {
+        return [];
+    }
+
+    /**
+     * Execute modal action.
+     *
+     * @param  array<string, mixed>  $arguments
      * @param  array<string, mixed>  $data
      */
     public function modalAction(array $arguments, array $data): void
@@ -82,7 +116,7 @@ return static::$name ?? Str::of(class_basename(static::class))->snake()->toStrin
     /**
      * Process state action.
      *
-* @param  array<string, mixed>  $arguments
+     * @param  array<string, mixed>  $arguments
      * @param  array<string, mixed>  $data
      */
     public function processStateAction(array $arguments, array $data): void
@@ -96,14 +130,14 @@ return static::$name ?? Str::of(class_basename(static::class))->snake()->toStrin
          *
          * $appointment?->state->transitionTo($stateClass,$message);
          */
-// Fallback safe-mode when model-states package is not available.
+        // Fallback safe-mode when model-states package is not available.
         // Transition by generic arguments is intentionally a no-op.
     }
 
     /**
      * Execute modal action by record.
      *
-* @param  array<string, mixed>  $data
+     * @param  array<string, mixed>  $data
      */
     public function modalActionByRecord(Model $record, array $data): void
     {
@@ -113,7 +147,7 @@ return static::$name ?? Str::of(class_basename(static::class))->snake()->toStrin
     /**
      * Process state action by record.
      *
-* @param  array<string, mixed>  $data
+     * @param  array<string, mixed>  $data
      */
     public function processStateActionByRecord(Model $record, array $data): void
     {
@@ -126,7 +160,7 @@ return static::$name ?? Str::of(class_basename(static::class))->snake()->toStrin
          *
          * $appointment?->state->transitionTo($stateClass,$message);
          */
-if (isset($record->state) && \is_object($record->state) && method_exists($record->state, 'transitionTo')) {
+        if (isset($record->state) && \is_object($record->state) && method_exists($record->state, 'transitionTo')) {
             $record->state->transitionTo($stateClass, $message);
         }
     }
@@ -138,7 +172,7 @@ if (isset($record->state) && \is_object($record->state) && method_exists($record
 
     public static function getOptions(): array
     {
-if (! method_exists(static::class, 'getStateMapping')) {
+        if (! method_exists(static::class, 'getStateMapping')) {
             return [];
         }
 

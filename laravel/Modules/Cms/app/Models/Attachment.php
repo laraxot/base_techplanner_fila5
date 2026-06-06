@@ -18,21 +18,21 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
 /**
  * ---.
  *
- * @property string                       $id
+ * @property string $id
  * @property array<array-key, mixed>|null $title
  * @property array<array-key, mixed>|null $description
- * @property string|null                  $slug
- * @property string|null                  $disk
+ * @property string|null $slug
+ * @property string|null $disk
  * @property array<array-key, mixed>|null $attachment
- * @property Carbon|null                  $created_at
- * @property Carbon|null                  $updated_at
- * @property string|null                  $created_by
- * @property string|null                  $updated_by
- * @property ProfileContract|null         $creator
- * @property MediaCollection<int, Media>  $media
- * @property int|null                     $media_count
- * @property mixed                        $translations
- * @property ProfileContract|null         $updater
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property ProfileContract|null $creator
+ * @property MediaCollection<int, Media> $media
+ * @property int|null $media_count
+ * @property mixed $translations
+ * @property ProfileContract|null $updater
  *
  * @method static Builder<static>|Attachment newModelQuery()
  * @method static Builder<static>|Attachment newQuery()
@@ -51,11 +51,12 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  * @method static Builder<static>|Attachment whereTitle($value)
  * @method static Builder<static>|Attachment whereUpdatedAt($value)
  * @method static Builder<static>|Attachment whereUpdatedBy($value)
- * @method static static|null                firstWhere(string $column, mixed $operator = null, mixed $value = null)
+ * @method static static|null firstWhere(string $column, mixed $operator = null, mixed $value = null)
  *
  * @property ProfileContract|null $deleter
  *
  * @method static AttachmentFactory factory($count = null, $state = [])
+ * @method array<int, array<string, mixed>> getSushiRows()
  *
  * @mixin \Eloquent
  */
@@ -64,13 +65,14 @@ class Attachment extends BaseModelLang implements HasMedia
     use InteractsWithMedia;
     use SushiToJsons;
 
-    /** @var array<int, string> */
-    public $translatable = [
+    /** @var list<string> */
+    public array $translatable = [
         'title',
         'description',
         'attachment',
     ];
 
+    /** @var list<string> */
     protected $fillable = [
         'title',
         'description',
@@ -79,7 +81,8 @@ class Attachment extends BaseModelLang implements HasMedia
         'attachment',
     ];
 
-    protected array $schema = [
+    /** @var array<string, string> */
+    protected $schema = [
         'id' => 'integer',
         'title' => 'json',
         'description' => 'json',
@@ -157,7 +160,7 @@ class Attachment extends BaseModelLang implements HasMedia
     public function asset(): string
     {
         // PHPStan L10: Check attachment is array before array_values
-        if (! is_array($this->attachment)) {
+        if (! \is_array($this->attachment)) {
             return '';
         }
 
@@ -172,7 +175,7 @@ class Attachment extends BaseModelLang implements HasMedia
         }
 
         $file = $values[0];
-        if (! is_string($file)) {
+        if (! \is_string($file)) {
             return '';
         }
 
@@ -183,7 +186,7 @@ class Attachment extends BaseModelLang implements HasMedia
 
         $url = $storage->url($file);
 
-        return is_string($url) ? $url : '';
+        return \is_string($url) ? $url : '';
     }
 
     /**

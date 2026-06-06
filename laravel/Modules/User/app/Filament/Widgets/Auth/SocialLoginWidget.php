@@ -14,7 +14,7 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  * Usabile in login, register e altre pagine auth.
  *
  * Regole Laraxot:
-* - Estende XotBaseSchemaWidget
+ * - Estende XotBaseSchemaWidget
  * - Traduzioni da user::auth.social
  * - Route: socialite.oauth.redirect
  */
@@ -27,7 +27,6 @@ class SocialLoginWidget extends XotBaseSchemaWidget
      *
      * @return array<string, Component>
      */
-#[\Override]
     public function getFormSchema(): array
     {
         return [];

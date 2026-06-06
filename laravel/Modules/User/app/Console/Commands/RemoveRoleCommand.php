@@ -13,15 +13,15 @@ use Modules\Xot\Datas\XotData;
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
-use Modules\User\Models\Role;
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
-use Symfony\Component\Console\Input\InputOption;
 class RemoveRoleCommand extends Command
 {
     /**
      * The name and signature of the console command.
+     */
+    protected $name = 'user:remove-role';
 
+    /**
+     * The console command description.
      */
     protected $description = 'remove a role to user';
 

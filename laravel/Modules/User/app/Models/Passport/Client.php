@@ -13,7 +13,7 @@ use Modules\User\Models\OauthToken;
 /**
  * Custom Passport Client model to fix compatibility issues with Laravel 12.
  *
-* @property Collection<int, OauthAuthCode> $authCodes
+ * @property Collection<int, OauthAuthCode> $authCodes
  * @property int|null $auth_codes_count
  * @property array $grant_types
  * @property User $owner
@@ -40,7 +40,7 @@ class Client extends PassportClient
      */
     public function initializeHasUniqueStringIds(): void
     {
-// @phpstan-ignore-next-line
+        // @phpstan-ignore-next-line
         if (method_exists(parent::class, 'initializeHasUniqueStringIds')) {
             parent::initializeHasUniqueStringIds();
         }

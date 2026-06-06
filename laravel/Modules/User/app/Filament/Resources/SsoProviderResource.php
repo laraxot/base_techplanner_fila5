@@ -12,6 +12,16 @@ use Filament\Forms\Components\Toggle;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Support\Components\Component;
+use Modules\User\Filament\Resources\SsoProviderResource\Pages;
+use Modules\User\Filament\Resources\SsoProviderResource\RelationManagers\UsersRelationManager;
+use Modules\User\Models\SsoProvider;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+
+class SsoProviderResource extends XotBaseResource
+{
+    protected static ?string $model = SsoProvider::class;
+
+    /**
      * @return array<string, Component>
      */
     #[\Override]
@@ -51,7 +61,7 @@ use Filament\Support\Components\Component;
     }
 
     /**
-* @return array<string, class-string<RelationManager>>
+     * @return array<string, class-string<RelationManager>>
      */
     #[\Override]
     public static function getRelations(): array

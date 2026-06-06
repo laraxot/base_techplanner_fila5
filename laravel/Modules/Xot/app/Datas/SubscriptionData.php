@@ -29,13 +29,13 @@ final class SubscriptionData extends Data
         public readonly array $allowed_models = [],
         public readonly bool $trial_enabled = true,
         public readonly int $trial_days = 14,
-) {}
+    ) {}
 
     /**
      * Create a new instance of SubscriptionData with default values.
      */
     public static function make(): static
     {
-return new self();
+        return new self();
     }
 }

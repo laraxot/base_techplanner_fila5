@@ -6,13 +6,26 @@ namespace Modules\User\Filament\Clusters\Passport\Pages;
 
 use Filament\Actions\Action;
 use Filament\Clusters\Cluster;
+use Filament\Notifications\Notification;
+use Livewire\Attributes\On;
+use Modules\User\Filament\Clusters\Passport;
+use Modules\Xot\Actions\ExecuteArtisanCommandAction;
+use Modules\Xot\Filament\Pages\XotBasePage;
+
+class PassportDashboard extends XotBasePage
+{
+    public bool $hasPublicKey = false;
+
+    public bool $hasPrivateKey = false;
+
     /** @var list<string> */
     public array $output = [];
+
     public string $status = '';
 
     public bool $isRunning = false;
 
-public string $currentCommand = '';
+    public string $currentCommand = '';
 
     /**
      * @var class-string<Cluster>
@@ -122,7 +135,7 @@ public string $currentCommand = '';
     protected function getHeaderActions(): array
     {
         return [
-'passport_install' => Action::make('passport_install')
+            'passport_install' => Action::make('passport_install')
                 ->icon('heroicon-o-arrow-down-tray')
                 ->color('success')
                 ->disabled(fn () => $this->isRunning)
@@ -130,14 +143,14 @@ public string $currentCommand = '';
                 ->modalDescription(static::trans('actions.install.modal_description'))
                 ->action(fn () => $this->executeCommand('passport:install --uuids')),
 
-'passport_keys' => Action::make('passport_keys')
+            'passport_keys' => Action::make('passport_keys')
                 ->icon('heroicon-o-key')
                 ->color('primary')
                 ->disabled(fn () => $this->isRunning)
                 ->requiresConfirmation()
                 ->action(fn () => $this->executeCommand('passport:keys')),
 
-'passport_purge' => Action::make('passport_purge')
+            'passport_purge' => Action::make('passport_purge')
                 ->icon('heroicon-o-trash')
                 ->color('warning')
                 ->disabled(fn () => $this->isRunning)
@@ -145,7 +158,7 @@ public string $currentCommand = '';
                 ->modalDescription(static::trans('actions.purge_tokens.modal_description'))
                 ->action(fn () => $this->executeCommand('passport:purge')),
 
-'passport_hash' => Action::make('passport_hash')
+            'passport_hash' => Action::make('passport_hash')
                 ->icon('heroicon-o-lock-closed')
                 ->color('danger')
                 ->disabled(fn () => $this->isRunning)

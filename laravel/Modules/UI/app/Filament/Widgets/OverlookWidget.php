@@ -8,9 +8,9 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Widgets;
 
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
-final class OverlookWidget extends XotBaseWidget
+final class OverlookWidget extends XotBaseSchemaWidget
 {
     public string $icon = 'heroicon-o-envelope';
 

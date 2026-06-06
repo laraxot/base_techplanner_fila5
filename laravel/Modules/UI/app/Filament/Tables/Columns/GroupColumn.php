@@ -34,7 +34,7 @@ class GroupColumn extends Column
     }
 
     /**
-     * @param array<int|string, mixed> $form
+     * @param  array<int|string, mixed>  $form
      */
     public function schema(array $form): self
     {
@@ -43,7 +43,6 @@ class GroupColumn extends Column
             return $item instanceof Column;
         });
 
-        /** @var array<int|string, Column> $filtered */
         /** @var array<int, Column> $filteredValues */
         $filteredValues = array_values($filtered);
         $this->schema = $filteredValues;

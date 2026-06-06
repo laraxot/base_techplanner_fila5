@@ -7,6 +7,13 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
+use Modules\Xot\Contracts\ProfileContract;
+
+/**
+ * Team Permission Model.
+ *
+ * Represents a permission assigned to a user within a team context.
+ *
  * @property string $id
  * @property string $team_id
  * @property string $user_id
@@ -22,7 +29,7 @@ use Illuminate\Support\Carbon;
  *
  * @mixin IdeHelperTeamPermission
  *
-* @property ProfileContract|null $creator
+ * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  * @property string|null $name
@@ -49,8 +56,6 @@ class TeamPermission extends BaseModel
 {
     /**
      * The database connection that should be used by the model.
-*
-     * @var string
      */
     protected $connection = 'user';
 

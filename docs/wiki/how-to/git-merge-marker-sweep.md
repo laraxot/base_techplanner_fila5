@@ -1,13 +1,18 @@
 ---
 title: "Git merge marker sweep"
 type: how-to
-tags: [git, merge, conflict, second-brain, phpstan]
+tags: [git, merge, conflict, second-brain, phpstan, bashscripts]
 created: 2026-06-06
 updated: 2026-06-06
-qmd: "git merge conflict marker sweep collision resolution ours theirs second brain"
+qmd: "git merge conflict marker sweep collision resolution ours theirs second brain php restore fix-conflicts bashscripts tools git"
+issues:
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/24"
+discussions:
+  - "https://github.com/laraxot/base_techplanner_fila5/discussions/19"
 related:
   - ../rules/00-TRIGGER_MAP.md
   - ../../stories/story-git-collision-resolution.md
+  - ../../stories/STORY-147-git-collision-cleanup.md
   - ../concepts/second-brain-techplanner-efficiency.md
 ---
 
@@ -48,15 +53,33 @@ cd laravel && php artisan test --filter=MigrationSyntax
 
 ## Script Python (multi-pass)
 
-Per sweep massivo con regole ours/theirs per path:
+Script canonico (master): `bashscripts/tools/git/resolve-conflict-markers.py`  
+PHP dedicato: `bashscripts/tools/git/fix-conflicts.php` (non in root repo)  
+Recovery PHP: `bashscripts/tools/git/repair-php-after-conflict-resolution.sh`
 
-- Preferenza `ours` default
-- `THEIRS_EXACT`: stub harness + lockfile
-- `THEIRS_PREFIX`: `docs/wiki/`
-- Multi-pass (fino a 30 iterazioni) per conflitti annidati
-- Skip: `bashscripts/` (script contengono marker come esempio), inventory docs
+Documentazione operativa: `bashscripts/docs/fix-conflicts-guide.md`  
+Decisione architettura: `bashscripts/docs/architecture-git-conflict-tools.md`
 
-Vedi sessione [STORY-GIT-001](../../stories/story-git-collision-resolution.md).
+Regole implementate:
+
+- PHP/Blade → delegati a `fix-conflicts.php` (incoming/dev, non HEAD cieco)
+- Altri testi → incoming side in `resolve-conflict-markers.py`
+- Post-pass → `repair-php-after-conflict-resolution.sh` (`php -l` + checkout da `origin/master`)
+- Concept: [git-collision-prevention-and-repair](../concepts/git-collision-prevention-and-repair.md)
+
+### Recovery post-sweep (critico)
+
+Se PHPStan/`php -l` segnala `unexpected token "protected"` in Factory o ServiceProvider:
+
+```bash
+bashscripts/tools/git/repair-php-after-conflict-resolution.sh
+# oppure ripristino puntuale da commit pre-conflitto
+git checkout 6b9f55ad -- laravel/Modules/User/database/factories/
+php artisan package:discover
+```
+
+Non applicare risoluzione HEAD-only su PHP senza repair pass immediato.
+
 
 ## Post-risoluzione
 
@@ -76,3 +99,10 @@ Vedi sessione [STORY-GIT-001](../../stories/story-git-collision-resolution.md).
 - [00-TRIGGER_MAP](../rules/00-TRIGGER_MAP.md)
 - [agent-bootstrap-compact](../concepts/agent-bootstrap-compact.md)
 - [llm-wiki-operational-discipline](../concepts/llm-wiki-operational-discipline.md)
+
+## GitHub (tracciamento)
+
+| Tipo | URL |
+|------|-----|
+| Issue | https://github.com/laraxot/base_techplanner_fila5/issues/24 |
+| Discussion | https://github.com/laraxot/base_techplanner_fila5/discussions/19 |

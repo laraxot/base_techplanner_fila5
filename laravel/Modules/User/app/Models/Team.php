@@ -13,7 +13,7 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Class Modules\User\Models\Team.
  *
-* @property string $id
+ * @property string $id
  * @property string $user_id (DC2Type:guid)
  * @property string $name
  * @property int $personal_team
@@ -59,7 +59,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $owner_id
  *
  * @method static Builder<static>|Team whereOwnerId($value)
-* @method static static create(array $attributes = [])
+ * @method static static create(array $attributes = [])
  * @method static static firstOrCreate(array $attributes, array $values = [])
  * @method static static updateOrCreate(array $attributes, array $values = [])
  *
@@ -69,7 +69,7 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static \Modules\User\Database\Factories\TeamFactory factory($count = null, $state = [])
  *
-* @property string|null $slug
+ * @property string|null $slug
  * @property string|null $description
  * @property string|null $avatar_path
  * @property array<array-key, mixed>|null $settings
@@ -99,8 +99,21 @@ class Team extends BaseTeam
         'settings',
     ];
 
-public function permissions(): HasMany
+    public function permissions(): HasMany
     {
         return $this->hasMany(TeamPermission::class);
+    }
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'personal_team' => 'boolean',
+            'settings' => 'array',
+        ];
     }
 }

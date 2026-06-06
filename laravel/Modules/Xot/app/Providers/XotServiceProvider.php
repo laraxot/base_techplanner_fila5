@@ -48,7 +48,51 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->registerExceptionHandler(); // guardare come fa sentry
         $this->registerTimezone();
         $this->registerFilamentMacros();
-$this->registerPaFilamentColors();
+        $this->registerPaFilamentColors();
+        $this->registerXotLivewireComponents();
+        $this->registerProviders();
+    }
+
+    #[\Override]
+    public function register(): void
+    {
+        parent::register();
+        $this->registerConfig();
+
+        // $this->registerExceptionHandlersRepository();
+        // $this->extendExceptionHandler();
+        $this->registerCommands();
+    }
+
+    public function registerProviders(): void
+    {
+        // $this->app->register(Filament\ModulesServiceProvider::class);
+    }
+
+    public function registerTimezone(): void
+    {
+        Assert::string(
+            $timezone = config('app.timezone') ?? 'Europe/Berlin',
+            '['.__LINE__.']['.class_basename($this).']',
+        );
+        Assert::string(
+            $date_format = config('app.date_format') ?? 'd/m/Y',
+            '['.__LINE__.']['.class_basename($this).']',
+        );
+        Assert::string($locale = config('app.locale') ?? 'it', '['.__LINE__.']['.class_basename($this).']');
+
+        app()->setLocale($locale);
+        Carbon::setLocale($locale);
+        date_default_timezone_set($timezone);
+
+        DateTimePicker::configureUsing(fn (DateTimePicker $component) => $component->timezone($timezone));
+        DatePicker::configureUsing(
+            fn (DatePicker $component) => $component->timezone($timezone)->displayFormat($date_format),
+        );
+        TimePicker::configureUsing(fn (TimePicker $component) => $component->timezone($timezone));
+        TextColumn::configureUsing(fn (TextColumn $column) => $column->timezone($timezone));
+    }
+
     /**
      * Palette PA su widget FO (login, wizard) senza panel attivo — allineata ai panel admin.
      */
@@ -110,12 +154,12 @@ $this->registerPaFilamentColors();
     {
         $files = File::files($path);
         foreach ($files as $file) {
-if ($file->getExtension() !== 'php') {
+            if ($file->getExtension() !== 'php') {
                 continue;
             }
 
             $realPath = $file->getRealPath();
-if ($realPath === false) {
+            if ($realPath === false) {
                 continue;
             }
 

@@ -6,6 +6,11 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
+use Modules\Xot\Models\Traits\HasXotFactory;
+
+/**
+ * Modules\User\Models\PersonalAccessToken.
+ *
  * @property int $id
  * @property string $tokenable_type
  * @property int $tokenable_id

@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Modules\Employee\Enums\WorkHourStatusEnum;
 use Modules\Employee\Enums\WorkHourTypeEnum;
 use Modules\Employee\Models\WorkHour;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 use Override;
 
 /**
@@ -36,7 +36,7 @@ use Override;
  *
  * This is the ONLY time tracking widget - consolidates all time tracking features.
  */
-class TimeClockWidget extends XotBaseWidget
+class TimeClockWidget extends XotBaseSchemaWidget
 {
     /**
      * Vista del widget.

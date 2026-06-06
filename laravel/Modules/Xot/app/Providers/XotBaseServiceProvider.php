@@ -194,9 +194,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->commands($commands);
     }
 
-    /**
-     * @return array<int, string>
-     */
     public function provides(): array
     {
         return [];

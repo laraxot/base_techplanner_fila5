@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+use Filament\Notifications\Notification;
+use Filament\Schemas\Schema;
+use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Facades\Session;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
@@ -21,7 +25,7 @@ class PasswordResetWidget extends XotBaseSchemaWidget
     public bool $emailSent = false;
 
     /**
-* @return class-string<UserForm>
+     * @return class-string<UserForm>
      */
     protected static function formClass(): string
     {
@@ -42,7 +46,7 @@ class PasswordResetWidget extends XotBaseSchemaWidget
             'email' => $data['email'],
         ]);
 
-if ($response === Password::RESET_LINK_SENT) {
+        if ($response === Password::RESET_LINK_SENT) {
             $this->emailSent = true;
 
             Notification::make()
@@ -52,14 +56,30 @@ if ($response === Password::RESET_LINK_SENT) {
                 ->duration(10000)
                 ->send();
 
-}
+            $this->form->fill();
+        } else {
+            Session::flash('error', trans('user::errors.'.$response.'.label'));
+            Notification::make()
+                ->title(__('user::auth.password_reset.email_failed.title'))
+                ->body(trans($response))
+                ->danger()
+                ->send();
+        }
+    }
+
     public function resetForm(): void
     {
         $this->emailSent = false;
         $this->form->fill();
     }
 
-public function checkEmailStatus(): void
+    public function sendAnotherLink(): void
+    {
+        $this->emailSent = false;
+        $this->form->fill(['email' => '']);
+    }
+
+    public function checkEmailStatus(): void
     {
         $this->redirect(route('login'));
     }

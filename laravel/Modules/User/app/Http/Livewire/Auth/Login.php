@@ -36,7 +36,7 @@ class Login extends Component implements HasActions, HasForms
      *
      * @var array<string, mixed>
      */
-public $data = [];
+    public $data = [];
 
     /**
      * Inizializza il componente.
@@ -148,7 +148,7 @@ public $data = [];
         );
 
         $adminCount = $adminRoles->count();
-if ($adminCount === 1) {
+        if ($adminCount === 1) {
             $role = $adminRoles->first();
             Assert::isInstanceOf($role, Role::class);
             $moduleName = str_replace('::admin', '', $role->name);

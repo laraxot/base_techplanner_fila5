@@ -15,7 +15,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 /**
  * Class Modules\User\Models\User.
  *
-* @property string $id
+ * @property string $id
  * @property string|null $name
  * @property string|null $first_name
  * @property string|null $last_name
@@ -131,7 +131,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  *
  * @method static \Modules\User\Database\Factories\UserFactory factory($count = null, $state = [])
  *
-* @property string|null $uuid
+ * @property string|null $uuid
  * @property string $surname
  * @property string|null $two_factor_secret
  * @property string|null $two_factor_recovery_codes
@@ -151,8 +151,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  */
 class User extends BaseUser
 {
-/** @var string */
-    public $connection = 'user';
     /** @var array<string, class-string> */
     protected $childTypes = [
         'master_admin' => self::class,

@@ -13,7 +13,11 @@ class ShowUserListCommand extends Command
 {
     /**
      * The name and signature of the console command.
+     */
+    protected $signature = 'user:user-list';
 
+    /**
+     * The console command description.
      */
     protected $description = 'Visualizza lista users';
 
