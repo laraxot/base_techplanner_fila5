@@ -32,9 +32,7 @@ class OauthAuthCodeFactory extends Factory
 
     public function expired(): static
     {
-        return $this->state([
-            'expires_at' => $this->faker->dateTimeBetween('-1 hour', 'now'),
-        ]);
+        return $this->state(['expires_at' => $this->faker->dateTimeBetween('-1 hour', 'now')]);
     }
 
     public function revoked(): static

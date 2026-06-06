@@ -35,9 +35,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     protected string $module_base_ns;
 
-    /**
-     * Boot the application events.
-     */
     public function boot(): void
     {
         $this->registerTranslations();
@@ -49,9 +46,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->registerCommands();
     }
 
-    /**
-     * Register the service provider.
-     */
     public function register(): void
     {
         $this->nameLower = Str::lower($this->name);
@@ -63,7 +57,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerBladeIcons(): void
     {
-if ($this->name === '') {
+        if ($this->name === '') {
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -73,7 +67,7 @@ if ($this->name === '') {
             try {
                 $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'assets');
                 $svgPath = $assetsPath.'/../svg';
-if (! File::exists($svgPath)) {
+                if (! File::exists($svgPath)) {
                     return;
                 }
                 // Check if prefix already registered to avoid collision with default set.
@@ -96,7 +90,7 @@ if (! File::exists($svgPath)) {
         }
 
         $viewPath = module_path($this->name, 'resources/views');
-$this->loadViewsFrom($viewPath, $this->nameLower);
+        $this->loadViewsFrom($viewPath, $this->nameLower);
     }
 
     public function registerTranslations(): void
@@ -110,7 +104,18 @@ $this->loadViewsFrom($viewPath, $this->nameLower);
         $this->loadJsonTranslationsFrom($langPath);
     }
 
-try {
+    public function registerFactories(): void
+    {
+        if (! app()->environment('production')) {
+            // app(Factory::class)->load($this->module_dir.'/../Database/factories');
+        }
+    }
+
+    public function registerBladeComponents(): void
+    {
+        $componentViewPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-view');
+
+        try {
             Blade::anonymousComponentPath($componentViewPath);
         } catch (\Exception $e) {
             // Ignore invalid or unavailable anonymous component paths.
@@ -124,7 +129,24 @@ try {
         app(RegisterBladeComponentsAction::class)->execute($componentClassPath, $this->module_ns);
     }
 
-if ($comps->count() === 0) {
+    public function registerLivewireComponents(): void
+    {
+        $prefix = '';
+        app(RegisterLivewireComponentsAction::class)
+            ->execute($this->module_dir.'/../Http/Livewire', Str::before($this->module_ns, '\Providers'), $prefix);
+    }
+
+    public function registerCommands(): void
+    {
+        $prefix = '';
+
+        $comps = app(GetComponentsAction::class)
+            ->execute(
+                $this->module_dir.'/../Console/Commands',
+                'Modules\\'.$this->name.'\\Console\\Commands',
+                $prefix,
+            );
+        if ($comps->count() === 0) {
             return;
         }
         $commands = $comps->toArray();
@@ -140,8 +162,6 @@ if ($comps->count() === 0) {
     }
 
     /**
-     * Get the services provided by the provider.
-     *
      * @return array<int, string>
      */
     public function provides(): array
@@ -149,9 +169,6 @@ if ($comps->count() === 0) {
         return [];
     }
 
-    /**
-     * Restituisce il path della cartella lang del modulo, con fallback robusto.
-     */
     protected function getLangPath(): string
     {
         try {
@@ -161,21 +178,18 @@ if ($comps->count() === 0) {
         }
     }
 
-    /**
-     * Register config.
-     */
     protected function registerConfig(): void
     {
         try {
             $configPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'config');
-
             $files = File::glob($configPath.'/*.php');
 
             foreach ($files as $file) {
                 if (! is_string($file)) {
                     continue;
                 }
-$filename = pathinfo($file, PATHINFO_FILENAME);
+
+                $filename = pathinfo($file, PATHINFO_FILENAME);
                 Config::set($this->nameLower.'.'.$filename, require $file);
             }
         } catch (\Throwable $e) {

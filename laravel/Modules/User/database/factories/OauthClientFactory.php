@@ -33,20 +33,30 @@ class OauthClientFactory extends Factory
     {
         return [
             'id' => $this->faker->uuid(),
-            'user_id' => User::factory(),
-            'name' => $this->faker->company(),
+            'user_id' => $this->faker->optional()->randomElement([User::factory(), null]),
+            'name' => $this->faker->company().' App',
             'secret' => $this->faker->sha256(),
-            'provider' => $this->faker->optional()->randomElement(['users', null]),
+            'provider' => $this->faker->optional()->randomElement(['users', 'admins']),
             'redirect' => $this->faker->url(),
-            'personal_access_client' => $this->faker->boolean(20),
-            'password_client' => $this->faker->boolean(30),
-            'revoked' => $this->faker->boolean(5),
-            'grant_types' => $this->faker->randomElements(
-                ['authorization_code', 'client_credentials', 'password', 'refresh_token'],
+            'personal_access_client' => $this->faker->boolean(20), // 20% personal access clients
+            'password_client' => $this->faker->boolean(30), // 30% password clients
+            'revoked' => $this->faker->boolean(5), // 5% revoked
+            'grant_types' => $this->faker->optional()->randomElements(
+                [
+                    'authorization_code',
+                    'client_credentials',
+                    'password',
+                    'refresh_token',
+                ],
                 $this->faker->numberBetween(1, 3),
             ),
-            'scopes' => $this->faker->randomElements(
-                ['read', 'write', 'admin', 'user'],
+            'scopes' => $this->faker->optional()->randomElements(
+                [
+                    'read',
+                    'write',
+                    'admin',
+                    'user',
+                ],
                 $this->faker->numberBetween(1, 3),
             ),
         ];
@@ -57,7 +67,7 @@ class OauthClientFactory extends Factory
      */
     public function personalAccess(): static
     {
-        return $this->state(fn (): array => [
+        return $this->state(fn (array $_attributes): array => [
             'personal_access_client' => true,
             'password_client' => false,
             'name' => 'Personal Access Client',
@@ -69,7 +79,7 @@ class OauthClientFactory extends Factory
      */
     public function password(): static
     {
-        return $this->state(fn (): array => [
+        return $this->state(fn (array $_attributes): array => [
             'password_client' => true,
             'personal_access_client' => false,
             'name' => 'Password Grant Client',
@@ -81,7 +91,7 @@ class OauthClientFactory extends Factory
      */
     public function revoked(): static
     {
-        return $this->state(fn (): array => [
+        return $this->state(fn (array $_attributes): array => [
             'revoked' => true,
         ]);
     }
@@ -91,7 +101,7 @@ class OauthClientFactory extends Factory
      */
     public function active(): static
     {
-        return $this->state(fn (): array => [
+        return $this->state(fn (array $_attributes): array => [
             'revoked' => false,
         ]);
     }
@@ -101,7 +111,7 @@ class OauthClientFactory extends Factory
      */
     public function forUser(User $user): static
     {
-        return $this->state(fn (): array => [
+        return $this->state(fn (array $_attributes): array => [
             'user_id' => $user->id,
         ]);
     }
@@ -111,7 +121,7 @@ class OauthClientFactory extends Factory
      */
     public function withRedirectUri(string $redirectUri): static
     {
-        return $this->state(fn (): array => [
+        return $this->state(fn (array $_attributes): array => [
             'redirect' => $redirectUri,
         ]);
     }
@@ -123,7 +133,7 @@ class OauthClientFactory extends Factory
      */
     public function withScopes(array $scopes): static
     {
-        return $this->state(fn (): array => [
+        return $this->state(fn (array $_attributes): array => [
             'scopes' => $scopes,
         ]);
     }
