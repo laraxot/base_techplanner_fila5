@@ -179,3 +179,5 @@ Tests/
 
 # Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
 docs/archive/
+# Database locale vector search (non versionare)
+ruvector.db

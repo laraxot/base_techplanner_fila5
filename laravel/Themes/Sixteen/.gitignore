@@ -75,3 +75,6 @@ laravel
 .supermemory
 components
 layouts
+
+# Database locale vector search (non versionare)
+ruvector.db

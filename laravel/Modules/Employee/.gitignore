@@ -149,3 +149,6 @@ test_employee_data.sql
 *.fila2
 laravel
 public_html
+
+# Database locale vector search (non versionare)
+ruvector.db

@@ -42,3 +42,6 @@ vendor/
 node_modules
 *.*Zone.Identifier
 _docs/
+
+# Database locale vector search (non versionare)
+ruvector.db

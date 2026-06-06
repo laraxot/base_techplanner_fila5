@@ -149,3 +149,6 @@ planning_test.sql
 *.fila2
 laravel
 public_html
+
+# Database locale vector search (non versionare)
+ruvector.db

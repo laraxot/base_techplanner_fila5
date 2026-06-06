@@ -194,3 +194,6 @@ config/config
 *.rej
 *~head
 
+
+# Database locale vector search (non versionare)
+ruvector.db
