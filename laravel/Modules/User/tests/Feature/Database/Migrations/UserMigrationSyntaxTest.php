@@ -6,11 +6,7 @@ dataset('userMigrationFiles', static function (): array {
     $basePath = dirname(__DIR__, 4).'/database/migrations';
     $files = glob($basePath.'/*.php');
 
-<<<<<<< HEAD
-if ($files === false) {
-=======
     if ($files === false) {
->>>>>>> 8215f950 (.)
         return [];
     }
 
@@ -23,12 +19,9 @@ it('does not contain merge conflict markers in user migrations', static function
     $contents = file_get_contents($migrationFile);
 
     expect($contents)->not->toBeFalse();
-<<<<<<< HEAD
-=======
     expect($contents)->not->toContain('<<<<<<< HEAD');
     expect($contents)->not->toContain('=======');
     expect($contents)->not->toContain('>>>>>>> ');
->>>>>>> 8215f950 (.)
 })->with('userMigrationFiles');
 
 it('has valid php syntax in user migrations', static function (string $migrationFile): void {
