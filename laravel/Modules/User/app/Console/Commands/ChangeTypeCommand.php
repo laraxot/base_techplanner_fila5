@@ -25,12 +25,17 @@ class ChangeTypeCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
      */
     protected $name = 'user:change-type';
 
     /**
      * The console command description.
+=======
+>>>>>>> 06ccbd93 (.)
      */
+    protected $name = 'user:change-type';
+
     protected $description = 'Change user type based on project configuration';
 
     /**

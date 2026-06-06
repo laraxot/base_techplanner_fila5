@@ -13,6 +13,7 @@ use Filament\Resources\RelationManagers\RelationManager;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Webmozart\Assert\Assert;
+use Illuminate\Database\Eloquent\Builder;
 
 class ExportXlsTableAction extends Action
 {

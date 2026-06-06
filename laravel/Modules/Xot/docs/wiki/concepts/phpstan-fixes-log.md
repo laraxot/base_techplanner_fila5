@@ -34,6 +34,7 @@ Nota: **`composer run go`** non eseguito in questa sessione: contiene `rm -rf da
 - [php84-upgrade-extension-checklist.md](php84-upgrade-extension-checklist.md)
 - [laravel13-modular-package-compatibility-matrix.md](laravel13-modular-package-compatibility-matrix.md)
 
+<<<<<<< HEAD
 ## Re-verifica post-merge Git (2026-06-06)
 
 Dopo risoluzione marker conflitto su branch `dev`:
@@ -68,3 +69,43 @@ cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 
 - Memoria root: [docs/wiki/memories/phpstan-modules-zero-2026-06-06.md](../../../../../../docs/wiki/memories/phpstan-modules-zero-2026-06-06.md)
 - Repair script: [bashscripts/tools/git/repair-php-after-conflict-resolution.sh](../../../../../../bashscripts/tools/git/repair-php-after-conflict-resolution.sh)
+=======
+## Fix #2: alias `Builder` duplicato (post-merge Git)
+
+### Problem
+
+```
+Cannot use Illuminate\Database\Eloquent\Builder as Builder because the name is already in use
+🪪 phpstan.parse (non-ignorable)
+```
+
+PHPStan analizza **4800 file** ma si ferma al primo parse error; l'errore può apparire su file consumer (migration, seeder) mentre la causa è in un parent/contract.
+
+### Root cause
+
+Collisioni merge hanno lasciato **due `use …\Builder`** con lo stesso alias nel medesimo namespace:
+
+| Coppia conflittuale | Contesto |
+|---------------------|----------|
+| `Schema\Builder` + `Eloquent\Builder` | `XotBaseMigration::getConn()` |
+| `Query\Builder` + `Eloquent\Builder` | `HasRecursiveRelationshipsContract`, `Result` |
+| `Filament\Forms\Builder` + `Eloquent\Builder` | campi `ArticleContent`, `PageContent` |
+| `Query\Builder` + `Eloquent\Builder` (import) | `SetDefaultRolesBySocialiteUserAction` |
+
+### Solution
+
+1. Un solo `use …\Builder` per short name; il secondo tipo → alias (`as QueryBuilder`) o FQCN in PHPDoc.
+2. `XotBaseMigration`: solo `Illuminate\Database\Schema\Builder` (come `origin/master`).
+3. Campi Filament Builder: **mai** importare `Eloquent\Builder`.
+4. Dopo fix: `phpstan clear-result-cache` + `phpstan analyse Modules`.
+
+### Verifica sessione 2026-06-06
+
+- Prima: analisi incompleta (fatal/parse)
+- Dopo Fix #2: **413 errori tipizzati**, 0 parse blocker
+
+### Riferimenti
+
+- [git-merge-marker-sweep](../../../../docs/wiki/how-to/git-merge-marker-sweep.md)
+- [phpstan-modules-zero-2026-06-06](../../../../docs/wiki/memories/phpstan-modules-zero-2026-06-06.md)
+>>>>>>> 06ccbd93 (.)

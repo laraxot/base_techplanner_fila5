@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+use Exception;
 use Filament\Pages\Enums\SubNavigationPosition;
 use Filament\Resources\Pages\Page;
 use Filament\Resources\Pages\PageRegistration;
@@ -16,13 +17,20 @@ use Filament\Schemas\Schema;
 use Filament\Support\Components\Component;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\View;
+=======
+>>>>>>> 06ccbd93 (.)
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Actions\ModelClass\CountAction;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+<<<<<<< HEAD
+=======
+use ReflectionClass;
+>>>>>>> 06ccbd93 (.)
 use Webmozart\Assert\Assert;
 
 use function Safe\glob;
@@ -36,7 +44,7 @@ abstract class XotBaseResource extends FilamentResource
 
     protected static ?string $model = null;
 
-    protected static ?SubNavigationPosition $subNavigationPosition = SubNavigationPosition::Top;
+    protected static ?\Filament\Pages\Enums\SubNavigationPosition $subNavigationPosition = SubNavigationPosition::Top;
 
     /**
      * @param  array<string, bool|float|int|string|null>  $params
@@ -48,7 +56,7 @@ abstract class XotBaseResource extends FilamentResource
 
         if (is_string($res)) {
             if ($exceptionIfNotExist && $res === $tmp) {
-                throw new \Exception('['.__LINE__.']['.class_basename(self::class).']');
+                throw new Exception('['.__LINE__.']['.class_basename(self::class).']');
             }
 
             return $res;
@@ -110,6 +118,7 @@ abstract class XotBaseResource extends FilamentResource
 
     final public static function form(Schema $schema): Schema
     {
+<<<<<<< HEAD
         // return AuthorForm::configure($schema);
         $form_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
         if (class_exists($form_class)) {
@@ -119,6 +128,8 @@ abstract class XotBaseResource extends FilamentResource
             return $configured;
         }
 
+=======
+>>>>>>> 06ccbd93 (.)
         /** @var array<Htmlable|string> $components */
         $components = static::getFormSchema();
 
@@ -147,14 +158,6 @@ abstract class XotBaseResource extends FilamentResource
      */
     final public static function infolist(Schema $schema): Schema
     {
-        $class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Infolist';
-        if (class_exists($class)) {
-            $configured = $class::configure($schema);
-            Assert::isInstanceOf($configured, Schema::class);
-
-            return $configured;
-        }
-
         return $schema->components(static::getInfolistSchema());
     }
 
@@ -182,7 +185,7 @@ abstract class XotBaseResource extends FilamentResource
             $count = app(CountAction::class)->execute(static::getModel());
 
             return number_format($count, 0).'';
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             return '--';
         }
     }
@@ -229,7 +232,7 @@ abstract class XotBaseResource extends FilamentResource
      */
     public static function getRelations(): array
     {
-        $reflector = new \ReflectionClass(static::class);
+        $reflector = new ReflectionClass(static::class);
         $filename = $reflector->getFileName();
         Assert::string($filename, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
 
@@ -270,10 +273,16 @@ abstract class XotBaseResource extends FilamentResource
     public static function getWizardSubmitAction(): Htmlable
     {
         $submit_view = 'pub_theme::filament.wizard.submit-button';
+<<<<<<< HEAD
         if (! View::exists($submit_view)) {
             throw new \Exception("View {$submit_view} does not exist");
+=======
+        // @phpstan-ignore-next-line
+        if (! view()->exists($submit_view)) {
+            throw new Exception("View {$submit_view} does not exist");
+>>>>>>> 06ccbd93 (.)
         }
-        $render = View::make($submit_view)->render();
+        $render = view($submit_view)->render();
 
         return new HtmlString($render);
     }

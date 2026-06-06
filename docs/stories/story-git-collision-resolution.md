@@ -32,7 +32,13 @@ così che **PHPStan, Pest e gli agenti AI possano analizzare il codice senza par
 - [x] `docs/wiki/` da origin/dev integrato
 - [x] Test regressione: `UserMigrationSyntaxTest` verifica assenza marker nelle migrazioni User
 - [x] Documentazione second brain: `docs/wiki/how-to/git-merge-marker-sweep.md`
+<<<<<<< HEAD
 - [x] Quality gate post-edit: `./tools/post-edit-php.sh` + `UserMigrationSyntaxTest`
+=======
+- [x] Corruzione strutturale senza marker: restore da `origin/master` + fix import/trait/comandi
+- [x] Bootstrap Laravel: `php artisan about` senza fatal error
+- [x] Quality gate documentato: `laravel/tools/post-edit-php.sh` (PHPStan, PHPMD, PHPInsights, Pest)
+>>>>>>> 06ccbd93 (.)
 
 ## Strategia di risoluzione
 
@@ -48,6 +54,10 @@ così che **PHPStan, Pest e gli agenti AI possano analizzare il codice senza par
 ## File critici toccati manualmente
 
 - `laravel/phpstan_bootstrap.php` — merge import + TechPlanner main_module
+- `laravel/Modules/Xot/app/Providers/XotBaseServiceProvider.php` — merge conflitti + SvgNotFound
+- `laravel/Modules/Xot/app/Database/Migrations/XotBaseMigration.php` — restore master + migliorie dev
+- `laravel/Modules/Xot/app/Datas/XotData.php` — restore master + `findUserByEmail()`
+- `laravel/Modules/User/app/Models/Traits/HasTeams.php` — `teams()` de-commentato (restore master)
 - `laravel/Modules/User/tests/Feature/Database/Migrations/UserMigrationSyntaxTest.php`
 - `AGENTS.md`, `CLAUDE.md`, `laravel/AGENTS.md`
 

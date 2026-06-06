@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource\RelationManagers;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
+=======
+>>>>>>> 06ccbd93 (.)
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
@@ -18,7 +21,11 @@ class UsersRelationManager extends XotBaseRelationManager
     protected static ?string $recordTitleAttribute = 'name';
 
     /**
+<<<<<<< HEAD
      * @return array<string, Column>
+=======
+     * @return array<string, \Filament\Tables\Columns\Column>
+>>>>>>> 06ccbd93 (.)
      */
     #[\Override]
     public function getTableColumns(): array

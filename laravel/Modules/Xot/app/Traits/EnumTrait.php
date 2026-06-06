@@ -8,6 +8,7 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Filament\Traits\TransTrait;
+use Filament\Forms\Form;
 
 trait EnumTrait
 {

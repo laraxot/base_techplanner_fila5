@@ -6,7 +6,6 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
-use Modules\Xot\Datas\XotData;
 
 use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
@@ -23,6 +22,11 @@ class SetCurrentTeamCommand extends Command
 
     /**
      * The console command description.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 06ccbd93 (.)
      */
     protected $description = 'Assign current team to user';
 

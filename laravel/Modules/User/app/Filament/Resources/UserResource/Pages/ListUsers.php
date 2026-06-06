@@ -14,6 +14,7 @@ use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Contracts\UserContract;
+use Illuminate\Database\Eloquent\Builder;
 
 class ListUsers extends BaseListUsers
 {

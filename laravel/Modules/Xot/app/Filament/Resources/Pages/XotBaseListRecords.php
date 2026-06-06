@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\Pages;
 
 use Filament\Actions\Action;
-use Filament\Actions\ActionGroup;
-use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords as FilamentListRecords;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Builder;
@@ -60,10 +58,11 @@ abstract class XotBaseListRecords extends FilamentListRecords
     {
         return ['id' => 'desc'];
     }
-
+    
     /**
      * Get the header actions.
      *
+<<<<<<< HEAD
      * @return array<string, Action|ActionGroup>
      */
     protected function getHeaderActions(): array
@@ -77,11 +76,27 @@ abstract class XotBaseListRecords extends FilamentListRecords
      * Paginate the table query.
      */
     protected function paginateTableQueryOLD(Builder $query): Paginator
+=======
+     * @return array<string, Action|\Filament\Actions\ActionGroup>
+     *
+     * @phpstan-ignore method.childReturnType
+     */
+    protected function getHeaderActions(): array
+>>>>>>> 06ccbd93 (.)
     {
-        $perPage = $this->getTableRecordsPerPage();
-        $perPageValue = $perPage === 'all' ? $query->count() : (is_numeric($perPage) ? (int) $perPage : null);
+        return [
+            'create' => \Filament\Actions\CreateAction::make()->icon('heroicon-o-plus'),
+        ];
+    }
 
-        $paginator = $query->paginate($perPageValue);
+    /**
+     * Paginate the table query.
+     */
+    protected function paginateTableQuery(Builder $query): Paginator
+    {
+        $paginator = $query->fastPaginate(
+            $this->getTableRecordsPerPage() === 'all' ? $query->count() : $this->getTableRecordsPerPage(),
+        );
 
         Assert::isInstanceOf($paginator, Paginator::class);
 

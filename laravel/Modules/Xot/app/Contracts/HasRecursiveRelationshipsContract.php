@@ -7,7 +7,6 @@ namespace Modules\Xot\Contracts;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Query\Builder;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Builder as AdjacencyBuilder;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Collection;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Ancestors;
@@ -229,7 +228,7 @@ interface HasRecursiveRelationshipsContract
     /**
      * Create a new Eloquent query builder for the model.
      *
-     * @param Builder $query
+     * @param \Illuminate\Database\Query\Builder $query
      *
      * @return AdjacencyBuilder
      */

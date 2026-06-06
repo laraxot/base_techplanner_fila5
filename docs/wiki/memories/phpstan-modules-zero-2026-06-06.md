@@ -15,25 +15,66 @@ related:
   - ../skills/cursor-second-brain-max-workflow.md
 ---
 
-# PHPStan Modules — 103 → 0 (swarm)
+# PHPStan Modules — quality gate post-merge
 
 ## Comando canon
 
 ```bash
-cd laravel && ./vendor/bin/phpstan analyse --memory-limit=-1
+cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 ```
 
 **Mai** modificare `phpstan.neon` né baseline per mascherare errori.
 
-## Blocker prima dell'analisi (fatal PHP)
+## Stato 2026-06-06 (post STORY-GIT-001)
+
+| Metrica | Valore |
+|---------|--------|
+| File analizzati | 4800 |
+| Errori tipizzati | **413** |
+| Blocker parse/fatal | **0** (risolti in questa sessione) |
+
+Priorità swarm residua: **User** (13) → **Cms** (10) → **Notify** (8) → **Xot** (7).
+
+## Blocker prima dell'analisi (fatal / parse)
+
+PHPStan **non completa** se `phpstan.parse` blocca l'autoload.
 
 | Problema | Fix |
 |----------|-----|
-| `Blog\Article` + `Spatie\Comments\HasComments` (pacchetto assente) | Rimuovere trait/import Comment |
+| **Alias `Builder` duplicato** (stesso short name) | Tenere un solo `use …\Builder`; alias o FQCN per il secondo |
+| `Schema\Builder` + `Eloquent\Builder` in stesso file | `Schema\Builder` per `getConn()`; rimuovere Eloquent se inutile |
+| `Query\Builder` + `Eloquent\Builder` in contract/model | Rimuovere uno; PHPDoc con FQCN (`\Illuminate\Database\Query\Builder`) |
+| `Filament\Forms\Components\Builder` + `Eloquent\Builder` | Rimuovere Eloquent — il return type è il Filament Builder |
+| `Staudenmeir\…\Builder` + `Eloquent\Builder` in `Menu` | Solo `Eloquent\Builder` in import; PHPDoc `@method static Builder` |
+| `XotBaseMigration` con `Filament\Table` + doppio Builder | Restore master; solo `Schema\Builder` |
+| `HasRecursiveRelationshipsContract` | No `Query\Builder` + `Eloquent\Builder` insieme — vedi master |
+| `QueueableAction` senza import Spatie | `use Spatie\QueueableAction\QueueableAction;` |
+| `Blog\Article` + `HasComments` (pacchetto assente) | Rimuovere trait Comment |
+| `Employee` widget `#[Override]` invalido | Allineare parent `XotBaseSchemaWidget` |
+
+### Scan alias duplicati
+
+```bash
+cd laravel && python3 - <<'PY'
+import re
+from pathlib import Path
+for f in Path('Modules').rglob('*.php'):
+    if '/tests/' in str(f): continue
+    aliases = {}
+    for imp in re.findall(r'^use ([^;]+);', f.read_text(), re.M):
+        name = imp.split(' as ')[-1].strip().split('\\')[-1]
+        aliases.setdefault(name, []).append(imp)
+    for name, imps in aliases.items():
+        if len(imps) > 1: print(f'{f}: {name} -> {imps}')
+PY
+```
+
+## Blocker storici (swarm precedente)
+
+| Problema | Fix |
+|----------|-----|
 | `User\BaseUser` + `Modules\Comment\InteractsWithComments` | User non dipende da Comment |
 | `Employee` widget `#[Override]` su metodi assenti nel parent | Estendere `XotBaseSchemaWidget`; rimuovere Override invalidi |
-
-PHPStan **non parte** se un fatal blocca l'autoload — fixare prima dei tipi.
 
 ## Ordine swarm (dipendenze)
 
@@ -53,6 +94,7 @@ PHPStan **non parte** se un fatal blocca l'autoload — fixare prima dei tipi.
 ## Verifica
 
 ```bash
+<<<<<<< HEAD
 cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 # [OK] No errors — 4822 file, level max (phpstan.neon)
 ```
@@ -77,3 +119,23 @@ cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 ### Lezione
 
 Dopo sweep marker Git: **sempre** rieseguire PHPStan su `Modules` — i marker in `XotBaseServiceProvider` bloccano l'intero bootstrap Larastan; le migrazioni corrotte passano `php -l` ma falliscono a livello 10.
+=======
+cd laravel
+./vendor/bin/phpstan clear-result-cache
+./vendor/bin/phpstan analyse Modules --memory-limit=-1
+# Target: [OK] No errors
+```
+
+## File corretti in sessione merge (parse unblock)
+
+- `XotBaseMigration.php` — rimossi `Filament\Table`, `Eloquent\Builder` spurii
+- `HasRecursiveRelationshipsContract.php` — rimossi doppi `Builder`
+- `SetDefaultRolesBySocialiteUserAction.php` — solo `Eloquent\Builder`
+- `ArticleContent.php` + campi Filament Blog/Cms — rimosso `Eloquent\Builder`
+- `Result.php`, `ImportCsvAction.php` — un solo tipo `Builder`
+- `Cms\Models\Menu.php` — `Eloquent\Builder` al posto di Staudenmeir import
+- `GenerateFormByFileAction.php` — import `QueueableAction`
+- `UserSeeder.php`, `User/database/seeders/UserSeeder.php` — restore master
+
+Dettaglio: [phpstan-fixes-log](../../../laravel/Modules/Xot/docs/wiki/concepts/phpstan-fixes-log.md) Fix #2.
+>>>>>>> 06ccbd93 (.)

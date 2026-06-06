@@ -15,12 +15,17 @@ class CreateTeamCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
      */
     protected $signature = 'user:team-create';
 
     /**
      * The console command description.
+=======
+>>>>>>> 06ccbd93 (.)
      */
+    protected $name = 'user:create-team';
+
     protected $description = 'Create a team';
 
     /**

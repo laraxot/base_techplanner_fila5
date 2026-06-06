@@ -13,6 +13,7 @@ use Modules\Notify\Filament\Resources\NotificationTemplateResource\Pages\Preview
 use Modules\Notify\Models\NotificationTemplate;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
+use Illuminate\Database\Eloquent\Builder;
 
 class NotificationTemplateResource extends XotBaseResource
 {

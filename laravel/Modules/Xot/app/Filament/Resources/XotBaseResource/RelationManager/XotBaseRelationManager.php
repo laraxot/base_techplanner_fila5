@@ -10,6 +10,8 @@ use Filament\Tables;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\HasXotTable;
+use Filament\Schemas\Schema;
+use Filament\Tables\Table;
 
 /**
  * @property class-string<XotBaseResource> $resource

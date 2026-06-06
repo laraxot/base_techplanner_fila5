@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\KeyValue;
+<<<<<<< HEAD
 use Filament\Forms\Components\Placeholder;
+=======
+>>>>>>> 06ccbd93 (.)
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -32,13 +35,18 @@ class SocialProviderResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
+<<<<<<< HEAD
             'env_guide' => Placeholder::make('env_guide')
                 ->hiddenLabel()
                 ->content(__('fields.env_guide.content'))
                 ->columnSpanFull(),
+=======
+>>>>>>> 06ccbd93 (.)
             'name' => TextInput::make('name')
                 ->required()
-                ->maxLength(255),
+                ->maxLength(255)
+                ->placeholder(__('fields.name.placeholder'))
+                ->helperText(__('fields.name.helper_text')),
             'scopes' => KeyValue::make('scopes')
                 // ->placeholder(static::trans('fields.scopes.placeholder'))
                 ->helperText(__('fields.scopes.helper_text')),

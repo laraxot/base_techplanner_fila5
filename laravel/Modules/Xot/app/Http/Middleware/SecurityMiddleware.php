@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Http\Middleware;
 
+use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Response;
@@ -23,7 +24,11 @@ class SecurityMiddleware
     /**
      * Handle an incoming request.
      */
+<<<<<<< HEAD
     public function handle(Request $request, \Closure $next): Response
+=======
+    public function handle(Request $request, Closure $next): Response
+>>>>>>> 06ccbd93 (.)
     {
         // 1. Rate Limiting avanzato
         $this->applyAdvancedRateLimiting($request);
@@ -31,12 +36,16 @@ class SecurityMiddleware
         // 2. Headers di sicurezza
         $response = $next($request);
         Assert::isInstanceOf($response, Response::class);
+<<<<<<< HEAD
 
         // Skip security headers for Debugbar routes in local environment
         // to allow Debugbar to function properly
         if (! $this->isDebugbarRoute($request) || ! app()->environment('local')) {
             $this->addSecurityHeaders($response);
         }
+=======
+        $this->addSecurityHeaders($response);
+>>>>>>> 06ccbd93 (.)
 
         // 3. Logging sicurezza
         $this->logSecurityEvents($request, $response);
@@ -51,18 +60,30 @@ class SecurityMiddleware
     }
 
     /**
+<<<<<<< HEAD
      * Check if the request is for Debugbar routes.
+=======
+     * Applica rate limiting avanzato.
+>>>>>>> 06ccbd93 (.)
      */
-    private function isDebugbarRoute(Request $request): bool
+    private function applyAdvancedRateLimiting(Request $request): void
     {
-        $debugbarPrefix = (string) config('debugbar.route_prefix', '_debugbar');
+        $ip = $request->ip() ?? 'unknown';
+        $userAgent = $request->userAgent() ?? 'unknown';
+        $endpoint = $request->path();
 
-        return str_starts_with($request->path(), $debugbarPrefix)
-            || str_starts_with($request->path(), 'vendor/debugbar')
-            || str_contains($request->path(), '_debugbar');
+        // Rate limiting per IP
+        $this->checkIPRateLimit($ip, $endpoint);
+
+        // Rate limiting per User Agent
+        $this->checkUserAgentRateLimit($userAgent, $endpoint);
+
+        // Rate limiting per endpoint specifici
+        $this->checkEndpointRateLimit($endpoint, $ip);
     }
 
     /**
+<<<<<<< HEAD
      * Applica rate limiting avanzato.
      */
     private function applyAdvancedRateLimiting(Request $request): void
@@ -82,6 +103,8 @@ class SecurityMiddleware
     }
 
     /**
+=======
+>>>>>>> 06ccbd93 (.)
      * Controlla rate limit per IP.
      */
     private function checkIPRateLimit(string $ip, string $endpoint): void

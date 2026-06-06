@@ -11,8 +11,11 @@ namespace Modules\Xot\Actions\Filament;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
+<<<<<<< HEAD
 use Symfony\Component\Finder\SplFileInfo as File;
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> 06ccbd93 (.)
 
 use function Safe\file;
 

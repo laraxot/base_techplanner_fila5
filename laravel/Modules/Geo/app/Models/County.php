@@ -26,6 +26,18 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|County newModelQuery()
  * @method static Builder<static>|County newQuery()
  * @method static Builder<static>|County query()
+<<<<<<< HEAD
+=======
+ * @method static CountyFactory factory($count = null, $state = [])
+ *
+ * @property string                          $id
+ * @property string                          $county
+ * @property string|null                     $county_code
+ * @property int|null                        $state_id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ *
+>>>>>>> 06ccbd93 (.)
  * @method static Builder<static>|County whereCounty($value)
  * @method static Builder<static>|County whereCountyCode($value)
  * @method static Builder<static>|County whereCreatedAt($value)

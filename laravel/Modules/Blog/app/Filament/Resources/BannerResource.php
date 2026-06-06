@@ -17,6 +17,7 @@ use Modules\Blog\Models\Banner;
 use Modules\Blog\Models\Category;
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+use Filament\Tables\Table;
 
 class BannerResource extends XotBaseResource
 {

@@ -4,19 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+use Error;
 use Filament\Schemas\Components\Component;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Str;
 use Modules\Xot\Contracts\StateContract;
+use Override;
 use Webmozart\Assert\Assert;
 
 /**
  * Widget per la panoramica degli appuntamenti per stato.
  * Mostra statistiche compatte degli appuntamenti raggruppati per stato.
  */
-class StateOverviewWidget extends XotBaseSchemaWidget
+class StateOverviewWidget extends XotBaseWidget
 {
     /**
      * Titolo del widget.
@@ -49,6 +51,10 @@ class StateOverviewWidget extends XotBaseSchemaWidget
      *
      * @return array<int|string, Component>
      */
+<<<<<<< HEAD
+=======
+    #[Override]
+>>>>>>> 06ccbd93 (.)
     public function getFormSchema(): array
     {
         return [];
@@ -75,7 +81,11 @@ class StateOverviewWidget extends XotBaseSchemaWidget
             $this->cacheKey = $cacheKey;
 
             return $cacheKey;
+<<<<<<< HEAD
         } catch (\Error $e) {
+=======
+        } catch (Error $e) {
+>>>>>>> 06ccbd93 (.)
             if ($this->cacheKey === '') {
                 $this->cacheKey = Str::uuid()->toString();
             }
@@ -95,7 +105,7 @@ class StateOverviewWidget extends XotBaseSchemaWidget
 
         Assert::isArray($res);
 
-        /* @var array<int, array<string, mixed>> $res */
+        /** @var array<int, array<string, mixed>> $res */
         return $res;
     }
 

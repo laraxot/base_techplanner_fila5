@@ -6,9 +6,6 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
-use Webmozart\Assert\Assert;
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
@@ -22,6 +19,11 @@ class AssignTeamCommand extends Command
 
     /**
      * The console command description.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 06ccbd93 (.)
      */
     protected $description = 'Assign a team to user';
 

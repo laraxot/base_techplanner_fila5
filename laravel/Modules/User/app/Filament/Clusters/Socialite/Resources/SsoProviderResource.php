@@ -15,7 +15,10 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Resources\Pages\PageRegistration;
+<<<<<<< HEAD
 use Filament\Resources\RelationManagers\RelationManager;
+=======
+>>>>>>> 06ccbd93 (.)
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Modules\User\Filament\Clusters\Socialite;
@@ -120,7 +123,11 @@ class SsoProviderResource extends XotBaseResource
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, class-string<RelationManager>>
+=======
+     * @return array<string, class-string<\Filament\Resources\RelationManagers\RelationManager>>
+>>>>>>> 06ccbd93 (.)
      */
     #[\Override]
     public static function getRelations(): array

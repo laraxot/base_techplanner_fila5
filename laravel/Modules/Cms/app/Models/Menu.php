@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Cms\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Cms\Database\Factories\MenuFactory;
 use Modules\Tenant\Models\Traits\SushiToJsons;
 use Modules\Xot\Actions\Tree\GetTreeOptionsByModelClassAction;
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
 use Modules\Xot\Contracts\ProfileContract;
-use Staudenmeir\LaravelAdjacencyList\Eloquent\Builder;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Collection;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 

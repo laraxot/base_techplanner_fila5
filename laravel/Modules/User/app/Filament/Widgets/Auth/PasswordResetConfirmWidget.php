@@ -18,6 +18,7 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 use Webmozart\Assert\Assert;
+use Filament\Schemas\Schema;
 
 /**
  * PasswordResetConfirmWidget — conferma reset con token via URL.

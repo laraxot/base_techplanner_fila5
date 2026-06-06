@@ -5,11 +5,15 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
+=======
+>>>>>>> 06ccbd93 (.)
 use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * Modules\User\Models\PersonalAccessToken.
+<<<<<<< HEAD
  *
  * @property int $id
  * @property string $tokenable_type
@@ -21,21 +25,19 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property Carbon|null $expires_at
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+=======
+>>>>>>> 06ccbd93 (.)
  *
- * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory factory($count = null, $state = [])
- * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken query()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereAbilities($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereExpiresAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereLastUsedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereToken($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereTokenableId($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereTokenableType($value)
- *
- * @mixin \Eloquent
+ * @property int                             $id
+ * @property string                          $tokenable_type
+ * @property int                             $tokenable_id
+ * @property string                          $name
+ * @property string                          $token
+ * @property string|null                     $abilities
+ * @property \Illuminate\Support\Carbon|null $last_used_at
+ * @property \Illuminate\Support\Carbon|null $expires_at
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  */
 class PersonalAccessToken extends Model
 {

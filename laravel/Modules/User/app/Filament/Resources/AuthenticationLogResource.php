@@ -16,6 +16,7 @@ use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ViewAuthenti
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+use Filament\Tables\Table;
 
 class AuthenticationLogResource extends XotBaseResource
 {

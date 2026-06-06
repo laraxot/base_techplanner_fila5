@@ -70,6 +70,10 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             try {
                 $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'assets');
                 $svgPath = $assetsPath.'/../svg';
+<<<<<<< HEAD
+=======
+
+>>>>>>> 06ccbd93 (.)
                 if (! File::exists($svgPath)) {
                     return;
                 }
@@ -116,11 +120,22 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerBladeComponents(): void
     {
+<<<<<<< HEAD
+=======
+        if ($this->name === '') {
+            throw new \Exception('name is empty on ['.static::class.']');
+        }
+
+>>>>>>> 06ccbd93 (.)
         $componentViewPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-view');
 
         try {
             Blade::anonymousComponentPath($componentViewPath);
+<<<<<<< HEAD
         } catch (Exception $e) {
+=======
+        } catch (\Exception $e) {
+>>>>>>> 06ccbd93 (.)
             // Ignore invalid or unavailable anonymous component paths.
         }
 
@@ -134,6 +149,13 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerLivewireComponents(): void
     {
+<<<<<<< HEAD
+=======
+        if ($this->name === '') {
+            throw new \Exception('name is empty on ['.static::class.']');
+        }
+
+>>>>>>> 06ccbd93 (.)
         $prefix = '';
         app(RegisterLivewireComponentsAction::class)
             ->execute($this->module_dir.'/../Http/Livewire', Str::before($this->module_ns, '\Providers'), $prefix);
@@ -141,14 +163,26 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerCommands(): void
     {
+<<<<<<< HEAD
         $prefix = '';
 
+=======
+        if ($this->name === '') {
+            throw new \Exception('name is empty on ['.static::class.']');
+        }
+
+        $prefix = '';
+>>>>>>> 06ccbd93 (.)
         $comps = app(GetComponentsAction::class)
             ->execute(
                 $this->module_dir.'/../Console/Commands',
                 'Modules\\'.$this->name.'\\Console\\Commands',
                 $prefix,
             );
+<<<<<<< HEAD
+=======
+
+>>>>>>> 06ccbd93 (.)
         if ($comps->count() === 0) {
             return;
         }

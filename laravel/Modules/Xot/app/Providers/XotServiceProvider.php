@@ -25,6 +25,7 @@ use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Support\PaDesignColors;
 use Modules\Xot\View\Composers\XotComposer;
+use Override;
 use Webmozart\Assert\Assert;
 
 /**
@@ -38,7 +39,7 @@ class XotServiceProvider extends XotBaseServiceProvider
 
     protected string $module_ns = __NAMESPACE__;
 
-    #[\Override]
+    #[Override]
     public function boot(): void
     {
         parent::boot();
@@ -53,6 +54,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         $this->registerProviders();
     }
 
+<<<<<<< HEAD
     #[\Override]
     public function register(): void
     {
@@ -93,12 +95,54 @@ class XotServiceProvider extends XotBaseServiceProvider
         TextColumn::configureUsing(fn (TextColumn $column) => $column->timezone($timezone));
     }
 
+=======
+>>>>>>> 06ccbd93 (.)
     /**
      * Palette PA su widget FO (login, wizard) senza panel attivo — allineata ai panel admin.
      */
     public function registerPaFilamentColors(): void
     {
         FilamentColor::register(PaDesignColors::filamentPalette());
+    }
+
+    #[Override]
+    public function register(): void
+    {
+        parent::register();
+        $this->registerConfig();
+
+        // $this->registerExceptionHandlersRepository();
+        // $this->extendExceptionHandler();
+        $this->registerCommands();
+    }
+
+    public function registerProviders(): void
+    {
+        // $this->app->register(Filament\ModulesServiceProvider::class);
+    }
+
+    public function registerTimezone(): void
+    {
+        Assert::string(
+            $timezone = config('app.timezone') ?? 'Europe/Berlin',
+            '['.__LINE__.']['.class_basename($this).']',
+        );
+        Assert::string(
+            $date_format = config('app.date_format') ?? 'd/m/Y',
+            '['.__LINE__.']['.class_basename($this).']',
+        );
+        Assert::string($locale = config('app.locale') ?? 'it', '['.__LINE__.']['.class_basename($this).']');
+
+        app()->setLocale($locale);
+        Carbon::setLocale($locale);
+        date_default_timezone_set($timezone);
+
+        DateTimePicker::configureUsing(fn (DateTimePicker $component) => $component->timezone($timezone));
+        DatePicker::configureUsing(
+            fn (DatePicker $component) => $component->timezone($timezone)->displayFormat($date_format),
+        );
+        TimePicker::configureUsing(fn (TimePicker $component) => $component->timezone($timezone));
+        TextColumn::configureUsing(fn (TextColumn $column) => $column->timezone($timezone));
     }
 
     public function registerFilamentMacros(): void
@@ -143,7 +187,7 @@ class XotServiceProvider extends XotBaseServiceProvider
      * }
      */
 
-    #[\Override]
+    #[Override]
     public function registerConfig(): void
     {
         // $config_file = realpath(__DIR__.'/../config/metatag.php');
@@ -267,7 +311,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         //             'modules.xot.filament.widgets.modules-overview-widget',
         //             \Modules\Xot\Filament\Widgets\ModulesOverviewWidget::class
         //         );
-        //         \Log::debug('ModulesOverviewWidget registrato correttamente');
+        //         \Log::info('ModulesOverviewWidget registrato correttamente');
         //     } catch (\Exception $e) {
         //         \Log::error('Errore nella registrazione ModulesOverviewWidget: ' . $e->getMessage());
         //     }

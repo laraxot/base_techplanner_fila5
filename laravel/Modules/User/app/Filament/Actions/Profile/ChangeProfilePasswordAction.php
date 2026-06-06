@@ -11,7 +11,10 @@ namespace Modules\User\Filament\Actions\Profile;
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
+=======
+>>>>>>> 06ccbd93 (.)
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
@@ -32,12 +35,19 @@ final class ChangeProfilePasswordAction extends Action
             ->icon('heroicon-o-key')
             ->action(static function (ProfileContract $record, array $data): void {
                 $user = $record->user;
+<<<<<<< HEAD
                 $profileData = Arr::except($record->toArray(), ['id']);
                 if ($user === null) {
+=======
+                $profile_data = Arr::except($record->toArray(), ['id']);
+                if (null === $user) {
+                    $user_class = XotData::make()->getUserClass();
+>>>>>>> 06ccbd93 (.)
                     /** @var UserContract */
                     $user = XotData::make()->getUserByEmail($record->email);
                 }
 
+<<<<<<< HEAD
                 if ($user === null) {
                     /** @var array<string, mixed> $profileData */
                     $user = $record->user()->create($profileData);
@@ -47,6 +57,14 @@ final class ChangeProfilePasswordAction extends Action
                     $user->profile()->save($record);
                 }
 
+=======
+                if (null === $user) {
+                    /** @var array<string, mixed> $profile_data */
+                    $user = $record->user()->create($profile_data);
+                }
+                // @phpstan-ignore argument.type, method.notFound
+                $user->profile()->save($record);
+>>>>>>> 06ccbd93 (.)
                 $newPassword = is_string($data['new_password'] ?? null) ? $data['new_password'] : '';
                 /*
                  * @var ProfileContract $record
@@ -70,7 +88,11 @@ final class ChangeProfilePasswordAction extends Action
                         ->rule(
                             'required',
                             /**
+<<<<<<< HEAD
                              * @param  callable(string): mixed  $get
+=======
+                             * @param callable(string): mixed $get
+>>>>>>> 06ccbd93 (.)
                              */
                             static fn (callable $get): bool => (bool) $get('new_password')
                         )

@@ -7,6 +7,10 @@ namespace Modules\User\Models;
 // // use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\SoftDeletes;
+>>>>>>> 06ccbd93 (.)
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
@@ -23,6 +27,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
 
 /**
+<<<<<<< HEAD
  * @property int $id
  * @property string $uuid
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra
@@ -41,14 +46,34 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @property int|null $mobile_device_users_count
  * @property Collection<int, Device> $mobileDevices
  * @property int|null $mobile_devices_count
+=======
+ * @property int                                                       $id
+ * @property string                                                    $uuid
+ * @property \Spatie\SchemalessAttributes\SchemalessAttributes         $extra
+ * @property string                                                    $avatar
+ * @property Collection<int, DeviceUser>                               $deviceUsers
+ * @property int|null                                                  $device_users_count
+ * @property Collection<int, Device>                                   $devices
+ * @property int|null                                                  $devices_count
+ * @property string|null                                               $first_name
+ * @property string|null                                               $full_name
+ * @property string|null                                               $last_name
+ * @property string|null                                               $lang
+ * @property MediaCollection<int, Media>                               $media
+ * @property int|null                                                  $media_count
+ * @property Collection<int, DeviceUser>                               $mobileDeviceUsers
+ * @property int|null                                                  $mobile_device_users_count
+ * @property Collection<int, Device>                                   $mobileDevices
+ * @property int|null                                                  $mobile_devices_count
+>>>>>>> 06ccbd93 (.)
  * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
- * @property int|null $notifications_count
- * @property Collection<int, Permission> $permissions
- * @property int|null $permissions_count
- * @property Collection<int, Role> $roles
- * @property int|null $roles_count
- * @property UserContract|null $user
- * @property string|null $user_name
+ * @property int|null                                                  $notifications_count
+ * @property Collection<int, Permission>                               $permissions
+ * @property int|null                                                  $permissions_count
+ * @property Collection<int, Role>                                     $roles
+ * @property int|null                                                  $roles_count
+ * @property UserContract|null                                         $user
+ * @property string|null                                               $user_name
  *
  * @method static Builder|ProfileContract newModelQuery()
  * @method static Builder|ProfileContract newQuery()
@@ -56,7 +81,11 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @method static Builder|ProfileContract query()
  * @method static Builder|ProfileContract role($roles, $guard = null, $without = false)
  * @method static Builder|ProfileContract byUuid(string $uuid)
+<<<<<<< HEAD
  * @method static Builder|BaseProfile withExtraAttributes()
+=======
+ * @method static Builder|BaseProfile     withExtraAttributes()
+>>>>>>> 06ccbd93 (.)
  * @method static Builder|ProfileContract withoutPermission($permissions)
  * @method static Builder|ProfileContract withoutRole($roles, $guard = null)
  *
@@ -67,12 +96,35 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 {
     use HasChildren;
     use HasRoles;
-
     // use HasUuids;
     use InteractsWithMedia;
     use IsProfileTrait;
     use Notifiable;
     use SchemalessAttributesTrait;
+<<<<<<< HEAD
+=======
+    // use SoftDeletes;
+
+    /**
+     * The "booted" method of the model.
+     */
+    protected static function booted(): void
+    {
+        static::creating(static function (self $model): void {
+            if (empty($model->uuid)) {
+                $model->uuid = (string) Str::uuid();
+            }
+        });
+    }
+
+    /**
+     * Scope per lookup da API/Android/Postgres (usa uuid, non id).
+     */
+    public function scopeByUuid(Builder $query, string $uuid): Builder
+    {
+        return $query->where('uuid', $uuid);
+    }
+>>>>>>> 06ccbd93 (.)
 
     /**
      * Undocumented variable.
@@ -137,7 +189,11 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     public function getAvatarUrl(): string
     {
         $avatar = $this->getFirstMediaUrl('avatar');
+<<<<<<< HEAD
         if ($avatar !== '') {
+=======
+        if ('' !== $avatar) {
+>>>>>>> 06ccbd93 (.)
             return $avatar;
         }
 
@@ -169,30 +225,25 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         $locale = config('app.locale');
         $defaultLocale = 'it';
 
+<<<<<<< HEAD
         if ($locale === null || ! is_string($locale)) {
+=======
+        if (null === $locale || ! is_string($locale)) {
+>>>>>>> 06ccbd93 (.)
             $locale = $defaultLocale;
         }
 
         $userLang = $this->lang;
 
+<<<<<<< HEAD
         if ($userLang === null || ! is_string($userLang)) {
+=======
+        if (null === $userLang || ! is_string($userLang)) {
+>>>>>>> 06ccbd93 (.)
             return $locale;
         }
 
         return $userLang;
-    }
-    // use SoftDeletes;
-
-    /**
-     * The "booted" method of the model.
-     */
-    protected static function booted(): void
-    {
-        static::creating(static function (self $model): void {
-            if (empty($model->uuid)) {
-                $model->uuid = (string) Str::uuid();
-            }
-        });
     }
 
     /** @return array<string, string> */

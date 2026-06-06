@@ -27,6 +27,10 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 class Background extends XotBasePage
 {
     // $data è già definita in XotBasePage, non ridichiarare!
+<<<<<<< HEAD
+=======
+
+>>>>>>> 06ccbd93 (.)
     protected string $view = 'user::filament.clusters.appearance.pages.background';
 
     protected static ?string $cluster = Appearance::class;
@@ -96,7 +100,11 @@ class Background extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> 06ccbd93 (.)
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {

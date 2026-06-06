@@ -81,15 +81,56 @@ php artisan package:discover
 Non applicare risoluzione HEAD-only su PHP senza repair pass immediato.
 
 
+## Corruzione post-merge (senza marker)
+
+Alcuni file su `origin/dev` hanno **corruzione strutturale** senza `<<<<<<<`: metodi orfani, docblock troncati, `use` mancanti, trait commentati.
+
+**Recovery:**
+
+1. `php -l` su `Modules/*/app/**/*.php` — inventario syntax error
+2. Per ogni file rotto: `git show origin/master:laravel/<path>` se valido → restore
+3. Se master assente o invalido: fix manuale + cherry-pick metodi da dev
+4. Bootstrap: `cd laravel && php artisan about`
+5. Comandi Artisan: verificare `protected $name` o `$signature` su ogni `Console/Commands/*`
+
+Esempi risolti in STORY-GIT-001: `XotBaseMigration`, `XotData`, `HasTeams::teams()` commentato, import `Filament\Tables\Table` mancanti.
+
+## PHPStan dopo merge
+
+```bash
+cd laravel
+./vendor/bin/phpstan clear-result-cache
+./vendor/bin/phpstan analyse Modules --memory-limit=-1
+```
+
+Se compare `Cannot use …\Builder as Builder because the name is already in use` → alias duplicato nello stesso file (non sempre visibile come marker Git). Vedi [phpstan-fixes-log Fix #2](../../laravel/Modules/Xot/docs/wiki/concepts/phpstan-fixes-log.md) e [phpstan-modules-zero-2026-06-06](../memories/phpstan-modules-zero-2026-06-06.md).
+
+## Quality gate obbligatorio (PHP)
+
+Dopo ogni modifica/creazione file PHP:
+
+```bash
+cd laravel
+bash ./tools/post-edit-php.sh Modules/<Modulo>/path/to/File.php [Modules/<Modulo>/tests]
+```
+
+Esegue in sequenza: **PHPStan** → **PHPMD** (`phpmd.xml`) → **PHPInsights** → **Pest** (path modulo opzionale).
+
 ## Post-risoluzione
 
 1. Aggiornare `docs/wiki/log.md`
+<<<<<<< HEAD
 2. **Quality gate per ogni file PHP toccato** — `./tools/post-edit-php.sh <file>` (phpstan + phpmd + phpinsights)
 3. **Pest regressione** — `UserMigrationSyntaxTest` (marker + syntax migrazioni User)
 4. `git add` file risolti
 5. Completare merge: `git commit` (solo su richiesta utente)
 
 Memoria: [post-edit-php-quality-gate](../memories/post-edit-php-quality-gate.md)
+=======
+2. `git add` file risolti
+3. Completare merge: `git commit` (solo su richiesta utente)
+4. `post-edit-php.sh` su ogni file PHP toccato
+>>>>>>> 06ccbd93 (.)
 
 ## Anti-pattern
 

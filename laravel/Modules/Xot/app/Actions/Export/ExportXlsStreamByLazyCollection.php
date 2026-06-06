@@ -125,9 +125,14 @@ class ExportXlsStreamByLazyCollection
             });
         }
 
+<<<<<<< HEAD
         /** @var array<string> $headers */
         $headers = array_values($headings->map(strval(...))->toArray());
 
         return $headers;
+=======
+        /** @var array<string> */
+        return $headings->map(strval(...))->toArray();
+>>>>>>> 06ccbd93 (.)
     }
 }

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite;
 
-use Illuminate\Contracts\Database\Query\Builder;
+use Illuminate\Database\Eloquent\Builder;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Actions\Socialite\Utils\EmailDomainAnalyzer;
 use Modules\User\Models\Role;

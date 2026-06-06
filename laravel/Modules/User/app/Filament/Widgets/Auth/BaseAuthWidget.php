@@ -11,11 +11,14 @@ abstract class BaseAuthWidget extends XotBaseWidget
 {
     public ?array $data = [];
 
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
     abstract protected function getFormSchema(): array;
 
+=======
+>>>>>>> 06ccbd93 (.)
     public function mount(): void
     {
         if (Auth::check()) {
@@ -35,4 +38,12 @@ abstract class BaseAuthWidget extends XotBaseWidget
             'form' => $this->getFormSchema(),
         ];
     }
+
+    /**
+     * Restituisce lo schema del form per l'autenticazione.
+     * Deve essere implementato dalle classi concrete.
+     *
+     * @return array<mixed>
+     */
+    abstract public function getFormSchema(): array;
 }
