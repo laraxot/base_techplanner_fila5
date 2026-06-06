@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Errors - XotBaseRelationManager
 
 **File**: `app/Filament/Resources/RelationManagers/XotBaseRelationManager.php`
@@ -144,3 +145,12 @@ Illuminate\Database\Eloquent\Model|stdClass given.
 - Mantenere compatibilità con codice che usa questi metodi
 - Seguire convenzioni Filament
 - Garantire type safety
+=======
+---
+module: theme
+topic: phpstans-xotbaserelationmanager
+canonical: ../../../Themes/docs/shared-components/phpstan-errors-xotbaserelationmanager.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-xotbaserelationmanager.md
+>>>>>>> origin/dev

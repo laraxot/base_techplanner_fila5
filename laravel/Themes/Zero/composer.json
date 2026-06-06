@@ -16,5 +16,12 @@
     "type": "project",
     "license": "MIT",
     "minimum-stability": "dev",
+<<<<<<< HEAD
     "prefer-stable": true
+=======
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.3"
+    }
+>>>>>>> origin/dev
 }

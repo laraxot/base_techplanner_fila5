@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Level Max Errors Roadmap - User Module
 
 **Date**: 2026-01-12
@@ -218,3 +219,12 @@
 **Approccio**: Analisi approfondita - errori diversi richiedono comprensione business logic  
 **Priorità**: Media (13 errori, alcuni richiedono verifica modelli)  
 **Tempo stimato**: 45 minuti
+=======
+---
+module: theme
+topic: phpstan-errors-roadmap
+canonical: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md
+>>>>>>> origin/dev

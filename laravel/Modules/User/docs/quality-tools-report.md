@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Quality Tools Report - PHPStan, PHPMD, PHP Insights
 
 ## Data: 2025-01-02
@@ -168,3 +169,12 @@ cd laravel
 - [PHPStan Corrections Summary](./phpstan-corrections-summary-2025.md)
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
 
+=======
+---
+module: theme
+topic: quality-tools-report
+canonical: ../../../Themes/docs/shared-components/quality-tools-report.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-tools-report.md
+>>>>>>> origin/dev

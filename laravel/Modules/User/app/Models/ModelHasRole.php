@@ -11,11 +11,19 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Modules\User\Models\ModelHasRole.
  *
+<<<<<<< HEAD
  * @property string      $id
  * @property string      $role_id
  * @property string      $model_type
  * @property string      $model_id
  * @property int|null    $team_id
+=======
+ * @property string $id
+ * @property string $role_id
+ * @property string $model_type
+ * @property string $model_id
+ * @property int|null $team_id
+>>>>>>> origin/dev
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -51,7 +59,10 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class ModelHasRole extends BaseMorphPivot
 {
+<<<<<<< HEAD
     /** @var string */
+=======
+>>>>>>> origin/dev
     protected $table = 'model_has_role';
 
     /** @var list<string> */

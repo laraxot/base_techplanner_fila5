@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzione Logout Page nel Theme TwentyOne
 
 ## Errore Riscontrato
@@ -37,3 +38,12 @@ Convertire `logout.blade.php` in una **pagina Folio statica**:
     </script>
 </x-layouts.app>
 ```
+=======
+---
+module: theme
+topic: logout-page-fix
+canonical: ../../../Themes/docs/shared-components/logout-page-fix.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-page-fix.md
+>>>>>>> origin/dev

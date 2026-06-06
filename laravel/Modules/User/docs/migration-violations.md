@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Migration Violations Analysis - User Module
 
 ## Executive Summary
@@ -141,3 +142,12 @@ These violations directly contravene the Laraxot migration philosophy:
 - ❌ Clear schema definition
 
 The violations demonstrate a clear gap in understanding and implementation of the core Laraxot migration philosophy that emphasizes: **ONE TABLE, ONE MIGRATION, ONE MODULE**.
+=======
+---
+module: theme
+topic: migration-violations
+canonical: ../../../Themes/docs/shared-components/migration-violations-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-violations-analysis.md
+>>>>>>> origin/dev

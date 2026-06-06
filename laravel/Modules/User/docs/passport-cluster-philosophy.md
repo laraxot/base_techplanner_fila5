@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filosofia e Politica: Implementazione del Cluster Passport
 
 ## Logica e Business Logic
@@ -35,3 +36,12 @@ User/
 ### Configurazione
 
 Tutte le risorse OAuth saranno configurate per utilizzare il cluster Passport tramite il parametro `$cluster`.
+=======
+---
+module: theme
+topic: passport-cluster-philosophy
+canonical: ../../../Themes/docs/shared-components/passport-cluster-philosophy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-philosophy.md
+>>>>>>> origin/dev

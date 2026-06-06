@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_qoczMC
 # Database Analysis Commands and Tools for healthcare_app_survey
 =======
@@ -7,6 +8,9 @@
 # Database Analysis Commands and Tools for ptvx_survey
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_6aXqkL
+=======
+# Database Analysis Commands and Tools for app_survey
+>>>>>>> origin/dev
 
 ## Essential Database Queries
 
@@ -77,6 +81,7 @@ WHERE t.completed = 'N' AND s.id IS NOT NULL;
 ### 1. MySQL MCP Commands
 ```bash
 # Connect to specific database
+<<<<<<< HEAD
 <<<<<<< .merge_file_qoczMC
 mcp mysql --database=txaesfry_healthcare_app_survey
 
@@ -84,10 +89,13 @@ mcp mysql --database=txaesfry_healthcare_app_survey
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_healthcare_app_survey' AND table_name LIKE 'lime_survey_%'"
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/dev
 mcp mysql --database=txaesfry_app_survey
 
 # Execute complex queries
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_app_survey' AND table_name LIKE 'lime_survey_%'"
+<<<<<<< HEAD
 =======
 mcp mysql --database=txaesfry_ptvx_survey
 
@@ -95,6 +103,8 @@ mcp mysql --database=txaesfry_ptvx_survey
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_ptvx_survey' AND table_name LIKE 'lime_survey_%'"
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_6aXqkL
+=======
+>>>>>>> origin/dev
 
 # Export survey data
 mcp mysql --export --table=lime_survey_139982 --format=csv
@@ -131,11 +141,15 @@ php artisan tinker --execute="DB::connection('limesurvey')->select('SELECT 1')"
 php artisan tinker --execute="
 [
     'limesurvey' => DB::connection('limesurvey')->getPdo() ? 'OK' : 'ERROR',
+<<<<<<< HEAD
 <<<<<<< .merge_file_qoczMC
     'healthcare_app' => DB::connection('healthcare_app')->getPdo() ? 'OK' : 'ERROR',
 =======
     'ptvx' => DB::connection('ptvx')->getPdo() ? 'OK' : 'ERROR',
 >>>>>>> .merge_file_6aXqkL
+=======
+    'ptvx' => DB::connection('ptvx')->getPdo() ? 'OK' : 'ERROR',
+>>>>>>> origin/dev
     'mysql' => DB::connection('mysql')->getPdo() ? 'OK' : 'ERROR'
 ]
 "
@@ -195,6 +209,7 @@ WHERE q.qid IS NULL;
 ### 1. Survey Data Backup
 ```bash
 # Backup specific survey data
+<<<<<<< HEAD
 <<<<<<< .merge_file_qoczMC
 mysqldump -u[user] -p[pass] txaesfry_healthcare_app_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
 
@@ -202,10 +217,13 @@ mysqldump -u[user] -p[pass] txaesfry_healthcare_app_survey lime_survey_[SURVEY_I
 mysqldump -u[user] -p[pass] txaesfry_healthcare_app_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/dev
 mysqldump -u[user] -p[pass] txaesfry_app_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
 
 # Backup question structure
 mysqldump -u[user] -p[pass] txaesfry_app_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
+<<<<<<< HEAD
 =======
 mysqldump -u[user] -p[pass] txaesfry_ptvx_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
 
@@ -213,6 +231,8 @@ mysqldump -u[user] -p[pass] txaesfry_ptvx_survey lime_survey_[SURVEY_ID] > surve
 mysqldump -u[user] -p[pass] txaesfry_ptvx_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_6aXqkL
+=======
+>>>>>>> origin/dev
 ```
 
 ### 2. Data Validation Script
@@ -256,6 +276,7 @@ LEFT JOIN (
         COUNT(*) as responses
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_survey_%'
+<<<<<<< HEAD
 <<<<<<< .merge_file_qoczMC
     AND table_schema = 'txaesfry_healthcare_app_survey'
 =======
@@ -265,6 +286,9 @@ LEFT JOIN (
     AND table_schema = 'txaesfry_ptvx_survey'
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_6aXqkL
+=======
+    AND table_schema = 'txaesfry_app_survey'
+>>>>>>> origin/dev
 ) r ON s.sid = r.sid
 LEFT JOIN (
     SELECT 
@@ -272,6 +296,7 @@ LEFT JOIN (
         COUNT(*) as total_tokens
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_tokens_%'
+<<<<<<< HEAD
 <<<<<<< .merge_file_qoczMC
     AND table_schema = 'txaesfry_healthcare_app_survey'
 =======
@@ -281,10 +306,14 @@ LEFT JOIN (
     AND table_schema = 'txaesfry_ptvx_survey'
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_6aXqkL
+=======
+    AND table_schema = 'txaesfry_app_survey'
+>>>>>>> origin/dev
 ) t ON s.sid = t.sid
 WHERE s.active = 'Y';
 ```
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_qoczMC
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the healthcare_app_survey database used by the Limesurvey integration.
 =======
@@ -294,3 +323,6 @@ These commands and tools provide comprehensive access to analyze, maintain, and 
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the ptvx_survey database used by the Limesurvey integration.
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_6aXqkL
+=======
+These commands and tools provide comprehensive access to analyze, maintain, and optimize the app_survey database used by the Limesurvey integration.
+>>>>>>> origin/dev

@@ -107,6 +107,7 @@ Il modulo **User** fornisce:
    - Mapping permessi
 
 2. **LimeParticipant** - Partecipanti survey
+<<<<<<< HEAD
 <<<<<<< .merge_file_Ox6Dhv
    - Integrazione con Contact model healthcare_app
 =======
@@ -116,6 +117,9 @@ Il modulo **User** fornisce:
    - Integrazione con Contact model ModuloEsempio
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_QX5QHe
+=======
+   - Integrazione con Contact model ExternalProject
+>>>>>>> origin/dev
    - Gestione partecipanti centralizzata
    - Attributi personalizzati
 
@@ -163,6 +167,7 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 
 ## Collegamenti
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_Ox6Dhv
 - [Modulo healthcare_app](../healthcare_app/docs/readme.md)
 =======
@@ -172,6 +177,9 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 - [Modulo ModuloEsempio](../ptvx/docs/readme.md)
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_QX5QHe
+=======
+- [Modulo ExternalProject](../<nome progetto>/docs/readme.md)
+>>>>>>> origin/dev
 - [Modulo Limesurvey](../limesurvey/docs/readme.md)
 - [User README](./readme.md)
 

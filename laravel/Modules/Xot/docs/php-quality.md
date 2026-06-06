@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Code Quality Guide - Laraxot
 
 **Ultimo aggiornamento**: [DATE]
@@ -1127,3 +1128,12 @@ Dopo ogni modifica file:
 ---
 
 **Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
+=======
+---
+module: theme
+topic: php-quality
+canonical: ../../../Themes/docs/shared-components/php-quality-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/php-quality-guide.md
+>>>>>>> origin/dev

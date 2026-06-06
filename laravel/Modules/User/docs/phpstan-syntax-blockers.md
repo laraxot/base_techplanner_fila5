@@ -58,4 +58,8 @@ Prima di parlare di level 10 compliance nel modulo `User`, va ripristinata la pa
 - wrapper Passport ancora poco descritti a livello PHPDoc (`OauthAccessToken`, `OauthRefreshToken`, `OauthClient`);
 - risorse Filament con `$model` su wrapper Passport che PHPStan non riconosce bene come `Model`;
 - `OauthPersonalAccessClient` estende una classe Passport che in questo ambiente non viene risolta da PHPStan;
+<<<<<<< HEAD
 - restano diversi punti in cui mancano proprieta' annotate sui modelli Passport wrapper.
+=======
+- restano diversi punti in cui mancano proprieta' annotate sui modelli Passport wrapper.
+>>>>>>> origin/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Factory Complete Ecosystem Integration - FINAL DOCUMENTATION
 
 ## 🎯 Integration Achievement
@@ -822,3 +823,12 @@ class MultiModuleSeeder extends Seeder {
 | **Documentation Quality** | Complete | Comprehensive | 🏆 EXEMPLARY |
 
 **FINAL GRADE: A+++ ENTERPRISE EXCELLENCE ACHIEVED** 🌟
+=======
+---
+module: theme
+topic: user-factory-complete-ecosystem-integration
+canonical: ../../../Themes/docs/shared-components/user-factory-complete-ecosystem-integration.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/user-factory-complete-ecosystem-integration.md
+>>>>>>> origin/dev

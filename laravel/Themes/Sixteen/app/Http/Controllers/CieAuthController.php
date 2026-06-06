@@ -44,7 +44,10 @@ class CieAuthController extends Controller
             $loginUrl = $this->cieService->getLoginUrl($returnUrl);
 
             return redirect()->to($loginUrl);
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
         } catch (\Exception $e) {
             Log::error('CIE login error', [
                 'method' => 'web',
@@ -85,7 +88,10 @@ class CieAuthController extends Controller
 
             // Redirect diretto per browser
             return redirect()->to($mobileUrl);
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
         } catch (\Exception $e) {
             Log::error('CIE mobile login error', [
                 'method' => 'mobile',
@@ -139,7 +145,10 @@ class CieAuthController extends Controller
 
             return redirect()->to($returnUrl)
                 ->with('success', 'Autenticazione CIE completata con successo.');
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
         } catch (\Exception $e) {
             Log::error('CIE callback error', [
                 'error' => $e->getMessage(),
@@ -190,7 +199,10 @@ class CieAuthController extends Controller
 
             return redirect()->to($returnUrl)
                 ->with('success', 'Logout effettuato con successo.');
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
         } catch (\Exception $e) {
             Log::error('CIE logout error', [
                 'error' => $e->getMessage(),
@@ -241,7 +253,10 @@ class CieAuthController extends Controller
                 'expires_in' => $tokenData['expires_in'] ?? null,
                 'token_type' => $tokenData['token_type'] ?? 'Bearer',
             ]);
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
         } catch (\Exception $e) {
             Log::error('CIE token refresh error', [
                 'error' => $e->getMessage(),
@@ -277,7 +292,10 @@ class CieAuthController extends Controller
                 ] : null,
                 'config_status' => $this->cieService->isConfigured(),
             ]);
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
         } catch (\Exception $e) {
             Log::error('CIE status check error', [
                 'error' => $e->getMessage(),
@@ -359,8 +377,13 @@ class CieAuthController extends Controller
             'address' => $attributes['address'],
             'cie_provider' => 'cie',
             'auth_method' => 'cie',
+<<<<<<< HEAD
             'email_verified_at' => ($attributes['email_verified'] ?? false) ? now() : null,
             'phone_verified_at' => ($attributes['phone_verified'] ?? false) ? now() : null,
+=======
+            'email_verified_at' => $attributes['email_verified'] ?? false ? now() : null,
+            'phone_verified_at' => $attributes['phone_verified'] ?? false ? now() : null,
+>>>>>>> origin/dev
         ];
 
         // Genera email temporanea se mancante o non verificata

@@ -12,6 +12,7 @@
 ## Errore Identificato
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 L'implementazione attuale del file `/var/www/html/ptvx/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` presenta i seguenti problemi:
 
 1. **Approccio non ottimale**: L'implementazione attuale utilizza Volt per gestire il logout, ma richiede una conferma da parte dell'utente, aggiungendo un passaggio non necessario al processo di logout.
@@ -24,6 +25,8 @@ L'implementazione attuale del file `/var/www/html/ptvx/laravel/Themes/One/resour
 
 5. **Mancato utilizzo di widget Filament**: Per form complessi, Laraxot raccomanda l'utilizzo di widget Filament invece di reinventare la ruota con implementazioni personalizzate.
 =======
+=======
+>>>>>>> origin/dev
 L'implementazione attuale del file `/var/www/html/healthcare_app/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` presenta i seguenti problemi:
 
 1. **Approccio non ottimale**: L'implementazione attuale utilizza Volt per gestire il logout, ma richiede una conferma da parte dell'utente, aggiungendo un passaggio non necessario al processo di logout.
@@ -35,7 +38,10 @@ L'implementazione attuale del file `/var/www/html/healthcare_app/laravel/Themes/
 4. **Struttura non ottimale**: La struttura attuale combina Volt e PHP in modo non ottimale, definendo la logica PHP dopo il template Blade.
 
 5. **Mancato utilizzo di widget Filament**: Per form complessi, healthcare_app raccomanda l'utilizzo di widget Filament invece di reinventare la ruota con implementazioni personalizzate.
+<<<<<<< HEAD
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+>>>>>>> origin/dev
 
 ## Soluzione Raccomandata
 
@@ -81,9 +87,13 @@ Se si desidera mantenere la conferma di logout, è preferibile utilizzare un wid
 ## Conclusione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 L'errore principale nell'implementazione attuale è l'utilizzo di un approccio non ottimale e non conforme alle convenzioni di Laraxot per il logout. La soluzione raccomandata è utilizzare l'approccio "Folio con PHP puro" per un logout immediato, o in alternativa, implementare un widget Filament per il logout con conferma.
 =======
 L'errore principale nell'implementazione attuale è l'utilizzo di un approccio non ottimale e non conforme alle convenzioni di healthcare_app per il logout. La soluzione raccomandata è utilizzare l'approccio "Folio con PHP puro" per un logout immediato, o in alternativa, implementare un widget Filament per il logout con conferma.
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+L'errore principale nell'implementazione attuale è l'utilizzo di un approccio non ottimale e non conforme alle convenzioni di healthcare_app per il logout. La soluzione raccomandata è utilizzare l'approccio "Folio con PHP puro" per un logout immediato, o in alternativa, implementare un widget Filament per il logout con conferma.
+>>>>>>> origin/dev
 
 La documentazione è stata aggiornata per riflettere queste raccomandazioni e per fornire esempi di implementazione corretta.

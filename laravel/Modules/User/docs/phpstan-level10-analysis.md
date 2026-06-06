@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Module - PHPStan Level 10 Analysis
 
 ## 📊 Current Status
@@ -252,3 +253,12 @@ These fixes are **local to User module** and won't affect other modules.
 **Estimated Time**: 25 minutes  
 **Complexity**: ⭐⭐ Simple  
 **Priority**: 🟡 Medium
+=======
+---
+module: theme
+topic: phpstan-level10-analysis
+canonical: ../../../Themes/docs/shared-components/phpstan-level10-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level10-analysis.md
+>>>>>>> origin/dev

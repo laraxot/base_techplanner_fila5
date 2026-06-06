@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Standard di Traduzione - Documentazione Root
 
 ## Panoramica
@@ -272,3 +273,12 @@ return [
 3. **Organizzazione**: Struttura gerarchica coerente
 4. **Naming**: Convenzioni standardizzate
 
+=======
+---
+module: theme
+topic: translation-standards
+canonical: ../../../../Themes/docs/shared-components/translation-standards-Modules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/translation-standards-Modules.md
+>>>>>>> origin/dev

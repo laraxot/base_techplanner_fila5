@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Report Risoluzione Conflitti Git - Develop Branch
 
@@ -95,3 +96,12 @@ Tutti i conflitti Git sono stati risolti automaticamente prendendo le "incoming 
 **Script Creato**: [DATE]
 **Autore**: Super Mucca AI Assistant
 **Potenze**: 🚀 SUPERPOWERS ACTIVATED
+=======
+---
+module: theme
+topic: conflict-resolution
+canonical: ../../../Themes/docs/shared-components/conflict-resolution-report.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/conflict-resolution-report.md
+>>>>>>> origin/dev

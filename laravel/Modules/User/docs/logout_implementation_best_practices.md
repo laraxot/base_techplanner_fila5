@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Best Practices per l'Implementazione del Logout 
 
 ## Collegamenti correlati
@@ -243,3 +244,12 @@ $this->redirect(LaravelLocalization::getLocalizedURL($locale, route('home')));
 - [Documentazione Livewire Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
+=======
+---
+module: theme
+topic: logout_implementation_best_practices
+canonical: ../../../Themes/docs/shared-components/logout_implementation_best_practices.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout_implementation_best_practices.md
+>>>>>>> origin/dev

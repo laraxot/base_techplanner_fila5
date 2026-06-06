@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Conclusioni e Raccomandazioni per logout.blade.php
 
 ## Collegamenti correlati
@@ -178,3 +179,12 @@ Se si desidera mantenere un'interazione utente durante il processo di logout, si
 ## Conclusione
 
 L'implementazione raccomandata rappresenta la soluzione più semplice, efficiente e coerente con le convenzioni del progetto <nome progetto> per il logout degli utenti. Questa implementazione garantisce una buona esperienza utente e mantiene tutte le necessarie misure di sicurezza.
+=======
+---
+module: theme
+topic: logout-blade-conclusions
+canonical: ../../../Themes/docs/shared-components/logout-blade-conclusions.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-conclusions.md
+>>>>>>> origin/dev

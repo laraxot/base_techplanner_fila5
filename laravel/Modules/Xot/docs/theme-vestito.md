@@ -52,6 +52,7 @@ Themes/[ThemeName]/
 │   │   ├── components/
 │   │   ├── layouts/
 │   │   └── pages/
+<<<<<<< HEAD
 <<<<<<< .merge_file_F5Y95F
 ├── _healthcare_app_fila5_mono.code-workspace
 =======
@@ -61,6 +62,10 @@ Themes/[ThemeName]/
 ├── _ptvx_fila5_mono.code-workspace
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_SeKRJk
+=======
+├── _healthcare_app_fila5_mono.code-workspace
+├── _app_fila5_mono.code-workspace
+>>>>>>> origin/dev
 ├── package.json
 ├── postcss.config.js
 ├── tailwind.config.js

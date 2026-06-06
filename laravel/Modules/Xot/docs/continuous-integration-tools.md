@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //----------
 PHP Mess Detector
 
@@ -28,3 +29,12 @@ https://grafikart.fr/tutoriels/grumphp-836
 https://jakzal.github.io/toolbox/
 
 
+=======
+---
+module: theme
+topic: continuous-integration-tools
+canonical: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
+>>>>>>> origin/dev

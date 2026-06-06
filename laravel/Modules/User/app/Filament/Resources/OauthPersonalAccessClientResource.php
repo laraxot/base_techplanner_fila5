@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
+=======
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+>>>>>>> origin/dev
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
@@ -22,7 +27,10 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
  */
 final class OauthPersonalAccessClientResource extends XotBaseResource
 {
+<<<<<<< HEAD
     /** @phpstan-ignore-next-line Resource model is a valid Eloquent subtype, but PHPStan loses the inheritance edge in this context. */
+=======
+>>>>>>> origin/dev
     protected static ?string $model = OauthPersonalAccessClient::class;
 
     protected static ?string $recordTitleAttribute = 'id';
@@ -56,6 +64,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     }
 
     /**
+<<<<<<< HEAD
      * Define the table for the resource.
      */
     public static function table(Table $table): Table
@@ -69,6 +78,8 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     }
 
     /**
+=======
+>>>>>>> origin/dev
      * Get the table columns for the resource.
      *
      * @return array<string, Tables\Columns\Column>
@@ -112,7 +123,11 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Get the table actions for the resource.
      *
+<<<<<<< HEAD
      * @return array<string, \Filament\Actions\Action>
+=======
+     * @return array<string, Action>
+>>>>>>> origin/dev
      */
     public static function getTableActions(): array
     {
@@ -125,7 +140,11 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Get the table bulk actions for the resource.
      *
+<<<<<<< HEAD
      * @return array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
+=======
+     * @return array<string, Action|ActionGroup>
+>>>>>>> origin/dev
      */
     public static function getTableBulkActions(): array
     {

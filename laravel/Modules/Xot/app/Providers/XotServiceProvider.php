@@ -11,6 +11,10 @@ use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TimePicker;
 use Filament\Infolists\Components\Entry;
 use Filament\Support\Components\Component;
+<<<<<<< HEAD
+=======
+use Filament\Support\Facades\FilamentColor;
+>>>>>>> origin/dev
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
@@ -22,6 +26,10 @@ use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Support\PaDesignColors;
+>>>>>>> origin/dev
 use Modules\Xot\View\Composers\XotComposer;
 use Webmozart\Assert\Assert;
 
@@ -46,6 +54,10 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->registerExceptionHandler(); // guardare come fa sentry
         $this->registerTimezone();
         $this->registerFilamentMacros();
+<<<<<<< HEAD
+=======
+        $this->registerPaFilamentColors();
+>>>>>>> origin/dev
         $this->registerXotLivewireComponents();
         $this->registerProviders();
     }
@@ -90,6 +102,17 @@ class XotServiceProvider extends XotBaseServiceProvider
         TextColumn::configureUsing(fn (TextColumn $column) => $column->timezone($timezone));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * Palette PA su widget FO (login, wizard) senza panel attivo — allineata ai panel admin.
+     */
+    public function registerPaFilamentColors(): void
+    {
+        FilamentColor::register(PaDesignColors::filamentPalette());
+    }
+
+>>>>>>> origin/dev
     public function registerFilamentMacros(): void
     {
         // Macro temporarily disabled due to compatibility issues with Filament version
@@ -143,12 +166,20 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $files = File::files($path);
         foreach ($files as $file) {
+<<<<<<< HEAD
             if ('php' !== $file->getExtension()) {
+=======
+            if ($file->getExtension() !== 'php') {
+>>>>>>> origin/dev
                 continue;
             }
 
             $realPath = $file->getRealPath();
+<<<<<<< HEAD
             if (false === $realPath) {
+=======
+            if ($realPath === false) {
+>>>>>>> origin/dev
                 continue;
             }
 

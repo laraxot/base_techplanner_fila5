@@ -19,6 +19,7 @@
   - Array access on mixed types
   - Invalid binary operations
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_i8ZF5Q
 #### healthcare_app Module (Complex Issues)
 =======
@@ -28,6 +29,10 @@
 #### ExternalProject Module (Complex Issues)
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_UR18fR
+=======
+#### healthcare_app Module (Complex Issues)
+#### ModuloEsempio Module (Complex Issues)
+>>>>>>> origin/dev
 - **Errors:** ~500+ across chart export and quantum actions
 - **Main Issues:**
   - Missing class definitions (quantum-related classes)
@@ -62,6 +67,7 @@ Function preg_replace is unsafe to use. Please add 'use function Safe\preg_repla
 #### Missing Class Definitions
 ```php
 // ❌ Quantum-related classes not found
+<<<<<<< HEAD
 <<<<<<< .merge_file_i8ZF5Q
 Class Modules\healthcare_app\Actions\Charts\Quantum\GenerateConsciousChartAction
 implements unknown interface Spatie\Queable\Contracts\Queable.
@@ -77,6 +83,14 @@ implements unknown interface Spatie\Queable\Contracts\Queable.
 Class Modules\ExternalProject\Actions\Charts\Quantum\GenerateConsciousChartAction
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_UR18fR
+=======
+Class Modules\healthcare_app\Actions\Charts\Quantum\GenerateConsciousChartAction
+implements unknown interface Spatie\Queable\Contracts\Queable.
+Class Modules\healthcare_app\Actions\Charts\Quantum\GenerateConsciousChartAction
+Class Modules\ModuloEsempio\Actions\Charts\Quantum\GenerateConsciousChartAction
+implements unknown interface Spatie\Queable\Contracts\Queable.
+Class Modules\ModuloEsempio\Actions\Charts\Quantum\GenerateConsciousChartAction
+>>>>>>> origin/dev
 uses unknown trait Spatie\Queable\QueableAction.
 ```
 
@@ -94,19 +108,26 @@ uses unknown trait Spatie\Queable\QueableAction.
 3. **Function Safety**: Missing Safe library imports
 4. **Return Types**: Incorrect PHPDoc return types
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_i8ZF5Q
+=======
+>>>>>>> origin/dev
 #### healthcare_app Module Issues
 **Primary Files:**
 - `healthcare_app/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
 - `healthcare_app/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
 - `healthcare_app/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/dev
 #### ModuloEsempio Module Issues
 **Primary Files:**
 - `ModuloEsempio/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
 - `ModuloEsempio/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
 - `ModuloEsempio/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
+<<<<<<< HEAD
 =======
 #### ExternalProject Module Issues
 **Primary Files:**
@@ -115,6 +136,8 @@ uses unknown trait Spatie\Queable\QueableAction.
 - `ExternalProject/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_UR18fR
+=======
+>>>>>>> origin/dev
 
 **Key Problems:**
 1. **Missing Classes**: Quantum architecture classes not implemented

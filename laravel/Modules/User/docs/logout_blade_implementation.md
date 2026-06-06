@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
@@ -222,3 +223,12 @@ Questa implementazione è semplice, sicura e segue tutte le best practices del p
 =======
 Questa implementazione è semplice, sicura e segue tutte le best practices del progetto healthcare_app.
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+---
+module: theme
+topic: logout_blade_implementation
+canonical: ../../../Themes/docs/shared-components/logout_blade_implementation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout_blade_implementation.md
+>>>>>>> origin/dev

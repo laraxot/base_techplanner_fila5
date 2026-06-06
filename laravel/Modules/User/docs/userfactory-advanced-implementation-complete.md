@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UserFactory Advanced Implementation - COMPLETE ✅
 
 ## 🎉 Mission Accomplished
@@ -596,3 +597,12 @@ $gdprTests = [
 - [Cross-Module Relations](../laravel/modules/<nome progetto>/docs/models/doctor-studio-relationship.md)
 
 **🎉 MISSION ACCOMPLISHED - UserFactory Advanced Implementation Complete! 🎉**
+=======
+---
+module: theme
+topic: userfactory-advanced-implementation-complete
+canonical: ../../../Themes/docs/shared-components/userfactory-advanced-implementation-complete.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/userfactory-advanced-implementation-complete.md
+>>>>>>> origin/dev

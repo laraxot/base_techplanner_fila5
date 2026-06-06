@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
+<<<<<<< HEAD
+=======
+use BladeUI\Icons\Exceptions\SvgNotFound;
+>>>>>>> origin/dev
 use BladeUI\Icons\Factory as BladeIconsFactory;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Config;
@@ -34,9 +38,12 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     protected string $module_base_ns;
 
+<<<<<<< HEAD
     /**
      * Boot the application events.
      */
+=======
+>>>>>>> origin/dev
     public function boot(): void
     {
         $this->registerTranslations();
@@ -48,9 +55,12 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->registerCommands();
     }
 
+<<<<<<< HEAD
     /**
      * Register the service provider.
      */
+=======
+>>>>>>> origin/dev
     public function register(): void
     {
         $this->nameLower = Str::lower($this->name);
@@ -62,14 +72,24 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerBladeIcons(): void
     {
+<<<<<<< HEAD
         if ('' === $this->name) {
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
+=======
+        if ($this->name === '') {
+            throw new \Exception('name is empty on ['.static::class.']');
+        }
+
+        // Blade UI Kit default set may already contain prefixes like "geo".
+        // Skip registration if the prefix would collide with the default set.
+>>>>>>> origin/dev
         $this->callAfterResolving(BladeIconsFactory::class, function (BladeIconsFactory $factory): void {
             try {
                 $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'assets');
                 $svgPath = $assetsPath.'/../svg';
+<<<<<<< HEAD
                 if (File::exists($svgPath)) {
                     $factory->add($this->nameLower, ['path' => $svgPath, 'prefix' => $this->nameLower]);
                 }
@@ -110,10 +130,32 @@ abstract class XotBaseServiceProvider extends ServiceProvider
     public function registerViews(): void
     {
         if ('' === $this->name) {
+=======
+                if (! File::exists($svgPath)) {
+                    return;
+                }
+                // Check if prefix already registered to avoid collision with default set.
+                try {
+                    $factory->svg($this->nameLower.'::non-existent-test');
+                } catch (SvgNotFound $e) {
+                    // Prefix not registered yet — safe to add.
+                    $factory->add($this->nameLower, ['path' => $svgPath, 'prefix' => $this->nameLower]);
+                }
+            } catch (\Throwable $e) {
+                // Ignore missing optional assets.
+            }
+        });
+    }
+
+    public function registerViews(): void
+    {
+        if ($this->name === '') {
+>>>>>>> origin/dev
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
         $viewPath = module_path($this->name, 'resources/views');
+<<<<<<< HEAD
         // if (! is_string($viewPath)) {
         //    throw new \Exception('Invalid view path');
         // }
@@ -129,6 +171,14 @@ abstract class XotBaseServiceProvider extends ServiceProvider
     public function registerTranslations(): void
     {
         if ('' === $this->name) {
+=======
+        $this->loadViewsFrom($viewPath, $this->nameLower);
+    }
+
+    public function registerTranslations(): void
+    {
+        if ($this->name === '') {
+>>>>>>> origin/dev
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -137,9 +187,12 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->loadJsonTranslationsFrom($langPath);
     }
 
+<<<<<<< HEAD
     /**
      * Register an additional directory of factories.
      */
+=======
+>>>>>>> origin/dev
     public function registerFactories(): void
     {
         if (! app()->environment('production')) {
@@ -150,6 +203,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
     public function registerBladeComponents(): void
     {
         $componentViewPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-view');
+<<<<<<< HEAD
         try {
             Blade::anonymousComponentPath($componentViewPath);
         } catch (\Exception $e) {
@@ -159,6 +213,13 @@ abstract class XotBaseServiceProvider extends ServiceProvider
                 'componentViewPath' => $componentViewPath,
                 'e' => $e->getMessage(),
             ]);
+=======
+
+        try {
+            Blade::anonymousComponentPath($componentViewPath);
+        } catch (\Exception $e) {
+            // Ignore invalid or unavailable anonymous component paths.
+>>>>>>> origin/dev
         }
 
         $componentClassPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-class');
@@ -169,9 +230,12 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         app(RegisterBladeComponentsAction::class)->execute($componentClassPath, $this->module_ns);
     }
 
+<<<<<<< HEAD
     /**
      * Register Livewire components.
      */
+=======
+>>>>>>> origin/dev
     public function registerLivewireComponents(): void
     {
         $prefix = '';
@@ -189,7 +253,11 @@ abstract class XotBaseServiceProvider extends ServiceProvider
                 'Modules\\'.$this->name.'\\Console\\Commands',
                 $prefix,
             );
+<<<<<<< HEAD
         if (0 === $comps->count()) {
+=======
+        if ($comps->count() === 0) {
+>>>>>>> origin/dev
             return;
         }
         $commands = $comps->toArray();
@@ -204,19 +272,25 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->commands($commands);
     }
 
+<<<<<<< HEAD
     /**
      * Get the services provided by the provider.
      *
      * @return array<int, string>
      */
+=======
+>>>>>>> origin/dev
     public function provides(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
     /**
      * Restituisce il path della cartella lang del modulo, con fallback robusto.
      */
+=======
+>>>>>>> origin/dev
     protected function getLangPath(): string
     {
         try {
@@ -226,20 +300,27 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         }
     }
 
+<<<<<<< HEAD
     /**
      * Register config.
      */
+=======
+>>>>>>> origin/dev
     protected function registerConfig(): void
     {
         try {
             $configPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'config');
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
             $files = File::glob($configPath.'/*.php');
 
             foreach ($files as $file) {
                 if (! is_string($file)) {
                     continue;
                 }
+<<<<<<< HEAD
                 $content = File::getRequire($file);
                 $info = pathinfo($file);
                 $key = $this->nameLower.'::'.$info['filename'];
@@ -248,6 +329,14 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         } catch (\Exception $e) {
             // Ignore missing configuration
             return;
+=======
+
+                $filename = pathinfo($file, PATHINFO_FILENAME);
+                Config::set($this->nameLower.'.'.$filename, require $file);
+            }
+        } catch (\Throwable $e) {
+            // Ignore config registration failures for optional module config.
+>>>>>>> origin/dev
         }
     }
 }

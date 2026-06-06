@@ -5,28 +5,43 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
+<<<<<<< HEAD
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
+=======
+>>>>>>> origin/dev
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Contracts\RepositoryInterface;
 
+<<<<<<< HEAD
+=======
+use function Laravel\Prompts\multiselect;
+use function Laravel\Prompts\text;
+
+>>>>>>> origin/dev
 class AssignModuleCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> origin/dev
      */
     protected $name = 'user:assign-module';
 
     /**
      * The console command description.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> origin/dev
      */
     protected $description = 'Assign or revoke modules to/from user';
 

@@ -188,10 +188,14 @@ return [
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Laraxot\app\Providers\Filament;
 =======
 namespace Modules\healthcare_app\app\Providers\Filament;
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+namespace Modules\healthcare_app\app\Providers\Filament;
+>>>>>>> origin/dev
 
 use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
 
@@ -239,10 +243,14 @@ class AdminPanelProvider extends XotBasePanelProvider
             ],
             
 <<<<<<< HEAD
+<<<<<<< HEAD
             // Configurazioni specifiche per Laraxot
 =======
             // Configurazioni specifiche per healthcare_app
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+            // Configurazioni specifiche per healthcare_app
+>>>>>>> origin/dev
             'locale' => 'it',
             'timezone' => 'Europe/Rome',
             'firstDay' => 1,
@@ -325,10 +333,14 @@ class FullCalendarDebug extends Command
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Best Practices per Laraxot
 =======
 ## Best Practices per healthcare_app
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+## Best Practices per healthcare_app
+>>>>>>> origin/dev
 
 ### 1. Sicurezza Licenza
 ```php
@@ -422,10 +434,14 @@ const calendarOptions = {
 ## Conclusioni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 La gestione delle licenze FullCalendar Scheduler richiede attenzione particolare, specialmente in ambienti di produzione sanitari come Laraxot. Seguire questa guida garantisce una configurazione corretta e la risoluzione dei problemi più comuni.
 =======
 La gestione delle licenze FullCalendar Scheduler richiede attenzione particolare, specialmente in ambienti di produzione sanitari come healthcare_app. Seguire questa guida garantisce una configurazione corretta e la risoluzione dei problemi più comuni.
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+La gestione delle licenze FullCalendar Scheduler richiede attenzione particolare, specialmente in ambienti di produzione sanitari come healthcare_app. Seguire questa guida garantisce una configurazione corretta e la risoluzione dei problemi più comuni.
+>>>>>>> origin/dev
 
 **Punti Chiave:**
 1. **Licenza obbligatoria** per uso commerciale in produzione

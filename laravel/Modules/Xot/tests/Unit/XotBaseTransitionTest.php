@@ -6,13 +6,18 @@ namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\Notify\Datas\RecordNotificationData;
+>>>>>>> origin/dev
 use Modules\Xot\States\Transitions\XotBaseTransition;
 
 uses(RefreshDatabase::class);
 
 describe('XotBaseTransition', function () {
     beforeEach(function () {
+<<<<<<< HEAD
         // Create a concrete test transition class
         $this->transition = new class extends XotBaseTransition {
             public static string $name = 'test_transition';
@@ -22,16 +27,40 @@ describe('XotBaseTransition', function () {
             {
                 return [
                     'test_user' => $this->record,
+=======
+        // Create a test record
+        $this->record = new class() extends Model
+        {
+            protected $table = 'test_records';
+
+            protected $fillable = ['id', 'name'];
+        };
+
+        // Create a concrete test transition class
+        $this->transition = new class($this->record) extends XotBaseTransition
+        {
+            public static string $name = 'test_transition';
+
+            public function getNotificationRecipients(): array
+            {
+                return [
+                    'test_user' => RecordNotificationData::from(['record' => $this->record, 'channel' => 'mail']),
+>>>>>>> origin/dev
                     'null_user' => null,
                 ];
             }
 
+<<<<<<< HEAD
             #[Override]
             public function sendRecipientNotification(?UserContract $recipient): void
+=======
+            public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
+>>>>>>> origin/dev
             {
                 // Mock implementation
             }
         };
+<<<<<<< HEAD
 
         // Create a test record
         $this->record = new class extends Model implements UserContract {
@@ -72,6 +101,8 @@ describe('XotBaseTransition', function () {
         };
 
         $this->transition->record = $this->record;
+=======
+>>>>>>> origin/dev
     });
 
     it('can be instantiated', function () {
@@ -87,7 +118,11 @@ describe('XotBaseTransition', function () {
     });
 
     it('can get record', function () {
+<<<<<<< HEAD
         $record = $this->transition->getRecord();
+=======
+        $record = $this->transition->record;
+>>>>>>> origin/dev
 
         expect($record)->toBe($this->record);
     });
@@ -98,7 +133,11 @@ describe('XotBaseTransition', function () {
 
     it('can send notifications without errors', function () {
         // This should not throw an exception
+<<<<<<< HEAD
         expect($this->transition->sendNotifications(...))->not->toThrow(Exception::class);
+=======
+        expect(fn () => $this->transition->sendNotifications())->not->toThrow(\Exception::class);
+>>>>>>> origin/dev
     });
 
     it('has getNotificationRecipients method', function () {
@@ -122,6 +161,7 @@ describe('XotBaseTransition', function () {
         expect(method_exists($this->transition, 'sendRecipientNotification'))->toBeTrue();
     });
 
+<<<<<<< HEAD
     it('can send notification to user contract', function () {
         // This should not throw an exception
         expect(fn () => $this->transition->sendRecipientNotification($this->record))->not->toThrow(Exception::class);
@@ -173,18 +213,35 @@ describe('XotBaseTransition', function () {
                             return 'remember_token';
                         }
                     },
+=======
+    it('processes recipients correctly in sendNotifications', function () {
+        // Mock recipients with mixed types
+        $transition = new class($this->record) extends XotBaseTransition
+        {
+            public static string $name = 'test_mixed_transition';
+
+            public function getNotificationRecipients(): array
+            {
+                return [
+                    'valid_recipient' => RecordNotificationData::from(['record' => $this->record, 'channel' => 'mail']),
+>>>>>>> origin/dev
                     'null_user' => null,
                 ];
             }
 
+<<<<<<< HEAD
             #[Override]
             public function sendRecipientNotification(?UserContract $recipient): void
+=======
+            public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
+>>>>>>> origin/dev
             {
                 // Mock implementation
             }
         };
 
         // This should process without errors
+<<<<<<< HEAD
         expect($transition->sendNotifications(...))->not->toThrow(Exception::class);
     });
 
@@ -234,5 +291,8 @@ describe('XotBaseTransition', function () {
             ->toBeTrue()
             ->and(method_exists($this->transition, 'sendRecipientNotification'))
             ->toBeTrue();
+=======
+        expect(fn () => $transition->sendNotifications())->not->toThrow(\Exception::class);
+>>>>>>> origin/dev
     });
 });

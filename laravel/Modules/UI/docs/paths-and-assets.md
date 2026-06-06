@@ -23,10 +23,14 @@
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 /var/www/html/ptvx/
 =======
 /var/www/html/healthcare_app/
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+/var/www/html/Quaeris/
+>>>>>>> origin/dev
 ├── laravel/                 # Applicazione Laravel (codice sorgente)
 │   ├── Modules/             # Moduli dell'applicazione
 │   ├── resources/           # Risorse non compilate
@@ -45,6 +49,7 @@
 | Tipo di Asset | ✅ Percorso Corretto | ❌ Percorso Errato |
 |---------------|---------------------|-------------------|
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Immagini | `/var/www/html/ptvx/public_html/images/` | `/var/www/html/ptvx/laravel/public/images/` |
 | CSS | `/var/www/html/ptvx/public_html/css/` | `/var/www/html/ptvx/laravel/public/css/` |
 | JavaScript | `/var/www/html/ptvx/public_html/js/` | `/var/www/html/ptvx/laravel/public/js/` |
@@ -55,6 +60,12 @@
 | JavaScript | `/var/www/html/healthcare_app/public_html/js/` | `/var/www/html/healthcare_app/laravel/public/js/` |
 | SVG | `/var/www/html/healthcare_app/public_html/images/` | `/var/www/html/healthcare_app/laravel/public/images/` |
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+| Immagini | `/var/www/html/Quaeris/public_html/images/` | `/var/www/html/Quaeris/laravel/public/images/` |
+| CSS | `/var/www/html/Quaeris/public_html/css/` | `/var/www/html/Quaeris/laravel/public/css/` |
+| JavaScript | `/var/www/html/Quaeris/public_html/js/` | `/var/www/html/Quaeris/laravel/public/js/` |
+| SVG | `/var/www/html/Quaeris/public_html/images/` | `/var/www/html/Quaeris/laravel/public/images/` |
+>>>>>>> origin/dev
 
 ## Utilizzo degli Asset nei Componenti Blade
 
@@ -86,10 +97,14 @@ Gli SVG utilizzati come icone o componenti UI dovrebbero essere implementati com
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 /var/www/html/ptvx/laravel/Themes/One/resources/views/components/ui/
 =======
 /var/www/html/healthcare_app/laravel/Themes/One/resources/views/components/ui/
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+/var/www/html/Quaeris/laravel/Themes/One/resources/views/components/ui/
+>>>>>>> origin/dev
 ```
 
 ### SVG come Asset Pubblici
@@ -98,10 +113,14 @@ Gli SVG utilizzati come immagini (avatar, loghi, ecc.) dovrebbero essere posizio
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 /var/www/html/ptvx/public_html/images/
 =======
 /var/www/html/healthcare_app/public_html/images/
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+/var/www/html/Quaeris/public_html/images/
+>>>>>>> origin/dev
 ```
 
 ## Gestione dei Componenti UI
@@ -112,20 +131,28 @@ Il componente avatar è implementato in:
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 /var/www/html/ptvx/laravel/Themes/One/resources/views/components/ui/avatar.blade.php
 =======
 /var/www/html/healthcare_app/laravel/Themes/One/resources/views/components/ui/avatar.blade.php
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+/var/www/html/Quaeris/laravel/Themes/One/resources/views/components/ui/avatar.blade.php
+>>>>>>> origin/dev
 ```
 
 E utilizza gli avatar SVG dalla directory pubblica:
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 /var/www/html/ptvx/public_html/images/avatars/
 =======
 /var/www/html/healthcare_app/public_html/images/avatars/
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+/var/www/html/Quaeris/public_html/images/avatars/
+>>>>>>> origin/dev
 ```
 
 ### Componente Icon
@@ -134,10 +161,14 @@ Il componente icon è implementato in:
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 /var/www/html/ptvx/laravel/Themes/One/resources/views/components/ui/icon.blade.php
 =======
 /var/www/html/healthcare_app/laravel/Themes/One/resources/views/components/ui/icon.blade.php
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+/var/www/html/Quaeris/laravel/Themes/One/resources/views/components/ui/icon.blade.php
+>>>>>>> origin/dev
 ```
 
 E include le definizioni SVG direttamente nel componente.
@@ -179,10 +210,14 @@ E include le definizioni SVG direttamente nel componente.
 ## Errori Comuni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Utilizzo del percorso Laravel public**: Utilizzare `/var/www/html/ptvx/laravel/public/` invece di `/var/www/html/ptvx/public_html/`
 =======
 1. **Utilizzo del percorso Laravel public**: Utilizzare `/var/www/html/healthcare_app/laravel/public/` invece di `/var/www/html/healthcare_app/public_html/`
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+1. **Utilizzo del percorso Laravel public**: Utilizzare `/var/www/html/Quaeris/laravel/public/` invece di `/var/www/html/Quaeris/public_html/`
+>>>>>>> origin/dev
 2. **Riferimenti diretti ai file**: Utilizzare percorsi assoluti invece dell'helper `asset()`
 3. **Mancanza di fallback**: Non fornire alternative quando un'immagine non è disponibile
 4. **Inconsistenza nei nomi dei file**: Utilizzare convenzioni di naming diverse per file simili

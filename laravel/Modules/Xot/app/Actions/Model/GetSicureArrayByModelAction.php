@@ -27,7 +27,10 @@ class GetSicureArrayByModelAction
                 try {
                     $data[$key] = $this->$key;
 
+<<<<<<< HEAD
                     /* @phpstan-ignore-next-line */
+=======
+>>>>>>> origin/dev
                 } catch (\ValueError $e) {
                 }
             }

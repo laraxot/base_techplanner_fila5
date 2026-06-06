@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ottimizzazioni Modulo User
 
 ## Principi DRY + KISS Applicati
@@ -204,3 +205,12 @@ public function user(): BelongsTo
 - [ ] Developer satisfaction >8/10 per auth docs
 
 Questa ottimizzazione trasforma User module docs da **frammentate e duplicate** a **struttura logica e template-ready** per l'intero ecosystem, mantenendo focus su security e reusability.
+=======
+---
+module: theme
+topic: ottimizzazioni-user
+canonical: ../../../Themes/docs/shared-components/ottimizzazioni-user.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-user.md
+>>>>>>> origin/dev

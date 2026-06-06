@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Conclusioni e Raccomandazioni per logout.blade.php
 
 ## Collegamenti correlati
@@ -104,3 +105,12 @@ L'implementazione raccomandata rappresenta la soluzione più semplice, efficient
 =======
 L'implementazione raccomandata rappresenta la soluzione più semplice, efficiente e coerente con le convenzioni del progetto healthcare_app per il logout degli utenti. Questa implementazione garantisce una buona esperienza utente e mantiene tutte le necessarie misure di sicurezza.
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+---
+module: theme
+topic: logout_blade_conclusions
+canonical: ../../../Themes/docs/shared-components/logout_blade_conclusions.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout_blade_conclusions.md
+>>>>>>> origin/dev

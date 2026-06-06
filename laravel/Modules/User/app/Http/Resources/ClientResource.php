@@ -7,9 +7,16 @@ namespace Modules\User\Http\Resources;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Modules\User\Models\OauthClient as Client;
+<<<<<<< HEAD
 
 /**
  * @property \Modules\User\Models\User|null $owner
+=======
+use Modules\User\Models\User;
+
+/**
+ * @property User|null $owner
+>>>>>>> origin/dev
  *
  * @mixin Client
  */
@@ -30,7 +37,11 @@ final class ClientResource extends JsonResource
             'id' => $client->id,
             'name' => $client->name,
             'owner' => $this->when(
+<<<<<<< HEAD
                 null !== $client->owner,
+=======
+                $client->owner !== null,
+>>>>>>> origin/dev
                 fn (): OwnerResource => new OwnerResource($client->owner)
             ),
         ];

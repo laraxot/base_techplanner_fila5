@@ -15,22 +15,38 @@ trait EnumTrait
 
     public function getLabel(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, $this->value.'.label');
+=======
+        return $this->transClass(static::class, 'values.'.$this->value.'.label');
+>>>>>>> origin/dev
     }
 
     public function getColor(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, $this->value.'.color');
+=======
+        return $this->transClass(static::class, 'values.'.$this->value.'.color');
+>>>>>>> origin/dev
     }
 
     public function getIcon(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, $this->value.'.icon');
+=======
+        return $this->transClass(static::class, 'values.'.$this->value.'.icon');
+>>>>>>> origin/dev
     }
 
     public function getDescription(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, $this->value.'.description');
+=======
+        return $this->transClass(static::class, 'values.'.$this->value.'.description');
+>>>>>>> origin/dev
     }
 
     /**
@@ -100,8 +116,13 @@ trait EnumTrait
      * ```
      */
     /**
+<<<<<<< HEAD
      * @param Blueprint             $table     The table blueprint
      * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context (provides hasColumn())
+=======
+     * @param  Blueprint  $table  The table blueprint
+     * @param  XotBaseMigration|null  $migration  XotBaseMigration instance for UPDATE context (provides hasColumn())
+>>>>>>> origin/dev
      */
     public static function columns(Blueprint $table, ?XotBaseMigration $migration = null): void
     {
@@ -110,7 +131,11 @@ trait EnumTrait
         // }
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
+<<<<<<< HEAD
             if (null === $migration || ! $migration->hasColumn($name)) {
+=======
+            if ($migration === null || ! $migration->hasColumn($name)) {
+>>>>>>> origin/dev
                 $definition($table);
             }
         }
@@ -139,7 +164,11 @@ trait EnumTrait
      */
     public static function getColumnNames(): array
     {
+<<<<<<< HEAD
         return array_map(fn ($case) => (string) $case->value, static::cases());
+=======
+        return array_values(array_map(static fn ($case): string => (string) $case->value, static::cases()));
+>>>>>>> origin/dev
     }
 
     /**
@@ -152,4 +181,19 @@ trait EnumTrait
     {
         return [];
     }
+<<<<<<< HEAD
+=======
+
+    public static function toArray(): array
+    {
+        $cases = static::cases();
+        $result = [];
+        foreach ($cases as $item) {
+            $name = (string) $item->value;
+            $result[$name] = $item->getLabel();
+        }
+
+        return $result;
+    }
+>>>>>>> origin/dev
 }

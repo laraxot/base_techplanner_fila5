@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LoginWidget Livewire wire:model Binding Fix
 
 **Data**: 2025-12-18  
@@ -97,3 +98,12 @@ Tutti i widget senza modello devono:
 - [Xot Widgets Initialization](../../xot/docs/widgets-initialization.md)
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
 - [Login Widget Fix](./login-widget-fix.md)
+=======
+---
+module: theme
+topic: login-widget-livewire-binding-fix
+canonical: ../../../Themes/docs/shared-components/login-widget-livewire-binding-fix.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/login-widget-livewire-binding-fix.md
+>>>>>>> origin/dev

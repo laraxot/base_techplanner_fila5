@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Spatie\ModelStates\State;
 
 /**
@@ -15,3 +16,12 @@ use Spatie\ModelStates\State;
 interface WithStateStatusContract
 {
 }
+=======
+
+/**
+ * @property object|string|null $status
+ *
+ * @phpstan-require-extends Model
+ */
+interface WithStateStatusContract {}
+>>>>>>> origin/dev

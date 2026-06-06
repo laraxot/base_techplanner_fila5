@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modelli User e Profile: Analisi delle Scelte di Progettazione
 
 ## Approccio 1: Modello User Unificato
@@ -992,3 +993,12 @@ class UserRepository
        }
    }
    ```
+=======
+---
+module: theme
+topic: user-profile-models
+canonical: ../../../Themes/docs/shared-components/user-profile-models.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/user-profile-models.md
+>>>>>>> origin/dev

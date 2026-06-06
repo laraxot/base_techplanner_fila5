@@ -38,6 +38,7 @@ Il nesting in Filament 5.x permette di creare risorse figlie con pagine complete
 
 ## Opportunità per Modulo
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_PnwUPG
 ### Modulo healthcare_app
 
@@ -47,6 +48,11 @@ Il nesting in Filament 5.x permette di creare risorse figlie con pagine complete
 
 **Documentazione**: [Filament Nesting Best Practices](../filament-nesting-best-practices.md)
 >>>>>>> .merge_file_2Hjpqt
+=======
+### Modulo healthcare_app
+
+**Documentazione**: [Modules/healthcare_app/docs/filament-nesting-opportunities.md](../../healthcare_app/docs/filament-nesting-opportunities.md)
+>>>>>>> origin/dev
 
 **Opportunità Identificate**:
 
@@ -136,6 +142,7 @@ Il nesting in Filament 5.x permette di creare risorse figlie con pagine complete
 
 ### 🟡 ALTA (Implementare a Breve)
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_PnwUPG
 1. **Contact Nested Resource** (healthcare_app)
 2. **SurveyPdf Nested Resource** (healthcare_app)
@@ -143,6 +150,10 @@ Il nesting in Filament 5.x permette di creare risorse figlie con pagine complete
 1. **Nested Resource esempio 1**
 2. **Nested Resource esempio 2**
 >>>>>>> .merge_file_2Hjpqt
+=======
+1. **Contact Nested Resource** (healthcare_app)
+2. **SurveyPdf Nested Resource** (healthcare_app)
+>>>>>>> origin/dev
 3. **LimeGroup Nested Resource** (Limesurvey)
 4. **LimeAnswer Nested Resource** (Limesurvey)
 5. **Block Nested Resource** (Cms - Page e Section)
@@ -190,11 +201,15 @@ class ChildResource extends XotBaseResource
 ### Creare Nested Resource
 
 ```bash
+<<<<<<< HEAD
 <<<<<<< .merge_file_PnwUPG
 php artisan make:filament-resource Contact --nested --module=healthcare_app
 =======
 php artisan make:filament-resource Contact --nested --module=ModuloEsempio
 >>>>>>> .merge_file_2Hjpqt
+=======
+php artisan make:filament-resource Contact --nested --module=healthcare_app
+>>>>>>> origin/dev
 ```
 
 ### Creare Relation Manager
@@ -222,11 +237,15 @@ php artisan make:filament-relation-manager SurveyPdfResource contacts email
 
 - [Filament 5.x Nesting Documentation](https://filamentphp.com/docs/5.x/resources/nesting)
 - [Filament 5.x Nesting Migration Guide](./filament-5-nesting-migration.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_PnwUPG
 - [healthcare_app Nesting Opportunities](../../healthcare_app/docs/filament-nesting-opportunities.md)
 =======
 - [Filament Nesting Best Practices](../filament-nesting-best-practices.md)
 >>>>>>> .merge_file_2Hjpqt
+=======
+- [healthcare_app Nesting Opportunities](../../healthcare_app/docs/filament-nesting-opportunities.md)
+>>>>>>> origin/dev
 - [Limesurvey Nesting Opportunities](../../limesurvey/docs/filament-nesting-opportunities.md)
 - [Cms Nesting Opportunities](../../cms/docs/filament-nesting-opportunities.md)
 - [User Nesting Opportunities](../../user/docs/filament-nesting-opportunities.md)

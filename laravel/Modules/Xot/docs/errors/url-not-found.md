@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Url Not Found
 description: Url Not Found
 extends: _layouts.documentation
@@ -45,3 +46,11 @@ define ROOT "C:/var/www/nome_giunzione/public_html"
 **NB**: dopo aver fatto questa modifica, riavviare laragon
 
 ---
+=======
+module: theme
+topic: url-not-found
+canonical: ../../../../Themes/docs/shared-components/url-not-found.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/url-not-found.md
+>>>>>>> origin/dev

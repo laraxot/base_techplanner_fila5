@@ -38,6 +38,7 @@ This document summarizes the systematic code quality improvements made across th
 - **Documentation**: ✅ Created comprehensive README
 - **Features**: Multi-cloud provider support with advanced security
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_HsDVrx
 #### 📊 healthcare_app Module
 =======
@@ -47,6 +48,10 @@ This document summarizes the systematic code quality improvements made across th
 #### 📊 ModuloEsempio Module
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_B5MBRG
+=======
+#### 📊 healthcare_app Module
+#### 📊 ExternalProject Module
+>>>>>>> origin/dev
 - **Documentation**: ✅ Created comprehensive README
 - **Features**: Advanced survey management with PDF reports and charts
 
@@ -68,6 +73,7 @@ This document summarizes the systematic code quality improvements made across th
 - **Limesurvey** - External system integration
 
 #### ➕ New README Files Created
+<<<<<<< HEAD
 <<<<<<< .merge_file_HsDVrx
 - **healthcare_app** - Survey management system
 =======
@@ -77,6 +83,10 @@ This document summarizes the systematic code quality improvements made across th
 - **ModuloEsempio** - Survey management system
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_B5MBRG
+=======
+- **healthcare_app** - Survey management system
+- **ExternalProject** - Survey management system
+>>>>>>> origin/dev
 - **CloudStorage** - Multi-cloud file storage system
 
 ### 🎨 Themes Documentation
@@ -134,6 +144,7 @@ This document summarizes the systematic code quality improvements made across th
 ### ✅ Completed
 - ✅ All modules analyzed with PHPStan Level 10
 - ✅ Geo module PHPInsights score improved from 75% to 99%
+<<<<<<< HEAD
 <<<<<<< .merge_file_HsDVrx
 - ✅ Missing README files created for healthcare_app and CloudStorage
 =======
@@ -143,6 +154,10 @@ This document summarizes the systematic code quality improvements made across th
 - ✅ Missing README files created for ModuloEsempio and CloudStorage
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_B5MBRG
+=======
+- ✅ Missing README files created for healthcare_app and CloudStorage
+- ✅ Missing README files created for ExternalProject and CloudStorage
+>>>>>>> origin/dev
 - ✅ Comprehensive documentation review completed
 - ✅ Architecture improvements implemented
 

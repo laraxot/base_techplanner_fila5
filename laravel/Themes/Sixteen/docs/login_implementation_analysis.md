@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Implementazione Login - Tema Sixteen
 
 ## Problema Identificato
@@ -180,3 +181,12 @@ Il file di login del tema Sixteen è già implementato correttamente secondo le 
 *Tema: Sixteen*
 *File: login.blade.php*
 *Stato: Corretto secondo convenzioni* 
+=======
+---
+module: theme
+topic: login_implementation_analysis
+canonical: ../../docs/shared-components/login-implementation-analysis.md
+---
+
+See canonical documentation: ../../docs/shared-components/login-implementation-analysis.md
+>>>>>>> origin/dev

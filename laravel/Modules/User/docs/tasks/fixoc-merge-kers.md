@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Task: Fix Documentation Merge Markers (User Module)
 
 ## 📋 Obiettivo
@@ -19,3 +20,12 @@ Rimuovere residui di conflitti Git (`<<<<<<<`, `=======`, `>>>>>>>`) da tutti i 
 
 ## 🔗 Riferimenti
 - [Roadmap User](../roadmap.md)
+=======
+---
+module: theme
+topic: fixoc-merge-kers
+canonical: ../../../../Themes/docs/shared-components/fix-doc-merge-markers.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/fix-doc-merge-markers.md
+>>>>>>> origin/dev

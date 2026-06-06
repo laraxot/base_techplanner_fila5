@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Widget Translation Rules - FixCity Project
 
 ## Core Principles
@@ -148,3 +149,12 @@ This document serves as a reference for:
 - Code quality requirements
 - Documentation standards
 All widget development should follow these rules to maintain consistency and quality across the FixCity project.
+=======
+---
+module: theme
+topic: widget-translation
+canonical: ../../../../Themes/docs/shared-components/widget-translation-rules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/widget-translation-rules.md
+>>>>>>> origin/dev

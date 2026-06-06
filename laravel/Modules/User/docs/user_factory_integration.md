@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # UserFactory Integration - Modulo User e ModuloEsempio
 
 ## Overview
@@ -437,3 +438,12 @@ public function test_bulk_sti_creation()
 **Purpose**: Document cross-module factory integration  
 **Maintainer**: Development Team  
 **Review Status**: Ready for implementation 
+=======
+---
+module: theme
+topic: user_factory_integration
+canonical: ../../../Themes/docs/shared-components/user_factory_integration.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/user_factory_integration.md
+>>>>>>> origin/dev

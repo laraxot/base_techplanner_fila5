@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzioni PHPStan - Modulo User
 
 ## Panoramica
@@ -331,3 +332,12 @@ if (method_exists($createdAt, 'diffForHumans')) {
 
 
 
+=======
+---
+module: theme
+topic: phpstan-corrections
+canonical: ../../../Themes/docs/shared-components/phpstan-corrections-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-corrections-Modules.md
+>>>>>>> origin/dev

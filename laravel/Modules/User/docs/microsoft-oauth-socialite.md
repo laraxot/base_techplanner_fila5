@@ -280,6 +280,7 @@ $roles = Socialite::driver('microsoft')->user()->getRoles();
 ],
 ```
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_cOmoSe
 ## Regole per healthcare_app Fila5
 =======
@@ -289,6 +290,9 @@ $roles = Socialite::driver('microsoft')->user()->getRoles();
 ## Regole per ModuloEsempio Fila5
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_Z9kr3H
+=======
+## Regole per ExternalProject Fila5
+>>>>>>> origin/dev
 
 ### 1. Usare Filament Socialite Plugin
 - Installare `dutchcodingcompany/filament-socialite`

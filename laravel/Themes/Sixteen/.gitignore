@@ -53,3 +53,32 @@ docs/cache/
 *.backup
 *.backup.*
 _docs/
+<<<<<<< HEAD
+=======
+
+# Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
+docs/archive/
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+*~HEAD
+*~BASE
+*~LOCAL
+*~REMOTE
+*.orig
+*.rej
+*~head
+
+.c*
+.claude-flow
+.supermemory
+bmad
+Main_files
+test-results
+laravel
+.supermemory
+# Cartelle legacy alla root del tema (NON resources/views/components)
+/components
+/layouts
+
+# Database locale vector search (non versionare)
+ruvector.db
+>>>>>>> origin/dev

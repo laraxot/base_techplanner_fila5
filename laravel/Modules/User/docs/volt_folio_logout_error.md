@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema
@@ -117,3 +118,12 @@ final class LogoutAction
 - [Best Practices Folio](./routing_best_practices.md)
 - [Best Practices Volt](./volt_best_practices.md)
 - [Gestione Sessione](./session_management.md) 
+=======
+---
+module: theme
+topic: volt_folio_logout_error
+canonical: ../../../Themes/docs/shared-components/volt_folio_logout_error.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/volt_folio_logout_error.md
+>>>>>>> origin/dev

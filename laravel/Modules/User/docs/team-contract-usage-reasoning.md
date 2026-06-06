@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TeamContract Usage Reasoning
 
 ## Overview
@@ -21,3 +22,12 @@ This document explains the rationale behind using `TeamContract` instead of `Tea
 The shift to using `TeamContract` over `Team` in the `HasTeams` trait aligns with software engineering best practices, enhancing the flexibility, maintainability, and testability of the codebase. This approach prepares the system for future expansions or modifications to team-related functionalities without necessitating significant refactoring.
 
 *Last Updated: 16 May 2025*
+=======
+---
+module: theme
+topic: team-contract-usage-reasoning
+canonical: ../../../Themes/docs/shared-components/team_contract_usage_reasoning.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/team_contract_usage_reasoning.md
+>>>>>>> origin/dev

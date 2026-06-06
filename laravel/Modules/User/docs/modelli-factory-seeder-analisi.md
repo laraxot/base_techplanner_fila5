@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Modelli, Factory e Seeder - Modulo User
 
 ## Panoramica
@@ -376,3 +377,12 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Notify Module](../../notify/docs/modelli_factory_seeder_analisi.md)
 
 *Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*
+=======
+---
+module: theme
+topic: modelli-factory-seeder-analisi
+canonical: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-Modules.md
+>>>>>>> origin/dev

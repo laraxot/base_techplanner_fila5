@@ -1,0 +1,10 @@
+{
+    "requiredServers": [
+        "context-mode",
+        "playwright",
+        "puppeteer",
+        "token-optimizer",
+        "laravel-boost"
+    ],
+    "canonicalConfig": "../../.mcp.json"
+}

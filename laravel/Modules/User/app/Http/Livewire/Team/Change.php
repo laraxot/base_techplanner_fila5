@@ -26,8 +26,12 @@ class Change extends Component
 
     public XotData $xot;
 
+<<<<<<< HEAD
     /** @var UserContract */
     public $user;
+=======
+    public UserContract $user;
+>>>>>>> origin/dev
 
     public function mount(): void
     {
@@ -57,7 +61,11 @@ class Change extends Component
         if (! $this->user->switchTeam($team)) {
             abort(403);
         }
+<<<<<<< HEAD
         if (null !== $team) {
+=======
+        if ($team !== null) {
+>>>>>>> origin/dev
             // TeamSwitched::dispatch($team->fresh(), $this->user);
             TeamSwitched::dispatch($team, $this->user);
         }
@@ -79,7 +87,11 @@ class Change extends Component
         $view_params = [
             'view' => $view,
         ];
+<<<<<<< HEAD
         if ([] === $this->teams) {
+=======
+        if ($this->teams === []) {
+>>>>>>> origin/dev
             $view = 'ui::livewire.empty';
         }
 

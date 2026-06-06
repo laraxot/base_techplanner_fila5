@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Carbon\CarbonInterface;
 use Filament\Forms\Components\Placeholder;
@@ -19,6 +20,11 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
 use Modules\User\Filament\Forms\Components\UserSection;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
+=======
+use Filament\Support\Components\Component;
+use Illuminate\Database\Eloquent\Model;
+use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
+>>>>>>> origin/dev
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -37,6 +43,7 @@ class UserResource extends XotBaseResource
     //    static::$extendFormCallback = $callback;
     // }
 
+<<<<<<< HEAD
     #[\Override]
     public static function getFormSchema(): array
     {
@@ -86,6 +93,15 @@ class UserResource extends XotBaseResource
                 }),
             ])->columnSpan(4),
         ];
+=======
+    /**
+     * @return array<string, Component>
+     */
+    #[\Override]
+    public static function getFormSchema(): array
+    {
+        return UserForm::getFormSchema();
+>>>>>>> origin/dev
     }
 
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void

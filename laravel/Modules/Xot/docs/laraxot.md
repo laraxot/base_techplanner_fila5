@@ -28,6 +28,7 @@
 ```
 Xot (Core Engine)
 ├── User (Authentication & Authorization)
+<<<<<<< HEAD
 <<<<<<< .merge_file_RiU4Vo
 ├── healthcare_app (Core Business Logic - Surveys)
 =======
@@ -37,6 +38,10 @@ Xot (Core Engine)
 ├── ModuloEsempio (Core Business Logic - Surveys)
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_mSTn06
+=======
+├── healthcare_app (Core Business Logic - Surveys)
+├── ExternalProject (Core Business Logic - Surveys)
+>>>>>>> origin/dev
 ├── Cms (Content Management)
 ├── Media (File Management)
 ├── Geo (Location Services)
@@ -116,6 +121,7 @@ TextInput::make('name');
 - **Power**: Controls access to all resources
 - **Responsibility**: Security and permissions
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_RiU4Vo
 #### 3. **healthcare_app Module (The Economy)**
 =======
@@ -125,6 +131,10 @@ TextInput::make('name');
 #### 3. **ModuloEsempio Module (The Economy)**
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_mSTn06
+=======
+#### 3. **healthcare_app Module (The Economy)**
+#### 3. **ExternalProject Module (The Economy)**
+>>>>>>> origin/dev
 - **Role**: Core business logic, surveys, reporting
 - **Power**: Main revenue-generating functionality
 - **Responsibility**: Business operations

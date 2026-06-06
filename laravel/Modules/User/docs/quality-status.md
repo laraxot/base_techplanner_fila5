@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Module - Quality Status (November 2025)
 
 ## 🎯 Overview
@@ -160,3 +161,12 @@ After fixes:
 *PHPStan: IMPROVED (13 → ~5 errors)*
 *Status: IN PROGRESS*
 *Priority: CRITICAL*
+=======
+---
+module: theme
+topic: quality-status
+canonical: ../../../Themes/docs/shared-components/quality-status.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-status.md
+>>>>>>> origin/dev

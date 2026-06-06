@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pacchetti del Modulo User
 
 ## Pacchetti Utilizzati
@@ -68,3 +69,12 @@
 * [packages.md](../../../tenant/project_docs/packages.md)
 ### Versione Incoming
 ---
+=======
+---
+module: theme
+topic: packages
+canonical: ../../../Themes/docs/shared-components/packages.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/packages.md
+>>>>>>> origin/dev

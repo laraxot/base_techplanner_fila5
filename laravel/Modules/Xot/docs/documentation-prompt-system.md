@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistema di Prompt per la Documentazione
 
 ## Panoramica
@@ -54,3 +55,12 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 - [Linee Guida per la Documentazione in Xot](./documentation-guidelines.md)
 - [Percorsi Relativi nella Documentazione](../../../../bashscripts/docs/percorsi_relativi_documentazione.md)
 - [Documentazione del Sistema di Prompt](../../../../bashscripts/docs/prompts_documentation_system.md)
+=======
+---
+module: theme
+topic: documentation-prompt-system
+canonical: ../../../Themes/docs/shared-components/documentation-prompt-system-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/documentation-prompt-system-1.md
+>>>>>>> origin/dev

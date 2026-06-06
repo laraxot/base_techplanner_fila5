@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzione chiamate dinamiche ApplyMetatagToPanelAction → MetatagData
 
 ## Contesto
@@ -62,3 +63,12 @@ Questo pattern consente:
 6. Le eccezioni sono gestite e documentate
 7. I valori null sono esplicitamente dichiarati
 8. Le strutture dati complesse sono tipizzate con array shapes
+=======
+---
+module: theme
+topic: phpstan-callynamic-panel-metatagdata
+canonical: ../../../Themes/docs/shared-components/phpstan-call-dynamic-panel-metatagdata.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-call-dynamic-panel-metatagdata.md
+>>>>>>> origin/dev

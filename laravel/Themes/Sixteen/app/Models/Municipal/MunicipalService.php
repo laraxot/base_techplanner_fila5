@@ -4,7 +4,13 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Casts\Attribute;
+=======
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Collection;
+>>>>>>> origin/dev
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -19,11 +25,125 @@ use Illuminate\Support\Str;
  *
  * Rappresenta i servizi erogati dall'ente ai cittadini
  * secondo l'ontologia AGID e le specifiche dei servizi pubblici
+<<<<<<< HEAD
+=======
+ *
+ * @property int $id
+ * @property string $name
+ * @property string|null $slug
+ * @property string|null $description
+ * @property string|null $short_description
+ * @property string $service_type
+ * @property string|null $category
+ * @property string|null $subcategory
+ * @property int|null $organizational_unit_id
+ * @property int|null $parent_service_id
+ * @property string $service_status
+ * @property string $service_level
+ * @property array|null $target_audience
+ * @property array|null $geographic_coverage
+ * @property array|null $requirements
+ * @property array|null $procedures
+ * @property array|null $required_documents
+ * @property array|null $costs
+ * @property string|null $processing_time
+ * @property array|null $delivery_methods
+ * @property array|null $digital_channels
+ * @property array|null $physical_locations
+ * @property array|null $opening_hours
+ * @property bool $appointment_required
+ * @property string|null $appointment_url
+ * @property string|null $online_form_url
+ * @property array|null $legislation_references
+ * @property array|null $accessibility_info
+ * @property array|null $contact_info
+ * @property array|null $faq
+ * @property array|null $related_services
+ * @property array|null $service_outcomes
+ * @property array|null $quality_standards
+ * @property array|null $satisfaction_metrics
+ * @property Carbon|null $last_updated
+ * @property Carbon|null $next_review_date
+ * @property bool $is_active
+ * @property bool $is_public
+ * @property bool $is_digital
+ * @property bool $is_accessible
+ * @property int $priority_level
+ * @property array|null $metadata
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Carbon|null $deleted_at
+ * @property-read OrganizationalUnit|null $organizationalUnit
+ * @property-read self|null $parentService
+ * @property-read Collection<int, self> $subServices
+ * @property-read Collection<int, ContactPoint> $contacts
+ * @property-read Collection<int, PublicDocument> $documents
+ * @property-read Collection<int, MunicipalLocation> $locations
+>>>>>>> origin/dev
  */
 class MunicipalService extends Model
 {
     use HasFactory, SoftDeletes;
 
+<<<<<<< HEAD
+=======
+    /**
+     * Tipologie di servizio secondo AGID
+     */
+    public const SERVICE_TYPES = [
+        'administrative' => 'Servizio Amministrativo',
+        'demographic' => 'Servizio Demografico',
+        'social' => 'Servizio Sociale',
+        'educational' => 'Servizio Educativo',
+        'cultural' => 'Servizio Culturale',
+        'sports' => 'Servizio Sportivo',
+        'environmental' => 'Servizio Ambientale',
+        'urban_planning' => 'Servizio Urbanistico',
+        'economic' => 'Servizio Economico',
+        'tourism' => 'Servizio Turistico',
+        'transport' => 'Servizio Trasporti',
+        'safety' => 'Servizio Sicurezza',
+        'health' => 'Servizio Sanitario',
+        'digital' => 'Servizio Digitale',
+        'other' => 'Altro',
+    ];
+
+    /**
+     * Stati del servizio
+     */
+    public const SERVICE_STATUSES = [
+        'active' => 'Attivo',
+        'suspended' => 'Sospeso',
+        'discontinued' => 'Sospeso Definitivamente',
+        'in_development' => 'In Sviluppo',
+        'testing' => 'In Fase di Test',
+        'maintenance' => 'In Manutenzione',
+    ];
+
+    /**
+     * Livelli di servizio
+     */
+    public const SERVICE_LEVELS = [
+        'essential' => 'Servizio Essenziale',
+        'standard' => 'Servizio Standard',
+        'premium' => 'Servizio Premium',
+        'emergency' => 'Servizio di Emergenza',
+    ];
+
+    /**
+     * Metodi di erogazione
+     */
+    public const DELIVERY_METHODS = [
+        'online' => 'Online',
+        'in_person' => 'Di Persona',
+        'phone' => 'Telefonico',
+        'email' => 'Email',
+        'mail' => 'Posta',
+        'mobile_app' => 'App Mobile',
+        'kiosk' => 'Chiosco Digitale',
+    ];
+
+>>>>>>> origin/dev
     protected $table = 'sixteen_municipal_services';
 
     protected $fillable = [
@@ -101,6 +221,7 @@ class MunicipalService extends Model
     ];
 
     /**
+<<<<<<< HEAD
      * Tipologie di servizio secondo AGID
      */
     public const SERVICE_TYPES = [
@@ -157,6 +278,8 @@ class MunicipalService extends Model
     ];
 
     /**
+=======
+>>>>>>> origin/dev
      * Relazione con l'unità organizzativa responsabile
      */
     public function organizationalUnit(): BelongsTo
@@ -262,6 +385,7 @@ class MunicipalService extends Model
     }
 
     /**
+<<<<<<< HEAD
      * Accessor per il nome del tipo di servizio
      */
     protected function serviceTypeName(): Attribute
@@ -339,6 +463,8 @@ class MunicipalService extends Model
     }
 
     /**
+=======
+>>>>>>> origin/dev
      * Ottiene i requisiti formattati
      */
     public function getFormattedRequirements(): array
@@ -476,7 +602,11 @@ class MunicipalService extends Model
         return collect($this->costs)->every(function ($cost) {
             $amount = is_array($cost) ? ($cost['amount'] ?? 0) : $cost;
 
+<<<<<<< HEAD
             return $amount == 0;
+=======
+            return $amount === 0;
+>>>>>>> origin/dev
         });
     }
 
@@ -557,21 +687,112 @@ class MunicipalService extends Model
     }
 
     /**
+<<<<<<< HEAD
      * Boot del modello
      */
     protected static function boot()
+=======
+     * Accessor per il nome del tipo di servizio
+     */
+    protected function serviceTypeName(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => self::SERVICE_TYPES[$this->service_type] ?? $this->service_type
+        );
+    }
+
+    /**
+     * Accessor per il nome dello stato
+     */
+    protected function serviceStatusName(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => self::SERVICE_STATUSES[$this->service_status] ?? $this->service_status
+        );
+    }
+
+    /**
+     * Accessor per il nome del livello
+     */
+    protected function serviceLevelName(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => self::SERVICE_LEVELS[$this->service_level] ?? $this->service_level
+        );
+    }
+
+    /**
+     * Accessor per verificare se il servizio è disponibile
+     */
+    protected function isAvailable(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->is_active && $this->service_status === 'active'
+        );
+    }
+
+    /**
+     * Accessor per verificare se richiede appuntamento
+     */
+    protected function requiresAppointment(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->appointment_required
+        );
+    }
+
+    /**
+     * Accessor per l'URL del servizio
+     */
+    protected function url(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => route('municipal.services.show', $this->slug)
+        );
+    }
+
+    /**
+     * Mutator per il nome (genera automaticamente lo slug)
+     */
+    protected function name(): Attribute
+    {
+        return Attribute::make(
+            set: function ($value) {
+                $this->attributes['name'] = $value;
+                if (empty($this->attributes['slug'])) {
+                    $this->attributes['slug'] = Str::slug($value);
+                }
+
+                return $value;
+            }
+        );
+    }
+
+    /**
+     * Boot del modello
+     */
+    protected static function boot(): void
+>>>>>>> origin/dev
     {
         parent::boot();
 
         // Genera slug se mancante
+<<<<<<< HEAD
         static::creating(function ($model) {
+=======
+        static::creating(function ($model): void {
+>>>>>>> origin/dev
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->name);
             }
         });
 
         // Assicura unicità dello slug
+<<<<<<< HEAD
         static::creating(function ($model) {
+=======
+        static::creating(function ($model): void {
+>>>>>>> origin/dev
             $originalSlug = $model->slug;
             $counter = 1;
 
@@ -582,7 +803,11 @@ class MunicipalService extends Model
         });
 
         // Set default values
+<<<<<<< HEAD
         static::creating(function ($model) {
+=======
+        static::creating(function ($model): void {
+>>>>>>> origin/dev
             if (is_null($model->service_status)) {
                 $model->service_status = 'active';
             }

@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
+=======
+>>>>>>> origin/dev
 use Filament\Schemas\Schema;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -14,6 +17,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 /**
@@ -63,12 +67,42 @@ class ResetPasswordWidget extends XotBaseWidget
     /**
      * Mount the widget and initialize the form.
      */
+=======
+use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+
+/**
+ * ResetPasswordWidget — token + nuova password (click sul link email).
+ *
+ * Schema da `Schemas\UserForm::getResetPasswordFormSchema()` — SSoT.
+ *
+ * @property Schema $form
+ */
+class ResetPasswordWidget extends XotBaseSchemaWidget
+{
+    protected string $view = 'user::widgets.auth.reset-password-widget';
+
+    /**
+     * @return class-string<UserForm>
+     */
+    protected static function formClass(): string
+    {
+        return UserForm::class;
+    }
+
+    protected static function schemaMethod(): string
+    {
+        return 'getResetPasswordFormSchema';
+    }
+
+>>>>>>> origin/dev
     public function mount(): void
     {
         $this->form->fill();
     }
 
     /**
+<<<<<<< HEAD
      * Configure the form for this widget.
      */
 
@@ -78,6 +112,8 @@ class ResetPasswordWidget extends XotBaseWidget
      * Implements Laravel's password reset functionality with explicit
      * type casting for security and proper error feedback.
      *
+=======
+>>>>>>> origin/dev
      * @return RedirectResponse|void
      */
     public function resetPassword()
@@ -86,19 +122,34 @@ class ResetPasswordWidget extends XotBaseWidget
 
         $reset_data = Arr::only($data, ['email', 'password', 'password_confirmation', 'token']);
         $status = Password::reset($reset_data, function (Authenticatable $user, string $password): void {
+<<<<<<< HEAD
             /* @var Model&Authenticatable $user */
+=======
+            if (! $user instanceof Model) {
+                return;
+            }
+
+>>>>>>> origin/dev
             $user->forceFill([
                 'password' => Hash::make($password),
                 'remember_token' => Str::random(60),
             ])->save();
         });
 
+<<<<<<< HEAD
         if (Password::PASSWORD_RESET === $status) {
+=======
+        if ($status === Password::PASSWORD_RESET) {
+>>>>>>> origin/dev
             session()->flash('status', __($status));
 
             return redirect()->route('login');
         }
+<<<<<<< HEAD
         /* @phpstan-ignore-next-line */
         $this->addError('email', __($status));
+=======
+        $this->addError('email', __(is_string($status) ? $status : 'passwords.generic_error'));
+>>>>>>> origin/dev
     }
 }

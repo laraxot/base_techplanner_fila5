@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Module - Third-Party Model Patterns
 
 ## Spatie Permission Package Integration
@@ -233,3 +234,12 @@ $this->tableCreate(function (Blueprint $table) {
 **Integration Status**: ✅ Fully compatible with Spatie package architecture
 **Maintenance**: Low - leverages package maintenance
 **Security**: High - benefits from package security updates
+=======
+---
+module: theme
+topic: third-party-models
+canonical: ../../../Themes/docs/shared-components/third-party-model-patterns.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/third-party-model-patterns.md
+>>>>>>> origin/dev

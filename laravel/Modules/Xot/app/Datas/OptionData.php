@@ -10,6 +10,7 @@ use Spatie\LaravelData\Data;
  * Class OptionData - Gestisce le opzioni di configurazione per il framework Laraxot.
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  */
+<<<<<<< HEAD
 class OptionData extends Data
 {
     /**
@@ -18,6 +19,16 @@ class OptionData extends Data
      * @param int    $cache_ttl    TTL cache in secondi
      * @param string $prefix       Prefisso per le chiavi delle opzioni
      * @param array  $autoload     Opzioni da caricare automaticamente
+=======
+final class OptionData extends Data
+{
+    /**
+     * @param  string  $cache_driver  Driver per la cache delle opzioni
+     * @param  bool  $enable_cache  Se abilitare la cache delle opzioni
+     * @param  int  $cache_ttl  TTL cache in secondi
+     * @param  string  $prefix  Prefisso per le chiavi delle opzioni
+     * @param  array  $autoload  Opzioni da caricare automaticamente
+>>>>>>> origin/dev
      */
     public function __construct(
         public readonly string $cache_driver = 'file',
@@ -25,14 +36,22 @@ class OptionData extends Data
         public readonly int $cache_ttl = 86400,
         public readonly string $prefix = 'options_',
         public readonly array $autoload = ['site_name', 'site_description', 'site_logo'],
+<<<<<<< HEAD
     ) {
     }
+=======
+    ) {}
+>>>>>>> origin/dev
 
     /**
      * Create a new instance of OptionData with default values.
      */
     public static function make(): static
     {
+<<<<<<< HEAD
         return new static();
+=======
+        return new self();
+>>>>>>> origin/dev
     }
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan - User
 
 ## Configurazione
@@ -13,3 +14,12 @@ Level 10
 
 - [Configurazione Root](../../Xot/docs/phpstan/)
 
+=======
+---
+module: theme
+topic: phpstan_fixes
+canonical: ../../../Themes/docs/shared-components/phpstan_fixes.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan_fixes.md
+>>>>>>> origin/dev

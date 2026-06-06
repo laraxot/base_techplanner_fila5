@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Datas;
 
+<<<<<<< HEAD
 uses(\Modules\User\Tests\TestCase::class);
+=======
+uses(TestCase::class);
+>>>>>>> origin/dev
 
 use Modules\User\Datas\DeviceData;
 use Modules\User\Datas\FilamentShieldData;
@@ -17,6 +21,10 @@ use Modules\User\Datas\PermissionTableNamesData;
 use Modules\User\Datas\ShieldResourceData;
 use Modules\User\Datas\SocialProviderData;
 use Modules\User\Datas\SuperAdminData;
+<<<<<<< HEAD
+=======
+use Modules\User\Tests\TestCase;
+>>>>>>> origin/dev
 
 test('PermissionTableNamesData can be instantiated', function () {
     expect(class_exists(PermissionTableNamesData::class))->toBeTrue();

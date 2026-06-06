@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filosofia degli Strumenti di Qualità - La Trinità del Codice Perfetto
 
 ## 🎯 Overview - I Tre Pilastri
@@ -840,3 +841,12 @@ else {
 **Revision**: 1.0
 
 **Ora posso procedere con l'eliminazione sistematica! ⚔️**
+=======
+---
+module: theme
+topic: quality-tools
+canonical: ../../../Themes/docs/shared-components/quality-tools-philosophy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-tools-philosophy.md
+>>>>>>> origin/dev

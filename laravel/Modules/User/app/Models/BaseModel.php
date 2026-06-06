@@ -11,7 +11,10 @@ use Modules\Xot\Models\XotBaseModel;
  */
 abstract class BaseModel extends XotBaseModel
 {
+<<<<<<< HEAD
     /** @var string */
+=======
+>>>>>>> origin/dev
     protected $connection = 'user';
 
     /** @return array<string, string> */

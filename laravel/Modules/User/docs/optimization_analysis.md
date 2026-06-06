@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # user module documentation optimization analysis
 
 ## current state analysis
@@ -95,3 +96,12 @@ docs/
 - **navigation**: logical grouping and clear hierarchy
 - **performance**: faster search and access
 - **consistency**: uniform documentation standards
+=======
+---
+module: theme
+topic: optimization_analysis
+canonical: ../../../Themes/docs/shared-components/optimization_analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/optimization_analysis.md
+>>>>>>> origin/dev

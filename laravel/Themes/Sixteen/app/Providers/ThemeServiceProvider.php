@@ -94,6 +94,13 @@ class ThemeServiceProvider extends XotBaseThemeServiceProvider
         $this->loadViewsFrom(__DIR__.'/../../resources/views', 'pub_theme');
         $this->loadTranslationsFrom(__DIR__.'/../../lang', 'pub_theme');
 
+<<<<<<< HEAD
+=======
+        // Register 'sixteen' namespace for backward compatibility
+        $this->loadViewsFrom(__DIR__.'/../../resources/views', 'sixteen');
+        $this->loadTranslationsFrom(__DIR__.'/../../lang', 'sixteen');
+
+>>>>>>> origin/dev
         // Caricamento delle configurazioni del tema
         $this->loadConfigFrom(__DIR__.'/../../config', 'sixteen');
     }
@@ -156,12 +163,20 @@ class ThemeServiceProvider extends XotBaseThemeServiceProvider
     {
         // Register SPID Auth Service
         $this->app->singleton(SpidAuthService::class, function ($app) {
+<<<<<<< HEAD
             return new SpidAuthService;
+=======
+            return new SpidAuthService();
+>>>>>>> origin/dev
         });
 
         // Register CIE Auth Service
         $this->app->singleton(CieAuthService::class, function ($app) {
+<<<<<<< HEAD
             return new CieAuthService;
+=======
+            return new CieAuthService();
+>>>>>>> origin/dev
         });
 
         // Aliases for easier access
@@ -265,7 +280,11 @@ class ThemeServiceProvider extends XotBaseThemeServiceProvider
         $this->app['view']->addNamespace('layouts', __DIR__.'/../../resources/views/layouts');
 
         // Enhanced composer per layout AGID-compliant
+<<<<<<< HEAD
         $this->app['view']->composer('layouts.guest-agid', function ($view) {
+=======
+        $this->app['view']->composer('layouts.guest-agid', function ($view): void {
+>>>>>>> origin/dev
             $themeService = app('sixteen.theme');
 
             $view->with([

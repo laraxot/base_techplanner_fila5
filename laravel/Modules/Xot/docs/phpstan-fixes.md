@@ -147,6 +147,7 @@ public function __construct(array $data = [])
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * Handle dynamic method calls.
  */
@@ -157,6 +158,8 @@ public function __call(string $method, array $parameters) // PRIMA DUPLICAZIONE
 
 /**
 >>>>>>> 013c0d2 (.)
+=======
+>>>>>>> origin/dev
  * Get the title.
  */
 public function getTitle(): string
@@ -385,4 +388,8 @@ find Modules -name "*.php" -exec php -l {} \; | grep -v "No syntax errors"
 - **Religion**: Strong typing attraverso PHPDoc e generics
 - **Zen**: Codice pulito = mente serena
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2026-02-26*
+=======
+*Ultimo aggiornamento: 2026-02-26*
+>>>>>>> origin/dev

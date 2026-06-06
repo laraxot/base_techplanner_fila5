@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura Pagine Filament - Modulo UI
 
 ## Panoramica
@@ -180,3 +181,12 @@ class S3Test extends XotBasePage
 - [UI Module README](./readme.md)
 - [Blade Components](./blade-components.md)
 
+=======
+---
+module: theme
+topic: filament-pages-structure
+canonical: ../../../Themes/docs/shared-components/filament-pages-structure.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-pages-structure.md
+>>>>>>> origin/dev

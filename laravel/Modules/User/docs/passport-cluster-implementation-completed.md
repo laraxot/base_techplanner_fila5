@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Passport Cluster - Implementazione Completata
 
 **Data**: 2025-01-22
@@ -186,3 +187,12 @@ Modules/User/app/Filament/Clusters/Passport/
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.0
 **Status**: ✅ Completato e verificato (PHPStan L10)
+=======
+---
+module: theme
+topic: passport-cluster-implementation-completed
+canonical: ../../../Themes/docs/shared-components/passport-cluster-implementation-completed.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-implementation-completed.md
+>>>>>>> origin/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura Traduzioni Espansa - Modulo Xot
 
 ## Scopo
@@ -193,3 +194,12 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 **Stato**: Documentazione completata, implementazione in corso
 **Priorità**: Media (file già corretto linguisticamente)
 **Responsabile**: Sistema automatico DRY/KISS
+=======
+---
+module: theme
+topic: translation-structure-expanded
+canonical: ../../../../Themes/docs/shared-components/translation-structure-expanded-Modules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/translation-structure-expanded-Modules.md
+>>>>>>> origin/dev

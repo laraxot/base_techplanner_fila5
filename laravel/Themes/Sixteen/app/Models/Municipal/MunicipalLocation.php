@@ -4,7 +4,13 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Casts\Attribute;
+=======
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Collection;
+>>>>>>> origin/dev
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -18,11 +24,135 @@ use Illuminate\Support\Str;
  *
  * Rappresenta sedi, uffici, punti di erogazione servizi
  * e altre location dell'ente secondo l'ontologia AGID
+<<<<<<< HEAD
+=======
+ *
+ * @property int $id
+ * @property string $name
+ * @property string|null $slug
+ * @property string|null $description
+ * @property string|null $short_description
+ * @property string $location_type
+ * @property string|null $category
+ * @property string|null $subcategory
+ * @property string|null $address
+ * @property string|null $civic_number
+ * @property string|null $postal_code
+ * @property string|null $city
+ * @property string|null $province
+ * @property string|null $region
+ * @property string|null $country
+ * @property array|null $coordinates
+ * @property string|null $floor
+ * @property string|null $room
+ * @property array|null $building_info
+ * @property array|null $opening_hours
+ * @property bool $public_access
+ * @property bool $appointment_required
+ * @property string|null $appointment_url
+ * @property string|null $phone
+ * @property string|null $email
+ * @property string|null $pec
+ * @property string|null $fax
+ * @property string|null $website
+ * @property array|null $directions
+ * @property array|null $parking_info
+ * @property array|null $public_transport
+ * @property array|null $accessibility_info
+ * @property array|null $facilities
+ * @property array|null $equipment
+ * @property int|null $capacity
+ * @property array|null $services_available
+ * @property array|null $staff_info
+ * @property array|null $manager_info
+ * @property array|null $emergency_contacts
+ * @property array|null $safety_info
+ * @property string|null $image
+ * @property array|null $gallery
+ * @property string|null $virtual_tour_url
+ * @property string|null $map_embed
+ * @property string|null $place_id
+ * @property bool $is_active
+ * @property bool $is_public
+ * @property bool $is_headquarters
+ * @property bool $is_accessible
+ * @property int $priority_level
+ * @property array|null $metadata
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Carbon|null $deleted_at
+ * @property-read Collection<int, ContactPoint> $contacts
+ * @property-read Collection<int, OrganizationalUnit> $organizationalUnits
+ * @property-read Collection<int, MunicipalService> $services
+ * @property-read Collection<int, MunicipalEvent> $events
+>>>>>>> origin/dev
  */
 class MunicipalLocation extends Model
 {
     use HasFactory, SoftDeletes;
 
+<<<<<<< HEAD
+=======
+    /**
+     * Tipologie di location secondo AGID
+     */
+    public const LOCATION_TYPES = [
+        'headquarters' => 'Sede Principale',
+        'office' => 'Ufficio',
+        'service_center' => 'Centro Servizi',
+        'library' => 'Biblioteca',
+        'school' => 'Scuola',
+        'sports_facility' => 'Impianto Sportivo',
+        'cultural_center' => 'Centro Culturale',
+        'healthcare' => 'Struttura Sanitaria',
+        'social_center' => 'Centro Sociale',
+        'cemetery' => 'Cimitero',
+        'market' => 'Mercato',
+        'parking' => 'Parcheggio',
+        'park' => 'Parco',
+        'square' => 'Piazza',
+        'monument' => 'Monumento',
+        'tourist_office' => 'Ufficio Turistico',
+        'waste_center' => 'Centro Raccolta Rifiuti',
+        'emergency' => 'Struttura di Emergenza',
+        'other' => 'Altro',
+    ];
+
+    /**
+     * Categorie principali
+     */
+    public const CATEGORIES = [
+        'administrative' => 'Amministrativo',
+        'cultural' => 'Culturale',
+        'educational' => 'Educativo',
+        'sports' => 'Sportivo',
+        'social' => 'Sociale',
+        'healthcare' => 'Sanitario',
+        'tourist' => 'Turistico',
+        'commercial' => 'Commerciale',
+        'environmental' => 'Ambientale',
+        'emergency' => 'Emergenza',
+    ];
+
+    /**
+     * Servizi disponibili
+     */
+    public const AVAILABLE_SERVICES = [
+        'citizen_services' => 'Servizi al Cittadino',
+        'document_collection' => 'Ritiro Documenti',
+        'payments' => 'Pagamenti',
+        'appointments' => 'Appuntamenti',
+        'information' => 'Informazioni',
+        'complaints' => 'Reclami/Segnalazioni',
+        'wifi' => 'WiFi Gratuito',
+        'photocopies' => 'Fotocopie',
+        'parking' => 'Parcheggio',
+        'accessibility' => 'Accessibilità',
+        'translation' => 'Servizi di Traduzione',
+        'assistance' => 'Assistenza',
+    ];
+
+>>>>>>> origin/dev
     protected $table = 'sixteen_municipal_locations';
 
     protected $fillable = [
@@ -106,6 +236,7 @@ class MunicipalLocation extends Model
     ];
 
     /**
+<<<<<<< HEAD
      * Tipologie di location secondo AGID
      */
     public const LOCATION_TYPES = [
@@ -165,6 +296,8 @@ class MunicipalLocation extends Model
     ];
 
     /**
+=======
+>>>>>>> origin/dev
      * Relazione con i punti di contatto
      */
     public function contacts(): MorphMany
@@ -266,6 +399,7 @@ class MunicipalLocation extends Model
     }
 
     /**
+<<<<<<< HEAD
      * Accessor per il nome del tipo di location
      */
     protected function locationTypeName(): Attribute
@@ -389,6 +523,8 @@ class MunicipalLocation extends Model
     }
 
     /**
+=======
+>>>>>>> origin/dev
      * Ottiene gli orari di apertura formattati
      */
     public function getFormattedOpeningHours(): array
@@ -660,21 +796,158 @@ class MunicipalLocation extends Model
     }
 
     /**
+<<<<<<< HEAD
      * Boot del modello
      */
     protected static function boot()
+=======
+     * Accessor per il nome del tipo di location
+     */
+    protected function locationTypeName(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => self::LOCATION_TYPES[$this->location_type] ?? $this->location_type
+        );
+    }
+
+    /**
+     * Accessor per il nome della categoria
+     */
+    protected function categoryName(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => self::CATEGORIES[$this->category] ?? $this->category
+        );
+    }
+
+    /**
+     * Accessor per l'indirizzo completo
+     */
+    protected function fullAddress(): Attribute
+    {
+        return Attribute::make(
+            get: function () {
+                $address = $this->address;
+
+                if ($this->civic_number) {
+                    $address .= ', '.$this->civic_number;
+                }
+
+                if ($this->postal_code) {
+                    $address .= ', '.$this->postal_code;
+                }
+
+                if ($this->city) {
+                    $address .= ' '.$this->city;
+                }
+
+                if ($this->province) {
+                    $address .= ' ('.$this->province.')';
+                }
+
+                return $address;
+            }
+        );
+    }
+
+    /**
+     * Accessor per verificare se ha coordinate GPS
+     */
+    protected function hasCoordinates(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => isset($this->coordinates['lat']) && isset($this->coordinates['lng'])
+        );
+    }
+
+    /**
+     * Accessor per la latitudine
+     */
+    protected function latitude(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->coordinates['lat'] ?? null
+        );
+    }
+
+    /**
+     * Accessor per la longitudine
+     */
+    protected function longitude(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->coordinates['lng'] ?? null
+        );
+    }
+
+    /**
+     * Accessor per l'URL della sede
+     */
+    protected function url(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => route('municipal.locations.show', $this->slug)
+        );
+    }
+
+    /**
+     * Accessor per l'URL di Google Maps
+     */
+    protected function googleMapsUrl(): Attribute
+    {
+        return Attribute::make(
+            get: function () {
+                if ($this->has_coordinates) {
+                    return "https://www.google.com/maps?q={$this->latitude},{$this->longitude}";
+                }
+
+                return 'https://www.google.com/maps/search/'.urlencode($this->full_address);
+            }
+        );
+    }
+
+    /**
+     * Mutator per il nome (genera automaticamente lo slug)
+     */
+    protected function name(): Attribute
+    {
+        return Attribute::make(
+            set: function ($value) {
+                $this->attributes['name'] = $value;
+                if (empty($this->attributes['slug'])) {
+                    $this->attributes['slug'] = Str::slug($value);
+                }
+
+                return $value;
+            }
+        );
+    }
+
+    /**
+     * Boot del modello
+     */
+    protected static function boot(): void
+>>>>>>> origin/dev
     {
         parent::boot();
 
         // Genera slug se mancante
+<<<<<<< HEAD
         static::creating(function ($model) {
+=======
+        static::creating(function ($model): void {
+>>>>>>> origin/dev
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->name);
             }
         });
 
         // Assicura unicità dello slug
+<<<<<<< HEAD
         static::creating(function ($model) {
+=======
+        static::creating(function ($model): void {
+>>>>>>> origin/dev
             $originalSlug = $model->slug;
             $counter = 1;
 
@@ -685,7 +958,11 @@ class MunicipalLocation extends Model
         });
 
         // Set default values
+<<<<<<< HEAD
         static::creating(function ($model) {
+=======
+        static::creating(function ($model): void {
+>>>>>>> origin/dev
             if (is_null($model->priority_level)) {
                 $model->priority_level = $model->is_headquarters ? 5 : 1;
             }

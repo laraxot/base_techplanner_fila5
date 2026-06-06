@@ -271,6 +271,7 @@ if (isset($record->email)) {
 - User/Filament/Resources/BaseProfileResource
 - User/Filament/Resources/UserResource
 - Media/Filament/Resources (3 file)
+<<<<<<< HEAD
 <<<<<<< .merge_file_nSAyMA
 - healthcare_app/Filament (2 file)
 =======
@@ -280,6 +281,10 @@ if (isset($record->email)) {
 - ModuloEsempio/Filament (2 file)
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_hPNDok
+=======
+- healthcare_app/Filament (2 file)
+- ExternalProject/Filament (2 file)
+>>>>>>> origin/dev
 
 **Impact**: Alto (UI user-facing)
 **Risk**: Medio (bugs visibili)
@@ -407,6 +412,7 @@ if (method_exists($record, 'getUrl')) {
 | Xot | 12 | High | Alta |
 | User | 5 | Critical | Media |
 | Media | 3 | High | Bassa |
+<<<<<<< HEAD
 <<<<<<< .merge_file_nSAyMA
 | healthcare_app | 2 | Medium | Bassa |
 =======
@@ -416,6 +422,10 @@ if (method_exists($record, 'getUrl')) {
 | ModuloEsempio | 2 | Medium | Bassa |
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_hPNDok
+=======
+| healthcare_app | 2 | Medium | Bassa |
+| ExternalProject | 2 | Medium | Bassa |
+>>>>>>> origin/dev
 | Others | 52 (docs) | Low | Zero |
 
 ### Estimated Effort

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SEO & Frontend Optimization Guide - Sixteen Theme
 
 ## Executive Summary
@@ -1028,3 +1029,12 @@ Alpine.data('liveStats', () => ({
 
 **Document Version**: 1.0
 **Next Review**: January 2026
+=======
+---
+module: theme
+topic: seo_frontend_optimization_guide
+canonical: ../../docs/shared-components/seo-frontend-optimization-guide.md
+---
+
+See canonical documentation: ../../docs/shared-components/seo-frontend-optimization-guide.md
+>>>>>>> origin/dev

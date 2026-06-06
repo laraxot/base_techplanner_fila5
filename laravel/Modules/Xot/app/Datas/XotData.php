@@ -14,13 +14,21 @@ use Modules\User\Contracts\TeamContract;
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
+<<<<<<< HEAD
 
 use function Safe\realpath;
 
+=======
+>>>>>>> origin/dev
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
+=======
+use function Safe\realpath;
+
+>>>>>>> origin/dev
 /**
  * Class Modules\Xot\Datas\XotData.
  * ----.
@@ -119,6 +127,10 @@ class XotData extends Data implements Wireable
         );
         Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
 
+<<<<<<< HEAD
+=======
+        /* @var class-string<Model&UserContract> $class */
+>>>>>>> origin/dev
         return $class;
     }
 
@@ -129,17 +141,41 @@ class XotData extends Data implements Wireable
         if (! in_array('email', $userInstance->getFillable(), true)) {
             throw new \Exception("Attribute 'email' not found in model ".$userInstance::class);
         }
+<<<<<<< HEAD
         $user = $user_class::firstOrCreate(['email' => $email]);
         /*
          * if (! $user) {
          * throw new \Exception('user not found for email '.$email);
          * }
          */
+=======
+
+        /** @var (Model&UserContract)|null $user */
+        $user = $user_class::query()->where('email', $email)->first();
+
+        if ($user === null) {
+            throw new \Exception('user not found for email '.$email);
+        }
+
+>>>>>>> origin/dev
         Assert::implementsInterface($user, UserContract::class, '['.__LINE__.']['.class_basename($this).']');
 
         return $user;
     }
 
+<<<<<<< HEAD
+=======
+    public function findUserByEmail(string $email): ?UserContract
+    {
+        $userClass = $this->getUserClass();
+
+        /** @var (Model&UserContract)|null $user */
+        $user = $userClass::query()->where('email', $email)->first();
+
+        return $user;
+    }
+
+>>>>>>> origin/dev
     /**
      * @return class-string<Model&TeamContract>
      */
@@ -158,7 +194,14 @@ class XotData extends Data implements Wireable
             '['.$this->team_class.']['.__LINE__.']['.class_basename($this).']',
         );
 
+<<<<<<< HEAD
         return $this->team_class;
+=======
+        /** @var class-string<Model&TeamContract> $teamClass */
+        $teamClass = $this->team_class;
+
+        return $teamClass;
+>>>>>>> origin/dev
     }
 
     /**
@@ -185,7 +228,14 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$this->tenant_class.']',
         );
 
+<<<<<<< HEAD
         return $this->tenant_class;
+=======
+        /** @var class-string<Model&TenantContract> $tenantClass */
+        $tenantClass = $this->tenant_class;
+
+        return $tenantClass;
+>>>>>>> origin/dev
     }
 
     /**
@@ -234,7 +284,11 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
+<<<<<<< HEAD
         /* @var class-string<Model&ProfileContract> */
+=======
+        /* @var class-string<Model&ProfileContract> $class */
+>>>>>>> origin/dev
         return $class;
     }
 
@@ -276,7 +330,11 @@ class XotData extends Data implements Wireable
     public function iAmSuperAdmin(): bool
     {
         $user = Auth::user();
+<<<<<<< HEAD
         if (null === $user) {
+=======
+        if ($user === null) {
+>>>>>>> origin/dev
             return false;
         }
 
@@ -287,12 +345,20 @@ class XotData extends Data implements Wireable
         // Utilizziamo un'asserzione per garantire che hasRole restituisca un booleano
         $result = $user->hasRole('super-admin');
 
+<<<<<<< HEAD
         return true === $result;
+=======
+        return $result === true;
+>>>>>>> origin/dev
     }
 
     public function getProfileModel(): ProfileContract
     {
+<<<<<<< HEAD
         if (null !== $this->profile) {
+=======
+        if ($this->profile !== null) {
+>>>>>>> origin/dev
             return $this->profile;
         }
 
@@ -310,7 +376,11 @@ class XotData extends Data implements Wireable
     /**
      * Update the XotData instance.
      *
+<<<<<<< HEAD
      * @param array<string, mixed> $data
+=======
+     * @param  array<string, mixed>  $data
+>>>>>>> origin/dev
      */
     public function update(array $data): self
     {
@@ -382,6 +452,10 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
+<<<<<<< HEAD
+=======
+        /* @var class-string<Model&UserContract> $class */
+>>>>>>> origin/dev
         return $class;
     }
 
@@ -398,10 +472,17 @@ class XotData extends Data implements Wireable
             ->append('Resource')
             ->toString();
 
+<<<<<<< HEAD
         // If the class doesn't exist, try the alternative path (app/Filament/Resources)
         if (! class_exists($resourceClass)) {
             $resourceClass =
                 'Modules\\'.$moduleName.'\\app\\Filament\\Resources\\'.class_basename($class).'Resource';
+=======
+        // If missing, fallback (still PSR-4: NEVER put literal "app\" in the PHP namespace segment)
+        if (! class_exists($resourceClass)) {
+            $resourceClass =
+                'Modules\\'.$moduleName.'\\Filament\\Resources\\'.class_basename($class).'Resource';
+>>>>>>> origin/dev
         }
 
         if (! class_exists($resourceClass)) {
@@ -445,7 +526,11 @@ class XotData extends Data implements Wireable
 
         // $enum_class = Arr::get($user_class::casts(),'type',null);
         $enum_class = Arr::get($castsResult, 'type', null);
+<<<<<<< HEAD
         if (null === $enum_class) {
+=======
+        if ($enum_class === null) {
+>>>>>>> origin/dev
             $enum_class = Str::of($user_class)
                 ->replace('\\Models\\', '\\Enums\\')
                 ->append('TypeEnum')
@@ -472,6 +557,7 @@ class XotData extends Data implements Wireable
         if (! $this->force_ssl) {
             return false;
         }
+<<<<<<< HEAD
         if (isset($_SERVER['SERVER_NAME']) && 'localhost' === $_SERVER['SERVER_NAME']) {
             return false;
         }
@@ -480,6 +566,16 @@ class XotData extends Data implements Wireable
         }
         // AWS ELB
         if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && 'https' === $_SERVER['HTTP_X_FORWARDED_PROTO']) {
+=======
+        if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] === 'localhost') {
+            return false;
+        }
+        if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] === '127.0.0.1') {
+            return false;
+        }
+        // AWS ELB
+        if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+>>>>>>> origin/dev
             return true;
         }
 

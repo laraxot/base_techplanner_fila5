@@ -10,13 +10,21 @@ namespace Modules\Xot\Actions\Filament;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 
 use function Safe\file;
 
+=======
+>>>>>>> origin/dev
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Finder\SplFileInfo as File;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
+=======
+use function Safe\file;
+
+>>>>>>> origin/dev
 class GenerateFormByFileAction
 {
     use QueueableAction;
@@ -24,8 +32,12 @@ class GenerateFormByFileAction
     /**
      * Genera un form Filament basato su un file di risorsa.
      *
+<<<<<<< HEAD
      * @param File $file Il file della risorsa Filament
      *
+=======
+     * @param  File  $file  Il file della risorsa Filament
+>>>>>>> origin/dev
      * @return int Numero di input aggiunti
      */
     public function execute(File $file): int
@@ -86,7 +98,15 @@ class GenerateFormByFileAction
         Assert::string($file_name = $form_method->getFileName(), '['.__LINE__.']['.class_basename($this).']');
         // $contents= $file->getContents();
         $source = file($file_name);
+<<<<<<< HEAD
         $body = implode('', \array_slice($source, $start_line, $length));
+=======
+        Assert::isArray($source);
+        $body = '';
+        foreach (\array_slice($source, $start_line, $length) as $line) {
+            $body .= (string) $line;
+        }
+>>>>>>> origin/dev
 
         // Otteniamo i metodi della classe risorsa
         $resourceMethods = get_class_methods($resourceInstance);
@@ -95,7 +115,11 @@ class GenerateFormByFileAction
         $inputCount = 0;
         foreach ($fillable as $field) {
             if (in_array($field, $resourceMethods)) {
+<<<<<<< HEAD
                 ++$inputCount;
+=======
+                $inputCount++;
+>>>>>>> origin/dev
             }
         }
 
@@ -105,7 +129,11 @@ class GenerateFormByFileAction
     /**
      * Mostra informazioni di debug su un file.
      *
+<<<<<<< HEAD
      * @param File $file Il file da analizzare
+=======
+     * @param  File  $file  Il file da analizzare
+>>>>>>> origin/dev
      */
     public function ddFile(File $file): void
     {

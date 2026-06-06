@@ -3,10 +3,14 @@
 ## 🎯 Obiettivo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa documentazione è stata creata per risolvere i problemi comuni relativi alle licenze FullCalendar Scheduler nel progetto Laraxot, basandosi sulla ricerca approfondita della documentazione ufficiale di FullCalendar e dei problemi noti nella community.
 =======
 Questa documentazione è stata creata per risolvere i problemi comuni relativi alle licenze FullCalendar Scheduler nel progetto healthcare_app, basandosi sulla ricerca approfondita della documentazione ufficiale di FullCalendar e dei problemi noti nella community.
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+Questa documentazione è stata creata per risolvere i problemi comuni relativi alle licenze FullCalendar Scheduler nel progetto healthcare_app, basandosi sulla ricerca approfondita della documentazione ufficiale di FullCalendar e dei problemi noti nella community.
+>>>>>>> origin/dev
 
 ## 📚 Documenti Creati
 
@@ -16,10 +20,14 @@ Questa documentazione è stata creata per risolvere i problemi comuni relativi a
 - Copertura completa di tutti i problemi noti
 - Soluzioni specifiche per Laravel/Filament
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Best practices per ambiente sanitario Laraxot
 =======
 - Best practices per ambiente sanitario healthcare_app
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+- Best practices per ambiente sanitario healthcare_app
+>>>>>>> origin/dev
 
 ### 2. **Riferimento Rapido**
 📄 `fullcalendar-scheduler-quick-reference.md`
@@ -78,10 +86,14 @@ private function getFullCalendarPlugin(): FilamentFullCalendarPlugin
             'resourceTimeline', 'resourceDayGrid', // Premium
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Configurazioni Laraxot specifiche...
 =======
         // Configurazioni healthcare_app specifiche...
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+        // Configurazioni healthcare_app specifiche...
+>>>>>>> origin/dev
     ]);
 }
 ```
@@ -109,10 +121,14 @@ FULLCALENDAR_MAX_EVENTS=100
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🏥 Specifiche Laraxot
 =======
 ## 🏥 Specifiche healthcare_app
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+## 🏥 Specifiche healthcare_app
+>>>>>>> origin/dev
 
 ### Business Hours Sanitarie
 ```javascript
@@ -200,10 +216,14 @@ Log::info('FullCalendar configured', [
 ✅ **Bug versioning** - Soluzioni per v5.x e v6.x
 ✅ **Ambiente-specific** - Gestione produzione/sviluppo
 <<<<<<< HEAD
+<<<<<<< HEAD
 ✅ **Laraxot integration** - Configurazioni sanitarie specifiche
 =======
 ✅ **healthcare_app integration** - Configurazioni sanitarie specifiche
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+✅ **healthcare_app integration** - Configurazioni sanitarie specifiche
+>>>>>>> origin/dev
 
 ### Benefici
 - **Riduzione troubleshooting time** - Soluzioni immediate disponibili
@@ -230,19 +250,27 @@ Log::info('FullCalendar configured', [
 - Nuove versioni FullCalendar con breaking changes
 - Nuovi bug noti nella community
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Modifiche architettura Laraxot
 =======
 - Modifiche architettura healthcare_app
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+- Modifiche architettura healthcare_app
+>>>>>>> origin/dev
 - Nuovi requisiti sanitari/legali
 
 ### Come Aggiornare
 1. Verificare issue GitHub FullCalendar
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. Testare soluzioni in ambiente Laraxot
 =======
 2. Testare soluzioni in ambiente healthcare_app
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+2. Testare soluzioni in ambiente healthcare_app
+>>>>>>> origin/dev
 3. Aggiornare documenti pertinenti
 4. Aggiornare questo README
 
@@ -253,7 +281,12 @@ Log::info('FullCalendar configured', [
 **Versione FullCalendar**: v6.1.17  
 **Versione Filament**: v3.x  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Progetto**: Laraxot Multi-Tenant Healthcare Platform 
 =======
 **Progetto**: healthcare_app Multi-Tenant Healthcare Platform 
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+**Progetto**: Laraxot Multi-Tenant Healthcare Platform 
+**Progetto**: healthcare_app Multi-Tenant Healthcare Platform 
+>>>>>>> origin/dev

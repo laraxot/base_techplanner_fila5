@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models\Policies;
 
+<<<<<<< HEAD
 uses(\Modules\User\Tests\TestCase::class);
+=======
+uses(TestCase::class);
+>>>>>>> origin/dev
 
 use Modules\User\Models\Policies\AuthenticationLogPolicy;
 use Modules\User\Models\Policies\AuthenticationPolicy;
@@ -22,6 +26,10 @@ use Modules\User\Models\Policies\SocialiteUserPolicy;
 use Modules\User\Models\Policies\SocialProviderPolicy;
 use Modules\User\Models\Policies\TeamInvitationPolicy;
 use Modules\User\Models\Policies\TeamPermissionPolicy;
+<<<<<<< HEAD
+=======
+use Modules\User\Tests\TestCase;
+>>>>>>> origin/dev
 
 test('OauthClientPolicy can be instantiated', function () {
     $policy = new OauthClientPolicy();

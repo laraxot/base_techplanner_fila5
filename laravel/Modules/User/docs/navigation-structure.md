@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura Navigazione
 
 ## Overview
@@ -142,3 +143,12 @@ Event::dispatch('user.action', [
 - [Header Components](./header_components.md)
 - [Security Best Practices](./security_best_practices.md)
 - [Session Management](./session_management.md) 
+=======
+---
+module: theme
+topic: navigation-structure
+canonical: ../../../Themes/docs/shared-components/navigation-structure.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/navigation-structure.md
+>>>>>>> origin/dev

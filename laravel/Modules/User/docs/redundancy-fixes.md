@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzioni Ridondanze - Gennaio 2026
 
 ## Problema Identificato
@@ -109,3 +110,12 @@ Prima di committare, verifica:
 - [Service Provider Architecture](./service_provider_architecture.md)
 - [XotBaseRelationManager Documentation](../../xot/docs/filament/relation-managers.md)
 
+=======
+---
+module: theme
+topic: redundancy-fixes
+canonical: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
+>>>>>>> origin/dev

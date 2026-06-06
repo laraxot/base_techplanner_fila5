@@ -2,6 +2,7 @@
 
 ## Problema Identificato
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_yzjT7V
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: healthcare_app_data.customer_user`
 
@@ -17,6 +18,11 @@
 **Contesto**: Il trait `HasTenants` utilizza `belongsToManyX` per creare relazioni cross-database tra User (ptvx_user) e Customer (ptvx_data).
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_zDNzTc
+=======
+**Errore**: `SQLSTATE[HY000]: General error: 1 no such table: app_data.customer_user`
+
+**Contesto**: Il trait `HasTenants` utilizza `belongsToManyX` per creare relazioni cross-database tra User (app_user) e Customer (app_data).
+>>>>>>> origin/dev
 
 ## Analisi del Trait HasTenants
 
@@ -28,6 +34,7 @@ return $this->belongsToManyX($tenant_class);
 
 ### Flusso di Esecuzione
 1. `User::tenants()` chiama `belongsToManyX(Customer::class)`
+<<<<<<< HEAD
 <<<<<<< .merge_file_yzjT7V
 2. `belongsToManyX` rileva che User è in `healthcare_app_user` e Customer è in `healthcare_app_data`
 3. Cerca la tabella pivot `CustomerUser` nel database `healthcare_app_data`
@@ -43,11 +50,17 @@ return $this->belongsToManyX($tenant_class);
 4. Aggiunge il prefisso database: `ptvx_data.customer_user`
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_zDNzTc
+=======
+2. `belongsToManyX` rileva che User è in `app_user` e Customer è in `app_data`
+3. Cerca la tabella pivot `CustomerUser` nel database `app_data`
+4. Aggiunge il prefisso database: `app_data.customer_user`
+>>>>>>> origin/dev
 5. SQLite non riconosce questa sintassi e fallisce
 
 ## Architettura Multi-Tenant
 
 ### Separazione Database
+<<<<<<< HEAD
 <<<<<<< .merge_file_yzjT7V
 - **User Database**: `healthcare_app_user` - Gestione utenti e autenticazione
 - **Tenant Databases**: `healthcare_app_data` - Dati specifici per customer/tenant
@@ -60,6 +73,10 @@ return $this->belongsToManyX($tenant_class);
 - **Tenant Databases**: `ptvx_data` - Dati specifici per customer/tenant
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_zDNzTc
+=======
+- **User Database**: `app_user` - Gestione utenti e autenticazione
+- **Tenant Databases**: `app_data` - Dati specifici per customer/tenant
+>>>>>>> origin/dev
 - **Pivot Tables**: Nel database del tenant per isolamento dati
 
 ### Filosofia Laraxot
@@ -90,6 +107,7 @@ Sostituire `belongsToManyX` con relazioni `belongsToMany` esplicite per cross-da
 
 ### Moduli Affetti
 - **User Module**: Trait HasTenants
+<<<<<<< HEAD
 <<<<<<< .merge_file_yzjT7V
 - **healthcare_app Module**: Customer-User relationships
 =======
@@ -99,6 +117,9 @@ Sostituire `belongsToManyX` con relazioni `belongsToMany` esplicite per cross-da
 - **ModuloEsempio Module**: Customer-User relationships
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_zDNzTc
+=======
+- **ExternalProject Module**: Customer-User relationships
+>>>>>>> origin/dev
 - **Altri Moduli**: Qualsiasi relazione cross-database
 
 ### Funzionalità Compromesse
@@ -118,6 +139,7 @@ $tenants = $user->tenants; // Dovrebbe funzionare senza errori
 ### Test 2: Verifica Cross-Database Query
 ```php
 use Modules\User\Models\User;
+<<<<<<< HEAD
 <<<<<<< .merge_file_yzjT7V
 use Modules\healthcare_app\Models\Customer;
 =======
@@ -127,12 +149,16 @@ use Modules\ExternalProject\Models\Customer;
 use Modules\ModuloEsempio\Models\Customer;
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_zDNzTc
+=======
+use Modules\ExternalProject\Models\Customer;
+>>>>>>> origin/dev
 $user = User::with('tenants')->find('0199690d-481a-7101-ac17-7518b3959314');
 // Verifica che la query sia corretta
 ```
 
 ## Riferimenti Correlati
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_yzjT7V
 - [healthcare_app Customer User Table Issue](../../healthcare_app/docs/customer_user_table_issue.md)
 =======
@@ -142,6 +168,9 @@ $user = User::with('tenants')->find('0199690d-481a-7101-ac17-7518b3959314');
 - [ModuloEsempio Customer User Table Issue](../../ptvx/docs/customer_user_table_issue.md)
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_zDNzTc
+=======
+- [ExternalProject Customer User Table Issue](../../<nome progetto>/docs/customer_user_table_issue.md)
+>>>>>>> origin/dev
 - [Traits Complete Guide](./traits-complete-guide.md)
 - [Jetstream vs Laraxot Philosophy](./jetstream-vs-laraxot-philosophy.md)
 - [Database Errors](./database-errors.md)
@@ -176,11 +205,15 @@ echo 'HasTenants works! Count: ' . \$tenants->count();
 php artisan tinker --execute="
 use Modules\User\Models\User;
 \$user = User::find('0199690d-481a-7101-ac17-7518b3959314');
+<<<<<<< HEAD
 <<<<<<< .merge_file_yzjT7V
 \$tenants = \$user->getTenants(app('filament')->getPanel('healthcare_app::admin'));
 =======
 \$tenants = \$user->getTenants(app('filament')->getPanel('ptvx::admin'));
 >>>>>>> .merge_file_zDNzTc
+=======
+\$tenants = \$user->getTenants(app('filament')->getPanel('ptvx::admin'));
+>>>>>>> origin/dev
 echo 'getTenants works! Count: ' . count(\$tenants); // ✅ Funziona
 "
 ```

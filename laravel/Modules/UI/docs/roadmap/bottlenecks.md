@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Colli di Bottiglia - Modulo UI
 
 ## 1. Performance Componenti [85%]
@@ -224,3 +225,12 @@
 * [bottlenecks.md](../../../job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../patient/docs/roadmap/bottlenecks.md)
+=======
+---
+module: theme
+topic: bottlenecks
+canonical: ../../../../Themes/docs/shared-components/bottlenecks-Modules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/bottlenecks-Modules.md
+>>>>>>> origin/dev

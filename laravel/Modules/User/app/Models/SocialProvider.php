@@ -13,6 +13,7 @@ use Modules\Tenant\Models\Traits\SushiToPhpArray;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
+<<<<<<< HEAD
  * @property int|null             $id
  * @property string|null          $name
  * @property array|null           $scopes
@@ -23,6 +24,18 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null          $svg
  * @property string|null          $client_id
  * @property string|null          $client_secret
+=======
+ * @property int|null $id
+ * @property string|null $name
+ * @property array|null $scopes
+ * @property array|null $parameters
+ * @property bool|null $stateless
+ * @property bool|null $active
+ * @property bool|null $socialite
+ * @property string|null $svg
+ * @property string|null $client_id
+ * @property string|null $client_secret
+>>>>>>> origin/dev
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
@@ -62,7 +75,10 @@ class SocialProvider extends BaseModel
 {
     use SushiToPhpArray;
 
+<<<<<<< HEAD
     /** @var bool */
+=======
+>>>>>>> origin/dev
     public $incrementing = false;
 
     /** @var list<string> */

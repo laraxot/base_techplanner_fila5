@@ -37,6 +37,7 @@
 5. **PersonalAccessTokenResource**
    - ❌ Rimosso: `protected static ?string $recordTitleAttribute = 'name'`
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_Xbbq3o
 ### Modulo healthcare_app
 =======
@@ -46,6 +47,9 @@
 ### Modulo ModuloEsempio
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_IP3S7b
+=======
+### Modulo ExternalProject
+>>>>>>> origin/dev
 
 6. **ContactResource**
    - ❌ Rimosso: `protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-user-circle'`

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Piano Correzione PHPStan - XotBaseRelationManager
 
 **File**: `app/Filament/Resources/RelationManagers/XotBaseRelationManager.php`
@@ -152,3 +153,12 @@ public function canDeleteBulk(Model|\stdClass $record): bool
 - Non rompere funzionalità esistente
 - Seguire convenzioni Filament
 - Documentare cambiamenti
+=======
+---
+module: theme
+topic: phpstan-plan-xotbaserelationmanager
+canonical: ../../../Themes/docs/shared-components/phpstan-fix-plan-xotbaserelationmanager.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-plan-xotbaserelationmanager.md
+>>>>>>> origin/dev

@@ -3,10 +3,14 @@
 ## Panoramica
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa documentazione fornisce una guida completa per la gestione delle licenze FullCalendar Scheduler nel progetto Laraxot, basata sulla ricerca approfondita della documentazione ufficiale e dei problemi comuni riscontrati nella community.
 =======
 Questa documentazione fornisce una guida completa per la gestione delle licenze FullCalendar Scheduler nel progetto healthcare_app, basata sulla ricerca approfondita della documentazione ufficiale e dei problemi comuni riscontrati nella community.
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+Questa documentazione fornisce una guida completa per la gestione delle licenze FullCalendar Scheduler nel progetto healthcare_app, basata sulla ricerca approfondita della documentazione ufficiale e dei problemi comuni riscontrati nella community.
+>>>>>>> origin/dev
 
 ## Documenti Disponibili
 
@@ -18,10 +22,14 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 - Problemi comuni e soluzioni dettagliate
 - Configurazione completa per Laravel/Filament
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Best practices per Laraxot
 =======
 - Best practices per healthcare_app
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+- Best practices per healthcare_app
+>>>>>>> origin/dev
 - Testing e debugging avanzato
 - Sicurezza e gestione ambienti
 
@@ -38,10 +46,14 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 Documentazione base esistente per:
 - Panoramica generale licenze
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Configurazione di base in Laraxot
 =======
 - Configurazione di base in healthcare_app
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+- Configurazione di base in healthcare_app
+>>>>>>> origin/dev
 - Problemi comuni basilari
 
 #### 4. [Scheduler License Key](./scheduler_license_key.md)
@@ -75,10 +87,14 @@ La documentazione è basata su ricerca approfondita di:
    - Soluzione: Workaround con ignore directives
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 🎯 Soluzioni Specifiche Laraxot
 =======
 ### 🎯 Soluzioni Specifiche healthcare_app
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+### 🎯 Soluzioni Specifiche healthcare_app
+>>>>>>> origin/dev
 
 La documentazione include configurazioni specifiche per:
 - **Multi-tenancy**: Isolamento dati per studio
@@ -93,10 +109,14 @@ La documentazione include configurazioni specifiche per:
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 Laraxot FullCalendar Implementation
 =======
 healthcare_app FullCalendar Implementation
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+healthcare_app FullCalendar Implementation
+>>>>>>> origin/dev
 ├── AdminPanelProvider.php (Configurazione centrale)
 ├── config/fullcalendar.php (Configurazioni avanzate)
 ├── .env (Variabili licenza)
@@ -144,10 +164,14 @@ La documentazione è aggiornata per:
 - **Filament v3.x**
 - **Laravel 11.x/12.x**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Laraxot current architecture**
 =======
 - **healthcare_app current architecture**
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+- **healthcare_app current architecture**
+>>>>>>> origin/dev
 
 ### 🔄 Aggiornamenti Futuri
 
@@ -155,10 +179,14 @@ Quando aggiornare la documentazione:
 - Nuove versioni FullCalendar con breaking changes
 - Nuovi bug noti nella community
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Modifiche architettura Laraxot
 =======
 - Modifiche architettura healthcare_app
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+- Modifiche architettura healthcare_app
+>>>>>>> origin/dev
 - Nuovi requisiti sanitari/legali
 
 ### 📝 Contributi
@@ -166,10 +194,14 @@ Quando aggiornare la documentazione:
 Per aggiornare la documentazione:
 1. Verificare issue GitHub FullCalendar
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. Testare soluzioni in ambiente Laraxot
 =======
 2. Testare soluzioni in ambiente healthcare_app
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+2. Testare soluzioni in ambiente healthcare_app
+>>>>>>> origin/dev
 3. Aggiornare documenti pertinenti
 4. Aggiornare questo summary
 
@@ -193,10 +225,14 @@ Per aggiornare la documentazione:
 ## Conclusioni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa documentazione fornisce una copertura completa per tutti gli aspetti delle licenze FullCalendar Scheduler in Laraxot, dalla configurazione iniziale al troubleshooting avanzato. La combinazione di guida dettagliata e riferimento rapido garantisce supporto sia per sviluppatori esperti che per nuovi team members.
 =======
 Questa documentazione fornisce una copertura completa per tutti gli aspetti delle licenze FullCalendar Scheduler in healthcare_app, dalla configurazione iniziale al troubleshooting avanzato. La combinazione di guida dettagliata e riferimento rapido garantisce supporto sia per sviluppatori esperti che per nuovi team members.
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+Questa documentazione fornisce una copertura completa per tutti gli aspetti delle licenze FullCalendar Scheduler in healthcare_app, dalla configurazione iniziale al troubleshooting avanzato. La combinazione di guida dettagliata e riferimento rapido garantisce supporto sia per sviluppatori esperti che per nuovi team members.
+>>>>>>> origin/dev
 
 **Documenti chiave da consultare:**
 1. **Setup iniziale**: Quick Reference
@@ -205,7 +241,11 @@ Questa documentazione fornisce una copertura completa per tutti gli aspetti dell
 4. **Configurazione produzione**: Best practices nel troubleshooting
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di Laraxot. 
 =======
 La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di healthcare_app. 
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di healthcare_app. 
+>>>>>>> origin/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Array Types Fixes - Modulo User
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨
@@ -233,3 +234,12 @@ array<string, mixed> $attributes
 **Errori Identificati**: ~45 errori nel modulo User  
 **phpstan.neon**: ✅ INTOCCATO  
 **Stato**: 📋 Analisi Completata - Pronto per Correzioni
+=======
+---
+module: theme
+topic: phpstan-array-types-fixes
+canonical: ../../../Themes/docs/shared-components/phpstan-array-types-fixes-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-array-types-fixes-Modules.md
+>>>>>>> origin/dev

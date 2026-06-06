@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filosofia Laraxot: Consolidamento Migrazioni
 
 **Data Creazione**: 2025-01-22
@@ -244,3 +245,12 @@ find Modules/User/database/migrations -name "*create_roles_table.php"
 ---
 
 *Ricorda: La chiarezza dello schema è sacra. Non profanarla mai.*
+=======
+---
+module: theme
+topic: migration-consolidation-philosophy
+canonical: ../../../Themes/docs/shared-components/migration-consolidation-philosophy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-consolidation-philosophy.md
+>>>>>>> origin/dev

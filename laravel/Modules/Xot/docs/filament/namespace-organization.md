@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Organizzazione dei Namespace Filament nel Modulo Xot
 
 ## Problema Identificato: Duplicazione di Classi Base
@@ -66,3 +67,12 @@ Questo errore indica che un metodo è stato erroneamente definito come statico q
 - [Documentazione Filament](../xot/docs/filament/filament_best_practices.md)
 - [XotBasePage](../xot/docs/filament/pages/xotbasepage.md)
 - [Linee Guida per l'Ereditarietà](../xot/docs/filament/filament_inheritance_guidelines.md)
+=======
+---
+module: theme
+topic: namespace-organization
+canonical: ../../../../Themes/docs/shared-components/namespace-organization-1.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/namespace-organization-1.md
+>>>>>>> origin/dev

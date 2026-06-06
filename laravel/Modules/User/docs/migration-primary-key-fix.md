@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fix Primary Key Constraint - team_user Table
 
 ## Data
@@ -124,3 +125,12 @@ $this->tableCreate(static function (Blueprint $table): void {
 ✅ **Migrazione funzionante**
 ✅ **Documentazione aggiornata**
 
+=======
+---
+module: theme
+topic: migration-primary-key-fix
+canonical: ../../../Themes/docs/shared-components/migration-primary-key-fix.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-primary-key-fix.md
+>>>>>>> origin/dev

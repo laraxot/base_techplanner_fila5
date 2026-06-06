@@ -1,12 +1,59 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms'
 import typography from '@tailwindcss/typography'
+<<<<<<< HEAD
 import daisyui from 'daisyui'
+=======
+>>>>>>> origin/dev
 import colors from 'tailwindcss/colors';
 
 /** @type {import('tailwindcss').Config} */
 export default {
     darkMode: 'class',
+<<<<<<< HEAD
+=======
+    safelist: [
+        // Filament Form component classes (runtime generated)
+        'fi-fo-section',
+        'fi-fo-section-header',
+        'fi-fo-section-header-heading',
+        'fi-fo-section-header-description',
+        'fi-fo-field-wrp',
+        'fi-fo-field-wrp-label',
+        'fi-fo-field-wrp-helper-text',
+        'fi-fo-field-wrp-description',
+        'fi-fo-required-indicator',
+        'fi-fo-select',
+        'fi-fo-file-upload',
+        'fi-fo-checkbox',
+        'fi-fo-checkbox-label',
+        'fi-fo-wizard-actions',
+        // Filament Infolist component classes (runtime generated)
+        'fi-in-text-item',
+        'fi-in-text-item-icon',
+        // Filament Wizard classes
+        'fi-wiz-steps',
+        'fi-wiz-step-actions',
+        'fi-wiz-step-indicator',
+        'fi-wiz-step-indicator-state-completed',
+        'fi-wiz-step-indicator-state-active',
+        'fi-wiz-step-indicator-state-inactive',
+        // Custom parity classes
+        'wizard-required-note',
+        'segnalazione-dettaglio-page',
+        'segnalazione-area-personale-page',
+        'auth-login-card',
+        'auth-register-card',
+        // Select form-select
+        'form-select',
+        // Bootstrap Italia grid classes (used in segnalazioni-elenco layout)
+        'col-lg-3', 'col-lg-4', 'col-lg-5', 'col-lg-6', 'col-lg-8', 'col-lg-9', 'col-lg-10',
+        'col-md-3', 'col-md-4', 'col-md-6', 'col-md-9',
+        'col-sm-6', 'col-xl-3', 'col-xl-4', 'col-xl-6', 'col-xl-8',
+        'offset-lg-1', 'offset-xl-2',
+        'min-vh-lg-50',
+    ],
+>>>>>>> origin/dev
     content: [
         // Theme resources
         './resources/**/*.blade.php',
@@ -16,7 +63,11 @@ export default {
         './assets/**/*.js',
         './assets/**/*.css',
 
+<<<<<<< HEAD
         // Filament core packages - Filament 4.x paths
+=======
+        // Filament core packages
+>>>>>>> origin/dev
         './vendor/filament/**/*.blade.php',
 
         // Laravel application paths
@@ -26,6 +77,7 @@ export default {
         '../../Modules/**/resources/views/**/*.blade.php',
         '../../storage/framework/views/*.php',
 
+<<<<<<< HEAD
         // Laravel pagination views
         '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
 
@@ -36,6 +88,10 @@ export default {
         // Additional Filament paths for themes
         './app/Filament/**/*.php',
         './resources/views/filament/**/*.blade.php',
+=======
+        // Third-party packages
+        './node_modules/flowbite/**/*.js',
+>>>>>>> origin/dev
     ],
     theme: {
         extend: {
@@ -44,14 +100,19 @@ export default {
                 mono: ['Roboto Mono', ...defaultTheme.fontFamily.mono],
             },
             colors: {
+<<<<<<< HEAD
                 // Colori AGID ufficiali (Agenzia per l'Italia Digitale)
                 // PRIMARY = VERDE PA (come Design Comuni)
+=======
+                // Design Comuni PA Official Colors
+>>>>>>> origin/dev
                 primary: {
                     50: '#e6f7f0',
                     100: '#b3e6d1',
                     200: '#80d5b2',
                     300: '#4dc493',
                     400: '#1ab374',
+<<<<<<< HEAD
                     500: '#00814A', // Primary GREEN PA (Design Comuni)
                     600: '#006b3d',
                     700: '#005530',
@@ -99,17 +160,31 @@ export default {
                     DEFAULT: '#F5A623',
                 },
                 // Manteniamo anche i nomi originali per compatibilità
+=======
+                    500: '#007A52', // Verde PA
+                    600: '#006945',
+                    700: '#005838',
+                    800: '#00472b',
+                    900: '#00361e',
+                    DEFAULT: '#007A52',
+                },
+>>>>>>> origin/dev
                 'italia-blue': {
                     50: '#e6f2ff',
                     100: '#b3d9ff',
                     200: '#80bfff',
                     300: '#4da6ff',
                     400: '#1a8cff',
+<<<<<<< HEAD
                     500: '#0066CC',
+=======
+                    500: '#0066CC', // Blue Design Comuni
+>>>>>>> origin/dev
                     600: '#0052a3',
                     700: '#003d7a',
                     800: '#002952',
                     900: '#001429',
+<<<<<<< HEAD
                 },
                 'italia-green': {
                     50: '#e6f7f0',
@@ -146,6 +221,19 @@ export default {
                     700: '#936315',
                     800: '#62420e',
                     900: '#312107',
+=======
+                    DEFAULT: '#0066CC',
+                },
+                'italia-blue-dark': '#003D73',
+                'italia-gray': {
+                    50: '#F2F2F2',
+                    100: '#E0E0E0',
+                    200: '#CCCCCC',
+                    300: '#999999',
+                    400: '#666666',
+                    500: '#333333',
+                    DEFAULT: '#333333',
+>>>>>>> origin/dev
                 },
             },
             spacing: {
@@ -158,6 +246,7 @@ export default {
                 DEFAULT: '4px',
                 'md': '6px',
                 'lg': '8px',
+<<<<<<< HEAD
                 'xl': '12px',
                 '2xl': '16px',
                 '3xl': '24px',
@@ -166,12 +255,15 @@ export default {
                 'agid': '0 2px 4px rgba(0, 0, 0, 0.1)',
                 'agid-lg': '0 4px 8px rgba(0, 0, 0, 0.15)',
                 'agid-xl': '0 8px 16px rgba(0, 0, 0, 0.2)',
+=======
+>>>>>>> origin/dev
             },
         },
     },
     plugins: [
         forms,
         typography,
+<<<<<<< HEAD
         daisyui,
         require("flowbite/plugin"),
         // Plugin personalizzato per Filament 4.x con AGID Design System
@@ -337,10 +429,40 @@ export default {
                 },
                 '.agid-transition': {
                     '@apply transition-all duration-200 ease-in-out': {},
+=======
+        require("flowbite/plugin"),
+        function({ addComponents, theme }) {
+            addComponents({
+                // Header & Layout components using normalized tokens
+                '.it-header-slim-wrapper': {
+                    '@apply bg-italia-blue-dark border-b border-white/20': {},
+                },
+                '.it-header-center-wrapper': {
+                    '@apply bg-white py-6': {},
+                },
+                '.it-brand-title': {
+                    '@apply text-italia-blue text-2xl font-bold leading-tight m-0': {},
+                },
+                '.it-brand-tagline': {
+                    '@apply text-italia-gray-400 text-sm mt-1': {},
+                },
+                '.btn-primary': {
+                    '@apply bg-italia-blue text-white hover:bg-italia-blue-dark transition-colors': {},
+                },
+                '.btn-outline-primary': {
+                    '@apply bg-transparent text-italia-blue border border-italia-blue hover:bg-italia-blue hover:text-white transition-colors': {},
+                },
+                '.text-primary': {
+                    '@apply text-italia-blue': {},
+                },
+                '.card-teaser': {
+                    '@apply bg-white rounded-lg border border-italia-gray-100 shadow-sm hover:shadow-md transition-shadow': {},
+>>>>>>> origin/dev
                 },
             });
         },
     ],
+<<<<<<< HEAD
     daisyui: {
         themes: [
             {
@@ -375,4 +497,6 @@ export default {
         darkTheme: 'dark',
         logs: false,
     },
+=======
+>>>>>>> origin/dev
 }

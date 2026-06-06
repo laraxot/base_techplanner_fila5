@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Navigation Translations Completion Roadmap - User Module
 
 **Data**: 2026-01-09  
@@ -174,3 +175,12 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 **Status**: 📝 **ROADMAP CREATA - PRONTA PER IMPLEMENTAZIONE**
 
 **Ultimo aggiornamento**: 2026-01-09
+=======
+---
+module: theme
+topic: navigation-translations-completion-roadmap
+canonical: ../../../Themes/docs/shared-components/navigation-translations-completion-roadmap.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/navigation-translations-completion-roadmap.md
+>>>>>>> origin/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Problemi di Configurazione Variabili d'Ambiente - Modulo Xot
 
 ## Problema: env() non funziona durante il bootstrap
@@ -280,3 +281,12 @@ php artisan config:cache
 - [xra.php](/laravel/config/localhost/xra.php)
 - [Documentazione Root](/project_docs/env-config-loading-issue.md)
 
+=======
+---
+module: theme
+topic: environment-configurations
+canonical: ../../../Themes/docs/shared-components/environment-configuration-issues.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/environment-configuration-issues.md
+>>>>>>> origin/dev

@@ -12,10 +12,14 @@
 
 #### 2. Riusabilità Compromessa  
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **141+ occorrenze hardcoded** di "ptvx" 
 =======
 - **141+ occorrenze hardcoded** di "healthcare_app" 
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+- **141+ occorrenze hardcoded** di "healthcare_app" 
+>>>>>>> origin/dev
 - **210+ occorrenze** di `User::` senza XotData
 - **Import diretti** da moduli project-specific
 - **Path hardcoded** in documentazione
@@ -130,10 +134,14 @@ User/docs/
 ```php
 // ❌ PROBLEMI ATTUALI
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Laraxot\Models\User;
 =======
 use Modules\healthcare_app\Models\User;
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+use Modules\healthcare_app\Models\User;
+>>>>>>> origin/dev
 $user = User::factory()->create();
 
 // ✅ SOLUZIONI RICHIESTE
@@ -153,10 +161,14 @@ protected function createTestUser(): mixed
 1. **Widget Auth**: Tutti i widget in `app/Filament/Widgets/Auth/`
 2. **Test Files**: Tutti i test che usano User diretto
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/ptvx/`
 =======
 3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/healthcare_app/`
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/healthcare_app/`
+>>>>>>> origin/dev
 
 ### 3. Trait e STI Optimization (IMPORTANTE - 1 giorno)
 
@@ -225,10 +237,14 @@ class UserServiceProvider extends XotBaseServiceProvider
 
 ### Riusabilità
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] **0 occorrenze** hardcoded "ptvx"
 =======
 - [ ] **0 occorrenze** hardcoded "healthcare_app"
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+- [ ] **0 occorrenze** hardcoded "healthcare_app"
+>>>>>>> origin/dev
 - [ ] **0 utilizzi** User:: senza XotData
 - [ ] **100% pattern** dinamici nei test
 - [ ] **Script check** passa senza errori
@@ -264,10 +280,14 @@ find Modules/User/docs -name "*.md" | wc -l
 
 # Verifica riusabilità
 <<<<<<< HEAD
+<<<<<<< HEAD
 grep -r -i "ptvx" Modules/User/ --include="*.php" | wc -l
 =======
 grep -r -i "healthcare_app" Modules/User/ --include="*.php" | wc -l
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+grep -r -i "healthcare_app" Modules/User/ --include="*.php" | wc -l
+>>>>>>> origin/dev
 ```
 
 ### Post-Implementazione

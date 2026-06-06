@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Error Resolution - Progress Report
 
 ## Current Status
@@ -200,3 +201,12 @@ Given 1495 remaining errors and manual approach needed for quality:
 
 **Maintained By**: Claude Sonnet 4.5
 **Status**: ✅ 4% Complete | 🚧 96% Remaining
+=======
+---
+module: theme
+topic: phpstan-progress
+canonical: ../../../Themes/docs/shared-components/phpstan-progress-report-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-progress-report-Modules.md
+>>>>>>> origin/dev

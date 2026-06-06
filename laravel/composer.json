@@ -3,11 +3,19 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
+<<<<<<< HEAD
     "keywords": ["laravel", "framework"],
+=======
+    "keywords": [
+        "laravel",
+        "framework"
+    ],
+>>>>>>> origin/dev
     "license": "MIT",
     "require": {
         "php": "^8.2",
         "filament/filament": "^5.0",
+<<<<<<< HEAD
         "laravel/folio": "^1.2",
         "nwidart/laravel-modules": "*"
     },
@@ -26,6 +34,11 @@
         "rector/rector": "^2.3",
         "squizlabs/php_codesniffer": "*"
     },
+=======
+        "nwidart/laravel-modules": "*"
+    },
+    "require-dev": {},
+>>>>>>> origin/dev
     "autoload": {
         "psr-4": {
             "App\\": "app/",
@@ -35,7 +48,11 @@
     },
     "autoload-dev": {
         "psr-4": {
+<<<<<<< HEAD
            "Tests\\": "tests/"
+=======
+            "Tests\\": "tests/"
+>>>>>>> origin/dev
         }
     },
     "scripts": {
@@ -55,7 +72,11 @@
             "@php artisan migrate --graceful --ansi"
         ],
         "dev": [
+<<<<<<< HEAD
              "Composer\\Config::disableProcessTimeout",
+=======
+            "Composer\\Config::disableProcessTimeout",
+>>>>>>> origin/dev
             "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite --kill-others"
         ],
         "test": [
@@ -95,7 +116,10 @@
         ]
     },
     "repositories": [
+<<<<<<< HEAD
        
+=======
+>>>>>>> origin/dev
         {
             "type": "composer",
             "url": "https://repo.packagist.org",
@@ -126,4 +150,8 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/dev

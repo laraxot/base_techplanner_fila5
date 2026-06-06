@@ -6,28 +6,42 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 
 use function Laravel\Prompts\text;
 
+=======
+>>>>>>> origin/dev
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
+<<<<<<< HEAD
 use Symfony\Component\Console\Input\InputOption;
+=======
+
+use function Laravel\Prompts\text;
+>>>>>>> origin/dev
 
 class SuperAdminCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> origin/dev
      */
     protected $name = 'user:super-admin';
 
     /**
      * The console command description.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> origin/dev
      */
     protected $description = 'Assign super-admin to user';
 

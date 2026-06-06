@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\UI\Tests\Feature;
 
+<<<<<<< HEAD
 uses(\Modules\UI\Tests\TestCase::class);
+=======
+uses(TestCase::class);
+>>>>>>> origin/dev
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;
@@ -13,6 +17,10 @@ use Modules\UI\Models\Component;
 use Modules\UI\Models\Theme;
 use Modules\UI\Services\ComponentService;
 use Modules\UI\Services\ThemeService;
+<<<<<<< HEAD
+=======
+use Modules\UI\Tests\TestCase;
+>>>>>>> origin/dev
 
 describe('UI Business Logic Integration', function () {
     beforeEach(function () {
@@ -516,7 +524,11 @@ describe('UI Business Logic Integration', function () {
             expect($component->cache_duration)->toBeLessThan(86400); // 24 ore
 
             // Verifica che le strategie aggressive abbiano durate più lunghe
+<<<<<<< HEAD
             if ('aggressive' === $component->cache_strategy) {
+=======
+            if ($component->cache_strategy === 'aggressive') {
+>>>>>>> origin/dev
                 expect($component->cache_duration)->toBeGreaterThan(3600); // 1 ora
             }
         });

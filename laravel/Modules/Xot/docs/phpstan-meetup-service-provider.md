@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Fix - MeetupServiceProvider - [DATE]
 
 **Analista**: Super Mucca AI
@@ -160,3 +161,12 @@ $mappedPaths = array_map(function ($path): string {
 ---
 
 **Target Raggiunto**: PHPStan Level 10 + piena compliance Laraxot 🎯
+=======
+---
+module: theme
+topic: phpstan-meetup-service-provider
+canonical: ../../../Themes/docs/shared-components/phpstan-fix-meetup-service-provider.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-meetup-service-provider.md
+>>>>>>> origin/dev

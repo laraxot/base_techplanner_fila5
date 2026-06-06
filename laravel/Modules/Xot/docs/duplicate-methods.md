@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Metodi Duplicati - Modulo Xot
 
 **Totale Gruppi di Duplicati**:
@@ -585,3 +586,12 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 - **70-89%**: Raccomandato
 - **50-69%**: Valutare caso per caso
 - **< 50%**: Richiede analisi dettagliata
+=======
+---
+module: theme
+topic: duplicate-methods
+canonical: ../../../Themes/docs/shared-components/duplicate-methods-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/duplicate-methods-analysis.md
+>>>>>>> origin/dev

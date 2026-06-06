@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Approfondita dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
@@ -122,3 +123,12 @@ Questi errori evidenziano l'importanza di:
 =======
 - Rispettare le convenzioni e le strutture del progetto healthcare_app
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+---
+module: theme
+topic: logout_blade_error_analysis
+canonical: ../../../Themes/docs/shared-components/logout_blade_error_analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout_blade_error_analysis.md
+>>>>>>> origin/dev

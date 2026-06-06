@@ -9,6 +9,7 @@ use Spatie\LaravelData\Data;
 /**
  * Class RouteData - Gestisce la configurazione delle rotte per il framework Laraxot.
  */
+<<<<<<< HEAD
 class RouteData extends Data
 {
     /**
@@ -18,6 +19,17 @@ class RouteData extends Data
      * @param bool               $use_passport  Se utilizzare Passport per l'autenticazione API
      * @param array<int, string> $except_verify Rotte eccettuate dalla verifica
      * @param bool               $enable        Se le rotte sono abilitate
+=======
+final class RouteData extends Data
+{
+    /**
+     * @param  string  $prefix  Prefisso per tutte le rotte
+     * @param  array<int, string>  $middleware  Middleware applicati a tutte le rotte
+     * @param  string  $namespace  Namespace per i controller
+     * @param  bool  $use_passport  Se utilizzare Passport per l'autenticazione API
+     * @param  array<int, string>  $except_verify  Rotte eccettuate dalla verifica
+     * @param  bool  $enable  Se le rotte sono abilitate
+>>>>>>> origin/dev
      */
     public function __construct(
         public readonly string $prefix = '',
@@ -26,14 +38,22 @@ class RouteData extends Data
         public readonly bool $use_passport = false,
         public readonly array $except_verify = [],
         public readonly bool $enable = true,
+<<<<<<< HEAD
     ) {
     }
+=======
+    ) {}
+>>>>>>> origin/dev
 
     /**
      * Create a new instance of RouteData with default values.
      */
     public static function make(): static
     {
+<<<<<<< HEAD
         return new static();
+=======
+        return new self();
+>>>>>>> origin/dev
     }
 }

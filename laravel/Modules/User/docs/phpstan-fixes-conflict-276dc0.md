@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Module - PHPStan Fixes Session 2025-10-01
 
 ## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti
@@ -230,3 +231,12 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 **PHPStan Level**: 9
 **Prossima sessione**: 2 Ottobre 2025
 **Obiettivo**: 0 errori User + Xot
+=======
+---
+module: theme
+topic: phpstan-fixes-conflict-276dc0
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-conflict-276dc0.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-conflict-276dc0.md
+>>>>>>> origin/dev

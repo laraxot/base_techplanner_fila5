@@ -49,4 +49,14 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
+=======
+    'credentials_incorrect' => [
+        'key' => 'user::auth.credentials_incorrect',
+        'text' => 'Verifica i tuoi dati di accesso',
+        'description' => 'Messaggio di errore quando le credenziali sono errate',
+        'context' => 'login_form.credentials',
+        'placeholder' => '',
+    ],
+>>>>>>> origin/dev
 ];

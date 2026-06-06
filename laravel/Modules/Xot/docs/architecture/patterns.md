@@ -91,65 +91,93 @@ Elenco di pratiche da evitare nello sviluppo.
 
 ## Clean Architecture
 ```txt
+<<<<<<< HEAD
 <<<<<<< .merge_file_t7Fgct
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/clean_architecture.txt}
 =======
 ${cat /mnt/f/var/www/ptvx/laravel/Modules/Xot/_docs/clean_architecture.txt}
 >>>>>>> .merge_file_2ngrml
+=======
+${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/clean_architecture.txt}
+>>>>>>> origin/dev
 ```
 
 ## Clean Code
 ```txt
+<<<<<<< HEAD
 <<<<<<< .merge_file_t7Fgct
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/clean_code.txt}
 =======
 ${cat /mnt/f/var/www/ptvx/laravel/Modules/Xot/_docs/clean_code.txt}
 >>>>>>> .merge_file_2ngrml
+=======
+${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/clean_code.txt}
+>>>>>>> origin/dev
 ```
 
 ## Command Bus
 ```txt
+<<<<<<< HEAD
 <<<<<<< .merge_file_t7Fgct
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/command_bus.txt}
 =======
 ${cat /mnt/f/var/www/ptvx/laravel/Modules/Xot/_docs/command_bus.txt}
 >>>>>>> .merge_file_2ngrml
+=======
+${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/command_bus.txt}
+>>>>>>> origin/dev
 ```
 
 ## Repositories
 ```txt
+<<<<<<< HEAD
 <<<<<<< .merge_file_t7Fgct
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/repositories.txt}
 =======
 ${cat /mnt/f/var/www/ptvx/laravel/Modules/Xot/_docs/repositories.txt}
 >>>>>>> .merge_file_2ngrml
+=======
+${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/repositories.txt}
+>>>>>>> origin/dev
 ```
 
 ## Contracts
 ```txt
+<<<<<<< HEAD
 <<<<<<< .merge_file_t7Fgct
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/contracts.txt}
 =======
 ${cat /mnt/f/var/www/ptvx/laravel/Modules/Xot/_docs/contracts.txt}
 >>>>>>> .merge_file_2ngrml
+=======
+${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/contracts.txt}
+>>>>>>> origin/dev
 ```
 
 ## Presenters
 ```txt
+<<<<<<< HEAD
 <<<<<<< .merge_file_t7Fgct
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/presenter.txt}
 =======
 ${cat /mnt/f/var/www/ptvx/laravel/Modules/Xot/_docs/presenter.txt}
 >>>>>>> .merge_file_2ngrml
+=======
+${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/presenter.txt}
+>>>>>>> origin/dev
 ```
 
 ## Bad Practices to Avoid
 ```txt
+<<<<<<< HEAD
 <<<<<<< .merge_file_t7Fgct
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/bad_practices.txt}
 =======
 ${cat /mnt/f/var/www/ptvx/laravel/Modules/Xot/_docs/bad_practices.txt}
 >>>>>>> .merge_file_2ngrml
+=======
+${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/bad_practices.txt}
+>>>>>>> origin/dev
 ```
 
 ---

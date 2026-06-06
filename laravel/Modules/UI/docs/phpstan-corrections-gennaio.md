@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Corrections - Gennaio 2025
 
 ## Riepilogo
@@ -247,3 +248,12 @@ class ViewLocation extends XotBaseViewRecord
 - [Regole Architetturali Critiche](../../xot/docs/critical-architecture-rules.md)
 - [PHPStan Patterns](./phpstan-patterns.md)
 - [PHPStan Compliance](./phpstan-compliance.md)
+=======
+---
+module: theme
+topic: phpstan-corrections-gennaio
+canonical: ../../../Themes/docs/shared-components/phpstan-corrections-.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-corrections-.md
+>>>>>>> origin/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Xot Module - Complete Architecture Guide (2025)
 
 > **
@@ -861,3 +862,12 @@ The Xot module is a comprehensive foundation providing:
 
 **Document Version:** 1.0
 **Author:** Claude Code Analysis
+=======
+---
+module: theme
+topic: architecture-complete
+canonical: ../../../../Themes/docs/shared-components/architecture-complete.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/architecture-complete.md
+>>>>>>> origin/dev

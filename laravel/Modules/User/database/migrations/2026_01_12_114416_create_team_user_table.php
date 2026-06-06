@@ -11,12 +11,17 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Questa migrazione gestisce sia la creazione che l'aggiornamento della tabella team_user.
  * Se la tabella esiste già con id UUID, viene convertita a id autoincrement.
  */
+<<<<<<< HEAD
 return new class extends XotBaseMigration {
     /**
      * Nome della tabella gestita dalla migrazione.
      */
     protected string $table_name = 'team_user';
 
+=======
+return new class() extends XotBaseMigration
+{
+>>>>>>> origin/dev
     /**
      * Esegue la migrazione.
      */
@@ -33,14 +38,21 @@ return new class extends XotBaseMigration {
 
             // Indice univoco per evitare duplicati team_id + user_id
             $table->unique(['team_id', 'user_id']);
+<<<<<<< HEAD
             $table->softDeletes();
             $table->timestamps();
+=======
+>>>>>>> origin/dev
         });
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
             // Converte solo i vecchi schemi con `id` non bigint (es. UUID/string).
+<<<<<<< HEAD
             if ($this->hasColumn('id') && 'bigint' !== $this->getColumnType('id')) {
+=======
+            if ($this->hasColumn('id') && $this->getColumnType('id') !== 'bigint') {
+>>>>>>> origin/dev
                 // Rimuoviamo la PRIMARY KEY esistente
                 $this->dropPrimaryKey();
 
@@ -55,7 +67,11 @@ return new class extends XotBaseMigration {
                 }
 
                 // Impostiamo la nuova PRIMARY KEY su id
+<<<<<<< HEAD
                 $this->query('ALTER TABLE `'.$this->table_name.'` ADD PRIMARY KEY (`id`)');
+=======
+                // $this->query('ALTER TABLE `'.$this->getTableName().'` ADD PRIMARY KEY (`id`)');
+>>>>>>> origin/dev
             }
 
             if (! $this->hasColumn('role')) {

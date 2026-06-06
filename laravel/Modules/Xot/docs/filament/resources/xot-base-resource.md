@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # XotBaseResource: Regole fondamentali
 
 ## Principio di progettazione
@@ -98,3 +99,12 @@ Se trovi questi metodi in una risorsa esistente:
 1. Verifica se il comportamento è standard (uguale alla classe base)
 2. Se è standard, rimuovi completamente il metodo
 3. Se contiene personalizzazioni, estrai solo la logica personalizzata e rimuovi il resto
+=======
+---
+module: theme
+topic: xot-base-resource
+canonical: ../../../../../Themes/docs/shared-components/xot-base-resource.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/xot-base-resource.md
+>>>>>>> origin/dev

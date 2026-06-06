@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # WCAG 2.1 Accessibility Implementation Guide - Sixteen Theme
 
 ## Executive Summary
@@ -957,3 +958,12 @@ describe('Ticket Form Accessibility', () => {
 
 **Document Version**: 1.0
 **Next Review**: January 2026
+=======
+---
+module: theme
+topic: accessibility_implementation_guide
+canonical: ../../docs/shared-components/accessibility-implementation-guide.md
+---
+
+See canonical documentation: ../../docs/shared-components/accessibility-implementation-guide.md
+>>>>>>> origin/dev

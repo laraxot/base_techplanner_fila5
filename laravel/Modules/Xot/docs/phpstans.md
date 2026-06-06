@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Patterns - Dicembre 2025
 
 ## 🎯 Nuovi Pattern Scoperti
@@ -101,3 +102,12 @@ Applicando questi pattern, abbiamo raggiunto:
 - **0 errori PHPStan** in tutti i moduli
 - **Type safety al livello massimo**
 - **Codice manutenibile e robusto**
+=======
+---
+module: theme
+topic: phpstans
+canonical: ../../../Themes/docs/shared-components/phpstan-patterns-dec.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-patterns-dec.md
+>>>>>>> origin/dev

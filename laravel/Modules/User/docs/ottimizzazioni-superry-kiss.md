@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ottimizzazioni Super DRY + KISS - Modulo User
 
 ## 🎯 Panoramica
@@ -361,3 +362,12 @@ class User extends Model
 **Data:** 2025-01-XX
 **Stato:** In Analisi
 **Priorità:** CRITICA
+=======
+---
+module: theme
+topic: ottimizzazioni-superry-kiss
+canonical: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md
+>>>>>>> origin/dev

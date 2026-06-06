@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Syntax Errors Fix - Xot Module
 
 **Modulo**: Xot  
@@ -88,3 +89,12 @@ File di traduzione incompleti spesso derivano da:
 **Status**: ✅ **COMPLETATO**
 
 **Ultimo aggiornamento**: [DATE]
+=======
+---
+module: theme
+topic: phpstan-syntaxs
+canonical: ../../../Themes/docs/shared-components/phpstan-syntax-errors-fix.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-syntax-errors-fix.md
+>>>>>>> origin/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole per le Chiavi di Traduzione
 
 ## Principi Fondamentali
@@ -115,3 +116,12 @@ return [
 - [Best Practices per le Traduzioni](translation_best_practices.md)
 - [Struttura del Modulo](module_structure.md)
 - [Convenzioni di Codice](code_conventions.md)
+=======
+---
+module: theme
+topic: translation-keys
+canonical: ../../../Themes/docs/shared-components/translation-keys-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/translation-keys-rules.md
+>>>>>>> origin/dev

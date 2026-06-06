@@ -54,11 +54,15 @@ class ConnectionManagerService
     public static function getConnectionForModule(string $module): string
     {
         return match($module) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_prG0As
             'healthcare_app' => 'healthcare_app',
 =======
             'ModuloEsempio' => 'ptvx',
 >>>>>>> .merge_file_A6YKVE
+=======
+            'healthcare_app' => 'healthcare_app',
+>>>>>>> origin/dev
             'User' => 'user',
             'Notify' => 'notify',
             default => 'mysql'
@@ -141,22 +145,30 @@ class ContactValidationService
 **Solution**: Strategy pattern con interfaces
 
 ```php
+<<<<<<< HEAD
 <<<<<<< .merge_file_prG0As
 // Modules/healthcare_app/Contracts/ChartRendererContract.php
 =======
 // Modules/ModuloEsempio/Contracts/ChartRendererContract.php
 >>>>>>> .merge_file_A6YKVE
+=======
+// Modules/healthcare_app/Contracts/ChartRendererContract.php
+>>>>>>> origin/dev
 interface ChartRendererContract
 {
     public function supports(string $type): bool;
     public function render(array $data, array $config): string;
 }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_prG0As
 // Modules/healthcare_app/Services/Chart/Renderers/PieChartRenderer.php
 =======
 // Modules/ModuloEsempio/Services/Chart/Renderers/PieChartRenderer.php
 >>>>>>> .merge_file_A6YKVE
+=======
+// Modules/healthcare_app/Services/Chart/Renderers/PieChartRenderer.php
+>>>>>>> origin/dev
 class PieChartRenderer implements ChartRendererContract
 {
     public function supports(string $type): bool
@@ -322,11 +334,15 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 **Solution**: Chunking e memory management
 
 ```php
+<<<<<<< HEAD
 <<<<<<< .merge_file_prG0As
 // Modules/healthcare_app/Services/BulkProcessingService.php
 =======
 // Modules/ModuloEsempio/Services/BulkProcessingService.php
 >>>>>>> .merge_file_A6YKVE
+=======
+// Modules/healthcare_app/Services/BulkProcessingService.php
+>>>>>>> origin/dev
 class BulkProcessingService
 {
     public function processLargeDataset(\Closure $processor, Builder $query, int $chunkSize = 1000): void

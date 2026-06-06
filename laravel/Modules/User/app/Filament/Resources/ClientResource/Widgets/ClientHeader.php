@@ -9,10 +9,17 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 class ClientHeader extends XotBaseWidget
 {
+<<<<<<< HEAD
     protected string $view = 'user::filament.resources.client-resource.widgets.client-header';
 
     public Client $client;
 
+=======
+    public Client $client;
+
+    protected string $view = 'user::filament.resources.client-resource.widgets.client-header';
+
+>>>>>>> origin/dev
     protected int|string|array $columnSpan = 'full';
 
     public function mount(Client $record): void

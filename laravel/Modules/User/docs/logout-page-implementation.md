@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione della Pagina di Logout nel Tema One
 
 ## Struttura Corretta
@@ -206,3 +207,12 @@ Themes/One/resources/views/pages/auth/logout.blade.php
 - [Best Practices Folio](./routing_best_practices.md)
 - [Gestione Sessione](./session_management.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md)
+=======
+---
+module: theme
+topic: logout-page-implementation
+canonical: ../../../Themes/docs/shared-components/logout-page-implementation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-page-implementation.md
+>>>>>>> origin/dev

@@ -22,6 +22,10 @@ describe('Collection Model', function (): void {
 
     test('it has fillable attributes', function (): void {
         $collection = new Collection();
+<<<<<<< HEAD
+=======
+        $collection = new Collection();
+>>>>>>> origin/dev
         $expected = ['name', 'description', 'type'];
 
         foreach ($expected as $field) {

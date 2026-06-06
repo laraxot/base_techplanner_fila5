@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Tracker gathers a lot of information from your requests to identify and store:
 - Sessions
 - Page Views (hits on routes)
@@ -25,3 +26,12 @@ https://github.com/antonioribeiro/tracker
 * [repositories.md](../../../notify/project_docs/repositories.md)
 * [repositories.md](../../../user/project_docs/repositories.md)
 ### Versione Incoming
+=======
+---
+module: theme
+topic: repositories
+canonical: ../../../Themes/docs/shared-components/repositories.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/repositories.md
+>>>>>>> origin/dev

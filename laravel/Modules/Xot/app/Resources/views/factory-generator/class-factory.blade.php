@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -19,10 +20,13 @@
 >>>>>>> 285375c74 (.)
 =======
 >>>>>>> 8b18e4bff (.)
+=======
+>>>>>>> origin/dev
 <?php
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 /** @var \ReflectionClass $reflection */
@@ -77,11 +81,22 @@ class <?= $reflection->getShortName(); ?>Factory extends Factory
 >>>>>>> 5a14301c (.)
 @isset($properties['remember_token'])
     use Illuminate\Support\Str;
+=======
+/** @var \ReflectionClass $reflection */
+/** @var array<string, string> $properties */
+?>
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+@isset($properties['remember_token'])
+use Illuminate\Support\Str;
+>>>>>>> origin/dev
 @endisset
 use {{ $reflection->getName() }};
 
 class {{ $reflection->getShortName() }}Factory extends Factory
 {
+<<<<<<< HEAD
 /**
 * The name of the factory's corresponding model.
 *
@@ -108,3 +123,26 @@ return [
 >>>>>>> 5a14301c (.)
 }
 >>>>>>> 48515e368 (.)
+=======
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var class-string<\Illuminate\Database\Eloquent\Model>
+     */
+    protected $model = {{ $reflection->getShortName() }}::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+@foreach ($properties as $name => $property)
+            '{{ $name }}' => {!! $property !!},
+@endforeach
+        ];
+    }
+}
+>>>>>>> origin/dev

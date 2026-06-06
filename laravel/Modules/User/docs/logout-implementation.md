@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
@@ -87,3 +88,12 @@ L'errore principale nell'implementazione attuale è l'utilizzo di un approccio n
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 
 La documentazione è stata aggiornata per riflettere queste raccomandazioni e per fornire esempi di implementazione corretta.
+=======
+---
+module: theme
+topic: logout-implementation
+canonical: ../../../Themes/docs/shared-components/logout_implementation_error.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout_implementation_error.md
+>>>>>>> origin/dev

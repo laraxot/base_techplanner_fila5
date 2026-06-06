@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzioni PHPStan nel Modulo User
 
 ## Team.php
@@ -42,3 +43,12 @@ Il modello `Team` accede direttamente a proprietà che potrebbero non essere dis
 * [phpstan_fixes.md](../../../user/docs/fixes/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../activity/docs/phpstan_fixes.md)
 
+=======
+---
+module: theme
+topic: phpstanes
+canonical: ../../../../Themes/docs/shared-components/phpstan-fixes-Modules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/phpstan-fixes-Modules.md
+>>>>>>> origin/dev

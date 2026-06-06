@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Problema di Binding nei Componenti Livewire con statePath('data')
 
 ## Descrizione del Problema
@@ -30,3 +31,12 @@ public function form(Schema $schema): Schema
 2. Evitare input HTML separati che duplicano i campi dello schema
 3. Gestire correttamente `statePath()` quando si usano form annidati
 4. Verificare che i nomi dei campi corrispondano tra schema e validazione
+=======
+---
+module: theme
+topic: livewire-form-statepath-issue
+canonical: ../../../Themes/docs/shared-components/livewire-form-statepath-issue.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/livewire-form-statepath-issue.md
+>>>>>>> origin/dev

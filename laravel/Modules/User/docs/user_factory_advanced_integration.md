@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # UserFactory Advanced Integration - Modulo User & ModuloEsempio
 =======
 # UserFactory Advanced Integration - Modulo User & healthcare_app
@@ -328,3 +329,12 @@ public function run(): void
 - [UserFactory healthcare_app Integration](../../../../../docs/userfactory_healthcare_app_integration.md)
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 - [Testing Standards](../../../../../docs/testing_standards.md) 
+=======
+---
+module: theme
+topic: user_factory_advanced_integration
+canonical: ../../../Themes/docs/shared-components/user_factory_advanced_integration.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/user_factory_advanced_integration.md
+>>>>>>> origin/dev

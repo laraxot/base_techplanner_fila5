@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Passport Administrative Actions in UI
 
 This document describes the administrative actions for Laravel Passport available directly within the Filament admin panel, reducing the need for terminal access.
@@ -33,3 +34,12 @@ Within the list or view pages of a client, you can:
 ## Token Management
 
 - **Revoke All for User**: Available in `OauthAccessTokenResource`. Allows an administrator to revoke all active tokens for a specific user, effectively forcing a logout across all devices.
+=======
+---
+module: theme
+topic: passport-admin-actions
+canonical: ../../../Themes/docs/shared-components/passport-admin-actions.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/passport-admin-actions.md
+>>>>>>> origin/dev

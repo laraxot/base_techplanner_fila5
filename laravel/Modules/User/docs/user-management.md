@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gestione degli Utenti in <nome progetto>
 
 ## Panoramica
@@ -109,3 +110,12 @@ $request->validate([
 - [Processo di Registrazione dei Dottori](/laravel/modules/patient/docs/doctor_registration_process.md)
 - [Gestione dei File Upload in Filament](/docs/filament-file-uploads.md)
 - [Migrazioni del Database](/docs/database-migrations.md)
+=======
+---
+module: theme
+topic: user-management
+canonical: ../../../Themes/docs/shared-components/user-management.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/user-management.md
+>>>>>>> origin/dev

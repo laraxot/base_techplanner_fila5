@@ -22,6 +22,10 @@ describe('Theme Model', function (): void {
 
     test('it has fillable attributes', function (): void {
         $theme = new Theme();
+<<<<<<< HEAD
+=======
+        $theme = new Theme();
+>>>>>>> origin/dev
         $expected = ['name', 'description', 'is_active', 'config', 'parent_id', 'source_path', 'compiled_path', 'needs_compilation'];
 
         foreach ($expected as $field) {

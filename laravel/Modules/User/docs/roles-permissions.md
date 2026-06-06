@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gestione coerente di roles, permissions e guard_name
 
 ## Regola fondamentale
@@ -54,3 +55,12 @@ UPDATE permissions SET guard_name = 'web' WHERE guard_name = '' OR guard_name IS
 
 ## Collegamento regole generali
 Vedi anche: ../../Xot/docs/roles-permissions.md
+=======
+---
+module: theme
+topic: roles-permissions
+canonical: ../../../Themes/docs/shared-components/roles-permissions.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/roles-permissions.md
+>>>>>>> origin/dev

@@ -4,12 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\UI\Tests\Unit\Components;
 
+<<<<<<< HEAD
 uses(\Modules\UI\Tests\TestCase::class);
 
 use Illuminate\View\Component;
 
 test('ui components can be rendered', function () {
     $component = new class extends Component {
+=======
+uses(TestCase::class);
+
+use Illuminate\View\Component;
+use Modules\UI\Tests\TestCase;
+
+test('ui components can be rendered', function () {
+    $component = new class() extends Component
+    {
+>>>>>>> origin/dev
         public function render()
         {
             return view('ui::components.ui.button');

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Violazione Filosofia Laraxot - Migration Teams
 
 ## Data
@@ -128,3 +129,12 @@ Questa migrazione contiene:
 - Controlli condizionali per idempotenza
 
 **La filosofia Laraxot è stata rispettata!** 🎉
+=======
+---
+module: theme
+topic: migration-teams-owner-id-violation-analysis
+canonical: ../../../Themes/docs/shared-components/migration-teams-owner-id-violation-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-teams-owner-id-violation-analysis.md
+>>>>>>> origin/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Form Components - 95% Completato
 
 ## Descrizione
@@ -93,3 +94,12 @@ I componenti form forniscono un'interfaccia standardizzata per la creazione e ge
 ## Collegamenti tra versioni di form-components.md
 * [form-components.md](../../../ui/docs/form-components.md)
 * [form-components.md](../../../ui/docs/roadmap/form-components.md)
+=======
+---
+module: theme
+topic: form-components
+canonical: ../../../../Themes/docs/shared-components/form-components.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/form-components.md
+>>>>>>> origin/dev

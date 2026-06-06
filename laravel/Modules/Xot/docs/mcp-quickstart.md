@@ -138,11 +138,15 @@ cd init
 
 ```
 # In Cursor/Windsurf/Cline
+<<<<<<< HEAD
 <<<<<<< .merge_file_u636LF
 Analizza gli errori PHPStan in Modules/healthcare_app e suggerisci correzioni seguendo le regole in .windsurf/rules/
 =======
 Analizza gli errori PHPStan in Modules/ModuloEsempio e suggerisci correzioni seguendo le regole in .windsurf/rules/
 >>>>>>> .merge_file_yR6gK5
+=======
+Analizza gli errori PHPStan in Modules/healthcare_app e suggerisci correzioni seguendo le regole in .windsurf/rules/
+>>>>>>> origin/dev
 ```
 
 ### 2. Refactoring Modulo
@@ -178,11 +182,15 @@ iflow
 
 ```
 # Con memory + sequential-thinking
+<<<<<<< HEAD
 <<<<<<< .merge_file_u636LF
 Analizza l'architettura del modulo healthcare_app:
 =======
 Analizza l'architettura del modulo ModuloEsempio:
 >>>>>>> .merge_file_yR6gK5
+=======
+Analizza l'architettura del modulo healthcare_app:
+>>>>>>> origin/dev
 1. Identifica pattern utilizzati
 2. Documenta dipendenze
 3. Suggerisci miglioramenti

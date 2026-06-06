@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bootstrap Italia Examples - Implementazione Tailwind
 
 ## Panoramica
@@ -428,3 +429,12 @@ Ogni componente è stato testato per:
 - [Navigation Components Documentation](components/navigation-components.md)
 - [Layout Components Documentation](components/layout-components.md)
 - [Sixteen Theme Configuration](../tailwind.config.js)
+=======
+---
+module: theme
+topic: bootstrap-italia-examples
+canonical: ../../docs/shared-components/bootstrap-english-examples.md
+---
+
+See canonical documentation: ../../docs/shared-components/bootstrap-english-examples.md
+>>>>>>> origin/dev

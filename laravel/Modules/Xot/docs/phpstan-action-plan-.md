@@ -3,22 +3,30 @@
 ## Executive Summary
 
 **Total Issues Identified:** 744 PHPStan errors
+<<<<<<< HEAD
 <<<<<<< .merge_file_uNKxPo
 **Critical Modules:** Chart, healthcare_app
 =======
 **Critical Modules:** Chart, ModuloEsempio
 >>>>>>> .merge_file_4qDaec
+=======
+**Critical Modules:** Chart, healthcare_app
+>>>>>>> origin/dev
 **Status:** 🔴 **Requires Immediate Action**
 
 ## Quick Start Guide
 
 ### Immediate Actions (Today)
 1. **Add Safe function imports** to all problematic files
+<<<<<<< HEAD
 <<<<<<< .merge_file_uNKxPo
 2. **Comment out quantum code** in healthcare_app module
 =======
 2. **Comment out quantum code** in ModuloEsempio module
 >>>>>>> .merge_file_4qDaec
+=======
+2. **Comment out quantum code** in healthcare_app module
+>>>>>>> origin/dev
 3. **Run PHPStan again** to verify progress
 
 ### Week 1 Goals
@@ -40,11 +48,15 @@
 Modules/Chart/app/Actions/ChartJs/ExportToSvgAction.php
 Modules/Chart/app/Actions/ExportChartToPngAction.php
 Modules/Chart/app/Actions/ExportChartToSvgAction.php
+<<<<<<< HEAD
 <<<<<<< .merge_file_uNKxPo
 Modules/healthcare_app/app/Actions/Charts/Export/Concerns/HandlesChartWidgetData.php
 =======
 Modules/ModuloEsempio/app/Actions/Charts/Export/Concerns/HandlesChartWidgetData.php
 >>>>>>> .merge_file_4qDaec
+=======
+Modules/healthcare_app/app/Actions/Charts/Export/Concerns/HandlesChartWidgetData.php
+>>>>>>> origin/dev
 # ... and others identified in analysis
 ```
 
@@ -62,11 +74,15 @@ use function Safe\htmlspecialchars;
 #### Task 1.2: Quantum Code Stabilization
 **Priority:** 🔴 CRITICAL
 **Estimated Time:** 1-2 hours
+<<<<<<< HEAD
 <<<<<<< .merge_file_uNKxPo
 **Files:** healthcare_app quantum actions
 =======
 **Files:** ModuloEsempio quantum actions
 >>>>>>> .merge_file_4qDaec
+=======
+**Files:** healthcare_app quantum actions
+>>>>>>> origin/dev
 
 **Options:**
 1. **Comment out** quantum features temporarily
@@ -241,11 +257,15 @@ class ChartDataValidator
 - [Safe Library Documentation](https://github.com/thecodingmachine/safe)
 - [PHPStan Configuration](../phpstan.neon)
 - [Chart Module Documentation](../Chart/docs/)
+<<<<<<< HEAD
 <<<<<<< .merge_file_uNKxPo
 - [healthcare_app Module Documentation](../healthcare_app/docs/)
 =======
 - [ModuloEsempio Module Documentation](../ModuloEsempio/docs/)
 >>>>>>> .merge_file_4qDaec
+=======
+- [healthcare_app Module Documentation](../healthcare_app/docs/)
+>>>>>>> origin/dev
 
 ## Emergency Procedures
 

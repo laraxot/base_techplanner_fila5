@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Migration Philosophy Violations in User Module
 
 ## Overview
@@ -88,3 +89,12 @@ return new class extends XotBaseMigration {
 - Maintains single source of truth for table schemas
 - Follows DRY principles
 - Improves maintainability
+=======
+---
+module: theme
+topic: migration-philosophy-violations
+canonical: ../../../Themes/docs/shared-components/migration-philosophy-violations.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-philosophy-violations.md
+>>>>>>> origin/dev

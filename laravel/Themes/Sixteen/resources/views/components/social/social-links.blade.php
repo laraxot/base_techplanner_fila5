@@ -9,31 +9,52 @@
     $socialPlatforms = [
         'facebook' => [
             'name' => 'Facebook',
+<<<<<<< HEAD
             'icon' => 'heroicon-o-facebook',
+=======
+            'icon' => 'ui-brands.facebook',
+>>>>>>> origin/dev
             'color' => 'text-blue-600 hover:text-blue-700',
             'bg' => 'hover:bg-blue-50',
         ],
         'twitter' => [
+<<<<<<< HEAD
             'name' => 'X (Twitter)', 
             'icon' => 'heroicon-o-chat-bubble-left-right',
+=======
+            'name' => 'X (Twitter)',
+            'icon' => 'ui-brands.twitter',
+>>>>>>> origin/dev
             'color' => 'text-gray-900 hover:text-gray-700',
             'bg' => 'hover:bg-gray-50',
         ],
         'instagram' => [
             'name' => 'Instagram',
+<<<<<<< HEAD
             'icon' => 'heroicon-o-camera',
+=======
+            'icon' => 'ui-brands.instagram',
+>>>>>>> origin/dev
             'color' => 'text-pink-600 hover:text-pink-700',
             'bg' => 'hover:bg-pink-50',
         ],
         'linkedin' => [
             'name' => 'LinkedIn',
+<<<<<<< HEAD
             'icon' => 'heroicon-o-briefcase',
+=======
+            'icon' => 'ui-brands.linkedin',
+>>>>>>> origin/dev
             'color' => 'text-blue-700 hover:text-blue-800',
             'bg' => 'hover:bg-blue-50',
         ],
         'youtube' => [
             'name' => 'YouTube',
+<<<<<<< HEAD
             'icon' => 'heroicon-o-play',
+=======
+            'icon' => 'ui-brands.youtube',
+>>>>>>> origin/dev
             'color' => 'text-red-600 hover:text-red-700',
             'bg' => 'hover:bg-red-50',
         ],
@@ -73,11 +94,19 @@
                 class="{{ $sizeClasses[$size] }} {{ $platformConfig['bg'] }} {{ $platformConfig['color'] }} rounded-full flex items-center justify-center transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-current focus:ring-offset-2"
                 :aria-label="__('pub_theme::social.follow_on', ['platform' => $platformConfig['name']])"
             >
+<<<<<<< HEAD
                 <x-filament::icon 
                     :name="$platformConfig['icon']" 
                     class="w-5 h-5"
                 />
                 
+=======
+                <x-icon
+                    :name="$platformConfig['icon']"
+                    class="w-5 h-5"
+                />
+
+>>>>>>> origin/dev
                 <span class="sr-only">
                     {{ __('pub_theme::social.follow_on', ['platform' => $platformConfig['name']]) }}
                 </span>

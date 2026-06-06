@@ -4,8 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Feature;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
+=======
+use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Attributes\Test;
+>>>>>>> origin/dev
 
 /**
  * Test per verificare il corretto funzionamento dello script fix_structure.sh.
@@ -42,7 +47,11 @@ class FixStructureTest extends TestCase
         if (is_dir($dir)) {
             $objects = scandir($dir);
             foreach ($objects as $object) {
+<<<<<<< HEAD
                 if ('.' !== $object && '..' !== $object) {
+=======
+                if ($object !== '.' && $object !== '..') {
+>>>>>>> origin/dev
                     if (is_dir($dir.DIRECTORY_SEPARATOR.$object) && ! is_link($dir.'/'.$object)) {
                         $this->rrmdir($dir.DIRECTORY_SEPARATOR.$object);
                     } else {
@@ -55,7 +64,11 @@ class FixStructureTest extends TestCase
     }
 
     #[Test]
+<<<<<<< HEAD
     public function testMoveToAppFunctionality(): void
+=======
+    public function test_move_to_app_functionality(): void
+>>>>>>> origin/dev
     {
         // Creiamo una struttura di directory di test
         mkdir($this->testDir.'/Actions', 0o755, true);
@@ -77,7 +90,11 @@ class FixStructureTest extends TestCase
     }
 
     #[Test]
+<<<<<<< HEAD
     public function testRenameToLowerFunctionality(): void
+=======
+    public function test_rename_to_lower_functionality(): void
+>>>>>>> origin/dev
     {
         // Creiamo una struttura di directory di test
         mkdir($this->testDir.'/Config', 0o755, true);
@@ -99,7 +116,11 @@ class FixStructureTest extends TestCase
     }
 
     #[Test]
+<<<<<<< HEAD
     public function testMoveConfigFunctionality(): void
+=======
+    public function test_move_config_functionality(): void
+>>>>>>> origin/dev
     {
         // Creiamo una struttura di directory di test con entrambe le versioni
         mkdir($this->testDir.'/Config', 0o755, true);

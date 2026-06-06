@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Login2.blade.php - Implementazione AGID Ottimale
 
 ## ✅ **IMPLEMENTAZIONE COMPLETATA**
@@ -339,3 +340,12 @@ window.announceToScreenReader = function(message) {
 **Autore**: Sistema Implementazione AGID  
 **Versione**: 1.0  
 **Status**: Implementazione Ottimale Completata
+=======
+---
+module: theme
+topic: login2-agid-optimal-implementation
+canonical: ../../docs/shared-components/login2-agid-optimal-implementation.md
+---
+
+See canonical documentation: ../../docs/shared-components/login2-agid-optimal-implementation.md
+>>>>>>> origin/dev

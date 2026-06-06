@@ -6,13 +6,18 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\SoftDeletes;
+=======
+use Illuminate\Database\Eloquent\Relations\HasMany;
+>>>>>>> origin/dev
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * Class Modules\User\Models\Team.
  *
+<<<<<<< HEAD
  * @property string                          $id
  * @property string                          $user_id                (DC2Type:guid)
  * @property string                          $name
@@ -33,6 +38,28 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null            $updater
  * @property Collection<int, User>           $users
  * @property int|null                        $users_count
+=======
+ * @property string $id
+ * @property string $user_id (DC2Type:guid)
+ * @property string $name
+ * @property int $personal_team
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property ProfileContract|null $creator
+ * @property TeamUser $pivot
+ * @property Collection<int, User> $members
+ * @property int|null $members_count
+ * @property User|null $owner
+ * @property Collection<int, TeamInvitation> $teamInvitations
+ * @property int|null $team_invitations_count
+ * @property ProfileContract|null $updater
+ * @property Collection<int, User> $users
+ * @property int|null $users_count
+>>>>>>> origin/dev
  *
  * @method static Builder|Team newModelQuery()
  * @method static Builder|Team newQuery()
@@ -59,9 +86,15 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $owner_id
  *
  * @method static Builder<static>|Team whereOwnerId($value)
+<<<<<<< HEAD
  * @method static static               create(array $attributes = [])
  * @method static static               firstOrCreate(array $attributes, array $values = [])
  * @method static static               updateOrCreate(array $attributes, array $values = [])
+=======
+ * @method static static create(array $attributes = [])
+ * @method static static firstOrCreate(array $attributes, array $values = [])
+ * @method static static updateOrCreate(array $attributes, array $values = [])
+>>>>>>> origin/dev
  *
  * @mixin IdeHelperTeam
  *
@@ -69,6 +102,7 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static \Modules\User\Database\Factories\TeamFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
  * @property string|null                     $slug
  * @property string|null                     $description
  * @property string|null                     $avatar_path
@@ -77,6 +111,16 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property int|null                        $permissions_count
  * @property Collection<int, TeamUser>       $teamUsers
  * @property int|null                        $team_users_count
+=======
+ * @property string|null $slug
+ * @property string|null $description
+ * @property string|null $avatar_path
+ * @property array<array-key, mixed>|null $settings
+ * @property Collection<int, TeamPermission> $permissions
+ * @property int|null $permissions_count
+ * @property Collection<int, TeamUser> $teamUsers
+ * @property int|null $team_users_count
+>>>>>>> origin/dev
  *
  * @method static Builder<static>|Team whereAvatarPath($value)
  * @method static Builder<static>|Team whereDescription($value)
@@ -99,6 +143,14 @@ class Team extends BaseTeam
         'settings',
     ];
 
+<<<<<<< HEAD
+=======
+    public function permissions(): HasMany
+    {
+        return $this->hasMany(TeamPermission::class);
+    }
+
+>>>>>>> origin/dev
     /**
      * Get the attributes that should be cast.
      *
@@ -111,9 +163,12 @@ class Team extends BaseTeam
             'settings' => 'array',
         ];
     }
+<<<<<<< HEAD
 
     public function permissions(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(TeamPermission::class);
     }
+=======
+>>>>>>> origin/dev
 }

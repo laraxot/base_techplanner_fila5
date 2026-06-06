@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fix: UserCommandIntegrationTest - Application and Config Issues
 
 **Data**: 2025-01-22
@@ -75,3 +76,12 @@ it('can be registered with Laravel artisan', function () {
 
 **Status**: Completed
 **Risultato**: Test UserCommandIntegrationTest ora verifica il comando direttamente senza creare Application
+=======
+---
+module: theme
+topic: testing-user-command-integration-fix
+canonical: ../../../Themes/docs/shared-components/testing-user-command-integration-fix.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/testing-user-command-integration-fix.md
+>>>>>>> origin/dev

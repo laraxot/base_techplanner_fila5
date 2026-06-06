@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -295,3 +296,12 @@ php artisan user:benchmark  # Target: < 100ms
 - [Linee Guida Riusabilità](../../../../docs/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
 
+=======
+---
+module: theme
+topic: optimization_recommendations
+canonical: ../../../Themes/docs/shared-components/optimization_recommendations.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/optimization_recommendations.md
+>>>>>>> origin/dev

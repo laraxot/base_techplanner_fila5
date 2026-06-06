@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione del Logout con Volt
 
 ## Il Problema
@@ -218,3 +219,12 @@ public function test_logout_clears_session()
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](./filament_best_practices.md)
 - [Routing Best Practices](./routing_best_practices.md) 
+=======
+---
+module: theme
+topic: volt-logout
+canonical: ../../../Themes/docs/shared-components/volt-logout.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/volt-logout.md
+>>>>>>> origin/dev

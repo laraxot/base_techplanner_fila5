@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎨 UI MODULE - ROADMAP 2025
 
 **Modulo**: UI (User Interface Components & Design System)
@@ -296,3 +297,12 @@ UI Module
 ---
 
 *Questa roadmap è specifica per il modulo UI e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+=======
+---
+module: theme
+topic: legacy-roadmap-conflict
+canonical: ../../../../../Themes/docs/shared-components/roadmap-conflict.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/roadmap-conflict.md
+>>>>>>> origin/dev

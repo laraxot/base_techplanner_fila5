@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Fixes - November 2025
 
 **Data:** 11 Novembre 2025
@@ -194,3 +195,12 @@ Quando serve fare type narrowing di una variabile usata più volte, estrarre il 
 
 ---
 
+=======
+---
+module: theme
+topic: phpstan-fixes-november
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-november-2025.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-november-2025.md
+>>>>>>> origin/dev

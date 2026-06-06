@@ -74,8 +74,11 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Passport API tokens support.
      */
+<<<<<<< HEAD
     // @phpstan-ignore-next-line interface should extend this contract
 
+=======
+>>>>>>> origin/dev
     /**
      * Determine if the model has (one of) the given role(s).
      */

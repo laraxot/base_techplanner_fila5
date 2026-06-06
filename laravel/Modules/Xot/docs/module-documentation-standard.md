@@ -116,11 +116,15 @@ public function createUser(array $data): User
 - Document permission and role systems
 - Include social login integration guides
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_jlJ3IW
 ### healthcare_app Module
 =======
 ### ModuloEsempio Module
 >>>>>>> .merge_file_mZ2bIb
+=======
+### healthcare_app Module
+>>>>>>> origin/dev
 
 - Document survey management workflows
 - Document reporting and analytics features

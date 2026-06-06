@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
@@ -35,6 +36,24 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 {
     use InteractsWithActions;
     use InteractsWithForms;
+=======
+use Filament\Actions\Concerns\InteractsWithActions;
+use Filament\Actions\Contracts\HasActions;
+use Filament\Widgets\Widget as FilamentWidget;
+use Modules\Xot\Actions\View\GetViewByClassAction;
+use Modules\Xot\Filament\Traits\TransTrait;
+
+/**
+ * Classe base astratta per tutti i widget Filament.
+ * Widget generico: azioni, viste, traduzioni.
+ *
+ * @property string $title Titolo del widget
+ * @property string $icon Icona del widget
+ */
+abstract class XotBaseWidget extends FilamentWidget implements HasActions
+{
+    use InteractsWithActions;
+>>>>>>> origin/dev
     use TransTrait;
 
     public string $title = '';
@@ -49,6 +68,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     public array $listener = [];
 
     /**
+<<<<<<< HEAD
      * Dati del form.
      *
      * @var array<string, mixed>
@@ -56,6 +76,8 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     public ?array $data = [];
 
     /**
+=======
+>>>>>>> origin/dev
      * Vista predefinita per widget che estendono XotBaseWidget.
      * Deve essere sovrascritta nelle classi figlie.
      */
@@ -68,6 +90,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         $this->resolveView();
     }
 
+<<<<<<< HEAD
     /**
      * Ottiene lo schema del form.
      * Deve essere implementato nelle classi figlie.
@@ -167,11 +190,14 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         // Implementare nelle classi figlie
     }
 
+=======
+>>>>>>> origin/dev
     public static function getNavigationLabel(): string
     {
         return static::transFunc(__FUNCTION__);
     }
 
+<<<<<<< HEAD
     public function getWizardSubmitAction(): Action
     {
         /** @var view-string $submit_view */
@@ -225,6 +251,8 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         return Step::make($name)->schema($schemaComponents);
     }
 
+=======
+>>>>>>> origin/dev
     private function resolveView(): void
     {
         $defaultView = 'xot::filament.widgets.base';

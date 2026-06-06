@@ -64,6 +64,7 @@ if (property_exists($stateObject, 'name')) {
 - **Xot**: Base engine with 50+ base classes, 20+ service providers, 15+ traits
 - **User**: Authentication with advanced features
 - **Cms**: Content management system
+<<<<<<< HEAD
 <<<<<<< .merge_file_K8XNxL
 - **healthcare_app**: Main application module
 =======
@@ -73,6 +74,10 @@ if (property_exists($stateObject, 'name')) {
 - **ModuloEsempio**: Main application module
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_2nxxAY
+=======
+- **healthcare_app**: Main application module
+- **ExternalProject**: Main application module
+>>>>>>> origin/dev
 - **UI**: Shared UI components
 - **Activity**: Activity tracking and logging
 - **Tenant**: Multi-tenancy support

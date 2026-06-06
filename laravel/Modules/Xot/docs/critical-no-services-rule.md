@@ -18,11 +18,15 @@
 
 ```php
 // ❌ VIETATO - Non creare mai classi Service
+<<<<<<< HEAD
 <<<<<<< .merge_file_0Wakv6
 namespace Modules\healthcare_app\Services\Charts;
 =======
 namespace Modules\ModuloEsempio\Services\Charts;
 >>>>>>> .merge_file_63Afae
+=======
+namespace Modules\healthcare_app\Services\Charts;
+>>>>>>> origin/dev
 
 class ChartService
 {
@@ -65,11 +69,15 @@ class UserService
 
 ```php
 // ✅ CORRETTO - Usa sempre Actions
+<<<<<<< HEAD
 <<<<<<< .merge_file_0Wakv6
 namespace Modules\healthcare_app\Actions\Chart;
 =======
 namespace Modules\ModuloEsempio\Actions\Chart;
 >>>>>>> .merge_file_63Afae
+=======
+namespace Modules\healthcare_app\Actions\Chart;
+>>>>>>> origin/dev
 
 use Spatie\QueueableAction\QueueableAction;
 
@@ -169,11 +177,15 @@ class [ActionName]Action
 
 **❌ PRIMA (Service)**:
 ```php
+<<<<<<< HEAD
 <<<<<<< .merge_file_0Wakv6
 namespace Modules\healthcare_app\Services\Charts;
 =======
 namespace Modules\ModuloEsempio\Services\Charts;
 >>>>>>> .merge_file_63Afae
+=======
+namespace Modules\healthcare_app\Services\Charts;
+>>>>>>> origin/dev
 
 class ChartService
 {
@@ -194,13 +206,17 @@ class ChartService
 
 **✅ DOPO (Actions)**:
 ```php
+<<<<<<< HEAD
 <<<<<<< .merge_file_0Wakv6
+=======
+>>>>>>> origin/dev
 // Modules/healthcare_app/Actions/Chart/GenerateChartAction.php
 namespace Modules\healthcare_app\Actions\Chart;
 
 use Spatie\QueueableAction\QueueableAction;
 use Modules\healthcare_app\Models\Chart;
 use Modules\healthcare_app\Actions\Chart\ProcessChartAction;
+<<<<<<< HEAD
 =======
 // Modules/ModuloEsempio/Actions/Chart/GenerateChartAction.php
 namespace Modules\ModuloEsempio\Actions\Chart;
@@ -209,6 +225,8 @@ use Spatie\QueueableAction\QueueableAction;
 use Modules\ModuloEsempio\Models\Chart;
 use Modules\ModuloEsempio\Actions\Chart\ProcessChartAction;
 >>>>>>> .merge_file_63Afae
+=======
+>>>>>>> origin/dev
 
 class GenerateChartAction
 {
@@ -222,12 +240,16 @@ class GenerateChartAction
     }
 }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_0Wakv6
+=======
+>>>>>>> origin/dev
 // Modules/healthcare_app/Actions/Chart/ProcessChartAction.php
 namespace Modules\healthcare_app\Actions\Chart;
 
 use Spatie\QueueableAction\QueueableAction;
 use Modules\healthcare_app\Models\Chart;
+<<<<<<< HEAD
 =======
 // Modules/ModuloEsempio/Actions/Chart/ProcessChartAction.php
 namespace Modules\ModuloEsempio\Actions\Chart;
@@ -235,6 +257,8 @@ namespace Modules\ModuloEsempio\Actions\Chart;
 use Spatie\QueueableAction\QueueableAction;
 use Modules\ModuloEsempio\Models\Chart;
 >>>>>>> .merge_file_63Afae
+=======
+>>>>>>> origin/dev
 
 class ProcessChartAction
 {
@@ -283,11 +307,15 @@ I Chart Widgets sperimentali spesso usano dati demo statici. **NON creare Servic
 
 ```php
 // ❌ MAI FARE - ChartService per dati demo
+<<<<<<< HEAD
 <<<<<<< .merge_file_0Wakv6
 namespace Modules\healthcare_app\Services;
 =======
 namespace Modules\ModuloEsempio\Services;
 >>>>>>> .merge_file_63Afae
+=======
+namespace Modules\healthcare_app\Services;
+>>>>>>> origin/dev
 
 class ChartService
 {
@@ -316,11 +344,15 @@ class Simple02ChartWidget extends XotBaseChartWidget
 
 ```php
 // ✅ CORRETTO - Widget completamente self-contained
+<<<<<<< HEAD
 <<<<<<< .merge_file_0Wakv6
 namespace Modules\healthcare_app\Filament\Widgets;
 =======
 namespace Modules\ModuloEsempio\Filament\Widgets;
 >>>>>>> .merge_file_63Afae
+=======
+namespace Modules\healthcare_app\Filament\Widgets;
+>>>>>>> origin/dev
 
 use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
 
@@ -360,11 +392,15 @@ class Simple02ChartWidget extends XotBaseChartWidget
 
 ### 28 Gennaio 2026 - ChartService Eliminato
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_0Wakv6
 **Problema**: `Modules\healthcare_app\Services\ChartService` causava errori "Cannot call constructor" nei widget Simple05, Simple06, Simple11, Simple13, Simple20.
 =======
 **Problema**: `Modules\ModuloEsempio\Services\ChartService` causava errori "Cannot call constructor" nei widget Simple05, Simple06, Simple11, Simple13, Simple20.
 >>>>>>> .merge_file_63Afae
+=======
+**Problema**: `Modules\healthcare_app\Services\ChartService` causava errori "Cannot call constructor" nei widget Simple05, Simple06, Simple11, Simple13, Simple20.
+>>>>>>> origin/dev
 
 **Causa**:
 - Il Service non era correttamente autoloadato da Composer

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risoluzione Conflitti Git - Modulo Xot
 
 ## Panoramica
@@ -140,3 +141,12 @@ Documentazione della risoluzione dei conflitti Git nel modulo Xot che bloccavano
 - [Script Risoluzione Conflitti](../../../bashscripts/docs/conflict_resolution_script_improvements.md)
 - [Report Completo PHPStan Fixes](../../../bashscripts/docs/phpstan_fixes_comprehensive_report.md)
 
+=======
+---
+module: theme
+topic: conflict-resolutiones
+canonical: ../../../Themes/docs/shared-components/conflict-resolution-fixes.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/conflict-resolution-fixes.md
+>>>>>>> origin/dev

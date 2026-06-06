@@ -26,3 +26,12 @@ cache/
 # PHPStan documentation
 docs/phpstan/
 _docs/
+<<<<<<< HEAD
+=======
+
+# Backup files
+*.backup
+*.backup.*
+*.backup-*
+*.backup_*
+>>>>>>> origin/dev

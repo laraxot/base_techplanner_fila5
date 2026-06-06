@@ -182,10 +182,14 @@ if (app()->environment('local') && empty($licenseKey)) {
 - [ ] Funzionalità premium attive
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🚀 Laraxot Specifico
 =======
 ## 🚀 healthcare_app Specifico
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+## 🚀 healthcare_app Specifico
+>>>>>>> origin/dev
 
 ### Business Hours Sanitarie
 ```javascript

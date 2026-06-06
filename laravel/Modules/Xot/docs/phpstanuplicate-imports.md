@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Duplicate Imports Fix - [DATE]
 
 ## Analisi Errori PHPStan Modulo Xot
@@ -144,3 +145,12 @@ Durante l'analisi si sono verificati errori nei parallel workers:
 **Stato**: 🔴 In corso
 **Errori rimanenti**: 3-4 (da verificare ModuleResource.php)
 **Priorità**: MASSIMA (errore fatale blocca l'analisi completa)
+=======
+---
+module: theme
+topic: phpstanuplicate-imports
+canonical: ../../../Themes/docs/shared-components/phpstan-duplicate-imports-fix.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-duplicate-imports-fix.md
+>>>>>>> origin/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Errori PHPStan - XotBaseRelationManager
 
 **File**: `app/Filament/Resources/RelationManagers/XotBaseRelationManager.php`
@@ -116,3 +117,12 @@ Stessa soluzione per `canDetachBulk()`.
 1. **Component Import**: Usare `Filament\Support\Components\Component` (non `Filament\Forms\Components\Component`)
 2. **Schema::components()**: Accetta union type complesso, Component è compatibile
 3. **stdClass nei bulk actions**: Filament usa stdClass per performance, gestirlo appropriatamente
+=======
+---
+module: theme
+topic: phpstan-xotbaserelationmanager
+canonical: ../../../Themes/docs/shared-components/phpstan-error-analysis-xotbaserelationmanager.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-error-analysis-xotbaserelationmanager.md
+>>>>>>> origin/dev

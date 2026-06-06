@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura dei Moduli in il progetto
 
 ## Panoramica
@@ -409,3 +410,12 @@ Se trovi una directory con case errato:
 
 ## Collegamenti tra versioni di module_structure.md
 * [module_structure.md](../../../../project_docs/error_analysis/module_structure.md)
+=======
+---
+module: theme
+topic: module-structure
+canonical: ../../../../Themes/docs/shared-components/module-structure-1.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/module-structure-1.md
+>>>>>>> origin/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regola generale: Label e traduzioni in Filament
 
 ## Regola
@@ -22,3 +23,12 @@
 - [docs root](../../../../../docs/actions.md)
 - [docs Lang](../../lang/docs/filament-label.md)
 
+=======
+---
+module: theme
+topic: module-namespace
+canonical: ../../../Themes/docs/shared-components/module-namespace-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/module-namespace-rules.md
+>>>>>>> origin/dev

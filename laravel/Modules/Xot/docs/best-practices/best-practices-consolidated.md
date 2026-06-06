@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Best Practices - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTE le best practices del progetto
@@ -899,3 +900,12 @@ php artisan view:clear
 
 *Modulo: Xot*
 *Categoria: Best Practices*
+=======
+---
+module: theme
+topic: best-practices-consolidated
+canonical: ../../../../Themes/docs/shared-components/best-practices-consolidated.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/best-practices-consolidated.md
+>>>>>>> origin/dev

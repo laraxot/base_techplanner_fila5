@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto
@@ -344,3 +345,12 @@ Per evitare simili problemi in futuro:
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
+=======
+---
+module: theme
+topic: registration-widget-fileupload
+canonical: ../../../Themes/docs/shared-components/registration-widget-fileupload-fix.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/registration-widget-fileupload-fix.md
+>>>>>>> origin/dev

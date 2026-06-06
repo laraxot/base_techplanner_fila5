@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Events;
 
+<<<<<<< HEAD
 uses(\Modules\User\Tests\TestCase::class);
+=======
+uses(TestCase::class);
+>>>>>>> origin/dev
 
 use Modules\User\Events\Login;
 use Modules\User\Events\Registered;
@@ -12,6 +16,10 @@ use Modules\User\Events\TeamCreated;
 use Modules\User\Events\TeamMemberAdded;
 use Modules\User\Events\TwoFactorAuthenticationEnabled;
 use Modules\User\Events\UserNotAllowed;
+<<<<<<< HEAD
+=======
+use Modules\User\Tests\TestCase;
+>>>>>>> origin/dev
 
 test('Login event can be instantiated', function () {
     expect(class_exists(Login::class))->toBeTrue();

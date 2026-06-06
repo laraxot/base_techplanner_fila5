@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Fixes Progress - Modulo Xot
 
 ## Sessione di Correzione - Ottobre 2025
@@ -205,3 +206,12 @@ foreach ($data as $item) { }
 **Ultimo aggiornamento**: Ottobre 2025
 **Status**: 🔄 In Progress (65.3% completato)
 **Prossimo target**: ModuleServiceIntegrationTest.php → 0 errori
+=======
+---
+module: theme
+topic: phpstanes-progress
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-progress.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-progress.md
+>>>>>>> origin/dev

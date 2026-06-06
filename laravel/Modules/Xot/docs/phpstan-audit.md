@@ -140,5 +140,9 @@ Eseguire analisi PHPStan livello 10 per tutti i moduli del progetto seguendo met
 - Tutti i conflitti Git critici sono stati risolti
 - Tutti gli errori PHPStan identificati sono stati corretti
 - La qualità del codice è stata migliorata seguendo best practices Laraxot
+<<<<<<< HEAD
 - La documentazione è stata aggiornata per tracciare le correzioni
 
+=======
+- La documentazione è stata aggiornata per tracciare le correzioni
+>>>>>>> origin/dev

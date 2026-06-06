@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo
@@ -201,3 +202,12 @@ Il pattern può essere applicato a tutti i widget del sistema per garantire cons
 **File modificati**: 3 (it/messages.php, en/messages.php, de/messages.php)  
 **Translation keys aggiunte**: 60+ per lingua  
 **LoginWidget status**: ✅ Fully functional in all languages
+=======
+---
+module: theme
+topic: login-widget-translation
+canonical: ../../../Themes/docs/shared-components/login-widget-translation-audit.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/login-widget-translation-audit.md
+>>>>>>> origin/dev

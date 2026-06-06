@@ -18,6 +18,10 @@ use Modules\Xot\Providers\XotServiceProvider;
  */
 abstract class TestCase extends BaseTestCase
 {
+<<<<<<< HEAD
+=======
+    use CreatesApplication;
+>>>>>>> origin/dev
     use DatabaseTransactions;
 
     protected function getPackageProviders($app): array

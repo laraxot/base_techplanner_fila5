@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🗺️ ROADMAP COMPLETA - Modulo User
 
 ## 📊 Business Logic
@@ -423,3 +424,12 @@ La cartella `docs/` contiene ~300+ file con molti duplicati:
 **Prossima Revisione**: 2025-02-01
 
 
+=======
+---
+module: theme
+topic: legacy-roadmap-complete
+canonical: ../../../../../Themes/docs/shared-components/roadmap-complete.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/roadmap-complete.md
+>>>>>>> origin/dev

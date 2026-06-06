@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
@@ -289,3 +290,12 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session_management.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
+=======
+---
+module: theme
+topic: volt_blade_implementation
+canonical: ../../../Themes/docs/shared-components/volt_blade_implementation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/volt_blade_implementation.md
+>>>>>>> origin/dev

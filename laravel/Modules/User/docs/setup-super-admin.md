@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Setup Super Admin - Guida Completa
 
 **Data Creazione**: 15 Ottobre 2025  
@@ -436,3 +437,12 @@ Il comando `user:super-admin` è fondamentale per il setup iniziale dell'applica
 
 Con questa guida, il setup dovrebbe essere straightforward e senza errori! 🚀
 
+=======
+---
+module: theme
+topic: setup-super-admin
+canonical: ../../../Themes/docs/shared-components/setup-super-admin.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/setup-super-admin.md
+>>>>>>> origin/dev

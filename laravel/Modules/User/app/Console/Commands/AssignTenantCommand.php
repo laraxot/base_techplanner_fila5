@@ -6,27 +6,41 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+>>>>>>> origin/dev
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Symfony\Component\Console\Input\InputOption;
 
+=======
+>>>>>>> origin/dev
 class AssignTenantCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> origin/dev
      */
     protected $name = 'user:assign-tenant';
 
     /**
      * The console command description.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> origin/dev
      */
     protected $description = 'Assign a tenant to user';
 

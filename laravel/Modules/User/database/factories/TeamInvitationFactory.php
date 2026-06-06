@@ -5,13 +5,21 @@ declare(strict_types=1);
 namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+<<<<<<< HEAD
+=======
+use Modules\User\Models\TeamInvitation;
+>>>>>>> origin/dev
 
 class TeamInvitationFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      */
+<<<<<<< HEAD
     protected $model = \Modules\User\Models\TeamInvitation::class;
+=======
+    protected $model = TeamInvitation::class;
+>>>>>>> origin/dev
 
     /**
      * Define the model's default state.

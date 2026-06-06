@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzioni PHPStan Livello 10 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo User e le relative soluzioni implementate.
@@ -255,3 +256,12 @@ public function handle(Failed $event): void
 2. Considera l'uso di generics (come `@template`) per migliorare ulteriormente la tipizzazione delle classi che gestiscono diverse tipologie di dati.
 3. Mantieni aggiornata la documentazione quando vengono modificati metodi o proprietà.
 4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme.
+=======
+---
+module: theme
+topic: phpstan-level10es
+canonical: ../../../Themes/docs/shared-components/phpstan-level10-fixes-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level10-fixes-Modules.md
+>>>>>>> origin/dev

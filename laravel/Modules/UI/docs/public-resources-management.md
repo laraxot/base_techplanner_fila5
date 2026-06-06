@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gestione delle Risorse Pubbliche 
 
 ## Indice
@@ -149,3 +150,12 @@ Seguendo queste linee guida per la gestione delle risorse pubbliche, si garantis
 =======
 Seguendo queste linee guida per la gestione delle risorse pubbliche, si garantisce che tutte le risorse siano correttamente accessibili via web e organizzate in modo coerente, facilitando la manutenzione e l'evoluzione del progetto healthcare_app.
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+---
+module: theme
+topic: public-resources-management
+canonical: ../../../Themes/docs/shared-components/public-resources-management.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/public-resources-management.md
+>>>>>>> origin/dev

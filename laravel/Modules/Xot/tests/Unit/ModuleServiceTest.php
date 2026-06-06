@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit;
 
 use Modules\Xot\Services\ModuleService;
+<<<<<<< HEAD
 use Tests\TestCase;
 
 uses(TestCase::class);
+=======
+>>>>>>> origin/dev
 
 describe('ModuleService', function () {
     beforeEach(function () {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <header class="text-white">
     {{-- Top bar --}}
     <div class="h-10 min-h-10 border-b" style="background-color: var(--agid-primary-dark); border-color: rgba(255,255,255,0.2);">
@@ -149,3 +150,12 @@
         </div>
     </div>
 </header>
+=======
+{{--
+    Header Section Component
+    Bootstrap Italia Exact Header
+--}}
+@props(['data' => []])
+
+<x-bootstrap-italia.header />
+>>>>>>> origin/dev

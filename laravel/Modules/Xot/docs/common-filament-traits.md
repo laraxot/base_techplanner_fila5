@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Common Filament Trait Conflicts - Xot Module
 
 ## 📋 Panoramica
@@ -1042,3 +1043,12 @@ class MyPage extends XotBaseViewRecord
 =======
 - `/Modules/ModuloEsempio/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 >>>>>>> .merge_file_Ll3wQi
+=======
+---
+module: theme
+topic: common-filament-traits
+canonical: ../../../Themes/docs/shared-components/common-filament-trait-conflicts.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/common-filament-trait-conflicts.md
+>>>>>>> origin/dev

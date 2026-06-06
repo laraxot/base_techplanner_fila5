@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzione conflitto e miglioramento PHPStan livello 9 in Filament/Resources/UserResource.php
 
 **Data:** 2025-04-16
@@ -26,3 +27,12 @@ Sono stati rilevati conflitti Git non risolti nel file `app/Filament/Resources/U
 
 **Vedi anche:**
 - [module_user.md](module_user.md)
+=======
+---
+module: theme
+topic: phpstan-level9-fixes
+canonical: ../../../Themes/docs/shared-components/phpstan-level9-fixes-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level9-fixes-Modules.md
+>>>>>>> origin/dev

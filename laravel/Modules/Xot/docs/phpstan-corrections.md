@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Corrections - Gennaio 2026
 
 **Data**: 2026-01-22  
@@ -134,3 +135,12 @@
 - [Filament Class Extension Rules](../filament-class-extension-rules.md)
 
 *Ultimo aggiornamento: 2026-01-22*
+=======
+---
+module: theme
+topic: phpstan-corrections
+canonical: ../../../Themes/docs/shared-components/phpstan-corrections-january-2026.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-corrections-january-2026.md
+>>>>>>> origin/dev

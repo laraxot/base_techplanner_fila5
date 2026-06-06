@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Criticità Login AGID - Tema Sixteen
 
 ## 🚨 Problema Identificato
@@ -176,3 +177,12 @@ resources/views/
 
 **Prossimi Step**: Implementazione del nuovo layout AGID e refactoring completo della pagina di login.
 
+=======
+---
+module: theme
+topic: login-agid-analysis
+canonical: ../../docs/shared-components/login-agid-analysis.md
+---
+
+See canonical documentation: ../../docs/shared-components/login-agid-analysis.md
+>>>>>>> origin/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎯 **Strategia Correzione 406 Errori PHPStan Level 10**
 
 **Livello PHPStan**: 10
@@ -268,3 +269,12 @@ Assert::notNull($value);
 
 **Ultimo aggiornamento**: 11 Novembre 2025
 **Progresso**: 9/406 errori risolti (2.2%)
+=======
+---
+module: theme
+topic: phpstans-strategy
+canonical: ../../../Themes/docs/shared-components/phpstan-errors-strategy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-strategy.md
+>>>>>>> origin/dev

@@ -1,6 +1,7 @@
 # MCP (Management Control Panel) Tools for Database Analysis
 
 ## Overview
+<<<<<<< HEAD
 <<<<<<< .merge_file_Q6NNnG
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the healthcare_app_survey database used in the Limesurvey integration.
 =======
@@ -10,6 +11,10 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the ptvx_survey database used in the Limesurvey integration.
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_AjYV3y
+=======
+MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the healthcare_app_survey database used in the Limesurvey integration.
+MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the app_survey database used in the Limesurvey integration.
+>>>>>>> origin/dev
 
 ## Available MCP Tools for Database Work
 
@@ -25,6 +30,7 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_Q6NNnG
 **Use Cases for healthcare_app_survey Database**:
 =======
@@ -34,6 +40,10 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 **Use Cases for ptvx_survey Database**:
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_AjYV3y
+=======
+**Use Cases for healthcare_app_survey Database**:
+**Use Cases for app_survey Database**:
+>>>>>>> origin/dev
 - Query Limesurvey tables directly
 - Analyze survey responses in `lime_survey_{sid}` tables
 - Examine question structures in `lime_questions`
@@ -67,6 +77,7 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 
 ### Direct Database Queries (using MySQL MCP)
 ```sql
+<<<<<<< HEAD
 <<<<<<< .merge_file_Q6NNnG
 -- List all survey tables in healthcare_app_survey database
 =======
@@ -76,6 +87,10 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 -- List all survey tables in ptvx_survey database
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_AjYV3y
+=======
+-- List all survey tables in healthcare_app_survey database
+-- List all survey tables in app_survey database
+>>>>>>> origin/dev
 SHOW TABLES LIKE 'lime_survey_%';
 
 -- Analyze question structure
@@ -117,6 +132,7 @@ Ensure database connections are properly configured in:
 ## MCP Configuration File
 Location: `~/.cursor/mcp.json`
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_Q6NNnG
 Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the healthcare_app_survey database without additional configuration.
 =======
@@ -126,10 +142,15 @@ Current configuration includes MySQL access that automatically uses Laravel's .e
 Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the ptvx_survey database without additional configuration.
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_AjYV3y
+=======
+Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the healthcare_app_survey database without additional configuration.
+Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the app_survey database without additional configuration.
+>>>>>>> origin/dev
 
 ## Best Practices for Database Analysis
 
 1. **Always verify survey IDs** before querying dynamic tables like `lime_survey_{id}`
+<<<<<<< HEAD
 <<<<<<< .merge_file_Q6NNnG
 2. **Use proper connection** (`limesurvey` connection for healthcare_app_survey database)
 =======
@@ -139,6 +160,10 @@ Current configuration includes MySQL access that automatically uses Laravel's .e
 2. **Use proper connection** (`limesurvey` connection for ptvx_survey database)
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_AjYV3y
+=======
+2. **Use proper connection** (`limesurvey` connection for healthcare_app_survey database)
+2. **Use proper connection** (`limesurvey` connection for app_survey database)
+>>>>>>> origin/dev
 3. **Limit result sets** when exploring large survey response tables
 4. **Check table existence** before querying survey-specific tables
 5. **Respect data privacy** when handling survey responses

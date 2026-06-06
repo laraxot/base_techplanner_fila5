@@ -68,6 +68,7 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 #### Problema 2: ⚠️ Type hints mancanti in Contact model
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_VsGTK8
 **File**: `Modules/healthcare_app/app/Models/Contact.php` (809 righe!)
 =======
@@ -77,6 +78,10 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 **File**: `Modules/ExternalProject/app/Models/Contact.php` (809 righe!)
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_cxjpJD
+=======
+**File**: `Modules/healthcare_app/app/Models/Contact.php` (809 righe!)
+**File**: `Modules/ModuloEsempio/app/Models/Contact.php` (809 righe!)
+>>>>>>> origin/dev
 
 **Errori PHPStan Level 10**:
 ```
@@ -114,6 +119,7 @@ if ($body_html === null) { ... }
 |--------|--------------|-----------------|--------|
 | User | 16 | 0 | ✅ |
 | Xot | 16 | 0 | ✅ |
+<<<<<<< HEAD
 <<<<<<< .merge_file_VsGTK8
 | healthcare_app | 21+ | 21 | ⚠️ Necessita refactoring Contact |
 =======
@@ -123,6 +129,10 @@ if ($body_html === null) { ... }
 | ExternalProject | 21+ | 21 | ⚠️ Necessita refactoring Contact |
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_cxjpJD
+=======
+| healthcare_app | 21+ | 21 | ⚠️ Necessita refactoring Contact |
+| ModuloEsempio | 21+ | 21 | ⚠️ Necessita refactoring Contact |
+>>>>>>> origin/dev
 | Gdpr | 6 | 0 | ✅ |
 | Notify | 8 | 0 | ✅ |
 
@@ -165,6 +175,7 @@ class Notification extends BaseModel // Eredita $connection = 'user'
 
 **Fix applicato**:
 - User module: 7 file (Notification, SocialiteUser, OauthAccessToken, AuthenticationLog, BaseTeamUser, Membership, TenantUser)
+<<<<<<< HEAD
 <<<<<<< .merge_file_VsGTK8
 - healthcare_app module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
 =======
@@ -174,6 +185,10 @@ class Notification extends BaseModel // Eredita $connection = 'user'
 - ExternalProject module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_cxjpJD
+=======
+- healthcare_app module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
+- ModuloEsempio module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
+>>>>>>> origin/dev
 - Altri moduli: ~51 file
 
 **Comando usato**:
@@ -313,6 +328,7 @@ protected function casts(): array
 
 ### Violazione KISS #1: ❌ Contact.php - Complessità elevata (CRITICA)
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_VsGTK8
 **File**: `Modules/healthcare_app/app/Models/Contact.php`
 =======
@@ -322,6 +338,10 @@ protected function casts(): array
 **File**: `Modules/ExternalProject/app/Models/Contact.php`
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_cxjpJD
+=======
+**File**: `Modules/healthcare_app/app/Models/Contact.php`
+**File**: `Modules/ModuloEsempio/app/Models/Contact.php`
+>>>>>>> origin/dev
 **Righe**: 809 (!!!)
 **Metodi**: 40+
 
@@ -382,6 +402,7 @@ Contact.php (809 lines) →
 
 ### Violazione KISS #2: ❌ QuestionChart.php - Complessità alta
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_VsGTK8
 **File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
 =======
@@ -391,6 +412,10 @@ Contact.php (809 lines) →
 **File**: `Modules/ExternalProject/app/Models/QuestionChart.php`
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_cxjpJD
+=======
+**File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
+**File**: `Modules/ModuloEsempio/app/Models/QuestionChart.php`
+>>>>>>> origin/dev
 **Righe**: 882 (!)
 
 **Stesso problema di Contact.php**
@@ -472,6 +497,7 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 **Moduli fixati**:
 - **User**: 7 modelli
+<<<<<<< HEAD
 <<<<<<< .merge_file_VsGTK8
 - **healthcare_app**: 5 modelli
 =======
@@ -481,11 +507,16 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 - **ExternalProject**: 5 modelli
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_cxjpJD
+=======
+- **healthcare_app**: 5 modelli
+- **ModuloEsempio**: 5 modelli
+>>>>>>> origin/dev
 - **Notify**: ~8 modelli
 - **Altri**: ~43 modelli
 
 **Esempio comando**:
 ```bash
+<<<<<<< HEAD
 <<<<<<< .merge_file_VsGTK8
 cd Modules/healthcare_app/app/Models
 =======
@@ -495,6 +526,10 @@ cd Modules/ModuloEsempio/app/Models
 cd Modules/ExternalProject/app/Models
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_cxjpJD
+=======
+cd Modules/healthcare_app/app/Models
+cd Modules/ModuloEsempio/app/Models
+>>>>>>> origin/dev
 for f in *.php; do
   if grep -q "extends BaseModel" "$f"; then
     sed -i '/^[[:space:]]*protected \$connection = /d' "$f"
@@ -513,6 +548,7 @@ done
 
 **Comando**:
 ```bash
+<<<<<<< HEAD
 <<<<<<< .merge_file_VsGTK8
 vendor/bin/pint Modules/User/app/Models Modules/healthcare_app/app/Models --quiet
 =======
@@ -522,6 +558,10 @@ vendor/bin/pint Modules/User/app/Models Modules/ModuloEsempio/app/Models --quiet
 vendor/bin/pint Modules/User/app/Models Modules/ExternalProject/app/Models --quiet
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_cxjpJD
+=======
+vendor/bin/pint Modules/User/app/Models Modules/healthcare_app/app/Models --quiet
+vendor/bin/pint Modules/User/app/Models Modules/ModuloEsempio/app/Models --quiet
+>>>>>>> origin/dev
 ```
 
 **Risultato**:
@@ -933,6 +973,7 @@ $activeUsers = User::active()->get(); // ✅ Works!
 ```bash
 ./vendor/bin/phpstan analyse Modules/User/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/Xot/app/Models --level=10
+<<<<<<< HEAD
 <<<<<<< .merge_file_VsGTK8
 ./vendor/bin/phpstan analyse Modules/healthcare_app/app/Models --level=10
 =======
@@ -942,11 +983,16 @@ $activeUsers = User::active()->get(); // ✅ Works!
 ./vendor/bin/phpstan analyse Modules/ExternalProject/app/Models --level=10
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_cxjpJD
+=======
+./vendor/bin/phpstan analyse Modules/healthcare_app/app/Models --level=10
+./vendor/bin/phpstan analyse Modules/ModuloEsempio/app/Models --level=10
+>>>>>>> origin/dev
 ```
 
 **Results**:
 - User: ✅ 0 errors (dopo fix)
 - Xot: ✅ 0 errors (dopo fix)
+<<<<<<< HEAD
 <<<<<<< .merge_file_VsGTK8
 - healthcare_app: ⚠️ 21 errors (Contact.php - needs refactoring)
 =======
@@ -956,6 +1002,10 @@ $activeUsers = User::active()->get(); // ✅ Works!
 - ExternalProject: ⚠️ 21 errors (Contact.php - needs refactoring)
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_cxjpJD
+=======
+- healthcare_app: ⚠️ 21 errors (Contact.php - needs refactoring)
+- ModuloEsempio: ⚠️ 21 errors (Contact.php - needs refactoring)
+>>>>>>> origin/dev
 
 ### Manual Code Review
 

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Custom 404 Page
 description: Custom 404 pages with Jigsaw docs starter template
 extends: _layouts.documentation
@@ -40,3 +41,11 @@ Depending on where your site is hosted, you may need to configure your server to
 ### Versione Incoming
 
 ---
+=======
+module: theme
+topic: custom-404-page
+canonical: ../../../Themes/docs/shared-components/custom-404-page-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/custom-404-page-Modules.md
+>>>>>>> origin/dev

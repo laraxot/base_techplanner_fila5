@@ -7,9 +7,12 @@ namespace Modules\Xot\Tests\Unit\Models;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Traits\Updater;
+<<<<<<< HEAD
 use Tests\TestCase;
 
 uses(TestCase::class);
+=======
+>>>>>>> origin/dev
 
 test('xot base model extends eloquent model', function (): void {
     $reflection = new ReflectionClass(XotBaseModel::class);
@@ -77,13 +80,21 @@ test('xot base model has correct property types', function (): void {
     $perPageType = $perPageProperty->getType();
 
     // Some properties may not have explicit type declarations; in that case just ensure defaults are as expected
+<<<<<<< HEAD
     if (null !== $snakeType) {
+=======
+    if ($snakeType !== null) {
+>>>>>>> origin/dev
         expect($snakeType->getName())->toBe('bool');
     } else {
         expect(XotBaseModel::$snakeAttributes)->toBeTrue();
     }
 
+<<<<<<< HEAD
     if (null !== $perPageType) {
+=======
+    if ($perPageType !== null) {
+>>>>>>> origin/dev
         expect($perPageType->getName())->toBe('int');
     } else {
         expect($perPageProperty->getDefaultValue())->toBe(30);

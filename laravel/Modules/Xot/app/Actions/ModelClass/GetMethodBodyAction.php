@@ -4,11 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\ModelClass;
 
+<<<<<<< HEAD
 use function Safe\file;
 
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+=======
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+
+use function Safe\file;
+
+>>>>>>> origin/dev
 class GetMethodBodyAction
 {
     use QueueableAction;
@@ -24,6 +32,15 @@ class GetMethodBodyAction
         Assert::string($file_name = $table_method->getFileName());
         $source = file($file_name);
 
+<<<<<<< HEAD
         return implode('', \array_slice($source, $start_line, $length));
+=======
+        $body = '';
+        foreach (\array_slice($source, $start_line, $length) as $line) {
+            $body .= (string) $line;
+        }
+
+        return $body;
+>>>>>>> origin/dev
     }
 }

@@ -6,6 +6,7 @@
 
 **USARE SEMPRE MySQL con suffisso "_test":**
 - `DB_CONNECTION=mysql` ✅
+<<<<<<< HEAD
 <<<<<<< .merge_file_tCIaZg
 - `DB_DATABASE=healthcare_app_data_test` ✅  
 - `DB_DATABASE_LIMESURVEY=healthcare_app_survey_test` ✅
@@ -15,6 +16,11 @@
 - `DB_DATABASE_LIMESURVEY=ptvx_survey_test` ✅
 - `DB_DATABASE_USER=ptvx_user_test` ✅
 >>>>>>> .merge_file_aFTiNs
+=======
+- `DB_DATABASE=healthcare_app_data_test` ✅  
+- `DB_DATABASE_LIMESURVEY=healthcare_app_survey_test` ✅
+- `DB_DATABASE_USER=healthcare_app_user_test` ✅
+>>>>>>> origin/dev
 
 ## 🚫 MAI USARE
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OAuth Cluster - Processo Decisionale
 
 **Data**: 2025-01-22
@@ -184,3 +185,12 @@ Se in futuro serve Settings page:
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.0
 **Status**: Decisione consolidata - da implementare
+=======
+---
+module: theme
+topic: oauth-cluster-decision-making
+canonical: ../../../Themes/docs/shared-components/oauth-cluster-decision-making.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-decision-making.md
+>>>>>>> origin/dev

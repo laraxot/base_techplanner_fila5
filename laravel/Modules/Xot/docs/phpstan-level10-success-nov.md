@@ -166,6 +166,7 @@ Risultato ottenuto seguendo rigorosamente:
 ## 🔧 Correzioni Principali
 
 ### 1. Conflitti Git Risolti (4 file)
+<<<<<<< HEAD
 <<<<<<< .merge_file_uM4Gkj
 - `Modules/healthcare_app/app/Filament/Pages/DashboardV2.php`
 - `Modules/healthcare_app/app/Datas/AlertDashboardFilterData.php`
@@ -175,6 +176,11 @@ Risultato ottenuto seguendo rigorosamente:
 - `Modules/ModuloEsempio/app/Datas/AlertDashboardFilterData.php`
 - `Modules/ModuloEsempio/app/Datas/DashboardFilterData.php`
 >>>>>>> .merge_file_1gAXvt
+=======
+- `Modules/healthcare_app/app/Filament/Pages/DashboardV2.php`
+- `Modules/healthcare_app/app/Datas/AlertDashboardFilterData.php`
+- `Modules/healthcare_app/app/Datas/DashboardFilterData.php`
+>>>>>>> origin/dev
 
 **Pattern**: Risoluzione manuale sempre scegliendo la versione HEAD con codice funzionante.
 

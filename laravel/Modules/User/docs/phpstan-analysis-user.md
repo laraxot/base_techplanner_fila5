@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Analysis - User Module
 
 ## 📊 Status
@@ -132,3 +133,12 @@ $client = Client::factory()->create([
 **Laravel Version**: 12.31.1
 **Status**: ⚠️ 1 Error Remaining (99% Complete)
 **Documentation Status**: ⚠️ Basic - Needs documentation of fixes
+=======
+---
+module: theme
+topic: phpstan-analysis-user
+canonical: ../../../Themes/docs/shared-components/phpstan-analysis-user.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-analysis-user.md
+>>>>>>> origin/dev

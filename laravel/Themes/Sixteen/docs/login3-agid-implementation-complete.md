@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Login3 AGID-Compliant - Implementazione Completa
 
 ## 🎯 **IMPLEMENTAZIONE COMPLETATA**
@@ -271,3 +272,12 @@ Questa implementazione può essere utilizzata come **template di riferimento** p
 ---
 
 *Implementazione completata il 2025-08-01 - Versione 3.0*
+=======
+---
+module: theme
+topic: login3-agid-implementation-complete
+canonical: ../../docs/shared-components/login3-agid-implementation-complete.md
+---
+
+See canonical documentation: ../../docs/shared-components/login3-agid-implementation-complete.md
+>>>>>>> origin/dev

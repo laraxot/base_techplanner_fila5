@@ -360,6 +360,48 @@ return [
         'impersonate_users' => 'Impersona utenti',
         'manage_roles' => 'Gestisci ruoli',
     ],
+<<<<<<< HEAD
+=======
+    'auth' => [
+        'register' => [
+            'title' => [
+                'text' => 'Register',
+            ],
+            'subtitle' => [
+                'text' => 'Create a new account',
+            ],
+            'description' => [
+                'text' => 'Enter your details to complete registration',
+            ],
+            'button' => [
+                'text' => 'Register',
+            ],
+            'login' => [
+                'text' => 'Login',
+            ],
+            'already_have_account' => [
+                'text' => 'Already have an account?',
+            ],
+            'submit' => [
+                'text' => 'Register',
+            ],
+            'sidebar' => [
+                'support_title' => [
+                    'text' => 'Need help?',
+                ],
+                'help_email' => [
+                    'text' => 'Contact support via email',
+                ],
+                'help_password' => [
+                    'text' => 'Forgot password? Recover access',
+                ],
+                'help_support' => [
+                    'text' => 'Guide and support',
+                ],
+            ],
+        ],
+    ],
+>>>>>>> origin/dev
     'model' => [
         'label' => 'Utente',
     ],

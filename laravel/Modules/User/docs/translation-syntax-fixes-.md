@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzioni Errori di Sintassi nei File di Traduzione - 2025
 
 ## Data
@@ -126,3 +127,12 @@ find Modules/User/lang -name "*.php" -exec php -l {} \;
 **Data**: 2025-01-15
 **Versione**: 1.0
 **Stato**: Completato
+=======
+---
+module: theme
+topic: translation-syntax-fixes-
+canonical: ../../../Themes/docs/shared-components/translation-syntax-fixes.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/translation-syntax-fixes.md
+>>>>>>> origin/dev

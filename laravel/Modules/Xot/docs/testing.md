@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Testing Guide - Modulo Xot
 
 ## Introduzione
@@ -95,3 +96,12 @@ it('can create a new model', function() {
     expect(Model::count())->toBe(1);
 });
 ```
+=======
+---
+module: theme
+topic: testing
+canonical: ../../../Themes/docs/shared-components/testing-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/testing-guide.md
+>>>>>>> origin/dev

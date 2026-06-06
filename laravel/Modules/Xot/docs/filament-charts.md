@@ -936,6 +936,7 @@ class BlogPostsChartTest extends TestCase
 
 ## 🎯 Standard 2026: Professional Charts & PDF
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_hi2xyZ
 Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito healthcare_app/PTVX:
 =======
@@ -945,6 +946,10 @@ Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in a
 Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito ExternalProject/PTVX:
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PV5RFq
+=======
+Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito healthcare_app/PTVX:
+Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito Laraxot:
+>>>>>>> origin/dev
 
 ### 1. Configurazione Professionale
 Consultare la guida **[LimeSurvey Professional Charts Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)**.

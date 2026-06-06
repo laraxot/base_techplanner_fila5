@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ✅ Verifica Modelli Spatie nel Modulo User
 
 ## 📋 Stato Attuale (Verificato)
@@ -178,3 +179,12 @@ class Permission extends SpatiePermission  // Estende Spatie, NON BaseModel
 **Ultima Verifica**: 2025-01-XX
 **Status**: ✅ Tutti i modelli Spatie sono corretti
 **Filosofia**: Rispettata completamente
+=======
+---
+module: theme
+topic: spatie-models-verification
+canonical: ../../../Themes/docs/shared-components/spatie-models-verification.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/spatie-models-verification.md
+>>>>>>> origin/dev

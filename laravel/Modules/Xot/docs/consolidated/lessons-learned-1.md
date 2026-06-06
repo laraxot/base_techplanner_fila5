@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lessons Learned – Consolidated Rules (2025-08-25)
 
 This document consolidates recurring fixes and rules applied across modules. Keep files lowercase (README.md excepted).
@@ -70,3 +71,12 @@ This document consolidates recurring fixes and rules applied across modules. Kee
 
 ---
 - Backlinks: see `Modules/<nome modulo>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
+=======
+---
+module: theme
+topic: lessons-learned-1
+canonical: ../../../../Themes/docs/shared-components/lessons-learned-1-1.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/lessons-learned-1-1.md
+>>>>>>> origin/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_oDKiAF
 # Database Analysis Commands and Tools for healthcare_app_survey
 =======
@@ -294,3 +295,12 @@ These commands and tools provide comprehensive access to analyze, maintain, and 
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the ptvx_survey database used by the Limesurvey integration.
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_f9FIin
+=======
+---
+module: theme
+topic: limesurvey-database-commands
+canonical: ../../../Themes/docs/shared-components/limesurvey-database-commands.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/limesurvey-database-commands.md
+>>>>>>> origin/dev

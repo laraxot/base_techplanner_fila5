@@ -21,6 +21,7 @@ interface PassportHasApiTokensContract
 {
     /**
      * Get all of the user's registered OAuth clients.
+<<<<<<< HEAD
      *
      * @return HasMany
      */
@@ -48,11 +49,34 @@ interface PassportHasApiTokensContract
      * @return bool
      */
     public function tokenCan($scope);
+=======
+     */
+    public function clients(): HasMany;
+
+    /**
+     * Get all of the access tokens for the user.
+     */
+    public function tokens(): HasMany;
+
+    /**
+     * Get the current access token being used by the user.
+     */
+    public function token(): Token|TransientToken|null;
+
+    /**
+     * Determine if the current API token has a given scope.
+     */
+    public function tokenCan(string $scope): bool;
+>>>>>>> origin/dev
 
     /**
      * Create a new personal access token for the user.
      *
+<<<<<<< HEAD
      * @param array<int, string> $scopes
+=======
+     * @param  array<int, string>  $scopes
+>>>>>>> origin/dev
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;
 

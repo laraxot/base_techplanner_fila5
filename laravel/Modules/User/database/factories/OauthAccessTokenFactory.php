@@ -16,7 +16,10 @@ use Modules\User\Models\User;
  */
 class OauthAccessTokenFactory extends Factory
 {
+<<<<<<< HEAD
     /** @phpstan-ignore-next-line Passport access token is an Eloquent model at runtime, but PHPStan loses that type here. */
+=======
+>>>>>>> origin/dev
     protected $model = OauthAccessToken::class;
 
     /**
@@ -84,7 +87,11 @@ class OauthAccessTokenFactory extends Factory
     /**
      * Create token with specific scopes.
      *
+<<<<<<< HEAD
      * @param array<string> $scopes
+=======
+     * @param  array<string>  $scopes
+>>>>>>> origin/dev
      */
     public function withScopes(array $scopes): static
     {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Errore VoltDirectiveMissingException
 
 ## Descrizione
@@ -30,3 +31,12 @@ Dopo la modifica, rigenerare la cache delle viste:
 ```bash
 php artisan view:clear && php artisan route:clear
 ```
+=======
+---
+module: theme
+topic: volt-missing-directive
+canonical: ../../../Themes/docs/shared-components/volt-missing-directive.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/volt-missing-directive.md
+>>>>>>> origin/dev

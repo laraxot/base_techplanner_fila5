@@ -171,6 +171,7 @@ class MenuBuilder
     }
 
     /**
+<<<<<<< HEAD
      * Trasforma e processa gli elementi del menu
      */
     protected function transformItems(array $items): Collection
@@ -182,6 +183,8 @@ class MenuBuilder
     }
 
     /**
+=======
+>>>>>>> origin/dev
      * Processa un singolo elemento del menu
      */
     public function processMenuItem($item): array|false|null
@@ -231,13 +234,18 @@ class MenuBuilder
         }
 
         // Aggiungi proprietà di default
+<<<<<<< HEAD
         $item = array_merge([
+=======
+        return array_merge([
+>>>>>>> origin/dev
             'active' => false,
             'target' => null,
             'icon' => null,
             'badge' => null,
             'attributes' => [],
         ], $item);
+<<<<<<< HEAD
 
         return $item;
     }
@@ -260,6 +268,8 @@ class MenuBuilder
         }
 
         return 'text';
+=======
+>>>>>>> origin/dev
     }
 
     /**
@@ -366,4 +376,38 @@ class MenuBuilder
             'has_megamenus' => $this->header->contains('type', 'megamenu'),
         ];
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * Trasforma e processa gli elementi del menu
+     */
+    protected function transformItems(array $items): Collection
+    {
+        return collect($items)
+            ->map([$this, 'processMenuItem'])
+            ->filter() // Rimuove elementi false/null dai filtri
+            ->values(); // Re-index array
+    }
+
+    /**
+     * Determina il tipo di elemento del menu
+     */
+    protected function determineItemType(array $item): string
+    {
+        if (isset($item['dropdown'])) {
+            return 'dropdown';
+        }
+
+        if (isset($item['megamenu'])) {
+            return 'megamenu';
+        }
+
+        if (isset($item['url']) || isset($item['route'])) {
+            return 'link';
+        }
+
+        return 'text';
+    }
+>>>>>>> origin/dev
 }

@@ -19,12 +19,20 @@ class GetViewByClassAction
      * Converte un nome di classe in un nome di vista.
      * Esempio: "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group".
      *
+<<<<<<< HEAD
      * @param string $class  Il nome della classe da convertire
      * @param string $suffix Suffisso opzionale da aggiungere al nome della vista
      *
      * @throws \Exception Se la vista non esiste
      *
      * @return string Il nome della vista
+=======
+     * @param  string  $class  Il nome della classe da convertire
+     * @param  string  $suffix  Suffisso opzionale da aggiungere al nome della vista
+     * @return view-string
+     *
+     * @throws \Exception Se la vista non esiste
+>>>>>>> origin/dev
      */
     public function execute(string $class, string $suffix = ''): string
     {
@@ -49,20 +57,35 @@ class GetViewByClassAction
                 $value = $this->checkPrev($value, $prevValueStr);
             }
 
+<<<<<<< HEAD
             return Str::of($value)->slug()->toString();
         });
 
         $implode = implode('.', $mapped);
+=======
+            return Str::of($value)->kebab()->slug()->toString();
+        });
+
+        $implode = Arr::join(array_values($mapped), '.');
+>>>>>>> origin/dev
         $views = [
             'pub_theme::'.$implode.$suffix,
             $module_low.'::'.$implode.$suffix,
         ];
         $view = Arr::first($views, view()->exists(...));
+<<<<<<< HEAD
         if (null === $view) {
+=======
+        if ($view === null) {
+>>>>>>> origin/dev
             throw new \Exception('View not found: '.implode(', ', $views));
         }
 
         if (view()->exists($view)) {
+<<<<<<< HEAD
+=======
+            /* @var view-string $view */
+>>>>>>> origin/dev
             return $view;
         }
         throw new \Exception('View not found: '.$view);

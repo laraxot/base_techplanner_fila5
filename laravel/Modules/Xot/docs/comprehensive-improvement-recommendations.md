@@ -759,6 +759,7 @@ class ConnectionManagerService
     public static function getConnectionForModule(string $module): string
     {
         return match($module) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_kwG20C
             'healthcare_app' => 'healthcare_app',
 =======
@@ -768,6 +769,10 @@ class ConnectionManagerService
             'ModuloEsempio' => 'ptvx',
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_szY6ZB
+=======
+            'healthcare_app' => 'healthcare_app',
+            'ExternalProject' => '<nome progetto>',
+>>>>>>> origin/dev
             'User' => 'user',
             'Notify' => 'notify',
             default => 'mysql'
@@ -850,6 +855,7 @@ class ContactValidationService
 **Solution**: Strategy pattern con interfaces
 
 ```php
+<<<<<<< HEAD
 <<<<<<< .merge_file_kwG20C
 // Modules/healthcare_app/Contracts/ChartRendererContract.php
 =======
@@ -859,12 +865,17 @@ class ContactValidationService
 // Modules/ModuloEsempio/Contracts/ChartRendererContract.php
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_szY6ZB
+=======
+// Modules/healthcare_app/Contracts/ChartRendererContract.php
+// Modules/ExternalProject/Contracts/ChartRendererContract.php
+>>>>>>> origin/dev
 interface ChartRendererContract
 {
     public function supports(string $type): bool;
     public function render(array $data, array $config): string;
 }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_kwG20C
 // Modules/healthcare_app/Services/Chart/Renderers/PieChartRenderer.php
 =======
@@ -874,6 +885,10 @@ interface ChartRendererContract
 // Modules/ModuloEsempio/Services/Chart/Renderers/PieChartRenderer.php
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_szY6ZB
+=======
+// Modules/healthcare_app/Services/Chart/Renderers/PieChartRenderer.php
+// Modules/ExternalProject/Services/Chart/Renderers/PieChartRenderer.php
+>>>>>>> origin/dev
 class PieChartRenderer implements ChartRendererContract
 {
     public function supports(string $type): bool
@@ -1039,6 +1054,7 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 **Solution**: Chunking e memory management
 
 ```php
+<<<<<<< HEAD
 <<<<<<< .merge_file_kwG20C
 // Modules/healthcare_app/Services/BulkProcessingService.php
 =======
@@ -1048,6 +1064,10 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 // Modules/ModuloEsempio/Services/BulkProcessingService.php
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_szY6ZB
+=======
+// Modules/healthcare_app/Services/BulkProcessingService.php
+// Modules/ExternalProject/Services/BulkProcessingService.php
+>>>>>>> origin/dev
 class BulkProcessingService
 {
     public function processLargeDataset(\Closure $processor, Builder $query, int $chunkSize = 1000): void

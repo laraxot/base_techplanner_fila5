@@ -101,6 +101,11 @@ return [
         ],
         'resetColumnManager' => [
             'tooltip' => 'resetColumnManager',
+<<<<<<< HEAD
+=======
+            'icon' => 'resetColumnManager',
+            'label' => 'resetColumnManager',
+>>>>>>> origin/dev
         ],
     ],
     'navigation' => [

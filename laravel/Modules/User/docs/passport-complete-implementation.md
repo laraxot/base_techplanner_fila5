@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Passport Complete Management - Implementation Summary
 
 > **Data**: 2026-01-27  
@@ -407,3 +408,12 @@ UserServiceProvider
 
 ### Laravel Pint
 ✅ **Tutti i file formattati correttamente** - Nessuna modifica necessaria.
+=======
+---
+module: theme
+topic: passport-complete-implementation
+canonical: ../../../Themes/docs/shared-components/passport-complete-implementation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/passport-complete-implementation.md
+>>>>>>> origin/dev

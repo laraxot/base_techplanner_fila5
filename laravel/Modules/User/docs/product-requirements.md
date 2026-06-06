@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Product Requirements Document (PRD)
 
 ## Metadata
@@ -1060,3 +1061,16 @@ it('handles 100 concurrent logins', function () {
 | Version | Data | Autore | Modifiche |
 |---------|------|--------|------------|
 | 1.0.0 | 2026-03-03 | | Initial PRD |
+=======
+---
+title: "product-requirements — puntatore"
+type: reference
+updated: 2026-05-21
+---
+
+# Policy globale (puntatore)
+
+Contenuto in wiki di progetto — non duplicare nei moduli ([#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
+
+→ [docs/wiki/rules/00-TRIGGER_MAP.md](../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+>>>>>>> origin/dev

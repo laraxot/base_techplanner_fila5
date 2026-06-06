@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Piano di Refactoring Login AGID - Implementazione Dettagliata
 
 ## 🎯 Obiettivo
@@ -640,3 +641,12 @@ name('login');
 
 **Questo piano garantisce una trasformazione completa della pagina di login da un approccio ibrido a una soluzione nativa AGID-compliant al 100%.**
 
+=======
+---
+module: theme
+topic: login-agid-refactoring-plan
+canonical: ../../docs/shared-components/login-agid-refactoring-plan.md
+---
+
+See canonical documentation: ../../docs/shared-components/login-agid-refactoring-plan.md
+>>>>>>> origin/dev

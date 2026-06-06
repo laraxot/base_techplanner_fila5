@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Level 10 - Progresso Correzione Errori
 
 **Data**: 2025-01-22
@@ -93,3 +94,12 @@
 ---
 
 *"Ogni errore risolto è un passo verso la perfezione."*
+=======
+---
+module: theme
+topic: phpstan-progress-summary
+canonical: ../../../Themes/docs/shared-components/phpstan-progress-summary.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-progress-summary.md
+>>>>>>> origin/dev

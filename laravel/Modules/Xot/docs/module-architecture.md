@@ -36,11 +36,15 @@
 - Multi-tenant aware models
 - Social authentication integration
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_dqYiFM
 #### 3. **healthcare_app Module - Business Core**
 =======
 #### 3. **ModuloEsempio Module - Business Core**
 >>>>>>> .merge_file_67LCr0
+=======
+#### 3. **healthcare_app Module - Business Core**
+>>>>>>> origin/dev
 **Role**: Survey management, reporting, analytics
 **Priority**: 0 (Standard priority)
 **Dependencies**: Xot, User, Geo, Media
@@ -232,11 +236,15 @@
 #### 15. **Limesurvey Module - External Integration**
 **Role**: Limesurvey integration, survey synchronization
 **Priority**: 0 (Standard priority)
+<<<<<<< HEAD
 <<<<<<< .merge_file_dqYiFM
 **Dependencies**: Xot, healthcare_app
 =======
 **Dependencies**: Xot, ModuloEsempio
 >>>>>>> .merge_file_67LCr0
+=======
+**Dependencies**: Xot, healthcare_app
+>>>>>>> origin/dev
 
 **Key Components**:
 - `LimeSurvey`, `LimeQuestion` models
@@ -284,11 +292,15 @@
 Xot (Foundation)
 ├── User (Security)
 │   └── Tenant (Multi-tenancy)
+<<<<<<< HEAD
 <<<<<<< .merge_file_dqYiFM
 ├── healthcare_app (Business Core)
 =======
 ├── ModuloEsempio (Business Core)
 >>>>>>> .merge_file_67LCr0
+=======
+├── healthcare_app (Business Core)
+>>>>>>> origin/dev
 │   ├── Geo (Locations)
 │   ├── Media (Files)
 │   └── Limesurvey (External Integration)
@@ -397,11 +409,15 @@ public function register(): void
 #### ⚠️ Needs Attention
 - **Cms**: Mixed file structure issues
 - **UI**: Mixed test structure issues
+<<<<<<< HEAD
 <<<<<<< .merge_file_dqYiFM
 - **healthcare_app**: Missing module.json description
 =======
 - **ModuloEsempio**: Missing module.json description
 >>>>>>> .merge_file_67LCr0
+=======
+- **healthcare_app**: Missing module.json description
+>>>>>>> origin/dev
 
 #### 🔧 Technical Debt
 - **Translation consistency**: Some .navigation placeholders
@@ -412,11 +428,15 @@ public function register(): void
 
 #### High-Usage Modules
 - **User**: Authentication checks on every request
+<<<<<<< HEAD
 <<<<<<< .merge_file_dqYiFM
 - **healthcare_app**: Survey processing and reporting
 =======
 - **ModuloEsempio**: Survey processing and reporting
 >>>>>>> .merge_file_67LCr0
+=======
+- **healthcare_app**: Survey processing and reporting
+>>>>>>> origin/dev
 - **Media**: File uploads and conversions
 - **Job**: Background processing
 

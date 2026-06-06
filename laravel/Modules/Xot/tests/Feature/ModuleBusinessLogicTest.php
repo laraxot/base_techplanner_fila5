@@ -6,9 +6,12 @@ namespace Modules\Xot\Tests\Feature;
 
 use Illuminate\Database\QueryException;
 use Modules\Xot\Models\Module;
+<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class);
+=======
+>>>>>>> origin/dev
 
 it('can create module', function () {
     // Arrange

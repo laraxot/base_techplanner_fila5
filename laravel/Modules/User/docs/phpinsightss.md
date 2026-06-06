@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -363,3 +364,12 @@ Traits ......................................................... 2.9 %
  [ERROR] The style score is too low                                                                     
 
 
+=======
+---
+module: theme
+topic: phpinsightss
+canonical: ../../../Themes/docs/shared-components/phpinsights-errors.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-errors.md
+>>>>>>> origin/dev

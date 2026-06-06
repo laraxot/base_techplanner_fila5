@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzione PHPStan - XotBaseRelationManager ✅
 
 **File**: `app/Filament/Resources/RelationManagers/XotBaseRelationManager.php`
@@ -150,3 +151,12 @@ public function canDetachBulk(\Illuminate\Database\Eloquent\Model|\stdClass $rec
 1. ✅ Correzione completata
 2. ⏳ Commit con messaggio descrittivo
 3. ⏳ Push
+=======
+---
+module: theme
+topic: phpstan-xotbaserelationmanager-completato
+canonical: ../../../Themes/docs/shared-components/phpstan-fix-xotbaserelationmanager-completato.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-xotbaserelationmanager-completato.md
+>>>>>>> origin/dev

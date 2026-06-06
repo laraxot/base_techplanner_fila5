@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UserFactory Advanced Implementation - COMPLETE ✅
 
 ## 🎉 Mission Accomplished
@@ -316,3 +317,12 @@ $gdprTests = [
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 
 **🎉 MISSION ACCOMPLISHED - UserFactory Advanced Implementation Complete! 🎉** 
+=======
+---
+module: theme
+topic: userfactory_advanced_implementation_complete
+canonical: ../../../Themes/docs/shared-components/userfactory_advanced_implementation_complete.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/userfactory_advanced_implementation_complete.md
+>>>>>>> origin/dev

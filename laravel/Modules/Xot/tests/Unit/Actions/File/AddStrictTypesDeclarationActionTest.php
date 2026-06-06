@@ -47,5 +47,9 @@ it('handles file with existing namespace', function (): void {
 
     $content = File::get($file);
     expect($content)->toContain('declare(strict_types=1)')
+<<<<<<< HEAD
         ->and($content)->toContain('
+=======
+        ->and($content)->toContain('class TestAction {}');
+>>>>>>> origin/dev
 });

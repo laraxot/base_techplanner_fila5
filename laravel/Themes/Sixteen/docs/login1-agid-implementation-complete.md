@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Login1 AGID-Compliant - Implementazione Completa
 
 **Data Implementazione**: 01 Agosto 2025  
@@ -235,3 +236,12 @@ route('pages.view', ['slug' => 'legal-notes'])
 **Implementazione completata con successo** ✅  
 **Pronto per produzione** 🚀  
 **Standard AGID rispettati al 100%** 🏛️
+=======
+---
+module: theme
+topic: login1-agid-implementation-complete
+canonical: ../../docs/shared-components/login1-agid-implementation-complete.md
+---
+
+See canonical documentation: ../../docs/shared-components/login1-agid-implementation-complete.md
+>>>>>>> origin/dev

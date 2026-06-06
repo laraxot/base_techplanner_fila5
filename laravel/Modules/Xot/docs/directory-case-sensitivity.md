@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Case Sensitivity e Struttura Corretta delle Directory nei Moduli Laravel
 
 ## Problemi Identificati
@@ -135,3 +136,12 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 - [NAMESPACE-RULES.md](./namespace-rules.md) - Regole per i namespace nei moduli
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./folio_volt_filament_integration.md) - Integrazione Folio, Volt e Filament
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
+=======
+---
+module: theme
+topic: directory-case-sensitivity
+canonical: ../../../Themes/docs/shared-components/directory-case-sensitivity-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/directory-case-sensitivity-1.md
+>>>>>>> origin/dev

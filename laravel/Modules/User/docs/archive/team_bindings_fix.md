@@ -166,10 +166,14 @@ $this->assertTrue($user->belongsToTeam($team));
 - [TeamInvitation Model](../app/Models/TeamInvitation.php)
 - [UserServiceProvider](../app/Providers/UserServiceProvider.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Critical Errors Documentation](../../ptvx/docs/critical-errors-resolved.md)
 =======
 - [Critical Errors Documentation](../../healthcare_app/docs/critical-errors-resolved.md)
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+- [Critical Errors Documentation](../../healthcare_app/docs/critical-errors-resolved.md)
+>>>>>>> origin/dev
 
 ---
 

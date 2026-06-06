@@ -21,6 +21,12 @@ This document outlines the best practices and mandatory rules for managing Compo
 *   **Description**: All new Composer packages that are specific to a particular module (e.g., a calendar package for the `Meetup` module, a payment gateway for a `Billing` module) **must be installed within that module's `composer.json` file**, located at `Modules/{ModuleName}/composer.json`.
 *   **Motivation**: This practice ensures proper dependency encapsulation, prevents the root `composer.json` from becoming bloated with module-specific concerns, and aligns with the modular design philosophy. It leverages the `wikimedia/composer-merge-plugin` to correctly integrate these dependencies.
 *   **Esempio OAuth/Login (Modules/User/composer.json)**: Package come `socialiteproviders/microsoft`, `socialiteproviders/auth0` vanno nel modulo User perché riguardano autenticazione/login.
+<<<<<<< HEAD
+=======
+*   **Esempio Folio (Modules/Cms/composer.json)**: `laravel/folio` — owner Cms (`FolioVoltServiceProvider`). **Mai** root o Xot.
+*   **Esempio Activity Log (Modules/Activity/composer.json)**: `spatie/laravel-activitylog` — owner Activity. **Mai** root.
+*   **Esempio PDF (Modules/Xot/composer.json)**: `spatie/laravel-pdf` — owner Xot.
+>>>>>>> origin/dev
 *   **Example (`Modules/Meetup/composer.json`)**:
     ```json
     {
@@ -80,10 +86,29 @@ This document outlines the best practices and mandatory rules for managing Compo
     },
     ```
 
+<<<<<<< HEAD
 ### Rule 3: Executing `composer go` for Dependency Resolution
 
 *   **Description**: After modifying a module's `composer.json` (or any other change that requires Composer to re-evaluate dependencies), the custom `composer go` script (defined in `laravel/composer.json`) **must be executed from the `laravel/` directory** to update and merge dependencies correctly.
 *   **Motivation**: The `composer go` script handles various post-update tasks, including a `composer.phar update -W` which is essential for `wikimedia/composer-merge-plugin` to re-read and merge all module `composer.json` files. This ensures that all module-specific dependencies are installed and properly integrated into the project's autoloader.
+=======
+### Rule 3: Delete Module `vendor/` Before Sync
+
+*   **Description**: Before running Composer from `laravel/`, **remove** any local `Modules/{ModuleName}/vendor/` directory if it exists. Laraxot installs merged dependencies only in `laravel/vendor/`.
+*   **Motivation**: A stale module-level `vendor/` causes PHPStan `class.notFound` and autoload drift even when `composer.json` is correct.
+
+```bash
+rm -rf laravel/Modules/Xot/vendor
+# oppure tutti i moduli:
+rm -rf laravel/Modules/*/vendor
+```
+
+### Rule 4: Executing `composer update -W` / `composer go` from `laravel/`
+
+*   **Description**: After modifying a module's `composer.json`, run **`php -d memory_limit=-1 composer.phar update -W`** from `laravel/` (minimum). The full `composer go` script also runs migrate/serve — use only when appropriato.
+*   **Motivation**: `wikimedia/composer-merge-plugin` re-reads `Modules/*/composer.json` and installs into `laravel/vendor/`.
+*   **Wiki**: [composer-module-dependency-go.md](../../../../docs/wiki/rules/composer-module-dependency-go.md)
+>>>>>>> origin/dev
 *   **Example (`laravel/composer.json` `scripts.go` section)**:
     ```json
     "go": [
@@ -97,16 +122,31 @@ This document outlines the best practices and mandatory rules for managing Compo
 
 ## Practical Workflow
 
+<<<<<<< HEAD
 1.  Navigate to `Modules/{ModuleName}/`.
 2.  Edit `composer.json` to add/remove specific dependencies.
 3.  Navigate back to `laravel/`.
 4.  Execute `composer go`.
+=======
+1.  Edit `Modules/{ModuleName}/composer.json` to add/remove specific dependencies.
+2.  `rm -rf laravel/Modules/{ModuleName}/vendor` (if exists).
+3.  `cd laravel/`.
+4.  `php -d memory_limit=-1 composer.phar update -W` (or `composer go` for full stack refresh).
+5.  PHPStan on files that use the new package.
+>>>>>>> origin/dev
 
 ---
 
 ## Related Documentation
 
+<<<<<<< HEAD
 *   [User Composer Dependencies](../User/docs/composer-dependencies.md)
+=======
+*   [composer-module-dependency-go.md](../../../../docs/wiki/rules/composer-module-dependency-go.md)
+*   [architecture-composer-module-dependency.md](../../../../docs/wiki/bmad/architecture-composer-module-dependency.md)
+*   [laravel-folio-module-dependency.md](../Cms/docs/wiki/concepts/laravel-folio-module-dependency.md)
+*   [spatie-activitylog-module-dependency.md](../Activity/docs/wiki/concepts/spatie-activitylog-module-dependency.md)
+>>>>>>> origin/dev
 *   [nWidart/laravel-modules GitHub Repository](https://github.com/nWidart/laravel-modules)
 *   [Laravel Modules Official Documentation](https://laravelmodules.com/docs/1/getting-started/introduction)
 *   [wikimedia/composer-merge-plugin GitHub Repository](https://github.com/wikimedia/composer-merge-plugin)

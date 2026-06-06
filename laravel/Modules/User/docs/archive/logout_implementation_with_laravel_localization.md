@@ -60,10 +60,14 @@ mount(function() {
 ## Utilizzo Corretto di LaravelLocalization
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per garantire la compatibilità con il sistema di localizzazione di Laraxot, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
 =======
 Per garantire la compatibilità con il sistema di localizzazione di healthcare_app, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+Per garantire la compatibilità con il sistema di localizzazione di healthcare_app, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
+>>>>>>> origin/dev
 
 ```php
 // ERRATO
@@ -76,10 +80,14 @@ $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCur
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di Laraxot per la gestione della localizzazione.
 =======
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di healthcare_app per la gestione della localizzazione.
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di healthcare_app per la gestione della localizzazione.
+>>>>>>> origin/dev
 
 ## Template Blade con Componenti Filament
 
@@ -112,10 +120,14 @@ Il template Blade per il logout dovrebbe utilizzare i componenti Filament e most
 3. **Gestione Errori Robusta**: Gli errori vengono catturati e gestiti appropriatamente
 4. **Esperienza Utente Migliorata**: L'interfaccia è più intuitiva e reattiva
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di Laraxot per la localizzazione
 =======
 5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di healthcare_app per la localizzazione
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di healthcare_app per la localizzazione
+>>>>>>> origin/dev
 
 ## Chiavi di Traduzione per il Logout
 

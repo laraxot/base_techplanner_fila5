@@ -4,10 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Rules;
 
+<<<<<<< HEAD
 uses(\Modules\User\Tests\TestCase::class);
 
 use Modules\User\Models\User;
 use Modules\User\Rules\CheckOtpExpiredRule;
+=======
+uses(TestCase::class);
+
+use Modules\User\Models\User;
+use Modules\User\Rules\CheckOtpExpiredRule;
+use Modules\User\Tests\TestCase;
+>>>>>>> origin/dev
 
 test('CheckOtpExpiredRule can be instantiated', function () {
     $user = User::factory()->make();

@@ -11,16 +11,26 @@ use Illuminate\Support\Str;
 use Modules\Notify\Datas\RecordNotificationData;
 use Modules\Notify\Notifications\RecordNotification;
 use Modules\Xot\Contracts\UserContract;
+<<<<<<< HEAD
 use Spatie\ModelStates\Transition;
 use Webmozart\Assert\InvalidArgumentException;
 
 abstract class XotBaseTransition extends Transition
+=======
+use Webmozart\Assert\InvalidArgumentException;
+
+abstract class XotBaseTransition
+>>>>>>> origin/dev
 {
     public function __construct(
         public Model $record,
         public ?string $message = '',
+<<<<<<< HEAD
     ) {
     }
+=======
+    ) {}
+>>>>>>> origin/dev
 
     public function handle(): Model
     {
@@ -89,7 +99,11 @@ abstract class XotBaseTransition extends Transition
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $data
+=======
+     * @param  array<string, mixed>  $data
+>>>>>>> origin/dev
      */
     public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
     {

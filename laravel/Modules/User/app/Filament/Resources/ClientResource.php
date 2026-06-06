@@ -6,6 +6,10 @@ namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> origin/dev
 use Laravel\Passport\Client;
 use Laravel\Passport\Passport;
 use Modules\User\Filament\Resources\ClientResource\Pages\CreateClient;
@@ -53,17 +57,28 @@ class ClientResource extends XotBaseResource
             $components = array_merge($components, $additionalComponents);
         }
 
+<<<<<<< HEAD
         /* @var array<string, \Filament\Forms\Components\Field> $components */
+=======
+        /* @var array<string, Field> $components */
+>>>>>>> origin/dev
         return $components;
     }
 
     /**
      * Get the model class for the resource from Passport.
      *
+<<<<<<< HEAD
      * @return class-string<\Illuminate\Database\Eloquent\Model>
      */
     /**
      * @return class-string<\Illuminate\Database\Eloquent\Model>
+=======
+     * @return class-string<Model>
+     */
+    /**
+     * @return class-string<Model>
+>>>>>>> origin/dev
      */
     public static function getModel(): string
     {
@@ -72,9 +87,15 @@ class ClientResource extends XotBaseResource
             return Client::class;
         }
 
+<<<<<<< HEAD
         Assert::subclassOf($model, \Illuminate\Database\Eloquent\Model::class);
 
         /* @var class-string<\Illuminate\Database\Eloquent\Model> $model */
+=======
+        Assert::subclassOf($model, Model::class);
+
+        /* @var class-string<Model> $model */
+>>>>>>> origin/dev
         return $model;
     }
 

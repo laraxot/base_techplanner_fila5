@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -912,3 +913,12 @@ private function getPasswordLegacy(): string
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
 
+=======
+---
+module: theme
+topic: console-commands
+canonical: ../../../../Themes/docs/shared-components/console-commands-philosophy.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/console-commands-philosophy.md
+>>>>>>> origin/dev

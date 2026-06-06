@@ -60,11 +60,15 @@ The UI module provides comprehensive user interface components and styling:
 ## Integration with Other Modules
 - **User**: Authentication interface components
 - **Cms**: Content display components
+<<<<<<< HEAD
 <<<<<<< .merge_file_USaBT0
 - **healthcare_app**: Dashboard UI components
 =======
 - **ModuloEsempio**: Dashboard UI components
 >>>>>>> .merge_file_ivPCq0
+=======
+- **Quaeris**: Dashboard UI components
+>>>>>>> origin/dev
 - **Xot**: Base UI infrastructure
 - **Filament**: Component compatibility
 

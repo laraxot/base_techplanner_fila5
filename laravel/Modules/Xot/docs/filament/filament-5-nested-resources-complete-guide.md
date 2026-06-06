@@ -42,12 +42,16 @@ php artisan make:filament-page ManageCourseLessons --resource=CourseResource --t
 ```php
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_RpIMpU
+=======
+>>>>>>> origin/dev
 namespace Modules\healthcare_app\Filament\Resources\Courses;
 
 use Filament\Resources\Resource;
 use Filament\Resources\Pages\Page;
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
+<<<<<<< HEAD
 =======
 namespace Modules\ModuloEsempio\Filament\Resources\Courses;
 
@@ -55,6 +59,8 @@ use Filament\Resources\Resource;
 use Filament\Resources\Pages\Page;
 use Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 >>>>>>> .merge_file_BiKnDm
+=======
+>>>>>>> origin/dev
 
 class CourseResource extends Resource
 {
@@ -91,12 +97,16 @@ class CourseResource extends Resource
 ```php
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_RpIMpU
+=======
+>>>>>>> origin/dev
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 
 use Filament\Resources\Resource;
 use Filament\Resources\Pages\Page;
 use Modules\healthcare_app\Filament\Resources\Courses\CourseResource;
+<<<<<<< HEAD
 =======
 namespace Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons;
 
@@ -104,6 +114,8 @@ use Filament\Resources\Resource;
 use Filament\Resources\Pages\Page;
 use Modules\ModuloEsempio\Filament\Resources\Courses\CourseResource;
 >>>>>>> .merge_file_BiKnDm
+=======
+>>>>>>> origin/dev
 
 class LessonResource extends Resource
 {
@@ -142,22 +154,30 @@ class LessonResource extends Resource
 ```php
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_RpIMpU
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 =======
 namespace Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons;
 >>>>>>> .merge_file_BiKnDm
+=======
+namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
+>>>>>>> origin/dev
 
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Tables;
 use Filament\Forms;
 use Filament\Tables\Table;
 use Filament\Forms\Form;
+<<<<<<< HEAD
 <<<<<<< .merge_file_RpIMpU
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 =======
 use Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 >>>>>>> .merge_file_BiKnDm
+=======
+use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
+>>>>>>> origin/dev
 
 class LessonsRelationManager extends RelationManager
 {
@@ -220,12 +240,16 @@ class LessonsRelationManager extends RelationManager
 ```php
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_RpIMpU
+=======
+>>>>>>> origin/dev
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\ParentResourceRegistration;
 use Modules\healthcare_app\Filament\Resources\Courses\CourseResource;
+<<<<<<< HEAD
 =======
 namespace Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons;
 
@@ -233,6 +257,8 @@ use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\ParentResourceRegistration;
 use Modules\ModuloEsempio\Filament\Resources\Courses\CourseResource;
 >>>>>>> .merge_file_BiKnDm
+=======
+>>>>>>> origin/dev
 
 class LessonResource extends Resource
 {
@@ -253,11 +279,15 @@ class LessonResource extends Resource
 ```php
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_RpIMpU
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 =======
 namespace Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons;
 >>>>>>> .merge_file_BiKnDm
+=======
+namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
+>>>>>>> origin/dev
 
 use Filament\Resources\RelationManagers\RelationManager;
 use Illuminate\Database\Eloquent\Model;
@@ -284,11 +314,15 @@ class LessonsRelationManager extends RelationManager
 ```php
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_RpIMpU
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 =======
 namespace Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons;
 >>>>>>> .merge_file_BiKnDm
+=======
+namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
+>>>>>>> origin/dev
 
 use Filament\Resources\RelationManagers\RelationManager;
 use Illuminate\Database\Eloquent\Model;
@@ -360,12 +394,16 @@ public function create(): array
 ```php
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_RpIMpU
+=======
+>>>>>>> origin/dev
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 use Modules\healthcare_app\Models\Course;
+<<<<<<< HEAD
 =======
 namespace Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons\Pages;
 
@@ -373,6 +411,8 @@ use Filament\Resources\Pages\CreateRecord;
 use Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 use Modules\ModuloEsempio\Models\Course;
 >>>>>>> .merge_file_BiKnDm
+=======
+>>>>>>> origin/dev
 
 class CreateLesson extends CreateRecord
 {
@@ -397,17 +437,23 @@ class CreateLesson extends CreateRecord
 ```php
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_RpIMpU
+=======
+>>>>>>> origin/dev
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
+<<<<<<< HEAD
 =======
 namespace Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
 use Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 >>>>>>> .merge_file_BiKnDm
+=======
+>>>>>>> origin/dev
 use Illuminate\Validation\Rule;
 
 class CreateLesson extends CreateRecord
@@ -508,11 +554,15 @@ dd($this->getRouteKey(), $this->getRecord());
 public function test_nested_resource_routing()
 {
     $course = Course::factory()->create();
+<<<<<<< HEAD
 <<<<<<< .merge_file_RpIMpU
     $response = $this->get(route('filament.healthcare_app.resources.courses.resources.lessons.list', [
 =======
     $response = $this->get(route('filament.ptvx.resources.courses.resources.lessons.list', [
 >>>>>>> .merge_file_BiKnDm
+=======
+    $response = $this->get(route('filament.healthcare_app.resources.courses.resources.lessons.list', [
+>>>>>>> origin/dev
         'course' => $course,
     ]));
     
@@ -526,11 +576,15 @@ public function test_nested_resource_routing()
 - **API Reference**: https://filamentphp.com/docs/5.x/api/resources/nested-resources
 - **Plugin Guava**: https://filamentphp.com/plugins/guava-nested-resources
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_RpIMpU
 ## 🔄 **Integrazione con healthcare_app**
 =======
 ## 🔄 **Integrazione con ModuloEsempio**
 >>>>>>> .merge_file_BiKnDm
+=======
+## 🔄 **Integrazione con healthcare_app**
+>>>>>>> origin/dev
 
 ### **Pattern di Integrazione**
 

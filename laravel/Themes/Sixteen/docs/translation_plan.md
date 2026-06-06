@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌐 Translation Plan - Italian to English Documentation
 
 ## 📊 Current Language Analysis
@@ -203,3 +204,12 @@ Update all references in:
 **📅 Timeline**: 3 days for complete translation  
 **👥 Team**: 1 technical translator + 1 domain expert review  
 **✅ Success**: Professional English docs with no broken functionality
+=======
+---
+module: theme
+topic: translation_plan
+canonical: ../../docs/shared-components/translation-plan.md
+---
+
+See canonical documentation: ../../docs/shared-components/translation-plan.md
+>>>>>>> origin/dev

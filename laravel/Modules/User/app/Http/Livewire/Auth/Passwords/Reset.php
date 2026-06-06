@@ -70,10 +70,16 @@ class Reset extends Component
             },
         );
 
+<<<<<<< HEAD
         /* @phpstan-ignore argument.type */
         Assert::string($response_lang = trans((string) $response));
 
         if (Password::PASSWORD_RESET === $response) {
+=======
+        Assert::string($response_lang = trans((string) $response));
+
+        if ($response === Password::PASSWORD_RESET) {
+>>>>>>> origin/dev
             session()->flash($response_lang);
 
             return redirect(route('home'));

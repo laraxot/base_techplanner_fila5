@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Linee Guida per la Documentazione in Laraxot
 
 Questo documento definisce le best practices per la creazione e la manutenzione della documentazione all'interno del framework Laraxot.
@@ -279,3 +280,12 @@ Per implementare queste linee guida:
 - [Markdown Guide](https://www.markdownguide.org/)
 - [Documentazione Laravel](https://laravel.com/docs)
 - [Documentazione PHPDoc](https://docs.phpdoc.org/)
+=======
+---
+module: theme
+topic: documentation-guidelines
+canonical: ../../../../../Themes/docs/shared-components/documentation-guidelines-1.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/documentation-guidelines-1.md
+>>>>>>> origin/dev

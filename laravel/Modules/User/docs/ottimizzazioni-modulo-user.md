@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ottimizzazioni Modulo User - DRY + KISS
 
 ## Panoramica
@@ -352,3 +353,12 @@ echo "✅ Consolidamento completato!"
 **Stato:** In implementazione
 **Responsabile:** Team Sviluppo User
 **Priorità:** ALTA (duplicazioni massive identificate)
+=======
+---
+module: theme
+topic: ottimizzazioni-modulo-user
+canonical: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
+>>>>>>> origin/dev

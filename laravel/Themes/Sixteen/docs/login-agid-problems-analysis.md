@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Problemi Login AGID - Tema Sixteen
 
 ## 🚨 PROBLEMI IDENTIFICATI
@@ -338,3 +339,12 @@ name('login');
 **Problemi Identificati**: ✅ COMPLETI  
 **Soluzioni Proposte**: ✅ DETTAGLIATE  
 **Prossimo Passo**: Implementazione Correzione 
+=======
+---
+module: theme
+topic: login-agid-problems-analysis
+canonical: ../../docs/shared-components/login-agid-problems-analysis.md
+---
+
+See canonical documentation: ../../docs/shared-components/login-agid-problems-analysis.md
+>>>>>>> origin/dev

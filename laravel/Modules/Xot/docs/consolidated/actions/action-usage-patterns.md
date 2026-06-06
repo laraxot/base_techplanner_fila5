@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Action Usage Patterns - Regole Fondamentali
 
 ## 🎯 **REGOLA CRITICA: Pattern di Uso delle Action**
@@ -101,3 +102,12 @@ Aggiungere regole PHPStan per identificare automaticamente questi pattern.
 **PRIORITÀ**: CRITICA - Da seguire SEMPRE senza eccezioni
 **AGGIORNATO**: 2025-01-30
 **AUTORE**: Sistema di Qualità Laraxot
+=======
+---
+module: theme
+topic: action-usage-patterns
+canonical: ../../../../../Themes/docs/shared-components/action-usage-patterns.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/action-usage-patterns.md
+>>>>>>> origin/dev

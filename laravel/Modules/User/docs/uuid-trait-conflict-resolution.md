@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Module - UUID Trait Conflict Resolution
 
 **Generated**: 2026-01-02
@@ -298,3 +299,12 @@ $token = $user->createToken('test');
 
 **"The best UUID is the one that works everywhere and conflicts nowhere."**
 *- Super Mucca Methodology*
+=======
+---
+module: theme
+topic: uuid-trait-conflict-resolution
+canonical: ../../../Themes/docs/shared-components/uuid-trait-conflict-resolution.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/uuid-trait-conflict-resolution.md
+>>>>>>> origin/dev

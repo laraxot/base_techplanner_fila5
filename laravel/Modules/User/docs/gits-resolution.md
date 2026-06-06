@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risoluzione Conflitti Git - Modulo User ([DATE])
 
 ## Data
@@ -308,3 +309,12 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [ ] Creare test di regressione per prevenire conflitti futuri
 
 ---
+=======
+---
+module: theme
+topic: gits-resolution
+canonical: ../../../Themes/docs/shared-components/gits-resolution-06cb77.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/gits-resolution-06cb77.md
+>>>>>>> origin/dev

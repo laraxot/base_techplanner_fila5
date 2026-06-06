@@ -38,6 +38,7 @@ abstract class BaseModel extends XotBaseModel {
 
 **Moduli analizzati**:
 - Activity, Chart, CloudStorage, Cms, Gdpr, Geo, Job, Lang, Limesurvey, Media, Notify, Tenant, User, Xot (14 moduli identici)
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 - healthcare_app: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
 =======
@@ -47,6 +48,10 @@ abstract class BaseModel extends XotBaseModel {
 - ExternalProject: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+- healthcare_app: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
+- ModuloEsempio: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
+>>>>>>> origin/dev
 - UI: Vuoto (minimal)
 
 **Violazione DRY**: 📊 **93% di duplicazione** (14/15 BaseModel identici)
@@ -90,6 +95,7 @@ protected function casts(): array {
 
 **Violazione DRY**: Cms e altri moduli ridichiarano casts già presenti nel parent
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 ### 4. **healthcare_app BaseModel - Pattern Anomalo**
 
@@ -105,6 +111,14 @@ protected function casts(): array {
 **Problema Critico**: `Modules\ExternalProject\Models\BaseModel` NON estende `XotBaseModel`:
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+### 4. **healthcare_app BaseModel - Pattern Anomalo**
+
+**Problema Critico**: `Modules\healthcare_app\Models\BaseModel` NON estende `XotBaseModel`:
+### 4. **ModuloEsempio BaseModel - Pattern Anomalo**
+
+**Problema Critico**: `Modules\ModuloEsempio\Models\BaseModel` NON estende `XotBaseModel`:
+>>>>>>> origin/dev
 
 ```php
 // ❌ ERRATO - Non segue l'architettura standard
@@ -115,11 +129,15 @@ abstract class BaseModel extends Model implements ModelContract, HasMedia {
     use HasExtraTrait;
     use InteractsWithMedia;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
     protected $connection = 'healthcare_app';
 =======
     protected $connection = 'modulo_esempio';
 >>>>>>> .merge_file_PmbTJN
+=======
+    protected $connection = 'healthcare_app';
+>>>>>>> origin/dev
     protected $casts = ['published_at' => 'datetime', ...]; // Array invece di metodo
     // ... Ridefinisce tutto manualmente
 }
@@ -141,6 +159,7 @@ use HasXotFactory;
 use RelationX;
 use Updater;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 // healthcare_app/BaseModel duplica Updater:
 =======
@@ -150,6 +169,10 @@ use Updater;
 // ExternalProject/BaseModel duplica Updater:
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+// healthcare_app/BaseModel duplica Updater:
+// ModuloEsempio/BaseModel duplica Updater:
+>>>>>>> origin/dev
 use Updater;  // ❌ Duplicato se estendesse XotBaseModel
 use HasExtraTrait;
 use InteractsWithMedia;
@@ -195,7 +218,10 @@ abstract class XotBaseModel extends Model {
 - Serve aggiungere traits specifici (es: Notify → InteractsWithMedia)
 - Serve override di casts specifici (es: User → verified_at)
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
+=======
+>>>>>>> origin/dev
 ### Soluzione 2: Correggere healthcare_app/BaseModel
 
 **Obiettivo**: Allineare healthcare_app all'architettura standard
@@ -203,8 +229,11 @@ abstract class XotBaseModel extends Model {
 **Implementazione**:
 ```php
 // Modules/healthcare_app/app/Models/BaseModel.php
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/dev
 ### Soluzione 2: Correggere ModuloEsempio/BaseModel
 
 **Obiettivo**: Allineare ModuloEsempio all'architettura standard
@@ -212,6 +241,7 @@ abstract class XotBaseModel extends Model {
 **Implementazione**:
 ```php
 // Modules/ModuloEsempio/app/Models/BaseModel.php
+<<<<<<< HEAD
 =======
 ### Soluzione 2: Correggere ExternalProject/BaseModel
 
@@ -222,6 +252,8 @@ abstract class XotBaseModel extends Model {
 // Modules/ExternalProject/app/Models/BaseModel.php
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+>>>>>>> origin/dev
 use Modules\Xot\Models\XotBaseModel;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -231,7 +263,10 @@ abstract class BaseModel extends XotBaseModel implements HasMedia {
     use InteractsWithMedia;
     use HasExtraTrait;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
+=======
+>>>>>>> origin/dev
     protected $connection = 'healthcare_app'; // Auto-discovery se Soluzione 1 applicata
 
     protected $with = ['extra']; // Specifico healthcare_app
@@ -239,15 +274,19 @@ abstract class BaseModel extends XotBaseModel implements HasMedia {
     protected function casts(): array {
         return array_merge(parent::casts(), [
             // Solo casts SPECIFICI healthcare_app, se necessari
+<<<<<<< HEAD
 =======
     protected $connection = 'modulo_esempio'; // Auto-discovery se Soluzione 1 applicata
 
 <<<<<<< HEAD
+=======
+>>>>>>> origin/dev
     protected $with = ['extra']; // Specifico ModuloEsempio
 
     protected function casts(): array {
         return array_merge(parent::casts(), [
             // Solo casts SPECIFICI ModuloEsempio, se necessari
+<<<<<<< HEAD
 =======
     protected $with = ['extra']; // Specifico ExternalProject
 
@@ -256,6 +295,8 @@ abstract class BaseModel extends XotBaseModel implements HasMedia {
             // Solo casts SPECIFICI ExternalProject, se necessari
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+>>>>>>> origin/dev
         ]);
     }
 }
@@ -348,6 +389,7 @@ Manutenibilità: +40%
 ## 🎯 Priorità di Implementazione
 
 ### 🔴 Priorità ALTA
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 1. **Correggere healthcare_app/BaseModel** (non segue standard)
 =======
@@ -357,6 +399,10 @@ Manutenibilità: +40%
 1. **Correggere ExternalProject/BaseModel** (non segue standard)
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+1. **Correggere healthcare_app/BaseModel** (non segue standard)
+1. **Correggere ModuloEsempio/BaseModel** (non segue standard)
+>>>>>>> origin/dev
 2. **Implementare auto-discovery in XotBaseModel** (elimina 90% duplicazioni)
 
 ### 🟡 Priorità MEDIA
@@ -372,6 +418,7 @@ Manutenibilità: +40%
 ### Fase 1: Auto-Discovery
 - `Modules/Xot/app/Models/XotBaseModel.php` (+15 righe)
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 ### Fase 2: Correzione healthcare_app
 - `Modules/healthcare_app/app/Models/BaseModel.php` (refactor completo)
@@ -384,6 +431,12 @@ Manutenibilità: +40%
 - `Modules/ExternalProject/app/Models/BaseModel.php` (refactor completo)
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+### Fase 2: Correzione healthcare_app
+- `Modules/healthcare_app/app/Models/BaseModel.php` (refactor completo)
+### Fase 2: Correzione ModuloEsempio
+- `Modules/ModuloEsempio/app/Models/BaseModel.php` (refactor completo)
+>>>>>>> origin/dev
 
 ### Fase 3: Cleanup BaseModel
 - `Modules/Cms/app/Models/BaseModel.php` (rimuovi casts ridondanti)
@@ -396,6 +449,7 @@ Manutenibilità: +40%
 ### Fase 4: Documentazione
 - `Modules/Xot/docs/models/MODEL_ARCHITECTURE.md` (questa guida)
 - `Modules/User/docs/models/README.md`
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 - `Modules/healthcare_app/docs/models/README.md`
 =======
@@ -405,11 +459,16 @@ Manutenibilità: +40%
 - `Modules/ExternalProject/docs/models/README.md`
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+- `Modules/healthcare_app/docs/models/README.md`
+- `Modules/ModuloEsempio/docs/models/README.md`
+>>>>>>> origin/dev
 
 ## ✅ Checklist Implementazione
 
 - [ ] Implementare `getConnectionName()` in XotBaseModel
 - [ ] Testare auto-discovery con modello test
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 - [ ] Correggere `Modules/healthcare_app/app/Models/BaseModel.php`
 - [ ] Testare modelli healthcare_app con nuova struttura
@@ -422,6 +481,12 @@ Manutenibilità: +40%
 - [ ] Testare modelli ExternalProject con nuova struttura
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+- [ ] Correggere `Modules/healthcare_app/app/Models/BaseModel.php`
+- [ ] Testare modelli healthcare_app con nuova struttura
+- [ ] Correggere `Modules/ModuloEsempio/app/Models/BaseModel.php`
+- [ ] Testare modelli ModuloEsempio con nuova struttura
+>>>>>>> origin/dev
 - [ ] Rimuovere casts ridondanti in Cms
 - [ ] Eliminare BaseModel non necessari (opzionale)
 - [ ] Aggiornare CLAUDE.md con nuove convenzioni
@@ -438,6 +503,7 @@ Manutenibilità: +40%
 ## 🎓 Lezioni Apprese
 
 1. **Auto-discovery funziona**: Già implementato con successo in XotBasePivot e XotBaseMorphPivot
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 2. **Consistenza è chiave**: healthcare_app devia dallo standard → maggiore complessità
 =======
@@ -447,6 +513,10 @@ Manutenibilità: +40%
 2. **Consistenza è chiave**: ExternalProject devia dallo standard → maggiore complessità
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+2. **Consistenza è chiave**: healthcare_app devia dallo standard → maggiore complessità
+2. **Consistenza è chiave**: ModuloEsempio devia dallo standard → maggiore complessità
+>>>>>>> origin/dev
 3. **Less is more**: BaseModel vuoti sono OK se tutto viene ereditato correttamente
 4. **Namespace è informazione**: Usarlo per auto-discovery elimina configurazioni manuali
 
@@ -494,6 +564,7 @@ abstract class BaseModel extends XotBaseModel {
 
 **Moduli analizzati**:
 - Activity, Chart, CloudStorage, Cms, Gdpr, Geo, Job, Lang, Limesurvey, Media, Notify, Tenant, User, Xot (14 moduli identici)
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 - healthcare_app: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
 =======
@@ -503,6 +574,10 @@ abstract class BaseModel extends XotBaseModel {
 - ExternalProject: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+- healthcare_app: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
+- ModuloEsempio: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
+>>>>>>> origin/dev
 - UI: Vuoto (minimal)
 
 **Violazione DRY**: 📊 **93% di duplicazione** (14/15 BaseModel identici)
@@ -546,6 +621,7 @@ protected function casts(): array {
 
 **Violazione DRY**: Cms e altri moduli ridichiarano casts già presenti nel parent
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 ### 4. **healthcare_app BaseModel - Pattern Anomalo**
 
@@ -561,6 +637,14 @@ protected function casts(): array {
 **Problema Critico**: `Modules\ExternalProject\Models\BaseModel` NON estende `XotBaseModel`:
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+### 4. **healthcare_app BaseModel - Pattern Anomalo**
+
+**Problema Critico**: `Modules\healthcare_app\Models\BaseModel` NON estende `XotBaseModel`:
+### 4. **ModuloEsempio BaseModel - Pattern Anomalo**
+
+**Problema Critico**: `Modules\ModuloEsempio\Models\BaseModel` NON estende `XotBaseModel`:
+>>>>>>> origin/dev
 
 ```php
 // ❌ ERRATO - Non segue l'architettura standard
@@ -571,11 +655,15 @@ abstract class BaseModel extends Model implements ModelContract, HasMedia {
     use HasExtraTrait;
     use InteractsWithMedia;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
     protected $connection = 'healthcare_app';
 =======
     protected $connection = 'modulo_esempio';
 >>>>>>> .merge_file_PmbTJN
+=======
+    protected $connection = 'healthcare_app';
+>>>>>>> origin/dev
     protected $casts = ['published_at' => 'datetime', ...]; // Array invece di metodo
     // ... Ridefinisce tutto manualmente
 }
@@ -597,6 +685,7 @@ use HasXotFactory;
 use RelationX;
 use Updater;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 // healthcare_app/BaseModel duplica Updater:
 =======
@@ -606,6 +695,10 @@ use Updater;
 // ExternalProject/BaseModel duplica Updater:
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+// healthcare_app/BaseModel duplica Updater:
+// ModuloEsempio/BaseModel duplica Updater:
+>>>>>>> origin/dev
 use Updater;  // ❌ Duplicato se estendesse XotBaseModel
 use HasExtraTrait;
 use InteractsWithMedia;
@@ -651,7 +744,10 @@ abstract class XotBaseModel extends Model {
 - Serve aggiungere traits specifici (es: Notify → InteractsWithMedia)
 - Serve override di casts specifici (es: User → verified_at)
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
+=======
+>>>>>>> origin/dev
 ### Soluzione 2: Correggere healthcare_app/BaseModel
 
 **Obiettivo**: Allineare healthcare_app all'architettura standard
@@ -659,8 +755,11 @@ abstract class XotBaseModel extends Model {
 **Implementazione**:
 ```php
 // Modules/healthcare_app/app/Models/BaseModel.php
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/dev
 ### Soluzione 2: Correggere ModuloEsempio/BaseModel
 
 **Obiettivo**: Allineare ModuloEsempio all'architettura standard
@@ -668,6 +767,7 @@ abstract class XotBaseModel extends Model {
 **Implementazione**:
 ```php
 // Modules/ModuloEsempio/app/Models/BaseModel.php
+<<<<<<< HEAD
 =======
 ### Soluzione 2: Correggere ExternalProject/BaseModel
 
@@ -678,6 +778,8 @@ abstract class XotBaseModel extends Model {
 // Modules/ExternalProject/app/Models/BaseModel.php
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+>>>>>>> origin/dev
 use Modules\Xot\Models\XotBaseModel;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -687,7 +789,10 @@ abstract class BaseModel extends XotBaseModel implements HasMedia {
     use InteractsWithMedia;
     use HasExtraTrait;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
+=======
+>>>>>>> origin/dev
     protected $connection = 'healthcare_app'; // Auto-discovery se Soluzione 1 applicata
 
     protected $with = ['extra']; // Specifico healthcare_app
@@ -695,15 +800,19 @@ abstract class BaseModel extends XotBaseModel implements HasMedia {
     protected function casts(): array {
         return array_merge(parent::casts(), [
             // Solo casts SPECIFICI healthcare_app, se necessari
+<<<<<<< HEAD
 =======
     protected $connection = 'modulo_esempio'; // Auto-discovery se Soluzione 1 applicata
 
 <<<<<<< HEAD
+=======
+>>>>>>> origin/dev
     protected $with = ['extra']; // Specifico ModuloEsempio
 
     protected function casts(): array {
         return array_merge(parent::casts(), [
             // Solo casts SPECIFICI ModuloEsempio, se necessari
+<<<<<<< HEAD
 =======
     protected $with = ['extra']; // Specifico ExternalProject
 
@@ -712,6 +821,8 @@ abstract class BaseModel extends XotBaseModel implements HasMedia {
             // Solo casts SPECIFICI ExternalProject, se necessari
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+>>>>>>> origin/dev
         ]);
     }
 }
@@ -804,6 +915,7 @@ Manutenibilità: +40%
 ## 🎯 Priorità di Implementazione
 
 ### 🔴 Priorità ALTA
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 1. **Correggere healthcare_app/BaseModel** (non segue standard)
 =======
@@ -813,6 +925,10 @@ Manutenibilità: +40%
 1. **Correggere ExternalProject/BaseModel** (non segue standard)
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+1. **Correggere healthcare_app/BaseModel** (non segue standard)
+1. **Correggere ModuloEsempio/BaseModel** (non segue standard)
+>>>>>>> origin/dev
 2. **Implementare auto-discovery in XotBaseModel** (elimina 90% duplicazioni)
 
 ### 🟡 Priorità MEDIA
@@ -828,6 +944,7 @@ Manutenibilità: +40%
 ### Fase 1: Auto-Discovery
 - `Modules/Xot/app/Models/XotBaseModel.php` (+15 righe)
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 ### Fase 2: Correzione healthcare_app
 - `Modules/healthcare_app/app/Models/BaseModel.php` (refactor completo)
@@ -840,6 +957,12 @@ Manutenibilità: +40%
 - `Modules/ExternalProject/app/Models/BaseModel.php` (refactor completo)
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+### Fase 2: Correzione healthcare_app
+- `Modules/healthcare_app/app/Models/BaseModel.php` (refactor completo)
+### Fase 2: Correzione ModuloEsempio
+- `Modules/ModuloEsempio/app/Models/BaseModel.php` (refactor completo)
+>>>>>>> origin/dev
 
 ### Fase 3: Cleanup BaseModel
 - `Modules/Cms/app/Models/BaseModel.php` (rimuovi casts ridondanti)
@@ -852,6 +975,7 @@ Manutenibilità: +40%
 ### Fase 4: Documentazione
 - `Modules/Xot/docs/models/MODEL_ARCHITECTURE.md` (questa guida)
 - `Modules/User/docs/models/README.md`
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 - `Modules/healthcare_app/docs/models/README.md`
 =======
@@ -861,11 +985,16 @@ Manutenibilità: +40%
 - `Modules/ExternalProject/docs/models/README.md`
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+- `Modules/healthcare_app/docs/models/README.md`
+- `Modules/ModuloEsempio/docs/models/README.md`
+>>>>>>> origin/dev
 
 ## ✅ Checklist Implementazione
 
 - [ ] Implementare `getConnectionName()` in XotBaseModel
 - [ ] Testare auto-discovery con modello test
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 - [ ] Correggere `Modules/healthcare_app/app/Models/BaseModel.php`
 - [ ] Testare modelli healthcare_app con nuova struttura
@@ -878,6 +1007,12 @@ Manutenibilità: +40%
 - [ ] Testare modelli ExternalProject con nuova struttura
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+- [ ] Correggere `Modules/healthcare_app/app/Models/BaseModel.php`
+- [ ] Testare modelli healthcare_app con nuova struttura
+- [ ] Correggere `Modules/ModuloEsempio/app/Models/BaseModel.php`
+- [ ] Testare modelli ModuloEsempio con nuova struttura
+>>>>>>> origin/dev
 - [ ] Rimuovere casts ridondanti in Cms
 - [ ] Eliminare BaseModel non necessari (opzionale)
 - [ ] Aggiornare CLAUDE.md con nuove convenzioni
@@ -894,6 +1029,7 @@ Manutenibilità: +40%
 ## 🎓 Lezioni Apprese
 
 1. **Auto-discovery funziona**: Già implementato con successo in XotBasePivot e XotBaseMorphPivot
+<<<<<<< HEAD
 <<<<<<< .merge_file_3qfri1
 2. **Consistenza è chiave**: healthcare_app devia dallo standard → maggiore complessità
 =======
@@ -903,6 +1039,10 @@ Manutenibilità: +40%
 2. **Consistenza è chiave**: ExternalProject devia dallo standard → maggiore complessità
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_PmbTJN
+=======
+2. **Consistenza è chiave**: healthcare_app devia dallo standard → maggiore complessità
+2. **Consistenza è chiave**: ModuloEsempio devia dallo standard → maggiore complessità
+>>>>>>> origin/dev
 3. **Less is more**: BaseModel vuoti sono OK se tutto viene ereditato correttamente
 4. **Namespace è informazione**: Usarlo per auto-discovery elimina configurazioni manuali
 

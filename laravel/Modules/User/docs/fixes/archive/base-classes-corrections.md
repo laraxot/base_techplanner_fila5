@@ -293,6 +293,7 @@ e
 ## Applicazione ad Altri Moduli
 
 Questo pattern di correzione può essere applicato a:
+<<<<<<< HEAD
 <<<<<<< .merge_file_4QT1n1
 - **Modulo healthcare_app**: Verificare QuestionChart, SurveyPdf, Contact
 =======
@@ -302,6 +303,9 @@ Questo pattern di correzione può essere applicato a:
 - **Modulo ModuloEsempio**: Verificare QuestionChart, SurveyPdf, Contact
 >>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_GQO39y
+=======
+- **Modulo ExternalProject**: Verificare QuestionChart, SurveyPdf, Contact
+>>>>>>> origin/dev
 - **Modulo Blog**: Verificare Post, Category, Tag
 - **Modulo Dental**: Verificare Visit, Treatment, Patient
 - **Tutti gli altri moduli**: Audit sistematico

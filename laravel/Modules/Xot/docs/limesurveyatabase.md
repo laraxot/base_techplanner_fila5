@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_F2bdf8
 # Limesurvey Database Analysis - healthcare_app_survey
 
@@ -109,3 +110,12 @@ The ptvx_survey database is used primarily for:
 - Integration with ModuloEsempio reporting features
 >>>>>>> .merge_file_ydteGw
 - Participant management and tracking
+=======
+---
+module: theme
+topic: limesurveyatabase
+canonical: ../../../Themes/docs/shared-components/limesurvey-database-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/limesurvey-database-analysis.md
+>>>>>>> origin/dev

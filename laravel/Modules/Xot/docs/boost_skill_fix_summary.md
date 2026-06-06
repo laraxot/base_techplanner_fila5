@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Boost Skill Fix Summary - Xot Module
 
 **Date**: 2026-03-02  
@@ -100,3 +101,12 @@ As the core foundation module of Laraxot, Xot was indirectly affected:
 3. ⏳ Test Filament integration
 4. ⏳ Run quality checks (PHPStan, Pint, Pest)
 
+=======
+---
+module: theme
+topic: boost_skill_fix_summary
+canonical: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
+>>>>>>> origin/dev

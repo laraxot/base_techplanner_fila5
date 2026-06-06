@@ -33,11 +33,15 @@
 | 6 | **Chart** | 0 | 0 | 9-10 | ✨ Già Puro |
 | 7 | **Geo** | 0 | 0 | 9-10 | ✨ Già Puro |
 | 8 | **Job** | 2 | 0 | 10 | ✨ Illuminato |
+<<<<<<< HEAD
 <<<<<<< .merge_file_6nqYD5
 | 9 | **healthcare_app** | 13 | 0 | 10 | ✨ Illuminato |
 =======
 | 9 | **ModuloEsempio** | 13 | 0 | 10 | ✨ Illuminato |
 >>>>>>> .merge_file_Ww35zp
+=======
+| 9 | **healthcare_app** | 13 | 0 | 10 | ✨ Illuminato |
+>>>>>>> origin/dev
 
 ### 📈 Metriche dell'Illuminazione
 
@@ -88,11 +92,15 @@ Codice perfetto
 ## 🎯 Le Sette Illuminazioni Principali
 
 ### 1️⃣ Semantic Keys (Il Nome delle Cose)
+<<<<<<< HEAD
 <<<<<<< .merge_file_6nqYD5
 **Moduli**: Cms, healthcare_app
 =======
 **Moduli**: Cms, ModuloEsempio
 >>>>>>> .merge_file_Ww35zp
+=======
+**Moduli**: Cms, healthcare_app
+>>>>>>> origin/dev
 
 **Insegnamento**:
 > "Un array con int keys è come un tempio senza insegne.
@@ -125,11 +133,15 @@ if (is_array($value)) { /* ... */ }  // Dopo filter che garantisce array
 ```
 
 ### 3️⃣ Cascading Purity (L'Effetto Farfalla)
+<<<<<<< HEAD
 <<<<<<< .merge_file_6nqYD5
 **Modulo**: healthcare_app
 =======
 **Modulo**: ModuloEsempio
 >>>>>>> .merge_file_Ww35zp
+=======
+**Modulo**: healthcare_app
+>>>>>>> origin/dev
 
 **Insegnamento**:
 > "Una goccia crea cerchi in tutto il lago.
@@ -242,11 +254,15 @@ Assert::isArray($value);  // Ridondante dopo narrowing
 Level 10 → 🏔️ Nirvana
             │ Zero tolleranza
             │ Perfezione assoluta
+<<<<<<< HEAD
 <<<<<<< .merge_file_6nqYD5
             └─ Job, healthcare_app
 =======
             └─ Job, ModuloEsempio
 >>>>>>> .merge_file_Ww35zp
+=======
+            └─ Job, healthcare_app
+>>>>>>> origin/dev
 
 Level 9  → ⛰️  Illuminazione
             │ Quasi perfezione
@@ -271,11 +287,15 @@ Level 0  → 🏕️  Campo Base
    - Collection Flow Analysis
    - Best practices Level 10
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_6nqYD5
 2. **`Modules/healthcare_app/docs/phpstan-enlightenment.md`**
 =======
 2. **`Modules/ModuloEsempio/docs/phpstan-enlightenment.md`**
 >>>>>>> .merge_file_Ww35zp
+=======
+2. **`Modules/healthcare_app/docs/phpstan-enlightenment.md`**
+>>>>>>> origin/dev
    - Filosofia del modulo
    - I 4 Pilastri
    - Le 4 Nobili Verità del Type Safety

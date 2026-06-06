@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Login AGID Migliorato - Tema Sixteen
 
 ## Implementazione Login4 AGID
@@ -305,3 +306,12 @@ Il tema Sixteen usa `<x-layouts.guest>` che include già:
 
 ## Ultimo aggiornamento
 2025-01-06 - Corretto layout da `<x-layout>` a `<x-layouts.guest>` 
+=======
+---
+module: theme
+topic: login4-agid-implementation
+canonical: ../../docs/shared-components/login4-agid-implementation.md
+---
+
+See canonical documentation: ../../docs/shared-components/login4-agid-implementation.md
+>>>>>>> origin/dev

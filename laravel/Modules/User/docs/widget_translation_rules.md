@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Widget Translation Rules - Laraxot Project
 =======
 # Widget Translation Rules - healthcare_app Project
@@ -205,3 +206,12 @@ All widget development should follow these rules to maintain consistency and qua
 =======
 All widget development should follow these rules to maintain consistency and quality across the healthcare_app project.
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+---
+module: theme
+topic: widget_translation_rules
+canonical: ../../../Themes/docs/shared-components/widget_translation_rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/widget_translation_rules.md
+>>>>>>> origin/dev

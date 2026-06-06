@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🗂️ Comprehensive Components Reorganization Plan
 
 ## 🎯 Obiettivo Finale
@@ -346,3 +347,12 @@ Artisan::command('theme:components:verify-batch {batch}', function ($batch) {
 4. **README** principale
 
 **🏆 Risultato Finale**: Architettura componenti enterprise-grade per tema Sixteen
+=======
+---
+module: theme
+topic: comprehensive_components_reorganization
+canonical: ../../docs/shared-components/comprehensive-components-reorganization.md
+---
+
+See canonical documentation: ../../docs/shared-components/comprehensive-components-reorganization.md
+>>>>>>> origin/dev

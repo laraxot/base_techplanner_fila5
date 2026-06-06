@@ -13,21 +13,36 @@ use Webmozart\Assert\Assert;
 
 class ChangePasswordCommand extends Command
 {
+<<<<<<< HEAD
     protected $signature = 'user:change-password';
+=======
+    protected $signature = 'user:change-password {--email= : Email dell\'utente}';
+>>>>>>> origin/dev
 
     protected $description = 'Change user password';
 
     public function handle(): void
     {
+<<<<<<< HEAD
         Assert::string($email = $this->ask('Enter the user email:'));
         try {
             $user = XotData::make()->getUserByEmail($email);
         } catch (\Exception $e) {
             $this->error($e->getMessage());
+=======
+        $emailInput = $this->option('email') ?? $this->ask('Enter the user email:');
+        Assert::string($emailInput);
+
+        $email = strtolower(trim($emailInput));
+
+        if (! filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $this->error('Email non valida: '.$emailInput);
+>>>>>>> origin/dev
 
             return;
         }
 
+<<<<<<< HEAD
         // Ensure we fetched a persisted user and not a transient instance to avoid accidental insert
         if (! $user->exists()) {
             Assert::false(
@@ -35,6 +50,12 @@ class ChangePasswordCommand extends Command
                 __FILE__.':'.__LINE__.' - '.class_basename(self::class).' - User model should exist in database before password change'
             );
             $this->error('User not found or not persisted. Please create the user first (name, email, type, etc.).');
+=======
+        $user = XotData::make()->findUserByEmail($email);
+
+        if ($user === null) {
+            $this->error("Utente non trovato per email: {$email}");
+>>>>>>> origin/dev
 
             return;
         }
@@ -47,6 +68,7 @@ class ChangePasswordCommand extends Command
 
             return;
         }
+<<<<<<< HEAD
         $pwd_data = PasswordData::make();
         $passwordExpiryDateTime = now()->addDays($pwd_data->expires_in);
         /*
@@ -54,6 +76,12 @@ class ChangePasswordCommand extends Command
          * $user->password = Hash::make($password);
          * $user->save();
          */
+=======
+
+        $pwdData = PasswordData::make();
+        $passwordExpiryDateTime = now()->addDays($pwdData->expires_in);
+
+>>>>>>> origin/dev
         $user = tap($user)->update([
             'password_expires_at' => $passwordExpiryDateTime,
             'is_otp' => false,

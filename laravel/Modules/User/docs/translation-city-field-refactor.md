@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Refactor Completo Campi "Città" - Modulo User
 
 ## Riepilogo Intervento
@@ -192,3 +193,12 @@ Utilizzare la documentazione centrale [`translation-field-structure-complete.md`
 =======
 *Intervento eseguito seguendo rigorosamente i principi DRY + KISS e gli standard Laraxot healthcare_app*
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+=======
+---
+module: theme
+topic: translation-city-field-refactor
+canonical: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
+>>>>>>> origin/dev

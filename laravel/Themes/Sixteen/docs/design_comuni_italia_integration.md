@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🇮🇹 Design Comuni Italia - Integration Analysis
 
 **Date:** 2025-10-02  
@@ -625,3 +626,12 @@ Modalità alto contrasto, font dyslexia-friendly, sintesi vocale.
 ---
 
 *Prossimi passi: Iniziare implementazione Phase 1 con componenti base.*
+=======
+---
+module: theme
+topic: design_comuni_italia_integration
+canonical: ../../docs/shared-components/design-comuni-italia-integration.md
+---
+
+See canonical documentation: ../../docs/shared-components/design-comuni-italia-integration.md
+>>>>>>> origin/dev

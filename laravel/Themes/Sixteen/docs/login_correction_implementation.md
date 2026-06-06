@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzione Implementazione Login - Tema Sixteen
 
 ## 🚨 REGOLA CRITICA FONDAMENTALE
@@ -442,3 +443,12 @@ Il tema Sixteen ora dovrebbe funzionare correttamente con il sistema di autentic
 *Regola Critica: ✅ Implementata*
 *Namespace: ✅ Corretto*
 *Componenti: ✅ Verificati* 
+=======
+---
+module: theme
+topic: login_correction_implementation
+canonical: ../../docs/shared-components/login-correction-implementation.md
+---
+
+See canonical documentation: ../../docs/shared-components/login-correction-implementation.md
+>>>>>>> origin/dev

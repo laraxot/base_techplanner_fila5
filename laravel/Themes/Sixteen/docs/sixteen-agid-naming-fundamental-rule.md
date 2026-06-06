@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # REGOLA FONDAMENTALE: Naming Convention Tema Sixteen
 
 ## LEGGE ASSOLUTA E INVIOLABILE
@@ -86,3 +87,12 @@ Questa regola è stata stabilita dopo aver identificato errori ricorrenti nell'u
 ---
 
 *Questa è una regola fondamentale che deve essere sempre rispettata e mai violata.*
+=======
+---
+module: theme
+topic: sixteen-agid-naming-fundamental-rule
+canonical: ../../docs/shared-components/sixteen-agid-naming-fundamental-rule.md
+---
+
+See canonical documentation: ../../docs/shared-components/sixteen-agid-naming-fundamental-rule.md
+>>>>>>> origin/dev
