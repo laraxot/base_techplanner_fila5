@@ -294,7 +294,6 @@ e
 
 Questo pattern di correzione può essere applicato a:
 - **Modulo healthcare_app**: Verificare QuestionChart, SurveyPdf, Contact
->>>>>>> .merge_file_xmWq2d
 - **Modulo Blog**: Verificare Post, Category, Tag
 - **Modulo Dental**: Verificare Visit, Treatment, Patient
 - **Tutti gli altri moduli**: Audit sistematico

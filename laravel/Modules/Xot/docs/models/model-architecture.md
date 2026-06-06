@@ -66,7 +66,6 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 │ - Modules/User/Models/Tenant                                │
 │ - Modules/User/Models/TeamUser                              │
 │ - Modules/healthcare_app/Models/Contact                            │
->>>>>>> .merge_file_flnzoR
 │                                                             │
 │ Implementano: Business logic, Relationships, Scopes         │
 └─────────────────────────────────────────────────────────────┘
@@ -192,7 +191,6 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 **Scopo**:
 - Definire la connection specifica del modulo
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in healthcare_app)
->>>>>>> .merge_file_flnzoR
 - Configurare casts specifici del modulo
 - Configurare eager loading predefinito (`$with`)
 
@@ -234,7 +232,6 @@ class Tenant extends BaseModel
 **Esempi**:
 - `Modules/User/Models/Tenant.php`
 - `Modules/healthcare_app/Models/Contact.php`
->>>>>>> .merge_file_flnzoR
 - `Modules/Cms/Models/Page.php`
 - `Modules/Geo/Models/GeoNamesCap.php`
 
@@ -351,7 +348,6 @@ public function getConnectionName(): ?string
 
 - Namespace: `Modules\User\Models\*` → Connection: `user`
 - Namespace: `Modules\healthcare_app\Models\*` → Connection: `healthcare_app`
->>>>>>> .merge_file_flnzoR
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
@@ -565,7 +561,6 @@ use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 /**
  * Base Model per healthcare_app module.
->>>>>>> .merge_file_flnzoR
  *
  * Aggiunge supporto per:
  * - Media Library (Spatie)
@@ -589,7 +584,6 @@ Poi i modelli concreti ereditano tutto:
 
 ```php
 namespace Modules\healthcare_app\Models;
->>>>>>> .merge_file_flnzoR
 
 class Contact extends BaseModel
 {
@@ -650,7 +644,6 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 ```php
 // ✅ CORRETTO - Aggiungere traits specifici in BaseModel
 // Modules/healthcare_app/Models/BaseModel.php
->>>>>>> .merge_file_flnzoR
 use InteractsWithMedia;
 use HasExtraTrait;
 
@@ -875,7 +868,6 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 │ - Modules/User/Models/Tenant                                │
 │ - Modules/User/Models/TeamUser                              │
 │ - Modules/healthcare_app/Models/Contact                            │
->>>>>>> .merge_file_flnzoR
 │                                                             │
 │ Implementano: Business logic, Relationships, Scopes         │
 └─────────────────────────────────────────────────────────────┘
@@ -1001,7 +993,6 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 **Scopo**:
 - Definire la connection specifica del modulo
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in healthcare_app)
->>>>>>> .merge_file_flnzoR
 - Configurare casts specifici del modulo
 - Configurare eager loading predefinito (`$with`)
 
@@ -1043,7 +1034,6 @@ class Tenant extends BaseModel
 **Esempi**:
 - `Modules/User/Models/Tenant.php`
 - `Modules/healthcare_app/Models/Contact.php`
->>>>>>> .merge_file_flnzoR
 - `Modules/Cms/Models/Page.php`
 - `Modules/Geo/Models/GeoNamesCap.php`
 
@@ -1160,7 +1150,6 @@ public function getConnectionName(): ?string
 
 - Namespace: `Modules\User\Models\*` → Connection: `user`
 - Namespace: `Modules\healthcare_app\Models\*` → Connection: `healthcare_app`
->>>>>>> .merge_file_flnzoR
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
@@ -1374,7 +1363,6 @@ use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 /**
  * Base Model per healthcare_app module.
->>>>>>> .merge_file_flnzoR
  *
  * Aggiunge supporto per:
  * - Media Library (Spatie)
@@ -1398,7 +1386,6 @@ Poi i modelli concreti ereditano tutto:
 
 ```php
 namespace Modules\healthcare_app\Models;
->>>>>>> .merge_file_flnzoR
 
 class Contact extends BaseModel
 {
@@ -1459,7 +1446,6 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 ```php
 // ✅ CORRETTO - Aggiungere traits specifici in BaseModel
 // Modules/healthcare_app/Models/BaseModel.php
->>>>>>> .merge_file_flnzoR
 use InteractsWithMedia;
 use HasExtraTrait;
 

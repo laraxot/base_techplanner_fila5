@@ -70,7 +70,6 @@ interface UserContract extends
 > - `@property \Illuminate\Database\Eloquent\Collection<int, TeamContract> $teams`
 >
 > Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, healthcare_app) lavorano solo contro il contratto Xot.
->>>>>>> .merge_file_y4VG9A
 
 ### 2. ProfileContract
 **File**: `app/Contracts/ProfileContract.php`

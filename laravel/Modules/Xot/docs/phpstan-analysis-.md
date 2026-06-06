@@ -20,7 +20,6 @@
   - Invalid binary operations
 
 #### healthcare_app Module (Complex Issues)
->>>>>>> .merge_file_UR18fR
 - **Errors:** ~500+ across chart export and quantum actions
 - **Main Issues:**
   - Missing class definitions (quantum-related classes)
@@ -58,7 +57,6 @@ Function preg_replace is unsafe to use. Please add 'use function Safe\preg_repla
 Class Modules\healthcare_app\Actions\Charts\Quantum\GenerateConsciousChartAction
 implements unknown interface Spatie\Queable\Contracts\Queable.
 Class Modules\healthcare_app\Actions\Charts\Quantum\GenerateConsciousChartAction
->>>>>>> .merge_file_UR18fR
 uses unknown trait Spatie\Queable\QueableAction.
 ```
 

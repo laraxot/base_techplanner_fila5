@@ -2,7 +2,6 @@
 
 ## Overview
 The User module provides comprehensive user management, authentication, authorization, and team-based access control for the healthcare_app platform. It serves as the foundation for all user-related operations across the entire application.
->>>>>>> .merge_file_NlG0kD
 
 ## Business Purpose
 - **Authentication**: Secure user authentication with multiple options

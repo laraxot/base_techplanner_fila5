@@ -1,15 +1,4 @@
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
 # Modulo Notify - Analisi Completa
-=======
 # Modulo Notify - Documentazione
 
 ## 📚 Overview
@@ -244,27 +233,11 @@ Notification::route('mail', 'to@example.com')->notify($notify);
 
 ---
 
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
 **Ultimo aggiornamento**: Novembre 2025 (PSR-4 fixes)  
 **Versione**: 1.1  
 **Stato**: PSR-4 compliant, test business logic completati (95% copertura)  
 **Prossimi passi**: Completamento test modelli base  
 **Changelog**: [CHANGELOG.md](./CHANGELOG.md)
-=======
 ## 🔗 Collegamenti
 
 ### Moduli Correlati

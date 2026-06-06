@@ -16,7 +16,6 @@ Il modulo **Notify** è il motore di comunicazione dell'applicazione, fornendo:
 - Sistema template modulare e riutilizzabile
 
 **Architettura**: Modulo infrastrutturale per comunicazioni; utilizzato da healthcare_app per distribuzione survey.
->>>>>>> .merge_file_6hJYMp
 
 ## Stato Attuale Implementazione
 
@@ -230,7 +229,6 @@ Nessuna funzionalità critica mancante - il modulo Notify è ben implementato
 ## Collegamenti
 
 - [Modulo healthcare_app](../healthcare_app/docs/readme.md)
->>>>>>> .merge_file_6hJYMp
 - [Modulo Limesurvey](../limesurvey/docs/readme.md)
 - [Notify README](./readme.md)
 

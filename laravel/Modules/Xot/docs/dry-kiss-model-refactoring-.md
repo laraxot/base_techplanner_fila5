@@ -9,7 +9,6 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 - **Violazioni critiche trovate**: 5
 - **Linee di codice eliminate**: ~200+
 - **Moduli interessati**: 4 (Geo, Cms, healthcare_app, User)
->>>>>>> .merge_file_hFH7JJ
 - **Impatto**: Riduzione drastica della duplicazione, miglioramento della manutenibilità
 
 ---
@@ -49,7 +48,6 @@ abstract class BaseModel extends Model
 **Dopo** (✅ DRY & KISS):
 ```php
 namespace Modules\healthcare_app\Models;
->>>>>>> .merge_file_hFH7JJ
 
 use Modules\Xot\Models\XotBaseModel;
 
@@ -345,7 +343,6 @@ BaseModel → BaseModelLang → Post
 | Modulo | Classe | Righe Prima | Righe Dopo | Riduzione |
 |--------|--------|-------------|------------|-----------|
 | healthcare_app | BaseModel | 66 | 20 | -70% |
->>>>>>> .merge_file_hFH7JJ
 | Geo | BasePivot | 59 | 8 | -86% |
 | Geo | BaseMorphPivot | 67 | 8 | -88% |
 | Cms | BasePivot | 60 | 8 | -87% |

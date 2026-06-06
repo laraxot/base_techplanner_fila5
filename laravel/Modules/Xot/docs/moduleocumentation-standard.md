@@ -117,7 +117,6 @@ public function createUser(array $data): User
 - Include social login integration guides
 
 ### healthcare_app Module
->>>>>>> .merge_file_DQ6zl7
 
 - Document survey management workflows
 - Document reporting and analytics features

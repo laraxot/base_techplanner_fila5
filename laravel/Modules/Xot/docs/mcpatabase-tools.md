@@ -2,7 +2,6 @@
 
 ## Overview
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the healthcare_app_survey database used in the Limesurvey integration.
->>>>>>> .merge_file_AjYV3y
 
 ## Available MCP Tools for Database Work
 
@@ -19,7 +18,6 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 ```
 
 **Use Cases for healthcare_app_survey Database**:
->>>>>>> .merge_file_AjYV3y
 - Query Limesurvey tables directly
 - Analyze survey responses in `lime_survey_{sid}` tables
 - Examine question structures in `lime_questions`
@@ -54,7 +52,6 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 ### Direct Database Queries (using MySQL MCP)
 ```sql
 -- List all survey tables in healthcare_app_survey database
->>>>>>> .merge_file_AjYV3y
 SHOW TABLES LIKE 'lime_survey_%';
 
 -- Analyze question structure
@@ -97,13 +94,11 @@ Ensure database connections are properly configured in:
 Location: `~/.cursor/mcp.json`
 
 Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the healthcare_app_survey database without additional configuration.
->>>>>>> .merge_file_AjYV3y
 
 ## Best Practices for Database Analysis
 
 1. **Always verify survey IDs** before querying dynamic tables like `lime_survey_{id}`
 2. **Use proper connection** (`limesurvey` connection for healthcare_app_survey database)
->>>>>>> .merge_file_AjYV3y
 3. **Limit result sets** when exploring large survey response tables
 4. **Check table existence** before querying survey-specific tables
 5. **Respect data privacy** when handling survey responses

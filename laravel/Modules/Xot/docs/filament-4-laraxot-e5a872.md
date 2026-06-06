@@ -70,7 +70,6 @@ class MyWidget extends Widget implements HasForms
 declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> .merge_file_KMwnwL
 
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -94,7 +93,6 @@ class ViewQuestionChart extends XotBaseViewRecord
 declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Widgets;
->>>>>>> .merge_file_KMwnwL
 
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
@@ -174,13 +172,11 @@ namespace Modules\healthcare_app\Filament\Widgets;
 declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> .merge_file_KMwnwL
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
->>>>>>> .merge_file_KMwnwL
 
 class ViewQuestionChart extends XotBaseViewRecord
 {
@@ -225,7 +221,6 @@ class ViewQuestionChart extends XotBaseViewRecord
 declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Widgets;
->>>>>>> .merge_file_KMwnwL
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;

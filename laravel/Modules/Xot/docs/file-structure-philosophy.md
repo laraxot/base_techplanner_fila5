@@ -168,7 +168,6 @@ Modules/
 │   │   └── seeders/
 │   └── app/
 └── healthcare_app/
->>>>>>> .merge_file_Fnf1T4
     ├── database/
     │   ├── factories/
     │   ├── migrations/

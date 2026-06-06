@@ -38,7 +38,6 @@
    - ❌ Rimosso: `protected static ?string $recordTitleAttribute = 'name'`
 
 ### Modulo healthcare_app
->>>>>>> .merge_file_IP3S7b
 
 6. **ContactResource**
    - ❌ Rimosso: `protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-user-circle'`

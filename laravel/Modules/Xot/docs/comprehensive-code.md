@@ -450,7 +450,6 @@ Analisi sistematica di tutti i moduli del progetto per identificare violazioni d
 
 #### Singleton Pattern Duplicato
 **File**: `Modules/healthcare_app/app/Services/LimeJsonService.php`, `Modules/healthcare_app/app/Services/healthcare_appService.php`
->>>>>>> .merge_file_jGJkYm
 
 ```php
 // DUPLICATO in LimeJsonService.php
@@ -458,7 +457,6 @@ private static ?self $instance = null;
 public static function getInstance(): self
 {
     if (! self::$instance instanceof \Modules\healthcare_app\Services\LimeJsonService) {
->>>>>>> .merge_file_jGJkYm
         self::$instance = new self();
     }
     return self::$instance;
@@ -479,14 +477,12 @@ public static function getInstance(): self
 
 #### Connection Hardcoded Duplicata
 **Problema**: `protected $connection = 'healthcare_app';` ripetuto in tutti i modelli healthcare_app
->>>>>>> .merge_file_jGJkYm
 **Soluzione**: Centralizzare in BaseModel o configurazione
 
 ### 2. Violazioni SOLID
 
 #### Single Responsibility Principle Violato
 **File**: `Modules/healthcare_app/app/Models/BaseModel.php`
->>>>>>> .merge_file_jGJkYm
 
 ```php
 abstract class BaseModel extends Model implements ModelContract, HasMedia
@@ -535,7 +531,6 @@ abstract class BaseUser extends Authenticatable implements
 
 #### Customer Model - Lazy Loading
 **File**: `Modules/healthcare_app/app/Models/Customer.php`
->>>>>>> .merge_file_jGJkYm
 
 ```php
 public function surveyPdfsActive()
@@ -549,7 +544,6 @@ public function surveyPdfsActive()
 
 #### AlertWidget - Query Complessa
 **File**: `Modules/healthcare_app/app/Filament/Widgets/AlertWidget.php`
->>>>>>> .merge_file_jGJkYm
 
 ```php
 return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
@@ -573,7 +567,6 @@ return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
 
 #### QuestionChart Model - Metodi Complessi
 **File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
->>>>>>> .merge_file_jGJkYm
 
 ```php
 public function participants(): CustomRelation
@@ -601,7 +594,6 @@ public function participants(): CustomRelation
 
 #### SendInviteAction - Catch Vuoti
 **File**: `Modules/healthcare_app/app/Actions/SendInviteAction.php`
->>>>>>> .merge_file_jGJkYm
 
 ```php
 try {
@@ -622,7 +614,6 @@ try {
 
 #### Schema Duplicato
 **File**: `Modules/healthcare_app/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
->>>>>>> .merge_file_jGJkYm
 
 ```php
 // ContactResource.php
@@ -674,7 +665,6 @@ public function customer(): HasOneThrough
 class healthcare_appServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'healthcare_app';
->>>>>>> .merge_file_jGJkYm
 
     protected string $module_dir = __DIR__;
     protected string $module_ns = __NAMESPACE__;
@@ -775,7 +765,6 @@ trait SingletonTrait
 
 #### B. Separare BaseModel Responsibilities
 **File**: `Modules/healthcare_app/app/Models/BaseModel.php`
->>>>>>> .merge_file_jGJkYm
 ```php
 abstract class BaseModel extends Model implements ModelContract
 {
@@ -789,7 +778,6 @@ abstract class BaseModel extends Model implements ModelContract
 
 #### C. Implementare Repository Pattern
 **File**: `Modules/healthcare_app/app/Repositories/SurveyFlipResponseRepository.php`
->>>>>>> .merge_file_jGJkYm
 ```php
 class SurveyFlipResponseRepository
 {

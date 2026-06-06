@@ -37,7 +37,6 @@
    - ❌ Rimosso: `protected static ?string $recordTitleAttribute = 'name'`
 
 ### Modulo healthcare_app
->>>>>>> .merge_file_Mzumd0
 
 6. **ContactResource**
    - ❌ Rimosso: `protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-user-circle'`

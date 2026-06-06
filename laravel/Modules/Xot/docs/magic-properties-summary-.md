@@ -17,7 +17,6 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 - **FilamentOptimizationServiceProvider.php:67,76-79** - Fixed multiple `property_exists($query, 'time')` → `isset($query->time)`
 
 ### ✅ healthcare_app Module
->>>>>>> .merge_file_sPUeNX
 - **ViewQuestionChartVisualizationWidget.php:185** - Fixed `property_exists($this, 'livewire')` → `isset($this->livewire)`
 
 ### ✅ Chart Module

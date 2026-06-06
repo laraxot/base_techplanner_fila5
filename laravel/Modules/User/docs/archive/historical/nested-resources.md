@@ -196,7 +196,6 @@ Following the documented approach in `Modules/UI/docs/filament/nested-resource.m
 
 ### 2. Cross-module User Integration
 - Enable nested resources that span multiple modules (User-healthcare_app, User-Notify)
->>>>>>> .merge_file_svxIrl
 - Implement cross-module relationship management
 
 ### 3. Advanced User Analytics

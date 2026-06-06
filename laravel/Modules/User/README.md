@@ -126,7 +126,6 @@ User ──> Tenant     (multi-tenancy, isolamento dati)
 User ──> Activity   (audit trail login/logout/CRUD)
 User ──> Notify     (welcome email, reset password, OTP)
 User ──> healthcare_app    (proprietari survey, accesso dashboard)
->>>>>>> .merge_file_wNthoA
 User ──> Meetup     (organizzatori, partecipanti eventi)
 User ──> Gdpr       (consensi, profilo privacy)
 User ──> Lang       (preferenza lingua utente)

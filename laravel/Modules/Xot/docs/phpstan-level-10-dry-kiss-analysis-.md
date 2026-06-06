@@ -69,7 +69,6 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 #### Problema 2: ⚠️ Type hints mancanti in Contact model
 
 **File**: `Modules/healthcare_app/app/Models/Contact.php` (809 righe!)
->>>>>>> .merge_file_cxjpJD
 
 **Errori PHPStan Level 10**:
 ```
@@ -108,7 +107,6 @@ if ($body_html === null) { ... }
 | User | 16 | 0 | ✅ |
 | Xot | 16 | 0 | ✅ |
 | healthcare_app | 21+ | 21 | ⚠️ Necessita refactoring Contact |
->>>>>>> .merge_file_cxjpJD
 | Gdpr | 6 | 0 | ✅ |
 | Notify | 8 | 0 | ✅ |
 
@@ -152,7 +150,6 @@ class Notification extends BaseModel // Eredita $connection = 'user'
 **Fix applicato**:
 - User module: 7 file (Notification, SocialiteUser, OauthAccessToken, AuthenticationLog, BaseTeamUser, Membership, TenantUser)
 - healthcare_app module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
->>>>>>> .merge_file_cxjpJD
 - Altri moduli: ~51 file
 
 **Comando usato**:
@@ -293,7 +290,6 @@ protected function casts(): array
 ### Violazione KISS #1: ❌ Contact.php - Complessità elevata (CRITICA)
 
 **File**: `Modules/healthcare_app/app/Models/Contact.php`
->>>>>>> .merge_file_cxjpJD
 **Righe**: 809 (!!!)
 **Metodi**: 40+
 
@@ -355,7 +351,6 @@ Contact.php (809 lines) →
 ### Violazione KISS #2: ❌ QuestionChart.php - Complessità alta
 
 **File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
->>>>>>> .merge_file_cxjpJD
 **Righe**: 882 (!)
 
 **Stesso problema di Contact.php**
@@ -438,14 +433,12 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 **Moduli fixati**:
 - **User**: 7 modelli
 - **healthcare_app**: 5 modelli
->>>>>>> .merge_file_cxjpJD
 - **Notify**: ~8 modelli
 - **Altri**: ~43 modelli
 
 **Esempio comando**:
 ```bash
 cd Modules/healthcare_app/app/Models
->>>>>>> .merge_file_cxjpJD
 for f in *.php; do
   if grep -q "extends BaseModel" "$f"; then
     sed -i '/^[[:space:]]*protected \$connection = /d' "$f"
@@ -465,7 +458,6 @@ done
 **Comando**:
 ```bash
 vendor/bin/pint Modules/User/app/Models Modules/healthcare_app/app/Models --quiet
->>>>>>> .merge_file_cxjpJD
 ```
 
 **Risultato**:
@@ -878,14 +870,12 @@ $activeUsers = User::active()->get(); // ✅ Works!
 ./vendor/bin/phpstan analyse Modules/User/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/Xot/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/healthcare_app/app/Models --level=10
->>>>>>> .merge_file_cxjpJD
 ```
 
 **Results**:
 - User: ✅ 0 errors (dopo fix)
 - Xot: ✅ 0 errors (dopo fix)
 - healthcare_app: ⚠️ 21 errors (Contact.php - needs refactoring)
->>>>>>> .merge_file_cxjpJD
 
 ### Manual Code Review
 

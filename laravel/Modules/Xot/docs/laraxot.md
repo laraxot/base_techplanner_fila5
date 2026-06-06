@@ -29,7 +29,6 @@
 Xot (Core Engine)
 ├── User (Authentication & Authorization)
 ├── healthcare_app (Core Business Logic - Surveys)
->>>>>>> .merge_file_mSTn06
 ├── Cms (Content Management)
 ├── Media (File Management)
 ├── Geo (Location Services)
@@ -110,7 +109,6 @@ TextInput::make('name');
 - **Responsibility**: Security and permissions
 
 #### 3. **healthcare_app Module (The Economy)**
->>>>>>> .merge_file_mSTn06
 - **Role**: Core business logic, surveys, reporting
 - **Power**: Main revenue-generating functionality
 - **Responsibility**: Business operations
@@ -306,4 +304,3 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 **Maintained by**: Xot Module (The Laraxot Government)
 **Philosophy**: Consistency, <nome progetto>ability, Simplicity
 **Goal**: Create a harmonious, maintainable, and scalable application architecture
-

@@ -108,7 +108,6 @@ Il modulo **User** fornisce:
 
 2. **LimeParticipant** - Partecipanti survey
    - Integrazione con Contact model healthcare_app
->>>>>>> .merge_file_x8sE7o
    - Gestione partecipanti centralizzata
    - Attributi personalizzati
 
@@ -157,7 +156,6 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 ## Collegamenti
 
 - [Modulo healthcare_app](../healthcare_app/docs/readme.md)
->>>>>>> .merge_file_x8sE7o
 - [Modulo Limesurvey](../limesurvey/docs/readme.md)
 - [User README](./readme.md)
 

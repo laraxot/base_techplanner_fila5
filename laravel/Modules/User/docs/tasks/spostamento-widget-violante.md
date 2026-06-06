@@ -8,13 +8,11 @@
 ## Obiettivo
 
 Spostare `UserTypeRegistrationsChartWidget` dal modulo User al modulo appropriato (es. healthcare_app). User non può dipendere da moduli business specifici.
->>>>>>> .merge_file_hk8a2J
 
 ## Sottotask
 
 - [ ] Identificare widget `UserTypeRegistrationsChartWidget` e sue dipendenze
 - [ ] Analizzare dove collocarlo (healthcare_app o altro modulo)
->>>>>>> .merge_file_hk8a2J
 - [ ] Spostare widget e aggiornare namespace
 - [ ] Rimuovere file originale da User
 - [ ] Verificare con script controllo dipendenze

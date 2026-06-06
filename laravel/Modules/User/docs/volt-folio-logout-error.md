@@ -4,6 +4,7 @@ topic: volt-folio-logout-error
 canonical: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
 =======
 # Errore Volt/Folio: `VoltDirectiveMissingException` su logout
@@ -52,3 +53,6 @@ use function Livewire\Volt\{state, mount};
 ---
 
 **Errore risolto: aggiungi `@volt` come prima riga!**
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
+>>>>>>> 5a2708f5 (.)

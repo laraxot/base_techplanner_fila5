@@ -1,5 +1,4 @@
 # Database Analysis Commands and Tools for healthcare_app_survey
->>>>>>> .merge_file_EFCVrf
 
 ## Essential Database Queries
 
@@ -218,7 +217,6 @@ LEFT JOIN (
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_survey_%'
     AND table_schema = 'txaesfry_healthcare_app_survey'
->>>>>>> .merge_file_EFCVrf
 ) r ON s.sid = r.sid
 LEFT JOIN (
     SELECT 
@@ -227,10 +225,8 @@ LEFT JOIN (
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_tokens_%'
     AND table_schema = 'txaesfry_healthcare_app_survey'
->>>>>>> .merge_file_EFCVrf
 ) t ON s.sid = t.sid
 WHERE s.active = 'Y';
 ```
 
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the healthcare_app_survey database used by the Limesurvey integration.
->>>>>>> .merge_file_EFCVrf

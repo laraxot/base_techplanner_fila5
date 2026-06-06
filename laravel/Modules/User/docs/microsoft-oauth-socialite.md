@@ -281,7 +281,6 @@ $roles = Socialite::driver('microsoft')->user()->getRoles();
 ```
 
 ## Regole per healthcare_app Fila5
->>>>>>> .merge_file_Z9kr3H
 
 ### 1. Usare Filament Socialite Plugin
 - Installare `dutchcodingcompany/filament-socialite`

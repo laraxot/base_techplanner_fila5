@@ -133,7 +133,6 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 
 ### Moduli Affetti
 - **healthcare_app Module**: Customer-User relationships
->>>>>>> .merge_file_8r6DIJ
 - **User Module**: HasTenants trait functionality
 - **Tutti i moduli**: che usano `belongsToManyX` con database separati
 

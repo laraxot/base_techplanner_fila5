@@ -67,14 +67,12 @@ The Notify module provides a comprehensive notification system for the Laraxot s
 
 ### 7. Customer Communication History
 **Parent Resource:** CustomerResource (from healthcare_app module)
->>>>>>> .merge_file_y4v0o8
 **Child Resource:** NotificationLogResource
 **Relationship:** Customer-related notifications (via contacts/surveys)
 **Justification:** Track all communication with customers across different channels for relationship management.
 
 ### 8. Survey Communication Logs
 **Parent Resource:** SurveyPdfResource (from healthcare_app module)
->>>>>>> .merge_file_y4v0o8
 **Child Resource:** NotificationLogResource
 **Relationship:** Survey-related notifications (via survey contacts)
 **Justification:** Monitor all communication related to specific surveys for better survey management.
@@ -182,7 +180,6 @@ Following the documented approach in `Modules/UI/docs/filament/nested-resource.m
 
 ### 4. Integration with Other Modules
 - Handle relationships with healthcare_app module (surveys and contacts)
->>>>>>> .merge_file_y4v0o8
 - Coordinate with User module for recipient management
 - Integrate with Tenant module for multi-tenant operations
 

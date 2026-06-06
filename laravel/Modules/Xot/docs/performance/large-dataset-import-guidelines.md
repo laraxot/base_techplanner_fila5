@@ -65,7 +65,6 @@ try {
 ## Module-Specific Considerations
 
 ### healthcare_app Module
->>>>>>> .merge_file_g7dRzx
 - Optimize survey contact imports
 - Implement JSON payload persistence
 - Use queue-based processing for contact operations

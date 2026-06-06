@@ -37,7 +37,6 @@
 - Social authentication integration
 
 #### 3. **healthcare_app Module - Business Core**
->>>>>>> .merge_file_mjdk5z
 **Role**: Survey management, reporting, analytics
 **Priority**: 0 (Standard priority)
 **Dependencies**: Xot, User, Geo, Media
@@ -230,7 +229,6 @@
 **Role**: Limesurvey integration, survey synchronization
 **Priority**: 0 (Standard priority)
 **Dependencies**: Xot, healthcare_app
->>>>>>> .merge_file_mjdk5z
 
 **Key Components**:
 - `LimeSurvey`, `LimeQuestion` models
@@ -279,7 +277,6 @@ Xot (Foundation)
 ├── User (Security)
 │   └── Tenant (Multi-tenancy)
 ├── healthcare_app (Business Core)
->>>>>>> .merge_file_mjdk5z
 │   ├── Geo (Locations)
 │   ├── Media (Files)
 │   └── Limesurvey (External Integration)
@@ -389,7 +386,6 @@ public function register(): void
 - **Cms**: Mixed file structure issues
 - **UI**: Mixed test structure issues
 - **healthcare_app**: Missing module.json description
->>>>>>> .merge_file_mjdk5z
 
 #### 🔧 Technical Debt
 - **Translation consistency**: Some .navigation placeholders
@@ -401,7 +397,6 @@ public function register(): void
 #### High-Usage Modules
 - **User**: Authentication checks on every request
 - **healthcare_app**: Survey processing and reporting
->>>>>>> .merge_file_mjdk5z
 - **Media**: File uploads and conversions
 - **Job**: Background processing
 
