@@ -16,23 +16,13 @@ use Modules\Xot\Datas\XotData;
 /**
  * Modules\User\Models\TeamInvitation.
  *
-<<<<<<< HEAD
- * @property int               $id
- * @property string|null       $team_id
- * @property string            $email
- * @property string|null       $role
- * @property Carbon|null       $created_at
- * @property Carbon|null       $updated_at
- * @property Team|null         $team
-=======
- * @property int $id
+* @property int $id
  * @property string|null $team_id
  * @property string $email
  * @property string|null $role
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property Team|null $team
->>>>>>> origin/dev
  * @property TeamContract|null $team
  *
  * @method static Builder|TeamInvitation newModelQuery()
@@ -45,11 +35,7 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|TeamInvitation whereTeamId($value)
  * @method static Builder|TeamInvitation whereUpdatedAt($value)
  *
-<<<<<<< HEAD
- * @property string      $uuid
-=======
- * @property string $uuid
->>>>>>> origin/dev
+* @property string $uuid
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
@@ -67,17 +53,7 @@ use Modules\Xot\Datas\XotData;
  * @mixin IdeHelperTeamInvitation
  *
  * @property ProfileContract|null $deleter
-<<<<<<< HEAD
- * @property Carbon|null          $accepted_at
- * @property Carbon|null          $declined_at
- * @property string|null          $user_id
- *
- * @method static \Modules\User\Database\Factories\TeamInvitationFactory factory($count = null, $state = [])
- * @method static Builder<static>|TeamInvitation                         whereAcceptedAt($value)
- * @method static Builder<static>|TeamInvitation                         whereDeclinedAt($value)
- * @method static Builder<static>|TeamInvitation                         whereUserId($value)
-=======
- * @property Carbon|null $accepted_at
+* @property Carbon|null $accepted_at
  * @property Carbon|null $declined_at
  * @property string|null $user_id
  *
@@ -85,16 +61,12 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder<static>|TeamInvitation whereAcceptedAt($value)
  * @method static Builder<static>|TeamInvitation whereDeclinedAt($value)
  * @method static Builder<static>|TeamInvitation whereUserId($value)
->>>>>>> origin/dev
  *
  * @mixin \Eloquent
  */
 class TeamInvitation extends BaseModel
 {
-<<<<<<< HEAD
-    /** @var string */
-=======
->>>>>>> origin/dev
+/** @var string */
     protected $connection = 'user';
 
     /** @var list<string> */

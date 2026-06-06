@@ -6,10 +6,6 @@ namespace Modules\User\Tests\Unit\Passport;
 
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Passport\Passport;
-<<<<<<< HEAD
-
-uses(\Modules\User\Tests\TestCase::class);
-=======
 use Modules\User\Models\OauthAuthCode;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthDeviceCode;
@@ -18,17 +14,12 @@ use Modules\User\Models\OauthToken;
 use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
->>>>>>> origin/dev
 
 test('every eloquent passport model has a local oauth wrapper', function (): void {
     /** @var array<int, string>|false $files */
     $files = glob(base_path('vendor/laravel/passport/src').'/*.php');
 
-<<<<<<< HEAD
-    if (false === $files) {
-=======
-    if ($files === false) {
->>>>>>> origin/dev
+if ($files === false) {
         $files = [];
     }
 
@@ -68,18 +59,7 @@ test('every eloquent passport model has a local oauth wrapper', function (): voi
 });
 
 test('passport uses user module oauth wrappers for eloquent models', function (): void {
-<<<<<<< HEAD
-    expect(Passport::authCodeModel())->toBe(\Modules\User\Models\OauthAuthCode::class);
-    expect(Passport::clientModel())->toBe(\Modules\User\Models\OauthClient::class);
-    expect(Passport::tokenModel())->toBe(\Modules\User\Models\OauthToken::class);
-    expect(Passport::refreshTokenModel())
-        ->toBe(\Modules\User\Models\OauthRefreshToken::class);
-
-    if (method_exists(Passport::class, 'deviceCodeModel')) {
-        expect(Passport::deviceCodeModel())
-            ->toBe(\Modules\User\Models\OauthDeviceCode::class);
-=======
-    expect(Passport::authCodeModel())->toBe(OauthAuthCode::class);
+expect(Passport::authCodeModel())->toBe(OauthAuthCode::class);
     expect(Passport::clientModel())->toBe(OauthClient::class);
     expect(Passport::tokenModel())->toBe(OauthToken::class);
     expect(Passport::refreshTokenModel())
@@ -88,6 +68,5 @@ test('passport uses user module oauth wrappers for eloquent models', function ()
     if (method_exists(Passport::class, 'deviceCodeModel')) {
         expect(Passport::deviceCodeModel())
             ->toBe(OauthDeviceCode::class);
->>>>>>> origin/dev
     }
 });

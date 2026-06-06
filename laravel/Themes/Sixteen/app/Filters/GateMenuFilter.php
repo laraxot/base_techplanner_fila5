@@ -16,25 +16,16 @@ class GateMenuFilter implements MenuFilterInterface
     public function filter(array $item): array|false
     {
         // Controllo permesso con Laravel Gate
-<<<<<<< HEAD
-        if (isset($item['can'])) {
-            if (! Gate::allows($item['can'])) {
-=======
-        $can = isset($item['can']) && is_string($item['can']) ? $item['can'] : null;
+$can = isset($item['can']) && is_string($item['can']) ? $item['can'] : null;
         if (is_string($can)) {
             if (! Gate::allows($can)) {
->>>>>>> origin/dev
                 return false;
             }
         }
 
         // Controllo ruolo utente
-<<<<<<< HEAD
-        if (isset($item['role'])) {
-=======
-        $role = isset($item['role']) && is_string($item['role']) ? $item['role'] : null;
+$role = isset($item['role']) && is_string($item['role']) ? $item['role'] : null;
         if (is_string($role)) {
->>>>>>> origin/dev
             if (! auth()->check()) {
                 return false;
             }
@@ -42,25 +33,16 @@ class GateMenuFilter implements MenuFilterInterface
             $user = auth()->user();
 
             // Se l'utente ha un metodo hasRole (es. Spatie/Permission)
-<<<<<<< HEAD
-            if (method_exists($user, 'hasRole')) {
-                if (! $user->hasRole($item['role'])) {
-=======
-            if (is_object($user) && method_exists($user, 'hasRole')) {
+if (is_object($user) && method_exists($user, 'hasRole')) {
                 if (! $user->hasRole($role)) {
->>>>>>> origin/dev
                     return false;
                 }
             }
         }
 
         // Controllo permesso diretto
-<<<<<<< HEAD
-        if (isset($item['permission'])) {
-=======
-        $permission = isset($item['permission']) && is_string($item['permission']) ? $item['permission'] : null;
+$permission = isset($item['permission']) && is_string($item['permission']) ? $item['permission'] : null;
         if (is_string($permission)) {
->>>>>>> origin/dev
             if (! auth()->check()) {
                 return false;
             }
@@ -68,22 +50,13 @@ class GateMenuFilter implements MenuFilterInterface
             $user = auth()->user();
 
             // Se l'utente ha un metodo hasPermissionTo (es. Spatie/Permission)
-<<<<<<< HEAD
-            if (method_exists($user, 'hasPermissionTo')) {
-                if (! $user->hasPermissionTo($item['permission'])) {
-=======
-            if (is_object($user) && method_exists($user, 'hasPermissionTo')) {
+if (is_object($user) && method_exists($user, 'hasPermissionTo')) {
                 if (! $user->hasPermissionTo($permission)) {
->>>>>>> origin/dev
                     return false;
                 }
             }
             // Fallback a Laravel Gate
-<<<<<<< HEAD
-            elseif (! Gate::allows($item['permission'])) {
-=======
-            elseif (! Gate::allows($permission)) {
->>>>>>> origin/dev
+elseif (! Gate::allows($permission)) {
                 return false;
             }
         }

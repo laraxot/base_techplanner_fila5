@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # User Module - Nested Resource Implementation Guide
 
 ## Overview
@@ -196,22 +195,6 @@ Following the documented approach in `Modules/UI/docs/filament/nested-resource.m
 - Role-based access to specific nested resources
 
 ### 2. Cross-module User Integration
-<<<<<<< .merge_file_MBu4tA
-- Enable nested resources that span multiple modules (User-healthcare_app, User-Notify)
-=======
-<<<<<<< HEAD
-- Enable nested resources that span multiple modules (User-ExternalProject, User-Notify)
-=======
-- Enable nested resources that span multiple modules (User-ModuloEsempio, User-Notify)
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_tDYlRr
-- Implement cross-module relationship management
-
-### 3. Advanced User Analytics
-- Nested resource usage analytics
-- User behavior tracking across nested resources
-- Performance monitoring for nested operations
-=======
 ---
 module: theme
 topic: nested-resources
@@ -219,4 +202,3 @@ canonical: ../../../Themes/docs/shared-components/nested-resources.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/nested-resources.md
->>>>>>> origin/dev

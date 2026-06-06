@@ -53,11 +53,7 @@ $headers = [
 
 curl_setopt_array($ch, [
     CURLOPT_HTTPHEADER => $headers,
-<<<<<<< HEAD
-    CURLOPT_URL => $base_url . $addContact,
-=======
-    CURLOPT_URL => $base_url.$addContact,
->>>>>>> origin/dev
+CURLOPT_URL => $base_url.$addContact,
     CURLOPT_CUSTOMREQUEST => 'POST',
     CURLOPT_POST => true,
     CURLOPT_RETURNTRANSFER => true,

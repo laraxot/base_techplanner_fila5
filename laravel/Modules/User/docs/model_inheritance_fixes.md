@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione
@@ -166,50 +165,6 @@ Illuminate\Database\Eloquent\Relations\MorphPivot
 Per verificare che non ci siano più modelli che estendono direttamente `Model`:
 
 ```bash
-<<<<<<< .merge_file_UeiGzi
-cd /var/www/_bases/base_healthcare_app_fila5_mono/laravel/Modules/User
-=======
-<<<<<<< HEAD
-cd /var/www/_bases/base_app_fila5_mono/laravel/Modules/User
-=======
-cd /var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/User
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_0lPW2z
-grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|BasePivot\|BaseMorphPivot"
-```
-
-## Test PHPStan
-
-Dopo le modifiche, eseguire:
-
-```bash
-<<<<<<< .merge_file_UeiGzi
-cd /var/www/_bases/base_healthcare_app_fila5_mono/laravel/Modules/User
-=======
-<<<<<<< HEAD
-cd /var/www/_bases/base_app_fila5_mono/laravel/Modules/User
-=======
-cd /var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/User
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_0lPW2z
-./vendor/bin/phpstan analyse --memory-limit=2G
-```
-
-## Prossimi Passi
-
-1. ✅ Verificare che tutti i modelli siano corretti
-2. ⏳ Eseguire PHPStan per verificare assenza di errori
-3. ⏳ Applicare lo stesso pattern agli altri moduli (Patient, Dental, ecc.)
-4. ⏳ Aggiornare la documentazione dei moduli
-
-## Collegamenti
-
-- [Analisi Completa](./model_inheritance_analysis.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
-- [BaseModel](../app/Models/BaseModel.php)
-- [BasePivot](../app/Models/BasePivot.php)
-- [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
-=======
 ---
 module: theme
 topic: model_inheritance_fixes
@@ -217,4 +172,3 @@ canonical: ../../../Themes/docs/shared-components/model_inheritance_fixes.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/model_inheritance_fixes.md
->>>>>>> origin/dev

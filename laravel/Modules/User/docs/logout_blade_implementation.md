@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
@@ -150,80 +149,6 @@ Questo approccio utilizza Volt all'interno di una pagina Folio per gestire il lo
 - Permette di mostrare un messaggio di conferma durante il reindirizzamento
 - Utilizza il pattern mount per eseguire azioni all'inizializzazione del componente
 
-<<<<<<< HEAD
-## Implementazione Raccomandata per Laraxot
-
-Per Laraxot, **l'approccio 1 (Folio con PHP puro)** è raccomandato per il logout per i seguenti motivi:
-=======
-## Implementazione Raccomandata per healthcare_app
-
-Per healthcare_app, **l'approccio 1 (Folio con PHP puro)** è raccomandato per il logout per i seguenti motivi:
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-
-1. Il logout è un'operazione semplice che non richiede gestione dello stato
-2. Non è necessaria interazione con l'utente durante il processo
-3. Il reindirizzamento immediato è preferibile per una migliore esperienza utente
-4. Riduce la complessità e il carico del browser
-
-## Best Practices
-
-### Sicurezza
-- Utilizzare sempre `Auth::logout()` per terminare la sessione autenticata
-- Invalidare sempre la sessione con `session()->invalidate()`
-- Rigenerare sempre il token CSRF con `session()->regenerateToken()`
-- Verificare che l'utente sia autenticato con `Auth::check()` prima del logout
-
-### Localizzazione
-- Utilizzare sempre `app()->getLocale()` per ottenere la lingua corrente
-- Includere sempre il prefisso della lingua nei link e nei reindirizzamenti
-- Utilizzare la funzione `__()` per tutte le stringhe visualizzate all'utente
-
-### UI/UX
-- Se si utilizza un approccio con visualizzazione (Approccio 3), utilizzare i componenti Filament
-- Fornire un feedback chiaro all'utente sul processo di logout
-- Implementare un reindirizzamento automatico dopo un breve ritardo
-
-## Errori Comuni da Evitare
-
-1. **Mancata invalidazione della sessione**: Può portare a vulnerabilità di sicurezza
-2. **URL non localizzati**: Genera errori di navigazione e problemi di UX
-3. **Componenti UI personalizzati**: Utilizzare sempre i componenti Filament nativi
-4. **Mancanza di feedback all'utente**: Lasciare l'utente senza informazioni sul processo
-5. **Rotte in `routes/web.php`**: Utilizzare Folio o attributi PHP 8 per le rotte
-
-## Implementazione Finale Raccomandata
-
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Auth;
-use function Laravel\Folio\{middleware, name};
-
-middleware(['auth']);
-name('logout');
-
-if(Auth::check()) {
-    // Esegui il logout
-    Auth::logout();
-
-    // Invalida e rigenera la sessione per prevenire session fixation
-    request()->session()->invalidate();
-    request()->session()->regenerateToken();
-}
-
-// Reindirizza l'utente alla home page localizzata
-$locale = app()->getLocale();
-return redirect()->to('/' . $locale);
-?>
-```
-
-<<<<<<< HEAD
-Questa implementazione è semplice, sicura e segue tutte le best practices del progetto Laraxot.
-=======
-Questa implementazione è semplice, sicura e segue tutte le best practices del progetto healthcare_app.
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
 ---
 module: theme
 topic: logout_blade_implementation
@@ -231,4 +156,3 @@ canonical: ../../../Themes/docs/shared-components/logout_blade_implementation.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout_blade_implementation.md
->>>>>>> origin/dev

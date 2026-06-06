@@ -103,11 +103,8 @@ Thumbs.db
 *.old2
 *.backup
 *.backup.*
-<<<<<<< HEAD
-=======
 *.backup-*
 *.backup_*
->>>>>>> origin/dev
 *.bak
 *.bakcup
 *.new
@@ -126,11 +123,8 @@ Thumbs.db
 # ==============================================
 docs/phpstan/
 docs/cache/
-<<<<<<< HEAD
-=======
 docs/archive/
 docs/archive/**
->>>>>>> origin/dev
 
 # ==============================================
 # OLD DIRECTORIES (LEGACY CLEANUP)
@@ -168,8 +162,6 @@ packages/temp/
 lang/lang/
 _docs/
 _docs/
-<<<<<<< HEAD
-=======
 *.pest.php
 
 # Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
@@ -184,4 +176,3 @@ _docs/
 
 # Database locale vector search (non versionare)
 ruvector.db
->>>>>>> origin/dev

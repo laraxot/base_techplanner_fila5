@@ -7,55 +7,7 @@ namespace Modules\User\Models;
 // // use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\SoftDeletes;
-=======
->>>>>>> origin/dev
-use Illuminate\Notifications\DatabaseNotification;
-use Illuminate\Notifications\DatabaseNotificationCollection;
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Support\Str;
-use Modules\Media\Models\Media;
-use Modules\User\Models\Traits\IsProfileTrait;
-use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Contracts\UserContract;
-use Parental\HasChildren;
-use Spatie\MediaLibrary\InteractsWithMedia;
-use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
-use Spatie\Permission\Traits\HasRoles;
-use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
-use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
-
-/**
-<<<<<<< HEAD
- * @property int                                                       $id
- * @property string                                                    $uuid
- * @property \Spatie\SchemalessAttributes\SchemalessAttributes         $extra
- * @property string                                                    $avatar
- * @property Collection<int, DeviceUser>                               $deviceUsers
- * @property int|null                                                  $device_users_count
- * @property Collection<int, Device>                                   $devices
- * @property int|null                                                  $devices_count
- * @property string|null                                               $first_name
- * @property string|null                                               $full_name
- * @property string|null                                               $last_name
- * @property string|null                                               $lang
- * @property MediaCollection<int, Media>                               $media
- * @property int|null                                                  $media_count
- * @property Collection<int, DeviceUser>                               $mobileDeviceUsers
- * @property int|null                                                  $mobile_device_users_count
- * @property Collection<int, Device>                                   $mobileDevices
- * @property int|null                                                  $mobile_devices_count
- * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
- * @property int|null                                                  $notifications_count
- * @property Collection<int, Permission>                               $permissions
- * @property int|null                                                  $permissions_count
- * @property Collection<int, Role>                                     $roles
- * @property int|null                                                  $roles_count
- * @property UserContract|null                                         $user
- * @property string|null                                               $user_name
-=======
- * @property int $id
+* @property int $id
  * @property string $uuid
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra
  * @property string $avatar
@@ -81,7 +33,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @property int|null $roles_count
  * @property UserContract|null $user
  * @property string|null $user_name
->>>>>>> origin/dev
  *
  * @method static Builder|ProfileContract newModelQuery()
  * @method static Builder|ProfileContract newQuery()
@@ -89,11 +40,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @method static Builder|ProfileContract query()
  * @method static Builder|ProfileContract role($roles, $guard = null, $without = false)
  * @method static Builder|ProfileContract byUuid(string $uuid)
-<<<<<<< HEAD
- * @method static Builder|BaseProfile     withExtraAttributes()
-=======
- * @method static Builder|BaseProfile withExtraAttributes()
->>>>>>> origin/dev
+* @method static Builder|BaseProfile withExtraAttributes()
  * @method static Builder|ProfileContract withoutPermission($permissions)
  * @method static Builder|ProfileContract withoutRole($roles, $guard = null)
  *
@@ -110,77 +57,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     use IsProfileTrait;
     use Notifiable;
     use SchemalessAttributesTrait;
-<<<<<<< HEAD
-    // use SoftDeletes;
-
-    /**
-     * The "booted" method of the model.
-     */
-    protected static function booted(): void
-    {
-        static::creating(static function (self $model): void {
-            if (empty($model->uuid)) {
-                $model->uuid = (string) Str::uuid();
-            }
-        });
-    }
-
-    /**
-     * Scope per lookup da API/Android/Postgres (usa uuid, non id).
-     */
-    public function scopeByUuid(Builder $query, string $uuid): Builder
-    {
-        return $query->where('uuid', $uuid);
-    }
-=======
->>>>>>> origin/dev
-
-    /**
-     * Undocumented variable.
-     * Property Modules\Xot\Models\Profile::$guard_name is never read, only written.
-     */
-    // private string $guard_name = 'web';
-
-    /** @var list<string> */
-    protected $fillable = [
-        'uuid',
-        'user_id',
-        'type',
-        'first_name',
-        'last_name',
-        'phone',
-        'address',
-        'birth_date',
-        'gender',
-        'email',
-        'bio',
-        'avatar',
-        'timezone',
-        'locale',
-        'preferences',
-        'status',
-        'is_active',
-        'extra',
-    ];
-
-    /** @var list<string> */
-    protected $appends = [
-        'full_name',
-    ];
-
-    /** @var list<string> */
-    protected $with = [
-        'user',
-    ];
-
-<<<<<<< HEAD
-    /** @var array */
-    protected $formlessAttributes = [
-        'extra',
-    ];
-
-=======
-    /** @var list<string> */
+/** @var list<string> */
     protected array $formlessAttributes = [
         'extra',
     ];
@@ -192,8 +69,6 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     {
         return $query->where('uuid', $uuid);
     }
-
->>>>>>> origin/dev
     // ✅ CORRETTO: NON implementare scopeWithExtraAttributes() manualmente
     // Il trait SchemalessAttributesTrait lo fornisce automaticamente!
     // NOTA: BaseProfile ha attributo 'extra' diretto, non relazione 'extra'
@@ -206,11 +81,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     public function getAvatarUrl(): string
     {
         $avatar = $this->getFirstMediaUrl('avatar');
-<<<<<<< HEAD
-        if ('' !== $avatar) {
-=======
-        if ($avatar !== '') {
->>>>>>> origin/dev
+if ($avatar !== '') {
             return $avatar;
         }
 
@@ -242,28 +113,18 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         $locale = config('app.locale');
         $defaultLocale = 'it';
 
-<<<<<<< HEAD
-        if (null === $locale || ! is_string($locale)) {
-=======
-        if ($locale === null || ! is_string($locale)) {
->>>>>>> origin/dev
+if ($locale === null || ! is_string($locale)) {
             $locale = $defaultLocale;
         }
 
         $userLang = $this->lang;
 
-<<<<<<< HEAD
-        if (null === $userLang || ! is_string($userLang)) {
-=======
-        if ($userLang === null || ! is_string($userLang)) {
->>>>>>> origin/dev
+if ($userLang === null || ! is_string($userLang)) {
             return $locale;
         }
 
         return $userLang;
     }
-<<<<<<< HEAD
-=======
     // use SoftDeletes;
 
     /**
@@ -277,7 +138,6 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
             }
         });
     }
->>>>>>> origin/dev
 
     /** @return array<string, string> */
     #[\Override]

@@ -4,28 +4,7 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
-<<<<<<< HEAD
-=======
 use Carbon\Carbon;
->>>>>>> origin/dev
-use Illuminate\Database\Eloquent\Casts\Attribute;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Str;
-
-/**
- * Modello per le unità organizzative
- *
- * Rappresenta uffici, dipartimenti, settori e altre unità organizzative
- * dell'ente secondo l'ontologia AGID
-<<<<<<< HEAD
-=======
  *
  * @property int $id
  * @property string $name
@@ -57,15 +36,12 @@ use Illuminate\Support\Str;
  * @property-read \Illuminate\Database\Eloquent\Collection<int, self> $children
  * @property-read \Illuminate\Database\Eloquent\Collection<int, ContactPoint> $contacts
  * @property-read \Illuminate\Database\Eloquent\Collection<int, self> $allChildren
->>>>>>> origin/dev
  */
 class OrganizationalUnit extends Model
 {
     use HasFactory, SoftDeletes;
 
-<<<<<<< HEAD
-=======
-    /**
+/**
      * Tipi di unità organizzative secondo AGID
      */
     public const TYPES = [
@@ -83,268 +59,6 @@ class OrganizationalUnit extends Model
         'authority' => 'Autorità',
         'agency' => 'Agenzia',
     ];
-
->>>>>>> origin/dev
-    protected $table = 'sixteen_organizational_units';
-
-    protected $fillable = [
-        'name',
-        'slug',
-        'description',
-        'short_description',
-        'type',
-        'parent_id',
-        'code',
-        'logo',
-        'image',
-        'website',
-        'email',
-        'pec',
-        'phone',
-        'address',
-        'office_hours',
-        'is_active',
-        'is_public',
-        'position',
-        'competences',
-        'services_provided',
-        'accessibility_info',
-        'metadata',
-    ];
-
-    protected $casts = [
-        'is_active' => 'boolean',
-        'is_public' => 'boolean',
-        'position' => 'integer',
-        'office_hours' => 'json',
-        'competences' => 'json',
-        'services_provided' => 'json',
-        'accessibility_info' => 'json',
-        'metadata' => 'json',
-    ];
-
-    /**
-<<<<<<< HEAD
-     * Tipi di unità organizzative secondo AGID
-     */
-    public const TYPES = [
-        'municipality' => 'Comune',
-        'department' => 'Dipartimento',
-        'sector' => 'Settore',
-        'office' => 'Ufficio',
-        'service' => 'Servizio',
-        'area' => 'Area',
-        'division' => 'Divisione',
-        'unit' => 'Unità',
-        'committee' => 'Commissione',
-        'council' => 'Consiglio',
-        'board' => 'Giunta',
-        'authority' => 'Autorità',
-        'agency' => 'Agenzia',
-    ];
-
-    /**
-=======
->>>>>>> origin/dev
-     * Relazione con l'unità parent
-     */
-    public function parent(): BelongsTo
-    {
-        return $this->belongsTo(self::class, 'parent_id');
-    }
-
-    /**
-     * Relazione con le unità figlie
-     */
-    public function children(): HasMany
-    {
-        return $this->hasMany(self::class, 'parent_id')->ordered();
-    }
-
-    /**
-     * Relazione con tutti i discendenti
-     */
-    public function descendants(): HasMany
-    {
-        return $this->hasMany(self::class, 'parent_id')->with('descendants');
-    }
-
-    /**
-     * Relazione con i punti di contatto
-     */
-    public function contacts(): MorphMany
-    {
-        return $this->morphMany(ContactPoint::class, 'contactable')->ordered();
-    }
-
-    /**
-     * Relazione con le persone pubbliche
-     */
-    public function people(): BelongsToMany
-    {
-        return $this->belongsToMany(PublicPerson::class, 'sixteen_person_unit')
-            ->withPivot(['role', 'start_date', 'end_date', 'is_active'])
-            ->withTimestamps();
-    }
-
-    /**
-     * Relazione con i responsabili attuali
-     */
-    public function managers(): BelongsToMany
-    {
-        return $this->people()
-            ->wherePivot('is_active', true)
-            ->wherePivot('role', 'like', '%responsabile%')
-            ->orWherePivot('role', 'like', '%dirigente%');
-    }
-
-    /**
-     * Relazione con i servizi erogati
-     */
-    public function services(): HasMany
-    {
-        return $this->hasMany(MunicipalService::class, 'organizational_unit_id');
-    }
-
-    /**
-     * Relazione con le location
-     */
-    public function locations(): BelongsToMany
-    {
-        return $this->belongsToMany(MunicipalLocation::class, 'sixteen_unit_locations');
-    }
-
-    /**
-     * Scope per unità attive
-     */
-    public function scopeActive($query)
-    {
-        return $query->where('is_active', true);
-    }
-
-    /**
-     * Scope per unità pubbliche
-     */
-    public function scopePublic($query)
-    {
-        return $query->where('is_public', true);
-    }
-
-    /**
-     * Scope per tipo di unità
-     */
-    public function scopeOfType($query, string $type)
-    {
-        return $query->where('type', $type);
-    }
-
-    /**
-     * Scope per unità radice (senza parent)
-     */
-    public function scopeRoot($query)
-    {
-        return $query->whereNull('parent_id');
-    }
-
-    /**
-     * Scope ordinato per posizione
-     */
-    public function scopeOrdered($query)
-    {
-        return $query->orderBy('position')->orderBy('name');
-    }
-
-    /**
-<<<<<<< HEAD
-     * Accessor per il nome del tipo
-     */
-    protected function typeName(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => self::TYPES[$this->type] ?? $this->type
-        );
-    }
-
-    /**
-     * Accessor per il percorso gerarchico
-     */
-    protected function hierarchyPath(): Attribute
-    {
-        return Attribute::make(
-            get: function () {
-                $path = collect([$this->name]);
-                $current = $this;
-
-                while ($current->parent) {
-                    $current = $current->parent;
-                    $path->prepend($current->name);
-                }
-
-                return $path->implode(' › ');
-            }
-        );
-    }
-
-    /**
-     * Accessor per verificare se ha figli
-     */
-    protected function hasChildren(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => $this->children()->exists()
-        );
-    }
-
-    /**
-     * Accessor per il livello gerarchico
-     */
-    protected function level(): Attribute
-    {
-        return Attribute::make(
-            get: function () {
-                $level = 0;
-                $current = $this;
-
-                while ($current->parent) {
-                    $level++;
-                    $current = $current->parent;
-                }
-
-                return $level;
-            }
-        );
-    }
-
-    /**
-     * Accessor per l'URL dell'unità
-     */
-    protected function url(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => route('municipal.organizational-units.show', $this->slug)
-        );
-    }
-
-    /**
-     * Mutator per il nome (genera automaticamente lo slug)
-     */
-    protected function name(): Attribute
-    {
-        return Attribute::make(
-            set: function ($value) {
-                $this->attributes['name'] = $value;
-                if (empty($this->attributes['slug'])) {
-                    $this->attributes['slug'] = Str::slug($value);
-                }
-
-                return $value;
-            }
-        );
-    }
-
-    /**
-=======
->>>>>>> origin/dev
      * Ottiene le competenze formattate
      */
     public function getFormattedCompetences(): array
@@ -488,12 +202,7 @@ class OrganizationalUnit extends Model
     }
 
     /**
-<<<<<<< HEAD
-     * Boot del modello
-     */
-    protected static function boot()
-=======
-     * Accessor per il nome del tipo
+* Accessor per il nome del tipo
      */
     protected function typeName(): Attribute
     {
@@ -583,16 +292,11 @@ class OrganizationalUnit extends Model
      * Boot del modello
      */
     protected static function boot(): void
->>>>>>> origin/dev
     {
         parent::boot();
 
         // Auto-increment position nella stessa categoria
-<<<<<<< HEAD
-        static::creating(function ($model) {
-=======
-        static::creating(function ($model): void {
->>>>>>> origin/dev
+static::creating(function ($model): void {
             if (is_null($model->position)) {
                 $model->position = static::where('parent_id', $model->parent_id)
                     ->where('type', $model->type)
@@ -601,22 +305,14 @@ class OrganizationalUnit extends Model
         });
 
         // Genera slug se mancante
-<<<<<<< HEAD
-        static::creating(function ($model) {
-=======
-        static::creating(function ($model): void {
->>>>>>> origin/dev
+static::creating(function ($model): void {
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->name);
             }
         });
 
         // Assicura unicità dello slug
-<<<<<<< HEAD
-        static::creating(function ($model) {
-=======
-        static::creating(function ($model): void {
->>>>>>> origin/dev
+static::creating(function ($model): void {
             $originalSlug = $model->slug;
             $counter = 1;
 

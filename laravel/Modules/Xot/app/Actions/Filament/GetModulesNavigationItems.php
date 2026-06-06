@@ -122,10 +122,7 @@ class GetModulesNavigationItems
                         return false;
                     }
 
-<<<<<<< HEAD
-                    /* @phpstan-ignore-next-line */
-=======
->>>>>>> origin/dev
+/* @phpstan-ignore-next-line */
                     return (bool) $user->hasRole($role);
                 });
 

@@ -1,15 +1,7 @@
 # UI Module Documentation
 
 ## Overview
-<<<<<<< HEAD
-<<<<<<< .merge_file_UztRHC
 The UI module provides shared user interface components, widgets, and styling for the Laraxot system. It includes specialized components for chart rendering, PDF generation interfaces, and survey data visualization. The module integrates with Chart and healthcare_app modules to provide professional UI experiences for survey data analysis and reporting.
-=======
-The UI module provides shared user interface components, widgets, and styling for the Laraxot system. It includes specialized components for chart rendering, PDF generation interfaces, and survey data visualization. The module integrates with Chart and ModuloEsempio modules to provide professional UI experiences for survey data analysis and reporting.
->>>>>>> .merge_file_0hV0Af
-=======
-The UI module provides shared user interface components, widgets, and styling for the Laraxot system. It includes specialized components for chart rendering, PDF generation interfaces, and survey data visualization. The module integrates with Chart and Quaeris modules to provide professional UI experiences for survey data analysis and reporting.
->>>>>>> origin/dev
 
 ## Key Features
 - **Chart Components**: Reusable chart components with multiple visualization options
@@ -708,15 +700,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ## Integration with Other Modules
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_UztRHC
 ### Integration with healthcare_app Module
-=======
-### Integration with ModuloEsempio Module
->>>>>>> .merge_file_0hV0Af
-=======
-### Integration with Quaeris Module
->>>>>>> origin/dev
 ```blade
 {{-- Survey PDF Generation Interface --}}
 <div class="survey-pdf-generator">
@@ -1157,15 +1141,7 @@ Common issues and solutions:
 
 ## Related Modules
 - [Chart Module](../chart/docs/index.md) - Chart generation and data processing
-<<<<<<< HEAD
-<<<<<<< .merge_file_UztRHC
 - [healthcare_app Module](../healthcare_app/docs/index.md) - Survey management and question charts
-=======
-- [ModuloEsempio Module](../ptvx/docs/index.md) - Survey management and question charts
->>>>>>> .merge_file_0hV0Af
-=======
-- [Quaeris Module](../Quaeris/docs/index.md) - Survey management and question charts
->>>>>>> origin/dev
 - [LimeSurvey Module](../limesurvey/docs/index.md) - Survey data access with dynamic models
 - [Xot Module](../xot/docs/index.md) - Base UI infrastructure and component patterns
 
@@ -1175,29 +1151,13 @@ Common issues and solutions:
 For question type Y (Yes/No responses), the system provides enhanced statistical analysis capabilities:
 
 ```php
-<<<<<<< HEAD
-<<<<<<< .merge_file_UztRHC
 namespace Modules\healthcare_app\Filament\Widgets;
-=======
-namespace Modules\ModuloEsempio\Filament\Widgets;
->>>>>>> .merge_file_0hV0Af
-=======
-namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> origin/dev
 
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\DB;
 use Modules\Limesurvey\Models\SurveyResponse;
-<<<<<<< HEAD
-<<<<<<< .merge_file_UztRHC
 use Modules\healthcare_app\Models\QuestionChart;
-=======
-use Modules\ModuloEsempio\Models\QuestionChart;
->>>>>>> .merge_file_0hV0Af
-=======
-use Modules\Quaeris\Models\QuestionChart;
->>>>>>> origin/dev
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 
 class QuestionChartAnswersYTypeWidget extends XotBaseTableWidget
@@ -1422,9 +1382,4 @@ Specialized UI components for displaying statistics of Y type questions:
         }
     </script>
 </div>
-<<<<<<< HEAD
 ```
-=======
-```
-- [Conflict Resolution](conflict-resolution.md)
->>>>>>> origin/dev

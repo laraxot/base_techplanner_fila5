@@ -19,35 +19,6 @@ class UrlService
     public function __construct()
     {
         // ---
-<<<<<<< HEAD
-        include_once __DIR__.'/vendor/autoload.php';
-=======
->>>>>>> origin/dev
-    }
-
-    public static function getInstance(): self
-    {
-        if (! self::$instance instanceof self) {
-            self::$instance = new self();
-        }
-
-        return self::$instance;
-    }
-
-    /**
-     * Undocumented function.
-     */
-    public static function make(): self
-    {
-        return static::getInstance();
-    }
-
-    public function checkValidUrl(string $url): bool
-    {
-<<<<<<< HEAD
-        return false !== filter_var($url, FILTER_VALIDATE_URL);
-=======
-        return filter_var($url, FILTER_VALIDATE_URL) !== false;
->>>>>>> origin/dev
+return filter_var($url, FILTER_VALIDATE_URL) !== false;
     }
 }

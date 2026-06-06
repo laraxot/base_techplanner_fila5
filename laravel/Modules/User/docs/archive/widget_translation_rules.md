@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Widget Translation Rules - Laraxot Project
-=======
-# Widget Translation Rules - healthcare_app Project
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-# Widget Translation Rules - healthcare_app Project
->>>>>>> origin/dev
 
 ## Core Principles
 
@@ -204,12 +196,4 @@ This document serves as a reference for:
 - Code quality requirements
 - Documentation standards
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 All widget development should follow these rules to maintain consistency and quality across the Laraxot project.
-=======
-All widget development should follow these rules to maintain consistency and quality across the healthcare_app project.
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-All widget development should follow these rules to maintain consistency and quality across the healthcare_app project.
->>>>>>> origin/dev

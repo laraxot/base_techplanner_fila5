@@ -11,10 +11,7 @@ use Modules\Xot\Models\XotBaseMorphPivot;
  */
 abstract class BaseMorphPivot extends XotBaseMorphPivot
 {
-<<<<<<< HEAD
-    /** @var string */
-=======
->>>>>>> origin/dev
+/** @var string */
     protected $connection = 'user';
 
     /** @var list<string> */

@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-<x-layouts.main>
-    <x-section slug="header"/>
-
-    {{ $slot }}
-   
-    <x-section slug="footer"/>
-   
-=======
 @props(['title' => '', 'metaDescription' => '', 'pageShell' => false, 'bodyPage' => ''])
 
 <x-layouts.main :title="$title" :description="$metaDescription" :body-page="$bodyPage">
@@ -24,5 +15,4 @@
     @include('pub_theme::components.sections.search-modal')
 
     <x-section slug="footer" tpl="full" />
->>>>>>> origin/dev
 </x-layouts.main>

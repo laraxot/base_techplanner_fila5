@@ -11,25 +11,8 @@ use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TimePicker;
 use Filament\Infolists\Components\Entry;
 use Filament\Support\Components\Component;
-<<<<<<< HEAD
-=======
 use Filament\Support\Facades\FilamentColor;
->>>>>>> origin/dev
-use Filament\Tables\Columns\Column;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Filters\BaseFilter;
-use Illuminate\Database\Events\MigrationsEnded;
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Event;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\URL;
-use Illuminate\Support\Facades\View;
-use Modules\Xot\Console\Commands\GenerateFilamentResources;
-use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
-=======
 use Modules\Xot\Support\PaDesignColors;
->>>>>>> origin/dev
 use Modules\Xot\View\Composers\XotComposer;
 use Webmozart\Assert\Assert;
 
@@ -54,56 +37,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->registerExceptionHandler(); // guardare come fa sentry
         $this->registerTimezone();
         $this->registerFilamentMacros();
-<<<<<<< HEAD
-=======
-        $this->registerPaFilamentColors();
->>>>>>> origin/dev
-        $this->registerXotLivewireComponents();
-        $this->registerProviders();
-    }
-
-    #[\Override]
-    public function register(): void
-    {
-        parent::register();
-        $this->registerConfig();
-
-        // $this->registerExceptionHandlersRepository();
-        // $this->extendExceptionHandler();
-        $this->registerCommands();
-    }
-
-    public function registerProviders(): void
-    {
-        // $this->app->register(Filament\ModulesServiceProvider::class);
-    }
-
-    public function registerTimezone(): void
-    {
-        Assert::string(
-            $timezone = config('app.timezone') ?? 'Europe/Berlin',
-            '['.__LINE__.']['.class_basename($this).']',
-        );
-        Assert::string(
-            $date_format = config('app.date_format') ?? 'd/m/Y',
-            '['.__LINE__.']['.class_basename($this).']',
-        );
-        Assert::string($locale = config('app.locale') ?? 'it', '['.__LINE__.']['.class_basename($this).']');
-
-        app()->setLocale($locale);
-        Carbon::setLocale($locale);
-        date_default_timezone_set($timezone);
-
-        DateTimePicker::configureUsing(fn (DateTimePicker $component) => $component->timezone($timezone));
-        DatePicker::configureUsing(
-            fn (DatePicker $component) => $component->timezone($timezone)->displayFormat($date_format),
-        );
-        TimePicker::configureUsing(fn (TimePicker $component) => $component->timezone($timezone));
-        TextColumn::configureUsing(fn (TextColumn $column) => $column->timezone($timezone));
-    }
-
-<<<<<<< HEAD
-=======
+$this->registerPaFilamentColors();
     /**
      * Palette PA su widget FO (login, wizard) senza panel attivo — allineata ai panel admin.
      */
@@ -111,8 +45,6 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         FilamentColor::register(PaDesignColors::filamentPalette());
     }
-
->>>>>>> origin/dev
     public function registerFilamentMacros(): void
     {
         // Macro temporarily disabled due to compatibility issues with Filament version
@@ -166,20 +98,12 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $files = File::files($path);
         foreach ($files as $file) {
-<<<<<<< HEAD
-            if ('php' !== $file->getExtension()) {
-=======
-            if ($file->getExtension() !== 'php') {
->>>>>>> origin/dev
+if ($file->getExtension() !== 'php') {
                 continue;
             }
 
             $realPath = $file->getRealPath();
-<<<<<<< HEAD
-            if (false === $realPath) {
-=======
-            if ($realPath === false) {
->>>>>>> origin/dev
+if ($realPath === false) {
                 continue;
             }
 

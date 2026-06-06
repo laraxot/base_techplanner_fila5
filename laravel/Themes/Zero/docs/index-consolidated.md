@@ -126,8 +126,6 @@ Theme development roadmap.
 - **Limesurvey Module** (`../../laravel/Modules/Limesurvey/docs/`) - Survey data integration
 - **healthcare_app Module** (`../../laravel/Modules/healthcare_app/docs/`) - Dashboard and reporting
 - **Chart Module** (`../../laravel/Modules/Chart/docs/`) - Chart generation
-<<<<<<< HEAD
-=======
 - **Performance Module** (`../../laravel/Modules/Performance/docs/`) - Performance evaluation
   - [Performance Actions Reference](./performance-actions-reference.md) - Backend actions for performance calculations
   - [Update Gg Presenza Dalal](../../Modules/Performance/docs/action-update-gg-presenza-dalal.md) - Calcolo giorni presenza
@@ -135,7 +133,6 @@ Theme development roadmap.
   - [Update Perc Part-time](../../Modules/Performance/docs/action-update-perc-parttimepond-dalal.md) - Calcolo percentuale part-time
   - [Discrepanza Calcolo Quota](../../Modules/Performance/docs/discrepanza-calcolo-quota.md) - Analisi diff quote
   - [Filament Infolist Pattern](../../Modules/Performance/docs/filament-infolist-pattern.md) - Pattern infolist Filament
->>>>>>> origin/dev
 
 ## File Organization
 
@@ -146,12 +143,9 @@ docs/
 ├── architecture.md                              # Architecture guide
 ├── components.md                                # Components reference
 ├── customization.md                             # Customization guide
-<<<<<<< HEAD
-=======
 ├── performance-actions-reference.md             # Performance actions
 ├── performance-calcolo-quota-troubleshooting.md # Troubleshooting quote
 ├── filament-infolist-pattern.md                 # Infolist pattern
->>>>>>> origin/dev
 ├── layouts.md                                   # Layout templates
 ├── mail-layouts.md                              # Email layouts
 ├── examples.md                                  # Code examples
@@ -170,12 +164,7 @@ docs/
 ├── analisi-completa-tema.md                     # Theme analysis
 ├── comprehensive-theme-analysis.md              # Comprehensive analysis
 ├── database-governance.md                       # Database governance
-<<<<<<< HEAD
 └── roadmap.md                                   # Development roadmap
-=======
-├── roadmap.md                                   # Development roadmap
-└── performance-actions-reference.md             # Performance module actions reference
->>>>>>> origin/dev
 ```
 
 ## Key Concepts

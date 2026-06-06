@@ -57,59 +57,7 @@ class SpidAuthController extends Controller
             $loginUrl = $this->spidService->getLoginUrl($provider, $level, $returnUrl);
 
             return redirect()->to($loginUrl);
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/dev
-        } catch (\Exception $e) {
-            Log::error('SPID login error', [
-                'provider' => $provider,
-                'error' => $e->getMessage(),
-                'trace' => $e->getTraceAsString(),
-            ]);
-
-            return redirect()->route('login')
-                ->with('error', 'Errore durante l\'avvio dell\'autenticazione SPID. Riprova più tardi.');
-        }
-    }
-
-    /**
-     * Gestisce il callback dal provider SPID
-     */
-    public function callback(Request $request): RedirectResponse
-    {
-        try {
-            // Processa la response SAML
-            $userAttributes = $this->spidService->processCallback($request);
-
-            // Trova o crea l'utente
-            $user = $this->findOrCreateUser($userAttributes);
-
-            // Effettua il login
-            Auth::login($user, true);
-
-            // Salva i dati SPID in sessione
-            Session::put('spid.authenticated', true);
-            Session::put('spid.user_data', $userAttributes);
-
-            // Trigger evento
-            event(new SpidAuthenticated($user, $userAttributes));
-
-            Log::info('SPID authentication completed', [
-                'user_id' => $user->id,
-                'provider' => $userAttributes['provider'],
-                'fiscal_code' => $userAttributes['fiscal_code'],
-            ]);
-
-            // Redirect all'URL di ritorno
-            $returnUrl = Session::pull('spid.return_url', route('dashboard'));
-
-            return redirect()->to($returnUrl)
-                ->with('success', 'Autenticazione SPID completata con successo.');
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/dev
         } catch (\Exception $e) {
             Log::error('SPID callback error', [
                 'error' => $e->getMessage(),
@@ -175,64 +123,7 @@ class SpidAuthController extends Controller
 
             return redirect()->route('home')
                 ->with('success', 'Logout effettuato con successo.');
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/dev
-        } catch (\Exception $e) {
-            Log::error('SPID logout error', [
-                'error' => $e->getMessage(),
-                'user_id' => Auth::id(),
-                'trace' => $e->getTraceAsString(),
-            ]);
-
-            // Forza logout locale in caso di errore
-            Auth::logout();
-            $this->spidService->logout();
-            Session::invalidate();
-            Session::regenerateToken();
-
-            return redirect()->route('home')
-                ->with('warning', 'Logout locale completato. Potrebbero essere necessarie operazioni aggiuntive.');
-        }
-    }
-
-    /**
-     * Gestisce il Single Logout (SLO) dal provider SPID
-     */
-    public function singleLogout(Request $request): Response
-    {
-        try {
-            // Processa la richiesta SLO
-            $logoutRequest = $request->input('SAMLRequest');
-            $relayState = $request->input('RelayState');
-
-            Log::info('SPID SLO received', [
-                'relay_state' => $relayState,
-                'user_id' => Auth::id(),
-            ]);
-
-            // Effettua logout se l'utente è loggato
-            if (Auth::check()) {
-                $user = Auth::user();
-                $userData = Session::get('spid.user_data', []);
-
-                Auth::logout();
-                $this->spidService->logout();
-                Session::invalidate();
-
-                event(new SpidLoggedOut($user, $userData));
-            }
-
-            // Genera response SLO
-            $sloResponse = $this->generateSloResponse($relayState);
-
-            return response($sloResponse)
-                ->header('Content-Type', 'text/xml');
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/dev
         } catch (\Exception $e) {
             Log::error('SPID SLO error', [
                 'error' => $e->getMessage(),
@@ -258,10 +149,7 @@ class SpidAuthController extends Controller
             return response($metadata)
                 ->header('Content-Type', 'application/samlmetadata+xml')
                 ->header('Content-Disposition', 'inline; filename="metadata.xml"');
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/dev
         } catch (\Exception $e) {
             Log::error('SPID metadata generation error', [
                 'error' => $e->getMessage(),

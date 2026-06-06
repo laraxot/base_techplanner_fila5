@@ -22,23 +22,16 @@ parameters:
 
     ignoreErrors:
         - '#PHPDoc tag @mixin contains unknown class #'
-<<<<<<< HEAD
         - '#Static call to instance method Nwidart#'
         - "#^Unsafe usage of new static#"
-=======
-        # - '#Static call to instance method Nwidart#'
->>>>>>> origin/dev
         - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#' # Ignora errori di cast da mixed a tipi specifici
         - identifier: missingType.generics
         - identifier: missingType.iterableValue
         - identifier: larastan.noEnvCallsOutsideOfConfig
         - '#is used zero times and is not analysed#'
         - identifier: method.unused
-<<<<<<< HEAD
         - identifier: method.internalClass # Ignora metodi internal di Pest (toBe, toBeTrue, etc.)
         - identifier: function.alreadyNarrowedType # Ignora check ridondanti type-safe
-=======
->>>>>>> origin/dev
 
     excludePaths:
         - ./vendor/*
@@ -46,10 +39,7 @@ parameters:
         - ./*/build/*
         - ./*/docs/*
         - ./*/tests/*
-<<<<<<< HEAD
         - ./*/Tests/*
-=======
->>>>>>> origin/dev
         - ./*/packages/*
         - ./*/phpinsights.php
         - ./*/rector.php
@@ -68,8 +58,4 @@ parameters:
     editorUrl: 'vscode://file/%%file%%:%%line%%'
     tmpDir: /tmp/phpstan
     treatPhpDocTypesAsCertain: false
-<<<<<<< HEAD
     reportUnmatchedIgnoredErrors: false
-=======
-    # reportUnmatchedIgnoredErrors: false
->>>>>>> origin/dev

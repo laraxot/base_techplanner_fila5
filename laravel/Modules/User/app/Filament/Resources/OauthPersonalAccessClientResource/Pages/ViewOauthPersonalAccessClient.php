@@ -7,22 +7,8 @@ namespace Modules\User\Filament\Resources\OauthPersonalAccessClientResource\Page
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
-<<<<<<< HEAD
-=======
 use Modules\User\Filament\Resources\OauthPersonalAccessClientResource;
->>>>>>> origin/dev
-use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
-
-/**
- * Class ViewOauthPersonalAccessClient.
- */
-class ViewOauthPersonalAccessClient extends XotBaseViewRecord
-{
-<<<<<<< HEAD
-    protected static string $resource = \Modules\User\Filament\Resources\OauthPersonalAccessClientResource::class;
-=======
     protected static string $resource = OauthPersonalAccessClientResource::class;
->>>>>>> origin/dev
 
     /**
      * @return array<string, Component>

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio
 
 ## Collegamenti correlati
@@ -485,66 +484,6 @@ new class extends Component {
 3. **Struttura del Codice**
    - Separa la logica PHP dal template Blade
    - Usa l'approccio funzionale o la classe anonima in base alla complessità
-<<<<<<< HEAD
-   - Segui le convenzioni di naming e struttura di Laraxot
-=======
-   - Segui le convenzioni di naming e struttura di healthcare_app
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-
-4. **Sicurezza**
-   - Invalida e rigenera sempre la sessione dopo il logout
-   - Usa la validazione per tutti gli input
-   - Implementa la protezione CSRF
-
-## Troubleshooting
-
-### Problemi Comuni
-
-1. **Errore: Component not found**
-   - Verifica che il namespace del componente sia corretto
-   - Assicurati che il componente sia registrato correttamente
-
-2. **Errore: Property not found on component**
-   - Verifica che tutte le proprietà siano definite correttamente
-   - Controlla che le proprietà siano accessibili nel template
-
-3. **Errore: Route not found**
-   - Verifica che il file sia nella directory corretta
-   - Controlla che il nome della route sia definito correttamente
-
-### Soluzioni
-
-1. **Pulizia della Cache**
-   ```bash
-   php artisan view:clear
-   php artisan route:clear
-   php artisan cache:clear
-   ```
-
-2. **Rigenerazione dell'Autoloader**
-   ```bash
-   composer dump-autoload
-   ```
-
-3. **Verifica delle Route**
-   ```bash
-   php artisan route:list
-   ```
-
-## Conclusione
-
-<<<<<<< HEAD
-Seguendo queste linee guida per l'implementazione delle pagine di autenticazione con Volt e Folio, garantirai che il tuo codice sia conforme alle convenzioni di Laraxot, sia facile da mantenere e sfrutti al meglio le capacità di Laravel, Livewire, Volt e Folio.
-=======
-Seguendo queste linee guida per l'implementazione delle pagine di autenticazione con Volt e Folio, garantirai che il tuo codice sia conforme alle convenzioni di healthcare_app, sia facile da mantenere e sfrutti al meglio le capacità di Laravel, Livewire, Volt e Folio.
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-
-## Riferimenti
-
-- [Documentazione Volt](https://livewire.laravel.com/docs/volt)
-- [Documentazione Folio](https://laravel.com/docs/10.x/folio)
-- [Documentazione Livewire](https://livewire.laravel.com/docs)
-=======
 ---
 module: theme
 topic: volt_folio_auth_implementation
@@ -552,4 +491,3 @@ canonical: ../../../Themes/docs/shared-components/volt_folio_auth_implementation
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt_folio_auth_implementation.md
->>>>>>> origin/dev

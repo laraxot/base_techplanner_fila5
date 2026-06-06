@@ -27,53 +27,7 @@ use function Safe\json_encode;
 
 class OauthAccessTokenResource extends XotBaseResource
 {
-<<<<<<< HEAD
-    /** @phpstan-ignore-next-line Passport wrapper model is valid at runtime, but PHPStan does not fully infer the upstream subtype here. */
-=======
->>>>>>> origin/dev
-    protected static ?string $model = OauthAccessToken::class;
-
-    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-key';
-
-    protected static ?int $navigationSort = 5;
-
-    public static function getNavigationLabel(): string
-    {
-        return __('OAuth Access Tokens');
-    }
-
-    public static function getPluralLabel(): string
-    {
-        return __('OAuth Access Tokens');
-    }
-
-    public static function getModelLabel(): string
-    {
-        return __('OAuth Access Token');
-    }
-
-    public static function table(Table $table): Table
-    {
-        return $table
-            ->columns([
-                TextColumn::make('id')
-                    ->searchable()
-                    ->sortable()
-                    ->copyable(),
-
-                TextColumn::make('user.name')
-                    ->searchable()
-                    ->sortable()
-                    ->url(function (mixed $record): ?string {
-                        if (! $record instanceof OauthAccessToken) {
-                            return null;
-                        }
-                        $user = $record->user;
-<<<<<<< HEAD
-                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
-=======
-                        if ($user !== null && method_exists($user, 'exists') && $user->exists) {
->>>>>>> origin/dev
+if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -92,11 +46,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
-<<<<<<< HEAD
-                        if (null === $state) {
-=======
-                        if ($state === null) {
->>>>>>> origin/dev
+if ($state === null) {
                             return null;
                         }
                         if (is_array($state)) {

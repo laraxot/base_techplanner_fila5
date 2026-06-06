@@ -9,11 +9,7 @@ use Modules\UI\Models\Asset;
 use Modules\User\Models\User;
 use Modules\Xot\Models\Module;
 
-<<<<<<< HEAD
 uses(TestCase::class)->in(__DIR__);
-
-=======
->>>>>>> origin/dev
 it('can create a test user', function () {
     $user = User::factory()->create([
         'name' => 'Test User',

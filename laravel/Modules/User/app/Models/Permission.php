@@ -7,31 +7,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-=======
 use Modules\Xot\Contracts\ProfileContract;
->>>>>>> origin/dev
-use Modules\Xot\Models\Traits\HasXotFactory;
-use Modules\Xot\Models\Traits\RelationX;
-use Modules\Xot\Traits\Updater;
-use Spatie\Permission\Models\Permission as SpatiePermission;
-
-/**
-<<<<<<< HEAD
- * @property int                         $id
- * @property string                      $name
- * @property string                      $guard_name
- * @property Carbon|null                 $created_at
- * @property Carbon|null                 $updated_at
- * @property string|null                 $updated_by
- * @property string|null                 $created_by
- * @property Collection<int, Permission> $permissions
- * @property int|null                    $permissions_count
- * @property Collection<int, Role>       $roles
- * @property int|null                    $roles_count
- * @property Collection<int, User>       $users
- * @property int|null                    $users_count
-=======
  * @property int $id
  * @property string $name
  * @property string $guard_name
@@ -45,7 +21,6 @@ use Spatie\Permission\Models\Permission as SpatiePermission;
  * @property int|null $roles_count
  * @property Collection<int, User> $users
  * @property int|null $users_count
->>>>>>> origin/dev
  *
  * @method static Builder<static>|Permission newModelQuery()
  * @method static Builder<static>|Permission newQuery()
@@ -61,21 +36,12 @@ use Spatie\Permission\Models\Permission as SpatiePermission;
  * @method static Builder<static>|Permission whereUpdatedBy($value)
  * @method static Builder<static>|Permission withoutPermission($permissions)
  * @method static Builder<static>|Permission withoutRole($roles, $guard = null)
-<<<<<<< HEAD
- * @method static static                     firstOrCreate(array $attributes, array $values = [])
- * @method static static                     updateOrCreate(array $attributes, array $values = [])
- *
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null $deleter
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
-=======
- * @method static static firstOrCreate(array $attributes, array $values = [])
+* @method static static firstOrCreate(array $attributes, array $values = [])
  * @method static static updateOrCreate(array $attributes, array $values = [])
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
->>>>>>> origin/dev
  *
  * @method static \Modules\User\Database\Factories\PermissionFactory factory($count = null, $state = [])
  *
@@ -87,15 +53,7 @@ class Permission extends SpatiePermission
     use RelationX;
     use Updater;
 
-<<<<<<< HEAD
-    /** @var string */
-    protected $connection = 'user';
-
-    /** @var string */
-=======
-    protected $connection = 'user';
-
->>>>>>> origin/dev
+protected $connection = 'user';
     protected $table = 'permissions';
 
     /** @var list<string> */

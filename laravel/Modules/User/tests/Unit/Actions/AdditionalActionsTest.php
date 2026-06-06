@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Actions;
 
-<<<<<<< HEAD
-uses(\Modules\User\Tests\TestCase::class);
-=======
 uses(TestCase::class);
->>>>>>> origin/dev
 
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
@@ -18,10 +14,7 @@ use Modules\User\Actions\Socialite\LoginUserAction;
 use Modules\User\Actions\Socialite\RegisterSocialiteUserAction;
 use Modules\User\Actions\User\DeleteUserAction;
 use Modules\User\Actions\User\UpdateUserAction;
-<<<<<<< HEAD
-=======
 use Modules\User\Tests\TestCase;
->>>>>>> origin/dev
 
 test('RegisterSocialiteUserAction can be instantiated', function () {
     expect(class_exists(RegisterSocialiteUserAction::class))->toBeTrue();

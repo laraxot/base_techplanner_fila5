@@ -14,34 +14,8 @@ use Filament\Schemas\Components\Section;
 
 class UserSection extends Section
 {
-<<<<<<< HEAD
-    public static function getDefaultName(): ?string
+public static function getDefaultName(): ?string
     {
         return 'user';
     }
-
-=======
->>>>>>> origin/dev
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        $this->schema([
-            Grid::make(4)->schema([
-                // TextInput::make('ente'),
-                // TextInput::make('matr'),
-                TextInput::make('first_name'),
-                TextInput::make('last_name'),
-                TextInput::make('email'),
-            ]),
-        ]);
-    }
-<<<<<<< HEAD
-=======
-
-    public static function getDefaultName(): ?string
-    {
-        return 'user';
-    }
->>>>>>> origin/dev
 }

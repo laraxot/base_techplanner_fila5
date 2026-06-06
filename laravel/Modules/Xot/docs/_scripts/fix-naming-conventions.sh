@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/bin/bash
 # fix-naming-conventions.sh
 # Corregge naming conventions nei file docs (underscore → dash)
@@ -37,12 +36,3 @@ if [ $FIXES -eq 0 ]; then
 else
     echo -e "${GREEN}✅ $FIXES file rinominati${NC}"
 fi
-=======
----
-module: theme
-topic: fix-naming-conventions
-canonical: ../../../../Themes/docs/shared-components/fix-naming-conventions.sh
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/fix-naming-conventions.sh
->>>>>>> origin/dev

@@ -64,24 +64,9 @@ protected function getTableEmptyStateActions(): array
    - Aggiunta sezione "Errore InteractsWithTable"
    - Aggiornata data ultimo aggiornamento
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_2UKLCZ
 3. **`Modules/healthcare_app/docs/question-chart-implementation-guide.md`**
-=======
-<<<<<<< HEAD
-3. **Moduli che implementano nested resources con HasXotTable**
-   - Nota critica sulla visibilità dei metodi `getTable*()`
-=======
-3. **`Modules/ExternalProject/docs/question-chart-implementation-guide.md`**
->>>>>>> .merge_file_0hpKGV
    - Aggiunta nota critica sulla visibilità dei metodi `getTable*()`
 >>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-3. **`Modules/healthcare_app/docs/question-chart-implementation-guide.md`**
-3. **Moduli che implementano nested resources con HasXotTable**
-   - Nota critica sulla visibilità dei metodi `getTable*()`
-   - Aggiunta nota critica sulla visibilità dei metodi `getTable*()`
->>>>>>> origin/dev
 
 ## Pattern Corretto
 
@@ -135,15 +120,7 @@ Dopo la correzione, l'errore non dovrebbe più verificarsi:
 
 ```bash
 # Test accesso pagina
-<<<<<<< HEAD
-<<<<<<< .merge_file_2UKLCZ
 curl http://healthcare_app.local/healthcare_app/admin/ats/survey-pdfs/16/question-charts/226
-=======
-curl http://app.local/admin/your-resource/16/related/226
->>>>>>> .merge_file_0hpKGV
-=======
-curl http://healthcare_app.local/healthcare_app/admin/ats/survey-pdfs/16/question-charts/226
->>>>>>> origin/dev
 # ✅ Dovrebbe funzionare senza errori
 ```
 

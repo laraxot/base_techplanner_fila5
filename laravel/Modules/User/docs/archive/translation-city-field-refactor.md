@@ -2,15 +2,7 @@
 
 ## Riepilogo Intervento
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Sono stati identificati e corretti tutti i file di traduzione non italiani contenenti "Città" nel modulo User, applicando la struttura completa a 7 elementi secondo gli standard Laraxot Laraxot.
-=======
-Sono stati identificati e corretti tutti i file di traduzione non italiani contenenti "Città" nel modulo User, applicando la struttura completa a 7 elementi secondo gli standard Laraxot healthcare_app.
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-Sono stati identificati e corretti tutti i file di traduzione non italiani contenenti "Città" nel modulo User, applicando la struttura completa a 7 elementi secondo gli standard Laraxot healthcare_app.
->>>>>>> origin/dev
 
 ## File Corretti
 
@@ -166,15 +158,7 @@ Tutti i file corretti mantengono:
 ## Collegamenti Bidirezionali
 
 - [Struttura Completa Campi Traduzione](../../../../docs/translation-field-structure-complete.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Laraxot Translation Audit](../../ptvx/docs/translation_audit_city_fields.md)
-=======
-- [healthcare_app Translation Audit](../../healthcare_app/docs/translation_audit_city_fields.md)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-- [healthcare_app Translation Audit](../../healthcare_app/docs/translation_audit_city_fields.md)
->>>>>>> origin/dev
 - [Translation Syntax Fixes](../../../../docs/translation_syntax_fixes.md)
 - [User Module Widget Translation Rules](widget-translation-rules.md)
 
@@ -195,12 +179,4 @@ Utilizzare la documentazione centrale [`translation-field-structure-complete.md`
 ## Ultimo Aggiornamento
 2025-08-08 - Refactor completo campi "Città" modulo User ✅ COMPLETATO
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Intervento eseguito seguendo rigorosamente i principi DRY + KISS e gli standard Laraxot Laraxot*
-=======
-*Intervento eseguito seguendo rigorosamente i principi DRY + KISS e gli standard Laraxot healthcare_app*
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-*Intervento eseguito seguendo rigorosamente i principi DRY + KISS e gli standard Laraxot healthcare_app*
->>>>>>> origin/dev

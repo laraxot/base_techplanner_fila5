@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/bin/bash
 # cleanup-empty-files.sh
 # Trova e rimuove file markdown vuoti dalle docs dei moduli
@@ -35,12 +34,3 @@ if [ "$COUNT" -gt 0 ]; then
 else
     echo -e "${GREEN}✅ Nessun file vuoto trovato!${NC}"
 fi
-=======
----
-module: theme
-topic: cleanup-empty-files
-canonical: ../../../../Themes/docs/shared-components/cleanup-empty-files.sh
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/cleanup-empty-files.sh
->>>>>>> origin/dev

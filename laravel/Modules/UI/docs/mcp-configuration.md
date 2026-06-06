@@ -36,26 +36,14 @@ The UI module's MCP configuration enables AI assistants to interact with:
     },
     "filesystem": {
       "command": "npx",
-<<<<<<< HEAD
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_<nome progetto>/laravel"],
-=======
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", ". progetto>/laravel"],
-||||||| parent of 9a84589 (.)
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_laravelpizza/laravel"],
->>>>>>> origin/dev
       "description": "Access to UI module files"
     },
     "database": {
       "command": "npx",
       "args": ["-y", "@bytebase/dbhub"],
       "env": {
-<<<<<<< HEAD
         "DATABASE_URL": "sqlite:///var/www/_bases/base_<nome progetto>/laravel/database/database.sqlite"
-=======
-        "DATABASE_URL": "sqlite://. progetto>/laravel/database/database.sqlite"
-||||||| parent of 9a84589 (.)
-        "DATABASE_URL": "sqlite:///var/www/_bases/base_laravelpizza/laravel/database/database.sqlite"
->>>>>>> origin/dev
       },
       "description": "SQLite database queries"
     }

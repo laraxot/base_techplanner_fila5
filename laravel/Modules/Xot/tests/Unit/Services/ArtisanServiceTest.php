@@ -12,13 +12,9 @@ use Modules\Xot\Services\ArtisanService;
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
 
-<<<<<<< HEAD
 use Tests\TestCase;
 
 uses(TestCase::class);
-
-=======
->>>>>>> origin/dev
 beforeEach(function (): void {
     // Configure mysql connection for tests (required by ArtisanService)
     Config::set('database.connections.mysql', [

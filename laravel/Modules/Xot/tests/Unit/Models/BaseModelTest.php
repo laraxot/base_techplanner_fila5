@@ -6,19 +6,9 @@ namespace Modules\Xot\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\BaseModel;
-<<<<<<< HEAD
-use Modules\Xot\Tests\TestCase;
-
-uses(TestCase::class);
-
-beforeEach(function () {
-    $this->baseModel = new class extends BaseModel {
-=======
-
 beforeEach(function () {
     $this->baseModel = new class() extends BaseModel
     {
->>>>>>> origin/dev
         protected $table = 'test_table';
     };
 });

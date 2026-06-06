@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Fix Binding Team Models nel Modulo User
 
 ## Panoramica
@@ -166,18 +165,6 @@ $this->assertTrue($user->belongsToTeam($team));
 - [TeamUser Model](../app/Models/TeamUser.php)
 - [TeamInvitation Model](../app/Models/TeamInvitation.php)
 - [UserServiceProvider](../app/Providers/UserServiceProvider.php)
-<<<<<<< HEAD
-- [Critical Errors Documentation](../../modulo/docs/critical-errors-resolved.md)
-=======
-- [Critical Errors Documentation](../../healthcare_app/docs/critical-errors-resolved.md)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-
----
-
-**Autore**: AI Assistant  
-**Data**: Gennaio 2025  
-**Versione**: 1.0  
-=======
 ---
 module: theme
 topic: team_bindings_fix
@@ -185,4 +172,3 @@ canonical: ../../../Themes/docs/shared-components/team_bindings_fix.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team_bindings_fix.md
->>>>>>> origin/dev

@@ -45,11 +45,7 @@ class CieAuthService
         // Salva lo stato in sessione
         Session::put('cie.state', $state);
         Session::put('cie.nonce', $nonce);
-<<<<<<< HEAD
-        Session::put('cie.return_url', $returnUrl ?: url()->previous());
-=======
-        Session::put('cie.return_url', $returnUrl ? $returnUrl : url()->previous());
->>>>>>> origin/dev
+Session::put('cie.return_url', $returnUrl ? $returnUrl : url()->previous());
 
         $params = [
             'client_id' => $this->clientId,
@@ -75,30 +71,17 @@ class CieAuthService
 
         Session::put('cie.state', $state);
         Session::put('cie.nonce', $nonce);
-<<<<<<< HEAD
-        Session::put('cie.return_url', $returnUrl ?: url()->previous());
-=======
-        Session::put('cie.return_url', $returnUrl ? $returnUrl : url()->previous());
->>>>>>> origin/dev
+Session::put('cie.return_url', $returnUrl ? $returnUrl : url()->previous());
         Session::put('cie.auth_method', 'mobile');
 
         // URL per deep linking all'app CieID
         $webLoginUrl = $this->getLoginUrl($returnUrl);
 
         // Genera l'URL per mobile con schema custom
-<<<<<<< HEAD
-        $mobileUrl = 'cieid://login?'.http_build_query([
+return 'cieid://login?'.http_build_query([
             'redirect_url' => $webLoginUrl,
             'client_name' => config('app.name'),
         ]);
-
-        return $mobileUrl;
-=======
-        return 'cieid://login?'.http_build_query([
-            'redirect_url' => $webLoginUrl,
-            'client_name' => config('app.name'),
-        ]);
->>>>>>> origin/dev
     }
 
     /**
@@ -145,9 +128,7 @@ class CieAuthService
     }
 
     /**
-<<<<<<< HEAD
-=======
-     * Verifica se l'utente è autenticato con CIE
+* Verifica se l'utente è autenticato con CIE
      */
     public function isAuthenticated(): bool
     {
@@ -272,55 +253,7 @@ class CieAuthService
     }
 
     /**
->>>>>>> origin/dev
-     * Scambia l'authorization code per un access token
-     */
-    protected function exchangeCodeForToken(string $code): array
-    {
-        $response = Http::asForm()->post($this->baseUrl.'/oidc/token', [
-            'grant_type' => 'authorization_code',
-            'code' => $code,
-            'redirect_uri' => $this->redirectUri,
-            'client_id' => $this->clientId,
-            'client_secret' => $this->clientSecret,
-        ]);
-
-        if (! $response->successful()) {
-            throw new Exception('Token exchange failed: '.$response->body());
-        }
-
-        return $response->json();
-    }
-
-    /**
-     * Ottiene le informazioni utente usando l'access token
-     */
-    protected function getUserInfo(string $accessToken): array
-    {
-        $response = Http::withToken($accessToken)
-            ->get($this->baseUrl.'/oidc/userinfo');
-
-        if (! $response->successful()) {
-            throw new Exception('UserInfo request failed: '.$response->body());
-        }
-
-        return $response->json();
-    }
-
-    /**
-     * Valida e decodifica l'ID token JWT
-     */
-    protected function validateIdToken(string $idToken): array
-    {
-        // Decodifica il JWT (in produzione usare librerie come firebase/jwt)
-        $parts = explode('.', $idToken);
-
-        if (count($parts) !== 3) {
-<<<<<<< HEAD
-            throw new \Exception('Invalid JWT format');
-=======
             throw new Exception('Invalid JWT format');
->>>>>>> origin/dev
         }
 
         // Decodifica header e payload
@@ -416,9 +349,7 @@ class CieAuthService
     {
         return bin2hex(random_bytes(32));
     }
-<<<<<<< HEAD
-
-    /**
+/**
      * Verifica se l'utente è autenticato con CIE
      */
     public function isAuthenticated(): bool
@@ -542,6 +473,4 @@ class CieAuthService
             'is_configured' => $this->isConfigured(),
         ];
     }
-=======
->>>>>>> origin/dev
 }

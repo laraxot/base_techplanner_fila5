@@ -49,8 +49,6 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
     'credentials_incorrect' => [
         'key' => 'user::auth.credentials_incorrect',
         'text' => 'Verifica i tuoi dati di accesso',
@@ -58,5 +56,4 @@ return [
         'context' => 'login_form.credentials',
         'placeholder' => '',
     ],
->>>>>>> origin/dev
 ];

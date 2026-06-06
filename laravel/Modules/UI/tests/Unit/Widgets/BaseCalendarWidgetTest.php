@@ -4,27 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\UI\Tests\Unit\Widgets;
 
-<<<<<<< HEAD
-uses(\Modules\UI\Tests\TestCase::class);
-=======
 uses(TestCase::class);
->>>>>>> origin/dev
 
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Grid;
 use Modules\UI\Filament\Widgets\UserCalendarWidget;
-<<<<<<< HEAD
-
-beforeEach(function () {
-    $this->widget = new class extends UserCalendarWidget {
-=======
 use Modules\UI\Tests\TestCase;
 
 beforeEach(function () {
     $this->widget = new class() extends UserCalendarWidget
     {
->>>>>>> origin/dev
         public function getActionName(string $function): string
         {
             unset($function);

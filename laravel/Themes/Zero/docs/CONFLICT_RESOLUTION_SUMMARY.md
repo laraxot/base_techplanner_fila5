@@ -54,11 +54,7 @@ public function form(Form $form): Form
 - **UI**: Widgets, Tests
 
 ### ⚠️ Richiede Attenzione
-<<<<<<< HEAD
 - **Xot/Helpers/Helper.php**: File con conflitti complessi, richiede risoluzione manuale
-=======
-- **Xot/helpers/Helper.php**: File con conflitti complessi, richiede risoluzione manuale
->>>>>>> origin/dev
 
 ## Script Creati
 

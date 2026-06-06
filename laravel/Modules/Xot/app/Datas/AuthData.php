@@ -10,18 +10,6 @@ use Spatie\LaravelData\Data;
  * Class AuthData - Gestisce la configurazione dell'autenticazione per il framework Laraxot.
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  */
-<<<<<<< HEAD
-class AuthData extends Data
-{
-    /**
-     * @param string $guard                  Guard predefinita
-     * @param array  $guards                 Guards disponibili
-     * @param array  $providers              Provider di autenticazione
-     * @param bool   $verify_email           Se richiedere verifica email
-     * @param int    $password_reset_timeout Password reset timeout in minuti
-     * @param array  $throttle               Configurazione throttling
-     * @param array  $social                 Provider social abilitati
-=======
 final class AuthData extends Data
 {
     /**
@@ -32,7 +20,6 @@ final class AuthData extends Data
      * @param  int  $password_reset_timeout  Password reset timeout in minuti
      * @param  array  $throttle  Configurazione throttling
      * @param  array  $social  Provider social abilitati
->>>>>>> origin/dev
      */
     public function __construct(
         public readonly string $guard = 'web',
@@ -51,22 +38,13 @@ final class AuthData extends Data
             'twitter' => false,
             'github' => false,
         ],
-<<<<<<< HEAD
-    ) {
-    }
-=======
-    ) {}
->>>>>>> origin/dev
+) {}
 
     /**
      * Create a new instance of AuthData with default values.
      */
     public static function make(): static
     {
-<<<<<<< HEAD
-        return new static();
-=======
-        return new self();
->>>>>>> origin/dev
+return new self();
     }
 }

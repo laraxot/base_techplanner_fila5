@@ -449,75 +449,26 @@ Analisi sistematica di tutti i moduli del progetto per identificare violazioni d
 ### 1. Violazioni DRY - Duplicazioni di Codice
 
 #### Singleton Pattern Duplicato
-<<<<<<< HEAD
-<<<<<<< .merge_file_JIUF6d
 **File**: `Modules/healthcare_app/app/Services/LimeJsonService.php`, `Modules/healthcare_app/app/Services/healthcare_appService.php`
-=======
-<<<<<<< HEAD
-**File**: `Modules/ModuloEsempio/app/Services/LimeJsonService.php`, `Modules/ModuloEsempio/app/Services/ModuloEsempioService.php`
-=======
-**File**: `Modules/ExternalProject/app/Services/LimeJsonService.php`, `Modules/ExternalProject/app/Services/ExternalProjectService.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_jGJkYm
-=======
-**File**: `Modules/healthcare_app/app/Services/LimeJsonService.php`, `Modules/healthcare_app/app/Services/healthcare_appService.php`
-**File**: `Modules/ModuloEsempio/app/Services/LimeJsonService.php`, `Modules/ModuloEsempio/app/Services/ModuloEsempioService.php`
->>>>>>> origin/dev
 
 ```php
 // DUPLICATO in LimeJsonService.php
 private static ?self $instance = null;
 public static function getInstance(): self
 {
-<<<<<<< HEAD
-<<<<<<< .merge_file_JIUF6d
     if (! self::$instance instanceof \Modules\healthcare_app\Services\LimeJsonService) {
-=======
-<<<<<<< HEAD
-    if (! self::$instance instanceof \Modules\ModuloEsempio\Services\LimeJsonService) {
-=======
-    if (! self::$instance instanceof \Modules\ExternalProject\Services\LimeJsonService) {
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_jGJkYm
-=======
-    if (! self::$instance instanceof \Modules\healthcare_app\Services\LimeJsonService) {
-    if (! self::$instance instanceof \Modules\ModuloEsempio\Services\LimeJsonService) {
->>>>>>> origin/dev
         self::$instance = new self();
     }
     return self::$instance;
 }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_JIUF6d
-=======
->>>>>>> origin/dev
 // DUPLICATO in healthcare_appService.php
 private static ?self $instance = null;
 public static function getInstance(): self
 {
     if (! self::$instance instanceof \Modules\healthcare_app\Services\healthcare_appService) {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
-// DUPLICATO in ModuloEsempioService.php
-private static ?self $instance = null;
-public static function getInstance(): self
-{
-    if (! self::$instance instanceof \Modules\ModuloEsempio\Services\ModuloEsempioService) {
-<<<<<<< HEAD
-=======
-// DUPLICATO in ExternalProjectService.php
-private static ?self $instance = null;
-public static function getInstance(): self
-{
-    if (! self::$instance instanceof \Modules\ExternalProject\Services\ExternalProjectService) {
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_jGJkYm
-=======
->>>>>>> origin/dev
         self::$instance = new self();
     }
     return self::$instance;
@@ -527,39 +478,15 @@ public static function getInstance(): self
 **Soluzione**: Creare trait `SingletonTrait` in `Modules/Xot/app/Traits/SingletonTrait.php`
 
 #### Connection Hardcoded Duplicata
-<<<<<<< HEAD
-<<<<<<< .merge_file_JIUF6d
 **Problema**: `protected $connection = 'healthcare_app';` ripetuto in tutti i modelli healthcare_app
-=======
-<<<<<<< HEAD
-**Problema**: `protected $connection = 'modulo_esempio';` ripetuto in tutti i modelli ModuloEsempio
-=======
-**Problema**: `protected $connection = '<nome progetto>';` ripetuto in tutti i modelli ExternalProject
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_jGJkYm
-=======
-**Problema**: `protected $connection = 'healthcare_app';` ripetuto in tutti i modelli healthcare_app
-**Problema**: `protected $connection = 'modulo_esempio';` ripetuto in tutti i modelli ModuloEsempio
->>>>>>> origin/dev
 **Soluzione**: Centralizzare in BaseModel o configurazione
 
 ### 2. Violazioni SOLID
 
 #### Single Responsibility Principle Violato
-<<<<<<< HEAD
-<<<<<<< .merge_file_JIUF6d
 **File**: `Modules/healthcare_app/app/Models/BaseModel.php`
-=======
-<<<<<<< HEAD
-**File**: `Modules/ModuloEsempio/app/Models/BaseModel.php`
-=======
-**File**: `Modules/ExternalProject/app/Models/BaseModel.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_jGJkYm
-=======
-**File**: `Modules/healthcare_app/app/Models/BaseModel.php`
-**File**: `Modules/ModuloEsempio/app/Models/BaseModel.php`
->>>>>>> origin/dev
 
 ```php
 abstract class BaseModel extends Model implements ModelContract, HasMedia
@@ -607,20 +534,8 @@ abstract class BaseUser extends Authenticatable implements
 ### 3. N+1 Query Problems
 
 #### Customer Model - Lazy Loading
-<<<<<<< HEAD
-<<<<<<< .merge_file_JIUF6d
 **File**: `Modules/healthcare_app/app/Models/Customer.php`
-=======
-<<<<<<< HEAD
-**File**: `Modules/ModuloEsempio/app/Models/Customer.php`
-=======
-**File**: `Modules/ExternalProject/app/Models/Customer.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_jGJkYm
-=======
-**File**: `Modules/healthcare_app/app/Models/Customer.php`
-**File**: `Modules/ModuloEsempio/app/Models/Customer.php`
->>>>>>> origin/dev
 
 ```php
 public function surveyPdfsActive()
@@ -633,20 +548,8 @@ public function surveyPdfsActive()
 **Soluzione**: Usare query builder o eager loading
 
 #### AlertWidget - Query Complessa
-<<<<<<< HEAD
-<<<<<<< .merge_file_JIUF6d
 **File**: `Modules/healthcare_app/app/Filament/Widgets/AlertWidget.php`
-=======
-<<<<<<< HEAD
-**File**: `Modules/ModuloEsempio/app/Filament/Widgets/AlertWidget.php`
-=======
-**File**: `Modules/ExternalProject/app/Filament/Widgets/AlertWidget.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_jGJkYm
-=======
-**File**: `Modules/healthcare_app/app/Filament/Widgets/AlertWidget.php`
-**File**: `Modules/ModuloEsempio/app/Filament/Widgets/AlertWidget.php`
->>>>>>> origin/dev
 
 ```php
 return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
@@ -669,20 +572,8 @@ return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
 ### 4. Violazioni KISS - Complessità Eccessiva
 
 #### QuestionChart Model - Metodi Complessi
-<<<<<<< HEAD
-<<<<<<< .merge_file_JIUF6d
 **File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
-=======
-<<<<<<< HEAD
-**File**: `Modules/ModuloEsempio/app/Models/QuestionChart.php`
-=======
-**File**: `Modules/ExternalProject/app/Models/QuestionChart.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_jGJkYm
-=======
-**File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
-**File**: `Modules/ModuloEsempio/app/Models/QuestionChart.php`
->>>>>>> origin/dev
 
 ```php
 public function participants(): CustomRelation
@@ -709,20 +600,8 @@ public function participants(): CustomRelation
 ### 5. Gestione Errori Inadeguata
 
 #### SendInviteAction - Catch Vuoti
-<<<<<<< HEAD
-<<<<<<< .merge_file_JIUF6d
 **File**: `Modules/healthcare_app/app/Actions/SendInviteAction.php`
-=======
-<<<<<<< HEAD
-**File**: `Modules/ModuloEsempio/app/Actions/SendInviteAction.php`
-=======
-**File**: `Modules/ExternalProject/app/Actions/SendInviteAction.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_jGJkYm
-=======
-**File**: `Modules/healthcare_app/app/Actions/SendInviteAction.php`
-**File**: `Modules/ModuloEsempio/app/Actions/SendInviteAction.php`
->>>>>>> origin/dev
 
 ```php
 try {
@@ -742,20 +621,8 @@ try {
 ### 1. Filament Resources - Pattern Duplicati
 
 #### Schema Duplicato
-<<<<<<< HEAD
-<<<<<<< .merge_file_JIUF6d
 **File**: `Modules/healthcare_app/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
-=======
-<<<<<<< HEAD
-**File**: `Modules/ModuloEsempio/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
-=======
-**File**: `Modules/ExternalProject/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_jGJkYm
-=======
-**File**: `Modules/healthcare_app/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
-**File**: `Modules/ModuloEsempio/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
->>>>>>> origin/dev
 
 ```php
 // ContactResource.php
@@ -804,30 +671,10 @@ public function customer(): HasOneThrough
 **File**: Tutti i ServiceProvider dei moduli
 
 ```php
-<<<<<<< HEAD
-<<<<<<< .merge_file_JIUF6d
 class healthcare_appServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'healthcare_app';
-=======
-<<<<<<< HEAD
-class ModuloEsempioServiceProvider extends XotBaseServiceProvider
-{
-    public string $name = 'ModuloEsempio';
-=======
-class ExternalProjectServiceProvider extends XotBaseServiceProvider
-{
-    public string $name = 'ExternalProject';
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_jGJkYm
-=======
-class healthcare_appServiceProvider extends XotBaseServiceProvider
-{
-    public string $name = 'healthcare_app';
-class ModuloEsempioServiceProvider extends XotBaseServiceProvider
-{
-    public string $name = 'ModuloEsempio';
->>>>>>> origin/dev
 
     protected string $module_dir = __DIR__;
     protected string $module_ns = __NAMESPACE__;
@@ -927,20 +774,8 @@ trait SingletonTrait
 ```
 
 #### B. Separare BaseModel Responsibilities
-<<<<<<< HEAD
-<<<<<<< .merge_file_JIUF6d
 **File**: `Modules/healthcare_app/app/Models/BaseModel.php`
-=======
-<<<<<<< HEAD
-**File**: `Modules/ModuloEsempio/app/Models/BaseModel.php`
-=======
-**File**: `Modules/ExternalProject/app/Models/BaseModel.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_jGJkYm
-=======
-**File**: `Modules/healthcare_app/app/Models/BaseModel.php`
-**File**: `Modules/ModuloEsempio/app/Models/BaseModel.php`
->>>>>>> origin/dev
 ```php
 abstract class BaseModel extends Model implements ModelContract
 {
@@ -953,20 +788,8 @@ abstract class BaseModel extends Model implements ModelContract
 ```
 
 #### C. Implementare Repository Pattern
-<<<<<<< HEAD
-<<<<<<< .merge_file_JIUF6d
 **File**: `Modules/healthcare_app/app/Repositories/SurveyFlipResponseRepository.php`
-=======
-<<<<<<< HEAD
-**File**: `Modules/ModuloEsempio/app/Repositories/SurveyFlipResponseRepository.php`
-=======
-**File**: `Modules/ExternalProject/app/Repositories/SurveyFlipResponseRepository.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_jGJkYm
-=======
-**File**: `Modules/healthcare_app/app/Repositories/SurveyFlipResponseRepository.php`
-**File**: `Modules/ModuloEsempio/app/Repositories/SurveyFlipResponseRepository.php`
->>>>>>> origin/dev
 ```php
 class SurveyFlipResponseRepository
 {
@@ -1027,23 +850,14 @@ try {
 
 #### B. Configuration Centralization
 ```php
-<<<<<<< HEAD
-<<<<<<< .merge_file_JIUF6d
-=======
->>>>>>> origin/dev
 // config/healthcare_app.php
 return [
     'database' => [
         'connection' => env('healthcare_app_DB_CONNECTION', 'healthcare_app'),
-<<<<<<< HEAD
-=======
 // config/modulo_esempio.php
 return [
     'database' => [
         'connection' => env('PTVX_DB_CONNECTION', 'modulo_esempio'),
->>>>>>> .merge_file_jGJkYm
-=======
->>>>>>> origin/dev
     ],
     'limesurvey' => [
         'api' => [

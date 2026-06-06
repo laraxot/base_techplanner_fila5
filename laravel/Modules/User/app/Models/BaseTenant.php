@@ -26,15 +26,9 @@ use Spatie\Sluggable\SlugOptions;
  * @method static Builder|Tenant query()
  *
  * @property EloquentCollection<int, Model&UserContract> $members
-<<<<<<< HEAD
- * @property int|null                                    $members_count
- * @property ProfileContract|null                        $creator
- * @property ProfileContract|null                        $updater
-=======
- * @property int|null $members_count
+* @property int|null $members_count
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
->>>>>>> origin/dev
  *
  * @mixin \Eloquent
  */
@@ -43,15 +37,7 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     use HasSlug;
     use InteractsWithMedia;
 
-<<<<<<< HEAD
-    /** @var bool */
-    public $incrementing = false;
-
-    /** @var string */
-=======
-    public $incrementing = false;
-
->>>>>>> origin/dev
+public $incrementing = false;
     protected $keyType = 'string';
 
     /** @var list<string> */

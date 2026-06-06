@@ -5,68 +5,9 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 use Filament\Actions\Action;
-<<<<<<< HEAD
-=======
 use Filament\Actions\ActionGroup;
->>>>>>> origin/dev
-use Filament\Tables\Columns\Column;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Filters\BaseFilter;
-use Modules\User\Filament\Actions\ChangePasswordAction;
-use Modules\User\Filament\Resources\UserResource;
-use Modules\Xot\Filament\Actions\Header\ExportXlsAction;
-use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-
-abstract class BaseListUsers extends XotBaseListRecords
-{
-    protected static string $resource = UserResource::class;
-
-    /**
-     * Get table columns for user records.
-     *
-     * @return array<string, Column>
-     */
-    #[\Override]
-    public function getTableColumns(): array
-    {
-        return [
-            'name' => TextColumn::make('name')->searchable(),
-            'email' => TextColumn::make('email')->searchable(),
-        ];
-    }
-
-    /**
-     * Get table filters for user records.
-     *
-     * @return array<BaseFilter>
-     */
-    #[\Override]
-    public function getTableFilters(): array
-    {
-        return [
-            // Filtri disabilitati per ora, abilitare se necessario
-            /*
-             * Filter::make('verified')
-             * ->query(static fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
-             * Filter::make('unverified')
-             * ->query(static fn (Builder $query): Builder => $query->whereNull('email_verified_at')),
-             */
-        ];
-    }
-
-    /**
-     * Get table actions for user records.
-     *
-<<<<<<< HEAD
-     * @return array<string, Action|\Filament\Actions\ActionGroup>
-     *
-     * @phpstan-ignore-next-line
-     */
-    /** @phpstan-ignore-next-line */
-=======
      * @return array<string, Action|ActionGroup>
      */
->>>>>>> origin/dev
     #[\Override]
     public function getTableActions(): array
     {
@@ -87,10 +28,7 @@ abstract class BaseListUsers extends XotBaseListRecords
          * ->icon('heroicon-o-trash')
          * ->action(static fn (UserContract $user) => $user->delete());
          */
-<<<<<<< HEAD
-        /* @phpstan-ignore-next-line */
-=======
->>>>>>> origin/dev
+/* @phpstan-ignore-next-line */
     }
 
     /**

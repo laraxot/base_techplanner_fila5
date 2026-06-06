@@ -65,8 +65,4 @@
             </div>
         </div>
     </main>
-<<<<<<< HEAD
 </div>
-=======
-</div>
->>>>>>> origin/dev

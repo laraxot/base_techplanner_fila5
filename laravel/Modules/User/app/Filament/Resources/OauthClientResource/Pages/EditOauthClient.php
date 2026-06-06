@@ -5,30 +5,8 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\OauthClientResource\Pages;
 
 use Filament\Actions\Action;
-<<<<<<< HEAD
-=======
 use Filament\Actions\ActionGroup;
->>>>>>> origin/dev
-use Modules\User\Actions\Passport\RevokeClientAction;
-use Modules\User\Filament\Resources\OauthClientResource;
-use Modules\User\Models\OauthClient;
-use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
-
-/**
- * Edit OAuth Client page.
- */
-class EditOauthClient extends XotBaseEditRecord
-{
-    protected static string $resource = OauthClientResource::class;
-
-    /**
-     * Get the header actions.
-     *
-<<<<<<< HEAD
-     * @return array<string, Action|\Filament\Actions\ActionGroup>
-=======
      * @return array<string, Action|ActionGroup>
->>>>>>> origin/dev
      */
     protected function getHeaderActions(): array
     {
@@ -37,11 +15,7 @@ class EditOauthClient extends XotBaseEditRecord
         /** @var OauthClient|null $record */
         $record = $this->record;
 
-<<<<<<< HEAD
-        if (null !== $record && ! $record->revoked) {
-=======
-        if ($record !== null && ! $record->revoked) {
->>>>>>> origin/dev
+if ($record !== null && ! $record->revoked) {
             $actions['revoke'] = Action::make('revoke')
                 ->label(__('user::actions.oauth.revoke_client.label'))
                 ->icon('heroicon-o-x-circle')

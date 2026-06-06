@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 https://github.com/tecnickcom/TCPDF
 
 simplesoftwareio/simple-qrcode  
@@ -6,12 +5,3 @@ https://laravel-news.com/package/simplesoftwareio-simple-qrcode
 
 
 https://github.com/giauphan/laravel-qr-code
-=======
----
-module: theme
-topic: qrcode
-canonical: ../../../Themes/docs/shared-components/qrcode.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/qrcode.md
->>>>>>> origin/dev

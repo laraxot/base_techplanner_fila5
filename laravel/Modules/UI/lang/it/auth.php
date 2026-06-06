@@ -29,13 +29,10 @@ return [
         'confirm_password' => 'Conferma Password',
         'save' => 'Salva',
         'update' => 'Aggiorna',
-<<<<<<< HEAD
-=======
         'services' => 'I miei servizi',
         'practices' => 'Le mie pratiche',
         'notifications' => 'Notifiche',
         'logout' => 'Esci',
->>>>>>> origin/dev
     ],
     'user_dropdown' => [
         'manage_account' => 'Gestione Account',

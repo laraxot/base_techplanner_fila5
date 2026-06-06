@@ -2,54 +2,22 @@
 
 ## Caching
 ```txt
-<<<<<<< HEAD
-<<<<<<< .merge_file_LIbdU1
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/cache.txt}
-=======
-${cat /mnt/f/var/www/ptvx/laravel/Modules/Xot/_docs/cache.txt}
->>>>>>> .merge_file_mUmJod
-=======
-${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/cache.txt}
->>>>>>> origin/dev
 ```
 
 ## Speed Optimization
 ```txt
-<<<<<<< HEAD
-<<<<<<< .merge_file_LIbdU1
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/speed_up.txt}
-=======
-${cat /mnt/f/var/www/ptvx/laravel/Modules/Xot/_docs/speed_up.txt}
->>>>>>> .merge_file_mUmJod
-=======
-${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/speed_up.txt}
->>>>>>> origin/dev
 ```
 
 ## Lazy Loading
 ```txt
-<<<<<<< HEAD
-<<<<<<< .merge_file_LIbdU1
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/_lazy.txt}
-=======
-${cat /mnt/f/var/www/ptvx/laravel/Modules/Xot/_docs/_lazy.txt}
->>>>>>> .merge_file_mUmJod
-=======
-${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/_lazy.txt}
->>>>>>> origin/dev
 ```
 
 ## Performance Tips
 ```txt
-<<<<<<< HEAD
-<<<<<<< .merge_file_LIbdU1
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/_performance.txt}
-=======
-${cat /mnt/f/var/www/ptvx/laravel/Modules/Xot/_docs/_performance.txt}
->>>>>>> .merge_file_mUmJod
-=======
-${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/_performance.txt}
->>>>>>> origin/dev
 ```
 ### Versione HEAD
 

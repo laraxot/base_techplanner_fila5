@@ -7,9 +7,6 @@ namespace Modules\User\Database\Seeders;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-<<<<<<< HEAD
-use Illuminate\Database\Seeder;
-=======
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Seeder;
 use Modules\User\Database\Factories\AuthenticationLogFactory;
@@ -17,7 +14,6 @@ use Modules\User\Database\Factories\DeviceFactory;
 use Modules\User\Database\Factories\ProfileFactory;
 use Modules\User\Database\Factories\SocialProviderFactory;
 use Modules\User\Database\Factories\UserFactory;
->>>>>>> origin/dev
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Device;
 use Modules\User\Models\Permission;
@@ -211,27 +207,16 @@ class UserMassSeeder extends Seeder
         $this->info('Creazione utenti con profili completi...');
 
         // Crea 200 utenti generici
-<<<<<<< HEAD
-        $userFactory = \Modules\User\Database\Factories\UserFactory::new();
-        /** @var \Illuminate\Database\Eloquent\Collection<int, User> $users */
-=======
-        $userFactory = UserFactory::new();
+$userFactory = UserFactory::new();
         /** @var Collection<int, User> $users */
->>>>>>> origin/dev
         $users = $userFactory->count(200)->create([
             'email_verified_at' => Carbon::now(),
             'created_at' => Carbon::now()->subDays(rand(1, 365)),
         ]);
 
         // Crea profili per tutti gli utenti
-<<<<<<< HEAD
-        $profileFactory = \Modules\User\Database\Factories\ProfileFactory::new();
+$profileFactory = ProfileFactory::new();
         foreach ($users as $user) {
-            // @phpstan-ignore-next-line
-=======
-        $profileFactory = ProfileFactory::new();
-        foreach ($users as $user) {
->>>>>>> origin/dev
             $profileFactory->create([
                 'user_id' => $user->id,
                 'created_at' => $user->created_at,
@@ -240,11 +225,7 @@ class UserMassSeeder extends Seeder
         }
 
         // Assegna ruoli casuali
-<<<<<<< HEAD
-        /** @var \Illuminate\Database\Eloquent\Collection<int, \Spatie\Permission\Models\Role> $roles */
-=======
-        /** @var Collection<int, \Spatie\Permission\Models\Role> $roles */
->>>>>>> origin/dev
+/** @var Collection<int, \Spatie\Permission\Models\Role> $roles */
         $roles = Role::all();
         foreach ($users as $user) {
             $randomRole = $roles->random();
@@ -262,13 +243,8 @@ class UserMassSeeder extends Seeder
         $this->info('Creazione log di autenticazione...');
 
         // Crea 1000 log di autenticazione
-<<<<<<< HEAD
-        $logFactory = \Modules\User\Database\Factories\AuthenticationLogFactory::new();
-        /** @var \Illuminate\Database\Eloquent\Collection<int, AuthenticationLog> $logs */
-=======
-        $logFactory = AuthenticationLogFactory::new();
+$logFactory = AuthenticationLogFactory::new();
         /** @var Collection<int, AuthenticationLog> $logs */
->>>>>>> origin/dev
         $logs = $logFactory->count(1000)->create([
             'created_at' => Carbon::now()->subDays(rand(1, 30)),
         ]);
@@ -284,13 +260,8 @@ class UserMassSeeder extends Seeder
         $this->info('Creazione dispositivi utente...');
 
         // Crea 500 dispositivi
-<<<<<<< HEAD
-        $deviceFactory = \Modules\User\Database\Factories\DeviceFactory::new();
-        /** @var \Illuminate\Database\Eloquent\Collection<int, Device> $devices */
-=======
-        $deviceFactory = DeviceFactory::new();
+$deviceFactory = DeviceFactory::new();
         /** @var Collection<int, Device> $devices */
->>>>>>> origin/dev
         $devices = $deviceFactory->count(500)
             ->create([
                 'created_at' => Carbon::now()->subDays(rand(1, 90)),
@@ -307,13 +278,8 @@ class UserMassSeeder extends Seeder
         $this->info('Creazione provider social...');
 
         // Crea 100 provider social
-<<<<<<< HEAD
-        $providerFactory = \Modules\User\Database\Factories\SocialProviderFactory::new();
-        /** @var \Illuminate\Database\Eloquent\Collection<int, SocialProvider> $providers */
-=======
-        $providerFactory = SocialProviderFactory::new();
+$providerFactory = SocialProviderFactory::new();
         /** @var Collection<int, SocialProvider> $providers */
->>>>>>> origin/dev
         $providers = $providerFactory->count(100)->create([
             'created_at' => Carbon::now()->subDays(rand(1, 180)),
         ]);

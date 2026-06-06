@@ -8,35 +8,15 @@
 
 ## Panoramica
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Questo documento descrive come implementare nell'header di Laraxot:
-=======
-Questo documento descrive come implementare nell'header di healthcare_app:
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-Questo documento descrive come implementare nell'header di healthcare_app:
->>>>>>> origin/dev
 1. Un selettore di lingua
 2. Un dropdown con l'avatar dell'utente contenente il link di logout
 
 ## Struttura Attuale dell'Header
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 L'header di Laraxot è gestito tramite:
 - **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
 - **Configurazione JSON**: `/config/local/ptvx/database/content/sections/1.json`
-=======
-L'header di healthcare_app è gestito tramite:
-- **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
-- **Configurazione JSON**: `/config/local/healthcare_app/database/content/sections/1.json`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-L'header di healthcare_app è gestito tramite:
-- **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
-- **Configurazione JSON**: `/config/local/healthcare_app/database/content/sections/1.json`
->>>>>>> origin/dev
 
 Il componente header legge i blocchi dal file JSON e li renderizza in base alla lingua corrente. Attualmente l'header contiene:
 - Un logo
@@ -226,15 +206,7 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "pub_theme::components.blocks.logo",
                     "src": "patient::images/logo.svg",
-<<<<<<< HEAD
-<<<<<<< HEAD
                     "alt": "Logo Laraxot",
-=======
-                    "alt": "Logo healthcare_app",
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-                    "alt": "Logo healthcare_app",
->>>>>>> origin/dev
                     "width": 150,
                     "height": 32
                 }
@@ -308,15 +280,7 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "pub_theme::components.blocks.logo",
                     "src": "patient::images/logo.svg",
-<<<<<<< HEAD
-<<<<<<< HEAD
                     "alt": "Laraxot Logo",
-=======
-                    "alt": "healthcare_app Logo",
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-                    "alt": "healthcare_app Logo",
->>>>>>> origin/dev
                     "width": 150,
                     "height": 32
                 }

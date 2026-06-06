@@ -4,24 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\User\Providers;
 
-<<<<<<< HEAD
-use Illuminate\Support\Facades\Event;
-use SocialiteProviders\Manager\ServiceProvider as BaseSocialiteServiceProvider;
-use SocialiteProviders\Manager\SocialiteWasCalled;
-=======
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Event;
 use SocialiteProviders\Manager\ServiceProvider as BaseSocialiteServiceProvider;
 use SocialiteProviders\Manager\SocialiteWasCalled;
 use SocialiteProviders\Microsoft\Provider;
->>>>>>> origin/dev
 
 class SocialiteServiceProvider extends BaseSocialiteServiceProvider
 {
     /**
-<<<<<<< HEAD
-=======
-     * Register the provider services.
+* Register the provider services.
      */
     public function register(): void
     {
@@ -32,19 +24,6 @@ class SocialiteServiceProvider extends BaseSocialiteServiceProvider
     }
 
     /**
->>>>>>> origin/dev
-     * Bootstrap the provider services.
-     */
-    public function boot(): void
-    {
-        parent::boot();
-
-        Event::listen(function (SocialiteWasCalled $event): void {
-<<<<<<< HEAD
-            $event->extendSocialite('microsoft', \SocialiteProviders\Microsoft\Provider::class);
-        });
-    }
-=======
             $event->extendSocialite('microsoft', Provider::class);
         });
     }
@@ -76,5 +55,4 @@ class SocialiteServiceProvider extends BaseSocialiteServiceProvider
             Config::set("services.{$provider}", array_merge($existingConfig, $settings));
         }
     }
->>>>>>> origin/dev
 }

@@ -3,25 +3,7 @@
 {{-- Conforme AGID Bootstrap Italia + Filament 4.x --}}
 
 <x-filament-widgets::widget>
-<<<<<<< HEAD
-    <x-filament::section>
-        <div class="space-y-6">
-            {{-- Header del form --}}
-            <div class="text-center mb-6">
-                <h2 class="text-2xl font-bold text-italia-gray-900 dark:text-white">
-                    {{ __('user::auth.login.title') }}
-                </h2>
-                <p class="mt-2 text-sm text-italia-gray-600 dark:text-gray-400">
-                    {{ __('user::auth.login.subtitle') }}
-                </p>
-            </div>
-            {{-- Form renderizzato dal widget Filament 4 --}}
-            <form wire:submit="login" class="space-y-6">
-                {{ $this->form }}
-
-                {{-- Submit Button AGID Style --}}
-=======
-    <x-filament::section class="rounded-none border-0 shadow-none">
+<x-filament::section class="rounded-none border-0 shadow-none">
         <div class="space-y-6 p-5 sm:p-7">
             @php
                 $loginError = $errors->first('data.email') ?: $errors->first('email');
@@ -67,17 +49,11 @@
                 ])>
                     {{ $this->form }}
                 </div>
-
->>>>>>> origin/dev
                 <div class="mt-6">
                     <button 
                         type="submit" 
                         wire:loading.attr="disabled"
-<<<<<<< HEAD
-                        class="w-full flex justify-center items-center gap-2 py-3 px-4 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
-=======
-                        class="w-full inline-flex justify-center items-center gap-2 rounded-md bg-primary-700 px-4 py-3 text-sm font-semibold text-white transition hover:bg-primary-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
->>>>>>> origin/dev
+class="w-full inline-flex justify-center items-center gap-2 rounded-md bg-primary-700 px-4 py-3 text-sm font-semibold text-white transition hover:bg-primary-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         <svg wire:loading class="animate-spin h-5 w-5" fill="none" viewBox="0 0 24 24">
                             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -88,40 +64,22 @@
                 </div>
             </form>
 
-<<<<<<< HEAD
-            {{-- Links AGID Style --}}
-            <div class="mt-6 space-y-4 text-center text-sm">
-                <p class="text-italia-gray-600 dark:text-gray-400">
-                    {{ __('user::login.no_account') }}
-                    <a 
-                        href="{{ url('/' . app()->getLocale() . '/auth/register') }}" 
-                        class="font-medium text-primary-600 hover:text-primary-500 underline"
-=======
-            <div class="mt-2 space-y-3 text-sm">
+<div class="mt-2 space-y-3 text-sm">
                 <p class="text-slate-600">
                     {{ __('user::login.no_account') }}
                     <a 
                         href="{{ url('/' . app()->getLocale() . '/auth/register') }}" 
                         class="font-semibold text-primary-700 underline decoration-primary-700 underline-offset-2 hover:text-primary-800"
->>>>>>> origin/dev
                     >
                         {{ __('user::login.register_now') }}
                     </a>
                 </p>
                 
-<<<<<<< HEAD
-                <p class="text-italia-gray-600 dark:text-gray-400">
-                    {{ __('user::login.forgot_password_text') }}
-                    <a 
-                        href="{{ url('/' . app()->getLocale() . '/auth/password/reset') }}" 
-                        class="font-medium text-primary-600 hover:text-primary-500 underline"
-=======
-                <p class="text-slate-600">
+<p class="text-slate-600">
                     {{ __('user::login.forgot_password_text') }}
                     <a 
                         href="{{ url('/' . app()->getLocale() . '/auth/password/reset') }}" 
                         class="font-semibold text-primary-700 underline decoration-primary-700 underline-offset-2 hover:text-primary-800"
->>>>>>> origin/dev
                     >
                         {{ __('user::login.reset_it') }}
                     </a>

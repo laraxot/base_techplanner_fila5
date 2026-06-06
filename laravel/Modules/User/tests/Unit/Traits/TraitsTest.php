@@ -4,26 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Traits;
 
-<<<<<<< HEAD
-uses(\Modules\User\Tests\TestCase::class);
-
-=======
 uses(TestCase::class);
 
 use Modules\User\Tests\TestCase;
->>>>>>> origin/dev
 use Modules\User\Traits\PasswordValidationRules;
 
 test('PasswordValidationRules trait can be used', function () {
     expect(trait_exists(PasswordValidationRules::class))->toBeTrue();
 
     try {
-<<<<<<< HEAD
-        $testClass = new class {
-=======
-        $testClass = new class()
+$testClass = new class()
         {
->>>>>>> origin/dev
             use PasswordValidationRules;
         };
         // Check if the trait methods exist
@@ -35,12 +26,8 @@ test('PasswordValidationRules trait can be used', function () {
 
 test('PasswordValidationRules has expected methods', function () {
     if (trait_exists(PasswordValidationRules::class)) {
-<<<<<<< HEAD
-        $testClass = new class {
-=======
-        $testClass = new class()
+$testClass = new class()
         {
->>>>>>> origin/dev
             use PasswordValidationRules;
         };
         $hasMethod = method_exists($testClass, 'passwordRules');

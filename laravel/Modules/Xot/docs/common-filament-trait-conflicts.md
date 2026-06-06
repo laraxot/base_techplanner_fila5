@@ -902,15 +902,7 @@ foreach ($properties as $property) {
 
 **Soluzione**: Rinominato in `$filterData` e rimosso il trait
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_UgCkwf
 **File**: `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
-=======
-**File**: `/Modules/ModuloEsempio/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
->>>>>>> .merge_file_FMkf4e
-=======
-**File**: `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
->>>>>>> origin/dev
 
 ---
 
@@ -1041,12 +1033,4 @@ class MyPage extends XotBaseViewRecord
 - [Laravel Traits](https://www.php.net/manual/en/language.oop5.traits.php)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 - `/Modules/Xot/docs/FILAMENT_4_LARAXOT_RULES.md`
-<<<<<<< HEAD
-<<<<<<< .merge_file_UgCkwf
 - `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
-=======
-- `/Modules/ModuloEsempio/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
->>>>>>> .merge_file_FMkf4e
-=======
-- `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
->>>>>>> origin/dev

@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # UserFactory Advanced Integration - Modulo User & Laraxot
-=======
 # UserFactory Advanced Integration - Modulo User & healthcare_app
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-# UserFactory Advanced Integration - Modulo User & healthcare_app
->>>>>>> origin/dev
 
 ## Post Deep-Study Analysis 
 
@@ -17,15 +10,8 @@ Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integr
 ### Hierarchy Mapping
 ```
 BaseUser (User Module)
-<<<<<<< HEAD
-<<<<<<< HEAD
 ├── User (Laraxot) - STI Base + Business Logic  
-=======
 ├── User (healthcare_app) - STI Base + Business Logic  
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-├── User (healthcare_app) - STI Base + Business Logic  
->>>>>>> origin/dev
     ├── Patient (HasParent) - Healthcare Consumer
     ├── Doctor (HasParent) - Healthcare Provider  
     └── Admin (HasParent) - System Administrator
@@ -33,15 +19,8 @@ BaseUser (User Module)
 
 ### Cross-Module Compatibility Matrix
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 | BaseUser Field | Laraxot User | Business Logic | Factory Support |
-=======
 | BaseUser Field | healthcare_app User | Business Logic | Factory Support |
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-| BaseUser Field | healthcare_app User | Business Logic | Factory Support |
->>>>>>> origin/dev
 |----------------|----------------|----------------|-----------------|
 | `name` | `name` | Full name concat | ✅ Complete |
 | `email` | `email` | Authentication | ✅ Complete |
@@ -108,15 +87,8 @@ User::factory()->gdprCompliant()->create();
 // BaseUser (User Module) 
 protected $connection = 'user';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 // Laraxot User (Healthcare Domain)
-=======
 // healthcare_app User (Healthcare Domain)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-// healthcare_app User (Healthcare Domain)
->>>>>>> origin/dev
 protected $connection = 'salute_ora';
 
 // Factory automatically handles connection switching
@@ -147,15 +119,8 @@ public function test_cross_module_compatibility()
     expect($user)->toHaveProperty('password'); 
     expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
     
-<<<<<<< HEAD
-<<<<<<< HEAD
     // Laraxot domain contracts
-=======
     // healthcare_app domain contracts
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-    // healthcare_app domain contracts
->>>>>>> origin/dev
     expect($user->type)->toBeInstanceOf(UserTypeEnum::class);
     expect($user->state)->toBeInstanceOf(UserState::class);
 }
@@ -301,15 +266,8 @@ public function run(): void
 - **Reusability**: Base authentication contracts preserved
 - **Testability**: Comprehensive user scenario testing
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ### For Laraxot Module  
-=======
 ### For healthcare_app Module  
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-### For healthcare_app Module  
->>>>>>> origin/dev
 - **Domain Focus**: Healthcare-specific data generation
 - **Business Logic**: Real-world scenario testing
 - **Compliance**: GDPR and healthcare regulation support
@@ -328,23 +286,14 @@ public function run(): void
 
 ## Link Documentazione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ### Laraxot Module
 - [Advanced Improvements Analysis](../../ptvx/docs/factories/userfactory-advanced-improvements-analysis.md)
 - [Implementation Completed](../../ptvx/docs/factories/userfactory_implementation_completed.md)
 - [Model States](../../ptvx/docs/models/states.md)
-=======
-=======
->>>>>>> origin/dev
 ### healthcare_app Module
 - [Advanced Improvements Analysis](../../healthcare_app/docs/factories/userfactory-advanced-improvements-analysis.md)
 - [Implementation Completed](../../healthcare_app/docs/factories/userfactory_implementation_completed.md)
 - [Model States](../../healthcare_app/docs/models/states.md)
-<<<<<<< HEAD
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
->>>>>>> origin/dev
 
 ### User Module
 - [User Factory Integration](./user_factory_integration.md)
@@ -352,13 +301,6 @@ public function run(): void
 - [BaseUser Architecture](./parental_inheritance.md)
 
 ### Root Documentation  
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [UserFactory Laraxot Integration](../../../../../docs/userfactory_ptvx_integration.md)
-=======
 - [UserFactory healthcare_app Integration](../../../../../docs/userfactory_healthcare_app_integration.md)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-- [UserFactory healthcare_app Integration](../../../../../docs/userfactory_healthcare_app_integration.md)
->>>>>>> origin/dev
 - [Testing Standards](../../../../../docs/testing_standards.md) 

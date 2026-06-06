@@ -14,16 +14,8 @@ use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Traits\HasXotForm;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
-<<<<<<< HEAD
-use Override;
-
-/**
- * ---.
-=======
-
 /**
  * Base page for Filament related-record managers.
->>>>>>> origin/dev
  */
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
@@ -31,63 +23,18 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     use HasXotTable;
     use NavigationLabelTrait;
 
-<<<<<<< HEAD
-    // protected static string $resource;
-    protected static string $recordTitleAttribute = 'name';
-
-    /**
-     * Restituisce il gruppo di navigazione (override opzionale).
-     */
-=======
-    protected static string $recordTitleAttribute = 'name';
-
->>>>>>> origin/dev
+protected static string $recordTitleAttribute = 'name';
     public static function getNavigationGroup(): string
     {
         return '';
     }
 
-<<<<<<< HEAD
-    /**
-     * Restituisce il titolo della pagina.
-     */
-=======
->>>>>>> origin/dev
-    public function getTitle(): string
-    {
-        return static::transFunc(__FUNCTION__).' - '.$this->getRecordTitle();
-    }
-
-    public function getRecordTitle(): string
-    {
-        $value = $this->record->{static::$recordTitleAttribute};
-
-        return (string) $value;
-    }
-
-<<<<<<< HEAD
-    /**
-     * Configura lo schema per i record correlati.
-     */
-    public function schema(Schema $schema): Schema
-    {
-        // getFormSchema() sempre ritorna array per definizione
-        $formSchema = $this->getFormSchema();
-
-        return $schema->components($formSchema);
-    }
-
-    /**
-     * Restituisce lo schema del form per i record correlati.
-     *
-=======
-    public function schema(Schema $schema): Schema
+public function schema(Schema $schema): Schema
     {
         return $schema->components($this->getFormSchema());
     }
 
     /**
->>>>>>> origin/dev
      * @return array<Component>
      */
     public function getFormSchema(): array
@@ -95,24 +42,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
         return [];
     }
 
-<<<<<<< HEAD
-    /**
-     * Restituisce l'heading della tabella.
-     * Override esplicito per compatibilità con Filament 5.2 (Htmlable|string|null).
-     */
-=======
->>>>>>> origin/dev
-    protected function getTableHeading(): Htmlable|string|null
-    {
-        return $this->getTableHeadingFromTrait();
-    }
 
-<<<<<<< HEAD
-    /**
-     * Chiamata interna per getTableHeading (evita ricorsione con HasXotTable).
-     */
-=======
->>>>>>> origin/dev
     private function getTableHeadingFromTrait(): ?string
     {
         $key = static::getKeyTrans('table.heading');
@@ -122,37 +52,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     }
 
     /**
-<<<<<<< HEAD
-     * Definisce le colonne della tabella per la visualizzazione dei record correlati.
-     * Questo metodo può essere sovrascritto nelle classi figlie.
-     *
-=======
->>>>>>> origin/dev
-     * @return array<string, TextColumn>
-     */
-    #[\Override]
-    protected function getTableColumns(): array
-    {
-        return [
-            'id' => TextColumn::make('id')->label('ID')->sortable(),
-            'name' => TextColumn::make('name')
-                ->label('Nome')
-                ->searchable()
-                ->sortable(),
-            'created_at' => TextColumn::make('created_at')
-                ->label('Data Creazione')
-                ->dateTime('d/m/Y H:i')
-                ->sortable(),
-        ];
-    }
 
-    /**
-<<<<<<< HEAD
-     * Definisce le azioni dell'intestazione della tabella.
-     * Questo metodo può essere sovrascritto nelle classi figlie.
-     *
-=======
->>>>>>> origin/dev
      * @return array<string, Action>
      */
     protected function getTableHeaderActions(): array
@@ -163,12 +63,9 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     }
 
     /**
-<<<<<<< HEAD
-     * Definisce le azioni per ogni riga della tabella.
+* Definisce le azioni per ogni riga della tabella.
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
-=======
->>>>>>> origin/dev
      * @return array<string, Action>
      */
     protected function getTableActions(): array

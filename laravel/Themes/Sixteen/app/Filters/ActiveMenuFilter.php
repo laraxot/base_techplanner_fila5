@@ -7,81 +7,12 @@ namespace Themes\Sixteen\Filters;
 use Illuminate\Support\Facades\Request;
 use Themes\Sixteen\Contracts\MenuFilterInterface;
 
-<<<<<<< HEAD
-=======
 use function Safe\parse_url;
 use function Safe\preg_match;
 
->>>>>>> origin/dev
-/**
- * Filtro menu per determinare elementi attivi
- * Marca come attivi gli elementi del menu basati sull'URL corrente
- */
-class ActiveMenuFilter implements MenuFilterInterface
-{
-    public function filter(array $item): array|false
-    {
-        // Non processare header e separatori
-        if (in_array($item['type'] ?? 'link', ['header', 'separator'])) {
-            return $item;
-        }
-
-        $item['active'] = $this->isActive($item);
-
-        // Se l'elemento ha un dropdown, controlla se qualche elemento è attivo
-        if (isset($item['dropdown']) && is_array($item['dropdown'])) {
-            $hasActiveChild = false;
-            foreach ($item['dropdown'] as $dropdownItem) {
-                if (is_array($dropdownItem) && $this->isActive($dropdownItem)) {
-                    $hasActiveChild = true;
-                    break;
-                }
-            }
-
-            if ($hasActiveChild) {
-                $item['active'] = true;
-            }
-        }
-
-        // Se l'elemento ha un megamenu, controlla se qualche elemento è attivo
-        if (isset($item['megamenu']) && is_array($item['megamenu'])) {
-            $hasActiveChild = false;
-            foreach ($item['megamenu'] as $column) {
-                if (is_array($column)) {
-                    foreach ($column as $megamenuItem) {
-                        if (is_array($megamenuItem) && $this->isActive($megamenuItem)) {
-                            $hasActiveChild = true;
-                            break 2;
-                        }
-                    }
-                }
-            }
-
-            if ($hasActiveChild) {
-                $item['active'] = true;
-            }
-        }
-
-        return $item;
-    }
-
-    /**
-     * Determina se un elemento del menu è attivo
-     */
-    protected function isActive(array $item): bool
-    {
-        $currentPath = Request::path();
-        $currentUrl = Request::url();
-
-        // Se ha un array di URL attivi personalizzato
-        if (isset($item['active_urls']) && is_array($item['active_urls'])) {
-            foreach ($item['active_urls'] as $activeUrl) {
-<<<<<<< HEAD
-=======
                 if (! is_string($activeUrl)) {
                     continue;
                 }
->>>>>>> origin/dev
                 if ($this->matchesPattern($currentPath, $activeUrl) ||
                     $this->matchesPattern($currentUrl, $activeUrl)) {
                     return true;
@@ -101,12 +32,7 @@ class ActiveMenuFilter implements MenuFilterInterface
 
         $itemUrl = $item['url'];
 
-<<<<<<< HEAD
-        // Rimuovi il domain per confronto
-        if (str_starts_with($itemUrl, 'http')) {
-            $itemUrl = parse_url($itemUrl, PHP_URL_PATH) ?: '/';
-=======
-        if (! is_string($itemUrl)) {
+if (! is_string($itemUrl)) {
             return false;
         }
 
@@ -114,7 +40,6 @@ class ActiveMenuFilter implements MenuFilterInterface
         if (str_starts_with($itemUrl, 'http')) {
             $parsedUrl = parse_url($itemUrl, PHP_URL_PATH);
             $itemUrl = is_string($parsedUrl) && $parsedUrl !== '' ? $parsedUrl : '/';
->>>>>>> origin/dev
         }
 
         // Normalizza gli URL
@@ -137,11 +62,7 @@ class ActiveMenuFilter implements MenuFilterInterface
         }
 
         // Sub-path match (l'URL corrente è sotto l'URL dell'elemento)
-<<<<<<< HEAD
-        if ($itemPath !== '' && str_starts_with($currentPath.'/', $itemPath.'/')) {
-=======
-        if (str_starts_with($currentPath.'/', $itemPath.'/')) {
->>>>>>> origin/dev
+if (str_starts_with($currentPath.'/', $itemPath.'/')) {
             return true;
         }
 

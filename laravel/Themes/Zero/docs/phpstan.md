@@ -38,11 +38,7 @@ phpstan*.json
 ## Esecuzione Analisi
 
 ```bash
-<<<<<<< HEAD
 cd /var/www/_bases/base_ptvx_fila5_mono/laravel
-=======
-cd ./laravel
->>>>>>> origin/dev
 ./vendor/bin/phpstan analyse --level=10
 ```
 

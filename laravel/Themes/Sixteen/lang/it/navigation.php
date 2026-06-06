@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 return [
     'main' => 'Navigazione principale',
-<<<<<<< HEAD
-    'site_title' => '<nome progetto>',
-=======
-    'site_title' => 'Il mio Comune',
->>>>>>> origin/dev
+'site_title' => 'Il mio Comune',
     'home' => 'Home',
     'about' => 'Chi siamo',
     'contact' => 'Contatti',
@@ -16,8 +12,6 @@ return [
     'portfolio' => 'Portfolio',
     'news' => 'Notizie',
     'blog' => 'Blog',
-<<<<<<< HEAD
-=======
 
     // Homepage sections
     'homepage' => [
@@ -57,5 +51,4 @@ return [
         'report_issue' => 'Segnala disservizio',
         'maybe_searching' => 'Forse stavi cercando',
     ],
->>>>>>> origin/dev
 ];

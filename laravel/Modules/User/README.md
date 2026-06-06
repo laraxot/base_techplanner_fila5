@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # User Module
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -126,14 +125,7 @@ $user->tenants()->attach($tenant);
 User ──> Tenant     (multi-tenancy, isolamento dati)
 User ──> Activity   (audit trail login/logout/CRUD)
 User ──> Notify     (welcome email, reset password, OTP)
-<<<<<<< .merge_file_wPAwQO
 User ──> healthcare_app    (proprietari survey, accesso dashboard)
-=======
-<<<<<<< HEAD
-User ──> ExternalProject    (proprietari survey, accesso dashboard)
-=======
-User ──> ModuloEsempio    (proprietari survey, accesso dashboard)
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_wNthoA
 User ──> Meetup     (organizzatori, partecipanti eventi)
 User ──> Gdpr       (consensi, profilo privacy)
@@ -174,61 +166,3 @@ php artisan tinker
 **Quality**: PHPStan Level 10, 42 modelli tipizzati
 
 *Autenticazione, autorizzazione e organizzazione utenti: dal login all'RBAC, dal team al tenant.*
-=======
-# 👤 User
-
-[![Domain-Auth](https://img.shields.io/badge/Domain-Auth%20%26%20Teams-1565C0.svg)](#)
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
-[![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
-[![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
-[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
-[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
-[![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
-[![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
-
-> **Chi entra, cosa può fare, su quale team.** Auth AGID-ready, ruoli Spatie, profili — senza compromessi sicurezza.
-
----
-
-## Perché esiste
-
-Identità e autorizzazione per cittadini, operatori e multi-tenant.
-
-## Superpoteri
-
-- Login widget Filament + Folio/Volt
-- Ruoli e permessi Spatie
-- Team, inviti, profilo
-- Integrazione GDPR e activity log
-
-## Certificazioni
-
-| Certificazione | Stato |
-|----------------|-------|
-| PHPStan livello 10 | Target progetto |
-| `declare(strict_types=1)` | Su nuovo codice PHP |
-| Filament 5 + XotBase | Admin enterprise |
-| Test PHPUnit / Pest | Suite modulo |
-| Documentazione wiki | Cartella `docs/` |
-
-## Vuoi entrare nel team?
-
-Security-minded dev? Qui si definisce **chi è autorizzato** su FixCity.
-
-Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — vedi [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
-
----
-
-## Documentazione
-
-| Lingua | Link |
-|--------|------|
-| 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
-
----
-
-**Modulo** `user` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
->>>>>>> origin/dev

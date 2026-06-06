@@ -44,14 +44,11 @@ return [
             'description' => '',
         ],
     ],
-<<<<<<< HEAD
-=======
     'infolist' => [
         'record_not_available' => [
             'label' => 'Contenuto non disponibile o non visibile.',
         ],
     ],
->>>>>>> origin/dev
     'actions' => [
         'create' => [
             'label' => 'Crea Widgets',

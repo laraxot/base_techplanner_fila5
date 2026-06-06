@@ -22,13 +22,8 @@ use Parental\HasChildren;
  * @method static Builder|TeamUser newQuery()
  * @method static Builder|TeamUser query()
  *
-<<<<<<< HEAD
- * @property int         $id
- * @property string      $uuid
-=======
- * @property int $id
+* @property int $id
  * @property string $uuid
->>>>>>> origin/dev
  * @property string|null $team_id
  * @property string|null $user_id
  * @property string|null $role
@@ -78,11 +73,7 @@ abstract class BaseTeamUser extends BasePivot
     {
         $userClass = XotData::make()->getUserClass();
 
-<<<<<<< HEAD
-        /* @var BelongsTo<\Illuminate\Database\Eloquent\Model&UserContract, $this> */
-=======
-        /* @var BelongsTo<Model&UserContract, $this> */
->>>>>>> origin/dev
+/* @var BelongsTo<Model&UserContract, $this> */
         return $this->belongsTo($userClass);
     }
 
@@ -95,11 +86,7 @@ abstract class BaseTeamUser extends BasePivot
     {
         $teamClass = XotData::make()->getTeamClass();
 
-<<<<<<< HEAD
-        /* @var BelongsTo<\Illuminate\Database\Eloquent\Model&TeamContract, $this> */
-=======
-        /* @var BelongsTo<Model&TeamContract, $this> */
->>>>>>> origin/dev
+/* @var BelongsTo<Model&TeamContract, $this> */
         return $this->belongsTo($teamClass);
     }
 }

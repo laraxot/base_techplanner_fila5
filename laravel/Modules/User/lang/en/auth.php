@@ -34,17 +34,13 @@ return [
         ],
     ],
     'messages' => [
-<<<<<<< HEAD
-        'failed' => 'These credentials do not match our records.',
-=======
-        'failed' => [
+'failed' => [
             'key' => 'user::auth.messages.failed',
             'text' => 'Invalid credentials.',
             'description' => 'Error message shown when login credentials are invalid',
             'context' => 'login_form',
             'placeholder' => '',
         ],
->>>>>>> origin/dev
         'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
         'unauthorized' => 'You are not authorized to access this resource.',
     ],
@@ -110,15 +106,7 @@ return [
         'github' => 'Sign in with GitHub',
         'facebook' => 'Sign in with Facebook',
     ],
-<<<<<<< HEAD
-    'auth_button' => [
-        'login' => 'Sign in',
-        'logout' => 'Sign out',
-        'profile' => 'My profile',
-        'dashboard' => 'Dashboard',
-        'personal_area' => 'Access personal area',
-=======
-    'login' => [
+'login' => [
         'page' => [
             'meta_title' => [
                 'label' => 'Access services',
@@ -198,6 +186,5 @@ return [
             'dashboard' => 'Dashboard',
             'personal_area' => 'Access personal area',
         ],
->>>>>>> origin/dev
     ],
 ];

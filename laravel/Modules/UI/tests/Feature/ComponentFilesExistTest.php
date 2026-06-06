@@ -4,13 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\UI\Tests\Feature;
 
-<<<<<<< HEAD
-uses(\Modules\UI\Tests\TestCase::class);
-=======
 use Modules\UI\Tests\TestCase;
 
 uses(TestCase::class);
->>>>>>> origin/dev
 
 describe('Component Files Existence Tests', function (): void {
     test('reorganized component files exist in correct locations', function (): void {

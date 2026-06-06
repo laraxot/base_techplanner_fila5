@@ -19,22 +19,16 @@ Questo documento serve come indice centrale per il tema Zero, fornendo una guida
 - **Integrazione Filament**: Compatibilità completa con i componenti Filament
 
 ## Collegamenti Correlati
-<<<<<<< HEAD
-=======
 - [AI Methodologies](./ai-methodologies.md)
->>>>>>> origin/dev
 - [Documentazione Generale Progetto](../../../docs/README.md) (docs: replace project-specific references with generic placeholders across documentation)
 - [Collegamenti Documentazione](../../../docs/collegamenti-documentazione.md)
 - [Standard di Documentazione](../../../docs/DOCUMENTATION_STANDARDS.md)
 - [Modulo UI](../../Modules/UI/docs/README.md)
 - [Modulo Xot](../../Modules/Xot/docs/README.md)
 
-<<<<<<< HEAD
-=======
 ### Moduli Integrati
 - [Performance Actions Reference](./performance-actions-reference.md) - Riferimento action calcolo performance
 
->>>>>>> origin/dev
 ## Categorie Principali
 
 ### Architettura e Struttura

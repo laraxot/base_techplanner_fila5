@@ -44,8 +44,6 @@ Assert::string($url, 'URL must be a string');
 Assert::isInstanceOf($user, Authenticatable::class);
 ```
 
-<<<<<<< HEAD
-=======
 ### 4. Tipizzazione Utenti (UserContract)
 
 **In Laraxot PTVX**, non usare mai `Model|null` per riferirsi agli utenti autenticabili nei temi o nei moduli. Utilizzare sempre `Modules\Xot\Contracts\UserContract`.
@@ -62,7 +60,6 @@ public function viewAny(?UserContract $user): bool
 }
 ```
 
->>>>>>> origin/dev
 ## 🔧 Implementazioni Specifiche per Temi
 
 ### 1. Blade Components

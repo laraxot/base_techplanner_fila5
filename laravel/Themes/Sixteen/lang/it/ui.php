@@ -52,8 +52,6 @@ return [
     'menu' => 'Menu',
     'close' => 'Chiudi',
     'open' => 'Apri',
-<<<<<<< HEAD
-=======
 
     // Header
     'region_name' => 'Nome della Regione',
@@ -176,5 +174,4 @@ return [
 
     // Hero
     'highlighted_content' => 'Contenuti in evidenza',
->>>>>>> origin/dev
 ];

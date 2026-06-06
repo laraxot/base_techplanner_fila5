@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Best Practices per l'Implementazione del Logout 
 
 ## Collegamenti correlati
@@ -188,63 +187,6 @@ Il template Blade associato al componente Volt dovrebbe gestire i diversi stati 
 
 ## Chiavi di Traduzione
 
-<<<<<<< HEAD
-Le chiavi di traduzione per il processo di logout devono seguire la struttura gerarchica definita nelle best practices di Laraxot:
-=======
-Le chiavi di traduzione per il processo di logout devono seguire la struttura gerarchica definita nelle best practices di healthcare_app:
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-
-```php
-'logout' => [
-    'submit' => 'Logout',
-    'title' => 'Logout',
-    'success_title' => 'Logout effettuato',
-    'success_message' => 'Sei stato disconnesso con successo.',
-    'error_title' => 'Errore durante il logout',
-    'error_message' => 'Si è verificato un errore durante il logout. Riprova.',
-    'confirm_message' => 'Sei sicuro di voler effettuare il logout?',
-    'confirm_button' => 'Conferma logout',
-    'cancel_button' => 'Annulla',
-    'back_to_home' => 'Torna alla home',
-    'try_again' => 'Riprova',
-],
-```
-
-## Eventi di Autenticazione
-
-È importante gestire correttamente gli eventi di autenticazione durante il processo di logout:
-
-1. **auth.logout.attempting**: Inviato prima di eseguire il logout, con l'utente corrente come parametro
-2. **auth.logout.successful**: Inviato dopo che il logout è stato completato con successo
-
-Questi eventi possono essere utilizzati per eseguire azioni aggiuntive, come la registrazione del logout nei log o l'aggiornamento dello stato dell'utente.
-
-## Sicurezza
-
-Per garantire la sicurezza durante il processo di logout, è fondamentale:
-
-1. **Invalidare la Sessione**: `request()->session()->invalidate()`
-2. **Rigenerare il Token CSRF**: `request()->session()->regenerateToken()`
-3. **Utilizzare il Middleware auth**: `middleware(['auth'])`
-
-Queste misure prevengono attacchi di tipo session fixation e garantiscono che solo gli utenti autenticati possano accedere alla pagina di logout.
-
-## Integrazione con Laravel Localization
-
-Tutti i link e i reindirizzamenti devono utilizzare `LaravelLocalization::getLocalizedURL()` per mantenere il prefisso della lingua corrente:
-
-```php
-$locale = LaravelLocalization::getCurrentLocale();
-$this->redirect(LaravelLocalization::getLocalizedURL($locale, route('home')));
-```
-
-## Riferimenti
-
-- [Documentazione Laravel Authentication](https://laravel.com/docs/10.x/authentication)
-- [Documentazione Livewire Volt](https://livewire.laravel.com/docs/volt)
-- [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
-- [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
-=======
 ---
 module: theme
 topic: logout_implementation_best_practices
@@ -252,4 +194,3 @@ canonical: ../../../Themes/docs/shared-components/logout_implementation_best_pra
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout_implementation_best_practices.md
->>>>>>> origin/dev

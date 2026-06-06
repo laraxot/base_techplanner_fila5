@@ -7,15 +7,7 @@
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Panoramica
-<<<<<<< HEAD
-<<<<<<< HEAD
 Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di Laraxot.
-=======
-Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di healthcare_app.
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di healthcare_app.
->>>>>>> origin/dev
 
 ## Percorso Corretto
 Il file di logout deve essere posizionato in:
@@ -25,15 +17,7 @@ Themes/One/resources/views/pages/auth/logout.blade.php
 
 ## Approcci Raccomandati
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto Laraxot, si raccomandano i seguenti approcci per l'implementazione del logout.
-=======
-In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto healthcare_app, si raccomandano i seguenti approcci per l'implementazione del logout.
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto healthcare_app, si raccomandano i seguenti approcci per l'implementazione del logout.
->>>>>>> origin/dev
 
 ### 1. Approccio Folio con PHP puro (Raccomandato)
 
@@ -179,15 +163,7 @@ mount(function() {
 
 ## Implementazione con Componenti Filament
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Per seguire le best practices di Laraxot, utilizzare sempre i componenti Blade nativi di Filament:
-=======
-Per seguire le best practices di healthcare_app, utilizzare sempre i componenti Blade nativi di Filament:
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-Per seguire le best practices di healthcare_app, utilizzare sempre i componenti Blade nativi di Filament:
->>>>>>> origin/dev
 
 ```php
 <x-filament::button tag="a" href="{{ url('/' . $locale) }}" color="primary" class="w-full">

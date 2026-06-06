@@ -17,12 +17,7 @@ class SvgExistsAction
     /**
      * Verifica se l'SVG esiste nei set di icone registrati.
      *
-<<<<<<< HEAD
-     * @param string $svgName Il nome dell'SVG da verificare (es: 'heroicon-o-user')
-     *
-=======
-     * @param  string  $svgName  Il nome dell'SVG da verificare (es: 'heroicon-o-user')
->>>>>>> origin/dev
+* @param  string  $svgName  Il nome dell'SVG da verificare (es: 'heroicon-o-user')
      * @return bool true se l'SVG esiste, false altrimenti
      */
     public function execute(string $svgName): bool
@@ -31,8 +26,6 @@ class SvgExistsAction
             return false;
         }
 
-<<<<<<< HEAD
-=======
         // BladeUI Kit icon check: only for standard sets (heroicon-*, etc.)
         // Geo SVGs use "geo-" prefix (e.g., "geo-magnifying-glass") — served via <img> or Lit JS, not BladeUI Kit
         if (str_starts_with($svgName, 'geo-')) {
@@ -43,7 +36,6 @@ class SvgExistsAction
             return file_exists($svgPath);
         }
 
->>>>>>> origin/dev
         /** @var IconFactory $iconsFactory */
         $iconsFactory = App::make(IconFactory::class);
         try {

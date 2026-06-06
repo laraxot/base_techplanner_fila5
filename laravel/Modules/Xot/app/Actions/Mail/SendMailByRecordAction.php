@@ -18,13 +18,8 @@ class SendMailByRecordAction
     /**
      * Invia una mail utilizzando un record come dati.
      *
-<<<<<<< HEAD
-     * @param Model  $record    Il record da utilizzare come dati per la mail
-     * @param string $mailClass La classe Mailable da utilizzare
-=======
-     * @param  Model  $record  Il record da utilizzare come dati per la mail
+* @param  Model  $record  Il record da utilizzare come dati per la mail
      * @param  string  $mailClass  La classe Mailable da utilizzare
->>>>>>> origin/dev
      */
     public function execute(Model $record, string $mailClass): void
     {
@@ -50,18 +45,11 @@ class SendMailByRecordAction
         }
 
         if (! method_exists($record, 'myLogs')) {
-<<<<<<< HEAD
-            throw new \InvalidArgumentException('Model must implement myLogs method');
-        }
-
-        $to = $record->email;
-=======
-            throw new \InvalidArgumentException('Model ['.$record::class.'] must implement myLogs method');
+throw new \InvalidArgumentException('Model ['.$record::class.'] must implement myLogs method');
         }
 
         $to = $record->email;
         // $to = 'marco.sottana@gmail.com'; //4 debug non cancellare
->>>>>>> origin/dev
         $subject = $record->option('mail_oggetto');
         $bodyHtml = $record->option('mail_testo');
 

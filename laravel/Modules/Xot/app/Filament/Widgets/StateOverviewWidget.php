@@ -16,11 +16,7 @@ use Webmozart\Assert\Assert;
  * Widget per la panoramica degli appuntamenti per stato.
  * Mostra statistiche compatte degli appuntamenti raggruppati per stato.
  */
-<<<<<<< HEAD
-class StateOverviewWidget extends XotBaseWidget
-=======
 class StateOverviewWidget extends XotBaseSchemaWidget
->>>>>>> origin/dev
 {
     /**
      * Titolo del widget.
@@ -53,42 +49,7 @@ class StateOverviewWidget extends XotBaseSchemaWidget
      *
      * @return array<int|string, Component>
      */
-<<<<<<< HEAD
-    #[\Override]
-=======
->>>>>>> origin/dev
-    public function getFormSchema(): array
-    {
-        return [];
-    }
-
-    /**
-     * Dati da passare alla vista.
-     *
-     * @return array<string, mixed>
-     */
-    protected function getViewData(): array
-    {
-        return [
-            'states' => $this->getStates(),
-            // 'title' => $this->getWidgetTitle(),
-        ];
-    }
-
-    protected function getCacheKey(): string
-    {
-        try {
-            $cacheKey = 'states-'.class_basename($this->model).'-'.class_basename($this->stateClass);
-            $cacheKey = Str::slug($cacheKey);
-            $this->cacheKey = $cacheKey;
-
-            return $cacheKey;
-        } catch (\Error $e) {
-<<<<<<< HEAD
-            if ('' === $this->cacheKey) {
-=======
-            if ($this->cacheKey === '') {
->>>>>>> origin/dev
+if ($this->cacheKey === '') {
                 $this->cacheKey = Str::uuid()->toString();
             }
 

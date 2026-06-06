@@ -9,63 +9,18 @@ use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Artisan;
-<<<<<<< HEAD
-=======
 use Illuminate\Support\Facades\Config;
->>>>>>> origin/dev
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Request;
-use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
-=======
 use Webmozart\Assert\Assert;
->>>>>>> origin/dev
 
 use function Safe\define;
 use function Safe\fopen;
 use function Safe\preg_match_all;
 
-<<<<<<< HEAD
-use Webmozart\Assert\Assert;
-
-=======
->>>>>>> origin/dev
-if (! defined('STDIN')) {
-    define('STDIN', fopen('php://stdin', 'r'));
-}
-
-// ----- TODO
-// --  1) capire come far fare da chiamato non da consolle "scout:import"
-
-/**
- * Class ArtisanService.
- */
-class ArtisanService
-{
-    /**
-     * @throws FileNotFoundException
-     */
-    public static function act(string $act): string
-    {
-        // da fare anche in noconsole, e magari mettere un policy
-        $module_name = Request::input('module', '');
-        if (! is_string($module_name)) {
-            $module_name = '';
-        }
-        switch ($act) {
-            case 'migrate':
-<<<<<<< HEAD
-                DB::purge('mysql');
-                DB::reconnect('mysql');
-                if ('' !== $module_name) {
-=======
-                $defaultConn = Config::get('database.default');
+$defaultConn = Config::get('database.default');
                 $purgeConn = \is_string($defaultConn) && $defaultConn !== '' ? $defaultConn : 'mysql';
                 DB::purge($purgeConn);
                 DB::reconnect($purgeConn);
                 if ($module_name !== '') {
->>>>>>> origin/dev
                     echo '<h3>Module '.$module_name.'</h3>';
 
                     return self::exe('module:migrate '.$module_name.' --force');
@@ -158,11 +113,7 @@ class ArtisanService
             $log = '';
         }
         $content = '';
-<<<<<<< HEAD
-        if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
-=======
-        if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
->>>>>>> origin/dev
+if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
             $content = File::get(storage_path('logs/'.$log));
         }
 
@@ -175,11 +126,7 @@ class ArtisanService
         /** @var array<int, string> $urls */
         $urls = [];
         $urlsRaw = $matches[1];
-<<<<<<< HEAD
-        if ([] !== $urlsRaw) {
-=======
-        if ($urlsRaw !== []) {
->>>>>>> origin/dev
+if ($urlsRaw !== []) {
             $urls = array_values(array_unique($urlsRaw));
         }
 
@@ -238,11 +185,7 @@ class ArtisanService
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
-<<<<<<< HEAD
-            if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
-=======
-            if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
->>>>>>> origin/dev
+if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
                 // Parameter #1 $paths of static method Illuminate\Filesystem\Filesystem::delete() expects array|string, Symfony\Component\Finder\SplFileInfo given.
                 echo '<br/>'.$file->getRealPath();
 
@@ -258,11 +201,7 @@ class ArtisanService
         $files = File::files(storage_path('framework/sessions'));
 
         foreach ($files as $file) {
-<<<<<<< HEAD
-            if ('' === $file->getExtension() && false !== $file->getRealPath()) {
-=======
-            if ($file->getExtension() === '' && $file->getRealPath() !== false) {
->>>>>>> origin/dev
+if ($file->getExtension() === '' && $file->getRealPath() !== false) {
                 // echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -278,11 +217,7 @@ class ArtisanService
     {
         $files = File::files(storage_path('debugbar'));
         foreach ($files as $file) {
-<<<<<<< HEAD
-            if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
-=======
-            if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
->>>>>>> origin/dev
+if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
                 // echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -295,11 +230,7 @@ class ArtisanService
     }
 
     /**
-<<<<<<< HEAD
-     * @param array<string, mixed> $arguments
-=======
-     * @param  array<string, mixed>  $arguments
->>>>>>> origin/dev
+* @param  array<string, mixed>  $arguments
      */
     public static function exe(string $command, array $arguments = []): string
     {
@@ -309,11 +240,7 @@ class ArtisanService
             Artisan::call($command, $arguments);
 
             return $output.'[<pre>'.Artisan::output().'</pre>]'; // dato che mi carico solo le route minime menufull.delete non esiste.. impostare delle route comuni.
-<<<<<<< HEAD
-        } catch (\Exception $exception) {
-=======
-        } catch (Exception $exception) {
->>>>>>> origin/dev
+} catch (Exception $exception) {
             // throw new Exception('['.__LINE__.']['.class_basename(__CLASS__).']');
             return '[<pre>'.$exception->getMessage().'</pre>]';
 

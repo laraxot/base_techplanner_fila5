@@ -6,23 +6,7 @@ namespace Modules\User\Models\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-=======
->>>>>>> origin/dev
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\Pivot;
-use Illuminate\Support\Collection;
-use Modules\User\Contracts\TeamContract;
-use Modules\User\Models\Role;
-use Modules\User\Models\TeamUser;
-use Modules\User\Models\User;
-use Modules\Xot\Contracts\UserContract as XotUserContract;
-use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
-=======
 use Spatie\Permission\Models\Permission;
->>>>>>> origin/dev
 
 /**
  * Trait HasTeams.
@@ -30,21 +14,12 @@ use Spatie\Permission\Models\Permission;
  * Provides team functionality for User models implementing team-based organization.
  * This trait handles team ownership, membership, permissions, and relationships.
  *
-<<<<<<< HEAD
- * @property TeamContract                  $currentTeam
- * @property int|null                      $current_team_id
- * @property Collection<int, TeamContract> $teams
- * @property Collection<int, TeamContract> $ownedTeams
- * @property Collection<int, TeamUser>     $teamUsers
- * @property XotUserContract|null          $owner
-=======
- * @property TeamContract $currentTeam
+* @property TeamContract $currentTeam
  * @property int|null $current_team_id
  * @property Collection<int, TeamContract> $teams
  * @property Collection<int, TeamContract> $ownedTeams
  * @property Collection<int, TeamUser> $teamUsers
  * @property XotUserContract|null $owner
->>>>>>> origin/dev
  */
 trait HasTeams
 {
@@ -86,11 +61,7 @@ trait HasTeams
      */
     public function belongsToTeam(?TeamContract $team): bool
     {
-<<<<<<< HEAD
-        if (null === $team) {
-=======
-        if ($team === null) {
->>>>>>> origin/dev
+if ($team === null) {
             return false;
         }
 
@@ -182,19 +153,11 @@ trait HasTeams
             // Membership always extends Model, check only if user attribute exists
             $user = $membership->getAttribute('user');
 
-<<<<<<< HEAD
-            return null !== $user ? $user : null;
-        })->filter();
-
-        $owner = $this->owner;
-        if (null !== $owner && $owner instanceof User) {
-=======
-            return $user !== null ? $user : null;
+return $user !== null ? $user : null;
         })->filter();
 
         $owner = $this->owner;
         if ($owner !== null && $owner instanceof User) {
->>>>>>> origin/dev
             return $users->merge([$owner]);
         }
 
@@ -226,21 +189,13 @@ trait HasTeams
             if ($memberUser instanceof Model) {
                 $memberUserKey = $memberUser->getKey();
 
-<<<<<<< HEAD
-                return null !== $memberUserKey && $memberUserKey === $user->getKey();
-=======
-                return $memberUserKey !== null && $memberUserKey === $user->getKey();
->>>>>>> origin/dev
+return $memberUserKey !== null && $memberUserKey === $user->getKey();
             }
 
             return false;
         });
 
-<<<<<<< HEAD
-        if (null !== $userFound) {
-=======
-        if ($userFound !== null) {
->>>>>>> origin/dev
+if ($userFound !== null) {
             return true;
         }
 
@@ -279,11 +234,7 @@ trait HasTeams
 
         $teamRole = $this->teamRole($team);
 
-<<<<<<< HEAD
-        return null !== $teamRole && $teamRole->name === $role;
-=======
-        return $teamRole !== null && $teamRole->name === $role;
->>>>>>> origin/dev
+return $teamRole !== null && $teamRole->name === $role;
     }
 
     /**
@@ -293,11 +244,7 @@ trait HasTeams
     {
         $role = $this->teamRole($team);
 
-<<<<<<< HEAD
-        if (null === $role) {
-=======
-        if ($role === null) {
->>>>>>> origin/dev
+if ($role === null) {
             return 'Unknown';
         }
 
@@ -352,11 +299,7 @@ trait HasTeams
         /** @var Model|Pivot|null $teamUser */
         $teamUser = $this->teamUsers()->where('team_id', $team->id)->first();
 
-<<<<<<< HEAD
-        if (null === $teamUser) {
-=======
-        if ($teamUser === null) {
->>>>>>> origin/dev
+if ($teamUser === null) {
             return null;
         }
 
@@ -385,35 +328,22 @@ trait HasTeams
 
         // Permissions from Role
         $role = $this->teamRole($team);
-<<<<<<< HEAD
-        if (null !== $role && $role->permissions) {
-            /** @var \Illuminate\Database\Eloquent\Collection<int, \Spatie\Permission\Models\Permission> $permissionsCollection */
-=======
-        if ($role !== null && $role->permissions) {
+if ($role !== null && $role->permissions) {
             /** @var \Illuminate\Database\Eloquent\Collection<int, Permission> $permissionsCollection */
->>>>>>> origin/dev
             $permissionsCollection = $role->permissions;
             /** @var array<string> $rolePermissionNames */
             $rolePermissionNames = $permissionsCollection->pluck('name')->toArray();
 
             $permissions = array_values(array_filter(
                 $rolePermissionNames,
-<<<<<<< HEAD
-                static fn (string $value): bool => '' !== $value
-=======
-                static fn (string $value): bool => $value !== ''
->>>>>>> origin/dev
+static fn (string $value): bool => $value !== ''
             ));
         }
 
         // Permissions from Pivot
         /** @var Model|Pivot|null $teamUser */
         $teamUser = $this->teamUsers()->where('team_id', (string) $team->id)->first();
-<<<<<<< HEAD
-        if (null !== $teamUser) {
-=======
-        if ($teamUser !== null) {
->>>>>>> origin/dev
+if ($teamUser !== null) {
             $pivotPermissions = $teamUser->getAttribute('permissions');
             if (is_array($pivotPermissions)) {
                 $pivotPermissionNames = array_keys(array_filter($pivotPermissions));
@@ -422,11 +352,7 @@ trait HasTeams
                     $permissions,
                     array_values(array_filter(
                         $pivotPermissionNames,
-<<<<<<< HEAD
-                        static fn (string $value): bool => '' !== $value
-=======
-                        static fn (string $value): bool => $value !== ''
->>>>>>> origin/dev
+static fn (string $value): bool => $value !== ''
                     ))
                 );
             }
@@ -462,31 +388,19 @@ trait HasTeams
      */
     public function initializeCurrentTeam(): void
     {
-<<<<<<< HEAD
-        if (null !== $this->current_team_id) {
-=======
-        if ($this->current_team_id !== null) {
->>>>>>> origin/dev
+if ($this->current_team_id !== null) {
             return;
         }
 
         $team = $this->personalTeam();
-<<<<<<< HEAD
-        if (null === $team) {
-=======
-        if ($team === null) {
->>>>>>> origin/dev
+if ($team === null) {
             $teamCandidate = $this->allTeams()->first();
             if ($teamCandidate instanceof TeamContract) {
                 $team = $teamCandidate;
             }
         }
 
-<<<<<<< HEAD
-        if (null !== $team) {
-=======
-        if ($team !== null) {
->>>>>>> origin/dev
+if ($team !== null) {
             $this->switchTeam($team);
         }
     }
@@ -512,11 +426,7 @@ trait HasTeams
      */
     public function isCurrentTeam(TeamContract $team): bool
     {
-<<<<<<< HEAD
-        if (null === $this->currentTeam) {
-=======
-        if ($this->currentTeam === null) {
->>>>>>> origin/dev
+if ($this->currentTeam === null) {
             return false;
         }
 
@@ -528,30 +438,17 @@ trait HasTeams
      */
     public function ownsTeam(?TeamContract $team): bool
     {
-<<<<<<< HEAD
-        if (null === $team) {
-=======
-        if ($team === null) {
->>>>>>> origin/dev
+if ($team === null) {
             return false;
         }
 
         return $this->id === $team->user_id;
     }
 
-<<<<<<< HEAD
-    /**
+/*
      * Get all of the teams the user belongs to.
      *
      * @return BelongsToMany<Model&TeamContract, $this, TeamUser, 'pivot'>
-     */
-=======
-    /*
-     * Get all of the teams the user belongs to.
-     *
-     * @return BelongsToMany<Model&TeamContract, $this, TeamUser, 'pivot'>
-
->>>>>>> origin/dev
     public function teams(): BelongsToMany
     {
         $xot = XotData::make();
@@ -559,11 +456,7 @@ trait HasTeams
 
         return $this->belongsToManyX($teamClass);
     }
-<<<<<<< HEAD
-
-=======
-    */
->>>>>>> origin/dev
+*/
     /**
      * Get all of the teams that the user owns.
      */

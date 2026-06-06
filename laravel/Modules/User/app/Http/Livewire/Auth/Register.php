@@ -33,11 +33,7 @@ class Register extends Component implements HasSchemas
      *
      * @var array<string, mixed>
      */
-<<<<<<< HEAD
-    public array $data = [];
-=======
-    public $data = [];
->>>>>>> origin/dev
+public $data = [];
 
     /**
      * Mount the component.

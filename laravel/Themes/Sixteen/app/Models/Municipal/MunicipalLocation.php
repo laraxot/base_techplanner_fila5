@@ -4,13 +4,9 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\Casts\Attribute;
-=======
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Collection;
->>>>>>> origin/dev
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -24,9 +20,7 @@ use Illuminate\Support\Str;
  *
  * Rappresenta sedi, uffici, punti di erogazione servizi
  * e altre location dell'ente secondo l'ontologia AGID
-<<<<<<< HEAD
-=======
- *
+*
  * @property int $id
  * @property string $name
  * @property string|null $slug
@@ -85,14 +79,6 @@ use Illuminate\Support\Str;
  * @property-read Collection<int, OrganizationalUnit> $organizationalUnits
  * @property-read Collection<int, MunicipalService> $services
  * @property-read Collection<int, MunicipalEvent> $events
->>>>>>> origin/dev
- */
-class MunicipalLocation extends Model
-{
-    use HasFactory, SoftDeletes;
-
-<<<<<<< HEAD
-=======
     /**
      * Tipologie di location secondo AGID
      */
@@ -151,8 +137,6 @@ class MunicipalLocation extends Model
         'translation' => 'Servizi di Traduzione',
         'assistance' => 'Assistenza',
     ];
-
->>>>>>> origin/dev
     protected $table = 'sixteen_municipal_locations';
 
     protected $fillable = [
@@ -236,295 +220,7 @@ class MunicipalLocation extends Model
     ];
 
     /**
-<<<<<<< HEAD
-     * Tipologie di location secondo AGID
-     */
-    public const LOCATION_TYPES = [
-        'headquarters' => 'Sede Principale',
-        'office' => 'Ufficio',
-        'service_center' => 'Centro Servizi',
-        'library' => 'Biblioteca',
-        'school' => 'Scuola',
-        'sports_facility' => 'Impianto Sportivo',
-        'cultural_center' => 'Centro Culturale',
-        'healthcare' => 'Struttura Sanitaria',
-        'social_center' => 'Centro Sociale',
-        'cemetery' => 'Cimitero',
-        'market' => 'Mercato',
-        'parking' => 'Parcheggio',
-        'park' => 'Parco',
-        'square' => 'Piazza',
-        'monument' => 'Monumento',
-        'tourist_office' => 'Ufficio Turistico',
-        'waste_center' => 'Centro Raccolta Rifiuti',
-        'emergency' => 'Struttura di Emergenza',
-        'other' => 'Altro',
-    ];
 
-    /**
-     * Categorie principali
-     */
-    public const CATEGORIES = [
-        'administrative' => 'Amministrativo',
-        'cultural' => 'Culturale',
-        'educational' => 'Educativo',
-        'sports' => 'Sportivo',
-        'social' => 'Sociale',
-        'healthcare' => 'Sanitario',
-        'tourist' => 'Turistico',
-        'commercial' => 'Commerciale',
-        'environmental' => 'Ambientale',
-        'emergency' => 'Emergenza',
-    ];
-
-    /**
-     * Servizi disponibili
-     */
-    public const AVAILABLE_SERVICES = [
-        'citizen_services' => 'Servizi al Cittadino',
-        'document_collection' => 'Ritiro Documenti',
-        'payments' => 'Pagamenti',
-        'appointments' => 'Appuntamenti',
-        'information' => 'Informazioni',
-        'complaints' => 'Reclami/Segnalazioni',
-        'wifi' => 'WiFi Gratuito',
-        'photocopies' => 'Fotocopie',
-        'parking' => 'Parcheggio',
-        'accessibility' => 'Accessibilità',
-        'translation' => 'Servizi di Traduzione',
-        'assistance' => 'Assistenza',
-    ];
-
-    /**
-=======
->>>>>>> origin/dev
-     * Relazione con i punti di contatto
-     */
-    public function contacts(): MorphMany
-    {
-        return $this->morphMany(ContactPoint::class, 'contactable')->ordered();
-    }
-
-    /**
-     * Relazione con le unità organizzative
-     */
-    public function organizationalUnits(): BelongsToMany
-    {
-        return $this->belongsToMany(OrganizationalUnit::class, 'sixteen_unit_locations');
-    }
-
-    /**
-     * Relazione con i servizi erogati
-     */
-    public function services(): BelongsToMany
-    {
-        return $this->belongsToMany(MunicipalService::class, 'sixteen_service_locations');
-    }
-
-    /**
-     * Relazione con gli eventi che si svolgono nella sede
-     */
-    public function events(): HasMany
-    {
-        return $this->hasMany(MunicipalEvent::class, 'venue_name', 'name');
-    }
-
-    /**
-     * Scope per sedi attive
-     */
-    public function scopeActive($query)
-    {
-        return $query->where('is_active', true);
-    }
-
-    /**
-     * Scope per sedi pubbliche
-     */
-    public function scopePublic($query)
-    {
-        return $query->where('is_public', true);
-    }
-
-    /**
-     * Scope per sedi accessibili
-     */
-    public function scopeAccessible($query)
-    {
-        return $query->where('is_accessible', true);
-    }
-
-    /**
-     * Scope per tipologia di sede
-     */
-    public function scopeOfType($query, string $type)
-    {
-        return $query->where('location_type', $type);
-    }
-
-    /**
-     * Scope per categoria
-     */
-    public function scopeInCategory($query, string $category)
-    {
-        return $query->where('category', $category);
-    }
-
-    /**
-     * Scope per sedi principali
-     */
-    public function scopeHeadquarters($query)
-    {
-        return $query->where('is_headquarters', true);
-    }
-
-    /**
-     * Scope ordinati per priorità
-     */
-    public function scopeOrdered($query)
-    {
-        return $query->orderByDesc('is_headquarters')
-            ->orderByDesc('priority_level')
-            ->orderBy('name');
-    }
-
-    /**
-     * Scope per ricerca geografica
-     */
-    public function scopeNearby($query, float $lat, float $lng, float $radiusKm = 10)
-    {
-        return $query->whereRaw(
-            '(6371 * acos(cos(radians(?)) * cos(radians(JSON_EXTRACT(coordinates, "$.lat"))) * cos(radians(JSON_EXTRACT(coordinates, "$.lng")) - radians(?)) + sin(radians(?)) * sin(radians(JSON_EXTRACT(coordinates, "$.lat"))))) <= ?',
-            [$lat, $lng, $lat, $radiusKm]
-        );
-    }
-
-    /**
-<<<<<<< HEAD
-     * Accessor per il nome del tipo di location
-     */
-    protected function locationTypeName(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => self::LOCATION_TYPES[$this->location_type] ?? $this->location_type
-        );
-    }
-
-    /**
-     * Accessor per il nome della categoria
-     */
-    protected function categoryName(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => self::CATEGORIES[$this->category] ?? $this->category
-        );
-    }
-
-    /**
-     * Accessor per l'indirizzo completo
-     */
-    protected function fullAddress(): Attribute
-    {
-        return Attribute::make(
-            get: function () {
-                $address = $this->address;
-
-                if ($this->civic_number) {
-                    $address .= ', '.$this->civic_number;
-                }
-
-                if ($this->postal_code) {
-                    $address .= ', '.$this->postal_code;
-                }
-
-                if ($this->city) {
-                    $address .= ' '.$this->city;
-                }
-
-                if ($this->province) {
-                    $address .= ' ('.$this->province.')';
-                }
-
-                return $address;
-            }
-        );
-    }
-
-    /**
-     * Accessor per verificare se ha coordinate GPS
-     */
-    protected function hasCoordinates(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => isset($this->coordinates['lat']) && isset($this->coordinates['lng'])
-        );
-    }
-
-    /**
-     * Accessor per la latitudine
-     */
-    protected function latitude(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => $this->coordinates['lat'] ?? null
-        );
-    }
-
-    /**
-     * Accessor per la longitudine
-     */
-    protected function longitude(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => $this->coordinates['lng'] ?? null
-        );
-    }
-
-    /**
-     * Accessor per l'URL della sede
-     */
-    protected function url(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => route('municipal.locations.show', $this->slug)
-        );
-    }
-
-    /**
-     * Accessor per l'URL di Google Maps
-     */
-    protected function googleMapsUrl(): Attribute
-    {
-        return Attribute::make(
-            get: function () {
-                if ($this->has_coordinates) {
-                    return "https://www.google.com/maps?q={$this->latitude},{$this->longitude}";
-                }
-
-                return 'https://www.google.com/maps/search/'.urlencode($this->full_address);
-            }
-        );
-    }
-
-    /**
-     * Mutator per il nome (genera automaticamente lo slug)
-     */
-    protected function name(): Attribute
-    {
-        return Attribute::make(
-            set: function ($value) {
-                $this->attributes['name'] = $value;
-                if (empty($this->attributes['slug'])) {
-                    $this->attributes['slug'] = Str::slug($value);
-                }
-
-                return $value;
-            }
-        );
-    }
-
-    /**
-=======
->>>>>>> origin/dev
      * Ottiene gli orari di apertura formattati
      */
     public function getFormattedOpeningHours(): array
@@ -796,12 +492,7 @@ class MunicipalLocation extends Model
     }
 
     /**
-<<<<<<< HEAD
-     * Boot del modello
-     */
-    protected static function boot()
-=======
-     * Accessor per il nome del tipo di location
+* Accessor per il nome del tipo di location
      */
     protected function locationTypeName(): Attribute
     {
@@ -927,27 +618,18 @@ class MunicipalLocation extends Model
      * Boot del modello
      */
     protected static function boot(): void
->>>>>>> origin/dev
     {
         parent::boot();
 
         // Genera slug se mancante
-<<<<<<< HEAD
-        static::creating(function ($model) {
-=======
-        static::creating(function ($model): void {
->>>>>>> origin/dev
+static::creating(function ($model): void {
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->name);
             }
         });
 
         // Assicura unicità dello slug
-<<<<<<< HEAD
-        static::creating(function ($model) {
-=======
-        static::creating(function ($model): void {
->>>>>>> origin/dev
+static::creating(function ($model): void {
             $originalSlug = $model->slug;
             $counter = 1;
 
@@ -958,11 +640,7 @@ class MunicipalLocation extends Model
         });
 
         // Set default values
-<<<<<<< HEAD
-        static::creating(function ($model) {
-=======
-        static::creating(function ($model): void {
->>>>>>> origin/dev
+static::creating(function ($model): void {
             if (is_null($model->priority_level)) {
                 $model->priority_level = $model->is_headquarters ? 5 : 1;
             }

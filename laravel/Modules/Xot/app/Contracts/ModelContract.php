@@ -16,44 +16,15 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\Xot\Contracts\ModelContract.
  *
-<<<<<<< HEAD
- * @property int         $id
- * @property int|null    $user_id
-=======
- * @property int $id
+* @property int $id
  * @property int|null $user_id
->>>>>>> origin/dev
  * @property string|null $post_type
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property string|null $title
-<<<<<<< HEAD
- * @property bool        $is_reclamed
- * @property bool        $table_enable
- * @property Pivot|null  $pivot
- * @property string      $tennant_name
- *
- * @method mixed     getKey()
- * @method string    getRouteKey()
- * @method string    getRouteKeyName()
- * @method string    getTable()
- * @method mixed     with($array)
- * @method array     getFillable()
- * @method mixed     fill($array)
- * @method mixed     getConnection()
- * @method mixed     update($params)
- * @method mixed     delete()
- * @method mixed     detach($params)
- * @method mixed     attach($params)
- * @method array     treeLabel()
- * @method array     treeSons()
- * @method array     toArray()
- * @method BelongsTo user()
- * @method mixed     getAttributeValue(string $key)
-=======
- * @property bool $is_reclamed
+* @property bool $is_reclamed
  * @property bool $table_enable
  * @property Pivot|null $pivot
  * @property string $tennant_name
@@ -74,7 +45,6 @@ use Illuminate\Support\Carbon;
  * @method array toArray()
  * @method BelongsTo user()
  * @method mixed getAttributeValue(string $key)
->>>>>>> origin/dev
  *
  * @phpstan-require-extends Model
  *
@@ -119,32 +89,10 @@ interface ModelContract
     public function toArray();
 
     /**
-<<<<<<< HEAD
-     * Get the value of the model's primary key.
-     */
-    public function getKey();
-
-    /**
-     * Get a relationship.
-     *
-     * @param string $key
-     *
-     * @phpstan-param string $key
-     */
-    public function getRelationValue($key);
-
-    /**
-     * Create a new instance of the given model.
-     *
-     * @param array $attributes
-     * @param bool  $exists
-     *
-=======
-     * Create a new instance of the given model.
+* Create a new instance of the given model.
      *
      * @param  array  $attributes
      * @param  bool  $exists
->>>>>>> origin/dev
      * @return static
      */
     public function newInstance($attributes = [], $exists = false);

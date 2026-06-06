@@ -571,12 +571,7 @@ return [
             ],
         ],
         'register' => [
-<<<<<<< HEAD
-            'title' => 'Registrati',
-            'subtitle' => 'Crea un nuovo account',
-            'button' => 'Registrati',
-=======
-            'title' => [
+'title' => [
                 'text' => 'Registrati',
             ],
             'subtitle' => [
@@ -611,7 +606,6 @@ return [
                     'text' => 'Guida e assistenza',
                 ],
             ],
->>>>>>> origin/dev
             'fields' => [
                 'first_name' => 'Nome',
                 'last_name' => 'Cognome',

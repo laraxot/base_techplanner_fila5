@@ -3,8 +3,6 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
-<<<<<<< HEAD
-=======
 
 ### Fixed - 2026-05-08
 
@@ -19,4 +17,3 @@ All notable changes to this project will be documented in this file.
 
 ### Related Documentation
 - Geo module: `docs/wiki/concepts/segnalazioni-elenco-map-visibility-issue.md` (map regression)
->>>>>>> origin/dev

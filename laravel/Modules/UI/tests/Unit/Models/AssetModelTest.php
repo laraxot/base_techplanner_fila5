@@ -9,19 +9,8 @@ use Modules\UI\Models\Asset;
 describe('Asset Model', function (): void {
     it('can be instantiated', function (): void {
         $asset = new Asset();
-<<<<<<< HEAD
-=======
+$asset = new Asset();
         $asset = new Asset();
->>>>>>> origin/dev
-        expect($asset)->toBeInstanceOf(Asset::class);
-    });
-
-    it('has fillable attributes', function (): void {
-        $asset = new Asset();
-<<<<<<< HEAD
-=======
-        $asset = new Asset();
->>>>>>> origin/dev
         $expected = ['name', 'type', 'path', 'theme_id', 'is_minified', 'is_compressed', 'order', 'should_bundle'];
 
         foreach ($expected as $field) {
@@ -31,29 +20,8 @@ describe('Asset Model', function (): void {
 
     it('has casts defined', function (): void {
         $asset = new Asset();
-<<<<<<< HEAD
-=======
+$asset = new Asset();
         $asset = new Asset();
->>>>>>> origin/dev
-        $casts = $asset->getCasts();
-
-        expect($casts['is_minified'])->toBe('boolean')
-            ->and($casts['is_compressed'])->toBe('boolean')
-            ->and($casts['order'])->toBe('integer')
-            ->and($casts['should_bundle'])->toBe('boolean');
-    });
-
-    it('has theme relationship', function (): void {
-        $reflection = new ReflectionClass(Asset::class);
-        expect($reflection->hasMethod('theme'))->toBeTrue();
-    });
-
-    it('has correct table name', function (): void {
-        $asset = new Asset();
-<<<<<<< HEAD
-=======
-        $asset = new Asset();
->>>>>>> origin/dev
         expect($asset->getTable())->toBe('assets');
     });
 

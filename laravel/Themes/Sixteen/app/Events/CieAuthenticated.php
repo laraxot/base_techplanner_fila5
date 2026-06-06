@@ -6,11 +6,7 @@ namespace Themes\Sixteen\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-<<<<<<< HEAD
-use Themes\Sixteen\Models\User;
-=======
 use Modules\User\Models\User;
->>>>>>> origin/dev
 
 /**
  * Evento lanciato quando un utente si autentica con successo tramite CIE
@@ -32,13 +28,9 @@ class CieAuthenticated
      */
     public function getAuthMethod(): ?string
     {
-<<<<<<< HEAD
-        return $this->cieAttributes['auth_method'] ?? null;
-=======
-        $value = $this->cieAttributes['auth_method'] ?? null;
+$value = $this->cieAttributes['auth_method'] ?? null;
 
         return is_string($value) ? $value : null;
->>>>>>> origin/dev
     }
 
     /**
@@ -54,13 +46,9 @@ class CieAuthenticated
      */
     public function getFiscalCode(): ?string
     {
-<<<<<<< HEAD
-        return $this->cieAttributes['fiscal_code'] ?? null;
-=======
-        $value = $this->cieAttributes['fiscal_code'] ?? null;
+$value = $this->cieAttributes['fiscal_code'] ?? null;
 
         return is_string($value) ? $value : null;
->>>>>>> origin/dev
     }
 
     /**
@@ -68,13 +56,9 @@ class CieAuthenticated
      */
     public function getCieId(): ?string
     {
-<<<<<<< HEAD
-        return $this->cieAttributes['cie_id'] ?? null;
-=======
-        $value = $this->cieAttributes['cie_id'] ?? null;
+$value = $this->cieAttributes['cie_id'] ?? null;
 
         return is_string($value) ? $value : null;
->>>>>>> origin/dev
     }
 
     /**
@@ -90,13 +74,9 @@ class CieAuthenticated
      */
     public function isEmailVerified(): bool
     {
-<<<<<<< HEAD
-        return $this->cieAttributes['email_verified'] ?? false;
-=======
-        $value = $this->cieAttributes['email_verified'] ?? false;
+$value = $this->cieAttributes['email_verified'] ?? false;
 
         return is_bool($value) && $value;
->>>>>>> origin/dev
     }
 
     /**
@@ -104,13 +84,9 @@ class CieAuthenticated
      */
     public function isPhoneVerified(): bool
     {
-<<<<<<< HEAD
-        return $this->cieAttributes['phone_verified'] ?? false;
-=======
-        $value = $this->cieAttributes['phone_verified'] ?? false;
+$value = $this->cieAttributes['phone_verified'] ?? false;
 
         return is_bool($value) && $value;
->>>>>>> origin/dev
     }
 
     /**

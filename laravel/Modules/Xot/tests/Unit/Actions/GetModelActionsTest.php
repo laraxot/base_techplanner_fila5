@@ -66,12 +66,8 @@ it('throws when model id is provided but record is missing', function (): void {
 })->throws(Exception::class);
 
 it('returns snake model type from model contract instance', function (): void {
-<<<<<<< HEAD
-    $model = new class extends Model implements ModelContract {
-=======
-    $model = new class() extends Model implements ModelContract
+$model = new class() extends Model implements ModelContract
     {
->>>>>>> origin/dev
         public function withoutRelations()
         {
             return $this;
@@ -94,21 +90,9 @@ it('returns snake model type from model contract instance', function (): void {
             return [];
         }
 
-<<<<<<< HEAD
-        public function getKey()
-        {
-            return null;
-        }
-
-        public function getRelationValue($key)
-        {
-            return null;
-        }
-=======
-        public function getKey() {}
+public function getKey() {}
 
         public function getRelationValue($key) {}
->>>>>>> origin/dev
 
         public function newInstance($attributes = [], $exists = false)
         {

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Analisi Modelli, Factory e Seeder - Modulo User
 
 ## Panoramica
@@ -183,16 +182,6 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Jetstream Integration](./jetstream_integration.md)
 
 ### Moduli Collegati
-<<<<<<< HEAD
-- [ModuloEsempio Module](../../modulo/docs/modelli_factory_seeder_analisi.md)
-=======
-- [healthcare_app Module](../../healthcare_app/docs/modelli_factory_seeder_analisi.md)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-- [Tenant Module](../../tenant/docs/modelli_factory_seeder_analisi.md)
-- [Notify Module](../../notify/docs/modelli_factory_seeder_analisi.md)
-
-*Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*
-=======
 ---
 module: theme
 topic: modelli_factory_seeder_analisi
@@ -200,4 +189,3 @@ canonical: ../../../Themes/docs/shared-components/modelli_factory_seeder_analisi
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/modelli_factory_seeder_analisi-Modules.md
->>>>>>> origin/dev

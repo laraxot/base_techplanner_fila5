@@ -36,10 +36,7 @@ class SafeArrayByModelCastAction
             try {
                 $data[$key] = $model->$key;
 
-<<<<<<< HEAD
-                /* @phpstan-ignore-next-line */
-=======
->>>>>>> origin/dev
+/* @phpstan-ignore-next-line */
             } catch (\ValueError|\Error $e) {
             }
         }

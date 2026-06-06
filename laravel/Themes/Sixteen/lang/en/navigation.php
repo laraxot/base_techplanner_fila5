@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 return [
     'main' => 'Main navigation',
-<<<<<<< HEAD
-    'site_title' => '<nome progetto>',
-=======
-    'site_title' => 'My Municipality',
->>>>>>> origin/dev
+'site_title' => 'My Municipality',
     'home' => 'Home',
     'about' => 'About',
     'contact' => 'Contact',
@@ -16,8 +12,6 @@ return [
     'portfolio' => 'Portfolio',
     'news' => 'News',
     'blog' => 'Blog',
-<<<<<<< HEAD
-=======
 
     // Homepage sections
     'homepage' => [
@@ -57,5 +51,4 @@ return [
         'report_issue' => 'Report a problem',
         'maybe_searching' => 'Perhaps you were looking for',
     ],
->>>>>>> origin/dev
 ];

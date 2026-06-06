@@ -6,70 +6,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-<<<<<<< HEAD
-=======
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
->>>>>>> origin/dev
-use Illuminate\Notifications\DatabaseNotification;
-use Illuminate\Notifications\DatabaseNotificationCollection;
-use Illuminate\Support\Carbon;
-use Modules\Media\Models\Media;
-use Modules\User\Contracts\UserContract;
-use Modules\Xot\Contracts\ProfileContract;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
-use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
-use Spatie\Permission\Traits\HasRoles;
-use Spatie\SchemalessAttributes\SchemalessAttributes;
-use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttributes;
-
-/**
- * User Profile Model.
- *
- * Represents a user profile with relationships to devices, teams, and roles.
- *
-<<<<<<< HEAD
- * @property int                                                       $id
- * @property string                                                    $first_name
- * @property string                                                    $last_name
- * @property string                                                    $user_name
- * @property string                                                    $email
- * @property string|null                                               $phone
- * @property string|null                                               $bio
- * @property string|null                                               $avatar
- * @property string|null                                               $timezone
- * @property string|null                                               $locale
- * @property array                                                     $preferences
- * @property string                                                    $status
- * @property SchemalessAttributes                                      $extra
- * @property string                                                    $avatar
- * @property ProfileContract|null                                      $creator
- * @property Collection<int, DeviceUser>                               $deviceUsers
- * @property int|null                                                  $device_users_count
- * @property ProfileTeam|DeviceProfile|null                            $pivot
- * @property Collection<int, Device>                                   $devices
- * @property int|null                                                  $devices_count
- * @property string|null                                               $first_name
- * @property string|null                                               $full_name
- * @property string|null                                               $last_name
- * @property MediaCollection<int, Media>                               $media
- * @property int|null                                                  $media_count
- * @property Collection<int, DeviceUser>                               $mobileDeviceUsers
- * @property int|null                                                  $mobile_device_users_count
- * @property Collection<int, Device>                                   $mobileDevices
- * @property int|null                                                  $mobile_devices_count
- * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
- * @property int|null                                                  $notifications_count
- * @property Collection<int, Permission>                               $permissions
- * @property int|null                                                  $permissions_count
- * @property Collection<int, Role>                                     $roles
- * @property int|null                                                  $roles_count
- * @property Collection<int, Team>                                     $teams
- * @property int|null                                                  $teams_count
- * @property ProfileContract|null                                      $updater
- * @property UserContract|null                                         $user
- * @property string|null                                               $user_name
-=======
  * @property int $id
  * @property string $first_name
  * @property string $last_name
@@ -110,7 +47,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property ProfileContract|null $updater
  * @property UserContract|null $user
  * @property string|null $user_name
->>>>>>> origin/dev
  *
  * @method static Builder<static>|Profile newModelQuery()
  * @method static Builder<static>|Profile newQuery()
@@ -123,36 +59,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  *
  * @mixin IdeHelperProfile
  *
-<<<<<<< HEAD
- * @property string|null          $user_id
- * @property Carbon|null          $created_at
- * @property Carbon|null          $updated_at
- * @property string|null          $updated_by
- * @property string|null          $created_by
- * @property Carbon|null          $deleted_at
- * @property string|null          $deleted_by
- * @property ProfileContract|null $deleter
- *
- * @method static Builder<static>|Profile                         whereBio($value)
- * @method static Builder<static>|Profile                         whereCreatedAt($value)
- * @method static Builder<static>|Profile                         whereCreatedBy($value)
- * @method static Builder<static>|Profile                         whereDeletedAt($value)
- * @method static Builder<static>|Profile                         whereDeletedBy($value)
- * @method static Builder<static>|Profile                         whereEmail($value)
- * @method static Builder<static>|Profile                         whereFirstName($value)
- * @method static Builder<static>|Profile                         whereId($value)
- * @method static Builder<static>|Profile                         whereLastName($value)
- * @method static Builder<static>|Profile                         wherePhone($value)
- * @method static Builder<static>|Profile                         whereUpdatedAt($value)
- * @method static Builder<static>|Profile                         whereUpdatedBy($value)
- * @method static Builder<static>|Profile                         whereUserId($value)
- * @method static \Modules\User\Database\Factories\ProfileFactory factory($count = null, $state = [])
- *
- * @property string|null $post_type
- * @property int|null    $ente
- * @property int|null    $matr
-=======
- * @property string|null $user_id
+* @property string|null $user_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -179,7 +86,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property string|null $post_type
  * @property int|null $ente
  * @property int|null $matr
->>>>>>> origin/dev
  * @property string|null $address
  * @property string|null $premise
  * @property string|null $premise_short
@@ -254,11 +160,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property string|null $type
  * @property string|null $birth_date
  * @property string|null $gender
-<<<<<<< HEAD
- * @property bool        $is_active
-=======
- * @property bool $is_active
->>>>>>> origin/dev
+* @property bool $is_active
  *
  * @method static Builder<static>|Profile whereBirthDate($value)
  * @method static Builder<static>|Profile whereExtra($value)
@@ -276,12 +178,7 @@ class Profile extends BaseProfile implements HasMedia
     use InteractsWithMedia;
 
     /**
-<<<<<<< HEAD
-     * Get the teams that the profile belongs to.
-     */
-    public function teams(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
-=======
-     * The table associated with the model.
+* The table associated with the model.
      */
     protected $table = 'profiles';
 
@@ -289,7 +186,6 @@ class Profile extends BaseProfile implements HasMedia
      * Get the teams that the profile belongs to.
      */
     public function teams(): BelongsToMany
->>>>>>> origin/dev
     {
         return $this->belongsToManyX(Team::class);
     }
@@ -315,16 +211,13 @@ class Profile extends BaseProfile implements HasMedia
     }
 
     /**
-<<<<<<< HEAD
-     * The table associated with the model.
+* The table associated with the model.
      *
      * @var string
      */
     protected $table = 'profiles';
 
     /**
-=======
->>>>>>> origin/dev
      * Generate Schema.org ProfilePage/Person JSON-LD structured data.
      *
      * @see https://schema.org/Person

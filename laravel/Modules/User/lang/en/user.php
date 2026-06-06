@@ -360,8 +360,6 @@ return [
         'impersonate_users' => 'Impersona utenti',
         'manage_roles' => 'Gestisci ruoli',
     ],
-<<<<<<< HEAD
-=======
     'auth' => [
         'register' => [
             'title' => [
@@ -401,7 +399,6 @@ return [
             ],
         ],
     ],
->>>>>>> origin/dev
     'model' => [
         'label' => 'Utente',
     ],

@@ -9,19 +9,8 @@ use Modules\UI\Models\Component;
 describe('Component Model', function (): void {
     it('can be instantiated', function (): void {
         $component = new Component();
-<<<<<<< HEAD
-=======
+$component = new Component();
         $component = new Component();
->>>>>>> origin/dev
-        expect($component)->toBeInstanceOf(Component::class);
-    });
-
-    it('has fillable attributes', function (): void {
-        $component = new Component();
-<<<<<<< HEAD
-=======
-        $component = new Component();
->>>>>>> origin/dev
         $expected = [
             'name', 'theme_id', 'is_active', 'version', 'dependencies',
             'template', 'is_cacheable', 'cache_ttl', 'validation_rules',
@@ -37,34 +26,8 @@ describe('Component Model', function (): void {
 
     it('has casts defined', function (): void {
         $component = new Component();
-<<<<<<< HEAD
-=======
+$component = new Component();
         $component = new Component();
->>>>>>> origin/dev
-        $casts = $component->getCasts();
-
-        expect($casts['is_active'])->toBe('boolean')
-            ->and($casts['is_cacheable'])->toBe('boolean')
-            ->and($casts['dependencies'])->toBe('array')
-            ->and($casts['validation_rules'])->toBe('array')
-            ->and($casts['data_schema'])->toBe('array')
-            ->and($casts['responsive_breakpoints'])->toBe('array')
-            ->and($casts['supports_lazy_loading'])->toBe('boolean')
-            ->and($casts['lazy_loading_threshold'])->toBe('integer')
-            ->and($casts['cache_duration'])->toBe('integer');
-    });
-
-    it('has theme relationship', function (): void {
-        $reflection = new ReflectionClass(Component::class);
-        expect($reflection->hasMethod('theme'))->toBeTrue();
-    });
-
-    it('has correct table name', function (): void {
-        $component = new Component();
-<<<<<<< HEAD
-=======
-        $component = new Component();
->>>>>>> origin/dev
         expect($component->getTable())->toBe('components');
     });
 

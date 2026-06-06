@@ -7,38 +7,8 @@ namespace Modules\User\Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-<<<<<<< HEAD
-=======
 use Modules\User\Database\Factories\TeamFactory;
->>>>>>> origin/dev
-use Modules\User\Models\Permission;
-use Modules\User\Models\Role;
-use Modules\User\Models\Team;
-
-/**
- * Seeder per il modulo User.
- *
- * Popola il database con dati di base per:
- * - Ruoli e permessi di sistema
- * - Team di default
- */
-class UserSeeder extends Seeder
-{
-    use WithoutModelEvents;
-
-    /**
-     * Esegue il seeding del database.
-     */
-    public function run(): void
-    {
-        $this->command->info('👤 Inizializzazione seeding User...');
-
-        // Disabilita i controlli di foreign key (solo per MySQL)
-<<<<<<< HEAD
-        if ('sqlite' !== DB::getDriverName()) {
-=======
         if (DB::getDriverName() !== 'sqlite') {
->>>>>>> origin/dev
             DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         }
 
@@ -49,11 +19,7 @@ class UserSeeder extends Seeder
             $this->command->info('✅ Seeding User completato con successo!');
         } finally {
             // Riabilita i controlli di foreign key (solo per MySQL)
-<<<<<<< HEAD
-            if ('sqlite' !== DB::getDriverName()) {
-=======
-            if (DB::getDriverName() !== 'sqlite') {
->>>>>>> origin/dev
+if (DB::getDriverName() !== 'sqlite') {
                 DB::statement('SET FOREIGN_KEY_CHECKS=1;');
             }
         }
@@ -191,11 +157,7 @@ class UserSeeder extends Seeder
 
     private function createTeam(string $name): Team
     {
-<<<<<<< HEAD
-        $factory = \Modules\User\Database\Factories\TeamFactory::new();
-=======
-        $factory = TeamFactory::new();
->>>>>>> origin/dev
+$factory = TeamFactory::new();
         /** @var Team $team */
         $team = $factory->create([
             'name' => $name,

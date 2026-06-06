@@ -18,12 +18,9 @@ _ide_helper_models.php
 *.old
 *.bak
 *.backup
-<<<<<<< HEAD
-=======
 *.backup.*
 *.backup-*
 *.backup_*
->>>>>>> origin/dev
 
 public_html/vendor
 public_html/js
@@ -82,8 +79,6 @@ node_modules/
 # PHPStan output files
 phpstan*.json
 _docs/
-<<<<<<< HEAD
-=======
 
 # Documentation archives are local-only scratch/history.
 docs/legacy/
@@ -103,4 +98,3 @@ docs/legacy/**
 
 # Database locale vector search (non versionare)
 ruvector.db
->>>>>>> origin/dev

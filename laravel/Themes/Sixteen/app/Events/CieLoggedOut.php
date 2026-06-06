@@ -6,11 +6,7 @@ namespace Themes\Sixteen\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-<<<<<<< HEAD
-use Themes\Sixteen\Models\User;
-=======
 use Modules\User\Models\User;
->>>>>>> origin/dev
 
 /**
  * Evento lanciato quando un utente effettua il logout da CIE
@@ -32,18 +28,7 @@ class CieLoggedOut
      */
     public function getAuthMethod(): ?string
     {
-<<<<<<< HEAD
-        return $this->cieAttributes['auth_method'] ?? null;
-    }
-
-    /**
-     * Ottiene il codice fiscale dell'utente
-     */
-    public function getFiscalCode(): ?string
-    {
-        return $this->cieAttributes['fiscal_code'] ?? null;
-=======
-        $value = $this->cieAttributes['auth_method'] ?? null;
+$value = $this->cieAttributes['auth_method'] ?? null;
 
         return is_string($value) ? $value : null;
     }
@@ -56,7 +41,6 @@ class CieLoggedOut
         $value = $this->cieAttributes['fiscal_code'] ?? null;
 
         return is_string($value) ? $value : null;
->>>>>>> origin/dev
     }
 
     /**
@@ -64,13 +48,9 @@ class CieLoggedOut
      */
     public function getCieId(): ?string
     {
-<<<<<<< HEAD
-        return $this->cieAttributes['cie_id'] ?? null;
-=======
-        $value = $this->cieAttributes['cie_id'] ?? null;
+$value = $this->cieAttributes['cie_id'] ?? null;
 
         return is_string($value) ? $value : null;
->>>>>>> origin/dev
     }
 
     /**

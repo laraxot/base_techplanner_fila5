@@ -11,20 +11,8 @@ namespace Modules\User\Enums;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
-<<<<<<< HEAD
-=======
 use Modules\Xot\Traits\EnumTrait;
->>>>>>> origin/dev
-
-// use Datomatic\LaravelEnumHelper\LaravelEnumHelper;
-
-enum UserType: string implements HasColor, HasIcon, HasLabel
-{
-<<<<<<< HEAD
-=======
     use EnumTrait;
-
->>>>>>> origin/dev
     // //use LaravelEnumHelper;
 
     case MasterAdmin = 'master_admin';
@@ -44,9 +32,7 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
             self::Technician => self::API,
         };
     }
-<<<<<<< HEAD
-
-    public function getLabel(): string
+public function getLabel(): string
     {
         return match ($this) {
             self::MasterAdmin => 'master_admin',
@@ -78,6 +64,4 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
             self::Technician => 'heroicon-m-pencil',
         };
     }
-=======
->>>>>>> origin/dev
 }

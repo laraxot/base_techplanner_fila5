@@ -11,33 +11,10 @@ abstract class BaseAuthWidget extends XotBaseWidget
 {
     public ?array $data = [];
 
-<<<<<<< HEAD
-=======
-    /**
+/**
      * @return array<string, mixed>
      */
     abstract protected function getFormSchema(): array;
-
->>>>>>> origin/dev
-    public function mount(): void
-    {
-        if (Auth::check()) {
-            redirect()->intended(route('dashboard'));
-        }
-    }
-
-    /**
-<<<<<<< HEAD
-     * Restituisce lo schema del form per l'autenticazione.
-     * Deve essere implementato dalle classi concrete.
-     *
-     * @return array<mixed>
-     */
-    abstract public function getFormSchema(): array;
-
-    /**
-=======
->>>>>>> origin/dev
      * Restituisce i dati per la view.
      * In Filament v3/Xot, il form va gestito tramite getFormSchema().
      *

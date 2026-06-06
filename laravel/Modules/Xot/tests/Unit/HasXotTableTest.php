@@ -8,12 +8,9 @@ use Filament\Tables\Table;
 use Modules\Xot\Tests\Unit\Support\DummyTestModel;
 use Modules\Xot\Tests\Unit\Support\HasTableWithoutOptionalMethodsTestClass;
 use Modules\Xot\Tests\Unit\Support\HasTableWithXotTestClass;
-<<<<<<< HEAD
 use Tests\TestCase;
 
 uses(TestCase::class);
-=======
->>>>>>> origin/dev
 
 afterEach(function () {
     \Mockery::close();

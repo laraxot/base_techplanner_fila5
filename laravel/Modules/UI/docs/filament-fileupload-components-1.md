@@ -55,7 +55,6 @@ Forms\Components\FileUpload::make('certifications')
    - Fornire feedback di progresso
 
 ## Collegamenti
-<<<<<<< HEAD
 - [README](../../patient/docs/readme.md)
 - [Filament Resources](../../patient/docs/filament-resources.md)
 - [Form Components](../../patient/docs/filament-form-components.md)
@@ -63,12 +62,3 @@ Forms\Components\FileUpload::make('certifications')
 ## Vedi Anche
 - [Filament FileUpload Documentation](https://filamentphp.com/docs/forms/fields#file-upload)
 - [Best Practices](../../xot/docs/filament-best-practices.md)
-=======
-- [README](../../Patient/docs/README.md)
-- [Filament Resources](../../Patient/docs/filament-resources.md)
-- [Form Components](../../Patient/docs/filament-form-components.md)
-
-## Vedi Anche
-- [Filament FileUpload Documentation](https://filamentphp.com/docs/forms/fields#file-upload)
-- [Best Practices](../../Xot/docs/filament-best-practices.md)
->>>>>>> origin/dev

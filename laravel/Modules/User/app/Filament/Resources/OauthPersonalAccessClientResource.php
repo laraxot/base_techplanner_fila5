@@ -4,82 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
-<<<<<<< HEAD
-=======
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
->>>>>>> origin/dev
-use Filament\Actions\BulkActionGroup;
-use Filament\Actions\DeleteAction;
-use Filament\Actions\DeleteBulkAction;
-use Filament\Actions\EditAction;
-use Filament\Forms\Components\Select;
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Components\Section;
-use Filament\Tables;
-use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Modules\User\Models\OauthPersonalAccessClient;
-use Modules\Xot\Filament\Resources\XotBaseResource;
-
-/**
- * Class OauthPersonalAccessClientResource.
- */
-final class OauthPersonalAccessClientResource extends XotBaseResource
-{
-<<<<<<< HEAD
-    /** @phpstan-ignore-next-line Resource model is a valid Eloquent subtype, but PHPStan loses the inheritance edge in this context. */
-=======
->>>>>>> origin/dev
-    protected static ?string $model = OauthPersonalAccessClient::class;
-
-    protected static ?string $recordTitleAttribute = 'id';
-
-    protected static ?string $modelLabel = 'OAuth Personal Access Client';
-
-    protected static ?string $pluralModelLabel = 'OAuth Personal Access Clients';
-
-    protected static \UnitEnum|string|null $navigationGroup = 'API';
-
-    protected static \BackedEnum|string|null $navigationIcon = 'heroicon-o-key';
-
-    /**
-     * @return array<string, Component>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
-    {
-        return [
-            'oauth_personal_access_client' => Section::make('OAuth Personal Access Client Information')
-                ->schema([
-                    Select::make('client_id')
-                        ->label('Client')
-                        ->relationship('client', 'name')
-                        ->required()
-                        ->searchable()
-                        ->helperText('Associated OAuth client'),
-                ])
-                ->columns(2),
-        ];
-    }
-
-    /**
-<<<<<<< HEAD
-     * Define the table for the resource.
-     */
-    public static function table(Table $table): Table
-    {
-        return $table
-            ->columns(self::getTableColumns())
-            ->filters(self::getTableFilters())
-            ->actions(self::getTableActions())
-            ->bulkActions(self::getTableBulkActions())
-            ->defaultSort('created_at', 'desc');
-    }
-
-    /**
-=======
->>>>>>> origin/dev
      * Get the table columns for the resource.
      *
      * @return array<string, Tables\Columns\Column>
@@ -123,11 +49,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Get the table actions for the resource.
      *
-<<<<<<< HEAD
-     * @return array<string, \Filament\Actions\Action>
-=======
-     * @return array<string, Action>
->>>>>>> origin/dev
+* @return array<string, Action>
      */
     public static function getTableActions(): array
     {
@@ -140,11 +62,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Get the table bulk actions for the resource.
      *
-<<<<<<< HEAD
-     * @return array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
-=======
-     * @return array<string, Action|ActionGroup>
->>>>>>> origin/dev
+* @return array<string, Action|ActionGroup>
      */
     public static function getTableBulkActions(): array
     {

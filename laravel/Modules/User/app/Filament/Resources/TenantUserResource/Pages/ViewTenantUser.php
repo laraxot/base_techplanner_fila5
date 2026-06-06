@@ -7,22 +7,8 @@ namespace Modules\User\Filament\Resources\TenantUserResource\Pages;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
-<<<<<<< HEAD
-=======
 use Modules\User\Filament\Resources\TenantUserResource;
->>>>>>> origin/dev
-use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
-
-/**
- * Class ViewTenantUser.
- */
-class ViewTenantUser extends XotBaseViewRecord
-{
-<<<<<<< HEAD
-    protected static string $resource = \Modules\User\Filament\Resources\TenantUserResource::class;
-=======
     protected static string $resource = TenantUserResource::class;
->>>>>>> origin/dev
 
     /**
      * @return array<string, Component>

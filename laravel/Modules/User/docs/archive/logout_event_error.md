@@ -11,15 +11,7 @@
 
 ## Errore Identificato
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 L'implementazione attuale del file `/var/www/html/ptvx/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
-=======
-L'implementazione attuale del file `/var/www/html/healthcare_app/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
-=======
-L'implementazione attuale del file `/var/www/html/healthcare_app/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
->>>>>>> origin/dev
 
 ```
 Call to a member function getAuthIdentifier() on null

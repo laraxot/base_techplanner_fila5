@@ -87,11 +87,7 @@ protected $fillable;
 // ✅ Target
 public function passes(string $_attribute, mixed $value): bool { }
 /** @var array<int, string> */
-<<<<<<< HEAD
 protected array $fillable;
-=======
-protected $fillable;
->>>>>>> origin/dev
 ```
 
 ### 🟢 Medium Priority

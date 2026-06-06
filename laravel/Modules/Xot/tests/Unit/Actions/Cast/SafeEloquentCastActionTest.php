@@ -8,20 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 
 beforeEach(function (): void {
-<<<<<<< HEAD
-    $action = app(SafeEloquentCastAction::class);
-    $model = new class extends Model {
-        protected $guarded = [];
-    };
-    $model->forceFill([
-=======
-    $this->action = app(SafeEloquentCastAction::class);
+$this->action = app(SafeEloquentCastAction::class);
     $this->model = new class() extends Model
     {
         protected $guarded = [];
     };
     $this->model->forceFill([
->>>>>>> origin/dev
         'name' => 'Mario',
         'age' => '42',
         'score' => '12.5',
@@ -32,41 +24,7 @@ beforeEach(function (): void {
 });
 
 it('checks attribute presence and emptiness', function (): void {
-<<<<<<< HEAD
-    expect($action->hasAttribute($this->model, 'name'))
-        ->and($action->hasAttribute($this->model, 'missing'))
-        ->and($action->hasNonEmptyAttribute($this->model, 'name'))
-        ->and($action->hasNonEmptyAttribute($this->model, 'empty'))
-        ->and($action->hasAttributeValue($this->model, 'name', 'Mario'));
-});
-
-it('casts typed attribute getters', function (): void {
-    expect($action->getStringAttribute($this->model, 'name'))
-        ->and($action->getIntAttribute($this->model, 'age'))
-        ->and($action->getFloatAttribute($this->model, 'score'))
-        ->and($action->getBooleanAttribute($this->model, 'active'))
-        ->and($action->getArrayAttribute($this->model, 'meta'))
-        ->and($action->getStringAttribute($this->model, 'missing', 'fallback'));
-});
-
-it('returns defaults for missing attributes by type', function (): void {
-    expect($action->getIntAttribute($this->model, 'missing', 9))
-        ->and($action->getFloatAttribute($this->model, 'missing', 1.5))
-        ->and($action->getBooleanAttribute($this->model, 'missing', true))
-        ->and($action->getArrayAttribute($this->model, 'missing', ['d']));
-});
-
-it('casts generic typed getter and validation helpers', function (): void {
-    expect($action->getTypedAttribute($this->model, 'name', 'string'))
-        ->and($action->getTypedAttribute($this->model, 'age', 'int'))
-        ->and($action->getTypedAttribute($this->model, 'score', 'float'))
-        ->and($action->getTypedAttribute($this->model, 'active', 'bool'))
-        ->and($action->getTypedAttribute($this->model, 'meta', 'array'));
-
-    $ok = $action->getValidatedAttribute($this->model, 'age', 'int', fn (int $v));
-    $ko = $action->getValidatedAttribute($this->model, 'age', 'int', fn (int $v));
-=======
-    expect($this->action->hasAttribute($this->model, 'name'))->toBeTrue()
+expect($this->action->hasAttribute($this->model, 'name'))->toBeTrue()
         ->and($this->action->hasAttribute($this->model, 'missing'))->toBeFalse()
         ->and($this->action->hasNonEmptyAttribute($this->model, 'name'))->toBeTrue()
         ->and($this->action->hasNonEmptyAttribute($this->model, 'empty'))->toBeFalse()
@@ -98,26 +56,12 @@ it('casts generic typed getter and validation helpers', function (): void {
 
     $ok = $this->action->getValidatedAttribute($this->model, 'age', 'int', fn (int $v): bool => $v === 42, 0);
     $ko = $this->action->getValidatedAttribute($this->model, 'age', 'int', fn (int $v): bool => $v === 0, 0);
->>>>>>> origin/dev
 
     expect($ok)->toBe(42)->and($ko)->toBe(0);
 });
 
 it('checks condition and fallback helpers', function (): void {
-<<<<<<< HEAD
-    $model->setAttribute('nickname', 'SuperMario');
-
-    expect($action->hasAttributeCondition($this->model, 'age', fn (mixed $v)))
-        ->and($action->hasAttributeCondition($this->model, 'missing', fn ()))
-        ->and($action->getAttributeWithFallback($this->model, 'missing', 'nickname', 'string', 'n/a'))
-        ->and($action->getAttributeWithFallback($this->model, 'name', 'nickname', 'string', 'n/a'));
-});
-
-it('exposes static helper methods', function (): void {
-    expect(SafeEloquentCastAction::has($model, 'name'))
-        ->and(SafeEloquentCastAction::get($model, 'age', 'int'));
-=======
-    $this->model->setAttribute('nickname', 'SuperMario');
+$this->model->setAttribute('nickname', 'SuperMario');
 
     expect($this->action->hasAttributeCondition($this->model, 'age', fn (mixed $v): bool => (int) $v === 42))->toBeTrue()
         ->and($this->action->hasAttributeCondition($this->model, 'missing', fn (): bool => true))->toBeFalse()
@@ -128,5 +72,4 @@ it('exposes static helper methods', function (): void {
 it('exposes static helper methods', function (): void {
     expect(SafeEloquentCastAction::has($this->model, 'name'))->toBeTrue()
         ->and(SafeEloquentCastAction::get($this->model, 'age', 'int'))->toBe(42);
->>>>>>> origin/dev
 });

@@ -43,13 +43,10 @@ return [
         'confirm_password' => 'Confirm Password',
         'save' => 'Save',
         'update' => 'Update',
-<<<<<<< HEAD
-=======
         'services' => 'My Services',
         'practices' => 'My Practices',
         'notifications' => 'Notifications',
         'logout' => 'Log Out',
->>>>>>> origin/dev
     ],
     'user_dropdown' => [
         'manage_account' => 'Account Management',

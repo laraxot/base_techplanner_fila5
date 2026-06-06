@@ -151,21 +151,7 @@ Usage Examples:
 1. Basic rating input:
 <x-pub_theme::rating 
 <x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
-<x-pub_theme::rating 
-    name="service_rating" 
-    legend="Valuta il servizio" />
 
-2. Rating with current value:
-<x-pub_theme::rating 
-<x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
 <x-pub_theme::rating 
     name="experience_rating"
     legend="Come valuti la tua esperienza?"
@@ -174,23 +160,7 @@ Usage Examples:
 3. Rating with descriptive label:
 <x-pub_theme::rating 
 <x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
-<x-pub_theme::rating 
-    name="quality_rating"
-    legend="Qualità del servizio"
-    :value="3"
-    :show-label="true" />
 
-4. Read-only rating display:
-<x-pub_theme::rating 
-<x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
 <x-pub_theme::rating 
     name="readonly_rating"
     legend="Valutazione media"
@@ -201,22 +171,7 @@ Usage Examples:
 5. Required rating:
 <x-pub_theme::rating 
 <x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
-<x-pub_theme::rating 
-    name="required_rating"
-    legend="Valutazione obbligatoria"
-    :required="true" />
 
-6. Custom rating scale (1-10):
-<x-pub_theme::rating 
-<x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
 <x-pub_theme::rating 
     name="detailed_rating"
     legend="Valutazione dettagliata"
@@ -226,29 +181,7 @@ Usage Examples:
 7. Custom labels for rating values:
 <x-pub_theme::rating 
 <x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
-<x-pub_theme::rating 
-    name="custom_rating"
-    legend="Come ti senti?"
-    :value="5"
-    :labels="[
-        1 => 'Terribile',
-        2 => 'Male', 
-        3 => 'Ok',
-        4 => 'Bene',
-        5 => 'Fantastico!'
-    ]" />
 
-8. Large stars:
-<x-pub_theme::rating 
-<x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
 <x-pub_theme::rating 
     name="large_rating"
     legend="Rating con stelle grandi"
@@ -260,24 +193,7 @@ Usage Examples:
     <div class="mb-4">
         <x-pub_theme::rating 
         <x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
-        <x-pub_theme::rating 
-            name="overall_satisfaction"
-            legend="Soddisfazione complessiva"
-            :show-label="true"
-            :required="true" />
-    </div>
-    
-    <div class="mb-4">
-        <x-pub_theme::rating 
-        <x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
+
         <x-pub_theme::rating 
             name="ease_of_use"
             legend="Facilità d'uso"
@@ -288,30 +204,7 @@ Usage Examples:
     <div class="mb-4">
         <x-pub_theme::rating 
         <x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
-        <x-pub_theme::rating 
-            name="response_time"
-            legend="Tempistica di risposta"
-            :show-label="true"
-            :required="true" />
-    </div>
-    
-    <button type="submit" class="btn btn-primary">Invia valutazione</button>
-</form>
 
-10. Rating display with statistics:
-<div class="rating-summary">
-    <div class="row align-items-center">
-        <div class="col-auto">
-            <x-pub_theme::rating 
-            <x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
             <x-pub_theme::rating 
                 name="avg_rating"
                 legend="Valutazione media"
@@ -359,31 +252,7 @@ Usage Examples:
     <div class="mt-3 text-center">
         <x-pub_theme::rating 
         <x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
-        <x-pub_theme::rating 
-            name="avg_display"
-            legend="Media complessiva"
-            :value="4"
-            :readonly="true"
-            :show-label="true" />
-    </div>
-</div>
 
-12. Interactive rating with feedback:
-<div x-data="{ 
-    rating: 0, 
-    hover: 0,
-    labels: ['Pessimo', 'Scarso', 'Sufficiente', 'Buono', 'Ottimo']
-}">
-    <x-pub_theme::rating 
-    <x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
     <x-pub_theme::rating 
         name="interactive_rating"
         legend="Valuta questo contenuto"
@@ -399,32 +268,7 @@ Usage Examples:
 <div class="product-rating d-flex align-items-center">
     <x-pub_theme::rating 
     <x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
-    <x-pub_theme::rating 
-        name="product_rating"
-        legend="Valutazione prodotto"
-        :value="4"
-        :readonly="true"
-        class="me-3" />
-    
-    <span class="fw-bold">4.0</span>
-    <span class="text-muted ms-1">(247 recensioni)</span>
-</div>
 
-14. Rating in cards/reviews:
-<div class="card mb-3">
-    <div class="card-body">
-        <div class="d-flex justify-content-between align-items-start mb-2">
-            <h6 class="card-title mb-0">Mario Rossi</h6>
-            <x-pub_theme::rating 
-            <x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
             <x-pub_theme::rating 
                 name="review_rating"
                 legend="Valutazione recensione"
@@ -443,10 +287,7 @@ Usage Examples:
     <div class="mb-3">
         <x-pub_theme::rating 
         <x-pub_theme::rating 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/dev
+
         <x-pub_theme::rating 
             name="validation_rating"
             legend="La tua valutazione (obbligatoria)"

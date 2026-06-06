@@ -7,22 +7,8 @@ namespace Modules\User\Filament\Resources\TeamUserResource\Pages;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
-<<<<<<< HEAD
-=======
 use Modules\User\Filament\Resources\TeamUserResource;
->>>>>>> origin/dev
-use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
-
-/**
- * Class ViewTeamUser.
- */
-class ViewTeamUser extends XotBaseViewRecord
-{
-<<<<<<< HEAD
-    protected static string $resource = \Modules\User\Filament\Resources\TeamUserResource::class;
-=======
     protected static string $resource = TeamUserResource::class;
->>>>>>> origin/dev
 
     /**
      * @return array<string, Component>

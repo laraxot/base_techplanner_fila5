@@ -4,16 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Mail;
 
-<<<<<<< HEAD
-uses(\Modules\User\Tests\TestCase::class);
-
-use Modules\User\Mail\TeamInvitation;
-=======
 uses(TestCase::class);
 
 use Modules\User\Mail\TeamInvitation;
 use Modules\User\Tests\TestCase;
->>>>>>> origin/dev
 
 test('TeamInvitation mail can be instantiated', function () {
     expect(class_exists(TeamInvitation::class))->toBeTrue();

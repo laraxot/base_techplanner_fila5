@@ -6,18 +6,9 @@ namespace Modules\Xot\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
-<<<<<<< HEAD
-
-use function Safe\file_get_contents;
-
-use Webmozart\Assert\Assert;
-
-=======
 use Webmozart\Assert\Assert;
 
 use function Safe\file_get_contents;
-
->>>>>>> origin/dev
 class ExecuteSqlFileCommand extends Command
 {
     /**
@@ -73,13 +64,8 @@ class ExecuteSqlFileCommand extends Command
         ]);
 
         try {
-<<<<<<< HEAD
-            // Connessione al database - $sql è sempre string grazie a Safe\file_get_contents
-            DB::connection('temp')->unprepared($sql);
-=======
-            $connection = DB::connection('temp');
+$connection = DB::connection('temp');
             $connection->getPdo()->exec($sql);
->>>>>>> origin/dev
             $this->info('File .sql eseguito con successo!');
         } catch (\Exception $e) {
             $this->error("Errore durante l'esecuzione del file: ".$e->getMessage());

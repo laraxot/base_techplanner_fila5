@@ -1,23 +1,8 @@
-<<<<<<< HEAD
-=======
----
-title: "User Module Documentation"
-type: documentation
-tags: [module, documentation]
-created: 2026-06-05
-updated: 2026-06-05
----
-
->>>>>>> origin/dev
 # Modulo User - Documentazione Completa
 
 ## Overview
 
-<<<<<<< HEAD
 Il modulo **User** gestisce l'autenticazione, l'autorizzazione e la gestione utenti completa nel sistema Laraxot PTVX.
-=======
-Il modulo **User** gestisce l'autenticazione, l'autorizzazione e la gestione utenti completa nel sistema [PROJECT_NAME] platform.
->>>>>>> origin/dev
 
 ## Funzionalità Principali
 
@@ -66,15 +51,6 @@ Modules\User\Models\Tenant
 
 ## Architectural Rules — Violations Fixed
 
-<<<<<<< HEAD
-=======
-### Profiles migration governance
-- La tabella `profiles` deve avere sia `id` sia `uuid`.
-- Il modulo User usa **una sola migrazione autorevole** per `profiles`: `*_create_profiles_table.php`.
-- Se manca una colonna come `uuid`, si corregge quella migrazione e si aggiorna il timestamp del file; non si crea una migrazione `add_uuid_to_profiles`.
-- Riferimento canonico: [wiki/concepts/profile-migration-uuid-contract.md](./wiki/concepts/profile-migration-uuid-contract.md)
-
->>>>>>> origin/dev
 ### No Log calls in production code
 `Log::info()`, `Log::debug()`, `Log::error()` are forbidden in Actions, Models, Services, and Widgets.
 Found and removed from `RegisterWidget`. Laravel logs unhandled exceptions automatically.
@@ -91,20 +67,3 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 - Laravel 11/12
 - Spatie Laravel Permission
 - Filament v5
-<<<<<<< HEAD
-=======
-
-
-## Standard Rules & Workflow
-
-- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
-- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
-- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
-
-## Documentation
-
-- [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — Pattern per caricamento efficiente
-- [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
-- [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
-- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
->>>>>>> origin/dev

@@ -36,21 +36,11 @@ I nomi specifici dell'applicazione devono apparire solo:
 4. Usare esempi generici nelle spiegazioni
 
 ## Collegamenti Bidirezionali
-<<<<<<< HEAD
 - [README](readme.md)
-=======
-- [README](README.md)
->>>>>>> origin/dev
 - [Design System](design-system.md)
 - [Componenti](components.md)
 
 ## Vedi Anche
-<<<<<<< HEAD
 - [Documentazione Principale](../../../../docs/readme.md)
 - [Standard di Codice](../../../../docs/standards/coding-standards.md)
 - [Best Practices](../../../../docs/standards/best-practices.md)
-=======
-- [Documentazione Principale](../../../docs/README.md)
-- [Standard di Codice](../../../docs/standards/coding-standards.md)
-- [Best Practices](../../../docs/standards/best-practices.md)
->>>>>>> origin/dev

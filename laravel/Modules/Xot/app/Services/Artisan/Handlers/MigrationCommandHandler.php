@@ -4,34 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services\Artisan\Handlers;
 
-<<<<<<< HEAD
-=======
 use Illuminate\Support\Facades\Config;
->>>>>>> origin/dev
-use Illuminate\Support\Facades\DB;
-use Modules\Xot\Services\Artisan\Contracts\CommandHandlerInterface;
-use Modules\Xot\Services\ArtisanService;
-
-/**
- * Handles migration-related artisan commands.
- */
-class MigrationCommandHandler implements CommandHandlerInterface
-{
-    public function handle(string $moduleName = ''): string
-    {
-<<<<<<< HEAD
-        DB::purge('mysql');
-        DB::reconnect('mysql');
-
-        if ('' !== $moduleName) {
-=======
         $defaultConn = Config::get('database.default');
         $purgeConn = \is_string($defaultConn) && $defaultConn !== '' ? $defaultConn : 'mysql';
         DB::purge($purgeConn);
         DB::reconnect($purgeConn);
 
         if ($moduleName !== '') {
->>>>>>> origin/dev
             echo '<h3>Module '.$moduleName.'</h3>';
 
             return ArtisanService::exe('module:migrate '.$moduleName.' --force');
@@ -42,10 +21,6 @@ class MigrationCommandHandler implements CommandHandlerInterface
 
     public function supports(string $command): bool
     {
-<<<<<<< HEAD
-        return 'migrate' === $command;
-=======
-        return $command === 'migrate';
->>>>>>> origin/dev
+return $command === 'migrate';
     }
 }

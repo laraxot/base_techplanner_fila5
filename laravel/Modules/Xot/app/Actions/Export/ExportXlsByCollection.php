@@ -9,37 +9,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Exports\CollectionExport;
-<<<<<<< HEAD
-=======
 use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
->>>>>>> origin/dev
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
-use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
-use Spatie\QueueableAction\QueueableAction;
-use Symfony\Component\HttpFoundation\BinaryFileResponse;
-
-/**
- * Classe per l'esportazione di collezioni in formato Excel.
- */
-class ExportXlsByCollection
-{
-    use QueueableAction;
-
-    /**
-     * Esporta una collezione in Excel.
-     *
-<<<<<<< HEAD
-     * @param Collection<int|string, mixed>|EloquentCollection<int, Model> $collection La collezione da esportare
-     * @param string                                                       $filename   Nome del file Excel
-     * @param string|null                                                  $transKey   Chiave di traduzione per i campi
-     * @param array<int, string>                                           $fields     Campi da includere nell'export
-=======
      * @param  Collection<int|string, mixed>|EloquentCollection<int, Model>  $collection  La collezione da esportare
      * @param  string  $filename  Nome del file Excel
      * @param  string|null  $transKey  Chiave di traduzione per i campi
      * @param  array<int, string>  $fields  Campi da includere nell'export
->>>>>>> origin/dev
      */
     public function execute(
         Collection|EloquentCollection $collection,
@@ -62,16 +36,9 @@ class ExportXlsByCollection
     /**
      * Esporta una collezione in Excel utilizzando PhpSpreadsheet direttamente.
      *
-<<<<<<< HEAD
-     * @param Collection<int|string, mixed>|EloquentCollection<int, Model> $rows     La collezione da esportare
-     * @param array<int, string>                                           $fields   Campi da includere nell'export
-     * @param string                                                       $filename Nome del file Excel
-     *
-=======
-     * @param  Collection<int|string, mixed>|EloquentCollection<int, Model>  $rows  La collezione da esportare
+* @param  Collection<int|string, mixed>|EloquentCollection<int, Model>  $rows  La collezione da esportare
      * @param  array<int, string>  $fields  Campi da includere nell'export
      * @param  string  $filename  Nome del file Excel
->>>>>>> origin/dev
      * @return string Il percorso del file generato
      */
     public function executeWithSpreadsheet(Collection|EloquentCollection $rows, array $fields, string $filename): string
@@ -96,37 +63,22 @@ class ExportXlsByCollection
     /**
      * Scrive l'intestazione nel foglio Excel.
      *
-<<<<<<< HEAD
-     * @param Worksheet          $sheet  Il foglio Excel
-     * @param array<int, string> $fields I campi da utilizzare come intestazioni
-=======
-     * @param  Worksheet  $sheet  Il foglio Excel
+* @param  Worksheet  $sheet  Il foglio Excel
      * @param  array<int, string>  $fields  I campi da utilizzare come intestazioni
->>>>>>> origin/dev
      */
     protected function writeHeader(Worksheet $sheet, array $fields): void
     {
         foreach ($fields as $col => $field) {
-<<<<<<< HEAD
-            $sheet->setCellValueByColumnAndRow($col + 1, 1, $field);
-=======
-            $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).'1', $field);
->>>>>>> origin/dev
+$sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).'1', $field);
         }
     }
 
     /**
      * Scrive le righe nel foglio di lavoro.
      *
-<<<<<<< HEAD
-     * @param Worksheet                     $sheet  Il foglio di lavoro
-     * @param Collection<int|string, mixed> $rows   I dati da scrivere
-     * @param array<int, string>            $fields I campi da utilizzare per le colonne
-=======
-     * @param  Worksheet  $sheet  Il foglio di lavoro
+* @param  Worksheet  $sheet  Il foglio di lavoro
      * @param  Collection<int|string, mixed>  $rows  I dati da scrivere
      * @param  array<int, string>  $fields  I campi da utilizzare per le colonne
->>>>>>> origin/dev
      */
     protected function writeRows(Worksheet $sheet, Collection $rows, array $fields): void
     {
@@ -134,29 +86,17 @@ class ExportXlsByCollection
         foreach ($rows as $data) {
             foreach ($fields as $col => $field) {
                 $value = $this->extractValue($data, $field);
-<<<<<<< HEAD
-                $sheet->setCellValueByColumnAndRow($col + 1, $row, $value);
-            }
-            ++$row;
-=======
-                $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).(string) $row, $value);
+$sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).(string) $row, $value);
             }
             $row++;
->>>>>>> origin/dev
         }
     }
 
     /**
      * Estrae il valore da un oggetto o array usando il campo specificato.
      *
-<<<<<<< HEAD
-     * @param mixed  $data  I dati da cui estrarre il valore
-     * @param string $field Il campo da estrarre
-     *
-=======
-     * @param  mixed  $data  I dati da cui estrarre il valore
+* @param  mixed  $data  I dati da cui estrarre il valore
      * @param  string  $field  Il campo da estrarre
->>>>>>> origin/dev
      * @return mixed Il valore estratto
      */
     protected function extractValue(mixed $data, string $field): mixed
@@ -168,12 +108,7 @@ class ExportXlsByCollection
     /**
      * Converte EloquentCollection in Support\Collection mantenendo i dati.
      *
-<<<<<<< HEAD
-     * @param EloquentCollection<int, Model> $eloquentCollection
-     *
-=======
-     * @param  EloquentCollection<int, Model>  $eloquentCollection
->>>>>>> origin/dev
+* @param  EloquentCollection<int, Model>  $eloquentCollection
      * @return Collection<int, mixed>
      */
     protected function convertToSupportCollection(EloquentCollection $eloquentCollection): Collection

@@ -8,56 +8,19 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 
 - **Violazioni critiche trovate**: 5
 - **Linee di codice eliminate**: ~200+
-<<<<<<< HEAD
-<<<<<<< .merge_file_iHlsSF
 - **Moduli interessati**: 4 (Geo, Cms, healthcare_app, User)
-=======
-<<<<<<< HEAD
-- **Moduli interessati**: 4 (Geo, Cms, ModuloEsempio, User)
-=======
-- **Moduli interessati**: 4 (Geo, Cms, ExternalProject, User)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_hFH7JJ
-=======
-- **Moduli interessati**: 4 (Geo, Cms, healthcare_app, User)
-- **Moduli interessati**: 4 (Geo, Cms, ModuloEsempio, User)
->>>>>>> origin/dev
 - **Impatto**: Riduzione drastica della duplicazione, miglioramento della manutenibilità
 
 ---
 
 ## Problemi Identificati e Risolti
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_iHlsSF
-=======
->>>>>>> origin/dev
 ### 1. ❌ healthcare_app\Models\BaseModel estendeva Model invece di XotBaseModel
 
 **Prima** (VIOLAZIONE CRITICA):
 ```php
 namespace Modules\healthcare_app\Models;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
-### 1. ❌ ModuloEsempio\Models\BaseModel estendeva Model invece di XotBaseModel
-
-**Prima** (VIOLAZIONE CRITICA):
-```php
-namespace Modules\ModuloEsempio\Models;
-<<<<<<< HEAD
-=======
-### 1. ❌ ExternalProject\Models\BaseModel estendeva Model invece di XotBaseModel
-
-**Prima** (VIOLAZIONE CRITICA):
-```php
-namespace Modules\ExternalProject\Models;
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_hFH7JJ
-=======
->>>>>>> origin/dev
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -71,15 +34,7 @@ abstract class BaseModel extends Model
 
     public $incrementing = true;
     public $timestamps = true;
-<<<<<<< HEAD
-<<<<<<< .merge_file_iHlsSF
     protected $connection = 'healthcare_app';
-=======
-    protected $connection = 'modulo_esempio';
->>>>>>> .merge_file_hFH7JJ
-=======
-    protected $connection = 'healthcare_app';
->>>>>>> origin/dev
     protected $casts = ['published_at' => 'datetime', ...];
     protected $primaryKey = 'id';
     protected $hidden = [];
@@ -93,20 +48,8 @@ abstract class BaseModel extends Model
 
 **Dopo** (✅ DRY & KISS):
 ```php
-<<<<<<< HEAD
-<<<<<<< .merge_file_iHlsSF
 namespace Modules\healthcare_app\Models;
-=======
-<<<<<<< HEAD
-namespace Modules\ModuloEsempio\Models;
-=======
-namespace Modules\ExternalProject\Models;
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_hFH7JJ
-=======
-namespace Modules\healthcare_app\Models;
-namespace Modules\ModuloEsempio\Models;
->>>>>>> origin/dev
 
 use Modules\Xot\Models\XotBaseModel;
 
@@ -116,15 +59,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use HasExtraTrait;
     use InteractsWithMedia;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_iHlsSF
     protected $connection = 'healthcare_app';
-=======
-    protected $connection = 'modulo_esempio';
->>>>>>> .merge_file_hFH7JJ
-=======
-    protected $connection = 'healthcare_app';
->>>>>>> origin/dev
     protected $with = ['extra'];
 }
 ```
@@ -409,20 +344,8 @@ BaseModel → BaseModelLang → Post
 
 | Modulo | Classe | Righe Prima | Righe Dopo | Riduzione |
 |--------|--------|-------------|------------|-----------|
-<<<<<<< HEAD
-<<<<<<< .merge_file_iHlsSF
 | healthcare_app | BaseModel | 66 | 20 | -70% |
-=======
-<<<<<<< HEAD
-| ModuloEsempio | BaseModel | 66 | 20 | -70% |
-=======
-| ExternalProject | BaseModel | 66 | 20 | -70% |
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_hFH7JJ
-=======
-| healthcare_app | BaseModel | 66 | 20 | -70% |
-| ModuloEsempio | BaseModel | 66 | 20 | -70% |
->>>>>>> origin/dev
 | Geo | BasePivot | 59 | 8 | -86% |
 | Geo | BaseMorphPivot | 67 | 8 | -88% |
 | Cms | BasePivot | 60 | 8 | -87% |

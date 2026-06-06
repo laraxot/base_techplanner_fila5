@@ -20,33 +20,10 @@ class MyPage extends XotBaseViewRecord
 ### 2. **Struttura Namespace Corretta**
 ```php
 // ✅ CORRETTO
-<<<<<<< HEAD
-<<<<<<< .merge_file_e1z4zB
-=======
->>>>>>> origin/dev
 namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 // ❌ SBAGLIATO
 namespace Modules\healthcare_app\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
-namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-
-// ❌ SBAGLIATO
-namespace Modules\ExternalProject\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-<<<<<<< HEAD
-=======
-namespace Modules\ModuloEsempio\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-
-// ❌ SBAGLIATO
-namespace Modules\ModuloEsempio\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_KMwnwL
-=======
->>>>>>> origin/dev
 ```
 
 ### 3. **Uso di Schema invece di Form**
@@ -92,20 +69,8 @@ class MyWidget extends Widget implements HasForms
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_e1z4zB
 namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-=======
-<<<<<<< HEAD
-namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-=======
-namespace Modules\ModuloEsempio\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_KMwnwL
-=======
-namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> origin/dev
 
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -128,20 +93,8 @@ class ViewQuestionChart extends XotBaseViewRecord
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_e1z4zB
 namespace Modules\healthcare_app\Filament\Widgets;
-=======
-<<<<<<< HEAD
-namespace Modules\ExternalProject\Filament\Widgets;
-=======
-namespace Modules\ModuloEsempio\Filament\Widgets;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_KMwnwL
-=======
-namespace Modules\healthcare_app\Filament\Widgets;
-namespace Modules\ExternalProject\Filament\Widgets;
->>>>>>> origin/dev
 
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
@@ -206,33 +159,10 @@ public function getFormSchema(): array
 ### 3. **Namespace Errati**
 ```php
 // ❌ SBAGLIATO
-<<<<<<< HEAD
-<<<<<<< .merge_file_e1z4zB
-=======
->>>>>>> origin/dev
 namespace Modules\healthcare_app\App\Filament\Widgets;
 
 // ✅ CORRETTO
 namespace Modules\healthcare_app\Filament\Widgets;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
-namespace Modules\ExternalProject\App\Filament\Widgets;
-
-// ✅ CORRETTO
-namespace Modules\ExternalProject\Filament\Widgets;
-<<<<<<< HEAD
-=======
-namespace Modules\ModuloEsempio\App\Filament\Widgets;
-
-// ✅ CORRETTO
-namespace Modules\ModuloEsempio\Filament\Widgets;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_KMwnwL
-=======
->>>>>>> origin/dev
 ```
 
 ## 🔧 Implementazione Corretta
@@ -243,38 +173,14 @@ namespace Modules\ModuloEsempio\Filament\Widgets;
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_e1z4zB
 namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-=======
-<<<<<<< HEAD
-namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-=======
-namespace Modules\ModuloEsempio\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_KMwnwL
-=======
-namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> origin/dev
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
-<<<<<<< HEAD
-<<<<<<< .merge_file_e1z4zB
 use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
-=======
-<<<<<<< HEAD
-use Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
-=======
-use Modules\ModuloEsempio\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_KMwnwL
-=======
-use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
-use Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
->>>>>>> origin/dev
 
 class ViewQuestionChart extends XotBaseViewRecord
 {
@@ -318,20 +224,8 @@ class ViewQuestionChart extends XotBaseViewRecord
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_e1z4zB
 namespace Modules\healthcare_app\Filament\Widgets;
-=======
-<<<<<<< HEAD
-namespace Modules\ExternalProject\Filament\Widgets;
-=======
-namespace Modules\ModuloEsempio\Filament\Widgets;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_KMwnwL
-=======
-namespace Modules\healthcare_app\Filament\Widgets;
-namespace Modules\ExternalProject\Filament\Widgets;
->>>>>>> origin/dev
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
