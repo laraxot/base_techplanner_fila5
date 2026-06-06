@@ -2,7 +2,10 @@
 
 ## Overview
 The Activity module provides comprehensive audit logging and event sourcing capabilities for the Quaeris platform. It tracks user actions, system events, and data changes across all modules.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Business Purpose
 - **Audit Trail**: Maintain complete audit trails for compliance and security
 - **Event Sourcing**: Implement event sourcing patterns for data reconstruction

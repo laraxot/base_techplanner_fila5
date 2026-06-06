@@ -902,6 +902,7 @@ foreach ($properties as $property) {
 
 **Soluzione**: Rinominato in `$filterData` e rimosso il trait
 
+<<<<<<< HEAD
 ---
 module: theme
 topic: common-filament-traits
@@ -909,3 +910,137 @@ canonical: ../../../Themes/docs/shared-components/common-filament-trait-conflict
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/common-filament-trait-conflicts.md
+=======
+**File**: `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
+
+---
+
+## 🎯 Pattern Raccomandati
+
+### Pattern 1: Pagina con Filtri per Widget
+
+```php
+// Pagina
+class ViewRecord extends XotBaseViewRecord
+{
+    public FilterData $filterData;  // ✅ Nome univoco
+
+    public function mount(int|string $record): void
+    {
+        parent::mount($record);
+        $this->filterData = new FilterData(...);
+    }
+
+    public function getFilters(): ?array
+    {
+        return $this->filterData->toArray();
+    }
+
+    protected function getHeaderWidgets(): array
+    {
+        return [MyWidget::class];
+    }
+}
+
+// Widget
+class MyWidget extends ChartWidget
+{
+    use InteractsWithPageFilters;  // ✅ Accede ai filtri
+
+    protected function getData(): array
+    {
+        $filters = $this->pageFilters;
+        // Usa i filtri...
+    }
+}
+```
+
+### Pattern 2: Dashboard con Filtri
+
+```php
+class MyDashboard extends XotBaseDashboard
+{
+    use HasFiltersForm;  // ✅ Usa il trait di Filament
+
+    public function filtersForm(Schema $schema): Schema
+    {
+        return $schema->components([
+            DatePicker::make('date_from'),
+            DatePicker::make('date_to'),
+            Select::make('status'),
+        ]);
+    }
+
+    protected function getHeaderWidgets(): array
+    {
+        return [
+            MyStatsWidget::class,
+            MyChartWidget::class,
+        ];
+    }
+}
+```
+
+---
+
+## ⚠️ Anti-Patterns da Evitare
+
+### Anti-Pattern 1: Proprietà con Stesso Nome del Trait
+
+```php
+// ❌ NON FARE
+class MyPage extends XotBaseViewRecord
+{
+    use HasFiltersSchema;
+
+    public MyType $filters;  // CONFLITTO!
+}
+```
+
+### Anti-Pattern 2: Ridefininizione di Proprietà del Trait
+
+```php
+// ❌ NON FARE
+class MyWidget extends ChartWidget
+{
+    use InteractsWithPageFilters;
+
+    protected array $pageFilters = [];  // CONFLITTO! Già definita dal trait
+}
+```
+
+### Anti-Pattern 3: Modifica Visibilità
+
+```php
+// ❌ NON FARE
+class MyPage extends XotBaseViewRecord
+{
+    use SomeTrait;  // Definisce: protected $data
+
+    public array $data;  // CONFLITTO! Visibilità diversa
+}
+```
+
+---
+
+## ✅ Conclusioni
+
+- **Sempre verificare** i trait prima di usarli
+- **Usare nomi univoci** per le proprietà personalizzate
+- **Preferire Data Objects** per filtri complessi
+- **Documentare** le scelte architetturali
+- **Testare** dopo ogni modifica
+
+---
+
+**Autore**: Claude Code
+**Versione**: 1.0
+
+## 📎 Riferimenti
+
+- [Filament 4 Documentation](https://filamentphp.com/docs)
+- [Laravel Traits](https://www.php.net/manual/en/language.oop5.traits.php)
+- [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
+- `/Modules/Xot/docs/FILAMENT_4_LARAXOT_RULES.md`
+- `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
+>>>>>>> 8215f950 (.)

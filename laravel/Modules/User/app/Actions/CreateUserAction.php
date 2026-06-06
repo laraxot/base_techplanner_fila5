@@ -63,8 +63,12 @@ class CreateUserAction
     private function sendWelcomeEmail(User $user): void
     {
         // Logica per inviare email di benvenuto
+<<<<<<< HEAD
 Log::info('Invio email di benvenuto a '.(string) $user->getAttribute('email'));
     }
+=======
+        Log::info("Invio email di benvenuto a {$user->email}");    }
+>>>>>>> 8215f950 (.)
 
     private function createAuditLog(User $user): void
     {

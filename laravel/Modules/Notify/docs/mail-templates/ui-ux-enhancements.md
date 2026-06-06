@@ -3,7 +3,10 @@
 ## Introduzione
 
 Questo documento esplora i componenti Filament che possono migliorare l'esperienza utente per i campi `name` e `slug` nel form di gestione dei template email. I miglioramenti proposti seguono le convenzioni del progetto Laraxot, mantenendo la coerenza visiva e migliorando l'usabilità.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Componenti per il Campo `name`
 
 ### 1. TextInput con Icona Prefissa
@@ -214,7 +217,10 @@ return [
 ```
 
 ## Conformità con gli Standard Laraxot
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 Tutti i componenti proposti:
 1. Non utilizzano il metodo `->label()` sui componenti Filament
 2. Restituiscono un array associativo con chiavi stringhe in `getFormSchema()`
@@ -230,7 +236,10 @@ I miglioramenti UI/UX proposti per i campi `name` e `slug` si concentrano su:
 4. **Relazioni intuitive** tra campi correlati
 
 L'implementazione di questi miglioramenti rispetta le convenzioni del progetto Laraxot mentre offre un'esperienza utente significativamente migliorata nella gestione dei template email.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Riferimenti
 
 - [Documentazione Filament Forms](https://filamentphp.com/docs/forms/fields/text-input)

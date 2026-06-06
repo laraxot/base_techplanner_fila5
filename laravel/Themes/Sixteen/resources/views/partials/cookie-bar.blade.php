@@ -74,7 +74,11 @@
                     :aria-label="__('pub_theme::cookies.accept_all')"
                 >
                     {{ __('pub_theme::cookies.accept_all') }}
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> 8215f950 (.)
                     :aria-label="__('pub_theme::cookies.accept_all')"
                 >
                     {{ __('pub_theme::cookies.accept_all') }}

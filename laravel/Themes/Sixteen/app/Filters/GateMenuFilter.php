@@ -16,40 +16,59 @@ class GateMenuFilter implements MenuFilterInterface
     public function filter(array $item): array|false
     {
         // Controllo permesso con Laravel Gate
+<<<<<<< HEAD
 $can = isset($item['can']) && is_string($item['can']) ? $item['can'] : null;
         if (is_string($can)) {
             if (! Gate::allows($can)) {
                 return false;
+=======
+        if (isset($item['can'])) {
+            if (! Gate::allows($item['can'])) {                return false;
+>>>>>>> 8215f950 (.)
             }
         }
 
         // Controllo ruolo utente
+<<<<<<< HEAD
 $role = isset($item['role']) && is_string($item['role']) ? $item['role'] : null;
         if (is_string($role)) {
             if (! auth()->check()) {
+=======
+        if (isset($item['role'])) {            if (! auth()->check()) {
+>>>>>>> 8215f950 (.)
                 return false;
             }
 
             $user = auth()->user();
 
             // Se l'utente ha un metodo hasRole (es. Spatie/Permission)
+<<<<<<< HEAD
 if (is_object($user) && method_exists($user, 'hasRole')) {
                 if (! $user->hasRole($role)) {
                     return false;
+=======
+            if (method_exists($user, 'hasRole')) {
+                if (! $user->hasRole($item['role'])) {                    return false;
+>>>>>>> 8215f950 (.)
                 }
             }
         }
 
         // Controllo permesso diretto
+<<<<<<< HEAD
 $permission = isset($item['permission']) && is_string($item['permission']) ? $item['permission'] : null;
         if (is_string($permission)) {
             if (! auth()->check()) {
+=======
+        if (isset($item['permission'])) {            if (! auth()->check()) {
+>>>>>>> 8215f950 (.)
                 return false;
             }
 
             $user = auth()->user();
 
             // Se l'utente ha un metodo hasPermissionTo (es. Spatie/Permission)
+<<<<<<< HEAD
 if (is_object($user) && method_exists($user, 'hasPermissionTo')) {
                 if (! $user->hasPermissionTo($permission)) {
                     return false;
@@ -58,6 +77,14 @@ if (is_object($user) && method_exists($user, 'hasPermissionTo')) {
             // Fallback a Laravel Gate
 elseif (! Gate::allows($permission)) {
                 return false;
+=======
+            if (method_exists($user, 'hasPermissionTo')) {
+                if (! $user->hasPermissionTo($item['permission'])) {                    return false;
+                }
+            }
+            // Fallback a Laravel Gate
+            elseif (! Gate::allows($item['permission'])) {                return false;
+>>>>>>> 8215f950 (.)
             }
         }
 

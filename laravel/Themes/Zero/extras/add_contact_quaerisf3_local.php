@@ -5,8 +5,12 @@ error_reporting(E_ALL);
 ini_set('display_errors', true);
 
 $base_url = 'http://quaerisf3.local';
+<<<<<<< HEAD
 // $base_url = 'https://manager.quaeris.it';
 $login = '/api/user/login';
+=======
+//$base_url = 'https://manager.quaeris.it';$login = '/api/user/login';
+>>>>>>> 8215f950 (.)
 $addContact = '/api/quaeris/add-contact';
 $email = 'marco.sottana@gmail.com';
 $pass = 'prova123';
@@ -20,10 +24,18 @@ $post = ['email' => $email, 'password' => $pass];
 curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 
 $response = curl_exec($ch);
+<<<<<<< HEAD
 // die('<pre>'.print_r($response, true).'<hr>'.curl_error($ch).'</pre>['.__LINE__.']');
 
 $json = json_decode($response);
 // die('<pre>'.print_r($response, true).'<hr>'.curl_error($ch).'</pre>['.__LINE__.']');
+=======
+//die('<pre>'.print_r($response, true).'<hr>'.curl_error($ch).'</pre>['.__LINE__.']');
+
+
+$json = json_decode($response);
+//die('<pre>'.print_r($response, true).'<hr>'.curl_error($ch).'</pre>['.__LINE__.']');
+>>>>>>> 8215f950 (.)
 
 $data = [
     'survey_pdf_id' => '10',

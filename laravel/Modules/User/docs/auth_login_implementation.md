@@ -20,6 +20,10 @@ La pagina di login è stata migliorata per conformarsi alle regole e alle best p
 ### 1. Utilizzo dei Componenti Filament
 
 Secondo le regole di healthcare_app, si devono utilizzare SEMPRE i componenti Blade nativi di Filament invece di componenti UI personalizzati. Questo garantisce coerenza, manutenibilità e accessibilità.
+<<<<<<< HEAD
+=======
+>>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+>>>>>>> 8215f950 (.)
 
 ```blade
 <!-- ERRATO: Componenti UI personalizzati -->
@@ -200,4 +204,7 @@ rules([
 ## Conclusione
 
 Seguendo queste linee guida, è possibile implementare pagine di autenticazione conformi alle regole e alle best practices di Laraxot, garantendo coerenza, manutenibilità e accessibilità in tutto il progetto.
+<<<<<<< HEAD
 Seguendo queste linee guida, è possibile implementare pagine di autenticazione conformi alle regole e alle best practices di healthcare_app, garantendo coerenza, manutenibilità e accessibilità in tutto il progetto.
+=======
+>>>>>>> 8215f950 (.)

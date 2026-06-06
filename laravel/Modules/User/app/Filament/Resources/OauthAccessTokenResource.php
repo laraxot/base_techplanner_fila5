@@ -27,8 +27,12 @@ use function Safe\json_encode;
 
 class OauthAccessTokenResource extends XotBaseResource
 {
+<<<<<<< HEAD
 if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                             return UserResource::getUrl('view', ['record' => $user]);
+=======
+    /** @phpstan-ignore-next-line Passport wrapper model is valid at runtime, but PHPStan does not fully infer the upstream subtype here. */                            return UserResource::getUrl('view', ['record' => $user]);
+>>>>>>> 8215f950 (.)
                         }
 
                         return null;
@@ -46,8 +50,12 @@ if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
+<<<<<<< HEAD
 if ($state === null) {
                             return null;
+=======
+                        if (null === $state) {                            return null;
+>>>>>>> 8215f950 (.)
                         }
                         if (is_array($state)) {
                             /* @var array<string, mixed> $state */

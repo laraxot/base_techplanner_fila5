@@ -16,8 +16,12 @@ Il metodo `buttonLabel()` **NON esiste** sul componente `Filament\Forms\Componen
 - Seguire la tabella di compatibilità dei metodi nei componenti Filament (vedi doc modulo Patient e Xot).
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Errore e best practice modulo Patient](../../patient/docs/filament-error-fileupload-buttonlabel.md)
 - [Tabella metodi supportati](filament-component-methods.md)
+=======
+- [Errore e best practice modulo Patient](../../patient/docs/filament-error-fileupload-buttonlabel.md)- [Tabella metodi supportati](filament-component-methods.md)
+>>>>>>> 8215f950 (.)
 
 ---
 
@@ -27,4 +31,8 @@ Il metodo `buttonLabel()` **NON esiste** sul componente `Filament\Forms\Componen
 Questa doc va sempre consultata e linkata in ogni review e sviluppo che coinvolga FileUpload. Ogni modulo coinvolto deve avere un collegamento bidirezionale a questa doc.
 
 ## Collegamenti tra versioni di filament-error-fileupload-buttonlabel.md
+<<<<<<< HEAD
 * [filament-error-fileupload-buttonlabel.md](../../patient/docs/filament-error-fileupload-buttonlabel.md)
+=======
+* [filament-error-fileupload-buttonlabel.md](../../patient/docs/filament-error-fileupload-buttonlabel.md)
+>>>>>>> 8215f950 (.)

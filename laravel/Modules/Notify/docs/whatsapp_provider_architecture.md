@@ -1,7 +1,10 @@
 # Architettura WhatsApp Provider per Laraxot
 
 Questo documento definisce l'architettura e gli standard per l'implementazione dei provider WhatsApp nel modulo Notify di Laraxot, mantenendo coerenza con le architetture esistenti per SMS ed email.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Principi Architetturali Fondamentali
 
 L'architettura dei provider WhatsApp segue gli stessi principi dei provider SMS ed email, rispettando i seguenti punti:
@@ -14,8 +17,12 @@ L'architettura dei provider WhatsApp segue gli stessi principi dei provider SMS 
 ## Struttura Directory e Namespace
 
 ```
+<<<<<<< HEAD
 /var/www/html/ptvx/laravel/Modules/Notify/
 ├── app/
+=======
+/var/www/html/ptvx/laravel/Modules/Notify/├── app/
+>>>>>>> 8215f950 (.)
 │   ├── Actions/
 │   │   └── WhatsApp/
 │   │       ├── SendTwilioWhatsAppAction.php

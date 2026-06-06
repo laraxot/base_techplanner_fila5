@@ -3,7 +3,10 @@
 ## Introduzione
 
 Questa guida fornisce una panoramica completa sulla creazione e l'utilizzo di template email HTML responsive nel contesto di Laraxot, con focus su compatibilità, engagement e best practices di settore. 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Principi Fondamentali
 
 ### 1. Responsive Design
@@ -74,8 +77,12 @@ Migliore esperienza su client moderni:
 </div>
 ```
 
+<<<<<<< HEAD
 Per Laraxot, si raccomanda un **approccio ibrido**:
 - Struttura base con tabelle per massima compatibilità
+=======
+Per Laraxot, si raccomanda un **approccio ibrido**:- Struttura base con tabelle per massima compatibilità
+>>>>>>> 8215f950 (.)
 - CSS moderno con fallback per funzionalità avanzate
 
 ## Compatibilità Client Email

@@ -440,8 +440,12 @@ if (RateLimiter::tooManyAttempts($throttleKey, 3)) { // Ridotto a 3 tentativi
         <a href="{{ route('socialite.oauth.redirect', ['provider' => 'github']) }}" 
            class="w-full inline-flex justify-center items-center gap-2 py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
             <x-filament::icon icon="ui-brands.github" class="w-5 h-5 flex-shrink-0" />
+<<<<<<< HEAD
             <span>{{ __('GitHub') }}</span>
         </a>
+=======
+            <span>{{ __('GitHub') }}</span>        </a>
+>>>>>>> 8215f950 (.)
     </div>
 </div>
 ```

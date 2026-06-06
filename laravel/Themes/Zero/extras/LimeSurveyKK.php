@@ -5,6 +5,7 @@ declare(strict_types=1);
 class LimeSurveyKK
 {
     public $db_lime = null;
+<<<<<<< HEAD
 public $db_xot = null;
 
     public $db_quaeris = null;
@@ -17,6 +18,14 @@ public $db_xot = null;
 
     public $base_schema = '';
     public $charts_schema = '';
+=======
+    public $db_xot = null;
+    public $db_quaeris = null;
+    public $db = null;
+    public $survey_id = 0;
+    public $tables = [];
+    public $base_schema = '';    public $charts_schema = '';
+>>>>>>> 8215f950 (.)
 
     public function __construct($survey_id)
     {
@@ -77,8 +86,12 @@ public $db_xot = null;
                 $survey_fields[$key]['text'] = preg_replace("/[\s\n]+/i", ' ', strip_tags($db_question->text));
                 $survey_fields[$key]['title'] = $db_question->title;
                 $survey_fields[$key]['type'] = $db_question->type;
+<<<<<<< HEAD
 $survey_fields[$key]['other'] = ($db_question->other == 'Y');
             } else {
+=======
+                $survey_fields[$key]['other'] = ('Y' == $db_question->other);            } else {
+>>>>>>> 8215f950 (.)
                 $sub_key = $key.$db_question->title;
                 $survey_fields[$key]['sq'][$sub_key] = [
                     'text' => preg_replace("/[\s\n]+/i", ' ', strip_tags($db_question->text)), 'qid' => $db_question->qid, 'pqid' => $db_question->parent_qid, 'title' => $db_question->title, 'type' => $db_question->type,
@@ -132,8 +145,12 @@ $survey_fields[$key]['other'] = ($db_question->other == 'Y');
 
                     $value = $survey->$field;
 
+<<<<<<< HEAD
 if ($attr['other'] && $value == '-oth-') {
                         $other_field = $field.'other';
+=======
+                    if ($attr['other'] && '-oth-' == $value) {                        $other_field = $field.'other';
+>>>>>>> 8215f950 (.)
                         $value = $survey->$other_field;
                     } elseif ($value) {
                         if (! in_array($attr['type'], $types_not_array)) {
@@ -278,8 +295,12 @@ if ($attr['other'] && $value == '-oth-') {
                 $survey_fields[$key]['text'] = trim(preg_replace("/[\s\n]+/i", ' ', strip_tags($db_question->text)));
                 $survey_fields[$key]['title'] = $db_question->title;
                 $survey_fields[$key]['type'] = $db_question->type;
+<<<<<<< HEAD
 $survey_fields[$key]['other'] = ($db_question->other == 'Y');
             } else {
+=======
+                $survey_fields[$key]['other'] = ('Y' == $db_question->other);            } else {
+>>>>>>> 8215f950 (.)
                 $sub_key = $key.$db_question->title;
                 $survey_fields[$key]['sq'][$sub_key] = [
                     'text' => trim(preg_replace("/[\s\n]+/i", ' ', strip_tags($db_question->text))), 'qid' => $db_question->qid, 'pqid' => $db_question->parent_qid, 'title' => $db_question->title, 'type' => $db_question->type,
@@ -293,12 +314,20 @@ $survey_fields[$key]['other'] = ($db_question->other == 'Y');
             FROM
                 survey_pdfs AS sp
             WHERE
+<<<<<<< HEAD
 sp.survey_id = '".$sid."'
         ");
 
         $survey_date_from = (isset($_GET['date_from'])) ? $_GET['date_from'] : (($survey_pdf->date_from) ?: '');
         $survey_date_to = (isset($_GET['date_to'])) ? $_GET['date_to'] : (($survey_pdf->date_to) ?: '');
 
+=======
+                sp.survey_id = '" . $sid . "'
+        ");
+
+        $survey_date_from = (isset($_GET['date_from'])) ? $_GET['date_from'] : (($survey_pdf->date_from) ?: "");
+        $survey_date_to = (isset($_GET['date_to'])) ? $_GET['date_to'] : (($survey_pdf->date_to) ?: "");
+>>>>>>> 8215f950 (.)
         $survey_date_from = (! preg_match("/^[0-9]{4}\-[0-9]{2}\-[0-9]{2}$/i", $survey_date_from)) ? '0000-00-00' : $survey_date_from;
         $survey_date_to = (! preg_match("/^[0-9]{4}\-[0-9]{2}\-[0-9]{2}$/i", $survey_date_to)) ? '0000-00-00' : $survey_date_to;
 
@@ -340,15 +369,23 @@ sp.survey_id = '".$sid."'
                 ls.submitdate IS NOT NULL
         ';
 
+<<<<<<< HEAD
 if ($survey_date_from != '0000-00-00') {
             $sql .= "
+=======
+        if ('0000-00-00' != $survey_date_from) {            $sql .= "
+>>>>>>> 8215f950 (.)
                 AND
                     ls.submitdate >= '".$survey_date_from."'
             ";
         }
 
+<<<<<<< HEAD
 if ($survey_date_to != '0000-00-00') {
             $sql .= "
+=======
+        if ('0000-00-00' != $survey_date_to) {            $sql .= "
+>>>>>>> 8215f950 (.)
                 AND
                     ls.submitdate <= '".$survey_date_to."'
             ";
@@ -412,8 +449,12 @@ if ($survey_date_to != '0000-00-00') {
                 if (property_exists($survey, $field)) {
                     $value = $survey->$field;
 
+<<<<<<< HEAD
 if ($attr['other'] && $value == '-oth-') {
                         $other_field = $field.'other';
+=======
+                    if ($attr['other'] && '-oth-' == $value) {                        $other_field = $field.'other';
+>>>>>>> 8215f950 (.)
                         $value = $survey->$other_field;
                     } elseif ($value) {
                         if (! in_array($attr['type'], $types_not_array)) {
@@ -443,6 +484,7 @@ if ($attr['other'] && $value == '-oth-') {
 
                             if (! $answer) {
                                 $answer_types[$attr['qid']][$value] = $value;
+<<<<<<< HEAD
 // $dump = array(
                                 //     "qid" => $attr["qid"]
                                 //     , "type" => $attr["type"]
@@ -452,6 +494,16 @@ if ($attr['other'] && $value == '-oth-') {
                                 // dddx($dump);
                                 // exit;
                             } elseif (! is_object($answer)) {
+=======
+                            // $dump = array(
+                            //     "qid" => $attr["qid"]
+                            //     , "type" => $attr["type"]
+                            //     , "value" => $value
+                            // );
+
+                            // dddx($dump);
+                            // exit;                            } elseif (! is_object($answer)) {
+>>>>>>> 8215f950 (.)
                                 $value = $answer;
                             } else {
                                 $value = trim($answer->text);
@@ -466,8 +518,12 @@ if ($attr['other'] && $value == '-oth-') {
                         if (! isset($questions[$attr['qid']]['grouped'][$value])) {
                             $questions[$attr['qid']]['grouped'][$value] = 0;
                         }
+<<<<<<< HEAD
 $questions[$attr['qid']]['grouped'][$value]++;
 
+=======
+                        ++$questions[$attr['qid']]['grouped'][$value];
+>>>>>>> 8215f950 (.)
                         // Grouped months, weeks
                         if (! isset($questions[$attr['qid']]['months'][$survey->year.'-'.$month])) {
                             $questions[$attr['qid']]['months'][$survey->year.'-'.$month] = [];
@@ -480,6 +536,7 @@ $questions[$attr['qid']]['grouped'][$value]++;
                         if (! isset($questions[$attr['qid']]['months'][$survey->year.'-'.$month][$value])) {
                             $questions[$attr['qid']]['months'][$survey->year.'-'.$month][$value] = 0;
                         }
+<<<<<<< HEAD
 $questions[$attr['qid']]['months'][$survey->year.'-'.$month][$value]++;
 
                         if (! isset($questions[$attr['qid']]['weeks'][$survey->year.'-'.$week][$value])) {
@@ -487,6 +544,13 @@ $questions[$attr['qid']]['months'][$survey->year.'-'.$month][$value]++;
                         }
 $questions[$attr['qid']]['weeks'][$survey->year.'-'.$week][$value]++;
 
+=======
+                        ++$questions[$attr['qid']]['months'][$survey->year.'-'.$month][$value];
+                        if (! isset($questions[$attr['qid']]['weeks'][$survey->year.'-'.$week][$value])) {
+                            $questions[$attr['qid']]['weeks'][$survey->year.'-'.$week][$value] = 0;
+                        }
+                        ++$questions[$attr['qid']]['weeks'][$survey->year.'-'.$week][$value];
+>>>>>>> 8215f950 (.)
                         // Grouped per survey > months, weeks
                         if (! isset($answers_per_period['months'][$survey->year.'-'.$month][$survey->id][$attr['qid']])) {
                             $answers_per_period['months'][$survey->year.'-'.$month][$survey->id][$attr['qid']] = [];
@@ -494,16 +558,24 @@ $questions[$attr['qid']]['weeks'][$survey->year.'-'.$week][$value]++;
                         if (! isset($answers_per_period['months'][$survey->year.'-'.$month][$survey->id][$attr['qid']][$value])) {
                             $answers_per_period['months'][$survey->year.'-'.$month][$survey->id][$attr['qid']][$value] = 0;
                         }
+<<<<<<< HEAD
 $answers_per_period['months'][$survey->year.'-'.$month][$survey->id][$attr['qid']][$value]++;
 
+=======
+                        ++$answers_per_period['months'][$survey->year.'-'.$month][$survey->id][$attr['qid']][$value];
+>>>>>>> 8215f950 (.)
                         if (! isset($answers_per_period['weeks'][$survey->year.'-'.$week][$survey->id][$attr['qid']])) {
                             $answers_per_period['weeks'][$survey->year.'-'.$week][$survey->id][$attr['qid']] = [];
                         }
                         if (! isset($answers_per_period['weeks'][$survey->year.'-'.$week][$survey->id][$attr['qid']][$value])) {
                             $answers_per_period['weeks'][$survey->year.'-'.$week][$survey->id][$attr['qid']][$value] = 0;
                         }
+<<<<<<< HEAD
 $answers_per_period['weeks'][$survey->year.'-'.$week][$survey->id][$attr['qid']][$value]++;
 
+=======
+                        ++$answers_per_period['weeks'][$survey->year.'-'.$week][$survey->id][$attr['qid']][$value];
+>>>>>>> 8215f950 (.)
                         // Grouped per record
                         if (! isset($answers_per_record[$survey->id][$attr['qid']])) {
                             $answers_per_record[$survey->id][$attr['qid']] = [];
@@ -511,8 +583,12 @@ $answers_per_period['weeks'][$survey->year.'-'.$week][$survey->id][$attr['qid']]
                         if (! isset($answers_per_record[$survey->id][$attr['qid']][$value])) {
                             $answers_per_record[$survey->id][$attr['qid']][$value] = 0;
                         }
+<<<<<<< HEAD
 $answers_per_record[$survey->id][$attr['qid']][$value]++;
 
+=======
+                        ++$answers_per_record[$survey->id][$attr['qid']][$value];
+>>>>>>> 8215f950 (.)
                         // Detailed year, month, week
                         // if (!isset($questions[$attr["qid"]]["year"][$survey->year])) {
                         //     $questions[$attr["qid"]]["year"][$survey->year] = array(
@@ -543,8 +619,12 @@ $answers_per_record[$survey->id][$attr['qid']][$value]++;
                         if (! isset($questions[$attr['qid']]['tot'])) {
                             $questions[$attr['qid']]['tot'] = 0;
                         }
+<<<<<<< HEAD
 $questions[$attr['qid']]['tot']++;
                     }
+=======
+                        ++$questions[$attr['qid']]['tot'];                    }
+>>>>>>> 8215f950 (.)
                 }
 
                 if ($attr['sq']) {
@@ -606,8 +686,12 @@ $questions[$attr['qid']]['tot']++;
                                 if (! isset($questions[$sub_attr['qid']]['grouped'][$value])) {
                                     $questions[$sub_attr['qid']]['grouped'][$value] = 0;
                                 }
+<<<<<<< HEAD
 $questions[$sub_attr['qid']]['grouped'][$value]++;
 
+=======
+                                ++$questions[$sub_attr['qid']]['grouped'][$value];
+>>>>>>> 8215f950 (.)
                                 // Grouped months, weeks
                                 if (! isset($questions[$sub_attr['qid']]['months'][$survey->year.'-'.$month])) {
                                     $questions[$sub_attr['qid']]['months'][$survey->year.'-'.$month] = [];
@@ -620,6 +704,7 @@ $questions[$sub_attr['qid']]['grouped'][$value]++;
                                 if (! isset($questions[$sub_attr['qid']]['months'][$survey->year.'-'.$month][$value])) {
                                     $questions[$sub_attr['qid']]['months'][$survey->year.'-'.$month][$value] = 0;
                                 }
+<<<<<<< HEAD
 $questions[$sub_attr['qid']]['months'][$survey->year.'-'.$month][$value]++;
 
                                 if (! isset($questions[$sub_attr['qid']]['weeks'][$survey->year.'-'.$week][$value])) {
@@ -627,6 +712,13 @@ $questions[$sub_attr['qid']]['months'][$survey->year.'-'.$month][$value]++;
                                 }
 $questions[$sub_attr['qid']]['weeks'][$survey->year.'-'.$week][$value]++;
 
+=======
+                                ++$questions[$sub_attr['qid']]['months'][$survey->year.'-'.$month][$value];
+                                if (! isset($questions[$sub_attr['qid']]['weeks'][$survey->year.'-'.$week][$value])) {
+                                    $questions[$sub_attr['qid']]['weeks'][$survey->year.'-'.$week][$value] = 0;
+                                }
+                                ++$questions[$sub_attr['qid']]['weeks'][$survey->year.'-'.$week][$value];
+>>>>>>> 8215f950 (.)
                                 // Grouped per survey > months, weeks
                                 if (! isset($answers_per_period['months'][$survey->year.'-'.$month][$survey->id][$sub_attr['qid']])) {
                                     $answers_per_period['months'][$survey->year.'-'.$month][$survey->id][$sub_attr['qid']] = [];
@@ -634,16 +726,24 @@ $questions[$sub_attr['qid']]['weeks'][$survey->year.'-'.$week][$value]++;
                                 if (! isset($answers_per_period['months'][$survey->year.'-'.$month][$survey->id][$sub_attr['qid']][$value])) {
                                     $answers_per_period['months'][$survey->year.'-'.$month][$survey->id][$sub_attr['qid']][$value] = 0;
                                 }
+<<<<<<< HEAD
 $answers_per_period['months'][$survey->year.'-'.$month][$survey->id][$sub_attr['qid']][$value]++;
 
+=======
+                                ++$answers_per_period['months'][$survey->year.'-'.$month][$survey->id][$sub_attr['qid']][$value];
+>>>>>>> 8215f950 (.)
                                 if (! isset($answers_per_period['weeks'][$survey->year.'-'.$week][$survey->id][$sub_attr['qid']])) {
                                     $answers_per_period['weeks'][$survey->year.'-'.$week][$survey->id][$sub_attr['qid']] = [];
                                 }
                                 if (! isset($answers_per_period['weeks'][$survey->year.'-'.$week][$survey->id][$sub_attr['qid']][$value])) {
                                     $answers_per_period['weeks'][$survey->year.'-'.$week][$survey->id][$sub_attr['qid']][$value] = 0;
                                 }
+<<<<<<< HEAD
 $answers_per_period['weeks'][$survey->year.'-'.$week][$survey->id][$sub_attr['qid']][$value]++;
 
+=======
+                                ++$answers_per_period['weeks'][$survey->year.'-'.$week][$survey->id][$sub_attr['qid']][$value];
+>>>>>>> 8215f950 (.)
                                 // Grouped per record
                                 if (! isset($answers_per_record[$survey->id][$sub_attr['qid']])) {
                                     $answers_per_record[$survey->id][$sub_attr['qid']] = [];
@@ -651,8 +751,12 @@ $answers_per_period['weeks'][$survey->year.'-'.$week][$survey->id][$sub_attr['qi
                                 if (! isset($answers_per_record[$survey->id][$sub_attr['qid']][$value])) {
                                     $answers_per_record[$survey->id][$sub_attr['qid']][$value] = 0;
                                 }
+<<<<<<< HEAD
 $answers_per_record[$survey->id][$sub_attr['qid']][$value]++;
 
+=======
+                                ++$answers_per_record[$survey->id][$sub_attr['qid']][$value];
+>>>>>>> 8215f950 (.)
                                 // Detailed year, month, week
                                 // if (!isset($questions[$sub_attr["qid"]]["year"][$survey->year])) {
                                 //     $questions[$sub_attr["qid"]]["year"][$survey->year] = array(
@@ -690,8 +794,12 @@ $answers_per_record[$survey->id][$sub_attr['qid']][$value]++;
                                 if (! isset($questions[$sub_attr['qid']]['tot'])) {
                                     $questions[$sub_attr['qid']]['tot'] = 0;
                                 }
+<<<<<<< HEAD
 $questions[$sub_attr['qid']]['tot']++;
 
+=======
+                                ++$questions[$sub_attr['qid']]['tot'];
+>>>>>>> 8215f950 (.)
                                 $questions[$attr['qid']]['subquestions'][$sub_attr['qid']] = $questions[$sub_attr['qid']];
                                 $questions[$attr['qid']]['subquestions'][$sub_attr['qid']]['text'] = $sub_attr['text'];
                             }
@@ -865,8 +973,12 @@ $questions[$sub_attr['qid']]['tot']++;
                 $survey_fields[$key]['text'] = preg_replace("/[\s\n]+/i", ' ', strip_tags($db_question->text));
                 $survey_fields[$key]['title'] = $db_question->title;
                 $survey_fields[$key]['type'] = $db_question->type;
+<<<<<<< HEAD
 $survey_fields[$key]['other'] = ($db_question->other == 'Y');
             } else {
+=======
+                $survey_fields[$key]['other'] = ('Y' == $db_question->other);            } else {
+>>>>>>> 8215f950 (.)
                 $sub_key = $key.$db_question->title;
                 $survey_fields[$key]['sq'][$sub_key] = [
                     'text' => preg_replace("/[\s\n]+/i", ' ', strip_tags($db_question->text)), 'qid' => $db_question->qid, 'pqid' => $db_question->parent_qid, 'title' => $db_question->title, 'type' => $db_question->type,
@@ -1011,8 +1123,12 @@ $survey_fields[$key]['other'] = ($db_question->other == 'Y');
                 $survey_fields[$key]['text'] = preg_replace("/[\s\n]+/i", ' ', strip_tags($db_question->text));
                 $survey_fields[$key]['title'] = $db_question->title;
                 $survey_fields[$key]['type'] = $db_question->type;
+<<<<<<< HEAD
 $survey_fields[$key]['other'] = ($db_question->other == 'Y');
             } else {
+=======
+                $survey_fields[$key]['other'] = ('Y' == $db_question->other);            } else {
+>>>>>>> 8215f950 (.)
                 $sub_key = $key.$db_question->title;
                 $survey_fields[$key]['sq'][$sub_key] = [
                     'text' => preg_replace("/[\s\n]+/i", ' ', strip_tags($db_question->text)), 'qid' => $db_question->qid, 'pqid' => $db_question->parent_qid, 'title' => $db_question->title, 'type' => $db_question->type,
@@ -1065,8 +1181,12 @@ $survey_fields[$key]['other'] = ($db_question->other == 'Y');
 
                     $value = $survey->$field;
 
+<<<<<<< HEAD
 if ($attr['other'] && $value == '-oth-') {
                         $other_field = $field.'other';
+=======
+                    if ($attr['other'] && '-oth-' == $value) {                        $other_field = $field.'other';
+>>>>>>> 8215f950 (.)
                         $value = $survey->$other_field;
                     } elseif ($value) {
                         if (! in_array($attr['type'], $types_not_array)) {
@@ -1113,8 +1233,12 @@ if ($attr['other'] && $value == '-oth-') {
                         if (! isset($answers[$id]['grouped'][$value])) {
                             $answers[$id]['grouped'][$value] = 0;
                         }
+<<<<<<< HEAD
 $answers[$id]['grouped'][$value]++;
                     }
+=======
+                        ++$answers[$id]['grouped'][$value];                    }
+>>>>>>> 8215f950 (.)
                 }
 
                 if ($attr['sq']) {
@@ -1171,8 +1295,12 @@ $answers[$id]['grouped'][$value]++;
                                 if (! isset($answers[$id]['grouped'][$value])) {
                                     $answers[$id]['grouped'][$value] = 0;
                                 }
+<<<<<<< HEAD
 $answers[$id]['grouped'][$value]++;
                             }
+=======
+                                ++$answers[$id]['grouped'][$value];                            }
+>>>>>>> 8215f950 (.)
                         }
                     }
                 }

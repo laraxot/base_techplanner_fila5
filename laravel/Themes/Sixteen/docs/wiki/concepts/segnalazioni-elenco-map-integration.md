@@ -57,7 +57,10 @@ Properties minime per marker/popup:
 ## UX attesa (2026-06)
 
 - `../../../../Modules/Fixcity/app/Actions/GenerateTicketsJsonAction.php`
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Build obbligatoria dopo modifica JS/CSS
 
 ```bash

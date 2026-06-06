@@ -56,8 +56,12 @@ declare(strict_types=1);
 
                     @if (Route::has('password.request'))
                         <div class="text-sm">
+<<<<<<< HEAD
 <a href="{{ route('password.request') }}" class="font-medium text-green-600 hover:text-green-500">
                                 {{ __('pub_theme::auth.login.forgot_password') }}
+=======
+                            <a href="{{ route('password.request') }}" class="font-medium text-blue-600 hover:text-blue-500">                                {{ __('pub_theme::auth.login.forgot_password') }}
+>>>>>>> 8215f950 (.)
                             </a>
                         </div>
                     @endif

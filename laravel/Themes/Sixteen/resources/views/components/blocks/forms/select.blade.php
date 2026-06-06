@@ -131,9 +131,13 @@
 
         @if($searchable)
             <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+<<<<<<< HEAD
 <x-filament::icon icon="heroicon-o-magnifying-glass" class="h-5 w-5 text-gray-400" />
 f7ac8eda (.)
             </div>
+=======
+                <x-heroicon-o-magnifying-glass class="h-5 w-5 text-gray-400" />            </div>
+>>>>>>> 8215f950 (.)
         @endif
     </div>
 

@@ -4,9 +4,13 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Collection;
+=======
+use Illuminate\Database\Eloquent\Casts\Attribute;
+>>>>>>> 8215f950 (.)
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -20,7 +24,11 @@ use Illuminate\Support\Str;
  *
  * Rappresenta atti, delibere, determine, regolamenti
  * e altri documenti ufficiali dell'ente secondo l'ontologia AGID
+<<<<<<< HEAD
 *
+=======
+ *
+>>>>>>> 8215f950 (.)
  * @property int $id
  * @property string $title
  * @property string|null $slug
@@ -88,6 +96,14 @@ use Illuminate\Support\Str;
  * @property-read PublicPerson|null $author
  * @property-read MunicipalService|null $service
  * @property-read Collection<int, ContactPoint> $contacts
+<<<<<<< HEAD
+=======
+ */
+class PublicDocument extends Model
+{
+    use HasFactory, SoftDeletes;
+
+>>>>>>> 8215f950 (.)
     protected $table = 'sixteen_public_documents';
 
     protected $fillable = [
@@ -183,6 +199,214 @@ use Illuminate\Support\Str;
         'timestamp' => 'json',
         'metadata' => 'json',
     ];
+<<<<<<< HEAD
+=======
+
+    /**
+     * Tipologie di documento secondo AGID
+     */
+    public const DOCUMENT_TYPES = [
+        // Atti normativi
+        'statute' => 'Statuto',
+        'regulation' => 'Regolamento',
+        'ordinance' => 'Ordinanza',
+        'directive' => 'Direttiva',
+
+        // Atti amministrativi
+        'deliberation' => 'Deliberazione',
+        'determination' => 'Determinazione',
+        'decree' => 'Decreto',
+        'resolution' => 'Risoluzione',
+        'circular' => 'Circolare',
+        'instruction' => 'Istruzione',
+
+        // Atti di programmazione
+        'plan' => 'Piano',
+        'program' => 'Programma',
+        'budget' => 'Bilancio',
+        'report' => 'Relazione',
+
+        // Documenti contrattuali
+        'contract' => 'Contratto',
+        'agreement' => 'Convenzione',
+        'concession' => 'Concessione',
+        'authorization' => 'Autorizzazione',
+        'permit' => 'Permesso',
+        'license' => 'Licenza',
+
+        // Atti di trasparenza
+        'transparency_act' => 'Atto di Trasparenza',
+        'publication_notice' => 'Avviso di Pubblicazione',
+        'selection_notice' => 'Avviso di Selezione',
+        'tender_notice' => 'Bando di Gara',
+
+        // Altri documenti
+        'form' => 'Modulistica',
+        'guide' => 'Guida',
+        'manual' => 'Manuale',
+        'procedure' => 'Procedura',
+        'specification' => 'Capitolato',
+        'minutes' => 'Verbale',
+        'opinion' => 'Parere',
+        'certificate' => 'Certificato',
+        'other' => 'Altro',
+    ];
+
+    /**
+     * Stati del documento
+     */
+    public const DOCUMENT_STATUSES = [
+        'draft' => 'Bozza',
+        'review' => 'In Revisione',
+        'approved' => 'Approvato',
+        'published' => 'Pubblicato',
+        'effective' => 'In Vigore',
+        'suspended' => 'Sospeso',
+        'revoked' => 'Revocato',
+        'expired' => 'Scaduto',
+        'archived' => 'Archiviato',
+    ];
+
+    /**
+     * Stati di pubblicazione
+     */
+    public const PUBLICATION_STATUSES = [
+        'unpublished' => 'Non Pubblicato',
+        'scheduled' => 'Programmato',
+        'published' => 'Pubblicato',
+        'updated' => 'Aggiornato',
+        'withdrawn' => 'Ritirato',
+    ];
+
+    /**
+     * Livelli di privacy secondo GDPR
+     */
+    public const PRIVACY_LEVELS = [
+        'public' => 'Pubblico',
+        'restricted' => 'Accesso Limitato',
+        'confidential' => 'Riservato',
+        'classified' => 'Classificato',
+        'personal_data' => 'Dati Personali',
+        'sensitive_data' => 'Dati Sensibili',
+    ];
+
+    /**
+     * Sezioni di Amministrazione Trasparente
+     */
+    public const TRANSPARENCY_SECTIONS = [
+        'organization' => 'Organizzazione',
+        'consulting' => 'Consulenti e Collaboratori',
+        'personnel' => 'Personale',
+        'performance' => 'Performance',
+        'public_procurement' => 'Bandi di Gara e Contratti',
+        'grants' => 'Sovvenzioni, Contributi, Sussidi',
+        'budgets' => 'Bilanci',
+        'assets' => 'Beni Immobili e Gestione Patrimonio',
+        'services' => 'Servizi Erogati',
+        'public_works' => 'Opere Pubbliche',
+        'urban_planning' => 'Pianificazione e Governo del Territorio',
+        'environmental_info' => 'Informazioni Ambientali',
+        'social_interventions' => 'Interventi Straordinari e di Emergenza',
+        'other' => 'Altri Contenuti',
+    ];
+
+    protected $table = 'sixteen_public_documents';
+
+    protected $fillable = [
+        'title',
+        'slug',
+        'description',
+        'summary',
+        'document_type',
+        'category',
+        'subcategory',
+        'organizational_unit_id',
+        'author_id',
+        'service_id',
+        'document_number',
+        'protocol_number',
+        'registration_number',
+        'document_status',
+        'publication_status',
+        'legal_status',
+        'classification_code',
+        'subject_matter',
+        'keywords',
+        'language',
+        'document_date',
+        'approval_date',
+        'publication_date',
+        'effective_date',
+        'expiry_date',
+        'review_date',
+        'file_path',
+        'file_name',
+        'file_size',
+        'file_type',
+        'file_hash',
+        'original_format',
+        'accessible_format',
+        'signed_version',
+        'attachments',
+        'versions',
+        'related_documents',
+        'legislative_references',
+        'administrative_references',
+        'transparency_section',
+        'access_rights',
+        'privacy_level',
+        'retention_period',
+        'disposal_date',
+        'digital_signature',
+        'timestamp',
+        'accessibility_compliance',
+        'format_compliance',
+        'metadata_compliance',
+        'download_count',
+        'last_accessed',
+        'checksum',
+        'is_published',
+        'is_active',
+        'is_searchable',
+        'is_downloadable',
+        'requires_authentication',
+        'visibility_level',
+        'metadata',
+    ];
+
+    protected $casts = [
+        'document_date' => 'date',
+        'approval_date' => 'date',
+        'publication_date' => 'date',
+        'effective_date' => 'date',
+        'expiry_date' => 'date',
+        'review_date' => 'date',
+        'disposal_date' => 'date',
+        'last_accessed' => 'datetime',
+        'file_size' => 'integer',
+        'download_count' => 'integer',
+        'retention_period' => 'integer',
+        'is_published' => 'boolean',
+        'is_active' => 'boolean',
+        'is_searchable' => 'boolean',
+        'is_downloadable' => 'boolean',
+        'requires_authentication' => 'boolean',
+        'accessibility_compliance' => 'boolean',
+        'format_compliance' => 'boolean',
+        'metadata_compliance' => 'boolean',
+        'keywords' => 'json',
+        'attachments' => 'json',
+        'versions' => 'json',
+        'related_documents' => 'json',
+        'legislative_references' => 'json',
+        'administrative_references' => 'json',
+        'access_rights' => 'json',
+        'digital_signature' => 'json',
+        'timestamp' => 'json',
+        'metadata' => 'json',
+    ];
+
+>>>>>>> 8215f950 (.)
     /**
      * Relazione con l'unità organizzativa
      */
@@ -242,7 +466,11 @@ use Illuminate\Support\Str;
     public function scopeActive($query)
     {
         return $query->where('is_active', true)
+<<<<<<< HEAD
 ->where(function ($q): void {
+=======
+            ->where(function ($q) {
+>>>>>>> 8215f950 (.)
                 $q->whereNull('expiry_date')
                     ->orWhere('expiry_date', '>', now());
             });
@@ -278,7 +506,11 @@ use Illuminate\Support\Str;
     public function scopeEffective($query)
     {
         return $query->where('document_status', 'effective')
+<<<<<<< HEAD
 ->where(function ($q): void {
+=======
+            ->where(function ($q) {
+>>>>>>> 8215f950 (.)
                 $q->whereNull('effective_date')
                     ->orWhere('effective_date', '<=', now());
             });
@@ -293,7 +525,11 @@ use Illuminate\Support\Str;
     }
 
     /**
+<<<<<<< HEAD
 * Accessor per il nome del tipo di documento
+=======
+     * Accessor per il nome del tipo di documento
+>>>>>>> 8215f950 (.)
      */
     protected function documentTypeName(): Attribute
     {
@@ -382,7 +618,11 @@ use Illuminate\Support\Str;
     protected function formattedFileSize(): Attribute
     {
         return Attribute::make(
+<<<<<<< HEAD
             get: function (): void {
+=======
+            get: function () {
+>>>>>>> 8215f950 (.)
                 if (! $this->file_size) {
                     return;
                 }
@@ -439,21 +679,269 @@ use Illuminate\Support\Str;
     }
 
     /**
+<<<<<<< HEAD
      * Boot del modello
      */
     protected static function boot(): void
+=======
+     * Ottiene le parole chiave formattate
+     */
+    public function getFormattedKeywords(): array
+    {
+        if (! $this->keywords || ! is_array($this->keywords)) {
+            return [];
+        }
+
+        return collect($this->keywords)
+            ->map(function ($keyword) {
+                return is_string($keyword) ? ['name' => $keyword, 'slug' => Str::slug($keyword)] : $keyword;
+            })
+            ->toArray();
+    }
+
+    /**
+     * Ottiene gli allegati formattati
+     */
+    public function getFormattedAttachments(): array
+    {
+        if (! $this->attachments || ! is_array($this->attachments)) {
+            return [];
+        }
+
+        return collect($this->attachments)
+            ->map(function ($attachment) {
+                if (is_string($attachment)) {
+                    return [
+                        'path' => $attachment,
+                        'name' => basename($attachment),
+                        'url' => asset('storage/'.$attachment),
+                        'type' => pathinfo($attachment, PATHINFO_EXTENSION),
+                    ];
+                }
+
+                return array_merge([
+                    'url' => isset($attachment['path']) ? asset('storage/'.$attachment['path']) : null,
+                ], $attachment);
+            })
+            ->toArray();
+    }
+
+    /**
+     * Ottiene le versioni del documento
+     */
+    public function getFormattedVersions(): array
+    {
+        if (! $this->versions || ! is_array($this->versions)) {
+            return [];
+        }
+
+        return collect($this->versions)
+            ->map(function ($version, $index) {
+                return array_merge([
+                    'version' => $index + 1,
+                    'date' => null,
+                    'changes' => null,
+                    'file' => null,
+                ], is_array($version) ? $version : ['file' => $version]);
+            })
+            ->sortByDesc('version')
+            ->values()
+            ->toArray();
+    }
+
+    /**
+     * Ottiene i riferimenti normativi formattati
+     */
+    public function getFormattedLegislativeReferences(): array
+    {
+        if (! $this->legislative_references || ! is_array($this->legislative_references)) {
+            return [];
+        }
+
+        return collect($this->legislative_references)
+            ->map(function ($reference) {
+                if (is_string($reference)) {
+                    return ['title' => $reference];
+                }
+
+                return $reference;
+            })
+            ->toArray();
+    }
+
+    /**
+     * Incrementa il contatore di download
+     */
+    public function incrementDownloadCount(): void
+    {
+        $this->increment('download_count');
+        $this->update(['last_accessed' => now()]);
+    }
+
+    /**
+     * Verifica se è accessibile al pubblico
+     */
+    public function isPubliclyAccessible(): bool
+    {
+        return $this->is_published &&
+               $this->visibility_level === 'public' &&
+               $this->privacy_level === 'public' &&
+               ! $this->requires_authentication;
+    }
+
+    /**
+     * Verifica l'integrità del file
+     */
+    public function verifyFileIntegrity(): bool
+    {
+        if (! $this->file_path || ! $this->checksum) {
+            return false;
+        }
+
+        $filePath = storage_path('app/'.$this->file_path);
+
+        if (! file_exists($filePath)) {
+            return false;
+        }
+
+        return hash_file('sha256', $filePath) === $this->checksum;
+    }
+
+    /**
+     * Verifica la compliance AGID
+     */
+    public function checkAgidCompliance(): array
+    {
+        $compliance = [
+            'accessibility' => $this->accessibility_compliance,
+            'format' => $this->format_compliance,
+            'metadata' => $this->metadata_compliance,
+            'overall' => false,
+        ];
+
+        // Verifica requisiti AGID
+        $requirements = [
+            'has_title' => ! empty($this->title),
+            'has_description' => ! empty($this->description),
+            'has_date' => ! empty($this->document_date),
+            'has_author' => ! empty($this->author_id),
+            'has_classification' => ! empty($this->classification_code),
+            'has_keywords' => ! empty($this->keywords),
+            'accessible_format' => ! empty($this->accessible_format),
+            'digital_signature' => ! empty($this->digital_signature),
+        ];
+
+        $compliance['requirements'] = $requirements;
+        $compliance['score'] = count(array_filter($requirements)) / count($requirements) * 100;
+        $compliance['overall'] = $compliance['score'] >= 80;
+
+        return $compliance;
+    }
+
+    /**
+     * Ottiene i dati strutturati per SEO
+     */
+    public function getStructuredData(): array
+    {
+        return [
+            '@context' => 'https://schema.org',
+            '@type' => 'DigitalDocument',
+            'name' => $this->title,
+            'description' => $this->description,
+            'dateCreated' => $this->document_date?->toISOString(),
+            'datePublished' => $this->publication_date?->toISOString(),
+            'dateModified' => $this->updated_at->toISOString(),
+            'author' => [
+                '@type' => 'Person',
+                'name' => $this->author?->full_name,
+            ],
+            'publisher' => [
+                '@type' => 'Organization',
+                'name' => $this->organizationalUnit?->name ?? 'Comune',
+            ],
+            'encodingFormat' => $this->file_type,
+            'contentSize' => $this->formatted_file_size,
+            'keywords' => is_array($this->keywords) ? implode(', ', array_column($this->keywords, 'name')) : null,
+            'inLanguage' => $this->language ?? 'it',
+            'isAccessibleForFree' => true,
+            'license' => 'https://creativecommons.org/licenses/by/4.0/',
+        ];
+    }
+
+    /**
+     * Ottiene le informazioni complete del documento
+     */
+    public function getDocumentDetails(): array
+    {
+        return [
+            'basic_info' => [
+                'title' => $this->title,
+                'description' => $this->description,
+                'type' => $this->document_type_name,
+                'category' => $this->category,
+                'status' => $this->document_status_name,
+                'document_number' => $this->document_number,
+                'protocol_number' => $this->protocol_number,
+            ],
+            'dates' => [
+                'document_date' => $this->document_date,
+                'approval_date' => $this->approval_date,
+                'publication_date' => $this->publication_date,
+                'effective_date' => $this->effective_date,
+                'expiry_date' => $this->expiry_date,
+                'is_effective' => $this->is_effective,
+                'is_expired' => $this->is_expired,
+            ],
+            'file_info' => [
+                'file_name' => $this->file_name,
+                'file_type' => $this->file_type,
+                'file_size' => $this->formatted_file_size,
+                'download_url' => $this->download_url,
+                'accessible_format' => $this->accessible_format,
+                'download_count' => $this->download_count,
+            ],
+            'classification' => [
+                'classification_code' => $this->classification_code,
+                'transparency_section' => $this->transparency_section,
+                'privacy_level' => $this->privacy_level_name,
+                'keywords' => $this->getFormattedKeywords(),
+            ],
+            'relationships' => [
+                'author' => $this->author?->full_name,
+                'organizational_unit' => $this->organizationalUnit?->name,
+                'service' => $this->service?->name,
+                'attachments' => $this->getFormattedAttachments(),
+                'versions' => $this->getFormattedVersions(),
+            ],
+            'compliance' => $this->checkAgidCompliance(),
+        ];
+    }
+
+    /**
+     * Boot del modello
+     */
+    protected static function boot()
+>>>>>>> 8215f950 (.)
     {
         parent::boot();
 
         // Genera slug se mancante
+<<<<<<< HEAD
 static::creating(function ($model): void {
+=======
+        static::creating(function ($model) {
+>>>>>>> 8215f950 (.)
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->title);
             }
         });
 
         // Assicura unicità dello slug
+<<<<<<< HEAD
 static::creating(function ($model): void {
+=======
+        static::creating(function ($model) {
+>>>>>>> 8215f950 (.)
             $originalSlug = $model->slug;
             $counter = 1;
 
@@ -464,7 +952,11 @@ static::creating(function ($model): void {
         });
 
         // Set default values
+<<<<<<< HEAD
 static::creating(function ($model): void {
+=======
+        static::creating(function ($model) {
+>>>>>>> 8215f950 (.)
             if (is_null($model->document_status)) {
                 $model->document_status = 'draft';
             }
@@ -487,7 +979,11 @@ static::creating(function ($model): void {
         });
 
         // Calcola checksum del file se presente
+<<<<<<< HEAD
 static::creating(function ($model): void {
+=======
+        static::creating(function ($model) {
+>>>>>>> 8215f950 (.)
             if ($model->file_path && empty($model->checksum)) {
                 $filePath = storage_path('app/'.$model->file_path);
                 if (file_exists($filePath)) {

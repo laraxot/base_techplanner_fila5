@@ -65,4 +65,7 @@ https://github.com/the42coders/eu-cookie-consent
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)

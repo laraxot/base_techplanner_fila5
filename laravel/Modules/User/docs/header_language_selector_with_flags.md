@@ -19,6 +19,10 @@ Questo documento descrive come migliorare il selettore di lingua nell'header di 
 ## Utilizzo delle Bandiere SVG
 
 Le bandiere SVG sono disponibili in `/var/www/html/healthcare_app/laravel/Modules/UI/resources/svg/flags` e sono autoregistrate come componenti Blade tramite il sistema di registrazione delle icone di Blade. Questo avviene grazie al metodo `registerBladeIcons()` nel `XotBaseServiceProvider`.
+<<<<<<< HEAD
+=======
+>>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+>>>>>>> 8215f950 (.)
 
 ### Come Funziona la Registrazione
 

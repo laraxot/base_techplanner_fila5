@@ -180,7 +180,47 @@ Usage Examples:
 1. Basic megamenu with columns:
 <x-pub_theme::megamenu 
 <x-pub_theme::megamenu 
+<<<<<<< HEAD
 
+=======
+=======
+<x-pub_theme::megamenu 
+    title="Servizi"
+    :columns="[
+        [
+            'title' => 'Categoria 1',
+            'links' => [
+                ['label' => 'Link lista 1', 'url' => '/link1'],
+                ['label' => 'Link lista 2', 'url' => '/link2'],
+                ['label' => 'Link lista 3', 'url' => '/link3']
+            ],
+            'exploreLink' => ['label' => 'Esplora la sezione', 'url' => '/categoria1', 'section' => 'Categoria 1']
+        ],
+        [
+            'title' => 'Categoria 2', 
+            'links' => [
+                ['label' => 'Link lista 4', 'url' => '/link4'],
+                ['label' => 'Link lista 5', 'url' => '/link5'],
+                ['label' => 'Link lista 6', 'url' => '/link6']
+            ]
+        ],
+        [
+            'title' => 'Categoria 3',
+            'links' => [
+                ['label' => 'Link lista 7', 'url' => '/link7'],
+                ['label' => 'Link lista 8', 'url' => '/link8'],
+                ['label' => 'Link lista 9', 'url' => '/link9']
+            ]
+        ]
+    ]"
+    explore-text="Esplora la sezione servizi"
+    explore-url="/servizi" />
+
+2. Megamenu with call-to-action:
+<x-pub_theme::megamenu 
+<x-pub_theme::megamenu 
+=======
+>>>>>>> 8215f950 (.)
 <x-pub_theme::megamenu 
     title="Informazioni"
     :columns="$infoColumns"
@@ -196,7 +236,23 @@ Usage Examples:
 3. Dark theme megamenu:
 <x-pub_theme::megamenu 
 <x-pub_theme::megamenu 
+<<<<<<< HEAD
 
+=======
+=======
+<x-pub_theme::megamenu 
+    title="Documenti"
+    theme="dark-desktop"
+    :full-width="true"
+    :columns="$documentsColumns"
+    explore-all-text="Esplora tutti i documenti"
+    explore-all-url="/documenti" />
+
+4. Megamenu with accessible links:
+<x-pub_theme::megamenu 
+<x-pub_theme::megamenu 
+=======
+>>>>>>> 8215f950 (.)
 <x-pub_theme::megamenu 
     title="Amministrazione"
     :columns="[
@@ -219,7 +275,22 @@ Usage Examples:
 5. Custom content with slot:
 <x-pub_theme::megamenu title="Custom Menu">
 <x-pub_theme::megamenu title="Custom Menu">
+<<<<<<< HEAD
 
+=======
+=======
+<x-pub_theme::megamenu title="Custom Menu">
+    <div class="row">
+        <div class="col-12">
+            <h4>Contenuto personalizzato</h4>
+            <p>Qui puoi inserire qualsiasi contenuto HTML personalizzato.</p>
+            <a href="/custom" class="btn btn-primary">Vai alla pagina</a>
+        </div>
+    </div>
+</x-pub_theme::megamenu>
+</x-pub_theme::megamenu>
+=======
+>>>>>>> 8215f950 (.)
 </x-pub_theme::megamenu>
 
 Navigation Integration:
@@ -231,7 +302,11 @@ Place megamenu items within a navbar with .has-megamenu class:
         <x-pub_theme::megamenu ... />
         <x-pub_theme::megamenu ... />
         <x-pub_theme::megamenu ... />
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> 8215f950 (.)
         <x-pub_theme::megamenu ... />
         <x-pub_theme::megamenu ... />
     </div>

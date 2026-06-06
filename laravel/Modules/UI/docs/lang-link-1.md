@@ -6,7 +6,10 @@ Consulta la documentazione delle traduzioni:
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Collegamento Bidirezionale
 
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../../Lang/docs/).
@@ -27,4 +30,8 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](../../../tenant/docs/lang-link.md)
 * [lang-link.md](../../../activity/docs/lang-link.md)
 * [lang-link.md](../../../patient/docs/lang-link.md)
+<<<<<<< HEAD
 * [lang-link.md](../../../cms/docs/lang-link.md)
+=======
+* [lang-link.md](../../../cms/docs/lang-link.md)
+>>>>>>> 8215f950 (.)

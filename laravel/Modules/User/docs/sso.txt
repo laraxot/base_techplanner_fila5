@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 https://fusionauth.io/blog/single-sign-on-laravel-fusionauth
+=======
+https://fusionauth.io/blog/single-sign-on-laravel-fusionauth
+>>>>>>> 8215f950 (.)

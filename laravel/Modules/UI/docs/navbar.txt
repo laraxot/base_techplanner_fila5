@@ -6,4 +6,7 @@ https://tailwindflex.com/tag/navbar
 
 https://freefrontend.com/tailwind-navbars/
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)

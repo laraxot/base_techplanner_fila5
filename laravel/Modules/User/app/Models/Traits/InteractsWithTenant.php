@@ -31,15 +31,23 @@ trait InteractsWithTenant
     public function tenant(): BelongsTo
     {
         $tenant = $this->getTenant();
+<<<<<<< HEAD
 if ($tenant === null) {
             $this->loadTenantFromSession();
+=======
+        if (null === $tenant) {            $this->loadTenantFromSession();
+>>>>>>> 8215f950 (.)
             $tenant = $this->getTenant();
         }
 
         $tenantClass = config('tenant.tenant_model', Tenant::class);
 
+<<<<<<< HEAD
 // @phpstan-ignore-next-line
         return $this->belongsTo($tenantClass, 'tenant_id');
+=======
+        // @phpstan-ignore argument.type, argument.templateType        return $this->belongsTo($tenantClass, 'tenant_id');
+>>>>>>> 8215f950 (.)
     }
 
     /**
@@ -73,10 +81,16 @@ if ($tenant === null) {
         static::creating(static function ($model): void {
             // PHPStan Level 10: Verifica se il modello ha tenant_id
             // Uso isFillable() invece di property_exists() per Eloquent magic properties
+<<<<<<< HEAD
 if ($model !== null && $model instanceof Model && $model->isFillable('tenant_id')) {
                 $tenant = Filament::getTenant();
                 if ($tenant !== null) {
                     // Usa setAttribute() invece di assegnazione diretta per PHPStan
+=======
+            if (null !== $model && $model instanceof Model && $model->isFillable('tenant_id')) {
+                $tenant = Filament::getTenant();
+                if (null !== $tenant) {                    // Usa setAttribute() invece di assegnazione diretta per PHPStan
+>>>>>>> 8215f950 (.)
                     $model->setAttribute('tenant_id', $tenant->getKey());
                 }
             }
@@ -89,15 +103,23 @@ if ($model !== null && $model instanceof Model && $model->isFillable('tenant_id'
     protected function setTenantIdAttribute(?int $value): void
     {
         $tenant = Filament::getTenant();
+<<<<<<< HEAD
 if ($value === null && $tenant !== null) {
             $tenantId = $tenant->getKey();
+=======
+        if (null === $value && null !== $tenant) {            $tenantId = $tenant->getKey();
+>>>>>>> 8215f950 (.)
             if (is_int($tenantId)) {
                 $value = $tenantId;
             }
         }
 
+<<<<<<< HEAD
 if ($value !== null) {
             $this->attributes['tenant_id'] = $value;
+=======
+        if (null !== $value) {            $this->attributes['tenant_id'] = $value;
+>>>>>>> 8215f950 (.)
         }
     }
 
@@ -107,6 +129,7 @@ if ($value !== null) {
     protected function applyTenantScope(): void
     {
         $tenant = $this->getTenant();
+<<<<<<< HEAD
 if ($tenant === null) {
             $this->loadTenantFromSession();
             $tenant = $this->getTenant();
@@ -116,6 +139,15 @@ if ($tenant !== null) {
             $tenantId = $tenant->getKey();
             if ($tenantId !== null) {
                 static::addGlobalScope(new TenantScope());
+=======
+        if (null === $tenant) {            $this->loadTenantFromSession();
+            $tenant = $this->getTenant();
+        }
+
+        if (null !== $tenant) {
+            $tenantId = $tenant->getKey();
+            if (null !== $tenantId) {                static::addGlobalScope(new TenantScope());
+>>>>>>> 8215f950 (.)
             }
         }
     }

@@ -3,7 +3,10 @@
 ## Introduzione
 
 Questo documento fornisce linee guida dettagliate per garantire la massima compatibilità dei template email utilizzati nel modulo Notify di Laraxot con i diversi client email.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Compatibilità Client Email
 
 I client email utilizzano diversi motori di rendering che interpretano l'HTML e il CSS in modo differente:

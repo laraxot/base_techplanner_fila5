@@ -61,4 +61,8 @@ Forms\Components\FileUpload::make('certifications')
 
 ## Vedi Anche
 - [Filament FileUpload Documentation](https://filamentphp.com/docs/forms/fields#file-upload)
+<<<<<<< HEAD
 - [Best Practices](../../xot/docs/filament-best-practices.md)
+=======
+- [Best Practices](../../xot/docs/filament-best-practices.md)
+>>>>>>> 8215f950 (.)

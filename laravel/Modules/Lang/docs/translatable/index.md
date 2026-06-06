@@ -15,8 +15,12 @@ Il pacchetto è già installato nel progetto. La configurazione principale si tr
 ## Integrazione con Filament
 Il progetto utilizza il plugin ufficiale `filament/spatie-laravel-translatable-plugin` per l'integrazione con Filament, configurato in:
 - `Modules/<nome modulo>/app/Providers/Filament/AdminPanelProvider.php`
+<<<<<<< HEAD
 - `Modules/Laraxot/app/Providers/Filament/AdminPanelProvider.php`
 - `Modules/UI/app/Providers/Filament/AdminPanelProvider.php`
+=======
+- `Modules/Laraxot/app/Providers/Filament/AdminPanelProvider.php`- `Modules/UI/app/Providers/Filament/AdminPanelProvider.php`
+>>>>>>> 8215f950 (.)
 - `Modules/Lang/app/Providers/Filament/AdminPanelProvider.php`
 ## API e utilizzo comune
 ### Dichiarazione di campi traducibili
@@ -55,8 +59,12 @@ Il sistema supporta anche la traduzione di contenuti JSON per pagine dinamiche. 
         "it": "Area Dottore - ",
         "en": "Doctor Area - "
         "it": "Area Dottore - Laraxot",
+<<<<<<< HEAD
         "en": "Doctor Area - Laraxot"
     },
+=======
+        "en": "Doctor Area - Laraxot"    },
+>>>>>>> 8215f950 (.)
     "content_blocks": {
         "it": [
             {

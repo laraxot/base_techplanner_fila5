@@ -197,7 +197,10 @@ TextInput::make('full_name')
 - [Form Components](form-components.md)
 - [Naming Conventions](naming-conventions.md)
 - [Translation System](../../lang/docs/translation-system.md)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Vedi Anche
 - [VSCode PHP Setup](vscode-php-setup.md)
 - [Development Tools](development-tools.md)

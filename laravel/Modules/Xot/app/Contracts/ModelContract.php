@@ -16,14 +16,20 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\Xot\Contracts\ModelContract.
  *
+<<<<<<< HEAD
 * @property int $id
  * @property int|null $user_id
  * @property string|null $post_type
+=======
+ * @property int         $id
+ * @property int|null    $user_id * @property string|null $post_type
+>>>>>>> 8215f950 (.)
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property string|null $title
+<<<<<<< HEAD
 * @property bool $is_reclamed
  * @property bool $table_enable
  * @property Pivot|null $pivot
@@ -46,6 +52,30 @@ use Illuminate\Support\Carbon;
  * @method BelongsTo user()
  * @method mixed getAttributeValue(string $key)
  *
+=======
+ * @property bool        $is_reclamed
+ * @property bool        $table_enable
+ * @property Pivot|null  $pivot
+ * @property string      $tennant_name
+ *
+ * @method mixed     getKey()
+ * @method string    getRouteKey()
+ * @method string    getRouteKeyName()
+ * @method string    getTable()
+ * @method mixed     with($array)
+ * @method array     getFillable()
+ * @method mixed     fill($array)
+ * @method mixed     getConnection()
+ * @method mixed     update($params)
+ * @method mixed     delete()
+ * @method mixed     detach($params)
+ * @method mixed     attach($params)
+ * @method array     treeLabel()
+ * @method array     treeSons()
+ * @method array     toArray()
+ * @method BelongsTo user()
+ * @method mixed     getAttributeValue(string $key) *
+>>>>>>> 8215f950 (.)
  * @phpstan-require-extends Model
  *
  * @mixin \Eloquent
@@ -89,11 +119,33 @@ interface ModelContract
     public function toArray();
 
     /**
+<<<<<<< HEAD
 * Create a new instance of the given model.
      *
      * @param  array  $attributes
      * @param  bool  $exists
      * @return static
+=======
+     * Get the value of the model's primary key.
+     */
+    public function getKey();
+
+    /**
+     * Get a relationship.
+     *
+     * @param string $key
+     *
+     * @phpstan-param string $key
+     */
+    public function getRelationValue($key);
+
+    /**
+     * Create a new instance of the given model.
+     *
+     * @param array $attributes
+     * @param bool  $exists
+     *     * @return static
+>>>>>>> 8215f950 (.)
      */
     public function newInstance($attributes = [], $exists = false);
 

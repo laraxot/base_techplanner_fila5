@@ -44,8 +44,12 @@
             @if($ticket->address)
             <p class="card-text">
                 <svg class="icon icon-sm">
+<<<<<<< HEAD
 <use href="/themes/Sixteen/design-comuni/assets/bootstrap-italia/svg/sprites.svg#it-pin"></use>
                 </svg>
+=======
+                    <use href="/bootstrap-italia/svg/sprites.svg#it-pin"></use>                </svg>
+>>>>>>> 8215f950 (.)
                 <small class="text-muted">{{ $ticket->address }}</small>
             </p>
             @endif
@@ -60,8 +64,12 @@
             <a class="read-more" href="{{ route('tickets.show', $ticket) }}">
                 <span class="text">Leggi di più</span>
                 <svg class="icon">
+<<<<<<< HEAD
 <use href="/themes/Sixteen/design-comuni/assets/bootstrap-italia/svg/sprites.svg#it-arrow-right"></use>
                 </svg>
+=======
+                    <use href="/bootstrap-italia/svg/sprites.svg#it-arrow-right"></use>                </svg>
+>>>>>>> 8215f950 (.)
             </a>
             @endif
         </div>

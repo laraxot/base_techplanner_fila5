@@ -26,8 +26,13 @@ class Change extends Component
 
     public XotData $xot;
 
+<<<<<<< HEAD
 public UserContract $user;
 
+=======
+    /** @var UserContract */
+    public $user;
+>>>>>>> 8215f950 (.)
     public function mount(): void
     {
         $this->xot = XotData::make();
@@ -56,8 +61,12 @@ public UserContract $user;
         if (! $this->user->switchTeam($team)) {
             abort(403);
         }
+<<<<<<< HEAD
 if ($team !== null) {
             // TeamSwitched::dispatch($team->fresh(), $this->user);
+=======
+        if (null !== $team) {            // TeamSwitched::dispatch($team->fresh(), $this->user);
+>>>>>>> 8215f950 (.)
             TeamSwitched::dispatch($team, $this->user);
         }
         Notification::make()
@@ -78,8 +87,12 @@ if ($team !== null) {
         $view_params = [
             'view' => $view,
         ];
+<<<<<<< HEAD
 if ($this->teams === []) {
             $view = 'ui::livewire.empty';
+=======
+        if ([] === $this->teams) {            $view = 'ui::livewire.empty';
+>>>>>>> 8215f950 (.)
         }
 
         return view($view, $view_params);

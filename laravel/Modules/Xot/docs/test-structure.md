@@ -200,6 +200,7 @@ Modules/
 │   │   ├── Feature/
 │   │   └── Unit/
 │   └── app/
+<<<<<<< HEAD
 ---
 module: theme
 topic: test-structure
@@ -207,3 +208,68 @@ canonical: ../../../Themes/docs/shared-components/test-structure-philosophy.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/test-structure-philosophy.md
+=======
+└── healthcare_app/
+    ├── tests/
+    │   ├── Feature/
+    │   └── Unit/
+    └── app/
+```
+
+## Namespace Guidelines
+
+### Traditional Structure
+
+```php
+// File: Modules/UI/tests/Unit/Widgets/BaseCalendarWidgetTest.php
+namespace Modules\UI\Tests\Unit\Widgets;
+
+class BaseCalendarWidgetTest { }
+```
+
+### App Structure
+
+```php
+// File: Modules/UI/app/Tests/Unit/Widgets/BaseCalendarWidgetTest.php
+namespace Modules\UI\Tests\Unit\Widgets;
+
+class BaseCalendarWidgetTest { }
+```
+
+## Testing File Structure
+
+Use these commands to check for test structure issues:
+
+```bash
+# Check for mixed test structures
+find Modules -name "*.php" | grep -i test | grep -E "(tests/|app/Tests/)"
+
+# Check namespace compliance
+composer dump-autoload
+
+# Run tests to verify structure
+php artisan test Modules/UI
+```
+
+## Mock Classes in Tests
+
+### Best Practices for Mock Classes
+
+1. **Separate Files**: Mock classes should be in separate files
+2. **Proper Namespaces**: Mock classes should follow test namespace
+3. **Clear Naming**: Use `Mock` prefix for mock classes
+4. **Documentation**: Document mock class purpose
+
+### Example: Correct Mock Structure
+
+```
+Modules/UI/tests/Unit/Widgets/
+├── BaseCalendarWidgetTest.php
+├── MockCalendarWidget.php      # Separate file
+└── MockEventModel.php          # Separate file
+```
+
+---
+
+**Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and <nome progetto>able development workflow. Choose one pattern and apply it consistently across all modules.
+>>>>>>> 8215f950 (.)

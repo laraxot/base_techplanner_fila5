@@ -341,4 +341,8 @@ test:
 - Mock esterni
 - Database in memoria
 - Cache disabilitata
+<<<<<<< HEAD
 - Logging minimo
+=======
+- Logging minimo
+>>>>>>> 8215f950 (.)

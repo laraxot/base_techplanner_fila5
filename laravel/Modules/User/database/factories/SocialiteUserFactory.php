@@ -6,7 +6,17 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\SocialiteUser;
+<<<<<<< HEAD
     protected $model = SocialiteUser::class;
+=======
+
+class SocialiteUserFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     */
+    protected $model = \Modules\User\Models\SocialiteUser::class;
+>>>>>>> 8215f950 (.)
 
     /**
      * Define the model's default state.

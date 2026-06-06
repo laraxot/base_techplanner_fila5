@@ -3,7 +3,10 @@
 ## Panoramica
 
 Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di Laraxot. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Template Disponibili
 
 MailPace offre i seguenti template transazionali:
@@ -28,8 +31,12 @@ MailPace offre i seguenti template transazionali:
 ### Struttura della Directory
 
 ```
+<<<<<<< HEAD
 /var/www/html/ptvx/laravel/Modules/Notify/resources/mail-layouts/
 ├── default.html       # Layout base per la maggior parte delle email
+=======
+/var/www/html/ptvx/laravel/Modules/Notify/resources/mail-layouts/├── default.html       # Layout base per la maggior parte delle email
+>>>>>>> 8215f950 (.)
 ├── main.html          # Alternativa semplificata
 ├── marketing.html     # Layout ottimizzato per email marketing
 └── notification.html  # Layout specifico per notifiche
@@ -90,7 +97,10 @@ $mailTemplate->send($user->email, [
 2. **Usa Variabili** - Utilizza variabili Blade per contenuti dinamici
 3. **Test Cross-Client** - Testa i template su diversi client email
 4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per Laraxot
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Riferimenti
 
 - [Documentazione Maizzle](https://maizzle.com/docs/)

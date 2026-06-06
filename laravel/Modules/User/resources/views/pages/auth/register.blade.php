@@ -67,8 +67,12 @@ name('register');
                         <h2 class="text-2xl font-bold text-white">{{ __('gdpr::register.form.cta_title') }}</h2>
                         <p class="text-sm text-slate-400">{{ __('gdpr::register.form.cta_subtitle') }}</p>
                     </div>
+<<<<<<< HEAD
 @livewire(\Modules\Gdpr\Filament\Widgets\Auth\UserForm::class)
                     <p class="mt-4 text-center text-xs text-slate-500">{{ __('gdpr::register.form.terms_notice') }}</p>
+=======
+                    @livewire(\Modules\Gdpr\Filament\Widgets\Auth\RegisterWidget::class)                    <p class="mt-4 text-center text-xs text-slate-500">{{ __('gdpr::register.form.terms_notice') }}</p>
+>>>>>>> 8215f950 (.)
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-5">

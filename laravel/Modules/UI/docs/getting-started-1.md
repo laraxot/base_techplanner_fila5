@@ -83,7 +83,10 @@ npm run dev
 * [getting-started.md](../../../ui/docs/getting-started.md)
 * [getting-started.md](../../../tenant/docs/it/getting-started.md)
 * [getting-started.md](../../../cms/docs/getting-started.md)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ### Versione Incoming
 
 ---

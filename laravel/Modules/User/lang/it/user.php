@@ -571,6 +571,7 @@ return [
             ],
         ],
         'register' => [
+<<<<<<< HEAD
 'title' => [
                 'text' => 'Registrati',
             ],
@@ -607,6 +608,11 @@ return [
                 ],
             ],
             'fields' => [
+=======
+            'title' => 'Registrati',
+            'subtitle' => 'Crea un nuovo account',
+            'button' => 'Registrati',            'fields' => [
+>>>>>>> 8215f950 (.)
                 'first_name' => 'Nome',
                 'last_name' => 'Cognome',
                 'email' => 'Email',

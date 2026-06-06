@@ -7,9 +7,16 @@ namespace Modules\Xot\Services;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_replace;
+=======
+
+use function Safe\preg_replace;
+
+use Webmozart\Assert\Assert;
+>>>>>>> 8215f950 (.)
 /**
  * Class RouteDynService.
  */
@@ -21,8 +28,12 @@ class RouteDynService
     // private static ?string $curr = null;
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      */
+=======
+     * @param array<string, mixed> $v     */
+>>>>>>> 8215f950 (.)
     private static function requireStringValue(array $v, string $key): string
     {
         Assert::keyExists($v, $key);
@@ -32,8 +43,13 @@ class RouteDynService
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      * @return array<string, mixed>
+=======
+     * @param array<string, mixed> $v
+     *     * @return array<string, mixed>
+>>>>>>> 8215f950 (.)
      */
     public static function getGroupOpts(array $v, ?string $namespace): array
     {
@@ -45,8 +61,12 @@ class RouteDynService
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      */
+=======
+     * @param array<string, mixed> $v     */
+>>>>>>> 8215f950 (.)
     public static function getPrefix(array $v, ?string $namespace): string
     {
         if (isset($v['prefix'])) {
@@ -56,16 +76,24 @@ class RouteDynService
         $name = self::requireStringValue($v, 'name');
         $prefix = mb_strtolower($name);
         $param_name = self::getParamName($v, $namespace);
+<<<<<<< HEAD
 if ($param_name !== '') {
             return $prefix.'/{'.$param_name.'}';
+=======
+        if ('' !== $param_name) {            return $prefix.'/{'.$param_name.'}';
+>>>>>>> 8215f950 (.)
         }
 
         return $prefix;
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      */
+=======
+     * @param array<string, mixed> $v     */
+>>>>>>> 8215f950 (.)
     public static function getAs(array $v, ?string $_namespace): string
     {
         if (isset($v['as'])) {
@@ -89,8 +117,12 @@ if ($param_name !== '') {
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      */
+=======
+     * @param array<string, mixed> $v     */
+>>>>>>> 8215f950 (.)
     public static function getNamespace(array $v, ?string $namespace): ?string
     {
         if (isset($v['namespace'])) {
@@ -99,16 +131,24 @@ if ($param_name !== '') {
 
         $namespace = self::requireStringValue($v, 'name');
         $namespace = str_replace(['{', '}'], '', $namespace);
+<<<<<<< HEAD
 if ($namespace === '') {
             return null;
+=======
+        if ('' === $namespace) {            return null;
+>>>>>>> 8215f950 (.)
         }
 
         return Str::studly($namespace);
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      */
+=======
+     * @param array<string, mixed> $v     */
+>>>>>>> 8215f950 (.)
     public static function getAct(array $v, ?string $_namespace): string
     {
         if (isset($v['act'])) {
@@ -136,8 +176,12 @@ if ($namespace === '') {
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      */
+=======
+     * @param array<string, mixed> $v     */
+>>>>>>> 8215f950 (.)
     public static function getParamName(array $v, ?string $_namespace): string
     {
         if (isset($v['param_name'])) {
@@ -152,8 +196,13 @@ if ($namespace === '') {
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      * @return array<int, string>
+=======
+     * @param array<string, mixed> $v
+     *     * @return array<int, string>
+>>>>>>> 8215f950 (.)
      */
     public static function getParamsName(array $v, ?string $namespace): array
     {
@@ -163,8 +212,13 @@ if ($namespace === '') {
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      * @return array<string, mixed>
+=======
+     * @param array<string, mixed> $v
+     *     * @return array<string, mixed>
+>>>>>>> 8215f950 (.)
      */
     public static function getResourceOpts(array $v, ?string $namespace): array
     {
@@ -181,8 +235,12 @@ if ($namespace === '') {
             $opts['only'] = $v['only'];
         }
 
+<<<<<<< HEAD
 if ($param_name === '' && ! isset($opts['only'])) {
             $opts['only'] = ['index'];
+=======
+        if ('' === $param_name && ! isset($opts['only'])) {            $opts['only'] = ['index'];
+>>>>>>> 8215f950 (.)
         }
 
         $opts['where'] = array_fill_keys($params_name, '[0-9]+');
@@ -191,8 +249,12 @@ if ($param_name === '' && ! isset($opts['only'])) {
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      */
+=======
+     * @param array<string, mixed> $v     */
+>>>>>>> 8215f950 (.)
     public static function getController(array $v, ?string $_namespace): string
     {
         if (isset($v['controller'])) {
@@ -208,8 +270,12 @@ if ($param_name === '' && ! isset($opts['only'])) {
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      */
+=======
+     * @param array<string, mixed> $v     */
+>>>>>>> 8215f950 (.)
     public static function getUri(array $v, ?string $_namespace): string
     {
         $name = self::requireStringValue($v, 'name');
@@ -219,8 +285,13 @@ if ($param_name === '' && ! isset($opts['only'])) {
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      * @return array<int, string>
+=======
+     * @param array<string, mixed> $v
+     *     * @return array<int, string>
+>>>>>>> 8215f950 (.)
      */
     public static function getMethod(array $v, ?string $_namespace): array
     {
@@ -238,8 +309,12 @@ if ($param_name === '' && ! isset($opts['only'])) {
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      */
+=======
+     * @param array<string, mixed> $v     */
+>>>>>>> 8215f950 (.)
     public static function getUses(array $v, ?string $namespace): string
     {
         $controller = self::getController($v, $namespace);
@@ -249,16 +324,25 @@ if ($param_name === '' && ! isset($opts['only'])) {
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      * @return array<string, mixed>
+=======
+     * @param array<string, mixed> $v
+     *     * @return array<string, mixed>
+>>>>>>> 8215f950 (.)
      */
     public static function getCallback(array $v, ?string $namespace, ?string $curr): array
     {
         $name = self::requireStringValue($v, 'name');
         $as = Str::slug($name);
         $uses = self::getUses($v, $namespace);
+<<<<<<< HEAD
 if ($curr !== null) {
             $uses = '\\'.self::$namespace_start.'\\'.$curr.'\\'.$uses;
+=======
+        if (null !== $curr) {            $uses = '\\'.self::$namespace_start.'\\'.$curr.'\\'.$uses;
+>>>>>>> 8215f950 (.)
         } else {
             $uses = '\\'.self::$namespace_start.'\\'.$uses;
         }
@@ -267,8 +351,12 @@ if ($curr !== null) {
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<int, array<string, mixed>>  $array
      */
+=======
+     * @param array<int, array<string, mixed>> $array     */
+>>>>>>> 8215f950 (.)
     public static function dynamic_route(
         array $array,
         ?string $namespace = null,
@@ -277,8 +365,12 @@ if ($curr !== null) {
     ): void {
         Assert::notEmpty($array, 'The $array parameter cannot be empty.');
 
+<<<<<<< HEAD
 if ($namespace_start !== null) {
             self::$namespace_start = $namespace_start;
+=======
+        if (null !== $namespace_start) {            self::$namespace_start = $namespace_start;
+>>>>>>> 8215f950 (.)
         }
 
         foreach ($array as $v) {
@@ -296,12 +388,20 @@ if ($namespace_start !== null) {
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      */
     public static function createRouteResource(array $v, ?string $namespace): void
     {
         if (! array_key_exists('name', $v) || $v['name'] === null) {
             return;
+=======
+     * @param array<string, mixed> $v
+     */
+    public static function createRouteResource(array $v, ?string $namespace): void
+    {
+        if (! array_key_exists('name', $v) || null === $v['name']) {            return;
+>>>>>>> 8215f950 (.)
         }
         $name = self::requireStringValue($v, 'name');
         $opts = self::getResourceOpts($v, $namespace);
@@ -311,8 +411,12 @@ if ($namespace_start !== null) {
     }
 
     /**
+<<<<<<< HEAD
 * @param  array<string, mixed>  $v
      */
+=======
+     * @param array<string, mixed> $v     */
+>>>>>>> 8215f950 (.)
     public static function createRouteSubs(array $v, ?string $namespace, ?string $curr): void
     {
         if (! isset($v['subs'])) {
@@ -320,6 +424,7 @@ if ($namespace_start !== null) {
         }
 
         $sub_namespace = self::getNamespace($v, $namespace);
+<<<<<<< HEAD
 $curr = $curr === null ? $sub_namespace : $curr;
         Assert::isArray($subs = $v['subs']);
         /** @var array<int, array<string, mixed>> $subsList */
@@ -330,6 +435,16 @@ $curr = $curr === null ? $sub_namespace : $curr;
     /**
      * @param  array<string, mixed>  $v
      */
+=======
+        $curr = null === $curr ? $sub_namespace : $curr;
+        Assert::isArray($subs = $v['subs']);
+        /* @var array<int, array<string, mixed>> $subs */
+        self::dynamic_route($subs, $sub_namespace, null, $curr);
+    }
+
+    /**
+     * @param array<string, mixed> $v     */
+>>>>>>> 8215f950 (.)
     public static function createRouteActs(array $v, ?string $namespace, ?string $curr): void
     {
         if (! isset($v['acts']) || ! is_array($v['acts'])) {
@@ -355,8 +470,12 @@ $curr = $curr === null ? $sub_namespace : $curr;
      */
     public static function prefixedResourceNames(string $prefix): array
     {
+<<<<<<< HEAD
 if (mb_substr($prefix, -1) === '.') {
             $prefix = mb_substr($prefix, 0, -1);
+=======
+        if ('.' === mb_substr($prefix, -1)) {            $prefix = mb_substr($prefix, 0, -1);
+>>>>>>> 8215f950 (.)
         }
 
         return [

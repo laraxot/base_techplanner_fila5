@@ -10,4 +10,7 @@ https://github.com/shuvroroy/filament-spatie-laravel-health
 https://filamentphp.com/plugins/saade-adjacency-list
 https://filamentphp.com/plugins/codewithdennis-select-tree
 https://github.com/beholdr/filament-trilist
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)

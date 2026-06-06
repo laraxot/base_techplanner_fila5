@@ -28,8 +28,12 @@
         <a href="{{ route('socialite.oauth.redirect', ['provider' => 'microsoft']) }}"
             class="flex items-center justify-center gap-3 py-2.5 px-4 bg-[#00A4EF] border border-[#00A4EF] rounded-xl hover:bg-[#0088cc] hover:border-[#0088cc] hover:shadow-sm transition-all duration-200 group focus:outline-none focus:ring-2 focus:ring-[#00A4EF]/30"
         >
+<<<<<<< HEAD
 <x-filament::icon icon="ui-brands.microsoft" class="w-5 h-5 flex-shrink-0 text-white" />
             <span class="font-medium text-white transition-colors">
+=======
+            <x-filament::icon icon="ui-microsoft" class="w-5 h-5 flex-shrink-0 text-white" />            <span class="font-medium text-white transition-colors">
+>>>>>>> 8215f950 (.)
                 {{ __('user::auth.social.microsoft') }}
             </span>
         </a>
@@ -76,6 +80,7 @@
         @endif
 
         <!-- Submit Button - Colori espliciti per visibilità (WCAG AA) -->
+<<<<<<< HEAD
 <button
             type="submit"
             wire:loading.attr="disabled"
@@ -84,12 +89,25 @@
             onmouseover="this.style.transform='scale(1.03)';"
             onmouseout="this.style.transform='scale(1.00)';"
         >
+=======
+        <button 
+            type="submit" 
+            wire:loading.attr="disabled"
+            class="w-full py-3 px-4 rounded-xl font-semibold text-white disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 ease-in-out shadow-sm hover:shadow-md transform hover:scale-[1.01] active:scale-[0.99] flex justify-center items-center gap-2 group focus:outline-none focus:ring-4 focus:ring-[#1E5A96]/30"
+            style="background: linear-gradient(135deg, #1E5A96 0%, #2D8659 100%);"
+            onmouseover="this.style.background='linear-gradient(135deg, #174a7a 0%, #246b48 100%)'"
+            onmouseout="this.style.background='linear-gradient(135deg, #1E5A96 0%, #2D8659 100%)'"        >
+>>>>>>> 8215f950 (.)
             <span wire:loading wire:target="save" class="flex items-center gap-2 italic">
                 <x-filament::icon icon="heroicon-o-arrow-path" class="animate-spin h-5 w-5" aria-hidden="true" />
                 {{ __('user::auth.login.logging_in') }}
             </span>
+<<<<<<< HEAD
 
             <div wire:loading.remove wire:target="save" class="flex items-center gap-2">
+=======
+                        <div wire:loading.remove wire:target="save" class="flex items-center gap-2">
+>>>>>>> 8215f950 (.)
                 <span>{{ __('user::auth.login.submit') }}</span>
                 <x-filament::icon icon="heroicon-o-arrow-right" class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
             </div>

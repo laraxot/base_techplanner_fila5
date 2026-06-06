@@ -149,8 +149,12 @@ Usage Examples:
 1. Basic toggle:
 <x-pub_theme::toggle 
 <x-pub_theme::toggle 
+<<<<<<< HEAD
 
 <x-pub_theme::toggle 
+=======
+=======<x-pub_theme::toggle 
+>>>>>>> 8215f950 (.)
     id="toggle2"
     name="auto_save"
     label="Salvataggio automatico"
@@ -159,16 +163,24 @@ Usage Examples:
 3. Disabled toggle:
 <x-pub_theme::toggle 
 <x-pub_theme::toggle 
+<<<<<<< HEAD
 
 <x-pub_theme::toggle 
+=======
+=======<x-pub_theme::toggle 
+>>>>>>> 8215f950 (.)
     id="toggle4"
     name="setting1"
     label="Impostazione 1"
     :inline="true" />
 <x-pub_theme::toggle 
 <x-pub_theme::toggle 
+<<<<<<< HEAD
 
 <x-pub_theme::toggle 
+=======
+=======<x-pub_theme::toggle 
+>>>>>>> 8215f950 (.)
     legend="Gruppo di toggle"
     :inline="true"
     :toggles="[
@@ -192,8 +204,12 @@ Usage Examples:
 6. Simple grouped toggles:
 <x-pub_theme::toggle 
 <x-pub_theme::toggle 
+<<<<<<< HEAD
 
 <x-pub_theme::toggle 
+=======
+=======<x-pub_theme::toggle 
+>>>>>>> 8215f950 (.)
     name="consent"
     label="Accetto i termini e condizioni"
     value="accepted"
@@ -202,8 +218,12 @@ Usage Examples:
 8. Toggle with slot content:
 <x-pub_theme::toggle 
 <x-pub_theme::toggle 
+<<<<<<< HEAD
 
 </x-pub_theme::toggle>
+=======
+=======</x-pub_theme::toggle>
+>>>>>>> 8215f950 (.)
 
 Bootstrap Italia Classes Reference:
 - .form-check: Container for form check elements

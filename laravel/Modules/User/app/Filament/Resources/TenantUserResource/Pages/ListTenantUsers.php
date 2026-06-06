@@ -7,7 +7,18 @@ namespace Modules\User\Filament\Resources\TenantUserResource\Pages;
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
 use Modules\User\Filament\Resources\TenantUserResource;
+<<<<<<< HEAD
     protected static string $resource = TenantUserResource::class;
+=======
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+
+/**
+ * Class ListTenantUsers.
+ */
+class ListTenantUsers extends XotBaseListRecords
+{
+    protected static string $resource = \Modules\User\Filament\Resources\TenantUserResource::class;
+>>>>>>> 8215f950 (.)
 
     /**
      * @return array<string, Action>

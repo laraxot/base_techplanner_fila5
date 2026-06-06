@@ -19,8 +19,12 @@ Questo è lo standard stabilito nel modulo Notify per tutti i DTOs:
 /var/www/html/ptvx/laravel/Modules/Notify/app/Datas/NetfunSmsData.php
 /var/www/html/ptvx/laravel/Modules/Notify/app/Datas/NetfunSmsRequestData.php
 /var/www/html/ptvx/laravel/Modules/Notify/app/Datas/NetfunSmsResponseData.php
+<<<<<<< HEAD
 /var/www/html/ptvx/laravel/Modules/Notify/app/Datas/SmsData.php
 ```
+=======
+/var/www/html/ptvx/laravel/Modules/Notify/app/Datas/SmsData.php```
+>>>>>>> 8215f950 (.)
 
 ### ❌ ERRATO: ALTERNATIVE COMUNI MA ERRATE
 
@@ -43,14 +47,22 @@ Questo è lo standard stabilito nel modulo Notify per tutti i DTOs:
 ### Verificare Sempre le Directory Esistenti
 
 ```bash
+<<<<<<< HEAD
 find /var/www/html/ptvx/laravel/Modules/Notify/app -type d -name "Data*"
 ```
+=======
+find /var/www/html/ptvx/laravel/Modules/Notify/app -type d -name "Data*"```
+>>>>>>> 8215f950 (.)
 
 Questo restituirà:
 ```
 /var/www/html/ptvx/laravel/Modules/Notify/app/Datas
+<<<<<<< HEAD
 /var/www/html/ptvx/laravel/Modules/Notify/app/Datas/SMS
 ```
+=======
+/var/www/html/ptvx/laravel/Modules/Notify/app/Datas/SMS```
+>>>>>>> 8215f950 (.)
 
 ## Esempi di Importazioni Corrette
 

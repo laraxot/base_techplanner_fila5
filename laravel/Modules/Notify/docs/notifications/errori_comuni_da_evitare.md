@@ -1,11 +1,18 @@
 # Errori Comuni da Evitare nelle Implementazioni di Moduli Laraxot
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Errori di Struttura Directory e Namespace
 
 1. **Errore di Case nelle Directory**
    - ❌ ERRATO: `/var/www/html/ptvx/laravel/Modules/Notify/App/Actions/`
+<<<<<<< HEAD
    - ✅ CORRETTO: `/var/www/html/ptvx/laravel/Modules/Notify/app/Actions/`
    
+=======
+   - ✅ CORRETTO: `/var/www/html/ptvx/laravel/Modules/Notify/app/Actions/`   
+>>>>>>> 8215f950 (.)
    > Le directory standard di Laravel sono sempre in lowercase (`app`, `config`, `resources`, ecc.)
 
 2. **Errore di Namespace nei File**

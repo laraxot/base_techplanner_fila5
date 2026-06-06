@@ -5,8 +5,12 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\OauthAccessTokenResource\Pages;
 
 use Filament\Actions\Action;
+<<<<<<< HEAD
 // Added
 use Modules\User\Filament\Resources\OauthAccessTokenResource;
+=======
+use Filament\Actions\CreateAction; // Addeduse Modules\User\Filament\Resources\OauthAccessTokenResource;
+>>>>>>> 8215f950 (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 /**

@@ -27,8 +27,12 @@ describe('Auth Components Tests', function (): void {
     test('login page loads correctly', function (): void {
         // Test that login page loads correctly
         $response = get('/it/auth/login');
+<<<<<<< HEAD
 
         $response->assertStatus(200);
+=======
+        /* @phpstan-ignore-next-line method.nonObject */        $response->assertStatus(200);
+>>>>>>> 8215f950 (.)
     });
 
     test('auth-session-status component renders correctly', function (): void {
@@ -61,15 +65,25 @@ describe('Authentication Flow with Reorganized Components', function (): void {
         // Accept either 200 (page loads) or 500 (misconfigured route in test env)
         // The important thing is the route exists and responds
         expect($response->status())->toBeLessThanOrEqual(500);
+<<<<<<< HEAD
 if ($response->status() === 200) {
             $response->assertSee('Login');
+=======
+        if (200 === $response->status()) {
+            /* @phpstan-ignore-next-line method.nonObject */            $response->assertSee('Login');
+>>>>>>> 8215f950 (.)
         } else {
             expect($response->status())->toBeGreaterThanOrEqual(400);
         }
     });
 
     test('password confirmation uses reorganized components', function (): void {
+<<<<<<< HEAD
 /* @var User */
+=======
+        /** @var User */
+        $user = User/* @phpstan-ignore-line */ ::factory()->create();
+>>>>>>> 8215f950 (.)
         try {
             actingAs($user)
                 ->get('/it/auth/password/confirm')

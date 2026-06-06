@@ -6,6 +6,7 @@ declare(strict_types=1);
 @props(['widget'])
 <div>
     @php
+<<<<<<< HEAD
 $canRenderWidget = is_string($widget)
             && $widget !== ''
             && class_exists($widget)
@@ -25,4 +26,12 @@ $canRenderWidget = is_string($widget)
     @if ($canRenderWidget)
         @livewire($widget, $livewireParams)
     @endif
+=======
+        $canRenderWidget = class_exists($widget)
+            && (! method_exists($widget, 'canView') || $widget::canView());
+    @endphp
+
+    @if($canRenderWidget)
+        @livewire($widget, $block->data)    @endif
+>>>>>>> 8215f950 (.)
 </div>

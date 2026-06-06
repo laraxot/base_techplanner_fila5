@@ -7,14 +7,24 @@ namespace Modules\Xot\Tests\Unit\Models;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Traits\Updater;
+<<<<<<< HEAD
 if ($snakeType !== null) {
         expect($snakeType->getName())->toBe('bool');
+=======
+use Tests\TestCase;
+
+uses(TestCase::class);        expect($snakeType->getName())->toBe('bool');
+>>>>>>> 8215f950 (.)
     } else {
         expect(XotBaseModel::$snakeAttributes)->toBeTrue();
     }
 
+<<<<<<< HEAD
 if ($perPageType !== null) {
         expect($perPageType->getName())->toBe('int');
+=======
+    if (null !== $perPageType) {        expect($perPageType->getName())->toBe('int');
+>>>>>>> 8215f950 (.)
     } else {
         expect($perPageProperty->getDefaultValue())->toBe(30);
     }

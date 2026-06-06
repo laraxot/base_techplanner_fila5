@@ -33,4 +33,8 @@ if [ "$COUNT" -gt 0 ]; then
     fi
 else
     echo -e "${GREEN}✅ Nessun file vuoto trovato!${NC}"
+<<<<<<< HEAD
 fi
+=======
+fi
+>>>>>>> 8215f950 (.)

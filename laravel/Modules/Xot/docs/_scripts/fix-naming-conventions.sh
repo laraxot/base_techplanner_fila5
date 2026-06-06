@@ -35,4 +35,8 @@ if [ $FIXES -eq 0 ]; then
     echo -e "${GREEN}✅ Nessuna correzione necessaria${NC}"
 else
     echo -e "${GREEN}✅ $FIXES file rinominati${NC}"
+<<<<<<< HEAD
 fi
+=======
+fi
+>>>>>>> 8215f950 (.)

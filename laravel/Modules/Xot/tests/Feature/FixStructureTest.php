@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Feature;
 
+<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Attributes\Test;
 
+=======
+use PHPUnit\Framework\Attributes\Test;
+use Tests\TestCase;
+>>>>>>> 8215f950 (.)
 /**
  * Test per verificare il corretto funzionamento dello script fix_structure.sh.
  */
@@ -42,8 +47,12 @@ class FixStructureTest extends TestCase
         if (is_dir($dir)) {
             $objects = scandir($dir);
             foreach ($objects as $object) {
+<<<<<<< HEAD
 if ($object !== '.' && $object !== '..') {
                     if (is_dir($dir.DIRECTORY_SEPARATOR.$object) && ! is_link($dir.'/'.$object)) {
+=======
+                if ('.' !== $object && '..' !== $object) {                    if (is_dir($dir.DIRECTORY_SEPARATOR.$object) && ! is_link($dir.'/'.$object)) {
+>>>>>>> 8215f950 (.)
                         $this->rrmdir($dir.DIRECTORY_SEPARATOR.$object);
                     } else {
                         unlink($dir.DIRECTORY_SEPARATOR.$object);
@@ -55,8 +64,12 @@ if ($object !== '.' && $object !== '..') {
     }
 
     #[Test]
+<<<<<<< HEAD
 public function test_move_to_app_functionality(): void
     {
+=======
+    public function testMoveToAppFunctionality(): void    {
+>>>>>>> 8215f950 (.)
         // Creiamo una struttura di directory di test
         mkdir($this->testDir.'/Actions', 0o755, true);
         file_put_contents($this->testDir.'/Actions/test.php', 'echo "test";');
@@ -77,8 +90,12 @@ public function test_move_to_app_functionality(): void
     }
 
     #[Test]
+<<<<<<< HEAD
 public function test_rename_to_lower_functionality(): void
     {
+=======
+    public function testRenameToLowerFunctionality(): void    {
+>>>>>>> 8215f950 (.)
         // Creiamo una struttura di directory di test
         mkdir($this->testDir.'/Config', 0o755, true);
         file_put_contents($this->testDir.'/Config/test.php', 'echo "test";');
@@ -99,8 +116,12 @@ public function test_rename_to_lower_functionality(): void
     }
 
     #[Test]
+<<<<<<< HEAD
 public function test_move_config_functionality(): void
     {
+=======
+    public function testMoveConfigFunctionality(): void    {
+>>>>>>> 8215f950 (.)
         // Creiamo una struttura di directory di test con entrambe le versioni
         mkdir($this->testDir.'/Config', 0o755, true);
         file_put_contents($this->testDir.'/Config/main.php', 'echo "main";');

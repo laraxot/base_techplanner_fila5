@@ -84,9 +84,13 @@
         @if($disabled) aria-disabled="true" @endif
     >
         @if($loading)
+<<<<<<< HEAD
 <x-filament::icon icon="heroicon-o-arrow-path" class="animate-spin h-4 w-4 mr-2" />
 f7ac8eda (.)
         @elseif($icon && $icon-position === 'left')
+=======
+            <x-heroicon-o-arrow-path class="animate-spin h-4 w-4 mr-2" />        @elseif($icon && $icon-position === 'left')
+>>>>>>> 8215f950 (.)
             <x-dynamic-component :component="$icon" class="h-4 w-4 mr-2" />
         @endif
         
@@ -103,9 +107,13 @@ f7ac8eda (.)
         @if($disabled) disabled @endif
     >
         @if($loading)
+<<<<<<< HEAD
 <x-filament::icon icon="heroicon-o-arrow-path" class="animate-spin h-4 w-4 mr-2" />
 f7ac8eda (.)
         @elseif($icon && $icon-position === 'left')
+=======
+            <x-heroicon-o-arrow-path class="animate-spin h-4 w-4 mr-2" />        @elseif($icon && $icon-position === 'left')
+>>>>>>> 8215f950 (.)
             <x-dynamic-component :component="$icon" class="h-4 w-4 mr-2" />
         @endif
         

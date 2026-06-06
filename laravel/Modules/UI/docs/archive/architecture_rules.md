@@ -146,7 +146,10 @@ class CustomMiddleware
 
 // Non hardcodare percorsi delle risorse
 <img src="/var/www/html/ptvx/laravel/public/images/avatar.png">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 // Non duplicare la registrazione dei componenti
 Blade::component('ui::components.icon', 'ui.icon');
 

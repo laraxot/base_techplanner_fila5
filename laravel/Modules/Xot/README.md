@@ -466,4 +466,8 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
   <strong>🚀 Xot - Il MOTORE FONDAMENTALE di Laraxot! ⚡</strong>
   <br>
   <em>Costruito con ❤️ per la comunità Laravel</em>
+<<<<<<< HEAD
 </div>
+=======
+</div>
+>>>>>>> 8215f950 (.)

@@ -89,8 +89,12 @@
             >
                 <div class="flex flex-col items-end">
                     @if($showLabels)
+<<<<<<< HEAD
 <span class="text-sm text-dc-600">Avanti</span>
                         <span class="font-medium">{{ $next['label'] }}</span>
+=======
+                        <span class="text-sm text-blue-600">Successivo</span>                        <span class="font-medium">{{ $next['label'] }}</span>
+>>>>>>> 8215f950 (.)
                     @else
                         <span class="sr-only">Vai a: {{ $next['label'] }}</span>
                     @endif

@@ -16,14 +16,22 @@ Il metodo `addAttachments()` supporta **due formati** per gli allegati:
 // Formato corretto - allegato da file su filesystem
 $attachments = [
     [
+<<<<<<< HEAD
         'path' => '/var/www/html/ptvx/public_html/images/avatars/default-3.svg',
         'as' => 'logo.svg',  // Opzionale: nome del file da mostrare nell'email
+=======
+        'path' => '/var/www/html/ptvx/public_html/images/avatars/default-3.svg',        'as' => 'logo.svg',  // Opzionale: nome del file da mostrare nell'email
+>>>>>>> 8215f950 (.)
         'mime' => 'image/svg+xml',  // Opzionale: MIME type del file
     ],
     // Eventualmente altri allegati...
     [
+<<<<<<< HEAD
         'path' => '/var/www/html/ptvx/public_html/documents/terms.pdf',
         'as' => 'termini.pdf',
+=======
+        'path' => '/var/www/html/ptvx/public_html/documents/terms.pdf',        'as' => 'termini.pdf',
+>>>>>>> 8215f950 (.)
         'mime' => 'application/pdf',
     ],
 ];

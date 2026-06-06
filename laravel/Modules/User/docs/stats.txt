@@ -1,2 +1,5 @@
 https://github.com/spatie/filament-simple-stats/blob/main/src/SimpleStat.php
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)

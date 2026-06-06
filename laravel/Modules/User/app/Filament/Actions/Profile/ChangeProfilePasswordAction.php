@@ -12,12 +12,39 @@ use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
                 $profileData = Arr::except($record->toArray(), ['id']);
                 if ($user === null) {
+=======
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Hash;
+use Modules\User\Datas\PasswordData;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+
+/**
+ * ---.
+ */
+final class ChangeProfilePasswordAction extends Action
+{
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->translateLabel()
+            ->tooltip(__('user::user.actions.change_password'))
+            ->icon('heroicon-o-key')
+            ->action(static function (ProfileContract $record, array $data): void {
+                $user = $record->user;
+                $profile_data = Arr::except($record->toArray(), ['id']);
+                if (null === $user) {
+                    $user_class = XotData::make()->getUserClass();
+>>>>>>> 8215f950 (.)
                     /** @var UserContract */
                     $user = XotData::make()->getUserByEmail($record->email);
                 }
 
+<<<<<<< HEAD
 if ($user === null) {
                     /** @var array<string, mixed> $profileData */
                     $user = $record->user()->create($profileData);
@@ -26,6 +53,14 @@ if ($user === null) {
                 if ($user instanceof UserContract && $record instanceof Model) {
                     $user->profile()->save($record);
                 }
+=======
+                if (null === $user) {
+                    /** @var array<string, mixed> $profile_data */
+                    $user = $record->user()->create($profile_data);
+                }
+                // @phpstan-ignore argument.type, method.notFound
+                $user->profile()->save($record);
+>>>>>>> 8215f950 (.)
                 $newPassword = is_string($data['new_password'] ?? null) ? $data['new_password'] : '';
                 /*
                  * @var ProfileContract $record
@@ -49,7 +84,11 @@ if ($user === null) {
                         ->rule(
                             'required',
                             /**
+<<<<<<< HEAD
 * @param  callable(string): mixed  $get
+=======
+                             * @param callable(string): mixed $get
+>>>>>>> 8215f950 (.)
                              */
                             static fn (callable $get): bool => (bool) $get('new_password')
                         )

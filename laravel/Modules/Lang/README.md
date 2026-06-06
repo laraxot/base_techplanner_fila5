@@ -22,8 +22,12 @@ TextInput::make('name');
 // -> Risolve automaticamente da: {locale}/{module}::field.name.label
 
 // Sincronizzazione traduzioni
+<<<<<<< HEAD
 app(SyncTranslationsAction::class)->execute('healthcare_app', ['it', 'en', 'de']);
 >>>>>>> .merge_file_REzwt6
+=======
+app(SyncTranslationsAction::class)->execute('healthcare_app', ['it', 'en', 'de']);>>>>>>> .merge_file_REzwt6
+>>>>>>> 8215f950 (.)
 
 // Modelli traducibili
 $survey->setTranslation('title', 'it', 'Questionario Soddisfazione');
@@ -128,8 +132,12 @@ Il modulo include un package locale (`Modules/Lang/packages/lara-zeus/spatie-tra
 
 ```
 Lang ──> Tutti i moduli (auto-risoluzione traduzioni)
+<<<<<<< HEAD
 Lang ──> healthcare_app    (titoli survey, etichette chart)
 >>>>>>> .merge_file_REzwt6
+=======
+Lang ──> healthcare_app    (titoli survey, etichette chart)>>>>>>> .merge_file_REzwt6
+>>>>>>> 8215f950 (.)
 Lang ──> Limesurvey (traduzioni domande/risposte)
 Lang ──> Cms        (contenuto pagine multilingua)
 Lang ──> Meetup     (eventi multilingua)

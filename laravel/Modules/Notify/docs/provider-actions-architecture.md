@@ -21,7 +21,10 @@ Questo assicura che qualsiasi client possa utilizzare qualsiasi provider senza m
 
 Le azioni specifiche dei provider SMS si trovano nella directory:
 - `/var/www/html/ptvx/laravel/Modules/Notify/app/Actions/SMS/`
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ### 3. Convenzioni di Nomenclatura
 
 - Le azioni devono essere nominate seguendo il pattern `Send{Provider}SMSAction`

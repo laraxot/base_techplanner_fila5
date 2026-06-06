@@ -6,7 +6,17 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\SocialProvider;
+<<<<<<< HEAD
     protected $model = SocialProvider::class;
+=======
+
+class SocialProviderFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     */
+    protected $model = \Modules\User\Models\SocialProvider::class;
+>>>>>>> 8215f950 (.)
 
     /**
      * Define the model's default state.

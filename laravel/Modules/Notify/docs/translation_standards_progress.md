@@ -18,8 +18,12 @@
    - `/var/www/html/ptvx/laravel/Modules/Notify/lang/it/setting.php`
    - `/var/www/html/ptvx/laravel/Modules/Notify/lang/it/edit_mail_template.php`
    - `/var/www/html/ptvx/laravel/Modules/Notify/lang/it/send_netfun_sms.php`
+<<<<<<< HEAD
    - `/var/www/html/ptvx/laravel/Modules/Notify/lang/it/notification_template.php`
    - E altri 15 file (elenco completo in appendice)
+=======
+   - `/var/www/html/ptvx/laravel/Modules/Notify/lang/it/notification_template.php`   - E altri 15 file (elenco completo in appendice)
+>>>>>>> 8215f950 (.)
 
 ### Correzioni Implementate
 
@@ -29,8 +33,12 @@
 
 2. **File Corretti**
    - Creato `/var/www/html/ptvx/laravel/Modules/Notify/lang/it/send_whatsapp.php` con struttura corretta
+<<<<<<< HEAD
    - Aggiornato `/var/www/html/ptvx/laravel/Modules/Notify/lang/it/send_netfun_sms.php` con struttura completa
    - Rimosso il file con naming errato `send_whats_app.php`
+=======
+   - Aggiornato `/var/www/html/ptvx/laravel/Modules/Notify/lang/it/send_netfun_sms.php` con struttura completa   - Rimosso il file con naming errato `send_whats_app.php`
+>>>>>>> 8215f950 (.)
 
 ### Prossime Correzioni da Implementare
 
@@ -40,8 +48,12 @@
    - `/var/www/html/ptvx/laravel/Modules/Notify/lang/it/send_telegram.php`
 
 2. **Verifiche da Eseguire**
+<<<<<<< HEAD
    - Analisi della cartella `/var/www/html/ptvx/laravel/Modules/Notify/lang/en/` per identificare problemi simili
    - Controllo dei riferimenti nel codice che potrebbero puntare ai vecchi file
+=======
+   - Analisi della cartella `/var/www/html/ptvx/laravel/Modules/Notify/lang/en/` per identificare problemi simili   - Controllo dei riferimenti nel codice che potrebbero puntare ai vecchi file
+>>>>>>> 8215f950 (.)
 
 ## Documentazione di Riferimento
 
@@ -76,5 +88,9 @@
 /var/www/html/ptvx/laravel/Modules/Notify/lang/it/send_firebase_push_notification.php
 /var/www/html/ptvx/laravel/Modules/Notify/lang/it/send_email.php
 /var/www/html/ptvx/laravel/Modules/Notify/lang/it/send_spatie_email.php
+<<<<<<< HEAD
 /var/www/html/ptvx/laravel/Modules/Notify/lang/it/create_mail_template.php
 ```
+=======
+/var/www/html/ptvx/laravel/Modules/Notify/lang/it/create_mail_template.php```
+>>>>>>> 8215f950 (.)

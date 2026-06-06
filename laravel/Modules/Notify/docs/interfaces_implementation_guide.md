@@ -10,6 +10,7 @@ Le interfacce sono organizzate in due livelli:
 
 1. **Interfacce Generiche**: Posizionate direttamente nella directory `app/Contracts/`
    ```
+<<<<<<< HEAD
    /var/www/html/ptvx/laravel/Modules/Notify/app/Contracts/SmsActionContract.php
    ```
 
@@ -17,6 +18,13 @@ Le interfacce sono organizzate in due livelli:
    ```
    /var/www/html/ptvx/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
    ```
+=======
+   /var/www/html/ptvx/laravel/Modules/Notify/app/Contracts/SmsActionContract.php   ```
+
+2. **Interfacce Specifiche per Canale**: Posizionate in sottodirectory dedicate
+   ```
+   /var/www/html/ptvx/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php   ```
+>>>>>>> 8215f950 (.)
 
 ### Convenzioni di Naming
 

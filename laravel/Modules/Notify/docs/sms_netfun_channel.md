@@ -115,8 +115,12 @@ Configurazione attuale con username/password nel modulo Notify:
 'netfun' => [
     'username' => env('NETFUN_USERNAME'),
     'password' => env('NETFUN_PASSWORD'),
+<<<<<<< HEAD
     'sender' => env('NETFUN_SENDER', 'Laraxot'),
     'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
+=======
+    'sender' => env('NETFUN_SENDER', 'Laraxot'),    'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
+>>>>>>> 8215f950 (.)
     // Parametri avanzati...
 ],
 ```

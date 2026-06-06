@@ -8,6 +8,10 @@ use Modules\UI\Models\Asset;
 use Modules\Xot\Models\Module;
 
 uses(TestCase::class)->in(__DIR__);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8215f950 (.)
 it('can create a test asset', function () {
     $asset = Asset::factory()->create([
         'name' => 'Test Asset',

@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\Placeholder;
+<<<<<<< HEAD
             'env_guide' => Placeholder::make('env_guide')
                 ->hiddenLabel()
                 ->content(__('fields.env_guide.content'))
@@ -13,11 +14,53 @@ use Filament\Forms\Components\Placeholder;
             'name' => TextInput::make('name')
                 ->required()
                 ->maxLength(255),
+=======
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
+use Filament\Schemas\Components\Component;
+use Modules\User\Filament\Resources\SocialProviderResource\Pages\CreateSocialProvider;
+use Modules\User\Filament\Resources\SocialProviderResource\Pages\EditSocialProvider;
+use Modules\User\Filament\Resources\SocialProviderResource\Pages\ListSocialProviders;
+use Modules\User\Filament\Resources\SocialProviderResource\Pages\ViewSocialProvider;
+use Modules\User\Models\SocialProvider;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+
+/**
+ * @property SocialProvider $record
+ *                                  -------
+ */
+class SocialProviderResource extends XotBaseResource
+{
+    protected static ?string $model = SocialProvider::class;
+
+    /**
+     * @return array<string, Component>
+     */
+    #[\Override]
+    public static function getFormSchema(): array
+    {
+        return [
+            'name' => TextInput::make('name')
+                ->required()
+                ->maxLength(255)
+                ->placeholder(__('fields.name.placeholder'))
+                ->helperText(__('fields.name.helper_text')),
+>>>>>>> 8215f950 (.)
             'scopes' => KeyValue::make('scopes')
                 // ->placeholder(static::trans('fields.scopes.placeholder'))
                 ->helperText(__('fields.scopes.helper_text')),
             'client_id' => TextInput::make('client_id')
+<<<<<<< HEAD
 
+=======
+                ->required()
+                ->maxLength(255)
+                ->placeholder(__('fields.client_id.placeholder'))
+                ->helperText(__('fields.client_id.helper_text')),
+            'client_secret' => TextInput::make('client_secret')
+                ->required()
+>>>>>>> 8215f950 (.)
                 ->maxLength(1024)
                 ->placeholder(__('fields.client_secret.placeholder'))
                 ->helperText(__('fields.client_secret.helper_text')),

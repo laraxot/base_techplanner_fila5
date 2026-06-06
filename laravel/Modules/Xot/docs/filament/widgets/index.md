@@ -38,4 +38,8 @@ class DashboardStatsWidget extends XotBaseWidget
         ];
     }
 }
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 8215f950 (.)

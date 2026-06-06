@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Actions;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\User\Tests\TestCase::class);
+>>>>>>> 8215f950 (.)
 
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;

@@ -90,6 +90,9 @@ class RegisterWidget extends XotBaseWidget
 - [XotBaseWidget Documentation](../../../Modules/Xot/docs/filament-class-extension-rules.md)
 - [LoginWidget Fix Documentation](../../../Modules/User/docs/login-widget-fix.md)
 - [Filament Form State Management](https://filamentphp.com/docs/3.x/forms/fields#state-management)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ---
 

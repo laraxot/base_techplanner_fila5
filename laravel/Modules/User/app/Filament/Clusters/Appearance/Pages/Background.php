@@ -27,7 +27,10 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 class Background extends XotBasePage
 {
     // $data è già definita in XotBasePage, non ridichiarare!
+<<<<<<< HEAD
 * @param  array<string, mixed>  $data
+=======
+>>>>>>> 8215f950 (.)
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {

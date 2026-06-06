@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: translation-syntax-fixes-2025
@@ -5,3 +6,18 @@ canonical: ../../../Themes/docs/shared-components/translation-syntax-fixes-2025.
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-syntax-fixes-2025.md
+=======
+# translation-syntax-fixes-2025 - User
+
+## Overview
+
+Documentazione per translation-syntax-fixes-2025 nel modulo User.
+
+## Dettagli
+
+[Da completare]
+
+## Collegamenti
+
+- [Modulo Principale](../README.md)
+>>>>>>> 8215f950 (.)

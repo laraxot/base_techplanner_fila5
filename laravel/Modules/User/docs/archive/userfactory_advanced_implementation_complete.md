@@ -3,7 +3,10 @@
 ## 🎉 Mission Accomplished
 
 L'implementazione **avanzata** della UserFactory del modulo Laraxot è stata **completata con successo**, elevando la factory da ottima a **eccellenza enterprise-grade**.
+<<<<<<< HEAD
 L'implementazione **avanzata** della UserFactory del modulo healthcare_app è stata **completata con successo**, elevando la factory da ottima a **eccellenza enterprise-grade**.
+=======
+>>>>>>> 8215f950 (.)
 
 ## 📊 Results Summary
 
@@ -161,7 +164,10 @@ $gdprTests = [
 - **Session Management**: Cross-module state persistence
 
 ### Laraxot Domain Specialization  
+<<<<<<< HEAD
 ### healthcare_app Domain Specialization  
+=======
+>>>>>>> 8215f950 (.)
 - **STI Architecture**: Single Table Inheritance perfection
 - **Business Logic**: Healthcare workflow automation
 - **State Management**: Spatie States integration
@@ -305,5 +311,9 @@ $gdprTests = [
 - [Model Architecture](../laravel/modules/healthcare_app/docs/models/single-table-inheritance.md)
 - [State Management](../laravel/modules/healthcare_app/docs/models/states.md)
 - [Cross-Module Relations](../laravel/modules/healthcare_app/docs/models/doctor-studio-relationship.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+>>>>>>> 8215f950 (.)
 
 **🎉 MISSION ACCOMPLISHED - UserFactory Advanced Implementation Complete! 🎉** 

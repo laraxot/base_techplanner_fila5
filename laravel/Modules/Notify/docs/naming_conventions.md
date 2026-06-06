@@ -57,7 +57,10 @@ public function handleHTTPRequest(): void
 # Convenzioni di Naming per le Azioni di Notifica
 
 Questo documento definisce le convenzioni di naming standardizzate per le azioni di notifica nel sistema Laraxot, supportando la risoluzione dinamica delle classi implementata nei factory.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Pattern di Naming
 
 ### Azioni SMS

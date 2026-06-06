@@ -20,6 +20,7 @@ trait HasDynamicFillable
     {
         $fillable = array_values(parent::getFillable());
 
+<<<<<<< HEAD
 if ($this->dynamicFillableEnums === []) {
             return $fillable;
         }
@@ -29,6 +30,17 @@ if ($this->dynamicFillableEnums === []) {
         foreach ($dynamicFillableEnums as $enumClass) {
             if (! is_string($enumClass) || $enumClass === '') {
                 continue;
+=======
+        $dynamicFillableEnums = $this->dynamicFillableEnums ?? null;
+
+        // Ensure the property is an array
+        if (! is_array($dynamicFillableEnums)) {
+            return $fillable;
+        }
+
+        foreach ($dynamicFillableEnums as $enumClass) {
+            if (! is_string($enumClass) || '' === $enumClass) {                continue;
+>>>>>>> 8215f950 (.)
             }
 
             // Basic validation for enum class

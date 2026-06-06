@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 use Laravel\Passport\Token as PassportToken;
 
+<<<<<<< HEAD
 /**
  * @property bool $revoked
  * @property int|string|null $user_id
@@ -13,4 +14,9 @@ use Laravel\Passport\Token as PassportToken;
 class OauthToken extends PassportToken
 {
     protected $connection = 'user';
+=======
+class OauthToken extends PassportToken
+{
+    /** @var string */    protected $connection = 'user';
+>>>>>>> 8215f950 (.)
 }

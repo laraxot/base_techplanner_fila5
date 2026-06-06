@@ -10,6 +10,7 @@ use Spatie\LaravelData\Data;
  * Class PwaData - Gestisce la configurazione PWA per il framework Laraxot.
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  */
+<<<<<<< HEAD
 final class PwaData extends Data
 {
     /**
@@ -22,6 +23,19 @@ final class PwaData extends Data
      * @param  string  $icon_path  Percorso dell'icona
      * @param  array<string, string>  $splash  Configurazione splash screen
      */
+=======
+class PwaData extends Data
+{
+    /**
+     * @param bool                  $enable           Se il PWA è abilitato
+     * @param string                $name             Nome dell'applicazione
+     * @param string                $short_name       Nome breve dell'applicazione
+     * @param string                $description      Descrizione dell'applicazione
+     * @param string                $background_color Colore di sfondo
+     * @param string                $theme_color      Colore del tema
+     * @param string                $icon_path        Percorso dell'icona
+     * @param array<string, string> $splash           Configurazione splash screen     */
+>>>>>>> 8215f950 (.)
     public function __construct(
         public readonly bool $enable = false,
         public readonly string $name = 'Laraxot App',
@@ -36,13 +50,22 @@ final class PwaData extends Data
             '1242x2208' => 'img/splash/splash-1242x2208.png',
             '1125x2436' => 'img/splash/splash-1125x2436.png',
         ],
+<<<<<<< HEAD
 ) {}
 
+=======
+    ) {
+    }
+>>>>>>> 8215f950 (.)
     /**
      * Create a new instance of PwaData with default values.
      */
     public static function make(): static
     {
+<<<<<<< HEAD
 return new self();
     }
+=======
+        return new static();    }
+>>>>>>> 8215f950 (.)
 }

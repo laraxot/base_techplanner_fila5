@@ -69,6 +69,10 @@ Usage Examples:
 
 2. Custom skiplinks:
 <x-pub_theme::skiplinks 
+<<<<<<< HEAD
 
 <x-pub_theme::skiplinks :show-list="false" />
+=======
+=======<x-pub_theme::skiplinks :show-list="false" />
+>>>>>>> 8215f950 (.)
 --}}

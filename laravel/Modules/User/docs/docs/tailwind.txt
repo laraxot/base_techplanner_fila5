@@ -1,2 +1,5 @@
 https://tailwindflex.com/@sophia-baker/responsive-registration-form
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)

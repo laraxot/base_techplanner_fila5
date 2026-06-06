@@ -9,12 +9,34 @@ use Illuminate\Support\Collection;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
+<<<<<<< HEAD
+=======
+
+use function Laravel\Prompts\multiselect;
+use function Laravel\Prompts\text;
+
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+use Symfony\Component\Console\Input\InputOption;
+use Webmozart\Assert\Assert;
+
+class AssignTeamCommand extends Command
+{
+    /**
+     * The name and signature of the console command.
+     *
+     * @var string
+>>>>>>> 8215f950 (.)
      */
     protected $name = 'user:assign-team';
 
     /**
      * The console command description.
+<<<<<<< HEAD
 *
+=======
+     *
+>>>>>>> 8215f950 (.)
      * @var string
      */
     protected $description = 'Assign a team to user';

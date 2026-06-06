@@ -29,6 +29,7 @@ L'implementazione corretta degli allegati richiede una struttura specifica. Ecco
    ```php
    $attachments = [
        [
+<<<<<<< HEAD
            'path' => '/var/www/html/ptvx/public_html/images/avatars/default-3.svg',
            'as' => 'logo.png',
            'mime' => 'image/png'
@@ -36,6 +37,13 @@ L'implementazione corretta degli allegati richiede una struttura specifica. Ecco
        [
            'path' => '/var/www/html/ptvx/public_html/images/avatars/default-3.svg',
            'as' => 'logo.png',
+=======
+           'path' => '/var/www/html/ptvx/public_html/images/avatars/default-3.svg',           'as' => 'logo.png',
+           'mime' => 'image/png'
+       ],
+       [
+           'path' => '/var/www/html/ptvx/public_html/images/avatars/default-3.svg',           'as' => 'logo.png',
+>>>>>>> 8215f950 (.)
            'mime' => 'image/png'
        ]
    ];

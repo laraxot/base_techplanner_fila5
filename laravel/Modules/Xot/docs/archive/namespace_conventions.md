@@ -68,8 +68,12 @@ Questo è l'errore più comune e grave nelle convenzioni di namespace:
 namespace Modules\ModuloEsempio\App\Controllers;
 
 // CORRETTO
+<<<<<<< HEAD
 namespace Modules\ModuloEsempio\Controllers;
 ```
+=======
+namespace Modules\ModuloEsempio\Controllers;```
+>>>>>>> 8215f950 (.)
 
 ## esempi corretti vs errati
 
@@ -79,8 +83,12 @@ namespace Modules\Xot\Console\Commands;
 namespace Modules\ModuloEsempio\Models;
 namespace Modules\User\Services;
 namespace Modules\Tenant\Repositories;
+<<<<<<< HEAD
 namespace Modules\ModuloEsempio\Filament\Resources;
 ```
+=======
+namespace Modules\ModuloEsempio\Filament\Resources;```
+>>>>>>> 8215f950 (.)
 
 ### errati ✗
 ```php
@@ -88,8 +96,12 @@ namespace Modules\Xot\app\Console\Commands;       // errato: 'app' nel namespace
 namespace Modules\ModuloEsempio\App\Models;           // errato: 'App' nel namespace
 namespace Modules\User\App\Services;              // errato: 'App' nel namespace
 namespace Modules\Tenant\app\Repositories;        // errato: 'app' nel namespace
+<<<<<<< HEAD
 namespace App\Modules\ModuloEsempio\Controllers;      // errato: struttura completamente sbagliata
 ```
+=======
+namespace App\Modules\ModuloEsempio\Controllers;      // errato: struttura completamente sbagliata```
+>>>>>>> 8215f950 (.)
 
 ## struttura fisica vs namespace
 
@@ -99,16 +111,24 @@ Anche se i file sono fisicamente collocati in una directory `app/`, il namespace
 
 ```
 Percorso fisico:    /Modules/ModuloEsempio/app/Models/Patient.php
+<<<<<<< HEAD
 Namespace corretto: namespace Modules\ModuloEsempio\Models;
 ```
+=======
+Namespace corretto: namespace Modules\ModuloEsempio\Models;```
+>>>>>>> 8215f950 (.)
 
 ### mappatura corretta percorso-namespace
 
 | percorso fisico | namespace corretto |
 |-----------------|--------------------|
 | `/Modules/ModuloEsempio/app/Models/Patient.php` | `Modules\ModuloEsempio\Models` |
+<<<<<<< HEAD
 | `/Modules/ModuloEsempio/app/Filament/Resources/PatientResource.php` | `Modules\ModuloEsempio\Filament\Resources` |
 | `/Modules/Xot/app/Providers/XotServiceProvider.php` | `Modules\Xot\Providers` |
+=======
+| `/Modules/ModuloEsempio/app/Filament/Resources/PatientResource.php` | `Modules\ModuloEsempio\Filament\Resources` || `/Modules/Xot/app/Providers/XotServiceProvider.php` | `Modules\Xot\Providers` |
+>>>>>>> 8215f950 (.)
 
 ### struttura directory completa
 
@@ -123,8 +143,12 @@ Modules/
         Patient.php            // namespace Modules\ModuloEsempio\Models;
       Filament/
         Resources/
+<<<<<<< HEAD
           PatientResource.php  // namespace Modules\ModuloEsempio\Filament\Resources;
 ```
+=======
+          PatientResource.php  // namespace Modules\ModuloEsempio\Filament\Resources;```
+>>>>>>> 8215f950 (.)
 
 ## come verificare i namespace
 
@@ -141,8 +165,12 @@ Prima di committare un file, verifica sempre che:
 Utilizza phpstan per verificare automaticamente i namespace:
 
 ```bash
+<<<<<<< HEAD
 php artisan phpstan:analyse --level=1 Modules/ModuloEsempio
 ```
+=======
+php artisan phpstan:analyse --level=1 Modules/ModuloEsempio```
+>>>>>>> 8215f950 (.)
 
 ## motivazione di questa convenzione
 - Mantiene i namespace puliti e coerenti
@@ -167,8 +195,12 @@ Un errore comune è includere `App` nel namespace:
 namespace Modules\ModuloEsempio\App\Console\Commands;
 
 // CORRETTO ✓
+<<<<<<< HEAD
 namespace Modules\ModuloEsempio\Console\Commands;
 ```
+=======
+namespace Modules\ModuloEsempio\Console\Commands;```
+>>>>>>> 8215f950 (.)
 
 ### Conseguenze dell'Errore
 - Class not found exceptions
@@ -183,8 +215,12 @@ namespace Modules\ModuloEsempio\Console\Commands;
 Utilizzare grep per trovare tutti i file con namespace errato:
 
 ```bash
+<<<<<<< HEAD
 grep -r "namespace Modules\\\\.*\\\\App\\\\" /var/www/html/base_ptvx/laravel/Modules
 ```
+=======
+grep -r "namespace Modules\\\\.*\\\\App\\\\" /var/www/html/base_ptvx/laravel/Modules```
+>>>>>>> 8215f950 (.)
 
 ### PHP Stan
 Configurare PHP Stan per verificare i namespace corretti:

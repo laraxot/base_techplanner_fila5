@@ -4,4 +4,8 @@ simplesoftwareio/simple-qrcode
 https://laravel-news.com/package/simplesoftwareio-simple-qrcode
 
 
+<<<<<<< HEAD
 https://github.com/giauphan/laravel-qr-code
+=======
+https://github.com/giauphan/laravel-qr-code
+>>>>>>> 8215f950 (.)

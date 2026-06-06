@@ -287,8 +287,12 @@ Usage Examples:
 1. Basic upload:
 <x-pub_theme::upload 
 <x-pub_theme::upload 
+<<<<<<< HEAD
 
 <x-pub_theme::upload 
+=======
+=======<x-pub_theme::upload 
+>>>>>>> 8215f950 (.)
     name="documents[]"
     :multiple="true"
     label="Upload documenti"
@@ -298,8 +302,12 @@ Usage Examples:
 3. Upload in loading state:
 <x-pub_theme::upload 
 <x-pub_theme::upload 
+<<<<<<< HEAD
 
 <x-pub_theme::upload 
+=======
+=======<x-pub_theme::upload 
+>>>>>>> 8215f950 (.)
     state="success"
     file-info="PDF (3.7MB)"
     label="documento.pdf"
@@ -308,8 +316,12 @@ Usage Examples:
 5. Custom text and description:
 <x-pub_theme::upload 
 <x-pub_theme::upload 
+<<<<<<< HEAD
 
 <x-pub_theme::upload 
+=======
+=======<x-pub_theme::upload 
+>>>>>>> 8215f950 (.)
     name="avatar"
     accept="image/*"
     icon-path="/assets/image-upload-icon.svg"

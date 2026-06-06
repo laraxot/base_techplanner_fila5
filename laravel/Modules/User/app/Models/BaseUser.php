@@ -46,6 +46,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * functionality for the application. It extends Laravel's Authenticatable class
  * and implements the required interfaces for Filament and multi-tenancy.
  *
+<<<<<<< HEAD
 * @property Collection<int, OauthClient> $clients
  * @property int|null $clients_count
  * @property Team|null $currentTeam
@@ -92,6 +93,54 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @property string|null $deleted_by
  * @property string|null $profile_photo_path
  * @property Pivot|null $pivot
+=======
+ * @property Collection<int, OauthClient>                              $clients
+ * @property int|null                                                  $clients_count
+ * @property Team|null                                                 $currentTeam
+ * @property Collection<int, Device>                                   $devices
+ * @property int|null                                                  $devices_count
+ * @property string|null                                               $full_name
+ * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
+ * @property int|null                                                  $notifications_count
+ * @property Collection<int, Team>                                     $ownedTeams
+ * @property int|null                                                  $owned_teams_count
+ * @property Collection<int, Permission>                               $permissions
+ * @property int|null                                                  $permissions_count
+ * @property ProfileContract|null                                      $profile
+ * @property Collection<int, Role>                                     $roles
+ * @property int|null                                                  $roles_count
+ * @property Collection<int, Team>                                     $teams
+ * @property int|null                                                  $teams_count
+ * @property Collection<int, Tenant>                                   $tenants
+ * @property int|null                                                  $tenants_count
+ * @property Collection<int, OauthToken>                               $tokens
+ * @property int|null                                                  $tokens_count
+ * @property string                                                    $last_name
+ * @property string|null                                               $facebook_id
+ * @property Collection<int, SocialiteUser>                            $socialiteUsers
+ * @property int|null                                                  $socialite_users_count
+ * @property string|null                                               $name
+ * @property string|null                                               $first_name
+ * @property string|null                                               $last_name
+ * @property string|null                                               $email
+ * @property string|null                                               $password
+ * @property string|null                                               $lang
+ * @property string|null                                               $current_team_id
+ * @property bool|null                                                 $is_active
+ * @property bool|null                                                 $is_otp
+ * @property string|null                                               $type
+ * @property \DateTime|null                                            $password_expires_at
+ * @property \DateTime|null                                            $email_verified_at
+ * @property string|null                                               $remember_token
+ * @property \DateTime|null                                            $created_at
+ * @property \DateTime|null                                            $updated_at
+ * @property \DateTime|null                                            $deleted_at
+ * @property string|null                                               $created_by
+ * @property string|null                                               $updated_by
+ * @property string|null                                               $deleted_by
+ * @property string|null                                               $profile_photo_path
+ * @property Pivot|null                                                $pivot
+>>>>>>> 8215f950 (.)
  *
  * @method static Builder|User newModelQuery()
  * @method static Builder|User newQuery()
@@ -142,6 +191,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     use Traits\HasTenants;
     use XotTraits\RelationX;
 
+<<<<<<< HEAD
 public $incrementing = false;
 
     public ?Pivot $pivot = null;
@@ -153,6 +203,27 @@ public $incrementing = false;
     protected $keyType = 'string';
 
     protected string $childColumn = 'type';
+=======
+    /** @var bool */
+    public $incrementing = false;
+
+    /** @var Pivot|null */
+    public $pivot;
+
+    /** @var string */
+    protected $connection = 'user';
+
+    /** @var string */
+    protected $primaryKey = 'id';
+
+    /** @var string */
+    protected $keyType = 'string';
+
+    /** @var string */
+    protected $childColumn = 'type';
+
+    /** @var list<string> */
+>>>>>>> 8215f950 (.)
     protected $fillable = [
         'id',
         // 'ente',
@@ -193,8 +264,22 @@ public $incrementing = false;
     /** @var array<string, class-string> */
     protected $childTypes = [];
 
+<<<<<<< HEAD
 */
     protected string $guard_name = 'web';
+=======
+    /** @var array<string, mixed> */
+    protected $attributes = [
+        'is_active' => true,
+    ];
+
+    /**
+     * Guard coerente con Spatie/Permission: deve essere 'web'.
+     *
+     * @var string
+     */
+    protected $guard_name = 'web';
+>>>>>>> 8215f950 (.)
 
     public function __construct(array $attributes = [])
     {
@@ -283,7 +368,11 @@ public $incrementing = false;
     public function canAccessPanel(Panel $panel): bool
     {
         // $panel->default('admin');
+<<<<<<< HEAD
 if ($panel->getId() !== 'admin') {
+=======
+        if ('admin' !== $panel->getId()) {
+>>>>>>> 8215f950 (.)
             $role = $panel->getId();
             /*
              * $xot = XotData::make();
@@ -306,12 +395,28 @@ if ($panel->getId() !== 'admin') {
 
     public function detach(Model $model): void
     {
+<<<<<<< HEAD
 $this->teams()->detach($model);
+=======
+        // @phpstan-ignore function.alreadyNarrowedType
+        if (method_exists($this, 'teams')) {
+            // @phpstan-ignore function.alreadyNarrowedType
+            $this->teams()->detach($model);
+        }
+>>>>>>> 8215f950 (.)
     }
 
     public function attach(Model $model): void
     {
+<<<<<<< HEAD
 $this->teams()->attach($model);
+=======
+        // @phpstan-ignore function.alreadyNarrowedType
+        if (method_exists($this, 'teams')) {
+            // @phpstan-ignore function.alreadyNarrowedType
+            $this->teams()->attach($model);
+        }
+>>>>>>> 8215f950 (.)
     }
 
     public function treeLabel(): string
@@ -347,7 +452,11 @@ $this->teams()->attach($model);
     public function getProviderField(string $provider, string $field): string
     {
         $socialiteUser = $this->socialiteUsers()->firstWhere(['provider' => $provider]);
+<<<<<<< HEAD
 if ($socialiteUser === null) {
+=======
+        if (null === $socialiteUser) {
+>>>>>>> 8215f950 (.)
             throw new \Exception('SocialiteUser not found');
         }
 
@@ -359,41 +468,73 @@ if ($socialiteUser === null) {
     /**
      * Get the entity's notifications.
      *
+<<<<<<< HEAD
 * @return MorphMany<Notification, $this>
      */
     public function notifications(): MorphMany
     {
+=======
+     * @return MorphMany<Notification, static|$this>
+     */
+    public function notifications(): MorphMany
+    {
+        // @phpstan-ignore return.type
+>>>>>>> 8215f950 (.)
         return $this->morphMany(Notification::class, 'notifiable');
     }
 
     /**
      * Get the user's latest authentication log.
      *
+<<<<<<< HEAD
 * @return MorphOne<AuthenticationLog, $this>
      */
     public function latestAuthentication(): MorphOne
     {
+=======
+     * @return MorphOne<AuthenticationLog, static>
+     */
+    public function latestAuthentication(): MorphOne
+    {
+        // @phpstan-ignore return.type
+>>>>>>> 8215f950 (.)
         return $this->morphOne(AuthenticationLog::class, 'authenticatable')->latestOfMany();
     }
 
     public function getFullNameAttribute(?string $value): string
     {
+<<<<<<< HEAD
 if ($value !== null) {
+=======
+        if (null !== $value) {
+>>>>>>> 8215f950 (.)
             return $value;
         }
 
         $fullName = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
 
+<<<<<<< HEAD
 return $fullName !== '' ? $fullName : ($this->email ?? 'User');
+=======
+        return '' !== $fullName ? $fullName : ($this->email ?? 'User');
+>>>>>>> 8215f950 (.)
     }
 
     public function getNameAttribute(?string $value): string
     {
+<<<<<<< HEAD
 if ($value !== null) {
             return $value;
         }
 
         if ($this->getKey() === null) {
+=======
+        if (null !== $value) {
+            return $value;
+        }
+
+        if (null === $this->getKey()) {
+>>>>>>> 8215f950 (.)
             return $this->email ?? 'User';
         }
 
@@ -408,7 +549,11 @@ if ($value !== null) {
                 return true;
             }
 
+<<<<<<< HEAD
 return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
+=======
+            return \PHP_SAPI === 'cli' && ('testing' === getenv('APP_ENV') || 'testing' === getenv('ENV'));
+>>>>>>> 8215f950 (.)
         })();
         if ($isTesting) {
             // Do not call update() here to avoid hitting the database.
@@ -419,8 +564,13 @@ return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') 
 
         try {
             $value = $candidate;
+<<<<<<< HEAD
 while (self::firstWhere(['name' => $value]) !== null) {
                 $i++;
+=======
+            while (null !== self::firstWhere(['name' => $value])) {
+                ++$i;
+>>>>>>> 8215f950 (.)
                 $value = $name.'-'.$i;
             }
             $this->update(['name' => $value]);
@@ -472,7 +622,11 @@ while (self::firstWhere(['name' => $value]) !== null) {
         return $this->morphMany(OauthClient::class, 'owner');
     }
 
+<<<<<<< HEAD
 /**
+=======
+    /**
+>>>>>>> 8215f950 (.)
      * Find the user instance for the given username.
      */
     public static function findForPassport(string $username): ?self
@@ -487,4 +641,46 @@ while (self::firstWhere(['name' => $value]) !== null) {
     {
         return Hash::check($password, (string) $this->password);
     }
+<<<<<<< HEAD
+=======
+
+    /** @return array<string, string> */
+    protected function casts(): array
+    {
+        return [
+            'id' => 'string',
+            'email_verified_at' => 'datetime',
+            // 'password' => 'hashed', //Call to undefined cast [hashed] on column [password] in model [Modules\User\Models\User].
+            'is_active' => 'boolean',
+            'roles.pivot.id' => 'string',
+            // https://github.com/beitsafe/laravel-uuid-auditing
+            // ALTER TABLE model_has_role CHANGE COLUMN `id` `id` CHAR(37) NOT NULL DEFAULT uuid();
+
+            'is_otp' => 'boolean',
+            'password_expires_at' => 'datetime',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string',
+        ];
+    }
+
+    /**
+     * Find the user instance for the given username.
+     */
+    public static function findForPassport(string $username): ?self
+    {
+        return static::where('email', $username)->first();
+    }
+
+    /**
+     * Validate the password of the user for the given password.
+     */
+    public function validateForPassportPasswordGrant(string $password): bool
+    {
+        return Hash::check($password, (string) $this->password);
+    }
+>>>>>>> 8215f950 (.)
 }

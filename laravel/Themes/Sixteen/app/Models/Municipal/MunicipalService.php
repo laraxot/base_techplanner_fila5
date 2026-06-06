@@ -4,9 +4,13 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Collection;
+=======
+use Illuminate\Database\Eloquent\Casts\Attribute;
+>>>>>>> 8215f950 (.)
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -21,7 +25,11 @@ use Illuminate\Support\Str;
  *
  * Rappresenta i servizi erogati dall'ente ai cittadini
  * secondo l'ontologia AGID e le specifiche dei servizi pubblici
+<<<<<<< HEAD
 *
+=======
+ *
+>>>>>>> 8215f950 (.)
  * @property int $id
  * @property string $name
  * @property string|null $slug
@@ -73,6 +81,14 @@ use Illuminate\Support\Str;
  * @property-read Collection<int, ContactPoint> $contacts
  * @property-read Collection<int, PublicDocument> $documents
  * @property-read Collection<int, MunicipalLocation> $locations
+<<<<<<< HEAD
+=======
+ */
+class MunicipalService extends Model
+{
+    use HasFactory, SoftDeletes;
+
+>>>>>>> 8215f950 (.)
     /**
      * Tipologie di servizio secondo AGID
      */
@@ -128,6 +144,10 @@ use Illuminate\Support\Str;
         'mobile_app' => 'App Mobile',
         'kiosk' => 'Chiosco Digitale',
     ];
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8215f950 (.)
     protected $table = 'sixteen_municipal_services';
 
     protected $fillable = [
@@ -205,7 +225,248 @@ use Illuminate\Support\Str;
     ];
 
     /**
+<<<<<<< HEAD
 
+=======
+     * Tipologie di servizio secondo AGID
+     */
+    public const SERVICE_TYPES = [
+        'administrative' => 'Servizio Amministrativo',
+        'demographic' => 'Servizio Demografico',
+        'social' => 'Servizio Sociale',
+        'educational' => 'Servizio Educativo',
+        'cultural' => 'Servizio Culturale',
+        'sports' => 'Servizio Sportivo',
+        'environmental' => 'Servizio Ambientale',
+        'urban_planning' => 'Servizio Urbanistico',
+        'economic' => 'Servizio Economico',
+        'tourism' => 'Servizio Turistico',
+        'transport' => 'Servizio Trasporti',
+        'safety' => 'Servizio Sicurezza',
+        'health' => 'Servizio Sanitario',
+        'digital' => 'Servizio Digitale',
+        'other' => 'Altro',
+    ];
+
+    /**
+     * Stati del servizio
+     */
+    public const SERVICE_STATUSES = [
+        'active' => 'Attivo',
+        'suspended' => 'Sospeso',
+        'discontinued' => 'Sospeso Definitivamente',
+        'in_development' => 'In Sviluppo',
+        'testing' => 'In Fase di Test',
+        'maintenance' => 'In Manutenzione',
+    ];
+
+    /**
+     * Livelli di servizio
+     */
+    public const SERVICE_LEVELS = [
+        'essential' => 'Servizio Essenziale',
+        'standard' => 'Servizio Standard',
+        'premium' => 'Servizio Premium',
+        'emergency' => 'Servizio di Emergenza',
+    ];
+
+    /**
+     * Metodi di erogazione
+     */
+    public const DELIVERY_METHODS = [
+        'online' => 'Online',
+        'in_person' => 'Di Persona',
+        'phone' => 'Telefonico',
+        'email' => 'Email',
+        'mail' => 'Posta',
+        'mobile_app' => 'App Mobile',
+        'kiosk' => 'Chiosco Digitale',
+    ];
+
+    /**
+     * Relazione con l'unità organizzativa responsabile
+     */
+    public function organizationalUnit(): BelongsTo
+    {
+        return $this->belongsTo(OrganizationalUnit::class);
+    }
+
+    /**
+     * Relazione con il servizio padre (per sottocategorie)
+     */
+    public function parentService(): BelongsTo
+    {
+        return $this->belongsTo(self::class, 'parent_service_id');
+    }
+
+    /**
+     * Relazione con i servizi figlio
+     */
+    public function subServices(): HasMany
+    {
+        return $this->hasMany(self::class, 'parent_service_id')->ordered();
+    }
+
+    /**
+     * Relazione con i punti di contatto
+     */
+    public function contacts(): MorphMany
+    {
+        return $this->morphMany(ContactPoint::class, 'contactable')->ordered();
+    }
+
+    /**
+     * Relazione con i documenti associati
+     */
+    public function documents(): HasMany
+    {
+        return $this->hasMany(PublicDocument::class, 'service_id');
+    }
+
+    /**
+     * Relazione con le sedi di erogazione
+     */
+    public function locations(): BelongsToMany
+    {
+        return $this->belongsToMany(MunicipalLocation::class, 'sixteen_service_locations');
+    }
+
+    /**
+     * Scope per servizi attivi
+     */
+    public function scopeActive($query)
+    {
+        return $query->where('is_active', true)
+            ->where('service_status', 'active');
+    }
+
+    /**
+     * Scope per servizi pubblici
+     */
+    public function scopePublic($query)
+    {
+        return $query->where('is_public', true);
+    }
+
+    /**
+     * Scope per servizi digitali
+     */
+    public function scopeDigital($query)
+    {
+        return $query->where('is_digital', true);
+    }
+
+    /**
+     * Scope per tipologia di servizio
+     */
+    public function scopeOfType($query, string $type)
+    {
+        return $query->where('service_type', $type);
+    }
+
+    /**
+     * Scope per categoria
+     */
+    public function scopeInCategory($query, string $category)
+    {
+        return $query->where('category', $category);
+    }
+
+    /**
+     * Scope per servizi principali (senza parent)
+     */
+    public function scopeMain($query)
+    {
+        return $query->whereNull('parent_service_id');
+    }
+
+    /**
+     * Scope ordinati per priorità e nome
+     */
+    public function scopeOrdered($query)
+    {
+        return $query->orderByDesc('priority_level')->orderBy('name');
+    }
+
+    /**
+     * Accessor per il nome del tipo di servizio
+     */
+    protected function serviceTypeName(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => self::SERVICE_TYPES[$this->service_type] ?? $this->service_type
+        );
+    }
+
+    /**
+     * Accessor per il nome dello stato
+     */
+    protected function serviceStatusName(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => self::SERVICE_STATUSES[$this->service_status] ?? $this->service_status
+        );
+    }
+
+    /**
+     * Accessor per il nome del livello
+     */
+    protected function serviceLevelName(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => self::SERVICE_LEVELS[$this->service_level] ?? $this->service_level
+        );
+    }
+
+    /**
+     * Accessor per verificare se il servizio è disponibile
+     */
+    protected function isAvailable(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->is_active && $this->service_status === 'active'
+        );
+    }
+
+    /**
+     * Accessor per verificare se richiede appuntamento
+     */
+    protected function requiresAppointment(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->appointment_required
+        );
+    }
+
+    /**
+     * Accessor per l'URL del servizio
+     */
+    protected function url(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => route('municipal.services.show', $this->slug)
+        );
+    }
+
+    /**
+     * Mutator per il nome (genera automaticamente lo slug)
+     */
+    protected function name(): Attribute
+    {
+        return Attribute::make(
+            set: function ($value) {
+                $this->attributes['name'] = $value;
+                if (empty($this->attributes['slug'])) {
+                    $this->attributes['slug'] = Str::slug($value);
+                }
+
+                return $value;
+            }
+        );
+    }
+
+    /**
+>>>>>>> 8215f950 (.)
      * Ottiene i requisiti formattati
      */
     public function getFormattedRequirements(): array
@@ -343,7 +604,11 @@ use Illuminate\Support\Str;
         return collect($this->costs)->every(function ($cost) {
             $amount = is_array($cost) ? ($cost['amount'] ?? 0) : $cost;
 
+<<<<<<< HEAD
 return $amount === 0;
+=======
+            return $amount == 0;
+>>>>>>> 8215f950 (.)
         });
     }
 
@@ -424,6 +689,7 @@ return $amount === 0;
     }
 
     /**
+<<<<<<< HEAD
 * Accessor per il nome del tipo di servizio
      */
     protected function serviceTypeName(): Attribute
@@ -504,18 +770,31 @@ return $amount === 0;
      * Boot del modello
      */
     protected static function boot(): void
+=======
+     * Boot del modello
+     */
+    protected static function boot()
+>>>>>>> 8215f950 (.)
     {
         parent::boot();
 
         // Genera slug se mancante
+<<<<<<< HEAD
 static::creating(function ($model): void {
+=======
+        static::creating(function ($model) {
+>>>>>>> 8215f950 (.)
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->name);
             }
         });
 
         // Assicura unicità dello slug
+<<<<<<< HEAD
 static::creating(function ($model): void {
+=======
+        static::creating(function ($model) {
+>>>>>>> 8215f950 (.)
             $originalSlug = $model->slug;
             $counter = 1;
 
@@ -526,7 +805,11 @@ static::creating(function ($model): void {
         });
 
         // Set default values
+<<<<<<< HEAD
 static::creating(function ($model): void {
+=======
+        static::creating(function ($model) {
+>>>>>>> 8215f950 (.)
             if (is_null($model->service_status)) {
                 $model->service_status = 'active';
             }

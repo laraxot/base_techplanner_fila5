@@ -10,7 +10,28 @@ namespace Modules\Xot\Models\Policies;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Auth\Access\Response;
+<<<<<<< HEAD
     public function viewAny(UserContract $user): Response|bool
+=======
+use Modules\Xot\Contracts\UserContract;
+
+// use Modules\Xot\Datas\XotData;
+
+abstract class XotBasePolicy
+{
+    use HandlesAuthorization;
+
+    public function before(UserContract $user, string $_ability): ?bool
+    {
+        return once(function () use ($user) {
+            if ($user->hasRole('super-admin')) {
+                return true;
+            }
+        });
+    }
+
+    public function viewAny(UserContract $userContract): bool
+>>>>>>> 8215f950 (.)
     {
         return false;
     }

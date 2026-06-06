@@ -13,12 +13,17 @@ use Webmozart\Assert\Assert;
 
 class ChangePasswordCommand extends Command
 {
+<<<<<<< HEAD
 protected $signature = 'user:change-password {--email= : Email dell\'utente}';
 
+=======
+    protected $signature = 'user:change-password';
+>>>>>>> 8215f950 (.)
     protected $description = 'Change user password';
 
     public function handle(): void
     {
+<<<<<<< HEAD
 $emailInput = $this->option('email') ?? $this->ask('Enter the user email:');
         Assert::string($emailInput);
 
@@ -35,6 +40,23 @@ $user = XotData::make()->findUserByEmail($email);
         if ($user === null) {
             $this->error("Utente non trovato per email: {$email}");
 
+=======
+        Assert::string($email = $this->ask('Enter the user email:'));
+        try {
+            $user = XotData::make()->getUserByEmail($email);
+        } catch (\Exception $e) {
+            $this->error($e->getMessage());
+            return;
+        }
+
+        // Ensure we fetched a persisted user and not a transient instance to avoid accidental insert
+        if (! $user->exists()) {
+            Assert::false(
+                $user->exists(),
+                __FILE__.':'.__LINE__.' - '.class_basename(self::class).' - User model should exist in database before password change'
+            );
+            $this->error('User not found or not persisted. Please create the user first (name, email, type, etc.).');
+>>>>>>> 8215f950 (.)
             return;
         }
 
@@ -46,9 +68,19 @@ $user = XotData::make()->findUserByEmail($email);
 
             return;
         }
+<<<<<<< HEAD
 $pwdData = PasswordData::make();
         $passwordExpiryDateTime = now()->addDays($pwdData->expires_in);
         $user = tap($user)->update([
+=======
+        $pwd_data = PasswordData::make();
+        $passwordExpiryDateTime = now()->addDays($pwd_data->expires_in);
+        /*
+         * $user->is_otp = false;
+         * $user->password = Hash::make($password);
+         * $user->save();
+         */        $user = tap($user)->update([
+>>>>>>> 8215f950 (.)
             'password_expires_at' => $passwordExpiryDateTime,
             'is_otp' => false,
             'password' => Hash::make($password),

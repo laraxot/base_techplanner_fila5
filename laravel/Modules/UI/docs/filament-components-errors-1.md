@@ -137,8 +137,12 @@ TextInput::make('first_name')  // ✅ Il LangServiceProvider gestirà automatica
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< HEAD
 - [Documentazione Componenti Filament](../../../../docs/filament/components.md)
 - [Best Practices UI](../../best-practices.md)
+=======
+- [Documentazione Componenti Filament](../../../../docs/filament/components.md)- [Best Practices UI](../../best-practices.md)
+>>>>>>> 8215f950 (.)
 - [Errori Comuni UI](../../common-errors.md)
 - [Implementazione Corretta](../../examples/correct-implementation.md)
 - [Convenzioni di Naming dei Campi](./convenzioni-naming-campi.md)

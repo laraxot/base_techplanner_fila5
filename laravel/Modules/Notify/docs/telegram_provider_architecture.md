@@ -1,7 +1,10 @@
 # Architettura Telegram Provider per Laraxot
 
 Questo documento definisce l'architettura e gli standard per l'implementazione dei provider Telegram nel modulo Notify di Laraxot, mantenendo coerenza con le architetture esistenti per SMS, email e WhatsApp.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Principi Architetturali Fondamentali
 
 L'architettura dei provider Telegram segue gli stessi principi dei provider SMS, email e WhatsApp, rispettando i seguenti punti:
@@ -14,8 +17,12 @@ L'architettura dei provider Telegram segue gli stessi principi dei provider SMS,
 ## Struttura Directory e Namespace
 
 ```
+<<<<<<< HEAD
 /var/www/html/ptvx/laravel/Modules/Notify/
 ├── app/
+=======
+/var/www/html/ptvx/laravel/Modules/Notify/├── app/
+>>>>>>> 8215f950 (.)
 │   ├── Actions/
 │   │   └── Telegram/
 │   │       ├── SendBotTelegramAction.php

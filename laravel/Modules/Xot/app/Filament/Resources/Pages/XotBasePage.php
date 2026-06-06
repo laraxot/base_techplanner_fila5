@@ -21,10 +21,16 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
  * This class provides common functionality for custom pages,
  * following the architectural pattern of never extending Filament classes directly.
  *
+<<<<<<< HEAD
 * @property ?string $model
  * @property array<string, mixed> $data
  * @property Schema $form
  */
+=======
+ * @property ?string              $model
+ * @property array<string, mixed> $data
+ * @property Schema               $form */
+>>>>>>> 8215f950 (.)
 abstract class XotBasePage extends FilamentPage implements HasForms
 {
     use InteractsWithFormActions;
@@ -50,8 +56,12 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function getView(): string
     {
+<<<<<<< HEAD
 if ($this->view !== 'filament-panels::pages.page') {
             return $this->view;
+=======
+        if (isset($this->view)) {            return $this->view;
+>>>>>>> 8215f950 (.)
         }
 
         $view = Str::of(static::class)
@@ -150,8 +160,12 @@ if ($this->view !== 'filament-panels::pages.page') {
      */
     public function getModel(): string
     {
+<<<<<<< HEAD
 if (static::$model === null) {
             throw new \LogicException('Model class not set for page: '.static::class);
+=======
+        if (null === static::$model) {            throw new \LogicException('Model class not set for page: '.static::class);
+>>>>>>> 8215f950 (.)
         }
 
         /** @var class-string<Model> $model */

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 https://learn.userfrosting.com/recipes/extending-the-user-model
+=======
+https://learn.userfrosting.com/recipes/extending-the-user-model
+>>>>>>> 8215f950 (.)

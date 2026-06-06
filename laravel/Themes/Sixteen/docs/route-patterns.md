@@ -41,8 +41,12 @@ L'utilizzo di route dirette come `route('privacy')` e `route('accessibility')` Ã
 Il sistema Laraxot utilizza route dinamiche per le pagine:
 
 ```php
+<<<<<<< HEAD
 // File: resources/views/pages/pages/[slug].blade.php
 name('page_slug.view');
+=======
+// File: resources/views/pages/pages/[slug].blade.phpname('page_slug.view');
+>>>>>>> 8215f950 (.)
 
 render(function (View $view, string $slug) {
     $page = Page::firstWhere(['slug' => $slug]);
@@ -214,6 +218,10 @@ foreach ($pages as $page) {
 
 - [Layout Usage Patterns](layout-usage-patterns.md)
 - [AGID Login Implementation](agid-login-implementation.md)
+<<<<<<< HEAD
 - [Route File](resources/views/pages/pages/[slug].blade.php)
 - [CMS Module](../../../laravel/Modules/Cms/)
+=======
+- [Route File](resources/views/pages/pages/[slug].blade.php)- [CMS Module](../../../laravel/Modules/Cms/)
+>>>>>>> 8215f950 (.)
 

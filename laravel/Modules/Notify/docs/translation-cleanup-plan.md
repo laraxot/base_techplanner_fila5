@@ -5,7 +5,10 @@ Questo documento descrive il piano di pulizia e standardizzazione delle traduzio
 ## Analisi della Situazione Attuale
 
 Dall'analisi dei file di traduzione nella cartella `/var/www/html/ptvx/laravel/Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ### 1. File con Nomi Errati
 - `send_s_m_s.php` invece di `send_sms.php`
 - `send_a_w_s_email.php` invece di `send_aws_email.php`

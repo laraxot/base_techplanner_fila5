@@ -5,8 +5,12 @@
 ### Estensione delle Classi Base
 - **SEMPRE** estendere `XotBaseResource` invece di `Resource` direttamente
 - **SEMPRE** estendere `XotBaseServiceProvider` invece di `ServiceProvider` direttamente
+<<<<<<< HEAD
 - **SEMPRE** estendere `XotBaseWidget` per i widget
 - **MAI** estendere direttamente le classi Filament
+=======
+- **SEMPRE** estendere `XotBaseWidget` per i widget- **MAI** estendere direttamente le classi Filament
+>>>>>>> 8215f950 (.)
 
 ### 🚨 REGOLA CRITICA: NO METODO TABLE()
 

@@ -165,6 +165,7 @@ $this->assertTrue($user->belongsToTeam($team));
 - [TeamUser Model](../app/Models/TeamUser.php)
 - [TeamInvitation Model](../app/Models/TeamInvitation.php)
 - [UserServiceProvider](../app/Providers/UserServiceProvider.php)
+<<<<<<< HEAD
 ---
 module: theme
 topic: team_bindings_fix
@@ -172,3 +173,12 @@ canonical: ../../../Themes/docs/shared-components/team_bindings_fix.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team_bindings_fix.md
+=======
+- [Critical Errors Documentation](../../modulo/docs/critical-errors-resolved.md)
+
+---
+
+**Autore**: AI Assistant  
+**Data**: Gennaio 2025  
+**Versione**: 1.0  
+>>>>>>> 8215f950 (.)

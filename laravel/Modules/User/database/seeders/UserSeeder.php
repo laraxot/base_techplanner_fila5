@@ -8,7 +8,34 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Modules\User\Database\Factories\TeamFactory;
+<<<<<<< HEAD
         if (DB::getDriverName() !== 'sqlite') {
+=======
+use Modules\User\Models\Permission;
+use Modules\User\Models\Role;
+use Modules\User\Models\Team;
+
+/**
+ * Seeder per il modulo User.
+ *
+ * Popola il database con dati di base per:
+ * - Ruoli e permessi di sistema
+ * - Team di default
+ */
+class UserSeeder extends Seeder
+{
+    use WithoutModelEvents;
+
+    /**
+     * Esegue il seeding del database.
+     */
+    public function run(): void
+    {
+        $this->command->info('👤 Inizializzazione seeding User...');
+
+        // Disabilita i controlli di foreign key (solo per MySQL)
+        if ('sqlite' !== DB::getDriverName()) {
+>>>>>>> 8215f950 (.)
             DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         }
 
@@ -19,7 +46,11 @@ use Modules\User\Database\Factories\TeamFactory;
             $this->command->info('✅ Seeding User completato con successo!');
         } finally {
             // Riabilita i controlli di foreign key (solo per MySQL)
+<<<<<<< HEAD
 if (DB::getDriverName() !== 'sqlite') {
+=======
+            if ('sqlite' !== DB::getDriverName()) {
+>>>>>>> 8215f950 (.)
                 DB::statement('SET FOREIGN_KEY_CHECKS=1;');
             }
         }
@@ -157,7 +188,11 @@ if (DB::getDriverName() !== 'sqlite') {
 
     private function createTeam(string $name): Team
     {
+<<<<<<< HEAD
 $factory = TeamFactory::new();
+=======
+        $factory = \Modules\User\Database\Factories\TeamFactory::new();
+>>>>>>> 8215f950 (.)
         /** @var Team $team */
         $team = $factory->create([
             'name' => $name,

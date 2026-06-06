@@ -92,7 +92,10 @@ return [
 - [Translation System](../../lang/docs/translation-system.md)
 - [Form Components](../../patient/docs/filament-form-components.md)
 - [Best Practices](../../xot/docs/filament-best-practices.md)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Vedi Anche
 - [Filament File Upload](https://filamentphp.com/docs/forms/fields/file-upload)
 - [Laravel File Storage](https://laravel.com/docs/filesystem)

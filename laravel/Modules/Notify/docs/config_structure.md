@@ -1,5 +1,8 @@
 # Struttura di Configurazione nei Moduli Laraxot
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Principi di Configurazione
 
 1. **Separazione tra Specifico e Generico**

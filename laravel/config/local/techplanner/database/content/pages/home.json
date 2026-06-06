@@ -20,8 +20,12 @@
                     "primary_cta_url": "/it/contatti",
                     "secondary_cta_label": "Scopri i Servizi",
                     "secondary_cta_url": "/it/servizi",
+<<<<<<< HEAD
                     "image": "/images/hero-bg.jpg"
                 }
+=======
+                    "image": "/images/hero-bg.jpg"                }
+>>>>>>> 8215f950 (.)
             },
             {
                 "type": "services-grid",
@@ -83,8 +87,12 @@
                         {
                             "title": "Responsabilità Legale",
                             "description": "L'esercente è legalmente responsabile. Una gestione corretta è l'unica tutela in caso di contenziosi.",
+<<<<<<< HEAD
                             "icon": "heroicon-o-gavel"
                         }
+=======
+                            "icon": "heroicon-o-gavel"                        }
+>>>>>>> 8215f950 (.)
                     ]
                 }
             },
@@ -106,8 +114,12 @@
                                 "Ortopantomografia (OPT) - Controllo qualità e sicurezza per panoramiche dentali",
                                 "CBCT (Cone Beam) - Protocolli avanzati per tomografia computerizzata a fascio conico"
                             ],
+<<<<<<< HEAD
                             "image": "/images/medical-equipment.jpg"
                         },
+=======
+                            "image": "/images/medical-equipment.jpg"                        },
+>>>>>>> 8215f950 (.)
                         {
                             "title": "Medicina Veterinaria",
                             "subtitle": "Sicurezza adattata alle esigenze cliniche animali",
@@ -115,8 +127,12 @@
                             "use_cases": [
                                 "Radiologia Digitale e Analogica - Controlli su sistemi RX fissi e portatili per animali"
                             ],
+<<<<<<< HEAD
                             "image": "/images/veterinary-radiology.jpg"
                         }
+=======
+                            "image": "/images/veterinary-radiology.jpg"                        }
+>>>>>>> 8215f950 (.)
                     ]
                 }
             },
@@ -143,6 +159,7 @@
                         {
                             "title": "Apparecchiature Radiologiche",
                             "description": "Controllo di costanza, tensione, corrente e tempi di esposizione dei generatori.",
+<<<<<<< HEAD
                             "icon": "heroicono-cpu-chip"
                         },
                         {
@@ -155,6 +172,17 @@
                             "description": "Audit sulla corretta tenuta della documentazione obbligatoria.",
                             "icon": "heroicono-document-check"
                         }
+=======
+                            "icon": "heroicono-cpu-chip"                        },
+                        {
+                            "title": "Sistemi di Protezione",
+                            "description": "Verifica e test funzionali su sistemi di sicurezza, interblocchi e segnaletica obbligatoria per zone controllate e sorvegliate.",
+                            "icon": "heroicono-light-bulb"                        },
+                        {
+                            "title": "Documentazione e Registri",
+                            "description": "Audit sulla corretta tenuta della documentazione obbligatoria.",
+                            "icon": "heroicono-document-check"                        }
+>>>>>>> 8215f950 (.)
                     ]
                 }
             },

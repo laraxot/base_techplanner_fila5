@@ -153,8 +153,12 @@ Usage Examples:
 
 2. Success notification with message:
 <x-pub_theme::notifiche 
+<<<<<<< HEAD
 
 <x-pub_theme::notifiche 
+=======
+=======<x-pub_theme::notifiche 
+>>>>>>> 8215f950 (.)
     title="Errore durante il salvataggio"
     message="Si è verificato un errore imprevisto. Riprova più tardi."
     type="error" />
@@ -162,8 +166,12 @@ Usage Examples:
 4. Info notification:
 <x-pub_theme::notifiche 
 <x-pub_theme::notifiche 
+<<<<<<< HEAD
 
 <x-pub_theme::notifiche 
+=======
+=======<x-pub_theme::notifiche 
+>>>>>>> 8215f950 (.)
     title="Attenzione"
     message="La sessione scadrà tra 5 minuti."
     type="warning" />
@@ -171,8 +179,12 @@ Usage Examples:
 6. Dismissible notification:
 <x-pub_theme::notifiche 
 <x-pub_theme::notifiche 
+<<<<<<< HEAD
 
 <x-pub_theme::notifiche 
+=======
+=======<x-pub_theme::notifiche 
+>>>>>>> 8215f950 (.)
     title="Notifica temporanea"
     message="Questa notifica scomparirà automaticamente dopo 3 secondi."
     type="success"
@@ -182,8 +194,12 @@ Usage Examples:
 8. Fixed position notifications:
 <x-pub_theme::notifiche 
 <x-pub_theme::notifiche 
+<<<<<<< HEAD
 
 <x-pub_theme::notifiche 
+=======
+=======<x-pub_theme::notifiche 
+>>>>>>> 8215f950 (.)
     title="Notifica fissa in basso"
     message="Questa notifica è posizionata in basso nella pagina."
     type="warning"
@@ -191,8 +207,12 @@ Usage Examples:
 
 <x-pub_theme::notifiche 
 <x-pub_theme::notifiche 
+<<<<<<< HEAD
 
 <x-pub_theme::notifiche 
+=======
+=======<x-pub_theme::notifiche 
+>>>>>>> 8215f950 (.)
     title="Notifica senza icona"
     message="Questa notifica non ha l'icona."
     :with-icon="false" />
@@ -200,8 +220,12 @@ Usage Examples:
 10. Custom icon notification:
 <x-pub_theme::notifiche 
 <x-pub_theme::notifiche 
+<<<<<<< HEAD
 
 <x-pub_theme::notifiche 
+=======
+=======<x-pub_theme::notifiche 
+>>>>>>> 8215f950 (.)
     title="Aggiornamento disponibile"
     type="info"
     :dismissible="true">
@@ -218,8 +242,12 @@ Usage Examples:
 
 12. Form validation notifications:
 <x-pub_theme::notifiche 
+<<<<<<< HEAD
 
     title="Sistema operativo"
+=======
+=======    title="Sistema operativo"
+>>>>>>> 8215f950 (.)
     message="Tutti i servizi funzionano correttamente."
     type="success"
     position="top-fix" />
@@ -227,16 +255,24 @@ Usage Examples:
 14. Data processing notifications:
 <x-pub_theme::notifiche 
 <x-pub_theme::notifiche 
+<<<<<<< HEAD
 
         title="Messaggio 1"
+=======
+=======        title="Messaggio 1"
+>>>>>>> 8215f950 (.)
         type="success"
         :dismissible="true"
         class="mb-2" />
     
     <x-pub_theme::notifiche 
     <x-pub_theme::notifiche 
+<<<<<<< HEAD
 
     <x-pub_theme::notifiche 
+=======
+=======    <x-pub_theme::notifiche 
+>>>>>>> 8215f950 (.)
         title="Messaggio 3"
         type="info"
         :dismissible="true" />

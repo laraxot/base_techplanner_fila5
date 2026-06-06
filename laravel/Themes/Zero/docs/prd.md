@@ -10,4 +10,8 @@ Specialized logic for Zero needs a dedicated, type-safe Theme to ensure maintain
 
 ## 🎯 Goals & Success Metrics
 - **Goal 1:** 100% PHPStan L10 compliance.
+<<<<<<< HEAD
 - **Goal 2:** Seamless integration with XotBase.
+=======
+- **Goal 2:** Seamless integration with XotBase.
+>>>>>>> 8215f950 (.)

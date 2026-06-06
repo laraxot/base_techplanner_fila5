@@ -23,8 +23,12 @@ interface TelegramProviderActionInterface
 1. **Coerenza con Laravel**: Il framework Laravel utilizza il suffisso `Contract` per le sue interfacce (es. `Illuminate\Contracts\Auth\Authenticatable`).
 2. **Chiarezza semantica**: Il termine "Contract" esprime meglio il concetto di un "contratto" che le classi implementatrici devono rispettare.
 3. **Standardizzazione**: Questa convenzione è applicata in modo coerente in tutti i moduli .
+<<<<<<< HEAD
 3. **Standardizzazione**: Questa convenzione è applicata in modo coerente in tutti i moduli Laraxot.
 4. **Integrazione con tooling**: Gli strumenti di analisi statica e generazione di codice sono configurati per questa convenzione.
+=======
+3. **Standardizzazione**: Questa convenzione è applicata in modo coerente in tutti i moduli Laraxot.4. **Integrazione con tooling**: Gli strumenti di analisi statica e generazione di codice sono configurati per questa convenzione.
+>>>>>>> 8215f950 (.)
 
 ## Implementazione
 
@@ -48,8 +52,12 @@ grep -r "interface.*Contract" --include="*.php" /var/www/html/_bases/base_techpl
 grep -r "interface.*Interface" --include="*.php" /var/www/html/ptvx/laravel/Modules
 
 # Cerca interfacce con naming corretto
+<<<<<<< HEAD
 grep -r "interface.*Contract" --include="*.php" /var/www/html/ptvx/laravel/Modules
 grep -r "interface.*Interface" --include="*.php" /var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules
+=======
+grep -r "interface.*Contract" --include="*.php" /var/www/html/ptvx/laravel/Modulesgrep -r "interface.*Interface" --include="*.php" /var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules
+>>>>>>> 8215f950 (.)
 
 # Cerca interfacce con naming corretto
 grep -r "interface.*Contract" --include="*.php" /var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules
@@ -65,5 +73,9 @@ grep -r "interface.*Contract" --include="*.php" /var/www/html/_bases/base_techpl
 - [Laraxot Code Quality Guidelines](/var/www/html/ptvx/laravel/project_docs/code-quality.md)
 - [Modulo Xot Contracts](/var/www/html/ptvx/laravel/Modules/Xot/app/Contracts/)
 - [Laraxot Code Quality Guidelines](/var/www/html/_bases/base_techplanner_fila5_mono/laravel/docs/code-quality.md)- [Laravel Contracts Documentation](https://laravel.com/project_docs/contracts)
+<<<<<<< HEAD
 - [Laraxot Code Quality Guidelines](/var/www/html/_bases/base_techplanner_fila5_mono/laravel/project_docs/code-quality.md)
 - [Modulo Xot Contracts](/var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules/Xot/app/Contracts/)
+=======
+- [Laraxot Code Quality Guidelines](/var/www/html/_bases/base_techplanner_fila5_mono/laravel/project_docs/code-quality.md)- [Modulo Xot Contracts](/var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules/Xot/app/Contracts/)
+>>>>>>> 8215f950 (.)

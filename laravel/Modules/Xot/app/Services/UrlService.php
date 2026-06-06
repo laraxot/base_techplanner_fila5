@@ -19,6 +19,10 @@ class UrlService
     public function __construct()
     {
         // ---
+<<<<<<< HEAD
 return filter_var($url, FILTER_VALIDATE_URL) !== false;
     }
+=======
+        include_once __DIR__.'/vendor/autoload.php';    }
+>>>>>>> 8215f950 (.)
 }

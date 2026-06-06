@@ -13,7 +13,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+=======
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+>>>>>>> 8215f950 (.)
 
 /**
  * Logout widget for user session termination.
@@ -22,12 +26,23 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  * event dispatching, and audit logging following Laraxot
  * architectural patterns and security best practices.
  */
+<<<<<<< HEAD
 class LogoutWidget extends XotBaseSchemaWidget
 {
     /**
      * The view for this widget.
      */
     protected string $view = 'user::filament.widgets.auth.logout';
+=======
+class LogoutWidget extends XotBaseWidget
+{
+    /**
+     * The view for this widget.
+     *
+     * @phpstan-ignore property.defaultValue
+     */
+    protected string $view = 'user::widgets.auth.logout-widget';
+>>>>>>> 8215f950 (.)
 
     /**
      * Mount the widget and initialize the form.
@@ -42,10 +57,38 @@ class LogoutWidget extends XotBaseSchemaWidget
      *
      * @return array<string, Component>
      */
+<<<<<<< HEAD
 public function getFormSchema(): array
     {
         return [
             'logout_message' => View::make('user::filament.widgets.auth.logout-message')->columnSpanFull(),
+=======
+    #[\Override]
+    public function getFormSchema(): array
+    {
+        $view = 'filament.widgets.auth.logout-message';
+        // @phpstan-ignore-next-line
+        if (! view()->exists($view)) {
+            throw new \Exception('View '.$view.' not found');
+        }
+
+        return [
+            'logout_message' => View::make($view)->columnSpanFull(),
+        ];
+    }
+
+    /**
+     * Get form actions for logout widget.
+     *
+     * @return array<Action>
+     */
+    #[\Override]
+    public function getFormActions(): array
+    {
+        return [
+            $this->getLogoutAction(),
+            $this->getCancelAction(),
+>>>>>>> 8215f950 (.)
         ];
     }
 

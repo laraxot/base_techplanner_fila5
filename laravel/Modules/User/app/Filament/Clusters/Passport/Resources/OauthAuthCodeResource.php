@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Filament\Forms\Components\Select;
@@ -16,6 +17,14 @@ use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+=======
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
+use Filament\Notifications\Notification;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Grid;
+use Filament\Schemas\Components\Section;use Filament\Tables\Table;
+>>>>>>> 8215f950 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Clusters\Passport;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ListOauthAuthCodes;
@@ -69,6 +78,7 @@ class OauthAuthCodeResource extends XotBaseResource
     {
         return $table
             ->columns([
+<<<<<<< HEAD
 TextColumn::make('id')
                     ->searchable()
                     ->sortable()
@@ -96,12 +106,42 @@ TextColumn::make('user_id')
             ->recordActions([
 Action::make('revoke')
                     ->label(static::trans('actions.revoke.label'))
+=======
+                \Filament\Tables\Columns\TextColumn::make('id')                    ->searchable()
+                    ->sortable()
+                    ->copyable(),
+
+                \Filament\Tables\Columns\TextColumn::make('user_id')
+                    ->searchable()
+                    ->sortable(),
+
+                \Filament\Tables\Columns\TextColumn::make('client_id')
+                    ->searchable()
+                    ->sortable(),
+
+                \Filament\Tables\Columns\TextColumn::make('scopes')
+                    ->limit(30),
+
+                \Filament\Tables\Columns\IconColumn::make('revoked')
+                    ->boolean()
+                    ->color(fn (bool $state): string => $state ? 'danger' : 'success'),
+
+                \Filament\Tables\Columns\TextColumn::make('expires_at')                    ->dateTime()
+                    ->sortable(),
+            ])
+            ->recordActions([
+                \Filament\Actions\Action::make('revoke')                    ->label(static::trans('actions.revoke.label'))
+>>>>>>> 8215f950 (.)
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
                     ->requiresConfirmation()
                     ->modalHeading(static::trans('actions.revoke.label'))
+<<<<<<< HEAD
 ->action(function (mixed $record): void {
                         if ($record instanceof OauthAuthCode) {
+=======
+                    ->action(function (mixed $record) {                        if ($record instanceof OauthAuthCode) {
+>>>>>>> 8215f950 (.)
                             $record->revoked = true;
                             $record->save();
                             Notification::make()
@@ -111,6 +151,7 @@ Action::make('revoke')
                         }
                     })
                     ->visible(fn (mixed $record) => $record instanceof OauthAuthCode && ! $record->revoked),
+<<<<<<< HEAD
 DeleteAction::make(),
             ]);
     }
@@ -118,6 +159,13 @@ DeleteAction::make(),
     /**
 * @return array<string, PageRegistration>
      */
+=======
+                \Filament\Actions\DeleteAction::make(),            ]);
+    }
+
+    /**
+     * @return array<string, \Filament\Resources\Pages\PageRegistration>     */
+>>>>>>> 8215f950 (.)
     #[\Override]
     public static function getPages(): array
     {

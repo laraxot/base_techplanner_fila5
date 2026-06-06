@@ -3,7 +3,10 @@
 ## Obiettivo
 
 Il componente `XotBasePlaceholder` è stato introdotto per aderire rigorosamente al principio architetturale "NON estendere MAI classi Filament direttamente". Questo componente funge da classe base astratta per tutti i placeholder personalizzati all'interno del progetto, garantendo che le estensioni di Filament avvengano tramite la gerarchia `XotBase`.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Gerarchia di Ereditarietà
 
 ```
@@ -18,7 +21,10 @@ Modules\Cms\Filament\Forms\Components\DownloadAttachmentPlaceHolder
 ## Implementazione
 
 Il componente `XotBasePlaceholder` estende direttamente `Filament\Forms\Components\Placeholder`. Al momento, non introduce logica aggiuntiva ma serve come punto di estensione standardizzato e centralizzato.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ```php
 <?php
 
@@ -42,7 +48,10 @@ class XotBasePlaceholder extends Placeholder
 -   **Conformità PHPStan**: Aiuta a risolvere potenziali problemi di type hinting e analisi statica, come quelli relativi alla risoluzione delle view (`view-string`), incanalandoli attraverso una classe base gestita.
 
 ## Uso
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 I placeholder personalizzati, come `DownloadAttachmentPlaceHolder`, devono ora estendere `XotBasePlaceholder`:
 
 ```php
@@ -63,4 +72,8 @@ class DownloadAttachmentPlaceHolder extends XotBasePlaceholder
 ## Collegamenti Utili
 
 -   [Filament Class Extension Rules](../../../../docs/filament-class-extension-rules.md)
+<<<<<<< HEAD
 -   [DownloadAttachmentPlaceHolder Documentation](../../cms/docs/filament/forms/components/download-attachment-placeholder.md) (da creare)
+=======
+-   [DownloadAttachmentPlaceHolder Documentation](../../cms/docs/filament/forms/components/download-attachment-placeholder.md) (da creare)
+>>>>>>> 8215f950 (.)

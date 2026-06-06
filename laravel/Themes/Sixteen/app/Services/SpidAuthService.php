@@ -37,7 +37,67 @@ class SpidAuthService
     }
 
     /**
+<<<<<<< HEAD
 Session::put('spid.return_url', $returnUrl ? $returnUrl : url()->previous());
+=======
+     * Carica la configurazione dei provider SPID
+     */
+    protected function loadProviders(): void
+    {
+        $this->providers = config('spid.providers', [
+            'poste' => [
+                'name' => 'Poste Italiane',
+                'entityId' => 'https://posteid.poste.it',
+                'sso_url' => 'https://posteid.poste.it/jod-fs/ssoservicepost',
+                'slo_url' => 'https://posteid.poste.it/jod-fs/sloservicepost',
+                'cert' => 'poste.crt',
+                'logo' => 'poste-logo.svg',
+            ],
+            'sielte' => [
+                'name' => 'Sielte',
+                'entityId' => 'https://identity.sieltecloud.it',
+                'sso_url' => 'https://identity.sieltecloud.it/simplesaml/saml2/idp/SSOService.php',
+                'slo_url' => 'https://identity.sieltecloud.it/simplesaml/saml2/idp/SingleLogoutService.php',
+                'cert' => 'sielte.crt',
+                'logo' => 'sielte-logo.svg',
+            ],
+            'tim' => [
+                'name' => 'TIM Trust Technologies',
+                'entityId' => 'https://login.id.tim.it/affwebservices/public/saml2sso',
+                'sso_url' => 'https://login.id.tim.it/affwebservices/public/saml2sso',
+                'slo_url' => 'https://login.id.tim.it/affwebservices/public/saml2slo',
+                'cert' => 'tim.crt',
+                'logo' => 'tim-logo.svg',
+            ],
+        ]);
+    }
+
+    /**
+     * Ottiene tutti i provider SPID disponibili
+     */
+    public function getProviders(): array
+    {
+        return $this->providers;
+    }
+
+    /**
+     * Genera l'URL di login per un provider SPID specifico
+     */
+    public function getLoginUrl(string $provider, int $level = 2, ?string $returnUrl = null): string
+    {
+        if (! isset($this->providers[$provider])) {
+            throw new InvalidArgumentException("Provider SPID '{$provider}' non supportato");
+            throw new InvalidArgumentException("Provider SPID '{$provider}' non supportato");
+        }
+
+        $providerConfig = $this->providers[$provider];
+        $requestId = $this->generateRequestId();
+
+        // Salva lo stato della richiesta in sessione
+        Session::put('spid.request_id', $requestId);
+        Session::put('spid.provider', $provider);
+        Session::put('spid.return_url', $returnUrl ?: url()->previous());
+>>>>>>> 8215f950 (.)
         Session::put('spid.auth_level', $level);
 
         $samlRequest = $this->buildSamlAuthRequest($requestId, $providerConfig, $level);
@@ -90,7 +150,11 @@ Session::put('spid.return_url', $returnUrl ? $returnUrl : url()->previous());
         }
 
         $decodedResponse = base64_decode($samlResponse);
+<<<<<<< HEAD
 $responseDoc = new DOMDocument();
+=======
+        $responseDoc = new DOMDocument;
+>>>>>>> 8215f950 (.)
         $responseDoc->loadXML($decodedResponse);
 
         // Valida la signature
@@ -162,7 +226,11 @@ $responseDoc = new DOMDocument();
     }
 
     /**
+<<<<<<< HEAD
 * Verifica se l'utente è autenticato con SPID
+=======
+     * Verifica se l'utente è autenticato con SPID
+>>>>>>> 8215f950 (.)
      */
     public function isAuthenticated(): bool
     {
@@ -229,4 +297,166 @@ $responseDoc = new DOMDocument();
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Genera un ID univoco per le richieste SAML
+     */
+    protected function generateRequestId(): string
+    {
+        return 'req_'.bin2hex(random_bytes(16));
+    }
+
+    /**
+     * Costruisce una richiesta di autenticazione SAML
+     */
+    protected function buildSamlAuthRequest(string $requestId, array $provider, int $level): string
+    {
+        $issueInstant = gmdate('Y-m-d\TH:i:s\Z');
+
+        $request = '<samlp:AuthnRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"'.PHP_EOL;
+        $request .= '                   xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"'.PHP_EOL;
+        $request .= '                   ID="'.$requestId.'"'.PHP_EOL;
+        $request .= '                   Version="2.0"'.PHP_EOL;
+        $request .= '                   IssueInstant="'.$issueInstant.'"'.PHP_EOL;
+        $request .= '                   Destination="'.$provider['sso_url'].'"'.PHP_EOL;
+        $request .= '                   AssertionConsumerServiceURL="'.$this->assertionConsumerServiceUrl.'"'.PHP_EOL;
+        $request .= '                   AttributeConsumingServiceIndex="0">'.PHP_EOL;
+
+        $request .= '  <saml:Issuer>'.htmlspecialchars($this->entityId).'</saml:Issuer>'.PHP_EOL;
+
+        $request .= '  <samlp:RequestedAuthnContext Comparison="minimum">'.PHP_EOL;
+        $request .= '    <saml:AuthnContextClassRef>https://www.spid.gov.it/SpidL'.$level.'</saml:AuthnContextClassRef>'.PHP_EOL;
+        $request .= '  </samlp:RequestedAuthnContext>'.PHP_EOL;
+
+        $request .= '</samlp:AuthnRequest>';
+
+        return $request;
+    }
+
+    /**
+     * Costruisce una richiesta di logout SAML
+     */
+    protected function buildSamlLogoutRequest(string $requestId, string $nameId, string $sessionIndex, array $provider): string
+    {
+        $issueInstant = gmdate('Y-m-d\TH:i:s\Z');
+
+        $request = '<samlp:LogoutRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"'.PHP_EOL;
+        $request .= '                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"'.PHP_EOL;
+        $request .= '                    ID="'.$requestId.'"'.PHP_EOL;
+        $request .= '                    Version="2.0"'.PHP_EOL;
+        $request .= '                    IssueInstant="'.$issueInstant.'"'.PHP_EOL;
+        $request .= '                    Destination="'.$provider['slo_url'].'">'.PHP_EOL;
+
+        $request .= '  <saml:Issuer>'.htmlspecialchars($this->entityId).'</saml:Issuer>'.PHP_EOL;
+        $request .= '  <saml:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient">'.htmlspecialchars($nameId).'</saml:NameID>'.PHP_EOL;
+        $request .= '  <samlp:SessionIndex>'.htmlspecialchars($sessionIndex).'</samlp:SessionIndex>'.PHP_EOL;
+
+        $request .= '</samlp:LogoutRequest>';
+
+        return $request;
+    }
+
+    /**
+     * Valida la response SAML
+     */
+    protected function validateSamlResponse(DOMDocument $responseDoc): void
+    {
+        // Implementazione della validazione signature
+        // In produzione usare librerie come xmlseclibs per validazione completa
+
+        $xpath = new DOMXPath($responseDoc);
+        $xpath->registerNamespace('samlp', 'urn:oasis:names:tc:SAML:2.0:protocol');
+        $xpath->registerNamespace('saml', 'urn:oasis:names:tc:SAML:2.0:assertion');
+
+        // Verifica che la response sia successful
+        $statusCode = $xpath->query('//samlp:StatusCode/@Value');
+        if ($statusCode->length === 0 || $statusCode->item(0)->nodeValue !== 'urn:oasis:names:tc:SAML:2.0:status:Success') {
+            throw new Exception('SPID authentication failed');
+        }
+    }
+
+    /**
+     * Estrae gli attributi utente dalla response SAML
+     */
+    protected function extractUserAttributes(DOMDocument $responseDoc): array
+    {
+        $xpath = new DOMXPath($responseDoc);
+        $xpath->registerNamespace('saml', 'urn:oasis:names:tc:SAML:2.0:assertion');
+
+        $attributes = [];
+
+        // Estrai tutti gli attributi
+        $attributeNodes = $xpath->query('//saml:Attribute');
+        foreach ($attributeNodes as $attributeNode) {
+            $name = $attributeNode->getAttribute('Name');
+            $valueNodes = $xpath->query('saml:AttributeValue', $attributeNode);
+
+            if ($valueNodes->length > 0) {
+                $attributes[$name] = $valueNodes->item(0)->nodeValue;
+            }
+        }
+
+        // Mappa gli attributi SPID ai nomi più user-friendly
+        return [
+            'spid_code' => $attributes['spidCode'] ?? null,
+            'name' => $attributes['name'] ?? null,
+            'surname' => $attributes['familyName'] ?? null,
+            'fiscal_code' => $attributes['fiscalNumber'] ?? null,
+            'email' => $attributes['email'] ?? null,
+            'mobile' => $attributes['mobilePhone'] ?? null,
+            'birth_date' => $attributes['dateOfBirth'] ?? null,
+            'birth_place' => $attributes['placeOfBirth'] ?? null,
+            'gender' => $attributes['gender'] ?? null,
+            'address' => $attributes['address'] ?? null,
+            'digital_address' => $attributes['digitalAddress'] ?? null,
+            'company_name' => $attributes['companyName'] ?? null,
+            'vat_number' => $attributes['ivaCode'] ?? null,
+            'provider' => Session::get('spid.provider'),
+            'auth_level' => Session::get('spid.auth_level', 2),
+        ];
+    }
+
+    /**
+     * Ottiene il certificato per il signing (placeholder)
+     */
+    protected function getSigningCertificate(): string
+    {
+        // In produzione, caricare il certificato dal filesystem
+        return config('spid.signing_cert', '');
+    }
+
+    /**
+     * Verifica se l'utente è autenticato con SPID
+     */
+    public function isAuthenticated(): bool
+    {
+        return Session::has('spid.authenticated') && Session::get('spid.authenticated') === true;
+    }
+
+    /**
+     * Ottiene i dati dell'utente autenticato
+     */
+    public function getAuthenticatedUser(): ?array
+    {
+        if (! $this->isAuthenticated()) {
+            return null;
+        }
+
+        return Session::get('spid.user_data');
+    }
+
+    /**
+     * Effettua il logout dell'utente SPID
+     */
+    public function logout(): void
+    {
+        Session::forget([
+            'spid.authenticated',
+            'spid.user_data',
+            'spid.provider',
+            'spid.request_id',
+            'spid.auth_level',
+        ]);
+    }
+>>>>>>> 8215f950 (.)
 }

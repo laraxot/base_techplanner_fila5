@@ -10,10 +10,33 @@ use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 use Webmozart\Assert\Assert;
+<<<<<<< HEAD
      * @param  LazyCollection  $data  I dati da esportare
      * @param  string  $filename  Nome del file CSV
      * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
      * @param  array<string>|null  $_fields  Campi da includere nell'export (attualmente non utilizzato)
+=======
+
+use function Safe\fclose;
+use function Safe\fopen;
+use function Safe\fputcsv;
+
+use Spatie\QueueableAction\QueueableAction;
+use Symfony\Component\HttpFoundation\StreamedResponse;
+use Webmozart\Assert\Assert;
+
+class ExportXlsStreamByLazyCollection
+{
+    use QueueableAction;
+
+    /**
+     * Esporta una LazyCollection in un file CSV streamed.
+     *
+     * @param LazyCollection     $data     I dati da esportare
+     * @param string             $filename Nome del file CSV
+     * @param string|null        $transKey Chiave di traduzione per le intestazioni
+     * @param array<string>|null $_fields  Campi da includere nell'export (attualmente non utilizzato)
+>>>>>>> 8215f950 (.)
      */
     public function execute(
         LazyCollection $data,
@@ -49,7 +72,11 @@ use Webmozart\Assert\Assert;
                     }
                     // Convertiamo tutti i valori in stringhe o null
                     $safeRowData = array_map(function ($item) {
+<<<<<<< HEAD
 if ($item === null) {
+=======
+                        if (null === $item) {
+>>>>>>> 8215f950 (.)
                             return '';
                         }
 
@@ -75,8 +102,14 @@ if ($item === null) {
     /**
      * Ottiene le intestazioni per l'export.
      *
+<<<<<<< HEAD
 * @param  LazyCollection  $data  I dati da cui estrarre le intestazioni
      * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
+=======
+     * @param LazyCollection $data     I dati da cui estrarre le intestazioni
+     * @param string|null    $transKey Chiave di traduzione per le intestazioni
+     *
+>>>>>>> 8215f950 (.)
      * @return array<string>
      */
     public function headings(LazyCollection $data, ?string $transKey = null): array
@@ -89,12 +122,20 @@ if ($item === null) {
         $headArray = is_array($first) ? $first : $first->toArray();
 
         /**
+<<<<<<< HEAD
 * @var array<string, mixed> $headArray
+=======
+         * @var array<string, mixed>    $headArray
+>>>>>>> 8215f950 (.)
          * @var Collection<int, string> $headings
          */
         $headings = collect($headArray)->keys();
 
+<<<<<<< HEAD
 if ($transKey !== null) {
+=======
+        if (null !== $transKey) {
+>>>>>>> 8215f950 (.)
             $headings = $headings->map(static function (string $item) use ($transKey) {
                 $key = $transKey.'.fields.'.$item;
                 $trans = trans($key);
@@ -113,8 +154,14 @@ if ($transKey !== null) {
             });
         }
 
+<<<<<<< HEAD
 /** @var array<string> $headers */
         $headers = array_values($headings->map(strval(...))->toArray());
+=======
+        $headers = array_values($headings->map(strval(...))->toArray());
+
+        /* @var array<string> $headers */
+>>>>>>> 8215f950 (.)
         return $headers;
     }
 }

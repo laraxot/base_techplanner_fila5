@@ -7,12 +7,35 @@ namespace Modules\User\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
+=======
+
+use function Laravel\Prompts\select;
+use function Laravel\Prompts\text;
+
+use Modules\Xot\Datas\XotData;
+use Symfony\Component\Console\Input\InputOption;
+
+/**
+ * Comando per impostare il team corrente per un utente.
+ */
+class SetCurrentTeamCommand extends Command
+{
+    /**
+     * The name and signature of the console command.
+     *
+     * @var string
+>>>>>>> 8215f950 (.)
      */
     protected $name = 'user:set-current-team';
 
     /**
      * The console command description.
+<<<<<<< HEAD
 *
+=======
+     *
+>>>>>>> 8215f950 (.)
      * @var string
      */
     protected $description = 'Assign current team to user';

@@ -17,9 +17,23 @@ use Filament\Support\Components\Component;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\View;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 
 use function Safe\glob;
+=======
+use Illuminate\Support\HtmlString;
+use Illuminate\Support\Str;
+use Modules\Media\Actions\GetAttachmentsSchemaAction;
+use Modules\Xot\Actions\GetTransKeyAction;
+use Modules\Xot\Actions\ModelClass\CountAction;
+use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+
+use function Safe\glob;
+
+use Webmozart\Assert\Assert;
+
+>>>>>>> 8215f950 (.)
 /**
  * @method static string getUrl(string $name, array<string, mixed> $parameters = [], bool $isAbsolute = true)
  */
@@ -32,7 +46,11 @@ abstract class XotBaseResource extends FilamentResource
     protected static ?SubNavigationPosition $subNavigationPosition = SubNavigationPosition::Top;
 
     /**
+<<<<<<< HEAD
 * @param  array<string, bool|float|int|string|null>  $params
+=======
+     * @param array<string, bool|float|int|string|null> $params
+>>>>>>> 8215f950 (.)
      */
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
@@ -72,7 +90,11 @@ abstract class XotBaseResource extends FilamentResource
      */
     public static function getModel(): string
     {
+<<<<<<< HEAD
 if (static::$model !== null) {
+=======
+        if (null !== static::$model) {
+>>>>>>> 8215f950 (.)
             $res = static::$model;
             Assert::subclassOf(
                 $res,
@@ -103,7 +125,11 @@ if (static::$model !== null) {
 
     final public static function form(Schema $schema): Schema
     {
+<<<<<<< HEAD
 // return AuthorForm::configure($schema);
+=======
+        // return AuthorForm::configure($schema);
+>>>>>>> 8215f950 (.)
         $form_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
         if (class_exists($form_class)) {
             $configured = $form_class::configure($schema);
@@ -112,6 +138,37 @@ if (static::$model !== null) {
             return $configured;
         }
 
+<<<<<<< HEAD
+=======
+        /** @var array<Htmlable|string> $components */
+        $components = static::getFormSchema();
+
+        return $schema
+            ->components($components)
+            ->columns(static::getFormSchemaColumns());
+    }
+
+    public static function getFormSchemaColumns(): int
+    {
+        return 1;
+    }
+
+    /**
+     * Schema dell'infolist: tutte le risorse devono delegare qui.
+     *
+     * @return array<string, \Filament\Schemas\Components\Component>
+     */
+    public static function getInfolistSchema(): array
+    {
+        return [];
+    }
+
+    /**
+     * Metodo finale: obbliga l'uso di getInfolistSchema().
+     */
+    final public static function infolist(Schema $schema): Schema
+    {
+>>>>>>> 8215f950 (.)
         $class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Infolist';
         if (class_exists($class)) {
             $configured = $class::configure($schema);
@@ -119,6 +176,10 @@ if (static::$model !== null) {
 
             return $configured;
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8215f950 (.)
         return $schema->components(static::getInfolistSchema());
     }
 
@@ -206,7 +267,11 @@ if (static::$model !== null) {
         $filesResult = glob($path.\DIRECTORY_SEPARATOR.'*RelationManager.php');
 
         // PHPStan: glob() with valid pattern returns array
+<<<<<<< HEAD
 if ($filesResult === []) {
+=======
+        if ([] === $filesResult) {
+>>>>>>> 8215f950 (.)
             return [];
         }
 
@@ -234,10 +299,18 @@ if ($filesResult === []) {
     public static function getWizardSubmitAction(): Htmlable
     {
         $submit_view = 'pub_theme::filament.wizard.submit-button';
+<<<<<<< HEAD
 if (! View::exists($submit_view)) {
             throw new \Exception("View {$submit_view} does not exist");
         }
         $render = View::make($submit_view)->render();
+=======
+        // @phpstan-ignore-next-line
+        if (! view()->exists($submit_view)) {
+            throw new \Exception("View {$submit_view} does not exist");
+        }
+        $render = view($submit_view)->render();
+>>>>>>> 8215f950 (.)
 
         return new HtmlString($render);
     }

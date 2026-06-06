@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
+<<<<<<< HEAD
 use Modules\Xot\Datas\MetatagData;
 use Modules\Xot\Support\PaDesignColors;
 
+=======
+use Filament\Support\Colors\Color;
+use Modules\Xot\Datas\MetatagData;
+>>>>>>> 8215f950 (.)
 /*
  * Test che la classe MetatagData possa essere istanziata correttamente.
  * Questo test verifica che la classe possa essere istanziata senza errori.
@@ -29,12 +34,19 @@ test('getFilamentColors restituisce i colori Filament corretti', function () {
         ->toBeArray()
         ->and($colors)
         ->toHaveKeys(['danger', 'gray', 'info', 'primary', 'success', 'warning'])
+<<<<<<< HEAD
 ->and($colors['primary'])
         ->toBeArray()
         ->and($colors['primary'][600] ?? null)
         ->toBeString();
     expect($colors)->toEqual(PaDesignColors::filamentPalette());
 });
+=======
+        ->and($colors['danger'])
+        ->toBe(Color::Red)
+        ->and($colors['primary'])
+        ->toBe(Color::Amber);});
+>>>>>>> 8215f950 (.)
 
 /*
  * Test che il metodo getColors() gestisca correttamente i colori personalizzati.

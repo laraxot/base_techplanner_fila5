@@ -16,8 +16,12 @@
 
 ### Directory Fisiche (path su disco)
 ```
+<<<<<<< HEAD
 /var/www/html/ptvx/laravel/Modules/Notify/
 ├── app/                           # Directory fisica con app minuscolo
+=======
+/var/www/html/ptvx/laravel/Modules/Notify/├── app/                           # Directory fisica con app minuscolo
+>>>>>>> 8215f950 (.)
 │   ├── Actions/                  
 │   │   ├── Email/                # Azioni per email
 │   │   ├── SMS/                  # Azioni per SMS

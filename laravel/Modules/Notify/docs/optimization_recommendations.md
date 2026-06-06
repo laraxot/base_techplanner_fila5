@@ -6,8 +6,12 @@
 
 #### 1. Riusabilità Compromessa
 - **336+ occorrenze hardcoded** di "<nome progetto>" in test e documentazione
+<<<<<<< HEAD
 - **336+ occorrenze hardcoded** di "ptvx" in test e documentazione
 - **Import diretti** da moduli project-specific
+=======
+- **336+ occorrenze hardcoded** di "ptvx" in test e documentazione- **Import diretti** da moduli project-specific
+>>>>>>> 8215f950 (.)
 - **Configurazioni database** hardcoded nei test
 - **Email domains** hardcoded nei test
 
@@ -22,13 +26,20 @@
 - Configurazioni database hardcoded
 - Riferimenti diretti a modelli <nome progetto>
 - Riferimenti diretti a modelli Laraxot
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## ✅ OTTIMIZZAZIONI IMPLEMENTATE
 
 ### Riusabilità
 1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "<nome progetto>"
+<<<<<<< HEAD
 1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "Laraxot"
 2. **NotifyThemeableFactory.php**: Implementato `getProjectNamespace()` dinamico
+=======
+1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "Laraxot"2. **NotifyThemeableFactory.php**: Implementato `getProjectNamespace()` dinamico
+>>>>>>> 8215f950 (.)
 3. **File di traduzione**: Aggiornati placeholder con `{{app_name}}`
 4. **Documentazione base**: Creata guida riusabilità
 
@@ -43,7 +54,10 @@
 $user = User::factory()->create();
 'database' => '<nome progetto>_test'
 'database' => 'ptvx_test'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 // ✅ DOPO
 $userClass = XotData::make()->getUserClass();
 $user = $userClass::factory()->create();

@@ -6,6 +6,7 @@ namespace Modules\User\Tests\Unit\Passport;
 
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Passport\Passport;
+<<<<<<< HEAD
 use Modules\User\Models\OauthAuthCode;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthDeviceCode;
@@ -15,12 +16,20 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
+=======
+
+uses(\Modules\User\Tests\TestCase::class);
+>>>>>>> 8215f950 (.)
 test('every eloquent passport model has a local oauth wrapper', function (): void {
     /** @var array<int, string>|false $files */
     $files = glob(base_path('vendor/laravel/passport/src').'/*.php');
 
+<<<<<<< HEAD
 if ($files === false) {
         $files = [];
+=======
+    if (false === $files) {        $files = [];
+>>>>>>> 8215f950 (.)
     }
 
     $shortNames = [];
@@ -59,6 +68,7 @@ if ($files === false) {
 });
 
 test('passport uses user module oauth wrappers for eloquent models', function (): void {
+<<<<<<< HEAD
 expect(Passport::authCodeModel())->toBe(OauthAuthCode::class);
     expect(Passport::clientModel())->toBe(OauthClient::class);
     expect(Passport::tokenModel())->toBe(OauthToken::class);
@@ -69,4 +79,15 @@ expect(Passport::authCodeModel())->toBe(OauthAuthCode::class);
         expect(Passport::deviceCodeModel())
             ->toBe(OauthDeviceCode::class);
     }
+=======
+    expect(Passport::authCodeModel())->toBe(\Modules\User\Models\OauthAuthCode::class);
+    expect(Passport::clientModel())->toBe(\Modules\User\Models\OauthClient::class);
+    expect(Passport::tokenModel())->toBe(\Modules\User\Models\OauthToken::class);
+    expect(Passport::refreshTokenModel())
+        ->toBe(\Modules\User\Models\OauthRefreshToken::class);
+
+    if (method_exists(Passport::class, 'deviceCodeModel')) {
+        expect(Passport::deviceCodeModel())
+            ->toBe(\Modules\User\Models\OauthDeviceCode::class);    }
+>>>>>>> 8215f950 (.)
 });

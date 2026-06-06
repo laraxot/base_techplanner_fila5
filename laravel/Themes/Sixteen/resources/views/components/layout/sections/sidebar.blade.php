@@ -164,7 +164,24 @@ Usage Examples:
 1. Simple sidebar with header:
 <x-pub_theme::sidebar 
 <x-pub_theme::sidebar 
+<<<<<<< HEAD
 
+=======
+=======
+<x-pub_theme::sidebar 
+    title="Sezione del sito"
+    :links="[
+        ['label' => 'Link lista 1', 'url' => '/link1', 'active' => true],
+        ['label' => 'Link lista 2', 'url' => '/link2', 'disabled' => true],
+        ['label' => 'Link lista 3', 'url' => '/link3'],
+        ['label' => 'Link lista 4', 'url' => '/link4']
+    ]" />
+
+2. Sidebar with icon in header:
+<x-pub_theme::sidebar 
+<x-pub_theme::sidebar 
+=======
+>>>>>>> 8215f950 (.)
 <x-pub_theme::sidebar 
     title="Documenti"
     subtitle="Area riservata"
@@ -176,7 +193,24 @@ Usage Examples:
 3. Secondary styled sidebar:
 <x-pub_theme::sidebar 
 <x-pub_theme::sidebar 
+<<<<<<< HEAD
 
+=======
+=======
+<x-pub_theme::sidebar 
+    title="Menu secondario"
+    :secondary="true"
+    :links="[
+        ['label' => 'Informazioni', 'url' => '/info'],
+        ['label' => 'Contatti', 'url' => '/contatti'],
+        ['label' => 'FAQ', 'url' => '/faq']
+    ]" />
+
+4. Nested sidebar navigation:
+<x-pub_theme::sidebar 
+<x-pub_theme::sidebar 
+=======
+>>>>>>> 8215f950 (.)
 <x-pub_theme::sidebar 
     title="Amministrazione"
     :nested="true"
@@ -211,7 +245,20 @@ Usage Examples:
 5. Dark theme sidebar:
 <x-pub_theme::sidebar 
 <x-pub_theme::sidebar 
+<<<<<<< HEAD
 
+=======
+=======
+<x-pub_theme::sidebar 
+    title="Navigazione"
+    :dark="true"
+    :links="$navigationLinks" />
+
+6. Sidebar with mixed states:
+<x-pub_theme::sidebar 
+<x-pub_theme::sidebar 
+=======
+>>>>>>> 8215f950 (.)
 <x-pub_theme::sidebar 
     title="Menu completo"
     :links="[
@@ -224,7 +271,34 @@ Usage Examples:
 7. Custom content with slot:
 <x-pub_theme::sidebar title="Menu personalizzato">
 <x-pub_theme::sidebar title="Menu personalizzato">
+<<<<<<< HEAD
 
+=======
+=======
+<x-pub_theme::sidebar title="Menu personalizzato">
+    <ul class="link-list">
+        <li class="list-item active">
+            <a href="#" class="list-link">
+                <svg class="icon icon-sm">
+                    <use href="#it-star-outline"></use>
+                </svg>
+                <span>Elemento personalizzato</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="#" class="list-link">
+                <span>Altro elemento</span>
+            </a>
+        </li>
+    </ul>
+    
+    <div class="mt-3">
+        <button class="btn btn-primary btn-sm">Azione personalizzata</button>
+    </div>
+</x-pub_theme::sidebar>
+</x-pub_theme::sidebar>
+=======
+>>>>>>> 8215f950 (.)
 </x-pub_theme::sidebar>
 
 Layout Integration:
@@ -235,7 +309,11 @@ Use sidebar in a layout with main content:
         <div class="col-12 col-lg-3">
             <x-pub_theme::sidebar ... />
             <x-pub_theme::sidebar ... />
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> 8215f950 (.)
             <x-pub_theme::sidebar ... />
         </div>
         <div class="col-12 col-lg-9">

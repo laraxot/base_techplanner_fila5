@@ -8,7 +8,18 @@ use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Modules\User\Filament\Resources\OauthPersonalAccessClientResource;
+<<<<<<< HEAD
     protected static string $resource = OauthPersonalAccessClientResource::class;
+=======
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+
+/**
+ * Class ViewOauthPersonalAccessClient.
+ */
+class ViewOauthPersonalAccessClient extends XotBaseViewRecord
+{
+    protected static string $resource = \Modules\User\Filament\Resources\OauthPersonalAccessClientResource::class;
+>>>>>>> 8215f950 (.)
 
     /**
      * @return array<string, Component>

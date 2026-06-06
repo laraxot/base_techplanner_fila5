@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @props(['title' => '', 'metaDescription' => '', 'pageShell' => false, 'bodyPage' => ''])
 
 <x-layouts.main :title="$title" :description="$metaDescription" :body-page="$bodyPage">
@@ -16,3 +17,12 @@
 
     <x-section slug="footer" tpl="full" />
 </x-layouts.main>
+=======
+<x-layouts.main>
+    <x-section slug="header"/>
+
+    {{ $slot }}
+   
+    <x-section slug="footer"/>
+   </x-layouts.main>
+>>>>>>> 8215f950 (.)

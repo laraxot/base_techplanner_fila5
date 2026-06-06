@@ -1,12 +1,19 @@
+<<<<<<< HEAD
 {{--
     Elenco Segnalazioni - Homepage
     Replica Design Comuni con Tailwind CSS + Alpine.js
     Reference: https://italia.github.io/design-comuni-pagine-statiche/sito/segnalazioni-elenco.html
 --}}
+=======
+{{-- 
+    Elenco Segnalazioni - Homepage
+    Replica Design Comuni con Tailwind CSS--}}
+>>>>>>> 8215f950 (.)
 
 @extends('sixteen::layouts.app')
 
 @section('content')
+<<<<<<< HEAD
 <div class="min-h-screen bg-gray-50" x-data="{ activeTab: 'map' }">
     {{-- Hero Block --}}
     <section class="bg-primary-500 text-white">
@@ -16,6 +23,31 @@
         </div>
     </section>
 
+=======
+<div class="min-h-screen bg-gray-50">
+    {{-- Header Verde PA --}}
+    <header class="bg-primary-500 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
+                        <span class="text-primary-500 font-bold text-xl">FC</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">Il mio Comune</h1>
+                        <p class="text-sm text-primary-100">Segnalazioni e servizi</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-primary-100 transition">Amministrazione</a>
+                    <a href="#" class="hover:text-primary-100 transition">Novità</a>
+                    <a href="#" class="hover:text-primary-100 transition">Servizi</a>
+                    <a href="#" class="hover:text-primary-100 transition">Vivere il Comune</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+>>>>>>> 8215f950 (.)
     {{-- Breadcrumb --}}
     <div class="bg-white border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
@@ -29,6 +61,7 @@
 
     {{-- Main Content --}}
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<<<<<<< HEAD
 {{-- Header with CTA --}}
         <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
             <div>
@@ -39,6 +72,12 @@
                 Fai una segnalazione
             </button>
         </div>
+=======
+        {{-- Title --}}
+        <div class="mb-6">
+            <h1 class="text-3xl font-bold text-gray-900 mb-2">Elenco segnalazioni</h1>
+            <p class="text-gray-600">Aiuto utenti: 17 segnalazioni sono risultate 12 segnalazioni</p>        </div>
+>>>>>>> 8215f950 (.)
 
         {{-- Layout: Sidebar + Map --}}
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
@@ -177,6 +216,7 @@
 </div>
 
 @push('scripts')
+<<<<<<< HEAD
 {{-- Load Leaflet and Marker Cluster assets --}}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
@@ -231,5 +271,22 @@
         // window.addEventListener('ticket-filters-changed', function(e) { ... })
     });
 </script>
+=======
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    // Initialize map
+    const map = L.map('map').setView([43.7696, 11.2558], 13); // Firenze
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Add sample marker
+    L.marker([43.7696, 11.2558]).addTo(map)
+        .bindPopup('<b>Segnalazione</b><br>Esempio segnalazione')
+        .openPopup();</script>
+>>>>>>> 8215f950 (.)
 @endpush
 @endsection

@@ -14,7 +14,11 @@ use Filament\Schemas\Components\Section;
 
 class UserSection extends Section
 {
+<<<<<<< HEAD
 public static function getDefaultName(): ?string
+=======
+    public static function getDefaultName(): ?string
+>>>>>>> 8215f950 (.)
     {
         return 'user';
     }

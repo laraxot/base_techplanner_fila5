@@ -7,7 +7,10 @@
 - [Documentazione sezioni](/docs/sections.md)
 - [Header: Lingua e Utente](/laravel/themes/one/docs/sections/header_language_user_dropdown.md)
 - [Implementazione CMS](/laravel/modules/cms/docs/sections/header_language_user_dropdown.md)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8215f950 (.)
 ## Panoramica
 
 Il modulo UI di <nome progetto> include una vasta collezione di SVG di bandiere nazionali che possono essere utilizzati come componenti Blade. Questi componenti sono autoregistrati e possono essere facilmente integrati in qualsiasi parte dell'applicazione, incluso il selettore di lingue nell'header.

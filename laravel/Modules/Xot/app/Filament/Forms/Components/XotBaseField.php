@@ -6,6 +6,17 @@ namespace Modules\Xot\Filament\Forms\Components;
 
 use Filament\Forms\Components\Field;
 use Modules\Xot\Actions\View\GetViewByClassAction;
+<<<<<<< HEAD
+=======
+
+/**
+ * Base class for form components.
+ *
+ * @method static static make(string $name) Create a new instance of the component
+ */
+abstract class XotBaseField extends Field
+{
+>>>>>>> 8215f950 (.)
     /**
      * Laraxot rule: subclasses must NOT declare a protected $view property.
      * The view is resolved at runtime and can be overridden by the active theme.

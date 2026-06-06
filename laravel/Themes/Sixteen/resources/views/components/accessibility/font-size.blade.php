@@ -62,9 +62,13 @@
             data-font-size-decrease
             title="Diminuisci la dimensione del testo"
         >
+<<<<<<< HEAD
 <x-filament::icon icon="heroicon-o-minus" class="h-4 w-4" />
 f7ac8eda (.)
         </button>
+=======
+            <x-heroicon-o-minus class="h-4 w-4" />        </button>
+>>>>>>> 8215f950 (.)
         
         <select 
             id="font-size-select"
@@ -90,9 +94,13 @@ f7ac8eda (.)
             data-font-size-increase
             title="Aumenta la dimensione del testo"
         >
+<<<<<<< HEAD
 <x-filament::icon icon="heroicon-o-plus" class="h-4 w-4" />
 f7ac8eda (.)
         </button>
+=======
+            <x-heroicon-o-plus class="h-4 w-4" />        </button>
+>>>>>>> 8215f950 (.)
     </div>
     
     <span class="sr-only" aria-live="polite" id="font-size-status">

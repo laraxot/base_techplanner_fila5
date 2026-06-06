@@ -6,8 +6,12 @@ namespace Themes\Sixteen\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
+<<<<<<< HEAD
 use Modules\User\Models\User;
 
+=======
+use Themes\Sixteen\Models\User;
+>>>>>>> 8215f950 (.)
 /**
  * Evento lanciato quando un utente si autentica con successo tramite CIE
  *
@@ -28,10 +32,14 @@ class CieAuthenticated
      */
     public function getAuthMethod(): ?string
     {
+<<<<<<< HEAD
 $value = $this->cieAttributes['auth_method'] ?? null;
 
         return is_string($value) ? $value : null;
     }
+=======
+        return $this->cieAttributes['auth_method'] ?? null;    }
+>>>>>>> 8215f950 (.)
 
     /**
      * Verifica se l'autenticazione è avvenuta tramite app mobile
@@ -46,20 +54,28 @@ $value = $this->cieAttributes['auth_method'] ?? null;
      */
     public function getFiscalCode(): ?string
     {
+<<<<<<< HEAD
 $value = $this->cieAttributes['fiscal_code'] ?? null;
 
         return is_string($value) ? $value : null;
     }
+=======
+        return $this->cieAttributes['fiscal_code'] ?? null;    }
+>>>>>>> 8215f950 (.)
 
     /**
      * Ottiene l'ID CIE dell'utente
      */
     public function getCieId(): ?string
     {
+<<<<<<< HEAD
 $value = $this->cieAttributes['cie_id'] ?? null;
 
         return is_string($value) ? $value : null;
     }
+=======
+        return $this->cieAttributes['cie_id'] ?? null;    }
+>>>>>>> 8215f950 (.)
 
     /**
      * Verifica se è la prima autenticazione dell'utente
@@ -74,20 +90,28 @@ $value = $this->cieAttributes['cie_id'] ?? null;
      */
     public function isEmailVerified(): bool
     {
+<<<<<<< HEAD
 $value = $this->cieAttributes['email_verified'] ?? false;
 
         return is_bool($value) && $value;
     }
+=======
+        return $this->cieAttributes['email_verified'] ?? false;    }
+>>>>>>> 8215f950 (.)
 
     /**
      * Verifica se il telefono è stato verificato da CIE
      */
     public function isPhoneVerified(): bool
     {
+<<<<<<< HEAD
 $value = $this->cieAttributes['phone_verified'] ?? false;
 
         return is_bool($value) && $value;
     }
+=======
+        return $this->cieAttributes['phone_verified'] ?? false;    }
+>>>>>>> 8215f950 (.)
 
     /**
      * Ottiene tutti gli attributi CIE ricevuti

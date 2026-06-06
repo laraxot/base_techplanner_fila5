@@ -19,8 +19,13 @@ class ApplyMetatagToPanelAction
             $metatag = MetatagData::make();
 
             return $panel
+<<<<<<< HEAD
 ->colors($metatag->getAllColors())
                 ->brandLogo($metatag->getBrandLogo())
+=======
+                // @phpstan-ignore argument.type
+                ->colors($metatag->getColors())                ->brandLogo($metatag->getBrandLogo())
+>>>>>>> 8215f950 (.)
                 ->brandName($metatag->getBrandName())
                 ->darkModeBrandLogo($metatag->getDarkModeBrandLogo())
                 ->brandLogoHeight($metatag->getBrandLogoHeight())

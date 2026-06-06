@@ -19,10 +19,16 @@ use Webmozart\Assert\Assert;
 /**
  * Base class for list records pages.
  *
+<<<<<<< HEAD
 * @property ?string $model
  * @property ?string $resource
  * @property ?string $slug
  * @property TableLayoutEnum $layoutView
+=======
+ * @property ?string         $model
+ * @property ?string         $resource
+ * @property ?string         $slug * @property TableLayoutEnum $layoutView
+>>>>>>> 8215f950 (.)
  */
 abstract class XotBaseListRecords extends FilamentListRecords
 {
@@ -65,6 +71,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
      * Get the header actions.
      *
      * @return array<string, Action|ActionGroup>
+<<<<<<< HEAD
 protected function paginateTableQueryOLD(Builder $query): Paginator
     {
         $perPage = $this->getTableRecordsPerPage();
@@ -72,6 +79,10 @@ protected function paginateTableQueryOLD(Builder $query): Paginator
 
         $paginator = $query->paginate($perPageValue);
 
+=======
+     *
+     * @phpstan-ignore method.childReturnType
+>>>>>>> 8215f950 (.)
         Assert::isInstanceOf($paginator, Paginator::class);
 
         if (! method_exists($paginator, 'total')) {

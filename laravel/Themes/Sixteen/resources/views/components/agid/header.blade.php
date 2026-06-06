@@ -128,8 +128,13 @@
     </div>
     
     {{-- Navigazione Principale --}}
+<<<<<<< HEAD
 <div class="it-nav-wrapper" data-sixteen-mobile-nav>
         <div class="it-header-navbar-wrapper" data-sixteen-mobile-nav>
+=======
+    <div class="it-nav-wrapper">
+        <div class="it-header-navbar-wrapper">
+>>>>>>> 8215f950 (.)
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -140,14 +145,24 @@
                                 aria-controls="nav" 
                                 aria-expanded="false" 
                                 aria-label="{{ __('Apri menu di navigazione') }}"
+<<<<<<< HEAD
 data-sixteen-mobile-nav-toggle
                                 data-sixteen-mobile-nav-target="#nav"
+=======
+                                data-bs-toggle="navbarcollapsible"
+                                data-bs-target="#nav"
+>>>>>>> 8215f950 (.)
                             >
                                 <svg class="icon"><use href="#it-burger"></use></svg>
                             </button>
                             
+<<<<<<< HEAD
 <div class="navbar-collapsable" id="nav" data-sixteen-mobile-nav-panel>
                                 <div class="overlay" data-sixteen-mobile-nav-overlay hidden></div>
+=======
+                            <div class="navbar-collapsable" id="nav">
+                                <div class="overlay"></div>
+>>>>>>> 8215f950 (.)
                                 <div class="close-div">
                                     <button 
                                         class="btn close-menu" 

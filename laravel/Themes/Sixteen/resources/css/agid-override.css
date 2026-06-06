@@ -152,8 +152,12 @@ a:hover,
 
 .fi-input:focus {
     border-color: var(--italia-blue-500) !important;
+<<<<<<< HEAD
     box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1) !important;
 }
+=======
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1) !important;}
+>>>>>>> 8215f950 (.)
 
 /* Override per Bootstrap Italia */
 .btn-primary {

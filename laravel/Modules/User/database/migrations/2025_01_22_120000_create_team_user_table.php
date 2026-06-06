@@ -11,9 +11,13 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Questa migrazione gestisce sia la creazione che l'aggiornamento della tabella team_user.
  * Se la tabella esiste già con id UUID, viene convertita a id autoincrement.
  */
+<<<<<<< HEAD
 return new class() extends XotBaseMigration
 {
     /**
+=======
+return new class extends XotBaseMigration {    /**
+>>>>>>> 8215f950 (.)
      * Nome della tabella gestita dalla migrazione.
      */
     protected string $table_name = 'team_user';
@@ -36,12 +40,17 @@ return new class() extends XotBaseMigration
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+<<<<<<< HEAD
 $idType = $this->getColumnType('id');
             $hasNumericAutoincrementId = \in_array($idType, ['bigint', 'integer'], true);
 
             // Converte solo i vecchi schemi con `id` non bigint (es. UUID/string) — skip SQLite integer id.
             if ($this->hasColumn('id') && ! $hasNumericAutoincrementId && $this->isMysqlFamilyDriver()) {
                 // Rimuoviamo la PRIMARY KEY esistente
+=======
+            // Converte solo i vecchi schemi con `id` non bigint (es. UUID/string).
+            if ($this->hasColumn('id') && 'bigint' !== $this->getColumnType('id')) {                // Rimuoviamo la PRIMARY KEY esistente
+>>>>>>> 8215f950 (.)
                 $this->dropPrimaryKey();
 
                 // Se non esiste già, rinominiamo id a uuid per preservare i dati
@@ -54,8 +63,12 @@ $idType = $this->getColumnType('id');
                     $table->id()->first();
                 }
 
+<<<<<<< HEAD
 // Impostiamo la nuova PRIMARY KEY su id (MySQL/MariaDB)
                 $this->query('ALTER TABLE `'.$this->table_name.'` ADD PRIMARY KEY (`id`)');
+=======
+                // Impostiamo la nuova PRIMARY KEY su id                $this->query('ALTER TABLE `'.$this->table_name.'` ADD PRIMARY KEY (`id`)');
+>>>>>>> 8215f950 (.)
             }
 
             // Aggiorniamo i timestamp e soft deletes

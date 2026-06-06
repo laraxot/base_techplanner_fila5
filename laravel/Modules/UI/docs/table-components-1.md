@@ -139,4 +139,8 @@ class UserTable extends Component
 - [Componenti Form](./form-components.md)
 - [Componenti Chart](./chart-components.md)
 - [Componenti Layout](./layout-components.md)
+<<<<<<< HEAD
 - [Documentazione Frontend](../cms/docs/frontend-architecture.md)
+=======
+- [Documentazione Frontend](../cms/docs/frontend-architecture.md)
+>>>>>>> 8215f950 (.)
