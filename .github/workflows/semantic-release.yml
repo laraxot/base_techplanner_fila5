@@ -36,7 +36,7 @@ jobs:
         with:
           fetch-depth: 0
           fetch-tags: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ github.token }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -141,7 +141,7 @@ jobs:
             CLAUDE.md
             docs/**/*.md
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
 
       - name: Update project version files
         run: |
