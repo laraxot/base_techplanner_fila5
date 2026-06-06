@@ -38,12 +38,8 @@ phpstan*.json
 ## Esecuzione Analisi
 
 ```bash
-<<<<<<< HEAD
 cd /var/www/_bases/base_ptvx_fila5_mono/laravel
 ./vendor/bin/phpstan analyse --level=10
-=======
-cd /var/www/_bases/base_ptvx_fila5_mono/laravel./vendor/bin/phpstan analyse --level=10
->>>>>>> 8215f950 (.)
 ```
 
 ## Riferimenti

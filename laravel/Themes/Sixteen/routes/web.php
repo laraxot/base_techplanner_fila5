@@ -2,24 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 Route::prefix('comune')->name('comune.')->group(function (): void {
-=======
-use Illuminate\Support\Facades\Route;
-use Themes\Sixteen\Http\Controllers\ComuneController;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes per Tema Sixteen
-|--------------------------------------------------------------------------
-|
-| Qui vengono definite le routes specifiche per il tema Sixteen
-| che implementa il design system per i comuni italiani
-|
-*/
-
-Route::prefix('comune')->name('comune.')->group(function () {
->>>>>>> 8215f950 (.)
     // Homepage
     Route::get('/', [ComuneController::class, 'homepage'])->name('homepage');
 

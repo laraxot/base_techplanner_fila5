@@ -37,67 +37,7 @@ class SpidAuthService
     }
 
     /**
-<<<<<<< HEAD
 Session::put('spid.return_url', $returnUrl ? $returnUrl : url()->previous());
-=======
-     * Carica la configurazione dei provider SPID
-     */
-    protected function loadProviders(): void
-    {
-        $this->providers = config('spid.providers', [
-            'poste' => [
-                'name' => 'Poste Italiane',
-                'entityId' => 'https://posteid.poste.it',
-                'sso_url' => 'https://posteid.poste.it/jod-fs/ssoservicepost',
-                'slo_url' => 'https://posteid.poste.it/jod-fs/sloservicepost',
-                'cert' => 'poste.crt',
-                'logo' => 'poste-logo.svg',
-            ],
-            'sielte' => [
-                'name' => 'Sielte',
-                'entityId' => 'https://identity.sieltecloud.it',
-                'sso_url' => 'https://identity.sieltecloud.it/simplesaml/saml2/idp/SSOService.php',
-                'slo_url' => 'https://identity.sieltecloud.it/simplesaml/saml2/idp/SingleLogoutService.php',
-                'cert' => 'sielte.crt',
-                'logo' => 'sielte-logo.svg',
-            ],
-            'tim' => [
-                'name' => 'TIM Trust Technologies',
-                'entityId' => 'https://login.id.tim.it/affwebservices/public/saml2sso',
-                'sso_url' => 'https://login.id.tim.it/affwebservices/public/saml2sso',
-                'slo_url' => 'https://login.id.tim.it/affwebservices/public/saml2slo',
-                'cert' => 'tim.crt',
-                'logo' => 'tim-logo.svg',
-            ],
-        ]);
-    }
-
-    /**
-     * Ottiene tutti i provider SPID disponibili
-     */
-    public function getProviders(): array
-    {
-        return $this->providers;
-    }
-
-    /**
-     * Genera l'URL di login per un provider SPID specifico
-     */
-    public function getLoginUrl(string $provider, int $level = 2, ?string $returnUrl = null): string
-    {
-        if (! isset($this->providers[$provider])) {
-            throw new InvalidArgumentException("Provider SPID '{$provider}' non supportato");
-            throw new InvalidArgumentException("Provider SPID '{$provider}' non supportato");
-        }
-
-        $providerConfig = $this->providers[$provider];
-        $requestId = $this->generateRequestId();
-
-        // Salva lo stato della richiesta in sessione
-        Session::put('spid.request_id', $requestId);
-        Session::put('spid.provider', $provider);
-        Session::put('spid.return_url', $returnUrl ?: url()->previous());
->>>>>>> 8215f950 (.)
         Session::put('spid.auth_level', $level);
 
         $samlRequest = $this->buildSamlAuthRequest($requestId, $providerConfig, $level);
@@ -150,11 +90,7 @@ Session::put('spid.return_url', $returnUrl ? $returnUrl : url()->previous());
         }
 
         $decodedResponse = base64_decode($samlResponse);
-<<<<<<< HEAD
 $responseDoc = new DOMDocument();
-=======
-        $responseDoc = new DOMDocument;
->>>>>>> 8215f950 (.)
         $responseDoc->loadXML($decodedResponse);
 
         // Valida la signature
@@ -226,11 +162,7 @@ $responseDoc = new DOMDocument();
     }
 
     /**
-<<<<<<< HEAD
 * Verifica se l'utente è autenticato con SPID
-=======
-     * Verifica se l'utente è autenticato con SPID
->>>>>>> 8215f950 (.)
      */
     public function isAuthenticated(): bool
     {
@@ -297,8 +229,6 @@ $responseDoc = new DOMDocument();
     }
 
     /**
-<<<<<<< HEAD
-=======
      * Genera un ID univoco per le richieste SAML
      */
     protected function generateRequestId(): string
@@ -458,5 +388,4 @@ $responseDoc = new DOMDocument();
             'spid.auth_level',
         ]);
     }
->>>>>>> 8215f950 (.)
 }

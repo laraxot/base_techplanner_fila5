@@ -10,8 +10,6 @@ use Themes\Sixteen\Contracts\MenuFilterInterface;
 use function Safe\parse_url;
 use function Safe\preg_match;
 
-<<<<<<< HEAD
-=======
 /**
  * Filtro menu per determinare elementi attivi
  * Marca come attivi gli elementi del menu basati sull'URL corrente
@@ -75,7 +73,6 @@ class ActiveMenuFilter implements MenuFilterInterface
         // Se ha un array di URL attivi personalizzato
         if (isset($item['active_urls']) && is_array($item['active_urls'])) {
             foreach ($item['active_urls'] as $activeUrl) {
->>>>>>> 8215f950 (.)
                 if (! is_string($activeUrl)) {
                     continue;
                 }
@@ -98,7 +95,6 @@ class ActiveMenuFilter implements MenuFilterInterface
 
         $itemUrl = $item['url'];
 
-<<<<<<< HEAD
 if (! is_string($itemUrl)) {
             return false;
         }
@@ -107,11 +103,6 @@ if (! is_string($itemUrl)) {
         if (str_starts_with($itemUrl, 'http')) {
             $parsedUrl = parse_url($itemUrl, PHP_URL_PATH);
             $itemUrl = is_string($parsedUrl) && $parsedUrl !== '' ? $parsedUrl : '/';
-=======
-        // Rimuovi il domain per confronto
-        if (str_starts_with($itemUrl, 'http')) {
-            $itemUrl = parse_url($itemUrl, PHP_URL_PATH) ?: '/';
->>>>>>> 8215f950 (.)
         }
 
         // Normalizza gli URL
@@ -134,11 +125,7 @@ if (! is_string($itemUrl)) {
         }
 
         // Sub-path match (l'URL corrente è sotto l'URL dell'elemento)
-<<<<<<< HEAD
 if (str_starts_with($currentPath.'/', $itemPath.'/')) {
-=======
-        if ($itemPath !== '' && str_starts_with($currentPath.'/', $itemPath.'/')) {
->>>>>>> 8215f950 (.)
             return true;
         }
 

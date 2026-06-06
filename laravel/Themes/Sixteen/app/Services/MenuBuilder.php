@@ -171,28 +171,13 @@ class MenuBuilder
     }
 
     /**
-<<<<<<< HEAD
 return array_merge([
             'active' => false,
-=======
-     * Trasforma e processa gli elementi del menu
-     */
-    protected function transformItems(array $items): Collection
-    {
-        return collect($items)
-            ->map([$this, 'processMenuItem'])
-            ->filter() // Rimuove elementi false/null dai filtri
-            ->values(); // Re-index array
-    }
-
-    /**            'active' => false,
->>>>>>> 8215f950 (.)
             'target' => null,
             'icon' => null,
             'badge' => null,
             'attributes' => [],
         ], $item);
-<<<<<<< HEAD
 /**
      * Trasforma e processa gli elementi del menu
      */
@@ -202,10 +187,6 @@ return array_merge([
             ->map([$this, 'processMenuItem'])
             ->filter() // Rimuove elementi false/null dai filtri
             ->values(); // Re-index array
-=======
-
-        return $item;
->>>>>>> 8215f950 (.)
     }
 
     /**
@@ -225,10 +206,6 @@ return array_merge([
             return 'link';
         }
 
-<<<<<<< HEAD
         return 'text';
     }
 }
-=======
-        return 'text';}
->>>>>>> 8215f950 (.)

@@ -57,8 +57,4 @@ con Bootstrap Italia v2.16, Tailwind CSS v4 e Filament 5.x.
 | Dimensione repo | 347MB | 45MB |
 | Bundle gzipped | ~400kb | <200kb |
 | FCP | 2.1s | <1.5s |
-<<<<<<< HEAD
 | LCP | 3.2s | <2.5s |
-=======
-| LCP | 3.2s | <2.5s |
->>>>>>> 8215f950 (.)

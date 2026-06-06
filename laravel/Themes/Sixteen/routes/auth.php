@@ -22,11 +22,7 @@ use Themes\Sixteen\Services\SpidAuthService;
 Route::prefix('auth/spid')
     ->name('spid.')
     ->middleware(['web'])
-<<<<<<< HEAD
 ->group(function (): void {
-=======
-    ->group(function () {
->>>>>>> 8215f950 (.)
         // Login con provider SPID specifico
         Route::get('login/{provider}', [SpidAuthController::class, 'login'])
             ->name('login')
@@ -52,12 +48,8 @@ Route::prefix('auth/spid')
 Route::prefix('auth/cie')
     ->name('cie.')
     ->middleware(['web'])
-<<<<<<< HEAD
 ->group(function (): void {
         // Login CIE web
-=======
-    ->group(function () {        // Login CIE web
->>>>>>> 8215f950 (.)
         Route::get('login', [CieAuthController::class, 'login'])
             ->name('login');
 
@@ -92,12 +84,8 @@ Route::prefix('auth/cie')
 Route::prefix('sixteen/auth')
     ->name('sixteen.auth.')
     ->middleware(['web'])
-<<<<<<< HEAD
 ->group(function (): void {
         // Selezione provider di autenticazione
-=======
-    ->group(function () {        // Selezione provider di autenticazione
->>>>>>> 8215f950 (.)
         Route::view('select-provider', 'pub_theme::auth.select-provider')
             ->name('select-provider');
 
@@ -138,10 +126,7 @@ Route::prefix('sixteen/auth')
 
             return redirect()->route('home')
                 ->with('success', 'Logout effettuato con successo.');
-<<<<<<< HEAD
 ->group(function (): void {
-=======
->>>>>>> 8215f950 (.)
             // Test page per SPID
             Route::view('spid', 'pub_theme::test.spid-test')
                 ->name('spid');
@@ -165,10 +150,6 @@ Route::prefix('sixteen/auth')
 
                 return redirect()->route('spid.callback')
                     ->with('success', 'Simulazione SPID attiva');
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
             })->name('cie.simulate');
         });
 }

@@ -107,12 +107,8 @@ Il tema Sixteen include script personalizzati per diverse esigenze:
     "test:watch": "jest --watch",
     "analyze": "vite build --mode analyze",
     "analyze:serve": "npx serve dist",
-<<<<<<< HEAD
     "bundle-report": "npm run analyze && open dist/stats.html"
   }
-=======
-    "bundle-report": "npm run analyze && open dist/stats.html"  }
->>>>>>> 8215f950 (.)
 }
 ```
 
@@ -432,8 +428,4 @@ echo "Premi Ctrl+C per fermare"
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 1.0
-<<<<<<< HEAD
 **Compatibilità**: Filament 4.x, Vite 6.x, Tailwind CSS 3.x
-=======
-**Compatibilità**: Filament 4.x, Vite 6.x, Tailwind CSS 3.x
->>>>>>> 8215f950 (.)

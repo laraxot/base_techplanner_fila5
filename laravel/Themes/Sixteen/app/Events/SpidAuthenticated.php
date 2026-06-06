@@ -6,12 +6,8 @@ namespace Themes\Sixteen\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-<<<<<<< HEAD
 use Modules\User\Models\User;
 
-=======
-use Themes\Sixteen\Models\User;
->>>>>>> 8215f950 (.)
 /**
  * Evento lanciato quando un utente si autentica con successo tramite SPID
  *
@@ -32,42 +28,30 @@ class SpidAuthenticated
      */
     public function getProvider(): ?string
     {
-<<<<<<< HEAD
 $value = $this->spidAttributes['provider'] ?? null;
 
         return is_string($value) ? $value : null;
     }
-=======
-        return $this->spidAttributes['provider'] ?? null;    }
->>>>>>> 8215f950 (.)
 
     /**
      * Ottiene il livello SPID utilizzato
      */
     public function getAuthLevel(): ?int
     {
-<<<<<<< HEAD
 $value = $this->spidAttributes['auth_level'] ?? null;
 
         return is_int($value) ? $value : null;
     }
-=======
-        return $this->spidAttributes['auth_level'] ?? null;    }
->>>>>>> 8215f950 (.)
 
     /**
      * Ottiene il codice fiscale dall'autenticazione SPID
      */
     public function getFiscalCode(): ?string
     {
-<<<<<<< HEAD
 $value = $this->spidAttributes['fiscal_code'] ?? null;
 
         return is_string($value) ? $value : null;
     }
-=======
-        return $this->spidAttributes['fiscal_code'] ?? null;    }
->>>>>>> 8215f950 (.)
 
     /**
      * Verifica se è la prima autenticazione dell'utente

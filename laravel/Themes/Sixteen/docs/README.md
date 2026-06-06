@@ -126,12 +126,8 @@ colors: {
     'italia-red': {
         50: '#FFEBEE',
         500: '#D9364F', // Error red  
-<<<<<<< HEAD
         900: '#B71C1C'
     }
-=======
-        900: '#B71C1C'    }
->>>>>>> 8215f950 (.)
 }
 ```
 
@@ -334,8 +330,4 @@ npm run lighthouse
 **Versione**: 2.0.0  
 **Ultimo aggiornamento**: Settembre 1, 2025  
 **Mantenuto da**: Team Bootstrap Italia Migration  
-<<<<<<< HEAD
 **Licenza**: MIT
-=======
-**Licenza**: MIT
->>>>>>> 8215f950 (.)

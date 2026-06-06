@@ -1,28 +1,20 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 
 namespace Themes\Sixteen\Models;
 
 use Carbon\Carbon;
-=======
-namespace Themes\Sixteen\Models;
-
->>>>>>> 8215f950 (.)
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Modules\User\Models\User;
-<<<<<<< HEAD
-=======
 
 /**
  * Modello Appuntamento - Gestione prenotazioni servizi comunali
  * Conforme alle specifiche AGID per servizi di prenotazione
->>>>>>> 8215f950 (.)
  *
  * @property int $id
  * @property int|null $user_id
@@ -52,11 +44,7 @@ class Appointment extends Model
 {
     use HasFactory, SoftDeletes;
 
-<<<<<<< HEAD
 /**
-=======
-    /**
->>>>>>> 8215f950 (.)
      * Stati appuntamento conformi AGID
      */
     public const STATUS_PENDING = 'pending';      // In attesa di conferma
@@ -81,8 +69,6 @@ class Appointment extends Model
     public const SERVICE_URP = 'urp';
 
     public const SERVICE_OTHER = 'other';
-<<<<<<< HEAD
-=======
 
     protected $table = 'sixteen_appointments';
 
@@ -243,7 +229,6 @@ class Appointment extends Model
     }
 
     /**
->>>>>>> 8215f950 (.)
      * Verifica se è necessario inviare promemoria
      */
     public function needsReminder(): bool
@@ -255,56 +240,7 @@ class Appointment extends Model
     }
 
     /**
-<<<<<<< HEAD
 /**
-=======
-     * Eventi del modello
-     */
-    protected static function booted()
-    {
-        static::creating(function ($appointment) {
-            if (empty($appointment->confirmation_code)) {
-                $appointment->confirmation_code = self::generateConfirmationCode();
-            }
-        });
-
-        static::updating(function ($appointment) {
-            if ($appointment->isDirty('status') && $appointment->status === self::STATUS_CANCELLED) {
-                $appointment->cancelled_at = now();
-            }
-        });
-    }
-
-    /**
-     * Array di stati validi
-     */
-    public static function getStatuses(): array
-    {
-        return [
-            self::STATUS_PENDING => 'In attesa',
-            self::STATUS_CONFIRMED => 'Confermato',
-            self::STATUS_COMPLETED => 'Completato',
-            self::STATUS_CANCELLED => 'Cancellato',
-            self::STATUS_NO_SHOW => 'Non presentato',
-        ];
-    }
-
-    /**
-     * Array di tipi servizio
-     */
-    public static function getServiceTypes(): array
-    {
-        return [
-            self::SERVICE_ANAGRAFE => 'Anagrafe',
-            self::SERVICE_TRIBUTI => 'Tributi',
-            self::SERVICE_SUAP => 'SUAP',
-            self::SERVICE_URP => 'URP',
-            self::SERVICE_OTHER => 'Altro',
-        ];
-    }
-
-    /**
->>>>>>> 8215f950 (.)
      * Formatta l'orario per display
      */
     protected function timeSlot(): Attribute

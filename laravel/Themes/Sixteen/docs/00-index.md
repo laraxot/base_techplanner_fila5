@@ -56,8 +56,4 @@ Il tema Sixteen implementa:
 
 ---
 
-<<<<<<< HEAD
 *Theme documentation conforme agli standard Laraxot*
-=======
-*Theme documentation conforme agli standard Laraxot*
->>>>>>> 8215f950 (.)
