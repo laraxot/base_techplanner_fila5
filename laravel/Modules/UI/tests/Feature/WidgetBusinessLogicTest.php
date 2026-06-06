@@ -104,14 +104,9 @@ it('group widget can group related content', function (): void {
     expect($widget)->not()->toBeNull();
     expect($widget)->toBeInstanceOf(GroupWidget::class);
 
-<<<<<<< HEAD
 expect(method_exists($widget, 'render'))->toBeTrue();
     expect(method_exists($widget, 'getFormSchema'))->toBeTrue();
 });
-=======
-    // Verifica che il widget abbia le proprietà necessarie
-    expect($widget->getHeading())->toBeString();});
->>>>>>> 8215f950 (.)
 
 it('redirect widget can handle redirects', function (): void {
     // Arrange
@@ -121,15 +116,9 @@ it('redirect widget can handle redirects', function (): void {
     expect($widget)->not()->toBeNull();
     expect($widget)->toBeInstanceOf(RedirectWidget::class);
 
-<<<<<<< HEAD
 expect(method_exists($widget, 'render'))->toBeTrue();
     expect(method_exists($widget, 'getFormSchema'))->toBeTrue();
 });
-=======
-    // Verifica che il widget abbia le proprietà necessarie
-    expect($widget->getHeading())->toBeString();
-    expect($widget->getDescription())->toBeString();});
->>>>>>> 8215f950 (.)
 
 it('user calendar widget can display calendar', function (): void {
     // Arrange
@@ -146,22 +135,10 @@ it('widgets can be configured with custom data', function (): void {
     // Arrange
     $widget = new StatWithIconWidget();
 
-<<<<<<< HEAD
 expect(method_exists($widget, 'render'))->toBeTrue();
     expect(method_exists($widget, 'getFormSchema'))->toBeTrue();
     expect(method_exists($widget, 'getData'))->toBeTrue();
 });
-=======
-    // Act
-    $widget->heading = 'Custom Heading';
-    $widget->icon = 'heroicon-o-chart-bar';
-    $widget->color = 'success';
-
-    // Assert
-    expect($widget->heading)->toBe('Custom Heading');
-    expect($widget->icon)->toBe('heroicon-o-chart-bar');
-    expect($widget->color)->toBe('success');});
->>>>>>> 8215f950 (.)
 
 it('widgets can handle empty data gracefully', function (): void {
     // Arrange

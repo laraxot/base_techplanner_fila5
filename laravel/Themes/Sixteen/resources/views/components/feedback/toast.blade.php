@@ -92,12 +92,8 @@
     <div class="toast-header">
         @if($iconName)
             <div class="toast-icon me-2">
-<<<<<<< HEAD
 <x-filament::icon icon="heroicon-o-{{" $iconName }} class="w-5 h-5" />
             </div>
-=======
-                <x-heroicon-o-{{ $iconName }} class="w-5 h-5" />            </div>
->>>>>>> 8215f950 (.)
         @endif
         
         @if(!empty($title))
@@ -131,12 +127,8 @@
                             x-on:click="handleAction('{{ $action['action'] ?? '' }}')"
                         >
                             @if(!empty($action['icon']))
-<<<<<<< HEAD
 <x-filament::icon icon="heroicon-o-{{" $action['icon'] }} class="w-4 h-4 me-1" />
                             @endif
-=======
-                                <x-heroicon-o-{{ $action['icon'] }} class="w-4 h-4 me-1" />                            @endif
->>>>>>> 8215f950 (.)
                             {{ $action['text'] ?? 'Azione' }}
                         </button>
                     @endforeach

@@ -4,14 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\UI\Tests\Feature;
 
-<<<<<<< HEAD
 use Modules\UI\Tests\TestCase;
 
 uses(TestCase::class);
 
-=======
-uses(\Modules\UI\Tests\TestCase::class);
->>>>>>> 8215f950 (.)
 describe('Component Files Existence Tests', function (): void {
     test('reorganized component files exist in correct locations', function (): void {
         $themeBasePath = base_path('Themes/Sixteen/resources/views/components');

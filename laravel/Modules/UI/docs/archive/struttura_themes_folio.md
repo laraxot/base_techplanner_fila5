@@ -1,8 +1,4 @@
 # Struttura Themes e Folio in Laraxot
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## ⚠️ ATTENZIONE CRITICA
 
 **NON CREARE MAI FILE IN**: `/laravel/resources/views/pages/`
@@ -12,10 +8,6 @@
 ## Struttura del Progetto
 
 Il progetto Laraxot utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ```
 /laravel/
 ├── resources/views/pages/          # ❌ NON USARE MAI

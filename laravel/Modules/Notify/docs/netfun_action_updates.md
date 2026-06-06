@@ -3,10 +3,6 @@
 ## Panoramica delle Modifiche
 
 La classe `SendNetfunSMSAction` è stata completamente rivista per allinearla con le best practice del progetto Laraxot e con il pattern di configurazione standardizzato per i servizi SMS. Inoltre, è stato creato un nuovo DTO `SmsMessageData` per standardizzare la gestione dei dati SMS.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## 1. Correzioni alla Configurazione
 
 ### 1.1. Accesso Corretto alla Configurazione
@@ -310,10 +306,6 @@ protected function normalizePhoneNumber(string $phoneNumber): string
 ## 6. Conclusioni
 
 Le modifiche apportate a `SendNetfunSMSAction` e l'aggiunta del nuovo DTO `SmsMessageData` hanno migliorato significativamente la qualità e la robustezza del codice, allineandolo con le best practice del progetto Laraxot e con i pattern di configurazione standardizzati.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 Questi miglioramenti garantiscono:
 1. Maggiore manutenibilità del codice
 2. Migliore gestione degli errori e logging

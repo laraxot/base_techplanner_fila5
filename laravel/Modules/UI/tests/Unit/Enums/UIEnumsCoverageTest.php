@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\UI\Tests\Unit\Enums;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-uses(\Modules\UI\Tests\TestCase::class);
->>>>>>> 8215f950 (.)
 
 use Modules\UI\Enums\CornerPositionEnum;
 use Modules\UI\Enums\FieldTypeEnum;

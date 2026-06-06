@@ -39,11 +39,7 @@ $badge = $badges[$priority] ?? [
 
 <span class="badge {{ $badge['class'] }}" {{ $attributes }}>
     <svg class="icon icon-white icon-sm">
-<<<<<<< HEAD
 <use href="/themes/Sixteen/design-comuni/assets/bootstrap-italia/svg/sprites.svg#{{ $badge['icon'] }}"></use>
     </svg>
-=======
-        <use href="/bootstrap-italia/svg/sprites.svg#{{ $badge['icon'] }}"></use>    </svg>
->>>>>>> 8215f950 (.)
     {{ $badge['label'] }}
 </span>

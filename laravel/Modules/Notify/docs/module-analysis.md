@@ -56,12 +56,8 @@ The Notify module provides comprehensive notification and communication function
 
 ## Integration with Other Modules
 - **User**: Communication with system users
-<<<<<<< HEAD
 - **healthcare_app**: Survey participant notifications
 >>>>>>> .merge_file_CHt5AD
-=======
-- **healthcare_app**: Survey participant notifications>>>>>>> .merge_file_CHt5AD
->>>>>>> 8215f950 (.)
 - **Limesurvey**: Survey response notifications
 - **Xot**: Base notification infrastructure
 - **Filament**: Management interface

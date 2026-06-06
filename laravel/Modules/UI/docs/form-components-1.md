@@ -289,8 +289,4 @@ form.addEventListener('submit', (e) => {
 - [Documentazione Frontend](../cms/docs/frontend-architecture.md)
 ## Collegamenti tra versioni di form-components.md
 * [form-components.md](../../../ui/docs/form-components.md)
-<<<<<<< HEAD
 * [form-components.md](../../../ui/docs/roadmap/form-components.md)
-=======
-* [form-components.md](../../../ui/docs/roadmap/form-components.md)
->>>>>>> 8215f950 (.)

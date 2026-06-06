@@ -75,13 +75,9 @@
                     @click="open = !open"
                 >
                     <span class="sr-only">Apri menu principale</span>
-<<<<<<< HEAD
 <x-filament::icon icon="heroicon-o-bars-3" class="h-6 w-6" />
 f7ac8eda (.)
                 </button>
-=======
-                    <x-heroicon-o-bars-3 class="h-6 w-6" />                </button>
->>>>>>> 8215f950 (.)
             </div>
         </div>
 

@@ -4,13 +4,9 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
-<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Collection;
-=======
-use Illuminate\Database\Eloquent\Casts\Attribute;
->>>>>>> 8215f950 (.)
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -24,11 +20,7 @@ use Illuminate\Support\Str;
  *
  * Rappresenta atti, delibere, determine, regolamenti
  * e altri documenti ufficiali dell'ente secondo l'ontologia AGID
-<<<<<<< HEAD
 *
-=======
- *
->>>>>>> 8215f950 (.)
  * @property int $id
  * @property string $title
  * @property string|null $slug
@@ -96,14 +88,11 @@ use Illuminate\Support\Str;
  * @property-read PublicPerson|null $author
  * @property-read MunicipalService|null $service
  * @property-read Collection<int, ContactPoint> $contacts
-<<<<<<< HEAD
-=======
  */
 class PublicDocument extends Model
 {
     use HasFactory, SoftDeletes;
 
->>>>>>> 8215f950 (.)
     protected $table = 'sixteen_public_documents';
 
     protected $fillable = [
@@ -199,8 +188,6 @@ class PublicDocument extends Model
         'timestamp' => 'json',
         'metadata' => 'json',
     ];
-<<<<<<< HEAD
-=======
 
     /**
      * Tipologie di documento secondo AGID
@@ -406,7 +393,6 @@ class PublicDocument extends Model
         'metadata' => 'json',
     ];
 
->>>>>>> 8215f950 (.)
     /**
      * Relazione con l'unità organizzativa
      */
@@ -466,11 +452,7 @@ class PublicDocument extends Model
     public function scopeActive($query)
     {
         return $query->where('is_active', true)
-<<<<<<< HEAD
 ->where(function ($q): void {
-=======
-            ->where(function ($q) {
->>>>>>> 8215f950 (.)
                 $q->whereNull('expiry_date')
                     ->orWhere('expiry_date', '>', now());
             });
@@ -506,11 +488,7 @@ class PublicDocument extends Model
     public function scopeEffective($query)
     {
         return $query->where('document_status', 'effective')
-<<<<<<< HEAD
 ->where(function ($q): void {
-=======
-            ->where(function ($q) {
->>>>>>> 8215f950 (.)
                 $q->whereNull('effective_date')
                     ->orWhere('effective_date', '<=', now());
             });
@@ -525,11 +503,7 @@ class PublicDocument extends Model
     }
 
     /**
-<<<<<<< HEAD
 * Accessor per il nome del tipo di documento
-=======
-     * Accessor per il nome del tipo di documento
->>>>>>> 8215f950 (.)
      */
     protected function documentTypeName(): Attribute
     {
@@ -618,11 +592,7 @@ class PublicDocument extends Model
     protected function formattedFileSize(): Attribute
     {
         return Attribute::make(
-<<<<<<< HEAD
             get: function (): void {
-=======
-            get: function () {
->>>>>>> 8215f950 (.)
                 if (! $this->file_size) {
                     return;
                 }
@@ -679,269 +649,21 @@ class PublicDocument extends Model
     }
 
     /**
-<<<<<<< HEAD
      * Boot del modello
      */
     protected static function boot(): void
-=======
-     * Ottiene le parole chiave formattate
-     */
-    public function getFormattedKeywords(): array
-    {
-        if (! $this->keywords || ! is_array($this->keywords)) {
-            return [];
-        }
-
-        return collect($this->keywords)
-            ->map(function ($keyword) {
-                return is_string($keyword) ? ['name' => $keyword, 'slug' => Str::slug($keyword)] : $keyword;
-            })
-            ->toArray();
-    }
-
-    /**
-     * Ottiene gli allegati formattati
-     */
-    public function getFormattedAttachments(): array
-    {
-        if (! $this->attachments || ! is_array($this->attachments)) {
-            return [];
-        }
-
-        return collect($this->attachments)
-            ->map(function ($attachment) {
-                if (is_string($attachment)) {
-                    return [
-                        'path' => $attachment,
-                        'name' => basename($attachment),
-                        'url' => asset('storage/'.$attachment),
-                        'type' => pathinfo($attachment, PATHINFO_EXTENSION),
-                    ];
-                }
-
-                return array_merge([
-                    'url' => isset($attachment['path']) ? asset('storage/'.$attachment['path']) : null,
-                ], $attachment);
-            })
-            ->toArray();
-    }
-
-    /**
-     * Ottiene le versioni del documento
-     */
-    public function getFormattedVersions(): array
-    {
-        if (! $this->versions || ! is_array($this->versions)) {
-            return [];
-        }
-
-        return collect($this->versions)
-            ->map(function ($version, $index) {
-                return array_merge([
-                    'version' => $index + 1,
-                    'date' => null,
-                    'changes' => null,
-                    'file' => null,
-                ], is_array($version) ? $version : ['file' => $version]);
-            })
-            ->sortByDesc('version')
-            ->values()
-            ->toArray();
-    }
-
-    /**
-     * Ottiene i riferimenti normativi formattati
-     */
-    public function getFormattedLegislativeReferences(): array
-    {
-        if (! $this->legislative_references || ! is_array($this->legislative_references)) {
-            return [];
-        }
-
-        return collect($this->legislative_references)
-            ->map(function ($reference) {
-                if (is_string($reference)) {
-                    return ['title' => $reference];
-                }
-
-                return $reference;
-            })
-            ->toArray();
-    }
-
-    /**
-     * Incrementa il contatore di download
-     */
-    public function incrementDownloadCount(): void
-    {
-        $this->increment('download_count');
-        $this->update(['last_accessed' => now()]);
-    }
-
-    /**
-     * Verifica se è accessibile al pubblico
-     */
-    public function isPubliclyAccessible(): bool
-    {
-        return $this->is_published &&
-               $this->visibility_level === 'public' &&
-               $this->privacy_level === 'public' &&
-               ! $this->requires_authentication;
-    }
-
-    /**
-     * Verifica l'integrità del file
-     */
-    public function verifyFileIntegrity(): bool
-    {
-        if (! $this->file_path || ! $this->checksum) {
-            return false;
-        }
-
-        $filePath = storage_path('app/'.$this->file_path);
-
-        if (! file_exists($filePath)) {
-            return false;
-        }
-
-        return hash_file('sha256', $filePath) === $this->checksum;
-    }
-
-    /**
-     * Verifica la compliance AGID
-     */
-    public function checkAgidCompliance(): array
-    {
-        $compliance = [
-            'accessibility' => $this->accessibility_compliance,
-            'format' => $this->format_compliance,
-            'metadata' => $this->metadata_compliance,
-            'overall' => false,
-        ];
-
-        // Verifica requisiti AGID
-        $requirements = [
-            'has_title' => ! empty($this->title),
-            'has_description' => ! empty($this->description),
-            'has_date' => ! empty($this->document_date),
-            'has_author' => ! empty($this->author_id),
-            'has_classification' => ! empty($this->classification_code),
-            'has_keywords' => ! empty($this->keywords),
-            'accessible_format' => ! empty($this->accessible_format),
-            'digital_signature' => ! empty($this->digital_signature),
-        ];
-
-        $compliance['requirements'] = $requirements;
-        $compliance['score'] = count(array_filter($requirements)) / count($requirements) * 100;
-        $compliance['overall'] = $compliance['score'] >= 80;
-
-        return $compliance;
-    }
-
-    /**
-     * Ottiene i dati strutturati per SEO
-     */
-    public function getStructuredData(): array
-    {
-        return [
-            '@context' => 'https://schema.org',
-            '@type' => 'DigitalDocument',
-            'name' => $this->title,
-            'description' => $this->description,
-            'dateCreated' => $this->document_date?->toISOString(),
-            'datePublished' => $this->publication_date?->toISOString(),
-            'dateModified' => $this->updated_at->toISOString(),
-            'author' => [
-                '@type' => 'Person',
-                'name' => $this->author?->full_name,
-            ],
-            'publisher' => [
-                '@type' => 'Organization',
-                'name' => $this->organizationalUnit?->name ?? 'Comune',
-            ],
-            'encodingFormat' => $this->file_type,
-            'contentSize' => $this->formatted_file_size,
-            'keywords' => is_array($this->keywords) ? implode(', ', array_column($this->keywords, 'name')) : null,
-            'inLanguage' => $this->language ?? 'it',
-            'isAccessibleForFree' => true,
-            'license' => 'https://creativecommons.org/licenses/by/4.0/',
-        ];
-    }
-
-    /**
-     * Ottiene le informazioni complete del documento
-     */
-    public function getDocumentDetails(): array
-    {
-        return [
-            'basic_info' => [
-                'title' => $this->title,
-                'description' => $this->description,
-                'type' => $this->document_type_name,
-                'category' => $this->category,
-                'status' => $this->document_status_name,
-                'document_number' => $this->document_number,
-                'protocol_number' => $this->protocol_number,
-            ],
-            'dates' => [
-                'document_date' => $this->document_date,
-                'approval_date' => $this->approval_date,
-                'publication_date' => $this->publication_date,
-                'effective_date' => $this->effective_date,
-                'expiry_date' => $this->expiry_date,
-                'is_effective' => $this->is_effective,
-                'is_expired' => $this->is_expired,
-            ],
-            'file_info' => [
-                'file_name' => $this->file_name,
-                'file_type' => $this->file_type,
-                'file_size' => $this->formatted_file_size,
-                'download_url' => $this->download_url,
-                'accessible_format' => $this->accessible_format,
-                'download_count' => $this->download_count,
-            ],
-            'classification' => [
-                'classification_code' => $this->classification_code,
-                'transparency_section' => $this->transparency_section,
-                'privacy_level' => $this->privacy_level_name,
-                'keywords' => $this->getFormattedKeywords(),
-            ],
-            'relationships' => [
-                'author' => $this->author?->full_name,
-                'organizational_unit' => $this->organizationalUnit?->name,
-                'service' => $this->service?->name,
-                'attachments' => $this->getFormattedAttachments(),
-                'versions' => $this->getFormattedVersions(),
-            ],
-            'compliance' => $this->checkAgidCompliance(),
-        ];
-    }
-
-    /**
-     * Boot del modello
-     */
-    protected static function boot()
->>>>>>> 8215f950 (.)
     {
         parent::boot();
 
         // Genera slug se mancante
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->title);
             }
         });
 
         // Assicura unicità dello slug
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             $originalSlug = $model->slug;
             $counter = 1;
 
@@ -952,11 +674,7 @@ static::creating(function ($model): void {
         });
 
         // Set default values
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             if (is_null($model->document_status)) {
                 $model->document_status = 'draft';
             }
@@ -979,11 +697,7 @@ static::creating(function ($model): void {
         });
 
         // Calcola checksum del file se presente
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             if ($model->file_path && empty($model->checksum)) {
                 $filePath = storage_path('app/'.$model->file_path);
                 if (file_exists($filePath)) {

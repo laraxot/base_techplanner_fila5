@@ -4,13 +4,9 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
-<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Collection;
-=======
-use Illuminate\Database\Eloquent\Casts\Attribute;
->>>>>>> 8215f950 (.)
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -24,11 +20,7 @@ use Illuminate\Support\Str;
  *
  * Rappresenta sedi, uffici, punti di erogazione servizi
  * e altre location dell'ente secondo l'ontologia AGID
-<<<<<<< HEAD
 *
-=======
- *
->>>>>>> 8215f950 (.)
  * @property int $id
  * @property string $name
  * @property string|null $slug
@@ -87,14 +79,11 @@ use Illuminate\Support\Str;
  * @property-read Collection<int, OrganizationalUnit> $organizationalUnits
  * @property-read Collection<int, MunicipalService> $services
  * @property-read Collection<int, MunicipalEvent> $events
-<<<<<<< HEAD
-=======
  */
 class MunicipalLocation extends Model
 {
     use HasFactory, SoftDeletes;
 
->>>>>>> 8215f950 (.)
     /**
      * Tipologie di location secondo AGID
      */
@@ -153,10 +142,7 @@ class MunicipalLocation extends Model
         'translation' => 'Servizi di Traduzione',
         'assistance' => 'Assistenza',
     ];
-<<<<<<< HEAD
-=======
 
->>>>>>> 8215f950 (.)
     protected $table = 'sixteen_municipal_locations';
 
     protected $fillable = [
@@ -240,9 +226,6 @@ class MunicipalLocation extends Model
     ];
 
     /**
-<<<<<<< HEAD
-
-=======
      * Tipologie di location secondo AGID
      */
     public const LOCATION_TYPES = [
@@ -526,7 +509,6 @@ class MunicipalLocation extends Model
     }
 
     /**
->>>>>>> 8215f950 (.)
      * Ottiene gli orari di apertura formattati
      */
     public function getFormattedOpeningHours(): array
@@ -798,7 +780,6 @@ class MunicipalLocation extends Model
     }
 
     /**
-<<<<<<< HEAD
 * Accessor per il nome del tipo di location
      */
     protected function locationTypeName(): Attribute
@@ -925,31 +906,18 @@ class MunicipalLocation extends Model
      * Boot del modello
      */
     protected static function boot(): void
-=======
-     * Boot del modello
-     */
-    protected static function boot()
->>>>>>> 8215f950 (.)
     {
         parent::boot();
 
         // Genera slug se mancante
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->name);
             }
         });
 
         // Assicura unicità dello slug
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             $originalSlug = $model->slug;
             $counter = 1;
 
@@ -960,11 +928,7 @@ static::creating(function ($model): void {
         });
 
         // Set default values
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             if (is_null($model->priority_level)) {
                 $model->priority_level = $model->is_headquarters ? 5 : 1;
             }

@@ -9,8 +9,4 @@ import "./agid-enforcer.js";
 // PWA Manager
 import "./pwa.js";
 // Performance Manager
-<<<<<<< HEAD
 import "./performance.js";
-=======
-import "./performance.js";
->>>>>>> 8215f950 (.)

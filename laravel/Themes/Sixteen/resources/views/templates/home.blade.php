@@ -45,13 +45,9 @@
                     {{-- Hero Image/Illustration --}}
                     <div class="bg-white/20 rounded-lg p-8">
                         <div class="text-center">
-<<<<<<< HEAD
 <x-filament::icon icon="heroicon-o-building-office-2" class="w-24 h-24 mx-auto mb-4" />
 f7ac8eda (.)
                             <p class="text-sm">Servizi digitali per i cittadini</p>
-=======
-                            <x-heroicon-o-building-office-2 class="w-24 h-24 mx-auto mb-4" />                            <p class="text-sm">Servizi digitali per i cittadini</p>
->>>>>>> 8215f950 (.)
                         </div>
                     </div>
                 </div>
@@ -213,13 +209,9 @@ f7ac8eda (.)
                 <div class="space-y-2">
                     @foreach($emergencyNotices as $notice)
                         <div class="flex items-start">
-<<<<<<< HEAD
 <x-filament::icon icon="heroicon-o-exclamation-triangle" class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" />
 f7ac8eda (.)
                             <div>
-=======
-                            <x-heroicon-o-exclamation-triangle class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" />                            <div>
->>>>>>> 8215f950 (.)
                                 <p class="text-yellow-800 font-medium">{{ $notice->title }}</p>
                                 @if($notice->description)
                                     <p class="text-yellow-700 text-sm">{{ $notice->description }}</p>

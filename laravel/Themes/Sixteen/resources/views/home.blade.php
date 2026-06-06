@@ -24,12 +24,8 @@
                     <a href="#" class="hover:text-primary-100 transition">Amministrazione</a>
                     <a href="#" class="hover:text-primary-100 transition">Novità</a>
                     <a href="#" class="hover:text-primary-100 transition">Servizi</a>
-<<<<<<< HEAD
 <a href="#" class="hover:text-primary-100 transition">Vivere il Comune1</a>
                 </nav>
-=======
-                    <a href="#" class="hover:text-primary-100 transition">Vivere il Comune</a>                </nav>
->>>>>>> 8215f950 (.)
             </div>
         </div>
     </header>
@@ -50,16 +46,12 @@
         {{-- Title --}}
         <div class="mb-6">
             <h1 class="text-3xl font-bold text-gray-900 mb-2">Elenco segnalazioni</h1>
-<<<<<<< HEAD
 <form class="w-full max-w-2xl mx-auto mb-2">
     <input type="text" name="search" placeholder="Cerca segnalazioni..." class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary-500">
     <button type="submit" class="w-full bg-primary-500 text-white py-1 rounded-md hover:bg-primary-600 transition font-medium">Cerca</button>
 </form>
 <p class="text-gray-600">Segnalazioni trovate: <span id="search-results-count">0</span></p>
         </div>
-=======
-            <p class="text-gray-600">Aiuto utenti: 17 segnalazioni sono risultate 12 segnalazioni</p>        </div>
->>>>>>> 8215f950 (.)
 
         {{-- Layout: Sidebar + Map --}}
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">

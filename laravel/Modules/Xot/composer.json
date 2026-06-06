@@ -140,9 +140,5 @@
     }
   },
   "minimum-stability": "dev",
-<<<<<<< HEAD
   "prefer-stable": true
 }
-=======
-  "prefer-stable": true}
->>>>>>> 8215f950 (.)

@@ -16,12 +16,8 @@ Questo documento descrive la corretta gestione delle risorse pubbliche (immagini
 La struttura corretta per le risorse pubbliche  è la seguente:
 
 ```
-<<<<<<< HEAD
 /var/www/html/ptvx/
 ├── public_html/           # Directory pubblica principale
-=======
-/var/www/html/ptvx/├── public_html/           # Directory pubblica principale
->>>>>>> 8215f950 (.)
 │   ├── images/            # Immagini pubbliche
 │   ├── css/               # File CSS
 │   ├── js/                # File JavaScript
@@ -31,19 +27,11 @@ La struttura corretta per le risorse pubbliche  è la seguente:
 ```
 
 > **IMPORTANTE**: MAI utilizzare `/var/www/html/ptvx/laravel/public/` per i file pubblici. Questa cartella non è accessibile via web nel setup di Laraxot.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## Tipi di Risorse
 
 ### Immagini
 
 Le immagini devono essere posizionate in `/var/www/html/ptvx/public_html/images/` e organizzate in sottocartelle per tipologia:
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 - `/images/avatars/` - Avatar utenti
 - `/images/logos/` - Loghi
 - `/images/icons/` - Icone
@@ -122,12 +110,8 @@ I font devono essere posizionati in `/public_html/fonts/` e organizzati per fami
 <a href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')) }}">
     <img 
         src="{{ asset('images/logos/ptvx-logo.svg') }}" 
-<<<<<<< HEAD
         alt="Laraxot" 
         class="h-8"
-=======
-        alt="Laraxot"         class="h-8"
->>>>>>> 8215f950 (.)
     >
 </a>
 ```
@@ -141,8 +125,4 @@ I font devono essere posizionati in `/public_html/fonts/` e organizzati per fami
 
 ## Conclusione
 
-<<<<<<< HEAD
 Seguendo queste linee guida per la gestione delle risorse pubbliche, si garantisce che tutte le risorse siano correttamente accessibili via web e organizzate in modo coerente, facilitando la manutenzione e l'evoluzione del progetto Laraxot.
-=======
-Seguendo queste linee guida per la gestione delle risorse pubbliche, si garantisce che tutte le risorse siano correttamente accessibili via web e organizzate in modo coerente, facilitando la manutenzione e l'evoluzione del progetto Laraxot.
->>>>>>> 8215f950 (.)

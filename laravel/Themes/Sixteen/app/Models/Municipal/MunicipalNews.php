@@ -4,13 +4,9 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
-<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Collection;
-=======
-use Illuminate\Database\Eloquent\Casts\Attribute;
->>>>>>> 8215f950 (.)
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -24,11 +20,7 @@ use Illuminate\Support\Str;
  *
  * Rappresenta notizie, comunicati stampa, avvisi pubblici
  * e altre comunicazioni dell'ente secondo l'ontologia AGID
-<<<<<<< HEAD
 *
-=======
- *
->>>>>>> 8215f950 (.)
  * @property int $id
  * @property string $title
  * @property string|null $slug
@@ -91,14 +83,11 @@ use Illuminate\Support\Str;
  * @property-read Collection<int, ContactPoint> $contacts
  * @property-read Collection<int, self> $categories
  * @property-read Collection<int, self> $tags
-<<<<<<< HEAD
-=======
  */
 class MunicipalNews extends Model
 {
     use HasFactory, SoftDeletes;
 
->>>>>>> 8215f950 (.)
     /**
      * Tipologie di notizia secondo AGID
      */
@@ -166,10 +155,7 @@ class MunicipalNews extends Model
         'european' => 'Europeo',
         'international' => 'Internazionale',
     ];
-<<<<<<< HEAD
-=======
 
->>>>>>> 8215f950 (.)
     protected $table = 'sixteen_municipal_news';
 
     protected $fillable = [
@@ -261,142 +247,7 @@ class MunicipalNews extends Model
     ];
 
     /**
-<<<<<<< HEAD
 ->where(function ($q): void {
-=======
-     * Tipologie di notizia secondo AGID
-     */
-    public const NEWS_TYPES = [
-        'news' => 'Notizia',
-        'press_release' => 'Comunicato Stampa',
-        'public_notice' => 'Avviso Pubblico',
-        'announcement' => 'Annuncio',
-        'alert' => 'Allerta',
-        'service_update' => 'Aggiornamento Servizi',
-        'regulation_update' => 'Aggiornamento Normativo',
-        'event_announcement' => 'Annuncio Eventi',
-        'tender_notice' => 'Bando/Gara',
-        'job_posting' => 'Offerta Lavoro',
-        'council_update' => 'Aggiornamento Consiglio',
-        'mayor_message' => 'Messaggio del Sindaco',
-        'citizen_info' => 'Informazione ai Cittadini',
-        'emergency' => 'Emergenza',
-        'other' => 'Altro',
-    ];
-
-    /**
-     * Stati della notizia
-     */
-    public const NEWS_STATUSES = [
-        'draft' => 'Bozza',
-        'review' => 'In Revisione',
-        'approved' => 'Approvata',
-        'published' => 'Pubblicata',
-        'archived' => 'Archiviata',
-        'expired' => 'Scaduta',
-        'retracted' => 'Ritirata',
-    ];
-
-    /**
-     * Livelli di priorità
-     */
-    public const PRIORITY_LEVELS = [
-        1 => 'Bassa',
-        2 => 'Normale',
-        3 => 'Alta',
-        4 => 'Urgente',
-        5 => 'Critica',
-    ];
-
-    /**
-     * Livelli di urgenza
-     */
-    public const URGENCY_LEVELS = [
-        1 => 'Non Urgente',
-        2 => 'Normale',
-        3 => 'Urgente',
-        4 => 'Molto Urgente',
-        5 => 'Emergenza',
-    ];
-
-    /**
-     * Ambiti geografici
-     */
-    public const GEOGRAPHIC_SCOPES = [
-        'municipal' => 'Comunale',
-        'district' => 'Quartiere/Circoscrizione',
-        'regional' => 'Regionale',
-        'national' => 'Nazionale',
-        'european' => 'Europeo',
-        'international' => 'Internazionale',
-    ];
-
-    /**
-     * Relazione con l'unità organizzativa
-     */
-    public function organizationalUnit(): BelongsTo
-    {
-        return $this->belongsTo(OrganizationalUnit::class);
-    }
-
-    /**
-     * Relazione con l'autore
-     */
-    public function author(): BelongsTo
-    {
-        return $this->belongsTo(PublicPerson::class, 'author_id');
-    }
-
-    /**
-     * Relazione con l'editor
-     */
-    public function editor(): BelongsTo
-    {
-        return $this->belongsTo(PublicPerson::class, 'editor_id');
-    }
-
-    /**
-     * Relazione con i punti di contatto
-     */
-    public function contacts(): MorphMany
-    {
-        return $this->morphMany(ContactPoint::class, 'contactable')->ordered();
-    }
-
-    /**
-     * Relazione con i servizi correlati
-     */
-    public function services(): BelongsToMany
-    {
-        return $this->belongsToMany(MunicipalService::class, 'sixteen_news_services');
-    }
-
-    /**
-     * Relazione con gli eventi correlati
-     */
-    public function events(): BelongsToMany
-    {
-        return $this->belongsToMany(MunicipalEvent::class, 'sixteen_news_events');
-    }
-
-    /**
-     * Relazione con le persone correlate
-     */
-    public function people(): BelongsToMany
-    {
-        return $this->belongsToMany(PublicPerson::class, 'sixteen_news_people');
-    }
-
-    /**
-     * Scope per notizie pubblicate
-     */
-    public function scopePublished($query)
-    {
-        return $query->where('is_published', true)
-            ->where('news_status', 'published')
-            ->where('publication_date', '<=', now())
-            ->where(function ($q) {
->>>>>>> 8215f950 (.)
                 $q->whereNull('expiry_date')
                     ->orWhere('expiry_date', '>', now());
             });
@@ -468,11 +319,7 @@ class MunicipalNews extends Model
     }
 
     /**
-<<<<<<< HEAD
 * Accessor per il nome del tipo di notizia
-=======
-     * Accessor per il nome del tipo di notizia
->>>>>>> 8215f950 (.)
      */
     protected function newsTypeName(): Attribute
     {
@@ -634,243 +481,21 @@ class MunicipalNews extends Model
     }
 
     /**
-<<<<<<< HEAD
      * Boot del modello
      */
     protected static function boot(): void
-=======
-     * Ottiene l'excerpt con fallback al contenuto
-     */
-    public function getExcerptFormatted(int $length = 200): string
-    {
-        if ($this->excerpt) {
-            return $this->excerpt;
-        }
-
-        return Str::limit(strip_tags($this->content), $length);
-    }
-
-    /**
-     * Ottiene i tag formattati
-     */
-    public function getFormattedTags(): array
-    {
-        if (! $this->tags || ! is_array($this->tags)) {
-            return [];
-        }
-
-        return collect($this->tags)
-            ->map(function ($tag) {
-                return is_string($tag) ? ['name' => $tag, 'slug' => Str::slug($tag)] : $tag;
-            })
-            ->toArray();
-    }
-
-    /**
-     * Ottiene i link esterni formattati
-     */
-    public function getFormattedExternalLinks(): array
-    {
-        if (! $this->external_links || ! is_array($this->external_links)) {
-            return [];
-        }
-
-        return collect($this->external_links)
-            ->map(function ($link) {
-                if (is_string($link)) {
-                    return ['url' => $link, 'title' => parse_url($link, PHP_URL_HOST)];
-                }
-
-                return $link;
-            })
-            ->toArray();
-    }
-
-    /**
-     * Ottiene gli allegati formattati
-     */
-    public function getFormattedAttachments(): array
-    {
-        if (! $this->attachments || ! is_array($this->attachments)) {
-            return [];
-        }
-
-        return collect($this->attachments)
-            ->map(function ($attachment) {
-                if (is_string($attachment)) {
-                    return [
-                        'path' => $attachment,
-                        'name' => basename($attachment),
-                        'url' => asset('storage/'.$attachment),
-                        'size' => null,
-                        'type' => pathinfo($attachment, PATHINFO_EXTENSION),
-                    ];
-                }
-
-                return array_merge([
-                    'url' => isset($attachment['path']) ? asset('storage/'.$attachment['path']) : null,
-                ], $attachment);
-            })
-            ->toArray();
-    }
-
-    /**
-     * Ottiene la galleria immagini formattata
-     */
-    public function getFormattedGallery(): array
-    {
-        if (! $this->gallery || ! is_array($this->gallery)) {
-            return [];
-        }
-
-        return collect($this->gallery)
-            ->map(function ($image) {
-                if (is_string($image)) {
-                    return [
-                        'path' => $image,
-                        'url' => asset('storage/'.$image),
-                        'caption' => null,
-                        'alt' => null,
-                    ];
-                }
-
-                return array_merge([
-                    'url' => isset($image['path']) ? asset('storage/'.$image['path']) : null,
-                ], $image);
-            })
-            ->toArray();
-    }
-
-    /**
-     * Incrementa il contatore di visualizzazioni
-     */
-    public function incrementViewCount(): void
-    {
-        $this->increment('view_count');
-    }
-
-    /**
-     * Incrementa il contatore di condivisioni
-     */
-    public function incrementShareCount(): void
-    {
-        $this->increment('share_count');
-    }
-
-    /**
-     * Verifica se può essere pubblicata
-     */
-    public function canBePublished(): bool
-    {
-        return in_array($this->news_status, ['approved']) &&
-               $this->publication_date <= now();
-    }
-
-    /**
-     * Verifica se deve essere archiviata
-     */
-    public function shouldBeArchived(): bool
-    {
-        return $this->is_expired ||
-               ($this->expiry_date && $this->expiry_date->isPast());
-    }
-
-    /**
-     * Ottiene i dati strutturati per SEO
-     */
-    public function getStructuredData(): array
-    {
-        return [
-            '@context' => 'https://schema.org',
-            '@type' => 'NewsArticle',
-            'headline' => $this->title,
-            'description' => $this->getExcerptFormatted(),
-            'image' => $this->featured_image_url,
-            'datePublished' => $this->publication_date?->toISOString(),
-            'dateModified' => $this->last_modified?->toISOString(),
-            'author' => [
-                '@type' => 'Person',
-                'name' => $this->author?->full_name,
-            ],
-            'publisher' => [
-                '@type' => 'Organization',
-                'name' => $this->organizationalUnit?->name ?? 'Comune',
-            ],
-            'mainEntityOfPage' => $this->url,
-            'articleSection' => $this->category,
-            'keywords' => is_array($this->seo_keywords) ? implode(', ', $this->seo_keywords) : null,
-            'wordCount' => str_word_count(strip_tags($this->content)),
-            'timeRequired' => 'PT'.$this->estimated_reading_time.'M',
-        ];
-    }
-
-    /**
-     * Ottiene le informazioni complete della notizia
-     */
-    public function getNewsDetails(): array
-    {
-        return [
-            'basic_info' => [
-                'title' => $this->title,
-                'subtitle' => $this->subtitle,
-                'type' => $this->news_type_name,
-                'category' => $this->category,
-                'status' => $this->news_status_name,
-                'priority' => $this->priority_name,
-                'urgency' => $this->urgency_name,
-            ],
-            'content' => [
-                'excerpt' => $this->getExcerptFormatted(),
-                'content' => $this->content,
-                'reading_time' => $this->estimated_reading_time,
-                'featured_image' => $this->featured_image_url,
-                'gallery' => $this->getFormattedGallery(),
-                'attachments' => $this->getFormattedAttachments(),
-            ],
-            'publication' => [
-                'publication_date' => $this->publication_date,
-                'expiry_date' => $this->expiry_date,
-                'last_modified' => $this->last_modified,
-                'is_current' => $this->is_current,
-                'is_fresh' => $this->is_fresh,
-                'age_in_days' => $this->age_in_days,
-            ],
-            'metadata' => [
-                'author' => $this->author?->full_name,
-                'source' => $this->source,
-                'tags' => $this->getFormattedTags(),
-                'external_links' => $this->getFormattedExternalLinks(),
-                'view_count' => $this->view_count,
-                'share_count' => $this->share_count,
-            ],
-        ];
-    }
-
-    /**
-     * Boot del modello
-     */
-    protected static function boot()
->>>>>>> 8215f950 (.)
     {
         parent::boot();
 
         // Genera slug se mancante
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->title);
             }
         });
 
         // Assicura unicità dello slug
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             $originalSlug = $model->slug;
             $counter = 1;
 
@@ -881,11 +506,7 @@ static::creating(function ($model): void {
         });
 
         // Set default values
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             if (is_null($model->news_status)) {
                 $model->news_status = 'draft';
             }
@@ -908,11 +529,7 @@ static::creating(function ($model): void {
         });
 
         // Auto-publish se la data è raggiunta
-<<<<<<< HEAD
 static::updating(function ($model): void {
-=======
-        static::updating(function ($model) {
->>>>>>> 8215f950 (.)
             if ($model->news_status === 'approved' &&
                 $model->publication_date <= now() &&
                 ! $model->is_published) {
@@ -922,11 +539,7 @@ static::updating(function ($model): void {
         });
 
         // Increment revision number on updates
-<<<<<<< HEAD
 static::updating(function ($model): void {
-=======
-        static::updating(function ($model) {
->>>>>>> 8215f950 (.)
             if ($model->isDirty(['title', 'content', 'excerpt'])) {
                 $model->revision_number++;
                 $model->last_modified = now();

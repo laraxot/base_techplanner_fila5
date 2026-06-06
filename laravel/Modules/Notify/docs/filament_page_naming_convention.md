@@ -53,12 +53,8 @@ Le pagine con nomi non conformi potrebbero:
 Eseguire il seguente comando per trovare pagine non conformi:
 
 ```bash
-<<<<<<< HEAD
 find /var/www/html/ptvx/laravel/Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"
 ```
-=======
-find /var/www/html/ptvx/laravel/Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"```
->>>>>>> 8215f950 (.)
 
 ## Riferimenti
 

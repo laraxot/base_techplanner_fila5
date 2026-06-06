@@ -22,15 +22,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="FixCity">
 </head>
-<<<<<<< HEAD
 <body>
     {{-- Wrapper con ID per styling specifico pagina offline --}}
     <div id="offline-wrapper" class="container-fluid vh-100 d-flex align-items-center justify-content-center">
         <div class="row w-100">
-=======
-<body class="offline-page">
-    <div class="container-fluid vh-100 d-flex align-items-center justify-content-center">        <div class="row w-100">
->>>>>>> 8215f950 (.)
             <div class="col-12 col-md-8 col-lg-6 mx-auto text-center">
                 <!-- Offline Icon -->
                 <div class="offline-icon mb-4">
@@ -202,12 +197,8 @@
     </script>
     
     <style>
-<<<<<<< HEAD
 #offline-wrapper {
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-=======
-        .offline-page {            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
->>>>>>> 8215f950 (.)
             font-family: 'Titillium Web', sans-serif;
         }
         

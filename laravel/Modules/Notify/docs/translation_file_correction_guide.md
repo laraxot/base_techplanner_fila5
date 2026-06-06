@@ -4,10 +4,6 @@
 
 Questo documento fornisce una procedura dettagliata per correggere sistematicamente i file di traduzione nel modulo Notify che non rispettano gli standard di <nome progetto>.
 Questo documento fornisce una procedura dettagliata per correggere sistematicamente i file di traduzione nel modulo Notify che non rispettano gli standard di Laraxot.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## Passo 1: Analisi del File Esistente
 
 Prima di apportare modifiche, analizzare il file esistente per:
@@ -23,12 +19,8 @@ Se il file ha un nome non conforme:
 
 # 1. Creare un nuovo file con il nome corretto
 touch /var/www/html/<nome progetto>/laravel/Modules/Notify/lang/it/nome_corretto.php
-<<<<<<< HEAD
 touch /var/www/html/ptvx/laravel/Modules/Notify/lang/it/nome_corretto.php
 touch /var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules/Notify/lang/it/nome_corretto.php
-=======
-touch /var/www/html/ptvx/laravel/Modules/Notify/lang/it/nome_corretto.phptouch /var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules/Notify/lang/it/nome_corretto.php
->>>>>>> 8215f950 (.)
 
 # 2. Copiare e correggere il contenuto
 
@@ -42,12 +34,8 @@ rm /var/www/html/<nome progetto>/laravel/Modules/Notify/lang/it/nome_errato.php
 grep -r "nome_errato" /var/www/html/ptvx/laravel/Modules/Notify
 
 # 4. Rimuovere il file con naming errato
-<<<<<<< HEAD
 rm /var/www/html/ptvx/laravel/Modules/Notify/lang/it/nome_errato.php
 grep -r "nome_errato" /var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules/Notify
-=======
-rm /var/www/html/ptvx/laravel/Modules/Notify/lang/it/nome_errato.phpgrep -r "nome_errato" /var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules/Notify
->>>>>>> 8215f950 (.)
 
 # 4. Rimuovere il file con naming errato
 rm /var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules/Notify/lang/it/nome_errato.php
@@ -98,12 +86,8 @@ Dopo aver corretto un file in italiano, verificare e aggiornare la versione ingl
 
 # 1. Controllare se esiste il file inglese
 ls /var/www/html/<nome progetto>/laravel/Modules/Notify/lang/en/nome_file.php
-<<<<<<< HEAD
 ls /var/www/html/ptvx/laravel/Modules/Notify/lang/en/nome_file.php
 ls /var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules/Notify/lang/en/nome_file.php
-=======
-ls /var/www/html/ptvx/laravel/Modules/Notify/lang/en/nome_file.phpls /var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules/Notify/lang/en/nome_file.php
->>>>>>> 8215f950 (.)
 
 # 2. Se esiste, aggiornarlo con la stessa struttura
 

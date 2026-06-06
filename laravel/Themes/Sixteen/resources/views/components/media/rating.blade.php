@@ -151,9 +151,6 @@ Usage Examples:
 1. Basic rating input:
 <x-pub_theme::rating 
 <x-pub_theme::rating 
-<<<<<<< HEAD
-
-=======
 =======
 <x-pub_theme::rating 
     name="service_rating" 
@@ -163,7 +160,6 @@ Usage Examples:
 <x-pub_theme::rating 
 <x-pub_theme::rating 
 =======
->>>>>>> 8215f950 (.)
 <x-pub_theme::rating 
     name="experience_rating"
     legend="Come valuti la tua esperienza?"
@@ -172,9 +168,6 @@ Usage Examples:
 3. Rating with descriptive label:
 <x-pub_theme::rating 
 <x-pub_theme::rating 
-<<<<<<< HEAD
-
-=======
 =======
 <x-pub_theme::rating 
     name="quality_rating"
@@ -186,7 +179,6 @@ Usage Examples:
 <x-pub_theme::rating 
 <x-pub_theme::rating 
 =======
->>>>>>> 8215f950 (.)
 <x-pub_theme::rating 
     name="readonly_rating"
     legend="Valutazione media"
@@ -197,9 +189,6 @@ Usage Examples:
 5. Required rating:
 <x-pub_theme::rating 
 <x-pub_theme::rating 
-<<<<<<< HEAD
-
-=======
 =======
 <x-pub_theme::rating 
     name="required_rating"
@@ -210,7 +199,6 @@ Usage Examples:
 <x-pub_theme::rating 
 <x-pub_theme::rating 
 =======
->>>>>>> 8215f950 (.)
 <x-pub_theme::rating 
     name="detailed_rating"
     legend="Valutazione dettagliata"
@@ -220,9 +208,6 @@ Usage Examples:
 7. Custom labels for rating values:
 <x-pub_theme::rating 
 <x-pub_theme::rating 
-<<<<<<< HEAD
-
-=======
 =======
 <x-pub_theme::rating 
     name="custom_rating"
@@ -240,7 +225,6 @@ Usage Examples:
 <x-pub_theme::rating 
 <x-pub_theme::rating 
 =======
->>>>>>> 8215f950 (.)
 <x-pub_theme::rating 
     name="large_rating"
     legend="Rating con stelle grandi"
@@ -252,9 +236,6 @@ Usage Examples:
     <div class="mb-4">
         <x-pub_theme::rating 
         <x-pub_theme::rating 
-<<<<<<< HEAD
-
-=======
 =======
         <x-pub_theme::rating 
             name="overall_satisfaction"
@@ -267,7 +248,6 @@ Usage Examples:
         <x-pub_theme::rating 
         <x-pub_theme::rating 
 =======
->>>>>>> 8215f950 (.)
         <x-pub_theme::rating 
             name="ease_of_use"
             legend="Facilità d'uso"
@@ -278,9 +258,6 @@ Usage Examples:
     <div class="mb-4">
         <x-pub_theme::rating 
         <x-pub_theme::rating 
-<<<<<<< HEAD
-
-=======
 =======
         <x-pub_theme::rating 
             name="response_time"
@@ -299,7 +276,6 @@ Usage Examples:
             <x-pub_theme::rating 
             <x-pub_theme::rating 
 =======
->>>>>>> 8215f950 (.)
             <x-pub_theme::rating 
                 name="avg_rating"
                 legend="Valutazione media"
@@ -347,9 +323,6 @@ Usage Examples:
     <div class="mt-3 text-center">
         <x-pub_theme::rating 
         <x-pub_theme::rating 
-<<<<<<< HEAD
-
-=======
 =======
         <x-pub_theme::rating 
             name="avg_display"
@@ -369,7 +342,6 @@ Usage Examples:
     <x-pub_theme::rating 
     <x-pub_theme::rating 
 =======
->>>>>>> 8215f950 (.)
     <x-pub_theme::rating 
         name="interactive_rating"
         legend="Valuta questo contenuto"
@@ -385,9 +357,6 @@ Usage Examples:
 <div class="product-rating d-flex align-items-center">
     <x-pub_theme::rating 
     <x-pub_theme::rating 
-<<<<<<< HEAD
-
-=======
 =======
     <x-pub_theme::rating 
         name="product_rating"
@@ -408,7 +377,6 @@ Usage Examples:
             <x-pub_theme::rating 
             <x-pub_theme::rating 
 =======
->>>>>>> 8215f950 (.)
             <x-pub_theme::rating 
                 name="review_rating"
                 legend="Valutazione recensione"
@@ -427,11 +395,7 @@ Usage Examples:
     <div class="mb-3">
         <x-pub_theme::rating 
         <x-pub_theme::rating 
-<<<<<<< HEAD
-
 =======
-=======
->>>>>>> 8215f950 (.)
         <x-pub_theme::rating 
             name="validation_rating"
             legend="La tua valutazione (obbligatoria)"

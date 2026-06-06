@@ -1,5 +1,1 @@
 https://github.com/spatie/laravel-searchable
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)

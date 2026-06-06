@@ -69,10 +69,6 @@ I componenti di navigazione devono utilizzare sempre le funzioni di localizzazio
 ### Traduzioni Necessarie
 
 Assicurarsi che le seguenti chiavi di traduzione siano definite in `/var/www/html/ptvx/laravel/lang/{locale}/auth.php`:
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ```php
 return [
     'login' => [

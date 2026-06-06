@@ -43,12 +43,8 @@ Modules/UI/
 │   │   │   ├── map-markers.js
 │   │   │   └── map-popup.js
 │   │   └── components/
-<<<<<<< HEAD
 │   │       ├── location-picker.js
 │   │       └── address-autocomplete.js
-=======
-│   │       ├── location-picker.js│   │       └── address-autocomplete.js
->>>>>>> 8215f950 (.)
 │   ├── css/
 │   │   ├── map/
 │   │   │   ├── map-core.css

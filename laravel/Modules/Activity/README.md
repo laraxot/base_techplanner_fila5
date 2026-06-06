@@ -167,12 +167,8 @@ class Order extends BaseModel
 
 ```
 Activity <── User      (login/logout events, user actions)
-<<<<<<< HEAD
 Activity <── healthcare_app   (survey CRUD, dashboard actions)
 >>>>>>> .merge_file_bD7FZH
-=======
-Activity <── healthcare_app   (survey CRUD, dashboard actions)>>>>>>> .merge_file_bD7FZH
->>>>>>> 8215f950 (.)
 Activity <── Cms       (page/content modifications)
 Activity <── Media     (file upload/delete tracking)
 Activity <── Tenant    (multi-tenant audit isolation)

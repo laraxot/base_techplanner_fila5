@@ -39,12 +39,8 @@ Filament fornisce una serie di componenti Blade pronti all'uso che dovrebbero es
 
 ⚠️ **ATTENZIONE**: I seguenti layout **NON esistono** in Filament e non devono essere utilizzati:
 
-<<<<<<< HEAD
 - ❌ `<x-filament::layouts.app>` - Non esiste, utilizzare invece `<x-layouts.app>` di Laraxot
 - ❌ `<x-filament::layouts.card>` - Non esiste, utilizzare invece una combinazione di `<x-filament::card>` e altri componenti
-=======
-- ❌ `<x-filament::layouts.app>` - Non esiste, utilizzare invece `<x-layouts.app>` di Laraxot- ❌ `<x-filament::layouts.card>` - Non esiste, utilizzare invece una combinazione di `<x-filament::card>` e altri componenti
->>>>>>> 8215f950 (.)
 - ❌ `<x-filament::layouts.base>` - Non esiste
 
 ### Componenti per Feedback
@@ -195,12 +191,8 @@ I dropdown di Filament hanno una struttura specifica che deve essere rispettata.
    - Folio gestisce automaticamente le rotte del frontend
 
 2. **Per le pagine frontend**:
-<<<<<<< HEAD
    - Creare file Blade in `/var/www/html/ptvx/laravel/Themes/One/resources/views/pages/`
    - Utilizzare Folio per il routing automatico
-=======
-   - Creare file Blade in `/var/www/html/ptvx/laravel/Themes/One/resources/views/pages/`   - Utilizzare Folio per il routing automatico
->>>>>>> 8215f950 (.)
    - Esempio: `/profile/index.blade.php` sarà accessibile come `/it/profile`
 
 3. **Per i link localizzati**:

@@ -8,12 +8,8 @@
     - Logo PA conforme
 --}}
 
-<<<<<<< HEAD
 <header class="it-header-wrapper" data-sixteen-mobile-nav-target="#header-nav-wrapper" style="">
     {{-- Skip Links per accessibilità --}}
-=======
-<header class="it-header-wrapper" role="banner">    {{-- Skip Links per accessibilità --}}
->>>>>>> 8215f950 (.)
     <div class="it-header-slim-wrapper">
         <div class="container">
             <div class="row">
@@ -56,7 +52,6 @@
                             
                             {{-- Area Personale / Login --}}
                             @auth
-<<<<<<< HEAD
 <a class="btn btn-primary btn-icon btn-full" href="{{ route('filament.admin.pages.dashboard') }}" data-element="personal-area-login" aria-label="{{ __('Area personale') }}">
                                     <span class="rounded-icon" aria-hidden="true">
                                         <svg class="icon icon-primary"><use href="#it-user"></use></svg>
@@ -70,14 +65,6 @@
                                     </span>
                                     <span class="d-none d-lg-block">{{ __('Accedi all'area personale') }}</span>
                                 </a>
-=======
-                                <a class="btn btn-primary btn-sm" href="{{ route('filament.admin.pages.dashboard') }}" aria-label="{{ __('Area personale') }}">
-                                    {{ __('Area personale') }}
-                                </a>
-                            @else
-                                <a class="btn btn-primary btn-sm" href="{{ route('filament.admin.auth.login') }}" aria-label="{{ __('Accedi') }}">
-                                    {{ __('Accedi') }}                                </a>
->>>>>>> 8215f950 (.)
                             @endauth
                         </div>
                     </div>
@@ -115,12 +102,8 @@
                                     type="button" 
                                     aria-label="{{ __('Cerca') }}"
                                     data-bs-toggle="modal" 
-<<<<<<< HEAD
 data-sixteen-mobile-nav-target="#searchModal"
                                 >
-=======
-                                    data-bs-target="#searchModal"                                >
->>>>>>> 8215f950 (.)
                                     <svg class="icon">
                                         <use href="#it-search"></use>
                                     </svg>
@@ -151,14 +134,9 @@ data-sixteen-mobile-nav-target="#searchModal"
     </div>
     
     {{-- Navigazione Principale --}}
-<<<<<<< HEAD
 <div class="it-nav-wrapper" data-sixteen-mobile-nav>
         <div class="it-header-navbar-wrapper" data-sixteen-mobile-nav>
             <div class="container">
-=======
-    <div class="it-nav-wrapper">
-        <div class="it-header-navbar-wrapper">            <div class="container">
->>>>>>> 8215f950 (.)
                 <div class="row">
                     <div class="col-12">
                         <nav class="navbar navbar-expand-lg has-megamenu" id="main-navigation" aria-label="{{ __('Navigazione principale') }}">
@@ -168,7 +146,6 @@ data-sixteen-mobile-nav-target="#searchModal"
                                 aria-controls="nav" 
                                 aria-expanded="false" 
                                 aria-label="{{ __('Apri menu di navigazione') }}"
-<<<<<<< HEAD
 data-sixteen-mobile-nav-toggle
                                 data-sixteen-mobile-nav-target="#nav"
                             >
@@ -181,18 +158,6 @@ data-sixteen-mobile-nav-toggle
                                     <button 
                                         class="btn close-menu" data-sixteen-mobile-nav-close
                                         type="button"
-=======
-                                data-bs-toggle="navbarcollapsible"
-                                data-bs-target="#nav"                            >
-                                <svg class="icon"><use href="#it-burger"></use></svg>
-                            </button>
-                            
-                            <div class="navbar-collapsable" id="nav">
-                                <div class="overlay"></div>
-                                <div class="close-div">
-                                    <button 
-                                        class="btn close-menu"                                         type="button"
->>>>>>> 8215f950 (.)
                                         aria-label="{{ __('Chiudi menu') }}"
                                     >
                                         <svg class="icon"><use href="#it-close-big"></use></svg>

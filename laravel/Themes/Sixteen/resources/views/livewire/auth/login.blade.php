@@ -31,12 +31,8 @@
                     <div class="rounded-md bg-danger-50 p-4 mt-4">
                         <div class="flex">
                             <div class="flex-shrink-0">
-<<<<<<< HEAD
 <x-filament::icon icon="heroicon-m-x-circle" class="h-5 w-5 text-danger-400"/>
                             </div>
-=======
-                                <x-heroicon-m-x-circle class="h-5 w-5 text-danger-400"/>                            </div>
->>>>>>> 8215f950 (.)
                             <div class="ml-3">
                                 <h3 class="text-sm font-medium text-danger-800">
                                     {{ __('Le credenziali fornite non sono corrette.') }}

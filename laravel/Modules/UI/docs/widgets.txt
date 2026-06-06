@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 https://ahmedash.dev/blog/laravel-core-bits/volt-live-users-stats/
-=======
-https://ahmedash.dev/blog/laravel-core-bits/volt-live-users-stats/
->>>>>>> 8215f950 (.)

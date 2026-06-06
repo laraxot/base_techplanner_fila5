@@ -70,12 +70,8 @@
     }
 @endphp
 
-<<<<<<< HEAD
 <div class="container py-5 cms-detail-page">
     <div class="row justify-content-center">
-=======
-<div class="container py-5 segnalazione-dettaglio-page">    <div class="row justify-content-center">
->>>>>>> 8215f950 (.)
         <div class="col-12 col-lg-10">
             @if (! $ticket)
                 <div class="alert alert-warning">Segnalazione non trovata o non visibile.</div>

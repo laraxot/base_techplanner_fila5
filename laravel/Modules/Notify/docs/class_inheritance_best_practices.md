@@ -1,10 +1,6 @@
 # Best Practices per l'Ereditarietà delle Classi
 
 Questo documento definisce le best practices per l'ereditarietà delle classi nel sistema Laraxot, con particolare attenzione alle classi che estendono `XotBasePage`.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## Analisi dell'Ereditarietà di XotBasePage
 
 `XotBasePage` è una classe base che estende `Filament\Pages\Page` e implementa già diverse interfacce e traits:

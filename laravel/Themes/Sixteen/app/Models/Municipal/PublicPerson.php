@@ -4,13 +4,9 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
-<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Collection;
-=======
-use Illuminate\Database\Eloquent\Casts\Attribute;
->>>>>>> 8215f950 (.)
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -24,11 +20,7 @@ use Illuminate\Support\Str;
  *
  * Rappresenta amministratori, dirigenti, dipendenti e altre figure
  * pubbliche dell'ente secondo l'ontologia AGID
-<<<<<<< HEAD
 *
-=======
- *
->>>>>>> 8215f950 (.)
  * @property int $id
  * @property string $first_name
  * @property string $last_name
@@ -68,14 +60,11 @@ use Illuminate\Support\Str;
  * @property-read Collection<int, ContactPoint> $contacts
  * @property-read Collection<int, MunicipalEvent> $eventsAsSpeaker
  * @property-read Collection<int, MunicipalEvent> $eventsAsParticipant
-<<<<<<< HEAD
-=======
  */
 class PublicPerson extends Model
 {
     use HasFactory, SoftDeletes;
 
->>>>>>> 8215f950 (.)
     /**
      * Categorie di persone pubbliche secondo AGID
      */
@@ -107,10 +96,7 @@ class PublicPerson extends Model
         'consultant' => 'Consulente',
         'collaborator' => 'Collaboratore',
     ];
-<<<<<<< HEAD
-=======
 
->>>>>>> 8215f950 (.)
     protected $table = 'sixteen_public_people';
 
     protected $fillable = [
@@ -167,117 +153,7 @@ class PublicPerson extends Model
     ];
 
     /**
-<<<<<<< HEAD
 ->where(function ($q): void {
-=======
-     * Categorie di persone pubbliche secondo AGID
-     */
-    public const CATEGORIES = [
-        'politician' => 'Politico/Amministratore',
-        'manager' => 'Dirigente',
-        'employee' => 'Dipendente',
-        'consultant' => 'Consulente/Collaboratore',
-        'commission_member' => 'Componente Commissione',
-        'board_member' => 'Componente Organo',
-        'authority_member' => 'Componente Autorità',
-        'other' => 'Altro',
-    ];
-
-    /**
-     * Ruoli principali secondo AGID
-     */
-    public const ROLES = [
-        'mayor' => 'Sindaco',
-        'deputy_mayor' => 'Vicesindaco',
-        'councillor' => 'Assessore',
-        'president' => 'Presidente',
-        'vice_president' => 'Vicepresidente',
-        'secretary' => 'Segretario',
-        'general_manager' => 'Direttore Generale',
-        'manager' => 'Dirigente',
-        'supervisor' => 'Responsabile',
-        'employee' => 'Dipendente',
-        'consultant' => 'Consulente',
-        'collaborator' => 'Collaboratore',
-    ];
-
-    /**
-     * Relazione con i punti di contatto
-     */
-    public function contacts(): MorphMany
-    {
-        return $this->morphMany(ContactPoint::class, 'contactable')->ordered();
-    }
-
-    /**
-     * Relazione con le unità organizzative
-     */
-    public function organizationalUnits(): BelongsToMany
-    {
-        return $this->belongsToMany(OrganizationalUnit::class, 'sixteen_person_unit')
-            ->withPivot(['role', 'start_date', 'end_date', 'is_active'])
-            ->withTimestamps();
-    }
-
-    /**
-     * Relazione con le unità organizzative attive
-     */
-    public function activeOrganizationalUnits(): BelongsToMany
-    {
-        return $this->organizationalUnits()
-            ->wherePivot('is_active', true)
-            ->wherePivot('end_date', '>', now())
-            ->orWherePivotNull('end_date');
-    }
-
-    /**
-     * Relazione con i documenti associati
-     */
-    public function documents(): HasMany
-    {
-        return $this->hasMany(PublicDocument::class, 'author_id');
-    }
-
-    /**
-     * Scope per persone attive
-     */
-    public function scopeActive($query)
-    {
-        return $query->where('is_active', true);
-    }
-
-    /**
-     * Scope per persone pubbliche
-     */
-    public function scopePublic($query)
-    {
-        return $query->where('is_public', true);
-    }
-
-    /**
-     * Scope per categoria
-     */
-    public function scopeOfCategory($query, string $category)
-    {
-        return $query->where('category', $category);
-    }
-
-    /**
-     * Scope per ruolo
-     */
-    public function scopeWithRole($query, string $role)
-    {
-        return $query->where('role', $role);
-    }
-
-    /**
-     * Scope per persone in carica
-     */
-    public function scopeInOffice($query)
-    {
-        return $query->where('start_date', '<=', now())
-            ->where(function ($q) {
->>>>>>> 8215f950 (.)
                 $q->whereNull('end_date')
                     ->orWhere('end_date', '>', now());
             });
@@ -292,11 +168,7 @@ class PublicPerson extends Model
     }
 
     /**
-<<<<<<< HEAD
 * Accessor per il nome completo
-=======
-     * Accessor per il nome completo
->>>>>>> 8215f950 (.)
      */
     protected function fullName(): Attribute
     {
@@ -367,11 +239,7 @@ class PublicPerson extends Model
     protected function daysInOffice(): Attribute
     {
         return Attribute::make(
-<<<<<<< HEAD
             get: function (): void {
-=======
-            get: function () {
->>>>>>> 8215f950 (.)
                 if (! $this->is_in_office) {
                     return;
                 }
@@ -409,168 +277,21 @@ class PublicPerson extends Model
     }
 
     /**
-<<<<<<< HEAD
      * Boot del modello
      */
     protected static function boot(): void
-=======
-     * Ottiene le qualifiche formattate
-     */
-    public function getFormattedEducation(): array
-    {
-        if (! $this->education || ! is_array($this->education)) {
-            return [];
-        }
-
-        return collect($this->education)
-            ->map(function ($education) {
-                if (is_string($education)) {
-                    return ['degree' => $education];
-                }
-
-                return $education;
-            })
-            ->toArray();
-    }
-
-    /**
-     * Ottiene l'esperienza lavorativa formattata
-     */
-    public function getFormattedWorkExperience(): array
-    {
-        if (! $this->work_experience || ! is_array($this->work_experience)) {
-            return [];
-        }
-
-        return collect($this->work_experience)
-            ->map(function ($experience) {
-                if (is_string($experience)) {
-                    return ['position' => $experience];
-                }
-
-                return $experience;
-            })
-            ->sortByDesc('start_date')
-            ->values()
-            ->toArray();
-    }
-
-    /**
-     * Ottiene i profili social formattati
-     */
-    public function getFormattedSocialProfiles(): array
-    {
-        if (! $this->social_profiles || ! is_array($this->social_profiles)) {
-            return [];
-        }
-
-        $platforms = [
-            'facebook' => 'Facebook',
-            'twitter' => 'Twitter/X',
-            'linkedin' => 'LinkedIn',
-            'instagram' => 'Instagram',
-            'youtube' => 'YouTube',
-            'telegram' => 'Telegram',
-        ];
-
-        return collect($this->social_profiles)
-            ->mapWithKeys(function ($url, $platform) use ($platforms) {
-                return [$platforms[$platform] ?? $platform => $url];
-            })
-            ->filter()
-            ->toArray();
-    }
-
-    /**
-     * Verifica se ha un CV caricato
-     */
-    public function hasCurriculumVitae(): bool
-    {
-        return ! empty($this->cv_file_path) || ! empty($this->curriculum_vitae);
-    }
-
-    /**
-     * Ottiene l'URL del CV
-     */
-    public function getCvUrl(): ?string
-    {
-        if (! $this->cv_file_path) {
-            return null;
-        }
-
-        return asset('storage/'.$this->cv_file_path);
-    }
-
-    /**
-     * Verifica se deve pubblicare compensi (D.Lgs. 33/2013)
-     */
-    public function shouldPublishCompensation(): bool
-    {
-        return in_array($this->category, ['politician', 'manager', 'consultant'])
-            && $this->is_public;
-    }
-
-    /**
-     * Ottiene informazioni per il profilo pubblico
-     */
-    public function getPublicProfile(): array
-    {
-        $profile = [
-            'name' => $this->full_name,
-            'role' => $this->role_name,
-            'category' => $this->category_name,
-            'photo' => $this->photo,
-            'bio' => $this->bio,
-            'is_in_office' => $this->is_in_office,
-        ];
-
-        // Aggiungi informazioni pubbliche opzionali
-        if ($this->privacy_settings['show_birth_info'] ?? true) {
-            $profile['birth_place'] = $this->birth_place;
-            $profile['age'] = $this->age;
-        }
-
-        if ($this->privacy_settings['show_education'] ?? true) {
-            $profile['education'] = $this->getFormattedEducation();
-        }
-
-        if ($this->privacy_settings['show_experience'] ?? true) {
-            $profile['work_experience'] = $this->getFormattedWorkExperience();
-        }
-
-        if ($this->shouldPublishCompensation()) {
-            $profile['compensation'] = $this->compensation;
-            $profile['travel_expenses'] = $this->travel_expenses;
-        }
-
-        return $profile;
-    }
-
-    /**
-     * Boot del modello
-     */
-    protected static function boot()
->>>>>>> 8215f950 (.)
     {
         parent::boot();
 
         // Genera slug se mancante
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             if (empty($model->slug) && ! empty($model->first_name) && ! empty($model->last_name)) {
                 $model->slug = Str::slug($model->first_name.' '.$model->last_name);
             }
         });
 
         // Assicura unicità dello slug
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             $originalSlug = $model->slug;
             $counter = 1;
 
@@ -581,11 +302,7 @@ static::creating(function ($model): void {
         });
 
         // Set default privacy settings
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             if (empty($model->privacy_settings)) {
                 $model->privacy_settings = [
                     'show_birth_info' => true,

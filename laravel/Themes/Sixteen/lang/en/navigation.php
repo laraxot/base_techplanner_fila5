@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 return [
     'main' => 'Main navigation',
-<<<<<<< HEAD
 'site_title' => 'My Municipality',
-=======
-    'site_title' => '<nome progetto>',
->>>>>>> 8215f950 (.)
     'home' => 'Home',
     'about' => 'About',
     'contact' => 'Contact',

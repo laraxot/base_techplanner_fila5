@@ -4,13 +4,9 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
-<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Collection;
-=======
-use Illuminate\Database\Eloquent\Casts\Attribute;
->>>>>>> 8215f950 (.)
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -25,11 +21,7 @@ use Illuminate\Support\Str;
  *
  * Rappresenta i servizi erogati dall'ente ai cittadini
  * secondo l'ontologia AGID e le specifiche dei servizi pubblici
-<<<<<<< HEAD
 *
-=======
- *
->>>>>>> 8215f950 (.)
  * @property int $id
  * @property string $name
  * @property string|null $slug
@@ -81,14 +73,11 @@ use Illuminate\Support\Str;
  * @property-read Collection<int, ContactPoint> $contacts
  * @property-read Collection<int, PublicDocument> $documents
  * @property-read Collection<int, MunicipalLocation> $locations
-<<<<<<< HEAD
-=======
  */
 class MunicipalService extends Model
 {
     use HasFactory, SoftDeletes;
 
->>>>>>> 8215f950 (.)
     /**
      * Tipologie di servizio secondo AGID
      */
@@ -144,10 +133,7 @@ class MunicipalService extends Model
         'mobile_app' => 'App Mobile',
         'kiosk' => 'Chiosco Digitale',
     ];
-<<<<<<< HEAD
-=======
 
->>>>>>> 8215f950 (.)
     protected $table = 'sixteen_municipal_services';
 
     protected $fillable = [
@@ -225,9 +211,6 @@ class MunicipalService extends Model
     ];
 
     /**
-<<<<<<< HEAD
-
-=======
      * Tipologie di servizio secondo AGID
      */
     public const SERVICE_TYPES = [
@@ -466,7 +449,6 @@ class MunicipalService extends Model
     }
 
     /**
->>>>>>> 8215f950 (.)
      * Ottiene i requisiti formattati
      */
     public function getFormattedRequirements(): array
@@ -604,11 +586,7 @@ class MunicipalService extends Model
         return collect($this->costs)->every(function ($cost) {
             $amount = is_array($cost) ? ($cost['amount'] ?? 0) : $cost;
 
-<<<<<<< HEAD
 return $amount === 0;
-=======
-            return $amount == 0;
->>>>>>> 8215f950 (.)
         });
     }
 
@@ -689,7 +667,6 @@ return $amount === 0;
     }
 
     /**
-<<<<<<< HEAD
 * Accessor per il nome del tipo di servizio
      */
     protected function serviceTypeName(): Attribute
@@ -770,31 +747,18 @@ return $amount === 0;
      * Boot del modello
      */
     protected static function boot(): void
-=======
-     * Boot del modello
-     */
-    protected static function boot()
->>>>>>> 8215f950 (.)
     {
         parent::boot();
 
         // Genera slug se mancante
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->name);
             }
         });
 
         // Assicura unicità dello slug
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             $originalSlug = $model->slug;
             $counter = 1;
 
@@ -805,11 +769,7 @@ static::creating(function ($model): void {
         });
 
         // Set default values
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             if (is_null($model->service_status)) {
                 $model->service_status = 'active';
             }

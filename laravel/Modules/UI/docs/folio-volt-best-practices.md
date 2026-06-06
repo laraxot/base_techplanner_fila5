@@ -24,12 +24,8 @@ Example of a Volt component in a Folio page:
 use App\Models\Event;
 use function Livewire\Volt\{computed, mount};
 
-<<<<<<< HEAD
 $events = computed(fn () => Event::upcoming()->get());
 ?>
-=======
-$events = computed(fn () => Event::upcoming()->get());?>
->>>>>>> 8215f950 (.)
 
 <x-layout>
     @volt('events-list')
@@ -59,12 +55,8 @@ $events = computed(fn () => Event::upcoming()->get());?>
 ### 5. Data Handling
 - Use `computed()` for data that should be cached until dependencies change
 - Use `state()` for reactive properties
-<<<<<<< HEAD
 - Use `mount()` for initialization logic when component loads
 - Sushi package can be used for dummy data in development
-=======
-- Use `mount()` for initialization logic when component loads- Sushi package can be used for dummy data in development
->>>>>>> 8215f950 (.)
 
 ### 6. Middleware Application
 Middleware can be applied in multiple ways:

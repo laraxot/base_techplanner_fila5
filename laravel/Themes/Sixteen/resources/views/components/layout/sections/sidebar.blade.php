@@ -164,9 +164,6 @@ Usage Examples:
 1. Simple sidebar with header:
 <x-pub_theme::sidebar 
 <x-pub_theme::sidebar 
-<<<<<<< HEAD
-
-=======
 =======
 <x-pub_theme::sidebar 
     title="Sezione del sito"
@@ -181,7 +178,6 @@ Usage Examples:
 <x-pub_theme::sidebar 
 <x-pub_theme::sidebar 
 =======
->>>>>>> 8215f950 (.)
 <x-pub_theme::sidebar 
     title="Documenti"
     subtitle="Area riservata"
@@ -193,9 +189,6 @@ Usage Examples:
 3. Secondary styled sidebar:
 <x-pub_theme::sidebar 
 <x-pub_theme::sidebar 
-<<<<<<< HEAD
-
-=======
 =======
 <x-pub_theme::sidebar 
     title="Menu secondario"
@@ -210,7 +203,6 @@ Usage Examples:
 <x-pub_theme::sidebar 
 <x-pub_theme::sidebar 
 =======
->>>>>>> 8215f950 (.)
 <x-pub_theme::sidebar 
     title="Amministrazione"
     :nested="true"
@@ -245,9 +237,6 @@ Usage Examples:
 5. Dark theme sidebar:
 <x-pub_theme::sidebar 
 <x-pub_theme::sidebar 
-<<<<<<< HEAD
-
-=======
 =======
 <x-pub_theme::sidebar 
     title="Navigazione"
@@ -258,7 +247,6 @@ Usage Examples:
 <x-pub_theme::sidebar 
 <x-pub_theme::sidebar 
 =======
->>>>>>> 8215f950 (.)
 <x-pub_theme::sidebar 
     title="Menu completo"
     :links="[
@@ -271,9 +259,6 @@ Usage Examples:
 7. Custom content with slot:
 <x-pub_theme::sidebar title="Menu personalizzato">
 <x-pub_theme::sidebar title="Menu personalizzato">
-<<<<<<< HEAD
-
-=======
 =======
 <x-pub_theme::sidebar title="Menu personalizzato">
     <ul class="link-list">
@@ -298,7 +283,6 @@ Usage Examples:
 </x-pub_theme::sidebar>
 </x-pub_theme::sidebar>
 =======
->>>>>>> 8215f950 (.)
 </x-pub_theme::sidebar>
 
 Layout Integration:
@@ -309,11 +293,7 @@ Use sidebar in a layout with main content:
         <div class="col-12 col-lg-3">
             <x-pub_theme::sidebar ... />
             <x-pub_theme::sidebar ... />
-<<<<<<< HEAD
-
 =======
-=======
->>>>>>> 8215f950 (.)
             <x-pub_theme::sidebar ... />
         </div>
         <div class="col-12 col-lg-9">

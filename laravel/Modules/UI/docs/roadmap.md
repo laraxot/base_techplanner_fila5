@@ -17,8 +17,4 @@ Provide a consistent, accessible, and high-performance UI kit for all Laraxot mo
 
 ## 📂 Backlog / Future Ideas
 - Dark mode optimization for all custom components.
-<<<<<<< HEAD
 - Livewire Volt integration for ultra-fast reactive elements.
-=======
-- Livewire Volt integration for ultra-fast reactive elements.
->>>>>>> 8215f950 (.)

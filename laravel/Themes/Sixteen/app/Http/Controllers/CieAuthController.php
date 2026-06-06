@@ -44,10 +44,6 @@ class CieAuthController extends Controller
             $loginUrl = $this->cieService->getLoginUrl($returnUrl);
 
             return redirect()->to($loginUrl);
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
         } catch (\Exception $e) {
             Log::error('CIE mobile login error', [
                 'method' => 'mobile',
@@ -101,10 +97,6 @@ class CieAuthController extends Controller
 
             return redirect()->to($returnUrl)
                 ->with('success', 'Autenticazione CIE completata con successo.');
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
         } catch (\Exception $e) {
             Log::error('CIE logout error', [
                 'error' => $e->getMessage(),
@@ -155,10 +147,6 @@ class CieAuthController extends Controller
                 'expires_in' => $tokenData['expires_in'] ?? null,
                 'token_type' => $tokenData['token_type'] ?? 'Bearer',
             ]);
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
         } catch (\Exception $e) {
             Log::error('CIE status check error', [
                 'error' => $e->getMessage(),
@@ -240,14 +228,9 @@ class CieAuthController extends Controller
             'address' => $attributes['address'],
             'cie_provider' => 'cie',
             'auth_method' => 'cie',
-<<<<<<< HEAD
 'email_verified_at' => $attributes['email_verified'] ?? false ? now() : null,
             'phone_verified_at' => $attributes['phone_verified'] ?? false ? now() : null,
         ];
-=======
-            'email_verified_at' => ($attributes['email_verified'] ?? false) ? now() : null,
-            'phone_verified_at' => ($attributes['phone_verified'] ?? false) ? now() : null,        ];
->>>>>>> 8215f950 (.)
 
         // Genera email temporanea se mancante o non verificata
         if (empty($userData['email']) || ! ($attributes['email_verified'] ?? false)) {

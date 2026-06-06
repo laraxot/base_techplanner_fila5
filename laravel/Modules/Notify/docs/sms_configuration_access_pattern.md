@@ -5,10 +5,6 @@
 È stato identificato un errore comune nell'implementazione delle azioni SMS: l'utilizzo di `config('services.*.token')` invece di `config('sms.drivers.*.token')`.
 
 Questo errore viola i principi di modularità e coerenza dell'architettura di Laraxot, dove ogni modulo gestisce le proprie configurazioni in file dedicati.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## Pattern Corretto
 
 ### ❌ Pattern ERRATO

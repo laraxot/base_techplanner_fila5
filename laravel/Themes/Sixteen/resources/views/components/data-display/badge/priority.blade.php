@@ -23,12 +23,8 @@
     
     // Get color class and label from enum
     $colorClass = $priority->getColorClass();
-<<<<<<< HEAD
 $label = $priority->getLabel();
     
-=======
-    $label = $priority->label();    
->>>>>>> 8215f950 (.)
     // Map badge-* classes to bg-* classes for Bootstrap Italia
     $variant = match(true) {
         str_contains($colorClass, 'danger') => 'danger',

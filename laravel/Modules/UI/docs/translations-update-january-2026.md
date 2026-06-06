@@ -143,9 +143,5 @@ Tutte le traduzioni seguono la struttura espansa:
 - [Laraxot Translation Philosophy](../../xot/docs/translation-philosophy.md)
 - [Translation Standards](../../xot/docs/translation-standards.md)
 - [UI Module Documentation](../readme.md)
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 *Intervento completato il: 2026-01-22*
 *Conforme alle regole DRY + KISS*

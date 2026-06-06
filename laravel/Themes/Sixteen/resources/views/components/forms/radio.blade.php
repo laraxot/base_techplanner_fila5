@@ -149,12 +149,8 @@ Usage Examples:
 1. Basic radio group with fieldset:
 <x-pub_theme::radio 
 <x-pub_theme::radio 
-<<<<<<< HEAD
 
 <x-pub_theme::radio 
-=======
-=======<x-pub_theme::radio 
->>>>>>> 8215f950 (.)
     name="gruppo2"
     legend="Gruppo di radio"
     :inline="true"
@@ -167,12 +163,8 @@ Usage Examples:
 3. Radio buttons with with-gap styling:
 <x-pub_theme::radio 
 <x-pub_theme::radio 
-<<<<<<< HEAD
 
 <x-pub_theme::radio 
-=======
-=======<x-pub_theme::radio 
->>>>>>> 8215f950 (.)
     name="gruppo4"
     legend="Gruppo di radio"
     :disabled="true"
@@ -185,12 +177,8 @@ Usage Examples:
 5. Advanced options array format:
 <x-pub_theme::radio 
 <x-pub_theme::radio 
-<<<<<<< HEAD
 
 <x-pub_theme::radio 
-=======
-=======<x-pub_theme::radio 
->>>>>>> 8215f950 (.)
     name="required_group"
     legend="Campo obbligatorio"
     :required="true"
@@ -200,12 +188,7 @@ Usage Examples:
 7. Simple radio group without fieldset:
 <x-pub_theme::radio 
 <x-pub_theme::radio 
-<<<<<<< HEAD
-
-
 =======
-=======
->>>>>>> 8215f950 (.)
 Bootstrap Italia Classes Reference:
 - .form-check: Container for radio button
 - .form-check-inline: Inline arrangement of radio buttons

@@ -68,7 +68,6 @@ I componenti di navigazione devono utilizzare sempre le funzioni di localizzazio
 
 ### Traduzioni Necessarie
 
-<<<<<<< HEAD
 ---
 module: theme
 topic: navigation-components
@@ -76,48 +75,3 @@ canonical: ../../../Themes/docs/shared-components/navigation-components.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/navigation-components.md
-=======
-Assicurarsi che le seguenti chiavi di traduzione siano definite in `/var/www/html/ptvx/laravel/lang/{locale}/auth.php`:
-
-```php
-return [
-    'login' => [
-        'title' => 'Accedi',
-        // altri campi
-    ],
-    'register' => [
-        'title' => 'Registrati',
-        // altri campi
-    ],
-    'user_dropdown' => [
-        'manage_account' => 'Gestisci Account',
-        'profile' => 'Profilo',
-        'settings' => 'Impostazioni',
-        'logout' => 'Esci',
-    ],
-    // altre sezioni
-];
-```
-
-## Best Practices
-
-1. **Gestione condizionale dell'autenticazione**:
-   - Utilizzare sempre `auth()->check()` per verificare lo stato di autenticazione
-   - Mostrare il dropdown utente solo per utenti autenticati
-   - Mostrare i pulsanti di login/registrazione solo per utenti non autenticati
-
-2. **Percorsi localizzati**:
-   - Utilizzare sempre `LaravelLocalization::getCurrentLocale()` per ottenere la lingua corrente
-   - Costruire i percorsi con il prefisso della lingua: `/{{ $locale }}/percorso`
-   - Non utilizzare `route()` per percorsi frontend, a meno che non siano rotte predefinite di Laravel
-
-3. **Traduzioni**:
-   - Utilizzare sempre le chiavi di traduzione complete (es. `auth.user_dropdown.profile`)
-   - Non utilizzare stringhe hardcoded
-   - Assicurarsi che tutte le chiavi utilizzate esistano nei file di traduzione
-
-4. **Componenti Filament**:
-   - Utilizzare i componenti Filament per icone e avatar: `<x-filament::icon>`, `<x-filament::avatar>`
-   - Utilizzare i componenti Filament per i dropdown quando possibile
-   - Utilizzare i separatori corretti nei dropdown (div con bordo, non componenti inesistenti)
->>>>>>> 8215f950 (.)

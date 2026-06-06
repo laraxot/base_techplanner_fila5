@@ -58,8 +58,6 @@ class SpidAuthController extends Controller
 
             return redirect()->to($loginUrl);
 
-<<<<<<< HEAD
-=======
         } catch (\Exception $e) {
             Log::error('SPID login error', [
                 'provider' => $provider,
@@ -106,7 +104,6 @@ class SpidAuthController extends Controller
             return redirect()->to($returnUrl)
                 ->with('success', 'Autenticazione SPID completata con successo.');
 
->>>>>>> 8215f950 (.)
         } catch (\Exception $e) {
             Log::error('SPID callback error', [
                 'error' => $e->getMessage(),
@@ -173,8 +170,6 @@ class SpidAuthController extends Controller
             return redirect()->route('home')
                 ->with('success', 'Logout effettuato con successo.');
 
-<<<<<<< HEAD
-=======
         } catch (\Exception $e) {
             Log::error('SPID logout error', [
                 'error' => $e->getMessage(),
@@ -226,7 +221,6 @@ class SpidAuthController extends Controller
             return response($sloResponse)
                 ->header('Content-Type', 'text/xml');
 
->>>>>>> 8215f950 (.)
         } catch (\Exception $e) {
             Log::error('SPID SLO error', [
                 'error' => $e->getMessage(),

@@ -27,7 +27,3 @@ https://uideck.com/templates/clarity-tailwind-blog/
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)

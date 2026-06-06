@@ -299,12 +299,8 @@ function initNotifications() {
             
             setTimeout(() => {
                 notification.remove();
-<<<<<<< HEAD
             }, 300);
         });
-=======
-            }, 300);        });
->>>>>>> 8215f950 (.)
     });
 }
 
@@ -733,8 +729,4 @@ function improveAccessibility() {
 }
 
 // Initialize accessibility improvements
-<<<<<<< HEAD
 improveAccessibility();
-=======
-improveAccessibility();
->>>>>>> 8215f950 (.)

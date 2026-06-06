@@ -180,9 +180,6 @@ Usage Examples:
 1. Basic megamenu with columns:
 <x-pub_theme::megamenu 
 <x-pub_theme::megamenu 
-<<<<<<< HEAD
-
-=======
 =======
 <x-pub_theme::megamenu 
     title="Servizi"
@@ -220,7 +217,6 @@ Usage Examples:
 <x-pub_theme::megamenu 
 <x-pub_theme::megamenu 
 =======
->>>>>>> 8215f950 (.)
 <x-pub_theme::megamenu 
     title="Informazioni"
     :columns="$infoColumns"
@@ -236,9 +232,6 @@ Usage Examples:
 3. Dark theme megamenu:
 <x-pub_theme::megamenu 
 <x-pub_theme::megamenu 
-<<<<<<< HEAD
-
-=======
 =======
 <x-pub_theme::megamenu 
     title="Documenti"
@@ -252,7 +245,6 @@ Usage Examples:
 <x-pub_theme::megamenu 
 <x-pub_theme::megamenu 
 =======
->>>>>>> 8215f950 (.)
 <x-pub_theme::megamenu 
     title="Amministrazione"
     :columns="[
@@ -275,9 +267,6 @@ Usage Examples:
 5. Custom content with slot:
 <x-pub_theme::megamenu title="Custom Menu">
 <x-pub_theme::megamenu title="Custom Menu">
-<<<<<<< HEAD
-
-=======
 =======
 <x-pub_theme::megamenu title="Custom Menu">
     <div class="row">
@@ -290,7 +279,6 @@ Usage Examples:
 </x-pub_theme::megamenu>
 </x-pub_theme::megamenu>
 =======
->>>>>>> 8215f950 (.)
 </x-pub_theme::megamenu>
 
 Navigation Integration:
@@ -302,11 +290,7 @@ Place megamenu items within a navbar with .has-megamenu class:
         <x-pub_theme::megamenu ... />
         <x-pub_theme::megamenu ... />
         <x-pub_theme::megamenu ... />
-<<<<<<< HEAD
-
 =======
-=======
->>>>>>> 8215f950 (.)
         <x-pub_theme::megamenu ... />
         <x-pub_theme::megamenu ... />
     </div>

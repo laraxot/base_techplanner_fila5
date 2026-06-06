@@ -53,10 +53,6 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 ## Documentazione Correlata
 - [Documentazione CMS Module](../laravel/modules/cms/docs/filament-resources.md)
 - [Documentazione Xot Module](../laravel/modules/xot/docs/filament-resources.md)
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## Best Practices
 1. **Namespace**
    - Usa sempre il namespace completo

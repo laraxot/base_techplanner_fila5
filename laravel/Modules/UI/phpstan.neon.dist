@@ -32,12 +32,8 @@ parameters:
         - ./phpstan_constants.php
 
     scanFiles:
-<<<<<<< HEAD
     #    - ./Helpers/Helper.php
     #   - ./vendor/amenadiel/jpgraph/src/config.inc.php
-=======
-    #    - ./Helpers/Helper.php    #   - ./vendor/amenadiel/jpgraph/src/config.inc.php
->>>>>>> 8215f950 (.)
 
     editorUrl: 'vscode://file/%%file%%:%%line%%'
 

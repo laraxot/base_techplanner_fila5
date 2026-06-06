@@ -68,12 +68,8 @@ Per verificare che tutti i template seguano queste convenzioni:
 
 ```bash
 grep -L "name=\"description\"" /var/www/html/ptvx/laravel/Modules/*/resources/views/filament/pages/*.blade.php
-<<<<<<< HEAD
 grep -L "name=\"footer\"" /var/www/html/ptvx/laravel/Modules/*/resources/views/filament/pages/*.blade.php
 ```
-=======
-grep -L "name=\"footer\"" /var/www/html/ptvx/laravel/Modules/*/resources/views/filament/pages/*.blade.php```
->>>>>>> 8215f950 (.)
 
 ## Riferimenti
 

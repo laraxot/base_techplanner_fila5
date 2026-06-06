@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace Themes\Sixteen\Models\Municipal;
 
 use Carbon\Carbon;
-<<<<<<< HEAD
-=======
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -23,7 +21,6 @@ use Illuminate\Support\Str;
  *
  * Rappresenta uffici, dipartimenti, settori e altre unità organizzative
  * dell'ente secondo l'ontologia AGID
->>>>>>> 8215f950 (.)
  *
  * @property int $id
  * @property string $name
@@ -60,11 +57,7 @@ class OrganizationalUnit extends Model
 {
     use HasFactory, SoftDeletes;
 
-<<<<<<< HEAD
 /**
-=======
-    /**
->>>>>>> 8215f950 (.)
      * Tipi di unità organizzative secondo AGID
      */
     public const TYPES = [
@@ -82,8 +75,6 @@ class OrganizationalUnit extends Model
         'authority' => 'Autorità',
         'agency' => 'Agenzia',
     ];
-<<<<<<< HEAD
-=======
 
     protected $table = 'sixteen_organizational_units';
 
@@ -339,7 +330,6 @@ class OrganizationalUnit extends Model
     }
 
     /**
->>>>>>> 8215f950 (.)
      * Ottiene le competenze formattate
      */
     public function getFormattedCompetences(): array
@@ -483,7 +473,6 @@ class OrganizationalUnit extends Model
     }
 
     /**
-<<<<<<< HEAD
 * Accessor per il nome del tipo
      */
     protected function typeName(): Attribute
@@ -574,20 +563,11 @@ class OrganizationalUnit extends Model
      * Boot del modello
      */
     protected static function boot(): void
-=======
-     * Boot del modello
-     */
-    protected static function boot()
->>>>>>> 8215f950 (.)
     {
         parent::boot();
 
         // Auto-increment position nella stessa categoria
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             if (is_null($model->position)) {
                 $model->position = static::where('parent_id', $model->parent_id)
                     ->where('type', $model->type)
@@ -596,22 +576,14 @@ static::creating(function ($model): void {
         });
 
         // Genera slug se mancante
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->name);
             }
         });
 
         // Assicura unicità dello slug
-<<<<<<< HEAD
 static::creating(function ($model): void {
-=======
-        static::creating(function ($model) {
->>>>>>> 8215f950 (.)
             $originalSlug = $model->slug;
             $counter = 1;
 
