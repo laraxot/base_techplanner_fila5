@@ -1,0 +1,7 @@
+---
+module: theme
+topic: navbar
+canonical: ../../../Themes/docs/shared-components/navbar.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/navbar.md

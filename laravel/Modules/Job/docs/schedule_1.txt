@@ -1,0 +1,7 @@
+---
+module: theme
+topic: schedule_1
+canonical: ../../../Themes/docs/shared-components/schedule-1.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/schedule-1.txt

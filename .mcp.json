@@ -1,0 +1,68 @@
+{
+    "mcpServers": {
+        "context-mode": {
+            "type": "stdio",
+            "command": "context-mode",
+            "args": [],
+            "env": {}
+        },
+        "playwright": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "@playwright/mcp@latest",
+                "--headless",
+                "--browser",
+                "chromium",
+                "--output-dir",
+                "/tmp/playwright-mcp"
+            ],
+            "env": {}
+        },
+        "puppeteer": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-puppeteer"
+            ],
+            "env": {}
+        },
+        "token-optimizer": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "@ooples/token-optimizer-mcp"
+            ],
+            "env": {
+                "TOKEN_OPTIMIZER_CACHE_DIR": "${PWD}/.claude/token-optimizer-cache"
+            }
+        },
+        "laravel-boost": {
+            "type": "stdio",
+            "command": "php",
+            "args": [
+                "laravel/artisan",
+                "boost:mcp"
+            ],
+            "env": {}
+        },
+        "flowbite": {
+            "type": "stdio",
+            "command": "npx",
+            "args": ["-y", "flowbite-mcp"]
+        },
+        "daisyui": {
+            "type": "stdio",
+            "command": "npx",
+            "args": ["-y", "daisyui@latest", "mcp"]
+        },
+        "a11y-accessibility": {
+            "type": "stdio",
+            "command": "npx",
+            "args": ["-y", "a11y-mcp-server"]
+        }
+    }
+}

@@ -1,0 +1,7 @@
+---
+module: theme
+topic: ci
+canonical: ../../../Themes/docs/shared-components/ci.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ci.md

@@ -1,0 +1,1 @@
+# TechPlanner Module Documentation\n\nMain module for Sottana Service project.\n\n## Contents\n- [Brand Update 2026](../../../docs/brand-update-2026.md)\n- [Project Roadmap](../../../migration_plan.md)

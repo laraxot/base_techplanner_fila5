@@ -1,0 +1,7 @@
+---
+module: theme
+topic: custom_theme
+canonical: ../../../Themes/docs/shared-components/custom-theme.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/custom-theme.txt

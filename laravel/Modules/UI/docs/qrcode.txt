@@ -1,0 +1,7 @@
+---
+module: theme
+topic: qrcode
+canonical: ../../../Themes/docs/shared-components/qrcode.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/qrcode.md

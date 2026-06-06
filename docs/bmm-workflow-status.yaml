@@ -1,0 +1,18 @@
+workflow:
+  status: "initialized"
+  last_updated: "2026-06-06T13:00:00Z"
+  project:
+    name: "base_techplanner_fila5"
+    type: "web-app"
+    level: 2
+  phases:
+    prd:
+      status: "required"
+      completed: false
+    tech_spec:
+      status: "optional"
+      completed: false
+    architecture:
+      status: "required"
+      completed: false
+  stories: []

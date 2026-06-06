@@ -1,0 +1,7 @@
+---
+module: theme
+topic: ratings
+canonical: ../../../Themes/docs/shared-components/ratings.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ratings.md

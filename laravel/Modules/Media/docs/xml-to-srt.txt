@@ -1,0 +1,7 @@
+---
+module: theme
+topic: xml-to-srt
+canonical: ../../../Themes/docs/shared-components/xml-to-srt.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/xml-to-srt.md
