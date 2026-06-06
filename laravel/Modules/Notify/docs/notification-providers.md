@@ -1,10 +1,6 @@
 # Guida Completa ai Provider di Notifiche 
 
 Questo documento fornisce una panoramica completa dell'architettura standardizzata per tutti i provider di notifiche supportati nel modulo Notify di Laraxot.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## Principi Architetturali per Tutti i Provider
 
 I seguenti principi si applicano a **tutti** i provider di notifiche (SMS, Email, WhatsApp):

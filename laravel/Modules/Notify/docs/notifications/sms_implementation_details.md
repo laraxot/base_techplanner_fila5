@@ -281,12 +281,8 @@ return [
         'username' => env('SMSHOSTING_USERNAME'),
         'password' => env('SMSHOSTING_PASSWORD'),
         'sender' => env('SMSHOSTING_SENDER', '<nome progetto>'),
-<<<<<<< HEAD
         'sender' => env('SMSHOSTING_SENDER', 'Laraxot'),
     ],
-=======
-        'sender' => env('SMSHOSTING_SENDER', 'Laraxot'),    ],
->>>>>>> 8215f950 (.)
 ];
 ```
 
@@ -742,12 +738,8 @@ public function toTwilio($notifiable)
         ->content("<nome progetto>: Promemoria appuntamento {$this->appointment->formatted_date}. 
         Per annullare rispondere NO. Per info: <nome progetto>.it/privacy");
         ->content("Laraxot: Promemoria appuntamento {$this->appointment->formatted_date}. 
-<<<<<<< HEAD
         Per annullare rispondere NO. Per info: ptvx.it/privacy");
 }
-=======
-        Per annullare rispondere NO. Per info: ptvx.it/privacy");}
->>>>>>> 8215f950 (.)
 ```
 
 ### Registro dei Consensi

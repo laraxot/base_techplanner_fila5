@@ -2,12 +2,8 @@
 
 ## Informazioni Generali
 
-<<<<<<< HEAD
 - **File**: `/var/www/html/ptvx/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
 - **Base**: `XotBaseMigration`
-=======
-- **File**: `/var/www/html/ptvx/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`- **Base**: `XotBaseMigration`
->>>>>>> 8215f950 (.)
 - **Tabella**: `mail_templates`
 
 ## Pattern di Migrazione

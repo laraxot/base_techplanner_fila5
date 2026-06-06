@@ -15,10 +15,6 @@ Questa guida descrive i template email responsive disponibili nel modulo Notify,
 ## Introduzione
 
 I template email responsive di Laraxot sono progettati per offrire una comunicazione professionale e coinvolgente con gli utenti. Tutti i template sono:
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 - **Responsive**: ottimizzati per qualsiasi dispositivo (desktop, tablet, mobile)
 - **Accessibili**: strutturati per garantire accessibilità secondo gli standard WCAG
 - **Compatibili**: testati sui principali client email (Gmail, Outlook, Apple Mail, ecc.)
@@ -124,12 +120,8 @@ Tutti i template utilizzano il motore di templating Blade di Laravel. Le variabi
 | `$name` | Nome destinatario | "Utente" |
 | `$intro_text` | Testo introduttivo | Varia per template |
 | `$outro_text` | Testo conclusivo | Varia per template |
-<<<<<<< HEAD
 | `$contact_email` | Email di contatto | "supporto@ptvx.it" |
 | `$contact_phone` | Telefono di contatto | "+39 06 1234567" |
-=======
-| `$contact_email` | Email di contatto | "supporto@ptvx.it" || `$contact_phone` | Telefono di contatto | "+39 06 1234567" |
->>>>>>> 8215f950 (.)
 | `$office_hours` | Orari ufficio | "Lun-Ven: 9:00-19:00, Sab: 9:00-13:00" |
 
 ### Variabili Specifiche per Template

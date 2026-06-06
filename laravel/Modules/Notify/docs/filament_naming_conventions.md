@@ -1,10 +1,6 @@
 # Convenzioni di Naming per Filament 
 
 Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema Laraxot, con particolare attenzione alle pagine e alle risorse.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## Convenzioni di Naming per Pagine Filament
 
 ### Regola Fondamentale

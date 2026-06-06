@@ -5,12 +5,8 @@
 , le interfacce per le azioni SMS seguono questa struttura:
 
 ```
-<<<<<<< HEAD
 /var/www/html/ptvx/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
 ```
-=======
-/var/www/html/ptvx/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php```
->>>>>>> 8215f950 (.)
 
 Con il namespace corrispondente:
 

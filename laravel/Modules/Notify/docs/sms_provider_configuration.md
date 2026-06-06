@@ -11,12 +11,8 @@
 return [
     // Configurazioni di base (applicate a tutti i provider)
     'from' => env('SMS_FROM', '<nome progetto>'),
-<<<<<<< HEAD
     'from' => env('SMS_FROM', 'Laraxot'),
     'retry' => [
-=======
-    'from' => env('SMS_FROM', 'Laraxot'),    'retry' => [
->>>>>>> 8215f950 (.)
         'attempts' => env('SMS_RETRY_ATTEMPTS', 3),
         'delay' => env('SMS_RETRY_DELAY', 60),
     ],
@@ -31,12 +27,8 @@ return [
         'netfun' => [
             'api_key' => env('NETFUN_API_KEY'),
             'sender' => env('NETFUN_SENDER', '<nome progetto>'),
-<<<<<<< HEAD
             'sender' => env('NETFUN_SENDER', 'Laraxot'),
             'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
-=======
-            'sender' => env('NETFUN_SENDER', 'Laraxot'),            'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
->>>>>>> 8215f950 (.)
         ],
         'twilio' => [
             'account_sid' => env('TWILIO_ACCOUNT_SID'),
@@ -108,23 +100,15 @@ Quando configuri il file `.env`, utilizza questi nomi di variabili:
 
 # Configurazione generale SMS
 SMS_FROM=<nome progetto>
-<<<<<<< HEAD
 SMS_FROM=Laraxot
 SMS_RETRY_ATTEMPTS=3
-=======
-SMS_FROM=LaraxotSMS_RETRY_ATTEMPTS=3
->>>>>>> 8215f950 (.)
 SMS_RETRY_DELAY=60
 
 # Netfun
 NETFUN_API_KEY=your_api_key_here
 NETFUN_SENDER=<nome progetto>
-<<<<<<< HEAD
 NETFUN_SENDER=Laraxot
 NETFUN_API_URL=https://v2.smsviainternet.it/api/rest/v1/sms-batch.json
-=======
-NETFUN_SENDER=LaraxotNETFUN_API_URL=https://v2.smsviainternet.it/api/rest/v1/sms-batch.json
->>>>>>> 8215f950 (.)
 
 # Twilio
 TWILIO_ACCOUNT_SID=your_account_sid_here

@@ -1,10 +1,6 @@
 # Pattern Architetturali per le Notifiche
 
 Questo documento analizza i pattern architetturali utilizzati nel sistema di notifiche di Laraxot, con particolare attenzione alla selezione del driver e alla gestione delle dipendenze.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## Confronto tra Pattern Architetturali
 
 ### Pattern Attuale: Selezione del Driver nel Canale

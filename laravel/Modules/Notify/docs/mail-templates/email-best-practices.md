@@ -15,12 +15,8 @@ Questo documento descrive le best practices per la creazione e gestione di email
 
 ### 2. Branding Coerente
 
-<<<<<<< HEAD
 - **Elementi visuali**: Utilizzare logo, colori e font Laraxot
 - **Voce e tono**: Mantenere un tono professionale ma amichevole
-=======
-- **Elementi visuali**: Utilizzare logo, colori e font Laraxot- **Voce e tono**: Mantenere un tono professionale ma amichevole
->>>>>>> 8215f950 (.)
 - **Firma coerente**: Includere sempre lo stesso formato di firma e disclaimer
 
 ### 3. Accessibilità
@@ -66,10 +62,6 @@ I template di [mailpace/templates](https://github.com/mailpace/templates) integr
 ### Directory `mail-layouts`
 
 La directory `/var/www/html/ptvx/laravel/Modules/Notify/resources/mail-layouts/` contiene:
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 - **default.html**: Template base per la maggior parte delle comunicazioni
 - **main.html**: Alternativa minimalista
 - **marketing.html**: Layout ottimizzato per comunicazioni promozionali
@@ -78,10 +70,6 @@ La directory `/var/www/html/ptvx/laravel/Modules/Notify/resources/mail-layouts/`
 ### Integrazione con Spatie Mail Templates
 
 Seguendo le regole di progetto Laraxot, ricordare di:
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 - NON creare controller personalizzati per gestire l'invio di email
 - Utilizzare il package `spatie/laravel-mail-templates`
 - Implementare il modello `MailTemplate` con `HasSlug` per identificare facilmente i template

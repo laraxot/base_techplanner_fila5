@@ -14,12 +14,8 @@ $user = \Modules\<nome progetto>\Models\User::factory()->create();
 $this->app['config']->set('database.connections.<nome progetto>_test', [
 $user = \Modules\Laraxot\Models\User::factory()->create();
 'database' => 'ptvx_test',
-<<<<<<< HEAD
 $this->app['config']->set('database.connections.ptvx_test', [
 ```
-=======
-$this->app['config']->set('database.connections.ptvx_test', [```
->>>>>>> 8215f950 (.)
 
 ✅ **SEMPRE utilizzare pattern riutilizzabili:**
 ```php
@@ -36,12 +32,8 @@ Il modulo Notify deve utilizzare `XotData::make()->getUserClass()` per ottenere 
 use Modules\Xot\Datas\XotData;
 
 // Invece di: \Modules\<nome progetto>\Models\User::class
-<<<<<<< HEAD
 // Invece di: \Modules\Laraxot\Models\User::class
 $userClass = XotData::make()->getUserClass();
-=======
-// Invece di: \Modules\Laraxot\Models\User::class$userClass = XotData::make()->getUserClass();
->>>>>>> 8215f950 (.)
 $user = $userClass::factory()->create();
 ```
 
@@ -50,12 +42,8 @@ Per i test che richiedono configurazioni database specifiche:
 
 ```php
 // Invece di: '<nome progetto>_test'
-<<<<<<< HEAD
 // Invece di: 'ptvx_test'
 $testDatabase = config('database.default') . '_test';
-=======
-// Invece di: 'ptvx_test'$testDatabase = config('database.default') . '_test';
->>>>>>> 8215f950 (.)
 $this->app['config']->set("database.connections.{$testDatabase}", [
     // configurazione
 ]);
@@ -82,12 +70,8 @@ $this->artisan('migrate', ['--database' => '<nome progetto>_test']);
 use Modules\Laraxot\Models\User;
 use Modules\Laraxot\Models\Patient;
 'database' => 'ptvx_test'
-<<<<<<< HEAD
 $this->artisan('migrate', ['--database' => 'ptvx_test']);
 ```
-=======
-$this->artisan('migrate', ['--database' => 'ptvx_test']);```
->>>>>>> 8215f950 (.)
 
 ### ❌ Configurazioni Project-Specific
 ```php
@@ -95,12 +79,8 @@ $this->artisan('migrate', ['--database' => 'ptvx_test']);```
 'app_name' => '<nome progetto>',
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
 'app_name' => 'Laraxot',
-<<<<<<< HEAD
 'tenant_model' => \Modules\Laraxot\Models\Studio::class,
 ```
-=======
-'tenant_model' => \Modules\Laraxot\Models\Studio::class,```
->>>>>>> 8215f950 (.)
 
 ## Pattern Corretti per Riusabilità
 
@@ -148,12 +128,8 @@ protected function createTestUser(): mixed
 Prima di committare modifiche al modulo Notify:
 
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
-<<<<<<< HEAD
 - [ ] Nessun riferimento hardcoded a "ptvx" o altri nomi di progetti
 - [ ] Utilizzo di `XotData::make()->getUserClass()` per la classe User
-=======
-- [ ] Nessun riferimento hardcoded a "ptvx" o altri nomi di progetti- [ ] Utilizzo di `XotData::make()->getUserClass()` per la classe User
->>>>>>> 8215f950 (.)
 - [ ] Configurazioni database dinamiche nei test
 - [ ] Nessun import diretto di modelli da altri progetti
 - [ ] Traduzioni generiche senza riferimenti a progetti specifici
@@ -168,21 +144,13 @@ Per verificare che il modulo sia veramente riutilizzabile:
 # Cerca hardcoding di nomi progetti
 grep -r -i "<nome progetto>\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
 grep -r -i "ptvx\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 # Cerca import diretti da altri moduli
 grep -r "use Modules\\\\[^N][^o][^t][^i][^f][^y]" Modules/Notify/
 
 # Cerca configurazioni hardcoded
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
-<<<<<<< HEAD
 grep -r "database.*ptvx\|app.*ptvx" Modules/Notify/
 ```
-=======
-grep -r "database.*ptvx\|app.*ptvx" Modules/Notify/```
->>>>>>> 8215f950 (.)
 
 ## Benefici della Riusabilità
 

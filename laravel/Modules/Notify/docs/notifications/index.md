@@ -3,12 +3,8 @@
 ## Collegamenti Correlati
 - [Indice Documentazione Notify](../index.md)
 - [README Modulo Notify](../readme.md)
-<<<<<<< HEAD
 - [Documentazione Generale Laraxot](../../../../../../docs/readme.md)
 - [Collegamenti Documentazione](../../../../../../docs/collegamenti-documentazione.md)
-=======
-- [Documentazione Generale Laraxot](../../../../../../docs/readme.md)- [Collegamenti Documentazione](../../../../../../docs/collegamenti-documentazione.md)
->>>>>>> 8215f950 (.)
 
 ## Guida Implementazione
 - [Guida Implementazione Notifiche](./notifications_implementation_guide.md) - Guida generale all'implementazione delle notifiche
@@ -36,12 +32,8 @@
 - [Canale Telegram](../telegram_channel.md) - Documentazione del canale Telegram
 
 ## Note Importanti
-<<<<<<< HEAD
 - Laraxot utilizza il pattern Factory per la creazione delle azioni di invio messaggi
 - Il sistema si basa su Queueable Actions (spatie/laravel-queueable-action) e non su Service Pattern
-=======
-- Laraxot utilizza il pattern Factory per la creazione delle azioni di invio messaggi- Il sistema si basa su Queueable Actions (spatie/laravel-queueable-action) e non su Service Pattern
->>>>>>> 8215f950 (.)
 - Le azioni specifiche per provider devono implementare l'interfaccia comune corrispondente
 - I DTO standardizzati vengono utilizzati come ponte tra il sistema e i provider specifici
 

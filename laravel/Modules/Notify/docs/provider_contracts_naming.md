@@ -3,10 +3,6 @@
 ## Regola Fondamentale
 
 Nel sistema Laraxot, tutte le interfacce (interfaces) devono seguire queste convenzioni di naming:
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 1. **Suffisso `Contract` e non `Interface`**:
    - ✅ CORRETTO: `SmsProviderContract`
    - ❌ ERRATO: `SmsProviderInterface` o `SmsActionInterface`

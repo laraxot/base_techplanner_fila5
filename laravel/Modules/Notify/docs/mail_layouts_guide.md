@@ -3,10 +3,6 @@
 ## Introduzione
 
 Questo documento descrive i layout di email disponibili nella directory `resources/mail-layouts` del modulo Notify di Laraxot. Questi layout sono progettati per essere compatibili con la maggior parte dei client email e forniscono una base solida per tutte le email transazionali dell'applicazione.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## Struttura dei Layout
 
 Il modulo Notify contiene quattro layout email principali:

@@ -56,12 +56,8 @@ Le configurazioni specifiche per provider sono definite all'interno della sezion
         // Credenziali e parametri di connessione
         'username' => env('NETFUN_USERNAME'),
         'password' => env('NETFUN_PASSWORD'),
-<<<<<<< HEAD
         'sender' => env('NETFUN_SENDER', 'Laraxot'),
         'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
-=======
-        'sender' => env('NETFUN_SENDER', 'Laraxot'),        'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
->>>>>>> 8215f950 (.)
         
         // Configurazioni avanzate specifiche per Netfun
         'circuit_breaker' => [
@@ -117,12 +113,8 @@ Le configurazioni specifiche per provider sono definite all'interno della sezion
     'netfun' => [
         'username' => env('NETFUN_USERNAME'),
         'password' => env('NETFUN_PASSWORD'),
-<<<<<<< HEAD
         'sender' => env('NETFUN_SENDER', 'Laraxot'),
         'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
-=======
-        'sender' => env('NETFUN_SENDER', 'Laraxot'),        'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
->>>>>>> 8215f950 (.)
         
         // Solo configurazioni veramente specifiche per Netfun
         'circuit_breaker' => [

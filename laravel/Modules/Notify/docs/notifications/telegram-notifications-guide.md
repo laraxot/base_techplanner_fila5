@@ -1,10 +1,6 @@
 # Notifiche Telegram 
 
 Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di Laraxot.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## Indice
 
 - [Introduzione](#introduzione)
@@ -19,10 +15,6 @@ Questa documentazione descrive come implementare notifiche Telegram nel modulo N
 ## Introduzione
 
 Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. Laraxot integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## Setup del Bot Telegram
 
 ### Creazione del Bot
@@ -38,21 +30,13 @@ Il bot di Laraxot deve avere:
 - Privacy Mode disattivata (per leggere messaggi nei gruppi)
 - Comandi personalizzati configurati
 - Immagine del profilo con logo Laraxot
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ### Comandi Consigliati
 
 Configura i seguenti comandi per il tuo bot:
 ```
 start - Inizia l'interazione con il bot
-<<<<<<< HEAD
 register - Collega il tuo account Telegram a Laraxot
 unregister - Scollega il tuo account Telegram
-=======
-register - Collega il tuo account Telegram a Laraxotunregister - Scollega il tuo account Telegram
->>>>>>> 8215f950 (.)
 settings - Gestisci le tue preferenze di notifica
 help - Ottieni assistenza
 ```
@@ -175,12 +159,8 @@ public function toTelegram($notifiable)
 Per collegare un account Telegram a un utente Laraxot:
 
 1. Implementa un comando `/register` nel bot che generi un token univoco.
-<<<<<<< HEAD
 2. L'utente inserisce questo token nel proprio profilo nell'app Laraxot.
 3. Salva il `chat_id` Telegram dell'utente nel database.
-=======
-2. L'utente inserisce questo token nel proprio profilo nell'app Laraxot.3. Salva il `chat_id` Telegram dell'utente nel database.
->>>>>>> 8215f950 (.)
 
 ```php
 namespace Modules\Notify\Commands;
@@ -192,12 +172,8 @@ use Modules\Notify\Models\TelegramToken;
 class RegisterCommand extends Command
 {
     protected $name = 'register';
-<<<<<<< HEAD
     protected $description = 'Collega il tuo account Telegram a Laraxot';
     
-=======
-    protected $description = 'Collega il tuo account Telegram a Laraxot';    
->>>>>>> 8215f950 (.)
     public function handle()
     {
         $chatId = $this->update->getMessage()->getChat()->getId();
@@ -211,12 +187,8 @@ class RegisterCommand extends Command
         ]);
         
         $this->replyWithMessage([
-<<<<<<< HEAD
             'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo Laraxot per completare il collegamento."
         ]);
-=======
-            'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo Laraxot per completare il collegamento."        ]);
->>>>>>> 8215f950 (.)
     }
 }
 ```

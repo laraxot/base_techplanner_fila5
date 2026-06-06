@@ -1,10 +1,6 @@
 # Email Layouts Best Practices 
 
 Questa documentazione descrive le best practices da seguire per i layout email quando si utilizza `spatie/laravel-database-mail-templates` nel modulo Notify di Laraxot.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## Indice
 
 - [Introduzione](#introduzione)
@@ -19,10 +15,6 @@ Questa documentazione descrive le best practices da seguire per i layout email q
 ## Introduzione
 
 Laraxot utilizza `spatie/laravel-database-mail-templates` per memorizzare e gestire i template email nel database. Questo approccio separa nettamente:
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 1. **Layout HTML base**: Struttura generale dell'email (`resources/mail-layouts/*.html`)
 2. **Contenuto dei template**: Contenuto specifico memorizzato nel database (tabella `mail_templates`)
 
