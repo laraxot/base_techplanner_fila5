@@ -3,10 +3,7 @@
 /**
  * Tenant List Management.
  */
-<<<<<<< HEAD
 
-=======
->>>>>>> 06ccbd93 (.)
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
@@ -32,11 +29,7 @@ class ListTenants extends XotBaseListRecords
             'name' => TextColumn::make('name')->searchable(),
             'slug' => TextColumn::make('slug')
                 ->default(function ($record) {
-<<<<<<< HEAD
-                    if ($record === null || ! $record instanceof Tenant) {
-=======
                     if (null === $record || ! $record instanceof Tenant) {
->>>>>>> 06ccbd93 (.)
                         return '';
                     }
                     $record->generateSlug();
@@ -54,3 +47,4 @@ class ListTenants extends XotBaseListRecords
         ];
     }
 }
+

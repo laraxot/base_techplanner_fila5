@@ -17,20 +17,14 @@ use Filament\Schemas\Schema;
 use Filament\Support\Components\Component;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
 use Illuminate\Support\Facades\View;
-=======
->>>>>>> 06ccbd93 (.)
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Actions\ModelClass\CountAction;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
-<<<<<<< HEAD
-=======
 use ReflectionClass;
->>>>>>> 06ccbd93 (.)
 use Webmozart\Assert\Assert;
 
 use function Safe\glob;
@@ -118,7 +112,6 @@ abstract class XotBaseResource extends FilamentResource
 
     final public static function form(Schema $schema): Schema
     {
-<<<<<<< HEAD
         // return AuthorForm::configure($schema);
         $form_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
         if (class_exists($form_class)) {
@@ -128,8 +121,6 @@ abstract class XotBaseResource extends FilamentResource
             return $configured;
         }
 
-=======
->>>>>>> 06ccbd93 (.)
         /** @var array<Htmlable|string> $components */
         $components = static::getFormSchema();
 
@@ -273,14 +264,9 @@ abstract class XotBaseResource extends FilamentResource
     public static function getWizardSubmitAction(): Htmlable
     {
         $submit_view = 'pub_theme::filament.wizard.submit-button';
-<<<<<<< HEAD
-        if (! View::exists($submit_view)) {
-            throw new \Exception("View {$submit_view} does not exist");
-=======
         // @phpstan-ignore-next-line
         if (! view()->exists($submit_view)) {
             throw new Exception("View {$submit_view} does not exist");
->>>>>>> 06ccbd93 (.)
         }
         $render = view($submit_view)->render();
 
@@ -351,3 +337,4 @@ abstract class XotBaseResource extends FilamentResource
         return Step::make($name)->schema([]);
     }
 }
+

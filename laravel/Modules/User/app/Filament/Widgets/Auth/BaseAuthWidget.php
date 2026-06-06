@@ -11,14 +11,11 @@ abstract class BaseAuthWidget extends XotBaseWidget
 {
     public ?array $data = [];
 
-<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
     abstract protected function getFormSchema(): array;
 
-=======
->>>>>>> 06ccbd93 (.)
     public function mount(): void
     {
         if (Auth::check()) {
@@ -47,3 +44,4 @@ abstract class BaseAuthWidget extends XotBaseWidget
      */
     abstract public function getFormSchema(): array;
 }
+

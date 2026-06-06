@@ -5,15 +5,11 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
 use Illuminate\Support\Carbon;
-=======
->>>>>>> 06ccbd93 (.)
 use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * Modules\User\Models\PersonalAccessToken.
-<<<<<<< HEAD
  *
  * @property int $id
  * @property string $tokenable_type
@@ -25,8 +21,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property Carbon|null $expires_at
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
-=======
->>>>>>> 06ccbd93 (.)
  *
  * @property int                             $id
  * @property string                          $tokenable_type
@@ -66,3 +60,4 @@ class PersonalAccessToken extends Model
         ];
     }
 }
+

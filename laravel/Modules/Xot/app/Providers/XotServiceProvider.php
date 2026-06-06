@@ -54,7 +54,6 @@ class XotServiceProvider extends XotBaseServiceProvider
         $this->registerProviders();
     }
 
-<<<<<<< HEAD
     #[\Override]
     public function register(): void
     {
@@ -95,8 +94,6 @@ class XotServiceProvider extends XotBaseServiceProvider
         TextColumn::configureUsing(fn (TextColumn $column) => $column->timezone($timezone));
     }
 
-=======
->>>>>>> 06ccbd93 (.)
     /**
      * Palette PA su widget FO (login, wizard) senza panel attivo — allineata ai panel admin.
      */
@@ -318,3 +315,4 @@ class XotServiceProvider extends XotBaseServiceProvider
         // }
     }
 } // end class
+

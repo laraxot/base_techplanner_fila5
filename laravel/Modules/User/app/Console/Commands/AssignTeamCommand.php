@@ -19,11 +19,8 @@ class AssignTeamCommand extends Command
 
     /**
      * The console command description.
-<<<<<<< HEAD
-=======
      *
      * @var string
->>>>>>> 06ccbd93 (.)
      */
     protected $description = 'Assign a team to user';
 
@@ -94,3 +91,4 @@ class AssignTeamCommand extends Command
     //    ];
     // }
 }
+

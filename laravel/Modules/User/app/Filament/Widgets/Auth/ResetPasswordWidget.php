@@ -4,11 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
-<<<<<<< HEAD
-=======
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
->>>>>>> 06ccbd93 (.)
 use Filament\Schemas\Schema;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -17,12 +14,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
-use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
-use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
-=======
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
->>>>>>> 06ccbd93 (.)
 
 /**
  * Reset password widget for user password reset functionality.
@@ -68,25 +60,15 @@ class ResetPasswordWidget extends XotBaseWidget
         ];
     }
 
-<<<<<<< HEAD
-    protected static function schemaMethod(): string
-    {
-        return 'getResetPasswordFormSchema';
-    }
-
-=======
     /**
      * Mount the widget and initialize the form.
      */
->>>>>>> 06ccbd93 (.)
     public function mount(): void
     {
         $this->form->fill();
     }
 
     /**
-<<<<<<< HEAD
-=======
      * Configure the form for this widget.
      */
 
@@ -96,7 +78,6 @@ class ResetPasswordWidget extends XotBaseWidget
      * Implements Laravel's password reset functionality with explicit
      * type casting for security and proper error feedback.
      *
->>>>>>> 06ccbd93 (.)
      * @return RedirectResponse|void
      */
     public function resetPassword()
@@ -105,34 +86,20 @@ class ResetPasswordWidget extends XotBaseWidget
 
         $reset_data = Arr::only($data, ['email', 'password', 'password_confirmation', 'token']);
         $status = Password::reset($reset_data, function (Authenticatable $user, string $password): void {
-<<<<<<< HEAD
-            if (! $user instanceof Model) {
-                return;
-            }
-
-=======
             /* @var Model&Authenticatable $user */
->>>>>>> 06ccbd93 (.)
             $user->forceFill([
                 'password' => Hash::make($password),
                 'remember_token' => Str::random(60),
             ])->save();
         });
 
-<<<<<<< HEAD
-        if ($status === Password::PASSWORD_RESET) {
-=======
         if (Password::PASSWORD_RESET === $status) {
->>>>>>> 06ccbd93 (.)
             session()->flash('status', __($status));
 
             return redirect()->route('login');
         }
-<<<<<<< HEAD
-        $this->addError('email', __(is_string($status) ? $status : 'passwords.generic_error'));
-=======
         /* @phpstan-ignore-next-line */
         $this->addError('email', __($status));
->>>>>>> 06ccbd93 (.)
     }
 }
+

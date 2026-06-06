@@ -13,14 +13,11 @@ class ShowUserListCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
      */
     protected $signature = 'user:user-list';
 
     /**
      * The console command description.
-=======
->>>>>>> 06ccbd93 (.)
      */
     protected $name = 'user:show-user-list';
 
@@ -51,3 +48,4 @@ class ShowUserListCommand extends Command
         }
     }
 }
+

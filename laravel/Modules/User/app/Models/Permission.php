@@ -7,25 +7,13 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
 use Modules\Xot\Contracts\ProfileContract;
-=======
->>>>>>> 06ccbd93 (.)
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
 use Spatie\Permission\Models\Permission as SpatiePermission;
 
 /**
-<<<<<<< HEAD
- * @property int $id
- * @property string $name
- * @property string $guard_name
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
-=======
  * @property int                         $id
  * @property string                      $name
  * @property string                      $guard_name
@@ -33,7 +21,6 @@ use Spatie\Permission\Models\Permission as SpatiePermission;
  * @property Carbon|null                 $updated_at
  * @property string|null                 $updated_by
  * @property string|null                 $created_by
->>>>>>> 06ccbd93 (.)
  * @property Collection<int, Permission> $permissions
  * @property int|null                    $permissions_count
  * @property Collection<int, Role>       $roles
@@ -55,19 +42,8 @@ use Spatie\Permission\Models\Permission as SpatiePermission;
  * @method static Builder<static>|Permission whereUpdatedBy($value)
  * @method static Builder<static>|Permission withoutPermission($permissions)
  * @method static Builder<static>|Permission withoutRole($roles, $guard = null)
-<<<<<<< HEAD
- * @method static static firstOrCreate(array $attributes, array $values = [])
- * @method static static updateOrCreate(array $attributes, array $values = [])
- *
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $deleter
- * @property ProfileContract|null $updater
- *
- * @method static \Modules\User\Database\Factories\PermissionFactory factory($count = null, $state = [])
-=======
  * @method static static                     firstOrCreate(array $attributes, array $values = [])
  * @method static static                     updateOrCreate(array $attributes, array $values = [])
->>>>>>> 06ccbd93 (.)
  *
  * @mixin \Eloquent
  */
@@ -77,15 +53,10 @@ class Permission extends SpatiePermission
     use RelationX;
     use Updater;
 
-<<<<<<< HEAD
-    protected $connection = 'user';
-
-=======
     /** @var string */
     protected $connection = 'user';
 
     /** @var string */
->>>>>>> 06ccbd93 (.)
     protected $table = 'permissions';
 
     /** @var list<string> */
@@ -98,3 +69,4 @@ class Permission extends SpatiePermission
         'updated_by',
     ];
 }
+

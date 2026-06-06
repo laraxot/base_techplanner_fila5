@@ -9,12 +9,8 @@ use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
-<<<<<<< HEAD
-use Modules\Xot\Traits\EnumTrait;
-=======
 use Modules\Xot\Filament\Traits\TransTrait;
 use Filament\Forms\Form;
->>>>>>> 06ccbd93 (.)
 
 /**
  * Enum per i campi standard di indirizzo.
@@ -227,3 +223,4 @@ enum AddressItemEnum: string implements HasColor, HasIcon, HasLabel
         }
     }
 }
+

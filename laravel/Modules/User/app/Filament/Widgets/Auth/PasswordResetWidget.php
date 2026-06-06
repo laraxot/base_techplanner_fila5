@@ -4,22 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
-<<<<<<< HEAD
-=======
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TextInput;
->>>>>>> 06ccbd93 (.)
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Session;
-<<<<<<< HEAD
-use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
-use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
-=======
 use Illuminate\Support\HtmlString;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
->>>>>>> 06ccbd93 (.)
 
 /**
  * Password Reset Widget .
@@ -36,11 +28,7 @@ class PasswordResetWidget extends XotBaseWidget
     public bool $emailSent = false;
 
     /**
-<<<<<<< HEAD
-     * @return class-string<UserForm>
-=======
      * @phpstan-ignore-next-line
->>>>>>> 06ccbd93 (.)
      */
     protected string $view = 'pub_theme::filament.widgets.auth.password.reset';
 
@@ -88,11 +76,7 @@ class PasswordResetWidget extends XotBaseWidget
             'email' => $data['email'],
         ]);
 
-<<<<<<< HEAD
-        if ($response === Password::RESET_LINK_SENT) {
-=======
         if (Password::RESET_LINK_SENT === $response) {
->>>>>>> 06ccbd93 (.)
             $this->emailSent = true;
 
             Notification::make()
@@ -102,10 +86,7 @@ class PasswordResetWidget extends XotBaseWidget
                 ->duration(10000)
                 ->send();
 
-<<<<<<< HEAD
-=======
             // Clear the form
->>>>>>> 06ccbd93 (.)
             $this->form->fill();
         } else {
             Session::flash('error', trans('user::errors.'.$response.'.label'));
@@ -115,10 +96,6 @@ class PasswordResetWidget extends XotBaseWidget
                 ->danger()
                 ->send();
         }
-<<<<<<< HEAD
-    }
-
-=======
 
         /*} catch (\Exception $e) {
          * Notification::make()
@@ -133,27 +110,16 @@ class PasswordResetWidget extends XotBaseWidget
     /**
      * Reset the widget state to show form again.
      */
->>>>>>> 06ccbd93 (.)
     public function resetForm(): void
     {
         $this->emailSent = false;
         $this->form->fill();
     }
 
-<<<<<<< HEAD
-    public function sendAnotherLink(): void
-    {
-        $this->emailSent = false;
-        $this->form->fill(['email' => '']);
-    }
-
-    public function checkEmailStatus(): void
-=======
     /**
      * Send another reset link.
      */
     public function sendAnotherLink(): void
->>>>>>> 06ccbd93 (.)
     {
         $this->emailSent = false;
         $this->form->fill(['email' => '']);
@@ -168,3 +134,4 @@ class PasswordResetWidget extends XotBaseWidget
         $this->redirect(route('login'));
     }
 }
+

@@ -23,20 +23,12 @@ use Webmozart\Assert\Assert;
  * - Determina dinamicamente la risorsa, il modello e l'action da eseguire
  * - Delega la logica di salvataggio a una UpdateAction specifica del modulo
  *
-<<<<<<< HEAD
- * @property string $type
- * @property string $resource
- * @property string $model
- * @property string $action
- * @property Model $record
-=======
  * @property string     $type
  * @property string     $resource
  * @property string     $model
  * @property string     $action
  * @property Model      $record
  * @property array|null $data
->>>>>>> 06ccbd93 (.)
  */
 class EditUserWidget extends XotBaseWidget
 {
@@ -75,19 +67,13 @@ class EditUserWidget extends XotBaseWidget
             ->toString();
 
         $record = $this->getFormModel($userId);
-<<<<<<< HEAD
         $this->record = $record;
-=======
->>>>>>> 06ccbd93 (.)
         $data = $this->getFormFill();
 
         $this->form->fill($data);
         $this->form->model($record);
         $this->data = $data;
-<<<<<<< HEAD
-=======
         $this->record = $record;
->>>>>>> 06ccbd93 (.)
     }
 
     /**
@@ -122,10 +108,7 @@ class EditUserWidget extends XotBaseWidget
         // Se è un nuovo modello, restituisci solo i campi fillable con valori null
         $fillable = $model->getFillable();
         $appends = $model->getAppends();
-<<<<<<< HEAD
         /** @var array<int, string> $fields */
-=======
->>>>>>> 06ccbd93 (.)
         $fields = array_merge($fillable, $appends);
 
         /** @var array<string, mixed> $result */
@@ -144,15 +127,10 @@ class EditUserWidget extends XotBaseWidget
         $schema = $this->resource::getFormSchemaWidget();
         Assert::isArray($schema, 'Schema must be array');
 
-<<<<<<< HEAD
-        /* @var array<int|string, Component> $result */
-        return self::normalizeFormSchema($schema);
-=======
         /** @var array<int|string, Component> $result */
         $result = $schema;
 
         return $result;
->>>>>>> 06ccbd93 (.)
     }
 
     /**
@@ -164,15 +142,12 @@ class EditUserWidget extends XotBaseWidget
     {
         $data = $this->form->getState();
         $record = $this->record;
-<<<<<<< HEAD
         $actionInstance = app($this->action);
         if (! is_object($actionInstance) || ! method_exists($actionInstance, 'execute')) {
             throw new \RuntimeException(sprintf('Update action [%s] must expose execute().', $this->action));
         }
 
         \call_user_func([$actionInstance, 'execute'], $record, $data);
-=======
->>>>>>> 06ccbd93 (.)
 
         return redirect()->back();
     }
@@ -232,3 +207,4 @@ class EditUserWidget extends XotBaseWidget
         return $user;
     }
 }
+

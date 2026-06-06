@@ -9,10 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Exports\CollectionExport;
-<<<<<<< HEAD
 use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
-=======
->>>>>>> 06ccbd93 (.)
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
@@ -88,11 +85,7 @@ class ExportXlsByCollection
     protected function writeHeader(Worksheet $sheet, array $fields): void
     {
         foreach ($fields as $col => $field) {
-<<<<<<< HEAD
-            $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).'1', $field);
-=======
             $sheet->setCellValueByColumnAndRow($col + 1, 1, $field);
->>>>>>> 06ccbd93 (.)
         }
     }
 
@@ -109,11 +102,7 @@ class ExportXlsByCollection
         foreach ($rows as $data) {
             foreach ($fields as $col => $field) {
                 $value = $this->extractValue($data, $field);
-<<<<<<< HEAD
-                $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).(string) $row, $value);
-=======
                 $sheet->setCellValueByColumnAndRow($col + 1, $row, $value);
->>>>>>> 06ccbd93 (.)
             }
             $row++;
         }
@@ -143,3 +132,4 @@ class ExportXlsByCollection
         return Collection::make($eloquentCollection->toArray());
     }
 }
+

@@ -19,11 +19,8 @@ class AssignTenantCommand extends Command
 
     /**
      * The console command description.
-<<<<<<< HEAD
-=======
      *
      * @var string
->>>>>>> 06ccbd93 (.)
      */
     protected $description = 'Assign a tenant to user';
 
@@ -78,3 +75,4 @@ class AssignTenantCommand extends Command
     //    ];
     // }
 }
+

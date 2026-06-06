@@ -22,11 +22,8 @@ class SetCurrentTeamCommand extends Command
 
     /**
      * The console command description.
-<<<<<<< HEAD
-=======
      *
      * @var string
->>>>>>> 06ccbd93 (.)
      */
     protected $description = 'Assign current team to user';
 
@@ -99,3 +96,4 @@ class SetCurrentTeamCommand extends Command
     //    ];
     // }
 }
+

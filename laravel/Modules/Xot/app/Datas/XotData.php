@@ -16,10 +16,7 @@ use Modules\User\Contracts\TeamContract;
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
-<<<<<<< HEAD
-=======
 use RuntimeException;
->>>>>>> 06ccbd93 (.)
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
@@ -124,22 +121,8 @@ class XotData extends Data implements Wireable
         );
         Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
 
-<<<<<<< HEAD
-        /* @var class-string<Model&UserContract> $class */
         return $class;
     }
-
-    public function getUserByEmail(string $email): UserContract
-    {
-        $user_class = $this->getUserClass();
-        $userInstance = new $user_class();
-        if (! in_array('email', $userInstance->getFillable(), true)) {
-            throw new \Exception("Attribute 'email' not found in model ".$userInstance::class);
-        }
-=======
-        return $class;
-    }
->>>>>>> 06ccbd93 (.)
 
     public function getUserByEmail(string $email): UserContract
     {
@@ -148,16 +131,12 @@ class XotData extends Data implements Wireable
         if (! in_array('email', $userInstance->getFillable(), true)) {
             throw new Exception("Attribute 'email' not found in model ".$userInstance::class);
         }
-<<<<<<< HEAD
-
-=======
         $user = $user_class::firstOrCreate(['email' => $email]);
         /*
          * if (! $user) {
          * throw new \Exception('user not found for email '.$email);
          * }
          */
->>>>>>> 06ccbd93 (.)
         Assert::implementsInterface($user, UserContract::class, '['.__LINE__.']['.class_basename($this).']');
 
         return $user;
@@ -190,12 +169,9 @@ class XotData extends Data implements Wireable
             TeamContract::class,
             '['.$this->team_class.']['.__LINE__.']['.class_basename($this).']',
         );
-<<<<<<< HEAD
 
         /** @var class-string<Model&TeamContract> $teamClass */
         $teamClass = $this->team_class;
-=======
->>>>>>> 06ccbd93 (.)
 
         return $this->team_class;
     }
@@ -224,14 +200,7 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$this->tenant_class.']',
         );
 
-<<<<<<< HEAD
-        /** @var class-string<Model&TenantContract> $tenantClass */
-        $tenantClass = $this->tenant_class;
-
-        return $tenantClass;
-=======
         return $this->tenant_class;
->>>>>>> 06ccbd93 (.)
     }
 
     /**
@@ -280,11 +249,7 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
-<<<<<<< HEAD
-        /* @var class-string<Model&ProfileContract> $class */
-=======
         /** @var class-string<Model&ProfileContract> */
->>>>>>> 06ccbd93 (.)
         return $class;
     }
 
@@ -432,10 +397,7 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
-<<<<<<< HEAD
         /* @var class-string<Model&UserContract> $class */
-=======
->>>>>>> 06ccbd93 (.)
         return $class;
     }
 
@@ -452,11 +414,7 @@ class XotData extends Data implements Wireable
             ->append('Resource')
             ->toString();
 
-<<<<<<< HEAD
-        // If missing, fallback (still PSR-4: NEVER put literal "app\" in the PHP namespace segment)
-=======
         // If the class doesn't exist, try the alternative path (app/Filament/Resources)
->>>>>>> 06ccbd93 (.)
         if (! class_exists($resourceClass)) {
             $resourceClass =
                 'Modules\\'.$moduleName.'\\app\\Filament\\Resources\\'.class_basename($class).'Resource';
@@ -550,3 +508,4 @@ class XotData extends Data implements Wireable
         return true;
     }
 }
+

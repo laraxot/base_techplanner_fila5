@@ -62,27 +62,11 @@ abstract class XotBaseListRecords extends FilamentListRecords
     /**
      * Get the header actions.
      *
-<<<<<<< HEAD
-     * @return array<string, Action|ActionGroup>
-     */
-    protected function getHeaderActions(): array
-    {
-        return [
-            'create' => CreateAction::make()->icon('heroicon-o-plus'),
-        ];
-    }
-
-    /**
-     * Paginate the table query.
-     */
-    protected function paginateTableQueryOLD(Builder $query): Paginator
-=======
      * @return array<string, Action|\Filament\Actions\ActionGroup>
      *
      * @phpstan-ignore method.childReturnType
      */
     protected function getHeaderActions(): array
->>>>>>> 06ccbd93 (.)
     {
         return [
             'create' => \Filament\Actions\CreateAction::make()->icon('heroicon-o-plus'),
@@ -113,3 +97,4 @@ abstract class XotBaseListRecords extends FilamentListRecords
         return $paginator;
     }
 }
+

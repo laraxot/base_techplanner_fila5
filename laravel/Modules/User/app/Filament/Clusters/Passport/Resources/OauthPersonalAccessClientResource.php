@@ -108,11 +108,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Get the table actions for the resource.
      *
-<<<<<<< HEAD
-     * @return array<string, Action>
-=======
      * @return array<string, \Filament\Actions\Action>
->>>>>>> 06ccbd93 (.)
      */
     public static function getTableActions(): array
     {
@@ -125,11 +121,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Get the table bulk actions for the resource.
      *
-<<<<<<< HEAD
-     * @return array<string, Action|ActionGroup>
-=======
      * @return array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
->>>>>>> 06ccbd93 (.)
      */
     public static function getTableBulkActions(): array
     {
@@ -141,11 +133,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     }
 
     /**
-<<<<<<< HEAD
-     * @return array<string, PageRegistration>
-=======
      * @return array<string, \Filament\Resources\Pages\PageRegistration>
->>>>>>> 06ccbd93 (.)
      */
     #[\Override]
     public static function getPages(): array
@@ -166,3 +154,4 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
         return parent::getEloquentQuery()->with(['client']);
     }
 }
+

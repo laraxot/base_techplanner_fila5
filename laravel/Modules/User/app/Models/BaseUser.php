@@ -145,10 +145,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     use Traits\HasTenants;
     use XotTraits\RelationX;
 
-<<<<<<< HEAD
-=======
     /** @var bool */
->>>>>>> 06ccbd93 (.)
     public $incrementing = false;
 
     /** @var Pivot|null */
@@ -163,15 +160,10 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /** @var string */
     protected $keyType = 'string';
 
-<<<<<<< HEAD
-    protected string $childColumn = 'type';
-
-=======
     /** @var string */
     protected $childColumn = 'type';
 
     /** @var list<string> */
->>>>>>> 06ccbd93 (.)
     protected $fillable = [
         'id',
         // 'ente',
@@ -212,25 +204,17 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /** @var array<string, class-string> */
     protected $childTypes = [];
 
-<<<<<<< HEAD
-=======
     /** @var array<string, mixed> */
->>>>>>> 06ccbd93 (.)
     protected $attributes = [
         'is_active' => true,
     ];
 
     /**
      * Guard coerente con Spatie/Permission: deve essere 'web'.
-<<<<<<< HEAD
-     */
-    protected string $guard_name = 'web';
-=======
      *
      * @var string
      */
     protected $guard_name = 'web';
->>>>>>> 06ccbd93 (.)
 
     public function __construct(array $attributes = [])
     {
@@ -342,28 +326,20 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
 
     public function detach(Model $model): void
     {
-<<<<<<< HEAD
-        $this->teams()->detach($model);
-=======
         // @phpstan-ignore function.alreadyNarrowedType
         if (method_exists($this, 'teams')) {
             // @phpstan-ignore function.alreadyNarrowedType
             $this->teams()->detach($model);
         }
->>>>>>> 06ccbd93 (.)
     }
 
     public function attach(Model $model): void
     {
-<<<<<<< HEAD
-        $this->teams()->attach($model);
-=======
         // @phpstan-ignore function.alreadyNarrowedType
         if (method_exists($this, 'teams')) {
             // @phpstan-ignore function.alreadyNarrowedType
             $this->teams()->attach($model);
         }
->>>>>>> 06ccbd93 (.)
     }
 
     public function treeLabel(): string
@@ -411,11 +387,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /**
      * Get the entity's notifications.
      *
-<<<<<<< HEAD
-     * @return MorphMany<Notification, $this>
-=======
      * @return MorphMany<Notification, static|$this>
->>>>>>> 06ccbd93 (.)
      */
     public function notifications(): MorphMany
     {
@@ -426,11 +398,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /**
      * Get the user's latest authentication log.
      *
-<<<<<<< HEAD
-     * @return MorphOne<AuthenticationLog, $this>
-=======
      * @return MorphOne<AuthenticationLog, static>
->>>>>>> 06ccbd93 (.)
      */
     public function latestAuthentication(): MorphOne
     {
@@ -534,7 +502,6 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return $this->morphMany(OauthClient::class, 'owner');
     }
 
-<<<<<<< HEAD
     /**
      * Find the user instance for the given username.
      */
@@ -551,8 +518,6 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return Hash::check($password, (string) $this->password);
     }
 
-=======
->>>>>>> 06ccbd93 (.)
     /** @return array<string, string> */
     protected function casts(): array
     {
@@ -576,3 +541,4 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         ];
     }
 }
+

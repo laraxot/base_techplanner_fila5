@@ -43,15 +43,8 @@ class ArtisanService
         }
         switch ($act) {
             case 'migrate':
-<<<<<<< HEAD
-                $defaultConn = Config::get('database.default');
-                $purgeConn = \is_string($defaultConn) && $defaultConn !== '' ? $defaultConn : 'mysql';
-                DB::purge($purgeConn);
-                DB::reconnect($purgeConn);
-=======
                 DB::purge('mysql');
                 DB::reconnect('mysql');
->>>>>>> 06ccbd93 (.)
                 if ($module_name !== '') {
                     echo '<h3>Module '.$module_name.'</h3>';
 
@@ -308,3 +301,4 @@ class ArtisanService
          * }*/
     }
 }
+

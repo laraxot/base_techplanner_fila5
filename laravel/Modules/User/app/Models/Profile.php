@@ -6,10 +6,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-=======
->>>>>>> 06ccbd93 (.)
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
@@ -28,37 +25,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  *
  * Represents a user profile with relationships to devices, teams, and roles.
  *
-<<<<<<< HEAD
- * @property int $id
- * @property string $first_name
- * @property string $last_name
- * @property string $user_name
- * @property string $email
- * @property string|null $phone
- * @property string|null $bio
- * @property string|null $avatar
- * @property string|null $timezone
- * @property string|null $locale
- * @property array $preferences
- * @property string $status
- * @property SchemalessAttributes $extra
- * @property string $avatar
- * @property ProfileContract|null $creator
- * @property Collection<int, DeviceUser> $deviceUsers
- * @property int|null $device_users_count
- * @property ProfileTeam|DeviceProfile|null $pivot
- * @property Collection<int, Device> $devices
- * @property int|null $devices_count
- * @property string|null $first_name
- * @property string|null $full_name
- * @property string|null $last_name
- * @property MediaCollection<int, Media> $media
- * @property int|null $media_count
- * @property Collection<int, DeviceUser> $mobileDeviceUsers
- * @property int|null $mobile_device_users_count
- * @property Collection<int, Device> $mobileDevices
- * @property int|null $mobile_devices_count
-=======
  * @property int                                                       $id
  * @property string                                                    $first_name
  * @property string                                                    $last_name
@@ -88,7 +54,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property int|null                                                  $mobile_device_users_count
  * @property Collection<int, Device>                                   $mobileDevices
  * @property int|null                                                  $mobile_devices_count
->>>>>>> 06ccbd93 (.)
  * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
  * @property int|null                                                  $notifications_count
  * @property Collection<int, Permission>                               $permissions
@@ -112,15 +77,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  *
  * @mixin IdeHelperProfile
  *
-<<<<<<< HEAD
- * @property string|null $user_id
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property Carbon|null $deleted_at
- * @property string|null $deleted_by
-=======
  * @property string|null          $user_id
  * @property Carbon|null          $created_at
  * @property Carbon|null          $updated_at
@@ -128,7 +84,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property string|null          $created_by
  * @property Carbon|null          $deleted_at
  * @property string|null          $deleted_by
->>>>>>> 06ccbd93 (.)
  * @property ProfileContract|null $deleter
  *
  * @method static Builder<static>|Profile whereBio($value)
@@ -144,7 +99,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @method static Builder<static>|Profile whereUpdatedAt($value)
  * @method static Builder<static>|Profile whereUpdatedBy($value)
  * @method static Builder<static>|Profile whereUserId($value)
-<<<<<<< HEAD
  * @method static \Modules\User\Database\Factories\ProfileFactory factory($count = null, $state = [])
  *
  * @property string|null $post_type
@@ -232,8 +186,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @method static Builder<static>|Profile whereIsActive($value)
  * @method static Builder<static>|Profile whereType($value)
  * @method static Builder<static>|Profile whereUserName($value)
-=======
->>>>>>> 06ccbd93 (.)
  *
  * @mixin \Eloquent
  */
@@ -244,14 +196,11 @@ class Profile extends BaseProfile implements HasMedia
     use InteractsWithMedia;
 
     /**
-<<<<<<< HEAD
      * The table associated with the model.
      */
     protected $table = 'profiles';
 
     /**
-=======
->>>>>>> 06ccbd93 (.)
      * Get the teams that the profile belongs to.
      */
     public function teams(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
@@ -280,33 +229,10 @@ class Profile extends BaseProfile implements HasMedia
     }
 
     /**
-<<<<<<< HEAD
-     * Generate Schema.org ProfilePage/Person JSON-LD structured data.
-     *
-     * @see https://schema.org/Person
-     * @see https://schema.org/ProfilePage
-     *
-     * @return array<string, mixed>
-     */
-    public function toSchemaOrg(): array
-    {
-        return [
-            '@context' => 'https://schema.org',
-            '@type' => 'Person',
-            'name' => $this->full_name,
-            'givenName' => $this->first_name,
-            'familyName' => $this->last_name,
-            'email' => $this->email,
-            'description' => $this->bio,
-            'image' => $this->avatar ? asset($this->avatar) : null,
-            'url' => url('/profile/'.$this->user_name),
-        ];
-    }
-=======
      * The table associated with the model.
      *
      * @var string
      */
     protected $table = 'profiles';
->>>>>>> 06ccbd93 (.)
 }
+

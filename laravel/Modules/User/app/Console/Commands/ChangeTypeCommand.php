@@ -25,14 +25,11 @@ class ChangeTypeCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
      */
     protected $name = 'user:change-type';
 
     /**
      * The console command description.
-=======
->>>>>>> 06ccbd93 (.)
      */
     protected $name = 'user:change-type';
 
@@ -126,3 +123,4 @@ class ChangeTypeCommand extends Command
         $this->info("User type changed to '{$labelString}' for {$email}");
     }
 }
+

@@ -9,33 +9,24 @@ use Illuminate\Console\Command;
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
-<<<<<<< HEAD
-=======
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Symfony\Component\Console\Input\InputOption;
 
->>>>>>> 06ccbd93 (.)
 class AssignRoleCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
-=======
      *
      * @var string
->>>>>>> 06ccbd93 (.)
      */
     protected $name = 'user:assign-role';
 
     /**
      * The console command description.
-<<<<<<< HEAD
-=======
      *
      * @var string
->>>>>>> 06ccbd93 (.)
      */
     protected $description = 'Assign a module to user';
 
@@ -87,3 +78,4 @@ class AssignRoleCommand extends Command
     //    ];
     // }
 }
+

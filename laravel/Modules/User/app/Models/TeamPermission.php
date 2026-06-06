@@ -6,10 +6,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-<<<<<<< HEAD
 use Illuminate\Support\Carbon;
-=======
->>>>>>> 06ccbd93 (.)
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -17,17 +14,10 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * Represents a permission assigned to a user within a team context.
  *
-<<<<<<< HEAD
- * @property string $id
- * @property string $team_id
- * @property string $user_id
- * @property string $permission
-=======
  * @property string         $id
  * @property string         $team_id
  * @property string         $user_id
  * @property string         $permission
->>>>>>> 06ccbd93 (.)
  * @property \DateTime|null $created_at
  * @property \DateTime|null $updated_at
  * @property Team           $team
@@ -49,11 +39,8 @@ class TeamPermission extends BaseModel
 {
     /**
      * The database connection that should be used by the model.
-<<<<<<< HEAD
-=======
      *
      * @var string
->>>>>>> 06ccbd93 (.)
      */
     protected $connection = 'user';
 
@@ -84,3 +71,4 @@ class TeamPermission extends BaseModel
         return $this->belongsTo(User::class);
     }
 }
+

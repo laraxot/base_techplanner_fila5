@@ -15,14 +15,11 @@ class CreateTenantCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
      */
     protected $signature = 'user:tenant-create';
 
     /**
      * The console command description.
-=======
->>>>>>> 06ccbd93 (.)
      */
     protected $name = 'user:create-tenant';
 
@@ -65,3 +62,4 @@ class CreateTenantCommand extends Command
         }
     }
 }
+

@@ -51,10 +51,7 @@ class StateOverviewWidget extends XotBaseWidget
      *
      * @return array<int|string, Component>
      */
-<<<<<<< HEAD
-=======
     #[Override]
->>>>>>> 06ccbd93 (.)
     public function getFormSchema(): array
     {
         return [];
@@ -81,11 +78,7 @@ class StateOverviewWidget extends XotBaseWidget
             $this->cacheKey = $cacheKey;
 
             return $cacheKey;
-<<<<<<< HEAD
-        } catch (\Error $e) {
-=======
         } catch (Error $e) {
->>>>>>> 06ccbd93 (.)
             if ($this->cacheKey === '') {
                 $this->cacheKey = Str::uuid()->toString();
             }
@@ -167,3 +160,4 @@ class StateOverviewWidget extends XotBaseWidget
         return str_replace(['heroicon-o-', 'heroicon-s-'], '', $iconName);
     }
 }
+

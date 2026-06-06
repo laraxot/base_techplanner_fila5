@@ -4,55 +4,35 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
-<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
-=======
->>>>>>> 06ccbd93 (.)
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
-<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
-=======
->>>>>>> 06ccbd93 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\User\Actions\Passport\RevokeAllUserTokensAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport;
-<<<<<<< HEAD
-use Modules\User\Filament\Resources\UserResource;
-use Modules\User\Models\OauthAccessToken;
-use Modules\Xot\Filament\Resources\XotBaseResource;
-
-use function Safe\json_encode;
-
-class OauthAccessTokenResource extends XotBaseResource
-{
-    protected static ?string $cluster = Passport::class;
-
-    protected static ?string $model = OauthAccessToken::class;
-=======
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource\Pages\EditOauthAccessTokens;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource\Pages\ListOauthAccessTokens;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource\Pages\ViewOauthAccessToken;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\OauthAccessToken;
 use Modules\Xot\Filament\Resources\XotBaseResource;
->>>>>>> 06ccbd93 (.)
 
 use function Safe\json_encode;
 use Filament\Tables\Table;
@@ -72,11 +52,7 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->sortable()
                     ->copyable(),
 
-<<<<<<< HEAD
-                TextColumn::make('user.name')
-=======
                 \Filament\Tables\Columns\TextColumn::make('user.name')
->>>>>>> 06ccbd93 (.)
                     ->searchable()
                     ->sortable()
                     ->url(function (mixed $record): ?string {
@@ -84,11 +60,7 @@ class OauthAccessTokenResource extends XotBaseResource
                             return null;
                         }
                         $user = $record->user;
-<<<<<<< HEAD
-                        if ($user !== null && method_exists($user, 'exists') && $user->exists) {
-=======
                         if (null !== $user && method_exists($user, 'exists') && $user->exists) {
->>>>>>> 06ccbd93 (.)
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -96,11 +68,7 @@ class OauthAccessTokenResource extends XotBaseResource
                     })
                     ->openUrlInNewTab(),
 
-<<<<<<< HEAD
-                TextColumn::make('client.name')
-=======
                 \Filament\Tables\Columns\TextColumn::make('client.name')
->>>>>>> 06ccbd93 (.)
                     ->searchable()
                     ->sortable(),
 
@@ -122,11 +90,7 @@ class OauthAccessTokenResource extends XotBaseResource
                         return is_string($state) ? $state : null;
                     }),
 
-<<<<<<< HEAD
-                IconColumn::make('revoked')
-=======
                 \Filament\Tables\Columns\IconColumn::make('revoked')
->>>>>>> 06ccbd93 (.)
                     ->boolean()
                     ->color(fn (bool $state): string => $state ? 'danger' : 'success'),
 
@@ -151,11 +115,7 @@ class OauthAccessTokenResource extends XotBaseResource
                     }),
             ])
             ->filters([
-<<<<<<< HEAD
-                Filter::make('revoked')
-=======
                 \Filament\Tables\Filters\Filter::make('revoked')
->>>>>>> 06ccbd93 (.)
                     ->query(fn (Builder $query) => $query->where('revoked', true)),
 
                 \Filament\Tables\Filters\Filter::make('expired')
@@ -180,11 +140,7 @@ class OauthAccessTokenResource extends XotBaseResource
                         }
                     })
                     ->visible(fn (mixed $record) => $record instanceof OauthAccessToken && ! $record->revoked),
-<<<<<<< HEAD
-                DeleteAction::make(),
-=======
                 \Filament\Actions\DeleteAction::make(),
->>>>>>> 06ccbd93 (.)
             ])
             ->bulkActions([
                 \Filament\Actions\BulkAction::make('revoke_all_for_user')
@@ -204,21 +160,13 @@ class OauthAccessTokenResource extends XotBaseResource
                             ->success()
                             ->send();
                     }),
-<<<<<<< HEAD
-                DeleteBulkAction::make(),
-=======
                 \Filament\Actions\DeleteBulkAction::make(),
->>>>>>> 06ccbd93 (.)
             ])
             ->defaultSort('created_at', 'desc');
     }
 
     /**
-<<<<<<< HEAD
-     * @return array<string, Column>
-=======
      * @return array<string, \Filament\Resources\Pages\PageRegistration>
->>>>>>> 06ccbd93 (.)
      */
     #[\Override]
     public static function getPages(): array
@@ -265,3 +213,4 @@ class OauthAccessTokenResource extends XotBaseResource
         return parent::getEloquentQuery()->with(['user', 'client']);
     }
 }
+

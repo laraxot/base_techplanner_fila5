@@ -50,21 +50,14 @@ trait IsProfileTrait
     /**
      * Relazione con l'utente a cui appartiene il profilo.
      *
-<<<<<<< HEAD
-     * @return BelongsTo<Model&UserContract, $this>
-=======
      * @return BelongsTo<Model&UserContract, static>
->>>>>>> 06ccbd93 (.)
      */
     public function user(): BelongsTo
     {
         /** @var class-string<Model&UserContract> $userClass */
         $userClass = XotData::make()->getUserClass();
 
-<<<<<<< HEAD
-=======
         // @phpstan-ignore return.type
->>>>>>> 06ccbd93 (.)
         return $this->belongsTo($userClass);
     }
 
@@ -72,90 +65,54 @@ trait IsProfileTrait
      * Ottiene il nome completo dell'utente.
      * Utilizza prima i dati del profilo, altrimenti ricade sul nome dell'utente.
      *
-<<<<<<< HEAD
-     * @param  string|null  $value  Il valore attuale dell'attributo
-=======
      * @param string|null $value Il valore attuale dell'attributo
      *
->>>>>>> 06ccbd93 (.)
      * @return string|null Il nome completo dell'utente
      */
     public function getFullNameAttribute(?string $value): ?string
     {
-<<<<<<< HEAD
-        if ($value !== null) {
-=======
         if (null !== $value) {
->>>>>>> 06ccbd93 (.)
             return $value;
         }
 
         $user = $this->user;
-<<<<<<< HEAD
-        if ($user === null) {
-=======
         if (null === $user) {
->>>>>>> 06ccbd93 (.)
             return null;
         }
         Assert::isInstanceOf($user, User::class);
 
         $res = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
-<<<<<<< HEAD
-        if ($res !== '') {
-=======
         if ('' !== $res) {
->>>>>>> 06ccbd93 (.)
             return $res;
         }
 
         $userName = $user->getAttribute('name');
 
-<<<<<<< HEAD
-        return \is_string($userName) && $userName !== '' ? $userName : null;
-=======
         return \is_string($userName) && '' !== $userName ? $userName : null;
->>>>>>> 06ccbd93 (.)
     }
 
     /**
      * Ottiene il nome dell'utente.
      * Se non presente nel profilo, lo recupera dall'utente collegato.
      *
-<<<<<<< HEAD
-     * @param  string|null  $value  Il valore attuale dell'attributo
-=======
      * @param string|null $value Il valore attuale dell'attributo
      *
->>>>>>> 06ccbd93 (.)
      * @return string|null Il nome dell'utente
      */
     public function getFirstNameAttribute(?string $value): ?string
     {
-<<<<<<< HEAD
-        if ($value !== null) {
-=======
         if (null !== $value) {
->>>>>>> 06ccbd93 (.)
             return $value;
         }
 
         $user = $this->user;
-<<<<<<< HEAD
-        if ($user === null) {
-=======
         if (null === $user) {
->>>>>>> 06ccbd93 (.)
             return null;
         }
         Assert::isInstanceOf($user, User::class);
 
         $firstName = $user->getAttribute('first_name');
-<<<<<<< HEAD
-        if (! \is_string($firstName) || $firstName === '') {
-=======
         if (! \is_string($firstName) || '' === $firstName) {
->>>>>>> 06ccbd93 (.)
             return null;
         }
 
@@ -168,40 +125,24 @@ trait IsProfileTrait
      * Ottiene il cognome dell'utente.
      * Se non presente nel profilo, lo recupera dall'utente collegato.
      *
-<<<<<<< HEAD
-     * @param  string|null  $value  Il valore attuale dell'attributo
-=======
      * @param string|null $value Il valore attuale dell'attributo
      *
->>>>>>> 06ccbd93 (.)
      * @return string|null Il cognome dell'utente
      */
     public function getLastNameAttribute(?string $value): ?string
     {
-<<<<<<< HEAD
-        if ($value !== null) {
-=======
         if (null !== $value) {
->>>>>>> 06ccbd93 (.)
             return $value;
         }
 
         $user = $this->user;
-<<<<<<< HEAD
-        if ($user === null) {
-=======
         if (null === $user) {
->>>>>>> 06ccbd93 (.)
             return null;
         }
         Assert::isInstanceOf($user, User::class);
 
         $lastName = $user->getAttribute('last_name');
-<<<<<<< HEAD
-        if (! \is_string($lastName) || $lastName === '') {
-=======
         if (! \is_string($lastName) || '' === $lastName) {
->>>>>>> 06ccbd93 (.)
             return null;
         }
 
@@ -217,11 +158,7 @@ trait IsProfileTrait
      */
     public function isSuperAdmin(): bool
     {
-<<<<<<< HEAD
-        if ($this->user === null) {
-=======
         if (null === $this->user) {
->>>>>>> 06ccbd93 (.)
             return false;
         }
 
@@ -235,11 +172,7 @@ trait IsProfileTrait
      */
     public function isNegateSuperAdmin(): bool
     {
-<<<<<<< HEAD
-        if ($this->user === null) {
-=======
         if (null === $this->user) {
->>>>>>> 06ccbd93 (.)
             return false;
         }
 
@@ -256,11 +189,7 @@ trait IsProfileTrait
     public function toggleSuperAdmin(): void
     {
         $user = $this->user;
-<<<<<<< HEAD
-        if ($user === null) {
-=======
         if (null === $user) {
->>>>>>> 06ccbd93 (.)
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
         Assert::isInstanceOf($user, User::class);
@@ -292,11 +221,7 @@ trait IsProfileTrait
     /**
      * Relazione con i dispositivi mobili associati al profilo.
      *
-<<<<<<< HEAD
-     * @return BelongsToMany<Device, $this>
-=======
      * @return BelongsToMany<Device, static>
->>>>>>> 06ccbd93 (.)
      */
     public function mobileDevices(): BelongsToMany
     {
@@ -307,11 +232,7 @@ trait IsProfileTrait
     /**
      * Relazione con tutti i dispositivi associati al profilo.
      *
-<<<<<<< HEAD
-     * @return BelongsToMany<Device, $this>
-=======
      * @return BelongsToMany<Device, static>
->>>>>>> 06ccbd93 (.)
      */
     public function devices(): BelongsToMany
     {
@@ -321,11 +242,7 @@ trait IsProfileTrait
     /**
      * Relazione con gli utenti di dispositivi mobili.
      *
-<<<<<<< HEAD
-     * @return HasMany<DeviceUser, $this>
-=======
      * @return HasMany<DeviceUser, static>
->>>>>>> 06ccbd93 (.)
      */
     public function mobileDeviceUsers(): HasMany
     {
@@ -336,11 +253,7 @@ trait IsProfileTrait
     /**
      * Relazione con gli utenti di dispositivi generici.
      *
-<<<<<<< HEAD
-     * @return HasMany<DeviceUser, $this>
-=======
      * @return HasMany<DeviceUser, static>
->>>>>>> 06ccbd93 (.)
      */
     public function deviceUsers(): HasMany
     {
@@ -357,11 +270,7 @@ trait IsProfileTrait
     {
         $tokens = $this->mobileDeviceUsers()
             ->pluck('token')
-<<<<<<< HEAD
-            ->filter(static fn (mixed $value): bool => is_string($value) && $value !== '')
-=======
             ->filter(static fn (mixed $value): bool => is_string($value) && '' !== $value)
->>>>>>> 06ccbd93 (.)
             ->map(static fn (mixed $value): string => (string) $value);
 
         /* @var Collection<int|string, non-empty-string> $tokens */
@@ -377,22 +286,14 @@ trait IsProfileTrait
         return Attribute::make(
             get: function (): ?string {
                 $user = $this->user;
-<<<<<<< HEAD
-                if ($user === null) {
-=======
                 if (null === $user) {
->>>>>>> 06ccbd93 (.)
                     return null;
                 }
                 Assert::isInstanceOf($user, User::class);
 
                 $name = $user->getAttribute('name');
 
-<<<<<<< HEAD
-                return \is_string($name) && $name !== '' ? $name : null;
-=======
                 return \is_string($name) && '' !== $name ? $name : null;
->>>>>>> 06ccbd93 (.)
             }
         );
     }
@@ -408,3 +309,4 @@ trait IsProfileTrait
         });
     }
 }
+

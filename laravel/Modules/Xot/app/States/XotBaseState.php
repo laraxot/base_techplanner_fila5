@@ -10,11 +10,8 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Modules\Xot\Contracts\StateContract;
 use Modules\Xot\Filament\Traits\TransTrait;
-<<<<<<< HEAD
-=======
 use Override;
 use Spatie\ModelStates\State;
->>>>>>> 06ccbd93 (.)
 
 /**
  * Abstract base class for appointment state management.
@@ -33,17 +30,11 @@ abstract class XotBaseState extends State implements StateContract
 
     public static function getName(): string
     {
-<<<<<<< HEAD
-        return static::$name ?? Str::of(class_basename(static::class))->snake()->toString();
-    }
-
-=======
         /* @phpstan-ignore-next-line */
         return static::$name ?? Str::of(class_basename(static::class))->snake()->toString();
     }
 
     #[Override]
->>>>>>> 06ccbd93 (.)
     public function label(): string
     {
         return static::transClass(static::class, 'states.'.static::getName().'.label');
@@ -51,10 +42,7 @@ abstract class XotBaseState extends State implements StateContract
         // return 'Annullato';
     }
 
-<<<<<<< HEAD
-=======
     #[Override]
->>>>>>> 06ccbd93 (.)
     public function color(): string
     {
         return static::transClass(static::class, 'states.'.static::getName().'.color');
@@ -68,19 +56,10 @@ abstract class XotBaseState extends State implements StateContract
         // return 'info';
     }
 
-<<<<<<< HEAD
-    public function icon(): string
-    {
-        return static::transClass(static::class, 'states.'.static::getName().'.icon');
-
-        // return 'heroicon-o-x-circle';
-    }
-=======
     #[Override]
     public function icon(): string
     {
         return static::transClass(static::class, 'states.'.static::getName().'.icon');
->>>>>>> 06ccbd93 (.)
 
         // return 'heroicon-o-x-circle';
     }
@@ -93,21 +72,10 @@ abstract class XotBaseState extends State implements StateContract
         // return 'Annulla Appuntamento';
     }
 
-<<<<<<< HEAD
-    public function modalDescription(): string
-    {
-        // $appointment non utilizzata - rimossa
-
-        return static::transClass(static::class, 'states.'.static::getName().'.modal_description');
-
-        // return 'Sei sicuro di voler annullare questo appuntamento?';
-    }
-=======
     #[Override]
     public function modalDescription(): string
     {
         // $appointment non utilizzata - rimossa
->>>>>>> 06ccbd93 (.)
 
         return static::transClass(static::class, 'states.'.static::getName().'.modal_description');
 
@@ -139,10 +107,7 @@ abstract class XotBaseState extends State implements StateContract
      *
      * @return array<string, mixed>
      */
-<<<<<<< HEAD
-=======
     #[Override]
->>>>>>> 06ccbd93 (.)
     public function modalFillFormByRecord(Model $record): array
     {
         return [];
@@ -176,14 +141,9 @@ abstract class XotBaseState extends State implements StateContract
          *
          * $appointment?->state->transitionTo($stateClass,$message);
          */
-<<<<<<< HEAD
-        // Fallback safe-mode when model-states package is not available.
-        // Transition by generic arguments is intentionally a no-op.
-=======
         $record = $this->getModel();
         /* @phpstan-ignore-next-line */
         $record->state->transitionTo($stateClass, $message);
->>>>>>> 06ccbd93 (.)
     }
 
     /**
@@ -213,14 +173,8 @@ abstract class XotBaseState extends State implements StateContract
          *
          * $appointment?->state->transitionTo($stateClass,$message);
          */
-<<<<<<< HEAD
-        if (isset($record->state) && \is_object($record->state) && method_exists($record->state, 'transitionTo')) {
-            $record->state->transitionTo($stateClass, $message);
-        }
-=======
         /* @phpstan-ignore-next-line */
         $record->state->transitionTo($stateClass, $message);
->>>>>>> 06ccbd93 (.)
     }
 
     public function isMessageRequired(): bool
@@ -230,20 +184,7 @@ abstract class XotBaseState extends State implements StateContract
 
     public static function getOptions(): array
     {
-<<<<<<< HEAD
-        if (! method_exists(static::class, 'getStateMapping')) {
-            return [];
-        }
-
-        $mapping = static::getStateMapping();
-        if (! \is_object($mapping) || ! method_exists($mapping, 'toArray')) {
-            return [];
-        }
-        /** @var array<int|string, mixed> $states */
-        $states = $mapping->toArray();
-=======
         $states = static::getStateMapping()->toArray();
->>>>>>> 06ccbd93 (.)
 
         $states = Arr::map($states, fn ($_stateClass, $state) => static::transClass(
             static::class,
@@ -253,3 +194,4 @@ abstract class XotBaseState extends State implements StateContract
         return $states;
     }
 }
+

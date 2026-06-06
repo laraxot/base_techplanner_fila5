@@ -68,34 +68,8 @@ abstract class XotBaseMigration extends LaravelMigration
             ->replace('/', \DIRECTORY_SEPARATOR)
             ->toString();
 
-<<<<<<< HEAD
-        Assert::stringNotEmpty($modelClass);
-        Assert::classExists($modelClass);
-        Assert::subclassOf($modelClass, Model::class);
-
-        /* @var class-string<Model> $modelClass */
-        $this->model_class = $modelClass;
-
-        return $modelClass;
-    }
-
-    public function getTable(): string
-    {
-        return $this->model->getTable();
-    }
-
-    public function getConn(): Builder
-    {
-        $connectionName = $this->model->getConnectionName();
-        // 如果连接名是 'user' 但数据库不存在，使用默认连接
-        if ($connectionName === 'user' && ! DB::connection($connectionName)->getDatabaseName()) {
-            $default = config('database.default');
-            $connectionName = is_string($default) ? $default : 'mariadb';
-        }
-=======
         return $this->model_class;
     }
->>>>>>> 06ccbd93 (.)
 
     public function getTable(): string
     {
@@ -129,12 +103,7 @@ abstract class XotBaseMigration extends LaravelMigration
     /**
      * Get the table indexes using Doctrine's schema manager.
      *
-<<<<<<< HEAD
-     *
-     * @return array<Index>
-=======
      * @return array<\Doctrine\DBAL\Schema\Index>
->>>>>>> 06ccbd93 (.)
      *
      * @throws \Doctrine\DBAL\Exception
      */
@@ -424,22 +393,7 @@ abstract class XotBaseMigration extends LaravelMigration
         return DB::connection($this->getConnection())->getDriverName();
     }
 
-<<<<<<< HEAD
-    protected function isMysqlFamilyDriver(?string $driver = null): bool
-=======
     /**
-     * Determine if the migration should run.
-     * This method provides a hook for conditional migration execution.
-     * Returns true by default to maintain backward compatibility.
-     */
-    public function shouldRun(): bool
->>>>>>> 06ccbd93 (.)
-    {
-        return true;
-    }
-
-    /**
-<<<<<<< HEAD
      * Determine if the migration should run.
      * This method provides a hook for conditional migration execution.
      * Returns true by default to maintain backward compatibility.
@@ -450,16 +404,10 @@ abstract class XotBaseMigration extends LaravelMigration
     }
 
     /**
-     * Convert table id from UUID to bigint, adding uuid column.
-     * Use when migrating legacy installations with uuid primary keys.
-     *
-     * @param  \Closure(Blueprint): void  $createNewTableSchema  Schema for the new table (id bigint + uuid + data columns)
-=======
      * Convert table id from UUID to bigint, adding uuid column.
      * Use when migrating legacy installations with uuid primary keys.
      *
      * @param  Closure(Blueprint): void  $createNewTableSchema  Schema for the new table (id bigint + uuid + data columns)
->>>>>>> 06ccbd93 (.)
      * @param  list<string>  $dataColumns  Column names to copy (excluding id, uuid)
      * @param  array{pivot_table?: string, pivot_fk?: string, pivot_post_update?: Closure}  $options  Optional pivot table config
      */
@@ -513,11 +461,7 @@ abstract class XotBaseMigration extends LaravelMigration
     protected array $uuidToBigintIdMapping = [];
 
     /**
-<<<<<<< HEAD
-     * @param  \Closure(Blueprint): void  $createNewTableSchema
-=======
      * @param  Closure(Blueprint): void  $createNewTableSchema
->>>>>>> 06ccbd93 (.)
      * @param  list<string>  $dataColumns
      * @param  array{pivot_table?: string, pivot_fk?: string, pivot_post_update?: Closure}  $options
      */
@@ -534,11 +478,7 @@ abstract class XotBaseMigration extends LaravelMigration
                 $blueprint->uuid('uuid')->nullable()->after('id');
             }, $table);
             $conn->table($table)->update(['uuid' => DB::raw('id')]);
-<<<<<<< HEAD
-            if ($this->isMysqlFamilyDriver($conn->getDriverName())) {
-=======
             if ($conn->getDriverName() === 'mysql') {
->>>>>>> 06ccbd93 (.)
                 $conn->statement('ALTER TABLE '.$table.' MODIFY uuid CHAR(36) NOT NULL');
             }
         }
@@ -600,11 +540,7 @@ abstract class XotBaseMigration extends LaravelMigration
             }
         }
 
-<<<<<<< HEAD
-        if ($this->isMysqlFamilyDriver($conn->getDriverName())) {
-=======
         if ($conn->getDriverName() === 'mysql') {
->>>>>>> 06ccbd93 (.)
             $db = $conn->getDatabaseName();
             $constraint = $conn->selectOne(
                 "SELECT CONSTRAINT_NAME FROM information_schema.TABLE_CONSTRAINTS 
@@ -624,3 +560,4 @@ abstract class XotBaseMigration extends LaravelMigration
 }
 
 // end XotBaseMigration
+
