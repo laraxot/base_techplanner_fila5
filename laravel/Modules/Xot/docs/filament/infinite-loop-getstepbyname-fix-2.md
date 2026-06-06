@@ -113,110 +113,25 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 ## 🔗 **Collegamenti**
 
 ### **File Modificati**
-- [XotBaseResource.php](../../../Modules/Xot/app/Filament/Resources/XotBaseResource.php) - Fix principale
-- [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
+- [XotBaseResource.php](../../../Modules/Xot/app/Filament/Resources/XotBaseResource.php) — fix principale
 
 ### **Documentazione Correlata**
-- [Wizard Step Implementation](../../../modules/<nome progetto>/docs/wizard-step-implementation.md)
-- [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
-
-### **Documentazione Correlata**
-- [Wizard Step Implementation](../../../modules/<nome progetto>/docs/wizard-step-implementation.md)
-- [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
-
-### **Documentazione Correlata**
-- [Wizard Step Implementation](../../../modules/<nome progetto>/docs/wizard-step-implementation.md)
-- [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
-
-### **Documentazione Correlata**
-- [Wizard Step Implementation](../../../modules/<nome progetto>/docs/wizard-step-implementation.md)
-- [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
-
-### **Documentazione Correlata**
-- [Wizard Step Implementation](../../../modules/<nome progetto>/docs/wizard-step-implementation.md)
-- [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
-
-### **Documentazione Correlata**
-- [Wizard Step Implementation](../../../modules/<nome progetto>/docs/wizard-step-implementation.md)
-<<<<<<< HEAD
-========
-=======
-=======
->>>>>>> 5a2708f5 (.)
-- [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
-
-### **Documentazione Correlata**
-- [Wizard Step Implementation](../../../modules/<nome progetto>/docs/wizard-step-implementation.md)
 - [Infinite Loop Prevention](../critical-fixes/infinite-loop-prevention.md)
-=======
-=======- [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
-
-### **Documentazione Correlata**
-- [Wizard Step Implementation](../../../modules/<nome progetto>/docs/wizard-step-implementation.md)
-=======- [Infinite Loop Prevention](../critical-fixes/infinite-loop-prevention.md)
+- [infinite-loop-getstepbyname-fix.md](./infinite-loop-getstepbyname-fix.md)
 
 ---
 
-**Priorità**: 🚨 **P0 - CRITICA**
-**Creato**: Gennaio 2025
-**Risolto**: Gennaio 2025
-**Impatto**: Blocco completo sistema registrazione dottori
-**Tempo risoluzione**: < 10 minuti dalla diagnosi
+**Priorità**: P0 — critica  
+**Creato**: Gennaio 2025  
+**Risolto**: Gennaio 2025  
+**Impatto**: blocco wizard step dinamici in Filament
 
-## 💡 **Lesson Learned**
+## Lesson learned
 
-Questo fix dimostra l'importanza di:
-1. **Syntax validation rigorosa** per chiamate dinamiche
-2. **Testing immediato** dopo modifiche wizard
-3. **Property existence checking** per codice robusto
-4. **Xdebug monitoring** per rilevazione loop infiniti
+1. Syntax validation rigorosa per chiamate dinamiche (`static::{$method}()`).
+2. Test immediato dopo modifiche wizard.
+3. Verifica esistenza proprietà prima di accesso statico.
+4. Monitoraggio Xdebug per loop infiniti.
 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
-<<<<<<< HEAD
-========
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-=======
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
-*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
->>>>>>> 5a2708f5 (.)
+Il fix rende `getStepByName()` resiliente a errori di sintassi che causavano ricorsione infinita.
+
