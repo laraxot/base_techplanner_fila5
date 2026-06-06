@@ -43,13 +43,33 @@ Utilizzo di namespace specifico del tema (`sixteen::`, `two::`, `zero::`) invece
 
 ## Architettura del Sistema
 
-### 1. Configurazione Tema Attivo
+### 1. Configurazione tema attivo (SSoT tenant)
+
+**Unica fonte runtime:** `config/local/techplanner/xra.php` letta da `XotData::make()` via `TenantService::getConfig('xra')`.
+
+**Non** usare `config/xot.php` o fallback hardcoded nel codice come verità del tema.
+
+| Tenant / prodotto | `pub_theme` canonico | Scopo |
+|-------------------|----------------------|--------|
+| **TechPlanner / Sottana** | **`Two`** | Sito marketing, Tailwind, replica marcosottana.it |
+| Fixcity / Design Comuni | `Sixteen` | Bootstrap Italia, header PA, mappe Geo |
+
 ```php
-// config/local/techplanner/xra.php
-'pub_theme' => 'Sixteen',  // Tema attualmente attivo
+// config/local/techplanner/xra.php — TechPlanner
+'pub_theme' => 'Two',
+'register_pub_theme' => true,
 ```
 
-### 2. Registrazione Namespace
+Verifica runtime:
+
+```bash
+cd laravel && php artisan tinker --execute="
+echo Modules\Xot\Datas\XotData::make()->pub_theme;
+echo PHP_EOL . Modules\Xot\Datas\XotData::make()->getPubThemeViewPath('pages');
+"
+```
+
+### 2. Registrazione namespace
 ```php
 // Themes/Sixteen/app/Providers/ThemeServiceProvider.php
 public function boot(): void
@@ -207,6 +227,11 @@ Ogni volta che si lavora con temi e CMS, consultare questa regola per garantire 
 
 ## Changelog Errori Risolti
 
+### 2026-06-06 — `/it` serviva Sixteen invece di Two
+**Causa**: override temporaneo `pub_theme => 'Sixteen'` in `xra.php` per fix partial `language-switcher` (esistono solo nel header Design Comuni di Sixteen). Confusione con doc BMAD §7 “Folio FO shell (Sixteen)” che descrive **pattern Fixcity**, non il tenant TechPlanner.
+**Soluzione**: ripristinare `'pub_theme' => 'Two'` in `xra.php`; allineare header CMS ai partial del tema Two; `php artisan config:clear && view:clear`.
+**Prevenzione**: non cambiare tema per workaround view — portare i partial mancanti nel tema canonico o adattare `header.json`.
+
 ### 2025-01-06 - Errore "view not found: pub_theme::components.blocks.navigation.simple"
 **Causa**: `CmsServiceProvider` non registrato in `config/app.php`
 **Impatto**: Namespace `pub_theme::` non risolto, blocchi CMS non funzionanti
@@ -223,6 +248,7 @@ Ogni volta che si lavora con temi e CMS, consultare questa regola per garantire 
 
 - [CMS System Documentation](./cms_system.md)
 - [Theme Components](./theme_components.md)
+- [Prevenzione push GH008 / LFS / merge artifacts](./git-lfs-push-gh008-prevention.md)
 - [Configurazione Tema](../laravel/config/local/techplanner/xra.php)
 - [ThemeServiceProvider Sixteen](../laravel/Themes/Sixteen/app/Providers/ThemeServiceProvider.php)
 - [CmsServiceProvider](../laravel/Modules/Cms/app/Providers/CmsServiceProvider.php)
