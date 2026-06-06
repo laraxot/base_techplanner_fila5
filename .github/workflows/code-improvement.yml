@@ -22,12 +22,12 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.2
+          php-version: 8.4
           tools: composer, php-cs-fixer, phpstan
 
       # Install dependencies
       - name: Install Composer Dependencies
-        run: composer install --prefer-dist --no-progress --no-suggest
+        run: composer install --prefer-dist --no-progress
 
       # Install Ollama CLI
       - name: Install Ollama CLI
@@ -45,7 +45,7 @@ jobs:
           ollama run codellama \
             --input "Analyze and improve the PHP code in the ./ directory.
             Make it robust, solid, strictly typed, add PHPDoc, integrate Spatie Laravel Data and QueableActions,
-            and follow modern PHP best practices. Ensure compatibility with PHP 8.2."
+            and follow modern PHP best practices. Ensure compatibility with PHP 8.4."
 
       # Run PHP-CS-Fixer for formatting
       #- name: Run PHP-CS-Fixer

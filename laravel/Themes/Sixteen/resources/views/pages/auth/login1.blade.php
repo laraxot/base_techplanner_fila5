@@ -110,13 +110,13 @@
                                 Hai problemi di accesso?
                             </p>
                             <div class="flex flex-col sm:flex-row gap-2 justify-center text-sm">
-                                <a href="{{ route('container0.detail', ['container0' => 'pages', 'slug0' => 'help']) }}" 
+                                <a href="{{ route('pages.view', ['slug' => 'help']) }}" 
                                    class="text-blue-600 hover:text-blue-800 underline font-medium">
                                     <i class="fas fa-question-circle mr-1" aria-hidden="true"></i>
                                     Guida all'accesso
                                 </a>
                                 <span class="hidden sm:inline text-gray-400">|</span>
-                                <a href="{{ route('container0.detail', ['container0' => 'pages', 'slug0' => 'contacts']) }}" 
+                                <a href="{{ route('pages.view', ['slug' => 'contacts']) }}" 
                                    class="text-blue-600 hover:text-blue-800 underline font-medium">
                                     <i class="fas fa-envelope mr-1" aria-hidden="true"></i>
                                     Assistenza tecnica
@@ -136,17 +136,17 @@
                             <strong>Accessibilità:</strong> Questo sito rispetta le linee guida WCAG 2.1 AA
                         </p>
                         <div class="flex flex-wrap gap-2 justify-center text-xs">
-                            <a href="{{ route('container0.detail', ['container0' => 'pages', 'slug0' => 'accessibility']) }}" 
+                            <a href="{{ route('pages.view', ['slug' => 'accessibility']) }}" 
                                class="text-blue-600 hover:text-blue-800 underline">
                                 Dichiarazione di accessibilità
                             </a>
                             <span class="text-blue-400">•</span>
-                            <a href="{{ route('container0.detail', ['container0' => 'pages', 'slug0' => 'privacy']) }}" 
+                            <a href="{{ route('pages.view', ['slug' => 'privacy']) }}" 
                                class="text-blue-600 hover:text-blue-800 underline">
                                 Privacy Policy
                             </a>
                             <span class="text-blue-400">•</span>
-                            <a href="{{ route('container0.detail', ['container0' => 'pages', 'slug0' => 'legal-notes']) }}" 
+                            <a href="{{ route('pages.view', ['slug' => 'legal-notes']) }}" 
                                class="text-blue-600 hover:text-blue-800 underline">
                                 Note legali
                             </a>
@@ -180,10 +180,10 @@
             :logoSrc="asset('themes/Sixteen/images/logo-white.svg')"
             :showLinks="true"
             :customLinks="[
-                ['title' => 'Privacy', 'url' => route('container0.detail', ['container0' => 'pages', 'slug0' => 'privacy'])],
-                ['title' => 'Note legali', 'url' => route('container0.detail', ['container0' => 'pages', 'slug0' => 'legal-notes'])],
-                ['title' => 'Dichiarazione di accessibilità', 'url' => route('container0.detail', ['container0' => 'pages', 'slug0' => 'accessibility'])],
-                ['title' => 'Mappa del sito', 'url' => route('container0.detail', ['container0' => 'pages', 'slug0' => 'sitemap'])]
+                ['title' => 'Privacy', 'url' => route('pages.view', ['slug' => 'privacy'])],
+                ['title' => 'Note legali', 'url' => route('pages.view', ['slug' => 'legal-notes'])],
+                ['title' => 'Dichiarazione di accessibilità', 'url' => route('pages.view', ['slug' => 'accessibility'])],
+                ['title' => 'Mappa del sito', 'url' => route('pages.view', ['slug' => 'sitemap'])]
             ]"
         />
     </x-slot>

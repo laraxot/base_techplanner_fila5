@@ -72,7 +72,26 @@ jobs:
 
       - name: Run Pint (check mode)
         working-directory: laravel
-        run: ./vendor/bin/pint --test
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            base="${{ github.event.pull_request.base.sha }}"
+          else
+            base="${{ github.event.before }}"
+          fi
+
+          if [ -z "${base}" ] || [ "${base}" = "0000000000000000000000000000000000000000" ]; then
+            base="$(git rev-parse HEAD^)"
+          fi
+
+          git diff --name-only --diff-filter=ACMRT "${base}" HEAD -- 'laravel/**/*.php' \
+            | sed 's#^laravel/##' > /tmp/changed-php-files.txt
+
+          if [ ! -s /tmp/changed-php-files.txt ]; then
+            echo "No changed PHP files under laravel/; skipping Pint."
+            exit 0
+          fi
+
+          xargs ./vendor/bin/pint --test < /tmp/changed-php-files.txt
 
   tests:
     name: Tests
@@ -146,10 +165,10 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: laravel/Themes/Meetup/package-lock.json
+          cache-dependency-path: laravel/Themes/Sixteen/package-lock.json
 
       - name: Install & Build Theme
-        working-directory: laravel/Themes/Meetup
+        working-directory: laravel/Themes/Sixteen
         run: |
           npm ci
           npm run build

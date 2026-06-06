@@ -1,13 +1,3 @@
-<?php
-
-declare(strict_types=1);
-
-use function Laravel\Folio\name;
-
-name('services.categories');
-
-?>
-
 {{--}}
 {{-- 4-3-lista-categorie-template --}}
 {{-- Design Comuni: pagina lista di secondo livello --}}

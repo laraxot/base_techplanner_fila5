@@ -6,7 +6,7 @@ return [
     'alert_accept' => 'Accetta tutti i cookie',
     'alert_essentials_only' => 'Accetta solo i cookie necessari',
     'alert_settings' => 'Modifica le tue preferenze',
-    'alert_text' => 'Scegliendo "Accetta tutti i cookie" accetti l\'use dei cookie per aiutarci a offrirti una migliore esperienza utente e per analizzare l\'utilizzo del sito web. Cliccando su "Modifica le tue preferenze" puoi scegliere quali cookie consentire. Solo i cookie essenziali sono necessari per il corretto funzionamento del nostro sito web e non possono essere rifiutati.',
+    'alert_text' => 'Scegliendo "Accetta tutti i cookie" accetti l\'uso dei cookie per aiutarci a offrirti una migliore esperienza utente e per analizzare l\'utilizzo del sito web. Cliccando su "Modifica le tue preferenze" puoi scegliere quali cookie consentire. Solo i cookie essenziali sono necessari per il corretto funzionamento del nostro sito web e non possono essere rifiutati.',
     'alert_title' => 'Questo sito web utilizza i cookie',
     'alert_essential_only' => 'Accetta solo i cookie necessari',
     'setting_analytics' => 'Cookie analitici',

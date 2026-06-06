@@ -49,6 +49,7 @@ Canon: [multi-agent-coordination-discipline.md](../wiki/how-to/multi-agent-coord
 | 2026-06-06 | [handoff-multi-agent-coordination.md](./handoff-multi-agent-coordination.md) | Regola docs/chat + GitHub multi-agente | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
 | 2026-06-06 | [handoff-artisan-migrate-2026-06-06.md](./handoff-artisan-migrate-2026-06-06.md) | migrate sqlite + user DB, fix Activity index + Media duplicato | [#21](https://github.com/laraxot/base_techplanner_fila5/issues/21) |
 | 2026-06-06 | [handoff-bmad-architecture-one-migration-per-model-2026-06-06.md](./handoff-bmad-architecture-one-migration-per-model-2026-06-06.md) | N modelli = N migrazioni create_* per modulo | [#23](https://github.com/laraxot/base_techplanner_fila5/issues/23) |
+| 2026-06-06 | [handoff-composer-go-2026-06-06.md](./handoff-composer-go-2026-06-06.md) | composer go + fix blocks.governance.cards | [#21](https://github.com/laraxot/base_techplanner_fila5/issues/21) |
 
 ## Sessioni archivio
 

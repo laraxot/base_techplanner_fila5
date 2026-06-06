@@ -24,10 +24,12 @@ class GdprServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
 
-        // cookie-consent namespace: not covered by XotBaseServiceProvider (loads only module nameLower)
+        // cookie-consent: caricare in booted() dopo Statikbe così il path del modulo (con it/) vince sul vendor.
         $cookieConsentLangPath = realpath(__DIR__.'/../../lang/cookie-consent');
-        if ($cookieConsentLangPath && is_dir($cookieConsentLangPath)) {
-            $this->loadTranslationsFrom($cookieConsentLangPath, 'cookie-consent');
+        if ($cookieConsentLangPath !== false && is_dir($cookieConsentLangPath)) {
+            $this->app->booted(function () use ($cookieConsentLangPath): void {
+                $this->loadTranslationsFrom($cookieConsentLangPath, 'cookie-consent');
+            });
         }
 
         $router = app('router');

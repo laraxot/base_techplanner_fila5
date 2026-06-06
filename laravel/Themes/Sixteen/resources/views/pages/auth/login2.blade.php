@@ -104,15 +104,15 @@ name('login2');
 
                     <!-- Accessibility and Legal Links -->
                     <div class="flex flex-wrap justify-center items-center text-xs text-gray-500 space-x-4">
-                        <a href="{{ route('container0.detail', ['container0' => 'pages', 'slug0' => 'privacy']) }}" 
+                        <a href="{{ route('pages.view', ['slug' => 'privacy']) }}" 
                            class="hover:text-blue-600 underline">
                             {{ __('footer.privacy_policy') }}
                         </a>
-                        <a href="{{ route('container0.detail', ['container0' => 'pages', 'slug0' => 'accessibility']) }}" 
+                        <a href="{{ route('pages.view', ['slug' => 'accessibility']) }}" 
                            class="hover:text-blue-600 underline">
                             {{ __('footer.accessibility_statement') }}
                         </a>
-                        <a href="{{ route('container0.detail', ['container0' => 'pages', 'slug0' => 'legal-notes']) }}" 
+                        <a href="{{ route('pages.view', ['slug' => 'legal-notes']) }}" 
                            class="hover:text-blue-600 underline">
                             {{ __('footer.legal_notes') }}
                         </a>

@@ -20,7 +20,7 @@
                     "primary_cta_url": "/it/contatti",
                     "secondary_cta_label": "Scopri i Servizi",
                     "secondary_cta_url": "/it/servizi",
-                    "image": "/images/hero-bg.jpg"
+                    "image": "/img/techplanner/hero-bg.jpg"
                 }
             },
             {
@@ -83,7 +83,7 @@
                         {
                             "title": "Responsabilità Legale",
                             "description": "L'esercente è legalmente responsabile. Una gestione corretta è l'unica tutela in caso di contenziosi.",
-                            "icon": "heroicon-o-gavel"
+                            "icon": "heroicon-o-scale"
                         }
                     ]
                 }
@@ -106,7 +106,7 @@
                                 "Ortopantomografia (OPT) - Controllo qualità e sicurezza per panoramiche dentali",
                                 "CBCT (Cone Beam) - Protocolli avanzati per tomografia computerizzata a fascio conico"
                             ],
-                            "image": "/images/medical-equipment.jpg"
+                            "image": "/themes/Two/images/medical-equipment.jpg"
                         },
                         {
                             "title": "Medicina Veterinaria",
@@ -115,7 +115,7 @@
                             "use_cases": [
                                 "Radiologia Digitale e Analogica - Controlli su sistemi RX fissi e portatili per animali"
                             ],
-                            "image": "/images/veterinary-radiology.jpg"
+                            "image": "/themes/Two/images/veterinary-radiology.jpg"
                         }
                     ]
                 }
@@ -143,17 +143,17 @@
                         {
                             "title": "Apparecchiature Radiologiche",
                             "description": "Controllo di costanza, tensione, corrente e tempi di esposizione dei generatori.",
-                            "icon": "heroicono-cpu-chip"
+                            "icon": "heroicon-o-cpu-chip"
                         },
                         {
                             "title": "Sistemi di Protezione",
                             "description": "Verifica e test funzionali su sistemi di sicurezza, interblocchi e segnaletica obbligatoria per zone controllate e sorvegliate.",
-                            "icon": "heroicono-light-bulb"
+                            "icon": "heroicon-o-light-bulb"
                         },
                         {
                             "title": "Documentazione e Registri",
                             "description": "Audit sulla corretta tenuta della documentazione obbligatoria.",
-                            "icon": "heroicono-document-check"
+                            "icon": "heroicon-o-document-check"
                         }
                     ]
                 }

@@ -86,7 +86,7 @@ name('login');
                 <div class="text-center text-xs text-white/80 mt-8 p-4 bg-white/10 rounded-xl border border-white/20 backdrop-blur-sm fade-in-up">
                     <p class="mb-2">
                         <strong>{{ __('Accessibilità') }}:</strong> {{ __('Conforme a WCAG 2.1 AA') }} • 
-                        <a href="{{ route('container0.detail', ['container0' => 'pages', 'slug0' => 'accessibility']) }}" 
+                        <a href="{{ route('pages.view', ['slug' => 'accessibility']) }}" 
                            class="text-white underline hover:text-blue-100 transition-colors">
                             {{ __('Dichiarazione di accessibilità') }}
                         </a>

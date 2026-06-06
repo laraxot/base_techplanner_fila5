@@ -148,11 +148,11 @@
                             Questo servizio è conforme alle linee guida WCAG 2.1 AA e alle normative AGID per l'accessibilità dei servizi digitali della Pubblica Amministrazione.
                         </p>
                         <div class="flex flex-col sm:flex-row sm:justify-center sm:space-x-4 space-y-2 sm:space-y-0">
-                            <a href="{{ route('container0.detail', ['container0' => 'pages', 'slug0' => 'accessibility']) }}" 
+                            <a href="{{ route('pages.view', ['slug' => 'accessibility']) }}" 
                                class="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 rounded">
                                 Dichiarazione di accessibilità
                             </a>
-                            <a href="{{ route('container0.detail', ['container0' => 'pages', 'slug0' => 'help']) }}" 
+                            <a href="{{ route('pages.view', ['slug' => 'help']) }}" 
                                class="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 rounded">
                                 Guida all'uso
                             </a>
@@ -209,25 +209,25 @@
                     <h3 class="text-lg font-semibold mb-4">Servizi</h3>
                     <ul class="space-y-2 text-sm">
                         <li>
-                            <a href="{{ route('container0.detail', ['container0' => 'pages', 'slug0' => 'privacy']) }}" 
+                            <a href="{{ route('pages.view', ['slug' => 'privacy']) }}" 
                                class="text-gray-300 hover:text-white underline focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-gray-900 rounded">
                                 Privacy Policy
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('container0.detail', ['container0' => 'pages', 'slug0' => 'legal-notes']) }}" 
+                            <a href="{{ route('pages.view', ['slug' => 'legal-notes']) }}" 
                                class="text-gray-300 hover:text-white underline focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-gray-900 rounded">
                                 Note Legali
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('container0.detail', ['container0' => 'pages', 'slug0' => 'accessibility']) }}" 
+                            <a href="{{ route('pages.view', ['slug' => 'accessibility']) }}" 
                                class="text-gray-300 hover:text-white underline focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-gray-900 rounded">
                                 Dichiarazione di Accessibilità
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('container0.detail', ['container0' => 'pages', 'slug0' => 'contacts']) }}" 
+                            <a href="{{ route('pages.view', ['slug' => 'contacts']) }}" 
                                class="text-gray-300 hover:text-white underline focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-gray-900 rounded">
                                 Contatti
                             </a>
