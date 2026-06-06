@@ -18,4 +18,5 @@ discussions:
 
 ## 2026-06-06
 
+- **git merge sweep** — risolti ~3700 conflitti `dev` ↔ `origin/dev`; codice ours, stub AGENTS/CLAUDE theirs; how-to: [git-merge-marker-sweep](./how-to/git-merge-marker-sweep.md); story: [STORY-GIT-001](../stories/story-git-collision-resolution.md)
 - Added `public-theme-resolution-and-vite-assets`: prevent wrong `pub_theme` diagnosis and missing Vite deploy assets for Theme Two.
