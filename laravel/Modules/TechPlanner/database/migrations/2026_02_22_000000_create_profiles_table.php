@@ -4,16 +4,18 @@ declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Str;
 use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /**
  * Unica migrazione per profiles (main_module).
  * Profile è strettamente dipendente da TechPlanner.
- * 
+ *
  * Schema: id (auto-increment), uuid (unique), user_id, e altri campi.
  * UUID è per compatibilità con Android/Postgres.
- * 
+ *
  * Regole Laraxot:
  * - Una sola migrazione per modello
  * - Estende XotBaseMigration
@@ -30,7 +32,7 @@ class CreateProfilesTable extends XotBaseMigration
 
         // Se la tabella non esiste, crea con bigint auto_increment
         if (! $this->tableExists($tableName)) {
-            $this->tableCreate(function (Blueprint $table) use ($tableName): void {
+            $this->tableCreate(function (Blueprint $table): void {
                 $this->profilesSchema($table);
             });
 
@@ -44,7 +46,7 @@ class CreateProfilesTable extends XotBaseMigration
     protected function handleExistingTable(string $tableName, string $idType): void
     {
         // Aggiungi colonne mancanti
-        $this->tableUpdate(function (Blueprint $table) use ($tableName): void {
+        $this->tableUpdate(function (Blueprint $table): void {
             $this->addMissingColumns($table);
         });
 
@@ -53,7 +55,7 @@ class CreateProfilesTable extends XotBaseMigration
             $this->convertUuidToBigint($tableName);
         } else {
             // Assicurati che uuid esista
-            $this->ensureUuidColumn($tableName);
+            $this->ensureUuidColumn();
         }
     }
 
@@ -62,10 +64,10 @@ class CreateProfilesTable extends XotBaseMigration
         return in_array(strtolower($type), ['char', 'varchar', 'string'], true);
     }
 
-    protected function ensureUuidColumn(string $tableName): void
+    protected function ensureUuidColumn(): void
     {
         if (! $this->hasColumn('uuid')) {
-            $this->tableUpdate(function (Blueprint $table) use ($tableName): void {
+            $this->tableUpdate(function (Blueprint $table): void {
                 $table->uuid('uuid')->unique()->nullable()->after('id');
             });
         }
@@ -76,15 +78,16 @@ class CreateProfilesTable extends XotBaseMigration
         $conn = DB::connection($this->getConnection());
 
         // Backup dati esistenti
-        $existingData = $conn->table($tableName)->get(['id', 'uuid'])->map(function ($row) {
+        /** @var list<array{old_id: string|int, uuid: string}> $existingData */
+        $existingData = $conn->table($tableName)->get(['id', 'uuid'])->map(function (stdClass $row): array {
             return [
                 'old_id' => $row->id,
-                'uuid' => $row->uuid ?? (string) \Illuminate\Support\Str::uuid(),
+                'uuid' => isset($row->uuid) ? (string) $row->uuid : (string) Str::uuid(),
             ];
-        })->toArray();
+        })->all();
 
         if (empty($existingData)) {
-            $this->ensureUuidColumn($tableName);
+            $this->ensureUuidColumn();
             $this->changeIdToBigint($tableName);
 
             return;
@@ -100,9 +103,8 @@ class CreateProfilesTable extends XotBaseMigration
         $newId = 1;
         foreach ($existingData as $row) {
             $data = ['id' => $newId, 'uuid' => $row['uuid']];
-            $conn->table($tableName)->where('id', $row['old_id'])->first();
             $original = $conn->table($tableName)->where('id', $row['old_id'])->first();
-            if ($original) {
+            if ($original instanceof stdClass) {
                 foreach ($this->getDataColumns() as $col) {
                     if (isset($original->{$col})) {
                         $data[$col] = $original->{$col};
@@ -114,7 +116,7 @@ class CreateProfilesTable extends XotBaseMigration
         }
 
         // Aggiorna tabelle pivot
-        $this->updatePivotTables($tableName, $tableName);
+        $this->updatePivotTables();
 
         // Sostituisci tabella
         $this->dropTableIfExists($tableName);
@@ -129,7 +131,7 @@ class CreateProfilesTable extends XotBaseMigration
         }
     }
 
-    protected function updatePivotTables(string $oldTable, string $newTable): void
+    protected function updatePivotTables(): void
     {
         $pivotTables = ['profile_team'];
 
@@ -139,7 +141,7 @@ class CreateProfilesTable extends XotBaseMigration
             }
 
             $conn = DB::connection($this->getConnection());
-            $columns = $conn->getColumnListing($pivotTable);
+            $columns = Schema::connection($this->getConnection())->getColumnListing($pivotTable);
 
             // Aggiorna foreign keys che referenziano profile
             if (in_array('profile_id', $columns, true)) {
@@ -150,6 +152,9 @@ class CreateProfilesTable extends XotBaseMigration
         }
     }
 
+    /**
+     * @return list<string>
+     */
     protected function getDataColumns(): array
     {
         return [

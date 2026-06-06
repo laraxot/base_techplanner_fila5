@@ -20,7 +20,7 @@ return new class() extends XotBaseMigration
             // Standard address columns via AddressItemEnum::columns()
             // DRY + KISS pattern inspired by laravel-nestedset and workers_table migration
             // null = CREATE context (no hasColumn checks), true = include legacy fields
-            AddressItemEnum::columns($table, null, true);
+            AddressItemEnum::columnsWithLegacy($table, null);
 
             $this->addCommonFields($table);
         });
@@ -55,7 +55,7 @@ return new class() extends XotBaseMigration
             // Address columns: ensure all standard AddressItemEnum fields exist
             // Following Laraxot pattern from workers_table migration with hasColumn() checks
             // $this = UPDATE context (uses hasColumn), true = include legacy fields
-            AddressItemEnum::columns($table, $this, true);
+            AddressItemEnum::columnsWithLegacy($table, $this);
 
             $this->updateTimestamps($table, true);
         });

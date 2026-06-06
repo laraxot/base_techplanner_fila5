@@ -32,6 +32,7 @@ così che **PHPStan, Pest e gli agenti AI possano analizzare il codice senza par
 - [x] `docs/wiki/` da origin/dev integrato
 - [x] Test regressione: `UserMigrationSyntaxTest` verifica assenza marker nelle migrazioni User
 - [x] Documentazione second brain: `docs/wiki/how-to/git-merge-marker-sweep.md`
+- [x] Quality gate post-edit: `./tools/post-edit-php.sh` + `UserMigrationSyntaxTest`
 
 ## Strategia di risoluzione
 

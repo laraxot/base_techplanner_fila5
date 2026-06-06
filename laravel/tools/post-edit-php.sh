@@ -19,32 +19,37 @@ if [[ ! -f "${FILE}" ]]; then
   exit 1
 fi
 
-PHPMD="${PHPMD:-phpmd}"
+PHPMD="${PHPMD:-./tools/phpmd.sh}"
 fail=0
 
 run() {
-  echo ""
-  echo "━━━ $1 ━━━"
+  local label="$1"
   shift
+  echo ""
+  echo "━━━ ${label} ━━━"
   if "$@"; then
-    echo "OK: $1"
+    echo "OK: ${label}"
   else
-    echo "FAIL: $1"
+    echo "FAIL: ${label}"
     fail=1
   fi
 }
 
-run "PHPStan" ./vendor/bin/phpstan analyse "${FILE}" --memory-limit=-1
+if [[ "${FILE}" == *"/tests/"* || "${FILE}" == *"/Tests/"* ]]; then
+  run "Pest file" ./vendor/bin/pest "${FILE}" --compact
+else
+  run "PHPStan" ./vendor/bin/phpstan analyse "${FILE}" --memory-limit=-1
+fi
 
-if command -v "${PHPMD}" >/dev/null 2>&1; then
+if [[ -x "${PHPMD}" ]] || command -v "${PHPMD}" >/dev/null 2>&1; then
   run "phpmd" "${PHPMD}" "${FILE}" text phpmd.xml
 else
-  echo "SKIP: phpmd not on PATH (install or set PHPMD=...)"
+  echo "SKIP: phpmd not found (${PHPMD})"
 fi
 
 if [[ -f ./vendor/bin/phpinsights ]]; then
   echo ""
-  echo "━━━ phpinsights (informational for migrations) ━━━"
+  echo "━━━ phpinsights ━━━"
   ./vendor/bin/phpinsights analyse "${FILE}" --no-interaction || true
 fi
 

@@ -84,9 +84,12 @@ Non applicare risoluzione HEAD-only su PHP senza repair pass immediato.
 ## Post-risoluzione
 
 1. Aggiornare `docs/wiki/log.md`
-2. `git add` file risolti
-3. Completare merge: `git commit` (solo su richiesta utente)
-4. PHPStan + test mirati sul modulo toccato
+2. **Quality gate per ogni file PHP toccato** — `./tools/post-edit-php.sh <file>` (phpstan + phpmd + phpinsights)
+3. **Pest regressione** — `UserMigrationSyntaxTest` (marker + syntax migrazioni User)
+4. `git add` file risolti
+5. Completare merge: `git commit` (solo su richiesta utente)
+
+Memoria: [post-edit-php-quality-gate](../memories/post-edit-php-quality-gate.md)
 
 ## Anti-pattern
 

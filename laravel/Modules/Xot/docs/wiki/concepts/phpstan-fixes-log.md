@@ -33,3 +33,38 @@ Nota: **`composer run go`** non eseguito in questa sessione: contiene `rm -rf da
 
 - [php84-upgrade-extension-checklist.md](php84-upgrade-extension-checklist.md)
 - [laravel13-modular-package-compatibility-matrix.md](laravel13-modular-package-compatibility-matrix.md)
+
+## Re-verifica post-merge Git (2026-06-06)
+
+Dopo risoluzione marker conflitto su branch `dev`:
+
+```bash
+cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1
+# [OK] No errors — 4822 file
+```
+
+### Fix #2: XotBaseServiceProvider — marker Git residui
+
+- **Sintomo**: bootstrap Larastan fallisce con `unexpected token "<<"` durante autoload `ActivityServiceProvider` → parent `XotBaseServiceProvider`
+- **Fix**: ripristino file da commit `ce96248f` (versione senza `<<<<<<<`)
+
+### Fix #3: Migrazioni corrotte (logica CREATE/UPDATE mescolata)
+
+- `User/database/migrations/2026_01_12_114416_create_team_user_table.php` — `$this` usato dentro closure `static function` di `tableCreate`
+- `TechPlanner/database/migrations/2026_02_22_000000_create_profiles_table.php` — PHPDoc e `Schema::getColumnListing` rimossi dal merge
+- **Fix**: ripristino `ce96248f` per entrambe
+
+### Fix #4: AddressItemEnum API
+
+- `TechPlanner/.../create_client_table.php` chiamava `columns($table, null, true)` (3 argomenti)
+- API attuale: `columnsWithLegacy($table, ?XotBaseMigration $migration)`
+
+### Fix #5: XotBaseWizardWidget view-string
+
+- Filament `view()` richiede `view-string|null`
+- Pattern: `@var view-string $publicWizardView` prima di `->view($publicWizardView)`
+
+### Collegamenti
+
+- Memoria root: [docs/wiki/memories/phpstan-modules-zero-2026-06-06.md](../../../../../../docs/wiki/memories/phpstan-modules-zero-2026-06-06.md)
+- Repair script: [bashscripts/tools/git/repair-php-after-conflict-resolution.sh](../../../../../../bashscripts/tools/git/repair-php-after-conflict-resolution.sh)

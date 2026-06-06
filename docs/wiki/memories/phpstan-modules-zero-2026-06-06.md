@@ -53,6 +53,27 @@ PHPStan **non parte** se un fatal blocca l'autoload — fixare prima dei tipi.
 ## Verifica
 
 ```bash
-./vendor/bin/phpstan analyse --memory-limit=-1
-# [OK] No errors — 4914 file
+cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1
+# [OK] No errors — 4822 file, level max (phpstan.neon)
 ```
+
+## Re-verifica post-merge (2026-06-06, sessione 5)
+
+### Blocker bootstrap (fatal prima di PHPStan)
+
+| File | Sintomo | Fix |
+|------|---------|-----|
+| `Xot/app/Providers/XotBaseServiceProvider.php` | `syntax error, unexpected token "<<"` (marker `<<<<<<<`) | Ripristino da `ce96248f` |
+
+### 35 errori tipizzati (dopo fix bootstrap)
+
+| Modulo | File | Causa | Fix |
+|--------|------|-------|-----|
+| User | `2026_01_12_114416_create_team_user_table.php` | Logica UPDATE incollata dentro closure CREATE (`$this` undefined) | Ripristino `ce96248f` — `tableCreate` + `tableUpdate` separati |
+| TechPlanner | `2024_12_26_000008_create_client_table.php` | `AddressItemEnum::columns()` con 3 argomenti (API obsoleta) | `columnsWithLegacy($table, null)` / `columnsWithLegacy($table, $this)` |
+| TechPlanner | `2026_02_22_000000_create_profiles_table.php` | PHPDoc rimossi, `getColumnListing` su Connection, `use ($tableName)` inutili | Ripristino `ce96248f` (Schema + tipizzazione `stdClass`) |
+| Xot | `XotBaseWizardWidget.php` | `view()` richiede `view-string` | `@var view-string $publicWizardView` prima di `->view()` |
+
+### Lezione
+
+Dopo sweep marker Git: **sempre** rieseguire PHPStan su `Modules` — i marker in `XotBaseServiceProvider` bloccano l'intero bootstrap Larastan; le migrazioni corrotte passano `php -l` ma falliscono a livello 10.

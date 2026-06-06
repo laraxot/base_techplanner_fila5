@@ -29,7 +29,12 @@ return new class() extends XotBaseMigration
 
             // Indice univoco per evitare duplicati team_id + user_id
             $table->unique(['team_id', 'user_id']);
-if ($this->hasColumn('id') && $this->getColumnType('id') !== 'bigint') {
+        });
+
+        // -- UPDATE --
+        $this->tableUpdate(function (Blueprint $table): void {
+            // Converte solo i vecchi schemi con `id` non bigint (es. UUID/string).
+            if ($this->hasColumn('id') && $this->getColumnType('id') !== 'bigint') {
                 // Rimuoviamo la PRIMARY KEY esistente
                 $this->dropPrimaryKey();
 
@@ -44,7 +49,7 @@ if ($this->hasColumn('id') && $this->getColumnType('id') !== 'bigint') {
                 }
 
                 // Impostiamo la nuova PRIMARY KEY su id
-// $this->query('ALTER TABLE `'.$this->getTableName().'` ADD PRIMARY KEY (`id`)');
+                // $this->query('ALTER TABLE `'.$this->getTableName().'` ADD PRIMARY KEY (`id`)');
             }
 
             if (! $this->hasColumn('role')) {
