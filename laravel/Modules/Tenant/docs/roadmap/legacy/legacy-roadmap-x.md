@@ -46,12 +46,8 @@ Tenant Module
 - [ ] **Service 3**: [Description]
 
 ### 🛠️ Technical Excellence
-<<<<<<< HEAD
 - [ ] **PHPStan Level 9**: 0 errori
 - [ ] **Filament 4.x**: Compatibilità completa
-=======
-- [ ] **PHPStan Level 9**: 0 errori- [ ] **Filament 4.x**: Compatibilità completa
->>>>>>> 8215f950 (.)
 - [ ] **Type Safety**: Type hints completi
 - [ ] **Error Handling**: Gestione errori robusta
 - [ ] **Testing Setup**: Configurazione test
@@ -124,12 +120,8 @@ Tenant Module
 ## 🎯 SUCCESS METRICS
 
 ### 📊 Technical Metrics
-<<<<<<< HEAD
 - [ ] **PHPStan Level 9**: 0 errori
 - [ ] **Filament 4.x**: Compatibile
-=======
-- [ ] **PHPStan Level 9**: 0 errori- [ ] **Filament 4.x**: Compatibile
->>>>>>> 8215f950 (.)
 - [ ] **Test Coverage**: 80% (target)
 - [ ] **Response Time**: < 200ms
 - [ ] **Memory Usage**: < 50MB

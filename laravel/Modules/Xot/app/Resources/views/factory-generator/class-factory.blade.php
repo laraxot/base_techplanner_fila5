@@ -4,17 +4,12 @@ declare(strict_types=1);
 
 /** @var \ReflectionClass $reflection */
 /** @var array<string, string> $properties */
-<<<<<<< HEAD
 ?>
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 @isset($properties['remember_token'])
 use Illuminate\Support\Str;
-=======
-
-?>
->>>>>>> d2b0a27 (.)
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -49,7 +44,6 @@ use {{ $reflection->getName() }};
 
 class {{ $reflection->getShortName() }}Factory extends Factory
 {
-<<<<<<< HEAD
     /**
      * The name of the factory's corresponding model.
      *
@@ -71,28 +65,6 @@ class {{ $reflection->getShortName() }}Factory extends Factory
         ];
     }
 }
-=======
-/**
-* The name of the factory's corresponding model.
-*
-* @var string
-*/
-protected $model = {{ $reflection->getShortName() }}::class;
-
-/**
-* Define the model's default state.
-*
-* @return array
-*/
-public function definition(): array
-{
-return [
-@foreach ($properties as $name => $property)
-    '{{ $name }}' => {!! $property !!},
-@endforeach
-];
-}
->>>>>>> 5a14301c (.)
 }
 >>>>>>> 48515e368 (.)
 >>>>>>> 8215f950 (.)

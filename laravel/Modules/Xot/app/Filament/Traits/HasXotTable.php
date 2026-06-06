@@ -111,12 +111,8 @@ trait HasXotTable
     public function getGridTableColumns(): array
     {
         return [
-<<<<<<< HEAD
 Stack::make(array_values($this->getTableColumns())),
         ];
-=======
-            Stack::make($this->getTableColumns()),        ];
->>>>>>> 8215f950 (.)
     }
 
     /**
@@ -202,12 +198,8 @@ Stack::make(array_values($this->getTableColumns())),
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
             ->heading($this->getTableHeading())
-<<<<<<< HEAD
 ->columns($this->layoutView->getTableColumns(array_values($this->getTableColumns()), $this->getGridTableColumns()))
             ->contentGrid($this->layoutView->getTableContentGrid())
-=======
-            ->columns($this->layoutView->getTableColumns($this->getTableColumns(), $this->getGridTableColumns()))            ->contentGrid($this->layoutView->getTableContentGrid())
->>>>>>> 8215f950 (.)
             ->filters($this->getTableFilters())
             ->filtersLayout(FiltersLayout::AboveContent)
             ->filtersFormColumns($this->getTableFiltersFormColumns())
@@ -223,7 +215,6 @@ Stack::make(array_values($this->getTableColumns())),
         // Configurazioni opzionali personalizzabili
         $sortColumn = $this->getDefaultTableSortColumn();
         $sortDirection = $this->getDefaultTableSortDirection();
-<<<<<<< HEAD
 if ($sortColumn !== null && $sortDirection !== null) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
@@ -231,13 +222,6 @@ if ($sortColumn !== null && $sortDirection !== null) {
         $pollInterval = $this->getTablePollInterval();
 if ($pollInterval !== null) {
             $table = $table->poll($pollInterval);
-=======
-        if (null !== $sortColumn && null !== $sortDirection) {            $table = $table->defaultSort($sortColumn, $sortDirection);
-        }
-
-        $pollInterval = $this->getTablePollInterval();
-        if (null !== $pollInterval) {            $table = $table->poll($pollInterval);
->>>>>>> 8215f950 (.)
         }
 
         return $table;
@@ -366,17 +350,11 @@ if ($pollInterval !== null) {
     /**
      * Get model class.
      *
-<<<<<<< HEAD
 *
      * @return class-string<Model>
      *
      * @throws \Exception Se non viene trovata una classe modello valida
      */
-=======
-     * @throws \Exception Se non viene trovata una classe modello valida
-     *
-     * @return class-string<Model>     */
->>>>>>> 8215f950 (.)
     public function getModelClass(): string
     {
         // @phpstan-ignore-next-line
@@ -417,14 +395,10 @@ if ($pollInterval !== null) {
      */
     public function getTableSearch(): ?string
     {
-<<<<<<< HEAD
 $search = $this->tableSearch ?? null;
 
         return $search !== null ? (string) $search : null;
     }
-=======
-        return $this->tableSearch ?? null;    }
->>>>>>> 8215f950 (.)
 
     protected function shouldShowAssociateAction(): bool
     {

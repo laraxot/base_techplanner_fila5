@@ -2,10 +2,6 @@
 
 ## Overview
 In the `ptvx` project, providing a multi-language experience with localized URLs is essential for accessibility and SEO. This document explores the integration between [`mcamara/laravel-localization`](https://github.com/mcamara/laravel-localization) and [`laravel/folio`](https://github.com/laravel/folio), ensuring that our page routing system supports language prefixes and locale-specific content in a healthcare context.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## Purpose of Integration
 - **Localized URLs**: Enable language prefixes in URLs (e.g., `/en/services`, `/it/servizi`) for better user experience and SEO.
 - **Dynamic Page Routing**: Use Laravel Folio for managing page routes directly from Blade files while maintaining locale awareness.
@@ -167,12 +163,8 @@ public function __invoke($locale)
 }
 ```
 
-<<<<<<< HEAD
 ## Best Practices for `ptvx`
 1. **Consistent Locale Prefix**: Always show the locale in URLs (`hideDefaultLocaleInURL = false`) to maintain clarity, especially important in healthcare contexts where users must be certain of the language they're viewing.
-=======
-## Best Practices for `ptvx`1. **Consistent Locale Prefix**: Always show the locale in URLs (`hideDefaultLocaleInURL = false`) to maintain clarity, especially important in healthcare contexts where users must be certain of the language they're viewing.
->>>>>>> 8215f950 (.)
 2. **Custom Middleware**: Use the `HandleFolioLocalization` middleware approach to handle locale prefixes without altering Folio's core functionality.
 3. **Localized Content**: Ensure content within Folio pages is fetched based on `app()->getLocale()` to display language-specific data.
 4. **SEO Considerations**: Leverage `laravel-localization`'s ability to generate hreflang tags in Folio pages for better international SEO:
@@ -192,8 +184,4 @@ public function __invoke($locale)
   - **Solution**: Optimize middleware execution and cache locale settings where possible.
 
 ## Conclusion
-<<<<<<< HEAD
 Integrating `mcamara/laravel-localization` with `laravel/folio` requires careful handling of URL prefixes and middleware to ensure seamless localized routing. By using a custom middleware to manage locale prefixes and leveraging `laravel-localization`'s helpers for URL generation, `ptvx` can provide a robust multi-language experience for healthcare users while maintaining the simplicity of Folio's page-based routing. This approach ensures accessibility, SEO benefits, and user-friendly navigation across languages.
-=======
-Integrating `mcamara/laravel-localization` with `laravel/folio` requires careful handling of URL prefixes and middleware to ensure seamless localized routing. By using a custom middleware to manage locale prefixes and leveraging `laravel-localization`'s helpers for URL generation, `ptvx` can provide a robust multi-language experience for healthcare users while maintaining the simplicity of Folio's page-based routing. This approach ensures accessibility, SEO benefits, and user-friendly navigation across languages.
->>>>>>> 8215f950 (.)

@@ -12,12 +12,8 @@ use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< HEAD
 
 use Modules\User\Models\OauthAuthCode;
-=======
-use Filament\Tables\Table;use Modules\User\Models\OauthAuthCode;
->>>>>>> 8215f950 (.)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\json_encode;
@@ -85,12 +81,8 @@ class OauthAuthCodeResource extends XotBaseResource
                     ->limit(30)
                     ->tooltip(function (TextColumn $column): ?string {
                         $state = $column->getState();
-<<<<<<< HEAD
 if ($state === null) {
                             return null;
-=======
-                        if (null === $state) {                            return null;
->>>>>>> 8215f950 (.)
                         }
                         if (is_array($state)) {
                             /* @var array<string, mixed> $state */

@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 https://jsonplaceholder.typicode.com/users
-=======
-https://jsonplaceholder.typicode.com/users
->>>>>>> 8215f950 (.)

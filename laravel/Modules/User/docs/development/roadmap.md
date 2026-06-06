@@ -424,7 +424,3 @@ Overall Module Completion: 82%
 - Laravel Excel v3.x
 
 ---
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "User Module Documentation"
 type: documentation
@@ -8,7 +6,6 @@ created: 2026-06-05
 updated: 2026-06-05
 ---
 
->>>>>>> c55f204a (.)
 # Modulo User - Documentazione Completa
 
 ## Overview
@@ -62,15 +59,12 @@ Modules\User\Models\Tenant
 
 ## Architectural Rules — Violations Fixed
 
-<<<<<<< HEAD
-=======
 ### Profiles migration governance
 - La tabella `profiles` deve avere sia `id` sia `uuid`.
 - Il modulo User usa **una sola migrazione autorevole** per `profiles`: `*_create_profiles_table.php`.
 - Se manca una colonna come `uuid`, si corregge quella migrazione e si aggiorna il timestamp del file; non si crea una migrazione `add_uuid_to_profiles`.
 - Riferimento canonico: [wiki/concepts/profile-migration-uuid-contract.md](./wiki/concepts/profile-migration-uuid-contract.md)
 
->>>>>>> c55f204a (.)
 ### No Log calls in production code
 `Log::info()`, `Log::debug()`, `Log::error()` are forbidden in Actions, Models, Services, and Widgets.
 Found and removed from `RegisterWidget`. Laravel logs unhandled exceptions automatically.
@@ -86,22 +80,4 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 - PHP 8.3+
 - Laravel 11/12
 - Spatie Laravel Permission
-<<<<<<< HEAD
 - Filament v5
-=======
-- Filament v5
-
-
-## Standard Rules & Workflow
-
-- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
-- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
-- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
-
-## Documentation
-
-- [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — Pattern per caricamento efficiente
-- [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
-- [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
-- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
->>>>>>> c55f204a (.)

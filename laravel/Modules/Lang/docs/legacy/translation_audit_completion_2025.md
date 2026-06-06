@@ -4,10 +4,7 @@
 
 ### Problema Identificato
 Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identificate numerose traduzioni italiane presenti in file di lingua tedesca e inglese, causando incoerenza nell'interfaccia utente.
-<<<<<<< HEAD
 Durante l'audit delle traduzioni del progetto <main module>, sono state identificate numerose traduzioni italiane presenti in file di lingua tedesca e inglese, causando incoerenza nell'interfaccia utente.
-=======
->>>>>>> 8215f950 (.)
 
 ### Pattern di Errore
 - **Errore**: `'required' => 'Campo obbligatorio'` in file `lang/de/` e `lang/en/`
@@ -28,10 +25,7 @@ Durante l'audit delle traduzioni del progetto <main module>, sono state identifi
 - **Pattern**: `'required' => 'Pflichtfeld'` (DE) / `'required' => 'Required field'` (EN)
 
 #### ✅ Modulo <nome progetto>
-<<<<<<< HEAD
 #### ✅ Modulo <main module>
-=======
->>>>>>> 8215f950 (.)
 - **File tedeschi**: 4 file corretti
 - **File inglesi**: 4 file corretti
 - **Pattern**: `'required' => 'Dieses Feld ist erforderlich'` (DE) / `'required' => 'This field is required'` (EN)
@@ -139,19 +133,13 @@ Durante l'audit delle traduzioni del progetto <main module>, sono state identifi
 ### Moduli con Documentazione Aggiornata
 1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
-<<<<<<< HEAD
 2. **<main module> Module**: `laravel/Modules/<main module>/docs/translation_refactor_summary_2025.md`
-=======
->>>>>>> 8215f950 (.)
 
 ### Collegamenti Bidirezionali Creati
 - [Root Docs: Translation Standards](translation_standards.md)
 - [Lang Module: Translation Best Practices](../laravel/Modules/Lang/docs/translation_best_practices.md)
 - [<nome progetto> Module: Translation Guidelines](../laravel/Modules/<nome progetto>/docs/translation_guidelines.md)
-<<<<<<< HEAD
 - [<main module> Module: Translation Guidelines](../laravel/Modules/<main module>/docs/translation_guidelines.md)
-=======
->>>>>>> 8215f950 (.)
 
 ## Prevenzione Errori Futuri
 

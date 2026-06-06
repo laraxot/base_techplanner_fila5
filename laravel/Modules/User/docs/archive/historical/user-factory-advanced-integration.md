@@ -1,8 +1,5 @@
 # UserFactory Advanced Integration - Modulo User & Laraxot
-<<<<<<< HEAD
 # UserFactory Advanced Integration - Modulo User & healthcare_app
-=======
->>>>>>> 8215f950 (.)
 
 ## Post Deep-Study Analysis 
 
@@ -14,10 +11,7 @@ Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integr
 ```
 BaseUser (User Module)
 ├── User (Laraxot) - STI Base + Business Logic  
-<<<<<<< HEAD
 ├── User (healthcare_app) - STI Base + Business Logic  
-=======
->>>>>>> 8215f950 (.)
     ├── Patient (HasParent) - Healthcare Consumer
     ├── Doctor (HasParent) - Healthcare Provider  
     └── Admin (HasParent) - System Administrator
@@ -26,10 +20,7 @@ BaseUser (User Module)
 ### Cross-Module Compatibility Matrix
 
 | BaseUser Field | Laraxot User | Business Logic | Factory Support |
-<<<<<<< HEAD
 | BaseUser Field | healthcare_app User | Business Logic | Factory Support |
-=======
->>>>>>> 8215f950 (.)
 |----------------|----------------|----------------|-----------------|
 | `name` | `name` | Full name concat | ✅ Complete |
 | `email` | `email` | Authentication | ✅ Complete |
@@ -97,10 +88,7 @@ User::factory()->gdprCompliant()->create();
 protected $connection = 'user';
 
 // Laraxot User (Healthcare Domain)
-<<<<<<< HEAD
 // healthcare_app User (Healthcare Domain)
-=======
->>>>>>> 8215f950 (.)
 protected $connection = 'salute_ora';
 
 // Factory automatically handles connection switching
@@ -132,10 +120,7 @@ public function test_cross_module_compatibility()
     expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
     
     // Laraxot domain contracts
-<<<<<<< HEAD
     // healthcare_app domain contracts
-=======
->>>>>>> 8215f950 (.)
     expect($user->type)->toBeInstanceOf(UserTypeEnum::class);
     expect($user->state)->toBeInstanceOf(UserState::class);
 }
@@ -282,10 +267,7 @@ public function run(): void
 - **Testability**: Comprehensive user scenario testing
 
 ### For Laraxot Module  
-<<<<<<< HEAD
 ### For healthcare_app Module  
-=======
->>>>>>> 8215f950 (.)
 - **Domain Focus**: Healthcare-specific data generation
 - **Business Logic**: Real-world scenario testing
 - **Compliance**: GDPR and healthcare regulation support
@@ -312,9 +294,6 @@ public function run(): void
 - [Advanced Improvements Analysis](../../healthcare_app/docs/factories/userfactory-advanced-improvements-analysis.md)
 - [Implementation Completed](../../healthcare_app/docs/factories/userfactory_implementation_completed.md)
 - [Model States](../../healthcare_app/docs/models/states.md)
-<<<<<<< HEAD
-=======
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> 8215f950 (.)
 
 ### User Module
@@ -324,8 +303,5 @@ public function run(): void
 
 ### Root Documentation  
 - [UserFactory Laraxot Integration](../../../../../docs/userfactory_ptvx_integration.md)
-<<<<<<< HEAD
 - [UserFactory healthcare_app Integration](../../../../../docs/userfactory_healthcare_app_integration.md)
-=======
->>>>>>> 8215f950 (.)
 - [Testing Standards](../../../../../docs/testing_standards.md) 

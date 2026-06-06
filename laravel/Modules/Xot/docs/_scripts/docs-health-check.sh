@@ -93,8 +93,4 @@ else
     echo -e "${RED}❌ Docs health: POOR ($SCORE/100)${NC}"
 fi
 
-<<<<<<< HEAD
 echo ""
-=======
-echo ""
->>>>>>> 8215f950 (.)

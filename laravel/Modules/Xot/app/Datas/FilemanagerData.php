@@ -10,7 +10,6 @@ use Spatie\LaravelData\Data;
  * Class FilemanagerData - Gestisce la configurazione del file manager per il framework Laraxot.
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  */
-<<<<<<< HEAD
 final class FilemanagerData extends Data
 {
     /**
@@ -21,17 +20,6 @@ final class FilemanagerData extends Data
      * @param  string  $route_prefix  Prefisso per le rotte del file manager
      * @param  bool  $enable_crop  Abilita il crop delle immagini
      */
-=======
-class FilemanagerData extends Data
-{
-    /**
-     * @param string $disk         Disco di storage predefinito
-     * @param array  $disks        Dischi di storage disponibili
-     * @param array  $allowed_ext  Estensioni file consentite
-     * @param int    $max_size     Dimensione massima file in MB
-     * @param string $route_prefix Prefisso per le rotte del file manager
-     * @param bool   $enable_crop  Abilita il crop delle immagini     */
->>>>>>> 8215f950 (.)
     public function __construct(
         public readonly string $disk = 'public',
         public readonly array $disks = ['public'],
@@ -39,22 +27,13 @@ class FilemanagerData extends Data
         public readonly int $max_size = 10,
         public readonly string $route_prefix = 'filemanager',
         public readonly bool $enable_crop = true,
-<<<<<<< HEAD
 ) {}
 
-=======
-    ) {
-    }
->>>>>>> 8215f950 (.)
     /**
      * Create a new instance of FilemanagerData with default values.
      */
     public static function make(): static
     {
-<<<<<<< HEAD
 return new self();
     }
-=======
-        return new static();    }
->>>>>>> 8215f950 (.)
 }

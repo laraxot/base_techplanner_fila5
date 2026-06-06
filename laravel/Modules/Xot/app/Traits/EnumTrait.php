@@ -15,38 +15,22 @@ trait EnumTrait
 
     public function getLabel(): string
     {
-<<<<<<< HEAD
 return $this->transClass(static::class, 'values.'.$this->value.'.label');
-=======
-        return $this->transClass(static::class, $this->value.'.label');
->>>>>>> 8215f950 (.)
     }
 
     public function getColor(): string
     {
-<<<<<<< HEAD
 return $this->transClass(static::class, 'values.'.$this->value.'.color');
-=======
-        return $this->transClass(static::class, $this->value.'.color');
->>>>>>> 8215f950 (.)
     }
 
     public function getIcon(): string
     {
-<<<<<<< HEAD
 return $this->transClass(static::class, 'values.'.$this->value.'.icon');
-=======
-        return $this->transClass(static::class, $this->value.'.icon');
->>>>>>> 8215f950 (.)
     }
 
     public function getDescription(): string
     {
-<<<<<<< HEAD
 return $this->transClass(static::class, 'values.'.$this->value.'.description');
-=======
-        return $this->transClass(static::class, $this->value.'.description');
->>>>>>> 8215f950 (.)
     }
 
     /**
@@ -116,13 +100,8 @@ return $this->transClass(static::class, 'values.'.$this->value.'.description');
      * ```
      */
     /**
-<<<<<<< HEAD
 * @param  Blueprint  $table  The table blueprint
      * @param  XotBaseMigration|null  $migration  XotBaseMigration instance for UPDATE context (provides hasColumn())
-=======
-     * @param Blueprint             $table     The table blueprint
-     * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context (provides hasColumn())
->>>>>>> 8215f950 (.)
      */
     public static function columns(Blueprint $table, ?XotBaseMigration $migration = null): void
     {
@@ -131,11 +110,7 @@ return $this->transClass(static::class, 'values.'.$this->value.'.description');
         // }
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
-<<<<<<< HEAD
 if ($migration === null || ! $migration->hasColumn($name)) {
-=======
-            if (null === $migration || ! $migration->hasColumn($name)) {
->>>>>>> 8215f950 (.)
                 $definition($table);
             }
         }
@@ -164,11 +139,7 @@ if ($migration === null || ! $migration->hasColumn($name)) {
      */
     public static function getColumnNames(): array
     {
-<<<<<<< HEAD
 return array_values(array_map(static fn ($case): string => (string) $case->value, static::cases()));
-=======
-        return array_map(fn ($case) => (string) $case->value, static::cases());
->>>>>>> 8215f950 (.)
     }
 
     /**

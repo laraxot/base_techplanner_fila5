@@ -6,17 +6,7 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\TeamInvitation;
-<<<<<<< HEAD
     protected $model = TeamInvitation::class;
-=======
-
-class TeamInvitationFactory extends Factory
-{
-    /**
-     * The name of the factory's corresponding model.
-     */
-    protected $model = \Modules\User\Models\TeamInvitation::class;
->>>>>>> 8215f950 (.)
 
     /**
      * Define the model's default state.

@@ -30,12 +30,8 @@ return [
         'login' => [
             'label' => 'Accedi',
             'success' => 'Accesso effettuato con successo',
-<<<<<<< HEAD
 'error' => 'Le credenziali inserite non sono corrette.',
         ],
-=======
-            'error' => 'Credenziali non valide',        ],
->>>>>>> 8215f950 (.)
         'register' => [
             'label' => 'Registrati',
             'success' => 'Registrazione completata con successo',

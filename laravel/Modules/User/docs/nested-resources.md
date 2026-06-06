@@ -195,7 +195,6 @@ Following the documented approach in `Modules/UI/docs/filament/nested-resource.m
 - Role-based access to specific nested resources
 
 ### 2. Cross-module User Integration
-<<<<<<< HEAD
 ---
 module: theme
 topic: nested-resources
@@ -203,9 +202,6 @@ canonical: ../../../Themes/docs/shared-components/nested-resources.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/nested-resources.md
-=======
-- Enable nested resources that span multiple modules (User-healthcare_app, User-Notify)
->>>>>>> .merge_file_tDYlRr
 - Implement cross-module relationship management
 
 ### 3. Advanced User Analytics

@@ -22,7 +22,3 @@ https://laraveldaily.com/post/filament-registration-form-extra-fields-choose-use
 https://learn.userfrosting.com/recipes/extending-the-user-model
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)

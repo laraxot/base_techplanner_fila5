@@ -20,19 +20,12 @@ class FieldRefreshAction extends Action
 
         $this->translateLabel();
         $this->icon('heroicon-o-arrow-path')
-<<<<<<< HEAD
 ->label('')
             ->tooltip('Ricalcola valore')
             ->action(function ($record, Set $set): void {
                 $name = $this->getName();
                 if ($name === null) {
                     return;
-=======
-            ->tooltip('Ricalcola valore')
-            ->action(function ($record, Set $set): void {
-                $name = $this->getName();
-                if (null === $name) {                    return;
->>>>>>> 8215f950 (.)
                 }
 
                 if (! is_object($record) && ! is_string($record)) {

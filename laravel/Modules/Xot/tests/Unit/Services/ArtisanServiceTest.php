@@ -15,10 +15,7 @@ use function Safe\ob_start;
 use Tests\TestCase;
 
 uses(TestCase::class);
-<<<<<<< HEAD
-=======
 
->>>>>>> 8215f950 (.)
 beforeEach(function (): void {
     // Configure mysql connection for tests (required by ArtisanService)
     Config::set('database.connections.mysql', [

@@ -1,22 +1,14 @@
 # Gestione Traduzioni Contenuti JSON
 
 Questo documento descrive come gestire le traduzioni per i contenuti JSON nel progetto healthcare_app, con particolare attenzione ai file di contenuto delle pagine.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## Struttura dei Contenuti Traducibili
 
 ### File di Contenuto delle Pagine
 
 I contenuti delle pagine sono memorizzati in file JSON nella directory:
 ```
-<<<<<<< HEAD
 config/local/healthcare_app/database/content/pages/
 ```
-=======
-config/local/healthcare_app/database/content/pages/```
->>>>>>> 8215f950 (.)
 
 ### Struttura Standard
 
@@ -85,12 +77,8 @@ Ogni file JSON può contenere sezioni traducibili seguendo questo pattern:
 {
     "title": {
         "it": "Area Dottore - healthcare_app",
-<<<<<<< HEAD
         "en": "Doctor Area - healthcare_app"
 >>>>>>> .merge_file_0EDBuW
-=======
-        "en": "Doctor Area - healthcare_app">>>>>>> .merge_file_0EDBuW
->>>>>>> 8215f950 (.)
     },
     "content_blocks": {
         "it": [
@@ -159,12 +147,8 @@ Ogni file JSON può contenere sezioni traducibili seguendo questo pattern:
 
 Identificare i file JSON che necessitano di traduzione:
 ```bash
-<<<<<<< HEAD
 find config/local/healthcare_app/database/content/pages/ -name "*.json"
 ```
-=======
-find config/local/healthcare_app/database/content/pages/ -name "*.json"```
->>>>>>> 8215f950 (.)
 
 ### 2. Analisi
 
@@ -208,12 +192,8 @@ jq '.title | keys' file.json
 
 # Controlla che tutti i file JSON abbiano le traduzioni complete
 
-<<<<<<< HEAD
 for file in config/local/healthcare_app/database/content/pages/*.json; do
     echo "Checking $file..."
-=======
-for file in config/local/healthcare_app/database/content/pages/*.json; do    echo "Checking $file..."
->>>>>>> 8215f950 (.)
     
     # Verifica presenza sezioni it e en
     if ! jq -e '.title.it' "$file" > /dev/null 2>&1; then

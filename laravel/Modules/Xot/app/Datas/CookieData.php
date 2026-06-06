@@ -10,7 +10,6 @@ use Spatie\LaravelData\Data;
  * Class CookieData - Gestisce la configurazione dei cookie per il framework Laraxot.
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  */
-<<<<<<< HEAD
 final class CookieData extends Data
 {
     /**
@@ -20,38 +19,19 @@ final class CookieData extends Data
      * @param  string  $policy_url  URL della cookie policy
      * @param  string  $banner_style  Stile del banner dei cookie
      */
-=======
-class CookieData extends Data
-{
-    /**
-     * @param bool   $accept        Se il cookie è stato accettato
-     * @param string $type          Tipo di cookie (es. necessari, analitici, marketing)
-     * @param int    $duration_days Durata dei cookie in giorni
-     * @param string $policy_url    URL della cookie policy
-     * @param string $banner_style  Stile del banner dei cookie     */
->>>>>>> 8215f950 (.)
     public function __construct(
         public readonly bool $accept = false,
         public readonly string $type = 'necessary',
         public readonly int $duration_days = 365,
         public readonly string $policy_url = '/cookie-policy',
         public readonly string $banner_style = 'bottom',
-<<<<<<< HEAD
 ) {}
 
-=======
-    ) {
-    }
->>>>>>> 8215f950 (.)
     /**
      * Create a new instance of CookieData with default values.
      */
     public static function make(): static
     {
-<<<<<<< HEAD
 return new self();
     }
-=======
-        return new static();    }
->>>>>>> 8215f950 (.)
 }

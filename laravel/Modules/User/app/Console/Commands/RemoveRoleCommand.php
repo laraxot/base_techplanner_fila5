@@ -6,34 +6,23 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Collection;
-<<<<<<< HEAD
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
-=======
->>>>>>> 8215f950 (.)
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
-<<<<<<< HEAD
-=======
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Symfony\Component\Console\Input\InputOption;
->>>>>>> 8215f950 (.)
 class RemoveRoleCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
 
      */
-=======
-     *
-     * @var string     */
->>>>>>> 8215f950 (.)
     protected $description = 'remove a role to user';
 
     /**

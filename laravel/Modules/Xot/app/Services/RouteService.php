@@ -19,13 +19,8 @@ class RouteService
     /**
      * Verifica se l'utente è in modalità amministrazione.
      *
-<<<<<<< HEAD
 * @param  array<string,string>  $params  Parametri aggiuntivi
      * @return bool True se l'utente è in modalità amministrazione, false altrimenti
-=======
-     * @param array<string,string> $params Parametri aggiuntivi
-     *     * @return bool True se l'utente è in modalità amministrazione, false altrimenti
->>>>>>> 8215f950 (.)
      */
     public static function inAdmin(array $params = []): bool
     {
@@ -36,12 +31,8 @@ class RouteService
         }
 
         // Se il primo segmento dell'URL è 'admin', siamo in modalità amministrazione
-<<<<<<< HEAD
 if (Request::segment(1) === 'admin') {
             return true;
-=======
-        if ('admin' === Request::segment(1)) {            return true;
->>>>>>> 8215f950 (.)
         }
 
         // Verifichiamo un caso speciale per le richieste Livewire
@@ -49,7 +40,6 @@ if (Request::segment(1) === 'admin') {
 
         // Se abbiamo almeno un segmento, è 'livewire' e la sessione 'in_admin' è true
         return (is_countable($segments) ? \count($segments) : 0) > 0
-<<<<<<< HEAD
 && $segments[0] === 'livewire'
             && session('in_admin', false) === true;
     }
@@ -57,14 +47,6 @@ if (Request::segment(1) === 'admin') {
     /**
      * @param  array<string,string>  $params
      */
-=======
-            && 'livewire' === $segments[0]
-            && true === session('in_admin', false);
-    }
-
-    /**
-     * @param array<string,string> $params     */
->>>>>>> 8215f950 (.)
     public static function urlAct(array $params): string
     {
         $query = [];
@@ -116,12 +98,8 @@ if (Request::segment(1) === 'admin') {
     // se n=0 => 'container0'
     // se n=1 => 'containers.container1'
     /**
-<<<<<<< HEAD
 * @param  array<string,string>  $params
      */
-=======
-     * @param array<string,string> $params     */
->>>>>>> 8215f950 (.)
     public static function getRoutenameN(array $params): string
     {
         // default vars
@@ -134,12 +112,8 @@ if (Request::segment(1) === 'admin') {
             $tmp[] = 'admin';
         }
 
-<<<<<<< HEAD
 for ($i = 0; $i <= $n; $i++) {
             $tmp[] = 'container'.$i;
-=======
-        for ($i = 0; $i <= $n; ++$i) {            $tmp[] = 'container'.$i;
->>>>>>> 8215f950 (.)
         }
 
         $tmp[] = $act;
@@ -226,12 +200,8 @@ for ($i = 0; $i <= $n; $i++) {
      * }
      */
     /**
-<<<<<<< HEAD
 * @param  array<string,string>  $params
      */
-=======
-     * @param array<string,string> $params     */
->>>>>>> 8215f950 (.)
     public static function urlLang(array $params = []): string
     {
         extract($params);
@@ -307,12 +277,8 @@ for ($i = 0; $i <= $n; $i++) {
     public static function getAct(): string
     {
         $route_action = Route::currentRouteAction();
-<<<<<<< HEAD
 if ($route_action === null) {
             throw new \Exception('$route_action is null');
-=======
-        if (null === $route_action) {            throw new \Exception('$route_action is null');
->>>>>>> 8215f950 (.)
         }
 
         $act = Str::after($route_action, '@');
@@ -337,12 +303,8 @@ if ($route_action === null) {
     public static function getModuleName(): string
     {
         $route_action = Route::currentRouteAction();
-<<<<<<< HEAD
 if ($route_action === null) {
             throw new \Exception('$route_action is null');
-=======
-        if (null === $route_action) {            throw new \Exception('$route_action is null');
->>>>>>> 8215f950 (.)
         }
 
         return Str::between($route_action, 'Modules\\', '\Http');
@@ -356,12 +318,8 @@ if ($route_action === null) {
     public static function getControllerName(): string
     {
         $route_action = Route::currentRouteAction();
-<<<<<<< HEAD
 if ($route_action === null) {
             throw new \Exception('$route_action is null');
-=======
-        if (null === $route_action) {            throw new \Exception('$route_action is null');
->>>>>>> 8215f950 (.)
         }
 
         return Str::between($route_action, 'Http\Controllers\\', 'Controller');
@@ -372,7 +330,6 @@ if ($route_action === null) {
         $controllerName = self::getControllerName();
         $tmp_arr = explode('\\', $controllerName);
 
-<<<<<<< HEAD
 $routeCurrent = Route::current();
         /** @var array<string, mixed> $params */
         $params = $routeCurrent instanceof \Illuminate\Routing\Route ? $routeCurrent->parameters() : [];
@@ -387,16 +344,6 @@ $routeCurrent = Route::current();
             ->filter(static fn ($item): bool => ! \in_array($item, ['Module', 'Item'], false))
             ->map(static function ($item) use ($params): mixed {
                 $item = Str::snake($item);
-=======
-        $params = getRouteParameters();
-        [$containers] = params2ContainerItem($params);
-
-        $params['containers'] = implode('.', $containers);
-
-        return collect($tmp_arr)
-            ->filter(static fn ($item): bool => ! \in_array($item, ['Module', 'Item'], false))
-            ->map(static function ($item) use ($params) {                $item = Str::snake($item);
->>>>>>> 8215f950 (.)
 
                 return $params[$item] ?? $item;
             })

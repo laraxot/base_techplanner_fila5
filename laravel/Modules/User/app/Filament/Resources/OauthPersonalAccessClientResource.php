@@ -6,8 +6,6 @@ namespace Modules\User\Filament\Resources;
 
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
-<<<<<<< HEAD
-=======
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
@@ -73,7 +71,6 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     }
 
     /**
->>>>>>> 8215f950 (.)
      * Get the table columns for the resource.
      *
      * @return array<string, Tables\Columns\Column>
@@ -117,11 +114,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Get the table actions for the resource.
      *
-<<<<<<< HEAD
 * @return array<string, Action>
-=======
-     * @return array<string, \Filament\Actions\Action>
->>>>>>> 8215f950 (.)
      */
     public static function getTableActions(): array
     {
@@ -134,11 +127,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Get the table bulk actions for the resource.
      *
-<<<<<<< HEAD
 * @return array<string, Action|ActionGroup>
-=======
-     * @return array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
->>>>>>> 8215f950 (.)
      */
     public static function getTableBulkActions(): array
     {

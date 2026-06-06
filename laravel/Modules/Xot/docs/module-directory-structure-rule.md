@@ -300,10 +300,6 @@ Questi file devono essere:
 2. Eliminati dal filesystem
 
 **Stato**: ✅ Pattern aggiunti ai .gitignore (2026-03-13)
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ---
 
 ## Documentazione Correlata

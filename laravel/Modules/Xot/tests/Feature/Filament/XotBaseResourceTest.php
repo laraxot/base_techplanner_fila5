@@ -7,20 +7,11 @@ namespace Modules\Xot\Tests\Feature\Filament;
 use Filament\Resources\Resource;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-<<<<<<< HEAD
 uses(RefreshDatabase::class);
 
 beforeEach(function () {
     $this->resource = new class() extends XotBaseResource
     {
-=======
-use Modules\Xot\Tests\TestCase;
-
-uses(TestCase::class, RefreshDatabase::class);
-
-beforeEach(function () {
-    $this->resource = new class extends XotBaseResource {
->>>>>>> 8215f950 (.)
         protected static ?string $model = null;
 
         protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-rectangle-stack';

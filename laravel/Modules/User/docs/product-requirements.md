@@ -1059,8 +1059,4 @@ it('handles 100 concurrent logins', function () {
 
 | Version | Data | Autore | Modifiche |
 |---------|------|--------|------------|
-<<<<<<< HEAD
 | 1.0.0 | 2026-03-03 | | Initial PRD |
-=======
-| 1.0.0 | 2026-03-03 | | Initial PRD |
->>>>>>> 8215f950 (.)

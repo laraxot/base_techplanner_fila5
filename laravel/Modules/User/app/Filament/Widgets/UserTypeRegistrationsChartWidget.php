@@ -9,14 +9,9 @@ use Flowframe\Trend\TrendValue;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
 
-<<<<<<< HEAD
 final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
 {
     /** @var class-string */
-=======
-class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
-{
->>>>>>> 8215f950 (.)
     public string $model;
 
     protected ?string $heading = null;
@@ -26,15 +21,9 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
     protected static bool $isLazy = true;
 
     #[\Override]
-<<<<<<< HEAD
 public function getHeading(): string
     {
         return self::transClass($this->model, 'widgets.user_type_registrations_chart.heading');
-=======
-    public function getHeading(): ?string
-    {
-        return static::transClass($this->model, 'widgets.user_type_registrations_chart.heading');
->>>>>>> 8215f950 (.)
     }
 
     #[\Override]
@@ -49,7 +38,6 @@ public function getHeading(): string
 
         // Verifica se i filtri sono disponibili e validi
         if (is_array($filters) && ! empty($filters)) {
-<<<<<<< HEAD
 $startDate = self::parseFilterDate($filters['startDate'] ?? null);
             $endDate = self::parseFilterDate($filters['endDate'] ?? null);
         }
@@ -59,19 +47,6 @@ $startDate = self::parseFilterDate($filters['startDate'] ?? null);
             $startDate = now()->subDays(30);
         }
         if ($endDate === null) {
-=======
-            /** @phpstan-ignore-next-line */
-            $startDate = ! empty($filters['startDate']) ? Carbon::parse($filters['startDate']) : null;
-            /** @phpstan-ignore-next-line */
-            $endDate = ! empty($filters['endDate']) ? Carbon::parse($filters['endDate']) : null;
-        }
-
-        // Fallback ai valori di default se i filtri non sono disponibili
-        if (null === $startDate) {
-            $startDate = now()->subDays(30);
-        }
-        if (null === $endDate) {
->>>>>>> 8215f950 (.)
             $endDate = now();
         }
 
@@ -87,11 +62,7 @@ $startDate = self::parseFilterDate($filters['startDate'] ?? null);
             return [
                 'datasets' => [
                     [
-<<<<<<< HEAD
 'label' => self::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
-=======
-                        'label' => static::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
->>>>>>> 8215f950 (.)
                         'data' => $data->map(fn (mixed $value) => $value instanceof TrendValue
                             ? $value->aggregate
                             : 0),
@@ -110,11 +81,7 @@ $startDate = self::parseFilterDate($filters['startDate'] ?? null);
             return [
                 'datasets' => [
                     [
-<<<<<<< HEAD
 'label' => self::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
-=======
-                        'label' => static::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
->>>>>>> 8215f950 (.)
                         'data' => [],
                         'backgroundColor' => 'rgba(59, 130, 246, 0.5)',
                         'borderColor' => 'rgb(59, 130, 246)',

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Vite Configuration For Theme Builds
 
 ## Purpose
@@ -42,5 +41,3 @@ build: {
 ## Backlinks
 - [Theme Assets Workflow](./theme-assets-workflow.md)
 - [Xot Documentation Index](./index.md)
-=======
->>>>>>> 8215f950 (.)

@@ -12,17 +12,7 @@ use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Modules\Xot\Traits\EnumTrait;
-<<<<<<< HEAD
     use EnumTrait;
-=======
-
-// use Datomatic\LaravelEnumHelper\LaravelEnumHelper;
-
-enum UserType: string implements HasColor, HasIcon, HasLabel
-{
-    use EnumTrait;
-
->>>>>>> 8215f950 (.)
     // //use LaravelEnumHelper;
 
     case MasterAdmin = 'master_admin';
@@ -42,12 +32,7 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
             self::Technician => self::API,
         };
     }
-<<<<<<< HEAD
 public function getLabel(): string
-=======
-
-    public function getLabel(): string
->>>>>>> 8215f950 (.)
     {
         return match ($this) {
             self::MasterAdmin => 'master_admin',

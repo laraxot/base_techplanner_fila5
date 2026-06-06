@@ -1,7 +1,6 @@
 # MCP (Management Control Panel) Tools for Database Analysis
 
 ## Overview
-<<<<<<< HEAD
 ---
 module: theme
 topic: mcpatabase-tools
@@ -9,9 +8,6 @@ canonical: ../../../Themes/docs/shared-components/mcp-database-tools.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/mcp-database-tools.md
-=======
-MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the healthcare_app_survey database used in the Limesurvey integration.
->>>>>>> .merge_file_w0p22l
 
 ## Available MCP Tools for Database Work
 

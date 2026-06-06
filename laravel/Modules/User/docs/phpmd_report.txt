@@ -298,8 +298,4 @@ Modules/User/tests/Unit/Models/ProfileTest.php:11                               
 Modules/User/tests/Unit/Models/TenantTest.php:11                                               TooManyPublicMethods      The class TenantTest has 20 public methods. Consider refactoring TenantTest to keep number of public methods under 10.
 Modules/User/tests/Unit/Models/TenantTest.php:248                                              UnusedLocalVariable       Avoid unused local variables such as '$expiredTenant'.
 Modules/User/tests/Unit/UserModelTest.php:36                                                   ShortVariable             Avoid variables with short names like $u. Configured minimum length is 3.
-<<<<<<< HEAD
 Modules/User/tests/Unit/UserModulePhpstanFixesTest.php:125                                     LongVariable              Avoid excessively long variable names like $socialiteUserConnected. Keep variable name length under 20.
-=======
-Modules/User/tests/Unit/UserModulePhpstanFixesTest.php:125                                     LongVariable              Avoid excessively long variable names like $socialiteUserConnected. Keep variable name length under 20.
->>>>>>> 8215f950 (.)

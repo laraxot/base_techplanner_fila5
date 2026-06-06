@@ -71,10 +71,6 @@ public function __construct()
 ## 📋 Pattern di Utilizzo
 
 ### Pattern 1: View Manuale (Raccomandato per nomi complessi)
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ```php
 class TimeClockWidget extends XotBaseWidget
 {
@@ -111,10 +107,6 @@ class SimpleWidget extends XotBaseWidget
 **Quando usare**:
 - Nome widget semplice che segue il pattern automatico
 - Convenzione naming standard
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ---
 
 ## 🔗 Pattern di Naming View Automatico
@@ -173,10 +165,6 @@ class MyWidget extends XotBaseWidget
 2. **Verificare che la view esista** prima di definirla manualmente
 3. **Usare naming consistente**: se possibile, seguire il pattern automatico
 4. **Documentare view custom** nel widget se il nome non è ovvio
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ---
 
 ## 🔗 Collegamenti

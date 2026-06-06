@@ -3,7 +3,3 @@ https://github.com/ryangjchandler/filament-profile
 
 https://github.com/andrewdwallo/filament-companies
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)

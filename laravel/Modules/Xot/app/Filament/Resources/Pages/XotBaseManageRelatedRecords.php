@@ -14,15 +14,8 @@ use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Traits\HasXotForm;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
-<<<<<<< HEAD
 /**
  * Base page for Filament related-record managers.
-=======
-use Override;
-
-/**
- * ---.
->>>>>>> 8215f950 (.)
  */
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
@@ -30,59 +23,18 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     use HasXotTable;
     use NavigationLabelTrait;
 
-<<<<<<< HEAD
 protected static string $recordTitleAttribute = 'name';
-=======
-    // protected static string $resource;
-    protected static string $recordTitleAttribute = 'name';
-
-    /**
-     * Restituisce il gruppo di navigazione (override opzionale).
-     */
->>>>>>> 8215f950 (.)
     public static function getNavigationGroup(): string
     {
         return '';
     }
 
-<<<<<<< HEAD
 public function schema(Schema $schema): Schema
     {
         return $schema->components($this->getFormSchema());
     }
 
     /**
-=======
-    /**
-     * Restituisce il titolo della pagina.
-     */
-    public function getTitle(): string
-    {
-        return static::transFunc(__FUNCTION__).' - '.$this->getRecordTitle();
-    }
-
-    public function getRecordTitle(): string
-    {
-        $value = $this->record->{static::$recordTitleAttribute};
-
-        return (string) $value;
-    }
-
-    /**
-     * Configura lo schema per i record correlati.
-     */
-    public function schema(Schema $schema): Schema
-    {
-        // getFormSchema() sempre ritorna array per definizione
-        $formSchema = $this->getFormSchema();
-
-        return $schema->components($formSchema);
-    }
-
-    /**
-     * Restituisce lo schema del form per i record correlati.
-     *
->>>>>>> 8215f950 (.)
      * @return array<Component>
      */
     public function getFormSchema(): array
@@ -90,9 +42,6 @@ public function schema(Schema $schema): Schema
         return [];
     }
 
-<<<<<<< HEAD
-
-=======
     /**
      * Restituisce l'heading della tabella.
      * Override esplicito per compatibilità con Filament 5.2 (Htmlable|string|null).
@@ -105,7 +54,6 @@ public function schema(Schema $schema): Schema
     /**
      * Chiamata interna per getTableHeading (evita ricorsione con HasXotTable).
      */
->>>>>>> 8215f950 (.)
     private function getTableHeadingFromTrait(): ?string
     {
         $key = static::getKeyTrans('table.heading');
@@ -115,9 +63,6 @@ public function schema(Schema $schema): Schema
     }
 
     /**
-<<<<<<< HEAD
-
-=======
      * Definisce le colonne della tabella per la visualizzazione dei record correlati.
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
@@ -143,7 +88,6 @@ public function schema(Schema $schema): Schema
      * Definisce le azioni dell'intestazione della tabella.
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
->>>>>>> 8215f950 (.)
      * @return array<string, Action>
      */
     protected function getTableHeaderActions(): array
@@ -154,11 +98,7 @@ public function schema(Schema $schema): Schema
     }
 
     /**
-<<<<<<< HEAD
 * Definisce le azioni per ogni riga della tabella.
-=======
-     * Definisce le azioni per ogni riga della tabella.
->>>>>>> 8215f950 (.)
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
      * @return array<string, Action>

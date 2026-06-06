@@ -4,12 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-<<<<<<< HEAD
 class FilterFormWidget extends XotBaseSchemaWidget
 {
-=======
-class FilterFormWidget extends XotBaseWidget{
->>>>>>> 8215f950 (.)
     // protected static string $view = 'filament.resources.your-resource.widgets.filter-form-widget';
 
     // protected int|string|array $columnSpan = 'full';

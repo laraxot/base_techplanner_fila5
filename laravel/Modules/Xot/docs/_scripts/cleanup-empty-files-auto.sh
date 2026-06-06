@@ -34,8 +34,4 @@ if [ "$COUNT" -gt 0 ]; then
     echo -e "${GREEN}✅ $COUNT file eliminati con successo${NC}"
 else
     echo -e "${GREEN}✅ Nessun file vuoto trovato!${NC}"
-<<<<<<< HEAD
 fi
-=======
-fi
->>>>>>> 8215f950 (.)

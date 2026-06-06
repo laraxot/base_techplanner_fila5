@@ -145,12 +145,8 @@ mv Modules/Xot/docs/*-2024-*.md Modules/Xot/docs/archive/
 mv Modules/Xot/docs/*-2025-*.md Modules/Xot/docs/archive/
 
 # Mantenere solo l'ultimo se rilevante
-<<<<<<< HEAD
 mv Modules/Xot/docs/archive/merge-conflict-resolution-[DATE].md \
    Modules/Xot/docs/merge-conflict-resolution.md
-=======
-mv Modules/Xot/docs/archive/merge-conflict-resolution-[DATE].md \   Modules/Xot/docs/merge-conflict-resolution.md
->>>>>>> 8215f950 (.)
 ```
 
 ### Fase 5: Creare CHANGELOG.md

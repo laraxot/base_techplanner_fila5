@@ -54,7 +54,6 @@
 
 3. **Property Declaration** (Code Quality)
    - Proprietà con prefisso underscore (non conforme):
-<<<<<<< HEAD
 ---
 module: theme
 topic: quality-tools-report
@@ -62,9 +61,6 @@ canonical: ../../../Themes/docs/shared-components/quality-tools-report.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tools-report.md
-=======
-     - `healthcare_app/app/Datas/LimeAnswerData.php:15` (`$_group_by`)
->>>>>>> .merge_file_kzJdPF
      - `Xot/app/Services/ModuleService.php:23` (`$_instance`)
      - `Xot/app/Traits/HasCsrfToken.php:15` (`$_token`)
    - **Soluzione**: Rimuovere prefisso underscore, usare visibilità appropriata

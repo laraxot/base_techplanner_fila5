@@ -8,8 +8,6 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
-=======
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
@@ -24,17 +22,12 @@ class AssignTenantCommand extends Command
      * The name and signature of the console command.
      *
      * @var string
->>>>>>> 8215f950 (.)
      */
     protected $name = 'user:assign-tenant';
 
     /**
      * The console command description.
-<<<<<<< HEAD
 *
-=======
-     *
->>>>>>> 8215f950 (.)
      * @var string
      */
     protected $description = 'Assign a tenant to user';

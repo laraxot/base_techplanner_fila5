@@ -12,12 +12,8 @@ Modules/<Modulo>/
     workflows/
       semantic-versioning.yml   # Tag automatico su main/dev
       tag-version.yml          # Semantic-release (main/master)
-<<<<<<< HEAD
       update-changelog.yml     # CHANGELOG su release
       roadmap-check.yml       # Verifica docs/roadmap.md
-=======
-      update-changelog.yml     # CHANGELOG su release      roadmap-check.yml       # Verifica docs/roadmap.md
->>>>>>> 8215f950 (.)
 ```
 
 Per i temi: `Themes/<Tema>/.github/workflows/` con gli stessi file.
@@ -36,10 +32,6 @@ Usare lo stesso contenuto degli altri moduli (es. Activity, User) per uniformit�
 - **Condizione**: escludere commit con messaggio `[release]`.
 - **Step**: checkout, setup Node 20, npm install semantic-release + plugin, npx semantic-release.
 - **Secrets**: `GH_TOKEN` (o `GITHUB_TOKEN`) per push tag.
-<<<<<<< HEAD
-
-=======
->>>>>>> 8215f950 (.)
 ## update-changelog.yml
 
 - **Trigger**: `release` types `released`.
@@ -68,12 +60,8 @@ Vedi skill semantic-versioning per il template completo con attestation.
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [docs root – GitHub Actions moduli](../../../../../../docs/github-actions-modules.md)
 - [Semantic versioning](../../../../../.cursor/skills/semantic-versioning/skill.md)
-=======
-- [docs root – GitHub Actions moduli](../../../../../../docs/github-actions-modules.md)- [Semantic versioning](../../../../../.cursor/skills/semantic-versioning/skill.md)
->>>>>>> 8215f950 (.)
 - [PHPStan CI](phpstan.md)
 - [Links CI](links.md)
 

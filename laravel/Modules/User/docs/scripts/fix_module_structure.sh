@@ -138,8 +138,4 @@ main() {
 }
 
 # Esegui lo script
-<<<<<<< HEAD
 main 
-=======
-main 
->>>>>>> 8215f950 (.)

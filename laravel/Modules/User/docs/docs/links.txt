@@ -18,8 +18,4 @@ https://codebrisk.com/blog/easily-add-face-authentication-to-your-laravel-applic
 
 
 ----- molti pacchetti interessanti --
-<<<<<<< HEAD
 https://codebrisk.com/blog/categories/laravel-packages
-=======
-https://codebrisk.com/blog/categories/laravel-packages
->>>>>>> 8215f950 (.)

@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
 'failed' => [
         'key' => 'user::auth.messages.failed',
         'text' => 'Credenziali non valide.',
@@ -132,27 +131,6 @@ return [
         'placeholder' => '',
     ],
     'sign-up' => 'Registrati',
-=======
-    'failed' => 'Credenziali non valide.',
-    'password' => 'La password inserita non è corretta.',
-    'throttle' => 'Troppi tentativi di accesso. Riprova fra :seconds secondi.',
-    'general_error' => 'Si è verificato un errore. Riprova più tardi.',
-    'unauthorized' => 'Non hai i permessi necessari per questa operazione.',
-    'login-via' => 'Accedi con',
-    'login-failed' => 'Login fallito, riprova.',
-    'user-not-allowed' => 'La tua email non è autorizzata.',
-    'registration-not-enabled' => 'Non è possibile registrare un nuovo utente.',
-    'Sign in to your account' => 'Accedi al tuo account',
-    'create a new account' => 'Crea un nuovo account',
-    'Or' => 'O',
-    'Email address' => 'Indirizzo e-mail',
-    'Password' => 'Password',
-    'Remember me' => 'Ricordami',
-    'Remember' => 'Ricordami',
-    'Forgot your password?' => 'Password dimenticata?',
-    'Sign in' => 'Accedi',
-    'login-in' => 'Accedi',    'sign-up' => 'Registrati',
->>>>>>> 8215f950 (.)
     'password_expired' => [
         'title' => 'Password Scaduta, Reimposta Password',
         'heading' => 'Crea una Nuova Password',
@@ -198,7 +176,6 @@ return [
     'email' => 'Email',
     'name' => 'Nome',
     'confirm_password' => 'Conferma Password',
-<<<<<<< HEAD
 'logout_success' => [
         'key' => 'user::auth.logout-success',
         'text' => 'Logout effettuato con successo.',
@@ -270,18 +247,6 @@ return [
         'placeholder' => '',
     ],
     'login' => [
-=======
-    'logout_success' => 'Logout effettuato con successo.',
-    'logout_error' => 'Si è verificato un errore durante il logout.',
-    'reset_password_notification_subject' => 'Reset Password Notification',
-    'reset_password_notification_line_1' => 'You are receiving this email because we received a password reset request for your account.',
-    'reset_password_notification_action' => 'Reset Password',
-    'reset_password_notification_line_2' => 'This password reset link will expire in :count minutes.',
-    'reset_password_notification_line_3' => 'If you did not request a password reset, no further action is required.',
-    'Resend Verification Email' => 'Rinvia Email di Verifica',
-    'Verify Your Email Address' => 'Verifica la tua email',
-    'A fresh verification link has been sent to your email address.' => 'Un nuovo link di verifica è stato inviato al tuo indirizzo email.',    'login' => [
->>>>>>> 8215f950 (.)
         'title' => 'Accedi al tuo account',
         'subtitle' => 'Inserisci le tue credenziali per accedere',
         'heading' => 'Pannello clienti :brand',
@@ -320,7 +285,6 @@ return [
             'label' => 'Ricordami',
         ],
         'submit' => 'Accedi',
-<<<<<<< HEAD
 'forgot_password' => [
             'key' => 'user::auth.forgot-password',
             'text' => 'Password dimenticata?',
@@ -398,18 +362,6 @@ return [
             'placeholder' => '',
         ],
         'login-in' => 'Accedi',
-=======
-        'forgot_password' => 'Password dimenticata?',
-        'no_account' => 'Non hai un account?',
-        'create_account' => 'Crea account',
-        'logging_in' => 'Accesso in corso…',
-        'register' => 'Registrati',
-        'success' => 'Accesso effettuato con successo.',
-        'failed' => 'Credenziali non valide.',
-        'login-via' => 'Accedi con',
-        'login-failed' => 'Login fallito, riprova.',
-        'user-not-allowed' => 'La tua email non è autorizzata.',        'login-in' => 'Accedi',
->>>>>>> 8215f950 (.)
         'Sign in' => 'Accedi',
         'Sign in to your account' => 'Accedi al tuo account',
         'Welcome back' => 'Bentornato',
@@ -419,7 +371,6 @@ return [
         'Remember me' => 'Ricordami',
         'Remember' => 'Ricordami',
         'Forgot your password?' => 'Password dimenticata?',
-<<<<<<< HEAD
 'page' => [
             'meta_title' => [
                 'label' => 'Accedi ai servizi',
@@ -624,25 +575,6 @@ return [
             'placeholder' => '',
         ],
         'name_structured' => [
-=======
-    ],
-    'register' => [
-        'title' => 'Crea un nuovo account',
-        'subtitle' => 'Inserisci i tuoi dati per registrarti',
-        'name' => 'Nome completo',
-        'name_placeholder' => 'Mario Rossi',
-        'email' => 'Indirizzo email',
-        'email_placeholder' => 'esempio@email.com',
-        'password' => 'Password',
-        'password_placeholder' => '••••••••',
-        'password_confirmation' => 'Conferma password',
-        'password_confirmation_placeholder' => '••••••••',
-        'submit' => 'Registrati',
-        'success' => 'Registrazione completata con successo.',
-        'failed' => 'Impossibile completare la registrazione.',
-        'already_have_account' => 'Hai già un account?',
-        'login' => 'Accedi',        'name_structured' => [
->>>>>>> 8215f950 (.)
             'label' => 'Nome',
             'placeholder' => 'Inserisci il tuo nome completo',
         ],
@@ -660,7 +592,6 @@ return [
         ],
     ],
     'forgot_password' => [
-<<<<<<< HEAD
 'title' => [
             'key' => 'user::auth.forgot-password-title',
             'text' => 'Password dimenticata?',
@@ -711,22 +642,11 @@ return [
             'placeholder' => '',
         ],
         'email_structured' => [
-=======
-        'title' => 'Password dimenticata?',
-        'subtitle' => 'Inserisci la tua email per ricevere le istruzioni',
-        'email' => 'Indirizzo email',
-        'email_placeholder' => 'esempio@email.com',
-        'submit' => 'Invia istruzioni',
-        'success' => 'Le istruzioni sono state inviate alla tua email.',
-        'failed' => 'Impossibile inviare le istruzioni di reset.',
-        'back_to_login' => 'Torna al login',        'email_structured' => [
->>>>>>> 8215f950 (.)
             'label' => 'Email',
             'placeholder' => 'Inserisci la tua email',
         ],
     ],
     'reset_password' => [
-<<<<<<< HEAD
 'title' => [
             'key' => 'user::auth.reset-password-title',
             'text' => 'Reimposta password',
@@ -836,29 +756,6 @@ return [
                 'placeholder' => '',
             ],
         ],
-=======
-        'title' => 'Reimposta password',
-        'subtitle' => 'Inserisci la nuova password',
-        'email' => 'Indirizzo email',
-        'email_placeholder' => 'Inserisci il tuo indirizzo email',
-        'password' => 'Nuova password',
-        'password_placeholder' => '••••••••',
-        'password_confirmation' => 'Conferma password',
-        'password_confirmation_placeholder' => '••••••••',
-        'submit' => 'Reimposta password',
-        'success' => 'Password reimpostata con successo.',
-        'failed' => 'Impossibile reimpostare la password.',
-        'send_button' => 'Invia link di reset',
-        'back_to_login' => 'Torna al login',
-        'send_another' => 'Invia un altro link',
-        'email_sent' => [
-            'title' => 'Email inviata!',
-            'message' => 'Ti abbiamo inviato un link per reimpostare la password. Controlla la tua casella di posta elettronica e segui le istruzioni.',
-        ],
-        'email_failed' => [
-            'title' => 'Errore nell\'invio',
-            'generic' => 'Si è verificato un errore durante l\'invio dell\'email. Riprova più tardi.',        ],
->>>>>>> 8215f950 (.)
         'email_structured' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci la tua email',
@@ -873,7 +770,6 @@ return [
         ],
     ],
     'verification' => [
-<<<<<<< HEAD
 'title' => [
             'key' => 'user::auth.verification-title',
             'text' => 'Verifica il tuo indirizzo email',
@@ -998,29 +894,6 @@ return [
             'placeholder' => '',
         ],
     ],
-=======
-        'title' => 'Verifica il tuo indirizzo email',
-        'subtitle' => 'Ti abbiamo inviato un link di verifica',
-        'notice' => 'Prima di procedere, controlla la tua email per il link di verifica.',
-        'another' => 'Se non hai ricevuto l\'email',
-        'resend' => 'Clicca qui per richiederne un\'altra',
-        'success' => 'Un nuovo link di verifica è stato inviato al tuo indirizzo email.',
-    ],
-    'social' => [
-        'title' => 'Accedi con',
-        'google' => 'Google',
-        'facebook' => 'Facebook',
-        'github' => 'GitHub',
-        'microsoft' => 'Microsoft',
-        'error' => 'Si è verificato un errore con il login social.',
-    ],
-    'errors' => [
-        'invalid_credentials' => 'Credenziali non valide.',
-        'invalid_token' => 'Token non valido o scaduto.',
-        'account_blocked' => 'Account bloccato. Contatta l\'assistenza.',
-        'too_many_attempts' => 'Troppi tentativi. Riprova più tardi.',
-        'session_expired' => 'Sessione scaduta. Effettua nuovamente il login.',    ],
->>>>>>> 8215f950 (.)
     'password_reset' => [
         'email_placeholder' => 'Inserisci il tuo indirizzo email',
         'send_button' => 'Invia link di reset',
@@ -1068,7 +941,6 @@ return [
         ],
     ],
     'passwords' => [
-<<<<<<< HEAD
 'reset' => [
             'key' => 'user::auth.passwords.reset',
             'text' => 'La tua password è stata reimpostata!',
@@ -1173,27 +1045,6 @@ return [
         'placeholder' => '',
     ],
     'fields' => [
-=======
-        'reset' => 'La tua password è stata reimpostata!',
-        'sent' => 'Ti abbiamo inviato il link per reimpostare la password!',
-        'throttled' => 'Per favore attendi prima di riprovare.',
-        'token' => 'Il token di reset password non è valido.',
-        'user' => 'Non riusciamo a trovare un utente con questo indirizzo email.',
-    ],
-    'navigation' => [
-        'name' => 'Auth',
-        'plural' => 'Auth',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Auth',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
-    ],
-    'label' => 'Auth',
-    'plural_label' => 'Auth (Plurale)',    'fields' => [
->>>>>>> 8215f950 (.)
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',

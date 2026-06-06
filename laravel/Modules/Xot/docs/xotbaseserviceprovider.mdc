@@ -1,14 +1,7 @@
 ---
-<<<<<<< HEAD
 module: theme
 topic: xotbaseserviceprovider
 canonical: ../../../Themes/docs/shared-components/xotbaseserviceprovider.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/xotbaseserviceprovider.md
-=======
-description:
-globs:
-alwaysApply: false
----
->>>>>>> 8215f950 (.)

@@ -34,7 +34,6 @@ return [
         ],
     ],
     'messages' => [
-<<<<<<< HEAD
 'failed' => [
             'key' => 'user::auth.messages.failed',
             'text' => 'Invalid credentials.',
@@ -43,9 +42,6 @@ return [
             'placeholder' => '',
         ],
         'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-=======
-        'failed' => 'These credentials do not match our records.',        'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
->>>>>>> 8215f950 (.)
         'unauthorized' => 'You are not authorized to access this resource.',
     ],
     'password_reset' => [
@@ -110,7 +106,6 @@ return [
         'github' => 'Sign in with GitHub',
         'facebook' => 'Sign in with Facebook',
     ],
-<<<<<<< HEAD
 'login' => [
         'page' => [
             'meta_title' => [
@@ -192,12 +187,4 @@ return [
             'personal_area' => 'Access personal area',
         ],
     ],
-=======
-    'auth_button' => [
-        'login' => 'Sign in',
-        'logout' => 'Sign out',
-        'profile' => 'My profile',
-        'dashboard' => 'Dashboard',
-        'personal_area' => 'Access personal area',    ],
->>>>>>> 8215f950 (.)
 ];

@@ -194,7 +194,6 @@ $token = $user->createToken('test');
 
 ### **Phase 3: System Verification (Next)**
 - [ ] Test LimeSurvey integration with UUIDs
-<<<<<<< HEAD
 ---
 module: theme
 topic: uuid-trait-conflict-resolution
@@ -202,9 +201,6 @@ canonical: ../../../Themes/docs/shared-components/uuid-trait-conflict-resolution
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/uuid-trait-conflict-resolution.md
-=======
-- [ ] Verify healthcare_app contact token generation
->>>>>>> .merge_file_ZMPxQw
 - [ ] Test all authentication flows
 - [ ] Performance testing
 

@@ -6,36 +6,12 @@ namespace Modules\User\Filament\Clusters\Passport\Pages;
 
 use Filament\Actions\Action;
 use Filament\Clusters\Cluster;
-<<<<<<< HEAD
     /** @var list<string> */
     public array $output = [];
-=======
-use Filament\Notifications\Notification;
-use Livewire\Attributes\On;
-use Modules\User\Filament\Clusters\Passport;
-use Modules\Xot\Actions\ExecuteArtisanCommandAction;
-use Modules\Xot\Filament\Pages\XotBasePage;
-
-class PassportDashboard extends XotBasePage
-{
-    protected static ?string $cluster = Passport::class;
-
-    protected string $view = 'user::filament.pages.passport-dashboard';
-
-    public bool $hasPublicKey = false;
-
-    public bool $hasPrivateKey = false;
-
-    public array $output = [];
-
-    public string $currentCommand = '';
-
->>>>>>> 8215f950 (.)
     public string $status = '';
 
     public bool $isRunning = false;
 
-<<<<<<< HEAD
 public string $currentCommand = '';
 
     /**
@@ -44,17 +20,6 @@ public string $currentCommand = '';
     protected static ?string $cluster = Passport::class;
 
     protected string $view = 'user::filament.pages.passport-dashboard';
-=======
-    /** @var array<string, string> */
-    protected $listeners = [
-        'refresh-component' => '$refresh',
-        'artisan-command.started' => 'handleCommandStarted',
-        'artisan-command.output' => 'handleCommandOutput',
-        'artisan-command.completed' => 'handleCommandCompleted',
-        'artisan-command.failed' => 'handleCommandFailed',
-        'artisan-command.error' => 'handleCommandError',
-    ];
->>>>>>> 8215f950 (.)
 
     public function executeCommand(string $command): void
     {
@@ -157,11 +122,7 @@ public string $currentCommand = '';
     protected function getHeaderActions(): array
     {
         return [
-<<<<<<< HEAD
 'passport_install' => Action::make('passport_install')
-=======
-            Action::make('passport_install')
->>>>>>> 8215f950 (.)
                 ->icon('heroicon-o-arrow-down-tray')
                 ->color('success')
                 ->disabled(fn () => $this->isRunning)
@@ -169,22 +130,14 @@ public string $currentCommand = '';
                 ->modalDescription(static::trans('actions.install.modal_description'))
                 ->action(fn () => $this->executeCommand('passport:install --uuids')),
 
-<<<<<<< HEAD
 'passport_keys' => Action::make('passport_keys')
-=======
-            Action::make('passport_keys')
->>>>>>> 8215f950 (.)
                 ->icon('heroicon-o-key')
                 ->color('primary')
                 ->disabled(fn () => $this->isRunning)
                 ->requiresConfirmation()
                 ->action(fn () => $this->executeCommand('passport:keys')),
 
-<<<<<<< HEAD
 'passport_purge' => Action::make('passport_purge')
-=======
-            Action::make('passport_purge')
->>>>>>> 8215f950 (.)
                 ->icon('heroicon-o-trash')
                 ->color('warning')
                 ->disabled(fn () => $this->isRunning)
@@ -192,11 +145,7 @@ public string $currentCommand = '';
                 ->modalDescription(static::trans('actions.purge_tokens.modal_description'))
                 ->action(fn () => $this->executeCommand('passport:purge')),
 
-<<<<<<< HEAD
 'passport_hash' => Action::make('passport_hash')
-=======
-            Action::make('passport_hash')
->>>>>>> 8215f950 (.)
                 ->icon('heroicon-o-lock-closed')
                 ->color('danger')
                 ->disabled(fn () => $this->isRunning)

@@ -263,11 +263,7 @@ class FilterBuilder
      *
      * Note: This filter assumes the model uses SoftDeletes trait.
      * PHPStan may not recognize withTrashed/onlyTrashed methods on base Builder.
-<<<<<<< HEAD
 *
-=======
-     *
->>>>>>> 8215f950 (.)
      * @phpstan-ignore-next-line
      */
     public static function trashedFilter(): TernaryFilter

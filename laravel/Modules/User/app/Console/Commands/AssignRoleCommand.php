@@ -5,34 +5,23 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
-<<<<<<< HEAD
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
-=======
->>>>>>> 8215f950 (.)
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
-<<<<<<< HEAD
-=======
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Symfony\Component\Console\Input\InputOption;
->>>>>>> 8215f950 (.)
 class AssignRoleCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
 
      */
-=======
-     *
-     * @var string     */
->>>>>>> 8215f950 (.)
     protected $description = 'Assign a module to user';
 
     /**

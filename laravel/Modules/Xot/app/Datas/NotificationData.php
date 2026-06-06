@@ -10,7 +10,6 @@ use Spatie\LaravelData\Data;
  * Class NotificationData - Gestisce la configurazione delle notifiche per il framework Laraxot.
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  */
-<<<<<<< HEAD
 final class NotificationData extends Data
 {
     /**
@@ -22,18 +21,6 @@ final class NotificationData extends Data
      * @param  array  $slack  Configurazione Slack
      * @param  array  $telegram  Configurazione Telegram
      */
-=======
-class NotificationData extends Data
-{
-    /**
-     * @param array  $channels        Canali di notifica disponibili
-     * @param string $default_channel Canale predefinito
-     * @param bool   $queue           Se accodare le notifiche
-     * @param array  $mail            Configurazione email di notifica
-     * @param array  $broadcast       Configurazione broadcast
-     * @param array  $slack           Configurazione Slack
-     * @param array  $telegram        Configurazione Telegram     */
->>>>>>> 8215f950 (.)
     public function __construct(
         public readonly array $channels = ['mail', 'database'],
         public readonly string $default_channel = 'mail',
@@ -62,22 +49,13 @@ class NotificationData extends Data
             'bot_token' => '',
             'chat_id' => '',
         ],
-<<<<<<< HEAD
 ) {}
 
-=======
-    ) {
-    }
->>>>>>> 8215f950 (.)
     /**
      * Create a new instance of NotificationData with default values.
      */
     public static function make(): static
     {
-<<<<<<< HEAD
 return new self();
     }
-=======
-        return new static();    }
->>>>>>> 8215f950 (.)
 }

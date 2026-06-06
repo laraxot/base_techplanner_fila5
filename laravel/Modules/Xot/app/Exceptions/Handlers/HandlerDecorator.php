@@ -51,11 +51,7 @@ class HandlerDecorator implements ExceptionHandler
         return $this->defaultHandler->render($request, $e);
     }
 
-<<<<<<< HEAD
 /**
-=======
-    /**
->>>>>>> 8215f950 (.)
      * @phpstan-ignore-next-line
      */
     public function renderForConsole($output, \Throwable $e): void

@@ -165,7 +165,6 @@ Illuminate\Database\Eloquent\Relations\MorphPivot
 Per verificare che non ci siano più modelli che estendono direttamente `Model`:
 
 ```bash
-<<<<<<< HEAD
 ---
 module: theme
 topic: model_inheritance_fixes
@@ -173,9 +172,6 @@ canonical: ../../../Themes/docs/shared-components/model_inheritance_fixes.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/model_inheritance_fixes.md
-=======
-cd /var/www/_bases/base_healthcare_app_fila5_mono/laravel/Modules/User
->>>>>>> .merge_file_0lPW2z
 grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|BasePivot\|BaseMorphPivot"
 ```
 

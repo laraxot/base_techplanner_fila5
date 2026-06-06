@@ -7,10 +7,7 @@ namespace Modules\User\Console\Commands;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Support\Htmlable;
-<<<<<<< HEAD
-=======
 
->>>>>>> 8215f950 (.)
 use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
 /**
@@ -23,13 +20,8 @@ class ChangeTypeCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
 
      */
-=======
-     *
-     * @var string     */
->>>>>>> 8215f950 (.)
     protected $description = 'Change user type based on project configuration';
 
     /**
@@ -98,14 +90,10 @@ class ChangeTypeCommand extends Command
         $newType = select('Select new user type:', $options);
 
         $newTypeEnum = $typeClass::tryFrom($newType);
-<<<<<<< HEAD
 if ($newTypeEnum === null) {
             throw new \InvalidArgumentException('Invalid user type selected.');
         }
         Assert::isInstanceOf($newTypeEnum, HasLabel::class);
-=======
-        Assert::notNull($newTypeEnum);        Assert::isInstanceOf($newTypeEnum, HasLabel::class);
->>>>>>> 8215f950 (.)
         Assert::isInstanceOf($newTypeEnum, \BackedEnum::class);
 
         /* @var \BackedEnum&HasLabel $newTypeEnum */

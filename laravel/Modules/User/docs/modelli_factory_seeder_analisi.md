@@ -182,7 +182,6 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Jetstream Integration](./jetstream_integration.md)
 
 ### Moduli Collegati
-<<<<<<< HEAD
 ---
 module: theme
 topic: modelli_factory_seeder_analisi
@@ -190,10 +189,3 @@ canonical: ../../../Themes/docs/shared-components/modelli_factory_seeder_analisi
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/modelli_factory_seeder_analisi-Modules.md
-=======
-- [ModuloEsempio Module](../../modulo/docs/modelli_factory_seeder_analisi.md)
-- [Tenant Module](../../tenant/docs/modelli_factory_seeder_analisi.md)
-- [Notify Module](../../notify/docs/modelli_factory_seeder_analisi.md)
-
-*Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*
->>>>>>> 8215f950 (.)

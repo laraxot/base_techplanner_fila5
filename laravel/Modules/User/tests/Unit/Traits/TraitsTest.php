@@ -4,26 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Traits;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
 use Modules\User\Tests\TestCase;
-=======
-uses(\Modules\User\Tests\TestCase::class);
->>>>>>> 8215f950 (.)
 use Modules\User\Traits\PasswordValidationRules;
 
 test('PasswordValidationRules trait can be used', function () {
     expect(trait_exists(PasswordValidationRules::class))->toBeTrue();
 
     try {
-<<<<<<< HEAD
 $testClass = new class()
         {
             use PasswordValidationRules;
-=======
-        $testClass = new class {            use PasswordValidationRules;
->>>>>>> 8215f950 (.)
         };
         // Check if the trait methods exist
         expect(method_exists($testClass, 'passwordRules'))->toBeTrue();
@@ -34,13 +26,9 @@ $testClass = new class()
 
 test('PasswordValidationRules has expected methods', function () {
     if (trait_exists(PasswordValidationRules::class)) {
-<<<<<<< HEAD
 $testClass = new class()
         {
             use PasswordValidationRules;
-=======
-        $testClass = new class {            use PasswordValidationRules;
->>>>>>> 8215f950 (.)
         };
         $hasMethod = method_exists($testClass, 'passwordRules');
         $hasMin = method_exists($testClass, 'passwordMinimum');

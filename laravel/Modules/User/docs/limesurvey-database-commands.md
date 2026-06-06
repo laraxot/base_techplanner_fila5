@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: limesurvey-database-commands
@@ -6,9 +5,6 @@ canonical: ../../../Themes/docs/shared-components/limesurvey-database-commands.m
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/limesurvey-database-commands.md
-=======
-# Database Analysis Commands and Tools for healthcare_app_survey
->>>>>>> .merge_file_f9FIin
 
 ## Essential Database Queries
 

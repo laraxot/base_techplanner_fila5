@@ -40,11 +40,7 @@ class UpdateAction
             $model = $model->firstOrCreate($where, $data);
         }
 
-<<<<<<< HEAD
 /**
-=======
-        /**
->>>>>>> 8215f950 (.)
          * @phpstan-ignore method.notFound (.)
          */
         $model = tap($model)->update($data);

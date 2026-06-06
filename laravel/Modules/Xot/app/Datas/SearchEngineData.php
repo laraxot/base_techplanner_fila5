@@ -10,7 +10,6 @@ use Spatie\LaravelData\Data;
  * Class SearchEngineData - Gestisce la configurazione dei motori di ricerca per il framework Laraxot.
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  */
-<<<<<<< HEAD
 final class SearchEngineData extends Data
 {
     /**
@@ -22,18 +21,6 @@ final class SearchEngineData extends Data
      * @param  bool  $enable_local  Abilita la ricerca locale
      * @param  array<int, class-string>  $searchable  Modelli cercabili
      */
-=======
-class SearchEngineData extends Data
-{
-    /**
-     * @param string                   $driver         Driver del motore di ricerca (algolia, meilisearch, ecc.)
-     * @param string                   $algolia_app_id Algolia App ID
-     * @param string                   $algolia_secret Chiave segreta Algolia
-     * @param string                   $meili_host     Host MeiliSearch
-     * @param string                   $meili_key      Chiave MeiliSearch
-     * @param bool                     $enable_local   Abilita la ricerca locale
-     * @param array<int, class-string> $searchable     Modelli cercabili     */
->>>>>>> 8215f950 (.)
     public function __construct(
         public readonly string $driver = 'local',
         public readonly string $algolia_app_id = '',
@@ -42,22 +29,13 @@ class SearchEngineData extends Data
         public readonly string $meili_key = '',
         public readonly bool $enable_local = true,
         public readonly array $searchable = [],
-<<<<<<< HEAD
 ) {}
 
-=======
-    ) {
-    }
->>>>>>> 8215f950 (.)
     /**
      * Create a new instance of SearchEngineData with default values.
      */
     public static function make(): static
     {
-<<<<<<< HEAD
 return new self();
     }
-=======
-        return new static();    }
->>>>>>> 8215f950 (.)
 }

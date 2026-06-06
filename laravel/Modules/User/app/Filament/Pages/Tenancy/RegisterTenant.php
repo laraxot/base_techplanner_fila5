@@ -49,7 +49,6 @@ class RegisterTenant extends BaseRegisterTenant
     }
 
     /**
-<<<<<<< HEAD
 * @return array<int|string, Component>
      */
     public function getFormSchema(): array
@@ -70,23 +69,6 @@ $schema = $resourceClass::getFormSchema();
     /**
      * @param  array<string, string|int|bool|null>  $data
      */
-=======
-     * @return array<Component>     */
-    public function getFormSchema(): array
-    {
-        $resourceClass = $this->resolveResourceClass();
-
-        $schemaRaw = $resourceClass::getFormSchema();
-
-        /** @var array<Component> $schema */
-        $schema = $schemaRaw;
-
-        return $schema;
-    }
-
-    /**
-     * @param array<string, string|int|bool|null> $data     */
->>>>>>> 8215f950 (.)
     protected function handleRegistration(array $data): Model
     {
         $tenantClass = XotData::make()->getTenantClass();
@@ -103,12 +85,8 @@ $schema = $resourceClass::getFormSchema();
      */
     private function resolveResourceClass(): string
     {
-<<<<<<< HEAD
 if ($this->resourceClass !== null) {
             return $this->resourceClass;
-=======
-        if (null !== $this->resourceClass) {            return $this->resourceClass;
->>>>>>> 8215f950 (.)
         }
 
         $tenantClass = XotData::make()->getTenantClass();

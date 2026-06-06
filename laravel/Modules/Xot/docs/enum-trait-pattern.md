@@ -11,12 +11,8 @@
 
 ### 1. Classe Enum (Minimalista)
 ```php
-<<<<<<< HEAD
 <?php
 declare(strict_types=1);
-=======
-<?phpdeclare(strict_types=1);
->>>>>>> 8215f950 (.)
 
 namespace Modules\NomeModulo\Enums;
 
@@ -48,12 +44,8 @@ return [
     ],
     'valore_due' => [
         'label' => 'Etichetta Caso Due',
-<<<<<<< HEAD
         'color' => 'success',
     ],
-=======
-        'color' => 'success',    ],
->>>>>>> 8215f950 (.)
 ];
 ```
 
@@ -102,8 +94,4 @@ enum MioEnum: string implements HasLabel
 ```
 
 ---
-<<<<<<< HEAD
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-=======
-*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
->>>>>>> 8215f950 (.)

@@ -10,10 +10,7 @@ namespace Modules\Xot\Actions\Filament;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
-=======
 
->>>>>>> 8215f950 (.)
 use function Safe\file;
 class GenerateFormByFileAction
 {
@@ -22,13 +19,8 @@ class GenerateFormByFileAction
     /**
      * Genera un form Filament basato su un file di risorsa.
      *
-<<<<<<< HEAD
 * @param  File  $file  Il file della risorsa Filament
      * @return int Numero di input aggiunti
-=======
-     * @param File $file Il file della risorsa Filament
-     *     * @return int Numero di input aggiunti
->>>>>>> 8215f950 (.)
      */
     public function execute(File $file): int
     {
@@ -88,16 +80,12 @@ class GenerateFormByFileAction
         Assert::string($file_name = $form_method->getFileName(), '['.__LINE__.']['.class_basename($this).']');
         // $contents= $file->getContents();
         $source = file($file_name);
-<<<<<<< HEAD
 Assert::isArray($source);
         $body = '';
         foreach (\array_slice($source, $start_line, $length) as $line) {
             $body .= (string) $line;
         }
 
-=======
-        $body = implode('', \array_slice($source, $start_line, $length));
->>>>>>> 8215f950 (.)
         // Otteniamo i metodi della classe risorsa
         $resourceMethods = get_class_methods($resourceInstance);
 
@@ -105,12 +93,8 @@ Assert::isArray($source);
         $inputCount = 0;
         foreach ($fillable as $field) {
             if (in_array($field, $resourceMethods)) {
-<<<<<<< HEAD
 $inputCount++;
             }
-=======
-                ++$inputCount;            }
->>>>>>> 8215f950 (.)
         }
 
         return $inputCount;
@@ -119,12 +103,8 @@ $inputCount++;
     /**
      * Mostra informazioni di debug su un file.
      *
-<<<<<<< HEAD
 * @param  File  $file  Il file da analizzare
      */
-=======
-     * @param File $file Il file da analizzare     */
->>>>>>> 8215f950 (.)
     public function ddFile(File $file): void
     {
         // Debug information - commented out for production

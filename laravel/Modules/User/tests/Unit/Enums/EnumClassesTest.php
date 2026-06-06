@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Enums;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-uses(\Modules\User\Tests\TestCase::class);
->>>>>>> 8215f950 (.)
 
 use Modules\User\Enums\SocialProviderEnum;
 use Modules\User\Enums\SystemRole;

@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-<<<<<<< HEAD
 use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
 use Filament\Widgets\Widget as FilamentWidget;
@@ -21,39 +20,6 @@ use Modules\Xot\Filament\Traits\TransTrait;
 abstract class XotBaseWidget extends FilamentWidget implements HasActions
 {
     use InteractsWithActions;
-=======
-use Filament\Actions\Action;
-use Filament\Actions\Concerns\InteractsWithActions;
-use Filament\Actions\Contracts\HasActions;
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Components\Wizard\Step;
-use Filament\Schemas\Schema;
-use Filament\Widgets\Widget as FilamentWidget;
-use Illuminate\Contracts\Support\Htmlable;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Str;
-use Modules\Xot\Actions\View\GetViewByClassAction;
-use Modules\Xot\Filament\Traits\TransTrait;
-use Webmozart\Assert\Assert;
-
-/**
- * Classe base astratta per tutti i widget Filament.
- * Fornisce funzionalità comuni e standardizzate per la gestione dei widget.
- *
- * @property bool                      $shouldRender Indica se il widget deve essere renderizzato
- * @property string                    $title        Titolo del widget
- * @property string                    $icon         Icona del widget
- * @property array<string, mixed>|null $data         Dati del form
- * @property Schema                    $form
- */
-abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasForms
-{
-    use InteractsWithActions;
-    use InteractsWithForms;
->>>>>>> 8215f950 (.)
     use TransTrait;
 
     public string $title = '';
@@ -68,9 +34,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     public array $listener = [];
 
     /**
-<<<<<<< HEAD
-
-=======
      * Dati del form.
      *
      * @var array<string, mixed>
@@ -189,17 +152,12 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         // Implementare nelle classi figlie
     }
 
->>>>>>> 8215f950 (.)
     public static function getNavigationLabel(): string
     {
         return static::transFunc(__FUNCTION__);
     }
 
-<<<<<<< HEAD
 public function getWizardSubmitAction(): Action
-=======
-    public function getWizardSubmitAction(): Action
->>>>>>> 8215f950 (.)
     {
         /** @var view-string $submit_view */
         $submit_view = 'pub_theme::filament.wizard.submit-button';
@@ -251,10 +209,7 @@ public function getWizardSubmitAction(): Action
 
         return Step::make($name)->schema($schemaComponents);
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> 8215f950 (.)
     private function resolveView(): void
     {
         $defaultView = 'xot::filament.widgets.base';

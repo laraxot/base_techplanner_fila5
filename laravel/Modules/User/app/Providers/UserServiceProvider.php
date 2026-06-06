@@ -49,12 +49,7 @@ class UserServiceProvider extends XotBaseServiceProvider
         $this->registerPolicies();
     }
 
-<<<<<<< HEAD
 * Registra i widget Livewire auth per le viste Blade/Folio.
-=======
-    /**
-     * Registra i widget Livewire auth per le viste Blade/Folio.
->>>>>>> 8215f950 (.)
      * In Livewire v4, resolveClassComponentClassName con namespace '::' cerca SOLO in classNamespaces
      * (non in classComponents), quindi Livewire::component('user::...', class) non funziona.
      * Usare addComponent($class) che usa hash-based naming, compatibile con @livewire(Class::class).
@@ -75,11 +70,8 @@ class UserServiceProvider extends XotBaseServiceProvider
             Livewire::addComponent($class);
         }
     }
-<<<<<<< HEAD
 
     /**
-=======
->>>>>>> 8215f950 (.)
      * Register policies (excluding OAuth ones which are handled by PassportServiceProvider).
      */
     protected function registerPolicies(): void

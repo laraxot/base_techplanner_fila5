@@ -6,23 +6,15 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
-=======
 
->>>>>>> 8215f950 (.)
 use function Laravel\Prompts\text;
 
 class SuperAdminCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
 
      */
-=======
-     *
-     * @var string     */
->>>>>>> 8215f950 (.)
     protected $description = 'Assign super-admin to user';
 
     /**
