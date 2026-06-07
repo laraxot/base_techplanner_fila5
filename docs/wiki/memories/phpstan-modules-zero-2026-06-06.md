@@ -42,6 +42,13 @@ Fix riusabili applicati:
 - **Notify** — shape attachment costruite come array costanti e `NotificationTypeEnum::getLabel()` in `mapWithKeys()`.
 - **Employee** — rimosso duplicato case-only `TimeclockPage.php` mantenendo `TimeClockPage`.
 
+### Fix sessione 2026-06-07
+
+- **SmsData `@property` mismatch** — `@property string|null $from/recipient/body` causava `argument.type` quando le proprietà (sempre `string`, default `''`) venivano passate a funzioni che richiedono `string`. Fix: allineare `@property` a `string`.
+- **`??` su proprietà non-nullable** — dopo il fix sopra, `$smsData->from ?? $default` scatenava `nullCoalesce.property`. Sostituire con `?:` (empty coalesce) quando l'intento è fallback a default per valori vuoti/falsy.
+- **Form state `array<string, mixed>` a DTO** — `SmsData::from(array<string, mixed>)` viola `@param array<string, string>`. Costruire array con cast espliciti `(string) ($data['key'] ?? '')` invece di passare `getState()` direttamente.
+- **Notifica `toNetfun()` mixed return** — il valore di `$notification->toNetfun($notifiable)` può essere `string|object`. Castare a `(string)` il ramo object con `getContent()` per garantire tipo stringa nell'array passato a `SmsData::from()`.
+
 ### Re-check no-flag (2026-06-07)
 
 ```bash

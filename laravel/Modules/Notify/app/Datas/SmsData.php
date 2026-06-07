@@ -7,9 +7,9 @@ namespace Modules\Notify\Datas;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 /**
- * @property string|null $from
- * @property string|null $recipient
- * @property string|null $body
+ * @property string $from
+ * @property string $recipient
+ * @property string $body
  */
 final class SmsData
 {

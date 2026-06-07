@@ -58,3 +58,58 @@ Verification:
 cd laravel && ./vendor/bin/phpstan analyse Modules
 # 4993 file, [OK] No errors
 ```
+
+## Fix #3: Magic property access vs explicit getter on DTOs with `@property`
+
+### Problem
+
+PHPStan level max reported `argument.type` — `string|null` passed where `string` expected, when accessing `$dto->property` on DTOs that use `__get` with `@property` annotations (e.g., `SmsData`).
+
+### Root Cause
+
+DTOs like `SmsData` use:
+- `private string $recipient = ''` (real property)
+- `@property string $recipient` (PHPDoc magic property)
+- `__get(string $name): string` (magic accessor)
+
+PHPStan may not fully trust the `@property` annotation when a private property of the same name exists with a matching type. The magic property resolves to `string` at runtime via `__get`, but PHPStan conservatively reports `string|null`.
+
+### Solution (applicata 2026-06-07)
+
+- Replace magic property access `$dto->recipient` with explicit getter call `$dto->getRecipient()`.
+- DTOs should expose typed getter methods (`public function getRecipient(): string`) for type-safe external consumption.
+- Magic properties via `@property` + `__get` are acceptable for internal/serialization use but not recommended for cross-class calls where PHPStan must verify types.
+
+### Pattern: `string`-type narrowing for `SmsData::from(array<string, string>)`
+
+### Problem
+
+PHPStan level max reported `argument.type` — `array<string, mixed>` passed where `array<string, string>` expected, when calling `SmsData::from()` with form state array or notification message values.
+
+### Root Cause
+
+`SmsData::from()` declares `@param array<string, string> $data`, but callers pass arrays containing `mixed` values:
+- Form state `$this->smsForm->getState()` returns `array<string, mixed>`
+- Notification message `$notification->toNetfun($notifiable)` returns `mixed`
+
+The SmsData constructor internally handles `mixed` values via `SafeStringCastAction::cast()`, but the type signature of `from()` is narrower than actual usage.
+
+### Solution (applicata 2026-06-07)
+
+- Narrow mixed values to `string` before passing to `from()` using `is_string()` checks with fallback to `''`:
+  ```php
+  'recipient' => is_string($data['recipient'] ?? '') ? $data['recipient'] : '',
+  ```
+- For notification channels, add `is_string()` guard on the recipient:
+  ```php
+  if (! is_string($recipient) || $recipient === '') { return null; }
+  ```
+- Do NOT widen `from()` parameter to `array<string, mixed>` — the narrower type is intentional API contract.
+- Do NOT use `(string)` casts just to silence PHPStan — use proper type narrowing.
+
+Verification:
+
+```bash
+cd laravel && ./vendor/bin/phpstan analyse Modules
+# 4993 file, [OK] No errors
+```

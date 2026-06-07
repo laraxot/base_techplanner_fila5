@@ -29,7 +29,7 @@ class NetfunChannel
         }
 
         $recipient = $notifiable->routeNotificationForNetfun($notification);
-        if (! $recipient) {
+        if (! is_string($recipient) || $recipient === '') {
             return null;
         }
 
@@ -41,11 +41,12 @@ class NetfunChannel
         $message = $notification->toNetfun($notifiable);
 
         // Crea i dati SMS
+        $body = is_string($message)
+            ? $message
+            : (string) (is_object($message) && method_exists($message, 'getContent') ? $message->getContent() : '');
         $smsData = SmsData::from([
-            'recipient' => $recipient,
-            'body' => is_string($message)
-                ? $message
-                : (is_object($message) && method_exists($message, 'getContent') ? $message->getContent() : ''),
+            'recipient' => (string) $recipient,
+            'body' => $body,
             'from' => '',
         ]);
 
