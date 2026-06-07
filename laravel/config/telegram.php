@@ -40,15 +40,9 @@ return [
              */
             'allowed_updates' => null,
             'commands' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 // Acme\Project\Commands\MyTelegramBot\BotCommand::class
-=======
                 //Acme\Project\Commands\MyTelegramBot\BotCommand::class
->>>>>>> 4b6b99016 (first commit)
-=======
                 // Acme\Project\Commands\MyTelegramBot\BotCommand::class
->>>>>>> dev
             ],
         ],
 

@@ -1,15 +1,8 @@
 <?php
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
 /**
-* ---.
-*/
+ * ---.
+ */
 declare(strict_types=1);
 
 namespace App;

@@ -106,10 +106,4 @@ return [
     'prefix' => env('CACHE_PREFIX', Str::slug((string) env('APP_NAME', 'laravel')).'-cache-'),
 
 ];
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

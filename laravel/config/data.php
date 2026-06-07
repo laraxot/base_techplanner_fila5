@@ -48,15 +48,9 @@ return [
     'casts' => [
         DateTimeInterface::class => Spatie\LaravelData\Casts\DateTimeInterfaceCast::class,
         BackedEnum::class => Spatie\LaravelData\Casts\EnumCast::class,
-<<<<<<< HEAD
-<<<<<<< HEAD
         //        Enumerable::class => Spatie\LaravelData\Casts\EnumerableCast::class,
-=======
 //        Enumerable::class => Spatie\LaravelData\Casts\EnumerableCast::class,
->>>>>>> 4b6b99016 (first commit)
-=======
         //        Enumerable::class => Spatie\LaravelData\Casts\EnumerableCast::class,
->>>>>>> dev
     ],
 
     /**
@@ -165,22 +159,6 @@ return [
      */
     'throw_when_max_transformation_depth_reached' => true,
 
-    /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * When using the `make:data` command, the package will use these settings to generate
-     * the data classes. You can override these settings by passing options to the command.
-     */
-=======
-    * When using the `make:data` command, the package will use these settings to generate
-    * the data classes. You can override these settings by passing options to the command.
-    */
->>>>>>> 4b6b99016 (first commit)
-=======
-     * When using the `make:data` command, the package will use these settings to generate
-     * the data classes. You can override these settings by passing options to the command.
-     */
->>>>>>> dev
     'commands' => [
         /**
          * Provides default configuration for the `make:data` command. These settings can be overridden with options

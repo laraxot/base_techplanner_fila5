@@ -45,13 +45,7 @@ return [
      */
     'cache_store' => null,
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     /*
      * When cache_store is enabled, this value will be used to determine
      * how long the cache will be valid. If you set this to `null` the

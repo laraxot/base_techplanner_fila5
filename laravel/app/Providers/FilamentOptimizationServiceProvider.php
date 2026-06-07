@@ -2,21 +2,9 @@
 
 namespace App\Providers;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Filament\Facades\Filament;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
-=======
-use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\View;
-use Filament\Facades\Filament;
->>>>>>> 4b6b99016 (first commit)
-=======
-use Filament\Facades\Filament;
-use Illuminate\Support\Facades\View;
-use Illuminate\Support\ServiceProvider;
->>>>>>> dev
 
 class FilamentOptimizationServiceProvider extends ServiceProvider
 {

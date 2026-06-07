@@ -280,15 +280,9 @@ return [
     'activators' => [
         'file' => [
             'class' => FileActivator::class,
-<<<<<<< HEAD
-<<<<<<< HEAD
             // 'statuses-file' => base_path('modules_statuses.json'),
-=======
             //'statuses-file' => base_path('modules_statuses.json'),
->>>>>>> 4b6b99016 (first commit)
-=======
             // 'statuses-file' => base_path('modules_statuses.json'),
->>>>>>> dev
             'statuses-file' => base_path('modules_statuses.json'),
         ],
     ],

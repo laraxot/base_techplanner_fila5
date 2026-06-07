@@ -13,10 +13,6 @@ return [
     'memory_optimization' => [
         // Disabilita lazy loading per componenti pesanti
         'disable_lazy_loading' => false,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 
         // Limita il numero di record caricati per default
         'default_records_per_page' => 25,
@@ -27,8 +23,6 @@ return [
         // Limita la profondità delle relazioni caricate
         'max_relation_depth' => 2,
 
-<<<<<<< HEAD
-=======
         
         // Limita il numero di record caricati per default
         'default_records_per_page' => 25,
@@ -39,9 +33,6 @@ return [
         // Limita la profondità delle relazioni caricate
         'max_relation_depth' => 2,
         
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         // Disabilita debug mode in produzione
         'disable_debug_mode' => env('APP_ENV') === 'production',
     ],
@@ -49,10 +40,6 @@ return [
     'performance' => [
         // Abilita compressione delle risposte
         'enable_response_compression' => true,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 
         // Limita il numero di widget per pagina
         'max_widgets_per_page' => 10,
@@ -60,8 +47,6 @@ return [
         // Abilita caching per le traduzioni
         'cache_translations' => true,
 
-<<<<<<< HEAD
-=======
         
         // Limita il numero di widget per pagina
         'max_widgets_per_page' => 10,
@@ -69,9 +54,6 @@ return [
         // Abilita caching per le traduzioni
         'cache_translations' => true,
         
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         // Limita il numero di azioni bulk
         'max_bulk_actions' => 5,
     ],
