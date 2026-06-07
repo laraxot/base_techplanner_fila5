@@ -22,16 +22,14 @@ parameters:
         - identifier: larastan.noEnvCallsOutsideOfConfig
         - '#is used zero times and is not analysed#'
         - identifier: method.unused
-        - identifier: method.internalClass
-        - identifier: function.alreadyNarrowedType
 
     excludePaths:
         - ./vendor/*
         - ./*/vendor/*
         - ./*/build/*
         - ./*/docs/*
-        - ./*/tests/*
-        - ./*/Tests/*
+        - ./*/tests/**
+        - ./*/Tests/**
         - ./*/packages/*
         - ./*/phpinsights.php
         - ./*/rector.php
