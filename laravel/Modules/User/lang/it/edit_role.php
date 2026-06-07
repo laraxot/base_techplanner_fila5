@@ -18,6 +18,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'name' => 'Edit Role',
         'plural' => 'Edit Role',
@@ -51,10 +54,13 @@ return [
             'description' => '',
         ],
     ],
+<<<<<<< HEAD
 =======
     'navigation' => [],
     'label' => '',
     'plural_label' => '',
     'fields' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

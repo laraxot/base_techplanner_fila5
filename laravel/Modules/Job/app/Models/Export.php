@@ -58,6 +58,7 @@ use Illuminate\Support\Carbon;
  * @mixin IdeHelperExport
  * @mixin IdeHelperExport
  * @mixin IdeHelperExport
+<<<<<<< HEAD
  * @mixin Eloquent
  * @mixin IdeHelperExport
  * @mixin Eloquent
@@ -65,12 +66,20 @@ use Illuminate\Support\Carbon;
  * @mixin Eloquent
  * @mixin IdeHelperExport
  * @mixin Eloquent
+=======
+ * @mixin IdeHelperExport
+ * @mixin IdeHelperExport
+ * @mixin IdeHelperExport
+>>>>>>> dev
  * @mixin IdeHelperExport
  * @mixin Eloquent
  */
 class Export extends BaseExport
 {
+<<<<<<< HEAD
     /** @var string */
+=======
+>>>>>>> dev
     protected $connection = 'job';
 
     protected $fillable = [

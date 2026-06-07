@@ -1,34 +1,49 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/theme-two",
 =======
     "name": "<nome progetto>/theme-two",
 >>>>>>> 4b6b99016 (first commit)
+=======
+    "name": "laraxot/theme-two",
+>>>>>>> dev
     "description": "Tema Two per <nome progetto>",
     "type": "theme",
     "license": "proprietary",
     "autoload": {
         "psr-4": {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "Themes\\Two\\": "app/"
 =======
             "<nome progetto>\\Themes\\Two\\": "src/"
 >>>>>>> 4b6b99016 (first commit)
+=======
+            "Themes\\Two\\": "app/"
+>>>>>>> dev
         }
     },
     "extra": {
         "laravel": {
             "providers": [
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "Themes\\Two\\ThemeServiceProvider"
 =======
                 "<nome progetto>\\Themes\\Two\\ThemeServiceProvider"
 >>>>>>> 4b6b99016 (first commit)
+=======
+                "Themes\\Two\\ThemeServiceProvider"
+>>>>>>> dev
             ]
         }
     },
     "require": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         "php": "^8.3",
         "laravel/framework": "*",
         "filament/tables": "5.x-dev",
@@ -39,24 +54,33 @@
         "filament/notifications": "5.x-dev",
         "filament/widgets": "5.x-dev",
         "filament/support": "5.x-dev"
+<<<<<<< HEAD
 =======
         "php": "^8.2",
         "laravel/framework": "*",
         "filament/filament": "*"
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10",
         "pestphp/pest": "^2.0"
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     "minimum-stability": "dev",
     "config": {
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
     }
+<<<<<<< HEAD
 =======
     "minimum-stability": "dev"
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 }

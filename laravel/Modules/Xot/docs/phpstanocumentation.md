@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Documentation - Completion Summary
 
 **Date**: [DATE]
@@ -226,3 +227,12 @@ Modules/
 **Completed By**: AI Assistant (Claude Code)
 **Date**: [DATE]
 **Status**: ✅ Documentation Complete - Ready for Development Team
+=======
+---
+module: theme
+topic: phpstanocumentation
+canonical: ../../../Themes/docs/shared-components/phpstan-documentation-complete.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-documentation-complete.md
+>>>>>>> dev

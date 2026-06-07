@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Providers\Filament;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Providers\Filament\XotBaseMainPanelProvider;
 
 class AdminPanelProvider extends XotBaseMainPanelProvider {}
@@ -18,3 +19,8 @@ class AdminPanelProvider extends XotBaseMainPanelProvider
 {
 }
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\Xot\Providers\Filament\XotBaseMainPanelProvider;
+
+class AdminPanelProvider extends XotBaseMainPanelProvider {}
+>>>>>>> dev

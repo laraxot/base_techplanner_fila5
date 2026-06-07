@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi di SushiToJsons per il Modello Comune
 
 ## Panoramica
@@ -377,3 +378,12 @@ Questo approccio offre il miglior equilibrio tra performance, flessibilità e ma
 
 *Documento creato il: 28/05/2025*  
 *Autore: Team <main module>*
+=======
+---
+module: theme
+topic: sushi-to-jsons
+canonical: ../../../Themes/docs/shared-components/sushi-to-jsons-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/sushi-to-jsons-analysis.md
+>>>>>>> dev

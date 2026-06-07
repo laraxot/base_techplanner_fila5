@@ -127,6 +127,9 @@ $gdprService->deleteUserAccount($user);
 
 ## Related Modules
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [User Module](../user/docs/readme.md) - User authentication and management
 - [Activity Module](../activity/docs/index.md) - Activity logging
 - [Notify Module](../notify/docs/index.md) - Notification system
@@ -140,17 +143,29 @@ The `.env.testing` file must be a **COPY CARBON** of `.env` with **ONLY "_test"*
 
 ❌ **NEVER invent new environment variables like**:
 ```bash
+<<<<<<< HEAD
 NOTIFY_DB_DATABASE=laravelpizza_data_test  # WRONG!
 GDPR_DB_DATABASE=laravelpizza_data_test    # WRONG!
+=======
+NOTIFY_DB_DATABASE=<nome progetto>_data_test  # WRONG!
+GDPR_DB_DATABASE=<nome progetto>_data_test    # WRONG!
+>>>>>>> dev
 ```
 
 ✅ **CORRECT approach**:
 ```bash
 # If .env has:
+<<<<<<< HEAD
 DB_DATABASE=laravelpizza_data
 
 # Then .env.testing has:
 DB_DATABASE=laravelpizza_data_test  # Only add "_test"!
+=======
+DB_DATABASE=<nome progetto>_data
+
+# Then .env.testing has:
+DB_DATABASE=<nome progetto>_data_test  # Only add "_test"!
+>>>>>>> dev
 ```
 
 See [Database Testing Configuration](./database-testing-configuration.md) for complete details.
@@ -288,12 +303,15 @@ All module connections are automatically mapped to the test MySQL connection def
 
 ## Marketing & Conversion
 - [Clickbait Marketing Best Practices](../themes/meetup/docs/clickbait-marketing-best-practices.md) - Ethical clickbait techniques for conversion optimization
+<<<<<<< HEAD
 =======
 - [User Module](../User/docs/README.md) - User authentication and management
 - [Activity Module](../Activity/docs/index.md) - Activity logging
 - [Notify Module](../Notify/docs/index.md) - Notification system
 - [Xot Module](../Xot/docs/index.md) - Core base classes
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Troubleshooting
 Common issues and solutions:
@@ -302,7 +320,14 @@ Common issues and solutions:
 - Account deletion complications
 - Privacy policy version management
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Hardcoded strings in multilingual sites
 - Translation key inconsistencies
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+- Hardcoded strings in multilingual sites
+- Translation key inconsistencies
+
+- [Conflict Resolution](conflict-resolution.md)
+>>>>>>> dev

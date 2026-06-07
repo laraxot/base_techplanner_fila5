@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Console\Commands;
 
 use Illuminate\Console\Command;
+<<<<<<< HEAD
 use RuntimeException;
+=======
+>>>>>>> dev
 
 use function Safe\shell_exec;
 
@@ -32,12 +35,20 @@ class ImportMdbToMySQL extends Command
     {
         $mdbFile = $this->ask('Inserisci il percorso del file .mdb');
         if (! is_string($mdbFile)) {
+<<<<<<< HEAD
             throw new RuntimeException('Il percorso del file deve essere una stringa');
+=======
+            throw new \RuntimeException('Il percorso del file deve essere una stringa');
+>>>>>>> dev
         }
 
         $mysqlDb = $this->ask('Inserisci il nome del database MySQL');
         if (! is_string($mysqlDb)) {
+<<<<<<< HEAD
             throw new RuntimeException('Il nome del database deve essere una stringa');
+=======
+            throw new \RuntimeException('Il nome del database deve essere una stringa');
+>>>>>>> dev
         }
 
         $this->info("File .mdb: {$mdbFile}");
@@ -90,7 +101,11 @@ class ImportMdbToMySQL extends Command
     /**
      * Importa le tabelle in MySQL.
      *
+<<<<<<< HEAD
      * @param  array<int, string>  $tables
+=======
+     * @param array<int, string> $tables
+>>>>>>> dev
      */
     private function importTablesIntoMySQL(array $tables, string $mysqlDb): void
     {

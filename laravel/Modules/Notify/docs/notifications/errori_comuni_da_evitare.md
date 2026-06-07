@@ -1,10 +1,19 @@
+<<<<<<< HEAD
 # Errori Comuni da Evitare nelle Implementazioni di Moduli SaluteOra
+=======
+# Errori Comuni da Evitare nelle Implementazioni di Moduli Quaeris
+>>>>>>> dev
 
 ## Errori di Struttura Directory e Namespace
 
 1. **Errore di Case nelle Directory**
+<<<<<<< HEAD
    - ❌ ERRATO: `/var/www/html/saluteora/laravel/Modules/Notify/App/Actions/`
    - ✅ CORRETTO: `/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/`
+=======
+- ❌ ERRATO: `/var/www/html/Quaeris/laravel/Modules/Notify/App/Actions/`
+   - ✅ CORRETTO: `/var/www/html/Quaeris/laravel/Modules/Notify/app/Actions/`
+>>>>>>> dev
    
    > Le directory standard di Laravel sono sempre in lowercase (`app`, `config`, `resources`, ecc.)
 

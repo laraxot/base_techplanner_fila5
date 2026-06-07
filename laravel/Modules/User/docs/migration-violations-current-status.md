@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Updated Migration Violations Analysis - User Module
 
 ## Current State vs. Initial Analysis
@@ -41,3 +42,12 @@ Upon re-evaluation, I found that many of the duplicates identified in the initia
 ## Conclusion
 
 The User module migration situation has improved significantly since the initial analysis. Most of the duplicate migration violations have already been addressed. Only one clear violation remains: the .old backup file that needs to be removed to maintain compliance with the Laraxot philosophy of "ONE TABLE, ONE MIGRATION, ONE MODULE".
+=======
+---
+module: theme
+topic: migration-violations-current-status
+canonical: ../../../Themes/docs/shared-components/migration-violations-current-status.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-violations-current-status.md
+>>>>>>> dev

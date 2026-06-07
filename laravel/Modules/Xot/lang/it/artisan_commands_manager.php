@@ -66,6 +66,9 @@ return [
     ],
     'title' => 'artisan commands manager',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Artisan Commands Manager',
     'plural_label' => 'Artisan Commands Manager (Plurale)',
     'fields' => [
@@ -88,6 +91,9 @@ return [
             'description' => '',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -11,7 +11,11 @@
 return [
     // Configurazioni di base (applicate a tutti i provider)
     'from' => env('SMS_FROM', '<nome progetto>'),
+<<<<<<< HEAD
     'from' => env('SMS_FROM', 'SaluteOra'),
+=======
+'from' => env('SMS_FROM', 'Quaeris'),
+>>>>>>> dev
     'retry' => [
         'attempts' => env('SMS_RETRY_ATTEMPTS', 3),
         'delay' => env('SMS_RETRY_DELAY', 60),
@@ -27,7 +31,11 @@ return [
         'netfun' => [
             'api_key' => env('NETFUN_API_KEY'),
             'sender' => env('NETFUN_SENDER', '<nome progetto>'),
+<<<<<<< HEAD
             'sender' => env('NETFUN_SENDER', 'SaluteOra'),
+=======
+'sender' => env('NETFUN_SENDER', 'Quaeris'),
+>>>>>>> dev
             'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
         ],
         'twilio' => [
@@ -100,14 +108,22 @@ Quando configuri il file `.env`, utilizza questi nomi di variabili:
 
 # Configurazione generale SMS
 SMS_FROM=<nome progetto>
+<<<<<<< HEAD
 SMS_FROM=SaluteOra
+=======
+SMS_FROM=Quaeris
+>>>>>>> dev
 SMS_RETRY_ATTEMPTS=3
 SMS_RETRY_DELAY=60
 
 # Netfun
 NETFUN_API_KEY=your_api_key_here
 NETFUN_SENDER=<nome progetto>
+<<<<<<< HEAD
 NETFUN_SENDER=SaluteOra
+=======
+NETFUN_SENDER=Quaeris
+>>>>>>> dev
 NETFUN_API_URL=https://v2.smsviainternet.it/api/rest/v1/sms-batch.json
 
 # Twilio

@@ -2,11 +2,18 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\Cms\Tests\TestCase::class);
 
 use Illuminate\Support\Facades\File;
 use Modules\Cms\Actions\Module\FixJigSawByModuleAction;
 use Nwidart\Modules\Laravel\Module;
+=======
+use Illuminate\Support\Facades\File;
+use Modules\Cms\Actions\Module\FixJigSawByModuleAction;
+use Nwidart\Modules\Laravel\Module;
+use Symfony\Component\Finder\SplFileInfo;
+>>>>>>> dev
 
 test('FixJigSawByModuleAction can be instantiated', function () {
     $action = new FixJigSawByModuleAction();
@@ -31,7 +38,11 @@ test('FixJigSawByModuleAction execute method returns array', function () {
     // Mock File facade to return our test stub file
     File::shouldReceive('allFiles')
         ->with(Mockery::any())
+<<<<<<< HEAD
         ->andReturn([new Symfony\Component\Finder\SplFileInfo($stubsDir.'/test.stub', '', 'test.stub')]);
+=======
+        ->andReturn([new SplFileInfo($stubsDir.'/test.stub', '', 'test.stub')]);
+>>>>>>> dev
 
     $action = new FixJigSawByModuleAction();
     $result = $action->execute($module);

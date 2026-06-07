@@ -31,38 +31,54 @@ Questa guida fornisce indicazioni pratiche su come implementare i principi UX do
   --primary-focus: hsl(220, 70%, 40%);
   --primary-content: hsl(220, 70%, 98%);
 <<<<<<< HEAD
+<<<<<<< HEAD
   
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+  
+>>>>>>> dev
   /* Colori secondari */
   --secondary: hsl(250, 60%, 50%);
   --secondary-focus: hsl(250, 60%, 40%);
   --secondary-content: hsl(250, 60%, 98%);
 <<<<<<< HEAD
-  
-=======
-
->>>>>>> 4b6b99016 (first commit)
-  /* Colori neutrali */
-  --neutral: hsl(220, 10%, 40%);
-  --neutral-focus: hsl(220, 10%, 30%);
-  --neutral-content: hsl(220, 10%, 98%);
 <<<<<<< HEAD
   
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+  
+>>>>>>> dev
+  /* Colori neutrali */
+  --neutral: hsl(220, 10%, 40%);
+  --neutral-focus: hsl(220, 10%, 30%);
+  --neutral-content: hsl(220, 10%, 98%);
+<<<<<<< HEAD
+<<<<<<< HEAD
+  
+=======
+
+>>>>>>> 4b6b99016 (first commit)
+=======
+  
+>>>>>>> dev
   /* Colori di stato */
   --success: hsl(150, 80%, 40%);
   --warning: hsl(40, 90%, 50%);
   --error: hsl(0, 90%, 60%);
   --info: hsl(200, 90%, 60%);
 <<<<<<< HEAD
+<<<<<<< HEAD
   
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+  
+>>>>>>> dev
   /* Background e testo */
   --base-100: hsl(220, 20%, 98%);
   --base-200: hsl(220, 20%, 95%);
@@ -187,11 +203,15 @@ TextInput::make('name')
         <!-- contenuto card -->
     </x-dashboard.card>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     <x-dashboard.card title="Appuntamenti">
         <!-- contenuto card -->
     </x-dashboard.card>
     
+<<<<<<< HEAD
 =======
 
     <x-dashboard.card title="Appuntamenti">
@@ -199,6 +219,8 @@ TextInput::make('name')
     </x-dashboard.card>
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     <x-dashboard.card title="Dati ISEE">
         <!-- contenuto card -->
     </x-dashboard.card>
@@ -217,10 +239,14 @@ TextInput::make('name')
         @endif
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     <div>
         {{ $slot }}
     </div>
@@ -254,10 +280,14 @@ Organizzare gli elementi dashboard in ordine di importanza:
         </div>
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     <!-- Contenuto principale -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <!-- Colonna sinistra -->
@@ -267,16 +297,22 @@ Organizzare gli elementi dashboard in ordine di importanza:
                 <!-- Contenuto card -->
             </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             
             <!-- Altre sezioni -->
         </div>
         
+<<<<<<< HEAD
 =======
 
             <!-- Altre sezioni -->
         </div>
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         <!-- Colonna destra (sidebar) -->
         <div>
             <!-- Informazioni riassuntive e azioni -->
@@ -295,16 +331,22 @@ Organizzare gli elementi dashboard in ordine di importanza:
     <div class="border-b mb-4">
         <nav class="flex -mb-px">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <button 
                 @click="activeTab = 'info'" 
 =======
             <button
                 @click="activeTab = 'info'"
 >>>>>>> 4b6b99016 (first commit)
+=======
+            <button 
+                @click="activeTab = 'info'" 
+>>>>>>> dev
                 :class="{'border-primary text-primary': activeTab === 'info', 'border-transparent': activeTab !== 'info'}"
                 class="px-4 py-2 border-b-2 font-medium text-sm">
                 Informazioni
             </button>
+<<<<<<< HEAD
 <<<<<<< HEAD
             <button 
                 @click="activeTab = 'documents'" 
@@ -312,10 +354,15 @@ Organizzare gli elementi dashboard in ordine di importanza:
             <button
                 @click="activeTab = 'documents'"
 >>>>>>> 4b6b99016 (first commit)
+=======
+            <button 
+                @click="activeTab = 'documents'" 
+>>>>>>> dev
                 :class="{'border-primary text-primary': activeTab === 'documents', 'border-transparent': activeTab !== 'documents'}"
                 class="px-4 py-2 border-b-2 font-medium text-sm">
                 Documenti
             </button>
+<<<<<<< HEAD
 <<<<<<< HEAD
             <button 
                 @click="activeTab = 'appointments'" 
@@ -323,6 +370,10 @@ Organizzare gli elementi dashboard in ordine di importanza:
             <button
                 @click="activeTab = 'appointments'"
 >>>>>>> 4b6b99016 (first commit)
+=======
+            <button 
+                @click="activeTab = 'appointments'" 
+>>>>>>> dev
                 :class="{'border-primary text-primary': activeTab === 'appointments', 'border-transparent': activeTab !== 'appointments'}"
                 class="px-4 py-2 border-b-2 font-medium text-sm">
                 Appuntamenti
@@ -330,10 +381,14 @@ Organizzare gli elementi dashboard in ordine di importanza:
         </nav>
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     <div x-show="activeTab === 'info'">
         <!-- Contenuto tab info -->
     </div>
@@ -510,10 +565,14 @@ Repeater::make('documents')
         // campi documento
     ])
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->itemLabel(fn (array $state): ?string => 
 =======
     ->itemLabel(fn (array $state): ?string =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+    ->itemLabel(fn (array $state): ?string => 
+>>>>>>> dev
         $state['title'] ?? null
     )
     ->collapsible()
@@ -529,7 +588,11 @@ Per approfondimenti, consultare:
 - [UX del Wizard di Registrazione](/project_docs/07-frontend/ux-wizard-registrazione-paziente.md)
 - [DaisyUI Documentation](https://daisyui.com/components/)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament Documentation](https://filamentphp.com/project_docs/forms) 
 =======
 - [Filament Documentation](https://filamentphp.com/project_docs/forms)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Filament Documentation](https://filamentphp.com/project_docs/forms) 
+>>>>>>> dev

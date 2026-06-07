@@ -18,10 +18,14 @@
 
 **Related Documentation**:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [User Module Overview](../index.md)
 - [Team Management](./team_management.md)
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../database_structure.md)
+<<<<<<< HEAD
 =======
 - [User Module Overview](../INDEX.md)
 - [Team Management](./TEAM_MANAGEMENT.md)
@@ -29,3 +33,6 @@
 - [Database Structure](../DATABASE_STRUCTURE.md)
 >>>>>>> 4b6b99016 (first commit)
 - [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)
+=======
+- [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
+>>>>>>> dev

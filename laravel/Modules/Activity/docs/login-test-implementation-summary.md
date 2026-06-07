@@ -175,14 +175,19 @@ Pattern avanzato per testare widget Filament Livewire con form, validazione, not
 ### **Project Documentation**
 - [LoginTest.php](../laravel/Modules/Cms/tests/Feature/Auth/LoginTest.php) - Main test file
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Implementation Guide](../laravel/modules/cms/docs/tests/login-test-implementation.md) - Complete documentation
 =======
 - [Implementation Guide](../laravel/Modules/Cms/docs/tests/login-test-implementation.md) - Complete documentation
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Implementation Guide](../laravel/modules/cms/docs/tests/login-test-implementation.md) - Complete documentation
+>>>>>>> dev
 - [LoginWidget](../laravel/Modules/User/app/Filament/Widgets/LoginWidget.php) - Widget under test
 - [Login Page](../laravel/Themes/One/resources/views/pages/auth/login.blade.php) - UI page
 
 ### **Related Components**
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [UserFactory Implementation](../laravel/modules/<main module>/docs/factories/userfactory-implementation-final.md) - Enterprise factory
 - [STI Architecture](../laravel/modules/<main module>/docs/models/sti-architecture.md) - User type system
@@ -192,6 +197,11 @@ Pattern avanzato per testare widget Filament Livewire con form, validazione, not
 - [STI Architecture](../laravel/Modules/<main module>/docs/models/sti-architecture.md) - User type system
 - [Authentication Flow](../laravel/Modules/User/docs/authentication-flow.md) - Login process
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [UserFactory Implementation](../laravel/modules/<main module>/docs/factories/userfactory-implementation-final.md) - Enterprise factory
+- [STI Architecture](../laravel/modules/<main module>/docs/models/sti-architecture.md) - User type system
+- [Authentication Flow](../laravel/modules/user/docs/authentication-flow.md) - Login process
+>>>>>>> dev
 
 ### **Testing Framework**
 - [Pest PHP](https://pestphp.com/) - Modern testing framework
@@ -396,14 +406,19 @@ Pattern avanzato per testare widget Filament Livewire con form, validazione, not
 ### **Project Documentation**
 - [LoginTest.php](../laravel/Modules/Cms/tests/Feature/Auth/LoginTest.php) - Main test file
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Implementation Guide](../laravel/modules/cms/docs/tests/login-test-implementation.md) - Complete documentation
 =======
 - [Implementation Guide](../laravel/Modules/Cms/docs/tests/login-test-implementation.md) - Complete documentation
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Implementation Guide](../laravel/modules/cms/docs/tests/login-test-implementation.md) - Complete documentation
+>>>>>>> dev
 - [LoginWidget](../laravel/Modules/User/app/Filament/Widgets/LoginWidget.php) - Widget under test
 - [Login Page](../laravel/Themes/One/resources/views/pages/auth/login.blade.php) - UI page
 
 ### **Related Components**
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [UserFactory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md) - Enterprise factory
 - [STI Architecture](../laravel/modules/<nome progetto>/docs/models/sti-architecture.md) - User type system
@@ -413,6 +428,11 @@ Pattern avanzato per testare widget Filament Livewire con form, validazione, not
 - [STI Architecture](../laravel/Modules/<nome progetto>/docs/models/sti-architecture.md) - User type system
 - [Authentication Flow](../laravel/Modules/User/docs/authentication-flow.md) - Login process
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [UserFactory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md) - Enterprise factory
+- [STI Architecture](../laravel/modules/<nome progetto>/docs/models/sti-architecture.md) - User type system
+- [Authentication Flow](../laravel/modules/user/docs/authentication-flow.md) - Login process
+>>>>>>> dev
 
 ### **Testing Framework**
 - [Pest PHP](https://pestphp.com/) - Modern testing framework

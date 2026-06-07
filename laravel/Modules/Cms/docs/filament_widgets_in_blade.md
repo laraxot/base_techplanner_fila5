@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Utilizzo dei Widget Filament nelle Viste Blade in il progetto
 
 ## Introduzione
@@ -108,3 +109,12 @@ public function registerFilamentWidgets(): void
 ## Conclusione
 
 L'utilizzo corretto dei widget Filament nelle viste Blade può migliorare significativamente l'esperienza utente e la manutenibilità del codice. Seguendo le best practices descritte in questo documento, è possibile evitare errori comuni e sfruttare appieno le potenzialità di Filament in il progetto.
+=======
+---
+module: theme
+topic: filament_widgets_in_blade
+canonical: ../../../Themes/docs/shared-components/filament-widgets-in-blade.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-widgets-in-blade.md
+>>>>>>> dev

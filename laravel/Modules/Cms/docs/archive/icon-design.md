@@ -41,11 +41,16 @@ FilamentIcon::register([
 ```
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Design System Globale](../../../../docs/module-icons-design-system.md)
 <<<<<<< HEAD
 - [CMS Module Documentation](./readme.md)
 =======
 - [CMS Module Documentation](./README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Design System Globale](../../../../../docs/module-icons-design-system.md)
+- [CMS Module Documentation](./readme.md)
+>>>>>>> dev
 
 *Creato: Agosto 2025*

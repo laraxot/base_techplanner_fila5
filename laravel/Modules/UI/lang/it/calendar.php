@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'months' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         0 => 'Gennaio',
         1 => 'Febbraio',
         2 => 'Marzo',
@@ -17,6 +20,7 @@ return [
         9 => 'Ottobre',
         10 => 'Novembre',
         11 => 'Dicembre',
+<<<<<<< HEAD
 =======
         '0' => 'Gennaio',
         '1' => 'Febbraio',
@@ -31,6 +35,8 @@ return [
         '10' => 'Novembre',
         '11' => 'Dicembre',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'days_short' => [
         'mon' => 'Lun',
@@ -61,6 +67,9 @@ return [
     'no_dates_available' => 'Nessuna data disponibile',
     'selected_date' => 'Data selezionata',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Calendar',
     'plural_label' => 'Calendar (Plurale)',
     'fields' => [
@@ -94,6 +103,9 @@ return [
             'label' => 'Elimina Calendar',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

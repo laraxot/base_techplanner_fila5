@@ -79,12 +79,17 @@ I file di traduzione nel modulo Lang devono seguire una struttura precisa dei pe
 ## Collegamenti alla documentazione correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole generali per i file di traduzione](/laravel/modules/xot/docs/translation_rules.md)
 - [Errori comuni nei file di traduzione](/laravel/modules/lang/docs/errori_comuni_traduzione.md)
 =======
 - [Regole generali per i file di traduzione](/laravel/Modules/Xot/docs/translation_rules.md)
 - [Errori comuni nei file di traduzione](/laravel/Modules/Lang/docs/errori_comuni_traduzione.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Regole generali per i file di traduzione](/laravel/Modules/Xot/docs/translation_rules.md)
+- [Errori comuni nei file di traduzione](/laravel/Modules/Lang/docs/errori_comuni_traduzione.md)
+>>>>>>> dev
 - [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
 # Struttura corretta per i file di traduzione nel modulo Lang
 
@@ -167,14 +172,20 @@ I file di traduzione nel modulo Lang devono seguire una struttura precisa dei pe
 ## Collegamenti alla documentazione correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole generali per i file di traduzione](/laravel/modules/xot/docs/translation_rules.md)
 - [Errori comuni nei file di traduzione](/laravel/modules/lang/docs/errori_comuni_traduzione.md)
 - [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
 
 =======
+=======
+>>>>>>> dev
 - [Regole generali per i file di traduzione](/laravel/Modules/Xot/docs/translation_rules.md)
 - [Errori comuni nei file di traduzione](/laravel/Modules/Lang/docs/errori_comuni_traduzione.md)
 - [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
 
 *Ultimo aggiornamento: 3 Giugno 2025*
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

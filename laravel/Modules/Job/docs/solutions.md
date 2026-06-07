@@ -350,6 +350,7 @@ class RetryTest extends TestCase {
    - Aggiornamento strategie retry
 ## Collegamenti tra versioni di solutions.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [solutions.md](../../../gdpr/docs/solutions.md)
 * [solutions.md](../../../xot/docs/solutions.md)
 * [solutions.md](../../../job/docs/solutions.md)
@@ -358,6 +359,11 @@ class RetryTest extends TestCase {
 * [solutions.md](../../../Xot/docs/solutions.md)
 * [solutions.md](../../../Job/docs/solutions.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [solutions.md](../../../gdpr/docs/solutions.md)
+* [solutions.md](../../../xot/docs/solutions.md)
+* [solutions.md](../../../job/docs/solutions.md)
+>>>>>>> dev
 
 ### Versione Incoming
 

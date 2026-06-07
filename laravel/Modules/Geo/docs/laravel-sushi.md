@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Laravel Sushi: Analisi Approfondita
 
 ## Cos'è Laravel Sushi
@@ -502,3 +503,12 @@ Per procedere, si consiglia di:
 
 *Documento creato il: 28/05/2025*  
 *Autore: Team <main module>*
+=======
+---
+module: theme
+topic: laravel-sushi
+canonical: ../../../Themes/docs/shared-components/laravel-sushi-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/laravel-sushi-analysis.md
+>>>>>>> dev

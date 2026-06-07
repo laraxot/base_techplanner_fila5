@@ -102,6 +102,9 @@ I blocchi sono componenti modulari che:
 ## Collegamenti
 - [Glossario Tecnico](../glossary.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Guida allo Stile](../style/readme.md)
 - [Documentazione Blocchi](../blocks/readme.md)
 
@@ -122,6 +125,7 @@ I blocchi sono componenti modulari che:
 * [structure.md](laravel/modules/cms/docs/structure.md)
 * [structure.md](laravel/modules/cms/docs/themes/structure.md)
 * [structure.md](laravel/modules/cms/docs/components/structure.md)
+<<<<<<< HEAD
 =======
 - [Guida allo Stile](../style/README.md)
 - [Documentazione Blocchi](../blocks/README.md)
@@ -144,3 +148,5 @@ I blocchi sono componenti modulari che:
 * [structure.md](laravel/Modules/Cms/docs/themes/structure.md)
 * [structure.md](laravel/Modules/Cms/docs/components/structure.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

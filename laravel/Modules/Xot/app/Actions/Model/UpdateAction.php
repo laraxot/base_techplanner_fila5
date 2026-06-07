@@ -18,7 +18,11 @@ class UpdateAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> dev
      */
     public function execute(Model $model, array $data, array $rules): Model
     {
@@ -27,7 +31,11 @@ class UpdateAction
 
         $keyName = $model->getKeyName();
         // $data['updated_by'] = authId();
+<<<<<<< HEAD
         if ($model->getKey() === null) {
+=======
+        if (null === $model->getKey()) {
+>>>>>>> dev
             $key = $data[$keyName];
             /** @var array<string, mixed> $data */
             $data = collect($data)->except($keyName)->toArray();

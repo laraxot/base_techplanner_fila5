@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ---
@@ -18,3 +19,6 @@ https://nome_dominio/deploy/index.php
 
 tutto deploy è una cartella caricata dentro la cartella public_html del dominio interessato.
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

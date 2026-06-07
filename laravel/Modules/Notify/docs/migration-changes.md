@@ -90,6 +90,7 @@
 ## Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole Migrazioni](./migration_rules.md)
 - [Documentazione Template](./email_templates.md)
 - [Best Practices Database](../../../docs/best-practices/database.md)
@@ -100,3 +101,9 @@
 - [Best Practices Database](../../../docs/best-practices/database.md)
 - [Proposta Slug Template](./EMAIL_TEMPLATE_SLUG_PROPOSAL.md) 
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Regole Migrazioni](./migration_rules.md)
+- [Documentazione Template](./email_templates.md)
+- [Best Practices Database](../../../../docs/best-practices/database.md)
+- [Proposta Slug Template](./email_template_slug_proposal.md) 
+>>>>>>> dev

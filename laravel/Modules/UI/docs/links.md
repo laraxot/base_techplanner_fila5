@@ -1,9 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 ---------------------------------------------------------------------------------------------------
 Laravel URL Redirects with Optional Protected Url Passwords
 https://codebrisk.com/blog/laravel-url-redirects-with-optional-protected-url-passwords
 composer require yorcreative/laravel-urlshortener
 ---------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 =======
 # Collegamenti Modulo UI
 
@@ -73,3 +77,5 @@ composer require yorcreative/laravel-urlshortener
 
 ---
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

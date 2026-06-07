@@ -1,14 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 /**
  * @see https://laraveldaily.com/post/filament-custom-edit-profile-page-multiple-forms-full-design
  */
 
+=======
+>>>>>>> dev
 declare(strict_types=1);
 
 namespace Modules\Cms\Filament\Front\Pages;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Modules\Tenant\Services\TenantService;
@@ -29,22 +33,42 @@ class Welcome extends XotBasePage
     // use InteractsWithForms;
 
     // protected static string $view = 'cms::filament.front.pages.welcome';
+=======
+use Modules\Xot\Filament\Pages\XotBasePage;
+
+class Welcome extends XotBasePage
+{
+    public string $view_type = 'home';
+
+    /** @var array<string, mixed> */
+    public array $containers = [];
+
+    /** @var array<string, mixed> */
+    public array $items = [];
+
+    public ?Model $instanceModel = null;
+
+>>>>>>> dev
     protected string $view = 'pub_theme::home';
 
     protected static string $layout = 'pub_theme::components.layouts.app';
 
     public function mount(): void
     {
+<<<<<<< HEAD
         $lang = request('lang') ?? app()->getLocale();
         if (is_string($lang)) {
             app()->setLocale($lang);
         }
         [$this->containers, $this->items] = params2ContainerItem();
+=======
+>>>>>>> dev
         $this->initView();
     }
 
     public function getViewData(): array
     {
+<<<<<<< HEAD
         $data = [];
         if ([] !== $this->containers) {
             $container_last = last($this->containers);
@@ -76,10 +100,14 @@ class Welcome extends XotBasePage
         }
 
         return $data;
+=======
+        return [];
+>>>>>>> dev
     }
 
     public function initView(): void
     {
+<<<<<<< HEAD
         $containers = $this->containers;
         $items = $this->items;
 
@@ -160,5 +188,11 @@ class Welcome extends XotBasePage
         $this->instanceModel = $model;
 
         return $this;
+=======
+        $primaryView = $this->view;
+        if (! view()->exists($primaryView)) {
+            $this->view = 'cms::filament.front.pages.welcome';
+        }
+>>>>>>> dev
     }
 }

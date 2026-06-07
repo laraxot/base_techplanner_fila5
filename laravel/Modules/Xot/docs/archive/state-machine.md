@@ -26,8 +26,13 @@
 - [../../<nome progetto>/docs/state-machine.md](../../<nome progetto>/docs/state-machine.md)
 - [../../<nome progetto>/docs/state-machine.md](../../<nome progetto>/docs/state-machine.md)
 - [../../<nome progetto>/docs/state-machine.md](../../<nome progetto>/docs/state-machine.md)
+<<<<<<< HEAD
 - [../../../docs/state-machine.md](../../../docs/state-machine.md)
 - [../../../docs/state-machine.md](../../../docs/state-machine.md)
+=======
+- [../../../../docs/state-machine.md](../../../../docs/state-machine.md)
+- [../../../../docs/state-machine.md](../../../../docs/state-machine.md)
+>>>>>>> dev
 - [../../<nome progetto>/docs/state-machine.md](../../<nome progetto>/docs/state-machine.md)
 - [../../<nome progetto>/docs/state-machine.md](../../<nome progetto>/docs/state-machine.md)
 - [../../<nome progetto>/docs/state-machine.md](../../<nome progetto>/docs/state-machine.md)
@@ -62,8 +67,13 @@
 - [../../<nome progetto>/docs/state-machine.md](../../<nome progetto>/docs/state-machine.md)
 - [../../<nome progetto>/docs/state-machine.md](../../<nome progetto>/docs/state-machine.md)
 - [../../<nome progetto>/docs/state-machine.md](../../<nome progetto>/docs/state-machine.md)
+<<<<<<< HEAD
 - [../../../docs/state-machine.md](../../../docs/state-machine.md)
 - [../../../docs/state-machine.md](../../../docs/state-machine.md)
+=======
+- [../../../../docs/state-machine.md](../../../../docs/state-machine.md)
+- [../../../../docs/state-machine.md](../../../../docs/state-machine.md)
+>>>>>>> dev
 - [../../.windsurf/rules/filament-state-transitions.mdc](../../.windsurf/rules/filament-state-transitions.mdc)
 - [../../.cursor/rules/filament-state-transitions.mdc](../../.cursor/rules/filament-state-transitions.mdc)
 - [../../<nome progetto>/docs/state-machine.md](../../<nome progetto>/docs/state-machine.md)

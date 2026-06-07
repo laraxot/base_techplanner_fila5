@@ -15,6 +15,9 @@ return [
         'id' => [
             'label' => 'ID',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -60,6 +63,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'job_id' => [
@@ -83,6 +87,8 @@ return [
         'completed_at' => [
             'label' => 'Abgeschlossen am',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [

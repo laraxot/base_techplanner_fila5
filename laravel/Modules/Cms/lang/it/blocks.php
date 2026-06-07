@@ -28,6 +28,24 @@ return [
             'orientation' => 'Orientamento',
         ],
     ],
+<<<<<<< HEAD
+=======
+    'header_nav' => [
+        'label' => 'Navigazione Header',
+        'fields' => [
+            'label' => 'Etichetta',
+            'url' => 'URL',
+            'data_element' => 'Data Element',
+            'nav_group' => 'Gruppo Navigazione',
+            'type' => 'Tipo',
+            'order' => 'Ordine',
+            'enabled' => 'Abilitato',
+            'visible' => 'Visibile',
+            'active_patterns' => 'Pattern Active',
+            'children' => 'Sottomenu',
+        ],
+    ],
+>>>>>>> dev
     'actions' => [
         'label' => 'Azioni',
         'fields' => [
@@ -143,6 +161,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Blocks',
     'plural_label' => 'Blocks (Plurale)',
     'fields' => [
@@ -165,6 +186,9 @@ return [
             'description' => '',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

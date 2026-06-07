@@ -14,6 +14,9 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al progetto.
 ## Collegamenti tra versioni di README.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -90,6 +93,7 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../cms/project_docs/components/readme.md)
 * [README.md](../../../../themes/two/project_docs/readme.md)
 * [README.md](../../../../themes/one/project_docs/readme.md)
+<<<<<<< HEAD
 =======
 * [README.md](bashscripts/project_docs/README.md)
 * [README.md](bashscripts/project_docs/it/README.md)
@@ -168,3 +172,5 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../../Themes/Two/project_docs/README.md)
 * [README.md](../../../../Themes/One/project_docs/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

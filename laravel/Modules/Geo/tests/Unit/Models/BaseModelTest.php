@@ -2,10 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\Geo\Tests\TestCase::class);
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Geo\Models\BaseModel;
+=======
+namespace Modules\Geo\Tests\Unit\Models;
+
+uses(TestCase::class);
+
+use Illuminate\Database\Eloquent\Model;
+use Modules\Geo\Models\BaseModel;
+use Modules\Geo\Tests\TestCase;
+>>>>>>> dev
 
 beforeEach(function () {
     $this->baseModel = new class extends BaseModel {

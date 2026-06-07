@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Completamento Traduzioni Password - 2025
 
 ## Problema Identificato
@@ -125,3 +126,12 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
 *Autore: Sistema di Audit Traduzioni*
+=======
+---
+module: theme
+topic: password-translation-completion-2025
+canonical: ../../../Themes/docs/shared-components/password-translation-completion-2025.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/password-translation-completion-2025.md
+>>>>>>> dev

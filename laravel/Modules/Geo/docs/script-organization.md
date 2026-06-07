@@ -130,6 +130,9 @@ Ogni script deve includere:
 - [Database Seeding](database-seeding.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

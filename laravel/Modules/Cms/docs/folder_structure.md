@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura delle Cartelle Coinvolte nel CmsServiceProvider
 
 **Obiettivo**: Documentare le directory e i file chiave utilizzati da `CmsServiceProvider` per la gestione della localizzazione e del tema pubblicazione, applicando principi di Clean Code (Single Responsibility, nomi chiari, Feature Folder Pattern).
@@ -35,3 +36,12 @@
 
 ---
 *Documento generato per allineare la struttura del progetto ai principi di Clean Code.*
+=======
+---
+module: theme
+topic: folder_structure
+canonical: ../../../Themes/docs/shared-components/folder-structure.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/folder-structure.md
+>>>>>>> dev

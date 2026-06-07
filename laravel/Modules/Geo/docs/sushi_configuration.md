@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Configurazione Sushi
 
 ## Descrizione
@@ -134,3 +135,12 @@ Gli attributi fillable definiscono quali campi possono essere assegnati in massa
 - [Sushi Documentation](https://github.com/calebporzio/sushi)
 - [Comune Model](comune-model.md)
 - [Sushi Command](sushi-command.md) 
+=======
+---
+module: theme
+topic: sushi_configuration
+canonical: ../../../Themes/docs/shared-components/sushi-configuration.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/sushi-configuration.md
+>>>>>>> dev

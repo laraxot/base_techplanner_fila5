@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Fixes - Tenant Module - [DATE]
 =======
 # PHPStan Fixes - Tenant Module - 2025-10-13
@@ -221,3 +222,12 @@ The `Tenant` module currently has 689 PHPStan errors spread across several test 
 5.  **Commit:** Once a file/logical set of files is completely clean, commit the changes.
 
 This systematic approach will ensure that all PHPStan errors in the `Tenant` module are addressed while maintaining code quality standards.
+=======
+---
+module: theme
+topic: phpstan-fixes
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-2025-10-13.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-2025-10-13.md
+>>>>>>> dev

@@ -25,6 +25,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'History',
     'plural_label' => 'History (Plurale)',
     'navigation' => [
@@ -69,6 +72,9 @@ return [
             'label' => 'Elimina History',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -58,10 +58,14 @@ return [
             'driver' => 'local',
             'root' => public_path('/'),
 <<<<<<< HEAD
+<<<<<<< HEAD
             // 'url' => url('/'),
 =======
             //'url' => url('/'),
 >>>>>>> 4b6b99016 (first commit)
+=======
+            // 'url' => url('/'),
+>>>>>>> dev
             'url' => '/',
             'visibility' => 'public',
         ],
@@ -74,6 +78,7 @@ return [
         'cache' => [
             'driver' => 'local',
 <<<<<<< HEAD
+<<<<<<< HEAD
             // 'root' => storage_path('app/public'),
             'root' => base_path('../cache'),
             // 'url' => env('APP_URL').'/storage',
@@ -82,6 +87,11 @@ return [
             'root' => base_path('../cache'),
             //'url' => env('APP_URL').'/storage',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            // 'root' => storage_path('app/public'),
+            'root' => base_path('../cache'),
+            // 'url' => env('APP_URL').'/storage',
+>>>>>>> dev
             'visibility' => 'public',
         ],
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Siti di Riferimento per UI/UX in Ambito Sanitario
 
 Questo documento elenca siti web e applicazioni in ambito sanitario che possono servire come ispirazione per il design UI/UX di il progetto, evidenziando elementi di design particolarmente riusciti.
@@ -170,3 +171,12 @@ Per ogni sito, vengono valutati i seguenti aspetti:
 L'analisi di questi siti di riferimento offre una base solida per il design UI/UX di il progetto. Identificando le migliori pratiche nel settore sanitario e applicando i principi di design moderno, possiamo creare un'interfaccia che sia al contempo funzionale, accessibile e piacevole da utilizzare.
 
 L'integrazione con gli strumenti già selezionati (DaisyUI, Tailwind CSS) e l'applicazione dei principi di design (Refactoring UI) permetteranno di creare un'esperienza utente coerente e di alta qualità. 
+=======
+---
+module: theme
+topic: siti_referenza_ui_ux
+canonical: ../../../Themes/docs/shared-components/siti-referenza-ui-ux.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/siti-referenza-ui-ux.md
+>>>>>>> dev

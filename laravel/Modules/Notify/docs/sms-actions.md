@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Pattern per le Azioni SMS 
 
 ## Struttura e Convenzioni
@@ -22,10 +23,16 @@ Questa corrispondenza è essenziale per garantire che tutti i driver configurati
 
 ## Interfaccia
 >>>>>>> 4b6b99016 (first commit)
+=======
+# Azioni SMS
+
+## Interfaccia
+>>>>>>> dev
 
 Tutte le azioni di invio SMS devono implementare l'interfaccia `SmsActionInterface`:
 
 ```php
+<<<<<<< HEAD
 <<<<<<< HEAD
 <?php
 
@@ -35,27 +42,37 @@ use Modules\Notify\Datas\SmsData;
 =======
 namespace Modules\Notify\Contracts\SMS;
 >>>>>>> 4b6b99016 (first commit)
+=======
+namespace Modules\Notify\Contracts\SMS;
+>>>>>>> dev
 
 interface SmsActionInterface
 {
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Invia un SMS utilizzando il provider specifico.
      *
      * @param SmsData $smsData I dati del messaggio SMS
      * @return array Risultato dell'operazione
 =======
+=======
+>>>>>>> dev
      * Esegue l'invio dell'SMS
      *
      * @param SmsData $smsData I dati del messaggio SMS
      * @return array Risultato dell'operazione
      * @throws \Exception In caso di errore durante l'invio
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
      */
     public function execute(SmsData $smsData): array;
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Questa interfaccia garantisce che tutte le azioni SMS abbiano un metodo `execute` che accetta un oggetto `SmsData` come parametro.
 
@@ -271,6 +288,8 @@ Seguire questo pattern garantisce:
 ---
 
 =======
+=======
+>>>>>>> dev
 ## Struttura
 
 Le azioni SMS sono organizzate secondo questa struttura:
@@ -323,4 +342,7 @@ $result = $action->execute($smsData);
    - Validare l'input degli utenti
    - Sanitizzare i messaggi
    - Proteggere le chiavi API
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

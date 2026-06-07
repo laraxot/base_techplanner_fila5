@@ -5,12 +5,17 @@ declare(strict_types=1);
 namespace Modules\Employee\Database\Factories;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Employee\Models\TimeEntry;
 =======
 use Modules\Employee\Models\TimeEntry;
 use Illuminate\Database\Eloquent\Factories\Factory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Modules\Employee\Models\TimeEntry;
+>>>>>>> dev
 
 class TimeEntryFactory extends Factory
 {
@@ -28,6 +33,9 @@ class TimeEntryFactory extends Factory
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

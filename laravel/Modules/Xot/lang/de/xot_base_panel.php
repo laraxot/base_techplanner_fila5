@@ -78,6 +78,9 @@ Per questo Le chiediamo il permesso di trasmettere i Suoi dati e le Sue risposte
     'year' => 'year',
     'week' => 'week',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -91,6 +94,9 @@ Per questo Le chiediamo il permesso di trasmettere i Suoi dati e le Sue risposte
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

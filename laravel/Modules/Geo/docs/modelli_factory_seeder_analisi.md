@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Modelli, Factory e Seeder - Modulo Geo
 
 ## Panoramica
@@ -190,3 +191,12 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 
 *Analisi completa di 12 modelli attivi, 1 modello obsoleto identificato*
 *Sistema geografico completo per Italia con supporto internazionale*
+=======
+---
+module: theme
+topic: modelli_factory_seeder_analisi
+canonical: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi.md
+>>>>>>> dev

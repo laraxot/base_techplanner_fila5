@@ -151,16 +151,22 @@ class StoreOrderRequest extends FormRequest
 
 - [translations-faq.md](./translations-faq.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](./translation_keys_best_practices.md)
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./readme.md)
 =======
+=======
+>>>>>>> dev
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 # Gestione delle Traduzioni dei Messaggi di Validazione
 
 ## Obiettivo
@@ -314,13 +320,19 @@ class StoreOrderRequest extends FormRequest
 
 - [translations-faq.md](./translations-faq.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](./translation_keys_best_practices.md)
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./readme.md)
 =======
+=======
+>>>>>>> dev
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

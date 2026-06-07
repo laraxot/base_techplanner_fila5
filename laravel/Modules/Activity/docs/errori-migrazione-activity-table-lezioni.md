@@ -157,15 +157,22 @@ Questa lezione è ora memorizzata permanentemente per:
 
 ### Documentazione Aggiornata
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole Migrazioni Laraxot](../../xot/docs/migration_rules.md)
 - [Polimorfismo UUID](../../xot/docs/polymorphic_uuid_support.md)
 - [Principi Architetturali](../../../docs/architectural_principles.md)
+=======
+- [Regole Migrazioni Laraxot](../../xot/docs/migration_rules.md)
+- [Polimorfismo UUID](../../xot/docs/polymorphic_uuid_support.md)
+- [Principi Architetturali](../../../../docs/architectural_principles.md)
+>>>>>>> dev
 
 ### Moduli Correlati
 - [User Module UUID](../../user/docs/uuid_implementation.md)
 - [ Models](../../<nome modulo>/docs/model_architecture.md)
 - [Activity Logging](./activity_logging_system.md)
 
+<<<<<<< HEAD
 =======
 - [Regole Migrazioni Laraxot](../../Xot/docs/migration_rules.md)
 - [Polimorfismo UUID](../../Xot/docs/polymorphic_uuid_support.md)
@@ -178,6 +185,8 @@ Questa lezione è ora memorizzata permanentemente per:
 
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 *Lezione appresa: Context-aware migrations con supporto UUID*
 # Lezioni Apprese: Errori Migrazione Activity Table
 
@@ -338,15 +347,22 @@ Questa lezione è ora memorizzata permanentemente per:
 
 ### Documentazione Aggiornata
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole Migrazioni Laraxot](../../xot/docs/migration_rules.md)
 - [Polimorfismo UUID](../../xot/docs/polymorphic_uuid_support.md)
 - [Principi Architetturali](../../../docs/architectural_principles.md)
+=======
+- [Regole Migrazioni Laraxot](../../xot/docs/migration_rules.md)
+- [Polimorfismo UUID](../../xot/docs/polymorphic_uuid_support.md)
+- [Principi Architetturali](../../../../docs/architectural_principles.md)
+>>>>>>> dev
 
 ### Moduli Correlati
 - [User Module UUID](../../user/docs/uuid_implementation.md)
 - [<nome progetto> Models](../../<nome progetto>/docs/model_architecture.md)
 - [Activity Logging](./activity_logging_system.md)
 
+<<<<<<< HEAD
 =======
 - [Regole Migrazioni Laraxot](../../Xot/docs/migration_rules.md)
 - [Polimorfismo UUID](../../Xot/docs/polymorphic_uuid_support.md)
@@ -359,4 +375,6 @@ Questa lezione è ora memorizzata permanentemente per:
 
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 *Lezione appresa: Context-aware migrations con supporto UUID*

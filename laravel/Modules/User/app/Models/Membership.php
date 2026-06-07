@@ -7,12 +7,16 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\ProfileContract;
 =======
 use Modules\User\Database\Factories\MembershipFactory;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\Xot\Contracts\ProfileContract;
+>>>>>>> dev
 
 /**
  * Modules\User\Models\Membership.
@@ -55,15 +59,31 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property ProfileContract|null $deleter
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @method static MembershipFactory          factory($count = null, $state = [])
 >>>>>>> 4b6b99016 (first commit)
  * @method static Builder<static>|Membership whereId($value)
  *
+=======
+ * @method static Builder<static>|Membership whereId($value)
+ *
+ * @property array<array-key, mixed>|null $permissions
+ * @property string|null                  $joined_at
+ *
+ * @method static Builder<static>|Membership whereJoinedAt($value)
+ * @method static Builder<static>|Membership wherePermissions($value)
+ *
+ * @property string $uuid
+ *
+ * @method static Builder<static>|Membership whereUuid($value)
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class Membership extends BasePivot
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     use HasXotFactory;
@@ -73,12 +93,19 @@ class Membership extends BasePivot
     protected $connection = 'user';
 
     /** @var string */
+=======
+    protected $connection = 'user';
+
+>>>>>>> dev
     protected $table = 'team_user';
 
     /**
      * The "type" of the primary key ID.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> dev
      */
     protected $keyType = 'int';
 

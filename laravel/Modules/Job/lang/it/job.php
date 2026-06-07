@@ -59,9 +59,13 @@ return [
             'tooltip' => 'ID del job',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'queue' => [
             'label' => 'Coda',
@@ -77,9 +81,13 @@ return [
                 'notifications' => 'Notifiche',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'payload' => [
             'label' => 'Payload',
@@ -88,9 +96,13 @@ return [
             'tooltip' => 'Contenuto del job',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'attempts' => [
             'label' => 'Tentativi',
@@ -99,9 +111,13 @@ return [
             'tooltip' => 'Tentativi di esecuzione',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'reserved_at' => [
             'label' => 'Riservato il',
@@ -110,9 +126,13 @@ return [
             'tooltip' => 'Quando è stato riservato',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'available_at' => [
             'label' => 'Disponibile il',
@@ -121,9 +141,13 @@ return [
             'tooltip' => 'Quando diventa disponibile',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Creato il',
@@ -131,9 +155,13 @@ return [
             'tooltip' => 'Data creazione',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'status' => [
             'label' => 'Stato',
@@ -150,9 +178,13 @@ return [
                 'retrying' => 'Riprova',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'progress' => [
             'label' => 'Progresso',
@@ -161,18 +193,26 @@ return [
             'tooltip' => 'Progresso del job',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'type' => [
             'label' => 'Tipo',
             'placeholder' => 'Seleziona il tipo',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Tipo di job (e.g., importazione, esportazione]',
 =======
             'help' => 'Tipo di job (e.g., importazione, esportazione)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'help' => 'Tipo di job (e.g., importazione, esportazione]',
+>>>>>>> dev
             'tooltip' => 'Tipo di job',
             'helper_text' => '',
             'options' => [
@@ -186,9 +226,13 @@ return [
                 'sync' => 'Sincronizzazione',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'name' => [
             'label' => 'Nome',
@@ -197,9 +241,13 @@ return [
             'tooltip' => 'Nome del job',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'description' => [
             'label' => 'Descrizione',
@@ -208,9 +256,13 @@ return [
             'tooltip' => 'Descrizione del job',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'guard_name' => [
             'label' => 'Guard',
@@ -219,9 +271,13 @@ return [
             'tooltip' => 'Guard di autenticazione',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'permissions' => [
             'label' => 'Permessi',
@@ -230,9 +286,13 @@ return [
             'tooltip' => 'Permessi del job',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'updated_at' => [
             'label' => 'Aggiornato il',
@@ -240,9 +300,13 @@ return [
             'tooltip' => 'Ultimo aggiornamento',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'first_name' => [
             'label' => 'Nome',
@@ -251,9 +315,13 @@ return [
             'tooltip' => 'Nome responsabile',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'last_name' => [
             'label' => 'Cognome',
@@ -262,9 +330,13 @@ return [
             'tooltip' => 'Cognome responsabile',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'email' => [
             'label' => 'Email',
@@ -273,9 +345,13 @@ return [
             'tooltip' => 'Email responsabile',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'phone' => [
             'label' => 'Telefono',
@@ -284,9 +360,13 @@ return [
             'tooltip' => 'Telefono responsabile',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'address' => [
             'label' => 'Indirizzo',
@@ -295,9 +375,13 @@ return [
             'tooltip' => 'Indirizzo responsabile',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'city' => [
             'label' => 'Città',
@@ -306,9 +390,13 @@ return [
             'tooltip' => 'Città responsabile',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'state' => [
             'label' => 'Stato/Provincia',
@@ -317,9 +405,13 @@ return [
             'tooltip' => 'Stato responsabile',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'zip_code' => [
             'label' => 'CAP',
@@ -328,9 +420,13 @@ return [
             'tooltip' => 'CAP responsabile',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'country' => [
             'label' => 'Paese',
@@ -339,9 +435,13 @@ return [
             'tooltip' => 'Paese responsabile',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'company' => [
             'label' => 'Azienda',
@@ -350,9 +450,13 @@ return [
             'tooltip' => 'Azienda responsabile',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'position' => [
             'label' => 'Posizione',
@@ -361,9 +465,13 @@ return [
             'tooltip' => 'Posizione responsabile',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'website' => [
             'label' => 'Sito Web',
@@ -372,9 +480,13 @@ return [
             'tooltip' => 'Sito web responsabile',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'notes' => [
             'label' => 'Note',
@@ -383,9 +495,13 @@ return [
             'tooltip' => 'Note del job',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'priority' => [
             'label' => 'Priorità',
@@ -400,9 +516,13 @@ return [
                 'urgent' => 'Urgente',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'scheduled_at' => [
             'label' => 'Programmato per',
@@ -411,9 +531,13 @@ return [
             'tooltip' => 'Quando è programmato',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'started_at' => [
             'label' => 'Iniziato il',
@@ -421,9 +545,13 @@ return [
             'tooltip' => 'Quando è iniziato',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'finished_at' => [
             'label' => 'Completato il',
@@ -431,9 +559,13 @@ return [
             'tooltip' => 'Quando è completato',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'error_message' => [
             'label' => 'Messaggio di Errore',
@@ -442,9 +574,13 @@ return [
             'tooltip' => 'Errore del job',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'retry_count' => [
             'label' => 'Conteggio Riprova',
@@ -452,9 +588,13 @@ return [
             'tooltip' => 'Tentativi di riprova',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'max_retries' => [
             'label' => 'Max Riprova',
@@ -463,9 +603,13 @@ return [
             'tooltip' => 'Massimo tentativi',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -649,8 +793,13 @@ return [
     ],
     'search_placeholder' => 'Cerca per nome, tipo o stato...',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Job',
     'plural_label' => 'Job (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Job',
+    'plural_label' => 'Job (Plurale)',
+>>>>>>> dev
 ];

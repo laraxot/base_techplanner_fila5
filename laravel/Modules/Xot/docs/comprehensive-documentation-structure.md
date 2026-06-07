@@ -347,9 +347,13 @@ find Modules/ -name "*.md" -exec markdownlint {} \;
 
 **Documentation Version**: 1.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 **Last Updated**: 2025-11-17
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 **Maintenance**: Xot Module Documentation Team
 **Goal**: Create the most comprehensive and useful documentation for Laraxot architecture

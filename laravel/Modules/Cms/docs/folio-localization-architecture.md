@@ -6,12 +6,31 @@ LaravelPizza.com uses Laravel Folio for file-based routing and Laravel Localizat
 
 ## Architecture
 
+<<<<<<< HEAD
+=======
+Questa architettura deve restare coerente con le primitive ufficiali di Laravel Folio:
+
+- mount via `Folio::path(...)->uri(...)`
+- middleware assegnati sul mount o nella page
+- route parameters espressi dal filename
+- named route opzionali via `name()`
+- render hook via `render()` solo quando necessario
+
+>>>>>>> dev
 ### Custom Middleware: SetFolioLocale
 
 **Location**: `laravel/Modules/Cms/app/Http/Middleware/SetFolioLocale.php`
 
 This middleware extracts the locale from the first URL segment and sets it for the application.
 
+<<<<<<< HEAD
+=======
+Important rule after studying `mcamara/laravel-localization`:
+
+- locale resolution belongs in routing / middleware;
+- Blade files must not become the primary place where locale is fixed manually.
+
+>>>>>>> dev
 ```php
 // Extracts locale from URL
 // /it/home → sets locale to 'it'
@@ -67,6 +86,18 @@ All URLs follow the pattern: `/{locale}/{path}`
 <a href="{{ LaravelLocalization::getLocalizedURL('it') }}">Passa all'italiano</a>
 ```
 
+<<<<<<< HEAD
+=======
+## Canonical usage note
+
+Prefer:
+
+- `LaravelLocalization::getLocalizedURL()`
+- `LaravelLocalization::localizeUrl()`
+
+Avoid manual string concatenation for localized links.
+
+>>>>>>> dev
 ## Configuration
 
 **File**: `laravel/config/laravellocalization.php`
@@ -145,4 +176,8 @@ curl http://127.0.0.1:8000/de | grep lang=
 
 - Laravel Localization: https://github.com/mcamara/laravel-localization
 - Laravel Folio: https://laravel.com/docs/folio
+<<<<<<< HEAD
 - Laravel Localization Helpers: See `laravel/Modules/Xot/docs/laravel-localization-architecture-analysis.md`
+=======
+- Laravel Localization Helpers: See `laravel/Modules/Xot/docs/laravel-localization-architecture-analysis.md`
+>>>>>>> dev

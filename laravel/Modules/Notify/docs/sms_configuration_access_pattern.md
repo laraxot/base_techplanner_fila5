@@ -4,7 +4,11 @@
 
 È stato identificato un errore comune nell'implementazione delle azioni SMS: l'utilizzo di `config('services.*.token')` invece di `config('sms.drivers.*.token')`.
 
+<<<<<<< HEAD
 Questo errore viola i principi di modularità e coerenza dell'architettura di SaluteOra, dove ogni modulo gestisce le proprie configurazioni in file dedicati.
+=======
+Questo errore viola i principi di modularità e coerenza dell'architettura di Quaeris, dove ogni modulo gestisce le proprie configurazioni in file dedicati.
+>>>>>>> dev
 
 ## Pattern Corretto
 
@@ -40,10 +44,14 @@ $timeout = (int) config('sms.timeout', 30);
 2. **Modularità**: Ogni modulo gestisce le proprie configurazioni
 3. **Manutenibilità**: Facilita la manutenzione avendo un'unica fonte di verità per le configurazioni
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. **Standardizzazione**: Segue la struttura standardizzata documentata in [SMS_CONFIG_STRUCTURE.md](./sms_config_structure.md)
 =======
 4. **Standardizzazione**: Segue la struttura standardizzata documentata in [SMS_CONFIG_STRUCTURE.md](./SMS_CONFIG_STRUCTURE.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+4. **Standardizzazione**: Segue la struttura standardizzata documentata in [SMS_CONFIG_STRUCTURE.md](./sms_config_structure.md)
+>>>>>>> dev
 
 ## Checklist di Verifica
 
@@ -58,6 +66,7 @@ Per ogni azione SMS, verificare che:
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Struttura della Configurazione SMS](./sms_config_structure.md)
 - [Requisiti di Configurazione Netfun](./netfun_config_requirements.md)
 - [Pattern Factory per SMS](./sms_action_factory_analysis.md)
@@ -66,3 +75,8 @@ Per ogni azione SMS, verificare che:
 - [Requisiti di Configurazione Netfun](./NETFUN_CONFIG_REQUIREMENTS.md)
 - [Pattern Factory per SMS](./SMS_ACTION_FACTORY_ANALYSIS.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Struttura della Configurazione SMS](./sms_config_structure.md)
+- [Requisiti di Configurazione Netfun](./netfun_config_requirements.md)
+- [Pattern Factory per SMS](./sms_action_factory_analysis.md)
+>>>>>>> dev

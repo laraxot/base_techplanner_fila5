@@ -2,9 +2,12 @@
 
 **Modulo**: GDPR
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-12-09
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Status**: ✅ Production Ready
 
 ---
@@ -296,6 +299,9 @@ class ComplianceHeatmapChart extends HeatmapChartWidget
 
 **Autore**: PTVX Development Team
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo Aggiornamento**: 2025-12-09
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

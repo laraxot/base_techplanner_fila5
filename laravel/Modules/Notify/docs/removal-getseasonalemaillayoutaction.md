@@ -1,9 +1,13 @@
 # Rimozione GetSeasonalEmailLayoutAction - Report Completo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 19 Dicembre 2025  
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data**: 19 Dicembre 2025  
+>>>>>>> dev
 **Stato**: ✅ Completato  
 **Filosofia**: DRY + KISS + Clean Code
 
@@ -81,10 +85,14 @@ public function execute(string $baseName = 'base'): string
 
 ### File Aggiornati (Documentazione)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Modules/Notify/docs/phpstan-fixes-[DATE].md` - Aggiornato con motivazione rimozione
 =======
 - `Modules/Notify/docs/phpstan-fixes-2025-12-19.md` - Aggiornato con motivazione rimozione
 >>>>>>> 4b6b99016 (first commit)
+=======
+- `Modules/Notify/docs/phpstan-fixes-2025-12-19.md` - Aggiornato con motivazione rimozione
+>>>>>>> dev
 - `Modules/Notify/docs/seasonal-email-templates.md` - Aggiornato pattern corretto
 - `Modules/Notify/docs/seasonal-email-system-recommendations.md` - Corretti esempi
 - `Modules/Notify/docs/00-index.md` - Aggiornate statistiche

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GeoJsonModel vs Laravel Sushi: Analisi e Confronto
 
 ## Panoramica
@@ -136,3 +137,12 @@ Per il caso d'uso specifico della gestione dei dati geografici italiani, l'imple
 - Footprint ridotto
 
 Si raccomanda di valutare il passaggio a Sushi solo in presenza di specifici requisiti che giustifichino la maggiore complessità e il maggiore consumo di risorse.
+=======
+---
+module: theme
+topic: geo_json_vs_sushi_comparison
+canonical: ../../../Themes/docs/shared-components/geo-json-vs-sushi-comparison.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/geo-json-vs-sushi-comparison.md
+>>>>>>> dev

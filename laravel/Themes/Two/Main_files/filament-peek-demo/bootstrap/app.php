@@ -1,16 +1,22 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use App\Exceptions\Handler;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Foundation\Application;
+<<<<<<< HEAD
 =======
 use Illuminate\Foundation\Application;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use App\Exceptions\Handler;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 /*
 |--------------------------------------------------------------------------

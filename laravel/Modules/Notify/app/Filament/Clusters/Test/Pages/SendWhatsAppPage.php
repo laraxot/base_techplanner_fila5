@@ -24,7 +24,11 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 use Override;
 
 /**
+<<<<<<< HEAD
  * @property \Filament\Schemas\Schema $whatsappForm
+=======
+ * @property Schema $whatsappForm
+>>>>>>> dev
  */
 class SendWhatsAppPage extends XotBasePage
 {
@@ -69,7 +73,11 @@ class SendWhatsAppPage extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, \Filament\Forms\Components\KeyValue|\Filament\Forms\Components\Select|\Filament\Forms\Components\TextInput>
+=======
+     * @return array<string, KeyValue|Select|TextInput>
+>>>>>>> dev
      */
     public function getWhatsAppFormSchema(): array
     {

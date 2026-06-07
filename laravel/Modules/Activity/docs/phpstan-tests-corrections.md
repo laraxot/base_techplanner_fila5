@@ -1,9 +1,12 @@
 # PHPStan Tests Corrections - Activity Module
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-10-10
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Livello PHPStan**: max
 **Errori Totali**: 353
 

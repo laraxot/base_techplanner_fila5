@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://github.com/tanthammar/filament-extras
 
 
@@ -7,3 +8,12 @@ https://github.com/saade/filament-extra
 
 https://laracasts.com/discuss/channels/livewire/laravel-filament-custom-field-call-function
 
+=======
+---
+module: theme
+topic: custom_firm_fields
+canonical: ../../../Themes/docs/shared-components/custom-firm-fields.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/custom-firm-fields.md
+>>>>>>> dev

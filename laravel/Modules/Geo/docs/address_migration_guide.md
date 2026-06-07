@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Guida alla Migrazione del Modello Address
 
 ## Struttura della Tabella Indirizzi
@@ -130,3 +131,12 @@ La scelta di evitare il prefisso `address_` nei campi della tabella `addresses` 
 5. **Rende il codice più manutenibile**
 
 Questa struttura, combinata con l'uso di `nullableMorphs('addressable')` per la relazione polimorfica, fornisce un modello Address flessibile e riutilizzabile in diversi contesti applicativi.
+=======
+---
+module: theme
+topic: address_migration_guide
+canonical: ../../../Themes/docs/shared-components/address-migration-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/address-migration-guide.md
+>>>>>>> dev

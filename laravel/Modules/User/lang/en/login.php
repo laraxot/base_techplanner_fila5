@@ -11,9 +11,13 @@ return [
             'description' => 'email',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'password' => [
             'label' => 'Password',
@@ -22,9 +26,13 @@ return [
             'description' => 'password',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'remember' => [
             'label' => 'Remember me',
@@ -33,49 +41,73 @@ return [
             'description' => 'remember',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'name' => [
             'label' => 'Full name',
             'placeholder' => 'Enter your full name',
             'help' => 'Your complete name for registration',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'password_confirmation' => [
             'label' => 'Confirm password',
             'placeholder' => 'Repeat your password',
             'help' => 'Repeat the password for confirmation',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
         'login' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'label' => 'Login',
 =======
             'label' => 'Sign in',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'label' => 'Login',
+>>>>>>> dev
             'success' => 'Successfully logged in',
             'error' => 'Invalid credentials',
         ],
         'register' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'label' => 'Register',
 =======
             'label' => 'Sign up',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'label' => 'Register',
+>>>>>>> dev
             'success' => 'Registration completed successfully',
             'error' => 'Unable to complete registration',
         ],
@@ -110,11 +142,18 @@ return [
         'unauthorized' => 'You do not have the necessary permissions for this operation.',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'title' => 'Sign in to your account',
     'subtitle_start' => 'Or',
     'subtitle_link' => 'create a new account',
     'page' => [
+<<<<<<< HEAD
         'title' => 'Welcome to LaravelPizza! 🍕',
+=======
+        'title' => 'Welcome to <nome progetto>! 🍕',
+>>>>>>> dev
         'subtitle' => 'Join the community of developers and pizza lovers',
     ],
     'already_registered' => 'Don\'t have an account yet?',
@@ -132,6 +171,18 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'login-via' => 'Or continue with',
+    'google' => 'Google',
+    'microsoft' => 'Microsoft',
+    'social' => [
+        'title' => 'Or continue with',
+        'google' => 'Sign in with Google',
+        'microsoft' => 'Sign in with Microsoft',
+        'github' => 'Sign in with GitHub',
+    ],
+>>>>>>> dev
 ];

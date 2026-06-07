@@ -10,9 +10,13 @@ return [
             'helper_text' => 'recipient',
             'description' => 'recipient',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -31,6 +35,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -40,6 +47,9 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

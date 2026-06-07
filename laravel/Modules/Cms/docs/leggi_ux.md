@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Leggi di User Experience (UX)
 
 Questo documento riassume le principali leggi di UX basate sul sito [Laws of UX](https://lawsofux.com/) e spiega come applicarle al progetto il progetto. L'obiettivo è migliorare l'esperienza utente dell'applicazione seguendo principi consolidati di design e psicologia cognitiva.
@@ -544,3 +545,12 @@ Per implementare efficacemente queste leggi di UX nel progetto il progetto, segu
 - [Don't Make Me Think](https://www.sensible.com/dmmt.html) di Steve Krug
 - [The Design of Everyday Things](https://www.nngroup.com/books/design-everyday-things-revised/) di Don Norman
 - [Universal Principles of Design](https://www.rockpublishing.com/products/universal-principles-of-design-revised-and-updated) di William Lidwell 
+=======
+---
+module: theme
+topic: leggi_ux
+canonical: ../../../Themes/docs/shared-components/leggi-ux.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/leggi-ux.md
+>>>>>>> dev

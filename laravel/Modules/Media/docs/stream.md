@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://laravel-news.com/temporary-directory
 
 =======
@@ -44,3 +45,12 @@ $tmpFile->delete();
 
 ----------------------------------------------------------------------------
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: stream
+canonical: ../../../Themes/docs/shared-components/__stream.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/__stream.txt
+>>>>>>> dev

@@ -2,6 +2,9 @@
 
 ## Panoramica
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 
 `XotBaseResource` estende `Resource` di Filament e centralizza configurazione comune (DRY).
 
@@ -19,6 +22,7 @@
 - `getTableColumns()` — **NON richiesto**, gestito da `XotBaseListRecords::getListTableColumns()` nella pagina ListRecords
 - `getPages()` — NON necessario se standard (CRUD)
 - `getTableActions()` — NON necessario se standard
+<<<<<<< HEAD
 =======
 Il `XotBaseResource` è una classe astratta che estende il `Resource` di Filament e fornisce una base comune per tutte le risorse dei moduli. Questo pattern segue il principio DRY (Don't Repeat Yourself) centralizzando la configurazione comune delle risorse.
 
@@ -43,6 +47,8 @@ Ogni modulo può personalizzare:
 - Le relazioni attraverso `getRelations()`
 - Le pagine attraverso `getPages()`
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Utilizzo
 
@@ -50,10 +56,15 @@ Ogni modulo può personalizzare:
 namespace Modules\YourModule\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource;
+
+>>>>>>> dev
 class YourResource extends XotBaseResource
 {
     protected static ?string $model = YourModel::class;
@@ -66,6 +77,7 @@ class YourResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     // getTableColumns() NON necessario - gestito da XotBaseListRecords
 =======
     public static function getTableColumns(): array
@@ -75,11 +87,17 @@ class YourResource extends XotBaseResource
         ];
     }
 >>>>>>> 4b6b99016 (first commit)
+=======
+    // getTableColumns() NON necessario - gestito da XotBaseListRecords
+>>>>>>> dev
 }
 ```
 
 ## Best Practices
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 
 1. NON sovrascrivere `form()` e `table()` (sono `final`)
 2. Le colonne tabella vanno in `ListRecords::getListTableColumns()`, NON nella Resource
@@ -87,6 +105,7 @@ class YourResource extends XotBaseResource
 4. `declare(strict_types=1)` obbligatorio
 
 Per la guida completa: `filament-class-extension-rules.md`
+<<<<<<< HEAD
 =======
 1. Non sovrascrivere i metodi `form()` e `table()`
 2. Utilizzare i metodi `getFormSchema()` e `getTableColumns()` per la personalizzazione
@@ -98,3 +117,5 @@ Per la guida completa: `filament-class-extension-rules.md`
 - Supporta la configurazione dei metatag attraverso `MetatagData`
 - Integra con il sistema di moduli Laravel attraverso la configurazione `modules.namespace`
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

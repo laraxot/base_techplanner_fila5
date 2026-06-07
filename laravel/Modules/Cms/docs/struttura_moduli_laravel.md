@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura dei Moduli Laravel in il progetto
 
 ## Struttura Corretta dei Moduli
@@ -88,3 +89,12 @@ use Modules\User\App\Filament\Widgets\RegistrationWidget;
 ## Conclusione
 
 Rispettare la struttura corretta dei moduli è fondamentale per mantenere un codice organizzato e funzionante. Gli errori nella struttura possono portare a problemi di caricamento delle classi, errori di namespace e difficoltà nella manutenzione del codice. Seguendo le linee guida sopra descritte, è possibile evitare questi errori e contribuire a un codebase più robusto e manutenibile.
+=======
+---
+module: theme
+topic: struttura_moduli_laravel
+canonical: ../../../Themes/docs/shared-components/struttura-moduli-laravel.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/struttura-moduli-laravel.md
+>>>>>>> dev

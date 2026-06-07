@@ -366,6 +366,9 @@ npm run dev
 
 ## Collegamenti tra versioni di getting-started.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [getting-started.md](../../../gdpr/project_docs/getting-started.md)
 * [getting-started.md](../../../xot/project_docs/getting-started.md)
 * [getting-started.md](../../../ui/project_docs/getting-started.md)
@@ -376,6 +379,7 @@ npm run dev
 * [getting-started.md](../../../ui/docs/getting-started.md)
 * [getting-started.md](../../../tenant/docs/it/getting-started.md)
 * [getting-started.md](../../../cms/docs/getting-started.md)
+<<<<<<< HEAD
 =======
 * [getting-started.md](../../../Gdpr/project_docs/getting-started.md)
 * [getting-started.md](../../../Xot/project_docs/getting-started.md)
@@ -388,6 +392,8 @@ npm run dev
 * [getting-started.md](../../../Tenant/docs/it/getting-started.md)
 * [getting-started.md](../../../Cms/docs/getting-started.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### Versione Incoming
 
@@ -473,11 +479,15 @@ npm run dev
 
 ## Collegamenti tra versioni di getting-started.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [getting-started.md](../../../gdpr/project_docs/getting-started.md)
 * [getting-started.md](../../../xot/project_docs/getting-started.md)
 * [getting-started.md](../../../ui/project_docs/getting-started.md)
 * [getting-started.md](../../../tenant/project_docs/it/getting-started.md)
 * [getting-started.md](../../../cms/project_docs/getting-started.md)
+<<<<<<< HEAD
 =======
 * [getting-started.md](../../../Gdpr/project_docs/getting-started.md)
 * [getting-started.md](../../../Xot/project_docs/getting-started.md)
@@ -485,6 +495,8 @@ npm run dev
 * [getting-started.md](../../../Tenant/project_docs/it/getting-started.md)
 * [getting-started.md](../../../Cms/project_docs/getting-started.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### Versione Incoming
 

@@ -205,10 +205,14 @@ php -l path/to/modified/file.php
 **Filosofia**: "Il miglior tool è quello che funziona. Se non funziona, documentalo e vai avanti."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Aggiornamento Tooling [DATE]
 =======
 ## Aggiornamento Tooling 2025-11-08
 >>>>>>> 4b6b99016 (first commit)
+=======
+## Aggiornamento Tooling [DATE]
+>>>>>>> dev
 
 - PHPMD eseguito sui file aggiornati (`GetAllIconsAction`, `InlineDatePicker`, `Extra`, `XotBasePivot`, `XotBaseUuidModel`): nessuna nuova violazione rilevata.
 - PHPInsights eseguito sugli stessi file: esito positivo (complessità segnalata da soglie legacy, documentata nelle relative sezioni di modulo).

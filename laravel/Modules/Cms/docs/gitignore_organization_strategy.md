@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Strategia di Organizzazione .gitignore Theme One
 
 ## Panoramica
@@ -282,3 +283,12 @@ storage/     # Directory storage tema
 - [Theme Development Guidelines](./theme_development_guidelines.md)
 
 *Riorganizzazione completata: gennaio 2025*
+=======
+---
+module: theme
+topic: gitignore_organization_strategy
+canonical: ../../../Themes/docs/shared-components/gitignore-organization-strategy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/gitignore-organization-strategy.md
+>>>>>>> dev

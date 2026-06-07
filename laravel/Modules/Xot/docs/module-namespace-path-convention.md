@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # convenzioni per namespace e percorsi dei moduli
 
 ## struttura corretta del percorso
@@ -67,3 +68,12 @@ questo è **errato** perché omette la directory `app/` nel percorso fisico.
 - [convenzioni di codice](docs/conventions.md)
 - [struttura progetto](docs/project-structure.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: module-namespace-path-convention
+canonical: ../../../Themes/docs/shared-components/module-namespace-path-convention.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/module-namespace-path-convention.md
+>>>>>>> dev

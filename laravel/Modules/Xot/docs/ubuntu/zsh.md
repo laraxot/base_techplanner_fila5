@@ -22,9 +22,14 @@ usefull links:
 
 ## Collegamenti tra versioni di zsh.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [zsh.md](../../../xot/docs/install/zsh.md)
 * [zsh.md](../../../xot/docs/ubuntu/zsh.md)
 =======
 * [zsh.md](../../../Xot/docs/install/zsh.md)
 * [zsh.md](../../../Xot/docs/ubuntu/zsh.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [zsh.md](../../../xot/docs/install/zsh.md)
+* [zsh.md](../../../xot/docs/ubuntu/zsh.md)
+>>>>>>> dev

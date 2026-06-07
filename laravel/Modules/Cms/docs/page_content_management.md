@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gestione Contenuti Pagine
 
 ## Panoramica
@@ -15,3 +16,12 @@ Questo documento fornisce una panoramica del sistema di gestione dei contenuti d
 
 ## Note
 Questa documentazione contiene solo una panoramica generale. Per i dettagli completi, consultare la documentazione del modulo Cms. 
+=======
+---
+module: theme
+topic: page_content_management
+canonical: ../../../Themes/docs/shared-components/page-content-management.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/page-content-management.md
+>>>>>>> dev

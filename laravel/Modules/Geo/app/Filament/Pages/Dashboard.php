@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Filament\Pages;
 
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\XotBaseDashboard;
 
 class Dashboard extends XotBaseDashboard
@@ -18,4 +19,25 @@ class Dashboard extends XotBaseDashboard
     //         redirect('/admin');
     //     }
     // }
+=======
+use Modules\Geo\Filament\Widgets\GeoMapWidget;
+use Modules\Xot\Filament\Pages\XotBaseDashboard;
+
+final class Dashboard extends XotBaseDashboard
+{
+    /**
+     * @return list<class-string>
+     */
+    public function getWidgets(): array
+    {
+        return [
+            GeoMapWidget::class,
+        ];
+    }
+
+    public function getColumns(): int
+    {
+        return 1;
+    }
+>>>>>>> dev
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Processo di Build del Tema in il progetto
 
 Questo documento fornisce una panoramica del processo di build e pubblicazione del tema principale di il progetto. Per una documentazione più dettagliata, consultare il [documento completo nel modulo CMS](../../laravel/modules/cms/project_docs/theme-build-process.md).
@@ -45,3 +46,12 @@ Per ulteriori dettagli su come funziona l'integrazione, consultare la [documenta
 - [Personalizzazione del Tema](./theme-customization.md)
 - [Struttura dei Componenti](./theme-components.md)
 - [Integrazione con Filament](./filament-integration.md) 
+=======
+---
+module: theme
+topic: theme_build_process
+canonical: ../../../Themes/docs/shared-components/theme-build-process.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/theme-build-process.md
+>>>>>>> dev

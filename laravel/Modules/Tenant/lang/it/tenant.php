@@ -130,6 +130,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Tenant',
     'plural_label' => 'Tenant (Plurale)',
     'fields' => [
@@ -163,6 +166,9 @@ return [
             'label' => 'Elimina Tenant',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

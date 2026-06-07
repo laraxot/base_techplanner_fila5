@@ -81,7 +81,11 @@ La homepage è la pagina principale del sito e richiede una gestione speciale pe
 - [Page Management](./page-management.md)
 - [Frontend Architecture](./frontend-architecture.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Core](../xot/docs/documentation.md)
 =======
 - [Documentazione Core](../Xot/docs/documentation.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione Core](../xot/docs/documentation.md)
+>>>>>>> dev

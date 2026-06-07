@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MCP (Management Control Panel) Tools for Database Analysis
 
 ## Overview
@@ -114,3 +115,12 @@ Current configuration includes MySQL access that automatically uses Laravel's .e
 - Verify database server is running
 - Check database credentials in .env file
 - Ensure MySQL MCP server script exists at specified path
+=======
+---
+module: theme
+topic: mcpatabase-tools
+canonical: ../../../Themes/docs/shared-components/mcp-database-tools.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/mcp-database-tools.md
+>>>>>>> dev

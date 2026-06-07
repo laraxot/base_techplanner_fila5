@@ -24,6 +24,9 @@ return [
             'tooltip' => 'Zvolte mezi zobrazením seznamu a mřížky',
             'help' => 'Vyberte vhodný typ rozložení pro zobrazení dat',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -37,8 +40,11 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 =======
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

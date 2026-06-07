@@ -13,6 +13,9 @@ return [
         'toggleColumns' => [
             'label' => 'Mostra/Nascondi Colonne',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -40,6 +43,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'resetFilters' => [
@@ -54,6 +58,8 @@ return [
         'openFilters' => [
             'label' => 'Apri Filtri',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'name' => [
             'label' => 'Nome',
@@ -61,9 +67,13 @@ return [
             'helper_text' => 'name',
             'description' => 'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'slug' => [
             'label' => 'Slug',
@@ -71,14 +81,21 @@ return [
             'helper_text' => 'slug',
             'description' => 'slug',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'blocks' => [
             'label' => 'Blocchi',
             'placeholder' => 'Aggiungi blocchi alla sezione',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -454,6 +471,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'created_at' => [
@@ -642,6 +660,8 @@ return [
         'video' => [
             'label' => 'video',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'model' => [
@@ -707,8 +727,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Section',
     'plural_label' => 'Section (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Section',
+    'plural_label' => 'Section (Plurale)',
+>>>>>>> dev
 ];

@@ -476,10 +476,14 @@ Utilizzo:
 <div class="container mx-auto p-4">
   <h1 class="text-2xl font-bold mb-6">Dashboard Paziente</h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
   
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+  
+>>>>>>> dev
   <!-- Informazioni Paziente -->
   <div class="card bg-base-100 shadow-xl mb-6">
     <div class="card-body">
@@ -503,10 +507,14 @@ Utilizzo:
     </div>
   </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
   
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+  
+>>>>>>> dev
   <!-- Tabs -->
   <div class="tabs mb-4">
     <a class="tab tab-bordered tab-active">Appuntamenti</a>
@@ -514,10 +522,14 @@ Utilizzo:
     <a class="tab tab-bordered">ISEE</a>
   </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
   
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+  
+>>>>>>> dev
   <!-- Contenuto Tab -->
   <div class="overflow-x-auto">
     <table class="table w-full">
@@ -561,16 +573,22 @@ Utilizzo:
 <div class="container mx-auto p-4 max-w-md">
   <h1 class="text-2xl font-bold mb-6">Registrazione Paziente</h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
   
   <form action="{{ route('patients.store') }}" method="POST">
     @csrf
     
+<<<<<<< HEAD
 =======
 
   <form action="{{ route('patients.store') }}" method="POST">
     @csrf
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     <div class="form-control w-full mb-4">
       <label class="label">
         <span class="label-text">Nome</span>
@@ -583,10 +601,14 @@ Utilizzo:
       @enderror
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     <div class="form-control w-full mb-4">
       <label class="label">
         <span class="label-text">Cognome</span>
@@ -599,10 +621,14 @@ Utilizzo:
       @enderror
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     <div class="form-control w-full mb-4">
       <label class="label">
         <span class="label-text">Codice Fiscale</span>
@@ -615,10 +641,14 @@ Utilizzo:
       @enderror
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     <div class="form-control w-full mb-4">
       <label class="label">
         <span class="label-text">Email</span>
@@ -631,6 +661,9 @@ Utilizzo:
       @enderror
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     <div class="form-control w-full mb-6">
       <label class="label cursor-pointer">
@@ -639,6 +672,7 @@ Utilizzo:
       </label>
     </div>
     
+<<<<<<< HEAD
 =======
 
     <div class="form-control w-full mb-6">
@@ -649,6 +683,8 @@ Utilizzo:
     </div>
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     <div class="form-control">
       <button type="submit" class="btn btn-primary">Registra Paziente</button>
     </div>
@@ -666,6 +702,7 @@ Utilizzo:
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Per ulteriori informazioni sull'implementazione di DaisyUI in il progetto o per segnalare problemi, contattare il team di sviluppo. 
 =======
@@ -1298,3 +1335,6 @@ Utilizzo:
 
 Per ulteriori informazioni sull'implementazione di DaisyUI in il progetto o per segnalare problemi, contattare il team di sviluppo.
 >>>>>>> 4b6b99016 (first commit)
+=======
+Per ulteriori informazioni sull'implementazione di DaisyUI in il progetto o per segnalare problemi, contattare il team di sviluppo. 
+>>>>>>> dev

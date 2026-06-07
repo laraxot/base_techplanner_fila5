@@ -7,9 +7,12 @@ namespace Modules\User\Actions\Otp;
 use Filament\Notifications\Notification as FilamentNotification;
 use Illuminate\Support\Carbon;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Illuminate\Support\Facades\Hash;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
 use Modules\User\Datas\PasswordData;
@@ -27,11 +30,15 @@ class SendOtpByUserAction
     use QueueableAction;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     public function __construct(
         private readonly PasswordData $passwordData,
         private readonly Str $stringHelper,
         private readonly Hasher $hasher,
     ) {
+<<<<<<< HEAD
 =======
     private PasswordData $passwordData;
 
@@ -40,6 +47,8 @@ class SendOtpByUserAction
         // Initialize PasswordData instance, relying on dependency injection if required.
         $this->passwordData = PasswordData::make();
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 
     /**
@@ -65,10 +74,14 @@ class SendOtpByUserAction
     private function generateTemporaryPassword(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->stringHelper->random(12);
 =======
         return Str::random(12);
 >>>>>>> 4b6b99016 (first commit)
+=======
+        return $this->stringHelper->random(12);
+>>>>>>> dev
     }
 
     /**
@@ -92,10 +105,14 @@ class SendOtpByUserAction
     {
         $user->update([
 <<<<<<< HEAD
+<<<<<<< HEAD
             'password' => $this->hasher->make($temporaryPassword),
 =======
             'password' => Hash::make($temporaryPassword),
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'password' => $this->hasher->make($temporaryPassword),
+>>>>>>> dev
             'is_otp' => true,
             'password_expires_at' => $expirationTime,
         ]);

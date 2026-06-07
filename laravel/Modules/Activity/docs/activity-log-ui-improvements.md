@@ -1,10 +1,14 @@
 # Activity Log UI/UX Improvements - Implementation Summary
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Date**: [DATE]
 =======
 **Date**: 2025-12-04
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Date**: [DATE]
+>>>>>>> dev
 **Module**: Activity
 **Files Modified**:
 - `Modules/Activity/resources/views/filament/pages/list-log-activities.blade.php`
@@ -97,10 +101,14 @@ Following DRY+KISS principles, using Filament components:
 ```
 [Avatar] John Doe
 <<<<<<< HEAD
+<<<<<<< HEAD
 updated [DATE] 10:30
 =======
 updated 2025-01-22 10:30
 >>>>>>> 4b6b99016 (first commit)
+=======
+updated [DATE] 10:30
+>>>>>>> dev
 
 [Changes Table]
 Field | Old | New
@@ -115,10 +123,14 @@ Found 15 activities total
 [Activity Card]
 [Avatar] John Doe [updated badge]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [DATE] 10:30
 =======
 2025-01-22 10:30
 >>>>>>> 4b6b99016 (first commit)
+=======
+[DATE] 10:30
+>>>>>>> dev
 
 [Description Box - Blue Highlighted]
 "Email scheda valutazione inviata con successo"
@@ -200,7 +212,11 @@ All components use dark mode variants:
 **Status**: ✅ Complete
 **Quality**: PHPStan Level 10 Compliant
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 **Last Updated**: 2025-12-04
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

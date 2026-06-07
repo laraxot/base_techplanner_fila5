@@ -2,8 +2,16 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\Geo\Tests\TestCase::class);
 
+=======
+namespace Modules\Geo\Tests\Unit\Transformers;
+
+uses(TestCase::class);
+
+use Modules\Geo\Tests\TestCase;
+>>>>>>> dev
 use Modules\Geo\Transformers\GeoJsonCollection;
 use Modules\Geo\Transformers\GeoJsonResource;
 

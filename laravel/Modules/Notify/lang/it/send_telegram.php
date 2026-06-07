@@ -25,9 +25,13 @@ return [
             'helper_text' => 'ID della chat Telegram di destinazione',
             'description' => 'Identificativo univoco della chat Telegram',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'message' => [
             'label' => 'Messaggio',
@@ -35,9 +39,13 @@ return [
             'helper_text' => 'Contenuto del messaggio Telegram',
             'description' => 'Testo del messaggio da inviare tramite Telegram',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'parse_mode' => [
             'label' => 'Formato',
@@ -50,9 +58,13 @@ return [
                 'markdown' => 'Markdown',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -77,8 +89,13 @@ return [
         'confirmation' => 'Sei sicuro di voler inviare questo messaggio Telegram?',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Send Telegram',
     'plural_label' => 'Send Telegram (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Send Telegram',
+    'plural_label' => 'Send Telegram (Plurale)',
+>>>>>>> dev
 ];

@@ -157,6 +157,9 @@ return [
 ## Collegamenti tra versioni di performance.md
 * [performance.md](laravel/vendor/spatie/laravel-data/docs/advanced-usage/performance.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [performance.md](laravel/modules/xot/docs/features/performance.md)
 * [performance.md](laravel/modules/xot/docs/packages/performance.md)
 * [performance.md](laravel/modules/xot/docs/roadmap/architecture/performance.md)
@@ -164,6 +167,7 @@ return [
 * [performance.md](laravel/modules/lang/docs/packages/performance.md)
 * [performance.md](laravel/modules/job/docs/packages/performance.md)
 * [performance.md](laravel/modules/cms/docs/frontoffice/performance.md)
+<<<<<<< HEAD
 =======
 * [performance.md](laravel/Modules/Xot/docs/features/performance.md)
 * [performance.md](laravel/Modules/Xot/docs/packages/performance.md)
@@ -173,3 +177,5 @@ return [
 * [performance.md](laravel/Modules/Job/docs/packages/performance.md)
 * [performance.md](laravel/Modules/Cms/docs/frontoffice/performance.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

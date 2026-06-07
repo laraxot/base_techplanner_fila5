@@ -11,7 +11,15 @@ use Modules\Xot\Actions\GetViewAction;
 
 class Broad extends Component
 {
+<<<<<<< HEAD
     /** @var array<string, string> */
+=======
+    /**
+     * Untyped to match HandlesEvents::$listeners.
+     *
+     * @var array<string, string>
+     */
+>>>>>>> dev
     protected $listeners = [
         'echo:public,PublicEvent' => 'notifyEvent',
     ];

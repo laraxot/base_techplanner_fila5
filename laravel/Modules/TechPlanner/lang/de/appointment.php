@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -304,6 +305,8 @@ return [
     // ==============================================
     // OPTIONS - OPZIONI E VALORI PREDEFINITI
     // ==============================================
+=======
+>>>>>>> dev
     'options' => [
         'statuses' => [
             'scheduled' => 'Geplant',

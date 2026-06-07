@@ -15,12 +15,17 @@ Modulo test serve per mettere azioni da testare.
 
 ## Collegamenti tra versioni di test.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [test.md](../../../xot/project_docs/modules/test.md)
 * [test.md](../../../lang/project_docs/test.md)
 =======
 * [test.md](../../../Xot/project_docs/modules/test.md)
 * [test.md](../../../Lang/project_docs/test.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [test.md](../../../xot/project_docs/modules/test.md)
+* [test.md](../../../lang/project_docs/test.md)
+>>>>>>> dev
 
 ### Versione Incoming
 

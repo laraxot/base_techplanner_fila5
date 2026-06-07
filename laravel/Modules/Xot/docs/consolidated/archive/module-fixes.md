@@ -148,7 +148,11 @@ public static function getFormSchema(): array
 ### Composer.json
 ```json
 {
+<<<<<<< HEAD
     "name": "laraxot/module_xot_fila3",
+=======
+    "name": "laraxot/module_xot_fila5",
+>>>>>>> dev
     "autoload": {
         "psr-4": {
             "Modules\\Xot\\": "app/",

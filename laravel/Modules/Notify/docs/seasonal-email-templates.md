@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Seasonal Email Templates Implementation Report
 
 **Date**: [DATE]
@@ -45,6 +46,8 @@ Ran `phpstan analyse Modules/Notify` to ensure no regression in the module.
 
 The logic, philosophy, and implementation of the "Zen of Christmas Emails" have been established. The system is flexible enough to swap themes by files or context logic without code changes.
 =======
+=======
+>>>>>>> dev
 # Seasonal Email Templates - Guida Completa
 
 **Status**: ✅ Implementato
@@ -1776,4 +1779,7 @@ Mail::to($client->email)->send($email);
 **Creato con ❄️ per le festività 2025-2026**
 
 *"Email is not dead. Email is Christmas cards, and Christmas cards are not dead." - Anonymous Email Marketer*
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

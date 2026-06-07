@@ -2,10 +2,14 @@
 
 ## Data Aggiornamento
 <<<<<<< HEAD
+<<<<<<< HEAD
 [DATE]
 =======
 2025-01-27
 >>>>>>> 4b6b99016 (first commit)
+=======
+[DATE]
+>>>>>>> dev
 
 ## Problema Identificato
 Le cartelle `docs` contenevano file e sottocartelle con caratteri maiuscoli, violando la convenzione di utilizzare solo caratteri minuscoli (eccetto `README.md`).
@@ -85,10 +89,14 @@ Tutti i file e le sottocartelle nelle cartelle `docs` ora rispettano la convenzi
 
 ## Data Aggiornamento
 <<<<<<< HEAD
+<<<<<<< HEAD
 [DATE]
 =======
 2025-01-27
 >>>>>>> 4b6b99016 (first commit)
+=======
+[DATE]
+>>>>>>> dev
 
 ## Problema Identificato
 Le cartelle `docs` contenevano file e sottocartelle con caratteri maiuscoli, violando la convenzione di utilizzare solo caratteri minuscoli (eccetto `README.md`).

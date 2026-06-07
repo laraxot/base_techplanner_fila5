@@ -95,7 +95,10 @@ Migliorare sistematicamente tutti i moduli utilizzando PHPStan livello 10, PHPMD
 - [Module Analysis Report](./module-analysis-report-2025-01-06.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 

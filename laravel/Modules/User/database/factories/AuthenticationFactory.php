@@ -6,6 +6,7 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 use Modules\User\Models\Authentication;
@@ -19,13 +20,22 @@ use Modules\User\Models\User;
  * @extends Factory<Authentication>
  */
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\User\Models\Authentication;
+
+>>>>>>> dev
 class AuthenticationFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
     protected $model = \Modules\User\Models\Authentication::class;
+=======
+     */
+    protected $model = Authentication::class;
+>>>>>>> dev
 
     /**
      * Define the model's default state.
@@ -33,6 +43,7 @@ class AuthenticationFactory extends Factory
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
      *
      * @var class-string<Authentication>
@@ -116,5 +127,7 @@ class AuthenticationFactory extends Factory
             'authenticatable_id' => $user->id,
         ]);
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 }

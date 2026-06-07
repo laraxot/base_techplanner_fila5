@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Traits;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Exception;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Filament\Actions;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
@@ -23,9 +26,13 @@ use Filament\Actions\ReplicateAction;
 use Filament\Actions\ViewAction;
 use Filament\Notifications\Notification;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Resources\Pages\ListRecords;
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Filament\Resources\Pages\ListRecords;
+>>>>>>> dev
 use Filament\Tables;
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
@@ -50,12 +57,18 @@ use Webmozart\Assert\Assert;
  *
  * @property TableLayoutEnum $layoutView
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
  *
  * @SuppressWarnings("PHPMD.StaticAccess")
  * @SuppressWarnings("PHPMD.CyclomaticComplexity")
  * @SuppressWarnings("PHPMD.NPathComplexity")
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  */
 trait HasXotTable
 {
@@ -73,16 +86,36 @@ trait HasXotTable
      * Get table header actions.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
      * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
      * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
      * @return array<string, Action|ActionGroup>
      */
     public function getTableHeaderActions(): array
     {
+<<<<<<< HEAD
+=======
+        $resource = $this;
+        /* @phpstan-ignore-next-line */
+        if ($this instanceof ListRecords) {
+            $resourceClass = $this->getResource();
+            // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
+            Assert::string($resourceClass);
+            $resource = app($resourceClass);
+        }
+
+        // dddx(method_exists($resource, 'canAttach'));
+
+>>>>>>> dev
         $actions = [];
 
         $actions['create'] = CreateAction::make();
@@ -93,11 +126,19 @@ trait HasXotTable
                 ->icon('heroicon-o-paper-clip');
         }
 
+<<<<<<< HEAD
         if ($this->shouldShowAttachAction()) {
             $actions['attach'] = AttachAction::make()
                 ->label('')
                 ->icon('heroicon-o-link')
                 ->preloadRecordSelect();
+=======
+        if (is_object($resource) && method_exists($resource, 'canAttach')) {
+            $actions['attach'] = AttachAction::make()
+                ->icon('heroicon-o-link')
+                ->iconButton()
+                ->visible(fn (): bool => (bool) $resource->canAttach());
+>>>>>>> dev
         }
 
         $actions['layout'] = TableLayoutToggleTableAction::make('layout');
@@ -113,7 +154,11 @@ trait HasXotTable
     public function getGridTableColumns(): array
     {
         return [
+<<<<<<< HEAD
             Stack::make($this->getTableColumns()),
+=======
+            Stack::make(array_values($this->getTableColumns())),
+>>>>>>> dev
         ];
     }
 
@@ -123,10 +168,14 @@ trait HasXotTable
      * @return array<string, Tables\Columns\Column>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     abstract protected function getTableColumns(): array;
 =======
     abstract public function getTableColumns(): array;
 >>>>>>> 4b6b99016 (first commit)
+=======
+    abstract protected function getTableColumns(): array;
+>>>>>>> dev
 
     /**
      * Get table filters form columns.
@@ -150,10 +199,14 @@ trait HasXotTable
      * Get table heading.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function getTableHeading(): ?string
 =======
     public function getTableHeading(): ?string
 >>>>>>> 4b6b99016 (first commit)
+=======
+    protected function getTableHeading(): ?string
+>>>>>>> dev
     {
         $key = static::getKeyTrans('table.heading');
         /** @var string|array<int|string,mixed>|null $trans */
@@ -169,10 +222,14 @@ trait HasXotTable
      * @return array<string, Action>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function getTableEmptyStateActions(): array
 =======
     public function getTableEmptyStateActions(): array
 >>>>>>> 4b6b99016 (first commit)
+=======
+    protected function getTableEmptyStateActions(): array
+>>>>>>> dev
     {
         return [];
     }
@@ -212,7 +269,11 @@ trait HasXotTable
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
             ->heading($this->getTableHeading())
+<<<<<<< HEAD
             ->columns($this->layoutView->getTableColumns($this->getTableColumns(), $this->getGridTableColumns()))
+=======
+            ->columns($this->layoutView->getTableColumns(array_values($this->getTableColumns()), $this->getGridTableColumns()))
+>>>>>>> dev
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->filters($this->getTableFilters())
             ->filtersLayout(FiltersLayout::AboveContent)
@@ -229,12 +290,20 @@ trait HasXotTable
         // Configurazioni opzionali personalizzabili
         $sortColumn = $this->getDefaultTableSortColumn();
         $sortDirection = $this->getDefaultTableSortDirection();
+<<<<<<< HEAD
         if ($sortColumn !== null && $sortDirection !== null) {
+=======
+        if (null !== $sortColumn && null !== $sortDirection) {
+>>>>>>> dev
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
 
         $pollInterval = $this->getTablePollInterval();
+<<<<<<< HEAD
         if ($pollInterval !== null) {
+=======
+        if (null !== $pollInterval) {
+>>>>>>> dev
             $table = $table->poll($pollInterval);
         }
 
@@ -245,12 +314,18 @@ trait HasXotTable
      * Get table filters.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
      * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
      * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
      * @return array<string|int, Tables\Filters\Filter|TernaryFilter|BaseFilter>
      */
     public function getTableFilters(): array
@@ -262,6 +337,9 @@ trait HasXotTable
      * Get table actions.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
      * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
@@ -270,8 +348,11 @@ trait HasXotTable
     /**
      * @deprecated override the `table()` method to configure the table
      *
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
      * @return array<string, Action|ActionGroup>
      */
     public function getTableActions(): array
@@ -282,8 +363,13 @@ trait HasXotTable
 
         $actions = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
         $resource = $this;
         /** @phpstan-ignore-next-line */
+=======
+        $resource = $this;
+        /* @phpstan-ignore-next-line */
+>>>>>>> dev
         if ($this instanceof ListRecords) {
             $resourceClass = $this->getResource();
             // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
@@ -292,10 +378,13 @@ trait HasXotTable
         }
         // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
         Assert::object($resource);
+<<<<<<< HEAD
 =======
         // $resource = $this->getResource();
         $resource = $this;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
         // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canView')) {
@@ -337,9 +426,12 @@ trait HasXotTable
                 && method_exists($relationship, 'getPivotClass')
             ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 /** @var mixed $pivotClass */
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                 $pivotClass = $relationship->getPivotClass();
 
                 // Type guard: ensure pivotClass is object/string with getKeyName method
@@ -360,12 +452,18 @@ trait HasXotTable
      * Get table bulk actions.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
      * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
      * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
      * @return array<string, BulkAction>
      */
     public function getTableBulkActions(): array
@@ -383,6 +481,7 @@ trait HasXotTable
      * Get model class.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return class-string<Model>
      *
@@ -392,6 +491,11 @@ trait HasXotTable
      *
      * @throws Exception Se non viene trovata una classe modello valida
 >>>>>>> 4b6b99016 (first commit)
+=======
+     * @throws \Exception Se non viene trovata una classe modello valida
+     *
+     * @return class-string<Model>
+>>>>>>> dev
      */
     public function getModelClass(): string
     {
@@ -400,10 +504,14 @@ trait HasXotTable
             $relationship = $this->getRelationship();
             if ($relationship instanceof Relation) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 /* @var class-string<Model> */
 =======
                 /** @var class-string<Model> */
 >>>>>>> 4b6b99016 (first commit)
+=======
+                /* @var class-string<Model> */
+>>>>>>> dev
                 return get_class($relationship->getModel());
             }
         }
@@ -416,30 +524,42 @@ trait HasXotTable
 
                 // Assert::isAOf($model, Model::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
                 /* @var class-string<Model> */
 =======
                 /** @var class-string<Model> */
 >>>>>>> 4b6b99016 (first commit)
+=======
+                /* @var class-string<Model> */
+>>>>>>> dev
                 // @phpstan-ignore-next-line
                 return $model;
             }
             // @phpstan-ignore-next-line
             if ($model instanceof Model) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 /* @var class-string<Model> */
 =======
                 /** @var class-string<Model> */
 >>>>>>> 4b6b99016 (first commit)
+=======
+                /* @var class-string<Model> */
+>>>>>>> dev
                 // @phpstan-ignore-next-line
                 return $model::class;
             }
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         throw new \Exception('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
 =======
         throw new Exception('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
 >>>>>>> 4b6b99016 (first commit)
+=======
+        throw new \Exception('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
+>>>>>>> dev
     }
 
     /**
@@ -449,7 +569,13 @@ trait HasXotTable
      */
     public function getTableSearch(): ?string
     {
+<<<<<<< HEAD
         return $this->tableSearch ?? null;
+=======
+        $search = $this->tableSearch ?? null;
+
+        return null !== $search ? (string) $search : null;
+>>>>>>> dev
     }
 
     protected function shouldShowAssociateAction(): bool
@@ -488,10 +614,14 @@ trait HasXotTable
      * Get header actions.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Action>
 =======
      * @return array<string, Actions\Action>
 >>>>>>> 4b6b99016 (first commit)
+=======
+     * @return array<string, Action>
+>>>>>>> dev
      */
     protected function getHeaderActions(): array
     {
@@ -524,10 +654,14 @@ trait HasXotTable
 
             return $model->getTable().'.id';
 <<<<<<< HEAD
+<<<<<<< HEAD
         } catch (\Exception $e) {
 =======
         } catch (Exception $e) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        } catch (\Exception $e) {
+>>>>>>> dev
             return null;
         }
     }

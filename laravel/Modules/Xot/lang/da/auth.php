@@ -11,6 +11,9 @@ return [
     'throttle' => 'For mange mislykkede forsøg. Prøv igen om :seconds sekunder.',
     'unknown' => 'Der opstod en ukendt fejl.',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -24,6 +27,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

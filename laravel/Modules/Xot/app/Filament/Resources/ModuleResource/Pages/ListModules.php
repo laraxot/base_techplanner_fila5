@@ -18,7 +18,10 @@ use Filament\Tables\Filters\BaseFilter;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Filament\Resources\ModuleResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+<<<<<<< HEAD
 use Override;
+=======
+>>>>>>> dev
 
 class ListModules extends XotBaseListRecords
 {
@@ -26,7 +29,11 @@ class ListModules extends XotBaseListRecords
 
     protected static string $resource = ModuleResource::class;
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     public function getGridTableColumns(): array
     {
         return [
@@ -37,7 +44,11 @@ class ListModules extends XotBaseListRecords
     /**
      * @return array<string, Tables\Columns\Column>
      */
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     public function getTableColumns(): array
     {
         return [
@@ -52,7 +63,11 @@ class ListModules extends XotBaseListRecords
      *
      * @return array<BaseFilter>
      */
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     public function getTableFilters(): array
     {
         return [
@@ -71,7 +86,11 @@ class ListModules extends XotBaseListRecords
      *
      * @return array<Action|ActionGroup>
      */
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     public function getTableActions(): array
     {
         return [
@@ -84,7 +103,11 @@ class ListModules extends XotBaseListRecords
     /**
      * @return array<string, BulkAction>
      */
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     public function getTableBulkActions(): array
     {
         return [

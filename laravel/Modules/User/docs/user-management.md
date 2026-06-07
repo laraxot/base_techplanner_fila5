@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gestione degli Utenti in <nome progetto>
 
 ## Panoramica
@@ -126,3 +127,12 @@ $request->validate([
 >>>>>>> 4b6b99016 (first commit)
 - [Gestione dei File Upload in Filament](/docs/filament-file-uploads.md)
 - [Migrazioni del Database](/docs/database-migrations.md)
+=======
+---
+module: theme
+topic: user-management
+canonical: ../../../Themes/docs/shared-components/user-management.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/user-management.md
+>>>>>>> dev

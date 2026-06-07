@@ -1,5 +1,6 @@
 # PHPStan Level Max Errors Roadmap - Geo Module
 
+<<<<<<< HEAD
 **Modulo**: Geo
 **Livello PHPStan**: max (Level 10)
 **Status**: 🚧 **REGRESSION DETECTED** (was 0 errors, now 8)
@@ -448,6 +449,8 @@ Assert::string($config);      // now string
 
 # PHPStan Level Max Errors Roadmap - Geo Module
 
+=======
+>>>>>>> dev
 **Data**: 2026-01-12
 **Modulo**: Geo
 **Livello PHPStan**: max (Level 10)
@@ -886,6 +889,10 @@ Assert::string($config);      // now string
 
 **Priorità Assoluta**: Ripristinare compliance PHPStan Level Max (0 errori)
 
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento**: 2026-01-12
+>>>>>>> dev
 
 **Autore**: Claude Code (Sonnet 4.5)
 

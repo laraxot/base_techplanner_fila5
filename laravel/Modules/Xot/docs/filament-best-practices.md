@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Best Practices per Risorse Filament in Laraxot
 
@@ -169,6 +170,8 @@ public function getTableColumns(): array
             ->dateTime('d/m/Y H:i')
             ->sortable(),
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 # Filament Best Practices (Moduli Riutilizzabili)
 
 ## Descrizione
@@ -224,6 +227,7 @@ public static function getFormSchema(): array
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 ## Regole per XotBaseEditRecord
@@ -296,6 +300,8 @@ class CreateAppointment extends XotBaseCreateRecord
 
 ### ReportResource.php - IMPLEMENTAZIONE CORRETTA
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 #### ❌ DON'T - Non utilizzare il metodo form()
 
 ```php
@@ -349,6 +355,7 @@ TextInput::make('nome')
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
@@ -401,6 +408,8 @@ class ReportResource extends XotBaseResource
             'edit' => Pages\EditReport::route('/{record}/edit'),
         ];
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 namespace Modules\Brain\Filament\Resources;
 
 use Filament\Forms\Components\TextInput;
@@ -491,6 +500,7 @@ class SocioResource extends XotBaseResource
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Checklist di Conformità
 
@@ -555,6 +565,8 @@ Prima di considerare completa una risorsa Filament, verificare:
    - **Dati bancari**: iban, intestatario, banca, filiale
    - **Modalità di ricezione**: Lista di modalità selezionabili
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ## Struttura delle Traduzioni
 
 ### File di Traduzione Completo
@@ -950,12 +962,17 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 
 - [Documentazione Filament](https://filamentphp.com/docs)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/modules/xot/project_docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/modules/xot/project_docs/best-practices.md)
 =======
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione XotBaseResource](base_orisbroker_fila5/laravel/modules/xot/project_docs/resource.md)
+- [Best Practices Laraxot](base_orisbroker_fila5/laravel/modules/xot/project_docs/best-practices.md)
+>>>>>>> dev
 
 ## Regole per Widget Filament: Path View e Localizzazione
 
@@ -1028,6 +1045,9 @@ Appointment::where('doctor_id', $doctorId)
 - DRY, KISS, serenità del codice
 - Refactoring sicuro, massima estendibilità
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

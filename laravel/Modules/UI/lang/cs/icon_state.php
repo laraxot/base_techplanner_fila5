@@ -11,9 +11,13 @@ return [
             'description' => 'Název objektu',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'edit-name' => [
             'label' => 'Upravit název',
@@ -22,9 +26,13 @@ return [
             'description' => 'Akce pro úpravu názvu',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'change-state' => [
             'label' => 'Změnit stav',
@@ -33,9 +41,13 @@ return [
             'description' => 'Akce pro změnu stavu',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'state' => [
             'label' => 'Stav',
@@ -44,9 +56,13 @@ return [
             'description' => 'Aktuální systémová podmínka',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'message' => [
             'label' => 'Zpráva',
@@ -55,9 +71,13 @@ return [
             'description' => 'Text zprávy',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'messages' => [
@@ -72,6 +92,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -83,6 +106,9 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

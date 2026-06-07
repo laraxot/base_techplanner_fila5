@@ -9,107 +9,167 @@ return [
             'placeholder' => 'Inserisci la chiave di configurazione',
             'help' => 'Chiave identificativa per la configurazione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'value' => [
             'label' => 'Valore',
             'placeholder' => 'Inserisci il valore di configurazione',
             'help' => 'Valore della configurazione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'type' => [
             'label' => 'Tipo',
             'placeholder' => 'Seleziona il tipo di valore',
             'help' => 'Tipo di dato per la configurazione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'group' => [
             'label' => 'Gruppo',
             'placeholder' => 'Inserisci il gruppo di configurazione',
             'help' => 'Gruppo per organizzare le configurazioni',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Descrizione della configurazione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'is_public' => [
             'label' => 'Pubblica',
             'help' => 'Indica se la configurazione è pubblica',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'is_encrypted' => [
             'label' => 'Crittografata',
             'help' => 'Indica se la configurazione è crittografata',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'is_required' => [
-            'label' => 'Obbligatoria',
-            'help' => 'Indica se la configurazione è obbligatoria',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'is_required' => [
+            'label' => 'Obbligatoria',
+            'help' => 'Indica se la configurazione è obbligatoria',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'validation_rules' => [
             'label' => 'Regole di validazione',
             'placeholder' => 'Configura le regole di validazione',
             'help' => 'Regole di validazione per il valore',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'default_value' => [
-            'label' => 'Valore predefinito',
-            'placeholder' => 'Inserisci il valore predefinito',
-            'help' => 'Valore predefinito per la configurazione',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'default_value' => [
+            'label' => 'Valore predefinito',
+            'placeholder' => 'Inserisci il valore predefinito',
+            'help' => 'Valore predefinito per la configurazione',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'validation' => [
@@ -209,6 +269,9 @@ return [
         'txt' => 'Testo',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Config',
     'plural_label' => 'Config (Plurale)',
     'navigation' => [
@@ -233,6 +296,9 @@ return [
             'label' => 'Elimina Config',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

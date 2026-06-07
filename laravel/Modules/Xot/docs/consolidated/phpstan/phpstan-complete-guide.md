@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Complete Guide - Consolidated
 
 ## Overview
@@ -31,3 +32,12 @@ Guida completa consolidata per PHPStan livello 9+ in Laraxot.
 
 ## Links
 - [Original Files Backup](../../../docs-consolidation-backup-*/Xot-docs-original/)
+=======
+---
+module: theme
+topic: phpstan-complete-guide
+canonical: ../../../../../Themes/docs/shared-components/phpstan-complete-guide.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/phpstan-complete-guide.md
+>>>>>>> dev

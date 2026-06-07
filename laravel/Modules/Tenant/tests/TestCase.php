@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Modules\Tenant\Tests;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Modules\Tenant\Providers\TenantServiceProvider;
@@ -30,6 +33,7 @@ abstract class TestCase extends BaseTestCase
         return [
             XotServiceProvider::class,
             UserServiceProvider::class,
+<<<<<<< HEAD
 =======
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\DB;
@@ -133,6 +137,8 @@ abstract class TestCase extends BaseTestCase
     {
         return [
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             TenantServiceProvider::class,
         ];
     }

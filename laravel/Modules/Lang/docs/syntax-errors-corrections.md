@@ -167,6 +167,10 @@ grep -r "'label' => '[a-z_]\+'" Modules/*/lang/it/ --include="*.php"
 - [Best practices traduzioni](./translation_rules.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 6 Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Ultimo aggiornamento: 6 Gennaio 2025*
+>>>>>>> dev

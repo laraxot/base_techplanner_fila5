@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ✅ Correzioni PHPStan Modulo Activity Completate
 
 ## 🎯 Errori Risolti
@@ -40,3 +41,12 @@ array_merge(
 \Modules\Module\Database\Factories\ModelFactory::new()
 ```
 
+=======
+---
+module: theme
+topic: phpstan-activityesd
+canonical: ../../../Themes/docs/shared-components/phpstan-activity-fixes-completed.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-activity-fixes-completed.md
+>>>>>>> dev

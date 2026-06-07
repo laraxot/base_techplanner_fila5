@@ -21,7 +21,11 @@ class GetTransKeyAction
     {
         $class0 = $class;
         // If no class is provided, try to get it from the backtrace
+<<<<<<< HEAD
         if ($class === '') {
+=======
+        if ('' === $class) {
+>>>>>>> dev
             /** @var list<array{function: string, line?: int, file?: string, class?: class-string, type?: '->'|'::', args?: list<mixed>, object?: object}> $backtrace PHPStan knows this is always array */
             $backtrace = debug_backtrace();
             $class = Arr::get($backtrace, '1.class');
@@ -31,6 +35,7 @@ class GetTransKeyAction
         $arr = explode('\\', $class);
 
         // Handle cases where the provided class is not in the "Modules" namespace
+<<<<<<< HEAD
         if ($arr[0] !== 'Modules') {
             $backtrace = array_slice(debug_backtrace(), 2);
             $res = Arr::first(
@@ -43,6 +48,16 @@ class GetTransKeyAction
             );
 
             if ($res === null || ! isset($res['object'])) {
+=======
+        if ('Modules' !== $arr[0]) {
+            $backtrace = array_slice(debug_backtrace(), 2);
+            $res = Arr::first(
+                $backtrace,
+                fn (array $item): bool => isset($item['object']) && 'Modules' === explode('\\', get_class($item['object']))[0],
+            );
+
+            if (null === $res || ! isset($res['object'])) {
+>>>>>>> dev
                 $page = Arr::get(debug_backtrace(), '0.args.0');
                 Assert::string($page, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
                 $main_module = XotData::make()->main_module;
@@ -79,10 +94,14 @@ class GetTransKeyAction
         $first = $arr[0];
         $last = $arr[count($arr) - 1];
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (in_array($first, ['dashboard', 'list', 'get', 'manage', 'edit', 'view', 'create'], strict: true)) {
 =======
         if (in_array($first, ['dashboard', 'list', 'get', 'manage', 'edit', 'view'], strict: true)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (in_array($first, ['dashboard', 'list', 'get', 'manage', 'edit', 'view', 'create'], strict: true)) {
+>>>>>>> dev
             $class_snake = implode('_', array_slice($arr, 1));
         }
         if (in_array($last, ['action'], strict: true)) {

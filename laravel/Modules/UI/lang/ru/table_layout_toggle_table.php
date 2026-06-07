@@ -24,6 +24,9 @@ return [
             'tooltip' => 'Выбрать между списочным и сеточным представлением',
             'help' => 'Выберите подходящий тип макета для отображения данных',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -37,8 +40,11 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 =======
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

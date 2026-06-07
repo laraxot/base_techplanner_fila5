@@ -147,13 +147,19 @@ it('should demonstrate this matcher`s usage', async () => {
 
 ## Collegamenti tra versioni di testing.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [testing.md](laravel/modules/xot/docs/packages/testing.md)
 * [testing.md](laravel/modules/xot/docs/development/testing.md)
 * [testing.md](laravel/modules/cms/docs/frontoffice/testing.md)
 * [testing.md](laravel/themes/one/docs/testing.md)
+<<<<<<< HEAD
 =======
 * [testing.md](laravel/Modules/Xot/docs/packages/testing.md)
 * [testing.md](laravel/Modules/Xot/docs/development/testing.md)
 * [testing.md](laravel/Modules/Cms/docs/frontoffice/testing.md)
 * [testing.md](laravel/Themes/One/docs/testing.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

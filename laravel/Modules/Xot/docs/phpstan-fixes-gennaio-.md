@@ -170,6 +170,9 @@ public function getAllColors(): array
 - [PHPStan Level 10 Guide](phpstan_livello10_linee_guida.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

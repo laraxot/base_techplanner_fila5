@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UI Module Roadmap (2025 Q4)
 
 ## Vision & Scope
@@ -38,3 +39,12 @@
 - No direct Filament base class extensions
 - `getFormSchema()` used consistently
 - 0 PHPStan errors
+=======
+---
+module: theme
+topic: roadmap
+canonical: ../../../../Themes/docs/shared-components/q4-roadmap.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/q4-roadmap.md
+>>>>>>> dev

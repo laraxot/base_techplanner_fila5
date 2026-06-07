@@ -134,6 +134,10 @@
 - [Filament Class Extension Rules](../filament-class-extension-rules.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2026-01-22*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Ultimo aggiornamento: 2026-01-22*
+>>>>>>> dev

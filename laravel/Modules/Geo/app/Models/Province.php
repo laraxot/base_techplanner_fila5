@@ -56,9 +56,13 @@ class Province extends BaseModel
             ->get();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         /* @var array<int, array<string, mixed>> */
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+        /* @var array<int, array<string, mixed>> */
+>>>>>>> dev
         return $rows->toArray();
     }
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura della Homepage
 
 ## Introduzione
@@ -176,3 +177,12 @@ Per ottimizzare le performance della homepage:
 3. **Localizzazione**: Gestire correttamente le traduzioni dei contenuti
 4. **Testing**: Verificare la responsiveness su diversi dispositivi
 5. **Manutenibilità**: Documentare le personalizzazioni e i blocchi personalizzati 
+=======
+---
+module: theme
+topic: homepage_structure
+canonical: ../../../Themes/docs/shared-components/homepage-structure.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/homepage-structure.md
+>>>>>>> dev

@@ -9,6 +9,7 @@ Il metodo `addAttachments()` accetta un array di array, dove ogni array interno 
 ### Formato Corretto
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ```php
 // Formato corretto - un array di array di allegati
@@ -129,6 +130,8 @@ Il metodo `addAttachments()` accetta un array di array, dove ogni array interno 
 ### Formato Corretto
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 Il metodo `addAttachments()` supporta **due formati** per gli allegati:
 
 #### Formato 1: Allegato da File Esistente (`path`)
@@ -138,20 +141,28 @@ Il metodo `addAttachments()` supporta **due formati** per gli allegati:
 $attachments = [
     [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
 =======
         'path' => 'public_html/images/avatars/default-3.svg',
 >>>>>>> 4b6b99016 (first commit)
+=======
+'path' => '/var/www/html/Quaeris/public_html/images/avatars/default-3.svg',
+>>>>>>> dev
         'as' => 'logo.svg',  // Opzionale: nome del file da mostrare nell'email
         'mime' => 'image/svg+xml',  // Opzionale: MIME type del file
     ],
     // Eventualmente altri allegati...
     [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'path' => '/var/www/html/saluteora/public_html/documents/terms.pdf',
 =======
         'path' => 'public_html/documents/terms.pdf',
 >>>>>>> 4b6b99016 (first commit)
+=======
+'path' => '/var/www/html/Quaeris/public_html/documents/terms.pdf',
+>>>>>>> dev
         'as' => 'termini.pdf',
         'mime' => 'application/pdf',
     ],
@@ -195,38 +206,53 @@ public function addAttachments(array $attachments): self
 {
     $attachmentObjects = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     foreach ($attachments as $item) {
         $attachment = null;
         
+<<<<<<< HEAD
 =======
 
     foreach ($attachments as $item) {
         $attachment = null;
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         // Priorità 1: Se esiste 'path' e il file esiste, usa getAttachmentFromPath()
         if (isset($item['path']) && file_exists($item['path'])) {
             $attachment = $this->getAttachmentFromPath($item);
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         // Priorità 2: Se non c'è path o file non esiste, prova con 'data' (contenuto binario)
         if ($attachment === null && isset($item['data'])) {
             $attachment = $this->getAttachmentFromData($item);
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         if ($attachment) {
             $attachmentObjects[] = $attachment;
         }
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
     
     $this->customAttachments = $attachmentObjects;
@@ -236,6 +262,11 @@ public function addAttachments(array $attachments): self
     $this->customAttachments = $attachmentObjects;
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+    $this->customAttachments = $attachmentObjects;
+    
+>>>>>>> dev
     return $this;
 }
 
@@ -359,10 +390,14 @@ Ogni allegato può utilizzare **due formati** a seconda della fonte:
 ### Esempio: Email con PDF di Scheda Valutazione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vedi [Email PDF Attachments](../../../ptv/docs/email-pdf-attachments.md) per un esempio completo di generazione e invio PDF come allegato email.
 =======
 Vedi [Email PDF Attachments](../../../Ptv/docs/email-pdf-attachments.md) per un esempio completo di generazione e invio PDF come allegato email.
 >>>>>>> 4b6b99016 (first commit)
+=======
+Vedi [Email PDF Attachments](../../../ptv/docs/email-pdf-attachments.md) per un esempio completo di generazione e invio PDF come allegato email.
+>>>>>>> dev
 
 ## Esempi Completi
 
@@ -422,10 +457,14 @@ use Modules\Xot\Actions\Pdf\GetPdfContentByRecordAction;
 foreach ($records as $record) {
     $pdfContent = app(GetPdfContentByRecordAction::class)->execute($record);
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     $attachments = [
         [
             'data' => $pdfContent,
@@ -434,16 +473,22 @@ foreach ($records as $record) {
         ],
     ];
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     $notify = new RecordNotification($record, 'bulk-template');
     $notify->addAttachments($attachments);
     
+<<<<<<< HEAD
 =======
 
     $notify = new RecordNotification($record, 'bulk-template');
     $notify->addAttachments($attachments);
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     Notification::route('mail', $record->email)->notify($notify);
 }
 ```
@@ -452,11 +497,15 @@ foreach ($records as $record) {
 
 ### Documentazione Interna
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Ptv - Complete PDF Email Guide](../../../ptv/docs/pdf-email-attachments-complete-guide.md)
 - [Xot - PDF Generation Technical](../../../xot/docs/actions/pdf-content-generation-technical.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
 - [EMAIL_TROUBLESHOOTING.md](./email_troubleshooting.md)
+<<<<<<< HEAD
 =======
 - [Ptv - Complete PDF Email Guide](../../../Ptv/docs/pdf-email-attachments-complete-guide.md)
 - [Xot - PDF Generation Technical](../../../Xot/docs/actions/pdf-content-generation-technical.md)
@@ -464,6 +513,8 @@ foreach ($records as $record) {
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/SPATIE_MAIL_TEMPLATES_STRUCTURE.md)
 - [EMAIL_TROUBLESHOOTING.md](./EMAIL_TROUBLESHOOTING.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### File Correlati
 - `Modules/Notify/app/Emails/SpatieEmail.php` - Gestione allegati

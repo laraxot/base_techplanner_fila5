@@ -58,6 +58,7 @@ Verificare che:
 - Altri widget di autenticazione abbiano componenti simili per coerenza
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Documentation](readme.md)
 =======
 - [User Module Documentation](README.md)
@@ -70,6 +71,13 @@ Verificare che:
 =======
 *Ultimo aggiornamento: giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [User Module Documentation](readme.md)
+- [Authentication Widgets Guide](auth_widgets.md)
+- [Filament Form Components](filament_form_components.md)
+- [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
+- [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
+>>>>>>> dev
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto
@@ -162,6 +170,7 @@ Verificare che:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Documentation](readme.md)
 =======
 - [User Module Documentation](README.md)
@@ -174,3 +183,10 @@ Verificare che:
 =======
 *Ultimo aggiornamento: giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [User Module Documentation](readme.md)
+- [Authentication Widgets Guide](auth_widgets.md)
+- [Filament Form Components](filament_form_components.md)
+- [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
+
+>>>>>>> dev

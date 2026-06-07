@@ -1,5 +1,6 @@
 <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     {{ $_theme->showPageContent('home') }}
 =======
     <div class="site-intro flex items-center justify-center bg-black text-white">
@@ -21,4 +22,7 @@
         {{ $_theme->showPageContent('home') }}
     </x-std>
 >>>>>>> 4b6b99016 (first commit)
+=======
+    {{ $_theme->showPageContent('home') }}
+>>>>>>> dev
 </div>

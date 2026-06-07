@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Activity Module - Query Optimization Analysis
 
 ## Overview
@@ -636,3 +637,12 @@ DB::listen(function ($query) {
 
 This optimization plan will significantly improve the Activity module's performance while maintaining all existing functionality.
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: query-optimization-analysis
+canonical: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/QUERY_OPTIMIZATION_ANALYSIS.md
+>>>>>>> dev

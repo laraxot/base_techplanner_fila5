@@ -148,6 +148,9 @@ $userClass = XotData::make()->getUserClass();
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-10*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

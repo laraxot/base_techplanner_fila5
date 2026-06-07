@@ -11,9 +11,13 @@ return [
             'description' => 'Objectnaam',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'edit-name' => [
             'label' => 'Naam bewerken',
@@ -22,9 +26,13 @@ return [
             'description' => 'Actie om de naam te wijzigen',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'change-state' => [
             'label' => 'Status wijzigen',
@@ -33,9 +41,13 @@ return [
             'description' => 'Actie om de status te wijzigen',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'state' => [
             'label' => 'Status',
@@ -44,9 +56,13 @@ return [
             'description' => 'Huidige systeemconditie',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'message' => [
             'label' => 'Bericht',
@@ -55,9 +71,13 @@ return [
             'description' => 'Berichttekst',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'messages' => [
@@ -72,6 +92,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -83,6 +106,9 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

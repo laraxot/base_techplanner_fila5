@@ -15,6 +15,9 @@ return [
         'icon' => 'heroicon-o-key',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Password Reset',
     'plural_label' => 'Password Reset (Plurale)',
     'fields' => [
@@ -48,10 +51,13 @@ return [
             'label' => 'Elimina Password Reset',
         ],
     ],
+<<<<<<< HEAD
 =======
     'label' => '',
     'plural_label' => '',
     'fields' => [],
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

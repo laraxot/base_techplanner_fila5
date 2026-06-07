@@ -7,10 +7,14 @@ return [
     'greeting' => 'Ciao!',
     'regards' => 'Cordiali saluti,',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'trouble_clicking_button' => 'Se hai problemi a cliccare sul pulsante \\":actionText\\", copia e incolla l\'URL qui sotto nel tuo browser:',
 =======
     'trouble_clicking_button' => 'Se hai problemi a cliccare sul pulsante \":actionText\", copia e incolla l\'URL qui sotto nel tuo browser:',
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'trouble_clicking_button' => 'Se hai problemi a cliccare sul pulsante \\":actionText\\", copia e incolla l\'URL qui sotto nel tuo browser:',
+>>>>>>> dev
     'thank_you_for_using_app' => 'Grazie per aver utilizzato la nostra applicazione!',
     'password_reset_subject' => 'Reimposta la Password',
     'password_cause_of_email' => 'Ricevi questa email perché abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account.',
@@ -18,6 +22,9 @@ return [
     'reset_password' => 'Clicca qui per reimpostare la tua password',
     'click_to_confirm' => 'Clicca qui per confermare il tuo account:',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -31,6 +38,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

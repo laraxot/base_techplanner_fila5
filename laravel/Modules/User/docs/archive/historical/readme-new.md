@@ -999,7 +999,11 @@ See [ROADMAP.md](./roadmap.md) for details.
 
 ### Project Documentation
 - [CLAUDE.md](../../../claude.md) - Project architecture
+<<<<<<< HEAD
 - [Security Guidelines](../../../docs/security.md)
+=======
+- [Security Guidelines](../../../../docs/security.md)
+>>>>>>> dev
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

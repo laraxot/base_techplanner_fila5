@@ -24,7 +24,11 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 use Override;
 
 /**
+<<<<<<< HEAD
  * @property \Filament\Schemas\Schema $smsForm
+=======
+ * @property Schema $smsForm
+>>>>>>> dev
  */
 class SendNetfunSmsPage extends XotBasePage
 {
@@ -69,7 +73,11 @@ class SendNetfunSmsPage extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, \Filament\Forms\Components\TextInput|\Filament\Forms\Components\Textarea|\Filament\Forms\Components\Select>
+=======
+     * @return array<string, TextInput|Textarea|Select>
+>>>>>>> dev
      */
     public function getSmsFormSchema(): array
     {
@@ -111,7 +119,15 @@ class SendNetfunSmsPage extends XotBasePage
     {
         $data = $this->smsForm->getState();
 
+<<<<<<< HEAD
         $smsData = SmsData::from($data);
+=======
+        $smsData = SmsData::from([
+            'recipient' => (string) ($data['recipient'] ?? ''),
+            'body' => (string) ($data['body'] ?? ''),
+            'from' => (string) ($data['from'] ?? ''),
+        ]);
+>>>>>>> dev
         $provider = $data['provider'] ?? 'netfun';
 
         try {
@@ -123,7 +139,11 @@ class SendNetfunSmsPage extends XotBasePage
                 ->body(__('notify::sms.notifications.sent.body'))
                 ->send();
 
+<<<<<<< HEAD
             Log::info('SMS inviato con successo', [
+=======
+            Log::debug('SMS inviato con successo', [
+>>>>>>> dev
                 'recipient' => $data['recipient'],
                 'from' => $data['from'],
                 'provider' => $provider,

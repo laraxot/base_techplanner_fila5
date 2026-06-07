@@ -26,6 +26,9 @@ return [
         'id' => [
             'label' => 'ID',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -107,6 +110,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'uuid' => [
@@ -138,6 +142,8 @@ return [
         'reorderRecords' => [
             'label' => 'reorderRecords',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -229,8 +235,13 @@ return [
         'icon' => 'job-failed-job',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

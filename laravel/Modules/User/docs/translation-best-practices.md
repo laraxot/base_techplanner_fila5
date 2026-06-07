@@ -142,9 +142,14 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 ## Collegamenti Correlati
 - [Documentazione Laravel Localization](https://laravel.com/docs/localization)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices di Codice](./code_best_practices.md)
 - [Struttura Moduli](./module_structure.md) 
 =======
 - [Best Practices di Codice](./CODE_BEST_PRACTICES.md)
 - [Struttura Moduli](./MODULE_STRUCTURE.md) 
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Best Practices di Codice](./code_best_practices.md)
+- [Struttura Moduli](./module_structure.md) 
+>>>>>>> dev

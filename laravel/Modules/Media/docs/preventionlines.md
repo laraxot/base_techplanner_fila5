@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Linee Guida Prevenzione Problemi - Modulo Media
 
 ## 🚨 Problemi Critici Risolti in S3Test.php
@@ -382,3 +383,12 @@ jobs:
 **📦 Versione**: 3.1.0  
 **🎯 Obiettivo**: Prevenzione completa problemi futuri  
 **✅ Status**: Linee guida implementate e testate
+=======
+---
+module: theme
+topic: preventionlines
+canonical: ../../../Themes/docs/shared-components/prevention-guidelines.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/prevention-guidelines.md
+>>>>>>> dev

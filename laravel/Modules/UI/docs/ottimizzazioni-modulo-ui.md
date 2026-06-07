@@ -345,24 +345,36 @@ echo "✅ Consolidamento completato!"
 
 ### Documentazione Correlata
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README](../readme.md) - Panoramica modulo UI
 =======
 - [README](../README.md) - Panoramica modulo UI
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README](../readme.md) - Panoramica modulo UI
+>>>>>>> dev
 - [Architettura](./core/architecture.md) - Architettura modulo
 - [Convenzioni](./core/conventions.md) - Convenzioni unificate
 
 ### Documentazione Root
+<<<<<<< HEAD
 - [docs/ottimizzazioni-sistema.md](../../../docs/ottimizzazioni-sistema.md) - Ottimizzazioni sistema generale
 - [docs/architettura-moduli.md](../../../docs/architettura-moduli.md) - Architettura moduli
 
 ### Documentazione Moduli Correlati
 <<<<<<< HEAD
+=======
+- [docs/ottimizzazioni-sistema.md](../../../../docs/ottimizzazioni-sistema.md) - Ottimizzazioni sistema generale
+- [docs/architettura-moduli.md](../../../../docs/architettura-moduli.md) - Architettura moduli
+
+### Documentazione Moduli Correlati
+>>>>>>> dev
 - [Xot/docs/ottimizzazioni-modulo-xot.md](../../xot/docs/ottimizzazioni-modulo-xot.md) - Ottimizzazioni modulo Xot
 - [User/docs/ottimizzazioni-modulo-user.md](../../user/docs/ottimizzazioni-modulo-user.md) - Ottimizzazioni modulo User
 
 ---
 
+<<<<<<< HEAD
 =======
 - [Xot/docs/ottimizzazioni-modulo-xot.md](../../Xot/docs/ottimizzazioni-modulo-xot.md) - Ottimizzazioni modulo Xot
 - [User/docs/ottimizzazioni-modulo-user.md](../../User/docs/ottimizzazioni-modulo-user.md) - Ottimizzazioni modulo User
@@ -371,6 +383,8 @@ echo "✅ Consolidamento completato!"
 
 **Ultimo aggiornamento:** 2025-01-06
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Stato:** In implementazione
 **Responsabile:** Team Sviluppo UI
 **Priorità:** ALTA (duplicazioni massive identificate)

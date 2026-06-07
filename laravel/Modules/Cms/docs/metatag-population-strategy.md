@@ -11,20 +11,28 @@ I file metatag in `config/local/<directory progetto>/lang/{locale}/metatag.php` 
 - `Themes/One/lang/it/landing.php` - Contenuti landing page
 - `Themes/One/lang/en/navigation.php` - Versione inglese
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Themes/One/lang/en/landing.php` - Versione inglese  
 =======
 - `Themes/One/lang/en/landing.php` - Versione inglese
 >>>>>>> 4b6b99016 (first commit)
+=======
+- `Themes/One/lang/en/landing.php` - Versione inglese  
+>>>>>>> dev
 - `Themes/One/lang/de/navigation.php` - Versione tedesca
 
 ### Contenuti Chiave Estratti
 
 #### Titolo Principale (title)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **IT**: "<main module> - Salute Orale per Gestanti"
 =======
 - **IT**: "<main module> - <slogan> per Gestanti"
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **IT**: "<main module> - Salute Orale per Gestanti"
+>>>>>>> dev
 - **EN**: "<main module> - Oral Health for Pregnant Women"
 - **DE**: "<main module> - Mundgesundheit für Schwangere"
 
@@ -40,6 +48,9 @@ Basato su: `navigation.hero.welcome_subtitle.label`
 ## Strategia SEO Keywords
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 ### Keywords Italiane
 ```
 salute orale, gravidanza, gestanti, dentista, prevenzione, odontoiatria, 
@@ -51,17 +62,21 @@ controllo dentistico, primo trimestre
 ```
 oral health, pregnancy, pregnant women, dentist, prevention, dentistry, 
 free visits, ISEE, mother baby health, cavities, dental hygiene, 
+<<<<<<< HEAD
 =======
 ### Keywords Inglesi
 ```
 oral health, pregnancy, pregnant women, dentist, prevention, dentistry,
 free visits, ISEE, mother baby health, cavities, dental hygiene,
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 dental checkup, first trimester
 ```
 
 ### Keywords Tedesche
 ```
+<<<<<<< HEAD
 <<<<<<< HEAD
 mundgesundheit, schwangerschaft, schwangere, zahnarzt, prävention, 
 zahnmedizin, kostenlose besuche, ISEE, mutter baby gesundheit, karies, 
@@ -69,6 +84,10 @@ zahnmedizin, kostenlose besuche, ISEE, mutter baby gesundheit, karies,
 mundgesundheit, schwangerschaft, schwangere, zahnarzt, prävention,
 zahnmedizin, kostenlose besuche, ISEE, mutter baby gesundheit, karies,
 >>>>>>> 4b6b99016 (first commit)
+=======
+mundgesundheit, schwangerschaft, schwangere, zahnarzt, prävention, 
+zahnmedizin, kostenlose besuche, ISEE, mutter baby gesundheit, karies, 
+>>>>>>> dev
 zahnhygiene, zahnkontrolle, erstes trimester
 ```
 
@@ -92,22 +111,32 @@ zahnhygiene, zahnkontrolle, erstes trimester
 ### Autore (author)
 - **IT**: "Progetto <main module> - ANDI, INMP, COI"
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **EN**: "<main module> Project - ANDI, INMP, COI"  
 =======
 - **EN**: "<main module> Project - ANDI, INMP, COI"
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **EN**: "<main module> Project - ANDI, INMP, COI"  
+>>>>>>> dev
 - **DE**: "<main module> Projekt - ANDI, INMP, COI"
 
 Basato sui partner del progetto identificati nelle traduzioni.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 ### Partner Identificati
 - **ANDI**: Fondazione ANDI (Associazione Nazionale Dentisti Italiani)
 - **INMP**: Istituto Nazionale per la promozione della salute delle popolazioni Migranti e per il contrasto delle malattie della Povertà
 - **COI**: Cooperazione Odontoiatrica Internazionale
 
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ## Configurazioni Tecniche
 
 ### Robots
@@ -157,10 +186,14 @@ I metatag vengono utilizzati nel componente `Modules\Cms\app\View\Components\Met
 ### Aggiornamenti Necessari
 - Aggiornare keywords se cambiano i servizi
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Modificare descrizioni se cambia il focus del progetto  
 =======
 - Modificare descrizioni se cambia il focus del progetto
 >>>>>>> 4b6b99016 (first commit)
+=======
+- Modificare descrizioni se cambia il focus del progetto  
+>>>>>>> dev
 - Aggiungere nuove lingue se necessario
 - Aggiornare informazioni partner se cambiano
 

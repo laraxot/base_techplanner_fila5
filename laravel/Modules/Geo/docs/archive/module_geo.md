@@ -1,10 +1,17 @@
 # Modulo Geo
 
 ## Informazioni Generali
+<<<<<<< HEAD
 - **Nome**: `laraxot/module_geo_fila3`
 - **Descrizione**: Modulo per la gestione delle funzionalità geografiche
 - **Namespace**: `Modules\Geo`
 - **Repository**: https://github.com/laraxot/module_geo_fila3.git
+=======
+- **Nome**: `laraxot/module_geo_fila5`
+- **Descrizione**: Modulo per la gestione delle funzionalità geografiche
+- **Namespace**: `Modules\Geo`
+- **Repository**: https://github.com/laraxot/module_geo_fila5.git
+>>>>>>> dev
 
 ## Service Providers
 1. `Livewire\LivewireServiceProvider`

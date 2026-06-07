@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Module - Comprehensive Analysis
 
 ## Module Overview
@@ -75,3 +76,12 @@ User module integrates with LimeSurvey through:
 - User audit trail
 - Enhanced team collaboration features
 - User data export for GDPR compliance
+=======
+---
+module: theme
+topic: module
+canonical: ../../../Themes/docs/shared-components/module-analysis-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/module-analysis-Modules.md
+>>>>>>> dev

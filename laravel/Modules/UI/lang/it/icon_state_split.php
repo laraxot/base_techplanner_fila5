@@ -7,6 +7,9 @@ return [
         'banned-icon' => [
             'label' => 'banned-icon',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -256,6 +259,7 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Icon State Split',
+<<<<<<< HEAD
 =======
         ],
         'banned-action' => [
@@ -369,6 +373,8 @@ return [
         'delete' => [
             'label' => 'delete',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

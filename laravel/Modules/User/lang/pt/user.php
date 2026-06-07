@@ -37,9 +37,13 @@ return [
             'description' => 'nome',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'email' => [
             'label' => 'Email',
@@ -47,6 +51,9 @@ return [
             'description' => 'email',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
         'created_at' => [
@@ -78,6 +85,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'created_at' => [
@@ -93,6 +101,8 @@ return [
         'id' => [
             'label' => 'ID',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'password' => [
             'label' => 'Senha',
@@ -100,14 +110,21 @@ return [
             'description' => 'senha',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'password_confirmation' => [
             'label' => 'Confirmar Senha',
             'placeholder' => 'Confirme a senha',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -117,16 +134,22 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'email_verified_at' => [
             'label' => 'Email Verificado em',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'current_password' => [
             'label' => 'Senha Atual',
             'placeholder' => 'Insira a senha atual',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -142,6 +165,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'roles' => [
@@ -150,6 +174,8 @@ return [
         'permissions' => [
             'label' => 'Permissões',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'status' => [
             'label' => 'Status',
@@ -159,6 +185,9 @@ return [
                 'blocked' => 'Bloqueado',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -288,6 +317,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'last_login' => [
@@ -353,6 +383,8 @@ return [
         'changePassword' => [
             'label' => 'changePassword',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'filters' => [
@@ -467,8 +499,13 @@ return [
         'label' => 'Usuário',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

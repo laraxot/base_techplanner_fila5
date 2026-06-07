@@ -9,98 +9,152 @@ return [
             'placeholder' => 'Inserisci il nome dell\'area',
             'help' => 'Nome identificativo dell\'area',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Descrizione dettagliata dell\'area',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'type' => [
             'label' => 'Tipo',
             'placeholder' => 'Seleziona il tipo di area',
             'help' => 'Tipo di area geografica',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'geometry' => [
             'label' => 'Geometria',
             'placeholder' => 'Inserisci la geometria',
             'help' => 'Geometria dell\'area in formato GeoJSON',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'center_latitude' => [
             'label' => 'Latitudine centro',
             'placeholder' => 'Inserisci la latitudine del centro',
             'help' => 'Latitudine del centro dell\'area',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'center_longitude' => [
             'label' => 'Longitudine centro',
             'placeholder' => 'Inserisci la longitudine del centro',
             'help' => 'Longitudine del centro dell\'area',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'area_value' => [
             'label' => 'Superficie',
             'placeholder' => 'Inserisci la superficie',
             'help' => 'Superficie dell\'area',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'perimeter' => [
             'label' => 'Perimetro',
             'placeholder' => 'Inserisci il perimetro',
             'help' => 'Perimetro dell\'area',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'is_active' => [
-            'label' => 'Attiva',
-            'help' => 'Indica se l\'area è attiva nel sistema',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'is_active' => [
+            'label' => 'Attiva',
+            'help' => 'Indica se l\'area è attiva nel sistema',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'validation' => [
@@ -149,6 +203,9 @@ return [
         'yd' => 'Iarde',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Area',
     'plural_label' => 'Area (Plurale)',
     'navigation' => [
@@ -173,6 +230,9 @@ return [
             'label' => 'Elimina Area',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

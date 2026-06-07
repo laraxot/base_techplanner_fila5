@@ -11,7 +11,10 @@ use Modules\Xot\Models\XotBaseModel;
  */
 abstract class BaseModel extends XotBaseModel
 {
+<<<<<<< HEAD
     /** @var string */
+=======
+>>>>>>> dev
     protected $connection = 'user';
 
     /** @return array<string, string> */
@@ -19,10 +22,14 @@ abstract class BaseModel extends XotBaseModel
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             // 'id' => 'string',
 =======
             'id' => 'string',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            // 'id' => 'string',
+>>>>>>> dev
             'uuid' => 'string',
             'published_at' => 'datetime',
             'verified_at' => 'datetime',

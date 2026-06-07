@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 # Modulo [Nome Modulo]
@@ -275,3 +276,6 @@ Questo modulo è rilasciato sotto la [MIT License](LICENSE.md).
 - [Nome Libreria/Framework] per [funzionalità specifica]
 - [Nome Persona/Organizzazione] per [contributo specifico]
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

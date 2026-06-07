@@ -5,17 +5,24 @@ declare(strict_types=1);
 namespace Modules\Employee\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Employee\Database\Factories\WorkHourFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Employee\Database\Factories\WorkHourFactory;
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\Employee\Database\Factories\WorkHourFactory;
+>>>>>>> dev
 use Modules\Employee\Enums\WorkHourStatusEnum;
 use Modules\Employee\Enums\WorkHourTypeEnum;
 use Modules\TechPlanner\Models\Profile;
@@ -47,9 +54,13 @@ use Modules\User\Models\User;
  * @property-read string $formatted_time
  * @property-read Profile|null $updater
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @method static Builder<static>|WorkHour forDate(\Carbon\Carbon $date)
  * @method static Builder<static>|WorkHour forEmployee(int $employeeId)
  * @method static Builder<static>|WorkHour newModelQuery()
@@ -73,15 +84,21 @@ use Modules\User\Models\User;
  * @method static Builder<static>|WorkHour whereType($value)
  * @method static Builder<static>|WorkHour whereUpdatedAt($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
  *
  * @property-read Profile|null $deleter
  *
  * @method static WorkHourFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
 =======
  * @property-read Profile|null $deleter
  * @method static WorkHourFactory factory($count = null, $state = [])
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class WorkHour extends BaseModel

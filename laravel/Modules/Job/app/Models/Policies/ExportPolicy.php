@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Models\Policies;
 
+<<<<<<< HEAD
 use Modules\Job\Models\Export;
 use Modules\Xot\Contracts\UserContract;
 
@@ -65,3 +66,6 @@ class ExportPolicy extends JobBasePolicy
         return $user->hasPermissionTo('export.forceDelete');
     }
 }
+=======
+class ExportPolicy extends JobBasePolicy {}
+>>>>>>> dev

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🎞️ **Media Module** - High-Performance Asset Management
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -11,12 +12,44 @@
 
 Il modulo **Media** automatizza il ciclo di vita di ogni byte multimediale caricato.
 
+=======
+---
+title: "Media Module Documentation"
+type: documentation
+tags: [module, documentation]
+created: 2026-06-05
+updated: 2026-06-05
+---
+
+# Modulo Media
+
+## Overview
+
+Il modulo **Media** fa parte dell'ecosistema [PROJECT_NAME] platform.
+
+## Scopo
+
+Gestisce le funzionalità specifiche del dominio Media.
+
+## Cosa copre (business)
+||||||| parent of 53258b2 (.)
+>>>>>>> dev
 - 🖼️ **Smart Transformations**: Generazione automatica di preview, thumbnail e formati next-gen (WebP/AVIF).
 - 🎥 **Video Transcoding**: Engine FFmpeg integrato per convertire video in formati streaming-efficient (H.264/VP9).
 - ☁️ **Cloud Native**: Supporto multi-disk trasparente (Local, S3, Azure) gestito dall'astrazione CloudStorage.
 - 🛡️ **Safe Uploads**: Validazione rigorosa di MIME types, dimensioni e scan anti-malware integrato.
 - 🎨 **Visual Library**: Interfaccia Filament per gestire migliaia di file con drag-and-drop e visualizzazione a griglia.
 
+<<<<<<< HEAD
+=======
+- **Upload & gestione file**: associazione media a record di dominio (es. avatar, documenti, allegati).
+- **Integrazione UI**: componenti/risorse Filament per caricare e gestire media.
+- **Policy**: regole condivise su naming, storage e sicurezza (validazioni, mime types).
+
+## Struttura
+
+||||||| parent of 53258b2 (.)
+>>>>>>> dev
 ## ⚡ **Funzionalità Core**
 
 ### 🧩 **Lazy Conversions**
@@ -31,6 +64,7 @@ Le conversioni non bloccano la UI. Vengono processate in background tramite il m
 ```php
 $model->addMedia($file)->toMediaCollection('gallery');
 ```
+<<<<<<< HEAD
 
 ### ⚙️ **Recupero URL Ottimizzata**
 ```php
@@ -50,6 +84,34 @@ echo $model->getFirstMediaUrl('gallery', 'webp-compressed');
 **📦 Versione**: 3.2.0
 **✅ PHPStan level 10**: Compliance nativa garantita
 
+=======
+Media/
+├── app/
+│   ├── Models/
+│   ├── Filament/
+│   └── ...
+├── docs/
+├── lang/
+└── resources/
+```
+
+## Dipendenze
+
+- [Xot Base](../Xot/docs/)
+- [User Module](../User/docs/)
+
+## Collegamenti
+
+- [Documentazione Root](../../../docs/MEDIA_MODULE.md)
+
+## Backlinks
+
+- [Moduli correlati](../README.md)
+
+## AI Workflows
+- [AI Methodologies](./ai-methodologies.md)
+||||||| parent of 53258b2 (.)
+>>>>>>> dev
 ## 🚀 Release su GitHub
 Le release sono basate su tag Git e possono includere release notes generate automaticamente.
 Workflow locale: `.github/workflows/release.yml`.
@@ -61,6 +123,7 @@ Workflow locale: `.github/workflows/release.yml`.
 - Marco Sottana <marco.sottana@gmail.com>
 
 **License:** MIT
+<<<<<<< HEAD
 =======
 # 📁 **Media Module** - Sistema Avanzato Gestione File Multimediali
 
@@ -368,3 +431,19 @@ ffmpeg -codecs
 **🚀 Performance**: 95/100 score
 **🔧 S3Test Corrections**: Completate ✅
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+
+## Standard Rules & Workflow
+
+- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
+- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
+- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
+
+## Documentation
+
+- [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — Pattern per caricamento efficiente
+- [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
+- [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
+- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+>>>>>>> dev

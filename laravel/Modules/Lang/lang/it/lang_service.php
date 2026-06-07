@@ -9,44 +9,65 @@ return [
             'placeholder' => 'Seleziona la lingua',
             'helper_text' => 'Lingua attualmente selezionata per l\'interfaccia',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'available_languages' => [
             'label' => 'Lingue Disponibili',
             'placeholder' => 'Elenco lingue disponibili',
             'helper_text' => 'Lingue disponibili per la selezione nell\'interfaccia',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'value' => [
             'label' => 'Valore',
             'placeholder' => 'Inserisci il valore',
             'helper_text' => 'Valore della traduzione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'key' => [
             'label' => 'Chiave',
             'placeholder' => 'Inserisci la chiave di traduzione',
             'helper_text' => 'Chiave identificativa per la traduzione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'locale' => [
             'label' => 'Locale',
             'placeholder' => 'Seleziona il locale',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'helper_text' => 'Codice locale della lingua (es. it, en, de]',
             'tooltip' => '',
@@ -54,6 +75,11 @@ return [
 =======
             'helper_text' => 'Codice locale della lingua (es. it, en, de)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => 'Codice locale della lingua (es. it, en, de]',
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -122,8 +148,13 @@ return [
         'description' => 'Gestisci le traduzioni e le lingue disponibili nel sistema',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Lang Service',
     'plural_label' => 'Lang Service (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Lang Service',
+    'plural_label' => 'Lang Service (Plurale)',
+>>>>>>> dev
 ];

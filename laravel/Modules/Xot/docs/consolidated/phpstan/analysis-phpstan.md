@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi PHPStan - Modulo Xot
 
 ## Panoramica
@@ -64,3 +65,12 @@ Questo documento contiene l'analisi dettagliata dei problemi rilevati da PHPStan
 - Eseguire PHPStan dopo ogni modifica
 - Mantenere aggiornato questo documento
 - Verificare l'impatto delle correzioni sugli altri moduli
+=======
+---
+module: theme
+topic: analysis-phpstan
+canonical: ../../../../../Themes/docs/shared-components/analisi-phpstan.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/analisi-phpstan.md
+>>>>>>> dev

@@ -20,22 +20,34 @@ return [
             'placeholder' => 'Inserisci il nome dell\'extra',
             'help' => 'Nome identificativo dell\'extra',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'description' => [
-            'label' => 'Descrizione',
-            'placeholder' => 'Inserisci una descrizione dettagliata',
-            'help' => 'Descrizione completa delle funzionalità dell\'extra',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'description' => [
+            'label' => 'Descrizione',
+            'placeholder' => 'Inserisci una descrizione dettagliata',
+            'help' => 'Descrizione completa delle funzionalità dell\'extra',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'type' => [
             'label' => 'Tipo',
@@ -52,11 +64,17 @@ return [
                 'utility' => 'Utilità',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'status' => [
             'label' => 'Stato',
@@ -69,33 +87,51 @@ return [
                 'updating' => 'In aggiornamento',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'version' => [
             'label' => 'Versione',
             'placeholder' => 'Inserisci la versione (es. 1.0.0)',
             'help' => 'Versione semantica dell\'extra',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'dependencies' => [
-            'label' => 'Dipendenze',
-            'placeholder' => 'Seleziona le dipendenze richieste',
-            'help' => 'Altri extra o componenti necessari',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'dependencies' => [
+            'label' => 'Dipendenze',
+            'placeholder' => 'Seleziona le dipendenze richieste',
+            'help' => 'Altri extra o componenti necessari',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'priority' => [
             'label' => 'Priorità',
@@ -107,37 +143,58 @@ return [
                 'low' => 'Bassa',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'settings' => [
             'label' => 'Impostazioni',
             'placeholder' => 'Configura le impostazioni',
             'help' => 'Configurazioni specifiche dell\'extra',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'help' => 'Data e ora di creazione dell\'extra',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'updated_at' => [
             'label' => 'Ultimo Aggiornamento',
             'help' => 'Data e ora dell\'ultima modifica',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -207,6 +264,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'id' => [
@@ -242,6 +300,8 @@ return [
         'toggleColumns' => [
             'label' => 'toggleColumns',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -318,8 +378,13 @@ return [
         'label' => 'extra.model',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

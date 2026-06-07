@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sushi Models - Dependency Cycle Fix
 
 ## 🚨 Problema Critico Risolto
@@ -133,3 +134,12 @@ La trasparenza del path diretto è superiore all'astrazione del `module_path()` 
 **Risolto**: Dicembre 2024  
 **Priorità**: P0 (Critical) - Bloccava registrazioni  
 **Impatto**: Sistema completamente non funzionale  
+=======
+---
+module: theme
+topic: sushi_models_dependency_cycle_fix
+canonical: ../../../Themes/docs/shared-components/sushi-models-dependency-cycle-fix.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/sushi-models-dependency-cycle-fix.md
+>>>>>>> dev

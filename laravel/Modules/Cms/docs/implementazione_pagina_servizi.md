@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione Pagina Servizi - <main module>
 
 *Documentazione completa dell'implementazione della pagina servizi seguendo la filosofia e architettura <main module>*
@@ -258,3 +259,12 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 **Review**: Approvazione stakeholder medici, tecnici, UX
 
 *Implementazione completata seguendo rigorosamente la filosofia <main module>: democratizzazione dell'accesso alla salute orale attraverso tecnologia umana, competente e inclusiva.* 
+=======
+---
+module: theme
+topic: implementazione_pagina_servizi
+canonical: ../../../Themes/docs/shared-components/implementazione-pagina-servizi.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/implementazione-pagina-servizi.md
+>>>>>>> dev

@@ -16,6 +16,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'title' => [
             'label' => 'Titolo',
             'tooltip' => '',
@@ -64,6 +67,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         'title' => 'Titolo',
         'type' => 'Tipo Mappa',
@@ -74,6 +78,8 @@ return [
         'layers' => 'Livelli',
         'style' => 'Stile',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'map_types' => [
         'roadmap' => 'Stradale',
@@ -95,8 +101,13 @@ return [
         'export' => 'Esporta',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

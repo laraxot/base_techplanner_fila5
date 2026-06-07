@@ -666,8 +666,11 @@ php artisan test --stop-on-failure
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-08-04*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 *Modulo: Xot*
 *Categoria: Testing*

@@ -9,5 +9,9 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
 class CreateTemporaryUpload extends XotBaseCreateRecord
 {
+<<<<<<< HEAD
     protected static string $resource = TemporaryUploadResource::class;
+=======
+    public static string $resource = TemporaryUploadResource::class;
+>>>>>>> dev
 }

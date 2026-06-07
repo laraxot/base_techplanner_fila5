@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 mappa piu' carina con tanto di repository github
 https://farmshops.eu/
 https://github.com/CodeforKarlsruhe/direktvermarkter
@@ -102,3 +103,12 @@ https://openrouteservice.org/
 
 https://www.igismap.com/top-10-map-direction-api-routing-libraries-navigation-free-or-paid/
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: tips-and-links
+canonical: ../../../Themes/docs/shared-components/tips_and_links.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/tips_and_links.txt
+>>>>>>> dev

@@ -406,10 +406,14 @@ class TestData
             'appointment' => [
                 'name' => 'John Doe',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'date' => '[DATE]',
 =======
                 'date' => '2024-03-20',
 >>>>>>> 4b6b99016 (first commit)
+=======
+                'date' => '[DATE]',
+>>>>>>> dev
             ],
             'payment' => [
                 'name' => 'John Doe',

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /*
      * |--------------------------------------------------------------------------
@@ -17,6 +18,8 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'failed' => 'Credenziali non valide.',
     'password' => 'La password fornita non è corretta.',
     'throttle' => 'Troppi tentativi di accesso. Riprova tra :seconds secondi.',
@@ -85,6 +88,9 @@ return [
         'logout' => 'Disconnetti',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Auth',
     'plural_label' => 'Auth (Plurale)',
     'navigation' => [
@@ -129,6 +135,9 @@ return [
             'label' => 'Elimina Auth',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

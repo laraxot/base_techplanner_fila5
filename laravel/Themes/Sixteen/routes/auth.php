@@ -22,8 +22,12 @@ use Themes\Sixteen\Services\SpidAuthService;
 Route::prefix('auth/spid')
     ->name('spid.')
     ->middleware(['web'])
+<<<<<<< HEAD
     ->group(function () {
         
+=======
+    ->group(function (): void {
+>>>>>>> dev
         // Login con provider SPID specifico
         Route::get('login/{provider}', [SpidAuthController::class, 'login'])
             ->name('login')
@@ -31,7 +35,11 @@ Route::prefix('auth/spid')
         // Callback dal provider SPID
         Route::post('callback', [SpidAuthController::class, 'callback'])
             ->name('callback');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> dev
         // Logout SPID
         Route::match(['get', 'post'], 'logout', [SpidAuthController::class, 'logout'])
             ->name('logout')
@@ -39,7 +47,11 @@ Route::prefix('auth/spid')
         // Single Logout (SLO) dal provider
         Route::post('slo', [SpidAuthController::class, 'singleLogout'])
             ->name('slo');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> dev
         // Metadata SAML del Service Provider
         Route::get('metadata', [SpidAuthController::class, 'metadata'])
             ->name('metadata');
@@ -49,6 +61,7 @@ Route::prefix('auth/spid')
 Route::prefix('auth/cie')
     ->name('cie.')
     ->middleware(['web'])
+<<<<<<< HEAD
     ->group(function () {
         // Login CIE web
         Route::get('login', [CieAuthController::class, 'login'])
@@ -62,11 +75,30 @@ Route::prefix('auth/cie')
         Route::match(['get', 'post'], 'callback', [CieAuthController::class, 'callback'])
             ->name('callback');
         
+=======
+    ->group(function (): void {
+        // Login CIE web
+        Route::get('login', [CieAuthController::class, 'login'])
+            ->name('login');
+
+        // Login CIE mobile (app CieID)
+        Route::get('mobile', [CieAuthController::class, 'mobileLogin'])
+            ->name('mobile');
+
+        // Callback OAuth2 da CIE
+        Route::match(['get', 'post'], 'callback', [CieAuthController::class, 'callback'])
+            ->name('callback');
+
+>>>>>>> dev
         // Logout CIE
         Route::match(['get', 'post'], 'logout', [CieAuthController::class, 'logout'])
             ->name('logout')
             ->middleware(['auth']);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> dev
         // Refresh token CIE
         Route::post('refresh', [CieAuthController::class, 'refresh'])
             ->name('refresh')
@@ -74,7 +106,11 @@ Route::prefix('auth/cie')
         // Status autenticazione CIE
         Route::get('status', [CieAuthController::class, 'status'])
             ->name('status');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> dev
         // Debug endpoint (solo in sviluppo)
         Route::get('debug', [CieAuthController::class, 'debug'])
             ->name('debug')
@@ -85,6 +121,7 @@ Route::prefix('auth/cie')
 Route::prefix('sixteen/auth')
     ->name('sixteen.auth.')
     ->middleware(['web'])
+<<<<<<< HEAD
     ->group(function () {
         // Selezione provider di autenticazione
         Route::view('select-provider', 'pub_theme::auth.select-provider')
@@ -95,6 +132,18 @@ Route::prefix('sixteen/auth')
             $spidService = app(\Themes\Sixteen\Services\SpidAuthService::class);
             $cieService = app(\Themes\Sixteen\Services\CieAuthService::class);
             
+=======
+    ->group(function (): void {
+        // Selezione provider di autenticazione
+        Route::view('select-provider', 'pub_theme::auth.select-provider')
+            ->name('select-provider');
+
+        // Status generale autenticazione digitale
+        Route::get('digital-identity/status', function () {
+            $spidService = app(SpidAuthService::class);
+            $cieService = app(CieAuthService::class);
+
+>>>>>>> dev
             return response()->json([
                 'spid' => [
                     'authenticated' => $spidService->isAuthenticated(),
@@ -109,6 +158,7 @@ Route::prefix('sixteen/auth')
         })->name('digital-identity.status');
         // Logout universale (SPID o CIE)
         Route::post('digital-identity/logout', function () {
+<<<<<<< HEAD
             $spidService = app(\Themes\Sixteen\Services\SpidAuthService::class);
             $cieService = app(\Themes\Sixteen\Services\CieAuthService::class);
             
@@ -120,14 +170,33 @@ Route::prefix('sixteen/auth')
                 return redirect()->route('cie.logout');
             }
             
+=======
+            $spidService = app(SpidAuthService::class);
+            $cieService = app(CieAuthService::class);
+
+            if ($spidService->isAuthenticated()) {
+                return redirect()->route('spid.logout');
+            }
+
+            if ($cieService->isAuthenticated()) {
+                return redirect()->route('cie.logout');
+            }
+
+>>>>>>> dev
             // Fallback logout standard
             auth()->logout();
             request()->session()->invalidate();
             request()->session()->regenerateToken();
+<<<<<<< HEAD
             
             return redirect()->route('home')
                 ->with('success', 'Logout effettuato con successo.');
                 
+=======
+
+            return redirect()->route('home')
+                ->with('success', 'Logout effettuato con successo.');
+>>>>>>> dev
         })->name('digital-identity.logout')->middleware(['auth']);
     });
 
@@ -136,7 +205,11 @@ if (app()->environment(['local', 'development', 'testing'])) {
     Route::prefix('sixteen/test-auth')
         ->name('sixteen.test-auth.')
         ->middleware(['web'])
+<<<<<<< HEAD
         ->group(function () {
+=======
+        ->group(function (): void {
+>>>>>>> dev
             // Test page per SPID
             Route::view('spid', 'pub_theme::test.spid-test')
                 ->name('spid');
@@ -144,7 +217,11 @@ if (app()->environment(['local', 'development', 'testing'])) {
             // Test page per CIE
             Route::view('cie', 'pub_theme::test.cie-test')
                 ->name('cie');
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> dev
             // Simulate SPID response (per testing)
             Route::post('spid/simulate', function () {
                 $attributes = [
@@ -157,12 +234,20 @@ if (app()->environment(['local', 'development', 'testing'])) {
                     'auth_level' => 2,
                 ];
                 session(['spid.test_attributes' => $attributes]);
+<<<<<<< HEAD
                 
                 return redirect()->route('spid.callback')
                     ->with('success', 'Simulazione SPID attiva');
                     
             })->name('spid.simulate');
             
+=======
+
+                return redirect()->route('spid.callback')
+                    ->with('success', 'Simulazione SPID attiva');
+            })->name('spid.simulate');
+
+>>>>>>> dev
             // Simulate CIE response (per testing)
             Route::post('cie/simulate', function () {
                 $attributes = [
@@ -174,6 +259,7 @@ if (app()->environment(['local', 'development', 'testing'])) {
                     'auth_method' => 'web',
                     'email_verified' => true,
                 ];
+<<<<<<< HEAD
                 
                 session(['cie.test_attributes' => $attributes]);
                 
@@ -182,3 +268,13 @@ if (app()->environment(['local', 'development', 'testing'])) {
                     
             })->name('cie.simulate');
         });
+=======
+
+                session(['cie.test_attributes' => $attributes]);
+
+                return redirect()->route('cie.callback')
+                    ->with('success', 'Simulazione CIE attiva');
+            })->name('cie.simulate');
+        });
+}
+>>>>>>> dev

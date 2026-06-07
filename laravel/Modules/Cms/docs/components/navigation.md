@@ -218,12 +218,16 @@ public function getNavigationItems(): array
 
 ## Collegamenti tra versioni di navigation.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [navigation.md](laravel/modules/gdpr/docs/navigation.md)
 * [navigation.md](laravel/modules/xot/docs/navigation.md)
 * [navigation.md](laravel/modules/ui/docs/navigation.md)
 * [navigation.md](laravel/modules/cms/docs/blocks/navigation.md)
 * [navigation.md](laravel/modules/cms/docs/navigation.md)
 * [navigation.md](laravel/modules/cms/docs/components/navigation.md)
+<<<<<<< HEAD
 =======
 * [navigation.md](laravel/Modules/Gdpr/docs/navigation.md)
 * [navigation.md](laravel/Modules/Xot/docs/navigation.md)
@@ -232,3 +236,5 @@ public function getNavigationItems(): array
 * [navigation.md](laravel/Modules/Cms/docs/navigation.md)
 * [navigation.md](laravel/Modules/Cms/docs/components/navigation.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

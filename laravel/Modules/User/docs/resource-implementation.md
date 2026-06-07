@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Internal Analysis: Approaches to Missing Filament Resources
 
 ## 🥊 Philosophical Battle: Two Approaches Clash
@@ -57,3 +58,12 @@ The "Strategic Implementation" approach wins because it:
 4. **Infrastructure Models Never**: Base classes, policies, traits
 
 This approach ensures the admin system remains focused, fast, and aligned with actual business needs rather than providing comprehensive but unused coverage.
+=======
+---
+module: theme
+topic: resource-implementation
+canonical: ../../../Themes/docs/shared-components/resource-implementation-philosophy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/resource-implementation-philosophy.md
+>>>>>>> dev

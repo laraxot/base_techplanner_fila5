@@ -15,9 +15,13 @@ return [
                 'max' => 'La dimensione massima del file è 10MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'prescription' => [
             'label' => 'Ricetta Medica',
@@ -30,9 +34,13 @@ return [
                 'max' => 'Dimensione massima: 10MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'medical_report' => [
             'label' => 'Referto Medico',
@@ -44,9 +52,13 @@ return [
                 'max' => 'Dimensione massima: 10MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'certificate' => [
             'label' => 'Certificato1',
@@ -58,9 +70,13 @@ return [
                 'max' => 'Dimensione massima: 10MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'consent_form' => [
             'label' => 'Modulo di Consenso',
@@ -72,9 +88,13 @@ return [
                 'max' => 'Dimensione massima: 10MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'xray_image' => [
             'label' => 'Immagine Radiografica',
@@ -86,9 +106,13 @@ return [
                 'max' => 'Dimensione massima: 20MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'treatment_plan' => [
             'label' => 'Piano di Trattamento',
@@ -100,9 +124,13 @@ return [
                 'max' => 'Dimensione massima: 10MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'medical_history' => [
             'label' => 'Storia Clinica',
@@ -114,9 +142,13 @@ return [
                 'max' => 'Dimensione massima: 10MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'doctor_certificate' => [
             'description' => 'doctor_certificate',
@@ -124,9 +156,13 @@ return [
             'label' => 'doctor_certificate',
             'placeholder' => 'doctor_certificate',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'validation' => [
@@ -142,6 +178,9 @@ return [
         'delete_error' => 'Errore durante l\'eliminazione del file',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Attachments Schema',
     'plural_label' => 'Attachments Schema (Plurale)',
     'navigation' => [
@@ -166,6 +205,9 @@ return [
             'label' => 'Elimina Attachments Schema',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

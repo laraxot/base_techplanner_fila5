@@ -11,7 +11,11 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 
 1. **Filosofia Xot**: DRY + KISS, centralizzazione, opinionated defaults, modularità, type safety, "politica" (mai estendere Filament direttamente), "religione" (Xot layer è sacro), "zen" (armonia e chiarezza)
 
+<<<<<<< HEAD
 2. **Filosofia Quaeris**: Customer è il centro, SurveyPdf è il ponte, Token è sacro, LimeSurvey è eterno, Actions sono immutabili
+=======
+2. **Filosofia healthcare_app**: Customer è il centro, SurveyPdf è il ponte, Token è sacro, LimeSurvey è eterno, Actions sono immutabili
+>>>>>>> dev
 
 3. **Filosofia User**: Security-first, customization, extensibility, user-centric, harmony with Xot
 
@@ -22,7 +26,11 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 ### Business Logic Compresa
 
 - **Xot**: Framework base, fornisce classi base per tutti i moduli
+<<<<<<< HEAD
 - **Quaeris**: Customer → SurveyPdf → Contact → QuestionChart workflow
+=======
+- **healthcare_app**: Customer → SurveyPdf → Contact → QuestionChart workflow
+>>>>>>> dev
 - **User**: Identity and access management (IAM)
 - **Tenant**: Multi-tenancy con connection-based isolation
 - **UI**: Componenti condivisi, design system
@@ -82,7 +90,11 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 9. Lang ✅
 10. Media ✅
 11. Notify ✅
+<<<<<<< HEAD
 12. Quaeris ✅ (corretto in questa sessione)
+=======
+12. healthcare_app ✅ (corretto in questa sessione)
+>>>>>>> dev
 13. Tenant ✅
 14. UI ✅
 15. User ✅
@@ -94,7 +106,11 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 
 ## 🔧 Errori Corretti in Questa Sessione
 
+<<<<<<< HEAD
 ### Quaeris - GetAnswersByQuestionChart.php (6 errori)
+=======
+### healthcare_app - GetAnswersByQuestionChart.php (6 errori)
+>>>>>>> dev
 
 1. **Type narrowing per getDates()**: Aggiunto PHPDoc `@var array{dateFrom?: string|null, dateTo?: string|null}`
 2. **Array access su mixed**: Aggiunto `Assert::isArray($row)` prima di accesso
@@ -120,7 +136,11 @@ $valueArray = $labelData['value'];
 
 ## 📚 Documentazione Creata
 
+<<<<<<< HEAD
 1. `Quaeris/docs/phpstan-corrections-january-2026-part2.md` - Pattern array access e type narrowing
+=======
+1. `healthcare_app/docs/phpstan-corrections-january-2026-part2.md` - Pattern array access e type narrowing
+>>>>>>> dev
 
 ## 🎯 Pattern Finali Documentati
 
@@ -159,8 +179,13 @@ $result = $model->traitMethod();
 
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md)
 - [Riepilogo Precedente](./phpstan-january-2026-summary.md)
+<<<<<<< HEAD
 - [Quaeris Corrections Parte 1](../quaeris/docs/phpstan-corrections-january-2026.md)
 - [Quaeris Corrections Parte 2](../quaeris/docs/phpstan-corrections-january-2026-part2.md)
+=======
+- [healthcare_app Corrections Parte 1](../healthcare_app/docs/phpstan-corrections-january-2026.md)
+- [healthcare_app Corrections Parte 2](../healthcare_app/docs/phpstan-corrections-january-2026-part2.md)
+>>>>>>> dev
 
 ---
 

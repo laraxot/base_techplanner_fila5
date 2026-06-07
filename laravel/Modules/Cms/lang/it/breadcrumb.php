@@ -14,6 +14,9 @@ return [
         'background_color' => [
             'label' => 'background_color',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -90,6 +93,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         ],
         'background' => [
@@ -115,6 +119,8 @@ return [
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'rating' => [
         'no_import' => 'Nessuna cifra inserita',
@@ -146,8 +152,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Breadcrumb',
     'plural_label' => 'Breadcrumb (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Breadcrumb',
+    'plural_label' => 'Breadcrumb (Plurale)',
+>>>>>>> dev
 ];

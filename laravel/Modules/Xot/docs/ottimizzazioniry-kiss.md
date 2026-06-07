@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ottimizzazioni DRY + KISS - Modulo Xot
 
 ## Analisi Problematiche Identificate
@@ -202,3 +203,12 @@ DOPO:
 `#DRY` `#KISS` `#refactoring` `#documentation` `#xot-module` `#consolidation`
 
 ---
+=======
+---
+module: theme
+topic: ottimizzazioniry-kiss
+canonical: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss.md
+>>>>>>> dev

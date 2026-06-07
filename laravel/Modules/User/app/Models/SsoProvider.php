@@ -9,9 +9,12 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Database\Factories\SsoProviderFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 
@@ -69,10 +72,15 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property ProfileContract|null $updater
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @method static SsoProviderFactory factory($count = null, $state = [])
  *
 >>>>>>> 4b6b99016 (first commit)
+=======
+ * @method static \Modules\User\Database\Factories\SsoProviderFactory factory($count = null, $state = [])
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class SsoProvider extends BaseModel

@@ -3,9 +3,12 @@
 ## Executive Summary
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Analysis Date:** 2025-11-18
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **PHPStan Level:** Maximum (Level 10)
 **Total Errors Found:** 744
 **Files Analyzed:** 3,945
@@ -23,7 +26,12 @@
   - Array access on mixed types
   - Invalid binary operations
 
+<<<<<<< HEAD
 #### Quaeris Module (Complex Issues)
+=======
+#### healthcare_app Module (Complex Issues)
+#### ModuloEsempio Module (Complex Issues)
+>>>>>>> dev
 - **Errors:** ~500+ across chart export and quantum actions
 - **Main Issues:**
   - Missing class definitions (quantum-related classes)
@@ -58,9 +66,18 @@ Function preg_replace is unsafe to use. Please add 'use function Safe\preg_repla
 #### Missing Class Definitions
 ```php
 // ❌ Quantum-related classes not found
+<<<<<<< HEAD
 Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
 implements unknown interface Spatie\Queable\Contracts\Queable.
 Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
+=======
+Class Modules\healthcare_app\Actions\Charts\Quantum\GenerateConsciousChartAction
+implements unknown interface Spatie\Queable\Contracts\Queable.
+Class Modules\healthcare_app\Actions\Charts\Quantum\GenerateConsciousChartAction
+Class Modules\ModuloEsempio\Actions\Charts\Quantum\GenerateConsciousChartAction
+implements unknown interface Spatie\Queable\Contracts\Queable.
+Class Modules\ModuloEsempio\Actions\Charts\Quantum\GenerateConsciousChartAction
+>>>>>>> dev
 uses unknown trait Spatie\Queable\QueableAction.
 ```
 
@@ -78,11 +95,24 @@ uses unknown trait Spatie\Queable\QueableAction.
 3. **Function Safety**: Missing Safe library imports
 4. **Return Types**: Incorrect PHPDoc return types
 
+<<<<<<< HEAD
 #### Quaeris Module Issues
 **Primary Files:**
 - `Quaeris/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
 - `Quaeris/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
 - `Quaeris/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
+=======
+#### healthcare_app Module Issues
+**Primary Files:**
+- `healthcare_app/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
+- `healthcare_app/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
+- `healthcare_app/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
+#### ModuloEsempio Module Issues
+**Primary Files:**
+- `ModuloEsempio/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
+- `ModuloEsempio/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
+- `ModuloEsempio/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
+>>>>>>> dev
 
 **Key Problems:**
 1. **Missing Classes**: Quantum architecture classes not implemented
@@ -417,6 +447,7 @@ jobs:
 ### Module-Specific Documentation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Geo Module Errors](../../geo/docs/phpstan-errors-2025-12-16.md)
 - [Cms Module Errors](../../cms/docs/phpstan-errors-2025-12-16.md)
 - [Activity Module Errors](../../activity/docs/phpstan-errors-2025-12-16.md)
@@ -425,6 +456,11 @@ jobs:
 - [Cms Module Errors](../../Cms/docs/phpstan-errors-2025-12-16.md)
 - [Activity Module Errors](../../Activity/docs/phpstan-errors-2025-12-16.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Geo Module Errors](../../geo/docs/phpstan-errors-2025-12-16.md)
+- [Cms Module Errors](../../cms/docs/phpstan-errors-2025-12-16.md)
+- [Activity Module Errors](../../activity/docs/phpstan-errors-2025-12-16.md)
+>>>>>>> dev
 - [Xot Module TransTrait Errors](phpstan-transtrait-errors-2025-12-16.md)
 
 ### PHPStan Documentation
@@ -765,7 +801,11 @@ test('it can create and manage tenants', function (): void {
 - ✅ **check-all-modules.sh** - Controllo batch tutti i moduli
 
 ### Path Corretti
+<<<<<<< HEAD
 - ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila4_mono`
+=======
+- ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5_mono`
+>>>>>>> dev
 
 ---
 

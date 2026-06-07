@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura delle Pagine con Laravel Folio nel Tema One
 
 Questo documento descrive come sono organizzate e gestite le pagine utilizzando Laravel Folio nel tema One del progetto il progetto.
@@ -210,3 +211,12 @@ Per le pagine dinamiche, utilizzare l'interfaccia amministrativa Filament per cr
 * [folio-pages.md](laravel/modules/cms/project_docs/folio-pages.md)
 * [folio-pages.md](laravel/themes/one/project_docs/folio-pages.md)
 
+=======
+---
+module: theme
+topic: folio_pages
+canonical: ../../../Themes/docs/shared-components/folio-pages.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/folio-pages.md
+>>>>>>> dev

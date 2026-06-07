@@ -15,10 +15,14 @@ Applica le configurazioni metatag al pannello Filament.
 
 ## Dipendenze
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [MetatagData](../../datas/metatagdata.md)
 =======
 - [MetatagData](../../datas/MetatagData.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [MetatagData](../../datas/metatagdata.md)
+>>>>>>> dev
 
 ## Errori PHPStan Comuni
 1. Chiamata al metodo inesistente `getColors()`
@@ -37,11 +41,15 @@ La correzione dell'errore PHPStan richiede la modifica del metodo chiamato da `g
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [MetatagData](../../datas/metatagdata.md)
 - [Filament Best Practices](../../filament-best-practices.md)
 - [PHPStan Common Exceptions](../../phpstan-common-exceptions.md)
 - [Filament Best Practices](../../filament-best-practices.md)
 - [PHPStan Common Exceptions](../../phpstan-common-exceptions.md)
+<<<<<<< HEAD
 =======
 - [MetatagData](../../datas/MetatagData.md)
 - [Filament Best Practices](../../filament-best-practices.md)
@@ -49,3 +57,5 @@ La correzione dell'errore PHPStan richiede la modifica del metodo chiamato da `g
 - [Filament Best Practices](../../FILAMENT-BEST-PRACTICES.md)
 - [PHPStan Common Exceptions](../../PHPSTAN-COMMON-EXCEPTIONS.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Architettura XotData Pattern - Errore Critico Risolto e Analisi Approfondita
 
 ## 🚨 **Errore Grave Identificato e Risolto**
@@ -177,3 +178,12 @@ LoginWidgetTest.php → Widget Livewire
 └── Interazioni specifiche
 ```
 
+=======
+---
+module: theme
+topic: architecture_xotdata_pattern
+canonical: ../../../Themes/docs/shared-components/architecture-xotdata-pattern.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/architecture-xotdata-pattern.md
+>>>>>>> dev

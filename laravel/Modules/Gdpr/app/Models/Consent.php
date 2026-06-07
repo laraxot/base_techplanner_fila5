@@ -9,9 +9,12 @@ use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Gdpr\Database\Factories\ConsentFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -32,12 +35,32 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null          $accepted_at
  * @property ProfileContract|null $creator
  * @property Treatment|null       $treatment
+<<<<<<< HEAD
  * @property ProfileContract|null $updater
  *
 <<<<<<< HEAD
 =======
  * @method static ConsentFactory          factory($count = null, $state = [])
 >>>>>>> 4b6b99016 (first commit)
+=======
+ * @property string               $id
+ * @property string|null          $treatment_id
+ * @property string|null          $subject_id
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property string               $user_type
+ * @property string|null          $user_id
+ * @property string|null          $type
+ * @property string|null          $accepted_at
+ * @property ProfileContract|null $creator
+ * @property Treatment|null       $treatment
+ * @property ProfileContract|null $updater
+ *
+>>>>>>> dev
  * @method static Builder<static>|Consent newModelQuery()
  * @method static Builder<static>|Consent newQuery()
  * @method static Builder<static>|Consent query()
@@ -56,6 +79,22 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Consent whereUserType($value)
  *
  * @property ProfileContract|null $deleter
+<<<<<<< HEAD
+=======
+ * @property string|null          $ip_address
+ * @property string|null          $user_agent
+ *
+ * @method static \Modules\Gdpr\Database\Factories\ConsentFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Consent                         whereIpAddress($value)
+ * @method static Builder<static>|Consent                         whereUserAgent($value)
+ *
+ * @property string|null $ip_address
+ * @property string|null $user_agent
+ *
+ * @method static \Modules\Gdpr\Database\Factories\ConsentFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Consent                         whereIpAddress($value)
+ * @method static Builder<static>|Consent                         whereUserAgent($value)
+>>>>>>> dev
  *
  * @mixin \Eloquent
  */
@@ -68,6 +107,9 @@ class Consent extends BaseModel
     public $incrementing = false;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     public $fillable = [
         'id',
         'subject_id',
@@ -81,9 +123,12 @@ class Consent extends BaseModel
         'ip_address',
         'user_agent',
     ];
+<<<<<<< HEAD
 =======
     public $fillable = ['subject_id', 'treatment_id'];
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
     public function treatment(): BelongsTo
     {

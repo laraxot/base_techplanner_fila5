@@ -20,64 +20,100 @@ return [
             'placeholder' => 'Seleziona un team',
             'help' => 'Il team a cui appartiene questo permesso',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'user_id' => [
             'label' => 'Utente',
             'placeholder' => 'Seleziona un utente',
             'help' => 'L\'utente a cui è assegnato questo permesso',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'permission' => [
             'label' => 'Permesso',
             'placeholder' => 'Inserisci il nome del permesso',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'help' => 'Il nome del permesso (es. view-reports, edit-documents]',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
             'help' => 'Il nome del permesso (es. view-reports, edit-documents)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'id' => [
             'label' => 'ID',
             'help' => 'Identificativo univoco del permesso team',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'help' => 'Data e ora di creazione del permesso',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'updated_at' => [
-            'label' => 'Data Aggiornamento',
-            'help' => 'Data e ora dell\'ultimo aggiornamento',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'updated_at' => [
+            'label' => 'Data Aggiornamento',
+            'help' => 'Data e ora dell\'ultimo aggiornamento',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -99,10 +135,15 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Team Permission',
     'plural_label' => 'Team Permission (Plurale)',
 =======
     'label' => '',
     'plural_label' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Team Permission',
+    'plural_label' => 'Team Permission (Plurale)',
+>>>>>>> dev
 ];

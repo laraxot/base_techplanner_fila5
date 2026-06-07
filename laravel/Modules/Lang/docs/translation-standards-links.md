@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> dev
 # Collegamenti agli Standard di Traduzione
 
 ## Documentazione Principale
@@ -44,7 +47,10 @@
 - [PHPStan Fixes](phpstan_fixes.md)
 
 *Ultimo aggiornamento: gennaio 2025*
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 # Collegamenti alla Documentazione sugli Standard di Traduzione
 
 ## Problemi Identificati e Correzioni in Corso
@@ -53,6 +59,7 @@ Stiamo standardizzando i file di traduzione nel modulo Notify che presentano pro
 
 ## Documentazione nel Modulo Notify
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Progresso della Standardizzazione](../../notify/docs/translation_standards_progress.md)
 - [Regole di Naming per i File di Traduzione](../../notify/docs/translation_file_naming_rules.md)
@@ -66,6 +73,8 @@ Stiamo standardizzando i file di traduzione nel modulo Notify che presentano pro
 - [Best Practices per le Traduzioni](translation_keys_best_practices.md)
 - [Standardizzazione Traduzioni Modulo Notify](translation_notify_conversion.md)
 =======
+=======
+>>>>>>> dev
 - [Progresso della Standardizzazione](../../Notify/docs/TRANSLATION_STANDARDS_PROGRESS.md)
 - [Regole di Naming per i File di Traduzione](../../Notify/docs/TRANSLATION_FILE_NAMING_RULES.md)
 - [Guida alla Struttura dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
@@ -77,7 +86,10 @@ Stiamo standardizzando i file di traduzione nel modulo Notify che presentano pro
 - [Regole Generali per le Traduzioni](TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Traduzioni](TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Standardizzazione Traduzioni Modulo Notify](TRANSLATION_NOTIFY_CONVERSION.md)
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Riepilogo dei Problemi
 
@@ -104,7 +116,11 @@ Stiamo standardizzando i file di traduzione nel modulo Notify che presentano pro
 3. Testare tutte le funzionalità che utilizzano questi file di traduzione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Nota**: Questo lavoro è in corso e verrà continuato nei prossimi giorni per garantire la conformità di tutti i file di traduzione agli standard di <nome progetto>. 
 =======
 **Nota**: Questo lavoro è in corso e verrà continuato nei prossimi giorni per garantire la conformità di tutti i file di traduzione agli standard di <nome progetto>.
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Nota**: Questo lavoro è in corso e verrà continuato nei prossimi giorni per garantire la conformità di tutti i file di traduzione agli standard di <nome progetto>.
+>>>>>>> dev

@@ -37,7 +37,11 @@
 5. **PersonalAccessTokenResource**
    - ❌ Rimosso: `protected static ?string $recordTitleAttribute = 'name'`
 
+<<<<<<< HEAD
 ### Modulo Quaeris
+=======
+### Modulo healthcare_app
+>>>>>>> dev
 
 6. **ContactResource**
    - ❌ Rimosso: `protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-user-circle'`
@@ -81,4 +85,8 @@ Tutti i file di traduzione verificati hanno le chiavi obbligatorie:
 
 - [ ] Verificare altri moduli per violazioni simili
 - [ ] Creare script di verifica automatica per prevenire future violazioni
+<<<<<<< HEAD
 - [ ] Aggiornare documentazione moduli interessati
+=======
+- [ ] Aggiornare documentazione moduli interessati
+>>>>>>> dev

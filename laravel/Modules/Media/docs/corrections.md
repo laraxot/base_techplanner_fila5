@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Riepilogo Correzioni S3Test.php - Modulo Media
 
 ## 🎯 **Obiettivo Completato**
@@ -146,3 +147,12 @@ Ho analizzato e corretto completamente il file `S3Test.php` nel modulo Media, ri
 **📦 Versione**: 3.1.0  
 **✅ Status**: Tutti i problemi risolti e prevenzione implementata  
 **🎯 Obiettivo**: Completato con successo
+=======
+---
+module: theme
+topic: corrections
+canonical: ../../../Themes/docs/shared-components/corrections_summary.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/corrections_summary.md
+>>>>>>> dev

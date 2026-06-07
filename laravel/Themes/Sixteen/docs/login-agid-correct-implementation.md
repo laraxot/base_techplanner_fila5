@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione Corretta Login AGID - Tema Sixteen
 
 ## 🚨 PROBLEMI IDENTIFICATI E SOLUZIONI
@@ -359,3 +360,12 @@ php artisan serve
 **Soluzioni Implementate**: ✅ CORRETTE  
 **Conformità AGID**: ✅ 100%  
 **Prossimo Passo**: Implementazione File Corretto 
+=======
+---
+module: theme
+topic: login-agid-correct-implementation
+canonical: ../../docs/shared-components/login-agid-correct-implementation.md
+---
+
+See canonical documentation: ../../docs/shared-components/login-agid-correct-implementation.md
+>>>>>>> dev

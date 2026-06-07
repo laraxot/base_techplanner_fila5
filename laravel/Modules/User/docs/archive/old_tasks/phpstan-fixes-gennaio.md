@@ -115,9 +115,12 @@ PHPStan aveva difficoltà nel riconoscere la sintassi method chaining e object i
 ### **Benefici**
 - ✅ **PHPStan level 10**: Compatibilità completa
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e4cd89fa (.)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 - ✅ **Leggibilità**: Codice più esplicito e chiaro
 - ✅ **Type Safety**: Mantenuta con type hints espliciti
 - ✅ **Debugging**: Più facile identificare problemi
@@ -137,10 +140,14 @@ PHPStan aveva difficoltà nel riconoscere la sintassi method chaining e object i
 ```bash
 # Test PHPStan
 <<<<<<< HEAD
+<<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/User --level=10
 =======
 ./vendor/bin/phpstan analyse Modules/User --level=9
 >>>>>>> 4b6b99016 (first commit)
+=======
+./vendor/bin/phpstan analyse Modules/User --level=10
+>>>>>>> dev
 # ✅ Nessun errore
 
 # Test funzionali
@@ -220,10 +227,14 @@ $subject = Lang::get('user::email.password_reset_subject');
 
 ### **Documentazione Correlata**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README.md Modulo User](./readme.md)
 =======
 - [README.md Modulo User](./README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README.md Modulo User](./readme.md)
+>>>>>>> dev
 - [Authentication Guide](./authentication.md)
 - [Best Practices](./best-practices.md)
 
@@ -237,6 +248,7 @@ $subject = Lang::get('user::email.password_reset_subject');
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025  
 **📦 Versione**: 1.0  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **🚀 Performance**: 95/100 score  
 **✨ Test Coverage**: 85% ✅
 =======
@@ -246,3 +258,7 @@ $subject = Lang::get('user::email.password_reset_subject');
 **✨ Test Coverage**: 85% ✅
 >>>>>>> e4cd89fa (.)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**🚀 Performance**: 95/100 score  
+**✨ Test Coverage**: 85% ✅
+>>>>>>> dev

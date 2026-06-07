@@ -2,13 +2,23 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\User\Tests\TestCase::class);
+=======
+namespace Modules\User\Tests\Unit\Console;
+
+uses(TestCase::class);
+>>>>>>> dev
 
 use Modules\User\Console\Commands\AssignRoleCommand;
 use Modules\User\Console\Commands\ChangeTypeCommand;
 use Modules\User\Console\Commands\CreateTeamCommand;
 use Modules\User\Console\Commands\CreateTenantCommand;
 use Modules\User\Console\Commands\SuperAdminCommand;
+<<<<<<< HEAD
+=======
+use Modules\User\Tests\TestCase;
+>>>>>>> dev
 
 test('AssignRoleCommand can be instantiated', function () {
     expect(class_exists(AssignRoleCommand::class))->toBeTrue();

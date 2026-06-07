@@ -1,6 +1,10 @@
 # Geo Module - Filament v4 Upgrade Notes
 
+<<<<<<< HEAD
 This document outlines specific considerations and changes for the `Geo` module during the Filament v4 upgrade. For a comprehensive overview of the Filament v4 upgrade process, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../docs/Filament_Upgrade_v4.md).
+=======
+This document outlines specific considerations and changes for the `Geo` module during the Filament v4 upgrade. For a comprehensive overview of the Filament v4 upgrade process, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../../docs/filament_upgrade_v4.md).
+>>>>>>> dev
 
 ## **Key Changes and Action Items for `Geo` Module**
 

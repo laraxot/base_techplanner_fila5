@@ -3,9 +3,12 @@
 ## 🎉 Status: COMPLETATO - 0 Errori
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 11 Ottobre 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **PHPStan Level**: Max
 **Errori Risolti**: 58 → 0 ✅ (-100%)
 

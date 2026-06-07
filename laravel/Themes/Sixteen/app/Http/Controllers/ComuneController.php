@@ -1,11 +1,22 @@
 <?php
 
+<<<<<<< HEAD
 namespace Themes\Sixteen\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Modules\Fixcity\App\Models\News;
 use Modules\Fixcity\App\Models\Ticket;
+=======
+declare(strict_types=1);
+
+namespace Themes\Sixteen\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+use Illuminate\View\View;
+use Modules\Fixcity\Models\Ticket;
+>>>>>>> dev
 
 class ComuneController extends Controller
 {
@@ -19,11 +30,15 @@ class ComuneController extends Controller
             ->limit(5)
             ->get();
 
+<<<<<<< HEAD
         $recentNews = News::orderBy('created_at', 'desc')
             ->limit(3)
             ->get();
 
         return view('sixteen::pages.comune.homepage', compact('recentTickets', 'recentNews'));
+=======
+        return view('sixteen::pages.comune.homepage', ['recentTickets' => $recentTickets]);
+>>>>>>> dev
     }
 
     /**
@@ -74,6 +89,7 @@ class ComuneController extends Controller
     }
 
     /**
+<<<<<<< HEAD
      * Pagina novità
      */
     public function novita(): View
@@ -93,6 +109,8 @@ class ComuneController extends Controller
     }
 
     /**
+=======
+>>>>>>> dev
      * Pagina contatti
      */
     public function contatti(): View
@@ -103,7 +121,11 @@ class ComuneController extends Controller
     /**
      * Invia messaggio di contatto
      */
+<<<<<<< HEAD
     public function sendContact(Request $request)
+=======
+    public function sendContact(Request $request): \Illuminate\Http\RedirectResponse
+>>>>>>> dev
     {
         $request->validate([
             'nome' => 'required|string|max:255',

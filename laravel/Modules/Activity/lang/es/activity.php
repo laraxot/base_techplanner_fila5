@@ -38,11 +38,17 @@ return [
                 'validation' => 'required|string',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'action' => [
             'label' => 'Acción',
@@ -92,11 +98,17 @@ return [
                 ],
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'subject' => [
             'label' => 'Asunto',
@@ -121,11 +133,17 @@ return [
                 'validation' => 'nullable|string|max:255',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'description' => [
             'label' => 'Descripción',
@@ -133,11 +151,17 @@ return [
             'help' => 'Descripción detallada de la actividad',
             'validation' => 'nullable|string|max:1000',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'ip_address' => [
             'label' => 'Dirección IP',
@@ -145,11 +169,17 @@ return [
             'help' => 'Dirección IP desde la que se realizó la acción',
             'validation' => 'nullable|ip',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'user_agent' => [
             'label' => 'Agente de Usuario',
@@ -157,11 +187,17 @@ return [
             'help' => 'Información sobre el navegador y sistema del usuario',
             'validation' => 'nullable|string|max:500',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Fecha',
@@ -170,11 +206,17 @@ return [
             'validation' => 'required|date',
             'format' => 'd/m/Y H:i:s',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'properties' => [
             'label' => 'Propiedades',
@@ -191,26 +233,41 @@ return [
                 'help' => 'Valor después del cambio',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'toggleColumns' => [
             'label' => 'Mostrar/Ocultar Columnas',
             'help' => 'Configurar visibilidad de columnas',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'reorderRecords' => [
             'label' => 'Reordenar Registros',
             'help' => 'Reordenar registros en la tabla',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -226,6 +283,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'resetFilters' => [
@@ -234,6 +292,8 @@ return [
         'applyFilters' => [
             'label' => 'Aplicar Filtros',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'filters' => [
@@ -388,32 +448,44 @@ return [
         'per_page' => '25',
         'options' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             0 => '10',
             1 => '25',
             2 => '50',
             3 => '100',
+<<<<<<< HEAD
 =======
             '0' => '10',
             '1' => '25',
             '2' => '50',
             '3' => '100',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'cache' => [
         'ttl' => '300',
         'tags' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             0 => 'activities',
             1 => 'monitoring',
         ],
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 =======
             '0' => 'activities',
             '1' => 'monitoring',
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

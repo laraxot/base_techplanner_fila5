@@ -86,10 +86,14 @@ final class GetAddressFromGoogleMapsAction
         $firstResult = $responseData->results->first();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $firstResult instanceof GoogleMapResultData) {
 =======
         if (! ($firstResult instanceof GoogleMapResultData)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $firstResult instanceof GoogleMapResultData) {
+>>>>>>> dev
             throw GoogleMapsApiException::noResultsFound();
         }
 
@@ -125,10 +129,14 @@ final class GetAddressFromGoogleMapsAction
             ->toCollection()
             ->first(function ($component) use ($types) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (! $component instanceof GoogleMapAddressComponentData) {
 =======
                 if (! ($component instanceof GoogleMapAddressComponentData)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+                if (! $component instanceof GoogleMapAddressComponentData) {
+>>>>>>> dev
                     return false;
                 }
 
@@ -136,10 +144,14 @@ final class GetAddressFromGoogleMapsAction
             });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $component instanceof GoogleMapAddressComponentData) {
 =======
         if (! ($component instanceof GoogleMapAddressComponentData)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $component instanceof GoogleMapAddressComponentData) {
+>>>>>>> dev
             return null;
         }
 

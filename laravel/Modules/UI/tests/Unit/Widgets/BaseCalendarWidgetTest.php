@@ -2,12 +2,22 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\UI\Tests\TestCase::class);
+=======
+namespace Modules\UI\Tests\Unit\Widgets;
+
+uses(TestCase::class);
+>>>>>>> dev
 
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Grid;
 use Modules\UI\Filament\Widgets\UserCalendarWidget;
+<<<<<<< HEAD
+=======
+use Modules\UI\Tests\TestCase;
+>>>>>>> dev
 
 beforeEach(function () {
     $this->widget = new class extends UserCalendarWidget {

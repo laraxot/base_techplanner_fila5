@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 # Assets in il progetto
@@ -256,3 +257,6 @@ document.addEventListener('alpine:init', () => {
 * [assets.md](../../../Cms/docs/themes/assets.md)
 * [assets.md](../../../../Themes/One/docs/assets.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

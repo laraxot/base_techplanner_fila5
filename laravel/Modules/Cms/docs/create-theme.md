@@ -5,6 +5,7 @@
   "type": "prediction-market-theme"
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 {
   "name": "predict/theme-name",
@@ -13,3 +14,5 @@
   "type": "prediction-market-theme"
 }
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

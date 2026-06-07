@@ -88,6 +88,7 @@ Se incontri errori come `name is empty on [Modules\NomeModulo\Providers\RouteSer
 - Evitare l'uso di proprietà deprecate come `protected $casts` nei modelli: preferire override tramite metodo `casts()`.
 - Per esempi specifici, vedere la documentazione nei singoli moduli:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - [Patient: Regole Modelli](../../patient/docs/models.md)
   - [Notify Namespace Rules](../../notify/docs/namespace_rules.md)
 =======
@@ -104,5 +105,15 @@ Se incontri errori come `name is empty on [Modules\NomeModulo\Providers\RouteSer
 =======
 **Ultimo aggiornamento:** 2025-05-13
 >>>>>>> 4b6b99016 (first commit)
+=======
+  - [Patient: Regole Modelli](../../patient/docs/models.md)
+  - [Notify Namespace Rules](../../notify/docs/namespace_rules.md)
+
+## Collegamenti
+- [Regole Namespace Moduli - Root Docs](../../../../docs/namespace-moduli.md)
+
+---
+
+>>>>>>> dev
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.

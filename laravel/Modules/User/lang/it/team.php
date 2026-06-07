@@ -16,6 +16,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -111,6 +114,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
@@ -156,6 +160,8 @@ return [
         'name' => [
             'label' => 'name',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'recordId' => [
             'label' => 'recordId',
@@ -163,6 +169,9 @@ return [
             'helper_text' => 'recordId',
             'placeholder' => 'recordId',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
         'personal_team' => [
@@ -170,11 +179,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'personal_team' => [
             'label' => 'personal_team',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'role' => [
             'label' => 'role',
@@ -182,15 +194,22 @@ return [
             'helper_text' => 'role',
             'placeholder' => 'role',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'description' => [
             'description' => 'description',
             'helper_text' => 'description',
             'placeholder' => 'description',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
         ],
@@ -205,6 +224,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'delete' => [
@@ -213,6 +233,8 @@ return [
         'layout' => [
             'label' => 'layout',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -312,8 +334,12 @@ return [
     ],
     'label' => 'team',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'plural_label' => 'Team (Plurale)',
 =======
     'plural_label' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'plural_label' => 'Team (Plurale)',
+>>>>>>> dev
 ];

@@ -10,9 +10,13 @@ return [
             'helper_text' => 'level',
             'placeholder' => 'level',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'content' => [
             'label' => 'content',
@@ -20,6 +24,9 @@ return [
             'helper_text' => 'content',
             'placeholder' => 'content',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -34,8 +41,11 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

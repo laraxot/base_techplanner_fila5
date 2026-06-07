@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+/** @phpstan-ignore-file */
+
+>>>>>>> dev
 declare(strict_types=1);
 
 namespace Modules\Geo\Tests\Unit\Traits;
@@ -39,6 +44,7 @@ class HasAddressTest extends BaseModel
         });
     }
 }
+<<<<<<< HEAD
 
 beforeEach(function () {
     // Crea un modello di test
@@ -198,3 +204,5 @@ it('can filter models by city', function () {
     expect($modelsInRoma)->toHaveCount(1);
     expect($modelsInRoma->first()->name)->toBe('Model 2');
 });
+=======
+>>>>>>> dev

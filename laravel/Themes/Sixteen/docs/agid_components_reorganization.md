@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏛️ AGID Components Reorganization Plan
 
 ## 🎯 Obiettivo
@@ -273,3 +274,12 @@ Artisan::command('theme:agid-components:verify', function () {
 **📅 Durata**: 3 giorni (migrazione controllata)  
 **👥 Team**: 2 sviluppatori (1 migrazione, 1 testing)  
 **✅ Success Criteria**: Zero regressioni, struttura migliorata, DX ottimizzata
+=======
+---
+module: theme
+topic: agid_components_reorganization
+canonical: ../../docs/shared-components/agid-components-reorganization.md
+---
+
+See canonical documentation: ../../docs/shared-components/agid-components-reorganization.md
+>>>>>>> dev

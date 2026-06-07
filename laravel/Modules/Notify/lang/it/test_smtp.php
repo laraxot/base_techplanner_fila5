@@ -15,6 +15,9 @@ return [
         'id' => [
             'label' => 'ID',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -84,6 +87,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'name' => [
@@ -119,6 +123,8 @@ return [
         'created_at' => [
             'label' => 'Creato il',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [

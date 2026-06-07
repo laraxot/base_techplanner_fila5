@@ -8,12 +8,17 @@ use Filament\Schemas\Components\Component;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Builder;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Livewire\Attributes\Reactive;
 >>>>>>> 4b6b99016 (first commit)
 use Modules\TechPlanner\Filament\Resources\ClientResource;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Override;
+=======
+use Modules\TechPlanner\Filament\Resources\ClientResource;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+>>>>>>> dev
 
 class ClientMapWidget extends XotBaseWidget
 {
@@ -22,11 +27,16 @@ class ClientMapWidget extends XotBaseWidget
     protected int|string|array $columnSpan = 'full';
 
     /**
+<<<<<<< HEAD
      * Get the form schema for the widget.
      *
      * @return array<string, Component>
      */
     #[Override]
+=======
+     * @return array<string, Component>
+     */
+>>>>>>> dev
     public function getFormSchema(): array
     {
         return [];

@@ -109,9 +109,15 @@ class Location extends BaseModel
      */
     public function scopeWithinDistance(Builder $query, float $latitude, float $longitude, float $distanceInKm): Builder
     {
+<<<<<<< HEAD
         $haversine = "(6371 * acos(cos(radians({$latitude})) * cos(radians(lat)) * cos(radians(lng) - radians({$longitude})) + sin(radians({$latitude})) * sin(radians(lat))))";
 
         return $query->whereRaw("{$haversine} <= ?", [$distanceInKm]);
+=======
+        $haversine = '(6371 * acos(cos(radians(?)) * cos(radians(lat)) * cos(radians(lng) - radians(?)) + sin(radians(?)) * sin(radians(lat))))';
+
+        return $query->whereRaw("{$haversine} <= ?", [$latitude, $longitude, $latitude, $distanceInKm]);
+>>>>>>> dev
     }
 
     /**

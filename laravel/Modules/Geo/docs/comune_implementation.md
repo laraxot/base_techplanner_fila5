@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione del Modello Comune
 
 ## Scelta Architetturale
@@ -93,3 +94,12 @@ protected $casts = [
 - [Documentazione Sushi](https://github.com/calebporzio/sushi)
 - [GeoJsonModel vs Sushi](geo-sushi-comparison.md)
 - [Analisi Implementazione](comune-sushi-analisi.md) 
+=======
+---
+module: theme
+topic: comune_implementation
+canonical: ../../../Themes/docs/shared-components/comune-implementation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/comune-implementation.md
+>>>>>>> dev

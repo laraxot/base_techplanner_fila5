@@ -317,6 +317,9 @@ Al completamento di questo audit e delle correzioni:
 **Priorità**: <nome progetto> Factory (CRITICO)
 **Responsabile**: AI Assistant
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo Aggiornamento**: 2025-01-06
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

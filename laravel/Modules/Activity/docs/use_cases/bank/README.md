@@ -22,11 +22,16 @@ L'obiettivo è fornire una panoramica neutra e riutilizzabile dei pattern, dei v
 
 ## Collegamenti correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Prediction Market](../prediction_market/readme.md)
+=======
+- [<nome progetto>ion Market](../<nome progetto>ion_market/readme.md)
+>>>>>>> dev
 - [Event Sourcing & CQRS](../event_sourcing_cqrs/readme.md)
 - [Audit Log](../audit_log/readme.md)
 - [Workflow Approval](../workflow_approval/readme.md)
 - [Task Management](../task_management/readme.md)
+<<<<<<< HEAD
 =======
 - [Prediction Market](../prediction_market/README.md)
 - [Event Sourcing & CQRS](../event_sourcing_cqrs/README.md)
@@ -34,6 +39,8 @@ L'obiettivo è fornire una panoramica neutra e riutilizzabile dei pattern, dei v
 - [Workflow Approval](../workflow_approval/README.md)
 - [Task Management](../task_management/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Panoramica degli Approcci
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LoginWidget Filament Schema JavaScript Errors - Roadmap
 
 **Data**: 2025-01-22
@@ -183,3 +184,12 @@ private function getDefaultFormData(): array
 
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.0
+=======
+---
+module: theme
+topic: login-widget-filament-schema-errors-roadmap
+canonical: ../../../Themes/docs/shared-components/login-widget-filament-schema-errors-roadmap.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/login-widget-filament-schema-errors-roadmap.md
+>>>>>>> dev

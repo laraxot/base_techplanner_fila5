@@ -7,6 +7,7 @@ Nel progetto il progetto, i temi sono componenti di presentazione separati dai m
 ## Posizionamento Corretto
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 I temi devono essere posizionati nella directory `/var/www/html/<directory progetto>/laravel/Themes/` e **NON** nella directory Modules.
 
@@ -14,11 +15,14 @@ I temi devono essere posizionati nella directory `/var/www/html/<directory proge
 ```
 /var/www/html/<directory progetto>/laravel/
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 I temi devono essere posizionati nella directory `laravel/Themes/` e **NON** nella directory Modules.
 
 ### Struttura Corretta
 ```
 laravel/
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 I temi devono essere posizionati nella directory `/var/www/html/_bases/<directory progetto>/laravel/Themes/` e **NON** nella directory Modules.
@@ -27,6 +31,8 @@ I temi devono essere posizionati nella directory `/var/www/html/_bases/<director
 ```
 /var/www/html/_bases/<directory progetto>/laravel/
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ├── Modules/           # Componenti funzionali
 │   ├── Xot/
 │   ├── User/
@@ -40,23 +46,35 @@ I temi devono essere posizionati nella directory `/var/www/html/_bases/<director
 Il tema principale utilizzato in il progetto è ThemeOne, basato su Filament 3, che deve essere installato in:
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 laravel/Themes/One/
 =======
 /var/www/html/<directory progetto>/laravel/Themes/One/
 laravel/Themes/One/
 /var/www/html/_bases/<directory progetto>/laravel/Themes/One/
 >>>>>>> 4b6b99016 (first commit)
+=======
+laravel/Themes/One/
+>>>>>>> dev
 ```
 
 ### Installazione Corretta
 ```bash
+<<<<<<< HEAD
 git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fila3.git dev --squash
+=======
+git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fila5.git dev --squash
+>>>>>>> dev
 ```
 
 ### Errore da Evitare
 ❌ **NON** utilizzare:
 ```bash
+<<<<<<< HEAD
 git subtree add --prefix laravel/Modules/ThemeOne git@github.com:laraxot/theme_one_fila3.git dev --squash
+=======
+git subtree add --prefix laravel/Modules/ThemeOne git@github.com:laraxot/theme_one_fila5.git dev --squash
+>>>>>>> dev
 ```
 
 ## Struttura del Tema
@@ -124,7 +142,11 @@ class AdminPanelProvider extends PanelProvider
 ## Collegamenti tra versioni di temi.md
 * [temi.md](docs/regole/temi.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [temi.md](laravel/modules/cms/docs/temi.md)
 =======
 * [temi.md](laravel/Modules/Cms/docs/temi.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [temi.md](laravel/modules/cms/docs/temi.md)
+>>>>>>> dev

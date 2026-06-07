@@ -4,11 +4,27 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Enums;
 
+<<<<<<< HEAD
 /**
  * Enum per i tipi di indirizzi.
  */
 enum AddressTypeEnum: string
 {
+=======
+use Filament\Support\Contracts\HasLabel;
+use Modules\Xot\Traits\EnumTrait;
+
+/**
+ * Enum for address types.
+ *
+ * Uses EnumTrait for getLabel().
+ * Configure values in: Modules/Geo/lang/{locale}/enums.php
+ */
+enum AddressTypeEnum: string implements HasLabel
+{
+    use EnumTrait;
+
+>>>>>>> dev
     case HOME = 'home';
     case WORK = 'work';
     case BILLING = 'billing';
@@ -17,6 +33,7 @@ enum AddressTypeEnum: string
     case OTHER = 'other';
 
     /**
+<<<<<<< HEAD
      * Get the label for the enum value.
      */
     public function label(): string
@@ -32,6 +49,8 @@ enum AddressTypeEnum: string
     }
 
     /**
+=======
+>>>>>>> dev
      * Get all the options as key-value pairs.
      *
      * @return array<string, string>
@@ -39,12 +58,21 @@ enum AddressTypeEnum: string
     public static function options(): array
     {
         return [
+<<<<<<< HEAD
             self::HOME->value => self::HOME->label(),
             self::WORK->value => self::WORK->label(),
             self::BILLING->value => self::BILLING->label(),
             self::SHIPPING->value => self::SHIPPING->label(),
             self::LEGAL->value => self::LEGAL->label(),
             self::OTHER->value => self::OTHER->label(),
+=======
+            self::HOME->value => self::HOME->getLabel(),
+            self::WORK->value => self::WORK->getLabel(),
+            self::BILLING->value => self::BILLING->getLabel(),
+            self::SHIPPING->value => self::SHIPPING->getLabel(),
+            self::LEGAL->value => self::LEGAL->getLabel(),
+            self::OTHER->value => self::OTHER->getLabel(),
+>>>>>>> dev
         ];
     }
 }

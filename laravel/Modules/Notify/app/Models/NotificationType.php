@@ -6,6 +6,10 @@ namespace Modules\Notify\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Carbon;
+>>>>>>> dev
 
 /**
  * @method static Builder<static>|NotificationType newModelQuery()
@@ -13,6 +17,28 @@ use Illuminate\Database\Eloquent\Model;
  * @method static Builder<static>|NotificationType query()
  *
  * @mixin IdeHelperNotificationType
+<<<<<<< HEAD
+=======
+ *
+ * @property int $id
+ * @property string $name
+ * @property string|null $description
+ * @property string|null $template
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ *
+ * @method static Builder<static>|NotificationType whereCreatedAt($value)
+ * @method static Builder<static>|NotificationType whereCreatedBy($value)
+ * @method static Builder<static>|NotificationType whereDescription($value)
+ * @method static Builder<static>|NotificationType whereId($value)
+ * @method static Builder<static>|NotificationType whereName($value)
+ * @method static Builder<static>|NotificationType whereTemplate($value)
+ * @method static Builder<static>|NotificationType whereUpdatedAt($value)
+ * @method static Builder<static>|NotificationType whereUpdatedBy($value)
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class NotificationType extends Model

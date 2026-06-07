@@ -11,9 +11,13 @@ return [
             'tooltip' => 'This field is required',
             'helper_text' => 'Inserisci un nome descrittivo per il template',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'subject' => [
             'label' => 'Subject',
@@ -22,9 +26,13 @@ return [
             'tooltip' => 'This field is required',
             'helper_text' => 'Oggetto visualizzato nella notifica (es. oggetto email)',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'body_text' => [
             'label' => 'Text',
@@ -32,10 +40,15 @@ return [
             'help' => 'The text content of the notification',
             'tooltip' => 'This field is required',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'body_html' => [
             'label' => 'HTML',
@@ -43,10 +56,15 @@ return [
             'help' => 'The HTML content of the notification',
             'tooltip' => 'This field is required',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'preview_data' => [
             'label' => 'Preview Data',
@@ -54,10 +72,15 @@ return [
             'help' => 'The data used to display the preview',
             'tooltip' => 'JSON format',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'description' => [
             'label' => 'Descrizione',
@@ -65,9 +88,13 @@ return [
             'placeholder' => 'es: Template per le notifiche di scadenza',
             'helper_text' => 'Breve descrizione dello scopo del template',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'type' => [
             'label' => 'Tipo',
@@ -82,9 +109,13 @@ return [
                 'whatsapp' => 'WhatsApp',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'content' => [
             'label' => 'Contenuto',
@@ -92,9 +123,13 @@ return [
             'placeholder' => 'Inserisci il testo del messaggio',
             'helper_text' => 'Contenuto principale della notifica',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'variables' => [
             'label' => 'Variabili',
@@ -102,36 +137,54 @@ return [
             'placeholder' => '{{nome}}, {{email}}, ecc.',
             'helper_text' => 'Variabili che possono essere utilizzate nel template',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato del template',
             'helper_text' => 'Se attivo, il template può essere utilizzato per l\'invio di notifiche',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Data creazione',
             'tooltip' => 'Data di creazione del template',
 <<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'updated_at' => [
-            'label' => 'Ultima modifica',
-            'tooltip' => 'Data dell\'ultima modifica del template',
 <<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'updated_at' => [
+            'label' => 'Ultima modifica',
+            'tooltip' => 'Data dell\'ultima modifica del template',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'navigation' => [
@@ -189,8 +242,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

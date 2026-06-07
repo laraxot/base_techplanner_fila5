@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risoluzione Conflitti di Merge - Modulo Geo
 
 ## Panoramica
@@ -107,3 +108,12 @@ Strategia: DRY, KISS, analisi contestuale
 - [Geo Models Documentation](models/)
 - [Geo Actions Documentation](../app/Actions/)
 - [Merge Conflict Best Practices](../../Xot/project_docs/conflicts/)
+=======
+---
+module: theme
+topic: merges-resolution
+canonical: ../../../Themes/docs/shared-components/merge-conflicts-resolution.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/merge-conflicts-resolution.md
+>>>>>>> dev

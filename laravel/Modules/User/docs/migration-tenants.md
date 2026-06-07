@@ -204,8 +204,13 @@ done
 
 ### Root Documentation
 
+<<<<<<< HEAD
 - [Database Migrations](../../../../docs/database-migrations.md)
 - [Laraxot Philosophy](../../../../docs/architettura_filosofia_religione_politica_zen.md)
+=======
+- [Database Migrations](../../../../../docs/database-migrations.md)
+- [Laraxot Philosophy](../../../../../docs/architettura_filosofia_religione_politica_zen.md)
+>>>>>>> dev
 
 ### This Analysis
 

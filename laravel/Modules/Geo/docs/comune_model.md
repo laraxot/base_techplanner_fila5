@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modello Comune
 
 ## Introduzione
@@ -153,3 +154,12 @@ Comune::clearCache();
 - [GeoJsonModel](geo-json-model.md)
 - [Struttura Dati Geografici](geo-entities.md)
 - [Guida alla Migrazione](migration-guide.md)
+=======
+---
+module: theme
+topic: comune_model
+canonical: ../../../Themes/docs/shared-components/comune-model.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/comune-model.md
+>>>>>>> dev

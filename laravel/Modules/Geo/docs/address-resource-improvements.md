@@ -1,9 +1,12 @@
 # Suggerimenti di Miglioramento per AddressResource.php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-07-30
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **File**: `/laravel/Modules/Geo/app/Filament/Resources/AddressResource.php`
 **Priorità**: Alta (per performance e manutenibilità)
 

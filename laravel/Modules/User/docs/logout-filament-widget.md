@@ -2,6 +2,9 @@
 
 ## Collegamenti correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth_pages_implementation.md)
@@ -9,6 +12,7 @@
 - [Analisi Errore Logout](logout_implementation_error.md)
 - [Struttura Widget](widgets_structure.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+<<<<<<< HEAD
 =======
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
@@ -18,6 +22,8 @@
 - [Struttura Widget](WIDGETS_STRUCTURE.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Introduzione
 
@@ -238,10 +244,14 @@ FilamentView::registerRenderHook(
 ## Alternativa: Logout Immediato
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout_blade_implementation.md), che esegue il logout immediatamente senza richiedere conferma.
 =======
 Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](LOGOUT_BLADE_IMPLEMENTATION.md), che esegue il logout immediatamente senza richiedere conferma.
 >>>>>>> 4b6b99016 (first commit)
+=======
+Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout_blade_implementation.md), che esegue il logout immediatamente senza richiedere conferma.
+>>>>>>> dev
 
 ## Conclusione
 
@@ -250,6 +260,9 @@ L'implementazione del logout con un widget Filament offre un approccio flessibil
 
 ## Collegamenti correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth_pages_implementation.md)
@@ -257,6 +270,7 @@ L'implementazione del logout con un widget Filament offre un approccio flessibil
 - [Analisi Errore Logout](logout_implementation_error.md)
 - [Struttura Widget](widgets_structure.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+<<<<<<< HEAD
 =======
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
@@ -266,6 +280,8 @@ L'implementazione del logout con un widget Filament offre un approccio flessibil
 - [Struttura Widget](WIDGETS_STRUCTURE.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Introduzione
 
@@ -486,10 +502,14 @@ FilamentView::registerRenderHook(
 ## Alternativa: Logout Immediato
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout_blade_implementation.md), che esegue il logout immediatamente senza richiedere conferma.
 =======
 Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](LOGOUT_BLADE_IMPLEMENTATION.md), che esegue il logout immediatamente senza richiedere conferma.
 >>>>>>> 4b6b99016 (first commit)
+=======
+Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout_blade_implementation.md), che esegue il logout immediatamente senza richiedere conferma.
+>>>>>>> dev
 
 ## Conclusione
 

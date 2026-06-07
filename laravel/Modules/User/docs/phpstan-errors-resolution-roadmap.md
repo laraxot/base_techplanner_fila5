@@ -142,16 +142,22 @@ public function clients();
 ## 📚 Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
 - [PHPStan Code Quality Guide](../../xot/docs/phpstan-code-quality-guide.md)
 - [Passport Integration](../../user/docs/passport-integration.md)
 - [Vendor Contract Patterns](../../xot/docs/development/vendor-contract-patterns.md)
+<<<<<<< HEAD
 =======
 - [Filament Class Extension Rules](../../Xot/docs/filament-class-extension-rules.md)
 - [PHPStan Code Quality Guide](../../Xot/docs/phpstan-code-quality-guide.md)
 - [Passport Integration](../../User/docs/passport-integration.md)
 - [Vendor Contract Patterns](../../Xot/docs/development/vendor-contract-patterns.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ---
 
@@ -197,6 +203,9 @@ Tutti gli errori sono stati corretti:
 4. ✅ **PassportServiceProvider.php linea 158**: Aggiunto cast esplicito `@var array<string, string>` per `Passport::tokensCan()`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 ### Correzioni Implementate (2026-02-02) - ✅ FINAL FIX
 1. **PassportServiceProvider.php**:
     - Risolti errori di type mismatch per `useTokenModel`, `useRefreshTokenModel`, ecc. usando `Assert::subclassOf`.
@@ -205,6 +214,9 @@ Tutti gli errori sono stati corretti:
 3. **PHPMD**:
     - Aggiunto `@SuppressWarnings` per `StaticAccess` e `CouplingBetweenObjects` in `PassportServiceProvider`.
 
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-27*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

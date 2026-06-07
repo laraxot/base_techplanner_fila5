@@ -49,11 +49,16 @@ class RegisterTenant extends BaseRegisterTenant
     }
 
     /**
+<<<<<<< HEAD
      * @return array<Component>
+=======
+     * @return array<int|string, Component>
+>>>>>>> dev
      */
     public function getFormSchema(): array
     {
         $resourceClass = $this->resolveResourceClass();
+<<<<<<< HEAD
 
         $schemaRaw = $resourceClass::getFormSchema();
 
@@ -61,6 +66,18 @@ class RegisterTenant extends BaseRegisterTenant
         $schema = $schemaRaw;
 
         return $schema;
+=======
+        $schema = $resourceClass::getFormSchema();
+        Assert::isArray($schema);
+
+        $components = [];
+        foreach ($schema as $key => $component) {
+            Assert::isInstanceOf($component, Component::class);
+            $components[$key] = $component;
+        }
+
+        return $components;
+>>>>>>> dev
     }
 
     /**

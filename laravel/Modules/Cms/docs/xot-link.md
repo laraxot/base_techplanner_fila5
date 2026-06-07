@@ -11,6 +11,9 @@ Secondo le regole di organizzazione della documentazione:
 ## Collegamenti Principali
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Linee Guida Generali](../../xot/project_docs/documentation-guidelines.md) - Linee guida per la documentazione
 - [Convenzioni di Codice](../../xot/project_docs/code-standards.md) - Standard di codice e best practices
 - [Struttura dei Moduli](../../xot/project_docs/module-structure.md) - Documentazione sulla struttura dei moduli
@@ -24,6 +27,7 @@ Secondo le regole di organizzazione della documentazione:
 ## Collegamento Bidirezionale
 
 Questo documento è collegato bidirezionalmente con [cms-link.md](../../xot/project_docs/cms-link.md) nel modulo Xot.
+<<<<<<< HEAD
 =======
 - [Linee Guida Generali](../../Xot/project_docs/DOCUMENTATION-GUIDELINES.md) - Linee guida per la documentazione
 - [Convenzioni di Codice](../../Xot/project_docs/CODE-STANDARDS.md) - Standard di codice e best practices
@@ -39,5 +43,7 @@ Questo documento è collegato bidirezionalmente con [cms-link.md](../../xot/proj
 
 Questo documento è collegato bidirezionalmente con [cms-link.md](../../Xot/project_docs/cms-link.md) nel modulo Xot.
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 > Aggiorna entrambi i riferimenti se modifichi la struttura della documentazione o aggiungi nuove sezioni.

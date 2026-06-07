@@ -2,14 +2,19 @@
 
 ## Documentazione Generica
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README](../project_docs/readme.md) - Documentazione principale del progetto
 =======
 - [README](../project_docs/README.md) - Documentazione principale del progetto
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README](../project_docs/readme.md) - Documentazione principale del progetto
+>>>>>>> dev
 - [Roadmap](../project_docs/roadmap.md) - Piano di sviluppo
 - [Filosofia](../project_docs/filosofia.md) - Principi e filosofia del progetto
 
 ## Documentazione Tecnica
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Regole di Progetto](./rules/prompt_rules.md)
 - [Standard di Codice](./standards/code-standards.md)
@@ -19,12 +24,20 @@
 - [Standard di Codice](./standards/CODE-STANDARDS.md)
 - [Convenzioni di Nomenclatura](./conventions/NAMING-CONVENTIONS.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Regole di Progetto](./rules/prompt_rules.md)
+- [Standard di Codice](./standards/code-standards.md)
+- [Convenzioni di Nomenclatura](./conventions/naming-conventions.md)
+>>>>>>> dev
 - [Installazione](./installation.md)
 - [Configurazione](./configuration.md)
 - [Risoluzione Problemi](./troubleshooting.md)
 
 ## Collegamenti ai Moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Cms](../cms/project_docs/readme.md) - Frontend
 - [UI](../ui/project_docs/readme.md) - Componenti
 - [User](../user/project_docs/readme.md) - Utenti e Permessi
@@ -59,6 +72,7 @@
 * [links.md](../../tenant/project_docs/it/links/links.md)
 * [links.md](../../cms/project_docs/links.md)
 * [links.md](../../../themes/one/project_docs/links.md)
+<<<<<<< HEAD
 =======
 - [Cms](../Cms/project_docs/README.md) - Frontend
 - [UI](../UI/project_docs/README.md) - Componenti
@@ -95,3 +109,5 @@
 * [links.md](../../Cms/project_docs/links.md)
 * [links.md](../../../Themes/One/project_docs/links.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

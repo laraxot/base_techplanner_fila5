@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Contenuti Homepage il progetto
 
 ## Testo principale della homepage
@@ -47,3 +48,12 @@ Se il contenuto della homepage deve essere modificato, è necessario:
 1. Aggiornare questo documento
 2. Aggiornare il file JSON corrispondente in `/var/www/html/<directory progetto>/laravel/config/local/<directory progetto>/database/content/pages/1.json`
 3. Verificare che le modifiche siano correttamente visualizzate in tutte le versioni (mobile, tablet, desktop)
+=======
+---
+module: theme
+topic: homepage_contenuti
+canonical: ../../../Themes/docs/shared-components/homepage-contenuti.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/homepage-contenuti.md
+>>>>>>> dev

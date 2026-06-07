@@ -15,6 +15,9 @@ return [
         'icon' => 'heroicon-o-user-group',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Team User',
     'plural_label' => 'Team User (Plurale)',
     'fields' => [
@@ -48,10 +51,13 @@ return [
             'label' => 'Elimina Team User',
         ],
     ],
+<<<<<<< HEAD
 =======
     'label' => '',
     'plural_label' => '',
     'fields' => [],
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

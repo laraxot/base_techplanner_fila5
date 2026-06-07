@@ -54,6 +54,7 @@ aurmich/dev
 aurmich/dev
 
 ## Collegamenti tra versioni di level_6.md
+<<<<<<< HEAD
 * [level_6.md](laravel/Modules/Chart/docs/phpstan/level_6.md)
 * [level_6.md](laravel/Modules/Reporting/docs/phpstan/level_6.md)
 * [level_6.md](laravel/Modules/Gdpr/docs/phpstan/level_6.md)
@@ -69,3 +70,20 @@ aurmich/dev
 * [level_6.md](laravel/Modules/Activity/docs/phpstan/level_6.md)
 * [level_6.md](laravel/Modules/Patient/docs/phpstan/level_6.md)
 * [level_6.md](laravel/Modules/Cms/docs/phpstan/level_6.md)
+=======
+* [level_6.md](laravel/modules/chart/docs/phpstan/level_6.md)
+* [level_6.md](laravel/modules/reporting/docs/phpstan/level_6.md)
+* [level_6.md](laravel/modules/gdpr/docs/phpstan/level_6.md)
+* [level_6.md](laravel/modules/notify/docs/phpstan/level_6.md)
+* [level_6.md](laravel/modules/xot/docs/phpstan/level_6.md)
+* [level_6.md](laravel/modules/dental/docs/phpstan/level_6.md)
+* [level_6.md](laravel/modules/user/docs/phpstan/level_6.md)
+* [level_6.md](laravel/modules/ui/docs/phpstan/level_6.md)
+* [level_6.md](laravel/modules/lang/docs/phpstan/level_6.md)
+* [level_6.md](laravel/modules/job/docs/phpstan/level_6.md)
+* [level_6.md](laravel/modules/media/docs/phpstan/level_6.md)
+* [level_6.md](laravel/modules/tenant/docs/phpstan/level_6.md)
+* [level_6.md](laravel/modules/activity/docs/phpstan/level_6.md)
+* [level_6.md](laravel/modules/patient/docs/phpstan/level_6.md)
+* [level_6.md](laravel/modules/cms/docs/phpstan/level_6.md)
+>>>>>>> dev

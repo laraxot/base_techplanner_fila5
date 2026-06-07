@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Auth-AGID Component Fix - Layout vs Component Issue
 
 ## Problem Analysis
@@ -140,3 +141,12 @@ After implementation:
 **Issue Type**: Component Resolution  
 **Priority**: High (Blocks AGID functionality)  
 **Solution**: File relocation to components directory
+=======
+---
+module: theme
+topic: auth-agid-component-fix
+canonical: ../../../docs/shared-components/auth-agid-component-fix.md
+---
+
+See canonical documentation: ../../../docs/shared-components/auth-agid-component-fix.md
+>>>>>>> dev

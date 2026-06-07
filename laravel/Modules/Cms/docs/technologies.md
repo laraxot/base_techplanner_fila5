@@ -111,13 +111,19 @@ Questo documento descrive le tecnologie principali utilizzate nel modulo CMS.
 
 - [Architettura](architecture.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [API](api/readme.md)
 - [Frontend](frontoffice/readme.md)
 - [Sviluppo](developer/readme.md)
 - [Utente](user/readme.md)
+<<<<<<< HEAD
 =======
 - [API](api/README.md)
 - [Frontend](frontoffice/README.md)
 - [Sviluppo](developer/README.md)
 - [Utente](user/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

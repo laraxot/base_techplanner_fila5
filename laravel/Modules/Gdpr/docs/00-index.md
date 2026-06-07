@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 # 📚 **Indice Documentazione Modulo Gdpr**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -23,13 +26,48 @@
 - 🔬 **[Testing Strategy](./testing.md)** - Approccio Pest per la verifica della compliance.
 - 🧹 **[PHPMD Analysis](./phpmd-report.txt)** - Risoluzione della complessità nei modelli di privacy.
 
+<<<<<<< HEAD
+=======
+## 📦 **Pacchetti Composer**
+- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
+- `statikbe/laravel-cookie-consent` - Banner cookie consent
+
+## 📊 Documenti Product & Development
+
+### Product
+| File | Scopo |
+|------|-------|
+| [PRD.md](./PRD.md) | Product Requirements |
+| [PRODUCT_ROADMAP.md](./PRODUCT_ROADMAP.md) | Roadmap |
+| [PRODUCT_STRATEGY.md](./PRODUCT_STRATEGY.md) | Strategy |
+| [PRODUCT_LAUNCH_PLAN.md](./PRODUCT_LAUNCH_PLAN.md) | Launch Plan |
+
+### Development
+| File | Scopo |
+|------|-------|
+| [GSD_WORKFLOW.md](./GSD_WORKFLOW.md) | GSD Workflow |
+| [SPRINT_PLANNING.md](./SPRINT_PLANNING.md) | Sprint Planning |
+| [USER_RESEARCH.md](./USER_RESEARCH.md) | User Research |
+
+>>>>>>> dev
 ## 🔗 **Moduli Correlati**
 - [User](../../user/docs/readme.md) - Soggetti dei consensi.
 - [Activity](../../activity/docs/readme.md) - Log di sistema integrato.
 - [Xot](../../xot/docs/readme.md) - Base framework e trait UUID.
+<<<<<<< HEAD
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 =======
 # Documentation Index
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [AGENTS.md](../../../../AGENTS.md) - Project guidelines
+
+---
+*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+
+## Dependency Intelligence
+
+- [Dependency intelligence](dependency-intelligence.md)
+>>>>>>> dev

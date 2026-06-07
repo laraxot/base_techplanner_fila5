@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\TechPlanner\Models\Traits;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Arr;
 use Modules\TechPlanner\Enums\CompanyItemEnum;
@@ -18,6 +19,11 @@ use Modules\TechPlanner\Enums\CompanyItemEnum;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Arr;
+use Modules\TechPlanner\Enums\CompanyItemEnum;
+>>>>>>> dev
 
 /**
  * Trait HasContact.
@@ -31,11 +37,15 @@ use Illuminate\Database\Eloquent\Relations\MorphMany;
 trait HasCompany
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
 =======
 
      /**
 >>>>>>> 4b6b99016 (first commit)
+=======
+    /**
+>>>>>>> dev
      * Initialize the trait
      *
      * @return void
@@ -43,13 +53,19 @@ trait HasCompany
     protected function initializeHasCompany()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         $fields = Arr::map(CompanyItemEnum::cases(), fn ($item) => $item->value);
         $this->mergeFillable($fields);
     }
 }
+<<<<<<< HEAD
 =======
         $fields=Arr::map(CompanyItemEnum::cases(), fn ($item) => $item->value);
         $this->mergeFillable($fields);
     }
 }
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -168,11 +168,15 @@ use Modules\UI\Filament\Tables\Columns\SelectStateColumn;
 - [Accessibility Guidelines](../accessibility.md)
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 **Last Updated**: June 2025
 **Version**: 2.0
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 **Compatibility**: Filament 4.x, Laravel 11.x
 **Compatibility**: Filament 4.x, Laravel 11.x
 **Compatibility**: Filament 3.x, Laravel 10.x

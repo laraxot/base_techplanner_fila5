@@ -1,13 +1,17 @@
 <?php
 
+<<<<<<< HEAD
 /**
  * @see https://laraveldaily.com/post/filament-custom-edit-profile-page-multiple-forms-full-design
  */
 
+=======
+>>>>>>> dev
 declare(strict_types=1);
 
 namespace Modules\Cms\Filament\Front\Pages;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
@@ -29,18 +33,36 @@ class Home extends XotBasePage
     public array $items = [];
 
     // protected static string $view = 'cms::filament.front.pages.welcome';
+=======
+use Modules\Xot\Filament\Pages\XotBasePage;
+
+class Home extends XotBasePage
+{
+    public string $view_type = 'home';
+
+    /** @var array<string, mixed> */
+    public array $containers = [];
+
+    /** @var array<string, mixed> */
+    public array $items = [];
+
+>>>>>>> dev
     protected string $view = 'pub_theme::home';
 
     protected static string $layout = 'pub_theme::components.layouts.app';
 
     public function mount(): void
     {
+<<<<<<< HEAD
         [$this->containers, $this->items] = params2ContainerItem();
+=======
+>>>>>>> dev
         $this->initView();
     }
 
     public function getViewData(): array
     {
+<<<<<<< HEAD
         $data = [];
         if ([] !== $this->containers) {
             Assert::string($container_last = last($this->containers), '['.__LINE__.']['.__FILE__.']');
@@ -164,5 +186,17 @@ class Home extends XotBasePage
         $parameters['item0'] = 'zibibbo';
 
         return route('test', $parameters);
+=======
+        return [];
+    }
+
+    public function initView(): void
+    {
+        $this->view_type = 'home';
+        $primaryView = $this->view;
+        if (! view()->exists($primaryView)) {
+            $this->view = 'cms::filament.front.pages.welcome';
+        }
+>>>>>>> dev
     }
 }

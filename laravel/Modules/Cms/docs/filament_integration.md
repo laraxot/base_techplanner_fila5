@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Integrazione con Filament V3
 
 ## Componenti Filament nel CMS
@@ -153,3 +154,12 @@ public function test_filament_components_rendering()
 * [filament-integration.md](laravel/modules/cms/project_docs/roadmap/features/filament-integration.md)
 * [filament-integration.md](laravel/modules/cms/project_docs/filament-integration.md)
 
+=======
+---
+module: theme
+topic: filament_integration
+canonical: ../../../Themes/docs/shared-components/filament-integration-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-integration-Modules.md
+>>>>>>> dev

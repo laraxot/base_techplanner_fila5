@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Module - Memory Optimization Summary
 
 ## Problema Risolto
@@ -111,3 +112,12 @@ FilamentView::registerRenderHook('panels::user-menu.before',
 2. **Authentication log queries** performance
 3. **Livewire component memory** negli hook
 4. **User dashboard load time** con molti utenti registrati
+=======
+---
+module: theme
+topic: memory-optimization-summary
+canonical: ../../../Themes/docs/shared-components/memory-optimization-summary.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/memory-optimization-summary.md
+>>>>>>> dev

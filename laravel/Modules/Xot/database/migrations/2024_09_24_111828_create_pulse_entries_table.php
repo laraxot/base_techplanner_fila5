@@ -5,19 +5,26 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
+=======
+return new class extends XotBaseMigration {
+>>>>>>> dev
     /**
      * Run the migrations.
      */
     public function up(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         if (! $this->shouldRun()) {
             return;
         }
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         // -- CREATE --
         $this->tableCreate(function (Blueprint $table): void {
             $table->id();

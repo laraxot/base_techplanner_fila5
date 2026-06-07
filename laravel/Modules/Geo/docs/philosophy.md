@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Geo - Filosofia, Religione, Politica, Zen
 
 ## 🎯 Panoramica
@@ -251,3 +252,12 @@ The `Geo` module, as the guardian of geographical data, can significantly benefi
 
 By leveraging these MCPs, the `Geo` module can ensure its critical role in managing geographical data is more efficient, verifiable, and transparent, ultimately contributing to more accurate and reliable location-aware applications.
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: philosophy
+canonical: ../../../Themes/docs/shared-components/philosophy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/philosophy.md
+>>>>>>> dev

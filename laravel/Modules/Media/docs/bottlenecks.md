@@ -816,7 +816,11 @@ Implementando queste soluzioni, il modulo Media potrà superare i principali col
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Sintesi Colli di Bottiglia](../../docs/performance_bottlenecks.md)
+=======
+- [Sintesi Colli di Bottiglia](../../../docs/performance_bottlenecks.md)
+>>>>>>> dev
 - [Best Practices](../xot/docs/best-practices.md)
 - [Struttura Moduli](../xot/docs/module_structure.md)
 
@@ -847,6 +851,7 @@ Implementando queste soluzioni, il modulo Media potrà superare i principali col
 * [bottlenecks.md](../../activity/docs/bottlenecks.md)
 * [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../cms/docs/bottlenecks.md)
+<<<<<<< HEAD
 =======
 - [Sintesi Colli di Bottiglia](../../docs/PERFORMANCE_BOTTLENECKS.md)
 - [Best Practices](../Xot/docs/BEST-PRACTICES.md)
@@ -880,3 +885,5 @@ Implementando queste soluzioni, il modulo Media potrà superare i principali col
 * [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -43,5 +43,9 @@ use function Livewire\Volt\{state, mount};
 
 ---
 
+<<<<<<< HEAD
 **Errore risolto: aggiungi `@volt` come prima riga!**
 =======
+=======
+**Errore risolto: aggiungi `@volt` come prima riga!**
+>>>>>>> dev

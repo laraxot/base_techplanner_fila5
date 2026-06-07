@@ -5,12 +5,16 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use Modules\User\Models\Tenant;
 use Modules\User\Tests\TestCase;
 
 class TenantTest extends TestCase
 {
     // DatabaseTransactions is already used in the module TestCase
+<<<<<<< HEAD
 =======
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\User\Models\Tenant;
@@ -20,6 +24,8 @@ class TenantTest extends TestCase
 {
     use RefreshDatabase;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
     public function testCanCreateTenantWithMinimalData(): void
     {

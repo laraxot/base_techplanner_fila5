@@ -15,6 +15,7 @@ La classe `SpatieEmail` ora utilizza l'API moderna di Laravel per gli allegati t
 $attachments = [
     [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'path' => '/var/www/html/<nome progetto>/public_html/images/avatars/default.svg',
         'path' => '/var/www/html/saluteora/public_html/images/avatars/default.svg',
         'path' => '/var/www/html/_bases/base_techplanner_fila3_mono/public_html/images/avatars/default.svg',
@@ -23,6 +24,11 @@ $attachments = [
         'path' => 'public_html/images/avatars/default.svg',
         'path' => 'public_html/images/avatars/default.svg',
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'path' => '/var/www/html/<nome progetto>/public_html/images/avatars/default.svg',
+'path' => '/var/www/html/Quaeris/public_html/images/avatars/default.svg',
+        'path' => '/var/www/html/_bases/base_techplanner_fila5_mono/public_html/images/avatars/default.svg',
+>>>>>>> dev
         'as' => 'logo.svg',
         'mime' => 'image/svg+xml',
     ],
@@ -52,10 +58,14 @@ L'implementazione attuale include:
 4. **Documentazione PHPDoc completa**: Miglior supporto IDE e type hints
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per maggiori dettagli, consultare [ATTACHMENTS_USAGE.md](./attachments_usage.md).
 =======
 Per maggiori dettagli, consultare [ATTACHMENTS_USAGE.md](./ATTACHMENTS_USAGE.md).
 >>>>>>> 4b6b99016 (first commit)
+=======
+Per maggiori dettagli, consultare [ATTACHMENTS_USAGE.md](./attachments_usage.md).
+>>>>>>> dev
 
 ### 2. Errore: "View [notify::emails.template-name] not found"
 
@@ -215,6 +225,7 @@ public function test_can_send_email_with_attachments()
 ## Collegamenti alla Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ATTACHMENTS_USAGE.md](./attachments_usage.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
@@ -223,3 +234,8 @@ public function test_can_send_email_with_attachments()
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/SPATIE_MAIL_TEMPLATES_STRUCTURE.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [ATTACHMENTS_USAGE.md](./attachments_usage.md)
+- [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
+- [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
+>>>>>>> dev

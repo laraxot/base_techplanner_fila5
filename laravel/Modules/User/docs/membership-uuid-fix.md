@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fix: Duplicate Entry Error in team_user Table (DEPRECATO)
 
 > ⚠️ **DEPRECATO**: Questa soluzione è stata sostituita dalla conversione UUID → autoincrement.
@@ -153,3 +154,12 @@ Quando si crea un modello pivot che usa UUID come PRIMARY KEY:
 =======
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: membership-uuid-fix
+canonical: ../../../Themes/docs/shared-components/membership-uuid-fix.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/membership-uuid-fix.md
+>>>>>>> dev

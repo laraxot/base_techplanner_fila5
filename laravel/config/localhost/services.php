@@ -25,9 +25,12 @@ return [
         'maps_api_key' => env('GOOGLE_MAPS_API_KEY'),
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
     'netfun' => [
         'token' => env('NETFUN_TOKEN'),

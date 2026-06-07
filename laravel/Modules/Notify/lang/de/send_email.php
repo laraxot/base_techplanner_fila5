@@ -18,72 +18,111 @@ return [
             'placeholder' => 'Inserisci l\'oggetto dell\'email',
             'help' => 'Oggetto che apparirà nell\'intestazione dell\'email',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'template_id' => [
             'label' => 'Template Email',
             'placeholder' => 'Seleziona il template email da utilizzare',
             'help' => 'Template predefinito per l\'email (opzionale)',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'to' => [
             'label' => 'Destinatario',
             'placeholder' => 'destinatario@dominio.com',
             'help' => 'Indirizzo email del destinatario',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'cc' => [
             'label' => 'Copia Conoscenza (CC)',
             'placeholder' => 'cc@dominio.com (opzionale)',
             'help' => 'Indirizzi email in copia conoscenza, separati da virgole',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'bcc' => [
             'label' => 'Copia Nascosta (BCC)',
             'placeholder' => 'bcc@dominio.com (opzionale)',
             'help' => 'Indirizzi email in copia nascosta, separati da virgole',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'content' => [
             'label' => 'Contenuto Testo',
             'placeholder' => 'Inserisci il contenuto testuale dell\'email',
             'help' => 'Contenuto testuale dell\'email (versione plain text)',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'body_html' => [
             'label' => 'Contenuto HTML',
             'placeholder' => '<h1>Titolo</h1><p>Contenuto dell\'email in formato HTML</p>',
             'help' => 'Contenuto HTML dell\'email da inviare (opzionale)',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -95,6 +134,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'parameters' => [
@@ -102,17 +142,25 @@ return [
             'placeholder' => '{\"nome\": \"Mario\", \"cognome\": \"Rossi\"}',
             'help' => 'Parametri JSON per personalizzare il template selezionato',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'attachments' => [
             'label' => 'Allegati',
             'placeholder' => 'Seleziona i file da allegare',
             'help' => 'File da allegare all\'email (opzionale)',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'priority' => [
             'label' => 'Priorità',
@@ -124,11 +172,17 @@ return [
                 'urgent' => 'Urgente',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -181,8 +235,13 @@ return [
         'priority_valid' => 'La priorità deve essere una delle opzioni disponibili',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

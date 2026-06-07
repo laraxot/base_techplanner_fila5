@@ -10,10 +10,14 @@ This application is a Laravel application and its main Laravel ecosystems packag
 
 - php - 8.3.29
 <<<<<<< HEAD
+<<<<<<< HEAD
 - filament/filament (FILAMENT) - v5
 =======
 - filament/filament (FILAMENT) - v4
 >>>>>>> 4b6b99016 (first commit)
+=======
+- filament/filament (FILAMENT) - v5
+>>>>>>> dev
 - laravel/folio (FOLIO) - v1
 - laravel/framework (LARAVEL) - v12
 - laravel/passport (PASSPORT) - v12
@@ -620,6 +624,9 @@ it('has emails', function (string $email) {
 | decoration-slice | box-decoration-slice |
 | decoration-clone | box-decoration-clone |
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 
 - **Architectural Rule for Auth Widgets (Filament + Folio)**: 
     - Render widgets in Blade/Folio views using **DIRECT CLASS PHP REFERENCE** (e.g., `@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)`).
@@ -644,6 +651,9 @@ it('has emails', function (string $email) {
     - **Primary Key**: Models MUST use an autoincrementing integer `id()` as the primary key for optimal database performance and simplified internal relationships.
     - **UUID Column**: Models MUST also include a separate `uuid` column (with a unique index). This UUID is dedicated to external integration, mobile applications (Android/iOS), and cross-database compatibility (Postgres).
     - **Implementation**: The `id` is handled by database defaults. The `uuid` must be automatically generated upon record creation, typically through the model's `booted()` method (`static::creating`).
+<<<<<<< HEAD
 =======
 </laravel-boost-guidelines>
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

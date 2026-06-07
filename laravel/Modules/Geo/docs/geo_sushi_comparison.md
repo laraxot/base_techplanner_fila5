@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Confronto: GeoJsonModel (readonly JSON) vs Laravel Sushi
 
 ## 1. Descrizione degli approcci
@@ -81,3 +82,12 @@
 ---
 
 Responsabile: Cascade AI 
+=======
+---
+module: theme
+topic: geo_sushi_comparison
+canonical: ../../../Themes/docs/shared-components/geo-sushi-comparison.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/geo-sushi-comparison.md
+>>>>>>> dev

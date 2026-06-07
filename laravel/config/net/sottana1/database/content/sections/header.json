@@ -11,7 +11,11 @@
                 "type": "navigation",
                 "slug": "nav1",
                 "data": {
+<<<<<<< HEAD
                     "view": "themes.two::components.sections.header.v1",
+=======
+                    "view": "pub_theme::components.sections.header.v1",
+>>>>>>> dev
                     "brand": "Sottana Service",
                     "brand_subtitle": null,
                     "cta_label": "Richiedi Consulenza",
@@ -57,7 +61,11 @@
                 "type": "navigation",
                 "slug": "nav1",
                 "data": {
+<<<<<<< HEAD
                     "view": "themes.two::components.sections.header.v1",
+=======
+                    "view": "pub_theme::components.sections.header.v1",
+>>>>>>> dev
                     "brand": "Sottana Service",
                     "brand_subtitle": null,
                     "cta_label": "Request Consultation",
@@ -103,7 +111,11 @@
                 "type": "navigation",
                 "slug": "nav1",
                 "data": {
+<<<<<<< HEAD
                     "view": "themes.two::components.sections.header.v1",
+=======
+                    "view": "pub_theme::components.sections.header.v1",
+>>>>>>> dev
                     "brand": "Sottana Service",
                     "brand_subtitle": null,
                     "cta_label": "Konsultation Anfordern",

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🐄✨ DRY & KISS Analysis - Modulo User
 
 **Data Analisi:** 2025-10-15  
@@ -370,6 +371,8 @@ find docs/ -name "*old*" -o -name "*backup*" -o -name "*deprecated*"
 
 --- Merged from dry-kiss-analysis-2025-10-15.md ---
 
+=======
+>>>>>>> dev
 # DRY & KISS Analysis - Modulo User
 
 **Data:** 15 Ottobre 2025  
@@ -486,11 +489,18 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 - [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-2025-10-15.md)
 - [Architecture](./core/architecture.md)
+<<<<<<< HEAD
 - [DRY/KISS Global](../../docs/dry_kiss_analysis_2025-10-15.md)
+=======
+- [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
+>>>>>>> dev
 
 ---
 
 **Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
 
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

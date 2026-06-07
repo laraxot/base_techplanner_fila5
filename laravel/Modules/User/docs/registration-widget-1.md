@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Registration Widget Documentation
 
 ## Overview
@@ -63,3 +64,12 @@ protected function getConfirmationRoute(): string
 
 - [Namespace Issues](../../../docs/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../Modules/Xot/docs/rules/filament-resource-guidelines.md)
+=======
+---
+module: theme
+topic: registration-widget-1
+canonical: ../../../Themes/docs/shared-components/registration-widget-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/registration-widget-1.md
+>>>>>>> dev

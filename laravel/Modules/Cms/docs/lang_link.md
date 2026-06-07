@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Collegamento alle Traduzioni del Modulo Cms
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).
@@ -30,3 +31,12 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/modules/patient/project_docs/lang-link.md)
 * [lang-link.md](laravel/modules/cms/project_docs/lang-link.md)
 
+=======
+---
+module: theme
+topic: lang_link
+canonical: ../../../Themes/docs/shared-components/lang-link-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/lang-link-Modules.md
+>>>>>>> dev

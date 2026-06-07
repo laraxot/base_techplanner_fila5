@@ -17,10 +17,14 @@ Il metodo `buttonLabel()` **NON esiste** sul componente `Filament\Forms\Componen
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Errore e best practice modulo Patient](../../patient/docs/filament-error-fileupload-buttonlabel.md)
 =======
 - [Errore e best practice modulo Patient](../../Patient/docs/filament-error-fileupload-buttonlabel.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Errore e best practice modulo Patient](../../patient/docs/filament-error-fileupload-buttonlabel.md)
+>>>>>>> dev
 - [Tabella metodi supportati](filament-component-methods.md)
 
 ---
@@ -32,10 +36,14 @@ Questa doc va sempre consultata e linkata in ogni review e sviluppo che coinvolg
 
 ## Collegamenti tra versioni di filament-error-fileupload-buttonlabel.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [filament-error-fileupload-buttonlabel.md](../../patient/docs/filament-error-fileupload-buttonlabel.md)
 =======
 * [filament-error-fileupload-buttonlabel.md](../../Patient/docs/filament-error-fileupload-buttonlabel.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [filament-error-fileupload-buttonlabel.md](../../patient/docs/filament-error-fileupload-buttonlabel.md)
+>>>>>>> dev
 # Errore: Metodo `buttonLabel()` su FileUpload di Filament
 
 ## Descrizione
@@ -55,10 +63,14 @@ Il metodo `buttonLabel()` **NON esiste** sul componente `Filament\Forms\Componen
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Errore e best practice modulo Patient](../../patient/project_docs/filament-error-fileupload-buttonlabel.md)
 =======
 - [Errore e best practice modulo Patient](../../Patient/project_docs/filament-error-fileupload-buttonlabel.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Errore e best practice modulo Patient](../../patient/project_docs/filament-error-fileupload-buttonlabel.md)
+>>>>>>> dev
 - [Tabella metodi supportati](filament-component-methods.md)
 
 ---
@@ -70,6 +82,7 @@ Questa doc va sempre consultata e linkata in ogni review e sviluppo che coinvolg
 
 ## Collegamenti tra versioni di filament-error-fileupload-buttonlabel.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [filament-error-fileupload-buttonlabel.md](../../patient/project_docs/filament-error-fileupload-buttonlabel.md)
 * [filament-error-fileupload-buttonlabel.md](../../patient/project_docs/filament-error-fileupload-buttonlabel.md)
 * [filament-error-fileupload-buttonlabel.md](../../patient/project_docs/filament-error-fileupload-buttonlabel.md)
@@ -78,3 +91,8 @@ Questa doc va sempre consultata e linkata in ogni review e sviluppo che coinvolg
 * [filament-error-fileupload-buttonlabel.md](../../Patient/project_docs/filament-error-fileupload-buttonlabel.md)
 * [filament-error-fileupload-buttonlabel.md](../../Patient/project_docs/filament-error-fileupload-buttonlabel.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [filament-error-fileupload-buttonlabel.md](../../patient/project_docs/filament-error-fileupload-buttonlabel.md)
+* [filament-error-fileupload-buttonlabel.md](../../patient/project_docs/filament-error-fileupload-buttonlabel.md)
+* [filament-error-fileupload-buttonlabel.md](../../patient/project_docs/filament-error-fileupload-buttonlabel.md)
+>>>>>>> dev

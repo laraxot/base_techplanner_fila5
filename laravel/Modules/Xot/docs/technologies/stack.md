@@ -136,6 +136,7 @@ Questo documento definisce lo stack tecnologico standard utilizzato in tutti i m
 
 - [Architettura](../architecture/module-structure.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Configurazione](../config/readme.md)
 - [Sviluppo](../development/readme.md)
 - [Testing](../testing/readme.md)
@@ -144,3 +145,8 @@ Questo documento definisce lo stack tecnologico standard utilizzato in tutti i m
 - [Sviluppo](../development/README.md)
 - [Testing](../testing/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Configurazione](../config/readme.md)
+- [Sviluppo](../development/readme.md)
+- [Testing](../testing/readme.md)
+>>>>>>> dev

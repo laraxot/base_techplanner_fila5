@@ -10,9 +10,13 @@ return [
             'helper_text' => '',
             'description' => 'Festnetztelefonnummer',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'mobile' => [
             'label' => 'Handy',
@@ -20,9 +24,13 @@ return [
             'helper_text' => '',
             'description' => 'Handynummer',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'email' => [
             'label' => 'E-Mail',
@@ -30,9 +38,13 @@ return [
             'helper_text' => '',
             'description' => 'E-Mail-Adresse',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'pec' => [
             'label' => 'PEC',
@@ -40,9 +52,13 @@ return [
             'helper_text' => '',
             'description' => 'Zertifizierte elektronische Post',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'whatsapp' => [
             'label' => 'WhatsApp',
@@ -50,9 +66,13 @@ return [
             'helper_text' => '',
             'description' => 'WhatsApp-Nummer',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'fax' => [
             'label' => 'Fax',
@@ -60,6 +80,9 @@ return [
             'helper_text' => '',
             'description' => 'Faxnummer',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -74,8 +97,11 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -4,17 +4,27 @@ declare(strict_types=1);
 
 namespace Modules\UI\Enums;
 
+<<<<<<< HEAD
+=======
+use Modules\Xot\Traits\EnumTrait;
+>>>>>>> dev
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 
 enum CornerPositionEnum: string implements HasColor, HasIcon, HasLabel
 {
+<<<<<<< HEAD
+=======
+    use EnumTrait;
+
+>>>>>>> dev
     case TOP_LEFT = 'top-left';
     case TOP_RIGHT = 'top-right';
     case BOTTOM_LEFT = 'bottom-left';
     case BOTTOM_RIGHT = 'bottom-right';
 
+<<<<<<< HEAD
     public function getLabel(): string
     {
         // return $this->name;
@@ -51,6 +61,8 @@ enum CornerPositionEnum: string implements HasColor, HasIcon, HasLabel
         };
     }
 
+=======
+>>>>>>> dev
     /**
      * ---.
      */

@@ -1,9 +1,12 @@
 # Audit e Correzione Colonne Filament - Modulo UI
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 11 Novembre 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Status**: ✅ COMPLETATO
 
 ## Analisi Completa

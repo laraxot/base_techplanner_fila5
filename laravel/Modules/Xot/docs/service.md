@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ---
@@ -10,3 +11,6 @@ section: content
 
 # Services
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

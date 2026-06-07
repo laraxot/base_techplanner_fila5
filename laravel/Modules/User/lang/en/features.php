@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'name' => [
             'label' => 'Name',
             'tooltip' => '',
@@ -70,6 +73,7 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
+<<<<<<< HEAD
 =======
         'name' => 'Name',
         'name.placeholder' => 'Enter feature name',
@@ -81,5 +85,7 @@ return [
         'value.placeholder' => 'Enter feature value',
         'value.helper_text' => 'The value or configuration of the feature',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
 ];

@@ -104,8 +104,12 @@ Sono stati creati test per verificare:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ProgressioniResource Usage](../../progressioni/docs/progressioni-resource.md)
 =======
 - [ProgressioniResource Usage](../../Progressioni/docs/progressioni-resource.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [ProgressioniResource Usage](../../progressioni/docs/progressioni-resource.md)
+>>>>>>> dev
 - [Filament Tables Documentation](https://filamentphp.com/docs/3.x/tables/columns)

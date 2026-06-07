@@ -545,10 +545,13 @@ class SixteenMakePageCommand extends Command
             x-data="datePickerComponent({
                 format: '{{ $format }}',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 minDate: '{{ $minDate }}',
                 maxDate: '{{ $maxDate }}'
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             })"
             x-ref="input"
         >
@@ -581,10 +584,13 @@ function datePickerComponent(config) {
                 },
                 restrictions: {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     minDate: config.minDate,
                     maxDate: config.maxDate
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                 }
             });
         }

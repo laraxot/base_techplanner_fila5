@@ -144,9 +144,14 @@ new class extends Component
 - [Documentazione Livewire Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices UI](./ui_best_practices.md)
 - [Regole Architetturali](./architecture_rules.md)
 =======
 - [Best Practices UI](./UI_BEST_PRACTICES.md)
 - [Regole Architetturali](./ARCHITECTURE_RULES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Best Practices UI](./ui_best_practices.md)
+- [Regole Architetturali](./architecture_rules.md)
+>>>>>>> dev

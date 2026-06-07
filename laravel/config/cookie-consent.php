@@ -13,7 +13,11 @@ return [
     'policy_url_fr' => env('COOKIE_POLICY_URL_FR', null),
     'policy_url_nl' => env('COOKIE_POLICY_URL_NL', null),
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ];
 >>>>>>> 4b6b99016 (first commit)
+=======
+];
+>>>>>>> dev

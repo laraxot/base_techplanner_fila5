@@ -8,64 +8,99 @@ return [
             'label' => 'ID',
             'tooltip' => 'Unique identifier of the activity',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'description' => [
             'label' => 'Description',
             'tooltip' => 'Description of the activity',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'subject_type' => [
             'label' => 'Subject Type',
             'tooltip' => 'Type of entity subject to the activity',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'subject_id' => [
             'label' => 'Subject ID',
             'tooltip' => 'Identifier of the entity subject to the activity',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'causer_type' => [
             'label' => 'Causer Type',
             'tooltip' => 'Type of entity that caused the activity',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'causer_id' => [
             'label' => 'Causer ID',
             'tooltip' => 'Identifier of the entity that caused the activity',
 <<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'created_at' => [
-            'label' => 'Created At',
-            'tooltip' => 'Date and time when the activity was created',
 <<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'created_at' => [
+            'label' => 'Created At',
+            'tooltip' => 'Date and time when the activity was created',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -118,6 +153,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -127,6 +165,9 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

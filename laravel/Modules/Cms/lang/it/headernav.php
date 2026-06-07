@@ -10,9 +10,13 @@ return [
             'helper_text' => 'background_color',
             'description' => 'background_color',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'background' => [
             'label' => 'background',
@@ -20,9 +24,13 @@ return [
             'helper_text' => 'background',
             'description' => 'background',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'overlay_color' => [
             'label' => 'overlay_color',
@@ -30,9 +38,13 @@ return [
             'helper_text' => 'overlay_color',
             'description' => 'overlay_color',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'overlay_opacity' => [
             'label' => 'overlay_opacity',
@@ -40,9 +52,13 @@ return [
             'helper_text' => 'overlay_opacity',
             'description' => 'overlay_opacity',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'class' => [
             'label' => 'class',
@@ -50,9 +66,13 @@ return [
             'helper_text' => 'class',
             'description' => 'class',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'style' => [
             'label' => 'style',
@@ -60,9 +80,13 @@ return [
             'helper_text' => 'style',
             'description' => 'style',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'view' => [
             'label' => 'view',
@@ -70,9 +94,13 @@ return [
             'helper_text' => 'view',
             'description' => 'view',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -81,6 +109,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Headernav',
     'plural_label' => 'Headernav (Plurale)',
     'navigation' => [
@@ -94,6 +125,9 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

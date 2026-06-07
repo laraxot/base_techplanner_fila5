@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bootstrap Italia Design System Implementation
 
 Implementazione del design system Bootstrap Italia con Tailwind CSS per il tema Sixteen.
@@ -203,3 +204,12 @@ npm run build
 ---
 
 *Implementazione conforme alle linee guida AGID per i siti web della Pubblica Amministrazione*
+=======
+---
+module: theme
+topic: bootstrap-italia-implementation
+canonical: ../../docs/shared-components/bootstrap-english-implementation.md
+---
+
+See canonical documentation: ../../docs/shared-components/bootstrap-english-implementation.md
+>>>>>>> dev

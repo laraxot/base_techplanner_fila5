@@ -153,7 +153,11 @@ Gli errori rimanenti (94) sono principalmente:
 
 - [Test di Validazione](../../tests/Unit/UserModulePhpstanFixesTest.php)
 - [Configurazione Password](../../config/password.php)
+<<<<<<< HEAD
 - [Documentazione Root](../../../docs/user-module-phpstan-fixes.md)
+=======
+- [Documentazione Root](../../../../docs/user-module-phpstan-fixes.md)
+>>>>>>> dev
 
 ## Note per il Futuro
 

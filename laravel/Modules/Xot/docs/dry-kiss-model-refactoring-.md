@@ -8,18 +8,36 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 
 - **Violazioni critiche trovate**: 5
 - **Linee di codice eliminate**: ~200+
+<<<<<<< HEAD
 - **Moduli interessati**: 4 (Geo, Cms, Quaeris, User)
+=======
+- **Moduli interessati**: 4 (Geo, Cms, healthcare_app, User)
+- **Moduli interessati**: 4 (Geo, Cms, ModuloEsempio, User)
+>>>>>>> dev
 - **Impatto**: Riduzione drastica della duplicazione, miglioramento della manutenibilità
 
 ---
 
 ## Problemi Identificati e Risolti
 
+<<<<<<< HEAD
 ### 1. ❌ Quaeris\Models\BaseModel estendeva Model invece di XotBaseModel
 
 **Prima** (VIOLAZIONE CRITICA):
 ```php
 namespace Modules\Quaeris\Models;
+=======
+### 1. ❌ healthcare_app\Models\BaseModel estendeva Model invece di XotBaseModel
+
+**Prima** (VIOLAZIONE CRITICA):
+```php
+namespace Modules\healthcare_app\Models;
+### 1. ❌ ModuloEsempio\Models\BaseModel estendeva Model invece di XotBaseModel
+
+**Prima** (VIOLAZIONE CRITICA):
+```php
+namespace Modules\ModuloEsempio\Models;
+>>>>>>> dev
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -33,7 +51,11 @@ abstract class BaseModel extends Model
 
     public $incrementing = true;
     public $timestamps = true;
+<<<<<<< HEAD
     protected $connection = 'quaeris';
+=======
+    protected $connection = 'healthcare_app';
+>>>>>>> dev
     protected $casts = ['published_at' => 'datetime', ...];
     protected $primaryKey = 'id';
     protected $hidden = [];
@@ -47,7 +69,12 @@ abstract class BaseModel extends Model
 
 **Dopo** (✅ DRY & KISS):
 ```php
+<<<<<<< HEAD
 namespace Modules\Quaeris\Models;
+=======
+namespace Modules\healthcare_app\Models;
+namespace Modules\ModuloEsempio\Models;
+>>>>>>> dev
 
 use Modules\Xot\Models\XotBaseModel;
 
@@ -57,7 +84,11 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use HasExtraTrait;
     use InteractsWithMedia;
 
+<<<<<<< HEAD
     protected $connection = 'quaeris';
+=======
+    protected $connection = 'healthcare_app';
+>>>>>>> dev
     protected $with = ['extra'];
 }
 ```
@@ -342,7 +373,12 @@ BaseModel → BaseModelLang → Post
 
 | Modulo | Classe | Righe Prima | Righe Dopo | Riduzione |
 |--------|--------|-------------|------------|-----------|
+<<<<<<< HEAD
 | Quaeris | BaseModel | 66 | 20 | -70% |
+=======
+| healthcare_app | BaseModel | 66 | 20 | -70% |
+| ModuloEsempio | BaseModel | 66 | 20 | -70% |
+>>>>>>> dev
 | Geo | BasePivot | 59 | 8 | -86% |
 | Geo | BaseMorphPivot | 67 | 8 | -88% |
 | Cms | BasePivot | 60 | 8 | -87% |
@@ -483,6 +519,7 @@ grep -h "class Base.*Model extends" Modules/*/app/Models/Base*.php | sort | uniq
 ## Link Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Model Inheritance Rules](../../user/docs/model-inheritance-rules.md)
 - [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
 - [Geo Model Inheritance Pattern](../../geo/docs/model-inheritance-pattern.md)
@@ -491,6 +528,11 @@ grep -h "class Base.*Model extends" Modules/*/app/Models/Base*.php | sort | uniq
 - [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
 - [Geo Model Inheritance Pattern](../../Geo/docs/model-inheritance-pattern.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [User Module Model Inheritance Rules](../../user/docs/model-inheritance-rules.md)
+- [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
+- [Geo Model Inheritance Pattern](../../geo/docs/model-inheritance-pattern.md)
+>>>>>>> dev
 
 ---
 

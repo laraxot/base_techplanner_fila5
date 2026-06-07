@@ -18,10 +18,14 @@
             class="w-full {{ $ratioClass }} object-cover object-center"
             src="{{ $src }}"
 <<<<<<< HEAD
+<<<<<<< HEAD
             alt="{{ $alt ?: '' }}"
 =======
             @if ($alt) alt="{{ $alt }}" @endif
 >>>>>>> 4b6b99016 (first commit)
+=======
+            alt="{{ $alt ?: '' }}"
+>>>>>>> dev
         >
         <figcaption>{{ $caption }}</figcaption>
     </figure>
@@ -30,9 +34,13 @@
         class="w-full {{ $ratioClass }}"
         src="{{ $src }}"
 <<<<<<< HEAD
+<<<<<<< HEAD
         alt="{{ $alt ?: '' }}"
 =======
         @if ($alt) alt="{{ $alt }}" @endif
 >>>>>>> 4b6b99016 (first commit)
+=======
+        alt="{{ $alt ?: '' }}"
+>>>>>>> dev
     >
 @endif

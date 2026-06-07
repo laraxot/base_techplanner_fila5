@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Completa Modelli, Factory e Seeder - Sistema <nome progetto>
 
 ## Executive Summary
@@ -299,3 +300,12 @@ Tutti i modelli BaseModel, BasePivot, BaseUser, etc. sono classi astratte utiliz
 
 *Autore: Sistema di analisi automatizzata*
 *Scope: Completo sistema <nome progetto> (14 moduli, ~150 modelli)*
+=======
+---
+module: theme
+topic: complete-models-factory-seeder
+canonical: ../../../Themes/docs/shared-components/analisi-completa-modelli-factory-seeder.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/analisi-completa-modelli-factory-seeder.md
+>>>>>>> dev

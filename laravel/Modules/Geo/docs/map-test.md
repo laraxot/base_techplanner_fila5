@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://github.com/bresam/ivory-google-map/blob/master/tests/MapTest.php
 
 https://github.com/egeloen/ivory-google-map
@@ -12,3 +13,12 @@ https://github.com/sfneal/google-places
 =======
 https://github.com/sfneal/google-places
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: map-test
+canonical: ../../../Themes/docs/shared-components/map_test.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/map_test.txt
+>>>>>>> dev

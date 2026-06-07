@@ -26,6 +26,7 @@ abstract class BaseUuidModel extends XotBaseUuidModel
      * Indicates whether attributes are snake cased on arrays.
      *
      * @see https://laravel-news.com/6-eloquent-secrets
+<<<<<<< HEAD
      *
      * @var bool
      */
@@ -47,6 +48,21 @@ abstract class BaseUuidModel extends XotBaseUuidModel
     protected $perPage = 30;
 
     /** @var string */
+=======
+     */
+    public static $snakeAttributes = true;
+
+    public $incrementing = false;
+
+    public $timestamps = true;
+
+    protected $keyType = 'string';
+
+    protected $primaryKey = 'id';
+
+    protected $perPage = 30;
+
+>>>>>>> dev
     protected $connection = 'user';
 
     /** @var list<string> */

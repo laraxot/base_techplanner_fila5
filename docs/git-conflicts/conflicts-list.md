@@ -77,6 +77,9 @@
 - Progresso: 20/26 file risolti (77%)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: $(date)* 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

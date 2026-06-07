@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\Tenant\Tests\Unit;
+
+>>>>>>> dev
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Modules\Tenant\Models\TestSushiModel;
@@ -25,16 +30,24 @@ beforeEach(function (): void {
     $this->testJsonPath = $this->testDirectory.'/test_sushi.json';
 
     // Crea directory di test
+<<<<<<< HEAD
     /** @phpstan-ignore-next-line property.notFound */
     if (! File::exists($this->testDirectory)) {
         /** @phpstan-ignore-next-line property.notFound */
+=======
+    if (! File::exists($this->testDirectory)) {
+>>>>>>> dev
         File::makeDirectory($this->testDirectory, 0o755, true, true);
     }
 
     // Mock TenantService per i test
+<<<<<<< HEAD
     /** @phpstan-ignore-next-line property.notFound, method.nonObject */
     $this->mock(TenantService::class, function ($mock): void {
         /** @phpstan-ignore-next-line property.notFound, method.nonObject */
+=======
+    $this->mock(TenantService::class, function ($mock): void {
+>>>>>>> dev
         $mock->shouldReceive('filePath')->with('database/content/test_sushi.json')->andReturn($this->testJsonPath);
     });
 
@@ -63,6 +76,7 @@ beforeEach(function (): void {
 
 afterEach(function (): void {
     // Cleanup file di test
+<<<<<<< HEAD
     /** @phpstan-ignore-next-line property.notFound */
     if (File::exists($this->testJsonPath)) {
         /** @phpstan-ignore-next-line property.notFound */
@@ -72,59 +86,95 @@ afterEach(function (): void {
     /** @phpstan-ignore-next-line property.notFound */
     if (File::exists($this->testDirectory)) {
         /** @phpstan-ignore-next-line property.notFound */
+=======
+    if (File::exists($this->testJsonPath)) {
+        File::delete($this->testJsonPath);
+    }
+
+    if (File::exists($this->testDirectory)) {
+>>>>>>> dev
         File::deleteDirectory($this->testDirectory);
     }
 });
 
 describe('SushiToJson Trait', function (): void {
     it('returns correct json file path', function (): void {
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         $path = $this->model->getJsonFile();
 
         /** @phpstan-ignore-next-line property.notFound */
+=======
+        $path = $this->model->getJsonFile();
+
+>>>>>>> dev
         expect($path)->toBe($this->testJsonPath)->and($path)->toEndWith('test_sushi.json');
     });
 
     it('loads existing data from json file', function (): void {
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         $testData = ($this->createTestData)();
         /** @phpstan-ignore-next-line property.notFound */
         File::put($this->testJsonPath, json_encode($testData, JSON_PRETTY_PRINT));
 
         /** @phpstan-ignore-next-line property.notFound */
+=======
+        $testData = ($this->createTestData)();
+        File::put($this->testJsonPath, json_encode($testData, JSON_PRETTY_PRINT));
+
+>>>>>>> dev
         $rows = $this->model->loadExistingData();
 
         expect($rows)
             ->toBeArray()
             ->toHaveCount(2)
+<<<<<<< HEAD
             /** @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
             ->and($rows['1']['name'])
             ->toBe('Test Item 1')
             /** @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+=======
+            ->and($rows['1']['name'])
+            ->toBe('Test Item 1')
+>>>>>>> dev
             ->and($rows['2']['name'])
             ->toBe('Test Item 2');
     });
 
     it('returns empty array when file not exists', function (): void {
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
+=======
+>>>>>>> dev
         $rows = $this->model->getSushiRows();
 
         expect($rows)->toBeArray()->toBeEmpty();
     });
 
     it('throws exception with malformed json', function (): void {
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         File::put($this->testJsonPath, 'invalid json content');
 
         /** @phpstan-ignore-next-line property.notFound */
+=======
+        File::put($this->testJsonPath, 'invalid json content');
+
+>>>>>>> dev
         expect($this->model->getSushiRows(...))->toThrow(Exception::class, 'Syntax error');
     });
 
     it('throws exception with non array data', function (): void {
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         File::put($this->testJsonPath, '"string data"');
 
         /** @phpstan-ignore-next-line property.notFound */
+=======
+        File::put($this->testJsonPath, '"string data"');
+
+>>>>>>> dev
         expect($this->model->getSushiRows(...))->toThrow(Exception::class, 'Data is not array');
     });
 
@@ -138,6 +188,7 @@ describe('SushiToJson Trait', function (): void {
             ],
         ];
 
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         File::put($this->testJsonPath, json_encode($testData, JSON_PRETTY_PRINT));
 
@@ -149,12 +200,22 @@ describe('SushiToJson Trait', function (): void {
             ->toBeString()
             ->toBe('{"nested":"value"}')
             /** @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+=======
+        File::put($this->testJsonPath, json_encode($testData, JSON_PRETTY_PRINT));
+
+        $rows = $this->model->getSushiRows();
+
+        expect($rows['1']['metadata'])
+            ->toBeString()
+            ->toBe('{"nested":"value"}')
+>>>>>>> dev
             ->and($rows['1']['tags'])
             ->toBeString()
             ->toBe('["tag1","tag2"]');
     });
 
     it('saves data successfully to json file', function (): void {
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         $testData = ($this->createTestData)();
 
@@ -166,12 +227,22 @@ describe('SushiToJson Trait', function (): void {
         expect($this->testJsonPath)->toBeFile();
 
         /** @phpstan-ignore-next-line property.notFound */
+=======
+        $testData = ($this->createTestData)();
+
+        $result = $this->model->saveToJson($testData);
+
+        expect($result)->toBeTrue();
+        expect($this->testJsonPath)->toBeFile();
+
+>>>>>>> dev
         $savedData = json_decode(File::get($this->testJsonPath), true);
         expect($savedData)->toBe($testData);
     });
 
     it('creates directory if not exists', function (): void {
         // Rimuovi directory di test
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         if (File::exists($this->testDirectory)) {
             /** @phpstan-ignore-next-line property.notFound */
@@ -188,6 +259,18 @@ describe('SushiToJson Trait', function (): void {
         /** @phpstan-ignore-next-line property.notFound */
         expect($this->testDirectory)->toBeDirectory();
         /** @phpstan-ignore-next-line property.notFound */
+=======
+        if (File::exists($this->testDirectory)) {
+            File::deleteDirectory($this->testDirectory);
+        }
+
+        $testData = ($this->createTestData)();
+
+        $result = $this->model->saveToJson($testData);
+
+        expect($result)->toBeTrue();
+        expect($this->testDirectory)->toBeDirectory();
+>>>>>>> dev
         expect($this->testJsonPath)->toBeFile();
     });
 
@@ -195,10 +278,15 @@ describe('SushiToJson Trait', function (): void {
         // Mock File facade per simulare errore di scrittura
         File::shouldReceive('put')->once()->andReturn(false);
 
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         $testData = ($this->createTestData)();
 
         /** @phpstan-ignore-next-line property.notFound */
+=======
+        $testData = ($this->createTestData)();
+
+>>>>>>> dev
         $result = $this->model->saveToJson($testData);
 
         expect($result)->toBeFalse();
@@ -214,7 +302,10 @@ describe('SushiToJson Trait', function (): void {
         ];
 
         $model = new TestSushiModel;
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line method.nonObject */
+=======
+>>>>>>> dev
         $model->fill($testData);
 
         // Test che il modello può essere creato con i dati
@@ -228,30 +319,45 @@ describe('SushiToJson Trait', function (): void {
         // Mock Auth per simulare utente autenticato
         Auth::shouldReceive('id')->andReturn(1);
 
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         $testData = ($this->createTestData)();
         /** @phpstan-ignore-next-line property.notFound */
+=======
+        $testData = ($this->createTestData)();
+>>>>>>> dev
         File::put($this->testJsonPath, json_encode($testData, JSON_PRETTY_PRINT));
 
         $model = new TestSushiModel;
         $model->id = 1;
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line method.nonObject */
+=======
+>>>>>>> dev
         $model->fill(['name' => 'Updated Name']);
 
         // Test che il modello può essere aggiornato
         expect($model->name)->toBe('Updated Name')->and($model->id)->toBe(1);
 
         // Test che i dati esistenti possono essere caricati
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line method.nonObject */
         $existingData = $model->loadExistingData();
         /** @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+=======
+        $existingData = $model->loadExistingData();
+>>>>>>> dev
         expect($existingData)->toHaveKey('1')->and($existingData['1']['name'])->toBe('Test Item 1');
     });
 
     it('handles deleting event correctly', function (): void {
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         $testData = ($this->createTestData)();
         /** @phpstan-ignore-next-line property.notFound */
+=======
+        $testData = ($this->createTestData)();
+>>>>>>> dev
         File::put($this->testJsonPath, json_encode($testData, JSON_PRETTY_PRINT));
 
         $model = new TestSushiModel;
@@ -261,12 +367,18 @@ describe('SushiToJson Trait', function (): void {
         expect($model->id)->toBe(1);
 
         // Test che i dati esistenti possono essere caricati
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line method.nonObject */
+=======
+>>>>>>> dev
         $existingData = $model->loadExistingData();
         expect($existingData)->toHaveKey('1')->toHaveKey('2');
 
         // Test che il metodo saveToJson funziona
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line method.nonObject */
+=======
+>>>>>>> dev
         $result = $model->saveToJson($existingData);
         expect($result)->toBeTrue();
     });
@@ -277,9 +389,13 @@ describe('SushiToJson Trait', function (): void {
         expect($tenantService)->toBeInstanceOf(TenantService::class);
 
         // Verifica che il mock funzioni correttamente
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         $path = $this->model->getJsonFile();
         /** @phpstan-ignore-next-line property.notFound */
+=======
+        $path = $this->model->getJsonFile();
+>>>>>>> dev
         expect($path)->toBe($this->testJsonPath);
     });
 
@@ -287,7 +403,10 @@ describe('SushiToJson Trait', function (): void {
         // Crea dataset grande (1000 record)
         $largeData = [];
         for ($i = 1; $i <= 1000; $i++) {
+<<<<<<< HEAD
             /** @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+=======
+>>>>>>> dev
             $largeData[$i] = [
                 'id' => $i,
                 'name' => "Item {$i}",
@@ -300,7 +419,10 @@ describe('SushiToJson Trait', function (): void {
 
         $startTime = microtime(true);
 
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
+=======
+>>>>>>> dev
         $result = $this->model->saveToJson($largeData);
 
         $endTime = microtime(true);
@@ -311,7 +433,10 @@ describe('SushiToJson Trait', function (): void {
 
         // Verifica caricamento
         $startTime = microtime(true);
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
+=======
+>>>>>>> dev
         $rows = $this->model->getSushiRows();
         $endTime = microtime(true);
         $loadTime = $endTime - $startTime;
@@ -322,24 +447,33 @@ describe('SushiToJson Trait', function (): void {
 
     it('logs errors appropriately', function (): void {
         // Mock Log facade per verificare logging
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         $this->mock('log', function ($mock): void {
             /** @phpstan-ignore-next-line method.nonObject */
+=======
+        $this->mock('log', function ($mock): void {
+>>>>>>> dev
             $mock->shouldReceive('error')->once()->with('Failed to save data to JSON file', Mockery::any());
         });
 
         // Simula errore di salvataggio
         File::shouldReceive('put')->once()->andReturn(false);
 
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         $testData = ($this->createTestData)();
         /** @phpstan-ignore-next-line property.notFound */
+=======
+        $testData = ($this->createTestData)();
+>>>>>>> dev
         $result = $this->model->saveToJson($testData);
 
         expect($result)->toBeFalse();
     });
 
     it('maintains data integrity during operations', function (): void {
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         $originalData = ($this->createTestData)();
         /** @phpstan-ignore-next-line property.notFound */
@@ -347,22 +481,37 @@ describe('SushiToJson Trait', function (): void {
 
         // Verifica che i dati originali siano preservati
         /** @phpstan-ignore-next-line property.notFound */
+=======
+        $originalData = ($this->createTestData)();
+        File::put($this->testJsonPath, json_encode($originalData, JSON_PRETTY_PRINT));
+
+        // Verifica che i dati originali siano preservati
+>>>>>>> dev
         $loadedData = $this->model->loadExistingData();
         expect($loadedData)->toBe($originalData);
 
         // Aggiorna un record
         $updatedData = $originalData;
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
         $updatedData['1']['name'] = 'Updated Name';
 
         /** @phpstan-ignore-next-line property.notFound */
+=======
+        $updatedData['1']['name'] = 'Updated Name';
+
+>>>>>>> dev
         $result = $this->model->saveToJson($updatedData);
         expect($result)->toBeTrue();
 
         // Verifica che solo il record specifico sia stato aggiornato
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         $finalData = $this->model->loadExistingData();
         /** @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+=======
+        $finalData = $this->model->loadExistingData();
+>>>>>>> dev
         expect($finalData['1']['name'])->toBe('Updated Name')->and($finalData['2']['name'])->toBe('Test Item 2'); // Non modificato
     });
 
@@ -377,6 +526,7 @@ describe('SushiToJson Trait', function (): void {
             ],
         ];
 
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         $result = $this->model->saveToJson($testData);
         expect($result)->toBeTrue();
@@ -393,6 +543,18 @@ describe('SushiToJson Trait', function (): void {
             ->and($loadedData['1']['metadata'])
             ->toBe('[]') // Convertito in stringa JSON
             /** @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+=======
+        $result = $this->model->saveToJson($testData);
+        expect($result)->toBeTrue();
+
+        $loadedData = $this->model->getSushiRows();
+        expect($loadedData['1']['name'])
+            ->toBe('')
+            ->and($loadedData['1']['description'])
+            ->toBeNull()
+            ->and($loadedData['1']['metadata'])
+            ->toBe('[]') // Convertito in stringa JSON
+>>>>>>> dev
             ->and($loadedData['1']['status'])
             ->toBeFalse();
     });
@@ -407,6 +569,7 @@ describe('SushiToJson Trait', function (): void {
             ],
         ];
 
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line property.notFound */
         $result = $this->model->saveToJson($testData);
         expect($result)->toBeTrue();
@@ -420,6 +583,16 @@ describe('SushiToJson Trait', function (): void {
             ->and($loadedData['1']['description'])
             ->toBe('Test con caratteri speciali: é, è, ñ, 中文, 🎉')
             /** @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+=======
+        $result = $this->model->saveToJson($testData);
+        expect($result)->toBeTrue();
+
+        $loadedData = $this->model->getSushiRows();
+        expect($loadedData['1']['name'])
+            ->toBe('Café & Résumé 🚀')
+            ->and($loadedData['1']['description'])
+            ->toBe('Test con caratteri speciali: é, è, ñ, 中文, 🎉')
+>>>>>>> dev
             ->and($loadedData['1']['tags'])
             ->toBe('["tag-é","tag-è","tag-ñ"]');
     });

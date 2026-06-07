@@ -9,6 +9,9 @@ return [
                 'label' => 'authenticatable.name',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -80,6 +83,7 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
         ],
         'login_at' => [
@@ -111,4 +115,6 @@ return [
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

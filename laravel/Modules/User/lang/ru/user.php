@@ -37,9 +37,13 @@ return [
             'description' => 'имя',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'email' => [
             'label' => 'Email',
@@ -47,6 +51,9 @@ return [
             'description' => 'email',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
         'created_at' => [
@@ -78,6 +85,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'created_at' => [
@@ -93,6 +101,8 @@ return [
         'id' => [
             'label' => 'ID',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'password' => [
             'label' => 'Пароль',
@@ -100,14 +110,21 @@ return [
             'description' => 'пароль',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'password_confirmation' => [
             'label' => 'Подтверждение пароля',
             'placeholder' => 'Подтвердите пароль',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -117,16 +134,22 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'email_verified_at' => [
             'label' => 'Email подтвержден',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'current_password' => [
             'label' => 'Текущий пароль',
             'placeholder' => 'Введите текущий пароль',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -142,6 +165,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'roles' => [
@@ -150,6 +174,8 @@ return [
         'permissions' => [
             'label' => 'Разрешения',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'status' => [
             'label' => 'Статус',
@@ -159,6 +185,9 @@ return [
                 'blocked' => 'Заблокирован',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -288,6 +317,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'last_login' => [
@@ -353,6 +383,8 @@ return [
         'changePassword' => [
             'label' => 'changePassword',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'filters' => [
@@ -467,8 +499,13 @@ return [
         'label' => 'Пользователь',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

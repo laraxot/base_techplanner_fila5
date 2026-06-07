@@ -1,15 +1,21 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @volt('profile.index')
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 <?php
 
 use function Livewire\Volt\{state, mount};
 use Illuminate\Support\Facades\Auth;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Hash;
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 state([
     'name' => '',
@@ -73,12 +79,17 @@ $updatePassword = function() {
                         <div>
                             <x-input-label for="name" :value="__('Nome')" />
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <x-text-input wire:model="name" id="name" class="block mt-1 w-full" type="text" name="name" required />
                             <x-input-error :messages="$errors->get('name')" class="mt-2" />
 =======
                             <x-text-input wire:model="first_name" id="first_name" class="block mt-1 w-full" type="text" name="first_name" required />
                             <x-input-error :messages="$errors->get('first_name')" class="mt-2" />
 >>>>>>> 4b6b99016 (first commit)
+=======
+                            <x-text-input wire:model="first_name" id="first_name" class="block mt-1 w-full" type="text" name="first_name" required />
+                            <x-input-error :messages="$errors->get('first_name')" class="mt-2" />
+>>>>>>> dev
                         </div>
 
                         <div>
@@ -133,6 +144,9 @@ $updatePassword = function() {
     </x-filament::page>
 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 @endvolt
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

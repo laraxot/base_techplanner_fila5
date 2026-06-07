@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Flusso Frontoffice <main module>
 
 ## Indice
@@ -140,3 +141,12 @@ Questo documento descrive il flusso completo del frontoffice di <main module>, d
 - [Struttura Route e Viste](./struttura-route-e-viste.md)
 - [Layout e Componenti](./struttura-layout-componenti-blade-<nome progetto>.md)
 - [Best Practices Filament](./best-practices/filament.md) 
+=======
+---
+module: theme
+topic: frontoffice_flow
+canonical: ../../../Themes/docs/shared-components/frontoffice-flow.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/frontoffice-flow.md
+>>>>>>> dev

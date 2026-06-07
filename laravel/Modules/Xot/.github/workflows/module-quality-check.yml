@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 name: Module Quality Check
 
 on:
@@ -6,6 +9,7 @@ on:
     paths:
       - 'Modules/Xot/**'
   pull_request:
+<<<<<<< HEAD
 =======
 name: Xot Module - Quality Check
 
@@ -17,11 +21,16 @@ on:
   pull_request:
     branches: [ main, develop ]
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     paths:
       - 'Modules/Xot/**'
 
 jobs:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
   test:
     runs-on: ubuntu-latest
     strategy:
@@ -71,6 +80,7 @@ jobs:
             grep -r "extends.*Filament" laravel/Modules/Xot --include="*.php" | grep -v "XotBase"
             exit 1
           fi
+<<<<<<< HEAD
 =======
   quality-check:
     runs-on: ubuntu-latest
@@ -139,3 +149,5 @@ jobs:
         echo ""
         echo "🚀 Xot Module: QUALITY CHECK PASSED!"
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

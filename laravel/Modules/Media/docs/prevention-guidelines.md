@@ -180,10 +180,14 @@ public function test_no_direct_module_imports(): void
 {
     $file = file_get_contents(__DIR__ . '/../../app/Filament/Clusters/Test/Pages/S3Test.php');
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // Verifica che non ci siano import diretti tra moduli
     $this->assertStringNotContainsString('use Modules\\Notify', $file);
     $this->assertStringNotContainsString('use Modules\\User', $file);
@@ -197,10 +201,14 @@ public function test_phpstan_compliance(): void
 {
     $output = shell_exec('./vendor/bin/phpstan analyse Modules/Media --level=9 --no-progress');
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     $this->assertStringNotContainsString('ERROR', $output);
     $this->assertStringNotContainsString('mixed', $output);
 }
@@ -213,19 +221,27 @@ public function test_translation_completeness(): void
     $languages = ['it', 'en', 'de'];
     $translationFiles = ['s3test.php'];
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     foreach ($languages as $lang) {
         foreach ($translationFiles as $file) {
             $path = "Modules/Media/lang/{$lang}/{$file}";
             $this->assertFileExists($path);
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+            
+>>>>>>> dev
             $translations = require $path;
             $this->assertIsArray($translations);
             $this->assertNotEmpty($translations);
@@ -251,6 +267,7 @@ class NewTestPage extends XotBasePage
 {
     protected static ?string $navigationIcon = 'heroicon-o-cog';
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     protected static string $view = 'media::filament.pages.new-test-page';
     
@@ -259,6 +276,11 @@ class NewTestPage extends XotBasePage
     protected static string $view = 'media::filament.pages.new-test-page';
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+    protected static string $view = 'media::filament.pages.new-test-page';
+    
+>>>>>>> dev
     /**
      * Test method with proper typing.
      *
@@ -270,19 +292,27 @@ class NewTestPage extends XotBasePage
             // Test logic here
             $result = $this->executeTest();
 <<<<<<< HEAD
-            
-=======
-
->>>>>>> 4b6b99016 (first commit)
-            Log::info('Test completed successfully', [
-                'test' => static::class,
-                'result' => $result
-            ]);
 <<<<<<< HEAD
             
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+            
+>>>>>>> dev
+            Log::info('Test completed successfully', [
+                'test' => static::class,
+                'result' => $result
+            ]);
+<<<<<<< HEAD
+<<<<<<< HEAD
+            
+=======
+
+>>>>>>> 4b6b99016 (first commit)
+=======
+            
+>>>>>>> dev
             return $result;
         } catch (\Exception $e) {
             Log::error('Test failed', [
@@ -290,10 +320,14 @@ class NewTestPage extends XotBasePage
                 'error' => $e->getMessage()
             ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+            
+>>>>>>> dev
             return ['error' => $e->getMessage()];
         }
     }
@@ -363,21 +397,30 @@ jobs:
   media-checks:
     runs-on: ubuntu-latest
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     steps:
     - uses: actions/checkout@v3
     
+<<<<<<< HEAD
 =======
 
     steps:
     - uses: actions/checkout@v3
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
         php-version: '8.2'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         
     - name: Install dependencies
       run: composer install
@@ -388,6 +431,7 @@ jobs:
     - name: Translation check
       run: php artisan translation:check --module=Media
         
+<<<<<<< HEAD
 =======
 
     - name: Install dependencies
@@ -400,6 +444,8 @@ jobs:
       run: php artisan translation:check --module=Media
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     - name: Architecture check
       run: |
         if grep -r "use Modules\\" Modules/Media/app/ --include="*.php" | grep -v "use Modules\\Media"; then
@@ -428,6 +474,7 @@ jobs:
 - [Correzioni S3Test.php](s3test_corrections.md)
 - [PHPStan Fixes](phpstan_level10_fixes.md)
 - [Translation Standards](translations.md)
+<<<<<<< HEAD
 - [Architecture Guidelines](../docs/architecture.md)
 
 ---
@@ -825,4 +872,13 @@ jobs:
 **📦 Versione**: 3.1.0
 **🎯 Obiettivo**: Prevenzione completa problemi futuri
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Architecture Guidelines](../../docs/architecture.md)
+
+---
+
+**🔄 Ultimo aggiornamento**: 27 Gennaio 2025  
+**📦 Versione**: 3.1.0  
+**🎯 Obiettivo**: Prevenzione completa problemi futuri  
+>>>>>>> dev
 **✅ Status**: Linee guida implementate e testate

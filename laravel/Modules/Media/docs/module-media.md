@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modulo Media
 
 > **Collegamento globale:** Per le strategie generali e le best practices sulla risoluzione dei conflitti git, vedi [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md).
@@ -124,3 +125,12 @@ Le modifiche vengono tracciate nel repository GitHub.
 ---
 
 > **Collegamento globale:** Questa documentazione locale dettaglia i casi concreti e le decisioni architetturali adottate nel modulo Media. Per le strategie generali e le best practices, consulta sempre anche la documentazione globale in [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md).
+=======
+---
+module: theme
+topic: module-media
+canonical: ../../../Themes/docs/shared-components/module-media-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/module-media-1.md
+>>>>>>> dev

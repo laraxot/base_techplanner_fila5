@@ -1,10 +1,14 @@
 # PHPStan Errors - Geo Module
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Date**: [DATE]
 =======
 **Date**: 2025-12-16
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Date**: [DATE]
+>>>>>>> dev
 **PHPStan Level**: 10
 **Total Errors in Module**: ~50+ (majority in AddressItemEnum.php)
 
@@ -188,7 +192,11 @@ public static function getColumnDefinitions(): array
 **Status**: 🔴 CRITICAL - Needs immediate attention
 **Module Owner**: Geo Module Team
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 **Last Updated**: 2025-12-16
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

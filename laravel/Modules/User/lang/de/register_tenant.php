@@ -33,11 +33,17 @@ return [
                 'max' => 'Der Name darf 100 Zeichen nicht überschreiten',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'phone' => [
             'label' => 'Numero di Telefono Studio',
@@ -49,11 +55,17 @@ return [
                 'min' => 'Die Nummer muss mindestens 10 Ziffern enthalten',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'email' => [
             'label' => 'Email Ufficiale Studio',
@@ -66,11 +78,17 @@ return [
                 'max' => 'Die E-Mail-Adresse darf 255 Zeichen nicht überschreiten',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'address' => [
             'label' => 'Vollständige Praxisadresse',
@@ -96,11 +114,17 @@ return [
                 'max' => 'Der Name darf 100 Zeichen nicht überschreiten',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'director_registration' => [
             'label' => 'Numero Iscrizione Albo Medico',
@@ -112,11 +136,17 @@ return [
                 'min' => 'Die Registrierungsnummer muss mindestens 3 Ziffern enthalten',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'vat_number' => [
             'label' => 'Partita IVA Studio',
@@ -128,11 +158,17 @@ return [
                 'unique' => 'Diese Umsatzsteuer-Identifikationsnummer ist bereits für eine andere Praxis registriert',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'specialization' => [
             'label' => 'Specializzazioni Mediche',
@@ -155,11 +191,17 @@ return [
                 'altro' => 'Altra Specializzazione',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'website' => [
             'label' => 'Sito Web Studio',
@@ -169,11 +211,17 @@ return [
                 'url' => 'Inserisci un URL valido che inizi con http:// o https://',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'staff_count' => [
             'label' => 'Numero Operatori',
@@ -186,11 +234,17 @@ return [
                 'max' => 'Die maximale Anzahl beträgt 100 Mitarbeiter',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'privacy_acceptance' => [
             'label' => 'Consenso Trattamento Dati',
@@ -200,11 +254,17 @@ return [
                 'accepted' => 'Sie müssen die Datenschutzerklärung akzeptieren, um fortzufahren',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'terms_acceptance' => [
             'label' => 'Accettazione Termini di Servizio',
@@ -214,11 +274,17 @@ return [
                 'accepted' => 'Sie müssen die Nutzungsbedingungen akzeptieren, um fortzufahren',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -307,8 +373,13 @@ return [
         'data_protection' => 'Tutti i dati sono protetti secondo le normative europee GDPR',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

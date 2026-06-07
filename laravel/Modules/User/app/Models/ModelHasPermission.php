@@ -7,9 +7,12 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Database\Factories\ModelHasPermissionFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -21,9 +24,12 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string $model_id
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @method static ModelHasPermissionFactory  factory($count = null, $state = [])
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  * @method static Builder|ModelHasPermission newModelQuery()
  * @method static Builder|ModelHasPermission newQuery()
  * @method static Builder|ModelHasPermission query()
@@ -52,6 +58,11 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $deleter
  *
+<<<<<<< HEAD
+=======
+ * @method static \Modules\User\Database\Factories\ModelHasPermissionFactory factory($count = null, $state = [])
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class ModelHasPermission extends BaseMorphPivot

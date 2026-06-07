@@ -7,10 +7,13 @@ namespace Modules\TechPlanner\Tests\Unit\Models;
 use Illuminate\Database\Eloquent\Model;
 use Modules\TechPlanner\Models\BaseModel;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Tests\TestCase;
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 beforeEach(function () {
     $this->baseModel = new class() extends BaseModel

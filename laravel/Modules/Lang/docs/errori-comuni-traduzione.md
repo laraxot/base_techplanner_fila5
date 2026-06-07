@@ -136,6 +136,7 @@ Tutti i campi devono seguire la struttura espansa:
 - [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
 - [Traduzioni Navigation Audit](traduzioni_navigation_2025.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Traduzioni](../../xot/docs/translation_rules.md)
 
 =======
@@ -143,6 +144,11 @@ Tutti i campi devono seguire la struttura espansa:
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
+
+*Ultimo aggiornamento: 6 Gennaio 2025*
+>>>>>>> dev
 # Errori comuni nei file di traduzione
 
 ## Errori di sintassi critici identificati
@@ -281,6 +287,7 @@ Tutti i campi devono seguire la struttura espansa:
 - [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
 - [Traduzioni Navigation Audit](traduzioni_navigation_2025.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Traduzioni](../../xot/docs/translation_rules.md)
 
 =======
@@ -288,3 +295,8 @@ Tutti i campi devono seguire la struttura espansa:
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
+
+*Ultimo aggiornamento: 6 Gennaio 2025*
+>>>>>>> dev

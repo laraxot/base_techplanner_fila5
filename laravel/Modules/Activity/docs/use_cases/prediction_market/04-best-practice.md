@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Best Practice Prediction Market
+=======
+# Best Practice <nome progetto>ion Market
+>>>>>>> dev
 
 ## Sicurezza
 - Audit trail completo tramite eventi

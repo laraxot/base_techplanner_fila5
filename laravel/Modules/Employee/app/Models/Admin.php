@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Modules\Employee\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Models\Tenant;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -31,9 +34,13 @@ use Modules\User\Models\Role;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\Team;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\Tenant;
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\User\Models\Tenant;
+>>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
 use Parental\HasParent;
@@ -70,9 +77,13 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null $updated_by
  * @property-read \Modules\User\Models\User|null $user
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @method static Builder|Admin newModelQuery()
  * @method static Builder|Admin newQuery()
  * @method static Builder|Admin query()
@@ -87,9 +98,13 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder|Admin whereUpdatedBy($value)
  * @method static Builder|Admin whereUserId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @property string|null $name
  * @property string|null $first_name
  * @property string|null $last_name
@@ -148,9 +163,13 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property-read Collection<int, Treatment> $treatments
  * @property-read int|null $treatments_count
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @method static Builder<static>|Admin admins()
  * @method static Builder<static>|Admin doctors()
  * @method static UserFactory factory($count = null, $state = [])
@@ -187,9 +206,13 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|Admin withoutPermission($permissions)
  * @method static Builder<static>|Admin withoutRole($roles, $guard = null)
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @property-read Collection<int, Device> $devices
  * @property-read int|null $devices_count
  * @property string|null $dental_problems
@@ -202,9 +225,13 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property-read Collection<int, Membership> $teamUsers
  * @property-read int|null $team_users_count
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @method static Builder<static>|Admin whereCertificates($value)
  * @method static Builder<static>|Admin whereDentalProblems($value)
  * @method static Builder<static>|Admin whereHealthCard($value)
@@ -213,9 +240,13 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|Admin whereLastDentalVisit($value)
  * @method static Builder<static>|Admin wherePregnancyCertificate($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @property string|null $country_code
  * @property string|null $children_count
  * @property string|null $family_members
@@ -227,9 +258,13 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property array<array-key, mixed>|null $certification
  * @property string|null $last_dental_visit_period
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @method static Builder<static>|Admin whereCertification($value)
  * @method static Builder<static>|Admin whereChildrenCount($value)
  * @method static Builder<static>|Admin whereCountryCode($value)
@@ -241,6 +276,9 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|Admin whereNationality($value)
  * @method static Builder<static>|Admin whereYearsInItaly($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
  *
  * @property string|null $age_range
  *
@@ -251,6 +289,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property-read Collection<int, Tenant> $tenants
  * @property-read int|null $tenants_count
  *
+<<<<<<< HEAD
 =======
  * @property string|null $age_range
  * @method static Builder<static>|Admin whereAgeRange($value)
@@ -258,6 +297,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property-read Collection<int, Tenant> $tenants
  * @property-read int|null $tenants_count
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class Admin extends User

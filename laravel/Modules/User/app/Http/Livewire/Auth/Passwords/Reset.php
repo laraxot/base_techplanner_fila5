@@ -70,7 +70,10 @@ class Reset extends Component
             },
         );
 
+<<<<<<< HEAD
         /* @phpstan-ignore argument.type */
+=======
+>>>>>>> dev
         Assert::string($response_lang = trans((string) $response));
 
         if (Password::PASSWORD_RESET === $response) {

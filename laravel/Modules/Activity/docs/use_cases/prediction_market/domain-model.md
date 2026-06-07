@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Modello di Dominio - Prediction Market
+=======
+# Modello di Dominio - <nome progetto>ion Market
+>>>>>>> dev
 
 ## Aggregate
 - **Market**: rappresenta un mercato predittivo

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://blog.jpat.dev/build-custom-components-inside-a-filament-v3-panel-with-livewire-and-tailwindcss
 
 
@@ -10,3 +11,12 @@ add
 ->viteTheme('resources/css/filament/admin/theme.css')
 
 
+=======
+---
+module: theme
+topic: custom_theme
+canonical: ../../../Themes/docs/shared-components/custom-theme.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/custom-theme.txt
+>>>>>>> dev

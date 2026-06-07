@@ -1,6 +1,10 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "laraxot/module_media_fila3",
+=======
+  "name": "laraxot/module_media_fila5",
+>>>>>>> dev
   "description": "Media management module for the Laraxot ecosystem: images, videos, FFmpeg, and Intervention Image.",
   "keywords": [
     "laraxot",
@@ -12,7 +16,11 @@
     "videos",
     "ffmpeg"
   ],
+<<<<<<< HEAD
   "homepage": "https://github.com/laraxot/module_media_fila3.git",
+=======
+  "homepage": "https://github.com/laraxot/module_media_fila5.git",
+>>>>>>> dev
   "license": "MIT",
   "authors": [
     {
@@ -24,7 +32,12 @@
   "require": {
     "php": "^8.2",
     "pbmedia/laravel-ffmpeg": "^8.5",
+<<<<<<< HEAD
     "intervention/image": "*"
+=======
+    "intervention/image": "^3.0",
+    "spatie/laravel-medialibrary": "^11.0"
+>>>>>>> dev
   },
   "require-dev": {},
   "repositories": [
@@ -82,6 +95,7 @@
     }
   }
 }
+<<<<<<< HEAD
 =======
     "name": "laraxot/module_media_fila3",
     "description": "media module dedicated to image and video management",
@@ -167,3 +181,5 @@
     }
 }
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -16,10 +16,14 @@ return [
         |
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
         'chunk_size' => 1000,
 =======
         'chunk_size'             => 1000,
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'chunk_size' => 1000,
+>>>>>>> dev
 
         /*
         |--------------------------------------------------------------------------
@@ -47,6 +51,9 @@ return [
         |
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'csv' => [
             'delimiter' => ',',
             'enclosure' => '"',
@@ -56,6 +63,7 @@ return [
             'excel_compatibility' => false,
             'output_encoding' => '',
             'test_auto_detect' => true,
+<<<<<<< HEAD
 =======
         'csv'                    => [
             'delimiter'              => ',',
@@ -67,6 +75,8 @@ return [
             'output_encoding'        => '',
             'test_auto_detect'       => true,
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
 
         /*
@@ -78,6 +88,9 @@ return [
         |
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'properties' => [
             'creator' => '',
             'lastModifiedBy' => '',
@@ -92,6 +105,7 @@ return [
     ],
 
     'imports' => [
+<<<<<<< HEAD
 =======
         'properties'             => [
             'creator'        => '',
@@ -108,6 +122,8 @@ return [
 
     'imports'            => [
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
         /*
         |--------------------------------------------------------------------------
@@ -121,10 +137,14 @@ return [
         |
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
         'read_only' => true,
 =======
         'read_only'    => true,
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'read_only' => true,
+>>>>>>> dev
 
         /*
         |--------------------------------------------------------------------------
@@ -149,10 +169,14 @@ return [
         |
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
         'heading_row' => [
 =======
         'heading_row'  => [
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'heading_row' => [
+>>>>>>> dev
             'formatter' => 'slug',
         ],
 
@@ -165,12 +189,16 @@ return [
         |
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'csv' => [
             'delimiter' => null,
             'enclosure' => '"',
             'escape_character' => '\\',
             'contiguous' => false,
             'input_encoding' => Csv::GUESS_ENCODING,
+<<<<<<< HEAD
 =======
         'csv'          => [
             'delimiter'        => null,
@@ -179,6 +207,8 @@ return [
             'contiguous'       => false,
             'input_encoding'   => Csv::GUESS_ENCODING,
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
 
         /*
@@ -190,6 +220,9 @@ return [
         |
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'properties' => [
             'creator' => '',
             'lastModifiedBy' => '',
@@ -200,6 +233,7 @@ return [
             'category' => '',
             'manager' => '',
             'company' => '',
+<<<<<<< HEAD
 =======
         'properties'   => [
             'creator'        => '',
@@ -212,6 +246,8 @@ return [
             'manager'        => '',
             'company'        => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
 
         /*
@@ -223,16 +259,22 @@ return [
        |
        */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'cells' => [
             'middleware' => [
                 // \Maatwebsite\Excel\Middleware\TrimCellValue::class,
                 // \Maatwebsite\Excel\Middleware\ConvertEmptyCellValuesToNull::class,
+<<<<<<< HEAD
 =======
         'cells'        => [
             'middleware' => [
                 //\Maatwebsite\Excel\Middleware\TrimCellValue::class,
                 //\Maatwebsite\Excel\Middleware\ConvertEmptyCellValuesToNull::class,
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             ],
         ],
 
@@ -249,6 +291,9 @@ return [
     */
     'extension_detector' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'xlsx' => Excel::XLSX,
         'xlsm' => Excel::XLSX,
         'xltx' => Excel::XLSX,
@@ -264,6 +309,7 @@ return [
         'html' => Excel::HTML,
         'csv' => Excel::CSV,
         'tsv' => Excel::TSV,
+<<<<<<< HEAD
 =======
         'xlsx'     => Excel::XLSX,
         'xlsm'     => Excel::XLSX,
@@ -281,6 +327,8 @@ return [
         'csv'      => Excel::CSV,
         'tsv'      => Excel::TSV,
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
         /*
         |--------------------------------------------------------------------------
@@ -292,10 +340,14 @@ return [
         |
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
         'pdf' => Excel::DOMPDF,
 =======
         'pdf'      => Excel::DOMPDF,
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'pdf' => Excel::DOMPDF,
+>>>>>>> dev
     ],
 
     /*
@@ -316,11 +368,15 @@ return [
     |
     */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'value_binder' => [
         'default' => Maatwebsite\Excel\DefaultValueBinder::class,
     ],
 
     'cache' => [
+<<<<<<< HEAD
 =======
     'value_binder'       => [
         'default' => Maatwebsite\Excel\DefaultValueBinder::class,
@@ -328,6 +384,8 @@ return [
 
     'cache'        => [
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         /*
         |--------------------------------------------------------------------------
         | Default cell caching driver
@@ -345,10 +403,14 @@ return [
         |
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
         'driver' => 'memory',
 =======
         'driver'      => 'memory',
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'driver' => 'memory',
+>>>>>>> dev
 
         /*
         |--------------------------------------------------------------------------
@@ -361,10 +423,14 @@ return [
         |
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
         'batch' => [
 =======
         'batch'       => [
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'batch' => [
+>>>>>>> dev
             'memory_limit' => 60000,
         ],
 
@@ -381,10 +447,14 @@ return [
         |
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
         'illuminate' => [
 =======
         'illuminate'  => [
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'illuminate' => [
+>>>>>>> dev
             'store' => null,
         ],
 
@@ -421,10 +491,14 @@ return [
     'transactions' => [
         'handler' => 'db',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'db' => [
 =======
         'db'      => [
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'db' => [
+>>>>>>> dev
             'connection' => null,
         ],
     ],
@@ -443,10 +517,14 @@ return [
         |
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
         'local_path' => storage_path('framework/cache/laravel-excel'),
 =======
         'local_path'          => storage_path('framework/cache/laravel-excel'),
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'local_path' => storage_path('framework/cache/laravel-excel'),
+>>>>>>> dev
 
         /*
         |--------------------------------------------------------------------------
@@ -459,10 +537,14 @@ return [
         |
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
         'local_permissions' => [
 =======
         'local_permissions'   => [
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'local_permissions' => [
+>>>>>>> dev
             // 'dir'  => 0755,
             // 'file' => 0644,
         ],
@@ -482,12 +564,17 @@ return [
         |
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
         'remote_disk' => null,
         'remote_prefix' => null,
 =======
         'remote_disk'         => null,
         'remote_prefix'       => null,
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'remote_disk' => null,
+        'remote_prefix' => null,
+>>>>>>> dev
 
         /*
         |--------------------------------------------------------------------------

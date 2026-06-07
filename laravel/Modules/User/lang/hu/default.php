@@ -127,6 +127,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'email' => [
             'label' => 'E-mail cím',
             'tooltip' => '',
@@ -219,6 +222,7 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
         'email' => 'E-mail cím',
         'login' => 'Bejelentkezés',
@@ -237,4 +241,6 @@ return [
     'or' => 'Vagy',
     'cancel' => 'Mégsem',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

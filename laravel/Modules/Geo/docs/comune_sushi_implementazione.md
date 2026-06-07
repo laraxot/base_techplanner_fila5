@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione di Comune.php con Laravel Sushi
 
 ## 1. Cos'è Sushi (github.com/calebporzio/sushi)
@@ -137,3 +138,12 @@ Responsabile: Cascade AI
 
 ## Policy aggiornata: niente trait per una sola classe
 Non creare trait come ComuneSushiTrait se usati solo in un modello. I trait vanno creati solo se riutilizzati in più classi. Se la logica è specifica di un solo modello, va implementata direttamente nella classe. Motivazione: semplicità, KISS, manutenibilità, evitare complessità inutile. Collegamento a docs/xot.md.
+=======
+---
+module: theme
+topic: comune_sushi_implementazione
+canonical: ../../../Themes/docs/shared-components/comune-sushi-implementazione.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/comune-sushi-implementazione.md
+>>>>>>> dev

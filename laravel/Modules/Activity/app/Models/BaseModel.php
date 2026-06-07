@@ -15,6 +15,7 @@ use Modules\Xot\Models\XotBaseModel;
  * - Updater trait
  * - Standard casts (published_at, timestamps, audit fields)
  *
+<<<<<<< HEAD
  * @see \Modules\Xot\Models\XotBaseModel
  */
 abstract class BaseModel extends XotBaseModel
@@ -26,6 +27,13 @@ abstract class BaseModel extends XotBaseModel
      *
      * @var string
      */
+=======
+ * @see XotBaseModel
+ */
+abstract class BaseModel extends XotBaseModel
+{
+    /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string|null */
+>>>>>>> dev
     protected $connection = 'activity';
 
     /**

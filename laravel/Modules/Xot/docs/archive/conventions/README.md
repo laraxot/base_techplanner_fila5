@@ -13,6 +13,9 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto.
 ## Collegamenti tra versioni di README.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -89,6 +92,7 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../cms/project_docs/components/readme.md)
 * [README.md](../../../../themes/two/project_docs/readme.md)
 * [README.md](../../../../themes/one/project_docs/readme.md)
+<<<<<<< HEAD
 =======
 * [README.md](bashscripts/project_docs/README.md)
 * [README.md](bashscripts/project_docs/it/README.md)
@@ -167,3 +171,5 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../../Themes/Two/project_docs/README.md)
 * [README.md](../../../../Themes/One/project_docs/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

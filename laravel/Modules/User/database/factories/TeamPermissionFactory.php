@@ -6,13 +6,21 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Modules\User\Models\TeamPermission;
+>>>>>>> dev
 
 class TeamPermissionFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      */
+<<<<<<< HEAD
     protected $model = \Modules\User\Models\TeamPermission::class;
+=======
+    protected $model = TeamPermission::class;
+>>>>>>> dev
 
     /**
      * Define the model's default state.
@@ -20,6 +28,7 @@ class TeamPermissionFactory extends Factory
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamPermission;
@@ -61,5 +70,7 @@ class TeamPermissionFactory extends Factory
     {
         return $this->state(['permission' => 'manage_members']);
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 }

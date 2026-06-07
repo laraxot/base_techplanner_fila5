@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
 
 **Data**: 27 Gennaio 2025
@@ -205,3 +206,12 @@ public function __construct(string $output)
 **🌐 Translation Standards**: IT/EN complete ✅
 **🚀 Performance**: 95/100 score
 **✨ Test Coverage**: 85% ✅
+=======
+---
+module: theme
+topic: phpstan-fixes-january
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-january-2025.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-january-2025.md
+>>>>>>> dev

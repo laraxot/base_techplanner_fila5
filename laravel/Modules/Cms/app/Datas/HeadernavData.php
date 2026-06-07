@@ -29,21 +29,30 @@ class HeadernavData extends Data implements Wireable
 
     /**
      * The view path.
+<<<<<<< HEAD
      *
      * @var string
      */
     public $view = 'cms::components.headernav';
+=======
+     */
+    public string $view = 'cms::components.headernav';
+>>>>>>> dev
 
     private static ?self $instance = null;
 
     public static function make(): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! self::$instance instanceof HeadernavData) {
 =======
         if (! (self::$instance instanceof HeadernavData)) {
 >>>>>>> 4b6b99016 (first commit)
             // if (! self::$instance) {
+=======
+        if (! self::$instance instanceof self) {
+>>>>>>> dev
             $data = TenantService::getConfig('appearance');
             $data = Arr::get($data, 'headernav', []);
             self::$instance = self::from($data);
@@ -52,6 +61,7 @@ class HeadernavData extends Data implements Wireable
         return self::$instance;
     }
 
+<<<<<<< HEAD
     public function view(): Renderable
     {
         if (! view()->exists($this->view)) {
@@ -62,6 +72,25 @@ class HeadernavData extends Data implements Wireable
         $view_params = $this->toArray();
 
         return view($this->view, $view_params);
+=======
+    public function render(): Renderable
+    {
+        $view = $this->view;
+        if (! view()->exists($view)) {
+            $message = 'The view ['.$view.'] does not exist';
+            throw new \Exception($message);
+        }
+
+        /** @var array<string, mixed> $view_params */
+        $view_params = $this->toArray();
+
+        return view($view, $view_params);
+    }
+
+    public function view(): Renderable
+    {
+        return $this->render();
+>>>>>>> dev
     }
 
     public static function rules(): array

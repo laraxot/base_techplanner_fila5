@@ -136,10 +136,14 @@ return [
 - [Documentazione API](./api.md)
 - [Template Email](./templates.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Guida Contribuzione](./contributing.md)
 =======
 - [Guida Contribuzione](./CONTRIBUTING.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Guida Contribuzione](./contributing.md)
+>>>>>>> dev
 
 ## Note
 - Testare le notifiche in ambiente di sviluppo

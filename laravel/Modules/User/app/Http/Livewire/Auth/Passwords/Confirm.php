@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Livewire\Auth\Passwords;
 
+<<<<<<< HEAD
 use Illuminate\Contracts\View\Factory;
+=======
+>>>>>>> dev
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Livewire\Component;
@@ -25,13 +28,18 @@ class Confirm extends Component
         return redirect()->intended(route('home'));
     }
 
+<<<<<<< HEAD
     public function render(): View|Factory
+=======
+    public function render(): View
+>>>>>>> dev
     {
         app(ViewCopyAction::class)
             ->execute('user::livewire.auth.passwords.confirm', 'pub_theme::livewire.auth.passwords.confirm');
         app(ViewCopyAction::class)->execute('user::layouts.auth', 'pub_theme::layouts.auth');
         app(ViewCopyAction::class)->execute('user::layouts.base', 'pub_theme::layouts.base');
 
+<<<<<<< HEAD
         /**
          * @phpstan-var view-string
          */
@@ -41,5 +49,16 @@ class Confirm extends Component
         $result = view($view)->extends('pub_theme::layouts.auth');
 
         return $result;
+=======
+        /** @var view-string */
+        $view = 'pub_theme::livewire.auth.passwords.confirm';
+
+        /** @var View $res */
+        $res = view($view);
+        // @phpstan-ignore-next-line
+        $res->extends('pub_theme::layouts.auth');
+
+        return $res;
+>>>>>>> dev
     }
 }

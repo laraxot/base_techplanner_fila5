@@ -20,10 +20,15 @@ return [
             'label' => 'ID',
             'helper_text' => 'Identificador único de la plantilla',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'mailable' => [
             'label' => 'Clase Mailable',
@@ -32,9 +37,13 @@ return [
             'helper_text' => 'Clase PHP que gestiona el envío de correos electrónicos',
             'description' => 'mailable',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'subject' => [
             'label' => 'Asunto',
@@ -43,9 +52,13 @@ return [
             'helper_text' => 'Asunto del correo electrónico',
             'description' => 'subject',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'html_template' => [
             'label' => 'Contenido HTML',
@@ -54,9 +67,13 @@ return [
             'helper_text' => 'Contenido HTML de la plantilla de correo electrónico',
             'description' => 'html_template',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'text_template' => [
             'label' => 'Contenido de Texto',
@@ -65,81 +82,124 @@ return [
             'helper_text' => 'Versión de texto de la plantilla de correo electrónico',
             'description' => 'text_template',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'version' => [
             'label' => 'Versión',
             'help' => 'Número de versión de la plantilla',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Creado el',
             'helper_text' => 'Fecha de creación de la plantilla',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'updated_at' => [
-            'label' => 'Última Modificación',
-            'helper_text' => 'Fecha de la última modificación de la plantilla',
 <<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'updated_at' => [
+            'label' => 'Última Modificación',
+            'helper_text' => 'Fecha de la última modificación de la plantilla',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'from_email' => [
             'label' => 'Email del remitente',
             'helper_text' => 'Dirección de correo electrónico del remitente',
             'placeholder' => 'noreply@ejemplo.com',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'from_name' => [
             'label' => 'Nombre del remitente',
             'helper_text' => 'Nombre mostrado del remitente',
             'placeholder' => 'Nombre de la Empresa',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'variables' => [
             'label' => 'Variables disponibles',
             'helper_text' => 'Lista de variables que se pueden utilizar en la plantilla',
             'placeholder' => 'ej: {{name}}, {{email}}',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'is_markdown' => [
             'label' => 'Usar Markdown',
             'helper_text' => 'Indica si la plantilla utiliza sintaxis Markdown',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'status' => [
             'label' => 'Estado',
             'helper_text' => 'Estado actual de la plantilla',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'description' => '',
         ],
@@ -178,6 +238,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'toggleColumns' => [
@@ -198,6 +259,8 @@ return [
         'layout' => [
             'label' => 'layout',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'slug' => [
             'label' => 'slug',
@@ -205,9 +268,13 @@ return [
             'helper_text' => 'slug',
             'placeholder' => 'slug',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'name' => [
             'description' => 'Nombre de la plantilla',
@@ -215,9 +282,13 @@ return [
             'placeholder' => 'Ej: Bienvenida, Confirmación de pedido, Restablecer contraseña',
             'label' => 'Nombre de la Plantilla',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'params' => [
             'label' => 'Parámetros',
@@ -225,9 +296,13 @@ return [
             'placeholder' => 'name, email, date, company',
             'description' => 'Parámetros disponibles para la plantilla de correo electrónico',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'filters' => [
@@ -358,8 +433,13 @@ return [
         'label' => 'plantilla de correo',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

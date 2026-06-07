@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://github.com/pterodactyl/panel/tree/develop
 
 https://github.com/serversideup/financial-freedom
@@ -49,3 +50,12 @@ https://github.com/jigar-dhulla/exchange-rate
 ### Versione Incoming
 
 ---
+=======
+---
+module: theme
+topic: links
+canonical: ../../../../Themes/docs/shared-components/links-Modules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/links-Modules.md
+>>>>>>> dev

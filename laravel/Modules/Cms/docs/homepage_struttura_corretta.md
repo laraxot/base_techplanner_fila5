@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura e Contenuto Corretto dell'Homepage di il progetto
 
 ## Introduzione
@@ -73,3 +74,12 @@ Per verificare che l'implementazione sia corretta:
 4. Non rispettare gli accordi con i partner del progetto
 
 Questo documento serve come riferimento definitivo per il contenuto dell'homepage e deve essere consultato prima di qualsiasi modifica all'interfaccia utente del portale il progetto. 
+=======
+---
+module: theme
+topic: homepage_struttura_corretta
+canonical: ../../../Themes/docs/shared-components/homepage-struttura-corretta.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/homepage-struttura-corretta.md
+>>>>>>> dev

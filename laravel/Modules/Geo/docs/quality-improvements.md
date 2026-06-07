@@ -97,10 +97,14 @@ private function extractBingCoordinates(array $data): ?array
 
 ## Date
 <<<<<<< HEAD
+<<<<<<< HEAD
 [DATE]
 =======
 2025-11-23
 >>>>>>> 4b6b99016 (first commit)
+=======
+[DATE]
+>>>>>>> dev
 
 ## Version
 1.0.0

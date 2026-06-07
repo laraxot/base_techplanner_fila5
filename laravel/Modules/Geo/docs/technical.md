@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
@@ -14,3 +15,12 @@ Il modulo è strutturato secondo il pattern Action, dove ogni operazione è inca
 =======
 #### Gerarchia delle Actions
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: technical
+canonical: ../../../Themes/docs/shared-components/TECHNICAL.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/TECHNICAL.md
+>>>>>>> dev

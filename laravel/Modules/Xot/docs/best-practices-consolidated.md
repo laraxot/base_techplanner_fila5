@@ -898,8 +898,11 @@ php artisan view:clear
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-08-04*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 *Modulo: Xot*
 *Categoria: Best Practices*

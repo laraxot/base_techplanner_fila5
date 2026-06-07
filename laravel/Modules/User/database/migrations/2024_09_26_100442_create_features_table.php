@@ -16,6 +16,7 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->tableExists()) {
             $this->tableCreate(static function (Blueprint $table): void {
                 $table->id();
@@ -29,11 +30,14 @@ return new class extends XotBaseMigration {
         }
 =======
         // -- CREATE --
+=======
+>>>>>>> dev
         $this->tableCreate(static function (Blueprint $table): void {
             $table->id();
             $table->string('name');
             $table->string('scope');
             $table->text('value');
+<<<<<<< HEAD
 
             $table->unique(['name', 'scope']);
         });
@@ -45,5 +49,11 @@ return new class extends XotBaseMigration {
             );
         });
 >>>>>>> 4b6b99016 (first commit)
+=======
+            $table->unique(['name', 'scope']);
+            $table->timestamps();
+            $table->softDeletes();
+        });
+>>>>>>> dev
     }
 };

@@ -21,11 +21,16 @@ return new class extends XotBaseMigration {
         $this->tableCreate(static function (Blueprint $table): void {
             $table->increments('id');
             $table->uuidMorphs('model');
+<<<<<<< HEAD
             $table->json('extra_attributes')->nullable();
+=======
+            $table->schemalessAttributes('extra_attributes');
+>>>>>>> dev
         });
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+<<<<<<< HEAD
             // if (! $this->hasColumn('name')) {
             //    $table->string('name')->nullable();
             // }
@@ -36,6 +41,18 @@ return new class extends XotBaseMigration {
 
             if ($this->hasColumn('model_id') && 'bigint' === $this->getColumnType('model_id')) {
                 $table->string('model_id', 36)->index()->change();
+=======
+            // if (! $this->hasColumn('name'))
+            //    $table->string('name')->nullable();
+            // }
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
+
+            if ($this->hasColumn('model_id')) {
+                $table->string('model_id', 36)->change();
+                if (! $this->hasIndex('model_id')) {
+                    $table->index('model_id');
+                }
+>>>>>>> dev
             }
         });
     }

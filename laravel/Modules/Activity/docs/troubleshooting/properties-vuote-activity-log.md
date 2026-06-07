@@ -342,6 +342,7 @@ $record->update(['stabi' => 999]);
 
 ### Documentazione Interna
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Activity Module - README](../readme.md)
 - [BaseScheda Configuration](../../ptv/docs/models/base-scheda-activity-log.md)
 - [IndennitaResponsabilita Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)
@@ -350,6 +351,11 @@ $record->update(['stabi' => 999]);
 - [BaseScheda Configuration](../../Ptv/docs/models/base-scheda-activity-log.md)
 - [IndennitaResponsabilita Integration](../../IndennitaResponsabilita/docs/activity-log-integration.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Activity Module - README](../readme.md)
+- [BaseScheda Configuration](../../ptv/docs/models/base-scheda-activity-log.md)
+- [IndennitaResponsabilita Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)
+>>>>>>> dev
 
 ---
 

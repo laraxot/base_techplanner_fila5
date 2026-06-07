@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\States\Transitions;
 
+<<<<<<< HEAD
 use BackedEnum;
+=======
+>>>>>>> dev
 use Filament\Notifications\Notification as FilamentNotification;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Notification;
@@ -12,16 +15,27 @@ use Illuminate\Support\Str;
 use Modules\Notify\Datas\RecordNotificationData;
 use Modules\Notify\Notifications\RecordNotification;
 use Modules\Xot\Contracts\UserContract;
+<<<<<<< HEAD
 use Spatie\ModelStates\Transition;
 use TypeError;
 use Webmozart\Assert\InvalidArgumentException;
 
 abstract class XotBaseTransition extends Transition
+=======
+use Webmozart\Assert\InvalidArgumentException;
+
+abstract class XotBaseTransition
+>>>>>>> dev
 {
     public function __construct(
         public Model $record,
         public ?string $message = '',
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> dev
 
     public function handle(): Model
     {
@@ -76,7 +90,11 @@ abstract class XotBaseTransition extends Transition
     public function getNotificationSlug(UserContract $recipient): string
     {
         $typeEnum = $recipient->type;
+<<<<<<< HEAD
         $type = $typeEnum instanceof BackedEnum ? (string) $typeEnum->value : 'unknown';
+=======
+        $type = $typeEnum instanceof \BackedEnum ? (string) $typeEnum->value : 'unknown';
+>>>>>>> dev
 
         $slug =
             class_basename($this->record).
@@ -90,7 +108,11 @@ abstract class XotBaseTransition extends Transition
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> dev
      */
     public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
     {
@@ -113,7 +135,11 @@ abstract class XotBaseTransition extends Transition
 
         try {
             Notification::route($recipient->getChannel(), $recipient->getRoute())->notify($notify);
+<<<<<<< HEAD
         } catch (TypeError|InvalidArgumentException $e) {
+=======
+        } catch (\TypeError|InvalidArgumentException $e) {
+>>>>>>> dev
             $message = 'channel :['.$recipient->getChannel().'] error: ['.$e->getMessage().']';
             FilamentNotification::make()
                 ->title('Error')

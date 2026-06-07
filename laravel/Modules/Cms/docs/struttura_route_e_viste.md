@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura delle Route e Viste in il progetto
 
 ## Indice
@@ -115,3 +116,12 @@ Per identificare il file corrispondente a un URL specifico:
 **Problema**: Le route e le viste del backoffice (Filament) e del frontoffice sono gestite in modo diverso.
 
 **Soluzione**: Identifica prima se la route appartiene al backoffice o al frontoffice, poi cerca nei percorsi appropriati.
+=======
+---
+module: theme
+topic: struttura_route_e_viste
+canonical: ../../../Themes/docs/shared-components/struttura-route-e-viste.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/struttura-route-e-viste.md
+>>>>>>> dev

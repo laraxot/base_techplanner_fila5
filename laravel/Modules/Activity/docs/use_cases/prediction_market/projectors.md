@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # Proiettori per Prediction Market
 
 I proiettori sono utilizzati per creare viste di lettura basate sugli eventi del prediction market. Queste viste possono essere utilizzate per report, dashboard o per fornire dati in tempo reale agli utenti.
+=======
+# Proiettori per <nome progetto>ion Market
+
+I proiettori sono utilizzati per creare viste di lettura basate sugli eventi del <nome progetto>ion market. Queste viste possono essere utilizzate per report, dashboard o per fornire dati in tempo reale agli utenti.
+>>>>>>> dev
 
 ## Proiettori Principali
 
@@ -23,11 +29,19 @@ I proiettori sono utilizzati per creare viste di lettura basate sugli eventi del
 
 **MarketSummaryProjector**:
 ```php
+<<<<<<< HEAD
 namespace Modules\Activity\Projectors\PredictionMarket;
 
 use Modules\Activity\Events\PredictionMarket\MarketCreated;
 use Modules\Activity\Events\PredictionMarket\MarketUpdated;
 use Modules\Activity\Events\PredictionMarket\MarketResolved;
+=======
+namespace Modules\Activity\Projectors\<nome progetto>ionMarket;
+
+use Modules\Activity\Events\<nome progetto>ionMarket\MarketCreated;
+use Modules\Activity\Events\<nome progetto>ionMarket\MarketUpdated;
+use Modules\Activity\Events\<nome progetto>ionMarket\MarketResolved;
+>>>>>>> dev
 use Modules\Activity\Models\MarketSummary;
 
 class MarketSummaryProjector

@@ -285,9 +285,14 @@ return [
 8. **Versioning**: Gestisci correttamente le versioni
 ## Collegamenti tra versioni di config.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [config.md](../../../xot/docs/config.md)
 * [config.md](../../../../themes/one/docs/config.md)
 =======
 * [config.md](../../../Xot/docs/config.md)
 * [config.md](../../../../Themes/One/docs/config.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [config.md](../../../xot/docs/config.md)
+* [config.md](../../../../themes/one/docs/config.md)
+>>>>>>> dev

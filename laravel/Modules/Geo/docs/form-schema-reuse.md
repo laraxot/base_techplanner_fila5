@@ -46,10 +46,14 @@ public static function getFormSchema(): array
     return [
         // Altri campi specifici dello Studio
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         'addresses' => Forms\Components\Repeater::make('addresses')
             ->relationship('addresses')
             ->schema(AddressResource::getFormSchema()),
@@ -94,6 +98,7 @@ $addressSchema['locality'] = Forms\Components\TextInput::make('locality')
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## AddressSection (Filament Schemas)
 
@@ -116,6 +121,8 @@ Questo pattern rispetta DRY+KISS:
 - **Documentare altri consumer**: aggiungere esempi di altre risorse/pagine che riusano lo stesso schema tramite `AddressSection`, per rendere evidente il pattern a chi sviluppa nuovi moduli.
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ## Riferimenti
 
 - [address-resource.md](address-resource.md)

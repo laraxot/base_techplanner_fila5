@@ -2,13 +2,23 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(\Modules\Notify\Tests\TestCase::class);
+=======
+namespace Modules\Notify\Tests\Feature;
+
+uses(TestCase::class);
+>>>>>>> dev
 
 use Filament\Facades\Filament;
 use LaraZeus\SpatieTranslatable\SpatieTranslatablePlugin;
 use Livewire\Livewire;
 use Modules\Notify\Filament\Resources\MailTemplateResource\Pages\ListMailTemplates;
 use Modules\Notify\Models\MailTemplate;
+<<<<<<< HEAD
+=======
+use Modules\Notify\Tests\TestCase;
+>>>>>>> dev
 use Modules\Xot\Datas\XotData;
 
 use function Pest\Laravel\actingAs;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MIGRATION BASE RULES
 
 ## Regola universale
@@ -74,3 +75,12 @@
 > ⚠️ **Warning**: Estendere Xot\BaseModel può causare override indesiderati, perdita di flessibilità e problemi di compatibilità con logiche locali. Seguire sempre la regola sopra per tutti i modelli di totali/aggregati in Performance.
 
 ---
+=======
+---
+module: theme
+topic: migration-base
+canonical: ../../../Themes/docs/shared-components/migration-base-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-base-rules.md
+>>>>>>> dev

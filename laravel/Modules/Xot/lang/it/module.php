@@ -12,6 +12,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Nome',
@@ -106,6 +109,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         'name' => ['label' => 'Nome', 'placeholder' => 'Nome'],
         'description' => ['label' => 'Descrizione', 'placeholder' => 'Descrizione'],
@@ -122,6 +126,8 @@ return [
         'icon' => ['label' => 'Icona', 'placeholder' => 'Icona'],
         'timezone' => ['label' => 'Fuso orario', 'placeholder' => 'Fuso orario'],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'pages' => [
         'health_check_results' => [
@@ -129,26 +135,36 @@ return [
                 'refresh' => 'Refresh',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'heading' => 'Application Health',
 =======
 
             'heading' => 'Application Health',
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'heading' => 'Application Health',
+>>>>>>> dev
             'navigation' => [
                 'group' => 'Settings',
                 'label' => 'Application Health',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             'notifications' => [
                 'check_results' => 'Check results from',
             ],
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Module',
     'plural_label' => 'Module (Plurale)',
     'actions' => [
@@ -162,6 +178,9 @@ return [
             'label' => 'Elimina Module',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

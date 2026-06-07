@@ -1,9 +1,12 @@
 # Audit "Obbligatorio" in Non-Italian Translation Files
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-08-08 12:29:30
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Scope**: Identificazione della parola "obbligatorio" e varianti in file di traduzione non italiani
 
 ## ✅ Risultato Audit

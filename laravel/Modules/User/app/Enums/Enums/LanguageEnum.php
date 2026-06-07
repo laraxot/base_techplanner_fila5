@@ -4,15 +4,25 @@ declare(strict_types=1);
 
 namespace Modules\User\Enums\Enums;
 
+<<<<<<< HEAD
+=======
+use Modules\Xot\Traits\EnumTrait;
+>>>>>>> dev
 use Filament\Support\Contracts\HasLabel;
 
 enum LanguageEnum: string implements HasLabel
 {
+<<<<<<< HEAD
+=======
+    use EnumTrait;
+
+>>>>>>> dev
     case ITALIAN = 'it';
     case ENGLISH = 'en';
     case SPANISH = 'es';
     case FRENCH = 'fr';
     case GERMAN = 'de';
+<<<<<<< HEAD
 
     public function getLabel(): string
     {
@@ -24,4 +34,6 @@ enum LanguageEnum: string implements HasLabel
             self::GERMAN => 'Deutsch',
         };
     }
+=======
+>>>>>>> dev
 }

@@ -89,10 +89,14 @@ Modules/Cms/
 
 ## Collegamenti Bidirezionali
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README](readme.md) - Documentazione principale del modulo
 =======
 - [README](README.md) - Documentazione principale del modulo
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README](readme.md) - Documentazione principale del modulo
+>>>>>>> dev
 - [Architettura](architecture.md) - Architettura del sistema CMS
 - [Struttura Moduli Laravel](struttura-moduli-laravel.md) - Struttura standard dei moduli Laravel
 - [Namespace Moduli](namespace-moduli-laravel-<nome progetto>.md) - Convenzioni di namespace
@@ -100,6 +104,9 @@ Modules/Cms/
 
 ## Vedi Anche
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Modulo Xot](../xot/docs/readme.md) - Struttura base dei moduli
 - [Documentazione Laravel](https://laravel.com/docs/structure.html) - Struttura standard Laravel
 ## Collegamenti tra versioni di structure.md
@@ -119,6 +126,7 @@ Modules/Cms/
 * [structure.md](laravel/modules/cms/docs/structure.md)
 * [structure.md](laravel/modules/cms/docs/themes/structure.md)
 * [structure.md](laravel/modules/cms/docs/components/structure.md)
+<<<<<<< HEAD
 =======
 - [Modulo Xot](../Xot/docs/README.md) - Struttura base dei moduli
 - [Documentazione Laravel](https://laravel.com/docs/structure.html) - Struttura standard Laravel
@@ -140,3 +148,5 @@ Modules/Cms/
 * [structure.md](laravel/Modules/Cms/docs/themes/structure.md)
 * [structure.md](laravel/Modules/Cms/docs/components/structure.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

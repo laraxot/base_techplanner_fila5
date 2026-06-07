@@ -2,7 +2,11 @@
 
 ## Panoramica
 
+<<<<<<< HEAD
 Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di SaluteOra. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
+=======
+Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di Quaeris. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
+>>>>>>> dev
 
 ## Template Disponibili
 
@@ -28,7 +32,11 @@ MailPace offre i seguenti template transazionali:
 ### Struttura della Directory
 
 ```
+<<<<<<< HEAD
 /var/www/html/saluteora/laravel/Modules/Notify/resources/mail-layouts/
+=======
+/var/www/html/Quaeris/laravel/Modules/Notify/resources/mail-layouts/
+>>>>>>> dev
 ├── default.html       # Layout base per la maggior parte delle email
 ├── main.html          # Alternativa semplificata
 ├── marketing.html     # Layout ottimizzato per email marketing
@@ -89,12 +97,17 @@ $mailTemplate->send($user->email, [
 1. **Mantieni la Struttura Base** - Non modificare la struttura HTML base per garantire compatibilità
 2. **Usa Variabili** - Utilizza variabili Blade per contenuti dinamici
 3. **Test Cross-Client** - Testa i template su diversi client email
+<<<<<<< HEAD
 4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per SaluteOra
+=======
+4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per Quaeris
+>>>>>>> dev
 
 ## Riferimenti
 
 - [Documentazione Maizzle](https://maizzle.com/docs/)
 - [Repository MailPace Templates](https://github.com/mailpace/templates)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Guida Spatie Email](../spatie_email_usage_guide.md)
 - [Implementazione Slug Field](./slug_field_implementation.md)
@@ -102,3 +115,7 @@ $mailTemplate->send($user->email, [
 - [Guida Spatie Email](../SPATIE_EMAIL_USAGE_GUIDE.md)
 - [Implementazione Slug Field](./SLUG_FIELD_IMPLEMENTATION.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Guida Spatie Email](../SPATIE_EMAIL_USAGE_GUIDE.md)
+- [Implementazione Slug Field](./SLUG_FIELD_IMPLEMENTATION.md)
+>>>>>>> dev

@@ -60,10 +60,14 @@ return [
                     'no_deleted' => 'Nessun utente eliminato',
                     'roles' => 'Ruoli',
 <<<<<<< HEAD
+<<<<<<< HEAD
                     'total' => 'utente(i] totali',
 =======
                     'total' => 'utente(i) totali',
 >>>>>>> 4b6b99016 (first commit)
+=======
+                    'total' => 'utente(i] totali',
+>>>>>>> dev
                 ],
                 'tabs' => [
                     'titles' => [
@@ -139,6 +143,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Labels',
     'plural_label' => 'Labels (Plurale)',
     'navigation' => [
@@ -183,6 +190,9 @@ return [
             'label' => 'Elimina Labels',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

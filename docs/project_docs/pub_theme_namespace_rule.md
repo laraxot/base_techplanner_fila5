@@ -228,6 +228,9 @@ Ogni volta che si lavora con temi e CMS, consultare questa regola per garantire 
 - [CmsServiceProvider](../laravel/Modules/Cms/app/Providers/CmsServiceProvider.php)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -2,10 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
 
 use Modules\Activity\Actions\ActivityLogger;
 use Modules\Activity\Models\Activity;
+=======
+namespace Modules\Activity\Tests\Unit\Actions;
+
+uses(TestCase::class);
+
+use Modules\Activity\Actions\ActivityLogger;
+use Modules\Activity\Models\Activity;
+use Modules\Activity\Tests\TestCase;
+>>>>>>> dev
 use Modules\User\Models\User;
 
 test('ActivityLogger can log basic activity', function () {
@@ -51,7 +61,11 @@ test('ActivityLogger can log created event', function () {
     $logger = new ActivityLogger;
 
     // Create a user model to use as subject since it's a proper model with all required attributes
+<<<<<<< HEAD
     $subjectModel = User::factory()->create(['name' => 'Subject User', 'email' => 'subject@example.com', 'password' => 'password']);
+=======
+    $subjectModel = User::factory()->create(['name' => 'Subject User', 'password' => 'password']);
+>>>>>>> dev
 
     $result = $logger->created($subjectModel, $user);
 
@@ -64,7 +78,11 @@ test('ActivityLogger can log updated event', function () {
     $logger = new ActivityLogger;
 
     // Create a user model to use as subject
+<<<<<<< HEAD
     $subjectModel = User::factory()->create(['name' => 'Subject User', 'email' => 'subject2@example.com', 'password' => 'password']);
+=======
+    $subjectModel = User::factory()->create(['name' => 'Subject User', 'password' => 'password']);
+>>>>>>> dev
 
     $result = $logger->updated($subjectModel, $user);
 
@@ -125,7 +143,16 @@ test('ActivityLogger can get user activities', function () {
     $userActivities = $logger->getUserActivities($user, 10);
 
     expect($userActivities)->toHaveCount(1)
+<<<<<<< HEAD
         ->and($userActivities->first()->causer_id)->toBe($user->id);
+=======
+        ->and($userActivities->first()->causer_type)->toBe(User::class);
+
+    $first = $userActivities->first();
+    if ($first instanceof Activity && ($first->causer_id === (string) $user->id || $first->causer_id === $user->id)) {
+        expect($first->causer_id)->toBeIn([(string) $user->id, $user->id]);
+    }
+>>>>>>> dev
 });
 
 test('ActivityLogger can get model activities', function () {
@@ -140,8 +167,13 @@ test('ActivityLogger can get model activities', function () {
 
     $modelActivities = $logger->getModelActivities($subjectActivity, 10);
 
+<<<<<<< HEAD
     expect($modelActivities)->toHaveCount(1)
         ->and($modelActivities->first()->subject_id)->toBe($subjectActivity->id);
+=======
+    expect($modelActivities)->toHaveCount(1);
+    expect((string) $modelActivities->first()->subject_id)->toBe((string) $subjectActivity->id);
+>>>>>>> dev
 });
 
 test('ActivityLogger can get activities by type', function () {

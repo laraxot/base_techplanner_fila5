@@ -157,6 +157,9 @@ cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
 - [Employee Module Technical Implementation](./technical_implementation.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Luglio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

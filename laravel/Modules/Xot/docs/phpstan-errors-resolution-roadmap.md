@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 # Roadmap risoluzione errori PHPStan (modulo base)
 
 ## Scopo
@@ -28,6 +31,7 @@ Definire un flusso ripetibile per ridurre gli errori PHPStan fino a **0** nel mo
 - [guida qualita' phpstan](./phpstan-code-quality-guide.md)
 - [sessione phpstan](./phpstan-session-january-2026-summary.md)
 - [best practices](./best-practices-1.md)
+<<<<<<< HEAD
 =======
 # Xot Module - PHPStan Level 10 Errors Resolution Roadmap
 
@@ -69,3 +73,5 @@ Ridurre gli errori PHPStan a **0**.
 
 **Obiettivo**: Confermare 0 errori.
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -2,11 +2,15 @@
 
 ## Collegamenti Correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Indice CMS](../index.md)
 - [README CMS](../readme.md)
 - [Blocchi](../blocks.md)
 - [Componenti Blocchi Contenuto](../componenti-blocchi-contenuto.md)
 - [Namespace Componenti Blocchi](../namespace-componenti-blocchi.md)
+<<<<<<< HEAD
 - [Documentazione Generale](../../../../../docs/readme.md)
 =======
 - [Indice CMS](../INDEX.md)
@@ -26,6 +30,15 @@ I blocchi sono componenti riutilizzabili che compongono le sezioni del sito. Ogn
 - [Documentazione Generale <nome progetto>](../../../../../docs/README.md)
 >>>>>>> 4b6b99016 (first commit)
 - [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
+=======
+- [Documentazione Generale](../../../../../../docs/readme.md)
+- [Collegamenti Documentazione](../../../../../../docs/collegamenti-documentazione.md)
+
+## Panoramica
+I blocchi sono componenti riutilizzabili che compongono le sezioni del sito. Ogni blocco ha uno scopo specifico e può essere inserito in diverse sezioni tramite i file JSON di configurazione.
+- [Documentazione Generale <nome progetto>](../../../../../../docs/readme.md)
+- [Collegamenti Documentazione](../../../../../../docs/collegamenti-documentazione.md)
+>>>>>>> dev
 
 ## Panoramica
 I blocchi sono componenti riutilizzabili che compongono le sezioni del sito <nome progetto>. Ogni blocco ha uno scopo specifico e può essere inserito in diverse sezioni tramite i file JSON di configurazione.
@@ -34,6 +47,9 @@ I blocchi sono componenti riutilizzabili che compongono le sezioni del sito <nom
 
 ### Navigazione e Layout
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Header](./header.md) - Blocco header con logo, navigazione e dropdown utente
 - [Footer](./footer.md) - Blocco footer con copyright, link e contatti
 - [Navigation](./navigation.md) - Blocco di navigazione personalizzabile
@@ -60,6 +76,7 @@ I blocchi sono componenti riutilizzabili che compongono le sezioni del sito <nom
 - [Map](./map.md) - Blocco per mappe
 - [Social](./social.md) - Blocco per link social
 - [Search](./search.md) - Blocco per ricerca
+<<<<<<< HEAD
 =======
 - [Header](./HEADER.md) - Blocco header con logo, navigazione e dropdown utente
 - [Footer](./FOOTER.md) - Blocco footer con copyright, link e contatti
@@ -88,6 +105,8 @@ I blocchi sono componenti riutilizzabili che compongono le sezioni del sito <nom
 - [Social](./SOCIAL.md) - Blocco per link social
 - [Search](./SEARCH.md) - Blocco per ricerca
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Struttura dei Blocchi
 
@@ -123,6 +142,9 @@ L'implementazione di un blocco richiede:
 - L'implementazione deve seguire le convenzioni di naming del progetto
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Ultimo aggiornamento: 14 Maggio 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

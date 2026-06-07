@@ -23,11 +23,15 @@ final class XotComposer
     {
         $user = Auth::user();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         if (! $user instanceof Authenticatable) {
             return;
         }
 
         if (! $user instanceof UserContract) {
+<<<<<<< HEAD
 =======
         if (! ($user instanceof Authenticatable)) {
             return;
@@ -35,6 +39,8 @@ final class XotComposer
 
         if (! ($user instanceof UserContract)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             return;
         }
 

@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\User\Tests\Feature\Filament\Actions;
+
+>>>>>>> dev
 use Filament\Actions\Action;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Notification;

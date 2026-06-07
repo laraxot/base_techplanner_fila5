@@ -18,72 +18,111 @@ return [
             'placeholder' => 'Enter email subject',
             'help' => 'Subject that will appear in the email header',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'template_id' => [
             'label' => 'Email Template',
             'placeholder' => 'Select the email template to use',
             'help' => 'Default template for the email (optional)',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'to' => [
             'label' => 'Recipient',
             'placeholder' => 'recipient@domain.com',
             'help' => 'Email address of the recipient',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'cc' => [
             'label' => 'Carbon Copy (CC)',
             'placeholder' => 'cc@domain.com (optional)',
             'help' => 'Email addresses in carbon copy, separated by commas',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'bcc' => [
             'label' => 'Blind Carbon Copy (BCC)',
             'placeholder' => 'bcc@domain.com (optional)',
             'help' => 'Email addresses in blind carbon copy, separated by commas',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'content' => [
             'label' => 'Text Content',
             'placeholder' => 'Enter the text content of the email',
             'help' => 'Text content of the email (plain text version)',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'body_html' => [
             'label' => 'HTML Content',
             'placeholder' => '<h1>Title</h1><p>Email content in HTML format</p>',
             'help' => 'HTML content of the email to send (optional)',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -95,6 +134,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'parameters' => [
@@ -102,17 +142,25 @@ return [
             'placeholder' => '{\"name\": \"John\", \"surname\": \"Doe\"}',
             'help' => 'JSON parameters to customize the selected template',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'attachments' => [
             'label' => 'Attachments',
             'placeholder' => 'Select files to attach',
             'help' => 'Files to attach to the email (optional)',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'priority' => [
             'label' => 'Priority',
@@ -124,11 +172,17 @@ return [
                 'urgent' => 'Urgent',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -181,8 +235,13 @@ return [
         'priority_valid' => 'Priority must be one of the available options',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

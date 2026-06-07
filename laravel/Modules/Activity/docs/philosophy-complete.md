@@ -1,10 +1,14 @@
 # Activity - Filosofia Completa: Logica, Religione, Politica, Zen
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Creazione**: [DATE]
 =======
 **Data Creazione**: 2025-12-23
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data Creazione**: [DATE]
+>>>>>>> dev
 **Status**: Documentazione Filosofica Completa
 **Versione**: 1.0.0
 
@@ -227,6 +231,7 @@ class ClientObserver
 ## 🔗 Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Business Logic Overview](./readme.md)
 - [Business Logic Analysis](./business-logic-analysis.md)
 - [Xot Module Foundation](../../xot/docs/philosophy-complete.md)
@@ -235,6 +240,11 @@ class ClientObserver
 - [Business Logic Analysis](./business-logic-analysis.md)
 - [Xot Module Foundation](../../Xot/docs/philosophy-complete.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Business Logic Overview](./readme.md)
+- [Business Logic Analysis](./business-logic-analysis.md)
+- [Xot Module Foundation](../../xot/docs/philosophy-complete.md)
+>>>>>>> dev
 
 ---
 

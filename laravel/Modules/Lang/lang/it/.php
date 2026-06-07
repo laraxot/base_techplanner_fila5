@@ -3,13 +3,21 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 return array (
   'sections' => 
   array (
     'empty' => 
     array (
+<<<<<<< HEAD
       'label' => 'empty',
       'heading' => 'empty',
+=======
+      'label' => 'empty11',
+      'heading' => 'empty12',
+>>>>>>> dev
     ),
   ),
   'actions' => 
@@ -38,6 +46,7 @@ return array (
   'label' => 'Missing Label',
   'plural_label' => 'Missing Plural label',
   'fields' => 
+<<<<<<< HEAD
   array (
   ),
 );
@@ -63,3 +72,8 @@ return [
     ],
 ];
 >>>>>>> 4b6b99016 (first commit)
+=======
+  array ()
+  ),
+);
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Raccomandazioni di Ottimizzazione - Modulo Geo
 
 ## 🎯 Stato Attuale e Analisi
@@ -296,3 +297,12 @@ php artisan geo:test-api-integration
 - [Google Places Integration](google-places.md)
 - [Address Model Documentation](models/address.md)
 
+=======
+---
+module: theme
+topic: optimization_recommendations
+canonical: ../../../Themes/docs/shared-components/optimization-recommendations.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/optimization-recommendations.md
+>>>>>>> dev

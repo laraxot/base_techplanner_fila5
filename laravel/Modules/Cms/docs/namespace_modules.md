@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura dei Namespace nei Moduli Laravel
 
 Questo documento definisce le linee guida ufficiali per l'utilizzo corretto dei namespace nei moduli Laravel all'interno del framework del progetto.
@@ -142,3 +143,12 @@ Se hai già una struttura con i namespace errati, segui questi passaggi per corr
 ## Conclusione
 
 Seguire queste linee guida garantirà una struttura del codice coerente e manutenibile in tutti i moduli del progetto, facilitando la collaborazione tra sviluppatori e riducendo gli errori legati ai namespace.
+=======
+---
+module: theme
+topic: namespace_modules
+canonical: ../../../Themes/docs/shared-components/namespace-modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/namespace-modules.md
+>>>>>>> dev

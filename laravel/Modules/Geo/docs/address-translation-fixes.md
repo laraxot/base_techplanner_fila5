@@ -8,6 +8,7 @@ Il file `laravel/Modules/Geo/lang/it/address.php` conteneva problemi critici:
 ```php
 'region' => [
     'label' => 'region',
+<<<<<<< HEAD
     'placeholder' => 'region',
     'helper_text' => 'region', // ❌ ERRORE: uguale alla chiave
 ],
@@ -231,6 +232,8 @@ Il file `laravel/Modules/Geo/lang/it/address.php` conteneva problemi critici:
 ```php
 'region' => [
     'label' => 'region',
+=======
+>>>>>>> dev
     'placeholder' => 'region', 
     'helper_text' => 'region', // ❌ ERRORE: uguale alla chiave
 ],
@@ -433,17 +436,26 @@ Le stesse correzioni sono state applicate a:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [README Modulo Geo](readme.md) - Documentazione principale
 - [Translation Standards](../../lang/docs/translation-helper-text-standards.md) - Standard traduzioni
 =======
 - [README Modulo Geo](README.md) - Documentazione principale
 - [Translation Standards](../../Lang/docs/translation-helper-text-standards.md) - Standard traduzioni
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README Modulo Geo](README.md) - Documentazione principale
+- [Translation Standards](../../Lang/docs/translation-helper-text-standards.md) - Standard traduzioni
+>>>>>>> dev
 - [Address Implementation](address-implementation.md) - Implementazione indirizzi
 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: 27 Gennaio 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Ultimo aggiornamento**: 27 Gennaio 2025  
+>>>>>>> dev

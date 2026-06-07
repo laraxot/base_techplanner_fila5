@@ -10,7 +10,11 @@ Modules\\Activity\\Database\\Seeders
 Workbench\\App
 Workbench\\Database\\Factories
 Workbench\\Database\\Seeders
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_activity_fila3
+=======
+- **Pacchetto Composer**: laraxot/module_activity_fila5
+>>>>>>> dev
 Marco Sottana
 - **Dipendenze**: spatie/laravel-activitylog * spatie/laravel-event-sourcing * repositories type path url ../Xot type path url ../Tenant type path url ../UI scripts post-autoload-dump
 - **Totale file PHP**: 55
@@ -235,9 +239,15 @@ database/seeders
 docs
 docs/.github
 docs/.github/workflows
+<<<<<<< HEAD
 docs/archived
 docs/archived/.github
 docs/archived/.github/workflows
+=======
+docs/archivedd
+docs/archivedd/.github
+docs/archivedd/.github/workflows
+>>>>>>> dev
 docs/database
 docs/phpstan
 lang
@@ -282,10 +292,14 @@ workbench/routes
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Torna a README](./readme.md)
 =======
 - [Torna a README](./README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Torna a README](./readme.md)
+>>>>>>> dev
 - [Vai a Roadmap](./roadmap.md)
 - [Vai a Bottlenecks](./bottlenecks.md)
 
@@ -353,6 +367,9 @@ workbench/routes
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [structure.md](laravel/modules/gdpr/docs/structure.md)
 * [structure.md](laravel/modules/notify/docs/structure.md)
 * [structure.md](laravel/modules/xot/docs/structure.md)
@@ -368,6 +385,7 @@ workbench/routes
 * [structure.md](laravel/modules/cms/docs/structure.md)
 * [structure.md](laravel/modules/cms/docs/themes/structure.md)
 * [structure.md](laravel/modules/cms/docs/components/structure.md)
+<<<<<<< HEAD
 =======
 * [structure.md](laravel/Modules/Gdpr/docs/structure.md)
 * [structure.md](laravel/Modules/Notify/docs/structure.md)
@@ -385,6 +403,8 @@ workbench/routes
 * [structure.md](laravel/Modules/Cms/docs/themes/structure.md)
 * [structure.md](laravel/Modules/Cms/docs/components/structure.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Architettura Event Sourcing e Activity Log
 

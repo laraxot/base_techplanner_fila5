@@ -10,9 +10,13 @@ return [
             'helper_text' => 'Hintergrundfarbe',
             'description' => 'Hintergrundfarbe',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'background' => [
             'label' => 'Hintergrund',
@@ -20,9 +24,13 @@ return [
             'helper_text' => 'Hintergrund',
             'description' => 'Hintergrund',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'overlay_color' => [
             'label' => 'Overlay-Farbe',
@@ -30,9 +38,13 @@ return [
             'helper_text' => 'Overlay-Farbe',
             'description' => 'Overlay-Farbe',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'overlay_opacity' => [
             'label' => 'Overlay-Deckkraft',
@@ -40,9 +52,13 @@ return [
             'helper_text' => 'Overlay-Deckkraft',
             'description' => 'Overlay-Deckkraft',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -54,8 +70,13 @@ return [
         'group' => 'Benutzerdefiniertes CSS',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

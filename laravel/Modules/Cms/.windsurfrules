@@ -44,6 +44,9 @@
 - `getFormSchema()` deve restituire array associativo con chiavi stringhe
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 ## Composer autoload-dev per moduli (OBBLIGATORIO)
 
 Ogni modulo deve avere nel proprio `composer.json`, **subito dopo il nodo `autoload`**, il nodo `autoload-dev`:
@@ -58,8 +61,11 @@ Ogni modulo deve avere nel proprio `composer.json`, **subito dopo il nodo `autol
 
 Perché: le classi di test devono essere autoloadabili con namespace `Modules\<Modulo>\Tests\*`. Senza questo nodo PHPUnit/Pest non risolvono le classi. `autoload-dev` viene caricato solo in dev.
 
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ## XotBaseListRecords
 - Rimuovere `Actions()` se restituisce solo `createAction`
 - `getTableColumns()` deve restituire array associativo con chiavi stringhe
@@ -136,16 +142,22 @@ Quando si generano link, includere sempre la locale:
 ```php
 // CORRETTO
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 <a href="{{ url('/' . app()->getLocale() . '/' . $page->slug) }}">{{ $page->title }}</a>
 
 // ERRATO
 <a href="{{ url('/' . $page->slug) }}">{{ $page->title }}</a>
+<<<<<<< HEAD
 =======
 <a href="{{ url('/' . app()->getLocale() . '/pages/' . $page->slug) }}">{{ $page->title }}</a>
 
 // ERRATO
 <a href="{{ url('/pages/' . $page->slug) }}">{{ $page->title }}</a>
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ```
 
 ### 3. Nelle Pagine Folio
@@ -166,6 +178,9 @@ render(function (View $view) {
 ## Errori Comuni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 1. **URL senza prefisso lingua**: `/chi-siamo` invece di `/it/chi-siamo`
 2. **URL mal formati**: `it/chi-siamo` (manca lo slash iniziale)
 3. **Link generati senza locale**: `url('/' . $slug)` invece di `url('/' . $locale . '/' . $slug)`
@@ -173,6 +188,7 @@ render(function (View $view) {
 ## Esempi Corretti
 
 - `/it/chi-siamo`
+<<<<<<< HEAD
 =======
 1. **URL senza prefisso lingua**: `/pages/chi-siamo` invece di `/it/pages/chi-siamo`
 2. **URL mal formati**: `it/pages/chi-siamo` (manca lo slash iniziale)
@@ -182,6 +198,8 @@ render(function (View $view) {
 
 - `/it/pages/chi-siamo`
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 - `/en/services/cardiology`
 - `/it/doctors/rossi-mario`
 

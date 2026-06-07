@@ -22,8 +22,13 @@ class ArrayService
     }
 
     /**
+<<<<<<< HEAD
      * @param  array  $array1
      * @param  array  $array2
+=======
+     * @param array $array1
+     * @param array $array2
+>>>>>>> dev
      */
     public static function diff_assoc_recursive($array1, $array2): array
     {

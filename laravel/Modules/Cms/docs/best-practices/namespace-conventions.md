@@ -146,6 +146,9 @@ it('uses correct namespace for view models', function () {
 - [PSR-4 Autoloading Standard](https://www.php-fig.org/psr/psr-4/)
 - [Laravel Module Development](https://laravel.com/docs/10.x/packages)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Best Practices](/laravel/modules/cms/docs/best-practices/readme.md)
 - [Architettura Modulare](/laravel/modules/cms/docs/architecture.md)
 
@@ -153,6 +156,7 @@ it('uses correct namespace for view models', function () {
 * [namespace-conventions.md](laravel/modules/xot/docs/namespace-conventions.md)
 * [namespace-conventions.md](laravel/modules/user/docs/namespace-conventions.md)
 * [namespace-conventions.md](laravel/modules/cms/docs/best-practices/namespace-conventions.md)
+<<<<<<< HEAD
 =======
 - [Best Practices](/laravel/Modules/Cms/docs/best-practices/README.md)
 - [Architettura Modulare](/laravel/Modules/Cms/docs/architecture.md)
@@ -162,3 +166,5 @@ it('uses correct namespace for view models', function () {
 * [namespace-conventions.md](laravel/Modules/User/docs/namespace-conventions.md)
 * [namespace-conventions.md](laravel/Modules/Cms/docs/best-practices/namespace-conventions.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -51,6 +51,7 @@ Wrappare sempre gli elementi multipli in un singolo elemento container:
 
 ## Vedi Anche
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Principale](../../project_docs/index.md)
 - [Best Practices Frontend](web-design-rules.md)
 - [Gestione Componenti](components.md) 
@@ -114,3 +115,8 @@ Wrappare sempre gli elementi multipli in un singolo elemento container:
 - [Best Practices Frontend](web-design-rules.md)
 - [Gestione Componenti](components.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione Principale](../../project_docs/index.md)
+- [Best Practices Frontend](web-design-rules.md)
+- [Gestione Componenti](components.md) 
+>>>>>>> dev

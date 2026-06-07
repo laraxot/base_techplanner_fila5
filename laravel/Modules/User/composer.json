@@ -1,6 +1,10 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "laraxot/module_user_fila3",
+=======
+  "name": "laraxot/module_user_fila5",
+>>>>>>> dev
   "description": "User management module for the Laraxot ecosystem: authentication, roles, teams, tenants, and OAuth.",
   "keywords": [
     "laraxot",
@@ -14,7 +18,11 @@
     "passport",
     "oauth"
   ],
+<<<<<<< HEAD
   "homepage": "https://github.com/laraxot/module_user_fila3",
+=======
+  "homepage": "https://github.com/laraxot/module_user_fila5",
+>>>>>>> dev
   "license": "MIT",
   "authors": [
     {
@@ -51,9 +59,19 @@
     "jenssegers/agent": "*",
     "laravel/passport": "*",
     "socialiteproviders/auth0": "*",
+<<<<<<< HEAD
     "spatie/laravel-personal-data-export": "*"
   },
   "require-dev": {},
+=======
+    "spatie/laravel-personal-data-export": "*",
+    "socialiteproviders/microsoft": "^4.8"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.1",
+    "phpstan/phpstan-deprecation-rules": "^2.0"
+  },
+>>>>>>> dev
   "repositories": [
     {
       "type": "path",
@@ -90,6 +108,7 @@
   },
   "minimum-stability": "dev",
   "prefer-stable": true
+<<<<<<< HEAD
 =======
     "name": "laraxot/module_user_fila3",
     "description": "user module for user management",
@@ -184,4 +203,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 }

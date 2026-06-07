@@ -50,6 +50,9 @@ final class UsersRelationManager extends XotBaseRelationManager
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'name' => TextColumn::make('name')
                 ->searchable()
                 ->sortable()
@@ -63,6 +66,7 @@ final class UsersRelationManager extends XotBaseRelationManager
                 ->sortable()
                 ->toggleable(),
             'updated_at' => TextColumn::make('updated_at')
+<<<<<<< HEAD
 =======
             TextColumn::make('name')
                 ->searchable()
@@ -78,6 +82,8 @@ final class UsersRelationManager extends XotBaseRelationManager
                 ->toggleable(),
             TextColumn::make('updated_at')
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),

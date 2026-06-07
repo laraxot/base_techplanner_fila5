@@ -152,6 +152,7 @@ Ogni progetto può personalizzare i valori tramite variabili d'ambiente senza mo
 ## Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modulo Notify](../laravel/modules/notify/docs/modularity-hardcoded-names.md)
 - [Regole Cursor](../.cursor/rules/modularity-hardcoded-names.mdc)
 - [Testing Guidelines](../laravel/modules/notify/docs/testing-guidelines.md)
@@ -160,6 +161,11 @@ Ogni progetto può personalizzare i valori tramite variabili d'ambiente senza mo
 - [Regole Cursor](../.cursor/rules/modularity-hardcoded-names.mdc)
 - [Testing Guidelines](../laravel/Modules/Notify/docs/testing-guidelines.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Modulo Notify](../laravel/modules/notify/docs/modularity-hardcoded-names.md)
+- [Regole Cursor](../.cursor/rules/modularity-hardcoded-names.mdc)
+- [Testing Guidelines](../laravel/modules/notify/docs/testing-guidelines.md)
+>>>>>>> dev
 
 ---
 

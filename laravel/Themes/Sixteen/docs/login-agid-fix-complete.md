@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzione Login AGID Completata - Tema Sixteen
 
 ## ✅ STATO: CORREZIONE COMPLETATA
@@ -349,3 +350,12 @@ cat laravel/Themes/Sixteen/resources/views/components/blocks/forms/login-card-ag
 **Design**: ✅ Professionale  
 **Funzionalità**: ✅ Complete  
 **Stato**: ✅ CORRETTO 
+=======
+---
+module: theme
+topic: login-agid-fix-complete
+canonical: ../../docs/shared-components/login-agid-fix-complete.md
+---
+
+See canonical documentation: ../../docs/shared-components/login-agid-fix-complete.md
+>>>>>>> dev

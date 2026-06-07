@@ -25,6 +25,7 @@ class JobBatchResource extends XotBaseResource
     #[Override]
     public static function getFormSchema(): array
     {
+<<<<<<< HEAD
         return [
             'id' => TextInput::make('id')->required()->maxLength(255),
             'name' => TextInput::make('name')->required()->maxLength(255),
@@ -37,6 +38,9 @@ class JobBatchResource extends XotBaseResource
             'cancelled_at' => DateTimePicker::make('cancelled_at'),
             'finished_at' => DateTimePicker::make('finished_at'),
         ];
+=======
+        return [];
+>>>>>>> dev
     }
 
     #[Override]

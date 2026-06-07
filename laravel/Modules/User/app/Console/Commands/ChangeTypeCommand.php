@@ -26,15 +26,21 @@ class ChangeTypeCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> dev
      */
     protected $name = 'user:change-type';
 
     /**
      * The console command description.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> dev
      */
     protected $description = 'Change user type based on project configuration';
 
@@ -104,7 +110,13 @@ class ChangeTypeCommand extends Command
         $newType = select('Select new user type:', $options);
 
         $newTypeEnum = $typeClass::tryFrom($newType);
+<<<<<<< HEAD
         Assert::notNull($newTypeEnum);
+=======
+        if (null === $newTypeEnum) {
+            throw new \InvalidArgumentException('Invalid user type selected.');
+        }
+>>>>>>> dev
         Assert::isInstanceOf($newTypeEnum, HasLabel::class);
         Assert::isInstanceOf($newTypeEnum, \BackedEnum::class);
 

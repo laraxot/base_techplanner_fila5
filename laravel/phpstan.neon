@@ -1,6 +1,10 @@
 includes:
     - ./phpstan-baseline.neon
+<<<<<<< HEAD
     - ./vendor/larastan/larastan/extension.neon  
+=======
+    - ./vendor/larastan/larastan/extension.neon
+>>>>>>> dev
     - ./vendor/nesbot/carbon/extension.neon
     - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
     - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
@@ -8,6 +12,7 @@ includes:
 
 parameters:
     level: max
+<<<<<<< HEAD
     
     #parallel:
     #    maximumNumberOfProcesses: 4
@@ -25,13 +30,28 @@ parameters:
         - '#Static call to instance method Nwidart#'
         - "#^Unsafe usage of new static#"
         - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#' # Ignora errori di cast da mixed a tipi specifici
+=======
+
+    paths:
+        - ./Modules/
+
+    ignoreErrors:
+        - '#PHPDoc tag @mixin contains unknown class #'
+        - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#'
+>>>>>>> dev
         - identifier: missingType.generics
         - identifier: missingType.iterableValue
         - identifier: larastan.noEnvCallsOutsideOfConfig
         - '#is used zero times and is not analysed#'
         - identifier: method.unused
+<<<<<<< HEAD
         - identifier: method.internalClass # Ignora metodi internal di Pest (toBe, toBeTrue, etc.)
         - identifier: function.alreadyNarrowedType # Ignora check ridondanti type-safe
+=======
+        # - identifier: method.internalClass
+        # - identifier: function.alreadyNarrowedType
+        
+>>>>>>> dev
 
     excludePaths:
         - ./vendor/*
@@ -40,20 +60,30 @@ parameters:
         - ./*/docs/*
         - ./*/tests/*
 <<<<<<< HEAD
+<<<<<<< HEAD
         - ./*/Tests/*
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         - ./*/packages/*
         - ./*/phpinsights.php
         - ./*/rector.php
         - ./*/*.blade.php
         - ./_ide_helper.php
         - ./_ide_helper_models.php
+<<<<<<< HEAD
         
     bootstrapFiles:
         - ./phpstan_bootstrap.php
         - ./phpstan_constants.php
         # - ./vendor/amenadiel/jpgraph/src/config.inc.php
+=======
+
+    bootstrapFiles:
+        - ./phpstan_bootstrap.php
+        - ./phpstan_constants.php
+>>>>>>> dev
 
     scanFiles:
         - ./Modules/Xot/Helpers/Helper.php

@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\Cms\Tests\TestCase::class);
 
+=======
+>>>>>>> dev
 use Modules\Cms\Filament\Blocks\ActionsBlock;
 use Modules\Cms\Filament\Blocks\ContactBlock;
 use Modules\Cms\Filament\Blocks\CtaBlock;

@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Geo\Models\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Database\Query\Expression;
+=======
+>>>>>>> dev
 
 trait GeographicalScopes
 {
@@ -14,7 +17,14 @@ trait GeographicalScopes
      */
     public function scopeWithDistance(Builder $query, float $latitude, float $longitude): Builder
     {
+<<<<<<< HEAD
         return $query->select('*', $this->getDistanceExpression($latitude, $longitude, 'distance'));
+=======
+        return $query->select('*')->selectRaw(
+            $this->getDistanceSql(withAlias: true),
+            [$latitude, $longitude, $latitude],
+        );
+>>>>>>> dev
     }
 
     /**
@@ -22,6 +32,7 @@ trait GeographicalScopes
      */
     public function scopeOrderByDistance(Builder $query, float $latitude, float $longitude): Builder
     {
+<<<<<<< HEAD
         return $query->orderBy($this->getDistanceExpression($latitude, $longitude));
     }
 
@@ -46,5 +57,26 @@ trait GeographicalScopes
         return new Expression($sql);
 
         // AS distance
+=======
+        return $query->orderByRaw(
+            $this->getDistanceSql(),
+            [$latitude, $longitude, $latitude],
+        );
+    }
+
+    private function getDistanceSql(bool $withAlias = false): string
+    {
+        $sql = '
+            (6371 * acos(
+                cos(radians(?)) *
+                cos(radians(latitude)) *
+                cos(radians(longitude) - radians(?)) +
+                sin(radians(?)) *
+                sin(radians(latitude))
+            ))
+        ';
+
+        return $withAlias ? $sql.' AS distance' : $sql;
+>>>>>>> dev
     }
 }

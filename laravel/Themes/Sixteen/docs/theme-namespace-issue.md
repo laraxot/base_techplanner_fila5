@@ -160,6 +160,9 @@ View [pub_theme::layouts.auth-agid] not found
 - [Configurazione Temi](../../../laravel/config/xot.php)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06* 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

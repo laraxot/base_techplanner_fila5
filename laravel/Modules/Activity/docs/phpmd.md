@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPMD Analysis & Fixes - Activity Module
 
 ## 📊 Current Status
@@ -169,3 +170,12 @@ return $alternative;
 
 *
 *Status: In Progress - Complexity Fixes*
+=======
+---
+module: theme
+topic: phpmd
+canonical: ../../../Themes/docs/shared-components/phpmd-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpmd-analysis.md
+>>>>>>> dev

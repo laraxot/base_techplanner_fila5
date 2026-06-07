@@ -14,6 +14,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'file' => [
             'label' => 'file',
             'tooltip' => '',
@@ -93,6 +96,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         'file' => 'file',
         'file_hint' => 'Upload an attachment',
@@ -116,6 +120,8 @@ return [
             'name' => 'Select All',
             'message' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'creator' => [
             'name' => 'Creator',
@@ -123,6 +129,9 @@ return [
                 'label' => 'Creator',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -139,12 +148,15 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'uploaded_at' => 'Updated at',
         'created_at' => [
             'label' => 'Uploaded at',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -162,8 +174,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

@@ -150,7 +150,11 @@ __('<nome progetto>::widgets.doctor_appointments.empty.description')
 - [Widget DoctorAppointments](../laravel/Modules/<nome progetto>/app/Filament/Widgets/DoctorAppointmentsWidget.php)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Risoluzione completata: [DATE]*
 =======
 *Risoluzione completata: 2025-01-21*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Risoluzione completata: 2025-01-21*
+>>>>>>> dev

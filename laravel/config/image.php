@@ -16,9 +16,13 @@ return [
     */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     'driver' => 'gd',
 =======
     'driver' => 'gd'
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'driver' => 'gd',
+>>>>>>> dev
 
 ];

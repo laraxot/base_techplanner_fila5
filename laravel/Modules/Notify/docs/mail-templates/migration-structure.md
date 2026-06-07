@@ -3,12 +3,16 @@
 ## Informazioni Generali
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **File**: `/var/www/html/saluteora/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
 =======
 - **File**: `Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
 - **File**: `Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
 - **File**: `Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **File**: `/var/www/html/Quaeris/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
+>>>>>>> dev
 - **Base**: `XotBaseMigration`
 - **Tabella**: `mail_templates`
 
@@ -218,6 +222,7 @@ public function tableUpdate(\Closure $next, ?string $table = null): void
    - Gestione degli errori
 
 ## Collegamenti
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Documentazione XotBaseMigration](../xot/docs/xotbasemigration.md)
 - [Best Practices Migrazioni](./migration_best_practices.md)
@@ -444,3 +449,8 @@ public function tableUpdate(\Closure $next, ?string $table = null): void
 - [Best Practices Migrazioni](./MIGRATION_BEST_PRACTICES.md)
 - [Gestione Errori](./ERROR_HANDLING.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione XotBaseMigration](../xot/docs/xotbasemigration.md)
+- [Best Practices Migrazioni](./migration_best_practices.md)
+- [Gestione Errori](./error_handling.md)
+>>>>>>> dev

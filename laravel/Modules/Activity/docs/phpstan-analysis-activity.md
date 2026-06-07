@@ -5,10 +5,14 @@
 **PHPStan Level 10**: ✅ **PASSED** - No errors found
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Last Analysis**: [DATE]
 =======
 **Last Analysis**: 2025-11-12
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Last Analysis**: [DATE]
+>>>>>>> dev
 
 ## 🎯 Module Overview
 
@@ -78,10 +82,14 @@
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Analysis Date**: [DATE]
 =======
 **Analysis Date**: 2025-11-05
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Analysis Date**: [DATE]
+>>>>>>> dev
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1
 **Filament Version**: 4.2.0

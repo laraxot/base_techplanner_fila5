@@ -185,7 +185,11 @@ class LogoutPage
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](../filament_best_practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Routing Best Practices](../routing_best_practices.md) 
 =======
 - [Routing Best Practices](../ROUTING_BEST_PRACTICES.md) 
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Routing Best Practices](../routing_best_practices.md) 
+>>>>>>> dev

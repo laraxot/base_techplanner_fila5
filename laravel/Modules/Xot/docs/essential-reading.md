@@ -5,10 +5,14 @@
 ## 🎯 Per Iniziare (3 docs)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 1. [README.md](./readme.md) ⭐⭐⭐
 =======
 ### 1. [README.md](./README.md) ⭐⭐⭐
 >>>>>>> 4b6b99016 (first commit)
+=======
+### 1. [README.md](./readme.md) ⭐⭐⭐
+>>>>>>> dev
 **Cosa:** Entry point, panoramica generale, correzioni recenti
 **Perché:** Primo documento da leggere sempre
 **Tempo:** 5 minuti
@@ -59,10 +63,14 @@
 **Perché:** Prevenire race conditions e merge conflicts
 **Tempo:** 8 minuti
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Creato:** [DATE]
 =======
 **Creato:** 2025-11-04
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Creato:** [DATE]
+>>>>>>> dev
 
 ```bash
 # Regola fondamentale
@@ -72,11 +80,15 @@ rm file.php.lock     # Dopo modifica
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 ### 10. [merge-conflict-resolution-[DATE].md](./merge-conflict-resolution-[DATE].md) ⭐⭐ 🆕
 **Cosa:** Report tecnico risoluzione 18 file con merge conflicts
 **Perché:** Case study completo, pattern da evitare
 **Tempo:** 15 minuti
 **Creato:** [DATE]
+<<<<<<< HEAD
 =======
 ### 10. [merge-conflict-resolution-2025-11-04.md](./merge-conflict-resolution-2025-11-04.md) ⭐⭐ 🆕
 **Cosa:** Report tecnico risoluzione 18 file con merge conflicts
@@ -84,6 +96,8 @@ rm file.php.lock     # Dopo modifica
 **Tempo:** 15 minuti
 **Creato:** 2025-11-04
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## 📚 Letture Complementari (Opzionali)
 
@@ -104,10 +118,14 @@ rm file.php.lock     # Dopo modifica
 
 ### Lessons Learned
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [lessons-learned-[DATE]-merge-conflicts.md](./lessons-learned-[DATE]-merge-conflicts.md) - Processo filosofico 10-step
 =======
 - [lessons-learned-2025-11-04-merge-conflicts.md](./lessons-learned-2025-11-04-merge-conflicts.md) - Processo filosofico 10-step
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [lessons-learned-[DATE]-merge-conflicts.md](./lessons-learned-[DATE]-merge-conflicts.md) - Processo filosofico 10-step
+>>>>>>> dev
 
 ## 🗺️ Learning Path Consigliato
 
@@ -126,10 +144,14 @@ rm file.php.lock     # Dopo modifica
 ### Path per Debug Urgenti (30 min)
 1. README.md - Check "Correzioni Recenti"
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. merge-conflict-resolution-[DATE].md - Pattern errori comuni
 =======
 2. merge-conflict-resolution-2025-11-04.md - Pattern errori comuni
 >>>>>>> 4b6b99016 (first commit)
+=======
+2. merge-conflict-resolution-[DATE].md - Pattern errori comuni
+>>>>>>> dev
 3. troubleshooting.md (se esiste)
 4. File specifico al problema (cerca in index.md)
 
@@ -164,12 +186,17 @@ rm file.php.lock     # Dopo modifica
 
 ### ⭐ NICE TO READ (Per approfondimento)
 <<<<<<< HEAD
+<<<<<<< HEAD
 10. merge-conflict-resolution-[DATE].md
 11. lessons-learned-[DATE]-merge-conflicts.md
 =======
 10. merge-conflict-resolution-2025-11-04.md
 11. lessons-learned-2025-11-04-merge-conflicts.md
 >>>>>>> 4b6b99016 (first commit)
+=======
+10. merge-conflict-resolution-[DATE].md
+11. lessons-learned-[DATE]-merge-conflicts.md
+>>>>>>> dev
 12. service-providers.md
 
 ## 🎓 Quiz Auto-Valutazione
@@ -190,9 +217,13 @@ Se hai risposto correttamente a tutte, sei pronto per contribuire! 🎉
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Creato:** [DATE]
 =======
 **Creato:** 2025-11-04
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Creato:** [DATE]
+>>>>>>> dev
 **Scopo:** Ridurre cognitive load navigando 2,560+ docs
 **Aggiornato:** Dopo risoluzione massiva merge conflicts

@@ -20,10 +20,14 @@ return [
                 'group' => 'Geo',
                 'sort' => 10,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'icon' => 'ui-geo-map',
 =======
                 'icon' => 'ui-geo-map', // Questo è già corretto
 >>>>>>> 4b6b99016 (first commit)
+=======
+                'icon' => 'ui-geo-map',
+>>>>>>> dev
                 'badge' => [
                     'color' => 'info',
                     'label' => 'Interattiva',
@@ -49,10 +53,14 @@ return [
                 'group' => 'Geo',
                 'sort' => 20,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'icon' => 'ui-geo-location',
 =======
                 'icon' => 'ui-geo-location', // Questo è già corretto
 >>>>>>> 4b6b99016 (first commit)
+=======
+                'icon' => 'ui-geo-location',
+>>>>>>> dev
                 'badge' => [
                     'color' => 'warning',
                     'label' => 'Da Verificare',
@@ -111,6 +119,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Geo',
     'plural_label' => 'Geo (Plurale)',
     'fields' => [
@@ -144,6 +155,38 @@ return [
             'label' => 'Elimina Geo',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+    // Coordinate Picker - Map Controls
+    'coordinate-picker' => [
+        'search_placeholder' => 'Cerca un luogo...',
+        'use_my_location' => 'Usa la mia posizione',
+        'locating' => 'Localizzando...',
+        'no_position' => 'Clicca sulla mappa per indicare la posizione',
+        'latitude' => 'Latitudine',
+        'longitude' => 'Longitudine',
+        'city' => 'Città',
+        'fullscreen' => 'Schermo intero',
+        'close_fullscreen' => 'Esci da schermo intero',
+        'zoom_in' => 'Aumenta zoom',
+        'zoom_out' => 'Diminuisci zoom',
+        'layers' => [
+            'street' => 'Stradale (OSM)',
+            'humanitarian' => 'Umanitaria (OSM)',
+            'satellite' => 'Satellitare (Esri)',
+            'terrain' => 'Terreno (Topo)',
+            'topographic' => 'Topografica (Esri)',
+        ],
+        'address_found' => 'Indirizzo trovato',
+        'location_error' => 'Impossibile ottenere la posizione',
+        'location_denied' => 'Permesso posizione negato',
+        'geocode_error' => 'Indirizzo non trovato',
+        'search_results' => 'Risultati ricerca',
+        'no_results' => 'Nessun risultato',
+        'coordinates_set' => 'Coordinate impostate',
+    ],
+>>>>>>> dev
 ];

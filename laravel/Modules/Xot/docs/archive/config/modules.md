@@ -16,12 +16,17 @@ bisogna modificare il file /laravel/config/modules.php ed indicare la cartella g
 * [modules.md](docs/tecnico/laraxot/modules.md)
 * [modules.md](docs/architecture/modules.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [modules.md](../../../xot/project_docs/filament/modules.md)
 * [modules.md](../../../xot/project_docs/config/modules.md)
 =======
 * [modules.md](../../../Xot/project_docs/filament/modules.md)
 * [modules.md](../../../Xot/project_docs/config/modules.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [modules.md](../../../xot/project_docs/filament/modules.md)
+* [modules.md](../../../xot/project_docs/config/modules.md)
+>>>>>>> dev
 
 ### Versione Incoming
 

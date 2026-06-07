@@ -6,6 +6,7 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 use Modules\User\Models\Notification;
@@ -19,13 +20,22 @@ use Modules\User\Models\User;
  * @extends Factory<Notification>
  */
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\User\Models\Notification;
+
+>>>>>>> dev
 class NotificationFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
     protected $model = \Modules\User\Models\Notification::class;
+=======
+     */
+    protected $model = Notification::class;
+>>>>>>> dev
 
     /**
      * Define the model's default state.
@@ -33,6 +43,7 @@ class NotificationFactory extends Factory
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
      *
      * @var class-string<Notification>
@@ -128,5 +139,7 @@ class NotificationFactory extends Factory
             'type' => $type,
         ]);
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 }

@@ -162,11 +162,15 @@ GET / → Folio → index.blade.php
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Modulo <nome progetto>](laravel/modules/<nome progetto>/docs/homepage-architecture.md)
 - [Modulo CMS](laravel/modules/cms/docs/filament-blocks-system.md)
 - [Modulo UI](laravel/modules/ui/docs/blocks-system.md)
 - [Tema One](laravel/themes/one/docs/homepage-structure.md)
 
+<<<<<<< HEAD
 =======
 - [Modulo <nome progetto>](laravel/Modules/<nome progetto>/docs/homepage-architecture.md)
 - [Modulo CMS](laravel/Modules/Cms/docs/filament-blocks-system.md)
@@ -175,3 +179,5 @@ GET / → Folio → index.blade.php
 
 *Ultimo aggiornamento: Dicembre 2024*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

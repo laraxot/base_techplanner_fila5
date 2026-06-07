@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Guida all'Implementazione UX in il progetto
 
 Questa guida fornisce indicazioni pratiche su come implementare i principi UX documentati in [Leggi di UX](/project_docs/07-frontend/leggi-ux.md) nel progetto il progetto. È rivolta agli sviluppatori e ai designer che lavorano sul progetto.
@@ -467,3 +468,12 @@ Per approfondimenti, consultare:
 - [UX del Wizard di Registrazione](/project_docs/07-frontend/ux-wizard-registrazione-paziente.md)
 - [DaisyUI Documentation](https://daisyui.com/components/)
 - [Filament Documentation](https://filamentphp.com/project_docs/forms) 
+=======
+---
+module: theme
+topic: guida_implementazione_ux
+canonical: ../../../Themes/docs/shared-components/guida-implementazione-ux.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/guida-implementazione-ux.md
+>>>>>>> dev

@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 return array (
   'sections' => 
   array (
@@ -41,6 +44,7 @@ return array (
   array (
   ),
 );
+<<<<<<< HEAD
 =======
 return [
     'sections' => [
@@ -63,3 +67,5 @@ return [
     ],
 ];
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

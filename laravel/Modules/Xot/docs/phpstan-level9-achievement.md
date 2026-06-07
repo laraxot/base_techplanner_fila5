@@ -1,9 +1,12 @@
 # 🏆 PHPStan Level 9 Achievement - Framework Xot
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 18 Agosto 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Risultato**: ✅ **PERFETTO** - 0 errori PHPStan Level 9
 **Partenza**: 832 errori → **0 errori** (-100%)
 

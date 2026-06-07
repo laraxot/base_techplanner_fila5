@@ -140,6 +140,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'email' => [
             'label' => 'E-Mail',
             'tooltip' => '',
@@ -250,6 +253,7 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
         'email' => 'E-Mail',
         'login' => 'Einloggen',
@@ -271,4 +275,6 @@ return [
     'or' => 'Oder',
     'cancel' => 'Abbrechen',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

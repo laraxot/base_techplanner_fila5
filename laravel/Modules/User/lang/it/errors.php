@@ -65,6 +65,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'name' => 'Errors',
         'plural' => 'Errors',
@@ -109,6 +112,7 @@ return [
             'label' => 'Elimina Errors',
         ],
     ],
+<<<<<<< HEAD
 =======
     'navigation' => [],
     'label' => '',
@@ -116,4 +120,6 @@ return [
     'fields' => [],
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

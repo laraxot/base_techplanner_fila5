@@ -7,6 +7,7 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\Permission;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /**
 =======
@@ -16,6 +17,10 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
  * Factory per il modello Permission del modulo User.
  *
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+/**
+>>>>>>> dev
  * @extends Factory<Permission>
  */
 class PermissionFactory extends Factory
@@ -29,21 +34,29 @@ class PermissionFactory extends Factory
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Define the model's default state.
 =======
      * Definisce lo stato di default del modello.
 >>>>>>> 4b6b99016 (first commit)
+=======
+     * Define the model's default state.
+>>>>>>> dev
      *
      * @return array<string, mixed>
      */
     public function definition(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         return [
             'name' => fake()->unique()->word(),
             'guard_name' => 'web',
         ];
     }
+<<<<<<< HEAD
 =======
         $actions = ['create', 'read', 'update', 'delete', 'manage', 'view', 'edit'];
         $resources = [
@@ -129,4 +142,6 @@ class PermissionFactory extends Factory
         ]);
     }
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 }

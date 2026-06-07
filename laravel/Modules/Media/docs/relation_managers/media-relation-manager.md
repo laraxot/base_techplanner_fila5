@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MediaRelationManager
 
 ## Descrizione
@@ -29,3 +30,12 @@ Le azioni sono implementate seguendo le convenzioni documentate in `filament_tab
 - Mantenere la coerenza con le convenzioni di naming
 - Assicurarsi che tutte le azioni abbiano chiavi stringa
 - Mantenere la documentazione PHPDoc aggiornata
+=======
+---
+module: theme
+topic: media-relation-manager
+canonical: ../../../../Themes/docs/shared-components/media-relation-manager-1.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/media-relation-manager-1.md
+>>>>>>> dev

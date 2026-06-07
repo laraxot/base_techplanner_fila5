@@ -1,9 +1,12 @@
 # Miglioramenti Prompt - Laraxot Framework
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2026-01-12  
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Status**: ✅ Completato
 
 ---

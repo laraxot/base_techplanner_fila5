@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura Pagine Filament - Modulo UI
 
 ## Panoramica
@@ -187,3 +188,12 @@ class S3Test extends XotBasePage
 
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: filament-pages-structure
+canonical: ../../../Themes/docs/shared-components/filament-pages-structure.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-pages-structure.md
+>>>>>>> dev

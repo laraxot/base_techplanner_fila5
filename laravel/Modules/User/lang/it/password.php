@@ -12,6 +12,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -72,6 +75,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
@@ -96,6 +100,8 @@ return [
         'numbers' => [
             'help' => 'la password richiede almeno un numero',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'symbols' => [
             'help' => 'la password richiede almeno un simbolo',
@@ -103,11 +109,17 @@ return [
                 'help' => 'la password richiede almeno un simbolo',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'uncompromised' => [
             'help' => 'Se la password non deve essere stata compromessa in data leaks',
@@ -115,11 +127,17 @@ return [
                 'help' => 'Se la password non deve essere stata compromessa in data leaks',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'compromisedThreshold' => [
             'help' => 'Il numero di volte che una password può apparire in data leaks prima di essere considerata compromessa',
@@ -127,11 +145,17 @@ return [
                 'help' => 'Il numero di volte che una password può apparire in data leaks prima di essere considerata compromessa',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'new_password' => [
             'label' => 'new_password',
@@ -142,9 +166,13 @@ return [
             'helper_text' => 'new_password',
             'placeholder' => 'new_password',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'password' => [
             'label' => 'Password',
@@ -152,9 +180,13 @@ return [
             'helper_text' => 'La password deve essere di almeno 8 caratteri',
             'description' => 'Password',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
@@ -162,9 +194,13 @@ return [
             'helper_text' => 'Reinserisci la password per confermare',
             'description' => 'Conferma Password',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -186,10 +222,15 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Password',
     'plural_label' => 'Password (Plurale)',
 =======
     'label' => '',
     'plural_label' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Password',
+    'plural_label' => 'Password (Plurale)',
+>>>>>>> dev
 ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # XotBasePage - Classe Base per le Pagine Filament
 
 ## Descrizione
@@ -179,3 +180,12 @@ La classe è progettata per essere compatibile con Filament v3+ e garantisce il 
 - [Principi di Ereditarietà](../Xot/docs/class_inheritance_principles.md)
 - [Architettura Filament-Xot](../Xot/docs/filament_xot_architecture.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: xotbasepage
+canonical: ../../../../../Themes/docs/shared-components/xotbaage.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/xotbaage.md
+>>>>>>> dev

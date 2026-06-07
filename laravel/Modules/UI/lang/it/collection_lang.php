@@ -20,46 +20,69 @@ return [
             'placeholder' => 'Seleziona elemento predefinito',
             'helper_text' => 'Elemento predefinito della collezione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'itemKey' => [
             'label' => 'Chiave Elemento',
             'placeholder' => 'Inserisci chiave elemento',
             'helper_text' => 'Chiave identificativa dell\'elemento',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'itemValue' => [
             'label' => 'Valore Elemento',
             'placeholder' => 'Inserisci valore elemento',
             'helper_text' => 'Valore dell\'elemento della collezione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'values' => [
             'label' => 'Valori',
             'placeholder' => 'Inserisci valori',
             'helper_text' => 'Valori della collezione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci nome collezione',
             'helper_text' => 'Nome identificativo della collezione',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'description' => '',
         ],
@@ -75,8 +98,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Collection Lang',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

@@ -19,7 +19,11 @@ class Image
                 TextInput::make('url'),
                 Select::make('ratio')
                     ->options(static::getRatios())
+<<<<<<< HEAD
                     ->afterStateHydrated(function (mixed $state, mixed $set) {
+=======
+                    ->afterStateHydrated(function (mixed $state, mixed $set): void {
+>>>>>>> dev
                         if (! $state && is_callable($set)) {
                             $set('ratio', '4-3');
                         }

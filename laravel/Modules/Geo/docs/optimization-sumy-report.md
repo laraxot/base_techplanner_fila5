@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Report di Sintesi - Analisi e Ottimizzazioni Moduli
 
 ## 📋 Executive Summary
@@ -255,3 +256,12 @@ jobs:
 *Report compilato: gennaio 2025*
 *Analista: AI Assistant seguendo metodologia DRY+KISS*
 *Validazione: Script automatici e review manuale*
+=======
+---
+module: theme
+topic: optimization-sumy-report
+canonical: ../../../Themes/docs/shared-components/optimization-summary-report.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/optimization-summary-report.md
+>>>>>>> dev

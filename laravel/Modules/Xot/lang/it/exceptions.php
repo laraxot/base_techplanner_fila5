@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /*
     |--------------------------------------------------------------------------
@@ -17,12 +18,17 @@ return [
     */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'backend' => [
         'access' => [
             'roles' => [
                 'already_exists' => 'Questo ruolo esiste già. Si prega di scegliere un nome diverso.',
                 'cant_delete_admin' => 'Non è possibile eliminare il ruolo di Amministratore.',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
                 'create_error' => 'C\'è stato un problema durante la creazione di questo ruolo. Si prega di riprovare più tardi.',
                 'delete_error' => 'C\'è stato un problema durante l\'eliminazione di questo ruolo. Si prega di riprovare più tardi.',
                 'has_users' => 'Non è possibile cancellare un ruolo associato a degli utenti.',
@@ -30,6 +36,7 @@ return [
                 'not_found' => 'Questo ruolo non esiste.',
                 'update_error' => 'C\'è stato un problema durante l\'aggiornamento di questo ruolo. Si prega di riprovare più tardi.',
             ],
+<<<<<<< HEAD
 =======
                 'create_error' => "C'è stato un problema durante la creazione di questo ruolo. Si prega di riprovare più tardi.",
                 'delete_error' => "C'è stato un problema durante l'eliminazione di questo ruolo. Si prega di riprovare più tardi.",
@@ -40,11 +47,16 @@ return [
             ],
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             'users' => [
                 'cant_deactivate_self' => 'Non puoi eseguire questa operazione su te stesso.',
                 'cant_delete_self' => 'Non puoi cancellare te stesso.',
                 'cant_restore' => 'This user is not deleted so it can not be restored.',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
                 'create_error' => 'C\'è stato un problema durante la creazione dell\'utente. Si prega di riprovare.',
                 'delete_error' => 'C\'è stato un problema durante l\'eliminazione dell\'utente. Si prega di riprovare.',
                 'delete_first' => 'This user must be deleted first before it can be destroyed permanently.',
@@ -59,6 +71,7 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
 =======
                 'create_error' => "C'è stato un problema durante la creazione dell'utente. Si prega di riprovare.",
                 'delete_error' => "C'è stato un problema durante l'eliminazione dell'utente. Si prega di riprovare.",
@@ -76,12 +89,17 @@ return [
     ],
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'frontend' => [
         'auth' => [
             'confirmation' => [
                 'already_confirmed' => 'Il tuo account è già confermato',
                 'confirm' => 'Conferma il tuo account!',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
                 'created_confirm' => 'Il tuo account è stato creato con successo. Ti abbiamo inviato un\'email per confermare il tuo account.',
                 'mismatch' => 'Il tuo codice di conferma non corrisponde',
                 'not_found' => 'Questo codice di conferma non esiste.',
@@ -91,6 +109,7 @@ return [
             ],
             'deactivated' => 'Il tuo account è stato disattivato.',
             'email_taken' => 'Questo indirizzo e-mail è stato già utilizzato.',
+<<<<<<< HEAD
 =======
                 'created_confirm' => "Il tuo account è stato creato con successo. Ti abbiamo inviato un'email per confermare il tuo account.",
                 'mismatch' => 'Il tuo codice di conferma non corrisponde',
@@ -104,12 +123,17 @@ return [
             'email_taken' => 'Questo indirizzo e-mail è stato già utilizzato.',
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             'password' => [
                 'change_mismatch' => 'Questa non è la tua vecchia password.',
             ],
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Exceptions',
     'plural_label' => 'Exceptions (Plurale)',
     'navigation' => [
@@ -146,6 +170,9 @@ return [
             'label' => 'Elimina Exceptions',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

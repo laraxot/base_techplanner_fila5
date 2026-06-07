@@ -64,6 +64,9 @@ return [
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Gestione Domini](domain_configuration.md)
 - [Struttura del Progetto](project_structure.md)
 - [Documentazione Principale](../readme.md)
@@ -71,6 +74,7 @@ return [
 * [configuration.md](docs/configuration.md)
 * [configuration.md](../../../xot/docs/configuration.md)
 * [configuration.md](../../../cms/docs/configuration.md)
+<<<<<<< HEAD
 =======
 - [Gestione Domini](DOMAIN_CONFIGURATION.md)
 - [Struttura del Progetto](PROJECT_STRUCTURE.md)
@@ -80,3 +84,5 @@ return [
 * [configuration.md](../../../Xot/docs/configuration.md)
 * [configuration.md](../../../Cms/docs/configuration.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -2,9 +2,16 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(\Modules\Job\Tests\TestCase::class);
 
 use Modules\Job\Models\Job;
+=======
+uses(TestCase::class);
+
+use Modules\Job\Models\Job;
+use Modules\Job\Tests\TestCase;
+>>>>>>> dev
 
 describe('Job Business Logic', function () {
     it('can create job with basic information', function () {

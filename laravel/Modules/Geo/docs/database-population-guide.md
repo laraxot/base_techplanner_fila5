@@ -18,10 +18,14 @@ Questa guida descrive come popolare il database del progetto Laraxot <nome proge
 ### 1. Modulo User
 **Path**: `Modules/User/database/`
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Documentazione**: [User Database Population](../laravel/modules/user/docs/database-population.md)
 =======
 **Documentazione**: [User Database Population](../laravel/Modules/User/docs/database-population.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Documentazione**: [User Database Population](../laravel/modules/user/docs/database-population.md)
+>>>>>>> dev
 
 **Factories Disponibili**:
 - `UserFactory` - Generazione utenti base
@@ -40,16 +44,22 @@ Questa guida descrive come popolare il database del progetto Laraxot <nome proge
 ### 2. Modulo <nome progetto>
 **Path**: `Modules/<nome progetto>/database/`
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 **Documentazione**: [<nome progetto> Database Population](../laravel/modules/<nome progetto>/docs/database-population.md)
 ### 2. Modulo <nome progetto>
 **Path**: `Modules/<nome progetto>/database/`
 **Documentazione**: [<nome progetto> Database Population](../laravel/modules/<nome progetto>/docs/database-population.md)
+<<<<<<< HEAD
 =======
 **Documentazione**: [<nome progetto> Database Population](../laravel/Modules/<nome progetto>/docs/database-population.md)
 ### 2. Modulo <nome progetto>
 **Path**: `Modules/<nome progetto>/database/`
 **Documentazione**: [<nome progetto> Database Population](../laravel/Modules/<nome progetto>/docs/database-population.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 **Factories Disponibili**:
 - `UserFactory` - Utenti sanitari
@@ -66,10 +76,14 @@ Questa guida descrive come popolare il database del progetto Laraxot <nome proge
 ### 3. Modulo Tenant
 **Path**: `Modules/Tenant/database/`
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Documentazione**: [Tenant Database Population](../laravel/modules/tenant/docs/database-population.md)
 =======
 **Documentazione**: [Tenant Database Population](../laravel/Modules/Tenant/docs/database-population.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Documentazione**: [Tenant Database Population](../laravel/modules/tenant/docs/database-population.md)
+>>>>>>> dev
 
 **Factories Disponibili**:
 - `TenantFactory` - Generazione tenant
@@ -335,6 +349,9 @@ php artisan tinker
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [User Module Database Population](../laravel/modules/user/docs/database-population.md)
 - [<nome progetto> Module Database Population](../laravel/modules/<nome progetto>/docs/database-population.md)
 - [Tenant Module Database Population](../laravel/modules/tenant/docs/database-population.md)
@@ -346,6 +363,7 @@ php artisan tinker
 
 ---
 
+<<<<<<< HEAD
 =======
 - [User Module Database Population](../laravel/Modules/User/docs/database-population.md)
 - [<nome progetto> Module Database Population](../laravel/Modules/<nome progetto>/docs/database-population.md)
@@ -360,5 +378,7 @@ php artisan tinker
 
 **Ultimo aggiornamento**: Gennaio 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Versione**: 1.0
 **Autore**: Sistema Laraxot

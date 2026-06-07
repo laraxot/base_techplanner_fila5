@@ -10,7 +10,10 @@ use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Panel;
 use Filament\PanelProvider;
+<<<<<<< HEAD
 use Filament\Support\Colors\Color;
+=======
+>>>>>>> dev
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
@@ -19,6 +22,10 @@ use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Modules\Cms\Filament\Pages\Themes;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Datas\MetatagData;
+>>>>>>> dev
 
 class FrontPanelProvider extends PanelProvider
 {
@@ -27,9 +34,13 @@ class FrontPanelProvider extends PanelProvider
         return $panel
             ->id('cms::front')
             ->path('{lang}/front')
+<<<<<<< HEAD
             ->colors([
                 'primary' => Color::Amber,
             ])
+=======
+            ->colors(MetatagData::make()->getAllColors())
+>>>>>>> dev
             ->discoverResources(
                 in: app_path('Filament/Front/Resources'),
                 for: 'App\\Filament\\Front\\Resources',

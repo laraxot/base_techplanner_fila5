@@ -50,10 +50,14 @@ Modules/Notify/resources/views/emails/templates/ark/wideImage.blade.php
 **Blade templates**: Seguire convenzione esistente (qui camelCase per i componenti)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vedi documentazione completa: [Xot/docs/file-naming-case-sensitivity.md](../../xot/docs/file-naming-case-sensitivity.md)
 =======
 Vedi documentazione completa: [Xot/docs/file-naming-case-sensitivity.md](../../Xot/docs/file-naming-case-sensitivity.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+Vedi documentazione completa: [Xot/docs/file-naming-case-sensitivity.md](../../xot/docs/file-naming-case-sensitivity.md)
+>>>>>>> dev
 
 ## ⚠️ Problema
 
@@ -109,10 +113,15 @@ git commit -m "fix: remove lowercase duplicate files (case sensitivity complianc
 
 **Riferimenti**: 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Xot File Naming Rules](../../xot/docs/file-naming-case-sensitivity.md)
 - [Bashscripts Location Policy](../../xot/docs/bashscripts-location-policy.md)
 =======
 - [Xot File Naming Rules](../../Xot/docs/file-naming-case-sensitivity.md)
 - [Bashscripts Location Policy](../../Xot/docs/bashscripts-location-policy.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Xot File Naming Rules](../../xot/docs/file-naming-case-sensitivity.md)
+- [Bashscripts Location Policy](../../xot/docs/bashscripts-location-policy.md)
+>>>>>>> dev
 

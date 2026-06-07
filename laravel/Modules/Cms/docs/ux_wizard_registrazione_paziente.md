@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Applicazione delle Leggi UX al Wizard di Registrazione Paziente
 
 Questo documento illustra come le leggi di UX del sito [Laws of UX](https://lawsofux.com/) sono state applicate specificamente al wizard di registrazione paziente nel progetto il progetto.
@@ -206,3 +207,12 @@ L'applicazione di questi principi di UX al wizard di registrazione paziente dovr
 - [Documenti di progettazione il progetto](/project_docs/07-frontend/leggi-ux.md)
 - [Documentazione Filament Forms](https://filamentphp.com/project_docs/forms)
 - [Best Practices Filament](/project_docs/tecnico/filament/best-practices.md) 
+=======
+---
+module: theme
+topic: ux_wizard_registrazione_paziente
+canonical: ../../../Themes/docs/shared-components/ux-wizard-registrazione-paziente.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ux-wizard-registrazione-paziente.md
+>>>>>>> dev

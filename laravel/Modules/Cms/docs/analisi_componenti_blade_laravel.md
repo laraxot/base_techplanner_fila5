@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Corretta dei Componenti Blade in Laravel
 
 Questo documento definisce le linee guida per l'analisi e l'identificazione corretta dei componenti Blade in Laravel, con particolare attenzione all'ecosistema il progetto.
@@ -104,3 +105,12 @@ find_by_name /var/www/html/<directory progetto>/laravel/Themes/One/resources/vie
 L'analisi corretta dei componenti Blade in Laravel richiede un approccio metodico e verifiche approfondite. Seguendo la procedura in 5 passaggi descritta in questo documento, è possibile evitare errori di identificazione e fornire informazioni accurate sui componenti utilizzati nel progetto il progetto.
 
 Ricorda: **Verifica sempre, non assumere mai**. Questo principio è fondamentale per mantenere l'accuratezza e l'affidabilità dell'analisi del codice.
+=======
+---
+module: theme
+topic: analisi_componenti_blade_laravel
+canonical: ../../../Themes/docs/shared-components/analisi-componenti-blade-laravel.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/analisi-componenti-blade-laravel.md
+>>>>>>> dev

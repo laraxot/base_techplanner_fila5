@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -160,6 +163,7 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
+<<<<<<< HEAD
 =======
         'name' => 'Nome',
         'name.placeholder' => 'Inserisci il nome del tenant',
@@ -186,5 +190,7 @@ return [
         'domain.placeholder' => 'Inserisci il dominio',
         'domain.helper_text' => 'Il dominio personalizzato per questo tenant',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
 ];

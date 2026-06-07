@@ -15,9 +15,13 @@ use Modules\TechPlanner\Database\Factories\ParticipantFactoryFactory;
  * @method static Builder<static>|Participant newQuery()
  * @method static Builder<static>|Participant query()
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class Participant extends Model

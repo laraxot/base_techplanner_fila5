@@ -24,6 +24,9 @@ return [
             'tooltip' => 'اختر بين عرض القائمة وعرض الشبكة',
             'help' => 'اختر نوع التخطيط المناسب لعرض البيانات',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -37,8 +40,11 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 =======
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

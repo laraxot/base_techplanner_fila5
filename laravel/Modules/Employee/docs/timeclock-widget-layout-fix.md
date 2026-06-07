@@ -42,9 +42,12 @@
 <div class="text-center space-y-6" wire:poll.30s="updateData">
     
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     {{-- Time/Date: OK ma non in colonna --}}
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     <div class="space-y-2">...</div>
     
     {{-- Sessions: Lista verticale invece che compatta --}}

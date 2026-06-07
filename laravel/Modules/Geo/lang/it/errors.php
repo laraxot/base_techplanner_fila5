@@ -115,6 +115,9 @@ return [
     ],
     'http_status' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         100 => 'Continua',
         101 => 'Cambio protocollo',
         200 => 'OK',
@@ -143,6 +146,7 @@ return [
         503 => 'Servizio non disponibile',
         504 => 'Timeout del gateway',
         505 => 'Versione HTTP non supportata',
+<<<<<<< HEAD
 =======
         '100' => 'Continua',
         '101' => 'Cambio protocollo',
@@ -173,6 +177,8 @@ return [
         '504' => 'Timeout del gateway',
         '505' => 'Versione HTTP non supportata',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'suggestions' => [
         'check_connection' => 'Verifica la connessione di rete',
@@ -197,6 +203,9 @@ return [
         'check_projection' => 'Verifica la proiezione cartografica',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Errors',
     'plural_label' => 'Errors (Plurale)',
     'navigation' => [
@@ -241,6 +250,9 @@ return [
             'label' => 'Elimina Errors',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

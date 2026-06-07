@@ -15,6 +15,9 @@ return [
         'id' => [
             'label' => 'ID',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -84,6 +87,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'name' => [
@@ -119,15 +123,22 @@ return [
         'created_at' => [
             'label' => 'Created At',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'body_html' => [
             'description' => 'HTML Body',
             'helper_text' => 'HTML content of the email',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'label' => '',
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [

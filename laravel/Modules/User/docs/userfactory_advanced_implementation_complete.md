@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UserFactory Advanced Implementation - COMPLETE ✅
 
 ## 🎉 Mission Accomplished
@@ -308,3 +309,12 @@ $gdprTests = [
 >>>>>>> 4b6b99016 (first commit)
 
 **🎉 MISSION ACCOMPLISHED - UserFactory Advanced Implementation Complete! 🎉** 
+=======
+---
+module: theme
+topic: userfactory_advanced_implementation_complete
+canonical: ../../../Themes/docs/shared-components/userfactory_advanced_implementation_complete.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/userfactory_advanced_implementation_complete.md
+>>>>>>> dev

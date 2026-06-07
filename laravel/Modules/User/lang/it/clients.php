@@ -7,6 +7,9 @@ return [
         'name' => [
             'label' => 'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -36,6 +39,7 @@ return [
             'label' => 'Elimina Clients',
         ],
     ],
+<<<<<<< HEAD
 =======
         ],
     ],
@@ -44,4 +48,6 @@ return [
     'plural_label' => '',
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 @import 'tailwindcss';
 @plugin "daisyui";
 
@@ -323,6 +326,7 @@ html {
 .skip-to-content:focus {
     top: 0;
 }
+<<<<<<< HEAD
 =======
 @tailwind base;
 
@@ -358,3 +362,5 @@ a, .prose a {
 
 @tailwind utilities;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

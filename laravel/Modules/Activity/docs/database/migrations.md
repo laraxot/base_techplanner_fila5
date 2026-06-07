@@ -27,9 +27,14 @@ Questo documento descrive le migrazioni del database per il modulo Activity. Ogn
 
 ## Collegamenti tra versioni di migrations.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [migrations.md](../../../gdpr/docs/migrations.md)
 * [migrations.md](../../../notify/docs/migrations.md)
 =======
 * [migrations.md](../../../Gdpr/docs/migrations.md)
 * [migrations.md](../../../Notify/docs/migrations.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [migrations.md](../../../gdpr/docs/migrations.md)
+* [migrations.md](../../../notify/docs/migrations.md)
+>>>>>>> dev

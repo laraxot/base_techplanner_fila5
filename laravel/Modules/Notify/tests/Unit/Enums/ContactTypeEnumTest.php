@@ -2,13 +2,23 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(\Modules\Notify\Tests\TestCase::class);
+=======
+namespace Modules\Notify\Tests\Unit\Enums;
+
+uses(TestCase::class);
+>>>>>>> dev
 
 use Filament\Forms\Components\TextInput;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Modules\Notify\Enums\ContactTypeEnum;
+<<<<<<< HEAD
+=======
+use Modules\Notify\Tests\TestCase;
+>>>>>>> dev
 
 it('has correct cases', function (): void {
     expect(ContactTypeEnum::cases())->toHaveCount(6);
@@ -28,7 +38,11 @@ it('implements filament contracts', function (): void {
 });
 
 it('has trans trait', function (): void {
+<<<<<<< HEAD
     $reflection = new ReflectionClass(ContactTypeEnum::class);
+=======
+    $reflection = new \ReflectionClass(ContactTypeEnum::class);
+>>>>>>> dev
     $traits = $reflection->getTraitNames();
 
     expect($traits)->toContain('Modules\\Xot\\Filament\\Traits\\TransTrait');

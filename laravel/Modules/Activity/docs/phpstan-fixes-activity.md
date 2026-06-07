@@ -83,6 +83,9 @@ $activities = \Modules\Activity\Database\Factories\ActivityFactory::new()
 - **PHPStan Level 9**: Compliance ripristinata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

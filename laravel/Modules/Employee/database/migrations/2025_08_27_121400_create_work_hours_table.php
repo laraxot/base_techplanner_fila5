@@ -24,6 +24,9 @@ return new class() extends XotBaseMigration
 
         // -- CREATE --
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         // Nota: nessuna FK verso 'users' perché la tabella users è sulla connessione 'user',
         // mentre work_hours è sulla connessione 'xot' (techplanner_data). MySQL non permette
         // FK cross-database. Le relazioni sono gestite a livello applicativo (Eloquent).
@@ -31,6 +34,7 @@ return new class() extends XotBaseMigration
             $table->id();
 
             $table->uuid('employee_id')->index();
+<<<<<<< HEAD
 =======
         $this->tableCreate(static function (Blueprint $table): void {
             $table->id();
@@ -38,6 +42,8 @@ return new class() extends XotBaseMigration
             $table->uuid('employee_id');
             $table->foreign('employee_id')->references('id')->on('users')->onDelete('cascade');
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
             $table->enum('type', ['clock_in', 'clock_out', 'break_start', 'break_end']);
 
@@ -58,11 +64,15 @@ return new class() extends XotBaseMigration
             $table->enum('status', ['pending', 'approved', 'rejected'])->default('pending');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             $table->uuid('approved_by')->nullable()->index();
 =======
             $table->uuid('approved_by')->nullable();
             $table->foreign('approved_by')->references('id')->on('users')->onDelete('set null');
 >>>>>>> 4b6b99016 (first commit)
+=======
+            $table->uuid('approved_by')->nullable()->index();
+>>>>>>> dev
 
             $table->dateTime('approved_at')->nullable();
 
@@ -78,7 +88,11 @@ return new class() extends XotBaseMigration
         });
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 };
 =======
 };
 >>>>>>> 4b6b99016 (first commit)
+=======
+};
+>>>>>>> dev

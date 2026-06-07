@@ -7,6 +7,7 @@ namespace Modules\Xot\Datas;
 use Spatie\LaravelData\Data;
 
 /**
+<<<<<<< HEAD
  * Class MailData - Gestisce la configurazione delle email per il framework Laraxot.
  * Utilizzato nel contesto dell'architettura Filament-first senza controller tradizionali.
  */
@@ -36,12 +37,50 @@ class MailData extends Data
         public readonly ?string $reply_to = null,
         public readonly bool $verify_peer = true,
     ) {}
+=======
+ * Class MailData - Gestisce la configurazione delle email.
+ * Utilizzato nel contesto dell'architettura Filament-first.
+ *
+ * @phpstan-consistent-constructor
+ *
+ * @param string $driver
+ * @param array<string, int|string> $smtpConfig
+ * @param array<string, string> $fromConfig
+ * @param string|null $replyTo
+ * @param bool $verifyPeer
+ */
+final class MailData extends Data
+{
+    public function __construct(
+        public readonly string $driver = 'smtp',
+        public readonly array $smtpConfig = [
+            'host' => 'smtp.mailtrap.io',
+            'port' => 2525,
+            'encryption' => 'tls',
+            'username' => '',
+            'password' => '',
+        ],
+        public readonly array $fromConfig = [
+            'address' => 'no-reply@example.com',
+            'name' => 'Laraxot App',
+        ],
+        public readonly ?string $replyTo = null,
+        public readonly bool $verifyPeer = true,
+    ) {
+    }
+>>>>>>> dev
 
     /**
      * Create a new instance of MailData with default values.
      */
+<<<<<<< HEAD
     public static function make(): static
     {
         return new static;
+=======
+    public static function make(): self
+    {
+        return new self();
+>>>>>>> dev
     }
 }

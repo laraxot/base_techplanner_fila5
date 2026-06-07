@@ -169,6 +169,9 @@ Laravel Framework 12.28.1
 ✅ **DOCUMENTATO**: Soluzione centralizzata implementata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 19 Settembre 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

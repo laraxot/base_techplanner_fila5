@@ -18,10 +18,14 @@ class LangServiceProvider extends ServiceProvider
     {
         $this->loadTranslationsFrom(__DIR__.'/../lang', 'lang');
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         // Cache delle traduzioni
         if ($this->app->runningInConsole()) {
             $this->commands([
@@ -42,20 +46,28 @@ class TranslationValidator
         // Verifica che tutte le lingue supportate abbiano la traduzione
         $supportedLocales = config('app.supported_locales', ['it', 'en']);
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         foreach ($supportedLocales as $locale) {
             if (!isset($translations[$locale][$key])) {
                 return false;
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         return true;
     }
 }
@@ -70,6 +82,9 @@ class TranslationManager
         $locale = $locale ?? app()->getLocale();
         $fallbackLocale = config('app.fallback_locale', 'en');
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         
         $translation = $this->getTranslation($key, $replace, $locale);
         
@@ -77,6 +92,7 @@ class TranslationManager
             return $this->getTranslation($key, $replace, $fallbackLocale);
         }
         
+<<<<<<< HEAD
 =======
 
         $translation = $this->getTranslation($key, $replace, $locale);
@@ -86,6 +102,8 @@ class TranslationManager
         }
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         return $translation;
     }
 }
@@ -99,10 +117,14 @@ class LangServiceProvider extends ServiceProvider
     {
         $this->app['translator']->addNamespace('lang', __DIR__.'/../lang');
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         // Supporto per namespace personalizzati
         foreach (config('lang.namespaces', []) as $namespace => $path) {
             $this->app['translator']->addNamespace($namespace, $path);
@@ -123,10 +145,14 @@ class CacheTranslationsCommand extends Command
         $translations = $this->getAllTranslations();
         Cache::put('translations', $translations, now()->addDay());
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         $this->info('Traduzioni cacheate con successo.');
     }
 }
@@ -159,11 +185,15 @@ class LocaleMiddleware
     {
         $locale = $request->header('Accept-Language');
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         
         if ($locale && in_array($locale, config('lang.supported_locales'))) {
             app()->setLocale($locale);
         }
         
+<<<<<<< HEAD
 =======
 
         if ($locale && in_array($locale, config('lang.supported_locales'))) {
@@ -171,6 +201,8 @@ class LocaleMiddleware
         }
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         return $next($request);
     }
 }
@@ -205,10 +237,14 @@ class TranslationMissing
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Traduzioni](../readme.md)
 =======
 - [Documentazione Traduzioni](../README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione Traduzioni](../readme.md)
+>>>>>>> dev
 - [Guida Implementazione](./implementation-guide.md)
 - [Best Practices](./best-practices.md)
 
@@ -217,6 +253,7 @@ class TranslationMissing
 - Implementare validazione delle chiavi
 - Gestire fallback locale
 - Supportare namespace personalizzati
+<<<<<<< HEAD
 <<<<<<< HEAD
 - Ottimizzare performance 
 =======
@@ -400,3 +437,6 @@ class TranslationMissing
 - Supportare namespace personalizzati
 - Ottimizzare performance
 >>>>>>> 4b6b99016 (first commit)
+=======
+- Ottimizzare performance 
+>>>>>>> dev

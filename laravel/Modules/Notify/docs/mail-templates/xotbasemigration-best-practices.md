@@ -58,10 +58,14 @@ if ($this->hasColumn('subject') && !$this->isColumnType('subject', 'json')) {
         $table->json('subject_json')->nullable()->after('subject');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // 2. Migra i dati solo se la colonna temporanea esiste
     if ($this->hasColumn('subject_json')) {
         DB::table('mail_templates')->chunkById(100, function ($records) {
@@ -77,10 +81,14 @@ if ($this->hasColumn('subject') && !$this->isColumnType('subject', 'json')) {
         });
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // 3. Rimuovi e rinomina
     $table->dropColumn('subject');
     $table->renameColumn('subject_json', 'subject');
@@ -105,34 +113,47 @@ Quando si utilizza `Schema::hasColumn()` direttamente, si bypassa tutta questa l
 ## Come evitare errori
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Verifica esistenza colonna**: 
 =======
 1. **Verifica esistenza colonna**:
 >>>>>>> 4b6b99016 (first commit)
+=======
+1. **Verifica esistenza colonna**: 
+>>>>>>> dev
    ```php
    $this->hasColumn('column_name')
    ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **Verifica tipo colonna**: 
 =======
 2. **Verifica tipo colonna**:
 >>>>>>> 4b6b99016 (first commit)
+=======
+2. **Verifica tipo colonna**: 
+>>>>>>> dev
    ```php
    $this->isColumnType('column_name', 'expected_type')
    ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Ottieni tipo colonna**: 
 =======
 3. **Ottieni tipo colonna**:
 >>>>>>> 4b6b99016 (first commit)
+=======
+3. **Ottieni tipo colonna**: 
+>>>>>>> dev
    ```php
    $this->getColumnType('column_name')
    ```
 
 ## Riferimenti
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Xot Module Documentation](/var/www/html/saluteora/laravel/modules/xot/docs/migrations.md)
 - [JSON Migration Best Practices](/var/www/html/saluteora/laravel/modules/notify/docs/mail-templates/json_migration_fixes.md)
@@ -261,3 +282,7 @@ Quando si utilizza `Schema::hasColumn()` direttamente, si bypassa tutta questa l
 - [Xot Module Documentation](Modules/Xot/docs/MIGRATIONS.md)
 - [JSON Migration Best Practices](Modules/Notify/docs/mail-templates/JSON_MIGRATION_FIXES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Xot Module Documentation](/var/www/html/Quaeris/laravel/modules/xot/docs/migrations.md)
+- [JSON Migration Best Practices](/var/www/html/Quaeris/laravel/modules/notify/docs/mail-templates/json_migration_fixes.md)
+>>>>>>> dev

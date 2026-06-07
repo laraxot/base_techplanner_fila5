@@ -39,10 +39,14 @@ Entrambi i temi contengono i seguenti file di traduzione:
 12. `studio.php` - Gestione studi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Correzioni Applicate ([DATE])
 =======
 ## Correzioni Applicate (2025-01-06)
 >>>>>>> 4b6b99016 (first commit)
+=======
+## Correzioni Applicate ([DATE])
+>>>>>>> dev
 
 ### 1. Problema: Traduzione mancante `pub_theme::appointment.fields.state.label`
 
@@ -78,10 +82,14 @@ Entrambi i temi contengono i seguenti file di traduzione:
 - `emergency` - Emergenza
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 4. Problema: Testo hardcoded in italiano per i referti ([DATE])
 =======
 ### 4. Problema: Testo hardcoded in italiano per i referti (2025-01-06)
 >>>>>>> 4b6b99016 (first commit)
+=======
+### 4. Problema: Testo hardcoded in italiano per i referti ([DATE])
+>>>>>>> dev
 
 **Causa**: Il file `appointment/item.blade.php` conteneva testo hardcoded in italiano per la sezione referti:
 - "Il tuo referto è pronto!"
@@ -232,6 +240,9 @@ return [
 - [Theme Widget Translations](theme-widget-translations.md)
 - [Translation Helper Text Standards](translation-helper-text-standards.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Modules/<nome modulo>/docs/translation_quality_standards.md](../laravel/modules/<nome modulo>/docs/translation_quality_standards.md)
 - [Modules/<nome progetto>/docs/translation_quality_standards.md](../laravel/modules/<nome progetto>/docs/translation_quality_standards.md)
 - [Modules/<nome modulo>/docs/translation_quality_standards.md](../laravel/modules/<nome modulo>/docs/translation_quality_standards.md)
@@ -242,6 +253,7 @@ return [
 ---
 
 **Ultimo aggiornamento**: [DATE]
+<<<<<<< HEAD
 =======
 - [Modules/<nome modulo>/docs/translation_quality_standards.md](../laravel/Modules/<nome modulo>/docs/translation_quality_standards.md)
 - [Modules/<nome progetto>/docs/translation_quality_standards.md](../laravel/Modules/<nome progetto>/docs/translation_quality_standards.md)
@@ -254,5 +266,7 @@ return [
 
 **Ultimo aggiornamento**: 2025-01-06
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Versione**: 2.2
 **Autore**: AI Assistant

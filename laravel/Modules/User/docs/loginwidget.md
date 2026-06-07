@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Errore LoginWidget: Problema Logico e Soluzione
 
 ## Problema Identificato
@@ -178,3 +179,12 @@ class LoginWidget extends XotBaseWidget
 - [XotBaseWidget](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
 - [Documentazione Widget Structure](modules/user/widgets_structure.md)
 - [Best Practices Widget Filament](modules/user/best-practices/filament-widgets.md) 
+=======
+---
+module: theme
+topic: loginwidget
+canonical: ../../../Themes/docs/shared-components/loginwidget-error-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/loginwidget-error-analysis.md
+>>>>>>> dev

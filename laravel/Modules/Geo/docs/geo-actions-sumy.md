@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Geo Actions Summary
 
 ## Overview
@@ -101,3 +102,12 @@ For detailed implementation guides and advanced usage, see:
 - `docs/actions/` directory for action-specific documentation
 - `docs/services/` for service layer documentation
 - Language files in `lang/it/actions.php` for UI translations
+=======
+---
+module: theme
+topic: geo-actions-sumy
+canonical: ../../../Themes/docs/shared-components/geo-actions-summary.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/geo-actions-summary.md
+>>>>>>> dev

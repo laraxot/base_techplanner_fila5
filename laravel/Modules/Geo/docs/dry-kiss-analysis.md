@@ -1,10 +1,14 @@
 # 🐄 DRY & KISS Analysis - Geo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data:** [DATE] | **Status:** ✅
 =======
 **Data:** 2025-10-15 | **Status:** ✅
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data:** [DATE] | **Status:** ✅
+>>>>>>> dev
 
 ## 📊 Struttura
 Models: 21 | Resources: 2 | Services: 6 | Actions: 40 🟡 | Docs: 212 🟡

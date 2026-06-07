@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Testing Prediction Market
+=======
+# Testing <nome progetto>ion Market
+>>>>>>> dev
 
 ## Unit Test
 - Test per ogni evento, proiettore, reattore

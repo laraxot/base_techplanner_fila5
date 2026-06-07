@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Job\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Traits\Updater;
+=======
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Models\XotBaseModel;
+>>>>>>> dev
 
 /**
  * Class BaseModel.
@@ -17,6 +22,7 @@ use Modules\Xot\Traits\Updater;
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
  */
+<<<<<<< HEAD
 abstract class BaseModel extends Model
 {
     use HasFactory;
@@ -63,6 +69,13 @@ abstract class BaseModel extends Model
         // 'password'
     ];
 
+=======
+abstract class BaseModel extends XotBaseModel
+{
+    /** @var string|null */
+    protected $prefix;
+
+>>>>>>> dev
     public function __construct(array $attributes = [])
     {
         if (isset($this->prefix)) {
@@ -72,6 +85,7 @@ abstract class BaseModel extends Model
         parent::__construct($attributes);
     }
 
+<<<<<<< HEAD
     /**
      * ----
      * Create a new factory instance for the model.
@@ -82,10 +96,29 @@ abstract class BaseModel extends Model
     {
         return app(GetFactoryAction::class)->execute(static::class);
     }
+=======
+    public $incrementing = true;
+
+    public $timestamps = true;
+
+    protected $connection = 'job';
+
+    /** @var list<string> */
+    protected $fillable = ['id'];
+
+    protected $primaryKey = 'id';
+
+    /** @var string */
+    protected $keyType = 'string';
+
+    /** @var list<string> */
+    protected $hidden = [];
+>>>>>>> dev
 
     /** @return array<string, string> */
     protected function casts(): array
     {
+<<<<<<< HEAD
         return [
             'id' => 'string',
             'uuid' => 'string',
@@ -97,5 +130,10 @@ abstract class BaseModel extends Model
             'created_by' => 'string',
             'deleted_by' => 'string',
         ];
+=======
+        return array_merge(parent::casts(), [
+            'published_at' => 'datetime',
+        ]);
+>>>>>>> dev
     }
 }

@@ -5,11 +5,15 @@ declare(strict_types=1);
 namespace Modules\Employee\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Employee\Database\Factories\TimeEntryFactory;
 use Modules\TechPlanner\Models\Profile;
+<<<<<<< HEAD
 =======
 use Modules\TechPlanner\Models\Profile;
 use Modules\Employee\Database\Factories\TimeEntryFactory;
@@ -17,6 +21,8 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 /**
  * Class TimeEntry.
@@ -56,9 +62,13 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property-read Profile|null $deleter
  * @property-read Profile|null $updater
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @method static TimeEntryFactory factory($count = null, $state = [])
  * @method static Builder<static>|TimeEntry forEmployee(int $employeeId)
  * @method static Builder<static>|TimeEntry newModelQuery()
@@ -96,24 +106,34 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @method static Builder<static>|TimeEntry whereType($value)
  * @method static Builder<static>|TimeEntry withAnomalies()
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 final class TimeEntry extends BaseModel
 {
     public const STATUS_PENDING = 'pending';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 
     public const STATUS_APPROVED = 'approved';
 
     public const STATUS_AUTO_APPROVED = 'auto_approved';
 
+<<<<<<< HEAD
 =======
     public const STATUS_APPROVED = 'approved';
     public const STATUS_AUTO_APPROVED = 'auto_approved';
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     public const STATUS_REJECTED = 'rejected';
 
     /** @var list<string> */
@@ -228,6 +248,9 @@ final class TimeEntry extends BaseModel
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

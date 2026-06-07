@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'navigation' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'label' => 'Token Accesso OAuth',
         'plural_label' => 'Token Accesso OAuth',
         'group' => 'OAuth',
@@ -102,6 +105,7 @@ return [
             'tooltip' => 'Validità del token',
             'helper_text' => 'Indica se il token è valido',
             'description' => 'Stato di validità',
+<<<<<<< HEAD
 =======
         'label' => 'Token di accesso OAuth',
         'group' => '',
@@ -151,12 +155,17 @@ return [
         'valid' => [
             'label' => 'valid',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
         'revoke' => [
             'label' => 'Revoca',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => 'Revoca il token',
             'helper_text' => 'Revoca questo token',
             'description' => 'Azione per revocare il token',
@@ -201,6 +210,7 @@ return [
         'revoked' => 'Token revocato con successo',
         'deleted' => 'Token eliminato con successo',
     ],
+<<<<<<< HEAD
 =======
         ],
         'refresh' => [
@@ -267,4 +277,6 @@ return [
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

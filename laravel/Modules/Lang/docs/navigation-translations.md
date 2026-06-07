@@ -99,6 +99,7 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 - [Errori Comuni Traduzione](../errori_comuni_traduzione.md)
 - [Correzioni Errori Sintassi 2025](../correzioni_errori_sintassi_2025.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Traduzioni](../../xot/docs/translation_rules.md)
 
 =======
@@ -106,3 +107,8 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Best Practices Traduzioni](../../xot/docs/translation_rules.md)
+
+*Ultimo aggiornamento: 6 Gennaio 2025*
+>>>>>>> dev

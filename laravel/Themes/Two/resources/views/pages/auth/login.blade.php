@@ -1,5 +1,8 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use function Laravel\Folio\name;
 use function Laravel\Folio\middleware;
 
@@ -37,12 +40,22 @@ middleware(['guest']);
                      style="background: radial-gradient(circle, #E67E22, transparent);"></div>
             </div>
 
+<<<<<<< HEAD
+=======
+            {{-- particles effect --}}
+            @include('pub_theme::components.ui.particles')
+
+>>>>>>> dev
             <div class="relative flex flex-col justify-center px-16 xl:px-24 text-white z-10">
                 {{-- Logo --}}
                 <a href="{{ url('/'.app()->getLocale()) }}"
                    class="inline-flex items-center gap-3 mb-12 group focus:outline-none focus:ring-2 focus:ring-white/50 rounded-lg"
                    aria-label="{{ __('Torna alla home') }}">
+<<<<<<< HEAD
                     <x-pub_theme::ui.logo class="h-14 w-auto" />
+=======
+                    <x-pub_theme::ui.logo class="h-14 w-auto" color="white" />
+>>>>>>> dev
                 </a>
 
                 <h1 class="text-4xl xl:text-5xl font-bold leading-tight mb-6">
@@ -119,6 +132,7 @@ middleware(['guest']);
     </div>
 
 </x-layouts.base>
+<<<<<<< HEAD
 =======
 
 use function Livewire\Volt\{state, mount};
@@ -150,3 +164,5 @@ $login = function() {
     </div>
 </x-filament::page>
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

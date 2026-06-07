@@ -23,7 +23,11 @@ class SendAgiletelecomSMSv2Action implements SmsActionContract
         $agile = AgiletelecomData::make();
 
         $url = 'https://secure.agiletelecom.com/services/sms/send';
+<<<<<<< HEAD
         $recipient = app(NormalizePhoneNumberAction::class)->execute($data->recipient);
+=======
+        $recipient = app(NormalizePhoneNumberAction::class)->execute($data->getRecipient());
+>>>>>>> dev
 
         $payload = [
             // 'globalId' => $data->reference ?? uniqid('sms_', true),

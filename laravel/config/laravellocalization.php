@@ -7,6 +7,9 @@ return [
     // Regional languages are sorted by their base language, so "British English" sorts as "English, British"
     'supportedLocales' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         // 'ace'         => ['name' => 'Achinese',               'script' => 'Latn', 'native' => 'Aceh', 'regional' => ''],
         // 'af'          => ['name' => 'Afrikaans',              'script' => 'Latn', 'native' => 'Afrikaans', 'regional' => 'af_ZA'],
         // 'agq'         => ['name' => 'Aghem',                  'script' => 'Latn', 'native' => 'Aghem', 'regional' => ''],
@@ -297,6 +300,7 @@ return [
         // 'vai'         => ['name' => 'Vai (Vai)',              'script' => 'Vaii', 'native' => 'ꕙꔤ', 'regional' => ''],
         // 'jv-Java'     => ['name' => 'Javanese (Javanese)',    'script' => 'Java', 'native' => 'ꦧꦱꦗꦮ', 'regional' => ''],
         // 'ko'          => ['name' => 'Korean',                 'script' => 'Hang', 'native' => '한국어', 'regional' => 'ko_KR'],
+<<<<<<< HEAD
 =======
         //'ace'         => ['name' => 'Achinese',               'script' => 'Latn', 'native' => 'Aceh', 'regional' => ''],
         //'af'          => ['name' => 'Afrikaans',              'script' => 'Latn', 'native' => 'Afrikaans', 'regional' => 'af_ZA'],
@@ -589,6 +593,8 @@ return [
         //'jv-Java'     => ['name' => 'Javanese (Javanese)',    'script' => 'Java', 'native' => 'ꦧꦱꦗꦮ', 'regional' => ''],
         //'ko'          => ['name' => 'Korean',                 'script' => 'Hang', 'native' => '한국어', 'regional' => 'ko_KR'],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
 
     // Requires middleware `LaravelSessionRedirect.php`.
@@ -623,12 +629,17 @@ return [
 
     // If you want to display the locales in particular order in the language selector you should write the order here.
 <<<<<<< HEAD
+<<<<<<< HEAD
     // CAUTION: Please consider using the appropriate locale code otherwise it will not work
     // Example: 'localesOrder' => ['es','en'],
 =======
     //CAUTION: Please consider using the appropriate locale code otherwise it will not work
     //Example: 'localesOrder' => ['es','en'],
 >>>>>>> 4b6b99016 (first commit)
+=======
+    // CAUTION: Please consider using the appropriate locale code otherwise it will not work
+    // Example: 'localesOrder' => ['es','en'],
+>>>>>>> dev
     'localesOrder' => [],
 
     // If you want to use custom language URL segments like 'at' instead of 'de-AT', you can map them to allow the

@@ -113,6 +113,7 @@ return [
 ## Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices per le Traduzioni](translation_best_practices.md)
 - [Struttura del Modulo](module_structure.md)
 - [Convenzioni di Codice](code_conventions.md)
@@ -121,3 +122,8 @@ return [
 - [Struttura del Modulo](MODULE_STRUCTURE.md)
 - [Convenzioni di Codice](CODE_CONVENTIONS.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Best Practices per le Traduzioni](translation_best_practices.md)
+- [Struttura del Modulo](module_structure.md)
+- [Convenzioni di Codice](code_conventions.md)
+>>>>>>> dev

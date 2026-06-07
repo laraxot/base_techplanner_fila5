@@ -24,7 +24,11 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 use Override;
 
 /**
+<<<<<<< HEAD
  * @property \Filament\Schemas\Schema $emailForm
+=======
+ * @property Schema $emailForm
+>>>>>>> dev
  */
 class SendAwsEmailPage extends XotBasePage
 {
@@ -69,7 +73,11 @@ class SendAwsEmailPage extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, \Filament\Forms\Components\TextInput|\Filament\Forms\Components\RichEditor|\Filament\Forms\Components\Select|\Filament\Forms\Components\Toggle>
+=======
+     * @return array<string, TextInput|RichEditor|Select|Toggle>
+>>>>>>> dev
      */
     public function getEmailFormSchema(): array
     {

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Customizing Your Site
 description: Customizing your Jigsaw docs site
 extends: _layouts.documentation
@@ -81,3 +82,11 @@ class Foo extends bar
 * [customizing-your-site.md](laravel/modules/tenant/project_docs/it/customizing-your-site.md)
 * [customizing-your-site.md](laravel/modules/cms/project_docs/customizing-your-site.md)
 
+=======
+module: theme
+topic: customizing_your_site
+canonical: ../../../Themes/docs/shared-components/customizing-your-site.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/customizing-your-site.md
+>>>>>>> dev

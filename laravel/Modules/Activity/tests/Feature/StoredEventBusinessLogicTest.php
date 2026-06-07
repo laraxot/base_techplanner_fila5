@@ -2,12 +2,33 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\Activity\Tests\Feature;
+
+>>>>>>> dev
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Modules\Activity\Models\StoredEvent;
+<<<<<<< HEAD
 
 uses(Modules\Activity\Tests\TestCase::class);
+=======
+use Modules\Activity\Tests\TestCase;
+use Spatie\SchemalessAttributes\SchemalessAttributes;
+
+uses(TestCase::class);
+
+beforeEach(function () {
+    // Skip if database not available
+    try {
+        \DB::connection()->getPdo();
+    } catch (\Exception $e) {
+        $this->markTestSkipped('Database not available: '.$e->getMessage());
+    }
+});
+>>>>>>> dev
 
 it('can create stored event with basic information', function (): void {
     $eventData = [
@@ -29,7 +50,11 @@ it('can create stored event with basic information', function (): void {
 
     $storedEvent = StoredEvent::create($eventData);
 
+<<<<<<< HEAD
     $exists = DB::connection('activity')
+=======
+    $exists = DB::connection()
+>>>>>>> dev
         ->table('stored_events')
         ->where('id', $storedEvent->id)
         ->where('aggregate_uuid', $eventData['aggregate_uuid'])
@@ -109,7 +134,11 @@ it('can create stored event with complex properties', function (): void {
         'created_at' => now(),
     ]);
 
+<<<<<<< HEAD
     $exists = DB::connection('activity')
+=======
+    $exists = DB::connection()
+>>>>>>> dev
         ->table('stored_events')
         ->where('id', $storedEvent->id)
         ->where('event_class', 'App\\Events\\OrderPlaced')
@@ -183,9 +212,15 @@ it('can manage event versioning', function (): void {
         'created_at' => now(),
     ]);
 
+<<<<<<< HEAD
     $this->assertTrue(DB::connection('activity')->table('stored_events')->where('id', $event1->id)->exists());
     $this->assertTrue(DB::connection('activity')->table('stored_events')->where('id', $event2->id)->exists());
     $this->assertTrue(DB::connection('activity')->table('stored_events')->where('id', $event3->id)->exists());
+=======
+    $this->assertTrue(DB::connection()->table('stored_events')->where('id', $event1->id)->exists());
+    $this->assertTrue(DB::connection()->table('stored_events')->where('id', $event2->id)->exists());
+    $this->assertTrue(DB::connection()->table('stored_events')->where('id', $event3->id)->exists());
+>>>>>>> dev
     // Verifica che tutti gli eventi abbiano lo stesso UUID ma versioni diverse
     $this->assertSame($aggregateUuid, $event1->aggregate_uuid);
     $this->assertSame($aggregateUuid, $event2->aggregate_uuid);
@@ -320,7 +355,11 @@ it('can handle event with empty properties', function (): void {
         'created_at' => now(),
     ]);
 
+<<<<<<< HEAD
     $exists = DB::connection('activity')
+=======
+    $exists = DB::connection()
+>>>>>>> dev
         ->table('stored_events')
         ->where('id', $storedEvent->id)
         ->where('event_class', 'App\\Events\\EmptyEvent')
@@ -341,7 +380,11 @@ it('can handle event with null properties', function (): void {
         'created_at' => now(),
     ]);
 
+<<<<<<< HEAD
     $exists = DB::connection('activity')
+=======
+    $exists = DB::connection()
+>>>>>>> dev
         ->table('stored_events')
         ->where('id', $storedEvent->id)
         ->where('event_class', 'App\\Events\\NullEvent')
@@ -350,7 +393,11 @@ it('can handle event with null properties', function (): void {
 
     $this->assertIsArray($storedEvent->event_properties);
     $this->assertEmpty($storedEvent->event_properties);
+<<<<<<< HEAD
     $this->assertInstanceOf(\Spatie\SchemalessAttributes\SchemalessAttributes::class, $storedEvent->meta_data);
+=======
+    $this->assertInstanceOf(SchemalessAttributes::class, $storedEvent->meta_data);
+>>>>>>> dev
     $this->assertSame([], $storedEvent->meta_data->toArray());
 });
 
@@ -447,7 +494,11 @@ it('can handle event with timestamps', function (): void {
         'created_at' => $now,
     ]);
 
+<<<<<<< HEAD
     $exists = DB::connection('activity')
+=======
+    $exists = DB::connection()
+>>>>>>> dev
         ->table('stored_events')
         ->where('id', $storedEvent->id)
         ->where('created_at', $now->toDateTimeString())
@@ -540,7 +591,11 @@ it('can handle event with metadata', function (): void {
         'created_at' => now(),
     ]);
 
+<<<<<<< HEAD
     $exists = DB::connection('activity')
+=======
+    $exists = DB::connection()
+>>>>>>> dev
         ->table('stored_events')
         ->where('id', $storedEvent->id)
         ->where('event_class', 'App\\Events\\BulkImportCompleted')

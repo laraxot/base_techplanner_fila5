@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎨 UI Components Reorganization Plan
 
 ## 🎯 Obiettivo
@@ -347,3 +348,12 @@ Artisan::command('theme:ui-components:reorganize', function () {
 **📅 Durata**: 3 giorni (migrazione controllata)  
 **👥 Team**: 2 sviluppatori (1 migrazione, 1 testing)  
 **✅ Success Criteria**: Zero regressioni, struttura migliorata, DX ottimizzata
+=======
+---
+module: theme
+topic: ui_components_reorganization
+canonical: ../../docs/shared-components/ui-components-reorganization.md
+---
+
+See canonical documentation: ../../docs/shared-components/ui-components-reorganization.md
+>>>>>>> dev

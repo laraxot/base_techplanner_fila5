@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risoluzione Conflitti Git - SubtitleService.php
 
 ## Intento
@@ -13,3 +14,12 @@
 ## Collegamenti
 - [Linee Guida Generali per la Risoluzione dei Conflitti Git](../../../../docs/risoluzione_conflitti_git.md)
 - [Documentazione Conflitti Git nei Moduli](../../../../docs/conflitti_git_moduli.md)
+=======
+---
+module: theme
+topic: resolution-conflitti-subtitleservice
+canonical: ../../../Themes/docs/shared-components/conflict-resolution-subtitleservice.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/conflict-resolution-subtitleservice.md
+>>>>>>> dev

@@ -73,10 +73,14 @@ view_file /var/www/html/<directory progetto>/laravel/Themes/One/resources/views/
 
 // 5. Documentare le conclusioni
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Il componente <x-ui.marketing.header /> corrisponde al file 
 =======
 // Il componente <x-ui.marketing.header /> corrisponde al file
 >>>>>>> 4b6b99016 (first commit)
+=======
+// Il componente <x-ui.marketing.header /> corrisponde al file 
+>>>>>>> dev
 // /var/www/html/<directory progetto>/laravel/Themes/One/resources/views/components/ui/marketing/header.blade.php
 ```
 

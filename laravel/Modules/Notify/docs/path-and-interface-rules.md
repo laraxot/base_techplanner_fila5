@@ -17,10 +17,13 @@
 ### Directory Fisiche (path su disco)
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 /var/www/html/saluteora/laravel/Modules/Notify/
 ├── app/                           # Directory fisica con app minuscolo
 │   ├── Actions/                  
 =======
+=======
+>>>>>>> dev
 Modules/Notify/
 Modules/Notify/
 Modules/Notify/
@@ -118,7 +121,10 @@ Questa struttura garantisce:
 Modules/Notify/
 ├── app/                           # Directory fisica con app minuscolo
 │   ├── Actions/
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 │   │   ├── Email/                # Azioni per email
 │   │   ├── SMS/                  # Azioni per SMS
 │   │   └── WhatsApp/             # Azioni per WhatsApp

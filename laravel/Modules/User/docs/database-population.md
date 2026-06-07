@@ -290,10 +290,14 @@ echo "User roles: " . $user->roles()->count() . "\n";
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README Modulo User](./readme.md)
 =======
 - [README Modulo User](./README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README Modulo User](./readme.md)
+>>>>>>> dev
 - [Factory Best Practices](./factory-best-practices.md)
 - [Testing Guidelines](./testing.md)
 - [Database Schema](./database-schema.md)

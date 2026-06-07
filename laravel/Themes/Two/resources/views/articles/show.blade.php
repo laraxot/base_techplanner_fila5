@@ -13,14 +13,19 @@
         <div class="prose mt-8 mx-auto text-black">
             @if ($article->content_blocks)
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <x-render-blocks :blocks="$article->content_blocks" :model="$article" />
 =======
                 <x-render.blocks :blocks="$article->content_blocks" :model="$article" />
 >>>>>>> 4b6b99016 (first commit)
+=======
+                <x-render-blocks :blocks="$article->content_blocks" :model="$article" />
+>>>>>>> dev
             @endif
 
             <hr>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             <x-post-meta :post="$article" />
 
@@ -30,6 +35,11 @@
 
             <x-article.footer :article="$article" :blocks="$article->footer_blocks" />
 >>>>>>> 4b6b99016 (first commit)
+=======
+            <x-post-meta :post="$article" />
+
+            <x-post-footer :blocks="$article->footer_blocks" />
+>>>>>>> dev
 
         </div>
     </x-std>

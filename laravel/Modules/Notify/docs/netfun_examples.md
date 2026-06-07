@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Esempi Pratici Netfun
 
 ## 1. Invio SMS OTP
@@ -927,3 +928,8 @@ class NetfunNotificationIntegrationTest extends TestCase
 - [Laravel Logging](https://laravel.com/docs/logging)
 - [Laravel Cache](https://laravel.com/docs/cache)
 - [Prometheus PHP Client](https://github.com/promphp/prometheus_client_php) 
+=======
+# Netfun Examples
+
+This document provides examples for Netfun integration.
+>>>>>>> dev

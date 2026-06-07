@@ -78,7 +78,11 @@ $json = dddx(['key' => 'value']);
 
 **Note**:
 - Usa `Safe\json_encode()` per type safety
+<<<<<<< HEAD
 - Logga sempre via `Log::debug()`
+=======
+- **NON usare Log::debug()** (policy no-log-debug). Usare Log::info() per eventi significativi.
+>>>>>>> dev
 - Ritorna sempre string (non void)
 
 ---
@@ -250,7 +254,11 @@ function isRunningTestBench(): bool
 
 1. **Sempre type hints**: Parametri e return types espliciti
 2. **Usa Safe functions**: `Safe\json_encode()`, `Safe\realpath()`, ecc.
+<<<<<<< HEAD
 3. **Logging appropriato**: Usa `Log::debug()` per debug, non `dd()` in produzione
+=======
+3. **Logging appropriato**: NON usare Log::debug(). Usa Log::info/warning/error per eventi significativi. Per debug temporaneo usa dd() e rimuovi prima del commit.
+>>>>>>> dev
 4. **Null safety**: Usa nullsafe operator `?->` quando appropriato
 5. **Documentazione PHPDoc**: Ogni funzione ha docblock completo
 
@@ -306,9 +314,13 @@ function authId(): string|int|null {
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 **Last Updated**: 2025-01-02
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 **PHPStan Level**: 10 compliant
 **Status**: ✅ Production Ready

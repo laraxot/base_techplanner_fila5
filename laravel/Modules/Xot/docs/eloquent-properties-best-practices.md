@@ -1,10 +1,14 @@
 # Best Practices per Proprietà Modelli Eloquent - Modulo Xot
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## ✅ STATO: property_exists() ELIMINATO (Data: [DATE])
 =======
 ## ✅ STATO: property_exists() ELIMINATO (Data: 2025-01-05)
 >>>>>>> 4b6b99016 (first commit)
+=======
+## ✅ STATO: property_exists() ELIMINATO (Data: [DATE])
+>>>>>>> dev
 
 **Nel modulo Xot, `property_exists()` è stato completamente eliminato dal codice eseguibile.**
 
@@ -212,10 +216,14 @@ Prima di ogni commit in qualsiasi modulo, verificare:
 - [Regola Cursor](../../.cursor/rules/eloquent-properties.md)
 - [Memoria Cursor](../../.cursor/memories)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Linee Guida AI](../../.ai/guidelines/core.md)
 =======
 - [Linee Guida AI](../../.ai/guidelines/CORE.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Linee Guida AI](../../.ai/guidelines/core.md)
+>>>>>>> dev
 - [Esempio Corretto](../../Notify/app/Notifications/GenericNotification.php)
 
 ## Esempi di Correzione
@@ -252,7 +260,10 @@ Questa regola si applica a tutti i moduli che estendono Xot:
 - [PHPStan Eloquent Analysis](https://phpstan.org/user-guide/rule-levels)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 *Regola applicabile a tutti i moduli*

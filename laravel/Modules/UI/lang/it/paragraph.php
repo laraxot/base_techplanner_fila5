@@ -10,9 +10,13 @@ return [
             'helper_text' => 'title',
             'placeholder' => 'title',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'text' => [
             'label' => 'Testo',
@@ -20,6 +24,9 @@ return [
             'helper_text' => 'text',
             'placeholder' => 'text',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
         '_tpl' => [
@@ -27,11 +34,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         '_tpl' => [
             'label' => '_tpl',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'view' => [
             'label' => 'view',
@@ -39,6 +49,9 @@ return [
             'helper_text' => 'view',
             'placeholder' => 'view',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -64,8 +77,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Paragraph',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

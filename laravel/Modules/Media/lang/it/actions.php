@@ -7,6 +7,9 @@ return [
         'title' => 'Allegati',
         'label' => 'Carica allegato',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'fields' => [
         ],
     ],
@@ -53,8 +56,11 @@ return [
         'delete' => [
             'label' => 'Elimina Actions',
         ],
+<<<<<<< HEAD
 =======
         'fields' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
 ];

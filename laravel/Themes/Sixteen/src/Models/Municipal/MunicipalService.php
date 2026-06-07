@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Themes\Sixteen\Models\Municipal;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -13,20 +16,27 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
 use Illuminate\Database\Eloquent\Relations\{HasMany, BelongsTo, MorphMany, BelongsToMany};
 use Illuminate\Database\Eloquent\Casts\Attribute;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Illuminate\Support\Str;
 
 /**
  * Modello per i servizi comunali (Municipal Service)
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
  * 
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * Rappresenta i servizi erogati dall'ente ai cittadini
  * secondo l'ontologia AGID e le specifiche dei servizi pubblici
  */
@@ -343,9 +353,13 @@ class MunicipalService extends Model
                     $this->attributes['slug'] = Str::slug($value);
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return $value;
             }
         );
@@ -357,10 +371,14 @@ class MunicipalService extends Model
     public function getFormattedRequirements(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->requirements || ! is_array($this->requirements)) {
 =======
         if (!$this->requirements || !is_array($this->requirements)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->requirements || ! is_array($this->requirements)) {
+>>>>>>> dev
             return [];
         }
 
@@ -370,9 +388,13 @@ class MunicipalService extends Model
                     return ['description' => $requirement, 'mandatory' => true];
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return $requirement;
             })
             ->toArray();
@@ -384,10 +406,14 @@ class MunicipalService extends Model
     public function getFormattedProcedures(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->procedures || ! is_array($this->procedures)) {
 =======
         if (!$this->procedures || !is_array($this->procedures)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->procedures || ! is_array($this->procedures)) {
+>>>>>>> dev
             return [];
         }
 
@@ -397,9 +423,13 @@ class MunicipalService extends Model
                     return ['step' => $index + 1, 'description' => $procedure];
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return array_merge(['step' => $index + 1], $procedure);
             })
             ->toArray();
@@ -411,10 +441,14 @@ class MunicipalService extends Model
     public function getFormattedRequiredDocuments(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->required_documents || ! is_array($this->required_documents)) {
 =======
         if (!$this->required_documents || !is_array($this->required_documents)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->required_documents || ! is_array($this->required_documents)) {
+>>>>>>> dev
             return [];
         }
 
@@ -424,9 +458,13 @@ class MunicipalService extends Model
                     return ['name' => $document, 'mandatory' => true];
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return $document;
             })
             ->toArray();
@@ -438,10 +476,14 @@ class MunicipalService extends Model
     public function getFormattedCosts(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->costs || ! is_array($this->costs)) {
 =======
         if (!$this->costs || !is_array($this->costs)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->costs || ! is_array($this->costs)) {
+>>>>>>> dev
             return [];
         }
 
@@ -451,9 +493,13 @@ class MunicipalService extends Model
                     return ['amount' => $cost, 'description' => 'Costo del servizio'];
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return $cost;
             })
             ->toArray();
@@ -465,10 +511,14 @@ class MunicipalService extends Model
     public function getFormattedDigitalChannels(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->digital_channels || ! is_array($this->digital_channels)) {
 =======
         if (!$this->digital_channels || !is_array($this->digital_channels)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->digital_channels || ! is_array($this->digital_channels)) {
+>>>>>>> dev
             return [];
         }
 
@@ -484,10 +534,14 @@ class MunicipalService extends Model
                     'pagopa' => 'PagoPA',
                 ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
                 
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return [$channelNames[$channel] ?? $channel => $url];
             })
             ->toArray();
@@ -499,10 +553,14 @@ class MunicipalService extends Model
     public function getFormattedFaq(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->faq || ! is_array($this->faq)) {
 =======
         if (!$this->faq || !is_array($this->faq)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->faq || ! is_array($this->faq)) {
+>>>>>>> dev
             return [];
         }
 
@@ -512,9 +570,13 @@ class MunicipalService extends Model
                     return $item;
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return ['question' => "Domanda {$index}", 'answer' => $item];
             })
             ->toArray();
@@ -526,19 +588,27 @@ class MunicipalService extends Model
     public function isFree(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->costs || ! is_array($this->costs)) {
 =======
         if (!$this->costs || !is_array($this->costs)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->costs || ! is_array($this->costs)) {
+>>>>>>> dev
             return true;
         }
 
         return collect($this->costs)->every(function ($cost) {
             $amount = is_array($cost) ? ($cost['amount'] ?? 0) : $cost;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
             return $amount == 0;
         });
     }
@@ -549,16 +619,22 @@ class MunicipalService extends Model
     public function isFullyDigital(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         return $this->is_digital &&
                is_array($this->delivery_methods) &&
                in_array('online', $this->delivery_methods) &&
                ! in_array('in_person', $this->delivery_methods);
+<<<<<<< HEAD
 =======
         return $this->is_digital && 
                is_array($this->delivery_methods) &&
                in_array('online', $this->delivery_methods) &&
                !in_array('in_person', $this->delivery_methods);
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 
     /**
@@ -567,10 +643,14 @@ class MunicipalService extends Model
     public function getProcessingTimeFormatted(): ?string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->processing_time) {
 =======
         if (!$this->processing_time) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->processing_time) {
+>>>>>>> dev
             return null;
         }
 
@@ -578,9 +658,13 @@ class MunicipalService extends Model
         if (is_numeric($this->processing_time)) {
             $days = (int) $this->processing_time;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
             return $days === 1 ? '1 giorno lavorativo' : "{$days} giorni lavorativi";
         }
 
@@ -593,10 +677,14 @@ class MunicipalService extends Model
     public function needsReview(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->next_review_date) {
 =======
         if (!$this->next_review_date) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->next_review_date) {
+>>>>>>> dev
             return false;
         }
 
@@ -658,10 +746,14 @@ class MunicipalService extends Model
 
             while (static::where('slug', $model->slug)->exists()) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $model->slug = $originalSlug.'-'.$counter;
 =======
                 $model->slug = $originalSlug . '-' . $counter;
 >>>>>>> 4b6b99016 (first commit)
+=======
+                $model->slug = $originalSlug.'-'.$counter;
+>>>>>>> dev
                 $counter++;
             }
         });
@@ -672,11 +764,15 @@ class MunicipalService extends Model
                 $model->service_status = 'active';
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 
             if (is_null($model->priority_level)) {
                 $model->priority_level = 1;
             }
 
+<<<<<<< HEAD
 =======
             
             if (is_null($model->priority_level)) {
@@ -684,13 +780,19 @@ class MunicipalService extends Model
             }
             
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             if (is_null($model->last_updated)) {
                 $model->last_updated = now();
             }
         });
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 4b6b99016 (first commit)
+=======
+}
+>>>>>>> dev

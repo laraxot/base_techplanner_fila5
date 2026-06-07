@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ottimizzazioni DRY + KISS - Modulo User
 
 ## Panoramica del Modulo
@@ -545,3 +546,12 @@ class UserResource extends XotBaseResource
 
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS User Module*
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: ottimizzazioni-dry-kiss
+canonical: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss-Modules.md
+>>>>>>> dev

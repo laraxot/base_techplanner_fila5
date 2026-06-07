@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Utilizzo Corretto dei Modelli User in il progetto
 
 ## Introduzione
@@ -126,3 +127,12 @@ Passport è preferito in il progetto perché offre:
 ## Conclusione
 
 L'utilizzo corretto dei modelli User in il progetto è fondamentale per mantenere un'architettura pulita e modulare. Seguendo le best practices descritte in questo documento, è possibile evitare errori comuni e garantire che il codice sia manutenibile e scalabile.
+=======
+---
+module: theme
+topic: utilizzo_modelli_user_in_saluteora
+canonical: ../../../Themes/docs/shared-components/utilizzo-modelli-user-in-saluteora.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/utilizzo-modelli-user-in-saluteora.md
+>>>>>>> dev

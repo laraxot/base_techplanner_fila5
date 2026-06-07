@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modulo Geo
 
 ## Informazioni Generali
@@ -97,3 +98,12 @@ composer format        # Formatta il codice
 
 ## Changelog
 Le modifiche vengono tracciate nel repository GitHub. 
+=======
+---
+module: theme
+topic: module_geo
+canonical: ../../../Themes/docs/shared-components/module-geo.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/module-geo.md
+>>>>>>> dev

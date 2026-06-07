@@ -26,9 +26,13 @@ return [
             'helper_text' => 'Inserisci un nome descrittivo per il template',
             'help' => 'Inserisci un nome descrittivo per il template',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'description' => [
             'label' => 'Descrizione',
@@ -36,9 +40,13 @@ return [
             'placeholder' => 'es: Template per le notifiche di scadenza',
             'helper_text' => 'Breve descrizione dello scopo del template',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'type' => [
             'label' => 'Tipo',
@@ -53,20 +61,29 @@ return [
                 'whatsapp' => 'WhatsApp',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'subject' => [
             'label' => 'Oggetto',
             'tooltip' => 'Oggetto della notifica',
             'placeholder' => 'es: Promemoria appuntamento',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => 'Oggetto visualizzato nella notifica (es. oggetto email]',
             'description' => '',
 =======
             'helper_text' => 'Oggetto visualizzato nella notifica (es. oggetto email)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => 'Oggetto visualizzato nella notifica (es. oggetto email]',
+            'description' => '',
+>>>>>>> dev
         ],
         'content' => [
             'label' => 'Contenuto',
@@ -74,9 +91,13 @@ return [
             'placeholder' => 'Inserisci il testo del messaggio',
             'helper_text' => 'Contenuto principale della notifica',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'variables' => [
             'label' => 'Variabili',
@@ -84,36 +105,54 @@ return [
             'placeholder' => '{{nome}}, {{email}}, ecc.',
             'helper_text' => 'Variabili che possono essere utilizzate nel template',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato del template',
             'helper_text' => 'Se attivo, il template può essere utilizzato per l\'invio di notifiche',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Data creazione',
             'tooltip' => 'Data di creazione del template',
 <<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'updated_at' => [
-            'label' => 'Ultima modifica',
-            'tooltip' => 'Data dell\'ultima modifica del template',
 <<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'updated_at' => [
+            'label' => 'Ultima modifica',
+            'tooltip' => 'Data dell\'ultima modifica del template',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -148,8 +187,13 @@ return [
         'template_deleted' => 'Il template è stato eliminato con successo',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Template',
     'plural_label' => 'Template (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Template',
+    'plural_label' => 'Template (Plurale)',
+>>>>>>> dev
 ];

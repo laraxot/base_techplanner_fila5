@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'navigation' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'label' => 'Test',
         'group' => 'Sviluppo',
         'icon' => 'heroicon-o-beaker',
@@ -42,8 +45,11 @@ return [
         'delete' => [
             'label' => 'Elimina Test',
         ],
+<<<<<<< HEAD
 =======
         'group' => 'test.navigation',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
 ];

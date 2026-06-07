@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Widget Translation Rules - SaluteOra Project
 
 ## Core Principles
@@ -204,3 +205,12 @@ This document serves as a reference for:
 - Documentation standards
 
 All widget development should follow these rules to maintain consistency and quality across the SaluteOra project.
+=======
+---
+module: theme
+topic: widget_translation_rules
+canonical: ../../../Themes/docs/shared-components/widget_translation_rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/widget_translation_rules.md
+>>>>>>> dev

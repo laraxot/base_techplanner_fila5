@@ -35,16 +35,22 @@ class MediaFactory extends Factory
         $collections = ['default', 'avatars', 'documents'];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         /** @var lowercase-string&non-falsy-string $fileName */
         $fileName = 'file'.(string) random_int(1000, 9999);
 
         /** @var lowercase-string&non-falsy-string $extension */
+<<<<<<< HEAD
 =======
         /** @var string $fileName */
         $fileName = 'file_' . random_int(1000, 9999);
 
         /** @var string $extension */
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         $extension = $extensions[array_rand($extensions)];
 
         /** @var string $collectionName */

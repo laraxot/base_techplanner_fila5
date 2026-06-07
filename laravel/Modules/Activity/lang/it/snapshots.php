@@ -10,58 +10,88 @@ return [
             'placeholder' => 'ID dello snapshot',
             'helper_text' => 'Identificativo univoco dello snapshot',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'aggregate_uuid' => [
             'label' => 'UUID Aggregato',
             'placeholder' => 'UUID dell\'aggregato',
             'helper_text' => 'Identificativo univoco dell\'aggregato',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'aggregate_version' => [
             'label' => 'Versione',
             'placeholder' => 'Versione dell\'aggregato',
             'helper_text' => 'Numero di versione dell\'aggregato',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'state' => [
             'label' => 'Stato',
             'placeholder' => 'Stato dello snapshot',
             'helper_text' => 'Stato corrente dello snapshot',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'helper_text' => 'Data di creazione dello snapshot',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-            'helper_text' => 'Data dell\'ultima modifica',
 <<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+            'helper_text' => 'Data dell\'ultima modifica',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -108,6 +138,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Snapshots',
     'plural_label' => 'Snapshots (Plurale)',
     'navigation' => [
@@ -121,6 +154,9 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

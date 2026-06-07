@@ -1,16 +1,22 @@
 # PHPStan Code Quality Guide - Laraxot
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 **Ultimo aggiornamento**: [DATE]
 **Principi**: DRY + KISS + SOLID + Robust
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
 **Ultimo aggiornamento**: [DATE]  
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: 2025-12-22
 **Principi**: DRY + KISS + SOLID + Robust
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
 **Ultimo aggiornamento**: 2025-12-22  
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Principi**: DRY + KISS + SOLID + Robust  
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot  
 **Obiettivo**: 0 errori PHPStan Level 10 + Complexity < 10 + Quality > 80%
@@ -509,8 +515,13 @@ protected function getStats(): array
 {
     if ($this->record === null) {
         return [
+<<<<<<< HEAD
             Stat::make(__('quaeris::question_chart_stats_overview.stats.total_responses.label'), '0')
                 ->description(__('quaeris::question_chart_stats_overview.messages.no_data_available'))
+=======
+            Stat::make(__('healthcare_app::question_chart_stats_overview.stats.total_responses.label'), '0')
+                ->description(__('healthcare_app::question_chart_stats_overview.messages.no_data_available'))
+>>>>>>> dev
                 ->color('gray'),
         ];
     }
@@ -887,10 +898,17 @@ public function getTableRecordKey(\Illuminate\Database\Eloquent\Model|array $rec
 private function createTotalResponsesStat(int $count): Stat
 {
     return Stat::make(
+<<<<<<< HEAD
         __('quaeris::question_chart_stats_overview.stats.total_responses.label'),
         number_format((float) $count)
     )
         ->description(__('quaeris::question_chart_stats_overview.stats.total_responses.description'))
+=======
+        __('healthcare_app::question_chart_stats_overview.stats.total_responses.label'),
+        number_format((float) $count)
+    )
+        ->description(__('healthcare_app::question_chart_stats_overview.stats.total_responses.description'))
+>>>>>>> dev
         ->color($count > 0 ? 'success' : 'gray')
         ->icon('heroicon-o-document-text');
 }
@@ -898,10 +916,17 @@ private function createTotalResponsesStat(int $count): Stat
 private function createCompletionRateStat(float $rate): Stat
 {
     return Stat::make(
+<<<<<<< HEAD
         __('quaeris::question_chart_stats_overview.stats.completion_rate.label'),
         $rate.'%'
     )
         ->description(__('quaeris::question_chart_stats_overview.stats.completion_rate.description'))
+=======
+        __('healthcare_app::question_chart_stats_overview.stats.completion_rate.label'),
+        $rate.'%'
+    )
+        ->description(__('healthcare_app::question_chart_stats_overview.stats.completion_rate.description'))
+>>>>>>> dev
         ->color($rate >= 75 ? 'success' : ($rate >= 50 ? 'warning' : 'danger'))
         ->icon('heroicon-o-chart-bar');
 }
@@ -1691,7 +1716,11 @@ class DashboardPage extends XotBasePage
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
+=======
+namespace Modules\healthcare_app\Filament\Widgets;
+>>>>>>> dev
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;

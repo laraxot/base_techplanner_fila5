@@ -8,6 +8,9 @@ return [
     'today' => 'Oggi',
     'months' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         0 => 'Gennaio',
         1 => 'Febbraio',
         2 => 'Marzo',
@@ -83,6 +86,7 @@ return [
             'label' => 'Elimina Datepicker',
         ],
     ],
+<<<<<<< HEAD
 =======
         'Gennaio',
         'Febbraio',
@@ -108,4 +112,6 @@ return [
     ],
     'weekdays_short' => ['Dom', 'Lun', 'Mar', 'Mer', 'Gio', 'Ven', 'Sab'],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

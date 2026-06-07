@@ -7,6 +7,9 @@ return [
         'name' => [
             'label' => 'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -154,6 +157,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'slug' => [
@@ -228,6 +232,8 @@ return [
         'items' => [
             'label' => 'items',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -239,6 +245,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'View Page Content',
     'plural_label' => 'View Page Content (Plurale)',
     'navigation' => [
@@ -252,6 +261,9 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

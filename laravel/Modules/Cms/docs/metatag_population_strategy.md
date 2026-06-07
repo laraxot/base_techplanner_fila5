@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Strategia di Popolamento Metatag - <main module>
 
 ## Panoramica
@@ -146,3 +147,12 @@ I metatag vengono utilizzati nel componente `Modules\Cms\app\View\Components\Met
 - [Traduzioni Tema DE](../../../Themes/One/lang/de/)
 
 *Implementazione completata: gennaio 2025*
+=======
+---
+module: theme
+topic: metatag_population_strategy
+canonical: ../../../Themes/docs/shared-components/metatag-population-strategy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/metatag-population-strategy.md
+>>>>>>> dev

@@ -12,6 +12,9 @@ return [
         'body' => 'Tabella Mancante',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'name' => 'Notifications',
         'plural' => 'Notifications',
@@ -56,6 +59,7 @@ return [
             'label' => 'Elimina Notifications',
         ],
     ],
+<<<<<<< HEAD
 =======
     'navigation' => [],
     'label' => '',
@@ -63,4 +67,6 @@ return [
     'fields' => [],
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

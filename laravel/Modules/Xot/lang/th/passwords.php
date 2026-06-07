@@ -9,6 +9,9 @@ return [
     'token' => 'ชุดรหัสสำหรับการเปลี่ยนรหัสผ่านไม่ถูกต้อง',
     'user' => 'ไม่พบผู้ใช้งานที่ตรงกับอีเมล์นี้',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -22,6 +25,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

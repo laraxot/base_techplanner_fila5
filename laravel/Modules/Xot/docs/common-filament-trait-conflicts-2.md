@@ -8,10 +8,14 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 **Versione Filament**: 4.x
 **Versione Laravel**: 12.x
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Creazione**: [DATE]
 =======
 **Data Creazione**: 2025-09-29
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data Creazione**: [DATE]
+>>>>>>> dev
 
 ## 🎯 Obiettivo
 
@@ -513,9 +517,12 @@ class MyPage extends XotBaseViewRecord
 **Autore**: Claude Code
 **Versione**: 1.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo Aggiornamento**: 2025-09-29
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## 📎 Riferimenti
 

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  [OK] No errors        
 
 =======
+=======
+>>>>>>> dev
 # Report PHPStan - Modulo Lang
 
 ## Stato Attuale
@@ -50,4 +53,7 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Lang. Questo è
    - Verificare il comportamento con lingue diverse
 
 ---
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

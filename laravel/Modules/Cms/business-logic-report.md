@@ -1,9 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 # Business Logic Analysis Report - SaluteOra Project
 
 ## Executive Summary
 
 The SaluteOra project follows a modular Laraxot architecture with 14 modules containing comprehensive business logic for a dental healthcare management system. The analysis reveals a well-structured codebase with proper separation of concerns and extensive factory support for testing.
+<<<<<<< HEAD
 =======
 # Business Logic Analysis Report - <nome progetto> Project
 
@@ -11,26 +15,36 @@ The SaluteOra project follows a modular Laraxot architecture with 14 modules con
 
 The <nome progetto> project follows a modular Laraxot architecture with 14 modules containing comprehensive business logic for a dental healthcare management system. The analysis reveals a well-structured codebase with proper separation of concerns and extensive factory support for testing.
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Module Analysis
 
 ### Core Business Modules
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### SaluteOra Module (Primary Business Logic)
 =======
 #### <nome progetto> Module (Primary Business Logic)
 >>>>>>> 4b6b99016 (first commit)
+=======
+#### SaluteOra Module (Primary Business Logic)
+>>>>>>> dev
 - **Models**: Patient, Doctor, Admin, Studio, Appointment, Report, Profile, User
 - **Factories**: 16 factories (100% coverage)
 - **Seeders**: 15 seeders
 - **Test Data Generated**: 300 records successfully created
   - ✅ Patient: 100 records
 <<<<<<< HEAD
+<<<<<<< HEAD
   - ✅ Studio: 100 records  
 =======
   - ✅ Studio: 100 records
 >>>>>>> 4b6b99016 (first commit)
+=======
+  - ✅ Studio: 100 records  
+>>>>>>> dev
   - ✅ Profile: 100 records
   - ❌ Doctor: Constraint violations (unique email conflicts)
   - ❌ Appointment: Foreign key constraints
@@ -136,6 +150,7 @@ The <nome progetto> project follows a modular Laraxot architecture with 14 modul
 ### 3. Seeder Development
 Create missing seeders for:
 - Cms: 6 missing seeders
+<<<<<<< HEAD
 <<<<<<< HEAD
 - Gdpr: 4 missing seeders  
 =======
@@ -306,6 +321,9 @@ Create missing seeders for:
 - Cms: 6 missing seeders
 - Gdpr: 4 missing seeders
 >>>>>>> 4b6b99016 (first commit)
+=======
+- Gdpr: 4 missing seeders  
+>>>>>>> dev
 - Lang: 3 missing seeders
 - Media: 3 missing seeders
 

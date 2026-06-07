@@ -80,9 +80,12 @@ LE MIE RIMANENZE DI SETTEMBRE
         <div class="widget-footer">
             <small class="summary-text">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 Ultimo aggiornamento: {{ $lastUpdated->diffForHumans() }}
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             </small>
         </div>
     </div>

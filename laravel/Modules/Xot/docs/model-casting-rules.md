@@ -119,10 +119,14 @@ protected function casts(): array
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Audit Risultati ([DATE])
 =======
 ## Audit Risultati (2025-08-01)
 >>>>>>> 4b6b99016 (first commit)
+=======
+## Audit Risultati ([DATE])
+>>>>>>> dev
 
 ### File con Errori Trovati: 20
 

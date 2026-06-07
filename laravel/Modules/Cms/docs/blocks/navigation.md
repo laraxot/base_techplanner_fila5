@@ -62,6 +62,7 @@ Block::make('navigation')
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Blocchi](./readme.md)
 =======
 - [Documentazione Blocchi](./README.md)
@@ -72,12 +73,21 @@ Block::make('navigation')
 
 ## Collegamenti tra versioni di navigation.md
 <<<<<<< HEAD
+=======
+- [Documentazione Blocchi](./readme.md)
+- [Componente Header](../components/header.md)
+- [Componente Footer](../components/footer.md)
+- [Convenzioni Filament](../../../../docs/filament-conventions.md)
+
+## Collegamenti tra versioni di navigation.md
+>>>>>>> dev
 * [navigation.md](laravel/modules/gdpr/docs/navigation.md)
 * [navigation.md](laravel/modules/xot/docs/navigation.md)
 * [navigation.md](laravel/modules/ui/docs/navigation.md)
 * [navigation.md](laravel/modules/cms/docs/blocks/navigation.md)
 * [navigation.md](laravel/modules/cms/docs/navigation.md)
 * [navigation.md](laravel/modules/cms/docs/components/navigation.md)
+<<<<<<< HEAD
 =======
 * [navigation.md](laravel/Modules/Gdpr/docs/navigation.md)
 * [navigation.md](laravel/Modules/Xot/docs/navigation.md)
@@ -86,3 +96,5 @@ Block::make('navigation')
 * [navigation.md](laravel/Modules/Cms/docs/navigation.md)
 * [navigation.md](laravel/Modules/Cms/docs/components/navigation.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

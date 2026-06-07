@@ -10,9 +10,13 @@ return [
             'helper_text' => 'title',
             'description' => 'title',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'description' => [
             'label' => 'description',
@@ -20,9 +24,13 @@ return [
             'helper_text' => 'description',
             'description' => 'description',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'button_text' => [
             'label' => 'button_text',
@@ -30,9 +38,13 @@ return [
             'helper_text' => 'button_text',
             'description' => 'button_text',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'button_link' => [
             'label' => 'button_link',
@@ -40,6 +52,9 @@ return [
             'helper_text' => 'button_link',
             'description' => 'button_link',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -54,8 +69,11 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

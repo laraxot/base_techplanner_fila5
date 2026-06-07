@@ -8,6 +8,9 @@ return [
         'group' => 'Geo',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'O S M Map',
     'plural_label' => 'O S M Map (Plurale)',
     'fields' => [
@@ -41,6 +44,9 @@ return [
             'label' => 'Elimina O S M Map',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

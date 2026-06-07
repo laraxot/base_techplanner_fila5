@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Fix - MeetupServiceProvider - [DATE]
 
 =======
@@ -6,6 +7,10 @@
 
 **Data**: 2025-12-16
 >>>>>>> 4b6b99016 (first commit)
+=======
+# PHPStan Fix - MeetupServiceProvider - [DATE]
+
+>>>>>>> dev
 **Analista**: Super Mucca AI
 **Status**: ✅ COMPLETATO
 

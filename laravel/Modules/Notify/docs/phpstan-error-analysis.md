@@ -1,9 +1,13 @@
 # Analisi Errori PHPStan - Modulo Notify
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-12-23
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data**: 2025-12-23
+>>>>>>> dev
 **Modulo**: Notify
 **Livello PHPStan**: max
 **Status**: ✅ Corretto (0 errori)

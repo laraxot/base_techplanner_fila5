@@ -314,12 +314,16 @@ Se `module:enable Activity` non funziona:
 ### Documentazione Correlata
 - [No Hint Path Defined - Guida Completa](./no-hint-path-defined.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Activity Module - README](../readme.md)
 - [Service Provider Architecture](../../xot/docs/service-provider-architecture.md)
 
 ### Issue Simili
 - [Xot - Module Discovery](../../xot/docs/module-discovery.md)
 - [Deployment Best Practices](../../xot/docs/deployment.md)
+<<<<<<< HEAD
 =======
 - [Activity Module - README](../README.md)
 - [Service Provider Architecture](../../Xot/docs/service-provider-architecture.md)
@@ -328,6 +332,8 @@ Se `module:enable Activity` non funziona:
 - [Xot - Module Discovery](../../Xot/docs/module-discovery.md)
 - [Deployment Best Practices](../../Xot/docs/deployment.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ---
 

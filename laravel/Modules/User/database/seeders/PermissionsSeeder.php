@@ -5,8 +5,13 @@ declare(strict_types=1);
 namespace Modules\User\Database\Seeders;
 
 use Illuminate\Database\Seeder;
+<<<<<<< HEAD
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
+=======
+use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
+>>>>>>> dev
 
 class PermissionsSeeder extends Seeder
 {

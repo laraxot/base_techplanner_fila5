@@ -51,6 +51,7 @@ Trovati 4 errori al livello max.
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
 
 ## Collegamenti tra versioni di level_max.md
+<<<<<<< HEAD
 * [level_max.md](laravel/Modules/Chart/docs/phpstan/level_max.md)
 * [level_max.md](laravel/Modules/Reporting/docs/phpstan/level_max.md)
 * [level_max.md](laravel/Modules/Gdpr/docs/phpstan/level_max.md)
@@ -66,3 +67,20 @@ Trovati 4 errori al livello max.
 * [level_max.md](laravel/Modules/Activity/docs/phpstan/level_max.md)
 * [level_max.md](laravel/Modules/Patient/docs/phpstan/level_max.md)
 * [level_max.md](laravel/Modules/Cms/docs/phpstan/level_max.md)
+=======
+* [level_max.md](laravel/modules/chart/docs/phpstan/level_max.md)
+* [level_max.md](laravel/modules/reporting/docs/phpstan/level_max.md)
+* [level_max.md](laravel/modules/gdpr/docs/phpstan/level_max.md)
+* [level_max.md](laravel/modules/notify/docs/phpstan/level_max.md)
+* [level_max.md](laravel/modules/xot/docs/phpstan/level_max.md)
+* [level_max.md](laravel/modules/dental/docs/phpstan/level_max.md)
+* [level_max.md](laravel/modules/user/docs/phpstan/level_max.md)
+* [level_max.md](laravel/modules/ui/docs/phpstan/level_max.md)
+* [level_max.md](laravel/modules/lang/docs/phpstan/level_max.md)
+* [level_max.md](laravel/modules/job/docs/phpstan/level_max.md)
+* [level_max.md](laravel/modules/media/docs/phpstan/level_max.md)
+* [level_max.md](laravel/modules/tenant/docs/phpstan/level_max.md)
+* [level_max.md](laravel/modules/activity/docs/phpstan/level_max.md)
+* [level_max.md](laravel/modules/patient/docs/phpstan/level_max.md)
+* [level_max.md](laravel/modules/cms/docs/phpstan/level_max.md)
+>>>>>>> dev

@@ -10,9 +10,12 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Modules\User\Contracts\TeamContract;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Database\Factories\TeamInvitationFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -30,9 +33,12 @@ use Modules\Xot\Datas\XotData;
  * @property TeamContract|null $team
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @method static TeamInvitationFactory  factory($count = null, $state = [])
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  * @method static Builder|TeamInvitation newModelQuery()
  * @method static Builder|TeamInvitation newQuery()
  * @method static Builder|TeamInvitation query()
@@ -61,12 +67,26 @@ use Modules\Xot\Datas\XotData;
  * @mixin IdeHelperTeamInvitation
  *
  * @property ProfileContract|null $deleter
+<<<<<<< HEAD
+=======
+ * @property Carbon|null          $accepted_at
+ * @property Carbon|null          $declined_at
+ * @property string|null          $user_id
+ *
+ * @method static \Modules\User\Database\Factories\TeamInvitationFactory factory($count = null, $state = [])
+ * @method static Builder<static>|TeamInvitation                         whereAcceptedAt($value)
+ * @method static Builder<static>|TeamInvitation                         whereDeclinedAt($value)
+ * @method static Builder<static>|TeamInvitation                         whereUserId($value)
+>>>>>>> dev
  *
  * @mixin \Eloquent
  */
 class TeamInvitation extends BaseModel
 {
+<<<<<<< HEAD
     /** @var string */
+=======
+>>>>>>> dev
     protected $connection = 'user';
 
     /** @var list<string> */

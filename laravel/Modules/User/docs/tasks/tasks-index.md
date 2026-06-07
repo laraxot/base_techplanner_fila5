@@ -25,4 +25,8 @@ Lista dei task del modulo con link ai file .md separati. Ogni task è un file ne
 
 - [Roadmap User](../roadmap.md)
 - [README User](../readme.md)
+<<<<<<< HEAD
 - [Scopo moduli progetto](../../../../docs/moduli-scopo.md)
+=======
+- [Scopo moduli progetto](../../../../../docs/moduli-scopo.md)
+>>>>>>> dev

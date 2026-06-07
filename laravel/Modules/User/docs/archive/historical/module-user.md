@@ -1,10 +1,17 @@
 # Modulo User
 
 ## Informazioni Generali
+<<<<<<< HEAD
 - **Nome**: `laraxot/module_user_fila3`
 - **Descrizione**: Modulo per la gestione degli utenti
 - **Namespace**: `Modules\User`
 - **Repository**: https://github.com/laraxot/module_user_fila3
+=======
+- **Nome**: `laraxot/module_user_fila5`
+- **Descrizione**: Modulo per la gestione degli utenti
+- **Namespace**: `Modules\User`
+- **Repository**: https://github.com/laraxot/module_user_fila5
+>>>>>>> dev
 
 ## Service Providers
 1. `Livewire\LivewireServiceProvider`

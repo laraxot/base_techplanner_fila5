@@ -3,11 +3,15 @@
 ## Panoramica
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto SaluteOra.
 =======
 Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto .
 Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto <nome progetto>.
 >>>>>>> 4b6b99016 (first commit)
+=======
+Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto Quaeris.
+>>>>>>> dev
 
 ## Implementazione nel Form Schema
 
@@ -24,15 +28,22 @@ public static function getFormSchema(): array
             ->required()
             ->maxLength(255),
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+            
+>>>>>>> dev
         'slug' => Forms\Components\TextInput::make('slug')
             ->required()
             ->unique(ignoreRecord: true)
             ->maxLength(255)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             ->afterStateUpdated(fn (string $context, $state, callable $set) => 
                 $context === 'create' ? $set('slug', Str::slug($state)) : null),
             
@@ -40,6 +51,7 @@ public static function getFormSchema(): array
             ->required()
             ->maxLength(255),
         
+<<<<<<< HEAD
 =======
             ->afterStateUpdated(fn (string $context, $state, callable $set) =>
                 $context === 'create' ? $set('slug', Str::slug($state)) : null),
@@ -49,6 +61,8 @@ public static function getFormSchema(): array
             ->maxLength(255),
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         // Altri campi...
     ];
 }
@@ -62,11 +76,15 @@ public static function getFormSchema(): array
 4. **Generazione Automatica**: La callback `afterStateUpdated()` genera automaticamente lo slug dal nome quando si crea un nuovo record.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Conformità con gli Standard SaluteOra
 =======
 ## Conformità con gli Standard
 ## Conformità con gli Standard <nome progetto>
 >>>>>>> 4b6b99016 (first commit)
+=======
+## Conformità con gli Standard Quaeris
+>>>>>>> dev
 
 Questa implementazione aderisce a diversi standard chiave del progetto:
 
@@ -92,11 +110,15 @@ public static function getListTableColumns(): array
         'id' => Tables\Columns\TextColumn::make('id')
             ->sortable(),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             
         'name' => Tables\Columns\TextColumn::make('name')
             ->searchable()
             ->sortable(),
             
+<<<<<<< HEAD
 =======
 
         'name' => Tables\Columns\TextColumn::make('name')
@@ -104,15 +126,21 @@ public static function getListTableColumns(): array
             ->sortable(),
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         'slug' => Tables\Columns\TextColumn::make('slug')
             ->searchable()
             ->sortable()
             ->copyable(),
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+            
+>>>>>>> dev
         // Altri campi...
     ];
 }
@@ -141,10 +169,14 @@ public static function getTableFilters(): array
     return [
         // Altri filtri...
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         'slug' => Tables\Filters\TextFilter::make('slug')
     ];
 }
@@ -189,10 +221,14 @@ return [
    // Ordinare i template per slug
    MailTemplate::query()->orderBy('slug')->get();
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+   
+>>>>>>> dev
    // Cercare template per slug parziale
    MailTemplate::query()->where('slug', 'like', 'welcome-%')->get();
    ```
@@ -207,6 +243,7 @@ return [
 
 ## Riferimenti
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Implementazione del Modello](./model_slug_implementation.md)
 - [Struttura della Migrazione](./migration_structure.md)
@@ -390,3 +427,10 @@ return [
 - [Convenzioni Filament](../../../../docs/FILAMENT_CONVENTIONS.md)
 - [Regole per Filament](../../../../docs/FILAMENT_RULES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Implementazione del Modello](./model_slug_implementation.md)
+- [Struttura della Migrazione](./migration_structure.md)
+- [Guida alla Migrazione](../mail_template_migration_guide.md)
+- [Convenzioni Filament](../../../../../docs/filament_conventions.md)
+- [Regole per Filament](../../../../../docs/filament_rules.md)
+>>>>>>> dev

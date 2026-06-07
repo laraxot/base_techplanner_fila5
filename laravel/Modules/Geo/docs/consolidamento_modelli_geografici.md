@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi del Consolidamento dei Modelli Geografici
 
 ## Panoramica
@@ -266,3 +267,12 @@ In sintesi, il modello `Comune` implementato rappresenta un caso di studio posit
 ---
 
 *Documento creato il: 27/05/2025*
+=======
+---
+module: theme
+topic: consolidamento_modelli_geografici
+canonical: ../../../Themes/docs/shared-components/consolidamento-modelli-geografici.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/consolidamento-modelli-geografici.md
+>>>>>>> dev

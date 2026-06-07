@@ -52,10 +52,14 @@
 ## 🔗 Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [← Cms Module README](../readme.md)
 =======
 - [← Cms Module README](../README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [← Cms Module README](../readme.md)
+>>>>>>> dev
 - [← Root Documentation](../../../docs/index.md)
 
 ---

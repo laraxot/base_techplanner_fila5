@@ -104,10 +104,14 @@ Se trovi codice che viola questa regola:
 ## Link a Risorse Correlate
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Documentazione sulla struttura delle traduzioni](/laravel/modules/xot/project_docs/translation_rules.md)
 - [Esempio pratico nel TeamsRelationManager](/laravel/modules/user/project_docs/filament/teams_relation_manager.md)
 - [Regole per RelationManager](/project_docs/filament/relation_managers.md)
 
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 3 Giugno 2025*
 - [Documentazione sulla struttura delle traduzioni](/laravel/Modules/Xot/project_docs/translation_rules.md)
@@ -116,6 +120,8 @@ Se trovi codice che viola questa regola:
 
 *Ultimo aggiornamento: 3 Giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 # DIVIETO ASSOLUTO DI USARE ->label(), ->placeholder() e ->helperText()
 
 ## Regola Fondamentale Inviolabile
@@ -222,10 +228,14 @@ Se trovi codice che viola questa regola:
 ## Link a Risorse Correlate
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Documentazione sulla struttura delle traduzioni](/laravel/modules/xot/docs/translation_rules.md)
 - [Esempio pratico nel TeamsRelationManager](/laravel/modules/user/docs/filament/teams_relation_manager.md)
 - [Regole per RelationManager](/docs/filament/relation_managers.md)
 
+<<<<<<< HEAD
 =======
 - [Documentazione sulla struttura delle traduzioni](/laravel/Modules/Xot/docs/translation_rules.md)
 - [Esempio pratico nel TeamsRelationManager](/laravel/Modules/User/docs/filament/teams_relation_manager.md)
@@ -233,3 +243,5 @@ Se trovi codice che viola questa regola:
 
 *Ultimo aggiornamento: 3 Giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

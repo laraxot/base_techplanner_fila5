@@ -45,6 +45,7 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 Questa documentazione integra entrambe le versioni emerse dal conflitto per fornire sia una panoramica rapida sia una guida dettagliata, facilitando la consultazione a diversi livelli di approfondimento.
 
 ## Backlink
+<<<<<<< HEAD
 - [Torna a docs/links.md](../../../../docs/links.md)
 - [Vedi anche: UI/docs/components.md](./components.md)
 <<<<<<< HEAD
@@ -52,6 +53,11 @@ Questa documentazione integra entrambe le versioni emerse dal conflitto per forn
 =======
 - [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Torna a docs/links.md](../../../../../docs/links.md)
+- [Vedi anche: UI/docs/components.md](./components.md)
+- [Vedi anche: Xot/docs/README.md](../../xot/docs/readme.md)
+>>>>>>> dev
 
 ## Esempi
 ```blade
@@ -62,6 +68,7 @@ Questa documentazione integra entrambe le versioni emerse dal conflitto per forn
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Componenti UI](laravel/modules/ui/docs/components.md)
 - [Documentazione Filament](laravel/modules/ui/docs/filament/readme.md)
 - [Convenzioni di Naming](laravel/modules/ui/docs/naming-conventions.md)
@@ -70,3 +77,8 @@ Questa documentazione integra entrambe le versioni emerse dal conflitto per forn
 - [Documentazione Filament](laravel/Modules/UI/docs/filament/README.md)
 - [Convenzioni di Naming](laravel/Modules/UI/docs/naming-conventions.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Componenti UI](laravel/modules/ui/docs/components.md)
+- [Documentazione Filament](laravel/modules/ui/docs/filament/readme.md)
+- [Convenzioni di Naming](laravel/modules/ui/docs/naming-conventions.md)
+>>>>>>> dev

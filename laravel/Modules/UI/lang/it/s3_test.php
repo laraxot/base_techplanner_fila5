@@ -16,9 +16,13 @@ return [
             'helper_text' => '',
             'description' => 'Indirizzo email del destinatario',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'subject' => [
             'label' => 'Oggetto',
@@ -26,9 +30,13 @@ return [
             'helper_text' => '',
             'description' => 'Oggetto dell\'email di test',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'body_html' => [
             'label' => 'Corpo HTML',
@@ -36,9 +44,13 @@ return [
             'helper_text' => '',
             'description' => 'Contenuto HTML dell\'email',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'attachment' => [
             'description' => 'Allegato per il test S3',
@@ -46,9 +58,13 @@ return [
             'placeholder' => 'Seleziona file da allegare',
             'label' => 'Allegato',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'debug_output' => [
             'description' => 'Output di debug per i test',
@@ -56,9 +72,13 @@ return [
             'placeholder' => 'Output debug',
             'label' => 'Debug Output',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -116,8 +136,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'S3 Test',
     'plural_label' => 'S3 Test (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'S3 Test',
+    'plural_label' => 'S3 Test (Plurale)',
+>>>>>>> dev
 ];

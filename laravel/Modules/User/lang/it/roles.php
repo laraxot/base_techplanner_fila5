@@ -7,6 +7,9 @@ return [
         'id' => [
             'label' => 'id',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -48,6 +51,7 @@ return [
             'label' => 'Elimina Roles',
         ],
     ],
+<<<<<<< HEAD
 =======
         ],
         'name' => [
@@ -62,4 +66,6 @@ return [
     'plural_label' => '',
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

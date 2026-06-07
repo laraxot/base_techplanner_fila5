@@ -9,119 +9,185 @@ return [
             'placeholder' => 'Seleziona il tipo di notifica',
             'help' => 'Tipo di notifica da inviare',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'title' => [
             'label' => 'Titolo',
             'placeholder' => 'Inserisci il titolo della notifica',
             'help' => 'Titolo della notifica',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Inserisci il messaggio della notifica',
             'help' => 'Contenuto della notifica',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'recipients' => [
             'label' => 'Destinatari',
             'placeholder' => 'Seleziona i destinatari',
             'help' => 'Utenti che riceveranno la notifica',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'channels' => [
             'label' => 'Canali',
             'placeholder' => 'Seleziona i canali di notifica',
             'help' => 'Canali attraverso cui inviare la notifica',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'priority' => [
             'label' => 'Priorità',
             'placeholder' => 'Seleziona la priorità',
             'help' => 'Livello di priorità della notifica',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'scheduled_at' => [
             'label' => 'Programmata per',
             'placeholder' => 'Seleziona data e ora',
             'help' => 'Data e ora di invio programmato',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'expires_at' => [
             'label' => 'Scade il',
             'placeholder' => 'Seleziona data e ora',
             'help' => 'Data e ora di scadenza',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'data' => [
             'label' => 'Dati aggiuntivi',
             'placeholder' => 'Inserisci dati aggiuntivi',
             'help' => 'Dati aggiuntivi per la notifica',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'is_read' => [
             'label' => 'Letta',
             'help' => 'Indica se la notifica è stata letta',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'is_sent' => [
-            'label' => 'Inviata',
-            'help' => 'Indica se la notifica è stata inviata',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'is_sent' => [
+            'label' => 'Inviata',
+            'help' => 'Indica se la notifica è stata inviata',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'validation' => [
@@ -192,10 +258,14 @@ return [
         'database' => 'Database',
         'broadcast' => 'Broadcast',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'nexmo' => 'SMS (Nexmo]',
 =======
         'nexmo' => 'SMS (Nexmo)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'nexmo' => 'SMS (Nexmo]',
+>>>>>>> dev
         'slack' => 'Slack',
         'telegram' => 'Telegram',
         'push' => 'Push Notification',
@@ -221,6 +291,9 @@ return [
         'expired' => 'Scaduta',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Notification',
     'plural_label' => 'Notification (Plurale)',
     'navigation' => [
@@ -245,6 +318,9 @@ return [
             'label' => 'Elimina Notification',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

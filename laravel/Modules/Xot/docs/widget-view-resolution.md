@@ -1,9 +1,12 @@
 # Widget View Resolution - Risoluzione Automatica vs Manuale
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-01-27
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Status**: ✅ RISOLTO
 **Problema**: `XotBaseWidget` sovrascriveva view definite manualmente
 
@@ -72,9 +75,36 @@ public function __construct()
 
 ---
 
+<<<<<<< HEAD
 ## 📋 Pattern di Utilizzo
 
 ### Pattern 1: View Manuale (Raccomandato per nomi complessi)
+=======
+## Pattern di Utilizzo
+
+### Pattern 1: View Automatica (default Laraxot)
+
+```php
+class SimpleWidget extends XotBaseWidget
+{
+    // Non definire $view: viene cercata automaticamente.
+    // Pattern: pub_theme::filament.widgets.{nome-classe-slug}
+    // Fallback: {modulo}::filament.widgets.{nome-classe-slug}
+
+    public function getFormSchema(): array
+    {
+        return [];
+    }
+}
+```
+
+**Quando usare**:
+- Nome widget che segue il pattern automatico
+- Serve permettere al tema pubblico di fornire il vestito visuale
+- Si vuole evitare duplicazione tra classe PHP e path Blade
+
+### Pattern 2: View Manuale (solo eccezione documentata)
+>>>>>>> dev
 
 ```php
 class TimeClockWidget extends XotBaseWidget
@@ -89,6 +119,7 @@ class TimeClockWidget extends XotBaseWidget
 ```
 
 **Quando usare**:
+<<<<<<< HEAD
 - Nome widget complesso con trattini
 - View con nome diverso dal pattern automatico
 - Controllo esplicito sulla view utilizzata
@@ -112,6 +143,11 @@ class SimpleWidget extends XotBaseWidget
 **Quando usare**:
 - Nome widget semplice che segue il pattern automatico
 - Convenzione naming standard
+=======
+- La view ha un nome realmente fuori convenzione
+- Il motivo dell'override è documentato
+- Si accetta consapevolmente che l'override blocchi la precedenza `pub_theme::...`
+>>>>>>> dev
 
 ---
 
@@ -167,10 +203,18 @@ class MyWidget extends XotBaseWidget
 
 ## 📝 Best Practices
 
+<<<<<<< HEAD
 1. **Definire sempre la view manualmente** se il nome widget è complesso o contiene trattini
 2. **Verificare che la view esista** prima di definirla manualmente
 3. **Usare naming consistente**: se possibile, seguire il pattern automatico
 4. **Documentare view custom** nel widget se il nome non è ovvio
+=======
+1. **Preferire sempre la view automatica** quando il nome widget segue la convenzione
+2. **Definire manualmente `$view` solo come eccezione documentata**
+3. **Verificare che la view esista** prima di definirla manualmente
+4. **Ricordare che `$view` manuale blocca la precedenza `pub_theme::...`**
+5. **Usare naming consistente** per evitare override non necessari
+>>>>>>> dev
 
 ---
 
@@ -183,7 +227,11 @@ class MyWidget extends XotBaseWidget
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Documento creato il [DATE] durante la risoluzione del bug "View not found: timeclock"*
 =======
 *Documento creato il 2025-01-27 durante la risoluzione del bug "View not found: timeclock"*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Documento creato il [DATE] durante la risoluzione del bug "View not found: timeclock"*
+>>>>>>> dev

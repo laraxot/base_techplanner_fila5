@@ -1,9 +1,12 @@
 # Gdpr Module: Philosophy, Purpose, and Design Principles
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Date:** December 23, 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## 🎯 Purpose and Core Responsibilities
 
@@ -21,7 +24,11 @@ The `Gdpr` module is built upon principles that emphasize legal compliance, user
 *   **Compliance as a Fundamental Feature:** The module's core philosophy views GDPR compliance not as an optional add-on but as an integral and mandatory feature of the application. It aims to integrate privacy safeguards directly into the user experience from the outset.
 *   **Configurable Privacy Management:** Adopting a configuration-driven approach allows the application to flexibly manage privacy features. The ability to enable or disable components like the cookie banner via settings (`GdprData`) provides the agility needed to respond to evolving legal requirements or specific market demands.
 *   **Pragmatic External Integration:** By utilizing a well-established third-party library (`Statikbe\CookieConsent\CookieConsentMiddleware`), the module demonstrates a pragmatic approach to specialized privacy functionalities. This avoids reinventing complex solutions and benefits from community-driven expertise.
+<<<<<<< HEAD
 *   **Architectural Harmony (Aligning with `Xot`):** By extending `XotBaseServiceProvider` and using `GetModulePathByGeneratorAction`, the `Gdpr` module adheres to the consistent architectural patterns enforced by the `Xot` module, ensuring its seamless and predictable operation within the larger modular system.
+=======
+*   **Architectural Harmony (Aligning with `Xot`):** By extending `XotBaseServiceProvider` and using `GetModulePathByGeneratorAction`, the `Gdpr` module adheres to the consistent architectural patterns enforced by the `Xot` module, ensuring its seamless and <nome progetto>able operation within the larger modular system.
+>>>>>>> dev
 *   **"Politics" (Legal Mandate and User Trust):** The "politics" of this module are firmly rooted in the imperative to comply with data protection laws and to foster trust with users. It dictates the application's stance on user data, ensuring that the legal and ethical obligations regarding privacy are met proactively.
 *   **"Religion" (Respect for Data Sovereignty):** The "religion" here is a profound belief in the individual's right to control their personal data. The module operationalizes this belief by providing mechanisms for clear, informed consent, thereby empowering users in their interactions with the application.
 *   **"Zen" (Effortless and Transparent Compliance):** The "zen" of the `Gdpr` module is to achieve effortless and transparent privacy compliance. It strives to provide unobtrusive consent mechanisms and robust data protection features that are easy to integrate for developers and clear for users, cultivating a state of calm assurance regarding the application's legal and ethical data handling practices.

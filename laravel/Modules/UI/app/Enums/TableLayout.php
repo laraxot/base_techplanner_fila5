@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\UI\Enums;
 
+<<<<<<< HEAD
 enum TableLayout: string
 {
     case LIST = 'list';
@@ -32,6 +33,16 @@ enum TableLayout: string
             self::GRID => 'heroicon-o-squares-2x2',
         };
     }
+=======
+use Modules\Xot\Traits\EnumTrait;
+enum TableLayout: string
+{
+    use EnumTrait;
+
+    case LIST = 'list';
+    case GRID = 'grid';
+
+>>>>>>> dev
 
     public function toggle(): self
     {

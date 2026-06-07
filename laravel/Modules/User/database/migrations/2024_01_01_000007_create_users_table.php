@@ -20,10 +20,14 @@ return new class extends XotBaseMigration {
             // $table->uuid('id')->primary();
             $table->string('id', 36)->primary();
 <<<<<<< HEAD
+<<<<<<< HEAD
             $table->string('name')->nullable();
 =======
             $table->string('name');
 >>>>>>> 4b6b99016 (first commit)
+=======
+            $table->string('name');
+>>>>>>> dev
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('email')->unique();
@@ -65,6 +69,7 @@ return new class extends XotBaseMigration {
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (! $this->hasColumn('type')) {
                 $table->string('type')->default('customer_user')->after('is_active');
             }
@@ -75,6 +80,8 @@ return new class extends XotBaseMigration {
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             if (! $this->hasColumn('is_otp')) {
                 $table->boolean('is_otp')->default(false);
             }

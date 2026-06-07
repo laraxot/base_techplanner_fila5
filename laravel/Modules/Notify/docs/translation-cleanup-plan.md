@@ -1,6 +1,7 @@
 # Piano di Pulizia e Standardizzazione delle Traduzioni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento descrive il piano di pulizia e standardizzazione delle traduzioni italiane nel modulo Notify di SaluteOra.
 
 ## Analisi della Situazione Attuale
@@ -117,6 +118,13 @@ Questo documento descrive il piano di pulizia e standardizzazione delle traduzio
 
 Dall'analisi dei file di traduzione nella cartella `Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
 >>>>>>> 4b6b99016 (first commit)
+=======
+Questo documento descrive il piano di pulizia e standardizzazione delle traduzioni italiane nel modulo Notify di Quaeris.
+
+## Analisi della Situazione Attuale
+
+Dall'analisi dei file di traduzione nella cartella `/var/www/html/Quaeris/laravel/Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
+>>>>>>> dev
 
 ### 1. File con Nomi Errati
 - `send_s_m_s.php` invece di `send_sms.php`

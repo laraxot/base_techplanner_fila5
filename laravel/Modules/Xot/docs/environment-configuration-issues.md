@@ -140,9 +140,12 @@ php artisan config:cache
 - [Documentazione Root](/docs/env-config-loading-issue.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 # Problemi di Configurazione Variabili d'Ambiente - Modulo Xot
 
 ## Problema: env() non funziona durante il bootstrap
@@ -285,6 +288,9 @@ php artisan config:cache
 - [Documentazione Root](/project_docs/env-config-loading-issue.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

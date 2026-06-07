@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gestione dei Namespace nei Componenti a Blocchi
 
 Questo documento spiega come gestire correttamente i namespace nei componenti a blocchi in il progetto, con un focus particolare sulla risoluzione di problemi comuni.
@@ -113,3 +114,12 @@ Ecco l'elenco dei componenti blocchi comuni e i loro percorsi:
 3. **Estensioni Corrette**: Assicurarsi che i file abbiano l'estensione `.blade.php`
 4. **Proprietà Props**: Definire chiaramente le props accettate dal componente usando la direttiva `@props`
 5. **Documentazione**: Documentare il comportamento e l'uso di ogni componente 
+=======
+---
+module: theme
+topic: namespace_componenti_blocchi
+canonical: ../../../Themes/docs/shared-components/namespace-componenti-blocchi.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/namespace-componenti-blocchi.md
+>>>>>>> dev

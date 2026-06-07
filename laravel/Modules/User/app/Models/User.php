@@ -10,9 +10,12 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Database\Factories\UserFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
@@ -62,6 +65,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property int|null                                          $teams_count
  * @property Collection<int, Tenant>                           $tenants
  * @property int|null                                          $tenants_count
+<<<<<<< HEAD
  * @property Collection<int, OauthAccessToken>                 $tokens
  * @property int|null                                          $tokens_count
  *
@@ -69,6 +73,11 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 =======
  * @method static UserFactory          factory($count = null, $state = [])
 >>>>>>> 4b6b99016 (first commit)
+=======
+ * @property Collection<int, OauthToken>                       $tokens
+ * @property int|null                                          $tokens_count
+ *
+>>>>>>> dev
  * @method static Builder|User         newModelQuery()
  * @method static Builder|User         newQuery()
  * @method static Builder|User         permission($permissions, $without = false)
@@ -137,13 +146,37 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property User|null $updater
  * @property User|null $user
  *
+<<<<<<< HEAD
+=======
+ * @method static \Modules\User\Database\Factories\UserFactory factory($count = null, $state = [])
+ *
+ * @property string|null                  $uuid
+ * @property string                       $surname
+ * @property string|null                  $two_factor_secret
+ * @property string|null                  $two_factor_recovery_codes
+ * @property string|null                  $two_factor_confirmed_at
+ * @property Collection<int, OauthClient> $oauthApps
+ * @property int|null                     $oauth_apps_count
+ *
+ * @method static Builder<static>|User childrenWith(array $relations)
+ * @method static Builder<static>|User childrenWithCount(array $relations)
+ * @method static Builder<static>|User whereSurname($value)
+ * @method static Builder<static>|User whereTwoFactorConfirmedAt($value)
+ * @method static Builder<static>|User whereTwoFactorRecoveryCodes($value)
+ * @method static Builder<static>|User whereTwoFactorSecret($value)
+ * @method static Builder<static>|User whereUuid($value)
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class User extends BaseUser
 {
+<<<<<<< HEAD
     /** @var string */
     public $connection = 'user';
 
+=======
+>>>>>>> dev
     /** @var array<string, class-string> */
     protected $childTypes = [
         'master_admin' => self::class,

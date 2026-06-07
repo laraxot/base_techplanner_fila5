@@ -20,186 +20,279 @@ return [
             'tooltip' => 'Identificativo unico del Job Manager',
             'placeholder' => 'ID del Manager',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'name' => [
             'label' => 'Name',
             'tooltip' => 'Name of the Job Manager',
             'placeholder' => 'Enter name',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'description' => [
             'label' => 'Description',
             'tooltip' => 'Brief description of the job manager',
             'placeholder' => 'Job Manager description',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'status' => [
             'label' => 'Status',
             'tooltip' => 'Current status of the Job Manager',
             'placeholder' => 'Select status',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'type' => [
             'label' => 'Type',
             'tooltip' => 'Type of Job Manager',
             'placeholder' => 'Select type',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'priority' => [
             'label' => 'Priority',
             'tooltip' => 'Execution priority of the job manager',
             'placeholder' => 'Select priority',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'max_attempts' => [
             'label' => 'Max Attempts',
             'tooltip' => 'Maximum number of attempts to run the job manager',
             'placeholder' => 'Max attempts',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'timeout' => [
             'label' => 'Timeout',
             'tooltip' => 'Maximum execution time for the job manager',
             'placeholder' => 'Timeout',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Created At',
             'tooltip' => 'Creation date of the Job Manager',
             'placeholder' => 'Creation date',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'updated_at' => [
             'label' => 'Updated At',
             'tooltip' => 'Date of last update',
             'placeholder' => 'Update date',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'last_run' => [
             'label' => 'Last Run',
             'tooltip' => 'Date and time of last execution',
             'placeholder' => 'Last run',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'next_run' => [
             'label' => 'Next Run',
             'tooltip' => 'Date and time of next execution',
             'placeholder' => 'Next run',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'cron_expression' => [
             'label' => 'Cron Expression',
             'tooltip' => 'Cron expression for job scheduling',
             'placeholder' => 'Enter cron expression',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'output' => [
             'label' => 'Output',
             'tooltip' => 'Job execution output',
             'placeholder' => 'Output',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'error' => [
             'label' => 'Error',
             'tooltip' => 'Error message if the job fails',
             'placeholder' => 'Error',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Guard associated with the Job Manager',
             'placeholder' => 'Select Guard',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'permissions' => [
             'label' => 'Permissions',
             'tooltip' => 'Permissions associated with the Job Manager',
             'placeholder' => 'Select permissions',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome dell\'utente associato',
             'placeholder' => 'Inserisci nome',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'last_name' => [
             'label' => 'Cognome',
             'tooltip' => 'Cognome dell\'utente associato',
             'placeholder' => 'Inserisci cognome',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -226,6 +319,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'toggleColumns' => [
@@ -240,6 +334,8 @@ return [
         'applyFilters' => [
             'label' => 'applyFilters',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -343,8 +439,13 @@ return [
         'urgent' => 'Urgente',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

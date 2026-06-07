@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
@@ -223,3 +224,12 @@ return redirect()->to('/' . $locale);
 ```
 
 Questa implementazione è semplice, sicura e segue tutte le best practices del progetto SaluteOra.
+=======
+---
+module: theme
+topic: logout_blade_implementation
+canonical: ../../../Themes/docs/shared-components/logout_blade_implementation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout_blade_implementation.md
+>>>>>>> dev

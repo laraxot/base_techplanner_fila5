@@ -28,10 +28,14 @@ Il provider `XotBaseServiceProvider` rappresenta la base architetturale per tutt
 
 ## Backlink
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Torna a README.md del modulo Xot](../readme.md)
 =======
 - [Torna a README.md del modulo Xot](../README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Torna a README.md del modulo Xot](../readme.md)
+>>>>>>> dev
 - [Collegamento a docs/links.md della root](../../../../project_docs/links.md)
 
 ## Utilizzo di GetModulePathByGeneratorAction
@@ -199,11 +203,16 @@ Il provider `XotBaseServiceProvider` rappresenta la base architetturale per tutt
 
 ## Backlink
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Torna a README.md del modulo Xot](../readme.md)
 =======
 - [Torna a README.md del modulo Xot](../README.md)
 >>>>>>> 4b6b99016 (first commit)
 - [Collegamento a docs/links.md della root](../../../../docs/links.md)
+=======
+- [Torna a README.md del modulo Xot](../readme.md)
+- [Collegamento a docs/links.md della root](../../../../../docs/links.md)
+>>>>>>> dev
 
 ## Utilizzo di GetModulePathByGeneratorAction
 

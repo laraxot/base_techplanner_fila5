@@ -41,11 +41,16 @@ Questo pattern consente:
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultima modifica:** [DATE]
 =======
 **Ultima modifica:** 2025-04-16
 >>>>>>> 4b6b99016 (first commit)
 **Collegamento indice:** [../../../../docs/index.md](../../../../docs/index.md)
+=======
+**Ultima modifica:** [DATE]
+**Collegamento indice:** [../../../../../docs/index.md](../../../../../docs/index.md)
+>>>>>>> dev
 
 ## Metodi Validati
 - `getBrandName()`: Restituisce il nome del brand (titolo della pagina)

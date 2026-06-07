@@ -1,7 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 # MCP Server Consigliati per il Modulo Xot
 
 ## Scopo del Modulo

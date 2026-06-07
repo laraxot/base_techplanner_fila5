@@ -55,10 +55,14 @@ class MioServizio
     ) {
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     public function eseguiOperazione(): void
     {
         // Utilizzo dell'interfaccia UserContract
@@ -85,19 +89,27 @@ public function register(array $data): UserContract
 {
     $user = app(UserContract::class);
 <<<<<<< HEAD
-    
-=======
-
->>>>>>> 4b6b99016 (first commit)
-    $user->name = $data['name'];
-    $user->email = $data['email'];
-    $user->password = Hash::make($data['password']);
-    $user->save();
 <<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
+    $user->name = $data['name'];
+    $user->email = $data['email'];
+    $user->password = Hash::make($data['password']);
+    $user->save();
+<<<<<<< HEAD
+<<<<<<< HEAD
+    
+=======
+
+>>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     return $user;
 }
 ```

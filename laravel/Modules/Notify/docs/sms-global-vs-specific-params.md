@@ -172,17 +172,26 @@ Prima di modificare la configurazione SMS, verificare che:
 ## Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Struttura Standardizzata della Configurazione SMS](./standardized_sms_config_structure.md)
 - [Configurazione Netfun](./netfun_config_requirements.md)
 =======
 - [Struttura Standardizzata della Configurazione SMS](./STANDARDIZED_SMS_CONFIG_STRUCTURE.md)
 - [Configurazione Netfun](./NETFUN_CONFIG_REQUIREMENTS.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Struttura Standardizzata della Configurazione SMS](./standardized_sms_config_structure.md)
+- [Configurazione Netfun](./netfun_config_requirements.md)
+>>>>>>> dev
 - [Laravel Configuration Best Practices](https://laravel.com/docs/configuration)
 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-05-12*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Ultimo aggiornamento: [DATE]*
+>>>>>>> dev

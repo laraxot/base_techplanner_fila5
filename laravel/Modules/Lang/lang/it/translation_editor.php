@@ -10,6 +10,9 @@ return [
             'helper_text' => 'fields',
             'description' => 'fields',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -35,8 +38,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Translation Editor',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

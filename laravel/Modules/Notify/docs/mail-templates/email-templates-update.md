@@ -84,13 +84,19 @@ I modelli base si trovano in:
 ## Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Email Templates Structure](./email_templates_structure.md)
 - [Responsive Email Design](./responsive_email_templates.md)
 - [Email HTML Best Practices](../email_html_best_practices.md)
 - [Email Templates Implementation](../email_templates.md)
 =======
+=======
+>>>>>>> dev
 - [Email Templates Structure](./EMAIL_TEMPLATES_STRUCTURE.md)
 - [Responsive Email Design](./RESPONSIVE_EMAIL_TEMPLATES.md)
 - [Email HTML Best Practices](../EMAIL_HTML_BEST_PRACTICES.md)
 - [Email Templates Implementation](../EMAIL_TEMPLATES.md)
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

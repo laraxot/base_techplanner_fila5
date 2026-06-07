@@ -1,9 +1,12 @@
 # Roadmap Risoluzione Merge Conflicts - PHPStan Bloccanti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-01-22
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Status**: ⚠️ In Lavorazione
 **Scopo**: Documentare la roadmap per risolvere i merge conflicts che bloccano PHPStan
 
@@ -198,9 +201,13 @@ class ResourceName extends XotBaseResource
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
 =======
 **Ultimo aggiornamento**: 2025-01-22
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> dev
 **Versione**: 1.0.0
 **Status**: ⚠️ In Lavorazione

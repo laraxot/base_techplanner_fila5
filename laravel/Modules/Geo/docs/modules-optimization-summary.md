@@ -196,6 +196,9 @@ php artisan docs:validate
 
 ### Moduli Principali
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [<nome progetto> - Core Business](../modules/<nome progetto>/docs/optimization-analysis.md)
 - [<nome progetto> - Core Business](../modules/<nome progetto>/docs/optimization-analysis.md)
 - [User - Authentication](../modules/user/docs/optimization-analysis.md)
@@ -210,6 +213,7 @@ php artisan docs:validate
 - [Media - File Management](../modules/media/docs/optimization-analysis.md)
 - [Lang - Translations](../modules/lang/docs/optimization-analysis.md)
 - [Notify - Notifications](../modules/notify/docs/optimization-analysis.md)
+<<<<<<< HEAD
 =======
 - [<nome progetto> - Core Business](../Modules/<nome progetto>/docs/optimization-analysis.md)
 - [<nome progetto> - Core Business](../Modules/<nome progetto>/docs/optimization-analysis.md)
@@ -226,6 +230,8 @@ php artisan docs:validate
 - [Lang - Translations](../Modules/Lang/docs/optimization-analysis.md)
 - [Notify - Notifications](../Modules/Notify/docs/optimization-analysis.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### Documentazione Generale
 - [SOLID Principles](./solid-principles.md)

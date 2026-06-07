@@ -7,6 +7,9 @@ return [
         'provider' => [
             'label' => 'Fournisseur',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -76,6 +79,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'provider_id' => [
@@ -111,6 +115,8 @@ return [
         'toggleColumns' => [
             'label' => 'Basculer les Colonnes',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'navigation' => [
@@ -120,10 +126,16 @@ return [
         'label' => 'Utilisateurs Socialite',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

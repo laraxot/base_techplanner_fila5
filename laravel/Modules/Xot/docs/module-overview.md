@@ -83,10 +83,14 @@ Esempi chiave (non esaustivi):
 
 - `README.md` (indice ad alto livello)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `FILOSOFIA_MODULO_XOT.md` (filosofia/politica/dogmi, generato [DATE])
 =======
 - `FILOSOFIA_MODULO_XOT.md` (filosofia/politica/dogmi, generato 2025-12-24)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- `FILOSOFIA_MODULO_XOT.md` (filosofia/politica/dogmi, generato [DATE])
+>>>>>>> dev
 - `filament/` e `consolidated/` (guide dettagliate)
 
 ## Da migliorare (DRY + KISS)

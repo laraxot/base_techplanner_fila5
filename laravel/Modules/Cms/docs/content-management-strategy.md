@@ -7,10 +7,14 @@ Seguendo i principi **zen** e **minimalista** di Laraxot, la gestione dei conten
 ### 🧘 **Principi Zen del Contenuto**
 - **Semplicità**: Informazioni chiare e immediate
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Trasparenza**: Conformità normativa GDPR per dati sanitari  
 =======
 - **Trasparenza**: Conformità normativa GDPR per dati sanitari
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Trasparenza**: Conformità normativa GDPR per dati sanitari  
+>>>>>>> dev
 - **Accessibilità**: Contenuti comprensibili a tutti gli utenti
 - **Fiducia**: Linguaggio professionale e rassicurante
 - **Etica**: Rispetto della privacy e dei diritti del paziente
@@ -21,10 +25,14 @@ Le pagine istituzionali devono:
 - Garantire **compliance normativa** (GDPR, Codice Privacy)
 - Facilitare l'**accessibilità** per tutti i pazienti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Riflettere la **missione** di promozione della salute orale
 =======
 - Riflettere la **missione** di promozione della <slogan>
 >>>>>>> 4b6b99016 (first commit)
+=======
+- Riflettere la **missione** di promozione della salute orale
+>>>>>>> dev
 
 ## Struttura delle Pagine Istituzionali
 
@@ -38,10 +46,14 @@ Le pagine istituzionali devono:
 - Certificazioni e riconoscimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 🔒 **Pagina 14: Privacy Policy**  
 =======
 ### 🔒 **Pagina 14: Privacy Policy**
 >>>>>>> 4b6b99016 (first commit)
+=======
+### 🔒 **Pagina 14: Privacy Policy**  
+>>>>>>> dev
 **Filosofia**: Trasparenza totale nella gestione dati sanitari
 **Compliance**: GDPR, Codice Privacy, normative sanitarie
 **Componenti strutturati**:
@@ -106,14 +118,19 @@ Le pagine istituzionali devono:
 Questa strategia integra:
 - [Gestione Homepage](/var/www/html/_bases/<directory progetto>/project_docs/gestione-homepage.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practice UX](/var/www/html/_bases/<directory progetto>/project_docs/ux-design-principles.md)  
 =======
 - [Best Practice UX](/var/www/html/_bases/<directory progetto>/project_docs/ux-design-principles.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Best Practice UX](/var/www/html/_bases/<directory progetto>/project_docs/ux-design-principles.md)  
+>>>>>>> dev
 - [Compliance GDPR](/var/www/html/_bases/<directory progetto>/project_docs/privacy-compliance.md)
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 **Ultimo aggiornamento**: Gennaio 2025  
 **Revisione**: Conforme regole Laraxot olistica e filosofia zen del contenuto sanitario 
@@ -121,3 +138,7 @@ Questa strategia integra:
 **Ultimo aggiornamento**: Gennaio 2025
 **Revisione**: Conforme regole Laraxot olistica e filosofia zen del contenuto sanitario
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Ultimo aggiornamento**: Gennaio 2025  
+**Revisione**: Conforme regole Laraxot olistica e filosofia zen del contenuto sanitario 
+>>>>>>> dev

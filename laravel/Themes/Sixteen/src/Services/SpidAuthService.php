@@ -147,10 +147,14 @@ class SpidAuthService
 
         $decodedResponse = base64_decode($samlResponse);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $responseDoc = new DOMDocument();
 =======
         $responseDoc = new DOMDocument;
 >>>>>>> 4b6b99016 (first commit)
+=======
+        $responseDoc = new DOMDocument;
+>>>>>>> dev
         $responseDoc->loadXML($decodedResponse);
 
         // Valida la signature
@@ -282,7 +286,11 @@ class SpidAuthService
     /**
      * Valida la response SAML
      */
+<<<<<<< HEAD
     protected function validateSamlResponse(\DOMDocument $responseDoc): void
+=======
+    protected function validateSamlResponse(DOMDocument $responseDoc): void
+>>>>>>> dev
     {
         // Implementazione della validazione signature
         // In produzione usare librerie come xmlseclibs per validazione completa
@@ -294,16 +302,26 @@ class SpidAuthService
         // Verifica che la response sia successful
         $statusCode = $xpath->query('//samlp:StatusCode/@Value');
         if ($statusCode->length === 0 || $statusCode->item(0)->nodeValue !== 'urn:oasis:names:tc:SAML:2.0:status:Success') {
+<<<<<<< HEAD
             throw new \Exception('SPID authentication failed');
+=======
+            throw new Exception('SPID authentication failed');
+>>>>>>> dev
         }
     }
 
     /**
      * Estrae gli attributi utente dalla response SAML
      */
+<<<<<<< HEAD
     protected function extractUserAttributes(\DOMDocument $responseDoc): array
     {
         $xpath = new \DOMXPath($responseDoc);
+=======
+    protected function extractUserAttributes(DOMDocument $responseDoc): array
+    {
+        $xpath = new DOMXPath($responseDoc);
+>>>>>>> dev
         $xpath->registerNamespace('saml', 'urn:oasis:names:tc:SAML:2.0:assertion');
 
         $attributes = [];

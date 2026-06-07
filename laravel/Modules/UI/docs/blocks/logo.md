@@ -69,6 +69,7 @@ In the section configuration JSON:
 ## Related Documentation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Block Components Overview](./readme.md)
 - [Data Handling in Blade Components](../blade-data-handling.md)
 - [Section Architecture](../sections/readme.md)
@@ -77,3 +78,8 @@ In the section configuration JSON:
 - [Data Handling in Blade Components](../blade-data-handling.md)
 - [Section Architecture](../sections/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Block Components Overview](./readme.md)
+- [Data Handling in Blade Components](../blade-data-handling.md)
+- [Section Architecture](../sections/readme.md)
+>>>>>>> dev

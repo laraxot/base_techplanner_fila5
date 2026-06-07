@@ -330,15 +330,22 @@ Based on existing UI module tests:
 
 ### **Module Documentation**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [UI Module README](../readme.md)
 =======
 - [UI Module README](../README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [UI Module README](../readme.md)
+>>>>>>> dev
 - [Component Architecture](../components.md)
 - [Theme System](../themes.md)
 
 ### **Testing Resources**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [CMS Testing Best Practices](../../cms/project_docs/tests/pestphp-best-practices.md)
 - [Employee Testing Guide](../../employee/project_docs/testing/pest-testing-guide.md)
 - [CMS Testing Best Practices](../../cms/docs/tests/pestphp-best-practices.md)
@@ -347,6 +354,7 @@ Based on existing UI module tests:
 - [Employee Testing Guide](../../employee/docs/testing/pest-testing-guide.md)
 - [CMS Testing Best Practices](../../cms/docs/tests/pestphp-best-practices.md)
 - [Employee Testing Guide](../../employee/docs/testing/pest-testing-guide.md)
+<<<<<<< HEAD
 =======
 - [CMS Testing Best Practices](../../Cms/project_docs/tests/pestphp-best-practices.md)
 - [Employee Testing Guide](../../Employee/project_docs/testing/pest-testing-guide.md)
@@ -357,6 +365,8 @@ Based on existing UI module tests:
 - [CMS Testing Best Practices](../../Cms/docs/tests/pestphp-best-practices.md)
 - [Employee Testing Guide](../../Employee/docs/testing/pest-testing-guide.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### **Implementation Files**
 - [UIBusinessLogicTest.php](../../tests/Feature/UIBusinessLogicTest.php)
@@ -365,9 +375,13 @@ Based on existing UI module tests:
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 **Last Updated**: September 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 **Status**: ✅ PRODUCTION READY
 **Coverage**: UI Components + Business Logic + Service Integration

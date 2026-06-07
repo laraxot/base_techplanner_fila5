@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Flusso Utente Prediction Market
+=======
+# Flusso Utente <nome progetto>ion Market
+>>>>>>> dev
 
 1. **Creazione Mercato**: un utente crea un mercato (es. “Vincerà il candidato X?”).
    - Comando console: `market:create "Vincerà il candidato X?"`

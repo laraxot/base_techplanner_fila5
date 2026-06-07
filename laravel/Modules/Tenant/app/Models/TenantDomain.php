@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Models;
 
+<<<<<<< HEAD
+=======
+use Carbon\Carbon;
+>>>>>>> dev
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Tenant\Actions\Domains\GetDomainsArrayAction;
 use Modules\Tenant\Database\Factories\DomainFactory;
@@ -13,19 +17,27 @@ use Sushi\Sushi;
 /**
  * @property int|null $id
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string|int|null $tenant_id
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ * @property string|int|null $tenant_id
+>>>>>>> dev
  * @property string|null $name
  * @property string|null $domain
  * @property bool|null $is_primary
  * @property string|null $status
  * @property string|null $verification_token
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property \Carbon\Carbon|null $verified_at
 =======
  * @property string|null $verified_at
 >>>>>>> 4b6b99016 (first commit)
+=======
+ * @property Carbon|null $verified_at
+>>>>>>> dev
  *
  * @method static Builder|TenantDomain newModelQuery()
  * @method static Builder|TenantDomain newQuery()
@@ -52,9 +64,13 @@ class TenantDomain extends BaseModel
 
     protected $fillable = [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'tenant_id',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'tenant_id',
+>>>>>>> dev
         'name',
         'domain',
         'is_primary',

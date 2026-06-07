@@ -169,12 +169,17 @@ return [
 
 ## Collegamenti tra versioni di permission.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [permission.md](../../../xot/project_docs/install/permission.md)
 * [permission.md](../../../tenant/project_docs/it/config/permission.md)
 =======
 * [permission.md](../../../Xot/project_docs/install/permission.md)
 * [permission.md](../../../Tenant/project_docs/it/config/permission.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [permission.md](../../../xot/project_docs/install/permission.md)
+* [permission.md](../../../tenant/project_docs/it/config/permission.md)
+>>>>>>> dev
 
 ### Versione Incoming
 

@@ -302,10 +302,14 @@ php artisan notify:mail-template:test
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Notify Module](../readme.md)
 =======
 - [Notify Module](../README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Notify Module](../readme.md)
+>>>>>>> dev
 - [Email Templates](email-templates.md)
 - [Mail Queue](mail-queue.md)
 

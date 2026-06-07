@@ -26,8 +26,12 @@ class Change extends Component
 
     public XotData $xot;
 
+<<<<<<< HEAD
     /** @var UserContract */
     public $user;
+=======
+    public UserContract $user;
+>>>>>>> dev
 
     public function mount(): void
     {
@@ -36,10 +40,14 @@ class Change extends Component
 
         // Verifica che l'utente implementi l'interfaccia UserContract
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $authUser instanceof UserContract) {
 =======
         if (! ($authUser instanceof UserContract)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $authUser instanceof UserContract) {
+>>>>>>> dev
             throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia UserContract');
         }
 

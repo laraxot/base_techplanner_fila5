@@ -18,6 +18,9 @@
 
 ## PHPStan Analysis Reports
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [PHPStan Analysis [DATE]](./phpstan-analysis-[DATE].md)
 - [PHPStan Analysis [DATE]](./phpstan-analysis-[DATE].md)
 - [PHPStan Analysis [DATE]](./phpstan-analysis-[DATE].md)
@@ -25,6 +28,7 @@
 
 ## Quality & Improvement
 - [Quality Improvements Summary [DATE]](./quality-improvements-summary-[DATE].md)
+<<<<<<< HEAD
 =======
 - [PHPStan Analysis 2025-01-27](./phpstan-analysis-2025-01-27.md)
 - [PHPStan Analysis 2025-12-17](./phpstan-analysis-2025-12-17.md)
@@ -34,6 +38,8 @@
 ## Quality & Improvement
 - [Quality Improvements Summary 2025-11-18](./quality-improvements-summary-2025-11-18.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 - [Laraxot Meetup Service Provider Refactor](./laraxot-meetup-service-provider-refactor.md)
 - [PHPStan Fix Meetup Service Provider](./phpstan-fix-meetup-service-provider.md)
 
@@ -50,7 +56,11 @@
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 *
 =======
 *Last updated: 2025-12-18*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*
+>>>>>>> dev

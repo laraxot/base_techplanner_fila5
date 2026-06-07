@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modular Monolith Guidelines for Laravel
 
 ## Overview
@@ -49,3 +50,12 @@ Adopting a modular monolith architecture in Laravel enhances maintainability, sc
 ---
 
 For further details or contributions to this documentation, please refer to the main documentation folder or contact the project maintainer.
+=======
+---
+module: theme
+topic: modular-monolithlines
+canonical: ../../../Themes/docs/shared-components/modular-monolith-guidelines-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/modular-monolith-guidelines-1.md
+>>>>>>> dev

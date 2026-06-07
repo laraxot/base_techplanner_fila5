@@ -1,9 +1,12 @@
 # PHPStan Level 10 - Scripts Utility Fixes
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2026-01-09  
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Modulo**: Cms  
 **Livello PHPStan**: 10  
 **Status**: 🔄 **IN PROGRESSO** (65.6% completato)
@@ -237,7 +240,11 @@ php -l Modules/Cms/populate_database_comprehensive.php
 **Status**: 🔄 **IN PROGRESSO** (65.6% completato)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
 =======
 **Ultimo aggiornamento**: 2026-01-09
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> dev

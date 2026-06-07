@@ -107,11 +107,25 @@ parameters:
         - ./Modules/Xot/Helpers/Helper.php
 
     editorUrl: 'vscode://file/%%file%%:%%line%%'
+<<<<<<< HEAD
     tmpDir: /tmp/phpstan
+=======
+    tmpDir: ./storage/app/phpstan
+>>>>>>> dev
     treatPhpDocTypesAsCertain: false
     reportUnmatchedIgnoredErrors: false
 ```
 
+<<<<<<< HEAD
+=======
+## Runtime Rule
+
+- non usare `/tmp/phpstan`;
+- usare `./storage/app/phpstan` come runtime dir;
+- in caso di crash anticipato del tool, il comando di recovery e':
+  `XDEBUG_MODE=off ./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress`
+
+>>>>>>> dev
 ## Best Practices per PHPStan
 
 ### 1. Livello di Analisi
@@ -200,9 +214,12 @@ La configurazione PHPStan implementata mantiene un alto livello di qualità del 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo Aggiornamento**: Gennaio 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **PHPStan Version**: 1.10+
 **Laravel Version**: 10+
 **Larastan Version**: 2.9+

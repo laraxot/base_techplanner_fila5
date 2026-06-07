@@ -52,6 +52,9 @@ Trovati 4 errori al livello max.
 
 ## Collegamenti tra versioni di level_max.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [level_max.md](laravel/modules/chart/project_docs/phpstan/level_max.md)
 * [level_max.md](laravel/modules/reporting/project_docs/phpstan/level_max.md)
 * [level_max.md](laravel/modules/gdpr/project_docs/phpstan/level_max.md)
@@ -67,6 +70,7 @@ Trovati 4 errori al livello max.
 * [level_max.md](laravel/modules/activity/project_docs/phpstan/level_max.md)
 * [level_max.md](laravel/modules/patient/project_docs/phpstan/level_max.md)
 * [level_max.md](laravel/modules/cms/project_docs/phpstan/level_max.md)
+<<<<<<< HEAD
 =======
 * [level_max.md](laravel/Modules/Chart/project_docs/phpstan/level_max.md)
 * [level_max.md](laravel/Modules/Reporting/project_docs/phpstan/level_max.md)
@@ -84,6 +88,8 @@ Trovati 4 errori al livello max.
 * [level_max.md](laravel/Modules/Patient/project_docs/phpstan/level_max.md)
 * [level_max.md](laravel/Modules/Cms/project_docs/phpstan/level_max.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 # Rapporto PHPStan Livello max per il modulo Xot
 
 Data analisi: 2025-04-15 21:56:24
@@ -138,6 +144,9 @@ Trovati 4 errori al livello max.
 
 ## Collegamenti tra versioni di level_max.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [level_max.md](laravel/modules/chart/docs/phpstan/level_max.md)
 * [level_max.md](laravel/modules/reporting/docs/phpstan/level_max.md)
 * [level_max.md](laravel/modules/gdpr/docs/phpstan/level_max.md)
@@ -153,6 +162,7 @@ Trovati 4 errori al livello max.
 * [level_max.md](laravel/modules/activity/docs/phpstan/level_max.md)
 * [level_max.md](laravel/modules/patient/docs/phpstan/level_max.md)
 * [level_max.md](laravel/modules/cms/docs/phpstan/level_max.md)
+<<<<<<< HEAD
 =======
 * [level_max.md](laravel/Modules/Chart/docs/phpstan/level_max.md)
 * [level_max.md](laravel/Modules/Reporting/docs/phpstan/level_max.md)
@@ -170,3 +180,5 @@ Trovati 4 errori al livello max.
 * [level_max.md](laravel/Modules/Patient/docs/phpstan/level_max.md)
 * [level_max.md](laravel/Modules/Cms/docs/phpstan/level_max.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

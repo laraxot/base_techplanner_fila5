@@ -2,10 +2,14 @@
 # Workflow Analisi PHPStan
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **Nota**: Per una panoramica completa sulla gestione della documentazione e delle regole, consultare [DOCUMENTATION_MANAGEMENT.md](documentation_management.md)
 =======
 > **Nota**: Per una panoramica completa sulla gestione della documentazione e delle regole, consultare [DOCUMENTATION_MANAGEMENT.md](DOCUMENTATION_MANAGEMENT.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+> **Nota**: Per una panoramica completa sulla gestione della documentazione e delle regole, consultare [DOCUMENTATION_MANAGEMENT.md](documentation_management.md)
+>>>>>>> dev
 
 ## REGOLE FONDAMENTALI
 - ⚠️ **NON INTERROMPERE MAI L'ANALISI** finché non si raggiunge il livello 7
@@ -65,7 +69,11 @@
      ```
    - IMPORTANTE: Per regole significative, aggiornare anche:
      ```
+<<<<<<< HEAD
      base_predict_fila3_mono/
+=======
+     base_<nome progetto>_fila5_mono/
+>>>>>>> dev
      ├── .cursor/
      │   └── rules/        # Regole per Cursor AI
      └── .windsurfrules    # Regole per Windsurf

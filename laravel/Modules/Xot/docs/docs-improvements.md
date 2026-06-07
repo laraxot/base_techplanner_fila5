@@ -43,6 +43,7 @@ README.md
 **Prima**:
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 phpstan-fixes-[DATE].md
 lessons-learned-[DATE].md
 git-conflicts-resolution-[DATE].md
@@ -51,6 +52,11 @@ phpstan-fixes-2025-01-06.md
 lessons-learned-2025-08-25.md
 git-conflicts-resolution-2025-01-06.md
 >>>>>>> 4b6b99016 (first commit)
+=======
+phpstan-fixes-[DATE].md
+lessons-learned-[DATE].md
+git-conflicts-resolution-[DATE].md
+>>>>>>> dev
 ```
 
 **Dopo**:
@@ -113,7 +119,11 @@ docs/
 **Esempi trovati**:
 ```markdown
 [regole php](docs/standards/php-inheritance-rules.md)
+<<<<<<< HEAD
 public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
+=======
+public static string $projectBasePath = '../../../docs/standards/php-inheritance-rules.md)
+>>>>>>> dev
 // Path configurabili tramite env, non hardcoded
 ```
 
@@ -156,16 +166,24 @@ docs/
 
 ### Da Modules/Xot/docs/ a root docs/
 ```markdown
+<<<<<<< HEAD
 [guida principale](../../../docs/guide.md)
+=======
+[guida principale](../../../../docs/guide.md)
+>>>>>>> dev
 ```
 
 ### Tra moduli (Xot → User)
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 [user docs](../../user/docs/user-guide.md)
 =======
 [user docs](../../User/docs/user-guide.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+[user docs](../../user/docs/user-guide.md)
+>>>>>>> dev
 ```
 
 ### All'interno dello stesso modulo

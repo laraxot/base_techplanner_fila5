@@ -12,6 +12,9 @@ return [
         'collection_name' => [
             'label' => 'collection_name',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -39,6 +42,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'name' => [
@@ -53,12 +57,17 @@ return [
         'human_readable_size' => [
             'label' => 'human_readable_size',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'creator' => [
             'name' => [
                 'label' => 'creator.name',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -80,6 +89,7 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 =======
         ],
         'created_at' => [
@@ -87,4 +97,6 @@ return [
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

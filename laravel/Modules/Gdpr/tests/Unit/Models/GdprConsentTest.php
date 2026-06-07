@@ -2,11 +2,31 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\Gdpr\Tests\TestCase::class);
 
 use Modules\Gdpr\Models\GdprConsent;
 use Modules\User\Models\User;
 
+=======
+namespace Modules\Gdpr\Tests\Unit\Models;
+
+uses(TestCase::class);
+
+use Modules\Gdpr\Models\GdprConsent;
+use Modules\Gdpr\Tests\TestCase;
+use Modules\User\Models\User;
+
+beforeEach(function () {
+    // Skip if database not available
+    try {
+        DB::connection()->getPdo();
+    } catch (Exception $e) {
+        $this->markTestSkipped('Database not available: '.$e->getMessage());
+    }
+});
+
+>>>>>>> dev
 test('gdpr consent can be created', function () {
     $user = User::factory()->create();
 

@@ -1,10 +1,14 @@
 # Xot - Filosofia Completa: Logica, Religione, Politica, Zen
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Creazione**: [DATE]
 =======
 **Data Creazione**: 2025-01-18
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data Creazione**: [DATE]
+>>>>>>> dev
 **Status**: Documentazione Filosofica Completa
 **Versione**: 1.0.0
 

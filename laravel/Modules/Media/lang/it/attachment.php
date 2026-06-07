@@ -14,6 +14,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'file' => [
             'label' => 'file',
             'tooltip' => '',
@@ -93,6 +96,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         'file' => 'file',
         'file_hint' => 'Carica un allegato',
@@ -116,6 +120,8 @@ return [
             'name' => 'Seleziona Tutti',
             'message' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'creator' => [
             'name' => 'Creatore',
@@ -123,6 +129,9 @@ return [
                 'label' => 'Creatore',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -139,12 +148,15 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'uploaded_at' => 'Aggiornato il',
         'created_at' => [
             'label' => 'Caricato il',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -162,8 +174,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Attachment',
     'plural_label' => 'Attachment (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Attachment',
+    'plural_label' => 'Attachment (Plurale)',
+>>>>>>> dev
 ];

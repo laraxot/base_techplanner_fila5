@@ -1,10 +1,14 @@
 # PHPStan Level 10 Fixes Roadmap - Modulo Geo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Creazione**: [DATE]  
 =======
 **Data Creazione**: 2025-01-27  
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data Creazione**: [DATE]  
+>>>>>>> dev
 **Errori Totali**: 1 errore  
 **Status**: 🟡 In Progress
 

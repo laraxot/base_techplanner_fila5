@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ContentPdfAction Documentation
 
 ## Overview
@@ -382,3 +383,12 @@ public function test_pdf_content_works_with_email_attachments()
 - Uses identical HTML2PDF configuration as StreamDownloadPdfAction
 - Designed specifically for integration with the notification system
 - Memory usage scales with document complexity and size
+=======
+---
+module: theme
+topic: content-pdf-action
+canonical: ../../../../../Themes/docs/shared-components/content-pdf-action.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/content-pdf-action.md
+>>>>>>> dev

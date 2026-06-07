@@ -5,8 +5,15 @@ declare(strict_types=1);
 namespace Modules\Media\Actions\Image;
 
 use Illuminate\Support\Facades\File;
+<<<<<<< HEAD
 use Intervention\Image\Drivers\Gd\Driver as GdDriver;
 use Intervention\Image\ImageManager as InterventionImageManager;
+=======
+use Intervention\Image\Alignment;
+use Intervention\Image\Drivers\Gd\Driver as GdDriver;
+use Intervention\Image\ImageManager as InterventionImageManager;
+use Intervention\Image\Interfaces\ImageInterface;
+>>>>>>> dev
 use Spatie\QueueableAction\QueueableAction;
 
 class Merge
@@ -22,6 +29,7 @@ class Merge
      */
     public function handle(string $path1, string $path2, string $outputPath): bool
     {
+<<<<<<< HEAD
         // Intervention Image v3: il costruttore richiede un DriverInterface
         $manager = new InterventionImageManager(new GdDriver);
 
@@ -33,6 +41,15 @@ class Merge
         $image1->place($image2, 'center');
 
         // Salva il risultato
+=======
+        $manager = new InterventionImageManager(new GdDriver);
+
+        $image1 = $manager->decodePath($path1);
+        $image2 = $manager->decodePath($path2);
+
+        $image1->insert($image2, 0, 0, Alignment::CENTER);
+
+>>>>>>> dev
         File::ensureDirectoryExists(dirname($outputPath));
         $image1->save($outputPath);
 
@@ -51,11 +68,18 @@ class Merge
      */
     public function execute(array $filenames, string $outputFilename): bool
     {
+<<<<<<< HEAD
         if (empty($filenames)) {
             return false;
         }
 
         // Se c'è solo un'immagine, copiala
+=======
+        if ($filenames === []) {
+            return false;
+        }
+
+>>>>>>> dev
         if (count($filenames) === 1) {
             $sourcePath = public_path($filenames[0]);
             $outputPath = public_path($outputFilename);
@@ -68,12 +92,18 @@ class Merge
             return File::exists($outputPath);
         }
 
+<<<<<<< HEAD
         // Converti percorsi relativi in assoluti
+=======
+>>>>>>> dev
         $absolutePaths = array_map(static function (string $filename): string {
             return public_path($filename);
         }, $filenames);
 
+<<<<<<< HEAD
         // Verifica che tutte le immagini esistano
+=======
+>>>>>>> dev
         foreach ($absolutePaths as $path) {
             if (! File::exists($path)) {
                 logger()->error('Immagine non trovata per merge', ['path' => $path]);
@@ -82,21 +112,32 @@ class Merge
             }
         }
 
+<<<<<<< HEAD
         // Intervention Image v3
         $manager = new InterventionImageManager(new GdDriver);
 
         // Carica tutte le immagini e calcola dimensioni totali
+=======
+        $manager = new InterventionImageManager(new GdDriver);
+
+        /** @var list<ImageInterface> $images */
+>>>>>>> dev
         $images = [];
         $totalWidth = 0;
         $totalHeight = 0;
 
         foreach ($absolutePaths as $path) {
+<<<<<<< HEAD
             $img = $manager->read($path);
+=======
+            $img = $manager->decodePath($path);
+>>>>>>> dev
             $images[] = $img;
             $totalWidth = max($totalWidth, $img->width());
             $totalHeight += $img->height();
         }
 
+<<<<<<< HEAD
         // Crea canvas finale con dimensioni calcolate
         $final = $manager->create($totalWidth, $totalHeight);
 
@@ -112,6 +153,17 @@ class Merge
         }
 
         // Salva risultato
+=======
+        $final = $manager->createImage($totalWidth, $totalHeight);
+
+        $yOffset = 0;
+        foreach ($images as $img) {
+            $xOffset = (int) (($totalWidth - $img->width()) / 2);
+            $final->insert($img, $xOffset, $yOffset, Alignment::TOP_LEFT);
+            $yOffset += $img->height();
+        }
+
+>>>>>>> dev
         $outputPath = public_path($outputFilename);
         File::ensureDirectoryExists(dirname($outputPath));
         $final->save($outputPath);

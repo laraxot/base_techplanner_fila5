@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Trait HasAddress
 
 ## Panoramica
@@ -96,3 +97,12 @@ Quando un modello (es. Studio) necessita di gestire indirizzi tramite Filament, 
 - [models/address.md](./models/address.md)
 - [address-implementation.md](./address-implementation.md)
 - [filament.md](./filament.md)
+=======
+---
+module: theme
+topic: has_address_trait
+canonical: ../../../Themes/docs/shared-components/has-address-trait.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/has-address-trait.md
+>>>>>>> dev

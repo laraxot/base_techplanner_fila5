@@ -87,10 +87,16 @@ php docs/helper-text-audit-script.php
 - ✅ Script di audit automatico creato per controlli futuri
 
 ### Collegamenti Bidirezionali
+<<<<<<< HEAD
 - [Documentazione Centrale Traduzioni](../../../docs/translation-field-structure-complete.md)
 - [Script Audit Helper Text](../../../docs/helper-text-audit-script.php)
 <<<<<<< HEAD
 - [Memoria Regola Critica](../../../docs/translation-refactor-complete-summary-[date].md)
+=======
+- [Documentazione Centrale Traduzioni](../../../../docs/translation-field-structure-complete.md)
+- [Script Audit Helper Text](../../../../docs/helper-text-audit-script.php)
+- [Memoria Regola Critica](../../../../docs/translation-refactor-complete-summary-2025-08-08.md)
+>>>>>>> dev
 
 ## Validazione
 
@@ -136,6 +142,7 @@ Assicurarsi che tutti i membri del team conoscano e applichino questa regola cri
 
 ---
 
+<<<<<<< HEAD
 **Status**: ✅ COMPLETATO
 **Validazione**: ✅ SUPERATA
 **Conformità**: ✅ REGOLA APPLICATA
@@ -292,4 +299,9 @@ Assicurarsi che tutti i membri del team conoscano e applichino questa regola cri
 **Validazione**: ✅ SUPERATA
 **Conformità**: ✅ REGOLA APPLICATA
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Status**: ✅ COMPLETATO  
+**Validazione**: ✅ SUPERATA  
+**Conformità**: ✅ REGOLA APPLICATA  
+>>>>>>> dev
 **Documentazione**: ✅ AGGIORNATA

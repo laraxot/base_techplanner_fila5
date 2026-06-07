@@ -344,6 +344,7 @@ Following these guidelines will help maintain high code quality across all modul
 2. Use defensive programming techniques
 3. Validate inputs and handle errors gracefully
 4. Maintain clear documentation
+<<<<<<< HEAD
 5. Regular analysis and continuous improvement
 # PHPStan Guidelines and Best Practices
 
@@ -692,3 +693,6 @@ Following these guidelines will help maintain high code quality across all modul
 3. Validate inputs and handle errors gracefully
 4. Maintain clear documentation
 5. Regular analysis and continuous improvement
+=======
+5. Regular analysis and continuous improvement
+>>>>>>> dev

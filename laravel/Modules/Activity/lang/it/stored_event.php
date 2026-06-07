@@ -20,11 +20,17 @@ return [
             'help' => 'Identificativo unico dell\'evento archiviato',
             'validation' => 'required|integer|min:1',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'event_class' => [
             'label' => 'Classe Evento',
@@ -35,9 +41,13 @@ return [
             'helper_text' => 'event_class',
             'description' => 'event_class',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'event_properties' => [
             'label' => 'Proprietà Evento',
@@ -49,9 +59,13 @@ return [
             'helper_text' => 'event_properties',
             'description' => 'event_properties',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'aggregate_uuid' => [
             'label' => 'UUID Aggregato',
@@ -62,9 +76,13 @@ return [
             'helper_text' => 'aggregate_uuid',
             'description' => 'aggregate_uuid',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'aggregate_version' => [
             'label' => 'Versione Aggregato',
@@ -75,9 +93,13 @@ return [
             'helper_text' => 'aggregate_version',
             'description' => 'aggregate_version',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'event_version' => [
             'label' => 'Versione Evento',
@@ -85,11 +107,17 @@ return [
             'help' => 'Numero di versione del formato evento',
             'validation' => 'nullable|string|max:20',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'meta_data' => [
             'label' => 'Metadata',
@@ -101,9 +129,13 @@ return [
             'helper_text' => 'meta_data',
             'description' => 'meta_data',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Data Creazione',
@@ -115,9 +147,13 @@ return [
             'helper_text' => 'created_at',
             'description' => 'created_at',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'created_by' => [
             'label' => 'Creato Da',
@@ -126,11 +162,17 @@ return [
             'validation' => 'nullable|integer|exists:users,id',
             'searchable' => true,
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'updated_by' => [
             'label' => 'Aggiornato Da',
@@ -138,11 +180,17 @@ return [
             'help' => 'Utente che ha aggiornato l\'evento',
             'validation' => 'nullable|integer|exists:users,id',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'stream_name' => [
             'label' => 'Nome Stream',
@@ -151,11 +199,17 @@ return [
             'validation' => 'nullable|string|max:255',
             'searchable' => true,
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'stream_position' => [
             'label' => 'Posizione Stream',
@@ -164,22 +218,34 @@ return [
             'validation' => 'nullable|integer|min:0',
             'sortable' => true,
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'toggleColumns' => [
-            'label' => 'Mostra/Nascondi Colonne',
-            'placeholder' => '',
-            'help' => 'Configura la visibilità delle colonne nella tabella',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'toggleColumns' => [
+            'label' => 'Mostra/Nascondi Colonne',
+            'placeholder' => '',
+            'help' => 'Configura la visibilità delle colonne nella tabella',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'filters' => [
@@ -372,22 +438,29 @@ return [
         'per_page' => 50,
         'options' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             0 => 25,
             1 => 50,
             2 => 100,
             3 => 200,
+<<<<<<< HEAD
 =======
             25,
             50,
             100,
             200,
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'simple' => false,
     ],
     'cache' => [
         'ttl' => 600,
         'tags' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
             0 => 'stored_events',
             1 => 'event_sourcing',
@@ -397,6 +470,11 @@ return [
             'event_sourcing',
             'monitoring',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            0 => 'stored_events',
+            1 => 'event_sourcing',
+            2 => 'monitoring',
+>>>>>>> dev
         ],
     ],
     'event_sourcing' => [
@@ -416,8 +494,13 @@ return [
         'audit_trail' => true,
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Stored Event',
     'plural_label' => 'Stored Event (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Stored Event',
+    'plural_label' => 'Stored Event (Plurale)',
+>>>>>>> dev
 ];

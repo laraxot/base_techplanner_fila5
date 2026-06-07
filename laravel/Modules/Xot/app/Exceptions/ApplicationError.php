@@ -10,17 +10,29 @@ namespace Modules\Xot\Exceptions;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
+<<<<<<< HEAD
 use JsonSerializable;
 use Override;
 
 use function Safe\json_encode;
 
 readonly class ApplicationError implements Arrayable, Jsonable, JsonSerializable
+=======
+
+use function Safe\json_encode;
+
+readonly class ApplicationError implements \JsonSerializable, Arrayable, Jsonable
+>>>>>>> dev
 {
     public function __construct(
         private string $help = '',
         private string $error = '',
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> dev
 
     public function toArray(): array
     {
@@ -30,7 +42,11 @@ readonly class ApplicationError implements Arrayable, Jsonable, JsonSerializable
         ];
     }
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     public function jsonSerialize(): array
     {
         return $this->toArray();

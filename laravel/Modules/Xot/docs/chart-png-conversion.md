@@ -694,10 +694,14 @@ private function validateSvg(string $svg): bool
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **
 =======
 **Last Updated:** 2025-12-09
 >>>>>>> 4b6b99016 (first commit)
+=======
+**
+>>>>>>> dev
 **Version:** 1.0.0
 **PHPStan Level:** 10 ✅
 **Dependencies:** Imagick, GD

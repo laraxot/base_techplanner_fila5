@@ -112,6 +112,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'attributes' => [
     ],
     'navigation' => [
@@ -127,7 +130,10 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
     'attributes' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

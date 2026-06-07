@@ -2,12 +2,30 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\Activity\Tests\Feature;
+
+use Illuminate\Support\Carbon;
+>>>>>>> dev
 use Illuminate\Support\Str;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Tests\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
+=======
+beforeEach(function () {
+    // Skip if database not available
+    try {
+        \DB::connection()->getPdo();
+    } catch (\Exception $e) {
+        $this->markTestSkipped('Database not available: '.$e->getMessage());
+    }
+});
+
+>>>>>>> dev
 it('can create snapshot with basic information', function (): void {
     $snapshot = Snapshot::factory()->create([
         'aggregate_uuid' => Str::uuid()->toString(),
@@ -279,7 +297,11 @@ it('can handle snapshot with timestamps', function (): void {
     expect($snapshot->aggregate_uuid)->toBeString();
     expect($snapshot->aggregate_version)->toBe(1);
     expect($snapshot->state)->toBeArray();
+<<<<<<< HEAD
     expect($snapshot->created_at)->toBeInstanceOf(\Illuminate\Support\Carbon::class);
+=======
+    expect($snapshot->created_at)->toBeInstanceOf(Carbon::class);
+>>>>>>> dev
 });
 
 it('can query snapshots by date range', function (): void {

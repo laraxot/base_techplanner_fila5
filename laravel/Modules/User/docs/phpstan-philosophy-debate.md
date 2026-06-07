@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filosofia Laraxot: Il Grande Dibattito Interno - PHPStan Level 10
 
 **Data Creazione**: 2025-01-22
@@ -167,3 +168,12 @@ Ogni modulo corretto è un traguardo.
 *"La type safety non è un optional - è un REQUISITO. Ogni errore PHPStan è un bug potenziale. Correggiamoli tutti, uno alla volta, con pazienza e determinazione."*
 
 **Il Purista ha vinto. La type safety è sacra. Non profanarla mai.**
+=======
+---
+module: theme
+topic: phpstan-philosophy-debate
+canonical: ../../../Themes/docs/shared-components/phpstan-philosophy-debate.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-philosophy-debate.md
+>>>>>>> dev

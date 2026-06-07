@@ -34,6 +34,7 @@ public function up()
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 #### Nota sulle migrazioni `kalnoy/laravel-nestedset`
 
@@ -68,6 +69,8 @@ Nel contesto Laraxot:
   le migrazioni legacy basate su `_lft`, `_rgt`, `parent_id`.
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ### Schema Categorie
 
 ```php
@@ -199,10 +202,14 @@ state([
 $products = computed(function () {
     return Product::query()
 <<<<<<< HEAD
+<<<<<<< HEAD
         ->when($this->search, fn($query) => 
 =======
         ->when($this->search, fn($query) =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+        ->when($this->search, fn($query) => 
+>>>>>>> dev
             $query->where('name', 'like', "%{$this->search}%")
                   ->orWhere('sku', 'like', "%{$this->search}%")
         )
@@ -298,10 +305,14 @@ $save = function () {
 
     session()->flash('message', 'Prodotto salvato con successo.');
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     return redirect()->route('products.index');
 };
 ?>
@@ -417,12 +428,16 @@ class ProductTest extends TestCase
 - [Laravel Folio Documentation](https://github.com/laravel/folio)
 - [Laravel Volt Documentation](https://livewire.laravel.com/project_docs/volt)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Filament Documentation](https://filamentphp.com) 
 
 ## Collegamenti tra versioni di product-management.md
 * [product-management.md](laravel/modules/cms/project_docs/product-management.md)
 * [product-management.md](laravel/modules/cms/project_docs/components/product-management.md)
 
+<<<<<<< HEAD
 =======
 - [Filament Documentation](https://filamentphp.com)
 
@@ -430,3 +445,5 @@ class ProductTest extends TestCase
 * [product-management.md](laravel/Modules/Cms/project_docs/product-management.md)
 * [product-management.md](laravel/Modules/Cms/project_docs/components/product-management.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

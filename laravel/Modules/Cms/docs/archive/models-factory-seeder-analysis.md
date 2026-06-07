@@ -105,7 +105,10 @@ Il modulo CMS è ben strutturato con tutte le factory necessarie. Un modello (Mo
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 *Analizzato da: Sistema di analisi automatica moduli*

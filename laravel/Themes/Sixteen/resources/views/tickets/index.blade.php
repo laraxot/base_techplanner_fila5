@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 {{-- 
     Elenco Segnalazioni - Homepage
     Replica Design Comuni con Tailwind CSS
+=======
+{{--
+    Elenco Segnalazioni - Homepage
+    Replica Design Comuni con Tailwind CSS + Alpine.js
+    Reference: https://italia.github.io/design-comuni-pagine-statiche/sito/segnalazioni-elenco.html
+>>>>>>> dev
 --}}
 
 @extends('sixteen::layouts.app')
 
 @section('content')
+<<<<<<< HEAD
 <div class="min-h-screen bg-gray-50">
     {{-- Header Verde PA --}}
     <header class="bg-primary-500 text-white shadow-lg">
@@ -29,6 +37,16 @@
             </div>
         </div>
     </header>
+=======
+<div class="min-h-screen bg-gray-50" x-data="{ activeTab: 'map' }">
+    {{-- Hero Block --}}
+    <section class="bg-primary-500 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Elenco segnalazioni</h1>
+            <p class="text-lg text-primary-100">Negli ultimi 12 mesi sono state risolte 73 segnalazioni.</p>
+        </div>
+    </section>
+>>>>>>> dev
 
     {{-- Breadcrumb --}}
     <div class="bg-white border-b border-gray-200">
@@ -43,10 +61,22 @@
 
     {{-- Main Content --}}
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<<<<<<< HEAD
         {{-- Title --}}
         <div class="mb-6">
             <h1 class="text-3xl font-bold text-gray-900 mb-2">Elenco segnalazioni</h1>
             <p class="text-gray-600">Aiuto utenti: 17 segnalazioni sono risultate 12 segnalazioni</p>
+=======
+        {{-- Header with CTA --}}
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+            <div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Elenco segnalazioni</h2>
+                <p class="text-gray-600">Negli ultimi 12 mesi sono state risolte 73 segnalazioni.</p>
+            </div>
+            <button class="mt-4 md:mt-0 bg-primary-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-600 transition">
+                Fai una segnalazione
+            </button>
+>>>>>>> dev
         </div>
 
         {{-- Layout: Sidebar + Map --}}
@@ -186,6 +216,7 @@
 </div>
 
 @push('scripts')
+<<<<<<< HEAD
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
@@ -201,6 +232,61 @@
     L.marker([43.7696, 11.2558]).addTo(map)
         .bindPopup('<b>Segnalazione</b><br>Esempio segnalazione')
         .openPopup();
+=======
+{{-- Load Leaflet and Marker Cluster assets --}}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+<script>
+    // Load the SAME JSON that powers the map and filters
+    const ticketData = @json($ticketJson ?? []);
+
+    // Initialise map once DOM is ready
+    document.addEventListener('DOMContentLoaded', function () {
+        // Default centre on Italy
+        const map = L.map('map').setView([41.9, 12.4964], 6);
+
+        // OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Marker cluster group
+        const markerCluster = L.markerClusterGroup();
+
+        // Build markers from the SAME JSON data used for filters
+        ticketData.forEach(function (ticket) {
+            if (!ticket.geometry || !ticket.geometry.coordinates) return;
+
+            const coords = ticket.geometry.coordinates;
+            const latlng = [coords[1], coords[0]]; // [lat, lng]
+
+            const marker = L.marker(latlng);
+
+            // Build popup content from ticket properties
+            const props = ticket.properties || {};
+            const popupContent = `
+                <div class="ticket-popup">
+                    <strong>${props.title || 'Segnalazione'}</strong><br>
+                    ${props.address || ''}<br>
+                    <a href="${props.detail_url || '#'}" class="text-blue-600 underline">Dettagli</a>
+                </div>
+            `;
+            marker.bindPopup(popupContent);
+
+            markerCluster.addLayer(marker);
+        });
+
+        // Add cluster group to map
+        map.addLayer(markerCluster);
+
+        // Optional: listen for filter changes and re-render markers
+        // window.addEventListener('ticket-filters-changed', function(e) { ... })
+    });
+>>>>>>> dev
 </script>
 @endpush
 @endsection

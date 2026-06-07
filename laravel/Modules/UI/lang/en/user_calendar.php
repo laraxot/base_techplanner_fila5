@@ -6,6 +6,9 @@ return [
     'months' => [
         'long' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             0 => 'January',
             1 => 'February',
             2 => 'March',
@@ -32,6 +35,7 @@ return [
             9 => 'Oct',
             10 => 'Nov',
             11 => 'Dec',
+<<<<<<< HEAD
 =======
             '0' => 'January',
             '1' => 'February',
@@ -60,11 +64,16 @@ return [
             '10' => 'Nov',
             '11' => 'Dec',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'weekdays' => [
         'long' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             0 => 'Sunday',
             1 => 'Monday',
             2 => 'Tuesday',
@@ -90,6 +99,7 @@ return [
             4 => 'Th',
             5 => 'Fr',
             6 => 'Sa',
+<<<<<<< HEAD
 =======
             '0' => 'Sunday',
             '1' => 'Monday',
@@ -117,6 +127,8 @@ return [
             '5' => 'Fr',
             '6' => 'Sa',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'buttons' => [
@@ -140,9 +152,13 @@ return [
             'helper_text' => 'Enter a descriptive title',
             'description' => 'Event title',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'starts_at' => [
             'label' => 'Start',
@@ -150,9 +166,13 @@ return [
             'helper_text' => 'Event start date and time',
             'description' => 'Start date and time',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'ends_at' => [
             'label' => 'End',
@@ -160,9 +180,13 @@ return [
             'helper_text' => 'Event end date and time',
             'description' => 'End date and time',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -189,6 +213,9 @@ return [
         'after' => 'End date must be after start date',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -198,6 +225,9 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

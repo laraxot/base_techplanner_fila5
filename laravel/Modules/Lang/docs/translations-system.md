@@ -4,10 +4,14 @@
 - [Modulo <nome progetto> - Regole Consolidate Traduzioni](../../<nome progetto>/docs/translation-rules-consolidated.md)
 - [Modulo <nome progetto> - Implementazione Appointment Report](../../<nome progetto>/docs/appointment_report_translations_implementation.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modulo User - Translation Best Practices](../../user/docs/translation_best_practices.md)
 =======
 - [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
+>>>>>>> dev
 
 ## Panoramica
 Il sistema di traduzioni utilizza `LangServiceProvider` per gestire le traduzioni in modo centralizzato e efficiente.
@@ -201,8 +205,12 @@ return [
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> dev
 *Versione: 2.0*
 *Compatibilità: Laravel 12.x, Filament 4.x*

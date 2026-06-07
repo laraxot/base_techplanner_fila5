@@ -18,13 +18,22 @@ class GetTreeOptionsByModelClassAction
     public array $options = [];
 
     /**
+<<<<<<< HEAD
      * @param  class-string<HasRecursiveRelationshipsContract>  $class
+=======
+     * @param class-string<HasRecursiveRelationshipsContract> $class
+     *
+>>>>>>> dev
      * @return array<int|string, string>
      */
     public function execute(string $class, Model|callable|null $_where = null): array
     {
         /** @var HasRecursiveRelationshipsContract $model */
+<<<<<<< HEAD
         $model = new $class;
+=======
+        $model = new $class();
+>>>>>>> dev
 
         /** @var Collection<int, HasRecursiveRelationshipsContract> $collection */
         // @phpstan-ignore generics.notSubtype

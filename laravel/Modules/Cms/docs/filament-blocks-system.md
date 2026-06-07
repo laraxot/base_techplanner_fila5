@@ -174,6 +174,7 @@ Ogni blocco supporta diversi contesti:
 ## Collegamenti
 - [Modulo <main module>](../<main module>/docs/homepage-architecture.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modulo UI](../ui/docs/blocks-system.md)
 - [Filament Builder](https://filamentphp.com/docs/3.x/forms/fields/builder)
 - [Laravel Folio](../../docs/folio-routing.md)
@@ -185,3 +186,8 @@ Ogni blocco supporta diversi contesti:
 
 *Ultimo aggiornamento: Dicembre 2024*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Modulo UI](../ui/docs/blocks-system.md)
+- [Filament Builder](https://filamentphp.com/docs/3.x/forms/fields/builder)
+- [Laravel Folio](../../../docs/folio-routing.md)
+>>>>>>> dev

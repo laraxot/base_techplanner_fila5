@@ -76,7 +76,11 @@ class FilterBuilder
         string $column,
         string $label,
         string $trueLabel = 'Yes',
+<<<<<<< HEAD
         string $falseLabel = 'No'
+=======
+        string $falseLabel = 'No',
+>>>>>>> dev
     ): TernaryFilter {
         return TernaryFilter::make($column)
             ->label($label)
@@ -166,14 +170,22 @@ class FilterBuilder
     /**
      * Select filter from model.
      *
+<<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
+=======
+     * @param class-string<Model> $modelClass
+>>>>>>> dev
      */
     public static function selectFromModel(
         string $name,
         string $modelClass,
         string $labelColumn = 'name',
         string $valueColumn = 'id',
+<<<<<<< HEAD
         ?string $relationshipName = null
+=======
+        ?string $relationshipName = null,
+>>>>>>> dev
     ): SelectFilter {
         /** @var array<int|string, string> $options */
         $options = $modelClass::pluck($labelColumn, $valueColumn)->toArray();
@@ -181,7 +193,11 @@ class FilterBuilder
         $filter = SelectFilter::make($name)
             ->options($options);
 
+<<<<<<< HEAD
         if ($relationshipName !== null) {
+=======
+        if (null !== $relationshipName) {
+>>>>>>> dev
             $filter->relationship($relationshipName, $labelColumn);
         }
 
@@ -191,7 +207,11 @@ class FilterBuilder
     /**
      * Status select filter with common statuses.
      *
+<<<<<<< HEAD
      * @param  array<string, string>  $customStatuses
+=======
+     * @param array<string, string> $customStatuses
+>>>>>>> dev
      */
     public static function statusSelect(array $customStatuses = []): SelectFilter
     {
@@ -209,7 +229,11 @@ class FilterBuilder
     /**
      * Priority select filter.
      *
+<<<<<<< HEAD
      * @param  array<string, string>  $customPriorities
+=======
+     * @param array<string, string> $customPriorities
+>>>>>>> dev
      */
     public static function prioritySelect(array $customPriorities = []): SelectFilter
     {
@@ -227,7 +251,11 @@ class FilterBuilder
     /**
      * Type select filter.
      *
+<<<<<<< HEAD
      * @param  array<string, string>  $types
+=======
+     * @param array<string, string> $types
+>>>>>>> dev
      */
     public static function typeSelect(array $types): SelectFilter
     {
@@ -238,7 +266,11 @@ class FilterBuilder
     /**
      * Category select filter.
      *
+<<<<<<< HEAD
      * @param  class-string<Model>  $categoryModel
+=======
+     * @param class-string<Model> $categoryModel
+>>>>>>> dev
      */
     public static function categorySelect(string $categoryModel, string $labelColumn = 'name'): SelectFilter
     {
@@ -248,12 +280,20 @@ class FilterBuilder
     /**
      * User/Author select filter.
      *
+<<<<<<< HEAD
      * @param  class-string<Model>  $userModel
+=======
+     * @param class-string<Model> $userModel
+>>>>>>> dev
      */
     public static function userSelect(
         string $name = 'user',
         string $userModel = User::class,
+<<<<<<< HEAD
         string $labelColumn = 'name'
+=======
+        string $labelColumn = 'name',
+>>>>>>> dev
     ): SelectFilter {
         return self::selectFromModel($name, $userModel, $labelColumn, 'id', $name);
     }
@@ -274,11 +314,19 @@ class FilterBuilder
             ->trueLabel('Only trashed')
             ->falseLabel('Without trashed')
             ->queries(
+<<<<<<< HEAD
                 /** @phpstan-ignore-next-line */
                 true: fn (Builder $query) => $query->onlyTrashed(),
                 /** @phpstan-ignore-next-line */
                 false: fn (Builder $query) => $query->withoutTrashed(),
                 /** @phpstan-ignore-next-line */
+=======
+                /* @phpstan-ignore-next-line */
+                true: fn (Builder $query) => $query->onlyTrashed(),
+                /* @phpstan-ignore-next-line */
+                false: fn (Builder $query) => $query->withoutTrashed(),
+                /* @phpstan-ignore-next-line */
+>>>>>>> dev
                 blank: fn (Builder $query) => $query->withTrashed(),
             );
     }

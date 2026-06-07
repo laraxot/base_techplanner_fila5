@@ -1,12 +1,16 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 declare(strict_types=1);
 
 return [
     'breadcrumb' => 'سجل عمليات',
     'title' => 'سجل عمليات :record',
     'default_datetime_format' => 'Y-m-d, H:i:s',
+<<<<<<< HEAD
 =======
 return [
     'breadcrumb' => 'سجل عمليات',
@@ -16,6 +20,8 @@ return [
     'default_datetime_format' => 'Y-m-d, H:i:s',
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'table' => [
         'field' => 'الحقل',
         'old' => 'سابقاً',
@@ -23,9 +29,12 @@ return [
         'restore' => 'أسترجاع',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'events' => [
         'updated' => 'تحديث',
         'created' => 'إنشاء',
@@ -35,6 +44,9 @@ return [
         'restore_failed' => 'فشل الاستراجع',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -48,6 +60,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

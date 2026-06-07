@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UserFactory Advanced Integration - Modulo User & SaluteOra
 
 ## Post Deep-Study Analysis 
@@ -299,3 +300,12 @@ public function run(): void
 ### Root Documentation  
 - [UserFactory SaluteOra Integration](../../../../docs/userfactory_saluteora_integration.md)
 - [Testing Standards](../../../../docs/testing_standards.md) 
+=======
+---
+module: theme
+topic: user_factory_advanced_integration
+canonical: ../../../Themes/docs/shared-components/user_factory_advanced_integration.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/user_factory_advanced_integration.md
+>>>>>>> dev

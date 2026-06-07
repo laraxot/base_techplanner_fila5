@@ -1,6 +1,10 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "laraxot/module_tenant_fila3",
+=======
+  "name": "laraxot/module_tenant_fila5",
+>>>>>>> dev
   "description": "Multi-tenancy module for the Laraxot ecosystem: single application instance serving multiple tenants with data isolation.",
   "keywords": [
     "laraxot",
@@ -12,7 +16,11 @@
     "saas",
     "data-isolation"
   ],
+<<<<<<< HEAD
   "homepage": "https://github.com/laraxot/module_tenant_fila3",
+=======
+  "homepage": "https://github.com/laraxot/module_tenant_fila5",
+>>>>>>> dev
   "license": "MIT",
   "authors": [
     {
@@ -82,6 +90,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true
 }
+<<<<<<< HEAD
 =======
     "name": "laraxot/module_tenant_fila3",
     "description": "tenant module for software architecture that allows a single instance of a software application to serve multiple tenants",
@@ -164,3 +173,5 @@
     "prefer-stable": true
 }
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

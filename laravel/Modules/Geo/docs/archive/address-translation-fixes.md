@@ -216,3 +216,7 @@ Le stesse correzioni sono state applicate a:
 
 ---
 
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento**: 27 Gennaio 2025  
+>>>>>>> dev

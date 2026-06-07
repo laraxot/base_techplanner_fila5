@@ -11,6 +11,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'latitude' => [
             'label' => 'Latitudine',
             'tooltip' => '',
@@ -23,10 +26,13 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         'latitude' => 'Latitudine',
         'longitude' => 'Longitudine',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'actions' => [
         'select_position' => 'Seleziona Posizione',
@@ -37,8 +43,13 @@ return [
         'invalid_coordinates' => 'Coordinate non valide',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Themes\Sixteen\Models\Municipal;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -18,6 +21,7 @@ use Illuminate\Support\Str;
 /**
  * Modello per gli eventi municipali (Municipal Event)
  *
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
 use Illuminate\Database\Eloquent\Relations\{BelongsTo, MorphMany, BelongsToMany};
@@ -29,6 +33,8 @@ use Carbon\Carbon;
  * Modello per gli eventi municipali (Municipal Event)
  * 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  * Rappresenta eventi, manifestazioni, incontri pubblici
  * e altre attività organizzate dall'ente secondo l'ontologia AGID
  */
@@ -264,10 +270,14 @@ class MunicipalEvent extends Model
             ->orWhere(function ($q) {
                 $q->where('start_date', '<', now()->toDateString())
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ->whereNull('end_date');
 =======
                   ->whereNull('end_date');
 >>>>>>> 4b6b99016 (first commit)
+=======
+                    ->whereNull('end_date');
+>>>>>>> dev
             });
     }
 
@@ -278,17 +288,23 @@ class MunicipalEvent extends Model
     {
         $today = now()->toDateString();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 
         return $query->where('start_date', '<=', $today)
             ->where(function ($q) use ($today) {
                 $q->where('end_date', '>=', $today)
                     ->orWhereNull('end_date');
+<<<<<<< HEAD
 =======
         return $query->where('start_date', '<=', $today)
             ->where(function ($q) use ($today) {
                 $q->where('end_date', '>=', $today)
                   ->orWhereNull('end_date');
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             })
             ->where('event_status', 'in_progress');
     }
@@ -355,10 +371,14 @@ class MunicipalEvent extends Model
     {
         return Attribute::make(
 <<<<<<< HEAD
+<<<<<<< HEAD
             get: fn () => $this->start_date->isFuture() ||
 =======
             get: fn () => $this->start_date->isFuture() || 
 >>>>>>> 4b6b99016 (first commit)
+=======
+            get: fn () => $this->start_date->isFuture() ||
+>>>>>>> dev
                 ($this->start_date->isToday() && $this->start_time?->isFuture())
         );
     }
@@ -374,6 +394,7 @@ class MunicipalEvent extends Model
                 $startDateTime = $this->getStartDateTime();
                 $endDateTime = $this->getEndDateTime();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
                 return $startDateTime <= $now &&
                        ($endDateTime >= $now || ! $endDateTime) &&
@@ -382,6 +403,11 @@ class MunicipalEvent extends Model
                 return $startDateTime <= $now && 
                        ($endDateTime >= $now || !$endDateTime) &&
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+                return $startDateTime <= $now &&
+                       ($endDateTime >= $now || ! $endDateTime) &&
+>>>>>>> dev
                        $this->event_status === 'in_progress';
             }
         );
@@ -396,9 +422,13 @@ class MunicipalEvent extends Model
             get: function () {
                 $endDateTime = $this->getEndDateTime();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return $endDateTime ? $endDateTime->isPast() : $this->start_date->isPast();
             }
         );
@@ -421,10 +451,14 @@ class MunicipalEvent extends Model
     {
         return Attribute::make(
 <<<<<<< HEAD
+<<<<<<< HEAD
             get: fn () => ! $this->capacity || $this->current_attendees < $this->capacity
 =======
             get: fn () => !$this->capacity || $this->current_attendees < $this->capacity
 >>>>>>> 4b6b99016 (first commit)
+=======
+            get: fn () => ! $this->capacity || $this->current_attendees < $this->capacity
+>>>>>>> dev
         );
     }
 
@@ -447,6 +481,9 @@ class MunicipalEvent extends Model
             get: function () {
                 if ($this->is_all_day) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
                     return $this->end_date
                         ? $this->start_date->diffInDays($this->end_date) + 1 .' giorni'
                         : '1 giorno';
@@ -465,6 +502,7 @@ class MunicipalEvent extends Model
                     return "{$diff}m";
                 }
 
+<<<<<<< HEAD
 =======
                     return $this->end_date 
                         ? $this->start_date->diffInDays($this->end_date) + 1 . ' giorni'
@@ -485,6 +523,8 @@ class MunicipalEvent extends Model
                 
                 return null;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             }
         );
     }
@@ -511,9 +551,13 @@ class MunicipalEvent extends Model
                     $this->attributes['slug'] = Str::slug($value);
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return $value;
             }
         );
@@ -528,10 +572,14 @@ class MunicipalEvent extends Model
             return $this->start_date->startOfDay();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
         return $this->start_time ?: $this->start_date->startOfDay();
     }
 
@@ -544,10 +592,14 @@ class MunicipalEvent extends Model
             return $this->end_date ? $this->end_date->endOfDay() : $this->start_date->endOfDay();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
         return $this->end_time;
     }
 
@@ -558,6 +610,9 @@ class MunicipalEvent extends Model
     {
         if ($this->is_all_day) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             if ($this->end_date && ! $this->start_date->isSameDay($this->end_date)) {
                 return $this->start_date->format('d/m/Y').' - '.$this->end_date->format('d/m/Y');
             }
@@ -579,6 +634,7 @@ class MunicipalEvent extends Model
             }
         }
 
+<<<<<<< HEAD
 =======
             if ($this->end_date && !$this->start_date->isSameDay($this->end_date)) {
                 return $this->start_date->format('d/m/Y') . ' - ' . $this->end_date->format('d/m/Y');
@@ -601,6 +657,8 @@ class MunicipalEvent extends Model
         }
         
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         return $formatted;
     }
 
@@ -610,10 +668,14 @@ class MunicipalEvent extends Model
     public function getFormattedAgenda(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->agenda || ! is_array($this->agenda)) {
 =======
         if (!$this->agenda || !is_array($this->agenda)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->agenda || ! is_array($this->agenda)) {
+>>>>>>> dev
             return [];
         }
 
@@ -629,9 +691,13 @@ class MunicipalEvent extends Model
                     ];
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return array_merge(['order' => $index], $item);
             })
             ->sortBy('order')
@@ -645,10 +711,14 @@ class MunicipalEvent extends Model
     public function getFormattedSpeakers(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->speaker_info || ! is_array($this->speaker_info)) {
 =======
         if (!$this->speaker_info || !is_array($this->speaker_info)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->speaker_info || ! is_array($this->speaker_info)) {
+>>>>>>> dev
             return [];
         }
 
@@ -658,9 +728,13 @@ class MunicipalEvent extends Model
                     return ['name' => $speaker];
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return $speaker;
             })
             ->toArray();
@@ -672,10 +746,14 @@ class MunicipalEvent extends Model
     public function getFormattedRequirements(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->requirements || ! is_array($this->requirements)) {
 =======
         if (!$this->requirements || !is_array($this->requirements)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->requirements || ! is_array($this->requirements)) {
+>>>>>>> dev
             return [];
         }
 
@@ -685,9 +763,13 @@ class MunicipalEvent extends Model
                     return ['description' => $requirement, 'mandatory' => true];
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return $requirement;
             })
             ->toArray();
@@ -699,6 +781,9 @@ class MunicipalEvent extends Model
     public function canRegister(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         if (! $this->registration_required) {
             return false;
         }
@@ -711,6 +796,7 @@ class MunicipalEvent extends Model
             return false;
         }
 
+<<<<<<< HEAD
 =======
         if (!$this->registration_required) {
             return false;
@@ -725,6 +811,8 @@ class MunicipalEvent extends Model
         }
         
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         return in_array($this->event_status, ['scheduled', 'confirmed']);
     }
 
@@ -734,10 +822,14 @@ class MunicipalEvent extends Model
     public function isFree(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return ! $this->registration_cost || $this->registration_cost == 0;
 =======
         return !$this->registration_cost || $this->registration_cost == 0;
 >>>>>>> 4b6b99016 (first commit)
+=======
+        return ! $this->registration_cost || $this->registration_cost == 0;
+>>>>>>> dev
     }
 
     /**
@@ -810,10 +902,14 @@ class MunicipalEvent extends Model
 
             while (static::where('slug', $model->slug)->exists()) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $model->slug = $originalSlug.'-'.$counter;
 =======
                 $model->slug = $originalSlug . '-' . $counter;
 >>>>>>> 4b6b99016 (first commit)
+=======
+                $model->slug = $originalSlug.'-'.$counter;
+>>>>>>> dev
                 $counter++;
             }
         });
@@ -824,11 +920,15 @@ class MunicipalEvent extends Model
                 $model->event_status = 'scheduled';
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 
             if (is_null($model->visibility)) {
                 $model->visibility = 'public';
             }
 
+<<<<<<< HEAD
 =======
             
             if (is_null($model->visibility)) {
@@ -836,13 +936,19 @@ class MunicipalEvent extends Model
             }
             
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             if (is_null($model->priority_level)) {
                 $model->priority_level = 1;
             }
         });
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 4b6b99016 (first commit)
+=======
+}
+>>>>>>> dev

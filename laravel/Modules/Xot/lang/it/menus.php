@@ -39,6 +39,9 @@ return [
         'language' => 'Lingua',
         'langs' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'ar' => 'العربية (Arabic]',
             'da' => 'Danese (Danish]',
             'de' => 'Tedesco (German]',
@@ -97,6 +100,7 @@ return [
             'label' => 'Elimina Menus',
         ],
     ],
+<<<<<<< HEAD
 =======
             'ar' => 'العربية (Arabic)',
             'da' => 'Danese (Danish)',
@@ -113,4 +117,6 @@ return [
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -102,12 +102,17 @@ public function milano(): static
 ## 🔗 COLLEGAMENTI
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Factory Lessons Learned CRITICAL](../../../docs/factory-lessons-learned-critical.md)
 - [Geo Module README](./readme.md)
 =======
 - [Factory Lessons Learned CRITICAL](../../../docs/factory-lessons-learned-CRITICAL.md)
 - [Geo Module README](./README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Factory Lessons Learned CRITICAL](../../../../docs/factory-lessons-learned-critical.md)
+- [Geo Module README](./readme.md)
+>>>>>>> dev
 - [Geographic Data Documentation](./geographic-data.md)
 
 ## ⚠️ REGOLE GEO SPECIFICHE
@@ -121,9 +126,13 @@ public function milano(): static
 **MODULO GEO COMPLETAMENTE RIPRISTINATO!**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Creato: [DATE]*
 =======
 *Creato: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Creato: [DATE]*
+>>>>>>> dev
 *Modulo: Geo - 8/8 factory necessarie completate*
 *Status: ✅ ERRORE GRAVISSIMO RISOLTO*

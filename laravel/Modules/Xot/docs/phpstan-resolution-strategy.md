@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Strategia Risoluzione Errori PHPStan - 1565 Errori
 
 ## Status Iniziale
@@ -176,3 +177,12 @@ done
 
 **Mantenuto da**: Claude Sonnet 4.5
 **Ultimo aggiornamento**: [DATE]
+=======
+---
+module: theme
+topic: phpstan-resolution-strategy
+canonical: ../../../Themes/docs/shared-components/phpstan-error-resolution-strategy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-error-resolution-strategy.md
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi di Larabank-Aggregates (Spatie)
 
 ## Regole Implementate
@@ -19,3 +20,12 @@
 - Utilizzare aggregate per tutte le regole critiche
 - Gestire limiti e notifiche solo tramite eventi
 - Testare ogni regola con eventi e proiezioni
+=======
+---
+module: theme
+topic: 05-analysis-larabank
+canonical: ../../../../../Themes/docs/shared-components/05-analisi-larabank.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/05-analisi-larabank.md
+>>>>>>> dev

@@ -26,6 +26,9 @@
 - PHPStan blocca per seeder legacy; verrà affrontato in step successivi.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Ultimo aggiornamento: 2025-01-06
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

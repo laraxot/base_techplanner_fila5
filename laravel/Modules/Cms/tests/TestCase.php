@@ -5,10 +5,17 @@ declare(strict_types=1);
 namespace Modules\Cms\Tests;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Modules\Cms\Providers\CmsServiceProvider;
 use Modules\User\Providers\UserServiceProvider;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Datas\XotData;
+>>>>>>> dev
 use Modules\Xot\Providers\XotServiceProvider;
 use Modules\Xot\Tests\CreatesApplication;
 
@@ -32,11 +39,19 @@ abstract class TestCase extends BaseTestCase
     {
         parent::setUp();
 
+<<<<<<< HEAD
         config(['xra.pub_theme' => 'Meetup']);
         config(['xra.main_module' => 'User']);
 
         \Modules\Xot\Datas\XotData::make()->update([
             'pub_theme' => 'Meetup',
+=======
+        config(['xra.pub_theme' => 'TwentyOne']);
+        config(['xra.main_module' => 'User']);
+
+        XotData::make()->update([
+            'pub_theme' => 'TwentyOne',
+>>>>>>> dev
             'main_module' => 'User',
         ]);
 
@@ -53,6 +68,7 @@ abstract class TestCase extends BaseTestCase
             CmsServiceProvider::class,
         ];
     }
+<<<<<<< HEAD
 =======
 use Modules\Xot\Tests\TestCase as BaseTestCase;
 
@@ -62,4 +78,6 @@ use Modules\Xot\Tests\TestCase as BaseTestCase;
 abstract class TestCase extends BaseTestCase
 {
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 }

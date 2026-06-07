@@ -19,11 +19,14 @@ class IconMediaColumn extends IconColumn
             if (is_object($record) && method_exists($record, 'getFirstMedia')) {
                 return $record->getFirstMedia($attachment);
             }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
             return null;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         })
             ->icon('heroicon-o-document-text')
             ->color(function ($record) use ($attachment): string {
@@ -43,6 +46,7 @@ class IconMediaColumn extends IconColumn
 
                 return 'Documento non caricato';
             })
+<<<<<<< HEAD
             ->action(function (array $arguments, Request $request) use ($attachment) {
                 // Skip action if record is not available or doesn't have media capabilities
                 if (! isset($arguments['record'])) {
@@ -51,6 +55,12 @@ class IconMediaColumn extends IconColumn
 =======
                     return null;
 >>>>>>> 4b6b99016 (first commit)
+=======
+            ->action(function (array $arguments, Request $request) use ($attachment): void {
+                // Skip action if record is not available or doesn't have media capabilities
+                if (! isset($arguments['record'])) {
+                    return;
+>>>>>>> dev
                 }
 
                 $record = $arguments['record'];
@@ -58,15 +68,20 @@ class IconMediaColumn extends IconColumn
                 // Verify record is an object and has the required method
                 if (! is_object($record) || ! method_exists($record, 'getFirstMedia')) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     return;
 =======
                     return null;
 >>>>>>> 4b6b99016 (first commit)
+=======
+                    return;
+>>>>>>> dev
                 }
 
                 /** @var Media|null $media */
                 $media = $record->getFirstMedia($attachment);
                 if ($media === null) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                     return;
 =======
@@ -75,6 +90,12 @@ class IconMediaColumn extends IconColumn
                 }
 
                 return $media->toInlineResponse($request);
+=======
+                    return;
+                }
+
+                $media->toInlineResponse($request);
+>>>>>>> dev
 
                 // return $media->toResponse($request);
                 // return Storage::disk($media->disk)->download($media->getPathRelativeToRoot());

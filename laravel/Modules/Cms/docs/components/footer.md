@@ -53,6 +53,7 @@ Il componente Footer è un elemento fondamentale dell'interfaccia utente che for
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Componenti](./readme.md)
 - [Documentazione Blocchi](../blocks/readme.md)
 =======
@@ -60,17 +61,26 @@ Il componente Footer è un elemento fondamentale dell'interfaccia utente che for
 - [Documentazione Blocchi](../blocks/README.md)
 >>>>>>> 4b6b99016 (first commit)
 - [Convenzioni Layout](../../../docs/laravel-conventions.md)
+=======
+- [Documentazione Componenti](./readme.md)
+- [Documentazione Blocchi](../blocks/readme.md)
+- [Convenzioni Layout](../../../../docs/laravel-conventions.md)
+>>>>>>> dev
 
 ## Collegamenti tra versioni di footer.md
 * [footer.md](docs/laravel-app/themes/one/components/footer.md)
 * [footer.md](docs/sections/footer.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [footer.md](laravel/modules/ui/docs/components/footer.md)
 * [footer.md](laravel/modules/cms/docs/blocks/footer.md)
 * [footer.md](laravel/modules/cms/docs/themes/one/footer.md)
 * [footer.md](laravel/modules/cms/docs/components/footer.md)
 * [footer.md](laravel/themes/one/docs/components/layouts/footer.md)
 * [footer.md](laravel/themes/one/docs/sections/footer.md)
+<<<<<<< HEAD
 =======
 * [footer.md](laravel/Modules/UI/docs/components/footer.md)
 * [footer.md](laravel/Modules/Cms/docs/blocks/footer.md)
@@ -79,3 +89,5 @@ Il componente Footer è un elemento fondamentale dell'interfaccia utente che for
 * [footer.md](laravel/Themes/One/docs/components/layouts/footer.md)
 * [footer.md](laravel/Themes/One/docs/sections/footer.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

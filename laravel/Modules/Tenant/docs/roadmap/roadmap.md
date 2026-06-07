@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tenant Module Roadmap (2025 Q4)
 
 ## Vision & Scope
@@ -14,3 +15,12 @@
 
 ## Acceptance Criteria
 - Tenancy works in tests (policies, scoping)
+=======
+---
+module: theme
+topic: roadmap
+canonical: ../../../../Themes/docs/shared-components/-q4-roadmap.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/-q4-roadmap.md
+>>>>>>> dev

@@ -118,9 +118,13 @@ public function boot()
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Blocchi](../readme.md)
 =======
 - [Documentazione Blocchi](../README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione Blocchi](../readme.md)
+>>>>>>> dev
 - [Best Practices CMS](../../best-practices.md)
 - [Guida Componenti](../../components.md)

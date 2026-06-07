@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
     "name": "laraxot/module_geo_fila3",
     "description": "",
     "homepage": "https://github.com/laraxot/module_geo_fila3.git",
+=======
+    "name": "laraxot/module_geo_fila5",
+    "description": "",
+    "homepage": "https://github.com/laraxot/module_geo_fila5.git",
+>>>>>>> dev
     "license": "MIT",
     "authors": [
         {

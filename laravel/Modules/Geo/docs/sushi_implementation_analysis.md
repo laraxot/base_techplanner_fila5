@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Implementazione Comune con Laravel Sushi
 
 ## Indice
@@ -288,3 +289,12 @@ Basandoci sull'analisi, raccomandiamo l'adozione di Laravel Sushi per il modello
 - [Guida alla Migrazione](migration-guide.md)
 - [Benchmark Dettagliati](benchmarks/readme.md)
 - [Documentazione GeoJsonModel](geo-json-model.md)
+=======
+---
+module: theme
+topic: sushi_implementation_analysis
+canonical: ../../../Themes/docs/shared-components/sushi-implementation-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/sushi-implementation-analysis.md
+>>>>>>> dev

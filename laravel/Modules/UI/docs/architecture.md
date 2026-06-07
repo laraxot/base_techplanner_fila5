@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole Architetturali
 
 ## Principi Fondamentali
@@ -459,6 +460,11 @@ class UIServiceProvider extends XotBaseServiceProvider
 # UI Module - Architecture Guide (2025)
 
 > **Last Updated:** 2025-11-19
+=======
+# UI Module - Architecture Guide (2025)
+
+> **
+>>>>>>> dev
 > **PHPStan Level:** 10
 > **Status:** Shared UI Components & Filament Customizations
 
@@ -1002,6 +1008,30 @@ class MyFormComponent extends Field
         $this->validateUsing([/* validation rules */]);
     }
 }
+<<<<<<< HEAD
+=======
+
+// Non aggiungere route manualmente
+Route::get('/example', [ExampleController::class, 'index']);
+
+// Non creare middleware personalizzati
+class CustomMiddleware
+{
+    public function handle($request, Closure $next)
+    {
+        // ...
+    }
+}
+
+// Non hardcodare percorsi delle risorse
+<img src="/var/www/html/Quaeris/laravel/public/images/avatar.png">
+
+// Non duplicare la registrazione dei componenti
+Blade::component('ui::components.icon', 'ui.icon');
+
+// Non creare componenti personalizzati se esiste un equivalente Filament
+<x-ui.button>Click me</x-ui.button>
+>>>>>>> dev
 ```
 
 ### Widget Development
@@ -1108,6 +1138,10 @@ The UI module is a **well-architected, feature-rich Filament customization layer
 ---
 
 **Document Version:** 1.0
+<<<<<<< HEAD
 **Generated:** 2025-11-19
 **Author:** Claude Code Analysis
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Author:** Claude Code Analysis
+>>>>>>> dev

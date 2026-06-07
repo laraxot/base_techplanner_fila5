@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistema di Prompt per la Documentazione
 
 ## Panoramica
@@ -70,3 +71,12 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 - [Percorsi Relativi nella Documentazione](../../../../bashscripts/docs/PERCORSI_RELATIVI_DOCUMENTAZIONE.md)
 - [Documentazione del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: documentation-prompt-system
+canonical: ../../../Themes/docs/shared-components/documentation-prompt-system-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/documentation-prompt-system-1.md
+>>>>>>> dev

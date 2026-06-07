@@ -9,10 +9,15 @@ use Modules\Tenant\Services\TenantService;
 
 class TestCommand extends Command
 {
+<<<<<<< HEAD
     /** @var string */
     protected $signature = 'tenant:test';
 
     /** @var string */
+=======
+    protected $signature = 'tenant:test';
+
+>>>>>>> dev
     protected $description = 'Check Tenant';
 
     /**

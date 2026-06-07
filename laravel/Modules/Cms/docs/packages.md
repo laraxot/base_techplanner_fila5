@@ -4,6 +4,7 @@
 
 ### Core
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [laraxot/module_xot_fila3](../xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../ui/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila3](../tenant/docs/packages.md) - Gestione multi-tenant
@@ -16,6 +17,13 @@
 - [laraxot/module_user_fila3](../User/docs/packages.md) - Gestione utenti e permessi
 - [laraxot/module_lang_fila3](../Lang/docs/packages.md) - Gestione lingue e traduzioni
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [laraxot/module_xot_fila5](../xot/docs/packages.md) - Modulo base per funzionalità comuni
+- [laraxot/module_ui](../ui/docs/packages.md) - Componenti UI e temi
+- [laraxot/module_tenant_fila5](../tenant/docs/packages.md) - Gestione multi-tenant
+- [laraxot/module_user_fila5](../user/docs/packages.md) - Gestione utenti e permessi
+- [laraxot/module_lang_fila5](../lang/docs/packages.md) - Gestione lingue e traduzioni
+>>>>>>> dev
 
 ### Development
 - [spatie/laravel-package-tools](https://github.com/spatie/laravel-package-tools) - Strumenti per lo sviluppo di pacchetti Laravel

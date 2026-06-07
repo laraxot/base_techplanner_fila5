@@ -147,7 +147,12 @@ abstract class BaseTreeModel extends BaseModel implements HasRecursiveRelationsh
         'parent_id',
     ];
 
+<<<<<<< HEAD
     protected array $schema = [
+=======
+    /** @var array<string, string> */
+    protected $schema = [
+>>>>>>> dev
         'id' => 'integer',
         'title' => 'string',
         'parent_id' => 'integer',

@@ -1,10 +1,14 @@
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## [[DATE]] Aggiornamento regole e best practice traduzioni modulo Notify
 =======
 ## [2024-07-07] Aggiornamento regole e best practice traduzioni modulo Notify
 >>>>>>> 4b6b99016 (first commit)
+=======
+## [2024-07-07] Aggiornamento regole e best practice traduzioni modulo Notify
+>>>>>>> dev
 
 ### Errori riscontrati
 - Chiavi di traduzione non strutturate gerarchicamente
@@ -51,9 +55,14 @@ return [
 
 ### Riferimenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [TRANSLATION_KEYS_RULES.md](../../lang/docs/translation_keys_rules.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../lang/docs/translation_keys_best_practices.md) 
 =======
 - [TRANSLATION_KEYS_RULES.md](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md) 
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [TRANSLATION_KEYS_RULES.md](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md) 
+>>>>>>> dev

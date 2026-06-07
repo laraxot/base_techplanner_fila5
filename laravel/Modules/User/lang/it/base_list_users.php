@@ -7,6 +7,9 @@ return [
         'deactivate' => [
             'label' => 'deactivate',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -66,6 +69,7 @@ return [
             'label' => 'Elimina Base List Users',
         ],
     ],
+<<<<<<< HEAD
 =======
         ],
         'unverified' => [
@@ -89,4 +93,6 @@ return [
     'plural_label' => '',
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

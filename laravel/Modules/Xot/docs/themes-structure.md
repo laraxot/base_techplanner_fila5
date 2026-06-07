@@ -229,7 +229,11 @@ resources/views/
 ## Collegamenti tra versioni di themes-structure.md
 * [themes-structure.md](docs/tecnico/themes-structure.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [themes-structure.md](../../../xot/docs/themes-structure.md)
 =======
 * [themes-structure.md](../../../Xot/docs/themes-structure.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [themes-structure.md](../../../xot/docs/themes-structure.md)
+>>>>>>> dev

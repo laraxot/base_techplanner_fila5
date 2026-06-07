@@ -18,28 +18,43 @@ return [
             'label' => 'Distanza',
             'helper_text' => 'Distanza approssimativa dalla tua posizione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'phone' => [
             'label' => 'Telefono',
             'helper_text' => 'Numero di telefono dello studio',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'specializations' => [
-            'label' => 'Specializzazioni',
-            'helper_text' => 'Servizi offerti dallo studio',
 <<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'specializations' => [
+            'label' => 'Specializzazioni',
+            'helper_text' => 'Servizi offerti dallo studio',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'accessibility' => [
@@ -48,6 +63,9 @@ return [
         'select_studio' => 'Premi spazio o invio per selezionare questo studio',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Studio Selector',
     'plural_label' => 'Studio Selector (Plurale)',
     'navigation' => [
@@ -61,6 +79,9 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

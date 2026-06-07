@@ -1,11 +1,18 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 # 📚 **Indice Documentazione Modulo Lang**
 
 **Status**: ✅ PHPStan Level 10 Compliant
 **Module Version**: 1.5.0
 
 ## 🎯 **Lettura Essenziale**
+<<<<<<< HEAD
 1. [README.md](./readme.md) - Panoramica del sistema di internazionalizzazione.
+=======
+1. [README.md](./README.md) - Panoramica del sistema di internazionalizzazione.
+>>>>>>> dev
 2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Traduzioni AI e centralizzazione.
 3. [philosophy.md](./philosophy.md) - La lingua come infrastruttura: filosofia Laraxot.
 
@@ -27,10 +34,15 @@
 ## 🧪 **Qualità e Testing**
 - ✅ **[PHPStan Analysis](./phpstan-analysis-lang.md)** - Report di conformità Level 10.
 - 🔬 **[Testing Guidelines](./testing.md)** - Verifica della presenza delle chiavi di traduzione.
+<<<<<<< HEAD
+=======
+- 🐒 **[Chaos Monkey Translation Fallbacks](./chaos-monkey-translation-fallbacks.md)** - Protocollo di recovery su regressioni i18n.
+>>>>>>> dev
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
 
+<<<<<<< HEAD
 ## 🔗 **Moduli Correlati**
 - [Xot](../../xot/docs/readme.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../ui/docs/readme.md) - Componenti Blade e Filament che consumano le traduzioni.
@@ -40,3 +52,41 @@
 =======
 >>>>>>> 4b6b99016 (first commit)
 # Documentation Index
+=======
+## 📋 **Documenti Prodotto & Sviluppo**
+
+### Product
+| File | Scopo |
+|------|-------|
+| PRD.md | Product Requirements |
+| PRODUCT_ROADMAP.md | Roadmap |
+| PRODUCT_STRATEGY.md | Strategy |
+| PRODUCT_LAUNCH_PLAN.md | Launch Plan |
+
+### Development
+| File | Scopo |
+|------|-------|
+| GSD_WORKFLOW.md | GSD Workflow |
+| SPRINT_PLANNING.md | Sprint Planning |
+| USER_RESEARCH.md | User Research |
+
+## 📦 **Pacchetti Composer**
+- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
+- [Package Dependency Chaos Map](./package-dependency-chaos-map.md)
+- `mcamara/laravel-localization` - URL localizzati
+- `lara-zeus/spatie-translatable` - Campi Filament tradotti
+- `rinvex/countries` - Dati paesi
+- `spatie/laravel-sluggable` - Slug multilingua
+
+## 🔗 **Moduli Correlati**
+- [Xot](../../Xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
+- [UI](../../UI/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
+- [AGENTS.md](../../../../AGENTS.md) - Project guidelines
+
+---
+*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+
+## Dependency Intelligence
+
+- [Dependency intelligence](dependency-intelligence.md)
+>>>>>>> dev

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 # Modulo Cms - Filosofia, Religione, Politica, Zen
 
 ## 🎯 Panoramica
@@ -127,13 +130,18 @@ Questo componente incarna lo zen dell'auto-scoperta, creando automaticamente la 
 
 ## 📚 Riferimenti Interni
 
+<<<<<<< HEAD
 - [Documentazione Master del Progetto](../../../docs/project-master-analysis.md)
+=======
+- [Documentazione Master del Progetto](../../../../docs/project-master-analysis.md)
+>>>>>>> dev
 - [Filosofia Completa Laraxot](../../xot/docs/philosophy-complete.md)
 - [Regole Critiche di Architettura](../../xot/docs/critical-architecture-rules.md)
 - [Relazioni Ricorsive (Contratto)](../../xot/docs/recursive-relationships-contract.md)
 - [Documentazione Cms Blocks System](./content-blocks-system.md)
 - [Documentazione Cms Architecture](./architecture/)
 
+<<<<<<< HEAD
 =======
 # Cms Module: Philosophy, Purpose, and Design Principles
 
@@ -195,3 +203,5 @@ The `Cms` module, as the dynamic frontend and theme management layer, can signif
 
 By leveraging these MCPs, the `Cms` module can ensure its complex frontend management logic is robust, verifiable, and deeply integrated into the development and operational workflows, fostering truly effortless frontend customization.
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

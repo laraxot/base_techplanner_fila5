@@ -1,9 +1,12 @@
 # PHPStan Fix Roadmap - XotBaseWidget View-String Error
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-01-22
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Status**: ✅ Completato
 **Errore**: 1 (risolto)
 **Modulo**: Xot
@@ -82,10 +85,14 @@ private function resolveView(): void
 
 - [Property Type Fixes](./consolidated/archive/property-type-fixes.md) - Documentazione esistente
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [View-String Type Fixes (User Module)](../user/docs/type-safety-improvements.md) - Pattern simile risolto
 =======
 - [View-String Type Fixes (User Module)](../User/docs/type-safety-improvements.md) - Pattern simile risolto
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [View-String Type Fixes (User Module)](../user/docs/type-safety-improvements.md) - Pattern simile risolto
+>>>>>>> dev
 - [Path Resolution Fixes](./consolidated/archive/path-resolution-fixes.md) - Soluzione simile
 
 ---
@@ -104,8 +111,12 @@ private function resolveView(): void
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
 =======
 **Ultimo aggiornamento**: 2025-01-22
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> dev
 **Versione**: 1.0.0

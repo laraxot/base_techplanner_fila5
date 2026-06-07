@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Modules\Xot\Enums;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
@@ -16,6 +19,7 @@ enum PdfEngineEnum: string implements HasColor, HasIcon, HasLabel
 
     case SPIPU = 'spipu';
     case SPATIE = 'spatie';
+<<<<<<< HEAD
 =======
 // use Modules\Xot\Datas\PdfData;
 use Filament\Support\Contracts\HasColor;
@@ -59,4 +63,6 @@ enum PdfEngineEnum: string implements HasColor, HasIcon, HasLabel
         };
     }
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 }

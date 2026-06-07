@@ -238,7 +238,11 @@ $membership = Membership::where('team_id', $team->id)
 - [Membership Model](../../app/Models/Membership.php)
 - [HasTeams Trait](../../app/Models/Traits/HasTeams.php)
 - [TeamsRelationManager](../../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
+<<<<<<< HEAD
 - [Documentazione Pivot Tables](../../../docs/pivot-tables-best-practices.md)
+=======
+- [Documentazione Pivot Tables](../../../../docs/pivot-tables-best-practices.md)
+>>>>>>> dev
 
 ## Note Tecniche
 

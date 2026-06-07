@@ -3,6 +3,9 @@
 namespace App\Http;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use App\Http\Middleware\Authenticate;
 use App\Http\Middleware\EncryptCookies;
 use App\Http\Middleware\PreventRequestsDuringMaintenance;
@@ -27,6 +30,7 @@ use Illuminate\Routing\Middleware\ThrottleRequests;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+<<<<<<< HEAD
 =======
 use App\Http\Middleware\TrustProxies;
 use Illuminate\Http\Middleware\HandleCors;
@@ -53,6 +57,8 @@ use App\Http\Middleware\ValidateSignature;
 use Illuminate\Auth\Middleware\EnsureEmailIsVerified;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 class Kernel extends HttpKernel
 {

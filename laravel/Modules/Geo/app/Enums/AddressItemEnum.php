@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Enums;
 
+<<<<<<< HEAD
+=======
+use Modules\Xot\Traits\EnumTrait;
+>>>>>>> dev
 use Filament\Forms\Components\TextInput;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Traits\TransTrait;
 
 /**
@@ -21,6 +26,18 @@ use Modules\Xot\Filament\Traits\TransTrait;
 enum AddressItemEnum: string implements HasColor, HasIcon, HasLabel
 {
     use TransTrait;
+=======
+
+/**
+ * Enum per i campi standard di indirizzo.
+ *
+ * I metadati UI arrivano da EnumTrait; le definizioni colonne restano
+ * nell'hook getColumnDefinitions() consumato dal trait.
+ */
+enum AddressItemEnum: string implements HasColor, HasIcon, HasLabel
+{
+    use EnumTrait;
+>>>>>>> dev
 
     case PHONE = 'phone';
     case NAME = 'name';
@@ -44,6 +61,7 @@ enum AddressItemEnum: string implements HasColor, HasIcon, HasLabel
     case EMAIL = 'email';
     case NOTES = 'notes';
 
+<<<<<<< HEAD
     public function getLabel(): string
     {
         return $this->transClass(self::class, $this->value.'.label');
@@ -185,12 +203,18 @@ enum AddressItemEnum: string implements HasColor, HasIcon, HasLabel
         return array_map(fn ($item) => $item->value, self::cases());
     }
 
+=======
+>>>>>>> dev
     /**
      * Internal map of standard address column definitions.
      *
      * @return array<string, \Closure(Blueprint):void>
      */
+<<<<<<< HEAD
     private static function getColumnDefinitions(): array
+=======
+    public static function getColumnDefinitions(): array
+>>>>>>> dev
     {
         return [
             self::PHONE->value => static function (Blueprint $table): void {
@@ -302,6 +326,26 @@ enum AddressItemEnum: string implements HasColor, HasIcon, HasLabel
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Add standard address columns plus legacy compatibility columns.
+     */
+    public static function columnsWithLegacy(Blueprint $table, ?XotBaseMigration $migration = null): void
+    {
+        static::columns($table, $migration);
+        static::addLegacyColumns($table, $migration);
+    }
+
+    /**
+     * Ensure standard address columns plus legacy columns in UPDATE context.
+     */
+    public static function updateColumnsWithLegacy(Blueprint $table, XotBaseMigration $migration): void
+    {
+        static::columnsWithLegacy($table, $migration);
+    }
+
+    /**
+>>>>>>> dev
      * Add legacy compatibility columns.
      *
      * These fields maintain compatibility with older code that expects

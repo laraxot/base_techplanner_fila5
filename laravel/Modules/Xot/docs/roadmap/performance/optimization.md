@@ -49,6 +49,7 @@
 - [Performance Guidelines](../../performance/optimization.md)
 ## Collegamenti tra versioni di optimization.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [optimization.md](../../../xot/docs/roadmap/performance/optimization.md)
 * [optimization.md](../../../job/docs/optimization.md)
 * [optimization.md](../../../cms/docs/roadmap/performance/optimization.md)
@@ -57,3 +58,8 @@
 * [optimization.md](../../../Job/docs/optimization.md)
 * [optimization.md](../../../Cms/docs/roadmap/performance/optimization.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [optimization.md](../../../xot/docs/roadmap/performance/optimization.md)
+* [optimization.md](../../../job/docs/optimization.md)
+* [optimization.md](../../../cms/docs/roadmap/performance/optimization.md)
+>>>>>>> dev

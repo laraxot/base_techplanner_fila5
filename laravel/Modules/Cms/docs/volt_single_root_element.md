@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regola del Singolo Elemento Root in Volt/Livewire
 
 ## Descrizione
@@ -53,3 +54,12 @@ Wrappare sempre gli elementi multipli in un singolo elemento container:
 - [Documentazione Principale](../../project_docs/index.md)
 - [Best Practices Frontend](web-design-rules.md)
 - [Gestione Componenti](components.md) 
+=======
+---
+module: theme
+topic: volt_single_root_element
+canonical: ../../../Themes/docs/shared-components/volt-single-root-element.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/volt-single-root-element.md
+>>>>>>> dev

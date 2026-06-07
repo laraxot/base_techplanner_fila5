@@ -6,13 +6,21 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Modules\User\Models\ProfileTeam;
+>>>>>>> dev
 
 class ProfileTeamFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      */
+<<<<<<< HEAD
     protected $model = \Modules\User\Models\ProfileTeam::class;
+=======
+    protected $model = ProfileTeam::class;
+>>>>>>> dev
 
     /**
      * Define the model's default state.
@@ -20,6 +28,7 @@ class ProfileTeamFactory extends Factory
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
 use Modules\User\Models\Profile;
 use Modules\User\Models\ProfileTeam;
@@ -67,5 +76,7 @@ class ProfileTeamFactory extends Factory
     {
         return $this->state(['role' => 'member']);
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 }

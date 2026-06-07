@@ -2,10 +2,14 @@
 
 ## Contesto del Conflitto
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: `/var/www/html/ptvx/laravel/Modules/Media/app/Actions/Video/ConvertVideoByMediaConvertAction.php`
 =======
 **File**: `Modules/Media/app/Actions/Video/ConvertVideoByMediaConvertAction.php`
 >>>>>>> 4b6b99016 (first commit)
+=======
+**File**: `/var/www/html/ptvx/laravel/Modules/Media/app/Actions/Video/ConvertVideoByMediaConvertAction.php`
+>>>>>>> dev
 **Linee**: 49-53
 **Tipo**: Conflitto di annotazione PHPStan
 
@@ -76,6 +80,7 @@ FFMpeg::fromDisk($data->disk)
 - [Media Module Documentation](module_media.md)
 - [FFMpeg Integration Guide](ffmpeg_integration.md)
 - [PHPStan Fixes Documentation](phpstan_fixes.md)
+<<<<<<< HEAD
 - [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
 
 <<<<<<< HEAD
@@ -159,3 +164,7 @@ FFMpeg::fromDisk($data->disk)
 
 *Ultimo aggiornamento: giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
+
+>>>>>>> dev

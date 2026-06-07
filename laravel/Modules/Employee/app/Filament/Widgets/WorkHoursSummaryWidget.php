@@ -4,16 +4,26 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Filament\Widgets;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
+=======
+>>>>>>> dev
 use Filament\Schemas\Components\Component;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 use Modules\Employee\Models\WorkHour;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Override;
 
 class WorkHoursSummaryWidget extends XotBaseWidget
+=======
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+use Override;
+
+class WorkHoursSummaryWidget extends XotBaseSchemaWidget
+>>>>>>> dev
 {
     protected static ?int $sort = 3;
 
@@ -109,6 +119,7 @@ class WorkHoursSummaryWidget extends XotBaseWidget
      * Get the form model for the widget.
      */
     #[Override]
+<<<<<<< HEAD
     public function getFormModel(): string|Model|null
     {
         return null; // No model needed for this widget
@@ -133,4 +144,13 @@ class WorkHoursSummaryWidget extends XotBaseWidget
     {
         // No save action needed for this widget
     }
+=======
+    protected function getFormModel(): Model|string|null
+    {
+        return null;
+    }
+
+    #[Override]
+    public function save(): void {}
+>>>>>>> dev
 }

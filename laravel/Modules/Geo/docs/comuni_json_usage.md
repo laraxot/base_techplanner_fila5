@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Using comuni.json for Location Data
 
 ## Overview
@@ -266,3 +267,12 @@ Schema::table('geo_caps', function (Blueprint $table) {
 ## License
 
 MIT
+=======
+---
+module: theme
+topic: comuni_json_usage
+canonical: ../../../Themes/docs/shared-components/comuni-json-usage.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/comuni-json-usage.md
+>>>>>>> dev

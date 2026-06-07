@@ -441,10 +441,14 @@ class Product extends BaseModel
 - [DRY Principle](../../project_docs/dry-principle.md)
 - [KISS Principle](../../project_docs/kiss-principle.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Xot Actions Documentation](../actions/readme.md)
 
 ---
 
+<<<<<<< HEAD
 =======
 - [Xot Actions Documentation](../actions/README.md)
 
@@ -452,3 +456,5 @@ class Product extends BaseModel
 
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Convenzioni di Naming nel Modulo Geo
 
 ## Principi Guida
@@ -137,3 +138,12 @@ Quando si migra da vecchi schemi che utilizzano prefissi ridondanti, è importan
 2. Verificare la compatibilità con i form esistenti
 3. Aggiornare eventuali validazioni
 4. Creare una migrazione che rinomini i campi in modo appropriato
+=======
+---
+module: theme
+topic: naming_conventions
+canonical: ../../../Themes/docs/shared-components/naming-conventions.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/naming-conventions.md
+>>>>>>> dev

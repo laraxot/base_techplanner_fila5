@@ -2,10 +2,14 @@
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'enabled' => env('DEBUGBAR_ENABLED', false) && env('APP_DEBUG', false),
 =======
     'enabled' => env('DEBUGBAR_ENABLED', env('APP_DEBUG', false)),
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'enabled' => env('DEBUGBAR_ENABLED', false) && env('APP_DEBUG', false),
+>>>>>>> dev
     'except' => [
         'telescope*',
         'horizon*',
@@ -63,10 +67,14 @@ return [
         ],
         'views' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'data' => false, // Note: Can slow down the application, because the data can be quite large..
 =======
             'data' => false, //Note: Can slow down the application, because the data can be quite large..
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'data' => false, // Note: Can slow down the application, because the data can be quite large..
+>>>>>>> dev
         ],
         'route' => [
             'label' => true, // show complete route on bar

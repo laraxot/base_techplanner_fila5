@@ -217,11 +217,15 @@ public function store(Request $request): Response
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 - [Laravel Best Practices](https://laravel.com/docs/master/best-practices)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Security Best Practices](../security/readme.md)
 
 ## Collegamenti tra versioni di coding-standards.md
 * [coding-standards.md](../../../xot/docs/standards/coding-standards.md)
 * [coding-standards.md](../../../xot/docs/conventions/coding-standards.md)
+<<<<<<< HEAD
 =======
 - [Security Best Practices](../security/README.md)
 
@@ -229,3 +233,5 @@ public function store(Request $request): Response
 * [coding-standards.md](../../../Xot/docs/standards/coding-standards.md)
 * [coding-standards.md](../../../Xot/docs/conventions/coding-standards.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

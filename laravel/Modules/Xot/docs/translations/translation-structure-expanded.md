@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura Traduzioni Espansa - Modulo Xot
 
 ## Scopo
@@ -202,3 +203,12 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 =======
 **Data**: 2025-08-08
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: translation-structure-expanded
+canonical: ../../../../Themes/docs/shared-components/translation-structure-expanded-Modules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/translation-structure-expanded-Modules.md
+>>>>>>> dev

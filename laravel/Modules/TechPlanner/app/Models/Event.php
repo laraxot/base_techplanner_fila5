@@ -25,9 +25,13 @@ use Modules\TechPlanner\Database\Factories\EventFactoryFactory;
  * @property string|null $deleted_at
  * @property string|null $deleted_by
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @method static EventFactoryFactory factory($count = null, $state = [])
  * @method static Builder<static>|Event newModelQuery()
  * @method static Builder<static>|Event newQuery()
@@ -46,9 +50,13 @@ use Modules\TechPlanner\Database\Factories\EventFactoryFactory;
  * @method static Builder<static>|Event whereUpdatedAt($value)
  * @method static Builder<static>|Event whereUpdatedBy($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class Event extends Model

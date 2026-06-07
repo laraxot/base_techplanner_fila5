@@ -2,7 +2,11 @@
 
 ## Riepilogo Intervento
 
+<<<<<<< HEAD
 Sono stati identificati e corretti tutti i file di traduzione non italiani contenenti "Città" nel modulo User, applicando la struttura completa a 7 elementi secondo gli standard Laraxot SaluteOra.
+=======
+Sono stati identificati e corretti tutti i file di traduzione non italiani contenenti "Città" nel modulo User, applicando la struttura completa a 7 elementi secondo gli standard Laraxot Laraxot.
+>>>>>>> dev
 
 ## File Corretti
 
@@ -157,9 +161,15 @@ Tutti i file corretti mantengono:
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< HEAD
 - [Struttura Completa Campi Traduzione](../../../docs/translation-field-structure-complete.md)
 - [SaluteOra Translation Audit](../../saluteora/docs/translation_audit_city_fields.md)
 - [Translation Syntax Fixes](../../../docs/translation_syntax_fixes.md)
+=======
+- [Struttura Completa Campi Traduzione](../../../../docs/translation-field-structure-complete.md)
+- [Laraxot Translation Audit](../../ptvx/docs/translation_audit_city_fields.md)
+- [Translation Syntax Fixes](../../../../docs/translation_syntax_fixes.md)
+>>>>>>> dev
 - [User Module Widget Translation Rules](widget-translation-rules.md)
 
 ## Prevenzione Futura
@@ -174,9 +184,17 @@ grep -A 10 -B 2 "label.*City\|label.*Stadt" laravel/Modules/*/lang/
 ```
 
 ### Template di Riferimento
+<<<<<<< HEAD
 Utilizzare la documentazione centrale [`translation-field-structure-complete.md`](../../../docs/translation-field-structure-complete.md) come template per tutti i nuovi campi di traduzione.
+=======
+Utilizzare la documentazione centrale [`translation-field-structure-complete.md`](../../../../docs/translation-field-structure-complete.md) come template per tutti i nuovi campi di traduzione.
+>>>>>>> dev
 
 ## Ultimo Aggiornamento
 2025-08-08 - Refactor completo campi "Città" modulo User ✅ COMPLETATO
 
+<<<<<<< HEAD
 *Intervento eseguito seguendo rigorosamente i principi DRY + KISS e gli standard Laraxot SaluteOra*
+=======
+*Intervento eseguito seguendo rigorosamente i principi DRY + KISS e gli standard Laraxot Laraxot*
+>>>>>>> dev

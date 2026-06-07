@@ -11,7 +11,11 @@
 
 ## Errore Identificato
 
+<<<<<<< HEAD
 L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
+=======
+L'implementazione attuale del file `/var/www/html/ptvx/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
+>>>>>>> dev
 
 ```
 Call to a member function getAuthIdentifier() on null

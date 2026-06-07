@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User Module Roadmap
 
 "Proteggere l'identità: il fondamento della fiducia."
@@ -323,3 +324,25 @@ Diventare un identity provider completo (IdP) che supporta standard moderni come
 
 **Filosofia**: User è il modulo BASE più importante - deve essere perfetto, riutilizzabile, e senza dipendenze da moduli business specifici.
 >>>>>>> 4b6b99016 (first commit)
+=======
+# Product Roadmap - User Module
+
+## 🎯 Vision & Strategy
+Provide a secure, highly-scalable authentication and authorization system for the Laraxot ecosystem using Spatie Permissions and Laravel Fortify.
+
+## 🗓️ Timeline
+### Q1 2026: Foundation (Current)
+- **Role/Permission Mapping** - *Status: Shipped*
+- **Profile Management** - *Status: In Progress*
+- **Socialite Integration** - *Status: Planned*
+
+## 🚦 Status Overview
+| Feature | Status | Owner | Target Date |
+| :--- | :--- | :--- | :--- |
+| Core Auth | ✅ Stable | @CoreTeam | Jan 2026 |
+| Multi-factor Auth | 🏗️ In Dev | @CoreTeam | Apr 2026 |
+
+## 📂 Backlog / Future Ideas
+- Passkey (WebAuthn) support.
+- Centralized Auth across multiple Laraxot instances.
+>>>>>>> dev

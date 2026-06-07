@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # tips_and_links
 
 <!-- Contenuto migrato da _docs/tips_and_links.txt -->
@@ -76,3 +77,12 @@ https://www.igismap.com/top-10-map-direction-api-routing-libraries-navigation-fr
 
 
 
+=======
+---
+module: theme
+topic: tips-and-links
+canonical: ../../../../Themes/docs/shared-components/tips-and-links.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/tips-and-links.md
+>>>>>>> dev

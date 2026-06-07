@@ -21,6 +21,7 @@ class ListStoredEvents extends XotBaseListRecords
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'id' => TextColumn::make('id'),
             'event_class' => TextColumn::make('event_class'),
             'event_properties' => ViewColumn::make('event_properties')->view('activity::filament.tables.columns.event-properties'),
@@ -29,6 +30,11 @@ class ListStoredEvents extends XotBaseListRecords
             TextColumn::make('event_class'),
             ViewColumn::make('event_properties')->view('activity::filament.tables.columns.event-properties'),
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'id' => TextColumn::make('id'),
+            'event_class' => TextColumn::make('event_class'),
+            'event_properties' => ViewColumn::make('event_properties')->view('activity::filament.tables.columns.event-properties'),
+>>>>>>> dev
         ];
     }
 }

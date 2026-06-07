@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\User\Tests\Unit\Models;
+
+>>>>>>> dev
 use Modules\User\Models\Permission;
 use Modules\User\Tests\TestCase;
 

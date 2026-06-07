@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione
@@ -592,3 +593,12 @@ cd Modules/User
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
+=======
+---
+module: theme
+topic: model-inheritance-fixes
+canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
+>>>>>>> dev

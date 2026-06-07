@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\User\Tests\Feature\Filament;
+
+>>>>>>> dev
 use Filament\Facades\Filament;
 use Livewire\Livewire;
 use Modules\User\Filament\Resources\UserResource;

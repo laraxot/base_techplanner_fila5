@@ -37,6 +37,9 @@ class SocialProviderResource extends XotBaseResource
             'name' => TextInput::make('name')
                 ->required()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
                 ->maxLength(255),
             'scopes' => KeyValue::make('scopes'),
             'client_id' => TextInput::make('client_id')
@@ -56,6 +59,7 @@ class SocialProviderResource extends XotBaseResource
             'enabled' => Toggle::make('enabled'),
             'svg' => Textarea::make('svg')
                 ->columnSpanFull(),
+<<<<<<< HEAD
 =======
                 ->maxLength(255)
                 ->placeholder(__('fields.name.placeholder'))
@@ -91,6 +95,8 @@ class SocialProviderResource extends XotBaseResource
                 ->placeholder(__('fields.svg.placeholder'))
                 ->helperText(__('fields.svg.helper_text')),
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ];
     }
 

@@ -64,6 +64,7 @@ return [
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Geo Module Documentation](../readme.md)
 - [Factory Pattern Guidelines](../../../docs/factory-pattern.md)
 - [PHPStan Compliance Guide](../phpstan-fixes.md)
@@ -75,3 +76,9 @@ return [
 
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Geo Module Documentation](../readme.md)
+- [Factory Pattern Guidelines](../../../../docs/factory-pattern.md)
+- [PHPStan Compliance Guide](../phpstan-fixes.md)
+
+>>>>>>> dev

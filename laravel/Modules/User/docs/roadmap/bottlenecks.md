@@ -142,6 +142,9 @@
 - Documentazione aggiornata
 ## Collegamenti tra versioni di bottlenecks.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [bottlenecks.md](../../../gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/performance/bottlenecks.md)
@@ -162,6 +165,7 @@
 * [bottlenecks.md](../../../job/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../media/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../patient/project_docs/roadmap/bottlenecks.md)
+<<<<<<< HEAD
 =======
 * [bottlenecks.md](../../../Gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Xot/docs/bottlenecks.md)
@@ -184,3 +188,5 @@
 * [bottlenecks.md](../../../Media/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Patient/project_docs/roadmap/bottlenecks.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

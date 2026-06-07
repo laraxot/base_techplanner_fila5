@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Riutilizzo degli Schemi Form tra Moduli
 
 ## Principio DRY nella Definizione dei Form
@@ -95,3 +96,12 @@ $addressSchema['locality'] = Forms\Components\TextInput::make('locality')
 - [pattern-filament-pages.md](../project_docs/pattern-filament-pages.md)
 - [AddressResource](../app/Filament/Resources/AddressResource.php)
 - [StudioResource](../../<main module>/app/Filament/Resources/StudioResource.php)
+=======
+---
+module: theme
+topic: form_schema_reuse
+canonical: ../../../Themes/docs/shared-components/form-schema-reuse.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/form-schema-reuse.md
+>>>>>>> dev

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 # Xot Base Classes in Laravel Modules
@@ -64,3 +65,6 @@ The Xot base classes provide a centralized way to customize and extend functiona
 - [Patient Module - Filament Customization](../../Patient/docs/FILAMENT_CUSTOMIZATION.md)
 - [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

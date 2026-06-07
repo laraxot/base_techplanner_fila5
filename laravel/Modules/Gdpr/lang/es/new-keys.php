@@ -19,7 +19,11 @@ return [
     'Laravel tutorials' => 'tutoriales Laravel',
     'Laravel workshops' => 'talleres Laravel',
     'Laravel networking' => 'networking Laravel',
+<<<<<<< HEAD
     'LaravelPizza' => 'LaravelPizza',
+=======
+    '<nome progetto>' => '<nome progetto>',
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',

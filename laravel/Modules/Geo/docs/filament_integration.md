@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Integrazione con Filament
 
 ## Descrizione
@@ -187,3 +188,12 @@ class AddressPage extends XotBasePage
 - [Documentazione JSON Database](json-database.md)
 - [Best Practices Filament](../../../project_docs/filament-best-practices.md)
 - [Clean Code](../../../project_docs/clean-code.md) 
+=======
+---
+module: theme
+topic: filament_integration
+canonical: ../../../Themes/docs/shared-components/filament-integration-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-integration-Modules.md
+>>>>>>> dev

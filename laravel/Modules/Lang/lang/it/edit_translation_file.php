@@ -10,9 +10,13 @@ return [
             'helper_text' => 'key',
             'description' => 'key',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'data' => [
             'pippo' => [
@@ -21,12 +25,18 @@ return [
                 'placeholder' => 'data.pippo',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'pippo' => [
             'description' => 'pippo',
@@ -34,6 +44,9 @@ return [
             'placeholder' => 'pippo',
             'label' => 'pippo',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
         'pluto' => [
@@ -41,11 +54,14 @@ return [
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
+<<<<<<< HEAD
 =======
         ],
         'pluto' => [
             'description' => 'pluto',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'snapshots' => [
             'fields' => [
@@ -59,12 +75,18 @@ return [
                 ],
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'content' => [
             'snapshots' => [
@@ -425,12 +447,18 @@ return [
                 ],
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -445,6 +473,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Edit Translation File',
     'plural_label' => 'Edit Translation File (Plurale)',
     'navigation' => [
@@ -458,6 +489,9 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -2,12 +2,22 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\Geo\Tests\TestCase::class);
+=======
+namespace Modules\Geo\Tests\Unit\Datas;
+
+uses(TestCase::class);
+>>>>>>> dev
 
 use Modules\Geo\Datas\Map\IconData;
 use Modules\Geo\Datas\Map\MarkerData;
 use Modules\Geo\Datas\Map\PositionData;
 use Modules\Geo\Datas\Map\SizeData;
+<<<<<<< HEAD
+=======
+use Modules\Geo\Tests\TestCase;
+>>>>>>> dev
 
 test('IconData can be instantiated', function () {
     expect(class_exists(IconData::class))->toBeTrue();

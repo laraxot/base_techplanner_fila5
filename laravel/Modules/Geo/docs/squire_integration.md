@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Integrazione con Squire per dati geografici
 
 ## Contesto
@@ -215,3 +216,12 @@ public function getFormSchema(): array
 - [Clean Code](../../../project_docs/clean-code.md)
 
 **Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`. 
+=======
+---
+module: theme
+topic: squire_integration
+canonical: ../../../Themes/docs/shared-components/squire-integration.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/squire-integration.md
+>>>>>>> dev

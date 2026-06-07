@@ -15,7 +15,11 @@ use Filament\Schemas\Components\Tabs;
 use Filament\Schemas\Components\Tabs\Tab;
 use Illuminate\Contracts\View\View;
 use Modules\User\Models\User;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
+=======
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+>>>>>>> dev
 use Override;
 
 /**
@@ -24,7 +28,11 @@ use Override;
  * Displays upcoming absences, smart working, and transfers
  * with department filtering capabilities.
  */
+<<<<<<< HEAD
 class AttendanceOverviewWidget extends XotBaseWidget
+=======
+class AttendanceOverviewWidget extends XotBaseSchemaWidget
+>>>>>>> dev
 {
     protected static ?int $sort = 3;
 
@@ -39,7 +47,10 @@ class AttendanceOverviewWidget extends XotBaseWidget
      *
      * @return array<int, Component>
      */
+<<<<<<< HEAD
     #[Override]
+=======
+>>>>>>> dev
     public function getFormSchema(): array
     {
         return [

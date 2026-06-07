@@ -1,9 +1,12 @@
 # Array Keys in Filament Methods - Regole Obbligatorie
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-01-18
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Status**: ✅ Regola consolidata
 **Priorità**: CRITICA
 
@@ -273,7 +276,11 @@ grep -r "array<mixed" Modules/ --include="*.php"
 
 - [Filament Class Extension Rules](./filament-class-extension-rules.md) - Regole generali estensione classi
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md) - Guide PHPStan
+<<<<<<< HEAD
 - [Filament Form Schema Structure](../../../docs/filament_form_schema_structure.md) - Struttura form schema
+=======
+- [Filament Form Schema Structure](../../../../docs/filament_form_schema_structure.md) - Struttura form schema
+>>>>>>> dev
 
 ---
 

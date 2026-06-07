@@ -5,13 +5,19 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
 use Filament\Forms\Concerns\InteractsWithForms;
+=======
+use Filament\Actions\Action;
+use Filament\Actions\CreateAction;
+>>>>>>> dev
 use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
@@ -37,14 +43,35 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     /**
      * Restituisce il gruppo di navigazione (override opzionale).
      */
+=======
+use Illuminate\Contracts\Support\Htmlable;
+use Modules\Xot\Filament\Traits\HasXotForm;
+use Modules\Xot\Filament\Traits\HasXotTable;
+use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+
+/**
+ * Base page for Filament related-record managers.
+ */
+abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
+{
+    use HasXotForm;
+    use HasXotTable;
+    use NavigationLabelTrait;
+
+    protected static string $recordTitleAttribute = 'name';
+
+>>>>>>> dev
     public static function getNavigationGroup(): string
     {
         return '';
     }
 
+<<<<<<< HEAD
     /**
      * Restituisce il titolo della pagina.
      */
+=======
+>>>>>>> dev
     public function getTitle(): string
     {
         return static::transFunc(__FUNCTION__).' - '.$this->getRecordTitle();
@@ -57,6 +84,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
         return (string) $value;
     }
 
+<<<<<<< HEAD
     /**
      * Restituisce lo schema del form per i record correlati.
      *
@@ -78,6 +106,14 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     /**
      * Restituisce lo schema del form per i record correlati.
      *
+=======
+    public function schema(Schema $schema): Schema
+    {
+        return $schema->components($this->getFormSchema());
+    }
+
+    /**
+>>>>>>> dev
      * @return array<Component>
      */
     public function getFormSchema(): array
@@ -85,6 +121,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
         return [];
     }
 
+<<<<<<< HEAD
     /**
      * Definisce le colonne della tabella per la visualizzazione dei record correlati.
      * Questo metodo può essere sovrascritto nelle classi figlie.
@@ -93,6 +130,26 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      */
     #[Override]
     public function getTableColumns(): array
+=======
+    protected function getTableHeading(): Htmlable|string|null
+    {
+        return $this->getTableHeadingFromTrait();
+    }
+
+    private function getTableHeadingFromTrait(): ?string
+    {
+        $key = static::getKeyTrans('table.heading');
+        $trans = trans($key);
+
+        return is_string($trans) && $trans !== $key ? $trans : null;
+    }
+
+    /**
+     * @return array<string, TextColumn>
+     */
+    #[\Override]
+    protected function getTableColumns(): array
+>>>>>>> dev
     {
         return [
             'id' => TextColumn::make('id')->label('ID')->sortable(),
@@ -108,12 +165,18 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     }
 
     /**
+<<<<<<< HEAD
      * Definisce le azioni dell'intestazione della tabella.
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
      * @return array<string, Action>
      */
     public function getTableHeaderActions(): array
+=======
+     * @return array<string, Action>
+     */
+    protected function getTableHeaderActions(): array
+>>>>>>> dev
     {
         return [
             'create' => CreateAction::make()->label('Crea Nuovo')->disableCreateAnother(),
@@ -121,6 +184,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     }
 
     /**
+<<<<<<< HEAD
      * Definisce le azioni per ogni riga della tabella.
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
@@ -169,4 +233,17 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     }
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+     * @return array<string, Action>
+     */
+    protected function getTableActions(): array
+    {
+        return [];
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return static::transFunc(__FUNCTION__);
+    }
+>>>>>>> dev
 }

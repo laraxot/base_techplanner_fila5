@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Approfondita: laravel-shop-command-bus
 
 ## 1. Struttura delle Cartelle e Naming
@@ -64,3 +65,12 @@ $commandBus->dispatch(new CreateOrderCommand($cartId));
 - CRUD tradizionale: più semplice, meno auditabile.
 - Event sourcing: più complesso, ma audit, rollback, proiezioni flessibili.
 - Command bus: aggiunge disaccoppiamento e testabilità, ma aumenta la complessità.
+=======
+---
+module: theme
+topic: 06-analysis-laravel-shop-command-bus
+canonical: ../../../../../Themes/docs/shared-components/06-analisi-laravel-shop-command-bus.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/06-analisi-laravel-shop-command-bus.md
+>>>>>>> dev

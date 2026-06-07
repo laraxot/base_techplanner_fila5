@@ -134,6 +134,7 @@ find Modules/*/lang/ -name "*.php" -exec sed -i 's/<nome progetto>\.com/{{app_do
 
 - [module_reusability_guidelines.md](module_reusability_guidelines.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modules/Notify/docs/reusability_guidelines.md](../laravel/modules/notify/docs/reusability_guidelines.md)
 - [.cursor/rules/module_reusability_critical.md](../.cursor/rules/module_reusability_critical.md)
 
@@ -143,3 +144,8 @@ find Modules/*/lang/ -name "*.php" -exec sed -i 's/<nome progetto>\.com/{{app_do
 
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Modules/Notify/docs/reusability_guidelines.md](../laravel/modules/notify/docs/reusability_guidelines.md)
+- [.cursor/rules/module_reusability_critical.md](../.cursor/rules/module_reusability_critical.md)
+
+>>>>>>> dev

@@ -9,50 +9,75 @@ return [
             'placeholder' => 'Sprache auswählen',
             'helper_text' => 'Aktuell ausgewählte Benutzersprache',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'available_languages' => [
             'label' => 'Verfügbare Sprachen',
             'placeholder' => 'Liste verfügbarer Sprachen',
             'helper_text' => 'Für die Benutzeroberfläche verfügbare Sprachen',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'value' => [
             'label' => 'Wert',
             'placeholder' => 'Wert eingeben',
             'helper_text' => 'Übersetzungswert',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'key' => [
             'label' => 'Schlüssel',
             'placeholder' => 'Übersetzungsschlüssel eingeben',
             'helper_text' => 'Eindeutige Kennung für die Übersetzung',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'locale' => [
             'label' => 'Gebietsschema',
             'placeholder' => 'Gebietsschema auswählen',
             'helper_text' => 'Sprachgebietsschema-Code (z.B. it, en, de)',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -121,8 +146,13 @@ return [
         'description' => 'Verwalten Sie Übersetzungen und verfügbare Sprachen im System',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

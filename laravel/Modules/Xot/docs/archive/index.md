@@ -8,10 +8,14 @@ Questo documento fornisce un indice della documentazione del modulo Xot, organiz
 - [Base Classes](./base_classes.md) - Classi base
 - [Service Providers](./service_providers.md) - Provider di servizi
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Volt Folio Best Practices](./volt_folio_best_practices.md) - Best practices per Volt e Folio
 =======
 - [Volt Folio Best Practices](./VOLT_FOLIO_BEST_PRACTICES.md) - Best practices per Volt e Folio
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Volt Folio Best Practices](./volt_folio_best_practices.md) - Best practices per Volt e Folio
+>>>>>>> dev
 
 ## Filament
 - [Filament Integration](./filament_integration.md) - Integrazione con Filament
@@ -26,6 +30,7 @@ Questo documento fornisce un indice della documentazione del modulo Xot, organiz
 ## Testing e Quality
 - [Testing](./testing.md) - Testing e quality assurance (usare Pest come test runner)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices](./best-practices.md) - Linee guida generali
 - [Security](./security.md) - Sicurezza e hardening
 - [PHPStan Level 10](./phpstan_livello10_linee_guida.md) - Linee guida PHPStan livello 10
@@ -34,10 +39,16 @@ Questo documento fornisce un indice della documentazione del modulo Xot, organiz
 - [Security](./security.md) - Sicurezza e hardening
 - [PHPStan Level 10](./PHPSTAN_LIVELLO10_LINEE_GUIDA.md) - Linee guida PHPStan livello 10
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Best Practices](./best-practices.md) - Linee guida generali
+- [Security](./security.md) - Sicurezza e hardening
+- [PHPStan Level 10](./phpstan_livello10_linee_guida.md) - Linee guida PHPStan livello 10
+>>>>>>> dev
 
 ## Documentazione Tecnica
 - [Roadmap](./roadmap.md) - Piano di sviluppo futuro
 - [Bottlenecks](./bottlenecks.md) - Analisi performance e ottimizzazioni
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Module Structure](./module_structure.md) - Struttura moduli
 - [Conflitti Merge Risolti](./conflitti_merge_risolti.md) - Documentazione conflitti risolti
@@ -45,6 +56,10 @@ Questo documento fornisce un indice della documentazione del modulo Xot, organiz
 - [Module Structure](./MODULE_STRUCTURE.md) - Struttura moduli
 - [Conflitti Merge Risolti](./CONFLITTI_MERGE_RISOLTI.md) - Documentazione conflitti risolti
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Module Structure](./module_structure.md) - Struttura moduli
+- [Conflitti Merge Risolti](./conflitti_merge_risolti.md) - Documentazione conflitti risolti
+>>>>>>> dev
 
 ## Link Esterni
 - [Laravel Framework](https://laravel.com/project_docs/12.x)

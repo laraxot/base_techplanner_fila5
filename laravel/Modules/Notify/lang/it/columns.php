@@ -17,6 +17,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Columns',
     'plural_label' => 'Columns (Plurale)',
     'navigation' => [
@@ -61,6 +64,9 @@ return [
             'label' => 'Elimina Columns',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

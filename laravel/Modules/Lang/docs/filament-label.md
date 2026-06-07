@@ -20,6 +20,7 @@
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [docs root](../../../../docs/actions.md)
 - [docs Xot](../../../xot/docs/module_namespace_rules.md)
 
@@ -50,3 +51,8 @@
 - [docs root](../../../../docs/actions.md)
 - [docs Xot](../../../Xot/docs/MODULE_NAMESPACE_RULES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [docs root](../../../../../docs/actions.md)
+- [docs Xot](../../../xot/docs/module_namespace_rules.md)
+
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -279,3 +280,12 @@ php artisan user:benchmark  # Target: < 100ms
 =======
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: optimization_recommendations
+canonical: ../../../Themes/docs/shared-components/optimization_recommendations.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/optimization_recommendations.md
+>>>>>>> dev

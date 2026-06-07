@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Guida alla Struttura Corretta delle Directory nei Moduli Laraxot <nome progetto>
 
 ## Panoramica
@@ -122,3 +123,12 @@ Per correggere automaticamente la struttura delle directory, utilizza lo script 
 3. **Compatibilità con PHPStan**: Evita errori di classi non trovate durante l'analisi statica
 4. **Manutenibilità**: Struttura coerente e prevedibile per tutti i moduli
 5. **Chiarezza**: Separazione netta tra codice applicativo e supporto (config, routes, ecc.)
+=======
+---
+module: theme
+topic: directory-structure-guide
+canonical: ../../../../../Themes/docs/shared-components/directory-structure-guide.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/directory-structure-guide.md
+>>>>>>> dev

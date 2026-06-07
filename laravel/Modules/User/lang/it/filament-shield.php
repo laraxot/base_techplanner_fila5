@@ -25,6 +25,9 @@ return [
     'custom' => 'Permessi Personalizzati',
     'forbidden' => 'Non hai i permessi di accesso',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'name' => 'Filament Shield',
         'plural' => 'Filament Shield',
@@ -69,6 +72,7 @@ return [
             'label' => 'Elimina Filament Shield',
         ],
     ],
+<<<<<<< HEAD
 =======
     'navigation' => [],
     'label' => '',
@@ -76,4 +80,6 @@ return [
     'fields' => [],
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

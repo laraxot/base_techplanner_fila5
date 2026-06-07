@@ -10,6 +10,7 @@ class ExecuteTaskAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     public function execute(string $_task_id): string
     {
         /*
@@ -28,5 +29,14 @@ class ExecuteTaskAction
         dddx('wip');
 
         return 'WIP';
+=======
+    public function execute(string $taskId): string
+    {
+        // TODO: Implement task execution
+        // See ROADMAP-2026.md Phase 1 - Critical Fixes
+        throw new \BadMethodCallException(
+            'Method ExecuteTaskAction::execute() not implemented yet. See ROADMAP-2026.md'
+        );
+>>>>>>> dev
     }
 }

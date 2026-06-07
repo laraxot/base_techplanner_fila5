@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 <x-layouts.main>
     <x-slot name="beforeMain">
         <x-section slug="header"/>
@@ -10,6 +13,7 @@
         <x-section slug="footer"/>
     </x-slot>
 </x-layouts.main>
+<<<<<<< HEAD
 =======
 @props([
     'title' => '',
@@ -88,3 +92,5 @@
     </body>
 </html>
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

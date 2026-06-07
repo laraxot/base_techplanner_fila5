@@ -9,6 +9,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -27,11 +30,14 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         'name' => 'Nome',
         'phone' => 'Telefono',
         'email' => 'Email',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'actions' => [
         'register_tenant' => [
@@ -39,10 +45,15 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Tenancy',
     'plural_label' => 'Tenancy (Plurale)',
 =======
     'label' => '',
     'plural_label' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Tenancy',
+    'plural_label' => 'Tenancy (Plurale)',
+>>>>>>> dev
 ];

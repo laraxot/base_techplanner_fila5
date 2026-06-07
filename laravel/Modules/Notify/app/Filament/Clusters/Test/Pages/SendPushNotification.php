@@ -11,10 +11,13 @@ use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -32,6 +35,7 @@ use Webmozart\Assert\Assert;
 use function Safe\json_encode;
 
 /**
+<<<<<<< HEAD
  * @property \Filament\Schemas\Schema $notificationForm
  */
 <<<<<<< HEAD
@@ -43,6 +47,12 @@ class SendPushNotification extends XotBasePage implements HasForms
     use InteractsWithForms;
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+ * @property Schema $notificationForm
+ */
+class SendPushNotification extends XotBasePage
+{
+>>>>>>> dev
     // use NavigationLabelTrait;
 
     public ?array $notificationData = [];
@@ -191,7 +201,12 @@ class SendPushNotification extends XotBasePage implements HasForms
         // Verifichiamo che deviceToken sia una stringa non vuota (per soddisfare il tipo non-empty-string)
         Assert::stringNotEmpty($deviceToken, 'Il token del dispositivo non può essere vuoto');
 
+<<<<<<< HEAD
         $message = CloudMessage::withTarget('token', $deviceToken)
+=======
+        $message = CloudMessage::new()
+            ->withToken($deviceToken)
+>>>>>>> dev
             ->withHighestPossiblePriority()
             ->withData($messageData);
 

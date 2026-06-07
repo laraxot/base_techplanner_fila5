@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Link alla Documentazione Root
 
 - [Documentazione Principale](../../../project_docs/readme.md)
@@ -8,3 +9,12 @@
 * [root-links.md](laravel/modules/cms/project_docs/root-links.md)
 * [root-links.md](laravel/themes/one/project_docs/root-links.md)
 
+=======
+---
+module: theme
+topic: root_links
+canonical: ../../../Themes/docs/shared-components/root-links.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/root-links.md
+>>>>>>> dev

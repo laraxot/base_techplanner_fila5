@@ -89,77 +89,119 @@ return [
             'placeholder' => 'Inserisci il tuo nome',
             'help' => 'Il tuo nome di battesimo',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'last_name' => [
             'label' => 'Cognome',
             'placeholder' => 'Inserisci il tuo cognome',
             'help' => 'Il tuo cognome di famiglia',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci il tuo indirizzo email',
             'help' => 'Indirizzo email valido che utilizzerai per accedere',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Inserisci una password sicura',
             'help' => 'Minimo 8 caratteri con lettere, numeri e simboli',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
             'placeholder' => 'Ripeti la password',
             'help' => 'Inserisci nuovamente la password per confermarla',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'phone' => [
             'label' => 'Telefono',
             'placeholder' => 'Inserisci il numero di telefono',
             'help' => 'Numero di telefono per essere contattato',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'address' => [
-            'label' => 'Indirizzo',
-            'placeholder' => 'Inserisci il tuo indirizzo completo',
-            'help' => 'Via/Piazza e numero civico di residenza',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'address' => [
+            'label' => 'Indirizzo',
+            'placeholder' => 'Inserisci il tuo indirizzo completo',
+            'help' => 'Via/Piazza e numero civico di residenza',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'city' => [
             'label' => 'Stadt',
@@ -184,44 +226,68 @@ return [
             'placeholder' => 'Inserisci il CAP',
             'help' => 'Codice di avviamento postale',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'country' => [
             'label' => 'Paese',
             'placeholder' => 'Seleziona il paese',
             'help' => 'Paese di residenza',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'fiscal_code' => [
             'label' => 'Codice Fiscale',
             'placeholder' => 'Inserisci il codice fiscale',
             'help' => 'Codice fiscale italiano (16 caratteri)',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'birth_date' => [
-            'label' => 'Data di Nascita',
-            'placeholder' => 'Seleziona la data di nascita',
-            'help' => 'La tua data di nascita nel formato gg/mm/aaaa',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'birth_date' => [
+            'label' => 'Data di Nascita',
+            'placeholder' => 'Seleziona la data di nascita',
+            'help' => 'La tua data di nascita nel formato gg/mm/aaaa',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'birth_place' => [
             'label' => 'Geburtsort',
@@ -232,196 +298,302 @@ return [
             'icon' => 'heroicon-o-map-pin',
             'color' => 'primary',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'gender' => [
             'label' => 'Genere',
             'placeholder' => 'Seleziona il genere',
             'help' => 'Genere anagrafico',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'nationality' => [
             'label' => 'Nazionalità',
             'placeholder' => 'Inserisci la nazionalità',
             'help' => 'Nazionalità secondo il documento d\'identità',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'document_type' => [
             'label' => 'Tipo Documento',
             'placeholder' => 'Seleziona il tipo di documento',
             'help' => 'Carta d\'identità, patente, passaporto',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'document_number' => [
             'label' => 'Numero Documento',
             'placeholder' => 'Inserisci il numero del documento',
             'help' => 'Numero identificativo del documento',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'document_issue_date' => [
             'label' => 'Data Rilascio',
             'placeholder' => 'Seleziona la data di rilascio',
             'help' => 'Data in cui il documento è stato rilasciato',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'document_expiry_date' => [
             'label' => 'Data Scadenza',
             'placeholder' => 'Seleziona la data di scadenza',
             'help' => 'Data di scadenza del documento',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'document_issuing_authority' => [
             'label' => 'Autorità Rilascio',
             'placeholder' => 'Inserisci l\'autorità che ha rilasciato il documento',
             'help' => 'Comune, questura o altro ente che ha rilasciato il documento',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'document_file' => [
             'label' => 'File Documento',
             'placeholder' => 'Carica una scansione del documento',
             'help' => 'Scansione fronte/retro del documento in formato PDF o JPG',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'photo' => [
             'label' => 'Foto Profilo',
             'placeholder' => 'Carica una foto profilo',
             'help' => 'Foto recente per il profilo, formato quadrato consigliato',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'cv' => [
             'label' => 'Curriculum Vitae',
             'placeholder' => 'Carica il tuo CV',
             'help' => 'Curriculum vitae aggiornato in formato PDF',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'bio' => [
             'label' => 'Biografia',
             'placeholder' => 'Scrivi una breve biografia',
             'help' => 'Descrizione di te stesso e delle tue competenze',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'professional_title' => [
             'label' => 'Titolo Professionale',
             'placeholder' => 'Inserisci il tuo titolo professionale',
             'help' => 'La tua qualifica o posizione professionale principale',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'terms' => [
             'label' => 'Termini e Condizioni',
             'placeholder' => 'Accetta i termini e condizioni',
             'help' => 'Devi accettare i termini e condizioni per procedere',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'privacy' => [
             'label' => 'Informativa Privacy',
             'placeholder' => 'Accetta l\'informativa sulla privacy',
             'help' => 'Erforderliche Zustimmung zur Verarbeitung personenbezogener Daten',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'marketing' => [
             'label' => 'Comunicazioni Marketing',
             'placeholder' => 'Accetta di ricevere comunicazioni promozionali',
             'help' => 'Consenso facoltativo per ricevere newsletter e promozioni',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'moderation_status' => [
             'label' => 'Stato Moderazione',
             'placeholder' => 'Stato attuale della moderazione',
             'help' => 'Lo stato di verifica del profilo da parte degli amministratori',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'moderation_notes' => [
-            'label' => 'Note Moderazione',
-            'placeholder' => 'Note del moderatore',
-            'help' => 'Eventuali annotazioni del team di moderazione',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'moderation_notes' => [
+            'label' => 'Note Moderazione',
+            'placeholder' => 'Note del moderatore',
+            'help' => 'Eventuali annotazioni del team di moderazione',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -466,8 +638,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 WINDOWS
 
 https://www.gyan.dev/ffmpeg/builds/
@@ -25,3 +26,12 @@ FFPROBE_PATH=c:/ProgramData/chocolatey/bin/ffprobe.exe
 
 -------------------------------------------------------------
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: ffmpeg
+canonical: ../../../Themes/docs/shared-components/ffmpeg.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ffmpeg.txt
+>>>>>>> dev

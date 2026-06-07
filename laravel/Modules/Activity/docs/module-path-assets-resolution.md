@@ -1,10 +1,14 @@
 # Activity Module - Path Assets Resolution
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Creazione**: [DATE]
 =======
 **Data Creazione**: 2026-01-02
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data Creazione**: [DATE]
+>>>>>>> dev
 **Status**: ✅ RESOLVED
 **Versione**: 1.0.0
 
@@ -60,12 +64,17 @@ Il problema è stato risolto a livello di framework (Xot) con:
 ## 🔗 Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Xot Module Path Generation Philosophy](../xot/docs/module-path-generation-philosophy.md)
 - [Xot Module Path Error Resolution](../xot/docs/module-path-error-resolution.md)
 =======
 - [Xot Module Path Generation Philosophy](../Xot/docs/module-path-generation-philosophy.md)
 - [Xot Module Path Error Resolution](../Xot/docs/module-path-error-resolution.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Xot Module Path Generation Philosophy](../xot/docs/module-path-generation-philosophy.md)
+- [Xot Module Path Error Resolution](../xot/docs/module-path-error-resolution.md)
+>>>>>>> dev
 - [Activity Philosophy](./philosophy.md)
 
 ---

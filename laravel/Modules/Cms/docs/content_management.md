@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistema di Gestione Contenuti
 
 ## Introduzione
@@ -114,3 +115,12 @@ Questa documentazione è parte del sistema di documentazione di <main module>. P
 * [content-management.md](laravel/modules/cms/project_docs/content-management.md)
 * [content-management.md](laravel/modules/cms/project_docs/roadmap/features/content-management.md)
 
+=======
+---
+module: theme
+topic: content_management
+canonical: ../../../Themes/docs/shared-components/content-management.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/content-management.md
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Error Analysis and Resolution Roadmap - User Module
 
 ## Summary
@@ -50,3 +51,12 @@ This document outlines the roadmap for resolving PHPStan errors in the User modu
 - All Git conflict markers removed
 - Application functions properly
 - All tests pass
+=======
+---
+module: theme
+topic: phpstan-error-roadmap
+canonical: ../../../Themes/docs/shared-components/phpstan-error-roadmap.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-error-roadmap.md
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filosofia Laraxot: Risoluzione Errori PHPStan
 
 **Data Creazione**: 2025-01-22
@@ -242,3 +243,12 @@ public function getTableBulkActions()
 ---
 
 *Ricorda: La type safety è sacra. Non profanarla mai.*
+=======
+---
+module: theme
+topic: phpstan-errors-philosophy
+canonical: ../../../Themes/docs/shared-components/phpstan-errors-philosophy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-philosophy.md
+>>>>>>> dev

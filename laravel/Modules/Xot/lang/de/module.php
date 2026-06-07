@@ -42,11 +42,17 @@ return [
                 ],
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'details' => [
             'dependencies' => [
@@ -76,12 +82,18 @@ return [
                 'help' => 'Pagina web del modulo',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'system' => [
             'order' => [
@@ -98,12 +110,18 @@ return [
                 'help' => 'Namespace PHP del modulo',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'timestamps' => [
             'created_at' => [
@@ -115,12 +133,18 @@ return [
                 'help' => 'Data dell\'ultimo aggiornamento',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -202,8 +226,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

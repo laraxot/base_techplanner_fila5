@@ -1,10 +1,14 @@
 # Patient Routes Tests Deletion - Reasoning
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Date**: [DATE]
 =======
 **Date**: 2026-01-10
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Date**: [DATE]
+>>>>>>> dev
 **Issue**: PatientCreateRouteTest and PatientRefertoRouteTest failing with 404
 **Decision**: DELETE both test files
 
@@ -124,10 +128,14 @@ Same applies here:
 
 - `laravel/CLAUDE.md` - Project purpose and domain
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `laravel/docs/testing-session-summary-[DATE].md` - Testing philosophy
 =======
 - `laravel/docs/testing-session-summary-2026-01-09.md` - Testing philosophy
 >>>>>>> 4b6b99016 (first commit)
+=======
+- `laravel/docs/testing-session-summary-[DATE].md` - Testing philosophy
+>>>>>>> dev
 - `Modules/Job/docs/schedule-test-wrong-schema.md` - Precedent for deleting wrong tests
 - `Modules/Xot/docs/testing-philosophy-unified.md` - "Delete fiction" principle
 

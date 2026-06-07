@@ -25,16 +25,25 @@ return [
             'label' => 'Password Attuale',
             'validation_attribute' => 'password_attuale',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'password' => [
             'label' => 'Nuova Password',
             'validation_attribute' => 'password',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -44,11 +53,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'reset_password' => 'Reimposta Password',
@@ -77,10 +89,14 @@ return [
         'column_not_found' => [
             'title' => 'Colonna Non Trovata',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'body' => 'La colonna \\":column_name\\" o la colonna della password \\":password_column_name\\" non è stata trovata nella tabella :table_name.',
 =======
             'body' => 'La colonna \":column_name\" o la colonna della password \":password_column_name\" non è stata trovata nella tabella :table_name.',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'body' => 'La colonna \\":column_name\\" o la colonna della password \\":password_column_name\\" non è stata trovata nella tabella :table_name.',
+>>>>>>> dev
         ],
         'password_reset' => [
             'success' => 'Password Reimpostata con Successo',
@@ -96,10 +112,14 @@ return [
     ],
     'exceptions' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'column_not_found' => 'La colonna \\":column_name\\" o la colonna della password \\":password_column_name\\" non è stata trovata nella tabella \\":table_name\\". Pubblica le migrazioni e eseguile, se l\'errore persiste, pubblica il file di configurazione e aggiorna i valori di table_name, column_name, e password_column_name.',
 =======
         'column_not_found' => 'La colonna \":column_name\" o la colonna della password \":password_column_name\" non è stata trovata nella tabella \":table_name\". Pubblica le migrazioni e eseguile, se l\'errore persiste, pubblica il file di configurazione e aggiorna i valori di table_name, column_name, e password_column_name.',
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'column_not_found' => 'La colonna \\":column_name\\" o la colonna della password \\":password_column_name\\" non è stata trovata nella tabella \\":table_name\\". Pubblica le migrazioni e eseguile, se l\'errore persiste, pubblica il file di configurazione e aggiorna i valori di table_name, column_name, e password_column_name.',
+>>>>>>> dev
     ],
     'validation' => [
         'invalid_code' => 'Il codice inserito non è valido.',
@@ -123,8 +143,13 @@ return [
         'icon' => 'user-user-otp',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

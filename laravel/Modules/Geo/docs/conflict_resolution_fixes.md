@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risoluzione Conflitti Git - Modulo Geo
 
 ## Panoramica
@@ -54,3 +55,12 @@ use Filament\Tables\Table;
 - [Script Risoluzione Conflitti](../../../bashscripts/docs/conflict_resolution_script_improvements.md)
 - [Report Completo PHPStan Fixes](../../../bashscripts/docs/phpstan_fixes_comprehensive_report.md)
 
+=======
+---
+module: theme
+topic: conflict_resolution_fixes
+canonical: ../../../Themes/docs/shared-components/conflict-resolution-fixes-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/conflict-resolution-fixes-Modules.md
+>>>>>>> dev

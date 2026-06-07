@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Analisi Implementazione Comune con Laravel Sushi
 
 ## Indice
@@ -360,3 +361,12 @@ Per il modello `Comune.php`, Sushi rappresenta una scelta eccellente (valutazion
 
 #### Valutazione complessiva: 95% positiva
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: sushi-implementation
+canonical: ../../../Themes/docs/shared-components/sushi-implementation-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/sushi-implementation-analysis.md
+>>>>>>> dev

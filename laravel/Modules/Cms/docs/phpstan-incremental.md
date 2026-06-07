@@ -69,10 +69,14 @@ Lo script opera sul file `phpstan.neon` nella directory principale. La configura
    // Prima
    $result = $object->nonExistentMethod();
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+   
+>>>>>>> dev
    // Dopo
    $result = $object->existingMethod();
    ```
@@ -82,10 +86,14 @@ Lo script opera sul file `phpstan.neon` nella directory principale. La configura
    // Prima
    $value = $object->nonExistentProperty;
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+   
+>>>>>>> dev
    // Dopo
    $value = $object->existingProperty;
    ```
@@ -95,10 +103,14 @@ Lo script opera sul file `phpstan.neon` nella directory principale. La configura
    // Prima
    public function process($data) {
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+   
+>>>>>>> dev
    // Dopo
    public function process(array $data): void {
    ```
@@ -108,10 +120,14 @@ Lo script opera sul file `phpstan.neon` nella directory principale. La configura
    // Prima
    public function getData() {
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+   
+>>>>>>> dev
    // Dopo
    public function getData(): array {
    ```
@@ -119,7 +135,11 @@ Lo script opera sul file `phpstan.neon` nella directory principale. La configura
 ## Conclusione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 L'analisi incrementale ti consente di migliorare gradualmente la qualità del codice, affrontando i problemi in ordine di importanza e complessità. Una volta raggiunto il livello 9, il codice sarà conforme agli standard più elevati di qualità e tipo-sicurezza. 
 =======
 L'analisi incrementale ti consente di migliorare gradualmente la qualità del codice, affrontando i problemi in ordine di importanza e complessità. Una volta raggiunto il livello 9, il codice sarà conforme agli standard più elevati di qualità e tipo-sicurezza.
 >>>>>>> 4b6b99016 (first commit)
+=======
+L'analisi incrementale ti consente di migliorare gradualmente la qualità del codice, affrontando i problemi in ordine di importanza e complessità. Una volta raggiunto il livello 9, il codice sarà conforme agli standard più elevati di qualità e tipo-sicurezza. 
+>>>>>>> dev

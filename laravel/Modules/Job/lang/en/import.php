@@ -22,96 +22,144 @@ return [
             'tooltip' => 'Identificativo unico dell\'importazione',
             'placeholder' => 'ID Importazione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'file' => [
             'label' => 'File',
             'tooltip' => 'Seleziona il file da importare',
             'placeholder' => 'Scegli un file',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'source' => [
             'label' => 'Sorgente',
             'tooltip' => 'Indica la sorgente del file importato',
             'placeholder' => 'Sorgente del file',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'format' => [
             'label' => 'Formato',
             'tooltip' => 'Formato del file importato (CSV, Excel, etc.)',
             'placeholder' => 'Seleziona formato',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'rows' => [
             'label' => 'Righe',
             'tooltip' => 'Numero totale di righe nel file',
             'placeholder' => 'Numero righe',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'processed' => [
             'label' => 'Righe Processate',
             'tooltip' => 'Numero di righe processate con successo',
             'placeholder' => 'Righe processate',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'failed' => [
             'label' => 'Righe Fallite',
             'tooltip' => 'Numero di righe che hanno causato errore durante l\'importazione',
             'placeholder' => 'Righe fallite',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'started_at' => [
             'label' => 'Iniziato il',
             'tooltip' => 'Data e ora di inizio dell\'importazione',
             'placeholder' => 'Data inizio importazione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'completed_at' => [
             'label' => 'Completato il',
             'tooltip' => 'Data e ora di completamento dell\'importazione',
             'placeholder' => 'Data completamento importazione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'options' => [
             'label' => 'Opzioni',
             'tooltip' => 'Impostazioni avanzate per l\'importazione',
             'placeholder' => 'Seleziona le opzioni',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -126,6 +174,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'toggleColumns' => [
@@ -134,6 +183,8 @@ return [
         'reorderRecords' => [
             'label' => 'reorderRecords',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'formats' => [
@@ -285,8 +336,13 @@ return [
         'xml' => 'XML',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

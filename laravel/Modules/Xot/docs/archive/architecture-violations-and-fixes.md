@@ -726,27 +726,38 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 
 ### **Documentazione Moduli**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Cms Architecture](../../cms/docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../user/docs/traits_complete_guide.md)
 =======
 - [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../User/docs/traits_complete_guide.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Cms Architecture](../../cms/docs/architecture-xotdata-pattern.md)
+- [User Module Traits](../../user/docs/traits_complete_guide.md)
+>>>>>>> dev
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Cms Architecture](../../cms/project_docs/architecture-xotdata-pattern.md)
 - [Cms Architecture](../../cms/project_docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../user/project_docs/traits_complete_guide.md)
 - [User Module Traits](../../user/project_docs/traits_complete_guide.md)
+<<<<<<< HEAD
 =======
 - [Cms Architecture](../../Cms/project_docs/architecture-xotdata-pattern.md)
 - [Cms Architecture](../../Cms/project_docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../User/project_docs/traits_complete_guide.md)
 - [User Module Traits](../../User/project_docs/traits_complete_guide.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 - [Testing Strategy](../../<nome progetto>/project_docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/project_docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
@@ -763,8 +774,13 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
+<<<<<<< HEAD
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
+=======
+- [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
+>>>>>>> dev
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)

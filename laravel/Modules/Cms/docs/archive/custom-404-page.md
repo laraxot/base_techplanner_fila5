@@ -31,11 +31,15 @@ Depending on where your site is hosted, you may need to configure your server to
 
 ## Collegamenti tra versioni di custom-404-page.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [custom-404-page.md](laravel/modules/gdpr/docs/custom-404-page.md)
 * [custom-404-page.md](laravel/modules/xot/docs/custom-404-page.md)
 * [custom-404-page.md](laravel/modules/ui/docs/custom-404-page.md)
 * [custom-404-page.md](laravel/modules/tenant/docs/it/custom-404-page.md)
 * [custom-404-page.md](laravel/modules/cms/docs/custom-404-page.md)
+<<<<<<< HEAD
 =======
 * [custom-404-page.md](laravel/Modules/Gdpr/docs/custom-404-page.md)
 * [custom-404-page.md](laravel/Modules/Xot/docs/custom-404-page.md)
@@ -43,3 +47,5 @@ Depending on where your site is hosted, you may need to configure your server to
 * [custom-404-page.md](laravel/Modules/Tenant/docs/it/custom-404-page.md)
 * [custom-404-page.md](laravel/Modules/Cms/docs/custom-404-page.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

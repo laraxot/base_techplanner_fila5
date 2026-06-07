@@ -49,6 +49,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Pages',
     'plural_label' => 'Pages (Plurale)',
     'navigation' => [
@@ -93,6 +96,9 @@ return [
             'label' => 'Elimina Pages',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

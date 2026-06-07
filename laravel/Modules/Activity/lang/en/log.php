@@ -26,6 +26,9 @@ return [
             'info' => 'Info',
             'debug' => 'Debug',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -36,21 +39,30 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         ],
         'message' => 'Message',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         'context' => [
             'label' => 'Context',
             'exception' => 'Exception',
             'stack_trace' => 'Stack Trace',
             'additional' => 'Additional Info',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'channel' => [
             'label' => 'Channel',
@@ -60,6 +72,9 @@ return [
             'database' => 'Database',
             'queue' => 'Queues',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -76,11 +91,14 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         ],
         'datetime' => 'Date and Time',
         'environment' => 'Environment',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'filters' => [
         'level' => 'Level',
@@ -114,8 +132,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

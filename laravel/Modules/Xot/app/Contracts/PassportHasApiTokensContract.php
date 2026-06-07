@@ -48,14 +48,21 @@ interface PassportHasApiTokensContract
     /**
      * Create a new personal access token for the user.
      *
+<<<<<<< HEAD
      * @param  array<int, string>  $scopes
+=======
+     * @param array<int, string> $scopes
+>>>>>>> dev
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;
 
     /**
      * Set the current access token for the user.
      *
+<<<<<<< HEAD
      *
+=======
+>>>>>>> dev
      * @return $this
      */
     public function withAccessToken(Token|TransientToken|null $accessToken): static;

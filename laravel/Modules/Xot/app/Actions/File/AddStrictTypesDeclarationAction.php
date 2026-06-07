@@ -5,8 +5,11 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\File;
 
 use Illuminate\Support\Facades\File;
+<<<<<<< HEAD
 use InvalidArgumentException;
 use RuntimeException;
+=======
+>>>>>>> dev
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -22,7 +25,11 @@ class AddStrictTypesDeclarationAction
     public function execute(string $filePath): void
     {
         if (! File::exists($filePath)) {
+<<<<<<< HEAD
             throw new InvalidArgumentException("Il file {$filePath} non esiste");
+=======
+            throw new \InvalidArgumentException("Il file {$filePath} non esiste");
+>>>>>>> dev
         }
 
         $content = File::get($filePath);
@@ -34,19 +41,32 @@ class AddStrictTypesDeclarationAction
 
         // Trova la posizione del tag di apertura PHP
         $phpTagPos = strpos($content, '<?php');
+<<<<<<< HEAD
         if ($phpTagPos === false) {
             throw new RuntimeException("Il file {$filePath} non ha un tag di apertura PHP valido");
+=======
+        if (false === $phpTagPos) {
+            throw new \RuntimeException("Il file {$filePath} non ha un tag di apertura PHP valido");
+>>>>>>> dev
         }
 
         // Trova la prima riga non vuota dopo il tag PHP
         $lines = explode("\n", $content);
         $firstNonEmptyLine = 0;
         foreach ($lines as $i => $line) {
+<<<<<<< HEAD
             if ($i === 0) {
                 continue; // Salta la prima riga che contiene <?php
             }
             $trimmedLine = trim($line);
             if ($trimmedLine !== '') {
+=======
+            if (0 === $i) {
+                continue; // Salta la prima riga che contiene <?php
+            }
+            $trimmedLine = trim($line);
+            if ('' !== $trimmedLine) {
+>>>>>>> dev
                 $firstNonEmptyLine = $i;
                 break;
             }

@@ -5,10 +5,14 @@ declare(strict_types=1);
 return [
     'accepted' => 'Le champ :attribute doit être accepté.',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'active_url' => 'Le champ :attribute n\'est pas une URL valide.',
 =======
     'active_url' => "Le champ :attribute n'est pas une URL valide.",
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'active_url' => 'Le champ :attribute n\'est pas une URL valide.',
+>>>>>>> dev
     'after' => 'Le champ :attribute doit être une date postérieure à :date.',
     'after_or_equal' => 'The :attribute must be a date after or equal to :date.',
     'alpha' => 'Le champ :attribute ne peut contenir que des lettres.',
@@ -26,10 +30,14 @@ return [
     'boolean' => 'Le champ :attribute doit être vrai ou faux.',
     'confirmed' => 'La confirmation du champ :attribute ne correspond pas.',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'date' => 'Le champ :attribute n\'est pas une date valide.',
 =======
     'date' => "Le champ :attribute n'est pas une date valide.",
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'date' => 'Le champ :attribute n\'est pas une date valide.',
+>>>>>>> dev
     'date_format' => 'Le champ :attribute ne correspond pas au format :format.',
     'different' => 'Le champ :attribute et le champ :other doivent être différents.',
     'digits' => 'Le champ :attribute doit contenir :digits chiffres.',
@@ -38,10 +46,14 @@ return [
     'distinct' => 'The :attribute field has a duplicate value.',
     'email' => 'Le champ :attribute doit être une adresse email valide.',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'exists' => 'Le champ :attribute n\'existe pas.',
 =======
     'exists' => "Le champ :attribute n'existe pas.",
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'exists' => 'Le champ :attribute n\'existe pas.',
+>>>>>>> dev
     'file' => 'Le champ :attribute doit être un fichier.',
     'filled' => 'Le champ :attribute est obligatoire.',
     'image' => 'Le champ :attribute doit être une image.',
@@ -73,12 +85,17 @@ return [
     'required_with' => 'Le champ :attribute est obligatoire lorsque :values a une valeur.',
     'required_with_all' => 'Le champ :attribute est obligatoire lorsque :values existe.',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'required_without' => 'Le champ :attribute est obligatoire lorsque :values n\'a pas de valeur.',
     'required_without_all' => 'Le champ :attribute est obligatoire lorsque :values n\'existe pas.',
 =======
     'required_without' => "Le champ :attribute est obligatoire lorsque :values n'a pas de valeur.",
     'required_without_all' => "Le champ :attribute est obligatoire lorsque :values n'existe pas.",
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'required_without' => 'Le champ :attribute est obligatoire lorsque :values n\'a pas de valeur.',
+    'required_without_all' => 'Le champ :attribute est obligatoire lorsque :values n\'existe pas.',
+>>>>>>> dev
     'same' => 'Le champ :attribute et :other doivent être identiques.',
     'size' => [
         'numeric' => 'Le champ :attribute doit avoir une taille de :size.',
@@ -139,6 +156,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -152,6 +172,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

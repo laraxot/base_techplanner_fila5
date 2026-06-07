@@ -142,12 +142,16 @@ function createTestUser(array $attributes = []): UserContract
 
 ### **Pattern Architetturali**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [laravel/Modules/Cms/docs/architecture-xotdata-pattern.md](../laravel/modules/cms/docs/architecture-xotdata-pattern.md)
 - [laravel/Modules/Xot/docs/architecture-violations-and-fixes.md](../laravel/modules/xot/docs/architecture-violations-and-fixes.md)
 
 ### **Sistema Folio/Volt**
 - [laravel/Themes/One/docs/folio-pages.md](../laravel/themes/one/docs/folio-pages.md)
 - [laravel/Themes/One/docs/routing_with_folio_volt.md](../laravel/themes/one/docs/routing_with_folio_volt.md)
+<<<<<<< HEAD
 =======
 - [laravel/Modules/Cms/docs/architecture-xotdata-pattern.md](../laravel/Modules/Cms/docs/architecture-xotdata-pattern.md)
 - [laravel/Modules/Xot/docs/architecture-violations-and-fixes.md](../laravel/Modules/Xot/docs/architecture-violations-and-fixes.md)
@@ -156,6 +160,8 @@ function createTestUser(array $attributes = []): UserContract
 - [laravel/Themes/One/docs/folio-pages.md](../laravel/Themes/One/docs/folio-pages.md)
 - [laravel/Themes/One/docs/routing_with_folio_volt.md](../laravel/Themes/One/docs/routing_with_folio_volt.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### **Test Esistenti di Riferimento**
 - [laravel/Modules/User/tests/Feature/Filament/Widgets/LoginWidgetTest.php](../laravel/Modules/User/tests/Feature/Filament/Widgets/LoginWidgetTest.php)
@@ -176,6 +182,9 @@ function createTestUser(array $attributes = []): UserContract
 4. **SEMPRE** approfondire prima di agire
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Dicembre 2024 - Analisi completa struttura login*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

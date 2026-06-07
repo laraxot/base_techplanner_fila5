@@ -1,12 +1,18 @@
 # Laravel Passport Integration - Architettura Completa
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **Generato**: [DATE]
 =======
 > **Generato**: 2026-01-07
 >>>>>>> 4b6b99016 (first commit)
 > **Filosofia**: L'Architetto Laraxot (Vincitore del Dibattito Interno)
 > **PHPStan Status**: ✅ Level MAX Compliant (Zero Errori)
+=======
+> **Generato**: [DATE]
+> **Filosofia**: L'Architetto Laraxot (Vincitore del Dibattito Interno)
+> **PHPStan Status**: ✅ Modulo `User` verificato pulito il 2026-03-10
+>>>>>>> dev
 
 ---
 
@@ -42,12 +48,28 @@ Durante l'analisi dell'integrazione Passport, sono emerse tre posizioni:
 laravel/Modules/User/app/Models/
 ├── BaseUser.php              # Implements OAuthenticatable + HasApiTokens
 ├── OauthClient.php          # Extends Laravel\Passport\Client
+<<<<<<< HEAD
 ├── OauthAccessToken.php     # Extends Laravel\Passport\Token
 ├── OauthRefreshToken.php    # Extends Laravel\Passport\RefreshToken
 ├── OauthAuthCode.php        # Extends Laravel\Passport\AuthCode
 └── OauthPersonalAccessClient.php  # Extends Laravel\Passport\PersonalAccessClient
 ```
 
+=======
+├── OauthToken.php           # Extends Laravel\Passport\Token
+├── OauthAccessToken.php     # Local alias/model used by app consumers when needed
+├── OauthRefreshToken.php    # Extends Laravel\Passport\RefreshToken
+├── OauthAuthCode.php        # Extends Laravel\Passport\AuthCode
+└── OauthPersonalAccessClient.php  # Local application model for oauth_personal_access_clients
+```
+
+### Distinzione critica
+
+- I wrapper 1:1 obbligatori esistono solo per i model vendor Passport che estendono `Illuminate\Database\Eloquent\Model`
+- `Laravel\Passport\PersonalAccessClient` non e un model Eloquent vendor disponibile come wrapper 1:1 nel progetto
+- `OauthPersonalAccessClient` resta quindi un model locale del modulo `User`, non un mirror diretto del vendor
+
+>>>>>>> dev
 ### BaseUser + Passport
 
 ```php
@@ -497,6 +519,7 @@ $ ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 
 ### Documentazione Correlata
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia generale
 - [README.md](./readme.md) - Overview modulo
 - [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md) - Business logic completa
@@ -505,6 +528,11 @@ $ ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 - [README.md](./README.md) - Overview modulo
 - [BUSINESS_LOGIC_DEEP_DIVE.md](./BUSINESS_LOGIC_DEEP_DIVE.md) - Business logic completa
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia generale
+- [README.md](./readme.md) - Overview modulo
+- [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md) - Business logic completa
+>>>>>>> dev
 
 ### Documentazione Esterna
 - [Laravel Passport Official](https://laravel.com/docs/passport)

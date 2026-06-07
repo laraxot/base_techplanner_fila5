@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # Report Risoluzione Conflitti Git - Develop Branch
 
@@ -131,3 +132,12 @@ Tutti i conflitti Git sono stati risolti automaticamente prendendo le "incoming 
 ---
 Ultimo aggiornamento: 2025-01-06
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: conflict-resolution
+canonical: ../../../Themes/docs/shared-components/conflict-resolution-report.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/conflict-resolution-report.md
+>>>>>>> dev

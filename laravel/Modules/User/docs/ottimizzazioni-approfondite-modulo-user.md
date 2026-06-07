@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ottimizzazioni Approfondite Modulo User - DRY + KISS
 
 ## Panoramica
@@ -294,3 +295,12 @@ php artisan test --testsuite=User
 **Stato:** In attesa implementazione
 **Responsabile:** Team User
 **Data:** 2025-01-XX
+=======
+---
+module: theme
+topic: ottimizzazioni-approfondite-modulo-user
+canonical: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
+>>>>>>> dev

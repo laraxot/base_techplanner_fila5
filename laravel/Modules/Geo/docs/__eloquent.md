@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---------------------------------------------------------------------------------------------
 Easily Work with Spatial Data Types and Functions in Laravel
 https://codebrisk.com/blog/easily-work-with-spatial-data-types-and-functions-in-laravel
@@ -26,3 +27,12 @@ composer require matanyadaev/laravel-eloquent-spatial
 ---------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------
+=======
+---
+module: theme
+topic: __eloquent
+canonical: ../../../Themes/docs/shared-components/--eloquent.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/--eloquent.md
+>>>>>>> dev

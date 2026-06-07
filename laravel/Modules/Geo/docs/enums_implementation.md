@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione degli Enum nel Modulo Geo
 
 ## Introduzione
@@ -131,3 +132,12 @@ $request->validate([
 - [Documentazione PHP sugli Enum](https://www.php.net/manual/en/language.enumerations.php)
 - [Filament Enums Docs](https://filamentphp.com/project_docs/3.x/support/enums)
 - [Best Practices Enum](enums-best-practices.md) 
+=======
+---
+module: theme
+topic: enums_implementation
+canonical: ../../../Themes/docs/shared-components/enums-implementation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/enums-implementation.md
+>>>>>>> dev

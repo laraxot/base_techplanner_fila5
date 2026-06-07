@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Resources Array Keys Philosophy: String Keys Always
 
 ## Data: 2025-01-22
@@ -190,3 +191,12 @@ public static function getTableColumns(): array
 - [XotBaseResource Source Code](../../../Xot/app/Filament/Resources/XotBaseResource.php)
 - [Critical Filament Rule: getInfolistSchema String Keys](./critical-filament-rule-getinfolistschema-string-keys.md)
 - [Filament Best Practices](./filament-best-practices.md)
+=======
+---
+module: theme
+topic: resources-array-keys-philosophy
+canonical: ../../../Themes/docs/shared-components/resources-array-keys-philosophy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/resources-array-keys-philosophy.md
+>>>>>>> dev

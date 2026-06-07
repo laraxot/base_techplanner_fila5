@@ -8,7 +8,10 @@ use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Xot\Filament\Resources\SessionResource;
+<<<<<<< HEAD
 use Override;
+=======
+>>>>>>> dev
 
 /**
  * @see SessionResource
@@ -17,7 +20,11 @@ class ListSessions extends XotBaseListRecords
 {
     protected static string $resource = SessionResource::class;
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     public function getGridTableColumns(): array
     {
         return [
@@ -25,7 +32,11 @@ class ListSessions extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     public function getTableColumns(): array
     {
         return [

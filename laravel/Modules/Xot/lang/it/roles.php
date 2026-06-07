@@ -6,6 +6,9 @@ return [
     'administrator' => 'Amministratore',
     'user' => 'Utente',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Roles',
     'plural_label' => 'Roles (Plurale)',
     'navigation' => [
@@ -50,6 +53,9 @@ return [
             'label' => 'Elimina Roles',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -526,6 +526,7 @@ trait HasTeams
 ## Backlink e Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [docs/USER_MODULE.md](../../../project_docs/user_module.md)
 - [Modules/User/project_docs/traits.md](traits.md)
 - [docs/phpstan_fixes.md](../../../project_docs/phpstan_fixes.md)
@@ -536,3 +537,9 @@ trait HasTeams
 - [docs/phpstan_fixes.md](../../../project_docs/phpstan_fixes.md)
 - [Modules/Xot/project_docs/RELATION_X.md](../../Xot/project_docs/RELATION_X.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [docs/USER_MODULE.md](../../../../docs/project/user_module.md)
+- [Modules/User/project_docs/traits.md](traits.md)
+- [docs/phpstan_fixes.md](../../../../docs/project/phpstan_fixes.md)
+- [Modules/Xot/project_docs/RELATION_X.md](../../xot/project_docs/relation_x.md)
+>>>>>>> dev

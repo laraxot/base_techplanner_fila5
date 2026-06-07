@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Filtro',
         'plural_label' => 'Filtri',
@@ -233,6 +236,7 @@ return [
             'placeholder' => 'Cerca...',
         ],
     ],
+<<<<<<< HEAD
 =======
     'role' => 'Ruolo',
     'active_users' => 'Utenti attivi',
@@ -244,4 +248,6 @@ return [
     'fields' => [],
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

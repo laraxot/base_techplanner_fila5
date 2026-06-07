@@ -11,10 +11,14 @@ Il modulo User gestisce l'autenticazione, l'autorizzazione, e la gestione multi-
 ## Architettura Base
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tutti i modelli in questo modulo seguono la [gerarchia a tre livelli](../../../xot/docs/models/model_architecture.md) standard:
 =======
 Tutti i modelli in questo modulo seguono la [gerarchia a tre livelli](../../../Xot/docs/models/MODEL_ARCHITECTURE.md) standard:
 >>>>>>> 4b6b99016 (first commit)
+=======
+Tutti i modelli in questo modulo seguono la [gerarchia a tre livelli](../../../xot/docs/models/model_architecture.md) standard:
+>>>>>>> dev
 
 ```
 XotBaseModel (Xot)
@@ -37,10 +41,14 @@ if (isset($user->email)) { ... }
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vedi [Magic Properties Documentation](../../../xot/docs/models/magic-properties.md) per dettagli completi.
 =======
 Vedi [Magic Properties Documentation](../../../Xot/docs/models/magic-properties.md) per dettagli completi.
 >>>>>>> 4b6b99016 (first commit)
+=======
+Vedi [Magic Properties Documentation](../../../xot/docs/models/magic-properties.md) per dettagli completi.
+>>>>>>> dev
 
 ## Base Classes
 
@@ -621,11 +629,15 @@ La connection `user` gestisce queste tabelle principali:
 ## Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Model Architecture](../../../xot/docs/models/model_architecture.md) - Guida completa architettura modelli
 - [DRY-KISS Analysis](../../../xot/docs/models/dry-kiss-analysis.md) - Analisi duplicazioni
 - [XotBaseModel](../../../Xot/app/Models/XotBaseModel.php) - Base class livello 1
 - [BaseModel](../../app/Models/BaseModel.php) - Base class User module
 - [CLAUDE.md](../../../../claude.md) - Convenzioni progetto
+<<<<<<< HEAD
 =======
 - [Model Architecture](../../../Xot/docs/models/MODEL_ARCHITECTURE.md) - Guida completa architettura modelli
 - [DRY-KISS Analysis](../../../Xot/docs/models/DRY-KISS-ANALYSIS.md) - Analisi duplicazioni
@@ -633,6 +645,8 @@ La connection `user` gestisce queste tabelle principali:
 - [BaseModel](../../app/Models/BaseModel.php) - Base class User module
 - [CLAUDE.md](../../../../CLAUDE.md) - Convenzioni progetto
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Changelog
 

@@ -24,6 +24,9 @@ return [
         'tooltip' => 'CAP della città selezionata',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Fields',
     'plural_label' => 'Fields (Plurale)',
     'navigation' => [
@@ -68,6 +71,9 @@ return [
             'label' => 'Elimina Fields',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

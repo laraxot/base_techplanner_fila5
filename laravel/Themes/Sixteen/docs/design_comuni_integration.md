@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏛️ DESIGN COMUNI ITALIANI - INTEGRATION GUIDE
 
 **Data**: 2025-10-02  
@@ -522,3 +523,12 @@ $spacers: (
 **Impact**: AGID 100% COMPLIANCE  
 
 *"Integrando il design system ufficiale dei comuni italiani, FixCity sarà 100% AGID compliant e pronto per l'adozione da parte di qualsiasi comune italiano!"*
+=======
+---
+module: theme
+topic: design_comuni_integration
+canonical: ../../docs/shared-components/design-comuni-integration.md
+---
+
+See canonical documentation: ../../docs/shared-components/design-comuni-integration.md
+>>>>>>> dev

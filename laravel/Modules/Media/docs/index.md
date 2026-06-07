@@ -20,6 +20,7 @@ Questo documento serve come indice centrale per il modulo Media, fornendo una gu
 
 ## Collegamenti Correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Generale <nome progetto>](../../../../docs/readme.md)
 - [Collegamenti Documentazione](../../../../docs/collegamenti-documentazione.md)
 - [Standard di Documentazione](../../../../docs/documentation_standards.md)
@@ -34,10 +35,19 @@ Questo documento serve come indice centrale per il modulo Media, fornendo una gu
 - [Modulo Lang](../../Lang/docs/README.md)
 - [Modulo UI](../../UI/docs/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione Generale <nome progetto>](../../../../../docs/readme.md)
+- [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
+- [Standard di Documentazione](../../../../../docs/documentation_standards.md)
+- [Modulo Xot](../../xot/docs/readme.md)
+- [Modulo Lang](../../lang/docs/readme.md)
+- [Modulo UI](../../ui/docs/readme.md)
+>>>>>>> dev
 
 ## Categorie Principali
 
 ### Architettura e Struttura
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [README](./readme.md) - Panoramica generale del modulo
 - [Architettura](./architecture/readme.md) - Architettura generale del modulo
@@ -45,6 +55,10 @@ Questo documento serve come indice centrale per il modulo Media, fornendo una gu
 - [README](./README.md) - Panoramica generale del modulo
 - [Architettura](./architecture/README.md) - Architettura generale del modulo
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README](./readme.md) - Panoramica generale del modulo
+- [Architettura](./architecture/readme.md) - Architettura generale del modulo
+>>>>>>> dev
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
 - [Modelli](./data-models.md) - Documentazione dei modelli Eloquent
 - [Eventi](./events.md) - Eventi e listeners
@@ -62,10 +76,14 @@ Questo documento serve come indice centrale per il modulo Media, fornendo una gu
 - [Pagine Filament](./filament-pages.md) - Componenti Filament Pages
 - [Azioni Filament](./filament-actions.md) - Azioni personalizzate
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni Filament](./filament_extension_pattern.md) - Pattern di estensione per Filament
 =======
 - [Convenzioni Filament](./FILAMENT_EXTENSION_PATTERN.md) - Pattern di estensione per Filament
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Convenzioni Filament](./filament_extension_pattern.md) - Pattern di estensione per Filament
+>>>>>>> dev
 
 ### API e Integrazione
 - [API RESTful](./api.md) - API per la gestione media
@@ -74,6 +92,9 @@ Questo documento serve come indice centrale per il modulo Media, fornendo una gu
 
 ### Configurazione
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Struttura Config](./config_structure.md) - Struttura dei file di configurazione
 - [Configurazione Upload](./upload-config.md) - Configurazione sistema upload
 - [Principi di Configurazione](./configurations_usage_principles.md) - Principi per l'utilizzo delle configurazioni
@@ -91,6 +112,7 @@ Questo documento serve come indice centrale per il modulo Media, fornendo una gu
 ### Testing e Qualità
 - [PHPStan Level 10](./phpstan_level10_fixes.md) - Correzioni per PHPStan Level 10
 - [Testing](./testing.md) - Strategie e approcci per il testing
+<<<<<<< HEAD
 =======
 - [Struttura Config](./CONFIG_STRUCTURE.md) - Struttura dei file di configurazione
 - [Configurazione Upload](./upload-config.md) - Configurazione sistema upload
@@ -110,6 +132,8 @@ Questo documento serve come indice centrale per il modulo Media, fornendo una gu
 - [PHPStan Level 10](./PHPSTAN_LEVEL10_FIXES.md) - Correzioni per PHPStan Level 10
 - [Testing](./TESTING.md) - Strategie e approcci per il testing
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Linee Guida per l'Implementazione
 
@@ -156,6 +180,9 @@ Implementare una gestione robusta degli errori per gestire i fallimenti nell'upl
 
 ### Actions
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Index](./actions/index.md) - Indice della documentazione sulle azioni
 
 ### Architettura
@@ -175,6 +202,7 @@ Implementare una gestione robusta degli errori per gestire i fallimenti nell'upl
 
 ### Support
 - [Index](./support/index.md) - Indice della documentazione sui componenti di supporto
+<<<<<<< HEAD
 =======
 - [Index](./actions/INDEX.md) - Indice della documentazione sulle azioni
 
@@ -196,6 +224,8 @@ Implementare una gestione robusta degli errori per gestire i fallimenti nell'upl
 ### Support
 - [Index](./support/INDEX.md) - Indice della documentazione sui componenti di supporto
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Collegamenti alla Documentazione Correlata
 - [Panoramica Architettura](./architecture.md)
@@ -212,6 +242,7 @@ Questa documentazione viene aggiornata regolarmente. Prima di apportare modifich
 - Il file `lang/it/media_theme.php` è stato risolto manualmente mantenendo PSR-12, strict_types, array short syntax e solo chiavi effettive, come richiesto dagli standard PHPStan livello 10
 - **Filosofia di risoluzione**: Approccio olistico con analisi manuale approfondita, mantenimento integrità architetturale, documentazione bidirezionale aggiornata
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Vedi anche: [../../../../docs/README.md](../../../../docs/readme.md)
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 
@@ -221,3 +252,10 @@ Questa documentazione viene aggiornata regolarmente. Prima di apportare modifich
 
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- Vedi anche: [../../../../../docs/README.md](../../../../../docs/readme.md)
+- Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
+
+
+- [Conflict Resolution](conflict-resolution.md)
+>>>>>>> dev

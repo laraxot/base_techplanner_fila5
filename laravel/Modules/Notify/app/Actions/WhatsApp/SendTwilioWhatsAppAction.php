@@ -74,6 +74,7 @@ final class SendTwilioWhatsAppAction implements WhatsAppProviderActionInterface
         $from = 'whatsapp:'.($whatsAppData->from ?? $this->defaultSender);
         $to = 'whatsapp:'.$whatsAppData->recipient;
 
+<<<<<<< HEAD
         // Log di debug se abilitato
         if ($this->debug) {
             Log::debug('Invio WhatsApp Twilio', [
@@ -83,6 +84,8 @@ final class SendTwilioWhatsAppAction implements WhatsAppProviderActionInterface
             ]);
         }
 
+=======
+>>>>>>> dev
         $client = new Client([
             'timeout' => $this->timeout,
             'auth' => [$this->accountSid, $this->authToken],
@@ -116,7 +119,11 @@ final class SendTwilioWhatsAppAction implements WhatsAppProviderActionInterface
             $this->vars['status_txt'] = $responseContent;
             $this->vars['response_data'] = $responseData;
 
+<<<<<<< HEAD
             Log::info('WhatsApp Twilio inviato con successo', [
+=======
+            Log::debug('WhatsApp Twilio inviato con successo', [
+>>>>>>> dev
                 'to' => $whatsAppData->recipient,
                 'response_code' => $statusCode,
             ]);

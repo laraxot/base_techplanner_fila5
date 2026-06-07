@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filament Resources nel CMS
 
 ## Struttura Directory
@@ -117,3 +118,12 @@ return [
 * [filament-resources.md](laravel/modules/xot/project_docs/filament-resources.md)
 * [filament-resources.md](laravel/modules/cms/project_docs/filament-resources.md)
 
+=======
+---
+module: theme
+topic: filament_resources
+canonical: ../../../Themes/docs/shared-components/filament-resources.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-resources.md
+>>>>>>> dev

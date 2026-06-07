@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Architecture Separation Rules - Test Strategy
 
 ## 🚨 **REGOLA CRITICA: Separazione Architettuale**
@@ -203,3 +204,12 @@ function mockXotData(): void {
 **Status**: ✅ Regole Stabilite e Validate
 **Enforcement**: Obbligatorio per tutti i nuovi test
 **Review**: Required in code review process
+=======
+---
+module: theme
+topic: architecture-separation-rules
+canonical: ../../../../Themes/docs/shared-components/architecture-aration-rules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/architecture-aration-rules.md
+>>>>>>> dev

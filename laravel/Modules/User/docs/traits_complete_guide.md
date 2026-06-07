@@ -350,6 +350,7 @@ trait HasTeams
 - [/.cursor/rules/hasteams_jetstream_philosophy.mdc](../../.cursor/rules/hasteams_jetstream_philosophy.mdc)
 - [/.windsurf/rules/hasteams_jetstream_philosophy.mdc](../../.windsurf/rules/hasteams_jetstream_philosophy.mdc)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modules/Xot/docs/RELATION_X_USAGE.md](../xot/docs/relation_x_usage.md)
 - [docs/USER_TRAITS_GUIDELINES.md](../../docs/user_traits_guidelines.md)
 
@@ -359,6 +360,11 @@ trait HasTeams
 
 *Ultimo aggiornamento: 10 giugno 2025 - HasTeams trait completamente corretto e implementato*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Modules/Xot/docs/RELATION_X_USAGE.md](../xot/docs/relation_x_usage.md)
+- [docs/USER_TRAITS_GUIDELINES.md](../../../docs/user_traits_guidelines.md)
+
+>>>>>>> dev
 
 ## Analisi del Conflitto con HasTeamsContract
 

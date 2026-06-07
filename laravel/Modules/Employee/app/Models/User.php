@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Modules\Employee\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -30,6 +33,7 @@ use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\Team;
 use Modules\User\Models\Tenant;
 use Modules\User\Models\TenantUser;
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Collection;
 use Modules\Gdpr\Models\Consent;
@@ -66,6 +70,11 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
+>>>>>>> dev
 use Spatie\ModelStates\HasStates;
 use Spatie\ModelStates\HasStatesContract;
 
@@ -142,9 +151,13 @@ use Spatie\ModelStates\HasStatesContract;
  * @property-read Collection<int, Treatment> $treatments
  * @property-read int|null $treatments_count
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @method static UserFactory factory($count = null, $state = [])
  * @method static Builder<static>|User newModelQuery()
  * @method static Builder<static>|User newQuery()
@@ -160,9 +173,12 @@ use Spatie\ModelStates\HasStatesContract;
  * @method static Builder<static>|User whereDeletedBy($value)
  * @method static Builder<static>|User whereEmail($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  * @method static Builder<static>|User whereEmailVerifiedAt($value)
  * @method static Builder<static>|User whereFirstName($value)
  * @method static Builder<static>|User whereId($value)
@@ -183,9 +199,13 @@ use Spatie\ModelStates\HasStatesContract;
  * @method static Builder<User> withoutPermission($permissions)
  * @method static Builder<User> withoutRole($roles, $guard = null)
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class User extends BaseUser implements HasMedia, HasStatesContract
@@ -193,6 +213,7 @@ class User extends BaseUser implements HasMedia, HasStatesContract
     use HasGdpr;
     use HasStates;
     use InteractsWithMedia;
+<<<<<<< HEAD
     use LogsActivity;
 
     public function getActivitylogOptions(): LogOptions
@@ -202,4 +223,6 @@ class User extends BaseUser implements HasMedia, HasStatesContract
             ->logOnlyDirty()
             ->dontSubmitEmptyLogs();
     }
+=======
+>>>>>>> dev
 }

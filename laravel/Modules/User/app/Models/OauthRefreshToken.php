@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Laravel\Passport\RefreshToken as PassportRefreshToken;
@@ -38,4 +39,17 @@ class OauthRefreshToken extends PassportRefreshToken
     protected $connection = 'user';
 
     // protected $fillable = ['id', 'access_token_id', 'revoked', 'expires_at'];
+=======
+use Laravel\Passport\RefreshToken as PassportRefreshToken;
+
+/**
+ * @property string                  $id
+ * @property string                  $access_token_id
+ * @property bool                    $revoked
+ * @property \DateTimeInterface|null $expires_at
+ */
+class OauthRefreshToken extends PassportRefreshToken
+{
+    protected $connection = 'user';
+>>>>>>> dev
 }

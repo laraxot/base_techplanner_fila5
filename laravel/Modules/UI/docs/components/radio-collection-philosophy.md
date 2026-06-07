@@ -94,7 +94,11 @@ The component design reflects principles from game theory:
 - Clear rules of engagement (how selection works)
 - Immediate feedback for actions
 - Consistent application of rules
+<<<<<<< HEAD
 - Predictable outcomes for interactions
+=======
+- <nome progetto>able outcomes for interactions
+>>>>>>> dev
 
 ### Information Architecture
 

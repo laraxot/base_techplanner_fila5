@@ -163,9 +163,14 @@ if (!$result->isValid()) {
 ## Collegamenti tra versioni di configuration.md
 * [configuration.md](docs/configuration.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [configuration.md](laravel/modules/xot/docs/configuration.md)
 * [configuration.md](laravel/modules/cms/docs/configuration.md)
 =======
 * [configuration.md](laravel/Modules/Xot/docs/configuration.md)
 * [configuration.md](laravel/Modules/Cms/docs/configuration.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [configuration.md](laravel/modules/xot/docs/configuration.md)
+* [configuration.md](laravel/modules/cms/docs/configuration.md)
+>>>>>>> dev

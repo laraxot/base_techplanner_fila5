@@ -34,10 +34,14 @@ use Filament\Tables\Table;
 
 ## Metodologia di Risoluzione
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Identificazione**: Script automatico per trovare tutti i marker 
 =======
 1. **Identificazione**: Script automatico per trovare tutti i marker
 >>>>>>> 4b6b99016 (first commit)
+=======
+1. **Identificazione**: Script automatico per trovare tutti i marker 
+>>>>>>> dev
 2. **Selezione**: Sempre "current change" (contenuto tra `=======` e `>>>>>>>`)
 3. **Backup**: Backup automatico prima delle modifiche
 4. **Verifica**: Controllo che non rimangano marker di conflitto
@@ -59,6 +63,9 @@ use Filament\Tables\Table;
 - [Report Completo PHPStan Fixes](../../../bashscripts/docs/phpstan_fixes_comprehensive_report.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Dicembre 2024*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -34,6 +34,7 @@ class CreateUserAction
     {
         // Resolve user attributes from the identity provider
 <<<<<<< HEAD
+<<<<<<< HEAD
         $userAttributes = app(GetUserModelAttributesFromSocialiteAction::class)->execute($provider, $oauthUser);
 =======
         $userAttributes = app(GetUserModelAttributesFromSocialiteAction::class, [
@@ -41,6 +42,9 @@ class CreateUserAction
             'oauthUser' => $oauthUser,
         ]);
 >>>>>>> 4b6b99016 (first commit)
+=======
+        $userAttributes = app(GetUserModelAttributesFromSocialiteAction::class)->execute($provider, $oauthUser);
+>>>>>>> dev
 
         // Get the user class from Xot configuration
         $userClass = XotData::make()->getUserClass();
@@ -50,10 +54,14 @@ class CreateUserAction
             'name' => $userAttributes->name,
             'first_name' => $userAttributes->name,
 <<<<<<< HEAD
+<<<<<<< HEAD
             'last_name' => $userAttributes->lastName,
 =======
             'last_name' => $userAttributes->last_name,
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'last_name' => $userAttributes->lastName,
+>>>>>>> dev
             'email' => $userAttributes->email,
         ]);
 
@@ -63,6 +71,7 @@ class CreateUserAction
 
         // Assign default roles to the new user
 <<<<<<< HEAD
+<<<<<<< HEAD
         app(SetDefaultRolesBySocialiteUserAction::class)->execute(
             provider: $provider,
 =======
@@ -71,12 +80,23 @@ class CreateUserAction
             'userModel' => $newlyCreatedUser,
         ])->execute(
 >>>>>>> 4b6b99016 (first commit)
+=======
+        app(SetDefaultRolesBySocialiteUserAction::class)->execute(
+            provider: $provider,
+>>>>>>> dev
             userModel: $newlyCreatedUser,
             oauthUser: $oauthUser,
         );
 
         // Return the refreshed user instance
+<<<<<<< HEAD
         /* @var UserContract $refreshedUser */
         return $newlyCreatedUser->refresh();
+=======
+        /** @var UserContract $refreshedUser */
+        $refreshedUser = $newlyCreatedUser->refresh();
+
+        return $refreshedUser;
+>>>>>>> dev
     }
 }

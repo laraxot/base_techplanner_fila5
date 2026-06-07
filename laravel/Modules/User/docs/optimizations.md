@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Module - Ottimizzazioni e Correzioni
 
 ## 🎯 Overview
@@ -400,3 +401,12 @@ php artisan auth:clear-resets
 ---
 
 *Documentazione aggiornata: $(date +%Y-%m-%d)*
+=======
+---
+module: theme
+topic: optimizations
+canonical: ../../../Themes/docs/shared-components/optimizations.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/optimizations.md
+>>>>>>> dev

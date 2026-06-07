@@ -15,7 +15,10 @@ use Maatwebsite\Excel\Concerns\FromIterator;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\WithMapping;
 use Modules\Lang\Actions\TransCollectionAction;
+<<<<<<< HEAD
 use Traversable;
+=======
+>>>>>>> dev
 
 class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, WithMapping
 {
@@ -29,7 +32,11 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
     public array $fields = [];
 
     /**
+<<<<<<< HEAD
      * @param  array<int, string>  $fields
+=======
+     * @param array<int, string> $fields
+>>>>>>> dev
      */
     public function __construct(
         public LazyCollection $collection,
@@ -97,7 +104,11 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
     /**
      * Returns an iterator for the current collection.
      */
+<<<<<<< HEAD
     public function iterator(): Iterator
+=======
+    public function iterator(): \Iterator
+>>>>>>> dev
     {
         /* @phpstan-ignore return.type */
         return $this->collection->getIterator();
@@ -108,22 +119,39 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
      */
     private function normalizeRow(mixed $row): array
     {
+<<<<<<< HEAD
         if ($row === null) {
+=======
+        if (null === $row) {
+>>>>>>> dev
             return [];
         }
 
         if ($row instanceof Arrayable) {
+<<<<<<< HEAD
             /** @var array<int|string, mixed> */
+=======
+            /* @var array<int|string, mixed> */
+>>>>>>> dev
             return $row->toArray();
         }
 
         if (is_array($row)) {
+<<<<<<< HEAD
             /** @var array<int|string, mixed> */
             return $row;
         }
 
         if ($row instanceof Traversable) {
             /** @var array<int|string, mixed> */
+=======
+            /* @var array<int|string, mixed> */
+            return $row;
+        }
+
+        if ($row instanceof \Traversable) {
+            /* @var array<int|string, mixed> */
+>>>>>>> dev
             return iterator_to_array($row);
         }
 

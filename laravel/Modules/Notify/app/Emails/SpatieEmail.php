@@ -217,7 +217,20 @@ class SpatieEmail extends TemplateMailable
         foreach ($attachments as $item) {
             $attachment = null;
             if (isset($item['path']) && file_exists($item['path'])) {
+<<<<<<< HEAD
                 $attachment = $this->getAttachmentFromPath($item);
+=======
+                /** @var array{path: string, as?: string, mime?: string} $pathAttachment */
+                $pathAttachment = ['path' => $item['path']];
+                if (isset($item['as']) && is_string($item['as'])) {
+                    $pathAttachment['as'] = $item['as'];
+                }
+                if (isset($item['mime']) && is_string($item['mime'])) {
+                    $pathAttachment['mime'] = $item['mime'];
+                }
+
+                $attachment = $this->getAttachmentFromPath($pathAttachment);
+>>>>>>> dev
             }
 
             if ($attachment === null && isset($item['data'])) {
@@ -246,7 +259,10 @@ class SpatieEmail extends TemplateMailable
 
     public function buildSms(): string
     {
+<<<<<<< HEAD
         /* @phpstan-ignore method.notFound */
+=======
+>>>>>>> dev
         /** @var MailTemplate $mailTemplate */
         $mailTemplate = $this->getMailTemplate();
         $sms_template = $mailTemplate->sms_template;

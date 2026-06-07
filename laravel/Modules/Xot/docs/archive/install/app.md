@@ -14,12 +14,17 @@ return [
 
 ## Collegamenti tra versioni di app.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [app.md](../../../xot/project_docs/install/app.md)
 * [app.md](../../../tenant/project_docs/it/config/app.md)
 =======
 * [app.md](../../../Xot/project_docs/install/app.md)
 * [app.md](../../../Tenant/project_docs/it/config/app.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [app.md](../../../xot/project_docs/install/app.md)
+* [app.md](../../../tenant/project_docs/it/config/app.md)
+>>>>>>> dev
 
 ### Versione Incoming
 

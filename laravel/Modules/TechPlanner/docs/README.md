@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # TechPlanner Module Documentation\n\nMain module for Sottana Service project.\n\n## Contents\n- [Brand Update 2026](../../../docs/brand-update-2026.md)\n- [Project Roadmap](../../../migration_plan.md)
 =======
 # TechPlanner Module Documentation
@@ -256,3 +257,6 @@ Il modulo TechPlanner è stato aggiornato con successo a Filament 4.x. Il codice
 
 *Ultima modifica: 2025-12-16 - ✅ SUCCESSO COMPLETO: Filament 4.x aggiornato, refactoring Super Cow completato*
 >>>>>>> 4b6b99016 (first commit)
+=======
+# TechPlanner Module Documentation\n\nMain module for Sottana Service project.\n\n## Contents\n- [Brand Update 2026](../../../docs/brand-update-2026.md)\n- [Project Roadmap](../../../migration_plan.md)
+>>>>>>> dev

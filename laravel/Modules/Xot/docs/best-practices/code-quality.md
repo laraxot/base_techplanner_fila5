@@ -54,6 +54,9 @@ This document outlines the best practices for maintaining high code quality with
 
 ## Links to Related Documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Xot Base Classes](../xot/project_docs/xot_base_classes.md)
 - [Filament Extension Pattern](../../notify/project_docs/filament_extension_pattern.md)
 - [Filament Extension Pattern Analysis](../../notify/project_docs/filament_extension_pattern_analysis.md)
@@ -64,6 +67,7 @@ This document outlines the best practices for maintaining high code quality with
 - [Naming Conventions](./naming-conventions.md)
 - [Service Provider Best Practices](./service-provider-best-practices.md)
 - [Filament Best Practices](./filament-best-practices.md)
+<<<<<<< HEAD
 =======
 - [Xot Base Classes](../Xot/project_docs/XOT_BASE_CLASSES.md)
 - [Filament Extension Pattern](../../Notify/project_docs/FILAMENT_EXTENSION_PATTERN.md)
@@ -76,3 +80,5 @@ This document outlines the best practices for maintaining high code quality with
 - [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
 - [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -17,9 +17,13 @@ enum PhoneCallEnum: string implements HasColor, HasIcon, HasLabel
     {
         $label = trans('techplanner::phone_call.enums.'.$this->value.'.label');
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
         return is_string($label) ? $label : $this->value;
     }
 
@@ -27,9 +31,13 @@ enum PhoneCallEnum: string implements HasColor, HasIcon, HasLabel
     {
         $color = trans('techplanner::phone_call.enums.'.$this->value.'.color');
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
         return is_string($color) ? $color : 'gray';
     }
 
@@ -37,9 +45,13 @@ enum PhoneCallEnum: string implements HasColor, HasIcon, HasLabel
     {
         $icon = trans('techplanner::phone_call.enums.'.$this->value.'.icon');
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
         return is_string($icon) ? $icon : 'heroicon-o-phone';
     }
 }

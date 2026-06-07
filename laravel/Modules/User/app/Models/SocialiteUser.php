@@ -13,9 +13,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Database\Factories\SocialiteUserFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -61,14 +64,22 @@ use Modules\Xot\Datas\XotData;
  * @property ProfileContract|null $updater
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @method static SocialiteUserFactory factory($count = null, $state = [])
  *
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  * @mixin IdeHelperSocialiteUser
  *
  * @property ProfileContract|null $deleter
  *
+<<<<<<< HEAD
+=======
+ * @method static \Modules\User\Database\Factories\SocialiteUserFactory factory($count = null, $state = [])
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class SocialiteUser extends BaseModel

@@ -1,1 +1,11 @@
+<<<<<<< HEAD
 https://jsonplaceholder.typicode.com/users
+=======
+---
+module: theme
+topic: placeholder
+canonical: ../../../Themes/docs/shared-components/placeholder.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/placeholder.txt
+>>>>>>> dev

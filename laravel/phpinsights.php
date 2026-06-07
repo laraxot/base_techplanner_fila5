@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'preset' => 'laravel',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 
     'exclude' => [
         // 'path/to/directory-or-file'
@@ -19,6 +22,7 @@ return [
     'config' => [
     ],
 
+<<<<<<< HEAD
 =======
     
     'exclude' => [
@@ -35,6 +39,8 @@ return [
     ],
     
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'requirements' => [
         'min-quality' => 70,
         'min-complexity' => 70,
@@ -43,11 +49,15 @@ return [
         'disable-security-check' => true,
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 
     'threads' => null,
 
     'timeout' => 120,
 ];
+<<<<<<< HEAD
 =======
     
     'threads' => null,
@@ -55,3 +65,5 @@ return [
     'timeout' => 120,
 ];
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

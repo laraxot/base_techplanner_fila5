@@ -22,6 +22,7 @@ return [
 
 ## Collegamenti tra versioni di xra.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [xra.md](../../../xot/project_docs/install/xra.md)
 * [xra.md](../../../tenant/project_docs/it/xra.md)
 * [xra.md](../../../tenant/project_docs/it/config/xra.md)
@@ -30,6 +31,11 @@ return [
 * [xra.md](../../../Tenant/project_docs/it/xra.md)
 * [xra.md](../../../Tenant/project_docs/it/config/xra.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [xra.md](../../../xot/project_docs/install/xra.md)
+* [xra.md](../../../tenant/project_docs/it/xra.md)
+* [xra.md](../../../tenant/project_docs/it/config/xra.md)
+>>>>>>> dev
 
 ### Versione Incoming
 

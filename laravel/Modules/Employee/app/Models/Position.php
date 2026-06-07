@@ -5,19 +5,27 @@ declare(strict_types=1);
 namespace Modules\Employee\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\TechPlanner\Models\Profile;
 use Modules\Employee\Database\Factories\PositionFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Employee\Database\Factories\PositionFactory;
 use Modules\TechPlanner\Models\Profile;
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\Employee\Database\Factories\PositionFactory;
+use Modules\TechPlanner\Models\Profile;
+>>>>>>> dev
 
 /**
  * Class Position.
@@ -36,17 +44,25 @@ use Modules\TechPlanner\Models\Profile;
  * @property-read Profile|null $deleter
  * @property-read Profile|null $updater
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @method static PositionFactory factory($count = null, $state = [])
  * @method static Builder<static>|Position newModelQuery()
  * @method static Builder<static>|Position newQuery()
  * @method static Builder<static>|Position query()
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class Position extends BaseModel

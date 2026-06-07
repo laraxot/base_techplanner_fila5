@@ -9,26 +9,36 @@ return [
                 'refresh' => 'Refrescar',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'heading' => 'Salud de la aplicación',
 =======
 
             'heading' => 'Salud de la aplicación',
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'heading' => 'Salud de la aplicación',
+>>>>>>> dev
             'navigation' => [
                 'group' => 'Configuración',
                 'label' => 'Salud de la aplicación',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             'notifications' => [
                 'check_results' => 'Revisar resultados desde',
             ],
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -42,6 +52,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

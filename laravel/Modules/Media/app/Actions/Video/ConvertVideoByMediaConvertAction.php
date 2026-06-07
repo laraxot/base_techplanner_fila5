@@ -12,8 +12,16 @@ namespace Modules\Media\Actions\Video;
 use Exception;
 use Modules\Media\Datas\ConvertData;
 use Modules\Media\Models\MediaConvert;
+<<<<<<< HEAD
 use ProtoneMedia\LaravelFFMpeg\Support\FFMpeg;
 use Spatie\QueueableAction\QueueableAction;
+=======
+use ProtoneMedia\LaravelFFMpeg\Exporters\MediaExporter;
+use ProtoneMedia\LaravelFFMpeg\MediaOpener;
+use ProtoneMedia\LaravelFFMpeg\Support\FFMpeg;
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+>>>>>>> dev
 
 /**
  * Classe per convertire video utilizzando MediaConvert e tenere traccia del progresso.
@@ -41,6 +49,7 @@ class ConvertVideoByMediaConvertAction
         // Instanziamo il formato prima di usarlo
         $formatInstance = new $format;
 
+<<<<<<< HEAD
         // @phpstan-ignore method.notFound
         FFMpeg::fromDisk($data->disk)
             ->open($data->file)
@@ -55,6 +64,31 @@ class ConvertVideoByMediaConvertAction
             ->addFilter('-preset', 'ultrafast')
             // Utilizziamo il formato istanziato come parametro
             ->save($file_new, $formatInstance);
+=======
+        /** @var MediaOpener $media */
+        $media = FFMpeg::fromDisk($data->disk);
+
+        /** @var MediaOpener $opened */
+        $opened = $media->open($data->file);
+
+        /** @var MediaExporter $export */
+        $export = $opened->export();
+
+        $export->onProgress(function (float $percentage, float $remaining, float $rate) use ($record): void {
+            $record->update([
+                'percentage' => $percentage,
+                'remaining' => $remaining,
+                'rate' => $rate,
+            ]);
+        });
+
+        $export->addFilter('-preset', 'ultrafast');
+
+        $export = $export->inFormat($formatInstance);
+        Assert::isInstanceOf($export, MediaExporter::class);
+
+        $export->save($file_new);
+>>>>>>> dev
 
         $record->update([
             'status' => 'completed',

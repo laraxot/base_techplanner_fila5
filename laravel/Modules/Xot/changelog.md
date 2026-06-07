@@ -126,10 +126,14 @@ All notable changes to `:package_name` will be documented in this file.
 
 ### Documenti Correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README.md](./docs/readme.md) - Entry point
 =======
 - [README.md](./docs/README.md) - Entry point
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README.md](./docs/README.md) - Entry point
+>>>>>>> dev
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix

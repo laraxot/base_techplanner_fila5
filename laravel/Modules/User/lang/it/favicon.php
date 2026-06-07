@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Favicon',
         'plural_label' => 'Favicon',
@@ -75,6 +78,7 @@ return [
         'image_required' => 'L\'immagina è obbligatoria',
         'image_invalid' => 'L\'immagina non è valida',
     ],
+<<<<<<< HEAD
 =======
     'fields' => [
         'background_color' => [
@@ -121,4 +125,6 @@ return [
     'label' => '',
     'plural_label' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Conflitti di Merge - Modulo Geo
 
 ## Panoramica
@@ -111,3 +112,12 @@ Questo documento elenca tutti i file che contengono conflitti di merge  nel modu
 ---
 
 **Stato**: In corso di analisi 
+=======
+---
+module: theme
+topic: merge_conflicts_analysis
+canonical: ../../../Themes/docs/shared-components/merge-conflicts-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/merge-conflicts-analysis.md
+>>>>>>> dev

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Guida ai Componenti UI
 
 ## Layout
@@ -840,3 +841,12 @@ Tutti i componenti UI condivisi devono essere posizionati in `Modules/UI/resourc
 
 *Documentazione aggiornata: Dicembre 2024*
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: components
+canonical: ../../../Themes/docs/shared-components/components-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/components-guide.md
+>>>>>>> dev

@@ -24,20 +24,30 @@ return [
             'helper_text' => 'Titolo della notifica',
             'placeholder' => 'Inserisci il titolo',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'message' => [
             'label' => 'Messaggio',
             'helper_text' => 'Contenuto della notifica',
             'placeholder' => 'Inserisci il messaggio',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'type' => [
             'label' => 'Tipo',
@@ -52,10 +62,15 @@ return [
                 'error' => 'Errore',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'status' => [
             'label' => 'Stato',
@@ -67,47 +82,72 @@ return [
                 'archived' => 'Archiviata',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'recipient' => [
             'label' => 'Destinatario',
             'helper_text' => 'Utente destinatario della notifica',
             'placeholder' => 'Seleziona il destinatario',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'sent_at' => [
             'label' => 'Inviata il',
             'helper_text' => 'Data e ora di invio della notifica',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'read_at' => [
             'label' => 'Letta il',
             'helper_text' => 'Data e ora di lettura della notifica',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'archived_at' => [
-            'label' => 'Archiviata il',
-            'helper_text' => 'Data e ora di archiviazione della notifica',
 <<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'archived_at' => [
+            'label' => 'Archiviata il',
+            'helper_text' => 'Data e ora di archiviazione della notifica',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'channel' => [
             'label' => 'Canale',
@@ -133,9 +173,13 @@ return [
                 ],
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'template' => [
             'label' => 'Template',
@@ -160,9 +204,13 @@ return [
                 ],
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => '',
+>>>>>>> dev
         ],
         'schedule' => [
             'label' => 'Programmazione',
@@ -190,6 +238,9 @@ return [
                 ],
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'description' => '',
         ],
         'applyFilters' => [
@@ -197,11 +248,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'applyFilters' => [
             'label' => 'applyFilters',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -261,8 +315,13 @@ return [
         'error' => 'Si è verificato un errore durante l\'operazione',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Notification',
     'plural_label' => 'Notification (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Notification',
+    'plural_label' => 'Notification (Plurale)',
+>>>>>>> dev
 ];

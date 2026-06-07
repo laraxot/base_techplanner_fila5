@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Utilizzo del file JSON dei comuni
 
 ## Contesto
@@ -215,3 +216,12 @@ class GeoDataService
 - [Clean Code](../../../project_docs/clean-code.md)
 
 **Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`. 
+=======
+---
+module: theme
+topic: json_usage
+canonical: ../../../Themes/docs/shared-components/json-usage.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/json-usage.md
+>>>>>>> dev

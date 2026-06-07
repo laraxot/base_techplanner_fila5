@@ -85,8 +85,12 @@
 
 ## Backlinks
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Lang Module Overview](../readme.md)
 =======
 - [Lang Module Overview](../README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Lang Module Overview](../readme.md)
+>>>>>>> dev
 - [Translation System Documentation](./translation-system.md)

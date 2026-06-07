@@ -321,9 +321,13 @@ Quando scrivi codice con Eloquent:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
 =======
 **Ultimo aggiornamento**: 2025-01-06
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> dev
 **PHPStan Level**: 10
 **Status**: ✅ 0 Errors

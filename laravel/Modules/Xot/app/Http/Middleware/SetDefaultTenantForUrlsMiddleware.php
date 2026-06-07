@@ -7,7 +7,10 @@ namespace Modules\Xot\Http\Middleware;
 /*
  * https://laravel.com/docs/8.x/urls#default-values
  */
+<<<<<<< HEAD
 use Closure;
+=======
+>>>>>>> dev
 use Filament\Facades\Filament;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -24,7 +27,11 @@ class SetDefaultTenantForUrlsMiddleware
      */
     public function handle(
         Request $request,
+<<<<<<< HEAD
         Closure $next,
+=======
+        \Closure $next,
+>>>>>>> dev
     ): Response|JsonResponse|\Symfony\Component\HttpFoundation\Response {
         URL::defaults([
             'tenant' => Filament::getTenant(),

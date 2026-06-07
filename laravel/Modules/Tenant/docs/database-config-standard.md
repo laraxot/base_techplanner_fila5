@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Database config standard (Laravel 12.x)
 
 **Status**: da verificare  
@@ -10,6 +11,20 @@ Il file `config/database.php` deve essere allineato allo standard di Laravel 12.
 ## Motivazione
 
 ### Perche' standard Laravel 12.x
+=======
+# Database config standard (Laravel 13.x)
+
+**Status**: attivo  
+**Riferimento**: https://github.com/laravel/laravel/blob/13.x/config/database.php
+
+## Obiettivo
+
+Il file `config/database.php` deve essere **identico** allo standard Laravel 13.x per garantire compatibilita' e manutenibilita'.
+
+## Motivazione
+
+### Perche' standard Laravel 13.x
+>>>>>>> dev
 
 1. **Gestione Dinamica Connessioni Modulari**
    - Le connessioni modulari vengono aggiunte **automaticamente** da `TenantServiceProvider::registerDB()`
@@ -28,7 +43,11 @@ Il file `config/database.php` deve essere allineato allo standard di Laravel 12.
 
 ## Architettura Connessioni
 
+<<<<<<< HEAD
 ### Connessioni Standard (in database.php)
+=======
+### Connessioni standard (in database.php)
+>>>>>>> dev
 - `sqlite` - SQLite database
 - `mysql` - MySQL database (default)
 - `mariadb` - MariaDB database
@@ -49,7 +68,11 @@ Configurate via file tenant-specific in `config/<locale>/<tenant>/database.php`.
 
 ### 1. Bootstrap Standard
 ```php
+<<<<<<< HEAD
 // config/database.php (standard Laravel 12.x)
+=======
+// config/database.php (standard Laravel 13.x)
+>>>>>>> dev
 'default' => env('DB_CONNECTION', 'sqlite'),
 'connections' => [
     'mysql' => [...], // Configurazione standard
@@ -89,6 +112,7 @@ return [
 
 ## Modifiche Applicate
 
+<<<<<<< HEAD
 ### File Sostituito
 - `config/database.php` → Standard Laravel 12.x
 
@@ -103,6 +127,24 @@ return [
 - ✅ `sslmode` per PostgreSQL
 - ✅ Redis config aggiornato (max_retries, backoff_algorithm, ecc.)
 - ✅ Compatibilita' PHP 8.3+ (`\PDO::MYSQL_ATTR_SSL_CA` dove richiesto)
+=======
+### File sostituito
+- `config/database.php` → Standard Laravel 13.x (identico a https://github.com/laravel/laravel/blob/13.x/config/database.php)
+
+### Compatibilita' PHP 8.3
+- Unica modifica ammessa: `use Pdo\Mysql` rimosso, uso di `\Pdo\Mysql::ATTR_SSL_CA` nel ternary (PHP 8.5+) per evitare fatal error su PHP 8.3 dove la classe non esiste
+
+### Rimozioni
+- ❌ Tutte le connessioni modulari hardcoded (predict, blog, cms, activity, user, ecc.)
+- ❌ Configurazioni custom in database.php
+
+### Aggiunte
+- ✅ Connessioni modulari in `config/local/<tenant>/database.php` (predict, blog, cms, activity)
+- ✅ Struttura standard Laravel 13.x
+- ✅ `busy_timeout`, `journal_mode`, `synchronous`, `transaction_mode` per SQLite
+- ✅ `sslmode` env per PostgreSQL
+- ✅ Redis: `max_retries`, `backoff_algorithm`, `backoff_base`, `backoff_cap`
+>>>>>>> dev
 
 ## Verifica Funzionamento
 

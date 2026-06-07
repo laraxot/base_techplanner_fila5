@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Principi Migrazioni Laraxot: UUID e Polimorfismo Context-Aware
 
 ## Executive Summary
@@ -250,3 +251,12 @@ $table->index(['morphable_id', 'morphable_type']); // Performance
 
 *Caso studio: Migration Activity Table con polimorfismo UUID*
 *Status: ✅ Lezione appresa e memorizzata permanentemente*
+=======
+---
+module: theme
+topic: principi-migrazioni-laraxot-uuid-polimorfismo
+canonical: ../../../Themes/docs/shared-components/laraxot-migration-principles-uuid-polymorphism.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/laraxot-migration-principles-uuid-polymorphism.md
+>>>>>>> dev

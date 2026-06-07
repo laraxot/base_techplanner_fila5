@@ -11,6 +11,10 @@ use Illuminate\Support\Str;
 use Modules\Media\Filament\Resources\MediaResource;
 use Modules\Media\Models\Media;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
+<<<<<<< HEAD
+=======
+use ProtoneMedia\LaravelFFMpeg\Exporters\MediaExporter;
+>>>>>>> dev
 use ProtoneMedia\LaravelFFMpeg\Support\FFMpeg;
 use RuntimeException;
 
@@ -24,6 +28,7 @@ class ConvertWidget extends XotBaseWidget
 
     public float $percentage = 0;
 
+<<<<<<< HEAD
     /** @var float */
     public $remaining;
 
@@ -33,6 +38,15 @@ class ConvertWidget extends XotBaseWidget
     protected string $view = 'media::filament.widgets.convert';
 
     protected static string $resource = MediaResource::class;
+=======
+    public float $remaining;
+
+    public float $rate;
+
+    protected string $view = 'media::filament.widgets.convert';
+
+    public static string $resource = MediaResource::class;
+>>>>>>> dev
 
     public function getFormSchema(): array
     {
@@ -56,6 +70,10 @@ class ConvertWidget extends XotBaseWidget
         /*
          * -preset ultrafast.
          */
+<<<<<<< HEAD
+=======
+        /** @var MediaExporter $exportedMedia */
+>>>>>>> dev
         $exportedMedia = FFMpeg::fromDisk($disk_mp4)
             ->open($file_mp4)
             ->export();
@@ -76,6 +94,7 @@ class ConvertWidget extends XotBaseWidget
                 ->send();
         });
 
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line - FFMpeg fluent API */
         $toDiskMedia = $exportedMedia->toDisk($disk_mp4);
         if ($toDiskMedia === null) {
@@ -91,6 +110,13 @@ class ConvertWidget extends XotBaseWidget
         if (! method_exists($formattedMedia, 'save')) {
             throw new RuntimeException('Formatted media does not have save method');
         }
+=======
+        /** @var MediaExporter $toDiskMedia */
+        $toDiskMedia = $exportedMedia->toDisk($disk_mp4);
+
+        /** @var MediaExporter $formattedMedia */
+        $formattedMedia = $toDiskMedia->inFormat($format);
+>>>>>>> dev
 
         $formattedMedia->save($file_new);
 

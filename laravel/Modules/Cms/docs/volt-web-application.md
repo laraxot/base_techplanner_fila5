@@ -62,10 +62,14 @@ $mount = function ($initialName = '') {
 $save = function () {
     $this->validate();
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // Logica di salvataggio
 };
 ?>
@@ -109,16 +113,22 @@ state([
     // Stato primitivo
     'counter' => 0,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     // Array
     'items' => [],
     
+<<<<<<< HEAD
 =======
 
     // Array
     'items' => [],
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     // Oggetti
     'user' => [
         'name' => '',
@@ -185,11 +195,15 @@ rules([
 $save = function () {
     $validated = $this->validate();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     $post = Post::create($validated['form']);
     
     session()->flash('message', 'Post creato con successo!');
     
+<<<<<<< HEAD
 =======
 
     $post = Post::create($validated['form']);
@@ -197,6 +211,8 @@ $save = function () {
     session()->flash('message', 'Post creato con successo!');
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     return redirect()->route('posts.show', $post);
 };
 ?>
@@ -318,12 +334,17 @@ $getFilteredUsers = function () {
 ```php
 // Input con debounce
 <<<<<<< HEAD
+<<<<<<< HEAD
 <input 
     type="text" 
 =======
 <input
     type="text"
 >>>>>>> 4b6b99016 (first commit)
+=======
+<input 
+    type="text" 
+>>>>>>> dev
     wire:model.live.debounce.300ms="search"
     placeholder="Cerca..."
 >
@@ -332,10 +353,14 @@ $getFilteredUsers = function () {
 $users = computed(function () {
     return User::with('profile', 'posts')
 <<<<<<< HEAD
+<<<<<<< HEAD
         ->when($this->search, fn($query) => 
 =======
         ->when($this->search, fn($query) =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+        ->when($this->search, fn($query) => 
+>>>>>>> dev
             $query->where('name', 'like', "%{$this->search}%")
         )
         ->paginate(10);
@@ -406,6 +431,7 @@ class UserFormTest extends TestCase
 - [Laravel Volt Documentation](https://livewire.laravel.com/project_docs/volt)
 - [Livewire Documentation](https://livewire.laravel.com)
 - [Laravel Documentation](https://laravel.com/docs)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Articolo Originale di Moinuddin Chowdhury](https://medium.com/@moinuddinchowdhury/how-to-create-web-application-using-laravel-volt-the-magical-way-2145071046b2) 
 =======
@@ -792,3 +818,6 @@ class UserFormTest extends TestCase
 - [Laravel Documentation](https://laravel.com/docs)
 - [Articolo Originale di Moinuddin Chowdhury](https://medium.com/@moinuddinchowdhury/how-to-create-web-application-using-laravel-volt-the-magical-way-2145071046b2)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Articolo Originale di Moinuddin Chowdhury](https://medium.com/@moinuddinchowdhury/how-to-create-web-application-using-laravel-volt-the-magical-way-2145071046b2) 
+>>>>>>> dev

@@ -8,6 +8,9 @@ return [
         'group' => 'Notifiche',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Send Firebase Push Notification',
     'plural_label' => 'Send Firebase Push Notification (Plurale)',
     'fields' => [
@@ -41,6 +44,9 @@ return [
             'label' => 'Elimina Send Firebase Push Notification',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

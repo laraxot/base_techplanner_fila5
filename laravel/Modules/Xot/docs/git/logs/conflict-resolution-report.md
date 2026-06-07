@@ -43,10 +43,14 @@ Questo documento descrive le risoluzioni applicate ai file con conflitti git ide
 - Mantenuta la coerenza con la documentazione `@psalm-return`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Documentazione correlata**: [CONFLITTI_MERGE_RISOLTI.md](../../media/docs/conflitti_merge_risolti.md)
 =======
 **Documentazione correlata**: [CONFLITTI_MERGE_RISOLTI.md](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Documentazione correlata**: [CONFLITTI_MERGE_RISOLTI.md](../../media/docs/conflitti_merge_risolti.md)
+>>>>>>> dev
 
 ### 4. _components.json
 
@@ -87,10 +91,14 @@ Questo documento descrive le risoluzioni applicate ai file con conflitti git ide
 - [Risoluzione conflitti git generale](risoluzione_conflitti.md)
 - [Documentazione conflitti Modulo Xot](../conflicts/model_with_pos_contract_resolution.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione conflitti Modulo Media](../../media/docs/conflitti_merge_risolti.md)
 =======
 - [Documentazione conflitti Modulo Media](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione conflitti Modulo Media](../../media/docs/conflitti_merge_risolti.md)
+>>>>>>> dev
 
 ## Test Effettuati
 

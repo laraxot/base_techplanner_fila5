@@ -232,6 +232,9 @@ Questa regola deve essere applicata SUBITO a tutti i test esistenti prima di pro
 - [Laraxot Conventions](../laraxot_conventions.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

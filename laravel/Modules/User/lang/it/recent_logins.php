@@ -9,6 +9,9 @@ return [
                 'label' => 'authenticatable.name',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -67,6 +70,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'login_at' => [
@@ -96,6 +100,8 @@ return [
         'user' => [
             'label' => 'user',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -129,8 +135,17 @@ return [
             'icon' => 'openFilters',
             'label' => 'openFilters',
         ],
+<<<<<<< HEAD
     ],
 <<<<<<< HEAD
+=======
+        'resetColumnManager' => [
+            'tooltip' => 'resetColumnManager',
+            'icon' => 'resetColumnManager',
+            'label' => 'resetColumnManager',
+        ],
+    ],
+>>>>>>> dev
     'navigation' => [
         'name' => 'Recent Logins',
         'plural' => 'Recent Logins',
@@ -144,9 +159,12 @@ return [
     ],
     'label' => 'Recent Logins',
     'plural_label' => 'Recent Logins (Plurale)',
+<<<<<<< HEAD
 =======
     'navigation' => [],
     'label' => '',
     'plural_label' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

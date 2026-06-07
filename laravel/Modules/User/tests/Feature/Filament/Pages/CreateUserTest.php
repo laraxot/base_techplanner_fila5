@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\User\Tests\Feature\Filament\Pages;
+
+>>>>>>> dev
 use Filament\Facades\Filament;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource;

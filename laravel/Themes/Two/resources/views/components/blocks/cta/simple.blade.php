@@ -2,6 +2,9 @@
     'title' => '',
     'description' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'primary_cta_label' => '',
     'primary_cta_url' => '#',
     'background_color' => 'bg-brand-blue',
@@ -20,6 +23,7 @@
             {{ $primary_cta_label }}
         </a>
     </div>
+<<<<<<< HEAD
 </div>
 =======
     'button_text' => '',
@@ -42,3 +46,6 @@
     </div>
 </div>
 >>>>>>> 4b6b99016 (first commit)
+=======
+</div>
+>>>>>>> dev

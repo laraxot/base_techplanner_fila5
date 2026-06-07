@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
@@ -448,3 +449,12 @@ return redirect()->to('/' . $locale);
 ```
 
 Questa implementazione è semplice, sicura e segue tutte le best practices del progetto <nome progetto>.
+=======
+---
+module: theme
+topic: logout-blade-implementation
+canonical: ../../../Themes/docs/shared-components/logout-blade-implementation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-implementation.md
+>>>>>>> dev

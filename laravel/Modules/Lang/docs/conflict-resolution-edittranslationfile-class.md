@@ -87,12 +87,18 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 - [conflict-resolution-autolabelaction.md](conflict-resolution-autolabelaction.md)
 - [conflict-resolution-edit-translation-file.md](conflict-resolution-edit-translation-file.md)
+<<<<<<< HEAD
 - [Modules/Lang/docs/](../docs/)
 
 <<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 29 luglio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Modules/Lang/docs/](../../docs/)
+
+*Ultimo aggiornamento: 29 luglio 2025*
+>>>>>>> dev
 # Risoluzione Conflitto EditTranslationFile.php (Classe)
 
 ## Problema Identificato
@@ -182,9 +188,15 @@ Il file `Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditT
 
 - [conflict-resolution-autolabelaction.md](conflict-resolution-autolabelaction.md)
 - [conflict-resolution-edit-translation-file.md](conflict-resolution-edit-translation-file.md)
+<<<<<<< HEAD
 - [Modules/Lang/docs/](../docs/)
 
 <<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 29 luglio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Modules/Lang/docs/](../../docs/)
+
+*Ultimo aggiornamento: 29 luglio 2025*
+>>>>>>> dev

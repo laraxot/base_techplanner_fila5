@@ -122,11 +122,15 @@ public static function table(Table $table): Table
                 return 'bg-danger-500/10';
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             
             if ($record->status === 'warning') {
                 return 'bg-warning-500/10';
             }
             
+<<<<<<< HEAD
 =======
 
             if ($record->status === 'warning') {
@@ -134,6 +138,8 @@ public static function table(Table $table): Table
             }
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             return '';
         });
 }
@@ -148,11 +154,15 @@ TextColumn::make('stock')
             return 'danger';
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         
         if ($state < 10) {
             return 'warning';
         }
         
+<<<<<<< HEAD
 =======
 
         if ($state < 10) {
@@ -160,6 +170,8 @@ TextColumn::make('stock')
         }
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         return 'success';
     })
 ```
@@ -369,19 +381,27 @@ class MiaRisorsa extends XotBaseResource
 {
     protected static ?string $navigationIcon = 'heroicon-o-document';
 <<<<<<< HEAD
-    
-=======
-
->>>>>>> 4b6b99016 (first commit)
-    public static function getRelations(): array
-    {
-        return [];
-    }
 <<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
+    public static function getRelations(): array
+    {
+        return [];
+    }
+<<<<<<< HEAD
+<<<<<<< HEAD
+    
+=======
+
+>>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     public static function getFormSchema(): array
     {
         return [

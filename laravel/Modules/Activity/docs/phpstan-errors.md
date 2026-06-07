@@ -1,10 +1,14 @@
 # PHPStan Errors - Activity Module
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Date**: [DATE]
 =======
 **Date**: 2025-12-16
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Date**: [DATE]
+>>>>>>> dev
 **PHPStan Level**: 10
 **Total Errors in Module**: 2
 
@@ -169,8 +173,12 @@ trait HasEvents
 **Priority**: Medium - Easy fix, affects multiple models
 **Owner**: Activity Module Team
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 **Last Updated**: 2025-12-16
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 **Fix Complexity**: ⭐ (Very Easy - Just add return types)

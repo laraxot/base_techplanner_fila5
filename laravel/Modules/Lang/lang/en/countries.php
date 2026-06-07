@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Europe
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'it' => 'Italy',
     'fr' => 'France',
     'de' => 'Germany',
@@ -52,9 +55,12 @@ return [
     'am' => 'Armenia',
     'az' => 'Azerbaijan',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Americas
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'us' => 'United States of America',
     'ca' => 'Canada',
     'mx' => 'Mexico',
@@ -98,9 +104,12 @@ return [
     'dm' => 'Dominica',
     'bs' => 'Bahamas',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Asia
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'cn' => 'China',
     'jp' => 'Japan',
     'kr' => 'South Korea',
@@ -146,9 +155,12 @@ return [
     'tj' => 'Tajikistan',
     'tm' => 'Turkmenistan',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Africa
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'eg' => 'Egypt',
     'ly' => 'Libya',
     'tn' => 'Tunisia',
@@ -204,9 +216,12 @@ return [
     'aq' => 'Antarctica',
     'zr' => 'Zaire',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Oceania
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'au' => 'Australia',
     'ax' => 'Aland Islands',
     'nz' => 'New Zealand',
@@ -225,9 +240,12 @@ return [
     'fm' => 'Micronesia',
     'mh' => 'Marshall Islands',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Others
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'xk' => 'Kosovo',
     'va' => 'Vatican City',
     'sm' => 'San Marino',
@@ -281,6 +299,9 @@ return [
     'um' => 'U.S. Minor Outlying Islands',
     'eh' => 'Western Sahara',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -294,6 +315,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -6,6 +6,7 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 use Modules\User\Models\Device;
@@ -20,13 +21,22 @@ use Modules\User\Models\User;
  * @extends Factory<DeviceUser>
  */
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\User\Models\DeviceUser;
+
+>>>>>>> dev
 class DeviceUserFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
     protected $model = \Modules\User\Models\DeviceUser::class;
+=======
+     */
+    protected $model = DeviceUser::class;
+>>>>>>> dev
 
     /**
      * Define the model's default state.
@@ -34,6 +44,7 @@ class DeviceUserFactory extends Factory
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
      *
      * @var class-string<DeviceUser>
@@ -102,5 +113,7 @@ class DeviceUserFactory extends Factory
             'logout_at' => $this->faker->dateTimeBetween($loginAt, 'now'),
         ]);
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 }

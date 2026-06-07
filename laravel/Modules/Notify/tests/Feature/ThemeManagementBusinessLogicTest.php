@@ -2,7 +2,15 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(\Modules\Notify\Tests\TestCase::class);
+=======
+namespace Modules\Notify\Tests\Feature;
+
+use Modules\Notify\Tests\TestCase;
+
+uses(TestCase::class);
+>>>>>>> dev
 
 /**
  * Theme Management Business Logic Tests.

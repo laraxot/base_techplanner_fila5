@@ -5,9 +5,13 @@
 Il trait `HasAddress` fornisce una soluzione standardizzata per la gestione degli indirizzi in tutti i modelli dell'applicazione <main module>. Questo trait implementa il pattern di relazione polimorfica con il modello `Address` del modulo Geo, permettendo a qualsiasi entità di avere uno o più indirizzi associati.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 ## Motivazione Filosofica
 
 ### Principio DRY (Don't Repeat Yourself)
@@ -20,9 +24,13 @@ Il codice per la gestione degli indirizzi era ripetuto in vari modelli, violando
 - Maggiore rischio di errori
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 ### Cohesion vs Coupling
 Il trait rappresenta un equilibrio tra:
 
@@ -30,16 +38,22 @@ Il trait rappresenta un equilibrio tra:
 - **Basso accoppiamento**: Minimizzando le dipendenze tra moduli
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 
 ### Principio di Responsabilità Singola
 Ogni modello dovrebbe avere una sola responsabilità. La gestione degli indirizzi è una responsabilità distinta che merita la propria astrazione.
 
 
+<<<<<<< HEAD
 =======
 ### Principio di Responsabilità Singola
 Ogni modello dovrebbe avere una sola responsabilità. La gestione degli indirizzi è una responsabilità distinta che merita la propria astrazione.
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ## Implementazione Tecnica
 
 Il trait `HasAddress` implementa:
@@ -68,10 +82,14 @@ class Studio extends Model
 {
     use HasAddress;
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // Resto del modello...
 }
 ```

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Code Quality Tooling (User Module)
 
 ## Goals
@@ -110,3 +111,12 @@ If not installed locally, use CI job with `rhysd/actionlint` Docker.
 ## Maintenance
 - Keep this document updated with new rules, exceptions, and module-specific patterns.
 - Document every non-trivial refactor driven by PHPMD in `Modules/User/docs/` (what and why).
+=======
+---
+module: theme
+topic: quality-tooling
+canonical: ../../../Themes/docs/shared-components/quality-tooling.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-tooling.md
+>>>>>>> dev

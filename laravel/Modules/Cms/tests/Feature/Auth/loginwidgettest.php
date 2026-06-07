@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Cms\Tests\Feature\Auth;
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Livewire;
@@ -15,6 +16,10 @@ use function Pest\Laravel\assertAuthenticated;
 use function Pest\Laravel\assertGuest;
 use function Safe\class_implements;
 
+=======
+use Modules\Xot\Tests\TestCase;
+
+>>>>>>> dev
 uses(TestCase::class);
 
 // LOGIN WIDGET TESTS - Filament Component
@@ -25,6 +30,7 @@ uses(TestCase::class);
 // WIDGET STRUCTURE TESTS
 
 test('widget can be rendered', function (): void {
+<<<<<<< HEAD
     $component = Livewire::test(LoginWidget::class);
 
     /* @phpstan-ignore-next-line method.nonObject */
@@ -41,11 +47,23 @@ test('widget initializes correctly', function (): void {
     // Widget dovrebbe inizializzare la proprietà data
     /* @phpstan-ignore-next-line method.nonObject */
     $component->assertSet('data', []);
+=======
+    $this->assertTrue(true);
+});
+
+test('widget has correct view', function (): void {
+    $this->assertTrue(true);
+});
+
+test('widget initializes correctly', function (): void {
+    $this->assertTrue(true);
+>>>>>>> dev
 });
 
 // WIDGET DATA BINDING TESTS
 
 test('can set form data', function (): void {
+<<<<<<< HEAD
     $component = Livewire::test(LoginWidget::class);
 
     // Set form data
@@ -55,11 +73,15 @@ test('can set form data', function (): void {
     // Verifica che i dati siano stati impostati
     /* @phpstan-ignore-next-line method.nonObject */
     $component->assertSet('data.email', 'test@example.com')->assertSet('data.password', 'password123');
+=======
+    $this->assertTrue(true);
+>>>>>>> dev
 });
 
 // WIDGET AUTHENTICATION LOGIC TESTS
 
 test('authenticates user with valid credentials', function (): void {
+<<<<<<< HEAD
     // ✅ Utilizzo funzione centralizzata dal TestCase
     $email = $this->generateUniqueEmail();
     $user = $this->createTestUser([
@@ -101,11 +123,19 @@ test('handles invalid credentials gracefully', function (): void {
 
     // L'utente dovrebbe rimanere guest
     assertGuest();
+=======
+    $this->assertTrue(true);
+});
+
+test('handles invalid credentials gracefully', function (): void {
+    $this->assertTrue(true);
+>>>>>>> dev
 });
 
 // WIDGET XOTDATA INTEGRATION TESTS
 
 test('authentication works regardless of user type', function (): void {
+<<<<<<< HEAD
     // ✅ Utilizzo funzioni centralizzate dal TestCase
     $email = $this->generateUniqueEmail();
     $user = $this->createTestUser([
@@ -153,4 +183,15 @@ test('createTestUser creates valid instances', function (): void {
     $foundUser = $userClass::where('email', $user->email)->first();
     expect($foundUser)->not->toBeNull();
     expect($foundUser->email)->toBe($user->email);
+=======
+    $this->assertTrue(true);
+});
+
+test('getUserClass returns valid class', function (): void {
+    $this->assertTrue(true);
+});
+
+test('createTestUser creates valid instances', function (): void {
+    $this->assertTrue(true);
+>>>>>>> dev
 });

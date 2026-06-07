@@ -99,11 +99,15 @@ activity()
 
 ### Modelli
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [BaseScheda Activity Log](../../ptv/docs/models/base-scheda-activity-log.md) - Status disabilitato
 - [IndennitaResponsabilita Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)
 
 ### Refactoring
 - [SchedaTrait Refactoring Plan](../../sigma/docs/refactoring/scheda-trait-accessor-save-issue.md) - Piano dettagliato fix definitivo
+<<<<<<< HEAD
 =======
 - [BaseScheda Activity Log](../../Ptv/docs/models/base-scheda-activity-log.md) - Status disabilitato
 - [IndennitaResponsabilita Integration](../../IndennitaResponsabilita/docs/activity-log-integration.md)
@@ -111,6 +115,8 @@ activity()
 ### Refactoring
 - [SchedaTrait Refactoring Plan](../../Sigma/docs/refactoring/scheda-trait-accessor-save-issue.md) - Piano dettagliato fix definitivo
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Contatti
 

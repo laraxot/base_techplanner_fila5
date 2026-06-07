@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 # Implementazione Xot
@@ -306,3 +307,6 @@ class XotPageTest extends TestCase
 
 ---
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

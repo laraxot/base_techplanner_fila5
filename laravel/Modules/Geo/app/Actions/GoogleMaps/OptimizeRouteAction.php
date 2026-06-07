@@ -171,11 +171,17 @@ class OptimizeRouteAction
                 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 /** @var Collection<int, LocationData> $typedWaypoints */
                 $typedWaypoints = $waypoints;
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+                /** @var Collection<int, LocationData> $typedWaypoints */
+                $typedWaypoints = $waypoints;
+
+>>>>>>> dev
                 return new RouteData(
                     waypoints: $waypoints,
                     originalWaypoints: $originalLocations,

@@ -28,6 +28,24 @@ return [
             'orientation' => 'Orientation',
         ],
     ],
+<<<<<<< HEAD
+=======
+    'header_nav' => [
+        'label' => 'Header Navigation',
+        'fields' => [
+            'label' => 'Label',
+            'url' => 'URL',
+            'data_element' => 'Data Element',
+            'nav_group' => 'Nav Group',
+            'type' => 'Type',
+            'order' => 'Order',
+            'enabled' => 'Enabled',
+            'visible' => 'Visible',
+            'active_patterns' => 'Active Patterns',
+            'children' => 'Submenu',
+        ],
+    ],
+>>>>>>> dev
     'actions' => [
         'label' => 'Actions',
         'fields' => [
@@ -143,10 +161,16 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -16,6 +16,9 @@ return [
         'domain' => [
             'label' => 'Dominio',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -73,6 +76,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'domains' => [
@@ -102,6 +106,8 @@ return [
         'reorderRecords' => [
             'label' => 'reorderRecords',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -129,8 +135,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Domain',
     'plural_label' => 'Domain (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Domain',
+    'plural_label' => 'Domain (Plurale)',
+>>>>>>> dev
 ];

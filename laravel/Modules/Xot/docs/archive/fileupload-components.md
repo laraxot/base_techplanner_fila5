@@ -346,6 +346,7 @@ class CleanupTemporaryFilesJob extends Job
 - [Laravel File Storage](https://laravel.com/project_docs/10.x/filesystem)
 - [docs/fileupload-foreach-error-fix.md](../../../project_docs/fileupload-foreach-error-fix.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modules/User/project_docs/registration-widget.md](../../user/project_docs/registration-widget.md)
 
 =======
@@ -353,3 +354,7 @@ class CleanupTemporaryFilesJob extends Job
 
 *Ultimo aggiornamento: 2025-01-03*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Modules/User/project_docs/registration-widget.md](../../user/project_docs/registration-widget.md)
+
+>>>>>>> dev

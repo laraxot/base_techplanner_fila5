@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Modifiche Recenti
 
 ### Uso di Spatie Queable Actions
@@ -20,3 +21,12 @@ Questa modifica è stata applicata anche in `UpdateCoordinatesAction`, dove ora 
 =======
 Questa modifica è stata applicata anche in `UpdateCoordinatesAction`, dove ora utilizziamo `GetCoordinatesAction` per aggiornare le coordinate di un luogo.
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: project-backup
+canonical: ../../../Themes/docs/shared-components/PROJECT.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/PROJECT.md
+>>>>>>> dev

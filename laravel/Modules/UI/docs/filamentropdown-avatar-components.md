@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Componenti Dropdown, Avatar e Loading Indicator di Filament 
 
 ## Indice
@@ -253,3 +254,12 @@ Ecco un esempio completo di implementazione del dropdown utente utilizzando i co
 - [Documentazione Avatar di Filament](https://filamentphp.com/docs/3.x/support/blade-components/avatar)
 - [Documentazione Loading Indicator di Filament](https://filamentphp.com/docs/3.x/support/blade-components/loading-indicator)
 - [Documentazione Icone di Filament](https://filamentphp.com/docs/3.x/support/icons)
+=======
+---
+module: theme
+topic: filamentropdown-avatar-components
+canonical: ../../../Themes/docs/shared-components/filament_dropdown_avatar_components.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament_dropdown_avatar_components.md
+>>>>>>> dev

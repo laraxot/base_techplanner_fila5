@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ---
@@ -18,3 +19,6 @@ Pacchetto utilizzato per la gestione delle relazioni padre/figlio
 
 Pacchetto per gestire e tener traccia degli eventi
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Modifiche Recenti
 
 ### Uso di Spatie Queable Actions
@@ -16,3 +17,12 @@ $coordinates = $action->execute('1600 Amphitheatre Parkway, Mountain View, CA');
 ```
 
 Questa modifica è stata applicata anche in `UpdateCoordinatesAction`, dove ora utilizziamo `GetCoordinatesAction` per aggiornare le coordinate di un luogo. 
+=======
+---
+module: theme
+topic: project_backup
+canonical: ../../../Themes/docs/shared-components/PROJECT.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/PROJECT.md
+>>>>>>> dev

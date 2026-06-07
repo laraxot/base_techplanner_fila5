@@ -350,7 +350,11 @@ trait HasTeams
 - [/.cursor/rules/hasteams_jetstream_philosophy.mdc](../../.cursor/rules/hasteams_jetstream_philosophy.mdc)
 - [/.windsurf/rules/hasteams_jetstream_philosophy.mdc](../../.windsurf/rules/hasteams_jetstream_philosophy.mdc)
 - [Modules/Xot/docs/RELATION_X_USAGE.md](../xot/docs/relation_x_usage.md)
+<<<<<<< HEAD
 - [docs/USER_TRAITS_GUIDELINES.md](../../docs/user_traits_guidelines.md)
+=======
+- [docs/USER_TRAITS_GUIDELINES.md](../../../docs/user_traits_guidelines.md)
+>>>>>>> dev
 
 
 ## Analisi del Conflitto con HasTeamsContract

@@ -3,21 +3,34 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
+<<<<<<< HEAD
     "keywords": ["laravel", "framework"],
+=======
+    "keywords": [
+        "laravel",
+        "framework"
+    ],
+>>>>>>> dev
     "license": "MIT",
     "require": {
         "php": "^8.2",
         "filament/filament": "^5.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         "laravel/folio": "^1.2",
         "nwidart/laravel-modules": "*"
     },
     "require-dev-comment": {
+<<<<<<< HEAD
 =======
         "nwidart/laravel-modules": "*"
     },
     "require-dev": {
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         "barryvdh/laravel-debugbar": "*",
         "carthage-software/mago": "*",
         "filament/upgrade": "^5.0",
@@ -32,6 +45,10 @@
         "rector/rector": "^2.3",
         "squizlabs/php_codesniffer": "*"
     },
+<<<<<<< HEAD
+=======
+    "require-dev": {},
+>>>>>>> dev
     "autoload": {
         "psr-4": {
             "App\\": "app/",
@@ -41,7 +58,11 @@
     },
     "autoload-dev": {
         "psr-4": {
+<<<<<<< HEAD
            "Tests\\": "tests/"
+=======
+            "Tests\\": "tests/"
+>>>>>>> dev
         }
     },
     "scripts": {
@@ -61,7 +82,11 @@
             "@php artisan migrate --graceful --ansi"
         ],
         "dev": [
+<<<<<<< HEAD
              "Composer\\Config::disableProcessTimeout",
+=======
+            "Composer\\Config::disableProcessTimeout",
+>>>>>>> dev
             "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite --kill-others"
         ],
         "test": [
@@ -80,14 +105,21 @@
             "@php artisan livewire:publish --assets",
             "@php artisan filament:upgrade",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "@php artisan config:cache",
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            "@php artisan config:cache",
+>>>>>>> dev
             "@php artisan filament:optimize",
             "@php artisan optimize",
             "@php artisan route:clear",
             "@php artisan serve"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         ],
         "refresh": [
             "rm -rf ./app/View/Components/vendor/",
@@ -102,12 +134,18 @@
             "@php artisan filament:optimize",
             "@php artisan optimize",
             "@php artisan route:clear"
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
         ]
     },
     "repositories": [
        
+=======
+        ]
+    },
+    "repositories": [
+>>>>>>> dev
         {
             "type": "composer",
             "url": "https://repo.packagist.org",

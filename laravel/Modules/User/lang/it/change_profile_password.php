@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Password Profilo',
         'plural_label' => 'Password Profilo',
@@ -34,6 +37,7 @@ return [
             'placeholder' => 'Conferma la tua nuova password',
             'helper_text' => 'Devi inserire la stessa password per conferma',
             'description' => 'Inserisci nuovamente la nuova password per confermarla',
+<<<<<<< HEAD
 =======
     'fields' => [
         'new_password_confirmation' => [
@@ -43,11 +47,16 @@ return [
             'description' => 'Inserisci nuovamente la nuova password per confermarla',
             'tooltip' => 'Ripeti la nuova password per sicurezza',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             'icon' => 'heroicon-o-lock-closed',
             'color' => 'warning',
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'actions' => [
         'save' => [
             'label' => 'Salva Password',
@@ -67,10 +76,13 @@ return [
         'password_mismatch' => 'Le password non coincidono',
         'error' => 'Si è verificato un errore',
     ],
+<<<<<<< HEAD
 =======
     'navigation' => [],
     'label' => '',
     'plural_label' => '',
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

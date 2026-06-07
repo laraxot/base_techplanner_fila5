@@ -66,6 +66,7 @@ Verificare che:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Notify Module Documentation](readme.md)
 =======
 - [Notify Module Documentation](README.md)
@@ -79,3 +80,12 @@ Verificare che:
 =======
 *Ultimo aggiornamento: giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Notify Module Documentation](readme.md)
+- [SMS Implementation Guide](sms_implementation.md)
+- [Mail Templates Structure](mail_templates_structure.md)
+- [Translation Standards](translation_standards.md)
+- [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
+
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> dev

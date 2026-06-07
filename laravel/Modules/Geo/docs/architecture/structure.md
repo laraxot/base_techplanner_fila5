@@ -1,16 +1,23 @@
 # Modulo Geo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Data: 2025-04-23 19:09:55
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Informazioni generali
 
 - **Namespace principale**: Modules\\Geo
 Modules\\Geo\\Database\\Factories
 Modules\\Geo\\Database\\Seeders
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_geo_fila3
+=======
+- **Pacchetto Composer**: laraxot/module_geo_fila5
+>>>>>>> dev
 Marco Sottana
 - **Dipendenze**: cheesegrits/filament-google-maps ^3.0 dotswan/filament-map-picker ^1.2 webbingbrasil/filament-maps ^3.0@beta repositories type path url ../Xot type path url ../Tenant type path url ../UI scripts post-autoload-dump_comment
 - **Totale file PHP**: 197

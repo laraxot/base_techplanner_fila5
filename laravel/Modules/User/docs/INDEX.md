@@ -40,6 +40,10 @@ This document serves as the central index for the User module, providing guidanc
 - **Authentication Failures**: Ensure correct configuration of auth providers and middleware for user routes.
 - **Permission Conflicts**: Verify role and permission assignments to avoid access issues.
 - **Session Expiry**: Implement proper session management to handle user logout and timeouts securely.
+<<<<<<< HEAD
+=======
+- **Git "path does not have our version"**: Durante rebase, file "deleted by us" (OauthAccessToken pages). Vedi [git-path-does-not-have-our-version-fix](./git-path-does-not-have-our-version-fix.md).
+>>>>>>> dev
 
 ## Documentation and Updates
 - Document any custom implementations or deviations from standard User module practices in the relevant documentation folder.
@@ -47,22 +51,31 @@ This document serves as the central index for the User module, providing guidanc
 
 ## Links to Related Documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth_pages_implementation.md)
 - [Profile Management](./profile_management.md)
 - [Routing Best Practices](./routing_best_practices.md)
 - [Session Management](./session_management.md)
 =======
+=======
+- [Composer Dependencies](./composer-dependencies.md) - Dipendenze OAuth/login in Modules/User/composer.json (mai nel root)
+- [Auth Social Login Translations](./auth-social-login-translations.md) - Traduzioni e UI pulsanti social (Google, GitHub, Microsoft)
+>>>>>>> dev
 - [BaseUser Model](./BaseUser.md)
 - [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Profile Management](./PROFILE_MANAGEMENT.md)
 - [Routing Best Practices](./ROUTING_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md)
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Sottocartelle
 
 ### Models
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Index](./models/index.md) - Indice della documentazione sui modelli
 - [Documentazione Traits](./traits/index.md) - Documentazione sui trait utilizzati
@@ -71,13 +84,18 @@ This document serves as the central index for the User module, providing guidanc
 - [Documentazione Blade](./blade/index.md) - Documentazione sui template Blade
 - [Componenti](./components/index.md) - Documentazione sui componenti
 =======
+=======
+>>>>>>> dev
 - [Index](./Models/INDEX.md) - Indice della documentazione sui modelli
 - [Documentazione Traits](./traits/INDEX.md) - Documentazione sui trait utilizzati
 
 ### Folio e Blade
 - [Documentazione Blade](./blade/INDEX.md) - Documentazione sui template Blade
 - [Componenti](./components/INDEX.md) - Documentazione sui componenti
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Roadmap e Sviluppo Futuro
 - [Roadmap](./roadmap.md) - Piano di sviluppo futuro del modulo User
@@ -86,9 +104,13 @@ This document serves as the central index for the User module, providing guidanc
 Questa documentazione viene aggiornata regolarmente. Prima di apportare modifiche al codice, consultare la documentazione pertinente e aggiornare i documenti correlati.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Ultimo aggiornamento: 14 Maggio 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+Ultimo aggiornamento: 14 Maggio 2025
+>>>>>>> dev
 
 # Indice Documentazione User
 

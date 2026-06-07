@@ -83,10 +83,14 @@ DatePicker::make('field_name')
     ->format('Y-m-d')
     ->displayFormat('d/m/Y')
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->minDate('[DATE]')
 =======
     ->minDate('2020-01-01')
 >>>>>>> 4b6b99016 (first commit)
+=======
+    ->minDate('[DATE]')
+>>>>>>> dev
     ->maxDate('today')
 ```
 
@@ -97,12 +101,17 @@ DatePicker::make('field_name')
 4. Aggiorna questa documentazione quando trovi nuovi metodi o pattern utili
 ## Collegamenti tra versioni di FILAMENT_COMPONENTS.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [FILAMENT_COMPONENTS.md](../../../xot/docs/filament_components.md)
 * [FILAMENT_COMPONENTS.md](../../../../themes/one/docs/filament_components.md)
 =======
 * [FILAMENT_COMPONENTS.md](../../../Xot/docs/FILAMENT_COMPONENTS.md)
 * [FILAMENT_COMPONENTS.md](../../../../Themes/One/docs/FILAMENT_COMPONENTS.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [FILAMENT_COMPONENTS.md](../../../xot/docs/filament_components.md)
+* [FILAMENT_COMPONENTS.md](../../../../themes/one/docs/filament_components.md)
+>>>>>>> dev
 
 ## Correzione e regole per XotBaseManageRelatedRecords
 
@@ -113,7 +122,11 @@ DatePicker::make('field_name')
 - Ogni correzione deve essere documentata qui e in FILAMENT_TABLE_COLUMNS.md.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)
 =======
 **Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)
+>>>>>>> dev

@@ -39,20 +39,29 @@ I nomi specifici dell'applicazione devono apparire solo:
 
 ## Collegamenti Bidirezionali
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README](readme.md)
 =======
 - [README](README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README](readme.md)
+>>>>>>> dev
 - [Design System](design-system.md)
 - [Componenti](components.md)
 
 ## Vedi Anche
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Documentazione Principale](../../../docs/readme.md)
 =======
 - [Documentazione Principale](../../../docs/README.md)
 >>>>>>> 4b6b99016 (first commit)
 - [Standard di Codice](../../../docs/standards/coding-standards.md)
+=======
+- [Documentazione Principale](../../../../docs/readme.md)
+- [Standard di Codice](../../../../docs/standards/coding-standards.md)
+>>>>>>> dev
 # Regole di Naming nei Moduli
 
 ## Regola: No Nomi Specifici dell'Applicazione
@@ -92,14 +101,19 @@ I nomi specifici dell'applicazione devono apparire solo:
 
 ## Collegamenti Bidirezionali
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README](readme.md)
 =======
 - [README](README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README](readme.md)
+>>>>>>> dev
 - [Design System](design-system.md)
 - [Componenti](components.md)
 
 ## Vedi Anche
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Documentazione Principale](../../../project_docs/readme.md)
 =======
@@ -107,3 +121,8 @@ I nomi specifici dell'applicazione devono apparire solo:
 >>>>>>> 4b6b99016 (first commit)
 - [Standard di Codice](../../../project_docs/standards/coding-standards.md)
 - [Best Practices](../../../project_docs/standards/best-practices.md)
+=======
+- [Documentazione Principale](../../../../docs/project/readme.md)
+- [Standard di Codice](../../../../docs/project/standards/coding-standards.md)
+- [Best Practices](../../../../docs/project/standards/best-practices.md)
+>>>>>>> dev

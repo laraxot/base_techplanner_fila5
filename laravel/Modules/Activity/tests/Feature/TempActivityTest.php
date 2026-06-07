@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\Activity\Tests\Feature;
+
+>>>>>>> dev
 use Illuminate\Support\Collection;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
@@ -9,6 +14,18 @@ use Modules\User\Models\User; // Added
 
 uses(TestCase::class); // Use the custom TestCase
 
+<<<<<<< HEAD
+=======
+beforeEach(function () {
+    // Skip if database not available
+    try {
+        \DB::connection()->getPdo();
+    } catch (\Exception $e) {
+        $this->markTestSkipped('Database not available: '.$e->getMessage());
+    }
+});
+
+>>>>>>> dev
 it('can create activity with basic information', function () {
     $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject
     \assert($user instanceof User);

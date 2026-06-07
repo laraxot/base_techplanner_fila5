@@ -71,10 +71,14 @@ return [
                 'auth_token' => env('TWILIO_AUTH_TOKEN'),
                 'from' => env('TWILIO_WHATSAPP_FROM'),
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'endpoint' => env('TWILIO_WHATSAPP_ENDPOINT', 'https://api.twilio.com/[DATE]/Accounts/{AccountSid}/Messages.json'),
 =======
                 'endpoint' => env('TWILIO_WHATSAPP_ENDPOINT', 'https://api.twilio.com/2010-04-01/Accounts/{AccountSid}/Messages.json'),
 >>>>>>> 4b6b99016 (first commit)
+=======
+                'endpoint' => env('TWILIO_WHATSAPP_ENDPOINT', 'https://api.twilio.com/[DATE]/Accounts/{AccountSid}/Messages.json'),
+>>>>>>> dev
             ],
             'vonage' => [
                 'api_key' => env('VONAGE_API_KEY'),

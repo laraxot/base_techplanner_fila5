@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aggiungere un Form Sopra una Tabella in Filament
 
 Questa guida illustra come implementare un form di creazione direttamente sopra una tabella di risorse in Filament, migliorando l'esperienza utente eliminando la necessità di navigare a una pagina separata per creare nuovi record.
@@ -335,3 +336,12 @@ Seguendo questa guida e rispettando le convenzioni di il progetto, potrai implem
 - [Documentazione di Livewire](https://livewire.laravel.com/docs)
 - [Repository di esempio su GitHub](https://github.com/LaravelDaily/Filament-Form-On-Top-Of-Resource)
 - [FilamentExamples.com](https://filamentexamples.com)
+=======
+---
+module: theme
+topic: filament_form_sopra_tabella
+canonical: ../../../Themes/docs/shared-components/filament-form-sopra-tabella.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-form-sopra-tabella.md
+>>>>>>> dev

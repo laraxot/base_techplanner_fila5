@@ -9,10 +9,13 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Employee\Models\Employee;
 use Modules\Employee\Models\WorkHour;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Tests\TestCase;
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 beforeEach(function () {
     $this->employee = Employee::factory()->create();

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Componente Header
 
 Questo documento fornisce un collegamento alla documentazione dettagliata del componente Header nel modulo CMS.
@@ -8,3 +9,12 @@ Questo documento fornisce un collegamento alla documentazione dettagliata del co
 
 ## Utilizzo nel Progetto
 Il componente Header è utilizzato come elemento principale di navigazione in tutte le pagine del sito. Per maggiori dettagli sulla sua implementazione e configurazione, consultare la documentazione del modulo CMS. 
+=======
+---
+module: theme
+topic: componenti_header
+canonical: ../../../Themes/docs/shared-components/componenti-header.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/componenti-header.md
+>>>>>>> dev

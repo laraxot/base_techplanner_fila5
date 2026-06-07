@@ -1,9 +1,12 @@
 # Code Quality Audit Completo - Gennaio 2025
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-01-22
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **PHPStan Level**: 10
 **Status Generale**: ✅ **0 ERRORI**
 
@@ -28,10 +31,14 @@ Tutti i moduli sono stati analizzati e risultano conformi a PHPStan livello 10.
 
 ### ✅ Completati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Rating**: [code-quality-analysis.md](../rating/docs/code-quality-analysis.md)
 =======
 - **Rating**: [code-quality-analysis.md](../Rating/docs/code-quality-analysis.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Rating**: [code-quality-analysis.md](../rating/docs/code-quality-analysis.md)
+>>>>>>> dev
   - PHPStan: 0 errori
   - PHPDoc: Completo
   - Type Coverage: 100%
@@ -100,6 +107,9 @@ Ogni modulo dovrebbe avere:
 - Le regole e best practices sono in `.cursor/rules/` e `.windsurf/rules/`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-22*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

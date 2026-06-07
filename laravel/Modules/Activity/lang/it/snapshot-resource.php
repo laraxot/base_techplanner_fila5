@@ -8,46 +8,71 @@ return [
             'label' => 'ID',
             'tooltip' => 'Identificativo univoco dello snapshot',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'aggregate_uuid' => [
             'label' => 'UUID Aggregato',
             'tooltip' => 'Identificativo univoco dell\'aggregato',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'aggregate_version' => [
             'label' => 'Versione Aggregato',
             'tooltip' => 'Numero di versione dell\'aggregato',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'state' => [
             'label' => 'Stato',
             'tooltip' => 'Stato corrente dello snapshot',
 <<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'created_at' => [
-            'label' => 'Data Creazione',
-            'tooltip' => 'Data e ora di creazione dello snapshot',
 <<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+            'tooltip' => 'Data e ora di creazione dello snapshot',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -72,6 +97,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Snapshot Resource',
     'plural_label' => 'Snapshot Resource (Plurale)',
     'navigation' => [
@@ -85,6 +113,9 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

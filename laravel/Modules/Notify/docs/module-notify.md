@@ -1,10 +1,17 @@
 # Modulo Notify
 
 ## Informazioni Generali
+<<<<<<< HEAD
 - **Nome**: `laraxot/module_notify_fila3`
 - **Descrizione**: Modulo dedicato alla gestione delle notifiche
 - **Namespace**: `Modules\Notify`
 - **Repository**: https://github.com/laraxot/module_notify_fila3.git
+=======
+- **Nome**: `laraxot/module_notify_fila5`
+- **Descrizione**: Modulo dedicato alla gestione delle notifiche
+- **Namespace**: `Modules\Notify`
+- **Repository**: https://github.com/laraxot/module_notify_fila5.git
+>>>>>>> dev
 
 ## Service Providers
 1. `Modules\Notify\Providers\NotifyServiceProvider`
@@ -117,10 +124,14 @@ Le modifiche vengono tracciate nel repository GitHub.
 ## Collegamenti tra versioni di module_notify.md
 * [module_notify.md](docs/module_notify.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [module_notify.md](../../../notify/docs/module_notify.md)
 =======
 * [module_notify.md](../../../Notify/docs/module_notify.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [module_notify.md](../../../notify/docs/module_notify.md)
+>>>>>>> dev
 
 
 ### Versione Incoming

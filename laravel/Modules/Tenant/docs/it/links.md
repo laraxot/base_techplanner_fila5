@@ -12,6 +12,9 @@ section: content
 
 ## Collegamenti tra versioni di links.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [links.md](../../../gdpr/docs/links.md)
 * [links.md](../../../notify/docs/links.md)
 * [links.md](../../../xot/docs/ci/links.md)
@@ -22,6 +25,7 @@ section: content
 * [links.md](../../../tenant/docs/it/links/links.md)
 * [links.md](../../../cms/docs/links.md)
 * [links.md](../../../../themes/one/docs/links.md)
+<<<<<<< HEAD
 =======
 * [links.md](../../../Gdpr/docs/links.md)
 * [links.md](../../../Notify/docs/links.md)
@@ -34,6 +38,8 @@ section: content
 * [links.md](../../../Cms/docs/links.md)
 * [links.md](../../../../Themes/One/docs/links.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### Versione Incoming
 

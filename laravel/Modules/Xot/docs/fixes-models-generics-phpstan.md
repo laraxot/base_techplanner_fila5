@@ -1,10 +1,14 @@
 # Fix PHPStan Modelli - Generics e Tipizzazione Completa
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Data: [DATE]
 =======
 ## Data: 2025-01-27
 >>>>>>> 4b6b99016 (first commit)
+=======
+## Data: [DATE]
+>>>>>>> dev
 
 ## Problema Identificato
 

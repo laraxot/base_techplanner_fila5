@@ -11,6 +11,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Table',
     'plural_label' => 'Table (Plurale)',
     'navigation' => [
@@ -55,6 +58,9 @@ return [
             'label' => 'Elimina Table',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

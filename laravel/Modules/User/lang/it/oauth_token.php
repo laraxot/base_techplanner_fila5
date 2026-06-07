@@ -66,6 +66,9 @@ return [
                 'label' => 'client.name',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -115,6 +118,7 @@ return [
     ],
     'label' => 'Oauth Token',
     'plural_label' => 'Oauth Token (Plurale)',
+<<<<<<< HEAD
 =======
         ],
         'name' => [
@@ -137,4 +141,6 @@ return [
     'label' => '',
     'plural_label' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

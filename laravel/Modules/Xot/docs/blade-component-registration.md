@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 # Registrazione Componenti Blade
@@ -121,3 +122,6 @@ class MyComponent extends Component
 - [service-provider-best-practices.md](service-provider-best-practices.md)
 - [filament-best-practices.md](filament-best-practices.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

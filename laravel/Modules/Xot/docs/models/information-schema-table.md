@@ -42,13 +42,19 @@ class InformationSchemaTable extends Model
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Database Guidelines](../database-guidelines.md)
 - [Schema Documentation](../directory-structure-guide.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Model Best Practices](../models/readme.md)
+<<<<<<< HEAD
 =======
 - [Database Guidelines](../DATABASE-GUIDELINES.md)
 - [Schema Documentation](../DIRECTORY-STRUCTURE-GUIDE.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Model Best Practices](../models/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

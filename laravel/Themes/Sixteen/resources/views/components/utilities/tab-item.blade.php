@@ -24,7 +24,15 @@
        {{ $disabledAttr }}>
         @if($icon)
             <span class="tab-icon">
+<<<<<<< HEAD
                 <x-icon name="{{ $icon }}" />
+=======
+                <x-filament::icon 
+                    :icon="$icon" 
+                    class="w-5 h-5 mr-2" 
+                    aria-hidden="true" 
+                />
+>>>>>>> dev
             </span>
         @endif
         <span class="tab-title">{{ $title }}</span>

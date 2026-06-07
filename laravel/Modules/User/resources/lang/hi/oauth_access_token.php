@@ -15,6 +15,9 @@ return [
         'id' => [
             'label' => 'आईडी',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -54,6 +57,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'user_id' => [
@@ -74,6 +78,8 @@ return [
         'expires_at' => [
             'label' => 'समाप्ति तिथि',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [

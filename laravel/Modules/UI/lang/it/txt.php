@@ -8,6 +8,9 @@ return [
     'view' => 'vedi',
     'note' => 'note',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Txt',
     'plural_label' => 'Txt (Plurale)',
     'navigation' => [
@@ -52,6 +55,9 @@ return [
             'label' => 'Elimina Txt',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

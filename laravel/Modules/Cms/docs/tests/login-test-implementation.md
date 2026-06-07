@@ -275,12 +275,17 @@ expect($schema)->toHaveCount(3)
 
 ### Internal Links
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [UserFactory Implementation](../../<nome progetto>/docs/factories/userfactory-implementation-final.md)
 - [LoginWidget Documentation](../../user/docs/widgets/login-widget.md)
 =======
 - [UserFactory Implementation](../../<nome progetto>/docs/factories/UserFactory-implementation-final.md)
 - [LoginWidget Documentation](../../User/docs/widgets/login-widget.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [UserFactory Implementation](../../<nome progetto>/docs/factories/userfactory-implementation-final.md)
+- [LoginWidget Documentation](../../user/docs/widgets/login-widget.md)
+>>>>>>> dev
 - [STI Architecture](../../<nome progetto>/docs/models/sti-architecture.md)
 
 ### External References
@@ -291,9 +296,12 @@ expect($schema)->toHaveCount(3)
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Created**: Gennaio 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Status**: ✅ PRODUCTION READY
 **Test Coverage**: 🎯 100% Login Functionality
 **Maintainer**: Modulo Cms Testing Team

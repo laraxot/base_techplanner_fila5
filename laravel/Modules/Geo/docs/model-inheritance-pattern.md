@@ -24,10 +24,14 @@ La scelta di estendere `\Modules\Geo\Models\BaseModel` invece di `Illuminate\Dat
 A livello filosofico, questa scelta riflette:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Principio DRY (Don't Repeat Yourself)**: 
 =======
 1. **Principio DRY (Don't Repeat Yourself)**:
 >>>>>>> 4b6b99016 (first commit)
+=======
+1. **Principio DRY (Don't Repeat Yourself)**: 
+>>>>>>> dev
    - Le configurazioni comuni sono definite una sola volta
    - Ogni conoscenza ha una rappresentazione singola e autorevole
 

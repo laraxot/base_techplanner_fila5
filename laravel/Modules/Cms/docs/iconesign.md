@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CMS Module - Icon Design
 
 ## Concetto Design
@@ -45,3 +46,12 @@ FilamentIcon::register([
 - [CMS Module Documentation](./readme.md)
 
 *Creato: Agosto 2025*
+=======
+---
+module: theme
+topic: iconesign
+canonical: ../../../Themes/docs/shared-components/icon-design.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/icon-design.md
+>>>>>>> dev

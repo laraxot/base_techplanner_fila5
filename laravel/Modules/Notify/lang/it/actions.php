@@ -27,10 +27,14 @@ return [
             'phone_not_available' => 'Numero di telefono non disponibile per questo record',
             'whatsapp_not_available' => 'Numero WhatsApp non disponibile per questo record',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'channel_not_sent' => 'Canale non inviato (dati non disponibili]',
 =======
             'channel_not_sent' => 'Canale non inviato (dati non disponibili)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'channel_not_sent' => 'Canale non inviato (dati non disponibili]',
+>>>>>>> dev
         ],
         'notifications' => [
             'success' => [
@@ -44,15 +48,22 @@ return [
             'error' => [
                 'title' => 'Alcune notifiche non sono state inviate',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'item' => 'Record :record (canale :channel]: :error',
 =======
                 'item' => 'Record :record (canale :channel): :error',
 >>>>>>> 4b6b99016 (first commit)
+=======
+                'item' => 'Record :record (canale :channel]: :error',
+>>>>>>> dev
                 'more_errors' => '... e altri :count errori',
             ],
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Actions',
     'plural_label' => 'Actions (Plurale)',
     'navigation' => [
@@ -97,6 +108,9 @@ return [
             'label' => 'Elimina Actions',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

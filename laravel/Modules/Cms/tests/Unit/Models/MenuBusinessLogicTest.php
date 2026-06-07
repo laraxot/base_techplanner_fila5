@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\Cms\Tests\TestCase::class);
+=======
+>>>>>>> dev
 use Modules\Cms\Models\BaseModel;
 use Modules\Cms\Models\Menu;
 use Modules\Tenant\Models\Traits\SushiToJsons;
@@ -11,6 +14,10 @@ use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
 use function Safe\class_uses;
 
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Builder;
+<<<<<<< HEAD
+=======
+use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
+>>>>>>> dev
 
 describe('Menu Business Logic', function () {
     test('menu extends base model', function () {
@@ -26,7 +33,11 @@ describe('Menu Business Logic', function () {
         $traits = class_uses_recursive(Menu::class);
 
         // Menu uses HasRecursiveRelationships from staudenmeir/laravel-adjacency-list
+<<<<<<< HEAD
         expect(array_values($traits))->toContain(Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships::class);
+=======
+        expect(array_values($traits))->toContain(HasRecursiveRelationships::class);
+>>>>>>> dev
     });
 
     test('menu has sushi to json trait', function () {

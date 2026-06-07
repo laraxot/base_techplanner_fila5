@@ -225,12 +225,17 @@ array<string, mixed> $attributes
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Xot - PHPStan Missing Array Types](../xot/docs/phpstan-missing-array-types-fixes.md)
 - [Xot - PHPStan Critical Rules](../xot/docs/phpstan-critical-rules.md)
 =======
 - [Xot - PHPStan Missing Array Types](../Xot/docs/phpstan-missing-array-types-fixes.md)
 - [Xot - PHPStan Critical Rules](../Xot/docs/phpstan-critical-rules.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Xot - PHPStan Missing Array Types](../xot/docs/phpstan-missing-array-types-fixes.md)
+- [Xot - PHPStan Critical Rules](../xot/docs/phpstan-critical-rules.md)
+>>>>>>> dev
 - [docs_project - PHPStan Intouchable Rule](../../../docs_project/phpstan-intouchable-rule.md)
 
 ---

@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< HEAD
 /*
  * Migrazione per team_user con id autoincrement.
  *
@@ -19,11 +20,17 @@ return new class extends XotBaseMigration {
 
     /**
      * Esegue la migrazione.
+=======
+return new class extends XotBaseMigration {
+    /**
+     * Run the migrations.
+>>>>>>> dev
      */
     public function up(): void
     {
         // -- CREATE --
         $this->tableCreate(static function (Blueprint $table): void {
+<<<<<<< HEAD
             $table->id();
             $table->foreignId('team_id');
             $table->uuid('user_id')->nullable()->index();
@@ -31,10 +38,21 @@ return new class extends XotBaseMigration {
 
             // Indice univoco per evitare duplicati team_id + user_id
             $table->unique(['team_id', 'user_id']);
+=======
+            // $table->uuid('id')->primary();
+            $table->id();
+            $table->foreignId('team_id');
+            $table->uuid('user_id')->nullable()->index();
+            // $table->foreignIdFor(\Modules\Xot\Datas\XotData::make()->getUserClass());
+            $table->string('role')->nullable();
+
+            // $table->unique(['team_id', 'user_id']);
+>>>>>>> dev
         });
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+<<<<<<< HEAD
             // Se la tabella esiste già con id UUID, convertiamo a autoincrement
             if ($this->hasColumn('id') && in_array($this->getColumnType('id'), ['string', 'guid'], true)) {
                 // Rimuoviamo la PRIMARY KEY esistente
@@ -85,6 +103,11 @@ return new class extends XotBaseMigration {
                 $table->unique(['team_id', 'user_id'], 'team_user_team_id_user_id_unique');
             }
             */
+=======
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
+
+            // $this->updateUser($table);
+>>>>>>> dev
         });
     }
 };

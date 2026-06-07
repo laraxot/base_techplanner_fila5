@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # GDPR Consent Implementation Guide
 
 ## Overview
@@ -107,3 +108,12 @@ For more details, refer to the [official documentation](https://github.com/maize
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: implementation
+canonical: ../../../Themes/docs/shared-components/implementation-guide-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/implementation-guide-1.md
+>>>>>>> dev

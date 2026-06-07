@@ -32,6 +32,7 @@ public function getTableColumns(): array
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regola Generale - Modulo Xot](../../../xot/docs/filament_table_columns.md)
 =======
 - [Regola Generale - Modulo Xot](../../../Xot/docs/FILAMENT_TABLE_COLUMNS.md)
@@ -44,5 +45,12 @@ public function getTableColumns(): array
 =======
 **Ultimo aggiornamento:** 2025-05-13
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Regola Generale - Modulo Xot](../../../xot/docs/filament_table_columns.md)
+- [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
+
+---
+
+>>>>>>> dev
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs di Xot per riferimenti e cross-link.

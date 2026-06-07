@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Azioni di Cast Sicure - Sostituzione di property_exists
 
 ## Panoramica
@@ -223,3 +224,12 @@ Le azioni di cast sono completamente testate e supportano PHPStan livello 9+:
 - [SafeStringCastAction](../app/Actions/Cast/SafeStringCastAction.php)
 - [SafeBooleanCastAction](../app/Actions/Cast/SafeBooleanCastAction.php)
 - [SafeArrayCastAction](../app/Actions/Cast/SafeArrayCastAction.php)
+=======
+---
+module: theme
+topic: cast-actions
+canonical: ../../../../Themes/docs/shared-components/cast-actions.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/cast-actions.md
+>>>>>>> dev

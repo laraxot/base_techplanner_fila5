@@ -142,6 +142,9 @@ return [
         'transformation_realized' => 'Trasformazione realizzata con successo',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Success',
     'plural_label' => 'Success (Plurale)',
     'navigation' => [
@@ -186,6 +189,9 @@ return [
             'label' => 'Elimina Success',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

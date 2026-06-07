@@ -232,10 +232,14 @@ public function toMail(object $notifiable): MailMessage
 
 ### **Documentazione Correlata**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README.md Modulo Notify](./readme.md)
 =======
 - [README.md Modulo Notify](./README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README.md Modulo Notify](./readme.md)
+>>>>>>> dev
 - [Template Management](./template-management.md)
 - [Best Practices](./best-practices.md)
 

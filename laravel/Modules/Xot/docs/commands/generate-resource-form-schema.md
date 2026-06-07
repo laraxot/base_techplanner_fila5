@@ -55,9 +55,14 @@ return [
 ## Collegamenti
 - [Filament Best Practices](../filament-best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Form Components](../componenti_personalizzati.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 =======
 - [Form Components](../COMPONENTI_PERSONALIZZATI.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Form Components](../componenti_personalizzati.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DRY & KISS Analysis - Modulo Activity
 
 **Data:** 15 Ottobre 2025
@@ -30,3 +31,12 @@ abstract class BaseModel extends XotBaseModel
 
 ---
 [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+=======
+---
+module: theme
+topic: dry-kiss-analysis-1
+canonical: ../../../Themes/docs/shared-components/dry-kiss-analysis-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-1.md
+>>>>>>> dev

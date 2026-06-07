@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Europa
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'it' => 'Italiener',
     'fr' => 'Franzose',
     'de' => 'Deutscher',
@@ -52,9 +55,12 @@ return [
     'am' => 'Armenier',
     'az' => 'Aserbaidschaner',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Amerika
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'us' => 'Amerikaner',
     'ca' => 'Kanadier',
     'mx' => 'Mexikaner',
@@ -98,9 +104,12 @@ return [
     'dm' => 'Dominikaner',
     'bs' => 'Bahamaer',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Asien
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'cn' => 'Chinese',
     'jp' => 'Japaner',
     'kr' => 'Südkoreaner',
@@ -146,9 +155,12 @@ return [
     'tj' => 'Tadschike',
     'tm' => 'Turkmen',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Afrika
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'eg' => 'Ägypter',
     'ly' => 'Libyer',
     'tn' => 'Tunesier',
@@ -204,9 +216,12 @@ return [
     'aq' => 'Antarktiker',
     'zr' => 'Zairer',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Ozeanien
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'au' => 'Australier',
     'ax' => 'Åländer',
     'nz' => 'Neuseeländer',
@@ -225,9 +240,12 @@ return [
     'fm' => 'Mikronesier',
     'mh' => 'Marshaller',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Andere
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'xk' => 'Kosovare',
     'va' => 'Vatikaner',
     'sm' => 'San-Marinese',
@@ -281,6 +299,9 @@ return [
     'um' => 'US-Außengebiete',
     'eh' => 'Westsahara',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -294,6 +315,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

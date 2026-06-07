@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Lezioni Apprese - Risoluzione Massiva Merge Conflicts ([DATE])
 =======
 # Lezioni Apprese - Risoluzione Massiva Merge Conflicts (2025-11-04)
 >>>>>>> 4b6b99016 (first commit)
+=======
+# Lezioni Apprese - Risoluzione Massiva Merge Conflicts ([DATE])
+>>>>>>> dev
 
 ## 🎯 Missione Completata
 
@@ -118,6 +122,7 @@ ps -p $PID  # ✅ Running!
 
 Creati 3 nuovi documenti:
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. `merge-conflict-resolution-[DATE].md` - Report tecnico dettagliato
 2. `file-locking-pattern.md` - Nuova regola fondamentale
 3. `lessons-learned-[DATE]-merge-conflicts.md` - Questo documento
@@ -126,6 +131,11 @@ Creati 3 nuovi documenti:
 2. `file-locking-pattern.md` - Nuova regola fondamentale
 3. `lessons-learned-2025-11-04-merge-conflicts.md` - Questo documento
 >>>>>>> 4b6b99016 (first commit)
+=======
+1. `merge-conflict-resolution-[DATE].md` - Report tecnico dettagliato
+2. `file-locking-pattern.md` - Nuova regola fondamentale
+3. `lessons-learned-[DATE]-merge-conflicts.md` - Questo documento
+>>>>>>> dev
 
 ### 10. **AGGIORNAMENTO E STUDIO**
 
@@ -248,10 +258,14 @@ public null|string $var = null;
 ## 💾 Documentazione Creata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **merge-conflict-resolution-[DATE].md**
 =======
 1. **merge-conflict-resolution-2025-11-04.md**
 >>>>>>> 4b6b99016 (first commit)
+=======
+1. **merge-conflict-resolution-[DATE].md**
+>>>>>>> dev
    - Report tecnico completo
    - Pattern identificati
    - Script utilizzati
@@ -269,10 +283,14 @@ public null|string $var = null;
    - File locking integration
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. **lessons-learned-[DATE]-merge-conflicts.md** (questo file)
 =======
 4. **lessons-learned-2025-11-04-merge-conflicts.md** (questo file)
 >>>>>>> 4b6b99016 (first commit)
+=======
+4. **lessons-learned-[DATE]-merge-conflicts.md** (questo file)
+>>>>>>> dev
    - Processo completo 10-step
    - Filosofia + Implementation
    - Checklist operativa
@@ -332,10 +350,14 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 ## 📚 References
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Merge Conflict Resolution Report](./merge-conflict-resolution-[date].md)
 =======
 - [Merge Conflict Resolution Report](./merge-conflict-resolution-2025-11-04.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Merge Conflict Resolution Report](./merge-conflict-resolution-[date].md)
+>>>>>>> dev
 - [File Locking Pattern](./file-locking-pattern.md)
 - [Service Providers](./service-providers.md)
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md)
@@ -345,16 +367,22 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 **Data:** [DATE]
 **Autore:** AI Claude + Metodologia Filosofica 10-Step
 **Status:** ✅ COMPLETATO CON SUCCESSO
 # Lezioni Apprese - Risoluzione Massiva Merge Conflicts ([DATE])
+<<<<<<< HEAD
 =======
 **Data:** 2025-11-04
 **Autore:** AI Claude + Metodologia Filosofica 10-Step
 **Status:** ✅ COMPLETATO CON SUCCESSO
 # Lezioni Apprese - Risoluzione Massiva Merge Conflicts (2025-11-04)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## 🎯 Missione Completata
 
@@ -470,6 +498,7 @@ ps -p $PID  # ✅ Running!
 
 Creati 3 nuovi documenti:
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. `merge-conflict-resolution-[DATE].md` - Report tecnico dettagliato
 2. `file-locking-pattern.md` - Nuova regola fondamentale
 3. `lessons-learned-[DATE]-merge-conflicts.md` - Questo documento
@@ -478,6 +507,11 @@ Creati 3 nuovi documenti:
 2. `file-locking-pattern.md` - Nuova regola fondamentale
 3. `lessons-learned-2025-11-04-merge-conflicts.md` - Questo documento
 >>>>>>> 4b6b99016 (first commit)
+=======
+1. `merge-conflict-resolution-[DATE].md` - Report tecnico dettagliato
+2. `file-locking-pattern.md` - Nuova regola fondamentale
+3. `lessons-learned-[DATE]-merge-conflicts.md` - Questo documento
+>>>>>>> dev
 
 ### 10. **AGGIORNAMENTO E STUDIO**
 
@@ -601,10 +635,14 @@ public null|string $var = null;
 ## 💾 Documentazione Creata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **merge-conflict-resolution-[DATE].md**
 =======
 1. **merge-conflict-resolution-2025-11-04.md**
 >>>>>>> 4b6b99016 (first commit)
+=======
+1. **merge-conflict-resolution-[DATE].md**
+>>>>>>> dev
    - Report tecnico completo
    - Pattern identificati
    - Script utilizzati
@@ -622,10 +660,14 @@ public null|string $var = null;
    - File locking integration
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. **lessons-learned-[DATE]-merge-conflicts.md** (questo file)
 =======
 4. **lessons-learned-2025-11-04-merge-conflicts.md** (questo file)
 >>>>>>> 4b6b99016 (first commit)
+=======
+4. **lessons-learned-[DATE]-merge-conflicts.md** (questo file)
+>>>>>>> dev
    - Processo completo 10-step
    - Filosofia + Implementation
    - Checklist operativa
@@ -685,10 +727,14 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 ## 📚 References
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Merge Conflict Resolution Report](./merge-conflict-resolution-[date].md)
 =======
 - [Merge Conflict Resolution Report](./merge-conflict-resolution-2025-11-04.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Merge Conflict Resolution Report](./merge-conflict-resolution-[date].md)
+>>>>>>> dev
 - [File Locking Pattern](./file-locking-pattern.md)
 - [Service Providers](./service-providers.md)
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md)
@@ -698,9 +744,13 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data:** [DATE]
 =======
 **Data:** 2025-11-04
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data:** [DATE]
+>>>>>>> dev
 **Autore:** AI Claude + Metodologia Filosofica 10-Step
 **Status:** ✅ COMPLETATO CON SUCCESSO

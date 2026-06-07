@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
@@ -189,3 +190,12 @@ invece di:
 ## Conclusione
 
 Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . Assicurarsi di includere sempre la localizzazione negli URL e di utilizzare i componenti Filament per la UI.
+=======
+---
+module: theme
+topic: volt_folio_logout
+canonical: ../../../Themes/docs/shared-components/volt_folio_logout.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/volt_folio_logout.md
+>>>>>>> dev

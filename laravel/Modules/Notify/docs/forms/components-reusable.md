@@ -1,9 +1,12 @@
 # Componenti Form Riutilizzabili - Notify Module
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 19 Dicembre 2025  
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Stato**: ✅ Implementato  
 **Motivazione**: DRY, Riutilizzabilità, Manutenibilità
 

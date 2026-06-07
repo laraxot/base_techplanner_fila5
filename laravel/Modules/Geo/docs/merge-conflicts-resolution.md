@@ -2,10 +2,14 @@
 
 ## Panoramica
 <<<<<<< HEAD
+<<<<<<< HEAD
 Data: [DATE]
 =======
 Data: 2025-07-30
 >>>>>>> 4b6b99016 (first commit)
+=======
+Data: [DATE]
+>>>>>>> dev
 Conflitti identificati: 34 file
 Strategia: DRY, KISS, analisi contestuale
 
@@ -14,10 +18,14 @@ Strategia: DRY, KISS, analisi contestuale
 ### Modelli (8 file)
 - `app/Models/Address.php`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `app/Models/County.php` 
 =======
 - `app/Models/County.php`
 >>>>>>> 4b6b99016 (first commit)
+=======
+- `app/Models/County.php` 
+>>>>>>> dev
 - `app/Models/GeoNamesCap.php`
 - `app/Models/Location.php`
 - `app/Models/Place.php`
@@ -78,10 +86,14 @@ Strategia: DRY, KISS, analisi contestuale
 ## Status Risoluzione
 - [ ] Modelli (3/8) - ✅ Address.php, County.php, GeographicalScopes.php risolti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Actions (0/12) 
 =======
 - [ ] Actions (0/12)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [ ] Actions (0/12) 
+>>>>>>> dev
 - [ ] Filament (0/5)
 - [ ] Data Objects (0/2)
 - [ ] Services (0/2)
@@ -103,10 +115,14 @@ Strategia: DRY, KISS, analisi contestuale
 - **Conflitto**: Già risolto correttamente
 - **Stato**: Utilizza correttamente `GetDistanceExpressionAction` centralizzata
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Implementazione**: 
 =======
 - **Implementazione**:
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Implementazione**: 
+>>>>>>> dev
   - Scope `scopeWithDistance` per calcolo distanza
   - Scope `scopeOrderByDistance` per ordinamento geografico
   - Metodo `getDistanceExpression` che delega all'action

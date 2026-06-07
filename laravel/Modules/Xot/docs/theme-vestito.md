@@ -52,7 +52,12 @@ Themes/[ThemeName]/
 │   │   ├── components/
 │   │   ├── layouts/
 │   │   └── pages/
+<<<<<<< HEAD
 ├── _quaeris_fila4_mono.code-workspace
+=======
+├── _healthcare_app_fila5_mono.code-workspace
+├── _app_fila5_mono.code-workspace
+>>>>>>> dev
 ├── package.json
 ├── postcss.config.js
 ├── tailwind.config.js
@@ -293,7 +298,11 @@ Themes implement accessibility features while maintaining module functionality:
 
 ### KISS (Keep It Simple, Stupid)
 - Simple theme switching
+<<<<<<< HEAD
 - Predictable view resolution
+=======
+- <nome progetto>able view resolution
+>>>>>>> dev
 - Clear separation of concerns
 - Minimal configuration needed
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Personalizzazioni Avanzate di Filament in il progetto
 
 Questa guida illustra le tecniche avanzate per personalizzare Filament all'interno del framework il progetto, con particolare attenzione alle funzionalità che migliorano l'esperienza utente e la manutenibilità del codice.
@@ -377,3 +378,12 @@ Queste personalizzazioni avanzate di Filament consentono di creare interfacce am
 - [Documentazione ufficiale di Filament](https://filamentphp.com/docs)
 - [FilamentExamples.com](https://filamentexamples.com)
 - [Repository GitHub di Filament](https://github.com/filamentphp/filament)
+=======
+---
+module: theme
+topic: filament_personalizzazioni_avanzate
+canonical: ../../../Themes/docs/shared-components/filament-personalizzazioni-avanzate.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-personalizzazioni-avanzate.md
+>>>>>>> dev

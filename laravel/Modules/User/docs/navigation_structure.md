@@ -140,6 +140,7 @@ Event::dispatch('user.action', [
 
 ## Collegamenti Correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Header Components](./header_components.md)
 - [Security Best Practices](./security_best_practices.md)
 - [Session Management](./session_management.md) 
@@ -148,3 +149,8 @@ Event::dispatch('user.action', [
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md) 
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Header Components](./header_components.md)
+- [Security Best Practices](./security_best_practices.md)
+- [Session Management](./session_management.md) 
+>>>>>>> dev

@@ -1,9 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 # Xot Module - PHPStan Level 10 Analysis
 
 ## 📊 Current Status
 
 
+<<<<<<< HEAD
 =======
 # Xot Module - PHPStan Level 10 Analysis (January 2026)
 
@@ -11,6 +15,8 @@
 
 **Analysis Date**: 2026-01-13  
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **PHPStan Level**: 10  
 **Total Errors**: **0** ✅  
 **Command**: `./vendor/bin/phpstan analyse Modules/Xot --level=10`
@@ -44,10 +50,14 @@ bootstrapFiles:
 
 **Files Modified**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [phpstan.neon](../../../phpstan.neon)
 =======
 - [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [phpstan.neon](../../../phpstan.neon)
+>>>>>>> dev
 
 ---
 
@@ -69,10 +79,14 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 
 **Files Modified**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [PassportHasApiTokensContract.php](../../../app/Contracts/PassportHasApiTokensContract.php)
 =======
 - [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [PassportHasApiTokensContract.php](../../../app/Contracts/PassportHasApiTokensContract.php)
+>>>>>>> dev
 
 **Rationale**: Both `Token` and `TransientToken` implement `ScopeAuthorizable`, so using the interface provides better compatibility and follows Liskov Substitution Principle.
 
@@ -94,10 +108,14 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 
 **Files Modified**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [BaseUser.php](../../../User/app/Models/BaseUser.php)
 =======
 - [BaseUser.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/app/Models/BaseUser.php)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [BaseUser.php](../../../User/app/Models/BaseUser.php)
+>>>>>>> dev
 
 ---
 
@@ -109,20 +127,28 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 
 **Files Modified**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [phpstan.neon](../../../phpstan.neon)
 =======
 - [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [phpstan.neon](../../../phpstan.neon)
+>>>>>>> dev
 
 ---
 
 ## 📈 Previous vs Current State
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Previous State
 =======
 ### Previous State (January 2025 Roadmap)
 >>>>>>> 4b6b99016 (first commit)
+=======
+### Previous State
+>>>>>>> dev
 - **242 errors** in 63 files
 - Major issues with:
   - `argument.type`: 127 errors (52.5%)
@@ -130,10 +156,14 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
   - `return.type`: 21 errors (8.7%)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Current State
 =======
 ### Current State (January 2026)
 >>>>>>> 4b6b99016 (first commit)
+=======
+### Current State
+>>>>>>> dev
 - **0 errors** ✅
 - All type safety issues resolved
 - Full Passport 13.4+ compatibility
@@ -160,6 +190,7 @@ These fixes impact **ALL modules** that depend on Xot:
 ## 🔗 Related Documentation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Passport Integration Guide](../../../user/docs/passport.md)
 - [Passport Configuration](../../../tenant/docs/it/config/passport.md)
 - [Previous PHPStan Roadmap](./phpstan-errors-resolution-roadmap.md)
@@ -168,15 +199,24 @@ These fixes impact **ALL modules** that depend on Xot:
 - [Passport Configuration](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Tenant/docs/it/config/passport.md)
 - [Previous PHPStan Roadmap](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/docs/phpstan-errors-resolution-roadmap.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Passport Integration Guide](../../../user/docs/passport.md)
+- [Passport Configuration](../../../tenant/docs/it/config/passport.md)
+- [Previous PHPStan Roadmap](./phpstan-errors-resolution-roadmap.md)
+>>>>>>> dev
 
 ## ✅ Verification
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd ../../..
 =======
 cd /var/www/_bases/base_ptvx_fila4_mono/laravel
 >>>>>>> 4b6b99016 (first commit)
+=======
+cd ../../..
+>>>>>>> dev
 ./vendor/bin/phpstan analyse Modules/Xot --level=10
 
 # Output:
@@ -194,9 +234,13 @@ cd /var/www/_bases/base_ptvx_fila4_mono/laravel
 
 **Status**: ✅ **COMPLETE - 0 ERRORS**  
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 **Last Updated**: 2026-01-13  
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 **PHPStan Level**: 10  
 **Compliance**: 100%

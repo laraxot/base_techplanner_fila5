@@ -1,10 +1,14 @@
 # Changelog Migrazioni Notify Module
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## [DATE]: Aggiunta Campo Slug a Mail Templates
 =======
 ## 2024-03-20: Aggiunta Campo Slug a Mail Templates
 >>>>>>> 4b6b99016 (first commit)
+=======
+## [DATE]: Aggiunta Campo Slug a Mail Templates
+>>>>>>> dev
 
 ### Modifiche
 - Aggiunto campo `slug` alla tabella `mail_templates`
@@ -34,6 +38,7 @@
 
 ### Collegamenti Correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Proposta Slug](./spatie_email_slug_proposal.md)
 - [Sistema Template Email](./email_templates.md)
 - [Email Dottori](./doctor_emails.md) 
@@ -42,3 +47,8 @@
 - [Sistema Template Email](./EMAIL_TEMPLATES.md)
 - [Email Dottori](./DOCTOR_EMAILS.md) 
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Proposta Slug](./spatie_email_slug_proposal.md)
+- [Sistema Template Email](./email_templates.md)
+- [Email Dottori](./doctor_emails.md) 
+>>>>>>> dev

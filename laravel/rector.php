@@ -7,6 +7,9 @@ use Rector\Config\RectorConfig;
 return RectorConfig::configure()
     ->withPaths([
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         __DIR__.'/Modules',
         __DIR__.'/Themes',
         __DIR__.'/app',
@@ -17,6 +20,7 @@ return RectorConfig::configure()
         __DIR__.'/resources',
         __DIR__.'/routes',
         __DIR__.'/tests',
+<<<<<<< HEAD
 =======
         __DIR__ . '/Modules',
         __DIR__ . '/Themes',
@@ -29,6 +33,8 @@ return RectorConfig::configure()
         __DIR__ . '/routes',
         __DIR__ . '/tests',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ])
     // uncomment to reach your current PHP version
     // ->withPhpSets()

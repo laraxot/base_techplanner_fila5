@@ -109,3 +109,7 @@ Prima di committare, verifica:
 - [Service Provider Architecture](./service_provider_architecture.md)
 - [XotBaseRelationManager Documentation](../../xot/docs/filament/relation-managers.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Gennaio 2026*
+>>>>>>> dev

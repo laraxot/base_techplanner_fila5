@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Approfondita dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
@@ -242,3 +243,12 @@ Questi errori evidenziano l'importanza di:
 - Analizzare attentamente il codice esistente prima di proporre modifiche
 - Comprendere a fondo le classi base e le loro restrizioni
 - Rispettare le convenzioni e le strutture del progetto <nome progetto>
+=======
+---
+module: theme
+topic: logout-blade-error-analysis
+canonical: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
+>>>>>>> dev

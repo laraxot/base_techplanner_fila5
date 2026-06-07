@@ -26,6 +26,7 @@
       }
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "laravel-boost": {
       "command": "/var/www/_bases/base_quaeris_fila5_mono/bashscripts/mcp/laravel-boost-wrapper.sh",
       "args": [],
@@ -38,6 +39,13 @@
       "env": {
         "LARAVEL_PATH": "./laravel"
 >>>>>>> 4b6b99016 (first commit)
+=======
+    "laravel-boost": {
+      "command": "./bashscripts/mcp/laravel-boost-wrapper.sh",
+      "args": [],
+      "env": {
+        "LARAVEL_PROJECT_ROOT": "./laravel"
+>>>>>>> dev
       }
     },
     "fetch": {

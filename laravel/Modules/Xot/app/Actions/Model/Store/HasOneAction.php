@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model\Store;
 
+<<<<<<< HEAD
 use Exception;
+=======
+>>>>>>> dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Arr;
@@ -20,6 +23,7 @@ class HasOneAction
     {
         Assert::isInstanceOf($rows = $relationDTO->rows, HasOne::class);
 
+<<<<<<< HEAD
         if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
 <<<<<<< HEAD
             /** @phpstan-ignore-next-line argument.unresolvableType */
@@ -29,6 +33,14 @@ class HasOneAction
             $related = $relationDTO->related->find($related_id);
             if (! ($related instanceof Model)) {
                 throw new Exception('['.__LINE__.']['.class_basename($this).']');
+=======
+        if (! Arr::isAssoc($relationDTO->data) && 1 === \count($relationDTO->data)) {
+            /** @phpstan-ignore-next-line argument.unresolvableType */
+            $related_id = Arr::first($relationDTO->data);
+            $related = $relationDTO->related->find($related_id);
+            if (! $related instanceof Model) {
+                throw new \Exception('['.__LINE__.']['.class_basename($this).']');
+>>>>>>> dev
             }
 
             $rows->save($related);

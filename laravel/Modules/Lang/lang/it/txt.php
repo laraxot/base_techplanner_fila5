@@ -30,6 +30,9 @@ return [
         'applyFilters' => [
             'label' => 'applyFilters',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -45,6 +48,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'toggleColumns' => [
@@ -53,6 +57,8 @@ return [
         'reorderRecords' => [
             'label' => 'reorderRecords',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'options' => [
             'prefix-icon-color' => [
@@ -240,6 +246,9 @@ return [
                 'description' => 'options.prefix',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -256,6 +265,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'resetFilters' => [
@@ -264,6 +274,8 @@ return [
         'openFilters' => [
             'label' => 'openFilters',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'value' => [
             'description' => 'value',
@@ -271,9 +283,13 @@ return [
             'placeholder' => 'value',
             'label' => 'value',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'values-list' => [
             'description' => 'values-list',
@@ -281,9 +297,13 @@ return [
             'placeholder' => 'values-list',
             'label' => 'values-list',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'user_id' => [
             'label' => 'user_id',
@@ -291,9 +311,13 @@ return [
             'helper_text' => '',
             'description' => 'user_id',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'name' => [
             'label' => 'name',
@@ -301,9 +325,13 @@ return [
             'helper_text' => '',
             'description' => 'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'slug' => [
             'label' => 'slug',
@@ -311,9 +339,13 @@ return [
             'helper_text' => '',
             'description' => 'slug',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'category_id' => [
             'label' => 'category_id',
@@ -321,9 +353,13 @@ return [
             'helper_text' => '',
             'description' => 'category_id',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'description' => [
             'label' => 'description',
@@ -331,9 +367,13 @@ return [
             'helper_text' => '',
             'description' => 'description',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'details' => [
             'label' => 'details',
@@ -341,9 +381,13 @@ return [
             'helper_text' => '',
             'description' => 'details',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'is_active' => [
             'label' => 'is_active',
@@ -351,9 +395,13 @@ return [
             'helper_text' => '',
             'description' => 'is_active',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'ordering' => [
             'label' => 'ordering',
@@ -361,9 +409,13 @@ return [
             'helper_text' => '',
             'description' => 'ordering',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'start_date' => [
             'label' => 'start_date',
@@ -371,9 +423,13 @@ return [
             'helper_text' => '',
             'description' => 'start_date',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'end_date' => [
             'label' => 'end_date',
@@ -381,9 +437,13 @@ return [
             'helper_text' => '',
             'description' => 'end_date',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'extensions' => [
             'label' => 'extensions',
@@ -391,9 +451,13 @@ return [
             'helper_text' => '',
             'description' => 'extensions',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'sections' => [
             'label' => 'sections',
@@ -401,9 +465,13 @@ return [
             'helper_text' => '',
             'description' => 'sections',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'fields' => [
             'label' => 'fields',
@@ -411,9 +479,13 @@ return [
             'helper_text' => '',
             'description' => 'fields',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'type' => [
             'label' => 'type',
@@ -421,9 +493,13 @@ return [
             'helper_text' => '',
             'description' => 'type',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'compact' => [
             'label' => 'compact',
@@ -431,9 +507,13 @@ return [
             'helper_text' => '',
             'description' => 'compact',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'aside' => [
             'label' => 'aside',
@@ -441,9 +521,13 @@ return [
             'helper_text' => '',
             'description' => 'aside',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'borderless' => [
             'label' => 'borderless',
@@ -451,9 +535,13 @@ return [
             'helper_text' => '',
             'description' => 'borderless',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'icon' => [
             'label' => 'icon',
@@ -461,9 +549,13 @@ return [
             'helper_text' => '',
             'description' => 'icon',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'columns' => [
             'label' => 'columns',
@@ -471,9 +563,13 @@ return [
             'helper_text' => '',
             'description' => 'columns',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'itemIsDefault' => [
             'description' => 'itemIsDefault',
@@ -481,6 +577,9 @@ return [
             'placeholder' => 'itemIsDefault',
             'label' => 'itemIsDefault',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
         'delete' => [
@@ -494,6 +593,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'delete' => [
@@ -502,6 +602,8 @@ return [
         'edit' => [
             'label' => 'edit',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'isActive' => [
             'description' => 'isActive',
@@ -509,6 +611,9 @@ return [
             'placeholder' => 'isActive',
             'label' => 'isActive',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
         'status' => [
@@ -522,6 +627,7 @@ return [
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
+<<<<<<< HEAD
 =======
         ],
         'status' => [
@@ -530,6 +636,8 @@ return [
         'notes' => [
             'description' => 'notes',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'responses_count' => [
             'description' => 'responses_count',
@@ -537,9 +645,13 @@ return [
             'placeholder' => 'responses_count',
             'label' => 'responses_count',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'itemKey' => [
             'description' => 'itemKey',
@@ -547,9 +659,13 @@ return [
             'placeholder' => 'itemKey',
             'label' => 'itemKey',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'forms_count' => [
             'description' => 'forms_count',
@@ -557,9 +673,13 @@ return [
             'placeholder' => 'forms_count',
             'label' => 'forms_count',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'responses_exists' => [
             'description' => 'responses_exists',
@@ -567,18 +687,27 @@ return [
             'placeholder' => 'responses_exists',
             'label' => 'responses_exists',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'logo' => [
             'description' => 'logo',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'label' => '',
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'category' => [
             'name' => [
@@ -586,12 +715,18 @@ return [
                 'helper_text' => '',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'test_date' => [
             'label' => 'test_date',
@@ -599,9 +734,13 @@ return [
             'helper_text' => 'test_date',
             'description' => 'test_date',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'test' => [
             'label' => 'test',
@@ -609,15 +748,20 @@ return [
             'helper_text' => 'test',
             'description' => 'test',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'view' => [
             'label' => 'view',
             'placeholder' => 'view',
             'helper_text' => 'view',
             'description' => 'view',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => '',
 =======
@@ -632,6 +776,57 @@ return [
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+        ],
+        'address' => [
+            'label' => 'address2',
+            'placeholder' => 'address',
+            'helper_text' => 'address',
+            'description' => 'address',
+            'tooltip' => '',
+        ],
+        'display_name' => [
+            'label' => 'display_name',
+        ],
+        'location' => [
+            'label' => 'location',
+            'placeholder' => 'location',
+            'helper_text' => 'location',
+            'description' => 'location',
+        ],
+        'coordinates' => [
+            'label' => 'coordinates',
+            'placeholder' => 'coordinates',
+            'helper_text' => 'coordinates',
+            'description' => 'coordinates',
+        ],
+        'file1' => [
+            'jpg' => [
+                'label' => 'file1.jpg',
+                'placeholder' => 'file1.jpg',
+                'helper_text' => 'file1.jpg',
+                'description' => 'file1.jpg',
+            ],
+        ],
+        'id' => [
+            'label' => 'id',
+        ],
+        'created_at' => [
+            'label' => 'created_at',
+        ],
+        'updated_at' => [
+            'label' => 'updated_at',
+        ],
+        'appointment_date' => [
+            'label' => 'appointment_date',
+            'placeholder' => 'appointment_date',
+            'helper_text' => 'appointment_date',
+            'description' => 'appointment_date',
+        ],
+        'contact' => [
+            'label' => 'contact',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -695,6 +890,24 @@ return [
             'icon' => 'update_coordinates',
             'tooltip' => 'update_coordinates',
         ],
+<<<<<<< HEAD
+=======
+        'edit' => [
+            'label' => 'edit',
+            'icon' => 'edit',
+            'tooltip' => 'edit',
+        ],
+        'delete' => [
+            'label' => 'delete',
+            'icon' => 'delete',
+            'tooltip' => 'delete',
+        ],
+        'SendRecordsNotificationBulkAction' => [
+            'label' => 'SendRecordsNotificationBulkAction',
+            'icon' => 'SendRecordsNotificationBulkAction',
+            'tooltip' => 'SendRecordsNotificationBulkAction',
+        ],
+>>>>>>> dev
     ],
     'sections' => [
         'address' => [
@@ -703,6 +916,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Txt',
     'plural_label' => 'Txt (Plurale)',
     'navigation' => [
@@ -716,6 +932,14 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'steps' => [
+        'test' => [
+            'label' => 'test',
+        ],
+    ],
+>>>>>>> dev
 ];

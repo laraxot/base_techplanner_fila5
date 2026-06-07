@@ -10,9 +10,13 @@ return [
             'helper_text' => 'recordId',
             'description' => 'recordId',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'team_id' => [
             'label' => 'team_id',
@@ -20,9 +24,13 @@ return [
             'helper_text' => 'team_id',
             'description' => 'team_id',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -43,6 +51,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'name' => 'Attach Role',
         'plural' => 'Attach Role',
@@ -56,9 +67,12 @@ return [
     ],
     'label' => 'Attach Role',
     'plural_label' => 'Attach Role (Plurale)',
+<<<<<<< HEAD
 =======
     'navigation' => [],
     'label' => '',
     'plural_label' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

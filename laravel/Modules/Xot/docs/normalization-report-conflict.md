@@ -5,11 +5,15 @@
 ### File Eliminati (Duplicati con Date)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 1. ✅ **`Modules/UI/docs/bugfix-icons-missing-[DATE].md`**
    - **Motivo**: Duplicato identico di `bugfix-icons-missing.md`
    - **Stato**: Eliminato con successo
 
 2. ✅ **`Modules/UI/docs/bugfix-table-layout-action-[DATE].md`**
+<<<<<<< HEAD
 =======
 1. ✅ **`Modules/UI/docs/bugfix-icons-missing-2025-01-27.md`**
    - **Motivo**: Duplicato identico di `bugfix-icons-missing.md`
@@ -17,16 +21,22 @@
 
 2. ✅ **`Modules/UI/docs/bugfix-table-layout-action-2025-01-27.md`**
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
    - **Motivo**: Duplicato identico di `bugfix-table-layout-action.md`
    - **Stato**: Eliminato con successo
 
 ### File Rinominati (Rimozione Date)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. ✅ **`translation-refactor-complete-summary-[DATE].md` → `translation-refactor-complete-summary.md`**
 =======
 1. ✅ **`translation-refactor-complete-summary-2025-08-08.md` → `translation-refactor-complete-summary.md`**
 >>>>>>> 4b6b99016 (first commit)
+=======
+1. ✅ **`translation-refactor-complete-summary-[DATE].md` → `translation-refactor-complete-summary.md`**
+>>>>>>> dev
    - **Modulo**: Lang
    - **Motivo**: File attivo con data nel nome
    - **Stato**: Rinominato con successo
@@ -115,6 +125,7 @@
 ## Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
 - [Regole Naming File](../xot/docs/file-naming-rules.md)
 =======
@@ -129,5 +140,13 @@
 =======
 **Data**: Gennaio 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
+- [Regole Naming File](../xot/docs/file-naming-rules.md)
+- [Filosofia DRY + KISS](../../../docs/philosophy-guide.md)
+
+---
+
+>>>>>>> dev
 **Stato**: In corso
 **Prossima Revisione**: Dopo normalizzazione batch successivo

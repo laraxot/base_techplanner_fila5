@@ -32,7 +32,11 @@ public function getTableColumns(): array
 
 ## Collegamenti
 - [Regola Generale - Modulo Xot](../../../xot/docs/filament_table_columns.md)
+<<<<<<< HEAD
 - [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
+=======
+- [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
+>>>>>>> dev
 
 ---
 

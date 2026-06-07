@@ -5,10 +5,14 @@ Questa guida fornisce istruzioni dettagliate su come implementare e utilizzare i
 
 ## Prerequisiti
 <<<<<<< HEAD
+<<<<<<< HEAD
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
 =======
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerBladeIcons.md).
 >>>>>>> 4b6b99016 (first commit)
+=======
+Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
+>>>>>>> dev
 
 ## Processo di Implementazione
 
@@ -52,11 +56,15 @@ public function register(): void
 
 ## Troubleshooting
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeIcons](registerbladeicons.md).
 
 ## Risorse Aggiuntive
 - [Panoramica delle Blade Icons](blade-icons-overview.md)
 - [Documentazione dettagliata di registerBladeIcons](registerbladeicons.md)
+<<<<<<< HEAD
 =======
 Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeIcons](registerBladeIcons.md).
 
@@ -64,3 +72,5 @@ Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeI
 - [Panoramica delle Blade Icons](blade-icons-overview.md)
 - [Documentazione dettagliata di registerBladeIcons](registerBladeIcons.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

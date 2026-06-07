@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Europa
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'it' => 'Italiana',
     'fr' => 'Francese',
     'de' => 'Tedesca',
@@ -52,9 +55,12 @@ return [
     'am' => 'Armena',
     'az' => 'Azerbaigiana',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Americhe
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'us' => 'Statunitense',
     'ca' => 'Canadese',
     'mx' => 'Messicana',
@@ -98,9 +104,12 @@ return [
     'dm' => 'Dominicana',
     'bs' => 'Bahamense',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Asia
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'cn' => 'Cinese',
     'jp' => 'Giapponese',
     'kr' => 'Sudcoreana',
@@ -146,9 +155,12 @@ return [
     'tj' => 'Tagika',
     'tm' => 'Turkmena',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Africa
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'eg' => 'Egiziana',
     'ly' => 'Libica',
     'tn' => 'Tunisina',
@@ -197,10 +209,14 @@ return [
     'cf' => 'Centrafricana',
     'cg' => 'Congolese',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'cd' => 'Congolese (RDC]',
 =======
     'cd' => 'Congolese (RDC)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'cd' => 'Congolese (RDC]',
+>>>>>>> dev
     'ga' => 'Gabonese',
     'gq' => 'Guineana Equatoriale',
     'st' => 'Sao Tomé e Principe',
@@ -208,9 +224,12 @@ return [
     'aq' => 'Antartica',
     'zr' => 'Zairese',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Oceania
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'au' => 'Australiana',
     'ax' => 'Alandese',
     'nz' => 'Neozelandese',
@@ -229,9 +248,12 @@ return [
     'fm' => 'Micronesiana',
     'mh' => 'Marshallese',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Altri
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'xk' => 'Kosovara',
     'va' => 'Vaticana',
     'sm' => 'Sanmarinese',
@@ -285,6 +307,9 @@ return [
     'um' => 'Isole Minori degli Stati Uniti',
     'eh' => 'Saharawi',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Nationalities',
     'plural_label' => 'Nationalities (Plurale)',
     'navigation' => [
@@ -329,6 +354,9 @@ return [
             'label' => 'Elimina Nationalities',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

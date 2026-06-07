@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole di Ereditarietà dei Modelli - Laraxot PTVX
 
 ## Principio Fondamentale
@@ -193,3 +194,12 @@ Ogni nuovo modello deve essere documentato in:
 - [Best Practices Laravel](laraxot-conventions.md)
 - [Regole Migrazioni](migrations.md)
 
+=======
+---
+module: theme
+topic: model-inheritance
+canonical: ../../../Themes/docs/shared-components/model-inheritance-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-rules.md
+>>>>>>> dev

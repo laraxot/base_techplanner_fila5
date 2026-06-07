@@ -12,10 +12,14 @@ return [
         'login' => 'Connexion',
         'macros' => 'Macros',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'register' => 'S\'enregistrer',
 =======
         'register' => "S'enregistrer",
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'register' => 'S\'enregistrer',
+>>>>>>> dev
         'user' => [
             'account' => 'My Account',
             'administration' => 'Administration',
@@ -25,6 +29,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -38,6 +45,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

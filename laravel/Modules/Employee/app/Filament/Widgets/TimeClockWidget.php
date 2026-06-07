@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Employee\Filament\Widgets;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Filament\Notifications\Notification;
 use Illuminate\Database\Eloquent\Collection;
@@ -13,11 +14,20 @@ use Illuminate\Database\Eloquent\Collection;
 use Carbon\Carbon;
 use Filament\Notifications\Notification;
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Carbon\Carbon;
+use Filament\Notifications\Notification;
+use Illuminate\Database\Eloquent\Collection;
+>>>>>>> dev
 use Illuminate\Support\Facades\Auth;
 use Modules\Employee\Enums\WorkHourStatusEnum;
 use Modules\Employee\Enums\WorkHourTypeEnum;
 use Modules\Employee\Models\WorkHour;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
+=======
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+>>>>>>> dev
 use Override;
 
 /**
@@ -42,7 +52,11 @@ use Override;
  *
  * This is the ONLY time tracking widget - consolidates all time tracking features.
  */
+<<<<<<< HEAD
 class TimeClockWidget extends XotBaseWidget
+=======
+class TimeClockWidget extends XotBaseSchemaWidget
+>>>>>>> dev
 {
     /**
      * Vista del widget.

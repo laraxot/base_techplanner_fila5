@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -174,6 +177,7 @@ return [
             'label' => 'Elimina Tenants',
         ],
     ],
+<<<<<<< HEAD
 =======
         'name' => 'Nome',
         'name.placeholder' => 'Inserisci il nome del tenant',
@@ -205,4 +209,6 @@ return [
     'plural_label' => '',
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

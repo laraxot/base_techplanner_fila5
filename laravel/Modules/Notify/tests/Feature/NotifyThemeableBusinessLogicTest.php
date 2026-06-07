@@ -2,11 +2,21 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(\Modules\Notify\Tests\TestCase::class);
+=======
+namespace Modules\Notify\Tests\Feature;
+
+uses(TestCase::class);
+>>>>>>> dev
 
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Modules\Notify\Models\NotifyTheme;
 use Modules\Notify\Models\NotifyThemeable;
+<<<<<<< HEAD
+=======
+use Modules\Notify\Tests\TestCase;
+>>>>>>> dev
 
 describe('Notify Themeable Business Logic', function () {
     it('can create notify themeable with basic information', function () {

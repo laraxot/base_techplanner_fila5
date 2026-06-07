@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Violazioni Ereditarietà Corrette - Modulo Geo
 
 ## 🚨 ERRORE GRAVE IDENTIFICATO E CORRETTO
@@ -163,3 +164,12 @@ done
 **Tutti i modelli del modulo Geo** sono ora corretti e rispettano la catena di ereditarietà. Il principio DRY è ripristinato e le regole sono aggiornate per prevenire errori futuri.
 
 *Correzioni completate: gennaio 2025*
+=======
+---
+module: theme
+topic: inheritance_violations_fixed
+canonical: ../../../Themes/docs/shared-components/inheritance-violations-fixed.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/inheritance-violations-fixed.md
+>>>>>>> dev

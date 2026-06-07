@@ -11,7 +11,11 @@
 - **Zen Principle**: One truth, many manifestations
 
 #### 2. **Consistency Over Flexibility**
+<<<<<<< HEAD
 - **Predictable behavior > Unlimited options**
+=======
+- **<nome progetto>able behavior > Unlimited options**
+>>>>>>> dev
 - Same patterns across all modules, same file structures
 - **Violation Example**: Different test structures across modules
 - **Zen Principle**: Harmony through uniformity
@@ -28,7 +32,11 @@
 ```
 Xot (Core Engine)
 ├── User (Authentication & Authorization)
+<<<<<<< HEAD
 ├── Quaeris (Core Business Logic - Surveys)
+=======
+├── healthcare_app (Core Business Logic - Surveys)
+>>>>>>> dev
 ├── Cms (Content Management)
 ├── Media (File Management)
 ├── Geo (Location Services)
@@ -108,7 +116,11 @@ TextInput::make('name');
 - **Power**: Controls access to all resources
 - **Responsibility**: Security and permissions
 
+<<<<<<< HEAD
 #### 3. **Quaeris Module (The Economy)**
+=======
+#### 3. **healthcare_app Module (The Economy)**
+>>>>>>> dev
 - **Role**: Core business logic, surveys, reporting
 - **Power**: Main revenue-generating functionality
 - **Responsibility**: Business operations
@@ -178,7 +190,11 @@ if (isset($model->email)) { ... }
 
 #### 3. **Test Structure Consistency**
 - **Rule**: Tests in traditional Laravel structure only
+<<<<<<< HEAD
 - **Reason**: Predictable autoloader behavior
+=======
+- **Reason**: <nome progetto>able autoloader behavior
+>>>>>>> dev
 - **Location**: `Modules/{Module}/tests/`
 
 ## 🎯 Implementation Guidelines
@@ -302,6 +318,7 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 ---
 
 **Maintained by**: Xot Module (The Laraxot Government)
+<<<<<<< HEAD
 **Philosophy**: Consistency, Predictability, Simplicity
 **Goal**: Create a harmonious, maintainable, and scalable application architecture
 <<<<<<< HEAD
@@ -309,3 +326,8 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 =======
 **Last Updated**: 2025-11-17
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Philosophy**: Consistency, <nome progetto>ability, Simplicity
+**Goal**: Create a harmonious, maintainable, and scalable application architecture
+
+>>>>>>> dev

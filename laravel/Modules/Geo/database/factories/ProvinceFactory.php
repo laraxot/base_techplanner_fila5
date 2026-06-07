@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace Modules\Geo\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> dev
 use Modules\Geo\Models\Province;
 use Modules\Geo\Models\Region;
 
@@ -158,10 +162,17 @@ class ProvinceFactory extends Factory
     public function northern(): static
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->state(
             /** @param array<string, mixed> $attributes */
             /** @return array<string, mixed> */
             function (array $attributes, ?\Illuminate\Database\Eloquent\Model $model = null): array {
+=======
+        return $this->state(
+            /** @param array<string, mixed> $attributes */
+            /** @return array<string, mixed> */
+            function (array $attributes, ?Model $model = null): array {
+>>>>>>> dev
                 $provinceNord = [
                     'Milano',
                     'Torino',
@@ -222,6 +233,7 @@ class ProvinceFactory extends Factory
 
                 return $result;
             });
+<<<<<<< HEAD
 =======
         return $this->state(function (array $attributes): array {
             $provinceNord = [
@@ -282,6 +294,8 @@ class ProvinceFactory extends Factory
             ]);
         });
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 
     /**
@@ -290,10 +304,17 @@ class ProvinceFactory extends Factory
     public function central(): static
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->state(
             /** @param array<string, mixed> $attributes */
             /** @return array<string, mixed> */
             function (array $attributes, ?\Illuminate\Database\Eloquent\Model $model = null): array {
+=======
+        return $this->state(
+            /** @param array<string, mixed> $attributes */
+            /** @return array<string, mixed> */
+            function (array $attributes, ?Model $model = null): array {
+>>>>>>> dev
                 $provinceCentro = [
                     'Roma',
                     'Firenze',
@@ -335,6 +356,7 @@ class ProvinceFactory extends Factory
 
                 return $result;
             });
+<<<<<<< HEAD
 =======
         return $this->state(function (array $attributes): array {
             $provinceCentro = [
@@ -376,6 +398,8 @@ class ProvinceFactory extends Factory
             ]);
         });
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 
     /**
@@ -384,10 +408,17 @@ class ProvinceFactory extends Factory
     public function southern(): static
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->state(
             /** @param array<string, mixed> $attributes */
             /** @return array<string, mixed> */
             function (array $attributes, ?\Illuminate\Database\Eloquent\Model $model = null): array {
+=======
+        return $this->state(
+            /** @param array<string, mixed> $attributes */
+            /** @return array<string, mixed> */
+            function (array $attributes, ?Model $model = null): array {
+>>>>>>> dev
                 $provinceSud = [
                     'Napoli',
                     'Salerno',
@@ -436,6 +467,7 @@ class ProvinceFactory extends Factory
 
                 return $result;
             });
+<<<<<<< HEAD
 =======
         return $this->state(function (array $attributes): array {
             $provinceSud = [
@@ -484,6 +516,8 @@ class ProvinceFactory extends Factory
             ]);
         });
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 
     /**

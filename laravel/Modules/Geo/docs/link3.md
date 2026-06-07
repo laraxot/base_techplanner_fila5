@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
@@ -45,3 +46,12 @@ app('geocoder')->geocode('8.8.8.8')->get();
 app('geocoder')->reverse(43.882587,-103.454067)->get();
 
 --------------------------------------------------------
+=======
+---
+module: theme
+topic: link3
+canonical: ../../../Themes/docs/shared-components/link3.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/link3.txt
+>>>>>>> dev

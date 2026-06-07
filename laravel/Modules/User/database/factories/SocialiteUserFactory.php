@@ -6,13 +6,21 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Modules\User\Models\SocialiteUser;
+>>>>>>> dev
 
 class SocialiteUserFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      */
+<<<<<<< HEAD
     protected $model = \Modules\User\Models\SocialiteUser::class;
+=======
+    protected $model = SocialiteUser::class;
+>>>>>>> dev
 
     /**
      * Define the model's default state.
@@ -20,6 +28,7 @@ class SocialiteUserFactory extends Factory
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
@@ -66,5 +75,7 @@ class SocialiteUserFactory extends Factory
     {
         return $this->state(['user_id' => $user->id]);
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 }

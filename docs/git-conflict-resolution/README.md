@@ -70,7 +70,10 @@ docs/git-conflict-resolution/
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-07-31*  
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 *Sistemazione completata: Documentazione riorganizzata secondo convenzioni Laraxot* 

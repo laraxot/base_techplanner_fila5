@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Creazione Classi Base Forms Components - [DATE]
 
 =======
@@ -6,6 +7,10 @@
 
 **Data**: 2025-12-23
 >>>>>>> 4b6b99016 (first commit)
+=======
+# Creazione Classi Base Forms Components - [DATE]
+
+>>>>>>> dev
 **Obiettivo**: Creare classi base XotBase per Forms Components core seguendo la regola fondamentale
 
 ## ⚠️ Problema Identificato
@@ -169,8 +174,12 @@ grep -r "extends.*Filament\\Forms\\Components\\" Modules/*/app/Filament/Forms/Co
 
 **Stato**: ✅ Classi base create e componenti refactorizzati
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Creazione**: [DATE]
 =======
 **Data Creazione**: 2025-12-23
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data Creazione**: [DATE]
+>>>>>>> dev
 **Conformità**: ✅ Regola fondamentale rispettata

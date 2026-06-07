@@ -4,10 +4,14 @@
 - **PHPStan Level**: 10
 - **Errors**: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Last Checked**: [DATE]
 =======
 - **Last Checked**: 2025-11-17
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Last Checked**: [DATE]
+>>>>>>> dev
 
 ## Module Overview
 The Xot module provides core functionality and base classes for the entire application framework.
@@ -82,7 +86,11 @@ The Xot module serves as the foundation for:
 
 *Status: ✅ PHPStan Level 10 Compliant*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *
 =======
 *Last Updated: 2025-11-17*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*
+>>>>>>> dev

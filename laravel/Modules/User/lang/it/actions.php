@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Azioni',
         'plural_label' => 'Azioni',
@@ -113,6 +116,7 @@ return [
             'tooltip' => 'Revoca il client OAuth',
             'helper_text' => 'Revoca questo client OAuth',
             'description' => 'Azione per revocare il client',
+<<<<<<< HEAD
 =======
     'attach_user' => 'Collega Utente',
     'associate_user' => 'Associa Utente',
@@ -133,14 +137,20 @@ return [
         'revoke_client' => [
             'label' => 'Revoca Client',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             'modal' => [
                 'heading' => 'Revoca Client OAuth',
                 'description' => 'Sei sicuro di voler revocare questo client OAuth? Questa azione revocherà il client e tutti i token associati. L\'operazione non può essere annullata.',
                 'confirm' => 'Revoca Client',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'cancel' => 'Annulla',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+                'cancel' => 'Annulla',
+>>>>>>> dev
             ],
             'success' => 'Client revocato con successo',
             'error' => 'Errore durante la revoca del client',
@@ -148,19 +158,29 @@ return [
         'revoke_token' => [
             'label' => 'Revoca Token',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => 'Revoca il token OAuth',
             'helper_text' => 'Revoca questo token',
             'description' => 'Azione per revocare il token',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => 'Revoca il token OAuth',
+            'helper_text' => 'Revoca questo token',
+            'description' => 'Azione per revocare il token',
+>>>>>>> dev
             'modal' => [
                 'heading' => 'Revoca Token OAuth',
                 'description' => 'Sei sicuro di voler revocare questo token? L\'operazione non può essere annullata.',
                 'confirm' => 'Revoca Token',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'cancel' => 'Annulla',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+                'cancel' => 'Annulla',
+>>>>>>> dev
             ],
             'success' => 'Token revocato con successo',
             'error' => 'Errore durante la revoca del token',
@@ -168,20 +188,30 @@ return [
         'create_client' => [
             'label' => 'Crea Client',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => 'Crea un nuovo client',
             'helper_text' => 'Crea un nuovo client OAuth',
             'description' => 'Azione per creare un client',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => 'Crea un nuovo client',
+            'helper_text' => 'Crea un nuovo client OAuth',
+            'description' => 'Azione per creare un client',
+>>>>>>> dev
             'success' => 'Client creato con successo',
             'error' => 'Errore durante la creazione del client',
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'messages' => [
         'success' => 'Operazione completata con successo',
         'error' => 'Si è verificato un errore',
     ],
+<<<<<<< HEAD
 =======
     'navigation' => [],
     'label' => '',
@@ -189,4 +219,6 @@ return [
     'fields' => [],
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

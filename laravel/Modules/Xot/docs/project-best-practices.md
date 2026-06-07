@@ -113,10 +113,14 @@ architecture-overview.md
 MY_DOCUMENT.md              # UPPERCASE
 my_document.md              # underscore
 <<<<<<< HEAD
+<<<<<<< HEAD
 analysis-[DATE].md      # date in name (use CHANGELOG.md)
 =======
 analysis-2025-11-04.md      # date in name (use CHANGELOG.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+analysis-[DATE].md      # date in name (use CHANGELOG.md)
+>>>>>>> dev
 ```
 
 ### 8. DRY Principle
@@ -402,10 +406,14 @@ git push origin feature-branch
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Creato:** [DATE]
 =======
 **Creato:** 2025-11-04
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Creato:** [DATE]
+>>>>>>> dev
 **Versione:** 1.0
 **Autori:** Team Laraxot + AI Claude Process Filosofico
 **Prossimo Review:** Trimestrale o dopo major changes

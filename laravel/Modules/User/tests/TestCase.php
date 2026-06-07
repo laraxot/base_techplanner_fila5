@@ -7,19 +7,26 @@ namespace Modules\User\Tests;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Illuminate\Support\Facades\DB;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\Xot\Tests\CreatesApplication;
 
 /**
  * Base test case for User module.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
  * Uses MySQL from .env.testing.
  * All module connections are mapped by TenantServiceProvider.
  * Migrations must be run ONCE externally: php artisan migrate --env=testing
  * DatabaseTransactions handles rollback between tests.
+<<<<<<< HEAD
 =======
  * Uses dedicated testing.sqlite file to ensure connection sharing.
  *
@@ -27,11 +34,14 @@ use Modules\Xot\Tests\CreatesApplication;
  * @property \Modules\User\Models\Role       $role
  * @property \Modules\User\Models\Tenant     $tenant
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  */
 abstract class TestCase extends BaseTestCase
 {
     use CreatesApplication;
     use DatabaseTransactions;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -107,4 +117,6 @@ abstract class TestCase extends BaseTestCase
         return $app;
     }
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 }

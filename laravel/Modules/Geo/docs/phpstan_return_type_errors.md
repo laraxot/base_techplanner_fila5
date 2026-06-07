@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Return Type Mismatch Errors
 
 ## Problema
@@ -256,3 +257,12 @@ grep -n "Attribute.*string" Modules/*/Models/*.php | grep -v "SafeStringCastActi
 - [Geo Module Structure](./structure.md)
 - [Class Not Found Errors](./class_not_found_errors.md)
 
+=======
+---
+module: theme
+topic: phpstan_return_type_errors
+canonical: ../../../Themes/docs/shared-components/phpstan-return-type-errors.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-return-type-errors.md
+>>>>>>> dev

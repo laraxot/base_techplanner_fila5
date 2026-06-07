@@ -2,14 +2,18 @@
 
 ## Panoramica
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 Documentazione dei fix applicati al modulo Cms per raggiungere PHPStan livello 9.
 
 ## Fix Applicati
 
 ### 1. generate_business_data.php
+<<<<<<< HEAD
 <<<<<<< HEAD
 **Problema**: Uso di `file_put_contents` non sicuro
 =======
@@ -17,6 +21,9 @@ Documentazione dei fix applicati al modulo Cms per raggiungere PHPStan livello 9
 **Problema**: Uso di `file_put_contents` non sicuro
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Problema**: Uso di `file_put_contents` non sicuro
+>>>>>>> dev
 ```php
 // PRIMA (non sicuro)
 file_put_contents($filePath, $content);
@@ -27,15 +34,20 @@ file_put_contents($filePath, $content);
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Motivazione**: 
 =======
 **Motivazione**:
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Motivazione**: 
+>>>>>>> dev
 - Utilizzo della funzione sicura `Safe\file_put_contents` per gestione errori robusta
 - Prevenzione di errori runtime in caso di problemi di scrittura file
 - Conformità agli standard di sicurezza PHPStan
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## Risultati
 =======
@@ -102,15 +114,22 @@ return [
 ## Risultati
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+## Risultati
+>>>>>>> dev
 - ✅ **0 errori** PHPStan livello 9
 - ✅ **Conformità** agli standard di sicurezza
 - ✅ **Gestione errori** robusta per operazioni file
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 ## Collegamenti
 - [Report Completo PHPStan Fixes](../../../bashscripts/docs/phpstan_fixes_comprehensive_report.md)
 - [Script Risoluzione Conflitti](../../../bashscripts/docs/conflict_resolution_script_improvements.md)
 
+<<<<<<< HEAD
 =======
 ## Da migliorare (DRY + KISS)
 
@@ -125,3 +144,5 @@ return [
 
 _Ultimo aggiornamento: dicembre 2025_
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

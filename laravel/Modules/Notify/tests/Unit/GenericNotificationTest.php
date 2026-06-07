@@ -2,10 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(\Modules\Notify\Tests\TestCase::class);
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Notify\Notifications\GenericNotification;
+=======
+namespace Modules\Notify\Tests\Unit;
+
+uses(TestCase::class);
+
+use Illuminate\Database\Eloquent\Model;
+use Modules\Notify\Notifications\GenericNotification;
+use Modules\Notify\Tests\TestCase;
+>>>>>>> dev
 
 // Basic unit tests focusing on business logic of recipient name resolution
 
@@ -21,7 +31,11 @@ describe('GenericNotification getRecipientName', function (): void {
             }
         };
 
+<<<<<<< HEAD
         $ref = new ReflectionClass(GenericNotification::class);
+=======
+        $ref = new \ReflectionClass(GenericNotification::class);
+>>>>>>> dev
         $method = $ref->getMethod('getRecipientName');
         $method->setAccessible(true);
 
@@ -38,7 +52,11 @@ describe('GenericNotification getRecipientName', function (): void {
             ];
         };
 
+<<<<<<< HEAD
         $ref = new ReflectionClass(GenericNotification::class);
+=======
+        $ref = new \ReflectionClass(GenericNotification::class);
+>>>>>>> dev
         $method = $ref->getMethod('getRecipientName');
         $method->setAccessible(true);
 
@@ -64,7 +82,11 @@ describe('GenericNotification getRecipientName', function (): void {
             protected $attributes = [];
         };
 
+<<<<<<< HEAD
         $ref = new ReflectionClass(GenericNotification::class);
+=======
+        $ref = new \ReflectionClass(GenericNotification::class);
+>>>>>>> dev
         $method = $ref->getMethod('getRecipientName');
         $method->setAccessible(true);
 

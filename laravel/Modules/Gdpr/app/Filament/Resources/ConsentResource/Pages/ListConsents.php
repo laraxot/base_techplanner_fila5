@@ -16,6 +16,9 @@ class ListConsents extends XotBaseListRecords
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'id' => TextColumn::make('id')->searchable(),
             TextColumn::make('treatment.name')->searchable(),
             'subject_id' => TextColumn::make('subject_id')->searchable(),
@@ -24,6 +27,7 @@ class ListConsents extends XotBaseListRecords
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
             'updated_at' => TextColumn::make('updated_at')
+<<<<<<< HEAD
 =======
             TextColumn::make('id')->searchable(),
             TextColumn::make('treatment.name')->searchable(),
@@ -34,6 +38,8 @@ class ListConsents extends XotBaseListRecords
                 ->toggleable(isToggledHiddenByDefault: true),
             TextColumn::make('updated_at')
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),

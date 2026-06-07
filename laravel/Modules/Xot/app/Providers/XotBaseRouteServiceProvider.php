@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
+<<<<<<< HEAD
 use Exception;
+=======
+>>>>>>> dev
 use Filament\Notifications\Notification;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Config;
@@ -47,7 +50,11 @@ abstract class XotBaseRouteServiceProvider extends RouteServiceProvider
      */
     protected function mapWebRoutes(): void
     {
+<<<<<<< HEAD
         if ($this->name === '') {
+=======
+        if ('' === $this->name) {
+>>>>>>> dev
             Notification::make()
                 ->title('Error')
                 ->danger()
@@ -65,8 +72,13 @@ abstract class XotBaseRouteServiceProvider extends RouteServiceProvider
      */
     protected function mapApiRoutes(): void
     {
+<<<<<<< HEAD
         if ($this->name === '') {
             throw new Exception('name is empty on ['.static::class.']');
+=======
+        if ('' === $this->name) {
+            throw new \Exception('name is empty on ['.static::class.']');
+>>>>>>> dev
         }
         Route::prefix('api')
             ->middleware('api')

@@ -2,7 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\Geo\Tests\TestCase::class);
+=======
+namespace Modules\Geo\Tests\Unit\Actions;
+
+uses(TestCase::class);
+>>>>>>> dev
 
 use Modules\Geo\Actions\ClusterLocationsAction;
 use Modules\Geo\Actions\FormatCoordinatesAction;
@@ -10,6 +16,10 @@ use Modules\Geo\Actions\GetAddressDataFromFullAddressAction;
 use Modules\Geo\Actions\OptimizeRouteAction;
 use Modules\Geo\Actions\UpdateCoordinatesAction;
 use Modules\Geo\Actions\ValidateCoordinatesAction;
+<<<<<<< HEAD
+=======
+use Modules\Geo\Tests\TestCase;
+>>>>>>> dev
 
 test('UpdateCoordinatesAction can be instantiated', function () {
     // Wrap in try-catch to handle any dependency issues

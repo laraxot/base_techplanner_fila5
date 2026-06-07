@@ -17,7 +17,16 @@ class IconStateGroupColumn extends ColumnGroup
 
     public string $modelClass = '';
 
+<<<<<<< HEAD
     public array $data = [];
+=======
+    /**
+     * Form data holder.
+     *
+     * @var array<string, mixed>
+     */
+    public ?array $data = [];
+>>>>>>> dev
 
     protected function setUp(): void
     {

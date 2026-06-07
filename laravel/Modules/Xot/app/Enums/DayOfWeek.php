@@ -11,9 +11,13 @@ use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Support\Collection;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Traits\EnumTrait;
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\Xot\Traits\EnumTrait;
+>>>>>>> dev
 
 /**
  * Enum per la gestione dei giorni della settimana.
@@ -28,10 +32,15 @@ use Modules\Xot\Traits\EnumTrait;
 enum DayOfWeek: int implements HasColor, HasDescription, HasIcon, HasLabel
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     use EnumTrait;
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    use EnumTrait;
+
+>>>>>>> dev
     case MONDAY = 1;
     case TUESDAY = 2;
     case WEDNESDAY = 3;
@@ -41,6 +50,7 @@ enum DayOfWeek: int implements HasColor, HasDescription, HasIcon, HasLabel
     case SUNDAY = 7;
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
      * Restituisce l'etichetta localizzata per questo giorno della settimana.
@@ -107,6 +117,8 @@ enum DayOfWeek: int implements HasColor, HasDescription, HasIcon, HasLabel
 
     /**
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
      * Restituisce l'etichetta abbreviata per questo giorno della settimana.
      */
     public function shortLabel(): string
@@ -118,6 +130,7 @@ enum DayOfWeek: int implements HasColor, HasDescription, HasIcon, HasLabel
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
      * Converte tutti i casi dell'enum in un array associativo per l'uso nei componenti select.
@@ -136,6 +149,8 @@ enum DayOfWeek: int implements HasColor, HasDescription, HasIcon, HasLabel
 
     /**
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
      * Restituisce una collezione dei giorni lavorativi (lunedì-venerdì).
      *
      * @return Collection<int, self>

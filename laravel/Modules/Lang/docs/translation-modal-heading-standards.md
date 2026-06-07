@@ -113,6 +113,10 @@ Questa regola si applica a:
 - [Convenzioni Filament](filament-best-practices.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> dev

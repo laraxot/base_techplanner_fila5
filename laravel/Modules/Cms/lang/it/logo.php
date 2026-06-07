@@ -10,9 +10,13 @@ return [
             'helper_text' => 'image',
             'description' => 'image',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'alt' => [
             'label' => 'alt',
@@ -20,9 +24,13 @@ return [
             'helper_text' => 'alt',
             'description' => 'alt',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'text' => [
             'label' => 'text',
@@ -30,9 +38,13 @@ return [
             'helper_text' => 'text',
             'description' => 'text',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'type' => [
             'label' => 'type',
@@ -40,9 +52,13 @@ return [
             'helper_text' => 'type',
             'description' => 'type',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'width' => [
             'label' => 'width',
@@ -50,9 +66,13 @@ return [
             'helper_text' => 'width',
             'description' => 'width',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'height' => [
             'label' => 'height',
@@ -60,9 +80,13 @@ return [
             'helper_text' => 'height',
             'description' => 'height',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'url' => [
             'label' => 'url',
@@ -70,6 +94,9 @@ return [
             'helper_text' => 'url',
             'description' => 'url',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -95,8 +122,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Logo',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

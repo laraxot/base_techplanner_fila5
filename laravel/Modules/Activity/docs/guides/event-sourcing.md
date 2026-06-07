@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # event sourcing comprehensive guide
 
 ## introduction to event sourcing
@@ -334,3 +335,12 @@ class user_activity_report_projector
 
 event sourcing offers a powerful approach to manage complexity in the `activity` module, ensuring traceability and flexibility. by implementing aggregate roots, projectors, and strategies like snapshotting, existing code robustness and scalability can be improved. following the described patterns and recommendations, the module can evolve to support future requirements without compromising data consistency.
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: event-sourcing
+canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.md
+>>>>>>> dev

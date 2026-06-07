@@ -19,6 +19,7 @@ class SetFolioLocale
 {
     public function handle(Request $request, \Closure $next): mixed
     {
+<<<<<<< HEAD
         // Priority 1: If user is logged in and has a saved language, use that
         if ($request->user() && $request->user()->lang) {
             $userLocale = $request->user()->lang;
@@ -28,6 +29,8 @@ class SetFolioLocale
             return $next($request);
         }
 
+=======
+>>>>>>> dev
         // Get the first segment from the URL
         $segments = $request->segments();
         $firstSegment = $segments[0] ?? '';
@@ -43,6 +46,7 @@ class SetFolioLocale
         /** @var string $defaultLocale */
         $defaultLocale = config('app.locale', 'it');
 
+<<<<<<< HEAD
         // Check if first segment is a supported locale
         if (in_array($firstSegment, $supportedLocales, true)) {
             app()->setLocale($firstSegment);
@@ -51,6 +55,26 @@ class SetFolioLocale
             app()->setLocale($defaultLocale);
         }
 
+=======
+        // Priority 1: Check if first segment is a supported locale (URL Overrides User Preference)
+        if (in_array($firstSegment, $supportedLocales, true)) {
+            $locale = $firstSegment;
+        // Priority 2: If user is logged in and has a saved language, use that
+        } elseif ($request->user() && $request->user()->lang) {
+            $locale = $request->user()->lang;
+        // Priority 3: Use default locale
+        } else {
+            $locale = $defaultLocale;
+        }
+
+        // CRITICAL: Set locale on BOTH app AND LaravelLocalization facade.
+        // Without calling LaravelLocalization::setLocale(), helpers like
+        // localizeUrl(), getLocalizedURL(), getCurrentLocale() will not
+        // reflect the correct locale, causing all links to default to 'it'.
+        app()->setLocale($locale);
+        LaravelLocalization::setLocale($locale);
+
+>>>>>>> dev
         return $next($request);
     }
 }

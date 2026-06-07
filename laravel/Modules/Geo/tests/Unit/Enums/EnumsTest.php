@@ -2,10 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\Geo\Tests\TestCase::class);
 
 use Modules\Geo\Enums\AddressItemEnum;
 use Modules\Geo\Enums\AddressTypeEnum;
+=======
+namespace Modules\Geo\Tests\Unit\Enums;
+
+uses(TestCase::class);
+
+use Modules\Geo\Enums\AddressItemEnum;
+use Modules\Geo\Enums\AddressTypeEnum;
+use Modules\Geo\Tests\TestCase;
+>>>>>>> dev
 
 test('AddressItemEnum has expected cases', function () {
     expect(class_exists(AddressItemEnum::class))->toBeTrue();

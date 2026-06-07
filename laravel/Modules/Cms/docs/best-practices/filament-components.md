@@ -209,6 +209,9 @@ it('renders filament icon buttons for social links', function () {
 
 ## Collegamenti Interni
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Guida ai Temi](/laravel/themes/one/docs/readme.md)
 - [Componenti UI](/laravel/modules/cms/docs/components/readme.md)
 - [Testing Components](/laravel/modules/cms/docs/testing/components.md)
@@ -217,6 +220,7 @@ it('renders filament icon buttons for social links', function () {
 * [filament-components.md](laravel/modules/user/docs/best-practices/filament-components.md)
 * [filament-components.md](laravel/modules/cms/docs/best-practices/filament-components.md)
 * [filament-components.md](laravel/modules/cms/docs/filament-components.md)
+<<<<<<< HEAD
 =======
 - [Guida ai Temi](/laravel/Themes/One/docs/README.md)
 - [Componenti UI](/laravel/Modules/Cms/docs/components/README.md)
@@ -227,4 +231,6 @@ it('renders filament icon buttons for social links', function () {
 * [filament-components.md](laravel/Modules/Cms/docs/best-practices/filament-components.md)
 * [filament-components.md](laravel/Modules/Cms/docs/filament-components.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 * [filament-components.md](laravel/docs/rules/filament-components.md)

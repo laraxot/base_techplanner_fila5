@@ -9,6 +9,10 @@ use Filament\Actions\ActionGroup;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Pages\Concerns\InteractsWithFormActions;
+<<<<<<< HEAD
+=======
+use Filament\Schemas\Schema;
+>>>>>>> dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
@@ -23,9 +27,15 @@ use Modules\Xot\Filament\Traits\NavigationPageLabelTrait;
 use Webmozart\Assert\Assert;
 
 /**
+<<<<<<< HEAD
  * @property \Filament\Schemas\Schema $form
  * @property \Filament\Schemas\Schema $editProfileForm
  * @property \Filament\Schemas\Schema $editPasswordForm
+=======
+ * @property Schema $form
+ * @property Schema $editProfileForm
+ * @property Schema $editPasswordForm
+>>>>>>> dev
  */
 class PasswordExpired extends XotBasePage
 {
@@ -110,10 +120,14 @@ class PasswordExpired extends XotBasePage
 
         // Verificare che l'utente esistante e che sia un modello Eloquent
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $user instanceof Model) {
 =======
         if (! ($user instanceof Model)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $user instanceof Model) {
+>>>>>>> dev
             throw new \InvalidArgumentException('L\'utente deve essere un modello Eloquent con il metodo update');
         }
 
@@ -126,10 +140,14 @@ class PasswordExpired extends XotBasePage
 
         // Verificare che l'utente implementi l'interfaccia UserContract prima di passarlo all'evento
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $user instanceof UserContract) {
 =======
         if (! ($user instanceof UserContract)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $user instanceof UserContract) {
+>>>>>>> dev
             throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia UserContract');
         }
 

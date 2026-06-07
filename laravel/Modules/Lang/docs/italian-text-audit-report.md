@@ -1,9 +1,12 @@
 # Italian Text in Non-Italian Translation Files - Audit Report
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-08-08 11:19:40
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Problemi Identificati
 

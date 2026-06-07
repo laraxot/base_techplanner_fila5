@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'register' => [
         'title' => 'Create your account',
         'subtitle' => 'Join the most delicious Laravel developer community!',
@@ -61,8 +64,11 @@ return [
             'and' => 'and',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'navigation' => [
         'name' => 'GDPR',
         'plural' => 'GDPR',
@@ -143,10 +149,16 @@ return [
         'policy_updated' => 'Policy Aggiornata',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

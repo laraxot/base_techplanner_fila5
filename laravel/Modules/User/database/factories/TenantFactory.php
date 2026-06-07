@@ -6,6 +6,7 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 use Modules\User\Models\Tenant;
@@ -14,10 +15,17 @@ use Modules\User\Models\Tenant;
  * @extends Factory<Tenant>
  */
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
+use Modules\User\Models\Tenant;
+
+>>>>>>> dev
 class TenantFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
+<<<<<<< HEAD
 <<<<<<< HEAD
      */
     protected $model = \Modules\User\Models\Tenant::class;
@@ -31,11 +39,16 @@ class TenantFactory extends Factory
 =======
      *
      * @var class-string<Tenant>
+=======
+     *
+     * @var class-string<Model>
+>>>>>>> dev
      */
     protected $model = Tenant::class;
 
     /**
      * Define the model's default state.
+<<<<<<< HEAD
      *
      * @return array<string, mixed>
      */
@@ -50,5 +63,17 @@ class TenantFactory extends Factory
             'is_active' => $this->faker->boolean(),
         ];
 >>>>>>> 4b6b99016 (first commit)
+=======
+     */
+    public function definition(): array
+    {
+        $name = $this->faker->company();
+
+        return [
+            'id' => (string) Str::ulid(),
+            'name' => $name,
+            'slug' => Str::slug($name).'-'.Str::random(6),
+        ];
+>>>>>>> dev
     }
 }

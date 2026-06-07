@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Strategia di Gestione Contenuti per Pagine Istituzionali Sanitarie
 
 ## Filosofia e Approccio Olistico
@@ -100,3 +101,12 @@ Questa strategia integra:
 
 **Ultimo aggiornamento**: Gennaio 2025  
 **Revisione**: Conforme regole Laraxot olistica e filosofia zen del contenuto sanitario 
+=======
+---
+module: theme
+topic: content_management_strategy
+canonical: ../../../Themes/docs/shared-components/content-management-strategy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/content-management-strategy.md
+>>>>>>> dev

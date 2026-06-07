@@ -2,17 +2,25 @@
 
 **Data Creazione**: 2025-01-27  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo Aggiornamento**: 2026-01-27  
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Ultimo Aggiornamento**: 2026-01-27  
+>>>>>>> dev
 **Status**: ✅ Critico
 
 ## Regola Fondamentale
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tutti i metodi `getTable*()` nel trait `HasXotTable` sono dichiarati come `protected` per allinearsi a Filament 5 ed evitare conflitti di visibilità con il trait `InteractsWithTable`. Le classi (pagine/widget) che sovrascrivono questi metodi possono continuare a usare `public` per permettere l'accesso cross-component (widening), ma nel trait devono rimanere `protected`.
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+Tutti i metodi `getTable*()` nel trait `HasXotTable` sono dichiarati come `protected` per allinearsi a Filament 5 ed evitare conflitti di visibilità con il trait `InteractsWithTable`. Le classi (pagine/widget) che sovrascrivono questi metodi possono continuare a usare `public` per permettere l'accesso cross-component (widening), ma nel trait devono rimanere `protected`.
+>>>>>>> dev
 Tutti i metodi `getTable*()` in `HasXotTable` sono dichiarati come `public` perché vengono chiamati da Filament/Livewire dall'esterno della classe. I widget che sovrascrivono questi metodi **DEVONO** mantenere la stessa visibilità `public`.
 
 ## Metodi che Devono Essere Public
@@ -42,7 +50,11 @@ Tutti i metodi `getTable*()` in `HasXotTable` sono dichiarati come `public` perc
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
+=======
+namespace Modules\healthcare_app\Filament\Widgets;
+>>>>>>> dev
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 
@@ -99,6 +111,7 @@ must be public (as in class HasXotTable)
 
 - [HasXotTable Trait Source](../../../Modules/Xot/app/Filament/Traits/HasXotTable.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Widget Table Configuration](../../../modules/xot/docs/filament/widget-table-configuration.md)
 
 =======
@@ -106,3 +119,7 @@ must be public (as in class HasXotTable)
 
 *Ultimo aggiornamento: 2025-01-27*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Widget Table Configuration](../../../modules/xot/docs/filament/widget-table-configuration.md)
+
+>>>>>>> dev

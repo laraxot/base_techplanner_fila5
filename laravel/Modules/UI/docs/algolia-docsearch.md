@@ -73,11 +73,15 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 
 ## Collegamenti tra versioni di algolia-docsearch.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [algolia-docsearch.md](../../../chart/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../gdpr/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../xot/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../ui/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../cms/docs/algolia-docsearch.md)
+<<<<<<< HEAD
 =======
 * [algolia-docsearch.md](../../../Chart/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Gdpr/docs/algolia-docsearch.md)
@@ -85,6 +89,8 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 * [algolia-docsearch.md](../../../UI/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Cms/docs/algolia-docsearch.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### Versione Incoming
 
@@ -164,11 +170,15 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 
 ## Collegamenti tra versioni di algolia-docsearch.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [algolia-docsearch.md](../../../chart/project_docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../gdpr/project_docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../xot/project_docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../ui/project_docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../cms/project_docs/algolia-docsearch.md)
+<<<<<<< HEAD
 =======
 * [algolia-docsearch.md](../../../Chart/project_docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Gdpr/project_docs/algolia-docsearch.md)
@@ -176,6 +186,8 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 * [algolia-docsearch.md](../../../UI/project_docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Cms/project_docs/algolia-docsearch.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### Versione Incoming
 

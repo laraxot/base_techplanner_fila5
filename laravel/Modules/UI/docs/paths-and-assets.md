@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # AVVISO IMPORTANTE ([DATE])
 =======
 # AVVISO IMPORTANTE (2025-05-13)
 >>>>>>> 4b6b99016 (first commit)
+=======
+# AVVISO IMPORTANTE ([DATE])
+>>>>>>> dev
 
 > **ATTENZIONE:** Tutti i componenti UI condivisi (come `logo.blade.php`) devono essere SEMPRE posizionati in `Modules/UI/resources/views/components/ui/` e MAI in `resources/views/components/`. Qualsiasi violazione di questa regola causa errori di rendering, override errati, problemi di modularità e manutenzione.
 >
@@ -13,11 +17,15 @@
 > **Soluzione:** Seguire SEMPRE la regola documentata qui sotto e aggiornata anche in README.md e nella root docs/links.md.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 # Gestione dei Percorsi e degli Asset 
 
 ## Collegamenti correlati
 - [README modulo UI](/laravel/modules/ui/docs/readme.md)
 - [Architettura Modulare](/laravel/modules/ui/docs/architecture.md)
+<<<<<<< HEAD
 =======
 # Gestione dei Percorsi e degli Asset
 
@@ -25,6 +33,8 @@
 - [README modulo UI](/laravel/Modules/UI/docs/README.md)
 - [Architettura Modulare](/laravel/Modules/UI/docs/ARCHITECTURE.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Percorsi Corretti per gli Asset
@@ -35,6 +45,7 @@
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 /var/www/html/saluteora/
 =======
 
@@ -44,6 +55,9 @@
 
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+/var/www/html/Quaeris/
+>>>>>>> dev
 ├── laravel/                 # Applicazione Laravel (codice sorgente)
 │   ├── Modules/             # Moduli dell'applicazione
 │   ├── resources/           # Risorse non compilate
@@ -62,6 +76,7 @@
 | Tipo di Asset | ✅ Percorso Corretto | ❌ Percorso Errato |
 |---------------|---------------------|-------------------|
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Immagini | `/var/www/html/saluteora/public_html/images/` | `/var/www/html/saluteora/laravel/public/images/` |
 | CSS | `/var/www/html/saluteora/public_html/css/` | `/var/www/html/saluteora/laravel/public/css/` |
 | JavaScript | `/var/www/html/saluteora/public_html/js/` | `/var/www/html/saluteora/laravel/public/js/` |
@@ -76,6 +91,12 @@
 | JavaScript | `public_html/js/` | `public/js/` |
 | SVG | `public_html/images/` | `public/images/` |
 >>>>>>> 4b6b99016 (first commit)
+=======
+| Immagini | `/var/www/html/Quaeris/public_html/images/` | `/var/www/html/Quaeris/laravel/public/images/` |
+| CSS | `/var/www/html/Quaeris/public_html/css/` | `/var/www/html/Quaeris/laravel/public/css/` |
+| JavaScript | `/var/www/html/Quaeris/public_html/js/` | `/var/www/html/Quaeris/laravel/public/js/` |
+| SVG | `/var/www/html/Quaeris/public_html/images/` | `/var/www/html/Quaeris/laravel/public/images/` |
+>>>>>>> dev
 
 ## Utilizzo degli Asset nei Componenti Blade
 
@@ -93,10 +114,14 @@ Per garantire una buona esperienza utente, implementare sempre un fallback per l
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 <img 
 =======
 <img
 >>>>>>> 4b6b99016 (first commit)
+=======
+<img 
+>>>>>>> dev
     src="{{ asset('images/avatars/default-' . $avatarNumber . '.svg') }}"
     alt="{{ $user->name ?? 'User' }}"
     onerror="this.src='{{ asset('images/default-avatar.svg') }}'"
@@ -111,6 +136,7 @@ Gli SVG utilizzati come icone o componenti UI dovrebbero essere implementati com
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 /var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/
 =======
 Themes/One/resources/views/components/ui/
@@ -120,6 +146,9 @@ Themes/One/resources/views/components/ui/
 Themes/One/resources/views/components/ui/
 Themes/One/resources/views/components/ui/
 >>>>>>> 4b6b99016 (first commit)
+=======
+/var/www/html/Quaeris/laravel/Themes/One/resources/views/components/ui/
+>>>>>>> dev
 ```
 
 ### SVG come Asset Pubblici
@@ -127,6 +156,7 @@ Themes/One/resources/views/components/ui/
 Gli SVG utilizzati come immagini (avatar, loghi, ecc.) dovrebbero essere posizionati in:
 
 ```
+<<<<<<< HEAD
 <<<<<<< HEAD
 /var/www/html/saluteora/public_html/images/
 =======
@@ -137,6 +167,9 @@ public_html/images/
 public_html/images/
 public_html/images/
 >>>>>>> 4b6b99016 (first commit)
+=======
+/var/www/html/Quaeris/public_html/images/
+>>>>>>> dev
 ```
 
 ## Gestione dei Componenti UI
@@ -147,6 +180,7 @@ Il componente avatar è implementato in:
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 /var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/avatar.blade.php
 =======
 Themes/One/resources/views/components/ui/avatar.blade.php
@@ -156,11 +190,15 @@ Themes/One/resources/views/components/ui/avatar.blade.php
 Themes/One/resources/views/components/ui/avatar.blade.php
 Themes/One/resources/views/components/ui/avatar.blade.php
 >>>>>>> 4b6b99016 (first commit)
+=======
+/var/www/html/Quaeris/laravel/Themes/One/resources/views/components/ui/avatar.blade.php
+>>>>>>> dev
 ```
 
 E utilizza gli avatar SVG dalla directory pubblica:
 
 ```
+<<<<<<< HEAD
 <<<<<<< HEAD
 /var/www/html/saluteora/public_html/images/avatars/
 =======
@@ -171,6 +209,9 @@ public_html/images/avatars/
 public_html/images/avatars/
 public_html/images/avatars/
 >>>>>>> 4b6b99016 (first commit)
+=======
+/var/www/html/Quaeris/public_html/images/avatars/
+>>>>>>> dev
 ```
 
 ### Componente Icon
@@ -178,6 +219,7 @@ public_html/images/avatars/
 Il componente icon è implementato in:
 
 ```
+<<<<<<< HEAD
 <<<<<<< HEAD
 /var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/icon.blade.php
 =======
@@ -188,6 +230,9 @@ Themes/One/resources/views/components/ui/icon.blade.php
 Themes/One/resources/views/components/ui/icon.blade.php
 Themes/One/resources/views/components/ui/icon.blade.php
 >>>>>>> 4b6b99016 (first commit)
+=======
+/var/www/html/Quaeris/laravel/Themes/One/resources/views/components/ui/icon.blade.php
+>>>>>>> dev
 ```
 
 E include le definizioni SVG direttamente nel componente.
@@ -197,10 +242,14 @@ E include le definizioni SVG direttamente nel componente.
 > **IMPORTANTE:** Tutti i componenti Blade UI condivisi (es. logo, button, badge, ecc.) devono essere posizionati esclusivamente in:
 >
 <<<<<<< HEAD
+<<<<<<< HEAD
 > `/var/www/html/ptvx/laravel/Modules/UI/resources/views/components/ui/`
 =======
 > `Modules/UI/resources/views/components/ui/`
 >>>>>>> 4b6b99016 (first commit)
+=======
+> `/var/www/html/ptvx/laravel/Modules/UI/resources/views/components/ui/`
+>>>>>>> dev
 >
 > **MAI** in `resources/views/components/ui/` della root Laravel.
 
@@ -215,11 +264,15 @@ E include le definizioni SVG direttamente nel componente.
 **❌ Errato:**
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 /var/www/html/ptvx/laravel/resources/views/components/ui/logo.blade.php
 ```
 **✅ Corretto:**
 ```
 /var/www/html/ptvx/laravel/Modules/UI/resources/views/components/ui/logo.blade.php
+<<<<<<< HEAD
 =======
 resources/views/components/ui/logo.blade.php
 ```
@@ -227,6 +280,8 @@ resources/views/components/ui/logo.blade.php
 ```
 Modules/UI/resources/views/components/ui/logo.blade.php
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ```
 
 ## Best Practices
@@ -240,6 +295,7 @@ Modules/UI/resources/views/components/ui/logo.blade.php
 
 ## Errori Comuni
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 1. **Utilizzo del percorso Laravel public**: Utilizzare `/var/www/html/saluteora/laravel/public/` invece di `/var/www/html/saluteora/public_html/`
 =======
@@ -403,6 +459,9 @@ Modules/UI/resources/views/components/ui/logo.blade.php
 
 1. **Utilizzo del percorso Laravel public**: Utilizzare `public/` invece di `public_html/`
 >>>>>>> 4b6b99016 (first commit)
+=======
+1. **Utilizzo del percorso Laravel public**: Utilizzare `/var/www/html/Quaeris/laravel/public/` invece di `/var/www/html/Quaeris/public_html/`
+>>>>>>> dev
 2. **Riferimenti diretti ai file**: Utilizzare percorsi assoluti invece dell'helper `asset()`
 3. **Mancanza di fallback**: Non fornire alternative quando un'immagine non è disponibile
 4. **Inconsistenza nei nomi dei file**: Utilizzare convenzioni di naming diverse per file simili

@@ -169,14 +169,20 @@ try {
 ## Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Root](../../../../docs/readme.md)
 - [Documentazione Modulo Notify](./readme.md)
 - [Documentazione Template Email](./email_templates.md)
 - [Guida all'utilizzo di SpatieEmail](./spatie_email_usage_guide.md)
 =======
+=======
+>>>>>>> dev
 - [Documentazione Root](../../../../docs/README.md)
 - [Documentazione Modulo Notify](./README.md)
 - [Documentazione Template Email](./EMAIL_TEMPLATES.md)
 - [Guida all'utilizzo di SpatieEmail](./SPATIE_EMAIL_USAGE_GUIDE.md)
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 - [Documentazione Filament Resources](./filament-resources.md)

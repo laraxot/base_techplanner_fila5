@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\TechPlanner\Filament\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\XotBaseDashboard;
 
 class Dashboard extends XotBaseDashboard {}
@@ -19,3 +20,8 @@ class Dashboard extends XotBaseDashboard
     
 }
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\Xot\Filament\Pages\XotBaseDashboard;
+
+class Dashboard extends XotBaseDashboard {}
+>>>>>>> dev

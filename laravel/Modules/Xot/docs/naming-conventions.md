@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Convenzioni di Nomenclatura in Laravel Modules
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto Laravel Modules.
@@ -63,3 +64,12 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 - [Best practice per i provider di servizi](./SERVICE-PROVIDER-BEST-PRACTICES.md)
 - [Best practice per Filament](./FILAMENT-BEST-PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: naming-conventions
+canonical: ../../../Themes/docs/shared-components/naming-conventions-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/naming-conventions-1.md
+>>>>>>> dev

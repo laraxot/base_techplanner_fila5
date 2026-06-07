@@ -13,11 +13,17 @@ return [
                 'max' => 'Il nome non può superare i 255 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'last_name' => [
             'label' => 'Cognome',
@@ -28,11 +34,17 @@ return [
                 'max' => 'Il cognome non può superare i 255 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'email' => [
             'label' => 'Email',
@@ -45,11 +57,17 @@ return [
                 'unique' => 'Questa email è già registrata',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'password' => [
             'label' => 'Password',
@@ -61,11 +79,17 @@ return [
                 'max' => 'La password non può superare i 255 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
@@ -78,21 +102,33 @@ return [
                 'same' => 'Le password non coincidono',
             ],
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'remember_me' => [
-            'label' => 'Ricordami',
-            'help' => 'Mantieni la sessione attiva',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'remember_me' => [
+            'label' => 'Ricordami',
+            'help' => 'Mantieni la sessione attiva',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -178,6 +214,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'name' => 'User Resource',
         'plural' => 'User Resource',
@@ -191,9 +230,12 @@ return [
     ],
     'label' => 'User Resource',
     'plural_label' => 'User Resource (Plurale)',
+<<<<<<< HEAD
 =======
     'navigation' => [],
     'label' => '',
     'plural_label' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

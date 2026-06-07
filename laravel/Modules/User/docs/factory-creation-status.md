@@ -96,6 +96,7 @@ Questo errore è **GRAVISSIMO** perché:
 
 ## COLLEGAMENTI
 
+<<<<<<< HEAD
 - [Factory Audit Complete Analysis](../../../project_docs/factory-audit-complete-analysis.md)
 <<<<<<< HEAD
 - [User Module README](./readme.md)
@@ -106,6 +107,12 @@ Questo errore è **GRAVISSIMO** perché:
 - [Factory PHPStan Fixes](./phpstan/factory-fixes.md)
 - [Database Documentation](./database/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Factory Audit Complete Analysis](../../../../docs/project/factory-audit-complete-analysis.md)
+- [User Module README](./readme.md)
+- [Factory PHPStan Fixes](./phpstan/factory-fixes.md)
+- [Database Documentation](./database/readme.md)
+>>>>>>> dev
 
 ## PROSSIMI PASSI
 
@@ -117,6 +124,9 @@ Questo errore è **GRAVISSIMO** perché:
 
 *Creato: 2025-01-06*
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

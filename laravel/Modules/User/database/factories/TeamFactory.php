@@ -6,13 +6,21 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Modules\User\Models\Team;
+>>>>>>> dev
 
 class TeamFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      */
+<<<<<<< HEAD
     protected $model = \Modules\User\Models\Team::class;
+=======
+    protected $model = Team::class;
+>>>>>>> dev
 
     /**
      * Define the model's default state.
@@ -20,6 +28,7 @@ class TeamFactory extends Factory
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
@@ -96,5 +105,7 @@ class TeamFactory extends Factory
             'name' => $name.' Team',
         ]);
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 }

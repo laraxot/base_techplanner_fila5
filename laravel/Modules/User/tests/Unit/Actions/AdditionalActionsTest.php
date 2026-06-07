@@ -2,7 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\User\Tests\TestCase::class);
+=======
+namespace Modules\User\Tests\Unit\Actions;
+
+uses(TestCase::class);
+>>>>>>> dev
 
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
@@ -12,6 +18,10 @@ use Modules\User\Actions\Socialite\LoginUserAction;
 use Modules\User\Actions\Socialite\RegisterSocialiteUserAction;
 use Modules\User\Actions\User\DeleteUserAction;
 use Modules\User\Actions\User\UpdateUserAction;
+<<<<<<< HEAD
+=======
+use Modules\User\Tests\TestCase;
+>>>>>>> dev
 
 test('RegisterSocialiteUserAction can be instantiated', function () {
     expect(class_exists(RegisterSocialiteUserAction::class))->toBeTrue();

@@ -8,9 +8,12 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Support\Carbon;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Gdpr\Database\Factories\TreatmentFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -30,6 +33,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null          $created_by
  * @property Carbon|null          $deleted_at
  * @property string|null          $deleted_by
+<<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
@@ -37,6 +41,95 @@ use Modules\Xot\Contracts\ProfileContract;
 =======
  * @method static TreatmentFactory          factory($count = null, $state = [])
 >>>>>>> 4b6b99016 (first commit)
+=======
+ * @property string               $id
+ * @property int                  $active
+ * @property int                  $required
+ * @property string               $name
+ * @property string               $description
+ * @property string|null          $documentVersion
+ * @property string|null          $documentUrl
+ * @property int                  $weight
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property string               $id
+ * @property int                  $active
+ * @property int                  $required
+ * @property string               $name
+ * @property string               $description
+ * @property string|null          $documentVersion
+ * @property string|null          $documentUrl
+ * @property int                  $weight
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property string               $id
+ * @property int                  $active
+ * @property int                  $required
+ * @property string               $name
+ * @property string               $description
+ * @property string|null          $documentVersion
+ * @property string|null          $documentUrl
+ * @property int                  $weight
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property string               $id
+ * @property int                  $active
+ * @property int                  $required
+ * @property string               $name
+ * @property string               $description
+ * @property string|null          $documentVersion
+ * @property string|null          $documentUrl
+ * @property int                  $weight
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property string               $id
+ * @property int                  $active
+ * @property int                  $required
+ * @property string               $name
+ * @property string               $description
+ * @property string|null          $documentVersion
+ * @property string|null          $documentUrl
+ * @property int                  $weight
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property string               $id
+ * @property int                  $active
+ * @property int                  $required
+ * @property string               $name
+ * @property string               $description
+ * @property string|null          $documentVersion
+ * @property string|null          $documentUrl
+ * @property int                  $weight
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ *
+>>>>>>> dev
  * @method static Builder<static>|Treatment newModelQuery()
  * @method static Builder<static>|Treatment newQuery()
  * @method static Builder<static>|Treatment query()
@@ -57,6 +150,11 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $deleter
  *
+<<<<<<< HEAD
+=======
+ * @method static \Modules\Gdpr\Database\Factories\TreatmentFactory factory($count = null, $state = [])
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class Treatment extends BaseModel
@@ -67,6 +165,9 @@ class Treatment extends BaseModel
     public $incrementing = false;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     protected $fillable = [
         'id',
         'active',
@@ -77,7 +178,10 @@ class Treatment extends BaseModel
         'documentUrl',
         'weight',
     ];
+<<<<<<< HEAD
 =======
     protected $fillable = [''];
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 }

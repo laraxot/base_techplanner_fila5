@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Collegamenti al Modulo Xot
 
 Questo documento fornisce collegamenti bidirezionali tra il modulo Cms e il modulo Xot.
@@ -25,3 +26,12 @@ Secondo le regole di organizzazione della documentazione:
 Questo documento è collegato bidirezionalmente con [cms-link.md](../../xot/project_docs/cms-link.md) nel modulo Xot.
 
 > Aggiorna entrambi i riferimenti se modifichi la struttura della documentazione o aggiungi nuove sezioni.
+=======
+---
+module: theme
+topic: xot_link
+canonical: ../../../Themes/docs/shared-components/xot-link.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/xot-link.md
+>>>>>>> dev

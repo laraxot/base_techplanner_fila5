@@ -10,6 +10,9 @@ return [
             'helper_text' => 'content',
             'description' => 'content',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -35,8 +38,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Paragraph',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

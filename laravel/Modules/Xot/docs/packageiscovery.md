@@ -339,7 +339,11 @@ The command discovered these categories:
 **Module Packages**:
 - Xot → XotServiceProvider + AdminPanelProvider
 - User → UserServiceProvider + AdminPanelProvider + PassportServiceProvider
+<<<<<<< HEAD
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
+=======
+- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, healthcare_app
+>>>>>>> dev
 
 **Supporting Libraries**:
 - Blade icons, Carbon, Excel, Debugbar, IDE Helper, PHPInsights
@@ -350,7 +354,11 @@ Each module uses this pattern:
 
 ```json
 {
+<<<<<<< HEAD
     "name": "laraxot/module_user_fila3",
+=======
+    "name": "laraxot/module_user_fila5",
+>>>>>>> dev
     "extra": {
         "laravel": {
             "providers": [

@@ -15,7 +15,11 @@ This guide provides a comprehensive overview of chart generation and PDF integra
 
 ### Key Components
 - **Chart Module**: Contains chart generation and styling logic
+<<<<<<< HEAD
 - **Quaeris Module**: Handles survey data and PDF generation
+=======
+- **healthcare_app Module**: Handles survey data and PDF generation
+>>>>>>> dev
 - **Xot Module**: Provides core services including HTML to PDF conversion
 - **JpGraph Library**: Server-side chart generation
 - **Chart.js**: Client-side chart visualization
@@ -509,7 +513,11 @@ class HtmlService
 PDFs support multi-page layouts with proper headers and footers:
 
 ```blade
+<<<<<<< HEAD
 @include('quaeris::pdf.css')
+=======
+@include('healthcare_app::pdf.css')
+>>>>>>> dev
 
 <page backtop="{{ $pdf->backtop }}mm" backbottom="{{ $pdf->backbottom }}mm">
     <page_header>

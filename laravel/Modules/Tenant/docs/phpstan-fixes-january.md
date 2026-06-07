@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzioni PHPStan - Gennaio 2025
 
 ## Panoramica
@@ -91,3 +92,12 @@ if (isset($extra_conf['connections'][$default]) && is_array($extra_conf['connect
 - [Architettura Modulo Tenant](./architecture.md)
 - [SushiToJsons Trait](./sushi-to-jsons-trait.md)
 - [Tenant Service](./tenant-service.md)
+=======
+---
+module: theme
+topic: phpstan-fixes-january
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-.md
+>>>>>>> dev

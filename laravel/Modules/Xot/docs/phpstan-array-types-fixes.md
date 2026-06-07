@@ -3,9 +3,12 @@
 **Status**: 🎉 **COMPLETATO** - TUTTI GLI ERRORI RISOLTI! (832 → 0)
 **Focus**: `missingType.iterableValue` errors + mixed types + undefined methods
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 18 Agosto 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Risultato**: ✅ **100% PHPStan CLEAN**
 
 ## 🔧 Patterns di Correzione

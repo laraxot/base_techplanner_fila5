@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Location Select Component
 
 ## Overview
@@ -386,3 +387,12 @@ use Modules\Geo\Filament\Forms\LocationForm;
 Non utilizzare mai `Modules\Geo\App\Filament\Forms\LocationForm`.
 
 > Aggiornare sempre la documentazione e i file .mdc windsurf/cursor in caso di modifica del path o del namespace.
+=======
+---
+module: theme
+topic: location_select
+canonical: ../../../Themes/docs/shared-components/location-select.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/location-select.md
+>>>>>>> dev

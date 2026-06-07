@@ -1,17 +1,25 @@
 # Modulo Lang
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Data: [DATE] 19:09:56
 =======
 Data: 2025-04-23 19:09:56
 >>>>>>> 4b6b99016 (first commit)
+=======
+Data: 2025-04-23 19:09:56
+>>>>>>> dev
 
 ## Informazioni generali
 
 - **Namespace principale**: Modules\\Lang
 Modules\\Lang\\Database\\Factories
 Modules\\Lang\\Database\\Seeders
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_lang_fila3
+=======
+- **Pacchetto Composer**: laraxot/module_lang_fila5
+>>>>>>> dev
 Marco Sottana
 - **Dipendenze**: mcamara/laravel-localization ^2.2 spatie/laravel-sluggable * repositories type path url ../Xot type path url ../Tenant type path url ../UI autoload psr-4
 - **Totale file PHP**: 103
@@ -479,6 +487,7 @@ tests/Unit
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/project_docs/structure.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [structure.md](../../../gdpr/project_docs/structure.md)
 * [structure.md](../../../notify/project_docs/structure.md)
 * [structure.md](../../../xot/project_docs/structure.md)
@@ -495,6 +504,8 @@ tests/Unit
 * [structure.md](../../../cms/project_docs/themes/structure.md)
 * [structure.md](../../../cms/project_docs/components/structure.md)
 =======
+=======
+>>>>>>> dev
 * [structure.md](../../../Gdpr/project_docs/structure.md)
 * [structure.md](../../../Notify/project_docs/structure.md)
 * [structure.md](../../../Xot/project_docs/structure.md)
@@ -510,14 +521,21 @@ tests/Unit
 * [structure.md](../../../Cms/project_docs/structure.md)
 * [structure.md](../../../Cms/project_docs/themes/structure.md)
 * [structure.md](../../../Cms/project_docs/components/structure.md)
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Struttura della Registrazione dei Console Commands
 
 - Tutti i comandi console sono autoregistrati tramite la struttura di XotBaseServiceProvider.
 - Non aggiungere mai manualmente $this->commands([...]) nei provider.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./philosophy.md)
 =======
 - Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
+>>>>>>> dev

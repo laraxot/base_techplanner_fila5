@@ -46,12 +46,16 @@
 ## Collegamenti
 - [Roadmap Principale](../../roadmap.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Linee Guida Documentazione](../../documentation-guidelines.md)
 - [Best Practices](../../best-practices.md)
 ## Collegamenti tra versioni di status.md
 * [status.md](../../../xot/docs/roadmap/docs/status.md)
 * [status.md](../../../xot/docs/roadmap/testing/status.md)
 * [status.md](../../../xot/docs/roadmap/security/status.md)
+<<<<<<< HEAD
 =======
 - [Linee Guida Documentazione](../../DOCUMENTATION-GUIDELINES.md)
 - [Best Practices](../../BEST-PRACTICES.md)
@@ -60,3 +64,5 @@
 * [status.md](../../../Xot/docs/roadmap/testing/status.md)
 * [status.md](../../../Xot/docs/roadmap/security/status.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

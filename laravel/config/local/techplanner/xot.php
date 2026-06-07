@@ -8,10 +8,14 @@ return [
     'main_module' => 'TechPlanner',
     'primary_lang' => 'it',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'pub_theme' => 'Two',
 =======
     'pub_theme' => 'Sixteen',
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'pub_theme' => 'Two',
+>>>>>>> dev
     'search_action' => 'it/videos',
     'show_trans_key' => false,
     'disable_admin_dynamic_route' => true,

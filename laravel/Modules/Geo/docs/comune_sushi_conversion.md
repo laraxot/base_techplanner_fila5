@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi: Conversione del Modello Comune a Laravel Sushi
 
 ## Stato Attuale
@@ -389,3 +390,12 @@ L'implementazione ibrida rappresenta il miglior compromesso tra funzionalità El
 ---
 
 *Documento creato il: 28/05/2025*
+=======
+---
+module: theme
+topic: comune_sushi_conversion
+canonical: ../../../Themes/docs/shared-components/comune-sushi-conversion.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/comune-sushi-conversion.md
+>>>>>>> dev

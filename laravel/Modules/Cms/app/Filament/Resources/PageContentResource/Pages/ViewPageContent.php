@@ -10,10 +10,14 @@ use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 <<<<<<< HEAD
+<<<<<<< HEAD
 // use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
 =======
 use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
 >>>>>>> 4b6b99016 (first commit)
+=======
+// use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
+>>>>>>> dev
 use Modules\Cms\Filament\Resources\PageContentResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -28,10 +32,14 @@ class ViewPageContent extends XotBaseViewRecord
         return [
             'edit' => EditAction::make(),
 <<<<<<< HEAD
+<<<<<<< HEAD
             // 'locale-switcher' => LocaleSwitcher::make(), // Temporarily disabled until lara-zeus package is working
 =======
             'locale-switcher' => LocaleSwitcher::make(),
 >>>>>>> 4b6b99016 (first commit)
+=======
+            // 'locale-switcher' => LocaleSwitcher::make(), // Temporarily disabled until lara-zeus package is working
+>>>>>>> dev
         ];
     }
 

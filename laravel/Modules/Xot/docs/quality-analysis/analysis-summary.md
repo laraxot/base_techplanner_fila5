@@ -110,10 +110,14 @@ $user->authentications()
 - [Module Analysis Workflow](./module-analysis-workflow.md)
 - [Current Status](./current-status.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Quality Report](../user/docs/quality-analysis/user-module-quality-report.md)
 =======
 - [User Module Quality Report](../User/docs/quality-analysis/user-module-quality-report.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [User Module Quality Report](../user/docs/quality-analysis/user-module-quality-report.md)
+>>>>>>> dev
 - [Xot Progress Summary](./progress-summary.md)
 
 ## 📝 Note Operative

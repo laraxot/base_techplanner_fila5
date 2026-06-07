@@ -2,6 +2,9 @@
 
 use Spatie\Comments\Actions\ApproveCommentAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use Spatie\Comments\Actions\ProcessCommentAction;
 use Spatie\Comments\Actions\RejectCommentAction;
 use Spatie\Comments\Actions\ResolveMentionsAutocompleteAction;
@@ -14,6 +17,7 @@ use Spatie\Comments\Models\CommentNotificationSubscription;
 use Spatie\Comments\Models\Reaction;
 use Spatie\Comments\Notifications\ApprovedCommentNotification;
 use Spatie\Comments\Notifications\PendingCommentNotification;
+<<<<<<< HEAD
 =======
 use Spatie\Comments\Actions\RejectCommentAction;
 use Spatie\Comments\Actions\ResolveMentionsAutocompleteAction;
@@ -28,6 +32,8 @@ use Spatie\Comments\Models\Comment;
 use Spatie\Comments\CommentTransformers\MarkdownToHtmlTransformer;
 use Spatie\Comments\Models\CommentNotificationSubscription;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Spatie\Comments\Support\CommentSanitizer;
 
 return [

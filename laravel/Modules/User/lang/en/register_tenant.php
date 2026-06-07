@@ -33,11 +33,17 @@ return [
                 'max' => 'Il nome non può superare i 100 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'phone' => [
             'label' => 'Numero di Telefono Studio',
@@ -49,11 +55,17 @@ return [
                 'min' => 'Il numero deve contenere almeno 10 cifre',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'email' => [
             'label' => 'Email Ufficiale Studio',
@@ -66,11 +78,17 @@ return [
                 'max' => 'L\'indirizzo email non può superare i 255 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'address' => [
             'label' => 'Complete Practice Address',
@@ -86,9 +104,13 @@ return [
                 'max' => 'Address cannot exceed 300 characters',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'director_name' => [
             'label' => 'Nome Direttore Sanitario',
@@ -100,11 +122,17 @@ return [
                 'max' => 'Il nome non può superare i 100 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'director_registration' => [
             'label' => 'Numero Iscrizione Albo Medico',
@@ -116,11 +144,17 @@ return [
                 'min' => 'Il numero di iscrizione deve contenere almeno 3 cifre',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'vat_number' => [
             'label' => 'Partita IVA Studio',
@@ -132,11 +166,17 @@ return [
                 'unique' => 'Questa partita IVA è già registrata per un altro studio',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'specialization' => [
             'label' => 'Specializzazioni Mediche',
@@ -159,11 +199,17 @@ return [
                 'altro' => 'Altra Specializzazione',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'website' => [
             'label' => 'Sito Web Studio',
@@ -173,11 +219,17 @@ return [
                 'url' => 'Inserisci un URL valido che inizi con http:// o https://',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'staff_count' => [
             'label' => 'Numero Operatori',
@@ -190,11 +242,17 @@ return [
                 'max' => 'Il numero massimo consentito è 100 operatori',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'privacy_acceptance' => [
             'label' => 'Consenso Trattamento Dati',
@@ -204,11 +262,17 @@ return [
                 'accepted' => 'You must accept the privacy policy to continue',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'terms_acceptance' => [
             'label' => 'Accettazione Termini di Servizio',
@@ -218,11 +282,17 @@ return [
                 'accepted' => 'You must accept the terms and conditions to continue',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -311,8 +381,13 @@ return [
         'data_protection' => 'Tutti i dati sono protetti secondo le normative europee GDPR',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

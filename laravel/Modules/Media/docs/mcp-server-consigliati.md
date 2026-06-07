@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Server MCP consigliati per il modulo Media
 
 ## Scopo del modulo
@@ -52,3 +53,12 @@ Gestione, manipolazione e automazione di file e media.
 **Nota:**
 Aggiungi solo i server che realmente ti servono per il tuo workflow.
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: mcp-server-consigliati
+canonical: ../../../Themes/docs/shared-components/mcp_server_consigliati.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/mcp_server_consigliati.md
+>>>>>>> dev

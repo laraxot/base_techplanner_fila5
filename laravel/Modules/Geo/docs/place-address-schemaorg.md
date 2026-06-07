@@ -93,11 +93,15 @@ Schema::create('addresses', function (Blueprint $table) {
 - [Entità Geografiche](./geo_entities.md)
 - [location-select.md](./location-select.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [README.md](./readme.md)
 
 ---
 
 Responsabile: Cascade AI 
+<<<<<<< HEAD
 =======
 - [README.md](./README.md)
 
@@ -106,3 +110,5 @@ Responsabile: Cascade AI
 **Ultimo aggiornamento:** 2025-05-29
 Responsabile: Cascade AI
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

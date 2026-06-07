@@ -6,6 +6,7 @@
 
 #### N+1 Queries in Activity Logs
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Problem**: 50-100 queries per page load
 **Issues**:
@@ -376,6 +377,8 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 
 #### N+1 Queries in Activity Logs
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 **Problem**: 50-100 queries per page load
 
@@ -486,10 +489,14 @@ public function searchActivities($searchTerm, $filters = [])
 {
     $cacheKey = "activity_search_" . md5($searchTerm . serialize($filters));
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     return Cache::remember($cacheKey, 300, function() use ($searchTerm, $filters) {
         $query = ActivityLog::with(['causer', 'subject'])
             ->where(function($q) use ($searchTerm) {
@@ -812,6 +819,9 @@ $defaultRecordsPerPageSelectOption → $defaultPerPageOption
 ## 📚 Related Documentation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [ACTIVITY_LOG_OPTIMIZATION.md](./performance/activity_log_optimization.md)
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./query_optimization_analysis.md)
 - [bottlenecks.md](./bottlenecks.md)
@@ -819,6 +829,7 @@ $defaultRecordsPerPageSelectOption → $defaultPerPageOption
 This analysis provides a comprehensive roadmap for improving code quality in the Activity module while maintaining data integrity and performance.
 
 
+<<<<<<< HEAD
 =======
 - [ACTIVITY_LOG_OPTIMIZATION.md](./performance/ACTIVITY_LOG_OPTIMIZATION.md)
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./QUERY_OPTIMIZATION_ANALYSIS.md)
@@ -826,3 +837,5 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 
 This analysis provides a comprehensive roadmap for improving code quality in the Activity module while maintaining data integrity and performance.
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

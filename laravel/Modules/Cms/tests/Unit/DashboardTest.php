@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use function Pest\Laravel\get;
 
+<<<<<<< HEAD
 use Tests\TestCase;
 
 uses(TestCase::class);
@@ -18,4 +19,12 @@ test('route login is accessible', function (): void {
     $response = get('/it/login');
     // Accept various status codes based on configuration
     expect($response->status())->toBeIn([200, 302, 404, 500]);
+=======
+test('route home returns successful response with correct view', function (): void {
+    get('/')->assertSuccessful()->assertViewIs('pub_theme::home');
+});
+
+test('route login returns successful response with correct view', function (): void {
+    get('/it/login')->assertSuccessful()->assertViewIs('pub_theme::auth.login');
+>>>>>>> dev
 });

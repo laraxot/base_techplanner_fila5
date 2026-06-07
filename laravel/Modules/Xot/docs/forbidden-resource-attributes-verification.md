@@ -1,9 +1,12 @@
 # Verifica Proprietà Vietate in XotBaseResource - Report Completo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2026-01-09  
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Status**: ✅ **COMPLETATO**
 
 ---
@@ -85,7 +88,11 @@ Le uniche proprietà vietate trovate sono commentate, quindi non attive. Il sist
 **Status**: ✅ **VERIFICA COMPLETATA**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
 =======
 **Ultimo aggiornamento**: 2026-01-09
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JSON come Database per Dati Geografici
 
 ## Contesto
@@ -269,3 +270,12 @@ class GeoDataValidator
 - [Documentazione Squire](../../geo/project_docs/squire-integration.md)
 - [Best Practices Filament](../../../project_docs/filament-best-practices.md)
 - [Clean Code](../../../project_docs/clean-code.md) 
+=======
+---
+module: theme
+topic: json_database
+canonical: ../../../Themes/docs/shared-components/json-database.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/json-database.md
+>>>>>>> dev

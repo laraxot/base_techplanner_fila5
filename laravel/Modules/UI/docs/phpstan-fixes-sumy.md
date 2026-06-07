@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Fixes Summary - UI and Xot Modules
 
 ## Overview
@@ -265,3 +266,12 @@ php artisan test --filter=Xot
 
 # Check for any new errors
 ./vendor/bin/phpstan analyse Modules
+=======
+---
+module: theme
+topic: phpstan-fixes-sumy
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-summary.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-summary.md
+>>>>>>> dev

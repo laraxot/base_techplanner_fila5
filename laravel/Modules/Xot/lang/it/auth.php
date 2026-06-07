@@ -11,6 +11,9 @@ return [
     'throttle' => 'Troppi tentativi di login. Si prega di riprovare tra :seconds secondi.',
     'unknown' => 'Si è verificato un errore sconosciuto',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Auth',
     'plural_label' => 'Auth (Plurale)',
     'navigation' => [
@@ -55,6 +58,9 @@ return [
             'label' => 'Elimina Auth',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

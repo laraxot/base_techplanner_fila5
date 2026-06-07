@@ -518,8 +518,12 @@ echo "5. Run quality checks"
 
 **Workflow Version**: 1.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 **Last Updated**: 2025-11-17
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 **Maintained by**: Xot Module Development Team

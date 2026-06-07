@@ -129,10 +129,14 @@ Poi modificare i file in `lang/vendor/{package}/{locale}/`.
 
 ## Console Commands
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./philosophy.md))
 =======
 - **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
+>>>>>>> dev
 # Guida Rapida alle Traduzioni
 
 ## Struttura Base
@@ -264,10 +268,14 @@ Poi modificare i file in `lang/vendor/{package}/{locale}/`.
 
 ## Console Commands
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./philosophy.md))
 =======
 - **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
+>>>>>>> dev
 # Guida Rapida alle Traduzioni
 
 ## Struttura Base
@@ -399,7 +407,11 @@ Poi modificare i file in `lang/vendor/{package}/{locale}/`.
 
 ## Console Commands
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./philosophy.md))
 =======
 - **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Console Commands**: Non registrarli mai manualmente, sono autoregistrati da XotBaseServiceProvider ([vedi](./lang-service-provider.md), [filosofia](./PHILOSOPHY.md))
+>>>>>>> dev

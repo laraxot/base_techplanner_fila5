@@ -278,6 +278,9 @@ Tutti i modelli BaseModel, BasePivot, BaseUser, etc. sono classi astratte utiliz
 
 ### Documentazione Moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [<nome progetto> Analysis](../laravel/modules/<nome progetto>/docs/modelli_factory_seeder_analisi.md)
 - [User Analysis](../laravel/modules/user/docs/modelli_factory_seeder_analisi.md)
 - [Geo Analysis](../laravel/modules/geo/docs/modelli_factory_seeder_analisi.md)
@@ -285,6 +288,7 @@ Tutti i modelli BaseModel, BasePivot, BaseUser, etc. sono classi astratte utiliz
 - [Notify Analysis](../laravel/modules/notify/docs/modelli_factory_seeder_analisi.md)
 - [Job Analysis](../laravel/modules/job/docs/modelli_factory_seeder_analisi.md)
 - [Altri Moduli Analysis](../laravel/modules/activity/docs/modelli_factory_seeder_analisi.md)
+<<<<<<< HEAD
 =======
 - [<nome progetto> Analysis](../laravel/Modules/<nome progetto>/docs/modelli_factory_seeder_analisi.md)
 - [User Analysis](../laravel/Modules/User/docs/modelli_factory_seeder_analisi.md)
@@ -294,6 +298,8 @@ Tutti i modelli BaseModel, BasePivot, BaseUser, etc. sono classi astratte utiliz
 - [Job Analysis](../laravel/Modules/Job/docs/modelli_factory_seeder_analisi.md)
 - [Altri Moduli Analysis](../laravel/Modules/Activity/docs/modelli_factory_seeder_analisi.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### Documentazione Tecnica
 - [Factory Patterns](./factory_patterns.md)
@@ -308,8 +314,11 @@ Tutti i modelli BaseModel, BasePivot, BaseUser, etc. sono classi astratte utiliz
 - [Medical Data Modeling](./medical_data_modeling.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 *Autore: Sistema di analisi automatizzata*
 *Scope: Completo sistema <nome progetto> (14 moduli, ~150 modelli)*

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 
 # Data Objects in Laraxot
 
@@ -70,6 +73,7 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 - **PHPDoc incompleto per le relazioni Eloquent**: Aggiungere tutti i tipi di template nella documentazione PHPDoc.
 - **Accesso a proprietà inesistenti**: Verificare l'esistenza delle proprietà prima dell'accesso.
 - **Tipo di ritorno `class-string`**: Usare asserzioni o casting appropriati quando si restituiscono stringhe che rappresentano classi.
+<<<<<<< HEAD
 =======
 # Data Objects
 
@@ -154,3 +158,5 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 - [Best Practices](./best-practices.md)
 - [Convenzioni di Codice](./coding-standards.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

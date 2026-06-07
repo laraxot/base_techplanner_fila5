@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://dudi.dev/optimize-laravel-database-queries/
 =======
 ### Versione HEAD
@@ -13,3 +14,12 @@ https://dudi.dev/optimize-laravel-database-queries/
 
 ---
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: tips
+canonical: ../../../Themes/docs/shared-components/tips.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/tips.txt
+>>>>>>> dev

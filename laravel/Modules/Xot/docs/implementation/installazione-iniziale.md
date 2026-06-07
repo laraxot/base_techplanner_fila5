@@ -70,7 +70,11 @@ Verificare che il file `composer.json` NON contenga la riga `"Modules\\": "Modul
 ### 7. Installazione BashScripts
 
 ```bash
+<<<<<<< HEAD
 git subtree add -P bashscripts git@github.com:laraxot/bashscripts_fila3.git dev --squash
+=======
+git subtree add -P bashscripts git@github.com:laraxot/bashscripts_fila5.git dev --squash
+>>>>>>> dev
 ```
 
 ## Correzione Installazione Errata
@@ -104,7 +108,11 @@ Dopo l'installazione iniziale, procedere con:
 * [installazione-iniziale.md](docs/installazione-iniziale.md)
 * [installazione-iniziale.md](docs/tecnico/installazione-iniziale.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [installazione-iniziale.md](../../../xot/docs/implementation/installazione-iniziale.md)
 =======
 * [installazione-iniziale.md](../../../Xot/docs/implementation/installazione-iniziale.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [installazione-iniziale.md](../../../xot/docs/implementation/installazione-iniziale.md)
+>>>>>>> dev

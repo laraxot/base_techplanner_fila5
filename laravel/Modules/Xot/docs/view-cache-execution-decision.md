@@ -182,12 +182,17 @@ Corretti i file per usare la sintassi corretta `<x-ui.logo>` invece di `<x-pub_t
 
 ### Riferimenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Pub Theme Component Namespace Error Analysis](../../themes/meetup/docs/pub-theme-component-namespace-error-analysis.md)
 - [Blade Anonymous Components Rule](../../xot/docs/blade-anonymous-components-namespace-rule.md)
 =======
 - [Pub Theme Component Namespace Error Analysis](../../Themes/Meetup/docs/pub-theme-component-namespace-error-analysis.md)
 - [Blade Anonymous Components Rule](../../Xot/docs/blade-anonymous-components-namespace-rule.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Pub Theme Component Namespace Error Analysis](../../themes/meetup/docs/pub-theme-component-namespace-error-analysis.md)
+- [Blade Anonymous Components Rule](../../xot/docs/blade-anonymous-components-namespace-rule.md)
+>>>>>>> dev
 
 ---
 

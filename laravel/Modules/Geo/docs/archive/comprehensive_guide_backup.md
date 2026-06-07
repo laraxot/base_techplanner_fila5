@@ -20,7 +20,11 @@ The Geo module provides geographic functionality including:
 
 ## Installation
 ```bash
+<<<<<<< HEAD
 composer require laraxot/module_geo_fila3
+=======
+composer require laraxot/module_geo_fila5
+>>>>>>> dev
 ```
 
 ## Configuration

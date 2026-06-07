@@ -9,77 +9,119 @@ return [
             'placeholder' => 'Seleziona il campo per l\'ordinamento',
             'help' => 'Campo del database per l\'ordinamento',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'direction' => [
             'label' => 'Direzione',
             'placeholder' => 'Seleziona la direzione dell\'ordinamento',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'help' => 'Direzione dell\'ordinamento (crescente/decrescente]',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
             'help' => 'Direzione dell\'ordinamento (crescente/decrescente)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'priority' => [
             'label' => 'Priorità',
             'placeholder' => 'Inserisci la priorità dell\'ordinamento',
             'help' => 'Priorità di applicazione dell\'ordinamento',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'is_active' => [
-            'label' => 'Attivo',
-            'help' => 'Indica se l\'ordinamento è attivo',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'is_active' => [
+            'label' => 'Attivo',
+            'help' => 'Indica se l\'ordinamento è attivo',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Descrizione dell\'ordinamento',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'custom_function' => [
             'label' => 'Funzione personalizzata',
             'placeholder' => 'Inserisci la funzione personalizzata',
             'help' => 'Funzione personalizzata per l\'ordinamento',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'nulls_position' => [
-            'label' => 'Posizione valori nulli',
-            'placeholder' => 'Seleziona la posizione dei valori nulli',
-            'help' => 'Posizione dei valori nulli nell\'ordinamento',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'nulls_position' => [
+            'label' => 'Posizione valori nulli',
+            'placeholder' => 'Seleziona la posizione dei valori nulli',
+            'help' => 'Posizione dei valori nulli nell\'ordinamento',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'validation' => [
@@ -169,16 +211,22 @@ return [
         'asc' => 'Crescente',
         'desc' => 'Decrescente',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'asc_nulls_first' => 'Crescente (nulli prima]',
         'asc_nulls_last' => 'Crescente (nulli dopo]',
         'desc_nulls_first' => 'Decrescente (nulli prima]',
         'desc_nulls_last' => 'Decrescente (nulli dopo]',
+<<<<<<< HEAD
 =======
         'asc_nulls_first' => 'Crescente (nulli prima)',
         'asc_nulls_last' => 'Crescente (nulli dopo)',
         'desc_nulls_first' => 'Decrescente (nulli prima)',
         'desc_nulls_last' => 'Decrescente (nulli dopo)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'nulls_positions' => [
         'first' => 'Prima',
@@ -187,11 +235,15 @@ return [
     ],
     'sorting_priorities' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         1 => 'Molto bassa',
         2 => 'Bassa',
         3 => 'Media',
         4 => 'Alta',
         5 => 'Molto alta',
+<<<<<<< HEAD
 =======
         '1' => 'Molto bassa',
         '2' => 'Bassa',
@@ -199,6 +251,8 @@ return [
         '4' => 'Alta',
         '5' => 'Molto alta',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'sorting_types' => [
         'simple' => 'Semplice',
@@ -211,6 +265,9 @@ return [
         'boolean' => 'Booleano',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Sorting',
     'plural_label' => 'Sorting (Plurale)',
     'navigation' => [
@@ -235,6 +292,9 @@ return [
             'label' => 'Elimina Sorting',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

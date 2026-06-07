@@ -98,5 +98,9 @@ Dopo la risoluzione, sono state eseguite le seguenti verifiche:
 ## Collegamenti
 
 - [Documentazione Modulo User](module_user.md)
+<<<<<<< HEAD
 - [Best Practices per la Gestione dei Conflitti Git](../../../../docs/risoluzione_conflitti_git.md)
+=======
+- [Best Practices per la Gestione dei Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md)
+>>>>>>> dev
 - [Alpine.js](https://alpinejs.dev/) 

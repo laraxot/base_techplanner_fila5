@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 description: 
 globs: 
 alwaysApply: true
@@ -61,3 +62,11 @@ enum ComuneTypeEnum: string implements HasLabel
 
 ---
 **Questa regola è OBBLIGATORIA per tutti i moduli che gestiscono tipi o stati.**
+=======
+module: theme
+topic: windsurf-enums
+canonical: ../../../Themes/docs/shared-components/windsurf-enums.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/windsurf-enums.md
+>>>>>>> dev

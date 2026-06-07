@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione Corretta del Logout con Widget Filament
 
 ## Collegamenti correlati
@@ -268,3 +269,12 @@ Se non è necessaria una conferma per il logout, è preferibile utilizzare l'app
 =======
 Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](LOGOUT_BLADE_IMPLEMENTATION.md), che esegue il logout immediatamente senza richiedere conferma.
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: logout_filament_widget_corrected
+canonical: ../../../Themes/docs/shared-components/logout_filament_widget_corrected.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout_filament_widget_corrected.md
+>>>>>>> dev

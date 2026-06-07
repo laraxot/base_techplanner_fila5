@@ -340,8 +340,13 @@ echo "✅ Consolidamento completato!"
 - [Convenzioni](./core/conventions.md) - Convenzioni unificate
 
 ### Documentazione Root
+<<<<<<< HEAD
 - [docs/ottimizzazioni-sistema.md](../../../docs/ottimizzazioni-sistema.md) - Ottimizzazioni sistema generale
 - [docs/architettura-moduli.md](../../../docs/architettura-moduli.md) - Architettura moduli
+=======
+- [docs/ottimizzazioni-sistema.md](../../../../docs/ottimizzazioni-sistema.md) - Ottimizzazioni sistema generale
+- [docs/architettura-moduli.md](../../../../docs/architettura-moduli.md) - Architettura moduli
+>>>>>>> dev
 
 ### Documentazione Moduli Correlati
 - [Xot/docs/ottimizzazioni-modulo-xot.md](../../xot/docs/ottimizzazioni-modulo-xot.md) - Ottimizzazioni modulo Xot

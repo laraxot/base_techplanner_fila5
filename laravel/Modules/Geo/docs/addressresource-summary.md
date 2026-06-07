@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sintesi Analisi AddressResource - Modulo Geo
 
 ## 📋 Panoramica Completa
@@ -185,3 +186,12 @@ L'implementazione attuale fornisce una base solida per i miglioramenti proposti,
 *Modulo: Geo*
 *Classe: AddressResource*
 *Versione: 1.0*
+=======
+---
+module: theme
+topic: addressresource-summary
+canonical: ../../../Themes/docs/shared-components/address-resource-summary.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/address-resource-summary.md
+>>>>>>> dev

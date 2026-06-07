@@ -16,15 +16,21 @@ class CreateTenantCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> dev
      */
     protected $signature = 'user:tenant-create';
 
     /**
      * The console command description.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> dev
      */
     protected $description = 'Create a tenant';
 

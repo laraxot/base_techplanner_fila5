@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gestione Errori Vite nei Temi
 
 ## Perché
@@ -115,3 +116,12 @@ npm install && npm run copy
 - Aggiornare regolarmente le dipendenze npm
 - Verificare la compatibilità con le versioni Laravel
 - Mantenere backup dei file di configurazione 
+=======
+---
+module: theme
+topic: vite_errors
+canonical: ../../../../Themes/docs/shared-components/vite-errors.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/vite-errors.md
+>>>>>>> dev

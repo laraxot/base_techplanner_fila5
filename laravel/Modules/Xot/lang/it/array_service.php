@@ -7,6 +7,9 @@ return [
     'eta' => 'eta',
     'gg_cateco_posfun' => 'gg_cateco_posfun',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Array Service',
     'plural_label' => 'Array Service (Plurale)',
     'navigation' => [
@@ -51,6 +54,9 @@ return [
             'label' => 'Elimina Array Service',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

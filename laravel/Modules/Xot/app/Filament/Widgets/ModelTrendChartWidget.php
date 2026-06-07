@@ -5,10 +5,15 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Widgets;
 
 use Carbon\Carbon;
+<<<<<<< HEAD
 use Exception;
 use Flowframe\Trend\Trend;
 use Flowframe\Trend\TrendValue;
 use Override;
+=======
+use Flowframe\Trend\Trend;
+use Flowframe\Trend\TrendValue;
+>>>>>>> dev
 
 class ModelTrendChartWidget extends XotBaseChartWidget
 {
@@ -22,13 +27,21 @@ class ModelTrendChartWidget extends XotBaseChartWidget
 
     protected ?string $pollingInterval = '300s'; // 5 minuti
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     public function getHeading(): ?string
     {
         return static::transClass($this->model, 'widgets.model_trend_chart.heading');
     }
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     protected function getData(): array
     {
         try {
@@ -57,7 +70,11 @@ class ModelTrendChartWidget extends XotBaseChartWidget
                     ? Carbon::parse($value->date)->format('d/m')
                     : ''),
             ];
+<<<<<<< HEAD
         } catch (Exception $e) {
+=======
+        } catch (\Exception $e) {
+>>>>>>> dev
             // Fallback appropriato senza logging inutile
             return [
                 'datasets' => [
@@ -75,7 +92,11 @@ class ModelTrendChartWidget extends XotBaseChartWidget
         }
     }
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     protected function getType(): string
     {
         return 'line';

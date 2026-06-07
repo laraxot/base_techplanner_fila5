@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sushi Implementation for Comune Model
 
 ## Overview
@@ -72,3 +73,12 @@ Modules/Geo/
 - Update JSON files via migrations
 - Monitor memory usage
 - Regular performance testing
+=======
+---
+module: theme
+topic: sushi_implementation_guide
+canonical: ../../../Themes/docs/shared-components/sushi-implementation-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/sushi-implementation-guide.md
+>>>>>>> dev

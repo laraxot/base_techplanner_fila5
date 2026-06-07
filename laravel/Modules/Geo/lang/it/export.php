@@ -9,110 +9,170 @@ return [
             'placeholder' => 'Seleziona il formato di esportazione',
             'help' => 'Formato del file di esportazione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'encoding' => [
             'label' => 'Codifica',
             'placeholder' => 'Seleziona la codifica',
             'help' => 'Codifica del file di esportazione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'delimiter' => [
             'label' => 'Delimitatore',
             'placeholder' => 'Seleziona il delimitatore',
             'help' => 'Delimitatore per file CSV',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'include_headers' => [
-            'label' => 'Includi intestazioni',
-            'help' => 'Includi le intestazioni delle colonne',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'include_headers' => [
+            'label' => 'Includi intestazioni',
+            'help' => 'Includi le intestazioni delle colonne',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'fields' => [
             'label' => 'Campi',
             'placeholder' => 'Seleziona i campi da esportare',
             'help' => 'Campi da includere nell\'esportazione',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'filters' => [
             'label' => 'Filtri',
             'placeholder' => 'Configura i filtri per l\'esportazione',
             'help' => 'Filtri da applicare ai dati da esportare',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'sort_by' => [
             'label' => 'Ordina per',
             'placeholder' => 'Seleziona il campo di ordinamento',
             'help' => 'Campo per ordinare i dati esportati',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'sort_direction' => [
             'label' => 'Direzione ordinamento',
             'placeholder' => 'Seleziona la direzione',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'help' => 'Direzione dell\'ordinamento (crescente/decrescente]',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
             'help' => 'Direzione dell\'ordinamento (crescente/decrescente)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'limit' => [
             'label' => 'Limite',
             'placeholder' => 'Inserisci il numero massimo di record',
             'help' => 'Numero massimo di record da esportare',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'compression' => [
-            'label' => 'Compressione',
-            'placeholder' => 'Seleziona il tipo di compressione',
-            'help' => 'Tipo di compressione per il file di esportazione',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'compression' => [
+            'label' => 'Compressione',
+            'placeholder' => 'Seleziona il tipo di compressione',
+            'help' => 'Tipo di compressione per il file di esportazione',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'validation' => [
@@ -163,16 +223,22 @@ return [
     ],
     'delimiters' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'comma' => 'Virgola (,]',
         'semicolon' => 'Punto e virgola (;]',
         'tab' => 'Tab',
         'pipe' => 'Pipe (|]',
+<<<<<<< HEAD
 =======
         'comma' => 'Virgola (,)',
         'semicolon' => 'Punto e virgola (;)',
         'tab' => 'Tab',
         'pipe' => 'Pipe (|)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         'space' => 'Spazio',
     ],
     'compression_types' => [
@@ -187,6 +253,9 @@ return [
         'desc' => 'Decrescente',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Export',
     'plural_label' => 'Export (Plurale)',
     'navigation' => [
@@ -211,6 +280,9 @@ return [
             'label' => 'Elimina Export',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

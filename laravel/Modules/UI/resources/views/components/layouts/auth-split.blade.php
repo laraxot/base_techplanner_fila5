@@ -35,7 +35,11 @@ declare(strict_types=1);
             </div>
 
             <div class="relative z-10 text-sm text-indigo-200 font-medium tracking-wide">
+<<<<<<< HEAD
                 &copy; {{ date('Y') }} LaravelPizza. Made with ❤️ and 🍕.
+=======
+                &copy; {{ date('Y') }} <nome progetto>. Made with ❤️ and 🍕.
+>>>>>>> dev
             </div>
         </div>
 

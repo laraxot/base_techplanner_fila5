@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Modules\TechPlanner\Filament\Resources\MedicalDirectorResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\TechPlanner\Models\MedicalDirector;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Filament\Actions\Action;
 use Filament\Actions\ImportAction;
 use Filament\Tables\Columns\TextColumn;
@@ -15,9 +18,13 @@ use Filament\Tables\Filters\SelectFilter;
 use Modules\TechPlanner\Filament\Imports\MedicalDirectorImporter;
 use Modules\TechPlanner\Filament\Resources\MedicalDirectorResource;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\TechPlanner\Models\MedicalDirector;
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\TechPlanner\Models\MedicalDirector;
+>>>>>>> dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Override;
 
@@ -46,11 +53,15 @@ class ListMedicalDirectors extends XotBaseListRecords
                         ->distinct()
                         ->pluck('date', 'date');
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 
                     if (is_object($dates) && method_exists($dates, 'toArray')) {
                         return $dates->toArray();
                     }
 
+<<<<<<< HEAD
 =======
                     
                     if (is_object($dates) && method_exists($dates, 'toArray')) {
@@ -58,6 +69,8 @@ class ListMedicalDirectors extends XotBaseListRecords
                     }
                     
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                     return [];
                 },
             ),

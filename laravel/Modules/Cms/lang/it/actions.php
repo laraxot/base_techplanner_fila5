@@ -209,8 +209,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Actions',
     'plural_label' => 'Actions (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Actions',
+    'plural_label' => 'Actions (Plurale)',
+>>>>>>> dev
 ];

@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Filament\Facades\Filament;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
@@ -1241,3 +1242,6 @@ if (! function_exists('trans_string')) {
         return $key;
     }
 }
+=======
+require_once __DIR__.'/../helpers/Helper.php';
+>>>>>>> dev

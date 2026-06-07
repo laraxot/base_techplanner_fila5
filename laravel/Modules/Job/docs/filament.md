@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
@@ -29,3 +30,12 @@ https://medium.com/@laravelprotips/laravel-filament-top-12-plugins-simplified-wi
 
 ---
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: filament
+canonical: ../../../Themes/docs/shared-components/filament-Modules.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-Modules.txt
+>>>>>>> dev

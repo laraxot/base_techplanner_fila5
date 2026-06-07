@@ -97,6 +97,11 @@ Thumbs.db
 *.old2
 *.backup
 *.backup.*
+<<<<<<< HEAD
+=======
+*.backup-*
+*.backup_*
+>>>>>>> dev
 *.bak
 *.bakcup
 *.new
@@ -114,6 +119,11 @@ Thumbs.db
 docs/phpstan/
 docs/cache/
 /docs/cache
+<<<<<<< HEAD
+=======
+docs/archive/
+docs/archive/**
+>>>>>>> dev
 
 # ==============================================
 # OLD DIRECTORIES (LEGACY CLEANUP)
@@ -154,3 +164,24 @@ test_jobs.sql
 *.fila2
 laravel
 public_html
+<<<<<<< HEAD
+=======
+lang/lang/
+_docs/
+_docs/
+
+# -----------------------------------------------------------------------------
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+# -----------------------------------------------------------------------------
+*~HEAD
+*~BASE
+*~LOCAL
+*~REMOTE
+*.orig
+*.rej
+*~head
+
+
+# Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
+docs/archive/
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risorse per UI/UX e Frontend Development in il progetto
 
 Questo documento raccoglie le migliori risorse per UI/UX design e frontend development che possono essere utilizzate per migliorare l'interfaccia utente e l'esperienza complessiva del progetto il progetto.
@@ -315,3 +316,12 @@ L'approccio combinato sfrutta:
 - L'efficienza di Tailwind CSS e DaisyUI
 
 Il risultato sarà un'interfaccia che soddisfa le esigenze di pazienti e operatori sanitari, contribuendo al successo complessivo della piattaforma il progetto. 
+=======
+---
+module: theme
+topic: risorse_ui_ux
+canonical: ../../../Themes/docs/shared-components/risorse-ui-ux.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/risorse-ui-ux.md
+>>>>>>> dev

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Testing Guide - Modulo Xot
 
 ## Introduzione
@@ -792,3 +793,12 @@ test('no memory leaks in repeated operations', function (): void {
 **Framework**: Pest v2.x
 **Coverage Target**: 90%+ per core framework
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: testing
+canonical: ../../../Themes/docs/shared-components/testing-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/testing-guide.md
+>>>>>>> dev

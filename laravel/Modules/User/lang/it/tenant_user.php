@@ -15,6 +15,9 @@ return [
         'icon' => 'heroicon-o-building-office',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Tenant User',
     'plural_label' => 'Tenant User (Plurale)',
     'fields' => [
@@ -48,10 +51,13 @@ return [
             'label' => 'Elimina Tenant User',
         ],
     ],
+<<<<<<< HEAD
 =======
     'label' => '',
     'plural_label' => '',
     'fields' => [],
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

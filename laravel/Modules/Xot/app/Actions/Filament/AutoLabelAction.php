@@ -13,7 +13,10 @@ use Filament\Schemas\Components\Component;
 use Illuminate\Support\Arr;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Xot\Actions\GetTransKeyAction;
+<<<<<<< HEAD
 use ReflectionClass;
+=======
+>>>>>>> dev
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -27,7 +30,12 @@ class AutoLabelAction
     /**
      * Applica automaticamente le etichette ai componenti Filament.
      *
+<<<<<<< HEAD
      * @param  Field|Component  $component  Il componente a cui applicare l'etichetta
+=======
+     * @param Field|Component $component Il componente a cui applicare l'etichetta
+     *
+>>>>>>> dev
      * @return Field|Component Il componente con l'etichetta applicata
      */
     public function execute(Field|Component $component): Field|Component
@@ -97,7 +105,12 @@ class AutoLabelAction
     /**
      * Get the component name based on its actual type.
      *
+<<<<<<< HEAD
      * @param  Field|Component  $component  Il componente di cui ottenere il nome
+=======
+     * @param Field|Component $component Il componente di cui ottenere il nome
+     *
+>>>>>>> dev
      * @return string Il nome del componente
      */
     private function getComponentName(Field|Component $component): string
@@ -120,7 +133,11 @@ class AutoLabelAction
         }
 
         // Fallback a reflection per altri casi
+<<<<<<< HEAD
         $reflectionClass = new ReflectionClass($component);
+=======
+        $reflectionClass = new \ReflectionClass($component);
+>>>>>>> dev
         if ($reflectionClass->hasProperty('name') && $reflectionClass->getProperty('name')->isPublic()) {
             $property = $reflectionClass->getProperty('name');
             Assert::string($value = $property->getValue($component));

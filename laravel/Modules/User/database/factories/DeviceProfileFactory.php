@@ -5,14 +5,23 @@ declare(strict_types=1);
 namespace Modules\User\Database\Factories;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
+=======
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Modules\User\Models\DeviceProfile;
+>>>>>>> dev
 
 class DeviceProfileFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      */
+<<<<<<< HEAD
     protected $model = \Modules\User\Models\DeviceProfile::class;
+=======
+    protected $model = DeviceProfile::class;
+>>>>>>> dev
 
     /**
      * Define the model's default state.
@@ -20,6 +29,7 @@ class DeviceProfileFactory extends Factory
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
 use Modules\User\Models\DeviceProfile;
 
@@ -54,5 +64,7 @@ class DeviceProfileFactory extends DeviceUserFactory
             ],
         );
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 }

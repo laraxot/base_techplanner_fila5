@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://pixelpoint.io/blog/web-optimized-video-ffmpeg/
 
 ffmpeg -i in.mp4 -c:v libvpx-vp9 -threads 4 out.mp4
@@ -73,3 +74,12 @@ ffmpeg -h encoder=hevc_nvenc
 ----------------------------------
 ffmpeg -h encoder=hevc_nvenc
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: webm
+canonical: ../../../Themes/docs/shared-components/webm.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/webm.txt
+>>>>>>> dev

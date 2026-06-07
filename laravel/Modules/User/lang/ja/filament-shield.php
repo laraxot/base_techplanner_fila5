@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /*
      * |--------------------------------------------------------------------------
@@ -12,11 +13,14 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'column.name' => '名前',
     'column.guard_name' => 'ガード名',
     'column.roles' => 'ロール',
     'column.permissions' => 'パーミッション',
     'column.updated_at' => '更新日時',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     /*
@@ -26,11 +30,14 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'field.name' => '名前',
     'field.guard_name' => 'ガード名',
     'field.permissions' => 'パーミッション',
     'field.select_all.name' => 'すべて選択',
     'field.select_all.message' => 'このロールに対して現在<span class="text-primary font-medium">有効</span>となっているすべての権限を有効にします。',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     /*
@@ -40,11 +47,14 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'ロール',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'ロール',
     'resource.label.roles' => 'ロール',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     /*
@@ -54,11 +64,14 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'section' => 'エンティティ',
     'resources' => 'リソース',
     'widgets' => 'ウィジェット',
     'pages' => 'ページ',
     'custom' => 'カスタムパーミッション',
+<<<<<<< HEAD
 <<<<<<< HEAD
     'forbidden' => 'アクセスするパーミッションがありません。',
 =======
@@ -76,6 +89,9 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'forbidden' => 'アクセスするパーミッションがありません。',
+>>>>>>> dev
     'resource_permission_prefixes_labels' => [
         'view' => '表示',
         'view_any' => 'どれでも表示',
@@ -91,6 +107,9 @@ return [
         'replicate' => 'レプリカ',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -104,6 +123,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

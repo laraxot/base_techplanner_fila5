@@ -3,11 +3,15 @@
 ## Introduzione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento esplora i componenti Filament che possono migliorare l'esperienza utente per i campi `name` e `slug` nel form di gestione dei template email. I miglioramenti proposti seguono le convenzioni del progetto SaluteOra, mantenendo la coerenza visiva e migliorando l'usabilità.
 =======
 Questo documento esplora i componenti Filament che possono migliorare l'esperienza utente per i campi `name` e `slug` nel form di gestione dei template email. I miglioramenti proposti seguono le convenzioni del progetto , mantenendo la coerenza visiva e migliorando l'usabilità.
 Questo documento esplora i componenti Filament che possono migliorare l'esperienza utente per i campi `name` e `slug` nel form di gestione dei template email. I miglioramenti proposti seguono le convenzioni del progetto <nome progetto>, mantenendo la coerenza visiva e migliorando l'usabilità.
 >>>>>>> 4b6b99016 (first commit)
+=======
+Questo documento esplora i componenti Filament che possono migliorare l'esperienza utente per i campi `name` e `slug` nel form di gestione dei template email. I miglioramenti proposti seguono le convenzioni del progetto Quaeris, mantenendo la coerenza visiva e migliorando l'usabilità.
+>>>>>>> dev
 
 ## Componenti per il Campo `name`
 
@@ -74,10 +78,14 @@ Questo documento esplora i componenti Filament che possono migliorare l'esperien
     ->unique(ignoreRecord: true)
     ->maxLength(255)
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->afterStateUpdated(fn (string $context, $state, callable $set) => 
 =======
     ->afterStateUpdated(fn (string $context, $state, callable $set) =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+    ->afterStateUpdated(fn (string $context, $state, callable $set) => 
+>>>>>>> dev
         $context === 'create' ? $set('slug', Str::slug($state)) : null)
     ->helperText('Identificatore unico utilizzato nel codice')
     ->prefixIcon('heroicon-o-link')
@@ -116,10 +124,14 @@ Questo documento esplora i componenti Filament che possono migliorare l'esperien
             ->icon('heroicon-o-arrow-path')
             ->tooltip('Rigenera dallo slug dal nome')
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->action(fn (Forms\Get $get, Forms\Set $set) => 
 =======
             ->action(fn (Forms\Get $get, Forms\Set $set) =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+            ->action(fn (Forms\Get $get, Forms\Set $set) => 
+>>>>>>> dev
                 $set('slug', Str::slug($get('name'))))
     ),
 ```
@@ -144,10 +156,14 @@ Forms\Components\Group::make([
             }
         }),
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
     Forms\Components\Grid::make(2)
         ->schema([
             'generateSlug' => Forms\Components\Toggle::make('generateSlug')
@@ -160,10 +176,14 @@ Forms\Components\Group::make([
                     }
                 }),
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+                
+>>>>>>> dev
             'slug' => Forms\Components\TextInput::make('slug')
                 ->required()
                 ->unique(ignoreRecord: true)
@@ -235,11 +255,15 @@ return [
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Conformità con gli Standard SaluteOra
 =======
 ## Conformità con gli Standard
 ## Conformità con gli Standard <nome progetto>
 >>>>>>> 4b6b99016 (first commit)
+=======
+## Conformità con gli Standard Quaeris
+>>>>>>> dev
 
 Tutti i componenti proposti:
 1. Non utilizzano il metodo `->label()` sui componenti Filament
@@ -256,15 +280,20 @@ I miglioramenti UI/UX proposti per i campi `name` e `slug` si concentrano su:
 4. **Relazioni intuitive** tra campi correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 L'implementazione di questi miglioramenti rispetta le convenzioni del progetto SaluteOra mentre offre un'esperienza utente significativamente migliorata nella gestione dei template email.
 =======
 L'implementazione di questi miglioramenti rispetta le convenzioni del progetto  mentre offre un'esperienza utente significativamente migliorata nella gestione dei template email.
 L'implementazione di questi miglioramenti rispetta le convenzioni del progetto <nome progetto> mentre offre un'esperienza utente significativamente migliorata nella gestione dei template email.
 >>>>>>> 4b6b99016 (first commit)
+=======
+L'implementazione di questi miglioramenti rispetta le convenzioni del progetto Quaeris mentre offre un'esperienza utente significativamente migliorata nella gestione dei template email.
+>>>>>>> dev
 
 ## Riferimenti
 
 - [Documentazione Filament Forms](https://filamentphp.com/docs/forms/fields/text-input)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Implementazione Modello con Slug](./model_slug_implementation.md)
 - [Implementazione Risorsa con Slug](./resource_slug_implementation.md)
@@ -510,3 +539,7 @@ L'implementazione di questi miglioramenti rispetta le convenzioni del progetto <
 - [Implementazione Modello con Slug](./MODEL_SLUG_IMPLEMENTATION.md)
 - [Implementazione Risorsa con Slug](./RESOURCE_SLUG_IMPLEMENTATION.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Implementazione Modello con Slug](./model_slug_implementation.md)
+- [Implementazione Risorsa con Slug](./resource_slug_implementation.md)
+>>>>>>> dev

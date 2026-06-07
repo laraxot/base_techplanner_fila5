@@ -1,10 +1,14 @@
 # REGOLA CRITICA: Usa SEMPRE transClass() negli Enum
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Data: [DATE]
 =======
 ## Data: 2025-01-06
 >>>>>>> 4b6b99016 (first commit)
+=======
+## Data: [DATE]
+>>>>>>> dev
 
 ## ✅ CORRETTO - Implementazione Enum con TransTrait
 
@@ -286,6 +290,7 @@ rules:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Translation Standards](../../../docs/translation_standards.md)
 - [Filament Best Practices](../../../docs/filament_best_practices.md)
 <<<<<<< HEAD
@@ -293,6 +298,11 @@ rules:
 =======
 - [TransTrait Documentation](../../Xot/docs/trans_trait_usage.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Translation Standards](../../../../docs/translation_standards.md)
+- [Filament Best Practices](../../../../docs/filament_best_practices.md)
+- [TransTrait Documentation](../../xot/docs/trans_trait_usage.md)
+>>>>>>> dev
 
 ## Memoria Permanente
 
@@ -304,6 +314,7 @@ rules:
 - SEMPRE sincronizzazione IT/EN/DE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # REGOLA CRITICA: Usa SEMPRE transClass() negli Enum
 
 ## Data: [DATE]
@@ -313,6 +324,11 @@ rules:
 
 ## Data: 2025-01-06
 >>>>>>> 4b6b99016 (first commit)
+=======
+# REGOLA CRITICA: Usa SEMPRE transClass() negli Enum
+
+## Data: [DATE]
+>>>>>>> dev
 
 ## ✅ CORRETTO - Implementazione Enum con TransTrait
 
@@ -594,6 +610,7 @@ rules:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Translation Standards](../../../docs/translation_standards.md)
 - [Filament Best Practices](../../../docs/filament_best_practices.md)
 <<<<<<< HEAD
@@ -601,6 +618,11 @@ rules:
 =======
 - [TransTrait Documentation](../../Xot/docs/trans_trait_usage.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Translation Standards](../../../../docs/translation_standards.md)
+- [Filament Best Practices](../../../../docs/filament_best_practices.md)
+- [TransTrait Documentation](../../xot/docs/trans_trait_usage.md)
+>>>>>>> dev
 
 ## Memoria Permanente
 
@@ -612,6 +634,9 @@ rules:
 - SEMPRE sincronizzazione IT/EN/DE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

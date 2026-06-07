@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MCP Server Consigliati per il Modulo Cms
 
 ## Scopo del Modulo
@@ -21,3 +22,12 @@ Gestione contenuti, pagine, menu e asset digitali del sito.
 
 ## Note
 - Estendi la configurazione se il CMS gestisce workflow avanzati o automazioni.
+=======
+---
+module: theme
+topic: mcp_server_recommended
+canonical: ../../../Themes/docs/shared-components/mcp-server-recommended.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/mcp-server-recommended.md
+>>>>>>> dev

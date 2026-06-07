@@ -8,7 +8,11 @@
 
 ## Panoramica
 
+<<<<<<< HEAD
 Il tema **Zero** è il tema baseline di Quaeris, implementando la filosofia "Vestito" di Laraxot. Zero fornisce presentazione visiva minimale, lasciando che la logica business rimanga completamente nei moduli.
+=======
+Il tema **Zero** è il tema baseline di healthcare_app, implementando la filosofia "Vestito" di Laraxot. Zero fornisce presentazione visiva minimale, lasciando che la logica business rimanga completamente nei moduli.
+>>>>>>> dev
 
 ## Filosofia "Vestito"
 
@@ -127,7 +131,11 @@ Themes forniscono strutture layout:
 <html>
 <head>
     <meta charset="utf-8">
+<<<<<<< HEAD
     <title>@yield('title', 'Quaeris')</title>
+=======
+    <title>@yield('title', 'healthcare_app')</title>
+>>>>>>> dev
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
@@ -365,7 +373,11 @@ Il pattern "Vestito" incarna diversi valori core:
 
 ## Integrazione con Moduli
 
+<<<<<<< HEAD
 ### Quaeris Module
+=======
+### healthcare_app Module
+>>>>>>> dev
 
 Zero theme fornisce presentazione per:
 - SurveyPdf resources

@@ -1,9 +1,12 @@
 # ServiceProvider Common Errors - Lessons Learned
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-01-10
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Contesto**: Correzione errori nei ServiceProvider del modulo Meetup
 **Principio**: DRY + KISS - Struttura minima necessaria
 

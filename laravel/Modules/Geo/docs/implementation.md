@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Riepilogo Implementazione AddressesField
 
 ## Caso Studio: Applicazione Principio DRY nel Progetto <main module>
@@ -299,3 +300,12 @@ Il componente non solo elimina duplicazione, ma stabilisce un **pattern replicab
 
 
 **Il successo di questo caso studio conferma l'importanza di identificare e risolvere proattivamente la duplicazione di codice prima che diventi un debito tecnico significativo.** 
+=======
+---
+module: theme
+topic: implementation
+canonical: ../../../Themes/docs/shared-components/implementation-sumy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/implementation-sumy.md
+>>>>>>> dev

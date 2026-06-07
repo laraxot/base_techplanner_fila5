@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://github.com/whitecube/nova-flexible-content
 
 
@@ -19,3 +20,12 @@ https://tw-elements.com/docs/standard/navigation/navbar/
 https://freefrontend.com/tailwind-navbars/
 
 https://preline.co/docs/mega-menu.html
+=======
+---
+module: theme
+topic: blocks
+canonical: ../../../Themes/docs/shared-components/blocks.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/blocks.md
+>>>>>>> dev

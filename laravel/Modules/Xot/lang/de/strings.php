@@ -77,21 +77,28 @@ return [
             'using_blade_extensions' => 'Verwenden von Blade-Erweiterungen',
             'using_access_helper' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
                 'array_permissions' => 'Verwenden von Access Helper mit Array von Berechtigungs-Namen oder ID\'s bei der der Benutzer alle besitzen muss.',
                 'array_permissions_not' => 'Verwenden von Access Helper mit Array von Berechtigungs-Namen oder ID\'s bei der der Benutzer nicht alle besitzen muss.',
                 'array_roles' => 'Verwenden von Access Helper mit Array von Rollen-Namen oder ID\'s bei der der Benutzer alle besitzen muss.',
                 'array_roles_not' => 'Verwenden von Access Helper mit Array von Rolen-Namen oder ID\'s bei der der Benutzer nicht alle besitzen muss.',
+<<<<<<< HEAD
 =======
                 'array_permissions' => "Verwenden von Access Helper mit Array von Berechtigungs-Namen oder ID's bei der der Benutzer alle besitzen muss.",
                 'array_permissions_not' => "Verwenden von Access Helper mit Array von Berechtigungs-Namen oder ID's bei der der Benutzer nicht alle besitzen muss.",
                 'array_roles' => "Verwenden von Access Helper mit Array von Rollen-Namen oder ID's bei der der Benutzer alle besitzen muss.",
                 'array_roles_not' => "Verwenden von Access Helper mit Array von Rolen-Namen oder ID's bei der der Benutzer nicht alle besitzen muss.",
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                 'permission_id' => 'Verwenden von Access Helper mit Berechtigungs-ID',
                 'permission_name' => 'Verwenden von Access Helper mit Berechtigungs-Name',
                 'role_id' => 'Vverwenden von Access Helper mit Rollen-ID',
                 'role_name' => 'Verwenden von Access Helper mit Rollen-Name',
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             'view_console_it_works' => 'Schaue in die Konsole, du solltest \'it works!\' sehen, welches vom FrontendController@index kommt',
             'you_can_see_because' => 'Du kannst dies sehen, da du folgende Rolle besitzt \':role\'!',
@@ -101,6 +108,11 @@ return [
             'you_can_see_because' => "Du kannst dies sehen, da du folgende Rolle besitzt ':role'!",
             'you_can_see_because_permission' => "Du kannst dies sehen, da du folgende Berechtigung besitzt ':permission'!",
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'view_console_it_works' => 'Schaue in die Konsole, du solltest \'it works!\' sehen, welches vom FrontendController@index kommt',
+            'you_can_see_because' => 'Du kannst dies sehen, da du folgende Rolle besitzt \':role\'!',
+            'you_can_see_because_permission' => 'Du kannst dies sehen, da du folgende Berechtigung besitzt \':permission\'!',
+>>>>>>> dev
         ],
         'user' => [
             'profile_updated' => 'Profil aktualisiert.',
@@ -109,6 +121,9 @@ return [
         'welcome_to' => 'Wilkommen bei :place',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -122,6 +137,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

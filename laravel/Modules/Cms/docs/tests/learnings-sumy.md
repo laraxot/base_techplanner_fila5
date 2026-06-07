@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Learnings Summary - Implementation Test Registrazione ✅ RISOLTO
 
 ## 🎯 Mission Accomplished
@@ -185,3 +186,12 @@ Il sistema di test è ora **pronto per produzione** con:
 
 *Versione: 2.0 - Helper Functions Centralized*
 *Compatibilità: <nome progetto>, PestPHP 2.x, Laravel 10+*
+=======
+---
+module: theme
+topic: learnings-sumy
+canonical: ../../../../Themes/docs/shared-components/learnings-summary.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/learnings-summary.md
+>>>>>>> dev

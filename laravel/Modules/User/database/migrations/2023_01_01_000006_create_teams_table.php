@@ -11,7 +11,11 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration {
     /**
+<<<<<<< HEAD
      * Esegue la migrazione.
+=======
+     * Run the migrations.
+>>>>>>> dev
      */
     public function up(): void
     {
@@ -28,7 +32,11 @@ return new class extends XotBaseMigration {
         $this->tableUpdate(function (Blueprint $table): void {
             // MySqlConnection::getDoctrineSchemaManager does not exist.
             // MySqlConnection::getSchemaGrammar() ?
+<<<<<<< HEAD
             // if ($this->hasIndexName('team_invitations_team_id_foreign')) {
+=======
+            // if ($hasIndexName('team_invitations_team_id_foreign'))
+>>>>>>> dev
             //    $table->dropForeign('team_invitations_team_id_foreign');
             // }
             if ($this->hasColumn('uuid')) {
@@ -41,12 +49,18 @@ return new class extends XotBaseMigration {
             if (! $this->hasColumn('code')) {
                 $table->string('code', 36)->nullable()->index();
             }
+<<<<<<< HEAD
 
             if (! $this->hasColumn('owner_id')) {
                 $table->uuid('owner_id')->nullable()->after('id');
             }
 
             $this->updateTimestamps($table, true);
+=======
+            $this->updateTimestamps($table, true);
+
+            // $this->updateUser($table);
+>>>>>>> dev
         });
     }
 };

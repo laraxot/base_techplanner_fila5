@@ -10,9 +10,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Database\Factories\TenantFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
@@ -21,9 +24,12 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * Modules\User\Models\Tenant.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @method static TenantFactory  factory($count = null, $state = [])
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  * @method static Builder|Tenant newModelQuery()
  * @method static Builder|Tenant newQuery()
  * @method static Builder|Tenant query()
@@ -61,6 +67,36 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|Tenant whereSlug($value)
  * @method static Builder<static>|Tenant whereUpdatedAt($value)
  *
+<<<<<<< HEAD
+=======
+ * @property string|null $email_address
+ * @property string|null $phone
+ * @property string|null $mobile
+ * @property string|null $address
+ * @property string|null $primary_color
+ * @property string|null $secondary_color
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property string|null $deleted_by
+ * @property string|null $settings
+ *
+ * @method static \Modules\User\Database\Factories\TenantFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Tenant                         whereAddress($value)
+ * @method static Builder<static>|Tenant                         whereCreatedBy($value)
+ * @method static Builder<static>|Tenant                         whereDeletedBy($value)
+ * @method static Builder<static>|Tenant                         whereEmailAddress($value)
+ * @method static Builder<static>|Tenant                         whereMobile($value)
+ * @method static Builder<static>|Tenant                         wherePhone($value)
+ * @method static Builder<static>|Tenant                         wherePrimaryColor($value)
+ * @method static Builder<static>|Tenant                         whereSecondaryColor($value)
+ * @method static Builder<static>|Tenant                         whereSettings($value)
+ * @method static Builder<static>|Tenant                         whereUpdatedBy($value)
+ *
+ * @property string|null $trial_ends_at
+ *
+ * @method static Builder<static>|Tenant whereTrialEndsAt($value)
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class Tenant extends BaseTenant

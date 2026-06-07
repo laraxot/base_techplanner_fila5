@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # socialite
 
 <!-- Contenuto migrato da _docs/socialite.txt -->
@@ -15,3 +16,12 @@ https://github.com/DutchCodingCompany/filament-socialite
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: socialite
+canonical: ../../../Themes/docs/shared-components/socialite.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/socialite.md
+>>>>>>> dev

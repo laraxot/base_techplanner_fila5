@@ -134,10 +134,14 @@ Tutte queste devono essere migrate prima dei test nel setUp() come fatto sopra.
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data:** [DATE]
 =======
 **Data:** 2026-01-09
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data:** [DATE]
+>>>>>>> dev
 **Stato:** Pronto per implementazione
 **Righe:** 100 → ~40 (-60%)
 **Filosofia:** MySQL Production = MySQL Tests ✅

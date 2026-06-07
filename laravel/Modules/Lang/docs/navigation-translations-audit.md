@@ -114,28 +114,40 @@ Questo file contiene molteplici occorrenze problematiche:
 - **File corrotto rimosso**: `/lang/it/.php` eliminato completamente
 - **Struttura corretta**: Confermata in `geo.php` con navigazione appropriata
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentazione**: [Correzioni Geo](../modules/geo/docs/navigation-translations-fixes.md)
 =======
 - **Documentazione**: [Correzioni Geo](../Modules/Geo/docs/navigation-translations-fixes.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Documentazione**: [Correzioni Geo](../modules/geo/docs/navigation-translations-fixes.md)
+>>>>>>> dev
 
 ### ✅ Modulo User - RISOLTO
 - **device.php**: Traduzioni corrette (Dispositivi → Sicurezza)
 - **permission.php**: Traduzioni corrette (Permessi → Sicurezza)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentazione**: [Correzioni User](../modules/user/docs/navigation-translations-fixes.md)
 =======
 - **Documentazione**: [Correzioni User](../Modules/User/docs/navigation-translations-fixes.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Documentazione**: [Correzioni User](../modules/user/docs/navigation-translations-fixes.md)
+>>>>>>> dev
 
 ### ✅ Modulo Lang - CONFORME
 - **edit_translation_file.php**: Verificato già conforme agli standard
 - **Nessuna correzione necessaria**: File già strutturato correttamente
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentazione**: [Verifica Lang](../modules/lang/docs/navigation-translations-fixes.md)
 =======
 - **Documentazione**: [Verifica Lang](../Modules/Lang/docs/navigation-translations-fixes.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Documentazione**: [Verifica Lang](../modules/lang/docs/navigation-translations-fixes.md)
+>>>>>>> dev
 
 ## Note
 - Ogni file deve essere studiato nel contesto del modulo
@@ -145,10 +157,14 @@ Questo file contiene molteplici occorrenze problematiche:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Regole Traduzioni](../modules/xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../modules/<nome progetto>/docs/translation-quality-standards.md)
 
 *Audit creato il: [DATE]*
+<<<<<<< HEAD
 =======
 - [Regole Traduzioni](../Modules/Xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../Modules/<nome progetto>/docs/translation-quality-standards.md)
@@ -156,3 +172,6 @@ Questo file contiene molteplici occorrenze problematiche:
 *Audit creato il: 2025-08-07*
 *Ultimo aggiornamento: 2025-08-07*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Ultimo aggiornamento: [DATE]*
+>>>>>>> dev

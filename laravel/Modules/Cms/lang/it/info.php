@@ -10,9 +10,13 @@ return [
             'helper_text' => 'title',
             'description' => 'title',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'description' => [
             'label' => 'description',
@@ -20,9 +24,13 @@ return [
             'helper_text' => 'description',
             'description' => 'description',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'logo' => [
             'label' => 'logo',
@@ -30,9 +38,13 @@ return [
             'helper_text' => 'logo',
             'description' => 'logo',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'copyright' => [
             'label' => 'copyright',
@@ -40,6 +52,9 @@ return [
             'helper_text' => 'copyright',
             'description' => 'copyright',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -65,8 +80,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Info',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

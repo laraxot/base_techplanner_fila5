@@ -75,6 +75,9 @@ class CreateRecordWidget extends Widget implements HasForms
         // Ottieni i dati validati dal form
         $data = $this->form->getState();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         
         // Crea il nuovo record
         MioModello::create($data);
@@ -82,6 +85,7 @@ class CreateRecordWidget extends Widget implements HasForms
         // Resetta il form
         $this->form->fill();
         
+<<<<<<< HEAD
 =======
 
         // Crea il nuovo record
@@ -91,6 +95,8 @@ class CreateRecordWidget extends Widget implements HasForms
         $this->form->fill();
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         // Invia un evento Livewire per aggiornare la tabella
         $this->dispatch('record-created');
     }
@@ -232,10 +238,14 @@ public function create(): void
     $this->form->fill();
     $this->dispatch('record-created');
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // Mostra una notifica di successo
     Notification::make()
         ->title('Record creato con successo')
@@ -311,10 +321,14 @@ public function create(): void
         $this->form->fill();
         $this->dispatch('record-created');
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         Notification::make()
             ->title('Record creato con successo')
             ->success()

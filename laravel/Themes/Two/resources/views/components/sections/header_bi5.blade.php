@@ -5,6 +5,14 @@
           <div class="col-12">
             <div class="it-header-slim-wrapper-content">
               <a class="d-lg-block navbar-brand" target="_blank" href="{{ config('app.url', '/') }}" aria-label="Vai al portale {{ config('app.name', 'Nome della Regione') }} - link esterno - apertura nuova scheda" title="Vai al portale {{ config('app.name', 'Nome della Regione') }}">{{ config('app.name', 'Nome della Regione') }}</a>
+<<<<<<< HEAD
+=======
+              @php
+                  $loginUrl = \Mcamara\LaravelLocalization\Facades\LaravelLocalization::localizeURL('/auth/login');
+                  $dashboardUrl = url('/admin');
+              @endphp
+
+>>>>>>> dev
               <div class="it-header-slim-right-zone" role="navigation">
                 <div class="nav-item dropdown">
                   <button type="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="languages" aria-haspopup="true">
@@ -27,6 +35,7 @@
                     </div>
                   </div>
                 </div>
+<<<<<<< HEAD
                 <a class="btn btn-primary btn-icon btn-full" href="../servizi/accesso-servizio.html" data-element="personal-area-login">
                   <span class="rounded-icon" aria-hidden="true">
                     <svg class="icon icon-primary">
@@ -35,6 +44,9 @@
                   </span>
                   <span class="d-none d-lg-block">Accedi all'area personale</span>
                 </a>
+=======
+                @include('user::components.ui.app.auth-button')
+>>>>>>> dev
               </div>
             </div>
           </div>

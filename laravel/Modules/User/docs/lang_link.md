@@ -4,6 +4,7 @@ Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../L
 
 Consulta la documentazione delle traduzioni:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
@@ -12,6 +13,11 @@ Consulta la documentazione delle traduzioni:
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../lang/docs/structure.md)
+- [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
+>>>>>>> dev
 
 ## Collegamento Bidirezionale
 
@@ -21,6 +27,9 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 
 ## Collegamenti tra versioni di lang-link.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [lang-link.md](../../../chart/docs/lang-link.md)
 * [lang-link.md](../../../reporting/docs/lang-link.md)
 * [lang-link.md](../../../gdpr/docs/lang-link.md)
@@ -35,6 +44,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](../../../activity/docs/lang-link.md)
 * [lang-link.md](../../../patient/docs/lang-link.md)
 * [lang-link.md](../../../cms/docs/lang-link.md)
+<<<<<<< HEAD
 =======
 * [lang-link.md](../../../Chart/docs/lang-link.md)
 * [lang-link.md](../../../Reporting/docs/lang-link.md)
@@ -51,4 +61,6 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](../../../Patient/docs/lang-link.md)
 * [lang-link.md](../../../Cms/docs/lang-link.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 

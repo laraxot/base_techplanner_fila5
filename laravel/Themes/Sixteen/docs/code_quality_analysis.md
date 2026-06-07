@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Code Quality Analysis - Sixteen Theme
 
 **Theme:** Sixteen (AGID Bootstrap Italia)  
@@ -202,3 +203,12 @@ The theme fully implements Bootstrap Italia design system:
 
 *Analysis performed by: Super Mucca 🐮*  
 *Last Updated: 2025-10-01*
+=======
+---
+module: theme
+topic: code_quality_analysis
+canonical: ../../docs/shared-components/code-quality-analysis-Themes.md
+---
+
+See canonical documentation: ../../docs/shared-components/code-quality-analysis-Themes.md
+>>>>>>> dev

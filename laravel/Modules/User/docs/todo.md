@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Module - PHPStan Error Resolution Roadmap
 
 This document outlines the steps to resolve the PHPStan errors found in the User module.
@@ -41,3 +42,12 @@ I will address these errors by correcting the code and type hints in each file.
     *   I will fix the type hints to ensure the methods are called on the correct types. This will involve adding appropriate type hints for variables and properties.
 
 After each fix, I will run `phpstan analyse Modules/User` to ensure the error is resolved.
+=======
+---
+module: theme
+topic: todo
+canonical: ../../../Themes/docs/shared-components/todo.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/todo.md
+>>>>>>> dev

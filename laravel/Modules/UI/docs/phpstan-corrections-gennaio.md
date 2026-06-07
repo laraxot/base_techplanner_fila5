@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Corrections - Gennaio 2025
 
 ## Riepilogo
@@ -241,3 +242,12 @@ class ViewLocation extends XotBaseViewRecord
 >>>>>>> 4b6b99016 (first commit)
 - [PHPStan Patterns](./phpstan-patterns.md)
 - [PHPStan Compliance](./phpstan-compliance.md)
+=======
+---
+module: theme
+topic: phpstan-corrections-gennaio
+canonical: ../../../Themes/docs/shared-components/phpstan-corrections-.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-corrections-.md
+>>>>>>> dev

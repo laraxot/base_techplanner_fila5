@@ -6,6 +6,7 @@ namespace Modules\Cms\Tests\Feature\Auth;
 
 use Modules\Xot\Tests\TestCase;
 
+<<<<<<< HEAD
 use function Pest\Laravel\get;
 
 uses(TestCase::class);
@@ -22,4 +23,13 @@ test('password can be confirmed', function () {
 
 test('password is not confirmed with invalid password', function () {
     $this->assertTrue(true);
+=======
+uses(TestCase::class);
+
+describe('Password Confirmation', function () {
+    test('password confirmation placeholder', function () {
+        // Placeholder - actual tests require full setup
+        expect(true)->toBeTrue();
+    });
+>>>>>>> dev
 });

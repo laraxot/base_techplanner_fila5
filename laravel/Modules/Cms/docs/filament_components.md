@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Utilizzo dei Componenti Filament in il progetto
 > **Collegamenti correlati**
 > - [FILAMENT_COMPONENTS.md tema One](../../../../themes/one/project_docs/filament_components.md)
@@ -150,3 +151,12 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 * [filament-components.md](laravel/modules/cms/project_docs/filament-components.md)
 * [filament-components.md](laravel/project_docs/rules/filament-components.md)
 
+=======
+---
+module: theme
+topic: filament_components
+canonical: ../../../Themes/docs/shared-components/filament-components.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-components.md
+>>>>>>> dev

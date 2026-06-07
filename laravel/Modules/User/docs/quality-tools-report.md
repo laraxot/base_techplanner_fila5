@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Quality Tools Report - PHPStan, PHPMD, PHP Insights
 
 ## Data: 2025-01-02
@@ -166,3 +167,12 @@ cd laravel
 
 *Ultimo aggiornamento: 2025-01-02*
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: quality-tools-report
+canonical: ../../../Themes/docs/shared-components/quality-tools-report.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-tools-report.md
+>>>>>>> dev

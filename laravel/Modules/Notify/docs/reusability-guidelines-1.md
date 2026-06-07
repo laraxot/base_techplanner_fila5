@@ -271,7 +271,11 @@ grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [../../../docs/module_reusability_guidelines.md](../../../docs/module_reusability_guidelines.md)
+=======
+- [../../../../docs/module_reusability_guidelines.md](../../../../docs/module_reusability_guidelines.md)
+>>>>>>> dev
 - [../../Xot/docs/xotdata_usage.md](../../Xot/docs/xotdata_usage.md)
 - [testing_best_practices.md](testing_best_practices.md)
 

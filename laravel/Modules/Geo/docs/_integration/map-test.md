@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # map_test
 
 <!-- Contenuto migrato da _docs/map_test.txt -->
@@ -12,3 +13,12 @@ https://github.com/sfneal/google-places
 
 
 
+=======
+---
+module: theme
+topic: map-test
+canonical: ../../../../Themes/docs/shared-components/map-test.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/map-test.md
+>>>>>>> dev

@@ -51,10 +51,14 @@ class MyListRecords extends ListRecords
 
 ## Collegamenti alla Documentazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Risoluzione Conflitti UI](../conflitti_merge_risolti.md): Documentazione dei conflitti risolti
 =======
 - [Risoluzione Conflitti UI](../CONFLITTI_MERGE_RISOLTI.md): Documentazione dei conflitti risolti
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Risoluzione Conflitti UI](../conflitti_merge_risolti.md): Documentazione dei conflitti risolti
+>>>>>>> dev
 - [Test di Risoluzione Conflitti](../test_conflicts_resolution.md): Test automatici che verificano la corretta risoluzione
 
 [Torna alla documentazione UI](/docs/modules/module_ui.md#actions)
@@ -111,10 +115,14 @@ class MyListRecords extends ListRecords
 
 ## Collegamenti alla Documentazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Risoluzione Conflitti UI](../conflitti_merge_risolti.md): Documentazione dei conflitti risolti
 =======
 - [Risoluzione Conflitti UI](../CONFLITTI_MERGE_RISOLTI.md): Documentazione dei conflitti risolti
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Risoluzione Conflitti UI](../conflitti_merge_risolti.md): Documentazione dei conflitti risolti
+>>>>>>> dev
 - [Test di Risoluzione Conflitti](../test_conflicts_resolution.md): Test automatici che verificano la corretta risoluzione
 
 [Torna alla documentazione UI](/docs/modules/module_ui.md#actions)

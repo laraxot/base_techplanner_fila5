@@ -1,10 +1,14 @@
 # 🐄 DRY & KISS Analysis - Cms
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data:** [DATE] | **Status:** ✅
 =======
 **Data:** 2025-10-15 | **Status:** ✅
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data:** [DATE] | **Status:** ✅
+>>>>>>> dev
 
 ## 📊 Struttura
 Models: 13 | Resources: 5 | Actions: 5 | Docs: 210 🟡

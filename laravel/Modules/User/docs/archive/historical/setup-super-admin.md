@@ -389,8 +389,13 @@ php artisan view:cache
 - [Create Users Table](../database/migrations/)
 
 ### Root Progetto
+<<<<<<< HEAD
 - [Setup Guide](../../../docs/setup-guide.md)
 - [Database Configuration](../../../docs/database-configuration.md)
+=======
+- [Setup Guide](../../../../docs/setup-guide.md)
+- [Database Configuration](../../../../docs/database-configuration.md)
+>>>>>>> dev
 
 ## Codice Sorgente
 

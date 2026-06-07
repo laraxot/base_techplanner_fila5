@@ -1111,10 +1111,14 @@ class ExampleRelationshipsTest extends XotBaseTestCase
 ## 🔗 **Collegamenti e Riferimenti**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [**README.md**](readme.md) - Documentazione principale del modulo
 =======
 - [**README.md**](README.md) - Documentazione principale del modulo
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [**README.md**](readme.md) - Documentazione principale del modulo
+>>>>>>> dev
 - [**Best Practices**](best-practices.md) - Best practices per lo sviluppo
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Troubleshooting**](troubleshooting.md) - Risoluzione problemi
@@ -1122,6 +1126,9 @@ class ExampleRelationshipsTest extends XotBaseTestCase
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

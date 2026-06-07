@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 return [
     'article' => 'Modules\Blog\Models\Article',
     'banner' => 'Modules\Blog\Models\Banner',
@@ -15,6 +18,7 @@ return [
     'survey_pdf' => 'Modules\Quaeris\Models\SurveyPdf',
     'user' => 'Modules\User\Models\User',
 ];
+<<<<<<< HEAD
 =======
  return array (
   'article' => 'Modules\Blog\Models\Article',
@@ -31,3 +35,5 @@ return [
   'user' => 'Modules\User\Models\User',
 );
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

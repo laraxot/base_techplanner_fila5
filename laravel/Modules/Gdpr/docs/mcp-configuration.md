@@ -36,14 +36,22 @@ The Gdpr module's MCP configuration enables AI assistants to interact with:
     },
     "filesystem": {
       "command": "npx",
+<<<<<<< HEAD
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_laravelpizza/laravel"],
+=======
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", ". progetto>/laravel"],
+>>>>>>> dev
       "description": "Access to Gdpr module files"
     },
     "database": {
       "command": "npx",
       "args": ["-y", "@bytebase/dbhub"],
       "env": {
+<<<<<<< HEAD
         "DATABASE_URL": "sqlite:///var/www/_bases/base_laravelpizza/laravel/database/database.sqlite"
+=======
+        "DATABASE_URL": "sqlite://. progetto>/laravel/database/database.sqlite"
+>>>>>>> dev
       },
       "description": "SQLite database queries"
     }
@@ -58,7 +66,11 @@ The Gdpr module's MCP configuration enables AI assistants to interact with:
 ### Asana Integration
 ```bash
 # Create task
+<<<<<<< HEAD
 "Create task in 'LaravelPizza - Gdpr Module' project: 'Implement user data export feature'"
+=======
+"Create task in '<nome progetto> - Gdpr Module' project: 'Implement user data export feature'"
+>>>>>>> dev
 
 # Update status
 "Update task 'Increase test coverage to 90%' status to 'In Progress'"
@@ -111,9 +123,15 @@ The Gdpr module's MCP configuration enables AI assistants to interact with:
 
 ## 📚 Related Documentation
 
+<<<<<<< HEAD
 - [Asana MCP Configuration](../../../docs/mcp-asana-configuration.md)
 - [ClickUp MCP Configuration](../../../docs/mcp-clickup-configuration.md)
 - [Redmine MCP Configuration](../../../docs/mcp-redmine-configuration.md)
+=======
+- [Asana MCP Configuration](../../../../docs/mcp-asana-configuration.md)
+- [ClickUp MCP Configuration](../../../../docs/mcp-clickup-configuration.md)
+- [Redmine MCP Configuration](../../../../docs/mcp-redmine-configuration.md)
+>>>>>>> dev
 - [Gdpr Module Roadmap](./roadmap-[date].md)
 
 ---

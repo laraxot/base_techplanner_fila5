@@ -16,6 +16,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'event_type' => [
             'label' => 'Tipo Evento',
             'tooltip' => '',
@@ -69,6 +72,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         'event_type' => 'Tipo Evento',
         'description' => 'Descrizione',
@@ -85,6 +89,8 @@ return [
         'resetFilters' => [
             'label' => 'resetFilters',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'event_types' => [
@@ -95,10 +101,16 @@ return [
         'data_deleted' => 'Dati Eliminati',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

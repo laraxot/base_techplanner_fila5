@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Approfondita: laravel-shop-main
 
 ## 1. Struttura delle Cartelle e Naming
@@ -90,3 +91,12 @@ class SecondCompletedOrderReactor implements Reactor {
 - CRUD tradizionale: più semplice, meno auditabile.
 - Event sourcing: più complesso, ma audit, rollback, proiezioni flessibili.
 - Approccio minimalista: per demo o PoC, una struttura semplice con pochi comandi console e proiezioni può essere sufficiente.
+=======
+---
+module: theme
+topic: 05-analysis-laravel-shop-main
+canonical: ../../../../../Themes/docs/shared-components/05-analisi-laravel-shop-main.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/05-analisi-laravel-shop-main.md
+>>>>>>> dev

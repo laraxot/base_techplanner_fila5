@@ -116,6 +116,7 @@ Per dettagli su configurazione e template, consulta: [Documentazione Sezione Foo
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Gestione Blocchi](../blocks/readme.md)
 - [Componenti UI](../components/readme.md)
 =======
@@ -123,3 +124,8 @@ Per dettagli su configurazione e template, consulta: [Documentazione Sezione Foo
 - [Componenti UI](../components/README.md)
 >>>>>>> 4b6b99016 (first commit)
 - [Documentazione Root](../../../../docs/sections.md)
+=======
+- [Gestione Blocchi](../blocks/readme.md)
+- [Componenti UI](../components/readme.md)
+- [Documentazione Root](../../../../../docs/sections.md)
+>>>>>>> dev

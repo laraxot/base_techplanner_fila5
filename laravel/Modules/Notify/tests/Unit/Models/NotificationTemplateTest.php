@@ -2,16 +2,30 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(\Modules\Notify\Tests\TestCase::class);
 
 use Modules\Notify\Enums\NotificationTypeEnum;
 use Modules\Notify\Models\NotificationTemplate;
+=======
+namespace Modules\Notify\Tests\Unit\Models;
+
+uses(TestCase::class);
+
+use Modules\Notify\Enums\NotificationTypeEnum;
+use Modules\Notify\Models\NotificationTemplate;
+use Modules\Notify\Tests\TestCase;
+>>>>>>> dev
 
 /**
  * Unit tests must not bootstrap the application container.
  */
 it('has correct fillable fields', function (): void {
+<<<<<<< HEAD
     $reflection = new ReflectionClass(NotificationTemplate::class);
+=======
+    $reflection = new \ReflectionClass(NotificationTemplate::class);
+>>>>>>> dev
     $instance = $reflection->newInstanceWithoutConstructor();
 
     $fillableProperty = $reflection->getProperty('fillable');
@@ -43,7 +57,11 @@ it('has correct fillable fields', function (): void {
 });
 
 it('has correct casts', function (): void {
+<<<<<<< HEAD
     $reflection = new ReflectionClass(NotificationTemplate::class);
+=======
+    $reflection = new \ReflectionClass(NotificationTemplate::class);
+>>>>>>> dev
     $instance = $reflection->newInstanceWithoutConstructor();
 
     $castsMethod = $reflection->getMethod('casts');
@@ -68,7 +86,11 @@ it('has correct casts', function (): void {
 });
 
 it('has translatable fields', function (): void {
+<<<<<<< HEAD
     $reflection = new ReflectionClass(NotificationTemplate::class);
+=======
+    $reflection = new \ReflectionClass(NotificationTemplate::class);
+>>>>>>> dev
     $instance = $reflection->newInstanceWithoutConstructor();
 
     $translatableProperty = $reflection->getProperty('translatable');

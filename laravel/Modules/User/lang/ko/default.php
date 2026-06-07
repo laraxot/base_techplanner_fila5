@@ -6,10 +6,14 @@ return [
     'password_confirm' => [
         'heading' => '비밀번호 확인',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'description' => '이 작업을 완료하려면 암호를 확인하십시오',
 =======
         'description' => '이 작업을 완료하려면 암호를 확인하십시오', // Please confirm your password to complete this action.
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'description' => '이 작업을 완료하려면 암호를 확인하십시오',
+>>>>>>> dev
         'current_password' => '현재 비밀번호',
     ],
     'two_factor' => [
@@ -107,6 +111,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'avatar' => [
             'label' => '아바타',
             'tooltip' => '',
@@ -199,6 +206,7 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
         'avatar' => '아바타',
         'email' => '이메일',
@@ -217,4 +225,6 @@ return [
     'or' => '또는',
     'cancel' => '취소',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

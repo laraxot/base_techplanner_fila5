@@ -40,6 +40,9 @@ return [
         'description' => 'Numero fax',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Contact Type Enum',
     'plural_label' => 'Contact Type Enum (Plurale)',
     'navigation' => [
@@ -84,6 +87,9 @@ return [
             'label' => 'Elimina Contact Type Enum',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

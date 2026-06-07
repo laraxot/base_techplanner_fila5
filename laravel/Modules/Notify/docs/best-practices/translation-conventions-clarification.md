@@ -88,6 +88,7 @@ Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono corre
 ## Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni Generali di Traduzione](../../lang/docs/translation_keys_rules.md)
 - [Convenzioni Specifiche del Modulo Notify](./translation_conventions.md)
 - [Regole per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
@@ -96,3 +97,8 @@ Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono corre
 - [Convenzioni Specifiche del Modulo Notify](./TRANSLATION_CONVENTIONS.md)
 - [Regole per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Convenzioni Generali di Traduzione](../../lang/docs/translation_keys_rules.md)
+- [Convenzioni Specifiche del Modulo Notify](./translation_conventions.md)
+- [Regole per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
+>>>>>>> dev

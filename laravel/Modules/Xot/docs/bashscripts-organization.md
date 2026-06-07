@@ -4,6 +4,9 @@
 
 La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
 La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
 La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
@@ -52,8 +55,11 @@ La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root
 La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
 La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
 La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Struttura Organizzata
 
@@ -107,6 +113,9 @@ bashscripts/
 #### 8. **translations/** - Gestione Traduzioni
 - `fix_all_english_translations.sh` - Fix traduzioni inglesi
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - `fix_<nome progetto>_translations.sh` - Fix traduzioni
 - `fix_<nome progetto>_translations.sh` - Fix traduzioni <nome progetto>
 - `fix_<nome progetto>_translations.sh` - Fix traduzioni <nome progetto>
@@ -150,8 +159,11 @@ bashscripts/
 - `fix_<nome progetto>_translations.sh` - Fix traduzioni <nome progetto>
 - `fix_<nome progetto>_translations.sh` - Fix traduzioni <nome progetto>
 - `fix_<nome progetto>_translations.sh` - Fix traduzioni <nome progetto>
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 - `fix_<nome progetto>_translations.sh` - Fix traduzioni <nome progetto>
 - `verify_translations_syntax.sh` - Verifica sintassi traduzioni
 
@@ -208,10 +220,14 @@ Le seguenti sottocartelle esistevano già e contengono script specifici:
 ## Implementazione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 La riorganizzazione è stata completata il **[DATE]** seguendo questi passaggi:
 =======
 La riorganizzazione è stata completata il **2025-01-29** seguendo questi passaggi:
 >>>>>>> 4b6b99016 (first commit)
+=======
+La riorganizzazione è stata completata il **[DATE]** seguendo questi passaggi:
+>>>>>>> dev
 
 1. **Creazione sottocartelle tematiche**
 2. **Categorizzazione e spostamento file**
@@ -236,6 +252,7 @@ Per mantenere questa organizzazione:
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-29*
@@ -379,4 +396,6 @@ Per mantenere questa organizzazione:
 
 *Ultimo aggiornamento: 2025-01-29*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 *Responsabile: Sistema di Automazione Laraxot*

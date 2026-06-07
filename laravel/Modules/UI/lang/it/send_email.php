@@ -10,9 +10,13 @@ return [
             'helper_text' => 'to',
             'description' => 'to',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'subject' => [
             'label' => 'subject',
@@ -20,9 +24,13 @@ return [
             'helper_text' => 'subject',
             'description' => 'subject',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'body_html' => [
             'label' => 'body_html',
@@ -30,9 +38,13 @@ return [
             'helper_text' => 'body_html',
             'description' => 'body_html',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -41,6 +53,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Send Email',
     'plural_label' => 'Send Email (Plurale)',
     'navigation' => [
@@ -54,6 +69,9 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 # __tips
 
 <!-- Contenuto migrato da _docs/__tips.txt -->
 
 https://github.com/phpstan/phpstan/issues/1242
 
+=======
+https://github.com/phpstan/phpstan/issues/1242
+
+
+>>>>>>> dev
 protected function callAction(array $match)
 {
     list($controller, $method) = $this->breakControllerAndAction(
@@ -29,5 +35,9 @@ protected function callAction(array $match)
     }
 
     throw new \Exception("Method not found: {$controllerClass}@{$method}");
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> dev

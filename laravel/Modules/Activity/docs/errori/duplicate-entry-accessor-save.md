@@ -450,6 +450,7 @@ class SchedaObserver
 
 ### Documentazione Interna
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Activity Module - README](../readme.md)
 - [BaseScheda Activity Log](../../ptv/docs/models/base-scheda-activity-log.md)
 - [SchedaTrait Refactoring Plan](../../sigma/docs/refactoring/scheda-trait-accessors.md)
@@ -458,6 +459,11 @@ class SchedaObserver
 - [BaseScheda Activity Log](../../Ptv/docs/models/base-scheda-activity-log.md)
 - [SchedaTrait Refactoring Plan](../../Sigma/docs/refactoring/scheda-trait-accessors.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Activity Module - README](../readme.md)
+- [BaseScheda Activity Log](../../ptv/docs/models/base-scheda-activity-log.md)
+- [SchedaTrait Refactoring Plan](../../sigma/docs/refactoring/scheda-trait-accessors.md)
+>>>>>>> dev
 
 ### Issue Tracker
 - [GitHub Issue #XXX: Refactor SchedaTrait Accessor with $this->save()](link)

@@ -25,7 +25,11 @@ Seguire il processo completo Super Mucca:
 ## 📚 Fase 1: Comprensione Profonda
 
 ### Logica e Business
+<<<<<<< HEAD
 - **Progetto**: Conversione e miglioramento di laravelpizza.com
+=======
+- **Progetto**: Conversione e miglioramento di <nome progetto>.com
+>>>>>>> dev
 - **Obiettivo**: Diventare riferimento per meetup Laravel "chiavi in mano"
 - **Non è esempio giocattolo**: Base per meetup veri, pagine reali, community reali
 

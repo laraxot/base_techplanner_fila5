@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tenant Module - PHPStan Error Resolution Roadmap
 
 This document outlines the steps to resolve the numerous PHPStan errors found in the Tenant module.
@@ -64,3 +65,12 @@ After fixing the main issues, I will perform a final pass to:
 *   Run `phpstan analyse Modules/Tenant` repeatedly until all errors are resolved.
 
 This is a significant refactoring effort, but by tackling it systematically, I can bring the `Tenant` module's tests to a clean and reliable state.
+=======
+---
+module: theme
+topic: todo
+canonical: ../../../Themes/docs/shared-components/TODO.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/TODO.md
+>>>>>>> dev

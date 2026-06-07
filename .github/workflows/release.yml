@@ -21,7 +21,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+<<<<<<< HEAD
           token: ${{ github.token }}
+=======
+          token: ${{ secrets.GH_TOKEN }}
+>>>>>>> dev
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -33,5 +37,9 @@ jobs:
 
       - name: Semantic Release
         env:
+<<<<<<< HEAD
           GITHUB_TOKEN: ${{ github.token }}
+=======
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+>>>>>>> dev
         run: npx semantic-release

@@ -155,10 +155,14 @@
 ### Collegamenti Interni
 - [Bottlenecks](bottlenecks.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices](best-practices.md)
 =======
 - [Best Practices](BEST-PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Best Practices](best-practices.md)
+>>>>>>> dev
 - [Testing](testing.md)
 
 ### Versione HEAD
@@ -176,21 +180,30 @@
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Documentazione UI](./readme.md)
 - [Guida Sviluppo](./development.md)
 - [Best Practices](./best-practices.md)
 - [Architettura](./architecture.md)
+<<<<<<< HEAD
 =======
 - [Documentazione UI](./README.md)
 - [Guida Sviluppo](./DEVELOPMENT.md)
 - [Best Practices](./BEST-PRACTICES.md)
 - [Architettura](./ARCHITECTURE.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](bashscripts/docs/roadmap.md)
 * [roadmap.md](docs/roadmap.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [roadmap.md](../../../gdpr/docs/roadmap.md)
 * [roadmap.md](../../../notify/docs/roadmap.md)
 * [roadmap.md](../../../xot/docs/roadmap.md)
@@ -205,6 +218,7 @@
 * [roadmap.md](../../../patient/docs/roadmap.md)
 * [roadmap.md](../../../cms/docs/roadmap.md)
 * [roadmap.md](../../../../themes/one/docs/roadmap.md)
+<<<<<<< HEAD
 =======
 * [roadmap.md](../../../Gdpr/docs/roadmap.md)
 * [roadmap.md](../../../Notify/docs/roadmap.md)
@@ -221,6 +235,8 @@
 * [roadmap.md](../../../Cms/docs/roadmap.md)
 * [roadmap.md](../../../../Themes/One/docs/roadmap.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ---
 

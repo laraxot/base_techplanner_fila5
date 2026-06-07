@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzioni File di Traduzione User Module
 
 ## Problemi Identificati e Risolti
@@ -101,3 +102,12 @@ Il file ora segue la struttura espansa obbligatoria per le regole Laraxot:
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: translation-fixes
+canonical: ../../../Themes/docs/shared-components/translation-fixes.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/translation-fixes.md
+>>>>>>> dev

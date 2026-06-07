@@ -7,9 +7,12 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Database\Factories\ModelHasRoleFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -26,9 +29,12 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $created_by
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @method static ModelHasRoleFactory  factory($count = null, $state = [])
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  * @method static Builder|ModelHasRole newModelQuery()
  * @method static Builder|ModelHasRole newQuery()
  * @method static Builder|ModelHasRole query()
@@ -53,10 +59,18 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $deleter
  *
+<<<<<<< HEAD
+=======
+ * @method static \Modules\User\Database\Factories\ModelRoleFactory factory($count = null, $state = [])
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class ModelRole extends BaseMorphPivot
 {
+<<<<<<< HEAD
     /** @var string */
+=======
+>>>>>>> dev
     protected $table = 'model_has_role';
 }

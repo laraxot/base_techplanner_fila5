@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aggiornamento relativo a DoctorResource.php
 
 ## Nota del 2025-05-15
@@ -25,3 +26,12 @@ Ho aggiornato ulteriormente la documentazione per riflettere un cambiamento nell
 - [Documentazione principale](../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
 - [Documentazione Doctor Model](../Modules/Patient/docs/doctor-model-update.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: registration_widget_update
+canonical: ../../../Themes/docs/shared-components/registration-widget-update-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/registration-widget-update-1.md
+>>>>>>> dev

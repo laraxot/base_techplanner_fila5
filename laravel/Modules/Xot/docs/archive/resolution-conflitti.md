@@ -7,10 +7,14 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 
 ### 1. Namespace e Convenzioni
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni Namespace](namespace-conventions.md)
 =======
 - [Convenzioni Namespace](NAMESPACE-CONVENTIONS.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Convenzioni Namespace](namespace-conventions.md)
+>>>>>>> dev
 - Risoluzione conflitti nelle convenzioni di namespace
 - Mantenimento della compatibilità con PHPStan
 
@@ -27,12 +31,17 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 
 ### 3. Autenticazione e UI
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Componenti Filament](../../themes/one/project_docs/filament_components.md)
 - [Registrazione Utenti](../../themes/one/project_docs/auth.md)
 =======
 - [Componenti Filament](../../Themes/One/project_docs/FILAMENT_COMPONENTS.md)
 - [Registrazione Utenti](../../Themes/One/project_docs/AUTH.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Componenti Filament](../../themes/one/project_docs/filament_components.md)
+- [Registrazione Utenti](../../themes/one/project_docs/auth.md)
+>>>>>>> dev
   - Implementazione completa sistema registrazione
   - Gestione tipi utente dinamica
   - UI moderna con Filament
@@ -233,16 +242,22 @@ La risoluzione dei conflitti rimanenti dovrebbe seguire questi principi:
 ## Collegamenti tra versioni di risoluzione_conflitti.md
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [risoluzione_conflitti.md](../../../xot/project_docs/risoluzione_conflitti.md)
 * [risoluzione_conflitti.md](../../../tenant/project_docs/risoluzione_conflitti.md)
 =======
 * [risoluzione_conflitti.md](../../../Xot/project_docs/risoluzione_conflitti.md)
 * [risoluzione_conflitti.md](../../../Tenant/project_docs/risoluzione_conflitti.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [risoluzione_conflitti.md](../../../xot/project_docs/risoluzione_conflitti.md)
+* [risoluzione_conflitti.md](../../../tenant/project_docs/risoluzione_conflitti.md)
+>>>>>>> dev
 
 aurmich/dev
 5693302 (.)
 b6f667c (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 * [Risoluzione Conflitti Xot](../../../xot/project_docs/risoluzione_conflitti.md)
 * [Risoluzione Conflitti Tenant](../../../tenant/project_docs/risoluzione_conflitti.md)
@@ -250,5 +265,9 @@ b6f667c (.)
 * [Risoluzione Conflitti Xot](../../../Xot/project_docs/risoluzione_conflitti.md)
 * [Risoluzione Conflitti Tenant](../../../Tenant/project_docs/risoluzione_conflitti.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [Risoluzione Conflitti Xot](../../../xot/project_docs/risoluzione_conflitti.md)
+* [Risoluzione Conflitti Tenant](../../../tenant/project_docs/risoluzione_conflitti.md)
+>>>>>>> dev
 * [Linee Guida Principali Risoluzione Conflitti](../../../../project_docs/conflict_resolution.md)
 fc83074 (.)

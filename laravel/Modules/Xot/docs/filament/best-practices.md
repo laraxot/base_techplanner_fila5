@@ -263,13 +263,20 @@ return [
 
 - [Architettura Modulo Xot](../core/architecture.md)
 - [Convenzioni di Naming](../core/naming-conventions.md)
+<<<<<<< HEAD
 - [Best Practices Sistema](../../../docs/core/best-practices.md)
+=======
+- [Best Practices Sistema](../../../../docs/core/best-practices.md)
+>>>>>>> dev
 - [Template Filament](../templates/filament.md)
 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento:** Gennaio 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Versione:** 2.0 - Consolidata DRY + KISS

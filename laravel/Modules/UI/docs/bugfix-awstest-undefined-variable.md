@@ -127,7 +127,10 @@ Ogni metodo di test implementa:
 6. **Documentazione**: File markdown nella cartella docs del modulo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 *Errore risolto: ErrorException Undefined variable $results*

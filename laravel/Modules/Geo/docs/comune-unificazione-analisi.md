@@ -58,11 +58,15 @@
 - [geo-sushi-comparison.md](geo-sushi-comparison.md)
 - [module_geo.md](module_geo.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Xot/module-structure.md](../../xot/project_docs/module-structure.md)
 
 ---
 
 Responsabile: Cascade AI 
+<<<<<<< HEAD
 =======
 - [Xot/module-structure.md](../../Xot/project_docs/module-structure.md)
 
@@ -71,3 +75,5 @@ Responsabile: Cascade AI
 **Ultimo aggiornamento:** {{date('Y-m-d')}}
 Responsabile: Cascade AI
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

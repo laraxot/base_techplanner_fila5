@@ -43,7 +43,11 @@ protected function getConfirmationRoute(): string
 ## References
 - [Namespace Issues](../../../project_docs/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../modules/xot/project_docs/rules/filament-resource-guidelines.md)
+<<<<<<< HEAD
 - [Namespace Issues](../../../docs/references/namespace-issues.md)
+=======
+- [Namespace Issues](../../../../docs/references/namespace-issues.md)
+>>>>>>> dev
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)
 # Registration Widget Documentation
 
@@ -108,5 +112,9 @@ protected function getConfirmationRoute(): string
 
 ## References
 
+<<<<<<< HEAD
 - [Namespace Issues](../../../docs/references/namespace-issues.md)
+=======
+- [Namespace Issues](../../../../docs/references/namespace-issues.md)
+>>>>>>> dev
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)

@@ -11,7 +11,11 @@ The Appointment model in SaluteOra module defines both legacy field names (`star
 
 **File Path**: `/var/www/html/_bases/base_<nome progetto>/laravel/Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
 **File Path**: `/var/www/html/_bases/base_saluteora/laravel/Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
+<<<<<<< HEAD
 **File Path**: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
+=======
+**File Path**: `/var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
+>>>>>>> dev
 
 **Line 120**:
 ```php

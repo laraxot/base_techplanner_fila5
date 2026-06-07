@@ -39,7 +39,11 @@ $badge = $badges[$status] ?? [
 
 <span class="badge {{ $badge['class'] }}" {{ $attributes }}>
     <svg class="icon icon-white icon-sm">
+<<<<<<< HEAD
         <use href="/bootstrap-italia/svg/sprites.svg#{{ $badge['icon'] }}"></use>
+=======
+        <use href="/themes/Sixteen/design-comuni/assets/bootstrap-italia/svg/sprites.svg#{{ $badge['icon'] }}"></use>
+>>>>>>> dev
     </svg>
     {{ $badge['label'] }}
 </span>

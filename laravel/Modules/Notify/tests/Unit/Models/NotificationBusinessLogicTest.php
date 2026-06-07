@@ -2,10 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Notify\Models\Notification;
 use Modules\Xot\Models\BaseModel;
 
 uses(\Modules\Notify\Tests\TestCase::class);
+=======
+namespace Modules\Notify\Tests\Unit\Models;
+
+use Modules\Notify\Models\Notification;
+use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Models\BaseModel;
+
+uses(TestCase::class);
+>>>>>>> dev
 
 describe('Notification Business Logic', function () {
     test('notification extends xot base model', function () {

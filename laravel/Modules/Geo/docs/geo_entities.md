@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Entità Geografiche
 
 ## Filosofia e Principi
@@ -257,3 +258,12 @@ $capsMilano = Comune::byCity('Milano')->pluck('cap');
 - **La struttura flat e ricca del json** rende naturale questa scelta.
 - **La documentazione e i metodi statici** garantiscono comunque chiarezza e facilità d'uso.
 - **Se in futuro servono modelli separati, si possono reintrodurre facilmente come wrapper.** 
+=======
+---
+module: theme
+topic: geo_entities
+canonical: ../../../Themes/docs/shared-components/geo-entities.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/geo-entities.md
+>>>>>>> dev

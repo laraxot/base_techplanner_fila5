@@ -2,13 +2,23 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\Geo\Tests\TestCase::class);
+=======
+namespace Modules\Geo\Tests\Unit\Actions;
+
+uses(TestCase::class);
+>>>>>>> dev
 
 use Illuminate\Support\Collection;
 use Modules\Geo\Actions\CalculateDistanceAction;
 use Modules\Geo\Actions\GoogleMaps\CalculateDistanceMatrixAction;
 use Modules\Geo\Datas\LocationData;
 use Modules\Geo\Exceptions\DistanceCalculationException;
+<<<<<<< HEAD
+=======
+use Modules\Geo\Tests\TestCase;
+>>>>>>> dev
 
 beforeEach(function () {
     $this->mockDistanceMatrixAction = Mockery::mock(CalculateDistanceMatrixAction::class);

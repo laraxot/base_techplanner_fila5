@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 @props([
     'brand' => 'Sottana Service',
     'brand_subtitle' => '',
@@ -115,6 +118,7 @@
             </a>
         </div>
     </div>
+<<<<<<< HEAD
 </header>
 =======
 {{--
@@ -160,3 +164,6 @@
     </div>
 </nav>
 >>>>>>> 4b6b99016 (first commit)
+=======
+</header>
+>>>>>>> dev

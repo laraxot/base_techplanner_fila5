@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Architettura Content Blocks - <main module>
 
 ## Panoramica Architetturale
@@ -145,3 +146,12 @@ Builder::make('content_blocks')
 - [Configurazione Builder](../app/Filament/Resources/PageResource.php)
 - [Theme Components](../../../Themes/One/resources/views/components/blocks/)
 
+=======
+---
+module: theme
+topic: content_blocks_architecture
+canonical: ../../../Themes/docs/shared-components/content-blocks-architecture.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/content-blocks-architecture.md
+>>>>>>> dev

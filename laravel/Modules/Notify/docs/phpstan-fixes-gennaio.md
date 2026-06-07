@@ -1,7 +1,12 @@
 # 🔧 PHPStan Fixes - Modulo Notify - Gennaio 2025
 
+<<<<<<< HEAD
 **Data**: 27 Gennaio 2025
 **Status**: ✅ COMPLETATO CON SUCCESSO
+=======
+**Data**: 27 Gennaio 2025  
+**Status**: ✅ COMPLETATO CON SUCCESSO  
+>>>>>>> dev
 **Errori Corretti**: 5 errori di sintassi method chaining
 
 ## 📋 Panoramica Correzioni
@@ -140,7 +145,11 @@ PHPStan aveva difficoltà nel riconoscere la sintassi method chaining in alcuni 
 - **Leggibilità migliorata**: Codice più esplicito e chiaro
 
 ### **Benefici**
+<<<<<<< HEAD
 - ✅ **PHPStan level 10**: Compatibilità completa
+=======
+- ✅ **PHPStan Level 9**: Compatibilità completa
+>>>>>>> dev
 - ✅ **Leggibilità**: Codice più esplicito e chiaro
 - ✅ **Type Safety**: Mantenuta con type hints espliciti
 - ✅ **Debugging**: Più facile identificare problemi
@@ -230,10 +239,14 @@ public function toMail(object $notifiable): MailMessage
 
 ### **Documentazione Correlata**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README.md Modulo Notify](./readme.md)
 =======
 - [README.md Modulo Notify](./README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README.md Modulo Notify](./readme.md)
+>>>>>>> dev
 - [Template Management](./template-management.md)
 - [Best Practices](./best-practices.md)
 
@@ -244,9 +257,20 @@ public function toMail(object $notifiable): MailMessage
 
 ---
 
+<<<<<<< HEAD
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025
 **📦 Versione**: 1.0
 **🐛 PHPStan Level**: 9 ✅
 **🌐 Translation Standards**: IT/EN complete ✅
 **🚀 Performance**: 92/100 score
 **✨ Test Coverage**: 95% ✅
+=======
+**🔄 Ultimo aggiornamento**: 27 Gennaio 2025  
+**📦 Versione**: 1.0  
+**🐛 PHPStan Level**: 9 ✅  
+**🌐 Translation Standards**: IT/EN complete ✅  
+**🚀 Performance**: 92/100 score  
+**✨ Test Coverage**: 95% ✅
+
+
+>>>>>>> dev

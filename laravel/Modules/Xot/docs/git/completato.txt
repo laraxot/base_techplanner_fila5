@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Risoluzioni completate con successo.
 
 Integrazione documentazione completata:
@@ -5,3 +6,12 @@ Integrazione documentazione completata:
 - Documentazione conflitti Git integrata nel modulo Xot
 - Documentazione FFmpeg integrata nel modulo Media
 - Collegamenti bidirezionali creati tra documentazione moduli e principale 
+=======
+---
+module: theme
+topic: completato
+canonical: ../../../../Themes/docs/shared-components/completato.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/completato.md
+>>>>>>> dev

@@ -99,6 +99,9 @@
 - [PHPStan Level 10 Guidelines](./phpstan-level10-guidelines.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 6 Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

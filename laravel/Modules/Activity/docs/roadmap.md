@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Roadmap Modulo Activity - Audit Trail & Intelligence
 
 **Data Creazione**: 2026-01-31
@@ -264,3 +265,12 @@ Activity/
 **Maintainer**: Team Laraxot
 **Status**: Active Development
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: roadmap
+canonical: ../../../Themes/docs/shared-components/roadmap--Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Modules.md
+>>>>>>> dev

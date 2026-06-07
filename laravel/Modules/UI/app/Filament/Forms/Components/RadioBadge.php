@@ -76,10 +76,14 @@ class RadioBadge extends Radio
     {
         $enum = $this->getEnumValue($value);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $enum instanceof HasIcon) {
 =======
         if (! ($enum instanceof HasIcon)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $enum instanceof HasIcon) {
+>>>>>>> dev
             return null;
         }
         $icon = $enum->getIcon();

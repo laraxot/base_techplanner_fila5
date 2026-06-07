@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Fixes - Gennaio 2025
 
 ## Modulo UI - Correzioni Completate
@@ -53,3 +54,12 @@
 - **Errori PHPStan**: 0
 - **File corretti**: 9
 - **Pattern applicati**: Type narrowing, Array safety, Closure hints
+=======
+---
+module: theme
+topic: phpstan-fixes-january-1
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-january-.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-january-.md
+>>>>>>> dev

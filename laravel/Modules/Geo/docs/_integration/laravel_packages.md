@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # laravel_packages
 
 <!-- Contenuto migrato da _docs/laravel_packages.txt -->
@@ -87,3 +88,12 @@ https://ourcodeworld.com/articles/read/1019/how-to-find-nearest-locations-from-a
 -----------------------------------------------
 -----------------------------------------------
 -----------------------------------------------
+=======
+---
+module: theme
+topic: laravel_packages
+canonical: ../../../../Themes/docs/shared-components/laravel-packages.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/laravel-packages.md
+>>>>>>> dev

@@ -107,7 +107,10 @@ $email = $this->generateUniqueEmail();
 1. ✅ `registration-widget-test-strategy.md` - Strategia completa implementazione
 2. ✅ `pestphp-best-practices.md` - Pattern PestPHP identificati
 3. ✅ `learnings-summary.md` - Riepilogo completo learnings ← **QUESTO DOCUMENTO**
+<<<<<<< HEAD
 4. ✅ `testing.md` - Aggiornato sezione Widget Testing e Helper Functions
+=======
+>>>>>>> dev
 
 ### **Root Documentation**
 5. ✅ `testing-organization.md` - Aggiunta sezione "PestPHP Pattern Identificati"
@@ -184,8 +187,11 @@ Il sistema di test è ora **pronto per produzione** con:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Dicembre 2024*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 *Versione: 2.0 - Helper Functions Centralized*
 *Compatibilità: <nome progetto>, PestPHP 2.x, Laravel 10+*

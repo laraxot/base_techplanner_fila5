@@ -179,6 +179,9 @@ Prima di committare modifiche a un tema, verificare che:
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Documentazione Temi](/laravel/modules/cms/docs/themes/readme.md)
 - [Configurazione Temi](/laravel/modules/cms/docs/themes/configuration.md)
 - [Testing dei Temi](/laravel/modules/cms/docs/themes/testing.md)
@@ -187,6 +190,7 @@ Prima di committare modifiche a un tema, verificare che:
 * [theme-reusability.md](laravel/modules/cms/docs/best-practices/theme-reusability.md)
 * [theme-reusability.md](laravel/themes/one/docs/best_practices/theme-reusability.md)
 * [theme-reusability.md](laravel/themes/one/docs/theme-reusability.md)
+<<<<<<< HEAD
 =======
 - [Documentazione Temi](/laravel/Modules/Cms/docs/themes/README.md)
 - [Configurazione Temi](/laravel/Modules/Cms/docs/themes/configuration.md)
@@ -197,3 +201,5 @@ Prima di committare modifiche a un tema, verificare che:
 * [theme-reusability.md](laravel/Themes/One/docs/best_practices/theme-reusability.md)
 * [theme-reusability.md](laravel/Themes/One/docs/theme-reusability.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

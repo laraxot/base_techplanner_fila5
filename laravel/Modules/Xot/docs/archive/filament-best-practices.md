@@ -589,12 +589,17 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 
 - [Documentazione Filament](https://filamentphp.com/docs)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/modules/xot/project_docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/modules/xot/project_docs/best-practices.md)
 =======
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/project_docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/project_docs/best-practices.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione XotBaseResource](base_orisbroker_fila5/laravel/modules/xot/project_docs/resource.md)
+- [Best Practices Laraxot](base_orisbroker_fila5/laravel/modules/xot/project_docs/best-practices.md)
+>>>>>>> dev
 
 ## Regole per Widget Filament: Path View e Localizzazione
 

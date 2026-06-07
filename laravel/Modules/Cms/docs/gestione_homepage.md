@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gestione della Homepage in il progetto
 
 Questo documento fornisce una panoramica generale della gestione della homepage in il progetto. Per i dettagli tecnici dell'implementazione, consultare la [documentazione tecnica nel modulo CMS](../laravel/modules/cms/project_docs/homepage.md).
@@ -117,3 +118,12 @@ Per i dettagli tecnici sulla gestione dei contenuti, consultare:
 - [Architettura del Frontoffice](./architettura_frontoffice.md)
 - [Linee Guida per la Documentazione](./linee-guida-documentazione.md)
 - [Standard di Codice](./standard-codice.md)
+=======
+---
+module: theme
+topic: gestione_homepage
+canonical: ../../../Themes/docs/shared-components/gestione-homepage.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/gestione-homepage.md
+>>>>>>> dev

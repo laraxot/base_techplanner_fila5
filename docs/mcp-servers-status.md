@@ -1,20 +1,29 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 # Status Server MCP - base_techplanner_fila5
 
 **Ultimo aggiornamento**: 2026-02-06  
 **Configurazione**: `.windsurf/mcp.json`
+<<<<<<< HEAD
 =======
 # Status Server MCP - base_techplanner_fila4_mono
 
 **Ultimo aggiornamento**: 2025-01-27  
 **Configurazione**: `.windsurf/mcp.json` e `.cursor/mcp.json`
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ---
 
 ## ✅ Server MCP Attivi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 ### Infrastruttura
 
 1. **filesystem** — Accesso file progetto
@@ -44,6 +53,7 @@
 13. **mui-mcp** — Documentazione Material UI accurata, zero hallucination
     - `npx -y @mui/mcp@latest`
     - Docs: https://mui.com/material-ui/getting-started/mcp/
+<<<<<<< HEAD
 =======
 ### Configurati e Funzionanti
 
@@ -84,6 +94,8 @@
    - Query database MySQL
    - Script custom: `bashscripts/mcp/mysql-db-connector.js`
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ---
 
@@ -93,6 +105,9 @@
 - **Rimosso**: 2025-01-27
 - **Motivo**: Package deprecato, errori `ERR_MODULE_NOT_FOUND`
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 
 ---
 
@@ -105,9 +120,12 @@
 | Figma MCP (Cursor Talk) | Richiede plugin Figma + Cursor specifico |
 | Magic UI MCP | Docs insufficienti |
 | tailwindcss-mcp-server | Ridondante con flowbite che include già contesto Tailwind |
+<<<<<<< HEAD
 =======
 - **Alternativa**: Laravel Boost fornisce documentazione nativa
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ---
 
@@ -118,6 +136,7 @@
 cat .windsurf/mcp.json | jq -r '.mcpServers | keys[]' | sort
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Output atteso (2026-02-06):
 # asana, daisyui, deepwiki, fetch, filesystem, flowbite, git,
 # memory, mui-mcp, puppeteer, sequential-thinking, shadcn, time
@@ -126,12 +145,18 @@ cat .windsurf/mcp.json | jq -r '.mcpServers | keys[]' | sort
 grep -c "mcp-package-docs" .windsurf/mcp.json .cursor/mcp.json
 # Output atteso: 0
 >>>>>>> 4b6b99016 (first commit)
+=======
+# Output atteso (2026-02-06):
+# asana, daisyui, deepwiki, fetch, filesystem, flowbite, git,
+# memory, mui-mcp, puppeteer, sequential-thinking, shadcn, time
+>>>>>>> dev
 ```
 
 ---
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [MCP UI/UX Tema Two](../laravel/Themes/Two/docs/mcp-ui-ux.md)
 - [Configurazione Windsurf](../.windsurf/mcp.json)
@@ -140,3 +165,8 @@ grep -c "mcp-package-docs" .windsurf/mcp.json .cursor/mcp.json
 - [MCP Configuration](../laravel/Modules/Xot/docs/mcp-configuration-optimized.md)
 - [Memoria Rimozione](../.cursor/memories/mcp-package-docs-removed.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [MCP UI/UX Tema Two](../laravel/Themes/Two/docs/mcp-ui-ux.md)
+- [Configurazione Windsurf](../.windsurf/mcp.json)
+- [Prompt MCP](../bashscripts/tools/prompts/mcp.txt)
+>>>>>>> dev

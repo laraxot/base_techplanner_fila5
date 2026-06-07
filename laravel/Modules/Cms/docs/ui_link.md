@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Collegamenti al Modulo UI
 
 Questo documento fornisce collegamenti bidirezionali tra il modulo Cms e il modulo UI.
@@ -27,3 +28,12 @@ Il modulo Cms utilizza i componenti UI definiti nel modulo UI per:
 Questo documento è collegato bidirezionalmente con [cms-link.md](../../ui/project_docs/cms-link.md) nel modulo UI.
 
 > Aggiorna entrambi i riferimenti se modifichi l'utilizzo dei componenti UI nel frontend o aggiungi nuove integrazioni.
+=======
+---
+module: theme
+topic: ui_link
+canonical: ../../../Themes/docs/shared-components/ui-link.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ui-link.md
+>>>>>>> dev

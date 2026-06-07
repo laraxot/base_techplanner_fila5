@@ -225,13 +225,26 @@ grep -r "RefreshDatabase" Modules/*/tests/ --include="*.php" | wc -l
 
 Questa regola deve essere applicata SUBITO a tutti i test esistenti prima di procedere con qualsiasi altro sviluppo.
 
+<<<<<<< HEAD
 ## Collegamenti
 
+=======
+## Database Connections
+
+I moduli usano il database default. NON creare connessioni dedicate per modulo. Vedi [database-connections](../../.cursor/rules/database-connections.mdc).
+
+## Collegamenti
+
+- [TDD Laravel Guide](tdd-laravel-guide.md)
+>>>>>>> dev
 - [Testing Strategy](./testing_strategy.md)
 - [Performance Guidelines](../performance/)
 - [Laraxot Conventions](../laraxot_conventions.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

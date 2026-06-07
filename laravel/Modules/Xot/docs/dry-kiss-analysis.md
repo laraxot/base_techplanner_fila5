@@ -1,10 +1,14 @@
 # 🐄✨ DRY & KISS Analysis - Modulo Xot
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Analisi:** [DATE]
 =======
 **Data Analisi:** 2025-10-15
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data Analisi:** [DATE]
+>>>>>>> dev
 **Analista:** Super Mucca AI (Livello Infinito)
 **Status:** 🔍 ANALISI COMPLETA
 
@@ -193,7 +197,11 @@ abstract class XotBaseModel extends Model
 **Analisi Necessaria:**
 ```bash
 find docs/ -name "*.md" -type f | xargs grep -l "DEPRECATED\|OLD\|OBSOLETE"
+<<<<<<< HEAD
 find docs/archive/ -type f  # Verificare cosa è in archive
+=======
+find docs/archived/ -type f  # Verificare cosa è in archive
+>>>>>>> dev
 ```
 
 **Raccomandazione:**
@@ -599,10 +607,14 @@ find Actions/ -name "*.php" -exec wc -l {} + | awk '$1 > 200'
 | Data | Versione | Modifiche |
 |------|----------|-----------|
 <<<<<<< HEAD
+<<<<<<< HEAD
 | [DATE] | 1.0 | Analisi iniziale DRY/KISS completa |
 =======
 | 2025-10-15 | 1.0 | Analisi iniziale DRY/KISS completa |
 >>>>>>> 4b6b99016 (first commit)
+=======
+| [DATE] | 1.0 | Analisi iniziale DRY/KISS completa |
+>>>>>>> dev
 
 ---
 

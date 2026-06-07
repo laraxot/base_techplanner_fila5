@@ -90,4 +90,8 @@ class NotificationTemplateResource extends XotBaseResource
             'edit' => Pages\EditNotificationTemplate::route('/{record}/edit'),
         ];
     }
+<<<<<<< HEAD
 } 
+=======
+} 
+>>>>>>> dev

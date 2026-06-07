@@ -76,6 +76,7 @@ Verificare che:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Notify Module Documentation](readme.md)
 =======
 - [Notify Module Documentation](README.md)
@@ -88,3 +89,11 @@ Verificare che:
 =======
 *Ultimo aggiornamento: giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Notify Module Documentation](readme.md)
+- [RecordNotification Implementation](notifications/record_notification.md)
+- [SpatieEmail Integration](spatie_email_usage_guide.md)
+- [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
+
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> dev

@@ -1,6 +1,10 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "laraxot/module_notify_fila3",
+=======
+  "name": "laraxot/module_notify_fila5",
+>>>>>>> dev
   "description": "Notification management module for the Laraxot ecosystem: email, SMS, WhatsApp, Telegram, and FCM push.",
   "keywords": [
     "laraxot",
@@ -15,7 +19,11 @@
     "telegram",
     "fcm"
   ],
+<<<<<<< HEAD
   "homepage": "https://github.com/laraxot/module_notify_fila3.git",
+=======
+  "homepage": "https://github.com/laraxot/module_notify_fila5.git",
+>>>>>>> dev
   "license": "MIT",
   "authors": [
     {
@@ -51,16 +59,24 @@
     "illuminate/contracts": "*",
     "illuminate/support": "*",
     "irazasyed/telegram-bot-sdk": "*",
+<<<<<<< HEAD
+=======
+    "kreait/laravel-firebase": "^7.0",
+    "laravel-notification-channels/fcm": "^6.0",
+>>>>>>> dev
     "laravel-notification-channels/telegram": "*",
     "phpdocumentor/type-resolver": "*",
     "spatie/laravel-database-mail-templates": "*",
     "symfony/http-client": "*",
     "symfony/postmark-mailer": "*"
   },
+<<<<<<< HEAD
   "require-comment": {
     "kreait/laravel-firebase": "*",
     "laravel-notification-channels/fcm": "*"
   },
+=======
+>>>>>>> dev
   "repositories": [
     {
       "type": "path",
@@ -97,6 +113,7 @@
   },
   "minimum-stability": "dev",
   "prefer-stable": true
+<<<<<<< HEAD
 =======
     "name": "laraxot/module_notify_fila3",
     "description": "notify module dedicated to managing notifications",
@@ -193,4 +210,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 }

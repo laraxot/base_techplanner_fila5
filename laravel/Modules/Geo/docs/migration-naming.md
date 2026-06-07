@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Convenzione di Naming e Gestione delle Migrazioni
 
 ## Pattern del Progetto <main module>
@@ -81,3 +82,12 @@ $this->tableUpdate(
 - [XotBaseMigration](../../../Xot/database/migrations/XotBaseMigration.php)
 - [Documentazione Laravel sulle Migrazioni](https://laravel.com/project_docs/migrations)
 - [Xot Module Documentation Standards](../../../xot/project_docs/documentation-standards.md)
+=======
+---
+module: theme
+topic: migration-naming
+canonical: ../../../Themes/docs/shared-components/migration-naming-pattern-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-naming-pattern-1.md
+>>>>>>> dev

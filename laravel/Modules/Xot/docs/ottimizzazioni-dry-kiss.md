@@ -124,12 +124,17 @@ Codice pratico.
 
 ## Collegamenti
 - [Doc correlata](./relativa.md)
+<<<<<<< HEAD
 - [Root docs](../../../docs/correlata.md)
 
 <<<<<<< HEAD
 =======
 *Ultimo aggiornamento: [data]*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Root docs](../../../../docs/correlata.md)
+
+>>>>>>> dev
 ```
 
 ### 4. **Sistema Navigazione Centralizzato**
@@ -199,7 +204,11 @@ DOPO:
 
 - [Template Standardizzato](./template-docs.md)
 - [Guida Refactoring](./refactoring-guide.md)
+<<<<<<< HEAD
 - [Root Ottimizzazioni](../../../docs/ottimizzazioni-modulari.md)
+=======
+- [Root Ottimizzazioni](../../../../docs/ottimizzazioni-modulari.md)
+>>>>>>> dev
 
 ## 🏷️ **Tag Ottimizzazione**
 
@@ -207,6 +216,9 @@ DOPO:
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

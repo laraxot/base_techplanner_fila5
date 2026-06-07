@@ -1,6 +1,10 @@
 # Gestione Traduzioni Contenuti JSON
 
+<<<<<<< HEAD
 Questo documento descrive come gestire le traduzioni per i contenuti JSON nel progetto quaeris, con particolare attenzione ai file di contenuto delle pagine.
+=======
+Questo documento descrive come gestire le traduzioni per i contenuti JSON nel progetto healthcare_app, con particolare attenzione ai file di contenuto delle pagine.
+>>>>>>> dev
 
 ## Struttura dei Contenuti Traducibili
 
@@ -8,7 +12,11 @@ Questo documento descrive come gestire le traduzioni per i contenuti JSON nel pr
 
 I contenuti delle pagine sono memorizzati in file JSON nella directory:
 ```
+<<<<<<< HEAD
 config/local/quaeris/database/content/pages/
+=======
+config/local/healthcare_app/database/content/pages/
+>>>>>>> dev
 ```
 
 ### Struttura Standard
@@ -77,8 +85,15 @@ Ogni file JSON può contenere sezioni traducibili seguendo questo pattern:
 ```json
 {
     "title": {
+<<<<<<< HEAD
         "it": "Area Dottore - Quaeris",
         "en": "Doctor Area - Quaeris"
+=======
+        "it": "Area Dottore - healthcare_app",
+        "en": "Doctor Area - healthcare_app"
+        "it": "Area Dottore - ExternalProject",
+        "en": "Doctor Area - ExternalProject"
+>>>>>>> dev
     },
     "content_blocks": {
         "it": [
@@ -147,7 +162,11 @@ Ogni file JSON può contenere sezioni traducibili seguendo questo pattern:
 
 Identificare i file JSON che necessitano di traduzione:
 ```bash
+<<<<<<< HEAD
 find config/local/quaeris/database/content/pages/ -name "*.json"
+=======
+find config/local/healthcare_app/database/content/pages/ -name "*.json"
+>>>>>>> dev
 ```
 
 ### 2. Analisi
@@ -192,7 +211,11 @@ jq '.title | keys' file.json
 
 # Controlla che tutti i file JSON abbiano le traduzioni complete
 
+<<<<<<< HEAD
 for file in config/local/quaeris/database/content/pages/*.json; do
+=======
+for file in config/local/healthcare_app/database/content/pages/*.json; do
+>>>>>>> dev
     echo "Checking $file..."
     
     # Verifica presenza sezioni it e en

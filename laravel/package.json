@@ -8,17 +8,27 @@
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",
+<<<<<<< HEAD
         "axios": "^1.11.0",
+=======
+        "axios": "^1.17.0",
+>>>>>>> dev
         "concurrently": "^9.0.1",
         "laravel-vite-plugin": "^2.0.0",
         "tailwindcss": "^4.0.0",
         "vite": "^7.0.4"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     },
     "dependencies": {
         "@axe-core/playwright": "^4.11.1",
         "playwright": "^1.58.2"
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 }

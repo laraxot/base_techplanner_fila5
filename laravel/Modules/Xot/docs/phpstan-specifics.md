@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pattern Specifici PHPStan Level 10
 
 Questo documento raccoglie pattern specifici per risolvere errori PHPStan a livello 10, complementare alla guida generale.
@@ -157,3 +158,12 @@ private function applyFilters(\Illuminate\Database\Eloquent\Builder $query): voi
 /** @var \Illuminate\Database\Eloquent\Builder<\Modules\User\Models\User> $query */
 $query = User::query()->where('active', true);
 ```
+=======
+---
+module: theme
+topic: phpstan-specifics
+canonical: ../../../Themes/docs/shared-components/phpstan-specific-patterns.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-specific-patterns.md
+>>>>>>> dev

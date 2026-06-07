@@ -8,12 +8,17 @@ return [
     ],
     'navigation' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'name' => 'Notifica',
         'plural' => 'Notifiche',
 =======
         'name' => 'Notifica', // Nome singolare
         'plural' => 'Notifiche', // Nome plurale
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'name' => 'Notifica',
+        'plural' => 'Notifiche',
+>>>>>>> dev
         'group' => 'Sistema',
         'label' => 'Notifiche',
         'icon' => 'notify-bell-animated',
@@ -26,10 +31,15 @@ return [
             'placeholder' => 'es: Aggiornamento sistema',
             'help' => 'Inserisci un titolo chiaro e conciso',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'message' => [
             'label' => 'Messaggio',
@@ -37,10 +47,15 @@ return [
             'placeholder' => 'es: Il sistema verrà aggiornato alle ore...',
             'help' => 'Inserisci il messaggio completo della notifica',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'type' => [
             'label' => 'Tipo',
@@ -72,10 +87,15 @@ return [
                 ],
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'status' => [
             'label' => 'Stato',
@@ -95,10 +115,15 @@ return [
                 ],
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'recipient' => [
             'label' => 'Destinatario',
@@ -106,37 +131,57 @@ return [
             'placeholder' => 'es: mario.rossi@example.com',
             'help' => 'Seleziona uno o più destinatari',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'sent_at' => [
             'label' => 'Inviata il',
             'tooltip' => 'Data e ora di invio della notifica',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'read_at' => [
             'label' => 'Letta il',
             'tooltip' => 'Data e ora di lettura della notifica',
 <<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'archived_at' => [
-            'label' => 'Archiviata il',
-            'tooltip' => 'Data e ora di archiviazione della notifica',
 <<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'archived_at' => [
+            'label' => 'Archiviata il',
+            'tooltip' => 'Data e ora di archiviazione della notifica',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -296,10 +341,14 @@ return [
             'attachments' => [
                 'label' => 'Allegati',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'helper' => 'Allegati alla notifica (max 5 file, 5MB ciascuno]',
 =======
                 'helper' => 'Allegati alla notifica (max 5 file, 5MB ciascuno)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+                'helper' => 'Allegati alla notifica (max 5 file, 5MB ciascuno]',
+>>>>>>> dev
             ],
         ],
         'preview' => [
@@ -317,8 +366,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Notify',
     'plural_label' => 'Notify (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Notify',
+    'plural_label' => 'Notify (Plurale)',
+>>>>>>> dev
 ];

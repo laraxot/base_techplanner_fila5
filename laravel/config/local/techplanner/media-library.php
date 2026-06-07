@@ -137,10 +137,14 @@ return [
             '-pass 10', // for maximizing the amount of analysis pass.
             '-mt', // multithreading for some speed improvements.
 <<<<<<< HEAD
+<<<<<<< HEAD
             '-q 90', // quality factor that brings the least noticeable changes.
 =======
             '-q 90', //quality factor that brings the least noticeable changes.
 >>>>>>> 4b6b99016 (first commit)
+=======
+            '-q 90', // quality factor that brings the least noticeable changes.
+>>>>>>> dev
         ],
         Spatie\ImageOptimizer\Optimizers\Avifenc::class => [
             '-a cq-level=23', // constant quality level, lower values mean better quality and greater file size (0-63).

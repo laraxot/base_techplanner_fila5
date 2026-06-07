@@ -341,14 +341,19 @@ public function test_bulk_sti_creation()
 
 ### <nome progetto> Module
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/userfactory-improvements-analysis.md)
 =======
 - [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/UserFactory-improvements-analysis.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/userfactory-improvements-analysis.md)
+>>>>>>> dev
 - [Model Architecture](../<nome progetto>/docs/model-architecture.md)
 - [STI Implementation](../<nome progetto>/docs/model-inheritance.md)
 
 ### User Module
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
 - [Traits Complete Guide](../user/docs/traits_complete_guide.md)
@@ -358,6 +363,11 @@ public function test_bulk_sti_creation()
 - [Traits Complete Guide](../User/docs/traits_complete_guide.md)
 - [Authentication Framework](../User/docs/authentication.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
+- [Traits Complete Guide](../user/docs/traits_complete_guide.md)
+- [Authentication Framework](../user/docs/authentication.md)
+>>>>>>> dev
 
 ---
 
@@ -708,14 +718,19 @@ public function test_bulk_sti_creation()
 
 ### <nome progetto> Module
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/userfactory-improvements-analysis.md)
 =======
 - [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/UserFactory-improvements-analysis.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/userfactory-improvements-analysis.md)
+>>>>>>> dev
 - [Model Architecture](../<nome progetto>/docs/model-architecture.md)
 - [STI Implementation](../<nome progetto>/docs/model-inheritance.md)
 
 ### User Module
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
 - [Traits Complete Guide](../user/docs/traits_complete_guide.md)
@@ -725,6 +740,11 @@ public function test_bulk_sti_creation()
 - [Traits Complete Guide](../User/docs/traits_complete_guide.md)
 - [Authentication Framework](../User/docs/authentication.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
+- [Traits Complete Guide](../user/docs/traits_complete_guide.md)
+- [Authentication Framework](../user/docs/authentication.md)
+>>>>>>> dev
 
 ---
 

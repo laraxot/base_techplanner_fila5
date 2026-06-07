@@ -273,6 +273,9 @@ public function getFormSchema(): array
 - [Laraxot Conventions](./laraxot.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Gennaio 2025 - Post doppio errore critico*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

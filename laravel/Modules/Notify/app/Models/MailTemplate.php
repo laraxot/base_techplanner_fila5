@@ -9,15 +9,22 @@ use Carbon\Carbon;
 use Exception;
 use Illuminate\Contracts\Mail\Mailable;
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection;
+=======
+>>>>>>> dev
 use Spatie\MailTemplates\Interfaces\MailTemplateInterface;
 use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\Translatable\HasTranslations;
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Spatie\Translatable\HasTranslations;
+>>>>>>> dev
 
 /**
  * @property int $id
@@ -30,8 +37,11 @@ use Spatie\Translatable\HasTranslations;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property Carbon|null $deleted_at
+<<<<<<< HEAD
  * @property Collection<int, MailTemplateVersion> $versions
  * @property Collection<int, MailTemplateLog> $logs
+=======
+>>>>>>> dev
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
@@ -75,6 +85,13 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|MailTemplate whereWhatsappTemplate($value)
  *
  * @mixin IdeHelperMailTemplate
+<<<<<<< HEAD
+=======
+ *
+ * @method static Builder<static>|MailTemplate whereHtmlLayoutPath($value)
+ * @method static Builder<static>|MailTemplate whereVersion($value)
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
@@ -83,16 +100,23 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
 
     // use SoftDeletes;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     use HasTranslations;
 
     /** @var list<string> */
     public array $translatable = ['subject', 'html_template', 'text_template', 'sms_template'];
+<<<<<<< HEAD
 =======
     // NOTE: Translation functionality is now handled by Filament 5's built-in system
     // For JSON columns that store translations, ensure they're properly configured in database migrations
 >>>>>>> 4b6b99016 (first commit)
 
     /** @var string */
+=======
+
+>>>>>>> dev
     protected $connection = 'notify';
 
     /** @var list<string> */
@@ -144,6 +168,7 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
             'deleted_at' => 'datetime',
         ];
     }
+<<<<<<< HEAD
 
     /*
      * Versioni del template email.
@@ -182,4 +207,6 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
      * return $this;
      * }
      */
+=======
+>>>>>>> dev
 }

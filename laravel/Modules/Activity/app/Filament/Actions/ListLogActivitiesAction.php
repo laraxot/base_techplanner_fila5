@@ -7,6 +7,10 @@ namespace Modules\Activity\Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 use Filament\Resources\Resource;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
+=======
+use Modules\Activity\Filament\Pages\ListLogActivities;
+>>>>>>> dev
 use Modules\Xot\Filament\Actions\XotBaseAction;
 
 /**
@@ -28,8 +32,13 @@ use Modules\Xot\Filament\Actions\XotBaseAction;
  * }
  * ```
  *
+<<<<<<< HEAD
  * @see \Modules\Activity\Filament\Pages\ListLogActivities
  * @see \Modules\Xot\Filament\Actions\XotBaseAction
+=======
+ * @see ListLogActivities
+ * @see XotBaseAction
+>>>>>>> dev
  * @see https://github.com/spatie/laravel-activitylog
  */
 class ListLogActivitiesAction extends XotBaseAction

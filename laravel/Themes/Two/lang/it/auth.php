@@ -11,9 +11,13 @@ return [
     'login' => [
         'title' => 'Accedi al tuo account',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'back_to_home' => 'Torna alla home',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'back_to_home' => 'Torna alla home',
+>>>>>>> dev
         'or' => 'oppure',
         'create_account' => 'crea un nuovo account',
         'forgot_password' => 'Hai dimenticato la password?',
@@ -205,7 +209,11 @@ return [
         'please_refresh' => 'Si è verificato un errore. Ricarica la pagina e riprova.',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ]; 
 >>>>>>> 4b6b99016 (first commit)
+=======
+];
+>>>>>>> dev

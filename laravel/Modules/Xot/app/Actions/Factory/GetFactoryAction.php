@@ -12,11 +12,17 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Factory;
 
+<<<<<<< HEAD
 use Exception;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Str;
 use InvalidArgumentException;
+=======
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Str;
+>>>>>>> dev
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -30,9 +36,15 @@ class GetFactoryAction
     /**
      * Execute the function with the given model class.
      *
+<<<<<<< HEAD
      * @param  string  $model_class  the class name of the model
      *
      * @throws Exception Generating Factory [factory_class] press [F5] to refresh page [__LINE__][__FILE__]
+=======
+     * @param string $model_class the class name of the model
+     *
+     * @throws \Exception Generating Factory [factory_class] press [F5] to refresh page [__LINE__][__FILE__]
+>>>>>>> dev
      */
     public function execute(string $model_class): Factory
     {
@@ -58,18 +70,27 @@ class GetFactoryAction
         $this->createFactory($model_class);
 
         // Lancia un'eccezione con informazioni specifiche
+<<<<<<< HEAD
         throw new Exception(sprintf(
             'Generating Factory [%s] press [F5] to refresh page [%d][%s]',
             $factory_class,
             __LINE__,
             class_basename($this),
         ));
+=======
+        throw new \Exception(sprintf('Generating Factory [%s] press [F5] to refresh page [%d][%s]', $factory_class, __LINE__, class_basename($this)));
+>>>>>>> dev
     }
 
     /**
      * Get the factory class name for a model class.
      *
+<<<<<<< HEAD
      * @param  string  $model_class  The model class name
+=======
+     * @param string $model_class The model class name
+     *
+>>>>>>> dev
      * @return string The fully qualified factory class name
      */
     public function getFactoryClass(string $model_class): string
@@ -94,7 +115,11 @@ class GetFactoryAction
     /**
      * Create a factory for the given model class.
      *
+<<<<<<< HEAD
      * @param  string  $model_class  The class name of the model to create the factory for
+=======
+     * @param string $model_class The class name of the model to create the factory for
+>>>>>>> dev
      */
     public function createFactory(string $model_class): void
     {
@@ -106,10 +131,15 @@ class GetFactoryAction
         // Estraiamo il nome del modulo dal namespace della classe
         $module_parts = Str::of($model_class)->between('Modules\\', '\Models\\');
 
+<<<<<<< HEAD
         if ($module_parts === '') {
             throw new InvalidArgumentException(
                 "Impossibile determinare il nome del modulo dal namespace {$model_class}",
             );
+=======
+        if ('' === $module_parts) {
+            throw new \InvalidArgumentException("Impossibile determinare il nome del modulo dal namespace {$model_class}");
+>>>>>>> dev
         }
 
         $module_name = is_string($module_parts) ? $module_parts : ((string) $module_parts);

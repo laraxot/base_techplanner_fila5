@@ -20,11 +20,17 @@ return [
             'help' => 'Unique identifier of the stored event',
             'validation' => 'required|integer|min:1',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'event_class' => [
             'label' => 'Event Class',
@@ -33,11 +39,17 @@ return [
             'validation' => 'required|string|max:255',
             'searchable' => '1',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'event_properties' => [
             'label' => 'Event Properties',
@@ -47,11 +59,17 @@ return [
             'type' => 'json',
             'format' => 'json',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'aggregate_uuid' => [
             'label' => 'Aggregate UUID',
@@ -60,11 +78,17 @@ return [
             'validation' => 'required|uuid',
             'searchable' => '1',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'aggregate_version' => [
             'label' => 'Aggregate Version',
@@ -73,11 +97,17 @@ return [
             'validation' => 'required|integer|min:1',
             'sortable' => '1',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'event_version' => [
             'label' => 'Event Version',
@@ -85,11 +115,17 @@ return [
             'help' => 'Version number of the event format',
             'validation' => 'nullable|string|max:20',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'meta_data' => [
             'label' => 'Metadata',
@@ -99,11 +135,17 @@ return [
             'type' => 'json',
             'format' => 'json',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Creation Date',
@@ -113,11 +155,17 @@ return [
             'format' => 'd/m/Y H:i:s',
             'sortable' => '1',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'created_by' => [
             'label' => 'Created By',
@@ -126,11 +174,17 @@ return [
             'validation' => 'nullable|integer|exists:users,id',
             'searchable' => '1',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'updated_by' => [
             'label' => 'Updated By',
@@ -138,11 +192,17 @@ return [
             'help' => 'User who updated the event',
             'validation' => 'nullable|integer|exists:users,id',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'stream_name' => [
             'label' => 'Stream Name',
@@ -151,11 +211,17 @@ return [
             'validation' => 'nullable|string|max:255',
             'searchable' => '1',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'stream_position' => [
             'label' => 'Stream Position',
@@ -164,22 +230,34 @@ return [
             'validation' => 'nullable|integer|min:0',
             'sortable' => '1',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'toggleColumns' => [
-            'label' => 'Show/Hide Columns',
-            'placeholder' => '',
-            'help' => 'Configure column visibility in the table',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'toggleColumns' => [
+            'label' => 'Show/Hide Columns',
+            'placeholder' => '',
+            'help' => 'Configure column visibility in the table',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'filters' => [
@@ -372,22 +450,29 @@ return [
         'per_page' => '50',
         'options' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             0 => '25',
             1 => '50',
             2 => '100',
             3 => '200',
+<<<<<<< HEAD
 =======
             '0' => '25',
             '1' => '50',
             '2' => '100',
             '3' => '200',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'simple' => '',
     ],
     'cache' => [
         'ttl' => '600',
         'tags' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
             0 => 'stored_events',
             1 => 'event_sourcing',
@@ -397,6 +482,11 @@ return [
             '1' => 'event_sourcing',
             '2' => 'monitoring',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            0 => 'stored_events',
+            1 => 'event_sourcing',
+            2 => 'monitoring',
+>>>>>>> dev
         ],
     ],
     'event_sourcing' => [
@@ -416,8 +506,13 @@ return [
         'audit_trail' => '1',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

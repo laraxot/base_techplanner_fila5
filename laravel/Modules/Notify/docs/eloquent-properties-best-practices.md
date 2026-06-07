@@ -160,10 +160,14 @@ Prima di ogni commit nel modulo Notify, verificare:
 - [Regola Cursor](../.cursor/rules/eloquent-properties.md)
 - [Memoria Cursor](../.cursor/memories)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Linee Guida AI](../../.ai/guidelines/core.md)
 =======
 - [Linee Guida AI](../../.ai/guidelines/CORE.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Linee Guida AI](../../.ai/guidelines/core.md)
+>>>>>>> dev
 - [File Corretto](../app/Notifications/GenericNotification.php)
 
 ## Esempi di Utilizzo nel Modulo
@@ -212,7 +216,11 @@ public function toDatabase($notifiable): array
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> dev
 *File corretto: GenericNotification.php*

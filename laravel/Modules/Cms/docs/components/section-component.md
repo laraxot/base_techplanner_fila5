@@ -12,6 +12,7 @@ namespace Modules\Cms\View\Components;
 class Section extends Component
 {
     public string $slug;
+<<<<<<< HEAD
     public ?string $view = null;
     public array $data = [];
 
@@ -20,16 +21,58 @@ class Section extends Component
         $this->slug = $slug;
         $this->view = $view;
         $this->data = $data;
+=======
+    public string $tpl = 'v1';
+
+    public function __construct(string $slug, ?string $tpl = null)
+    {
+        $this->slug = $slug;
+        if (is_string($tpl)) {
+            $this->tpl = $tpl;
+        }
+>>>>>>> dev
     }
 
     public function render()
     {
+<<<<<<< HEAD
         $section = SectionModel::where('slug', $this->slug)->first();
         // ...
+=======
+        return view('pub_theme::components.sections.'.$this->slug.'.'.$this->tpl, [
+            'blocks' => SectionModel::getBlocksBySlug($this->slug),
+        ]);
+>>>>>>> dev
     }
 }
 ```
 
+<<<<<<< HEAD
+=======
+## Contratto runtime reale
+
+Con il contratto attuale del componente, questa chiamata:
+
+```blade
+<x-section slug="header" />
+```
+
+non cerca `components/sections/header.blade.php`, ma:
+
+```text
+pub_theme::components.sections.header.v1
+```
+
+Quindi ogni tema che usa `<x-section slug="..."/>` deve fornire almeno:
+
+- `resources/views/components/sections/header/v1.blade.php`
+- `resources/views/components/sections/footer/v1.blade.php`
+
+oppure deve passare un `tpl` esplicito compatibile.
+
+Questo e' un vincolo importante: se il tema ha solo `header.blade.php` o `footer.blade.php`, la pagina va in `500` con `View [components.sections.<slug>.v1] not found`.
+
+>>>>>>> dev
 ### View di Default
 ```blade
 <section @class([
@@ -118,9 +161,15 @@ Questo permette:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Blocchi](../blocks/readme.md)
 =======
 - [Documentazione Blocchi](../blocks/README.md)
 >>>>>>> 4b6b99016 (first commit)
 - [Gestione Sezioni](../section-management.md)
 - [Documentazione Root](../../../../docs/components.md)
+=======
+- [Documentazione Blocchi](../blocks/readme.md)
+- [Gestione Sezioni](../section-management.md)
+- [Documentazione Root](../../../../../docs/components.md)
+>>>>>>> dev

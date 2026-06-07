@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
@@ -69,3 +70,12 @@ Se si desidera mantenere la conferma di logout, è preferibile utilizzare un wid
 L'errore principale nell'implementazione attuale è l'utilizzo di un approccio non ottimale e non conforme alle convenzioni di SaluteOra per il logout. La soluzione raccomandata è utilizzare l'approccio "Folio con PHP puro" per un logout immediato, o in alternativa, implementare un widget Filament per il logout con conferma.
 
 La documentazione è stata aggiornata per riflettere queste raccomandazioni e per fornire esempi di implementazione corretta.
+=======
+---
+module: theme
+topic: logout-implementation
+canonical: ../../../Themes/docs/shared-components/logout_implementation_error.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout_implementation_error.md
+>>>>>>> dev

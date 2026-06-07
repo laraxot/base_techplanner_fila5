@@ -10,9 +10,12 @@ use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Gdpr\Database\Factories\ProfileFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\User\Models\BaseProfile;
 use Modules\User\Models\Device;
 use Modules\User\Models\DeviceProfile;
@@ -62,6 +65,51 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property Collection<int, Device>                                   $mobileDevices
  * @property int|null                                                  $mobile_devices_count
  * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
+<<<<<<< HEAD
+=======
+ * @property string                                                    $id
+ * @property string|null                                               $post_type
+ * @property string|null                                               $bio
+ * @property Carbon|null                                               $created_at
+ * @property Carbon|null                                               $updated_at
+ * @property string|null                                               $created_by
+ * @property string|null                                               $updated_by
+ * @property string|null                                               $deleted_by
+ * @property string|null                                               $first_name
+ * @property string|null                                               $surname
+ * @property string|null                                               $email
+ * @property string|null                                               $phone
+ * @property string|null                                               $address
+ * @property string|null                                               $user_id
+ * @property string|null                                               $last_name
+ * @property string|null                                               $tax_code
+ * @property string|null                                               $vat_number
+ * @property Carbon|null                                               $deleted_at
+ * @property SchemalessAttributes                                      $extra
+ * @property string                                                    $avatar
+ * @property ProfileContract|null                                      $creator
+ * @property Collection<int, DeviceUser>                               $deviceUsers
+ * @property int|null                                                  $device_users_count
+ * @property DeviceProfile|null                                        $pivot
+ * @property Collection<int, Device>                                   $devices
+ * @property int|null                                                  $devices_count
+ * @property string|null                                               $full_name
+ * @property MediaCollection<int, Media>                               $media
+ * @property int|null                                                  $media_count
+ * @property Collection<int, DeviceUser>                               $mobileDeviceUsers
+ * @property int|null                                                  $mobile_device_users_count
+ * @property Collection<int, Device>                                   $mobileDevices
+ * @property int|null                                                  $mobile_devices_count
+ * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
+ * @property int|null                                                  $notifications_count
+ * @property Collection<int, Permission>                               $permissions
+ * @property int|null                                                  $permissions_count
+ * @property Collection<int, Role>                                     $roles
+ * @property int|null                                                  $roles_count
+ * @property ProfileContract|null                                      $updater
+ * @property User|null                                                 $user
+ * @property string|null                                               $user_name
+>>>>>>> dev
  * @property int|null                                                  $notifications_count
  * @property Collection<int, Permission>                               $permissions
  * @property int|null                                                  $permissions_count
@@ -72,9 +120,12 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property string|null                                               $user_name
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @method static ProfileFactory          factory($count = null, $state = [])
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  * @method static Builder<static>|Profile newModelQuery()
  * @method static Builder<static>|Profile newQuery()
  * @method static Builder<static>|Profile permission($permissions, $without = false)
@@ -103,11 +154,28 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder<static>|Profile withoutRole($roles, $guard = null)
  *
  * @property ProfileContract|null $deleter
+<<<<<<< HEAD
+=======
+ * @property string|null          $fiscal_code
+ * @property string|null          $notes
+ * @property string|null          $fiscal_code
+ * @property string|null          $notes
+ *
+ * @method static Builder<static>|Profile                         childrenWith(array $relations)
+ * @method static Builder<static>|Profile                         childrenWithCount(array $relations)
+ * @method static \Modules\Gdpr\Database\Factories\ProfileFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Profile                         whereFiscalCode($value)
+ * @method static Builder<static>|Profile                         whereNotes($value)
+ * @method static Builder<static>|Profile                         byUuid(string $uuid)
+>>>>>>> dev
  *
  * @mixin \Eloquent
  */
 class Profile extends BaseProfile
 {
+<<<<<<< HEAD
     /** @var string */
+=======
+>>>>>>> dev
     protected $connection = 'gdpr';
 }

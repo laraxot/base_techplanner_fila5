@@ -199,10 +199,14 @@ foreach ($types as $key => $type) {
 ## Collegamenti
 - [ChangeTypeCommand.php](../app/Console/Commands/ChangeTypeCommand.php) - Il comando supremo di riferimento
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [README.md](readme.md)
 - [.cursor/rules/console_commands_philosophy.mdc](../../../.cursor/rules/console_commands_philosophy.mdc)
 - [.windsurf/rules/console_commands_philosophy.mdc](../../../.windsurf/rules/console_commands_philosophy.mdc)
 
+<<<<<<< HEAD
 =======
 - [README.md](README.md)
 - [.cursor/rules/console_commands_philosophy.mdc](../../../.cursor/rules/console_commands_philosophy.mdc)
@@ -210,3 +214,5 @@ foreach ($types as $key => $type) {
 
 *Ultimo aggiornamento: giugno 2025 - Standard estratto dal capolavoro ChangeTypeCommand.php*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

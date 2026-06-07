@@ -27,11 +27,16 @@ use Override;
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     use HasXotTable;
     use InteractsWithForms;
 =======
     use HasXotTable, InteractsWithForms;
 >>>>>>> 4b6b99016 (first commit)
+=======
+    use HasXotTable;
+    use InteractsWithForms;
+>>>>>>> dev
     // protected static string $resource;
 
     /**
@@ -45,7 +50,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     /**
      * Restituisce lo schema del form per i record correlati.
      *
+<<<<<<< HEAD
      * @return array<\Filament\Schemas\Components\Component>
+=======
+     * @return array<Component>
+>>>>>>> dev
      */
     // abstract public static function getFormSchema(): array;
 
@@ -65,7 +74,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    protected function getFormSchema(): array
+>>>>>>> dev
     {
         return [];
     }
@@ -76,7 +89,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<string, TextColumn>
      */
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     public function getTableColumns(): array
     {
         return [
@@ -114,6 +131,9 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     public function getTableActions(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         // Preferisci la risorsa correlata per i record nested; altrimenti usa la risorsa della pagina.
         $resource = static::$relatedResource ?? static::getResource();
         // Mostra "view" solo se la risorsa correlata espone quella pagina.
@@ -128,7 +148,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
                     $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
+<<<<<<< HEAD
                     if ($url === '') {
+=======
+                    if ('' === $url) {
+>>>>>>> dev
                         $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 
@@ -141,6 +165,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
                     $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
+<<<<<<< HEAD
                     if ($url === '') {
                         $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
                     }
@@ -152,6 +177,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                 ->url(function (Model $record): string {
                     $url = static::getResource()::getUrl('edit', ['record' => $record]);
 >>>>>>> 4b6b99016 (first commit)
+=======
+                    if ('' === $url) {
+                        $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
+                    }
+>>>>>>> dev
 
                     return is_string($url) ? $url : (string) $url;
                 }),

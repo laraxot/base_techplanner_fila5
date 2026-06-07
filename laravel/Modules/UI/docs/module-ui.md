@@ -1,10 +1,17 @@
 # Modulo UI
 
 ## Informazioni Generali
+<<<<<<< HEAD
 - **Nome**: `laraxot/module_ui_fila3`
 - **Descrizione**: Modulo per la gestione dell'interfaccia utente
 - **Namespace**: `Modules\UI`
 - **Repository**: https://github.com/laraxot/module_ui_fila3.git
+=======
+- **Nome**: `laraxot/module_ui_fila5`
+- **Descrizione**: Modulo per la gestione dell'interfaccia utente
+- **Namespace**: `Modules\UI`
+- **Repository**: https://github.com/laraxot/module_ui_fila5.git
+>>>>>>> dev
 
 ## Service Providers
 1. `Modules\UI\Providers\UIServiceProvider`
@@ -116,10 +123,17 @@ Le modifiche vengono tracciate nel repository GitHub.
 # Modulo UI
 
 ## Informazioni Generali
+<<<<<<< HEAD
 - **Nome**: `laraxot/module_ui_fila3`
 - **Descrizione**: Modulo per la gestione dell'interfaccia utente
 - **Namespace**: `Modules\UI`
 - **Repository**: https://github.com/laraxot/module_ui_fila3.git
+=======
+- **Nome**: `laraxot/module_ui_fila5`
+- **Descrizione**: Modulo per la gestione dell'interfaccia utente
+- **Namespace**: `Modules\UI`
+- **Repository**: https://github.com/laraxot/module_ui_fila5.git
+>>>>>>> dev
 
 ## Service Providers
 1. `Modules\UI\Providers\UIServiceProvider`

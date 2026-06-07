@@ -24,20 +24,30 @@ return [
             'placeholder' => 'Inserisci l\'ID della chat',
             'helper_text' => 'ID della chat Telegram a cui inviare il messaggio',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Inserisci il messaggio',
             'helper_text' => 'Testo del messaggio da inviare',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'parse_mode' => [
             'label' => 'Formato',
@@ -49,20 +59,30 @@ return [
                 'markdown' => 'Markdown',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'driver' => [
             'label' => 'Provider Telegram',
             'placeholder' => 'Seleziona il provider Telegram',
             'helper_text' => 'Seleziona il provider Telegram da utilizzare',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'drivers' => [
@@ -79,8 +99,13 @@ return [
         'error' => 'Si è verificato un errore durante l\'invio del messaggio Telegram',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Telegram',
     'plural_label' => 'Telegram (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Telegram',
+    'plural_label' => 'Telegram (Plurale)',
+>>>>>>> dev
 ];

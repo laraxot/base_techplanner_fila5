@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Fixes and Type System Improvements
 
 ## Overview
@@ -423,3 +424,12 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: phpstan-fixes
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-Modules.md
+>>>>>>> dev

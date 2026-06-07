@@ -35,7 +35,11 @@ ThemeName/
 
 ### 1. Verifica Preliminare
 ```bash
+<<<<<<< HEAD
 cd /var/www/html/_bases/base_predict_fila3_mono/laravel/Themes/[NomeTema]
+=======
+cd /var/www/html/_bases/base_predict_fila5_mono/laravel/Themes/[NomeTema]
+>>>>>>> dev
 ```
 
 ### 2. Processo di Compilazione

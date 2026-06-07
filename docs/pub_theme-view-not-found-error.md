@@ -154,7 +154,10 @@ Il `ThemeServiceProvider` del tema Sixteen registra:
 **EFFORT: BASSO**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Settembre 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 

@@ -160,7 +160,11 @@ I componenti HTML del modulo CMS seguono le best practices HTML5 e utilizzano ta
 - [Elementi Semantici](../html/semantic.md)
 - [Struttura Layout](../structure/layout.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Accessibilità](../accessibility/readme.md)
 =======
 - [Accessibilità](../accessibility/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Accessibilità](../accessibility/readme.md)
+>>>>>>> dev

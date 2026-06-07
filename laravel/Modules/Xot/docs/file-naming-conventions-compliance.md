@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # File Naming Conventions Compliance - [DATE]
 
 =======
@@ -6,6 +7,10 @@
 
 **Data**: 2026-01-09  
 >>>>>>> 4b6b99016 (first commit)
+=======
+# File Naming Conventions Compliance - [DATE]
+
+>>>>>>> dev
 **Status**: ✅ **COMPLETATO**
 
 ---
@@ -39,10 +44,14 @@
 ### Pattern di Rinomina
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 ❌ PRIMA: nome-file-[DATE].md
 =======
 ❌ PRIMA: nome-file-2026-01-09.md
 >>>>>>> 4b6b99016 (first commit)
+=======
+❌ PRIMA: nome-file-[DATE].md
+>>>>>>> dev
 ✅ DOPO: nome-file.md
 ```
 
@@ -89,7 +98,11 @@
 **Status**: ✅ **COMPLETATO**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
 =======
 **Ultimo aggiornamento**: 2026-01-09
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> dev

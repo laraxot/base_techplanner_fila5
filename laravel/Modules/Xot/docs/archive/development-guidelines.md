@@ -24,12 +24,17 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 
 ### Moduli Corretti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [FormBuilder FieldOption Model](../formbuilder/project_docs/phpstan-corrections.md)
 - [Lang Console Commands](../lang/project_docs/phpstan-corrections.md)
 =======
 - [FormBuilder FieldOption Model](../FormBuilder/project_docs/phpstan-corrections.md)
 - [Lang Console Commands](../Lang/project_docs/phpstan-corrections.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [FormBuilder FieldOption Model](../formbuilder/project_docs/phpstan-corrections.md)
+- [Lang Console Commands](../lang/project_docs/phpstan-corrections.md)
+>>>>>>> dev
 
 ## Principi di Correzione
 
@@ -51,12 +56,17 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 ## Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [FormBuilder PHPStan Corrections](../formbuilder/project_docs/phpstan-corrections.md)
 - [Lang PHPStan Corrections](../lang/project_docs/phpstan-corrections.md)
 =======
 - [FormBuilder PHPStan Corrections](../FormBuilder/project_docs/phpstan-corrections.md)
 - [Lang PHPStan Corrections](../Lang/project_docs/phpstan-corrections.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [FormBuilder PHPStan Corrections](../formbuilder/project_docs/phpstan-corrections.md)
+- [Lang PHPStan Corrections](../lang/project_docs/phpstan-corrections.md)
+>>>>>>> dev
 - [Xot Architecture](./architecture.md)
 
 ## Note per Sviluppo Futuro

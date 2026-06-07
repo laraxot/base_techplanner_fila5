@@ -13,10 +13,14 @@ Aggiungi la seguente sezione nel file `config/sms.php`:
 ## Introduzione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento descrive i requisiti di configurazione per l'integrazione con il provider SMS Netfun nel modulo Notify, seguendo la [struttura standardizzata della configurazione SMS](./standardized_sms_config_structure.md).
 =======
 Questo documento descrive i requisiti di configurazione per l'integrazione con il provider SMS Netfun nel modulo Notify, seguendo la [struttura standardizzata della configurazione SMS](./STANDARDIZED_SMS_CONFIG_STRUCTURE.md).
 >>>>>>> 4b6b99016 (first commit)
+=======
+Questo documento descrive i requisiti di configurazione per l'integrazione con il provider SMS Netfun nel modulo Notify, seguendo la [struttura standardizzata della configurazione SMS](./standardized_sms_config_structure.md).
+>>>>>>> dev
 
 ## Struttura di Configurazione
 
@@ -86,12 +90,17 @@ NETFUN_API_URL=https://v2.smsviainternet.it/api/rest/v1/sms-batch.json
 ## Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Struttura Standardizzata della Configurazione SMS](./standardized_sms_config_structure.md)
 - [Canale SMS Netfun](./sms_netfun_channel.md)
 =======
 - [Struttura Standardizzata della Configurazione SMS](./STANDARDIZED_SMS_CONFIG_STRUCTURE.md)
 - [Canale SMS Netfun](./SMS_NETFUN_CHANNEL.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Struttura Standardizzata della Configurazione SMS](./standardized_sms_config_structure.md)
+- [Canale SMS Netfun](./sms_netfun_channel.md)
+>>>>>>> dev
 
 ## Supporto
 
@@ -100,9 +109,13 @@ Per problemi di configurazione o domande sull'integrazione con Netfun, consultar
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-05-12*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Ultimo aggiornamento: 2025-05-12*
+>>>>>>> dev
 
 ## 2. Esempio di .env
 
@@ -150,17 +163,26 @@ NETFUN_ENDPOINT=https://v2.smsviainternet.it/api/rest/v1/sms-batch.json
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Completa Netfun Channel](./sms_netfun_channel.md)
 - [Esempi di Utilizzo Netfun](./netfun_examples.md)
 =======
 - [Documentazione Completa Netfun Channel](./SMS_NETFUN_CHANNEL.md)
 - [Esempi di Utilizzo Netfun](./NETFUN_EXAMPLES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione Completa Netfun Channel](./sms_netfun_channel.md)
+- [Esempi di Utilizzo Netfun](./netfun_examples.md)
+>>>>>>> dev
 - [Risoluzione Conflitti Netfun](./netfunchannel_conflict_resolution.md)
 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-05-12*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Ultimo aggiornamento: 2025-05-12*
+>>>>>>> dev

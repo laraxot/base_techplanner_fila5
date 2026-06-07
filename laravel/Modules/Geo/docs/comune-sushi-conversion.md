@@ -53,19 +53,27 @@ class Comune extends Model
 {
     use Sushi;
 <<<<<<< HEAD
-    
-=======
-
->>>>>>> 4b6b99016 (first commit)
-    /**
-     * Indica a Sushi di non utilizzare timestamps
-     */
-    public $timestamps = false;
 <<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
+    /**
+     * Indica a Sushi di non utilizzare timestamps
+     */
+    public $timestamps = false;
+<<<<<<< HEAD
+<<<<<<< HEAD
+    
+=======
+
+>>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     /**
      * Definisce le colonne del modello
      */
@@ -76,10 +84,14 @@ class Comune extends Model
         'popolazione' => 'integer',
     ];
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     /**
      * Carica i dati dal file JSON
      */
@@ -88,19 +100,27 @@ class Comune extends Model
         $path = module_path('Geo', 'resources/json/comuni.json');
         $cacheKey = 'geo_comuni_json_' . md5($path);
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         return cache()->rememberForever($cacheKey, function () use ($path) {
             return json_decode(file_get_contents($path), true);
         });
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     /**
      * Scope per filtrare per regione
      */
@@ -110,10 +130,14 @@ class Comune extends Model
                      ->orderBy('nome');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     /**
      * Scope per filtrare per provincia
      */
@@ -123,10 +147,14 @@ class Comune extends Model
                      ->orderBy('nome');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     /**
      * Scope per cercare per nome
      */
@@ -136,10 +164,14 @@ class Comune extends Model
                      ->orderBy('nome');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     /**
      * Scope per filtrare per CAP
      */
@@ -150,10 +182,14 @@ class Comune extends Model
         return $query->whereRaw("JSON_CONTAINS(cap, '\"$cap\"')");
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     /**
      * Verifica se il CAP è valido
      */
@@ -162,10 +198,14 @@ class Comune extends Model
         return self::byCap($cap)->exists();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     /**
      * Relazione con la regione
      */
@@ -174,10 +214,14 @@ class Comune extends Model
         // Implementazione della relazione se necessario
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     /**
      * Relazione con la provincia
      */
@@ -224,11 +268,15 @@ public static function searchByName(string $name, int $limit = 0): Collection
 {
     $query = static::query()->searchByName($name);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     if ($limit > 0) {
         $query->limit($limit);
     }
     
+<<<<<<< HEAD
 =======
 
     if ($limit > 0) {
@@ -236,6 +284,8 @@ public static function searchByName(string $name, int $limit = 0): Collection
     }
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     return $query->get();
 }
 ```
@@ -358,6 +408,7 @@ class Comune extends Model
 {
     use Sushi;
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     public $timestamps = false;
     
@@ -366,15 +417,24 @@ class Comune extends Model
     public $timestamps = false;
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+    public $timestamps = false;
+    
+>>>>>>> dev
     /**
      * Durata della cache in secondi (1 settimana)
      */
     protected const CACHE_TTL = 604800;
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     /**
      * Definisce le colonne del modello
      */
@@ -385,10 +445,14 @@ class Comune extends Model
         'popolazione' => 'integer',
     ];
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     /**
      * Ottiene i dati dal file JSON con caching
      */
@@ -397,20 +461,28 @@ class Comune extends Model
         $path = module_path('Geo', 'resources/json/comuni.json');
         $cacheKey = 'geo_comuni_json_' . md5($path);
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         return Cache::rememberForever($cacheKey, function () use ($path) {
             return json_decode(file_get_contents($path), true);
         });
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     // Scopes Eloquent per query comuni
     
     // + implementazione dei metodi attuali per compatibilità
     
+<<<<<<< HEAD
 =======
 
     // Scopes Eloquent per query comuni
@@ -418,6 +490,8 @@ class Comune extends Model
     // + implementazione dei metodi attuali per compatibilità
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     /**
      * Pulisce tutta la cache
      */

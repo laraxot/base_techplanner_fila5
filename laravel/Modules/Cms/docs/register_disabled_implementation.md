@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione Pagina Register Disabled
 
 ## Panoramica
@@ -170,3 +171,12 @@ Per aggiornamenti futuri:
 - [Documentazione Filament Builder](https://filamentphp.com/docs/3.x/forms/fields/builder)
 
 *Implementazione completata: gennaio 2025*
+=======
+---
+module: theme
+topic: register_disabled_implementation
+canonical: ../../../Themes/docs/shared-components/register-disabled-implementation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/register-disabled-implementation.md
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura dei Layout e Componenti Blade in il progetto
 
 Questo documento analizza in dettaglio la struttura dei layout e dei componenti Blade utilizzati in il progetto, con particolare attenzione all'architettura a cascata dei layout e all'integrazione con Filament e Livewire.
@@ -347,3 +348,12 @@ La struttura dei layout e componenti Blade in il progetto è progettata per esse
 L'integrazione con Filament e Livewire aggiunge potenti funzionalità di gestione dei form e interattività, mantenendo al contempo una struttura di codice pulita e organizzata.
 
 Seguendo le best practices documentate in questo documento, gli sviluppatori possono estendere e mantenere efficacemente l'interfaccia utente di il progetto.
+=======
+---
+module: theme
+topic: struttura_layout_componenti_blade_saluteora
+canonical: ../../../Themes/docs/shared-components/struttura-layout-componenti-blade-saluteora.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/struttura-layout-componenti-blade-saluteora.md
+>>>>>>> dev

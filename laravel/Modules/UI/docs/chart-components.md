@@ -138,10 +138,14 @@ class UserStats extends Component
 - [Componenti Table](./table-components.md)
 - [Componenti Layout](./layout-components.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Frontend](../cms/docs/frontend-architecture.md)
 =======
 - [Documentazione Frontend](../Cms/docs/frontend-architecture.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione Frontend](../cms/docs/frontend-architecture.md)
+>>>>>>> dev
 # Componenti Chart
 
 ## Introduzione
@@ -282,6 +286,7 @@ class UserStats extends Component
 - [Componenti Table](./table-components.md)
 - [Componenti Layout](./layout-components.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
 - [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
 - [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
@@ -290,3 +295,8 @@ class UserStats extends Component
 - [Documentazione Frontend](../Cms/project_docs/frontend-architecture.md)
 - [Documentazione Frontend](../Cms/project_docs/frontend-architecture.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
+- [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
+- [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
+>>>>>>> dev

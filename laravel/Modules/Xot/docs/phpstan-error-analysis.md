@@ -1,10 +1,13 @@
 # Analisi Errori PHPStan - Modulo Xot
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-12-23
 **Ultimo Aggiornamento**: Tutti gli errori corretti
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Modulo**: Xot
 **Livello PHPStan**: max
 

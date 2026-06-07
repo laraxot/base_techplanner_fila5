@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Code Quality Analysis - CMS Module - November 2025
 
 ## 📊 Risultato Analisi Completa
@@ -159,3 +160,12 @@ Il modulo CMS presenta problemi critici che bloccano l'analisi completa e richie
 **Ultimo Aggiornamento:** 24 Novembre 2025
 **Versione Analisi:** 1.0
 **Status:** ❌ CRITICAL - Requires Immediate Fixes
+=======
+---
+module: theme
+topic: code-quality-analysis-november
+canonical: ../../../Themes/docs/shared-components/code-quality-analysis-legacy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/code-quality-analysis-legacy.md
+>>>>>>> dev

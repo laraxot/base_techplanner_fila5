@@ -3,7 +3,11 @@
 ## ⚠️ ERRORE CRITICO DA NON RIPETERE
 
 ### Descrizione dell'Errore
+<<<<<<< HEAD
 Utilizzo di namespace specifico del tema (`sixteen::`, `two::`, `zero::`) invece dell'alias dinamico `pub_theme::` nelle configurazioni CMS e nei componenti.
+=======
+Utilizzo di namespace specifico del tema (`sixteen::`, `two::`, `themes.two::`, `zero::`) invece dell'alias dinamico `pub_theme::` nelle configurazioni CMS e nei componenti. Anche `pub_theme:` (manca un `:`) è errato.
+>>>>>>> dev
 
 ### Regola Fondamentale
 
@@ -31,18 +35,28 @@ Utilizzo di namespace specifico del tema (`sixteen::`, `two::`, `zero::`) invece
 {
     "view": "sixteen::components.blocks.hero.main",
     "view": "two::components.blocks.navigation.simple",
+<<<<<<< HEAD
+=======
+    "view": "themes.two::components.sections.header.v1",
+>>>>>>> dev
     "view": "zero::layouts.app"
 }
 ```
 
 ```blade
 @include('sixteen::components.header')
+<<<<<<< HEAD
+=======
+@include('themes.two::components.sections.header_bi5', ['blocks' => $blocks])
+@include('pub_theme:components.header')  {{-- ERRORE: manca : in pub_theme:: --}}
+>>>>>>> dev
 <x-sixteen::button>Click me</x-sixteen::button>
 @lang('sixteen::navigation.home')
 ```
 
 ## Architettura del Sistema
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ### 1. Configurazione tema attivo (SSoT tenant)
 
@@ -72,6 +86,8 @@ echo PHP_EOL . Modules\Xot\Datas\XotData::make()->getPubThemeViewPath('pages');
 
 ### 2. Registrazione namespace
 =======
+=======
+>>>>>>> dev
 ### 1. Configurazione Tema Attivo
 ```php
 // config/local/techplanner/xra.php
@@ -79,7 +95,10 @@ echo PHP_EOL . Modules\Xot\Datas\XotData::make()->getPubThemeViewPath('pages');
 ```
 
 ### 2. Registrazione Namespace
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ```php
 // Themes/Sixteen/app/Providers/ThemeServiceProvider.php
 public function boot(): void
@@ -238,6 +257,7 @@ Ogni volta che si lavora con temi e CMS, consultare questa regola per garantire 
 ## Changelog Errori Risolti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2026-06-06 — `/it` serviva Sixteen invece di Two
 **Causa**: override temporaneo `pub_theme => 'Sixteen'` in `xra.php` per fix partial `language-switcher` (esistono solo nel header Design Comuni di Sixteen). Confusione con doc BMAD §7 “Folio FO shell (Sixteen)” che descrive **pattern Fixcity**, non il tenant TechPlanner.
 **Soluzione**: ripristinare `'pub_theme' => 'Two'` in `xra.php`; allineare header CMS ai partial del tema Two; `php artisan config:clear && view:clear`.
@@ -245,6 +265,8 @@ Ogni volta che si lavora con temi e CMS, consultare questa regola per garantire 
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ### 2025-01-06 - Errore "view not found: pub_theme::components.blocks.navigation.simple"
 **Causa**: `CmsServiceProvider` non registrato in `config/app.php`
 **Impatto**: Namespace `pub_theme::` non risolto, blocchi CMS non funzionanti
@@ -260,6 +282,7 @@ Ogni volta che si lavora con temi e CMS, consultare questa regola per garantire 
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [LLM Wiki — public theme resolution](./laravel/docs/wiki/concepts/public-theme-resolution-and-vite-assets.md) (second brain agenti)
 - [Tenant: nome → pub_theme](./laravel/Modules/Tenant/docs/tenant-name-to-pub-theme.md)
 - [CMS System Documentation](./cms_system.md)
@@ -269,11 +292,18 @@ Ogni volta che si lavora con temi e CMS, consultare questa regola per garantire 
 - [CMS System Documentation](./cms_system.md)
 - [Theme Components](./theme_components.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [CMS System Documentation](./cms_system.md)
+- [Theme Components](./theme_components.md)
+>>>>>>> dev
 - [Configurazione Tema](../laravel/config/local/techplanner/xra.php)
 - [ThemeServiceProvider Sixteen](../laravel/Themes/Sixteen/app/Providers/ThemeServiceProvider.php)
 - [CmsServiceProvider](../laravel/Modules/Cms/app/Providers/CmsServiceProvider.php)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

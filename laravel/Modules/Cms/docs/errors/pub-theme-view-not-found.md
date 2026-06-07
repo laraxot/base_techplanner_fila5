@@ -78,7 +78,11 @@ Il componente `Section` del modulo CMS:
 
 ## 🔗 Riferimenti
 
+<<<<<<< HEAD
 - [Documentazione Completa](../../../../docs/pub_theme-view-not-found-error.md)
+=======
+- [Documentazione Completa](../../../../../docs/pub_theme-view-not-found-error.md)
+>>>>>>> dev
 - [Componente Section](../../app/View/Components/Section.php)
 - [Configurazione Tema](../../../../config/local/techplanner/xra.php)
 - [ServiceProvider Tema Sixteen](../../../../Themes/Sixteen/app/Providers/ThemeServiceProvider.php)
@@ -86,9 +90,12 @@ Il componente `Section` del modulo CMS:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Settembre 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 # Errore: View pub_theme::components.sections.footer not found
 
 ## 🚨 Problema
@@ -169,7 +176,11 @@ Il componente `Section` del modulo CMS:
 
 ## 🔗 Riferimenti
 
+<<<<<<< HEAD
 - [Documentazione Completa](../../../../docs/pub_theme-view-not-found-error.md)
+=======
+- [Documentazione Completa](../../../../../docs/pub_theme-view-not-found-error.md)
+>>>>>>> dev
 - [Componente Section](../../app/View/Components/Section.php)
 - [Configurazione Tema](../../../../config/local/techplanner/xra.php)
 - [ServiceProvider Tema Sixteen](../../../../Themes/Sixteen/app/Providers/ThemeServiceProvider.php)
@@ -177,6 +188,9 @@ Il componente `Section` del modulo CMS:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Settembre 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

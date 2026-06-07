@@ -414,9 +414,13 @@ class MyTableWidget extends XotBaseTableWidget
 - [XotBaseWidget Implementation](./xotbasewidget_implementation.md)
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
 =======
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
+>>>>>>> dev
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.

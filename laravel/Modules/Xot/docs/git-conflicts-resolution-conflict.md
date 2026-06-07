@@ -1,10 +1,14 @@
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Data: [DATE]
 =======
 ## Data: 2025-01-06
 >>>>>>> 4b6b99016 (first commit)
+=======
+## Data: [DATE]
+>>>>>>> dev
 
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
@@ -238,6 +242,9 @@ php artisan lang:check
 
 ### Modulo Geo
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 
 ### Modulo User
@@ -245,6 +252,7 @@ php artisan lang:check
 
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
+<<<<<<< HEAD
 =======
 - [Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 
@@ -254,6 +262,8 @@ php artisan lang:check
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution-2025-01-06.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Best Practices Applicate
 
@@ -309,12 +319,17 @@ php artisan lang:check
 
 ### Documentazione Moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
 =======
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
+- [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
+>>>>>>> dev
 
 ### Documentazione Generale
 - [Translation Standards](../../project_docs/translation-standards.md)
@@ -324,10 +339,14 @@ php artisan lang:check
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
 =======
 **Ultimo aggiornamento**: 2025-01-06
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> dev
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
 **Stato**: ✅ Completato

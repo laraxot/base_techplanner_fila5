@@ -4,14 +4,20 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Authentifizierungsnachrichten für LoginWidget
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'credentials_incorrect' => 'Die angegebenen Anmeldedaten sind falsch.',
     'login_success' => 'Anmeldung erfolgreich.',
     'login_error' => 'Ein Fehler ist beim Anmelden aufgetreten. Bitte versuchen Sie es später erneut.',
     'validation_error' => 'Validierungsfehler.',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'session_expired' => 'Die Sitzung ist abgelaufen. Bitte melden Sie sich erneut an.',
     'session_invalid' => 'Ungültige Sitzung.',
     'too_many_attempts' => 'Zu viele Anmeldeversuche. Bitte versuchen Sie es in wenigen Minuten erneut.',
@@ -23,6 +29,7 @@ return [
     'logout_error' => 'Ein Fehler ist beim Abmelden aufgetreten.',
     'registration_success' => 'Registrierung erfolgreich abgeschlossen.',
     'registration_error' => 'Ein Fehler ist bei der Registrierung aufgetreten.',
+<<<<<<< HEAD
 =======
     // Sitzungsnachrichten
     'session_expired' => 'Die Sitzung ist abgelaufen. Bitte melden Sie sich erneut an.',
@@ -42,18 +49,24 @@ return [
     'registration_error' => 'Ein Fehler ist bei der Registrierung aufgetreten.',
     // Passwortnachrichten
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'password_changed' => 'Passwort erfolgreich geändert.',
     'password_error' => 'Ein Fehler ist beim Ändern des Passworts aufgetreten.',
     'password_mismatch' => 'Passwörter stimmen nicht überein.',
     'password_too_weak' => 'Passwort ist zu schwach. Es muss mindestens 8 Zeichen enthalten.',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // E-Mail-Verifizierungsnachrichten
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'email_verification_sent' => 'Verifizierungs-E-Mail gesendet. Überprüfen Sie Ihren Posteingang.',
     'email_verification_error' => 'Fehler beim Senden der Verifizierungs-E-Mail.',
     'email_verified' => 'E-Mail erfolgreich verifiziert.',
     'email_already_verified' => 'E-Mail wurde bereits verifiziert.',
+<<<<<<< HEAD
 <<<<<<< HEAD
     'profile_updated' => 'Profil erfolgreich aktualisiert.',
     'profile_error' => 'Ein Fehler ist beim Aktualisieren des Profils aufgetreten.',
@@ -63,20 +76,30 @@ return [
     'profile_error' => 'Ein Fehler ist beim Aktualisieren des Profils aufgetreten.',
     // Allgemeine Nachrichten
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'profile_updated' => 'Profil erfolgreich aktualisiert.',
+    'profile_error' => 'Ein Fehler ist beim Aktualisieren des Profils aufgetreten.',
+>>>>>>> dev
     'success' => 'Vorgang erfolgreich abgeschlossen.',
     'error' => 'Ein Fehler ist aufgetreten.',
     'warning' => 'Warnung.',
     'info' => 'Information.',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Validierungsnachrichten
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'field_required' => 'Dieses Feld ist erforderlich.',
     'invalid_email' => 'Ungültige E-Mail-Adresse.',
     'invalid_format' => 'Ungültiges Format.',
     'value_too_long' => 'Wert ist zu lang.',
     'value_too_short' => 'Wert ist zu kurz.',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -90,6 +113,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

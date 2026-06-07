@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Collegamento al Modulo User
 
 Questo documento descrive le relazioni e i collegamenti tra il modulo Cms e il modulo User per quanto riguarda i componenti Filament e le convenzioni di namespace.
@@ -36,3 +37,12 @@ Quando aggiungi nuovi componenti Filament, assicurati di:
 * [user-link.md](laravel/modules/lang/project_docs/user-link.md)
 * [user-link.md](laravel/modules/cms/project_docs/user-link.md)
 
+=======
+---
+module: theme
+topic: user_link
+canonical: ../../../Themes/docs/shared-components/user-link.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/user-link.md
+>>>>>>> dev

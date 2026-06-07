@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
 
 ## Modulo Activity
@@ -188,3 +189,12 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
 *Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
+=======
+---
+module: theme
+topic: modelli-factory-seeder-analisi-1
+canonical: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-1.md
+>>>>>>> dev

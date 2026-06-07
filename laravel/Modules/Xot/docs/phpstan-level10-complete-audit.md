@@ -2,10 +2,14 @@
 
 ## Data Audit
 <<<<<<< HEAD
+<<<<<<< HEAD
 [DATE]
 =======
 2025-01-27
 >>>>>>> 4b6b99016 (first commit)
+=======
+[DATE]
+>>>>>>> dev
 
 ## Risultati Generali
 
@@ -64,10 +68,14 @@
 - **Errori**: 32 errori PHPStan livello 10
 - **Causa**: Classe `Modules\Geo\Models\Comune` non esiste
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Status**: Documentato in [phpstan-errors-locationselector.md](../ui/docs/phpstan-errors-locationselector.md)
 =======
 - **Status**: Documentato in [phpstan-errors-locationselector.md](../UI/docs/phpstan-errors-locationselector.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Status**: Documentato in [phpstan-errors-locationselector.md](../ui/docs/phpstan-errors-locationselector.md)
+>>>>>>> dev
 - **Soluzione Proposta**: Creare modulo Geo con modello Comune (refactoring architetturale)
 
 ## Correzioni Implementate Durante Audit
@@ -80,10 +88,14 @@
   - Sostituito `mapWithKeys()` con loop `foreach` per evitare problemi con `stdClass`
   - Aggiunta annotazione PHPDoc `@var array<string, int>`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentazione**: [phpstan-errors-activitylogger.md](../activity/docs/phpstan-errors-activitylogger.md)
 =======
 - **Documentazione**: [phpstan-errors-activitylogger.md](../Activity/docs/phpstan-errors-activitylogger.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Documentazione**: [phpstan-errors-activitylogger.md](../activity/docs/phpstan-errors-activitylogger.md)
+>>>>>>> dev
 
 ### 2. Ptv Module
 - **File**: `ValutatoreField.php`
@@ -93,10 +105,14 @@
   - Usato `$this->options()` per configurare il componente
   - Rimosso codice debug e commentato
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentazione**: [phpstan-errors-valutatorefield.md](../ptv/docs/phpstan-errors-valutatorefield.md)
 =======
 - **Documentazione**: [phpstan-errors-valutatorefield.md](../Ptv/docs/phpstan-errors-valutatorefield.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Documentazione**: [phpstan-errors-valutatorefield.md](../ptv/docs/phpstan-errors-valutatorefield.md)
+>>>>>>> dev
 
 ### 3. IndennitaResponsabilita Module
 - **File**: `CompilaIndennitaResponsabilita.php`
@@ -105,10 +121,14 @@
   - Sostituito `getRatingsWhere()` con query diretta `wherePivot()`
   - Aggiunta annotazione `@phpstan-ignore-next-line` per `withExtraAttributes()` (Spatie Schemaless)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentazione**: [phpstan-errors-compilaindennita.md](../indennitaresponsabilita/docs/phpstan-errors-compilaindennita.md)
 =======
 - **Documentazione**: [phpstan-errors-compilaindennita.md](../IndennitaResponsabilita/docs/phpstan-errors-compilaindennita.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Documentazione**: [phpstan-errors-compilaindennita.md](../indennitaresponsabilita/docs/phpstan-errors-compilaindennita.md)
+>>>>>>> dev
 
 ### 4. Notify Module
 - **File**: `NotifyBasePolicy.php`
@@ -171,7 +191,10 @@
 - Tutte le correzioni seguono le regole Laraxot e metodologia "Super Mucca"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-27*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 

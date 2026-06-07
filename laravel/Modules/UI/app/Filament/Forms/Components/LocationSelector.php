@@ -119,6 +119,10 @@ class LocationSelector extends XotBaseGroup
      * Imposta label personalizzate.
      *
      * @param array<string, string> $labels
+<<<<<<< HEAD
+=======
+     * @param array<string, string> $labels
+>>>>>>> dev
      */
     public function labels(array $labels): static
     {
@@ -131,6 +135,10 @@ class LocationSelector extends XotBaseGroup
      * Imposta placeholder personalizzati.
      *
      * @param array<string, string> $placeholders
+<<<<<<< HEAD
+=======
+     * @param array<string, string> $placeholders
+>>>>>>> dev
      */
     public function placeholders(array $placeholders): static
     {
@@ -147,13 +155,22 @@ class LocationSelector extends XotBaseGroup
         $state = $this->getState();
         $errors = [];
 
+<<<<<<< HEAD
         // Verifica che se è selezionata una provincia, sia selezionata anche la regione
         /* @phpstan-ignore offsetAccess.nonOffsetAccessible, offsetAccess.nonOffsetAccessible */
+=======
+        if (! \is_array($state)) {
+            return $errors;
+        }
+
+        /** @phpstan-assert array<string, mixed> $state */
+>>>>>>> dev
         if (! empty($state[$this->provinceFieldName]) && empty($state[$this->regionFieldName])) {
             $errors[] = __('ui::location_selector.validation.region_required_for_province');
         }
 
         // Verifica che se è selezionato un CAP, siano selezionate regione e provincia
+<<<<<<< HEAD
         if (\is_array($state)) {
             $capValue = $state[$this->capFieldName] ?? null;
             $regionValue = $state[$this->regionFieldName] ?? null;
@@ -162,6 +179,14 @@ class LocationSelector extends XotBaseGroup
             if (! empty($capValue) && (empty($regionValue) || empty($provinceValue))) {
                 $errors[] = __('ui::location_selector.validation.region_province_required_for_cap');
             }
+=======
+        $capValue = $state[$this->capFieldName] ?? null;
+        $regionValue = $state[$this->regionFieldName] ?? null;
+        $provinceValue = $state[$this->provinceFieldName] ?? null;
+
+        if (! empty($capValue) && (empty($regionValue) || empty($provinceValue))) {
+            $errors[] = __('ui::location_selector.validation.region_province_required_for_cap');
+>>>>>>> dev
         }
 
         return $errors;
@@ -216,7 +241,11 @@ class LocationSelector extends XotBaseGroup
             ->searchable($this->searchable)
             ->required($this->required)
             ->live()
+<<<<<<< HEAD
             ->afterStateUpdated(function (Set $set) {
+=======
+            ->afterStateUpdated(function (Set $set): void {
+>>>>>>> dev
                 // Reset province e cap quando cambia la regione
                 $set($this->provinceFieldName, null);
                 $set($this->capFieldName, null);
@@ -235,7 +264,11 @@ class LocationSelector extends XotBaseGroup
             ->required($this->required)
             ->live()
             ->disabled(fn (Get $get): bool => ! $get($this->regionFieldName))
+<<<<<<< HEAD
             ->afterStateUpdated(function (Set $set) {
+=======
+            ->afterStateUpdated(function (Set $set): void {
+>>>>>>> dev
                 // Reset cap quando cambia la provincia
                 $set($this->capFieldName, null);
             });
@@ -263,13 +296,21 @@ class LocationSelector extends XotBaseGroup
     protected function getRegionOptions(): array
     {
         try {
+<<<<<<< HEAD
             /* @phpstan-ignore return.type */
             return Comune::select('regione')
+=======
+            return self::normalizeStringOptions(Comune::select('regione')
+>>>>>>> dev
                 ->distinct()
                 ->orderBy('regione->nome')
                 ->get()
                 ->pluck('regione.nome', 'regione.codice')
+<<<<<<< HEAD
                 ->toArray();
+=======
+                ->toArray());
+>>>>>>> dev
         } catch (\Exception $e) {
             // Log dell'errore per debug
             logger()->error('LocationSelector: Errore nel caricamento regioni', [
@@ -284,21 +325,33 @@ class LocationSelector extends XotBaseGroup
      * Ottiene le opzioni per il campo provincia basate sulla regione.
      *
      * @param string $region Codice regione
+<<<<<<< HEAD
+=======
+     * @param string $region Codice regione
+>>>>>>> dev
      *
      * @return array<string, string>
      */
     protected function getProvinceOptions(string $region): array
     {
         try {
+<<<<<<< HEAD
             /* @phpstan-ignore return.type */
             return Comune::query()
+=======
+            return self::normalizeStringOptions(Comune::query()
+>>>>>>> dev
                 ->where('regione->codice', $region)
                 ->select('provincia')
                 ->distinct()
                 ->orderBy('provincia->nome')
                 ->get()
                 ->pluck('provincia.nome', 'provincia.codice')
+<<<<<<< HEAD
                 ->toArray();
+=======
+                ->toArray());
+>>>>>>> dev
         } catch (\Exception $e) {
             logger()->error('LocationSelector: Errore nel caricamento province', [
                 'region' => $region,
@@ -314,14 +367,23 @@ class LocationSelector extends XotBaseGroup
      *
      * @param string $region   Codice regione
      * @param string $province Codice provincia
+<<<<<<< HEAD
+=======
+     * @param string $region   Codice regione
+     * @param string $province Codice provincia
+>>>>>>> dev
      *
      * @return array<string, string>
      */
     protected function getCapOptions(string $region, string $province): array
     {
         try {
+<<<<<<< HEAD
             /* @phpstan-ignore return.type */
             return Comune::query()
+=======
+            return self::normalizeStringOptions(Comune::query()
+>>>>>>> dev
                 ->where('regione->codice', $region)
                 ->where('provincia->codice', $province)
                 ->select('cap')
@@ -329,7 +391,11 @@ class LocationSelector extends XotBaseGroup
                 ->orderBy('cap')
                 ->get()
                 ->pluck('cap.0', 'cap.0')
+<<<<<<< HEAD
                 ->toArray();
+=======
+                ->toArray());
+>>>>>>> dev
         } catch (\Exception $e) {
             logger()->error('LocationSelector: Errore nel caricamento CAP', [
                 'region' => $region,
@@ -341,6 +407,31 @@ class LocationSelector extends XotBaseGroup
         }
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<string, string>
+     */
+    private static function normalizeStringOptions(mixed $options): array
+    {
+        if (! \is_array($options)) {
+            return [];
+        }
+
+        $normalizedOptions = [];
+
+        foreach ($options as $key => $value) {
+            if (! \is_string($value) && ! \is_int($value)) {
+                continue;
+            }
+
+            $normalizedOptions[(string) $key] = (string) $value;
+        }
+
+        return $normalizedOptions;
+    }
+
+>>>>>>> dev
     protected function getComuneFromState(mixed $state): ?Comune
     {
         if (! \is_array($state)) {
@@ -358,12 +449,19 @@ class LocationSelector extends XotBaseGroup
             $query->where('cap->0', $state[$this->capFieldName]);
         }
 
+<<<<<<< HEAD
         /* @phpstan-ignore return.type */
+=======
+>>>>>>> dev
         return $query->first();
     }
 
     /**
      * @param array<string, mixed> $state
+<<<<<<< HEAD
+=======
+     * @param array<string, mixed> $state
+>>>>>>> dev
      *
      * @return array<string, mixed>
      */

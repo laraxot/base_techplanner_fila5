@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole di Web Design UI/UX
 
 ## 1. Regole di Hick-Hyman
@@ -241,3 +242,12 @@
 - Testare su diversi browser
 - Controllare l'accessibilità
 - Validare il codice HTML/CSS 
+=======
+---
+module: theme
+topic: webesign
+canonical: ../../../Themes/docs/shared-components/web-design-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/web-design-rules.md
+>>>>>>> dev

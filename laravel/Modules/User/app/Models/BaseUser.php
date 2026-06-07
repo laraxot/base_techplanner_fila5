@@ -18,7 +18,10 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\Relations\Pivot;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\SoftDeletes;
+=======
+>>>>>>> dev
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
@@ -28,9 +31,12 @@ use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Database\Factories\UserFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 use Modules\User\Models\Traits\HasModules;
 use Modules\User\Models\Traits\HasSpatiePermission;
@@ -51,6 +57,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * functionality for the application. It extends Laravel's Authenticatable class
  * and implements the required interfaces for Filament and multi-tenancy.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property Collection<int, OauthClient> $clients
  * @property int|null $clients_count
@@ -100,6 +107,8 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @property Pivot|null $pivot
  *
 =======
+=======
+>>>>>>> dev
  * @property Collection<int, OauthClient>                              $clients
  * @property int|null                                                  $clients_count
  * @property Team|null                                                 $currentTeam
@@ -119,7 +128,11 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @property int|null                                                  $teams_count
  * @property Collection<int, Tenant>                                   $tenants
  * @property int|null                                                  $tenants_count
+<<<<<<< HEAD
  * @property Collection<int, OauthAccessToken>                         $tokens
+=======
+ * @property Collection<int, OauthToken>                               $tokens
+>>>>>>> dev
  * @property int|null                                                  $tokens_count
  * @property string                                                    $last_name
  * @property string|null                                               $facebook_id
@@ -147,8 +160,11 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @property string|null                                               $profile_photo_path
  * @property Pivot|null                                                $pivot
  *
+<<<<<<< HEAD
  * @method static UserFactory  factory($count = null, $state = [])
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  * @method static Builder|User newModelQuery()
  * @method static Builder|User newQuery()
  * @method static Builder|User permission($permissions, $without = false)
@@ -188,18 +204,25 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     use HasChildren;
     use HasModules;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     use HasSpatiePermission, HasTeams {
         HasTeams::teams insteadof HasSpatiePermission;
         HasSpatiePermission::teams as spatiePermissionTeams;
     }
+<<<<<<< HEAD
 =======
     use HasSpatiePermission;
     use HasTeams;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     use HasUuids;
     use HasXotFactory;
     use InteractsWithMedia;
     use Notifiable;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     // use SoftDeletes;
@@ -235,6 +258,29 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         // 'matr',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+    // use SoftDeletes;
+    use Traits\HasTenants;
+    use XotTraits\RelationX;
+
+    public $incrementing = false;
+
+    public ?Pivot $pivot = null;
+
+    protected $connection = 'user';
+
+    protected $primaryKey = 'id';
+
+    protected $keyType = 'string';
+
+    protected string $childColumn = 'type';
+
+    protected $fillable = [
+        'id',
+        // 'ente',
+        // 'matr',
+>>>>>>> dev
         'name',
         'first_name',
         'last_name',
@@ -246,12 +292,18 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         'is_otp', // is One Time Password
         'password_expires_at',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'email_verified_at',
         'type',
         'state',
 =======
         'type',
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'email_verified_at',
+        'type',
+        'state',
+>>>>>>> dev
     ];
 
     /** @var list<string> */
@@ -275,17 +327,25 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /** @var array<string, class-string> */
     protected $childTypes = [];
 
+<<<<<<< HEAD
     /** @var array<string, mixed> */
+=======
+>>>>>>> dev
     protected $attributes = [
         'is_active' => true,
     ];
 
     /**
      * Guard coerente con Spatie/Permission: deve essere 'web'.
+<<<<<<< HEAD
      *
      * @var string
      */
     protected $guard_name = 'web';
+=======
+     */
+    protected string $guard_name = 'web';
+>>>>>>> dev
 
     public function __construct(array $attributes = [])
     {
@@ -299,12 +359,18 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
             $this->fillable = array_values($this->getFillable());
             // Avoid calling parent constructor if database is not available
 <<<<<<< HEAD
+<<<<<<< HEAD
             foreach ($attributes as $key => $value) {
                 $this->setAttribute($key, $value);
             }
 =======
             $this->attributes = $attributes;
 >>>>>>> 4b6b99016 (first commit)
+=======
+            foreach ($attributes as $key => $value) {
+                $this->setAttribute($key, $value);
+            }
+>>>>>>> dev
         }
     }
 
@@ -379,10 +445,14 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     {
         // $panel->default('admin');
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($panel->getId() !== 'admin') {
 =======
         if ('admin' !== $panel->getId()) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if ('admin' !== $panel->getId()) {
+>>>>>>> dev
             $role = $panel->getId();
             /*
              * $xot = XotData::make();
@@ -405,20 +475,28 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
 
     public function detach(Model $model): void
     {
+<<<<<<< HEAD
         // @phpstan-ignore function.alreadyNarrowedType
         if (method_exists($this, 'teams')) {
             // @phpstan-ignore function.alreadyNarrowedType
             $this->teams()->detach($model);
         }
+=======
+        $this->teams()->detach($model);
+>>>>>>> dev
     }
 
     public function attach(Model $model): void
     {
+<<<<<<< HEAD
         // @phpstan-ignore function.alreadyNarrowedType
         if (method_exists($this, 'teams')) {
             // @phpstan-ignore function.alreadyNarrowedType
             $this->teams()->attach($model);
         }
+=======
+        $this->teams()->attach($model);
+>>>>>>> dev
     }
 
     public function treeLabel(): string
@@ -455,10 +533,14 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     {
         $socialiteUser = $this->socialiteUsers()->firstWhere(['provider' => $provider]);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($socialiteUser === null) {
 =======
         if (null === $socialiteUser) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (null === $socialiteUser) {
+>>>>>>> dev
             throw new \Exception('SocialiteUser not found');
         }
 
@@ -470,46 +552,69 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /**
      * Get the entity's notifications.
      *
+<<<<<<< HEAD
      * @return MorphMany<Notification, static|$this>
      */
     public function notifications(): MorphMany
     {
         // @phpstan-ignore return.type
+=======
+     * @return MorphMany<Notification, $this>
+     */
+    public function notifications(): MorphMany
+    {
+>>>>>>> dev
         return $this->morphMany(Notification::class, 'notifiable');
     }
 
     /**
      * Get the user's latest authentication log.
      *
+<<<<<<< HEAD
      * @return MorphOne<AuthenticationLog, static>
      */
     public function latestAuthentication(): MorphOne
     {
         // @phpstan-ignore return.type
+=======
+     * @return MorphOne<AuthenticationLog, $this>
+     */
+    public function latestAuthentication(): MorphOne
+    {
+>>>>>>> dev
         return $this->morphOne(AuthenticationLog::class, 'authenticatable')->latestOfMany();
     }
 
     public function getFullNameAttribute(?string $value): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($value !== null) {
 =======
         if (null !== $value) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (null !== $value) {
+>>>>>>> dev
             return $value;
         }
 
         $fullName = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $fullName !== '' ? $fullName : ($this->email ?? 'User');
 =======
         return '' !== $fullName ? $fullName : ($this->email ?? 'User');
 >>>>>>> 4b6b99016 (first commit)
+=======
+        return '' !== $fullName ? $fullName : ($this->email ?? 'User');
+>>>>>>> dev
     }
 
     public function getNameAttribute(?string $value): string
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         if ($value !== null) {
             return $value;
@@ -517,12 +622,17 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
 
         if ($this->getKey() === null) {
 =======
+=======
+>>>>>>> dev
         if (null !== $value) {
             return $value;
         }
 
         if (null === $this->getKey()) {
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             return $this->email ?? 'User';
         }
 
@@ -538,10 +648,14 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
 =======
             return \PHP_SAPI === 'cli' && ('testing' === getenv('APP_ENV') || 'testing' === getenv('ENV'));
 >>>>>>> 4b6b99016 (first commit)
+=======
+            return \PHP_SAPI === 'cli' && ('testing' === getenv('APP_ENV') || 'testing' === getenv('ENV'));
+>>>>>>> dev
         })();
         if ($isTesting) {
             // Do not call update() here to avoid hitting the database.
@@ -553,12 +667,17 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         try {
             $value = $candidate;
 <<<<<<< HEAD
+<<<<<<< HEAD
             while (self::firstWhere(['name' => $value]) !== null) {
                 $i++;
 =======
             while (null !== self::firstWhere(['name' => $value])) {
                 ++$i;
 >>>>>>> 4b6b99016 (first commit)
+=======
+            while (null !== self::firstWhere(['name' => $value])) {
+                ++$i;
+>>>>>>> dev
                 $value = $name.'-'.$i;
             }
             $this->update(['name' => $value]);
@@ -584,10 +703,14 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
      * If you need role checking functionality, use the trait method instead.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @see HasSpatiePermission::hasRole()
 =======
      * @see \Modules\User\Models\Traits\HasSpatiePermission::hasRole()
 >>>>>>> 4b6b99016 (first commit)
+=======
+     * @see HasSpatiePermission::hasRole()
+>>>>>>> dev
      */
     public function setPasswordAttribute(?string $value): void
     {
@@ -614,6 +737,25 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return $this->morphMany(OauthClient::class, 'owner');
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * Find the user instance for the given username.
+     */
+    public static function findForPassport(string $username): ?self
+    {
+        return static::where('email', $username)->first();
+    }
+
+    /**
+     * Validate the password of the user for the given password.
+     */
+    public function validateForPassportPasswordGrant(string $password): bool
+    {
+        return Hash::check($password, (string) $this->password);
+    }
+
+>>>>>>> dev
     /** @return array<string, string> */
     protected function casts(): array
     {
@@ -636,6 +778,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
             'deleted_by' => 'string',
         ];
     }
+<<<<<<< HEAD
 
     /**
      * Find the user instance for the given username.
@@ -652,4 +795,6 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     {
         return Hash::check($password, (string) $this->password);
     }
+=======
+>>>>>>> dev
 }

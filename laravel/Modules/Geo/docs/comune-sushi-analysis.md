@@ -60,7 +60,10 @@
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento:** {{date('Y-m-d')}}
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 Responsabile: Cascade AI

@@ -48,10 +48,14 @@ return [
             'placeholder' => 'Tipo di menu',
             'tooltip' => 'Categoria del menu',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => 'Tipologia di menu (principale, footer, sidebar]',
 =======
             'description' => 'Tipologia di menu (principale, footer, sidebar)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => 'Tipologia di menu (principale, footer, sidebar]',
+>>>>>>> dev
             'helper_text' => '',
             'options' => [
                 'main' => 'Principale',
@@ -64,10 +68,14 @@ return [
             'placeholder' => 'Stato del menu',
             'tooltip' => 'Stato di pubblicazione del menu',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => 'Stato corrente del menu (attivo, inattivo, bozza]',
 =======
             'description' => 'Stato corrente del menu (attivo, inattivo, bozza)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => 'Stato corrente del menu (attivo, inattivo, bozza]',
+>>>>>>> dev
             'helper_text' => '',
             'options' => [
                 'active' => 'Attivo',
@@ -137,9 +145,13 @@ return [
             'helper_text' => 'items',
             'description' => 'items',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'url' => [
             'label' => 'url',
@@ -147,9 +159,13 @@ return [
             'helper_text' => 'url',
             'description' => 'url',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'target' => [
             'label' => 'target',
@@ -157,9 +173,13 @@ return [
             'helper_text' => 'target',
             'description' => 'target',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'icon' => [
             'label' => 'icon',
@@ -167,9 +187,13 @@ return [
             'helper_text' => 'icon',
             'description' => 'icon',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -197,8 +221,13 @@ return [
         'description' => 'Rappresentazione del modello del menu nel sistema',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Menu',
     'plural_label' => 'Menu (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Menu',
+    'plural_label' => 'Menu (Plurale)',
+>>>>>>> dev
 ];

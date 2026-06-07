@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Level 10 + DRY/KISS Complete Analysis - [DATE]
 
 ## Executive Summary
@@ -948,3 +949,12 @@ Con il refactoring di Contact e creazione scope traits: **→ 92% - Eccellente!*
 *Laravel Version: 12.x*
 *Analyzed by: Claude Code*
 *Validation: ✅ PHPStan Level 10, Manual Review*
+=======
+---
+module: theme
+topic: phpstan-level-10ry-kiss
+canonical: ../../../Themes/docs/shared-components/phpstan-level-10-dry-kiss-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level-10-dry-kiss-analysis.md
+>>>>>>> dev

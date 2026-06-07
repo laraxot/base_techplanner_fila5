@@ -112,18 +112,25 @@ Verificare che User abbia le stesse 6 lingue per i file `.navigation` (passport.
 ## Backlink
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modules/Job/docs/README.md](./readme.md)
 =======
 - [Modules/Job/docs/README.md](./README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Modules/Job/docs/README.md](./readme.md)
+>>>>>>> dev
 - [Modules/User/lang/it/passport.php](../../User/lang/it/passport.php)
 - [bashscripts/docs/translation-management.md](../../../bashscripts/docs/translation-management.md)
 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2026-01-09  
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Autore**: Cascade AI  
 **Status**: 🟡 In Progress

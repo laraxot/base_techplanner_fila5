@@ -45,6 +45,13 @@ protected int|string|array $columnSpan = 'full';  // Larghezza del widget
 
 > **IMPORTANTE**: Utilizzare sempre il namespace completo per i traits, incluso il namespace `\Filament\` iniziale
 
+<<<<<<< HEAD
+=======
+## Azioni form
+
+`protected function getFormActions(): array` ha default `[]` e serve alle viste che iterano `$this->getFormActions()`. I widget che lo sovrascrivono possono usare `#[\Override]` (richiede questo metodo sulla base).
+
+>>>>>>> dev
 ## Form Schema
 
 Ogni widget deve implementare il proprio schema di form:
@@ -167,11 +174,15 @@ Questo trait permette al widget di aggiornarsi automaticamente a intervalli rego
 ## Collegamenti Bidirezionali
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [README.md](../../readme.md) - Indice principale della documentazione
 - [DIRECTORY-CASE-SENSITIVITY.md](../../directory-case-sensitivity.md) - Regole per la case sensitivity delle directory
 - [NAMESPACE-RULES.md](../../namespace-rules.md) - Regole per i namespace nei moduli
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](../../folio_volt_filament_integration.md) - Integrazione Folio, Volt e Filament
 - [MODULE_STRUCTURE.md](../../module_structure.md) - Struttura standard dei moduli
+<<<<<<< HEAD
 =======
 - [README.md](../../README.md) - Indice principale della documentazione
 - [DIRECTORY-CASE-SENSITIVITY.md](../../DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity delle directory
@@ -179,4 +190,6 @@ Questo trait permette al widget di aggiornarsi automaticamente a intervalli rego
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](../../FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [MODULE_STRUCTURE.md](../../MODULE_STRUCTURE.md) - Struttura standard dei moduli
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 - [Documentazione Filament](https://filamentphp.com/docs/3.x/widgets/installation)

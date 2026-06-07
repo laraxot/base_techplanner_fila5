@@ -195,7 +195,11 @@ Following the documented approach in `Modules/UI/docs/filament/nested-resource.m
 - Role-based access to specific nested resources
 
 ### 2. Cross-module User Integration
+<<<<<<< HEAD
 - Enable nested resources that span multiple modules (User-Quaeris, User-Notify)
+=======
+- Enable nested resources that span multiple modules (User-healthcare_app, User-Notify)
+>>>>>>> dev
 - Implement cross-module relationship management
 
 ### 3. Advanced User Analytics

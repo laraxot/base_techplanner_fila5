@@ -193,7 +193,11 @@ $token = $user->createToken('test');
 
 ### **Phase 3: System Verification (Next)**
 - [ ] Test LimeSurvey integration with UUIDs
+<<<<<<< HEAD
 - [ ] Verify Quaeris contact token generation
+=======
+- [ ] Verify ExternalProject contact token generation
+>>>>>>> dev
 - [ ] Test all authentication flows
 - [ ] Performance testing
 
@@ -266,7 +270,11 @@ $token = $user->createToken('test');
 - [ ] Users can authenticate across tenants
 - [ ] API authentication works
 - [ ] LimeSurvey integration functional
+<<<<<<< HEAD
 - [ ] Quaeris survey workflows operational
+=======
+- [ ] ExternalProject survey workflows operational
+>>>>>>> dev
 
 ### **Philosophical Success** (Super Mucca)
 - [ ] Code is DRY (no duplicate UUID logic)

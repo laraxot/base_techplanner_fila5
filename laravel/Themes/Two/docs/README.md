@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Theme Two Documentation\n\nActive theme for Sottana Service.\n\n## Updates\n- Brand: Sottana Service\n- Header: Updated with Elephant Logo and Sottana Service name.\n- Footer: Updated with new brand and contacts.
 =======
 # 📚 Documentazione Tema Two - TechPlanner
@@ -610,3 +611,6 @@ Il Tema Two è un tema alternativo per il progetto.
 * [README.md](laravel/Themes/One/docs/README.md)
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+# Theme Two Documentation\n\nActive theme for Sottana Service.\n\n## Updates\n- Brand: Sottana Service\n- Header: Updated with Elephant Logo and Sottana Service name.\n- Footer: Updated with new brand and contacts.
+>>>>>>> dev

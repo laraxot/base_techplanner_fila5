@@ -62,10 +62,14 @@
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Torna a README](./readme.md)
 =======
 - [Torna a README](./README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Torna a README](./readme.md)
+>>>>>>> dev
 - [Vai a Struttura](./structure.md)
 - [Vai a Bottlenecks](./bottlenecks.md)
 
@@ -194,6 +198,9 @@
 * [roadmap.md](bashscripts/docs/roadmap.md)
 * [roadmap.md](docs/roadmap.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [roadmap.md](laravel/modules/gdpr/docs/roadmap.md)
 * [roadmap.md](laravel/modules/notify/docs/roadmap.md)
 * [roadmap.md](laravel/modules/xot/docs/roadmap.md)
@@ -208,6 +215,7 @@
 * [roadmap.md](laravel/modules/patient/docs/roadmap.md)
 * [roadmap.md](laravel/modules/cms/docs/roadmap.md)
 * [roadmap.md](laravel/themes/one/docs/roadmap.md)
+<<<<<<< HEAD
 =======
 * [roadmap.md](laravel/Modules/Gdpr/docs/roadmap.md)
 * [roadmap.md](laravel/Modules/Notify/docs/roadmap.md)
@@ -224,3 +232,5 @@
 * [roadmap.md](laravel/Modules/Cms/docs/roadmap.md)
 * [roadmap.md](laravel/Themes/One/docs/roadmap.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -30,10 +30,14 @@
 ### Struttura Proposta
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 class Comune extends GeoJsonModel 
 =======
 class Comune extends GeoJsonModel
 >>>>>>> 4b6b99016 (first commit)
+=======
+class Comune extends GeoJsonModel 
+>>>>>>> dev
 {
     // Tutti i dati in un'unica struttura
     protected static string $jsonFile = 'resources/json/comuni.json';
@@ -44,10 +48,14 @@ class Comune extends GeoJsonModel
     public static function getComuniByProvincia($provincia) { /* ... */ }
     public static function getCapByComune($comune) { /* ... */ }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // Metodo unificato
     public static function getDatiCompleti($filtri = []) { /* ... */ }
 }
@@ -93,9 +101,13 @@ class Comune extends GeoJsonModel
 | Manutenzione         | Media           | Alta             | +40%      |
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 ## Raccomandazione (90% Favorevole)
 
 Si consiglia di procedere con l'unificazione per i seguenti motivi:

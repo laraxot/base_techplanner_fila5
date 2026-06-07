@@ -4,7 +4,11 @@
 2025-10-22
 
 ## Contesto
+<<<<<<< HEAD
 Il progetto presentava **323 conflitti Git** distribuiti su tutto il modulo Xot, User e Quaeris, causando errori ParseError e blocco di `composer dump-autoload`.
+=======
+Il progetto presentava **323 conflitti Git** distribuiti su tutto il modulo Xot, User e healthcare_app, causando errori ParseError e blocco di `composer dump-autoload`.
+>>>>>>> dev
 
 ## Strategia Adottata
 
@@ -78,7 +82,11 @@ find Modules/Xot/app/Actions -name "*.php" | xargs php -l 2>&1 | grep -c "No syn
 
 **Soluzione**: Ripristino da Git dopo tentativo fallito con sed
 ```bash
+<<<<<<< HEAD
 git checkout HEAD -- $(find Modules/Quaeris -name "*Widget.php" -type f)
+=======
+git checkout HEAD -- $(find Modules/healthcare_app -name "*Widget.php" -type f)
+>>>>>>> dev
 ```
 
 **Widget corretti**:

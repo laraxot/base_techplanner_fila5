@@ -344,22 +344,30 @@ class ListMyModelActivities extends ListLogActivities
 
 ### Documentazione Interna
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README Activity Module](../readme.md)
 =======
 - [README Activity Module](../README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README Activity Module](../readme.md)
+>>>>>>> dev
 - [ListLogActivitiesAction Details](./actions/list-log-activities-action.md)
 - [ListLogActivities Page](./pages/list-log-activities.md)
 
 ### Regole e Convenzioni
 - [Filament Custom Actions Rules](../../../.cursor/rules/filament-custom-actions.mdc)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Translation Best Practices](../../xot/docs/translation-best-practices.md)
 - [Service Provider Architecture](../../xot/docs/service-provider-architecture.md)
 
 ### Moduli Correlati
 - [IndennitaResponsabilita - Activity Log Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)
 - [Xot - Filament Base Components](../../xot/docs/filament/readme.md)
+<<<<<<< HEAD
 =======
 - [Translation Best Practices](../../Xot/docs/translation-best-practices.md)
 - [Service Provider Architecture](../../Xot/docs/service-provider-architecture.md)
@@ -368,6 +376,8 @@ class ListMyModelActivities extends ListLogActivities
 - [IndennitaResponsabilita - Activity Log Integration](../../IndennitaResponsabilita/docs/activity-log-integration.md)
 - [Xot - Filament Base Components](../../Xot/docs/filament/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ---
 

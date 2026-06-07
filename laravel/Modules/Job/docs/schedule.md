@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://healthchecks.io/
 
 Simple and Effective Cron Job Monitoring
@@ -35,3 +36,12 @@ https://github.com/hmazter/laravel-schedule-list
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: schedule
+canonical: ../../../Themes/docs/shared-components/schedule.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/schedule.txt
+>>>>>>> dev

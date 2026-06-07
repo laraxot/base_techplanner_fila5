@@ -221,10 +221,14 @@ find Modules/*/docs -type f | sort -f | uniq -di
 ```bash
 # Sposta file vecchi in _archive con data
 <<<<<<< HEAD
+<<<<<<< HEAD
 mv old-file.md _archive/[DATE]-old-file.md
 =======
 mv old-file.md _archive/2024-01-15-old-file.md
 >>>>>>> 4b6b99016 (first commit)
+=======
+mv old-file.md _archive/[DATE]-old-file.md
+>>>>>>> dev
 ```
 
 **Quando archiviare**:
@@ -244,10 +248,14 @@ mv old-file.md _archive/2024-01-15-old-file.md
 [Link](./same-folder/file.md)
 [Link](../parent-folder/file.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Link](../../modules/other/docs/file.md)
 =======
 [Link](../../Modules/Other/docs/file.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+[Link](../../modules/other/docs/file.md)
+>>>>>>> dev
 
 ❌ SBAGLIATO:
 [Link](/absolute/path/file.md)
@@ -574,10 +582,14 @@ Per migliorare questa guida:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
 =======
 **Ultimo aggiornamento**: 2025-01-06
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> dev
 **Versione**: 1.0
 **Status**: ✅ Active
 **Maintainer**: Team Laraxot

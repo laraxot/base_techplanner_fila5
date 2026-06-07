@@ -70,12 +70,17 @@ Modules/<NomeModulo>/
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale
 - [Regole Generali](../../xot/docs/translations.md) - Regole base
 =======
 - [Modulo Lang](../../Lang/docs/module_lang.md) - Documentazione principale
 - [Regole Generali](../../Xot/docs/translations.md) - Regole base
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale
+- [Regole Generali](../../xot/docs/translations.md) - Regole base
+>>>>>>> dev
 
 ## Struttura
 
@@ -373,6 +378,9 @@ Action::make('delete')
 
 ## Collegamenti tra versioni di translations.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [translations.md](../../../chart/docs/translations.md)
 * [translations.md](../../../reporting/docs/translations.md)
 * [translations.md](../../../gdpr/docs/translations.md)
@@ -390,6 +398,7 @@ Action::make('delete')
 * [translations.md](../../../activity/docs/translations.md)
 * [translations.md](../../../patient/docs/translations.md)
 * [translations.md](../../../cms/docs/translations.md)
+<<<<<<< HEAD
 =======
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)
@@ -409,6 +418,8 @@ Action::make('delete')
 * [translations.md](../../../Patient/docs/translations.md)
 * [translations.md](../../../Cms/docs/translations.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### Versione Incoming
 

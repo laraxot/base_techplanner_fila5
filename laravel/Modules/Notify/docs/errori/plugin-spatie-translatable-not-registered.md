@@ -363,11 +363,15 @@ Prima di usare `LangBase*`:
 
 ### Documentazione Interna
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Lang Module README](../../../lang/docs/readme.md)
 - [Filament Panel Configuration](../../../xot/docs/filament/panel-configuration.md)
 
 ---
 
+<<<<<<< HEAD
 =======
 - [Lang Module README](../../../Lang/docs/README.md)
 - [Filament Panel Configuration](../../../Xot/docs/filament/panel-configuration.md)
@@ -376,6 +380,8 @@ Prima di usare `LangBase*`:
 
 **Created**: 27 Ottobre 2025  
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Status**: ⏳ ATTENDE DECISIONE  
 **Priority**: P1 (blocca funzionalità)  
 **Next Step**: Decidere se MailTemplate deve essere traducibile

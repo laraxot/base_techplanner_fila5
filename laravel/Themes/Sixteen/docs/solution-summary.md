@@ -179,6 +179,9 @@
 - [Layout Guest](resources/views/layouts/guest.blade.php)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06* 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

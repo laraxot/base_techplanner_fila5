@@ -1,10 +1,14 @@
 # Indice Filosofico Completo - Tutti i Moduli
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Creazione**: [DATE]
 =======
 **Data Creazione**: 2025-12-23
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data Creazione**: [DATE]
+>>>>>>> dev
 **Status**: Indice Master Completo
 
 ## 📋 Panoramica
@@ -32,10 +36,14 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### TechPlanner - Business Principale
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: [../../TechPlanner/docs/philosophy-complete.md](../../techplanner/docs/philosophy-complete.md)
 =======
 **File**: [../../TechPlanner/docs/philosophy-complete.md](../../TechPlanner/docs/philosophy-complete.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**File**: [../../TechPlanner/docs/philosophy-complete.md](../../techplanner/docs/philosophy-complete.md)
+>>>>>>> dev
 
 **Filosofia**: Client-Centric, Compliance-First, Integration Over Duplication
 
@@ -53,10 +61,14 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### User - Foundation Identity
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: [../../User/docs/philosophy-complete.md](../../user/docs/philosophy-complete.md)
 =======
 **File**: [../../User/docs/philosophy-complete.md](../../User/docs/philosophy-complete.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**File**: [../../User/docs/philosophy-complete.md](../../user/docs/philosophy-complete.md)
+>>>>>>> dev
 
 **Filosofia**: STI Unity, RBAC Standard, Multi-Tenant Isolation
 
@@ -72,10 +84,14 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### UI - Componenti Interfaccia
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: [../../UI/docs/philosophy.md](../../ui/docs/philosophy.md)
 =======
 **File**: [../../UI/docs/philosophy.md](../../UI/docs/philosophy.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**File**: [../../UI/docs/philosophy.md](../../ui/docs/philosophy.md)
+>>>>>>> dev
 
 **Filosofia**: Riusabilità, Consistenza Visiva, Type Safety
 
@@ -91,10 +107,14 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### Geo - Geolocalizzazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: [../../Geo/docs/philosophy.md](../../geo/docs/philosophy.md)
 =======
 **File**: [../../Geo/docs/philosophy.md](../../Geo/docs/philosophy.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**File**: [../../Geo/docs/philosophy.md](../../geo/docs/philosophy.md)
+>>>>>>> dev
 
 **Filosofia**: Schema.org Compliance, Polymorphic Flexibility, Geographic Type Safety
 
@@ -110,10 +130,14 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### Tenant - Multi-Tenancy
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: [../../Tenant/docs/philosophy.md](../../tenant/docs/philosophy.md)
 =======
 **File**: [../../Tenant/docs/philosophy.md](../../Tenant/docs/philosophy.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**File**: [../../Tenant/docs/philosophy.md](../../tenant/docs/philosophy.md)
+>>>>>>> dev
 
 **Filosofia**: Sovranità Digitale Distribuita, Isolamento Assoluto
 
@@ -129,10 +153,14 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### Notify - Comunicazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: [../../Notify/docs/philosophy.md](../../notify/docs/philosophy.md)
 =======
 **File**: [../../Notify/docs/philosophy.md](../../Notify/docs/philosophy.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**File**: [../../Notify/docs/philosophy.md](../../notify/docs/philosophy.md)
+>>>>>>> dev
 
 **Filosofia**: Comunicazione Responsabile, Minimalismo Funzionale
 
@@ -148,10 +176,14 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### Activity - Audit Trail
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: [../../Activity/docs/philosophy-complete.md](../../activity/docs/philosophy-complete.md)
 =======
 **File**: [../../Activity/docs/philosophy-complete.md](../../Activity/docs/philosophy-complete.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**File**: [../../Activity/docs/philosophy-complete.md](../../activity/docs/philosophy-complete.md)
+>>>>>>> dev
 
 **Filosofia**: Track Everything, Reconstruct Anything, Privacy First
 
@@ -167,10 +199,14 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### Media - File Management
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: [../../Media/docs/philosophy-complete.md](../../media/docs/philosophy-complete.md)
 =======
 **File**: [../../Media/docs/philosophy-complete.md](../../Media/docs/philosophy-complete.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**File**: [../../Media/docs/philosophy-complete.md](../../media/docs/philosophy-complete.md)
+>>>>>>> dev
 
 **Filosofia**: Secure Upload, Smart Storage, Automatic Processing
 
@@ -186,10 +222,14 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### Cms - Content Management
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: [../../Cms/docs/philosophy.md](../../cms/docs/philosophy.md)
 =======
 **File**: [../../Cms/docs/philosophy.md](../../Cms/docs/philosophy.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**File**: [../../Cms/docs/philosophy.md](../../cms/docs/philosophy.md)
+>>>>>>> dev
 
 **Filosofia**: Contenuto Strutturato e Modulare, Gerarchia Sacra
 
@@ -205,10 +245,14 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### Employee - HR Management
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: [../../Employee/docs/philosophy-complete.md](../../employee/docs/philosophy-complete.md)
 =======
 **File**: [../../Employee/docs/philosophy-complete.md](../../Employee/docs/philosophy-complete.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**File**: [../../Employee/docs/philosophy-complete.md](../../employee/docs/philosophy-complete.md)
+>>>>>>> dev
 
 **Filosofia**: Actions-Only, Compliance-First, Italian Labor Law
 
@@ -311,7 +355,10 @@ Quando si modifica business logic, workflow, o pattern di un modulo:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo Aggiornamento**: 2025-12-23
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Status**: ✅ Documentazione Filosofica Completa per Tutti i Moduli Principali

@@ -53,6 +53,7 @@ Di default viene utilizzata **laravel\Themes\adm_theme\Resources\views\admin\das
 
 ## Collegamenti tra versioni di xra.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [xra.md](../../../xot/docs/install/xra.md)
 * [xra.md](../../../tenant/docs/it/xra.md)
 * [xra.md](../../../tenant/docs/it/config/xra.md)
@@ -61,6 +62,11 @@ Di default viene utilizzata **laravel\Themes\adm_theme\Resources\views\admin\das
 * [xra.md](../../../Tenant/docs/it/xra.md)
 * [xra.md](../../../Tenant/docs/it/config/xra.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [xra.md](../../../xot/docs/install/xra.md)
+* [xra.md](../../../tenant/docs/it/xra.md)
+* [xra.md](../../../tenant/docs/it/config/xra.md)
+>>>>>>> dev
 
 ### Versione Incoming
 

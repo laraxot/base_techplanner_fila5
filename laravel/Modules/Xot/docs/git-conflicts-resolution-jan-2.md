@@ -126,6 +126,9 @@ php artisan lang:check
 
 ### Modulo Geo
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 
 ### Modulo User
@@ -133,6 +136,7 @@ php artisan lang:check
 
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-2025-01-06.md)
+<<<<<<< HEAD
 =======
 - [Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 
@@ -142,6 +146,8 @@ php artisan lang:check
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution-2025-01-06.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Best Practices Applicate
 
@@ -197,12 +203,17 @@ php artisan lang:check
 
 ### Documentazione Moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
 =======
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
+- [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
+>>>>>>> dev
 
 ### Documentazione Generale
 - [Translation Standards](../../project_docs/translation-standards.md)

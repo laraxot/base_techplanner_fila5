@@ -292,9 +292,15 @@ return array(
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Regole Traduzioni](../../docs/translation-standards.md)
 - [Best Practices Filament](../../docs/filament-best-practices.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
+=======
+- [Regole Traduzioni](../../../docs/translation-standards.md)
+- [Best Practices Filament](../../../docs/filament-best-practices.md)
+- [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
+>>>>>>> dev
 
 ---
 
@@ -594,9 +600,15 @@ return array(
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Regole Traduzioni](../../docs/translation-standards.md)
 - [Best Practices Filament](../../docs/filament-best-practices.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
+=======
+- [Regole Traduzioni](../../../docs/translation-standards.md)
+- [Best Practices Filament](../../../docs/filament-best-practices.md)
+- [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
+>>>>>>> dev
 
 ---
 

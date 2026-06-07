@@ -211,7 +211,11 @@ $gdprTests = [
 - **Usage Metrics**: Factory method utilization tracking
 - **Performance Monitoring**: Creation time optimization
 - **Quality Metrics**: Data realism measurement
+<<<<<<< HEAD
 - **Predictive Analytics**: Healthcare trend simulation
+=======
+- **<nome progetto>ive Analytics**: Healthcare trend simulation
+>>>>>>> dev
 
 ### Phase 4: Multi-Tenant Scale
 - **Studio Isolation**: Complete tenant data separation
@@ -510,7 +514,11 @@ $gdprTests = [
 - **Usage Metrics**: Factory method utilization tracking
 - **Performance Monitoring**: Creation time optimization
 - **Quality Metrics**: Data realism measurement
+<<<<<<< HEAD
 - **Predictive Analytics**: Healthcare trend simulation
+=======
+- **<nome progetto>ive Analytics**: Healthcare trend simulation
+>>>>>>> dev
 
 ### Phase 4: Multi-Tenant Scale
 - **Studio Isolation**: Complete tenant data separation

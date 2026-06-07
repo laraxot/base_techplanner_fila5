@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Compendio sulla Gestione dei Dati Geografici in <main module>
 
 Questo documento fornisce una panoramica completa delle strategie implementative per la gestione dei dati geografici nel modulo Geo, collegando e contestualizzando tutte le analisi e documentazioni esistenti.
@@ -212,3 +213,12 @@ Questo compendio fornisce un punto di partenza per navigare nella documentazione
 
 *Documento creato il: 28/05/2025*  
 *Autore: Team <main module>*
+=======
+---
+module: theme
+topic: gestione_dati_geografici_compendio
+canonical: ../../../Themes/docs/shared-components/gestione-dati-geografici-compendio.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/gestione-dati-geografici-compendio.md
+>>>>>>> dev

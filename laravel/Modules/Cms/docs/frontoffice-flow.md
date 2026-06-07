@@ -140,7 +140,11 @@ Questo documento descrive il flusso completo del frontoffice di <main module>, d
 - [Struttura Route e Viste](./struttura-route-e-viste.md)
 - [Layout e Componenti](./struttura-layout-componenti-blade-<nome progetto>.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Filament](./best-practices/filament.md) 
 =======
 - [Best Practices Filament](./best-practices/filament.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Best Practices Filament](./best-practices/filament.md) 
+>>>>>>> dev

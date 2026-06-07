@@ -16,6 +16,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'user' => [
             'label' => 'Utente',
             'tooltip' => '',
@@ -63,6 +66,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         'user' => 'Utente',
         'preferences' => 'Preferenze',
@@ -76,6 +80,8 @@ return [
         'toggleColumns' => [
             'label' => 'toggleColumns',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'preferences' => [
@@ -84,10 +90,16 @@ return [
         'data_sharing' => 'Condivisione Dati',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

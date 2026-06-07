@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Practical Event Sourcing Examples for Healthcare
 
 ## Table of Contents
@@ -559,3 +560,12 @@ These examples demonstrate how event sourcing can be applied to various aspects 
 
 Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: event-sourcing-examples
+canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+>>>>>>> dev

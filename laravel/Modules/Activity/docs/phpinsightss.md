@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -118,3 +119,12 @@ Traits ......................................................... 7.5 %
  [ERROR] The architecture score is too low                                                              
 
 
+=======
+---
+module: theme
+topic: phpinsightss
+canonical: ../../../Themes/docs/shared-components/phpinsights-errors-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-errors-Modules.md
+>>>>>>> dev

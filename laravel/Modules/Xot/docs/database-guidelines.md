@@ -18,9 +18,12 @@ Questo documento definisce le best practices per la gestione dei database nel fr
 - Timestamp standard: `created_at`, `updated_at`, `deleted_at`
 - Booleani: prefisso `is_` o `has_` (es. `is_active`, `has_documents`)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - Date: suffisso `_at` per datetime, `_date` per date (es. `registration_at`, `birth_date`)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### 2. Tipi di Dati
 
@@ -270,11 +273,16 @@ return new class extends XotBaseMigration {
 
 **Collegamenti:**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regola Performance](../../performance/project_docs/database_migrations.md)
 =======
 - [Regola Performance](../../Performance/project_docs/database_migrations.md)
 >>>>>>> 4b6b99016 (first commit)
 - [Regole globali root](../../../project_docs/database_migrations.md)
+=======
+- [Regola Performance](../../performance/project_docs/database_migrations.md)
+- [Regole globali root](../../../../docs/project/database_migrations.md)
+>>>>>>> dev
 
     /**
      * Ottiene la sezione associata al socio.

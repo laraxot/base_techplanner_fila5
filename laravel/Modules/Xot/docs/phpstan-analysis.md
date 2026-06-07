@@ -1,10 +1,14 @@
 ## stato analisi phpstan
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **data**: [DATE]
 =======
 - **data**: 2025-11-12
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **data**: [DATE]
+>>>>>>> dev
 - **ambito**: `Modules/Xot`
 - **comando**: `./vendor/bin/phpstan analyse Modules/Xot --memory-limit=-1`
 - **risultato**: ✅ nessun errore (livello massimo configurato)

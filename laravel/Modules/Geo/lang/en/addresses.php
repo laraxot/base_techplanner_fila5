@@ -27,21 +27,33 @@ return [
             'placeholder' => 'es. Sede Principale, Filiale Nord, Casa',
             'help' => 'Nome identificativo per questo indirizzo (visibile solo con più indirizzi)',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'is_primary' => [
-            'label' => 'Indirizzo Principale',
-            'help' => 'Designa questo come indirizzo principale (solo uno può essere principale)',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'is_primary' => [
+            'label' => 'Indirizzo Principale',
+            'help' => 'Designa questo come indirizzo principale (solo uno può essere principale)',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'messages' => [
@@ -63,6 +75,9 @@ return [
         'single_primary' => 'Con un solo indirizzo, questo è automaticamente il principale',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -74,6 +89,9 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

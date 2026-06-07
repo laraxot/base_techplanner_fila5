@@ -24,10 +24,14 @@
 - [x] API endpoints
 - [x] Cache system
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] Compliance con la filosofia Xot: **nessuna registrazione manuale dei comandi console** nei provider (vedi [lang-service-provider.md](./lang-service-provider.md), [PHILOSOPHY.md](./philosophy.md))
 =======
 - [x] Compliance con la filosofia Xot: **nessuna registrazione manuale dei comandi console** nei provider (vedi [lang-service-provider.md](./lang-service-provider.md), [PHILOSOPHY.md](./PHILOSOPHY.md))
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [x] Compliance con la filosofia Xot: **nessuna registrazione manuale dei comandi console** nei provider (vedi [lang-service-provider.md](./lang-service-provider.md), [PHILOSOPHY.md](./philosophy.md))
+>>>>>>> dev
 
 ### In Progress (50%)
 - [ ] Performance optimization
@@ -159,7 +163,11 @@ I risultati completi sono disponibili nella cartella [docs/phpstan](phpstan/).
 
 ### Obiettivi di Qualità
 
+<<<<<<< HEAD
 Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'analisi PHPStan sono:
+=======
+Secondo le "Regole Windsurf per base_<nome progetto>_fila5_mono", gli obiettivi per l'analisi PHPStan sono:
+>>>>>>> dev
 
 - Iniziare dal livello 1 per i nuovi moduli
 - Assicurarsi che tutto il codice passi almeno il livello 5
@@ -333,10 +341,14 @@ Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'an
 ### Collegamenti Interni
 - [Bottlenecks](bottlenecks.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices](best-practices.md)
 =======
 - [Best Practices](BEST-PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Best Practices](best-practices.md)
+>>>>>>> dev
 - [Testing](testing.md)
 
 ### Versione HEAD
@@ -347,6 +359,9 @@ Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'an
 * [roadmap.md](bashscripts/docs/roadmap.md)
 * [roadmap.md](docs/roadmap.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [roadmap.md](../../../gdpr/docs/roadmap.md)
 * [roadmap.md](../../../notify/docs/roadmap.md)
 * [roadmap.md](../../../xot/docs/roadmap.md)
@@ -361,6 +376,7 @@ Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'an
 * [roadmap.md](../../../patient/docs/roadmap.md)
 * [roadmap.md](../../../cms/docs/roadmap.md)
 * [roadmap.md](../../../../themes/one/docs/roadmap.md)
+<<<<<<< HEAD
 =======
 * [roadmap.md](../../../Gdpr/docs/roadmap.md)
 * [roadmap.md](../../../Notify/docs/roadmap.md)
@@ -377,5 +393,7 @@ Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'an
 * [roadmap.md](../../../Cms/docs/roadmap.md)
 * [roadmap.md](../../../../Themes/One/docs/roadmap.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ---

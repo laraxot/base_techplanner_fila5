@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\Cms\Tests\TestCase::class);
 
 use Modules\Cms\Filament\Resources\MenuResource;
@@ -198,4 +199,13 @@ test('lang base resource provides multilingual features', function () {
         expect($locales)->toBeArray()->not->toBeEmpty();
         expect($defaultLocale)->toBeString()->not->toBeEmpty();
     }
+=======
+namespace Modules\Cms\Tests\Unit\Filament;
+
+describe('CMS Resource Extension', function () {
+    test('resource extension placeholder', function () {
+        // Placeholder - actual tests require full setup
+        expect(true)->toBeTrue();
+    });
+>>>>>>> dev
 });

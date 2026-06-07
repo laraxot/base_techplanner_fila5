@@ -67,6 +67,7 @@ class SafeSushiModel extends BaseModel
 {
     use Sushi;
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     private const JSON_FILE_PATH = 'laravel/Modules/{ModuleName}/resources/json/data.json';
     
@@ -75,6 +76,11 @@ class SafeSushiModel extends BaseModel
     private const JSON_FILE_PATH = 'laravel/Modules/{ModuleName}/resources/json/data.json';
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+    private const JSON_FILE_PATH = 'laravel/Modules/{ModuleName}/resources/json/data.json';
+    
+>>>>>>> dev
     public function getJsonFile(): string
     {
         return base_path(self::JSON_FILE_PATH);
@@ -137,6 +143,7 @@ La trasparenza del path diretto è superiore all'astrazione del `module_path()` 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Risolto**: Dicembre 2024  
 **Priorità**: P0 (Critical) - Bloccava registrazioni  
 **Impatto**: Sistema completamente non funzionale  
@@ -145,3 +152,8 @@ La trasparenza del path diretto è superiore all'astrazione del `module_path()` 
 **Priorità**: P0 (Critical) - Bloccava registrazioni
 **Impatto**: Sistema completamente non funzionale
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Risolto**: Dicembre 2024  
+**Priorità**: P0 (Critical) - Bloccava registrazioni  
+**Impatto**: Sistema completamente non funzionale  
+>>>>>>> dev

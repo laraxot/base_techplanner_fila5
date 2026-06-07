@@ -2,6 +2,7 @@
 
 ## Collegamenti correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README modulo Cms](./readme.md)
 - [Documentazione User](../../user/project_docs/header_language_avatar_implementation.md)
 - [Documentazione Sezioni](./sections_structure.md)
@@ -10,6 +11,11 @@
 - [Documentazione User](../../User/project_docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
 - [Documentazione Sezioni](./SECTIONS_STRUCTURE.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README modulo Cms](./readme.md)
+- [Documentazione User](../../user/project_docs/header_language_avatar_implementation.md)
+- [Documentazione Sezioni](./sections_structure.md)
+>>>>>>> dev
 - [Collegamenti Documentazione](/project_docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -53,10 +59,14 @@ Creare un nuovo componente per il selettore di lingua:
         </svg>
     </button>
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     <div
         x-show="open"
         x-transition:enter="transition ease-out duration-100"
@@ -131,10 +141,14 @@ Creare un nuovo componente per l'avatar utente con dropdown:
             </button>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         <div
             x-show="open"
             x-transition:enter="transition ease-out duration-100"
@@ -150,6 +164,9 @@ Creare un nuovo componente per l'avatar utente con dropdown:
                 <div class="text-gray-500 truncate">{{ $user->email }}</div>
             </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             
             <a href="{{ '/' . app()->getLocale() . '/profile' }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                 {{ __('user.profile.link') }}
@@ -159,6 +176,7 @@ Creare un nuovo componente per l'avatar utente con dropdown:
                 {{ __('user.dashboard.link') }}
             </a>
             
+<<<<<<< HEAD
 =======
 
             <a href="{{ '/' . app()->getLocale() . '/profile' }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
@@ -170,6 +188,8 @@ Creare un nuovo componente per l'avatar utente con dropdown:
             </a>
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             <form action="{{ '/' . app()->getLocale() . '/auth/logout' }}" method="post" class="border-t">
                 @csrf
                 <button type="submit" class="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-gray-100">

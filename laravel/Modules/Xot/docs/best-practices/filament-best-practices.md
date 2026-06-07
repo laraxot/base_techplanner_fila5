@@ -536,9 +536,12 @@ Prima di considerare completa una risorsa Filament, verificare:
 - `EditAppointment.php` - Estende `XotBaseEditRecord`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: gennaio 2025 - Correzioni per campi reali e rimozione label hardcoded*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 1. **ESATTA SEQUENZA** di campi da mantenere:
    - **Dati anagrafici**: titolo_id, nome, cognome, sesso, data_nascita, etc.
    - **Classificazione professionale**: tipologia_cliente_id, stato_id, etc.
@@ -942,12 +945,17 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 
 - [Documentazione Filament](https://filamentphp.com/docs)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/modules/xot/docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/modules/xot/docs/best-practices.md)
 =======
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione XotBaseResource](base_orisbroker_fila5/laravel/modules/xot/docs/resource.md)
+- [Best Practices Laraxot](base_orisbroker_fila5/laravel/modules/xot/docs/best-practices.md)
+>>>>>>> dev
 
 ## Regole per Widget Filament: Path View e Localizzazione
 

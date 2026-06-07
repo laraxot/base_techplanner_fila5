@@ -2,17 +2,26 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
 use Modules\Geo\Actions\OptimizeRouteAction;
 <<<<<<< HEAD
 use Modules\Geo\Contracts\CalculateDistanceActionContract;
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+namespace Modules\Geo\Tests\Unit\Actions;
+
+use Illuminate\Support\Collection;
+use Modules\Geo\Actions\OptimizeRouteAction;
+use Modules\Geo\Contracts\CalculateDistanceActionContract;
+>>>>>>> dev
 use Modules\Geo\Datas\LocationData;
 use Modules\Geo\Tests\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 beforeEach(function () {
@@ -20,6 +29,8 @@ beforeEach(function () {
 });
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 it('returns same locations when count is 2 or less', function (): void {
     $location1 = new LocationData(latitude: 45.4642, longitude: 9.1900);
     $location2 = new LocationData(latitude: 46.4642, longitude: 10.1900);
@@ -27,10 +38,14 @@ it('returns same locations when count is 2 or less', function (): void {
     // Test with single location
     $singleCollection = collect([$location1]);
 <<<<<<< HEAD
+<<<<<<< HEAD
     $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
 =======
     $calculateDistance = Mockery::mock('alias:CalculateDistanceActionMock1');
 >>>>>>> 4b6b99016 (first commit)
+=======
+    $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
+>>>>>>> dev
     $action = new OptimizeRouteAction($calculateDistance);
 
     $result = $action->execute($singleCollection);
@@ -53,10 +68,14 @@ it('optimizes route for three locations', function (): void {
     $locations = collect([$locationA, $locationC, $locationB]); // Initial order: A, C, B
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
 =======
     $calculateDistance = Mockery::mock('alias:CalculateDistanceActionMock2');
 >>>>>>> 4b6b99016 (first commit)
+=======
+    $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
+>>>>>>> dev
 
     // Mock distances: A to B is shorter than A to C
     $calculateDistance->shouldReceive('execute')
@@ -83,10 +102,14 @@ it('optimizes route for three locations', function (): void {
 
 it('handles empty collection', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
 =======
     $calculateDistance = Mockery::mock('alias:CalculateDistanceActionMock3');
 >>>>>>> 4b6b99016 (first commit)
+=======
+    $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
+>>>>>>> dev
     $action = new OptimizeRouteAction($calculateDistance);
 
     $result = $action->execute(collect([]));
@@ -103,10 +126,14 @@ it('handles route optimization with multiple locations', function (): void {
     $locations = collect([$locationA, $locationD, $locationB, $locationC]); // A, D, B, C
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
 =======
     $calculateDistance = Mockery::mock('alias:CalculateDistanceActionMock4');
 >>>>>>> 4b6b99016 (first commit)
+=======
+    $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
+>>>>>>> dev
 
     // Mock distances: each location is closer to the next in sequence
     $calculateDistance->shouldReceive('execute')
@@ -146,10 +173,14 @@ it('stops optimization when no more locations remain', function (): void {
     $locations = collect([$locationA, $locationB]);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
 =======
     $calculateDistance = Mockery::mock('alias:CalculateDistanceActionMock5');
 >>>>>>> 4b6b99016 (first commit)
+=======
+    $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
+>>>>>>> dev
     $calculateDistance->shouldReceive('execute')
         ->andReturn(['distance' => ['value' => 1000]]);
 
@@ -169,10 +200,14 @@ it('correctly calculates nearest location', function (): void {
     $locations = collect([$locationA, $locationC, $locationB]);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
 =======
     $calculateDistance = Mockery::mock('alias:CalculateDistanceActionMock6');
 >>>>>>> 4b6b99016 (first commit)
+=======
+    $calculateDistance = Mockery::mock(CalculateDistanceActionContract::class);
+>>>>>>> dev
 
     // A to B is closer than A to C
     $calculateDistance->shouldReceive('execute')
@@ -182,12 +217,18 @@ it('correctly calculates nearest location', function (): void {
         ->with($locationA, $locationB)
         ->andReturn(['distance' => ['value' => 15000]]);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     // B to C is called after B is selected as nearest
     $calculateDistance->shouldReceive('execute')
         ->with($locationB, $locationC)
         ->andReturn(['distance' => ['value' => 250000]]);
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
     $action = new OptimizeRouteAction($calculateDistance);
     $result = $action->execute($locations);

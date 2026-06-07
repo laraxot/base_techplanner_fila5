@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /*
      * |--------------------------------------------------------------------------
@@ -12,11 +13,14 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'column.name' => 'Nombre',
     'column.guard_name' => 'Guard',
     'column.roles' => 'Roles',
     'column.permissions' => 'Permisos',
     'column.updated_at' => 'Actualizado el',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     /*
@@ -26,11 +30,14 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'field.name' => 'Nombre',
     'field.guard_name' => 'Guard',
     'field.permissions' => 'Permisos',
     'field.select_all.name' => 'Seleccionar todos',
     'field.select_all.message' => 'Habilitar todos los permisos actualmente <span class="text-primary font-medium">habilitados</span> para este rol',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     /*
@@ -40,11 +47,14 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Roles',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Rol',
     'resource.label.roles' => 'Roles',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     /*
@@ -54,11 +64,14 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'section' => 'Entidades',
     'resources' => 'Recursos',
     'widgets' => 'Widgets',
     'pages' => 'Páginas',
     'custom' => 'Permisos personalizados',
+<<<<<<< HEAD
 <<<<<<< HEAD
     'forbidden' => 'Usted no tiene permiso de acceso',
 =======
@@ -76,6 +89,9 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'forbidden' => 'Usted no tiene permiso de acceso',
+>>>>>>> dev
     'resource_permission_prefixes_labels' => [
         'view' => 'Ver un registro en particular',
         'view_any' => 'Ver el listado de registros',
@@ -91,6 +107,9 @@ return [
         'replicate' => 'Replicar',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -104,6 +123,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

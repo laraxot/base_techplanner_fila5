@@ -83,6 +83,9 @@ class Foo extends bar
 
 ## Collegamenti tra versioni di customizing-your-site.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [customizing-your-site.md](../../../gdpr/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../xot/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../ui/project_docs/customizing-your-site.md)
@@ -93,6 +96,7 @@ class Foo extends bar
 * [customizing-your-site.md](../../../ui/docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../tenant/docs/it/customizing-your-site.md)
 * [customizing-your-site.md](../../../cms/docs/customizing-your-site.md)
+<<<<<<< HEAD
 =======
 * [customizing-your-site.md](../../../Gdpr/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../Xot/project_docs/customizing-your-site.md)
@@ -105,6 +109,8 @@ class Foo extends bar
 * [customizing-your-site.md](../../../Tenant/docs/it/customizing-your-site.md)
 * [customizing-your-site.md](../../../Cms/docs/customizing-your-site.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### Versione Incoming
 

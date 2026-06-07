@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Media Module - File Management Architecture
 
 ## 🎯 Module Overview
@@ -2294,3 +2295,12 @@ readonly class ConversionConfiguration
 
 Il modulo Media rappresenta un componente critico per user experience e richiede particolare attenzione per security, performance e scalabilità, specialmente con grandi volumi di file e traffico elevato.
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: file-management-architecture
+canonical: ../../../Themes/docs/shared-components/FILE_MANAGEMENT_ARCHITECTURE.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/FILE_MANAGEMENT_ARCHITECTURE.md
+>>>>>>> dev

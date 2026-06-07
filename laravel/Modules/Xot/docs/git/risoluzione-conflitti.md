@@ -8,6 +8,9 @@ Questo documento descrive i file con conflitti git identificati nel progetto e l
 
 ### Modulo Media
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Documentazione dettagliata del modulo Media](../../media/docs/conflitti_merge_risolti.md)
 - [Azioni delle tabelle Filament](../../media/docs/filament_table_actions_conflict_resolution.md)
 
@@ -16,6 +19,7 @@ Questo documento descrive i file con conflitti git identificati nel progetto e l
 
 ### Modulo Job
 - [Documentazione dettagliata del modulo Job](../../job/docs/conflict_resolution.md)
+<<<<<<< HEAD
 =======
 - [Documentazione dettagliata del modulo Media](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
 - [Azioni delle tabelle Filament](../../Media/docs/filament_table_actions_conflict_resolution.md)
@@ -26,6 +30,8 @@ Questo documento descrive i file con conflitti git identificati nel progetto e l
 ### Modulo Job
 - [Documentazione dettagliata del modulo Job](../../Job/docs/conflict_resolution.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## File con Conflitti
 
@@ -108,6 +114,7 @@ I file modificati sono stati documentati sia nel loro specifico modulo che in qu
 ## Collegamenti Bidirezionali
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [PHPStan Report](../../media/docs/phpstan_report.md)
 - [Test Report](test_report.md)
 - [Documentazione Conflitti Job](../../job/docs/conflict_resolution.md)
@@ -116,3 +123,8 @@ I file modificati sono stati documentati sia nel loro specifico modulo che in qu
 - [Test Report](test_report.md)
 - [Documentazione Conflitti Job](../../Job/docs/conflict_resolution.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [PHPStan Report](../../media/docs/phpstan_report.md)
+- [Test Report](test_report.md)
+- [Documentazione Conflitti Job](../../job/docs/conflict_resolution.md)
+>>>>>>> dev

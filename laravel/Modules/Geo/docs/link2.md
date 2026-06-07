@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 quando clikki su elemento si mostra il dettaglio nella bar
 http://www.smartredfox.com/plugins/map-list-pro/
 
@@ -50,3 +51,12 @@ https://www.mapbox.com/
 
 https://www.mapfit.com/
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: link2
+canonical: ../../../Themes/docs/shared-components/link2.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/link2.txt
+>>>>>>> dev

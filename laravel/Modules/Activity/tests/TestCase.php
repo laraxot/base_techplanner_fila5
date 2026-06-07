@@ -7,31 +7,43 @@ namespace Modules\Activity\Tests;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Providers\XotServiceProvider;
 use Modules\Xot\Tests\CreatesApplication;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Spatie\EventSourcing\StoredEvents\EventSubscriber;
 use Spatie\EventSourcing\StoredEvents\Repositories\EloquentStoredEventRepository;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 /**
  * Base test case for Activity module.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
  * Uses MySQL from .env.testing (carbon copy of .env with _test DB names).
  * All module connections are mapped dynamically by TenantServiceProvider.
  * Migrations must be run ONCE externally: php artisan migrate --env=testing
  * DatabaseTransactions handles rollback between tests.
+<<<<<<< HEAD
 =======
  * Uses MySQL from .env.testing (NOT SQLite).
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  */
 abstract class TestCase extends BaseTestCase
 {
@@ -39,6 +51,9 @@ abstract class TestCase extends BaseTestCase
     use DatabaseTransactions;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     /**
      * Connections to wrap in transactions for automatic rollback.
      * MANDATORY: must include every connection used by this module's models.
@@ -54,6 +69,7 @@ abstract class TestCase extends BaseTestCase
     ];
 
     /**
+<<<<<<< HEAD
 =======
     protected function setUp(): void
     {
@@ -114,11 +130,14 @@ abstract class TestCase extends BaseTestCase
     /**
      * @param  \Illuminate\Foundation\Application  $app
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
      * @return array<int, class-string>
      */
     protected function getPackageProviders($app): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
             XotServiceProvider::class,
             UserServiceProvider::class,
@@ -128,6 +147,11 @@ abstract class TestCase extends BaseTestCase
             UserServiceProvider::class,
             XotServiceProvider::class,
 >>>>>>> 4b6b99016 (first commit)
+=======
+            XotServiceProvider::class,
+            UserServiceProvider::class,
+            ActivityServiceProvider::class,
+>>>>>>> dev
         ];
     }
 }

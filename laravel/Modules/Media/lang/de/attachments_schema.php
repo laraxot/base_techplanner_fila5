@@ -15,9 +15,13 @@ return [
                 'max' => 'Die maximale Dateigröße beträgt 10MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'prescription' => [
             'label' => 'Ärztliches Rezept',
@@ -30,9 +34,13 @@ return [
                 'max' => 'Maximale Größe: 10MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'medical_report' => [
             'label' => 'Medizinischer Bericht',
@@ -44,9 +52,13 @@ return [
                 'max' => 'Maximale Größe: 10MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'certificate' => [
             'label' => 'Zertifikat',
@@ -58,9 +70,13 @@ return [
                 'max' => 'Maximale Größe: 10MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'consent_form' => [
             'label' => 'Einverständniserklärung',
@@ -72,9 +88,13 @@ return [
                 'max' => 'Maximale Größe: 10MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'xray_image' => [
             'label' => 'Röntgenbild',
@@ -86,9 +106,13 @@ return [
                 'max' => 'Maximale Größe: 20MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'treatment_plan' => [
             'label' => 'Behandlungsplan',
@@ -100,9 +124,13 @@ return [
                 'max' => 'Maximale Größe: 10MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'medical_history' => [
             'label' => 'Krankengeschichte',
@@ -114,9 +142,13 @@ return [
                 'max' => 'Maximale Größe: 10MB',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'validation' => [
@@ -132,6 +164,9 @@ return [
         'delete_error' => 'Fehler beim Löschen der Datei',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -143,6 +178,9 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

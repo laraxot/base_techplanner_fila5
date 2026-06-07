@@ -9,10 +9,14 @@
     "build": "vite build",
     "watch": "vite build --watch",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "copy": "mkdir -p ../../../public_html/themes/Two && cp -rv ./public/* ../../../public_html/themes/Two/"
 =======
     "copy": "cp -r ./resources/dist/* ../../../public_html/themes/Two"
 >>>>>>> 4b6b99016 (first commit)
+=======
+    "copy": "mkdir -p ../../../public_html/themes/Two && cp -rv ./public/* ../../../public_html/themes/Two/"
+>>>>>>> dev
   },
   "devDependencies": {
     "@alpinejs/focus": "^3.14.9",
@@ -20,12 +24,18 @@
     "@heroicons/vue": "^2.1.1",
     "@tailwindcss/forms": "^0.5.10",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@tailwindcss/postcss": "^4.1.18",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.2.0",
 =======
     "@tailwindcss/typography": "^0.5.16",
 >>>>>>> 4b6b99016 (first commit)
+=======
+    "@tailwindcss/postcss": "^4.1.18",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.2.0",
+>>>>>>> dev
     "@types/node": "^20.11.24",
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.21",
@@ -37,6 +47,9 @@
     "postcss-nesting": "^13.0.1",
     "swiper": "^11.2.6",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     "tailwindcss": "^4.2.0",
     "tippy.js": "^6.3.7",
     "vite": "^6.2.4",
@@ -44,10 +57,13 @@
   },
   "dependencies": {
     "daisyui": "^5.5.18"
+<<<<<<< HEAD
 =======
     "tailwindcss": "^3.4.17",
     "vite": "^6.2.4",
     "vue": "^3.4.21"
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
   }
 }

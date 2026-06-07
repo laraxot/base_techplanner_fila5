@@ -10,9 +10,13 @@ return [
             'helper_text' => 'title',
             'description' => 'title',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'subtitle' => [
             'label' => 'subtitle',
@@ -20,9 +24,13 @@ return [
             'helper_text' => 'subtitle',
             'description' => 'subtitle',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'image' => [
             'label' => 'image',
@@ -30,9 +38,13 @@ return [
             'helper_text' => 'image',
             'description' => 'image',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'cta_text' => [
             'label' => 'cta_text',
@@ -40,9 +52,13 @@ return [
             'helper_text' => 'cta_text',
             'description' => 'cta_text',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'cta_link' => [
             'label' => 'cta_link',
@@ -50,9 +66,13 @@ return [
             'helper_text' => 'cta_link',
             'description' => 'cta_link',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'background_color' => [
             'label' => 'background_color',
@@ -60,9 +80,13 @@ return [
             'helper_text' => 'background_color',
             'description' => 'background_color',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'text_color' => [
             'label' => 'text_color',
@@ -70,9 +94,13 @@ return [
             'helper_text' => 'text_color',
             'description' => 'text_color',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'cta_color' => [
             'label' => 'cta_color',
@@ -80,6 +108,9 @@ return [
             'helper_text' => 'cta_color',
             'description' => 'cta_color',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -94,8 +125,11 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

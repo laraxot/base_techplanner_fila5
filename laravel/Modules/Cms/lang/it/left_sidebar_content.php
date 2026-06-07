@@ -7,6 +7,9 @@ return [
         'sidebar_blocks' => [
             'label' => 'sidebar_blocks',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -34,8 +37,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Left Sidebar Content',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

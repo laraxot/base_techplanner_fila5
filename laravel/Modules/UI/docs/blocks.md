@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 https://github.com/whitecube/nova-flexible-content
 
 
@@ -20,6 +23,7 @@ https://tw-elements.com/docs/standard/navigation/navbar/
 https://freefrontend.com/tailwind-navbars/
 
 https://preline.co/docs/mega-menu.html
+<<<<<<< HEAD
 =======
 # Blocchi
 
@@ -206,3 +210,5 @@ Per gestire correttamente le route nei blocchi, seguire queste linee guida:
 * [blocks.md](../../../../Themes/One/docs/blocks.md)
 * [blocks.md](../../../../Themes/One/docs/components/blocks.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

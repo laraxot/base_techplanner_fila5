@@ -24,6 +24,9 @@ return [
             'tooltip' => 'Zwischen Listen- und Rasteransicht wählen',
             'help' => 'Wählen Sie den am besten geeigneten Layout-Typ zur Anzeige der Daten',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -37,8 +40,11 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 =======
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

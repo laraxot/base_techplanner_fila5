@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DaisyUI: Componenti e Implementazione in il progetto
 
 Questo documento descrive l'utilizzo di [DaisyUI](https://daisyui.com/) nel progetto il progetto, fornendo linee guida per sfruttare al meglio questa libreria di componenti per Tailwind CSS.
@@ -625,3 +626,12 @@ Utilizzo:
 ---
 
 Per ulteriori informazioni sull'implementazione di DaisyUI in il progetto o per segnalare problemi, contattare il team di sviluppo. 
+=======
+---
+module: theme
+topic: daisyui_componenti
+canonical: ../../../Themes/docs/shared-components/daisyui-componenti.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/daisyui-componenti.md
+>>>>>>> dev

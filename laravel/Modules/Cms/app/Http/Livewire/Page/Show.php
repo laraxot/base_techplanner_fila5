@@ -12,6 +12,7 @@ use Modules\Xot\Services\ThemeService;
 
 class Show extends Component
 {
+<<<<<<< HEAD
     /**
      * Lo slug della pagina da visualizzare.
      */
@@ -43,14 +44,29 @@ class Show extends Component
     /**
      * Carica i contenuti della pagina.
      */
+=======
+    public string $slug = '';
+
+    public bool $cache = true;
+
+    public ?string $theme = null;
+
+    public bool $debug = false;
+
+    public array $pageContent = [];
+
+>>>>>>> dev
     public function mount(): void
     {
         $this->loadPageContent();
     }
 
+<<<<<<< HEAD
     /**
      * Renderizza la vista con i contenuti della pagina.
      */
+=======
+>>>>>>> dev
     public function render(): View
     {
         return view('cms::livewire.page.show', [
@@ -59,11 +75,14 @@ class Show extends Component
         ]);
     }
 
+<<<<<<< HEAD
     /**
      * Regole di validazione per i parametri.
      *
      * @return array<string, string>
      */
+=======
+>>>>>>> dev
     protected function rules(): array
     {
         return [
@@ -74,6 +93,7 @@ class Show extends Component
         ];
     }
 
+<<<<<<< HEAD
     /**
      * Carica i contenuti della pagina, eventualmente dalla cache.
      */
@@ -134,6 +154,44 @@ class Show extends Component
                     'keywords' => $metaKeywords,
                 ],
                 'blocks' => $contentBlocks ? (is_array($contentBlocks) ? $contentBlocks : []) : [],
+=======
+    protected function loadPageContent(): void
+    {
+        $cacheKey = 'page_content_'.$this->slug.'_'.($this->theme ?? ThemeService::getTheme());
+
+        if ($this->cache) {
+            $this->pageContent = Cache::remember($cacheKey, now()->addHours(24), function (): array {
+                return $this->fetchPageContent();
+            });
+
+            return;
+        }
+
+        $this->pageContent = $this->fetchPageContent();
+    }
+
+    protected function fetchPageContent(): array
+    {
+        try {
+            $page = Page::findUniqueBySlug($this->slug);
+
+            if (! $page instanceof Page) {
+                return ['error' => 'Page not found', 'slug' => $this->slug];
+            }
+
+            $title = is_scalar($page->title) ? (string) $page->title : $this->slug;
+            $content = is_scalar($page->content) ? (string) $page->content : '';
+
+            return [
+                'title' => $title,
+                'subtitle' => null,
+                'content' => $content,
+                'meta' => [
+                    'description' => is_scalar($page->description) ? (string) $page->description : null,
+                    'keywords' => null,
+                ],
+                'blocks' => is_array($page->content_blocks) ? $page->content_blocks : [],
+>>>>>>> dev
                 'layout' => 'default',
             ];
         } catch (\Exception $e) {

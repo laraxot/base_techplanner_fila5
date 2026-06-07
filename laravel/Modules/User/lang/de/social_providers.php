@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -124,6 +127,7 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
+<<<<<<< HEAD
 =======
         'name' => 'Nome',
         'name.placeholder' => 'Inserisci il nome del provider',
@@ -144,5 +148,7 @@ return [
         'svg.placeholder' => 'Inserisci il codice SVG dell\'icona',
         'svg.helper_text' => 'L\'icona SVG del provider social',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
 ];

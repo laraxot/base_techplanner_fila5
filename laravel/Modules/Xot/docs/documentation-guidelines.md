@@ -214,10 +214,14 @@ Quando si fa riferimento a concetti o classi in altri moduli, utilizzare collega
 
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per ulteriori informazioni, consultare la [documentazione del modulo UI](../ui/project_docs/readme.md).
 =======
 Per ulteriori informazioni, consultare la [documentazione del modulo UI](../UI/project_docs/README.md).
 >>>>>>> 4b6b99016 (first commit)
+=======
+Per ulteriori informazioni, consultare la [documentazione del modulo UI](../ui/project_docs/readme.md).
+>>>>>>> dev
 ```
 
 ### 2. Documentazione Centralizzata
@@ -226,10 +230,14 @@ Alcuni argomenti comuni a più moduli dovrebbero essere documentati nel modulo X
 
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per le best practices generali sul framework, consultare la [guida principale](../xot/project_docs/best-practices.md).
 =======
 Per le best practices generali sul framework, consultare la [guida principale](../Xot/project_docs/best-practices.md).
 >>>>>>> 4b6b99016 (first commit)
+=======
+Per le best practices generali sul framework, consultare la [guida principale](../xot/project_docs/best-practices.md).
+>>>>>>> dev
 ```
 
 ## Esempi di Eccellenza

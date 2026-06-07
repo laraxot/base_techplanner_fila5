@@ -250,8 +250,11 @@ vendor/bin/pest --filter="test_name" --verbose
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: 18 Agosto 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Versione Pest**: 3.8
 **Versione PHPUnit**: 11.x

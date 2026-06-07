@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Models\Policies;
 
+<<<<<<< HEAD
 use Modules\Job\Models\JobsWaiting;
 use Modules\Xot\Contracts\UserContract;
 
@@ -65,3 +66,6 @@ class JobsWaitingPolicy extends JobBasePolicy
         return $user->hasPermissionTo('jobs_waiting.forceDelete');
     }
 }
+=======
+class JobsWaitingPolicy extends JobBasePolicy {}
+>>>>>>> dev

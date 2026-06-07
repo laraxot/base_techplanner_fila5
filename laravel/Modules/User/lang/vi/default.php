@@ -127,6 +127,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'email' => [
             'label' => 'Email',
             'tooltip' => '',
@@ -219,6 +222,7 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
         'email' => 'Email',
         'login' => 'Đăng nhập',
@@ -237,4 +241,6 @@ return [
     'or' => 'Hoặc',
     'cancel' => 'Hủy',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

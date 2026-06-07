@@ -34,12 +34,16 @@ class ListSnapshots extends XotBaseListRecords
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'id' => TextColumn::make('id')->sortable()->searchable(),
             'aggregate_uuid' => TextColumn::make('aggregate_uuid')->searchable(),
             'aggregate_version' => TextColumn::make('aggregate_version')->sortable(),
             'state' => TextColumn::make('state')->searchable(),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable(),
+<<<<<<< HEAD
 =======
             TextColumn::make('id')->sortable()->searchable(),
             TextColumn::make('aggregate_uuid')->searchable(),
@@ -48,6 +52,8 @@ class ListSnapshots extends XotBaseListRecords
             TextColumn::make('created_at')->dateTime()->sortable(),
             TextColumn::make('updated_at')->dateTime()->sortable(),
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ];
     }
 

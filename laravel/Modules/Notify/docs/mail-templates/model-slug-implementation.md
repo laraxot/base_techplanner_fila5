@@ -3,12 +3,16 @@
 ## Panoramica delle Modifiche
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il modello `MailTemplate` (`/var/www/html/saluteora/laravel/Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
 =======
 Il modello `MailTemplate` (`../Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
 Il modello `MailTemplate` (`../Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
 Il modello `MailTemplate` (`../Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
 >>>>>>> 4b6b99016 (first commit)
+=======
+Il modello `MailTemplate` (`/var/www/html/Quaeris/laravel/Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
+>>>>>>> dev
 
 ## Modifiche Effettuate
 
@@ -23,10 +27,14 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
     use HasTranslations;
     use HasSlug;
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // ...
 }
 ```
@@ -181,6 +189,7 @@ echo $uniqueSlug;
 
 ## Riferimenti
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Struttura della Migrazione](./migration_structure.md)
 - [Implementazione Campo Slug nella Migrazione](./slug_field_implementation.md)
@@ -367,4 +376,9 @@ echo $uniqueSlug;
 - [Implementazione Campo Slug nella Migrazione](./SLUG_FIELD_IMPLEMENTATION.md)
 - [Guida alla Migrazione MailTemplate](../MAIL_TEMPLATE_MIGRATION_GUIDE.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Struttura della Migrazione](./migration_structure.md)
+- [Implementazione Campo Slug nella Migrazione](./slug_field_implementation.md)
+- [Guida alla Migrazione MailTemplate](../mail_template_migration_guide.md)
+>>>>>>> dev
 - [Documentazione Spatie Sluggable](https://github.com/spatie/laravel-sluggable)

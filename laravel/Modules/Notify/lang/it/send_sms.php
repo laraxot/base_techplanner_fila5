@@ -25,9 +25,13 @@ return [
             'placeholder' => 'Seleziona un driver',
             'label' => 'Driver',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'message' => [
             'description' => 'Contenuto del messaggio',
@@ -35,9 +39,13 @@ return [
             'placeholder' => 'Scrivi il messaggio',
             'label' => 'Messaggio',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'phone' => [
             'description' => 'Numero di telefono',
@@ -45,9 +53,13 @@ return [
             'placeholder' => 'Inserisci il numero',
             'label' => 'Numero telefono',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'gateway' => [
             'description' => 'Gateway SMS',
@@ -55,9 +67,13 @@ return [
             'placeholder' => 'Gateway SMS',
             'label' => 'Gateway',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'to' => [
             'description' => 'to',
@@ -65,9 +81,13 @@ return [
             'placeholder' => 'to',
             'label' => 'to',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'template_slug' => [
             'description' => 'template_slug',
@@ -75,9 +95,13 @@ return [
             'placeholder' => 'template_slug',
             'label' => 'template_slug',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -100,8 +124,13 @@ return [
         'confirmation' => 'Sei sicuro di voler inviare questo SMS?',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Send Sms',
     'plural_label' => 'Send Sms (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Send Sms',
+    'plural_label' => 'Send Sms (Plurale)',
+>>>>>>> dev
 ];

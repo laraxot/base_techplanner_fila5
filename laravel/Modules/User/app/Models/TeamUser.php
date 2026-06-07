@@ -7,9 +7,12 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Database\Factories\TeamUserFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -52,6 +55,7 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @mixin IdeHelperTeamUser
  *
+<<<<<<< HEAD
  * @property ProfileContract|null $deleter
  * @property Team|null            $team
  * @property User|null            $user
@@ -61,6 +65,20 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static TeamUserFactory factory($count = null, $state = [])
  *
 >>>>>>> 4b6b99016 (first commit)
+=======
+ * @property ProfileContract|null         $deleter
+ * @property Team|null                    $team
+ * @property User|null                    $user
+ * @property array<array-key, mixed>|null $permissions
+ * @property string|null                  $joined_at
+ *
+ * @method static Builder<static>|TeamUser                         childrenWith(array $relations)
+ * @method static Builder<static>|TeamUser                         childrenWithCount(array $relations)
+ * @method static \Modules\User\Database\Factories\TeamUserFactory factory($count = null, $state = [])
+ * @method static Builder<static>|TeamUser                         whereJoinedAt($value)
+ * @method static Builder<static>|TeamUser                         wherePermissions($value)
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class TeamUser extends BaseTeamUser

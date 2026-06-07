@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ConvertVideoByMediaConvertAction
 
 ## Panoramica
@@ -73,3 +74,12 @@ $convertedPath = $action->execute($data, $record);
 ```
 
 [Torna alla documentazione Media](/docs/modules/module_media.md#actions)
+=======
+---
+module: theme
+topic: convert-video-by-media-convert
+canonical: ../../../../Themes/docs/shared-components/convert-video-by-media-convert-1.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/convert-video-by-media-convert-1.md
+>>>>>>> dev

@@ -264,10 +264,14 @@ $saveAndContinue = function () {
 
     $applicant = Applicant::findOrFail(session('applicant_id'));
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     $applicant->educations()->create([
         'institution' => $this->institution,
         'degree' => $this->degree,
@@ -404,12 +408,16 @@ class PersonalInfoTest extends TestCase
 - [Documentazione Laravel Volt](https://livewire.laravel.com/project_docs/volt)
 - [Documentazione Laravel Folio](https://github.com/laravel/folio)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Documentazione Laravel](https://laravel.com/docs) 
 
 ## Collegamenti tra versioni di multi-step-forms.md
 * [multi-step-forms.md](laravel/modules/cms/project_docs/multi-step-forms.md)
 * [multi-step-forms.md](laravel/modules/cms/project_docs/components/multi-step-forms.md)
 
+<<<<<<< HEAD
 =======
 - [Documentazione Laravel](https://laravel.com/docs)
 
@@ -417,3 +425,5 @@ class PersonalInfoTest extends TestCase
 * [multi-step-forms.md](laravel/Modules/Cms/project_docs/multi-step-forms.md)
 * [multi-step-forms.md](laravel/Modules/Cms/project_docs/components/multi-step-forms.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

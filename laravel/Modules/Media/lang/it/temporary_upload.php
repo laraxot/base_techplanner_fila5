@@ -10,6 +10,9 @@ return [
         'sort' => 96,
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Temporary Upload',
     'plural_label' => 'Temporary Upload (Plurale)',
     'fields' => [
@@ -43,6 +46,9 @@ return [
             'label' => 'Elimina Temporary Upload',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

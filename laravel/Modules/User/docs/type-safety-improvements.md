@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Type Safety Improvements - User Module
 
 ## Overview
@@ -228,3 +229,12 @@ public function test_safe_string_cast_handles_various_types(): void
 - Type safety improvements enhance code reliability
 - Security is improved through safe handling of sensitive data
 - Documentation is updated to reflect all changes
+=======
+---
+module: theme
+topic: type-safety-improvements
+canonical: ../../../Themes/docs/shared-components/type-safety-improvements.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/type-safety-improvements.md
+>>>>>>> dev

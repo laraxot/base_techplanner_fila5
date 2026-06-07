@@ -219,17 +219,6 @@ return [
 **Component Status**: 📋 Documented - Ready for Implementation
 **Reusability**: 🔄 High - Cross-module compatible
 <<<<<<< HEAD
-
-
-=======
-**Last Updated**: January 2025
-**Last Updated**: January 2025
->>>>>>> 4b6b99016 (first commit)
-        ],
-
----
-**Component Status**: 📋 Documented - Ready for Implementation
-**Reusability**: 🔄 High - Cross-module compatible
 <<<<<<< HEAD
 
 
@@ -237,6 +226,27 @@ return [
 **Last Updated**: January 2025
 **Last Updated**: January 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+
+>>>>>>> dev
+        ],
+
+---
+**Component Status**: 📋 Documented - Ready for Implementation
+**Reusability**: 🔄 High - Cross-module compatible
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+=======
+**Last Updated**: January 2025
+**Last Updated**: January 2025
+>>>>>>> 4b6b99016 (first commit)
+=======
+
+
+>>>>>>> dev
         ],
         'phone' => [
             'label' => 'Telefono',
@@ -266,6 +276,7 @@ return [
 **Component Status**: 📋 Documented - Ready for Implementation
 **Reusability**: 🔄 High - Cross-module compatible
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -281,11 +292,17 @@ return [
 <<<<<<< HEAD
 
 
+=======
+
+
+
+>>>>>>> dev
 
 ---
 **Component Status**: 📋 Documented - Ready for Implementation
 **Reusability**: 🔄 High - Cross-module compatible
 
+<<<<<<< HEAD
 =======
 **Last Updated**: January 2025
 **Last Updated**: January 2025
@@ -295,6 +312,14 @@ return [
 **Reusability**: 🔄 High - Cross-module compatible
 **Last Updated**: January 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+
+---
+**Component Status**: 📋 Documented - Ready for Implementation
+**Reusability**: 🔄 High - Cross-module compatible
+
+>>>>>>> dev
 # StudioCardSelector Component - Modulo UI
 
 ## 🎯 **Panoramica**
@@ -489,6 +514,7 @@ return [
 **Component Status**: 📋 Documented - Ready for Implementation
 **Reusability**: 🔄 High - Cross-module compatible
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -497,3 +523,8 @@ return [
 **Last Updated**: January 2025
 **Last Updated**: January 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+
+
+>>>>>>> dev

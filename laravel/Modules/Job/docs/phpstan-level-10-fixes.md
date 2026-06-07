@@ -1,10 +1,14 @@
 # PHPStan Level 10 Fixes - Modulo Job
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Data: [DATE]
 =======
 ## Data: 2025-01-22
 >>>>>>> 4b6b99016 (first commit)
+=======
+## Data: [DATE]
+>>>>>>> dev
 ## Status: ✅ COMPLETATO (0 errori)
 
 ## 🎯 FILOSOFIA E BUSINESS LOGIC

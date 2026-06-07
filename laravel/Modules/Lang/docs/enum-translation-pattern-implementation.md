@@ -212,11 +212,15 @@ return [
 
 - [Enum Translation Pattern](enum-translation-pattern.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [TableLayoutEnum Guide](../laravel/modules/ui/docs/table-layout-enum-complete-guide.md)
 - [Translation Management](translation-management.md)
 
 ## Ultimo Aggiornamento
 [DATE] - Implementazione completa regola critica enum translation pattern
+<<<<<<< HEAD
 =======
 - [TableLayoutEnum Guide](../laravel/Modules/UI/docs/table-layout-enum-complete-guide.md)
 - [Translation Management](translation-management.md)
@@ -224,3 +228,5 @@ return [
 ## Ultimo Aggiornamento
 2025-01-27 - Implementazione completa regola critica enum translation pattern
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

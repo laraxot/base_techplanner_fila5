@@ -20,33 +20,51 @@ return [
             'placeholder' => 'Inserisci la chiave del lock',
             'help' => 'Identificativo univoco del lock in cache',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'owner' => [
             'label' => 'Proprietario',
             'placeholder' => 'Identificativo del proprietario',
             'help' => 'Identificativo del processo che detiene il lock',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'expiration' => [
-            'label' => 'Scadenza',
-            'placeholder' => 'Timestamp di scadenza',
-            'help' => 'Momento in cui il lock scadrà automaticamente',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'expiration' => [
+            'label' => 'Scadenza',
+            'placeholder' => 'Timestamp di scadenza',
+            'help' => 'Momento in cui il lock scadrà automaticamente',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -94,8 +112,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Cache Lock',
     'plural_label' => 'Cache Lock (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Cache Lock',
+    'plural_label' => 'Cache Lock (Plurale)',
+>>>>>>> dev
 ];

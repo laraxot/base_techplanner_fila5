@@ -99,10 +99,14 @@ protected function getOptions(): array
 
 To achieve a premium "SaaS" look, configure your `getOptions()` to control fonts, layouts, and tooltips.
 <<<<<<< HEAD
+<<<<<<< HEAD
 See the **[LimeSurvey Professional Charts Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)** for the detailed specification on:
 =======
 See the **[LimeSurvey Professional Charts Guide](../../../Limesurvey/docs/professional-charts-and-pdfs.md)** for the detailed specification on:
 >>>>>>> 4b6b99016 (first commit)
+=======
+See the **[LimeSurvey Professional Charts Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)** for the detailed specification on:
+>>>>>>> dev
 -   Font consistency (Inter/Roboto).
 -   Legend positioning.
 -   Gridline reduction (Data-Ink Ratio).
@@ -121,9 +125,14 @@ The architectural standard for Quaeris is **Spatie Laravel PDF** (a wrapper arou
 ---
 **See Also**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 -   [Dashboard Best Practices](../../../limesurvey/docs/dashboard-best-practices.md)
 -   [Professional Charts & PDF Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)
 =======
 -   [Dashboard Best Practices](../../../Limesurvey/docs/dashboard-best-practices.md)
 -   [Professional Charts & PDF Guide](../../../Limesurvey/docs/professional-charts-and-pdfs.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+-   [Dashboard Best Practices](../../../limesurvey/docs/dashboard-best-practices.md)
+-   [Professional Charts & PDF Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)
+>>>>>>> dev

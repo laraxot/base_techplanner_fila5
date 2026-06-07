@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'navigation' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'label' => 'Tenant',
         'plural_label' => 'Tenant',
         'group' => 'Gestione Utenti',
@@ -20,6 +23,7 @@ return [
             'helper_text' => 'Visualizza tutti i tenant',
             'description' => 'Titolo della tabella tenant',
         ],
+<<<<<<< HEAD
 =======
         'name' => 'Tenant',
         'plural' => 'Tenants',
@@ -34,11 +38,16 @@ return [
     'table' => [
         'heading' => 'Tenant',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'fields' => [
         'first_name' => [
             'label' => 'Nome',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => 'Nome del tenant',
             'placeholder' => 'Inserisci il nome',
             'helper_text' => 'Nome del tenant o dell\'organizzazione',
@@ -113,6 +122,7 @@ return [
             'placeholder' => 'Seleziona colore primario',
             'helper_text' => 'Colore principale utilizzato nell\'interfaccia',
             'description' => 'Colore primario del tema',
+<<<<<<< HEAD
 =======
             'placeholder' => 'Inserisci il nome',
             'tooltip' => 'Nome del tenant',
@@ -186,11 +196,16 @@ return [
             'helper_text' => 'primary_color',
             'placeholder' => 'primary_color',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
         'import' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => 'Importa',
             'tooltip' => 'Importa dati',
             'helper_text' => 'Importa dati da file esterno',
@@ -286,6 +301,7 @@ return [
         'updated' => 'Tenant aggiornato con successo',
         'deleted' => 'Tenant eliminato con successo',
     ],
+<<<<<<< HEAD
 =======
             'fields' => [
                 'import_file' => 'Seleziona un file XLS o CSV da caricare',
@@ -393,4 +409,6 @@ return [
     'label' => 'tenant',
     'plural_label' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

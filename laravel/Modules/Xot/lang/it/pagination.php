@@ -6,6 +6,9 @@ return [
     'previous' => '&laquo; Precedente',
     'next' => 'Successiva &raquo;',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Pagination',
     'plural_label' => 'Pagination (Plurale)',
     'navigation' => [
@@ -50,6 +53,9 @@ return [
             'label' => 'Elimina Pagination',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

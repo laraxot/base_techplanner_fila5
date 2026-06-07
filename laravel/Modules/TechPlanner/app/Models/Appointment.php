@@ -26,9 +26,13 @@ use Illuminate\Support\Carbon;
  * @property-read Collection<int, Machine> $machines
  * @property-read int|null $machines_count
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @method static Builder<static>|Appointment newModelQuery()
  * @method static Builder<static>|Appointment newQuery()
  * @method static Builder<static>|Appointment query()
@@ -43,9 +47,13 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|Appointment whereUpdatedAt($value)
  * @method static Builder<static>|Appointment whereUpdatedBy($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class Appointment extends Model

@@ -14,8 +14,17 @@ class ListNotifyThemes extends XotBaseListRecords
 {
     protected static string $resource = NotifyThemeResource::class;
 
+<<<<<<< HEAD
     #[Override]
     public function getTableColumns(): array
+=======
+    /**
+     * Colonne tabella NotifyTheme (condivise con ManageNotifyThemes).
+     *
+     * @return array<string, TextColumn>
+     */
+    public static function getNotifyThemeTableColumns(): array
+>>>>>>> dev
     {
         return [
             'id' => TextColumn::make('id')->sortable(),
@@ -36,6 +45,15 @@ class ListNotifyThemes extends XotBaseListRecords
     }
 
     #[Override]
+<<<<<<< HEAD
+=======
+    public function getTableColumns(): array
+    {
+        return self::getNotifyThemeTableColumns();
+    }
+
+    #[Override]
+>>>>>>> dev
     public function getTableFilters(): array
     {
         return [

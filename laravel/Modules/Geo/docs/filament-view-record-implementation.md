@@ -141,7 +141,10 @@ class ViewLocation extends XotBaseViewRecord
                             TextEntry::make('created_by')
                                 ->label('Creato da'),
                             TextEntry::make('updated_by')
+<<<<<<< HEAD
                                 ->label('Aggiornato da'),
+=======
+>>>>>>> dev
                         ]),
                 ])
                 ->collapsible(),
@@ -177,7 +180,10 @@ class ViewLocation extends XotBaseViewRecord
 - **Data Creazione**: Timestamp di creazione
 - **Data Aggiornamento**: Timestamp di ultimo aggiornamento
 - **Creato da**: Utente che ha creato il record
+<<<<<<< HEAD
 - **Aggiornato da**: Utente che ha aggiornato il record
+=======
+>>>>>>> dev
 
 ## Componenti Utilizzati
 
@@ -275,8 +281,13 @@ protected function getInfolistSchema()
 
 ## Collegamenti e Riferimenti
 
+<<<<<<< HEAD
 - [Filament ViewRecord Errors (Root Docs)](../../docs/filament-view-record-errors.md)
 - [Testing Analysis Documentation](../../docs/testing-analysis.md)
+=======
+- [Filament ViewRecord Errors (Root Docs)](../../../docs/filament-view-record-errors.md)
+- [Testing Analysis Documentation](../../../docs/testing-analysis.md)
+>>>>>>> dev
 - [XotBaseViewRecord Source Code](../../../Xot/app/Filament/Resources/Pages/XotBaseViewRecord.php)
 - [Location Model](../../app/Models/Location.php)
 - [LocationResource](../../app/Filament/Resources/LocationResource.php)
@@ -284,11 +295,15 @@ protected function getInfolistSchema()
 ## Note di Manutenzione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - **Data Creazione**: [DATE]
 - **Motivazione**: Documentazione della risoluzione dell'errore FatalError in ViewLocation
 - **Autore**: AI Assistant
 - **Stato**: Completato e verificato
 - **Ultimo Aggiornamento**: [DATE]
+<<<<<<< HEAD
 =======
 - **Data Creazione**: 2025-01-06
 - **Motivazione**: Documentazione della risoluzione dell'errore FatalError in ViewLocation
@@ -296,6 +311,8 @@ protected function getInfolistSchema()
 - **Stato**: Completato e verificato
 - **Ultimo Aggiornamento**: 2025-01-06
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ---
 

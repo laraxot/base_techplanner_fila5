@@ -10,9 +10,13 @@ return [
             'helper_text' => 'version',
             'placeholder' => 'version',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'subtitle' => [
             'label' => 'subtitle',
@@ -20,9 +24,13 @@ return [
             'helper_text' => 'subtitle',
             'placeholder' => 'subtitle',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'title' => [
             'label' => 'title',
@@ -30,9 +38,13 @@ return [
             'helper_text' => 'title',
             'placeholder' => 'title',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'image' => [
             'label' => 'image',
@@ -40,9 +52,13 @@ return [
             'helper_text' => 'image',
             'description' => 'image',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'gallery' => [
             'label' => 'gallery',
@@ -50,6 +66,9 @@ return [
             'helper_text' => 'gallery',
             'description' => 'gallery',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -64,8 +83,11 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

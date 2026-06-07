@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Quality Improvements Summary - PHPStan, PHPMD, PHP Insights
 
 ## Data: 2025-01-02
@@ -66,3 +67,12 @@
 2. Continuare rimozione variabili inutilizzate
 3. Analizzare e migliorare architecture score
 4. Applicare style corrections sistematicamente
+=======
+---
+module: theme
+topic: quality-improvements-summary
+canonical: ../../../Themes/docs/shared-components/quality-improvements-summary.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-improvements-summary.md
+>>>>>>> dev

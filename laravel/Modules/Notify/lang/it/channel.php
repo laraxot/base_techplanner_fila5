@@ -20,10 +20,15 @@ return [
             'placeholder' => 'es: Email Marketing',
             'help' => 'Inserisci un nome univoco per identificare il canale',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'driver' => [
             'label' => 'Driver',
@@ -56,10 +61,15 @@ return [
                 ],
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'configuration' => [
             'label' => 'Configurazione',
@@ -137,30 +147,45 @@ return [
                 ],
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'is_default' => [
             'label' => 'Predefinito',
             'tooltip' => 'Imposta come canale predefinito',
             'help' => 'Il canale predefinito verrà utilizzato quando non specificato diversamente',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'is_enabled' => [
             'label' => 'Abilitato',
             'tooltip' => 'Stato di attivazione del canale',
             'help' => 'Disabilita temporaneamente il canale senza eliminarlo',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -202,8 +227,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Channel',
     'plural_label' => 'Channel (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Channel',
+    'plural_label' => 'Channel (Plurale)',
+>>>>>>> dev
 ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Code Quality Analysis - Activity Module
 
 ## 🚨 Critical Issues Identified
@@ -443,3 +444,12 @@ $defaultRecordsPerPageSelectOption → $defaultPerPageOption
 This analysis provides a comprehensive roadmap for improving code quality in the Activity module while maintaining data integrity and performance.
 
 
+=======
+---
+module: theme
+topic: code-quality
+canonical: ../../../Themes/docs/shared-components/code-quality-analysis-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/code-quality-analysis-Modules.md
+>>>>>>> dev

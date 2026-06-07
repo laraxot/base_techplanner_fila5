@@ -20,6 +20,7 @@ final readonly class UserNameFieldsResolver
     public ?string $name;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public ?string $firstName;
 
     public ?string $lastName;
@@ -28,10 +29,16 @@ final readonly class UserNameFieldsResolver
 
     public ?string $last_name;
 >>>>>>> 4b6b99016 (first commit)
+=======
+    public ?string $firstName;
+
+    public ?string $lastName;
+>>>>>>> dev
 
     public function __construct(User $user)
     {
         $this->name = $this->resolveName($user);
+<<<<<<< HEAD
 <<<<<<< HEAD
         $this->firstName = $this->resolveName($user);
         $this->lastName = $this->resolveSurname($user);
@@ -39,6 +46,10 @@ final readonly class UserNameFieldsResolver
         $this->first_name = $this->resolveName($user);
         $this->last_name = $this->resolveSurname($user);
 >>>>>>> 4b6b99016 (first commit)
+=======
+        $this->firstName = $this->resolveName($user);
+        $this->lastName = $this->resolveSurname($user);
+>>>>>>> dev
     }
 
     public static function make(User $user): self
@@ -62,6 +73,9 @@ final readonly class UserNameFieldsResolver
     private function resolveNameFields(User $idpUser, string $searchMethod): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         $this->validateSearchMethod($searchMethod);
 
         $nameSection = $this->determineNameField($idpUser, $searchMethod);
@@ -125,6 +139,7 @@ final readonly class UserNameFieldsResolver
 
     private function getRawUserData(User $idpUser): array
     {
+<<<<<<< HEAD
 =======
         if (! in_array($searchMethod, [self::NAME_SEARCH, self::SURNAME_SEARCH], strict: true)) {
             throw new \InvalidArgumentException('Metodo di ricerca non valido');
@@ -143,6 +158,8 @@ final readonly class UserNameFieldsResolver
 
         // Ottenere i dati raw in modo sicuro attraverso reflection
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         $raw = [];
         try {
             $reflection = new \ReflectionClass($idpUser);
@@ -165,6 +182,7 @@ final readonly class UserNameFieldsResolver
             // Fallback silenzioso
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         return $raw;
 =======
@@ -215,6 +233,9 @@ final readonly class UserNameFieldsResolver
 
         return $nameSection->toString();
 >>>>>>> 4b6b99016 (first commit)
+=======
+        return $raw;
+>>>>>>> dev
     }
 
     private function resolveNameFieldByNameAttributeAnalysis(string $nameField, string $searchMethod): Stringable

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /*
      * |------------------------------------------------- -------------------------
@@ -12,11 +13,14 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'column.name' => 'Ім\'я',
     'column.guard_name' => 'Ім\'я гварда',
     'column.roles' => 'Ролі',
     'column.permissions' => 'Дозволи',
     'column.updated_at' => 'Оновлено',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     /*
@@ -26,11 +30,14 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'field.name' => 'Ім\'я',
     'field.guard_name' => 'Ім\'я гварда',
     'field.permissions' => 'Дозволи',
     'field.select_all.name' => 'Вибрати все',
     'field.select_all.message' => 'Включити всі дозволи, які <span class="text-primary font-medium">Доступні</span> для цієї ролі',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     /*
@@ -40,11 +47,14 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Ролі',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Роль',
     'resource.label.roles' => 'Ролі',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     /*
@@ -54,11 +64,14 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'section' => 'Сутності',
     'resources' => 'Ресурси',
     'widgets' => 'Віджети',
     'pages' => 'Сторінки',
     'custom' => 'Користувальницькі дозволи',
+<<<<<<< HEAD
 <<<<<<< HEAD
     'forbidden' => 'У вас немає доступу',
 =======
@@ -76,6 +89,9 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'forbidden' => 'У вас немає доступу',
+>>>>>>> dev
     'resource_permission_prefixes_labels' => [
         'view' => 'Перегляд',
         'view_any' => 'Може дивитися будь-яке',
@@ -91,6 +107,9 @@ return [
         'replicate' => 'Копіювати',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -104,6 +123,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

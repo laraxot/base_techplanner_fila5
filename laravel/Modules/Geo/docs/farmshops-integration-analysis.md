@@ -1,9 +1,12 @@
 # 🗺️ Farmshops.eu Integration Analysis
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Date:** 2025-10-02
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Module:** Geo
 **Status:** Analysis & Proposal
 
@@ -29,10 +32,14 @@
 | **Stars** | 40 |
 | **Forks** | 10 |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | **Ultimo Update** | [DATE] |
 =======
 | **Ultimo Update** | 2025-09-23 |
 >>>>>>> 4b6b99016 (first commit)
+=======
+| **Ultimo Update** | [DATE] |
+>>>>>>> dev
 | **Homepage** | https://farmshops.eu |
 
 ### Stack Tecnologico
@@ -624,10 +631,14 @@ Realtà aumentata per visualizzare punti di interesse tramite fotocamera smartph
 
 **📝 Documento preparato da:** Super Mucca 🐮
 <<<<<<< HEAD
+<<<<<<< HEAD
 **📅 Data:** [DATE]
 =======
 **📅 Data:** 2025-10-02
 >>>>>>> 4b6b99016 (first commit)
+=======
+**📅 Data:** [DATE]
+>>>>>>> dev
 **📧 Contatto:** geo-team@fixcity.com
 
 ---

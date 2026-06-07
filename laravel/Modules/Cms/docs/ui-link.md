@@ -11,6 +11,7 @@ Secondo le regole di organizzazione della documentazione:
 ## Collegamenti Principali
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Componenti UI](../../ui/project_docs/readme.md) - Panoramica dei componenti UI disponibili
 - [Componenti Filament](../../ui/project_docs/filament-components.md) - Componenti personalizzati per Filament
 - [Componenti Blade](../../ui/project_docs/blade-components.md) - Componenti Blade riutilizzabili
@@ -19,6 +20,11 @@ Secondo le regole di organizzazione della documentazione:
 - [Componenti Filament](../../UI/project_docs/filament-components.md) - Componenti personalizzati per Filament
 - [Componenti Blade](../../UI/project_docs/blade-components.md) - Componenti Blade riutilizzabili
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Componenti UI](../../ui/project_docs/readme.md) - Panoramica dei componenti UI disponibili
+- [Componenti Filament](../../ui/project_docs/filament-components.md) - Componenti personalizzati per Filament
+- [Componenti Blade](../../ui/project_docs/blade-components.md) - Componenti Blade riutilizzabili
+>>>>>>> dev
 
 ## Utilizzo dei Componenti UI nel Frontend
 
@@ -30,6 +36,7 @@ Il modulo Cms utilizza i componenti UI definiti nel modulo UI per:
 
 ## Collegamento Bidirezionale
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Questo documento è collegato bidirezionalmente con [cms-link.md](../../ui/project_docs/cms-link.md) nel modulo UI.
 =======
@@ -64,5 +71,8 @@ Il modulo Cms utilizza i componenti UI definiti nel modulo UI per:
 
 Questo documento è collegato bidirezionalmente con [cms-link.md](../../UI/docs/cms-link.md) nel modulo UI.
 >>>>>>> 4b6b99016 (first commit)
+=======
+Questo documento è collegato bidirezionalmente con [cms-link.md](../../ui/project_docs/cms-link.md) nel modulo UI.
+>>>>>>> dev
 
 > Aggiorna entrambi i riferimenti se modifichi l'utilizzo dei componenti UI nel frontend o aggiungi nuove integrazioni.

@@ -227,7 +227,10 @@ Per mantenere questa organizzazione:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-29*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 *Responsabile: Sistema di Automazione Laraxot*

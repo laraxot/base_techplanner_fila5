@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 # 📚 **Indice Documentazione Modulo Media**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -23,18 +26,57 @@
 - 🖼️ **[Media Library](./filament.md)** - La libreria media in Filament.
 - 🛠️ **[Table Actions](./filament-table-actions.md)** - Azioni di massa su file e directory.
 
+<<<<<<< HEAD
+=======
+## 📋 **Documenti Prodotto & Sviluppo**
+
+### Product
+| File | Scopo |
+|------|-------|
+| PRD.md | Product Requirements |
+| PRODUCT_ROADMAP.md | Roadmap |
+| PRODUCT_STRATEGY.md | Strategy |
+| PRODUCT_LAUNCH_PLAN.md | Launch Plan |
+
+### Development
+| File | Scopo |
+|------|-------|
+| GSD_WORKFLOW.md | GSD Workflow |
+| SPRINT_PLANNING.md | Sprint Planning |
+| USER_RESEARCH.md | User Research |
+
+>>>>>>> dev
 ## 🧪 **Qualità e Sviluppo**
 - ✅ **[PHPStan Level 10](./phpstan-level10-fixes.md)** - Report di conformità totale.
 - 🔬 **[Testing Guidelines](./testing.md)** - Strategie per testare upload e stream.
 - 🧹 **[PHPMD Analysis](./cyclomatic-complexity-report.md)** - Pulizia degli algoritmi di conversione.
 
+<<<<<<< HEAD
+=======
+## 📦 **Pacchetti Composer**
+- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
+- `pbmedia/laravel-ffmpeg` - Elaborazione video
+- `intervention/image` - Elaborazione immagini
+
+>>>>>>> dev
 ## 🔗 **Moduli Correlati**
 - [Xot](../../xot/docs/readme.md) - Base framework e Trait `HasMedia`.
 - [CloudStorage](../../cloudstorage/docs/readme.md) - Astrazione per provider cloud.
 - [Cms](../../cms/docs/readme.md) - Integrazione media nei blocchi di contenuto.
+<<<<<<< HEAD
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 =======
 # Documentation Index
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [AGENTS.md](../../../../AGENTS.md) - Project guidelines
+
+---
+*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+
+## Dependency Intelligence
+
+- [Dependency intelligence](dependency-intelligence.md)
+>>>>>>> dev

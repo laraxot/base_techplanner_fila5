@@ -111,10 +111,14 @@ abstract class UIBaseStatsWidget extends XotBaseStatsOverviewWidget
     protected static ?string $pollingInterval = null;
     protected static bool $isLazy = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // Configurazioni comuni per tutti i widget di statistiche UI
     protected static function getDefaultStats(): array
     {
@@ -123,20 +127,28 @@ abstract class UIBaseStatsWidget extends XotBaseStatsOverviewWidget
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // Metodi helper comuni
     protected function formatNumber(int|float $number): string
     {
         return number_format($number);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     protected function formatPercentage(int|float $percentage): string
     {
         return number_format($percentage, 1) . '%';
@@ -164,16 +176,22 @@ abstract class UIBaseTestWidget extends XotBaseWidget
     protected static bool $isLazy = true;
     protected static ?string $pollingInterval = null;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     // Configurazioni comuni per tutti i widget di test UI
     public array $widgets = [];
     
+<<<<<<< HEAD
 =======
 
     // Configurazioni comuni per tutti i widget di test UI
     public array $widgets = [];
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     // Metodi helper comuni
     protected function getTestData(): array
     {
@@ -206,10 +224,14 @@ abstract class UIBaseChartWidget extends XotBaseChartWidget
     protected static ?string $description = null;
     protected static ?string $pollingInterval = null;
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // Configurazioni comuni per tutti i grafici UI
     protected function getDefaultChartOptions(): array
     {
@@ -224,10 +246,14 @@ abstract class UIBaseChartWidget extends XotBaseChartWidget
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // Metodi helper comuni
     protected function formatChartData(array $data): array
     {
@@ -311,10 +337,14 @@ class SystemTestWidget extends UIBaseTestWidget
 {
     protected static string $view = 'ui::filament.widgets.system-test';
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     public function getViewData(): array
     {
         return array_merge(
@@ -326,10 +356,14 @@ class SystemTestWidget extends UIBaseTestWidget
         );
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     private function getSystemInfo(): array
     {
         return [
@@ -339,10 +373,14 @@ class SystemTestWidget extends UIBaseTestWidget
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     private function getDatabaseStatus(): array
     {
         try {
@@ -375,16 +413,21 @@ class SystemTestWidget extends UIBaseTestWidget
 ## 🔗 Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [XotBase Patterns](../../xot/docs/optimization_opportunities.md)
 =======
 - [XotBase Patterns](../../Xot/docs/optimization_opportunities.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [XotBase Patterns](../../xot/docs/optimization_opportunities.md)
+>>>>>>> dev
 - [UI Components](components.md)
 - [Development Guidelines](development-guidelines.md)
 - [Testing Strategy](testing-strategy.md)
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Giugno 2025*
@@ -735,4 +778,6 @@ class SystemTestWidget extends UIBaseTestWidget
 
 *Ultimo aggiornamento: Giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 *Autore: Analisi Automatica del Progetto*

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gestione Prodotti con Laravel Folio e Volt
 
 Questa guida spiega come implementare un sistema di gestione prodotti utilizzando Laravel Folio per il routing e Volt per la reattività dei componenti.
@@ -379,3 +380,12 @@ class ProductTest extends TestCase
 * [product-management.md](laravel/modules/cms/project_docs/product-management.md)
 * [product-management.md](laravel/modules/cms/project_docs/components/product-management.md)
 
+=======
+---
+module: theme
+topic: product_management
+canonical: ../../../Themes/docs/shared-components/product-management.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/product-management.md
+>>>>>>> dev

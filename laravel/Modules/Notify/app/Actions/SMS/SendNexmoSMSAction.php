@@ -73,7 +73,11 @@ final class SendNexmoSMSAction implements SmsActionContract
             $to = '+39'.$to;
         }
 
+<<<<<<< HEAD
         $from = $smsData->from ?? $this->defaultSender;
+=======
+        $from = $smsData->from ?: $this->defaultSender;
+>>>>>>> dev
 
         $client = new Client([
             'timeout' => $this->nexmoData->getTimeout(),

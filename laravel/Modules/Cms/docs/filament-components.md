@@ -1,6 +1,7 @@
 # Utilizzo dei Componenti Filament in il progetto
 > **Collegamenti correlati**
 <<<<<<< HEAD
+<<<<<<< HEAD
 > - [FILAMENT_COMPONENTS.md tema One](../../../../themes/one/project_docs/filament_components.md)
 
 # Utilizzo dei Componenti Filament 
@@ -9,12 +10,18 @@
 
 # Utilizzo dei Componenti Filament
 >>>>>>> 4b6b99016 (first commit)
+=======
+> - [FILAMENT_COMPONENTS.md tema One](../../../../themes/one/project_docs/filament_components.md)
+
+# Utilizzo dei Componenti Filament 
+>>>>>>> dev
 
 ## Regola Fondamentale
 
 In il progetto, **privilegiare sempre i componenti Blade nativi di Filament** rispetto a componenti UI personalizzati.
 
 > ⚠️ **Collegamenti alla documentazione correlata**:
+<<<<<<< HEAD
 <<<<<<< HEAD
 > - [Indice generale dei collegamenti](../../../../project_docs/collegamenti-documentazione.md)
 > - [Documentazione principale](../../../../project_docs/rules/filament-components.md)
@@ -24,6 +31,11 @@ In il progetto, **privilegiare sempre i componenti Blade nativi di Filament** ri
 > - [Documentazione principale](../../../../docs/rules/filament-components.md)
 > - [Documentazione nel tema](../../../../Themes/One/docs/FILAMENT_COMPONENTS.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+> - [Indice generale dei collegamenti](../../../../../docs/project/collegamenti-documentazione.md)
+> - [Documentazione principale](../../../../../docs/project/rules/filament-components.md)
+> - [Documentazione nel tema](../../../../themes/one/project_docs/filament_components.md)
+>>>>>>> dev
 
 ## Motivazione
 
@@ -66,10 +78,14 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 </x-filament::button>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-filament::button 
 =======
 <x-filament::button
 >>>>>>> 4b6b99016 (first commit)
+=======
+<x-filament::button 
+>>>>>>> dev
     color="success"           {{-- primary, secondary, success, warning, danger --}}
     size="md"                {{-- xs, sm, md, lg, xl --}}
     icon="heroicon-o-plus"   {{-- qualsiasi icona Heroicon --}}
@@ -90,10 +106,14 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 </x-filament::badge>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-filament::badge 
 =======
 <x-filament::badge
 >>>>>>> 4b6b99016 (first commit)
+=======
+<x-filament::badge 
+>>>>>>> dev
     color="success"         {{-- primary, secondary, success, warning, danger --}}
     size="md"              {{-- xs, sm, md, lg --}}
     icon="heroicon-o-check" {{-- qualsiasi icona Heroicon --}}
@@ -123,16 +143,22 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 ```blade
 <x-filament::input.wrapper>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     <x-filament::input 
         type="text" 
         wire:model="name" 
         placeholder="Nome" 
+<<<<<<< HEAD
 =======
     <x-filament::input
         type="text"
         wire:model="name"
         placeholder="Nome"
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     />
 </x-filament::input.wrapper>
 
@@ -148,21 +174,29 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 
 1. **Mai Sovrascrivere gli Stili Base**: Estendere i componenti Filament aggiungendo classi CSS, non sovrascrivendo quelle esistenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **Utilizzare Props Documentate**: Consultare la [documentazione ufficiale](https://filamentphp.com/project_docs/3.x/support/blade-components/overview) per le props disponibili
 =======
 2. **Utilizzare Props Documentate**: Consultare la [documentazione ufficiale](https://filamentphp.com/docs/3.x/support/blade-components/overview) per le props disponibili
 >>>>>>> 4b6b99016 (first commit)
+=======
+2. **Utilizzare Props Documentate**: Consultare la [documentazione ufficiale](https://filamentphp.com/project_docs/3.x/support/blade-components/overview) per le props disponibili
+>>>>>>> dev
 3. **Dark Mode**: Utilizzare le funzionalità native di dark mode invece di implementazioni personalizzate
 4. **Estensibilità**: Sfruttare gli slot per personalizzare sezioni specifiche dei componenti
 
 ## Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Documentazione ufficiale Filament](https://filamentphp.com/project_docs/3.x/support/blade-components/overview)
 - [Demo dei componenti](https://demo.filamentphp.com/)
 
 ## Collegamenti Bidirezionali
 - [README](readme.md) - Documentazione principale del modulo
+<<<<<<< HEAD
 =======
 - [Documentazione ufficiale Filament](https://filamentphp.com/docs/3.x/support/blade-components/overview)
 - [Demo dei componenti](https://demo.filamentphp.com/)
@@ -170,6 +204,8 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 ## Collegamenti Bidirezionali
 - [README](README.md) - Documentazione principale del modulo
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 - [Integrazione Filament](filament-integration.md) - Integrazione con Filament
 - [Form Filament](filament-forms.md) - Sistema di form Filament
 - [Widget](filament-widgets-in-blade.md) - Utilizzo dei widget in Blade
@@ -179,6 +215,9 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 
 ## Vedi Anche
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Modulo UI](../ui/project_docs/readme.md) - Componenti UI riutilizzabili
 - [Modulo Xot](../xot/project_docs/readme.md) - Classi base Filament personalizzate
 - [Modulo Theme](../theme/project_docs/readme.md) - Personalizzazione temi Filament
@@ -190,6 +229,7 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 * [filament-components.md](laravel/modules/cms/project_docs/filament-components.md)
 * [filament-components.md](laravel/project_docs/rules/filament-components.md)
 
+<<<<<<< HEAD
 =======
 - [Modulo UI](../UI/docs/README.md) - Componenti UI riutilizzabili
 - [Modulo Xot](../Xot/docs/README.md) - Classi base Filament personalizzate
@@ -202,3 +242,5 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 * [filament-components.md](laravel/Modules/Cms/docs/filament-components.md)
 * [filament-components.md](laravel/docs/rules/filament-components.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

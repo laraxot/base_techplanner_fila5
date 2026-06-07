@@ -9,9 +9,15 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Grid;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 class UserCalendarWidget extends XotBaseWidget
+=======
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+
+class UserCalendarWidget extends XotBaseSchemaWidget
+>>>>>>> dev
 {
     public string $type;
 
@@ -19,19 +25,31 @@ class UserCalendarWidget extends XotBaseWidget
 
     public function getActionName(string $function): string
     {
+<<<<<<< HEAD
         $action_suffix = Str::of($function)->studly()->append('Action')->toString();
+=======
+        $actionSuffix = Str::of($function)->studly()->append('Action')->toString();
+>>>>>>> dev
         $resource = XotData::make()->getUserResourceClassByType($this->type);
         $model = $resource::getModel();
         $modelString = \is_string($model) ? $model : (string) $model;
 
         return Str::of($modelString)
             ->replace('\Models\\', '\\Actions\\')
+<<<<<<< HEAD
             ->append('\\Calendar\\'.$action_suffix)
+=======
+            ->append('\\Calendar\\'.$actionSuffix)
+>>>>>>> dev
             ->toString();
     }
 
     /**
      * @param array<string, mixed> $fetchInfo
+<<<<<<< HEAD
+=======
+     * @param array<string, mixed> $fetchInfo
+>>>>>>> dev
      *
      * @return array<int, array<string, mixed>>
      */
@@ -48,6 +66,7 @@ class UserCalendarWidget extends XotBaseWidget
             return [];
         }
 
+<<<<<<< HEAD
         $resultRaw = $actionInstance->execute($fetchInfo);
 
         if (! self::isValidEventsArray($resultRaw)) {
@@ -58,6 +77,9 @@ class UserCalendarWidget extends XotBaseWidget
         $result = $resultRaw;
 
         return $result;
+=======
+        return self::normalizeEventsArray($actionInstance->execute($fetchInfo));
+>>>>>>> dev
     }
 
     /**
@@ -70,6 +92,7 @@ class UserCalendarWidget extends XotBaseWidget
         if (class_exists($action)) {
             $actionInstance = app($action);
             if (\is_object($actionInstance) && method_exists($actionInstance, 'execute')) {
+<<<<<<< HEAD
                 $resultRaw = $actionInstance->execute();
                 if (self::isValidFormSchema($resultRaw)) {
                     /** @var array<int, TextInput|Grid> $result */
@@ -77,6 +100,9 @@ class UserCalendarWidget extends XotBaseWidget
 
                     return $result;
                 }
+=======
+                return self::normalizeFormSchema($actionInstance->execute());
+>>>>>>> dev
             }
         }
 
@@ -100,6 +126,7 @@ class UserCalendarWidget extends XotBaseWidget
     }
 
     /**
+<<<<<<< HEAD
      * Validate that the given value is an array of events with string keys.
      */
     private static function isValidEventsArray(mixed $value): bool
@@ -140,5 +167,62 @@ class UserCalendarWidget extends XotBaseWidget
         }
 
         return true;
+=======
+     * Normalize dynamic calendar action output into typed event arrays.
+     *
+     * @return array<int, array<string, mixed>>
+     */
+    private static function normalizeEventsArray(mixed $value): array
+    {
+        if (! \is_array($value)) {
+            return [];
+        }
+
+        /** @var array<int, array<string, mixed>> $events */
+        $events = [];
+        foreach ($value as $event) {
+            if (! \is_array($event)) {
+                continue;
+            }
+
+            $normalizedEvent = [];
+            foreach ($event as $key => $eventValue) {
+                if (! \is_string($key)) {
+                    continue 2;
+                }
+
+                $normalizedEvent[$key] = $eventValue;
+            }
+
+            $events[] = $normalizedEvent;
+        }
+
+        return $events;
+    }
+
+    /**
+     * @phpstan-return array<int, TextInput|Grid>
+     */
+    private static function normalizeFormSchema(mixed $value): array
+    {
+        if (! \is_array($value)) {
+            return [];
+        }
+
+        $schema = [];
+        foreach ($value as $key => $item) {
+            if (! \is_int($key)) {
+                return [];
+            }
+
+            if (! ($item instanceof TextInput) && ! ($item instanceof Grid)) {
+                return [];
+            }
+
+            $schema[] = $item;
+        }
+
+        return $schema;
+>>>>>>> dev
     }
 }

@@ -138,7 +138,11 @@ user::authentication_log.fields.id.label
 > "This structure was designed specifically to allow:
 > - Multiple sections in one file (fields, actions, messages, navigation)
 > - Clear semantic separation (field translations vs action translations)
+<<<<<<< HEAD
 > - Predictable key resolution (GetTransKeyAction → GetTransPathAction → GetTranslationAction)"
+=======
+> - <nome progetto>able key resolution (GetTransKeyAction → GetTransPathAction → GetTranslationAction)"
+>>>>>>> dev
 
 **The Business Logic**:
 > "Without 'fields' section:
@@ -451,9 +455,12 @@ If 'fields' key missing:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Version**: 2.0 (Round 2 - Near Miss)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Date**: 2026-01-09
 **Author**: AI Assistant (after furious self-litigation)
 **Reviewed By**: User (prevented error before it happened)

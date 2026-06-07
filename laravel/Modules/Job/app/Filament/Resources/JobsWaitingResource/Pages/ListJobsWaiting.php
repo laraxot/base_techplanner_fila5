@@ -16,7 +16,11 @@ use Override;
 
 class ListJobsWaiting extends XotBaseListRecords
 {
+<<<<<<< HEAD
     public static string $resource = JobsWaitingResource::class;
+=======
+    protected static string $resource = JobsWaitingResource::class;
+>>>>>>> dev
 
     public function getHeaderWidgets(): array
     {

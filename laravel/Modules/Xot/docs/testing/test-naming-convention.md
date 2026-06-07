@@ -75,7 +75,11 @@ Esempi:
 
 ## 📚 Documentazione Correlata
 
+<<<<<<< HEAD
 - [Regola Critica Progetto](../../../../docs/regole-critiche/test-naming-pascalcase.md)
+=======
+- [Regola Critica Progetto](../../../../../docs/regole-critiche/test-naming-pascalcase.md)
+>>>>>>> dev
 - [Testing Best Practices](./testing-best-practices.md)
 - [PHPStan Compliance](../phpstan-compliance.md)
 

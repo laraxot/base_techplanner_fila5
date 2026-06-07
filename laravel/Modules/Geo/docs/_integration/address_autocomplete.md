@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # address_autocomplete
 
 <!-- Contenuto migrato da _docs/address_autocomplete.txt -->
@@ -36,3 +37,12 @@ https://www.w3docs.com/learn-javascript/places-autocomplete.html
 
 
 
+=======
+---
+module: theme
+topic: address_autocomplete
+canonical: ../../../../Themes/docs/shared-components/address-autocomplete.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/address-autocomplete.md
+>>>>>>> dev

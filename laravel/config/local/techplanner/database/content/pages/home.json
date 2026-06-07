@@ -2,11 +2,16 @@
     "id": "1",
     "title": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "it": "Consulenza Sicurezza Studi Professionali | Sottana Service",
         "en": "Safety Consulting for Professional Studios | Sottana Service"
 =======
         "it": "TechPlanner - Sistema di Gestione Tecnica"
 >>>>>>> 4b6b99016 (first commit)
+=======
+        "it": "Consulenza Sicurezza Studi Professionali | Sottana Service",
+        "en": "Safety Consulting for Professional Studios | Sottana Service"
+>>>>>>> dev
     },
     "slug": "home",
     "middleware": null,
@@ -18,6 +23,9 @@
                 "slug": "hero-section",
                 "data": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
                     "view": "pub_theme::components.blocks.hero.simple",
                     "title": "Consulenza Sicurezza e Conformità per Studi Professionali",
                     "subtitle": "Specialisti in radioprotezione, elettromedicali e sicurezza per studi dentistici e cliniche veterinarie. Conformità D.Lgs 101/2020 e massima tutela di pazienti e operatori.",
@@ -57,6 +65,7 @@
                             "icon": "heroicon-o-clipboard-document",
                             "url": "/it/servizi",
                             "cta": "Scopri di più"
+<<<<<<< HEAD
 =======
                     "view": "pub_theme::components.blocks.hero.main",
                     "title": "Benvenuto in TechPlanner",
@@ -125,12 +134,17 @@
                             "url": "/docs",
                             "color": "indigo"
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                         }
                     ]
                 }
             },
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
                 "type": "why-critical",
                 "slug": "why-critical-section",
                 "data": {
@@ -228,6 +242,7 @@
                             "title": "Documentazione e Registri",
                             "description": "Audit sulla corretta tenuta della documentazione obbligatoria.",
                             "icon": "heroicono-document-check"
+<<<<<<< HEAD
 =======
                 "type": "stats",
                 "slug": "stats-section",
@@ -256,6 +271,8 @@
                             "label": "Integrazioni",
                             "description": "Con i principali software aziendali"
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                         }
                     ]
                 }
@@ -263,6 +280,9 @@
             {
                 "type": "testimonials",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
                 "slug": "testimonials-section",
                 "data": {
                     "view": "ui::empty",
@@ -332,6 +352,7 @@
                         {
                             "label": "Intervention in 24/48h",
                             "value": "Fast"
+<<<<<<< HEAD
 =======
                 "slug": "testimonials",
                 "data": {
@@ -362,12 +383,17 @@
                             "avatar": "/images/testimonial-3.jpg",
                             "rating": 5
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                         }
                     ]
                 }
             },
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
                 "type": "services-grid",
                 "slug": "main-services",
                 "data": {
@@ -426,6 +452,7 @@
                     "button_label": "Subscribe",
                     "privacy_text": "No spam, only quality content. You can unsubscribe anytime.",
                     "bg_color": "brand-blue"
+<<<<<<< HEAD
 =======
                 "type": "cta",
                 "slug": "final-cta",
@@ -446,12 +473,17 @@
                         "style": "outline-white"
                     }
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                 }
             }
         ]
     },
     "sidebar_blocks": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         "it": [],
         "en": []
     },
@@ -461,6 +493,7 @@
     },
     "created_at": "2025-07-08T09:02:57.000000Z",
     "updated_at": "2026-02-06T18:00:00.000000Z",
+<<<<<<< HEAD
 =======
         "it": [
             {
@@ -527,6 +560,8 @@
     "created_at": "2025-07-08T09:02:57.000000Z",
     "updated_at": "2025-01-06T15:30:00.000000Z",
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     "created_by": null,
     "updated_by": "01985ae8-8039-71ea-88c7-54ebce6295b0"
 }

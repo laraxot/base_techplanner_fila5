@@ -1,10 +1,14 @@
 # PHPStan Roadmap - Lang Module
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **Date**: [DATE]
 =======
 > **Date**: 2026-01-14
 >>>>>>> 4b6b99016 (first commit)
+=======
+> **Date**: 2026-01-14
+>>>>>>> dev
 > **Status**: ✅ Fully Compliant (Level 10)
 > **Errors**: 0
 

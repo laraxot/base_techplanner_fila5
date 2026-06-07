@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Applicazione Todo con Laravel Folio e Volt
 
 Questa guida spiega come implementare un'applicazione Todo utilizzando Laravel Folio per il routing basato su file e Volt per la gestione dello stato e della reattività.
@@ -339,3 +340,12 @@ class TodoTest extends TestCase
 - [Laravel Volt Documentation](https://livewire.laravel.com/project_docs/volt)
 - [Livewire Documentation](https://livewire.laravel.com)
 - [Articolo Originale di Nuno Maduro](https://nunomaduro.com/todo_application_with_laravel_folio_and_volt) 
+=======
+---
+module: theme
+topic: todo_application
+canonical: ../../../Themes/docs/shared-components/todo-application.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/todo-application.md
+>>>>>>> dev

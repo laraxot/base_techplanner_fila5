@@ -1,8 +1,13 @@
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [Documentazione centrale](../../../docs/readme.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
+=======
+- [Documentazione centrale](../../../../docs/readme.md)
+- [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+>>>>>>> dev
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Volt Errors](./volt_errors.md)
@@ -149,9 +154,15 @@ Questo approccio utilizza Volt all'interno di una pagina Folio per gestire il lo
 - Permette di mostrare un messaggio di conferma durante il reindirizzamento
 - Utilizza il pattern mount per eseguire azioni all'inizializzazione del componente
 
+<<<<<<< HEAD
 ## Implementazione Raccomandata per SaluteOra
 
 Per SaluteOra, **l'approccio 1 (Folio con PHP puro)** è raccomandato per il logout per i seguenti motivi:
+=======
+## Implementazione Raccomandata per Laraxot
+
+Per Laraxot, **l'approccio 1 (Folio con PHP puro)** è raccomandato per il logout per i seguenti motivi:
+>>>>>>> dev
 
 1. Il logout è un'operazione semplice che non richiede gestione dello stato
 2. Non è necessaria interazione con l'utente durante il processo
@@ -211,4 +222,8 @@ return redirect()->to('/' . $locale);
 ?>
 ```
 
+<<<<<<< HEAD
 Questa implementazione è semplice, sicura e segue tutte le best practices del progetto SaluteOra.
+=======
+Questa implementazione è semplice, sicura e segue tutte le best practices del progetto Laraxot.
+>>>>>>> dev

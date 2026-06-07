@@ -1,9 +1,12 @@
 # ResolveTenantConfigValueAction - Console Check Debate
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2026-01-08
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Status**: 🔥 FURIOUS INTERNAL DEBATE
 **Issue**: `runningInConsole()` check breaks tenant functionality
 **Filosofia**: DRY + KISS + SOLID + Multi-Tenant Zen

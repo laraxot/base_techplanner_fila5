@@ -6,9 +6,12 @@ namespace Modules\User\Tests\Feature;
 
 use Illuminate\Database\QueryException;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Illuminate\Foundation\Testing\RefreshDatabase;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 use Modules\User\Models\Permission;
@@ -16,10 +19,14 @@ use Modules\User\Models\Profile;
 use Modules\User\Models\Role;
 use Modules\User\Models\User;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use Modules\User\Tests\TestCase;
 
 class UserManagementBusinessLogicTest extends TestCase
 {
+<<<<<<< HEAD
 =======
 use Tests\TestCase;
 
@@ -28,6 +35,8 @@ class UserManagementBusinessLogicTest extends TestCase
     use RefreshDatabase;
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     /** @test */
     public function itCanCreateUserWithProfile(): void
     {

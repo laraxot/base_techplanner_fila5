@@ -8,12 +8,18 @@ use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Actions\Passport\CreateGenericClientAction;
 use Modules\User\Actions\Passport\CreatePasswordClientAction;
 use Modules\User\Actions\Passport\CreatePersonalAccessClientAction;
 =======
 use Modules\User\Actions\Passport\CreateClientAction;
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\User\Actions\Passport\CreateGenericClientAction;
+use Modules\User\Actions\Passport\CreatePasswordClientAction;
+use Modules\User\Actions\Passport\CreatePersonalAccessClientAction;
+>>>>>>> dev
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -36,19 +42,26 @@ class ListOauthClients extends XotBaseListRecords
                         ->required()
                         ->maxLength(255),
                 ])
+<<<<<<< HEAD
                 ->action(function (array $data) {
 <<<<<<< HEAD
+=======
+                ->action(function (array $data): void {
+>>>>>>> dev
                     app(CreatePersonalAccessClientAction::class)->execute(
                         name: (string) $data['name'],
                         redirect: (string) config('app.url'),
                         user: null,
                         provider: null,
+<<<<<<< HEAD
 =======
                     app(CreateClientAction::class)->execute(
                         name: (string) $data['name'],
                         redirect: (string) config('app.url'),
                         personalAccess: true,
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                     );
                     Notification::make()
                         ->title(static::trans('actions.create_personal.success'))
@@ -69,18 +82,25 @@ class ListOauthClients extends XotBaseListRecords
                         ->required()
                         ->maxLength(255),
                 ])
+<<<<<<< HEAD
                 ->action(function (array $data) {
 <<<<<<< HEAD
+=======
+                ->action(function (array $data): void {
+>>>>>>> dev
                     app(CreatePasswordClientAction::class)->execute(
                         name: (string) $data['name'],
                         redirect: (string) config('app.url'),
                         user: null,
+<<<<<<< HEAD
 =======
                     app(CreateClientAction::class)->execute(
                         name: (string) $data['name'],
                         redirect: (string) config('app.url'),
                         password: true,
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                         provider: (string) $data['provider'],
                     );
                     Notification::make()
@@ -98,8 +118,12 @@ class ListOauthClients extends XotBaseListRecords
                         ->required()
                         ->maxLength(255),
                 ])
+<<<<<<< HEAD
                 ->action(function (array $data) {
 <<<<<<< HEAD
+=======
+                ->action(function (array $data): void {
+>>>>>>> dev
                     app(CreateGenericClientAction::class)->execute(
                         name: (string) $data['name'],
                         redirect: (string) config('app.url'),
@@ -107,11 +131,14 @@ class ListOauthClients extends XotBaseListRecords
                         password: false,
                         user: null,
                         provider: 'users',
+<<<<<<< HEAD
 =======
                     app(CreateClientAction::class)->execute(
                         name: (string) $data['name'],
                         redirect: (string) config('app.url'),
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                     );
                     Notification::make()
                         ->title(static::trans('actions.create_client_credentials.success'))

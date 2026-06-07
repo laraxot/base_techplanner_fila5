@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 # Integrazione Documentazione
@@ -78,3 +79,6 @@
 
 ---
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

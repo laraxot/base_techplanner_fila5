@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Notifiche Telegram 
 
 Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di SaluteOra.
@@ -8,6 +9,11 @@ Questa documentazione descrive come implementare notifiche Telegram nel modulo N
 Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di .
 Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di <nome progetto>.
 >>>>>>> 4b6b99016 (first commit)
+=======
+# Notifiche Telegram 
+
+Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di Quaeris.
+>>>>>>> dev
 
 ## Indice
 
@@ -23,11 +29,15 @@ Questa documentazione descrive come implementare notifiche Telegram nel modulo N
 ## Introduzione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. SaluteOra integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
 =======
 Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot.  integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
 Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. <nome progetto> integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
 >>>>>>> 4b6b99016 (first commit)
+=======
+Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. Quaeris integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
+>>>>>>> dev
 
 ## Setup del Bot Telegram
 
@@ -40,6 +50,7 @@ Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua AP
 
 ### Funzionalità del Bot
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Il bot di SaluteOra deve avere:
 - Privacy Mode disattivata (per leggere messaggi nei gruppi)
@@ -55,6 +66,12 @@ Il bot di <nome progetto> deve avere:
 - Comandi personalizzati configurati
 - Immagine del profilo con logo <nome progetto>
 >>>>>>> 4b6b99016 (first commit)
+=======
+Il bot di Quaeris deve avere:
+- Privacy Mode disattivata (per leggere messaggi nei gruppi)
+- Comandi personalizzati configurati
+- Immagine del profilo con logo Quaeris
+>>>>>>> dev
 
 ### Comandi Consigliati
 
@@ -62,11 +79,15 @@ Configura i seguenti comandi per il tuo bot:
 ```
 start - Inizia l'interazione con il bot
 <<<<<<< HEAD
+<<<<<<< HEAD
 register - Collega il tuo account Telegram a SaluteOra
 =======
 register - Collega il tuo account Telegram a
 register - Collega il tuo account Telegram a <nome progetto>
 >>>>>>> 4b6b99016 (first commit)
+=======
+register - Collega il tuo account Telegram a Quaeris
+>>>>>>> dev
 unregister - Scollega il tuo account Telegram
 settings - Gestisci le tue preferenze di notifica
 help - Ottieni assistenza
@@ -111,29 +132,41 @@ class AppointmentNotification extends Notification
 {
     protected $appointment;
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     public function __construct($appointment)
     {
         $this->appointment = $appointment;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     public function via($notifiable)
     {
         return [TelegramChannel::class];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     public function toTelegram($notifiable)
     {
         $url = url("/appointments/{$this->appointment->id}");
         
+<<<<<<< HEAD
 =======
 
     public function toTelegram($notifiable)
@@ -141,6 +174,8 @@ class AppointmentNotification extends Notification
         $url = url("/appointments/{$this->appointment->id}");
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         return TelegramMessage::create()
             ->content("**Promemoria Appuntamento**\n\nHai un appuntamento il {$this->appointment->formatted_date} alle {$this->appointment->formatted_time} con il Dr. {$this->appointment->doctor->name}.")
             ->button('Visualizza Dettagli', $url)
@@ -180,10 +215,14 @@ public function toTelegram($notifiable)
 {
     $appointmentId = $this->appointment->id;
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     return TelegramMessage::create()
         ->content("Confermi l'appuntamento del {$this->appointment->formatted_date}?")
         ->buttonWithCallback('Conferma', "confirm_appointment_{$appointmentId}")
@@ -208,6 +247,7 @@ public function toTelegram($notifiable)
 ### Collegamento Account Telegram
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per collegare un account Telegram a un utente SaluteOra:
 
 1. Implementa un comando `/register` nel bot che generi un token univoco.
@@ -222,6 +262,12 @@ Per collegare un account Telegram a un utente <nome progetto>:
 1. Implementa un comando `/register` nel bot che generi un token univoco.
 2. L'utente inserisce questo token nel proprio profilo nell'app <nome progetto>.
 >>>>>>> 4b6b99016 (first commit)
+=======
+Per collegare un account Telegram a un utente Quaeris:
+
+1. Implementa un comando `/register` nel bot che generi un token univoco.
+2. L'utente inserisce questo token nel proprio profilo nell'app Quaeris.
+>>>>>>> dev
 3. Salva il `chat_id` Telegram dell'utente nel database.
 
 ```php
@@ -235,6 +281,7 @@ class RegisterCommand extends Command
 {
     protected $name = 'register';
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $description = 'Collega il tuo account Telegram a SaluteOra';
     
 =======
@@ -242,21 +289,30 @@ class RegisterCommand extends Command
     protected $description = 'Collega il tuo account Telegram a <nome progetto>';
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+protected $description = 'Collega il tuo account Telegram a Quaeris';
+    
+>>>>>>> dev
     public function handle()
     {
         $chatId = $this->update->getMessage()->getChat()->getId();
         $token = Str::random(8);
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         // Salva il token temporaneo
         TelegramToken::create([
             'token' => $token,
             'chat_id' => $chatId,
             'expires_at' => now()->addHours(1),
         ]);
+<<<<<<< HEAD
 <<<<<<< HEAD
         
         $this->replyWithMessage([
@@ -267,6 +323,11 @@ class RegisterCommand extends Command
             'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo  per completare il collegamento."
             'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo <nome progetto> per completare il collegamento."
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+        $this->replyWithMessage([
+'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo Quaeris per completare il collegamento."
+>>>>>>> dev
         ]);
     }
 }
@@ -287,15 +348,22 @@ class VerifyTelegramToken
     {
         $token = $request->input('token');
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         $telegramToken = TelegramToken::where('token', $token)
             ->where('expires_at', '>', now())
             ->whereNull('user_id')
             ->first();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         
         if (!$telegramToken) {
             return response()->json(['error' => 'Token non valido o scaduto'], 400);
@@ -303,6 +371,7 @@ class VerifyTelegramToken
         
         $request->merge(['telegram_token' => $telegramToken]);
         
+<<<<<<< HEAD
 =======
 
         if (!$telegramToken) {
@@ -312,6 +381,8 @@ class VerifyTelegramToken
         $request->merge(['telegram_token' => $telegramToken]);
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         return $next($request);
     }
 }
@@ -339,11 +410,15 @@ class TelegramNotificationTest extends TestCase
         $user = User::factory()->create(['telegram_chat_id' => '123456789']);
         $appointment = Appointment::factory()->create();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         
         $notification = new AppointmentNotification($appointment);
         
         $telegramMessage = $notification->toTelegram($user);
         
+<<<<<<< HEAD
 =======
 
         $notification = new AppointmentNotification($appointment);
@@ -351,15 +426,21 @@ class TelegramNotificationTest extends TestCase
         $telegramMessage = $notification->toTelegram($user);
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         $this->assertStringContainsString(
             $appointment->formatted_date,
             $telegramMessage->content
         );
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         $this->assertCount(2, $telegramMessage->buttons);
     }
 }
@@ -400,6 +481,7 @@ class TelegramNotificationTest extends TestCase
 
 ## Collegamenti alla Documentazione Correlata
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [MULTI_CHANNEL_NOTIFICATIONS.md](./multi_channel_notifications.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
@@ -712,3 +794,8 @@ class TelegramNotificationTest extends TestCase
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./NOTIFICATIONS_IMPLEMENTATION_GUIDE.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./SMS_PROVIDER_CONFIGURATION.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [MULTI_CHANNEL_NOTIFICATIONS.md](./multi_channel_notifications.md)
+- [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
+- [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
+>>>>>>> dev

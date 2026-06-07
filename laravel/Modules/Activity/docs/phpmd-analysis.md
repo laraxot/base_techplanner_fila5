@@ -47,10 +47,14 @@
 // Instead of one complex method:
 private function validateActivityRestore(Activity $activity): bool
 <<<<<<< HEAD
+<<<<<<< HEAD
 private function performActivityRestore(Activity $activity): void  
 =======
 private function performActivityRestore(Activity $activity): void
 >>>>>>> 4b6b99016 (first commit)
+=======
+private function performActivityRestore(Activity $activity): void  
+>>>>>>> dev
 private function logActivityRestore(Activity $activity): void
 private function notifyActivityRestore(Activity $activity): void
 ```
@@ -72,10 +76,14 @@ if ($condition) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // ✅ AFTER  
 =======
 // ✅ AFTER
 >>>>>>> 4b6b99016 (first commit)
+=======
+// ✅ AFTER  
+>>>>>>> dev
 if ($condition) {
     return $result;
 }
@@ -175,6 +183,7 @@ return $alternative;
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 *
 =======
@@ -522,4 +531,7 @@ return $alternative;
 
 *Last Updated: 2025-11-12*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*
+>>>>>>> dev
 *Status: In Progress - Complexity Fixes*

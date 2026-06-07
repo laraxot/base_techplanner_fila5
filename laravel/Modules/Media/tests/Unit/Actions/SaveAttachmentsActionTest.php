@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\Media\Tests\Unit\Actions;
+
+>>>>>>> dev
 use Illuminate\Support\Facades\Storage;
 use Modules\Media\Actions\SaveAttachmentsAction;
 use Modules\Media\Models\Media;
@@ -12,7 +17,11 @@ uses(Tests\TestCase::class)->beforeEach(function () {
     Storage::fake('attachments');
 });
 
+<<<<<<< HEAD
 it('executes save attachments successfully', function (): void {
+=======
+it('executes save attachments successfully', function(): void {
+>>>>>>> dev
     // Arrange
     $action = new SaveAttachmentsAction;
 
@@ -47,7 +56,11 @@ it('executes save attachments successfully', function (): void {
     expect(Storage::disk('attachments')->exists('temp/contract.pdf'))->toBeTrue();
 });
 
+<<<<<<< HEAD
 it('handles empty attachments', function (): void {
+=======
+it('handles empty attachments', function(): void {
+>>>>>>> dev
     // Arrange
     $action = new SaveAttachmentsAction;
 
@@ -64,7 +77,11 @@ it('handles empty attachments', function (): void {
     expect(true)->toBeTrue();
 });
 
+<<<<<<< HEAD
 it('skips nonexistent files', function (): void {
+=======
+it('skips nonexistent files', function(): void {
+>>>>>>> dev
     // Arrange
     $action = new SaveAttachmentsAction;
 
@@ -83,7 +100,11 @@ it('skips nonexistent files', function (): void {
     expect(true)->toBeTrue();
 });
 
+<<<<<<< HEAD
 it('handles storage errors gracefully', function (): void {
+=======
+it('handles storage errors gracefully', function(): void {
+>>>>>>> dev
     // Arrange
     $action = new SaveAttachmentsAction;
 
@@ -102,7 +123,11 @@ it('handles storage errors gracefully', function (): void {
         ->toThrow(\Exception::class, 'Storage error');
 });
 
+<<<<<<< HEAD
 it('uses correct disk', function (): void {
+=======
+it('uses correct disk', function(): void {
+>>>>>>> dev
     // Arrange
     $action = new SaveAttachmentsAction;
 
@@ -134,7 +159,11 @@ it('uses correct disk', function (): void {
     expect(Storage::disk('custom_disk')->exists('temp/invoice.pdf'))->toBeTrue();
 });
 
+<<<<<<< HEAD
 it('cleans up temp files', function (): void {
+=======
+it('cleans up temp files', function(): void {
+>>>>>>> dev
     // Arrange
     $action = new SaveAttachmentsAction;
 
@@ -165,7 +194,11 @@ it('cleans up temp files', function (): void {
     expect(true)->toBeTrue();
 });
 
+<<<<<<< HEAD
 it('handles multiple attachments', function (): void {
+=======
+it('handles multiple attachments', function(): void {
+>>>>>>> dev
     // Arrange
     $action = new SaveAttachmentsAction;
 

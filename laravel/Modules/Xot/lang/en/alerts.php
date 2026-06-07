@@ -185,6 +185,9 @@ return [
             'restored' => 'The user was successfully restored.',
             'updated' => 'The user was successfully updated.',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'updated_password' => 'The user\'s password was successfully updated.',
         ],
     ],
@@ -201,9 +204,12 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
             'updated_password' => "The user's password was successfully updated.",
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

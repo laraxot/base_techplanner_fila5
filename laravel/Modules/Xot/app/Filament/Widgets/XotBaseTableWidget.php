@@ -21,7 +21,11 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     use InteractsWithPageFilters;
 
     /**
+<<<<<<< HEAD
      * Ascolta evento di aggiornamento filtri
+=======
+     * Ascolta evento di aggiornamento filtri.
+>>>>>>> dev
      */
     #[On('filterUpdate')]
     public function updateFilters(array $filters): void
@@ -31,7 +35,11 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     }
 
     /**
+<<<<<<< HEAD
      * Configura la tabella con le risposte
+=======
+     * Configura la tabella con le risposte.
+>>>>>>> dev
      */
     public function tableOLD(Table $table): Table
     {
@@ -40,7 +48,11 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
             $query = $query->getQuery();
         }
 
+<<<<<<< HEAD
         /** @var Builder|null $query */
+=======
+        /* @var Builder|null $query */
+>>>>>>> dev
         return $table
             ->query($query)
             ->columns($this->getTableColumns())
@@ -75,6 +87,10 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 
         $search = trim($search);
 
+<<<<<<< HEAD
         return $search !== '' ? $search : null;
+=======
+        return '' !== $search ? $search : null;
+>>>>>>> dev
     }
 }

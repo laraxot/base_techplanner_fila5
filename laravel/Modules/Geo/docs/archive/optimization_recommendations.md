@@ -292,7 +292,11 @@ php artisan geo:test-api-integration
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
+=======
+- [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
+>>>>>>> dev
 - [Google Places Integration](google-places.md)
 - [Address Model Documentation](models/address.md)
 

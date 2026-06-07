@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\Cms\Tests\TestCase::class);
+=======
+namespace Modules\Cms\Tests\Unit\Models;
+>>>>>>> dev
 
 use Modules\Cms\Models\Attachment;
 

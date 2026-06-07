@@ -336,10 +336,14 @@ php artisan lang:benchmark         # Test performance
 // Metadati versione
 'version' => '2.0.0',
 <<<<<<< HEAD
+<<<<<<< HEAD
 'last_updated' => '[DATE]',
 =======
 'last_updated' => '2025-01-27',
 >>>>>>> 4b6b99016 (first commit)
+=======
+'last_updated' => '[DATE]',
+>>>>>>> dev
 'compatibility' => [
     'laravel' => '^12.0',
     'filament' => '^3.0',
@@ -421,10 +425,14 @@ return [
 ## 🔗 **Riferimenti e Collegamenti**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README.md](readme.md) - Documentazione principale modulo
 =======
 - [README.md](README.md) - Documentazione principale modulo
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README.md](readme.md) - Documentazione principale modulo
+>>>>>>> dev
 - [config/lang.php](../config/lang.php) - Configurazione centralizzata
 - [Laraxot Framework](https://github.com/laraxot/laraxot) - Framework principale
 - [Laravel Localization](https://laravel.com/project_docs/localization) - Documentazione ufficiale

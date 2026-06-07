@@ -1,10 +1,14 @@
 # Processo di Build del Tema in il progetto
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento fornisce una panoramica del processo di build e pubblicazione del tema principale di il progetto. Per una documentazione più dettagliata, consultare il [documento completo nel modulo CMS](../../laravel/modules/cms/project_docs/theme-build-process.md).
 =======
 Questo documento fornisce una panoramica del processo di build e pubblicazione del tema principale di il progetto. Per una documentazione più dettagliata, consultare il [documento completo nel modulo CMS](../../laravel/Modules/Cms/project_docs/theme-build-process.md).
 >>>>>>> 4b6b99016 (first commit)
+=======
+Questo documento fornisce una panoramica del processo di build e pubblicazione del tema principale di il progetto. Per una documentazione più dettagliata, consultare il [documento completo nel modulo CMS](../../laravel/modules/cms/project_docs/theme-build-process.md).
+>>>>>>> dev
 
 ## Comandi Principali
 
@@ -42,10 +46,14 @@ Il tema è strettamente integrato con il modulo CMS di il progetto, che fornisce
 - Definizione dei blocchi di contenuto
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per ulteriori dettagli su come funziona l'integrazione, consultare la [documentazione del modulo CMS](../../laravel/modules/cms/project_docs/theme-cms-integration.md).
 =======
 Per ulteriori dettagli su come funziona l'integrazione, consultare la [documentazione del modulo CMS](../../laravel/Modules/Cms/project_docs/theme-cms-integration.md).
 >>>>>>> 4b6b99016 (first commit)
+=======
+Per ulteriori dettagli su come funziona l'integrazione, consultare la [documentazione del modulo CMS](../../laravel/modules/cms/project_docs/theme-cms-integration.md).
+>>>>>>> dev
 
 ## Risorse Aggiuntive
 
@@ -53,7 +61,11 @@ Per ulteriori dettagli su come funziona l'integrazione, consultare la [documenta
 - [Personalizzazione del Tema](./theme-customization.md)
 - [Struttura dei Componenti](./theme-components.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Integrazione con Filament](./filament-integration.md) 
 =======
 - [Integrazione con Filament](./filament-integration.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Integrazione con Filament](./filament-integration.md) 
+>>>>>>> dev

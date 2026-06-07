@@ -9,88 +9,136 @@ return [
             'placeholder' => 'Seleziona il livello di log',
             'help' => 'Livello di severità del log',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Inserisci il messaggio di log',
             'help' => 'Messaggio descrittivo del log',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'context' => [
             'label' => 'Contesto',
             'placeholder' => 'Inserisci il contesto del log',
             'help' => 'Contesto aggiuntivo per il log',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'channel' => [
             'label' => 'Canale',
             'placeholder' => 'Seleziona il canale di log',
             'help' => 'Canale di log da utilizzare',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'file' => [
             'label' => 'File',
             'placeholder' => 'Seleziona il file di log',
             'help' => 'File di log da utilizzare',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'max_files' => [
             'label' => 'File massimi',
             'placeholder' => 'Inserisci il numero massimo di file',
             'help' => 'Numero massimo di file di log da mantenere',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'max_size' => [
             'label' => 'Dimensione massima',
             'placeholder' => 'Inserisci la dimensione massima in MB',
             'help' => 'Dimensione massima per file di log in MB',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'retention_days' => [
-            'label' => 'Giorni di retention',
-            'placeholder' => 'Inserisci il numero di giorni',
-            'help' => 'Numero di giorni per mantenere i log',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'retention_days' => [
+            'label' => 'Giorni di retention',
+            'placeholder' => 'Inserisci il numero di giorni',
+            'help' => 'Numero di giorni per mantenere i log',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'validation' => [
@@ -192,6 +240,9 @@ return [
         'pdf' => 'PDF',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Log',
     'plural_label' => 'Log (Plurale)',
     'navigation' => [
@@ -216,6 +267,9 @@ return [
             'label' => 'Elimina Log',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risorsa Filament per il Modello Address
 
 ## Panoramica
@@ -104,3 +105,12 @@ Quando un altro modulo (es. StudioResource) deve gestire indirizzi, è best prac
 - [../../Xot/app/Filament/Resources/XotBaseResource.php](../../Xot/app/Filament/Resources/XotBaseResource.php)
 - [filament.md](./filament.md)
 - [models/address.md](./models/address.md)
+=======
+---
+module: theme
+topic: address_resource
+canonical: ../../../Themes/docs/shared-components/address-resource-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/address-resource-1.md
+>>>>>>> dev

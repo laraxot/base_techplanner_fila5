@@ -154,10 +154,14 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
 - [Documentazione Componenti](../componenti_personalizzati.md)
 - [Best Practices Filament](../filament-best-practices.mdc)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README Principale](../readme.md)
 =======
 - [README Principale](../README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README Principale](../readme.md)
+>>>>>>> dev
 
 ## Note di Sviluppo
 

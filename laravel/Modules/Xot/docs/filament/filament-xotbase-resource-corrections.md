@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzioni Implementate - Regola Critica XotBaseResource
 
 ## 🚨 Regola Critica Violata
@@ -200,3 +201,12 @@ class ExampleResource extends XotBaseResource
 *Modulo: Xot*
 *Categoria: Filament*
 *Status: ✅ Correzioni Implementate*
+=======
+---
+module: theme
+topic: filament-xotbase-resource-corrections
+canonical: ../../../../Themes/docs/shared-components/filament-xotbase-resource-corrections.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/filament-xotbase-resource-corrections.md
+>>>>>>> dev

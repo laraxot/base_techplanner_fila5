@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 /**
  * Übersetzungen für ContactColumn - Filament-Spalte für Kontakte
@@ -17,6 +18,8 @@ declare(strict_types=1);
  * @since 2025-08-01
  */
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 return [
     'label' => 'Kontakte',
     'no_contacts' => 'Keine Kontakte verfügbar',
@@ -34,6 +37,9 @@ return [
         'no_contacts' => 'Keine Kontakte verfügbar',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -46,6 +52,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

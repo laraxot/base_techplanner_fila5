@@ -151,7 +151,11 @@ class ComuneJson extends GeoJsonModel
      */
     public static function searchByName(string $name, int $limit = 0): Collection
     {
+<<<<<<< HEAD
         $name = mb_strtolower($name);
+=======
+        $name = mb_strtolower((string) $name);
+>>>>>>> dev
         $cacheKey = 'geo_search_'.md5($name).'_'.$limit;
 
         /** @var Collection<int, array{
@@ -165,8 +169,12 @@ class ComuneJson extends GeoJsonModel
          * }> $result */
         $result = Cache::remember($cacheKey, self::CACHE_TTL, static function () use ($name, $limit) {
             $results = static::all()
+<<<<<<< HEAD
                 /* @phpstan-ignore nullCoalesce.offset */
                 ->filter(static fn ($item) => str_contains(mb_strtolower($item['nome'] ?? ''), $name))
+=======
+                ->filter(static fn (array $item): bool => str_contains(mb_strtolower(self::getComuneName($item)), $name))
+>>>>>>> dev
                 ->sortBy('nome');
 
             return $limit > 0 ? $results->take($limit)->values() : $results->values();
@@ -200,8 +208,12 @@ class ComuneJson extends GeoJsonModel
          *     popolazione: int
          * }> $filtered */
         $filtered = static::all()
+<<<<<<< HEAD
             /* @phpstan-ignore nullCoalesce.offset */
             ->filter(static fn ($item) => \in_array($cap, $item['cap'] ?? [], true))
+=======
+            ->filter(static fn (array $item): bool => \in_array($cap, self::getCapList($item), true))
+>>>>>>> dev
             ->sortBy('nome')
             ->values();
 
@@ -209,6 +221,35 @@ class ComuneJson extends GeoJsonModel
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @param array<string, mixed> $item
+     */
+    private static function getComuneName(array $item): string
+    {
+        $name = $item['nome'] ?? null;
+
+        return \is_string($name) ? $name : '';
+    }
+
+    /**
+     * @param array<string, mixed> $item
+     *
+     * @return array<int, string>
+     */
+    private static function getCapList(array $item): array
+    {
+        $capList = $item['cap'] ?? null;
+
+        if (! \is_array($capList)) {
+            return [];
+        }
+
+        return array_values(array_filter($capList, 'is_string'));
+    }
+
+    /**
+>>>>>>> dev
      * Get all regions with their codes and names.
      *
      * @return Collection<string, string> [code => name]
@@ -396,10 +437,14 @@ class ComuneJson extends GeoJsonModel
 
             if (! $comune) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return;
 =======
                 return null;
 >>>>>>> 4b6b99016 (first commit)
+=======
+                return;
+>>>>>>> dev
             }
 
             return [

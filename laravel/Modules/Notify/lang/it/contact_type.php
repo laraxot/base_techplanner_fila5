@@ -10,9 +10,13 @@ return [
             'helper_text' => '',
             'description' => 'phone',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'mobile' => [
             'label' => 'mobile',
@@ -20,9 +24,13 @@ return [
             'helper_text' => '',
             'description' => 'mobile',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'email' => [
             'label' => 'email',
@@ -30,9 +38,13 @@ return [
             'helper_text' => '',
             'description' => 'email',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'pec' => [
             'label' => 'pec',
@@ -40,9 +52,13 @@ return [
             'helper_text' => '',
             'description' => 'pec',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'whatsapp' => [
             'label' => 'whatsapp',
@@ -50,9 +66,13 @@ return [
             'helper_text' => '',
             'description' => 'whatsapp',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'fax' => [
             'label' => 'fax',
@@ -60,9 +80,13 @@ return [
             'helper_text' => '',
             'description' => 'fax',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'notes' => [
             'description' => 'notes',
@@ -70,6 +94,9 @@ return [
             'placeholder' => 'notes',
             'label' => 'notes',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -95,8 +122,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Contact Type',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

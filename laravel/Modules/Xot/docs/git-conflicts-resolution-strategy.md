@@ -3,10 +3,14 @@
 ## Contesto
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data analisi:** [DATE]
 =======
 **Data analisi:** 2025-01-27
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data analisi:** [DATE]
+>>>>>>> dev
 **File con conflitti identificati:** 586 file PHP
 **Approccio:** Risoluzione manuale focalizzata su business logic
 
@@ -237,9 +241,12 @@ I conflitti sono stati causati da:
 ## Stato Corrente
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento:** 2025-01-27
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### Completati ✅
 - [x] Analisi complessiva (586 file identificati)

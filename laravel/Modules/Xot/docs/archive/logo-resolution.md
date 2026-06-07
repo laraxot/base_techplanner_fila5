@@ -103,12 +103,16 @@ Per la versione dark:
 
 ### Collegamenti ad Altri Moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Gestione Domini e Configurazioni](domain_configuration.md)
 - [Configurazione Generale](configuration.md)
 - [Struttura dei Moduli](module_structure.md)
 - [Architettura Folio + Volt](folio_volt_architecture.md)
 - [Regole per la Case Sensitivity](directory-case-sensitivity.md)
 - [Regole per i Namespace](namespace-rules.md)
+<<<<<<< HEAD
 =======
 - [Gestione Domini e Configurazioni](DOMAIN_CONFIGURATION.md)
 - [Configurazione Generale](CONFIGURATION.md)
@@ -117,6 +121,8 @@ Per la versione dark:
 - [Regole per la Case Sensitivity](DIRECTORY-CASE-SENSITIVITY.md)
 - [Regole per i Namespace](NAMESPACE-RULES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 - [Convenzioni di Naming](naming-conventions.md)
 
 ### Collegamenti alla Root del Progetto
@@ -234,12 +240,16 @@ Per la versione dark:
 
 ### Collegamenti ad Altri Moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Gestione Domini e Configurazioni](domain_configuration.md)
 - [Configurazione Generale](configuration.md)
 - [Struttura dei Moduli](module_structure.md)
 - [Architettura Folio + Volt](folio_volt_architecture.md)
 - [Regole per la Case Sensitivity](directory-case-sensitivity.md)
 - [Regole per i Namespace](namespace-rules.md)
+<<<<<<< HEAD
 =======
 - [Gestione Domini e Configurazioni](DOMAIN_CONFIGURATION.md)
 - [Configurazione Generale](CONFIGURATION.md)
@@ -255,6 +265,15 @@ Per la versione dark:
 - [Configurazione e Risoluzione dei Loghi](../../../docs/configurazione-logo.md)
 - [Struttura dei Moduli in il progetto](../../../docs/struttura-moduli.md)
 - [Architettura Folio + Volt in il progetto](../../../docs/architettura-folio-volt.md)
+=======
+- [Convenzioni di Naming](naming-conventions.md)
+
+### Collegamenti alla Root del Progetto
+- [Linee Guida per i Loghi](../../../../docs/standards/logo_guidelines.md)
+- [Configurazione e Risoluzione dei Loghi](../../../../docs/configurazione-logo.md)
+- [Struttura dei Moduli in il progetto](../../../../docs/struttura-moduli.md)
+- [Architettura Folio + Volt in il progetto](../../../../docs/architettura-folio-volt.md)
+>>>>>>> dev
 
 ---
 

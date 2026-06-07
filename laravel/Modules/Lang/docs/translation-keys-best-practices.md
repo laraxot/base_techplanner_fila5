@@ -2,10 +2,14 @@
 
 ## Collegamenti correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [README modulo Lang](./readme.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar_implementation.md)
+<<<<<<< HEAD
 =======
 - [README modulo Lang](./README.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
@@ -321,6 +325,8 @@ Seguire queste best practices per le chiavi di traduzione garantirà un'applicaz
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Header](/laravel/Modules/User/docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Panoramica
 

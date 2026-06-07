@@ -7,10 +7,14 @@ return [
         'key' => '',
         'secret' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'passphrase' => '',  // sarebbe extra ?
 =======
         'passphrase' => '',  //sarebbe extra ?
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'passphrase' => '',  // sarebbe extra ?
+>>>>>>> dev
         'host' => 'https://api.coinbase.com',
     ],
 ];

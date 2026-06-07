@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: PageResource
 description: PageResource
 extends: _layouts.documentation
@@ -26,3 +27,11 @@ ShowPageContent renderizza i content_blocks tramite il componente \Modules\UI\Vi
 che a sua volta renderizza la lista dei blocchi tramite il ciclo che è dentro /Modules/UI/resources/views/components/render/blocks/v1.blade.php
 
 La pagina Themes/Sixteen/resources/views/pages/pages/[slug].blade.php serve a renderizzare le altre pagine. Bisogna visitare l'url /it/pages/slug
+=======
+module: theme
+topic: page_resource
+canonical: ../../../Themes/docs/shared-components/page-resource.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/page-resource.md
+>>>>>>> dev

@@ -6,9 +6,13 @@ namespace Modules\Job\Filament\Resources\ScheduleResource\Pages;
 
 use Filament\Notifications\Notification;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Support\Components\Component;
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Filament\Support\Components\Component;
+>>>>>>> dev
 use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException;
 use Modules\Job\Filament\Resources\ScheduleResource;
@@ -26,6 +30,9 @@ class EditSchedule extends XotBaseEditRecord
 
     #[Override]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     protected function getFormSchema(): array
     {
         $schema = $this->getResource()::getFormSchema();
@@ -35,6 +42,7 @@ class EditSchedule extends XotBaseEditRecord
         Assert::allIsInstanceOf($components, Component::class);
 
         return $components;
+<<<<<<< HEAD
 =======
     public function getformSchema(): array
     {
@@ -42,6 +50,8 @@ class EditSchedule extends XotBaseEditRecord
 
         return $res;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 
     protected function onValidationError(ValidationException $exception): void

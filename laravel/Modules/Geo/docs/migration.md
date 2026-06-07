@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Migration Guide: Moving from <main module> to Geo Module
 
 ## Overview
@@ -537,3 +538,12 @@ git checkout -- app/Models/Comune.php
 - [Comune Model](comune-model.md)
 - [Sushi Configuration](sushi-configuration.md)
 - [Sushi Command](sushi-command.md)
+=======
+---
+module: theme
+topic: migration
+canonical: ../../../Themes/docs/shared-components/migration-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-guide.md
+>>>>>>> dev

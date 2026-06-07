@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 # Analisi PHPStan livello 10 - tema
 
 ## Scopo
@@ -13,6 +16,22 @@ Mantenere un tracciamento sintetico dell'analisi PHPStan del tema, distinguendo 
 - **Stato**: da verificare
 - **Errori correnti**: da aggiornare
 
+<<<<<<< HEAD
+=======
+## Artefatti PHPStan per il tema Zero
+
+- Report aggregato cross‑tema: `laravel/docs/phpstan_theme_zero_analysis.json`
+- Output tecnico specifico del tema Zero: `laravel/Themes/Zero/phpstan_themes_zero_filtered.json`
+
+Regola:
+
+- nessun file `phpstan_*.json` specifico del tema deve vivere nella root `laravel/`
+- i report generici cross‑modulo vanno in `laravel/docs/`
+- gli output tecnici legati solo al tema Zero vanno sotto `laravel/Themes/Zero/` (o sue sottocartelle tecniche).
+
+Questi file JSON servono solo come supporto tecnico (analisi, tool automatici) e non come documentazione di business logic.
+
+>>>>>>> dev
 ## Note
 Se sono presenti cartelle legacy o extra non in target, specificare le esclusioni e il motivo.
 
@@ -22,6 +41,7 @@ Se sono presenti cartelle legacy o extra non in target, specificare le esclusion
 - [theme documentation](./theme-documentation.md)
 - [theme architecture](./theme-architecture-best-practices.md)
 - [README](./README.md)
+<<<<<<< HEAD
 =======
 # PHPStan Level 10 Analysis - Theme Zero
 
@@ -38,3 +58,5 @@ Se sono presenti cartelle legacy o extra non in target, specificare le esclusion
 > [!NOTE]
 > The `extras/` directory contains legacy scripts and was excluded from the main stabilization target to focus on the active theme logic.
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "laraxot/module_job_fila3",
   "description": "Background job execution module for the Laraxot ecosystem: queue management, task dispatching, and async processing.",
   "keywords": [
@@ -80,11 +81,16 @@
 =======
     "name": "laraxot/module_job_fila3",
     "description": "job module enables efficient background task execution. It lets you offload resource-heavy processes, like sending emails or data processing, improving app performance. Through simple job definition and dispatching, you can enhance user experience while tasks run seamlessly in the background.",
+=======
+    "name": "laraxot/module_job_fila5",
+    "description": "Background job execution module for the Laraxot ecosystem: queue management, task dispatching, and async processing.",
+>>>>>>> dev
     "keywords": [
         "laraxot",
         "laravel",
         "filament",
         "module_job",
+<<<<<<< HEAD
         "Laravel",
         "Job module",
         "background tasks",
@@ -94,6 +100,14 @@
         "user experience"
     ],
     "homepage": "https://github.com/laraxot/module_job_fila3.git",
+=======
+        "job",
+        "queue",
+        "background-tasks",
+        "async"
+    ],
+    "homepage": "https://github.com/laraxot/module_job_fila5.git",
+>>>>>>> dev
     "license": "MIT",
     "authors": [
         {
@@ -102,7 +116,13 @@
             "role": "Developer"
         }
     ],
+<<<<<<< HEAD
     "require": {},
+=======
+    "require": {
+        "php": "^8.3"
+    },
+>>>>>>> dev
     "require-dev": {},
     "repositories_comment": [
         {
@@ -158,4 +178,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true
 }
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

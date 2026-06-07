@@ -257,7 +257,11 @@ $capsMilano = Comune::byCity('Milano')->pluck('cap');
 - **La struttura flat e ricca del json** rende naturale questa scelta.
 - **La documentazione e i metodi statici** garantiscono comunque chiarezza e facilità d'uso.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Se in futuro servono modelli separati, si possono reintrodurre facilmente come wrapper.** 
 =======
 - **Se in futuro servono modelli separati, si possono reintrodurre facilmente come wrapper.**
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Se in futuro servono modelli separati, si possono reintrodurre facilmente come wrapper.** 
+>>>>>>> dev

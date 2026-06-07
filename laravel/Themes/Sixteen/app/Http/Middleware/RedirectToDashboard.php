@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> dev
 namespace Themes\Sixteen\Http\Middleware;
 
 use Closure;

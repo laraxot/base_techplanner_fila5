@@ -20,50 +20,75 @@ return [
             'tooltip' => 'Nome del job monitorato',
             'placeholder' => 'Inserisci nome del job',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Guard associato al job',
             'placeholder' => 'Seleziona guard',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'permissions' => [
             'label' => 'Permessi',
             'tooltip' => 'Permessi associati al job',
             'placeholder' => 'Seleziona permessi',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'updated_at' => [
             'label' => 'Aggiornato il',
             'tooltip' => 'Data dell\'ultimo aggiornamento del job monitorato',
             'placeholder' => 'Data di aggiornamento',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome dell\'utente che gestisce il job',
             'placeholder' => 'Nome del responsabile',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -125,8 +150,13 @@ return [
     ],
     'title' => 'job monitor',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Job Monitor',
     'plural_label' => 'Job Monitor (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Job Monitor',
+    'plural_label' => 'Job Monitor (Plurale)',
+>>>>>>> dev
 ];

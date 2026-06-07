@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Cms\Models\Module;
 use Modules\Cms\Tests\TestHelper;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
@@ -111,3 +112,11 @@ it('user admin can view module dashboard', function (): void {
     /* @phpstan-ignore-next-line property.notFound */
     $this->actingAs($this->super_admin_user)->get('http://multiv.local/barbershop/admin/dashboard')->assertStatus(200); // ->assertSee($modules_name);
 })->todo();
+=======
+describe('CMS Module', function (): void {
+    it('cms module placeholder', function (): void {
+        // Placeholder - actual tests require database setup
+        expect(true)->toBeTrue();
+    });
+});
+>>>>>>> dev

@@ -11,16 +11,23 @@ Le interfacce sono organizzate in due livelli:
 1. **Interfacce Generiche**: Posizionate direttamente nella directory `app/Contracts/`
    ```
 <<<<<<< HEAD
+<<<<<<< HEAD
    /var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/SmsActionContract.php
 =======
    Modules/Notify/app/Contracts/SmsActionContract.php
    Modules/Notify/app/Contracts/SmsActionContract.php
    Modules/Notify/app/Contracts/SmsActionContract.php
 >>>>>>> 4b6b99016 (first commit)
+=======
+   Modules/Notify/app/Contracts/SmsActionContract.php
+   Modules/Notify/app/Contracts/SmsActionContract.php
+   Modules/Notify/app/Contracts/SmsActionContract.php
+>>>>>>> dev
    ```
 
 2. **Interfacce Specifiche per Canale**: Posizionate in sottodirectory dedicate
    ```
+<<<<<<< HEAD
 <<<<<<< HEAD
    /var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
 =======
@@ -28,6 +35,11 @@ Le interfacce sono organizzate in due livelli:
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
 >>>>>>> 4b6b99016 (first commit)
+=======
+   Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+   Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+   Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+>>>>>>> dev
    ```
 
 ### Convenzioni di Naming
@@ -37,10 +49,14 @@ Le interfacce sono organizzate in due livelli:
    // ✅ CORRETTO
    interface SmsActionContract
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
    // ❌ ERRATO
    interface SmsActionInterface
    ```
@@ -50,10 +66,14 @@ Le interfacce sono organizzate in due livelli:
    // Per interfacce nella directory principale
    namespace Modules\Notify\Contracts;
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
    // Per interfacce in sottodirectory
    namespace Modules\Notify\Contracts\SMS;
    ```
@@ -86,10 +106,14 @@ final class SendNetfunSMSAction implements SmsActionContract
 {
     // Implementazione...
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
     public function execute(SmsData $smsData): array
     {
         // Logica di invio SMS...
@@ -118,10 +142,13 @@ Se si verifica l'errore `Interface "Modules\Notify\Contracts\SMS\SmsActionContra
 ## Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni di Naming per le Interfacce](./interface_naming_convention.md)
 - [Chiarimento sulla Struttura delle Interfacce](./interface_structure_clarification.md)
 - [Architettura dei Contratti](./contracts_architecture.md)
 =======
+=======
+>>>>>>> dev
 - [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 - [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 - [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
@@ -223,4 +250,7 @@ Se si verifica l'errore `Interface "Modules\Notify\Contracts\SMS\SmsActionContra
 - [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 - [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 - [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

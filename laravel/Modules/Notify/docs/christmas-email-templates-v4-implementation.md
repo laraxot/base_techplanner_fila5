@@ -1,9 +1,13 @@
 # Christmas Email Templates v4.0 - Implementation Report
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-12-19
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data**: 2025-12-19
+>>>>>>> dev
 **Versione**: v4.0 - Luxury, Winter Wonderland & Elephant Mascot
 **Status**: ✅ Completato
 
@@ -478,10 +482,14 @@ Gli errori PHPStan sono in file PHP esistenti:
 ## 📝 Changelog
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### v4.0 - [DATE]
 =======
 ### v4.0 - 2025-12-19
 >>>>>>> 4b6b99016 (first commit)
+=======
+### v4.0 - 2025-12-19
+>>>>>>> dev
 
 **Added**:
 - ✨ 3 nuovi template natalizi professionali
@@ -506,10 +514,14 @@ Gli errori PHPStan sono in file PHP esistenti:
 **Design & Implementation**: Claude Sonnet 4.5
 **Project**: Sottana Service Christmas Email Templates v4.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Date**: [DATE]
 =======
 **Date**: 2025-12-19
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Date**: 2025-12-19
+>>>>>>> dev
 **Framework**: Laravel + Spatie Mail Templates + Mustache
 **Theme**: Sixteen (Filament 4)
 

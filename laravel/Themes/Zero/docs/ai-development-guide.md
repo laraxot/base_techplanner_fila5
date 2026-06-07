@@ -2,10 +2,16 @@
 
 ## Overview
 
+<<<<<<< HEAD
 This guide explains how to leverage AI assistants (Claude Code, Cursor, Windsurf) when developing with the **Zero Theme** in the Quaeris Fila4 Mono project.
 
 Zero is a flexible, modern Laravel theme system built on Filament 4, Livewire 3, and Volt. Understanding how to configure AI assistants for theme development ensures faster, more consistent development.
 
+=======
+This guide explains how to leverage AI assistants (Claude Code, Cursor, Windsurf) when developing with the **Zero Theme** in the healthcare_app Fila4 Mono project.
+
+Zero is a flexible, modern Laravel theme system built on Filament 4, Livewire 3, and Volt. Understanding how to configure AI assistants for theme development ensures faster, more consistent development.
+>>>>>>> dev
 ## Why AI Configuration Matters for Theme Development
 
 ### Theme-Specific Patterns
@@ -37,10 +43,14 @@ The Zero theme has unique conventions that differ from standard Laravel/Filament
 The project root contains shared instructions that include Zero theme patterns:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Location**: `CLAUDE.md`
 =======
 **Location**: `/var/www/_bases/base_quaeris_fila4_mono/CLAUDE.md`
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Location**: `CLAUDE.md`
+>>>>>>> dev
 
 **Zero Theme Section**: Documents theme structure, best practices, and integration patterns.
 
@@ -536,10 +546,14 @@ Consider creating a custom MCP server for Zero theme operations:
       "args": ["-y", "zero-theme-mcp-server"],
       "env": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "THEME_PATH": "Themes/Zero"
 =======
         "THEME_PATH": "/var/www/_bases/base_quaeris_fila4_mono/laravel/Themes/Zero"
 >>>>>>> 4b6b99016 (first commit)
+=======
+        "THEME_PATH": "Themes/Zero"
+>>>>>>> dev
       }
     }
   }
@@ -660,6 +674,12 @@ Consider creating a custom MCP server for Zero theme operations:
 **Version**: 1.0
 **Last Updated**: December 23, 2025
 **Theme**: Zero
+<<<<<<< HEAD
 **Maintainer**: Quaeris Team
 
 *This guide is part of the Quaeris documentation standard for AI-assisted development.*
+=======
+**Maintainer**: healthcare_app Team
+
+*This guide is part of the healthcare_app documentation standard for AI-assisted development.*
+>>>>>>> dev

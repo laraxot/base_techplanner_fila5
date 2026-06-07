@@ -18,8 +18,12 @@ use function Safe\fopen;
 
 class ClockWidget extends Widget
 {
+<<<<<<< HEAD
     /** @var string */
     public $time = '---';
+=======
+    public string $time = '---';
+>>>>>>> dev
 
     public bool $run = false;
 

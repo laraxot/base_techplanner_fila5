@@ -15,10 +15,13 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Filament\Notifications\Notification as FilamentNotification;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Log;
@@ -32,6 +35,7 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
  * @property Schema $telegramForm
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 class SendTelegramPage extends XotBasePage
 {
 =======
@@ -40,6 +44,10 @@ class SendTelegramPage extends XotBasePage implements HasForms
     use InteractsWithForms;
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+class SendTelegramPage extends XotBasePage
+{
+>>>>>>> dev
     // use NavigationLabelTrait;
 
     public ?array $telegramData = [];

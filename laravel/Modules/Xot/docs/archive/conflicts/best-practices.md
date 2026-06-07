@@ -76,10 +76,14 @@ namespace Modules\ModuleName\App\Models;
 ## Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni Namespace](../namespace-conventions.md)
 =======
 - [Convenzioni Namespace](../NAMESPACE-CONVENTIONS.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Convenzioni Namespace](../namespace-conventions.md)
+>>>>>>> dev
 - [PHPStan Livello 10](../phpstan_livello10_linee_guida.md)
 - [Struttura Moduli](../module-structure.md)
 - [Risoluzione Conflitti Merge](../risoluzione_conflitti_merge.md)

@@ -1,10 +1,14 @@
 # Notify Module - Code Fixes & Improvements (2025)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **
 =======
 > **Last Updated:** 2025-11-23
 >>>>>>> 4b6b99016 (first commit)
+=======
+> **Last Updated:** 2025-11-23
+>>>>>>> dev
 > **PHPStan Level:** Target 10
 > **Status:** Major Syntax Fixes Completed
 

@@ -103,6 +103,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -193,6 +196,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         'avatar' => 'Avatar',
         'email' => 'Email',
@@ -210,6 +214,8 @@ return [
         'created' => 'Created',
         'expires' => 'Expires',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'or' => 'Or',
     'cancel' => 'Cancel',
@@ -249,6 +255,9 @@ return [
         'request_another' => 'clicca qui per richiederla di nuovo',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -260,6 +269,9 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

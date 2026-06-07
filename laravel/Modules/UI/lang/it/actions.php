@@ -14,6 +14,9 @@ return [
         'body' => 'Questo è un messaggio di prova per il record con ID: :id',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Actions',
     'plural_label' => 'Actions (Plurale)',
     'navigation' => [
@@ -58,6 +61,9 @@ return [
             'label' => 'Elimina Actions',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

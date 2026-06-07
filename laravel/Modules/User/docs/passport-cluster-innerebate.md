@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Discussione Interiore: Pro e Contro Cluster Passport
 
 ## Voce del Dubbio (VD)
@@ -33,3 +34,12 @@ Il momento migliore per fare una cosa giusta è ora, non quando diventa urgente.
 ## Risultato della Discussione
 
 La Voce della Ragione ha vinto perché ha presentato argomenti concreti basati sui principi DRY e KISS del framework Laraxot, sulla logica organizzativa e sulla buona pratica di progettazione del software. La creazione del cluster Passport è un miglioramento architetturale che rispetta la filosofia del progetto.
+=======
+---
+module: theme
+topic: passport-cluster-innerebate
+canonical: ../../../Themes/docs/shared-components/passport-cluster-inner-debate.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-inner-debate.md
+>>>>>>> dev

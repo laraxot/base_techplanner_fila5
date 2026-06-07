@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Correzioni - Sessione Novembre 2025
 
 ## 🎯 Obiettivo: 0 Errori PHPStan Livello 10
@@ -128,3 +129,12 @@ Se un metodo è garantito da interfaccia/contratto, NON serve:
 **Status**: In Progress
 **Target**: 0 errori PHPStan
 **Confidenza**: Massima (Supermucca Mode)
+=======
+---
+module: theme
+topic: phpstan-session
+canonical: ../../../Themes/docs/shared-components/phpstan-session-nov2025.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-session-nov2025.md
+>>>>>>> dev

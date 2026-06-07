@@ -1,9 +1,12 @@
 # Bulk Coordinate Updates
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Last Update**: 18 Dicembre 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Status**: ✅ Implementation Complete
 **Module**: Geo
 

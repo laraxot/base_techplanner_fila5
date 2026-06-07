@@ -233,10 +233,14 @@ class DatiRelationManager extends XotBaseRelationManager
 ## Collegamenti alla Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [XotBaseRelationManager](/laravel/modules/xot/project_docs/filament/relation_managers.md)
 - [Regole di Traduzione](/laravel/modules/xot/project_docs/translation_rules.md)
 - [Filament Resources](/laravel/modules/xot/project_docs/filament/resources.md)
 
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 3 Giugno 2025*
 - [XotBaseRelationManager](/laravel/Modules/Xot/project_docs/filament/relation_managers.md)
@@ -245,6 +249,8 @@ class DatiRelationManager extends XotBaseRelationManager
 
 *Ultimo aggiornamento: 3 Giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 # HasXotTable Trait per Filament in Laraxot PTVX
 
 ## Panoramica
@@ -480,10 +486,14 @@ class DatiRelationManager extends XotBaseRelationManager
 ## Collegamenti alla Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [XotBaseRelationManager](/laravel/modules/xot/docs/filament/relation_managers.md)
 - [Regole di Traduzione](/laravel/modules/xot/docs/translation_rules.md)
 - [Filament Resources](/laravel/modules/xot/docs/filament/resources.md)
 
+<<<<<<< HEAD
 =======
 - [XotBaseRelationManager](/laravel/Modules/Xot/docs/filament/relation_managers.md)
 - [Regole di Traduzione](/laravel/Modules/Xot/docs/translation_rules.md)
@@ -491,3 +501,5 @@ class DatiRelationManager extends XotBaseRelationManager
 
 *Ultimo aggiornamento: 3 Giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

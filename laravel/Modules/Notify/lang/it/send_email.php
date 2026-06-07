@@ -39,7 +39,11 @@ return [
         ],
         'empty' => [
             'heading' => '',
+<<<<<<< HEAD
             'label' => 'empty',
+=======
+            'label' => 'empty12',
+>>>>>>> dev
         ],
     ],
     'fields' => [
@@ -55,10 +59,14 @@ return [
             'label' => 'Template Email',
             'placeholder' => 'Seleziona il template email da utilizzare',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Template predefinito per l\'email (opzionale]',
 =======
             'help' => 'Template predefinito per l\'email (opzionale)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'help' => 'Template predefinito per l\'email (opzionale]',
+>>>>>>> dev
             'description' => 'Template email da utilizzare per il contenuto',
             'tooltip' => 'I template permettono di standardizzare il formato delle email',
             'helper_text' => '',
@@ -73,12 +81,17 @@ return [
         ],
         'cc' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'label' => 'Copia Conoscenza (CC]',
             'placeholder' => 'cc@esempio.com (opzionale]',
 =======
             'label' => 'Copia Conoscenza (CC)',
             'placeholder' => 'cc@esempio.com (opzionale)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'label' => 'Copia Conoscenza (CC]',
+            'placeholder' => 'cc@esempio.com (opzionale]',
+>>>>>>> dev
             'help' => 'Indirizzi email in copia conoscenza, separati da virgola',
             'description' => 'Indirizzi email in copia conoscenza',
             'tooltip' => 'I destinatari in CC vedranno tutti gli altri indirizzi',
@@ -86,12 +99,17 @@ return [
         ],
         'bcc' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'label' => 'Copia Nascosta (BCC]',
             'placeholder' => 'bcc@esempio.com (opzionale]',
 =======
             'label' => 'Copia Nascosta (BCC)',
             'placeholder' => 'bcc@esempio.com (opzionale)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'label' => 'Copia Nascosta (BCC]',
+            'placeholder' => 'bcc@esempio.com (opzionale]',
+>>>>>>> dev
             'help' => 'Indirizzi email in copia nascosta, separati da virgola',
             'description' => 'Indirizzi email in copia nascosta',
             'tooltip' => 'I destinatari in BCC non vedranno gli altri indirizzi',
@@ -101,10 +119,14 @@ return [
             'label' => 'Email Mittente',
             'placeholder' => 'mittente@dominio.com',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Indirizzo email del mittente (se diverso dal default]',
 =======
             'help' => 'Indirizzo email del mittente (se diverso dal default)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'help' => 'Indirizzo email del mittente (se diverso dal default]',
+>>>>>>> dev
             'description' => 'Indirizzo email del mittente personalizzato',
             'tooltip' => 'L\'email del mittente apparirà nell\'intestazione',
             'helper_text' => '',
@@ -113,10 +135,14 @@ return [
             'label' => 'Nome Mittente',
             'placeholder' => 'Nome del mittente',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Nome visualizzato del mittente (se diverso dal default]',
 =======
             'help' => 'Nome visualizzato del mittente (se diverso dal default)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'help' => 'Nome visualizzato del mittente (se diverso dal default]',
+>>>>>>> dev
             'description' => 'Nome visualizzato del mittente personalizzato',
             'tooltip' => 'Il nome del mittente apparirà accanto all\'email',
             'helper_text' => '',
@@ -125,10 +151,14 @@ return [
             'label' => 'Contenuto Testo',
             'placeholder' => 'Inserisci il contenuto testuale dell\'email',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Contenuto testuale dell\'email (versione solo testo]',
 =======
             'help' => 'Contenuto testuale dell\'email (versione solo testo)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'help' => 'Contenuto testuale dell\'email (versione solo testo]',
+>>>>>>> dev
             'description' => 'Contenuto testuale dell\'email',
             'tooltip' => 'Il contenuto testuale è la versione plain text dell\'email',
             'helper_text' => '',
@@ -137,10 +167,14 @@ return [
             'label' => 'Contenuto HTML',
             'placeholder' => '<h1>Titolo</h1><p>Contenuto dell\'email in formato HTML</p>',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Contenuto HTML formattato dell\'email (opzionale]',
 =======
             'help' => 'Contenuto HTML formattato dell\'email (opzionale)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'help' => 'Contenuto HTML formattato dell\'email (opzionale]',
+>>>>>>> dev
             'description' => 'Contenuto HTML formattato dell\'email',
             'tooltip' => 'Il contenuto HTML permette formattazione avanzata',
             'helper_text' => '',
@@ -157,10 +191,14 @@ return [
             'label' => 'Allegati',
             'placeholder' => 'Seleziona i file da allegare',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'File da allegare all\'email (opzionale, max 10MB per file]',
 =======
             'help' => 'File da allegare all\'email (opzionale, max 10MB per file)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'help' => 'File da allegare all\'email (opzionale, max 10MB per file]',
+>>>>>>> dev
             'description' => 'File da allegare all\'email',
             'tooltip' => 'Gli allegati verranno inviati insieme all\'email',
             'helper_text' => '',
@@ -313,12 +351,17 @@ return [
         'from_name_max' => 'Il nome del mittente è troppo lungo',
         'content_required' => 'Il contenuto testuale dell\'email è obbligatorio',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'content_max' => 'Il contenuto testuale è troppo lungo (max 10000 caratteri]',
         'body_html_max' => 'Il contenuto HTML è troppo lungo (max 20000 caratteri]',
 =======
         'content_max' => 'Il contenuto testuale è troppo lungo (max 10000 caratteri)',
         'body_html_max' => 'Il contenuto HTML è troppo lungo (max 20000 caratteri)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'content_max' => 'Il contenuto testuale è troppo lungo (max 10000 caratteri]',
+        'body_html_max' => 'Il contenuto HTML è troppo lungo (max 20000 caratteri]',
+>>>>>>> dev
         'template_exists' => 'Il template selezionato non esiste',
         'parameters_required' => 'I parametri sono obbligatori quando si utilizza un template',
         'parameters_json' => 'I parametri devono essere in formato JSON valido',
@@ -385,8 +428,13 @@ return [
         'text_content' => 'Contenuto testuale dell\'email in formato plain text',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Send Email',
     'plural_label' => 'Send Email (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Send Email',
+    'plural_label' => 'Send Email (Plurale)',
+>>>>>>> dev
 ];

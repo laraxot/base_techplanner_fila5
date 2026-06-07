@@ -33,11 +33,15 @@ class LocationSelect extends Select
     {
         parent::setUp();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         
         $this->afterStateUpdated(function ($state, callable $set) {
             // Clear dependent fields when parent changes
             $path = $this->getStatePath();
             
+<<<<<<< HEAD
 =======
 
         $this->afterStateUpdated(function ($state, callable $set) {
@@ -45,6 +49,8 @@ class LocationSelect extends Select
             $path = $this->getStatePath();
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             if ($path === 'region_id') {
                 $set('province_id', null);
                 $set('city_id', null);
@@ -58,19 +64,27 @@ class LocationSelect extends Select
         });
     }
 <<<<<<< HEAD
-    
-=======
-
->>>>>>> 4b6b99016 (first commit)
-    public static function make(string $name): static
-    {
-        return parent::make($name)->searchable()->reactive();
-    }
 <<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
+    public static function make(string $name): static
+    {
+        return parent::make($name)->searchable()->reactive();
+    }
+<<<<<<< HEAD
+<<<<<<< HEAD
+    
+=======
+
+>>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     public function getRegionSelect(): static
     {
         return $this->make('region_id')
@@ -83,10 +97,14 @@ class LocationSelect extends Select
             ->reactive();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     public function getProvinceSelect(): static
     {
         return $this->make('province_id')
@@ -103,10 +121,14 @@ class LocationSelect extends Select
             ->reactive();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     public function getCitySelect(): static
     {
         return $this->make('city_id')
@@ -123,10 +145,14 @@ class LocationSelect extends Select
             ->reactive();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     public function getCapSelect(): static
     {
         return $this->make('cap')
@@ -166,6 +192,9 @@ public function panel(Panel $panel): Panel
                             LocationSelect::make('region_id')
                                 ->getRegionSelect(),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
                                 
                             LocationSelect::make('province_id')
                                 ->getProvinceSelect(),
@@ -173,6 +202,7 @@ public function panel(Panel $panel): Panel
                             LocationSelect::make('city_id')
                                 ->getCitySelect(),
                                 
+<<<<<<< HEAD
 =======
 
                             LocationSelect::make('province_id')
@@ -182,6 +212,8 @@ public function panel(Panel $panel): Panel
                                 ->getCitySelect(),
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                             LocationSelect::make('cap')
                                 ->getCapSelect(),
                         ]),
@@ -229,15 +261,22 @@ public static function form(Form $form): Form
         ->schema([
             // Other fields...
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+            
+>>>>>>> dev
             Forms\Components\Fieldset::make(__('geo::location.location'))
                 ->schema([
                     LocationSelect::make('region_id')
                         ->getRegionSelect(),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
                         
                     LocationSelect::make('province_id')
                         ->getProvinceSelect(),
@@ -248,6 +287,7 @@ public static function form(Form $form): Form
                     LocationSelect::make('cap')
                         ->getCapSelect(),
                         
+<<<<<<< HEAD
 =======
 
                     LocationSelect::make('province_id')
@@ -260,6 +300,8 @@ public static function form(Form $form): Form
                         ->getCapSelect(),
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                     Forms\Components\TextInput::make('address')
                         ->label(__('geo::location.address'))
                         ->required(),
@@ -293,10 +335,14 @@ class ImportGeoData extends Command
     {
         $json = json_decode(file_get_contents(module_path('Geo', 'resources/json/comuni.json')), true);
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         DB::transaction(function () use ($json) {
             foreach ($json as $item) {
                 // Import region
@@ -305,10 +351,14 @@ class ImportGeoData extends Command
                     ['name' => $item['regione']['nome']]
                 );
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+                
+>>>>>>> dev
                 // Import province
                 $province = Province::firstOrCreate(
                     ['code' => $item['provincia']['codice']],
@@ -318,10 +368,14 @@ class ImportGeoData extends Command
                     ]
                 );
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+                
+>>>>>>> dev
                 // Import city
                 $city = City::firstOrCreate(
                     ['code' => $item['codice']],
@@ -331,10 +385,14 @@ class ImportGeoData extends Command
                     ]
                 );
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+                
+>>>>>>> dev
                 // Import CAPs
                 foreach ($item['cap'] as $capCode) {
                     Cap::firstOrCreate(
@@ -346,10 +404,14 @@ class ImportGeoData extends Command
                 }
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+            
+>>>>>>> dev
             $this->info('Geographical data imported successfully!');
         });
     }
@@ -418,11 +480,15 @@ class LocationSelectTest extends TestCase
         $city = City::factory()->create(['province_id' => $province->id]);
         $cap = Cap::factory()->create(['city_id' => $city->id]);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         
         $this->get(route('filament.resources.addresses.create'))
             ->assertSuccessful()
             ->assertSee('Region');
             
+<<<<<<< HEAD
 =======
 
         $this->get(route('filament.resources.addresses.create'))
@@ -430,24 +496,34 @@ class LocationSelectTest extends TestCase
             ->assertSee('Region');
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         // Test region selection
         $this->post(route('filament.resources.addresses.get-province-options'), [
             'region_id' => $region->id
         ])->assertJson([$province->id => $province->name]);
 <<<<<<< HEAD
-        
-=======
-
->>>>>>> 4b6b99016 (first commit)
-        // Test city selection
-        $this->post(route('filament.resources.addresses.get-city-options'), [
-            'province_id' => $province->id
-        ])->assertJson([$city->id => $city->name]);
 <<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
+        // Test city selection
+        $this->post(route('filament.resources.addresses.get-city-options'), [
+            'province_id' => $province->id
+        ])->assertJson([$city->id => $city->name]);
+<<<<<<< HEAD
+<<<<<<< HEAD
+        
+=======
+
+>>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         // Test CAP selection
         $this->post(route('filament.resources.addresses.get-cap-options'), [
             'city_id' => $city->id

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Implementazione Sushi per il Modello Comune
 
 ## Descrizione
@@ -315,3 +316,12 @@ Responsabile: Cascade AI
 ## Policy aggiornata: niente trait per una sola classe
 Non creare trait come ComuneSushiTrait se usati solo in un modello. I trait vanno creati solo se riutilizzati in più classi. Se la logica è specifica di un solo modello, va implementata direttamente nella classe. Motivazione: semplicità, KISS, manutenibilità, evitare complessità inutile. Collegamento a docs/xot.md.
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: comune-sushi-implementation
+canonical: ../../../Themes/docs/shared-components/comune-sushi-implementation-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/comune-sushi-implementation-1.md
+>>>>>>> dev

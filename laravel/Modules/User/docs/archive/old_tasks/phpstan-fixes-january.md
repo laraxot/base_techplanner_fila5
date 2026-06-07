@@ -212,10 +212,14 @@ $subject = Lang::get('user::email.password_reset_subject');
 
 ### **Documentazione Correlata**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README.md Modulo User](./readme.md)
 =======
 - [README.md Modulo User](./README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README.md Modulo User](./readme.md)
+>>>>>>> dev
 - [Authentication Guide](./authentication.md)
 - [Best Practices](./best-practices.md)
 

@@ -13,20 +13,30 @@ return [
             'placeholder' => 'Telefonnummer eingeben',
             'helper_text' => 'Telefonnummer mit internationaler Vorwahl eingeben (z.B. +49)',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'message' => [
             'label' => 'Nachricht',
             'placeholder' => 'Nachrichtentext eingeben',
             'helper_text' => 'Nachricht darf 160 Zeichen nicht überschreiten',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'driver' => [
             'label' => 'Anbieter',
@@ -41,10 +51,15 @@ return [
                 'netfun' => 'Netfun',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -58,8 +73,13 @@ return [
         'error' => 'Fehler beim Senden der SMS: :error',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

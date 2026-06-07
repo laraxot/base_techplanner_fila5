@@ -97,16 +97,22 @@
         "model_class": "Modules\\TechPlanner\\Models\\Client",
         "table_name": "clients",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         "table_rows": 2,
         "table_schema": "techplanner_data",
         "updated_at": "2026-02-22T17:50:49.000000Z",
         "updated_by": "019c864e-3055-707a-a4fb-f00c631b2d96"
+<<<<<<< HEAD
 =======
         "table_rows": 0,
         "table_schema": "techplanner_data",
         "updated_at": "2026-01-12T09:32:47.000000Z",
         "updated_by": "019bb16c-66a8-72ba-8b92-266e28a08e56"
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     },
     {
         "table_schema": "techplanner_data",

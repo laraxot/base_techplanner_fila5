@@ -6,9 +6,13 @@ return [
     'login' => [
         'title' => 'Sign in to your account',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'back_to_home' => 'Back to home',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'back_to_home' => 'Back to home',
+>>>>>>> dev
         'or' => 'or',
         'create_account' => 'create a new account',
         'forgot_password' => 'Forgot your password?',

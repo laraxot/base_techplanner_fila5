@@ -192,6 +192,7 @@ php artisan test --filter=TestClass
 
 - [Git Documentation](https://git-scm.com/doc)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Workflow Git](../../../xot/docs/git/workflow.md)
 - [Best Practices](../../../xot/docs/best-practices/git.md)
 - [CI/CD Pipeline](../../../xot/docs/ci-cd/readme.md)
@@ -200,3 +201,8 @@ php artisan test --filter=TestClass
 - [Best Practices](../../../Xot/docs/best-practices/git.md)
 - [CI/CD Pipeline](../../../Xot/docs/ci-cd/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Workflow Git](../../../xot/docs/git/workflow.md)
+- [Best Practices](../../../xot/docs/best-practices/git.md)
+- [CI/CD Pipeline](../../../xot/docs/ci-cd/readme.md)
+>>>>>>> dev

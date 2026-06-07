@@ -9,74 +9,116 @@ return [
             'placeholder' => 'Seleziona il punto di origine',
             'help' => 'Punto di partenza per il calcolo della distanza',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'destination' => [
             'label' => 'Destinazione',
             'placeholder' => 'Seleziona il punto di destinazione',
             'help' => 'Punto di arrivo per il calcolo della distanza',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'waypoints' => [
             'label' => 'Punti intermedi',
             'placeholder' => 'Aggiungi punti intermedi',
             'help' => 'Punti intermedi per il calcolo della distanza',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'transport_mode' => [
             'label' => 'Modalità di trasporto',
             'placeholder' => 'Seleziona la modalità',
             'help' => 'Mezzo di trasporto per il calcolo',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'avoid_tolls' => [
             'label' => 'Evita pedaggi',
             'help' => 'Evita strade a pedaggio nel calcolo',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'avoid_highways' => [
             'label' => 'Evita autostrade',
             'help' => 'Evita le autostrade nel calcolo',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'optimize_waypoints' => [
-            'label' => 'Ottimizza punti intermedi',
-            'help' => 'Ottimizza l\'ordine dei punti intermedi',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'optimize_waypoints' => [
+            'label' => 'Ottimizza punti intermedi',
+            'help' => 'Ottimizza l\'ordine dei punti intermedi',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'validation' => [
@@ -120,6 +162,9 @@ return [
         'indoor' => 'Indoor',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Distance',
     'plural_label' => 'Distance (Plurale)',
     'navigation' => [
@@ -144,6 +189,9 @@ return [
             'label' => 'Elimina Distance',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

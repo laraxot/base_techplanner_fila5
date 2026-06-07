@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Comparativa: GeoJsonModel vs Laravel Sushi
 
 ## Panoramica
@@ -192,3 +193,12 @@ Una migrazione a Laravel Sushi potrebbe essere riconsiderata, con un costo di co
 ---
 
 *Documento creato il: 27/05/2025*
+=======
+---
+module: theme
+topic: geojsonmodel_vs_sushi
+canonical: ../../../Themes/docs/shared-components/geojsonmodel-vs-sushi.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/geojsonmodel-vs-sushi.md
+>>>>>>> dev

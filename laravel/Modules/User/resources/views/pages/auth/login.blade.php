@@ -3,12 +3,17 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 use Illuminate\Support\Facades\Auth;
 =======
 
 use Modules\User\Models\User;
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\User\Models\User;
+use Illuminate\Support\Facades\Auth;
+>>>>>>> dev
 use Illuminate\Auth\Events\Login;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
@@ -33,7 +38,11 @@ new class extends Component {
         $this->validate();
 
         if (!Auth::attempt(['email' => $this->email, 'password' => $this->password], $this->remember)) {
+<<<<<<< HEAD
             $this->addError('email', trans('auth.failed'));
+=======
+            $this->addError('email', trans('user::login.actions.login.error'));
+>>>>>>> dev
 
             return;
         }
@@ -47,6 +56,9 @@ new class extends Component {
 ?>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 <x-layouts.guest>
     <x-slot name="title">
         {{ __('user::login.title') }}
@@ -94,6 +106,7 @@ new class extends Component {
     @endvolt
 
 </x-layouts.guest>
+<<<<<<< HEAD
 =======
 <x-layouts.main>
 
@@ -135,3 +148,5 @@ new class extends Component {
 
 </x-layouts.main>
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

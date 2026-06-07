@@ -9,16 +9,22 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 ✅ **CORRETTO**:
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Regole Generali](../../xot/docs/translations.md)
 [Best Practices](../translation_keys_best_practices.md)
 =======
 [Regole Generali](../../Xot/docs/translations.md)
 [Best Practices](../TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+[Regole Generali](../../xot/docs/translations.md)
+[Best Practices](../translation_keys_best_practices.md)
+>>>>>>> dev
 ```
 
 ❌ **ERRATO**:
 ```markdown
+<<<<<<< HEAD
 <<<<<<< HEAD
 [Regole Generali](modules/xot/docs/translations.md)
 [Best Practices](modules/lang/docs/translation_keys_best_practices.md)
@@ -26,6 +32,10 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 [Regole Generali](Modules/Xot/docs/translations.md)
 [Best Practices](Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+[Regole Generali](modules/xot/docs/translations.md)
+[Best Practices](modules/lang/docs/translation_keys_best_practices.md)
+>>>>>>> dev
 ```
 
 ### 2. Navigazione Tra Cartelle
@@ -38,10 +48,14 @@ Per navigare nella struttura delle cartelle, utilizzare:
 Esempi:
 - Per collegare a un file nello stesso modulo: `[File](./altro_file.md)` o `[File](altro_file.md)`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Per collegare a un file in un altro modulo: `[File](../../altromodulo/docs/file.md)`
 =======
 - Per collegare a un file in un altro modulo: `[File](../../AltroModulo/docs/file.md)`
 >>>>>>> 4b6b99016 (first commit)
+=======
+- Per collegare a un file in un altro modulo: `[File](../../altromodulo/docs/file.md)`
+>>>>>>> dev
 
 ### 3. Struttura della Documentazione
 
@@ -67,6 +81,7 @@ Per collegare documenti tra moduli diversi:
 ```markdown
 <!-- Da Modules/ModuloA/docs/file.md a Modules/ModuloB/docs/file.md -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Link a ModuloB](../../modulob/docs/file.md)
 =======
 [Link a ModuloB](../../ModuloB/docs/file.md)
@@ -74,6 +89,12 @@ Per collegare documenti tra moduli diversi:
 
 <!-- Da Modules/ModuloA/docs/file.md a docs/file.md nella root -->
 [Link a docs root](../../../docs/file.md)
+=======
+[Link a ModuloB](../../modulob/docs/file.md)
+
+<!-- Da Modules/ModuloA/docs/file.md a docs/file.md nella root -->
+[Link a docs root](../../../../docs/file.md)
+>>>>>>> dev
 ```
 
 ### 5. Verificare Sempre i Link
@@ -88,28 +109,40 @@ Prima di fare commit dei documenti:
 ### Da Modules/Lang/docs/ a Modules/Notify/docs/
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Convenzioni Notify](../../notify/docs/translation_conventions.md)
 =======
 [Convenzioni Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+[Convenzioni Notify](../../notify/docs/translation_conventions.md)
+>>>>>>> dev
 ```
 
 ### Da Modules/Lang/docs/ a docs/ nella root
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documentazione Principale](../../../docs/readme.md)
 =======
 [Documentazione Principale](../../../docs/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+[Documentazione Principale](../../../../docs/readme.md)
+>>>>>>> dev
 ```
 
 ### Da Modules/Lang/docs/ a un altro file nella stessa cartella
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Best Practices](translation_keys_best_practices.md)
 =======
 [Best Practices](TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+[Best Practices](translation_keys_best_practices.md)
+>>>>>>> dev
 ```
 
 ## Vantaggi dei Percorsi Relativi

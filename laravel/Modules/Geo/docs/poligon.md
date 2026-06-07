@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://stackoverflow.com/questions/5065039/find-point-in-polygon-php
 
 Array
@@ -101,3 +102,12 @@ https://laraveldaily.com/laravel-find-addresses-with-coordinates-via-google-maps
 https://css-tricks.com/lets-make-a-form-that-puts-current-location-to-use-in-a-map/
 
 
+=======
+---
+module: theme
+topic: poligon
+canonical: ../../../Themes/docs/shared-components/poligon.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/poligon.txt
+>>>>>>> dev

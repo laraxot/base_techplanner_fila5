@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🔔 NOTIFY MODULE - ROADMAP 2025
 
 **Modulo**: Notify (Notification System & Communication)  
@@ -507,3 +508,16 @@ Per una lista completa di tutti i collegamenti tra i README.md, consultare il fi
 ---
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+title: "roadmap — puntatore"
+type: reference
+updated: 2026-05-21
+---
+
+# Policy globale (puntatore)
+
+Contenuto in wiki di progetto — non duplicare nei moduli ([#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
+
+→ [docs/wiki/rules/00-TRIGGER_MAP.md](../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+>>>>>>> dev

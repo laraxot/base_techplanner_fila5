@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Class Not Found Errors - Legacy Module References
 
 ## Problema
@@ -257,3 +258,12 @@ Includere controlli PHPStan nella pipeline:
 - [Geo Module Structure](./structure.md)
 - [Employee PHPStan Covariance](../../employee/project_docs/phpstan_covariance_issues.md)
 
+=======
+---
+module: theme
+topic: class-not-founds
+canonical: ../../../Themes/docs/shared-components/class-not-found-errors.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/class-not-found-errors.md
+>>>>>>> dev

@@ -19,9 +19,12 @@ This guide documents how to implement the WorkHoursPage for the Employee module,
 ```
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   byDate: { [date: string]: Array<{ start: string, end: string|null, status: string }> },
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
   summary: { workedMinutes: int, addedMinutes: int, reducedMinutes: int, contractMinutes: int },
   contracts: { [date: string]: int }
 }

@@ -1,9 +1,13 @@
 # Pattern: Actions che chiamano altre Actions
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-01-18  
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data**: 2025-01-18  
+>>>>>>> dev
 **Modulo**: Notify  
 **Status**: ✅ Pattern consolidato
 
@@ -215,11 +219,16 @@ Prima di aggiungere dependency injection nel costruttore per chiamare altre Acti
 
 - [Queueable Actions Pattern](../Geo/docs/architectural-philosophy.md#action-architecture-pattern)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Action Execution Pattern](../../xot/docs/action-execution-pattern.md)
 =======
 - [Action Execution Pattern](../../Xot/docs/action-execution-pattern.md)
 >>>>>>> 4b6b99016 (first commit)
 - [Spatie QueueableAction Documentation](../../../docs/patterns/queueable-actions.md)
+=======
+- [Action Execution Pattern](../../Xot/docs/action-execution-pattern.md)
+- [Spatie QueueableAction Documentation](../../../../docs/patterns/queueable-actions.md)
+>>>>>>> dev
 
 ---
 

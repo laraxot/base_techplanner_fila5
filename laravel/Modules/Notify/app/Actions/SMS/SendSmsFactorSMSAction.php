@@ -69,7 +69,11 @@ final class SendSmsFactorSMSAction implements SmsActionContract
 
         $body = [
             'text' => $smsData->body,
+<<<<<<< HEAD
             'sender' => $smsData->from ?? $this->defaultSender,
+=======
+            'sender' => $smsData->from ?: $this->defaultSender,
+>>>>>>> dev
             'recipients' => [
                 [
                     'phone' => $to,

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Fixes for Geo Module
 
 This document outlines the PHPStan-related fixes and improvements made to the Geo module to ensure type safety and code quality at PHPStan level 9.
@@ -68,3 +69,12 @@ All changes have been verified with PHPStan level 9. To run the analysis:
 - [PHPStan Documentation](https://phpstan.org/)
 - [Laravel Data Documentation](https://spatie.be/project_docs/laravel-data/v3/introduction)
 - [Geo Module Architecture](architecture.md)
+=======
+---
+module: theme
+topic: phpstan-fixes-uppercase
+canonical: ../../../Themes/docs/shared-components/PHPSTAN_FIXES.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/PHPSTAN_FIXES.md
+>>>>>>> dev

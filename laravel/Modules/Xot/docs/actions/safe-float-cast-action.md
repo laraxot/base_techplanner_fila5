@@ -212,6 +212,9 @@ assert($action->executeWithRange(-10.0, 0.0, 100.0) === 0.0);
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 31 luglio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

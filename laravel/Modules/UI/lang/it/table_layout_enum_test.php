@@ -7,6 +7,9 @@ return [
         'name' => [
             'label' => 'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -40,11 +43,14 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Table Layout Enum Test',
+<<<<<<< HEAD
 =======
         ],
         'email' => [
             'label' => 'email',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

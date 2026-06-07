@@ -107,7 +107,11 @@ docs/
 **Esempi trovati**:
 ```markdown
 [regole php](docs/standards/php-inheritance-rules.md)
+<<<<<<< HEAD
 public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
+=======
+public static string $projectBasePath = '../../../docs/standards/php-inheritance-rules.md)
+>>>>>>> dev
 // Path configurabili tramite env, non hardcoded
 ```
 
@@ -150,16 +154,24 @@ docs/
 
 ### Da Modules/Xot/docs/ a root docs/
 ```markdown
+<<<<<<< HEAD
 [guida principale](../../../docs/guide.md)
+=======
+[guida principale](../../../../docs/guide.md)
+>>>>>>> dev
 ```
 
 ### Tra moduli (Xot → User)
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 [user docs](../../user/docs/user-guide.md)
 =======
 [user docs](../../User/docs/user-guide.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+[user docs](../../user/docs/user-guide.md)
+>>>>>>> dev
 ```
 
 ### All'interno dello stesso modulo
@@ -373,7 +385,11 @@ docs/
 **Esempi trovati**:
 ```markdown
 [regole php](docs/standards/php-inheritance-rules.md)
+<<<<<<< HEAD
 public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
+=======
+public static string $projectBasePath = '../../../docs/standards/php-inheritance-rules.md)
+>>>>>>> dev
 // Path configurabili tramite env, non hardcoded
 ```
 
@@ -416,16 +432,24 @@ docs/
 
 ### Da Modules/Xot/docs/ a root docs/
 ```markdown
+<<<<<<< HEAD
 [guida principale](../../../docs/guide.md)
+=======
+[guida principale](../../../../docs/guide.md)
+>>>>>>> dev
 ```
 
 ### Tra moduli (Xot → User)
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 [user docs](../../user/docs/user-guide.md)
 =======
 [user docs](../../User/docs/user-guide.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+[user docs](../../user/docs/user-guide.md)
+>>>>>>> dev
 ```
 
 ### All'interno dello stesso modulo

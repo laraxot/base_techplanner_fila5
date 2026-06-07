@@ -2,10 +2,14 @@
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo Activity.
 <<<<<<< HEAD
+<<<<<<< HEAD
 > La documentazione principale e completa si trova nel [modulo UI](../../../ui/docs/filament/label-translation-system.md).
 =======
 > La documentazione principale e completa si trova nel [modulo UI](../../../UI/docs/filament/label-translation-system.md).
 >>>>>>> 4b6b99016 (first commit)
+=======
+> La documentazione principale e completa si trova nel [modulo UI](../../../ui/docs/filament/label-translation-system.md).
+>>>>>>> dev
 
 ## Regola fondamentale
 
@@ -71,9 +75,14 @@ Cercare e rimuovere tutte le chiamate a `->label()` nei seguenti file:
 ## Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione principale sul sistema di traduzione](../../../ui/docs/filament/label-translation-system.md)
 - [LangServiceProvider e AutoLabelAction](../../../lang/docs/filament/autolabel-system.md)
 =======
 - [Documentazione principale sul sistema di traduzione](../../../UI/docs/filament/label-translation-system.md)
 - [LangServiceProvider e AutoLabelAction](../../../Lang/docs/filament/autolabel-system.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione principale sul sistema di traduzione](../../../ui/docs/filament/label-translation-system.md)
+- [LangServiceProvider e AutoLabelAction](../../../lang/docs/filament/autolabel-system.md)
+>>>>>>> dev

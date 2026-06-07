@@ -1,6 +1,7 @@
 # Correzione Sintassi Obsoleta Array() - Modulo Geo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Priorità**: ALTA  
 **Stato**: ✅ RISOLTO
 
@@ -145,6 +146,10 @@ php -l laravel/Modules/Geo/lang/it/address.php
 **Data**: 6 Gennaio 2025
 **Priorità**: ALTA
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data**: 6 Gennaio 2025  
+**Priorità**: ALTA  
+>>>>>>> dev
 **Stato**: ✅ RISOLTO
 
 ## 🚨 Problema Identificato
@@ -258,12 +263,17 @@ php -l laravel/Modules/Geo/lang/it/address.php
 
 - [Address Translation Fixes](address-translation-fixes-2025-01-27.md) - Correzioni traduzioni address
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README Modulo Geo](readme.md) - Documentazione principale
 - [Translation Standards](../../lang/docs/translation-helper-text-standards.md) - Standard traduzioni
 =======
 - [README Modulo Geo](README.md) - Documentazione principale
 - [Translation Standards](../../Lang/docs/translation-helper-text-standards.md) - Standard traduzioni
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README Modulo Geo](README.md) - Documentazione principale
+- [Translation Standards](../../Lang/docs/translation-helper-text-standards.md) - Standard traduzioni
+>>>>>>> dev
 
 ## 🎯 Lezioni Apprese
 
@@ -281,8 +291,13 @@ php -l laravel/Modules/Geo/lang/it/address.php
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Autore**: AI Assistant  
 =======
 **Ultimo aggiornamento**: 6 Gennaio 2025
 **Autore**: AI Assistant
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Ultimo aggiornamento**: 6 Gennaio 2025  
+**Autore**: AI Assistant  
+>>>>>>> dev

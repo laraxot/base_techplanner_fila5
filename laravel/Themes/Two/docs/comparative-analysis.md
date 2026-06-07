@@ -276,3 +276,7 @@ Questo piano trasforma TechPlanner da un sito base a un **portale municipale di 
 
 **Questo è un portale che può diventare il modello di riferimento per tutti i comuni italiani!** 🏆
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 6 Febbraio 2026 - Documentazione continua*
+>>>>>>> dev

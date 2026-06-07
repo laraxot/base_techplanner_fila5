@@ -5,7 +5,11 @@
 2. [Analisi del Codice Attuale](#analisi-del-codice-attuale)
 3. [Best Practice Raccolte](#best-practice-raccolte)
 4. [Casi d'Uso con Percentuali](#casi-duso-con-percentuali)
+<<<<<<< HEAD
 5. [Raccomandazioni per LaravelPizza](#raccomandazioni-per-laravelpizza)
+=======
+5. [Raccomandazioni per <nome progetto>](#raccomandazioni-per-<nome progetto>)
+>>>>>>> dev
 6. [Schema Decisionale](#schema-decisionale)
 
 ---
@@ -18,7 +22,11 @@ La separazione tra **User** (tabella per autenticazione) e **Profile** (tabella 
 
 ## Analisi del Codice Attuale
 
+<<<<<<< HEAD
 ### Struttura Attuale LaravelPizza
+=======
+### Struttura Attuale <nome progetto>
+>>>>>>> dev
 
 ```
 User (connection: user)
@@ -126,7 +134,11 @@ public function profile(): HasOne
 
 ## Casi d'Uso con Percentuali
 
+<<<<<<< HEAD
 ### Caso 1: Community Platform (es. LaravelPizza)
+=======
+### Caso 1: Community Platform (es. <nome progetto>)
+>>>>>>> dev
 ```
 User: 60% dei dati necessari
 - id, email, password, name, lang, type, state
@@ -231,7 +243,11 @@ START
 
 ---
 
+<<<<<<< HEAD
 ## Raccomandazioni per LaravelPizza
+=======
+## Raccomandazioni per <nome progetto>
+>>>>>>> dev
 
 ### Attuale (CORRETTO)
 
@@ -306,7 +322,11 @@ Profile: Tutti i dati applicativi
 
 | Scenario | Usa | Note |
 |----------|-----|------|
+<<<<<<< HEAD
 | LaravelPizza attuale | User + Profile | Profile in meetup DB |
+=======
+| <nome progetto> attuale | User + Profile | Profile in meetup DB |
+>>>>>>> dev
 | MVP semplice | Solo User | Tutto in una tabella |
 | SaaS multi-tenant | User + Profile | Profile per tenant |
 | Social network | User + Profile | Profile ricco |
@@ -316,7 +336,11 @@ Profile: Tutti i dati applicativi
 
 ## Conclusione
 
+<<<<<<< HEAD
 Per **LaravelPizza** la separazione attuale ha senso perché:
+=======
+Per **<nome progetto>** la separazione attuale ha senso perché:
+>>>>>>> dev
 - ✅ Profile è in connection separata (meetup)
 - ✅ Meetup module ha dati specifici
 - ✅ Possibile estensione futura (altri moduli)
@@ -327,5 +351,9 @@ Per **LaravelPizza** la separazione attuale ha senso perché:
 
 ---
 
+<<<<<<< HEAD
 *Documento generato per LaravelPizza - Analisi User vs Profile Pattern*
+=======
+*Documento generato per <nome progetto> - Analisi User vs Profile Pattern*
+>>>>>>> dev
 *Data: [DATE]*

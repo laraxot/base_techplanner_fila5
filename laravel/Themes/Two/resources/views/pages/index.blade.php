@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use function Laravel\Folio\name;
 
 name('home');
@@ -16,6 +19,7 @@ name('home');
     </div>
     @endvolt
 </x-layouts.app>
+<<<<<<< HEAD
 =======
 use function Livewire\Volt\{state, mount};
 //use App\Models\Post;
@@ -53,3 +57,5 @@ mount(function () {
     </x-filament::page>
 </div>
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

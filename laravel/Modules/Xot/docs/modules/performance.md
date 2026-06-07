@@ -9,6 +9,9 @@ Il modulo Performance gestisce le valutazioni delle performance e la distribuzio
 Il modulo Performance mantiene documentazione dettagliata nelle seguenti aree:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Struttura e Funzionamento Generale](../performance/docs/readme.md)
 - [Struttura e Funzionamento Generale](../performance/docs/readme.md)
 - [Modelli](../performance/docs/models.md)
@@ -18,6 +21,7 @@ Il modulo Performance mantiene documentazione dettagliata nelle seguenti aree:
 - [Raw SQL vs Eloquent](../performance/docs/raw-vs-eloquent.md)
 - [Redistribuzione Resti per Valutatore](../performance/docs/redistribuire-resti-per-valutatore.md)
 - [Convenzioni del Modulo](../performance/docs/convenzioni-modulo.md)
+<<<<<<< HEAD
 =======
 - [Struttura e Funzionamento Generale](../Performance/docs/readme.md)
 - [Struttura e Funzionamento Generale](../Performance/docs/README.md)
@@ -29,6 +33,8 @@ Il modulo Performance mantiene documentazione dettagliata nelle seguenti aree:
 - [Redistribuzione Resti per Valutatore](../Performance/docs/redistribuire-resti-per-valutatore.md)
 - [Convenzioni del Modulo](../Performance/docs/convenzioni-modulo.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Risorse Filament
 
@@ -47,13 +53,19 @@ Il modulo implementa diverse risorse Filament per la gestione delle performance:
 ## Collegamenti alle Linee Guida Generali
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Convenzioni di Namespace](../xot/docs/namespace-conventions.md)
 - [Convenzioni di Naming](../xot/docs/naming-conventions.md)
 - [Guide PHPStan Livello 9](../xot/docs/phpstan-level9-guide.md)
 - [QueueableActions](../xot/docs/queueable-actions.md)
+<<<<<<< HEAD
 =======
 - [Convenzioni di Namespace](../Xot/docs/NAMESPACE-CONVENTIONS.md)
 - [Convenzioni di Naming](../Xot/docs/naming-conventions.md)
 - [Guide PHPStan Livello 9](../Xot/docs/PHPSTAN-LEVEL9-GUIDE.md)
 - [QueueableActions](../Xot/docs/queueable-actions.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

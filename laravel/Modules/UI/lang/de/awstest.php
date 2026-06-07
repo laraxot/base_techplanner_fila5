@@ -14,30 +14,45 @@ return [
             'placeholder' => 'CloudFront URL eingeben',
             'helper_text' => 'URL der konfigurierten CloudFront Distribution',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'iam_user' => [
             'label' => 'IAM Benutzer/Rolle',
             'placeholder' => 'IAM Benutzer eingeben',
             'helper_text' => 'IAM Benutzer oder Rolle für AWS Zugang',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'aws_config' => [
             'label' => 'AWS Konfiguration',
             'placeholder' => 'Aktuelle AWS Konfiguration',
             'helper_text' => 'Übersicht der aktuellen AWS Konfiguration',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -143,6 +158,9 @@ return [
         'check_cloudfront_settings' => 'CloudFront Einstellungen in der Konfiguration überprüfen',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -152,6 +170,9 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -66,7 +66,11 @@ class SendScheduledPushNotification implements ShouldQueue
             );
 
             // Log risultato
+<<<<<<< HEAD
             Log::info('Scheduled push notification sent', [
+=======
+            Log::debug('Scheduled push notification sent', [
+>>>>>>> dev
                 'job_id' => $this->jobId,
                 'result' => $result,
             ]);

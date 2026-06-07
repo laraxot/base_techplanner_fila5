@@ -2,10 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(\Modules\Notify\Tests\TestCase::class);
 
 use Modules\Notify\Models\BaseModel;
 use Modules\Notify\Models\Contact;
+=======
+namespace Modules\Notify\Tests\Unit\Models;
+
+uses(TestCase::class);
+
+use Modules\Notify\Models\BaseModel;
+use Modules\Notify\Models\Contact;
+use Modules\Notify\Tests\TestCase;
+>>>>>>> dev
 
 describe('Contact Business Logic', function () {
     test('contact extends base model', function () {

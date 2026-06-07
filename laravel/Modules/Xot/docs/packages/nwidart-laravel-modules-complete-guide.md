@@ -542,7 +542,11 @@ Modules/{ModuleName}/docs/
 - [GitHub Repository](https://github.com/nWidart/laravel-modules)
 - [XotBaseServiceProvider Documentation](../filament-integration.md)
 - [Module Structure Documentation](../base/structure.md)
+<<<<<<< HEAD
 - [Composer Merge Plugin Documentation](../../../docs/composer-merge-plugin.md)
+=======
+- [Composer Merge Plugin Documentation](../../../../docs/composer-merge-plugin.md)
+>>>>>>> dev
 
 ---
 

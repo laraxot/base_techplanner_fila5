@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ottimizzazioni Performance Modulo Media
 
 ## 1. Ottimizzazione Conversione Video
@@ -687,3 +688,12 @@ final class TemporaryUploadPathGenerator implements PathGenerator
 - Cache tags richiedono Redis/Memcached
 - Compatibile con FFmpeg e Laravel
 - Configurazioni esternalizzate
+=======
+---
+module: theme
+topic: media-optimizations
+canonical: ../../../../Themes/docs/shared-components/media-optimizations.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/media-optimizations.md
+>>>>>>> dev

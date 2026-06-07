@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi: Unificazione Modelli Geografici in Comune
 
 ## Situazione Attuale
@@ -147,3 +148,12 @@ Si raccomanda di procedere con la migrazione seguendo il piano proposto, assicur
 3. Eseguire test approfonditi
 
 La stima del tempo di implementazione è di 2-3 giorni/uomo, con un ROI atteso di 3-4 mesi grazie alla riduzione dei costi di manutenzione.
+=======
+---
+module: theme
+topic: unified-comune-model
+canonical: ../../../Themes/docs/shared-components/unified-comune-model-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/unified-comune-model-analysis.md
+>>>>>>> dev

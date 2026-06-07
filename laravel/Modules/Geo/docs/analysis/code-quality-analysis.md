@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌍 Geo Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11
@@ -109,3 +110,12 @@ PHPStan analysis was blocked by a syntax error in the Cms module, but PHPMD anal
 **Next Review**: After fixing Cms module syntax error
 >>>>>>> 4b6b99016 (first commit)
 **Target Completion**: 2025-11-20
+=======
+---
+module: theme
+topic: code-quality-analysis
+canonical: ../../../../Themes/docs/shared-components/code-quality-analysis.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/code-quality-analysis.md
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://mridul2820.github.io/css-js/
 
 https://github.com/Mridul2820/css-js
@@ -22,3 +23,12 @@ Motion
 
 
 
+=======
+---
+module: theme
+topic: effetcts
+canonical: ../../../Themes/docs/shared-components/effetcts.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/effetcts.md
+>>>>>>> dev

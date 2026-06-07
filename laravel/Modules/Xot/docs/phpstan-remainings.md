@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Remaining Errors Analysis
 
 **Data:** [DATE]
@@ -176,3 +177,12 @@ All module tests use **Pest** framework. PHPStan has challenges with Pest's magi
 
 *Generated during PHPStan compliance implementation*
 *Task: "Analyze and fix all PHPStan errors in Modules/"*
+=======
+---
+module: theme
+topic: phpstan-remainings
+canonical: ../../../Themes/docs/shared-components/phpstan-remaining-errors-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-remaining-errors-analysis.md
+>>>>>>> dev

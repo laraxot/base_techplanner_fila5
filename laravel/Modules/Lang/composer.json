@@ -1,6 +1,10 @@
 {
+<<<<<<< HEAD
     "name": "laraxot/module_lang_fila3",
 <<<<<<< HEAD
+=======
+    "name": "laraxot/module_lang_fila5",
+>>>>>>> dev
     "description": "Internationalization and localization module for the Laraxot ecosystem: translations, languages, and locale management.",
     "keywords": [
         "laraxot",
@@ -13,11 +17,16 @@
         "translations",
         "localization"
     ],
+<<<<<<< HEAD
 =======
     "description": "",
 >>>>>>> 4b6b99016 (first commit)
     "license": "MIT",
     "homepage": "https://github.com/laraxot/module_lang_fila3.git",
+=======
+    "license": "MIT",
+    "homepage": "https://github.com/laraxot/module_lang_fila5.git",
+>>>>>>> dev
     "authors": [
         {
             "name": "Marco Sottana",
@@ -28,6 +37,7 @@
         "mcamara/laravel-localization": "*",
         "lara-zeus/spatie-translatable": "*",
         "rinvex/countries": "^9.1",
+<<<<<<< HEAD
         "spatie/laravel-sluggable": "*"
     },
 <<<<<<< HEAD
@@ -37,6 +47,12 @@
 =======
     "repositories_comment": "Local path package (lara-zeus/spatie-translatable) moved to root composer.json for proper priority. DO NOT add Packagist here.",
 >>>>>>> 4b6b99016 (first commit)
+=======
+        "spatie/laravel-sluggable": "*",
+        "php": "^8.3"
+    },
+    "require-comment": {},
+>>>>>>> dev
     "repositories": [
         {
             "type": "path",
@@ -51,7 +67,10 @@
             "url": "../UI"
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
+=======
+>>>>>>> dev
     ],
     "repositories-comment": [
         {
@@ -63,8 +82,22 @@
             "url": "https://packagist.org",
             "canonical": false
         }
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    ],
+    "repositories-comment": [
+        {
+            "type": "path",
+            "url": "./packages/lara-zeus/spatie-translatable"
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.org",
+            "canonical": false
+        }
+>>>>>>> dev
     ],
     "autoload": {
         "psr-4": {

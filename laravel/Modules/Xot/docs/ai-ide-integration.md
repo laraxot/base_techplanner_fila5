@@ -507,11 +507,15 @@ grep -r "XotBase" .cursor/rules/ .windsurf/rules/ CLAUDE.md
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 **Version**: 1.0
 **Last Updated**: December 23, 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 **Module**: Xot (Core Engine)
 **Maintainer**: Laraxot Team
 

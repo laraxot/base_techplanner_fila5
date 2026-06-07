@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 <<<<<<< HEAD
@@ -51,4 +52,17 @@ class OauthDeviceCode extends BaseModel
      * 'personal_access_client', 'password_client', 'revoked',
      * ];
      */
+=======
+use Laravel\Passport\DeviceCode as PassportDeviceCode;
+
+/**
+ * Class OauthDeviceCode.
+ *
+ * Wrapper for Laravel Passport DeviceCode model.
+ *
+ * @property bool $revoked
+ */
+class OauthDeviceCode extends PassportDeviceCode
+{
+>>>>>>> dev
 }

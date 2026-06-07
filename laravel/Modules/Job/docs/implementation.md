@@ -297,6 +297,7 @@ class JobPageTest extends TestCase
 
 ## Collegamenti tra versioni di implementation.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [implementation.md](../../../gdpr/docs/implementation.md)
 * [implementation.md](../../../xot/docs/implementation.md)
 * [implementation.md](../../../job/docs/implementation.md)
@@ -305,6 +306,11 @@ class JobPageTest extends TestCase
 * [implementation.md](../../../Xot/docs/implementation.md)
 * [implementation.md](../../../Job/docs/implementation.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [implementation.md](../../../gdpr/docs/implementation.md)
+* [implementation.md](../../../xot/docs/implementation.md)
+* [implementation.md](../../../job/docs/implementation.md)
+>>>>>>> dev
 
 ### Versione Incoming
 

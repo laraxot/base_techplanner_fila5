@@ -1,9 +1,12 @@
 # PHPStan Complete Fixes 2025 - Activity Module
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-01-27
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Status**: ✅ **COMPLETATO CON SUCCESSO**
 **Livello PHPStan**: 10
 **Errori**: 0
@@ -94,9 +97,13 @@ Note: Using configuration file phpstan.neon.
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Documento creato**: [DATE]
 =======
 **Documento creato**: 2025-01-27
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Documento creato**: [DATE]
+>>>>>>> dev
 **Stato**: ✅ COMPLETATO
 **Prossima revisione**: Con necessità

@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\UI\Tests\Unit\Filament\Widgets;
 
+<<<<<<< HEAD
 use Filament\Widgets\Widget;
+=======
+>>>>>>> dev
 use Illuminate\Contracts\View\View;
 use Modules\UI\Filament\Widgets\StatWithIconWidget;
 use Tests\TestCase;

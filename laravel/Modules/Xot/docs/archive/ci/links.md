@@ -53,6 +53,9 @@ Deptrac
 
 ## Collegamenti tra versioni di links.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [links.md](../../../gdpr/project_docs/links.md)
 * [links.md](../../../notify/project_docs/links.md)
 * [links.md](../../../xot/project_docs/ci/links.md)
@@ -63,6 +66,7 @@ Deptrac
 * [links.md](../../../tenant/project_docs/it/links/links.md)
 * [links.md](../../../cms/project_docs/links.md)
 * [links.md](../../../../themes/one/project_docs/links.md)
+<<<<<<< HEAD
 =======
 * [links.md](../../../Gdpr/project_docs/links.md)
 * [links.md](../../../Notify/project_docs/links.md)
@@ -75,6 +79,8 @@ Deptrac
 * [links.md](../../../Cms/project_docs/links.md)
 * [links.md](../../../../Themes/One/project_docs/links.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### Versione Incoming
 
@@ -109,6 +115,9 @@ Deptrac
 
 ### Moduli Core
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Modulo Lang](../../../lang/project_docs/links.md)
   > Gestione delle traduzioni per il core system. Fondamentale per l'internazionalizzazione.
 
@@ -120,6 +129,7 @@ Deptrac
   > Sistema di code per operazioni asincrone. Gestione dei processi in background.
 
 - [Modulo Cache](../../../cache/project_docs/links.md)
+<<<<<<< HEAD
 =======
 - [Modulo Lang](../../../Lang/project_docs/links.md)
   > Gestione delle traduzioni per il core system. Fondamentale per l'internazionalizzazione.
@@ -133,6 +143,8 @@ Deptrac
 
 - [Modulo Cache](../../../Cache/project_docs/links.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
   > Gestione della cache del sistema. Ottimizzazione delle performance.
 
 ## Implementazioni di Esempio

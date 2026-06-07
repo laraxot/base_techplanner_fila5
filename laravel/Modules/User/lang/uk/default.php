@@ -5,10 +5,14 @@ declare(strict_types=1);
 return [
     'login' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'username_or_email' => 'Ім\'я користувача або електронна пошта',
 =======
         'username_or_email' => "Ім'я користувача або електронна пошта",
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'username_or_email' => 'Ім\'я користувача або електронна пошта',
+>>>>>>> dev
         'forgot_password_link' => 'Забули пароль?',
         'create_an_account' => 'Створити акаунт',
     ],
@@ -112,6 +116,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'avatar' => [
             'label' => 'Аватар',
             'tooltip' => '',
@@ -216,6 +223,7 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
         'avatar' => 'Аватар',
         'email' => 'E-mail',
@@ -236,4 +244,6 @@ return [
     'or' => 'Або',
     'cancel' => 'Скасувати',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

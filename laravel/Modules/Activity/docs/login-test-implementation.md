@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Login Test Implementation Summary - <main module> Project
 
 ## 🎊 Mission Accomplished: Complete Login Testing Suite
@@ -209,3 +210,12 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 
 *
 *Project: Laraxot <main module>*  
+=======
+---
+module: theme
+topic: login-test-implementation
+canonical: ../../../Themes/docs/shared-components/login-test-implementation-sumy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/login-test-implementation-sumy.md
+>>>>>>> dev

@@ -1,10 +1,14 @@
 # Activity Module - PHPStan Testing Progress
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Date**: [DATE]
 =======
 **Date**: 2025-12-15
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Date**: [DATE]
+>>>>>>> dev
 **Objective**: Fix PHPStan errors in test files
 
 ---

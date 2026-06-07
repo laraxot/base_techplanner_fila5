@@ -82,6 +82,9 @@ function mockXotData(): void
 - XotData Testing Strategy (XOTDATA_TESTING.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Status: Best Practices consolidate — Last Update: Dicembre 2024
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

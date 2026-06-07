@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Best Practices per Volt e Folio
 
 ## Collegamenti correlati
@@ -273,3 +274,12 @@ Seguendo queste best practices per l'utilizzo di Volt e Folio, garantirai che il
 - [Documentazione Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Livewire](https://livewire.laravel.com/docs)
 - [Documentazione Filament](https://filamentphp.com/docs)
+=======
+---
+module: theme
+topic: volt-folio-best-practices
+canonical: ../../../Themes/docs/shared-components/volt-folio-best-practices-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-best-practices-1.md
+>>>>>>> dev

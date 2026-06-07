@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Incrementale con PHPStan
 
 ## Introduzione
@@ -103,3 +104,12 @@ Lo script opera sul file `phpstan.neon` nella directory principale. La configura
 ## Conclusione
 
 L'analisi incrementale ti consente di migliorare gradualmente la qualità del codice, affrontando i problemi in ordine di importanza e complessità. Una volta raggiunto il livello 9, il codice sarà conforme agli standard più elevati di qualità e tipo-sicurezza. 
+=======
+---
+module: theme
+topic: phpstan_incremental
+canonical: ../../../Themes/docs/shared-components/phpstan-incremental.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-incremental.md
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole Generali di Sviluppo del Progetto
 
 ## Collegamenti
@@ -425,3 +426,12 @@ TextInput::make('name')
 ---
 
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
+=======
+---
+module: theme
+topic: development-rules
+canonical: ../../../../Themes/docs/shared-components/development-rules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/development-rules.md
+>>>>>>> dev

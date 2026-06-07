@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pattern di Relazioni Polimorfiche nell'Ecosistema <main module>
 
 ## Evoluzione dei Tipi di Chiavi Primarie
@@ -144,3 +145,12 @@ In una visione zen, la corretta implementazione delle relazioni polimorfiche rap
 La rimozione della duplicazione dei timestamps riflette il principio di semplicità e non-ridondanza, creando uno schema più pulito, coerente e manutenibile.
 
 Questa implementazione non è solo tecnicamente corretta, ma riflette una comprensione profonda dei principi architetturali, filosofici e persino spirituali che guidano lo sviluppo di software di qualità.
+=======
+---
+module: theme
+topic: morphs-relationships
+canonical: ../../../Themes/docs/shared-components/morphs-relationship-patterns.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/morphs-relationship-patterns.md
+>>>>>>> dev

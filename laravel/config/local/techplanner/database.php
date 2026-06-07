@@ -3,10 +3,13 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Tenant\Services\TenantService;
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 return [
     'connections' => [
         'mysql' => [
@@ -45,9 +48,12 @@ return [
         ],
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         /*
         'user' => [
             'driver' => 'mysql',
@@ -66,9 +72,12 @@ return [
         */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DATABASE_URL'),
@@ -78,8 +87,11 @@ return [
         ],
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ], // end connections
 ];

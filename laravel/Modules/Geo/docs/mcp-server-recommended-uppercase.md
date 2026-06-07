@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MCP Server Consigliati per il Modulo Geo
 
 ## Scopo del Modulo
@@ -21,3 +22,12 @@ Gestione dati geografici, mappe e geolocalizzazione.
 
 ## Note
 - Estendi la configurazione se il modulo gestisce analisi geospaziali avanzate.
+=======
+---
+module: theme
+topic: mcp-server-recommended-uppercase
+canonical: ../../../Themes/docs/shared-components/MCP_SERVER_RECOMMENDED-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/MCP_SERVER_RECOMMENDED-Modules.md
+>>>>>>> dev

@@ -18,6 +18,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Create Attachment',
     'plural_label' => 'Create Attachment (Plurale)',
     'navigation' => [
@@ -51,6 +54,9 @@ return [
             'description' => '',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

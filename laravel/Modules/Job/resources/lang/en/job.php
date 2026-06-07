@@ -23,6 +23,9 @@ return [
         'edit' => [
             'label' => 'Edit',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -68,6 +71,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'payload' => [
@@ -91,6 +95,8 @@ return [
         'created_at' => [
             'label' => 'Created At',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'navigation' => [
@@ -102,7 +108,11 @@ return [
     'label' => 'Job',
     'plural_label' => 'Jobs',
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ];
 >>>>>>> 4b6b99016 (first commit)
+=======
+];
+>>>>>>> dev

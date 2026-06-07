@@ -172,6 +172,9 @@ private function formatContacts(Client $record): string
 - [x] **Aggiornato** le regole e memorie
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06* 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole per i file di traduzione in Laraxot PTVX
 
 ## Struttura dei file di traduzione
@@ -152,3 +153,12 @@ return [
 
 *Ultimo aggiornamento: 3 Giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: translation-rules
+canonical: ../../../../Themes/docs/shared-components/translation-rules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/translation-rules.md
+>>>>>>> dev

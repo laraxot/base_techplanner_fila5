@@ -1,9 +1,12 @@
 # 🏛️ Design Comuni - Services Implementation Guide
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Date:** 2025-10-02
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Module:** Cms
 **Related:** Theme Sixteen, Design Comuni Italia
 
@@ -824,7 +827,11 @@ class ServiceTest extends TestCase
 
 **📝 Documento preparato da:** Super Mucca 🐮
 <<<<<<< HEAD
+<<<<<<< HEAD
 **📅 Data:** [DATE]
 =======
 **📅 Data:** 2025-10-02
 >>>>>>> 4b6b99016 (first commit)
+=======
+**📅 Data:** [DATE]
+>>>>>>> dev

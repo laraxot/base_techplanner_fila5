@@ -112,7 +112,11 @@ Vedi [Queueable Actions con Spatie](queueable-actions.md) per definizione delle 
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Documento generato il [DATE]T21:45:20+02:00*
 =======
 *Documento generato il 2025-05-05T21:45:20+02:00*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Documento generato il 2025-05-05T21:45:20+02:00*
+>>>>>>> dev

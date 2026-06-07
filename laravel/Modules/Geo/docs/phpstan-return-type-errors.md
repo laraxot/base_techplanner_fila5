@@ -48,11 +48,15 @@ public function getFormattedAddressAttribute(): string
 {
     $value = $this->some_property;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     if (is_string($value)) {
         return $value;
     }
     
+<<<<<<< HEAD
 =======
 
     if (is_string($value)) {
@@ -60,6 +64,8 @@ public function getFormattedAddressAttribute(): string
     }
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     return ''; // fallback sicuro
 }
 ```
@@ -74,6 +80,7 @@ public function getFormattedAddressAttribute(): string
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 ## Correzione Effettuata
@@ -100,6 +107,8 @@ Dopo le correzioni:
 - Conformità alle best practices del progetto
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ## Pattern di Correzione per Place Model
 
 ### Analisi del Metodo
@@ -128,10 +137,14 @@ public function getFormattedAddressAttribute(): string
     // Utilizzo di safe casting per garantire string
     $address = \Modules\Xot\Actions\Cast\SafeStringCastAction::cast($this->address, '');
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // Formattazione aggiuntiva se necessaria
     return trim($address) ?: 'Indirizzo non disponibile';
 }
@@ -153,6 +166,9 @@ public function getDataAttribute(): array
 {
     $data = $this->data;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     if (is_array($data)) {
         return $data;
@@ -162,6 +178,7 @@ public function getDataAttribute(): array
         return json_decode($data, true) ?: [];
     }
     
+<<<<<<< HEAD
 =======
 
     if (is_array($data)) {
@@ -173,6 +190,8 @@ public function getDataAttribute(): array
     }
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     return [];
 }
 ```
@@ -207,6 +226,9 @@ public function getIsActiveAttribute(): bool
 {
     $value = $this->is_active;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     if (is_bool($value)) {
         return $value;
@@ -220,6 +242,7 @@ public function getIsActiveAttribute(): bool
         return in_array(strtolower($value), ['true', '1', 'yes', 'on'], true);
     }
     
+<<<<<<< HEAD
 =======
 
     if (is_bool($value)) {
@@ -235,6 +258,8 @@ public function getIsActiveAttribute(): bool
     }
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     return false;
 }
 ```
@@ -251,10 +276,14 @@ public function getFormattedValueAttribute(): string
         return '';
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     return \Modules\Xot\Actions\Cast\SafeStringCastAction::cast($this->value, '');
 }
 ```
@@ -286,10 +315,14 @@ public function getFormattedAddressAttribute(): string
         $this->postal_code,
     ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     return implode(', ', $components);
 }
 ```
@@ -323,6 +356,7 @@ grep -n "Attribute.*string" Modules/*/Models/*.php | grep -v "SafeStringCastActi
 - [Laravel Accessors & Mutators](https://laravel.com/project_docs/eloquent-mutators)
 - [PHPStan Return Types](https://phpstan.org/writing-php-code/phpdoc-types#return-types)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Safe Casting Actions](../../xot/project_docs/safe-casting-actions.md)
 =======
 - [Safe Casting Actions](../../Xot/project_docs/safe-casting-actions.md)
@@ -338,3 +372,13 @@ grep -n "Attribute.*string" Modules/*/Models/*.php | grep -v "SafeStringCastActi
 =======
 *Ultimo aggiornamento: 2025-07-31*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Safe Casting Actions](../../xot/project_docs/safe-casting-actions.md)
+
+## Backlink
+
+- [Root PHPStan Rules](../../../../docs/project/phpstan_rules.md)
+- [Geo Module Structure](./structure.md)
+- [Class Not Found Errors](./class_not_found_errors.md)
+
+>>>>>>> dev

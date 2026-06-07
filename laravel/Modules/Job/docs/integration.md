@@ -3,6 +3,7 @@
 ## Documentazione Collegata
 
 ### Filament
+<<<<<<< HEAD
 - [Risorse Filament](../docs/filament-risorse.md)
 - [Personalizzazioni Avanzate](../docs/filament-personalizzazioni-avanzate.md)
 - [Gestione Contenuti](../docs/gestione-contenuti-json.md)
@@ -16,6 +17,21 @@
 - [Standard Codice](../docs/standard-codice.md)
 - [Traduzioni](../docs/traduzioni.md)
 - [Componenti e Blocchi](../docs/componenti-blocchi-contenuto.md)
+=======
+- [Risorse Filament](../../docs/filament-risorse.md)
+- [Personalizzazioni Avanzate](../../docs/filament-personalizzazioni-avanzate.md)
+- [Gestione Contenuti](../../docs/gestione-contenuti-json.md)
+
+### Struttura e Convenzioni
+- [Namespace Convention](../../docs/namespace-convention.md)
+- [Namespace Structure](../../docs/namespace-structure.md)
+- [Namespace Rules](../../docs/namespace-rules.md)
+
+### Implementazione
+- [Standard Codice](../../docs/standard-codice.md)
+- [Traduzioni](../../docs/traduzioni.md)
+- [Componenti e Blocchi](../../docs/componenti-blocchi-contenuto.md)
+>>>>>>> dev
 
 ## Best Practices
 
@@ -70,6 +86,7 @@
 
 ## Collegamenti tra versioni di integration.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [integration.md](../../../gdpr/docs/integration.md)
 * [integration.md](../../../xot/docs/integration.md)
 * [integration.md](../../../job/docs/integration.md)
@@ -78,6 +95,11 @@
 * [integration.md](../../../Xot/docs/integration.md)
 * [integration.md](../../../Job/docs/integration.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [integration.md](../../../gdpr/docs/integration.md)
+* [integration.md](../../../xot/docs/integration.md)
+* [integration.md](../../../job/docs/integration.md)
+>>>>>>> dev
 
 ### Versione Incoming
 

@@ -1,6 +1,10 @@
 # Email Layouts Best Practices 
 
+<<<<<<< HEAD
 Questa documentazione descrive le best practices da seguire per i layout email quando si utilizza `spatie/laravel-database-mail-templates` nel modulo Notify di SaluteOra.
+=======
+Questa documentazione descrive le best practices da seguire per i layout email quando si utilizza `spatie/laravel-database-mail-templates` nel modulo Notify di Quaeris.
+>>>>>>> dev
 
 ## Indice
 
@@ -15,7 +19,11 @@ Questa documentazione descrive le best practices da seguire per i layout email q
 
 ## Introduzione
 
+<<<<<<< HEAD
 SaluteOra utilizza `spatie/laravel-database-mail-templates` per memorizzare e gestire i template email nel database. Questo approccio separa nettamente:
+=======
+Quaeris utilizza `spatie/laravel-database-mail-templates` per memorizzare e gestire i template email nel database. Questo approccio separa nettamente:
+>>>>>>> dev
 
 1. **Layout HTML base**: Struttura generale dell'email (`resources/mail-layouts/*.html`)
 2. **Contenuto dei template**: Contenuto specifico memorizzato nel database (tabella `mail_templates`)
@@ -204,6 +212,7 @@ Il supporto per la Dark Mode migliora l'esperienza utente e riduce l'affaticamen
 
 - [Documentazione Spatie Laravel Database Mail Templates](https://github.com/spatie/laravel-database-mail-templates)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Email Templates Guide](./email_templates_guide.md)
 - [Spatie Mail Templates Structure](./spatie_mail_templates_structure.md)
 - [Template Content Examples](./template_content_examples.md)
@@ -212,3 +221,8 @@ Il supporto per la Dark Mode migliora l'esperienza utente e riduce l'affaticamen
 - [Spatie Mail Templates Structure](./SPATIE_MAIL_TEMPLATES_STRUCTURE.md)
 - [Template Content Examples](./TEMPLATE_CONTENT_EXAMPLES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Email Templates Guide](./EMAIL_TEMPLATES_GUIDE.md)
+- [Spatie Mail Templates Structure](./SPATIE_MAIL_TEMPLATES_STRUCTURE.md)
+- [Template Content Examples](./TEMPLATE_CONTENT_EXAMPLES.md)
+>>>>>>> dev

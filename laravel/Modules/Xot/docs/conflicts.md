@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 # Risoluzione Conflitti - Xot
@@ -7,3 +8,6 @@
 
 ## Decisioni adottate
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

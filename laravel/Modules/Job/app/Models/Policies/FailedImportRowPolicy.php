@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Models\Policies;
 
+<<<<<<< HEAD
 use Modules\Job\Models\FailedImportRow;
 use Modules\Xot\Contracts\UserContract;
 
@@ -65,3 +66,6 @@ class FailedImportRowPolicy extends JobBasePolicy
         return $user->hasPermissionTo('failed_import_row.forceDelete');
     }
 }
+=======
+class FailedImportRowPolicy extends JobBasePolicy {}
+>>>>>>> dev

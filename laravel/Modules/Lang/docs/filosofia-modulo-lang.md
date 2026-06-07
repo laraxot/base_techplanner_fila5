@@ -1,10 +1,14 @@
 # Analisi Approfondita del Modulo Lang
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **Generato**: [DATE]
 =======
 > **Generato**: 2025-12-24
 >>>>>>> 4b6b99016 (first commit)
+=======
+> **Generato**: 2025-12-24
+>>>>>>> dev
 > **Scopo**: Documentare la filosofia, logica e architettura del modulo Lang
 
 ---

@@ -51,6 +51,25 @@
 
 ---
 
+<<<<<<< HEAD
+=======
+## 1.5 UI Components
+
+### Logo
+**File**: `components/ui/logo.blade.php`
+**Usage**: `<x-pub_theme::ui.logo class="h-14 w-auto" color="white" />`
+- `color="white"` per sfondi scuri (login, register)
+- Vedi [auth-login-page](auth-login-page.md)
+
+### Particles
+**File**: `components/ui/particles.blade.php`
+**Usage**: `@include('pub_theme::components.ui.particles')`
+- Effetto particelle canvas per pannelli auth
+- Vedi [particles-component](particles-component.md)
+
+---
+
+>>>>>>> dev
 ## 2. Block Components
 
 ### 2.1 Hero Block
@@ -166,7 +185,11 @@
 **Enhancements Needed**:
 - [ ] Update to brand gradient (#667eea → #764ba2)
 - [ ] Add hover lift animation
+<<<<<<< HEAD
 - [ ] Add particle background effect
+=======
+- [x] Add particle background effect (vedi [particles-component](particles-component.md))
+>>>>>>> dev
 - [ ] Add trust indicators
 - [ ] A/B test different CTAs
 

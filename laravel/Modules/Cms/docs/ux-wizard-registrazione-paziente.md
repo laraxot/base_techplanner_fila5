@@ -138,10 +138,14 @@ class PatientRegistrationWizard extends Component
         // Validazione e salvataggio dati
         $patient = Patient::create($this->form->getState());
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         // Dispatch evento per notificare registrazione completata
         $this->dispatch('patient-registered', patientId: $patient->id);
     }
@@ -156,10 +160,14 @@ class PatientRegistrationWizard extends Component
         <h2 class="text-2xl font-bold mb-4">Registrazione Paziente</h2>
         <p class="mb-6">Compila tutti i campi per registrare un nuovo paziente</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         <form wire:submit="submit">
             {{ $this->form }}
         </form>
@@ -214,7 +222,11 @@ L'applicazione di questi principi di UX al wizard di registrazione paziente dovr
 - [Documenti di progettazione il progetto](/project_docs/07-frontend/leggi-ux.md)
 - [Documentazione Filament Forms](https://filamentphp.com/project_docs/forms)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Filament](/project_docs/tecnico/filament/best-practices.md) 
 =======
 - [Best Practices Filament](/project_docs/tecnico/filament/best-practices.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Best Practices Filament](/project_docs/tecnico/filament/best-practices.md) 
+>>>>>>> dev

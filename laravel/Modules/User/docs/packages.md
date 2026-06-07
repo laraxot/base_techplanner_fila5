@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pacchetti del Modulo User
 
 ## Pacchetti Utilizzati
@@ -98,3 +99,12 @@
 >>>>>>> 4b6b99016 (first commit)
 ### Versione Incoming
 ---
+=======
+---
+module: theme
+topic: packages
+canonical: ../../../Themes/docs/shared-components/packages.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/packages.md
+>>>>>>> dev

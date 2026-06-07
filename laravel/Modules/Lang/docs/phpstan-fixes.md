@@ -89,7 +89,11 @@ private function castWithAction(mixed $value): string
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> dev
 *Stato: ✅ Completato - 0 errori PHPStan*

@@ -3,15 +3,24 @@
 ## Panoramica
 Volt è un framework per la creazione di componenti Livewire in modo dichiarativo. Questa guida spiega come utilizzare Volt nel nostro sistema.
 
+<<<<<<< HEAD
+=======
+Nel progetto la regola di default per le componenti Volt interattive è la sintassi **class-based** (`new class extends Livewire\Volt\Component`). Gli esempi più sotto usano la sintassi functional solo come **legacy/mantenimento**: per nuovi componenti usa la sezione “Struttura Base” in basso.
+
+>>>>>>> dev
 ## Collegamenti
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Livewire](https://livewire.laravel.com)
 - [Filament](https://filamentphp.com)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione UI](../readme.md)
 =======
 - [Documentazione UI](../README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione UI](../readme.md)
+>>>>>>> dev
 - [Best Practices](../best-practices.md)
 - [Layout](../layouts.md)
 - [Temi](../themes.md)
@@ -21,6 +30,7 @@ Volt è un framework per la creazione di componenti Livewire in modo dichiarativ
 ### Componente Base
 ```php
 <?php
+<<<<<<< HEAD
 
 use function Livewire\Volt\{state, mount};
 
@@ -33,6 +43,19 @@ $submit = function() {
     // logica di submit
 };
 
+=======
+use Livewire\Volt\Component;
+
+new class extends Component {
+    public string $name = '';
+    public string $email = '';
+
+    public function submit(): void
+    {
+        // logica di submit
+    }
+};
+>>>>>>> dev
 ?>
 
 <form wire:submit="submit">
@@ -332,6 +355,9 @@ mount(function() {
 
 ### Modulo Xot
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Core](../../xot/docs/core.md)
 - [Servizi](../../xot/docs/services.md)
 - [Traits](../../xot/docs/traits.md)
@@ -397,6 +423,7 @@ mount(function() {
 - [Grafici](../../chart/docs/charts.md)
 - [Dashboard](../../chart/docs/dashboard.md)
 - [Visualizzazione](../../chart/docs/visualization.md)
+<<<<<<< HEAD
 =======
 - [Core](../../Xot/docs/core.md)
 - [Servizi](../../Xot/docs/services.md)
@@ -464,3 +491,5 @@ mount(function() {
 - [Dashboard](../../Chart/docs/dashboard.md)
 - [Visualizzazione](../../Chart/docs/visualization.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

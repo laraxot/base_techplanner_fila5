@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Laravel Sushi: Guida Completa
 
 ## Cos'è Laravel Sushi?
@@ -209,3 +210,12 @@ Rappresenta un equilibrio ottimale tra la semplicità degli array PHP e la poten
 - [Repository ufficiale di Laravel Sushi](https://github.com/calebporzio/sushi)
 - [Documentazione di Laravel Eloquent](https://laravel.com/project_docs/eloquent)
 - [Estensione PDO SQLite](https://www.php.net/manual/en/ref.pdo-sqlite.php)
+=======
+---
+module: theme
+topic: laravel_sushi_guide
+canonical: ../../../Themes/docs/shared-components/laravel-sushi-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/laravel-sushi-guide.md
+>>>>>>> dev

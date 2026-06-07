@@ -24,6 +24,9 @@ return [
             'tooltip' => 'Elegir entre vista de lista y vista de cuadrícula',
             'help' => 'Elija el tipo de diseño más adecuado para visualizar los datos',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -37,8 +40,11 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 =======
         ],
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

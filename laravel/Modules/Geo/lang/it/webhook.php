@@ -9,120 +9,186 @@ return [
             'placeholder' => 'Inserisci il nome del webhook',
             'help' => 'Nome identificativo del webhook',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'url' => [
             'label' => 'URL',
             'placeholder' => 'Inserisci l\'URL del webhook',
             'help' => 'URL di destinazione per il webhook',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'events' => [
             'label' => 'Eventi',
             'placeholder' => 'Seleziona gli eventi da monitorare',
             'help' => 'Eventi che attivano il webhook',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'method' => [
             'label' => 'Metodo',
             'placeholder' => 'Seleziona il metodo HTTP',
             'help' => 'Metodo HTTP per l\'invio del webhook',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'headers' => [
             'label' => 'Headers',
             'placeholder' => 'Configura gli headers personalizzati',
             'help' => 'Headers HTTP personalizzati per il webhook',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'payload_template' => [
             'label' => 'Template payload',
             'placeholder' => 'Configura il template del payload',
             'help' => 'Template per il payload del webhook',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'secret' => [
             'label' => 'Segreto',
             'placeholder' => 'Inserisci il segreto per la firma',
             'help' => 'Segreto per firmare il payload del webhook',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'is_active' => [
-            'label' => 'Attivo',
-            'help' => 'Indica se il webhook è attivo',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'is_active' => [
+            'label' => 'Attivo',
+            'help' => 'Indica se il webhook è attivo',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'retry_count' => [
             'label' => 'Numero tentativi',
             'placeholder' => 'Inserisci il numero di tentativi',
             'help' => 'Numero di tentativi in caso di fallimento',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'retry_delay' => [
             'label' => 'Ritardo tentativi',
             'placeholder' => 'Inserisci il ritardo in secondi',
             'help' => 'Ritardo tra i tentativi in secondi',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'timeout' => [
-            'label' => 'Timeout',
-            'placeholder' => 'Inserisci il timeout in secondi',
-            'help' => 'Timeout per l\'invio del webhook',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'timeout' => [
+            'label' => 'Timeout',
+            'placeholder' => 'Inserisci il timeout in secondi',
+            'help' => 'Timeout per l\'invio del webhook',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'validation' => [
@@ -255,6 +321,9 @@ return [
         'hmac_sha512' => 'HMAC-SHA512',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Webhook',
     'plural_label' => 'Webhook (Plurale)',
     'navigation' => [
@@ -279,6 +348,9 @@ return [
             'label' => 'Elimina Webhook',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

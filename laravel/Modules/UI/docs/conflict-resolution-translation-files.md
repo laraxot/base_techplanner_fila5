@@ -132,7 +132,11 @@ Applicare la stessa logica a tutti i file di traduzione con conflitti simili:
 
 ## Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Translation Standards](../../../docs/translation-standards.md)
+=======
+- [Translation Standards](../../../../docs/translation-standards.md)
+>>>>>>> dev
 - [PHP Strict Types](./strict_types_implementation.md)
 - [UI Module Structure](./structure.md)
 - [Best Practices](./best-practices.md)
@@ -285,7 +289,11 @@ Applicare la stessa logica a tutti i file di traduzione con conflitti simili:
 
 ## Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Translation Standards](../../../project_docs/translation-standards.md)
+=======
+- [Translation Standards](../../../../docs/project/translation-standards.md)
+>>>>>>> dev
 - [PHP Strict Types](./strict_types_implementation.md)
 - [UI Module Structure](./structure.md)
 - [Best Practices](./best-practices.md)

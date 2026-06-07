@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 # Panoramica delle Blade Icons in Xot
@@ -34,3 +35,6 @@ Modules/
 - [Documentazione dettagliata di registerBladeIcons](registerBladeIcons.md)
 - [Guida all'implementazione delle icone personalizzate](custom-icons-implementation.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

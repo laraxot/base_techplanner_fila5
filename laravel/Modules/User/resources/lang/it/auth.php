@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'login' => [
         'title' => 'Accedi al tuo account',
         'welcome_back' => 'Bentornato',
@@ -24,9 +27,12 @@ return [
         'no_account' => 'Non hai un account?',
         'create_account' => 'Crea account',
     ],
+<<<<<<< HEAD
 =======
     'login' => 'Accedi',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'register' => 'Registrati',
     'logout' => 'Esci',
     'logout_success' => 'Logout effettuato con successo',
@@ -41,6 +47,9 @@ return [
     'already_registered' => 'Già registrato?',
     'not_registered' => 'Non sei registrato?',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -54,6 +63,16 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'credentials_incorrect' => [
+        'key' => 'user::auth.credentials_incorrect',
+        'text' => 'Verifica i tuoi dati di accesso',
+        'description' => 'Messaggio di errore quando le credenziali sono errate',
+        'context' => 'login_form.credentials',
+        'placeholder' => '',
+    ],
+>>>>>>> dev
 ];

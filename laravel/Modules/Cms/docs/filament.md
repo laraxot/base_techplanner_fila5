@@ -1,10 +1,15 @@
 # Filament nel Modulo CMS
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Versione**: il progetto usa Filament 5.x. Compatibilità e riferimenti: [filament-5x-compatibility.md](filament-5x-compatibility.md).
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Versione**: il progetto usa Filament 5.x. Compatibilità e riferimenti: [filament-5x-compatibility.md](filament-5x-compatibility.md).
+
+>>>>>>> dev
 ## Risorse (Resources)
 
 Tutte le risorse Filament nel modulo CMS devono seguire queste convenzioni:
@@ -106,6 +111,9 @@ Le pagine custom devono essere collocate in `app/Filament/Pages`:
 ## Collegamenti tra versioni di filament.md
 * [filament.md](docs/tecnico/filament/filament.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [filament.md](laravel/modules/chart/docs/filament.md)
 * [filament.md](laravel/modules/gdpr/docs/filament.md)
 * [filament.md](laravel/modules/xot/docs/technical/filament.md)
@@ -114,6 +122,7 @@ Le pagine custom devono essere collocate in `app/Filament/Pages`:
 * [filament.md](laravel/modules/job/docs/filament.md)
 * [filament.md](laravel/modules/activity/docs/filament.md)
 * [filament.md](laravel/modules/cms/docs/filament.md)
+<<<<<<< HEAD
 =======
 * [filament.md](laravel/Modules/Chart/docs/filament.md)
 * [filament.md](laravel/Modules/Gdpr/docs/filament.md)
@@ -124,3 +133,5 @@ Le pagine custom devono essere collocate in `app/Filament/Pages`:
 * [filament.md](laravel/Modules/Activity/docs/filament.md)
 * [filament.md](laravel/Modules/Cms/docs/filament.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

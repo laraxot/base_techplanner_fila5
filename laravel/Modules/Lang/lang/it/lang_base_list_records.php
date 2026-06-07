@@ -9,6 +9,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Lang Base List Records',
     'plural_label' => 'Lang Base List Records (Plurale)',
     'navigation' => [
@@ -42,6 +45,9 @@ return [
             'description' => '',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

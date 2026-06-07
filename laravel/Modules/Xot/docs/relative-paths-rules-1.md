@@ -1,10 +1,17 @@
 # Regole per i Percorsi Relativi nella Documentazione
 
 > **Collegamenti correlati**
+<<<<<<< HEAD
 > - [README.md documentazione generale](../../../../docs/README.md)
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./PROMPT_RULES.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/README.md)
+=======
+> - [README.md documentazione generale](../../../../../docs/readme.md)
+> - [Struttura dei Prompt](./prompts.md)
+> - [Regole per i Prompt](./prompt_rules.md)
+> - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
+>>>>>>> dev
 
 ## Regola Fondamentale
 
@@ -17,38 +24,64 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 ### Da un file nella root del progetto verso un modulo
 
 ```markdown
+<<<<<<< HEAD
 [Modulo Xot](./laravel/Modules/Xot/docs/README.md)
+=======
+[Modulo Xot](./laravel/modules/xot/docs/readme.md)
+>>>>>>> dev
 ```
 
 ### Da un file in un modulo verso un altro modulo
 
 ```markdown
+<<<<<<< HEAD
 [Altro Modulo](../../../AltroModulo/docs/README.md)
+=======
+[Altro Modulo](../../../altromodulo/docs/readme.md)
+>>>>>>> dev
 ```
 
 ### Da un file in un modulo verso la root
 
 ```markdown
+<<<<<<< HEAD
 [Documentazione Root](../../../../docs/README.md)
+=======
+[Documentazione Root](../../../../../docs/readme.md)
+>>>>>>> dev
 ```
 
 ## Errori Comuni da Evitare
 
 1. **MAI utilizzare percorsi assoluti** come:
    ```markdown
+<<<<<<< HEAD
    [ERRATO](../Xot/docs/README.md)
+=======
+   [ERRATO](../xot/docs/readme.md)
+>>>>>>> dev
    ```
 
 2. **MAI utilizzare percorsi che iniziano con /**:
    ```markdown
+<<<<<<< HEAD
    [ERRATO](/docs/README.md)
    [ERRATO](/laravel/Modules/Xot/docs/README.md)
+=======
+   [ERRATO](/docs/readme.md)
+   [ERRATO](/laravel/modules/xot/docs/readme.md)
+>>>>>>> dev
    ```
 
 3. **MAI utilizzare percorsi che non tengono conto della posizione relativa del file sorgente**:
    ```markdown
+<<<<<<< HEAD
    [ERRATO](Modules/Xot/docs/README.md) <!-- Da un file nella root -->
    [ERRATO](../Xot/docs/README.md) <!-- Da un file in un modulo, senza contare correttamente i livelli -->
+=======
+   [ERRATO](modules/xot/docs/readme.md) <!-- Da un file nella root -->
+   [ERRATO](../xot/docs/readme.md) <!-- Da un file in un modulo, senza contare correttamente i livelli -->
+>>>>>>> dev
    ```
 
 ## Come Calcolare Correttamente i Percorsi Relativi
@@ -64,7 +97,11 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 | Posizione File Sorgente | Posizione File Destinazione | Percorso Relativo Corretto |
 |-------------------------|------------------------------|----------------------------|
 | `/docs/README.md` | `/laravel/Modules/Xot/docs/README.md` | `./laravel/Modules/Xot/docs/README.md` |
+<<<<<<< HEAD
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
+=======
+| `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../../docs/README.md` |
+>>>>>>> dev
 | `/laravel/Modules/Xot/docs/README.md` | `/laravel/Modules/User/docs/README.md` | `../../../User/docs/README.md` |
 | `/laravel/Modules/Xot/docs/structure.md` | `/laravel/Modules/Xot/docs/README.md` | `./README.md` |
 

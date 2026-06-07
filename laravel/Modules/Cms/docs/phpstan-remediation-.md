@@ -28,7 +28,11 @@
 
 ## Strategia operativa
 
+<<<<<<< HEAD
 1. **Censire utilizzi reali** degli script legacy (grep in CronJob/bashes). Se obsoleti → archiviarli in `docs/archive/legacy-scripts.md`, altrimenti refactor.
+=======
+1. **Censire utilizzi reali** degli script legacy (grep in CronJob/bashes). Se obsoleti → archiviarli in `docs/archived/legacy-scripts.md`, altrimenti refactor.
+>>>>>>> dev
 2. **Creare Actions dedicate**:
 
    ```php

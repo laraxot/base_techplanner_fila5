@@ -50,14 +50,21 @@ trait IsProfileTrait
     /**
      * Relazione con l'utente a cui appartiene il profilo.
      *
+<<<<<<< HEAD
      * @return BelongsTo<Model&UserContract, static>
+=======
+     * @return BelongsTo<Model&UserContract, $this>
+>>>>>>> dev
      */
     public function user(): BelongsTo
     {
         /** @var class-string<Model&UserContract> $userClass */
         $userClass = XotData::make()->getUserClass();
 
+<<<<<<< HEAD
         // @phpstan-ignore return.type
+=======
+>>>>>>> dev
         return $this->belongsTo($userClass);
     }
 
@@ -221,18 +228,29 @@ trait IsProfileTrait
     /**
      * Relazione con i dispositivi mobili associati al profilo.
      *
+<<<<<<< HEAD
      * @return BelongsToMany<Device, static>
      */
     public function mobileDevices(): BelongsToMany
     {
         // @phpstan-ignore return.type
+=======
+     * @return BelongsToMany<Device, $this>
+     */
+    public function mobileDevices(): BelongsToMany
+    {
+>>>>>>> dev
         return $this->belongsToManyX(Device::class);
     }
 
     /**
      * Relazione con tutti i dispositivi associati al profilo.
      *
+<<<<<<< HEAD
      * @return BelongsToMany<Device, static>
+=======
+     * @return BelongsToMany<Device, $this>
+>>>>>>> dev
      */
     public function devices(): BelongsToMany
     {
@@ -242,22 +260,36 @@ trait IsProfileTrait
     /**
      * Relazione con gli utenti di dispositivi mobili.
      *
+<<<<<<< HEAD
      * @return HasMany<DeviceUser, static>
      */
     public function mobileDeviceUsers(): HasMany
     {
         // @phpstan-ignore return.type
+=======
+     * @return HasMany<DeviceUser, $this>
+     */
+    public function mobileDeviceUsers(): HasMany
+    {
+>>>>>>> dev
         return $this->hasMany(DeviceUser::class, 'profile_id')->where('type', 'mobile');
     }
 
     /**
      * Relazione con gli utenti di dispositivi generici.
      *
+<<<<<<< HEAD
      * @return HasMany<DeviceUser, static>
      */
     public function deviceUsers(): HasMany
     {
         // @phpstan-ignore return.type
+=======
+     * @return HasMany<DeviceUser, $this>
+     */
+    public function deviceUsers(): HasMany
+    {
+>>>>>>> dev
         return $this->hasMany(DeviceUser::class, 'profile_id');
     }
 

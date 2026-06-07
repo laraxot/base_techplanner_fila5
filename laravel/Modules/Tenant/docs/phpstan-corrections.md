@@ -65,5 +65,10 @@ foreach ($schema as $name => $type) {
 
 ## Collegamenti Correlati
 - [Architettura Modulo Tenant](../architecture.md)
+<<<<<<< HEAD
 - [Guida PHPStan](../../../docs/phpstan-guide.md)
 - [Best Practices Laraxot](../../../docs/laraxot-best-practices.md)
+=======
+- [Guida PHPStan](../../../../docs/phpstan-guide.md)
+- [Best Practices Laraxot](../../../../docs/laraxot-best-practices.md)
+>>>>>>> dev

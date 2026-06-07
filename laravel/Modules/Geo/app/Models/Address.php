@@ -87,6 +87,13 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static AddressFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
+=======
+ * @property string|null $phone
+ *
+ * @method static Builder<static>|Address wherePhone($value)
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class Address extends BaseModel

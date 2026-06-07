@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Activity Module - Business Logic Analysis
 
 ## Overview
@@ -193,3 +194,12 @@ The Activity module provides comprehensive audit logging and event sourcing capa
 - **Debugging**: Helps diagnose application issues
 - **Analytics**: Enables user behavior analysis
 - **Accountability**: Tracks user actions for accountability
+=======
+---
+module: theme
+topic: business-logic
+canonical: ../../../Themes/docs/shared-components/business-logic-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/business-logic-analysis.md
+>>>>>>> dev

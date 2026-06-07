@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 # Sistema Content Blocks - <main module>
 
 ## Panoramica
 
 Il sistema Content Blocks di <main module> utilizza il Builder di Filament per creare pagine dinamiche composte da blocchi riutilizzabili. Ogni pagina è definita tramite file JSON che contengono la configurazione dei content_blocks.
+=======
+# Sistema Content Blocks
+
+## Panoramica
+
+Il sistema Content Blocks utilizza il Builder di Filament per creare pagine dinamiche composte da blocchi riutilizzabili. Ogni pagina è definita tramite file JSON che contengono la configurazione dei content_blocks.
+>>>>>>> dev
 
 ## Struttura dei Content Blocks
 
@@ -46,6 +54,10 @@ Il sistema Content Blocks di <main module> utilizza il Builder di Filament per c
 ## Tipi di Blocchi Disponibili
 
 ### 1. Hero Block
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
 Blocco principale della pagina con titolo, sottotitolo, immagine e call-to-action.
 
 ```json
@@ -57,7 +69,11 @@ Blocco principale della pagina con titolo, sottotitolo, immagine e call-to-actio
         "subtitle": "Sottotitolo descrittivo",
         "image": "url_immagine",
         "cta_text": "Testo bottone",
+<<<<<<< HEAD
         "cta_link": "{{ route('route_name') }}",
+=======
+        "cta_link": "/events",
+>>>>>>> dev
         "background_color": "bg-white",
         "text_color": "text-gray-900",
         "cta_color": "bg-indigo-600 hover:bg-indigo-700"
@@ -66,6 +82,10 @@ Blocco principale della pagina con titolo, sottotitolo, immagine e call-to-actio
 ```
 
 ### 2. Feature Sections Block
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
 Sezioni con caratteristiche o FAQ organizzate.
 
 ```json
@@ -86,6 +106,10 @@ Sezioni con caratteristiche o FAQ organizzate.
 ```
 
 ### 3. Widget Block
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
 Blocco per includere widget Filament dinamici.
 
 ```json
@@ -99,6 +123,10 @@ Blocco per includere widget Filament dinamici.
 ```
 
 ### 4. Landing Page Block
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
 Blocco specializzato per landing page.
 
 ```json
@@ -110,7 +138,11 @@ Blocco specializzato per landing page.
         "subtitle": "Sottotitolo",
         "image": "url_immagine",
         "cta_text": "Call to action",
+<<<<<<< HEAD
         "cta_link": "{{ route('register') }}",
+=======
+        "cta_link": "/auth/register",
+>>>>>>> dev
         "background_color": "bg-white",
         "text_color": "text-gray-900",
         "cta_color": "bg-indigo-600 hover:bg-indigo-700"
@@ -146,7 +178,11 @@ class BlockData extends Data implements Wireable
 1. Il JSON viene caricato dal modello `Page`
 2. I `content_blocks` vengono processati da `BlockData::collect()`
 3. Ogni blocco viene renderizzato tramite la sua view specificata
+<<<<<<< HEAD
 4. Le view sono organizzate nel tema sotto `Themes/One/resources/views/components/blocks/`
+=======
+4. Le view sono organizzate nel tema sotto `Themes/{pub_theme}/resources/views/components/blocks/`
+>>>>>>> dev
 
 ## Convenzioni di Naming
 
@@ -155,7 +191,11 @@ class BlockData extends Data implements Wireable
 - Naming: `kebab-case.json`
 
 ### View Blade
+<<<<<<< HEAD
 - Posizionate in: `Themes/One/resources/views/components/blocks/`
+=======
+- Posizionate in: `Themes/{pub_theme}/resources/views/components/blocks/` (es. Meetup)
+>>>>>>> dev
 - Struttura: `category/view_name.blade.php`
 - Namespace: `pub_theme::components.blocks.category.view_name`
 
@@ -219,9 +259,14 @@ Errore: Proprietà mancanti nel template
 - [Implementazione Register Disabled](./register_disabled_implementation.md)
 - [BlockData Implementation](../app/Datas/BlockData.php)
 - [Page Model](../app/Models/Page.php)
+<<<<<<< HEAD
 - [Theme Components](../../../Themes/One/resources/views/components/blocks/)
 
 <<<<<<< HEAD
 =======
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Theme Components](../../../Themes/Meetup/resources/views/components/blocks/)
+
+>>>>>>> dev

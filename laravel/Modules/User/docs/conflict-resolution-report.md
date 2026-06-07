@@ -3,10 +3,14 @@
 ## Panoramica
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/conflict_resolution.md).
 =======
 Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/DOCUMENTATION_PHILOSOPHY.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/CONFLICT_RESOLUTION.md).
 >>>>>>> 4b6b99016 (first commit)
+=======
+Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/conflict_resolution.md).
+>>>>>>> dev
 
 ## Conflitti Risolti
 
@@ -44,10 +48,14 @@ Abbiamo adottato la struttura migliorata della versione aurmich/dev, ma con le s
 
 #### Motivazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa soluzione allinea il widget alle [best practices di Filament](modules/user/docs/filament_best_practices.md) e alle [regole di traduzione](docs/translations_rules.md) del progetto.
 =======
 Questa soluzione allinea il widget alle [best practices di Filament](Modules/User/docs/FILAMENT_BEST_PRACTICES.md) e alle [regole di traduzione](docs/TRANSLATIONS_RULES.md) del progetto.
 >>>>>>> 4b6b99016 (first commit)
+=======
+Questa soluzione allinea il widget alle [best practices di Filament](modules/user/docs/filament_best_practices.md) e alle [regole di traduzione](docs/translations_rules.md) del progetto.
+>>>>>>> dev
 
 ### 3. Dichiarazione strict_types
 
@@ -59,10 +67,14 @@ Abbiamo aggiunto o corretto la dichiarazione `declare(strict_types=1);` in tutti
 
 #### Motivazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa soluzione è conforme alle [regole di PHPStan livello 9](docs/phpstan/phpstan_livello9_linee_guida.md) e alle convenzioni del progetto.
 =======
 Questa soluzione è conforme alle [regole di PHPStan livello 9](docs/phpstan/PHPSTAN_LIVELLO9_LINEE_GUIDA.md) e alle convenzioni del progetto.
 >>>>>>> 4b6b99016 (first commit)
+=======
+Questa soluzione è conforme alle [regole di PHPStan livello 9](docs/phpstan/phpstan_livello9_linee_guida.md) e alle convenzioni del progetto.
+>>>>>>> dev
 
 ## Impatto delle Modifiche
 
@@ -75,6 +87,9 @@ Le modifiche apportate garantiscono:
 ## Collegamenti alla Documentazione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Filosofia della Documentazione](docs/documentation_philosophy.md)
 - [Risoluzione dei Conflitti](docs/conflict_resolution.md)
 - [Best Practices Filament](modules/user/docs/filament_best_practices.md)
@@ -82,6 +97,7 @@ Le modifiche apportate garantiscono:
 - [PHPStan Livello 9](docs/phpstan/phpstan_livello9_linee_guida.md)
 - [Implementazione Login](modules/user/docs/auth_login_implementation.md)
 - [Implementazione Logout](modules/user/docs/auth_logout_implementation.md)
+<<<<<<< HEAD
 =======
 - [Filosofia della Documentazione](docs/DOCUMENTATION_PHILOSOPHY.md)
 - [Risoluzione dei Conflitti](docs/CONFLICT_RESOLUTION.md)
@@ -91,15 +107,21 @@ Le modifiche apportate garantiscono:
 - [Implementazione Login](Modules/User/docs/AUTH_LOGIN_IMPLEMENTATION.md)
 - [Implementazione Logout](Modules/User/docs/AUTH_LOGOUT_IMPLEMENTATION.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 # Risoluzione dei Conflitti Git nel Modulo User
 
 ## Panoramica
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/conflict_resolution.md).
 =======
 Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/DOCUMENTATION_PHILOSOPHY.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/CONFLICT_RESOLUTION.md).
 >>>>>>> 4b6b99016 (first commit)
+=======
+Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/conflict_resolution.md).
+>>>>>>> dev
 
 ## Conflitti Risolti
 
@@ -137,10 +159,14 @@ Abbiamo adottato la struttura migliorata della versione aurmich/dev, ma con le s
 
 #### Motivazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa soluzione allinea il widget alle [best practices di Filament](modules/user/docs/filament_best_practices.md) e alle [regole di traduzione](docs/translations_rules.md) del progetto.
 =======
 Questa soluzione allinea il widget alle [best practices di Filament](Modules/User/docs/FILAMENT_BEST_PRACTICES.md) e alle [regole di traduzione](docs/TRANSLATIONS_RULES.md) del progetto.
 >>>>>>> 4b6b99016 (first commit)
+=======
+Questa soluzione allinea il widget alle [best practices di Filament](modules/user/docs/filament_best_practices.md) e alle [regole di traduzione](docs/translations_rules.md) del progetto.
+>>>>>>> dev
 
 ### 3. Dichiarazione strict_types
 
@@ -152,10 +178,14 @@ Abbiamo aggiunto o corretto la dichiarazione `declare(strict_types=1);` in tutti
 
 #### Motivazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa soluzione è conforme alle [regole di PHPStan livello 9](docs/phpstan/phpstan_livello9_linee_guida.md) e alle convenzioni del progetto.
 =======
 Questa soluzione è conforme alle [regole di PHPStan livello 9](docs/phpstan/PHPSTAN_LIVELLO9_LINEE_GUIDA.md) e alle convenzioni del progetto.
 >>>>>>> 4b6b99016 (first commit)
+=======
+Questa soluzione è conforme alle [regole di PHPStan livello 9](docs/phpstan/phpstan_livello9_linee_guida.md) e alle convenzioni del progetto.
+>>>>>>> dev
 
 ## Impatto delle Modifiche
 
@@ -168,6 +198,9 @@ Le modifiche apportate garantiscono:
 ## Collegamenti alla Documentazione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Filosofia della Documentazione](docs/documentation_philosophy.md)
 - [Risoluzione dei Conflitti](docs/conflict_resolution.md)
 - [Best Practices Filament](modules/user/docs/filament_best_practices.md)
@@ -175,6 +208,7 @@ Le modifiche apportate garantiscono:
 - [PHPStan Livello 9](docs/phpstan/phpstan_livello9_linee_guida.md)
 - [Implementazione Login](modules/user/docs/auth_login_implementation.md)
 - [Implementazione Logout](modules/user/docs/auth_logout_implementation.md)
+<<<<<<< HEAD
 =======
 - [Filosofia della Documentazione](docs/DOCUMENTATION_PHILOSOPHY.md)
 - [Risoluzione dei Conflitti](docs/CONFLICT_RESOLUTION.md)
@@ -184,3 +218,5 @@ Le modifiche apportate garantiscono:
 - [Implementazione Login](Modules/User/docs/AUTH_LOGIN_IMPLEMENTATION.md)
 - [Implementazione Logout](Modules/User/docs/AUTH_LOGOUT_IMPLEMENTATION.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

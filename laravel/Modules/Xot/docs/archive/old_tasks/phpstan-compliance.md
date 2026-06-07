@@ -2,6 +2,7 @@
 
 ## 📚 Documentazione Correlata
 
+<<<<<<< HEAD
 - [Pattern Comuni Progetto](../../../../docs/phpstan/pattern-comuni.md)
 - [Lezioni Apprese](../../../../docs/phpstan/lezioni-apprese-2025-10-10.md)
 <<<<<<< HEAD
@@ -11,12 +12,19 @@
 - [Activity Best Practices](../../Activity/docs/phpstan/best-practices.md)
 - [Blog Best Practices](../../Blog/docs/phpstan/best-practices.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Pattern Comuni Progetto](../../../../../docs/phpstan/pattern-comuni.md)
+- [Lezioni Apprese](../../../../../docs/phpstan/lezioni-apprese-2025-10-10.md)
+- [Activity Best Practices](../../activity/docs/phpstan/best-practices.md)
+- [Blog Best Practices](../../blog/docs/phpstan/best-practices.md)
+>>>>>>> dev
 
 ---
 
 **Status:** 🔄 In Correzione  
 **Data Inizio:** 10 Ottobre 2025  
 **Target:** PHPStan Level 10 - 0 Errori
+<<<<<<< HEAD
 =======
 ## Status: ✅ FULLY COMPLIANT
 
@@ -24,6 +32,10 @@
 =======
 **Analysis Date:** September 22, 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+## Status: ✅ FULLY COMPLIANT
+
+>>>>>>> dev
 **PHPStan Level:** 9 (Maximum)
 **Files Analyzed:** 759
 **Errors Found:** 0
@@ -86,4 +98,8 @@ The module adheres to:
 - Comprehensive type hints
 - Core framework best practices
 - Modern PHP 8.2+ feature usage
+<<<<<<< HEAD
 - Extensive utility function coverage
+=======
+- Extensive utility function coverage
+>>>>>>> dev

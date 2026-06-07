@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gestione Sezioni
 
 ## Introduzione
@@ -123,3 +124,12 @@ Ogni sezione può contenere diversi tipi di blocchi:
 - [Documentazione Root](../../../../project_docs/readme.md)
 - [Documentazione Root – Sezioni](../../../../project_docs/sections.md)
 - [Panoramica Gestione Pagine (Root)](../../../../project_docs/page-content-management.md)
+=======
+---
+module: theme
+topic: section_management
+canonical: ../../../Themes/docs/shared-components/section-management.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/section-management.md
+>>>>>>> dev

@@ -66,6 +66,7 @@ return [
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Form Components](../patient/project_docs/filament-form-components.md)
 - [Wizard Structure](../patient/project_docs/filament-wizard-structure.md)
 - [Best Practices](../xot/project_docs/filament-best-practices.md)
@@ -74,6 +75,11 @@ return [
 - [Wizard Structure](../Patient/project_docs/filament-wizard-structure.md)
 - [Best Practices](../Xot/project_docs/filament-best-practices.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Form Components](../Patient/project_docs/filament-form-components.md)
+- [Wizard Structure](../Patient/project_docs/filament-wizard-structure.md)
+- [Best Practices](../Xot/project_docs/filament-best-practices.md)
+>>>>>>> dev
 
 ## Vedi Anche
 - [Laravel Translations](https://laravel.com/project_docs/localization)
@@ -146,6 +152,7 @@ return [
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Form Components](../patient/docs/filament-form-components.md)
 - [Wizard Structure](../patient/docs/filament-wizard-structure.md)
 - [Best Practices](../xot/docs/filament-best-practices.md)
@@ -154,6 +161,11 @@ return [
 - [Wizard Structure](../Patient/docs/filament-wizard-structure.md)
 - [Best Practices](../Xot/docs/filament-best-practices.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Form Components](../Patient/docs/filament-form-components.md)
+- [Wizard Structure](../Patient/docs/filament-wizard-structure.md)
+- [Best Practices](../Xot/docs/filament-best-practices.md)
+>>>>>>> dev
 
 ## Vedi Anche
 - [Laravel Translations](https://laravel.com/docs/localization)

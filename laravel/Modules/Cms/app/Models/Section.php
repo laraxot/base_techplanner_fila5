@@ -14,6 +14,13 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Modules\Cms\Models\Section.
  *
+<<<<<<< HEAD
+=======
+ * @property string $id
+ *
+ * @method static array<string, \Modules\Cms\Datas\BlockData> getBlocksBySlug(string $slug, ?string $side = null)
+ *
+>>>>>>> dev
  * @property string                       $id
  * @property array<array-key, mixed>|null $name
  * @property string|null                  $slug
@@ -46,7 +53,12 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $deleter
  *
+<<<<<<< HEAD
  * @method static SectionFactory factory($count = null, $state = [])
+=======
+ * @method static SectionFactory                   factory($count = null, $state = [])
+ * @method        array<int, array<string, mixed>> getSushiRows()
+>>>>>>> dev
  *
  * @mixin \Eloquent
  */
@@ -55,8 +67,13 @@ class Section extends BaseModelLang
     use HasBlocks;
     use SushiToJsons;
 
+<<<<<<< HEAD
     /** @var array<int, string> */
     public $translatable = [
+=======
+    /** @var list<string> */
+    public array $translatable = [
+>>>>>>> dev
         'name',
         'blocks',
     ];
@@ -68,7 +85,12 @@ class Section extends BaseModelLang
         'blocks',
     ];
 
+<<<<<<< HEAD
     protected array $schema = [
+=======
+    /** @var array<string, string> */
+    protected $schema = [
+>>>>>>> dev
         'id' => 'integer',
         'name' => 'json',
         'slug' => 'string',
@@ -85,8 +107,11 @@ class Section extends BaseModelLang
     public function getRows(): array
     {
         return $this->getSushiRows();
+<<<<<<< HEAD
 
         /* @var array<int, array<string, mixed>> $typedRows */
+=======
+>>>>>>> dev
     }
 
     /**

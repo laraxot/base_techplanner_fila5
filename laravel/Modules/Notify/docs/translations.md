@@ -85,6 +85,7 @@ Notification::make()
 ## Collegamenti Bidirezionali
 
 ### Collegamenti nella Root
+<<<<<<< HEAD
 - [Architettura delle Traduzioni](../../../../docs/architecture/translations.md)
 - [Gestione Lingue](../../../../docs/architecture/languages.md)
 
@@ -95,6 +96,14 @@ Notification::make()
 - [LangServiceProvider](../../Lang/docs/service-provider.md)
 >>>>>>> 4b6b99016 (first commit)
 - [Regole Traduzioni](../../../../docs/regole/traduzioni.md)
+=======
+- [Architettura delle Traduzioni](../../../../../docs/architecture/translations.md)
+- [Gestione Lingue](../../../../../docs/architecture/languages.md)
+
+### Collegamenti ai Moduli
+- [LangServiceProvider](../../Lang/docs/service-provider.md)
+- [Regole Traduzioni](../../../../../docs/regole/traduzioni.md)
+>>>>>>> dev
 
 ## Note Importanti
 
@@ -110,6 +119,7 @@ Notification::make()
 
 ```
 ## Collegamenti tra versioni di translations.md
+<<<<<<< HEAD
 <<<<<<< HEAD
 * [translations.md](../../../chart/docs/translations.md)
 * [translations.md](../../../reporting/docs/translations.md)
@@ -129,6 +139,8 @@ Notification::make()
 * [translations.md](../../../patient/docs/translations.md)
 * [translations.md](../../../cms/docs/translations.md)
 =======
+=======
+>>>>>>> dev
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)
 * [translations.md](../../../Gdpr/docs/translations.md)
@@ -146,6 +158,9 @@ Notification::make()
 * [translations.md](../../../Activity/docs/translations.md)
 * [translations.md](../../../Patient/docs/translations.md)
 * [translations.md](../../../Cms/docs/translations.md)
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ---

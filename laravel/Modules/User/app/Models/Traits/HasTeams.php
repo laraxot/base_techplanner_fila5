@@ -16,6 +16,10 @@ use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract as XotUserContract;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
+=======
+use Spatie\Permission\Models\Permission;
+>>>>>>> dev
 
 /**
  * Trait HasTeams.
@@ -338,7 +342,11 @@ trait HasTeams
         // Permissions from Role
         $role = $this->teamRole($team);
         if (null !== $role && $role->permissions) {
+<<<<<<< HEAD
             /** @var \Illuminate\Database\Eloquent\Collection<int, \Spatie\Permission\Models\Permission> $permissionsCollection */
+=======
+            /** @var \Illuminate\Database\Eloquent\Collection<int, Permission> $permissionsCollection */
+>>>>>>> dev
             $permissionsCollection = $role->permissions;
             /** @var array<string> $rolePermissionNames */
             $rolePermissionNames = $permissionsCollection->pluck('name')->toArray();

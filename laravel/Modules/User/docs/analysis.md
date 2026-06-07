@@ -49,6 +49,9 @@ Modules/User/
 ### Versione HEAD
 ## Collegamenti tra versioni di analysis.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [analysis.md](../../../notify/docs/analysis.md)
 * [analysis.md](../../../notify/docs/phpstan/analysis.md)
 * [analysis.md](../../../xot/docs/analysis.md)
@@ -75,6 +78,7 @@ Modules/User/
 * [analysis.md](../../../media/project_docs/analysis.md)
 * [analysis.md](../../../media/project_docs/phpstan/analysis.md)
 * [analysis.md](../../../../themes/one/project_docs/analysis.md)
+<<<<<<< HEAD
 =======
 * [analysis.md](../../../Notify/docs/analysis.md)
 * [analysis.md](../../../Notify/docs/phpstan/analysis.md)
@@ -103,5 +107,7 @@ Modules/User/
 * [analysis.md](../../../Media/project_docs/phpstan/analysis.md)
 * [analysis.md](../../../../Themes/One/project_docs/analysis.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ### Versione Incoming
 ---

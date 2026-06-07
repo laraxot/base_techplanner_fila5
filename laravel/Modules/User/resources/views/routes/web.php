@@ -9,10 +9,14 @@ declare(strict_types=1);
  * Route::middleware(['web'])
  * ->group(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Route::get('/it/about', [PagesController::class, 'about'])
 =======
  * Route::get('/it/pages/about', [PagesController::class, 'about'])
 >>>>>>> 4b6b99016 (first commit)
+=======
+ * Route::get('/it/about', [PagesController::class, 'about'])
+>>>>>>> dev
  * ->name('one.pages.about');
  * });
  */

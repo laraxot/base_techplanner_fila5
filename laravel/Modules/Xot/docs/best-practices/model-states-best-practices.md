@@ -11,7 +11,11 @@
 - **Collegamenti**:
   - [Errori comuni nelle transizioni custom (<nome progetto>)](../../<nome progetto>/docs/model-states-errors.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
   - [README.md centrale](../../../docs/readme.md) 
 =======
   - [README.md centrale](../../../docs/README.md) 
 >>>>>>> 4b6b99016 (first commit)
+=======
+  - [README.md centrale](../../../../docs/readme.md) 
+>>>>>>> dev

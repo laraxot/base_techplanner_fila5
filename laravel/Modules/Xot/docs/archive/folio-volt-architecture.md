@@ -7,27 +7,38 @@ Questo documento descrive l'architettura frontend basata su Folio, Volt e Filame
 
 ### Documentazione Correlata
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
 =======
 - [README](../README.md) - Panoramica del modulo Xot
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README](../readme.md) - Panoramica del modulo Xot
+- [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
+>>>>>>> dev
 - [Convenzioni di Naming](../../../project_docs/convenzioni-naming-campi.md) - Convenzioni per i nomi dei campi
 - [Flusso di Registrazione](../../../project_docs/flusso-registrazione.md) - Implementazione del wizard multi-step
 
 ### Moduli Collegati
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [UI](../../ui/project_docs/readme.md) - Componenti di interfaccia
 - [Cms](../../cms/project_docs/readme.md) - Gestione contenuti
 - [Lang](../../lang/project_docs/readme.md) - Traduzioni
 - [Patient](../../patient/project_docs/readme.md) - Gestione pazienti
+<<<<<<< HEAD
 =======
 - [UI](../../UI/project_docs/README.md) - Componenti di interfaccia
 - [Cms](../../Cms/project_docs/README.md) - Gestione contenuti
 - [Lang](../../Lang/project_docs/README.md) - Traduzioni
 - [Patient](../../Patient/project_docs/README.md) - Gestione pazienti
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Regole Fondamentali
 
@@ -231,6 +242,9 @@ new class extends Component {
 
 ### Modulo UI
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Componenti Volt](../ui/project_docs/components/volt.md)
 - [Layout](../ui/project_docs/layouts.md)
 - [Temi](../ui/project_docs/themes.md)
@@ -296,6 +310,7 @@ new class extends Component {
 - [Grafici](../chart/project_docs/charts.md)
 - [Dashboard](../chart/project_docs/dashboard.md)
 - [Visualizzazione](../chart/project_docs/visualization.md)
+<<<<<<< HEAD
 =======
 - [Componenti Volt](../UI/project_docs/components/volt.md)
 - [Layout](../UI/project_docs/layouts.md)
@@ -363,6 +378,8 @@ new class extends Component {
 - [Dashboard](../Chart/project_docs/dashboard.md)
 - [Visualizzazione](../Chart/project_docs/visualization.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 # Architettura Folio + Volt + Filament in il progetto
 
 ## Panoramica
@@ -371,6 +388,7 @@ Questo documento descrive l'architettura frontend basata su Folio, Volt e Filame
 ## Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
@@ -383,16 +401,27 @@ Questo documento descrive l'architettura frontend basata su Folio, Volt e Filame
 
 ### Moduli Collegati
 <<<<<<< HEAD
+=======
+- [README](../readme.md) - Panoramica del modulo Xot
+- [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
+- [Convenzioni di Naming](../../../../docs/convenzioni-naming-campi.md) - Convenzioni per i nomi dei campi
+- [Flusso di Registrazione](../../../../docs/flusso-registrazione.md) - Implementazione del wizard multi-step
+
+### Moduli Collegati
+>>>>>>> dev
 - [UI](../../ui/docs/readme.md) - Componenti di interfaccia
 - [Cms](../../cms/docs/readme.md) - Gestione contenuti
 - [Lang](../../lang/docs/readme.md) - Traduzioni
 - [Patient](../../patient/docs/readme.md) - Gestione pazienti
+<<<<<<< HEAD
 =======
 - [UI](../../UI/docs/README.md) - Componenti di interfaccia
 - [Cms](../../Cms/docs/README.md) - Gestione contenuti
 - [Lang](../../Lang/docs/README.md) - Traduzioni
 - [Patient](../../Patient/docs/README.md) - Gestione pazienti
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Regole Fondamentali
 
@@ -596,6 +625,9 @@ new class extends Component {
 
 ### Modulo UI
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Componenti Volt](../ui/docs/components/volt.md)
 - [Layout](../ui/docs/layouts.md)
 - [Temi](../ui/docs/themes.md)
@@ -661,6 +693,7 @@ new class extends Component {
 - [Grafici](../chart/docs/charts.md)
 - [Dashboard](../chart/docs/dashboard.md)
 - [Visualizzazione](../chart/docs/visualization.md)
+<<<<<<< HEAD
 =======
 - [Componenti Volt](../UI/docs/components/volt.md)
 - [Layout](../UI/docs/layouts.md)
@@ -728,3 +761,5 @@ new class extends Component {
 - [Dashboard](../Chart/docs/dashboard.md)
 - [Visualizzazione](../Chart/docs/visualization.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -46,6 +46,9 @@
 - [Roadmap Principale](../../roadmap.md)
 - [Gestione Traduzioni](../../translations.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Best Practices](../../best-practices.md)
 ## Collegamenti tra versioni di translations.md
 * [translations.md](../../../chart/docs/translations.md)
@@ -65,6 +68,7 @@
 * [translations.md](../../../activity/docs/translations.md)
 * [translations.md](../../../patient/docs/translations.md)
 * [translations.md](../../../cms/docs/translations.md)
+<<<<<<< HEAD
 =======
 - [Best Practices](../../BEST-PRACTICES.md)
 ## Collegamenti tra versioni di translations.md
@@ -86,3 +90,5 @@
 * [translations.md](../../../Patient/docs/translations.md)
 * [translations.md](../../../Cms/docs/translations.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

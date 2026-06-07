@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  ------ -------------- 
   Line   app/Filament  
          /Resources/R  
@@ -34,3 +35,12 @@
 
  [ERROR] Found 1 error 
 
+=======
+---
+module: theme
+topic: phpstan_level_10_report
+canonical: ../../../Themes/docs/shared-components/phpstan-level-10-report.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level-10-report.md
+>>>>>>> dev

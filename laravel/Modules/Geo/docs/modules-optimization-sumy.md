@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Riepilogo Analisi Ottimizzazione - Tutti i Moduli <nome progetto>
 # Riepilogo Analisi Ottimizzazione - Tutti i Moduli <nome progetto>
 
@@ -242,3 +243,12 @@ Il sistema <nome progetto> presenta una **architettura solida** con il framework
 *Analisi: 14 moduli, 50+ problemi identificati*
 *Principi: DRY + KISS + SOLID + ROBUST + Laraxot*
 *Stato: 📋 Roadmap Completa per Ottimizzazione Sistemica*
+=======
+---
+module: theme
+topic: modules-optimization-sumy
+canonical: ../../../Themes/docs/shared-components/modules-optimization-summary.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/modules-optimization-summary.md
+>>>>>>> dev

@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+<<<<<<< HEAD
 use Exception;
+=======
+>>>>>>> dev
 use Filament\Pages\Enums\SubNavigationPosition;
 use Filament\Resources\Pages\Page;
 use Filament\Resources\Pages\PageRegistration;
@@ -17,17 +20,29 @@ use Filament\Schemas\Schema;
 use Filament\Support\Components\Component;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Facades\View;
+>>>>>>> dev
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Actions\ModelClass\CountAction;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+<<<<<<< HEAD
 use ReflectionClass;
 use Webmozart\Assert\Assert;
 
 use function Safe\glob;
 
+=======
+
+use function Safe\glob;
+
+use Webmozart\Assert\Assert;
+
+>>>>>>> dev
 /**
  * @method static string getUrl(string $name, array<string, mixed> $parameters = [], bool $isAbsolute = true)
  */
@@ -37,10 +52,17 @@ abstract class XotBaseResource extends FilamentResource
 
     protected static ?string $model = null;
 
+<<<<<<< HEAD
     protected static ?\Filament\Pages\Enums\SubNavigationPosition $subNavigationPosition = SubNavigationPosition::Top;
 
     /**
      * @param  array<string, bool|float|int|string|null>  $params
+=======
+    protected static ?SubNavigationPosition $subNavigationPosition = SubNavigationPosition::Top;
+
+    /**
+     * @param array<string, bool|float|int|string|null> $params
+>>>>>>> dev
      */
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
@@ -49,7 +71,11 @@ abstract class XotBaseResource extends FilamentResource
 
         if (is_string($res)) {
             if ($exceptionIfNotExist && $res === $tmp) {
+<<<<<<< HEAD
                 throw new Exception('['.__LINE__.']['.class_basename(self::class).']');
+=======
+                throw new \Exception('['.__LINE__.']['.class_basename(self::class).']');
+>>>>>>> dev
             }
 
             return $res;
@@ -80,7 +106,11 @@ abstract class XotBaseResource extends FilamentResource
      */
     public static function getModel(): string
     {
+<<<<<<< HEAD
         if (static::$model !== null) {
+=======
+        if (null !== static::$model) {
+>>>>>>> dev
             $res = static::$model;
             Assert::subclassOf(
                 $res,
@@ -105,12 +135,28 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, Component>
+=======
+     * @return array<int|string, \Filament\Schemas\Components\Component>
+>>>>>>> dev
      */
     abstract public static function getFormSchema(): array;
 
     final public static function form(Schema $schema): Schema
     {
+<<<<<<< HEAD
+=======
+        // return AuthorForm::configure($schema);
+        $form_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
+        if (class_exists($form_class)) {
+            $configured = $form_class::configure($schema);
+            Assert::isInstanceOf($configured, Schema::class);
+
+            return $configured;
+        }
+
+>>>>>>> dev
         /** @var array<Htmlable|string> $components */
         $components = static::getFormSchema();
 
@@ -139,6 +185,17 @@ abstract class XotBaseResource extends FilamentResource
      */
     final public static function infolist(Schema $schema): Schema
     {
+<<<<<<< HEAD
+=======
+        $class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Infolist';
+        if (class_exists($class)) {
+            $configured = $class::configure($schema);
+            Assert::isInstanceOf($configured, Schema::class);
+
+            return $configured;
+        }
+
+>>>>>>> dev
         return $schema->components(static::getInfolistSchema());
     }
 
@@ -166,7 +223,11 @@ abstract class XotBaseResource extends FilamentResource
             $count = app(CountAction::class)->execute(static::getModel());
 
             return number_format($count, 0).'';
+<<<<<<< HEAD
         } catch (Exception $e) {
+=======
+        } catch (\Exception $e) {
+>>>>>>> dev
             return '--';
         }
     }
@@ -193,6 +254,7 @@ abstract class XotBaseResource extends FilamentResource
         /** @var class-string<Page> $view */
         $view = $view;
 
+<<<<<<< HEAD
         /** @var array<string, PageRegistration> $pages */
         $pages = [
             'index' => $index::route('/'),
@@ -200,6 +262,12 @@ abstract class XotBaseResource extends FilamentResource
             'edit' => $edit::route('/{record}/edit'),
             // 'view' => $view::route('/{record}'),
         ];
+=======
+        $pages = [];
+        $pages['index'] = $index::route('/');
+        $pages['create'] = $create::route('/create');
+        $pages['edit'] = $edit::route('/{record}/edit');
+>>>>>>> dev
 
         if (class_exists($view)) {
             $pages['view'] = $view::route('/{record}');
@@ -213,7 +281,11 @@ abstract class XotBaseResource extends FilamentResource
      */
     public static function getRelations(): array
     {
+<<<<<<< HEAD
         $reflector = new ReflectionClass(static::class);
+=======
+        $reflector = new \ReflectionClass(static::class);
+>>>>>>> dev
         $filename = $reflector->getFileName();
         Assert::string($filename, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
 
@@ -226,7 +298,11 @@ abstract class XotBaseResource extends FilamentResource
         $filesResult = glob($path.\DIRECTORY_SEPARATOR.'*RelationManager.php');
 
         // PHPStan: glob() with valid pattern returns array
+<<<<<<< HEAD
         if ($filesResult === []) {
+=======
+        if ([] === $filesResult) {
+>>>>>>> dev
             return [];
         }
 
@@ -254,11 +330,18 @@ abstract class XotBaseResource extends FilamentResource
     public static function getWizardSubmitAction(): Htmlable
     {
         $submit_view = 'pub_theme::filament.wizard.submit-button';
+<<<<<<< HEAD
         // @phpstan-ignore-next-line
         if (! view()->exists($submit_view)) {
             throw new Exception("View {$submit_view} does not exist");
         }
         $render = view($submit_view)->render();
+=======
+        if (! View::exists($submit_view)) {
+            throw new \Exception("View {$submit_view} does not exist");
+        }
+        $render = View::make($submit_view)->render();
+>>>>>>> dev
 
         return new HtmlString($render);
     }

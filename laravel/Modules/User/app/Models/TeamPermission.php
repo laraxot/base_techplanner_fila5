@@ -7,9 +7,13 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Database\Factories\TeamPermissionFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Illuminate\Support\Carbon;
+>>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -35,20 +39,44 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
  *
 <<<<<<< HEAD
 =======
  * @method static TeamPermissionFactory factory($count = null, $state = [])
  *
 >>>>>>> 4b6b99016 (first commit)
+=======
+ * @property string|null          $name
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ *
+ * @method static \Modules\User\Database\Factories\TeamPermissionFactory factory($count = null, $state = [])
+ * @method static Builder<static>|TeamPermission                         whereCreatedAt($value)
+ * @method static Builder<static>|TeamPermission                         whereCreatedBy($value)
+ * @method static Builder<static>|TeamPermission                         whereDeletedAt($value)
+ * @method static Builder<static>|TeamPermission                         whereDeletedBy($value)
+ * @method static Builder<static>|TeamPermission                         whereId($value)
+ * @method static Builder<static>|TeamPermission                         whereName($value)
+ * @method static Builder<static>|TeamPermission                         wherePermission($value)
+ * @method static Builder<static>|TeamPermission                         whereTeamId($value)
+ * @method static Builder<static>|TeamPermission                         whereUpdatedAt($value)
+ * @method static Builder<static>|TeamPermission                         whereUpdatedBy($value)
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class TeamPermission extends BaseModel
 {
     /**
      * The database connection that should be used by the model.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> dev
      */
     protected $connection = 'user';
 

@@ -8,110 +8,170 @@ return [
             'label' => 'File',
             'placeholder' => 'Seleziona il file da importare',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'help' => 'File da importare (CSV, Excel, GeoJSON, Shapefile]',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
             'help' => 'File da importare (CSV, Excel, GeoJSON, Shapefile)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'format' => [
             'label' => 'Formato',
             'placeholder' => 'Seleziona il formato del file',
             'help' => 'Formato del file da importare',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'encoding' => [
             'label' => 'Codifica',
             'placeholder' => 'Seleziona la codifica',
             'help' => 'Codifica del file da importare',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'delimiter' => [
             'label' => 'Delimitatore',
             'placeholder' => 'Inserisci il delimitatore',
             'help' => 'Delimitatore per file CSV',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'has_headers' => [
-            'label' => 'Ha intestazioni',
-            'help' => 'Il file ha una riga di intestazioni',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'has_headers' => [
+            'label' => 'Ha intestazioni',
+            'help' => 'Il file ha una riga di intestazioni',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'skip_rows' => [
             'label' => 'Righe da saltare',
             'placeholder' => 'Inserisci il numero di righe da saltare',
             'help' => 'Numero di righe da saltare all\'inizio',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'mapping' => [
             'label' => 'Mappatura campi',
             'placeholder' => 'Configura la mappatura dei campi',
             'help' => 'Mappatura tra campi del file e campi del database',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'validation_rules' => [
             'label' => 'Regole di validazione',
             'placeholder' => 'Configura le regole di validazione',
             'help' => 'Regole di validazione per i dati importati',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'update_existing' => [
-            'label' => 'Aggiorna esistenti',
-            'help' => 'Aggiorna i record esistenti invece di crearne di nuovi',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'update_existing' => [
+            'label' => 'Aggiorna esistenti',
+            'help' => 'Aggiorna i record esistenti invece di crearne di nuovi',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'batch_size' => [
             'label' => 'Dimensione batch',
             'placeholder' => 'Inserisci la dimensione del batch',
             'help' => 'Numero di record da processare per batch',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'validation' => [
@@ -162,6 +222,9 @@ return [
     ],
     'delimiters' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'comma' => 'Virgola (,]',
         'semicolon' => 'Punto e virgola (;]',
         'tab' => 'Tab',
@@ -192,6 +255,7 @@ return [
             'label' => 'Elimina Import',
         ],
     ],
+<<<<<<< HEAD
 =======
         'comma' => 'Virgola (,)',
         'semicolon' => 'Punto e virgola (;)',
@@ -200,4 +264,6 @@ return [
         'space' => 'Spazio',
     ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

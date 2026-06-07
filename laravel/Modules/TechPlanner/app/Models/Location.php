@@ -31,9 +31,13 @@ use Modules\TechPlanner\Database\Factories\LocationFactoryFactory;
  * @property string|null $deleted_at
  * @property string|null $deleted_by
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @method static LocationFactoryFactory factory($count = null, $state = [])
  * @method static Builder<static>|Location newModelQuery()
  * @method static Builder<static>|Location newQuery()
@@ -58,9 +62,13 @@ use Modules\TechPlanner\Database\Factories\LocationFactoryFactory;
  * @method static Builder<static>|Location whereUpdatedBy($value)
  * @method static Builder<static>|Location whereZip($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class Location extends Model

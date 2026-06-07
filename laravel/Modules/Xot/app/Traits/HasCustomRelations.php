@@ -9,7 +9,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Traits;
 
+<<<<<<< HEAD
 use Closure;
+=======
+>>>>>>> dev
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Relations\CustomRelation;
 use Webmozart\Assert\Assert;
@@ -23,11 +26,19 @@ trait HasCustomRelations
 {
     public function customRelation(
         string $related,
+<<<<<<< HEAD
         Closure $baseConstraints,
         ?Closure $eagerConstraints = null,
         ?Closure $eagerMatcher = null,
     ): CustomRelation {
         $instance = new $related;
+=======
+        \Closure $baseConstraints,
+        ?\Closure $eagerConstraints = null,
+        ?\Closure $eagerMatcher = null,
+    ): CustomRelation {
+        $instance = new $related();
+>>>>>>> dev
         // Call to an undefined method object::newQuery()
         Assert::isInstanceOf($instance, Model::class, '['.__LINE__.']['.class_basename($this).']');
         $query = $instance->newQuery();

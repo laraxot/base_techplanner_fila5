@@ -64,6 +64,7 @@ class RegistrationWidget extends Widget
 
     protected static string $view = 'user::filament.widgets.registration-widget';
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     public ?array $data = [];
     
@@ -72,15 +73,24 @@ class RegistrationWidget extends Widget
     public ?array $data = [];
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+    public ?array $data = [];
+    
+>>>>>>> dev
     public function mount(): void
     {
         $this->form->fill();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     public function form(Form $form): Form
     {
         return $form
@@ -95,19 +105,27 @@ class RegistrationWidget extends Widget
                                 ->required()
                                 ->maxLength(255),
 <<<<<<< HEAD
-                                
-=======
-
->>>>>>> 4b6b99016 (first commit)
-                            TextInput::make('surname')
-                                ->label('Cognome')
-                                ->required()
-                                ->maxLength(255),
 <<<<<<< HEAD
                                 
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+                                
+>>>>>>> dev
+                            TextInput::make('surname')
+                                ->label('Cognome')
+                                ->required()
+                                ->maxLength(255),
+<<<<<<< HEAD
+<<<<<<< HEAD
+                                
+=======
+
+>>>>>>> 4b6b99016 (first commit)
+=======
+                                
+>>>>>>> dev
                             TextInput::make('email')
                                 ->label('Email')
                                 ->email()
@@ -116,10 +134,14 @@ class RegistrationWidget extends Widget
                                 ->maxLength(255),
                         ]),
 <<<<<<< HEAD
+<<<<<<< HEAD
                         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+                        
+>>>>>>> dev
                     Step::make('Credenziali')
                         ->icon('heroicon-o-key')
                         ->description('Crea le tue credenziali di accesso')
@@ -131,10 +153,14 @@ class RegistrationWidget extends Widget
                                 ->minLength(8)
                                 ->same('password_confirmation'),
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+                                
+>>>>>>> dev
                             TextInput::make('password_confirmation')
                                 ->label('Conferma Password')
                                 ->password()
@@ -142,10 +168,14 @@ class RegistrationWidget extends Widget
                                 ->minLength(8),
                         ]),
 <<<<<<< HEAD
+<<<<<<< HEAD
                         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+                        
+>>>>>>> dev
                     Step::make('Privacy')
                         ->icon('heroicon-o-lock-closed')
                         ->description('Informativa sulla privacy')
@@ -154,10 +184,14 @@ class RegistrationWidget extends Widget
                                 ->label(new HtmlString('Accetto i <a href="#" class="text-primary-600 hover:underline">Termini di Servizio</a> e l\'<a href="#" class="text-primary-600 hover:underline">Informativa sulla Privacy</a>'))
                                 ->required(),
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+                                
+>>>>>>> dev
                             Checkbox::make('newsletter')
                                 ->label('Desidero ricevere aggiornamenti via email sul progetto il progetto'),
                         ]),
@@ -168,11 +202,15 @@ class RegistrationWidget extends Widget
             ->statePath('data');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     public function register()
     {
         $state = $this->form->getState();
         
+<<<<<<< HEAD
 =======
 
     public function register()
@@ -180,17 +218,23 @@ class RegistrationWidget extends Widget
         $state = $this->form->getState();
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         $user = User::create([
             'name' => $state['name'],
             'email' => $state['email'],
             'password' => Hash::make($state['password']),
         ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         
         event(new Registered($user));
         
         Auth::login($user, true);
         
+<<<<<<< HEAD
 =======
 
         event(new Registered($user));
@@ -198,6 +242,8 @@ class RegistrationWidget extends Widget
         Auth::login($user, true);
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         return redirect()->intended('/');
     }
 }
@@ -211,10 +257,14 @@ class RegistrationWidget extends Widget
         {{ $this->form }}
     </form>
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     <div class="text-sm text-center text-gray-600 mt-6">
         Hai già un account? <a href="{{ route('login') }}" class="text-blue-800 hover:underline">Accedi</a>
     </div>
@@ -237,10 +287,14 @@ public function boot()
 {
     // ... altro codice
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     Filament::registerWidgets([
         RegistrationWidget::class,
     ]);
@@ -266,10 +320,14 @@ name('register');
         <div class="text-3xl font-light">
             <a href="{{ route('home') }}" class="text-white no-underline">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <span class="font-normal">SALUTE</span> ORA<span class="italic font-light text-2xl">le</span>
 =======
                 <slogan>
 >>>>>>> 4b6b99016 (first commit)
+=======
+                <span class="font-normal">SALUTE</span> ORA<span class="italic font-light text-2xl">le</span>
+>>>>>>> dev
             </a>
         </div>
         <button class="text-white" aria-label="Menu">
@@ -283,10 +341,14 @@ name('register');
         <h1 class="text-2xl font-medium text-blue-900 mb-2">Registrazione</h1>
         <p class="text-gray-600 mb-8">Compila i seguenti passaggi per creare il tuo account su il progetto</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         <div class="bg-white rounded-lg shadow-sm p-6">
             <livewire:user::filament.widgets.registration-widget />
         </div>
@@ -329,16 +391,23 @@ public function register()
 {
     $state = $this->form->getState();
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     $user = User::create([
         'name' => $state['name'],
         'email' => $state['email'],
         'password' => Hash::make($state['password']),
     ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     event(new Registered($user));
     
@@ -347,6 +416,7 @@ public function register()
     
     Auth::login($user, true);
     
+<<<<<<< HEAD
 =======
 
     event(new Registered($user));
@@ -357,6 +427,8 @@ public function register()
     Auth::login($user, true);
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     return redirect()->intended('/')->with('success', 'Registrazione completata con successo!');
 }
 ```

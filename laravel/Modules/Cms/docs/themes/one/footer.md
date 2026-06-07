@@ -5,10 +5,14 @@ Questo documento è un riferimento al componente Footer implementato nel tema On
 ## Collegamenti alla Documentazione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Completa del Footer](/laravel/themes/one/docs/components/layouts/footer.md)
 =======
 - [Documentazione Completa del Footer](/laravel/Themes/One/docs/components/layouts/footer.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione Completa del Footer](/laravel/themes/one/docs/components/layouts/footer.md)
+>>>>>>> dev
 - [Documentazione Root](/laravel/docs/themes/one/components/footer.md)
 
 ## Integrazione con il Modulo CMS
@@ -49,6 +53,7 @@ return [
 ## Collegamenti Utili
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Tema One - Overview](/laravel/themes/one/docs/readme.md)
 - [CMS Module - Components](/laravel/modules/cms/docs/components.md)
 - [Integrazione Temi](/laravel/modules/cms/docs/themes.md)
@@ -57,17 +62,26 @@ return [
 - [CMS Module - Components](/laravel/Modules/Cms/docs/components.md)
 - [Integrazione Temi](/laravel/Modules/Cms/docs/themes.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Tema One - Overview](/laravel/themes/one/docs/readme.md)
+- [CMS Module - Components](/laravel/modules/cms/docs/components.md)
+- [Integrazione Temi](/laravel/modules/cms/docs/themes.md)
+>>>>>>> dev
 
 ## Collegamenti tra versioni di footer.md
 * [footer.md](docs/laravel-app/themes/one/components/footer.md)
 * [footer.md](docs/sections/footer.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [footer.md](laravel/modules/ui/docs/components/footer.md)
 * [footer.md](laravel/modules/cms/docs/blocks/footer.md)
 * [footer.md](laravel/modules/cms/docs/themes/one/footer.md)
 * [footer.md](laravel/modules/cms/docs/components/footer.md)
 * [footer.md](laravel/themes/one/docs/components/layouts/footer.md)
 * [footer.md](laravel/themes/one/docs/sections/footer.md)
+<<<<<<< HEAD
 =======
 * [footer.md](laravel/Modules/UI/docs/components/footer.md)
 * [footer.md](laravel/Modules/Cms/docs/blocks/footer.md)
@@ -76,3 +90,5 @@ return [
 * [footer.md](laravel/Themes/One/docs/components/layouts/footer.md)
 * [footer.md](laravel/Themes/One/docs/sections/footer.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

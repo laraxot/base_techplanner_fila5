@@ -1,6 +1,9 @@
 {
     "id": "2",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     "slug": "footer",
     "name": {
         "it": "Footer Sottana Service",
@@ -265,6 +268,7 @@
             }
         ]
     }
+<<<<<<< HEAD
 =======
     "name": null,
     "slug": "footer",
@@ -274,4 +278,6 @@
     "created_by": null,
     "updated_by": null
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 }

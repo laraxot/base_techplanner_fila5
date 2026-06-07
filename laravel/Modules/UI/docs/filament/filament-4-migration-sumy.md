@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filament 4 Migration Summary
 
 ## Completed Tasks ✅
@@ -144,3 +145,12 @@ vendor/bin/pint --dirty
 **Errors Resolved**: 5/5 PHPStan errors fixed
 **Files Updated**: 4 files (2 code, 2 config)
 **Documentation Created**: 3 new guide files
+=======
+---
+module: theme
+topic: filament-4-migration-sumy
+canonical: ../../../../Themes/docs/shared-components/filament-4-migration-summary.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/filament-4-migration-summary.md
+>>>>>>> dev

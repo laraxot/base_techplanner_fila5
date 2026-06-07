@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Illuminate\Contracts\Cache\Factory as CacheFactory;
+=======
+>>>>>>> dev
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration {
@@ -44,11 +47,16 @@ return new class extends XotBaseMigration {
 
         try {
             // Verifica se l'applicazione è completamente inizializzata
+<<<<<<< HEAD
             if (app()->bound(CacheFactory::class)) {
                 $cache = app(CacheFactory::class);
                 $store = 'default' !== $cache_store ? $cache_store : null;
 
                 $cache->store($store)->forget($cache_key);
+=======
+            if (app()->bound('cache')) {
+                app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
+>>>>>>> dev
             }
         } catch (Exception $e) {
             // Silently ignore cache errors during package discovery

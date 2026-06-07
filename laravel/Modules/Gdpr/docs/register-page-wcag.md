@@ -195,7 +195,11 @@ a:focus-visible {
 #### Page Titles
 ```html
 <!-- Unique and descriptive page titles -->
+<<<<<<< HEAD
 <title>{{ __('gdpr::register.meta.title') }} - LaravelPizza</title>
+=======
+<title>{{ __('gdpr::register.meta.title') }} - <nome progetto></title>
+>>>>>>> dev
 ```
 
 ## Understandable
@@ -226,7 +230,11 @@ p + p {
 }
 ```
 
+<<<<<<< HEAD
 ### 3.2 Predictable (Level A)
+=======
+### 3.2 <nome progetto>able (Level A)
+>>>>>>> dev
 
 #### Consistent Navigation
 ```html

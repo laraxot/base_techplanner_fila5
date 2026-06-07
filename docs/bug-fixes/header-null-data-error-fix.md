@@ -113,7 +113,10 @@ Per prevenire regressioni future:
 - Il pattern di sicurezza può essere applicato ad altri componenti simili
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 

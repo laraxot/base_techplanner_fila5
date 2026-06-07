@@ -32,10 +32,14 @@ class ActiveMenuFilter implements MenuFilterInterface
                 }
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
             if ($hasActiveChild) {
                 $item['active'] = true;
             }
@@ -55,10 +59,14 @@ class ActiveMenuFilter implements MenuFilterInterface
                 }
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
             if ($hasActiveChild) {
                 $item['active'] = true;
             }
@@ -79,10 +87,14 @@ class ActiveMenuFilter implements MenuFilterInterface
         if (isset($item['active_urls']) && is_array($item['active_urls'])) {
             foreach ($item['active_urls'] as $activeUrl) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if ($this->matchesPattern($currentPath, $activeUrl) ||
 =======
                 if ($this->matchesPattern($currentPath, $activeUrl) || 
 >>>>>>> 4b6b99016 (first commit)
+=======
+                if ($this->matchesPattern($currentPath, $activeUrl) ||
+>>>>>>> dev
                     $this->matchesPattern($currentUrl, $activeUrl)) {
                     return true;
                 }
@@ -96,10 +108,14 @@ class ActiveMenuFilter implements MenuFilterInterface
 
         // Se non ha URL, non può essere attivo
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! isset($item['url'])) {
 =======
         if (!isset($item['url'])) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! isset($item['url'])) {
+>>>>>>> dev
             return false;
         }
 
@@ -131,10 +147,14 @@ class ActiveMenuFilter implements MenuFilterInterface
 
         // Sub-path match (l'URL corrente è sotto l'URL dell'elemento)
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($itemPath !== '' && str_starts_with($currentPath.'/', $itemPath.'/')) {
 =======
         if ($itemPath !== '' && str_starts_with($currentPath . '/', $itemPath . '/')) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if ($itemPath !== '' && str_starts_with($currentPath.'/', $itemPath.'/')) {
+>>>>>>> dev
             return true;
         }
 
@@ -155,28 +175,42 @@ class ActiveMenuFilter implements MenuFilterInterface
         if (str_contains($pattern, '*')) {
             $pattern = str_replace('*', '.*', preg_quote($pattern, '/'));
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             return (bool) preg_match('/^'.$pattern.'$/i', $path);
 =======
             return (bool) preg_match('/^' . $pattern . '$/i', $path);
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+            return (bool) preg_match('/^'.$pattern.'$/i', $path);
+>>>>>>> dev
         }
 
         // Sub-path pattern (ends with /*)
         if (str_ends_with($pattern, '/*')) {
             $basePath = rtrim($pattern, '/*');
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             return str_starts_with($path, $basePath.'/') || $path === $basePath;
 =======
             return str_starts_with($path, $basePath . '/') || $path === $basePath;
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+            return str_starts_with($path, $basePath.'/') || $path === $basePath;
+>>>>>>> dev
         }
 
         return false;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 4b6b99016 (first commit)
+=======
+}
+>>>>>>> dev

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 # Soluzioni Tecniche - Modulo Xot
@@ -262,3 +263,6 @@ class CacheTest extends TestCase {
 
 ---
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

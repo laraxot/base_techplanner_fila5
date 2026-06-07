@@ -81,7 +81,10 @@ Questa regola si applica a:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-07-30*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 *Stato: Implementato e verificato in tutto il progetto*

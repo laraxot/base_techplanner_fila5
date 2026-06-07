@@ -180,6 +180,7 @@ npm install
 
 ### **Guide Specifiche**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [PHP Code Quality Guide](../xot/docs/php-code-quality.md)
 - [Frontend Code Quality Guide](../xot/docs/frontend-code-quality.md)
 - [Security Best Practices](../xot/docs/security-best-practices.md)
@@ -188,6 +189,11 @@ npm install
 - [Frontend Code Quality Guide](../Xot/docs/frontend-code-quality.md)
 - [Security Best Practices](../Xot/docs/security-best-practices.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [PHP Code Quality Guide](../xot/docs/php-code-quality.md)
+- [Frontend Code Quality Guide](../xot/docs/frontend-code-quality.md)
+- [Security Best Practices](../xot/docs/security-best-practices.md)
+>>>>>>> dev
 
 ---
 

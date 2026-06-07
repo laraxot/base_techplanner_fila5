@@ -10,10 +10,15 @@ return [
             'placeholder' => 'Click to view',
             'help' => 'View all details of the selected item',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'delete' => [
             'label' => 'Delete',
@@ -21,10 +26,15 @@ return [
             'placeholder' => 'Click to delete',
             'help' => 'Permanently delete the selected item',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'edit' => [
             'label' => 'Edit',
@@ -32,10 +42,15 @@ return [
             'placeholder' => 'Click to edit',
             'help' => 'Edit the selected item data',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'detach' => [
             'label' => 'Detach',
@@ -43,10 +58,15 @@ return [
             'placeholder' => 'Click to detach',
             'help' => 'Remove the connection with the selected item',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'attach' => [
             'label' => 'Attach',
@@ -54,10 +74,15 @@ return [
             'placeholder' => 'Click to attach',
             'help' => 'Create a connection with the selected item',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'pregnancy_certificate' => [
             'label' => 'Pregnancy Certificate',
@@ -65,10 +90,15 @@ return [
             'placeholder' => 'Upload pregnancy certificate',
             'help' => 'Upload the medical certificate attesting pregnancy',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'health_card' => [
             'label' => 'Health Card',
@@ -76,10 +106,15 @@ return [
             'placeholder' => 'Upload health card',
             'help' => 'Upload front/back photo of the health card',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'identity_document' => [
             'label' => 'Identity Document',
@@ -87,10 +122,15 @@ return [
             'placeholder' => 'Upload identity document',
             'help' => 'Upload a valid and non-expired identity document',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'isee_certificate' => [
             'label' => 'ISEE Certificate',
@@ -98,10 +138,15 @@ return [
             'placeholder' => 'Upload ISEE certificate',
             'help' => 'Upload the ISEE certificate for any economic benefits',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'certifications' => [
             'label' => 'Certifications',
@@ -109,10 +154,15 @@ return [
             'placeholder' => 'Upload certifications',
             'help' => 'Upload any required medical certifications or additional documents',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'certification' => [
             'label' => 'Certificate',
@@ -120,10 +170,15 @@ return [
             'placeholder' => 'Upload certificate',
             'help' => 'Health card or professional registration certificate',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'doctor_certificate' => [
             'label' => 'Doctor Certificate',
@@ -131,10 +186,15 @@ return [
             'placeholder' => 'Upload doctor certificate',
             'help' => 'Health card or professional registration certificate',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
     ],
     'validation' => [
@@ -160,6 +220,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -171,6 +234,9 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

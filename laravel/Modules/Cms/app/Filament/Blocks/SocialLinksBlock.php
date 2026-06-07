@@ -37,6 +37,10 @@ class SocialLinksBlock extends XotBaseBlock
 
     public static function getBlockLabel(): string
     {
+<<<<<<< HEAD
         return \trans_string('cms::filament.blocks.footer.social.label') ?? 'Block';
+=======
+        return \trans_string('cms::filament.blocks.footer.social.label');
+>>>>>>> dev
     }
 }

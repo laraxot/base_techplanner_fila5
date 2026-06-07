@@ -12,21 +12,30 @@ use function Laravel\Prompts\text;
 
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 use Symfony\Component\Console\Input\InputOption;
+=======
+>>>>>>> dev
 
 class AssignTenantCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> dev
      */
     protected $name = 'user:assign-tenant';
 
     /**
      * The console command description.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> dev
      */
     protected $description = 'Assign a tenant to user';
 
@@ -72,6 +81,9 @@ class AssignTenantCommand extends Command
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     /*
      * Get the console command options.
      */
@@ -81,6 +93,7 @@ class AssignTenantCommand extends Command
     //     ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
+<<<<<<< HEAD
 =======
     /**
      * Get the console command options.
@@ -92,4 +105,6 @@ class AssignTenantCommand extends Command
         ];
     }
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 }

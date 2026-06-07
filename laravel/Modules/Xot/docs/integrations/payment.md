@@ -2,15 +2,27 @@
 
 ## Cashier
 ```txt
+<<<<<<< HEAD
 ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/cashier.txt}
+=======
+${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/cashier.txt}
+>>>>>>> dev
 ```
 
 ## Payment Gateways
 ```txt
+<<<<<<< HEAD
 ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/payment_gateway.txt}
+=======
+${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/payment_gateway.txt}
+>>>>>>> dev
 ```
 
 ## Cart and Session
 ```txt
+<<<<<<< HEAD
 ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/cart_session.txt}
+=======
+${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/cart_session.txt}
+>>>>>>> dev
 ```

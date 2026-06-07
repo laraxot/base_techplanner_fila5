@@ -1,12 +1,17 @@
 # Analisi AddressResource.php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data analisi**: [DATE]  
 **File**: `/laravel/Modules/Geo/app/Filament/Resources/AddressResource.php`  
 =======
 **Data analisi**: 2025-07-30
 **File**: `/laravel/Modules/Geo/app/Filament/Resources/AddressResource.php`
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data analisi**: [DATE]  
+**File**: `/laravel/Modules/Geo/app/Filament/Resources/AddressResource.php`  
+>>>>>>> dev
 **Stato**: Analizzato completamente (404 righe)
 
 ## 📋 Panoramica Generale
@@ -109,10 +114,14 @@ Regione → Province → Località → CAP
 - `Address` - Modello principale
 - `Region` - Regioni italiane
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Province` - Province italiane  
 =======
 - `Province` - Province italiane
 >>>>>>> 4b6b99016 (first commit)
+=======
+- `Province` - Province italiane  
+>>>>>>> dev
 - `Locality` - Comuni/Località
 - `Comune` - Importato ma non utilizzato
 

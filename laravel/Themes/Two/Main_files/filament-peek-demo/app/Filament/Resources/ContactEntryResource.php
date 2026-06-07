@@ -3,6 +3,9 @@
 namespace App\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use App\Filament\Resources\ContactEntryResource\Pages;
 use App\Filament\Resources\ContactEntryResource\Pages\ListContactEntries;
 use App\Filament\Resources\ContactEntryResource\Pages\ViewContactEntry;
@@ -16,6 +19,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\HtmlString;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+<<<<<<< HEAD
 =======
 use Filament\Schemas\Schema;
 use Filament\Infolists\Components\TextEntry;
@@ -33,11 +37,14 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Support\HtmlString;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 class ContactEntryResource extends Resource
 {
     protected static ?string $model = ContactEntry::class;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-envelope';
 
@@ -47,6 +54,11 @@ class ContactEntryResource extends Resource
 
     protected static string | \UnitEnum | null $navigationGroup = 'Contact';
 >>>>>>> 4b6b99016 (first commit)
+=======
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-envelope';
+
+    protected static string|\UnitEnum|null $navigationGroup = 'Contact';
+>>>>>>> dev
 
     public static function infolist(Schema $schema): Schema
     {

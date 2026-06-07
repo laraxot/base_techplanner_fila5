@@ -82,9 +82,14 @@ Le classi base forniscono l'infrastruttura fondamentale per tutti i moduli del s
 - Aggiornare documentazione
 ## Collegamenti tra versioni di base-classes.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [base-classes.md](../../../xot/docs/base-classes.md)
 * [base-classes.md](../../../xot/docs/roadmap/base-classes.md)
 =======
 * [base-classes.md](../../../Xot/docs/base-classes.md)
 * [base-classes.md](../../../Xot/docs/roadmap/base-classes.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [base-classes.md](../../../xot/docs/base-classes.md)
+* [base-classes.md](../../../xot/docs/roadmap/base-classes.md)
+>>>>>>> dev

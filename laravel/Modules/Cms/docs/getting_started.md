@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Getting Started
 description: Getting started with Jigsaw's docs starter template is as easy as 1, 2, 3.
 extends: _layouts.documentation
@@ -83,3 +84,11 @@ npm run dev
 * [getting-started.md](laravel/modules/tenant/project_docs/it/getting-started.md)
 * [getting-started.md](laravel/modules/cms/project_docs/getting-started.md)
 
+=======
+module: theme
+topic: getting_started
+canonical: ../../../Themes/docs/shared-components/getting-started.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/getting-started.md
+>>>>>>> dev

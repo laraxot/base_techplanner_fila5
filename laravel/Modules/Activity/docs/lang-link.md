@@ -1,12 +1,16 @@
 # Collegamento alle Traduzioni del Modulo Activity
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni qui:
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
+<<<<<<< HEAD
 =======
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).
 
@@ -22,22 +26,31 @@ Consulta la documentazione delle traduzioni qui:
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Collegamento Bidirezionale
 
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Torna a README](./readme.md)
 =======
 - [Torna a README](./README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Torna a README](./readme.md)
+>>>>>>> dev
 - [Vai a Struttura](./structure.md)
 - [Vai a Traduzioni](./translations.md)
 
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../../Lang/docs/).
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 > Aggiorna entrambi i riferimenti se aggiungi nuove chiavi di traduzione o modifichi la struttura.
 
 ## Collegamenti tra versioni di lang-link.md
@@ -55,6 +68,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/modules/activity/docs/lang-link.md)
 * [lang-link.md](laravel/modules/patient/docs/lang-link.md)
 * [lang-link.md](laravel/modules/cms/docs/lang-link.md)
+<<<<<<< HEAD
 =======
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../../Lang/project_docs/).
 
@@ -129,3 +143,5 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Patient/project_docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Cms/project_docs/lang-link.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -1,1 +1,11 @@
+<<<<<<< HEAD
 
+=======
+---
+module: theme
+topic: resolution-conflitti
+canonical: ../../../Themes/docs/shared-components/.gitkeep
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
+>>>>>>> dev

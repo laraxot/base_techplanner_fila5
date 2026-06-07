@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: links
 description: links
 extends: _layouts.documentation
@@ -38,3 +39,11 @@ section: content
 ### Versione Incoming
 
 ---
+=======
+module: theme
+topic: links
+canonical: ../../../../../Themes/docs/shared-components/links-Modules.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/links-Modules.md
+>>>>>>> dev

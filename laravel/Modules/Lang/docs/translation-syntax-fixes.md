@@ -120,10 +120,14 @@ return [
 ## Documentazione Aggiornata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Chart Module - Translation Syntax Errors](../../laravel/modules/chart/project_docs/translation_syntax_errors.md)
 =======
 - [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
+>>>>>>> dev
 - [Translation Best Practices](translation-best-practices.md)
 - [PHPStan Configuration](phpstan-configuration.md)
 
@@ -156,10 +160,14 @@ return [
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Chart Module Documentation](../../laravel/modules/chart/project_docs/translation_syntax_errors.md)
 =======
 - [Chart Module Documentation](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Chart Module Documentation](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
+>>>>>>> dev
 - [FormBuilder Module Documentation](../../laravel/Modules/FormBuilder/project_docs/)
 - [Job Module Documentation](../../laravel/Modules/Job/project_docs/)
 - [Lang Module Documentation](../../laravel/Modules/Lang/project_docs/)
@@ -168,10 +176,14 @@ return [
 
 ## Ultimo Aggiornamento
 <<<<<<< HEAD
+<<<<<<< HEAD
 [DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 =======
 2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 >>>>>>> 4b6b99016 (first commit)
+=======
+2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+>>>>>>> dev
 # Correzione Errori di Sintassi nei File di Traduzione
 
 ## Riepilogo Intervento
@@ -294,10 +306,14 @@ return [
 ## Documentazione Aggiornata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Chart Module - Translation Syntax Errors](../../laravel/modules/chart/docs/translation_syntax_errors.md)
 =======
 - [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
+>>>>>>> dev
 - [Translation Best Practices](translation-best-practices.md)
 - [PHPStan Configuration](phpstan-configuration.md)
 
@@ -330,10 +346,14 @@ return [
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Chart Module Documentation](../../laravel/modules/chart/docs/translation_syntax_errors.md)
 =======
 - [Chart Module Documentation](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Chart Module Documentation](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
+>>>>>>> dev
 - [FormBuilder Module Documentation](../../laravel/Modules/FormBuilder/docs/)
 - [Job Module Documentation](../../laravel/Modules/Job/docs/)
 - [Lang Module Documentation](../../laravel/Modules/Lang/docs/)
@@ -342,7 +362,11 @@ return [
 
 ## Ultimo Aggiornamento
 <<<<<<< HEAD
+<<<<<<< HEAD
 [DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 =======
 2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 >>>>>>> 4b6b99016 (first commit)
+=======
+2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+>>>>>>> dev

@@ -57,10 +57,14 @@ use Modules\Geo\Models\Province;
 
 Select::make('province')
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->options(fn (Get $get) => 
 =======
     ->options(fn (Get $get) =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+    ->options(fn (Get $get) => 
+>>>>>>> dev
         Province::where('region_id', $get('region'))
             ->orderBy('name')
             ->pluck('name', 'id')
@@ -79,10 +83,14 @@ use Modules\Geo\Models\City;
 
 Select::make('city')
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->options(fn (Get $get) => 
 =======
     ->options(fn (Get $get) =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+    ->options(fn (Get $get) => 
+>>>>>>> dev
         City::where('province_id', $get('province'))
             ->orderBy('name')
             ->pluck('name', 'id')
@@ -101,10 +109,14 @@ use Modules\Geo\Models\Cap;
 
 Select::make('cap')
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->options(fn (Get $get) => 
 =======
     ->options(fn (Get $get) =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+    ->options(fn (Get $get) => 
+>>>>>>> dev
         Cap::where('city_id', $get('city'))
             ->orderBy('code')
             ->pluck('code', 'id')
@@ -165,10 +177,14 @@ public function getFormSchema(): array
 
                 'province' => Select::make('province')
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ->options(fn (Get $get) => 
 =======
                     ->options(fn (Get $get) =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+                    ->options(fn (Get $get) => 
+>>>>>>> dev
                         Province::where('region_id', $get('region'))
                             ->orderBy('name')
                             ->pluck('name', 'id')
@@ -182,10 +198,14 @@ public function getFormSchema(): array
 
                 'city' => Select::make('city')
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ->options(fn (Get $get) => 
 =======
                     ->options(fn (Get $get) =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+                    ->options(fn (Get $get) => 
+>>>>>>> dev
                         City::where('province_id', $get('province'))
                             ->orderBy('name')
                             ->pluck('name', 'id')
@@ -199,10 +219,14 @@ public function getFormSchema(): array
 
                 'cap' => Select::make('cap')
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ->options(fn (Get $get) => 
 =======
                     ->options(fn (Get $get) =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+                    ->options(fn (Get $get) => 
+>>>>>>> dev
                         Cap::where('city_id', $get('city'))
                             ->orderBy('code')
                             ->pluck('code', 'id')
@@ -236,6 +260,7 @@ public function getFormSchema(): array
 ## Collegamenti
 - [Documentazione Squire](https://github.com/squirephp/squire)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Filament](../../../project_docs/filament-best-practices.md)
 - [Clean Code](../../../project_docs/clean-code.md)
 
@@ -246,3 +271,9 @@ public function getFormSchema(): array
 
 **Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`.
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Best Practices Filament](../../../../docs/project/filament-best-practices.md)
+- [Clean Code](../../../../docs/project/clean-code.md)
+
+**Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`. 
+>>>>>>> dev

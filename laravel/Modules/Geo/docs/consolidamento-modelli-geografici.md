@@ -40,10 +40,14 @@ class Comune extends GeoJsonModel
         return static::loadData()->pluck('regione')->unique()->values();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // Recupera le province di una regione
     public static function getProvince(string $codiceRegione): Collection
     {
@@ -54,10 +58,14 @@ class Comune extends GeoJsonModel
             ->values();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // Recupera le città di una provincia
     public static function getCitta(string $codiceProvincia): Collection
     {
@@ -68,10 +76,14 @@ class Comune extends GeoJsonModel
             ->values();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // Recupera i CAP di una città
     public static function getCap(string $codiceCitta): Collection
     {
@@ -82,20 +94,28 @@ class Comune extends GeoJsonModel
             ->values();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // Cerca comuni per nome (funzionalità aggiuntiva)
     public static function cercaPerNome(string $nome): Collection
     {
         return static::loadData()
             ->filter(fn($item) => str_contains(
 <<<<<<< HEAD
+<<<<<<< HEAD
                 strtolower($item['comune']['nome']), 
 =======
                 strtolower($item['comune']['nome']),
 >>>>>>> 4b6b99016 (first commit)
+=======
+                strtolower($item['comune']['nome']), 
+>>>>>>> dev
                 strtolower($nome)
             ));
     }
@@ -161,10 +181,14 @@ Select::make('region')
 
 Select::make('province')
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->options(fn (Get $get) => 
 =======
     ->options(fn (Get $get) =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+    ->options(fn (Get $get) => 
+>>>>>>> dev
         Province::byRegion($get('region'))->pluck('nome', 'codice'))
     ->visible(fn (Get $get) => filled($get('region'))),
 ```
@@ -177,10 +201,14 @@ Select::make('region')
 
 Select::make('province')
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->options(fn (Get $get) => 
 =======
     ->options(fn (Get $get) =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+    ->options(fn (Get $get) => 
+>>>>>>> dev
         Comune::getProvince($get('region'))->pluck('nome', 'codice'))
     ->visible(fn (Get $get) => filled($get('region'))),
 ```

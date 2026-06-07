@@ -60,4 +60,8 @@ The `UpdateCoordinatesBulkAction` serves as the UI layer, initiating the `Update
 ## Related Documentation
 
 *   [`UpdateCoordinatesAction` Documentation](`./update-coordinates-action.md`)
+<<<<<<< HEAD
 *   [Filament Class Extension Rules](../../../docs/filament/filament-class-extension-rules.md)
+=======
+*   [Filament Class Extension Rules](../../../../docs/filament/filament-class-extension-rules.md)
+>>>>>>> dev

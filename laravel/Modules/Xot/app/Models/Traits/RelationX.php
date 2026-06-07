@@ -18,6 +18,7 @@ use Webmozart\Assert\Assert;
 trait RelationX
 {
     /**
+<<<<<<< HEAD
      * @param  class-string<Model>  $related  Related model class
      * @param  class-string<Model>|string|null  $_table  Pivot table name
      * @param  string|null  $foreignPivotKey  Foreign pivot key
@@ -25,6 +26,15 @@ trait RelationX
      * @param  string|null  $parentKey  Parent key
      * @param  string|null  $relatedKey  Related key
      * @param  string|null  $relation  Relation name
+=======
+     * @param class-string<Model>             $related         Related model class
+     * @param class-string<Model>|string|null $_table          Pivot table name
+     * @param string|null                     $foreignPivotKey Foreign pivot key
+     * @param string|null                     $relatedPivotKey Related pivot key
+     * @param string|null                     $parentKey       Parent key
+     * @param string|null                     $relatedKey      Related key
+     * @param string|null                     $relation        Relation name
+>>>>>>> dev
      */
     public function belongsToManyX(
         string $related,
@@ -52,7 +62,11 @@ trait RelationX
             $pivotDriver = $pivot->getConnection()->getDriverName();
             // Only add database prefix for non-SQLite drivers
             // SQLite doesn't support database.table syntax
+<<<<<<< HEAD
             if ($pivotDriver !== 'sqlite') {
+=======
+            if ('sqlite' !== $pivotDriver) {
+>>>>>>> dev
                 $table = $pivotDbName.'.'.$table;
             }
         }
@@ -77,7 +91,12 @@ trait RelationX
      *
      * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
      *
+<<<<<<< HEAD
      * @param  class-string<TRelatedModel>  $related
+=======
+     * @param class-string<TRelatedModel> $related
+     *
+>>>>>>> dev
      * @return MorphToMany<TRelatedModel, $this>
      */
     public function morphToManyX(
@@ -98,7 +117,11 @@ trait RelationX
         $pivotDbName = $pivot->getConnection()->getDatabaseName();
         $dbName = $this->getConnection()->getDatabaseName();
         // $relatedDbName = $related_model->getConnection()->getDatabaseName();
+<<<<<<< HEAD
         if ($table === null) {
+=======
+        if (null === $table) {
+>>>>>>> dev
             $table = $pivot->getTable();
         }
 
@@ -133,8 +156,13 @@ trait RelationX
     /**
      * Guess the pivot class for a many-to-many relationship.
      *
+<<<<<<< HEAD
      * @param  string  $related  The related model class name
      * @param  string|class-string|null  $class  The class to use for parent class lookup (used internally)
+=======
+     * @param string                   $related The related model class name
+     * @param string|class-string|null $class   The class to use for parent class lookup (used internally)
+>>>>>>> dev
      */
     public function guessPivot(string $related, ?string $class = null): Pivot
     {
@@ -185,7 +213,11 @@ trait RelationX
     private function tryParentClassPivot(string $pivot_name, string $related, string $class): string
     {
         $parent_class = get_parent_class($class);
+<<<<<<< HEAD
         if ($parent_class === false) {
+=======
+        if (false === $parent_class) {
+>>>>>>> dev
             return $this->buildPivotClassName($class, $pivot_name);
         }
 

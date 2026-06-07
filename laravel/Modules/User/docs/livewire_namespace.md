@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole per i componenti Livewire in Windsurf/Xot
 
 ## Namespace corretto
@@ -84,3 +85,12 @@ La risoluzione manuale è sempre da preferire per questi file, assicurandosi di 
 - Assicurarsi che la rigenerazione del token CSRF avvenga sempre dopo il logout
 - Verificare che i percorsi di reindirizzamento siano coerenti con l'architettura dell'applicazione
 - Preferire le facade come `Auth` agli helper come `auth()` per maggiore testabilità
+=======
+---
+module: theme
+topic: livewire_namespace
+canonical: ../../../Themes/docs/shared-components/livewire-namespace.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/livewire-namespace.md
+>>>>>>> dev

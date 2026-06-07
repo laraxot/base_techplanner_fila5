@@ -8,6 +8,7 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 
 ## Collegamenti correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Indice documentazione User](/laravel/modules/user/project_docs/index.md)
 - [README User](/laravel/modules/user/project_docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/project_docs/auth_components_best_practices.md)
@@ -322,11 +323,14 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
+=======
+>>>>>>> dev
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth_components_best_practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets_structure.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
+<<<<<<< HEAD
 =======
 - [Indice documentazione User](/laravel/Modules/User/project_docs/index.md)
 - [README User](/laravel/Modules/User/project_docs/README.md)
@@ -334,6 +338,8 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Filament Widgets Structure](/laravel/Modules/User/project_docs/widgets_structure.md)
 - [BaseUser Documentation](/laravel/Modules/User/project_docs/BaseUser.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## File Risolti
 

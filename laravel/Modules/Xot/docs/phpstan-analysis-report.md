@@ -1,9 +1,12 @@
 # PHPStan Analysis Report - Xot Module
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Date:** 2026-01-05
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Summary
 

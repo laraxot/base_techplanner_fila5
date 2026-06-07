@@ -1,8 +1,13 @@
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [Documentazione centrale](../../../docs/readme.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
+=======
+- [Documentazione centrale](../../../../docs/readme.md)
+- [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+>>>>>>> dev
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Volt Errors](./volt_errors.md)
@@ -215,8 +220,13 @@ Questa implementazione è semplice, sicura e segue tutte le best practices del p
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [Documentazione centrale](../../../docs/readme.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
+=======
+- [Documentazione centrale](../../../../docs/readme.md)
+- [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+>>>>>>> dev
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Volt Errors](./volt_errors.md)

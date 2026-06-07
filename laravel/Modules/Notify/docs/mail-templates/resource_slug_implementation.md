@@ -2,7 +2,11 @@
 
 ## Panoramica
 
+<<<<<<< HEAD
 Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto SaluteOra.
+=======
+Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto Quaeris.
+>>>>>>> dev
 
 ## Implementazione nel Form Schema
 
@@ -42,7 +46,11 @@ public static function getFormSchema(): array
 3. **Validazione Unicità**: L'opzione `unique(ignoreRecord: true)` garantisce unicità, escludendo il record corrente durante l'aggiornamento.
 4. **Generazione Automatica**: La callback `afterStateUpdated()` genera automaticamente lo slug dal nome quando si crea un nuovo record.
 
+<<<<<<< HEAD
 ## Conformità con gli Standard SaluteOra
+=======
+## Conformità con gli Standard Quaeris
+>>>>>>> dev
 
 Questa implementazione aderisce a diversi standard chiave del progetto:
 
@@ -164,6 +172,7 @@ return [
 ## Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Implementazione del Modello](./model_slug_implementation.md)
 - [Struttura della Migrazione](./migration_structure.md)
 - [Guida alla Migrazione](../mail_template_migration_guide.md)
@@ -176,3 +185,10 @@ return [
 - [Convenzioni Filament](../../../../docs/FILAMENT_CONVENTIONS.md)
 - [Regole per Filament](../../../../docs/FILAMENT_RULES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Implementazione del Modello](./MODEL_SLUG_IMPLEMENTATION.md)
+- [Struttura della Migrazione](./MIGRATION_STRUCTURE.md)
+- [Guida alla Migrazione](../MAIL_TEMPLATE_MIGRATION_GUIDE.md)
+- [Convenzioni Filament](../../../../../docs/FILAMENT_CONVENTIONS.md)
+- [Regole per Filament](../../../../../docs/FILAMENT_RULES.md)
+>>>>>>> dev

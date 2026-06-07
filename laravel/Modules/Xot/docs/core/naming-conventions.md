@@ -314,14 +314,22 @@ parameters:
 ## 🔗 Collegamenti
 
 - [Architettura Modulo Xot](architecture.md)
+<<<<<<< HEAD
 - [Best Practices Sistema](../../../docs/core/best-practices.md)
 - [Convenzioni Sistema](../../../docs/core/conventions.md)
+=======
+- [Best Practices Sistema](../../../../docs/core/best-practices.md)
+- [Convenzioni Sistema](../../../../docs/core/conventions.md)
+>>>>>>> dev
 - [PHPStan Guide](../development/phpstan-guide.md)
 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento:** Gennaio 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Versione:** 2.0 - Consolidata DRY + KISS

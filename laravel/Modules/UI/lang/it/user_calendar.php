@@ -6,6 +6,9 @@ return [
     'months' => [
         'long' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             0 => 'Gennaio',
             1 => 'Febbraio',
             2 => 'Marzo',
@@ -32,6 +35,7 @@ return [
             9 => 'Ott',
             10 => 'Nov',
             11 => 'Dic',
+<<<<<<< HEAD
 =======
             'Gennaio',
             'Febbraio',
@@ -60,11 +64,16 @@ return [
             'Nov',
             'Dic',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'weekdays' => [
         'long' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             0 => 'Domenica',
             1 => 'Lunedì',
             2 => 'Martedì',
@@ -91,6 +100,7 @@ return [
             5 => 'Ve',
             6 => 'Sa',
         ],
+<<<<<<< HEAD
 =======
             'Domenica',
             'Lunedì',
@@ -103,6 +113,8 @@ return [
         'short' => ['Dom', 'Lun', 'Mar', 'Mer', 'Gio', 'Ven', 'Sab'],
         'min' => ['Do', 'Lu', 'Ma', 'Me', 'Gi', 'Ve', 'Sa'],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'buttons' => [
         'previous' => 'Mese precedente',
@@ -125,9 +137,13 @@ return [
             'helper_text' => 'Inserisci un titolo descrittivo',
             'description' => 'Titolo dell\'evento',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'starts_at' => [
             'label' => 'Inizio',
@@ -135,9 +151,13 @@ return [
             'helper_text' => 'Data e ora di inizio dell\'evento',
             'description' => 'Data e ora di inizio',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'ends_at' => [
             'label' => 'Fine',
@@ -145,9 +165,13 @@ return [
             'helper_text' => 'Data e ora di fine dell\'evento',
             'description' => 'Data e ora di fine',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -174,6 +198,9 @@ return [
         'after' => 'La data di fine deve essere successiva alla data di inizio',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'User Calendar',
     'plural_label' => 'User Calendar (Plurale)',
     'navigation' => [
@@ -187,6 +214,9 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

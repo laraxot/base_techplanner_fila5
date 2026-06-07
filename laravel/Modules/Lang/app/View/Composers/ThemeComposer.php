@@ -96,10 +96,14 @@ class ThemeComposer
         return $this->languages()->filter(function (mixed $item) use ($currentLocale): bool {
             // Ensure the item is an instance of LangData
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (! $item instanceof LangData) {
 =======
             if (! ($item instanceof LangData)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+            if (! $item instanceof LangData) {
+>>>>>>> dev
                 throw new \Exception(sprintf('Expected instance of LangData, got %s', is_object($item) ? $item::class : gettype($item)));
             }
 
@@ -120,10 +124,14 @@ class ThemeComposer
         $lang = $this->languages()->toCollection()->firstWhere('id', $currentLocale);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $lang instanceof LangData) {
 =======
         if (! ($lang instanceof LangData)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $lang instanceof LangData) {
+>>>>>>> dev
             throw new \Exception(sprintf('Current language not found on line %d in %s', __LINE__, class_basename($this)));
         }
 
@@ -149,7 +157,11 @@ class ThemeComposer
         if (! is_string($routeName)) {
             return '#';
         }
+<<<<<<< HEAD
         $routeParameters = array_merge(getRouteParameters(), ['lang' => $locale]);
+=======
+        $routeParameters = array_merge(Route::current()?->parameters() ?? [], ['lang' => $locale]);
+>>>>>>> dev
         $queryParameters = request()->all();
 
         $url = route($routeName, $routeParameters);

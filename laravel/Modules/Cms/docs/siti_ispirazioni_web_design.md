@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ispirazioni di Web Design per il progetto
 
 Questo documento raccoglie analisi e ispirazioni dai migliori esempi di web design che possono guidare lo sviluppo dell'interfaccia utente di il progetto.
@@ -260,3 +261,12 @@ La vera sfida sarà bilanciare gli elementi innovativi del design moderno con le
 ---
 
 *Documento basato su analisi di [Ingigni.com](https://www.ingigni.com/blog/siti-belli/) e integrato con le linee guida di il progetto.* 
+=======
+---
+module: theme
+topic: siti_ispirazioni_web_design
+canonical: ../../../Themes/docs/shared-components/siti-ispirazioni-web-design.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/siti-ispirazioni-web-design.md
+>>>>>>> dev

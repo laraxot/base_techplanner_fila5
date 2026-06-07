@@ -6,7 +6,10 @@ namespace Modules\Xot\Actions\Trans;
 
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
+<<<<<<< HEAD
 use Throwable;
+=======
+>>>>>>> dev
 use Webmozart\Assert\Assert;
 
 class GetTransFilenameAction
@@ -20,7 +23,11 @@ class GetTransFilenameAction
         try {
             $langPath = app(GetModulePathByGeneratorAction::class)->execute($ns, 'lang');
             Assert::string($langPath, 'Percorso lang non valido');
+<<<<<<< HEAD
         } catch (Throwable $e) {
+=======
+        } catch (\Throwable $e) {
+>>>>>>> dev
             $langPath = base_path('Modules/'.$ns.'/lang');
         }
 

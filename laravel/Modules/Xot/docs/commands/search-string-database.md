@@ -29,6 +29,7 @@ php artisan xot:search-string-in-database {search_string} {--table=} {--column=}
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Database Guidelines](../database-guidelines.md)
 - [Performance Guidelines](../performance/database-queries.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
@@ -37,3 +38,8 @@ php artisan xot:search-string-in-database {search_string} {--table=} {--column=}
 - [Performance Guidelines](../performance/database-queries.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Database Guidelines](../database-guidelines.md)
+- [Performance Guidelines](../performance/database-queries.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+>>>>>>> dev

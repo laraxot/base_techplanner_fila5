@@ -10,6 +10,7 @@
 
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Convenzioni di Naming per le Interfacce](/var/www/html/saluteora/laravel/modules/notify/docs/interface_naming_convention.md)
 [Chiarimento sulla Struttura delle Interfacce](/var/www/html/saluteora/laravel/modules/notify/docs/interface_structure_clarification.md)
 [Architettura dei Contratti](/var/www/html/saluteora/laravel/modules/notify/docs/contracts_architecture.md)
@@ -18,11 +19,17 @@
 [Chiarimento sulla Struttura delle Interfacce](/var/www/html/saluteora/laravel/Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](/var/www/html/saluteora/laravel/Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+[Convenzioni di Naming per le Interfacce](/var/www/html/saluteora/laravel/modules/notify/docs/interface_naming_convention.md)
+[Chiarimento sulla Struttura delle Interfacce](/var/www/html/saluteora/laravel/modules/notify/docs/interface_structure_clarification.md)
+[Architettura dei Contratti](/var/www/html/saluteora/laravel/modules/notify/docs/contracts_architecture.md)
+>>>>>>> dev
 ```
 
 ### ✅ CORRETTO: Percorsi Relativi
 
 ```markdown
+<<<<<<< HEAD
 <<<<<<< HEAD
 [Convenzioni di Naming per le Interfacce](./interface_naming_convention.md)
 [Chiarimento sulla Struttura delle Interfacce](./interface_structure_clarification.md)
@@ -32,11 +39,17 @@
 [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+[Convenzioni di Naming per le Interfacce](./interface_naming_convention.md)
+[Chiarimento sulla Struttura delle Interfacce](./interface_structure_clarification.md)
+[Architettura dei Contratti](./contracts_architecture.md)
+>>>>>>> dev
 ```
 
 Per collegamenti a documenti in altre directory:
 
 ```markdown
+<<<<<<< HEAD
 <<<<<<< HEAD
 [Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation_keys_rules.md)
 [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
@@ -44,6 +57,10 @@ Per collegamenti a documenti in altre directory:
 [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+[Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation_keys_rules.md)
+[Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
+>>>>>>> dev
 ```
 
 ## Motivazione
@@ -70,5 +87,10 @@ grep -r "\[.*\](/var" --include="*.md" /percorso/al/progetto
 
 ## Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Convenzioni di Documentazione](../../../docs/documentation-conventions.md)
 - [Markdown Best Practices](../../../docs/markdown-best-practices.md)
+=======
+- [Convenzioni di Documentazione](../../../../docs/documentation-conventions.md)
+- [Markdown Best Practices](../../../../docs/markdown-best-practices.md)
+>>>>>>> dev

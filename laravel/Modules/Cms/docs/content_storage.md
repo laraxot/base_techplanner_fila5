@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistema di Archiviazione dei Contenuti JSON
 
 ## Introduzione
@@ -129,3 +130,12 @@ Per approfondire il funzionamento tecnico del sistema:
 - [Sistema di Archiviazione dei Contenuti](../laravel/modules/cms/project_docs/content-storage.md) - Documentazione tecnica completa
 - [Gestione dei Blocchi di Contenuto](../laravel/modules/cms/project_docs/content.md) - Come funzionano i blocchi di contenuto
 - [Struttura delle Pagine](../laravel/modules/cms/project_docs/page-resource.md) - Informazioni sulle risorse Page
+=======
+---
+module: theme
+topic: content_storage
+canonical: ../../../Themes/docs/shared-components/content-storage.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/content-storage.md
+>>>>>>> dev

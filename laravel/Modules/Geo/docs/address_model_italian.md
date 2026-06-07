@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modello Address per Indirizzi Italiani
 
 ## Struttura Amministrativa Italiana
@@ -339,3 +340,12 @@ Per supportare gli indirizzi italiani in un contesto multilingua:
 ## Conclusione
 
 La corretta gestione degli indirizzi italiani richiede una struttura dedicata che rispetti la suddivisione amministrativa del paese. Il modello `Address` proposto, con i campi e le relazioni specifiche per regioni, province e comuni italiani, fornisce una base solida per implementare un sistema di indirizzi completo e conforme agli standard italiani.
+=======
+---
+module: theme
+topic: address_model_italian
+canonical: ../../../Themes/docs/shared-components/address-model-italian.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/address-model-italian.md
+>>>>>>> dev

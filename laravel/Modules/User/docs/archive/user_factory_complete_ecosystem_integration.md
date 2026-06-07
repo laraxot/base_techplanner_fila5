@@ -2,7 +2,11 @@
 
 ## 🎯 Integration Achievement
 
+<<<<<<< HEAD
 L'integrazione tra il **modulo User** e l'**ecosistema factory SaluteOra** è stata completata con successo, creando un sistema di generazione dati **enterprise-grade** per applicazioni sanitarie multi-modulo.
+=======
+L'integrazione tra il **modulo User** e l'**ecosistema factory Laraxot** è stata completata con successo, creando un sistema di generazione dati **enterprise-grade** per applicazioni sanitarie multi-modulo.
+>>>>>>> dev
 
 ## 🏗️ Architectural Foundation
 
@@ -13,7 +17,11 @@ BaseUser (Modules\User\Models\BaseUser)
 ├── Trait Integration: HasTeams, HasRoles, HasAuthenticationLog
 └── Foundation for STI in specialized modules
 
+<<<<<<< HEAD
 SaluteOra Factory Ecosystem
+=======
+Laraxot Factory Ecosystem
+>>>>>>> dev
 ├── UserFactory (extends BaseUserFactory) - STI Foundation
 ├── PatientFactory (extends UserFactory) - Healthcare Consumer  
 ├── DoctorFactory (extends UserFactory) - Healthcare Provider
@@ -25,12 +33,20 @@ SaluteOra Factory Ecosystem
 // BaseUser (User Module) - Foundation
 protected $connection = 'user'; // Default Laravel connection
 
+<<<<<<< HEAD
 // SaluteOra User Models - Specialized
+=======
+// Laraxot User Models - Specialized
+>>>>>>> dev
 protected $connection = 'salute_ora'; // Healthcare domain connection
 
 // Factory Resolution
 class UserFactory {
+<<<<<<< HEAD
     protected $model = User::class; // Resolves to SaluteOra\Models\User
+=======
+    protected $model = User::class; // Resolves to Laraxot\Models\User
+>>>>>>> dev
     
     // Inherits all BaseUser functionality
     // Adds healthcare-specific business logic
@@ -47,7 +63,11 @@ BaseUser::class
 ├── HasRoles trait (permission management)
 └── HasAuthenticationLog trait (security audit)
 
+<<<<<<< HEAD
 // SaluteOra Specialized Implementation  
+=======
+// Laraxot Specialized Implementation  
+>>>>>>> dev
 User::class (extends BaseUser)
 ├── STI Parent for Patient/Doctor/Admin
 ├── Healthcare domain connection
@@ -65,7 +85,11 @@ Admin::class (HasParent trait)
 // Base Factory (User Module)
 // Provides authentication, roles, teams foundation
 
+<<<<<<< HEAD
 // SaluteOra UserFactory  
+=======
+// Laraxot UserFactory  
+>>>>>>> dev
 // Adds: codice_fiscale, healthcare addresses, Italian localization
 public function definition(): array {
     return array_merge(parent::definition(), [
@@ -83,7 +107,11 @@ AdminFactory::definition()   // Administrative privileges
 
 ## 📊 Integration Benefits Matrix
 
+<<<<<<< HEAD
 | Component | User Module Provides | SaluteOra Adds | Combined Result |
+=======
+| Component | User Module Provides | Laraxot Adds | Combined Result |
+>>>>>>> dev
 |-----------|---------------------|----------------|-----------------|
 | **Authentication** | Laravel standard | Healthcare workflows | Medical-grade security |
 | **Authorization** | Roles & Permissions | Medical specializations | Granular clinical access |
@@ -104,7 +132,11 @@ AdminFactory::definition()   // Administrative privileges
     ],
     'salute_ora' => [ // Healthcare specialized
         'driver' => 'mysql', 
+<<<<<<< HEAD
         'database' => env('DB_SALUTEORA_DATABASE', 'saluteora_healthcare'),
+=======
+        'database' => env('DB_MODULO_DATABASE', 'ptvx_healthcare'),
+>>>>>>> dev
     ]
 ];
 
@@ -126,7 +158,11 @@ use Modules\User\Models\Traits\HasTeams;
 use Modules\User\Models\Traits\HasRoles;  
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 
+<<<<<<< HEAD
 // SaluteOra models inherit ALL User module capabilities
+=======
+// Laraxot models inherit ALL User module capabilities
+>>>>>>> dev
 class Doctor extends User {
     use HasTeams;    // Multi-studio assignment
     use HasRoles;    // Clinical privileges
@@ -149,7 +185,11 @@ class MasterSeeder extends Seeder {
         $teams = Team::factory()->count(5)->create(); // Studios
         $roles = Role::factory()->count(10)->create(); // Permissions
         
+<<<<<<< HEAD
         // 2. Create healthcare ecosystem (SaluteOra module)
+=======
+        // 2. Create healthcare ecosystem (Laraxot module)
+>>>>>>> dev
         $systemAdmin = Admin::factory()
             ->systemAdmin()
             ->hasRole('super_admin')
@@ -176,14 +216,22 @@ class MasterSeeder extends Seeder {
 
 ### Cross-Module Testing
 ```php
+<<<<<<< HEAD
 // Test User module integration with SaluteOra
+=======
+// Test User module integration with Laraxot
+>>>>>>> dev
 public function test_doctor_team_assignment_and_permissions()
 {
     // Create using User module infrastructure
     $studio = Team::factory()->create(['name' => 'Studio Dentistico Roma']);
     $doctorRole = Role::factory()->create(['name' => 'specialist_doctor']);
     
+<<<<<<< HEAD
     // Create using SaluteOra specialized factory
+=======
+    // Create using Laraxot specialized factory
+>>>>>>> dev
     $doctor = Doctor::factory()
         ->specialist()
         ->create();
@@ -207,7 +255,11 @@ public function test_healthcare_user_authentication_audit()
     // User module provides authentication logging
     $patient->logAuthentication(request());
     
+<<<<<<< HEAD
     // SaluteOra provides healthcare context
+=======
+    // Laraxot provides healthcare context
+>>>>>>> dev
     $this->assertDatabaseHas('authentication_logs', [
         'authenticatable_id' => $patient->id,
         'authenticatable_type' => Patient::class
@@ -227,7 +279,11 @@ class HealthcareSystemInitializer {
             // Phase 1: User module foundation
             $this->createTeamsAndRoles();
             
+<<<<<<< HEAD
             // Phase 2: SaluteOra healthcare specialization  
+=======
+            // Phase 2: Laraxot healthcare specialization  
+>>>>>>> dev
             $this->createHealthcareUsers();
             
             // Phase 3: Cross-module relationships
@@ -265,15 +321,25 @@ class HealthcareSystemInitializer {
 // Multi-module factory performance
 Benchmark::run([
     'User module only' => fn() => User::factory()->count(1000)->create(),
+<<<<<<< HEAD
     'SaluteOra Patient' => fn() => Patient::factory()->count(1000)->create(),
     'SaluteOra Doctor' => fn() => Doctor::factory()->count(1000)->create(),
+=======
+    'Laraxot Patient' => fn() => Patient::factory()->count(1000)->create(),
+    'Laraxot Doctor' => fn() => Doctor::factory()->count(1000)->create(),
+>>>>>>> dev
     'Cross-module relations' => fn() => $this->createWithRelations(1000),
 ]);
 
 Results:
 - User module only: 2.1s (baseline)
+<<<<<<< HEAD
 - SaluteOra Patient: 2.8s (+33% for healthcare data)
 - SaluteOra Doctor: 3.2s (+52% for professional data)  
+=======
+- Laraxot Patient: 2.8s (+33% for healthcare data)
+- Laraxot Doctor: 3.2s (+52% for professional data)  
+>>>>>>> dev
 - Cross-module relations: 4.1s (+95% for complete ecosystem)
 ```
 
@@ -289,7 +355,11 @@ public function test_complete_ecosystem_data_integrity()
     $this->assertAllUsersHaveValidTeams();
     $this->assertAllUsersHaveAppropriateRoles();
     
+<<<<<<< HEAD
     // Verify SaluteOra constraints  
+=======
+    // Verify Laraxot constraints  
+>>>>>>> dev
     $this->assertAllHealthcareUsersHaveValidTypes();
     $this->assertAllCodiciFiscaliAreValid();
     
@@ -311,7 +381,11 @@ tests/
 │   │   ├── AuthenticationTest.php
 │   │   ├── RoleManagementTest.php
 │   │   └── TeamManagementTest.php
+<<<<<<< HEAD
 │   └── SaluteOraIntegration/
+=======
+│   └── LaraxotIntegration/
+>>>>>>> dev
 │       ├── PatientWorkflowTest.php
 │       ├── DoctorCredentialsTest.php
 │       └── AdminPermissionsTest.php
@@ -328,8 +402,13 @@ tests/
 DB_USER_CONNECTION=sqlite
 DB_USER_DATABASE=:memory:
 
+<<<<<<< HEAD
 DB_SALUTEORA_CONNECTION=sqlite  
 DB_SALUTEORA_DATABASE=:memory:
+=======
+DB_MODULO_CONNECTION=sqlite  
+DB_MODULO_DATABASE=:memory:
+>>>>>>> dev
 
 # Enable cross-module testing
 MULTI_MODULE_TESTING=true
@@ -344,7 +423,11 @@ class MultiModuleSeeder extends Seeder {
         // Order matters for referential integrity
         $this->call([
             UserModuleSeeder::class,     // Foundation
+<<<<<<< HEAD
             SaluteOraSeeder::class,      // Healthcare specialization
+=======
+            LaraxotSeeder::class,      // Healthcare specialization
+>>>>>>> dev
             RelationshipSeeder::class,   // Cross-module relationships
             PermissionSeeder::class,     // Access control
         ]);
@@ -384,7 +467,11 @@ class MultiModuleSeeder extends Seeder {
 
 ## 🏆 Integration Success Recognition
 
+<<<<<<< HEAD
 **The User-SaluteOra factory integration represents a landmark achievement in:**
+=======
+**The User-Laraxot factory integration represents a landmark achievement in:**
+>>>>>>> dev
 
 ✅ **Multi-Module Architecture**: Seamless cross-module functionality  
 ✅ **Domain Specialization**: Healthcare expertise while maintaining flexibility  

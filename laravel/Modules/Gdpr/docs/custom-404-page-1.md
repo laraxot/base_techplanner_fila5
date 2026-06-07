@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Custom 404 Page
 description: Custom 404 pages with Jigsaw docs starter template
 extends: _layouts.documentation
@@ -35,3 +36,11 @@ Depending on where your site is hosted, you may need to configure your server to
 * [custom-404-page.md](laravel/Modules/UI/docs/custom-404-page.md)
 * [custom-404-page.md](laravel/Modules/Tenant/docs/it/custom-404-page.md)
 * [custom-404-page.md](laravel/Modules/Cms/docs/custom-404-page.md)
+=======
+module: theme
+topic: custom-404-page-1
+canonical: ../../../Themes/docs/shared-components/custom-404-page-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/custom-404-page-1.md
+>>>>>>> dev

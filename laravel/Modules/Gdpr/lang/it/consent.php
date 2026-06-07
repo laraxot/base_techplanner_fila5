@@ -16,6 +16,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'user' => [
             'label' => 'Utente',
             'tooltip' => '',
@@ -69,6 +72,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         'user' => 'Utente',
         'type' => 'Tipo Consenso',
@@ -85,6 +89,8 @@ return [
         'resetFilters' => [
             'label' => 'resetFilters',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'statuses' => [
@@ -100,8 +106,13 @@ return [
         'renew' => 'Rinnova',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Consent',
     'plural_label' => 'Consent (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Consent',
+    'plural_label' => 'Consent (Plurale)',
+>>>>>>> dev
 ];

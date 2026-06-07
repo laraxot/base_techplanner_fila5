@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Enums;
 
+<<<<<<< HEAD
+=======
+use Modules\Xot\Traits\EnumTrait;
+
+>>>>>>> dev
 /**
  * Enum per i tipi di media supportati
  *
@@ -12,6 +17,11 @@ namespace Modules\Notify\Enums;
  */
 enum MediaTypeEnum: string
 {
+<<<<<<< HEAD
+=======
+    use EnumTrait;
+
+>>>>>>> dev
     case IMAGE = 'image';
     case VIDEO = 'video';
     case DOCUMENT = 'document';

@@ -5,20 +5,27 @@ declare(strict_types=1);
 namespace Modules\Employee\Filament\Resources\WorkHourResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use DateTimeInterface;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Forms\Components\DatePicker;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use Filament\Notifications\Notification;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\SelectFilter;
+<<<<<<< HEAD
 =======
 use Filament\Forms\Components\Select;
 use Filament\Notifications\Notification;
@@ -26,6 +33,8 @@ use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Auth;
@@ -43,18 +52,25 @@ use Override;
  * Displays the time clock widget and work hours list with filtering options.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 class TimeClockPage extends XotBasePage implements HasTable
 {
     use InteractsWithTable;
 
+<<<<<<< HEAD
 =======
 class TimeClockPage extends XotBasePage
 {
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     protected static string $resource = WorkHourResource::class;
 
     protected string $view = 'employee::filament.pages.work-hours';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     public ?array $filters = [
@@ -98,6 +114,8 @@ class TimeClockPage extends XotBasePage
     }
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     public function table(Table $table): Table
     {
         return $table
@@ -111,10 +129,14 @@ class TimeClockPage extends XotBasePage
                 TextColumn::make('type')
                     ->badge()
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ->formatStateUsing(fn (string $state): string => __("employee::work_hour.fields.type.options.{$state}"))
 =======
                     ->formatStateUsing(fn (string $state): string => __("employee::enums.work_hour_type.{$state}"))
 >>>>>>> 4b6b99016 (first commit)
+=======
+                    ->formatStateUsing(fn (string $state): string => __("employee::work_hour.fields.type.options.{$state}"))
+>>>>>>> dev
                     ->color(fn (string $state): string => match ($state) {
                         WorkHourTypeEnum::CLOCK_IN->value => 'success',
                         WorkHourTypeEnum::CLOCK_OUT->value => 'danger',
@@ -125,10 +147,14 @@ class TimeClockPage extends XotBasePage
                 TextColumn::make('status')
                     ->badge()
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ->formatStateUsing(fn (string $state): string => __("employee::work_hour.fields.status.options.{$state}"))
 =======
                     ->formatStateUsing(fn (string $state): string => __("employee::enums.work_hour_status.{$state}"))
 >>>>>>> 4b6b99016 (first commit)
+=======
+                    ->formatStateUsing(fn (string $state): string => __("employee::work_hour.fields.status.options.{$state}"))
+>>>>>>> dev
                     ->color(fn (string $state): string => match ($state) {
                         WorkHourStatusEnum::PENDING->value => 'warning',
                         WorkHourStatusEnum::APPROVED->value => 'success',
@@ -145,6 +171,9 @@ class TimeClockPage extends XotBasePage
             ])
             ->filters([
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
                 Filter::make('date_range')
                     ->label('Date Range')
                     ->form([
@@ -162,9 +191,12 @@ class TimeClockPage extends XotBasePage
                 SelectFilter::make('status')
                     ->label('Status')
                     ->options(WorkHourStatusEnum::class),
+<<<<<<< HEAD
 =======
                 // Additional filters can be added here
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             ])
             ->recordActions([
                 Action::make('edit')
@@ -196,6 +228,7 @@ class TimeClockPage extends XotBasePage
         return WorkHour::query()
             ->where('employee_id', Auth::id())
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             ->when($this->filters['date_from'] ?? null, function (Builder $query, mixed $date): Builder {
                 if (! ($date instanceof DateTimeInterface || is_string($date))) {
@@ -217,6 +250,8 @@ class TimeClockPage extends XotBasePage
                 $status,
             ))
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             ->latest('timestamp');
     }
 

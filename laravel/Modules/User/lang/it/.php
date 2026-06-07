@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'actions' => [
         'profile' => [
             'label' => 'profile',
@@ -15,6 +18,7 @@ return [
             'icon' => 'logout',
             'tooltip' => 'logout',
         ],
+<<<<<<< HEAD
 =======
     'fields' => [
         'startDate' => [
@@ -48,5 +52,7 @@ return [
             'tooltip' => 'profile',
         ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
 ];

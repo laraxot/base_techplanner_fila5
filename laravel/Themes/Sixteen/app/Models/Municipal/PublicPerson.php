@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Themes\Sixteen\Models\Municipal;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -17,6 +20,7 @@ use Illuminate\Support\Str;
 /**
  * Modello per le persone pubbliche (Public Person)
  *
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
 use Illuminate\Database\Eloquent\Relations\{HasMany, BelongsToMany, MorphMany};
@@ -30,11 +34,91 @@ use Carbon\Carbon;
 >>>>>>> 4b6b99016 (first commit)
  * Rappresenta amministratori, dirigenti, dipendenti e altre figure
  * pubbliche dell'ente secondo l'ontologia AGID
+=======
+ * Rappresenta amministratori, dirigenti, dipendenti e altre figure
+ * pubbliche dell'ente secondo l'ontologia AGID
+ *
+ * @property int $id
+ * @property string $first_name
+ * @property string $last_name
+ * @property string|null $slug
+ * @property string|null $title
+ * @property string|null $bio
+ * @property string|null $qualification
+ * @property string|null $role
+ * @property string $category
+ * @property \Carbon\Carbon|null $birth_date
+ * @property string|null $birth_place
+ * @property string|null $fiscal_code
+ * @property string|null $email
+ * @property string|null $pec
+ * @property string|null $phone
+ * @property string|null $mobile
+ * @property string|null $photo
+ * @property string|null $curriculum_vitae
+ * @property string|null $cv_file_path
+ * @property float|null $compensation
+ * @property float|null $travel_expenses
+ * @property \Carbon\Carbon|null $start_date
+ * @property \Carbon\Carbon|null $end_date
+ * @property bool $is_active
+ * @property bool $is_public
+ * @property \Carbon\Carbon|null $publication_date
+ * @property array|null $privacy_settings
+ * @property array|null $social_profiles
+ * @property array|null $education
+ * @property array|null $work_experience
+ * @property array|null $skills
+ * @property array|null $languages
+ * @property array|null $metadata
+ * @property \Carbon\Carbon|null $created_at
+ * @property \Carbon\Carbon|null $updated_at
+ * @property \Carbon\Carbon|null $deleted_at
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, ContactPoint> $contacts
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, MunicipalEvent> $eventsAsSpeaker
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, MunicipalEvent> $eventsAsParticipant
+>>>>>>> dev
  */
 class PublicPerson extends Model
 {
     use HasFactory, SoftDeletes;
 
+<<<<<<< HEAD
+=======
+    /**
+     * Categorie di persone pubbliche secondo AGID
+     */
+    public const CATEGORIES = [
+        'politician' => 'Politico/Amministratore',
+        'manager' => 'Dirigente',
+        'employee' => 'Dipendente',
+        'consultant' => 'Consulente/Collaboratore',
+        'commission_member' => 'Componente Commissione',
+        'board_member' => 'Componente Organo',
+        'authority_member' => 'Componente Autorità',
+        'other' => 'Altro',
+    ];
+
+    /**
+     * Ruoli principali secondo AGID
+     */
+    public const ROLES = [
+        'mayor' => 'Sindaco',
+        'deputy_mayor' => 'Vicesindaco',
+        'councillor' => 'Assessore',
+        'president' => 'Presidente',
+        'vice_president' => 'Vicepresidente',
+        'secretary' => 'Segretario',
+        'general_manager' => 'Direttore Generale',
+        'manager' => 'Dirigente',
+        'supervisor' => 'Responsabile',
+        'employee' => 'Dipendente',
+        'consultant' => 'Consulente',
+        'collaborator' => 'Collaboratore',
+    ];
+
+>>>>>>> dev
     protected $table = 'sixteen_public_people';
 
     protected $fillable = [
@@ -91,6 +175,7 @@ class PublicPerson extends Model
     ];
 
     /**
+<<<<<<< HEAD
      * Categorie di persone pubbliche secondo AGID
      */
     public const CATEGORIES = [
@@ -123,6 +208,8 @@ class PublicPerson extends Model
     ];
 
     /**
+=======
+>>>>>>> dev
      * Relazione con i punti di contatto
      */
     public function contacts(): MorphMany
@@ -197,6 +284,7 @@ class PublicPerson extends Model
     public function scopeInOffice($query)
     {
         return $query->where('start_date', '<=', now())
+<<<<<<< HEAD
             ->where(function ($q) {
                 $q->whereNull('end_date')
 <<<<<<< HEAD
@@ -204,6 +292,11 @@ class PublicPerson extends Model
 =======
                   ->orWhere('end_date', '>', now());
 >>>>>>> 4b6b99016 (first commit)
+=======
+            ->where(function ($q): void {
+                $q->whereNull('end_date')
+                    ->orWhere('end_date', '>', now());
+>>>>>>> dev
             });
     }
 
@@ -216,6 +309,7 @@ class PublicPerson extends Model
     }
 
     /**
+<<<<<<< HEAD
      * Accessor per il nome completo
      */
     protected function fullName(): Attribute
@@ -354,15 +448,21 @@ class PublicPerson extends Model
     }
 
     /**
+=======
+>>>>>>> dev
      * Ottiene le qualifiche formattate
      */
     public function getFormattedEducation(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->education || ! is_array($this->education)) {
 =======
         if (!$this->education || !is_array($this->education)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->education || ! is_array($this->education)) {
+>>>>>>> dev
             return [];
         }
 
@@ -372,9 +472,13 @@ class PublicPerson extends Model
                     return ['degree' => $education];
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return $education;
             })
             ->toArray();
@@ -386,10 +490,14 @@ class PublicPerson extends Model
     public function getFormattedWorkExperience(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->work_experience || ! is_array($this->work_experience)) {
 =======
         if (!$this->work_experience || !is_array($this->work_experience)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->work_experience || ! is_array($this->work_experience)) {
+>>>>>>> dev
             return [];
         }
 
@@ -399,9 +507,13 @@ class PublicPerson extends Model
                     return ['position' => $experience];
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return $experience;
             })
             ->sortByDesc('start_date')
@@ -415,10 +527,14 @@ class PublicPerson extends Model
     public function getFormattedSocialProfiles(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->social_profiles || ! is_array($this->social_profiles)) {
 =======
         if (!$this->social_profiles || !is_array($this->social_profiles)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->social_profiles || ! is_array($this->social_profiles)) {
+>>>>>>> dev
             return [];
         }
 
@@ -445,10 +561,14 @@ class PublicPerson extends Model
     public function hasCurriculumVitae(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return ! empty($this->cv_file_path) || ! empty($this->curriculum_vitae);
 =======
         return !empty($this->cv_file_path) || !empty($this->curriculum_vitae);
 >>>>>>> 4b6b99016 (first commit)
+=======
+        return ! empty($this->cv_file_path) || ! empty($this->curriculum_vitae);
+>>>>>>> dev
     }
 
     /**
@@ -457,11 +577,15 @@ class PublicPerson extends Model
     public function getCvUrl(): ?string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         if (! $this->cv_file_path) {
             return null;
         }
 
         return asset('storage/'.$this->cv_file_path);
+<<<<<<< HEAD
 =======
         if (!$this->cv_file_path) {
             return null;
@@ -469,6 +593,8 @@ class PublicPerson extends Model
 
         return asset('storage/' . $this->cv_file_path);
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     }
 
     /**
@@ -477,10 +603,14 @@ class PublicPerson extends Model
     public function shouldPublishCompensation(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return in_array($this->category, ['politician', 'manager', 'consultant'])
 =======
         return in_array($this->category, ['politician', 'manager', 'consultant']) 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        return in_array($this->category, ['politician', 'manager', 'consultant'])
+>>>>>>> dev
             && $this->is_public;
     }
 
@@ -521,13 +651,129 @@ class PublicPerson extends Model
     }
 
     /**
+<<<<<<< HEAD
      * Boot del modello
      */
     protected static function boot()
+=======
+     * Accessor per il nome completo
+     */
+    protected function fullName(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => trim($this->first_name.' '.$this->last_name)
+        );
+    }
+
+    /**
+     * Accessor per il nome invertito (Cognome, Nome)
+     */
+    protected function displayName(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => trim($this->last_name.', '.$this->first_name)
+        );
+    }
+
+    /**
+     * Accessor per il nome della categoria
+     */
+    protected function categoryName(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => self::CATEGORIES[$this->category] ?? $this->category
+        );
+    }
+
+    /**
+     * Accessor per il nome del ruolo
+     */
+    protected function roleName(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => self::ROLES[$this->role] ?? $this->role
+        );
+    }
+
+    /**
+     * Accessor per l'età
+     */
+    protected function age(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->birth_date?->age
+        );
+    }
+
+    /**
+     * Accessor per verificare se è in carica
+     */
+    protected function isInOffice(): Attribute
+    {
+        return Attribute::make(
+            get: function () {
+                if (! $this->start_date || $this->start_date->isFuture()) {
+                    return false;
+                }
+
+                return ! $this->end_date || $this->end_date->isFuture();
+            }
+        );
+    }
+
+    /**
+     * Accessor per i giorni rimanenti in carica
+     */
+    protected function daysInOffice(): Attribute
+    {
+        return Attribute::make(
+            get: function (): void {
+                if (! $this->is_in_office) {
+                    return;
+                }
+
+                return $this->end_date?->diffInDays(now()) ?? null;
+            }
+        );
+    }
+
+    /**
+     * Accessor per l'URL della persona
+     */
+    protected function url(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => route('municipal.public-people.show', $this->slug)
+        );
+    }
+
+    /**
+     * Mutator per nome (genera automaticamente lo slug)
+     */
+    protected function lastName(): Attribute
+    {
+        return Attribute::make(
+            set: function ($value) {
+                $this->attributes['last_name'] = $value;
+                if (empty($this->attributes['slug']) && ! empty($this->attributes['first_name'])) {
+                    $this->attributes['slug'] = Str::slug($this->attributes['first_name'].' '.$value);
+                }
+
+                return $value;
+            }
+        );
+    }
+
+    /**
+     * Boot del modello
+     */
+    protected static function boot(): void
+>>>>>>> dev
     {
         parent::boot();
 
         // Genera slug se mancante
+<<<<<<< HEAD
         static::creating(function ($model) {
 <<<<<<< HEAD
             if (empty($model->slug) && ! empty($model->first_name) && ! empty($model->last_name)) {
@@ -536,26 +782,43 @@ class PublicPerson extends Model
             if (empty($model->slug) && !empty($model->first_name) && !empty($model->last_name)) {
                 $model->slug = Str::slug($model->first_name . ' ' . $model->last_name);
 >>>>>>> 4b6b99016 (first commit)
+=======
+        static::creating(function ($model): void {
+            if (empty($model->slug) && ! empty($model->first_name) && ! empty($model->last_name)) {
+                $model->slug = Str::slug($model->first_name.' '.$model->last_name);
+>>>>>>> dev
             }
         });
 
         // Assicura unicità dello slug
+<<<<<<< HEAD
         static::creating(function ($model) {
+=======
+        static::creating(function ($model): void {
+>>>>>>> dev
             $originalSlug = $model->slug;
             $counter = 1;
 
             while (static::where('slug', $model->slug)->exists()) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $model->slug = $originalSlug.'-'.$counter;
 =======
                 $model->slug = $originalSlug . '-' . $counter;
 >>>>>>> 4b6b99016 (first commit)
+=======
+                $model->slug = $originalSlug.'-'.$counter;
+>>>>>>> dev
                 $counter++;
             }
         });
 
         // Set default privacy settings
+<<<<<<< HEAD
         static::creating(function ($model) {
+=======
+        static::creating(function ($model): void {
+>>>>>>> dev
             if (empty($model->privacy_settings)) {
                 $model->privacy_settings = [
                     'show_birth_info' => true,
@@ -568,7 +831,11 @@ class PublicPerson extends Model
         });
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 4b6b99016 (first commit)
+=======
+}
+>>>>>>> dev

@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\View\Composers;
 
+<<<<<<< HEAD
 use Exception;
+=======
+>>>>>>> dev
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
@@ -27,7 +30,11 @@ class XotComposer
     /**
      * Undocumented function.
      *
+<<<<<<< HEAD
      * @param  array<mixed|void>  $arguments
+=======
+     * @param array<mixed|void> $arguments
+>>>>>>> dev
      */
     public function __call(string $name, array $arguments): mixed
     {
@@ -35,7 +42,11 @@ class XotComposer
 
         $module = Arr::first($modules, static function ($module) use ($name): bool {
             // Ensure the module is an instance of LaravelModule
+<<<<<<< HEAD
             if (! ($module instanceof LaravelModule)) {
+=======
+            if (! $module instanceof LaravelModule) {
+>>>>>>> dev
                 return false;
             }
 
@@ -46,9 +57,13 @@ class XotComposer
         });
 
         if (! \is_object($module)) {
+<<<<<<< HEAD
             throw new Exception('Create a View\Composers\ThemeComposer.php inside a module with ['.
                 $name.
                 '] method');
+=======
+            throw new \Exception('Create a View\Composers\ThemeComposer.php inside a module with ['.$name.'] method');
+>>>>>>> dev
         }
 
         Assert::isInstanceOf($module, LaravelModule::class, '['.__LINE__.']['.class_basename($this).']');
@@ -71,7 +86,11 @@ class XotComposer
         $view->with('_theme', $this);
 
         if (class_exists('\Jenssegers\Agent\Agent')) {
+<<<<<<< HEAD
             $agent = new Agent;
+=======
+            $agent = new Agent();
+>>>>>>> dev
             $view->with('isMobile', $agent->isMobile());
             $view->with('isTablet', $agent->isTablet());
             $view->with('isDesktop', $agent->isDesktop());

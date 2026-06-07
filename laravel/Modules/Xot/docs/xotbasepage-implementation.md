@@ -173,10 +173,14 @@ class DashboardSettingsPolicy
 
 ## collegamento ad altre documentazioni
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [pattern di estensione filament](../xot/docs/filament_extension_pattern.md)
 =======
 - [pattern di estensione filament](../Xot/docs/filament_extension_pattern.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [pattern di estensione filament](../xot/docs/filament_extension_pattern.md)
+>>>>>>> dev
 - [best practices filament](../<nome progetto>/docs/filament-best-practices.md)
 
 ## ATTENZIONE: errori critici da evitare

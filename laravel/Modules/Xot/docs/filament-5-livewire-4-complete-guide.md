@@ -383,8 +383,13 @@ Tutti i cambiamenti sono legati alla migrazione a Livewire 4:
 #### 1.1 Backup
 
 ```bash
+<<<<<<< HEAD
 cp -r /var/www/_bases/base_laravelpizza/laravel \
       /var/www/_bases/base_laravelpizza_backup_$(date +%Y%m%d)
+=======
+cp -r /var/www/_bases/base_<nome progetto>/laravel \
+      /var/www/_bases/base_<nome progetto>_backup_$(date +%Y%m%d)
+>>>>>>> dev
 ```
 
 #### 1.2 Risolvere Conflitti Git
@@ -392,7 +397,11 @@ cp -r /var/www/_bases/base_laravelpizza/laravel \
 Il progetto ha conflitti git da risolvere prima dell'upgrade:
 
 ```bash
+<<<<<<< HEAD
 cd /var/www/_bases/base_laravelpizza
+=======
+cd /var/www/_bases/base_<nome progetto>
+>>>>>>> dev
 
 # Verifica stato git
 git status
@@ -441,7 +450,11 @@ git commit -m "Risolto conflitti git prima upgrade Filament 5"
 #### 3.1 Installa Script di Upgrade
 
 ```bash
+<<<<<<< HEAD
 cd /var/www/_bases/base_laravelpizza/laravel
+=======
+cd /var/www/_bases/base_<nome progetto>/laravel
+>>>>>>> dev
 
 composer require filament/upgrade:"^5.0" -W --dev
 ```
@@ -895,4 +908,8 @@ Se incontri problemi:
 ---
 
 *Documento mantenuto da: Marco Sottana*
+<<<<<<< HEAD
 *Progetto: Laraxot / base_laravelpizza*
+=======
+*Progetto: Laraxot / base_<nome progetto>*
+>>>>>>> dev

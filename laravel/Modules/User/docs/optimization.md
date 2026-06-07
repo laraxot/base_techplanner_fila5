@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi di Ottimizzazione - Modulo User
 
 ## 🎯 Principi Applicati: DRY + KISS + SOLID + ROBUST + Laraxot
@@ -734,3 +735,12 @@ class SecurityAlertService
 *Principi: DRY + KISS + SOLID + ROBUST + Laraxot*  
 *Stato: 🟡 Necessita Refactoring Interface e Performance*
 
+=======
+---
+module: theme
+topic: optimization
+canonical: ../../../Themes/docs/shared-components/optimization-analysis-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/optimization-analysis-Modules.md
+>>>>>>> dev

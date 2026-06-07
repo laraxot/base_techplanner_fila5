@@ -7,16 +7,22 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 ### Documentazione Correlata
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming_conventions.md) - Regole di naming per campi, classi e directory
 - [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+<<<<<<< HEAD
 =======
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./NAMING_CONVENTIONS.md) - Regole di naming per campi, classi e directory
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Validazione dei Collegamenti
 
@@ -26,17 +32,23 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documento in Modulo Altro](../../altromodulo/project_docs/documento.md)
 =======
 [Documento in Modulo Altro](../../AltroModulo/project_docs/documento.md)
 >>>>>>> 4b6b99016 (first commit)
 [Documento in Root](../../../project_docs/documento.md)
+=======
+[Documento in Modulo Altro](../../altromodulo/project_docs/documento.md)
+[Documento in Root](../../../../docs/project/documento.md)
+>>>>>>> dev
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
+<<<<<<< HEAD
 <<<<<<< HEAD
 [Documento Correlato](modules/xot/project_docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
@@ -46,6 +58,11 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+[Documento Correlato](modules/xot/project_docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+>>>>>>> dev
 ```
 
 ### Checklist di Validazione
@@ -56,10 +73,14 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] I percorsi sono compatibili con diversi sistemi operativi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
 =======
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+>>>>>>> dev
 
 ## Validazione dei Collegamenti
 
@@ -69,17 +90,23 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documento in Modulo Altro](../../altromodulo/project_docs/documento.md)
 =======
 [Documento in Modulo Altro](../../AltroModulo/project_docs/documento.md)
 >>>>>>> 4b6b99016 (first commit)
 [Documento in Root](../../../project_docs/documento.md)
+=======
+[Documento in Modulo Altro](../../altromodulo/project_docs/documento.md)
+[Documento in Root](../../../../docs/project/documento.md)
+>>>>>>> dev
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
+<<<<<<< HEAD
 <<<<<<< HEAD
 [Documento Correlato](modules/xot/project_docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
@@ -89,6 +116,11 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+[Documento Correlato](modules/xot/project_docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+>>>>>>> dev
 ```
 
 ### Checklist di Validazione
@@ -99,10 +131,14 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] I percorsi sono compatibili con diversi sistemi operativib6f667c (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
 =======
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+>>>>>>> dev
 
 ## Validazione dei Collegamenti
 
@@ -112,17 +148,23 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documento in Modulo Altro](../../altromodulo/project_docs/documento.md)
 =======
 [Documento in Modulo Altro](../../AltroModulo/project_docs/documento.md)
 >>>>>>> 4b6b99016 (first commit)
 [Documento in Root](../../../project_docs/documento.md)
+=======
+[Documento in Modulo Altro](../../altromodulo/project_docs/documento.md)
+[Documento in Root](../../../../docs/project/documento.md)
+>>>>>>> dev
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
+<<<<<<< HEAD
 <<<<<<< HEAD
 [Documento Correlato](modules/xot/project_docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
@@ -132,6 +174,11 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+[Documento Correlato](modules/xot/project_docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+>>>>>>> dev
 ```
 
 ### Checklist di Validazione

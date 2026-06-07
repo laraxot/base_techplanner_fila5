@@ -126,7 +126,11 @@ nwidart/laravel-modules (Module facade)
 
 **Order garantito**:
 1. Xot service provider registrato
+<<<<<<< HEAD
 2. Xot Helpers/Helper.php autoloaded (via `files` in composer.json)
+=======
+2. Xot helpers/Helper.php autoloaded (via `files` in composer.json)
+>>>>>>> dev
 3. Tenant service provider registrato
 4. Tenant può usare helper functions
 
@@ -139,7 +143,11 @@ Call to undefined function Modules\Tenant\Services\inAdmin()
 at Modules/Tenant/app/Services/TenantService.php:68
 ```
 
+<<<<<<< HEAD
 **Causa**: Funzioni `inAdmin()` e `getModuleModels()` non definite in `Xot/Helpers/Helper.php`.
+=======
+**Causa**: Funzioni `inAdmin()` e `getModuleModels()` non definite in `Xot/helpers/Helper.php`.
+>>>>>>> dev
 
 ### Perché Accadeva
 
@@ -152,7 +160,11 @@ Durante `composer dump-autoload`:
 
 ### Fix Applicato
 
+<<<<<<< HEAD
 Aggiunte in `Xot/Helpers/Helper.php`:
+=======
+Aggiunte in `Xot/helpers/Helper.php`:
+>>>>>>> dev
 
 ```php
 if (! function_exists('inAdmin')) {
@@ -244,16 +256,22 @@ if (inAdmin()) { }
 ## 🔗 Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Xot Helper Functions](../../xot/docs/helpers.md)
 - [Xot RouteService](../../Xot/app/Services/RouteService.php)
 - [Xot GetAllModelsByModuleNameAction](../../Xot/app/Actions/Model/GetAllModelsByModuleNameAction.php)
 - [Helper Architecture Analysis](../../xot/docs/helpers-architecture-analysis.md)
+<<<<<<< HEAD
 =======
 - [Xot Helper Functions](../../Xot/docs/helpers.md)
 - [Xot RouteService](../../Xot/app/Services/RouteService.php)
 - [Xot GetAllModelsByModuleNameAction](../../Xot/app/Actions/Model/GetAllModelsByModuleNameAction.php)
 - [Helper Architecture Analysis](../../Xot/docs/helpers-architecture-analysis.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 - [nwidart/laravel-modules GitHub](https://github.com/nWidart/laravel-modules)
 
 ---

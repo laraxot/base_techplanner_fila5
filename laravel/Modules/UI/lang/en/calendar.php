@@ -8,6 +8,9 @@ return [
     'today' => 'Today',
     'months' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         0 => 'January',
         1 => 'February',
         2 => 'March',
@@ -52,6 +55,7 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
         'January',
         'February',
@@ -77,4 +81,6 @@ return [
     ],
     'weekdays_short' => ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

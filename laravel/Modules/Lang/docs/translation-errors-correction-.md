@@ -183,7 +183,11 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali
+<<<<<<< HEAD
 - [Root Docs: Translation Standards](../../docs/translation_standards.md)
+=======
+- [Root Docs: Translation Standards](../../../docs/translation_standards.md)
+>>>>>>> dev
 - [Lang Module: Translation Best Practices](translation_best_practices.md)
 - [<nome progetto> Module: Translation Guidelines](../<nome progetto>/docs/translation_guidelines.md)
 
@@ -435,7 +439,11 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali
+<<<<<<< HEAD
 - [Root Docs: Translation Standards](../../docs/translation_standards.md)
+=======
+- [Root Docs: Translation Standards](../../../docs/translation_standards.md)
+>>>>>>> dev
 - [Lang Module: Translation Best Practices](translation_best_practices.md)
 - [<nome progetto> Module: Translation Guidelines](../<nome progetto>/docs/translation_guidelines.md)
 

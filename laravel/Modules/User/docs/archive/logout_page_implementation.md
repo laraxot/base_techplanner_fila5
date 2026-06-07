@@ -6,7 +6,11 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 
 ### 1. Posizione del File
 ```
+<<<<<<< HEAD
 /var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
+=======
+/var/www/html/ptvx/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
+>>>>>>> dev
 ```
 
 ### 2. Implementazione Corretta

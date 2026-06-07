@@ -140,12 +140,17 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 - [Documentazione Laravel Folio](https://laravel.com/project_docs/12.x/folio)
 - [Esempio di mapping rotte](https://github.com/mcamara/laravel-localization#translated-routes)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [FAQ e problemi comuni](modules/lang/project_docs/translations-faq.md)
 - [Guida language switcher](modules/lang/project_docs/readme.md)
 =======
 - [FAQ e problemi comuni](Modules/Lang/project_docs/translations-faq.md)
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [FAQ e problemi comuni](Modules/Lang/project_docs/translations-faq.md)
+- [Guida language switcher](Modules/Lang/project_docs/README.md)
+>>>>>>> dev
 
 ---
 
@@ -292,12 +297,17 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 - [Documentazione Laravel Folio](https://laravel.com/docs/12.x/folio)
 - [Esempio di mapping rotte](https://github.com/mcamara/laravel-localization#translated-routes)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [FAQ e problemi comuni](modules/lang/docs/translations-faq.md)
 - [Guida language switcher](modules/lang/docs/readme.md)
 =======
 - [FAQ e problemi comuni](Modules/Lang/docs/translations-faq.md)
 - [Guida language switcher](Modules/Lang/docs/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [FAQ e problemi comuni](Modules/Lang/docs/translations-faq.md)
+- [Guida language switcher](Modules/Lang/docs/README.md)
+>>>>>>> dev
 
 ---
 

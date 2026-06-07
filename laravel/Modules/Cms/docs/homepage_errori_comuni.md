@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Errori Comuni nell'Interpretazione dei Contenuti dell'Homepage
 
 ## Introduzione
@@ -96,3 +97,12 @@ Le considerazioni di accessibilità spesso vengono trascurate nella frenesia di 
 L'accuratezza dei contenuti dell'homepage è fondamentale per la riuscita del progetto il progetto. Evitando questi errori comuni, possiamo garantire un'esperienza utente coerente e accessibile, rispettando al contempo gli accordi con i partner e comunicando correttamente i criteri di ammissibilità alle potenziali beneficiarie.
 
 Questo documento dovrebbe essere consultato regolarmente dal team di sviluppo e di contenuti per assicurare l'aderenza alle specifiche ufficiali del progetto. 
+=======
+---
+module: theme
+topic: homepage_errori_comuni
+canonical: ../../../Themes/docs/shared-components/homepage-errori-comuni.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/homepage-errori-comuni.md
+>>>>>>> dev

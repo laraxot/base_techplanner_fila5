@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Error Resolution - Progress Report
 
 ## Current Status
@@ -255,3 +256,12 @@ This document tracks the progress of fixing PHPStan level 10 issues across vario
 - Then continue with the Xot module which has more complex issues
 - Consider grouping fixes by error type (type annotations, null checks, method access) for efficiency
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: phpstan-progress
+canonical: ../../../Themes/docs/shared-components/phpstan-progress-report-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-progress-report-Modules.md
+>>>>>>> dev

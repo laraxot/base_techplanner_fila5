@@ -72,10 +72,14 @@ class GooglePlacesService
     {
         $cacheKey = $this->cachePrefix . md5($query . $country);
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         return cache()->remember($cacheKey, $this->cacheTtl, function () use ($query, $country) {
             return $this->performApiCall($query, $country);
         });
@@ -85,10 +89,14 @@ class GooglePlacesService
     {
         $cacheKey = $this->cachePrefix . 'details_' . $placeId;
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         return cache()->remember($cacheKey, $this->cacheTtl * 7, function () use ($placeId) {
             return $this->performDetailsCall($placeId);
         });
@@ -101,10 +109,14 @@ class GooglePlacesService
             throw new RateLimitExceededException();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         // API call con retry logic
         return retry(3, function () use ($query, $country) {
             return Http::timeout(10)
@@ -133,11 +145,15 @@ class GoogleApiRateLimiter
         $key = $this->keyPrefix . now()->format('Y-m-d_H:i');
         $current = cache()->get($key, 0);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         
         if ($current >= $this->maxCallsPerMinute) {
             return false;
         }
         
+<<<<<<< HEAD
 =======
 
         if ($current >= $this->maxCallsPerMinute) {
@@ -145,6 +161,8 @@ class GoogleApiRateLimiter
         }
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         cache()->put($key, $current + 1, 120); // 2 minuti
         return true;
     }
@@ -235,10 +253,14 @@ class AddressFactory extends Factory
 - [ ] **Script check** passa senza errori
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Performance  
 =======
 ### Performance
 >>>>>>> 4b6b99016 (first commit)
+=======
+### Performance  
+>>>>>>> dev
 - [ ] **Google API calls** < 500ms
 - [ ] **Address validation** < 50ms
 - [ ] **Geocoding** < 200ms con caching
@@ -316,6 +338,7 @@ php artisan geo:test-api-integration
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
 - [Google Places Integration](google-places.md)
 - [Address Model Documentation](models/address.md)
@@ -324,3 +347,9 @@ php artisan geo:test-api-integration
 =======
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
+- [Google Places Integration](google-places.md)
+- [Address Model Documentation](models/address.md)
+
+>>>>>>> dev

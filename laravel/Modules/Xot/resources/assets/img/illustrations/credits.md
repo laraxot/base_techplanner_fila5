@@ -13,6 +13,7 @@ Make sure to view their licensing terms to make
 sure you are attributing the image authors
 correctly when using their assets.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Illustration Credits
 
@@ -29,3 +30,5 @@ Make sure to view their licensing terms to make
 sure you are attributing the image authors
 correctly when using their assets.
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -937,12 +937,17 @@ Con il refactoring di Contact e creazione scope traits: **→ 92% - Eccellente!*
 
 - [DRY/KISS Model Refactoring (2025-10-15)](./dry-kiss-model-refactoring-2025-10-15.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Model Inheritance Rules (User Module)](../../user/docs/model-inheritance-rules.md)
 - [Model Usage in Themes](../../../themes/zero/docs/model-usage-in-themes.md)
 =======
 - [Model Inheritance Rules (User Module)](../../User/docs/model-inheritance-rules.md)
 - [Model Usage in Themes](../../../Themes/Zero/docs/model-usage-in-themes.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Model Inheritance Rules (User Module)](../../user/docs/model-inheritance-rules.md)
+- [Model Usage in Themes](../../../themes/zero/docs/model-usage-in-themes.md)
+>>>>>>> dev
 - [Duplicate Methods Analysis](./duplicate-methods-analysis.md)
 
 ---

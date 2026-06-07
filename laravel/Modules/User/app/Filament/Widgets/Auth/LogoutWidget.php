@@ -13,7 +13,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
+=======
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+>>>>>>> dev
 
 /**
  * Logout widget for user session termination.
@@ -22,6 +26,7 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  * event dispatching, and audit logging following Laraxot
  * architectural patterns and security best practices.
  */
+<<<<<<< HEAD
 class LogoutWidget extends XotBaseWidget
 {
     /**
@@ -30,6 +35,14 @@ class LogoutWidget extends XotBaseWidget
      * @phpstan-ignore property.defaultValue
      */
     protected string $view = 'user::widgets.auth.logout-widget';
+=======
+class LogoutWidget extends XotBaseSchemaWidget
+{
+    /**
+     * The view for this widget.
+     */
+    protected string $view = 'user::filament.widgets.auth.logout';
+>>>>>>> dev
 
     /**
      * Mount the widget and initialize the form.
@@ -44,6 +57,7 @@ class LogoutWidget extends XotBaseWidget
      *
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     #[\Override]
     public function getFormSchema(): array
     {
@@ -69,6 +83,12 @@ class LogoutWidget extends XotBaseWidget
         return [
             $this->getLogoutAction(),
             $this->getCancelAction(),
+=======
+    public function getFormSchema(): array
+    {
+        return [
+            'logout_message' => View::make('user::filament.widgets.auth.logout-message')->columnSpanFull(),
+>>>>>>> dev
         ];
     }
 
@@ -96,6 +116,22 @@ class LogoutWidget extends XotBaseWidget
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Get form actions for logout widget.
+     *
+     * @return array<Action>
+     */
+    protected function getFormActions(): array
+    {
+        return [
+            $this->getLogoutAction(),
+            $this->getCancelAction(),
+        ];
+    }
+
+    /**
+>>>>>>> dev
      * Get logout action button configuration.
      */
     protected function getLogoutAction(): Action
@@ -160,7 +196,11 @@ class LogoutWidget extends XotBaseWidget
      */
     protected function logLogoutSuccess(Authenticatable $user): void
     {
+<<<<<<< HEAD
         Log::info('User logged out', [
+=======
+        Log::debug('User logged out', [
+>>>>>>> dev
             'user_id' => $user->getAuthIdentifier(),
             'timestamp' => now()->toDateTimeString(),
         ]);

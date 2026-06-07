@@ -26,10 +26,14 @@ return [
         'name' => [
             'label' => 'Nome Studio Medico',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi]',
 =======
             'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi]',
+>>>>>>> dev
             'help' => 'Nome ufficiale dello studio medico come registrato in camera di commercio',
             'validation' => [
                 'required' => 'Il nome dello studio è obbligatorio',
@@ -37,6 +41,9 @@ return [
                 'max' => 'Il nome non può superare i 100 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -44,12 +51,15 @@ return [
         'phone' => [
             'label' => 'Numero di Telefono Studio',
             'placeholder' => 'Inserisci numero telefonico principale (es. +39 06 1234567]',
+<<<<<<< HEAD
 =======
         ],
         'phone' => [
             'label' => 'Numero di Telefono Studio',
             'placeholder' => 'Inserisci numero telefonico principale (es. +39 06 1234567)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             'help' => 'Numero di telefono principale dello studio per contatti diretti e urgenze',
             'validation' => [
                 'required' => 'Il numero di telefono è obbligatorio',
@@ -57,6 +67,9 @@ return [
                 'min' => 'Il numero deve contenere almeno 10 cifre',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -64,12 +77,15 @@ return [
         'email' => [
             'label' => 'Email Ufficiale Studio',
             'placeholder' => 'Inserisci email istituzionale (es. info@studiodentistico.it]',
+<<<<<<< HEAD
 =======
         ],
         'email' => [
             'label' => 'Email Ufficiale Studio',
             'placeholder' => 'Inserisci email istituzionale (es. info@studiodentistico.it)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             'help' => 'Indirizzo email ufficiale dello studio per comunicazioni istituzionali',
             'validation' => [
                 'required' => 'L\'indirizzo email è obbligatorio',
@@ -78,6 +94,9 @@ return [
                 'max' => 'L\'indirizzo email non può superare i 255 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -85,12 +104,15 @@ return [
         'address' => [
             'label' => 'Indirizzo Completo Studio',
             'placeholder' => 'Via/Piazza Nome Strada, Numero Civico, CAP Città (Provincia]',
+<<<<<<< HEAD
 =======
         ],
         'address' => [
             'label' => 'Indirizzo Completo Studio',
             'placeholder' => 'Via/Piazza Nome Strada, Numero Civico, CAP Città (Provincia)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             'help' => 'Indirizzo fisico completo dello studio medico comprensivo di CAP e provincia',
             'validation' => [
                 'required' => 'L\'indirizzo dello studio è obbligatorio',
@@ -98,11 +120,17 @@ return [
                 'max' => 'L\'indirizzo non può superare i 300 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'director_name' => [
             'label' => 'Nome Direttore Sanitario',
@@ -114,11 +142,17 @@ return [
                 'max' => 'Il nome non può superare i 100 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'director_registration' => [
             'label' => 'Numero Iscrizione Albo Medico',
@@ -130,6 +164,9 @@ return [
                 'min' => 'Il numero di iscrizione deve contenere almeno 3 cifre',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -137,12 +174,15 @@ return [
         'vat_number' => [
             'label' => 'Partita IVA Studio',
             'placeholder' => 'Inserisci partita IVA (11 cifre]',
+<<<<<<< HEAD
 =======
         ],
         'vat_number' => [
             'label' => 'Partita IVA Studio',
             'placeholder' => 'Inserisci partita IVA (11 cifre)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             'help' => 'Partita IVA dello studio medico registrata presso l\'Agenzia delle Entrate',
             'validation' => [
                 'required' => 'La partita IVA è obbligatoria',
@@ -150,11 +190,17 @@ return [
                 'unique' => 'Questa partita IVA è già registrata per un altro studio',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'specialization' => [
             'label' => 'Specializzazioni Mediche',
@@ -177,6 +223,9 @@ return [
                 'altro' => 'Altra Specializzazione',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -191,6 +240,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'website' => [
@@ -201,6 +251,8 @@ return [
                 'url' => 'Inserisci un URL valido che inizi con http:// o https://',
             ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'staff_count' => [
             'label' => 'Numero Operatori',
@@ -213,11 +265,17 @@ return [
                 'max' => 'Il numero massimo consentito è 100 operatori',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'privacy_acceptance' => [
             'label' => 'Consenso Trattamento Dati',
@@ -227,11 +285,17 @@ return [
                 'accepted' => 'È obbligatorio accettare l\'informativa sulla privacy per procedere',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'terms_acceptance' => [
             'label' => 'Accettazione Termini di Servizio',
@@ -241,11 +305,17 @@ return [
                 'accepted' => 'È obbligatorio accettare i termini e condizioni per procedere',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -349,10 +419,15 @@ return [
         'data_protection' => 'Tutti i dati sono protetti secondo le normative europee GDPR',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Register Tenant',
     'plural_label' => 'Register Tenant (Plurale)',
 =======
     'label' => '',
     'plural_label' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Register Tenant',
+    'plural_label' => 'Register Tenant (Plurale)',
+>>>>>>> dev
 ];

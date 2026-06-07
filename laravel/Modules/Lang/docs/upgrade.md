@@ -32,12 +32,17 @@ php artisan module_lang:show-versions
 ```
 ## Collegamenti tra versioni di upgrade.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [upgrade.md](../../../lang/docs/upgrade.md)
 * [upgrade.md](../../../cms/docs/upgrade.md)
 =======
 * [upgrade.md](../../../Lang/docs/upgrade.md)
 * [upgrade.md](../../../Cms/docs/upgrade.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [upgrade.md](../../../Lang/docs/upgrade.md)
+* [upgrade.md](../../../Cms/docs/upgrade.md)
+>>>>>>> dev
 
 ### Versione Incoming
 

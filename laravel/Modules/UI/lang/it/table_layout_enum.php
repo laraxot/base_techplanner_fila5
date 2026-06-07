@@ -20,6 +20,9 @@ return [
         'helper_text' => 'Ideale per visualizzare pochi dati con focus visivo',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Table Layout Enum',
     'plural_label' => 'Table Layout Enum (Plurale)',
     'navigation' => [
@@ -64,6 +67,9 @@ return [
             'label' => 'Elimina Table Layout Enum',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

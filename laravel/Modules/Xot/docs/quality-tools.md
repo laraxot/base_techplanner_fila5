@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Filosofia degli Strumenti di Qualità - La Trinità del Codice Perfetto
 
 ## 🎯 Overview - I Tre Pilastri
@@ -940,3 +941,12 @@ actionlint -color
 - Each module/theme must have `quality-tools` page linking back here.
 - Record deviations and suppressions with rationale and next review date.
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: quality-tools
+canonical: ../../../Themes/docs/shared-components/quality-tools-philosophy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-tools-philosophy.md
+>>>>>>> dev

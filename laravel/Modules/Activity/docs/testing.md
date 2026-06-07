@@ -177,7 +177,15 @@ protected function createApplication()
     $app = parent::createApplication();
     
     $app['config']->set([
+<<<<<<< HEAD
         'database.connections.activity.database' => 'quaeris_data_test',
+=======
+<<<<<<< HEAD
+'database.connections.activity.database' => 'Quaeris_data_test',
+=======
+        'database.connections.activity.database' => 'healthcare_app_data_test',
+>>>>>>> 4467550 (.)
+>>>>>>> dev
     ]);
     
     return $app;
@@ -263,9 +271,15 @@ protected function createApplication()
 
 ### Internal Resources
 
+<<<<<<< HEAD
 - [Testing Setup Guide](../../docs/testing-setup.md)
 - [Testing Best Practices](../../docs/testing-best-practices.md)
 - [Troubleshooting Guide](../../docs/troubleshooting.md)
+=======
+- [Testing Setup Guide](../../../docs/testing-setup.md)
+- [Testing Best Practices](../../../docs/testing-best-practices.md)
+- [Troubleshooting Guide](../../../docs/troubleshooting.md)
+>>>>>>> dev
 
 ## Testing Examples
 
@@ -383,7 +397,11 @@ Remember: Good tests are the foundation of reliable software development.
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *
 =======
 *Last updated: January 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*
+>>>>>>> dev

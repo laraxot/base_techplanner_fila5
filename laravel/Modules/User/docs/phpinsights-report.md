@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # phpinsights report
 
 ## stato 2025-11-12 (sessione corrente)
@@ -37,3 +38,12 @@
    - integrare controlli con `phpstan` livello 10
 
 > Nota: mantenere l'analisi focalizzata sul codice di produzione (`Modules/User/app`). Estendere ai test solo dopo aver stabilizzato le convenzioni.
+=======
+---
+module: theme
+topic: phpinsights-report
+canonical: ../../../Themes/docs/shared-components/phpinsights-report.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-report.md
+>>>>>>> dev

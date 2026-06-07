@@ -157,8 +157,11 @@ Quando sistemo un test esistente che non funziona:
 **Questa regola è SUPREMA e ha precedenza su qualsiasi altra considerazione di testing.**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: Gennaio 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Status**: REGOLA ASSOLUTA E NON NEGOZIABILE
 **Applicabilità**: UNIVERSALE - ogni test, ogni modulo, ogni scenario

@@ -8,6 +8,9 @@ use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use Modules\Xot\Traits\EnumTrait;
 
 enum YesNoEnum: string implements HasColor, HasIcon, HasLabel
@@ -16,6 +19,7 @@ enum YesNoEnum: string implements HasColor, HasIcon, HasLabel
 
     case YES = 'yes';
     case NO = 'no';
+<<<<<<< HEAD
 =======
 
 enum YesNoEnum: string implements HasColor, HasIcon, HasLabel
@@ -47,4 +51,6 @@ enum YesNoEnum: string implements HasColor, HasIcon, HasLabel
         };
     }
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 }

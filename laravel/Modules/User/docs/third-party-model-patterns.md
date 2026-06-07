@@ -226,12 +226,17 @@ $this->tableCreate(function (Blueprint $table) {
 
 ### Laraxot Philosophy
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Third-Party Model Inheritance](../xot/docs/third-party-model-inheritance-philosophy.md)
 - [Model Architecture](../xot/docs/models/model_architecture.md)
 =======
 - [Third-Party Model Inheritance](../Xot/docs/third-party-model-inheritance-philosophy.md)
 - [Model Architecture](../Xot/docs/models/MODEL_ARCHITECTURE.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Third-Party Model Inheritance](../xot/docs/third-party-model-inheritance-philosophy.md)
+- [Model Architecture](../xot/docs/models/model_architecture.md)
+>>>>>>> dev
 
 ---
 

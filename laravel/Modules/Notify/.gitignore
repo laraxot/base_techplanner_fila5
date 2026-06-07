@@ -31,6 +31,7 @@ cache/
 # ==============================================
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 80226b25c (.)
 # MERGE / CONFLICT BACKUP SYMLINKS (mai in git — LFS GH008)
@@ -44,6 +45,8 @@ cache/
 >>>>>>> 4b6b99016 (first commit)
 =======
 >>>>>>> 80226b25c (.)
+=======
+>>>>>>> dev
 # CACHE & TEMPORARY FILES
 # ==============================================
 *.cache
@@ -117,6 +120,10 @@ Thumbs.db
 *.old
 *.old1
 *.old2
+<<<<<<< HEAD
+=======
+*.old*
+>>>>>>> dev
 *.backup
 *.backup.*
 *.bak
@@ -175,3 +182,39 @@ test_notifications.sql
 *.old
 laravel
 public_html
+<<<<<<< HEAD
+=======
+lang/lang/
+_docs/
+_docs/
+
+# Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
+docs/archive/.devcontainer/
+.planning/
+.ralph
+_bmad-output/
+bashscripts/
+.agent*/
+.agent*
+.ai*
+.claude*
+.c*
+.i*
+.j*
+.p*
+.w*
+.z*
+laravel/
+config/Config
+config/config
+
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+*~HEAD
+*~BASE
+*~LOCAL
+*~REMOTE
+*.orig
+*.rej
+*~head
+
+>>>>>>> dev

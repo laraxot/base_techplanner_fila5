@@ -23,6 +23,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property int $id
  * @property string $uuid
  * @property string|null $user_id
@@ -30,6 +31,11 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property string $id
  * @property string $user_id
 >>>>>>> 4b6b99016 (first commit)
+=======
+ * @property int $id
+ * @property string $uuid
+ * @property string|null $user_id
+>>>>>>> dev
  * @property string|null $first_name
  * @property string|null $last_name
  * @property string|null $fiscal_code
@@ -69,9 +75,13 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property-read User|null $user
  * @property-read string|null $user_name
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @method static ProfileFactory factory($count = null, $state = [])
  * @method static Builder<static>|Profile newModelQuery()
  * @method static Builder<static>|Profile newQuery()
@@ -99,17 +109,23 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder<static>|Profile withoutPermission($permissions)
  * @method static Builder<static>|Profile withoutRole($roles, $guard = null)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
  *
  * @property string|null $bio
  * @property-read Profile|null $deleter
  *
  * @method static Builder<static>|Profile whereBio($value)
  *
+<<<<<<< HEAD
 =======
  * @property string|null $bio
  * @property-read Profile|null $deleter
  * @method static Builder<static>|Profile whereBio($value)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class Profile extends BaseProfile {}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Raccomandazioni di Ottimizzazione - Modulo Cms
 
 ## 🎯 Stato Attuale e Analisi
@@ -322,3 +323,12 @@ php artisan cms:seo-audit
 - [Content Management Guide](content-management/)
 - [SEO Best Practices](seo/)
 
+=======
+---
+module: theme
+topic: optimization_recommendations
+canonical: ../../../Themes/docs/shared-components/optimization-recommendations-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/optimization-recommendations-Modules.md
+>>>>>>> dev

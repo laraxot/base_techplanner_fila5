@@ -18,6 +18,9 @@ return [
         'icon' => 'user-user-permission',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Base Profile',
     'plural_label' => 'Base Profile (Plurale)',
     'fields' => [
@@ -51,10 +54,13 @@ return [
             'label' => 'Elimina Base Profile',
         ],
     ],
+<<<<<<< HEAD
 =======
     'label' => '',
     'plural_label' => '',
     'fields' => [],
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

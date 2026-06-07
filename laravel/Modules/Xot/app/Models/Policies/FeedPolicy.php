@@ -6,14 +6,21 @@ namespace Modules\Xot\Models\Policies;
 
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\Feed;
+<<<<<<< HEAD
 use Override;
+=======
+>>>>>>> dev
 
 class FeedPolicy extends XotBasePolicy
 {
     /**
      * Determine whether the user can view any models.
      */
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     public function viewAny(UserContract $user): bool
     {
         return $user->hasPermissionTo('feed.viewAny');

@@ -7,6 +7,9 @@ return [
         'qty' => [
             'label' => 'qty',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -34,8 +37,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Fake Seeder Header',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

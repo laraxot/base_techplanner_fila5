@@ -16,6 +16,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -76,6 +79,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         'name' => 'Nome',
         'description' => 'Descrizione',
@@ -88,6 +92,8 @@ return [
         'photos' => 'Foto',
         'amenities' => 'Servizi',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'categories' => [
         'restaurant' => 'Ristorante',
@@ -104,8 +110,13 @@ return [
         'bookmark' => 'Salva',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Place',
     'plural_label' => 'Place (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Place',
+    'plural_label' => 'Place (Plurale)',
+>>>>>>> dev
 ];

@@ -107,28 +107,40 @@ I blocchi sono l'unità base di contenuto. Ogni blocco:
 ## Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Gestione dei Temi](../themes/readme.md)
 - [Componenti UI](../components/readme.md)
 - [Configurazione Blocchi](../blocks/readme.md)
 - [Ottimizzazione Performance](../performance/readme.md)
+<<<<<<< HEAD
 =======
 - [Gestione dei Temi](../themes/README.md)
 - [Componenti UI](../components/README.md)
 - [Configurazione Blocchi](../blocks/README.md)
 - [Ottimizzazione Performance](../performance/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Collegamenti tra versioni di architecture.md
 * [architecture.md](docs/tecnico/filament/architecture.md)
 * [architecture.md](docs/rules/architecture.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [architecture.md](laravel/modules/gdpr/docs/architecture.md)
 * [architecture.md](laravel/modules/cms/docs/frontoffice/architecture.md)
 * [architecture.md](laravel/modules/cms/docs/architecture.md)
 * [architecture.md](laravel/themes/one/docs/roadmap/inspiration/architecture.md)
+<<<<<<< HEAD
 =======
 * [architecture.md](laravel/Modules/Gdpr/docs/architecture.md)
 * [architecture.md](laravel/Modules/Cms/docs/frontoffice/architecture.md)
 * [architecture.md](laravel/Modules/Cms/docs/architecture.md)
 * [architecture.md](laravel/Themes/One/docs/roadmap/inspiration/architecture.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

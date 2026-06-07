@@ -365,10 +365,17 @@ When working with the Zero theme, you'll commonly encounter models from these mo
 - `Modules\Cms\Models\Page` - Static pages
 - `Modules\Cms\Models\Article` - Articles
 
+<<<<<<< HEAD
 ### Quaeris Module
 - `Modules\Quaeris\Models\Survey` - Surveys
 - `Modules\Quaeris\Models\Question` - Survey questions
 - `Modules\Quaeris\Models\SurveyPdf` - PDF exports
+=======
+### healthcare_app Module
+- `Modules\healthcare_app\Models\Survey` - Surveys
+- `Modules\healthcare_app\Models\Question` - Survey questions
+- `Modules\healthcare_app\Models\SurveyPdf` - PDF exports
+>>>>>>> dev
 
 ### Other Modules
 - `Modules\Geo\Models\Place` - Geographic data

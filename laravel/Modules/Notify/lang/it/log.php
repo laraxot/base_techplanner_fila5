@@ -7,6 +7,9 @@ return [
         'recipient' => [
             'label' => 'recipient',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -82,6 +85,7 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Log',
+<<<<<<< HEAD
 =======
         ],
         'subject' => [
@@ -108,6 +112,8 @@ return [
         'resetFilters' => [
             'label' => 'resetFilters',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

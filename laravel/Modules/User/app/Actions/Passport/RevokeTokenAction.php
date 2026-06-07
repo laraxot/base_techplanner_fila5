@@ -18,13 +18,19 @@ class RevokeTokenAction
     use QueueableAction;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     public function __construct(
         private readonly OauthToken $oauthTokenModel,
     ) {
     }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     /**
      * Revoca un token OAuth2.
      *
@@ -36,10 +42,14 @@ class RevokeTokenAction
     {
         if (is_string($token)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $token = $this->oauthTokenModel->find($token);
 =======
             $token = OauthToken::find($token);
 >>>>>>> 4b6b99016 (first commit)
+=======
+            $token = $this->oauthTokenModel->find($token);
+>>>>>>> dev
         }
 
         if (! $token instanceof OauthToken) {

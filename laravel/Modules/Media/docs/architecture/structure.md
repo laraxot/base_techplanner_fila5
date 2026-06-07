@@ -8,7 +8,11 @@ Data: 2025-04-23 19:09:56
 Modules\\Media\\Database\\Factories
 Modules\\Media\\Database\\Seeders
 Modules\\Media\\Tests
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_media_fila3
+=======
+- **Pacchetto Composer**: laraxot/module_media_fila5
+>>>>>>> dev
 Marco Sottana
 - **Dipendenze**: php ^8.2 pbmedia/laravel-ffmpeg ^8.5 intervention/image * repositories type path url ../User type path url ../Tenant type path url ../UI type path
 - **Totale file PHP**: 97
@@ -296,7 +300,11 @@ database_old/migrations
 database_old/seeders
 docs
 docs/actions
+<<<<<<< HEAD
 docs/archived
+=======
+docs/archivedd
+>>>>>>> dev
 docs/contracts
 docs/filament
 docs/filament/relation-managers
@@ -396,6 +404,9 @@ tests_old/Unit
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [structure.md](../../../gdpr/docs/structure.md)
 * [structure.md](../../../notify/docs/structure.md)
 * [structure.md](../../../xot/docs/structure.md)
@@ -411,6 +422,7 @@ tests_old/Unit
 * [structure.md](../../../cms/docs/structure.md)
 * [structure.md](../../../cms/docs/themes/structure.md)
 * [structure.md](../../../cms/docs/components/structure.md)
+<<<<<<< HEAD
 =======
 * [structure.md](../../../Gdpr/docs/structure.md)
 * [structure.md](../../../Notify/docs/structure.md)
@@ -428,3 +440,5 @@ tests_old/Unit
 * [structure.md](../../../Cms/docs/themes/structure.md)
 * [structure.md](../../../Cms/docs/components/structure.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

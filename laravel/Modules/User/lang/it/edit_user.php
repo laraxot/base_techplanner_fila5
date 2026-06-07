@@ -29,6 +29,9 @@ return [
         'password' => [
             'label' => 'password',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -59,6 +62,7 @@ return [
     ],
     'label' => 'Edit User',
     'plural_label' => 'Edit User (Plurale)',
+<<<<<<< HEAD
 =======
         ],
         'email' => [
@@ -72,4 +76,6 @@ return [
     'label' => '',
     'plural_label' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

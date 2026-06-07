@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\User\Tests\Feature\Passport;
+
+>>>>>>> dev
 use Laravel\Passport\Client;
 use Laravel\Passport\ClientRepository;
 use Modules\User\Models\User;

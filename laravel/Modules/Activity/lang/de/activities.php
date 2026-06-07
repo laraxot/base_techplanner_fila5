@@ -1,12 +1,16 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 declare(strict_types=1);
 
 return [
     'breadcrumb' => 'Historie',
     'title' => 'Historie :record',
     'default_datetime_format' => 'd.m.Y, H:i:s \\U\\h\\r',
+<<<<<<< HEAD
 =======
 return [
     'breadcrumb' => 'Historie',
@@ -16,6 +20,8 @@ return [
     'default_datetime_format' => 'd.m.Y, H:i:s \U\h\r',
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'table' => [
         'field' => 'Feld',
         'old' => 'Alt',
@@ -23,9 +29,12 @@ return [
         'restore' => 'Wiederherstellen',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'events' => [
         'updated' => 'Aktualisiert',
         'created' => 'Erstellt',
@@ -35,6 +44,9 @@ return [
         'restore_failed' => 'Wiederherstellung fehlgeschlagen',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -48,6 +60,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole di Estensione dei Modelli Laraxot
 
 ## Regola Fondamentale di Ereditarietà
@@ -91,3 +92,12 @@ abstract class BaseModel extends XotBaseModel
 - [docs/MODULE_NAMESPACE_RULES.md](../../docs/module_namespace_rules.md)
 - [modules/performance/docs/organizzativa-models.md](../performance/docs/organizzativa-models.md)
 
+=======
+---
+module: theme
+topic: model-base
+canonical: ../../../Themes/docs/shared-components/model-base-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/model-base-rules.md
+>>>>>>> dev

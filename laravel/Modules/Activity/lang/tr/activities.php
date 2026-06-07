@@ -1,12 +1,16 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 declare(strict_types=1);
 
 return [
     'breadcrumb' => 'Geçmiş',
     'title' => ':record Geçmişi',
     'default_datetime_format' => 'd.m.Y, H:i:s',
+<<<<<<< HEAD
 =======
 return [
     'breadcrumb' => 'Geçmiş',
@@ -16,6 +20,8 @@ return [
     'default_datetime_format' => 'd.m.Y, H:i:s',
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'table' => [
         'field' => 'Alan',
         'old' => 'Eski Değer',
@@ -23,9 +29,12 @@ return [
         'restore' => 'Geri Yükle',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'events' => [
         'updated' => 'Güncellendi',
         'created' => 'Oluşturuldu',
@@ -35,6 +44,9 @@ return [
         'restore_failed' => 'Geri Yükleme Başarısız',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -48,6 +60,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

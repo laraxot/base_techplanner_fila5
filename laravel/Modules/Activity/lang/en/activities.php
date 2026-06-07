@@ -1,12 +1,16 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 declare(strict_types=1);
 
 return [
     'breadcrumb' => 'History',
     'title' => 'History :record',
     'default_datetime_format' => 'Y-m-d, H:i:s',
+<<<<<<< HEAD
 =======
 return [
     'breadcrumb' => 'History',
@@ -16,6 +20,8 @@ return [
     'default_datetime_format' => 'Y-m-d, H:i:s',
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'table' => [
         'field' => 'Field',
         'old' => 'Old',
@@ -23,9 +29,12 @@ return [
         'restore' => 'Restore',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'events' => [
         'updated' => 'Updated',
         'created' => 'Created',
@@ -35,6 +44,9 @@ return [
         'restore_failed' => 'Restore failed',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'modified' => 'Modified',
     'fields_modified' => ':count field modified|:count fields modified',
     'anonymous' => 'Anonymous User',
@@ -51,10 +63,13 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 
     'modified' => 'Modified',
     'fields_modified' => ':count field modified|:count fields modified',
     'anonymous' => 'Anonymous User',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -271,6 +271,7 @@ php artisan user:benchmark  # Target: < 100ms
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Analisi Moduli Globale](../../../project_docs/modules_analysis_and_optimization.md)
 - [Linee Guida Riusabilità](../../../project_docs/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
@@ -279,6 +280,12 @@ php artisan user:benchmark  # Target: < 100ms
 =======
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Analisi Moduli Globale](../../../../docs/project/modules_analysis_and_optimization.md)
+- [Linee Guida Riusabilità](../../../../docs/project/module_reusability_guidelines.md)
+- [Best Practices User](best-practices/)
+
+>>>>>>> dev
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -552,6 +559,7 @@ php artisan user:benchmark  # Target: < 100ms
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
 - [Linee Guida Riusabilità](../../../docs/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
@@ -560,3 +568,9 @@ php artisan user:benchmark  # Target: < 100ms
 =======
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
+- [Linee Guida Riusabilità](../../../../docs/module_reusability_guidelines.md)
+- [Best Practices User](best-practices/)
+
+>>>>>>> dev

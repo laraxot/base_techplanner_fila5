@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## stato analisi phpstan
 
 - **data**: [DATE]
@@ -9,3 +10,6 @@
 - mantenere le classi base allineate ai pattern Laraxot (`XotBase*`, trait condivisi);
 - proseguire con la normalizzazione dei file in `docs/` (evitare duplicati e nomi non conformi);
 - verificare dopo ogni refactor che gli helper condivisi rispettino la tipizzazione stretta.
+=======
+https://laravel-news.com/running-phpstan-on-max-with-laravel
+>>>>>>> dev

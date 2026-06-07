@@ -4,14 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\XotBaseResource\RelationManager;
 
+<<<<<<< HEAD
 use Exception;
+=======
+>>>>>>> dev
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Support\Components\Component;
 use Filament\Tables;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\HasXotTable;
+<<<<<<< HEAD
 use Override;
+=======
+>>>>>>> dev
 
 /**
  * @property class-string<XotBaseResource> $resource
@@ -61,7 +67,11 @@ abstract class XotBaseRelationManager extends RelationManager
      *
      * @return array<string, Tables\Columns\Column>
      */
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     public function getTableColumns(): array
     {
         return [];
@@ -105,7 +115,11 @@ abstract class XotBaseRelationManager extends RelationManager
         // Use static property if available
         if (isset(static::$resource) && is_string(static::$resource)) {
             if (is_subclass_of(static::$resource, XotBaseResource::class)) {
+<<<<<<< HEAD
                 /** @var class-string<XotBaseResource> */
+=======
+                /* @var class-string<XotBaseResource> */
+>>>>>>> dev
                 return static::$resource;
             }
         }
@@ -124,6 +138,7 @@ abstract class XotBaseRelationManager extends RelationManager
         $resourceClass = $ns.$resourceName;
 
         if (! class_exists($resourceClass)) {
+<<<<<<< HEAD
             throw new Exception("Cannot find resource class {$resourceClass}");
         }
 
@@ -132,6 +147,16 @@ abstract class XotBaseRelationManager extends RelationManager
         }
 
         /** @var class-string<XotBaseResource> $resourceClass */
+=======
+            throw new \Exception("Cannot find resource class {$resourceClass}");
+        }
+
+        if (! is_subclass_of($resourceClass, XotBaseResource::class)) {
+            throw new \Exception("{$resourceClass} must extend XotBaseResource");
+        }
+
+        /* @var class-string<XotBaseResource> $resourceClass */
+>>>>>>> dev
         return $resourceClass;
     }
 }

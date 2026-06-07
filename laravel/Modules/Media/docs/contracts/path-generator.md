@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PathGenerator Interface
 
 ## Descrizione
@@ -45,3 +46,12 @@ Questa interfaccia definisce il contratto per la generazione dei percorsi dei fi
 - Aggiornare la documentazione quando si modificano i metodi
 - Verificare che tutte le implementazioni rispettino il contratto
 - Testare la generazione dei percorsi in diverse condizioni
+=======
+---
+module: theme
+topic: path-generator
+canonical: ../../../../Themes/docs/shared-components/path-generator-1.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/path-generator-1.md
+>>>>>>> dev

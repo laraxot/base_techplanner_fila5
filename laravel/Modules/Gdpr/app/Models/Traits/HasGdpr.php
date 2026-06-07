@@ -89,6 +89,10 @@ trait HasGdpr
      * Give consent for a specific type.
      *
      * @param array<string, mixed> $metadata
+<<<<<<< HEAD
+=======
+     * @param array<string, mixed> $metadata
+>>>>>>> dev
      */
     public function giveConsent(ConsentType|string $type, array $metadata = []): Consent
     {
@@ -140,6 +144,11 @@ trait HasGdpr
     {
         $givenConsents = $this->activeConsents()->pluck('type')->toArray();
 
+<<<<<<< HEAD
+=======
+        $givenConsents = array_map(static fn (mixed $v): string => (string) $v, $givenConsents);
+
+>>>>>>> dev
         /* @var array<string> */
         return array_diff(ConsentType::getRequiredConsentTypes(), $givenConsents);
     }

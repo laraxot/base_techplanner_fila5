@@ -59,9 +59,12 @@ $this->loadTranslationsFrom($path, 'pub_theme');
 ```bash
 php artisan tinker --execute="
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 echo 'Date: ' . trans('pub_theme::appointment.fields.date.label') . PHP_EOL;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 echo 'Time: ' . trans('pub_theme::appointment.fields.time.label') . PHP_EOL;
 "
 ```
@@ -69,9 +72,12 @@ echo 'Time: ' . trans('pub_theme::appointment.fields.time.label') . PHP_EOL;
 ### Output Atteso
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Date: Data
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 Time: Ora
 ```
 
@@ -99,11 +105,15 @@ Time: Ora
 
 ### Temi Implementati
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Themes/One/docs/pub_theme_namespace_registration.md](../../themes/one/docs/pub_theme_namespace_registration.md)
 - [Themes/Two/docs/theme-translations.md](../../themes/two/docs/theme-translations.md)
 
 ### Documentazione Base
 - [Modules/Xot/docs/theme-service-provider-rules.md](../../modules/xot/docs/theme-service-provider-rules.md)
+<<<<<<< HEAD
 =======
 - [Themes/One/docs/pub_theme_namespace_registration.md](../../Themes/One/docs/pub_theme_namespace_registration.md)
 - [Themes/Two/docs/theme-translations.md](../../Themes/Two/docs/theme-translations.md)
@@ -111,6 +121,8 @@ Time: Ora
 ### Documentazione Base
 - [Modules/Xot/docs/theme-service-provider-rules.md](../../Modules/Xot/docs/theme-service-provider-rules.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 - [docs/frontend/widget-view-namespaces.md](widget-view-namespaces.md)
 
 ## Risoluzione Problemi
@@ -127,6 +139,9 @@ Time: Ora
 3. Pulire cache traduzioni: `php artisan config:clear`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Standard Laraxot - Ultimo aggiornamento: 2025-08-07*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

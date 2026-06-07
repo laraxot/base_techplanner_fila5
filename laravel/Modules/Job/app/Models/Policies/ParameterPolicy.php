@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Models\Policies;
 
+<<<<<<< HEAD
 use Modules\Job\Models\Parameter;
 use Modules\Xot\Contracts\UserContract;
 
@@ -65,3 +66,6 @@ class ParameterPolicy extends JobBasePolicy
         return $user->hasPermissionTo('parameter.forceDelete');
     }
 }
+=======
+class ParameterPolicy extends JobBasePolicy {}
+>>>>>>> dev

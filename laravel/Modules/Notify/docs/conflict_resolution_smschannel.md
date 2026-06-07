@@ -51,6 +51,7 @@ return $action->execute($smsData);
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Notify Module Documentation](readme.md)
 - [SMS Channel Architecture](sms_channel_action_resolution.md)
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
@@ -62,3 +63,10 @@ return $action->execute($smsData);
 
 *Ultimo aggiornamento: giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Notify Module Documentation](readme.md)
+- [SMS Channel Architecture](sms_channel_action_resolution.md)
+- [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
+
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> dev

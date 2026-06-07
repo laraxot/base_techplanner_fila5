@@ -15,6 +15,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'name' => [
             'label' => 'Nome Area',
             'tooltip' => '',
@@ -45,6 +48,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         'name' => 'Nome Area',
         'parent' => 'Settore di appartenenza',
@@ -52,6 +56,8 @@ return [
         'parent_name' => 'Settore di appartenenza',
         'assets' => 'Quantità di asset',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'actions' => [
         'import' => [
@@ -70,8 +76,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Send Email Parameters',
     'plural_label' => 'Send Email Parameters (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Send Email Parameters',
+    'plural_label' => 'Send Email Parameters (Plurale)',
+>>>>>>> dev
 ];

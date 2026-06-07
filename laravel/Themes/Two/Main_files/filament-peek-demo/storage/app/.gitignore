@@ -1,3 +1,7 @@
 *
 !public/
 !.gitignore
+<<<<<<< HEAD
+=======
+_docs/
+>>>>>>> dev

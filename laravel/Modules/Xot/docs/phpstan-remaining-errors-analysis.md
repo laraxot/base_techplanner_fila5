@@ -1,10 +1,14 @@
 # PHPStan Remaining Errors Analysis
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data:** [DATE]
 =======
 **Data:** 2025-01-10
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Data:** [DATE]
+>>>>>>> dev
 **PHPStan Level:** max
 **Initial Errors:** 19,337
 **Final Errors:** 92

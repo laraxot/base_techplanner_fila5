@@ -2,7 +2,11 @@
 
 ## Overview
 
+<<<<<<< HEAD
 This module follows the project's [testing guidelines](../docs/testing.md) and uses Pest PHP as the testing framework.
+=======
+This module follows the project's [testing guidelines](../../docs/testing.md) and uses Pest PHP as the testing framework.
+>>>>>>> dev
 
 ## Test Structure
 

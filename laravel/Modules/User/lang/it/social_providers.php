@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -138,6 +141,7 @@ return [
             'label' => 'Elimina Social Providers',
         ],
     ],
+<<<<<<< HEAD
 =======
         'name' => 'Nome',
         'name.placeholder' => 'Inserisci il nome del provider',
@@ -163,4 +167,6 @@ return [
     'plural_label' => '',
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -17,6 +17,7 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 /**
  * Modules\Cms\Models\Menu.
  *
+<<<<<<< HEAD
  * @property string                $id
  * @property string|null           $title
  * @property int|null              $parent_id
@@ -32,6 +33,39 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
  * @property int                   $depth
  * @property string                $path
  * @property Collection<int, Menu> $ancestors      The model's recursive parents.
+=======
+ * @property string                 $id
+ * @property string|null            $title
+ * @property array<int, mixed>|null $items
+ * @property int|null               $parent_id
+ * @property string|null            $created_at
+ * @property string|null            $updated_at
+ * @property string|null            $created_by
+ * @property string|null            $updated_by
+ * @property Collection<int, Menu>  $children
+ * @property int|null               $children_count
+ * @property ProfileContract|null   $creator
+ * @property Menu|null              $parent
+ * @property ProfileContract|null   $updater
+ * @property int                    $depth
+ * @property string                 $path
+ * @property Collection<int, Menu>  $ancestors      The model's recursive parents.
+ * @property string                 $id
+ * @property string|null            $title
+ * @property int|null               $parent_id
+ * @property string|null            $created_at
+ * @property string|null            $updated_at
+ * @property string|null            $created_by
+ * @property string|null            $updated_by
+ * @property Collection<int, Menu>  $children
+ * @property int|null               $children_count
+ * @property ProfileContract|null   $creator
+ * @property Menu|null              $parent
+ * @property ProfileContract|null   $updater
+ * @property int                    $depth
+ * @property string                 $path
+ * @property Collection<int, Menu>  $ancestors      The model's recursive parents.
+>>>>>>> dev
  * @property-read int|null $ancestors_count
  * @property-read Collection<int, Menu> $ancestorsAndSelf The model's recursive parents and itself.
  * @property-read int|null $ancestors_and_self_count
@@ -144,7 +178,12 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
  *
  * @property ProfileContract|null $deleter
  *
+<<<<<<< HEAD
  * @method static MenuFactory factory($count = null, $state = [])
+=======
+ * @method static MenuFactory                      factory($count = null, $state = [])
+ * @method        array<int, array<string, mixed>> getSushiRows()
+>>>>>>> dev
  *
  * @mixin \Eloquent
  */
@@ -160,7 +199,12 @@ class Menu extends BaseModel implements HasRecursiveRelationshipsContract
         'parent_id',
     ];
 
+<<<<<<< HEAD
     protected array $schema = [
+=======
+    /** @var array<string, string> */
+    protected $schema = [
+>>>>>>> dev
         'id' => 'integer',
         'title' => 'string',
         'parent_id' => 'integer',

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MCP Server Consigliati per il Modulo Media
 
 ## Scopo del Modulo
@@ -21,3 +22,12 @@ Gestione media, upload, conversioni e streaming.
 
 ## Note
 - Personalizza la configurazione per esigenze di streaming o CDN.
+=======
+---
+module: theme
+topic: mcp-server-recommended-1
+canonical: ../../../Themes/docs/shared-components/mcp-server-recommended-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/mcp-server-recommended-1.md
+>>>>>>> dev

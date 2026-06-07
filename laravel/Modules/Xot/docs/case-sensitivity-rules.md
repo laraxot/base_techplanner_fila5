@@ -194,9 +194,13 @@ EOF
 ## Update Log
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **[DATE]**: Initial documentation and cleanup
 =======
 - **2025-11-04**: Initial documentation and cleanup
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **[DATE]**: Initial documentation and cleanup
+>>>>>>> dev
   - Removed: `metatagdatatest.php`, `pest.php`, `xotbasecontroller.php`, `pt_br/`
   - Established rules and conventions

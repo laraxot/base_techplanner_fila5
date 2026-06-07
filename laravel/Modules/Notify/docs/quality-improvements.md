@@ -2,10 +2,14 @@
 
 ## Data
 <<<<<<< HEAD
+<<<<<<< HEAD
 [DATE]
 =======
 2025-01-06
 >>>>>>> 4b6b99016 (first commit)
+=======
+2025-01-06
+>>>>>>> dev
 
 ## Obiettivo
 Migliorare sistematicamente la qualità del codice del modulo Notify utilizzando strumenti di analisi statica e refactoring automatico.
@@ -173,6 +177,10 @@ Tutti i pattern di correzione sono documentati in:
 - [Index](./index.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> dev

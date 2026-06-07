@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "name": "laraxot/theme_sixteen_fila3",
+=======
+    "name": "laraxot/theme_sixteen_fila5",
+>>>>>>> dev
     "description": "Sixteen theme for Laraxot projects (AGID-compliant, Tailwind-based)",
     "keywords": [
         "laraxot",
@@ -9,6 +13,7 @@
         "Laravel",
         "Ticket module"
     ],
+<<<<<<< HEAD
     "homepage": "https://github.com/laraxot/theme_sixteen_fila3",
     "license": "MIT",
     "require": {
@@ -31,6 +36,19 @@
         "filament/notifications": "^4.0",
         "filament/infolists": "^4.0"
 >>>>>>> 4b6b99016 (first commit)
+=======
+    "homepage": "https://github.com/laraxot/theme_sixteen_fila5",
+    "license": "MIT",
+    "require": {
+        "filament/filament": "^5.0",
+        "filament/support": "^5.0",
+        "filament/forms": "^5.0",
+        "filament/tables": "^5.0",
+        "filament/actions": "^5.0",
+        "filament/widgets": "^5.0",
+        "filament/notifications": "^5.0",
+        "filament/infolists": "^5.0"
+>>>>>>> dev
     },
     "authors": [
         {
@@ -49,7 +67,11 @@
     },
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
             "Themes\\Sixteen\\": ""
+=======
+            "Themes\\Sixteen\\": "app/"
+>>>>>>> dev
         }
     },
     "autoload-dev": {
@@ -67,6 +89,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
+<<<<<<< HEAD
         "orchestra/testbench": "^9.4"
+=======
+        "orchestra/testbench": "*"
+>>>>>>> dev
     }
 }

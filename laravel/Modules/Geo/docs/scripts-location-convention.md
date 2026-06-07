@@ -156,6 +156,7 @@ find ./bashscripts ./Modules/*/bashscripts ./docker -name "*.sh" -type f
 
 **Questa convenzione è OBBLIGATORIA per tutti gli script del progetto.**
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 # Convenzione Posizione Script
@@ -316,3 +317,6 @@ find ./bashscripts ./Modules/*/bashscripts ./docker -name "*.sh" -type f
 
 **Questa convenzione è OBBLIGATORIA per tutti gli script del progetto.**
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

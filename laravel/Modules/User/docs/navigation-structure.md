@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura Navigazione
 
 ## Overview
@@ -148,3 +149,12 @@ Event::dispatch('user.action', [
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md) 
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: navigation-structure
+canonical: ../../../Themes/docs/shared-components/navigation-structure.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/navigation-structure.md
+>>>>>>> dev

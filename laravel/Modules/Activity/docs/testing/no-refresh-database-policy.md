@@ -464,6 +464,7 @@ fi
 
 ### Documentazione Ufficiale
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Testing Strategy](../../xot/docs/testing-strategy.md) - **Strategia testing approvata**
 - [Testing Best Practices](../../xot/docs/testing-best-practices.md)
 - [Real Data vs Mock Testing](../../xot/docs/archive/testing/real-data-vs-mock-testing-strategy.md)
@@ -472,6 +473,11 @@ fi
 - [Testing Best Practices](../../Xot/docs/testing-best-practices.md)
 - [Real Data vs Mock Testing](../../Xot/docs/archive/testing/real-data-vs-mock-testing-strategy.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Testing Strategy](../../xot/docs/testing-strategy.md) - **Strategia testing approvata**
+- [Testing Best Practices](../../xot/docs/testing-best-practices.md)
+- [Real Data vs Mock Testing](../../xot/docs/testing/real-data-vs-mock-testing-strategy.md)
+>>>>>>> dev
 
 ### Test Esempi
 - [SnapshotBusinessLogicTest](../tests/Feature/SnapshotBusinessLogicTest.php) - Esempio corretto

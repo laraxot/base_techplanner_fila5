@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Stato dell'Implementazione delle Traduzioni nel Modulo Notify
 
 ## Panoramica
@@ -131,3 +132,8 @@ Per garantire la coerenza futura, si raccomanda di:
 - [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+# Translations Implementation Status
+
+Current status of translation implementation across the module.
+>>>>>>> dev

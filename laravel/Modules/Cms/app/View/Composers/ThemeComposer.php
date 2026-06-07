@@ -16,7 +16,11 @@ class ThemeComposer
     /**
      * Get menu items by name.
      *
+<<<<<<< HEAD
      * @return array<string, mixed>|null
+=======
+     * @return array<int|string, mixed>|null
+>>>>>>> dev
      */
     public function getMenu(string $menu_name): ?array
     {
@@ -131,16 +135,28 @@ class ThemeComposer
         return $blocksComponent->render();
     }
     */
+<<<<<<< HEAD
     public function getPages(): Collection
     {
         /* @var Collection<int, Page> $pages */
+=======
+    /**
+     * @return Collection<int, Page>
+     */
+    public function getPages(): Collection
+    {
+>>>>>>> dev
         return Page::all();
     }
 
     public function getPageModel(string $slug): ?Page
     {
+<<<<<<< HEAD
         /* @var Page|null $page */
         return Page::where('slug', $slug)->first();
+=======
+        return Page::findUniqueBySlug($slug);
+>>>>>>> dev
     }
 
     public function getUrlPage(string $slug): string
@@ -148,10 +164,14 @@ class ThemeComposer
         $page = $this->getPageModel($slug);
         if ($page instanceof Page) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return '/'.app()->getLocale().'/'.$slug;
 =======
             return '/'.app()->getLocale().'/pages/'.$slug;
 >>>>>>> 4b6b99016 (first commit)
+=======
+            return '/'.app()->getLocale().'/'.$slug;
+>>>>>>> dev
         }
 
         return '#';

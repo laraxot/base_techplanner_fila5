@@ -41,6 +41,9 @@ return [
         'region_province_required_for_cap' => 'Devi selezionare regione e provincia prima di scegliere il CAP',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Location Selector',
     'plural_label' => 'Location Selector (Plurale)',
     'navigation' => [
@@ -85,6 +88,9 @@ return [
             'label' => 'Elimina Location Selector',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

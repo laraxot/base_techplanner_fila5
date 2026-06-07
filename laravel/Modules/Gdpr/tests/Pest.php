@@ -3,6 +3,10 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Illuminate\Testing\TestResponse;
+>>>>>>> dev
 use Modules\Gdpr\Tests\TestCase;
 
 /*
@@ -24,7 +28,11 @@ uses(TestCase::class)->in(__DIR__);
 */
 
 expect()->extend('toBeRedirectedTo', function ($expected) {
+<<<<<<< HEAD
     return function (Illuminate\Testing\TestResponse $response) use ($expected) {
+=======
+    return function (TestResponse $response) use ($expected) {
+>>>>>>> dev
         return $response->assertRedirect($expected);
     };
 });
@@ -43,6 +51,7 @@ beforeEach(function () {
 afterEach(function () {
     // DatabaseTransactions trait handles rollback automatically
 });
+<<<<<<< HEAD
 =======
 use Modules\Gdpr\Models\GdprConsent;
 use Modules\Gdpr\Models\GdprRequest;
@@ -107,3 +116,5 @@ function makeGdprRequest(array $attributes = []): GdprRequest
     return GdprRequest::factory()->make($attributes);
 }
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

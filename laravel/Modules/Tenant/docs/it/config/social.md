@@ -27,12 +27,17 @@ return [
 
 ## Collegamenti tra versioni di social.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [social.md](../../../tenant/docs/it/config/social.md)
 * [social.md](../../../cms/docs/blocks/social.md)
 =======
 * [social.md](../../../Tenant/docs/it/config/social.md)
 * [social.md](../../../Cms/docs/blocks/social.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [social.md](../../../tenant/docs/it/config/social.md)
+* [social.md](../../../cms/docs/blocks/social.md)
+>>>>>>> dev
 
 ### Versione Incoming
 

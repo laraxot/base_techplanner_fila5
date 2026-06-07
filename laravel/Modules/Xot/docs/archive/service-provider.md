@@ -60,10 +60,14 @@ public function registerTranslations(): void
 - Questa regola va rispettata anche da tutte le classi che estendono il provider
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](./conflitti_merge_risolti.md)
 =======
 **Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](./CONFLITTI_MERGE_RISOLTI.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](./conflitti_merge_risolti.md)
+>>>>>>> dev
 
 ## Esempio di Override Sicuro
 ```php
@@ -85,12 +89,16 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 
 ## Collegamenti e Backlink
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [COMPONENTI_PERSONALIZZATI.md](./componenti_personalizzati.md) — Regole e path per Blade components modulari
 - [CONFLITTI_MERGE_RISOLTI.md](./conflitti_merge_risolti.md) — Tracciamento conflitti risolti su ServiceProvider
 - [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md) — Standardizzazione metodi colonne Filament
 
 ---
 
+<<<<<<< HEAD
 =======
 - [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md) — Regole e path per Blade components modulari
 - [CONFLITTI_MERGE_RISOLTI.md](./CONFLITTI_MERGE_RISOLTI.md) — Tracciamento conflitti risolti su ServiceProvider
@@ -100,5 +108,7 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 
 **Ultimo aggiornamento:** 2025-05-13
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 **Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.

@@ -19,7 +19,11 @@ Based on the latest analysis:
 ### Common Error Types
 
 #### 1. Class Not Found Errors (15%)
+<<<<<<< HEAD
 - Missing classes from Modules\<main module>\Models namespace
+=======
+- Missing classes from Modules\ModuloEsempio\Models namespace (docs: replace project-specific references with generic placeholders across documentation)
+>>>>>>> dev
 - Missing traits (EnumTrait from Modules\Core\Traits)
 - Undefined classes in factories
 
@@ -66,11 +70,19 @@ Based on the latest analysis:
 
 ### Notify Module
 **Key Issues**:
+<<<<<<< HEAD
 - Missing <main module> model classes
 - String function parameter type issues
 - Method not found errors on models
 
 ### Predict Module
+=======
+- Missing ModuloEsempio model classes (docs: replace project-specific references with generic placeholders across documentation)
+- String function parameter type issues
+- Method not found errors on models
+
+### <nome progetto> Module
+>>>>>>> dev
 **Key Issues**:
 - Mixed type operations in price calculations
 - Property access on nullable objects
@@ -89,7 +101,11 @@ Based on the latest analysis:
 **Solution**:
 ```php
 // Use class_exists checks before referencing
+<<<<<<< HEAD
 if (!class_exists('Modules\\<main module>\\Models\\Appointment')) {
+=======
+if (!class_exists('Modules\\ModuloEsempio\\Models\\Appointment')) { (docs: replace project-specific references with generic placeholders across documentation)
+>>>>>>> dev
     // Handle missing class gracefully
     throw new \Exception('Required class not available');
 }
@@ -185,7 +201,11 @@ vendor/bin/phpstan analyse --generate-baseline
 ## Remaining Issues Requiring Manual Intervention
 
 ### High Priority
+<<<<<<< HEAD
 1. **Missing <main module> Models**: Classes referenced but not available
+=======
+1. **Missing ModuloEsempio Models**: Classes referenced but not available (docs: replace project-specific references with generic placeholders across documentation)
+>>>>>>> dev
 2. **Cross-Module Dependencies**: Tight coupling between modules
 3. **Factory Configuration**: Incorrect model references in factories
 
@@ -228,6 +248,7 @@ This analysis reveals several patterns of type-related issues across the codebas
 1. Address high-priority missing class dependencies
 2. Implement proper type declarations across all modules
 3. Establish clear dependency management guidelines
+<<<<<<< HEAD
 4. Regular PHPStan analysis as part of CI/CD pipeline
 # PHPStan Analysis Summary - Comprehensive Error Report
 
@@ -460,3 +481,6 @@ This analysis reveals several patterns of type-related issues across the codebas
 2. Implement proper type declarations across all modules
 3. Establish clear dependency management guidelines
 4. Regular PHPStan analysis as part of CI/CD pipeline
+=======
+4. Regular PHPStan analysis as part of CI/CD pipeline
+>>>>>>> dev

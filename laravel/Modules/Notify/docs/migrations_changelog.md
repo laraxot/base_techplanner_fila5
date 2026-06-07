@@ -30,6 +30,7 @@
 
 ### Collegamenti Correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Proposta Slug](./spatie_email_slug_proposal.md)
 - [Sistema Template Email](./email_templates.md)
 - [Email Dottori](./doctor_emails.md) 
@@ -38,3 +39,8 @@
 - [Sistema Template Email](./EMAIL_TEMPLATES.md)
 - [Email Dottori](./DOCTOR_EMAILS.md) 
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Proposta Slug](./spatie_email_slug_proposal.md)
+- [Sistema Template Email](./email_templates.md)
+- [Email Dottori](./doctor_emails.md) 
+>>>>>>> dev

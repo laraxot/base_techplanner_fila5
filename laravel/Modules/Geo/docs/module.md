@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modulo Geo - Geolocalizzazione e Mappe
 
 ## Scopo Principale
@@ -340,3 +341,12 @@ $contained = SpatialQueryService::withinPolygon($polygon);
 
 **Versione**: v1.8.0-beta  
 **Stato**: Production Ready with Real-time Enhancement
+=======
+---
+module: theme
+topic: module
+canonical: ../../../Themes/docs/shared-components/module-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/module-analysis.md
+>>>>>>> dev

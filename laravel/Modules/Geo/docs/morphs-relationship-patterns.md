@@ -39,10 +39,14 @@ Laravel offre diverse varianti di metodi per creare campi polimorfici:
 Nel nostro caso specifico:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Uso di `model` invece di `addressable`**: 
 =======
 1. **Uso di `model` invece di `addressable`**:
 >>>>>>> 4b6b99016 (first commit)
+=======
+1. **Uso di `model` invece di `addressable`**: 
+>>>>>>> dev
    - Mantiene la coerenza con altre parti del sistema
    - Riflette una terminologia più generale e neutrale
    - Si allinea con le convenzioni di naming esistenti nel progetto
@@ -72,10 +76,14 @@ $this->updateTimestamps($table, true); // Nella sezione tableUpdate
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo codice crea una duplicazione: 
 =======
 Questo codice crea una duplicazione:
 >>>>>>> 4b6b99016 (first commit)
+=======
+Questo codice crea una duplicazione: 
+>>>>>>> dev
 1. `$table->timestamps()` crea le colonne `created_at` e `updated_at`
 2. `$this->updateTimestamps($table, true)` tenta di creare nuovamente queste colonne, più `deleted_at`
 

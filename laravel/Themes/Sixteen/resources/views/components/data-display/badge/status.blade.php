@@ -23,7 +23,11 @@
     
     // Get color class and label from enum
     $colorClass = $status->getColorClass();
+<<<<<<< HEAD
     $label = $status->label();
+=======
+    $label = $status->getLabel();
+>>>>>>> dev
     
     // Map badge-* classes to bg-* classes for Bootstrap Italia
     $variant = match(true) {

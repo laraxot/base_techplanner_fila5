@@ -18,4 +18,8 @@ Rimuovere residui di conflitti Git (`<<<<<<<`, `=======`, `>>>>>>>`) da tutti i 
 - [ ] Verificare che i link interni continuino a funzionare.
 
 ## 🔗 Riferimenti
+<<<<<<< HEAD
 - [Roadmap User](../roadmap.md)
+=======
+- [Roadmap User](../roadmap.md)
+>>>>>>> dev

@@ -22,10 +22,14 @@ laravel/Modules/Cms/
 ### Tipi di Blocchi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **[NavigationBlock](../laravel/modules/cms/docs/blocks/navigation-block.md)**
 =======
 1. **[NavigationBlock](../laravel/Modules/Cms/docs/blocks/navigation-block.md)**
 >>>>>>> 4b6b99016 (first commit)
+=======
+1. **[NavigationBlock](../laravel/modules/cms/docs/blocks/navigation-block.md)**
+>>>>>>> dev
    - Gestione menu di navigazione
    - Header e footer
    - Menu multilivello
@@ -130,6 +134,7 @@ laravel/Modules/Cms/
 ### Tipi di Blocchi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **[NavigationBlock](../laravel/modules/cms/project_docs/blocks/navigation-block.md)**
 1. **[NavigationBlock](../laravel/modules/cms/project_docs/blocks/navigation-block.md)**
 1. **[NavigationBlock](../laravel/modules/cms/project_docs/blocks/navigation-block.md)**
@@ -138,6 +143,11 @@ laravel/Modules/Cms/
 1. **[NavigationBlock](../laravel/Modules/Cms/project_docs/blocks/navigation-block.md)**
 1. **[NavigationBlock](../laravel/Modules/Cms/project_docs/blocks/navigation-block.md)**
 >>>>>>> 4b6b99016 (first commit)
+=======
+1. **[NavigationBlock](../laravel/modules/cms/project_docs/blocks/navigation-block.md)**
+1. **[NavigationBlock](../laravel/modules/cms/project_docs/blocks/navigation-block.md)**
+1. **[NavigationBlock](../laravel/modules/cms/project_docs/blocks/navigation-block.md)**
+>>>>>>> dev
    - Gestione menu di navigazione
    - Header e footer
    - Menu multilivello

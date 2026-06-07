@@ -1,9 +1,12 @@
 # Correzione Sintassi Obsoleta Array() - Modulo Geo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 6 Gennaio 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Priorità**: ALTA
 **Stato**: ✅ RISOLTO
 
@@ -118,12 +121,17 @@ php -l laravel/Modules/Geo/lang/it/address.php
 
 - [Address Translation Fixes](address-translation-fixes.md) - Correzioni traduzioni address
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README Modulo Geo](readme.md) - Documentazione principale
 - [Translation Standards](../../lang/docs/translation-helper-text-standards.md) - Standard traduzioni
 =======
 - [README Modulo Geo](README.md) - Documentazione principale
 - [Translation Standards](../../Lang/docs/translation-helper-text-standards.md) - Standard traduzioni
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [README Modulo Geo](readme.md) - Documentazione principale
+- [Translation Standards](../../lang/docs/translation-helper-text-standards.md) - Standard traduzioni
+>>>>>>> dev
 
 ## 🎯 Lezioni Apprese
 
@@ -141,8 +149,11 @@ php -l laravel/Modules/Geo/lang/it/address.php
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: 6 Gennaio 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Autore**: AI Assistant
 **Stato**: ✅ COMPLETATO

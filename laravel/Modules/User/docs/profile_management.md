@@ -65,11 +65,15 @@ This document outlines the best practices for managing user profiles within a La
 
 ## Links to Related Documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [User Module Index](./index.md)
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth_pages_implementation.md)
 - [Routing Best Practices](./routing_best_practices.md)
 - [Session Management](./session_management.md)
+<<<<<<< HEAD
 =======
 - [User Module Index](./INDEX.md)
 - [BaseUser Model](./BaseUser.md)
@@ -77,3 +81,5 @@ This document outlines the best practices for managing user profiles within a La
 - [Routing Best Practices](./ROUTING_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

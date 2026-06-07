@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Separazione dello Schema dagli Step nei Wizard Filament
 
 ## Regola Fondamentale
@@ -98,3 +99,12 @@ I nomi dei metodi come `getPrivacyStepSchema()` documentano chiaramente lo scopo
 - [Wizard Step Naming](../filament/wizard-step-naming.md)
 - [Best Practices per i Wizard](../filament/wizard-best-practices.md)
 - [Errori Comuni nei Componenti Filament](../filament-components-errors.md)
+=======
+---
+module: theme
+topic: wizard-schema-separation
+canonical: ../../../../Themes/docs/shared-components/wizard-schema-aration.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/wizard-schema-aration.md
+>>>>>>> dev

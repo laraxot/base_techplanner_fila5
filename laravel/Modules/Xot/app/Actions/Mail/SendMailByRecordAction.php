@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Mail;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use InvalidArgumentException;
+=======
+>>>>>>> dev
 use Modules\Notify\Datas\EmailData;
 use Modules\Notify\Datas\SmtpData;
 use Modules\Xot\Actions\Export\PdfByModelAction;
@@ -19,8 +22,13 @@ class SendMailByRecordAction
     /**
      * Invia una mail utilizzando un record come dati.
      *
+<<<<<<< HEAD
      * @param  Model  $record  Il record da utilizzare come dati per la mail
      * @param  string  $mailClass  La classe Mailable da utilizzare
+=======
+     * @param Model  $record    Il record da utilizzare come dati per la mail
+     * @param string $mailClass La classe Mailable da utilizzare
+>>>>>>> dev
      */
     public function execute(Model $record, string $mailClass): void
     {
@@ -38,6 +46,7 @@ class SendMailByRecordAction
 
         // Verifica che il model abbia le proprietà/metodi necessari
         if (($record->email ?? null) === null || empty($record->email)) {
+<<<<<<< HEAD
             throw new InvalidArgumentException('Model must have email property');
         }
 
@@ -50,11 +59,30 @@ class SendMailByRecordAction
         }
 
         $to = $record->email;
+=======
+            throw new \InvalidArgumentException('Model must have email property');
+        }
+
+        if (! method_exists($record, 'option')) {
+            throw new \InvalidArgumentException('Model must implement option method');
+        }
+
+        if (! method_exists($record, 'myLogs')) {
+            throw new \InvalidArgumentException('Model ['.$record::class.'] must implement myLogs method');
+        }
+
+        $to = $record->email;
+        // $to = 'marco.sottana@gmail.com'; //4 debug non cancellare
+>>>>>>> dev
         $subject = $record->option('mail_oggetto');
         $bodyHtml = $record->option('mail_testo');
 
         if (! is_string($to)) {
+<<<<<<< HEAD
             throw new InvalidArgumentException('Email must be a string');
+=======
+            throw new \InvalidArgumentException('Email must be a string');
+>>>>>>> dev
         }
         if (! is_string($subject)) {
             $subject = '';

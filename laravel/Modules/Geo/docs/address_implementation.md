@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione del Modello Address
 
 ## Panoramica
@@ -515,3 +516,12 @@ Questo modello `Address` fornisce una struttura robusta, flessibile e riutilizza
 - **Filosofia**: Un solo punto di verità, nessun path assoluto, nessun lock-in.
 - **Religione**: "Non avrai altro path all'infuori del relativo".
 - **Zen**: Serenità nella navigazione, nessun errore di path, nessun link rotto dopo un refactor.
+=======
+---
+module: theme
+topic: address_implementation
+canonical: ../../../Themes/docs/shared-components/address-implementation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/address-implementation.md
+>>>>>>> dev

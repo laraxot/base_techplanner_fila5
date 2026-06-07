@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Standard di Traduzione - Documentazione Root
 
 ## Panoramica
@@ -285,3 +286,12 @@ return [
 =======
 *Ultimo aggiornamento: Giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: translation-standards
+canonical: ../../../../Themes/docs/shared-components/translation-standards-Modules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/translation-standards-Modules.md
+>>>>>>> dev

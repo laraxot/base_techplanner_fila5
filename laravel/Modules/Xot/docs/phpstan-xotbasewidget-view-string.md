@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Fix Roadmap - XotBaseWidget View-String Error
 
 **Status**: ✅ Completato
@@ -97,3 +98,12 @@ private function resolveView(): void
 
 **Ultimo aggiornamento**: [DATE]
 **Versione**: 1.0.0
+=======
+---
+module: theme
+topic: phpstan-xotbasewidget-view-string
+canonical: ../../../Themes/docs/shared-components/phpstan-xotbasewidget-view-string-fix-roadmap.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-xotbasewidget-view-string-fix-roadmap.md
+>>>>>>> dev

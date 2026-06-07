@@ -1,5 +1,8 @@
 import { defineConfig } from 'vite'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 import laravel from 'laravel-vite-plugin'
 import tailwindcss from '@tailwindcss/vite'
 
@@ -18,6 +21,7 @@ export default defineConfig({
         tailwindcss(),
     ],
 })
+<<<<<<< HEAD
 =======
 import laravel, { refreshPaths } from 'laravel-vite-plugin'
 //import laravel from 'laravel-vite-plugin';
@@ -60,4 +64,6 @@ export default defineConfig({
 	],
 });
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 

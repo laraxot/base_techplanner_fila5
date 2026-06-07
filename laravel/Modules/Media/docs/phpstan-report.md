@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Report PHPStan - Modulo Media
 
 ## Stato Attuale
@@ -69,3 +70,12 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Media. Questo Ã
    - Monitorare l'utilizzo dello storage
 
 ---
+=======
+---
+module: theme
+topic: phpstan-report
+canonical: ../../../Themes/docs/shared-components/phpstan-report-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-report-1.md
+>>>>>>> dev

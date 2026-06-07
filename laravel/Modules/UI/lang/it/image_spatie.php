@@ -10,9 +10,13 @@ return [
             'helper_text' => 'caption',
             'placeholder' => 'caption',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'image' => [
             'label' => 'image',
@@ -20,9 +24,13 @@ return [
             'helper_text' => 'image',
             'placeholder' => 'image',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'img_uuid' => [
             'label' => 'img_uuid',
@@ -30,6 +38,9 @@ return [
             'helper_text' => 'img_uuid',
             'placeholder' => 'img_uuid',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -55,8 +66,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Image Spatie',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

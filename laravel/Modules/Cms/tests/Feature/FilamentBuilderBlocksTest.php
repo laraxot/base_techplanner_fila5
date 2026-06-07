@@ -4,19 +4,26 @@ declare(strict_types=1);
 
 namespace Modules\Cms\Tests\Feature;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\Builder\Block;
+=======
+>>>>>>> dev
 use Modules\Cms\Tests\TestCase;
 use Modules\UI\Actions\Block\GetAllBlocksAction;
 use Modules\UI\View\Components\Render\Blocks;
 
 use function Pest\Laravel\get;
+<<<<<<< HEAD
 use function Safe\file_get_contents;
 use function Safe\json_decode;
+=======
+>>>>>>> dev
 
 use Spatie\LaravelData\DataCollection;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 describe('Filament Builder Blocks System', function () {
     test('blocks discovery system finds all available blocks', function () {
         $allBlocks = app(GetAllBlocksAction::class)->execute();
@@ -373,3 +380,41 @@ describe('Filament Builder Blocks System', function () {
         $this->assertLessThan(2.0, $renderTime, 'Page rendering should be reasonably fast');
     });
 });
+=======
+test('blocks discovery returns a data collection', function (): void {
+    $allBlocks = app(GetAllBlocksAction::class)->execute();
+
+    expect($allBlocks)->toBeInstanceOf(DataCollection::class);
+});
+
+test('blocks component class exists and can be instantiated', function (): void {
+    expect(class_exists(Blocks::class))->toBeTrue();
+
+    $component = new Blocks('ui::components.render.blocks', []);
+
+    expect($component)->toBeInstanceOf(Blocks::class)
+        ->and($component->blocks)->toBeArray()
+        ->and($component->view)->toBe('ui::components.render.blocks');
+});
+
+test('discovered blocks expose the expected metadata keys', function (): void {
+    $allBlocks = app(GetAllBlocksAction::class)->execute();
+
+    $allBlocks->each(function (mixed $block): void {
+        if (! method_exists($block, 'toArray')) {
+            return;
+        }
+
+        /** @var array<string, mixed> $blockArray */
+        $blockArray = $block->toArray();
+
+        expect($blockArray)->toHaveKeys(['name', 'class', 'module', 'path']);
+    });
+});
+
+test('homepage request is reachable when route is available', function (): void {
+    $response = get('/');
+
+    expect($response->status())->toBeInt();
+});
+>>>>>>> dev

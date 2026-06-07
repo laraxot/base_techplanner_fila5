@@ -86,6 +86,9 @@
 
 ### Documentazione Moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [**<nome progetto>**](../modules/<nome progetto>/docs/readme.md) - Documentazione modulo core sanitario
 - [**<nome progetto>**](../modules/<nome progetto>/docs/readme.md) - Documentazione modulo core sanitario
 - [**User**](../modules/user/docs/readme.md) - Documentazione modulo gestione utenti
@@ -93,6 +96,7 @@
 - [**Media**](../modules/media/docs/readme.md) - Documentazione modulo gestione media
 - [**UI**](../modules/ui/docs/readme.md) - Documentazione modulo componenti UI
 - [**Xot**](../modules/xot/docs/readme.md) - Documentazione modulo base
+<<<<<<< HEAD
 =======
 - [**<nome progetto>**](../Modules/<nome progetto>/docs/README.md) - Documentazione modulo core sanitario
 - [**<nome progetto>**](../Modules/<nome progetto>/docs/README.md) - Documentazione modulo core sanitario
@@ -102,6 +106,24 @@
 - [**UI**](../Modules/UI/docs/README.md) - Documentazione modulo componenti UI
 - [**Xot**](../Modules/Xot/docs/README.md) - Documentazione modulo base
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+## 🗺️ Geo Filament Components
+
+### Filosofia e Regole
+- [**Filament Geo Pickers Philosophy**](filament-geo-pickers-philosophy.md) - Filosofia, visione e regole per i componenti Geo picker
+- [**Map Picker Prompt**](/prompts/map-picker.txt) - Prompt per implementazione MapPicker
+
+### Pickers Components
+- CoordinatePicker - Il maestro Zen
+- MapPicker / LocationPicker - Alias backward-compatible
+- LatitudeLongitudeInput - Le viscere grezze
+- PlacePicker - La guida al specifico
+- MapPositioner - Il righello di prospettiva
+- MapLocationInput - Input nascosto sincronizzato
+- LeafletMarkerMapInput - L'amarker con memoria
+- GeopointPicker - Il punto geografico puro
+>>>>>>> dev
 
 ## 📋 Convenzioni e Standard
 
@@ -112,9 +134,12 @@
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: Gennaio 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Versione**: 3.0
 **Autore**: AI Assistant
 **Stato**: Consolidata e Aggiornata

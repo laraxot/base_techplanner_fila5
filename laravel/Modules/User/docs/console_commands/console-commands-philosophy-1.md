@@ -439,7 +439,11 @@ private function getPasswordLegacy(): string
 ```
 
 ## Collegamenti
+<<<<<<< HEAD
 - [README Comandi Console](README.md)
+=======
+- [README Comandi Console](readme.md)
+>>>>>>> dev
 - [ChangePasswordCommand](change-password-command.md)
 - [AssignModuleCommand](assign-module-command.md)
 - [Testing Strategy](../testing/console-commands-testing.md)

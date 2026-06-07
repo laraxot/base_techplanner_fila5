@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // use Laravel\Passport\AccessToken as PassportAccessToken;
 >>>>>>> 4b6b99016 (first commit)
@@ -113,4 +114,15 @@ class OauthToken extends PassportToken
 
     // protected $fillable = ['id', 'user_id', 'client_id', 'name', 'scopes', 'revoked', 'expires_at'];
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Laravel\Passport\Token as PassportToken;
+
+/**
+ * @property bool            $revoked
+ * @property int|string|null $user_id
+ */
+class OauthToken extends PassportToken
+{
+    protected $connection = 'user';
+>>>>>>> dev
 }

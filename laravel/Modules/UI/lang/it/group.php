@@ -7,6 +7,9 @@ return [
         'lavoratore' => [
             'label' => 'lavoratore',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -76,6 +79,7 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Group',
+<<<<<<< HEAD
 =======
         ],
         'qua' => [
@@ -99,6 +103,8 @@ return [
         'motivo/invio_email' => [
             'label' => 'motivo/invio_email',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

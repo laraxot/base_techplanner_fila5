@@ -19,6 +19,9 @@ class ListTreatments extends XotBaseListRecords
             // Tables\Columns\TextColumn::make('id')
             //     ->searchable(),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'active' => IconColumn::make('active')->boolean(),
             'required' => IconColumn::make('required')->boolean(),
             'name' => TextColumn::make('name')->searchable(),
@@ -30,6 +33,7 @@ class ListTreatments extends XotBaseListRecords
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
             'updated_at' => TextColumn::make('updated_at')
+<<<<<<< HEAD
 =======
             IconColumn::make('active')->boolean(),
             IconColumn::make('required')->boolean(),
@@ -43,6 +47,8 @@ class ListTreatments extends XotBaseListRecords
                 ->toggleable(isToggledHiddenByDefault: true),
             TextColumn::make('updated_at')
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),

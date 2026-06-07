@@ -7,9 +7,13 @@ namespace Modules\Geo\Actions;
 use Illuminate\Support\Collection;
 use Modules\Geo\Actions\GoogleMaps\CalculateDistanceMatrixAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Geo\Contracts\CalculateDistanceActionContract;
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\Geo\Contracts\CalculateDistanceActionContract;
+>>>>>>> dev
 use Modules\Geo\Datas\LocationData;
 use Modules\Geo\Exceptions\DistanceCalculationException;
 
@@ -23,24 +27,34 @@ use Modules\Geo\Exceptions\DistanceCalculationException;
  *
  * @see https://developers.google.com/maps/documentation/distance-matrix
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
  *
  * @SuppressWarnings("PHPMD.StaticAccess")
  */
 final class CalculateDistanceAction implements CalculateDistanceActionContract
+<<<<<<< HEAD
 =======
  */
 readonly class CalculateDistanceAction
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 {
     /**
      * @param CalculateDistanceMatrixAction $distanceMatrixAction Servizio per il calcolo delle distanze
      */
     public function __construct(
 <<<<<<< HEAD
+<<<<<<< HEAD
         private readonly CalculateDistanceMatrixAction $distanceMatrixAction,
 =======
         private CalculateDistanceMatrixAction $distanceMatrixAction,
 >>>>>>> 4b6b99016 (first commit)
+=======
+        private readonly CalculateDistanceMatrixAction $distanceMatrixAction,
+>>>>>>> dev
     ) {
     }
 
@@ -66,6 +80,9 @@ readonly class CalculateDistanceAction
 
         try {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             $response = $this->distanceMatrixAction->execute(
                 new Collection([$origin]),
                 new Collection([$destination])
@@ -79,6 +96,7 @@ readonly class CalculateDistanceAction
             // The previous check was: empty($response) || empty($response[0]) || empty($response[0][0])
             // isset checks definition and null.
 
+<<<<<<< HEAD
 =======
             $response = $this->distanceMatrixAction->execute(new Collection([$origin]), new Collection([$destination]));
 
@@ -87,6 +105,8 @@ readonly class CalculateDistanceAction
             }
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             return $response[0][0];
         } catch (\Throwable $e) {
             throw DistanceCalculationException::calculationError('Errore nel calcolo della distanza: '.$e->getMessage(), $e);

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione del Selettore di Lingua e Dropdown Utente nell'Header
 
 ## Collegamenti correlati
@@ -284,3 +285,12 @@ Questa implementazione segue le convenzioni standard per la gestione dei contenu
 Questa implementazione segue le convenzioni di <main module> per la gestione dei contenuti statici e l'integrazione con i sistemi di autenticazione e localizzazione.
 
 Per i dettagli specifici sull'implementazione nel tema One, consultare la [documentazione del tema](/laravel/themes/one/project_docs/sections/header_language_user_dropdown.md).
+=======
+---
+module: theme
+topic: header_language_user_dropdown
+canonical: ../../../../Themes/docs/shared-components/header-language-user-dropdown.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/header-language-user-dropdown.md
+>>>>>>> dev

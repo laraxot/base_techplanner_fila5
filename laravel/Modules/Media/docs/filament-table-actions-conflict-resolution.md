@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risoluzione conflitto git su Filament Table ConvertAction
 
 ## Problema
@@ -14,3 +15,12 @@ Sono presenti marker di conflitto git nel file `app/Filament/Actions/Table/Conve
 
 ## Collegamenti
 - [Documentazione root risoluzione conflitti](../../../docs/risoluzione_conflitti_git.md#media-filament-actions-table-convertactionphp)
+=======
+---
+module: theme
+topic: filament-table-actions-conflict-resolution
+canonical: ../../../Themes/docs/shared-components/filament-table-actions-conflict-resolution-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-table-actions-conflict-resolution-1.md
+>>>>>>> dev

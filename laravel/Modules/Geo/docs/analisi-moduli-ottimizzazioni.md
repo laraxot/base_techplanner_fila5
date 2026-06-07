@@ -226,6 +226,9 @@ class ModuleMetricsService
 
 ### Moduli Base
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Xot - Core Framework](../laravel/modules/xot/docs/ottimizzazioni-e-miglioramenti.md)
 - [User - Authentication](../laravel/modules/user/docs/ottimizzazioni-e-miglioramenti.md)
 - [Geo - Geographic Data](../laravel/modules/geo/docs/ottimizzazioni-e-miglioramenti.md)
@@ -246,6 +249,7 @@ class ModuleMetricsService
 - [<nome modulo> - Mobile Features](../laravel/modules/<nome modulo>/docs/ottimizzazioni-e-miglioramenti.md)
 - [<nome progetto> - Main Healthcare](../laravel/modules/<nome progetto>/docs/ottimizzazioni-e-miglioramenti.md)
 - [<nome progetto> - Mobile Features](../laravel/modules/<nome progetto>/docs/ottimizzazioni-e-miglioramenti.md)
+<<<<<<< HEAD
 =======
 - [Xot - Core Framework](../laravel/Modules/Xot/docs/ottimizzazioni-e-miglioramenti.md)
 - [User - Authentication](../laravel/Modules/User/docs/ottimizzazioni-e-miglioramenti.md)
@@ -268,6 +272,8 @@ class ModuleMetricsService
 - [<nome progetto> - Main Healthcare](../laravel/Modules/<nome progetto>/docs/ottimizzazioni-e-miglioramenti.md)
 - [<nome progetto> - Mobile Features](../laravel/Modules/<nome progetto>/docs/ottimizzazioni-e-miglioramenti.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## 🎯 Conclusioni
 
@@ -284,8 +290,11 @@ La roadmap proposta è **incrementale** e **non disruptive**, permettendo miglio
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: Dicembre 2024
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Versione**: 1.0
 **Stato**: ✅ Analisi completa di tutti i 14 moduli

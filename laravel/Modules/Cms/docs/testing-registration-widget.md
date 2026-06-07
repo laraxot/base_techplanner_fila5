@@ -86,10 +86,14 @@ All tests should be **green** without hitting the database schema-refresh.
        });
    });
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+   
+>>>>>>> dev
    // Piuttosto che questo (può causare problemi)
    describe('RegistrationWidget', function () {
        describe('Form Interaction', function () {
@@ -169,16 +173,22 @@ All tests should be **green** without hitting the database schema-refresh.
             // Patient widget
             $patientWidget = Livewire::test(RegistrationWidget::class, ['type' => 'patient']);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             
             // Doctor widget
             $doctorWidget = Livewire::test(RegistrationWidget::class, ['type' => 'doctor']);
             
+<<<<<<< HEAD
 =======
 
             // Doctor widget
             $doctorWidget = Livewire::test(RegistrationWidget::class, ['type' => 'doctor']);
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             expect($patientWidget)->not()->toBeNull()
                 ->and($doctorWidget)->not()->toBeNull();
         });
@@ -236,7 +246,11 @@ After implementare le migliorie descritte sopra, tutti i test passano con succes
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 Last update: [DATE]
 =======
 Last update: 2025-07-06
 >>>>>>> 4b6b99016 (first commit)
+=======
+Last update: [DATE]
+>>>>>>> dev

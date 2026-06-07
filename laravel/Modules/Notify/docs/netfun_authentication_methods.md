@@ -66,11 +66,15 @@ public function send($notifiable, Notification $notification)
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Documentazione Netfun SMS Channel](./sms_netfun_channel.md)
 - [Requisiti di Configurazione Netfun](./netfun_config_requirements.md)
 
 ---
 
+<<<<<<< HEAD
 =======
 - [Documentazione Netfun SMS Channel](./SMS_NETFUN_CHANNEL.md)
 - [Requisiti di Configurazione Netfun](./NETFUN_CONFIG_REQUIREMENTS.md)
@@ -79,3 +83,6 @@ public function send($notifiable, Notification $notification)
 
 *Ultimo aggiornamento: 2025-05-12*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Ultimo aggiornamento: 2025-05-12*
+>>>>>>> dev

@@ -172,6 +172,7 @@ Il file `Modules/<nome progetto>/lang/it/profile_widget.php` conteneva:
 - [Documentazione Modulo Lang](../../laravel/Modules/Lang/docs/)
 - [Best Practices Filament](../../laravel/Modules/Xot/docs/filament/)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Standard di Qualità <nome progetto>](../../laravel/modules/<nome progetto>/docs/translation_quality_standards.md)
 
 =======
@@ -179,3 +180,8 @@ Il file `Modules/<nome progetto>/lang/it/profile_widget.php` conteneva:
 
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Standard di Qualità <nome progetto>](../../laravel/modules/<nome progetto>/docs/translation_quality_standards.md)
+
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> dev

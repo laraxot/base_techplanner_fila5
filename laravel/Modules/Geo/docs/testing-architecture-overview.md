@@ -180,6 +180,9 @@ php artisan test --filter="validates user types"
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Modulo Geo Testing](../../laravel/modules/geo/docs/testing.md)
 - [Modulo <nome modulo> Testing](../../laravel/modules/<nome modulo>/docs/testing.md)
 - [Best Practices Testing](../../laravel/modules/<nome modulo>/docs/testing-best-practices.md)
@@ -190,6 +193,7 @@ php artisan test --filter="validates user types"
 
 ---
 
+<<<<<<< HEAD
 =======
 - [Modulo Geo Testing](../../laravel/Modules/Geo/docs/testing.md)
 - [Modulo <nome modulo> Testing](../../laravel/Modules/<nome modulo>/docs/testing.md)
@@ -203,5 +207,7 @@ php artisan test --filter="validates user types"
 
 **Ultimo aggiornamento**: Gennaio 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Versione**: 1.0
 **Compatibilità**: Pest 3.x, Laravel 12.x, PHP 8.3+

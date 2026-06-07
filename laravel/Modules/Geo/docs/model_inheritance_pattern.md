@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Principio di Ereditarietà nei Modelli
 
 ## Analisi del Pattern di Ereditarietà
@@ -150,3 +151,12 @@ In essenza, estendere `BaseModel` è un atto di rispetto verso:
 - I principi di design
 - I futuri sviluppatori
 - L'armonia dell'intero sistema
+=======
+---
+module: theme
+topic: model_inheritance_pattern
+canonical: ../../../Themes/docs/shared-components/model-inheritance-pattern.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-pattern.md
+>>>>>>> dev

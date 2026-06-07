@@ -20,6 +20,9 @@
 
 ## Collegamenti tra versioni di analysis.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [analysis.md](../../../notify/project_docs/analysis.md)
 * [analysis.md](../../../notify/project_docs/phpstan/analysis.md)
 * [analysis.md](../../../xot/project_docs/analysis.md)
@@ -33,6 +36,7 @@
 * [analysis.md](../../../media/project_docs/analysis.md)
 * [analysis.md](../../../media/project_docs/phpstan/analysis.md)
 * [analysis.md](../../../../themes/one/project_docs/analysis.md)
+<<<<<<< HEAD
 =======
 * [analysis.md](../../../Notify/project_docs/analysis.md)
 * [analysis.md](../../../Notify/project_docs/phpstan/analysis.md)
@@ -48,3 +52,5 @@
 * [analysis.md](../../../Media/project_docs/phpstan/analysis.md)
 * [analysis.md](../../../../Themes/One/project_docs/analysis.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

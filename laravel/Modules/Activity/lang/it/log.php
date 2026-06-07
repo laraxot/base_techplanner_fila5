@@ -26,6 +26,9 @@ return [
             'info' => 'Info',
             'debug' => 'Debug',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -36,21 +39,30 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         ],
         'message' => 'Messaggio',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         'context' => [
             'label' => 'Contesto',
             'exception' => 'Eccezione',
             'stack_trace' => 'Stack Trace',
             'additional' => 'Info Aggiuntive',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'channel' => [
             'label' => 'Canale',
@@ -60,6 +72,9 @@ return [
             'database' => 'Database',
             'queue' => 'Code',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -76,11 +91,14 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         ],
         'datetime' => 'Data e Ora',
         'environment' => 'Ambiente',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'filters' => [
         'level' => 'Livello',
@@ -114,8 +132,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Log',
     'plural_label' => 'Log (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Log',
+    'plural_label' => 'Log (Plurale)',
+>>>>>>> dev
 ];

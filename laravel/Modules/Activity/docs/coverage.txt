@@ -1,5 +1,8 @@
 Activity Module - Code Coverage Report
+<<<<<<< HEAD
 =====================================
+=======
+>>>>>>> dev
 
 Summary:
 --------
@@ -28,4 +31,8 @@ Coverage by Category:
 - Model Tests: Executing but not covering application code
 - Action Tests: Executing but not covering application code
 
+<<<<<<< HEAD
 Status: Tests passing but low code path coverage
+=======
+Status: Tests passing but low code path coverage
+>>>>>>> dev

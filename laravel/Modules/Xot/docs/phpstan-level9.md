@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Guida alla Risoluzione degli Errori PHPStan Livello 9
 
 Questa guida documenta i pattern di errore più comuni trovati durante l'analisi di livello 9 con PHPStan e le strategie per risolverli.
@@ -171,3 +172,12 @@ Per categorie specifiche:
 /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
 $value = $data['key'];
 ```
+=======
+---
+module: theme
+topic: phpstan-level9
+canonical: ../../../Themes/docs/shared-components/phpstan-level9-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level9-guide.md
+>>>>>>> dev

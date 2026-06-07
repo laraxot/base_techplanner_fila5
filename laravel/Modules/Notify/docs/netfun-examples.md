@@ -243,9 +243,13 @@ public function sendReminder(Appointment $appointment)
         $appointment->patient->notify(
             new AppointmentReminderNotification(
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 appointmentDate: $appointment->date,
 >>>>>>> 4b6b99016 (first commit)
+=======
+                appointmentDate: $appointment->date,
+>>>>>>> dev
                 doctorName: $appointment->doctor->name,
                 location: $appointment->location,
                 notes: $appointment->notes

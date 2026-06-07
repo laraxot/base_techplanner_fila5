@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GitHub Workflows Standard - base_laravelpizza
 
 <<<<<<< HEAD
@@ -5,6 +6,11 @@
 =======
 **Ultimo aggiornamento**: 2025-01-10
 >>>>>>> 4b6b99016 (first commit)
+=======
+# GitHub Workflows Standard - base_<nome progetto>
+
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> dev
 **Principi**: DRY + KISS + SOLID + Robust
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
 
@@ -118,14 +124,22 @@ Per ogni modulo/tema:
 Workflow per la sincronizzazione dei subtree e repository remoti.
 
 **Gestione Repository Privati (Bashscripts):**
+<<<<<<< HEAD
 Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila4`.
+=======
+Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila5`.
+>>>>>>> dev
 Questo ci permette di usare il `GITHUB_TOKEN` standard invece di dover gestire un PAT segreto (`BASHSCRIPTS_PAT`) per repository esterni.
 
 ```yaml
       - name: Checkout bashscripts
         uses: actions/checkout@v4
         with:
+<<<<<<< HEAD
           repository: provtv/bashscripts_fila4
+=======
+          repository: provtv/bashscripts_fila5
+>>>>>>> dev
           token: ${{ secrets.GITHUB_TOKEN }} # Accessibile nativamente nell'organizzazione
           path: bashscripts
 ```

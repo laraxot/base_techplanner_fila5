@@ -63,6 +63,9 @@ Per ogni modello:
 - **TESTARE**: Verificare che le correzioni funzionino
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: gennaio 2025 - Verifica critica dei campi del modello implementata*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

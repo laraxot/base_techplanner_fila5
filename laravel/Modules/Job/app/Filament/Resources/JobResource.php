@@ -22,6 +22,7 @@ class JobResource extends XotBaseResource
     #[Override]
     public static function getFormSchema(): array
     {
+<<<<<<< HEAD
         return [
             'queue' => TextInput::make('queue')->required()->maxLength(255),
             'payload' => TextInput::make('payload')->required(),
@@ -29,6 +30,9 @@ class JobResource extends XotBaseResource
             'available_at' => DateTimePicker::make('available_at')->required(),
             'created_at' => DateTimePicker::make('created_at')->required(),
         ];
+=======
+        return [];
+>>>>>>> dev
     }
 
     #[Override]

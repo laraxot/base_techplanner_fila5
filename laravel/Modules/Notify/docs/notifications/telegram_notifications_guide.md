@@ -1,6 +1,10 @@
 # Notifiche Telegram 
 
+<<<<<<< HEAD
 Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di SaluteOra.
+=======
+Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di Quaeris.
+>>>>>>> dev
 
 ## Indice
 
@@ -15,7 +19,11 @@ Questa documentazione descrive come implementare notifiche Telegram nel modulo N
 
 ## Introduzione
 
+<<<<<<< HEAD
 Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. SaluteOra integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
+=======
+Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. Quaeris integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
+>>>>>>> dev
 
 ## Setup del Bot Telegram
 
@@ -28,17 +36,28 @@ Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua AP
 
 ### Funzionalità del Bot
 
+<<<<<<< HEAD
 Il bot di SaluteOra deve avere:
 - Privacy Mode disattivata (per leggere messaggi nei gruppi)
 - Comandi personalizzati configurati
 - Immagine del profilo con logo SaluteOra
+=======
+Il bot di Quaeris deve avere:
+- Privacy Mode disattivata (per leggere messaggi nei gruppi)
+- Comandi personalizzati configurati
+- Immagine del profilo con logo Quaeris
+>>>>>>> dev
 
 ### Comandi Consigliati
 
 Configura i seguenti comandi per il tuo bot:
 ```
 start - Inizia l'interazione con il bot
+<<<<<<< HEAD
 register - Collega il tuo account Telegram a SaluteOra
+=======
+register - Collega il tuo account Telegram a Quaeris
+>>>>>>> dev
 unregister - Scollega il tuo account Telegram
 settings - Gestisci le tue preferenze di notifica
 help - Ottieni assistenza
@@ -159,10 +178,17 @@ public function toTelegram($notifiable)
 
 ### Collegamento Account Telegram
 
+<<<<<<< HEAD
 Per collegare un account Telegram a un utente SaluteOra:
 
 1. Implementa un comando `/register` nel bot che generi un token univoco.
 2. L'utente inserisce questo token nel proprio profilo nell'app SaluteOra.
+=======
+Per collegare un account Telegram a un utente Quaeris:
+
+1. Implementa un comando `/register` nel bot che generi un token univoco.
+2. L'utente inserisce questo token nel proprio profilo nell'app Quaeris.
+>>>>>>> dev
 3. Salva il `chat_id` Telegram dell'utente nel database.
 
 ```php
@@ -175,7 +201,11 @@ use Modules\Notify\Models\TelegramToken;
 class RegisterCommand extends Command
 {
     protected $name = 'register';
+<<<<<<< HEAD
     protected $description = 'Collega il tuo account Telegram a SaluteOra';
+=======
+protected $description = 'Collega il tuo account Telegram a Quaeris';
+>>>>>>> dev
     
     public function handle()
     {
@@ -190,7 +220,11 @@ class RegisterCommand extends Command
         ]);
         
         $this->replyWithMessage([
+<<<<<<< HEAD
             'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo SaluteOra per completare il collegamento."
+=======
+'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo Quaeris per completare il collegamento."
+>>>>>>> dev
         ]);
     }
 }
@@ -299,6 +333,7 @@ class TelegramNotificationTest extends TestCase
 ## Collegamenti alla Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [MULTI_CHANNEL_NOTIFICATIONS.md](./multi_channel_notifications.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
@@ -307,3 +342,8 @@ class TelegramNotificationTest extends TestCase
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./NOTIFICATIONS_IMPLEMENTATION_GUIDE.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./SMS_PROVIDER_CONFIGURATION.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [MULTI_CHANNEL_NOTIFICATIONS.md](./MULTI_CHANNEL_NOTIFICATIONS.md)
+- [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./NOTIFICATIONS_IMPLEMENTATION_GUIDE.md)
+- [SMS_PROVIDER_CONFIGURATION.md](./SMS_PROVIDER_CONFIGURATION.md)
+>>>>>>> dev

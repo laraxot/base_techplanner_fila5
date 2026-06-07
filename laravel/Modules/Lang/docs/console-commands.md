@@ -135,7 +135,11 @@ php artisan lang:find-missing it
 
 - [Translation System](./translation-system.md)
 - [Lang Module Architecture](./architecture.md)
+<<<<<<< HEAD
 - [PHPStan Corrections](../../../docs/phpstan-fixes.md)
+=======
+- [PHPStan Corrections](../../../../docs/phpstan-fixes.md)
+>>>>>>> dev
 
 ## Note di Sviluppo
 

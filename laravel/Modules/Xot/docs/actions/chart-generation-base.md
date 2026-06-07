@@ -715,7 +715,11 @@ Modules/Xot/
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *
 =======
 *Last updated: December 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*
+>>>>>>> dev

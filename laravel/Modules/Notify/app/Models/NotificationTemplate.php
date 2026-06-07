@@ -65,6 +65,37 @@ use Spatie\Translatable\HasTranslations;
  * @mixin IdeHelperNotificationTemplate
  *
  * @property-read ProfileContract|null $deleter
+<<<<<<< HEAD
+=======
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property string|null $deleted_by
+ *
+ * @method static Builder<static>|NotificationTemplate whereBodyHtml($value)
+ * @method static Builder<static>|NotificationTemplate whereBodyText($value)
+ * @method static Builder<static>|NotificationTemplate whereCategory($value)
+ * @method static Builder<static>|NotificationTemplate whereChannels($value)
+ * @method static Builder<static>|NotificationTemplate whereCode($value)
+ * @method static Builder<static>|NotificationTemplate whereConditions($value)
+ * @method static Builder<static>|NotificationTemplate whereCreatedAt($value)
+ * @method static Builder<static>|NotificationTemplate whereCreatedBy($value)
+ * @method static Builder<static>|NotificationTemplate whereDeletedAt($value)
+ * @method static Builder<static>|NotificationTemplate whereDeletedBy($value)
+ * @method static Builder<static>|NotificationTemplate whereDescription($value)
+ * @method static Builder<static>|NotificationTemplate whereGrapesjsData($value)
+ * @method static Builder<static>|NotificationTemplate whereId($value)
+ * @method static Builder<static>|NotificationTemplate whereIsActive($value)
+ * @method static Builder<static>|NotificationTemplate whereMetadata($value)
+ * @method static Builder<static>|NotificationTemplate whereName($value)
+ * @method static Builder<static>|NotificationTemplate wherePreviewData($value)
+ * @method static Builder<static>|NotificationTemplate whereSubject($value)
+ * @method static Builder<static>|NotificationTemplate whereTenantId($value)
+ * @method static Builder<static>|NotificationTemplate whereType($value)
+ * @method static Builder<static>|NotificationTemplate whereUpdatedAt($value)
+ * @method static Builder<static>|NotificationTemplate whereUpdatedBy($value)
+ * @method static Builder<static>|NotificationTemplate whereVariables($value)
+ * @method static Builder<static>|NotificationTemplate whereVersion($value)
+>>>>>>> dev
  *
  * @mixin \Eloquent
  */
@@ -199,33 +230,48 @@ class NotificationTemplate extends BaseModel implements HasMedia
 
     /**
      * Scope a query to only include active templates.
+<<<<<<< HEAD
      *
      * @param  Builder  $query
      * @return Builder
      */
     public function scopeActive($query)
+=======
+     */
+    public function scopeActive(Builder $query): Builder
+>>>>>>> dev
     {
         return $query->where('is_active', true);
     }
 
     /**
      * Scope a query to only include templates for a specific channel.
+<<<<<<< HEAD
      *
      * @param  Builder  $query
      * @return Builder
      */
     public function scopeForChannel($query, string $channel)
+=======
+     */
+    public function scopeForChannel(Builder $query, string $channel): Builder
+>>>>>>> dev
     {
         return $query->whereJsonContains('channels', $channel);
     }
 
     /**
      * Scope a query to only include templates for a specific category.
+<<<<<<< HEAD
      *
      * @param  Builder  $query
      * @return Builder
      */
     public function scopeForCategory($query, string $category)
+=======
+     */
+    public function scopeForCategory(Builder $query, string $category): Builder
+>>>>>>> dev
     {
         return $query->where('category', $category);
     }

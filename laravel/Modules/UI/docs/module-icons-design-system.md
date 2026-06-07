@@ -141,6 +141,7 @@ return [
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [UI Module Icons](../laravel/modules/ui/docs/icons.md)
 - [Filament Icon Registration](../laravel/modules/xot/docs/filament-assets.md)
 - [Accessibility Guidelines](../docs/accessibility-standards.md)
@@ -152,3 +153,9 @@ return [
 
 *Ultimo aggiornamento: Agosto 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [UI Module Icons](../laravel/modules/ui/docs/icons.md)
+- [Filament Icon Registration](../laravel/modules/xot/docs/filament-assets.md)
+- [Accessibility Guidelines](../../docs/accessibility-standards.md)
+
+>>>>>>> dev

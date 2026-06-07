@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Criticità Login AGID - Tema Sixteen
 
 ## 🚨 Problema Identificato
@@ -180,3 +181,12 @@ resources/views/
 =======
 *Ultimo aggiornamento: 31 luglio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: login-agid-analysis
+canonical: ../../docs/shared-components/login-agid-analysis.md
+---
+
+See canonical documentation: ../../docs/shared-components/login-agid-analysis.md
+>>>>>>> dev

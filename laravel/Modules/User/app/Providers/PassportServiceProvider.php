@@ -5,9 +5,19 @@ declare(strict_types=1);
 namespace Modules\User\Providers;
 
 use Carbon\CarbonInterval;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Passport\Passport;
+=======
+use Illuminate\Support\ServiceProvider;
+use Laravel\Passport\AuthCode;
+use Laravel\Passport\Client;
+use Laravel\Passport\DeviceCode;
+use Laravel\Passport\Passport;
+use Laravel\Passport\RefreshToken;
+use Laravel\Passport\Token;
+>>>>>>> dev
 use Modules\User\Models\OauthAuthCode;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthDeviceCode;
@@ -21,11 +31,17 @@ use Webmozart\Assert\Assert;
  * Configura Laravel Passport per l'autenticazione OAuth2.
  * Utilizza la configurazione centralizzata da config/user/passport.php.
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
  * @SuppressWarnings("PHPMD.StaticAccess")
  * @SuppressWarnings("PHPMD.CouplingBetweenObjects")
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+ * @SuppressWarnings("PHPMD.StaticAccess")
+ * @SuppressWarnings("PHPMD.CouplingBetweenObjects")
+>>>>>>> dev
  */
 class PassportServiceProvider extends ServiceProvider
 {
@@ -92,11 +108,17 @@ class PassportServiceProvider extends ServiceProvider
      * Configura i modelli personalizzati.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * Configura i modelli personalizzati.
      */
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    /**
+     * Configura i modelli personalizzati.
+     */
+>>>>>>> dev
     protected function configureModels(): void
     {
         $models = config('user.passport.models', []);
@@ -104,6 +126,7 @@ class PassportServiceProvider extends ServiceProvider
 
         $tokenModel = $models['token'] ?? OauthToken::class;
         Assert::stringNotEmpty($tokenModel);
+<<<<<<< HEAD
 <<<<<<< HEAD
         Assert::subclassOf($tokenModel, \Laravel\Passport\Token::class);
 
@@ -118,11 +141,27 @@ class PassportServiceProvider extends ServiceProvider
         $clientModel = config('user.passport.client_model', OauthClient::class);
         Assert::stringNotEmpty($clientModel);
         Assert::subclassOf($clientModel, \Laravel\Passport\Client::class);
+=======
+        Assert::subclassOf($tokenModel, Token::class);
+
+        $refreshTokenModel = $models['refresh_token'] ?? OauthRefreshToken::class;
+        Assert::stringNotEmpty($refreshTokenModel);
+        Assert::subclassOf($refreshTokenModel, RefreshToken::class);
+
+        $authCodeModel = $models['auth_code'] ?? OauthAuthCode::class;
+        Assert::stringNotEmpty($authCodeModel);
+        Assert::subclassOf($authCodeModel, AuthCode::class);
+
+        $clientModel = config('user.passport.client_model', OauthClient::class);
+        Assert::stringNotEmpty($clientModel);
+        Assert::subclassOf($clientModel, Client::class);
+>>>>>>> dev
 
         Passport::useTokenModel($tokenModel);
         Passport::useRefreshTokenModel($refreshTokenModel);
         Passport::useAuthCodeModel($authCodeModel);
         Passport::useClientModel($clientModel);
+<<<<<<< HEAD
 =======
         $refreshTokenModel = $models['refresh_token'] ?? OauthRefreshToken::class;
         Assert::stringNotEmpty($refreshTokenModel);
@@ -153,6 +192,13 @@ class PassportServiceProvider extends ServiceProvider
 >>>>>>> 4b6b99016 (first commit)
             Passport::useDeviceCodeModel($deviceCodeModel);
         }
+=======
+
+        $deviceCodeModel = $models['device_code'] ?? OauthDeviceCode::class;
+        Assert::stringNotEmpty($deviceCodeModel);
+        Assert::subclassOf($deviceCodeModel, DeviceCode::class);
+        Passport::useDeviceCodeModel($deviceCodeModel);
+>>>>>>> dev
     }
 
     /**
@@ -179,8 +225,12 @@ class PassportServiceProvider extends ServiceProvider
         }
 
         if (! empty($scopes)) {
+<<<<<<< HEAD
             // PHPStan: dopo i controlli Assert, l'array è garantito essere array<string, string>
             /** @var array<string, string> $typedScopes */
+=======
+            /** @phpstan-ignore varTag.nativeType */
+>>>>>>> dev
             $typedScopes = $scopes;
             Passport::tokensCan($typedScopes);
         }

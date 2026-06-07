@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Themes\Sixteen\Models\Municipal;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -13,20 +16,28 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
 use Illuminate\Database\Eloquent\Relations\{HasMany, BelongsTo, MorphMany, BelongsToMany};
 use Illuminate\Database\Eloquent\Casts\Attribute;
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Illuminate\Support\Collection;
+>>>>>>> dev
 use Illuminate\Support\Str;
 
 /**
  * Modello per le unità organizzative
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
  * 
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * Rappresenta uffici, dipartimenti, settori e altre unità organizzative
  * dell'ente secondo l'ontologia AGID
  */
@@ -220,19 +231,27 @@ class OrganizationalUnit extends Model
                 $path = collect([$this->name]);
                 $current = $this;
 <<<<<<< HEAD
-
-=======
-                
->>>>>>> 4b6b99016 (first commit)
-                while ($current->parent) {
-                    $current = $current->parent;
-                    $path->prepend($current->name);
-                }
 <<<<<<< HEAD
 
 =======
                 
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
+                while ($current->parent) {
+                    $current = $current->parent;
+                    $path->prepend($current->name);
+                }
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+                
+>>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return $path->implode(' › ');
             }
         );
@@ -258,19 +277,27 @@ class OrganizationalUnit extends Model
                 $level = 0;
                 $current = $this;
 <<<<<<< HEAD
-
-=======
-                
->>>>>>> 4b6b99016 (first commit)
-                while ($current->parent) {
-                    $level++;
-                    $current = $current->parent;
-                }
 <<<<<<< HEAD
 
 =======
                 
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
+                while ($current->parent) {
+                    $level++;
+                    $current = $current->parent;
+                }
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+                
+>>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return $level;
             }
         );
@@ -298,9 +325,13 @@ class OrganizationalUnit extends Model
                     $this->attributes['slug'] = Str::slug($value);
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return $value;
             }
         );
@@ -312,10 +343,14 @@ class OrganizationalUnit extends Model
     public function getFormattedCompetences(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->competences || ! is_array($this->competences)) {
 =======
         if (!$this->competences || !is_array($this->competences)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->competences || ! is_array($this->competences)) {
+>>>>>>> dev
             return [];
         }
 
@@ -325,9 +360,13 @@ class OrganizationalUnit extends Model
                     return ['title' => $competence];
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return $competence;
             })
             ->toArray();
@@ -339,10 +378,14 @@ class OrganizationalUnit extends Model
     public function getFormattedServices(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->services_provided || ! is_array($this->services_provided)) {
 =======
         if (!$this->services_provided || !is_array($this->services_provided)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->services_provided || ! is_array($this->services_provided)) {
+>>>>>>> dev
             return [];
         }
 
@@ -352,9 +395,13 @@ class OrganizationalUnit extends Model
                     return ['name' => $service];
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return $service;
             })
             ->toArray();
@@ -366,10 +413,14 @@ class OrganizationalUnit extends Model
     public function getFormattedOfficeHours(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->office_hours || ! is_array($this->office_hours)) {
 =======
         if (!$this->office_hours || !is_array($this->office_hours)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $this->office_hours || ! is_array($this->office_hours)) {
+>>>>>>> dev
             return [];
         }
 
@@ -377,10 +428,14 @@ class OrganizationalUnit extends Model
         $dayNames = [
             'monday' => 'Lunedì',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tuesday' => 'Martedì',
 =======
             'tuesday' => 'Martedì', 
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tuesday' => 'Martedì',
+>>>>>>> dev
             'wednesday' => 'Mercoledì',
             'thursday' => 'Giovedì',
             'friday' => 'Venerdì',
@@ -392,9 +447,13 @@ class OrganizationalUnit extends Model
             ->mapWithKeys(function ($day) use ($dayNames) {
                 $hours = $this->office_hours[$day] ?? null;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
                 return [$dayNames[$day] => $hours];
             })
             ->filter()
@@ -413,10 +472,14 @@ class OrganizationalUnit extends Model
         $todayHours = $this->office_hours[$currentDay] ?? null;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $todayHours || ! is_array($todayHours)) {
 =======
         if (!$todayHours || !is_array($todayHours)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $todayHours || ! is_array($todayHours)) {
+>>>>>>> dev
             return false;
         }
 
@@ -434,7 +497,11 @@ class OrganizationalUnit extends Model
     /**
      * Ottiene tutti gli antenati
      */
+<<<<<<< HEAD
     public function getAncestors(): \Illuminate\Support\Collection
+=======
+    public function getAncestors(): Collection
+>>>>>>> dev
     {
         $ancestors = collect();
         $current = $this->parent;
@@ -450,7 +517,11 @@ class OrganizationalUnit extends Model
     /**
      * Ottiene tutti i discendenti (recursivo)
      */
+<<<<<<< HEAD
     public function getAllDescendants(): \Illuminate\Support\Collection
+=======
+    public function getAllDescendants(): Collection
+>>>>>>> dev
     {
         $descendants = collect();
 
@@ -508,16 +579,24 @@ class OrganizationalUnit extends Model
 
             while (static::where('slug', $model->slug)->exists()) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $model->slug = $originalSlug.'-'.$counter;
 =======
                 $model->slug = $originalSlug . '-' . $counter;
 >>>>>>> 4b6b99016 (first commit)
+=======
+                $model->slug = $originalSlug.'-'.$counter;
+>>>>>>> dev
                 $counter++;
             }
         });
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 4b6b99016 (first commit)
+=======
+}
+>>>>>>> dev

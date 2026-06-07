@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Comprehensive Guide for Geo Module
 
 ## Table of Contents
@@ -116,3 +117,12 @@ MapComponent::make()
 
 ## Changelog
 See GitHub repository for full changelog.
+=======
+---
+module: theme
+topic: comprehensive
+canonical: ../../../Themes/docs/shared-components/COMPREHENSIVE_GUIDE.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIVE_GUIDE.md
+>>>>>>> dev

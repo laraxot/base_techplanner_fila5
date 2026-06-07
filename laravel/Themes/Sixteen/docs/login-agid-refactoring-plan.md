@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Piano di Refactoring Login AGID - Implementazione Dettagliata
 
 ## 🎯 Obiettivo
@@ -644,3 +645,12 @@ name('login');
 =======
 *Ultimo aggiornamento: 31 luglio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: login-agid-refactoring-plan
+canonical: ../../docs/shared-components/login-agid-refactoring-plan.md
+---
+
+See canonical documentation: ../../docs/shared-components/login-agid-refactoring-plan.md
+>>>>>>> dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi: Unificazione dei modelli geografici in Comune.php
 
 ## 1. Contesto attuale
@@ -70,3 +71,12 @@
 **Ultimo aggiornamento:** {{date('Y-m-d')}}
 >>>>>>> 4b6b99016 (first commit)
 Responsabile: Cascade AI
+=======
+---
+module: theme
+topic: comune-unificazione-analysis
+canonical: ../../../Themes/docs/shared-components/comune-unification-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/comune-unification-analysis.md
+>>>>>>> dev

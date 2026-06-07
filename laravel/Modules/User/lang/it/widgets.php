@@ -74,10 +74,14 @@ return [
             ],
             'is_otp' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'label' => 'Autenticazione a Due Fattori (OTP]',
 =======
                 'label' => 'Autenticazione a Due Fattori (OTP)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+                'label' => 'Autenticazione a Due Fattori (OTP]',
+>>>>>>> dev
                 'help' => 'Abilita l\'autenticazione a due fattori per maggiore sicurezza',
             ],
             'password_expires_at' => [
@@ -176,6 +180,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'name' => 'Widgets',
         'plural' => 'Widgets',
@@ -224,6 +231,7 @@ return [
         'heading' => 'Log Accessi',
         'label' => 'Numero di accessi eseguiti',
     ],
+<<<<<<< HEAD
 =======
     'navigation' => [],
     'label' => '',
@@ -231,4 +239,6 @@ return [
     'fields' => [],
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

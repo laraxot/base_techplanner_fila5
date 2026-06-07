@@ -247,9 +247,14 @@ $emit = function ($event) {
 
 ## Collegamenti tra versioni di volt-introduction.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [volt-introduction.md](laravel/modules/cms/docs/volt-introduction.md)
 * [volt-introduction.md](laravel/modules/cms/docs/components/volt-introduction.md)
 =======
 * [volt-introduction.md](laravel/Modules/Cms/docs/volt-introduction.md)
 * [volt-introduction.md](laravel/Modules/Cms/docs/components/volt-introduction.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [volt-introduction.md](laravel/modules/cms/docs/volt-introduction.md)
+* [volt-introduction.md](laravel/modules/cms/docs/components/volt-introduction.md)
+>>>>>>> dev

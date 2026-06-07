@@ -278,6 +278,7 @@ php -l Modules/Notify/lang/it/send_email.php
 ## 🔗 Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< HEAD
 - [Regole Traduzioni Laraxot](../../../docs/translation-standards.md)
 <<<<<<< HEAD
 - [Best Practice Filament](../../../docs/filament-best-practices.md)- [Regole Traduzioni Laraxot](../../../project_docs/translation-standards.md)
@@ -290,6 +291,13 @@ php -l Modules/Notify/lang/it/send_email.php
 - [Best Practice Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Struttura Modulo Notify](./README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Regole Traduzioni Laraxot](../../../../docs/translation-standards.md)
+- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
+- [Best Practice Filament](../../../../docs/project/FILAMENT-BEST-PRACTICES.md)
+- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
+- [Struttura Modulo Notify](./README.md)
+>>>>>>> dev
 
 ### File Modificati
 - `laravel/Modules/Notify/lang/it/send_email.php` - File principale migliorato
@@ -569,6 +577,7 @@ php -l Modules/Notify/lang/it/send_email.php
 ## 🔗 Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< HEAD
 - [Regole Traduzioni Laraxot](../../../docs/translation-standards.md)
 <<<<<<< HEAD
 - [Best Practice Filament](../../../docs/filament-best-practices.md)
@@ -583,6 +592,14 @@ php -l Modules/Notify/lang/it/send_email.php
 - [Best Practice Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../project_docs/translation-standards.md)
 - [Struttura Modulo Notify](./README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Regole Traduzioni Laraxot](../../../../docs/translation-standards.md)
+- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
+- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
+- [Best Practice Filament](../../../../docs/project/FILAMENT-BEST-PRACTICES.md)
+- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
+- [Struttura Modulo Notify](./README.md)
+>>>>>>> dev
 
 ### File Modificati
 - `laravel/Modules/Notify/lang/it/send_email.php` - File principale migliorato

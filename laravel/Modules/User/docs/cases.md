@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Case-Insensitive File Conflicts
 
 Nel modulo `User` sono presenti i seguenti file duplicati per sola differenza di maiuscole/minuscole:
@@ -8,3 +9,12 @@ Nel modulo `User` sono presenti i seguenti file duplicati per sola differenza di
 - `Modules/User/docs`: `INDEX.md`, `index.md`
 
 Correggere mantenendo una sola variante coerente con le convenzioni del progetto e aggiornare gli eventuali riferimenti.
+=======
+---
+module: theme
+topic: cases
+canonical: ../../../Themes/docs/shared-components/case-conflicts.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/case-conflicts.md
+>>>>>>> dev

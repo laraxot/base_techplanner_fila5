@@ -28,10 +28,14 @@ return [
                 'management' => 'Gestion des rôles',
                 'table' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
                     'number_of_users' => 'Nombre d\'utilisateurs',
 =======
                     'number_of_users' => "Nombre d'utilisateurs",
 >>>>>>> 4b6b99016 (first commit)
+=======
+                    'number_of_users' => 'Nombre d\'utilisateurs',
+>>>>>>> dev
                     'permissions' => 'Permissions',
                     'role' => 'Rôle',
                     'sort' => 'Ordre',
@@ -91,10 +95,14 @@ return [
             'login_button' => 'Entrer',
             'login_with' => 'Se connecter avec :social_media',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'register_box_title' => 'S\'enregistrer',
 =======
             'register_box_title' => "S'enregistrer",
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'register_box_title' => 'S\'enregistrer',
+>>>>>>> dev
             'register_button' => 'Créer le compte',
             'remember_me' => 'Se souvenir de moi',
         ],
@@ -141,6 +149,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -154,6 +165,9 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

@@ -19,11 +19,18 @@ class Clip extends Component
     public Model $model;
 
     /**
+<<<<<<< HEAD
      * Undocumented variable.
      *
      * @var array
      */
     /** @var array<string, string> */
+=======
+     * Untyped to match HandlesEvents::$listeners.
+     *
+     * @var array<string, string>
+     */
+>>>>>>> dev
     protected $listeners = [
         'updateDataFromModal' => 'updateDataFromModal',
     ];

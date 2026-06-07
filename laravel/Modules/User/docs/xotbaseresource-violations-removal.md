@@ -36,7 +36,11 @@
 5. **PersonalAccessTokenResource**
    - ❌ Rimosso: `protected static ?string $recordTitleAttribute = 'name'`
 
+<<<<<<< HEAD
 ### Modulo Quaeris
+=======
+### Modulo ExternalProject
+>>>>>>> dev
 
 6. **ContactResource**
    - ❌ Rimosso: `protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-user-circle'`

@@ -157,6 +157,9 @@ find laravel -type f -name "*.php" -exec sed -i 's|Themes|Themes|g' {} \;
 ## Riferimenti correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Struttura del progetto](../xot/docs/architecture/struttura-progetto.md)
 - [Regole di namespace](../xot/docs/standards/namespace-conventions.md)
 - [Autoloading](../xot/docs/standards/psr4-compliance.md)
@@ -169,6 +172,7 @@ find laravel -type f -name "*.php" -exec sed -i 's|Themes|Themes|g' {} \;
 - [Struttura del progetto](../xot/docs/architecture/struttura-progetto.md)
 - [Regole di namespace](../xot/docs/standards/namespace-conventions.md)
 - [Autoloading](../xot/docs/standards/psr4-compliance.md)
+<<<<<<< HEAD
 =======
 - [Struttura del progetto](../Xot/docs/architecture/struttura-progetto.md)
 - [Regole di namespace](../Xot/docs/standards/namespace-conventions.md)
@@ -183,3 +187,5 @@ find laravel -type f -name "*.php" -exec sed -i 's|Themes|Themes|g' {} \;
 - [Regole di namespace](../Xot/docs/standards/namespace-conventions.md)
 - [Autoloading](../Xot/docs/standards/psr4-compliance.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

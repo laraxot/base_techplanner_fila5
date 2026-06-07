@@ -2,9 +2,12 @@
 
 ## Status: ✅ COMPLETATO
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-07-31T09:15:00+02:00
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Riepilogo
 Tutti i 28 file con conflitti Git nel modulo Geo sono stati risolti con successo. I conflitti erano principalmente dovuti a:
@@ -179,8 +182,11 @@ La risoluzione dei conflitti Git è stata completata con successo. Tutti i 28 fi
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: 2025-07-31T09:20:00+02:00
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Responsabile**: AI Assistant
 **Status**: ✅ CONFLITTI GIT COMPLETAMENTE RISOLTI

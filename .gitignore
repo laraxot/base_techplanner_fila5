@@ -34,10 +34,13 @@ auth.json
 *.old
 *.phar
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Merge conflict backup symlinks (Git LFS GH008 se committati)
 *~cc6378f*
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 laravel/database/migrations/
 laravel/stubs/
 laravel/lang/vendor/
@@ -52,10 +55,15 @@ public_html/vendor/
 laravel/resources/views/vendor/
 laravel/config/localhost/database/content/information_schema_tables.json
 .gemini/tmp/
+<<<<<<< HEAD
+=======
+# bashscripts/ = repo separato (laraxot/bashscripts_fila5), clone annidato — non tracciato qui
+>>>>>>> dev
 bashscripts/
 laravel/docker/
 
 .ai/
+<<<<<<< HEAD
 <<<<<<< HEAD
 .ai-context/
 .claude/
@@ -63,11 +71,19 @@ laravel/docker/
 =======
 .claude/
 >>>>>>> 4b6b99016 (first commit)
+=======
+.ai-context/
+.claude/
+.clauderules/
+>>>>>>> dev
 .cursor/
 .gemini/
 .windsurf/
 .flow/
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 .iflow/
 .junie/
 .phive/
@@ -75,12 +91,16 @@ laravel/docker/
 .windsurf/
 .zai/
 .ai-context/
+<<<<<<< HEAD
 bashscripts/
+=======
+>>>>>>> dev
 laravel/config/net/sottana/database/content/information_schema_tables.json
 *.*Indentifier
 *.*Zone.Identifier
 lighthouse.*
 laravel/config/local/techplanner/database/content/information_schema_tables.json
+<<<<<<< HEAD
 *.*Zone.Identifier
 
 # Git merge conflict backup symlinks (LFS GH008 se committati)
@@ -99,3 +119,15 @@ ruvector.db
 bashscripts/
 laravel/config/net/sottana/database/content/information_schema_tables.json
 >>>>>>> 4b6b99016 (first commit)
+=======
+/reports/
+/reports/
+*.*Zone.Identifier
+laravel/--cache-directory/
+laravel/coverage/
+laravel/coverage_report/
+laravel/coverage_xml/
+tests/coverage/
+coverage/
+coverage.xml/ruvector.db
+>>>>>>> dev

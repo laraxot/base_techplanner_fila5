@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Translation Module PDF Reports
 
 ## 📋 Overview
@@ -819,6 +820,8 @@ public function generateWithErrorHandling(array $options = []): string
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
 =======
+=======
+>>>>>>> dev
 # Traduzioni nel Progetto
 
 ## Regole Fondamentali
@@ -944,4 +947,7 @@ Prima di committare:
 - [Filament Translations](/.cursor/rules/filament-translations.rule)
 - [Laravel Localization](https://laravel.com/docs/10.x/localization)
 - [Best Practices](/.cursor/rules/translations.rule)
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

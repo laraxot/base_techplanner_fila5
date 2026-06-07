@@ -17,10 +17,14 @@ return [
     ],
     'nexmo' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'label' => 'Nexmo (Vonage]',
 =======
         'label' => 'Nexmo (Vonage)',
 >>>>>>> 4b6b99016 (first commit)
+=======
+        'label' => 'Nexmo (Vonage]',
+>>>>>>> dev
         'color' => 'warning',
         'icon' => 'heroicon-o-globe-alt',
         'description' => 'Provider globale per SMS e comunicazioni con copertura internazionale',
@@ -50,6 +54,9 @@ return [
         'description' => 'Provider italiano per servizi di telecomunicazioni e SMS',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Sms Driver Enum',
     'plural_label' => 'Sms Driver Enum (Plurale)',
     'navigation' => [
@@ -94,6 +101,9 @@ return [
             'label' => 'Elimina Sms Driver Enum',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

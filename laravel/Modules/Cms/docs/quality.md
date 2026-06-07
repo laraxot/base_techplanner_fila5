@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cms Module - Quality Status (November 2025)
 
 ## 🎯 Overview
@@ -93,3 +94,12 @@ This informs PHPStan that the object has BOTH:
 - `Menu`, `LimeQuestion` e i `BaseTreeModel` di Cms/Xot utilizzano ora il trait tipizzato (non più quello del vendor), evitando i fatal error di compatibilità riscontrati da PHPStan.
 - Aggiornati i test `MenuBusinessLogicTest` per verificare la presenza del nuovo trait e ripristinato l'uso di `SushiToJsons` nel modello.
 - Prossimi passi: eliminare le chiamate di debug `dddx()` e centralizzare l'helper `authId()` per ridurre gli errori residui (613) emersi dall’ultima esecuzione completa di PHPStan.
+=======
+---
+module: theme
+topic: quality
+canonical: ../../../Themes/docs/shared-components/quality-status-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-status-Modules.md
+>>>>>>> dev

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 @props([
     'title' => '',
     'description' => '',
@@ -67,6 +70,7 @@
                                 </div>
                             @endif
                         </div>
+<<<<<<< HEAD
 =======
 {{--
 /**
@@ -110,13 +114,19 @@
                             </a>
                         @endif
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                     </div>
                 @endforeach
             </div>
         @endif
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 </section>
 =======
 </section>
 >>>>>>> 4b6b99016 (first commit)
+=======
+</section>
+>>>>>>> dev

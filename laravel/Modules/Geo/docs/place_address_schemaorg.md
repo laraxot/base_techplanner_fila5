@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Place, Address e la separazione Regione/Provincia negli indirizzi italiani
 
 ## Obiettivo
@@ -97,3 +98,12 @@ Schema::create('addresses', function (Blueprint $table) {
 ---
 
 Responsabile: Cascade AI 
+=======
+---
+module: theme
+topic: place_address_schemaorg
+canonical: ../../../Themes/docs/shared-components/place-address-schemaorg.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/place-address-schemaorg.md
+>>>>>>> dev

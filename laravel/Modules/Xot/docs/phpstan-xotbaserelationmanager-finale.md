@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzione PHPStan XotBaseRelationManager - Versione Finale ✅
 
 **File**: `app/Filament/Resources/RelationManagers/XotBaseRelationManager.php`
@@ -173,3 +174,12 @@ public function canDetachBulk(Model|\stdClass|null $record): bool
 **Tutti gli errori PHPStan corretti!** ✅
 
 Il file passa PHPStan livello max senza errori, mantenendo backward compatibility e funzionalità esistente.
+=======
+---
+module: theme
+topic: phpstan-xotbaserelationmanager-finale
+canonical: ../../../Themes/docs/shared-components/phpstan-fix-xotbaserelationmanager-finale.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-xotbaserelationmanager-finale.md
+>>>>>>> dev

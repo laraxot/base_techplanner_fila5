@@ -33,9 +33,14 @@ da   @components('theme::includes.components.(nome)
 a <x-(nome controllato)
 ## Collegamenti tra versioni di aggiornamenti.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [aggiornamenti.md](laravel/modules/chart/docs/aggiornamenti.md)
 * [aggiornamenti.md](laravel/modules/cms/docs/aggiornamenti.md)
 =======
 * [aggiornamenti.md](laravel/Modules/Chart/docs/aggiornamenti.md)
 * [aggiornamenti.md](laravel/Modules/Cms/docs/aggiornamenti.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [aggiornamenti.md](laravel/modules/chart/docs/aggiornamenti.md)
+* [aggiornamenti.md](laravel/modules/cms/docs/aggiornamenti.md)
+>>>>>>> dev

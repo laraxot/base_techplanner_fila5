@@ -6,9 +6,13 @@ namespace Modules\Geo\Actions;
 
 use Illuminate\Support\Collection;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Geo\Contracts\CalculateDistanceActionContract;
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\Geo\Contracts\CalculateDistanceActionContract;
+>>>>>>> dev
 use Modules\Geo\Datas\LocationData;
 
 /**
@@ -18,10 +22,14 @@ readonly class OptimizeRouteAction
 {
     public function __construct(
 <<<<<<< HEAD
+<<<<<<< HEAD
         private CalculateDistanceActionContract $calculateDistance,
 =======
         private CalculateDistanceAction $calculateDistance,
 >>>>>>> 4b6b99016 (first commit)
+=======
+        private CalculateDistanceActionContract $calculateDistance,
+>>>>>>> dev
     ) {
     }
 

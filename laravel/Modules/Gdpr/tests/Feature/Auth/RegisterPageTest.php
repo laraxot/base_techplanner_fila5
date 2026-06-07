@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\Gdpr\Tests\Feature\Auth;
+
+>>>>>>> dev
 use Illuminate\Foundation\Testing\RefreshDatabase; // NOTE: User has explicitly forbidden RefreshDatabase. This is a placeholder.
 use Livewire\Livewire;
 use Modules\Gdpr\Filament\Widgets\Auth\RegisterWidget;

@@ -15,6 +15,9 @@ Questa cartella contiene la documentazione relativa al frontoffice del sito.
 Questa documentazione descrive come gestire e personalizzare il frontoffice del sito.
 ## Collegamenti tra versioni di README.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -91,6 +94,7 @@ Questa documentazione descrive come gestire e personalizzare il frontoffice del 
 * [README.md](laravel/modules/cms/docs/components/readme.md)
 * [README.md](laravel/themes/two/docs/readme.md)
 * [README.md](laravel/themes/one/docs/readme.md)
+<<<<<<< HEAD
 =======
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -169,3 +173,5 @@ Questa documentazione descrive come gestire e personalizzare il frontoffice del 
 * [README.md](laravel/Themes/Two/docs/README.md)
 * [README.md](laravel/Themes/One/docs/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

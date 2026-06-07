@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gestione delle Route con Laravel Folio in il progetto
 
 ## Indice
@@ -106,3 +107,12 @@ In il progetto, tutte le pagine principali del frontoffice utilizzano named rout
 4. **Verifica i Nomi delle Route**: Prima di utilizzare un nome di route, verifica che sia effettivamente definito in un file Folio.
 
 5. **Gestione Parametri**: Quando una route richiede parametri, passali come array associativo: `route('user.profile', ['id' => $userId])`.
+=======
+---
+module: theme
+topic: gestione_route_folio
+canonical: ../../../Themes/docs/shared-components/gestione-route-folio.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/gestione-route-folio.md
+>>>>>>> dev

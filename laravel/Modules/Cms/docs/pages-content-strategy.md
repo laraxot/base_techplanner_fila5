@@ -3,10 +3,14 @@
 ## Filosofia dei Contenuti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <main module> segue una filosofia di contenuti modulari e riutilizzabili che riflette la missione sociale del progetto: **garantire l'accesso alla salute orale per le gestanti vulnerabili**.
 =======
 <main module> segue una filosofia di contenuti modulari e riutilizzabili che riflette la missione sociale del progetto: **garantire l'accesso alla <slogan progetto> per le gestanti vulnerabili**.
 >>>>>>> 4b6b99016 (first commit)
+=======
+<main module> segue una filosofia di contenuti modulari e riutilizzabili che riflette la missione sociale del progetto: **garantire l'accesso alla salute orale per le gestanti vulnerabili**.
+>>>>>>> dev
 
 ### Principi Guida
 
@@ -22,12 +26,17 @@
 La pagina servizi deve comunicare:
 - **Cosa**: Servizi odontoiatrici gratuiti per gestanti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Chi**: Donne incinte con ISEE ≤ 20.000€ 
 - **Perché**: Salute orale cruciale per mamma e bambino
 =======
 - **Chi**: Donne incinte con ISEE ≤ 20.000€
 - **Perché**: <slogan progetto> cruciale per mamma e bambino
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Chi**: Donne incinte con ISEE ≤ 20.000€ 
+- **Perché**: Salute orale cruciale per mamma e bambino
+>>>>>>> dev
 - **Come**: Processo semplice e umano
 - **Dove**: Rete nazionale di professionisti qualificati
 
@@ -99,10 +108,14 @@ La pagina servizi deve comunicare:
 ### Parole Chiave SEO
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - salute orale gravidanza
 =======
 - <slogan progetto> gravidanza
 >>>>>>> 4b6b99016 (first commit)
+=======
+- salute orale gravidanza
+>>>>>>> dev
 - odontoiatra gratuito gestanti
 - ISEE 20000 cure dentali
 - prevenzione dentale gravidanza
@@ -111,6 +124,7 @@ La pagina servizi deve comunicare:
 ## Collegamenti Strategici
 
 - [Content Management](content-management.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [UI Components](../ui/project_docs/components.md)
 - [Theme Blocks](../../themes/one/project_docs/blocks.md)
@@ -123,3 +137,8 @@ La pagina servizi deve comunicare:
 
 *Ultimo aggiornamento: 2025-01-15*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [UI Components](../ui/project_docs/components.md)
+- [Theme Blocks](../../themes/one/project_docs/blocks.md)
+- [User Experience](../../../../docs/project/frontend/ux-guidelines.md)
+>>>>>>> dev

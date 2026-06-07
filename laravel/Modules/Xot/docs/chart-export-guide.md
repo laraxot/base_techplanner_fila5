@@ -1035,9 +1035,12 @@ $schedule->call(function () {
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento:** Dicembre 2025
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Framework:** Laraxot/PTVX
 **Filament:** 4.x
 **Chart.js:** 4.x

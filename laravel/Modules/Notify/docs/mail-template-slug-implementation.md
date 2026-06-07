@@ -3,6 +3,7 @@
 ## Collegamenti correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README del modulo Notify](./readme.md)
 - [Guida all'utilizzo di SpatieEmail](./spatie_email_usage_guide.md)
 - [Documentazione Template Email](./email_templates.md)
@@ -12,6 +13,12 @@
 - [Documentazione Template Email](./EMAIL_TEMPLATES.md)
 >>>>>>> 4b6b99016 (first commit)
 - [Documentazione Root](../../../../docs/collegamenti-documentazione.md)
+=======
+- [README del modulo Notify](./readme.md)
+- [Guida all'utilizzo di SpatieEmail](./spatie_email_usage_guide.md)
+- [Documentazione Template Email](./email_templates.md)
+- [Documentazione Root](../../../../../docs/collegamenti-documentazione.md)
+>>>>>>> dev
 
 ## Approccio Corretto per l'Implementazione
 

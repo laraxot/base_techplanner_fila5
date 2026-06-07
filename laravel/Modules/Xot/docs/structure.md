@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ### Versione HEAD
@@ -1070,3 +1071,6 @@ b6f667c (.)
 
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev

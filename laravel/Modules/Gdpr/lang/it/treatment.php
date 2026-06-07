@@ -16,6 +16,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'name' => [
             'label' => 'Nome Trattamento',
             'tooltip' => '',
@@ -75,6 +78,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         'name' => 'Nome Trattamento',
         'purpose' => 'Finalità',
@@ -92,6 +96,8 @@ return [
         'resetFilters' => [
             'label' => 'resetFilters',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'legal_bases' => [
@@ -103,6 +109,9 @@ return [
         'legitimate_interests' => 'Interessi Legittimi',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Treatment',
     'plural_label' => 'Treatment (Plurale)',
     'actions' => [
@@ -116,6 +125,9 @@ return [
             'label' => 'Elimina Treatment',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

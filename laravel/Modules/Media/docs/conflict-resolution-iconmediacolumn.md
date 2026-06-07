@@ -77,6 +77,7 @@ Il file `Modules/Media/app/Filament/Tables/Columns/IconMediaColumn.php` presenta
 
 - [module_media.md](module_media.md)
 - [filament_table_actions.md](filament_table_actions.md)
+<<<<<<< HEAD
 - [Modules/Media/docs/](../docs/)
 
 <<<<<<< HEAD
@@ -165,3 +166,7 @@ Il file `Modules/Media/app/Filament/Tables/Columns/IconMediaColumn.php` presenta
 
 *Ultimo aggiornamento: 29 luglio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Modules/Media/docs/](../../docs/)
+
+>>>>>>> dev

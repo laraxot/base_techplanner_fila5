@@ -16,6 +16,9 @@ return [
             'label' => 'reorderRecords',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'openColumnManager' => [
             'tooltip' => 'openColumnManager',
             'label' => 'openColumnManager',
@@ -107,10 +110,13 @@ return [
             'label' => 'location',
         ],
     ],
+<<<<<<< HEAD
 =======
     ],
     'label' => '',
     'plural_label' => '',
     'fields' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

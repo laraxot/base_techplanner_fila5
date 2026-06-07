@@ -107,8 +107,13 @@ class Section extends Component
 ## Collegamenti
 - [Gestione Sezioni](../section-management.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Blocchi](../blocks/readme.md)
 =======
 - [Documentazione Blocchi](../blocks/README.md)
 >>>>>>> 4b6b99016 (first commit)
 - [Documentazione Root](../../../../docs/components.md)
+=======
+- [Documentazione Blocchi](../blocks/readme.md)
+- [Documentazione Root](../../../../../docs/components.md)
+>>>>>>> dev

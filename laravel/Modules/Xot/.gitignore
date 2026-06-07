@@ -89,6 +89,15 @@ ehthumbs.db
 Thumbs.db
 *.exe
 
+<<<<<<< HEAD
+=======
+# Copy files (duplicati temporanei)
+* copy
+* copy.*
+*.copy
+*~
+
+>>>>>>> dev
 # ==============================================
 # BACKUP FILES
 # ==============================================
@@ -97,9 +106,20 @@ Thumbs.db
 *.old2
 *.backup
 *.backup.*
+<<<<<<< HEAD
 *.bak
 *.bakcup
 *.new
+=======
+*.backup-*
+*.backup_*
+*.bak
+*.bakcup
+*.new
+* copy.*
+* copy/
+*.copy
+>>>>>>> dev
 
 # ==============================================
 # DEVELOPMENT TOOLS
@@ -112,6 +132,11 @@ Thumbs.db
 # ==============================================
 docs/phpstan/
 docs/cache/
+<<<<<<< HEAD
+=======
+docs/archive/
+docs/archive/**
+>>>>>>> dev
 
 # ==============================================
 # OLD DIRECTORIES (LEGACY CLEANUP)
@@ -147,3 +172,19 @@ packages/temp/
 # END OF XOT .GITIGNORE
 # ==============================================
 lang/lang/
+<<<<<<< HEAD
+=======
+_docs/
+_docs/
+*.pest.php
+
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+*~HEAD
+*~BASE
+*~LOCAL
+*~REMOTE
+*.orig
+*.rej
+*~head
+
+>>>>>>> dev

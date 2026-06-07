@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://betterprogramming.pub/laravel-fail-retry-or-delay-a-queued-job-from-itself-41e0bb14440c
 
 
@@ -21,3 +22,12 @@ https://websolutionstuff.com/post/laravel-9-cron-job-task-scheduling-tutorial  !
 =======
 >>>>>>> 4b6b99016 (first commit)
 
+=======
+---
+module: theme
+topic: links
+canonical: ../../../Themes/docs/shared-components/links.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/links.txt
+>>>>>>> dev

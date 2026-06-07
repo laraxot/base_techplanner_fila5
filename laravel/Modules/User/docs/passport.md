@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Laravel Passport Documentation (Version 13.4.x)
 
 ## Overview
@@ -111,3 +112,12 @@ php artisan passport:client --personal
 
 ---
 *Questa documentazione riflette la versione stabile 13.4.x di Laravel Passport (stato: gennaio 2026).*
+=======
+---
+module: theme
+topic: passport
+canonical: ../../../Themes/docs/shared-components/passport-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/passport-Modules.md
+>>>>>>> dev

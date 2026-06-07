@@ -7,9 +7,12 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Database\Factories\ProfileTeamFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -46,6 +49,7 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @mixin IdeHelperProfileTeam
  *
+<<<<<<< HEAD
  * @property ProfileContract|null $deleter
  * @property Team|null            $team
  * @property User|null            $user
@@ -55,14 +59,31 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static ProfileTeamFactory factory($count = null, $state = [])
  *
 >>>>>>> 4b6b99016 (first commit)
+=======
+ * @property ProfileContract|null         $deleter
+ * @property Team|null                    $team
+ * @property User|null                    $user
+ * @property string|null                  $profile_id
+ * @property array<array-key, mixed>|null $permissions
+ *
+ * @method static Builder<static>|ProfileTeam                         childrenWith(array $relations)
+ * @method static Builder<static>|ProfileTeam                         childrenWithCount(array $relations)
+ * @method static \Modules\User\Database\Factories\ProfileTeamFactory factory($count = null, $state = [])
+ * @method static Builder<static>|ProfileTeam                         wherePermissions($value)
+ * @method static Builder<static>|ProfileTeam                         whereProfileId($value)
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class ProfileTeam extends TeamUser
 {
     /**
      * The table associated with the model.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> dev
      */
     protected $table = 'profile_team';
 }

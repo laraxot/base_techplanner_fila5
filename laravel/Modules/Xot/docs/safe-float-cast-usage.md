@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Esempi Pratici di Utilizzo di SafeFloatCastAction
 
 ## Panoramica
@@ -444,3 +445,12 @@ class Product extends BaseModel
 
 ---
 
+=======
+---
+module: theme
+topic: safe-float-cast-usage
+canonical: ../../../Themes/docs/shared-components/safe-float-cast-usage.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/safe-float-cast-usage.md
+>>>>>>> dev

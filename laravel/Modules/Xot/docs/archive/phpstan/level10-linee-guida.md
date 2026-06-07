@@ -66,10 +66,14 @@ protected function getInfolistSchema(): array
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per linee guida più dettagliate sul metodo `getInfolistSchema`, consultare il documento [INFOLIST_SCHEMA_GUIDELINES.md](../filament/infolist_schema_guidelines.md).
 =======
 Per linee guida più dettagliate sul metodo `getInfolistSchema`, consultare il documento [INFOLIST_SCHEMA_GUIDELINES.md](../filament/INFOLIST_SCHEMA_GUIDELINES.md).
 >>>>>>> 4b6b99016 (first commit)
+=======
+Per linee guida più dettagliate sul metodo `getInfolistSchema`, consultare il documento [INFOLIST_SCHEMA_GUIDELINES.md](../filament/infolist_schema_guidelines.md).
+>>>>>>> dev
 
 ## Gestione degli Errori Comuni
 

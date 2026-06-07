@@ -190,7 +190,10 @@ class WorkHourDashboard extends Component
             'date' => $entry->timestamp->format('Y-m-d'),
             'time' => $entry->timestamp->format('H:i'),
             'type' => $entry->type,
+<<<<<<< HEAD
             // @phpstan-ignore-next-line
+=======
+>>>>>>> dev
             'type_label' => ($entry->type instanceof WorkHourTypeEnum)
                 ? $entry->type->getLabel()
                 : ((string) $entry->type),

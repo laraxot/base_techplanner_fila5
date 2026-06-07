@@ -18,6 +18,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -99,6 +102,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         'name' => 'Nome',
         'guard_name' => 'Guard',
@@ -119,6 +123,8 @@ return [
         ],
         'uploaded_at' => 'Caricato il',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'actions' => [
         'import' => [
@@ -138,8 +144,13 @@ return [
         'label' => 'media.model',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Media',
     'plural_label' => 'Media (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Media',
+    'plural_label' => 'Media (Plurale)',
+>>>>>>> dev
 ];

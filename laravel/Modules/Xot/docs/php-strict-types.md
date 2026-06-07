@@ -48,11 +48,15 @@ This document provides guidelines for using strict typing in PHP within a Larave
 
 ## Links to Related Documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Code Quality](./code_quality.md)
 - [PHPStan Implementation Guide](./phpstan-implementation-guide.md)
 - [Naming Conventions](./naming-conventions.md)
 - [Service Provider Best Practices](./service-provider-best-practices.md)
 - [Filament Best Practices](./filament-best-practices.md)
+<<<<<<< HEAD
 =======
 - [Code Quality](./CODE_QUALITY.md)
 - [PHPStan Implementation Guide](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
@@ -60,3 +64,5 @@ This document provides guidelines for using strict typing in PHP within a Larave
 - [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
 - [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

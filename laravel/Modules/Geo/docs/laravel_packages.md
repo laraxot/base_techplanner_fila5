@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 -----------------------------------------------
 https://gasparesganga.com/labs/php-shapefile/
 -----------------------------------------------
@@ -83,3 +84,12 @@ https://ourcodeworld.com/articles/read/1019/how-to-find-nearest-locations-from-a
 -----------------------------------------------
 -----------------------------------------------
 -----------------------------------------------
+=======
+---
+module: theme
+topic: laravel_packages
+canonical: ../../../Themes/docs/shared-components/laravel-packages-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/laravel-packages-Modules.md
+>>>>>>> dev

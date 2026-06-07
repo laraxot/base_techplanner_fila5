@@ -26,20 +26,27 @@ Questa scelta garantisce:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Struttura moduli Xot](./module_namespace_rules.md)
 - [Best Practices Provider](./best-practices.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./module_namespace_rules.md)
 - [docs/BEST-PRACTICES.md](./best-practices.md)
+<<<<<<< HEAD
 =======
 - [Struttura moduli Xot](./MODULE_NAMESPACE_RULES.md)
 - [Best Practices Provider](./BEST-PRACTICES.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
 - [docs/BEST-PRACTICES.md](./BEST-PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 - [docs/links.md globale](../../../../project_docs/links.md)
 
 ## Backlink
 - [docs/links.md](../../../../project_docs/links.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [docs/MODULE_NAMESPACE_RULES.md](./module_namespace_rules.md)
 - [docs/BEST-PRACTICES.md](./best-practices.md)
@@ -47,6 +54,10 @@ Questa scelta garantisce:
 - [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
 - [docs/BEST-PRACTICES.md](./BEST-PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [docs/MODULE_NAMESPACE_RULES.md](./module_namespace_rules.md)
+- [docs/BEST-PRACTICES.md](./best-practices.md)
+>>>>>>> dev
 # Risoluzione Conflitto: XotBaseServiceProvider
 
 ## Contesto
@@ -75,6 +86,7 @@ Questa scelta garantisce:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Struttura moduli Xot](./module_namespace_rules.md)
 - [Best Practices Provider](./best-practices.md)
 =======
@@ -92,3 +104,13 @@ Questa scelta garantisce:
 - [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
 - [docs/BEST-PRACTICES.md](./BEST-PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Struttura moduli Xot](./module_namespace_rules.md)
+- [Best Practices Provider](./best-practices.md)
+- [docs/links.md globale](../../../../../docs/links.md)
+
+## Backlink
+- [docs/links.md](../../../../../docs/links.md)
+- [docs/MODULE_NAMESPACE_RULES.md](./module_namespace_rules.md)
+- [docs/BEST-PRACTICES.md](./best-practices.md)
+>>>>>>> dev

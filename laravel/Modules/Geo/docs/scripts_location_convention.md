@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Convenzione Posizione Script
 
 ## Regola Fondamentale
@@ -156,3 +157,12 @@ find ./bashscripts ./Modules/*/bashscripts ./docker -name "*.sh" -type f
 
 **Questa convenzione è OBBLIGATORIA per tutti gli script del progetto.**
 
+=======
+---
+module: theme
+topic: scripts_location_convention
+canonical: ../../../Themes/docs/shared-components/scripts-location-convention.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/scripts-location-convention.md
+>>>>>>> dev

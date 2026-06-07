@@ -30,16 +30,6 @@ L'implementazione corretta degli allegati richiede una struttura specifica. Ecco
    $attachments = [
        [
 <<<<<<< HEAD
-           'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
-=======
-           'path' => 'public_html/images/avatars/default-3.svg',
-           'path' => 'public_html/images/avatars/default-3.svg',
-           'path' => 'public_html/images/avatars/default-3.svg',
->>>>>>> 4b6b99016 (first commit)
-           'as' => 'logo.png',
-           'mime' => 'image/png'
-       ],
-       [
 <<<<<<< HEAD
            'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
 =======
@@ -47,6 +37,28 @@ L'implementazione corretta degli allegati richiede una struttura specifica. Ecco
            'path' => 'public_html/images/avatars/default-3.svg',
            'path' => 'public_html/images/avatars/default-3.svg',
 >>>>>>> 4b6b99016 (first commit)
+=======
+           'path' => 'public_html/images/avatars/default-3.svg',
+           'path' => 'public_html/images/avatars/default-3.svg',
+           'path' => 'public_html/images/avatars/default-3.svg',
+>>>>>>> dev
+           'as' => 'logo.png',
+           'mime' => 'image/png'
+       ],
+       [
+<<<<<<< HEAD
+<<<<<<< HEAD
+           'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
+=======
+           'path' => 'public_html/images/avatars/default-3.svg',
+           'path' => 'public_html/images/avatars/default-3.svg',
+           'path' => 'public_html/images/avatars/default-3.svg',
+>>>>>>> 4b6b99016 (first commit)
+=======
+           'path' => 'public_html/images/avatars/default-3.svg',
+           'path' => 'public_html/images/avatars/default-3.svg',
+           'path' => 'public_html/images/avatars/default-3.svg',
+>>>>>>> dev
            'as' => 'logo.png',
            'mime' => 'image/png'
        ]
@@ -75,16 +87,22 @@ L'implementazione corretta degli allegati richiede una struttura specifica. Ecco
    // Creare l'istanza dell'email
    $email = new SpatieEmail($user, 'due');
 <<<<<<< HEAD
+<<<<<<< HEAD
    
    // Aggiungere gli allegati
    $email->addAttachments($attachments);
    
 =======
+=======
+>>>>>>> dev
 
    // Aggiungere gli allegati
    $email->addAttachments($attachments);
 
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
    // Inviare l'email
    Mail::to($data['to'])
        ->locale('it')
@@ -150,10 +168,14 @@ L'implementazione corretta dimostra che:
    - Considerare la validazione
    - Implementare logging
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Aggiungere monitoraggio 
 =======
    - Aggiungere monitoraggio
 >>>>>>> 4b6b99016 (first commit)
+=======
+   - Aggiungere monitoraggio
+>>>>>>> dev
 
 ## Visualizzazione Parametri come Badge
 
@@ -204,8 +226,11 @@ L'implementazione corretta dimostra che:
 Input: "name, email, company, date"
 Output: [name] [email] [company] [date] (come badge blu)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ``` 
 =======
+=======
+>>>>>>> dev
 ```
 # Note di Implementazione Email
 
@@ -390,4 +415,7 @@ L'implementazione corretta dimostra che:
 Input: "name, email, company, date"
 Output: [name] [email] [company] [date] (come badge blu)
 ```
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

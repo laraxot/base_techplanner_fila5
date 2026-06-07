@@ -14,6 +14,9 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 
 ## Collegamenti tra versioni di README.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -90,6 +93,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../cms/project_docs/components/readme.md)
 * [README.md](../../../../themes/two/project_docs/readme.md)
 * [README.md](../../../../themes/one/project_docs/readme.md)
+<<<<<<< HEAD
 =======
 * [README.md](bashscripts/project_docs/README.md)
 * [README.md](bashscripts/project_docs/it/README.md)
@@ -168,6 +172,8 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../../Themes/Two/project_docs/README.md)
 * [README.md](../../../../Themes/One/project_docs/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 # Standard Xot: Ereditarietà dei Modelli
 
@@ -180,11 +186,15 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Modello Doctor (Patient)](../../../patient/project_docs/models/doctor.md)
 - [Gestione campi e migrazioni con STI (README Patient)](../../../patient/project_docs/readme.md)
 - [DoctorResource: Step Informazioni Personali (Patient)](../../../patient/project_docs/filament/resources/doctor-resource.md)
 - [Struttura progetto e STI (Patient)](../../../patient/project_docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../patient/project_docs/database/migrations.md)
+<<<<<<< HEAD
 =======
 - [Modello Doctor (Patient)](../../../Patient/project_docs/Models/Doctor.md)
 - [Gestione campi e migrazioni con STI (README Patient)](../../../Patient/project_docs/README.md)
@@ -192,6 +202,8 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 - [Struttura progetto e STI (Patient)](../../../Patient/project_docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../Patient/project_docs/database/migrations.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## Regola generale
 
@@ -214,8 +226,12 @@ class Doctor extends User
 
 ## Moduli che applicano questa regola
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Patient: Modello Doctor](../../../patient/project_docs/models/doctor.md)
 =======
 - [Patient: Modello Doctor](../../../Patient/project_docs/Models/Doctor.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Patient: Modello Doctor](../../../patient/project_docs/models/doctor.md)
+>>>>>>> dev
 // Aggiungere qui altri moduli se necessario

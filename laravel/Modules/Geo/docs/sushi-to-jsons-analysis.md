@@ -41,10 +41,14 @@ class Comune extends Model
 {
     use SushiToJsons;
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     protected $schema = [
         'id' => 'string',
         'nome' => 'string',
@@ -56,10 +60,14 @@ class Comune extends Model
         'popolazione' => 'integer'
     ];
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     protected $casts = [
         'regione' => 'array',
         'provincia' => 'array',
@@ -201,19 +209,27 @@ class Comune extends Model
 {
     use SushiToJsons;
 <<<<<<< HEAD
-    
-=======
-
->>>>>>> 4b6b99016 (first commit)
-    /**
-     * Indica a Sushi di non utilizzare timestamps
-     */
-    public $timestamps = false;
 <<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
+    /**
+     * Indica a Sushi di non utilizzare timestamps
+     */
+    public $timestamps = false;
+<<<<<<< HEAD
+<<<<<<< HEAD
+    
+=======
+
+>>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     /**
      * Definizione dello schema per i campi
      */
@@ -227,10 +243,14 @@ class Comune extends Model
         'popolazione' => 'integer'
     ];
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     /**
      * Cast per le colonne JSON
      */
@@ -240,10 +260,14 @@ class Comune extends Model
         'cap' => 'array',
     ];
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     /**
      * Recupera le regioni
      */
@@ -253,6 +277,7 @@ class Comune extends Model
                      ->orderBy('nome');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     // Implementazione di altri metodi e scope...
     
@@ -261,6 +286,11 @@ class Comune extends Model
     // Implementazione di altri metodi e scope...
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+    // Implementazione di altri metodi e scope...
+    
+>>>>>>> dev
     /**
      * Prepopola i file JSON dai dati esistenti (da eseguire una tantum)
      */
@@ -269,6 +299,9 @@ class Comune extends Model
         $path = module_path('Geo', 'resources/json/comuni.json');
         $comuni = json_decode(file_get_contents($path), true);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         
         $basePath = TenantService::filePath('database/content/comuni');
         
@@ -276,6 +309,7 @@ class Comune extends Model
             File::makeDirectory($basePath, 0755, true, true);
         }
         
+<<<<<<< HEAD
 =======
 
         $basePath = TenantService::filePath('database/content/comuni');
@@ -285,6 +319,8 @@ class Comune extends Model
         }
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         foreach ($comuni as $index => $comune) {
             $id = $index + 1;
             $comune['id'] = $id;
@@ -330,6 +366,7 @@ trait GeoSushi
 {
     use \Sushi\Sushi;
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     protected const CACHE_TTL = 604800; // 1 settimana
     
@@ -338,42 +375,63 @@ trait GeoSushi
     protected const CACHE_TTL = 604800; // 1 settimana
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+    protected const CACHE_TTL = 604800; // 1 settimana
+    
+>>>>>>> dev
     public function getRows()
     {
         $path = module_path('Geo', 'resources/json/comuni.json');
         $cacheKey = 'geo_comuni_json_' . md5($path);
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         return Cache::rememberForever($cacheKey, function () use ($path) {
             return json_decode(file_get_contents($path), true);
         });
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     protected function sushiShouldCache()
     {
         return true;
     }
 <<<<<<< HEAD
-    
-=======
-
->>>>>>> 4b6b99016 (first commit)
-    protected function sushiCacheReferencePath()
-    {
-        return module_path('Geo', 'resources/json/comuni.json');
-    }
 <<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
+    protected function sushiCacheReferencePath()
+    {
+        return module_path('Geo', 'resources/json/comuni.json');
+    }
+<<<<<<< HEAD
+<<<<<<< HEAD
+    
+=======
+
+>>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     /**
      * Metodo per aggiornare il file JSON principale
      * Implementa la logica di persistenza solo quando necessaria
@@ -383,10 +441,14 @@ trait GeoSushi
         $path = module_path('Geo', 'resources/json/comuni.json');
         $data = json_decode(file_get_contents($path), true);
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         foreach ($updates as $update) {
             $index = array_search($update['codice'], array_column($data, 'codice'));
             if ($index !== false) {
@@ -394,6 +456,7 @@ trait GeoSushi
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         $result = file_put_contents($path, json_encode($data, JSON_PRETTY_PRINT));
         
@@ -402,6 +465,11 @@ trait GeoSushi
         $result = file_put_contents($path, json_encode($data, JSON_PRETTY_PRINT));
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+        $result = file_put_contents($path, json_encode($data, JSON_PRETTY_PRINT));
+        
+>>>>>>> dev
         if ($result) {
             // Invalida la cache
             static::clearSushiCache();
@@ -409,10 +477,14 @@ trait GeoSushi
             return true;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         return false;
     }
 }
@@ -452,8 +524,12 @@ Questo approccio offre il miglior equilibrio tra performance, flessibilità e ma
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Documento creato il: 28/05/2025*  
 =======
 *Documento creato il: 28/05/2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+*Documento creato il: 28/05/2025*  
+>>>>>>> dev
 *Autore: Team <main module>*

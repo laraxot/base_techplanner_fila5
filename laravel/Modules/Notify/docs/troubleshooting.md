@@ -43,11 +43,15 @@ This document provides guidance on diagnosing and resolving common issues encoun
 
 ## Links to Related Documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Notify Module Index](./index.md)
 - [Architecture Overview](./architecture.md)
 - [Notification Channels Implementation](./notification_channels_implementation.md)
 - [Email Templates](./email_templates.md)
 - [SMS Implementation](./sms_implementation.md)
+<<<<<<< HEAD
 =======
 - [Notify Module Index](./INDEX.md)
 - [Architecture Overview](./ARCHITECTURE.md)
@@ -55,3 +59,5 @@ This document provides guidance on diagnosing and resolving common issues encoun
 - [Email Templates](./EMAIL_TEMPLATES.md)
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

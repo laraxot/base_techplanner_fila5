@@ -9,6 +9,7 @@
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< HEAD
 - [Documentazione Principale sui Problemi di Namespace](../../../../docs/references/namespace-issues.md)
 <<<<<<< HEAD
 - [Documentazione del Modulo Patient](../patient/docs/errors/undefined-type-pending.md)
@@ -17,6 +18,11 @@
 - [Documentazione del Modulo Patient](../Patient/docs/errors/undefined-type-pending.md)
 - [Riferimento alle Linee Guida nel Modulo Patient](../Patient/docs/references/filament-guidelines-link.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione Principale sui Problemi di Namespace](../../../../../docs/references/namespace-issues.md)
+- [Documentazione del Modulo Patient](../patient/docs/errors/undefined-type-pending.md)
+- [Riferimento alle Linee Guida nel Modulo Patient](../patient/docs/references/filament-guidelines-link.md)
+>>>>>>> dev
 
 ## Note
 

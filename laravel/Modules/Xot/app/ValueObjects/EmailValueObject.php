@@ -12,8 +12,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\ValueObjects;
 
+<<<<<<< HEAD
 use InvalidArgumentException;
 
+=======
+>>>>>>> dev
 class EmailValueObject
 {
     public function __construct(
@@ -21,7 +24,11 @@ class EmailValueObject
         public string $email,
     ) {
         if (! filter_var($email, FILTER_VALIDATE_EMAIL)) {
+<<<<<<< HEAD
             throw new InvalidArgumentException(sprintf('Email address %s is considered valid.', $email));
+=======
+            throw new \InvalidArgumentException(sprintf('Email address %s is considered valid.', $email));
+>>>>>>> dev
         }
     }
 }

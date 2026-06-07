@@ -6,6 +6,7 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 class OauthPersonalAccessClientFactory extends Factory
 {
@@ -21,6 +22,9 @@ class OauthPersonalAccessClientFactory extends Factory
     {
         return [];
 =======
+=======
+use Modules\User\Models\OauthClient;
+>>>>>>> dev
 use Modules\User\Models\OauthPersonalAccessClient;
 
 /**
@@ -35,9 +39,14 @@ class OauthPersonalAccessClientFactory extends Factory
     public function definition(): array
     {
         return [
+<<<<<<< HEAD
             'uuid' => (string) $this->faker->uuid(),
             'client_id' => (string) $this->faker->uuid(),
         ];
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'client_id' => OauthClient::factory()->asPersonalAccessTokenClient()->create()->id,
+        ];
+>>>>>>> dev
     }
 }

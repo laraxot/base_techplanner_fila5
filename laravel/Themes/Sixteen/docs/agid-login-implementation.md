@@ -186,6 +186,9 @@ I seguenti testi sono **intenzionalmente hardcoded** per garantire conformità A
 - [Login Component](../../../laravel/Modules/User/app/Http/Livewire/Auth/Login.php)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

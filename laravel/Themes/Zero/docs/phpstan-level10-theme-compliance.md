@@ -44,6 +44,25 @@ Assert::string($url, 'URL must be a string');
 Assert::isInstanceOf($user, Authenticatable::class);
 ```
 
+<<<<<<< HEAD
+=======
+### 4. Tipizzazione Utenti (UserContract)
+
+**In Laraxot PTVX**, non usare mai `Model|null` per riferirsi agli utenti autenticabili nei temi o nei moduli. Utilizzare sempre `Modules\Xot\Contracts\UserContract`.
+
+```php
+use Modules\Xot\Contracts\UserContract;
+
+/**
+ * @param UserContract|null $user
+ */
+public function viewAny(?UserContract $user): bool
+{
+    return true;
+}
+```
+
+>>>>>>> dev
 ## 🔧 Implementazioni Specifiche per Temi
 
 ### 1. Blade Components
@@ -164,7 +183,11 @@ Tratta le collections con type safety:
 ### 1. DashboardFilterData Pattern
 
 ```php
+<<<<<<< HEAD
 // Pattern da Quaeris/DashboardFilterData.php
+=======
+// Pattern da healthcare_app/DashboardFilterData.php
+>>>>>>> dev
 foreach ($components as $k => $component) {
     if (! $component instanceof Component) {
         continue;
@@ -177,7 +200,11 @@ foreach ($components as $k => $component) {
 ### 2. QueryExport Pattern
 
 ```php
+<<<<<<< HEAD
 // Pattern da Quaeris/QueryExport.php
+=======
+// Pattern da healthcare_app/QueryExport.php
+>>>>>>> dev
 $processed = $collection->mapWithKeys(
     static function (int|string $value, int $key): array {
         return [(string) $value => $value];
@@ -235,7 +262,11 @@ $merged = array_merge($this->data ?? [], $data);
 ## 📚 Riferimenti Incrociati
 
 - **Xot Module**: `Modules/Xot/docs/phpstan-level10-xot-fixes.md`
+<<<<<<< HEAD
 - **Quaeris Module**: `Modules/Quaeris/docs/phpstan-level10-quaeris-fixes.md`
+=======
+- **healthcare_app Module**: `Modules/healthcare_app/docs/phpstan-level10-healthcare_app-fixes.md`
+>>>>>>> dev
 - **User Module**: `Modules/User/docs/phpstan-level10-user-fixes.md`
 
 ## 🚀 Prossimi Passi

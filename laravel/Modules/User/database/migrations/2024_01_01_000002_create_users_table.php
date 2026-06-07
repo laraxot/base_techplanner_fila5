@@ -11,10 +11,15 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  */
 return new class extends XotBaseMigration {
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $connection = 'user';
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    protected $connection = 'user';
+
+>>>>>>> dev
     /**
      * Run the migrations.
      */
@@ -25,10 +30,14 @@ return new class extends XotBaseMigration {
             // $table->uuid('id')->primary();
             $table->string('id', 36)->primary();
 <<<<<<< HEAD
+<<<<<<< HEAD
             $table->string('name')->nullable();
 =======
             $table->string('name');
 >>>>>>> 4b6b99016 (first commit)
+=======
+            $table->string('name')->nullable();
+>>>>>>> dev
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('email')->unique();
@@ -41,14 +50,20 @@ return new class extends XotBaseMigration {
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             $table->string('lang', 3)->nullable();
             $table->string('type')->index()->nullable();
             $table->string('state')->index()->nullable();
             $table->boolean('is_active')->default(true);
             $table->boolean('is_otp')->default(false);
             $table->timestamp('password_expires_at')->nullable();
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             $table->softDeletes();
         });
         // -- UPDATE --
@@ -82,12 +97,18 @@ return new class extends XotBaseMigration {
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             if (! $this->hasColumn('state')) {
                 $table->string('state')->index()->nullable();
             }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
             if (! $this->hasColumn('is_active')) {
                 $table->boolean('is_active')->default(true);
             }

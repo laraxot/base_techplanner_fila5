@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filament Blade Components Usage (CMS)
 
 ## Collegamenti
@@ -33,3 +34,12 @@ Per le best practice di **Filament** (https://filamentphp.com/project_docs/3.x/s
 * [filament-blade-components.md](laravel/modules/cms/project_docs/filament-blade-components.md)
 * [filament-blade-components.md](laravel/themes/one/project_docs/filament-blade-components.md)
 
+=======
+---
+module: theme
+topic: filament_blade_components
+canonical: ../../../Themes/docs/shared-components/filament-blade-components.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-blade-components.md
+>>>>>>> dev

@@ -104,8 +104,12 @@ grep -r "public static function" Modules/ --include="*.php" | grep "Action"
 
 - [Action Execution Pattern](../.cursor/rules/action-execution-pattern.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [DRY Actions Rules](../.cursor/rules/dry-actions-rules.md)
 =======
 - [DRY Actions Rules](../.cursor/rules/DRY-actions-rules.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [DRY Actions Rules](../.cursor/rules/dry-actions-rules.md)
+>>>>>>> dev
 - [Spatie QueueableAction Documentation](https://github.com/spatie/laravel-queueable-action)

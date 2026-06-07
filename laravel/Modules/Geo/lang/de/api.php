@@ -9,99 +9,153 @@ return [
             'placeholder' => 'API-Endpoint eingeben',
             'help' => 'URL des API-Endpoints',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'method' => [
             'label' => 'Methode',
             'placeholder' => 'HTTP-Methode auswählen',
             'help' => 'HTTP-Methode für die Anfrage',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'headers' => [
             'label' => 'Header',
             'placeholder' => 'Anfrage-Header konfigurieren',
             'help' => 'HTTP-Header für die Anfrage',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'parameters' => [
             'label' => 'Parameter',
             'placeholder' => 'Anfrageparameter konfigurieren',
             'help' => 'Parameter für die API-Anfrage',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'body' => [
             'label' => 'Body',
             'placeholder' => 'Anfrage-Body eingeben',
             'help' => 'HTTP-Anfrage-Body',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'timeout' => [
             'label' => 'Timeout',
             'placeholder' => 'Timeout in Sekunden eingeben',
             'help' => 'Anfrage-Timeout in Sekunden',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'retries' => [
             'label' => 'Wiederholungen',
             'placeholder' => 'Anzahl der Wiederholungen eingeben',
             'help' => 'Anzahl der Wiederholungen für die Anfrage',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'rate_limit' => [
             'label' => 'Rate-Limit',
             'placeholder' => 'Rate-Limit eingeben',
             'help' => 'Anfragen pro Minute Limit',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'authentication' => [
-            'label' => 'Authentifizierung',
-            'placeholder' => 'Authentifizierung konfigurieren',
-            'help' => 'API-Authentifizierungskonfiguration',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'authentication' => [
+            'label' => 'Authentifizierung',
+            'placeholder' => 'Authentifizierung konfigurieren',
+            'help' => 'API-Authentifizierungskonfiguration',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'validation' => [
@@ -193,6 +247,9 @@ return [
     ],
     'status_codes' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         200 => '200 - OK',
         201 => '201 - Created',
         204 => '204 - No Content',
@@ -216,6 +273,7 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
+<<<<<<< HEAD
 =======
         '200' => '200 - OK',
         '201' => '201 - Created',
@@ -230,5 +288,7 @@ return [
         '503' => '503 - Service Unavailable',
         '504' => '504 - Gateway Timeout',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
 ];

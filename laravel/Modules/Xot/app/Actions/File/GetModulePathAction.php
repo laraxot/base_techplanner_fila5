@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
+<<<<<<< HEAD
 use Exception;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
@@ -12,6 +13,16 @@ use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\scandir;
 
+=======
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
+use Nwidart\Modules\Facades\Module;
+
+use function Safe\scandir;
+
+use Spatie\QueueableAction\QueueableAction;
+
+>>>>>>> dev
 class GetModulePathAction
 {
     use QueueableAction;
@@ -19,14 +30,23 @@ class GetModulePathAction
     /**
      * Ottiene il percorso di un modulo.
      *
+<<<<<<< HEAD
      * @param  string  $moduleName  Il nome del modulo
+=======
+     * @param string $moduleName Il nome del modulo
+     *
+>>>>>>> dev
      * @return string Il percorso completo del modulo
      */
     public function execute(string $moduleName): string
     {
         try {
             $module_path = Module::getModulePath($moduleName);
+<<<<<<< HEAD
         } catch (Exception) {
+=======
+        } catch (\Exception) {
+>>>>>>> dev
             $modulesPath = base_path('Modules');
             if (! File::exists($modulesPath)) {
                 return __DIR__.'/../';
@@ -44,7 +64,11 @@ class GetModulePathAction
             })->first();
 
             // Se non troviamo il modulo, restituiamo un percorso di fallback
+<<<<<<< HEAD
             if ($foundModule === null || ! is_string($foundModule)) {
+=======
+            if (null === $foundModule || ! is_string($foundModule)) {
+>>>>>>> dev
                 return base_path('Modules/'.$moduleName);
             }
 

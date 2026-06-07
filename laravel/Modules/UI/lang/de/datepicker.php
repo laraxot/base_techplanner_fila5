@@ -8,6 +8,9 @@ return [
     'today' => 'Oggi',
     'months' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         0 => 'Gennaio',
         1 => 'Febbraio',
         2 => 'Marzo',
@@ -51,6 +54,7 @@ return [
     'fields' => [
     ],
     'actions' => [
+<<<<<<< HEAD
 =======
         '0' => 'Gennaio',
         '1' => 'Febbraio',
@@ -83,5 +87,7 @@ return [
         '5' => 'Ven',
         '6' => 'Sab',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
 ];

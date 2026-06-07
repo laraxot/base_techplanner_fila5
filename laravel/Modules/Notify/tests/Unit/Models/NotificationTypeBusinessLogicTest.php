@@ -2,10 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(\Modules\Notify\Tests\TestCase::class);
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Notify\Models\NotificationType;
+=======
+namespace Modules\Notify\Tests\Unit\Models;
+
+uses(TestCase::class);
+
+use Illuminate\Database\Eloquent\Model;
+use Modules\Notify\Models\NotificationType;
+use Modules\Notify\Tests\TestCase;
+>>>>>>> dev
 
 describe('NotificationType Business Logic', function () {
     test('notification type extends eloquent model', function () {

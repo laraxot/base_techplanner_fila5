@@ -1,10 +1,14 @@
 # Model/Factory/Seeder Audit
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Generated: [DATE] 16:20
 =======
 Generated: 2025-08-22 16:20
 >>>>>>> 4b6b99016 (first commit)
+=======
+Generated: [DATE] 16:20
+>>>>>>> dev
 
 ## Coverage
 - Models: Activity, Snapshot, StoredEvent

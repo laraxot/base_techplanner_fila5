@@ -117,6 +117,7 @@ Le altre ottimizzazioni sono in fase di implementazione:
 
 ## Collegamenti tra versioni di optimization.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [optimization.md](laravel/modules/xot/docs/roadmap/performance/optimization.md)
 * [optimization.md](laravel/modules/job/docs/optimization.md)
 * [optimization.md](laravel/modules/cms/docs/roadmap/performance/optimization.md)
@@ -125,3 +126,8 @@ Le altre ottimizzazioni sono in fase di implementazione:
 * [optimization.md](laravel/Modules/Job/docs/optimization.md)
 * [optimization.md](laravel/Modules/Cms/docs/roadmap/performance/optimization.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [optimization.md](laravel/modules/xot/docs/roadmap/performance/optimization.md)
+* [optimization.md](laravel/modules/job/docs/optimization.md)
+* [optimization.md](laravel/modules/cms/docs/roadmap/performance/optimization.md)
+>>>>>>> dev

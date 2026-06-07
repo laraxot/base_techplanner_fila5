@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AVVERTENZA: Modifiche ai ServiceProvider Base
 
 ## Introduzione
@@ -282,3 +283,12 @@ Le modifiche ai ServiceProvider possono sembrare una soluzione rapida per proble
 - [XotBaseServiceProvider.md](Modules/Xot/docs/providers/xotbaseserviceprovider.md)
 - [SERVICE-PROVIDER-BEST-PRACTICES.md](Modules/Xot/docs/SERVICE-PROVIDER-BEST-PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: service-provider-warning
+canonical: ../../../Themes/docs/shared-components/service-provider-warning.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/service-provider-warning.md
+>>>>>>> dev

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /*
      * |--------------------------------------------------------------------------
@@ -12,11 +13,14 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'column.name' => 'Nama',
     'column.guard_name' => 'Nama Penjaga',
     'column.roles' => 'Peran',
     'column.permissions' => 'Izin',
     'column.updated_at' => 'Dirubah',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     /*
@@ -26,11 +30,14 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'field.name' => 'Nama',
     'field.guard_name' => 'Nama Penjaga',
     'field.permissions' => 'Izin',
     'field.select_all.name' => 'Pilih Semua',
     'field.select_all.message' => 'Aktifkan semua izin yang <span class="text-primary font-medium">Tersedia</span> untuk Peran ini.',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     /*
@@ -40,11 +47,14 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'nav.group' => 'Pelindung',
     'nav.role.label' => 'Peran',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Peran',
     'resource.label.roles' => 'Peran',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     /*
@@ -54,12 +64,17 @@ return [
      */
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     'section' => 'Entitas',
     'resources' => 'Sumber Daya',
     'widgets' => 'Widget',
     'pages' => 'Halaman',
     'custom' => 'Izin Kustom',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'forbidden' => 'Kamu tidak punya izin akses',
     'navigation' => [
         'label' => 'Missing Navigation Label',
@@ -74,6 +89,7 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
     /*
      * |--------------------------------------------------------------------------
@@ -102,4 +118,6 @@ return [
     //     'restore_any' => 'Restore Any',
     // ],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

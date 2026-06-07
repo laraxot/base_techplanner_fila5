@@ -12,6 +12,9 @@ return [
         'icon' => 'heroicon-o-squares-2x2',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Ui',
     'plural_label' => 'Ui (Plurale)',
     'fields' => [
@@ -45,6 +48,9 @@ return [
             'label' => 'Elimina Ui',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

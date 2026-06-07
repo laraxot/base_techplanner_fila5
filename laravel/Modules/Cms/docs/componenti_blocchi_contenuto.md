@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Componenti e Blocchi di Contenuto in il progetto
 
 ## Introduzione
@@ -163,3 +164,12 @@ Prima di implementare modifiche ai file JSON:
 ## Conclusione
 
 Rispettare la struttura dei blocchi di contenuto e utilizzare solo componenti esistenti è fondamentale per garantire il corretto funzionamento del sistema di gestione dei contenuti di il progetto. In caso di dubbio, è sempre meglio esaminare i file JSON esistenti per comprendere la struttura e i componenti disponibili.
+=======
+---
+module: theme
+topic: componenti_blocchi_contenuto
+canonical: ../../../Themes/docs/shared-components/componenti-blocchi-contenuto.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/componenti-blocchi-contenuto.md
+>>>>>>> dev

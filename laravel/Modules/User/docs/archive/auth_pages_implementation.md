@@ -1,8 +1,13 @@
 # Implementazione Corretta delle Pagine Auth 
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [Documentazione centrale](../../../docs/readme.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
+=======
+- [Documentazione centrale](../../../../docs/readme.md)
+- [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+>>>>>>> dev
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Volt Errors](./volt_errors.md)
@@ -11,7 +16,11 @@
 
 ## Introduzione
 
+<<<<<<< HEAD
 Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di SaluteOra, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
+=======
+Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di Laraxot, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
+>>>>>>> dev
 
 ## Struttura delle Directory
 

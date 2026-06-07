@@ -2,10 +2,14 @@
 
 **Module**: Cms
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Date**: [DATE]
 =======
 **Date**: 2025-10-02
 >>>>>>> 4b6b99016 (first commit)
+=======
+**Date**: [DATE]
+>>>>>>> dev
 **Reference**: [design-comuni-pagine-statiche v2.4.0](https://github.com/italia/design-comuni-pagine-statiche)
 **Compliance Status**: **80%** ✅
 
@@ -530,9 +534,13 @@ class Page extends BaseModel
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 **Last Updated**: 2025-10-02
 **Next Review**: Bi-weekly
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 **Owner**: Cms Module Team

@@ -6,7 +6,10 @@ namespace Modules\Xot\Exceptions\Handlers;
 
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
+<<<<<<< HEAD
 use Throwable;
+=======
+>>>>>>> dev
 
 class HandlerDecorator implements ExceptionHandler
 {
@@ -27,7 +30,11 @@ class HandlerDecorator implements ExceptionHandler
         return \call_user_func_array($callable, $parameters);
     }
 
+<<<<<<< HEAD
     public function report(Throwable $e): void
+=======
+    public function report(\Throwable $e): void
+>>>>>>> dev
     {
         foreach ($this->repository->getReportersByException($e) as $reporter) {
             if (is_callable($reporter)) {
@@ -38,7 +45,11 @@ class HandlerDecorator implements ExceptionHandler
         $this->defaultHandler->report($e);
     }
 
+<<<<<<< HEAD
     public function render($request, Throwable $e): SymfonyResponse
+=======
+    public function render($request, \Throwable $e): SymfonyResponse
+>>>>>>> dev
     {
         foreach ($this->repository->getRenderersByException($e) as $renderer) {
             if (is_callable($renderer)) {
@@ -55,7 +66,11 @@ class HandlerDecorator implements ExceptionHandler
     /**
      * @phpstan-ignore-next-line
      */
+<<<<<<< HEAD
     public function renderForConsole($output, Throwable $e): void
+=======
+    public function renderForConsole($output, \Throwable $e): void
+>>>>>>> dev
     {
         foreach ($this->repository->getConsoleRenderersByException($e) as $renderer) {
             if (is_callable($renderer)) {
@@ -63,7 +78,11 @@ class HandlerDecorator implements ExceptionHandler
             }
         }
 
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line */
+=======
+        /* @phpstan-ignore-next-line */
+>>>>>>> dev
         $this->defaultHandler->renderForConsole($output, $e);
     }
 
@@ -82,7 +101,11 @@ class HandlerDecorator implements ExceptionHandler
         return $this->repository->addConsoleRenderer($renderer);
     }
 
+<<<<<<< HEAD
     public function shouldReport(Throwable $e): bool
+=======
+    public function shouldReport(\Throwable $e): bool
+>>>>>>> dev
     {
         return $this->defaultHandler->shouldReport($e);
     }

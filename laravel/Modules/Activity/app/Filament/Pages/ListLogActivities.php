@@ -7,9 +7,12 @@ namespace Modules\Activity\Filament\Pages;
 use Exception;
 use Filament\Forms\Components\Field;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Forms\Contracts\HasForms;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Filament\Notifications\Notification;
 use Filament\Pages\Concerns\InteractsWithFormActions;
 use Filament\Resources\Pages\Concerns\InteractsWithRecord;
@@ -44,10 +47,14 @@ use Webmozart\Assert\Assert;
  * @see \Modules\Activity\docs\errori\route-method-does-not-exist.md
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract class ListLogActivities extends XotBasePage
 =======
 abstract class ListLogActivities extends XotBasePage implements HasForms
 >>>>>>> 4b6b99016 (first commit)
+=======
+abstract class ListLogActivities extends XotBasePage
+>>>>>>> dev
 {
     use CanPaginate;
     use InteractsWithFormActions;
@@ -72,7 +79,11 @@ abstract class ListLogActivities extends XotBasePage implements HasForms
 
         // Convert to string (__() returns string|array|null)
         if (is_array($breadcrumb)) {
+<<<<<<< HEAD
             return implode(' ', $breadcrumb);
+=======
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
+>>>>>>> dev
         }
 
         return (string) $breadcrumb;
@@ -92,7 +103,11 @@ abstract class ListLogActivities extends XotBasePage implements HasForms
 
         // __() returns string|array|null
         if (is_array($title)) {
+<<<<<<< HEAD
             return implode(' ', $title);
+=======
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
+>>>>>>> dev
         }
 
         return (string) $title;
@@ -261,7 +276,11 @@ abstract class ListLogActivities extends XotBasePage implements HasForms
     protected function sendRestoreSuccessNotification(): Notification
     {
         $title = __('activity::activities.events.restore_successful');
+<<<<<<< HEAD
         $titleString = is_array($title) ? implode(' ', $title) : (string) $title;
+=======
+        $titleString = is_array($title) ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title)) : (string) $title;
+>>>>>>> dev
 
         return Notification::make()
             ->title($titleString)
@@ -272,7 +291,11 @@ abstract class ListLogActivities extends XotBasePage implements HasForms
     protected function sendRestoreFailureNotification(?string $message = null): Notification
     {
         $title = __('activity::activities.events.restore_failed');
+<<<<<<< HEAD
         $titleString = is_array($title) ? implode(' ', $title) : (string) $title;
+=======
+        $titleString = is_array($title) ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title)) : (string) $title;
+>>>>>>> dev
 
         $notification = Notification::make()
             ->title($titleString)

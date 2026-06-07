@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ✅ CORREZIONI PHPStan MULTIPLE COMPLETATE
 
 ## 🎯 Sessione di Bug Fixing Completata
@@ -335,3 +336,12 @@ array_merge(
 *Metodologia: Studio → Correzione → Prevenzione*
 >>>>>>> 4b6b99016 (first commit)
 *Risultato: 0 errori PHPStan + regole preventive*
+=======
+---
+module: theme
+topic: correzioni-phpstan-multiple-completate
+canonical: ../../../Themes/docs/shared-components/CORREZIONI_PHPSTAN_MULTIPLE_COMPLETATE.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/CORREZIONI_PHPSTAN_MULTIPLE_COMPLETATE.md
+>>>>>>> dev

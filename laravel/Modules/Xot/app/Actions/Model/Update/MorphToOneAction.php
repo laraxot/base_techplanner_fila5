@@ -7,7 +7,10 @@ namespace Modules\Xot\Actions\Model\Update;
 use Fidum\EloquentMorphToOne\MorphToOne;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\App;
+<<<<<<< HEAD
 use InvalidArgumentException;
+=======
+>>>>>>> dev
 use Modules\Xot\Datas\RelationData as RelationDTO;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
@@ -26,10 +29,17 @@ class MorphToOneAction
     /**
      * Execute the action to create a MorphToOne relationship.
      *
+<<<<<<< HEAD
      * @param  Model  $model  The parent model
      * @param  RelationDTO  $relationDTO  Data transfer object containing relationship information
      *
      * @throws InvalidArgumentException When relation type is invalid
+=======
+     * @param Model       $model       The parent model
+     * @param RelationDTO $relationDTO Data transfer object containing relationship information
+     *
+     * @throws \InvalidArgumentException When relation type is invalid
+>>>>>>> dev
      */
     public function execute(Model $model, RelationDTO $relationDTO): void
     {
@@ -47,7 +57,12 @@ class MorphToOneAction
     /**
      * Prepare the data array for creation.
      *
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data  The input data array
+=======
+     * @param array<string, mixed> $data The input data array
+     *
+>>>>>>> dev
      * @return array<string, mixed> The prepared data array
      */
     private function prepareData(array $data): array
@@ -58,6 +73,10 @@ class MorphToOneAction
         }
 
         // Return the prepared data
+<<<<<<< HEAD
         return array_filter($data, static fn ($value) => $value !== null);
+=======
+        return array_filter($data, static fn ($value) => null !== $value);
+>>>>>>> dev
     }
 }

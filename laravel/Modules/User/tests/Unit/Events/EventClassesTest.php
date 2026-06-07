@@ -2,7 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\User\Tests\TestCase::class);
+=======
+namespace Modules\User\Tests\Unit\Events;
+
+uses(TestCase::class);
+>>>>>>> dev
 
 use Modules\User\Events\AddingTeam;
 use Modules\User\Events\AddingTeamMember;
@@ -15,6 +21,10 @@ use Modules\User\Events\TeamSwitched;
 use Modules\User\Events\TwoFactorAuthenticationDisabled;
 use Modules\User\Events\TwoFactorAuthenticationEnabled;
 use Modules\User\Models\User;
+<<<<<<< HEAD
+=======
+use Modules\User\Tests\TestCase;
+>>>>>>> dev
 
 // Using mock for contracts since they are interfaces
 test('RecoveryCodesGenerated event can be instantiated', function () {

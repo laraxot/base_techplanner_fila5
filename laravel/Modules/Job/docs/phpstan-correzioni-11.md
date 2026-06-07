@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzioni PHPStan Livello 10 - Modulo Job
 <<<<<<< HEAD
 =======
@@ -410,3 +411,12 @@ fn (ModelType $item): ReturnType => ...
 ---
 
 **Nota**: Tutte le correzioni seguono i principi DRY + KISS e mantengono la business logic invariata, migliorando solo la type safety e la verificabilità statica del codice.
+=======
+---
+module: theme
+topic: phpstan-correzioni-11
+canonical: ../../../Themes/docs/shared-components/phpstan-correzioni-11.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-correzioni-11.md
+>>>>>>> dev

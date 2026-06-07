@@ -60,7 +60,11 @@
      ```
    - IMPORTANTE: Per regole significative, aggiornare anche:
      ```
+<<<<<<< HEAD
      base_predict_fila3_mono/
+=======
+     base_predict_fila5_mono/
+>>>>>>> dev
      ├── .cursor/
      │   └── rules/        # Regole per Cursor AI
      └── .windsurfrules    # Regole per Windsurf
@@ -265,7 +269,11 @@ Il progetto utilizza un'architettura modulare con Laravel Modules:
      ```
    - IMPORTANTE: Per regole significative, aggiornare anche:
      ```
+<<<<<<< HEAD
      base_predict_fila3_mono/
+=======
+     base_predict_fila5_mono/
+>>>>>>> dev
      ├── .cursor/
      │   └── rules/        # Regole per Cursor AI
      └── .windsurfrules    # Regole per Windsurf

@@ -29,9 +29,13 @@ use Illuminate\Support\Carbon;
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @method static Builder<static>|LegalOffice newModelQuery()
  * @method static Builder<static>|LegalOffice newQuery()
  * @method static Builder<static>|LegalOffice query()
@@ -51,12 +55,18 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|LegalOffice whereUpdatedAt($value)
  * @method static Builder<static>|LegalOffice whereUpdatedBy($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
  * @property-read Profile|null $deleter
  *
 =======
  * @property-read Profile|null $deleter
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+ * @property-read Profile|null $deleter
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class LegalOffice extends BaseModel

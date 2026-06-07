@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Filament Action PDF
 description: Azioni Filament per creare PDF
 extends: _layouts.documentation
@@ -109,3 +110,11 @@ class PdfController extends Controller
     // ...
 }
  ```
+=======
+module: theme
+topic: pdf
+canonical: ../../../../../Themes/docs/shared-components/pdf.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/pdf.md
+>>>>>>> dev

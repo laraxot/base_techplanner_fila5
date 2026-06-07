@@ -11,6 +11,9 @@ Secondo le regole di organizzazione della documentazione:
 ## Collegamenti Principali
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Documentazione Frontend](../../cms/docs/frontoffice.md) - Documentazione completa sul frontend
 - [Gestione dei Temi](../../cms/docs/theme_compilation.md) - Compilazione e pubblicazione dei temi
 - [Componenti Blade](../../cms/docs/components.md) - Documentazione sui componenti Blade
@@ -24,6 +27,7 @@ Secondo le regole di organizzazione della documentazione:
 ## Collegamento Bidirezionale
 
 Questo documento è collegato bidirezionalmente con [xot-link.md](../../cms/docs/xot-link.md) nel modulo Cms.
+<<<<<<< HEAD
 =======
 - [Documentazione Frontend](../../Cms/docs/frontoffice.md) - Documentazione completa sul frontend
 - [Gestione dei Temi](../../Cms/docs/theme_compilation.md) - Compilazione e pubblicazione dei temi
@@ -39,18 +43,26 @@ Questo documento è collegato bidirezionalmente con [xot-link.md](../../cms/docs
 
 Questo documento è collegato bidirezionalmente con [xot-link.md](../../Cms/docs/xot-link.md) nel modulo Cms.
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 > Aggiorna entrambi i riferimenti se modifichi la struttura della documentazione o aggiungi nuove sezioni.
 
 ## Collegamenti tra versioni di cms-link.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 * [cms-link.md](../../../xot/docs/cms-link.md)
 * [cms-link.md](../../../user/docs/cms-link.md)
 * [cms-link.md](../../../ui/docs/cms-link.md)
 * [cms-link.md](../../../lang/docs/cms-link.md)
+<<<<<<< HEAD
 =======
 * [cms-link.md](../../../Xot/docs/cms-link.md)
 * [cms-link.md](../../../User/docs/cms-link.md)
 * [cms-link.md](../../../UI/docs/cms-link.md)
 * [cms-link.md](../../../Lang/docs/cms-link.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

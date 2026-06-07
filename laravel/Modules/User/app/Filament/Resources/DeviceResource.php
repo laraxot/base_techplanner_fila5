@@ -19,10 +19,14 @@ class DeviceResource extends XotBaseResource
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'uuid' => TextInput::make('uuid')->maxLength(255),
             'mobile_id' => TextInput::make('mobile_id')
                 ->maxLength(255),
             'languages' => TagsInput::make('languages')
+<<<<<<< HEAD
 =======
             'uuid' => TextInput::make('uuid')->label(__('user::device.fields.uuid.label'))->maxLength(255),
             'mobile_id' => TextInput::make('mobile_id')
@@ -31,6 +35,8 @@ class DeviceResource extends XotBaseResource
             'languages' => TagsInput::make('languages')
                 ->label(__('user::device.fields.languages.label'))
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                 ->suggestions([
                     'it' => 'Italiano',
                     'en' => 'English',
@@ -39,6 +45,9 @@ class DeviceResource extends XotBaseResource
                     'de' => 'Deutsch',
                 ])
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
                 ->separator(',')
                 ->reorderable(),
             'device' => TextInput::make('device')->maxLength(255),
@@ -53,6 +62,7 @@ class DeviceResource extends XotBaseResource
             'is_mobile' => Toggle::make('is_mobile'),
             'is_tablet' => Toggle::make('is_tablet'),
             'is_phone' => Toggle::make('is_phone'),
+<<<<<<< HEAD
 =======
                 ->placeholder(__('user::device.fields.languages.placeholder'))
                 ->helperText(__('user::device.fields.languages.help'))
@@ -72,6 +82,8 @@ class DeviceResource extends XotBaseResource
             'is_tablet' => Toggle::make('is_tablet')->label(__('user::device.fields.is_tablet.label')),
             'is_phone' => Toggle::make('is_phone')->label(__('user::device.fields.is_phone.label')),
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ];
     }
 }

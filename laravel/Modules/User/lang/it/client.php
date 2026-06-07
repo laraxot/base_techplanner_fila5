@@ -18,17 +18,26 @@ return [
         'name' => [
             'label' => 'Nome',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'user' => [
             'email' => [
                 'label' => 'Proprietario',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -87,6 +96,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'create' => [
@@ -116,6 +126,8 @@ return [
         'recordId' => [
             'label' => 'ID Record',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'client_id' => [
             'description' => 'client_id',
@@ -123,6 +135,9 @@ return [
             'placeholder' => 'client_id',
             'label' => 'client_id',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
         ],
         'secret' => [
@@ -136,6 +151,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'secret' => [
@@ -144,6 +160,8 @@ return [
         'id' => [
             'label' => 'id',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'plural' => [
@@ -249,10 +267,15 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Client',
     'plural_label' => 'Client (Plurale)',
 =======
     'label' => '',
     'plural_label' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Client',
+    'plural_label' => 'Client (Plurale)',
+>>>>>>> dev
 ];

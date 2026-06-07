@@ -27,13 +27,20 @@ class TestModel extends Model
     {
         parent::boot();
 
+<<<<<<< HEAD
         static::creating(static function () {
             if (! app()->environment('testing')) {
                 throw new Exception('TestModel should only be used in tests.');
+=======
+        static::creating(static function (): void {
+            if (! app()->environment('testing')) {
+                throw new \Exception('TestModel should only be used in tests.');
+>>>>>>> dev
             }
         });
     }
 }
+<<<<<<< HEAD
 
 beforeEach(function () {
     // Crea un modello di test
@@ -187,3 +194,5 @@ it('can filter models by city', static function () {
     expect($modelsInRoma)->toHaveCount(1);
     expect($modelsInRoma->first()->name)->toBe('Model 2');
 });
+=======
+>>>>>>> dev

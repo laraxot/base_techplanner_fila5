@@ -128,6 +128,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'name' => [
             'label' => 'Naam',
             'tooltip' => '',
@@ -214,6 +217,7 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
         'name' => 'Naam',
         'email' => 'E-mailadres',
@@ -231,4 +235,6 @@ return [
     'or' => 'Of',
     'cancel' => 'Annuleren',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

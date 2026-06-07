@@ -123,46 +123,64 @@ public static function getFormSchema(): array
             ->reactive()
             ->required(),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             
         'administrative_area_level_2' => Select::make('administrative_area_level_2')
             ->label('Provincia')
             ->options(fn (callable $get) => 
+<<<<<<< HEAD
 =======
 
         'administrative_area_level_2' => Select::make('administrative_area_level_2')
             ->label('Provincia')
             ->options(fn (callable $get) =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                 GeoJsonModel::getProvincesForSelect($get('administrative_area_level_1')))
             ->reactive()
             ->required()
             ->disabled(fn (callable $get) => !$get('administrative_area_level_1')),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             
         'administrative_area_level_3' => Select::make('administrative_area_level_3')
             ->label('Comune')
             ->options(fn (callable $get) => 
+<<<<<<< HEAD
 =======
 
         'administrative_area_level_3' => Select::make('administrative_area_level_3')
             ->label('Comune')
             ->options(fn (callable $get) =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                 GeoJsonModel::getComuniForSelect($get('administrative_area_level_2')))
             ->reactive()
             ->required()
             ->disabled(fn (callable $get) => !$get('administrative_area_level_2')),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             
         'postal_code' => Select::make('postal_code')
             ->label('CAP')
             ->options(fn (callable $get) => 
+<<<<<<< HEAD
 =======
 
         'postal_code' => Select::make('postal_code')
             ->label('CAP')
             ->options(fn (callable $get) =>
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
                 GeoJsonModel::getCapsForSelect($get('administrative_area_level_3')))
             ->required()
             ->disabled(fn (callable $get) => !$get('administrative_area_level_3')),
@@ -191,10 +209,14 @@ public function formatItalianAddress(): string
 {
     $parts = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // Nome via e numero civico
     if (!empty($this->route)) {
         $addressLine = $this->route;
@@ -204,37 +226,51 @@ public function formatItalianAddress(): string
         $parts[] = $addressLine;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     // CAP, Comune e Provincia
     $locationLine = '';
     if (!empty($this->postal_code)) {
         $locationLine .= $this->postal_code . ' ';
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     if (!empty($this->administrative_area_level_3)) {
         $locationLine .= $this->administrative_area_level_3;
         
+<<<<<<< HEAD
 =======
 
     if (!empty($this->administrative_area_level_3)) {
         $locationLine .= $this->administrative_area_level_3;
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         // Aggiungi sigla provincia tra parentesi
         if (!empty($this->administrative_area_level_2)) {
             $locationLine .= ' (' . $this->administrative_area_level_2 . ')';
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     if (!empty($locationLine)) {
         $parts[] = $locationLine;
     }
     
+<<<<<<< HEAD
 =======
 
     if (!empty($locationLine)) {
@@ -242,15 +278,21 @@ public function formatItalianAddress(): string
     }
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     // Paese (se diverso dall'Italia, altrimenti implicito)
     if (!empty($this->country) && strtoupper($this->country) !== 'ITALIA' && strtoupper($this->country_code) !== 'IT') {
         $parts[] = strtoupper($this->country);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     return implode("\n", $parts);
 }
 ```
@@ -308,10 +350,14 @@ public function populateFromGoogleComponents(array $components): self
         $value = $component['long_name'] ?? '';
         $shortValue = $component['short_name'] ?? '';
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+        
+>>>>>>> dev
         if (in_array('postal_code', $types)) {
             $this->postal_code = $value;
         } elseif (in_array('administrative_area_level_1', $types)) {
@@ -335,10 +381,14 @@ public function populateFromGoogleComponents(array $components): self
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+    
+>>>>>>> dev
     return $this;
 }
 ```
@@ -369,31 +419,43 @@ public function geocode(): bool
 {
     $address = $this->formatItalianAddress();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     
     // Utilizzo di un servizio di geocodifica
     $result = app(GeocodingService::class)->geocode($address);
     
+<<<<<<< HEAD
 =======
 
     // Utilizzo di un servizio di geocodifica
     $result = app(GeocodingService::class)->geocode($address);
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     if ($result && isset($result['latitude'], $result['longitude'])) {
         $this->latitude = $result['latitude'];
         $this->longitude = $result['longitude'];
         $this->save();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         
         return true;
     }
     
+<<<<<<< HEAD
 =======
 
         return true;
     }
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     return false;
 }
 ```

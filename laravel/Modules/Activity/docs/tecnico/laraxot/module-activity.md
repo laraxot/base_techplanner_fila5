@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modulo Activity
 
 ## Overview
@@ -308,3 +309,12 @@ class ActivityTest extends TestCase
    - Backup dei dati di attività
    - Monitoraggio delle performance
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: module-activity
+canonical: ../../../../../Themes/docs/shared-components/module-activity.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
+>>>>>>> dev

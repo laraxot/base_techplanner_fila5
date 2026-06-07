@@ -685,6 +685,9 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 - [Roadmap Principale](./roadmap.md)
 - [Best Practices Performance](./BEST-PRACTICES.md#performance)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Struttura Moduli](./module_structure.md)
 
 ## Collegamenti tra versioni di BOTTLENECKS.md
@@ -692,6 +695,7 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 * [BOTTLENECKS.md](../../../user/project_docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../media/project_docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../cms/project_docs/bottlenecks.md)
+<<<<<<< HEAD
 =======
 - [Struttura Moduli](./MODULE_STRUCTURE.md)
 
@@ -701,3 +705,5 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 * [BOTTLENECKS.md](../../../Media/project_docs/BOTTLENECKS.md)
 * [BOTTLENECKS.md](../../../Cms/project_docs/BOTTLENECKS.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

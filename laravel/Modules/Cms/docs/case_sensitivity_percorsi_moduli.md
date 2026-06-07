@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Case Sensitivity nei Percorsi dei Moduli Laravel in il progetto
 
 ## Introduzione
@@ -133,3 +134,12 @@ Sviluppare una memoria visiva per i pattern corretti:
 ## Conclusione
 
 Rispettare la case sensitivity nei percorsi è fondamentale per garantire la compatibilità cross-platform e la manutenibilità del codice. Seguendo queste linee guida, è possibile evitare errori comuni e mantenere una struttura coerente in tutto il progetto il progetto.
+=======
+---
+module: theme
+topic: case_sensitivity_percorsi_moduli
+canonical: ../../../Themes/docs/shared-components/case-sensitivity-percorsi-moduli.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/case-sensitivity-percorsi-moduli.md
+>>>>>>> dev

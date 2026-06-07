@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Errors - TransTrait.php
 
 **Date**: [DATE]
@@ -397,3 +398,12 @@ This fix may also resolve related errors in:
 **Status**: 🟡 Documented - Awaiting Fix
 **Assigned To**: Module Owner
 
+=======
+---
+module: theme
+topic: phpstan-transtraits
+canonical: ../../../Themes/docs/shared-components/phpstan-transtrait-errors.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-transtrait-errors.md
+>>>>>>> dev

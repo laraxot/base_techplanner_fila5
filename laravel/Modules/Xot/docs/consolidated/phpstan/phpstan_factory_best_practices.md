@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Best Practices per Factory Laravel - Laraxot Framework
 
 ## 🎯 Overview
@@ -285,3 +286,12 @@ Vedere: `Modules/<nome progetto>/project_docs/factories/phpstan-factory-complian
 *Ultimo aggiornamento: Dicembre 2024*
 *Versione: 1.0*
 *Compatibilità: PHPStan 1.10+, Larastan 3.x, Laravel 11+* 
+=======
+---
+module: theme
+topic: phpstan_factory_best_practices
+canonical: ../../../../../Themes/docs/shared-components/phpstan-factory-best-practices-1.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/phpstan-factory-best-practices-1.md
+>>>>>>> dev

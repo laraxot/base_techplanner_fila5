@@ -1,10 +1,14 @@
 # Modifiche al Modello MailTemplate
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Modifiche Implementate ([DATE])
 =======
 ## Modifiche Implementate (2024-03-20)
 >>>>>>> 4b6b99016 (first commit)
+=======
+## Modifiche Implementate ([DATE])
+>>>>>>> dev
 
 ### 1. Aggiunta Campo Slug
 ```php
@@ -122,6 +126,7 @@ public static function generateUniqueSlug(string $subject): string
 
 ## Collegamenti Correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Proposta Slug](./spatie_email_slug_proposal.md)
 - [Changelog Migrazioni](./migrations_changelog.md)
 - [Best Practices Email](./email_best_practices.md)
@@ -130,6 +135,11 @@ public static function generateUniqueSlug(string $subject): string
 - [Changelog Migrazioni](./MIGRATIONS_CHANGELOG.md)
 - [Best Practices Email](./EMAIL_BEST_PRACTICES.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Proposta Slug](./spatie_email_slug_proposal.md)
+- [Changelog Migrazioni](./migrations_changelog.md)
+- [Best Practices Email](./email_best_practices.md)
+>>>>>>> dev
 
 ## Note di Implementazione
 

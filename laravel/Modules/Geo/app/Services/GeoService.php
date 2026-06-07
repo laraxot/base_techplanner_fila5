@@ -30,10 +30,14 @@ class GeoService
     public static function getInstance(): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! self::$_instance instanceof GeoService) {
 =======
         if (! (self::$_instance instanceof GeoService)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! self::$_instance instanceof GeoService) {
+>>>>>>> dev
             self::$_instance = new self();
         }
 

@@ -7,10 +7,14 @@ return [
     'alert_essentials_only' => 'Accetta solo i cookie necessari',
     'alert_settings' => 'Modifica le tue preferenze',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'alert_text' => 'Scegliendo \\"Accetta tutti i cookie\\" accetti l\'uso dei cookie per aiutarci a offrirti una migliore esperienza utente e per analizzare l\'utilizzo del sito web. Cliccando su \\"Modifica le tue preferenze\\" puoi scegliere quali cookie consentire. Solo i cookie essenziali sono necessari per il corretto funzionamento del nostro sito web e non possono essere rifiutati.',
 =======
     'alert_text' => 'Scegliendo \"Accetta tutti i cookie\" accetti l\'uso dei cookie per aiutarci a offrirti una migliore esperienza utente e per analizzare l\'utilizzo del sito web. Cliccando su \"Modifica le tue preferenze\" puoi scegliere quali cookie consentire. Solo i cookie essenziali sono necessari per il corretto funzionamento del nostro sito web e non possono essere rifiutati.',
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'alert_text' => 'Scegliendo \\"Accetta tutti i cookie\\" accetti l\'uso dei cookie per aiutarci a offrirti una migliore esperienza utente e per analizzare l\'utilizzo del sito web. Cliccando su \\"Modifica le tue preferenze\\" puoi scegliere quali cookie consentire. Solo i cookie essenziali sono necessari per il corretto funzionamento del nostro sito web e non possono essere rifiutati.',
+>>>>>>> dev
     'alert_title' => 'Questo sito web utilizza i cookie',
     'alert_essential_only' => 'Accetta solo i cookie necessari',
     'setting_analytics' => 'Cookie analitici',
@@ -27,6 +31,9 @@ return [
     'settings_save' => 'Salva la mia selezione',
     'settings_title' => 'Impostazioni cookie',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'settings_text' => 'Il nostro sito web memorizza quattro tipi di cookie. In qualsiasi momento puoi scegliere quali cookie accettare e quali rifiutare. Puoi leggere di più su cosa sono i cookie e quali tipi di cookie memorizziamo nella nostra <a href=\\":policyUrl\\" target=\\"_blank\\" class=\\"underline hover:no-underline\\">Cookie Policy</a>.',
     'navigation' => [
         'label' => 'Missing Navigation Label',
@@ -41,7 +48,10 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
     'settings_text' => 'Il nostro sito web memorizza quattro tipi di cookie. In qualsiasi momento puoi scegliere quali cookie accettare e quali rifiutare. Puoi leggere di più su cosa sono i cookie e quali tipi di cookie memorizziamo nella nostra <a href=\":policyUrl\" target=\"_blank\" class=\"underline hover:no-underline\">Cookie Policy</a>.',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

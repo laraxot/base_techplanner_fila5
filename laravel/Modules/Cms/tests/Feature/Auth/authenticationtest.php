@@ -12,14 +12,21 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Tests\TestCase;
 
 use function Pest\Laravel\actingAs;
+<<<<<<< HEAD
 use function Pest\Laravel\get;
+=======
+>>>>>>> dev
 use function Pest\Laravel\post;
 
 uses(TestCase::class);
 
 test('login screen can be rendered', function (): void {
     $lang = app()->getLocale();
+<<<<<<< HEAD
     get('/'.$lang.'/auth/login')->assertStatus(200);
+=======
+    $this->get('/'.$lang.'/auth/login');
+>>>>>>> dev
 });
 
 test('users can authenticate using the login screen', function (): void {

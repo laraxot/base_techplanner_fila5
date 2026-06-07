@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Indice della Documentazione del Modulo Geo
 
 Questo documento fornisce un indice completo e organizzato di tutta la documentazione disponibile nel modulo Geo, facilitando la navigazione e la ricerca di informazioni specifiche.
@@ -149,3 +150,12 @@ Alcuni documenti potrebbero avere nomi simili ma contenuti diversi, in particola
 
 *Documento creato il: 28/05/2025*  
 *Autore: Team <main module>*
+=======
+---
+module: theme
+topic: indice_documentazione
+canonical: ../../../Themes/docs/shared-components/indice-documentazione.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/indice-documentazione.md
+>>>>>>> dev

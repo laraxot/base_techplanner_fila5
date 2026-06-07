@@ -127,8 +127,11 @@ Dopo ogni correzione:
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: 09/01/2026
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Responsabile**: iFlow CLI
 **Status**: In pianificazione

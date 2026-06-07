@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Carbon\CarbonInterface;
 use Filament\Forms\Components\Placeholder;
@@ -32,6 +33,9 @@ use Modules\User\Filament\Resources\UserResource\RelationManagers\OauthTokensRel
 use Modules\User\Filament\Resources\UserResource\RelationManagers\SocialiteUsersRelationManager;
 use Modules\User\Filament\Resources\UserResource\RelationManagers\TenantsRelationManager;
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
+>>>>>>> dev
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -53,6 +57,7 @@ class UserResource extends XotBaseResource
     #[\Override]
     public static function getFormSchema(): array
     {
+<<<<<<< HEAD
         return [
 <<<<<<< HEAD
             'worker' => UserSection::make('worker'),
@@ -105,6 +110,10 @@ class UserResource extends XotBaseResource
                 }),
             ])->columnSpan(4),
         ];
+=======
+        /** @var array<int|string, \Filament\Schemas\Components\Component> */
+        return UserForm::getFormSchema();
+>>>>>>> dev
     }
 
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
@@ -128,13 +137,18 @@ class UserResource extends XotBaseResource
     /**
      * Get the model class name for this resource.
      *
+<<<<<<< HEAD
      * @return class-string<Model>
+=======
+     * @return class-string
+>>>>>>> dev
      */
     #[\Override]
     public static function getModel(): string
     {
         $xot = XotData::make();
 
+<<<<<<< HEAD
         /* @var class-string<Model> */
         return $xot->getUserClass();
     }
@@ -158,4 +172,8 @@ class UserResource extends XotBaseResource
         ];
     }
 >>>>>>> 4b6b99016 (first commit)
+=======
+        return $xot->getUserClass();
+    }
+>>>>>>> dev
 }

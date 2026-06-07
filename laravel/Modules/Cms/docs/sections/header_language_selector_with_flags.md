@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
@@ -183,3 +184,12 @@ return [
 - [Documentazione Blade Icons](https://github.com/blade-ui-kit/blade-icons)
 - [Documentazione Alpine.js](https://alpinejs.dev/) - Per le interazioni dropdown
 - [Documentazione Accessibilità WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/)
+=======
+---
+module: theme
+topic: header_language_selector_with_flags
+canonical: ../../../../Themes/docs/shared-components/header-language-selector-with-flags-Modules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/header-language-selector-with-flags-Modules.md
+>>>>>>> dev

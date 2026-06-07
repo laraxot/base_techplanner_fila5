@@ -69,6 +69,7 @@ class Article extends Model implements ModelWithUserContract
 ## Collegamenti
 - [ModelContract](model-contract.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Management](../features/user-management.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Contracts Overview](./readme.md)
@@ -77,3 +78,8 @@ class Article extends Model implements ModelWithUserContract
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Contracts Overview](./README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [User Management](../features/user-management.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [Contracts Overview](./readme.md)
+>>>>>>> dev

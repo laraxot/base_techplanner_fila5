@@ -80,10 +80,14 @@ return [
         '2fa' => [
             'title' => 'Autenticazione a due Fattori',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => 'Gestisci l\'autenticazione a due fattori per il tuo account (raccomandato].',
 =======
             'description' => 'Gestisci l\'autenticazione a due fattori per il tuo account (raccomandato).',
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'description' => 'Gestisci l\'autenticazione a due fattori per il tuo account (raccomandato].',
+>>>>>>> dev
             'actions' => [
                 'enable' => 'Abilita',
                 'regenerate_codes' => 'Rigenera Codici',
@@ -142,6 +146,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -259,6 +266,7 @@ return [
             'label' => 'Elimina Default',
         ],
     ],
+<<<<<<< HEAD
 =======
         'avatar' => 'Avatar',
         'email' => 'Email',
@@ -283,4 +291,6 @@ return [
     'plural_label' => '',
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

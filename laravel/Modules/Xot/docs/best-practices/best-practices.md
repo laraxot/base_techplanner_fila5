@@ -712,10 +712,14 @@ public function createModel(array $data): MioModello
 ## 🔗 **Collegamenti e Riferimenti**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [**README.md**](readme.md) - Documentazione principale del modulo
 =======
 - [**README.md**](README.md) - Documentazione principale del modulo
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [**README.md**](readme.md) - Documentazione principale del modulo
+>>>>>>> dev
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Best Practices Globali**](../project_docs/best-practices.md) - Best practices globali
 

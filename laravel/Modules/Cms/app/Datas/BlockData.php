@@ -8,7 +8,13 @@ use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Str;
+=======
+use Illuminate\Support\Str;
+use Illuminate\View\Factory;
+use Illuminate\View\FileViewFinder;
+>>>>>>> dev
 use Livewire\Wireable;
 use Modules\Cms\Actions\ResolveBlockQueryAction;
 
@@ -16,9 +22,12 @@ use function Safe\fclose;
 use function Safe\fopen;
 use function Safe\fread;
 
+<<<<<<< HEAD
 =======
 use Livewire\Wireable;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\DataCollection;
@@ -31,23 +40,41 @@ class BlockData extends Data implements Wireable
     public string $type;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public ?string $slug = null;
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    public ?string $slug = null;
+
+>>>>>>> dev
     public array $data;
 
     public string $view;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     public bool $livewire = false;
 
     public string $livewireComponentName = '';
 
+<<<<<<< HEAD
     public function __construct(string $type, array $data, ?string $slug = null)
     {
         $this->type = $type;
         $this->slug = $slug;
+=======
+    public bool $active = true;
+
+    public function __construct(string $type, array $data, ?string $slug = null, bool $active = true)
+    {
+        $this->type = $type;
+        $this->slug = $slug;
+        $this->active = $active;
+>>>>>>> dev
 
         // Dynamic Query Resolution
         /** @var array<string, mixed> $query */
@@ -57,6 +84,7 @@ class BlockData extends Data implements Wireable
             $data = array_merge($data, $dynamicData);
         }
 
+<<<<<<< HEAD
 =======
     public function __construct(string $type, array $data)
     {
@@ -97,6 +125,25 @@ class BlockData extends Data implements Wireable
         if ($this->livewire) {
             $this->livewireComponentName = $this->normalizeComponentName($view);
         }
+=======
+        $viewRaw = Arr::get($data, 'view', 'ui::empty');
+        Assert::string($viewRaw, '['.__LINE__.']['.__FILE__.']');
+        $view = $viewRaw;
+
+        if (! view()->exists($view)) {
+            throw new \RuntimeException('view not found: '.$view);
+        }
+
+        $this->data = $data;
+        $this->view = $view;
+        $this->livewire = $this->detectLivewire($view);
+        $this->livewireComponentName = $this->normalizeComponentName($view);
+    }
+
+    public static function collection(EloquentCollection|Collection|array $data): DataCollection|array
+    {
+        return self::collect($data, DataCollection::class);
+>>>>>>> dev
     }
 
     private function detectLivewire(string $view): bool
@@ -106,8 +153,15 @@ class BlockData extends Data implements Wireable
         }
 
         // Usa un approccio più performante per recuperare il path della view
+<<<<<<< HEAD
         /** @var \Illuminate\View\FileViewFinder $finder */
         $finder = view()->getFinder();
+=======
+        /** @var Factory $viewFactory */
+        $viewFactory = view();
+        /** @var FileViewFinder $finder */
+        $finder = $viewFactory->getFinder();
+>>>>>>> dev
         $path = $finder->find($view);
 
         if (! file_exists($path)) {
@@ -139,6 +193,7 @@ class BlockData extends Data implements Wireable
 
         return $name;
     }
+<<<<<<< HEAD
 
     public static function collection(EloquentCollection|Collection|array $data): DataCollection|array
 =======
@@ -149,4 +204,6 @@ class BlockData extends Data implements Wireable
     {
         return self::collect($data, DataCollection::class);
     }
+=======
+>>>>>>> dev
 }

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
@@ -73,6 +74,28 @@ class OauthPersonalAccessClient extends BaseModel
     /**
      * Get the OAuth client that this personal access client belongs to.
      *
+=======
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+
+/**
+ * @property string           $id
+ * @property string           $client_id
+ * @property OauthClient|null $client
+ */
+class OauthPersonalAccessClient extends BaseModel
+{
+    protected $table = 'oauth_personal_access_clients';
+
+    protected $connection = 'user';
+
+    /** @var list<string> */
+    protected $fillable = [
+        'id',
+        'client_id',
+    ];
+
+    /**
+>>>>>>> dev
      * @return BelongsTo<OauthClient, $this>
      */
     public function client(): BelongsTo

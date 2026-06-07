@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 return array (
   'fields' => 
   array (
@@ -106,7 +109,11 @@ return array (
     ),
     'address' => 
     array (
+<<<<<<< HEAD
       'label' => 'address',
+=======
+      'label' => 'address1',
+>>>>>>> dev
       'tooltip' => '',
       'helper_text' => '',
       'description' => '',
@@ -451,7 +458,11 @@ return array (
     'empty' => 
     array (
       'heading' => '',
+<<<<<<< HEAD
       'label' => 'empty',
+=======
+      'label' => 'empty2',
+>>>>>>> dev
     ),
   ),
   'navigation' => 
@@ -465,6 +476,7 @@ return array (
   'label' => 'Missing Label',
   'plural_label' => 'Missing Plural label',
 );
+<<<<<<< HEAD
 =======
 return [
     'fields' => [
@@ -671,3 +683,5 @@ return [
     ],
 ];
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

@@ -1,9 +1,12 @@
 # 🗺️ ANALISI PROGETTO FARMSHOPS.EU
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-01-27
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Fonte**: https://github.com/CodeforKarlsruhe/farmshops.eu
 **Sito**: https://farmshops.eu/
 **Obiettivo**: Integrazione funzionalità mappa interattiva nel progetto FixCity
@@ -341,11 +344,15 @@ class MapComponent {
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 **Last Updated**: 2025-01-27
 **Next Review**: 2025-02-27
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 **Status**: 📋 ANALYSIS COMPLETE
 **Confidence Level**: 95%
 

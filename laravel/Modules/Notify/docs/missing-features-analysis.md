@@ -136,7 +136,11 @@ Il modulo **Notify** è il motore di comunicazione dell'applicazione, fornendo:
 - [ ] **Click Heatmaps** - Mappe di calore click
 - [ ] **Conversion Funnels** - Funnel conversione
 - [ ] **Engagement Scoring** - Scoring engagement
+<<<<<<< HEAD
 - [ ] **Predictive Analytics** - Analisi predittive
+=======
+- [ ] **<nome progetto>ive Analytics** - Analisi predittive
+>>>>>>> dev
 - [ ] **Cohort Analysis** - Analisi coorti
 - [ ] **Attribution Modeling** - Modelli attribuzione
 
@@ -203,7 +207,11 @@ Nessuna funzionalità critica mancante - il modulo Notify è ben implementato
 ### ⚪ BASSA (Nice to Have)
 
 1. **Rich Media Push** - Push con media
+<<<<<<< HEAD
 2. **Predictive Analytics** - Analisi predittive
+=======
+2. **<nome progetto>ive Analytics** - Analisi predittive
+>>>>>>> dev
 3. **Advanced Segmentation** - Segmentazione avanzata
 
 ## Roadmap Implementazione
@@ -228,7 +236,11 @@ Nessuna funzionalità critica mancante - il modulo Notify è ben implementato
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Modulo Quaeris](../quaeris/docs/readme.md)
+=======
+- [Modulo Quaeris](../Quaeris/docs/readme.md)
+>>>>>>> dev
 - [Modulo Limesurvey](../limesurvey/docs/readme.md)
 - [Notify README](./readme.md)
 

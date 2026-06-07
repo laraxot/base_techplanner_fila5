@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎨 SIXTEEN THEME - ROADMAP 2025
 
 **Tema**: Sixteen (AGID Compliant)  
@@ -529,3 +530,12 @@ Sixteen Theme
 ---
 
 *Questa roadmap è specifica per il tema Sixteen e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+=======
+---
+module: theme
+topic: roadmap_2025
+canonical: ../../docs/shared-components/roadmap-2025-Themes.md
+---
+
+See canonical documentation: ../../docs/shared-components/roadmap-2025-Themes.md
+>>>>>>> dev

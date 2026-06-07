@@ -82,5 +82,9 @@ Questo progetto è open-source e disponibile sotto la [Licenza MIT](../../LICENS
 ---
 
 <div align="center">
+<<<<<<< HEAD
   <sub>Costruito con ❤️ dal team Base Predict Fila3 Mono</sub>
+=======
+  <sub>Costruito con ❤️ dal team Base <nome progetto> Fila 5</sub>
+>>>>>>> dev
 </div>

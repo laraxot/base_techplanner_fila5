@@ -1,10 +1,14 @@
 # PHPStan Level 10 Compliance Status
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 **Last Updated**: 2025-12-10
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 **Status**: ✅ FULLY COMPLIANT (0 errors)
 
 ## Summary

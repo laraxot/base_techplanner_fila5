@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌍 **Geo Module** - Gestione Avanzata Dati Geografici
 
 [![PHPStan Level 9](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg)](https://phpstan.org/)
@@ -598,3 +599,12 @@ php artisan test
 **Autore**: Team Laraxot  
 **Licenza**: MIT License
 >>>>>>> 8946c2f (.)
+=======
+---
+module: theme
+topic: readme.md
+canonical: ../../../Themes/docs/shared-components/README.md.cleaned
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/README.md.cleaned
+>>>>>>> dev

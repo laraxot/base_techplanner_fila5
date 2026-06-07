@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CRITICAL: Filament Resource-Model Alignment Rules
 
 ## 🚨 ERRORE CRITICO IDENTIFICATO E RISOLTO
@@ -159,3 +160,12 @@ done
 =======
 *Ultimo aggiornamento: Luglio 2025 - Dopo correzione errori critici modulo Progressioni*
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: critical-resource-model-alignment
+canonical: ../../../../Themes/docs/shared-components/critical-resource-model-alignment.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/critical-resource-model-alignment.md
+>>>>>>> dev

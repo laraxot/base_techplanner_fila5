@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Feature',
         'plural_label' => 'Features',
@@ -110,6 +113,7 @@ return [
             'tooltip' => 'Apri il pannello filtri',
             'helper_text' => 'Apre il pannello dei filtri',
             'description' => 'Apre il pannello dei filtri',
+<<<<<<< HEAD
 =======
     'resources' => 'Risorse',
     'pages' => 'Pagine',
@@ -154,11 +158,16 @@ return [
         'openFilters' => [
             'label' => 'openFilters',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
         'import' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => 'Importa',
             'tooltip' => 'Importa dati',
             'helper_text' => 'Importa dati da file esterno',
@@ -215,6 +224,7 @@ return [
         'imported' => 'Importazione completata',
         'exported' => 'Esportazione completata',
     ],
+<<<<<<< HEAD
 =======
             'fields' => [
                 'import_file' => 'Seleziona un file XLS o CSV da caricare',
@@ -238,4 +248,6 @@ return [
     'label' => '',
     'plural_label' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

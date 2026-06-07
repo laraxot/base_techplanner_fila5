@@ -113,6 +113,19 @@ use function Safe\json_encode;
  * @method static Builder<static>|Place whereUpdatedAt($value)
  * @method static Builder<static>|Place whereUpdatedBy($value)
  *
+<<<<<<< HEAD
+=======
+ * @property string|null $name
+ * @property string|null $slug
+ * @property string|null $description
+ * @property int|null    $place_type_id
+ *
+ * @method static Builder<static>|Place whereDescription($value)
+ * @method static Builder<static>|Place whereName($value)
+ * @method static Builder<static>|Place wherePlaceTypeId($value)
+ * @method static Builder<static>|Place whereSlug($value)
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class Place extends BaseModel implements HasGeolocation
@@ -197,20 +210,28 @@ class Place extends BaseModel implements HasGeolocation
     public function getLatitude(): ?float
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         /* @phpstan-ignore-line */ return $this->latitude;
 =======
         return $this->latitude;
 >>>>>>> 4b6b99016 (first commit)
+=======
+        /* @phpstan-ignore-line */ return $this->latitude;
+>>>>>>> dev
     }
 
     #[\Override]
     public function getLongitude(): ?float
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         /* @phpstan-ignore-line */ return $this->longitude;
 =======
         return $this->longitude;
 >>>>>>> 4b6b99016 (first commit)
+=======
+        /* @phpstan-ignore-line */ return $this->longitude;
+>>>>>>> dev
     }
 
     #[\Override]

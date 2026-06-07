@@ -7,6 +7,9 @@ return [
         'name' => [
             'label' => 'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -406,6 +409,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'firs_name' => [
@@ -606,11 +610,16 @@ return [
         'banned-action' => [
             'label' => 'banned-action',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
         'scheduled-visible' => [
             'description' => 'scheduled-visible',
             'label' => 'scheduled-visible',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
         ],
@@ -715,6 +724,7 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Icon State Group',
+<<<<<<< HEAD
 =======
         ],
         'rescheduled-visible' => [
@@ -756,6 +766,8 @@ return [
         'refund_integrate-icon' => [
             'label' => 'refund_integrate-icon',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

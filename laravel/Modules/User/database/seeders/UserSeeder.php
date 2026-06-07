@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -12,6 +13,14 @@ use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
 use Webmozart\Assert\Assert;
+=======
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Modules\User\Database\Factories\TeamFactory;
+use Modules\User\Models\Permission;
+use Modules\User\Models\Role;
+use Modules\User\Models\Team;
+>>>>>>> dev
 
 /**
  * Seeder per il modulo User.
@@ -105,25 +114,37 @@ class UserSeeder extends Seeder
         }
 
         // Ruoli di sistema
+<<<<<<< HEAD
         /** @var Role $superAdminRole */
+=======
+>>>>>>> dev
         $superAdminRole = Role::firstOrCreate([
             'name' => 'super-admin',
             'guard_name' => 'web',
         ]);
 
+<<<<<<< HEAD
         /** @var Role $systemAdminRole */
+=======
+>>>>>>> dev
         $systemAdminRole = Role::firstOrCreate([
             'name' => 'system-admin',
             'guard_name' => 'web',
         ]);
 
+<<<<<<< HEAD
         /** @var Role $moderatorRole */
+=======
+>>>>>>> dev
         $moderatorRole = Role::firstOrCreate([
             'name' => 'moderator',
             'guard_name' => 'web',
         ]);
 
+<<<<<<< HEAD
         /** @var Role $userRole */
+=======
+>>>>>>> dev
         $userRole = Role::firstOrCreate([
             'name' => 'user',
             'guard_name' => 'web',
@@ -163,7 +184,11 @@ class UserSeeder extends Seeder
             'leave teams',
         ]);
 
+<<<<<<< HEAD
         $this->command->info('   ✓ Creati '.count($systemPermissions).' permessi di sistema');
+=======
+        $this->command->info('   ✓ Creati '.count($systemPermissions));
+>>>>>>> dev
         $this->command->info('   ✓ Creati 4 ruoli di sistema (super-admin, system-admin, moderator, user)');
     }
 
@@ -174,6 +199,7 @@ class UserSeeder extends Seeder
     {
         $this->command->info('👥 Creazione team di sistema...');
 
+<<<<<<< HEAD
         // Team di amministrazione
         /** @var Factory<Team> $adminFactory */
         $adminFactory = Team::factory();
@@ -230,4 +256,26 @@ class UserSeeder extends Seeder
 
         $this->command->info('   ✓ Creati 5 team di sistema');
     }
+=======
+        $adminTeam = $this->createTeam('Amministratori');
+        $devTeam = $this->createTeam('Sviluppatori');
+        $supportTeam = $this->createTeam('Supporto Clienti');
+        $marketingTeam = $this->createTeam('Marketing');
+        $generalTeam = $this->createTeam('Team Generale');
+
+        $this->command->info('   ✓ Creati 5 team di sistema');
+    }
+
+    private function createTeam(string $name): Team
+    {
+        $factory = TeamFactory::new();
+        /** @var Team $team */
+        $team = $factory->create([
+            'name' => $name,
+            'personal_team' => false,
+        ]);
+
+        return $team;
+    }
+>>>>>>> dev
 }

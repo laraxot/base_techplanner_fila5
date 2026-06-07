@@ -82,11 +82,15 @@ Creato file `optimization_recommendations.md` in ogni modulo con:
 1. **Xot PathHelper** (2 ore)
    - Problema: Path hardcoded bloccano framework
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
    - Soluzione: [Xot optimization_recommendations.md](../laravel/modules/xot/docs/optimization_recommendations.md)
 
 2. **Notify Riusabilità** (2 giorni)
    - Problema: 336 occorrenze bloccano notifiche
    - Soluzione: [Notify optimization_recommendations.md](../laravel/modules/notify/docs/optimization_recommendations.md)
+<<<<<<< HEAD
 =======
    - Soluzione: [Xot optimization_recommendations.md](../laravel/Modules/Xot/docs/optimization_recommendations.md)
 
@@ -94,6 +98,8 @@ Creato file `optimization_recommendations.md` in ogni modulo con:
    - Problema: 336 occorrenze bloccano notifiche
    - Soluzione: [Notify optimization_recommendations.md](../laravel/Modules/Notify/docs/optimization_recommendations.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### 🟡 ALTA (Settimana 2)
 **Obiettivo**: Moduli core riutilizzabili
@@ -101,11 +107,15 @@ Creato file `optimization_recommendations.md` in ogni modulo con:
 3. **User Restructuring** (1 giorno)
    - Problema: README gigantesco + hardcoding
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
    - Soluzione: [User optimization_recommendations.md](../laravel/modules/user/docs/optimization_recommendations.md)
 
 4. **Cms Generalization** (1 giorno)
    - Problema: Content troppo specifico
    - Soluzione: [Cms optimization_recommendations.md](../laravel/modules/cms/docs/optimization_recommendations.md)
+<<<<<<< HEAD
 =======
    - Soluzione: [User optimization_recommendations.md](../laravel/Modules/User/docs/optimization_recommendations.md)
 
@@ -113,6 +123,8 @@ Creato file `optimization_recommendations.md` in ogni modulo con:
    - Problema: Content troppo specifico
    - Soluzione: [Cms optimization_recommendations.md](../laravel/Modules/Cms/docs/optimization_recommendations.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ### 🟢 NORMALE (Settimana 3)
 **Obiettivo**: Ottimizzazioni performance e DX

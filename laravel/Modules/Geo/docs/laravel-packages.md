@@ -3,9 +3,13 @@ https://gasparesganga.com/labs/php-shapefile/
 -----------------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 fathernelson/laravel-mysql-spatial
 -----------------------------------------------
 

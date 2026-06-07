@@ -106,11 +106,15 @@ return [
 
     'requirements' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         //        'min-quality' => 0,
         //        'min-complexity' => 0,
         //        'min-architecture' => 0,
         //        'min-style' => 0,
         //        'disable-security-check' => false,
+<<<<<<< HEAD
 =======
 //        'min-quality' => 0,
 //        'min-complexity' => 0,
@@ -118,6 +122,8 @@ return [
 //        'min-style' => 0,
 //        'disable-security-check' => false,
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
 
     /*

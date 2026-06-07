@@ -145,6 +145,7 @@ done
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Factory Audit Root](../../../project_docs/factory-audit-2025.md)
 - [Missing Factories Audit](./missing-factories-audit.md)
 <<<<<<< HEAD
@@ -153,6 +154,12 @@ done
 - [Geo Factory Audit](../../Geo/project_docs/missing-factories-audit.md)
 >>>>>>> 4b6b99016 (first commit)
 - [Laravel Factory Best Practices](../../../project_docs/laravel-factory-best-practices.md)
+=======
+- [Factory Audit Root](../../../../docs/project/factory-audit-2025.md)
+- [Missing Factories Audit](./missing-factories-audit.md)
+- [Geo Factory Audit](../../geo/project_docs/missing-factories-audit.md)
+- [Laravel Factory Best Practices](../../../../docs/project/laravel-factory-best-practices.md)
+>>>>>>> dev
 
 ---
 
@@ -161,6 +168,9 @@ done
 Ogni model DEVE avere la sua factory. È obbligatorio per il corretto funzionamento del sistema.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

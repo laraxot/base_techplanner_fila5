@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Collegamenti ai Temi e UI
 
 Questo documento fornisce collegamenti bidirezionali tra il modulo Cms e il modulo UI per quanto riguarda i temi.
@@ -31,3 +32,12 @@ Secondo le regole di organizzazione della documentazione:
 Questo documento è collegato bidirezionalmente con [cms-themes-link.md](../../ui/project_docs/cms-themes-link.md) nel modulo UI.
 
 > Aggiorna entrambi i riferimenti se modifichi la documentazione dei temi o aggiungi nuove sezioni.
+=======
+---
+module: theme
+topic: themes_ui_link
+canonical: ../../../Themes/docs/shared-components/themes-ui-link.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/themes-ui-link.md
+>>>>>>> dev

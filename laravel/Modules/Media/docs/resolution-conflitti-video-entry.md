@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risoluzione Conflitto in VideoEntry
 
 ## Panoramica
@@ -76,3 +77,12 @@ La soluzione è stata verificata con:
 
 - [Documentazione principale risoluzione conflitti git](../../../../docs/risoluzione_conflitti_git.md)
 - [Documentazione dettagliata VideoEntry](../../../../docs/video_entry_conflict.md)
+=======
+---
+module: theme
+topic: resolution-conflitti-video-entry
+canonical: ../../../Themes/docs/shared-components/conflict-resolution-video-entry.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/conflict-resolution-video-entry.md
+>>>>>>> dev

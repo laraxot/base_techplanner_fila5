@@ -9,20 +9,27 @@ use Modules\User\Models\Role;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * Factory per il modello Role del modulo User.
  *
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
  * @extends Factory<Role>
  */
 class RoleFactory extends Factory
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * The name of the factory's corresponding model.
 =======
      * Il nome del modello corrispondente alla factory.
 >>>>>>> 4b6b99016 (first commit)
+=======
+     * The name of the factory's corresponding model.
+>>>>>>> dev
      *
      * @var class-string<Role>
      */
@@ -30,22 +37,30 @@ class RoleFactory extends Factory
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Define the model's default state.
 =======
      * Definisce lo stato di default del modello.
 >>>>>>> 4b6b99016 (first commit)
+=======
+     * Define the model's default state.
+>>>>>>> dev
      *
      * @return array<string, mixed>
      */
     public function definition(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         return [
             'name' => fake()->unique()->word(),
             'guard_name' => 'web',
             'team_id' => null,
         ];
     }
+<<<<<<< HEAD
 =======
         $roles = [
             'admin' => 'Administrator',
@@ -109,4 +124,6 @@ class RoleFactory extends Factory
         ]);
     }
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 }

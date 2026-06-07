@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ListLogActivities UI/UX Improvements - [DATE]
 
 ## Data Intervento: [DATE]
@@ -7,6 +8,11 @@
 
 ## Data Intervento: 2025-12-04
 >>>>>>> 4b6b99016 (first commit)
+=======
+# ListLogActivities UI/UX Improvements - [DATE]
+
+## Data Intervento: [DATE]
+>>>>>>> dev
 
 ## Obiettivo
 
@@ -293,20 +299,28 @@ PASS: 2 files formattati correttamente
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Activity Module README](./readme.md)
 - [Laraxot UI/UX Guidelines](../../xot/docs/ui-ux-best-practices.md)
 =======
 - [Activity Module README](./README.md)
 - [Laraxot UI/UX Guidelines](../../Xot/docs/ui-ux-best-practices.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Activity Module README](./readme.md)
+- [Laraxot UI/UX Guidelines](../../xot/docs/ui-ux-best-practices.md)
+>>>>>>> dev
 - [Heroicon Reference](https://heroicons.com/)
 
 ---
 
 **Autore**: iFlow CLI
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data**: 2025-12-04
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 **Versione**: 1.0
 **Status**: ✅ Production Ready

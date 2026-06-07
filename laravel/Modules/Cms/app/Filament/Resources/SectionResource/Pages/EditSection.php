@@ -9,5 +9,9 @@ use Modules\Lang\Filament\Resources\Pages\LangBaseEditRecord;
 
 class EditSection extends LangBaseEditRecord
 {
+<<<<<<< HEAD
     protected static string $resource = SectionResource::class;
+=======
+    public static string $resource = SectionResource::class;
+>>>>>>> dev
 }

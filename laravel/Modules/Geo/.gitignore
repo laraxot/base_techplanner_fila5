@@ -119,7 +119,10 @@ Thumbs.db
 # ==============================================
 # LANGUAGE FILES
 # ==============================================
+<<<<<<< HEAD
 lang/lang/
+=======
+>>>>>>> dev
 resources/lang/
 
 # ==============================================
@@ -158,4 +161,23 @@ test_geo_data.sql
 # 🚫 File specifici del progetto
 *.fila2
 laravel
+<<<<<<< HEAD
 public_html
+=======
+public_html
+lang/lang/
+_docs/
+_docs/
+
+# Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
+**/docs/archive/
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+*~HEAD
+*~BASE
+*~LOCAL
+*~REMOTE
+*.orig
+*.rej
+*~head
+
+>>>>>>> dev

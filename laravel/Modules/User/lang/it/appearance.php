@@ -15,6 +15,9 @@ return [
         'sort' => 5,
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Appearance',
     'plural_label' => 'Appearance (Plurale)',
     'fields' => [
@@ -48,10 +51,13 @@ return [
             'label' => 'Elimina Appearance',
         ],
     ],
+<<<<<<< HEAD
 =======
     'label' => '',
     'plural_label' => '',
     'fields' => [],
     'actions' => [],
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

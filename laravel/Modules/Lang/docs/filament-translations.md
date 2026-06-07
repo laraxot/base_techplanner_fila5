@@ -90,12 +90,17 @@ TextInput::make('title')
 ## Collegamenti Bidirezionali
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni Namespace Filament](../../cms/project_docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
 - [Regole Generali](../../xot/project_docs/readme.md) - Best practice e linee guida generali
 =======
 - [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
 - [Regole Generali](../../Xot/project_docs/README.md) - Best practice e linee guida generali
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
+- [Regole Generali](../../Xot/project_docs/README.md) - Best practice e linee guida generali
+>>>>>>> dev
 
 ---
 
@@ -107,12 +112,17 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
 - Tutte le label sono gestite tramite i file di traduzione del modulo.
 - Consulta anche:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - [docs Modulo Generico](../../<nome modulo>/docs/readme.md)
   - [docs Xot](../../xot/docs/readme.md)
 =======
   - [docs Modulo Generico](../../<nome modulo>/docs/README.md)
   - [docs Xot](../../Xot/docs/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+  - [docs Modulo Generico](../../<nome modulo>/docs/README.md)
+  - [docs Xot](../../Xot/docs/README.md)
+>>>>>>> dev
 
 ## Policy DRY sulle Traduzioni di Disponibilità/Appuntamenti
 
@@ -214,12 +224,17 @@ TextInput::make('title')
 ## Collegamenti Bidirezionali
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
 - [Regole Generali](../../xot/docs/readme.md) - Best practice e linee guida generali
 =======
 - [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
 - [Regole Generali](../../Xot/docs/README.md) - Best practice e linee guida generali
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
+- [Regole Generali](../../Xot/docs/README.md) - Best practice e linee guida generali
+>>>>>>> dev
 
 ---
 
@@ -231,12 +246,17 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
 - Tutte le label sono gestite tramite i file di traduzione del modulo.
 - Consulta anche:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - [docs <nome progetto>](../../<nome progetto>/docs/readme.md)
   - [docs Xot](../../xot/docs/readme.md)
 =======
   - [docs <nome progetto>](../../<nome progetto>/docs/README.md)
   - [docs Xot](../../Xot/docs/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+  - [docs <nome progetto>](../../<nome progetto>/docs/README.md)
+  - [docs Xot](../../Xot/docs/README.md)
+>>>>>>> dev
 
 ## Policy DRY sulle Traduzioni di Disponibilità/Appuntamenti
 

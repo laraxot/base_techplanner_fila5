@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risoluzione Conflitti Git - Modulo Activity
 
 ## Data Risoluzione
@@ -51,3 +52,12 @@ Tutti i file risolti rispettano:
 
 ---
 *Aggiornato automaticamente dopo risoluzione conflitti Git*
+=======
+---
+module: theme
+topic: git-conflicts-resolution-sumy
+canonical: ../../../Themes/docs/shared-components/git-conflicts-resolution-summary-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-resolution-summary-Modules.md
+>>>>>>> dev

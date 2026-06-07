@@ -1,10 +1,14 @@
 # PHPStan Level 10 Compliance Status
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 **Last Updated**: 2025-12-10
 >>>>>>> 4b6b99016 (first commit)
+=======
+
+>>>>>>> dev
 **Status**: ✅ FULLY COMPLIANT (0 errors)
 
 ## Summary
@@ -28,7 +32,11 @@ The Cms module is now fully compliant with PHPStan Level 10 analysis. All static
 **Problem**: Returning array<mixed, mixed> instead of array<string, mixed>
 **Solution**: Removed incorrect PHPDoc annotation
 **File**: `app/View/Composers/ThemeComposer.php`
+<<<<<<< HEAD
 **Details**: Clean return without misleading PHPDoc
+=======
+**Details**: Clean return without misleading PHPDoc, removed duplicate PHPDoc at line 37-38
+>>>>>>> dev
 
 ### 4. Factory Method Calls
 **Problem**: Cannot call create() on mixed (factory objects)
@@ -36,9 +44,27 @@ The Cms module is now fully compliant with PHPStan Level 10 analysis. All static
 **Files**:
 - `generate_business_data.php`
 - `populate_database_comprehensive.php`
+<<<<<<< HEAD
 **Details**: Added instanceof checks and method_exists() calls
 
 ### 5. Array Type in Compile Method
+=======
+**Details**: Added instanceof checks, method_exists() calls, and @phpstan-ignore-next-line for template covariance issues
+
+### 5. Test Scripts Type Safety
+**Problem**: Mixed types in test data generation scripts
+**Solution**: Enhanced type hints and PHPDoc annotations
+**Files**:
+- `../../../bashscripts/cms/generate_test_data.php`
+- `populate_database_comprehensive.php`
+**Details**: 
+- Added `@var` annotations for factory instances and records
+- Defined typed array structure for `$results` property
+- Added `@phpstan-ignore-next-line` for Eloquent Collection template covariance
+- Improved callable type hints in createRecords method
+
+### 6. Array Type in Compile Method
+>>>>>>> dev
 **Problem**: Method should return array<string, mixed> but returns array
 **Solution**: Ensured string keys in result array
 **File**: `app/Models/Traits/HasBlocks.php`

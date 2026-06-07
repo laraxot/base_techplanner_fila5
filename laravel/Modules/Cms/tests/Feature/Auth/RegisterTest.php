@@ -6,6 +6,7 @@ namespace Modules\Cms\Tests\Feature\Auth;
 
 use Modules\Xot\Tests\TestCase;
 
+<<<<<<< HEAD
 use function Pest\Laravel\get;
 
 uses(TestCase::class);
@@ -22,5 +23,16 @@ describe('Register Page', function () {
 
     test('authenticated user is redirected away from register page', function () {
         $this->assertTrue(true);
+=======
+uses(TestCase::class);
+
+// NOTE: Helper functions moved to Modules\Xot\Tests\TestCase for DRY pattern
+// Use $this->createTestUser(
+
+describe('Register Page', function () {
+    test('register page placeholder', function () {
+        // Placeholder - actual tests require theme components
+        expect(true)->toBeTrue();
+>>>>>>> dev
     });
 });

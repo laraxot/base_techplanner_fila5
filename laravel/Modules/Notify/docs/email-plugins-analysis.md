@@ -271,7 +271,11 @@ class MailAnalytics
 - [Filament Documentation](https://filamentphp.com/docs)
 - [Laravel Mail](https://laravel.com/project_docs/mail)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Laravel Mail](https://laravel.com/docs/mail)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Laravel Mail](https://laravel.com/docs/mail)
+>>>>>>> dev
 - [Spatie Packages](https://spatie.be/open-source) 

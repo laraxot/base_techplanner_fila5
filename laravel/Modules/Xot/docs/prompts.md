@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 # Struttura dei prompt
 
 ## Scopo
@@ -22,6 +25,7 @@ I prompt definiscono regole operative riutilizzabili tra progetti. Devono essere
 - [regole documentazione](./consolidated/documentation-rules.md)
 - [prompts consolidati](./consolidated/prompts.md)
 - [indice documentazione](./00-index.md)
+<<<<<<< HEAD
 =======
 # Struttura dei Prompt
 
@@ -77,6 +81,8 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 
 ## Collegamenti
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 - [Documentazione Generale](./documentation.md)
 - [Regole del Progetto](./rules.md)
 - [Miglioramenti al Prompt docs.txt](./prompt_docs_improvements.md)
@@ -88,10 +94,14 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 ## Collegamenti tra versioni di prompts.md
 * [prompts.md](docs/prompts.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [prompts.md](../../../xot/project_docs/prompts.md)
 =======
 * [prompts.md](../../../Xot/docs/prompts.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [prompts.md](../../../xot/project_docs/prompts.md)
+>>>>>>> dev
 
 ## Modifiche al Prompt docs.txt
 
@@ -109,12 +119,17 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 
 ### Collegamenti Correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole Universali](./prompt_rules.md)
 - [Gestione Documentazione](./documentation_management.md)
 =======
 - [Regole Universali](./PROMPT_RULES.md)
 - [Gestione Documentazione](./DOCUMENTATION_MANAGEMENT.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Regole Universali](./prompt_rules.md)
+- [Gestione Documentazione](./documentation_management.md)
+>>>>>>> dev
 - [Struttura Moduli](./module-structure.md)
 
 ## Errori Comuni da Evitare
@@ -122,10 +137,14 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 ### Percorsi Assoluti
 ⚠️ **Problema Identificato**: Uso di percorsi assoluti nei collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 ❌ Esempio errato: `Modules/Xot/project_docs/file.md`
 =======
 ❌ Esempio errato: `../Xot/docs/file.md`
 >>>>>>> 4b6b99016 (first commit)
+=======
+❌ Esempio errato: `Modules/Xot/project_docs/file.md`
+>>>>>>> dev
 ✅ Esempio corretto: `./file.md` o `../altro-modulo/file.md`
 
 ### Impatto dell'Errore

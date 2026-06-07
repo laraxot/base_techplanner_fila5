@@ -2,7 +2,11 @@
 
 ## 🎯 Obiettivo
 
+<<<<<<< HEAD
 Questa documentazione è stata creata per risolvere i problemi comuni relativi alle licenze FullCalendar Scheduler nel progetto SaluteOra, basandosi sulla ricerca approfondita della documentazione ufficiale di FullCalendar e dei problemi noti nella community.
+=======
+Questa documentazione è stata creata per risolvere i problemi comuni relativi alle licenze FullCalendar Scheduler nel progetto Laraxot, basandosi sulla ricerca approfondita della documentazione ufficiale di FullCalendar e dei problemi noti nella community.
+>>>>>>> dev
 
 ## 📚 Documenti Creati
 
@@ -11,7 +15,11 @@ Questa documentazione è stata creata per risolvere i problemi comuni relativi a
 - **400+ righe** di documentazione dettagliata
 - Copertura completa di tutti i problemi noti
 - Soluzioni specifiche per Laravel/Filament
+<<<<<<< HEAD
 - Best practices per ambiente sanitario SaluteOra
+=======
+- Best practices per ambiente sanitario Laraxot
+>>>>>>> dev
 
 ### 2. **Riferimento Rapido**
 📄 `fullcalendar-scheduler-quick-reference.md`
@@ -69,7 +77,11 @@ private function getFullCalendarPlugin(): FilamentFullCalendarPlugin
             'dayGrid', 'timeGrid', 'list', 'interaction',
             'resourceTimeline', 'resourceDayGrid', // Premium
         ],
+<<<<<<< HEAD
         // Configurazioni SaluteOra specifiche...
+=======
+        // Configurazioni Laraxot specifiche...
+>>>>>>> dev
     ]);
 }
 ```
@@ -96,7 +108,11 @@ FULLCALENDAR_CACHE_TTL=300
 FULLCALENDAR_MAX_EVENTS=100
 ```
 
+<<<<<<< HEAD
 ## 🏥 Specifiche SaluteOra
+=======
+## 🏥 Specifiche Laraxot
+>>>>>>> dev
 
 ### Business Hours Sanitarie
 ```javascript
@@ -183,7 +199,11 @@ Log::info('FullCalendar configured', [
 ✅ **Configurazione incompleta** - Setup completo fornito
 ✅ **Bug versioning** - Soluzioni per v5.x e v6.x
 ✅ **Ambiente-specific** - Gestione produzione/sviluppo
+<<<<<<< HEAD
 ✅ **SaluteOra integration** - Configurazioni sanitarie specifiche
+=======
+✅ **Laraxot integration** - Configurazioni sanitarie specifiche
+>>>>>>> dev
 
 ### Benefici
 - **Riduzione troubleshooting time** - Soluzioni immediate disponibili
@@ -209,12 +229,20 @@ Log::info('FullCalendar configured', [
 ### Quando Aggiornare
 - Nuove versioni FullCalendar con breaking changes
 - Nuovi bug noti nella community
+<<<<<<< HEAD
 - Modifiche architettura SaluteOra
+=======
+- Modifiche architettura Laraxot
+>>>>>>> dev
 - Nuovi requisiti sanitari/legali
 
 ### Come Aggiornare
 1. Verificare issue GitHub FullCalendar
+<<<<<<< HEAD
 2. Testare soluzioni in ambiente SaluteOra
+=======
+2. Testare soluzioni in ambiente Laraxot
+>>>>>>> dev
 3. Aggiornare documenti pertinenti
 4. Aggiornare questo README
 
@@ -224,4 +252,8 @@ Log::info('FullCalendar configured', [
 **Ultima modifica**: Gennaio 2025  
 **Versione FullCalendar**: v6.1.17  
 **Versione Filament**: v3.x  
+<<<<<<< HEAD
 **Progetto**: SaluteOra Multi-Tenant Healthcare Platform 
+=======
+**Progetto**: Laraxot Multi-Tenant Healthcare Platform 
+>>>>>>> dev

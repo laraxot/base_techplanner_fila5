@@ -20,6 +20,9 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Alerts',
     'plural_label' => 'Alerts (Plurale)',
     'navigation' => [
@@ -64,6 +67,9 @@ return [
             'label' => 'Elimina Alerts',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

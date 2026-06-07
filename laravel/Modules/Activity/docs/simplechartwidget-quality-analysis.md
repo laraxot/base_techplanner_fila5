@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SimpleChartWidget - Analisi Qualità del Codice e Best Practices
 
 ## Panoramica
@@ -795,3 +796,12 @@ Il refactoring ha migliorato la qualità del codice da:
 - **Violazioni di principi** → **Conformità con best practices**
 
 Questo approccio DRY+KISS permette di mantenere un codice di alta qualità, facile da testare e manutenere nel tempo.
+=======
+---
+module: theme
+topic: simplechartwidget-quality-analysis
+canonical: ../../../Themes/docs/shared-components/dual-label-chart-widget-implementation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/dual-label-chart-widget-implementation.md
+>>>>>>> dev

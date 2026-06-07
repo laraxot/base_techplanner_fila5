@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Arr;
 
+<<<<<<< HEAD
 use InvalidArgumentException;
+=======
+>>>>>>> dev
 use Spatie\QueueableAction\QueueableAction;
 
 class SaveArrayAction
@@ -16,7 +19,11 @@ class SaveArrayAction
         return match ($format) {
             'json' => app(SaveJsonArrayAction::class)->execute($data, $filename),
             'php' => app(SavePhpArrayAction::class)->execute($data, $filename),
+<<<<<<< HEAD
             default => throw new InvalidArgumentException("Formato non supportato: {$format}"),
+=======
+            default => throw new \InvalidArgumentException("Formato non supportato: {$format}"),
+>>>>>>> dev
         };
     }
 }

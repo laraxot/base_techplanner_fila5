@@ -194,6 +194,9 @@ MODULE=$1
 - [Xot Safe Casting](../laravel/Modules/Xot/docs/safe-casting-actions.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-07-31*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

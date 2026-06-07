@@ -74,6 +74,7 @@ laravel/.ai/guidelines/
 - [Model Testing Philosophy](model-testing-philosophy.md)
 - [No RefreshDatabase Rule](no-refresh-database-rule.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laraxot Framework](../../laravel/modules/xot/docs/laraxot-framework.md)
 
 ---
@@ -83,6 +84,11 @@ laravel/.ai/guidelines/
 ---
 **Ultimo aggiornamento**: Dicembre 2024
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Laraxot Framework](../../laravel/modules/xot/docs/laraxot-framework.md)
+
+---
+>>>>>>> dev
 **Versione**: 1.0
 **Compatibilità**: Laraxot <nome progetto>, Architecture Principles
 **Compatibilità**: Laraxot <nome progetto>, Architecture Principles

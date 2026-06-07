@@ -275,7 +275,11 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+<<<<<<< HEAD
 - [<nome progetto> Module](../../../docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+=======
+- [<nome progetto> Module](../../../../docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+>>>>>>> dev
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche

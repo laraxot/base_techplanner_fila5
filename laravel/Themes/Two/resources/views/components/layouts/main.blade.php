@@ -1,19 +1,28 @@
 @props([
     'title' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 ])
 @php
     $metatag = \Modules\Xot\Datas\MetatagData::make();
 @endphp
+<<<<<<< HEAD
 =======
     'siteName' => config('app.name'),
 ])
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         <meta name="application-name" content="{{ config('app.name') }}">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,6 +64,7 @@
         
         {{-- Application JS --}}
         @vite(['resources/js/app.js'], 'themes/Two')
+<<<<<<< HEAD
 =======
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ $title ? "$title — " : '' }}{{ config('app.name') }}</title>
@@ -97,5 +107,7 @@
 
         @livewireScripts
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     </body>
 </html>

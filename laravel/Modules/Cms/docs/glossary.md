@@ -103,6 +103,7 @@ Elemento interattivo che:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Componenti](./components/readme.md)
 - [Guida allo Stile](./style/readme.md)
 - [Convenzioni Layout](./layout/readme.md)
@@ -111,5 +112,10 @@ Elemento interattivo che:
 - [Guida allo Stile](./style/README.md)
 - [Convenzioni Layout](./layout/README.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Documentazione Componenti](./components/readme.md)
+- [Guida allo Stile](./style/readme.md)
+- [Convenzioni Layout](./layout/readme.md)
+>>>>>>> dev
 
 [Fonte: sopralerighe.org](https://www.sopralerighe.org/sito-web-glossario-tecnico/)

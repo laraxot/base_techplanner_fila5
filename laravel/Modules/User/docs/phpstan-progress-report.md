@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Progress Report - Modulo User
 
 **Data**: 2025-01-22
@@ -57,3 +58,12 @@
 =======
 *Ultimo aggiornamento: 2025-01-22*
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: phpstan-progress-report
+canonical: ../../../Themes/docs/shared-components/phpstan-progress-report.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-progress-report.md
+>>>>>>> dev

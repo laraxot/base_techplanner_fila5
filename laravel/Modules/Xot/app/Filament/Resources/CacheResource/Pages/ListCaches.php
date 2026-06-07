@@ -12,7 +12,10 @@ use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Filament\Actions\Header\ArtisanHeaderAction;
 use Modules\Xot\Filament\Resources\CacheResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+<<<<<<< HEAD
 use Override;
+=======
+>>>>>>> dev
 
 /**
  * @see CacheResource
@@ -30,7 +33,11 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     public function getTableColumns(): array
     {
         return [
@@ -50,7 +57,11 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     public function getGridTableColumns(): array
     {
         return [
@@ -61,7 +72,11 @@ class ListCaches extends XotBaseListRecords
     /**
      * @return array<string, Action>
      */
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> dev
     protected function getHeaderActions(): array
     {
         return [

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<<<<<<< HEAD
     {{-- Content Security Policy --}}
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
@@ -27,6 +28,8 @@
         upgrade-insecure-requests;
     ">
 
+=======
+>>>>>>> dev
     {{-- SEO Basics --}}
     <meta name="title" content="{{ $meta->getTitle() }}">
     <meta name="description" content="{{ $meta->getDescription(limit: 160) }}">
@@ -70,6 +73,13 @@
     <meta name="theme-color" content="#ffffff">
     --}}
 
+<<<<<<< HEAD
+=======
+    @if(isset($pageSchema) && is_array($pageSchema) && $pageSchema !== [])
+        <script type="application/ld+json">{!! json_encode($pageSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+    @endif
+
+>>>>>>> dev
     {{ $slot }}
     @filamentStyles
     @vite(['resources/css/app.css', 'resources/js/app.js'], 'themes/' . $meta->getPubTheme())

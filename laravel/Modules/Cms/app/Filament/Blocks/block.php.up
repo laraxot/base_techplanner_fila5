@@ -4,10 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Cms\Filament\Blocks;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\Builder\Block as FilamentBlock;
 use Illuminate\Support\Str;
 
 abstract class Block extends FilamentBlock
+=======
+use Illuminate\Support\Str;
+use Modules\Xot\Filament\Blocks\XotBaseBlock;
+
+abstract class Block extends XotBaseBlock
+>>>>>>> dev
 {
     protected static ?string $view = null;
 

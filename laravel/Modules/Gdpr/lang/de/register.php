@@ -34,7 +34,11 @@ return [
             'cta' => 'Werde von Top-Laravel-Unternehmen eingestellt',
         ],
     ],
+<<<<<<< HEAD
     'social_proof' => 'Werden Sie Teil der LaravelPizza Community',
+=======
+    'social_proof' => 'Werden Sie Teil der <nome progetto> Community',
+>>>>>>> dev
     'fields' => [
         'first_name' => [
             'label' => 'Vorname',
@@ -108,7 +112,11 @@ return [
     'login' => 'Anmelden',
     'required_consent_missing' => 'Sie müssen alle erforderlichen Zustimmungen akzeptieren, um mit der Registrierung fortzufahren.',
     'success' => 'Registrierung erfolgreich abgeschlossen! Ihr Konto wurde DSGVO-konform erstellt.',
+<<<<<<< HEAD
     'success_message' => 'Willkommen bei LaravelPizza Meetups! Ihre Registrierung ist abgeschlossen und alle Ihre Zustimmungen wurden korrekt erfasst.',
+=======
+    'success_message' => 'Willkommen bei <nome progetto> Meetups! Ihre Registrierung ist abgeschlossen und alle Ihre Zustimmungen wurden korrekt erfasst.',
+>>>>>>> dev
     'error' => 'Fehler bei der Registrierung',
     'error_message' => 'Bei der Registrierung ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut. Wenn das Problem besteht, kontaktieren Sie unseren Support.',
     'clickbait' => [
@@ -124,14 +132,22 @@ return [
         'by_registering' => 'Durch die Registrierung stimmen Sie unseren Geschäftsbedingungen und der Datenschutzerklärung zu',
     ],
     'seo' => [
+<<<<<<< HEAD
         'description' => 'Werden Sie Teil der LaravelPizza Community für exklusive Meetups, Premium-Tutorials und Networking. Kostenloser Zugang zu Workshops und Community-Events.',
+=======
+        'description' => 'Werden Sie Teil der <nome progetto> Community für exklusive Meetups, Premium-Tutorials und Networking. Kostenloser Zugang zu Workshops und Community-Events.',
+>>>>>>> dev
         'laravel_meetup' => 'Laravel-Meetup',
         'laravel_community' => 'Laravel-Community',
         'php_developer_community' => 'PHP-Entwickler-Community',
         'laravel_tutorials' => 'Laravel-Tutorials',
         'laravel_workshops' => 'Laravel-Workshops',
         'laravel_networking' => 'Laravel-Networking',
+<<<<<<< HEAD
         'laravelpizza' => 'LaravelPizza',
+=======
+        '<nome progetto>' => '<nome progetto>',
+>>>>>>> dev
     ],
     'navigation' => [
         'label' => 'Missing Navigation Label',

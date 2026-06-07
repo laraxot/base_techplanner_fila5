@@ -193,10 +193,14 @@ Per garantire la compatibilità con PHPStan livello 9, assicurarsi di:
 ## Collegamenti alla Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Filament Resources](/laravel/modules/xot/project_docs/filament/resources.md)
 - [HasXotTable Trait](/laravel/modules/xot/project_docs/filament/xot_table.md)
 - [Regole di Traduzione](/laravel/modules/xot/project_docs/translation_rules.md)
 
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 3 Giugno 2025*
 - [Filament Resources](/laravel/Modules/Xot/project_docs/filament/resources.md)
@@ -205,6 +209,8 @@ Per garantire la compatibilità con PHPStan livello 9, assicurarsi di:
 
 *Ultimo aggiornamento: 3 Giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 # XotBaseRelationManager per Laraxot PTVX
 
 ## Panoramica
@@ -400,10 +406,14 @@ Per garantire la compatibilità con PHPStan livello 9, assicurarsi di:
 ## Collegamenti alla Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Filament Resources](/laravel/modules/xot/docs/filament/resources.md)
 - [HasXotTable Trait](/laravel/modules/xot/docs/filament/xot_table.md)
 - [Regole di Traduzione](/laravel/modules/xot/docs/translation_rules.md)
 
+<<<<<<< HEAD
 =======
 - [Filament Resources](/laravel/Modules/Xot/docs/filament/resources.md)
 - [HasXotTable Trait](/laravel/Modules/Xot/docs/filament/xot_table.md)
@@ -411,3 +421,5 @@ Per garantire la compatibilità con PHPStan livello 9, assicurarsi di:
 
 *Ultimo aggiornamento: 3 Giugno 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

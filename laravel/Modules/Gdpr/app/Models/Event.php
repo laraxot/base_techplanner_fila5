@@ -14,9 +14,12 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Crypt;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Gdpr\Database\Factories\EventFactory;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 
 use function Safe\json_encode;
@@ -38,6 +41,7 @@ use function Safe\json_encode;
  * @property Carbon|null          $deleted_at
  * @property string|null          $deleted_by
  * @property Consent|null         $consent
+<<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
@@ -45,6 +49,95 @@ use function Safe\json_encode;
 =======
  * @method static EventFactory          factory($count = null, $state = [])
 >>>>>>> 4b6b99016 (first commit)
+=======
+ * @property string               $id
+ * @property string|null          $treatment_id
+ * @property string|null          $consent_id
+ * @property string               $subject_id
+ * @property string               $ip
+ * @property string               $action
+ * @property string               $payload
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property Consent|null         $consent
+ * @property string               $id
+ * @property string|null          $treatment_id
+ * @property string|null          $consent_id
+ * @property string               $subject_id
+ * @property string               $ip
+ * @property string               $action
+ * @property string               $payload
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property Consent|null         $consent
+ * @property string               $id
+ * @property string|null          $treatment_id
+ * @property string|null          $consent_id
+ * @property string               $subject_id
+ * @property string               $ip
+ * @property string               $action
+ * @property string               $payload
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property Consent|null         $consent
+ * @property string               $id
+ * @property string|null          $treatment_id
+ * @property string|null          $consent_id
+ * @property string               $subject_id
+ * @property string               $ip
+ * @property string               $action
+ * @property string               $payload
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property Consent|null         $consent
+ * @property string               $id
+ * @property string|null          $treatment_id
+ * @property string|null          $consent_id
+ * @property string               $subject_id
+ * @property string               $ip
+ * @property string               $action
+ * @property string               $payload
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property Consent|null         $consent
+ * @property string               $id
+ * @property string|null          $treatment_id
+ * @property string|null          $consent_id
+ * @property string               $subject_id
+ * @property string               $ip
+ * @property string               $action
+ * @property string               $payload
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property Consent|null         $consent
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ *
+>>>>>>> dev
  * @method static Builder<static>|Event newModelQuery()
  * @method static Builder<static>|Event newQuery()
  * @method static Builder<static>|Event query()
@@ -64,6 +157,11 @@ use function Safe\json_encode;
  *
  * @property ProfileContract|null $deleter
  *
+<<<<<<< HEAD
+=======
+ * @method static \Modules\Gdpr\Database\Factories\EventFactory factory($count = null, $state = [])
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class Event extends BaseModel
@@ -71,11 +169,14 @@ class Event extends BaseModel
     use HasUuids;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $table = 'gdpr_events';
 =======
     // protected $table = 'event';
 >>>>>>> 4b6b99016 (first commit)
 
+=======
+>>>>>>> dev
     public $fillable = [
         'id',
         'action',
@@ -85,6 +186,11 @@ class Event extends BaseModel
         'payload',
     ];
 
+<<<<<<< HEAD
+=======
+    protected $table = 'gdpr_events';
+
+>>>>>>> dev
     public function consent(): BelongsTo
     {
         return $this->belongsTo(Consent::class);

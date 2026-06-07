@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pattern per Riferimenti User - Laraxot
 
 **Obiettivo**: Standardizzare i riferimenti a User nel sistema Laraxot
@@ -222,3 +223,12 @@ if ($user instanceof UserContract) {
 
 ---
 
+=======
+---
+module: theme
+topic: user-reference
+canonical: ../../../Themes/docs/shared-components/user-reference-pattern.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/user-reference-pattern.md
+>>>>>>> dev

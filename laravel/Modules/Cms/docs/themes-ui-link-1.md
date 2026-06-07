@@ -11,9 +11,15 @@ Secondo le regole di organizzazione della documentazione:
 
 ## Collegamenti ai Temi nel Modulo UI
 
+<<<<<<< HEAD
 - [Componenti UI](../../UI/docs/README.md) - Panoramica dei componenti UI disponibili
 - [Layout e Temi](../../UI/docs/layouts-and-themes.md) - Documentazione sui layout e temi
 - [Componenti Blade](../../UI/docs/blade-components.md) - Componenti Blade riutilizzabili
+=======
+- [Componenti UI](../../ui/docs/readme.md) - Panoramica dei componenti UI disponibili
+- [Layout e Temi](../../ui/docs/layouts-and-themes.md) - Documentazione sui layout e temi
+- [Componenti Blade](../../ui/docs/blade-components.md) - Componenti Blade riutilizzabili
+>>>>>>> dev
 
 ## Collegamenti ai Temi nel Modulo Cms
 
@@ -23,11 +29,20 @@ Secondo le regole di organizzazione della documentazione:
 
 ## Collegamenti ai Temi nella Root
 
+<<<<<<< HEAD
 - [Compilazione Temi](../../../docs/compilazione_temi.md) - Collegamento nella root alla documentazione sulla compilazione dei temi
 - [Theme Links](../../../docs/theme-links.md) - Collegamenti nella root alla documentazione sui temi
 
 ## Collegamento Bidirezionale
 
 Questo documento è collegato bidirezionalmente con [cms-themes-link.md](../../UI/docs/cms-themes-link.md) nel modulo UI.
+=======
+- [Compilazione Temi](../../../../docs/compilazione_temi.md) - Collegamento nella root alla documentazione sulla compilazione dei temi
+- [Theme Links](../../../../docs/theme-links.md) - Collegamenti nella root alla documentazione sui temi
+
+## Collegamento Bidirezionale
+
+Questo documento è collegato bidirezionalmente con [cms-themes-link.md](../../ui/docs/cms-themes-link.md) nel modulo UI.
+>>>>>>> dev
 
 > Aggiorna entrambi i riferimenti se modifichi la documentazione dei temi o aggiungi nuove sezioni.

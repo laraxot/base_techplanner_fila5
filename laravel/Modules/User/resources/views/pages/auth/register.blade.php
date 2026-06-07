@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 use function Laravel\Folio\{middleware, name};
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -12,6 +15,7 @@ if (in_array($locale, ['it', 'en', 'es', 'de', 'fr', 'ru'], true)) {
     LaravelLocalization::setLocale($locale);
     app()->setLocale($locale);
 }
+<<<<<<< HEAD
 =======
 
 use Modules\User\Models\User;
@@ -31,16 +35,25 @@ use Livewire\Volt\Component;
 use function Laravel\Folio\middleware;
 use function Laravel\Folio\name;
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 middleware(['guest']);
 name('register');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 ?>
 
 <x-layouts.app>
     <x-slot name="title">
+<<<<<<< HEAD
         {{ __('gdpr::register.title') }} - LaravelPizza Community
+=======
+        {{ __('gdpr::register.title') }} - <nome progetto> Community
+>>>>>>> dev
     </x-slot>
 
     <x-slot name="description">
@@ -48,7 +61,11 @@ name('register');
     </x-slot>
 
     <x-slot name="keywords">
+<<<<<<< HEAD
         Laravel meetup, Laravel community, PHP developer community, Laravel tutorials, Laravel workshops, Laravel networking, LaravelPizza
+=======
+        Laravel meetup, Laravel community, PHP developer community, Laravel tutorials, Laravel workshops, Laravel networking, <nome progetto>
+>>>>>>> dev
     </x-slot>
 
     <section
@@ -67,7 +84,11 @@ name('register');
             <div class="space-y-10">
                 <div class="text-center space-y-6">
                     <a href="{{ \LaravelLocalization::localizeUrl('/') }}" class="inline-block group" aria-label="{{ config('app.name') }}">
+<<<<<<< HEAD
                         <x-pub_theme::ui.logo class="h-16 w-auto md:h-20 transition-transform duration-300 group-hover:scale-110" />
+=======
+                        <x-ui.logo class="h-16 w-auto md:h-20 transition-transform duration-300 group-hover:scale-110" />
+>>>>>>> dev
                     </a>
 
                     <div class="space-y-3">
@@ -88,7 +109,11 @@ name('register');
                         <h2 class="text-2xl font-bold text-white">{{ __('gdpr::register.form.cta_title') }}</h2>
                         <p class="text-sm text-slate-400">{{ __('gdpr::register.form.cta_subtitle') }}</p>
                     </div>
+<<<<<<< HEAD
                     @livewire(\Modules\Gdpr\Filament\Widgets\Auth\RegisterWidget::class)
+=======
+                    @livewire(\Modules\Gdpr\Filament\Widgets\Auth\UserForm::class)
+>>>>>>> dev
                     <p class="mt-4 text-center text-xs text-slate-500">{{ __('gdpr::register.form.terms_notice') }}</p>
                 </div>
 
@@ -136,6 +161,7 @@ name('register');
             </div>
         </div>
     </section>
+<<<<<<< HEAD
 =======
 new class extends Component {
     #[Validate('required')]
@@ -207,4 +233,6 @@ new class extends Component {
         </div>
     </div>
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 </x-layouts.app>

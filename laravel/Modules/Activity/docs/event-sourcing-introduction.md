@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Event Sourcing in `<nome progetto>`
 
 ## Introduction to Event Sourcing
@@ -307,3 +308,12 @@ public function store(Request $request)
 
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `<nome progetto>`, ensuring full traceability and compliance with healthcare standards.
 >>>>>>> 4b6b99016 (first commit)
+=======
+---
+module: theme
+topic: event-sourcing-introduction
+canonical: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
+>>>>>>> dev

@@ -14,21 +14,33 @@ return [
             'label' => 'Google Maps API Key',
             'helper' => 'Chiave API per l\'integrazione con Google Maps',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'debugbar_enabled' => [
-            'label' => 'Debug Bar',
-            'helper' => 'Abilita/Disabilita la barra di debug',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'debugbar_enabled' => [
+            'label' => 'Debug Bar',
+            'helper' => 'Abilita/Disabilita la barra di debug',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -40,8 +52,13 @@ return [
         'error' => 'Errore durante il salvataggio delle impostazioni',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Setting Page',
     'plural_label' => 'Setting Page (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Setting Page',
+    'plural_label' => 'Setting Page (Plurale)',
+>>>>>>> dev
 ];

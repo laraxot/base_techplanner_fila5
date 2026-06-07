@@ -8,11 +8,15 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 
 ## Collegamenti correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth_components_best_practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets_structure.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
+<<<<<<< HEAD
 =======
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/README.md)
@@ -20,6 +24,8 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets_structure.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## File Risolti
 
@@ -326,11 +332,15 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 
 ## Collegamenti correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth_components_best_practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets_structure.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
+<<<<<<< HEAD
 =======
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/README.md)
@@ -338,6 +348,8 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets_structure.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 ## File Risolti
 

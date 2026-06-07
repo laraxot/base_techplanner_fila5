@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test
@@ -101,3 +102,12 @@ Ogni modulo e tema deve documentare:
 4. Errori comuni da evitare
 
 I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
+=======
+---
+module: theme
+topic: testing-rules
+canonical: ../../../Themes/docs/shared-components/testing-rules-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/testing-rules-Modules.md
+>>>>>>> dev

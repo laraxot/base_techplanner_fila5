@@ -170,9 +170,14 @@
 - [Testing Protocols](../../testing/protocols.md)
 ## Collegamenti tra versioni di ui.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [ui.md](../../../xot/docs/roadmap/bottlenecks/ui.md)
 * [ui.md](../../../ui/docs/ui.md)
 =======
 * [ui.md](../../../Xot/docs/roadmap/bottlenecks/ui.md)
 * [ui.md](../../../UI/docs/ui.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [ui.md](../../../xot/docs/roadmap/bottlenecks/ui.md)
+* [ui.md](../../../ui/docs/ui.md)
+>>>>>>> dev

@@ -2,7 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\User\Tests\TestCase::class);
+=======
+namespace Modules\User\Tests\Unit\Models;
+
+uses(TestCase::class);
+>>>>>>> dev
 
 use Modules\User\Models\Authentication;
 use Modules\User\Models\AuthenticationLog;
@@ -25,6 +31,10 @@ use Modules\User\Models\SocialProvider;
 use Modules\User\Models\SsoProvider;
 use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\TeamPermission;
+<<<<<<< HEAD
+=======
+use Modules\User\Tests\TestCase;
+>>>>>>> dev
 
 test('Notification model can be instantiated', function () {
     $model = new Notification();

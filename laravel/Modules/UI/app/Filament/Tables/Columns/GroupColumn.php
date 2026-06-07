@@ -43,7 +43,10 @@ class GroupColumn extends Column
             return $item instanceof Column;
         });
 
+<<<<<<< HEAD
         /** @var array<int|string, Column> $filtered */
+=======
+>>>>>>> dev
         /** @var array<int, Column> $filteredValues */
         $filteredValues = array_values($filtered);
         $this->schema = $filteredValues;

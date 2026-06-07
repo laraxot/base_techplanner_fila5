@@ -10,9 +10,13 @@ return [
             'helper_text' => 'title',
             'description' => 'title',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'sections' => [
             'label' => 'sections',
@@ -20,9 +24,13 @@ return [
             'helper_text' => 'sections',
             'description' => 'sections',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'description' => [
             'label' => 'description',
@@ -30,9 +38,13 @@ return [
             'helper_text' => 'description',
             'description' => 'description',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'icon' => [
             'label' => 'icon',
@@ -40,11 +52,17 @@ return [
             'helper_text' => 'icon',
             'description' => 'icon',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
     'label' => 'Feature Sections',
     'plural_label' => 'Feature Sections (Plurale)',
+=======
+            'tooltip' => '',
+        ],
+    ],
+>>>>>>> dev
     'navigation' => [
         'name' => 'Feature Sections',
         'plural' => 'Feature Sections',
@@ -56,6 +74,11 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+<<<<<<< HEAD
+=======
+    'label' => 'Feature Sections',
+    'plural_label' => 'Feature Sections (Plurale)',
+>>>>>>> dev
     'actions' => [
         'create' => [
             'label' => 'Crea Feature Sections',
@@ -65,8 +88,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Feature Sections',
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
 ];

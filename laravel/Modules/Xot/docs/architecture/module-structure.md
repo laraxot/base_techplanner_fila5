@@ -121,6 +121,9 @@ Tutti i moduli devono seguire i principi DDD:
 
 - [Convenzioni di Codice](../code-standards.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 - [Best Practices](../best-practices.md)
 - [Testing](../testing/readme.md)
 - [Documentazione](../documentation-rules.md)
@@ -128,6 +131,7 @@ Tutti i moduli devono seguire i principi DDD:
 ## Collegamenti tra versioni di module-structure.md
 * [module-structure.md](../../../xot/docs/laraxot/module-structure.md)
 * [module-structure.md](../../../xot/docs/architecture/module-structure.md)
+<<<<<<< HEAD
 =======
 - [Best Practices](../BEST-PRACTICES.md)
 - [Testing](../testing/README.md)
@@ -137,3 +141,5 @@ Tutti i moduli devono seguire i principi DDD:
 * [module-structure.md](../../../Xot/docs/laraxot/module-structure.md)
 * [module-structure.md](../../../Xot/docs/architecture/module-structure.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

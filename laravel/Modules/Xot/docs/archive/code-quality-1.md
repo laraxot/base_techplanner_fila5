@@ -67,6 +67,7 @@ This document outlines the best practices for maintaining high code quality with
 - Update this document if new tools or standards for code quality are introduced.
 
 ## Links to Related Documentation
+<<<<<<< HEAD
 - [Xot Base Classes](../Xot/docs/XOT_BASE_CLASSES.md)
 - [Filament Extension Pattern](../../Notify/docs/FILAMENT_EXTENSION_PATTERN.md)
 - [Filament Extension Pattern Analysis](../../Notify/docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
@@ -77,3 +78,15 @@ This document outlines the best practices for maintaining high code quality with
 - [Naming Conventions](./NAMING-CONVENTIONS.md)
 - [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
 - [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
+=======
+- [Xot Base Classes](../xot/docs/xot_base_classes.md)
+- [Filament Extension Pattern](../../notify/docs/filament_extension_pattern.md)
+- [Filament Extension Pattern Analysis](../../notify/docs/filament_extension_pattern_analysis.md)
+- [Patient Module - Namespace Conventions](../../patient/docs/namespace_conventions.md)
+- [Patient Module - Validation Errors](../../patient/docs/validation_errors.md)
+- [PHP Strict Types](./php-strict-types.md)
+- [PHPStan Implementation Guide](./phpstan-implementation-guide.md)
+- [Naming Conventions](./naming-conventions.md)
+- [Service Provider Best Practices](./service-provider-best-practices.md)
+- [Filament Best Practices](./filament-best-practices.md)
+>>>>>>> dev

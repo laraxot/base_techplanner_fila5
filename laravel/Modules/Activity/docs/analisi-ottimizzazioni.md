@@ -14,7 +14,11 @@ il modulo **activity** è un sistema avanzato di audit trail e event sourcing ch
 
 ### ✅ documentazione
 - documentazione estremamente completa (100+ file)
+<<<<<<< HEAD
 - esempi pratici dettagliati (bank, prediction_market, shop)
+=======
+- esempi pratici dettagliati (bank, <nome progetto>ion_market, shop)
+>>>>>>> dev
 - copertura completa di event sourcing patterns
 - integrazione filament ben documentata
 
@@ -52,10 +56,14 @@ phpstan-fixes.md / phpstan_fixes.md
 **problema**: presenza file test temporanei non rimossi
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 test.txt, test02.txt, test03.txt, test04.txt, test[DATE].txt, test2222.txt, test444.txt
 =======
 test.txt, test02.txt, test03.txt, test04.txt, test2024-12-04.txt, test2222.txt, test444.txt
 >>>>>>> 4b6b99016 (first commit)
+=======
+test.txt, test02.txt, test03.txt, test04.txt, test[DATE].txt, test2222.txt, test444.txt
+>>>>>>> dev
 ```
 
 **impatto**: clutter repository, confusione sviluppatori
@@ -152,7 +160,11 @@ docs/
 ├── examples/                   # esempi pratici
 │   ├── bank-scenario.md        # scenario bancario
 │   ├── ecommerce-scenario.md   # scenario e-commerce
+<<<<<<< HEAD
 │   └── prediction-market.md    # mercato predizioni
+=======
+│   └── <nome progetto>ion-market.md    # mercato predizioni
+>>>>>>> dev
 ├── development/               # guide sviluppo
 │   ├── testing.md             # testing
 │   ├── phpstan-compliance.md  # conformità phpstan

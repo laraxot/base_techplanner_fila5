@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Models\Policies;
 
+<<<<<<< HEAD
 use Modules\Job\Models\Frequency;
 use Modules\Xot\Contracts\UserContract;
 
@@ -65,3 +66,6 @@ class FrequencyPolicy extends JobBasePolicy
         return $user->hasPermissionTo('frequency.forceDelete');
     }
 }
+=======
+class FrequencyPolicy extends JobBasePolicy {}
+>>>>>>> dev

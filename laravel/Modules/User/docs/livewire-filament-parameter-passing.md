@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Livewire Component and Filament Widget Parameter Passing Guide
 
 ## Overview
@@ -118,3 +119,12 @@ class QuestionChartAnswersWidget extends XotBaseTableWidget
 - Livewire Documentation: https://livewire.laravel.com/docs/3.x/properties
 - Filament Widgets: https://filamentphp.com/docs/4.x/widgets/overview
 - Laravel Service Container: Parameter Injection patterns
+=======
+---
+module: theme
+topic: livewire-filament-parameter-passing
+canonical: ../../../Themes/docs/shared-components/livewire-filament-parameter-passing.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/livewire-filament-parameter-passing.md
+>>>>>>> dev

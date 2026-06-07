@@ -88,6 +88,9 @@ return [
         'loading' => 'Caricamento dati in corso...',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'label' => 'Dashboard',
     'plural_label' => 'Dashboard (Plurale)',
     'fields' => [
@@ -110,6 +113,9 @@ return [
             'description' => '',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

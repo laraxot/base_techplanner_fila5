@@ -2,6 +2,9 @@
 
 **Status:** ✅ STANDARD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 **Central Reference:** [Xot Schemaless Guide](../../Modules/Xot/docs/spatie-schemaless-attributes.md)
 
 ---
@@ -67,6 +70,7 @@ $record->save();
 - [Xot Schemaless Guide](../../Modules/Xot/docs/spatie-schemaless-attributes.md)
 - [UI Themes Detailed Guide](../../Modules/UI/docs/themes/schemaless-attributes-guide.md)
 - [Rating Schemaless Docs](../../Modules/Rating/docs/schemaless-attributes.md)
+<<<<<<< HEAD
 =======
 **Reference:** [Global Rules](../../../Modules/Xot/docs/schemaless-attributes-rules.md)
 
@@ -90,3 +94,5 @@ I temi possono utilizzare modelli che implementano Schemaless Attributes.
 
 ---
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

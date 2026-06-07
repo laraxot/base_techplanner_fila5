@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 use Illuminate\Validation\Rules\Password;
 
  Password::defaults(function () {
@@ -24,3 +25,12 @@ NoOldPasswords
 https://laracasts.com/discuss/channels/laravel/complex-password-rules-for-password-reset
 
 https://njoguamos.me.ke/posts/create-and-test-a-custom-laravel-validation-rule !!!!
+=======
+---
+module: theme
+topic: password
+canonical: ../../../Themes/docs/shared-components/password.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/password.md
+>>>>>>> dev

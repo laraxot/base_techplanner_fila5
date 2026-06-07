@@ -35,10 +35,14 @@ class LogoutController extends XotBaseController
 
         // Verificare che l'utente implementi l'interfaccia UserContract
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $user instanceof UserContract) {
 =======
         if (! ($user instanceof UserContract)) {
 >>>>>>> 4b6b99016 (first commit)
+=======
+        if (! $user instanceof UserContract) {
+>>>>>>> dev
             throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia UserContract');
         }
 

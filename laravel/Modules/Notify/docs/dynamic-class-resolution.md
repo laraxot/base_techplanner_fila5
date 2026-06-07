@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Pattern di Risoluzione Dinamica delle Classi vs Pattern Match
 
 Questo documento analizza i vantaggi e gli svantaggi dell'utilizzo di una formula di calcolo dinamico per la risoluzione delle classi rispetto all'approccio attuale con match nel factory pattern di .
@@ -15,6 +16,8 @@ public function create(?string $driver = null): SmsActionInterface
     $driver = $driver ?? Config::get('sms.default', 'smsfactor');
     
 =======
+=======
+>>>>>>> dev
 # Risoluzione Dinamica delle Classi nei Factory Pattern
 
 Questo documento analizza l'approccio di risoluzione dinamica delle classi nei factory pattern, confrontandolo con l'approccio basato su match esplicito.
@@ -28,7 +31,10 @@ public function create(?string $driver = null): SmsActionInterface
 {
     $driver = $driver ?? Config::get('sms.default', 'smsfactor');
 
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     return match ($driver) {
         'smsfactor' => app(SendSmsFactorSMSAction::class),
         'twilio' => app(SendTwilioSMSAction::class),
@@ -41,6 +47,7 @@ public function create(?string $driver = null): SmsActionInterface
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## Implementazione Proposta con Risoluzione Dinamica
 
@@ -59,6 +66,8 @@ public function create(?string $driver = null): SmsActionInterface
     $className = "Modules\\Notify\\Actions\\SMS\\Send" . ucfirst($normalizedDriver) . "SMSAction";
     
 =======
+=======
+>>>>>>> dev
 ### Approccio 2: Risoluzione Dinamica (Implementato)
 
 ```php
@@ -72,25 +81,35 @@ public function create(?string $driver = null): SmsActionInterface
     // Costruisci il nome completo della classe
     $className = "\\Modules\\Notify\\Actions\\SMS\\Send{$normalizedDriver}SMSAction";
 
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     // Verifica se la classe esiste
     if (!class_exists($className)) {
         throw new Exception("Unsupported SMS driver: {$driver}. Class {$className} not found.");
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
+=======
+>>>>>>> dev
 
     // Verifica se la classe implementa l'interfaccia richiesta
     if (!is_subclass_of($className, SmsActionInterface::class)) {
         throw new Exception("Class {$className} does not implement SmsActionInterface.");
     }
 
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     return app($className);
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## Vantaggi della Risoluzione Dinamica
 
@@ -228,6 +247,8 @@ La risoluzione dinamica delle classi offre vantaggi significativi in termini di 
 
 Questa soluzione combina i vantaggi della risoluzione dinamica con la sicurezza e il controllo offerti dall'approccio match, offrendo il miglior compromesso tra flessibilità e robustezza.
 =======
+=======
+>>>>>>> dev
 ## Vantaggi della Risoluzione Dinamica (70%)
 
 ### 1. Estensibilità Automatica (25%)
@@ -481,4 +502,7 @@ Per massimizzare i vantaggi della risoluzione dinamica:
 La risoluzione dinamica delle classi offre vantaggi significativi in termini di estensibilità, manutenibilità e coerenza del codice, con svantaggi minimi in termini di complessità e performance. È particolarmente adatta per sistemi che evolvono frequentemente con l'aggiunta di nuovi driver o implementazioni.
 
 Per il sistema di notifiche di <main module>, l'approccio dinamico rappresenta una scelta ottimale, poiché facilita l'aggiunta di nuovi provider senza necessità di modificare il codice esistente, rispettando il principio Open/Closed e promuovendo una struttura di codice coerente e manutenibile.
+<<<<<<< HEAD
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

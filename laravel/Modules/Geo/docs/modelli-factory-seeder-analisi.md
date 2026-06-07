@@ -120,10 +120,14 @@ Tutti i modelli attivi che necessitano factory le hanno.
 ### Dati Gestiti
 - **Regioni**: 20 regioni italiane
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Province**: 110+ province italiane  
 =======
 - **Province**: 110+ province italiane
 >>>>>>> 4b6b99016 (first commit)
+=======
+- **Province**: 110+ province italiane  
+>>>>>>> dev
 - **Comuni**: 8000+ comuni italiani
 - **CAP**: Sistema CAP completo
 - **Codici ISTAT**: Codici identificativi ufficiali
@@ -185,12 +189,17 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 ### Moduli Collegati
 - [<main module> Module](../../<main module>/docs/modelli_factory_seeder_analisi.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module](../../user/docs/modelli_factory_seeder_analisi.md)
 - [Cms Module](../../cms/docs/modelli_factory_seeder_analisi.md)
 =======
 - [User Module](../../User/docs/modelli_factory_seeder_analisi.md)
 - [Cms Module](../../Cms/docs/modelli_factory_seeder_analisi.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [User Module](../../user/docs/modelli_factory_seeder_analisi.md)
+- [Cms Module](../../cms/docs/modelli_factory_seeder_analisi.md)
+>>>>>>> dev
 
 ### Risorse Esterne
 - [ISTAT Comuni](https://www.istat.it/it/archivio/6789)
@@ -198,8 +207,11 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [OpenStreetMap](https://www.openstreetmap.org/)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 *Analisi completa di 12 modelli attivi, 1 modello obsoleto identificato*
 *Sistema geografico completo per Italia con supporto internazionale*

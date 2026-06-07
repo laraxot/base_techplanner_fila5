@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Linee Guida per la Documentazione dei Moduli
 
 ## Principi Fondamentali
@@ -99,3 +100,12 @@ Modifica il file `header.blade.php` in questa posizione per personalizzare l'hea
 - [Convenzioni Naming](../../../project_docs/standards/file_naming_conventions.md) - Standard naming
 - [Documentazione Laravel](https://laravel.com/docs) - Documentazione ufficiale
 - [Best Practices](https://laravel.com/project_docs/11.x/best-practices) - Best practices Laravel
+=======
+---
+module: theme
+topic: modulelines
+canonical: ../../../Themes/docs/shared-components/module-guidelines.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/module-guidelines.md
+>>>>>>> dev

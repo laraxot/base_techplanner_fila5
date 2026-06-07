@@ -119,6 +119,7 @@ Per evitare simili problemi in futuro:
 3. **Type Checking**: Usare type checking difensivo nei callback
 4. **Documentation**: Documentare i tipi di dati attesi per ogni campo
 ## Riferimenti
+<<<<<<< HEAD
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../project_docs/fileupload-foreach-error-fix.md)
 <<<<<<< HEAD
 - [Correzione XotBaseResource: Modules/Xot/project_docs/fileupload-components.md](../../xot/project_docs/fileupload-components.md)
@@ -132,6 +133,13 @@ Per evitare simili problemi in futuro:
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
 *Ultimo aggiornamento: 2025-01-03*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/project/fileupload-foreach-error-fix.md)
+- [Correzione XotBaseResource: Modules/Xot/project_docs/fileupload-components.md](../../xot/project_docs/fileupload-components.md)
+- [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
+- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
+- [Registration Widget base: registration-widget.md](./registration-widget.md)
+>>>>>>> dev
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto
@@ -349,10 +357,15 @@ Per evitare simili problemi in futuro:
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
 <<<<<<< HEAD
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
 =======
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../Xot/docs/fileupload-components.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
+- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
+>>>>>>> dev
 - [Registration Widget base: registration-widget.md](./registration-widget.md)

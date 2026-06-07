@@ -9,10 +9,17 @@ declare(strict_types=1);
 
 namespace Modules\UI\Enums;
 
+<<<<<<< HEAD
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Modules\Xot\Filament\Traits\TransTrait;
+=======
+use Modules\Xot\Traits\EnumTrait;
+use Filament\Support\Contracts\HasColor;
+use Filament\Support\Contracts\HasIcon;
+use Filament\Support\Contracts\HasLabel;
+>>>>>>> dev
 
 /**
  * Defines the different types of appointments in the system.
@@ -25,7 +32,11 @@ use Modules\Xot\Filament\Traits\TransTrait;
  */
 enum FieldTypeEnum: string implements HasColor, HasIcon, HasLabel
 {
+<<<<<<< HEAD
     use TransTrait;
+=======
+    use EnumTrait;
+>>>>>>> dev
 
     case TEXT = 'text';
     // case NUMBER   = 'number';
@@ -39,6 +50,7 @@ enum FieldTypeEnum: string implements HasColor, HasIcon, HasLabel
     case TIME = 'time';
     case DATETIME = 'datetime';
 
+<<<<<<< HEAD
     public function getLabel(): string
     {
         return $this->transClass(self::class, $this->value.'.label');
@@ -58,4 +70,13 @@ enum FieldTypeEnum: string implements HasColor, HasIcon, HasLabel
     {
         return $this->transClass(self::class, $this->value.'.description');
     }
+=======
+    
+
+    
+
+    
+
+    
+>>>>>>> dev
 }

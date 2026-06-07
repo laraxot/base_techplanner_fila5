@@ -74,9 +74,13 @@ use Override;
  * @property-read int|null $devices_count
  * @property-read Profile|null $updater
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @method static Builder<static>|Worker newModelQuery()
  * @method static Builder<static>|Worker newQuery()
  * @method static Builder<static>|Worker ofInPolygon(string $polygon_field, float $lat, float $lng)
@@ -136,26 +140,38 @@ use Override;
  * @method static Builder<static>|Worker withDistance(float $lat, float $lng)
  * @method static Builder<static>|Worker withDistanceCustomField(string $lat_field, string $lng_field, float $lat, float $lng)
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @property string|null $googleplace_url
  * @property string|null $googleplace_url_short
  * @property string|null $campground
  * @property string|null $campground_short
  * @property-read Profile|null $deleter
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @method static Builder<static>|Worker whereCampground($value)
  * @method static Builder<static>|Worker whereCampgroundShort($value)
  * @method static Builder<static>|Worker whereGoogleplaceUrl($value)
  * @method static Builder<static>|Worker whereGoogleplaceUrlShort($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+ *
+>>>>>>> dev
  * @mixin \Eloquent
  */
 class Worker extends BaseModel implements WorkerContract

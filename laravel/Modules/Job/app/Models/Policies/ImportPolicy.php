@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Models\Policies;
 
+<<<<<<< HEAD
 use Modules\Job\Models\Import;
 use Modules\Xot\Contracts\UserContract;
 
@@ -65,3 +66,6 @@ class ImportPolicy extends JobBasePolicy
         return $user->hasPermissionTo('import.forceDelete');
     }
 }
+=======
+class ImportPolicy extends JobBasePolicy {}
+>>>>>>> dev

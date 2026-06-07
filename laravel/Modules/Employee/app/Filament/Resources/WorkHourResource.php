@@ -11,9 +11,13 @@ use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Filament\Widgets\Widget;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Employee\Filament\Resources\WorkHourResource\Pages;
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+use Modules\Employee\Filament\Resources\WorkHourResource\Pages;
+>>>>>>> dev
 use Modules\Employee\Models\WorkHour;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
@@ -23,6 +27,9 @@ class WorkHourResource extends XotBaseResource
     protected static ?string $model = WorkHour::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     public static function getPages(): array
     {
         return array_merge(parent::getPages(), [
@@ -30,8 +37,11 @@ class WorkHourResource extends XotBaseResource
         ]);
     }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     /**
      * @return array<string|int, Component>
      */

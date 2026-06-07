@@ -3,6 +3,7 @@
 ## Documentazione Dettagliata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Tema One - Gestione Assets](../../../themes/one/docs/theme-assets.md)
 - [Tema One - Processo di Build](../../../themes/one/docs/build-process.md)
 - [Tema One - Assets](../../../themes/one/docs/assets.md)
@@ -11,6 +12,11 @@
 - [Tema One - Processo di Build](../../../Themes/One/docs/build-process.md)
 - [Tema One - Assets](../../../Themes/One/docs/ASSETS.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Tema One - Gestione Assets](../../../themes/one/docs/theme-assets.md)
+- [Tema One - Processo di Build](../../../themes/one/docs/build-process.md)
+- [Tema One - Assets](../../../themes/one/docs/assets.md)
+>>>>>>> dev
 
 ## Punti Critici
 
@@ -99,6 +105,7 @@
 
 ## Collegamenti tra versioni di assets.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [assets.md](laravel/modules/xot/docs/assets.md)
 * [assets.md](laravel/modules/cms/docs/themes/assets.md)
 * [assets.md](laravel/themes/one/docs/assets.md)
@@ -107,3 +114,8 @@
 * [assets.md](laravel/Modules/Cms/docs/themes/assets.md)
 * [assets.md](laravel/Themes/One/docs/assets.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+* [assets.md](laravel/modules/xot/docs/assets.md)
+* [assets.md](laravel/modules/cms/docs/themes/assets.md)
+* [assets.md](laravel/themes/one/docs/assets.md)
+>>>>>>> dev

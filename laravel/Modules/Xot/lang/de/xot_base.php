@@ -10,10 +10,15 @@ return [
             'placeholder' => 'Clicca per visualizzare',
             'help' => 'Visualizza i dettagli completi dell\'elemento selezionato',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'delete' => [
             'label' => 'Elimina',
@@ -21,10 +26,15 @@ return [
             'placeholder' => 'Clicca per eliminare',
             'help' => 'Elimina definitivamente l\'elemento selezionato',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'edit' => [
             'label' => 'Modifica',
@@ -32,10 +42,15 @@ return [
             'placeholder' => 'Clicca per modificare',
             'help' => 'Modifica i dati dell\'elemento selezionato',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'detach' => [
             'label' => 'Scollega',
@@ -43,10 +58,15 @@ return [
             'placeholder' => 'Clicca per scollegare',
             'help' => 'Rimuovi la connessione con l\'elemento selezionato',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'attach' => [
             'label' => 'Collega',
@@ -54,10 +74,15 @@ return [
             'placeholder' => 'Clicca per collegare',
             'help' => 'Crea una connessione con l\'elemento selezionato',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'pregnancy_certificate' => [
             'label' => 'Certificato di Gravidanza',
@@ -65,10 +90,15 @@ return [
             'placeholder' => 'Carica certificato di gravidanza',
             'help' => 'Carica il certificato medico che attesta lo stato di gravidanza',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'health_card' => [
             'label' => 'Tessera Sanitaria',
@@ -76,10 +106,15 @@ return [
             'placeholder' => 'Carica tessera sanitaria',
             'help' => 'Carica la foto fronte/retro della tessera sanitaria',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'identity_document' => [
             'label' => 'Documento di Identità',
@@ -87,10 +122,15 @@ return [
             'placeholder' => 'Carica documento di identità',
             'help' => 'Carica un documento di identità valido e non scaduto',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'isee_certificate' => [
             'label' => 'Certificazione ISEE',
@@ -98,10 +138,15 @@ return [
             'placeholder' => 'Carica certificazione ISEE',
             'help' => 'Carica la certificazione ISEE per eventuali agevolazioni economiche',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'certifications' => [
             'label' => 'Certificazioni',
@@ -109,10 +154,15 @@ return [
             'placeholder' => 'Carica certificazioni',
             'help' => 'Carica eventuali certificazioni mediche o documenti aggiuntivi richiesti',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'certification' => [
             'label' => 'Certificato',
@@ -120,10 +170,15 @@ return [
             'placeholder' => 'Carica certificato',
             'help' => 'Tesserino sanitario o certificato di iscrizione all\'Ordine',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
         'doctor_certificate' => [
             'label' => 'Certificato Medico',
@@ -131,10 +186,15 @@ return [
             'placeholder' => 'Carica certificato medico',
             'help' => 'Tesserino sanitario o certificato di iscrizione all\'Ordine',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> dev
         ],
     ],
     'steps' => [
@@ -320,8 +380,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

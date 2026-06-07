@@ -38,6 +38,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         'id' => [
             'label' => 'ID',
             'tooltip' => '',
@@ -140,6 +143,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         'id' => ['label' => 'ID'],
         'lang' => ['label' => 'Lingua'],
@@ -159,6 +163,8 @@ return [
         'type' => 'tipo',
         'user_name' => 'nome utente',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
     ],
     'filters' => [
         'is_active' => [
@@ -185,8 +191,13 @@ return [
         'publish_item_trans' => 'pubblica modifiche riga',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> dev
 ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🔍 Code Quality Tools - Tema Sixteen
 
 **Data Creazione**: 2025-01-27  
@@ -205,3 +206,12 @@ npx lighthouse http://localhost --view
 
 
 
+=======
+---
+module: theme
+topic: code_quality_tools
+canonical: ../../docs/shared-components/code-quality-tools.md
+---
+
+See canonical documentation: ../../docs/shared-components/code-quality-tools.md
+>>>>>>> dev

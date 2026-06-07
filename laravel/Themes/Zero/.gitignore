@@ -18,6 +18,12 @@ _ide_helper_models.php
 *.old
 *.bak
 *.backup
+<<<<<<< HEAD
+=======
+*.backup.*
+*.backup-*
+*.backup_*
+>>>>>>> dev
 
 public_html/vendor
 public_html/js
@@ -72,3 +78,29 @@ public_html/
 .env.docker
 .env.latest
 node_modules/
+<<<<<<< HEAD
+=======
+
+# PHPStan output files
+phpstan*.json
+_docs/
+
+# Documentation archives are local-only scratch/history.
+docs/legacy/
+docs/legacy/**
+
+# -----------------------------------------------------------------------------
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+# -----------------------------------------------------------------------------
+*~HEAD
+*~BASE
+*~LOCAL
+*~REMOTE
+*.orig
+*.rej
+*~head
+
+
+# Database locale vector search (non versionare)
+ruvector.db
+>>>>>>> dev

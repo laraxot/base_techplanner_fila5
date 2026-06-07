@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistema di Email Template
 
 ## Introduzione
@@ -729,3 +730,8 @@ php artisan tinker
 **Status**: Aggiornato per errore critico MissingMailTemplate
 >>>>>>> 4b6b99016 (first commit)
 **Priorità**: URGENT - Fix sistema registrazione
+=======
+# Email Templates
+
+We use standard Blade templates for all module emails, stored in `resources/views/emails`.
+>>>>>>> dev

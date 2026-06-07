@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => [
         'label' => 'Provider Social',
         'plural_label' => 'Provider Social',
@@ -39,6 +42,13 @@ return [
             'helper_text' => 'Nome identificativo del provider',
             'description' => 'Nome del provider social',
         ],
+<<<<<<< HEAD
+=======
+        'env_guide' => [
+            'label' => 'Guida configurazione .env',
+            'content' => '1) Crea le credenziali OAuth su Google Cloud Console. 2) Aggiungi GOOGLE_CLIENT_ID e GOOGLE_CLIENT_SECRET nel file .env del server. 3) Esegui: php artisan config:clear && php artisan cache:clear && php artisan optimize:clear. 4) Torna qui e attiva il provider.',
+        ],
+>>>>>>> dev
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Nome del guard',
@@ -97,6 +107,7 @@ return [
             'tooltip' => 'Applica i filtri',
             'helper_text' => 'Applica i filtri selezionati',
             'description' => 'Azione per applicare i filtri',
+<<<<<<< HEAD
 =======
     'resources' => 'Risorse',
     'pages' => 'Pagine',
@@ -126,11 +137,16 @@ return [
         'applyFilters' => [
             'label' => 'applyFilters',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
         ],
     ],
     'actions' => [
         'import' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dev
             'label' => 'Importa',
             'tooltip' => 'Importa dati',
             'helper_text' => 'Importa dati da file esterno',
@@ -185,6 +201,7 @@ return [
         'updated' => 'Provider aggiornato con successo',
         'deleted' => 'Provider eliminato con successo',
     ],
+<<<<<<< HEAD
 =======
             'fields' => [
                 'import_file' => 'Seleziona un file XLS o CSV da caricare',
@@ -212,4 +229,6 @@ return [
     'label' => '',
     'plural_label' => '',
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 ];

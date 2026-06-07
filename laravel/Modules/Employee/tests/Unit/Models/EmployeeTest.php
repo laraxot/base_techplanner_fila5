@@ -12,10 +12,13 @@ use Modules\Employee\Models\Department;
 use Modules\Employee\Models\Employee;
 use Modules\Employee\Models\Position;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Employee\Tests\TestCase;
 
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev
 
 beforeEach(function () {
     DB::beginTransaction();

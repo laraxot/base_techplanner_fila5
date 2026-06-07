@@ -89,6 +89,7 @@ public function panel(Panel $panel): Panel
 
 - [Documentazione Root](../../../project_docs/filament_panel_provider_rules.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Architettura Filament](../../../project_docs/filament_best_practices.md)
 - [Configurazione Moduli](../../../project_docs/module_architecture.md)
 
@@ -98,3 +99,8 @@ public function panel(Panel $panel): Panel
 
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Architettura Filament](../../../project_docs/filament_best_practices.md)
+- [Configurazione Moduli](../../../project_docs/module_architecture.md)
+
+>>>>>>> dev

@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\Cms\Tests\TestCase::class);
+=======
+>>>>>>> dev
 use Illuminate\Database\Eloquent\Model;
 use Modules\Cms\Models\Conf;
 

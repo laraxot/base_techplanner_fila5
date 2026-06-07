@@ -89,6 +89,7 @@ Per prevenire regressioni future:
 ## Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Componente Section](../../laravel/modules/cms/docs/components/section.md)
 - [Trait HasBlocks](../../laravel/modules/cms/docs/traits/has-blocks.md)
 - [Gestione Errori Blade](../../laravel/modules/cms/docs/errors/blade-errors.md)
@@ -97,6 +98,11 @@ Per prevenire regressioni future:
 - [Trait HasBlocks](../../laravel/Modules/Cms/docs/traits/has-blocks.md)
 - [Gestione Errori Blade](../../laravel/Modules/Cms/docs/errors/blade-errors.md)
 >>>>>>> 4b6b99016 (first commit)
+=======
+- [Componente Section](../../laravel/modules/cms/docs/components/section.md)
+- [Trait HasBlocks](../../laravel/modules/cms/docs/traits/has-blocks.md)
+- [Gestione Errori Blade](../../laravel/modules/cms/docs/errors/blade-errors.md)
+>>>>>>> dev
 
 ## Note di Manutenzione
 
@@ -106,6 +112,9 @@ Per prevenire regressioni future:
 - La soluzione è compatibile con il sistema di blocchi CMS esistente
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 4b6b99016 (first commit)
+=======
+>>>>>>> dev

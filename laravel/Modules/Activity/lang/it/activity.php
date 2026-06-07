@@ -19,11 +19,17 @@ return [
             'label' => 'ID',
             'help' => 'Identificativo unico dell\'attività',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
         'log_name' => [
             'label' => 'Nome Log',
@@ -32,9 +38,13 @@ return [
             'helper_text' => 'log_name',
             'description' => 'log_name',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'description' => [
             'label' => 'Descrizione',
@@ -43,9 +53,13 @@ return [
             'helper_text' => 'description',
             'description' => 'description',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'subject_type' => [
             'label' => 'Tipo Soggetto',
@@ -54,9 +68,13 @@ return [
             'helper_text' => 'subject_type',
             'description' => 'subject_type',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'subject_id' => [
             'label' => 'ID Soggetto',
@@ -65,9 +83,13 @@ return [
             'helper_text' => 'subject_id',
             'description' => 'subject_id',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'causer_type' => [
             'label' => 'Tipo Causatore',
@@ -76,9 +98,13 @@ return [
             'helper_text' => 'causer_type',
             'description' => 'causer_type',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'causer_id' => [
             'label' => 'ID Causatore',
@@ -87,9 +113,13 @@ return [
             'helper_text' => 'causer_id',
             'description' => 'causer_id',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'properties' => [
             'label' => 'Proprietà',
@@ -98,9 +128,13 @@ return [
             'helper_text' => 'properties',
             'description' => 'properties',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'batch_uuid' => [
             'label' => 'Batch UUID',
@@ -109,29 +143,45 @@ return [
             'helper_text' => 'batch_uuid',
             'description' => 'batch_uuid',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+>>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'help' => 'Data e ora di creazione dell\'attività',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'updated_at' => [
-            'label' => 'Data Aggiornamento',
-            'help' => 'Data e ora di aggiornamento dell\'attività',
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
+        ],
+        'updated_at' => [
+            'label' => 'Data Aggiornamento',
+            'help' => 'Data e ora di aggiornamento dell\'attività',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 4b6b99016 (first commit)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> dev
         ],
     ],
     'actions' => [
@@ -149,8 +199,13 @@ return [
         'activity_restored' => 'Attività ripristinata con successo',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Activity',
     'plural_label' => 'Activity (Plurale)',
 =======
 >>>>>>> 4b6b99016 (first commit)
+=======
+    'label' => 'Activity',
+    'plural_label' => 'Activity (Plurale)',
+>>>>>>> dev
 ];

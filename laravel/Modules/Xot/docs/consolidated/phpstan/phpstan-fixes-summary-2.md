@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Riepilogo delle Soluzioni ai Problemi PHPStan Livello 9
 
 Questo documento riassume le soluzioni implementate per risolvere i problemi più comuni di PHPStan a livello 9 nel progetto <nome progetto>. Serve come guida di riferimento rapido per sviluppatori che affrontano errori simili.
@@ -258,3 +259,12 @@ Questo approccio incrementale permette di ridurre gradualmente gli errori, mante
 - [Documentazione PHPStan sui Generics](https://phpstan.org/blog/generics-in-php-using-phpdocs)
 - [Guida Risoluzione Problemi di Proprietà Undefined](https://phpstan.org/blog/solving-phpstan-access-to-undefined-property)
 - [Solving Template Type Issues](https://phpstan.org/blog/solving-phpstan-error-unable-to-resolve-template-type)
+=======
+---
+module: theme
+topic: phpstan-fixes-summary-2
+canonical: ../../../../../Themes/docs/shared-components/phpstan-fixes-summary-1.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/phpstan-fixes-summary-1.md
+>>>>>>> dev
