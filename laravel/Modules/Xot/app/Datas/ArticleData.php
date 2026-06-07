@@ -7,10 +7,16 @@ namespace Modules\Xot\Datas;
 use Spatie\LaravelData\Data;
 
 /**
- * Class ArticleData - Gestisce la configurazione degli articoli per il framework Laraxot.
+ * Class ArticleData - Gestisce la configurazione degli articoli.
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  *
  * @phpstan-consistent-constructor
+ *
+ * @param array<int, string> $types
+ * @param array<int, string> $categories
+ * @param string $editor
+ * @param array<string, string> $defaultMeta
+ * @param array<string, bool> $features
  */
 final class ArticleData extends Data
 {

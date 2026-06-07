@@ -7,26 +7,19 @@ namespace Modules\Xot\Datas;
 use Spatie\LaravelData\Data;
 
 /**
- * Class MailData - Gestisce la configurazione delle email per il framework Laraxot.
- * Utilizzato nel contesto dell'architettura Filament-first senza controller tradizionali.
+ * Class MailData - Gestisce la configurazione delle email.
+ * Utilizzato nel contesto dell'architettura Filament-first.
  *
  * @phpstan-consistent-constructor
+ *
+ * @param string $driver
+ * @param array<string, int|string> $smtpConfig
+ * @param array<string, string> $fromConfig
+ * @param string|null $replyTo
+ * @param bool $verifyPeer
  */
 final class MailData extends Data
 {
-    /**
-     * @param string $driver Driver per l'invio delle email
-     * @param array{
-     *     host: string,
-     *     port: int,
-     *     encryption: string,
-     *     username: string,
-     *     password: string
-     * } $smtpConfig Configurazione SMTP
-     * @param array{address: string, name: string} $fromConfig Mittente predefinito
-     * @param string|null $replyTo Indirizzo per le risposte
-     * @param bool $verifyPeer Verifica certificato peer SSL
-     */
     public function __construct(
         public readonly string $driver = 'smtp',
         public readonly array $smtpConfig = [
