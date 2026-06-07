@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Livewire\Auth\Passwords;
 
-<<<<<<< HEAD
-use Illuminate\Contracts\View\Factory;
-=======
->>>>>>> dev
-use Illuminate\Contracts\View\View;
+use Illuminate\View\View;
 use Illuminate\Http\RedirectResponse;
 use Livewire\Component;
 use Modules\Xot\Actions\File\ViewCopyAction;
@@ -28,37 +24,23 @@ class Confirm extends Component
         return redirect()->intended(route('home'));
     }
 
-<<<<<<< HEAD
-    public function render(): View|Factory
-=======
     public function render(): View
->>>>>>> dev
     {
         app(ViewCopyAction::class)
             ->execute('user::livewire.auth.passwords.confirm', 'pub_theme::livewire.auth.passwords.confirm');
         app(ViewCopyAction::class)->execute('user::layouts.auth', 'pub_theme::layouts.auth');
         app(ViewCopyAction::class)->execute('user::layouts.base', 'pub_theme::layouts.base');
 
-<<<<<<< HEAD
-        /**
-         * @phpstan-var view-string
-         */
-        $view = 'pub_theme::livewire.auth.passwords.confirm';
+        /** @var view-string $viewName */
+        $viewName = 'pub_theme::livewire.auth.passwords.confirm';
 
-        /** @var View $result */
-        $result = view($view)->extends('pub_theme::layouts.auth');
+        $rendered = view($viewName);
+        if (! $rendered instanceof View) {
+            throw new \RuntimeException('Unable to render password confirm view.');
+        }
 
-        return $result;
-=======
-        /** @var view-string */
-        $view = 'pub_theme::livewire.auth.passwords.confirm';
+        $extended = $rendered->extends('pub_theme::layouts.auth');
 
-        /** @var View $res */
-        $res = view($view);
-        // @phpstan-ignore-next-line
-        $res->extends('pub_theme::layouts.auth');
-
-        return $res;
->>>>>>> dev
+        return $extended instanceof View ? $extended : $rendered;
     }
 }
