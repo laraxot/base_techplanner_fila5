@@ -25,52 +25,25 @@ return [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci descrizione',
             'help' => 'Descrizione dettagliata dell\'attività',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'properties' => [
             'label' => 'Proprietà',
             'placeholder' => 'Inserisci proprietà',
             'help' => 'Proprietà aggiuntive in formato JSON',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'metadata' => [
             'label' => 'Metadata',
             'placeholder' => 'Inserisci metadata',
             'help' => 'Informazioni metadata aggiuntive',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'messages' => [
@@ -83,10 +56,6 @@ return [
         'description.max' => 'La descrizione non può superare :max caratteri',
         'properties.json' => 'Le proprietà devono essere un JSON valido',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Edit Activity',
     'plural_label' => 'Edit Activity (Plurale)',
     'actions' => [
@@ -100,9 +69,4 @@ return [
             'label' => 'Elimina Edit Activity',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

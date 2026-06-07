@@ -10,11 +10,7 @@ use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent as SpatieStored
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventCollection;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder;
 use Spatie\EventSourcing\StoredEvents\ShouldBeStored;
-<<<<<<< HEAD
 use Spatie\SchemalessAttributes\SchemalessAttributes;
-=======
-use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
->>>>>>> dev
 
 /**
  * Class StoredEvent.
@@ -27,11 +23,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property int $event_version
  * @property string $event_class
  * @property array<array-key, mixed> $event_properties
-<<<<<<< HEAD
  * @property SchemalessAttributes $meta_data
-=======
- * @property \Spatie\SchemalessAttributes\SchemalessAttributes $meta_data
->>>>>>> dev
  * @property string $created_at
  * @property string|null $updated_by
  * @property string|null $created_by
@@ -62,30 +54,13 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent withMetaDataAttributes()
  * @method static StoredEventFactory factory($count = null, $state = [])
  *
-<<<<<<< HEAD
- * @mixin \Eloquent
- */
-<<<<<<< HEAD
-// @see Modules/Xot/docs/spatie-schemaless-attributes.md
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
- * @property string|null $updated_at
- *
- * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereUpdatedAt($value)
- *
  * @mixin \Eloquent
  */
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
->>>>>>> dev
 class StoredEvent extends SpatieStoredEvent
 {
     use HasXotFactory;
 
-<<<<<<< HEAD
-=======
-    /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
->>>>>>> dev
     protected $connection = 'activity';
 
     protected $table = 'stored_events';
@@ -102,10 +77,6 @@ class StoredEvent extends SpatieStoredEvent
         'updated_by',
         'created_by',
     ];
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 
     /**
      * Get the attributes that should be cast.
@@ -119,9 +90,4 @@ class StoredEvent extends SpatieStoredEvent
             'meta_data' => SchemalessAttributes::class,
         ];
     }
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 }

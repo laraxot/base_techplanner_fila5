@@ -12,18 +12,9 @@ return [
                 'required' => 'Il nome è obbligatorio',
                 'max' => 'Il nome non può superare i 255 caratteri',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'last_name' => [
             'label' => 'Cognome',
@@ -33,18 +24,9 @@ return [
                 'required' => 'Il cognome è obbligatorio',
                 'max' => 'Il cognome non può superare i 255 caratteri',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'email' => [
             'label' => 'Email',
@@ -56,18 +38,9 @@ return [
                 'max' => 'L\'email non può superare i 255 caratteri',
                 'unique' => 'Questa email è già registrata',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'password' => [
             'label' => 'Password',
@@ -78,18 +51,9 @@ return [
                 'min' => 'La password deve essere di almeno 8 caratteri',
                 'max' => 'La password non può superare i 255 caratteri',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
@@ -101,34 +65,16 @@ return [
                 'max' => 'La password non può superare i 255 caratteri',
                 'same' => 'Le password non coincidono',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'remember_me' => [
             'label' => 'Ricordami',
             'help' => 'Mantieni la sessione attiva',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -213,10 +159,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -226,9 +168,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

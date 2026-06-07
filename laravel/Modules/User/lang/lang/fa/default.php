@@ -102,7 +102,6 @@ return [
         'tooltip' => 'کپی شد!',
     ],
     'fields' => [
-<<<<<<< HEAD
         'avatar' => [
             'label' => 'آواتار',
             'tooltip' => '',
@@ -207,24 +206,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
-        'avatar' => 'آواتار',
-        'email' => 'ایمیل',
-        'login' => 'ورود',
-        'name' => 'نام',
-        'password' => 'رمز عبور',
-        'password_confirm' => 'تایید رمز عبور',
-        'new_password' => 'رمز عبور جدید',
-        'new_password_confirmation' => 'تایید رمز عبور جدید',
-        'token_name' => 'نام توکن',
-        'token_expiry' => 'انقضاء توکن',
-        'abilities' => 'توانایی ها',
-        '2fa_code' => 'کد',
-        '2fa_recovery_code' => 'کد بازیابی',
-        'created' => 'ایجاد شده',
-        'expires' => 'انقضاء',
-    ],
-    'or' => 'یا',
-    'cancel' => 'لغو',
->>>>>>> 4b6b99016 (first commit)
 ];

@@ -6,10 +6,6 @@ return [
     'fields' => [
         'provider' => [
             'label' => 'provider',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -50,23 +46,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
-        ],
-        'provider_id' => [
-            'label' => 'provider_id',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'email' => [
-            'label' => 'email',
-        ],
-        'avatar' => [
-            'label' => 'avatar',
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

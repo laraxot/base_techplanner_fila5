@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 use function Laravel\Folio\{middleware, name};
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -15,45 +11,15 @@ if (in_array($locale, ['it', 'en', 'es', 'de', 'fr', 'ru'], true)) {
     LaravelLocalization::setLocale($locale);
     app()->setLocale($locale);
 }
-<<<<<<< HEAD
-=======
-
-use Modules\User\Models\User;
-use Filament\Forms\Components\Checkbox;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Wizard;
-use Filament\Schemas\Components\Wizard\Step;
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Schemas\Schema;
-use Illuminate\Auth\Events\Registered;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\HtmlString;
-use Livewire\Attributes\Validate;
-use Livewire\Volt\Component;
-
-use function Laravel\Folio\middleware;
-use function Laravel\Folio\name;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 middleware(['guest']);
 name('register');
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 ?>
 
 <x-layouts.app>
     <x-slot name="title">
-<<<<<<< HEAD
         {{ __('gdpr::register.title') }} - LaravelPizza Community
-=======
-        {{ __('gdpr::register.title') }} - <nome progetto> Community
->>>>>>> dev
     </x-slot>
 
     <x-slot name="description">
@@ -61,11 +27,7 @@ name('register');
     </x-slot>
 
     <x-slot name="keywords">
-<<<<<<< HEAD
         Laravel meetup, Laravel community, PHP developer community, Laravel tutorials, Laravel workshops, Laravel networking, LaravelPizza
-=======
-        Laravel meetup, Laravel community, PHP developer community, Laravel tutorials, Laravel workshops, Laravel networking, <nome progetto>
->>>>>>> dev
     </x-slot>
 
     <section
@@ -84,11 +46,7 @@ name('register');
             <div class="space-y-10">
                 <div class="text-center space-y-6">
                     <a href="{{ \LaravelLocalization::localizeUrl('/') }}" class="inline-block group" aria-label="{{ config('app.name') }}">
-<<<<<<< HEAD
                         <x-pub_theme::ui.logo class="h-16 w-auto md:h-20 transition-transform duration-300 group-hover:scale-110" />
-=======
-                        <x-ui.logo class="h-16 w-auto md:h-20 transition-transform duration-300 group-hover:scale-110" />
->>>>>>> dev
                     </a>
 
                     <div class="space-y-3">
@@ -109,11 +67,7 @@ name('register');
                         <h2 class="text-2xl font-bold text-white">{{ __('gdpr::register.form.cta_title') }}</h2>
                         <p class="text-sm text-slate-400">{{ __('gdpr::register.form.cta_subtitle') }}</p>
                     </div>
-<<<<<<< HEAD
                     @livewire(\Modules\Gdpr\Filament\Widgets\Auth\RegisterWidget::class)
-=======
-                    @livewire(\Modules\Gdpr\Filament\Widgets\Auth\UserForm::class)
->>>>>>> dev
                     <p class="mt-4 text-center text-xs text-slate-500">{{ __('gdpr::register.form.terms_notice') }}</p>
                 </div>
 
@@ -161,78 +115,4 @@ name('register');
             </div>
         </div>
     </section>
-<<<<<<< HEAD
-=======
-new class extends Component {
-    #[Validate('required')]
-    public $name = '';
-
-    #[Validate('required|email|unique:users')]
-    public $email = '';
-
-    #[Validate('required|min:8|same:passwordConfirmation')]
-    public $password = '';
-
-    #[Validate('required|min:8|same:password')]
-    public $passwordConfirmation = '';
-
-    public function register()
-    {
-        $this->validate();
-
-        $user = User::create([
-            'email' => $this->email,
-            'name' => $this->name,
-            'password' => Hash::make($this->password),
-        ]);
-
-        event(new Registered($user));
-
-        Auth::login($user, true);
-
-        return redirect()->intended('/');
-    }
-};
-
-?>
-
-<x-layouts.app>
-    <div class="min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">
-        <div class="max-w-lg mx-auto px-6">
-            <!-- Logo e intestazione -->
-            <div class="text-center mb-8">
-                <div class="flex justify-center mb-4">
-                    <x-ui.logo class="h-12 text-blue-900" />
-                </div>
-                <h1 class="text-3xl font-light text-blue-900">Benvenuto in <span class="font-bold">il progetto</span></h1>
-                <p class="text-gray-600 mt-2">Crea il tuo account per accedere a tutti i servizi1</p>
-            </div>
-
-            <!-- Card contenente il form di registrazione -->
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
-                <!-- Intestazione card -->
-                <div class="bg-blue-900 px-6 py-4">
-                    <h2 class="text-xl font-medium text-white flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
-                        </svg>
-                        Registrazione
-                    </h2>
-                </div>
-
-                <!-- Form di registrazione -->
-                <div class="p-6">
-                    @livewire(\Modules\User\Filament\Widgets\RegistrationWidget::class)
-                </div>
-            </div>
-
-            <!-- Footer con informazioni aggiuntive -->
-            <div class="mt-8 text-center text-sm text-gray-500">
-                <p>Hai bisogno di assistenza? <a href="#" class="text-blue-800 hover:underline">Contattaci</a></p>
-            </div>
-        </div>
-    </div>
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 </x-layouts.app>

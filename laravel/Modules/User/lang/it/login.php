@@ -9,38 +9,20 @@ return [
             'description' => 'Email',
             'helper_text' => '',
             'placeholder' => 'Inserisci la tua email',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'password' => [
             'label' => 'Password',
             'description' => 'Password',
             'helper_text' => '',
             'placeholder' => 'Inserisci la tua password',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'remember' => [
             'label' => 'Ricordami',
             'description' => 'Ricordami',
             'helper_text' => '',
             'placeholder' => 'Ricordami',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -48,11 +30,7 @@ return [
         'login' => [
             'label' => 'Accedi',
             'success' => 'Accesso effettuato con successo',
-<<<<<<< HEAD
             'error' => 'Credenziali non valide',
-=======
-            'error' => 'Le credenziali inserite non sono corrette.',
->>>>>>> dev
         ],
         'register' => [
             'label' => 'Registrati',
@@ -88,11 +66,7 @@ return [
     'subtitle_start' => 'Oppure',
     'subtitle_link' => 'crea un nuovo account',
     'page' => [
-<<<<<<< HEAD
         'title' => 'Benvenuto a LaravelPizza! 🍕',
-=======
-        'title' => 'Benvenuto a <nome progetto>! 🍕',
->>>>>>> dev
         'subtitle' => 'Accedi alla community di developer e pizza lovers',
     ],
     'already_registered' => 'Non hai ancora un account?',
@@ -101,26 +75,4 @@ return [
     'register_now' => 'Registrati ora',
     'forgot_password_text' => 'Hai dimenticato la tua password?',
     'reset_it' => 'Reimpostala qui',
-<<<<<<< HEAD
-=======
-        ],
-    ],
-    'actions' => [
-        'hidePassword' => [
-            'label' => 'hidePassword',
-            'icon' => 'hidePassword',
-            'tooltip' => 'hidePassword',
-        ],
-        'showPassword' => [
-            'label' => 'showPassword',
-            'icon' => 'showPassword',
-            'tooltip' => 'showPassword',
-        ],
-    ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

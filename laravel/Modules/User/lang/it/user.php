@@ -20,14 +20,7 @@ return [
             'help' => 'Identificativo univoco dell\'utente',
             'tooltip' => 'ID utente',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'name' => [
             'label' => 'Nome',
@@ -43,14 +36,7 @@ return [
             'help' => 'Nome dell\'utente',
             'tooltip' => 'Nome dell\'utente',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'last_name' => [
             'label' => 'Cognome',
@@ -58,14 +44,7 @@ return [
             'help' => 'Cognome dell\'utente',
             'tooltip' => 'Cognome dell\'utente',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'email' => [
             'label' => 'Email',
@@ -89,14 +68,7 @@ return [
             'help' => 'Ripeti la password per conferma',
             'tooltip' => 'Conferma della password',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'current_password' => [
             'label' => 'Password Attuale',
@@ -104,14 +76,7 @@ return [
             'help' => 'Password corrente per la verifica',
             'tooltip' => 'Password attuale',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'new_password' => [
             'label' => 'Nuova Password',
@@ -119,14 +84,7 @@ return [
             'help' => 'Nuova password desiderata',
             'tooltip' => 'Nuova password',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'role' => [
             'label' => 'Ruolo',
@@ -134,14 +92,7 @@ return [
             'help' => 'Ruolo dell\'utente nel sistema',
             'tooltip' => 'Ruolo e permessi',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'roles' => [
             'label' => 'Ruoli',
@@ -149,14 +100,7 @@ return [
             'help' => 'Ruoli assegnati all\'utente',
             'tooltip' => 'Ruoli multipli',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'permissions' => [
             'label' => 'Permessi',
@@ -164,14 +108,7 @@ return [
             'help' => 'Permessi specifici dell\'utente',
             'tooltip' => 'Permessi diretti',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'status' => [
             'label' => 'Stato',
@@ -186,14 +123,7 @@ return [
                 'pending' => 'In Attesa',
                 'suspended' => 'Sospeso',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'type' => [
             'label' => 'Tipo',
@@ -208,56 +138,28 @@ return [
                 'patient' => 'Paziente',
                 'staff' => 'Personale',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'last_login' => [
             'label' => 'Ultimo Accesso',
             'help' => 'Data e ora dell\'ultimo accesso',
             'tooltip' => 'Ultimo login',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'help' => 'Data di creazione dell\'account',
             'tooltip' => 'Quando è stato creato',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'help' => 'Data dell\'ultimo aggiornamento',
             'tooltip' => 'Ultimo aggiornamento',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'avatar' => [
             'label' => 'Avatar',
@@ -265,14 +167,7 @@ return [
             'help' => 'Immagine del profilo',
             'tooltip' => 'Foto profilo',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'language' => [
             'label' => 'Lingua',
@@ -287,14 +182,7 @@ return [
                 'fr' => 'Français',
                 'de' => 'Deutsch',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'timezone' => [
             'label' => 'Fuso Orario',
@@ -302,90 +190,43 @@ return [
             'help' => 'Fuso orario dell\'utente',
             'tooltip' => 'Zona oraria',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'password_expires_at' => [
             'label' => 'Scadenza Password',
             'help' => 'Data di scadenza della password',
             'tooltip' => 'Scadenza password',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'verified' => [
             'label' => 'Verificato',
             'help' => 'Indica se l\'email è verificata',
             'tooltip' => 'Email verificata',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'unverified' => [
             'label' => 'Non Verificato',
             'help' => 'Indica se l\'email non è verificata',
             'tooltip' => 'Email non verificata',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'email_verified_at' => [
             'label' => 'Email Verificata il',
             'help' => 'Data di verifica dell\'email',
             'tooltip' => 'Data verifica email',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'provider' => [
             'label' => 'Provider',
             'placeholder' => 'Inserisci il nome del provider',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'help' => 'Provider di autenticazione (es. Google, Facebook]',
             'tooltip' => 'Provider OAuth',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-            'help' => 'Provider di autenticazione (es. Google, Facebook)',
-            'tooltip' => 'Provider OAuth',
-            'helper_text' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'provider_id' => [
             'label' => 'ID Provider',
@@ -393,14 +234,7 @@ return [
             'help' => 'ID utente nel provider esterno',
             'tooltip' => 'ID provider esterno',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'provider_name' => [
             'label' => 'Nome Provider',
@@ -408,14 +242,7 @@ return [
             'help' => 'Nome dell\'utente nel provider',
             'tooltip' => 'Nome nel provider',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'provider_email' => [
             'label' => 'Email Provider',
@@ -423,14 +250,7 @@ return [
             'help' => 'Email associata al provider',
             'tooltip' => 'Email nel provider',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'provider_avatar' => [
             'label' => 'Avatar Provider',
@@ -438,42 +258,21 @@ return [
             'help' => 'URL dell\'immagine profilo del provider',
             'tooltip' => 'Avatar del provider',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'uuid' => [
             'label' => 'UUID',
             'help' => 'Identificativo univoco universale',
             'tooltip' => 'UUID dispositivo',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'mobile_id' => [
             'label' => 'Mobile ID',
             'help' => 'Identificativo del dispositivo mobile',
             'tooltip' => 'ID dispositivo mobile',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'languages' => [
             'label' => 'Lingue',
@@ -481,38 +280,20 @@ return [
             'help' => 'Lingue supportate dal dispositivo',
             'tooltip' => 'Lingue dispositivo',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'guard_name' => [
             'label' => 'Guard Name',
             'help' => 'Nome del guard di autenticazione',
             'tooltip' => 'Guard autenticazione',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'active' => [
             'label' => 'Attivo',
             'help' => 'Indica se il record è attivo',
             'tooltip' => 'Stato attivo',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'description' => '',
         ],
         'resetFilters' => [
@@ -532,44 +313,19 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'layout' => [
-            'label' => 'layout',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'endDate' => [
             'description' => 'endDate',
             'helper_text' => 'endDate1',
             'placeholder' => 'endDate',
             'label' => 'endDate',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'startDate' => [
             'description' => 'startDate',
             'helper_text' => 'startDate',
             'placeholder' => 'startDate',
             'label' => 'startDate',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
         'matr' => [
@@ -583,11 +339,6 @@ return [
             'placeholder' => 'ente',
             'helper_text' => 'ente',
             'description' => 'ente',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -734,20 +485,11 @@ return [
         'submit' => [
             'tooltip' => 'submit',
         ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'createAnother' => [
             'tooltip' => 'createAnother',
             'icon' => 'createAnother',
             'label' => 'createAnother',
         ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ],
     'messages' => [
         'created' => 'Utente creato con successo',
@@ -829,47 +571,9 @@ return [
             ],
         ],
         'register' => [
-<<<<<<< HEAD
             'title' => 'Registrati',
             'subtitle' => 'Crea un nuovo account',
             'button' => 'Registrati',
-=======
-            'title' => [
-                'text' => 'Registrati',
-            ],
-            'subtitle' => [
-                'text' => 'Crea un nuovo account',
-            ],
-            'description' => [
-                'text' => 'Inserisci i tuoi dati per completare la registrazione',
-            ],
-            'button' => [
-                'text' => 'Registrati',
-            ],
-            'login' => [
-                'text' => 'Accedi',
-            ],
-            'already_have_account' => [
-                'text' => 'Hai già un account?',
-            ],
-            'submit' => [
-                'text' => 'Registrati',
-            ],
-            'sidebar' => [
-                'support_title' => [
-                    'text' => 'Hai bisogno di aiuto?',
-                ],
-                'help_email' => [
-                    'text' => 'Contatta il supporto via email',
-                ],
-                'help_password' => [
-                    'text' => 'Password dimenticata? Recupera l\'accesso',
-                ],
-                'help_support' => [
-                    'text' => 'Guida e assistenza',
-                ],
-            ],
->>>>>>> dev
             'fields' => [
                 'first_name' => 'Nome',
                 'last_name' => 'Cognome',
@@ -1035,21 +739,10 @@ return [
             'heading' => 'empty',
             'label' => 'empty',
         ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'worker' => [
             'label' => 'worker',
             'heading' => 'worker',
         ],
     ],
     'plural_label' => 'User (Plurale)',
-<<<<<<< HEAD
-=======
-    ],
-    'plural_label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

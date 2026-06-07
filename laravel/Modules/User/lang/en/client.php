@@ -17,27 +17,14 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Name',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'user' => [
             'email' => [
                 'label' => 'Owner',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -90,35 +77,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'create' => [
-            'label' => 'Create',
-        ],
-        'edit' => [
-            'label' => 'Edit',
-        ],
-        'delete' => [
-            'label' => 'Delete',
-        ],
-        'toggleColumns' => [
-            'label' => 'Toggle Columns',
-        ],
-        'reorderRecords' => [
-            'label' => 'Reorder Records',
-        ],
-        'resetFilters' => [
-            'label' => 'Reset Filters',
-        ],
-        'applyFilters' => [
-            'label' => 'Apply Filters',
-        ],
-        'openFilters' => [
-            'label' => 'Open Filters',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'plural' => [
@@ -126,17 +84,8 @@ return [
             'label' => 'client.plural.model',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

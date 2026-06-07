@@ -6,10 +6,6 @@ return [
     'fields' => [
         'provider' => [
             'label' => 'provider',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -79,44 +75,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'provider_id' => [
-            'label' => 'provider_id',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'email' => [
-            'label' => 'email',
-        ],
-        'avatar' => [
-            'label' => 'avatar',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'attach' => [
-            'label' => 'attach',
-        ],
-        'layout' => [
-            'label' => 'layout',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'detach' => [
-            'label' => 'detach',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'navigation' => [
@@ -125,10 +83,6 @@ return [
         'group' => 'Authentication',
         'label' => 'Social Authentications',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Socialite User',
     'plural_label' => 'Socialite User (Plurale)',
     'actions' => [
@@ -142,12 +96,4 @@ return [
             'label' => 'Elimina Socialite User',
         ],
     ],
-<<<<<<< HEAD
-=======
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

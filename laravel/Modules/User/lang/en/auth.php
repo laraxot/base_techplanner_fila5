@@ -8,35 +8,17 @@ return [
             'label' => 'Email',
             'placeholder' => 'Enter your email',
             'help' => 'Your email address for authentication',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Enter your password',
             'help' => 'Your account password',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -52,27 +34,10 @@ return [
         ],
     ],
     'messages' => [
-<<<<<<< HEAD
         'failed' => 'These credentials do not match our records.',
         'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
         'unauthorized' => 'You are not authorized to access this resource.',
     ],
-<<<<<<< HEAD
-=======
-    // Password Reset Widget - specific translations
->>>>>>> 4b6b99016 (first commit)
-=======
-        'failed' => [
-            'key' => 'user::auth.messages.failed',
-            'text' => 'Invalid credentials.',
-            'description' => 'Error message shown when login credentials are invalid',
-            'context' => 'login_form',
-            'placeholder' => '',
-        ],
-        'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-        'unauthorized' => 'You are not authorized to access this resource.',
-    ],
->>>>>>> dev
     'password_reset' => [
         'email_placeholder' => 'Enter your email address',
         'send_button' => 'Send reset link',
@@ -119,10 +84,6 @@ return [
             'try_again' => 'Try again',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -132,97 +93,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'social' => [
-        'title' => 'Or continue with',
-        'google' => 'Sign in with Google',
-        'microsoft' => 'Sign in with Microsoft',
-        'github' => 'Sign in with GitHub',
-        'facebook' => 'Sign in with Facebook',
-    ],
-    'login' => [
-        'page' => [
-            'meta_title' => [
-                'label' => 'Access services',
-                'tooltip' => 'Public login page title',
-                'placeholder' => '',
-                'helper_text' => 'Browser and page title',
-                'description' => 'Meta title for auth page',
-            ],
-            'kicker' => [
-                'label' => 'Personal area',
-                'tooltip' => 'Intro label for login section',
-                'placeholder' => '',
-                'helper_text' => 'Short text above page title',
-                'description' => 'Login page kicker',
-            ],
-            'title' => [
-                'label' => 'Access online services',
-                'tooltip' => 'Main title for login page',
-                'placeholder' => '',
-                'helper_text' => 'Hero title for the access page',
-                'description' => 'Primary heading for login page',
-            ],
-            'description' => [
-                'label' => 'Enter your credentials to continue your request or review active records.',
-                'tooltip' => 'Introductory login page description',
-                'placeholder' => '',
-                'helper_text' => 'Supporting text under the main title',
-                'description' => 'Context description for login flow',
-            ],
-            'support_title' => [
-                'label' => 'Access support',
-                'tooltip' => 'Support card title',
-                'placeholder' => '',
-                'helper_text' => 'Sidebar support section title',
-                'description' => 'Login support card heading',
-            ],
-            'support_item_email' => [
-                'label' => 'Use the email address you used when creating your account.',
-                'tooltip' => 'Hint about correct email',
-                'placeholder' => '',
-                'helper_text' => 'Guidance for email usage',
-                'description' => 'Support message for email usage',
-            ],
-            'support_item_password' => [
-                'label' => 'If you do not remember your password, use the credential recovery flow.',
-                'tooltip' => 'Hint for password recovery',
-                'placeholder' => '',
-                'helper_text' => 'Guidance for forgotten password',
-                'description' => 'Support message for password reset',
-            ],
-            'support_item_help' => [
-                'label' => 'For assistance, contact the relevant office.',
-                'tooltip' => 'Hint for requesting support',
-                'placeholder' => '',
-                'helper_text' => 'Guidance for operational support',
-                'description' => 'General support message',
-            ],
-            'register_cta_text' => [
-                'label' => 'Do not have an account yet?',
-                'tooltip' => 'Registration call-to-action text',
-                'placeholder' => '',
-                'helper_text' => 'Invite text for registration',
-                'description' => 'Intro text for registration CTA',
-            ],
-            'register_cta_link' => [
-                'label' => 'Create your account',
-                'tooltip' => 'Registration CTA link label',
-                'placeholder' => '',
-                'helper_text' => 'Link text to registration page',
-                'description' => 'Registration link text',
-            ],
-        ],
-        'auth_button' => [
-            'login' => 'Sign in',
-            'logout' => 'Sign out',
-            'profile' => 'My profile',
-            'dashboard' => 'Dashboard',
-            'personal_area' => 'Access personal area',
-        ],
-    ],
->>>>>>> dev
 ];

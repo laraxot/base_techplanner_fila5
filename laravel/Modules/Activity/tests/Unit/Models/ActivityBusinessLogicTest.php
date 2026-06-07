@@ -2,18 +2,9 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
 
 use Modules\Activity\Models\Activity;
-=======
-namespace Modules\Activity\Tests\Unit\Models;
-
-uses(TestCase::class);
-
-use Modules\Activity\Models\Activity;
-use Modules\Activity\Tests\TestCase;
->>>>>>> dev
 
 describe('Activity Business Logic', function () {
     test('activity has correct connection configured', function () {

@@ -11,15 +11,7 @@ return [
     'field.guard_name' => 'Guard-Name',
     'field.name' => 'Name',
     'field.permissions' => 'Berechtigungen',
-<<<<<<< HEAD
-<<<<<<< HEAD
     'field.select_all.message' => 'Aktivierung aller Berechtigungen, die derzeit für diese Rolle <span class=\\"text-primary font-medium\\">aktiviert</span> sind',
-=======
-    'field.select_all.message' => 'Aktivierung aller Berechtigungen, die derzeit für diese Rolle <span class=\"text-primary font-medium\">aktiviert</span> sind',
->>>>>>> 4b6b99016 (first commit)
-=======
-    'field.select_all.message' => 'Aktivierung aller Berechtigungen, die derzeit für diese Rolle <span class=\\"text-primary font-medium\\">aktiviert</span> sind',
->>>>>>> dev
     'field.select_all.name' => 'Alle auswählen',
     'nav.group' => 'Filament Shield',
     'nav.role.icon' => 'heroicon-o-shield-check',
@@ -44,10 +36,6 @@ return [
         'restore' => 'Wiederherstellen',
         'restore_any' => 'Alle wiederherstellen',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -61,9 +49,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

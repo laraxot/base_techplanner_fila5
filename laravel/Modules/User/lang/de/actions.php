@@ -18,10 +18,6 @@ return [
     'success_attached' => 'Utente collegato con successo',
     'success_detached' => 'Utente scollegato con successo',
     'success_deleted' => 'Utenti eliminati con successo',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -35,9 +31,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

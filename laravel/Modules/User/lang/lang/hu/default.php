@@ -126,7 +126,6 @@ return [
         'tooltip' => 'Másolás sikerült!',
     ],
     'fields' => [
-<<<<<<< HEAD
         'email' => [
             'label' => 'E-mail cím',
             'tooltip' => '',
@@ -219,22 +218,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
-        'email' => 'E-mail cím',
-        'login' => 'Bejelentkezés',
-        'name' => 'Név',
-        'password' => 'Jelszó',
-        'password_confirm' => 'Jelszó megerősítése',
-        'new_password' => 'Új jelszó',
-        'new_password_confirmation' => 'Új jelszó megerősítése',
-        'token_name' => 'Token neve',
-        'abilities' => 'Képességek',
-        '2fa_code' => 'Kód',
-        '2fa_recovery_code' => 'Helyreállítási kód',
-        'created' => 'Létrehozva',
-        'expires' => 'Lejár',
-    ],
-    'or' => 'Vagy',
-    'cancel' => 'Mégsem',
->>>>>>> 4b6b99016 (first commit)
 ];

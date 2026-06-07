@@ -8,7 +8,6 @@ return [
             'label' => 'test',
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -20,6 +19,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
-=======
->>>>>>> 4b6b99016 (first commit)
 ];

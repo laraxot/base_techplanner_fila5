@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'आईडी',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -57,29 +53,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'user_id' => [
-            'label' => 'उपयोगकर्ता',
-        ],
-        'client_id' => [
-            'label' => 'क्लाइंट',
-        ],
-        'name' => [
-            'label' => 'नाम',
-        ],
-        'scopes' => [
-            'label' => 'स्कोप',
-        ],
-        'revoked' => [
-            'label' => 'रद्द किया गया',
-        ],
-        'expires_at' => [
-            'label' => 'समाप्ति तिथि',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [

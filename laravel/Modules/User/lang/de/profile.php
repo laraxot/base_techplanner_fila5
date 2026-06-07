@@ -18,112 +18,54 @@ return [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
             'help' => 'Nome dell\'utente',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'last_name' => [
             'label' => 'Cognome',
             'placeholder' => 'Inserisci il cognome',
             'help' => 'Cognome dell\'utente',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci l\'email',
             'help' => 'Indirizzo email dell\'utente',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'phone' => [
             'label' => 'Telefono',
             'placeholder' => 'Inserisci il numero di telefono',
             'help' => 'Numero di telefono dell\'utente',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'birth_date' => [
             'label' => 'Data di Nascita',
             'placeholder' => 'Seleziona la data di nascita',
             'help' => 'Data di nascita dell\'utente',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'gender' => [
             'label' => 'Genere',
             'male' => 'Maschio',
             'female' => 'Femmina',
             'other' => 'Altro',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'is_active' => [
             'label' => 'Attivo',
             'help' => 'Stato attivo del profilo',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -145,20 +87,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'id' => [
-            'label' => 'ID',
-        ],
-        'ente' => [
-            'label' => 'Ente',
-        ],
-        'matr' => [
-            'label' => 'Matricola',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -177,14 +105,6 @@ return [
         'update_success' => 'Profilo aggiornato con successo!',
         'no_permission' => 'Non hai i permessi per modificare questo profilo.',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

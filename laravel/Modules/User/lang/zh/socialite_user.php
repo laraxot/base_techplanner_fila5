@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -75,38 +71,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'user_id' => [
-            'label' => '用户',
-        ],
-        'provider' => [
-            'label' => '提供商',
-        ],
-        'provider_id' => [
-            'label' => '提供商ID',
-        ],
-        'name' => [
-            'label' => '姓名',
-        ],
-        'email' => [
-            'label' => '邮箱',
-        ],
-        'avatar' => [
-            'label' => '头像',
-        ],
-        'token' => [
-            'label' => '令牌',
-        ],
-        'refresh_token' => [
-            'label' => '刷新令牌',
-        ],
-        'expires_at' => [
-            'label' => '过期时间',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [

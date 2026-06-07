@@ -10,10 +10,6 @@ return [
             'tooltip' => 'list_log_activities',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Log Activities Action Test',
     'plural_label' => 'Log Activities Action Test (Plurale)',
     'navigation' => [
@@ -47,9 +43,4 @@ return [
             'description' => '',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

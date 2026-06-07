@@ -17,10 +17,6 @@ return [
     'fields' => [
         'name' => [
             'label' => 'name',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -54,26 +50,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'delete' => [
-            'label' => 'delete',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -82,16 +58,6 @@ return [
             'icon' => 'reorderRecords',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Token',
     'plural_label' => 'Token (Plurale)',
-=======
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Token',
-    'plural_label' => 'Token (Plurale)',
->>>>>>> dev
 ];

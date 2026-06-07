@@ -11,10 +11,6 @@ return [
             'label' => 'delete',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'name' => 'Edit Team',
         'plural' => 'Edit Team',
@@ -48,13 +44,4 @@ return [
             'description' => '',
         ],
     ],
-<<<<<<< HEAD
-=======
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

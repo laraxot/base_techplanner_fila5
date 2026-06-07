@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -39,20 +35,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'access_token_id' => [
-            'label' => 'Jeton d\'Accès',
-        ],
-        'revoked' => [
-            'label' => 'Révoqué',
-        ],
-        'expires_at' => [
-            'label' => 'Expire À',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [

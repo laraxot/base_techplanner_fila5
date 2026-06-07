@@ -3,10 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Cambia Password',
         'plural_label' => 'Cambia Password',
@@ -59,28 +55,4 @@ return [
         'current_password_wrong' => 'La password attuale non è corretta',
         'error' => 'Si è verificato un errore',
     ],
-<<<<<<< HEAD
-=======
-    'fields' => [
-        'new_password_confirmation' => [
-            'label' => 'Conferma nuova password',
-            'description' => 'Digita nuovamente la nuova password per conferma',
-            'helper_text' => '',
-            'placeholder' => 'Reinserisci la nuova password',
-        ],
-        'changePassword' => [
-            'label' => 'Cambia password',
-        ],
-    ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [
-        'cancel' => [
-            'tooltip' => 'cancel',
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

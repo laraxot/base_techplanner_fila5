@@ -64,10 +64,6 @@ return [
             'description' => 'Il valore inserito è troppo corto.',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'name' => 'Errors',
         'plural' => 'Errors',
@@ -112,14 +108,4 @@ return [
             'label' => 'Elimina Errors',
         ],
     ],
-<<<<<<< HEAD
-=======
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
-    'actions' => [],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

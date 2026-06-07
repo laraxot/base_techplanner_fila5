@@ -8,7 +8,6 @@ return [
     'throttled' => 'Attendi prima di riprovare.',
     'token' => 'Questo token per la reimpostazione della password non è valido.',
     'user' => 'Non riesco a trovare un utente con quell’indirizzo email.',
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -22,6 +21,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 4b6b99016 (first commit)
 ];

@@ -63,10 +63,6 @@ return [
     'fields' => [
         'provider_avatar' => [
             'label' => 'provider_avatar',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -87,14 +83,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

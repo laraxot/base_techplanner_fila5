@@ -9,70 +9,35 @@ return [
             'placeholder' => 'text_color',
             'helper_text' => 'text_color',
             'description' => 'text_color',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'button_color' => [
             'label' => 'button_color',
             'placeholder' => 'button_color',
             'helper_text' => 'button_color',
             'description' => 'button_color',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'button_text_color' => [
             'label' => 'button_text_color',
             'placeholder' => 'button_text_color',
             'helper_text' => 'button_text_color',
             'description' => 'button_text_color',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'input_text_color' => [
             'label' => 'input_text_color',
             'placeholder' => 'input_text_color',
             'helper_text' => 'input_text_color',
             'description' => 'input_text_color',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'input_border_color' => [
             'label' => 'input_border_color',
             'placeholder' => 'input_border_color',
             'helper_text' => 'input_border_color',
             'description' => 'input_border_color',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -91,16 +56,6 @@ return [
         'sort' => 13,
         'icon' => 'heroicon-o-swatch',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Colors',
     'plural_label' => 'Colors (Plurale)',
-=======
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Colors',
-    'plural_label' => 'Colors (Plurale)',
->>>>>>> dev
 ];

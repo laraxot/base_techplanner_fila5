@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -63,32 +59,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'name' => [
-            'label' => 'Nome',
-        ],
-        'client_id' => [
-            'label' => 'Client ID',
-        ],
-        'client_secret' => [
-            'label' => 'Client Secret',
-        ],
-        'redirect' => [
-            'label' => 'Reindirizza',
-        ],
-        'personal_access_client' => [
-            'label' => 'Client per accesso personale',
-        ],
-        'password_client' => [
-            'label' => 'Client per accesso con password',
-        ],
-        'revoked' => [
-            'label' => 'Revocato',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [

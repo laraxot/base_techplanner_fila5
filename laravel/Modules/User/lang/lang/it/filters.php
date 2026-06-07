@@ -7,7 +7,6 @@ return [
     'active_users' => 'Utenti attivi',
     'created_from' => 'creati dal',
     'created_until' => 'creati al',
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -21,6 +20,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 4b6b99016 (first commit)
 ];

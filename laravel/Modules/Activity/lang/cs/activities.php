@@ -1,40 +1,17 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 declare(strict_types=1);
 
 return [
     'breadcrumb' => 'Log',
     'title' => 'Log entity ":record"',
     'default_datetime_format' => 'j.n.Y H:i:s',
-<<<<<<< HEAD
-=======
-return [
-    'breadcrumb' => 'Log',
-
-    'title' => 'Log entity ":record"',
-
-    'default_datetime_format' => 'j.n.Y H:i:s',
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'table' => [
         'field' => 'Pole',
         'old' => 'Původní',
         'new' => 'Nové',
         'restore' => 'Obnovit',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'events' => [
         'updated' => 'Upraveno',
         'created' => 'Vytvořeno',
@@ -43,10 +20,6 @@ return [
         'restore_successful' => 'Úspěšně obnoveno',
         'restore_failed' => 'Obnovení selhalo',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -60,9 +33,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

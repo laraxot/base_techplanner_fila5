@@ -3,95 +3,27 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    /*
-     * |--------------------------------------------------------------------------
-     * | Table Columns
-     * |--------------------------------------------------------------------------
-     */
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'column.name' => 'Tên',
     'column.guard_name' => 'Tên guard',
     'column.roles' => 'Vai trò',
     'column.permissions' => 'Quyền',
     'column.updated_at' => 'Cập nhật lúc',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    /*
-     * |--------------------------------------------------------------------------
-     * | Form Fields
-     * |--------------------------------------------------------------------------
-     */
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'field.name' => 'Tên',
     'field.guard_name' => 'Tên guard',
     'field.permissions' => 'Quyền',
     'field.select_all.name' => 'Chọn tất cả',
     'field.select_all.message' => 'Bật tất cả Quyền hiện tại <span class="text-primary font-medium">Đã bật</span> cho vai trò này',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    /*
-     * |--------------------------------------------------------------------------
-     * | Navigation & Resource
-     * |--------------------------------------------------------------------------
-     */
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Vai trò',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Vai trò',
     'resource.label.roles' => 'Vai trò',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    /*
-     * |--------------------------------------------------------------------------
-     * | Section & Tabs
-     * |--------------------------------------------------------------------------
-     */
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'section' => 'Thực thể',
     'resources' => 'Tài nguyên',
     'widgets' => 'Widget',
     'pages' => 'Trang',
     'custom' => 'Quyền tùy chỉnh',
-<<<<<<< HEAD
-<<<<<<< HEAD
     'forbidden' => 'Bạn không có quyền để truy cập.',
-=======
-    /*
-     * |--------------------------------------------------------------------------
-     * | Messages
-     * |--------------------------------------------------------------------------
-     */
-
-    'forbidden' => 'Bạn không có quyền để truy cập.',
-    /*
-     * |--------------------------------------------------------------------------
-     * | Resource Permissions' Labels
-     * |--------------------------------------------------------------------------
-     */
-
->>>>>>> 4b6b99016 (first commit)
-=======
-    'forbidden' => 'Bạn không có quyền để truy cập.',
->>>>>>> dev
     'resource_permission_prefixes_labels' => [
         'view' => 'Xem',
         'view_any' => 'Xem bất kỳ',
@@ -106,10 +38,6 @@ return [
         'restore_any' => 'Khôi phục bất kỳ',
         'replicate' => 'Nhân bản',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -123,9 +51,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

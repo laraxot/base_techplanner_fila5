@@ -2,25 +2,13 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Modules\Activity\Models\Activity;
-=======
-namespace Modules\Activity\Tests\Feature;
-
-use Illuminate\Support\Str;
-use Modules\Activity\Models\Activity;
-use Modules\Activity\Tests\TestCase;
->>>>>>> dev
 
 use function Safe\json_decode;
 use function Safe\json_encode;
 
-<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
-=======
-uses(TestCase::class);
->>>>>>> dev
 
 describe('Activity Business Logic', function () {
     it('can create activity with basic information', function () {

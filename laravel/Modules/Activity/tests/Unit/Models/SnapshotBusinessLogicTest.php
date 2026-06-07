@@ -2,18 +2,9 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
 
 use Modules\Activity\Models\Snapshot;
-=======
-namespace Modules\Activity\Tests\Unit\Models;
-
-uses(TestCase::class);
-
-use Modules\Activity\Models\Snapshot;
-use Modules\Activity\Tests\TestCase;
->>>>>>> dev
 use Spatie\EventSourcing\Snapshots\EloquentSnapshot;
 
 describe('Snapshot Business Logic', function () {

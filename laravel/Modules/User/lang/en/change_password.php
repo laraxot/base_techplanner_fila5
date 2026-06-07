@@ -9,10 +9,6 @@ return [
             'description' => 'Please type the new password again to confirm',
             'helper_text' => '',
             'placeholder' => 'Re-enter your new password',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
         'changePassword' => [
@@ -33,14 +29,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
-        ],
-        'changePassword' => [
-            'label' => 'Change password',
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

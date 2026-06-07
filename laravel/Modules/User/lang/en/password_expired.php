@@ -10,26 +10,13 @@ return [
         'current_password' => [
             'label' => 'Current Password',
             'validation_attribute' => 'current_password',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'password' => [
             'label' => 'Password',
             'validation_attribute' => 'password',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -39,14 +26,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'password_confirmation' => [
-            'label' => 'Confirm Password',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'form' => [
@@ -79,15 +58,7 @@ return [
         ],
         'column_not_found' => [
             'title' => 'Column Not Found',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'body' => 'Either the column \\":column_name\\" or the password column \\":password_column_name\\" was not found in the :table_name table.',
-=======
-            'body' => 'Either the column \":column_name\" or the password column \":password_column_name\" was not found in the :table_name table.',
->>>>>>> 4b6b99016 (first commit)
-=======
-            'body' => 'Either the column \\":column_name\\" or the password column \\":password_column_name\\" was not found in the :table_name table.',
->>>>>>> dev
         ],
         'password_reset' => [
             'success' => 'Password Reset Successful',
@@ -98,10 +69,6 @@ return [
         ],
     ],
     'exceptions' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'column_not_found' => 'Either the column \\":column_name\\" or the password column \\":password_column_name\\" was not found in the \\":table_name\\" table. Please publish migrations and run them, if the error still persists, publish the config file and update the table_name, column_name, and password_column_name values.',
     ],
     'navigation' => [
@@ -113,11 +80,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
-        'column_not_found' => 'Either the column \":column_name\" or the password column \":password_column_name\" was not found in the \":table_name\" table. Please publish migrations and run them, if the error still persists, publish the config file and update the table_name, column_name, and password_column_name values.',
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

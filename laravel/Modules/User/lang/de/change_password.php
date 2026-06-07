@@ -9,10 +9,6 @@ return [
             'description' => 'Bitte geben Sie das neue Passwort erneut ein',
             'helper_text' => '',
             'placeholder' => 'Bestätigen Sie Ihr neues Passwort',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
         'changePassword' => [
@@ -33,14 +29,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
-        ],
-        'changePassword' => [
-            'label' => 'Passwort ändern',
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

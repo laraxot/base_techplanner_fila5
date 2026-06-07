@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -81,41 +77,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'user_id' => [
-            'label' => 'Utilisateur',
-        ],
-        'name' => [
-            'label' => 'Nom',
-        ],
-        'secret' => [
-            'label' => 'Secret',
-        ],
-        'provider' => [
-            'label' => 'Fournisseur',
-        ],
-        'redirect' => [
-            'label' => 'Redirection',
-        ],
-        'personal_access_client' => [
-            'label' => 'Client d\'accès personnel',
-        ],
-        'password_client' => [
-            'label' => 'Client de mot de passe',
-        ],
-        'revoked' => [
-            'label' => 'Révoqué',
-        ],
-        'created_at' => [
-            'label' => 'Créé le',
-        ],
-        'updated_at' => [
-            'label' => 'Mis à jour le',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [

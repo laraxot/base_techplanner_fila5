@@ -18,10 +18,6 @@ class ListActivities extends XotBaseListRecords
     public function getTableColumns(): array
     {
         return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'id' => TextColumn::make('id')
                 ->sortable()
                 ->searchable(),
@@ -37,26 +33,6 @@ class ListActivities extends XotBaseListRecords
             'causer_id' => TextColumn::make('causer_id')
                 ->searchable(),
             'created_at' => TextColumn::make('created_at')
-<<<<<<< HEAD
-=======
-            TextColumn::make('id')
-                ->sortable()
-                ->searchable(),
-            TextColumn::make('description')
-                ->searchable()
-                ->limit(50),
-            TextColumn::make('subject_type')
-                ->searchable(),
-            TextColumn::make('subject_id')
-                ->searchable(),
-            TextColumn::make('causer_type')
-                ->searchable(),
-            TextColumn::make('causer_id')
-                ->searchable(),
-            TextColumn::make('created_at')
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                 ->dateTime()
                 ->sortable(),
         ];

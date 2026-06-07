@@ -13,10 +13,6 @@ return [
     'label' => 'Team Permission',
     'plural_label' => 'Team Permissions',
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'id' => [
             'label' => 'ID',
             'tooltip' => '',
@@ -67,18 +63,5 @@ return [
         ],
     ],
     'actions' => [
-<<<<<<< HEAD
-=======
-        'id' => ['label' => 'ID'],
-        'team_id' => ['label' => 'Team'],
-        'team.name' => ['label' => 'Team'],
-        'user_id' => ['label' => 'User'],
-        'user.name' => ['label' => 'User'],
-        'permission' => ['label' => 'Permission'],
-        'created_at' => ['label' => 'Created At'],
-        'updated_at' => ['label' => 'Updated At'],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ],
 ];

@@ -102,10 +102,6 @@ return [
         'tooltip' => 'Copied!',
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -196,26 +192,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
-=======
-        'avatar' => 'Avatar',
-        'email' => 'Email',
-        'login' => 'Login',
-        'name' => 'Name',
-        'password' => 'Password',
-        'password_confirm' => 'Password confirm',
-        'new_password' => 'New password',
-        'new_password_confirmation' => 'Confirm password',
-        'token_name' => 'Token name',
-        'token_expiry' => 'Token expiry',
-        'abilities' => 'Abilities',
-        '2fa_code' => 'Code',
-        '2fa_recovery_code' => 'Recovery Code',
-        'created' => 'Created',
-        'expires' => 'Expires',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ],
     'or' => 'Or',
     'cancel' => 'Cancel',
@@ -254,10 +230,6 @@ return [
         'not_receive' => 'Se non hai ricevuto l\'email di verifica,',
         'request_another' => 'clicca qui per richiederla di nuovo',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -269,9 +241,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

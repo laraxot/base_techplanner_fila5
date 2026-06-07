@@ -24,26 +24,13 @@ return [
         'current_password' => [
             'label' => 'Password Attuale',
             'validation_attribute' => 'password_attuale',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'password' => [
             'label' => 'Nuova Password',
             'validation_attribute' => 'password',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -53,14 +40,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'password_confirmation' => [
-            'label' => 'Conferma Password',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'reset_password' => 'Reimposta Password',
@@ -126,16 +105,6 @@ return [
         'sort' => 31,
         'icon' => 'user-user-otp',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Otp',
     'plural_label' => 'Otp (Plurale)',
-=======
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Otp',
-    'plural_label' => 'Otp (Plurale)',
->>>>>>> dev
 ];

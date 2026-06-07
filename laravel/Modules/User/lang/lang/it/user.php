@@ -11,7 +11,6 @@ return [
         ],
     ],
     'fields' => [
-<<<<<<< HEAD
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -47,27 +46,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'name' => [
-            'label' => 'Nome',
-        ],
-        'email' => [
-            'label' => 'Email',
-        ],
-        'created_at' => [
-            'label' => 'Data di Creazione',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
->>>>>>> 4b6b99016 (first commit)
         ],
         'role' => [
             'name' => [
                 'label' => 'Ruolo',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -102,35 +85,20 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'active' => 'Attivo',
-        'id' => [
-            'label' => 'ID',
-        ],
-        'password' => 'Password',
-        'password_confirmation' => 'Conferma Password',
-        'email_verified_at' => [
-            'label' => 'Email Verificata',
->>>>>>> 4b6b99016 (first commit)
         ],
         'teams' => [
             'name' => [
                 'label' => 'Nome Team',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'roles' => [
             'name' => [
                 'label' => 'Nome Ruolo',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -165,23 +133,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'password_expires_at' => [
-            'label' => 'Scadenza Password',
-        ],
-        'verified' => [
-            'label' => 'Verificato',
-        ],
-        'unverified' => [
-            'label' => 'Non Verificato',
-        ],
-        'deactivate' => [
-            'label' => 'deactivate',
-        ],
-        'changePassword' => [
-            'label' => 'changePassword',
->>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'filters' => [
@@ -283,9 +234,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
 ];

@@ -2,36 +2,14 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Filament\Pages\ListLogActivities;
 use Modules\Activity\Providers\ActivityServiceProvider;
-=======
-namespace Modules\Activity\Tests\Feature;
-
-use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
-use Modules\Activity\Filament\Pages\ListLogActivities;
-use Modules\Activity\Providers\ActivityServiceProvider;
-use Modules\Activity\Tests\TestCase;
->>>>>>> dev
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 
-<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
-=======
-uses(TestCase::class);
-
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        \DB::connection()->getPdo();
-    } catch (\Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
->>>>>>> dev
 
 test('phpstan placeholder', function (): void {
     expect(true)->toBeTrue();
@@ -71,15 +49,7 @@ test('service provider configuration', function (): void {
 });
 
 test('views exist and are structured', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
     $viewPath = base_path('Modules/Activity/resources/views/filament/list-log-activities.blade.php');
-=======
-    $viewPath = base_path('Modules/Activity/resources/views/filament/pages/list-log-activities.blade.php');
->>>>>>> 4b6b99016 (first commit)
-=======
-    $viewPath = base_path('Modules/Activity/resources/views/filament/pages/list-log-activities.blade.php');
->>>>>>> dev
     expect(file_exists($viewPath))->toBeTrue();
 
     $viewContent = file_get_contents($viewPath);

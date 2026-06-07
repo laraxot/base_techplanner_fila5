@@ -4,22 +4,9 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
         'label' => 'Refresh Token OAuth',
         'plural_label' => 'Refresh Token OAuth',
         'group' => 'OAuth',
-=======
-        'name' => 'OAuth Refresh Token',
-        'plural' => 'OAuth Refresh Tokens',
-        'label' => 'OAuth Refresh Tokens',
-        'group' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-        'label' => 'Refresh Token OAuth',
-        'plural_label' => 'Refresh Token OAuth',
-        'group' => 'OAuth',
->>>>>>> dev
         'icon' => 'heroicon-o-arrow-path',
         'sort' => 27,
     ],
@@ -28,10 +15,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => 'Identificativo univoco',
             'helper_text' => 'Identificativo numerico del token',
             'description' => 'ID del refresh token',
@@ -61,32 +44,11 @@ return [
             'tooltip' => 'Data di creazione',
             'helper_text' => 'Data e ora di creazione del token',
             'description' => 'Timestamp di creazione',
-<<<<<<< HEAD
-=======
-        ],
-        'access_token_id' => [
-            'label' => 'Token di accesso',
-        ],
-        'revoked' => [
-            'label' => 'Revocato',
-        ],
-        'expires_at' => [
-            'label' => 'Scade il',
-        ],
-        'created_at' => [
-            'label' => 'Creato il',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
         'revoke' => [
             'label' => 'Revoca',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => 'Revoca il token',
             'helper_text' => 'Revoca questo refresh token',
             'description' => 'Azione per revocare',
@@ -96,12 +58,4 @@ return [
     'messages' => [
         'revoked' => 'Refresh token revocato con successo',
     ],
-<<<<<<< HEAD
-=======
-            'success' => 'Refresh token revocato con successo',
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

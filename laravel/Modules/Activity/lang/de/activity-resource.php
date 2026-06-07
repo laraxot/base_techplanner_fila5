@@ -7,100 +7,44 @@ return [
         'id' => [
             'label' => 'ID',
             'tooltip' => 'Identificativo univoco dell\'attività999',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Descrizione dell\'attività',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'subject_type' => [
             'label' => 'Tipo Soggetto',
             'tooltip' => 'Tipo di entità soggetta all\'attività',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'subject_id' => [
             'label' => 'ID Soggetto',
             'tooltip' => 'Identificativo dell\'entità soggetta all\'attività',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'causer_type' => [
             'label' => 'Tipo Autore',
             'tooltip' => 'Tipo di entità che ha causato l\'attività',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'causer_id' => [
             'label' => 'ID Autore',
             'tooltip' => 'Identificativo dell\'entità che ha causato l\'attività',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'tooltip' => 'Data e ora di creazione dell\'attività',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -152,10 +96,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -165,9 +105,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

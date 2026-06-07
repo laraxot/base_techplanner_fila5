@@ -13,10 +13,6 @@ return [
     'label' => 'Reset Password',
     'plural_label' => 'Reset Password',
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'email' => [
             'label' => 'Email',
             'tooltip' => '',
@@ -37,13 +33,5 @@ return [
         ],
     ],
     'actions' => [
-<<<<<<< HEAD
-=======
-        'email' => ['label' => 'Email'],
-        'token' => ['label' => 'Token'],
-        'created_at' => ['label' => 'Creato il'],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ],
 ];

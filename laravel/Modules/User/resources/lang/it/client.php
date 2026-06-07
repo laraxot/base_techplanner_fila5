@@ -7,10 +7,6 @@ return [
         'name' => [
             'placeholder' => 'name',
             'description' => 'name',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -20,24 +16,12 @@ return [
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'client_name' => [
-            'description' => 'client_name',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'client_id' => [
             'description' => 'client_id',
             'label' => 'client_id',
             'placeholder' => 'client_id',
             'helper_text' => 'client_id',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
         'plain_secret' => [
@@ -57,35 +41,13 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'plain_secret' => [
-            'label' => 'plain_secret',
-        ],
-        'secret' => [
-            'label' => 'secret',
-        ],
-        'id' => [
-            'label' => 'id',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'recordId' => [
             'description' => 'recordId',
             'placeholder' => 'recordId',
             'helper_text' => 'recordId',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'label' => '',
-            'tooltip' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -120,10 +82,6 @@ return [
             'tooltip' => 'associateAnother',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -133,9 +91,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

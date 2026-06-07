@@ -32,18 +32,9 @@ return [
                 'min' => 'Il nome deve contenere almeno 3 caratteri',
                 'max' => 'Il nome non può superare i 100 caratteri',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'phone' => [
             'label' => 'Numero di Telefono Studio',
@@ -54,18 +45,9 @@ return [
                 'regex' => 'Inserisci un numero di telefono italiano valido',
                 'min' => 'Il numero deve contenere almeno 10 cifre',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'email' => [
             'label' => 'Email Ufficiale Studio',
@@ -77,18 +59,9 @@ return [
                 'unique' => 'Questo indirizzo email è già registrato per un altro studio',
                 'max' => 'L\'indirizzo email non può superare i 255 caratteri',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'address' => [
             'label' => 'Complete Practice Address',
@@ -103,14 +76,7 @@ return [
                 'min' => 'Address must contain at least 15 characters',
                 'max' => 'Address cannot exceed 300 characters',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
->>>>>>> dev
         ],
         'director_name' => [
             'label' => 'Nome Direttore Sanitario',
@@ -121,18 +87,9 @@ return [
                 'min' => 'Il nome deve contenere almeno 5 caratteri',
                 'max' => 'Il nome non può superare i 100 caratteri',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'director_registration' => [
             'label' => 'Numero Iscrizione Albo Medico',
@@ -143,18 +100,9 @@ return [
                 'numeric' => 'Il numero di iscrizione deve contenere solo cifre',
                 'min' => 'Il numero di iscrizione deve contenere almeno 3 cifre',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'vat_number' => [
             'label' => 'Partita IVA Studio',
@@ -165,18 +113,9 @@ return [
                 'regex' => 'La partita IVA deve essere composta da esattamente 11 cifre',
                 'unique' => 'Questa partita IVA è già registrata per un altro studio',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'specialization' => [
             'label' => 'Specializzazioni Mediche',
@@ -198,18 +137,9 @@ return [
                 'ortopedia' => 'Ortopedia',
                 'altro' => 'Altra Specializzazione',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'website' => [
             'label' => 'Sito Web Studio',
@@ -218,18 +148,9 @@ return [
             'validation' => [
                 'url' => 'Inserisci un URL valido che inizi con http:// o https://',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'staff_count' => [
             'label' => 'Numero Operatori',
@@ -241,18 +162,9 @@ return [
                 'min' => 'Lo studio deve avere almeno 1 operatore',
                 'max' => 'Il numero massimo consentito è 100 operatori',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'privacy_acceptance' => [
             'label' => 'Consenso Trattamento Dati',
@@ -261,18 +173,9 @@ return [
             'validation' => [
                 'accepted' => 'You must accept the privacy policy to continue',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'terms_acceptance' => [
             'label' => 'Accettazione Termini di Servizio',
@@ -281,18 +184,9 @@ return [
             'validation' => [
                 'accepted' => 'You must accept the terms and conditions to continue',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -380,14 +274,6 @@ return [
         'contact_info' => 'I dati di contatto inseriti verranno utilizzati per tutte le comunicazioni ufficiali',
         'data_protection' => 'Tutti i dati sono protetti secondo le normative europee GDPR',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

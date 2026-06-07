@@ -8,195 +8,91 @@ return [
             'label' => 'First Name',
             'placeholder' => 'Enter your first name',
             'tooltip' => 'Enter your first name',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'last_name' => [
             'label' => 'Last Name',
             'placeholder' => 'Enter your last name',
             'tooltip' => 'Enter your last name',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Enter your email',
             'tooltip' => 'Enter a valid email address',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'phone' => [
             'label' => 'Phone',
             'placeholder' => 'Enter your phone number',
             'tooltip' => 'Enter a valid phone number',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'address' => [
             'label' => 'Address',
             'placeholder' => 'Enter your address',
             'tooltip' => 'Enter your residential address',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'city' => [
             'label' => 'City',
             'placeholder' => 'Enter your city',
             'tooltip' => 'Enter your city of residence',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'postal_code' => [
             'label' => 'Postal Code',
             'placeholder' => 'Enter postal code',
             'tooltip' => 'Enter your postal code',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'province' => [
             'label' => 'Province',
             'placeholder' => 'Enter province',
             'tooltip' => 'Enter your province of residence',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'country' => [
             'label' => 'Country',
             'placeholder' => 'Enter country',
             'tooltip' => 'Enter your country of residence',
             'default' => 'Italy',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Enter your password',
             'tooltip' => 'Password must be at least 8 characters long',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'password_confirmation' => [
             'label' => 'Confirm Password',
             'placeholder' => 'Confirm your password',
             'tooltip' => 'Re-enter your password for confirmation',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'terms' => [
             'label' => 'I accept the terms and conditions',
             'tooltip' => 'You must accept the terms and conditions to proceed',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'newsletter' => [
             'label' => 'Subscribe to newsletter',
             'tooltip' => 'Receive updates and news via email',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'buttons' => [
@@ -228,10 +124,6 @@ return [
             'description' => 'Verify your information before completing registration',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -243,9 +135,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

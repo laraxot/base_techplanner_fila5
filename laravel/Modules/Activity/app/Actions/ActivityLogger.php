@@ -61,11 +61,7 @@ class ActivityLogger
             'event' => $type,
         ]);
 
-<<<<<<< HEAD
         Log::info('Activity logged', [
-=======
-        Log::debug('Activity logged', [
->>>>>>> dev
             'activity_id' => $activity->id,
             'type' => $type,
         ]);
@@ -148,16 +144,8 @@ class ActivityLogger
             throw new InvalidArgumentException('Limit must be positive');
         }
 
-<<<<<<< HEAD
         return Activity::with('subject')
             ->where('causer_id', $user->getKey())
-=======
-        $userKey = $user->getKey();
-        $userKeyAsInt = (int) $userKey;
-
-        return Activity::with('subject')
-            ->whereIn('causer_id', [$userKey, (string) $userKey, $userKeyAsInt])
->>>>>>> dev
             ->where('causer_type', $user::class)
             ->latest()
             ->limit($limit)
@@ -231,11 +219,7 @@ class ActivityLogger
 
         $deleted = is_int($deletedCount) ? $deletedCount : 0;
 
-<<<<<<< HEAD
         Log::info('Old activities cleaned', [
-=======
-        Log::debug('Old activities cleaned', [
->>>>>>> dev
             'deleted_count' => $deleted,
             'older_than_days' => $days,
         ]);

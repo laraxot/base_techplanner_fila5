@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 return [
     'login' => [
-<<<<<<< HEAD
         'username_or_email' => 'Ім\'я користувача або електронна пошта',
-=======
-        'username_or_email' => "Ім'я користувача або електронна пошта",
->>>>>>> 4b6b99016 (first commit)
         'forgot_password_link' => 'Забули пароль?',
         'create_an_account' => 'Створити акаунт',
     ],
@@ -111,7 +107,6 @@ return [
         'tooltip' => 'Скопійовано!',
     ],
     'fields' => [
-<<<<<<< HEAD
         'avatar' => [
             'label' => 'Аватар',
             'tooltip' => '',
@@ -216,24 +211,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
-        'avatar' => 'Аватар',
-        'email' => 'E-mail',
-        'login' => 'Логін',
-        'name' => 'Ім\'я',
-        'password' => 'Пароль',
-        'password_confirm' => 'Підтвердження пароля',
-        'new_password' => 'Новий пароль',
-        'new_password_confirmation' => 'Підтвердження пароля',
-        'token_name' => 'Назва токена',
-        'token_expiry' => 'Термін дії токена',
-        'abilities' => 'Доступ',
-        '2fa_code' => 'Код',
-        '2fa_recovery_code' => 'Код відновлення',
-        'created' => 'Створено',
-        'expires' => 'Закінчується',
-    ],
-    'or' => 'Або',
-    'cancel' => 'Скасувати',
->>>>>>> 4b6b99016 (first commit)
 ];

@@ -19,52 +19,27 @@ return [
             'placeholder' => 'name',
             'helper_text' => 'name',
             'description' => 'name',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'email' => [
             'label' => 'email',
             'placeholder' => 'email',
             'helper_text' => 'email',
             'description' => 'email',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'Current password' => [
             'label' => 'Current password',
             'placeholder' => 'Current password',
             'helper_text' => 'Current password',
             'description' => 'Current password',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'passwordConfirmation' => [
             'label' => 'passwordConfirmation',
             'placeholder' => 'passwordConfirmation',
             'helper_text' => 'passwordConfirmation',
             'description' => 'passwordConfirmation',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
         'current_password' => [
@@ -78,11 +53,6 @@ return [
             'placeholder' => 'password_confirmation',
             'helper_text' => 'password_confirmation',
             'description' => 'password_confirmation',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -97,10 +67,6 @@ return [
             'tooltip' => 'updatePasswordAction',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'name' => 'My Profile',
         'plural' => 'My Profile',
@@ -114,12 +80,4 @@ return [
     ],
     'label' => 'My Profile',
     'plural_label' => 'My Profile (Plurale)',
-<<<<<<< HEAD
-=======
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

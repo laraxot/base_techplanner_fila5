@@ -6,7 +6,6 @@ return [
     'fields' => [
         'new_password_confirmation' => [
             'label' => 'new_password_confirmation',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -23,8 +22,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
 ];

@@ -18,66 +18,30 @@ return [
         'resource_type' => [
             'label' => 'Tipo Risorsa',
             'help' => 'Tipo di risorsa attività',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'resource_id' => [
             'label' => 'ID Risorsa',
             'help' => 'Identificativo della risorsa',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'activity_count' => [
             'label' => 'Numero Attività',
             'help' => 'Numero di attività associate',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'last_activity' => [
             'label' => 'Ultima Attività',
             'help' => 'Data e ora dell\'ultima attività',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -94,14 +58,6 @@ return [
         'no_resources' => 'Nessuna risorsa trovata',
         'resource_exported' => 'Risorsa esportata con successo',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Activity Resource',
     'plural_label' => 'Activity Resource (Plurale)',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Activity Resource',
-    'plural_label' => 'Activity Resource (Plurale)',
->>>>>>> dev
 ];

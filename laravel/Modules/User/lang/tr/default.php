@@ -102,10 +102,6 @@ return [
         'tooltip' => 'Kopyalandı!',
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -210,27 +206,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
-        'avatar' => 'Avatar',
-        'email' => 'E-posta',
-        'login' => 'Giriş',
-        'name' => 'İsim',
-        'password' => 'Parola',
-        'password_confirm' => 'Parola doğrulama',
-        'new_password' => 'Yeni parola',
-        'new_password_confirmation' => 'Parola doğrulama',
-        'token_name' => 'Belirteç adı',
-        'token_expiry' => 'Belirteç sona erişi',
-        'abilities' => 'Yetenekler',
-        '2fa_code' => 'Kod',
-        '2fa_recovery_code' => 'Kurtarma Kodu',
-        'created' => 'Oluşturuldu',
-        'expires' => 'Sona eriyor',
-    ],
-    'or' => 'Veya',
-    'cancel' => 'Vazgeç',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

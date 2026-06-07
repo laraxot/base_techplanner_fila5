@@ -17,10 +17,6 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome Ruolo',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => 'Il nome identificativo del ruolo, es. \\"Admin\\".',
             'placeholder' => 'Nome del ruolo',
             'helper_text' => '',
@@ -32,86 +28,38 @@ return [
             'placeholder' => 'Nome della guardia',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-            'tooltip' => 'Il nome identificativo del ruolo, es. \"Admin\".',
-            'placeholder' => 'Nome del ruolo',
-        ],
-        'guard_name' => [
-            'label' => 'Guard',
-            'tooltip' => 'Il nome della guardia per questo ruolo, es. \"web\".',
-            'placeholder' => 'Nome della guardia',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'permissions' => [
             'label' => 'Permessi',
             'tooltip' => 'Seleziona i permessi associati a questo ruolo.',
             'placeholder' => 'Seleziona permessi',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'users_count' => [
             'label' => 'Numero Utenti',
             'tooltip' => 'Il numero di utenti assegnati a questo ruolo.',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'tooltip' => 'La data in cui il ruolo è stato creato.',
             'placeholder' => 'Data di creazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'tooltip' => 'La data dell\'ultima modifica del ruolo.',
             'placeholder' => 'Ultima modifica',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Una descrizione del ruolo e delle sue funzioni.',
             'placeholder' => 'Descrizione del ruolo',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -132,30 +80,12 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'team_id' => [
             'description' => 'team_id',
             'helper_text' => 'team_id',
             'placeholder' => 'team_id',
             'label' => 'team_id',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
         'detach' => [
@@ -187,36 +117,12 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'detach' => [
-            'label' => 'detach',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'attach' => [
-            'label' => 'attach',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'recordId' => [
             'description' => 'recordId',
             'helper_text' => 'recordId',
             'placeholder' => 'recordId',
             'label' => 'recordId',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
         'id' => [
@@ -224,14 +130,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'id' => [
-            'label' => 'id',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'roles' => [
@@ -295,14 +193,6 @@ return [
         'settings' => 'Impostazioni',
         'reports' => 'Report',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

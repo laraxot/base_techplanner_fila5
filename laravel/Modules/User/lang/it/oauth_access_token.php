@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'label' => 'Token Accesso OAuth',
         'plural_label' => 'Token Accesso OAuth',
         'group' => 'OAuth',
@@ -105,67 +101,11 @@ return [
             'tooltip' => 'Validità del token',
             'helper_text' => 'Indica se il token è valido',
             'description' => 'Stato di validità',
-<<<<<<< HEAD
-=======
-        'label' => 'Token di accesso OAuth',
-        'group' => '',
-        'icon' => 'heroicon-o-key',
-        'sort' => 33,
-    ],
-    'label' => 'Token di accesso OAuth',
-    'plural_label' => 'Token di accesso OAuth',
-    'fields' => [
-        'id' => [
-            'label' => 'ID',
-        ],
-        'user_id' => [
-            'label' => 'Utente',
-        ],
-        'client_id' => [
-            'label' => 'Client',
-        ],
-        'name' => [
-            'label' => 'Nome',
-        ],
-        'scopes' => [
-            'label' => 'Ambiti',
-        ],
-        'revoked' => [
-            'label' => 'Revocato',
-        ],
-        'expires_at' => [
-            'label' => 'Scade il',
-        ],
-        'user' => [
-            'name' => [
-                'label' => 'user.name',
-            ],
-        ],
-        'client' => [
-            'name' => [
-                'label' => 'client.name',
-            ],
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-        'expired' => [
-            'label' => 'expired',
-        ],
-        'valid' => [
-            'label' => 'valid',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
         'revoke' => [
             'label' => 'Revoca',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => 'Revoca il token',
             'helper_text' => 'Revoca questo token',
             'description' => 'Azione per revocare il token',
@@ -210,73 +150,4 @@ return [
         'revoked' => 'Token revocato con successo',
         'deleted' => 'Token eliminato con successo',
     ],
-<<<<<<< HEAD
-=======
-        ],
-        'refresh' => [
-            'label' => 'Aggiorna',
-        ],
-        'revoke_all_for_user' => [
-            'label' => 'Revoca tutti per utente',
-            'success' => ':count token revocati con successo.',
-        ],
-        'logout' => [
-            'tooltip' => 'logout',
-            'icon' => 'logout',
-            'label' => 'logout',
-        ],
-        'delete' => [
-            'label' => 'delete',
-            'icon' => 'delete',
-            'tooltip' => 'delete',
-        ],
-        'create' => [
-            'label' => 'create',
-            'icon' => 'create',
-            'tooltip' => 'create',
-        ],
-        'layout' => [
-            'label' => 'layout',
-            'icon' => 'layout',
-            'tooltip' => 'layout',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-            'icon' => 'applyFilters',
-            'tooltip' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-            'icon' => 'openFilters',
-            'tooltip' => 'openFilters',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-            'icon' => 'resetFilters',
-            'tooltip' => 'resetFilters',
-        ],
-        'applyTableColumnManager' => [
-            'label' => 'applyTableColumnManager',
-            'icon' => 'applyTableColumnManager',
-            'tooltip' => 'applyTableColumnManager',
-        ],
-        'openColumnManager' => [
-            'label' => 'openColumnManager',
-            'icon' => 'openColumnManager',
-            'tooltip' => 'openColumnManager',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-            'icon' => 'reorderRecords',
-            'tooltip' => 'reorderRecords',
-        ],
-        'profile' => [
-            'label' => 'profile',
-            'icon' => 'profile',
-            'tooltip' => 'profile',
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

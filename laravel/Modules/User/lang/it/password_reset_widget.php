@@ -3,10 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Reset Password',
         'plural_label' => 'Reset Password',
@@ -37,21 +33,4 @@ return [
         'success' => 'Link di reset inviato con successo',
         'error' => 'Si è verificato un errore',
     ],
-<<<<<<< HEAD
-=======
-    'fields' => [
-        'email' => [
-            'label' => 'email',
-            'placeholder' => 'email',
-            'helper_text' => '',
-            'description' => 'email',
-        ],
-    ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

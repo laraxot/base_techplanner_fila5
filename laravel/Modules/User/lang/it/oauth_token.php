@@ -65,10 +65,6 @@ return [
             'name' => [
                 'label' => 'client.name',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -118,29 +114,4 @@ return [
     ],
     'label' => 'Oauth Token',
     'plural_label' => 'Oauth Token (Plurale)',
-<<<<<<< HEAD
-=======
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'scopes' => [
-            'label' => 'scopes',
-        ],
-        'revoked' => [
-            'label' => 'revoked',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-        'expires_at' => [
-            'label' => 'expires_at',
-        ],
-    ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -6,7 +6,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'id',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -35,14 +34,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'team_id' => [
-            'label' => 'team_id',
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
 ];

@@ -17,84 +17,41 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
             'description' => 'name',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci l\'email',
             'description' => 'email',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Inserisci la password',
             'description' => 'password',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
             'placeholder' => 'Conferma la password',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'current_password' => [
             'label' => 'Password Attuale',
             'placeholder' => 'Inserisci la password attuale',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -116,20 +73,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'role' => [
-            'label' => 'Ruolo',
-        ],
-        'roles' => [
-            'label' => 'Ruoli',
-        ],
-        'permissions' => [
-            'label' => 'Permessi',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'status' => [
             'label' => 'Stato',
@@ -138,10 +81,6 @@ return [
                 'inactive' => 'Inattivo',
                 'blocked' => 'Bloccato',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -283,80 +222,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'last_login' => [
-            'label' => 'Ultimo Accesso',
-        ],
-        'created_at' => [
-            'label' => 'Data Creazione',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-        ],
-        'avatar' => [
-            'label' => 'Avatar',
-        ],
-        'language' => [
-            'label' => 'Lingua',
-        ],
-        'timezone' => [
-            'label' => 'Fuso Orario',
-        ],
-        'password_expires_at' => [
-            'label' => 'Scadenza Password',
-        ],
-        'verified' => [
-            'label' => 'Verificato',
-        ],
-        'unverified' => [
-            'label' => 'Non Verificato',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'isActive' => [
-            'label' => 'isActive',
-        ],
-        'deactivate' => [
-            'label' => 'deactivate',
-        ],
-        'delete' => [
-            'label' => 'delete',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'email_verified_at' => [
-            'label' => 'Email Verificata il',
-        ],
-        'detach' => [
-            'label' => 'detach',
-        ],
-        'attach' => [
-            'label' => 'attach',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -379,13 +244,6 @@ return [
         'reset_link_sent' => 'Link per il reset della password inviato',
         'email_verified' => 'Email verificata con successo',
         'impersonating' => 'Stai impersonando l\'utente :name',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        // Added for LoginWidget
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         'credentials_incorrect' => 'Die angegebenen Anmeldedaten sind nicht korrekt',
         'login_success' => 'Anmeldung erfolgreich',
         'validation_error' => 'Validierungsfehler',
@@ -408,14 +266,6 @@ return [
     'model' => [
         'label' => 'Utente',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

@@ -36,24 +36,13 @@ return [
             'placeholder' => '输入姓名',
             'description' => '姓名',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'email' => [
             'label' => '邮箱',
             'placeholder' => '输入邮箱',
             'description' => '邮箱',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
         'created_at' => [
@@ -85,46 +74,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'created_at' => [
-            'label' => '创建日期',
-        ],
-        'updated_at' => [
-            'label' => '最后修改',
-        ],
-        'role' => [
-            'label' => '角色',
-        ],
-        'active' => '活跃',
-        'id' => [
-            'label' => 'ID',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'password' => [
             'label' => '密码',
             'placeholder' => '输入密码',
             'description' => '密码',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'password_confirmation' => [
             'label' => '确认密码',
             'placeholder' => '确认密码',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -134,22 +94,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'email_verified_at' => [
-            'label' => '邮箱验证时间',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'current_password' => [
             'label' => '当前密码',
             'placeholder' => '输入当前密码',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -165,17 +113,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'roles' => [
-            'label' => '角色',
-        ],
-        'permissions' => [
-            'label' => '权限',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'status' => [
             'label' => '状态',
@@ -184,10 +121,6 @@ return [
                 'inactive' => '不活跃',
                 'blocked' => '已封禁',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -317,74 +250,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'last_login' => [
-            'label' => '最后登录',
-        ],
-        'avatar' => [
-            'label' => '头像',
-        ],
-        'language' => [
-            'label' => '语言',
-        ],
-        'timezone' => [
-            'label' => '时区',
-        ],
-        'password_expires_at' => [
-            'label' => '密码过期时间',
-        ],
-        'verified' => [
-            'label' => '已验证',
-        ],
-        'unverified' => [
-            'label' => '未验证',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'isActive' => [
-            'label' => 'isActive',
-        ],
-        'deactivate' => [
-            'label' => 'deactivate',
-        ],
-        'delete' => [
-            'label' => 'delete',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'detach' => [
-            'label' => 'detach',
-        ],
-        'attach' => [
-            'label' => 'attach',
-        ],
-        'changePassword' => [
-            'label' => 'changePassword',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'filters' => [
@@ -498,14 +363,6 @@ return [
     'model' => [
         'label' => '用户',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

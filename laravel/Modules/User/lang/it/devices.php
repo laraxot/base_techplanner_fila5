@@ -6,10 +6,6 @@ return [
     'fields' => [
         'login_at' => [
             'label' => 'login_at',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -45,18 +41,4 @@ return [
             'label' => 'Elimina Devices',
         ],
     ],
-<<<<<<< HEAD
-=======
-        ],
-        'logout_at' => [
-            'label' => 'logout_at',
-        ],
-    ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -10,26 +10,13 @@ return [
         'current_password' => [
             'label' => 'Current Password',
             'validation_attribute' => 'current_password',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'password' => [
             'label' => 'Password',
             'validation_attribute' => 'password',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -39,14 +26,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'password_confirmation' => [
-            'label' => 'Confirm Password',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'form' => [
@@ -92,10 +71,6 @@ return [
     'exceptions' => [
         'column_not_found' => 'Either the column ":column_name" or the password column ":password_column_name" was not found in the ":table_name" table. Please publish migrations and run them, if the error still persists, publish the config file and update the table_name, column_name, and password_column_name values.',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'name' => 'Password Expired',
         'plural' => 'Password Expired',
@@ -109,12 +84,4 @@ return [
     ],
     'label' => 'Password Expired',
     'plural_label' => 'Password Expired (Plurale)',
-<<<<<<< HEAD
-=======
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

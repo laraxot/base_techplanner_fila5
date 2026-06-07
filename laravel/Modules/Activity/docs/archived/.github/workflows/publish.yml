@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 name: Publish
 
 on:
@@ -49,12 +48,3 @@ jobs:
           branch: gh-pages
           folder: build_production
           clean: true
-=======
----
-module: theme
-topic: publish
-canonical: ../../../../../../Themes/docs/shared-components/publish-Modules.yml
----
-
-See canonical documentation: ../../../../../../Themes/docs/shared-components/publish-Modules.yml
->>>>>>> dev

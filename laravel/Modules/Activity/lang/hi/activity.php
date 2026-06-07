@@ -37,18 +37,9 @@ return [
                 'help' => 'सिस्टम में उपयोगकर्ता की भूमिका',
                 'validation' => 'required|string',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'action' => [
             'label' => 'क्रिया',
@@ -97,18 +88,9 @@ return [
                     'color' => 'gray',
                 ],
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'subject' => [
             'label' => 'विषय',
@@ -132,72 +114,36 @@ return [
                 'help' => 'ऑब्जेक्ट का वर्णनात्मक नाम',
                 'validation' => 'nullable|string|max:255',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'description' => [
             'label' => 'विवरण',
             'placeholder' => 'एक विवरण दर्ज करें',
             'help' => 'गतिविधि का विस्तृत विवरण',
             'validation' => 'nullable|string|max:1000',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'ip_address' => [
             'label' => 'IP पता',
             'placeholder' => 'उदा. 192.168.1.1',
             'help' => 'IP पता जहां से क्रिया की गई थी',
             'validation' => 'nullable|ip',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'user_agent' => [
             'label' => 'उपयोगकर्ता एजेंट',
             'placeholder' => 'ब्राउज़र और ऑपरेटिंग सिस्टम',
             'help' => 'उपयोगकर्ता के ब्राउज़र और सिस्टम के बारे में जानकारी',
             'validation' => 'nullable|string|max:500',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'created_at' => [
             'label' => 'तिथि',
@@ -205,18 +151,9 @@ return [
             'help' => 'तिथि और समय जब गतिविधि बनाई गई थी',
             'validation' => 'required|date',
             'format' => 'd/m/Y H:i:s',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'properties' => [
             'label' => 'गुण',
@@ -232,42 +169,20 @@ return [
                 'placeholder' => 'वर्तमान मान',
                 'help' => 'परिवर्तन के बाद का मान',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'toggleColumns' => [
             'label' => 'कॉलम दिखाएं/छिपाएं',
             'help' => 'कॉलम दृश्यता कॉन्फ़िगर करें',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'reorderRecords' => [
             'label' => 'रिकॉर्ड पुन: क्रमित करें',
             'help' => 'तालिका में रिकॉर्ड पुन: क्रमित करें',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -283,17 +198,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'resetFilters' => [
-            'label' => 'फ़िल्टर रीसेट करें',
-        ],
-        'applyFilters' => [
-            'label' => 'फ़िल्टर लागू करें',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'filters' => [
@@ -447,45 +351,19 @@ return [
     'pagination' => [
         'per_page' => '25',
         'options' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             0 => '10',
             1 => '25',
             2 => '50',
             3 => '100',
-<<<<<<< HEAD
-=======
-            '0' => '10',
-            '1' => '25',
-            '2' => '50',
-            '3' => '100',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'cache' => [
         'ttl' => '300',
         'tags' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             0 => 'activities',
             1 => 'monitoring',
         ],
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
-            '0' => 'activities',
-            '1' => 'monitoring',
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

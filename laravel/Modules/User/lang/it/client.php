@@ -17,27 +17,14 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'user' => [
             'email' => [
                 'label' => 'Proprietario',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -96,48 +83,12 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'create' => [
-            'label' => 'Crea',
-        ],
-        'edit' => [
-            'label' => 'Modifica',
-        ],
-        'delete' => [
-            'label' => 'Elimina',
-        ],
-        'toggleColumns' => [
-            'label' => 'Gestisci Colonne',
-        ],
-        'reorderRecords' => [
-            'label' => 'Riordina Record',
-        ],
-        'resetFilters' => [
-            'label' => 'Reimposta Filtri',
-        ],
-        'applyFilters' => [
-            'label' => 'Applica Filtri',
-        ],
-        'openFilters' => [
-            'label' => 'Apri Filtri',
-        ],
-        'recordId' => [
-            'label' => 'ID Record',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'client_id' => [
             'description' => 'client_id',
             'helper_text' => 'client_id',
             'placeholder' => 'client_id',
             'label' => 'client_id',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
         'secret' => [
@@ -151,17 +102,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'secret' => [
-            'label' => 'secret',
-        ],
-        'id' => [
-            'label' => 'id',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'plural' => [
@@ -266,16 +206,6 @@ return [
             'heading' => 'empty',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Client',
     'plural_label' => 'Client (Plurale)',
-=======
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Client',
-    'plural_label' => 'Client (Plurale)',
->>>>>>> dev
 ];

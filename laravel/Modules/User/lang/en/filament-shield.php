@@ -12,15 +12,7 @@ return [
     'field.guard_name' => 'Guard Name',
     'field.permissions' => 'Permissions',
     'field.select_all.name' => 'Select All',
-<<<<<<< HEAD
-<<<<<<< HEAD
     'field.select_all.message' => 'Enable all Permissions currently <span class=\\"text-primary font-medium\\">Enabled</span> for this role',
-=======
-    'field.select_all.message' => 'Enable all Permissions currently <span class=\"text-primary font-medium\">Enabled</span> for this role',
->>>>>>> 4b6b99016 (first commit)
-=======
-    'field.select_all.message' => 'Enable all Permissions currently <span class=\\"text-primary font-medium\\">Enabled</span> for this role',
->>>>>>> dev
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Roles',
     'nav.role.icon' => 'heroicon-o-shield-check',
@@ -46,10 +38,6 @@ return [
         'restore_any' => 'Restore Any',
         'replicate' => 'Replicate',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -63,9 +51,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

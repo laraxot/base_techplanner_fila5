@@ -3,10 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Conferma Reset Password',
         'plural_label' => 'Conferma Reset Password',
@@ -51,33 +47,4 @@ return [
         'success' => 'Password reimpostata con successo',
         'error' => 'Si è verificato un errore',
     ],
-<<<<<<< HEAD
-=======
-    'fields' => [
-        'email' => [
-            'label' => 'email',
-            'placeholder' => 'email',
-            'helper_text' => '',
-            'description' => 'email',
-        ],
-        'password' => [
-            'label' => 'password',
-            'placeholder' => 'password',
-            'helper_text' => '',
-            'description' => 'password',
-        ],
-        'password_confirmation' => [
-            'label' => 'password_confirmation',
-            'placeholder' => 'password_confirmation',
-            'helper_text' => '',
-            'description' => 'password_confirmation',
-        ],
-    ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

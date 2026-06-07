@@ -102,7 +102,6 @@ return [
         'tooltip' => 'Disalin!',
     ],
     'fields' => [
-<<<<<<< HEAD
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -207,24 +206,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
-        'avatar' => 'Avatar',
-        'email' => 'Email',
-        'login' => 'Login',
-        'name' => 'Nama',
-        'password' => 'Kata Sandi',
-        'password_confirm' => 'Konfirmasi kata sandi',
-        'new_password' => 'Kata sandi baru',
-        'new_password_confirmation' => 'Konfirmasi kata sandi baru',
-        'token_name' => 'Nama token',
-        'token_expiry' => 'Kedaluwarsa token',
-        'abilities' => 'Hak akses',
-        '2fa_code' => 'Kode',
-        '2fa_recovery_code' => 'Kode Pemulihan',
-        'created' => 'Dibuat',
-        'expires' => 'Kedaluwarsa',
-    ],
-    'or' => 'Atau',
-    'cancel' => 'Batal',
->>>>>>> 4b6b99016 (first commit)
 ];

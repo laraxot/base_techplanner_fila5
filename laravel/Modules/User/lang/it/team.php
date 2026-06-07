@@ -15,10 +15,6 @@ return [
         'icon' => 'ui-user-team',
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -114,64 +110,12 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'detach' => [
-            'label' => 'detach',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'attach' => [
-            'label' => 'attach',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'updated_at' => [
-            'label' => 'updated_at',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-        'users_count' => [
-            'label' => 'users_count',
-        ],
-        'name' => [
-            'label' => 'name',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'recordId' => [
             'label' => 'recordId',
             'description' => 'recordId',
             'helper_text' => 'recordId',
             'placeholder' => 'recordId',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
         'personal_team' => [
@@ -179,37 +123,18 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'personal_team' => [
-            'label' => 'personal_team',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'role' => [
             'label' => 'role',
             'description' => 'role',
             'helper_text' => 'role',
             'placeholder' => 'role',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'description' => [
             'description' => 'description',
             'helper_text' => 'description',
             'placeholder' => 'description',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
         ],
@@ -224,17 +149,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'delete' => [
-            'label' => 'delete',
-        ],
-        'layout' => [
-            'label' => 'layout',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -333,13 +247,5 @@ return [
         'label' => 'team.model',
     ],
     'label' => 'team',
-<<<<<<< HEAD
-<<<<<<< HEAD
     'plural_label' => 'Team (Plurale)',
-=======
-    'plural_label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-    'plural_label' => 'Team (Plurale)',
->>>>>>> dev
 ];

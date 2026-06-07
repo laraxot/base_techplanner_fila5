@@ -13,7 +13,6 @@ use Modules\User\Models\User;
  * OauthAccessToken Factory.
  *
  * Factory for creating OauthAccessToken model instances for testing and seeding.
-<<<<<<< HEAD
  *
  * @extends Factory<OauthAccessToken>
  */
@@ -24,11 +23,6 @@ class OauthAccessTokenFactory extends Factory
      *
      * @var class-string<OauthAccessToken>
      */
-=======
- */
-class OauthAccessTokenFactory extends Factory
-{
->>>>>>> dev
     protected $model = OauthAccessToken::class;
 
     /**
@@ -43,7 +37,6 @@ class OauthAccessTokenFactory extends Factory
             'user_id' => User::factory(),
             'client_id' => OauthClient::factory(),
             'name' => $this->faker->optional()->words(2, true),
-<<<<<<< HEAD
             'scopes' => $this->faker->optional()->randomElements(
                 [
                     'read',
@@ -54,13 +47,6 @@ class OauthAccessTokenFactory extends Factory
                 $this->faker->numberBetween(1, 3),
             ),
             'revoked' => $this->faker->boolean(10), // 10% revoked
-=======
-            'scopes' => $this->faker->randomElements(
-                ['read', 'write', 'admin', 'user'],
-                $this->faker->numberBetween(1, 3),
-            ),
-            'revoked' => $this->faker->boolean(10),
->>>>>>> dev
             'expires_at' => $this->faker->dateTimeBetween('now', '+1 year'),
         ];
     }
@@ -70,11 +56,7 @@ class OauthAccessTokenFactory extends Factory
      */
     public function revoked(): static
     {
-<<<<<<< HEAD
         return $this->state(fn (array $_attributes): array => [
-=======
-        return $this->state(fn (): array => [
->>>>>>> dev
             'revoked' => true,
         ]);
     }
@@ -84,11 +66,7 @@ class OauthAccessTokenFactory extends Factory
      */
     public function active(): static
     {
-<<<<<<< HEAD
         return $this->state(fn (array $_attributes): array => [
-=======
-        return $this->state(fn (): array => [
->>>>>>> dev
             'revoked' => false,
             'expires_at' => $this->faker->dateTimeBetween('+1 day', '+1 year'),
         ]);
@@ -99,11 +77,7 @@ class OauthAccessTokenFactory extends Factory
      */
     public function forUser(User $user): static
     {
-<<<<<<< HEAD
         return $this->state(fn (array $_attributes): array => [
-=======
-        return $this->state(fn (): array => [
->>>>>>> dev
             'user_id' => $user->id,
         ]);
     }
@@ -113,11 +87,7 @@ class OauthAccessTokenFactory extends Factory
      */
     public function forClient(OauthClient $client): static
     {
-<<<<<<< HEAD
         return $this->state(fn (array $_attributes): array => [
-=======
-        return $this->state(fn (): array => [
->>>>>>> dev
             'client_id' => $client->id,
         ]);
     }
@@ -129,11 +99,7 @@ class OauthAccessTokenFactory extends Factory
      */
     public function withScopes(array $scopes): static
     {
-<<<<<<< HEAD
         return $this->state(fn (array $_attributes): array => [
-=======
-        return $this->state(fn (): array => [
->>>>>>> dev
             'scopes' => $scopes,
         ]);
     }

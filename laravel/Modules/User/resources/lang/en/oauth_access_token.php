@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -57,29 +53,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'user_id' => [
-            'label' => 'User',
-        ],
-        'client_id' => [
-            'label' => 'Client',
-        ],
-        'name' => [
-            'label' => 'Name',
-        ],
-        'scopes' => [
-            'label' => 'Scopes',
-        ],
-        'revoked' => [
-            'label' => 'Revoked',
-        ],
-        'expires_at' => [
-            'label' => 'Expires At',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [

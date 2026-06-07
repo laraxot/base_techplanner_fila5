@@ -11,10 +11,6 @@ use Illuminate\Support\Collection;
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Spatie\Activitylog\Models\Activity as SpatieActivity;
-<<<<<<< HEAD
-=======
-use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
->>>>>>> dev
 
 /**
  * Class Activity.
@@ -25,11 +21,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property string|null $log_name
  * @property string $description
  * @property string|null $subject_type
-<<<<<<< HEAD
  * @property int|null $subject_id
-=======
- * @property string|null $subject_id
->>>>>>> dev
  * @property string|null $causer_type
  * @property string|null $causer_id
  * @property array<string, mixed>|Collection<array-key, mixed>|null $properties
@@ -115,28 +107,8 @@ class Activity extends SpatieActivity
 {
     use HasXotFactory;
 
-<<<<<<< HEAD
     protected $connection = 'activity';
 
-=======
-    /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
-    protected $connection = 'activity';
-
-    protected $table = 'activity_log';
-
-    /**
-     * @param  array<string, mixed>  $attributes
-     */
-    public function __construct(array $attributes = [])
-    {
-        parent::__construct($attributes);
-        if (app()->environment('testing')) {
-            $default = config('database.default');
-            $this->connection = is_string($default) ? $default : 'mysql';
-        }
-    }
-
->>>>>>> dev
     /** @var list<string> */
     protected $fillable = [
         'id',
@@ -145,31 +117,11 @@ class Activity extends SpatieActivity
         'subject_type',
         'event',
         'subject_id',
-<<<<<<< HEAD
         'causer_type', // Added
         'causer_id',   // Added
         'properties', // Added
     ];
 
-=======
-        'causer_type',
-        'causer_id',
-        'properties',
-    ];
-
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    protected function casts(): array
-    {
-        return [
-            'properties' => SchemalessAttributes::class,
-        ];
-    }
-
->>>>>>> dev
     // NOTE
     // ----
     // We intentionally do not override static query helper methods here

@@ -26,28 +26,14 @@ return [
             'helper_text' => 'endDate3',
             'placeholder' => 'endDate',
             'label' => 'endDate',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'startDate' => [
             'description' => 'startDate',
             'helper_text' => 'startDate1',
             'placeholder' => 'startDate',
             'label' => 'startDate1',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
     ],
     'sections' => [
@@ -56,10 +42,6 @@ return [
             'label' => 'empty',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'name' => 'View User',
         'plural' => 'View User',
@@ -73,12 +55,4 @@ return [
     ],
     'label' => 'View User',
     'plural_label' => 'View User (Plurale)',
-<<<<<<< HEAD
-=======
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

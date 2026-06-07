@@ -2,29 +2,10 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 use Modules\Activity\Models\Activity;
 use Modules\User\Models\User;
 
 uses(\Modules\Activity\Tests\TestCase::class);
-=======
-namespace Modules\Activity\Tests\Feature;
-
-use Modules\Activity\Models\Activity;
-use Modules\Activity\Tests\TestCase;
-use Modules\User\Models\User;
-
-uses(TestCase::class);
-
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        \DB::connection()->getPdo();
-    } catch (\Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
->>>>>>> dev
 
 test('user can create activity', function () {
     $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject

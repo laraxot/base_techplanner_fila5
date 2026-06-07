@@ -9,38 +9,20 @@ return [
             'description' => 'email',
             'helper_text' => '',
             'placeholder' => 'email',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'password' => [
             'label' => 'password',
             'description' => 'password',
             'helper_text' => '',
             'placeholder' => 'password',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'remember' => [
             'label' => 'remember',
             'description' => 'remember',
             'helper_text' => '',
             'placeholder' => 'remember',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -65,11 +47,7 @@ return [
     'subtitle_start' => 'Oder',
     'subtitle_link' => 'neues Konto erstellen',
     'page' => [
-<<<<<<< HEAD
         'title' => 'Willkommen bei LaravelPizza! 🍕',
-=======
-        'title' => 'Willkommen bei <nome progetto>! 🍕',
->>>>>>> dev
         'subtitle' => 'Treten Sie der Community von Entwicklern und Pizza-Liebhabern bei',
     ],
     'already_registered' => 'Noch kein Konto?',
@@ -87,11 +65,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -102,7 +102,6 @@ return [
         'tooltip' => 'Zkopírováno!',
     ],
     'fields' => [
-<<<<<<< HEAD
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -207,24 +206,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
-        'avatar' => 'Avatar',
-        'email' => 'Email',
-        'login' => 'Přihlášení',
-        'name' => 'Jméno',
-        'password' => 'Heslo',
-        'password_confirm' => 'Potvrzení hesla',
-        'new_password' => 'Nové heslo',
-        'new_password_confirmation' => 'Potvrďte heslo',
-        'token_name' => 'Název tokenu',
-        'token_expiry' => 'Platnost tokenu',
-        'abilities' => 'Vlastnosti',
-        '2fa_code' => 'Kód',
-        '2fa_recovery_code' => 'Záložní kód',
-        'created' => 'Vytvořeno',
-        'expires' => 'Expirace',
-    ],
-    'or' => 'nebo',
-    'cancel' => 'Zrušit',
->>>>>>> 4b6b99016 (first commit)
 ];

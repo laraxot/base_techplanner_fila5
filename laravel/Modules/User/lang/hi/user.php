@@ -36,24 +36,13 @@ return [
             'placeholder' => 'नाम दर्ज करें',
             'description' => 'नाम',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'email' => [
             'label' => 'ईमेल',
             'placeholder' => 'ईमेल दर्ज करें',
             'description' => 'ईमेल',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
         'created_at' => [
@@ -85,46 +74,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'created_at' => [
-            'label' => 'निर्माण तिथि',
-        ],
-        'updated_at' => [
-            'label' => 'अंतिम संशोधन',
-        ],
-        'role' => [
-            'label' => 'भूमिका',
-        ],
-        'active' => 'सक्रिय',
-        'id' => [
-            'label' => 'आईडी',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'password' => [
             'label' => 'पासवर्ड',
             'placeholder' => 'पासवर्ड दर्ज करें',
             'description' => 'पासवर्ड',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'password_confirmation' => [
             'label' => 'पासवर्ड की पुष्टि करें',
             'placeholder' => 'पासवर्ड की पुष्टि करें',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -134,22 +94,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'email_verified_at' => [
-            'label' => 'ईमेल सत्यापित तिथि',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'current_password' => [
             'label' => 'वर्तमान पासवर्ड',
             'placeholder' => 'वर्तमान पासवर्ड दर्ज करें',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -165,17 +113,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'roles' => [
-            'label' => 'भूमिकाएं',
-        ],
-        'permissions' => [
-            'label' => 'अनुमतियां',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'status' => [
             'label' => 'स्थिति',
@@ -184,10 +121,6 @@ return [
                 'inactive' => 'निष्क्रिय',
                 'blocked' => 'ब्लॉक किया गया',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -317,74 +250,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'last_login' => [
-            'label' => 'अंतिम लॉगिन',
-        ],
-        'avatar' => [
-            'label' => 'अवतार',
-        ],
-        'language' => [
-            'label' => 'भाषा',
-        ],
-        'timezone' => [
-            'label' => 'समय क्षेत्र',
-        ],
-        'password_expires_at' => [
-            'label' => 'पासवर्ड समाप्ति',
-        ],
-        'verified' => [
-            'label' => 'सत्यापित',
-        ],
-        'unverified' => [
-            'label' => 'असत्यापित',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'isActive' => [
-            'label' => 'isActive',
-        ],
-        'deactivate' => [
-            'label' => 'deactivate',
-        ],
-        'delete' => [
-            'label' => 'delete',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'detach' => [
-            'label' => 'detach',
-        ],
-        'attach' => [
-            'label' => 'attach',
-        ],
-        'changePassword' => [
-            'label' => 'changePassword',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'filters' => [
@@ -498,14 +363,6 @@ return [
     'model' => [
         'label' => 'उपयोगकर्ता',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

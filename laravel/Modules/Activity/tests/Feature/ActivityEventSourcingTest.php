@@ -2,37 +2,14 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 use Illuminate\Support\Collection;
-=======
-namespace Modules\Activity\Tests\Feature;
-
-use Illuminate\Database\Eloquent\Collection;
->>>>>>> dev
 use Illuminate\Support\Str;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
-<<<<<<< HEAD
 use Modules\User\Models\User;
 
 uses(\Modules\Activity\Tests\TestCase::class);
-=======
-use Modules\Activity\Tests\TestCase;
-use Modules\User\Models\User;
-use Spatie\SchemalessAttributes\SchemalessAttributes;
-
-uses(TestCase::class);
-
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        \DB::connection()->getPdo();
-    } catch (\Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
->>>>>>> dev
 
 test('activity event sourcing lifecycle works correctly', function () {
     $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject // @phpstan-ignore-line method.nonObject
@@ -63,15 +40,9 @@ test('activity event sourcing lifecycle works correctly', function () {
     $this->assertSame('created', $activity->event);
 
     $properties = $activity->properties;
-<<<<<<< HEAD
     $this->assertInstanceOf(Collection::class, $properties);
     $this->assertSame('test', $properties->get('action'));
     $this->assertSame('success', $properties->get('result'));
-=======
-    $this->assertInstanceOf(SchemalessAttributes::class, $properties);
-    $this->assertSame('test', $properties->action);
-    $this->assertSame('success', $properties->result);
->>>>>>> dev
 });
 
 test('activity can be queried with complex scopes', function () {
@@ -115,10 +86,7 @@ test('activity can be queried with complex scopes', function () {
 
     $user1Activities = Activity::query()
         ->where('causer_type', User::class)
-<<<<<<< HEAD
         ->where('causer_id', $user1->id)
-=======
->>>>>>> dev
         ->whereKey([$activity1->id, $activity3->id])
         ->get();
 
@@ -129,18 +97,6 @@ test('activity can be queried with complex scopes', function () {
     $this->assertCount(2, $securityActivities);
     $this->assertCount(2, $user1Activities);
 
-<<<<<<< HEAD
-=======
-    // causer_id può essere uuid/string o int a seconda dello schema (vedi migration fix_causer_id_to_uuid)
-    // quindi validiamo solo quando comparabile.
-    foreach ($user1Activities as $activity) {
-        \assert($activity instanceof Activity);
-        if ($activity->causer_id === (string) $user1->id || $activity->causer_id === $user1->id) {
-            $this->assertContains($activity->causer_id, [(string) $user1->id, $user1->id]);
-        }
-    }
-
->>>>>>> dev
     /** @var Activity|null $firstLoginActivity */
     $firstLoginActivity = $loginActivities->first();
     $this->assertCount(1, $loginActivities);
@@ -225,11 +181,7 @@ test('stored event creation and event reconstruction works', function () {
     $this->assertSame('test_action', $eventProps['action']);
 
     $metaData = $storedEvent->meta_data;
-<<<<<<< HEAD
     $this->assertInstanceOf(\Spatie\SchemalessAttributes\SchemalessAttributes::class, $metaData);
-=======
-    $this->assertInstanceOf(SchemalessAttributes::class, $metaData);
->>>>>>> dev
 
     $metaDataArray = $metaData->toArray();
     $this->assertIsArray($metaDataArray);
@@ -246,11 +198,7 @@ test('activity batch operations work correctly', function () {
         'batch_uuid' => $batchUuid,
         'log_name' => 'batch_operation',
     ]);
-<<<<<<< HEAD
     \assert($activities instanceof \Illuminate\Database\Eloquent\Collection);
-=======
-    \assert($activities instanceof Collection);
->>>>>>> dev
     $this->assertCount(3, $activities);
 
     $batchActivities = Activity::forBatch($batchUuid)->get();
@@ -265,23 +213,13 @@ test('activity batch operations work correctly', function () {
 });
 
 test('activity with batch scope returns correct results', function () {
-<<<<<<< HEAD
     $withBatch = Activity::factory()->create(['batch_uuid' => Str::uuid()->toString()]); // @phpstan-ignore-line method.nonObject
-=======
-    $batchUuid = Str::uuid()->toString();
-    $withBatch = Activity::factory()->create(['batch_uuid' => $batchUuid]); // @phpstan-ignore-line method.nonObject
->>>>>>> dev
     \assert($withBatch instanceof Activity);
     $this->assertNotNull($withBatch);
 
     Activity::factory()->create(['batch_uuid' => null]); // @phpstan-ignore-line method.nonObject
 
-<<<<<<< HEAD
     $activitiesWithBatch = Activity::hasBatch()->get();
-=======
-    // Scope to our test data: hasBatch filters non-null batch_uuid
-    $activitiesWithBatch = Activity::hasBatch()->whereKey($withBatch->id)->get();
->>>>>>> dev
 
     $firstActivity = $activitiesWithBatch->first();
     $this->assertCount(1, $activitiesWithBatch);
@@ -331,7 +269,6 @@ test('activity properties support complex nested structures', function () {
     $this->assertNotNull($freshActivity);
 
     $properties = $freshActivity->properties;
-<<<<<<< HEAD
     $this->assertInstanceOf(Collection::class, $properties);
     $this->assertTrue($properties->has('user'));
     $this->assertTrue($properties->has('action'));
@@ -341,17 +278,6 @@ test('activity properties support complex nested structures', function () {
     $userData = $properties->get('user');
     $contextData = $properties->get('context');
     $timestampsData = $properties->get('timestamps');
-=======
-    $this->assertInstanceOf(SchemalessAttributes::class, $properties);
-    $this->assertTrue(isset($properties->user));
-    $this->assertTrue(isset($properties->action));
-    $this->assertTrue(isset($properties->context));
-    $this->assertTrue(isset($properties->timestamps));
-
-    $userData = $properties->user;
-    $contextData = $properties->context;
-    $timestampsData = $properties->timestamps;
->>>>>>> dev
 
     $this->assertIsArray($userData);
     $this->assertArrayHasKey('id', $userData);
@@ -458,11 +384,7 @@ test('stored event handles complex event properties with nested arrays', functio
     ];
 
     $storedEvent = StoredEvent::query()->create([
-<<<<<<< HEAD
         'aggregate_uuid' => \Illuminate\Support\Str::uuid()->toString(),
-=======
-        'aggregate_uuid' => Str::uuid()->toString(),
->>>>>>> dev
         'aggregate_version' => 1,
         'event_version' => 1,
         'event_class' => 'App\\Events\\ComplexEvent',

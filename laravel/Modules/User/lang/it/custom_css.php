@@ -9,56 +9,28 @@ return [
             'placeholder' => 'background_color',
             'helper_text' => 'background_color',
             'description' => 'background_color',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'background' => [
             'label' => 'background',
             'placeholder' => 'background',
             'helper_text' => 'background',
             'description' => 'background',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'overlay_color' => [
             'label' => 'overlay_color',
             'placeholder' => 'overlay_color',
             'helper_text' => 'overlay_color',
             'description' => 'overlay_color',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'overlay_opacity' => [
             'label' => 'overlay_opacity',
             'placeholder' => 'overlay_opacity',
             'helper_text' => 'overlay_opacity',
             'description' => 'overlay_opacity',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -77,16 +49,6 @@ return [
         'sort' => 15,
         'icon' => 'heroicon-o-code-bracket',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Custom Css',
     'plural_label' => 'Custom Css (Plurale)',
-=======
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Custom Css',
-    'plural_label' => 'Custom Css (Plurale)',
->>>>>>> dev
 ];

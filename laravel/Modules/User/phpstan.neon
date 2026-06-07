@@ -1,14 +1,6 @@
 includes:
     - ./phpstan-baseline.neon
-<<<<<<< HEAD
-<<<<<<< HEAD
     #- ./../../vendor/larastan/larastan/extension.neon
-=======
-    - ./../../vendor/larastan/larastan/extension.neon
->>>>>>> 4b6b99016 (first commit)
-=======
-    #- ./../../vendor/larastan/larastan/extension.neon
->>>>>>> dev
     #- ./../../vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
     #- ./vendor/symplify/phpstan-rules/config/code-complexity-rules.neon
     #- ./vendor/symplify/phpstan-rules/config/collector-rules.neon
@@ -21,10 +13,6 @@ parameters:
     level: max
 
     paths:
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         - ../../app
         - ../../database
         - ../../resources
@@ -54,12 +42,6 @@ parameters:
         - ../../Modules/User/storage
         - ../../Modules/User/public
         - ../../Modules/User/node_modules
-<<<<<<< HEAD
-=======
-        - .
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     
           
 
@@ -76,13 +58,6 @@ parameters:
         - ./*/build/*
         - ./*/vendor/*
         - ./*/docs/*
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        - ./*/Tests/*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         - ./*/_ide_helper.php
 
     bootstrapFiles:
@@ -107,15 +82,8 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
     checkModelProperties: false
-<<<<<<< HEAD
-<<<<<<< HEAD
     bootstrapFiles:
         - ./phpstan_constants.php
         - ../../vendor/autoload.php
     bootstrapped: false
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    bootstrapped: false
->>>>>>> dev
 

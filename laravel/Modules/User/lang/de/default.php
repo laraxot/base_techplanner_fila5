@@ -139,10 +139,6 @@ return [
         'tooltip' => 'Kopiert!',
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'email' => [
             'label' => 'E-Mail',
             'tooltip' => '',
@@ -253,28 +249,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
-        'email' => 'E-Mail',
-        'login' => 'Einloggen',
-        'name' => 'Benutzername',
-        'password' => 'Passwort',
-        'password_confirm' => 'Passwort bestätigen',
-        'new_password' => 'Neues Passwort',
-        'new_password_confirmation' => 'Bestätigen Sie das Passwort',
-        'token_name' => 'Token-Name',
-        'abilities' => 'Möglichkeiten',
-        '2fa_code' => 'Code',
-        '2fa_recovery_code' => 'Wiederherstellungscode',
-        'created' => 'Erstellt',
-        'expired' => 'Abgelaufen',
-        'avatar' => 'Avatar',
-        'token_expiry' => 'Scadenza del Token',
-        'expires' => 'Scade',
-    ],
-    'or' => 'Oder',
-    'cancel' => 'Abbrechen',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -36,24 +36,13 @@ return [
             'placeholder' => 'Inserisci il nome',
             'description' => 'name',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci l\'email',
             'description' => 'email',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
         'created_at' => [
@@ -85,46 +74,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'created_at' => [
-            'label' => 'Data Creazione',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-        ],
-        'role' => [
-            'label' => 'Ruolo',
-        ],
-        'active' => 'Active',
-        'id' => [
-            'label' => 'ID',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Inserisci la password',
             'description' => 'password',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
             'placeholder' => 'Conferma la password',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -134,22 +94,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'email_verified_at' => [
-            'label' => 'Email Verificata il',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'current_password' => [
             'label' => 'Password Attuale',
             'placeholder' => 'Inserisci la password attuale',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -165,17 +113,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'roles' => [
-            'label' => 'Ruoli',
-        ],
-        'permissions' => [
-            'label' => 'Permessi',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'status' => [
             'label' => 'Stato',
@@ -184,10 +121,6 @@ return [
                 'inactive' => 'Inattivo',
                 'blocked' => 'Bloccato',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -317,74 +250,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'last_login' => [
-            'label' => 'Ultimo Accesso',
-        ],
-        'avatar' => [
-            'label' => 'Avatar',
-        ],
-        'language' => [
-            'label' => 'Lingua',
-        ],
-        'timezone' => [
-            'label' => 'Fuso Orario',
-        ],
-        'password_expires_at' => [
-            'label' => 'Scadenza Password',
-        ],
-        'verified' => [
-            'label' => 'Verificato',
-        ],
-        'unverified' => [
-            'label' => 'Non Verificato',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'isActive' => [
-            'label' => 'isActive',
-        ],
-        'deactivate' => [
-            'label' => 'deactivate',
-        ],
-        'delete' => [
-            'label' => 'delete',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'detach' => [
-            'label' => 'detach',
-        ],
-        'attach' => [
-            'label' => 'attach',
-        ],
-        'changePassword' => [
-            'label' => 'changePassword',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'filters' => [
@@ -408,13 +273,6 @@ return [
         'reset_link_sent' => 'Link per il reset della password inviato',
         'email_verified' => 'Email verificata con successo',
         'impersonating' => 'Stai impersonando l\'utente :name',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        // Added for LoginWidget
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         'login_success' => 'Login successful',
         'validation_error' => 'Validation error',
         'login_error' => 'An error occurred during login. Please try again later.',
@@ -502,59 +360,9 @@ return [
         'impersonate_users' => 'Impersona utenti',
         'manage_roles' => 'Gestisci ruoli',
     ],
-<<<<<<< HEAD
-    'model' => [
-        'label' => 'Utente',
-    ],
-<<<<<<< HEAD
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'auth' => [
-        'register' => [
-            'title' => [
-                'text' => 'Register',
-            ],
-            'subtitle' => [
-                'text' => 'Create a new account',
-            ],
-            'description' => [
-                'text' => 'Enter your details to complete registration',
-            ],
-            'button' => [
-                'text' => 'Register',
-            ],
-            'login' => [
-                'text' => 'Login',
-            ],
-            'already_have_account' => [
-                'text' => 'Already have an account?',
-            ],
-            'submit' => [
-                'text' => 'Register',
-            ],
-            'sidebar' => [
-                'support_title' => [
-                    'text' => 'Need help?',
-                ],
-                'help_email' => [
-                    'text' => 'Contact support via email',
-                ],
-                'help_password' => [
-                    'text' => 'Forgot password? Recover access',
-                ],
-                'help_support' => [
-                    'text' => 'Guide and support',
-                ],
-            ],
-        ],
-    ],
     'model' => [
         'label' => 'Utente',
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

@@ -6,10 +6,6 @@ return [
     'fields' => [
         'provider' => [
             'label' => 'Fournisseur',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -79,44 +75,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'provider_id' => [
-            'label' => 'ID du Fournisseur',
-        ],
-        'name' => [
-            'label' => 'Nom',
-        ],
-        'email' => [
-            'label' => 'Email',
-        ],
-        'avatar' => [
-            'label' => 'Avatar',
-        ],
-        'create' => [
-            'label' => 'Créer',
-        ],
-        'attach' => [
-            'label' => 'Attacher',
-        ],
-        'layout' => [
-            'label' => 'Mise en Page',
-        ],
-        'view' => [
-            'label' => 'Voir',
-        ],
-        'edit' => [
-            'label' => 'Modifier',
-        ],
-        'detach' => [
-            'label' => 'Détacher',
-        ],
-        'toggleColumns' => [
-            'label' => 'Basculer les Colonnes',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'navigation' => [
@@ -125,17 +83,8 @@ return [
         'group' => 'Authentification',
         'label' => 'Utilisateurs Socialite',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

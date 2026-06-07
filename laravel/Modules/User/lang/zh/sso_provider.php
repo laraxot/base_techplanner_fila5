@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -69,35 +65,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'name' => [
-            'label' => '名称',
-        ],
-        'provider' => [
-            'label' => '提供商',
-        ],
-        'client_id' => [
-            'label' => '客户端ID',
-        ],
-        'client_secret' => [
-            'label' => '客户端密钥',
-        ],
-        'redirect' => [
-            'label' => '重定向',
-        ],
-        'active' => [
-            'label' => '激活',
-        ],
-        'created_at' => [
-            'label' => '创建时间',
-        ],
-        'updated_at' => [
-            'label' => '更新时间',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [

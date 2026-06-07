@@ -9,89 +9,41 @@ return [
             'label' => 'ID',
             'placeholder' => 'Snapshot ID',
             'helper_text' => 'Unique identifier of the snapshot',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'aggregate_uuid' => [
             'label' => 'Aggregate UUID',
             'placeholder' => 'Aggregate UUID',
             'helper_text' => 'Unique identifier of the aggregate',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'aggregate_version' => [
             'label' => 'Version',
             'placeholder' => 'Aggregate version',
             'helper_text' => 'Version number of the aggregate',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'state' => [
             'label' => 'State',
             'placeholder' => 'Snapshot state',
             'helper_text' => 'Current state of the snapshot',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Created At',
             'helper_text' => 'Creation date of the snapshot',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'updated_at' => [
             'label' => 'Last Modified',
             'helper_text' => 'Last modification date',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -137,10 +89,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -150,9 +98,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -23,10 +23,6 @@ return [
         'label' => 'Conferma Password',
         'placeholder' => 'Conferma la tua nuova password',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'name' => 'Fields',
         'plural' => 'Fields',
@@ -60,13 +56,4 @@ return [
             'description' => '',
         ],
     ],
-<<<<<<< HEAD
-=======
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -1,28 +1,20 @@
-<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
-=======
-<?php 
->>>>>>> 4b6b99016 (first commit)
 return array (
   'fields' => 
   array (
     'startDate' => 
     array (
       'label' => 'startDate',
-<<<<<<< HEAD
       'tooltip' => '',
       'helper_text' => '',
       'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
     ),
     'endDate' => 
     array (
       'label' => 'endDate',
-<<<<<<< HEAD
       'tooltip' => '',
       'helper_text' => '',
       'description' => '',
@@ -41,8 +33,4 @@ return array (
   'actions' => 
   array (
   ),
-=======
-    ),
-  ),
->>>>>>> 4b6b99016 (first commit)
 );

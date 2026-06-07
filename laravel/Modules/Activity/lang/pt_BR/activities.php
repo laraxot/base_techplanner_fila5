@@ -1,40 +1,17 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 declare(strict_types=1);
 
 return [
     'breadcrumb' => 'Histórico',
     'title' => 'Histórico :record',
     'default_datetime_format' => 'd/m/Y H:i:s',
-<<<<<<< HEAD
-=======
-return [
-    'breadcrumb' => 'Histórico',
-
-    'title' => 'Histórico :record',
-
-    'default_datetime_format' => 'd/m/Y H:i:s',
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'table' => [
         'field' => 'Campo',
         'old' => 'Antes',
         'new' => 'Depois',
         'restore' => 'Restaurado',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'events' => [
         'updated' => 'Atualizado',
         'created' => 'Criado',
@@ -43,10 +20,6 @@ return [
         'restore_successful' => 'Restaurado com sucesso',
         'restore_failed' => 'Falha na restauração',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -60,9 +33,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -6,10 +6,6 @@ return [
     'fields' => [
         'provider' => [
             'label' => 'provider',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -63,27 +59,4 @@ return [
             'label' => 'Elimina Socialite Users',
         ],
     ],
-<<<<<<< HEAD
-=======
-        ],
-        'provider_id' => [
-            'label' => 'provider_id',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'email' => [
-            'label' => 'email',
-        ],
-        'avatar' => [
-            'label' => 'avatar',
-        ],
-    ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -102,10 +102,6 @@ return [
         'tooltip' => 'Copiado!',
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -210,27 +206,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
-        'avatar' => 'Avatar',
-        'email' => 'E-mail',
-        'login' => 'Iniciar sessão',
-        'name' => 'Nome',
-        'password' => 'Palavra-passe',
-        'password_confirm' => 'Confirmar palavra-passe',
-        'new_password' => 'Nova palavra-passe',
-        'new_password_confirmation' => 'Confirmação de nova palavra-passe',
-        'token_name' => 'Nome da chave única',
-        'token_expiry' => 'Validade da chave única',
-        'abilities' => 'Capacidades',
-        '2fa_code' => 'Código',
-        '2fa_recovery_code' => 'Código de Recuperação',
-        'created' => 'Criado',
-        'expires' => 'Expira',
-    ],
-    'or' => 'Ou',
-    'cancel' => 'Cancelar',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

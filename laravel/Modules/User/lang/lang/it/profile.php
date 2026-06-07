@@ -28,12 +28,9 @@ return [
             'label' => 'ID',
             'placeholder' => 'Identificativo univoco',
             'help' => 'Identificativo univoco dell\'utente nel sistema',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'type' => [
             'label' => 'Tipo',
@@ -45,12 +42,9 @@ return [
                 'moderator' => 'Moderatore',
                 'guest' => 'Ospite',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'user' => [
             'name' => [
@@ -68,101 +62,74 @@ return [
                 'placeholder' => '+39 123 456 7890',
                 'help' => 'Numero di telefono per contatti',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'photo' => [
             'label' => 'Foto',
             'placeholder' => 'Carica una foto profilo',
             'help' => 'Immagine del profilo utente (formato JPG, PNG)',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'ente' => [
             'label' => 'Ente',
             'placeholder' => 'Seleziona l\'ente',
             'help' => 'Ente di appartenenza dell\'utente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'matr' => [
             'label' => 'Matricola',
             'placeholder' => 'Inserisci la matricola',
             'help' => 'Numero di matricola dell\'utente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'first_name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
             'help' => 'Nome di battesimo dell\'utente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'last_name' => [
             'label' => 'Cognome',
             'placeholder' => 'Inserisci il cognome',
             'help' => 'Cognome dell\'utente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'utente@email.com',
             'help' => 'Indirizzo email principale',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'placeholder' => 'Stato di attivazione',
             'help' => 'Indica se l\'utente è attivo nel sistema',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'birth_date' => [
             'label' => 'Data di Nascita',
             'placeholder' => 'Seleziona la data di nascita',
             'help' => 'Data di nascita dell\'utente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'gender' => [
             'label' => 'Genere',
@@ -174,89 +141,65 @@ return [
                 'other' => 'Altro',
                 'prefer_not_to_say' => 'Preferisco non dirlo',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'address' => [
             'label' => 'Indirizzo',
             'placeholder' => 'Via Roma, 123',
             'help' => 'Indirizzo di residenza',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'city' => [
             'label' => 'Città',
             'placeholder' => 'Inserisci la città',
             'help' => 'Città di residenza',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'postal_code' => [
             'label' => 'Codice Postale',
             'placeholder' => '00100',
             'help' => 'Codice postale della città',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'country' => [
             'label' => 'Paese',
             'placeholder' => 'Seleziona il paese',
             'help' => 'Paese di residenza',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'bio' => [
             'label' => 'Biografia',
             'placeholder' => 'Scrivi una breve biografia',
             'help' => 'Descrizione personale o professionale',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'website' => [
             'label' => 'Sito Web',
             'placeholder' => 'https://tuosito.com',
             'help' => 'Sito web personale o professionale',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'social_links' => [
             'label' => 'Link Social',
             'placeholder' => 'Collegamenti ai social media',
             'help' => 'Link ai tuoi profili social media',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'language' => [
             'label' => 'Lingua',
@@ -269,45 +212,33 @@ return [
                 'de' => 'Tedesco',
                 'es' => 'Spagnolo',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'timezone' => [
             'label' => 'Fuso Orario',
             'placeholder' => 'Seleziona il fuso orario',
             'help' => 'Fuso orario di riferimento',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'placeholder' => 'Data di registrazione',
             'help' => 'Data di registrazione dell\'account',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'placeholder' => 'Data ultima modifica',
             'help' => 'Data dell\'ultimo aggiornamento del profilo',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
         ],
     ],
     'personal_info' => [
@@ -472,7 +403,6 @@ return [
         'changes_saved' => 'Modifiche salvate',
         'no_changes' => 'Nessuna modifica da salvare',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -482,6 +412,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
 ];

@@ -13,10 +13,6 @@ return [
     'label' => 'Authentication Log',
     'plural_label' => 'Authentication Logs',
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'id' => [
             'label' => 'ID',
             'tooltip' => '',
@@ -77,21 +73,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
-=======
-        'id' => ['label' => 'ID'],
-        'authenticatable_type' => ['label' => 'Authenticatable Type'],
-        'authenticatable.name' => ['label' => 'User'],
-        'ip_address' => ['label' => 'IP Address'],
-        'user_agent' => ['label' => 'User Agent'],
-        'login_successful' => ['label' => 'Success'],
-        'login_at' => ['label' => 'Login Time'],
-        'logout_at' => ['label' => 'Logout Time'],
-        'cleared_by_user' => ['label' => 'Cleared by User'],
-        'authenticatable_id' => ['label' => 'Authenticatable ID'],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ],
     'actions' => [
         'view_user' => [

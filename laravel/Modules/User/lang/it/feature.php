@@ -3,10 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Feature',
         'plural_label' => 'Features',
@@ -113,61 +109,10 @@ return [
             'tooltip' => 'Apri il pannello filtri',
             'helper_text' => 'Apre il pannello dei filtri',
             'description' => 'Apre il pannello dei filtri',
-<<<<<<< HEAD
-=======
-    'resources' => 'Risorse',
-    'pages' => 'Pagine',
-    'widgets' => 'Widgets',
-    'navigation' => [
-        'name' => 'Feature',
-        'plural' => 'Features',
-        'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione delle feature e delle funzionalità',
-        ],
-        'label' => 'feature',
-        'sort' => 75,
-        'icon' => 'user-user-feature',
-    ],
-    'fields' => [
-        'name' => 'Nome',
-        'guard_name' => 'Guard',
-        'permissions' => 'Permessi',
-        'updated_at' => 'Aggiornato il',
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'select_all' => [
-            'name' => 'Seleziona Tutti',
-            'message' => '',
-        ],
-        'value' => [
-            'label' => 'value',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
         'import' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => 'Importa',
             'tooltip' => 'Importa dati',
             'helper_text' => 'Importa dati da file esterno',
@@ -224,30 +169,4 @@ return [
         'imported' => 'Importazione completata',
         'exported' => 'Esportazione completata',
     ],
-<<<<<<< HEAD
-=======
-            'fields' => [
-                'import_file' => 'Seleziona un file XLS o CSV da caricare',
-            ],
-        ],
-        'export' => [
-            'filename_prefix' => 'Aree al',
-            'columns' => [
-                'name' => 'Nome area',
-                'parent_name' => 'Nome area livello superiore',
-            ],
-        ],
-        'logout' => [
-            'tooltip' => 'logout',
-            'icon' => 'logout',
-        ],
-    ],
-    'model' => [
-        'label' => 'feature.model',
-    ],
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

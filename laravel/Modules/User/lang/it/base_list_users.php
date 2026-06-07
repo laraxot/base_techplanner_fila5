@@ -6,10 +6,6 @@ return [
     'fields' => [
         'deactivate' => [
             'label' => 'deactivate',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -69,30 +65,4 @@ return [
             'label' => 'Elimina Base List Users',
         ],
     ],
-<<<<<<< HEAD
-=======
-        ],
-        'unverified' => [
-            'label' => 'unverified',
-        ],
-        'verified' => [
-            'label' => 'verified',
-        ],
-        'email' => [
-            'label' => 'email',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'changePassword' => [
-            'label' => 'changePassword',
-        ],
-    ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

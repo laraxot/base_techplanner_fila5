@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
 use Modules\Activity\Models\StoredEvent;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent;
@@ -12,30 +11,6 @@ describe('StoredEvent Business Logic', function (): void {
         $storedEvent = new StoredEvent;
 
         expect($storedEvent->getConnectionName())->toBe('activity');
-=======
-namespace Modules\Activity\Tests\Unit\Models;
-
-uses(TestCase::class);
-use Modules\Activity\Models\StoredEvent;
-use Modules\Activity\Tests\TestCase;
-use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent;
-
-describe('StoredEvent Business Logic', function (): void {
-    beforeEach(function (): void {
-        // Skip if database not available
-        try {
-            \DB::connection()->getPdo();
-        } catch (\Exception $e) {
-            $this->markTestSkipped('Database not available: '.$e->getMessage());
-        }
-    });
-
-    test('stored event has correct connection configured', function (): void {
-        $storedEvent = new StoredEvent;
-
-        $expected = app()->environment('testing') ? 'mysql' : 'activity';
-        expect($storedEvent->getConnectionName())->toBe($expected);
->>>>>>> dev
     });
 
     test('stored event has correct table configured', function (): void {
