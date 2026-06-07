@@ -1,5 +1,6 @@
 # Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi Laraxot
+# Principi di Ereditarietà nelle Classi Quaeris
+
 ## Regola Fondamentale: No Duplicate Declarations
 
 Le classi che estendono altre classi  **NON devono ridichiarare** interfacce, trait o metodi già presenti nella classe genitore, a meno che non ne modifichino il comportamento.
@@ -75,7 +76,7 @@ Per identificare dichiarazioni duplicate, usare:
 
 # Trova classi che estendono XotBasePage e implementano HasForms
 grep -r --include="*.php" "extends XotBasePage implements HasForms" /var/www/html/<nome progetto>/laravel/Modules/
-grep -r --include="*.php" "extends XotBasePage implements HasForms" /var/www/html/ptvx/laravel/Modules/
+grep -r --include="*.php" "extends XotBasePage implements HasForms" /var/www/html/Quaeris/laravel/Modules/
 grep -r --include="*.php" "extends XotBasePage implements HasForms" /var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules/
 ```
 

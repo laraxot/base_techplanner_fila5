@@ -6,10 +6,11 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
-use Modules\Xot\Datas\XotData;
-use Webmozart\Assert\Assert;
 
 use function Laravel\Prompts\text;
+
+use Modules\Xot\Datas\XotData;
+use Webmozart\Assert\Assert;
 
 class CreateTenantCommand extends Command
 {
@@ -21,8 +22,6 @@ class CreateTenantCommand extends Command
     /**
      * The console command description.
      */
-    protected $name = 'user:create-tenant';
-
     protected $description = 'Create a tenant';
 
     /**
@@ -62,4 +61,3 @@ class CreateTenantCommand extends Command
         }
     }
 }
-

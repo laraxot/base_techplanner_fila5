@@ -1,11 +1,3 @@
-## [2026-06-06] fix | BaseUser — rimossa dipendenza modulo Comment
-
-- Fatal: `InteractsWithComments` / `CanComment` quando Comment assente
-- `BaseUser.php` senza namespace `Modules\Comment\`
-- Issue [#13](https://github.com/laraxot/base_techplanner_fila5/issues/13) · Discussion [#14](https://github.com/laraxot/base_techplanner_fila5/discussions/14)
-- Guard: `bashscripts/tools/check-user-no-comment-dependency.sh` + `NoCommentModuleDependencyTest.php`
-- Regola: [no-comment-module-dependency.md](./concepts/no-comment-module-dependency.md)
-
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)

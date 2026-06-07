@@ -74,7 +74,7 @@ return [
     | Configurazione del modello Client personalizzato.
     |
     */
-'client_model' => OauthClient::class,
+    'client_model' => OauthClient::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -85,7 +85,7 @@ return [
     |
     */
     'models' => [
-'token' => OauthToken::class,
+        'token' => OauthToken::class,
         'refresh_token' => OauthRefreshToken::class,
         'auth_code' => OauthAuthCode::class,
         'personal_access_client' => OauthPersonalAccessClient::class,

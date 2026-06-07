@@ -244,10 +244,6 @@ Aggiungere al file `~/.cursor/mcp.json`:
       "url": "http://localhost:8003/sse"
     },
     "artisan-healthcare_app": {
-    "phpstan-ptvx": {
-      "url": "http://localhost:8003/sse"
-    },
-    "artisan-ptvx": {
       "url": "http://localhost:8004/sse"
     }
   }

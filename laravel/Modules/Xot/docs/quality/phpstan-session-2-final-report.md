@@ -299,10 +299,6 @@ Fix page-level issues:
 
 # Analyze specific file
 ./vendor/bin/phpstan analyse Modules/healthcare_app/app/Filament/Widgets/BaseTableWidget.php --level=10
-./vendor/bin/phpstan analyse Modules/ModuloEsempio --level=10
-
-# Analyze specific file
-./vendor/bin/phpstan analyse Modules/ModuloEsempio/app/Filament/Widgets/BaseTableWidget.php --level=10
 
 # Format code
 ./vendor/bin/pint --dirty

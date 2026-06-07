@@ -19,6 +19,7 @@
 10. **Media** - Già a 0 errori
 11. **Notify** - Già a 0 errori
 12. **healthcare_app** - 2 errori corretti
+12. **ModuloEsempio** - 2 errori corretti
 13. **UI** - 4 errori corretti
 14. **User** - 1 errore critico corretto (BaseUser)
 15. **Xot** - Già a 0 errori
@@ -43,6 +44,8 @@
 - `UI/app/Filament/Forms/Components/RadioBadge.php` - is_string() ridondante
 - `healthcare_app/app/Actions/Question/GetValue.php` - getExtra() return type
 - `healthcare_app/app/Filament/Pages/AutoPage.php` - is_object() ridondante
+- `ModuloEsempio/app/Actions/Question/GetValue.php` - getExtra() return type
+- `ModuloEsempio/app/Filament/Pages/AutoPage.php` - is_object() ridondante
 - `Geo/app/Models/Address.php` - is_string() ridondante in array_filter()
 - `Geo/app/Actions/UpdateClientCoordinatesBulkAction.php` - is_string() ridondante
 
@@ -63,6 +66,7 @@
 1. `Activity/docs/phpstan-corrections-january-2026.md`
 2. `UI/docs/phpstan-corrections-january-2026.md`
 3. `healthcare_app/docs/phpstan-corrections-january-2026.md`
+3. `ModuloEsempio/docs/phpstan-corrections-january-2026.md`
 4. `Geo/docs/phpstan-corrections-january-2026.md`
 5. `Xot/docs/phpstan-january-2026-summary.md` (questo file)
 
@@ -165,4 +169,5 @@ if (null !== $value) {
 - [Activity Corrections](../activity/docs/phpstan-corrections-january-2026.md)
 - [UI Corrections](../ui/docs/phpstan-corrections-january-2026.md)
 - [healthcare_app Corrections](../healthcare_app/docs/phpstan-corrections-january-2026.md)
+- [PHPStan Code Quality Guide](../phpstan-code-quality-guide.md)
 - [Geo Corrections](../geo/docs/phpstan-corrections-january-2026.md)

@@ -19,8 +19,6 @@ class ShowUserListCommand extends Command
     /**
      * The console command description.
      */
-    protected $name = 'user:show-user-list';
-
     protected $description = 'Visualizza lista users';
 
     /**
@@ -48,4 +46,3 @@ class ShowUserListCommand extends Command
         }
     }
 }
-

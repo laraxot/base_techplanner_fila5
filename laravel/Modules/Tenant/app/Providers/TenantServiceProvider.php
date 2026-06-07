@@ -92,11 +92,7 @@ class TenantServiceProvider extends XotBaseServiceProvider
         $default = is_string($defaultRaw) ? $defaultRaw : 'mysql';
 
         if (Arr::get($data, 'connections.user', null) === null) {
-            $userFromDefault = Arr::get($data, 'connections.user_'.$default);
-            if ($userFromDefault === null) {
-                $userFromDefault = Arr::get($data, 'connections.'.$default);
-            }
-            Arr::set($data, 'connections.user', $userFromDefault);
+            Arr::set($data, 'connections.user', Arr::get($data, 'connections.user_'.$default));
         }
 
         /** @var array|float|int|string|null $connectionsRaw */

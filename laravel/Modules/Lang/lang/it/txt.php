@@ -498,11 +498,52 @@ return [
             'tooltip' => '',
         ],
         'address' => [
-            'label' => 'address',
+            'label' => 'address2',
             'placeholder' => 'address',
             'helper_text' => 'address',
             'description' => 'address',
             'tooltip' => '',
+        ],
+        'display_name' => [
+            'label' => 'display_name',
+        ],
+        'location' => [
+            'label' => 'location',
+            'placeholder' => 'location',
+            'helper_text' => 'location',
+            'description' => 'location',
+        ],
+        'coordinates' => [
+            'label' => 'coordinates',
+            'placeholder' => 'coordinates',
+            'helper_text' => 'coordinates',
+            'description' => 'coordinates',
+        ],
+        'file1' => [
+            'jpg' => [
+                'label' => 'file1.jpg',
+                'placeholder' => 'file1.jpg',
+                'helper_text' => 'file1.jpg',
+                'description' => 'file1.jpg',
+            ],
+        ],
+        'id' => [
+            'label' => 'id',
+        ],
+        'created_at' => [
+            'label' => 'created_at',
+        ],
+        'updated_at' => [
+            'label' => 'updated_at',
+        ],
+        'appointment_date' => [
+            'label' => 'appointment_date',
+            'placeholder' => 'appointment_date',
+            'helper_text' => 'appointment_date',
+            'description' => 'appointment_date',
+        ],
+        'contact' => [
+            'label' => 'contact',
         ],
     ],
     'actions' => [
@@ -566,6 +607,21 @@ return [
             'icon' => 'update_coordinates',
             'tooltip' => 'update_coordinates',
         ],
+        'edit' => [
+            'label' => 'edit',
+            'icon' => 'edit',
+            'tooltip' => 'edit',
+        ],
+        'delete' => [
+            'label' => 'delete',
+            'icon' => 'delete',
+            'tooltip' => 'delete',
+        ],
+        'SendRecordsNotificationBulkAction' => [
+            'label' => 'SendRecordsNotificationBulkAction',
+            'icon' => 'SendRecordsNotificationBulkAction',
+            'tooltip' => 'SendRecordsNotificationBulkAction',
+        ],
     ],
     'sections' => [
         'address' => [
@@ -585,5 +641,10 @@ return [
         'label' => 'Txt',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
+    ],
+    'steps' => [
+        'test' => [
+            'label' => 'test',
+        ],
     ],
 ];

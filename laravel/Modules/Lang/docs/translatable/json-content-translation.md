@@ -1,6 +1,7 @@
 # Gestione Traduzioni Contenuti JSON
 
 Questo documento descrive come gestire le traduzioni per i contenuti JSON nel progetto healthcare_app, con particolare attenzione ai file di contenuto delle pagine.
+
 ## Struttura dei Contenuti Traducibili
 
 ### File di Contenuto delle Pagine
@@ -78,6 +79,8 @@ Ogni file JSON può contenere sezioni traducibili seguendo questo pattern:
     "title": {
         "it": "Area Dottore - healthcare_app",
         "en": "Doctor Area - healthcare_app"
+        "it": "Area Dottore - ExternalProject",
+        "en": "Doctor Area - ExternalProject"
     },
     "content_blocks": {
         "it": [

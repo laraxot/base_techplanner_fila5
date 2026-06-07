@@ -65,6 +65,7 @@ try {
 ## Module-Specific Considerations
 
 ### healthcare_app Module
+### ExternalProject Module
 - Optimize survey contact imports
 - Implement JSON payload persistence
 - Use queue-based processing for contact operations

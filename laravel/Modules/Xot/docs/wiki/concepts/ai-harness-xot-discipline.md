@@ -33,7 +33,6 @@ Xot è **owner** del contratto second-brain locale per tutti i moduli Laraxot.
 | 012 | Capire XotBase inheritance prima di estendere Filament/Laravel diretto |
 | 015 | Mai `Resource`/`Widget` Filament naked — `XotBaseResource`, `XotBaseSchemaWidget` |
 | 022 | PHPStan L10 da `laravel/`; `XotBaseMigration` per migrate |
-| **COMPOSER** | Pacchetti infra (es. `spatie/laravel-pdf`) in `Modules/Xot/composer.json` → `rm vendor` modulo → `composer update -W` — [spatie-laravel-pdf-module-dependency](./spatie-laravel-pdf-module-dependency.md) |
 
 ## Quality gate post-edit PHP
 

@@ -10,7 +10,7 @@ use Tests\TestCase;
 
 uses(TestCase::class);
 
-it('resolves metatag service through facade accessor', function (): void {
+it('resolves metatag service through facade accessor', function(): void {
     $service = app(MetatagService::class);
 
     Metatag::setTitle('Facade Title');

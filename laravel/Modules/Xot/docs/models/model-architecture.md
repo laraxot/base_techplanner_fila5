@@ -66,6 +66,7 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 │ - Modules/User/Models/Tenant                                │
 │ - Modules/User/Models/TeamUser                              │
 │ - Modules/healthcare_app/Models/Contact                            │
+│ - Modules/ModuloEsempio/Models/Contact                            │
 │                                                             │
 │ Implementano: Business logic, Relationships, Scopes         │
 └─────────────────────────────────────────────────────────────┘
@@ -191,6 +192,7 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 **Scopo**:
 - Definire la connection specifica del modulo
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in healthcare_app)
+- Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in ModuloEsempio)
 - Configurare casts specifici del modulo
 - Configurare eager loading predefinito (`$with`)
 
@@ -232,6 +234,7 @@ class Tenant extends BaseModel
 **Esempi**:
 - `Modules/User/Models/Tenant.php`
 - `Modules/healthcare_app/Models/Contact.php`
+- `Modules/ModuloEsempio/Models/Contact.php`
 - `Modules/Cms/Models/Page.php`
 - `Modules/Geo/Models/GeoNamesCap.php`
 
@@ -348,6 +351,7 @@ public function getConnectionName(): ?string
 
 - Namespace: `Modules\User\Models\*` → Connection: `user`
 - Namespace: `Modules\healthcare_app\Models\*` → Connection: `healthcare_app`
+- Namespace: `Modules\ModuloEsempio\Models\*` → Connection: `modulo_esempio`
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
@@ -551,6 +555,10 @@ class ModelHasRole extends BaseMorphPivot
 
 ```php
 namespace Modules\healthcare_app\Models;
+### Esempio 4: BaseModel con Traits Specifici (ModuloEsempio Module)
+
+```php
+namespace Modules\ModuloEsempio\Models;
 
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Contracts\ModelContract;
@@ -561,6 +569,7 @@ use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 /**
  * Base Model per healthcare_app module.
+ * Base Model per ModuloEsempio module.
  *
  * Aggiunge supporto per:
  * - Media Library (Spatie)
@@ -584,6 +593,7 @@ Poi i modelli concreti ereditano tutto:
 
 ```php
 namespace Modules\healthcare_app\Models;
+namespace Modules\ModuloEsempio\Models;
 
 class Contact extends BaseModel
 {
@@ -644,6 +654,7 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 ```php
 // ✅ CORRETTO - Aggiungere traits specifici in BaseModel
 // Modules/healthcare_app/Models/BaseModel.php
+// Modules/ModuloEsempio/Models/BaseModel.php
 use InteractsWithMedia;
 use HasExtraTrait;
 
@@ -868,6 +879,7 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 │ - Modules/User/Models/Tenant                                │
 │ - Modules/User/Models/TeamUser                              │
 │ - Modules/healthcare_app/Models/Contact                            │
+│ - Modules/ModuloEsempio/Models/Contact                            │
 │                                                             │
 │ Implementano: Business logic, Relationships, Scopes         │
 └─────────────────────────────────────────────────────────────┘
@@ -993,6 +1005,7 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 **Scopo**:
 - Definire la connection specifica del modulo
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in healthcare_app)
+- Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in ModuloEsempio)
 - Configurare casts specifici del modulo
 - Configurare eager loading predefinito (`$with`)
 
@@ -1034,6 +1047,7 @@ class Tenant extends BaseModel
 **Esempi**:
 - `Modules/User/Models/Tenant.php`
 - `Modules/healthcare_app/Models/Contact.php`
+- `Modules/ModuloEsempio/Models/Contact.php`
 - `Modules/Cms/Models/Page.php`
 - `Modules/Geo/Models/GeoNamesCap.php`
 
@@ -1150,6 +1164,7 @@ public function getConnectionName(): ?string
 
 - Namespace: `Modules\User\Models\*` → Connection: `user`
 - Namespace: `Modules\healthcare_app\Models\*` → Connection: `healthcare_app`
+- Namespace: `Modules\ModuloEsempio\Models\*` → Connection: `modulo_esempio`
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
@@ -1353,6 +1368,10 @@ class ModelHasRole extends BaseMorphPivot
 
 ```php
 namespace Modules\healthcare_app\Models;
+### Esempio 4: BaseModel con Traits Specifici (ModuloEsempio Module)
+
+```php
+namespace Modules\ModuloEsempio\Models;
 
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Contracts\ModelContract;
@@ -1363,6 +1382,7 @@ use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 /**
  * Base Model per healthcare_app module.
+ * Base Model per ModuloEsempio module.
  *
  * Aggiunge supporto per:
  * - Media Library (Spatie)
@@ -1386,6 +1406,7 @@ Poi i modelli concreti ereditano tutto:
 
 ```php
 namespace Modules\healthcare_app\Models;
+namespace Modules\ModuloEsempio\Models;
 
 class Contact extends BaseModel
 {
@@ -1446,6 +1467,7 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 ```php
 // ✅ CORRETTO - Aggiungere traits specifici in BaseModel
 // Modules/healthcare_app/Models/BaseModel.php
+// Modules/ModuloEsempio/Models/BaseModel.php
 use InteractsWithMedia;
 use HasExtraTrait;
 

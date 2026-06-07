@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 return [
-'failed' => [
+    'failed' => [
         'key' => 'user::auth.messages.failed',
         'text' => 'Credenziali non valide.',
         'description' => 'Messaggio di errore mostrato quando le credenziali di accesso sono non valide',
@@ -176,7 +176,7 @@ return [
     'email' => 'Email',
     'name' => 'Nome',
     'confirm_password' => 'Conferma Password',
-'logout_success' => [
+    'logout_success' => [
         'key' => 'user::auth.logout-success',
         'text' => 'Logout effettuato con successo.',
         'description' => 'Messaggio di conferma mostrato quando il logout ha successo',
@@ -285,7 +285,7 @@ return [
             'label' => 'Ricordami',
         ],
         'submit' => 'Accedi',
-'forgot_password' => [
+        'forgot_password' => [
             'key' => 'user::auth.forgot-password',
             'text' => 'Password dimenticata?',
             'description' => 'Link per avviare il processo di reset password',
@@ -371,7 +371,7 @@ return [
         'Remember me' => 'Ricordami',
         'Remember' => 'Ricordami',
         'Forgot your password?' => 'Password dimenticata?',
-'page' => [
+        'page' => [
             'meta_title' => [
                 'label' => 'Accedi ai servizi',
                 'tooltip' => 'Titolo pagina login pubblica',
@@ -592,7 +592,7 @@ return [
         ],
     ],
     'forgot_password' => [
-'title' => [
+        'title' => [
             'key' => 'user::auth.forgot-password-title',
             'text' => 'Password dimenticata?',
             'description' => 'Titolo della pagina di richiesta reset password',
@@ -647,7 +647,7 @@ return [
         ],
     ],
     'reset_password' => [
-'title' => [
+        'title' => [
             'key' => 'user::auth.reset-password-title',
             'text' => 'Reimposta password',
             'description' => 'Titolo della pagina di reset password',
@@ -770,7 +770,7 @@ return [
         ],
     ],
     'verification' => [
-'title' => [
+        'title' => [
             'key' => 'user::auth.verification-title',
             'text' => 'Verifica il tuo indirizzo email',
             'description' => 'Titolo della pagina di verifica email',
@@ -941,7 +941,7 @@ return [
         ],
     ],
     'passwords' => [
-'reset' => [
+        'reset' => [
             'key' => 'user::auth.passwords.reset',
             'text' => 'La tua password è stata reimpostata!',
             'description' => 'Messaggio di conferma mostrato quando la password è stata reimpostata con successo',

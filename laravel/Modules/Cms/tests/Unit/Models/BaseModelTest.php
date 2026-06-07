@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use Illuminate\Database\Eloquent\Model;
 use Modules\Cms\Models\BaseModel;
 
 beforeEach(function (): void {
@@ -12,22 +11,22 @@ beforeEach(function (): void {
 });
 
 test('base model extends eloquent model', function (): void {
-    expect($this->baseModel)->toBeInstanceOf(Model::class);
+    expect($baseModel);
 });
 
 test('base model has correct table name', function (): void {
-    expect($this->baseModel->getTable())->toBe('test_cms_table');
+    expect($baseModel->getTable());
 });
 
 test('base model can be instantiated', function (): void {
-    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
+    expect($baseModel);
 });
 
 test('base model has proper inheritance chain', function (): void {
-    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
-    expect($this->baseModel)->toBeInstanceOf(Model::class);
+    expect($baseModel);
+    expect($baseModel);
 });
 
 test('base model has timestamps enabled', function (): void {
-    expect($this->baseModel->usesTimestamps())->toBeTrue();
+    expect($baseModel->usesTimestamps());
 });

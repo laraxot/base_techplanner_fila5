@@ -11,6 +11,68 @@ use Modules\UI\Datas\SliderData;
 use Modules\UI\Datas\SliderDataCollection;
 use Modules\UI\Datas\UserData;
 use Modules\UI\Tests\TestCase;
+
+// --- SliderData ---
+
+it('SliderData can be instantiated with all fields', function (): void {
+    $data = new SliderData(
+        desktop_thumbnail: '/img/desktop.jpg',
+        mobile_thumbnail: '/img/mobile.jpg',
+        desktop_thumbnail_webp: '/img/desktop.webp',
+        mobile_thumbnail_webp: '/img/mobile.webp',
+        link: '/events',
+        title: 'Laravel Meetup',
+        short_description: 'Join us!',
+        description: 'Full description here',
+        action_text: 'Register Now',
+    );
+
+    expect($data)->toBeInstanceOf(SliderData::class)
+        ->and($data->desktop_thumbnail)->toBe('/img/desktop.jpg')
+        ->and($data->mobile_thumbnail)->toBe('/img/mobile.jpg')
+        ->and($data->link)->toBe('/events')
+        ->and($data->title)->toBe('Laravel Meetup')
+        ->and($data->action_text)->toBe('Register Now');
+});
+
+it('SliderData sets short_description from description', function (): void {
+    $data = new SliderData(
+        desktop_thumbnail: null,
+        mobile_thumbnail: null,
+        desktop_thumbnail_webp: null,
+        mobile_thumbnail_webp: null,
+        link: null,
+        title: null,
+        short_description: null,
+        description: 'My description',
+        action_text: null,
+    );
+
+    expect($data->short_description)->toBe('My description');
+});
+
+it('SliderData can be instantiated with nulls', function (): void {
+    $data = new SliderData(
+        desktop_thumbnail: null,
+        mobile_thumbnail: null,
+        desktop_thumbnail_webp: null,
+        mobile_thumbnail_webp: null,
+        link: null,
+        title: null,
+        short_description: null,
+        description: null,
+        action_text: null,
+    );
+
+    expect($data)->toBeInstanceOf(SliderData::class)
+        ->and($data->desktop_thumbnail)->toBeNull()
+        ->and($data->title)->toBeNull();
+});
+
+// --- SliderDataCollection ---
+
+it('SliderDataCollection can be instantiated', function (): void {
+    $collection = new SliderDataCollection();
     $collection = new SliderDataCollection();
 
     expect($collection)->toBeInstanceOf(SliderDataCollection::class);

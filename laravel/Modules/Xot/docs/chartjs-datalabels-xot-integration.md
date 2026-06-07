@@ -922,6 +922,7 @@ class ExampleChartWidget extends XotBaseChartWidget
 For a minimal, production-ready example showing 2 labels per bar using `RawJs::make()`, see:
 
 **`Modules/healthcare_app/Filament/Widgets/SimpleChartWidget.php`**
+**`Modules/ExternalProject/Filament/Widgets/SimpleChartWidget.php`**
 
 Key pattern:
 ```php

@@ -65,6 +65,8 @@ protected function getTableEmptyStateActions(): array
    - Aggiornata data ultimo aggiornamento
 
 3. **`Modules/healthcare_app/docs/question-chart-implementation-guide.md`**
+3. **Moduli che implementano nested resources con HasXotTable**
+   - Nota critica sulla visibilità dei metodi `getTable*()`
    - Aggiunta nota critica sulla visibilità dei metodi `getTable*()`
 
 ## Pattern Corretto
@@ -134,3 +136,4 @@ curl http://healthcare_app.local/healthcare_app/admin/ats/survey-pdfs/16/questio
 1. **Principio di Liskov**: Quando si estende una classe o si usa un trait, la visibilità dei metodi non può essere ridotta
 2. **Compatibilità Filament**: I trait di Filament (`InteractsWithTable`) hanno requisiti specifici di visibilità
 3. **Documentazione**: La documentazione esistente (`widget-method-visibility-rules.md`) era corretta ma non era stata applicata al trait base
+

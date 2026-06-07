@@ -12,14 +12,14 @@ use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
-
-use Modules\User\Filament\Resources\OauthAuthCodeResource\Pages\ListOauthAuthCodes;
-use Modules\User\Filament\Resources\OauthAuthCodeResource\Pages\ViewOauthAuthCode;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Str;
+use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ListOauthAuthCodes;
+use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ViewOauthAuthCode;
 use Modules\User\Models\OauthAuthCode;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\json_encode;
-use Illuminate\Database\Eloquent\Builder;
 
 /**
  * Class OauthAuthCodeResource.
@@ -84,7 +84,7 @@ class OauthAuthCodeResource extends XotBaseResource
                     ->limit(30)
                     ->tooltip(function (TextColumn $column): ?string {
                         $state = $column->getState();
-                        if ($state === null) {
+                        if (null === $state) {
                             return null;
                         }
                         if (is_array($state)) {
@@ -143,4 +143,3 @@ class OauthAuthCodeResource extends XotBaseResource
         return parent::getEloquentQuery()->with(['user', 'client']);
     }
 }
-

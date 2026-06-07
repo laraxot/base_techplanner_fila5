@@ -185,7 +185,7 @@ final class ResolveCinematicHeroDataAction
 
     private function hasVolumeColumn(): bool
     {
-        $predict = new Predict();
+        $predict = new Predict;
 
         return Schema::connection($predict->getConnectionName())
             ->hasColumn($predict->getTable(), 'sum_credit_yes');

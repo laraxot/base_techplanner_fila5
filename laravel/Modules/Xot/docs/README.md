@@ -10,7 +10,7 @@ updated: 2026-06-05
 
 ## Overview
 
-Il modulo **Xot** è il nucleo fondativo dell'intero progetto Laraxot PTVX. Fornisce classi base, trait, servizi e configurazioni condivise da tutti gli altri moduli.
+Il modulo **Xot** è il nucleo fondativo dell'intero progetto [PROJECT_NAME] platform. Fornisce classi base, trait, servizi e configurazioni condivise da tutti gli altri moduli.
 
 ## Architettura
 

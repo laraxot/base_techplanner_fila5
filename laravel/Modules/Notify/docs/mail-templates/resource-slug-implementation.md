@@ -2,7 +2,8 @@
 
 ## Panoramica
 
-Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto Laraxot.
+Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto Quaeris.
+
 ## Implementazione nel Form Schema
 
 L'aggiunta del campo `slug` al form schema di `MailTemplateResource` segue le convenzioni del progetto che richiedono un array associativo con chiavi stringhe:
@@ -41,7 +42,8 @@ public static function getFormSchema(): array
 3. **Validazione Unicità**: L'opzione `unique(ignoreRecord: true)` garantisce unicità, escludendo il record corrente durante l'aggiornamento.
 4. **Generazione Automatica**: La callback `afterStateUpdated()` genera automaticamente lo slug dal nome quando si crea un nuovo record.
 
-## Conformità con gli Standard Laraxot
+## Conformità con gli Standard Quaeris
+
 Questa implementazione aderisce a diversi standard chiave del progetto:
 
 1. **XotBaseResource**: La risorsa estende `XotBaseResource` e quindi non definisce proprietà di navigazione come `$navigationIcon`.

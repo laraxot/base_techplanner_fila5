@@ -19,7 +19,7 @@ class ThemeComposer
     /**
      * Get menu items by name.
      *
-     * @return array<string, mixed>|null
+     * @return array<mixed, mixed>|null
      */
     public function getMenu(string $menu_name): ?array
     {
@@ -66,11 +66,8 @@ class ThemeComposer
 
     public function showPageContent(string $slug): Renderable
     {
-        Assert::isInstanceOf(
-            $page = Page::firstOrCreate(['slug' => $slug], ['title' => $slug, 'content_blocks' => []]),
-            Page::class,
-            '['.__LINE__.']['.__FILE__.']',
-        );
+        $page = Page::firstOrCreate(['slug' => $slug], ['title' => $slug, 'content_blocks' => []]);
+        Assert::isInstanceOf($page, Page::class, '['.__LINE__.']['.__FILE__.']');
         // $page = Page::firstOrCreate(['slug' => $slug], ['content_blocks' => []]);
         $blocks = $page->content_blocks;
         if (! is_array($blocks)) {
@@ -87,11 +84,8 @@ class ThemeComposer
 
     public function showPageSidebarContent(string $slug): Renderable
     {
-        Assert::isInstanceOf(
-            $page = Page::firstOrCreate(['slug' => $slug], ['sidebar_blocks' => []]),
-            Page::class,
-            '['.__LINE__.']['.__FILE__.']',
-        );
+        $page = Page::firstOrCreate(['slug' => $slug], ['sidebar_blocks' => []]);
+        Assert::isInstanceOf($page, Page::class, '['.__LINE__.']['.__FILE__.']');
         // $page = Page::firstOrCreate(['slug' => $slug], ['content_blocks' => []]);
         $blocks = $page->sidebar_blocks;
         if (! is_array($blocks)) {
@@ -109,11 +103,8 @@ class ThemeComposer
 
     public function showContent(string $slug): Renderable
     {
-        Assert::isInstanceOf(
-            $page = PageContent::firstOrCreate(['slug' => $slug], ['blocks' => []]),
-            PageContent::class,
-            '['.__LINE__.']['.__FILE__.']',
-        );
+        $page = PageContent::firstOrCreate(['slug' => $slug], ['blocks' => []]);
+        Assert::isInstanceOf($page, PageContent::class, '['.__LINE__.']['.__FILE__.']');
 
         $blocks = $page->blocks;
         if (! is_array($blocks)) {
@@ -136,7 +127,7 @@ class ThemeComposer
 
     public function getPageModel(string $slug): ?Page
     {
-        return Page::findUniqueBySlug($slug);
+        return Page::where('slug', $slug)->first();
     }
 
     public function getUrlPage(string $slug): string

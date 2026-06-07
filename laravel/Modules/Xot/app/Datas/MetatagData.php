@@ -14,45 +14,46 @@ use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Datas\Transformers\AssetTransformer;
 use Modules\Xot\Support\PaDesignColors;
+
+use function Safe\file_get_contents;
+
 use Spatie\LaravelData\Attributes\WithTransformer;
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 
-use function Safe\file_get_contents;
-
 /**
  * Class MetatagData.
  *
- * @property string $title
- * @property string $sitename
- * @property string $subtitle
- * @property string|null $generator
- * @property string $charset
- * @property string|null $author
- * @property string|null $description
- * @property string|null $keywords
- * @property string $nome_regione
- * @property string $nome_comune
- * @property string $site_title
- * @property string $logo
- * @property string $logo_square
- * @property string $logo_header
- * @property string $logo_header_dark
- * @property string $logo_height
- * @property string $logo_footer
- * @property string $logo_alt
- * @property string $hide_megamenu
- * @property string $hero_type
- * @property string $facebook_href
- * @property string $twitter_href
- * @property string $youtube_href
- * @property string $fastlink
- * @property string $color_primary
- * @property string $color_title
- * @property string $color_megamenu
- * @property string $color_hamburger
- * @property string $color_banner
- * @property string $favicon
+ * @property string                                                          $title
+ * @property string                                                          $sitename
+ * @property string                                                          $subtitle
+ * @property string|null                                                     $generator
+ * @property string                                                          $charset
+ * @property string|null                                                     $author
+ * @property string|null                                                     $description
+ * @property string|null                                                     $keywords
+ * @property string                                                          $nome_regione
+ * @property string                                                          $nome_comune
+ * @property string                                                          $site_title
+ * @property string                                                          $logo
+ * @property string                                                          $logo_square
+ * @property string                                                          $logo_header
+ * @property string                                                          $logo_header_dark
+ * @property string                                                          $logo_height
+ * @property string                                                          $logo_footer
+ * @property string                                                          $logo_alt
+ * @property string                                                          $hide_megamenu
+ * @property string                                                          $hero_type
+ * @property string                                                          $facebook_href
+ * @property string                                                          $twitter_href
+ * @property string                                                          $youtube_href
+ * @property string                                                          $fastlink
+ * @property string                                                          $color_primary
+ * @property string                                                          $color_title
+ * @property string                                                          $color_megamenu
+ * @property string                                                          $color_hamburger
+ * @property string                                                          $color_banner
+ * @property string                                                          $favicon
  * @property array<string, array{key?: string, color: string, hex?: string}> $colors
  *
  * @method string getBrandLogoBase64() Get the brand logo as base64 data URI for inline embedding
@@ -405,12 +406,25 @@ class MetatagData extends Data implements Wireable
      * Get all colors with proper type handling.
      * Converts custom colors to Filament color format for compatibility.
      *
-     * @return array<string, array<int, string>|string>
+     * @return array<string, array<int, string>>
      */
     public function getAllColors(): array
     {
         $filamentColors = $this->getFilamentColors();
         $customColors = [];
+        $normalizedFilamentColors = [];
+
+        foreach ($filamentColors as $key => $value) {
+            if (is_array($value)) {
+                $normalizedFilamentColors[$key] = array_values(array_map(
+                    static fn (mixed $color): string => (string) $color,
+                    $value,
+                ));
+                continue;
+            }
+
+            $normalizedFilamentColors[$key] = [(string) $value];
+        }
 
         // Convert custom color format to Filament color format
         foreach ($this->colors as $key => $value) {
@@ -421,7 +435,7 @@ class MetatagData extends Data implements Wireable
             }
         }
 
-        return array_merge($filamentColors, $customColors);
+        return array_merge($normalizedFilamentColors, $customColors);
     }
 
     /**
@@ -645,7 +659,7 @@ class MetatagData extends Data implements Wireable
      * Concatenate a title to the existing title.
      * This method allows adding page-specific titles to the base site title.
      *
-     * @param  string|null  $title  The title to concatenate
+     * @param string|null $title The title to concatenate
      */
     public function concatTitle(?string $title): self
     {
@@ -667,7 +681,7 @@ class MetatagData extends Data implements Wireable
      * Concatenate a description to the existing description.
      * This method allows adding page-specific descriptions to the base site description.
      *
-     * @param  string|null  $description  The description to concatenate
+     * @param string|null $description The description to concatenate
      */
     public function concatDescription(?string $description): self
     {

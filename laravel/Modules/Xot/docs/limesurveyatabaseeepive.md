@@ -6,6 +6,7 @@ The system utilizes three main database connections:
 
 ### 1. Limesurvey Database (`limesurvey` connection)
 - **Schema**: `txaesfry_healthcare_app_survey` 
+- **Schema**: `txaesfry_app_survey` 
 - **Purpose**: Main Limesurvey installation with surveys, questions, and responses
 - **Key tables**: 
   - `lime_questions` - Question structure and metadata
@@ -19,6 +20,10 @@ The system utilizes three main database connections:
 - **Purpose**: Application-specific data including survey mappings
 - **Key tables**:
   - `survey_pdfs` - Links Limesurvey surveys to healthcare_app functionality
+### 2. ExternalProject Database (`<nome progetto>` connection) 
+- **Purpose**: Application-specific data including survey mappings
+- **Key tables**:
+  - `survey_pdfs` - Links Limesurvey surveys to ExternalProject functionality
   - `question_charts` - Custom chart configurations for survey data
   - `charts` - Chart visualization settings
   - `contacts` - Participant contact and communication tracking
@@ -95,6 +100,7 @@ The system utilizes three main database connections:
 ## Integration Points
 
 ### healthcare_app-Specific Features
+### ExternalProject-Specific Features
 - Links Limesurvey data to `survey_pdfs` table via survey_id mapping
 - Custom chart configurations in `question_charts` table
 - Participant tracking through `contacts` table

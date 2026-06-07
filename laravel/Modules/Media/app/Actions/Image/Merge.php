@@ -7,9 +7,8 @@ namespace Modules\Media\Actions\Image;
 use Illuminate\Support\Facades\File;
 use Intervention\Image\Alignment;
 use Intervention\Image\Drivers\Gd\Driver as GdDriver;
-use Intervention\Image\ImageManager;
+use Intervention\Image\ImageManager as InterventionImageManager;
 use Intervention\Image\Interfaces\ImageInterface;
-use Intervention\Image\Interfaces\ImageManagerInterface;
 use Spatie\QueueableAction\QueueableAction;
 
 class Merge
@@ -25,7 +24,7 @@ class Merge
      */
     public function handle(string $path1, string $path2, string $outputPath): bool
     {
-        $manager = $this->createManager();
+        $manager = new InterventionImageManager(new GdDriver);
 
         $image1 = $manager->decodePath($path1);
         $image2 = $manager->decodePath($path2);
@@ -41,8 +40,12 @@ class Merge
     /**
      * Unisce array di immagini verticalmente.
      *
+     * Questo metodo unisce tutte le immagini in $filenames verticalmente
+     * in un'unica immagine, mantenendo la larghezza massima e sommando le altezze.
+     *
      * @param  array<int, string>  $filenames  Array di percorsi relativi (es: 'chart/123-0.png')
      * @param  string  $outputFilename  Nome file output relativo (es: 'chart/123.png')
+     * @return bool Successo operazione
      */
     public function execute(array $filenames, string $outputFilename): bool
     {
@@ -74,7 +77,7 @@ class Merge
             }
         }
 
-        $manager = $this->createManager();
+        $manager = new InterventionImageManager(new GdDriver);
 
         /** @var list<ImageInterface> $images */
         $images = [];
@@ -102,10 +105,5 @@ class Merge
         $final->save($outputPath);
 
         return File::exists($outputPath);
-    }
-
-    private function createManager(): ImageManagerInterface
-    {
-        return new ImageManager(new GdDriver());
     }
 }

@@ -18,7 +18,7 @@ class UsersRelationManager extends XotBaseRelationManager
     protected static ?string $recordTitleAttribute = 'name';
 
     /**
-     * @return array<string, \Filament\Tables\Columns\Column>
+     * @return array<string, Column>
      */
     #[\Override]
     public function getTableColumns(): array
@@ -32,4 +32,3 @@ class UsersRelationManager extends XotBaseRelationManager
         ];
     }
 }
-

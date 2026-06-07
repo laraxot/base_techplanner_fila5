@@ -119,9 +119,10 @@ if(!$this->hasColumn('subject')) {
 }
 ```
 
-## Applicazione a Laraxot
+## Applicazione a Quaeris
 
-Nel contesto di Laraxot, tutte le migrazioni che coinvolgono la conversione di campi esistenti a JSON devono seguire queste linee guida, in particolare:
+Nel contesto di Quaeris, tutte le migrazioni che coinvolgono la conversione di campi esistenti a JSON devono seguire queste linee guida, in particolare:
+
 1. Le migrazioni per `mail_templates` e tabelle simili
 2. Campi multilingua che utilizzano il trait `HasTranslations`
 3. Campi contenenti configurazioni o meta-dati strutturati
@@ -131,7 +132,7 @@ Nel contesto di Laraxot, tutte le migrazioni che coinvolgono la conversione di c
 È necessario esaminare tutte le migrazioni esistenti per identificare pattern simili di conversione diretta a JSON:
 
 ```bash
-grep -r "json.*change" /var/www/html/ptvx/laravel/Modules/*/database/migrations/
+grep -r "json.*change" /var/www/html/Quaeris/laravel/Modules/*/database/migrations/
 ```
 
 I problemi più comuni si verificano in migrazioni che coinvolgono campi con traduzioni multilingua o configurazioni serializzate.

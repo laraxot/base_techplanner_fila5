@@ -9,7 +9,7 @@ use Tests\TestCase;
 
 uses(TestCase::class);
 
-it('creates instance with required url', function (): void {
+it('creates instance with required url', function(): void {
     $data = new SocialShareData(url: 'https://laravelpizza.com');
 
     expect($data->url)->toBe('https://laravelpizza.com')
@@ -20,13 +20,13 @@ it('creates instance with required url', function (): void {
         ->and($data->via)->toBeNull();
 });
 
-it('has default platforms list', function (): void {
+it('has default platforms list', function(): void {
     $data = new SocialShareData(url: 'https://laravelpizza.com');
 
     expect($data->platforms)->toBe(['facebook', 'twitter', 'linkedin', 'whatsapp', 'telegram', 'copy']);
 });
 
-it('accepts all optional fields', function (): void {
+it('accepts all optional fields', function(): void {
     $data = new SocialShareData(
         url: 'https://laravelpizza.com/events/laravel-pizza-1',
         title: 'Laravel Pizza Meetup',
@@ -46,7 +46,7 @@ it('accepts all optional fields', function (): void {
         ->and($data->platforms)->toBe(['twitter', 'linkedin']);
 });
 
-it('can override platforms with custom list', function (): void {
+it('can override platforms with custom list', function(): void {
     $data = new SocialShareData(
         url: 'https://laravelpizza.com',
         platforms: ['twitter'],
@@ -56,7 +56,7 @@ it('can override platforms with custom list', function (): void {
         ->and($data->platforms)->toHaveCount(1);
 });
 
-it('serializes to array via Spatie Data', function (): void {
+it('serializes to array via Spatie Data', function(): void {
     $data = new SocialShareData(
         url: 'https://laravelpizza.com',
         title: 'Laravel Pizza',

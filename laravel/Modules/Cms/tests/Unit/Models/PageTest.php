@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
+use Modules\Cms\Models\BaseModelLang;
 use Modules\Cms\Models\Page;
+use Modules\Tenant\Models\Traits\SushiToJsons;
 
 test('page model can be instantiated', function (): void {
     $page = new Page();
@@ -11,7 +13,7 @@ test('page model can be instantiated', function (): void {
 
 test('page extends BaseModelLang', function (): void {
     $page = new Page();
-    expect($page)->toBeInstanceOf(Modules\Cms\Models\BaseModelLang::class);
+    expect($page)->toBeInstanceOf(BaseModelLang::class);
 });
 
 test('page has expected fillable fields', function (): void {
@@ -56,7 +58,7 @@ test('page has SushiToJsons trait', function (): void {
     $page = new Page();
     $traits = class_uses_recursive($page);
 
-    expect(array_values($traits))->toContain(Modules\Tenant\Models\Traits\SushiToJsons::class);
+    expect(array_values($traits))->toContain(SushiToJsons::class);
 });
 
 test('page has getRows method for sushi functionality', function (): void {

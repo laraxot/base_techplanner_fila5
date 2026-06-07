@@ -12,8 +12,7 @@ use Modules\Xot\Datas\XotData;
 /*
  * Class CreatePermissionsTable.
  */
-return new class() extends XotBaseMigration
-{
+return new class extends XotBaseMigration {
     /**
      * Run the migrations.
      */
@@ -26,7 +25,7 @@ return new class() extends XotBaseMigration
                 $cache_store = config('permission.cache.store');
                 $cache_key = config('permission.cache.key');
                 /** @var string|null $store */
-$store = $cache_store !== 'default' ? $cache_store : null;
+                $store = 'default' !== $cache_store ? $cache_store : null;
                 /** @var string $cache_key */
                 if (is_string($cache_key)) {
                     $cache->store($store)->forget($cache_key);
@@ -47,13 +46,13 @@ $store = $cache_store !== 'default' ? $cache_store : null;
             // Usa Schema::hasColumn direttamente per verificare esistenza
             $tableName = 'permissions';
             if (
-! Schema::connection('user')->hasColumn($tableName, 'created_at')
+                ! Schema::connection('user')->hasColumn($tableName, 'created_at')
                 && ! Schema::connection('user')->hasColumn($tableName, 'updated_at')
             ) {
                 $this->updateTimestamps($table);
             } else {
                 // Se i timestamp esistono già, aggiungi solo i campi user se mancanti
-$xot = XotData::make();
+                $xot = XotData::make();
                 $userClass = $xot->getUserClass();
                 if (! Schema::connection('user')->hasColumn($tableName, 'updated_by')) {
                     $table->foreignIdFor($userClass, 'updated_by')->nullable();

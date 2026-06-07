@@ -47,7 +47,11 @@ return [
             'label' => 'Disconnetti',
             'tooltip' => 'Disconnetti account social',
         ],
-'save' => 'Salva configurazione',
+        'save' => 'Salva configurazione',
+    ],
+    'messages' => [
+        'connected' => 'Account social connesso con successo',
+        'disconnected' => 'Account social disconnesso con successo',
         'config_saved' => 'Configurazione OAuth salvata con successo. Effettua il logout e rientra per applicare le modifiche.',
     ],
     'page' => [

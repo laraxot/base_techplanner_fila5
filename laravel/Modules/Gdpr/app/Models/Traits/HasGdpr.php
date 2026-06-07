@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Cache;
 use Modules\Gdpr\Enums\ConsentType;
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Models\Treatment;
-use Webmozart\Assert\Assert;
 
 /**
  * Trait HasGdpr.
@@ -89,8 +88,8 @@ trait HasGdpr
     /**
      * Give consent for a specific type.
      *
-     * @param  array<string, mixed>  $metadata
-     * @param  array<string, mixed>  $metadata
+     * @param array<string, mixed> $metadata
+     * @param array<string, mixed> $metadata
      */
     public function giveConsent(ConsentType|string $type, array $metadata = []): Consent
     {
@@ -140,11 +139,12 @@ trait HasGdpr
      */
     public function getMissingRequiredConsents(): array
     {
-        $givenConsents = $this->activeConsents()->pluck('type')->all();
-        Assert::allString($givenConsents);
+        $givenConsents = $this->activeConsents()->pluck('type')->toArray();
 
-        /** @var array<string> $givenConsents */
-        return array_values(array_diff(ConsentType::getRequiredConsentTypes(), $givenConsents));
+        $givenConsents = array_map(static fn (mixed $v): string => (string) $v, $givenConsents);
+
+        /* @var array<string> */
+        return array_diff(ConsentType::getRequiredConsentTypes(), $givenConsents);
     }
 
     /**

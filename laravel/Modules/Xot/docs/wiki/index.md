@@ -36,7 +36,6 @@ Indice operativo del wiki Xot (core framework).
 
 ## Regole collegate
 
-- [spatie-laravel-pdf-module-dependency.md](./concepts/spatie-laravel-pdf-module-dependency.md) — PDF / composer owner Xot
 - [ai-harness-xot-discipline.md](./concepts/ai-harness-xot-discipline.md) — harness agenti (canon moduli)
 - [second-brain-local-discipline.md](./concepts/second-brain-local-discipline.md)
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) (root)

@@ -6,7 +6,6 @@ namespace Modules\Xot\Providers;
 
 use BladeUI\Icons\Exceptions\SvgNotFound;
 use BladeUI\Icons\Factory as BladeIconsFactory;
-use Exception;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
@@ -21,8 +20,6 @@ use Webmozart\Assert\Assert;
 
 /**
  * Class XotBaseServiceProvider.
- *
- * @SuppressWarnings("PHPMD.CamelCasePropertyName")
  */
 abstract class XotBaseServiceProvider extends ServiceProvider
 {
@@ -60,8 +57,8 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerBladeIcons(): void
     {
-        if ($this->name === '') {
-            throw new Exception('name is empty on ['.static::class.']');
+        if ('' === $this->name) {
+            throw new \Exception('name is empty on ['.static::class.']');
         }
 
         // Blade UI Kit default set may already contain prefixes like "geo".
@@ -88,8 +85,8 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerViews(): void
     {
-        if ($this->name === '') {
-            throw new Exception('name is empty on ['.static::class.']');
+        if ('' === $this->name) {
+            throw new \Exception('name is empty on ['.static::class.']');
         }
 
         $viewPath = module_path($this->name, 'resources/views');
@@ -98,8 +95,8 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerTranslations(): void
     {
-        if ($this->name === '') {
-            throw new Exception('name is empty on ['.static::class.']');
+        if ('' === $this->name) {
+            throw new \Exception('name is empty on ['.static::class.']');
         }
 
         $langPath = $this->getLangPath();
@@ -116,10 +113,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerBladeComponents(): void
     {
-        if ($this->name === '') {
-            throw new \Exception('name is empty on ['.static::class.']');
-        }
-
         $componentViewPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-view');
 
         try {
@@ -138,10 +131,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerLivewireComponents(): void
     {
-        if ($this->name === '') {
-            throw new \Exception('name is empty on ['.static::class.']');
-        }
-
         $prefix = '';
         app(RegisterLivewireComponentsAction::class)
             ->execute($this->module_dir.'/../Http/Livewire', Str::before($this->module_ns, '\Providers'), $prefix);
@@ -149,18 +138,15 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerCommands(): void
     {
-        if ($this->name === '') {
-            throw new \Exception('name is empty on ['.static::class.']');
-        }
-
         $prefix = '';
+
         $comps = app(GetComponentsAction::class)
             ->execute(
                 $this->module_dir.'/../Console/Commands',
                 'Modules\\'.$this->name.'\\Console\\Commands',
                 $prefix,
             );
-        if ($comps->count() === 0) {
+        if (0 === $comps->count()) {
             return;
         }
         $commands = $comps->toArray();
@@ -208,4 +194,3 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         }
     }
 }
-

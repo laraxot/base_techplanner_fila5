@@ -53,6 +53,7 @@ Themes/[ThemeName]/
 │   │   ├── layouts/
 │   │   └── pages/
 ├── _healthcare_app_fila5_mono.code-workspace
+├── _app_fila5_mono.code-workspace
 ├── package.json
 ├── postcss.config.js
 ├── tailwind.config.js

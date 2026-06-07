@@ -14,16 +14,15 @@ parameters:
 
     ignoreErrors:
         - '#PHPDoc tag @mixin contains unknown class #'
-        - '#Static call to instance method Nwidart#'
-        - "#^Unsafe usage of new static#"
         - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#'
         - identifier: missingType.generics
         - identifier: missingType.iterableValue
         - identifier: larastan.noEnvCallsOutsideOfConfig
         - '#is used zero times and is not analysed#'
         - identifier: method.unused
-        - identifier: method.internalClass
-        - identifier: function.alreadyNarrowedType
+        # - identifier: method.internalClass
+        # - identifier: function.alreadyNarrowedType
+        
 
     excludePaths:
         - ./vendor/*

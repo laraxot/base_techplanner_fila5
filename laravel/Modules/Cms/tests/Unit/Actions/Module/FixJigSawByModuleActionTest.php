@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\File;
 use Modules\Cms\Actions\Module\FixJigSawByModuleAction;
 use Nwidart\Modules\Laravel\Module;
+use Symfony\Component\Finder\SplFileInfo;
 
 test('FixJigSawByModuleAction can be instantiated', function () {
     $action = new FixJigSawByModuleAction();
@@ -29,7 +30,7 @@ test('FixJigSawByModuleAction execute method returns array', function () {
     // Mock File facade to return our test stub file
     File::shouldReceive('allFiles')
         ->with(Mockery::any())
-        ->andReturn([new Symfony\Component\Finder\SplFileInfo($stubsDir.'/test.stub', '', 'test.stub')]);
+        ->andReturn([new SplFileInfo($stubsDir.'/test.stub', '', 'test.stub')]);
 
     $action = new FixJigSawByModuleAction();
     $result = $action->execute($module);

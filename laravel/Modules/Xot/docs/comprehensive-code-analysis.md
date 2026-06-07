@@ -467,11 +467,6 @@ private static ?self $instance = null;
 public static function getInstance(): self
 {
     if (! self::$instance instanceof \Modules\healthcare_app\Services\healthcare_appService) {
-// DUPLICATO in ModuloEsempioService.php
-private static ?self $instance = null;
-public static function getInstance(): self
-{
-    if (! self::$instance instanceof \Modules\ModuloEsempio\Services\ModuloEsempioService) {
         self::$instance = new self();
     }
     return self::$instance;
@@ -847,10 +842,6 @@ try {
 return [
     'database' => [
         'connection' => env('healthcare_app_DB_CONNECTION', 'healthcare_app'),
-// config/modulo_esempio.php
-return [
-    'database' => [
-        'connection' => env('PTVX_DB_CONNECTION', 'modulo_esempio'),
     ],
     'limesurvey' => [
         'api' => [

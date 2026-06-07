@@ -58,7 +58,7 @@ class TeamInvitationsRelationManager extends XotBaseRelationManager
     }
 
     /**
-     * @return array<string, \Filament\Actions\BulkAction>
+     * @return array<string, BulkAction>
      */
     #[\Override]
     public function getTableBulkActions(): array
@@ -68,4 +68,3 @@ class TeamInvitationsRelationManager extends XotBaseRelationManager
         ];
     }
 }
-

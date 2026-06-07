@@ -43,10 +43,6 @@ return [
         'confirm_password' => 'Confirm Password',
         'save' => 'Save',
         'update' => 'Update',
-        'services' => 'My Services',
-        'practices' => 'My Practices',
-        'notifications' => 'Notifications',
-        'logout' => 'Log Out',
     ],
     'user_dropdown' => [
         'manage_account' => 'Account Management',
@@ -55,6 +51,13 @@ return [
         'logout' => 'Logout',
         'login_link' => 'Sign in',
         'register_link' => 'Register',
+    ],
+    'profile_services' => [
+        'services' => 'My Services',
+        'practices' => 'My Practices',
+        'notifications' => 'Notifications',
+        'settings' => 'Settings',
+        'logout' => 'Log Out',
     ],
     'navigation' => [
         'open_menu' => 'Open main menu',

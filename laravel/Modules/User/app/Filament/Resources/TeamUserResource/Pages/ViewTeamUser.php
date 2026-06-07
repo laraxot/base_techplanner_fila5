@@ -15,7 +15,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
  */
 class ViewTeamUser extends XotBaseViewRecord
 {
-    protected static string $resource = \Modules\User\Filament\Resources\TeamUserResource::class;
+    protected static string $resource = TeamUserResource::class;
 
     /**
      * @return array<string, Component>
@@ -35,4 +35,3 @@ class ViewTeamUser extends XotBaseViewRecord
         ];
     }
 }
-

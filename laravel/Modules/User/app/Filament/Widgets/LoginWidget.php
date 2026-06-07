@@ -8,11 +8,12 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
+use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
-use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+    use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
  * LoginWidget: Widget di login conforme alle regole Windsurf/Xot.
@@ -31,6 +32,14 @@ class LoginWidget extends XotBaseSchemaWidget
     public function mount(): void
     {
         $this->form->fill();
+    }
+
+    public function render(): View
+    {
+        /** @var view-string $view */
+        $view = 'pub_theme::filament.widgets.auth.login';
+
+        return view($view, $this->getViewData());
     }
 
     /**

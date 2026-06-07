@@ -6,6 +6,7 @@
 
 #### Modules Without README.md
 - [ ] **healthcare_app** - Core business module needs comprehensive documentation
+- [ ] **ExternalProject** - Core business module needs comprehensive documentation
 - [ ] **Limesurvey** - External integration documentation missing
 - [ ] **CloudStorage** - Cloud service integration patterns undocumented
 - [ ] **DbForge** - Database tools documentation incomplete
@@ -229,6 +230,7 @@ php artisan laraxot:make:resource CustomerResource --module=CustomerManagement
 
 #### 1.1 Module Documentation (Weeks 1-2)
 - [ ] Create comprehensive README.md for healthcare_app module
+- [ ] Create comprehensive README.md for ExternalProject module
 - [ ] Document Limesurvey integration patterns
 - [ ] Create CloudStorage service documentation
 - [ ] Complete DbForge database tools documentation

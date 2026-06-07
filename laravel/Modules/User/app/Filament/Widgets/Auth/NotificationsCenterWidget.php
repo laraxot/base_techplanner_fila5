@@ -5,10 +5,11 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Schemas\Components\Component;
+use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Modules\User\Models\BaseUser;
-use Modules\User\Models\Notification;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -18,8 +19,8 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
 {
     protected string $view = 'user::widgets.auth.notifications-center-widget';
 
-    /** @var DatabaseNotificationCollection<int, Notification> */
-    public DatabaseNotificationCollection $notifications;
+    /** @var DatabaseNotificationCollection<int, DatabaseNotification>|Collection */
+    public Collection|DatabaseNotificationCollection $notifications;
 
     public int $unreadCount = 0;
 
@@ -65,13 +66,15 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     {
         $user = $this->authUser();
         if ($user === null) {
-            $this->notifications = new DatabaseNotificationCollection();
+            $this->notifications = collect();
             $this->unreadCount = 0;
 
             return;
         }
 
-        $this->notifications = $user->notifications()->latest()->limit(50)->get();
+        /** @var Collection<int, DatabaseNotification> $notifications */
+        $notifications = $user->notifications()->latest()->limit(50)->get();
+        $this->notifications = $notifications;
         $this->unreadCount = $user->unreadNotifications()->count();
     }
 

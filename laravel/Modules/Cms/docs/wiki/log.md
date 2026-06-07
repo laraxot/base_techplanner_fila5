@@ -1,9 +1,3 @@
-## [2026-06-06] composer | laravel/folio owner Cms — verifica BMAD
-
-- Require in `Modules/Cms/composer.json` (`^1.2`); **assente** da root e da Xot
-- Canon: [laravel-folio-module-dependency.md](concepts/laravel-folio-module-dependency.md)
-- Guard: `bashscripts/tools/check-composer-module-dependency-owners.sh`
-
 ## [2026-06-05] docs | Folio routing — mount() tipizzato + @volt statico
 
 - `folio_routing_system.md`: `mount(string $container0, string $slug0 = '')`; anti-pattern senza `request()->route()`

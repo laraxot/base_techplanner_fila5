@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 return [
-'failed' => [
+    'failed' => [
         'key' => 'user::messages.failed',
         'text' => 'Invalid credentials.',
         'description' => 'Error message shown when login credentials are invalid',

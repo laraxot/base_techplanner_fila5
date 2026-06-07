@@ -10,8 +10,7 @@ use Illuminate\View\Component;
 use Modules\UI\Tests\TestCase;
 
 test('ui components can be rendered', function () {
-    $component = new class() extends Component
-    {
+    $component = new class extends Component {
         public function render()
         {
             return view('ui::components.ui.button');

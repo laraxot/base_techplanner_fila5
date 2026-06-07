@@ -8,7 +8,6 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Filament\Traits\TransTrait;
-use Filament\Forms\Form;
 
 trait EnumTrait
 {
@@ -101,8 +100,8 @@ trait EnumTrait
      * ```
      */
     /**
-     * @param  Blueprint  $table  The table blueprint
-     * @param  XotBaseMigration|null  $migration  XotBaseMigration instance for UPDATE context (provides hasColumn())
+     * @param Blueprint             $table     The table blueprint
+     * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context (provides hasColumn())
      */
     public static function columns(Blueprint $table, ?XotBaseMigration $migration = null): void
     {
@@ -111,7 +110,7 @@ trait EnumTrait
         // }
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
-            if ($migration === null || ! $migration->hasColumn($name)) {
+            if (null === $migration || ! $migration->hasColumn($name)) {
                 $definition($table);
             }
         }
@@ -140,7 +139,7 @@ trait EnumTrait
      */
     public static function getColumnNames(): array
     {
-        return array_values(array_map(static fn ($case): string => (string) $case->value, static::cases()));
+        return array_values(array_map(fn ($case): string => (string) $case->value, static::cases()));
     }
 
     /**

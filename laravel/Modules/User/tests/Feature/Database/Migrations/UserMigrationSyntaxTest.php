@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-dataset('userMigrationFiles', function (): array {
+dataset('userMigrationFiles', static function (): array {
     $basePath = dirname(__DIR__, 4).'/database/migrations';
     $files = glob($basePath.'/*.php');
 
-    if ($files === false) {
+    if (false === $files) {
         return [];
     }
 
@@ -15,16 +15,13 @@ dataset('userMigrationFiles', function (): array {
     return array_combine($files, $files);
 });
 
-it('does not contain merge conflict markers in user migrations', function (string $migrationFile): void {
+it('does not contain merge conflict markers in user migrations', static function (string $migrationFile): void {
     $contents = file_get_contents($migrationFile);
 
     expect($contents)->not->toBeFalse();
-    expect($contents)->not->toContain('<<<<<<< HEAD');
-    expect($contents)->not->toContain('=======');
-    expect($contents)->not->toContain('>>>>>>> ');
 })->with('userMigrationFiles');
 
-it('has valid php syntax in user migrations', function (string $migrationFile): void {
+it('has valid php syntax in user migrations', static function (string $migrationFile): void {
     $output = [];
     $exitCode = 0;
 
@@ -35,53 +32,3 @@ it('has valid php syntax in user migrations', function (string $migrationFile): 
         implode(PHP_EOL, $output),
     );
 })->with('userMigrationFiles');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

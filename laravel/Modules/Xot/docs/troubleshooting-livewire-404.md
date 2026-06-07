@@ -57,11 +57,6 @@ Se vuoi usare `healthcare_app.local`, aggiungi al file hosts:
 **Linux/Mac**: `/etc/hosts`
 ```
 127.0.0.1 healthcare_app.local
-Se vuoi usare `ptvx.local`, aggiungi al file hosts:
-
-**Linux/Mac**: `/etc/hosts`
-```
-127.0.0.1 ptvx.local
 ```
 
 **Windows**: `C:\Windows\System32\drivers\etc\hosts`
@@ -70,10 +65,6 @@ Se vuoi usare `ptvx.local`, aggiungi al file hosts:
 ```
 
 Poi accedi tramite: `http://healthcare_app.local:8000`
-127.0.0.1 ptvx.local
-```
-
-Poi accedi tramite: `http://ptvx.local:8000`
 
 ### Soluzione 3: Trusted Proxies (Per Ambienti Complessi)
 

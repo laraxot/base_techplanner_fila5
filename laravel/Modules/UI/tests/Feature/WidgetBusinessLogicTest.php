@@ -104,7 +104,7 @@ it('group widget can group related content', function (): void {
     expect($widget)->not()->toBeNull();
     expect($widget)->toBeInstanceOf(GroupWidget::class);
 
-expect(method_exists($widget, 'render'))->toBeTrue();
+    expect(method_exists($widget, 'render'))->toBeTrue();
     expect(method_exists($widget, 'getFormSchema'))->toBeTrue();
 });
 
@@ -116,7 +116,7 @@ it('redirect widget can handle redirects', function (): void {
     expect($widget)->not()->toBeNull();
     expect($widget)->toBeInstanceOf(RedirectWidget::class);
 
-expect(method_exists($widget, 'render'))->toBeTrue();
+    expect(method_exists($widget, 'render'))->toBeTrue();
     expect(method_exists($widget, 'getFormSchema'))->toBeTrue();
 });
 
@@ -135,7 +135,7 @@ it('widgets can be configured with custom data', function (): void {
     // Arrange
     $widget = new StatWithIconWidget();
 
-expect(method_exists($widget, 'render'))->toBeTrue();
+    expect(method_exists($widget, 'render'))->toBeTrue();
     expect(method_exists($widget, 'getFormSchema'))->toBeTrue();
     expect(method_exists($widget, 'getData'))->toBeTrue();
 });

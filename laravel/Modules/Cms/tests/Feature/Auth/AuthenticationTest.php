@@ -45,7 +45,7 @@ test('users can authenticate using the login screen', function (): void {
 });
 
 /*
- * test('users cannot authenticate with invalid password', function (): void {
+ * test('users cannot authenticate with invalid password', function(): void {
  * $userClass = XotData::make()->getUserClass();
  * $user = $userClass::factory()->create();
  *
@@ -59,7 +59,7 @@ test('users can authenticate using the login screen', function (): void {
  * expect(Auth::guest())->toBeTrue();
  * });
  *
- * test('users can logout', function (): void {
+ * test('users can logout', function(): void {
  * $userClass = XotData::make()->getUserClass();
  * $user = $userClass::factory()->create();
  *

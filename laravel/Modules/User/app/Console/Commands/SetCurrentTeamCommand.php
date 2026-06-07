@@ -10,6 +10,8 @@ use Illuminate\Database\Eloquent\Model;
 use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
 
+use Modules\Xot\Datas\XotData;
+
 /**
  * Comando per impostare il team corrente per un utente.
  */
@@ -22,8 +24,6 @@ class SetCurrentTeamCommand extends Command
 
     /**
      * The console command description.
-     *
-     * @var string
      */
     protected $description = 'Assign current team to user';
 
@@ -96,4 +96,3 @@ class SetCurrentTeamCommand extends Command
     //    ];
     // }
 }
-

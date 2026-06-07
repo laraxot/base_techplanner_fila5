@@ -2,6 +2,7 @@
 
 ## Overview
 In the `ptvx` project, providing a multi-language experience with localized URLs is essential for accessibility and SEO. This document explores the integration between [`mcamara/laravel-localization`](https://github.com/mcamara/laravel-localization) and [`laravel/folio`](https://github.com/laravel/folio), ensuring that our page routing system supports language prefixes and locale-specific content in a healthcare context.
+
 ## Purpose of Integration
 - **Localized URLs**: Enable language prefixes in URLs (e.g., `/en/services`, `/it/servizi`) for better user experience and SEO.
 - **Dynamic Page Routing**: Use Laravel Folio for managing page routes directly from Blade files while maintaining locale awareness.

@@ -207,7 +207,7 @@ class UserMassSeeder extends Seeder
         $this->info('Creazione utenti con profili completi...');
 
         // Crea 200 utenti generici
-$userFactory = UserFactory::new();
+        $userFactory = UserFactory::new();
         /** @var Collection<int, User> $users */
         $users = $userFactory->count(200)->create([
             'email_verified_at' => Carbon::now(),
@@ -215,7 +215,7 @@ $userFactory = UserFactory::new();
         ]);
 
         // Crea profili per tutti gli utenti
-$profileFactory = ProfileFactory::new();
+        $profileFactory = ProfileFactory::new();
         foreach ($users as $user) {
             $profileFactory->create([
                 'user_id' => $user->id,
@@ -225,7 +225,7 @@ $profileFactory = ProfileFactory::new();
         }
 
         // Assegna ruoli casuali
-/** @var Collection<int, \Spatie\Permission\Models\Role> $roles */
+        /** @var Collection<int, \Spatie\Permission\Models\Role> $roles */
         $roles = Role::all();
         foreach ($users as $user) {
             $randomRole = $roles->random();
@@ -243,7 +243,7 @@ $profileFactory = ProfileFactory::new();
         $this->info('Creazione log di autenticazione...');
 
         // Crea 1000 log di autenticazione
-$logFactory = AuthenticationLogFactory::new();
+        $logFactory = AuthenticationLogFactory::new();
         /** @var Collection<int, AuthenticationLog> $logs */
         $logs = $logFactory->count(1000)->create([
             'created_at' => Carbon::now()->subDays(rand(1, 30)),
@@ -260,7 +260,7 @@ $logFactory = AuthenticationLogFactory::new();
         $this->info('Creazione dispositivi utente...');
 
         // Crea 500 dispositivi
-$deviceFactory = DeviceFactory::new();
+        $deviceFactory = DeviceFactory::new();
         /** @var Collection<int, Device> $devices */
         $devices = $deviceFactory->count(500)
             ->create([
@@ -278,7 +278,7 @@ $deviceFactory = DeviceFactory::new();
         $this->info('Creazione provider social...');
 
         // Crea 100 provider social
-$providerFactory = SocialProviderFactory::new();
+        $providerFactory = SocialProviderFactory::new();
         /** @var Collection<int, SocialProvider> $providers */
         $providers = $providerFactory->count(100)->create([
             'created_at' => Carbon::now()->subDays(rand(1, 180)),

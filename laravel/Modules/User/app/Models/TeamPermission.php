@@ -32,6 +32,23 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
+ * @property string|null          $name
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ *
+ * @method static \Modules\User\Database\Factories\TeamPermissionFactory factory($count = null, $state = [])
+ * @method static Builder<static>|TeamPermission                         whereCreatedAt($value)
+ * @method static Builder<static>|TeamPermission                         whereCreatedBy($value)
+ * @method static Builder<static>|TeamPermission                         whereDeletedAt($value)
+ * @method static Builder<static>|TeamPermission                         whereDeletedBy($value)
+ * @method static Builder<static>|TeamPermission                         whereId($value)
+ * @method static Builder<static>|TeamPermission                         whereName($value)
+ * @method static Builder<static>|TeamPermission                         wherePermission($value)
+ * @method static Builder<static>|TeamPermission                         whereTeamId($value)
+ * @method static Builder<static>|TeamPermission                         whereUpdatedAt($value)
+ * @method static Builder<static>|TeamPermission                         whereUpdatedBy($value)
  *
  * @mixin \Eloquent
  */
@@ -39,8 +56,6 @@ class TeamPermission extends BaseModel
 {
     /**
      * The database connection that should be used by the model.
-     *
-     * @var string
      */
     protected $connection = 'user';
 
@@ -71,4 +86,3 @@ class TeamPermission extends BaseModel
         return $this->belongsTo(User::class);
     }
 }
-

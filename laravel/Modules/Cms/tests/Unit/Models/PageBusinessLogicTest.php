@@ -15,6 +15,7 @@ describe('Page Business Logic', function (): void {
 
     test('page has translatable fields configured', function (): void {
         $page = new Page();
+        $page = new Page();
 
         expect($page->translatable)->toEqual([
             'title',
@@ -25,6 +26,7 @@ describe('Page Business Logic', function (): void {
     });
 
     test('page has expected fillable fields', function (): void {
+        $page = new Page();
         $page = new Page();
         $expectedFillable = [
             'content',
@@ -54,20 +56,17 @@ describe('Page Business Logic', function (): void {
 
     test('page has correct casts for blocks and arrays', function (): void {
         $page = new Page();
-        /** @phpstan-ignore-next-line method.nonObject */
+        $page = new Page();
         $casts = $page->getCasts();
 
-        /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
         expect($casts['content_blocks'])->toBe('array');
-        /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
         expect($casts['sidebar_blocks'])->toBe('array');
-        /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
         expect($casts['footer_blocks'])->toBe('array');
-        /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
         expect($casts['middleware'])->toBe('array');
     });
 
     test('page has schema definition for structured data', function (): void {
+        $page = new Page();
         $page = new Page();
 
         // Use reflection to access protected $schema property
@@ -84,6 +83,7 @@ describe('Page Business Logic', function (): void {
     });
 
     test('page can get rows for sushi functionality', function (): void {
+        $page = new Page();
         $page = new Page();
 
         expect(method_exists($page, 'getRows'))->toBeTrue();

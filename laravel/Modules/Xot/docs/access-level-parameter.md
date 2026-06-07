@@ -1,8 +1,3 @@
-# Fixing Access Level and Parameter Initialization Issues
-
-## Issue 1: Access Level Mismatch in getTableHeaderActions()
-
-### Problem
 ---
 module: theme
 topic: access-level-parameter

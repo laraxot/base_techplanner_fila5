@@ -168,6 +168,7 @@ Modules/
 │   │   └── seeders/
 │   └── app/
 └── healthcare_app/
+└── ExternalProject/
     ├── database/
     │   ├── factories/
     │   ├── migrations/

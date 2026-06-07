@@ -20,6 +20,7 @@
   - Invalid binary operations
 
 #### healthcare_app Module (Complex Issues)
+#### ModuloEsempio Module (Complex Issues)
 - **Errors:** ~500+ across chart export and quantum actions
 - **Main Issues:**
   - Missing class definitions (quantum-related classes)
@@ -57,6 +58,9 @@ Function preg_replace is unsafe to use. Please add 'use function Safe\preg_repla
 Class Modules\healthcare_app\Actions\Charts\Quantum\GenerateConsciousChartAction
 implements unknown interface Spatie\Queable\Contracts\Queable.
 Class Modules\healthcare_app\Actions\Charts\Quantum\GenerateConsciousChartAction
+Class Modules\ModuloEsempio\Actions\Charts\Quantum\GenerateConsciousChartAction
+implements unknown interface Spatie\Queable\Contracts\Queable.
+Class Modules\ModuloEsempio\Actions\Charts\Quantum\GenerateConsciousChartAction
 uses unknown trait Spatie\Queable\QueableAction.
 ```
 
@@ -79,6 +83,11 @@ uses unknown trait Spatie\Queable\QueableAction.
 - `healthcare_app/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
 - `healthcare_app/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
 - `healthcare_app/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
+#### ModuloEsempio Module Issues
+**Primary Files:**
+- `ModuloEsempio/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
+- `ModuloEsempio/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
+- `ModuloEsempio/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
 
 **Key Problems:**
 1. **Missing Classes**: Quantum architecture classes not implemented

@@ -1,9 +1,14 @@
-## [2026-06-06] composer | spatie/laravel-pdf — vendor modulo rimosso + PHPStan OK
+## [2026-06-07] phpstan | DTO factory self per run Modules no-flag
 
-- `class.notFound` su `Pdf` facade risolto: require in `Modules/Xot/composer.json`, sync `laravel/vendor/spatie/laravel-pdf`
-- Rimosso `Modules/Xot/vendor/` stale (regola merge plugin — un solo vendor autorevole)
-- Canon: [spatie-laravel-pdf-module-dependency.md](concepts/spatie-laravel-pdf-module-dependency.md) · issue [#16](https://github.com/laraxot/base_techplanner_fila5/issues/16)
-- Bootstrap: riga **Composer** in [agent-bootstrap-compact.md](../../../../docs/wiki/concepts/agent-bootstrap-compact.md)
+- `cd laravel && ./vendor/bin/phpstan analyse Modules` -> **4993 file, [OK] No errors**.
+- DTO Xot concreti: factory `make()` con ritorno `self` e `new self()`, evitando `new static()` e PHPDoc `@var static` usati solo per placare PHPStan.
+- Coinvolti: `ArticleData`, `AuthData`, `CookieData`, `FilemanagerData`, `MailData`, `NotificationData`, `OptionData`, `PwaData`, `RouteData`, `SearchEngineData`, `SubscriptionData`.
+
+## [2026-06-07] quality | PHPStan shared Xot patterns
+
+- Full gate root: `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1` → **4993 file, zero errori**.
+- Pattern Xot: `formClass(): ?class-string` invece di stringa vuota, `getFormFill()` normalizzato a `array<string,mixed>`, `view-string` locale prima di `->view()`, dynamic fillable via hook `getDynamicFillableEnums()`.
+- Propagazione: `Client` override hook dynamic fillable; `XotBaseResource::getPages()` evita shape sealed per risorse con pagine extra.
 
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 

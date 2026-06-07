@@ -26,7 +26,23 @@ test('blocks component class exists and can be instantiated', function (): void 
     $component = new Blocks('ui::components.render.blocks', []);
 
     expect($component)->toBeInstanceOf(Blocks::class)
-        ->and($component->blocks)->toBeArray();
+        ->and($component->blocks)->toBeArray()
+        ->and($component->view)->toBe('ui::components.render.blocks');
+});
+
+test('discovered blocks expose the expected metadata keys', function (): void {
+    $allBlocks = app(GetAllBlocksAction::class)->execute();
+
+    $allBlocks->each(function (mixed $block): void {
+        if (! method_exists($block, 'toArray')) {
+            return;
+        }
+
+        /** @var array<string, mixed> $blockArray */
+        $blockArray = $block->toArray();
+
+        expect($blockArray)->toHaveKeys(['name', 'class', 'module', 'path']);
+    });
 });
 
 test('homepage request is reachable when route is available', function (): void {

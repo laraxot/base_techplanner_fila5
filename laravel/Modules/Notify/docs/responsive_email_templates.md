@@ -2,7 +2,8 @@
 
 ## Introduzione
 
-Questa guida fornisce una panoramica completa sulla creazione e l'utilizzo di template email HTML responsive nel contesto di Laraxot, con focus su compatibilità, engagement e best practices di settore. 
+Questa guida fornisce una panoramica completa sulla creazione e l'utilizzo di template email HTML responsive nel contesto di Quaeris, con focus su compatibilità, engagement e best practices di settore.
+
 ## Principi Fondamentali
 
 ### 1. Responsive Design
@@ -73,7 +74,7 @@ Migliore esperienza su client moderni:
 </div>
 ```
 
-Per Laraxot, si raccomanda un **approccio ibrido**:
+Per Quaeris, si raccomanda un **approccio ibrido**:
 - Struttura base con tabelle per massima compatibilità
 - CSS moderno con fallback per funzionalità avanzate
 

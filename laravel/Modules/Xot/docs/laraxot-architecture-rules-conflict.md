@@ -257,10 +257,6 @@ namespace Modules\healthcare_app\Filament\Resources;
 
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\healthcare_app\Models\QuestionChart;
-namespace Modules\ModuloEsempio\Filament\Resources;
-
-use Modules\Xot\Filament\Resources\XotBaseResource;
-use Modules\ModuloEsempio\Models\QuestionChart;
 
 class QuestionChartResource extends XotBaseResource
 {

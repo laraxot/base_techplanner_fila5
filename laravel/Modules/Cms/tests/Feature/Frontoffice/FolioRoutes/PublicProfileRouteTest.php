@@ -16,7 +16,6 @@ it('renders the public profile route using the localized profile page', function
         'lang' => 'it',
     ]);
 
-    /** @phpstan-ignore-next-line property.notFound */
     $response = $this->get('/it/profile/'.$user->getKey());
 
     $response->assertOk()

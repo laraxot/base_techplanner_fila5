@@ -49,11 +49,6 @@
 - **Resolved Issues**:
     - **User**: Fixed syntax errors in `AuthenticationLogResource` (conflict resolution) and `ViewPasswordReset`.
     - **healthcare_app**: Fixed `DashboardV2` widget imports.
-- **Scope**: `Tenant`, `Lang`, `Media`, `UI`, `Activity`, `CloudStorage`, `Cms`, `Gdpr`, `Geo`, `Job`, `Limesurvey`, `User`, `ModuloEsempio`
-- **Status**: ✅ **VERIFIED** (PHPStan Level 10 - 4204 files)
-- **Resolved Issues**:
-    - **User**: Fixed syntax errors in `AuthenticationLogResource` (conflict resolution) and `ViewPasswordReset`.
-    - **ModuloEsempio**: Fixed `DashboardV2` widget imports.
     - **UI**: Fixed `RadioBadge` PHPDoc syntax.
     - **Global**: 0 Errors found across entire codebase.
 

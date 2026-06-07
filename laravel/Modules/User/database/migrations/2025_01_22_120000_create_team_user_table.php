@@ -11,8 +11,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Questa migrazione gestisce sia la creazione che l'aggiornamento della tabella team_user.
  * Se la tabella esiste già con id UUID, viene convertita a id autoincrement.
  */
-return new class() extends XotBaseMigration
-{
+return new class extends XotBaseMigration {
     /**
      * Nome della tabella gestita dalla migrazione.
      */
@@ -36,11 +35,8 @@ return new class() extends XotBaseMigration
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-$idType = $this->getColumnType('id');
-            $hasNumericAutoincrementId = \in_array($idType, ['bigint', 'integer'], true);
-
-            // Converte solo i vecchi schemi con `id` non bigint (es. UUID/string) — skip SQLite integer id.
-            if ($this->hasColumn('id') && ! $hasNumericAutoincrementId && $this->isMysqlFamilyDriver()) {
+            // Converte solo i vecchi schemi con `id` non bigint (es. UUID/string).
+            if ($this->hasColumn('id') && 'bigint' !== $this->getColumnType('id')) {
                 // Rimuoviamo la PRIMARY KEY esistente
                 $this->dropPrimaryKey();
 
@@ -54,7 +50,7 @@ $idType = $this->getColumnType('id');
                     $table->id()->first();
                 }
 
-// Impostiamo la nuova PRIMARY KEY su id (MySQL/MariaDB)
+                // Impostiamo la nuova PRIMARY KEY su id
                 $this->query('ALTER TABLE `'.$this->table_name.'` ADD PRIMARY KEY (`id`)');
             }
 

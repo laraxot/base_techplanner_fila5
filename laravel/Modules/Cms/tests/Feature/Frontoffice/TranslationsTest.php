@@ -20,7 +20,6 @@ uses(TestCase::class);
  * @see \Modules\Cms\Http\Middleware\SetFolioLocale
  */
 test('auth buttons show correct translation for German locale on login page', function () {
-    /** @phpstan-ignore-next-line property.notFound */
     $response = $this->get('/de/auth/login');
 
     $status = (int) $response->getStatusCode();
@@ -47,7 +46,6 @@ test('auth buttons show correct translation for German locale on login page', fu
 });
 
 test('auth buttons show correct translation for Italian locale on login page', function () {
-    /** @phpstan-ignore-next-line property.notFound */
     $response = $this->get('/it/auth/login');
 
     $status = (int) $response->getStatusCode();
@@ -72,7 +70,6 @@ test('auth buttons show correct translation for Italian locale on login page', f
 });
 
 test('auth buttons show correct translation for English locale on login page', function () {
-    /** @phpstan-ignore-next-line property.notFound */
     $response = $this->get('/en/auth/login');
 
     $status = (int) $response->getStatusCode();

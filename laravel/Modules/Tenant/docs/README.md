@@ -1,3 +1,11 @@
+---
+title: "Tenant Module Documentation"
+type: documentation
+tags: [module, documentation]
+created: 2026-06-05
+updated: 2026-06-05
+---
+
 # Modulo Tenant - Multi-Tenancy
 
 ## Overview
@@ -71,3 +79,17 @@ class User extends Authenticatable
 ## Backlinks
 
 - [Configurazione Root](../../../docs/TENANT_MODULE.md)
+
+
+## Standard Rules & Workflow
+
+- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
+- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
+- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
+
+## Documentation
+
+- [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — Pattern per caricamento efficiente
+- [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
+- [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
+- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout

@@ -11,7 +11,6 @@ use Filament\Tables\Columns\TextColumn;
 // use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
 // use LaraZeus\SpatieTranslatable\Resources\Pages\ListRecords\Concerns\Translatable;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-use Filament\Tables\Table;
 
 class ListCategories extends XotBaseListRecords
 {

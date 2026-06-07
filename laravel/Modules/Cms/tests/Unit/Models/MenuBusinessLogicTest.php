@@ -10,6 +10,7 @@ use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
 use function Safe\class_uses;
 
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Builder;
+use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 
 describe('Menu Business Logic', function () {
     test('menu extends base model', function () {
@@ -25,7 +26,7 @@ describe('Menu Business Logic', function () {
         $traits = class_uses_recursive(Menu::class);
 
         // Menu uses HasRecursiveRelationships from staudenmeir/laravel-adjacency-list
-        expect(array_values($traits))->toContain(Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships::class);
+        expect(array_values($traits))->toContain(HasRecursiveRelationships::class);
     });
 
     test('menu has sushi to json trait', function () {

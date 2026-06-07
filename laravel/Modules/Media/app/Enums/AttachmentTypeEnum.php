@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Media\Enums;
 
+use Modules\Xot\Traits\EnumTrait;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Support\Facades\Lang;
-use Modules\Xot\Traits\EnumTrait;
 
 enum AttachmentTypeEnum: string implements HasLabel
 {
@@ -43,6 +43,8 @@ enum AttachmentTypeEnum: string implements HasLabel
 
         return null;
     }
+
+    
 
     // private static function translateBaseUniquePath(): string
     // {

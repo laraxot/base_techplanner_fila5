@@ -9,8 +9,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
-use Filament\Support\Components\Component;
-use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Datas\XotData;
@@ -30,12 +28,10 @@ class UserResource extends XotBaseResource
     //    static::$extendFormCallback = $callback;
     // }
 
-    /**
-     * @return array<string, Component>
-     */
     #[\Override]
     public static function getFormSchema(): array
     {
+        /** @var array<int|string, \Filament\Schemas\Components\Component> */
         return UserForm::getFormSchema();
     }
 
@@ -60,14 +56,13 @@ class UserResource extends XotBaseResource
     /**
      * Get the model class name for this resource.
      *
-     * @return class-string<Model>
+     * @return class-string
      */
     #[\Override]
     public static function getModel(): string
     {
         $xot = XotData::make();
 
-        /* @var class-string<Model> */
         return $xot->getUserClass();
     }
 }

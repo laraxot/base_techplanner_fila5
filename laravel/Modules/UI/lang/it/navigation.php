@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 return [
-'navigation' => [
+    'navigation' => [
         'label' => 'Navigazione',
         'plural_label' => 'Navigazioni',
         'group' => 'Gestione Contenuti',

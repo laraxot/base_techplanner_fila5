@@ -11,7 +11,7 @@ use Tests\TestCase;
 
 uses(TestCase::class);
 
-it('registers metatag service singleton and provides list', function (): void {
+it('registers metatag service singleton and provides list', function(): void {
     $provider = new SeoServiceProvider(app());
     $provider->register();
 
@@ -23,7 +23,7 @@ it('registers metatag service singleton and provides list', function (): void {
         ->and($provider->provides())->toContain(MetatagService::class);
 });
 
-it('event service provider enables event discovery', function (): void {
+it('event service provider enables event discovery', function(): void {
     $reflection = new ReflectionClass(EventServiceProvider::class);
     $property = $reflection->getProperty('shouldDiscoverEvents');
     $property->setAccessible(true);

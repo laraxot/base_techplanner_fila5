@@ -3,7 +3,7 @@ title: "PHPStan Modules — zero errori sessione swarm"
 type: memory
 tags: [phpstan, swarm, quality-gate, fatal, override, comment]
 created: 2026-06-06
-updated: 2026-06-06
+updated: 2026-06-07
 qmd: "phpstan level max zero errors modules swarm fatal override comment spatie blog employee"
 issues:
   - "https://github.com/laraxot/base_techplanner_fila5/issues/11"
@@ -24,6 +24,33 @@ cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 ```
 
 **Mai** modificare `phpstan.neon` né baseline per mascherare errori.
+
+## Stato 2026-06-07 (TechPlanner Modules)
+
+| Metrica | Valore |
+|---------|--------|
+| File analizzati | 4993 |
+| Errori PHPStan | **0** |
+| Comando | `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1` |
+
+Fix riusabili applicati:
+
+- **Comment** — collection generic costruite da liste tipizzate, `view-string` prima di `view()`, `class_exists()` per produrre `class-string`, niente `@var` su variabili inesistenti.
+- **Blog** — residui `Modules\Fixcity\Models\Profile` sostituiti con `ProfileContract` nel PHPDoc `$deleter`.
+- **Xot** — `formClass()` nullable invece di stringa vuota, normalizzazione `getFormFill()` a chiavi stringa, palette colori sempre `array<int,string>`.
+- **Geo** — distanza con `selectRaw/orderByRaw` + binding invece di `Expression` con SQL interpolato.
+- **Notify** — shape attachment costruite come array costanti e `NotificationTypeEnum::getLabel()` in `mapWithKeys()`.
+- **Employee** — rimosso duplicato case-only `TimeclockPage.php` mantenendo `TimeClockPage`.
+
+### Re-check no-flag (2026-06-07)
+
+```bash
+cd laravel && ./vendor/bin/phpstan analyse Modules
+# 4993 file, [OK] No errors
+```
+
+Pattern DTO: per DTO concreti con factory locali `make()`/`from()`, usare ritorno `self` e `new self()`.
+Non usare `new static()` se la factory non deve supportare late static binding: PHPStan puo' segnalarlo come `new.static`, oppure come `return.type` se si forza `new self()` mantenendo `static`.
 
 ## Stato 2026-06-06 (post STORY-GIT-001)
 
@@ -94,9 +121,12 @@ PY
 ## Verifica
 
 ```bash
-<<<<<<< HEAD
 cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 # [OK] No errors — 4822 file, level max (phpstan.neon)
+cd laravel
+./vendor/bin/phpstan clear-result-cache
+./vendor/bin/phpstan analyse Modules --memory-limit=-1
+# Target: [OK] No errors
 ```
 
 ## Re-verifica post-merge (2026-06-06, sessione 5)
@@ -119,12 +149,6 @@ cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 ### Lezione
 
 Dopo sweep marker Git: **sempre** rieseguire PHPStan su `Modules` — i marker in `XotBaseServiceProvider` bloccano l'intero bootstrap Larastan; le migrazioni corrotte passano `php -l` ma falliscono a livello 10.
-=======
-cd laravel
-./vendor/bin/phpstan clear-result-cache
-./vendor/bin/phpstan analyse Modules --memory-limit=-1
-# Target: [OK] No errors
-```
 
 ## File corretti in sessione merge (parse unblock)
 
@@ -138,4 +162,3 @@ cd laravel
 - `UserSeeder.php`, `User/database/seeders/UserSeeder.php` — restore master
 
 Dettaglio: [phpstan-fixes-log](../../../laravel/Modules/Xot/docs/wiki/concepts/phpstan-fixes-log.md) Fix #2.
->>>>>>> 06ccbd93 (.)

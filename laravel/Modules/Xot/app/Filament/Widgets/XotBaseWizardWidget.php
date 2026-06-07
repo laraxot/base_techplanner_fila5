@@ -81,9 +81,11 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
         $wizard = $wizard->persistStepInQueryString();
 
         if (! inAdmin()) {
-            /** @var view-string $publicWizardView */
-            $publicWizardView = 'pub_theme::components.wizard';
-            $wizard = $wizard->view($publicWizardView);
+            /** @var view-string $wizardView */
+            $wizardView = 'pub_theme::components.wizard';
+            if (view()->exists($wizardView)) {
+                $wizard = $wizard->view($wizardView);
+            }
         }
 
         return $wizard;

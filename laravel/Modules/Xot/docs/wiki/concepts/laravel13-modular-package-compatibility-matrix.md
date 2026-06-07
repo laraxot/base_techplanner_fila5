@@ -16,7 +16,7 @@ Definire una regola operativa semplice: in progetto modulare Laraxot i pacchetti
 | Pacchetto | Owner canonico | Compatibile Laravel 13 | Compatibile PHP 8.3 | Decisione |
 |---|---|---|---|---|
 | `fruitcake/laravel-debugbar` | `Modules/Xot` (`require-dev`) | si (`illuminate ^11|^12|^13.0`) | si (`^8.2`) | dichiarare solo in Xot come `^4.2.8`; non duplicare nel root o nei temi |
-| `spatie/laravel-pdf` | `Modules/Xot` | si dalla linea `^2.11` (`illuminate/contracts ^11|^12|^13`) | si (`^8.2`) | owner infra PDF; `MakePdfSpatieTestAction`; vedi [spatie-laravel-pdf-module-dependency.md](./spatie-laravel-pdf-module-dependency.md) |
+| `spatie/laravel-pdf` | `Modules/Incentivi` | si dalla linea `^2.8` (`illuminate/contracts ^11|^12|^13`) | si (`^8.2`) | aggiornare da `^1.5` a `^2.8`; non spostare nel root |
 | `spatie/laravel-responsecache` | nessun owner runtime confermato | si (`8.3.x`) | no (`php ^8.4`) | non reinstallare; la linea `7.7.2` resta ferma a `Laravel 12` |
 | `aaronfrancis/fast-paginate` | `Modules/Xot` | no (stable fino a `illuminate ^12`) | si | bloccato in attesa release stable `^13`; oggi manca dal lock root |
 | `fidum/laravel-eloquent-morph-to-one` | `Modules/Xot` | no (stable fino a `illuminate ^12`) | si | bloccato in attesa release stable `^13`; oggi manca dal lock root |
@@ -29,7 +29,7 @@ Definire una regola operativa semplice: in progetto modulare Laraxot i pacchetti
 - `spatie/laravel-model-states`: `Modules/UI/app/Filament/Forms/Components/SelectState.php`, `Modules/UI/app/Filament/Tables/Columns/*State*.php`, `Modules/Xot/app/States/*`
 - `spatie/laravel-responsecache`: nessuna integrazione applicativa forte nel codice PHP corrente; presenti solo riferimenti documentali e una riga commentata in `ArtisanService`
 - `fruitcake/laravel-debugbar`: `Modules/Xot/composer.json`, `laravel/config/debugbar.php`, middleware/security bypass e servizi Artisan in Xot
-- `spatie/laravel-pdf`: `Modules/Xot/composer.json`, `MakePdfSpatieTestAction.php`, `config/laravel-pdf.php`
+- `spatie/laravel-pdf`: `Modules/Incentivi/composer.json`, report PDF del dominio Incentivi
 
 ## Regola operativa
 

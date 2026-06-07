@@ -4,14 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Media\Filament\Resources\MediaConvertResource\Tables;
 
-use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class MediaConvertsTable extends XotBaseResourceTable
 {
     /**
-     * @return array<string, Column>
+     * @return array<string, \Filament\Tables\Columns\Column>
      */
     public function getTableColumns(): array
     {

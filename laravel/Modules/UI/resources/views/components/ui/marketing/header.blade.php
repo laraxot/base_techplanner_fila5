@@ -19,7 +19,7 @@ declare(strict_types=1);
                     </div>
                 </div>
             </div>
-<div
+            <div
                 x-show="mobileMenuOpen"
                 x-transition.opacity
                 :class="{ 'pointer-events-auto': mobileMenuOpen, 'pointer-events-none': !mobileMenuOpen }"

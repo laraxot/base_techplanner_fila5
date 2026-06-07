@@ -1,7 +1,3 @@
-# FullCalendar Scheduler Documentation - README
-
-## 🎯 Obiettivo
-
 ---
 module: theme
 topic: readme_fullcalendar_scheduler

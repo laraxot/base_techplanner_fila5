@@ -105,4 +105,3 @@ class Background extends XotBasePage
         return $record;
     }
 }
-

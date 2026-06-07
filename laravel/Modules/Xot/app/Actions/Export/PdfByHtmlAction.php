@@ -23,7 +23,11 @@ class PdfByHtmlAction
     ): string|BinaryFileResponse {
         $html2pdf = new Html2Pdf($orientation, 'A4', 'it');
         $html2pdf->setTestTdInOnePage(false);
-        $html2pdf->writeHTML($html);
+        try {
+            $html2pdf->writeHTML($html);
+        } catch (HtmlParsingException $e) {
+            dddx($html);
+        }
         $path = Storage::disk($disk)->path($filename);
         $html2pdf->output($path, 'F');
 
@@ -38,4 +42,3 @@ class PdfByHtmlAction
         };
     }
 }
-

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Cms\Tests\Unit\Views;
 
+use Modules\Cms\View\Components\Page;
+
 test('page component merges route context into block data', function (): void {
     $block = (object) [
         'view' => 'cms::tests.fixtures.slug-probe',
@@ -29,11 +31,12 @@ test('page component merges route context into block data', function (): void {
         ->toContain('container0=events')
         ->toContain('slug1=speaker-slug-456')
         ->toContain('container1=speakers')
-        ->toContain('name=probe');
+        ->toContain('name=probe')
+        ->toContain('data_name=probe');
 });
 
 test('page render exposes nested context', function (): void {
-    $component = new \Modules\Cms\View\Components\Page(
+    $component = new Page(
         side: 'content',
         slug: 'events.view',
         data: [
@@ -67,7 +70,7 @@ test('page render exposes nested context', function (): void {
 });
 
 test('page component internal view keys override conflicting data keys', function (): void {
-    $component = new \Modules\Cms\View\Components\Page(
+    $component = new Page(
         side: 'content',
         slug: 'events.view',
         data: [

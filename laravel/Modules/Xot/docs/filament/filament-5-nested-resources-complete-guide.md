@@ -47,11 +47,6 @@ namespace Modules\healthcare_app\Filament\Resources\Courses;
 use Filament\Resources\Resource;
 use Filament\Resources\Pages\Page;
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
-namespace Modules\ModuloEsempio\Filament\Resources\Courses;
-
-use Filament\Resources\Resource;
-use Filament\Resources\Pages\Page;
-use Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 
 class CourseResource extends Resource
 {
@@ -93,11 +88,6 @@ namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 use Filament\Resources\Resource;
 use Filament\Resources\Pages\Page;
 use Modules\healthcare_app\Filament\Resources\Courses\CourseResource;
-namespace Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons;
-
-use Filament\Resources\Resource;
-use Filament\Resources\Pages\Page;
-use Modules\ModuloEsempio\Filament\Resources\Courses\CourseResource;
 
 class LessonResource extends Resource
 {
@@ -211,11 +201,6 @@ namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\ParentResourceRegistration;
 use Modules\healthcare_app\Filament\Resources\Courses\CourseResource;
-namespace Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons;
-
-use Filament\Resources\RelationManagers\RelationManager;
-use Filament\Resources\ParentResourceRegistration;
-use Modules\ModuloEsempio\Filament\Resources\Courses\CourseResource;
 
 class LessonResource extends Resource
 {
@@ -340,11 +325,6 @@ namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\Pa
 use Filament\Resources\Pages\CreateRecord;
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 use Modules\healthcare_app\Models\Course;
-namespace Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons\Pages;
-
-use Filament\Resources\Pages\CreateRecord;
-use Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons\LessonResource;
-use Modules\ModuloEsempio\Models\Course;
 
 class CreateLesson extends CreateRecord
 {
@@ -373,10 +353,6 @@ namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\Pa
 
 use Filament\Resources\Pages\CreateRecord;
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
-namespace Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons\Pages;
-
-use Filament\Resources\Pages\CreateRecord;
-use Modules\ModuloEsempio\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 use Illuminate\Validation\Rule;
 
 class CreateLesson extends CreateRecord

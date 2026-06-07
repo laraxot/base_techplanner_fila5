@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\Tables;
 
-use Filament\Tables\Columns\Column;
 use Filament\Tables\Table;
 use Modules\Xot\Filament\Traits\HasXotTable;
 
@@ -18,7 +17,7 @@ abstract class XotBaseResourceTable
     }
 
     /**
-     * @return array<int|string, Column>
+     * @return array<int|string, \Filament\Tables\Columns\Column>
      */
     abstract public function getTableColumns(): array;
 }

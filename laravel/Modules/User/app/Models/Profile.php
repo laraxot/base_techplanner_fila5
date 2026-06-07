@@ -86,24 +86,24 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property string|null          $deleted_by
  * @property ProfileContract|null $deleter
  *
- * @method static Builder<static>|Profile whereBio($value)
- * @method static Builder<static>|Profile whereCreatedAt($value)
- * @method static Builder<static>|Profile whereCreatedBy($value)
- * @method static Builder<static>|Profile whereDeletedAt($value)
- * @method static Builder<static>|Profile whereDeletedBy($value)
- * @method static Builder<static>|Profile whereEmail($value)
- * @method static Builder<static>|Profile whereFirstName($value)
- * @method static Builder<static>|Profile whereId($value)
- * @method static Builder<static>|Profile whereLastName($value)
- * @method static Builder<static>|Profile wherePhone($value)
- * @method static Builder<static>|Profile whereUpdatedAt($value)
- * @method static Builder<static>|Profile whereUpdatedBy($value)
- * @method static Builder<static>|Profile whereUserId($value)
+ * @method static Builder<static>|Profile                         whereBio($value)
+ * @method static Builder<static>|Profile                         whereCreatedAt($value)
+ * @method static Builder<static>|Profile                         whereCreatedBy($value)
+ * @method static Builder<static>|Profile                         whereDeletedAt($value)
+ * @method static Builder<static>|Profile                         whereDeletedBy($value)
+ * @method static Builder<static>|Profile                         whereEmail($value)
+ * @method static Builder<static>|Profile                         whereFirstName($value)
+ * @method static Builder<static>|Profile                         whereId($value)
+ * @method static Builder<static>|Profile                         whereLastName($value)
+ * @method static Builder<static>|Profile                         wherePhone($value)
+ * @method static Builder<static>|Profile                         whereUpdatedAt($value)
+ * @method static Builder<static>|Profile                         whereUpdatedBy($value)
+ * @method static Builder<static>|Profile                         whereUserId($value)
  * @method static \Modules\User\Database\Factories\ProfileFactory factory($count = null, $state = [])
  *
  * @property string|null $post_type
- * @property int|null $ente
- * @property int|null $matr
+ * @property int|null    $ente
+ * @property int|null    $matr
  * @property string|null $address
  * @property string|null $premise
  * @property string|null $premise_short
@@ -178,7 +178,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property string|null $type
  * @property string|null $birth_date
  * @property string|null $gender
- * @property bool $is_active
+ * @property bool        $is_active
  *
  * @method static Builder<static>|Profile whereBirthDate($value)
  * @method static Builder<static>|Profile whereExtra($value)
@@ -203,7 +203,7 @@ class Profile extends BaseProfile implements HasMedia
     /**
      * Get the teams that the profile belongs to.
      */
-    public function teams(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    public function teams(): BelongsToMany
     {
         return $this->belongsToManyX(Team::class);
     }
@@ -229,10 +229,25 @@ class Profile extends BaseProfile implements HasMedia
     }
 
     /**
-     * The table associated with the model.
+     * Generate Schema.org ProfilePage/Person JSON-LD structured data.
      *
-     * @var string
+     * @see https://schema.org/Person
+     * @see https://schema.org/ProfilePage
+     *
+     * @return array<string, mixed>
      */
-    protected $table = 'profiles';
+    public function toSchemaOrg(): array
+    {
+        return [
+            '@context' => 'https://schema.org',
+            '@type' => 'Person',
+            'name' => $this->full_name,
+            'givenName' => $this->first_name,
+            'familyName' => $this->last_name,
+            'email' => $this->email,
+            'description' => $this->bio,
+            'image' => $this->avatar ? asset($this->avatar) : null,
+            'url' => url('/profile/'.$this->user_name),
+        ];
+    }
 }
-

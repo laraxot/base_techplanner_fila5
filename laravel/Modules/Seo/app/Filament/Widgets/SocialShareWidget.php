@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Seo\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
+use Illuminate\Contracts\View\View;
 use Modules\Seo\Actions\GenerateSocialShareLinksAction;
 use Modules\Seo\Data\SocialShareData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
@@ -20,6 +21,14 @@ class SocialShareWidget extends XotBaseSchemaWidget
      * @var array<string, mixed>
      */
     public ?array $data = [];
+
+    public function render(): View
+    {
+        /** @var view-string $view */
+        $view = 'seo::filament.widgets.social-share';
+
+        return view($view, $this->getViewData());
+    }
 
     /**
      * Get the form schema.

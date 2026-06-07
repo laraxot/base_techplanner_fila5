@@ -9,7 +9,6 @@ use Modules\Cms\Tests\TestCase;
 uses(TestCase::class);
 
 it('GET /it/pages acceptable', function (): void {
-    /** @phpstan-ignore-next-line property.notFound */
     $res = $this->get('/it/pages');
 
     $status = (int) $res->getStatusCode();

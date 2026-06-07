@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 return [
-'credentials_incorrect' => [
+    'credentials_incorrect' => [
         'key' => 'user::messages.credentials_incorrect',
         'text' => 'Le credenziali inserite non sono corrette.',
         'description' => 'Messaggio di errore quando le credenziali di accesso sono errate',
@@ -291,7 +291,7 @@ return [
     ],
     'actions' => [
         'create' => [
-'key' => 'user::messages.actions.create',
+            'key' => 'user::messages.actions.create',
             'text' => 'Crea Messages',
             'description' => 'Azione per creare un nuovo messaggio',
             'context' => 'messages',

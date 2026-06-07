@@ -339,7 +339,7 @@ trait HasTeams
         // Permissions from Role
         $role = $this->teamRole($team);
         if (null !== $role && $role->permissions) {
-            /** @var \Illuminate\Database\Eloquent\Collection<int, \Spatie\Permission\Models\Permission> $permissionsCollection */
+            /** @var \Illuminate\Database\Eloquent\Collection<int, Permission> $permissionsCollection */
             $permissionsCollection = $role->permissions;
             /** @var array<string> $rolePermissionNames */
             $rolePermissionNames = $permissionsCollection->pluck('name')->toArray();
@@ -467,7 +467,7 @@ trait HasTeams
 
         return $this->belongsToManyX($teamClass);
     }
-    */
+
     /**
      * Get all of the teams that the user owns.
      */
@@ -569,4 +569,3 @@ trait HasTeams
          */
     }
 }
-

@@ -95,6 +95,11 @@ echo $tenants->count(); // ✅ Output: 1
 ## Causa Radice
 
 Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`healthcare_app_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
+**Errore**: `SQLSTATE[HY000]: General error: 1 no such table: modulo_data.customer_user`
+
+## Causa Radice
+
+Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`modulo_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
 
 ## Soluzione Implementata
 
@@ -133,6 +138,7 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 
 ### Moduli Affetti
 - **healthcare_app Module**: Customer-User relationships
+- **Modulo con database separato**: Customer-User relationships
 - **User Module**: HasTenants trait functionality
 - **Tutti i moduli**: che usano `belongsToManyX` con database separati
 

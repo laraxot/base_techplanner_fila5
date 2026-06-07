@@ -15,7 +15,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
  */
 class ViewOauthPersonalAccessClient extends XotBaseViewRecord
 {
-    protected static string $resource = \Modules\User\Filament\Resources\OauthPersonalAccessClientResource::class;
+    protected static string $resource = OauthPersonalAccessClientResource::class;
 
     /**
      * @return array<string, Component>
@@ -33,4 +33,3 @@ class ViewOauthPersonalAccessClient extends XotBaseViewRecord
         ];
     }
 }
-

@@ -27,7 +27,12 @@ describe('Auth Components Tests', function (): void {
     test('login page loads correctly', function (): void {
         // Test that login page loads correctly
         $response = get('/it/auth/login');
+        $response->assertStatus(200);
+    });
 
+    test('register page loads correctly', function (): void {
+        // Test that register page loads correctly
+        $response = get('/it/auth/register');
         $response->assertStatus(200);
     });
 
@@ -61,7 +66,7 @@ describe('Authentication Flow with Reorganized Components', function (): void {
         // Accept either 200 (page loads) or 500 (misconfigured route in test env)
         // The important thing is the route exists and responds
         expect($response->status())->toBeLessThanOrEqual(500);
-if ($response->status() === 200) {
+        if (200 === $response->status()) {
             $response->assertSee('Login');
         } else {
             expect($response->status())->toBeGreaterThanOrEqual(400);
@@ -69,7 +74,7 @@ if ($response->status() === 200) {
     });
 
     test('password confirmation uses reorganized components', function (): void {
-/* @var User */
+        /* @var User */
         try {
             actingAs($user)
                 ->get('/it/auth/password/confirm')

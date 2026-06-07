@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Http\Middleware;
 
-use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Symfony\Component\HttpFoundation\Response;
-use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
 use function Safe\preg_match;
+
+use Symfony\Component\HttpFoundation\Response;
+use Webmozart\Assert\Assert;
 
 /**
  * Middleware di sicurezza avanzato.
@@ -24,7 +24,7 @@ class SecurityMiddleware
     /**
      * Handle an incoming request.
      */
-    public function handle(Request $request, Closure $next): Response
+    public function handle(Request $request, \Closure $next): Response
     {
         // 1. Rate Limiting avanzato
         $this->applyAdvancedRateLimiting($request);
@@ -32,7 +32,12 @@ class SecurityMiddleware
         // 2. Headers di sicurezza
         $response = $next($request);
         Assert::isInstanceOf($response, Response::class);
-        $this->addSecurityHeaders($response);
+
+        // Skip security headers for Debugbar routes in local environment
+        // to allow Debugbar to function properly
+        if (! $this->isDebugbarRoute($request) || ! app()->environment('local')) {
+            $this->addSecurityHeaders($response);
+        }
 
         // 3. Logging sicurezza
         $this->logSecurityEvents($request, $response);
@@ -47,22 +52,15 @@ class SecurityMiddleware
     }
 
     /**
-     * Applica rate limiting avanzato.
+     * Check if the request is for Debugbar routes.
      */
-    private function applyAdvancedRateLimiting(Request $request): void
+    private function isDebugbarRoute(Request $request): bool
     {
-        $ip = $request->ip() ?? 'unknown';
-        $userAgent = $request->userAgent() ?? 'unknown';
-        $endpoint = $request->path();
+        $debugbarPrefix = (string) config('debugbar.route_prefix', '_debugbar');
 
-        // Rate limiting per IP
-        $this->checkIPRateLimit($ip, $endpoint);
-
-        // Rate limiting per User Agent
-        $this->checkUserAgentRateLimit($userAgent, $endpoint);
-
-        // Rate limiting per endpoint specifici
-        $this->checkEndpointRateLimit($endpoint, $ip);
+        return str_starts_with($request->path(), $debugbarPrefix)
+            || str_starts_with($request->path(), 'vendor/debugbar')
+            || str_contains($request->path(), '_debugbar');
     }
 
     /**
@@ -297,7 +295,7 @@ class SecurityMiddleware
         }
 
         // Log tentativi di accesso falliti
-        if ($response->getStatusCode() === 401 || $response->getStatusCode() === 403) {
+        if (401 === $response->getStatusCode() || 403 === $response->getStatusCode()) {
             Log::warning('Failed access attempt', $securityData);
         }
 
@@ -350,7 +348,7 @@ class SecurityMiddleware
         ];
 
         foreach ($suspiciousUserAgents as $suspicious) {
-            if ($userAgent !== null && stripos($userAgent, $suspicious) !== false) {
+            if (null !== $userAgent && false !== stripos($userAgent, $suspicious)) {
                 return true;
             }
         }
@@ -366,7 +364,7 @@ class SecurityMiddleware
         $inputs = $request->all();
 
         foreach ($inputs as $key => $value) {
-            if ($value !== null && is_string($value)) {
+            if (null !== $value && is_string($value)) {
                 $this->validateStringInput($key, $value);
             } elseif (is_array($value)) {
                 $this->validateArrayInput($key, $value);
@@ -485,4 +483,3 @@ class SecurityMiddleware
         }
     }
 }
-

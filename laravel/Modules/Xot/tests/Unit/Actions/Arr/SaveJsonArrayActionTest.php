@@ -7,7 +7,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Arr;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 
 beforeEach(function (): void {
-$this->action = app(SaveJsonArrayAction::class);
+    $this->action = app(SaveJsonArrayAction::class);
     $this->tempDir = sys_get_temp_dir().'/xot_arr_'.uniqid();
     mkdir($this->tempDir, 0755, true);
 });
@@ -21,7 +21,7 @@ afterEach(function (): void {
 
 it('saves array to json file', function (): void {
     $data = ['key' => 'value', 'nested' => ['a' => 1]];
-$path = $this->tempDir.'/data.json';
+    $path = $this->tempDir.'/data.json';
 
     $result = $this->action->execute($data, $path);
 
@@ -31,7 +31,7 @@ $path = $this->tempDir.'/data.json';
 });
 
 it('saves empty array', function (): void {
-$path = $this->tempDir.'/empty.json';
+    $path = $this->tempDir.'/empty.json';
     $result = $this->action->execute([], $path);
 
     expect($result)->toBeTrue()

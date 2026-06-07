@@ -181,7 +181,7 @@ if (app()->environment('local') && empty($licenseKey)) {
 - [ ] Banner rosso rimosso
 - [ ] Funzionalità premium attive
 
-## 🚀 Laraxot Specifico
+## 🚀 healthcare_app Specifico
 
 ### Business Hours Sanitarie
 ```javascript

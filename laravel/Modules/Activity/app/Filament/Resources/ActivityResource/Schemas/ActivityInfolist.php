@@ -5,13 +5,12 @@ declare(strict_types=1);
 namespace Modules\Activity\Filament\Resources\ActivityResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
-use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class ActivityInfolist extends XotBaseResourceInfolist
 {
     /**
-     * @return array<string, Component>
+     * @return array<string, \Filament\Schemas\Components\Component>
      */
     public static function getInfolistSchema(): array
     {

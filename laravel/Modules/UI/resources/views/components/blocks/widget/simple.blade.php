@@ -6,7 +6,7 @@ declare(strict_types=1);
 @props(['widget'])
 <div>
     @php
-$canRenderWidget = is_string($widget)
+        $canRenderWidget = is_string($widget)
             && $widget !== ''
             && class_exists($widget)
             && (! method_exists($widget, 'canView') || $widget::canView());

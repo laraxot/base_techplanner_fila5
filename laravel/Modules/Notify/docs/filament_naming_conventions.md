@@ -1,6 +1,7 @@
 # Convenzioni di Naming per Filament 
 
-Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema Laraxot, con particolare attenzione alle pagine e alle risorse.
+Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema Quaeris, con particolare attenzione alle pagine e alle risorse.
+
 ## Convenzioni di Naming per Pagine Filament
 
 ### Regola Fondamentale

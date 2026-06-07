@@ -38,9 +38,7 @@ class SocialProviderResource extends XotBaseResource
                 ->columnSpanFull(),
             'name' => TextInput::make('name')
                 ->required()
-                ->maxLength(255)
-                ->placeholder(__('fields.name.placeholder'))
-                ->helperText(__('fields.name.helper_text')),
+                ->maxLength(255),
             'scopes' => KeyValue::make('scopes')
                 // ->placeholder(static::trans('fields.scopes.placeholder'))
                 ->helperText(__('fields.scopes.helper_text')),
@@ -89,4 +87,3 @@ class SocialProviderResource extends XotBaseResource
         ];
     }
 }
-

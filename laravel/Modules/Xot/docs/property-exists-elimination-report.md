@@ -53,6 +53,7 @@ $user->hasAttribute('name');  // true
 | **Lang** | 1 | 2 | ~1 min |
 | **DbForge** | 1 | 1 | ~1 min |
 | **healthcare_app** | 1 | 1 | ~2 min |
+| **ModuloEsempio** | 1 | 1 | ~2 min |
 | **Xot** | 0 | 0 (solo in commenti) | ~1 min |
 | **TOTALE** | **28** | **72** | **~36 min** |
 
@@ -68,6 +69,7 @@ $user->hasAttribute('name');  // true
 ✅ Lang:    0 errori
 ✅ DbForge: 0 errori
 ✅ healthcare_app: 0 errori su file modificato
+✅ ModuloEsempio: 0 errori su file modificato
 ⚠️  Xot:     4 errori pre-esistenti (non property_exists)
 ```
 
@@ -235,6 +237,7 @@ if (isset($graph->yaxis) && is_object($graph->yaxis)) {
 1. `Console/Commands/SearchTextInDbCommand.php` - dynamic table property ✅
 
 ### healthcare_app (1 file)
+### ModuloEsempio (1 file)
 1. `Filament/Resources/.../ViewQuestionChartVisualizationWidget.php` - livewire property ✅
 
 ---
@@ -303,6 +306,7 @@ if (isset($media->file_name)) {
 | **Lang** | ✅ 0 errori | ⚠️ OK | ✅ OK |
 | **DbForge** | ✅ 0 errori | ⚠️ OK | ✅ OK |
 | **healthcare_app** | ⚠️ 64 errori* | - | - |
+| **ModuloEsempio** | ⚠️ 64 errori* | - | - |
 | **Xot** | ⚠️ 4 errori* | - | - |
 
 \* Errori pre-esistenti non correlati a property_exists
@@ -555,6 +559,7 @@ Ogni modulo ha ora:
 ### 1. Moduli Rimanenti con Errori
 
 **healthcare_app** (64 errori):
+**ModuloEsempio** (64 errori):
 - Errori pre-esistenti non correlati a property_exists
 - Richiedono intervento separato per type hints
 - Priorità media

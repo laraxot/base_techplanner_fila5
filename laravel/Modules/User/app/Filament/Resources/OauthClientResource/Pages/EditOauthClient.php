@@ -21,7 +21,7 @@ class EditOauthClient extends XotBaseEditRecord
     /**
      * Get the header actions.
      *
-     * @return array<string, Action|\Filament\Actions\ActionGroup>
+     * @return array<string, Action|ActionGroup>
      */
     protected function getHeaderActions(): array
     {
@@ -51,4 +51,3 @@ class EditOauthClient extends XotBaseEditRecord
         return $actions;
     }
 }
-

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\TechPlanner\Filament\Widgets;
 
 use Filament\Notifications\Notification;
+use Filament\Schemas\Components\Component;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Session;
 use Livewire\Attributes\On;
@@ -18,6 +19,14 @@ class CoordinatesWidget extends XotBaseWidget
     public float $latitude = 0;
 
     public float $longitude = 0;
+
+    /**
+     * @return array<string, Component>
+     */
+    public function getFormSchema(): array
+    {
+        return [];
+    }
 
     public function mount(): void
     {

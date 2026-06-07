@@ -19,8 +19,6 @@ class ShowTenantListCommand extends Command
     /**
      * The console command description.
      */
-    protected $name = 'user:show-tenant-list';
-
     protected $description = 'Visualizza lista tenant';
 
     /**
@@ -49,4 +47,3 @@ class ShowTenantListCommand extends Command
         }
     }
 }
-

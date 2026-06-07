@@ -117,6 +117,7 @@ public function createUser(array $data): User
 - Include social login integration guides
 
 ### healthcare_app Module
+### ExternalProject Module
 
 - Document survey management workflows
 - Document reporting and analytics features

@@ -1,6 +1,7 @@
 # Standard per le Traduzioni 
 
-Questo documento definisce gli standard e le best practices per la gestione delle traduzioni all'interno dei moduli di Laraxot, con particolare attenzione al modulo Notify.
+Questo documento definisce gli standard e le best practices per la gestione delle traduzioni all'interno dei moduli di Quaeris, con particolare attenzione al modulo Notify.
+
 ## Struttura delle Cartelle
 
 Le traduzioni devono essere organizzate nelle seguenti cartelle:

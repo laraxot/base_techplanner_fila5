@@ -10,7 +10,7 @@ updated: 2026-06-05
 
 ## Overview
 
-Il modulo **User** gestisce l'autenticazione, l'autorizzazione e la gestione utenti completa nel sistema Laraxot PTVX.
+Il modulo **User** gestisce l'autenticazione, l'autorizzazione e la gestione utenti completa nel sistema [PROJECT_NAME] platform.
 
 ## Funzionalità Principali
 
@@ -81,3 +81,17 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 - Laravel 11/12
 - Spatie Laravel Permission
 - Filament v5
+
+
+## Standard Rules & Workflow
+
+- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
+- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
+- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
+
+## Documentation
+
+- [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — Pattern per caricamento efficiente
+- [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
+- [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
+- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout

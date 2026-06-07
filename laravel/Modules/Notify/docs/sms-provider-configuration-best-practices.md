@@ -73,7 +73,8 @@ Per parametri critici come `sender`, non utilizzare valori predefiniti:
 
 ```php
 // ❌ ERRATO
-'sender' => env('NETFUN_SENDER', 'Laraxot'),
+'sender' => env('NETFUN_SENDER', 'Quaeris'),
+
 // ✅ CORRETTO
 'sender' => env('NETFUN_SENDER'),
 ```

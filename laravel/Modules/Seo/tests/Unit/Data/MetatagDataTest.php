@@ -9,8 +9,8 @@ use Tests\TestCase;
 
 uses(TestCase::class);
 
-it('returns sane defaults for empty data', function (): void {
-    $data = new MetatagData();
+it('returns sane defaults for empty data', function(): void {
+    $data = new MetatagData;
 
     expect($data->getTitle())->toBe('')
         ->and($data->getDescription())->toBe('')
@@ -21,7 +21,7 @@ it('returns sane defaults for empty data', function (): void {
         ->and($data->getType())->toBe('website');
 });
 
-it('returns typed colors and falls back for invalid colors', function (): void {
+it('returns typed colors and falls back for invalid colors', function(): void {
     $data = new MetatagData([
         'colors' => [
             'primary' => '#111111',
@@ -40,7 +40,7 @@ it('returns typed colors and falls back for invalid colors', function (): void {
     expect($fallback->getColors())->toHaveKey('primary');
 });
 
-it('reads nested keys and has method works', function (): void {
+it('reads nested keys and has method works', function(): void {
     $data = new MetatagData([
         'og' => [
             'title' => 'OG Title',
@@ -52,7 +52,7 @@ it('reads nested keys and has method works', function (): void {
         ->and($data->get('og.missing', 'default'))->toBe('default');
 });
 
-it('supports livewire serialization cycle', function (): void {
+it('supports livewire serialization cycle', function(): void {
     $original = [
         'title' => 'Serializable',
         'locale' => 'it',
@@ -65,7 +65,7 @@ it('supports livewire serialization cycle', function (): void {
     expect($restored->toArray())->toBe($original);
 });
 
-it('handles non array livewire payload and url fallback', function (): void {
+it('handles non array livewire payload and url fallback', function(): void {
     $restored = MetatagData::fromLivewire('invalid');
     expect($restored->toArray())->toBe([]);
 
@@ -74,7 +74,7 @@ it('handles non array livewire payload and url fallback', function (): void {
     expect($url)->toBeString();
 });
 
-it('falls back to en when app locale is not a string', function (): void {
+it('falls back to en when app locale is not a string', function(): void {
     config(['app.locale' => ['it']]);
 
     $data = new MetatagData([]);

@@ -6,14 +6,13 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Notifications\Notification;
 use Illuminate\Contracts\Auth\Authenticatable;
+use Webmozart\Assert\Assert;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
-use Webmozart\Assert\Assert;
 
 /**
  * Register FO — schema SSoT in `Schemas\UserForm::getRegisterFormSchema()`.
@@ -76,7 +75,7 @@ class RegisterWidget extends XotBaseSchemaWidget
             $email = is_string($data['email'] ?? null) ? trim($data['email']) : '';
 
             $user = $userClass::create(array_merge($data, [
-                'name' => $name !== '' ? $name : $email,
+                'name' => '' !== $name ? $name : $email,
                 'email_verified_at' => null,
             ]));
 
@@ -112,7 +111,7 @@ class RegisterWidget extends XotBaseSchemaWidget
             ->success()
             ->send();
 
-        $redirectUrl = Route::has('dashboard')
+        $redirectUrl = \Illuminate\Support\Facades\Route::has('dashboard')
             ? route('dashboard')
             : url('/'.app()->getLocale());
 

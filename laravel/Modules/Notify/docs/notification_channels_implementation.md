@@ -1,6 +1,7 @@
 # Implementazione dei Canali di Notifica 
 
-Questo documento descrive l'architettura e l'implementazione dei canali di notifica nel progetto Laraxot, con particolare attenzione al pattern Factory utilizzato.
+Questo documento descrive l'architettura e l'implementazione dei canali di notifica nel progetto Quaeris, con particolare attenzione al pattern Factory utilizzato.
+
 ## Architettura Generale
 
 L'architettura dei canali di notifica segue un pattern coerente per tutti i tipi di comunicazione (SMS, WhatsApp, Telegram):

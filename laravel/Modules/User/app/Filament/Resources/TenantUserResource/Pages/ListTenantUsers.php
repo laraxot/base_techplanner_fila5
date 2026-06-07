@@ -14,7 +14,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
  */
 class ListTenantUsers extends XotBaseListRecords
 {
-    protected static string $resource = \Modules\User\Filament\Resources\TenantUserResource::class;
+    protected static string $resource = TenantUserResource::class;
 
     /**
      * @return array<string, Action>
@@ -27,4 +27,3 @@ class ListTenantUsers extends XotBaseListRecords
         ];
     }
 }
-

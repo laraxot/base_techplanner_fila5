@@ -120,7 +120,7 @@ class SsoProviderResource extends XotBaseResource
     }
 
     /**
-     * @return array<string, class-string<\Filament\Resources\RelationManagers\RelationManager>>
+     * @return array<string, class-string<RelationManager>>
      */
     #[\Override]
     public static function getRelations(): array
@@ -144,4 +144,3 @@ class SsoProviderResource extends XotBaseResource
         ];
     }
 }
-

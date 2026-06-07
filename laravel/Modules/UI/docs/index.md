@@ -1,7 +1,7 @@
 # UI Module Documentation
 
 ## Overview
-The UI module provides shared user interface components, widgets, and styling for the Laraxot system. It includes specialized components for chart rendering, PDF generation interfaces, and survey data visualization. The module integrates with Chart and healthcare_app modules to provide professional UI experiences for survey data analysis and reporting.
+The UI module provides shared user interface components, widgets, and styling for the Laraxot system. It includes specialized components for chart rendering, PDF generation interfaces, and survey data visualization. The module integrates with Chart and Quaeris modules to provide professional UI experiences for survey data analysis and reporting.
 
 ## Key Features
 - **Chart Components**: Reusable chart components with multiple visualization options
@@ -700,7 +700,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ## Integration with Other Modules
 
-### Integration with healthcare_app Module
+### Integration with Quaeris Module
 ```blade
 {{-- Survey PDF Generation Interface --}}
 <div class="survey-pdf-generator">
@@ -1141,7 +1141,7 @@ Common issues and solutions:
 
 ## Related Modules
 - [Chart Module](../chart/docs/index.md) - Chart generation and data processing
-- [healthcare_app Module](../healthcare_app/docs/index.md) - Survey management and question charts
+- [Quaeris Module](../Quaeris/docs/index.md) - Survey management and question charts
 - [LimeSurvey Module](../limesurvey/docs/index.md) - Survey data access with dynamic models
 - [Xot Module](../xot/docs/index.md) - Base UI infrastructure and component patterns
 
@@ -1151,13 +1151,13 @@ Common issues and solutions:
 For question type Y (Yes/No responses), the system provides enhanced statistical analysis capabilities:
 
 ```php
-namespace Modules\healthcare_app\Filament\Widgets;
+namespace Modules\Quaeris\Filament\Widgets;
 
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\DB;
 use Modules\Limesurvey\Models\SurveyResponse;
-use Modules\healthcare_app\Models\QuestionChart;
+use Modules\Quaeris\Models\QuestionChart;
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 
 class QuestionChartAnswersYTypeWidget extends XotBaseTableWidget
@@ -1383,3 +1383,4 @@ Specialized UI components for displaying statistics of Y type questions:
     </script>
 </div>
 ```
+- [Conflict Resolution](conflict-resolution.md)

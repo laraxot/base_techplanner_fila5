@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\UI\Enums;
 
+use Modules\Xot\Traits\EnumTrait;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\Layout\Component;
-use Modules\Xot\Traits\EnumTrait;
 
 /**
  * Enum for managing table layout types in Filament UI components.
@@ -33,6 +33,14 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
         return self::LIST;
     }
 
+    
+
+    
+
+    
+
+    
+
     public function getTooltip(): string
     {
         return $this->transClass(self::class, $this->value.'.tooltip');
@@ -53,12 +61,12 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 
     public function isGridLayout(): bool
     {
-        return $this === self::GRID;
+        return self::GRID === $this;
     }
 
     public function isListLayout(): bool
     {
-        return $this === self::LIST;
+        return self::LIST === $this;
     }
 
     /**
@@ -88,10 +96,11 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
      * This method replaces the old debug_backtrace approach with explicit
      * parameter passing for better type safety and testability.
      *
-     * @param  array<Column|ColumnGroup|Component>  $listColumns  Columns for list layout
-     * @param  array<Column|ColumnGroup|Component>  $gridColumns  Columns for grid layout
-     * @param  array<Column|ColumnGroup|Component>  $listColumns  Columns for list layout
-     * @param  array<Column|ColumnGroup|Component>  $gridColumns  Columns for grid layout
+     * @param array<Column|ColumnGroup|Component> $listColumns Columns for list layout
+     * @param array<Column|ColumnGroup|Component> $gridColumns Columns for grid layout
+     * @param array<Column|ColumnGroup|Component> $listColumns Columns for list layout
+     * @param array<Column|ColumnGroup|Component> $gridColumns Columns for grid layout
+     *
      * @return array<Column|ColumnGroup|Component>
      */
     public function getTableColumns(array $listColumns, array $gridColumns): array

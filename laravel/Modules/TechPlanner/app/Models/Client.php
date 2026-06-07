@@ -168,6 +168,14 @@ class Client extends BaseModel
         AddressItemEnum::class,
     ];
 
+    /**
+     * @return array<int, class-string<UnitEnum>>
+     */
+    protected function getDynamicFillableEnums(): array
+    {
+        return $this->dynamicFillableEnums;
+    }
+
     protected $fillable = [
         'name',
         'vat_number',

@@ -25,7 +25,7 @@ class ViewOauthClient extends XotBaseViewRecord
     /**
      * Get the header actions.
      *
-     * @return array<string, Action|\Filament\Actions\ActionGroup>
+     * @return array<string, Action|ActionGroup>
      */
     protected function getHeaderActions(): array
     {
@@ -79,4 +79,3 @@ class ViewOauthClient extends XotBaseViewRecord
         ];
     }
 }
-

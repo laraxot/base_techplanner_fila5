@@ -1,9 +1,11 @@
-# Product Roadmap - Notify Module
+---
+title: "roadmap — puntatore"
+type: reference
+updated: 2026-05-21
+---
 
-## 🎯 Vision & Strategy
-Develop the Notify Module as a high-performance, specialized component of the Laraxot ecosystem.
+# Policy globale (puntatore)
 
-## 🗓️ Timeline
-### Q1 2026: Foundation
-- Standardize Notify Module Documentation - *Status: Shipped*
-- PHPStan Level 10 Audit - *Status: In Progress*
+Contenuto in wiki di progetto — non duplicare nei moduli ([#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
+
+→ [docs/wiki/rules/00-TRIGGER_MAP.md](../../../../docs/wiki/rules/00-TRIGGER_MAP.md)

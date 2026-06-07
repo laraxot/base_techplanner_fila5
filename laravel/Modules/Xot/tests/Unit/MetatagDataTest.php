@@ -29,7 +29,7 @@ test('getFilamentColors restituisce i colori Filament corretti', function () {
         ->toBeArray()
         ->and($colors)
         ->toHaveKeys(['danger', 'gray', 'info', 'primary', 'success', 'warning'])
-->and($colors['primary'])
+        ->and($colors['primary'])
         ->toBeArray()
         ->and($colors['primary'][600] ?? null)
         ->toBeString();

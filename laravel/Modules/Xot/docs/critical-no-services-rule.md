@@ -188,12 +188,6 @@ namespace Modules\healthcare_app\Actions\Chart;
 use Spatie\QueueableAction\QueueableAction;
 use Modules\healthcare_app\Models\Chart;
 use Modules\healthcare_app\Actions\Chart\ProcessChartAction;
-// Modules/ModuloEsempio/Actions/Chart/GenerateChartAction.php
-namespace Modules\ModuloEsempio\Actions\Chart;
-
-use Spatie\QueueableAction\QueueableAction;
-use Modules\ModuloEsempio\Models\Chart;
-use Modules\ModuloEsempio\Actions\Chart\ProcessChartAction;
 
 class GenerateChartAction
 {
@@ -212,11 +206,6 @@ namespace Modules\healthcare_app\Actions\Chart;
 
 use Spatie\QueueableAction\QueueableAction;
 use Modules\healthcare_app\Models\Chart;
-// Modules/ModuloEsempio/Actions/Chart/ProcessChartAction.php
-namespace Modules\ModuloEsempio\Actions\Chart;
-
-use Spatie\QueueableAction\QueueableAction;
-use Modules\ModuloEsempio\Models\Chart;
 
 class ProcessChartAction
 {

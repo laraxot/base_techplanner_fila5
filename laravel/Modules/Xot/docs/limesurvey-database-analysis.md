@@ -2,10 +2,6 @@
 
 ## Overview
 The `healthcare_app_survey` database (identified as `txaesfry_healthcare_app_survey` in the code) is a Limesurvey database used by the system for handling survey data, questions, answers, and responses.
-# Limesurvey Database Analysis - ptvx_survey
-
-## Overview
-The `ptvx_survey` database (identified as `txaesfry_ptvx_survey` in the code) is a Limesurvey database used by the system for handling survey data, questions, answers, and responses.
 
 ## Database Schema Analysis
 
@@ -53,11 +49,6 @@ The `ptvx_survey` database (identified as `txaesfry_ptvx_survey` in the code) is
 - Uses LimeSurvey Remote Control API pattern (though direct DB access is also implemented)
 - Maps survey responses to question structures for analysis
 - Links survey data with healthcare_app survey_pdf records
-### Integration with ModuloEsempio
-- The system connects to the survey database to extract answers and generate reports
-- Uses LimeSurvey Remote Control API pattern (though direct DB access is also implemented)
-- Maps survey responses to question structures for analysis
-- Links survey data with ModuloEsempio survey_pdf records
 
 ### Survey Data Flow
 1. Survey structure defined in `lime_questions` and `lime_question_l10ns`
@@ -86,9 +77,4 @@ The healthcare_app_survey database is used primarily for:
 - Question/answer extraction
 - Response aggregation by time periods
 - Integration with healthcare_app reporting features
-The ptvx_survey database is used primarily for:
-- Survey response analysis
-- Question/answer extraction
-- Response aggregation by time periods
-- Integration with ModuloEsempio reporting features
 - Participant management and tracking

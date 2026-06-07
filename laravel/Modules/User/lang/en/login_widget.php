@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     'fields' => [
         'email' => [
-'label' => 'Email address',
+            'label' => 'Email address',
             'placeholder' => 'name@example.com',
             'helper_text' => 'Email used to register for online services',
             'tooltip' => 'Enter your account email',
@@ -14,7 +14,7 @@ return [
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Enter your password',
-'helper_text' => '',
+            'helper_text' => '',
             'tooltip' => 'Account password',
             'description' => 'Password field for authentication',
         ],

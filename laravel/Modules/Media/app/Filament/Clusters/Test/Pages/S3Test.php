@@ -34,8 +34,9 @@ use function Safe\unlink;
  * S3Test Page for AWS S3 testing and diagnostics.
  *
  * @property array<string, mixed> $debugResults
- * @property Schema $form
+ * @property \Filament\Schemas\Schema $form
  *
+ * @phpstan-ignore-next-line
  */
 class S3Test extends XotBasePage
 {

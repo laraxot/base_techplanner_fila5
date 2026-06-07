@@ -34,7 +34,7 @@ return [
         ],
     ],
     'messages' => [
-'failed' => [
+        'failed' => [
             'key' => 'user::auth.messages.failed',
             'text' => 'Invalid credentials.',
             'description' => 'Error message shown when login credentials are invalid',
@@ -106,7 +106,7 @@ return [
         'github' => 'Sign in with GitHub',
         'facebook' => 'Sign in with Facebook',
     ],
-'login' => [
+    'login' => [
         'page' => [
             'meta_title' => [
                 'label' => 'Access services',

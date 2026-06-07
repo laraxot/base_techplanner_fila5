@@ -1,6 +1,7 @@
 # Utilizzo di Enum e Config 
 
-Questo documento definisce le best practices per l'utilizzo di Enum e file di configurazione nel sistema Laraxot, con particolare attenzione alla gestione delle opzioni nei componenti Filament.
+Questo documento definisce le best practices per l'utilizzo di Enum e file di configurazione nel sistema Quaeris, con particolare attenzione alla gestione delle opzioni nei componenti Filament.
+
 ## Problema: Hardcoding delle Opzioni
 
 L'hardcoding delle opzioni direttamente nei componenti Filament presenta diversi problemi:
@@ -145,4 +146,4 @@ Per standardizzare l'approccio , si raccomanda di:
 
 ## Conclusione
 
-L'utilizzo di Enum e file di configurazione migliora significativamente la manutenibilità, la flessibilità e la coerenza del codice. Adottare queste pratiche in tutto il sistema Laraxot garantirà un codice più robusto e facile da mantenere.
+L'utilizzo di Enum e file di configurazione migliora significativamente la manutenibilità, la flessibilità e la coerenza del codice. Adottare queste pratiche in tutto il sistema Quaeris garantirà un codice più robusto e facile da mantenere.

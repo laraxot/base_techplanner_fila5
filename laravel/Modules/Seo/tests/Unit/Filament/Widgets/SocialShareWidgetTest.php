@@ -10,7 +10,7 @@ use Tests\TestCase;
 uses(TestCase::class);
 
 it('builds social links and exposes platforms in widget view data', function (): void {
-    $widget = new class() extends SocialShareWidget
+    $widget = new class extends SocialShareWidget
     {
         public function exposeViewData(): array
         {
@@ -32,7 +32,7 @@ it('builds social links and exposes platforms in widget view data', function ():
 });
 
 it('returns empty form schema', function (): void {
-    $widget = new SocialShareWidget();
+    $widget = new SocialShareWidget;
 
     expect($widget->getFormSchema())->toBe([]);
 });

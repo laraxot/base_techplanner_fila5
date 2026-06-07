@@ -31,7 +31,6 @@ Auth widgets, UserForm, ruoli/permessi, Socialite.
 
 | Tip | User |
 |-----|------|
-| **BOUNDARY** | **Mai** dipendere da `Modules\Comment` — vedi [no-comment-module-dependency](./no-comment-module-dependency.md) |
 | 004/015 | Widget auth → `XotBaseSchemaWidget` + `formClass()`/`schemaMethod()` |
 | 008 | STORY prima di refactor Register/Login |
 | 010 | grep `Filament/Widgets/Auth` prima di nuovi widget |

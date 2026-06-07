@@ -16,10 +16,12 @@ class MigrationCommandHandler implements CommandHandlerInterface
 {
     public function handle(string $moduleName = ''): string
     {
-        DB::purge('mysql');
-        DB::reconnect('mysql');
+        $defaultConn = Config::get('database.default');
+        $purgeConn = \is_string($defaultConn) && '' !== $defaultConn ? $defaultConn : 'mysql';
+        DB::purge($purgeConn);
+        DB::reconnect($purgeConn);
 
-        if ($moduleName !== '') {
+        if ('' !== $moduleName) {
             echo '<h3>Module '.$moduleName.'</h3>';
 
             return ArtisanService::exe('module:migrate '.$moduleName.' --force');
@@ -30,7 +32,6 @@ class MigrationCommandHandler implements CommandHandlerInterface
 
     public function supports(string $command): bool
     {
-        return $command === 'migrate';
+        return 'migrate' === $command;
     }
 }
-

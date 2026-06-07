@@ -9,7 +9,6 @@ use Modules\Cms\Tests\TestCase;
 uses(TestCase::class);
 
 it('GET /it/dashboard acceptable for unauthenticated (redirect/401/403)', function (): void {
-    /** @phpstan-ignore-next-line property.notFound */
     $res = $this->get('/it/dashboard');
     $status = (int) $res->getStatusCode();
 

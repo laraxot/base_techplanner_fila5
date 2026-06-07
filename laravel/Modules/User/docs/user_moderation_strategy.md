@@ -1,6 +1,3 @@
-# User Moderation Strategy
-
-## Overview
 ---
 module: theme
 topic: user_moderation_strategy

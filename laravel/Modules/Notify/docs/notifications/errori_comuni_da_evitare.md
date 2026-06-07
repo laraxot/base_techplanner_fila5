@@ -1,9 +1,10 @@
-# Errori Comuni da Evitare nelle Implementazioni di Moduli Laraxot
+# Errori Comuni da Evitare nelle Implementazioni di Moduli Quaeris
+
 ## Errori di Struttura Directory e Namespace
 
 1. **Errore di Case nelle Directory**
-   - ❌ ERRATO: `/var/www/html/ptvx/laravel/Modules/Notify/App/Actions/`
-   - ✅ CORRETTO: `/var/www/html/ptvx/laravel/Modules/Notify/app/Actions/`
+- ❌ ERRATO: `/var/www/html/Quaeris/laravel/Modules/Notify/App/Actions/`
+   - ✅ CORRETTO: `/var/www/html/Quaeris/laravel/Modules/Notify/app/Actions/`
    
    > Le directory standard di Laravel sono sempre in lowercase (`app`, `config`, `resources`, ecc.)
 

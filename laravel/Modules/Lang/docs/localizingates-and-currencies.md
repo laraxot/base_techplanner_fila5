@@ -3,6 +3,7 @@
 ## Introduzione
 
 La localizzazione di date e valute è un aspetto cruciale per un'applicazione multilingue come `ptvx`. Tradurre manualmente mesi, giorni e simboli di valuta per ogni lingua sarebbe un lavoro enorme. Fortunatamente, Laravel e PHP offrono strumenti potenti come Carbon per le date e `NumberFormatter` per le valute, che gestiscono automaticamente la formattazione in base alla lingua. Questa documentazione, basata sul corso di Laravel Daily, esplora come implementare queste funzionalità nel progetto `ptvx`.
+
 ## Localizzazione di Date con Carbon
 
 Carbon, la libreria di gestione delle date integrata in Laravel, rende la localizzazione delle date estremamente semplice. È sufficiente impostare il locale di Carbon in base alla lingua corrente dell'applicazione.
@@ -156,6 +157,7 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
      </div>
      ```
    - **Ragionamento**: Usare `isoFormat()` di Carbon per mostrare la data in un formato localizzato (es. 'lunedì, 3 aprile 2023' in italiano) e `longRelativeDiffForHumans()` per differenze temporali leggibili (es. '1 ora 30 minuti fa') migliora la comprensione per gli utenti. L'helper `formatCurrency()` formatta il costo secondo le convenzioni locali (es. '35,50 €' in italiano). Questo approccio è coerente con l'obiettivo di usabilità di `ptvx` e si integra con il sistema di localizzazione.
+
 4. **Verifica dell'Estensione `intl` per `NumberFormatter`**:
    - Nota: Assicurarsi che l'estensione `intl` sia abilitata nel file `php.ini` del server. Se non è abilitata, aggiungere o decommentare la linea:
      ```ini

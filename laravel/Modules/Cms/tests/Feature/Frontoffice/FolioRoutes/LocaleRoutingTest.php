@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Cms\Tests\Feature\Frontoffice\FolioRoutes;
 
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Modules\Cms\Http\Middleware\SetFolioLocale;
 use Modules\Cms\Tests\TestCase;
 
 uses(TestCase::class);
@@ -20,7 +21,7 @@ uses(TestCase::class);
  * etc.
  *
  * @see https://github.com/mcamara/laravel-localization
- * @see \Modules\Cms\Http\Middleware\SetFolioLocale
+ * @see SetFolioLocale
  */
 
 /**
@@ -32,7 +33,6 @@ function supportedTestLocales(): array
 }
 
 test('every supported locale has a reachable root route', function (string $locale) {
-    /** @phpstan-ignore-next-line property.notFound */
     $response = $this->get('/'.$locale);
 
     $status = (int) $response->getStatusCode();
@@ -53,7 +53,6 @@ test('every supported locale has a reachable root route', function (string $loca
 });
 
 test('HTML lang attribute matches the requested locale', function (string $locale) {
-    /** @phpstan-ignore-next-line property.notFound */
     $response = $this->get('/'.$locale);
 
     $status = (int) $response->getStatusCode();
@@ -70,7 +69,6 @@ test('HTML lang attribute matches the requested locale', function (string $local
         return;
     }
 
-    /* @phpstan-ignore-next-line method.nonObject */
     $response->assertSee('lang="'.$locale.'"', false);
 })->with(function () {
     foreach (supportedTestLocales() as $locale) {
@@ -79,7 +77,6 @@ test('HTML lang attribute matches the requested locale', function (string $local
 });
 
 test('/de route sets German locale', function () {
-    /** @phpstan-ignore-next-line property.notFound */
     $response = $this->get('/de');
 
     $status = (int) $response->getStatusCode();
@@ -96,7 +93,6 @@ test('/de route sets German locale', function () {
         return;
     }
 
-    /* @phpstan-ignore-next-line method.nonObject */
     $response->assertSee('lang="de"', false);
 
     // Verify mcamara has set the locale correctly
@@ -104,7 +100,6 @@ test('/de route sets German locale', function () {
 });
 
 test('/it route sets Italian locale', function () {
-    /** @phpstan-ignore-next-line property.notFound */
     $response = $this->get('/it');
 
     $status = (int) $response->getStatusCode();
@@ -121,14 +116,12 @@ test('/it route sets Italian locale', function () {
         return;
     }
 
-    /* @phpstan-ignore-next-line method.nonObject */
     $response->assertSee('lang="it"', false);
 
     expect(LaravelLocalization::getCurrentLocale())->toBe('it');
 });
 
 test('/en route sets English locale', function () {
-    /** @phpstan-ignore-next-line property.notFound */
     $response = $this->get('/en');
 
     $status = (int) $response->getStatusCode();
@@ -145,7 +138,6 @@ test('/en route sets English locale', function () {
         return;
     }
 
-    /* @phpstan-ignore-next-line method.nonObject */
     $response->assertSee('lang="en"', false);
 
     expect(LaravelLocalization::getCurrentLocale())->toBe('en');

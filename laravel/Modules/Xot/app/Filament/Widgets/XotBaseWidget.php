@@ -140,7 +140,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         $attributes = $model->attributesToArray();
 
         $fields = array_merge($fillable, $appends);
-        $fields = array_fill_keys($fields, null);
+        $fields = array_fill_keys(array_map(static fn (mixed $f): string => (string) $f, $fields), null);
         $fields = array_merge($fields, $attributes);
         if (method_exists($model, 'getDataDefaults')) {
             /** @var array<string, mixed> $defaults */

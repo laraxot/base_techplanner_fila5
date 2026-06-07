@@ -1,6 +1,7 @@
 # Integrazione Telegram 
 
-Questo documento descrive l'architettura e l'implementazione dell'integrazione Telegram nel progetto Laraxot, seguendo gli stessi pattern di design utilizzati per SMS, Email e WhatsApp.
+Questo documento descrive l'architettura e l'implementazione dell'integrazione Telegram nel progetto Quaeris, seguendo gli stessi pattern di design utilizzati per SMS, Email e WhatsApp.
+
 ## Architettura
 
 L'integrazione Telegram segue un'architettura modulare e standardizzata:

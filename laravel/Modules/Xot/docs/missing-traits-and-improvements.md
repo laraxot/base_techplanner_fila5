@@ -695,6 +695,8 @@ class LimeJsonService
 
 // healthcare_appService.php
 class healthcare_appService
+// ModuloEsempioService.php
+class ModuloEsempioService
 {
     use SingletonTrait;
 
@@ -1169,6 +1171,8 @@ class LimeJsonService
 
 // healthcare_appService.php
 class healthcare_appService
+// ModuloEsempioService.php
+class ModuloEsempioService
 {
     use SingletonTrait;
 

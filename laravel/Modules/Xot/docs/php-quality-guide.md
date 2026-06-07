@@ -708,10 +708,6 @@ private function createTotalResponsesStat(int $count): Stat
         number_format((float) $count)
     )
         ->description(__('healthcare_app::question_chart_stats_overview.stats.total_responses.description'))
-        __('ptvx::question_chart_stats_overview.stats.total_responses.label'),
-        number_format((float) $count)
-    )
-        ->description(__('ptvx::question_chart_stats_overview.stats.total_responses.description'))
         ->color($count > 0 ? 'success' : 'gray')
         ->icon('heroicon-o-document-text');
 }
@@ -723,10 +719,6 @@ private function createCompletionRateStat(float $rate): Stat
         $rate.'%'
     )
         ->description(__('healthcare_app::question_chart_stats_overview.stats.completion_rate.description'))
-        __('ptvx::question_chart_stats_overview.stats.completion_rate.label'),
-        $rate.'%'
-    )
-        ->description(__('ptvx::question_chart_stats_overview.stats.completion_rate.description'))
         ->color($rate >= 75 ? 'success' : ($rate >= 50 ? 'warning' : 'danger'))
         ->icon('heroicon-o-chart-bar');
 }

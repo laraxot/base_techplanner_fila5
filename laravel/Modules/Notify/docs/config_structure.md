@@ -1,4 +1,5 @@
-# Struttura di Configurazione nei Moduli Laraxot
+# Struttura di Configurazione nei Moduli Quaeris
+
 ## Principi di Configurazione
 
 1. **Separazione tra Specifico e Generico**

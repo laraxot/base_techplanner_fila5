@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Filament\Widgets;
 
+use Filament\Schemas\Components\Component;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\TechPlanner\Filament\Resources\ClientResource;
@@ -14,6 +15,14 @@ class ClientMapWidget extends XotBaseWidget
     protected string $view = 'techplanner::filament.widgets.map';
 
     protected int|string|array $columnSpan = 'full';
+
+    /**
+     * @return array<string, Component>
+     */
+    public function getFormSchema(): array
+    {
+        return [];
+    }
 
     /**
      * Ottiene i dati dei clienti per la mappa.

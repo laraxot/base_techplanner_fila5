@@ -1,6 +1,7 @@
 # Notifiche Telegram 
 
-Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di Laraxot.
+Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di Quaeris.
+
 ## Indice
 
 - [Introduzione](#introduzione)
@@ -14,7 +15,8 @@ Questa documentazione descrive come implementare notifiche Telegram nel modulo N
 
 ## Introduzione
 
-Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. Laraxot integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
+Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. Quaeris integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
+
 ## Setup del Bot Telegram
 
 ### Creazione del Bot
@@ -26,16 +28,17 @@ Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua AP
 
 ### Funzionalità del Bot
 
-Il bot di Laraxot deve avere:
+Il bot di Quaeris deve avere:
 - Privacy Mode disattivata (per leggere messaggi nei gruppi)
 - Comandi personalizzati configurati
-- Immagine del profilo con logo Laraxot
+- Immagine del profilo con logo Quaeris
+
 ### Comandi Consigliati
 
 Configura i seguenti comandi per il tuo bot:
 ```
 start - Inizia l'interazione con il bot
-register - Collega il tuo account Telegram a Laraxot
+register - Collega il tuo account Telegram a Quaeris
 unregister - Scollega il tuo account Telegram
 settings - Gestisci le tue preferenze di notifica
 help - Ottieni assistenza
@@ -156,10 +159,10 @@ public function toTelegram($notifiable)
 
 ### Collegamento Account Telegram
 
-Per collegare un account Telegram a un utente Laraxot:
+Per collegare un account Telegram a un utente Quaeris:
 
 1. Implementa un comando `/register` nel bot che generi un token univoco.
-2. L'utente inserisce questo token nel proprio profilo nell'app Laraxot.
+2. L'utente inserisce questo token nel proprio profilo nell'app Quaeris.
 3. Salva il `chat_id` Telegram dell'utente nel database.
 
 ```php
@@ -172,7 +175,7 @@ use Modules\Notify\Models\TelegramToken;
 class RegisterCommand extends Command
 {
     protected $name = 'register';
-    protected $description = 'Collega il tuo account Telegram a Laraxot';
+protected $description = 'Collega il tuo account Telegram a Quaeris';
     
     public function handle()
     {
@@ -187,7 +190,7 @@ class RegisterCommand extends Command
         ]);
         
         $this->replyWithMessage([
-            'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo Laraxot per completare il collegamento."
+'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo Quaeris per completare il collegamento."
         ]);
     }
 }

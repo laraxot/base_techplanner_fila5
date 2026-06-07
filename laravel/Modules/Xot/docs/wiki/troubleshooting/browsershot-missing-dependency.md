@@ -1,45 +1,21 @@
----
-title: "PHPStan class.notFound — spatie/laravel-pdf / Browsershot"
-type: troubleshooting
-module: Xot
-tags: [phpstan, spatie, laravel-pdf, browsershot, composer]
-created: 2026-06-05
-updated: 2026-06-06
-qmd: "phpstan class not found spatie laravel pdf browsershot composer module vendor merge"
-issues:
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/11"
-discussions:
-  - "https://github.com/laraxot/base_techplanner_fila5/discussions/12"
-related:
-  - ../concepts/spatie-laravel-pdf-module-dependency.md
-  - ../../../../../../docs/wiki/rules/composer-module-dependency-go.md
----
+# Browsershot Missing Dependency
 
-# class.notFound su Pdf / Browsershot
+## Problem
+PHPStan reports that `Spatie\Browsershot\Browsershot` class is not found in `Modules/Xot/app/Actions/Pdf/MakePdfSpatieTestAction.php`, even if the library seems to be present in the `vendor` directory.
 
-## Sintomo
+## Root Cause
+1. **Autoloader Sync**: The library was listed in `Modules/Xot/composer.json` but not correctly synced in the main `laravel/composer.lock` or the autoloader was not updated.
+2. **Version Conflicts**: Attempting to run `composer update` failed because of a conflict between Laravel 13 (required in `composer.json`) and the environment running PHP 8.3 (Laravel 13 requires PHP 8.4).
+3. **Missing Peer Dependencies**: `spatie/laravel-pdf` was being used but not listed in the module's `composer.json`.
 
-```
-Call to static method view() on an unknown class Spatie\LaravelPdf\Facades\Pdf
-```
+## Solution
+1. **Align Laravel Version**: Downgrade `laravel/framework` and related packages (`nwidart/laravel-modules`, `orchestra/testbench`, etc.) to `^12.0` in both the root `composer.json` and `Modules/Xot/composer.json` to match the PHP 8.3 environment.
+2. **Add Missing Dependencies**: Explicitly add `spatie/laravel-pdf` to `Modules/Xot/composer.json`.
+3. **Sync Dependencies**: Run `composer update -W` from the `laravel` directory to regenerate the lock file and the autoloader.
 
-## Causa
-
-- Pacchetto non in `Modules/Xot/composer.json`, oppure
-- `Modules/Xot/vendor/` locale stale, oppure
-- Merge-plugin non rieseguito dopo edit `composer.json`
-
-## Fix (canon)
-
-1. Conferma `"spatie/laravel-pdf": "^2.11"` in `Modules/Xot/composer.json`
-2. `rm -rf laravel/Modules/Xot/vendor`
-3. `cd laravel && php -d memory_limit=-1 composer.phar update -W`
-4. Action usa `Pdf::view()` — vedi [spatie-laravel-pdf-module-dependency.md](../concepts/spatie-laravel-pdf-module-dependency.md)
-
-## Verifica
-
+## Verification
+Run PHPStan on the affected file:
 ```bash
-cd laravel && ./vendor/bin/phpstan analyse Modules/Xot/app/Actions/Pdf/MakePdfSpatieTestAction.php --memory-limit=-1
+cd laravel && vendor/bin/phpstan analyse Modules/Xot/app/Actions/Pdf/MakePdfSpatieTestAction.php
 ```
-
-**Non** sostituire con Browsershot manuale se il contratto modulo è `laravel-pdf`.
+It should report "No errors".

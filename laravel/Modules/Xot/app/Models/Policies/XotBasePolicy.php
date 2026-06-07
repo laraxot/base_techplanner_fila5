@@ -27,9 +27,8 @@ abstract class XotBasePolicy
         });
     }
 
-    public function viewAny(UserContract $userContract): bool
+    public function viewAny(UserContract $user): Response|bool
     {
         return false;
     }
 }
-

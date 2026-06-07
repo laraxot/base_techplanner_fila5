@@ -4,12 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\Pdf;
 
-use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Facade;
 use Modules\Xot\Actions\Pdf\MakePdfSpatieTestAction;
-use Modules\Xot\Tests\TestCase;
-
-uses(TestCase::class);
+use Symfony\Component\HttpFoundation\StreamedResponse;
 
 it('builds a streamed pdf download response for the generic test view', function (): void {
     Facade::setFacadeApplication(app());
@@ -20,7 +17,7 @@ it('builds a streamed pdf download response for the generic test view', function
         'generated_for' => 'unit-test',
     ]);
 
-    expect($response)->toBeInstanceOf(Response::class)
+    expect($response)->toBeInstanceOf(StreamedResponse::class)
         ->and($response->headers->get('Content-Type'))->toBe('application/pdf')
         ->and($response->headers->get('content-disposition'))->toContain('attachment;')
         ->and($response->headers->get('content-disposition'))->toContain('spatie-pdf-test.pdf');

@@ -9,6 +9,8 @@ use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Arr;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Webmozart\Assert\Assert;
 
 /**
@@ -43,7 +45,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     public ?array $data = [];
 
     /**
-     * FQCN *Form (opzionale). Se valorizzato, `form()` delega a `FormClass::{schemaMethod()}`.
+     * FQCN *Form (opzionale). Se presente, `form()` delega a `FormClass::{schemaMethod()}`.
      *
      * @return class-string|null
      */
@@ -77,7 +79,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     {
         $formClass = static::formClass();
 
-        if ($formClass !== null && $formClass !== '') {
+        if (null !== $formClass) {
             $method = static::schemaMethod();
 
             if (! method_exists($formClass, $method)) {
@@ -99,8 +101,9 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     }
 
     /**
-     * @param  class-string  $formClass  Es. UserForm::class
-     * @param  string  $method  Es. getRegisterFormSchema
+     * @param class-string $formClass Es. UserForm::class
+     * @param string       $method    Es. getRegisterFormSchema
+     *
      * @return array<int|string, Component>
      */
     protected static function resourceFormSchema(string $formClass, string $method): array
@@ -125,7 +128,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     public function getFormFill(): array
     {
         $model = $this->getFormModel();
-        if ($model === null) {
+        if (null === $model) {
             return [];
         }
         if (\is_string($model)) {
@@ -134,7 +137,8 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
 
         if ($model->exists) {
             try {
-                $res = self::stringKeyArray($model->toArray());
+                /** @var array<string, mixed> $res */
+                $res = $model->toArray();
 
                 if (method_exists($model, 'getDataDefaults')) {
                     /** @var array<string, mixed> $defaults */
@@ -142,21 +146,36 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
                     $res = array_merge($defaults, $res);
                 }
 
-                return $res;
+                return self::normalizeFormFill($res);
             } catch (\Exception) {
-                return self::stringKeyArray($model->getAttributes());
+                return self::normalizeFormFill($model->getAttributes());
             }
         }
 
         $fillable = $model->getFillable();
         $appends = $model->getAppends();
         $attributes = $model->attributesToArray();
-        $fields = array_fill_keys(
-            array_values(array_map(static fn (mixed $f): string => (string) $f, array_merge($fillable, $appends))),
-            null,
-        );
+        $keys = array_values(array_map(static fn (mixed $f): string => (string) $f, array_merge($fillable, $appends)));
+        /** @var array<string, mixed> $fields */
+        $fields = array_fill_keys($keys, null);
 
         return array_merge($fields, $attributes);
+    }
+
+    /**
+     * @param array<mixed> $values
+     * @return array<string, mixed>
+     */
+    private static function normalizeFormFill(array $values): array
+    {
+        $normalized = [];
+        foreach ($values as $key => $value) {
+            if (is_string($key)) {
+                $normalized[$key] = $value;
+            }
+        }
+
+        return $normalized;
     }
 
     public function mount(): void
@@ -164,26 +183,12 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
         $this->form->fill([]);
     }
 
-    public function save(): void {}
+    public function save(): void
+    {
+    }
 
     protected function getFormModel(): Model|string|null
     {
         return null;
-    }
-
-    /**
-     * @param  array<mixed>  $data
-     * @return array<string, mixed>
-     */
-    private static function stringKeyArray(array $data): array
-    {
-        $normalized = [];
-
-        foreach ($data as $key => $value) {
-            Assert::string($key);
-            $normalized[$key] = $value;
-        }
-
-        return $normalized;
     }
 }

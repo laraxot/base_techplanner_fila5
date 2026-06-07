@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Enums;
 
+use Modules\Xot\Traits\EnumTrait;
+use Filament\Forms\Components\TextInput;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
-use Modules\Xot\Filament\Traits\TransTrait;
-use Filament\Forms\Form;
 
 /**
  * Enum per i campi standard di indirizzo.
@@ -165,8 +165,8 @@ enum AddressItemEnum: string implements HasColor, HasIcon, HasLabel
      */
     public static function columnsWithLegacy(Blueprint $table, ?XotBaseMigration $migration = null): void
     {
-        self::columns($table, $migration);
-        self::addLegacyColumns($table, $migration);
+        static::columns($table, $migration);
+        static::addLegacyColumns($table, $migration);
     }
 
     /**
@@ -174,7 +174,7 @@ enum AddressItemEnum: string implements HasColor, HasIcon, HasLabel
      */
     public static function updateColumnsWithLegacy(Blueprint $table, XotBaseMigration $migration): void
     {
-        self::columnsWithLegacy($table, $migration);
+        static::columnsWithLegacy($table, $migration);
     }
 
     /**
@@ -183,8 +183,8 @@ enum AddressItemEnum: string implements HasColor, HasIcon, HasLabel
      * These fields maintain compatibility with older code that expects
      * generic field names like 'address', 'city', 'province', etc.
      *
-     * @param  Blueprint  $table  The table blueprint
-     * @param  XotBaseMigration|null  $migration  XotBaseMigration instance for UPDATE context
+     * @param Blueprint             $table     The table blueprint
+     * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context
      */
     private static function addLegacyColumns(Blueprint $table, ?XotBaseMigration $migration = null): void
     {
@@ -217,10 +217,9 @@ enum AddressItemEnum: string implements HasColor, HasIcon, HasLabel
         ];
 
         foreach ($legacyColumns as $name => $definition) {
-            if ($migration === null || ! $migration->hasColumn($name)) {
+            if (null === $migration || ! $migration->hasColumn($name)) {
                 $definition($table);
             }
         }
     }
 }
-

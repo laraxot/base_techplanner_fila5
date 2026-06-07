@@ -1,7 +1,3 @@
-# Refactor Completo Campi "Città" - Modulo User
-
-## Riepilogo Intervento
-
 ---
 module: theme
 topic: translation-city-field-refactor

@@ -182,4 +182,3 @@ class OauthAccessTokenResource extends XotBaseResource
         return parent::getEloquentQuery()->with(['user', 'client']);
     }
 }
-

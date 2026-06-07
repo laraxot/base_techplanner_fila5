@@ -21,11 +21,11 @@ class ForgotPasswordWidget extends XotBaseSchemaWidget
     protected string $view = 'user::widgets.auth.forgot-password-widget';
 
     /**
-     * @return class-string<UserForm>
+     * @return class-string<Schemas\UserForm>
      */
     protected static function formClass(): string
     {
-        return UserForm::class;
+        return Schemas\UserForm::class;
     }
 
     protected static function schemaMethod(): string
@@ -39,7 +39,7 @@ class ForgotPasswordWidget extends XotBaseSchemaWidget
 
         $status = Password::sendResetLink(['email' => $data['email']]);
 
-        if ($status === Password::RESET_LINK_SENT) {
+        if (Password::RESET_LINK_SENT === $status) {
             session()->flash('status', __($status));
         } else {
             $this->addError('email', __($status));

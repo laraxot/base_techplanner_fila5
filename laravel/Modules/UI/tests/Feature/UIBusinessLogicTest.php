@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-uses(Modules\UI\Tests\TestCase::class);
+namespace Modules\UI\Tests\Feature;
+
+uses(TestCase::class);
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;
@@ -11,6 +13,7 @@ use Modules\UI\Models\Component;
 use Modules\UI\Models\Theme;
 use Modules\UI\Services\ComponentService;
 use Modules\UI\Services\ThemeService;
+use Modules\UI\Tests\TestCase;
 
 describe('UI Business Logic Integration', function () {
     beforeEach(function () {

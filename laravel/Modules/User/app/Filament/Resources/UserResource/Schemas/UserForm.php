@@ -9,8 +9,8 @@ use Carbon\CarbonInterface;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Component as SchemaComponent;
 use Filament\Schemas\Components\Section;
-use Filament\Support\Components\Component;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
@@ -26,7 +26,7 @@ class UserForm extends XotBaseResourceForm
      * Religione R1 (form-fields-self-validate): `password` ha
      *  `->dehydrateStateUsing(Hash::make)` → la Resource riceve l'hash pronto.
      *
-     * @return array<string, Component>
+     * @return array<int|string, SchemaComponent>
      */
     public static function getFormSchema(): array
     {
@@ -45,7 +45,7 @@ class UserForm extends XotBaseResourceForm
                     })
                     ->required(fn ($livewire) => $livewire instanceof CreateUser),
             ])->columnSpan(8),
-            'section02' => Section::make([
+            'section02' => Section::make(__('user::fields.created_at'))->schema([
                 'created_at' => Placeholder::make('created_at')->content(static function ($record) {
                     if (! $record instanceof Model) {
                         return new HtmlString('&mdash;');
@@ -58,7 +58,7 @@ class UserForm extends XotBaseResourceForm
                     /** @var Carbon|null $createdAt */
                     $createdAt = $record->getAttribute('created_at');
 
-                    if ($createdAt === null) {
+                    if (null === $createdAt) {
                         return new HtmlString('&mdash;');
                     }
                     if ($createdAt instanceof CarbonInterface) {
@@ -77,7 +77,7 @@ class UserForm extends XotBaseResourceForm
     /**
      * FO auth login — SSoT campi (LoginWidget delega qui).
      *
-     * @return array<string, Component>
+     * @return array<string, SchemaComponent>
      */
     public static function getLoginFormSchema(): array
     {
@@ -97,7 +97,7 @@ class UserForm extends XotBaseResourceForm
     /**
      * FO auth register — SSoT campi (RegisterWidget delega qui).
      *
-     * @return array<string, Component>
+     * @return array<int|string, SchemaComponent>
      */
     public static function getRegisterFormSchema(): array
     {
@@ -158,7 +158,7 @@ class UserForm extends XotBaseResourceForm
     /**
      * FO auth forgot-password — SSoT campi (ForgotPasswordWidget delega qui).
      *
-     * @return array<string, Component>
+     * @return array<string, SchemaComponent>
      */
     public static function getForgotPasswordFormSchema(): array
     {
@@ -173,7 +173,7 @@ class UserForm extends XotBaseResourceForm
     /**
      * FO auth reset-password (token) — SSoT campi (ResetPasswordWidget delega qui).
      *
-     * @return array<string, Component>
+     * @return array<string, SchemaComponent>
      */
     public static function getResetPasswordFormSchema(): array
     {

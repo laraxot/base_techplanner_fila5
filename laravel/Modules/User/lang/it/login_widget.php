@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     'fields' => [
         'email' => [
-'label' => 'Indirizzo email',
+            'label' => 'Indirizzo email',
             'placeholder' => 'esempio@comune.it',
             'helper_text' => 'Email usata per registrarti ai servizi online',
             'tooltip' => 'Inserisci l’indirizzo email dell’account',

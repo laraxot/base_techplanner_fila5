@@ -33,7 +33,6 @@ related:
 ## Concepts
 
 - [activity-domain-focus](./concepts/activity-domain-focus.md) — posizionamento del dominio Activity
-- [spatie-activitylog-module-dependency](./concepts/spatie-activitylog-module-dependency.md) — owner `spatie/laravel-activitylog` = Activity, mai root
 - [xotbase-resource-zen-pattern](./concepts/xotbase-resource-zen-pattern.md) — pattern corretto per resource XotBase senza override `form()`/`table()`
 - [schemas-tables-pattern](./concepts/schemas-tables-pattern.md) — separazione Schemas/Tables e auto-discovery di XotBase
 

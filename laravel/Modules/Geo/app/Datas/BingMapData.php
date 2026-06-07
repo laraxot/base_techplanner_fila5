@@ -25,13 +25,14 @@ class BingMapData extends Data
      *         addressLine: ?string,
      *         countryRegionIso2: ?string,
      *         neighborhood: ?string,
-     *         houseNumber: ?string
+     *         houseNumber?: ?string
      *     }
      * } $data
      */
     public function __construct(
         private readonly array $data,
-    ) {}
+    ) {
+    }
 
     /**
      * Converte i dati in un array.
@@ -49,7 +50,7 @@ class BingMapData extends Data
      *         addressLine: ?string,
      *         countryRegionIso2: ?string,
      *         neighborhood: ?string,
-     *         houseNumber: ?string
+     *         houseNumber?: ?string
      *     }
      * }
      */

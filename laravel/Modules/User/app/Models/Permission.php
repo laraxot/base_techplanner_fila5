@@ -45,6 +45,12 @@ use Spatie\Permission\Models\Permission as SpatiePermission;
  * @method static static                     firstOrCreate(array $attributes, array $values = [])
  * @method static static                     updateOrCreate(array $attributes, array $values = [])
  *
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $deleter
+ * @property ProfileContract|null $updater
+ *
+ * @method static \Modules\User\Database\Factories\PermissionFactory factory($count = null, $state = [])
+ *
  * @mixin \Eloquent
  */
 class Permission extends SpatiePermission
@@ -53,10 +59,8 @@ class Permission extends SpatiePermission
     use RelationX;
     use Updater;
 
-    /** @var string */
     protected $connection = 'user';
 
-    /** @var string */
     protected $table = 'permissions';
 
     /** @var list<string> */
@@ -69,4 +73,3 @@ class Permission extends SpatiePermission
         'updated_by',
     ];
 }
-

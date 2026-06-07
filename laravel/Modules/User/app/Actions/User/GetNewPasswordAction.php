@@ -17,10 +17,10 @@ class GetNewPasswordAction
     {
         $user = $record;
 
-        $password = once(function () use ($user) {
+        return once(function () use ($user) {
             $generator = new GetPronounceablePasswordAction();
             $plainPassword = $generator->execute();
-            $hasher = app(\Illuminate\Contracts\Hashing\Hasher::class);
+            $hasher = app(Hasher::class);
             $hashedPassword = $hasher->make($plainPassword);
 
             $user->forceFill([
@@ -29,8 +29,5 @@ class GetNewPasswordAction
 
             return $plainPassword;
         });
-
-        return $password;
     }
 }
-

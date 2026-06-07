@@ -71,6 +71,7 @@ Each module has its own BaseModel that extends XotBaseModel:
 
 ```php
 // Example from healthcare_app module
+// Example from ExternalProject module
 abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 {
     use Cachable;
@@ -106,6 +107,7 @@ class SurveyPdf extends XotBaseModel // Never do this!
 ✅ **CORRECT:**
 ```php
 // In healthcare_app module
+// In ExternalProject module
 class SurveyPdf extends BaseModel // Extends module's BaseModel
 ```
 

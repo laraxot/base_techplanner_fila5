@@ -4,14 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\SnapshotResource\Tables;
 
-use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class SnapshotsTable extends XotBaseResourceTable
 {
     /**
-     * @return array<int|string, Column>
+     * @return array<int|string, \Filament\Tables\Columns\Column>
      */
     public function getTableColumns(): array
     {

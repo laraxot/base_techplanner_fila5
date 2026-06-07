@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Cms\Tests\Unit\Http\Middleware;
 
+use Illuminate\Auth\Middleware\Authenticate;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 use Modules\Cms\Http\Middleware\PageSlugMiddleware;
@@ -61,13 +62,13 @@ test('resolveMiddlewareClass returns mapped class for alias', function (): void 
     $kernel = \Mockery::mock(Kernel::class);
     $kernel->shouldReceive('getRouteMiddleware')
         ->once()
-        ->andReturn(['auth' => \Illuminate\Auth\Middleware\Authenticate::class]);
+        ->andReturn(['auth' => Authenticate::class]);
 
     setProtected($middleware, 'kernel', $kernel);
 
     $resolved = invokeProtected($middleware, 'resolveMiddlewareClass', ['auth']);
 
-    expect($resolved)->toBe(\Illuminate\Auth\Middleware\Authenticate::class);
+    expect($resolved)->toBe(Authenticate::class);
 });
 
 test('executeMiddlewareChain returns 500 when final closure does not return response', function (): void {

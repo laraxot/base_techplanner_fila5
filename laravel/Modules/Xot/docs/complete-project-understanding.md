@@ -7,10 +7,6 @@ healthcare_app è un sistema completo di gestione survey basato su Laravel 12 + 
 
 ```
 Xot (Motore) → Moduli Specifici (User, healthcare_app, etc.) → Funzionalità
-ModuloEsempio è un sistema completo di gestione survey basato su Laravel 12 + Filament 4 con il framework Laraxot. L'architettura è modulare e segue il pattern:
-
-```
-Xot (Motore) → Moduli Specifici (User, ModuloEsempio, etc.) → Funzionalità
 ```
 
 ### Domain Model Principale

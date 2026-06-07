@@ -36,9 +36,10 @@ test('geo map widget returns payload data object', function () {
 
     $this->app->bind(
         BuildGeoMapWidgetPayloadAction::class,
-        static fn (): object => new class($payload)
-        {
-            public function __construct(private readonly GeoMapWidgetData $payload) {}
+        static fn (): object => new class($payload) {
+            public function __construct(private readonly GeoMapWidgetData $payload)
+            {
+            }
 
             public function execute(): GeoMapWidgetData
             {

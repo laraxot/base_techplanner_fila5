@@ -280,7 +280,7 @@ $roles = Socialite::driver('microsoft')->user()->getRoles();
 ],
 ```
 
-## Regole per healthcare_app Fila5
+## Regole per ExternalProject Fila5
 
 ### 1. Usare Filament Socialite Plugin
 - Installare `dutchcodingcompany/filament-socialite`

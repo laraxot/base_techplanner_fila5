@@ -9,8 +9,8 @@ use Tests\TestCase;
 
 uses(TestCase::class);
 
-it('sets all optional seo fields through service', function (): void {
-    $service = new MetatagService();
+it('sets all optional seo fields through service', function(): void {
+    $service = new MetatagService;
     $published = now()->subDay();
     $modified = now();
 

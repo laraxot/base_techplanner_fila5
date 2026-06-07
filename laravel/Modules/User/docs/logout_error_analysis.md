@@ -1,7 +1,3 @@
-# Analisi Errore Logout
-
-## Problema Identificato
-
 ---
 module: theme
 topic: logout_error_analysis

@@ -4,7 +4,7 @@ type: index
 module: Cms
 tags: [cms, wiki, index, folio, x-page]
 created: 2026-04-15
-updated: 2026-06-06
+updated: 2026-06-05
 qmd: "cms module wiki index folio x-page second brain"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
@@ -28,14 +28,9 @@ related:
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) → canon Xot
 
 
-## Folio / Composer
-
-- [laravel-folio-module-dependency](./concepts/laravel-folio-module-dependency.md) — owner `laravel/folio` = Cms, mai root
-
 ## Folio / x-page
 
 - [folio-volt-static-mount-contract](./concepts/folio-volt-static-mount-contract.md) — mount tema + data bag CMS
-- [folio-page-shell-pattern](./concepts/folio-page-shell-pattern.md) — mount + data bag + `@volt` statico
 - [x-page-data-bag-only](./concepts/x-page-data-bag-only.md)
 - Sixteen: [folio-page-pattern](../../../../Themes/Sixteen/docs/folio-page-pattern.md)
 
@@ -49,6 +44,16 @@ related:
 | Pagina | Tipo | Argomento |
 |--------|------|-----------|
 | [composer-lessons-learned](./concepts/composer-lessons-learned.md) | concept | Blocks constructor syntax error, View Composer criticality, firstOrCreate guards |
+
+## Lessons Learned
+
+| Pagina | Tipo | Argomento |
+|--------|------|-----------|
+| [composer-lessons-learned](./concepts/composer-lessons-learned.md) | concept | Blocks constructor syntax error, View Composer criticality, firstOrCreate guards |
+
+## Folio / x-page
+- [folio-page-shell-pattern](./concepts/folio-page-shell-pattern.md) — mount + data bag + `@volt` statico
+- [x-page-data-bag-only](./concepts/x-page-data-bag-only.md)
 
 ## Sacred Hierarchy
 

@@ -253,7 +253,7 @@ return [
 ### 1. Controllo Sintassi PHP
 ```bash
 cd /var/www/html/_bases/base_<nome progetto>/laravel
-cd /var/www/html/_bases/base_ptvx/laravel
+cd /var/www/html/_bases/base_Quaeris/laravel
 cd /var/www/html/_bases/base_techplanner_fila5_mono/laravel
 php -l Modules/Notify/lang/it/send_email.php
 

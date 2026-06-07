@@ -15,13 +15,14 @@ class ResolveBlockQueryAction
     /**
      * Executes the query path specified in block data and returns the result.
      *
-     * @param  array<string, mixed>  $queryConfig  Configuration: [model, scopes, orderBy, limit, wrap_in]
+     * @param array<string, mixed> $queryConfig Configuration: [model, scopes, orderBy, limit, wrap_in]
+     *
      * @return array<string, mixed> The transformed data to be merged into block data
      */
     public function execute(array $queryConfig): array
     {
         $modelClass = data_get($queryConfig, 'model');
-        if ($modelClass === null || ! is_string($modelClass) || ! class_exists($modelClass)) {
+        if (null === $modelClass || ! is_string($modelClass) || ! class_exists($modelClass)) {
             return [];
         }
 
@@ -33,11 +34,11 @@ class ResolveBlockQueryAction
         $singleScope = data_get($queryConfig, 'scope');
         /** @var array<int, string> $scopes */
         $scopes = (array) data_get($queryConfig, 'scopes', []);
-        if ($singleScope !== null && is_string($singleScope)) {
+        if (null !== $singleScope && is_string($singleScope)) {
             array_unshift($scopes, $singleScope);
         }
         foreach ($scopes as $scope) {
-            if (is_string($scope) && $scope !== '') {
+            if (is_string($scope) && '' !== $scope) {
                 // Scopes are added dynamically by Laravel, so we just try to call them
                 // method_exists() won't work because they're added via __call
                 try {

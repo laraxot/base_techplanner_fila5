@@ -235,10 +235,4 @@ Per documentazione completa, vedere:
 - [No Table Override Rule](../../../modules/xot/docs/filament/no-table-override.md)
 - [Widget Table Method Final Analysis](../../../modules/healthcare_app/docs/widget-table-method-final-analysis.md)
 - [Widget Property Initialization Pattern](../../../modules/healthcare_app/docs/widget-property-initialization-pattern.md)
-- [Widget Table Configuration](widget-table-configuration.md)
-
-## Riferimenti
-
-- [HasXotTable Trait](xot-table.md)
-- [No Table Override Rule](no-table-override.md)
 

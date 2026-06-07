@@ -4,12 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
 use Filament\Widgets\Widget as FilamentWidget;
-use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\View\GetViewByClassAction;
 use Modules\Xot\Filament\Traits\TransTrait;
@@ -34,7 +32,7 @@ abstract class XotBaseInfolistWidget extends FilamentWidget implements HasSchema
     }
 
     /**
-     * @return array<int|string, Component|Htmlable|string>
+     * @return array<int|string, \Filament\Schemas\Components\Component|\Illuminate\Contracts\Support\Htmlable|string>
      */
     abstract protected function getInfolistSchema(): array;
 
@@ -58,9 +56,8 @@ abstract class XotBaseInfolistWidget extends FilamentWidget implements HasSchema
     private function resolveView(): void
     {
         $defaultView = 'xot::filament.widgets.infolist';
-        $usingDefaultView = $this->view === $defaultView;
 
-        if (! $usingDefaultView && view()->exists($this->view)) {
+        if ($this->view !== $defaultView && view()->exists($this->view)) {
             return;
         }
 
@@ -69,10 +66,7 @@ abstract class XotBaseInfolistWidget extends FilamentWidget implements HasSchema
             if (view()->exists($view)) {
                 $this->view = $view;
             }
-        } catch (\Exception $e) {
-            if ($usingDefaultView) {
-                throw $e;
-            }
+        } catch (\Exception) {
         }
     }
 }

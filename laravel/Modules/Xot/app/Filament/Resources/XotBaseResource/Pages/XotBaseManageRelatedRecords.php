@@ -16,7 +16,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Override;
-use Filament\Tables\Table;
 
 /**
  * Classe base per la gestione delle relazioni nelle risorse Filament.

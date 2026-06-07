@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\Pages;
 
 use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords as FilamentListRecords;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Builder;
@@ -17,9 +19,9 @@ use Webmozart\Assert\Assert;
 /**
  * Base class for list records pages.
  *
- * @property ?string $model
- * @property ?string $resource
- * @property ?string $slug
+ * @property ?string         $model
+ * @property ?string         $resource
+ * @property ?string         $slug
  * @property TableLayoutEnum $layoutView
  */
 abstract class XotBaseListRecords extends FilamentListRecords
@@ -58,29 +60,30 @@ abstract class XotBaseListRecords extends FilamentListRecords
     {
         return ['id' => 'desc'];
     }
-    
+
     /**
      * Get the header actions.
      *
-     * @return array<string, Action|\Filament\Actions\ActionGroup>
+     * @return array<string, Action|ActionGroup>
      *
      * @phpstan-ignore method.childReturnType
      */
     protected function getHeaderActions(): array
     {
         return [
-            'create' => \Filament\Actions\CreateAction::make()->icon('heroicon-o-plus'),
+            'create' => CreateAction::make()->icon('heroicon-o-plus'),
         ];
     }
 
     /**
      * Paginate the table query.
      */
-    protected function paginateTableQuery(Builder $query): Paginator
+    protected function paginateTableQueryOLD(Builder $query): Paginator
     {
-        $paginator = $query->fastPaginate(
-            $this->getTableRecordsPerPage() === 'all' ? $query->count() : $this->getTableRecordsPerPage(),
-        );
+        $perPage = $this->getTableRecordsPerPage();
+        $perPageValue = 'all' === $perPage ? $query->count() : (is_numeric($perPage) ? (int) $perPage : null);
+
+        $paginator = $query->paginate($perPageValue);
 
         Assert::isInstanceOf($paginator, Paginator::class);
 
@@ -97,4 +100,3 @@ abstract class XotBaseListRecords extends FilamentListRecords
         return $paginator;
     }
 }
-

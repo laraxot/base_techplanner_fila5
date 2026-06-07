@@ -7,7 +7,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Array;
 use Modules\Xot\Actions\Array\SaveArrayAction;
 
 beforeEach(function (): void {
-$this->action = app(SaveArrayAction::class);
+    $this->action = app(SaveArrayAction::class);
     $this->tempDir = sys_get_temp_dir().DIRECTORY_SEPARATOR.'pest_test_'.uniqid();
     if (! file_exists($this->tempDir)) {
         mkdir($this->tempDir, 0755, true);
@@ -17,7 +17,7 @@ $this->action = app(SaveArrayAction::class);
 afterEach(function (): void {
     if (isset($this->tempDir) && file_exists($this->tempDir)) {
         $files = glob($this->tempDir.'/*');
-        if ($files !== false) {
+        if (false !== $files) {
             array_map('unlink', $files);
         }
         rmdir($this->tempDir);
@@ -25,7 +25,7 @@ afterEach(function (): void {
 });
 
 it('saves array in json format', function (): void {
-$path = $this->tempDir.'/data.json';
+    $path = $this->tempDir.'/data.json';
 
     $result = $this->action->execute(['a' => 1], $path, 'json');
 
@@ -34,7 +34,7 @@ $path = $this->tempDir.'/data.json';
 });
 
 it('saves array in php format by default', function (): void {
-$path = $this->tempDir.'/data.php';
+    $path = $this->tempDir.'/data.php';
 
     $result = $this->action->execute(['b' => 2], $path);
 
@@ -43,5 +43,5 @@ $path = $this->tempDir.'/data.php';
 });
 
 it('throws for unsupported format', function (): void {
-$this->action->execute([], $this->tempDir.'/invalid.txt', 'xml');
+    $this->action->execute([], $this->tempDir.'/invalid.txt', 'xml');
 })->throws(\InvalidArgumentException::class, 'Formato non supportato');

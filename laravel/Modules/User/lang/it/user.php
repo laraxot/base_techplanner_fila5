@@ -571,7 +571,7 @@ return [
             ],
         ],
         'register' => [
-'title' => [
+            'title' => [
                 'text' => 'Registrati',
             ],
             'subtitle' => [

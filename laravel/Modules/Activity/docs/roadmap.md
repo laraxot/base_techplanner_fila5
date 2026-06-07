@@ -1,9 +1,7 @@
-# Product Roadmap - Activity Module
+---
+module: theme
+topic: roadmap
+canonical: ../../../Themes/docs/shared-components/roadmap--Modules.md
+---
 
-## 🎯 Vision & Strategy
-Develop the Activity Module as a high-performance, specialized component of the Laraxot ecosystem.
-
-## 🗓️ Timeline
-### Q1 2026: Foundation
-- Standardize Activity Module Documentation - *Status: Shipped*
-- PHPStan Level 10 Audit - *Status: In Progress*
+See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Modules.md

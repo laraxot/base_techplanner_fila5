@@ -13,8 +13,7 @@ use Modules\UI\Filament\Widgets\UserCalendarWidget;
 use Modules\UI\Tests\TestCase;
 
 beforeEach(function () {
-    $this->widget = new class() extends UserCalendarWidget
-    {
+    $this->widget = new class extends UserCalendarWidget {
         public function getActionName(string $function): string
         {
             unset($function);

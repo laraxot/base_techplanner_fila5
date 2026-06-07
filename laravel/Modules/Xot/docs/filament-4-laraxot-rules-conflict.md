@@ -24,10 +24,6 @@ namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\
 
 // ❌ SBAGLIATO
 namespace Modules\healthcare_app\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-namespace Modules\ModuloEsempio\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-
-// ❌ SBAGLIATO
-namespace Modules\ModuloEsempio\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 namespace Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 // ❌ SBAGLIATO
@@ -171,10 +167,6 @@ namespace Modules\healthcare_app\App\Filament\Widgets;
 
 // ✅ CORRETTO
 namespace Modules\healthcare_app\Filament\Widgets;
-namespace Modules\ModuloEsempio\App\Filament\Widgets;
-
-// ✅ CORRETTO
-namespace Modules\ModuloEsempio\Filament\Widgets;
 namespace Modules\<nome progetto>\App\Filament\Widgets;
 
 // ✅ CORRETTO

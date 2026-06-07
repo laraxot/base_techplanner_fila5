@@ -22,7 +22,7 @@ class SsoProviderResource extends XotBaseResource
     protected static ?string $model = SsoProvider::class;
 
     /**
-     * @return array<string, \Filament\Support\Components\Component>
+     * @return array<string, Component>
      */
     #[\Override]
     public static function getFormSchema(): array
@@ -61,7 +61,7 @@ class SsoProviderResource extends XotBaseResource
     }
 
     /**
-     * @return array<string, class-string<\Filament\Resources\RelationManagers\RelationManager>>
+     * @return array<string, class-string<RelationManager>>
      */
     #[\Override]
     public static function getRelations(): array
@@ -85,4 +85,3 @@ class SsoProviderResource extends XotBaseResource
         ];
     }
 }
-

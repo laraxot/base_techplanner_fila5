@@ -1,7 +1,3 @@
-# Registration Widget Documentation
-
-## Overview
-
 ---
 module: theme
 topic: registration_widget
