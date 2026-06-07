@@ -5,10 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages;
 
 use Filament\Actions\Action;
-<<<<<<< HEAD
-use Filament\Actions\CreateAction;
-=======
->>>>>>> dev
 use Modules\User\Filament\Resources\OauthRefreshTokenResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 

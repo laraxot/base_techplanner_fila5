@@ -294,14 +294,7 @@ public function testTranslations()
 
 - [Gestione delle Traduzioni Mancanti](./gestione-traduzioni-mancanti.md)
 - [Best Practices per Laravel Translatable](./best-practices.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Configurazione Laravel Localization](../../cms/docs/localization/localization-setup.md)
-=======
 - [Configurazione Laravel Localization](../../Cms/docs/localization/localization-setup.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Configurazione Laravel Localization](../../cms/docs/localization/localization-setup.md)
->>>>>>> dev
 - [Documentazione Ufficiale Spatie Translatable](https://spatie.be/docs/laravel-translatable/v6/basic-usage/handling-missing-translations)
 - [Documentazione Plugin Filament](https://filamentphp.com/plugins/filament-spatie-translatable)

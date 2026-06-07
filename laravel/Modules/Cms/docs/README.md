@@ -1,29 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Module Documentation
-
-This directory contains the documentation for the Cms module.
-
-## Purpose
-
-The purpose of this documentation is to provide comprehensive information about the Cms's functionality, architecture, and usage. It aims to:
-- Explain key features and their implementation details.
-- Guide developers on how to use, extend, and maintain the module.
-- Ensure consistency with Laraxot architectural principles and coding standards.
-
-## Structure
-
-- `README.md`: This overview file.
-- Other Markdown files will detail specific aspects of the module, such as:
-    - `installation.md`
-    - `usage.md`
-    - `architecture.md`
-    - `troubleshooting.md`
-
-## Contribution
-
-Developers are encouraged to contribute to this documentation to keep it accurate and up-to-date.
-=======
 # 📄 Cms Module - Content Management System
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -189,8 +163,6 @@ $title = (string) $attachment->title; // Può fallire con null
 **Versione**: 2.0.0
 **PHPStan Level**: 10 ✅
 **Status**: Production Ready
->>>>>>> 4b6b99016 (first commit)
-=======
 ---
 title: "Cms Module Documentation"
 type: documentation
@@ -554,4 +526,3 @@ npm run dev
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
->>>>>>> dev

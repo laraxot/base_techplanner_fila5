@@ -124,14 +124,7 @@ Riorganizzazione degli elementi:
 ## Collegamenti
 - [Glossario Tecnico](../glossary.md)
 - [Struttura Componenti](../components/structure.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Blocchi](../blocks/readme.md)
-=======
 - [Documentazione Blocchi](../blocks/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione Blocchi](../blocks/readme.md)
->>>>>>> dev
 
 [Fonte: deborasilvestri.it](https://www.deborasilvestri.it/creare-un-sito-web/struttura-di-un-sito-web/)

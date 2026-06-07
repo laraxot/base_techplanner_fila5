@@ -932,10 +932,6 @@ Implementando queste soluzioni, il modulo Cms potrà superare i principali colli
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
 - [Convenzioni Namespace Filament](./convenzioni-namespace-filament.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Best Practices](../xot/docs/best-practices.md)
 - [Struttura Moduli](../xot/docs/module_structure.md)
 
@@ -966,8 +962,6 @@ Implementando queste soluzioni, il modulo Cms potrà superare i principali colli
 * [bottlenecks.md](../../media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../activity/docs/bottlenecks.md)
 * [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
-<<<<<<< HEAD
-=======
 - [Best Practices](../Xot/docs/BEST-PRACTICES.md)
 - [Struttura Moduli](../Xot/docs/MODULE_STRUCTURE.md)
 
@@ -998,6 +992,3 @@ Implementando queste soluzioni, il modulo Cms potrà superare i principali colli
 * [bottlenecks.md](../../Media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Activity/docs/bottlenecks.md)
 * [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

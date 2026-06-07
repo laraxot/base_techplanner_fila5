@@ -113,11 +113,7 @@ window.ChartJsBaseService = window.ChartJsBaseService || ChartJsBaseService;
 
 ### Chart.js Plugin Registration
 
-<<<<<<< HEAD
-**Project rule (Quaeris Fila5):** Chart.js plugin assets are centralized in the Chart module.
-=======
 **Project rule (healthcare_app Fila5):** Chart.js plugin assets are centralized in the Chart module.
->>>>>>> dev
 
 The Zero theme must **not** register `chartjs-plugin-datalabels` (or other Chart.js plugins) via its own bundle.
 It consumes the plugins that are already registered for Filament charts by the Chart module.
@@ -393,8 +389,6 @@ Sanitize chart data in theme views:
 </script>
 ```
 
-<<<<<<< HEAD
-=======
 ## Chart Widget Anti-Patterns (da evitare)
 
 **QuestionChartAnswersTripleChartWidget** è un anti-pattern totale: un widget che contiene 3 grafici invece di usare 3 widget separati. Viola DRY, KISS, Single Responsibility e le convenzioni del progetto (estende `Widget` invece di `XotBaseChartWidget`, usa RawJs in modo errato).
@@ -404,7 +398,6 @@ Sanitize chart data in theme views:
 - [Anti-Pattern completo](../../Modules/docs/anti-pattern-question-chart-answers-triple-widget.md)
 - [Anti-Pattern <nome progetto>](../../Modules/<nome progetto>/docs/anti-pattern-triple-chart-widget.md)
 
->>>>>>> dev
 ## Testing the Integration
 
 ### Theme Asset Tests

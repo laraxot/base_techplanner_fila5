@@ -295,10 +295,4 @@ protected function getViewData(): array
   - Aggiornata documentazione architetturale
   - Definite regole per prevenire errori futuri
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

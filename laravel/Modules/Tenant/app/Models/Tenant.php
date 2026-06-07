@@ -27,14 +27,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property array|null $settings
  * @property bool $is_active
  * @property string|null $logo
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @property \Carbon\Carbon|null $last_activity_at
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
- * @property \Carbon\Carbon|null $last_activity_at
->>>>>>> dev
  * @property-read string $url
  * @property-read Collection<int, User> $users
  * @property-read int|null $users_count
@@ -68,10 +61,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Tenant whereName($value)
  * @method static Builder<static>|Tenant whereSlug($value)
  * @method static Builder<static>|Tenant whereUpdatedAt($value)
-<<<<<<< HEAD
-=======
  * @method static Builder<static>|Tenant whereSettings($value)
->>>>>>> dev
  *
  * @mixin \Eloquent
  */
@@ -99,14 +89,7 @@ class Tenant extends BaseModel
         'country',
         'tax_code',
         'vat_number',
-<<<<<<< HEAD
-<<<<<<< HEAD
         'last_activity_at',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-        'last_activity_at',
->>>>>>> dev
     ];
 
     /**
@@ -176,14 +159,7 @@ class Tenant extends BaseModel
         return [
             'settings' => 'array',
             'is_active' => 'boolean',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'last_activity_at' => 'datetime',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'last_activity_at' => 'datetime',
->>>>>>> dev
         ];
     }
 }

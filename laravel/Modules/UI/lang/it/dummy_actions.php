@@ -6,10 +6,6 @@ return [
     'fields' => [
         'azioni' => [
             'label' => 'azioni',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -55,32 +51,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'prova' => [
-            'label' => 'prova',
-        ],
-        'prova2' => [
-            'label' => 'prova2',
-        ],
-        'status' => [
-            'label' => 'status',
-        ],
-        'due' => [
-            'label' => 'due',
-        ],
-        'uno' => [
-            'label' => 'uno',
-        ],
-        'uno-action' => [
-            'label' => 'uno-action',
-        ],
-        'due-action' => [
-            'label' => 'due-action',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -88,10 +58,6 @@ return [
             'label' => 'delete',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Dummy Actions',
     'plural_label' => 'Dummy Actions (Plurale)',
     'navigation' => [
@@ -105,9 +71,4 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

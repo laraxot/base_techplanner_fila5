@@ -96,11 +96,7 @@ Quando si interviene su un modulo (es. `User`, `Xot`, `Performance`, ecc.), è u
 
 ## Collegamenti correlati
 
-<<<<<<< HEAD
-- Linee guida globali sull’uso delle skill: [`../../../../docs/ai-guidelines.md`](../../../../docs/ai-guidelines.md)
-=======
 - Linee guida globali sull’uso delle skill: [`../../../../../docs/ai-guidelines.md`](../../../../../docs/ai-guidelines.md)
->>>>>>> dev
 - Regole PHPStan di questo modulo: [`phpstan-documentation-complete.md`](phpstan-documentation-complete.md)
 - Roadmap di correzione errori PHPStan: [`phpstan-errors-resolution-roadmap.md`](phpstan-errors-resolution-roadmap.md)
 - Regole Filament/XotBase: [`filament/filament-resource-rules.md`](filament/filament-resource-rules.md)

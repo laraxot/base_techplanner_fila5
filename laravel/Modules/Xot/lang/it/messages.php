@@ -27,10 +27,6 @@ return [
         'finished' => 'L\'applicazione è stata configurata correttamente.',
         'exit' => 'Clicca qui per uscire',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Messages',
     'plural_label' => 'Messages (Plurale)',
     'navigation' => [
@@ -75,9 +71,4 @@ return [
             'label' => 'Elimina Messages',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

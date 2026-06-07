@@ -22,10 +22,6 @@ return [
     'fields' => [
         'edit' => [
             'label' => 'Bearbeiten',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -71,32 +67,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'payload' => [
-            'label' => 'Nutzlast',
-        ],
-        'id' => [
-            'label' => 'ID',
-        ],
-        'queue' => [
-            'label' => 'Warteschlange',
-        ],
-        'attempts' => [
-            'label' => 'Versuche',
-        ],
-        'reserved_at' => [
-            'label' => 'Reserviert am',
-        ],
-        'available_at' => [
-            'label' => 'Verfügbar am',
-        ],
-        'created_at' => [
-            'label' => 'Erstellt am',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'navigation' => [
@@ -106,12 +76,5 @@ return [
         'label' => 'Aufträge',
     ],
     'label' => 'Aufträge',
-<<<<<<< HEAD
-<<<<<<< HEAD
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

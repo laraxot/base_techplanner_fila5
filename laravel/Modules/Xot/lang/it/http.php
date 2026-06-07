@@ -11,10 +11,6 @@ return [
         'title' => 'Torniamo subito.',
         'description' => 'Torniamo subito.',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Http',
     'plural_label' => 'Http (Plurale)',
     'navigation' => [
@@ -59,9 +55,4 @@ return [
             'label' => 'Elimina Http',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

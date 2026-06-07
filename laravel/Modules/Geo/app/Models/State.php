@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\Geo\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< HEAD
-=======
 use Illuminate\Support\Carbon;
->>>>>>> dev
 use Modules\Geo\Database\Factories\StateFactory;
 use Modules\Xot\Contracts\ProfileContract;
 
@@ -24,8 +21,6 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static StateFactory factory($count = null, $state = [])
  *
-<<<<<<< HEAD
-=======
  * @property string      $id
  * @property string      $state
  * @property string      $state_code
@@ -38,7 +33,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|State whereStateCode($value)
  * @method static Builder<static>|State whereUpdatedAt($value)
  *
->>>>>>> dev
  * @mixin \Eloquent
  */
 class State extends BaseModel

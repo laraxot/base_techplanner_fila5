@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-namespace Modules\Gdpr\Tests\Feature;
-
-=======
->>>>>>> dev
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Modules\User\Models\User;
@@ -414,11 +409,7 @@ it('contains proper SEO meta tags', function () {
     get('/en/auth/register')
         ->assertStatus(200)
         ->assertSee('<title>', false)
-<<<<<<< HEAD
-        ->assertSee('LaravelPizza Community');
-=======
         ->assertSee('<nome progetto> Community');
->>>>>>> dev
 });
 
 it('has proper accessibility attributes', function () {

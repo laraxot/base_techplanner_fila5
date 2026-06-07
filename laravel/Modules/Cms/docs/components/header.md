@@ -50,28 +50,15 @@ Il componente Header è un elemento fondamentale dell'interfaccia utente che for
 4. Seguire le convenzioni di accessibilità WCAG
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Componenti](./readme.md)
-- [Documentazione Blocchi](../blocks/readme.md)
-=======
 - [Documentazione Componenti](./README.md)
 - [Documentazione Blocchi](../blocks/README.md)
->>>>>>> 4b6b99016 (first commit)
 - [Convenzioni Layout](../../../docs/laravel-conventions.md)
 
 ## Collegamenti tra versioni di header.md
 * [header.md](docs/sections/header.md)
-<<<<<<< HEAD
-* [header.md](laravel/modules/cms/docs/components/header.md)
-* [header.md](laravel/modules/cms/docs/sections/header.md)
-* [header.md](laravel/themes/one/docs/sections/header.md)
-=======
 * [header.md](laravel/Modules/Cms/docs/components/header.md)
 * [header.md](laravel/Modules/Cms/docs/sections/header.md)
 * [header.md](laravel/Themes/One/docs/sections/header.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione Componenti](./readme.md)
 - [Documentazione Blocchi](../blocks/readme.md)
 - [Convenzioni Layout](../../../../docs/laravel-conventions.md)
@@ -81,4 +68,3 @@ Il componente Header è un elemento fondamentale dell'interfaccia utente che for
 * [header.md](laravel/modules/cms/docs/components/header.md)
 * [header.md](laravel/modules/cms/docs/sections/header.md)
 * [header.md](laravel/themes/one/docs/sections/header.md)
->>>>>>> dev

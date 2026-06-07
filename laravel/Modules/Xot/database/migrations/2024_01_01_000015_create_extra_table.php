@@ -9,12 +9,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreateExtraTable.
  */
-<<<<<<< HEAD
-return new class extends XotBaseMigration
-{
-=======
 return new class extends XotBaseMigration {
->>>>>>> dev
     /**
      * Run the migrations.
      */
@@ -24,7 +19,6 @@ return new class extends XotBaseMigration {
         $this->tableCreate(static function (Blueprint $table): void {
             $table->increments('id');
             $table->uuidMorphs('model');
-            // @phpstan-ignore-next-line method.notFound
             $table->schemalessAttributes('extra_attributes');
             $table->unique(['model_id', 'model_type'], 'morph_unique');
         });
@@ -42,11 +36,7 @@ return new class extends XotBaseMigration {
             //    $table->unique(['model_id', 'model_type'], 'morph_unique');
             // }
 
-<<<<<<< HEAD
-            if ($this->hasColumn('model_id') && $this->getColumnType('model_id') === 'bigint') {
-=======
             if ($this->hasColumn('model_id') && 'bigint' === $this->getColumnType('model_id')) {
->>>>>>> dev
                 $table->string('model_id', 36)->index()->change();
             }
         });

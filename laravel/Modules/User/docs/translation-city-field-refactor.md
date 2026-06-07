@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Refactor Completo Campi "Città" - Modulo User
 
 ## Riepilogo Intervento
@@ -181,7 +180,6 @@ Utilizzare la documentazione centrale [`translation-field-structure-complete.md`
 2025-08-08 - Refactor completo campi "Città" modulo User ✅ COMPLETATO
 
 *Intervento eseguito seguendo rigorosamente i principi DRY + KISS e gli standard Laraxot <nome progetto>*
-<<<<<<< HEAD
 
 
 --- Merged from translation-city-field-refactor-2025-08-08.md ---
@@ -368,9 +366,6 @@ Utilizzare la documentazione centrale [`translation-field-structure-complete.md`
 2025-08-08 - Refactor completo campi "Città" modulo User ✅ COMPLETATO
 
 *Intervento eseguito seguendo rigorosamente i principi DRY + KISS e gli standard Laraxot SaluteOra*
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 ---
 module: theme
 topic: translation-city-field-refactor
@@ -378,4 +373,3 @@ canonical: ../../../Themes/docs/shared-components/translation-city-field-refacto
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
->>>>>>> dev

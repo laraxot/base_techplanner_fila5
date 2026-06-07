@@ -1,15 +1,8 @@
 # Risoluzione Conflitti SmsChannel.php
 
 ## Contesto del Conflitto
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `/var/www/html/ptvx/laravel/Modules/Notify/app/Channels/SmsChannel.php`
-=======
 **File**: `Modules/Notify/app/Channels/SmsChannel.php`
->>>>>>> 4b6b99016 (first commit)
-=======
 **File**: `Modules/Notify/app/Channels/SmsChannel.php`
->>>>>>> dev
 **Linee**: 55-58
 **Tipo**: Conflitto di formattazione (riga vuota aggiuntiva)
 
@@ -19,15 +12,8 @@ Il conflitto è molto semplice e riguarda solo la presenza di una riga vuota agg
 ### Versione HEAD
 ```php
 $action = $this->factory->create();
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
 
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
 return $action->execute($smsData);
 ```
 
@@ -56,15 +42,8 @@ Rimuovere i marker di conflitto mantenendo la versione HEAD con la riga vuota ag
 ## Codice Finale
 ```php
 $action = $this->factory->create();
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
 
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
 return $action->execute($smsData);
 ```
 
@@ -74,21 +53,12 @@ return $action->execute($smsData);
 - Solo miglioramento della leggibilità del codice
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Notify Module Documentation](readme.md)
-- [SMS Channel Architecture](sms_channel_action_resolution.md)
-- [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
-
-=======
 - [Notify Module Documentation](README.md)
 - [SMS Channel Architecture](sms_channel_action_resolution.md)
 - [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
-=======
 - [Notify Module Documentation](readme.md)
 - [SMS Channel Architecture](sms_channel_action_resolution.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
->>>>>>> dev
 
 *Ultimo aggiornamento: giugno 2025*
 # Risoluzione Conflitti SmsChannel.php
@@ -145,13 +115,6 @@ return $action->execute($smsData);
 ## Collegamenti
 - [Notify Module Documentation](README.md)
 - [SMS Channel Architecture](sms_channel_action_resolution.md)
-<<<<<<< HEAD
-- [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
-
-*Ultimo aggiornamento: giugno 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
->>>>>>> dev

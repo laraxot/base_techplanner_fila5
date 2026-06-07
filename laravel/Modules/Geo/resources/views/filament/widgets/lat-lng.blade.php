@@ -3,36 +3,6 @@
 declare(strict_types=1);
 
 ?>
-<<<<<<< HEAD
-<x-filament-widgets::widget >
-    Lat-lng <br/>
-    lat:{{ $lat }}<br/>
-    lng:{{ $lng }}<br/>
-    err_code:{{ $err_code }}<br/>
-    err_message:{{ $err_message }}<br/>
-
-
-
-@script
-<script>
-
-    navigator.geolocation.getCurrentPosition(
-        function success(pos) {
-            @this.set('lat',pos.coords.latitude);
-            @this.set('lng',pos.coords.longitude);
-
-        },
-        function error(err) {
-            @this.set('err_code',err.code);
-            @this.set('err_message',err.message);
-            console.log(err);
-        }
-    );
-    </script>
-@endscript
-
-</x-filament-widgets::widget >
-=======
 <x-filament-widgets::widget>
     <div x-data="{ loading: false }" x-init="loading = true; getLocation()">
         <template x-if="loading">
@@ -78,4 +48,3 @@ declare(strict_types=1);
     );
 </script>
 @endscript
->>>>>>> dev

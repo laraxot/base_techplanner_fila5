@@ -82,10 +82,6 @@ Overall Module Completion: 60%
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](bashscripts/docs/roadmap.md)
 * [roadmap.md](docs/roadmap.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [roadmap.md](../../../gdpr/docs/roadmap.md)
 * [roadmap.md](../../../notify/docs/roadmap.md)
 * [roadmap.md](../../../xot/docs/roadmap.md)
@@ -100,8 +96,6 @@ Overall Module Completion: 60%
 * [roadmap.md](../../../patient/docs/roadmap.md)
 * [roadmap.md](../../../cms/docs/roadmap.md)
 * [roadmap.md](../../../../themes/one/docs/roadmap.md)
-<<<<<<< HEAD
-=======
 * [roadmap.md](../../../Gdpr/docs/roadmap.md)
 * [roadmap.md](../../../Notify/docs/roadmap.md)
 * [roadmap.md](../../../Xot/docs/roadmap.md)
@@ -116,9 +110,6 @@ Overall Module Completion: 60%
 * [roadmap.md](../../../Patient/docs/roadmap.md)
 * [roadmap.md](../../../Cms/docs/roadmap.md)
 * [roadmap.md](../../../../Themes/One/docs/roadmap.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 # Roadmap Implementazione
 
@@ -267,25 +258,14 @@ Overall Module Completion: 60%
 - Ogni sezione ha il suo README.md specifico
 
 ## Contribuire
-<<<<<<< HEAD
-Per contribuire alla documentazione, seguire le [Linee Guida](../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../docs/regole_collegamenti_documentazione.md).
-
-## Collegamenti Completi
-<<<<<<< HEAD
-Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/readme_links.md).
-=======
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/README_links.md).
->>>>>>> 4b6b99016 (first commit)
-=======
 Per contribuire alla documentazione, seguire le [Linee Guida](../../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../../docs/regole_collegamenti_documentazione.md).
 
 ## Collegamenti Completi
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../docs/readme_links.md).
->>>>>>> dev
 
 
 ### Versione Incoming
 
 
 ---
-

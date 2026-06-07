@@ -49,21 +49,9 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
 
         return [
             Split::make([
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'command' => TextColumn::make('command'),
                 'created_at' => TextColumn::make('created_at')->dateTime($date_format),
                 'updated_at' => TextColumn::make('updated_at')->formatStateUsing(static function (
-=======
-                TextColumn::make('command'),
-                TextColumn::make('created_at')->dateTime($date_format),
-                TextColumn::make('updated_at')->formatStateUsing(static function (
->>>>>>> 4b6b99016 (first commit)
-=======
-                'command' => TextColumn::make('command'),
-                'created_at' => TextColumn::make('created_at')->dateTime($date_format),
-                'updated_at' => TextColumn::make('updated_at')->formatStateUsing(static function (
->>>>>>> dev
                     ?Carbon $state,
                     ScheduleHistory $record,
                 ): string {
@@ -77,28 +65,12 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
 
                     return (string) $state->diffInSeconds($record->created_at).' seconds';
                 }),
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'output' => TextColumn::make('output')->formatStateUsing(
-=======
-                TextColumn::make('output')->formatStateUsing(
->>>>>>> 4b6b99016 (first commit)
-=======
-                'output' => TextColumn::make('output')->formatStateUsing(
->>>>>>> dev
                     static fn (string $state): string => (count(explode('<br />', nl2br($state))) - 1).' rows of output',
                 ),
             ]),
             Panel::make([
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'output' => TextColumn::make('output')
-=======
-                TextColumn::make('output')
->>>>>>> 4b6b99016 (first commit)
-=======
-                'output' => TextColumn::make('output')
->>>>>>> dev
                     ->extraAttributes(['class' => '!max-w-max'], true)
                     ->formatStateUsing(static fn (string $state): HtmlString => new HtmlString(nl2br(
                         $state,

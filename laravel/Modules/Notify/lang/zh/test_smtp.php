@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -87,44 +83,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'name' => [
-            'label' => '名称',
-        ],
-        'host' => [
-            'label' => '主机',
-        ],
-        'port' => [
-            'label' => '端口',
-        ],
-        'username' => [
-            'label' => '用户名',
-        ],
-        'password' => [
-            'label' => '密码',
-        ],
-        'encryption' => [
-            'label' => '加密',
-        ],
-        'from_address' => [
-            'label' => '发件人地址',
-        ],
-        'from_name' => [
-            'label' => '发件人名称',
-        ],
-        'status' => [
-            'label' => '状态',
-        ],
-        'last_tested_at' => [
-            'label' => '最后测试时间',
-        ],
-        'created_at' => [
-            'label' => '创建时间',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [

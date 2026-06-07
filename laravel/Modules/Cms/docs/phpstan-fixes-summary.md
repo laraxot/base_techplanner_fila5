@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 # PHPStan Fixes Summary - CMS Module
 
 **Date**: 2025-11-24
@@ -124,9 +120,6 @@ All fixes verified with:
 1. **Monitor**: Regular PHPStan checks
 2. **Document**: Update component documentation
 3. **Educate**: Share contract usage patterns
-<<<<<<< HEAD
-4. **Automate**: Pre-commit hooks for quality
-=======
 # PHPStan Level 10 Fixes Summary - Cms Module
 
 **Data**: 2026-01-09  
@@ -190,7 +183,4 @@ All fixes verified with:
 ---
 
 **Ultimo aggiornamento**: 2026-01-09
->>>>>>> 4b6b99016 (first commit)
-=======
 4. **Automate**: Pre-commit hooks for quality
->>>>>>> dev

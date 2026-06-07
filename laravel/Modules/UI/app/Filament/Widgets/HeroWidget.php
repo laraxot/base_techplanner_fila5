@@ -11,10 +11,6 @@ class HeroWidget extends BaseWidget
 {
     protected ?string $heading = 'Hero Widget';
 
-<<<<<<< HEAD
-    // PHPStan L10: Protected per type safety - public properties sono viste come mixed
-=======
->>>>>>> dev
     protected string $title = '';
 
     protected string $icon = '';
@@ -27,11 +23,7 @@ class HeroWidget extends BaseWidget
     protected function getStats(): array
     {
         return [
-<<<<<<< HEAD
-            Stat::make('', $this->title ?? '')->icon($this->icon ?? ''),
-=======
             Stat::make('', $this->title)->icon($this->icon),
->>>>>>> dev
         ];
     }
 }

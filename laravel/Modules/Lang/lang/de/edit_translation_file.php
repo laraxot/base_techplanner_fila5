@@ -9,14 +9,7 @@ return [
             'placeholder' => 'key',
             'helper_text' => 'key',
             'description' => 'key',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'data' => [
             'pippo' => [
@@ -24,29 +17,16 @@ return [
                 'helper_text' => 'data.pippo',
                 'placeholder' => 'data.pippo',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'pippo' => [
             'description' => 'pippo',
             'helper_text' => 'pippo',
             'placeholder' => 'pippo',
             'label' => 'pippo',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
         'pluto' => [
@@ -54,14 +34,6 @@ return [
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'pluto' => [
-            'description' => 'pluto',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'snapshots' => [
             'fields' => [
@@ -74,19 +46,10 @@ return [
                     ],
                 ],
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'content' => [
             'snapshots' => [
@@ -391,19 +354,10 @@ return [
                     'helper_text' => 'content.specialties.empty',
                 ],
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -417,10 +371,6 @@ return [
             'label' => 'lang',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -430,9 +380,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

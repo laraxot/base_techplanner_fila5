@@ -1,12 +1,6 @@
 # PHPStan Level 10 Errors Roadmap - Tenant Module
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2026-01-14  
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Modulo**: Tenant  
 **Livello PHPStan**: 10  
 **Status**: 🧘 **AGGIORNATO CON ERRORI ATTUALI**
@@ -122,12 +116,5 @@ return $dataArray;
 
 **Status**: 🧘 **IN ANALISI**
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2026-01-12
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: [DATE]
->>>>>>> dev

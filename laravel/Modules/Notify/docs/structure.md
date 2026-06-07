@@ -1,25 +1,14 @@
 # Modulo Notify
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Data: [DATE] 19:09:56
-=======
 Data: 2025-04-23 19:09:56
->>>>>>> 4b6b99016 (first commit)
-=======
 Data: 2025-04-23 19:09:56
->>>>>>> dev
 
 ## Informazioni generali
 
 - **Namespace principale**: Modules\\Notify
 Modules\\Notify\\Database\\Factories
 Modules\\Notify\\Database\\Seeders
-<<<<<<< HEAD
-- **Pacchetto Composer**: laraxot/module_notify_fila3
-=======
 - **Pacchetto Composer**: laraxot/module_notify_fila5
->>>>>>> dev
 Marco Sottana
 - **Dipendenze**: aws/aws-sdk-php * filament/filament * illuminate/contracts * illuminate/support * irazasyed/telegram-bot-sdk * kreait/laravel-firebase * laravel-notification-channels/fcm * laravel-notification-channels/telegram * phpdocumentor/type-resolver * symfony/http-client * symfony/postmark-mailer * repositories type path url ../Xot type path
 - **Totale file PHP**: 165
@@ -446,26 +435,6 @@ tests/Unit
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [structure.md](../../../gdpr/docs/structure.md)
-* [structure.md](../../../notify/docs/structure.md)
-* [structure.md](../../../xot/docs/structure.md)
-* [structure.md](../../../xot/docs/base/structure.md)
-* [structure.md](../../../xot/docs/config/structure.md)
-* [structure.md](../../../user/docs/structure.md)
-* [structure.md](../../../ui/docs/structure.md)
-* [structure.md](../../../lang/docs/structure.md)
-* [structure.md](../../../job/docs/structure.md)
-* [structure.md](../../../media/docs/structure.md)
-* [structure.md](../../../tenant/docs/structure.md)
-* [structure.md](../../../activity/docs/structure.md)
-* [structure.md](../../../cms/docs/structure.md)
-* [structure.md](../../../cms/docs/themes/structure.md)
-* [structure.md](../../../cms/docs/components/structure.md)
-=======
-=======
->>>>>>> dev
 * [structure.md](../../../Gdpr/docs/structure.md)
 * [structure.md](../../../Notify/docs/structure.md)
 * [structure.md](../../../Xot/docs/structure.md)
@@ -481,9 +450,5 @@ tests/Unit
 * [structure.md](../../../Cms/docs/structure.md)
 * [structure.md](../../../Cms/docs/themes/structure.md)
 * [structure.md](../../../Cms/docs/components/structure.md)
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ---

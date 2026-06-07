@@ -2,11 +2,8 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
 namespace Modules\Gdpr\Tests\Feature;
 
->>>>>>> dev
 use Modules\Gdpr\Tests\TestCase;
 use Modules\User\Models\User;
 

@@ -1,23 +1,4 @@
-<<<<<<< HEAD
-# Filament Widgets
-
-## Panoramica
-
-Questa sezione documenta l'implementazione e l'utilizzo dei widget Filament nel progetto. I widget forniscono componenti riutilizzabili per dashboard e interfacce amministrative.
-
-## Struttura
-
-Il sistema di widget è organizzato attorno a classi base che forniscono funzionalità comuni e standardizzano l'implementazione.
-
-## Widget Disponibili
-
-### Widget Base
-
-<<<<<<< HEAD
-- [XotBaseWidget](../xot/docs/filament/widgets/xotbasewidget.md) - Classe base per tutti i widget
-=======
 - [XotBaseWidget](../Xot/docs/filament/widgets/xotbasewidget.md) - Classe base per tutti i widget
->>>>>>> 4b6b99016 (first commit)
 
 ## Best Practices
 
@@ -44,7 +25,6 @@ class DashboardStatsWidget extends XotBaseWidget
     }
 }
 ```
-=======
 # Wizard Widget Documentation — Indice Completo
 
 **Status**: Active  
@@ -254,4 +234,3 @@ Prima di committare un wizard widget, verifica TUTTI i punti:
 ---
 
 *Ultimo aggiornamento: 2026-04-14*
->>>>>>> dev

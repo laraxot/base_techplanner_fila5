@@ -4,7 +4,4 @@
 -e 
 # PHPStan documentation
 docs/phpstan/
-<<<<<<< HEAD
-=======
 _docs/
->>>>>>> dev

@@ -9,38 +9,20 @@ return [
             'placeholder' => 'invoice',
             'helper_text' => 'invoice',
             'description' => 'invoice',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'contract' => [
             'label' => 'contract',
             'placeholder' => 'contract',
             'helper_text' => 'contract',
             'description' => 'contract',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'receipt' => [
             'label' => 'receipt',
             'placeholder' => 'receipt',
             'helper_text' => 'receipt',
             'description' => 'receipt',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -66,11 +48,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Attachments Schema Action Test',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
 ];

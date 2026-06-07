@@ -45,15 +45,8 @@ public static function getFormSchema(): array
 {
     return [
         // Altri campi specifici dello Studio
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         'addresses' => Forms\Components\Repeater::make('addresses')
             ->relationship('addresses')
             ->schema(AddressResource::getFormSchema()),
@@ -97,9 +90,6 @@ $addressSchema['locality'] = Forms\Components\TextInput::make('locality')
     ->columnSpan(2);
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ## AddressSection (Filament Schemas)
 
 `AddressSection` è il wrapper standard per riutilizzare lo schema di `AddressResource` all'interno delle pagine Filament, usando il nuovo layer `filament/schemas`.
@@ -120,9 +110,6 @@ Questo pattern rispetta DRY+KISS:
 - **Allineamento con AddressItemEnum**: progressivamente convergere la definizione dei campi "semplici" (route, postal_code, ecc.) verso `AddressItemEnum::getFormSchema()`, lasciando in `AddressResource` solo la logica dinamica (Select dipendenti, mappe, ecc.).
 - **Documentare altri consumer**: aggiungere esempi di altre risorse/pagine che riusano lo stesso schema tramite `AddressSection`, per rendere evidente il pattern a chi sviluppa nuovi moduli.
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ## Riferimenti
 
 - [address-resource.md](address-resource.md)

@@ -5,10 +5,6 @@ declare(strict_types=1);
 return [
     'name' => 'name',
     'dove' => 'dove',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Try Array To Xls Action',
     'plural_label' => 'Try Array To Xls Action (Plurale)',
     'navigation' => [
@@ -53,9 +49,4 @@ return [
             'label' => 'Elimina Try Array To Xls Action',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

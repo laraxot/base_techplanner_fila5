@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 -------------------------------
 editor tiptap con livewire
 https://oliver.mx/tiptap-laravel
@@ -27,5 +25,3 @@ https://oliver.mx/tiptap-laravel
 --------------------------------
 --------------------------------
 --------------------------------
->>>>>>> dev
-

@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Filament;
 
-<<<<<<< HEAD
-use Exception;
-=======
->>>>>>> dev
 use Filament\Navigation\NavigationItem;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\Auth;
@@ -16,21 +12,12 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
-<<<<<<< HEAD
-use Spatie\QueueableAction\QueueableAction;
-use Throwable;
-use Webmozart\Assert\Assert;
-
-use function Safe\json_encode;
-
-=======
 
 use function Safe\json_encode;
 
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
->>>>>>> dev
 /**
  * Classe per gestire gli elementi di navigazione per i moduli.
  * Ottimizzata per ridurre memory usage.
@@ -67,11 +54,7 @@ class GetModulesNavigationItems
             // Tolleranza: durante comandi CLI alcuni moduli possono non avere ancora struttura completa
             try {
                 $configPath = app(GetModulePathByGeneratorAction::class)->execute($module, 'config');
-<<<<<<< HEAD
-            } catch (Throwable $e) {
-=======
             } catch (\Throwable $e) {
->>>>>>> dev
                 // Skip modulo non pronto/senza generator path config
                 continue;
             }
@@ -87,11 +70,7 @@ class GetModulesNavigationItems
                 /** @var array<string, mixed> $config */
                 $config = File::getRequire($configFilePath);
                 Assert::isArray($config, 'Il file di configurazione deve restituire un array');
-<<<<<<< HEAD
-            } catch (Exception $e) {
-=======
             } catch (\Exception $e) {
->>>>>>> dev
                 continue;
             }
 
@@ -134,11 +113,7 @@ class GetModulesNavigationItems
                      * @var Authenticatable|null $user
                      */
                     $user = Auth::user();
-<<<<<<< HEAD
-                    if ($user === null) {
-=======
                     if (null === $user) {
->>>>>>> dev
                         return false;
                     }
 
@@ -147,11 +122,6 @@ class GetModulesNavigationItems
                         return false;
                     }
 
-<<<<<<< HEAD
-                    /** @phpstan-ignore-next-line */
-=======
-                    /* @phpstan-ignore-next-line */
->>>>>>> dev
                     return (bool) $user->hasRole($role);
                 });
 
@@ -197,11 +167,7 @@ class GetModulesNavigationItems
                     /** @var array<string, mixed> $config */
                     $config = File::getRequire($configFilePath);
                     Assert::isArray($config);
-<<<<<<< HEAD
-                } catch (Exception $e) {
-=======
                 } catch (\Exception $e) {
->>>>>>> dev
                     continue;
                 }
                 $icon = $config['icon'] ?? 'heroicon-o-cube';
@@ -230,11 +196,7 @@ class GetModulesNavigationItems
             Assert::integer($item['sort']);
         }
 
-<<<<<<< HEAD
-        /** @var array<int, array{module: string, module_low: string, icon: string, sort: int}> $result */
-=======
         /* @var array<int, array{module: string, module_low: string, icon: string, sort: int}> $result */
->>>>>>> dev
         return $result;
     }
 }

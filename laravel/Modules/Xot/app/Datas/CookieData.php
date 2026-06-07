@@ -11,16 +11,15 @@ use Spatie\LaravelData\Data;
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  *
  * @phpstan-consistent-constructor
+ *
+ * @param bool $accept
+ * @param string $type
+ * @param int $durationDays
+ * @param string $policyUrl
+ * @param string $bannerStyle
  */
 final class CookieData extends Data
 {
-    /**
-     * @param bool   $accept
-     * @param string $type
-     * @param int    $durationDays
-     * @param string $policyUrl
-     * @param string $bannerStyle
-     */
     public function __construct(
         public readonly bool $accept = false,
         public readonly string $type = 'necessary',
@@ -33,8 +32,8 @@ final class CookieData extends Data
     /**
      * Create a new instance of CookieData with default values.
      */
-    public static function make(): static
+    public static function make(): self
     {
-        return new static();
+        return new self();
     }
 }

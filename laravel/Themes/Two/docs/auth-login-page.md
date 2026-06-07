@@ -39,8 +39,6 @@ Login e register usano il componente **logo configurabile** del tema:
 
 Non usare icone fisse (es. `meetup-logo`): usare sempre `<x-pub_theme::ui.logo />` per avere un logo unico e modificabile da config.
 
-<<<<<<< HEAD
-=======
 ## Pulsanti Social Login
 
 Il LoginWidget mostra pulsanti per Google, GitHub e Microsoft quando configurati in `config/services.php`:
@@ -71,7 +69,6 @@ Se il logo è un'immagine (da metatag), assicurarsi che sia una versione light/w
 
 Il pannello sinistro include un effetto particles con canvas vanilla JS per dare profondità visiva. Componente: `pub_theme::components.ui.particles`. Leggero, accessibile (aria-hidden), non blocca interazioni. Vedi [particles-component](particles-component.md).
 
->>>>>>> dev
 ## Anti-pattern da evitare
 Non sostituire il widget con un form HTML classico:
 - Vietato: `<form method="POST" action="{{ route('login') }}">` con @csrf e input email/password/remember.
@@ -79,11 +76,8 @@ Non sostituire il widget con un form HTML classico:
 
 ## Collegamenti
 
-<<<<<<< HEAD
-=======
 - [particles-component](particles-component.md)
 - [Auth Social Login Translations (modulo User)](../../Modules/User/docs/auth-social-login-translations.md)
->>>>>>> dev
 - [Troubleshooting login (modulo User)](../../Modules/User/docs/troubleshooting-login-component.md)
 - [Regola Cursor: form auth solo Filament widget](../../../.cursor/rules/filament-login-widget.mdc)
 - [Folio page file rules](folio-page-file-rules.md)

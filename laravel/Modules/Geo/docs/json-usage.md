@@ -40,15 +40,8 @@ class GeoDataService
     {
         $json = File::get(module_path('Geo', 'resources/json/comuni.json'));
         $data = json_decode($json, true);
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return collect($data['regions'])
             ->map(fn ($region) => [
                 'id' => $region['code'],
@@ -61,15 +54,8 @@ class GeoDataService
     {
         $json = File::get(module_path('Geo', 'resources/json/comuni.json'));
         $data = json_decode($json, true);
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return collect($data['regions'])
             ->firstWhere('code', $regionCode)['provinces']
             ->map(fn ($province) => [
@@ -83,15 +69,8 @@ class GeoDataService
     {
         $json = File::get(module_path('Geo', 'resources/json/comuni.json'));
         $data = json_decode($json, true);
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         foreach ($data['regions'] as $region) {
             foreach ($region['provinces'] as $province) {
                 if ($province['code'] === $provinceCode) {
@@ -105,15 +84,8 @@ class GeoDataService
                 }
             }
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return [];
     }
 }
@@ -149,15 +121,8 @@ class LocationForm extends Component
                         ->selectablePlaceholder(false),
 
                     'province' => Select::make('province')
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        ->options(fn (Get $get) => 
-=======
                         ->options(fn (Get $get) =>
->>>>>>> 4b6b99016 (first commit)
-=======
                         ->options(fn (Get $get) => 
->>>>>>> dev
                             $this->geoDataService->getProvinces($get('region'))
                         )
                         ->searchable()
@@ -168,15 +133,8 @@ class LocationForm extends Component
                         ->selectablePlaceholder(false),
 
                     'city' => Select::make('city')
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        ->options(fn (Get $get) => 
-=======
                         ->options(fn (Get $get) =>
->>>>>>> 4b6b99016 (first commit)
-=======
                         ->options(fn (Get $get) => 
->>>>>>> dev
                             $this->geoDataService->getCities($get('province'))
                         )
                         ->searchable()
@@ -187,15 +145,8 @@ class LocationForm extends Component
                         ->selectablePlaceholder(false),
 
                     'cap' => Select::make('cap')
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        ->options(fn (Get $get) => 
-=======
                         ->options(fn (Get $get) =>
->>>>>>> 4b6b99016 (first commit)
-=======
                         ->options(fn (Get $get) => 
->>>>>>> dev
                             collect($this->geoDataService->getCities($get('province')))
                                 ->firstWhere('code', $get('city'))['cap']
                         )
@@ -236,15 +187,8 @@ class GeoDataService
         return Cache::remember('geo_regions', 86400, function () {
             $json = File::get(module_path('Geo', 'resources/json/comuni.json'));
             $data = json_decode($json, true);
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             return collect($data['regions'])
                 ->map(fn ($region) => [
                     'id' => $region['code'],
@@ -274,24 +218,13 @@ class GeoDataService
    - Utilizzare un database dedicato
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Squire](../../geo/project_docs/squire-integration.md)
-- [Best Practices Filament](../../../project_docs/filament-best-practices.md)
-- [Clean Code](../../../project_docs/clean-code.md)
-
-**Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`. 
-=======
 - [Documentazione Squire](../../Geo/docs/squire-integration.md)
 - [Best Practices Filament](../../../docs/filament-best-practices.md)
 - [Clean Code](../../../docs/clean-code.md)
 
 **Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`.
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione Squire](../../geo/project_docs/squire-integration.md)
 - [Best Practices Filament](../../../../docs/project/filament-best-practices.md)
 - [Clean Code](../../../../docs/project/clean-code.md)
 
 **Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`. 
->>>>>>> dev

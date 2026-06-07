@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 # 📚 **Indice Documentazione Modulo UI**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -21,8 +17,6 @@
 - 🧩 **[Blade Components](./blade-components.md)** - Libreria di componenti atomici riutilizzabili.
 - ⚡ **[Filament Components](./filament-components-usage.md)** - Custom columns, fields e widgets per l'Admin Panel.
 - 📍 **[Location Selector](./filament-components-location-studio.md)** - Componente avanzato per la selezione geografica.
-<<<<<<< HEAD
-=======
 - 🏛️ **[Design Comuni FAQ Components](./design-comuni-faq-components.md)** - Componenti UI per pagina FAQ (Accordion, Hero, Breadcrumb, Search) ✅ 90%
 
 ## 🏛️ **Design Comuni Italia - Replication**
@@ -55,7 +49,6 @@
 | Hero | ✅ 100% | ✅ 95% | N/A | ✅ 98% |
 | Breadcrumb | ✅ 100% | ✅ 100% | N/A | ✅ 100% |
 | Search | ✅ 100% | ✅ 90% | ⏳ 0% | ⏳ 65% |
->>>>>>> dev
 
 ## 🛠️ **Integrazioni Tecniche**
 - 🏗️ **[Tailwind v4 Upgrade](./filament-v4-theme-upgrade.md)** - Guida alla migrazione verso l'ultima versione di Tailwind.
@@ -69,25 +62,17 @@
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./consolidation-plan.md)** - Strategia per ridurre i 280+ file di documentazione.
 
-<<<<<<< HEAD
-=======
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
 - `owenvoke/blade-fontawesome` - Icone FontAwesome
 
->>>>>>> dev
 ## 🔗 **Moduli Correlati**
 - [Xot](../../xot/docs/readme.md) - Base framework per i widget.
 - [Cms](../../cms/docs/readme.md) - Layout dei contenuti e blocchi.
 
 ---
-<<<<<<< HEAD
-*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-=======
 # Documentation Index
 # Documentation Index
->>>>>>> 4b6b99016 (first commit)
-=======
 
 ## 🏛️ **Design Comuni Italia - Replication**
 
@@ -120,4 +105,3 @@
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
->>>>>>> dev

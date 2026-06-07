@@ -4,15 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Helpers;
 
-<<<<<<< HEAD
-use Exception;
 use Illuminate\Support\Str;
-use ReflectionClass;
-use RuntimeException;
-use Webmozart\Assert\Assert;
-=======
-use Illuminate\Support\Str;
->>>>>>> dev
 
 use function Safe\error_log;
 use function Safe\file_get_contents;
@@ -21,34 +13,17 @@ use function Safe\glob;
 use function Safe\preg_match;
 use function Safe\preg_replace;
 
-<<<<<<< HEAD
-class ResourceFormSchemaGenerator
-{
-    /**
-     * @param  class-string  $resourceClass
-=======
 use Webmozart\Assert\Assert;
 
 class ResourceFormSchemaGenerator
 {
     /**
      * @param class-string $resourceClass
->>>>>>> dev
      */
     public static function generateFormSchema(string $resourceClass): bool
     {
         try {
             if (! class_exists($resourceClass)) {
-<<<<<<< HEAD
-                throw new RuntimeException("Class {$resourceClass} does not exist");
-            }
-
-            $reflection = new ReflectionClass($resourceClass);
-            $filename = $reflection->getFileName();
-
-            if ($filename === false) {
-                throw new RuntimeException("Failed to get filename for class: {$resourceClass}");
-=======
                 throw new \RuntimeException("Class {$resourceClass} does not exist");
             }
 
@@ -57,7 +32,6 @@ class ResourceFormSchemaGenerator
 
             if (false === $filename) {
                 throw new \RuntimeException("Failed to get filename for class: {$resourceClass}");
->>>>>>> dev
             }
 
             // Read the file contents
@@ -84,11 +58,7 @@ class ResourceFormSchemaGenerator
             file_put_contents($filename, $modifiedContents);
 
             return true;
-<<<<<<< HEAD
-        } catch (Exception $e) {
-=======
         } catch (\Exception $e) {
->>>>>>> dev
             error_log("Error generating form schema for {$resourceClass}: ".$e->getMessage());
 
             return false;
@@ -101,11 +71,7 @@ class ResourceFormSchemaGenerator
     public static function generateForAllResources(): array
     {
         $resourceFiles = glob(
-<<<<<<< HEAD
-            '/var/www/html/base_orisbroker_fila3/laravel/Modules/*/app/Filament/Resources/*Resource.php',
-=======
             '/var/www/html/base_orisbroker_fila5/laravel/Modules/*/app/Filament/Resources/*Resource.php',
->>>>>>> dev
         );
 
         $results = ['updated' => [], 'skipped' => []];
@@ -118,17 +84,10 @@ class ResourceFormSchemaGenerator
                 $classMatch = [];
 
                 if (
-<<<<<<< HEAD
-                    preg_match('/namespace\s+([\w\\\\\\\\]+);/', $content, $namespaceMatch) &&
-                        preg_match('/class\s+(\w+)\s+extends\s+XotBaseResource/', $content, $classMatch) &&
-                        ! empty($namespaceMatch[1]) &&
-                        ! empty($classMatch[1])
-=======
                     preg_match('/namespace\s+([\w\\\\\\\\]+);/', $content, $namespaceMatch)
                         && preg_match('/class\s+(\w+)\s+extends\s+XotBaseResource/', $content, $classMatch)
                         && ! empty($namespaceMatch[1])
                         && ! empty($classMatch[1])
->>>>>>> dev
                 ) {
                     $fullClassName = $namespaceMatch[1].'\\'.$classMatch[1];
 
@@ -139,11 +98,7 @@ class ResourceFormSchemaGenerator
                         }
                     }
                 }
-<<<<<<< HEAD
-            } catch (Exception $e) {
-=======
             } catch (\Exception $e) {
->>>>>>> dev
                 $results['skipped'][] = is_string($file) ? $file : (((string) $file).': '.$e->getMessage());
             }
         }

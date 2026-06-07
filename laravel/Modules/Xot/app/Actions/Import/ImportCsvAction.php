@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Import;
 
-<<<<<<< HEAD
-use Exception;
-=======
->>>>>>> dev
 use Filament\Notifications\Notification;
 use Illuminate\Database\Schema\Builder;
 use Illuminate\Support\Facades\DB;
@@ -15,20 +11,12 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\ColumnData;
-<<<<<<< HEAD
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
-use function Safe\ini_set;
-
-=======
 
 use function Safe\ini_set;
 
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
->>>>>>> dev
 class ImportCsvAction
 {
     use QueueableAction;
@@ -36,21 +24,12 @@ class ImportCsvAction
     /**
      * Import a CSV file into a database table.
      *
-<<<<<<< HEAD
-     * @param  string  $disk  the storage disk where the file is located
-     * @param  string  $filename  the name of the file to import
-     * @param  string  $db  the database connection name
-     * @param  string  $tbl  the table name where data will be imported
-     *
-     * @throws Exception
-=======
      * @param string $disk     the storage disk where the file is located
      * @param string $filename the name of the file to import
      * @param string $db       the database connection name
      * @param string $tbl      the table name where data will be imported
      *
      * @throws \Exception
->>>>>>> dev
      */
     public function execute(string $disk, string $filename, string $db, string $tbl): void
     {
@@ -101,17 +80,8 @@ class ImportCsvAction
         $excludedColumns = ['id'];
 
         return array_map(
-<<<<<<< HEAD
-<<<<<<< HEAD
             function ($column) use ($conn, $tbl) {
                 /** @var string $column */
-=======
-            function (string $column) use ($conn, $tbl) {
->>>>>>> 4b6b99016 (first commit)
-=======
-            function ($column) use ($conn, $tbl) {
-                /** @var string $column */
->>>>>>> dev
                 $type = $conn->getColumnType($tbl, $column);
 
                 return new ColumnData(
@@ -126,22 +96,14 @@ class ImportCsvAction
     /**
      * Prepare fields for the SQL query.
      *
-<<<<<<< HEAD
-     * @param  array<ColumnData>  $columns
-=======
      * @param array<ColumnData> $columns
      *
->>>>>>> dev
      * @return array<string>
      */
     private function prepareFields(array $columns): array
     {
         return array_map(
-<<<<<<< HEAD
-            fn (ColumnData $column) => $column->type === 'decimal' ? '@'.$column->name : $column->name,
-=======
             fn (ColumnData $column) => 'decimal' === $column->type ? '@'.$column->name : $column->name,
->>>>>>> dev
             $columns,
         );
     }
@@ -149,11 +111,7 @@ class ImportCsvAction
     /**
      * Build the SQL query for importing data.
      *
-<<<<<<< HEAD
-     * @param  array<ColumnData>  $columns
-=======
      * @param array<ColumnData> $columns
->>>>>>> dev
      */
     private function buildSql(string $path, string $db, string $tbl, string $fieldsUpList, array $columns): string
     {
@@ -170,11 +128,7 @@ class ImportCsvAction
 
         $sqlReplace = [];
         foreach ($columns as $column) {
-<<<<<<< HEAD
-            if ($column->type === 'decimal') {
-=======
             if ('decimal' === $column->type) {
->>>>>>> dev
                 $sqlReplace[] = "{$column->name} = REPLACE(@{$column->name}, ',', '.')";
             }
         }
@@ -189,18 +143,11 @@ class ImportCsvAction
     /**
      * Transform columns into ColumnData objects.
      *
-<<<<<<< HEAD
-     * @param  array<string>  $columns
-     * @return array<ColumnData>
-     *
-     * @deprecated This method is currently unused but kept for future expansion.
-=======
      * @param array<string> $columns
      *
      * @return array<ColumnData>
      *
      * @deprecated this method is currently unused but kept for future expansion
->>>>>>> dev
      *
      * @phpstan-ignore method.unused
      */

@@ -29,52 +29,25 @@ return [
                 'alert' => 'Allarme',
                 'emergency' => 'Emergenza',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Contenuto del messaggio',
             'help' => 'Descrizione dettagliata dell\'evento registrato',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'context' => [
             'label' => 'Contesto',
             'placeholder' => 'Informazioni contestuali',
             'help' => 'Dati aggiuntivi relativi all\'evento',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'channel' => [
             'label' => 'Canale',
@@ -90,130 +63,58 @@ return [
                 'papertrail' => 'Papertrail',
                 'discord' => 'Discord',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'timestamp' => [
             'label' => 'Data e Ora',
             'help' => 'Momento esatto della registrazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'file' => [
             'label' => 'File',
             'help' => 'File sorgente dell\'evento',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'line' => [
             'label' => 'Linea',
             'help' => 'Numero di linea nel file sorgente',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'stack_trace' => [
             'label' => 'Stack Trace',
             'help' => 'Traccia dello stack per debug',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'user' => [
             'label' => 'Utente',
             'help' => 'Utente che ha generato l\'evento',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'ip' => [
             'label' => 'Indirizzo IP',
             'help' => 'IP di origine dell\'evento',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'user_agent' => [
             'label' => 'User Agent',
             'help' => 'Browser o applicazione client',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -277,27 +178,12 @@ return [
             'label' => 'Periodo di conservazione',
             'help' => 'Giorni di mantenimento dei log',
             'options' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
                 7 => '1 settimana',
                 14 => '2 settimane',
                 30 => '1 mese',
                 90 => '3 mesi',
                 180 => '6 mesi',
                 365 => '1 anno',
-<<<<<<< HEAD
-=======
-                '7' => '1 settimana',
-                '14' => '2 settimane',
-                '30' => '1 mese',
-                '90' => '3 mesi',
-                '180' => '6 mesi',
-                '365' => '1 anno',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             ],
         ],
         'max_files' => [
@@ -315,14 +201,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

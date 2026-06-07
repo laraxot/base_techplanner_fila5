@@ -13,46 +13,22 @@ return [
             'label' => 'CloudFront Distribution URL',
             'placeholder' => 'Enter CloudFront URL',
             'helper_text' => 'URL of the configured CloudFront distribution',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'iam_user' => [
             'label' => 'IAM User/Role',
             'placeholder' => 'Enter IAM user',
             'helper_text' => 'IAM user or role used for AWS access',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'aws_config' => [
             'label' => 'AWS Configuration',
             'placeholder' => 'Current AWS configuration',
             'helper_text' => 'Overview of current AWS configuration',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -157,10 +133,6 @@ return [
         'full_diagnostic_completed' => 'Full diagnostic completed',
         'check_cloudfront_settings' => 'Check CloudFront settings in config',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -170,9 +142,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

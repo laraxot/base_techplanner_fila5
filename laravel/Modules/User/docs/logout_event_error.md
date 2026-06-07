@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-# Analisi dell'Errore negli Eventi di Logout
-
-## Collegamenti correlati
-<<<<<<< HEAD
-- [Documentazione centrale](/docs/readme.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Implementazione Logout](logout_blade_implementation.md)
-- [Analisi Errore Logout](logout_blade_error_analysis.md)
-- [Widget Filament Corretto](logout_filament_widget_corrected.md)
-- [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
-=======
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
@@ -18,7 +5,6 @@
 - [Analisi Errore Logout](LOGOUT_BLADE_ERROR_ANALYSIS.md)
 - [Widget Filament Corretto](LOGOUT_FILAMENT_WIDGET_CORRECTED.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
->>>>>>> 4b6b99016 (first commit)
 
 ## Errore Identificato
 
@@ -154,7 +140,6 @@ Si raccomanda di implementare l'**Opzione 1** perché:
 3. Garantisce che gli eventi di logout abbiano sempre accesso all'utente che si è disconnesso
 
 Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
-=======
 ---
 module: theme
 topic: logout_event_error
@@ -162,4 +147,3 @@ canonical: ../../../Themes/docs/shared-components/logout_event_error.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout_event_error.md
->>>>>>> dev

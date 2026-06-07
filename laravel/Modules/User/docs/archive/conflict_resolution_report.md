@@ -2,11 +2,7 @@
 
 ## Panoramica
 
-<<<<<<< HEAD
-Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](/var/www/html/_bases/base_predict_fila3_mono/docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](/var/www/html/_bases/base_predict_fila3_mono/docs/conflict_resolution.md).
-=======
 Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](/var/www/html/_bases/base_<nome progetto>_fila5_mono/docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](/var/www/html/_bases/base_<nome progetto>_fila5_mono/docs/conflict_resolution.md).
->>>>>>> dev
 
 ## Conflitti Risolti
 
@@ -43,11 +39,7 @@ Abbiamo adottato la struttura migliorata della versione aurmich/dev, ma con le s
 - Mantenimento dei componenti Filament per coerenza con le best practices del progetto
 
 #### Motivazione
-<<<<<<< HEAD
-Questa soluzione allinea il widget alle [best practices di Filament](/var/www/html/_bases/base_predict_fila3_mono/laravel/modules/user/docs/filament_best_practices.md) e alle [regole di traduzione](/var/www/html/_bases/base_predict_fila3_mono/docs/translations_rules.md) del progetto.
-=======
 Questa soluzione allinea il widget alle [best practices di Filament](/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/modules/user/docs/filament_best_practices.md) e alle [regole di traduzione](/var/www/html/_bases/base_<nome progetto>_fila5_mono/docs/translations_rules.md) del progetto.
->>>>>>> dev
 
 ### 3. Dichiarazione strict_types
 
@@ -58,11 +50,7 @@ Alcuni file PHP non avevano la dichiarazione `declare(strict_types=1);` o l'avev
 Abbiamo aggiunto o corretto la dichiarazione `declare(strict_types=1);` in tutti i file PHP, posizionandola immediatamente dopo il tag di apertura PHP e prima di qualsiasi altro codice, inclusi i docblock.
 
 #### Motivazione
-<<<<<<< HEAD
-Questa soluzione è conforme alle [regole di PHPStan livello 9](/var/www/html/_bases/base_predict_fila3_mono/docs/phpstan/phpstan_livello9_linee_guida.md) e alle convenzioni del progetto.
-=======
 Questa soluzione è conforme alle [regole di PHPStan livello 9](/var/www/html/_bases/base_<nome progetto>_fila5_mono/docs/phpstan/phpstan_livello9_linee_guida.md) e alle convenzioni del progetto.
->>>>>>> dev
 
 ## Impatto delle Modifiche
 
@@ -74,15 +62,6 @@ Le modifiche apportate garantiscono:
 
 ## Collegamenti alla Documentazione
 
-<<<<<<< HEAD
-- [Filosofia della Documentazione](/var/www/html/_bases/base_predict_fila3_mono/docs/documentation_philosophy.md)
-- [Risoluzione dei Conflitti](/var/www/html/_bases/base_predict_fila3_mono/docs/conflict_resolution.md)
-- [Best Practices Filament](/var/www/html/_bases/base_predict_fila3_mono/laravel/modules/user/docs/filament_best_practices.md)
-- [Regole di Traduzione](/var/www/html/_bases/base_predict_fila3_mono/docs/translations_rules.md)
-- [PHPStan Livello 9](/var/www/html/_bases/base_predict_fila3_mono/docs/phpstan/phpstan_livello9_linee_guida.md)
-- [Implementazione Login](/var/www/html/_bases/base_predict_fila3_mono/laravel/modules/user/docs/auth_login_implementation.md)
-- [Implementazione Logout](/var/www/html/_bases/base_predict_fila3_mono/laravel/modules/user/docs/auth_logout_implementation.md)
-=======
 - [Filosofia della Documentazione](/var/www/html/_bases/base_<nome progetto>_fila5_mono/docs/documentation_philosophy.md)
 - [Risoluzione dei Conflitti](/var/www/html/_bases/base_<nome progetto>_fila5_mono/docs/conflict_resolution.md)
 - [Best Practices Filament](/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/modules/user/docs/filament_best_practices.md)
@@ -90,4 +69,3 @@ Le modifiche apportate garantiscono:
 - [PHPStan Livello 9](/var/www/html/_bases/base_<nome progetto>_fila5_mono/docs/phpstan/phpstan_livello9_linee_guida.md)
 - [Implementazione Login](/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/modules/user/docs/auth_login_implementation.md)
 - [Implementazione Logout](/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/modules/user/docs/auth_logout_implementation.md)
->>>>>>> dev

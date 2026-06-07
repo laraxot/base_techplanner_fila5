@@ -14,92 +14,43 @@ return [
             'label' => 'ID',
             'description' => 'Unique identifier for the job',
             'helper_text' => 'Auto-generated job identifier',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'queue' => [
             'label' => 'Queue',
             'description' => 'Queue name where the job is waiting',
             'helper_text' => 'Name of the queue this job belongs to',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'payload' => [
             'label' => 'Payload',
             'description' => 'Job data and parameters',
             'helper_text' => 'Serialized job data and parameters',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'attempts' => [
             'label' => 'Attempts',
             'description' => 'Number of execution attempts',
             'helper_text' => 'How many times this job has been attempted',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'reserved_at' => [
             'label' => 'Reserved At',
             'description' => 'When the job was reserved for processing',
             'helper_text' => 'Timestamp when job was picked up for processing',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'available_at' => [
             'label' => 'Available At',
             'description' => 'When the job becomes available for processing',
             'helper_text' => 'Timestamp when job becomes available for execution',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Created At',
             'description' => 'When the job was created',
             'helper_text' => 'Timestamp when job was added to queue',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -184,14 +135,6 @@ return [
         'recurring' => 'Ricorrente',
         'batch' => 'Batch',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Jobs Waiting',
     'plural_label' => 'Jobs Waiting (Plurale)',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Jobs Waiting',
-    'plural_label' => 'Jobs Waiting (Plurale)',
->>>>>>> dev
 ];

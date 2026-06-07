@@ -335,10 +335,6 @@ class MyPage extends XotBasePage
 ## Collegamenti
 
 ### Documentazione Correlata
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [XotBase Architecture](../../xot/docs/xotbase-architecture-complete.md)
 - [Mai Estendere Filament Direttamente](../../xot/docs/errori-critici/mai-estendere-filament-direttamente.md)
 - [Standalone vs Resource Pages](../../xot/docs/filament/standalone-vs-resource-pages.md)
@@ -346,8 +342,6 @@ class MyPage extends XotBasePage
 ### Clusters in Xot
 - [XotBaseCluster](../../Xot/app/Filament/Clusters/XotBaseCluster.php)
 - [Cluster Best Practices](../../xot/docs/filament/clusters.md)
-<<<<<<< HEAD
-=======
 - [XotBase Architecture](../../Xot/docs/xotbase-architecture-complete.md)
 - [Mai Estendere Filament Direttamente](../../Xot/docs/errori-critici/mai-estendere-filament-direttamente.md)
 - [Standalone vs Resource Pages](../../Xot/docs/filament/standalone-vs-resource-pages.md)
@@ -355,9 +349,6 @@ class MyPage extends XotBasePage
 ### Clusters in Xot
 - [XotBaseCluster](../../Xot/app/Filament/Clusters/XotBaseCluster.php)
 - [Cluster Best Practices](../../Xot/docs/filament/clusters.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ---
 
@@ -365,5 +356,3 @@ class MyPage extends XotBasePage
 **Severità**: Alta  
 **Tipo Errore**: Import classe inesistente + Violazione regola XotBase  
 **Files Affetti**: 3 Pages + 1 Cluster
-
-

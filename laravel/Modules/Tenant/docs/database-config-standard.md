@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-# Database config standard (Laravel 12.x)
-
-**Status**: da verificare  
-**Data**: da aggiornare
-
-## Obiettivo
-
-Il file `config/database.php` deve essere allineato allo standard di Laravel 12.x per garantire compatibilita' e manutenibilita'.
-
-## Motivazione
-
-### Perche' standard Laravel 12.x
-=======
 # Database config standard (Laravel 13.x)
 
 **Status**: attivo  
@@ -24,7 +10,6 @@ Il file `config/database.php` deve essere **identico** allo standard Laravel 13.
 ## Motivazione
 
 ### Perche' standard Laravel 13.x
->>>>>>> dev
 
 1. **Gestione Dinamica Connessioni Modulari**
    - Le connessioni modulari vengono aggiunte **automaticamente** da `TenantServiceProvider::registerDB()`
@@ -43,11 +28,7 @@ Il file `config/database.php` deve essere **identico** allo standard Laravel 13.
 
 ## Architettura Connessioni
 
-<<<<<<< HEAD
-### Connessioni Standard (in database.php)
-=======
 ### Connessioni standard (in database.php)
->>>>>>> dev
 - `sqlite` - SQLite database
 - `mysql` - MySQL database (default)
 - `mariadb` - MariaDB database
@@ -68,11 +49,7 @@ Configurate via file tenant-specific in `config/<locale>/<tenant>/database.php`.
 
 ### 1. Bootstrap Standard
 ```php
-<<<<<<< HEAD
-// config/database.php (standard Laravel 12.x)
-=======
 // config/database.php (standard Laravel 13.x)
->>>>>>> dev
 'default' => env('DB_CONNECTION', 'sqlite'),
 'connections' => [
     'mysql' => [...], // Configurazione standard
@@ -112,22 +89,6 @@ return [
 
 ## Modifiche Applicate
 
-<<<<<<< HEAD
-### File Sostituito
-- `config/database.php` → Standard Laravel 12.x
-
-### Rimozioni
-- ❌ Tutte le connessioni modulari hardcoded (activity, cms, gdpr, geo, job, lang, media, meetup, notify, seo, tenant, ui, user, xot duplicate)
-- ❌ Errori di sintassi (virgole doppie `,,`, parentesi errate `) : []`)
-- ❌ Configurazioni custom hardcoded
-
-### Aggiunte
-- ✅ Struttura standard Laravel 12.x
-- ✅ `transaction_mode` per SQLite
-- ✅ `sslmode` per PostgreSQL
-- ✅ Redis config aggiornato (max_retries, backoff_algorithm, ecc.)
-- ✅ Compatibilita' PHP 8.3+ (`\PDO::MYSQL_ATTR_SSL_CA` dove richiesto)
-=======
 ### File sostituito
 - `config/database.php` → Standard Laravel 13.x (identico a https://github.com/laravel/laravel/blob/13.x/config/database.php)
 
@@ -144,7 +105,6 @@ return [
 - ✅ `busy_timeout`, `journal_mode`, `synchronous`, `transaction_mode` per SQLite
 - ✅ `sslmode` env per PostgreSQL
 - ✅ Redis: `max_retries`, `backoff_algorithm`, `backoff_base`, `backoff_cap`
->>>>>>> dev
 
 ## Verifica Funzionamento
 

@@ -8,15 +8,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Exceptions;
 
-<<<<<<< HEAD
-use Exception;
 use Illuminate\Http\Response;
 use Illuminate\Support\Str;
-use Override;
-=======
-use Illuminate\Http\Response;
-use Illuminate\Support\Str;
->>>>>>> dev
 
 class ModelDeletionException extends ApplicationException
 {
@@ -29,40 +22,24 @@ class ModelDeletionException extends ApplicationException
         $this->model = Str::afterLast($model, '\\');
     }
 
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     public function status(): int
     {
         return Response::HTTP_BAD_REQUEST;
     }
 
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     public function help(): string
     {
         $res = trans('exception.model_not_deleted.help');
         if (! \is_string($res)) {
-<<<<<<< HEAD
-            throw new Exception('['.__LINE__.']['.class_basename($this).']');
-=======
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
->>>>>>> dev
         }
 
         return $res;
     }
 
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     public function error(): string
     {
         $res = trans('exception.model_not_deleted.error', [
@@ -70,11 +47,7 @@ class ModelDeletionException extends ApplicationException
             'model' => $this->model,
         ]);
         if (! \is_string($res)) {
-<<<<<<< HEAD
-            throw new Exception('['.__LINE__.']['.class_basename($this).']');
-=======
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
->>>>>>> dev
         }
 
         return $res;

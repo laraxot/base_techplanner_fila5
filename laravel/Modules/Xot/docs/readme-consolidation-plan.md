@@ -1,12 +1,6 @@
 # Piano Consolidamento File readme.md Duplicati
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2026-01-09  
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Metodologia**: Super Mucca  
 **Regola**: Solo `README.md` (maiuscolo) permesso, `readme.md` (minuscolo) da rimuovere
 
@@ -69,12 +63,5 @@
 
 **Status**: 🧘 **IN PIANIFICAZIONE**
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2026-01-09
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: [DATE]
->>>>>>> dev

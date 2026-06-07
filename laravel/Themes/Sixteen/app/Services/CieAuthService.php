@@ -45,11 +45,7 @@ class CieAuthService
         // Salva lo stato in sessione
         Session::put('cie.state', $state);
         Session::put('cie.nonce', $nonce);
-<<<<<<< HEAD
-        Session::put('cie.return_url', $returnUrl ?: url()->previous());
-=======
         Session::put('cie.return_url', $returnUrl ? $returnUrl : url()->previous());
->>>>>>> dev
 
         $params = [
             'client_id' => $this->clientId,
@@ -75,30 +71,17 @@ class CieAuthService
 
         Session::put('cie.state', $state);
         Session::put('cie.nonce', $nonce);
-<<<<<<< HEAD
-        Session::put('cie.return_url', $returnUrl ?: url()->previous());
-=======
         Session::put('cie.return_url', $returnUrl ? $returnUrl : url()->previous());
->>>>>>> dev
         Session::put('cie.auth_method', 'mobile');
 
         // URL per deep linking all'app CieID
         $webLoginUrl = $this->getLoginUrl($returnUrl);
 
         // Genera l'URL per mobile con schema custom
-<<<<<<< HEAD
-        $mobileUrl = 'cieid://login?'.http_build_query([
-            'redirect_url' => $webLoginUrl,
-            'client_name' => config('app.name'),
-        ]);
-
-        return $mobileUrl;
-=======
         return 'cieid://login?'.http_build_query([
             'redirect_url' => $webLoginUrl,
             'client_name' => config('app.name'),
         ]);
->>>>>>> dev
     }
 
     /**
@@ -145,8 +128,6 @@ class CieAuthService
     }
 
     /**
-<<<<<<< HEAD
-=======
      * Verifica se l'utente è autenticato con CIE
      */
     public function isAuthenticated(): bool
@@ -272,7 +253,6 @@ class CieAuthService
     }
 
     /**
->>>>>>> dev
      * Scambia l'authorization code per un access token
      */
     protected function exchangeCodeForToken(string $code): array
@@ -316,11 +296,7 @@ class CieAuthService
         $parts = explode('.', $idToken);
 
         if (count($parts) !== 3) {
-<<<<<<< HEAD
-            throw new \Exception('Invalid JWT format');
-=======
             throw new Exception('Invalid JWT format');
->>>>>>> dev
         }
 
         // Decodifica header e payload
@@ -416,132 +392,4 @@ class CieAuthService
     {
         return bin2hex(random_bytes(32));
     }
-<<<<<<< HEAD
-
-    /**
-     * Verifica se l'utente è autenticato con CIE
-     */
-    public function isAuthenticated(): bool
-    {
-        return Session::has('cie.authenticated') && Session::get('cie.authenticated') === true;
-    }
-
-    /**
-     * Ottiene i dati dell'utente autenticato
-     */
-    public function getAuthenticatedUser(): ?array
-    {
-        if (! $this->isAuthenticated()) {
-            return null;
-        }
-
-        return Session::get('cie.user_data');
-    }
-
-    /**
-     * Effettua il logout dell'utente CIE
-     */
-    public function logout(): void
-    {
-        $refreshToken = Session::get('cie.refresh_token');
-
-        // Revoca i token se disponibili
-        if ($refreshToken) {
-            try {
-                Http::asForm()->post($this->baseUrl.'/oidc/revoke', [
-                    'token' => $refreshToken,
-                    'client_id' => $this->clientId,
-                    'client_secret' => $this->clientSecret,
-                ]);
-            } catch (\Exception $e) {
-                Log::warning('CIE token revocation failed', ['error' => $e->getMessage()]);
-            }
-        }
-
-        Session::forget([
-            'cie.authenticated',
-            'cie.user_data',
-            'cie.access_token',
-            'cie.refresh_token',
-            'cie.state',
-            'cie.nonce',
-            'cie.auth_method',
-        ]);
-    }
-
-    /**
-     * Ottiene l'URL di logout CIE (post-logout redirect)
-     */
-    public function getLogoutUrl(?string $returnUrl = null): string
-    {
-        $params = [
-            'post_logout_redirect_uri' => $returnUrl ?: route('home'),
-            'client_id' => $this->clientId,
-        ];
-
-        return $this->baseUrl.'/oidc/logout?'.http_build_query($params);
-    }
-
-    /**
-     * Aggiorna l'access token usando il refresh token
-     */
-    public function refreshToken(): ?array
-    {
-        $refreshToken = Session::get('cie.refresh_token');
-
-        if (! $refreshToken) {
-            return null;
-        }
-
-        try {
-            $response = Http::asForm()->post($this->baseUrl.'/oidc/token', [
-                'grant_type' => 'refresh_token',
-                'refresh_token' => $refreshToken,
-                'client_id' => $this->clientId,
-                'client_secret' => $this->clientSecret,
-            ]);
-
-            if ($response->successful()) {
-                $tokenData = $response->json();
-
-                // Aggiorna i token in sessione
-                Session::put('cie.access_token', $tokenData['access_token']);
-                if (isset($tokenData['refresh_token'])) {
-                    Session::put('cie.refresh_token', $tokenData['refresh_token']);
-                }
-
-                return $tokenData;
-            }
-        } catch (\Exception $e) {
-            Log::warning('CIE token refresh failed', ['error' => $e->getMessage()]);
-        }
-
-        return null;
-    }
-
-    /**
-     * Verifica se CIE è configurato correttamente
-     */
-    public function isConfigured(): bool
-    {
-        return ! empty($this->clientId) &&
-               ! empty($this->clientSecret) &&
-               ! empty($this->baseUrl);
-    }
-
-    /**
-     * Ottiene le informazioni di configurazione CIE per il debug
-     */
-    public function getConfigInfo(): array
-    {
-        return [
-            'base_url' => $this->baseUrl,
-            'client_id' => $this->clientId ? 'configured' : 'missing',
-            'client_secret' => $this->clientSecret ? 'configured' : 'missing',
-            'redirect_uri' => $this->redirectUri,
-            'is_configured' => $this->isConfigured(),
-        ];
-    }
-=======
->>>>>>> dev
 }

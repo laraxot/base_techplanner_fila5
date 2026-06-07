@@ -106,13 +106,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  * @method static Builder|Contact whereFirstName($value)
  * @method static Builder|Contact whereUsesleft($value)
  *
-<<<<<<< HEAD
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
-=======
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
->>>>>>> dev
  * @property MediaCollection<int, Media> $media
  * @property int|null $media_count
  * @property Carbon|null $deleted_at

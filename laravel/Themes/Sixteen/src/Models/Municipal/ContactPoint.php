@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -17,8 +13,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Modello per i punti di contatto (Contact Point)
  *
-<<<<<<< HEAD
-=======
 use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
 use Illuminate\Database\Eloquent\Relations\{BelongsTo, MorphTo};
 use Illuminate\Database\Eloquent\Casts\Attribute;
@@ -26,9 +20,6 @@ use Illuminate\Database\Eloquent\Casts\Attribute;
 /**
  * Modello per i punti di contatto (Contact Point)
  * 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
  * Rappresenta un punto di contatto secondo l'ontologia AGID
  * per enti pubblici (telefono, email, PEC, indirizzo fisico, ecc.)
  */
@@ -206,27 +197,18 @@ class ContactPoint extends Model
     {
         // Rimuovi spazi e caratteri speciali
         $clean = preg_replace('/[^\d+]/', '', $phone);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 
         // Se non inizia con +, aggiungi +39 per l'Italia
         if (! str_starts_with($clean, '+')) {
             $clean = '+39'.ltrim($clean, '0');
         }
 
-<<<<<<< HEAD
-=======
         
         // Se non inizia con +, aggiungi +39 per l'Italia
         if (!str_starts_with($clean, '+')) {
             $clean = '+39' . ltrim($clean, '0');
         }
         
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         return $clean;
     }
 
@@ -235,10 +217,6 @@ class ContactPoint extends Model
      */
     protected function formatUrl(string $url): string
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         if (! filter_var($url, FILTER_VALIDATE_URL)) {
             // Se non è un URL valido, prova ad aggiungere https://
             if (! str_starts_with($url, 'http')) {
@@ -246,8 +224,6 @@ class ContactPoint extends Model
             }
         }
 
-<<<<<<< HEAD
-=======
         if (!filter_var($url, FILTER_VALIDATE_URL)) {
             // Se non è un URL valido, prova ad aggiungere https://
             if (!str_starts_with($url, 'http')) {
@@ -255,9 +231,6 @@ class ContactPoint extends Model
             }
         }
         
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         return filter_var($url, FILTER_VALIDATE_URL) ? $url : '';
     }
 
@@ -353,21 +326,9 @@ class ContactPoint extends Model
     {
         return match ($this->type) {
             'email', 'pec' => filter_var($this->value, FILTER_VALIDATE_EMAIL) !== false,
-<<<<<<< HEAD
-<<<<<<< HEAD
             'phone', 'mobile', 'fax' => ! empty($this->formatPhoneNumber($this->value)),
             'website', 'appointment_url' => ! empty($this->formatUrl($this->value)),
             default => ! empty(trim($this->value)),
-=======
-            'phone', 'mobile', 'fax' => !empty($this->formatPhoneNumber($this->value)),
-            'website', 'appointment_url' => !empty($this->formatUrl($this->value)),
-            default => !empty(trim($this->value)),
->>>>>>> 4b6b99016 (first commit)
-=======
-            'phone', 'mobile', 'fax' => ! empty($this->formatPhoneNumber($this->value)),
-            'website', 'appointment_url' => ! empty($this->formatUrl($this->value)),
-            default => ! empty(trim($this->value)),
->>>>>>> dev
         };
     }
 
@@ -377,25 +338,16 @@ class ContactPoint extends Model
     public function getActionUrl(): string
     {
         return match ($this->type) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'email', 'pec' => 'mailto:'.$this->value,
             'phone', 'mobile', 'fax' => 'tel:'.$this->formatted_value,
             'website', 'appointment_url' => $this->formatted_value,
             'whatsapp' => 'https://wa.me/'.preg_replace('/[^\d]/', '', $this->value),
             'telegram' => 'https://t.me/'.ltrim($this->value, '@'),
-<<<<<<< HEAD
-=======
             'email', 'pec' => 'mailto:' . $this->value,
             'phone', 'mobile', 'fax' => 'tel:' . $this->formatted_value,
             'website', 'appointment_url' => $this->formatted_value,
             'whatsapp' => 'https://wa.me/' . preg_replace('/[^\d]/', '', $this->value),
             'telegram' => 'https://t.me/' . ltrim($this->value, '@'),
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             default => '#',
         };
     }
@@ -427,12 +379,8 @@ class ContactPoint extends Model
             }
         });
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4b6b99016 (first commit)
-=======
-}
->>>>>>> dev
+
+
+
+

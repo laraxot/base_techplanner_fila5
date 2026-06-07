@@ -12,14 +12,7 @@ namespace Modules\Xot\Models;
  */
 abstract class BaseModel extends XotBaseModel
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
     /** @var string */
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    /** @var string */
->>>>>>> dev
     protected $connection = 'xot';
 
     /** @return array<string, class-string|string> */

@@ -19,15 +19,7 @@ return [
                 'name' => 'Mappa',
                 'group' => 'Geo',
                 'sort' => 10,
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'icon' => 'ui-geo-map',
-=======
-                'icon' => 'ui-geo-map', // Questo è già corretto
->>>>>>> 4b6b99016 (first commit)
-=======
-                'icon' => 'ui-geo-map',
->>>>>>> dev
                 'badge' => [
                     'color' => 'info',
                     'label' => 'Interattiva',
@@ -52,15 +44,7 @@ return [
                 'name' => 'Posizioni',
                 'group' => 'Geo',
                 'sort' => 20,
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'icon' => 'ui-geo-location',
-=======
-                'icon' => 'ui-geo-location', // Questo è già corretto
->>>>>>> 4b6b99016 (first commit)
-=======
-                'icon' => 'ui-geo-location',
->>>>>>> dev
                 'badge' => [
                     'color' => 'warning',
                     'label' => 'Da Verificare',
@@ -118,10 +102,6 @@ return [
             'date_range' => 'Periodo',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Geo',
     'plural_label' => 'Geo (Plurale)',
     'fields' => [
@@ -155,10 +135,6 @@ return [
             'label' => 'Elimina Geo',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 
     // Coordinate Picker - Map Controls
     'coordinate-picker' => [
@@ -188,5 +164,4 @@ return [
         'no_results' => 'Nessun risultato',
         'coordinates_set' => 'Coordinate impostate',
     ],
->>>>>>> dev
 ];

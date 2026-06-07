@@ -1,6 +1,4 @@
 
-<<<<<<< HEAD
-=======
 on 10 Aug
 352 commits
 https://github.com/protonemedia/laravel-ffmpeg
@@ -27,4 +25,3 @@ https://techcrunch.com/2016/08/25/wevideo-html5/?guccounter=1&guce_referrer=aHR0
 https://www.wevideo.com/hub#editor/2476877982 !!!!!
 
 -----------------------------------------------------------------------------------------
->>>>>>> dev

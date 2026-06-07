@@ -65,8 +65,6 @@ use Spatie\Translatable\HasTranslations;
  * @mixin IdeHelperNotificationTemplate
  *
  * @property-read ProfileContract|null $deleter
-<<<<<<< HEAD
-=======
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
@@ -95,7 +93,6 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|NotificationTemplate whereUpdatedBy($value)
  * @method static Builder<static>|NotificationTemplate whereVariables($value)
  * @method static Builder<static>|NotificationTemplate whereVersion($value)
->>>>>>> dev
  *
  * @mixin \Eloquent
  */
@@ -230,48 +227,24 @@ class NotificationTemplate extends BaseModel implements HasMedia
 
     /**
      * Scope a query to only include active templates.
-<<<<<<< HEAD
-     *
-     * @param  Builder  $query
-     * @return Builder
-     */
-    public function scopeActive($query)
-=======
      */
     public function scopeActive(Builder $query): Builder
->>>>>>> dev
     {
         return $query->where('is_active', true);
     }
 
     /**
      * Scope a query to only include templates for a specific channel.
-<<<<<<< HEAD
-     *
-     * @param  Builder  $query
-     * @return Builder
-     */
-    public function scopeForChannel($query, string $channel)
-=======
      */
     public function scopeForChannel(Builder $query, string $channel): Builder
->>>>>>> dev
     {
         return $query->whereJsonContains('channels', $channel);
     }
 
     /**
      * Scope a query to only include templates for a specific category.
-<<<<<<< HEAD
-     *
-     * @param  Builder  $query
-     * @return Builder
-     */
-    public function scopeForCategory($query, string $category)
-=======
      */
     public function scopeForCategory(Builder $query, string $category): Builder
->>>>>>> dev
     {
         return $query->where('category', $category);
     }

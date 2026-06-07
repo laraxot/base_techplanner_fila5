@@ -13,21 +13,12 @@ Il modulo User utilizza le traduzioni fornite dal modulo Lang per:
 
 ## Collegamenti Principali
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Traduzioni del Modulo User](../../user/docs/translations.md) - Documentazione specifica sulle traduzioni nel modulo User
-- [Gestione Utenti](../../user/docs/readme.md) - Panoramica del modulo User
-- [Modelli Utente](../../user/docs/user_profile_models.md) - Documentazione sui modelli utente e profili
-=======
 - [Traduzioni del Modulo User](../../User/project_docs/translations.md) - Documentazione specifica sulle traduzioni nel modulo User
 - [Gestione Utenti](../../User/project_docs/README.md) - Panoramica del modulo User
 - [Modelli Utente](../../User/project_docs/user_profile_models.md) - Documentazione sui modelli utente e profili
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Traduzioni del Modulo User](../../User/project_docs/translations.md) - Documentazione specifica sulle traduzioni nel modulo User
 - [Gestione Utenti](../../User/project_docs/README.md) - Panoramica del modulo User
 - [Modelli Utente](../../User/project_docs/user_profile_models.md) - Documentazione sui modelli utente e profili
->>>>>>> dev
 
 ## Integrazione con Lang
 
@@ -39,27 +30,12 @@ Il modulo User integra il modulo Lang attraverso:
 
 ## Collegamento Bidirezionale
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Questo documento è collegato bidirezionalmente con [lang-link.md](../../user/docs/lang-link.md) nel modulo User.
-=======
 Questo documento è collegato bidirezionalmente con [lang-link.md](../../User/project_docs/lang-link.md) nel modulo User.
->>>>>>> 4b6b99016 (first commit)
-=======
 Questo documento è collegato bidirezionalmente con [lang-link.md](../../User/project_docs/lang-link.md) nel modulo User.
->>>>>>> dev
 
 > Aggiorna entrambi i riferimenti se modifichi la struttura delle traduzioni o aggiungi nuove funzionalità che richiedono traduzioni.
 
 ## Collegamenti tra versioni di user-link.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [user-link.md](../../../lang/docs/user-link.md)
-* [user-link.md](../../../cms/docs/user-link.md)
-
-=======
-=======
->>>>>>> dev
 * [user-link.md](../../../Lang/project_docs/user-link.md)
 * [user-link.md](../../../Cms/project_docs/user-link.md)
 # Collegamenti al Modulo User
@@ -98,7 +74,3 @@ Questo documento è collegato bidirezionalmente con [lang-link.md](../../User/do
 ## Collegamenti tra versioni di user-link.md
 * [user-link.md](../../../Lang/docs/user-link.md)
 * [user-link.md](../../../Cms/docs/user-link.md)
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

@@ -103,18 +103,10 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Modulo User](../readme.md)
-- [Best Practices Traduzioni](../../lang/docs/translation_standards.md)
-=======
 - [Documentazione Modulo User](../README.md)
 - [Best Practices Traduzioni](../../Lang/docs/translation_standards.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione Modulo User](../readme.md)
 - [Best Practices Traduzioni](../../lang/docs/translation_standards.md)
->>>>>>> dev
 - [Sicurezza Password](../security/password_policies.md)
 
 ## Note per il Futuro
@@ -125,11 +117,5 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 4. **Usare icone e colori appropriati** per l'UX
 
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-01-06*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 *Autore: Sistema di Audit Traduzioni*

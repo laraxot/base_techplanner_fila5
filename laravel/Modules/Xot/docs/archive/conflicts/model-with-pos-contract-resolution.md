@@ -115,11 +115,7 @@ Questa risoluzione garantisce:
 
 ## Collegamento con la Documentazione Principale
 
-<<<<<<< HEAD
-Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../docs/logs/conflict_resolution_progress.md).
-=======
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
->>>>>>> dev
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../project_docs/logs/conflict_resolution_progress.md).
 # Risoluzione Conflitto in ModelWithPosContract
 
@@ -238,8 +234,4 @@ Questa risoluzione garantisce:
 
 ## Collegamento con la Documentazione Principale
 
-<<<<<<< HEAD
-Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../docs/logs/conflict_resolution_progress.md).
-=======
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
->>>>>>> dev

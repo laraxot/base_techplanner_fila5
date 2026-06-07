@@ -88,11 +88,7 @@ Se il modulo UI ha un **panel Filament separato**, devi:
 
 1. **Installa il plugin:**
    ```bash
-<<<<<<< HEAD
-   cd /var/www/_bases/base_quaeris_fila5_mono/laravel/Modules/UI
-=======
 cd ./laravel/Modules/UI
->>>>>>> dev
    npm install chartjs-plugin-datalabels --save-dev
    ```
 
@@ -584,11 +580,7 @@ protected function getOptions(): array
 
 - [Guida Completa Chart Module](../../chart/docs/chartjs-datalabels-multiple-labels-complete-guide.md)
 - [Filament 5.x Installation Guide](../../chart/docs/filament-5-installation-guide.md)
-<<<<<<< HEAD
-- [SimpleChartWidget con Sfondi](../../quaeris/docs/simplechartwidget-labels-backgrounds.md) - ⭐ Esempio completo con sfondi ottimizzati per UI/UX
-=======
 - [SimpleChartWidget con Sfondi](../../Quaeris/docs/simplechartwidget-labels-backgrounds.md) - ⭐ Esempio completo con sfondi ottimizzati per UI/UX
->>>>>>> dev
 
 ### Documentazione Ufficiale
 

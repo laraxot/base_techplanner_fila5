@@ -6,15 +6,8 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 ## Casi Risolti Recentemente
 
 ### 1. Namespace e Convenzioni
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Convenzioni Namespace](namespace-conventions.md)
-=======
 - [Convenzioni Namespace](NAMESPACE-CONVENTIONS.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Convenzioni Namespace](namespace-conventions.md)
->>>>>>> dev
 - Risoluzione conflitti nelle convenzioni di namespace
 - Mantenimento della compatibilità con PHPStan
 
@@ -30,18 +23,10 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
   - Documentazione delle decisioni prese
 
 ### 3. Autenticazione e UI
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Componenti Filament](../../themes/one/docs/filament_components.md)
-- [Registrazione Utenti](../../themes/one/docs/auth.md)
-=======
 - [Componenti Filament](../../Themes/One/docs/FILAMENT_COMPONENTS.md)
 - [Registrazione Utenti](../../Themes/One/docs/AUTH.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Componenti Filament](../../themes/one/docs/filament_components.md)
 - [Registrazione Utenti](../../themes/one/docs/auth.md)
->>>>>>> dev
   - Implementazione completa sistema registrazione
   - Gestione tipi utente dinamica
   - UI moderna con Filament
@@ -123,13 +108,8 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 
 ## Collegamenti Esterni
 
-<<<<<<< HEAD
-- [Documentazione generale sulla risoluzione dei conflitti git](../../../docs/risoluzione_conflitti_git.md)
-- [Report completo di intervento](../../../docs/logs/conflict_resolution_report.md)
-=======
 - [Documentazione generale sulla risoluzione dei conflitti git](../../../../docs/risoluzione_conflitti_git.md)
 - [Report completo di intervento](../../../../docs/logs/conflict_resolution_report.md)
->>>>>>> dev
 - [Dettagli risoluzione ModelWithPosContract](./conflicts/model_with_pos_contract_resolution.md)
 
 ## XotBaseMainPanelProvider.php
@@ -246,34 +226,18 @@ La risoluzione dei conflitti rimanenti dovrebbe seguire questi principi:
 
 ## Collegamenti tra versioni di risoluzione_conflitti.md
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [risoluzione_conflitti.md](../../../xot/docs/risoluzione_conflitti.md)
-* [risoluzione_conflitti.md](../../../tenant/docs/risoluzione_conflitti.md)
-=======
 * [risoluzione_conflitti.md](../../../Xot/docs/risoluzione_conflitti.md)
 * [risoluzione_conflitti.md](../../../Tenant/docs/risoluzione_conflitti.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [risoluzione_conflitti.md](../../../xot/docs/risoluzione_conflitti.md)
 * [risoluzione_conflitti.md](../../../tenant/docs/risoluzione_conflitti.md)
->>>>>>> dev
 
 aurmich/dev
 5693302 (.)
 b6f667c (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [Risoluzione Conflitti Xot](../../../xot/docs/risoluzione_conflitti.md)
-* [Risoluzione Conflitti Tenant](../../../tenant/docs/risoluzione_conflitti.md)
-=======
 * [Risoluzione Conflitti Xot](../../../Xot/docs/risoluzione_conflitti.md)
 * [Risoluzione Conflitti Tenant](../../../Tenant/docs/risoluzione_conflitti.md)
->>>>>>> 4b6b99016 (first commit)
 * [Linee Guida Principali Risoluzione Conflitti](../../../../docs/conflict_resolution.md)
-=======
 * [Risoluzione Conflitti Xot](../../../xot/docs/risoluzione_conflitti.md)
 * [Risoluzione Conflitti Tenant](../../../tenant/docs/risoluzione_conflitti.md)
 * [Linee Guida Principali Risoluzione Conflitti](../../../../../docs/conflict_resolution.md)
->>>>>>> dev
 fc83074 (.)

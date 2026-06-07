@@ -2,15 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(Modules\UI\Tests\TestCase::class);
-=======
-namespace Modules\UI\Tests\Feature;
-
-use Modules\UI\Tests\TestCase;
-
-uses(TestCase::class);
->>>>>>> dev
 
 describe('Component Files Existence Tests', function (): void {
     test('reorganized component files exist in correct locations', function (): void {

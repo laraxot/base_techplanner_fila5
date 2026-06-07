@@ -6,10 +6,6 @@ return [
     'fields' => [
         'mailable' => [
             'label' => 'mailable',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -31,20 +27,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'subject' => [
-            'label' => 'subject',
-        ],
-        'html_template' => [
-            'label' => 'html_template',
-        ],
-        'text_template' => [
-            'label' => 'text_template',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -58,10 +40,6 @@ return [
             'label' => 'cancel',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Create Mail Template',
     'plural_label' => 'Create Mail Template (Plurale)',
     'navigation' => [
@@ -75,9 +53,4 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

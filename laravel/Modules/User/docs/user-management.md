@@ -1,49 +1,4 @@
-<<<<<<< HEAD
-# Gestione degli Utenti in <nome progetto>
-
-## Panoramica
-
-Questo documento descrive il sistema di gestione degli utenti in <nome progetto>, con particolare attenzione ai diversi tipi di utenti (pazienti, dottori, amministratori) e alla loro implementazione nel database e nel codice.
-
-## Tipi di Utenti
-
-<nome progetto> supporta diversi tipi di utenti, ciascuno con caratteristiche e funzionalità specifiche:
-
-1. **Pazienti**: Utenti che ricevono servizi medici
-2. **Dottori**: Professionisti medici che forniscono servizi
-3. **Amministratori**: Utenti con privilegi di gestione del sistema
-
-## Implementazione Tecnica
-
-### Single Table Inheritance (STI)
-
-<nome progetto> utilizza il pattern Single Table Inheritance tramite il pacchetto `parental` per gestire diversi tipi di utenti in un'unica tabella `users`. Questo approccio offre diversi vantaggi:
-
-- **Efficienza del Database**: Tutti gli utenti sono memorizzati in un'unica tabella
-- **Flessibilità**: Facile aggiunta di nuovi tipi di utenti
-- **Polimorfismo**: Trattare diversi tipi di utenti in modo uniforme quando necessario
-
-Per una documentazione dettagliata sul pattern di ereditarietà, consulta il [Pattern di Ereditarietà dei Modelli](/docs/model-inheritance-patterns.md).
-
-### Struttura dei Modelli
-
-```
-BaseUser (Modules\User\Models\BaseUser)
-   |
-   +--> User (Modules\Patient\Models\User)
-         |
-         +--> Doctor (Modules\Patient\Models\Doctor)
-         |
-         +--> Patient (Modules\Patient\Models\Patient)
-```
-
-### Campi del Database
-
-<<<<<<< HEAD
-La tabella `users` contiene campi comuni a tutti i tipi di utenti, oltre a campi specifici per ciascun tipo. Per una documentazione dettagliata sulla mappatura dei campi, consulta la [Mappatura dei Campi Database nel Modulo Patient](/laravel/modules/patient/docs/database_field_mapping.md).
-=======
 La tabella `users` contiene campi comuni a tutti i tipi di utenti, oltre a campi specifici per ciascun tipo. Per una documentazione dettagliata sulla mappatura dei campi, consulta la [Mappatura dei Campi Database nel Modulo Patient](/laravel/Modules/Patient/docs/DATABASE_FIELD_MAPPING.md).
->>>>>>> 4b6b99016 (first commit)
 
 ## Registrazione degli Utenti
 
@@ -70,11 +25,7 @@ I dottori devono passare attraverso un processo di moderazione:
 7. Invio email di approvazione/rifiuto
 8. Accesso al sistema (se approvato)
 
-<<<<<<< HEAD
-Per una documentazione dettagliata sul processo di registrazione dei dottori, consulta il [Processo di Registrazione dei Dottori](/laravel/modules/patient/docs/doctor_registration_process.md).
-=======
 Per una documentazione dettagliata sul processo di registrazione dei dottori, consulta il [Processo di Registrazione dei Dottori](/laravel/Modules/Patient/docs/DOCTOR_REGISTRATION_PROCESS.md).
->>>>>>> 4b6b99016 (first commit)
 
 ## Gestione dei File
 
@@ -86,11 +37,7 @@ Per una documentazione dettagliata sulla gestione dei file, consulta la [Gestion
 
 ### 1. Utilizzo dei Campi Corretti
 
-<<<<<<< HEAD
-Assicurarsi di utilizzare i campi corretti per ciascun tipo di utente, come documentato nella [Mappatura dei Campi Database](/laravel/modules/patient/docs/database_field_mapping.md).
-=======
 Assicurarsi di utilizzare i campi corretti per ciascun tipo di utente, come documentato nella [Mappatura dei Campi Database](/laravel/Modules/Patient/docs/DATABASE_FIELD_MAPPING.md).
->>>>>>> 4b6b99016 (first commit)
 
 ### 2. Gestione degli Stati
 
@@ -118,16 +65,10 @@ $request->validate([
 ## Documentazione Correlata
 
 - [Pattern di Ereditarietà dei Modelli](/docs/model-inheritance-patterns.md)
-<<<<<<< HEAD
-- [Mappatura dei Campi Database nel Modulo Patient](/laravel/modules/patient/docs/database_field_mapping.md)
-- [Processo di Registrazione dei Dottori](/laravel/modules/patient/docs/doctor_registration_process.md)
-=======
 - [Mappatura dei Campi Database nel Modulo Patient](/laravel/Modules/Patient/docs/DATABASE_FIELD_MAPPING.md)
 - [Processo di Registrazione dei Dottori](/laravel/Modules/Patient/docs/DOCTOR_REGISTRATION_PROCESS.md)
->>>>>>> 4b6b99016 (first commit)
 - [Gestione dei File Upload in Filament](/docs/filament-file-uploads.md)
 - [Migrazioni del Database](/docs/database-migrations.md)
-=======
 ---
 module: theme
 topic: user-management
@@ -135,4 +76,3 @@ canonical: ../../../Themes/docs/shared-components/user-management.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-management.md
->>>>>>> dev

@@ -1,10 +1,6 @@
 # Utilizzo dei Componenti Filament in il progetto
 > **Collegamenti correlati**
-<<<<<<< HEAD
-> - [FILAMENT_COMPONENTS.md tema One](../../../../Themes/One/docs/FILAMENT_COMPONENTS.md)
-=======
 > - [FILAMENT_COMPONENTS.md tema One](../../../../themes/one/docs/filament_components.md)
->>>>>>> dev
 
 # Utilizzo dei Componenti Filament
 
@@ -13,15 +9,9 @@
 In il progetto, **privilegiare sempre i componenti Blade nativi di Filament** rispetto a componenti UI personalizzati.
 
 > ⚠️ **Collegamenti alla documentazione correlata**:
-<<<<<<< HEAD
-> - [Indice generale dei collegamenti](../../../../docs/collegamenti-documentazione.md)
-> - [Documentazione principale](../../../../docs/rules/filament-components.md)
-> - [Documentazione nel tema](../../../../Themes/One/docs/FILAMENT_COMPONENTS.md)
-=======
 > - [Indice generale dei collegamenti](../../../../../docs/collegamenti-documentazione.md)
 > - [Documentazione principale](../../../../../docs/rules/filament-components.md)
 > - [Documentazione nel tema](../../../../themes/one/docs/filament_components.md)
->>>>>>> dev
 
 ## Motivazione
 
@@ -140,11 +130,7 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 - [Demo dei componenti](https://demo.filamentphp.com/)
 
 ## Collegamenti Bidirezionali
-<<<<<<< HEAD
-- [README](README.md) - Documentazione principale del modulo
-=======
 - [README](readme.md) - Documentazione principale del modulo
->>>>>>> dev
 - [Integrazione Filament](filament-integration.md) - Integrazione con Filament
 - [Form Filament](filament-forms.md) - Sistema di form Filament
 - [Widget](filament-widgets-in-blade.md) - Utilizzo dei widget in Blade
@@ -153,17 +139,6 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 - [Blade Components](filament-blade-components.md) - Componenti Blade personalizzati
 
 ## Vedi Anche
-<<<<<<< HEAD
-- [Modulo UI](../UI/docs/README.md) - Componenti UI riutilizzabili
-- [Modulo Xot](../Xot/docs/README.md) - Classi base Filament personalizzate
-- [Modulo Theme](../Theme/docs/README.md) - Personalizzazione temi Filament
-- [Convenzioni Namespace](convenzioni-namespace-filament.md) - Convenzioni di namespace
-- [Documentazione Filament](https://filamentphp.com/docs) - Documentazione ufficiale
-## Collegamenti tra versioni di filament-components.md
-* [filament-components.md](laravel/Modules/User/docs/best-practices/filament-components.md)
-* [filament-components.md](laravel/Modules/Cms/docs/best-practices/filament-components.md)
-* [filament-components.md](laravel/Modules/Cms/docs/filament-components.md)
-=======
 - [Modulo UI](../ui/docs/readme.md) - Componenti UI riutilizzabili
 - [Modulo Xot](../xot/docs/readme.md) - Classi base Filament personalizzate
 - [Modulo Theme](../theme/docs/readme.md) - Personalizzazione temi Filament
@@ -173,5 +148,4 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 * [filament-components.md](laravel/modules/user/docs/best-practices/filament-components.md)
 * [filament-components.md](laravel/modules/cms/docs/best-practices/filament-components.md)
 * [filament-components.md](laravel/modules/cms/docs/filament-components.md)
->>>>>>> dev
 * [filament-components.md](laravel/docs/rules/filament-components.md)

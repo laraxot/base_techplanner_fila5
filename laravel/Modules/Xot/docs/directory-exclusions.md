@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 # Eccezioni alla Regola della Directory app in Laraxot <nome progetto>
 
 ## Panoramica
@@ -116,7 +112,3 @@ Mentre la regola della directory `app` è importante per la coerenza e l'autoloa
 2. **Convenzioni di Modularità**: Alcuni file devono seguire convenzioni specifiche per il loading modulare
 3. **Funzionalità degli Strumenti**: Certi strumenti di sviluppo richiedono file di configurazione in posizioni specifiche
 4. **Separazione delle Responsabilità**: Separare il codice applicativo dai file di supporto migliora la manutenibilità
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev

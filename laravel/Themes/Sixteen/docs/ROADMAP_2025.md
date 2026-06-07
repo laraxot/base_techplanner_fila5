@@ -5,10 +5,7 @@
 **Priority**: CRITICAL  
 **AGID Compliance**: 90% COMPLETATO  
 **Filament**: ✅ 4.x Compatibile  
-<<<<<<< HEAD
 **Last Updated**: 2025-10-01
-=======
->>>>>>> dev
 
 ---
 
@@ -524,10 +521,7 @@ Sixteen Theme
 
 ---
 
-<<<<<<< HEAD
 **Last Updated**: 2025-10-01
-=======
->>>>>>> dev
 **Next Review**: 2025-11-01
 **Status**: 🚧 ACTIVE DEVELOPMENT  
 **Confidence Level**: 95%  

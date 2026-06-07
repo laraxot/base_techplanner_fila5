@@ -99,6 +99,11 @@ return [
             'icon' => 'openFilters',
             'label' => 'openFilters',
         ],
+        'resetColumnManager' => [
+            'tooltip' => 'resetColumnManager',
+            'icon' => 'resetColumnManager',
+            'label' => 'resetColumnManager',
+        ],
     ],
     'navigation' => [
         'name' => 'Recent Logins',

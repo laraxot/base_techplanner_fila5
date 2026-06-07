@@ -14,16 +14,8 @@ use Filament\Facades\Filament;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Section;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-use Filament\Schemas\Concerns\InteractsWithSchemas;
-use Filament\Schemas\Contracts\HasSchemas;
->>>>>>> dev
 use Filament\Schemas\Schema;
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -37,21 +29,10 @@ use Modules\Xot\Filament\Pages\XotBasePage;
  * @property Schema $editProfileForm
  * @property Schema $editPasswordForm
  */
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 class MyProfilePage extends XotBasePage implements HasSchemas
 {
     use InteractsWithSchemas;
 
-<<<<<<< HEAD
-=======
-class MyProfilePage extends XotBasePage
-{
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     public ?array $profileData = [];
 
     public ?array $passwordData = [];
@@ -97,10 +78,6 @@ class MyProfilePage extends XotBasePage
                     ->aside()
                     ->description('Ensure your account is using long, random password to stay secure.')
                     ->schema([
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
                         TextInput::make('current_password')
                             ->password()
                             ->required()
@@ -108,28 +85,11 @@ class MyProfilePage extends XotBasePage
                             ->validationMessages([
                                 'current_password' => 'current_password',
                             ]),
-<<<<<<< HEAD
-=======
-                        TextInput::make('Current password')
-                            ->password()
-                            ->required()
-                            ->currentPassword(),
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                         PasswordData::make()
                             ->getPasswordFormComponent('new_password')
                             ->dehydrateStateUsing(fn (string $state): string => Hash::make($state))
                             ->live(debounce: 500),
-<<<<<<< HEAD
-<<<<<<< HEAD
                         // ->same('password_confirmation')
-=======
-                        // ->same('passwordConfirmation')
->>>>>>> 4b6b99016 (first commit)
-=======
-                        // ->same('password_confirmation')
->>>>>>> dev
                         /*
                          * Forms\Components\TextInput::make('password')
                          * ->password()
@@ -138,21 +98,9 @@ class MyProfilePage extends XotBasePage
                          * ->autocomplete('new-password')
                          * ->dehydrateStateUsing(fn ($state): string => Hash::make($state))
                          * ->live(debounce: 500)
-<<<<<<< HEAD
-<<<<<<< HEAD
                          * ->same('password_confirmation'),
                          */
                         TextInput::make('password_confirmation')
-=======
-                         * ->same('passwordConfirmation'),
-                         */
-                        TextInput::make('passwordConfirmation')
->>>>>>> 4b6b99016 (first commit)
-=======
-                         * ->same('password_confirmation'),
-                         */
-                        TextInput::make('password_confirmation')
->>>>>>> dev
                             ->password()
                             ->required()
                             ->dehydrated(false)
@@ -167,15 +115,7 @@ class MyProfilePage extends XotBasePage
     {
         $user = Filament::auth()->user();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! $user instanceof Model) {
-=======
-        if (! ($user instanceof Model)) {
->>>>>>> 4b6b99016 (first commit)
-=======
-        if (! $user instanceof Model) {
->>>>>>> dev
             throw new \Exception('The authenticated user object must be an Eloquent model to allow the profile page to update it.');
         }
 
@@ -246,18 +186,8 @@ class MyProfilePage extends XotBasePage
                 unset($data['new_password']);
             }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
             if (isset($data['password_confirmation'])) {
                 unset($data['password_confirmation']);
-=======
-            if (isset($data['passwordConfirmation'])) {
-                unset($data['passwordConfirmation']);
->>>>>>> 4b6b99016 (first commit)
-=======
-            if (isset($data['password_confirmation'])) {
-                unset($data['password_confirmation']);
->>>>>>> dev
             }
 
             $this->handleRecordUpdate($this->getUser(), $data);
@@ -288,14 +218,7 @@ class MyProfilePage extends XotBasePage
 
     protected function fillForms(): void
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         /** @var array<string, mixed> $data */
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-        /** @var array<string, mixed> $data */
->>>>>>> dev
         $data = $this->getUser()->attributesToArray();
 
         $this->editProfileForm->fill($data);

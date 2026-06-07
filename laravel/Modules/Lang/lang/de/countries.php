@@ -3,13 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    // Europa
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'it' => 'Italien',
     'fr' => 'Frankreich',
     'de' => 'Deutschland',
@@ -54,13 +47,6 @@ return [
     'ge' => 'Georgien',
     'am' => 'Armenien',
     'az' => 'Aserbaidschan',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    // Amerika
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'us' => 'Vereinigte Staaten von Amerika',
     'ca' => 'Kanada',
     'mx' => 'Mexiko',
@@ -103,13 +89,6 @@ return [
     'kn' => 'St. Kitts und Nevis',
     'dm' => 'Dominica',
     'bs' => 'Bahamas',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    // Asien
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'cn' => 'China',
     'jp' => 'Japan',
     'kr' => 'Südkorea',
@@ -154,13 +133,6 @@ return [
     'kg' => 'Kirgisistan',
     'tj' => 'Tadschikistan',
     'tm' => 'Turkmenistan',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    // Afrika
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'eg' => 'Ägypten',
     'ly' => 'Libyen',
     'tn' => 'Tunesien',
@@ -215,13 +187,6 @@ return [
     'ao' => 'Angola',
     'aq' => 'Antarktis',
     'zr' => 'Zaire',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    // Ozeanien
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'au' => 'Australien',
     'ax' => 'Alandinseln',
     'nz' => 'Neuseeland',
@@ -239,13 +204,6 @@ return [
     'pw' => 'Palau',
     'fm' => 'Mikronesien',
     'mh' => 'Marshallinseln',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    // Andere
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'xk' => 'Kosovo',
     'va' => 'Vatikanstadt',
     'sm' => 'San Marino',
@@ -298,10 +256,6 @@ return [
     'mp' => 'Nördliche Marianen',
     'um' => 'Amerikanische Außengebiete',
     'eh' => 'Westsahara',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -315,9 +269,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -2,10 +2,6 @@
 
 namespace App\Filament\Resources;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 use App\Filament\Fields\PostContent;
 use App\Filament\Fields\PostFooter;
 use App\Filament\Resources\PostResource\Pages\CreatePost;
@@ -31,8 +27,6 @@ use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
-<<<<<<< HEAD
-=======
 use Filament\Schemas\Schema;
 use Filament\Schemas\Components\Grid;
 use Filament\Forms\Components\TextInput;
@@ -61,9 +55,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Pboivin\FilamentPeek\Forms\Actions\InlinePreviewAction;
 use Pboivin\FilamentPeek\Tables\Actions\ListPreviewAction;
 
@@ -71,21 +62,9 @@ class PostResource extends Resource
 {
     protected static ?string $model = Post::class;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-newspaper';
 
     protected static string|\UnitEnum|null $navigationGroup = 'Blog';
-=======
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-newspaper';
-
-    protected static string | \UnitEnum | null $navigationGroup = 'Blog';
->>>>>>> 4b6b99016 (first commit)
-=======
-    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-newspaper';
-
-    protected static string|\UnitEnum|null $navigationGroup = 'Blog';
->>>>>>> dev
 
     public static function form(Schema $schema): Schema
     {
@@ -203,3 +182,7 @@ class PostResource extends Resource
         ];
     }
 }
+
+
+
+

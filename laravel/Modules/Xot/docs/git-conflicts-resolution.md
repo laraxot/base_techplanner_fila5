@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: [DATE]
@@ -299,9 +295,3 @@ php artisan lang:check
 **Ultimo aggiornamento**: [DATE]
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
-

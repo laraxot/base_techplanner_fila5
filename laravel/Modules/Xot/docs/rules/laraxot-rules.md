@@ -107,17 +107,6 @@
 - One class per file
 
 ## DOCUMENTATION
-<<<<<<< HEAD
-- Always consult docs folders before taking action
-- Never include specific absolute paths (e.g., base_*_fila3)
-- Document model relationships and field purposes
-- Add PHPDoc blocks to all classes and methods
-
-## VALIDATION
-- Run PHPStan level 7 before starting work
-- Process: 1) Update docs 2) Study 3) Fix
-- Document all changes and decisions
-=======
 - **MANDATORY**: Always study, update, and improve 'docs' folders BEFORE taking any action
 - **MANDATORY**: Before implementation, write the why, purpose, rationale, policy, vision, and philosophy of the task in the relevant module/theme docs
 - Treat `docs/` as the handoff layer between AI agents working on the same repository
@@ -148,4 +137,3 @@
 - Do not pass arrays of custom DTOs/models as public properties when a serialized array contract is possible
 - Rehydrate custom DTOs inside the component from serialized payloads
 - For runtime regressions on widgets, require at least one Pest render/mount test of the actual Livewire component, not only source assertions
->>>>>>> dev

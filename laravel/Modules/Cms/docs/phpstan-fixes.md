@@ -1,29 +1,15 @@
 # PHPStan Fixes - Modulo Cms
 
 ## Panoramica
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 Documentazione dei fix applicati al modulo Cms per raggiungere PHPStan livello 9.
 
 ## Fix Applicati
 
 ### 1. generate_business_data.php
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Problema**: Uso di `file_put_contents` non sicuro
-=======
 
 **Problema**: Uso di `file_put_contents` non sicuro
 
->>>>>>> 4b6b99016 (first commit)
-=======
 **Problema**: Uso di `file_put_contents` non sicuro
->>>>>>> dev
 ```php
 // PRIMA (non sicuro)
 file_put_contents($filePath, $content);
@@ -33,24 +19,13 @@ use function Safe\file_put_contents;
 file_put_contents($filePath, $content);
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Motivazione**: 
-=======
 **Motivazione**:
 
->>>>>>> 4b6b99016 (first commit)
-=======
 **Motivazione**: 
->>>>>>> dev
 - Utilizzo della funzione sicura `Safe\file_put_contents` per gestione errori robusta
 - Prevenzione di errori runtime in caso di problemi di scrittura file
 - Conformità agli standard di sicurezza PHPStan
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Risultati
-=======
 ### 2. DownloadAttachmentPlaceHolder (Filament placeholder)
 
 **Problema**: PHPStan segnalava `method.impossibleType` e `argument.type` perché la view veniva costruita tramite `view()->exists()` e `view()` restituendo `mixed`.
@@ -113,24 +88,15 @@ return [
 
 ## Risultati
 
->>>>>>> 4b6b99016 (first commit)
-=======
 ## Risultati
->>>>>>> dev
 - ✅ **0 errori** PHPStan livello 9
 - ✅ **Conformità** agli standard di sicurezza
 - ✅ **Gestione errori** robusta per operazioni file
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 ## Collegamenti
 - [Report Completo PHPStan Fixes](../../../bashscripts/docs/phpstan_fixes_comprehensive_report.md)
 - [Script Risoluzione Conflitti](../../../bashscripts/docs/conflict_resolution_script_improvements.md)
 
-<<<<<<< HEAD
-=======
 ## Da migliorare (DRY + KISS)
 
 - [ ] Migrare le altre componenti Filament del modulo Cms all’uso esteso delle Cast Actions per eliminare mixed residui.
@@ -143,6 +109,3 @@ return [
 - [Script Risoluzione Conflitti](../../../bashscripts/docs/conflict_resolution_script_improvements.md)
 
 _Ultimo aggiornamento: dicembre 2025_
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

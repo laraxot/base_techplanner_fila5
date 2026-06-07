@@ -204,21 +204,14 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 
 ## 🔗 Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [← User Module README](./readme.md)
-=======
 - [← User Module README](./README.md)
->>>>>>> 4b6b99016 (first commit)
 - [← PHPStan Session Report](../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Final Report](../../../docs/phpstan/final-report-session-2025-10-01.md)
 - [← Root Documentation](../../../docs/index.md)
-=======
 - [← User Module README](./readme.md)
 - [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Final Report](../../../../docs/phpstan/final-report-session-2025-10-01.md)
 - [← Root Documentation](../../../../docs/index.md)
->>>>>>> dev
 
 ---
 
@@ -624,24 +617,15 @@ public string $currentState = 'default';
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
 - [PHPStan Usage](../../xot/docs/phpstan-usage.md)
 - [XotBaseResource Documentation](../../xot/docs/filament/xot-base-resource.md)
 
-<<<<<<< HEAD
-=======
 - [Filament Class Extension Rules](../../Xot/docs/filament-class-extension-rules.md)
 - [PHPStan Usage](../../Xot/docs/phpstan-usage.md)
 - [XotBaseResource Documentation](../../Xot/docs/filament/xot-base-resource.md)
 
 *Ultimo aggiornamento: 2025-01-22*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 # PHPStan Fixes - Modulo User
 
 ## OauthClientResource.php

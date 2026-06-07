@@ -8,37 +8,16 @@ return [
             'buttons' => [
                 'refresh' => 'Refresh',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'heading' => 'Application Health',
-=======
-
-            'heading' => 'Application Health',
-
->>>>>>> 4b6b99016 (first commit)
-=======
-            'heading' => 'Application Health',
->>>>>>> dev
             'navigation' => [
                 'group' => 'Settings',
                 'label' => 'Application Health',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             'notifications' => [
                 'check_results' => 'Check results from',
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -52,9 +31,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

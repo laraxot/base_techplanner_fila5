@@ -1,12 +1,6 @@
 # Rimozione Completa Proprietà Vietate da XotBaseResource - Analisi e Implementazione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2026-01-09  
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Status**: 🧘 **IN LAVORO**
 
 ---
@@ -235,12 +229,5 @@ return [
 
 **Status**: ✅ **COMPLETATO**
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2026-01-09
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: [DATE]
->>>>>>> dev

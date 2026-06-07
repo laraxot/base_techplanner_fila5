@@ -132,8 +132,5 @@ php -l laravel/Modules/Geo/lang/it/address.php
 
 ---
 
-<<<<<<< HEAD
-=======
 **Ultimo aggiornamento**: 6 Gennaio 2025  
->>>>>>> dev
 **Autore**: AI Assistant  

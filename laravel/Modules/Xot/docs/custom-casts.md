@@ -1,6 +1,4 @@
 
-<<<<<<< HEAD
-=======
 php artisan make:cast Address
 
 https://medium.com/@SlyFireFox/laravel-models-3-common-custom-cast-examples-6d0518ecd799
@@ -16,4 +14,3 @@ DB::table(‘orders’)
 
 
 $table->json('address')->nullable();
->>>>>>> dev

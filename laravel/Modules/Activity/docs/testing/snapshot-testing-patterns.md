@@ -246,15 +246,8 @@ test('can reconstruct aggregate from snapshots', function () {
 ## Collegamenti
 
 ### Documentazione
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Testing Strategy](../../xot/docs/testing-strategy.md) - **Policy ufficiale**
-=======
 - [Testing Strategy](../../Xot/docs/testing-strategy.md) - **Policy ufficiale**
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Testing Strategy](../../xot/docs/testing-strategy.md) - **Policy ufficiale**
->>>>>>> dev
 - [No RefreshDatabase Policy](./no-refresh-database-policy.md)
 - [Event Sourcing Introduction](../event-sourcing-introduction.md)
 - [Snapshot Model](../models/snapshot-model.md)

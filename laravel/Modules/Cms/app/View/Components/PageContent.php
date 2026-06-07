@@ -25,10 +25,6 @@ class PageContent extends Component
         $blocks = $page->content_blocks;
         if (! is_array($blocks)) {
             $primary_lang = XotData::make()->primary_lang;
-<<<<<<< HEAD
-            /* @phpstan-ignore-next-line method.notFound */
-=======
->>>>>>> dev
             $blocks = $page->getTranslation('content_blocks', $primary_lang);
         }
 
@@ -56,13 +52,6 @@ class PageContent extends Component
          */
         $view = 'cms::components.page-content';
         $view_params = [];
-<<<<<<< HEAD
-        // @phpstan-ignore-next-line
-        if (! view()->exists($view)) {
-            throw new \Exception('view not found: '.$view);
-        }
-=======
->>>>>>> dev
 
         return view($view, $view_params);
     }

@@ -17,22 +17,13 @@ return new class extends XotBaseMigration {
             $table->string('uuid', 36)->nullable()->index();
             $table->string('email')->index();
             $table->string('token');
-<<<<<<< HEAD
-            // $table->timestamp('created_at')->nullable();
-            $this->timestamps($table);
-=======
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
->>>>>>> dev
         });
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-<<<<<<< HEAD
-            // if (! $this->hasColumn('email')) {
-=======
             // if (! $this->hasColumn('email'))
->>>>>>> dev
             //    $table->string('email')->nullable();
             // }
             // $this->updateUser($table);

@@ -56,16 +56,12 @@ Properties minime per marker/popup:
 
 ## UX attesa (2026-06)
 
-<<<<<<< HEAD
-- `../../../../Modules/Fixcity/app/Actions/GenerateTicketsJsonAction.php`
-=======
 - Cluster farmshops-style; `removeOutsideVisibleBounds: false`
 - Marker: `__inner` stato + `__glyph-pad` bianco + `__point` (triangolo CSS); vedi [geo-map-lit-reconstruction-guide.md](../../../../Modules/Geo/docs/wiki/concepts/geo-map-lit-reconstruction-guide.md)
 - Popup **block `popup`**: apertura immediata, dettaglio lazy `/api/ticket-details/{id}`
 - Popup **senza** vuoto header (vedi runbook sotto)
 - Hover cluster/marker: ombra only, no transform
 - Ricerca indirizzo collassabile (controllo lente)
->>>>>>> d7fd0c4 (delete .c*)
 
 ## Build obbligatoria dopo modifica JS/CSS
 

@@ -1,14 +1,7 @@
 # Autonomous Priority Rule
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Date**: 2025-12-18
->>>>>>> 4b6b99016 (first commit)
-=======
 **Date**: [DATE]
->>>>>>> dev
 **Context**: "Super Mucca" Mode
 
 ## The Rule

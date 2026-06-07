@@ -137,12 +137,6 @@ Modules/Notify/resources/views/filament/pages/
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [Filament 5 Clusters](../../../../../docs/filament-5-clusters.md)
-- [XotBasePage Documentation](../../xot/docs/filament/xotbasepage.md)
-- [Telegram Notifications](../docs/telegram-setup.md)
-=======
 - [Filament 5 Clusters](../../../../../../docs/filament-5-clusters.md)
 - [XotBasePage Documentation](../../xot/docs/filament/xotbasepage.md)
 - [Telegram Notifications](../../docs/telegram-setup.md)
->>>>>>> dev

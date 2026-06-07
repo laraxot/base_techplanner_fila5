@@ -2,17 +2,10 @@
     {
         "nome": "Palermo",
         "codice": 6664,
-<<<<<<< HEAD
-        "regione": "\"Sicilia\"",
-        "provincia": "\"Palermo\"",
-        "sigla_provincia": "PA",
-        "cap": "\"90100\"",
-=======
         "regione": "Sicilia",
         "provincia": "Palermo",
         "sigla_provincia": "PA",
         "cap": "90100",
->>>>>>> dev
         "codice_catastale": "F480",
         "popolazione": 192037,
         "zona_altimetrica": "montagna",
@@ -21,10 +14,6 @@
         "lat": 38.1243,
         "lng": 13.3286,
         "id": 1,
-<<<<<<< HEAD
-        "updated_at": "2026-01-19T20:58:57.343175Z",
-        "created_at": "2026-01-19T20:58:57.343184Z"
-=======
         "slug": "palermo",
         "title": "Palermo",
         "content": null,
@@ -32,22 +21,14 @@
         "created_at": "2026-01-19T20:58:57.343184Z",
         "created_by": null,
         "updated_by": null
->>>>>>> dev
     },
     {
         "nome": "Milano",
         "codice": 3466,
-<<<<<<< HEAD
-        "regione": "\"Lombardia\"",
-        "provincia": "\"Milano\"",
-        "sigla_provincia": "MI",
-        "cap": "\"20100\"",
-=======
         "regione": "Lombardia",
         "provincia": "Milano",
         "sigla_provincia": "MI",
         "cap": "20100",
->>>>>>> dev
         "codice_catastale": "E776",
         "popolazione": 374013,
         "zona_altimetrica": "collina",
@@ -56,20 +37,6 @@
         "lat": 45.4756,
         "lng": 9.2708,
         "id": 2,
-<<<<<<< HEAD
-        "updated_at": "2026-01-19T21:13:59.788145Z",
-        "created_at": "2026-01-19T21:13:59.788163Z"
-    },
-    {
-        "regione": "\"Lombardia\"",
-        "provincia": "\"Milano\"",
-        "cap": "\"20091\"",
-        "lat": 45.5389,
-        "lng": 9.19,
-        "id": 3,
-        "updated_at": "2026-01-19T21:14:01.050554Z",
-        "created_at": "2026-01-19T21:14:01.050577Z"
-=======
         "slug": "milano",
         "title": "Milano",
         "content": null,
@@ -100,6 +67,5 @@
         "created_at": "2026-01-19T21:14:01.050577Z",
         "created_by": null,
         "updated_by": null
->>>>>>> dev
     }
 ]

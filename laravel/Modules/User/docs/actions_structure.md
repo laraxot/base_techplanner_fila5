@@ -39,11 +39,7 @@ Questa differenza è definita nel file `composer.json` di ogni modulo, che mappa
 
 ## Pattern di Implementazione
 
-<<<<<<< HEAD
-SaluteOra utilizza il package `spatie/laravel-queueable-action` per le Actions, NON il pattern Service:
-=======
 healthcare_app utilizza il package `spatie/laravel-queueable-action` per le Actions, NON il pattern Service:
->>>>>>> dev
 
 ```php
 <?php
@@ -75,19 +71,10 @@ class DeleteUserAction
 
 ## Documentazione Correlata
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Path Conventions](./path_conventions.md)
-- [Directory Structure Checklist](./directory_structure_checklist.md)
-- [Module Structure](./module_structure.md)
-=======
 - [Path Conventions](./PATH_CONVENTIONS.md)
 - [Directory Structure Checklist](./DIRECTORY_STRUCTURE_CHECKLIST.md)
 - [Module Structure](./MODULE_STRUCTURE.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Path Conventions](./path_conventions.md)
 - [Directory Structure Checklist](./directory_structure_checklist.md)
 - [Module Structure](./module_structure.md)
->>>>>>> dev
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)

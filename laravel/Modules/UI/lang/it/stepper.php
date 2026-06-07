@@ -14,10 +14,6 @@ return [
     'next' => 'Avanti',
     'confirm' => 'Conferma',
     'completed' => 'Completato',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Stepper',
     'plural_label' => 'Stepper (Plurale)',
     'fields' => [
@@ -51,9 +47,4 @@ return [
             'label' => 'Elimina Stepper',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

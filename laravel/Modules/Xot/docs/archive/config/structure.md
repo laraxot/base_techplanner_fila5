@@ -144,10 +144,6 @@ return array_merge(require __DIR__.'/../vendor/module/config/module.php', [
 ## Collegamenti
 
 - [Architettura](../architecture/module-structure.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Best Practices](../best-practices.md)
 - [Sicurezza](../security/readme.md)
 - [Performance](../performance/readme.md)
@@ -169,8 +165,6 @@ return array_merge(require __DIR__.'/../vendor/module/config/module.php', [
 * [structure.md](../../../cms/project_docs/structure.md)
 * [structure.md](../../../cms/project_docs/themes/structure.md)
 * [structure.md](../../../cms/project_docs/components/structure.md)
-<<<<<<< HEAD
-=======
 - [Best Practices](../BEST-PRACTICES.md)
 - [Sicurezza](../security/README.md)
 - [Performance](../performance/README.md)
@@ -192,6 +186,3 @@ return array_merge(require __DIR__.'/../vendor/module/config/module.php', [
 * [structure.md](../../../Cms/project_docs/structure.md)
 * [structure.md](../../../Cms/project_docs/themes/structure.md)
 * [structure.md](../../../Cms/project_docs/components/structure.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

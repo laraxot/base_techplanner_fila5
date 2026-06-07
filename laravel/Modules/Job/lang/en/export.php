@@ -19,145 +19,69 @@ return [
             'label' => 'Nome',
             'tooltip' => 'Inserisci il nome dell\'esportazione',
             'placeholder' => 'Esporta i tuoi dati',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'format' => [
             'label' => 'Formato',
             'tooltip' => 'Scegli il formato di esportazione (CSV, Excel, etc.)',
             'placeholder' => 'Seleziona formato',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'filters' => [
             'label' => 'Filtri',
             'tooltip' => 'Applica filtri per selezionare i dati da esportare',
             'placeholder' => 'Filtra i dati',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'columns' => [
             'label' => 'Colonne',
             'tooltip' => 'Seleziona le colonne da includere nell\'esportazione',
             'placeholder' => 'Seleziona colonne',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'total_records' => [
             'label' => 'Totale Record',
             'tooltip' => 'Numero totale di record da esportare',
             'placeholder' => 'Totale',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'status' => [
             'label' => 'Stato',
             'tooltip' => 'Stato dell\'esportazione',
             'placeholder' => 'Stato in corso',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Creato il',
             'tooltip' => 'Data di creazione dell\'esportazione',
             'placeholder' => 'Data di creazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'completed_at' => [
             'label' => 'Completato il',
             'tooltip' => 'Data di completamento dell\'esportazione',
             'placeholder' => 'Data di completamento',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'download_url' => [
             'label' => 'URL Download',
             'tooltip' => 'URL per scaricare il file esportato',
             'placeholder' => 'URL del file',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'source' => [
             'label' => 'Sorgente',
             'tooltip' => 'Origine dei dati per l\'esportazione',
             'placeholder' => 'Seleziona la sorgente',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -178,20 +102,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'formats' => [
@@ -262,14 +172,6 @@ return [
         'xml' => 'XML',
         'pdf' => 'PDF',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

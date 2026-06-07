@@ -11,16 +11,15 @@ use Spatie\LaravelData\Data;
  * Utilizzato nel contesto dell'architettura Filament-first.
  *
  * @phpstan-consistent-constructor
+ *
+ * @param string $driver
+ * @param array<string, int|string> $smtpConfig
+ * @param array<string, string> $fromConfig
+ * @param string|null $replyTo
+ * @param bool $verifyPeer
  */
 final class MailData extends Data
 {
-    /**
-     * @param string                    $driver
-     * @param array<string, int|string> $smtpConfig
-     * @param array<string, string>      $fromConfig
-     * @param string|null               $replyTo
-     * @param bool                      $verifyPeer
-     */
     public function __construct(
         public readonly string $driver = 'smtp',
         public readonly array $smtpConfig = [
@@ -42,8 +41,8 @@ final class MailData extends Data
     /**
      * Create a new instance of MailData with default values.
      */
-    public static function make(): static
+    public static function make(): self
     {
-        return new static();
+        return new self();
     }
 }

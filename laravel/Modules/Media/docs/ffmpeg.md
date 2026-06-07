@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-WINDOWS
-
-https://www.gyan.dev/ffmpeg/builds/
-
-choco install ffmpeg
-choco install ffmpeg-full
-winget install ffmpeg
-
-<<<<<<< HEAD
-
-$ which ffmpeg
-$ which ffprobe
-
-
-add to .env
-FFMPEG_PATH=c:/ProgramData/chocolatey/bin/ffmpeg.exe
-FFPROBE_PATH=c:/ProgramData/chocolatey/bin/ffprobe.exe
-=======
 $ which ffmpeg
 $ which ffprobe
 
@@ -25,8 +6,6 @@ FFMPEG_PATH=c:/ProgramData/chocolatey/bin/ffmpeg.exe
 FFPROBE_PATH=c:/ProgramData/chocolatey/bin/ffprobe.exe
 
 -------------------------------------------------------------
->>>>>>> 4b6b99016 (first commit)
-=======
 ---
 module: theme
 topic: ffmpeg
@@ -34,4 +13,3 @@ canonical: ../../../Themes/docs/shared-components/ffmpeg.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ffmpeg.txt
->>>>>>> dev

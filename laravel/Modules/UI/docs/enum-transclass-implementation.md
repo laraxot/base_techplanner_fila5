@@ -133,18 +133,7 @@ grep -r "__(" Modules/UI/app/Enums/
 **"Ogni enum del modulo UI DEVE utilizzare transClass() per TUTTE le sue proprietà traducibili."**
 
 ## Collegamenti
-<<<<<<< HEAD
-- [../../../../docs/enum-transclass-rule.md](../../../../docs/enum-transclass-rule.md)
-- [../filament/no-label-rule.md](../filament/no-label-rule.md)
-- [../clean-code/no-obvious-comments.md](../clean-code/no-obvious-comments.md)
-
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-08-04*
->>>>>>> 4b6b99016 (first commit)
-=======
 - [../../../../../docs/enum-transclass-rule.md](../../../../../docs/enum-transclass-rule.md)
 - [../filament/no-label-rule.md](../filament/no-label-rule.md)
 - [../clean-code/no-obvious-comments.md](../clean-code/no-obvious-comments.md)
-
->>>>>>> dev

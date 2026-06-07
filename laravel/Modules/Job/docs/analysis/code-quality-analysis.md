@@ -81,13 +81,7 @@ The current analysis is incomplete and only shows partial results from PHPMD bef
 ---
 
 **Report Generated**: 2025-11-11
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Next Review**: After fixing syntax errors
->>>>>>> 4b6b99016 (first commit)
-**Target Completion**: 2025-11-15
-=======
 **Next Review**: After fixing syntax errors
 **Target Completion**: 2025-11-15
->>>>>>> dev
+**Next Review**: After fixing syntax errors
+**Target Completion**: 2025-11-15

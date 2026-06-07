@@ -8,13 +8,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Modules\User\Database\Factories\AuthenticationFactory;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 
@@ -54,20 +47,10 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  *
  * @mixin IdeHelperAuthentication
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * @method static AuthenticationFactory factory($count = null, $state = [])
- *
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
  * @property Model|\Eloquent      $authenticatable
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
-<<<<<<< HEAD
-=======
  * @property string|null          $updated_by
  * @property string|null          $created_by
  * @property string|null          $deleted_at
@@ -78,7 +61,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static Builder<static>|Authentication                         whereDeletedAt($value)
  * @method static Builder<static>|Authentication                         whereDeletedBy($value)
  * @method static Builder<static>|Authentication                         whereUpdatedBy($value)
->>>>>>> dev
  *
  * @mixin \Eloquent
  */

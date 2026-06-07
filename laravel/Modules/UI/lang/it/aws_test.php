@@ -15,10 +15,6 @@ return [
     'test_iam_credentials' => 'Test Credenziali IAM',
     'test_iam_policies' => 'Test Policy IAM',
     'run_full_diagnostic' => 'Esegui Diagnostica Completa',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Aws Test',
     'plural_label' => 'Aws Test (Plurale)',
     'fields' => [
@@ -52,9 +48,4 @@ return [
             'label' => 'Elimina Aws Test',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

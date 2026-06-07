@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-# Implementazione Corretta di logout.blade.php
-
-## Collegamenti correlati
-<<<<<<< HEAD
-- [Documentazione centrale](../../../docs/readme.md)
-- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Errors](./volt_errors.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Volt Logout Action](./volt_logout_action.md)
-- [Auth Pages Implementation](./auth_pages_implementation.md)
-=======
 - [Documentazione centrale](../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
@@ -20,7 +6,6 @@
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
->>>>>>> 4b6b99016 (first commit)
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:
@@ -224,7 +209,6 @@ return redirect()->to('/' . $locale);
 ```
 
 Questa implementazione è semplice, sicura e segue tutte le best practices del progetto SaluteOra.
-=======
 ---
 module: theme
 topic: logout_blade_implementation
@@ -232,4 +216,3 @@ canonical: ../../../Themes/docs/shared-components/logout_blade_implementation.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout_blade_implementation.md
->>>>>>> dev

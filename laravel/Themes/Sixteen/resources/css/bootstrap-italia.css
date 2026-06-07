@@ -2,19 +2,10 @@
  * Bootstrap Italia Components Styles
  * 
  * CSS styles for all Bootstrap Italia compliant components
-<<<<<<< HEAD
- * Used by the Sixteen theme for Italian PA websites
- */
-
-/* Import Bootstrap Italia base styles */
-@import url('https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.8/dist/css/bootstrap-italia.min.css');
-
-=======
  * Implemented with Tailwind CSS @apply - NO CDN imports
  * Used by the Sixteen theme for Italian PA websites
  */
 
->>>>>>> dev
 /* Skiplinks Component */
 .skiplinks {
     position: absolute;
@@ -396,27 +387,17 @@
     .progress-spinner {
         border-top-color: currentColor;
     }
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> dev
     .rating label:hover ~ label,
     .rating input[type="radio"]:checked ~ label {
         color: currentColor;
     }
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> dev
     .notification {
         border-width: 2px;
         border-style: solid;
     }
 }
-<<<<<<< HEAD
-=======
 
 /* ============================================= */
 /* Missing Bootstrap Italia Utility Classes      */
@@ -1696,4 +1677,3 @@ a.t-primary:hover {
     height: 50px;
 }
 
->>>>>>> dev

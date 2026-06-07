@@ -19,10 +19,6 @@ use Illuminate\Support\Carbon;
  *
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
-interface UpdaterContract {}
-=======
 interface UpdaterContract
 {
 }
->>>>>>> dev

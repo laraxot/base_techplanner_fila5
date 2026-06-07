@@ -5,15 +5,9 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 use Illuminate\Support\Facades\Auth;
-<<<<<<< HEAD
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-
-class UserDropdown extends XotBaseWidget
-=======
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 class UserDropdown extends XotBaseSchemaWidget
->>>>>>> dev
 {
     /**
      * The view for this widget.
@@ -54,12 +48,6 @@ class UserDropdown extends XotBaseSchemaWidget
 
         return [
             'user' => $user,
-<<<<<<< HEAD
-            'avatarUrl' => $profile?->getAvatarUrl() ?? 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y',
-            'name' => $user->name ?? 'User',
-        ];
-    }
-=======
             'avatarUrl' => $this->resolveAvatarUrl($profile),
             'name' => $user->name ?? 'User',
         ];
@@ -84,5 +72,4 @@ class UserDropdown extends XotBaseSchemaWidget
 
         return \is_string($avatarUrl) && '' !== $avatarUrl ? $avatarUrl : $fallback;
     }
->>>>>>> dev
 }

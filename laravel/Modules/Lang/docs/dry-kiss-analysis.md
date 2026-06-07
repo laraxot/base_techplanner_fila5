@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-# 🐄 DRY & KISS Analysis - Lang
-
-<<<<<<< HEAD
-**Data:** [DATE] | **Status:** ✅
-=======
 **Data:** 2025-10-15 | **Status:** ✅
->>>>>>> 4b6b99016 (first commit)
 
 ## 📊 Struttura
 Models: 13 | Resources: 2 | Actions: 11 | Docs: 256 🟡
@@ -28,7 +21,6 @@ DRY: 7/10 🟢 | KISS: 6/10 🟡 | **Overall: 6.5/10 🟡**
 2. Resources refactoring (2 giorni)
 
 **Status:** 🟡 Codice OK, troppi docs
-=======
 # DRY & KISS Analysis - Modulo Lang
 
 **Data:** 15 Ottobre 2025  
@@ -55,5 +47,3 @@ abstract class BaseModel extends XotBaseModel
 
 ---
 [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
-
->>>>>>> dev

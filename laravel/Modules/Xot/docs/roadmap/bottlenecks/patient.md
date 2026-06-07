@@ -228,12 +228,5 @@
 ## Collegamenti tra versioni di patient.md
 * [patient.md](docs/moduli/patient.md)
 * [patient.md](docs/roadmap/moduli/patient.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [patient.md](../../../xot/docs/roadmap/bottlenecks/patient.md)
-=======
 * [patient.md](../../../Xot/docs/roadmap/bottlenecks/patient.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [patient.md](../../../xot/docs/roadmap/bottlenecks/patient.md)
->>>>>>> dev

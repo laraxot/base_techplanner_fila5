@@ -87,25 +87,11 @@ Prima di ogni commit, verificare:
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Regole Traduzioni](../../laravel/modules/xot/docs/translation-standards.md)
-=======
 - [Regole Traduzioni](../../laravel/Modules/Xot/docs/translation-standards.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Regole Traduzioni](../../laravel/modules/xot/docs/translation-standards.md)
->>>>>>> dev
 - [Best Practices Filament](filament-widget-best-practices.md)
 - [Enum Standards](enum_standards.md)
 
 ## Ultimo Aggiornamento
-<<<<<<< HEAD
-<<<<<<< HEAD
-[DATE] - Regola critica per evitare ->label()
-=======
 2025-01-27 - Regola critica per evitare ->label()
->>>>>>> 4b6b99016 (first commit)
-=======
 [DATE] - Regola critica per evitare ->label()
->>>>>>> dev

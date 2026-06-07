@@ -1,24 +1,14 @@
 # Analisi e Miglioramenti del Prompt docs.txt
 
 > **Collegamenti correlati**
-<<<<<<< HEAD
-<<<<<<< HEAD
-> - [README.md documentazione generale](../../../../docs/readme.md)
-> - [Struttura dei Prompt](./prompts.md)
-> - [Regole per i Prompt](./prompt_rules.md)
-> - [Regole per i Percorsi Relativi](./relative_paths_rules.md)
-=======
 > - [README.md documentazione generale](../../../../docs/README.md)
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./PROMPT_RULES.md)
 > - [Regole per i Percorsi Relativi](./RELATIVE_PATHS_RULES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 > - [README.md documentazione generale](../../../../../docs/readme.md)
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [Regole per i Percorsi Relativi](./relative_paths_rules.md)
->>>>>>> dev
 > - [Miglioramenti al Prompt docs.txt](./prompt_docs_improvements.md)
 > - [Analisi nel modulo bashscripts](../../../../bashscripts/docs/prompt_docs_analysis.md)
 
@@ -36,15 +26,8 @@ Il prompt `docs.txt` attuale presenta diverse problematiche strutturali che poss
 
 Per migliorare il prompt, propongo di applicare i seguenti principi:
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. **Mantenere la natura di stringa continua**: Come richiesto dalla [Regola Universale per i Prompt](./prompt_rules.md), il prompt deve rimanere una singola stringa continua senza formattazione.
-=======
 1. **Mantenere la natura di stringa continua**: Come richiesto dalla [Regola Universale per i Prompt](./PROMPT_RULES.md), il prompt deve rimanere una singola stringa continua senza formattazione.
->>>>>>> 4b6b99016 (first commit)
-=======
 1. **Mantenere la natura di stringa continua**: Come richiesto dalla [Regola Universale per i Prompt](./prompt_rules.md), il prompt deve rimanere una singola stringa continua senza formattazione.
->>>>>>> dev
 2. **Migliorare l'organizzazione logica**: Raggruppare concetti correlati per migliorare la comprensione.
 3. **Eliminare ridondanze**: Rimuovere informazioni duplicate per rendere il prompt più conciso.
 4. **Garantire coerenza**: Assicurare che tutti gli esempi e le istruzioni siano coerenti con le regole stabilite.

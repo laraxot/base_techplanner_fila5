@@ -4,28 +4,12 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Services;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 /**
  * Servizio per la gestione del tema Sixteen.
  *
  * Questo servizio fornisce metodi per la gestione
  * delle configurazioni e funzionalità del tema.
  *
-<<<<<<< HEAD
-=======
-use Themes\Sixteen\Services\MenuBuilder;
-/**
- * Servizio per la gestione del tema Sixteen.
- * 
- * Questo servizio fornisce metodi per la gestione
- * delle configurazioni e funzionalità del tema.
- * 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
  * Enhanced version integrating with the new Menu Builder System
  */
 class ThemeService
@@ -42,16 +26,7 @@ class ThemeService
 
     public function __construct(
         protected MenuBuilder $menuBuilder
-<<<<<<< HEAD
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> 4b6b99016 (first commit)
-=======
-    ) {}
->>>>>>> dev
 
     /**
      * Ottiene il nome del tema.
@@ -98,14 +73,6 @@ class ThemeService
 
     /**
      * Inizializza le risorse del tema.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-     *
-     * @return void
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
      */
     public function initialize(): void
     {
@@ -162,15 +129,7 @@ class ThemeService
             'implemented' => 26,
             'compliance_percentage' => 48,
             'critical_missing' => ['dropdown', 'pagination', 'spid_integration'],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'status' => 'in_development',
-=======
-            'status' => 'in_development'
->>>>>>> 4b6b99016 (first commit)
-=======
-            'status' => 'in_development',
->>>>>>> dev
         ];
     }
 
@@ -185,28 +144,12 @@ class ThemeService
     /**
      * Ottiene le configurazioni del tema.
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function getConfig(?string $key = null, mixed $default = null): mixed
-=======
-    public function getConfig(string $key = null, mixed $default = null): mixed
->>>>>>> 4b6b99016 (first commit)
-=======
-    public function getConfig(?string $key = null, mixed $default = null): mixed
->>>>>>> dev
     {
         if ($key === null) {
             return config('sixteen');
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         return config('sixteen.'.$key, $default);
-=======
-        return config('sixteen.' . $key, $default);
->>>>>>> 4b6b99016 (first commit)
-=======
-        return config('sixteen.'.$key, $default);
->>>>>>> dev
     }
 }

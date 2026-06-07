@@ -8,188 +8,89 @@ return [
             'label' => 'Ricerca',
             'placeholder' => 'Inserisci il termine di ricerca',
             'help' => 'Termine o frase da cercare',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'type' => [
             'label' => 'Tipo',
             'placeholder' => 'Seleziona il tipo di ricerca',
             'help' => 'Tipo di entità da cercare',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'location' => [
             'label' => 'Posizione',
             'placeholder' => 'Inserisci la posizione',
             'help' => 'Posizione per la ricerca geografica',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'radius' => [
             'label' => 'Raggio',
             'placeholder' => 'Inserisci il raggio di ricerca',
             'help' => 'Raggio di ricerca in chilometri',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'latitude' => [
             'label' => 'Latitudine',
             'placeholder' => 'Inserisci la latitudine',
             'help' => 'Latitudine per la ricerca geografica',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'longitude' => [
             'label' => 'Longitudine',
             'placeholder' => 'Inserisci la longitudine',
             'help' => 'Longitudine per la ricerca geografica',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'filters' => [
             'label' => 'Filtri',
             'placeholder' => 'Configura i filtri di ricerca',
             'help' => 'Filtri da applicare alla ricerca',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'sort_by' => [
             'label' => 'Ordina per',
             'placeholder' => 'Seleziona il campo di ordinamento',
             'help' => 'Campo per ordinare i risultati',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'sort_direction' => [
             'label' => 'Direzione ordinamento',
             'placeholder' => 'Seleziona la direzione',
             'help' => 'Direzione dell\'ordinamento',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'limit' => [
             'label' => 'Limite',
             'placeholder' => 'Inserisci il numero massimo di risultati',
             'help' => 'Numero massimo di risultati da restituire',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'page' => [
             'label' => 'Pagina',
             'placeholder' => 'Inserisci il numero di pagina',
             'help' => 'Numero di pagina per la paginazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'validation' => [
@@ -261,10 +162,6 @@ return [
         'recent_searches' => 'Ricerche recenti',
         'related_searches' => 'Ricerche correlate',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Search',
     'plural_label' => 'Search (Plurale)',
     'navigation' => [
@@ -289,9 +186,4 @@ return [
             'label' => 'Elimina Search',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

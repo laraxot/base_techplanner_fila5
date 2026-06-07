@@ -1,6 +1,4 @@
 
-<<<<<<< HEAD
-=======
 
 https://github.com/orobogenius/sansdaemon/blob/master/src/Traits/SansDaemonWorkerTrait.php
 
@@ -22,5 +20,3 @@ https://pusher.com/tutorials/monitoring-laravel-background-queues/
 
 
 https://github.com/f9webltd/laravel-queue-check/blob/master/src/Console/Commands/CheckQueueIsRunning.php
-
->>>>>>> dev

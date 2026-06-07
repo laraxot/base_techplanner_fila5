@@ -70,21 +70,14 @@ abstract class XotBaseModel extends Model
 Each module has its own BaseModel that extends XotBaseModel:
 
 ```php
-<<<<<<< HEAD
 // Example from Quaeris module
-=======
->>>>>>> dev
 abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 {
     use Cachable;
     use HasExtraTrait;
     use InteractsWithMedia;
 
-<<<<<<< HEAD
-    protected $connection = 'quaeris'; // Module-specific connection
-=======
     protected $connection = 'module_name'; // Module-specific connection
->>>>>>> dev
 
     protected $with = [
         'extra', // Always load extra fields
@@ -112,10 +105,7 @@ class SurveyPdf extends XotBaseModel // Never do this!
 
 ✅ **CORRECT:**
 ```php
-<<<<<<< HEAD
 // In Quaeris module
-=======
->>>>>>> dev
 class SurveyPdf extends BaseModel // Extends module's BaseModel
 ```
 
@@ -135,8 +125,6 @@ The module BaseModel is where you add:
 - Module-specific relationship loading
 - Module-specific configurations
 
-<<<<<<< HEAD
-=======
 ### Rule 4: Use Contracts for Auditing PHPDocs (CRITICAL)
 Always use `\Modules\Xot\Contracts\ProfileContract|null` for auditing properties managed by the `Updater` trait (`creator`, `updater`, `deleter`). NEVER use the concrete `Profile` model of the module to avoid tight coupling and ensure modular decoupling.
 
@@ -150,7 +138,6 @@ Always use `\Modules\Xot\Contracts\ProfileContract|null` for auditing properties
 class Event extends BaseModel { ... }
 ```
 
->>>>>>> dev
 ## Authentication Model Pattern
 
 For authentication models, there's an additional layer:
@@ -219,11 +206,7 @@ class SurveyPdf extends BaseModel
 
 ### KISS (Keep It Simple, Stupid)
 - Clear inheritance chain
-<<<<<<< HEAD
-- Predictable patterns
-=======
 - <nome progetto>able patterns
->>>>>>> dev
 - Minimal configuration needed
 
 ## Type Safety and Contracts

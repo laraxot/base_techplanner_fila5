@@ -26,10 +26,6 @@ return [
         'finished' => 'اپلیکیشن با موفقیت نصب شد.',
         'exit' => 'برای خروج اینجا را کلیک کنید',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -43,9 +39,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

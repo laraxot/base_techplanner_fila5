@@ -1,14 +1,7 @@
 # Merge Conflicts Inventory
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Date**: 2025-11-12
->>>>>>> 4b6b99016 (first commit)
-=======
 **Date**: [DATE]
->>>>>>> dev
 **Total Files with Conflicts**: 77
 **Status**: In Progress
 

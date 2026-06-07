@@ -76,14 +76,7 @@
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Modelli Patient](../patient/docs/models.md)
-=======
 - [Modelli Patient](../Patient/docs/models.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Modelli Patient](../patient/docs/models.md)
->>>>>>> dev
 - [Best Practices Modelli](./models.md)
 - [Convenzioni di Codice](./coding-standards.md)

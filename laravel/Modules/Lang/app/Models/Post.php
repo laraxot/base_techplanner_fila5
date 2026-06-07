@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Models;
 
-<<<<<<< HEAD
-use Eloquent;
-=======
->>>>>>> dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
@@ -57,11 +53,7 @@ use Spatie\Sluggable\SlugOptions;
  * @property string|null                  $linkable_type
  * @property int|null                     $views_count
  * @property ProfileContract|null         $creator
-<<<<<<< HEAD
- * @property Model|\Eloquent|null         $linkable
-=======
  * @property Model|null                   $linkable
->>>>>>> dev
  * @property ProfileContract|null         $updater
  *
  * @method static Builder<static>|Post newModelQuery()
@@ -103,9 +95,6 @@ use Spatie\Sluggable\SlugOptions;
  *
  * @method static PostFactory factory($count = null, $state = [])
  *
-<<<<<<< HEAD
- * @mixin Eloquent
-=======
  * @mixin Model
  *
  * @property string|null $excerpt
@@ -125,7 +114,6 @@ use Spatie\Sluggable\SlugOptions;
  * @method static Builder<static>|Post whereStatus($value)
  *
  * @mixin \Eloquent
->>>>>>> dev
  */
 class Post extends BaseModel
 {

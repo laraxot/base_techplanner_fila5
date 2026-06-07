@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 //---
 continuo di type_hinting
 --//
@@ -71,9 +69,3 @@ User::all()->modelKeys();
 //---------------------------------------------------
 https://tomgrohl.medium.com/using-php-traits-for-laravel-eloquent-relationships-7357901a01a4
 //-- usa set e get
-
-
-
-
->>>>>>> dev
-

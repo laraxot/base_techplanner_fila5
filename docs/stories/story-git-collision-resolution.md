@@ -32,13 +32,9 @@ così che **PHPStan, Pest e gli agenti AI possano analizzare il codice senza par
 - [x] `docs/wiki/` da origin/dev integrato
 - [x] Test regressione: `UserMigrationSyntaxTest` verifica assenza marker nelle migrazioni User
 - [x] Documentazione second brain: `docs/wiki/how-to/git-merge-marker-sweep.md`
-<<<<<<< HEAD
-- [x] Quality gate post-edit: `./tools/post-edit-php.sh` + `UserMigrationSyntaxTest`
-=======
 - [x] Corruzione strutturale senza marker: restore da `origin/master` + fix import/trait/comandi
 - [x] Bootstrap Laravel: `php artisan about` senza fatal error
 - [x] Quality gate documentato: `laravel/tools/post-edit-php.sh` (PHPStan, PHPMD, PHPInsights, Pest)
->>>>>>> 06ccbd93 (.)
 
 ## Strategia di risoluzione
 

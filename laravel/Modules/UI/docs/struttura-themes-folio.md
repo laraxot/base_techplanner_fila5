@@ -1,14 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Struttura Themes e Folio in SaluteOra
-=======
 # Struttura Themes e Folio in
 # Struttura Themes e Folio in <nome progetto>
 # Struttura Themes e Folio in
 # Struttura Themes e Folio in <nome progetto>
 # Struttura Themes e Folio in
 # Struttura Themes e Folio in <nome progetto>
->>>>>>> 4b6b99016 (first commit)
 
 ## ⚠️ ATTENZIONE CRITICA
 
@@ -18,9 +13,6 @@
 
 ## Struttura del Progetto
 
-<<<<<<< HEAD
-Il progetto SaluteOra utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
-=======
 Il progetto  utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
 Il progetto <nome progetto> utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
 Il progetto  utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
@@ -194,7 +186,6 @@ config('theme.views_path') // Output: "Themes/One/resources/views"
 ## Struttura del Progetto
 
 Il progetto <nome progetto> utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
->>>>>>> 4b6b99016 (first commit)
 
 ```
 /laravel/
@@ -351,7 +342,6 @@ config('theme.views_path') // Output: "Themes/One/resources/views"
 - [Documentazione Laravel Folio](https://laravel.com/docs/folio)
 - [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 - Configurazione Theme: `/laravel/config/theme.php`
-=======
 ---
 module: theme
 topic: struttura-themes-folio
@@ -359,4 +349,3 @@ canonical: ../../../Themes/docs/shared-components/struttura-themes-folio.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/struttura-themes-folio.md
->>>>>>> dev

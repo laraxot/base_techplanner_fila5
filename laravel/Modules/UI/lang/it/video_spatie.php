@@ -9,37 +9,19 @@ return [
             'description' => 'img_uuid',
             'helper_text' => 'img_uuid',
             'placeholder' => 'img_uuid',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'video' => [
             'label' => 'video',
             'description' => 'video',
             'helper_text' => 'video',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'caption' => [
             'label' => 'caption',
             'description' => 'caption',
             'helper_text' => 'caption',
             'placeholder' => 'caption',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -65,11 +47,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Video Spatie',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
 ];

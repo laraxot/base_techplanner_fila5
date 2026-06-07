@@ -76,15 +76,8 @@ Use one of these patterns for inter-module communication:
    ```php
    // In source module
    event(new TenantCreated($tenant));
-<<<<<<< HEAD
-<<<<<<< HEAD
    
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
    
->>>>>>> dev
    // In consuming module
    class UpdateBillingOnTenantCreated
    {
@@ -99,15 +92,8 @@ Use one of these patterns for inter-module communication:
    ```php
    // In service provider
    $this->app->bind(TenantBillingServiceInterface::class, TenantBillingService::class);
-<<<<<<< HEAD
-<<<<<<< HEAD
    
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
    
->>>>>>> dev
    // In consuming class
    public function __construct(
        private TenantBillingServiceInterface $billingService
@@ -184,30 +170,16 @@ sequenceDiagram
     participant App as Application Layer
     participant Domain as Domain Layer
     participant Infra as Infrastructure
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     UI->>App: CreateTenantRequest
     App->>Domain: CreateTenantCommand
     Domain->>Infra: TenantRepository::create()
     Infra-->>Domain: Tenant
     Domain-->>App: TenantCreated event
     App-->>UI: TenantResource
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     Note over Domain,Infra: Transaction boundary
     Note over Domain: Business rules validation
     Note over App: Event dispatch
@@ -216,11 +188,6 @@ sequenceDiagram
 ## Related Documentation
 
 - [Module Structure](structure.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Event System](../xot/docs/event_system.md)
-- [Testing Strategy](../testing/readme.md)
-=======
 - [Event System](../Xot/docs/event_system.md)
 - [Testing Strategy](../testing/README.md)
 - [API Documentation](../api.md)
@@ -418,11 +385,8 @@ sequenceDiagram
 - [Module Structure](structure.md)
 - [Event System](../Xot/docs/event_system.md)
 - [Testing Strategy](../testing/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Event System](../xot/docs/event_system.md)
 - [Testing Strategy](../testing/readme.md)
->>>>>>> dev
 - [API Documentation](../api.md)
 
 ## References

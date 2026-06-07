@@ -8,18 +8,12 @@
         <img
             class="absolute top-0 left-0 w-full h-full p-0 m-0 opacity-20 object-center object-cover"
             src="{{ $post->getMainImage() }}"
-<<<<<<< HEAD
-<<<<<<< HEAD
             alt="{{ $title ?? $name ?? "Immagine" }}"
-=======
-            alt=""
->>>>>>> 4b6b99016 (first commit)
-=======
-            alt="{{ $title ?? $name ?? "Immagine" }}"
->>>>>>> dev
         >
         <div class="relative z-1 p-4">
             {{ $text ?: $post->title }}
         </div>
     </a>
 @endif
+
+

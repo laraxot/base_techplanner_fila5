@@ -17,11 +17,8 @@ package-lock.json
 # Backup files
 *.backup
 *.backup.*
-<<<<<<< HEAD
-=======
 *.backup-*
 *.backup_*
->>>>>>> dev
 *.bak
 *.old
 *.old1
@@ -47,10 +44,7 @@ package-lock.json
 # PHPStan documentation
 docs/phpstan/
 
-<<<<<<< HEAD
-=======
 _docs/
 
 # Local generated documentation archives
 archive/
->>>>>>> dev

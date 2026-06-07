@@ -7,26 +7,13 @@ return [
         'created_at' => [
             'fields' => 'created_at',
             'label' => 'Data di creazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'values' => [
             'fields' => 'values',
             'label' => 'Valori',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -54,32 +41,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'value' => [
-            'label' => 'Valore',
-        ],
-        'email' => [
-            'label' => 'Email',
-        ],
-        'password' => [
-            'label' => 'Password',
-        ],
-        'remember' => [
-            'label' => 'Ricordami',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'assetType' => [
             'name' => [
                 'label' => 'Tipo di risorsa',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -120,38 +86,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'description' => [
-            'label' => 'Descrizione',
-        ],
-        'parent_id' => [
-            'label' => 'ID genitore',
-        ],
-        'technician_name' => [
-            'label' => 'Nome tecnico',
-        ],
-        'serial_number' => [
-            'label' => 'Numero di serie',
-        ],
-        'brand' => [
-            'label' => 'Marca',
-        ],
-        'model' => [
-            'label' => 'Modello',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'area' => [
             'name' => [
                 'label' => 'Area',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -168,26 +107,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'save' => [
-            'label' => 'Salva',
-        ],
-        'cancel' => [
-            'label' => 'Annulla',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'creator' => [
             'name' => [
                 'label' => 'Creatore',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -234,77 +158,29 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'isActive' => [
-            'label' => 'Attivo',
-        ],
-        'password_expires_at' => [
-            'label' => 'Scadenza password',
-        ],
-        'email_verified_at' => [
-            'label' => 'Email verificata il',
-        ],
-        'file' => [
-            'label' => 'File',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima modifica',
-        ],
-        'name' => [
-            'label' => 'Nome',
-        ],
-        'id' => [
-            'label' => 'ID',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'roles' => [
             'name' => [
                 'label' => 'roles.name',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'role' => [
             'name' => [
                 'label' => 'role.name',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'teams' => [
             'name' => [
                 'label' => 'teams.name',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -357,35 +233,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'determina' => [
-            'label' => 'determina',
-        ],
-        'matr' => [
-            'label' => 'matr',
-        ],
-        'cognome' => [
-            'label' => 'cognome',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -408,10 +255,6 @@ return [
             'label' => 'Crea un altro',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -421,9 +264,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

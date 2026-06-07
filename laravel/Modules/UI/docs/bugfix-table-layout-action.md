@@ -140,34 +140,18 @@ php -l Modules/UI/app/Filament/Actions/Table/TableLayoutToggleTableAction.php
 php artisan tinker --execute="TableLayoutToggleTableAction::make('test');"
 
 # Testare l'URL che causava l'errore
-<<<<<<< HEAD
-<<<<<<< HEAD
-curl -I http://127.0.0.1:8001/quaeris/admin/gaia/survey-pdfs
-=======
 curl -I http://127.0.0.1:8001/<nome progetto>/admin/gaia/survey-pdfs
->>>>>>> 4b6b99016 (first commit)
-=======
 curl -I http://127.0.0.1:8001/Quaeris/admin/gaia/survey-pdfs
->>>>>>> dev
 ```
 
 ### Risultati Test
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-✅ **Sintassi PHP**: Nessun errore di sintassi  
-✅ **Istanziazione**: Classe istanziabile correttamente  
-✅ **URL Test**: Errore originale risolto (ora errore di autenticazione, conferma che il fix ha funzionato)  
-=======
 ✅ **Sintassi PHP**: Nessun errore di sintassi
 ✅ **Istanziazione**: Classe istanziabile correttamente
 ✅ **URL Test**: Errore originale risolto (ora errore di autenticazione, conferma che il fix ha funzionato)
->>>>>>> 4b6b99016 (first commit)
-=======
 ✅ **Sintassi PHP**: Nessun errore di sintassi  
 ✅ **Istanziazione**: Classe istanziabile correttamente  
 ✅ **URL Test**: Errore originale risolto (ora errore di autenticazione, conferma che il fix ha funzionato)  
->>>>>>> dev
 ✅ **PHPStan**: Nessun errore di linting rilevato
 
 ## Impatto
@@ -185,9 +169,6 @@ curl -I http://127.0.0.1:8001/Quaeris/admin/gaia/survey-pdfs
 - Supporta il metodo statico `make()` per l'istanziazione
 - Compatibile con il sistema di layout delle tabelle Filament
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ## Aggiornamento PHPStan
 
 - **Problema**: l'azione `TableLayoutToggleHeaderAction` accedeva a `$livewire->layoutView` senza un tipo esplicito, causando l'errore `property.notFound` a livello PHPStan 10.
@@ -195,9 +176,6 @@ curl -I http://127.0.0.1:8001/Quaeris/admin/gaia/survey-pdfs
 - **Risultato**: eliminato l'errore statico garantendo type safety sulle azioni di header e allineamento con la regola “fix, don’t ignore”.
 - **Verifica**: `php -d memory_limit=4G ./vendor/bin/phpstan analyse Modules/UI --memory-limit=4G --no-progress`
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ## Riferimenti
 
 - [Interfaccia HasTableLayout](./HasTableLayout.php)
@@ -206,21 +184,12 @@ curl -I http://127.0.0.1:8001/Quaeris/admin/gaia/survey-pdfs
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Modulo**: UI  
-**Tipo**: Bug Fix  
-**Priorità**: Alta  
-=======
 **Data**: 27 Gennaio 2025
 **Modulo**: UI
 **Tipo**: Bug Fix
 **Priorità**: Alta
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data**: 27 Gennaio 2025  
 **Modulo**: UI  
 **Tipo**: Bug Fix  
 **Priorità**: Alta  
->>>>>>> dev
 **Stato**: ✅ Risolto

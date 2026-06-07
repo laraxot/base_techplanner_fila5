@@ -472,11 +472,8 @@ User Module
 
 ---
 
-<<<<<<< HEAD
 **Last Updated**: 2025-10-01
 **Next Review**: 2025-11-01
-=======
->>>>>>> dev
 **Status**: 🚧 ACTIVE DEVELOPMENT
 **Confidence Level**: 98%
 

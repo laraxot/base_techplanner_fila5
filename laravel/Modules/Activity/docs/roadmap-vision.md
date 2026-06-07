@@ -1,12 +1,6 @@
 # Activity Module - Complete Roadmap 2026
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Generated**: 2026-01-02
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Status**: Event Sourcing & Audit Foundation
 **Methodology**: Super Mucca (DRY + KISS + Deep Understanding)
 **PHPStan Level**: 10 ✅ (0 errors)
@@ -252,11 +246,7 @@ class Activity extends SpatieActivity
 #### **2.2 Intelligent Activity Analytics**
 - Implement machine learning for anomaly detection
 - Add user behavior pattern recognition
-<<<<<<< HEAD
-- Create predictive analytics for system usage
-=======
 - Create <nome progetto>ive analytics for system usage
->>>>>>> dev
 - Add automated security alerting
 
 #### **2.3 Advanced Reporting System**
@@ -318,11 +308,7 @@ class Activity extends SpatieActivity
 #### **5. Void (Intelligence)**
 *"From the emptiness of raw data, wisdom emerges"*
 - Pattern recognition in activities
-<<<<<<< HEAD
-- Predictive analytics
-=======
 - <nome progetto>ive analytics
->>>>>>> dev
 - Anomaly detection
 
 ### **The Activity Mantras**
@@ -426,54 +412,26 @@ class Activity extends SpatieActivity
 ## 📝 **DECISION LOG**
 
 ### **Snapshot Strategy Decision**
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Date**: 2026-01-02
->>>>>>> 4b6b99016 (first commit)
-=======
 **Date**: [DATE]
->>>>>>> dev
 **Decision**: Create snapshots every 50 events automatically
 **Rationale**: Balance memory usage with snapshot storage overhead
 
 ### **Tenant Isolation Decision**
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Date**: 2026-01-02
->>>>>>> 4b6b99016 (first commit)
-=======
 **Date**: [DATE]
->>>>>>> dev
 **Decision**: Use global scopes with automatic tenant_id injection
 **Rationale**: Transparent isolation without code changes in existing modules
 
 ### **Performance Optimization Decision**
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Date**: 2026-01-02
->>>>>>> 4b6b99016 (first commit)
-=======
 **Date**: [DATE]
->>>>>>> dev
 **Decision**: Partition activities by month, index by causer/subject
 **Rationale**: Optimize for most common query patterns
 
 ### **Event Sourcing Integration Decision**
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Date**: 2026-01-02
->>>>>>> 4b6b99016 (first commit)
-=======
 **Date**: [DATE]
->>>>>>> dev
 **Decision**: Keep Spatie ActivityLog and Event Sourcing separate but complementary
 **Rationale**: Different use cases - ActivityLog for audit, Event Sourcing for state
 
@@ -544,11 +502,7 @@ class User extends BaseUser
     }
 }
 
-<<<<<<< HEAD
-// Integration with Quaeris module
-=======
 // Integration with healthcare_app module
->>>>>>> dev
 class Survey extends BaseModel
 {
     public function publish()

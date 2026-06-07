@@ -68,12 +68,8 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 #### Problema 2: ⚠️ Type hints mancanti in Contact model
 
-<<<<<<< HEAD
-**File**: `Modules/Quaeris/app/Models/Contact.php` (809 righe!)
-=======
 **File**: `Modules/healthcare_app/app/Models/Contact.php` (809 righe!)
 **File**: `Modules/ModuloEsempio/app/Models/Contact.php` (809 righe!)
->>>>>>> dev
 
 **Errori PHPStan Level 10**:
 ```
@@ -111,12 +107,8 @@ if ($body_html === null) { ... }
 |--------|--------------|-----------------|--------|
 | User | 16 | 0 | ✅ |
 | Xot | 16 | 0 | ✅ |
-<<<<<<< HEAD
-| Quaeris | 21+ | 21 | ⚠️ Necessita refactoring Contact |
-=======
 | healthcare_app | 21+ | 21 | ⚠️ Necessita refactoring Contact |
 | ModuloEsempio | 21+ | 21 | ⚠️ Necessita refactoring Contact |
->>>>>>> dev
 | Gdpr | 6 | 0 | ✅ |
 | Notify | 8 | 0 | ✅ |
 
@@ -159,12 +151,8 @@ class Notification extends BaseModel // Eredita $connection = 'user'
 
 **Fix applicato**:
 - User module: 7 file (Notification, SocialiteUser, OauthAccessToken, AuthenticationLog, BaseTeamUser, Membership, TenantUser)
-<<<<<<< HEAD
-- Quaeris module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
-=======
 - healthcare_app module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
 - ModuloEsempio module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
->>>>>>> dev
 - Altri moduli: ~51 file
 
 **Comando usato**:
@@ -304,12 +292,8 @@ protected function casts(): array
 
 ### Violazione KISS #1: ❌ Contact.php - Complessità elevata (CRITICA)
 
-<<<<<<< HEAD
-**File**: `Modules/Quaeris/app/Models/Contact.php`
-=======
 **File**: `Modules/healthcare_app/app/Models/Contact.php`
 **File**: `Modules/ModuloEsempio/app/Models/Contact.php`
->>>>>>> dev
 **Righe**: 809 (!!!)
 **Metodi**: 40+
 
@@ -370,12 +354,8 @@ Contact.php (809 lines) →
 
 ### Violazione KISS #2: ❌ QuestionChart.php - Complessità alta
 
-<<<<<<< HEAD
-**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
-=======
 **File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
 **File**: `Modules/ModuloEsempio/app/Models/QuestionChart.php`
->>>>>>> dev
 **Righe**: 882 (!)
 
 **Stesso problema di Contact.php**
@@ -457,23 +437,15 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 **Moduli fixati**:
 - **User**: 7 modelli
-<<<<<<< HEAD
-- **Quaeris**: 5 modelli
-=======
 - **healthcare_app**: 5 modelli
 - **ModuloEsempio**: 5 modelli
->>>>>>> dev
 - **Notify**: ~8 modelli
 - **Altri**: ~43 modelli
 
 **Esempio comando**:
 ```bash
-<<<<<<< HEAD
-cd Modules/Quaeris/app/Models
-=======
 cd Modules/healthcare_app/app/Models
 cd Modules/ModuloEsempio/app/Models
->>>>>>> dev
 for f in *.php; do
   if grep -q "extends BaseModel" "$f"; then
     sed -i '/^[[:space:]]*protected \$connection = /d' "$f"
@@ -492,12 +464,8 @@ done
 
 **Comando**:
 ```bash
-<<<<<<< HEAD
-vendor/bin/pint Modules/User/app/Models Modules/Quaeris/app/Models --quiet
-=======
 vendor/bin/pint Modules/User/app/Models Modules/healthcare_app/app/Models --quiet
 vendor/bin/pint Modules/User/app/Models Modules/ModuloEsempio/app/Models --quiet
->>>>>>> dev
 ```
 
 **Risultato**:
@@ -909,23 +877,15 @@ $activeUsers = User::active()->get(); // ✅ Works!
 ```bash
 ./vendor/bin/phpstan analyse Modules/User/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/Xot/app/Models --level=10
-<<<<<<< HEAD
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Models --level=10
-=======
 ./vendor/bin/phpstan analyse Modules/healthcare_app/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/ModuloEsempio/app/Models --level=10
->>>>>>> dev
 ```
 
 **Results**:
 - User: ✅ 0 errors (dopo fix)
 - Xot: ✅ 0 errors (dopo fix)
-<<<<<<< HEAD
-- Quaeris: ⚠️ 21 errors (Contact.php - needs refactoring)
-=======
 - healthcare_app: ⚠️ 21 errors (Contact.php - needs refactoring)
 - ModuloEsempio: ⚠️ 21 errors (Contact.php - needs refactoring)
->>>>>>> dev
 
 ### Manual Code Review
 
@@ -986,18 +946,10 @@ Con il refactoring di Contact e creazione scope traits: **→ 92% - Eccellente!*
 ## Related Documentation
 
 - [DRY/KISS Model Refactoring (2025-10-15)](./dry-kiss-model-refactoring-2025-10-15.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Model Inheritance Rules (User Module)](../../user/docs/model-inheritance-rules.md)
-- [Model Usage in Themes](../../../themes/zero/docs/model-usage-in-themes.md)
-=======
 - [Model Inheritance Rules (User Module)](../../User/docs/model-inheritance-rules.md)
 - [Model Usage in Themes](../../../Themes/Zero/docs/model-usage-in-themes.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Model Inheritance Rules (User Module)](../../user/docs/model-inheritance-rules.md)
 - [Model Usage in Themes](../../../themes/zero/docs/model-usage-in-themes.md)
->>>>>>> dev
 - [Duplicate Methods Analysis](./duplicate-methods-analysis.md)
 
 ---

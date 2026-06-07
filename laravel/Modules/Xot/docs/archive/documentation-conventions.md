@@ -65,18 +65,10 @@
 
 2. **Da root a modulo**: La documentazione root deve linkare ai documenti specifici dei moduli:
    ```markdown
-<<<<<<< HEAD
-<<<<<<< HEAD
-   Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/docs/nome_documento.md)
-   Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/project_docs/nome_documento.md)
-=======
    Vedi anche: [Implementazione nel modulo Xot](/laravel/Modules/Xot/docs/nome_documento.md)
    Vedi anche: [Implementazione nel modulo Xot](/laravel/Modules/Xot/project_docs/nome_documento.md)
->>>>>>> 4b6b99016 (first commit)
-=======
    Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/docs/nome_documento.md)
    Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/project_docs/nome_documento.md)
->>>>>>> dev
    ```
 
 ## Manutenzione della documentazione
@@ -114,17 +106,11 @@ Utilizzare script nella cartella `bashscripts` per automatizzare le verifiche e 
 
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Documentazione generale](../../../project_docs/documentation_rules.md)
 - [Convenzioni di naming in generale](../../../project_docs/naming_conventions.md)
 - [Regole per ServiceProvider](../../indennitacondizionilavoro/project_docs/service_provider.md)
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
 
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Giugno 2025*
 - [Documentazione generale](../../../project_docs/documentation_rules.md)
 - [Convenzioni di naming in generale](../../../project_docs/naming_conventions.md)
@@ -132,9 +118,6 @@ Utilizzare script nella cartella `bashscripts` per automatizzare le verifiche e 
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
 
 *Ultimo aggiornamento: Giugno 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 # Convenzioni per la documentazione in Laraxot PTVX
 
 ## Convenzioni di naming
@@ -201,15 +184,8 @@ Utilizzare script nella cartella `bashscripts` per automatizzare le verifiche e 
 
 2. **Da root a modulo**: La documentazione root deve linkare ai documenti specifici dei moduli:
    ```markdown
-<<<<<<< HEAD
-<<<<<<< HEAD
-   Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/docs/nome_documento.md)
-=======
    Vedi anche: [Implementazione nel modulo Xot](/laravel/Modules/Xot/docs/nome_documento.md)
->>>>>>> 4b6b99016 (first commit)
-=======
    Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/docs/nome_documento.md)
->>>>>>> dev
    ```
 
 ## Manutenzione della documentazione
@@ -245,23 +221,11 @@ Utilizzare script nella cartella `bashscripts` per automatizzare le verifiche e 
 
 ## Collegamenti a documentazione correlata
 
-<<<<<<< HEAD
-- [Documentazione generale](../../../docs/documentation_rules.md)
-- [Convenzioni di naming in generale](../../../docs/naming_conventions.md)
-<<<<<<< HEAD
-- [Regole per ServiceProvider](../../indennitacondizionilavoro/docs/service_provider.md)
-- [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
-
-=======
 - [Regole per ServiceProvider](../../IndennitaCondizioniLavoro/docs/service_provider.md)
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
 
 *Ultimo aggiornamento: Giugno 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione generale](../../../../docs/documentation_rules.md)
 - [Convenzioni di naming in generale](../../../../docs/naming_conventions.md)
 - [Regole per ServiceProvider](../../indennitacondizionilavoro/docs/service_provider.md)
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
-
->>>>>>> dev

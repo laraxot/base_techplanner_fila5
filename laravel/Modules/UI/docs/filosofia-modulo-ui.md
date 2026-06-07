@@ -1,14 +1,7 @@
 # Analisi Approfondita del Modulo UI
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-> **Generato**: [DATE]
-=======
 > **Generato**: 2025-12-24
->>>>>>> 4b6b99016 (first commit)
-=======
 > **Generato**: [DATE]
->>>>>>> dev
 > **Scopo**: Documentare la filosofia, logica, business logic e architettura del modulo UI
 
 ---

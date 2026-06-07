@@ -8,37 +8,16 @@ return [
             'buttons' => [
                 'refresh' => 'Yenile',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'heading' => 'Uygulama Sağlığı',
-=======
-
-            'heading' => 'Uygulama Sağlığı',
-
->>>>>>> 4b6b99016 (first commit)
-=======
-            'heading' => 'Uygulama Sağlığı',
->>>>>>> dev
             'navigation' => [
                 'group' => 'Ayarlar',
                 'label' => 'Uygulama Sağlığı',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             'notifications' => [
                 'check_results' => 'Sonuçları kontrol et.',
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -52,9 +31,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -36,12 +36,8 @@
 - Multi-tenant aware models
 - Social authentication integration
 
-<<<<<<< HEAD
-#### 3. **Quaeris Module - Business Core**
-=======
 #### 3. **healthcare_app Module - Business Core**
 #### 3. **ExternalProject Module - Business Core**
->>>>>>> dev
 **Role**: Survey management, reporting, analytics
 **Priority**: 0 (Standard priority)
 **Dependencies**: Xot, User, Geo, Media
@@ -233,12 +229,8 @@
 #### 15. **Limesurvey Module - External Integration**
 **Role**: Limesurvey integration, survey synchronization
 **Priority**: 0 (Standard priority)
-<<<<<<< HEAD
-**Dependencies**: Xot, Quaeris
-=======
 **Dependencies**: Xot, healthcare_app
 **Dependencies**: Xot, ExternalProject
->>>>>>> dev
 
 **Key Components**:
 - `LimeSurvey`, `LimeQuestion` models
@@ -286,12 +278,8 @@
 Xot (Foundation)
 ├── User (Security)
 │   └── Tenant (Multi-tenancy)
-<<<<<<< HEAD
-├── Quaeris (Business Core)
-=======
 ├── healthcare_app (Business Core)
 ├── ExternalProject (Business Core)
->>>>>>> dev
 │   ├── Geo (Locations)
 │   ├── Media (Files)
 │   └── Limesurvey (External Integration)
@@ -400,12 +388,8 @@ public function register(): void
 #### ⚠️ Needs Attention
 - **Cms**: Mixed file structure issues
 - **UI**: Mixed test structure issues
-<<<<<<< HEAD
-- **Quaeris**: Missing module.json description
-=======
 - **healthcare_app**: Missing module.json description
 - **ExternalProject**: Missing module.json description
->>>>>>> dev
 
 #### 🔧 Technical Debt
 - **Translation consistency**: Some .navigation placeholders
@@ -416,12 +400,8 @@ public function register(): void
 
 #### High-Usage Modules
 - **User**: Authentication checks on every request
-<<<<<<< HEAD
-- **Quaeris**: Survey processing and reporting
-=======
 - **healthcare_app**: Survey processing and reporting
 - **ExternalProject**: Survey processing and reporting
->>>>>>> dev
 - **Media**: File uploads and conversions
 - **Job**: Background processing
 
@@ -452,14 +432,7 @@ public function register(): void
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Analysis Date**: [DATE]
-=======
 **Analysis Date**: 2025-11-17
->>>>>>> 4b6b99016 (first commit)
-=======
 **Analysis Date**: [DATE]
->>>>>>> dev
 **Architecture Health**: Good with some technical debt
 **Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules

@@ -13,15 +13,9 @@ use Modules\Xot\Database\Factories\CacheLockFactory;
  *
  * @property string $key
  * @property string $owner
-<<<<<<< HEAD
- * @property int $expiration
- *
- * @method static CacheLockFactory factory($count = null, $state = [])
-=======
  * @property int    $expiration
  *
  * @method static CacheLockFactory          factory($count = null, $state = [])
->>>>>>> dev
  * @method static Builder<static>|CacheLock newModelQuery()
  * @method static Builder<static>|CacheLock newQuery()
  * @method static Builder<static>|CacheLock query()
@@ -29,15 +23,9 @@ use Modules\Xot\Database\Factories\CacheLockFactory;
  * @method static Builder<static>|CacheLock whereKey($value)
  * @method static Builder<static>|CacheLock whereOwner($value)
  *
-<<<<<<< HEAD
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $deleter
- * @property-read ProfileContract|null $updater
-=======
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
->>>>>>> dev
  *
  * @mixin \Eloquent
  */

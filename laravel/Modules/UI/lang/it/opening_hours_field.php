@@ -16,57 +16,25 @@ return [
                 'helper_text' => 'Orario di apertura del lunedì pomeriggio',
             ],
             'morning_from' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '08:00',
                 'helper_text' => '',
                 'description' => 'monday.morning_from',
             ],
             'morning_to' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '12:00',
                 'helper_text' => '',
                 'description' => 'monday.morning_to',
             ],
             'afternoon_from' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '14:00',
                 'helper_text' => '',
                 'description' => 'monday.afternoon_from',
             ],
             'afternoon_to' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '18:00',
                 'helper_text' => '',
                 'description' => 'monday.afternoon_to',
@@ -81,19 +49,10 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del lunedì',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'tuesday' => [
             'morning' => [
@@ -107,57 +66,25 @@ return [
                 'helper_text' => 'Orario di apertura del martedì pomeriggio',
             ],
             'morning_from' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '08:00',
                 'helper_text' => '',
                 'description' => 'tuesday.morning_from',
             ],
             'morning_to' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '12:00',
                 'helper_text' => '',
                 'description' => 'tuesday.morning_to',
             ],
             'afternoon_from' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '14:00',
                 'helper_text' => '',
                 'description' => 'tuesday.afternoon_from',
             ],
             'afternoon_to' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '18:00',
                 'helper_text' => '',
                 'description' => 'tuesday.afternoon_to',
@@ -172,19 +99,10 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del martedì',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'wednesday' => [
             'morning' => [
@@ -198,57 +116,25 @@ return [
                 'helper_text' => 'Orario di apertura del mercoledì pomeriggio',
             ],
             'morning_from' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '08:00',
                 'helper_text' => '',
                 'description' => 'wednesday.morning_from',
             ],
             'morning_to' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '12:00',
                 'helper_text' => '',
                 'description' => 'wednesday.morning_to',
             ],
             'afternoon_from' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '14:00',
                 'helper_text' => '',
                 'description' => 'wednesday.afternoon_from',
             ],
             'afternoon_to' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '18:00',
                 'helper_text' => '',
                 'description' => 'wednesday.afternoon_to',
@@ -263,19 +149,10 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del mercoledì',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'thursday' => [
             'morning' => [
@@ -289,57 +166,25 @@ return [
                 'helper_text' => 'Orario di apertura del giovedì pomeriggio',
             ],
             'morning_from' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '08:00',
                 'helper_text' => '',
                 'description' => 'thursday.morning_from',
             ],
             'morning_to' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '12:00',
                 'helper_text' => '',
                 'description' => 'thursday.morning_to',
             ],
             'afternoon_from' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '14:00',
                 'helper_text' => '',
                 'description' => 'thursday.afternoon_from',
             ],
             'afternoon_to' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '18:00',
                 'helper_text' => '',
                 'description' => 'thursday.afternoon_to',
@@ -354,19 +199,10 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del giovedì',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'friday' => [
             'morning' => [
@@ -380,57 +216,25 @@ return [
                 'helper_text' => 'Orario di apertura del venerdì pomeriggio',
             ],
             'morning_from' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '08:00',
                 'helper_text' => '',
                 'description' => 'friday.morning_from',
             ],
             'morning_to' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '12:00',
                 'helper_text' => '',
                 'description' => 'friday.morning_to',
             ],
             'afternoon_from' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '14:00',
                 'helper_text' => '',
                 'description' => 'friday.afternoon_from',
             ],
             'afternoon_to' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '18:00',
                 'helper_text' => '',
                 'description' => 'friday.afternoon_to',
@@ -445,19 +249,10 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del venerdì',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'saturday' => [
             'morning' => [
@@ -471,57 +266,25 @@ return [
                 'helper_text' => 'Orario di apertura del sabato pomeriggio',
             ],
             'morning_from' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '08:00',
                 'helper_text' => '',
                 'description' => 'saturday.morning_from',
             ],
             'morning_to' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '12:00',
                 'helper_text' => '',
                 'description' => 'saturday.morning_to',
             ],
             'afternoon_from' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '14:00',
                 'helper_text' => '',
                 'description' => 'saturday.afternoon_from',
             ],
             'afternoon_to' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '18:00',
                 'helper_text' => '',
                 'description' => 'saturday.afternoon_to',
@@ -536,19 +299,10 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del sabato',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'sunday' => [
             'morning' => [
@@ -562,54 +316,22 @@ return [
                 'helper_text' => 'Orario di apertura della domenica pomeriggio',
             ],
             'morning_from' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '08:00',
                 'helper_text' => '',
             ],
             'morning_to' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '12:00',
                 'helper_text' => '',
             ],
             'afternoon_from' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '14:00',
                 'helper_text' => '',
             ],
             'afternoon_to' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
-                'label' => 'Orario',
->>>>>>> dev
                 'placeholder' => '18:00',
                 'helper_text' => '',
             ],
@@ -623,49 +345,24 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane della domenica',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'schedule' => [
             'label' => 'Programma Orari',
             'placeholder' => 'Configura gli orari di apertura',
             'helper_text' => 'Gestione completa degli orari di disponibilità',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'availability' => [
             'label' => 'Disponibilità',
             'placeholder' => 'Imposta la tua disponibilità',
             'helper_text' => 'Configura quando sei disponibile per appuntamenti',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'sections' => [
@@ -879,10 +576,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Opening Hours Field',
     'plural_label' => 'Opening Hours Field (Plurale)',
     'navigation' => [
@@ -896,9 +589,4 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

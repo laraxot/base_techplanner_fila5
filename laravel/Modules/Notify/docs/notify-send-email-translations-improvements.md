@@ -5,25 +5,11 @@
 Documento che descrive la sistemazione completa dei file di traduzione per la funzionalità `send_email.php` del modulo Notify, con risoluzione di problemi critici e implementazione di best practices.
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Modulo Notify](/laravel/modules/notify/docs/index.md)
-- [Best Practices Traduzioni](/docs/translation-system-rules.md)
-- [Convenzioni PHP](/docs/php-best-practices.md)
-- [Regole Qualità Codice](/docs/code-quality-rules.md)
-- [Documentazione Sistema Notifiche](/laravel/modules/notify/docs/notification-system.md)
-=======
-=======
->>>>>>> dev
 - [Documentazione Modulo Notify](/laravel/Modules/Notify/docs/INDEX.md)
 - [Best Practices Traduzioni](/docs/translation-system-rules.md)
 - [Convenzioni PHP](/docs/php-best-practices.md)
 - [Regole Qualità Codice](/docs/code-quality-rules.md)
 - [Documentazione Sistema Notifiche](/laravel/Modules/Notify/docs/notification-system.md)
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Problemi Identificati e Risolti
 

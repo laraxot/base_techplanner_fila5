@@ -15,24 +15,13 @@ return [
             'placeholder' => 'created_from',
             'helper_text' => 'created_from',
             'description' => 'created_from',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'created_until' => [
             'label' => 'created_until',
             'placeholder' => 'created_until',
             'helper_text' => 'created_until',
             'description' => 'created_until',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -58,11 +47,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Filter Form',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
 ];

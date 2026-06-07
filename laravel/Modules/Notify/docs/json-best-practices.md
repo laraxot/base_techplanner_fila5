@@ -206,21 +206,12 @@ protected function rollback(): void
 
 ## Collegamenti Correlati
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Migrazioni](./migration_rules.md)
-- [Gestione Errori](./error_handling.md)
-- [Best Practices Database](./database_best_practices.md)
-=======
 - [Documentazione Migrazioni](./MIGRATION_RULES.md)
 - [Gestione Errori](./ERROR_HANDLING.md)
 - [Best Practices Database](./DATABASE_BEST_PRACTICES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione Migrazioni](./migration_rules.md)
 - [Gestione Errori](./error_handling.md)
 - [Best Practices Database](./database_best_practices.md)
->>>>>>> dev
 
 ## Note Importanti
 

@@ -375,8 +375,4 @@ Create `/faq` page with accordion component:
 ---
 
 **Document Owner**: Sixteen Theme Team
-<<<<<<< HEAD
-**Last Updated**: 2025-02-02
-=======
->>>>>>> dev
 **Status**: Active Development - AGID Compliance in Progress

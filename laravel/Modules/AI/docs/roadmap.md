@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# Roadmap for AI
-
-- [ ] Initial roadmap created automatically.
-=======
 # 🎯 AI MODULE - ROADMAP 2025
 
 **Modulo**: AI ([Description])  
@@ -217,4 +212,3 @@ AI Module
 ---
 
 *Questa roadmap è specifica per il modulo AI e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
->>>>>>> dev

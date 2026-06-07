@@ -14,14 +14,7 @@ return [
                 'mimes' => 'Il file deve essere un documento PDF o un\'immagine',
                 'max' => 'La dimensione massima del file è 10MB',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'prescription' => [
             'label' => 'Ricetta Medica',
@@ -33,14 +26,7 @@ return [
                 'mimes' => 'Formati supportati: PDF, JPG, PNG',
                 'max' => 'Dimensione massima: 10MB',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'medical_report' => [
             'label' => 'Referto Medico',
@@ -51,14 +37,7 @@ return [
                 'mimes' => 'Formati supportati: PDF, JPG, PNG',
                 'max' => 'Dimensione massima: 10MB',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'certificate' => [
             'label' => 'Certificato1',
@@ -69,14 +48,7 @@ return [
                 'mimes' => 'Formati supportati: PDF, JPG, PNG',
                 'max' => 'Dimensione massima: 10MB',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'consent_form' => [
             'label' => 'Modulo di Consenso',
@@ -87,14 +59,7 @@ return [
                 'mimes' => 'Formati supportati: PDF, DOC, DOCX',
                 'max' => 'Dimensione massima: 10MB',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'xray_image' => [
             'label' => 'Immagine Radiografica',
@@ -105,14 +70,7 @@ return [
                 'mimes' => 'Formati supportati: JPG, PNG, DICOM',
                 'max' => 'Dimensione massima: 20MB',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'treatment_plan' => [
             'label' => 'Piano di Trattamento',
@@ -123,14 +81,7 @@ return [
                 'mimes' => 'Formati supportati: PDF, DOC, DOCX',
                 'max' => 'Dimensione massima: 10MB',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'medical_history' => [
             'label' => 'Storia Clinica',
@@ -141,28 +92,14 @@ return [
                 'mimes' => 'Formati supportati: PDF, DOC, DOCX',
                 'max' => 'Dimensione massima: 10MB',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'doctor_certificate' => [
             'description' => 'doctor_certificate',
             'helper_text' => 'doctor_certificate1',
             'label' => 'doctor_certificate',
             'placeholder' => 'doctor_certificate',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
     ],
     'validation' => [
@@ -177,10 +114,6 @@ return [
         'delete_success' => 'File eliminato con successo',
         'delete_error' => 'Errore durante l\'eliminazione del file',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Attachments Schema',
     'plural_label' => 'Attachments Schema (Plurale)',
     'navigation' => [
@@ -205,9 +138,4 @@ return [
             'label' => 'Elimina Attachments Schema',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

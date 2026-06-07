@@ -8,103 +8,49 @@ return [
             'label' => 'Operazione',
             'placeholder' => 'Seleziona l\'operazione da eseguire',
             'help' => 'Operazione di utilità da eseguire',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'input' => [
             'label' => 'Input',
             'placeholder' => 'Inserisci i dati di input',
             'help' => 'Dati di input per l\'operazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'options' => [
             'label' => 'Opzioni',
             'placeholder' => 'Configura le opzioni dell\'operazione',
             'help' => 'Opzioni per personalizzare l\'operazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'format' => [
             'label' => 'Formato',
             'placeholder' => 'Seleziona il formato di output',
             'help' => 'Formato per l\'output dell\'operazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'precision' => [
             'label' => 'Precisione',
             'placeholder' => 'Inserisci la precisione',
             'help' => 'Precisione per i calcoli numerici',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'units' => [
             'label' => 'Unità',
             'placeholder' => 'Seleziona le unità di misura',
             'help' => 'Unità di misura per i calcoli',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'validation' => [
@@ -217,10 +163,6 @@ return [
         'gpx' => 'GPX',
         'shapefile' => 'Shapefile',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Utilities',
     'plural_label' => 'Utilities (Plurale)',
     'navigation' => [
@@ -245,9 +187,4 @@ return [
             'label' => 'Elimina Utilities',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

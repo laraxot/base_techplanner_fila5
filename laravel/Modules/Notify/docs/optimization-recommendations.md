@@ -222,20 +222,11 @@ php artisan notify:benchmark
 ## Collegamenti
 
 - [Linee Guida Riusabilità](reusability_guidelines.md)
-<<<<<<< HEAD
-- [Piano Implementazione](../../../docs/module_reusability_implementation_plan.md)
-- [Script Controllo](../../../bashscripts/check_module_reusability.sh)
-
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Piano Implementazione](../../../../docs/module_reusability_implementation_plan.md)
 - [Script Controllo](../../../bashscripts/check_module_reusability.sh)
 
 *Ultimo aggiornamento: gennaio 2025*
->>>>>>> dev
 # Raccomandazioni di Ottimizzazione - Modulo Notify
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -464,17 +455,8 @@ php artisan notify:benchmark
 ## Collegamenti
 
 - [Linee Guida Riusabilità](reusability_guidelines.md)
-<<<<<<< HEAD
-- [Piano Implementazione](../../../docs/module_reusability_implementation_plan.md)
-- [Script Controllo](../../../bashscripts/check_module_reusability.sh)
-
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Piano Implementazione](../../../../docs/module_reusability_implementation_plan.md)
 - [Script Controllo](../../../bashscripts/check_module_reusability.sh)
 
 *Ultimo aggiornamento: gennaio 2025*
->>>>>>> dev

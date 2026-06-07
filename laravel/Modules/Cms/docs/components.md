@@ -43,15 +43,8 @@ Il componente Page è uno dei componenti fondamentali del CMS. Per una documenta
 
 ## Collegamenti Bidirezionali
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README](readme.md) - Documentazione principale del modulo
-=======
 - [README](README.md) - Documentazione principale del modulo
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README](readme.md) - Documentazione principale del modulo
->>>>>>> dev
 - [DaisyUI Componenti](daisyui-componenti.md) - Componenti basati su DaisyUI
 - [Componenti Blocchi](componenti-blocchi-contenuto.md) - Componenti per i blocchi di contenuto
 - [Componenti Header](componenti-header.md) - Componenti per l'header
@@ -60,15 +53,8 @@ Il componente Page è uno dei componenti fondamentali del CMS. Per una documenta
 - [Custom Components](custom-components.md) - Creazione di componenti personalizzati
 
 ## Vedi Anche
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Modulo UI](../ui/docs/readme.md) - Componenti UI riutilizzabili
-=======
 - [Modulo UI](../UI/docs/README.md) - Componenti UI riutilizzabili
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Modulo UI](../ui/docs/readme.md) - Componenti UI riutilizzabili
->>>>>>> dev
 - [Namespace Componenti](namespace-componenti-blocchi.md) - Convenzioni di namespace
 - [Standard UI](standard_ui_components.md) - Standard per i componenti UI
 
@@ -82,20 +68,11 @@ Il componente Page è uno dei componenti fondamentali del CMS. Per una documenta
 @see laravel/Modules/Cms/docs/best-practices/page-rendering.md
 
 ## Collegamenti tra versioni di components.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [components.md](laravel/modules/ui/docs/components.md)
 * [components.md](laravel/modules/ui/docs/themes/components.md)
 * [components.md](laravel/modules/cms/docs/components.md)
 * [components.md](laravel/themes/one/docs/components.md)
-<<<<<<< HEAD
-=======
 * [components.md](laravel/Modules/UI/docs/components.md)
 * [components.md](laravel/Modules/UI/docs/themes/components.md)
 * [components.md](laravel/Modules/Cms/docs/components.md)
 * [components.md](laravel/Themes/One/docs/components.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

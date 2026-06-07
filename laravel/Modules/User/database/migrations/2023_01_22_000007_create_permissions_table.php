@@ -5,29 +5,16 @@ declare(strict_types=1);
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Database\Schema\Blueprint;
 // ---- models ---
-<<<<<<< HEAD
-use Modules\Xot\Database\Migrations\XotBaseMigration;
-=======
 use Illuminate\Support\Facades\Schema;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
->>>>>>> dev
 
 /*
  * Class CreatePermissionsTable.
  */
 return new class extends XotBaseMigration {
     /**
-<<<<<<< HEAD
-     * Nome della tabella gestita dalla migrazione.
-     */
-    protected string $table_name = 'permissions';
-
-    /**
-     * Esegue la migrazione.
-=======
      * Run the migrations.
->>>>>>> dev
      */
     public function up(): void
     {
@@ -58,19 +45,6 @@ return new class extends XotBaseMigration {
         $this->tableUpdate(function (Blueprint $table): void {
             // Usa Schema::hasColumn direttamente per verificare esistenza
             $tableName = 'permissions';
-<<<<<<< HEAD
-            if (! Illuminate\Support\Facades\Schema::connection('user')->hasColumn($tableName, 'created_at')
-                && ! Illuminate\Support\Facades\Schema::connection('user')->hasColumn($tableName, 'updated_at')) {
-                $this->updateTimestamps($table);
-            } else {
-                // Se i timestamp esistono già, aggiungi solo i campi user se mancanti
-                $xot = Modules\Xot\Datas\XotData::make();
-                $userClass = $xot->getUserClass();
-                if (! Illuminate\Support\Facades\Schema::connection('user')->hasColumn($tableName, 'updated_by')) {
-                    $table->foreignIdFor($userClass, 'updated_by')->nullable();
-                }
-                if (! Illuminate\Support\Facades\Schema::connection('user')->hasColumn($tableName, 'created_by')) {
-=======
             if (
                 ! Schema::connection('user')->hasColumn($tableName, 'created_at')
                 && ! Schema::connection('user')->hasColumn($tableName, 'updated_at')
@@ -84,7 +58,6 @@ return new class extends XotBaseMigration {
                     $table->foreignIdFor($userClass, 'updated_by')->nullable();
                 }
                 if (! Schema::connection('user')->hasColumn($tableName, 'created_by')) {
->>>>>>> dev
                     $table->foreignIdFor($userClass, 'created_by')->nullable();
                 }
             }

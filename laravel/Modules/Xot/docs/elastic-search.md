@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 https://github.com/matchish/laravel-scout-elasticsearch
 
 https://www.algolia.com/blog/engineering/scout-extended-the-full-power-of-algolia-in-laravel
@@ -37,10 +35,3 @@ https://bestofphp.com/repo/babenkoivan-elastic-scout-driver
 
 
 meilisearch
-
-
-
-
-
->>>>>>> dev
-

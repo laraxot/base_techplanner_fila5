@@ -3,10 +3,7 @@
 ## Riepilogo Lavoro Effettuato
 
 ### Problema Identificato
-<<<<<<< HEAD
-=======
 Durante l'audit delle traduzioni del progetto <main module>, sono state identificate numerose traduzioni italiane presenti in file di lingua tedesca e inglese, causando incoerenza nell'interfaccia utente.
->>>>>>> dev
 Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identificate numerose traduzioni italiane presenti in file di lingua tedesca e inglese, causando incoerenza nell'interfaccia utente.
 
 ### Pattern di Errore
@@ -27,10 +24,7 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 - **File inglesi**: 5 file corretti
 - **Pattern**: `'required' => 'Pflichtfeld'` (DE) / `'required' => 'Required field'` (EN)
 
-<<<<<<< HEAD
-=======
 #### ✅ Modulo <main module>
->>>>>>> dev
 #### ✅ Modulo <nome progetto>
 - **File tedeschi**: 4 file corretti
 - **File inglesi**: 4 file corretti
@@ -138,27 +132,16 @@ Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identi
 
 ### Moduli con Documentazione Aggiornata
 1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
-<<<<<<< HEAD
-=======
 2. **<main module> Module**: `laravel/Modules/<main module>/docs/translation_refactor_summary_2025.md`
->>>>>>> dev
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali Creati
 - [Root Docs: Translation Standards](translation_standards.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Lang Module: Translation Best Practices](../laravel/modules/lang/docs/translation_best_practices.md)
-- [<nome progetto> Module: Translation Guidelines](../laravel/modules/<nome progetto>/docs/translation_guidelines.md)
-=======
 - [Lang Module: Translation Best Practices](../laravel/Modules/Lang/docs/translation_best_practices.md)
 - [<nome progetto> Module: Translation Guidelines](../laravel/Modules/<nome progetto>/docs/translation_guidelines.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Lang Module: Translation Best Practices](../laravel/Modules/Lang/docs/translation_best_practices.md)
 - [<main module> Module: Translation Guidelines](../laravel/Modules/<main module>/docs/translation_guidelines.md)
 - [<nome progetto> Module: Translation Guidelines](../laravel/Modules/<nome progetto>/docs/translation_guidelines.md)
->>>>>>> dev
 
 ## Prevenzione Errori Futuri
 

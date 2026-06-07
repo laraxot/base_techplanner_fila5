@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 # Assets in il progetto
 
 Gli assets sono le risorse statiche (CSS, JavaScript, immagini, font) utilizzate dal tema. Ogni tema può definire i propri assets.
@@ -256,7 +252,3 @@ document.addEventListener('alpine:init', () => {
 * [assets.md](../../../Xot/docs/assets.md)
 * [assets.md](../../../Cms/docs/themes/assets.md)
 * [assets.md](../../../../Themes/One/docs/assets.md)
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev

@@ -3,11 +3,7 @@
 ## Procedura Sistematica per la Standardizzazione
 
 Questo documento fornisce una procedura dettagliata per correggere sistematicamente i file di traduzione nel modulo Notify che non rispettano gli standard di <nome progetto>.
-<<<<<<< HEAD
-Questo documento fornisce una procedura dettagliata per correggere sistematicamente i file di traduzione nel modulo Notify che non rispettano gli standard di SaluteOra.
-=======
 Questo documento fornisce una procedura dettagliata per correggere sistematicamente i file di traduzione nel modulo Notify che non rispettano gli standard di Quaeris.
->>>>>>> dev
 
 ## Passo 1: Analisi del File Esistente
 
@@ -24,13 +20,8 @@ Se il file ha un nome non conforme:
 
 # 1. Creare un nuovo file con il nome corretto
 touch /var/www/html/<nome progetto>/laravel/Modules/Notify/lang/it/nome_corretto.php
-<<<<<<< HEAD
-touch /var/www/html/saluteora/laravel/Modules/Notify/lang/it/nome_corretto.php
-touch /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/nome_corretto.php
-=======
 touch /var/www/html/Quaeris/laravel/Modules/Notify/lang/it/nome_corretto.php
 touch /var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules/Notify/lang/it/nome_corretto.php
->>>>>>> dev
 
 # 2. Copiare e correggere il contenuto
 
@@ -41,16 +32,6 @@ grep -r "nome_errato" /var/www/html/<nome progetto>/laravel/Modules/Notify
 
 # 4. Rimuovere il file con naming errato
 rm /var/www/html/<nome progetto>/laravel/Modules/Notify/lang/it/nome_errato.php
-<<<<<<< HEAD
-grep -r "nome_errato" /var/www/html/saluteora/laravel/Modules/Notify
-
-# 4. Rimuovere il file con naming errato
-rm /var/www/html/saluteora/laravel/Modules/Notify/lang/it/nome_errato.php
-grep -r "nome_errato" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify
-
-# 4. Rimuovere il file con naming errato
-rm /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/nome_errato.php
-=======
 grep -r "nome_errato" /var/www/html/Quaeris/laravel/Modules/Notify
 
 # 4. Rimuovere il file con naming errato
@@ -59,7 +40,6 @@ grep -r "nome_errato" /var/www/html/_bases/base_techplanner_fila5_mono/laravel/M
 
 # 4. Rimuovere il file con naming errato
 rm /var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules/Notify/lang/it/nome_errato.php
->>>>>>> dev
 ```
 
 ## Passo 3: Correzione della Struttura del File
@@ -107,13 +87,8 @@ Dopo aver corretto un file in italiano, verificare e aggiornare la versione ingl
 
 # 1. Controllare se esiste il file inglese
 ls /var/www/html/<nome progetto>/laravel/Modules/Notify/lang/en/nome_file.php
-<<<<<<< HEAD
-ls /var/www/html/saluteora/laravel/Modules/Notify/lang/en/nome_file.php
-ls /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/en/nome_file.php
-=======
 ls /var/www/html/Quaeris/laravel/Modules/Notify/lang/en/nome_file.php
 ls /var/www/html/_bases/base_techplanner_fila5_mono/laravel/Modules/Notify/lang/en/nome_file.php
->>>>>>> dev
 
 # 2. Se esiste, aggiornarlo con la stessa struttura
 
@@ -184,18 +159,9 @@ return [
 
 ## Riferimenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Regole di Naming per i File di Traduzione](./translation_file_naming_rules.md)
-- [Guida alla Struttura dei File di Traduzione](./translation_file_structure_guide.md)
-- [Progresso della Standardizzazione](./translation_standards_progress.md)
-=======
 - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
 - [Guida alla Struttura dei File di Traduzione](./TRANSLATION_FILE_STRUCTURE_GUIDE.md)
 - [Progresso della Standardizzazione](./TRANSLATION_STANDARDS_PROGRESS.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
 - [Guida alla Struttura dei File di Traduzione](./TRANSLATION_FILE_STRUCTURE_GUIDE.md)
 - [Progresso della Standardizzazione](./TRANSLATION_STANDARDS_PROGRESS.md)
->>>>>>> dev

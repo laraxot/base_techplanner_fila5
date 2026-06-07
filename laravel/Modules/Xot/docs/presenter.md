@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 $acceptHeader=$request->header('Accept');
 
 if(in_array($acceptHeader,['application/json','application/xml'])){
@@ -22,4 +19,3 @@ return $xml->asXML;
 $posts =Post::orderBy('id','desc')->paginate(10);
 
 foreach($posts->items('data') as $item)
->>>>>>> dev

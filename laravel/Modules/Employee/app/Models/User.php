@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Models;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -33,48 +29,9 @@ use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\Team;
 use Modules\User\Models\Tenant;
 use Modules\User\Models\TenantUser;
-<<<<<<< HEAD
-=======
-use Illuminate\Database\Eloquent\Collection;
-use Modules\Gdpr\Models\Consent;
-use Modules\Activity\Models\Activity;
-use Modules\User\Models\AuthenticationLog;
-use Laravel\Passport\Client;
-use Modules\User\Models\Team;
-use Modules\User\Models\TenantUser;
-use Modules\User\Models\Membership;
-use Modules\User\Models\DeviceUser;
-use Modules\User\Models\Device;
-use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
-use Modules\Media\Models\Media;
-use Illuminate\Notifications\DatabaseNotificationCollection;
-use Modules\User\Models\Notification;
-use Modules\User\Models\Permission;
-use Modules\TechPlanner\Models\Profile;
-use Modules\User\Models\Role;
-use Modules\User\Models\SocialiteUser;
-use Modules\User\Models\Tenant;
-use Laravel\Passport\Token;
-use Modules\Gdpr\Models\Treatment;
-use Modules\Employee\Database\Factories\UserFactory;
-use Illuminate\Database\Eloquent\Builder;
-use Carbon\Carbon;
-use Modules\Gdpr\Models\Traits\HasGdpr;
-use Modules\User\Models\BaseUser;
->>>>>>> 4b6b99016 (first commit)
-use Spatie\Activitylog\LogOptions;
-use Spatie\Activitylog\Traits\LogsActivity;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
-<<<<<<< HEAD
-use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
->>>>>>> dev
 use Spatie\ModelStates\HasStates;
 use Spatie\ModelStates\HasStatesContract;
 
@@ -150,14 +107,7 @@ use Spatie\ModelStates\HasStatesContract;
  * @property-read int|null $tokens_count
  * @property-read Collection<int, Treatment> $treatments
  * @property-read int|null $treatments_count
-<<<<<<< HEAD
-<<<<<<< HEAD
  *
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
- *
->>>>>>> dev
  * @method static UserFactory factory($count = null, $state = [])
  * @method static Builder<static>|User newModelQuery()
  * @method static Builder<static>|User newQuery()
@@ -172,13 +122,6 @@ use Spatie\ModelStates\HasStatesContract;
  * @method static Builder<static>|User whereDeletedAt($value)
  * @method static Builder<static>|User whereDeletedBy($value)
  * @method static Builder<static>|User whereEmail($value)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-.
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
  * @method static Builder<static>|User whereEmailVerifiedAt($value)
  * @method static Builder<static>|User whereFirstName($value)
  * @method static Builder<static>|User whereId($value)
@@ -198,14 +141,7 @@ use Spatie\ModelStates\HasStatesContract;
  * @method static Builder<static>|User whereUpdatedBy($value)
  * @method static Builder<User> withoutPermission($permissions)
  * @method static Builder<User> withoutRole($roles, $guard = null)
-<<<<<<< HEAD
-<<<<<<< HEAD
  *
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
- *
->>>>>>> dev
  * @mixin \Eloquent
  */
 class User extends BaseUser implements HasMedia, HasStatesContract
@@ -213,16 +149,4 @@ class User extends BaseUser implements HasMedia, HasStatesContract
     use HasGdpr;
     use HasStates;
     use InteractsWithMedia;
-<<<<<<< HEAD
-    use LogsActivity;
-
-    public function getActivitylogOptions(): LogOptions
-    {
-        return LogOptions::defaults()
-            ->logOnly(['name', 'email', 'type', 'is_active'])
-            ->logOnlyDirty()
-            ->dontSubmitEmptyLogs();
-    }
-=======
->>>>>>> dev
 }

@@ -23,15 +23,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder|ExtraContract query()
  * @method static Builder|ExtraContract withExtraAttributes()
  *
-<<<<<<< HEAD
- * @property int $id
- * @property string $model_type
- * @property string $model_id
-=======
  * @property int         $id
  * @property string      $model_type
  * @property string      $model_id
->>>>>>> dev
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -54,10 +48,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  *
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
-interface ExtraContract {}
-=======
 interface ExtraContract
 {
 }
->>>>>>> dev

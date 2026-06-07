@@ -2,23 +2,14 @@
 
 namespace App\Policies;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 use App\Models\ContactEntry;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Auth\Access\Response;
 use Modules\User\Models\User;
-<<<<<<< HEAD
-=======
 use Illuminate\Auth\Access\Response;
 use App\Models\ContactEntry;
 use Modules\User\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 class ContactEntryPolicy
 {
@@ -94,3 +85,6 @@ class ContactEntryPolicy
         return true;
     }
 }
+
+
+

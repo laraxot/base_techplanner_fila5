@@ -68,36 +68,22 @@ class EditNotificationTemplate extends XotBaseEditRecord
 ## Collegamenti Bidirezionali
 
 ### Collegamenti nella Root
-<<<<<<< HEAD
-- [Architettura Filament](../../../../project_docs/architecture/filament.md)
-- [Gestione Pagine](../../../../project_docs/architecture/pages.md)
-=======
 - [Architettura Filament](../../../../../docs/project/architecture/filament.md)
 - [Gestione Pagine](../../../../../docs/project/architecture/pages.md)
->>>>>>> dev
 
 ### Collegamenti ai Moduli
 - [XotBaseListRecords](../../Xot/project_docs/filament-pages.md#XotBaseListRecords)
 - [XotBaseCreateRecord](../../Xot/project_docs/filament-pages.md#XotBaseCreateRecord)
 - [XotBaseEditRecord](../../Xot/project_docs/filament-pages.md#XotBaseEditRecord)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 - [Architettura Filament](../../../../docs/architecture/filament.md)
 - [Gestione Pagine](../../../../docs/architecture/pages.md)
-=======
 - [Architettura Filament](../../../../../docs/architecture/filament.md)
 - [Gestione Pagine](../../../../../docs/architecture/pages.md)
->>>>>>> dev
 
 ### Collegamenti ai Moduli
 - [XotBaseListRecords](../../Xot/docs/filament-pages.md#XotBaseListRecords)
 - [XotBaseCreateRecord](../../Xot/docs/filament-pages.md#XotBaseCreateRecord)
 - [XotBaseEditRecord](../../Xot/docs/filament-pages.md#XotBaseEditRecord)
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 - [NotificationTemplateResource](./filament-resources.md)
 
 ## Note Importanti

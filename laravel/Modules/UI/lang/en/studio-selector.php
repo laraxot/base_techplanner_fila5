@@ -17,44 +17,20 @@ return [
         'distance' => [
             'label' => 'Distanza',
             'helper_text' => 'Distanza approssimativa dalla tua posizione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'phone' => [
             'label' => 'Telefono',
             'helper_text' => 'Numero di telefono dello studio',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'specializations' => [
             'label' => 'Specializzazioni',
             'helper_text' => 'Servizi offerti dallo studio',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'accessibility' => [
@@ -62,10 +38,6 @@ return [
         'selected_studio' => 'Studio selezionato',
         'select_studio' => 'Premi spazio o invio per selezionare questo studio',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -75,9 +47,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

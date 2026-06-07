@@ -1,10 +1,5 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "name": "laraxot/module_ui_fila3",
-=======
   "name": "laraxot/module_ui_fila5",
->>>>>>> dev
   "description": "UI components, layouts, and shared interface elements for Laraxot applications with Filament integration.",
   "keywords": [
     "laraxot",
@@ -16,11 +11,7 @@
     "layouts",
     "blade"
   ],
-<<<<<<< HEAD
-  "homepage": "https://github.com/laraxot/module_ui_fila3.git",
-=======
   "homepage": "https://github.com/laraxot/module_ui_fila5.git",
->>>>>>> dev
   "license": "MIT",
   "authors": [
     {
@@ -50,12 +41,8 @@
     }
   },
   "require": {
-<<<<<<< HEAD
-    "owenvoke/blade-fontawesome": "*"
-=======
     "owenvoke/blade-fontawesome": "*",
     "blade-ui-kit/blade-heroicons": "^2.6"
->>>>>>> dev
   },
   "require_comment": {
     "coolsam/flatpickr": "*",
@@ -97,8 +84,6 @@
   },
   "minimum-stability": "dev",
   "prefer-stable": true
-<<<<<<< HEAD
-=======
     "name": "laraxot/module_ui_fila3",
     "description": "UI Module for Laraxot applications with Filament integration",
     "homepage": "https://github.com/laraxot/module_ui_fila3.git",
@@ -174,7 +159,4 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 }

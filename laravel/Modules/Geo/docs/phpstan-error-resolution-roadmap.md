@@ -126,12 +126,6 @@ Dopo ogni correzione:
 - **Totale stimato**: 3-4 giorni
 
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Ultimo aggiornamento**: 09/01/2026
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Responsabile**: iFlow CLI
 **Status**: In pianificazione

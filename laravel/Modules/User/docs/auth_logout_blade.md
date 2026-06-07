@@ -1,30 +1,18 @@
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione centrale](../../../docs/readme.md)
-- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Struttura moduli](../../../docs/architecture/modules-structure.md)
-- [Logout Page Fix](./logout_page_fix.md)
-=======
 - [Documentazione centrale](../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./LOGOUT_PAGE_FIX.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Struttura moduli](../../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout_page_fix.md)
->>>>>>> dev
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:

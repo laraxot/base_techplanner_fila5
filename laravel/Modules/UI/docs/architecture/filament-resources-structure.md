@@ -51,18 +51,10 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 ```
 
 ## Documentazione Correlata
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione CMS Module](../laravel/modules/cms/docs/filament-resources.md)
-- [Documentazione Xot Module](../laravel/modules/xot/docs/filament-resources.md)
-=======
 - [Documentazione CMS Module](../laravel/Modules/Cms/docs/filament-resources.md)
 - [Documentazione Xot Module](../laravel/Modules/Xot/docs/filament-resources.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione CMS Module](../laravel/modules/cms/docs/filament-resources.md)
 - [Documentazione Xot Module](../laravel/modules/xot/docs/filament-resources.md)
->>>>>>> dev
 
 ## Best Practices
 1. **Namespace**

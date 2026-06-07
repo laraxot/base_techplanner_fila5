@@ -4,25 +4,6 @@ Questa pagina elenca, per ogni modulo, la presenza di un file di collegamento al
 
 ## Moduli con collegamento
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Activity](../../activity/docs/lang-link.md)
-- [Chart](../../chart/docs/lang-link.md)
-- [Cms](../../cms/docs/lang-link.md)
-- [Dental](../../dental/docs/lang-link.md)
-- [Gdpr](../../gdpr/docs/lang-link.md)
-- [Job](../../job/docs/lang-link.md)
-- [Media](../../media/docs/lang-link.md)
-- [Notify](../../notify/docs/lang-link.md)
-- [Patient](../../patient/docs/lang-link.md)
-- [Reporting](../../reporting/docs/lang-link.md)
-- [Tenant](../../tenant/docs/lang-link.md)
-- [UI](../../ui/docs/lang-link.md)
-- [User](../../user/docs/lang-link.md)
-- [Xot](../../xot/docs/lang-link.md)
-=======
-=======
->>>>>>> dev
 - [Activity](../../Activity/project_docs/lang-link.md)
 - [Chart](../../Chart/project_docs/lang-link.md)
 - [Cms](../../Cms/project_docs/lang-link.md)
@@ -61,10 +42,6 @@ Questa pagina elenca, per ogni modulo, la presenza di un file di collegamento al
 - [UI](../../UI/docs/lang-link.md)
 - [User](../../User/docs/lang-link.md)
 - [Xot](../../Xot/docs/lang-link.md)
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ---
 

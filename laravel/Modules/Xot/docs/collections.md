@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---------------------
 title: Using Collections package outside of Laravel   
 note: bel tutorial
@@ -46,4 +43,3 @@ title:
 note:
 link:
 --------------------
->>>>>>> dev

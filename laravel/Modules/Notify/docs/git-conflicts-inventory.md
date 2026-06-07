@@ -17,13 +17,6 @@
 
 ## Stato
 - ❌ Conflitti da risolvere
-<<<<<<< HEAD
-<<<<<<< HEAD
-- 📅 Data rilevamento: [DATE]
-=======
 - 📅 Data rilevamento: 2025-11-12
->>>>>>> 4b6b99016 (first commit)
-=======
 - 📅 Data rilevamento: [DATE]
->>>>>>> dev
 - 🔄 Priorità: MEDIA - Template email e test

@@ -47,17 +47,7 @@ MAIL_FROM_NAME="il progetto"
 MAIL_FROM_NAME="<main module>"
 ```
 ## Collegamenti tra versioni di test-smtp-page.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [test-smtp-page.md](laravel/modules/notify/project_docs/test-smtp-page.md)
-* [test-smtp-page.md](laravel/modules/cms/project_docs/test-smtp-page.md)
-
-=======
 * [test-smtp-page.md](laravel/Modules/Notify/project_docs/test-smtp-page.md)
 * [test-smtp-page.md](laravel/Modules/Cms/project_docs/test-smtp-page.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [test-smtp-page.md](laravel/modules/notify/project_docs/test-smtp-page.md)
 * [test-smtp-page.md](laravel/modules/cms/project_docs/test-smtp-page.md)
-
->>>>>>> dev

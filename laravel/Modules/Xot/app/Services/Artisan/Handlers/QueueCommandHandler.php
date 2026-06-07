@@ -19,10 +19,6 @@ class QueueCommandHandler implements CommandHandlerInterface
 
     public function supports(string $command): bool
     {
-<<<<<<< HEAD
-        return $command === 'queue:flush';
-=======
         return 'queue:flush' === $command;
->>>>>>> dev
     }
 }

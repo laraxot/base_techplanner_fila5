@@ -1,9 +1,5 @@
 # TechPlanner Modules - Master Index
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 **Last Update**: 7 Febbraio 2026  
 **PHPStan Status**: ✅ Level 10 - 0 Errori  
 **Total Modules**: 15
@@ -40,14 +36,9 @@ Lezioni apprese dai miei errori:
 - Component architecture
 
 **Ultimo Aggiornamento**: 2026-02-08
-<<<<<<< HEAD
-=======
 **Last Update**: 13 Dicembre 2025  
 **PHPStan Status**: ✅ Level 10 - 0 Errori  
 **Total Modules**: 14
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## 🎯 Core Modules
 
@@ -78,14 +69,8 @@ Gestione clienti, appuntamenti, dispositivi e compliance.
 **Essential Reading**:
 - [README.md](../Modules/TechPlanner/docs/README.md)
 - [00-index.md](../Modules/TechPlanner/docs/00-index.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [GDPR Compliance Analysis](../Modules/TechPlanner/docs/gdpr-compliance-analysis.md) - ⭐ NEW: Complete GDPR requirements and implementation guide
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 - [GDPR Compliance Analysis](../Modules/TechPlanner/docs/gdpr-compliance-analysis.md) - ⭐ NEW: Complete GDPR requirements and implementation guide
->>>>>>> dev
 
 ---
 
@@ -108,20 +93,11 @@ Sistema notifiche, email, SMS, template.
 - Notification templates
 - Multi-channel delivery
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 **NEW**: [Inbound Marketing Strategy](../Modules/Notify/docs/inbound-marketing-strategy.md) - ⭐ NEW: Complete inbound marketing strategy with funnel analysis
 
 **Essential Reading**:
 - [Inbound Marketing Strategy](../Modules/Notify/docs/inbound-marketing-strategy.md) - ⭐ NEW: Complete inbound marketing and lead generation strategy
 
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ---
 
 ### Geo (Geographic)
@@ -148,19 +124,10 @@ Sistema gestione contenuti, pagine, sezioni, blocchi.
 **Essential Reading**:
 - [00-index.md](../Modules/Cms/docs/00-index.md)
 - [phpstan_compliance_dec_2025.md](../Modules/Cms/docs/phpstan_compliance_dec_2025.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Workflow Improvements 2026-02-08](../Modules/Cms/docs/2026-02-08-workflow-improvements.md) - ⭐ NEW: System migliorato per prevenire errori frontend
 - [Footer Error Resolution](../Modules/Cms/docs/footer-error-resolution-2026-02-08.md) - ⭐ NEW: Fix per htmlspecialchars() error
 - [Footer UI/UX Analysis](../Modules/Cms/docs/footer-ui-ux-analysis-2026-02-08.md) - ⭐ NEW: Analisi completa problemi UI/UX footer e soluzioni
 - [Footer UI/UX Fixes Applied](../Modules/Cms/docs/footer-ui-ux-fixes-applied-2026-02-08.md) - ⭐ NEW: Fix applicati per miglioramento contrasto WCAG e leggibilità
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ---
 
@@ -240,10 +207,6 @@ Gestione GDPR, privacy, consensi.
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 ### Seo (Search Engine Optimization)
 **Docs**: 12 files | **Status**: ✅ Compliant  
 **Path**: [Modules/Seo/docs/](../Modules/Seo/docs/)
@@ -255,11 +218,6 @@ Ottimizzazione SEO, meta tags, structured data.
 
 ---
 
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ## 📊 Global Statistics
 
 | Metric | Value |
@@ -298,20 +256,11 @@ Ottimizzazione SEO, meta tags, structured data.
 4. Verifica con PHPStan Level 10
 5. Aggiorna documentazione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 ### ⚠️ Component-Specific Rules
 - **Componenti UI nel modulo UI**: Solo componenti agnostici e riutilizzabili tra temi
 - **Componenti UI nei temi**: Componenti specifici del tema con classi CSS/variabili proprie
 - **Esempio**: `service-card` è specifico del tema Sixteen/Two (usa variabili CSS `--italia-blue-*`), quindi NON va in Modules/UI
 
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ## 🎯 Philosophy
 
 **DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**

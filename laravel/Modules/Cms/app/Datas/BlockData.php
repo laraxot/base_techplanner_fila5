@@ -7,14 +7,9 @@ namespace Modules\Cms\Datas;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Illuminate\Support\Str;
-=======
 use Illuminate\Support\Str;
 use Illuminate\View\Factory;
 use Illuminate\View\FileViewFinder;
->>>>>>> dev
 use Livewire\Wireable;
 use Modules\Cms\Actions\ResolveBlockQueryAction;
 
@@ -22,12 +17,6 @@ use function Safe\fclose;
 use function Safe\fopen;
 use function Safe\fread;
 
-<<<<<<< HEAD
-=======
-use Livewire\Wireable;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\DataCollection;
@@ -39,34 +28,16 @@ class BlockData extends Data implements Wireable
 
     public string $type;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     public ?string $slug = null;
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    public ?string $slug = null;
-
->>>>>>> dev
     public array $data;
 
     public string $view;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     public bool $livewire = false;
 
     public string $livewireComponentName = '';
 
-<<<<<<< HEAD
-    public function __construct(string $type, array $data, ?string $slug = null)
-    {
-        $this->type = $type;
-        $this->slug = $slug;
-=======
     public bool $active = true;
 
     public function __construct(string $type, array $data, ?string $slug = null, bool $active = true)
@@ -74,7 +45,6 @@ class BlockData extends Data implements Wireable
         $this->type = $type;
         $this->slug = $slug;
         $this->active = $active;
->>>>>>> dev
 
         // Dynamic Query Resolution
         /** @var array<string, mixed> $query */
@@ -84,48 +54,6 @@ class BlockData extends Data implements Wireable
             $data = array_merge($data, $dynamicData);
         }
 
-<<<<<<< HEAD
-=======
-    public function __construct(string $type, array $data)
-    {
-        $this->type = $type;
->>>>>>> 4b6b99016 (first commit)
-        $this->data = $data;
-        Assert::string($view = Arr::get($data, 'view', 'ui::empty'), '['.__LINE__.']['.__FILE__.']');
-
-        // Verifica che la view esista, con gestione più robusta per i namespace
-        // Se la view usa un namespace (es. pub_theme::), verifica anche il file fisico
-        if (! view()->exists($view)) {
-            // Se la view usa un namespace, prova a verificare il file fisico direttamente
-            if (str_contains($view, '::')) {
-                [$namespace, $path] = explode('::', $view, 2);
-
-                // Per PHPStan Level 10: usiamo un approccio più sicuro
-                // invece di accedere direttamente a metodi non documentati
-                try {
-                    // Tentativo di risolvere il namespace della view in modo più sicuro
-                    $viewFactory = view();
-                    if (method_exists($viewFactory, 'addNamespace')) {
-                        // Se il metodo esiste, possiamo procedere con logica alternativa
-                        $this->view = $view; // Accetta la view temporaneamente
-
-                        return;
-                    }
-                } catch (\Exception $e) {
-                    // In caso di errore, continua con la view originale
-                }
-            }
-            // Se arriviamo qui, la view non esiste
-            throw new \Exception('view not found: '.$view);
-        }
-
-        $this->view = $view;
-<<<<<<< HEAD
-        $this->livewire = $this->detectLivewire($view);
-        if ($this->livewire) {
-            $this->livewireComponentName = $this->normalizeComponentName($view);
-        }
-=======
         $viewRaw = Arr::get($data, 'view', 'ui::empty');
         Assert::string($viewRaw, '['.__LINE__.']['.__FILE__.']');
         $view = $viewRaw;
@@ -143,7 +71,6 @@ class BlockData extends Data implements Wireable
     public static function collection(EloquentCollection|Collection|array $data): DataCollection|array
     {
         return self::collect($data, DataCollection::class);
->>>>>>> dev
     }
 
     private function detectLivewire(string $view): bool
@@ -153,15 +80,10 @@ class BlockData extends Data implements Wireable
         }
 
         // Usa un approccio più performante per recuperare il path della view
-<<<<<<< HEAD
-        /** @var \Illuminate\View\FileViewFinder $finder */
-        $finder = view()->getFinder();
-=======
         /** @var Factory $viewFactory */
         $viewFactory = view();
         /** @var FileViewFinder $finder */
         $finder = $viewFactory->getFinder();
->>>>>>> dev
         $path = $finder->find($view);
 
         if (! file_exists($path)) {
@@ -193,17 +115,4 @@ class BlockData extends Data implements Wireable
 
         return $name;
     }
-<<<<<<< HEAD
-
-    public static function collection(EloquentCollection|Collection|array $data): DataCollection|array
-=======
-    }
-
-    public static function collection(EloquentCollection|Collection|array $data): DataCollection
->>>>>>> 4b6b99016 (first commit)
-    {
-        return self::collect($data, DataCollection::class);
-    }
-=======
->>>>>>> dev
 }

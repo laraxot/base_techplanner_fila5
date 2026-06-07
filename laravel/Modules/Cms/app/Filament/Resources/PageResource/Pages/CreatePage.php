@@ -12,9 +12,5 @@ use Modules\Lang\Filament\Resources\Pages\LangBaseCreateRecord;
  */
 class CreatePage extends LangBaseCreateRecord
 {
-<<<<<<< HEAD
-    protected static string $resource = PageResource::class;
-=======
     public static string $resource = PageResource::class;
->>>>>>> dev
 }

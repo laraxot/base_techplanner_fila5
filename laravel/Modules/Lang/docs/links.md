@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-https://gist.github.com/milon/5173255b58564a0e50548cfbe879181e
-
-=======
-=======
->>>>>>> dev
 # Gestione delle Traduzioni in Laravel
 
 ## Pacchetti Raccomandati
@@ -138,7 +131,3 @@ php artisan translations:clean     # Pulisce le traduzioni non utilizzate
 
 - [Gestione console commands: filosofia e tecnica](./lang-service-provider.md)
 - [Filosofia Xot: zen e automazione](./PHILOSOPHY.md)
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

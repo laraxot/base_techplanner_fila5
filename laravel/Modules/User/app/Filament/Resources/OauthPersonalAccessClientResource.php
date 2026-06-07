@@ -4,11 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
-<<<<<<< HEAD
-=======
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
->>>>>>> dev
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
@@ -60,22 +57,6 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     }
 
     /**
-<<<<<<< HEAD
-     * Define the table for the resource.
-     */
-    public static function table(Table $table): Table
-    {
-        return $table
-            ->columns(self::getTableColumns())
-            ->filters(self::getTableFilters())
-            ->actions(self::getTableActions())
-            ->bulkActions(self::getTableBulkActions())
-            ->defaultSort('created_at', 'desc');
-    }
-
-    /**
-=======
->>>>>>> dev
      * Get the table columns for the resource.
      *
      * @return array<string, Tables\Columns\Column>
@@ -119,11 +100,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Get the table actions for the resource.
      *
-<<<<<<< HEAD
-     * @return array<string, \Filament\Actions\Action>
-=======
      * @return array<string, Action>
->>>>>>> dev
      */
     public static function getTableActions(): array
     {
@@ -136,11 +113,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Get the table bulk actions for the resource.
      *
-<<<<<<< HEAD
-     * @return array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
-=======
      * @return array<string, Action|ActionGroup>
->>>>>>> dev
      */
     public static function getTableBulkActions(): array
     {

@@ -20,17 +20,10 @@ Questo assicura che qualsiasi client possa utilizzare qualsiasi provider senza m
 ### 2. Posizione delle Azioni
 
 Le azioni specifiche dei provider SMS si trovano nella directory:
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/SMS/`
-=======
 - `Modules/Notify/app/Actions/SMS/`
 - `Modules/Notify/app/Actions/SMS/`
 - `Modules/Notify/app/Actions/SMS/`
->>>>>>> 4b6b99016 (first commit)
-=======
 - `/var/www/html/Quaeris/laravel/Modules/Notify/app/Actions/SMS/`
->>>>>>> dev
 
 ### 3. Convenzioni di Nomenclatura
 
@@ -84,9 +77,6 @@ Le azioni di provider devono sempre:
        message: $smsData->body,
        sender: $smsData->from,
        reference: null,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
        scheduledDate: null
    );
    ```
@@ -200,9 +190,6 @@ Le azioni di provider devono sempre:
        sender: $smsData->from,
        reference: null,
        scheduledDate: null
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
    );
    ```
 

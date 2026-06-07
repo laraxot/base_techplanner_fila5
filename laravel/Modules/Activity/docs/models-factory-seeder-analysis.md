@@ -66,11 +66,5 @@
 Il modulo Activity è completamente configurato con tutte le factory necessarie e tutti i modelli sono attivamente utilizzati nella business logic del sistema.
 
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-01-06*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 *Analizzato da: Sistema di analisi automatica moduli*

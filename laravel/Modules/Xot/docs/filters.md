@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <?php
 //https://itnext.io/how-i-designed-and-built-lumenos-recruitment-search-engine-d8918b3500
 namespace App\Search\Filters;
@@ -56,6 +54,3 @@ class RequirementSorter implements Clause
 
 
 https://chasingcode.dev/blog/refactor-laravel-eloquent-conditions-to-trait/
->>>>>>> dev
-
-

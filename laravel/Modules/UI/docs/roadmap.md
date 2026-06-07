@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# UI Module Roadmap
-
-=======
 # 🎨 UI MODULE - ROADMAP 2025
 ||||||| parent of 9a84589 (.)
 # UI Module Roadmap
@@ -305,7 +300,6 @@ UI Module
 
 *Questa roadmap è specifica per il modulo UI e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
 ||||||| parent of 9a84589 (.)
->>>>>>> dev
 "L'interfaccia è l'essenza: rendere l'esperienza indimenticabile."
 
 ## 🎯 Visione
@@ -335,9 +329,6 @@ Creare un ecosistema UI "Headless-first" che permetta di cambiare radicalmente i
 - [ ] Performance Lighthouse > 90 su pagine UI intensive.
 
 ---
-<<<<<<< HEAD
-**Ultimo aggiornamento**: 31 Gennaio 2026
-=======
 # Roadmap Modulo UI - Completamento e Miglioramenti
 
 **Data Creazione**: 2026-01-02
@@ -610,7 +601,4 @@ Completare il modulo UI con tutte le funzionalità mancanti, migliorare qualità
 ---
 
 **Filosofia**: UI fornisce componenti riutilizzabili e design system - nessuna business logic, solo presentazione.
->>>>>>> 4b6b99016 (first commit)
-=======
 **
->>>>>>> dev

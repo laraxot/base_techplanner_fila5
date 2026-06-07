@@ -318,16 +318,8 @@ php artisan cms:seo-audit
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
-- [Content Management Guide](content-management/)
-- [SEO Best Practices](seo/)
-
-*Ultimo aggiornamento: gennaio 2025*
-=======
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Content Management Guide](content-management/)
 - [SEO Best Practices](seo/)
 
 *
->>>>>>> dev

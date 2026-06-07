@@ -1,21 +1,14 @@
 # 📚 Index of Xot Module Documentation
 
 ## 🎯 Quick Start
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [**README.md**](readme.md) - General overview
-=======
 - [**README.md**](README.md) - General overview
->>>>>>> 4b6b99016 (first commit)
 - [**Architecture**](architecture/architecture.md) - System architecture
 - [**Best Practices**](best-practices/best-practices.md) - Development guidelines
-=======
 - [**README.md**](readme.md) - General overview
 - [**Architecture**](architecture/architecture.md) - System architecture
 - [**Best Practices**](best-practices/best-practices.md) - Development guidelines
 - Docs-first governance: before editing code, study and improve local module docs and the active theme docs, then align global `docs/*` and evaluate GitHub Issue/Discussion tracking.
 - Post-edit PHP quality gate: after changing a PHP file, run `phpstan`, `phpmd`, `phpinsights`, then review/create the associated Pest test when the behavior is testable.
->>>>>>> dev
 
 ## 📖 Documentation by Category
 
@@ -33,11 +26,8 @@
 - [Data Objects](module-development/data-objects.md)
 
 ### 🎨 Filament & UI
-<<<<<<< HEAD
-=======
 - [Theme Vite Configuration](./vite-configuration.md)
 - [Theme Assets Workflow](./theme-assets-workflow.md)
->>>>>>> dev
 - [Filament Best Practices](filament/filament-best-practices.md)
 - [Filament Resource Rules](filament/filament-resource-rules.md)
 - [Filament Tables Guide](filament/filament-tables.md)
@@ -54,10 +44,7 @@
 - [Testing Strategy](testing/testing-strategy.md)
 - [Complete Testing Guide](testing/testing.md)
 - [PHPStan Complete Guide](phpstan/phpstan-complete-guide.md)
-<<<<<<< HEAD
-=======
 - [PHPStan Runtime Governance](phpstan-runtime-governance.md)
->>>>>>> dev
 
 ### 🌐 Translations & Localization
 - [Translation System](translations/translation-system.md)
@@ -67,21 +54,12 @@
 ### 🛠️ Bash Scripts & Automation
 - [BashScripts Organization](bashscripts/bashscripts-organization.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 ### 🤖 AI & Development Tools
 - [Claude Context (Laravel)](../../../claude.md)
 - [AI Agents Guide](../../../../agents.md)
 - [Cursor Rules & Skills](../../../../.cursor/readme.md)
 - [Skills di progetto](../../../../.cursor/skills/)
 
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ### 🚨 Troubleshooting
 - [**CCR DeepSeek Fix**](troubleshooting/ccr-deepseek-fix.md) - Resolve 400 API error
 - [General Troubleshooting](troubleshooting.md)

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 # Registrazione Componenti Blade
 
 ## Regola Fondamentale
@@ -121,7 +117,3 @@ class MyComponent extends Component
 - [XotBaseServiceProvider](XotBaseServiceProvider.md)
 - [service-provider-best-practices.md](service-provider-best-practices.md)
 - [filament-best-practices.md](filament-best-practices.md)
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev

@@ -269,11 +269,7 @@ abstract class XotBaseResource extends Resource
 ```php
 // Ogni modulo DEVE avere il proprio BaseModel
 abstract class BaseModel extends XotBaseModel {
-<<<<<<< HEAD
-    protected $connection = 'quaeris';  // Connection specifica
-=======
     protected $connection = 'healthcare_app';  // Connection specifica
->>>>>>> dev
 
     // Solo funzionalità SPECIFICHE del modulo
     // MAI duplicare ciò che XotBaseModel già fornisce
@@ -506,13 +502,6 @@ Xot rappresenta l'evoluzione naturale di Laravel:
 ---
 
 *Documentazione Xot v1.0*
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Creato: [DATE]*
-=======
 *Creato: 2025-11-17*
->>>>>>> 4b6b99016 (first commit)
-=======
 *Creato: [DATE]*
->>>>>>> dev
 *Autore: AI Assistant con analisi approfondita*

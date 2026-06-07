@@ -46,8 +46,4 @@ Configurazione dell'IDE per evidenziare i marker di conflitto Git.
 ## 6. Risultati
 - Tutti i conflitti Git risolti
 - PHPStan livello 0 senza errori di sintassi
-<<<<<<< HEAD
 - Migliorata qualità del codice
-=======
-- Migliorata qualità del codice
->>>>>>> dev

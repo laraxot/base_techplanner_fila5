@@ -14,21 +14,11 @@ class PhpUnitTestJobCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
-     *
-     * @var string
-=======
->>>>>>> dev
      */
     protected $signature = 'phpunit:test {argument} {argumentWithDefault=Default value} {optionalArgument?}';
 
     /**
      * The console command description.
-<<<<<<< HEAD
-     *
-     * @var string
-=======
->>>>>>> dev
      */
     protected $description = 'Command for testing the phpunit feature.';
 

@@ -12,7 +12,7 @@ use Spatie\LaravelData\Data;
  *
  * @phpstan-consistent-constructor
  */
-final class OptionData extends Data
+class OptionData extends Data
 {
     /**
      * @param string $cache_driver Driver per la cache delle opzioni
@@ -33,8 +33,8 @@ final class OptionData extends Data
     /**
      * Create a new instance of OptionData with default values.
      */
-    public static function make(): static
+    public static function make(): self
     {
-        return new static();
+        return new self();
     }
 }

@@ -1,14 +1,7 @@
 # Module Path Error Resolution - Activity Assets Issue
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Data Creazione**: [DATE]
-=======
 **Data Creazione**: 2026-01-02
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data Creazione**: [DATE]
->>>>>>> dev
 **Status**: 🔧 RESOLVED
 **Versione**: 1.0.0
 
@@ -138,15 +131,8 @@ try {
 
 - [Module Path Generation Philosophy](./module-path-generation-philosophy.md)
 - [Xot Philosophy](./philosophy.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Activity Philosophy](../activity/docs/philosophy.md)
-=======
 - [Activity Philosophy](../Activity/docs/philosophy.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Activity Philosophy](../activity/docs/philosophy.md)
->>>>>>> dev
 
 ---
 

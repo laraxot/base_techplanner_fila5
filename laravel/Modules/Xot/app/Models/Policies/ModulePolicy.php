@@ -6,21 +6,13 @@ namespace Modules\Xot\Models\Policies;
 
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\Module;
-<<<<<<< HEAD
-use Override;
-=======
->>>>>>> dev
 
 class ModulePolicy extends XotBasePolicy
 {
     /**
      * Determine whether the user can view any models.
      */
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     public function viewAny(UserContract $user): bool
     {
         return $user->hasPermissionTo('module.viewAny');

@@ -123,10 +123,7 @@ docs/cache/
 # ==============================================
 # LANGUAGE FILES
 # ==============================================
-<<<<<<< HEAD
 lang/lang/
-=======
->>>>>>> dev
 resources/lang/
 
 # ==============================================
@@ -165,9 +162,6 @@ cms_test_data.sql
 # 🚫 File specifici del progetto
 *.fila2
 laravel
-<<<<<<< HEAD
-public_html
-=======
 public_html
 lang/lang/
 _docs/
@@ -183,5 +177,3 @@ _docs/
 *.orig
 *.rej
 *~head
-
->>>>>>> dev

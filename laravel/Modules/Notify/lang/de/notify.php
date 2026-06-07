@@ -20,32 +20,16 @@ return [
             'tooltip' => 'Titolo della notifica',
             'placeholder' => 'es: Aggiornamento sistema',
             'help' => 'Inserisci un titolo chiaro e conciso',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'message' => [
             'label' => 'Messaggio',
             'tooltip' => 'Contenuto della notifica',
             'placeholder' => 'es: Il sistema verrà aggiornato alle ore...',
             'help' => 'Inserisci il messaggio completo della notifica',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'type' => [
             'label' => 'Tipo',
@@ -76,16 +60,8 @@ return [
                     'tooltip' => 'Errori e problemi',
                 ],
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'status' => [
             'label' => 'Stato',
@@ -104,74 +80,34 @@ return [
                     'tooltip' => 'Notifica spostata nell\'archivio',
                 ],
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'recipient' => [
             'label' => 'Destinatario',
             'tooltip' => 'Utente o gruppo destinatario della notifica',
             'placeholder' => 'es: mario.rossi@example.com',
             'help' => 'Seleziona uno o più destinatari',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'sent_at' => [
             'label' => 'Inviata il',
             'tooltip' => 'Data e ora di invio della notifica',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'read_at' => [
             'label' => 'Letta il',
             'tooltip' => 'Data e ora di lettura della notifica',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'archived_at' => [
             'label' => 'Archiviata il',
             'tooltip' => 'Data e ora di archiviazione della notifica',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -347,14 +283,6 @@ return [
             'push' => 'Notifica Push',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

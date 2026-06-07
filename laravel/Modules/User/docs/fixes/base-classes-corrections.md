@@ -293,11 +293,7 @@ e
 ## Applicazione ad Altri Moduli
 
 Questo pattern di correzione può essere applicato a:
-<<<<<<< HEAD
-- **Modulo Quaeris**: Verificare QuestionChart, SurveyPdf, Contact
-=======
 - **Modulo ExternalProject**: Verificare QuestionChart, SurveyPdf, Contact
->>>>>>> dev
 - **Modulo Blog**: Verificare Post, Category, Tag
 - **Modulo Dental**: Verificare Visit, Treatment, Patient
 - **Tutti gli altri moduli**: Audit sistematico
@@ -322,14 +318,3 @@ grep -r "extends Model" laravel/Modules/*/app/Models/*.php | grep -v "BaseModel\
 **Review:** Team Laraxot  
 **Deploy:** ✅ Ready for Production  
 **Breaking Changes:** Nessuna (backward compatible)
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-
-
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

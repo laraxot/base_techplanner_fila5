@@ -221,15 +221,7 @@
 - [Image Processing](../../media/processing.md)
 - [Search Configuration](../../media/search.md)
 ## Collegamenti tra versioni di media.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [media.md](../../../xot/docs/features/media.md)
-* [media.md](../../../xot/docs/roadmap/bottlenecks/media.md)
-=======
 * [media.md](../../../Xot/docs/features/media.md)
 * [media.md](../../../Xot/docs/roadmap/bottlenecks/media.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [media.md](../../../xot/docs/features/media.md)
 * [media.md](../../../xot/docs/roadmap/bottlenecks/media.md)
->>>>>>> dev

@@ -114,12 +114,4 @@ return [
         'validation_error' => 'Errore di validazione',
         'general_error' => 'Si è verificato un errore. Riprova più tardi.',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 4b6b99016 (first commit)
-=======
-];
->>>>>>> dev

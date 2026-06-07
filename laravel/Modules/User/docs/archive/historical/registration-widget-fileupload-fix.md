@@ -121,11 +121,7 @@ Per evitare simili problemi in futuro:
 ## Riferimenti
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../project_docs/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/project_docs/fileupload-components.md](../../xot/project_docs/fileupload-components.md)
-<<<<<<< HEAD
-- [Problema principale: docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
-=======
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
->>>>>>> dev
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
 # RegistrationWidget FileUpload Fix
@@ -345,10 +341,6 @@ Per evitare simili problemi in futuro:
 
 ## Riferimenti
 
-<<<<<<< HEAD
-- [Problema principale: docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
-=======
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
->>>>>>> dev
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)

@@ -28,8 +28,6 @@ return [
             'orientation' => 'Orientation',
         ],
     ],
-<<<<<<< HEAD
-=======
     'header_nav' => [
         'label' => 'Header Navigation',
         'fields' => [
@@ -45,7 +43,6 @@ return [
             'children' => 'Submenu',
         ],
     ],
->>>>>>> dev
     'actions' => [
         'label' => 'Actions',
         'fields' => [
@@ -160,17 +157,8 @@ return [
             'label' => 'Label',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

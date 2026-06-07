@@ -1,14 +1,7 @@
 # Convenzioni di Naming per Documentazione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Data: [DATE]
-=======
 ## Data: 2025-01-27
->>>>>>> 4b6b99016 (first commit)
-=======
 ## Data: 2025-01-27
->>>>>>> dev
 
 ## REGOLA CRITICA: SEMPRE MINUSCOLO IN DOCS
 
@@ -140,12 +133,6 @@ Components/ → components/
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-01-27*
->>>>>>> 4b6b99016 (first commit)
-=======
 *Ultimo aggiornamento: 2025-01-27*
->>>>>>> dev
 *Stato: ATTIVO - REGOLA CRITICA*

@@ -1,10 +1,6 @@
 # Implementazione dei Canali di Notifica 
 
-<<<<<<< HEAD
-Questo documento descrive l'architettura e l'implementazione dei canali di notifica nel progetto SaluteOra, con particolare attenzione al pattern Factory utilizzato.
-=======
 Questo documento descrive l'architettura e l'implementazione dei canali di notifica nel progetto Quaeris, con particolare attenzione al pattern Factory utilizzato.
->>>>>>> dev
 
 ## Architettura Generale
 
@@ -152,23 +148,13 @@ L'implementazione dei canali di notifica  segue un'architettura coerente e ben s
 
 
 ## Collegamenti a Documentazione Correlata
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Modulo di Notifica](./index.md)
 - [Panoramica dell'Architettura](./architecture.md)
 - [Modelli di Email](./email_templates.md)
 - [Implementazione SMS](./sms_implementation.md)
 - [Risoluzione dei Problemi](./troubleshooting.md)
-<<<<<<< HEAD
-=======
 - [Modulo di Notifica](./INDEX.md)
 - [Panoramica dell'Architettura](./ARCHITECTURE.md)
 - [Modelli di Email](./EMAIL_TEMPLATES.md)
 - [Implementazione SMS](./SMS_IMPLEMENTATION.md)
 - [Risoluzione dei Problemi](./TROUBLESHOOTING.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
-

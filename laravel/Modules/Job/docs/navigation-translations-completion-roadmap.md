@@ -1,12 +1,6 @@
 # Navigation Translations Completion Roadmap - Job Module
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2026-01-09  
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Modulo**: Job  
 **Status**: 📝 **ROADMAP CREATA**
 
@@ -232,29 +226,14 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 
 ## 📚 Documentazione Correlata
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Translation Standards](../../xot/docs/translation-standards.md)
-- [Navigation Translations Fixes](../../lang/docs/navigation-translations-fixes.md)
-=======
 - [Translation Standards](../../Xot/docs/translation-standards.md)
 - [Navigation Translations Fixes](../../Lang/docs/navigation-translations-fixes.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Translation Standards](../../xot/docs/translation-standards.md)
 - [Navigation Translations Fixes](../../lang/docs/navigation-translations-fixes.md)
->>>>>>> dev
 
 ---
 
 **Status**: 📝 **ROADMAP CREATA - PRONTA PER IMPLEMENTAZIONE**
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2026-01-09
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: [DATE]
->>>>>>> dev

@@ -105,22 +105,13 @@ Prima di committare, verifica:
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Redundancy Rules](../../xot/docs/filament/redundancy-rules.md)
 - [Service Provider Architecture](./service_provider_architecture.md)
 - [XotBaseRelationManager Documentation](../../xot/docs/filament/relation-managers.md)
 
-<<<<<<< HEAD
-=======
 - [Redundancy Rules](../../Xot/docs/filament/redundancy-rules.md)
 - [Service Provider Architecture](./SERVICE_PROVIDER_ARCHITECTURE.md)
 - [XotBaseRelationManager Documentation](../../Xot/docs/filament/relation-managers.md)
 
 *Ultimo aggiornamento: Gennaio 2026*
->>>>>>> 4b6b99016 (first commit)
-=======
 *Ultimo aggiornamento: Gennaio 2026*
->>>>>>> dev

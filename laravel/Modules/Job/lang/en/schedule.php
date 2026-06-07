@@ -25,236 +25,112 @@ return [
             'label' => 'Name',
             'tooltip' => 'Enter the scheduled job name',
             'placeholder' => 'Job name',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Select the guard for the job',
             'placeholder' => 'Guard name',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'permissions' => [
             'label' => 'Permissions',
             'tooltip' => 'Assign necessary permissions to the job',
             'placeholder' => 'Permissions',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'first_name' => [
             'label' => 'First Name',
             'tooltip' => 'Responsible person first name',
             'placeholder' => 'Responsible first name',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'last_name' => [
             'label' => 'Last Name',
             'tooltip' => 'Responsible person last name',
             'placeholder' => 'Responsible last name',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'command' => [
             'label' => 'Command',
             'tooltip' => 'Enter the command to execute',
             'placeholder' => 'Command',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'arguments' => [
             'label' => 'Arguments',
             'tooltip' => 'Specify any arguments for the command',
             'placeholder' => 'Arguments',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'options' => [
             'label' => 'Options',
             'tooltip' => 'Enter any options for the command',
             'placeholder' => 'Options',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'expression' => [
             'label' => 'Cron Expression',
             'tooltip' => 'Set the cron expression for scheduling',
             'placeholder' => 'Cron Expression',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'log_filename' => [
             'label' => 'Log Filename',
             'tooltip' => 'Log file name',
             'placeholder' => 'Log filename',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'status' => [
             'label' => 'Status',
             'tooltip' => 'Current job status',
             'placeholder' => 'Status',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'actions' => [
             'label' => 'Actions',
             'tooltip' => 'Available actions for the job',
             'icon' => 'action-icon',
             'color' => 'blue',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'run_in_background' => [
             'label' => 'Run in Background',
             'tooltip' => 'Run the job in background',
             'placeholder' => 'Run in background',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Created At',
             'tooltip' => 'Job creation date',
             'placeholder' => 'Creation date',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'updated_at' => [
             'label' => 'Updated At',
             'tooltip' => 'Last update date',
             'placeholder' => 'Update date',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'timezone' => [
             'label' => 'Timezone',
             'tooltip' => 'Set the timezone for the job',
             'placeholder' => 'Timezone',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -275,20 +151,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'messages' => [
@@ -405,17 +267,8 @@ return [
     'model' => [
         'label' => 'schedule.model',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

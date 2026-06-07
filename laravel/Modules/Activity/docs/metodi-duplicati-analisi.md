@@ -1,18 +1,10 @@
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Powered by**: Super Mucca AI 🐄✨  
-**Versione**: 2.0 ULTIMATE  
-=======
 **Powered by**: Super Mucca AI 🐄✨
 **Data**: 15 Ottobre 2025
 **Versione**: 2.0 ULTIMATE
->>>>>>> 4b6b99016 (first commit)
-=======
 **Powered by**: Super Mucca AI 🐄✨  
 **Versione**: 2.0 ULTIMATE  
->>>>>>> dev
 **Confidenza**: 99.9% (Dati Reali dal Codice)
 
 ---
@@ -52,35 +44,19 @@ abstract class BaseModel extends XotBaseModel
 
 #### Blog BaseModel (BEN FATTO)
 ```php
-<<<<<<< HEAD
-<<<<<<< HEAD
-// File: Modules/Blog/app/Models/BaseModel.php  
-=======
 // File: Modules/Blog/app/Models/BaseModel.php
->>>>>>> 4b6b99016 (first commit)
-=======
 // File: Modules/Blog/app/Models/BaseModel.php  
->>>>>>> dev
 // Linee: 46
 abstract class BaseModel extends XotBaseModel implements HasMedia
 {
     use InteractsWithMedia;  // ✅ Specifico
     use SoftDeletes;         // ✅ Specifico
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-    protected $connection = 'blog';
-    
-=======
 
     protected $connection = 'blog';
 
->>>>>>> 4b6b99016 (first commit)
-=======
     
     protected $connection = 'blog';
     
->>>>>>> dev
     protected function casts(): array
     {
         return array_merge(parent::casts(), [  // ✅ CORRETTO
@@ -98,21 +74,12 @@ abstract class BaseModel extends XotBaseModel implements HasMedia
 abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 {
     use RelationX;  // ✅ Specifico
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-    protected $connection = 'user';
-    
-=======
 
     protected $connection = 'user';
 
->>>>>>> 4b6b99016 (first commit)
-=======
     
     protected $connection = 'user';
     
->>>>>>> dev
     protected function casts(): array
     {
         return array_merge(parent::casts(), [  // ✅ CORRETTO
@@ -139,18 +106,10 @@ abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 | Gdpr | ~38 | gdpr | 0 | 2 | ⭐⭐⭐⭐ BUONO |
 | Comment | ~30 | comment | 0 | 1 | ⭐⭐⭐⭐ BUONO |
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Media Linee**: 57.8 linee  
-**Target Ottimale**: 25-50 linee  
-=======
 **Media Linee**: 57.8 linee
 **Target Ottimale**: 25-50 linee
->>>>>>> 4b6b99016 (first commit)
-=======
 **Media Linee**: 57.8 linee  
 **Target Ottimale**: 25-50 linee  
->>>>>>> dev
 **Conformità**: 80% dei moduli sono OTTIMALI ✅
 
 ---
@@ -250,15 +209,8 @@ class ColumnBuilder
             ->searchable()
             ->label('ID');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Standard name column
      */
@@ -268,15 +220,8 @@ class ColumnBuilder
             ->searchable($searchable)
             ->sortable();
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Status badge column with standard colors
      */
@@ -288,28 +233,14 @@ class ColumnBuilder
             'success' => 'resolved',
             'secondary' => 'closed',
         ];
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return TextColumn::make('status')
             ->badge()
             ->colors(array_merge($defaultColors, $customColors));
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Priority badge column
      */
@@ -324,15 +255,8 @@ class ColumnBuilder
                 'danger' => 'critical',
             ]);
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Standard timestamps (created_at, updated_at)
      */
@@ -348,15 +272,8 @@ class ColumnBuilder
                 ->toggleable(isToggledHiddenByDefault: $hideUpdated),
         ];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Email column with searchable
      */
@@ -433,15 +350,8 @@ class FilterBuilder
             ->trueLabel('Active')
             ->falseLabel('Inactive');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Date range filter
      */
@@ -464,15 +374,8 @@ class FilterBuilder
                     );
             });
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Select filter from model
      */
@@ -535,18 +438,10 @@ public function getTableFilters(): array
 - Feature development: 40h × €50 = €2,000
 - **TOTALE**: €7,250
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**ROI Anno 1**: +159% (€4,450 netto)  
-**Break-Even**: 4.6 mesi  
-=======
 **ROI Anno 1**: +159% (€4,450 netto)
 **Break-Even**: 4.6 mesi
->>>>>>> 4b6b99016 (first commit)
-=======
 **ROI Anno 1**: +159% (€4,450 netto)  
 **Break-Even**: 4.6 mesi  
->>>>>>> dev
 **ROI 3 Anni**: +675% (€18,950 netto)
 
 ### Scenario Ottimistico
@@ -560,11 +455,6 @@ public function getTableFilters(): array
 - Development: 70h × €50 = €3,500
 - **TOTALE**: €12,250
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**ROI Anno 1**: +338% (€9,450 netto)  
-**Break-Even**: 2.7 mesi  
-=======
 **ROI Anno 1**: +338% (€9,450 netto)
 **Break-Even**: 2.7 mesi
 **ROI 3 Anni**: +1,210% (€33,950 netto)
@@ -1105,11 +995,8 @@ public function getTableFilters(): array
 
 **ROI Anno 1**: +338% (€9,450 netto)
 **Break-Even**: 2.7 mesi
->>>>>>> 4b6b99016 (first commit)
-=======
 **ROI Anno 1**: +338% (€9,450 netto)  
 **Break-Even**: 2.7 mesi  
->>>>>>> dev
 **ROI 3 Anni**: +1,210% (€33,950 netto)
 
 ---

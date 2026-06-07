@@ -1,29 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Module Documentation
-
-This directory contains the documentation for the Lang module.
-
-## Purpose
-
-The purpose of this documentation is to provide comprehensive information about the Lang's functionality, architecture, and usage. It aims to:
-- Explain key features and their implementation details.
-- Guide developers on how to use, extend, and maintain the module.
-- Ensure consistency with Laraxot architectural principles and coding standards.
-
-## Structure
-
-- `README.md`: This overview file.
-- Other Markdown files will detail specific aspects of the module, such as:
-    - `installation.md`
-    - `usage.md`
-    - `architecture.md`
-    - `troubleshooting.md`
-
-## Contribution
-
-Developers are encouraged to contribute to this documentation to keep it accurate and up-to-date.
-=======
 https://github.com/dimsav/laravel-translatable
 
 https://github.com/Astrotomic/laravel-translatable !!
@@ -42,8 +16,6 @@ https://blog.quickadminpanel.com/10-best-laravel-packages-for-multi-language-tra
 ## Extra risorse da _docs
 
 (Nessun nuovo link da aggiungere: i link di _docs/readme.txt sono già presenti in questo file)
->>>>>>> 4b6b99016 (first commit)
-=======
 ---
 title: "Lang Module Documentation"
 type: documentation
@@ -125,4 +97,3 @@ Lang/
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
->>>>>>> dev

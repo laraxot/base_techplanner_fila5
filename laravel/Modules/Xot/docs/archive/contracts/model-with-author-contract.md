@@ -23,12 +23,7 @@ interface ModelWithAuthorContract extends ModelContract
 
 ## Fix/Modifiche recenti
 - [2025-04-16] Correzione conflitti git, uniformazione tipizzazione, aggiunta firme metodi autore/editor, aggiornamento PHPDoc e struttura secondo convenzioni Laraxot/<nome progetto>.
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Link bidirezionale: [Vai a PHPSTAN-FIXES-SUMMARY.md](../../../docs/phpstan-fixes-summary.md)
-=======
 - Link bidirezionale: [Vai a PHPSTAN-FIXES-SUMMARY.md](../../../../docs/phpstan-fixes-summary.md)
->>>>>>> dev
 
 ## Collegamenti
 - [ModelContract](model-contract.md)
@@ -53,9 +48,6 @@ interface ModelWithAuthorContract extends ModelContract
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Contracts Overview](./readme.md)
-<<<<<<< HEAD
-- [Documentazione root](../../../docs/phpstan-fixes-summary.md)
-=======
 - Link bidirezionale: [Vai a PHPSTAN-FIXES-SUMMARY.md](../../../docs/PHPSTAN-FIXES-SUMMARY.md)
 
 ## Collegamenti
@@ -82,10 +74,7 @@ interface ModelWithAuthorContract extends ModelContract
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Contracts Overview](./README.md)
 - [Documentazione root](../../../docs/PHPSTAN-FIXES-SUMMARY.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione root](../../../../docs/phpstan-fixes-summary.md)
->>>>>>> dev
 
     $table->foreign('deleter_id')->references('id')->on('users');
 });

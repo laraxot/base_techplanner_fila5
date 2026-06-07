@@ -2,55 +2,9 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\Cms\Tests\Feature\Frontoffice\FolioRoutes;
-
->>>>>>> dev
 use Modules\Cms\Tests\TestCase;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
-it('GET /{locale} returns 200 and has lang attribute', function (): void {
-    $locale = app()->getLocale();
-    /** @phpstan-ignore-next-line property.notFound */
-    $response = $this->get('/'.$locale);
-
-    $status = (int) $response->getStatusCode();
-
-    if ($status >= 500) {
-        test()->markTestSkipped('Localized index route returned server error in this install.');
-
-        return;
-    }
-
-    expect(in_array($status, [200, 204, 301, 302, 303, 307, 308, 404], true))->toBeTrue();
-
-    if (200 === $status) {
-        /* @phpstan-ignore-next-line method.nonObject */
-        $response->assertSee('<html', false);
-        /* @phpstan-ignore-next-line method.nonObject */
-        $response->assertSee(' lang="'.$locale.'"', false);
-=======
-it('GET /{locale} uses the requested locale in the html lang attribute', function (): void {
-    foreach (['it', 'en', 'de'] as $locale) {
-        $response = $this->get('/'.$locale);
-
-        $status = (int) $response->getStatusCode();
-
-        if ($status >= 500) {
-            test()->markTestSkipped("Localized index route returned server error for [{$locale}] in this install.");
-
-            return;
-        }
-
-        expect(in_array($status, [200, 204, 301, 302, 303, 307, 308, 404], true))->toBeTrue();
-
-        if (200 === $status) {
-            $response->assertSee('<html', false);
-            $response->assertSee(' lang="'.$locale.'"', false);
-        }
->>>>>>> dev
     }
 });

@@ -37,42 +37,6 @@ class SpidAuthService
     }
 
     /**
-<<<<<<< HEAD
-     * Carica la configurazione dei provider SPID
-     */
-    protected function loadProviders(): void
-    {
-        $this->providers = config('spid.providers', [
-            'poste' => [
-                'name' => 'Poste Italiane',
-                'entityId' => 'https://posteid.poste.it',
-                'sso_url' => 'https://posteid.poste.it/jod-fs/ssoservicepost',
-                'slo_url' => 'https://posteid.poste.it/jod-fs/sloservicepost',
-                'cert' => 'poste.crt',
-                'logo' => 'poste-logo.svg',
-            ],
-            'sielte' => [
-                'name' => 'Sielte',
-                'entityId' => 'https://identity.sieltecloud.it',
-                'sso_url' => 'https://identity.sieltecloud.it/simplesaml/saml2/idp/SSOService.php',
-                'slo_url' => 'https://identity.sieltecloud.it/simplesaml/saml2/idp/SingleLogoutService.php',
-                'cert' => 'sielte.crt',
-                'logo' => 'sielte-logo.svg',
-            ],
-            'tim' => [
-                'name' => 'TIM Trust Technologies',
-                'entityId' => 'https://login.id.tim.it/affwebservices/public/saml2sso',
-                'sso_url' => 'https://login.id.tim.it/affwebservices/public/saml2sso',
-                'slo_url' => 'https://login.id.tim.it/affwebservices/public/saml2slo',
-                'cert' => 'tim.crt',
-                'logo' => 'tim-logo.svg',
-            ],
-        ]);
-    }
-
-    /**
-=======
->>>>>>> dev
      * Ottiene tutti i provider SPID disponibili
      */
     public function getProviders(): array
@@ -96,11 +60,7 @@ class SpidAuthService
         // Salva lo stato della richiesta in sessione
         Session::put('spid.request_id', $requestId);
         Session::put('spid.provider', $provider);
-<<<<<<< HEAD
-        Session::put('spid.return_url', $returnUrl ?: url()->previous());
-=======
         Session::put('spid.return_url', $returnUrl ? $returnUrl : url()->previous());
->>>>>>> dev
         Session::put('spid.auth_level', $level);
 
         $samlRequest = $this->buildSamlAuthRequest($requestId, $providerConfig, $level);
@@ -153,15 +113,7 @@ class SpidAuthService
         }
 
         $decodedResponse = base64_decode($samlResponse);
-<<<<<<< HEAD
-<<<<<<< HEAD
         $responseDoc = new DOMDocument();
-=======
-        $responseDoc = new DOMDocument;
->>>>>>> 4b6b99016 (first commit)
-=======
-        $responseDoc = new DOMDocument;
->>>>>>> dev
         $responseDoc->loadXML($decodedResponse);
 
         // Valida la signature
@@ -233,8 +185,6 @@ class SpidAuthService
     }
 
     /**
-<<<<<<< HEAD
-=======
      * Verifica se l'utente è autenticato con SPID
      */
     public function isAuthenticated(): bool
@@ -302,7 +252,6 @@ class SpidAuthService
     }
 
     /**
->>>>>>> dev
      * Genera un ID univoco per le richieste SAML
      */
     protected function generateRequestId(): string
@@ -363,11 +312,7 @@ class SpidAuthService
     /**
      * Valida la response SAML
      */
-<<<<<<< HEAD
-    protected function validateSamlResponse(\DOMDocument $responseDoc): void
-=======
     protected function validateSamlResponse(DOMDocument $responseDoc): void
->>>>>>> dev
     {
         // Implementazione della validazione signature
         // In produzione usare librerie come xmlseclibs per validazione completa
@@ -379,26 +324,16 @@ class SpidAuthService
         // Verifica che la response sia successful
         $statusCode = $xpath->query('//samlp:StatusCode/@Value');
         if ($statusCode->length === 0 || $statusCode->item(0)->nodeValue !== 'urn:oasis:names:tc:SAML:2.0:status:Success') {
-<<<<<<< HEAD
-            throw new \Exception('SPID authentication failed');
-=======
             throw new Exception('SPID authentication failed');
->>>>>>> dev
         }
     }
 
     /**
      * Estrae gli attributi utente dalla response SAML
      */
-<<<<<<< HEAD
-    protected function extractUserAttributes(\DOMDocument $responseDoc): array
-    {
-        $xpath = new \DOMXPath($responseDoc);
-=======
     protected function extractUserAttributes(DOMDocument $responseDoc): array
     {
         $xpath = new DOMXPath($responseDoc);
->>>>>>> dev
         $xpath->registerNamespace('saml', 'urn:oasis:names:tc:SAML:2.0:assertion');
 
         $attributes = [];
@@ -442,41 +377,4 @@ class SpidAuthService
         // In produzione, caricare il certificato dal filesystem
         return config('spid.signing_cert', '');
     }
-<<<<<<< HEAD
-
-    /**
-     * Verifica se l'utente è autenticato con SPID
-     */
-    public function isAuthenticated(): bool
-    {
-        return Session::has('spid.authenticated') && Session::get('spid.authenticated') === true;
-    }
-
-    /**
-     * Ottiene i dati dell'utente autenticato
-     */
-    public function getAuthenticatedUser(): ?array
-    {
-        if (! $this->isAuthenticated()) {
-            return null;
-        }
-
-        return Session::get('spid.user_data');
-    }
-
-    /**
-     * Effettua il logout dell'utente SPID
-     */
-    public function logout(): void
-    {
-        Session::forget([
-            'spid.authenticated',
-            'spid.user_data',
-            'spid.provider',
-            'spid.request_id',
-            'spid.auth_level',
-        ]);
-    }
-=======
->>>>>>> dev
 }

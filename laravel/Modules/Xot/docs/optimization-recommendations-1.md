@@ -412,11 +412,7 @@ php artisan xot:test-framework
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
-=======
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
->>>>>>> dev
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 

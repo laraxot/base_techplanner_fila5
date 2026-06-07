@@ -109,11 +109,8 @@ Thumbs.db
 *.old2
 *.backup
 *.backup.*
-<<<<<<< HEAD
-=======
 *.backup-*
 *.backup_*
->>>>>>> dev
 *.bak
 *.new
 
@@ -135,10 +132,7 @@ docs/cache/
 # ==============================================
 # LANGUAGE FILES (generated / duplicated)
 # ==============================================
-<<<<<<< HEAD
 lang/lang/
-=======
->>>>>>> dev
 resources/lang/
 
 
@@ -182,8 +176,6 @@ public_html
 # ==============================================
 # END OF UI .GITIGNORE
 # ==============================================
-<<<<<<< HEAD
-=======
 lang/lang/
 _docs/
 docs/legacy/
@@ -199,5 +191,3 @@ docs/legacy/**
 *.orig
 *.rej
 *~head
-
->>>>>>> dev

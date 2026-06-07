@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 1. Plyr.io:
 Plyr is quite simple, customizable and highly accessible HTML5 video player that also extends its support to Video and YouTube media players. It is popular enough among professionals and beginners due to its lightweight design that allows smooth processing even for larger video files. Plyr can make things simple with collection of effective elements to get jobs done correctly.
 
@@ -99,5 +97,3 @@ https://shotstack.io/product/sdk/php/
 ---------------------------------------------------------------------------------------------------------------
 https://github.com/shotstack/php-demos  a pagamento ..
 ---------------------------------------------------------------------------------------------------------------
->>>>>>> dev
-

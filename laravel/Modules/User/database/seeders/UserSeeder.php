@@ -5,22 +5,12 @@ declare(strict_types=1);
 namespace Modules\User\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Modules\User\Models\Permission;
-use Modules\User\Models\Role;
-use Modules\User\Models\Team;
-use Webmozart\Assert\Assert;
-=======
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
->>>>>>> dev
 
 /**
  * Seeder per il modulo User.
@@ -114,37 +104,21 @@ class UserSeeder extends Seeder
         }
 
         // Ruoli di sistema
-<<<<<<< HEAD
-        /** @var Role $superAdminRole */
-=======
->>>>>>> dev
         $superAdminRole = Role::firstOrCreate([
             'name' => 'super-admin',
             'guard_name' => 'web',
         ]);
 
-<<<<<<< HEAD
-        /** @var Role $systemAdminRole */
-=======
->>>>>>> dev
         $systemAdminRole = Role::firstOrCreate([
             'name' => 'system-admin',
             'guard_name' => 'web',
         ]);
 
-<<<<<<< HEAD
-        /** @var Role $moderatorRole */
-=======
->>>>>>> dev
         $moderatorRole = Role::firstOrCreate([
             'name' => 'moderator',
             'guard_name' => 'web',
         ]);
 
-<<<<<<< HEAD
-        /** @var Role $userRole */
-=======
->>>>>>> dev
         $userRole = Role::firstOrCreate([
             'name' => 'user',
             'guard_name' => 'web',
@@ -184,11 +158,7 @@ class UserSeeder extends Seeder
             'leave teams',
         ]);
 
-<<<<<<< HEAD
-        $this->command->info('   ✓ Creati '.count($systemPermissions).' permessi di sistema');
-=======
         $this->command->info('   ✓ Creati '.count($systemPermissions));
->>>>>>> dev
         $this->command->info('   ✓ Creati 4 ruoli di sistema (super-admin, system-admin, moderator, user)');
     }
 
@@ -199,64 +169,6 @@ class UserSeeder extends Seeder
     {
         $this->command->info('👥 Creazione team di sistema...');
 
-<<<<<<< HEAD
-        // Team di amministrazione
-        /** @var Factory<Team> $adminFactory */
-        $adminFactory = Team::factory();
-        Assert::isInstanceOf($adminFactory, Factory::class);
-        /** @phpstan-ignore-next-line - Factory method returns proper object */
-        $adminTeam = $adminFactory->create([
-            'name' => 'Amministratori',
-            'personal_team' => false,
-        ]);
-        Assert::isInstanceOf($adminTeam, Team::class);
-
-        // Team di sviluppo
-        /** @var Factory<Team> $devFactory */
-        $devFactory = Team::factory();
-        Assert::isInstanceOf($devFactory, Factory::class);
-        /** @phpstan-ignore-next-line - Factory method returns proper object */
-        $devTeam = $devFactory->create([
-            'name' => 'Sviluppatori',
-            'personal_team' => false,
-        ]);
-        Assert::isInstanceOf($devTeam, Team::class);
-
-        // Team di supporto
-        /** @var Factory<Team> $supportFactory */
-        $supportFactory = Team::factory();
-        Assert::isInstanceOf($supportFactory, Factory::class);
-        /** @phpstan-ignore-next-line - Factory method returns proper object */
-        $supportTeam = $supportFactory->create([
-            'name' => 'Supporto Clienti',
-            'personal_team' => false,
-        ]);
-
-        // Team di marketing
-        /** @var Factory<Team> $marketingFactory */
-        $marketingFactory = Team::factory();
-        Assert::isInstanceOf($marketingFactory, Factory::class);
-        /** @phpstan-ignore-next-line - Factory method returns proper object */
-        $marketingTeam = $marketingFactory->create([
-            'name' => 'Marketing',
-            'personal_team' => false,
-        ]);
-        Assert::isInstanceOf($marketingTeam, Team::class);
-
-        // Team generale
-        /** @var Factory<Team> $generalFactory */
-        $generalFactory = Team::factory();
-        Assert::isInstanceOf($generalFactory, Factory::class);
-        /** @phpstan-ignore-next-line - Factory method returns proper object */
-        $generalTeam = $generalFactory->create([
-            'name' => 'Team Generale',
-            'personal_team' => false,
-        ]);
-        Assert::isInstanceOf($generalTeam, Team::class);
-
-        $this->command->info('   ✓ Creati 5 team di sistema');
-    }
-=======
         $adminTeam = $this->createTeam('Amministratori');
         $devTeam = $this->createTeam('Sviluppatori');
         $supportTeam = $this->createTeam('Supporto Clienti');
@@ -277,5 +189,4 @@ class UserSeeder extends Seeder
 
         return $team;
     }
->>>>>>> dev
 }

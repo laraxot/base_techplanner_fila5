@@ -1,14 +1,7 @@
 # Internal Debate: PSR-4 Autoloading Resolution Strategy
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Date**: 2025-12-15
->>>>>>> 4b6b99016 (first commit)
-=======
 **Date**: [DATE]
->>>>>>> dev
 **Context**: Resolving `composer dumpautoload -o` PSR-4 compliance errors
 **Debate Format**: Pro/Con analysis of different approaches
 

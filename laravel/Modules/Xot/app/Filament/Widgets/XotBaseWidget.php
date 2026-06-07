@@ -50,16 +50,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     public array $listener = [];
 
     /**
-<<<<<<< HEAD
-     * Dati del form.
-     *
-     * @var array<string, mixed>
-     */
-    public ?array $data = [];
-
-    /**
-=======
->>>>>>> dev
      * Vista predefinita per widget che estendono XotBaseWidget.
      * Deve essere sovrascritta nelle classi figlie.
      */
@@ -150,11 +140,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         $attributes = $model->attributesToArray();
 
         $fields = array_merge($fillable, $appends);
-<<<<<<< HEAD
-        $fields = array_fill_keys($fields, null);
-=======
         $fields = array_fill_keys(array_map(static fn (mixed $f): string => (string) $f, $fields), null);
->>>>>>> dev
         $fields = array_merge($fields, $attributes);
         if (method_exists($model, 'getDataDefaults')) {
             /** @var array<string, mixed> $defaults */
@@ -189,15 +175,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         }
 
         return Action::make('submit')
-<<<<<<< HEAD
-<<<<<<< HEAD
             ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
-=======
-            ->label(__('filament-panels::resources/pages/edit-record.form.actions.save.label'))
->>>>>>> 4b6b99016 (first commit)
-=======
-            ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
->>>>>>> dev
             ->submit('save')
             ->view((string) $submit_view);
     }
@@ -211,15 +189,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     {
         return [
             Action::make('save')
-<<<<<<< HEAD
-<<<<<<< HEAD
                 ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
-=======
-                ->label(__('filament-panels::resources/pages/edit-record.form.actions.save.label'))
->>>>>>> 4b6b99016 (first commit)
-=======
-                ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
->>>>>>> dev
                 ->submit('save'),
         ];
     }
@@ -262,14 +232,10 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
                 $this->view = $view;
             }
         } catch (Exception $e) {
-            /* @phpstan-ignore identical.alwaysTrue */
-            if ($this->view === $defaultView) {
+            if (! view()->exists($this->view)) {
                 throw $e;
             }
         }
     }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> dev

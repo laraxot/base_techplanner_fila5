@@ -19,7 +19,7 @@ name('register');
 
 <x-layouts.app>
     <x-slot name="title">
-        {{ __('gdpr::register.title') }} - LaravelPizza Community
+        {{ __('gdpr::register.title') }} - <nome progetto> Community
     </x-slot>
 
     <x-slot name="description">
@@ -27,7 +27,7 @@ name('register');
     </x-slot>
 
     <x-slot name="keywords">
-        Laravel meetup, Laravel community, PHP developer community, Laravel tutorials, Laravel workshops, Laravel networking, LaravelPizza
+        Laravel meetup, Laravel community, PHP developer community, Laravel tutorials, Laravel workshops, Laravel networking, <nome progetto>
     </x-slot>
 
     <section
@@ -46,7 +46,7 @@ name('register');
             <div class="space-y-10">
                 <div class="text-center space-y-6">
                     <a href="{{ \LaravelLocalization::localizeUrl('/') }}" class="inline-block group" aria-label="{{ config('app.name') }}">
-                        <x-pub_theme::ui.logo class="h-16 w-auto md:h-20 transition-transform duration-300 group-hover:scale-110" />
+                        <x-ui.logo class="h-16 w-auto md:h-20 transition-transform duration-300 group-hover:scale-110" />
                     </a>
 
                     <div class="space-y-3">
@@ -67,7 +67,7 @@ name('register');
                         <h2 class="text-2xl font-bold text-white">{{ __('gdpr::register.form.cta_title') }}</h2>
                         <p class="text-sm text-slate-400">{{ __('gdpr::register.form.cta_subtitle') }}</p>
                     </div>
-                    @livewire(\Modules\Gdpr\Filament\Widgets\Auth\RegisterWidget::class)
+                    @livewire(\Modules\Gdpr\Filament\Widgets\Auth\UserForm::class)
                     <p class="mt-4 text-center text-xs text-slate-500">{{ __('gdpr::register.form.terms_notice') }}</p>
                 </div>
 

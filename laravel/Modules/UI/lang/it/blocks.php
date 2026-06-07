@@ -55,10 +55,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Blocks',
     'plural_label' => 'Blocks (Plurale)',
     'fields' => [
@@ -92,9 +88,4 @@ return [
             'label' => 'Elimina Blocks',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

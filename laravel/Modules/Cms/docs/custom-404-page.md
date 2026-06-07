@@ -20,25 +20,14 @@ This starter template includes a custom __404 Not Found__ error page, located at
 
     <hr class="block w-full max-w-lg mx-auto my-8 border">
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <p class="text-xl">Need to update this page? See the <a title="404 Page Documentation" href="/project_docs/404"> documentation here</a>.</p>
-=======
     <p class="text-xl">Need to update this page? See the <a title="404 Page Documentation" href="/docs/404"> documentation here</a>.</p>
->>>>>>> 4b6b99016 (first commit)
-=======
     <p class="text-xl">Need to update this page? See the <a title="404 Page Documentation" href="/project_docs/404"> documentation here</a>.</p>
->>>>>>> dev
 </div>
 @endsection
 ```
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 Depending on where your site is hosted, you may need to configure your server to use the custom 404 page. For more details, visit the [Jigsaw documentation about configuring a custom 404 page.](https://jigsaw.tighten.co/project_docs/custom-404-page/)
 
 ## Collegamenti tra versioni di custom-404-page.md
@@ -48,8 +37,6 @@ Depending on where your site is hosted, you may need to configure your server to
 * [custom-404-page.md](laravel/modules/tenant/project_docs/it/custom-404-page.md)
 * [custom-404-page.md](laravel/modules/cms/project_docs/custom-404-page.md)
 
-<<<<<<< HEAD
-=======
 Depending on where your site is hosted, you may need to configure your server to use the custom 404 page. For more details, visit the [Jigsaw documentation about configuring a custom 404 page.](https://jigsaw.tighten.co/docs/custom-404-page/)
 
 ## Collegamenti tra versioni di custom-404-page.md
@@ -58,6 +45,3 @@ Depending on where your site is hosted, you may need to configure your server to
 * [custom-404-page.md](laravel/Modules/UI/docs/custom-404-page.md)
 * [custom-404-page.md](laravel/Modules/Tenant/docs/it/custom-404-page.md)
 * [custom-404-page.md](laravel/Modules/Cms/docs/custom-404-page.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

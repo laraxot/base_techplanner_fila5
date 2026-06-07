@@ -1,24 +1,3 @@
-<<<<<<< HEAD
----
-title: "User wiki log"
-type: log
-tags: [user, teams, traits, spatie-permission]
-created: 2026-06-06
-updated: 2026-06-06
-qmd: "user baseuser teams trait collision spatie permission laraxot"
-issues:
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/21"
-discussions:
-  - "https://github.com/laraxot/base_techplanner_fila5/discussions/19"
----
-
-# User wiki log
-
-## 2026-06-06
-
-- Resolved `BaseUser::teams()` trait collision explicitly: Laraxot `HasTeams::teams()` wins, Spatie permission teams remains available as `permissionTeams()`.
-- Rule: when two imported traits define the same public method, resolve with `insteadof` and keep an alias only when the losing method still has domain value.
-=======
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
@@ -143,4 +122,3 @@ discussions:
 - Best practices documentate: type-hint UserContract, permission dot notation, test con permessi reali
 - Enhancements proposti: canAny(), canAll(), scope(), after() hooks
 - Commit: docs: document policy inheritance boundary decision
->>>>>>> dev

@@ -1,9 +1,6 @@
 # Activity Module - Business Logic Analysis
 
 ## Overview
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 The Activity module provides comprehensive audit logging and event sourcing capabilities for the <nome progetto> platform. It tracks user actions, system events, and data changes across all modules.
 
 ## Business Purpose
@@ -199,14 +196,9 @@ The Activity module provides comprehensive audit logging and event sourcing capa
 # Activity Module - Business Logic Analysis
 
 ## Overview
->>>>>>> 4b6b99016 (first commit)
 The Activity module provides comprehensive audit logging and event sourcing capabilities for the Quaeris platform. It tracks user actions, system events, and data changes across all modules.
-=======
 The Activity module provides comprehensive audit logging and event sourcing capabilities for the Quaeris platform. It tracks user actions, system events, and data changes across all modules.
-=======
 The Activity module provides comprehensive audit logging and event sourcing capabilities for the healthcare_app platform. It tracks user actions, system events, and data changes across all modules.
->>>>>>> 4467550 (.)
->>>>>>> dev
 
 ## Business Purpose
 - **Audit Trail**: Maintain complete audit trails for compliance and security
@@ -397,12 +389,5 @@ The Activity module provides comprehensive audit logging and event sourcing capa
 - **Security**: Provides audit trails for security incidents
 - **Debugging**: Helps diagnose application issues
 - **Analytics**: Enables user behavior analysis
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Accountability**: Tracks user actions for accountability
-=======
 - **Accountability**: Tracks user actions for accountability
->>>>>>> 4b6b99016 (first commit)
-=======
-- **Accountability**: Tracks user actions for accountability
->>>>>>> dev

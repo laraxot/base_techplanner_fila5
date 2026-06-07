@@ -213,11 +213,5 @@ test('widget can be rendered', function () {
 
 **Status**: ✅ Gold Standard Stabilito
 **Autore**: AI Assistant con validazione utente
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: Dicembre 2024
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Versione**: 1.0 - Pattern Definitivo

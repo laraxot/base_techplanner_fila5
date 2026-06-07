@@ -10,24 +10,15 @@ Questa directory contiene la documentazione relativa all'implementazione delle e
 
 ## Riferimenti Esterni
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Documentazione Laravel Translatable](../lang/docs/translatable/index.md)
 - [Best Practices per Laravel Translatable](../lang/docs/translatable/best-practices.md)
 - [Documentazione Laravel Translatable](modules/lang/docs/translatable/index.md)
 - [Best Practices per Laravel Translatable](modules/lang/docs/translatable/best-practices.md)
 - [Documentazione Laravel Translatable](../lang/docs/translatable/index.md)
 - [Best Practices per Laravel Translatable](../lang/docs/translatable/best-practices.md)
-<<<<<<< HEAD
-=======
 - [Documentazione Laravel Translatable](../Lang/docs/translatable/index.md)
 - [Best Practices per Laravel Translatable](../Lang/docs/translatable/best-practices.md)
 - [Documentazione Laravel Translatable](Modules/Lang/docs/translatable/index.md)
 - [Best Practices per Laravel Translatable](Modules/Lang/docs/translatable/best-practices.md)
 - [Documentazione Laravel Translatable](../Lang/docs/translatable/index.md)
 - [Best Practices per Laravel Translatable](../Lang/docs/translatable/best-practices.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

@@ -12,16 +12,6 @@ namespace Modules\Cms\View\Components;
 class Section extends Component
 {
     public string $slug;
-<<<<<<< HEAD
-    public ?string $view = null;
-    public array $data = [];
-
-    public function __construct(string $slug, ?string $view = null, array $data = [])
-    {
-        $this->slug = $slug;
-        $this->view = $view;
-        $this->data = $data;
-=======
     public string $tpl = 'v1';
 
     public function __construct(string $slug, ?string $tpl = null)
@@ -30,25 +20,17 @@ class Section extends Component
         if (is_string($tpl)) {
             $this->tpl = $tpl;
         }
->>>>>>> dev
     }
 
     public function render()
     {
-<<<<<<< HEAD
-        $section = SectionModel::where('slug', $this->slug)->first();
-        // ...
-=======
         return view('pub_theme::components.sections.'.$this->slug.'.'.$this->tpl, [
             'blocks' => SectionModel::getBlocksBySlug($this->slug),
         ]);
->>>>>>> dev
     }
 }
 ```
 
-<<<<<<< HEAD
-=======
 ## Contratto runtime reale
 
 Con il contratto attuale del componente, questa chiamata:
@@ -72,7 +54,6 @@ oppure deve passare un `tpl` esplicito compatibile.
 
 Questo e' un vincolo importante: se il tema ha solo `header.blade.php` o `footer.blade.php`, la pagina va in `500` con `View [components.sections.<slug>.v1] not found`.
 
->>>>>>> dev
 ### View di Default
 ```blade
 <section @class([
@@ -160,16 +141,9 @@ Questo permette:
 - Stili specifici per sezione via slug
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Blocchi](../blocks/readme.md)
-=======
 - [Documentazione Blocchi](../blocks/README.md)
->>>>>>> 4b6b99016 (first commit)
 - [Gestione Sezioni](../section-management.md)
 - [Documentazione Root](../../../../docs/components.md)
-=======
 - [Documentazione Blocchi](../blocks/readme.md)
 - [Gestione Sezioni](../section-management.md)
 - [Documentazione Root](../../../../../docs/components.md)
->>>>>>> dev

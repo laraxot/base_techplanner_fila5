@@ -86,14 +86,7 @@ use TransTrait {
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README Modulo Xot](./readme.md)
-=======
 - [README Modulo Xot](./README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README Modulo Xot](./readme.md)
->>>>>>> dev
 - [Code Quality Rules](./code-quality.md)
 - [Best Practices](./best-practices.md)

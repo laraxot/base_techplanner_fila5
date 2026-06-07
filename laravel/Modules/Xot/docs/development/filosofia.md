@@ -119,12 +119,5 @@ Lo sviluppo del progetto il progetto è guidato dai seguenti principi fondamenta
 
 ## Collegamenti tra versioni di filosofia.md
 * [filosofia.md](docs/filosofia.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [filosofia.md](../../../xot/docs/development/filosofia.md)
-=======
 * [filosofia.md](../../../Xot/docs/development/filosofia.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [filosofia.md](../../../xot/docs/development/filosofia.md)
->>>>>>> dev

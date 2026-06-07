@@ -8,10 +8,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
-<<<<<<< HEAD
-use Exception;
-=======
->>>>>>> dev
 use Illuminate\Database\Eloquent\Model;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
@@ -31,21 +27,12 @@ class GetModelByModelTypeAction
         Assert::isAOf($model_class, Model::class);
 
         /** @var class-string<Model> $model_class */
-<<<<<<< HEAD
-        $model = $model_id !== null
-            ? $model_class::query()->find($model_id)
-            : new $model_class;
-
-        if (! ($model instanceof Model)) {
-            throw new Exception('['.__LINE__.']['.class_basename($this).']');
-=======
         $model = null !== $model_id
             ? $model_class::query()->find($model_id)
             : new $model_class();
 
         if (! $model instanceof Model) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
->>>>>>> dev
         }
 
         return $model;

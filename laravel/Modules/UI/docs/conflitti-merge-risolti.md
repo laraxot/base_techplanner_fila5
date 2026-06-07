@@ -1,14 +1,7 @@
 # Conflitti di Merge Risolti nel Modulo UI
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Conflitti Risolti ([DATE])
-=======
 ## Conflitti Risolti (2025-05-13)
->>>>>>> 4b6b99016 (first commit)
-=======
 ## Conflitti Risolti ([DATE])
->>>>>>> dev
 
 ### 1. UIServiceProvider.php
 
@@ -64,12 +57,7 @@ La strategia adottata per la risoluzione dei conflitti si è basata sui seguenti
 Questa documentazione integra le informazioni sui conflitti risolti, fornendo dettagli sui problemi, le soluzioni adottate e le motivazioni, per mantenere la memoria storica delle scelte e facilitare la comprensione dell'evoluzione del sistema.
 
 ## Backlink
-<<<<<<< HEAD
-- [Torna a docs/links.md](../../../../docs/links.md)
-<<<<<<< HEAD
-=======
 - [Torna a docs/links.md](../../../../../docs/links.md)
->>>>>>> dev
 - [Vedi anche: UI/docs/README.md](./readme.md)
 - [Vedi anche: Xot/docs/README.md](../../xot/docs/readme.md)
 - [Vedi anche: Blog/docs/README.md](../../blog/docs/readme.md)
@@ -78,8 +66,6 @@ Questa documentazione integra le informazioni sui conflitti risolti, fornendo de
 # Conflitti di Merge Risolti nel Modulo UI
 
 ## Conflitti Risolti ([DATE])
-<<<<<<< HEAD
-=======
 - [Vedi anche: UI/docs/README.md](./README.md)
 - [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
 - [Vedi anche: Blog/docs/README.md](../../Blog/docs/README.md)
@@ -88,9 +74,6 @@ Questa documentazione integra le informazioni sui conflitti risolti, fornendo de
 # Conflitti di Merge Risolti nel Modulo UI
 
 ## Conflitti Risolti (2025-05-13)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ### 1. UIServiceProvider.php
 
@@ -146,24 +129,14 @@ La strategia adottata per la risoluzione dei conflitti si è basata sui seguenti
 Questa documentazione integra le informazioni sui conflitti risolti, fornendo dettagli sui problemi, le soluzioni adottate e le motivazioni, per mantenere la memoria storica delle scelte e facilitare la comprensione dell'evoluzione del sistema.
 
 ## Backlink
-<<<<<<< HEAD
-- [Torna a docs/links.md](../../../../docs/links.md)
-<<<<<<< HEAD
-=======
 - [Torna a docs/links.md](../../../../../docs/links.md)
->>>>>>> dev
 - [Vedi anche: UI/docs/README.md](./readme.md)
 - [Vedi anche: Xot/docs/README.md](../../xot/docs/readme.md)
 - [Vedi anche: Blog/docs/README.md](../../blog/docs/readme.md)
 - [Vedi anche: Cms/docs/README.md](../../cms/docs/readme.md)
 - [Vedi anche: Comment/docs/README.md](../../comment/docs/readme.md)
-<<<<<<< HEAD
-=======
 - [Vedi anche: UI/docs/README.md](./README.md)
 - [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
 - [Vedi anche: Blog/docs/README.md](../../Blog/docs/README.md)
 - [Vedi anche: Cms/docs/README.md](../../Cms/docs/README.md)
 - [Vedi anche: Comment/docs/README.md](../../Comment/docs/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

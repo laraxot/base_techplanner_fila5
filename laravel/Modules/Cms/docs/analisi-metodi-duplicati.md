@@ -2,11 +2,7 @@
 
 ## Riferimento Principale
 
-<<<<<<< HEAD
-📚 **Documento Completo:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
-=======
 📚 **Documento Completo:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
->>>>>>> dev
 
 ## Stato del Modulo Cms
 
@@ -203,29 +199,14 @@ protected function casts(): array
 
 ## Link Correlati
 
-<<<<<<< HEAD
-- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
-<<<<<<< HEAD
-- 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
-=======
 - 📖 [Modulo Xot - Classi Base](../../Xot/docs/analisi-metodi-duplicati.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
 - 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
->>>>>>> dev
 - 📖 [Convenzioni Namespace Filament](./convenzioni-namespace-filament.md)
 - 📖 [Gestione Temi](./frontoffice/create-theme.md)
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Data:** [DATE]
-=======
 **Data:** 2025-10-15
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data:** [DATE]
->>>>>>> dev
 **Status:** 📋 Draft per Review

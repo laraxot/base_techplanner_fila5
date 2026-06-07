@@ -67,15 +67,8 @@ use Modules\NomeModulo\App\Filament\Widgets\MioWidget;
 public function boot(): void
 {
     // Altre operazioni...
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     $this->registerFilamentWidgets();
 }
 

@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -63,32 +59,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'job_id' => [
-            'label' => 'Lavoro',
-        ],
-        'status' => [
-            'label' => 'Stato',
-        ],
-        'progress' => [
-            'label' => 'Progresso',
-        ],
-        'start_time' => [
-            'label' => 'Ora inizio',
-        ],
-        'end_time' => [
-            'label' => 'Ora fine',
-        ],
-        'estimated_completion' => [
-            'label' => 'Completamento stimato',
-        ],
-        'created_at' => [
-            'label' => 'Creato il',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -99,12 +69,4 @@ return [
             'label' => 'Annulla lavoro',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 4b6b99016 (first commit)
-=======
-];
->>>>>>> dev

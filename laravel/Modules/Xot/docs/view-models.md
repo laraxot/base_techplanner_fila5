@@ -1,6 +1,4 @@
 
-<<<<<<< HEAD
-=======
 https://qiita.com/nunulk/items/4c491634ad843c7a138e
 
 
@@ -38,8 +36,3 @@ http://www.javaear.com/question/21542893.html
 
 
 https://gitee.com/gordensong/view-model
-
-
-
-
->>>>>>> dev

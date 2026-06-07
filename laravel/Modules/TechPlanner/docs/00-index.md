@@ -1,12 +1,6 @@
 # TechPlanner Module - Documentation Index
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Last Update**: 13 Dicembre 2025  
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Status**: ✅ PHPStan Level 10 Compliant  
 **Module Version**: 1.0
 

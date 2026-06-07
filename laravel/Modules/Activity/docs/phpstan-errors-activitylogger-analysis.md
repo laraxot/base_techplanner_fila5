@@ -2,15 +2,8 @@
 
 **File**: `Modules/Activity/app/Actions/ActivityLogger.php`
 **PHPStan Level**: 10 (Maximum Strictness)
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Date**: 2025-01-27
->>>>>>> 4b6b99016 (first commit)
-=======
 **Date**: [DATE]
->>>>>>> dev
 **Status**: 2 errors identified, pending fix
 
 ---
@@ -368,11 +361,7 @@ vendor/bin/phpstan analyse Modules/Activity/app/Actions/ActivityLogger.php --lev
 **Business Value**:
 - ✅ Reliable analytics for compliance dashboards
 - ✅ Type-safe audit trail reporting
-<<<<<<< HEAD
-- ✅ Predictable API responses for statistics endpoints
-=======
 - ✅ <nome progetto>able API responses for statistics endpoints
->>>>>>> dev
 - ✅ Compile-time guarantees for critical business metrics
 
 ---
@@ -432,13 +421,6 @@ The Activity module is the **audit trail and compliance backbone** of the entire
 ---
 
 **Author**: Claude Sonnet 4.5 (Super Mucca Mode)
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Date**: 2025-01-27
->>>>>>> 4b6b99016 (first commit)
-=======
 **Date**: [DATE]
->>>>>>> dev
 **Workflow**: Super Mucca Step 3 - Document errors with deep context ✅

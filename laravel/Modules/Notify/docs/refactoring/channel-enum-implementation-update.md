@@ -90,13 +90,8 @@ This document records the successful implementation of ChannelEnum in `SendRecor
 
 ## Related Documentation
 
-<<<<<<< HEAD
-- [Existing ChannelEnum documentation](../docs/refactoring/channel-enum-refactoring.md)
-- [Enum-driven architecture patterns](../docs/patterns/enum-architecture.md)
-=======
 - [Existing ChannelEnum documentation](../../docs/refactoring/channel-enum-refactoring.md)
 - [Enum-driven architecture patterns](../../docs/patterns/enum-architecture.md)
->>>>>>> dev
 
 ## Verification
 

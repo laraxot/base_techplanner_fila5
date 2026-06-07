@@ -90,25 +90,16 @@ class {Model} extends {Package}{Model}
 - **[third-party-model-inheritance-philosophy.md](third-party-model-inheritance-philosophy.md)** - Complete philosophy guide
 
 ### Module-Specific Patterns
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - **[User Module](../user/docs/third-party-model-patterns.md)** - Permission & Role integration
 - **[Activity Module](../activity/docs/third-party-model-patterns.md)** - ActivityLog & EventSourcing
 
 ### Related Documentation
 - **[Model Architecture](models/model_architecture.md)** - Laraxot model patterns
-<<<<<<< HEAD
-=======
 - **[User Module](../User/docs/third-party-model-patterns.md)** - Permission & Role integration
 - **[Activity Module](../Activity/docs/third-party-model-patterns.md)** - ActivityLog & EventSourcing
 
 ### Related Documentation
 - **[Model Architecture](models/MODEL_ARCHITECTURE.md)** - Laraxot model patterns
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 - **[Migration Philosophy](migration-philosophy.md)** - Database migration patterns
 
 ## 🔍 Verification Commands

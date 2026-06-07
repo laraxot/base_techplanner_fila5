@@ -38,11 +38,7 @@ return [
             'cta' => 'Get hired by top Laravel companies',
         ],
     ],
-<<<<<<< HEAD
-    'social_proof' => 'Join the LaravelPizza community',
-=======
     'social_proof' => 'Join the <nome progetto> community',
->>>>>>> dev
     'fields' => [
         'first_name' => [
             'label' => 'First Name',
@@ -115,11 +111,7 @@ return [
     'login' => 'Sign in',
     'required_consent_missing' => 'You must accept all required consents to proceed.',
     'success' => 'Registration completed successfully! Your account has been created GDPR compliant.',
-<<<<<<< HEAD
-    'success_message' => 'Welcome to LaravelPizza Meetups! Your registration is complete and all your consents have been correctly recorded.',
-=======
     'success_message' => 'Welcome to <nome progetto> Meetups! Your registration is complete and all your consents have been correctly recorded.',
->>>>>>> dev
     'error' => 'Registration error',
     'error_message' => 'An error occurred during registration. Please try again later. If the problem persists, contact our support.',
     'clickbait' => [
@@ -135,22 +127,14 @@ return [
         'by_registering' => 'By registering you agree to our Terms and Privacy Policy',
     ],
     'seo' => [
-<<<<<<< HEAD
-        'description' => 'Join LaravelPizza community for exclusive meetups, premium tutorials, and networking. Free access to workshops and community events.',
-=======
         'description' => 'Join <nome progetto> community for exclusive meetups, premium tutorials, and networking. Free access to workshops and community events.',
->>>>>>> dev
         'laravel_meetup' => 'Laravel meetup',
         'laravel_community' => 'Laravel community',
         'php_developer_community' => 'PHP developer community',
         'laravel_tutorials' => 'Laravel tutorials',
         'laravel_workshops' => 'Laravel workshops',
         'laravel_networking' => 'Laravel networking',
-<<<<<<< HEAD
-        'laravelpizza' => 'LaravelPizza',
-=======
         '<nome progetto>' => '<nome progetto>',
->>>>>>> dev
     ],
     'navigation' => [
         'label' => 'Missing Navigation Label',

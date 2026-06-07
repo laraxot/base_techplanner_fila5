@@ -54,10 +54,6 @@ aurmich/dev
 aurmich/dev
 
 ## Collegamenti tra versioni di level_7.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [level_7.md](laravel/modules/chart/project_docs/phpstan/level_7.md)
 * [level_7.md](laravel/modules/reporting/project_docs/phpstan/level_7.md)
 * [level_7.md](laravel/modules/gdpr/project_docs/phpstan/level_7.md)
@@ -73,8 +69,6 @@ aurmich/dev
 * [level_7.md](laravel/modules/activity/project_docs/phpstan/level_7.md)
 * [level_7.md](laravel/modules/patient/project_docs/phpstan/level_7.md)
 * [level_7.md](laravel/modules/cms/project_docs/phpstan/level_7.md)
-<<<<<<< HEAD
-=======
 * [level_7.md](laravel/Modules/Chart/project_docs/phpstan/level_7.md)
 * [level_7.md](laravel/Modules/Reporting/project_docs/phpstan/level_7.md)
 * [level_7.md](laravel/Modules/Gdpr/project_docs/phpstan/level_7.md)
@@ -90,9 +84,6 @@ aurmich/dev
 * [level_7.md](laravel/Modules/Activity/project_docs/phpstan/level_7.md)
 * [level_7.md](laravel/Modules/Patient/project_docs/phpstan/level_7.md)
 * [level_7.md](laravel/Modules/Cms/project_docs/phpstan/level_7.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 # Rapporto PHPStan Livello 7 per il modulo Xot
 
 Data analisi: 2025-04-15 21:55:11
@@ -149,10 +140,6 @@ aurmich/dev
 aurmich/dev
 
 ## Collegamenti tra versioni di level_7.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [level_7.md](laravel/modules/chart/docs/phpstan/level_7.md)
 * [level_7.md](laravel/modules/reporting/docs/phpstan/level_7.md)
 * [level_7.md](laravel/modules/gdpr/docs/phpstan/level_7.md)
@@ -168,8 +155,6 @@ aurmich/dev
 * [level_7.md](laravel/modules/activity/docs/phpstan/level_7.md)
 * [level_7.md](laravel/modules/patient/docs/phpstan/level_7.md)
 * [level_7.md](laravel/modules/cms/docs/phpstan/level_7.md)
-<<<<<<< HEAD
-=======
 * [level_7.md](laravel/Modules/Chart/docs/phpstan/level_7.md)
 * [level_7.md](laravel/Modules/Reporting/docs/phpstan/level_7.md)
 * [level_7.md](laravel/Modules/Gdpr/docs/phpstan/level_7.md)
@@ -185,6 +170,3 @@ aurmich/dev
 * [level_7.md](laravel/Modules/Activity/docs/phpstan/level_7.md)
 * [level_7.md](laravel/Modules/Patient/docs/phpstan/level_7.md)
 * [level_7.md](laravel/Modules/Cms/docs/phpstan/level_7.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

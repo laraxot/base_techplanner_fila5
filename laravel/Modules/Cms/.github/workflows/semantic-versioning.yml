@@ -4,13 +4,8 @@ on:
   push:
     branches:
       - main
-<<<<<<< HEAD
-    paths:
-      - 'Modules/Cms/**'
-=======
       - master
   workflow_dispatch:
->>>>>>> dev
 
 permissions:
   contents: write
@@ -27,10 +22,5 @@ jobs:
         uses: mathieudutour/github-tag-action@v6.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-<<<<<<< HEAD
-          tag_prefix: Modules/Cms/v
-          release_branches: main
-=======
           tag_prefix: v
           release_branches: main,master
->>>>>>> dev

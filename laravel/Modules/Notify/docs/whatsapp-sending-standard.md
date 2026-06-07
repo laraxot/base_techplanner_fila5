@@ -110,15 +110,8 @@ final class SendTwilioWhatsAppAction implements WhatsAppActionInterface
     public function execute(WhatsAppMessageData $data): array
     {
         $client = new Client();
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $endpoint = 'https://api.twilio.com/[DATE]/Accounts/' . config('whatsapp.drivers.twilio.account_sid') . '/Messages.json';
-=======
         $endpoint = 'https://api.twilio.com/2010-04-01/Accounts/' . config('whatsapp.drivers.twilio.account_sid') . '/Messages.json';
->>>>>>> 4b6b99016 (first commit)
-=======
         $endpoint = 'https://api.twilio.com/[DATE]/Accounts/' . config('whatsapp.drivers.twilio.account_sid') . '/Messages.json';
->>>>>>> dev
         $auth = [config('whatsapp.drivers.twilio.account_sid'), config('whatsapp.drivers.twilio.auth_token')];
 
         $body = [

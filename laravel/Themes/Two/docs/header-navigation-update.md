@@ -69,9 +69,6 @@
 - ✅ 用户认证状态显示 (Avatar + Dropdown)
 - ✅ 严格遵循 JSON 数据结构 (Foreach Loops)
 
-<<<<<<< HEAD
-### 2. header.json 配置更新
-=======
 ### 2. 登录 CTA 动态化（Login CTA Behaviour）
 
 为保持前台与认证流程一致，头部 slim 区域的登录 CTA 现在根据用户状态动态切换：
@@ -84,7 +81,6 @@
 该行为记录在 `header_bi5.blade.php` 中，确保主题级组件即可完成导航 CTA 管理。
 
 ### 3. header.json 配置更新
->>>>>>> dev
 
 **品牌信息:**
 ```json

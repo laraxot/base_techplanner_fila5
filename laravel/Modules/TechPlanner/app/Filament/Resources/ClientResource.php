@@ -4,13 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Filament\Resources;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Override;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Modules\Geo\Filament\Forms\Components\AddressSection;
@@ -18,14 +11,7 @@ use Modules\Notify\Filament\Forms\Components\ContactSection;
 use Modules\TechPlanner\Filament\Forms\Components\CompanySection;
 use Modules\TechPlanner\Models\Client;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Override;
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-use Override;
->>>>>>> dev
 
 /**
  * @property ClientResource $resource

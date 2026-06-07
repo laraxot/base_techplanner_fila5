@@ -612,10 +612,6 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Analisi Completa Codice](./comprehensive_code_analysis.md)
 - [Architettura Moduli](./architecture.md)
 - [Performance Guide](./performance_guide.md)
@@ -623,8 +619,6 @@ class AlertWidget extends BaseTableWidget
 ---
 
 **Data Creazione**: [DATE]
-<<<<<<< HEAD
-=======
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](./ARCHITECTURE.md)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
@@ -632,9 +626,6 @@ class AlertWidget extends BaseTableWidget
 ---
 
 **Data Creazione**: 2025-01-06
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
 **Benefici**: ALTI
@@ -709,15 +700,10 @@ class LimeJsonService
     // Rimuovere getInstance() e make() duplicati
 }
 
-<<<<<<< HEAD
-// QuaerisService.php
-class QuaerisService
-=======
 // healthcare_appService.php
 class healthcare_appService
 // ModuloEsempioService.php
 class ModuloEsempioService
->>>>>>> dev
 {
     use SingletonTrait;
 
@@ -1190,15 +1176,10 @@ class LimeJsonService
     // Mantenere solo la logica specifica
 }
 
-<<<<<<< HEAD
-// QuaerisService.php
-class QuaerisService
-=======
 // healthcare_appService.php
 class healthcare_appService
 // ModuloEsempioService.php
 class ModuloEsempioService
->>>>>>> dev
 {
     use SingletonTrait;
 
@@ -1266,10 +1247,6 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Analisi Completa Codice](./comprehensive_code_analysis.md)
 - [Architettura Moduli](./architecture.md)
 - [Performance Guide](./performance_guide.md)
@@ -1277,8 +1254,6 @@ class AlertWidget extends BaseTableWidget
 ---
 
 **Data Creazione**: [DATE]
-<<<<<<< HEAD
-=======
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](./ARCHITECTURE.md)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
@@ -1286,9 +1261,6 @@ class AlertWidget extends BaseTableWidget
 ---
 
 **Data Creazione**: 2025-01-06
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
 **Benefici**: ALTI

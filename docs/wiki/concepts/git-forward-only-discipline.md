@@ -2,7 +2,11 @@
 
 ## Panoramica
 
-In questo progetto è adottata la disciplina operativa **"Forward-Only"** per la gestione della storia Git. Non si ripristinano mai vecchie versioni del codice tramite comandi distruttivi (`revert`, `reset --hard`), ma si implementano nuove versioni che correggono o migliorano lo stato precedente.
+In questo progetto è adottata la disciplina operativa **"Forward-Only"** per la gestione della storia Git.
+
+**Regola standing utente:** studiare la history sì; **ripristinare** file o directory da commit/branch precedenti **no** (`checkout --`, `restore --source`, `git show ref:path > path`). Si implementano nuove patch sul working tree attuale.
+
+Canon operativo: [git-forward-only.md](../rules/git-forward-only.md) · Cursor: `bashscripts/ai/.cursor/rules/git-forward-only.mdc`
 
 ---
 
@@ -21,11 +25,9 @@ In un ambiente dove più agenti e sviluppatori umani lavorano simultaneamente, i
 
 ## Linee Guida Operative
 
-1. **Mai fare `git revert`**: Se un commit ha introdotto un bug, crea un nuovo commit con il fix.
-2. **Mai fare `git reset --hard`** su branch condivisi: Studia la versione precedente per capire l'errore, ma scrivi il nuovo codice nel punto attuale della storia.
-3. **Documenta il "Perché"**: Nel messaggio di commit del fix, riferisciti all'errore precedente per mantenere il collegamento logico.
-4. **Ingest Continuo**: Quando incontri un errore di build o logico, documentalo nel `docs/wiki/log.md` del modulo prima di risolverlo.
+1. **Mai `git revert` / `git reset --hard`** come scorciatoia agent senza ordine utente.
+2. **Mai `git checkout <ref> -- <path>`** né redirect da `git show` — solo lettura + patch manuale.
+3. **Documenta il "Perché"** nel commit o in `docs/wiki/log.md` del modulo.
+4. **Ingest continuo** nel second brain quando la policy si applica a un caso nuovo.
 
----
-
-*Ultimo aggiornamento: Aprile 2026*
+Memoria: [git-forward-only-standing-rule.md](../memories/git-forward-only-standing-rule.md)

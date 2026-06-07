@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -69,35 +65,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'name' => [
-            'label' => 'Nome',
-        ],
-        'total_jobs' => [
-            'label' => 'Trabalhos Totais',
-        ],
-        'pending_jobs' => [
-            'label' => 'Trabalhos Pendentes',
-        ],
-        'failed_jobs' => [
-            'label' => 'Trabalhos Falhados',
-        ],
-        'failed_job_ids' => [
-            'label' => 'IDs de Trabalhos Falhados',
-        ],
-        'options' => [
-            'label' => 'Opções',
-        ],
-        'created_at' => [
-            'label' => 'Criado Em',
-        ],
-        'finished_at' => [
-            'label' => 'Finalizado Em',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [

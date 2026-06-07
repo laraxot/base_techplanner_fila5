@@ -187,10 +187,7 @@ npx lighthouse http://localhost --view
 
 ---
 
-<<<<<<< HEAD
 **Last Updated**: 2025-01-27  
-=======
->>>>>>> dev
 **Next Review**: 2025-02-27  
 **Status**: 🚀 ACTIVE IMPLEMENTATION  
 **Confidence Level**: 98%  
@@ -198,13 +195,3 @@ npx lighthouse http://localhost --view
 ---
 
 *Il tema Sixteen mantiene i più alti standard di qualità del codice attraverso l'utilizzo di strumenti di analisi all'avanguardia.*
-
-
-
-
-
-
-
-
-
-

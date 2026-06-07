@@ -14,10 +14,6 @@ use Flowframe\Trend\Trend;
 // use Filament\Widgets\Concerns\InteractsWithPageFilters; // Temporaneamente commentato per evitare conflitti trait in Filament 4.x
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-use Illuminate\Support\Facades\Log;
-=======
->>>>>>> dev
 use Modules\User\Models\AuthenticationLog;
 use Webmozart\Assert\Assert;
 
@@ -40,15 +36,7 @@ class UsersChartWidget extends ChartWidget implements HasActions, HasForms
 
     public function getHeading(): Htmlable|string|null
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         return __('user::widgets.users_chart.heading');
-=======
-        return 'Authentication Log';
->>>>>>> 4b6b99016 (first commit)
-=======
-        return __('user::widgets.users_chart.heading');
->>>>>>> dev
     }
 
     /**
@@ -59,11 +47,7 @@ class UsersChartWidget extends ChartWidget implements HasActions, HasForms
         return Action::make('test')
             ->requiresConfirmation()
             ->action(function (array $arguments): void {
-<<<<<<< HEAD
-                Log::debug('Test action called', $arguments);
-=======
                 // Test action - no logging
->>>>>>> dev
             });
     }
 
@@ -138,15 +122,7 @@ class UsersChartWidget extends ChartWidget implements HasActions, HasForms
         return [
             'datasets' => [
                 [
-<<<<<<< HEAD
-<<<<<<< HEAD
                     'label' => __('user::widgets.users_chart.label'),
-=======
-                    'label' => 'Number of logins executed',
->>>>>>> 4b6b99016 (first commit)
-=======
-                    'label' => __('user::widgets.users_chart.label'),
->>>>>>> dev
                     'data' => $chartData,
                 ],
             ],

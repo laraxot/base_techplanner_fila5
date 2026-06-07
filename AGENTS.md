@@ -1,154 +1,4 @@
-<<<<<<< HEAD
-# AGENTS.md
-
-<<<<<<< HEAD
-This file provides essential guidance for agentic coding agents working in this Laravel modular application with Filament v5.
-
-## 🚨 CRITICAL NEW Rules
-
-### Volt + Folio + Laraxot: niente rotte né controller in web.php
-
-**Frontend e pagine auth sono gestiti solo da Volt + Folio + Laraxot.** Non creare rotte in `web.php` (né GET né POST) per frontend/auth; non creare controller per le pagine. Eccezioni: solo casi documentati (es. logout). Non aggiungere rotte POST “di fallback” (es. per auth/login): il submit è solo via Livewire/Filament widget. Regola: [.cursor/rules/no_web_php_front_backoffice.mdc](.cursor/rules/no_web_php_front_backoffice.mdc).
-
-### Auth Forms - Solo Filament Widget
-
-**I form di autenticazione (login, register, reset password) si gestiscono SEMPRE con Filament widget (LoginWidget, RegisterWidget, ecc.), MAI con form HTML tradizionali.** Vietato `<form method="POST" action="{{ route('login') }}">` con @csrf e input raw nelle pagine tema. Usare `@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)` (e widget analoghi). Regola: [.cursor/rules/filament-login-widget.mdc](.cursor/rules/filament-login-widget.mdc).
-
-### Filament - VIETATO ->label(), ->placeholder(), ->helperText()
-
-**Le traduzioni sono gestite da LangServiceProvider tramite i file in `Modules/<Modulo>/lang/`.** Mai usare `->label()`, `->placeholder()` o `->helperText()` nei componenti Filament. Per nascondere una label usare `->hiddenLabel()`, non `->label('')`. Regola: [.cursor/rules/no-filament-labels.mdc](.cursor/rules/no-filament-labels.mdc).
-
-### Frontend Development - NO Controllers
-
-**MAI, MAI, MAI usare Controllers tradizionali per il frontend. SEMPRE usare Folio + Volt.**
-
-```php
-// ❌ SBAGLIATO - MAI FARE QUESTO
-// app/Http/Controllers/PagesController.php
-class PagesController extends Controller {
-    public function about() {
-        return view('pages.about');
-    }
-}
-
-// ✅ CORRETTO - Folio Pages
-// resources/views/pages/chi-si-siamo.blade.php
-<x-page side="content" slug="about">
-    <h1>Chi Siamo</h1>
-</x-page>
-```
-
-**DOCUMENTAZIONE COMPLETA**: [docs/critical-frontend-rules.md](docs/critical-frontend-rules.md)
-
-### Component Validation Before Creating Pages
-
-**SEMPRE verificare l'esistenza dei componenti prima di definire i blocchi JSON.**
-
-```bash
-# Verification script
-for view in "pub_theme::components.blocks.hero.about" "pub_theme::components.content.split"; do
-    view_path=$(echo $view | sed 's/pub_theme::/laravel\/Themes\/Two\/resources\/views\//g')
-    if [ ! -f "$view_path" ]; then
-        echo "❌ Missing: $view_path"
-    fi
-done
-```
-
-### WCAG Contrast Requirements
-
-**SEMPRE calcolare il rapporto di contrasto prima di scegliere i colori.**
-
-```php
-// WCAG AA requires 4.5:1 for normal text
-// WCAG AAA requires 7:1 for normal text
-
-// ❌ SBAGLIATO - Contrasto 4.2:1 (sotto AA)
-text-gray-400 (#9CA3AF) su #0F3460
-
-// ✅ CORRETTO - Contrasto 6:1 (AA)
-text-gray-200 (#E5E7EB) su #0F3460
-
-// ✅ CORRETTO - Contrasto 7:1 (AAA)
-text-gray-100 (#F3F4F6) su #0F3460
-```
-
-### Map Integration - FREE Only
-
-**SEMPRE usare servizi gratuiti per le mappe. MAI usare Google Maps API a pagamento.**
-
-```bash
-# ✅ CORRETTO - Servizi Free
-- OpenStreetMap (OSM) iframe embed
-- OpenStreetMap Static Maps
-- Nominatim per geocoding
-- Screenshot manuale da OSM
-
-# ❌ SBAGLIATO - Google Maps API
-- Google Maps Static API (richiede billing)
-- Google Maps Embed API (richiede API key con billing)
-```
-
-**Link a Google Maps ammesso solo per navigazione (direzioni), non per visualizzazione.**
-
-### Theme Assets - NO CDN per Alpine/JS
-
-**I temi (es. Two) hanno build proprio: `cd laravel/Themes/Two && npm install && npm run build && npm run copy`.** CSS e JS sono dentro il tema, serviti da `@vite(..., 'themes/Two')`. **NON caricare Alpine.js da CDN** nei layout: Livewire/Filament lo fornisce già. Caricare da CDN causa "Detected multiple instances of Alpine running". Regola: [.cursor/rules/theme-two-assets.mdc](.cursor/rules/theme-two-assets.mdc), [laravel/Themes/Two/docs/fix/layout.txt](laravel/Themes/Two/docs/fix/layout.txt).
-
-### Git Workflow - Commit Frequentemente
-
-**SEMPRE fare git commit e push quando il codice è stabile.**
-
-```bash
-# ✅ CORRETTO - Workflow standard
-1. Implementazione feature
-2. Test verifica
-3. Se tutto OK → git add .
-4. git commit -m "feat: descrizione"
-5. git push
-```
-
-**MAI aspettare perfezione assoluta prima di commit.**
-
-### Deployment e validazione produzione
-
-- **Sito in produzione**: https://sottana.net
-- **Deploy**: push sul branch `master` attiva l'auto-deploy
-- Dopo modifiche a frontend, contatti o mappa: verificare su produzione (es. https://sottana.net/it/contatti)
-- Doc: [docs/deployment-and-validation.md](docs/deployment-and-validation.md)
-
-### Accessibilità - WCAG 2.1
-
-**Validatore**: [MAUVE++](https://mauve.isti.cnr.it/) (CNR - ISTI)
-- Account richiesto per validazione completa
-- Documentazione: [laravel/Themes/Two/docs/wcag-compliance-plan.md](laravel/Themes/Two/docs/wcag-compliance-plan.md)
-
-**Problematiche WCAG Risolte**:
-- H44: Label form controls
-- G195: Focus indicator visibile
-- G18: Contrasto minimo 4.5:1
-- H98: Autocomplete form
-- C38: Reflow 320px
-- H30: Link descrittivi
-
-**Validazione CLI**:
-```bash
-lighthouse https://sottana.net/it --view
-npx @axe-core/cli https://sottana.net/it
-```
-
-### Continuous Improvement
-
-**Documentare sempre errori e lezioni apprese.**
-
-Vedi: [docs/continuous-improvement-lessons.md](docs/continuous-improvement-lessons.md)
-
-### Documentation Rules
-
-- Git tiene traccia automaticamente delle modifiche
-- Le date appesantiscono la manutenzione e creano merge conflict
-=======
 This file provides essential guidance for agentic coding agents working in this Laravel modular application with Filament v4.
->>>>>>> 4b6b99016 (first commit)
 
 ## Build/Lint/Test Commands
 
@@ -219,7 +69,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 ### Critical Architecture Rules
 
-<<<<<<< HEAD
 #### 🔄 **GIT COMMIT/PUSH RULE** - CRITICAL RULE
 **SEMPRE fare git commit e git push quando il codice è stabile e funzionante!**
 
@@ -318,8 +167,6 @@ name('pages.services');
 <!-- Your HTML/Blade content -->
 ```
 
-=======
->>>>>>> 4b6b99016 (first commit)
 #### 1. NEVER Extend Filament Directly
 ```php
 // ❌ WRONG
@@ -472,7 +319,6 @@ class MyModel extends BaseModel
         return isset($this->name) ? $this->name : 'Unknown';
     }
 }
-=======
 # AGENTS.md — On-Demand Stub
 
 Regole, skill e memorie vivono solo in `docs/wiki/`. Caricamento on-demand via QMD.
@@ -499,4 +345,3 @@ Regole, skill e memorie vivono solo in `docs/wiki/`. Caricamento on-demand via Q
 - Stesso task multi-agente → `docs/chat/INDEX.md` + issue GitHub (`git remote -v`)
 
 *Stub ≤50 righe — SSoT: docs/wiki/*
->>>>>>> dev

@@ -47,12 +47,4 @@ class LegalRepresentativeResource extends XotBaseResource
             'edit' => EditLegalRepresentative::route('/{record}/edit'),
         ];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4b6b99016 (first commit)
-=======
-}
->>>>>>> dev

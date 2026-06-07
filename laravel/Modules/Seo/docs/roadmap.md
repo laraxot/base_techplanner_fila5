@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# Roadmap for Seo
-
-- [ ] Initial roadmap created automatically.
-=======
 # Roadmap (Module Seo)
 
 ## Current roadmap
@@ -33,4 +28,3 @@
 - [roadmap/quality.md](roadmap/quality.md)
 - [roadmap/vision.md](roadmap/vision.md)
 - [seo-optimization-roadmap.md](seo-optimization-roadmap.md)
->>>>>>> dev

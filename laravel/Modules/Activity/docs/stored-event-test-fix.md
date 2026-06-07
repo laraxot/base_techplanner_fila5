@@ -252,14 +252,7 @@ test('stored event has query builder methods documented', function (): void {
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Data:** [DATE]
-=======
 **Data:** 2026-01-10
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data:** [DATE]
->>>>>>> dev
 **Stato:** Pronto per implementazione
 **Test Type:** Behavior > Implementation ✅

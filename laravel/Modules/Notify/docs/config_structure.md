@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Struttura di Configurazione nei Moduli SaluteOra
-=======
 # Struttura di Configurazione nei Moduli Quaeris
->>>>>>> dev
 
 ## Principi di Configurazione
 

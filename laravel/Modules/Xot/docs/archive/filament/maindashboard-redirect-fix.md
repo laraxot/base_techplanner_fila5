@@ -154,23 +154,14 @@ performance::admin
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [PDND Redirect Loop Fix](../../pdnd/project_docs/redirect_loop_fix.md)
 - [XotBasePanelProvider](xotbasepanelprovider.md)
 - [User Role Management](../../user/project_docs/console_commands/readme.md)
 - [Filament Best Practices](../../../project_docs/filament-best-practices.md)
-<<<<<<< HEAD
-=======
 - [PDND Redirect Loop Fix](../../Pdnd/project_docs/redirect_loop_fix.md)
 - [XotBasePanelProvider](xotbasepanelprovider.md)
 - [User Role Management](../../User/project_docs/console_commands/README.md)
 - [Filament Best Practices](../../../project_docs/FILAMENT-BEST-PRACTICES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Aggiornamenti
 
@@ -341,24 +332,14 @@ performance::admin
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [PDND Redirect Loop Fix](../../pdnd/docs/redirect_loop_fix.md)
-- [XotBasePanelProvider](xotbasepanelprovider.md)
-- [User Role Management](../../user/docs/console_commands/readme.md)
-- [Filament Best Practices](../../../docs/filament-best-practices.md)
-=======
 - [PDND Redirect Loop Fix](../../Pdnd/docs/redirect_loop_fix.md)
 - [XotBasePanelProvider](xotbasepanelprovider.md)
 - [User Role Management](../../User/docs/console_commands/README.md)
 - [Filament Best Practices](../../../docs/FILAMENT-BEST-PRACTICES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [PDND Redirect Loop Fix](../../pdnd/docs/redirect_loop_fix.md)
 - [XotBasePanelProvider](xotbasepanelprovider.md)
 - [User Role Management](../../user/docs/console_commands/readme.md)
 - [Filament Best Practices](../../../../docs/filament-best-practices.md)
->>>>>>> dev
 
 ## Aggiornamenti
 

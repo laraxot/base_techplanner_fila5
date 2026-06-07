@@ -4,38 +4,19 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
-<<<<<<< HEAD
-=======
-use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
-use Illuminate\Database\Eloquent\Relations\{HasMany, BelongsToMany, MorphMany};
-use Illuminate\Database\Eloquent\Casts\Attribute;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Illuminate\Support\Str;
 
 /**
  * Modello per le sedi comunali (Municipal Location)
-<<<<<<< HEAD
-<<<<<<< HEAD
- *
-=======
- * 
->>>>>>> 4b6b99016 (first commit)
- * Rappresenta sedi, uffici, punti di erogazione servizi
- * e altre location dell'ente secondo l'ontologia AGID
-=======
  *
  * Rappresenta sedi, uffici, punti di erogazione servizi
  * e altre location dell'ente secondo l'ontologia AGID
@@ -91,22 +72,18 @@ use Illuminate\Support\Str;
  * @property bool $is_accessible
  * @property int $priority_level
  * @property array|null $metadata
- * @property \Carbon\Carbon|null $created_at
- * @property \Carbon\Carbon|null $updated_at
- * @property \Carbon\Carbon|null $deleted_at
- *
- * @property-read \Illuminate\Database\Eloquent\Collection<int, ContactPoint> $contacts
- * @property-read \Illuminate\Database\Eloquent\Collection<int, OrganizationalUnit> $organizationalUnits
- * @property-read \Illuminate\Database\Eloquent\Collection<int, MunicipalService> $services
- * @property-read \Illuminate\Database\Eloquent\Collection<int, MunicipalEvent> $events
->>>>>>> dev
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Carbon|null $deleted_at
+ * @property-read Collection<int, ContactPoint> $contacts
+ * @property-read Collection<int, OrganizationalUnit> $organizationalUnits
+ * @property-read Collection<int, MunicipalService> $services
+ * @property-read Collection<int, MunicipalEvent> $events
  */
 class MunicipalLocation extends Model
 {
     use HasFactory, SoftDeletes;
 
-<<<<<<< HEAD
-=======
     /**
      * Tipologie di location secondo AGID
      */
@@ -166,7 +143,6 @@ class MunicipalLocation extends Model
         'assistance' => 'Assistenza',
     ];
 
->>>>>>> dev
     protected $table = 'sixteen_municipal_locations';
 
     protected $fillable = [
@@ -250,68 +226,6 @@ class MunicipalLocation extends Model
     ];
 
     /**
-<<<<<<< HEAD
-     * Tipologie di location secondo AGID
-     */
-    public const LOCATION_TYPES = [
-        'headquarters' => 'Sede Principale',
-        'office' => 'Ufficio',
-        'service_center' => 'Centro Servizi',
-        'library' => 'Biblioteca',
-        'school' => 'Scuola',
-        'sports_facility' => 'Impianto Sportivo',
-        'cultural_center' => 'Centro Culturale',
-        'healthcare' => 'Struttura Sanitaria',
-        'social_center' => 'Centro Sociale',
-        'cemetery' => 'Cimitero',
-        'market' => 'Mercato',
-        'parking' => 'Parcheggio',
-        'park' => 'Parco',
-        'square' => 'Piazza',
-        'monument' => 'Monumento',
-        'tourist_office' => 'Ufficio Turistico',
-        'waste_center' => 'Centro Raccolta Rifiuti',
-        'emergency' => 'Struttura di Emergenza',
-        'other' => 'Altro',
-    ];
-
-    /**
-     * Categorie principali
-     */
-    public const CATEGORIES = [
-        'administrative' => 'Amministrativo',
-        'cultural' => 'Culturale',
-        'educational' => 'Educativo',
-        'sports' => 'Sportivo',
-        'social' => 'Sociale',
-        'healthcare' => 'Sanitario',
-        'tourist' => 'Turistico',
-        'commercial' => 'Commerciale',
-        'environmental' => 'Ambientale',
-        'emergency' => 'Emergenza',
-    ];
-
-    /**
-     * Servizi disponibili
-     */
-    public const AVAILABLE_SERVICES = [
-        'citizen_services' => 'Servizi al Cittadino',
-        'document_collection' => 'Ritiro Documenti',
-        'payments' => 'Pagamenti',
-        'appointments' => 'Appuntamenti',
-        'information' => 'Informazioni',
-        'complaints' => 'Reclami/Segnalazioni',
-        'wifi' => 'WiFi Gratuito',
-        'photocopies' => 'Fotocopie',
-        'parking' => 'Parcheggio',
-        'accessibility' => 'Accessibilità',
-        'translation' => 'Servizi di Traduzione',
-        'assistance' => 'Assistenza',
-    ];
-
-    /**
-=======
->>>>>>> dev
      * Relazione con i punti di contatto
      */
     public function contacts(): MorphMany
@@ -413,173 +327,11 @@ class MunicipalLocation extends Model
     }
 
     /**
-<<<<<<< HEAD
-     * Accessor per il nome del tipo di location
-     */
-    protected function locationTypeName(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => self::LOCATION_TYPES[$this->location_type] ?? $this->location_type
-        );
-    }
-
-    /**
-     * Accessor per il nome della categoria
-     */
-    protected function categoryName(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => self::CATEGORIES[$this->category] ?? $this->category
-        );
-    }
-
-    /**
-     * Accessor per l'indirizzo completo
-     */
-    protected function fullAddress(): Attribute
-    {
-        return Attribute::make(
-            get: function () {
-                $address = $this->address;
-<<<<<<< HEAD
-
-                if ($this->civic_number) {
-                    $address .= ', '.$this->civic_number;
-                }
-
-                if ($this->postal_code) {
-                    $address .= ', '.$this->postal_code;
-                }
-
-                if ($this->city) {
-                    $address .= ' '.$this->city;
-                }
-
-                if ($this->province) {
-                    $address .= ' ('.$this->province.')';
-                }
-
-=======
-                
-                if ($this->civic_number) {
-                    $address .= ', ' . $this->civic_number;
-                }
-                
-                if ($this->postal_code) {
-                    $address .= ', ' . $this->postal_code;
-                }
-                
-                if ($this->city) {
-                    $address .= ' ' . $this->city;
-                }
-                
-                if ($this->province) {
-                    $address .= ' (' . $this->province . ')';
-                }
-                
->>>>>>> 4b6b99016 (first commit)
-                return $address;
-            }
-        );
-    }
-
-    /**
-     * Accessor per verificare se ha coordinate GPS
-     */
-    protected function hasCoordinates(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => isset($this->coordinates['lat']) && isset($this->coordinates['lng'])
-        );
-    }
-
-    /**
-     * Accessor per la latitudine
-     */
-    protected function latitude(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => $this->coordinates['lat'] ?? null
-        );
-    }
-
-    /**
-     * Accessor per la longitudine
-     */
-    protected function longitude(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => $this->coordinates['lng'] ?? null
-        );
-    }
-
-    /**
-     * Accessor per l'URL della sede
-     */
-    protected function url(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => route('municipal.locations.show', $this->slug)
-        );
-    }
-
-    /**
-     * Accessor per l'URL di Google Maps
-     */
-    protected function googleMapsUrl(): Attribute
-    {
-        return Attribute::make(
-            get: function () {
-                if ($this->has_coordinates) {
-                    return "https://www.google.com/maps?q={$this->latitude},{$this->longitude}";
-                }
-<<<<<<< HEAD
-
-                return 'https://www.google.com/maps/search/'.urlencode($this->full_address);
-=======
-                
-                return "https://www.google.com/maps/search/" . urlencode($this->full_address);
->>>>>>> 4b6b99016 (first commit)
-            }
-        );
-    }
-
-    /**
-     * Mutator per il nome (genera automaticamente lo slug)
-     */
-    protected function name(): Attribute
-    {
-        return Attribute::make(
-            set: function ($value) {
-                $this->attributes['name'] = $value;
-                if (empty($this->attributes['slug'])) {
-                    $this->attributes['slug'] = Str::slug($value);
-                }
-<<<<<<< HEAD
-
-=======
->>>>>>> 4b6b99016 (first commit)
-                return $value;
-            }
-        );
-    }
-
-    /**
-=======
->>>>>>> dev
      * Ottiene gli orari di apertura formattati
      */
     public function getFormattedOpeningHours(): array
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! $this->opening_hours || ! is_array($this->opening_hours)) {
-=======
-        if (!$this->opening_hours || !is_array($this->opening_hours)) {
->>>>>>> 4b6b99016 (first commit)
-=======
-        if (! $this->opening_hours || ! is_array($this->opening_hours)) {
->>>>>>> dev
             return [];
         }
 
@@ -597,14 +349,7 @@ class MunicipalLocation extends Model
         return collect($days)
             ->mapWithKeys(function ($day) use ($dayNames) {
                 $hours = $this->opening_hours[$day] ?? null;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
                 return [$dayNames[$day] => $hours];
             })
             ->filter()
@@ -616,15 +361,7 @@ class MunicipalLocation extends Model
      */
     public function getFormattedPublicTransport(): array
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! $this->public_transport || ! is_array($this->public_transport)) {
-=======
-        if (!$this->public_transport || !is_array($this->public_transport)) {
->>>>>>> 4b6b99016 (first commit)
-=======
-        if (! $this->public_transport || ! is_array($this->public_transport)) {
->>>>>>> dev
             return [];
         }
 
@@ -633,14 +370,7 @@ class MunicipalLocation extends Model
                 if (is_string($transport)) {
                     return ['type' => 'bus', 'line' => $transport];
                 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
                 return $transport;
             })
             ->groupBy('type')
@@ -652,15 +382,7 @@ class MunicipalLocation extends Model
      */
     public function getFormattedAccessibilityInfo(): array
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! $this->accessibility_info || ! is_array($this->accessibility_info)) {
-=======
-        if (!$this->accessibility_info || !is_array($this->accessibility_info)) {
->>>>>>> 4b6b99016 (first commit)
-=======
-        if (! $this->accessibility_info || ! is_array($this->accessibility_info)) {
->>>>>>> dev
             return [];
         }
 
@@ -683,15 +405,7 @@ class MunicipalLocation extends Model
      */
     public function getFormattedFacilities(): array
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! $this->facilities || ! is_array($this->facilities)) {
-=======
-        if (!$this->facilities || !is_array($this->facilities)) {
->>>>>>> 4b6b99016 (first commit)
-=======
-        if (! $this->facilities || ! is_array($this->facilities)) {
->>>>>>> dev
             return [];
         }
 
@@ -700,14 +414,7 @@ class MunicipalLocation extends Model
                 if (is_string($facility)) {
                     return ['name' => $facility, 'available' => true];
                 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
                 return $facility;
             })
             ->toArray();
@@ -718,15 +425,7 @@ class MunicipalLocation extends Model
      */
     public function getFormattedServicesAvailable(): array
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! $this->services_available || ! is_array($this->services_available)) {
-=======
-        if (!$this->services_available || !is_array($this->services_available)) {
->>>>>>> 4b6b99016 (first commit)
-=======
-        if (! $this->services_available || ! is_array($this->services_available)) {
->>>>>>> dev
             return [];
         }
 
@@ -736,14 +435,7 @@ class MunicipalLocation extends Model
                     // Array semplice
                     return [$available => true];
                 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
                 // Array associativo
                 return [$service => $available];
             })
@@ -755,15 +447,7 @@ class MunicipalLocation extends Model
      */
     public function getFormattedParkingInfo(): array
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! $this->parking_info || ! is_array($this->parking_info)) {
-=======
-        if (!$this->parking_info || !is_array($this->parking_info)) {
->>>>>>> 4b6b99016 (first commit)
-=======
-        if (! $this->parking_info || ! is_array($this->parking_info)) {
->>>>>>> dev
             return [];
         }
 
@@ -785,15 +469,7 @@ class MunicipalLocation extends Model
      */
     public function getFormattedGallery(): array
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! $this->gallery || ! is_array($this->gallery)) {
-=======
-        if (!$this->gallery || !is_array($this->gallery)) {
->>>>>>> 4b6b99016 (first commit)
-=======
-        if (! $this->gallery || ! is_array($this->gallery)) {
->>>>>>> dev
             return [];
         }
 
@@ -802,34 +478,14 @@ class MunicipalLocation extends Model
                 if (is_string($image)) {
                     return [
                         'path' => $image,
-<<<<<<< HEAD
-<<<<<<< HEAD
                         'url' => asset('storage/'.$image),
-=======
-                        'url' => asset('storage/' . $image),
->>>>>>> 4b6b99016 (first commit)
-=======
-                        'url' => asset('storage/'.$image),
->>>>>>> dev
                         'caption' => null,
                         'alt' => $this->name,
                     ];
                 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
                 return array_merge([
                     'url' => isset($image['path']) ? asset('storage/'.$image['path']) : null,
-=======
-                
-                return array_merge([
-                    'url' => isset($image['path']) ? asset('storage/' . $image['path']) : null,
->>>>>>> 4b6b99016 (first commit)
-=======
-
-                return array_merge([
-                    'url' => isset($image['path']) ? asset('storage/'.$image['path']) : null,
->>>>>>> dev
                     'alt' => $this->name,
                 ], $image);
             })
@@ -841,15 +497,7 @@ class MunicipalLocation extends Model
      */
     public function isOpenNow(): bool
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! $this->opening_hours || ! is_array($this->opening_hours)) {
-=======
-        if (!$this->opening_hours || !is_array($this->opening_hours)) {
->>>>>>> 4b6b99016 (first commit)
-=======
-        if (! $this->opening_hours || ! is_array($this->opening_hours)) {
->>>>>>> dev
             return false;
         }
 
@@ -859,15 +507,7 @@ class MunicipalLocation extends Model
 
         $todayHours = $this->opening_hours[$currentDay] ?? null;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! $todayHours || ! is_array($todayHours)) {
-=======
-        if (!$todayHours || !is_array($todayHours)) {
->>>>>>> 4b6b99016 (first commit)
-=======
-        if (! $todayHours || ! is_array($todayHours)) {
->>>>>>> dev
             return false;
         }
 
@@ -887,15 +527,7 @@ class MunicipalLocation extends Model
      */
     public function distanceFrom(float $lat, float $lng): ?float
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! $this->has_coordinates) {
-=======
-        if (!$this->has_coordinates) {
->>>>>>> 4b6b99016 (first commit)
-=======
-        if (! $this->has_coordinates) {
->>>>>>> dev
             return null;
         }
 
@@ -966,11 +598,6 @@ class MunicipalLocation extends Model
     }
 
     /**
-<<<<<<< HEAD
-     * Boot del modello
-     */
-    protected static function boot()
-=======
      * Accessor per il nome del tipo di location
      */
     protected function locationTypeName(): Attribute
@@ -1097,83 +724,40 @@ class MunicipalLocation extends Model
      * Boot del modello
      */
     protected static function boot(): void
->>>>>>> dev
     {
         parent::boot();
 
         // Genera slug se mancante
-<<<<<<< HEAD
-        static::creating(function ($model) {
-=======
         static::creating(function ($model): void {
->>>>>>> dev
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->name);
             }
         });
 
         // Assicura unicità dello slug
-<<<<<<< HEAD
-        static::creating(function ($model) {
-=======
         static::creating(function ($model): void {
->>>>>>> dev
             $originalSlug = $model->slug;
             $counter = 1;
 
             while (static::where('slug', $model->slug)->exists()) {
-<<<<<<< HEAD
-<<<<<<< HEAD
                 $model->slug = $originalSlug.'-'.$counter;
-=======
-                $model->slug = $originalSlug . '-' . $counter;
->>>>>>> 4b6b99016 (first commit)
-=======
-                $model->slug = $originalSlug.'-'.$counter;
->>>>>>> dev
                 $counter++;
             }
         });
 
         // Set default values
-<<<<<<< HEAD
-        static::creating(function ($model) {
-            if (is_null($model->priority_level)) {
-                $model->priority_level = $model->is_headquarters ? 5 : 1;
-            }
-<<<<<<< HEAD
-=======
         static::creating(function ($model): void {
             if (is_null($model->priority_level)) {
                 $model->priority_level = $model->is_headquarters ? 5 : 1;
             }
->>>>>>> dev
 
             if (is_null($model->country)) {
                 $model->country = 'Italia';
             }
 
-<<<<<<< HEAD
-=======
-            
-            if (is_null($model->country)) {
-                $model->country = 'Italia';
-            }
-            
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             if (is_null($model->public_access)) {
                 $model->public_access = true;
             }
         });
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4b6b99016 (first commit)
-=======
-}
->>>>>>> dev

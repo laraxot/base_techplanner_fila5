@@ -50,15 +50,8 @@ userfactory.php              → ELIMINA
 - `Pest.php` - Uppercase per convenzione Pest framework
 - `CHANGELOG.md`, `LICENSE`, `CONTRIBUTING.md` - Uppercase per visibilità
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## 🗑️ Cleanup Effettuato ([DATE])
-=======
 ## 🗑️ Cleanup Effettuato (2025-11-04)
->>>>>>> 4b6b99016 (first commit)
-=======
 ## 🗑️ Cleanup Effettuato ([DATE])
->>>>>>> dev
 
 ### Modulo Xot (6 file)
 ```bash
@@ -78,14 +71,11 @@ userfactory.php              → ELIMINA
 ✗ database/Migrations/
 ```
 
-<<<<<<< HEAD
-=======
 ### Modulo Tenant (1 directory)
 ```bash
 ✗ Tests/ → tests (eliminata, duplicato di tests/)
 ```
 
->>>>>>> dev
 ### Modulo Media (1 file)
 ```bash
 ✗ tests/Filament/Resources/mediaconvertresourcetest.php
@@ -262,10 +252,6 @@ EOF
 Ogni modulo interessato ha documentazione dettagliata:
 
 - [Xot Module](./case-sensitivity-rules.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Gdpr Module](../../gdpr/docs/case-sensitivity-rules.md)
 - [Lang Module](../../lang/docs/case-sensitivity-rules.md)
 - [Media Module](../../media/docs/case-sensitivity-rules.md)
@@ -273,8 +259,6 @@ Ogni modulo interessato ha documentazione dettagliata:
 - [Rating Module](../../rating/docs/case-sensitivity-rules.md)
 - [Tenant Module](../../tenant/docs/case-sensitivity-rules.md)
 - [User Module](../../user/docs/case-sensitivity-rules.md)
-<<<<<<< HEAD
-=======
 - [Gdpr Module](../../Gdpr/docs/case-sensitivity-rules.md)
 - [Lang Module](../../Lang/docs/case-sensitivity-rules.md)
 - [Media Module](../../Media/docs/case-sensitivity-rules.md)
@@ -282,9 +266,6 @@ Ogni modulo interessato ha documentazione dettagliata:
 - [Rating Module](../../Rating/docs/case-sensitivity-rules.md)
 - [Tenant Module](../../Tenant/docs/case-sensitivity-rules.md)
 - [User Module](../../User/docs/case-sensitivity-rules.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## 🔧 Prevenzione
 
@@ -342,15 +323,8 @@ python3 /path/to/check_duplicates.py
 ### Internal Documentation
 - [Modulo Xot Architecture](./architecture.md)
 - [Bashscripts Location Policy](./bashscripts-location-policy.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [CLAUDE.md - Project Guidelines](claude.md)
-=======
 - [CLAUDE.md - Project Guidelines](CLAUDE.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [CLAUDE.md - Project Guidelines](claude.md)
->>>>>>> dev
 
 ## 🎯 Conclusioni
 
@@ -376,14 +350,7 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2025-11-04
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: [DATE]
->>>>>>> dev
 **Status**: ✅ Cleanup completato, enforcement attivo
 **Revisione**: Trimestrale (ogni 3 mesi)

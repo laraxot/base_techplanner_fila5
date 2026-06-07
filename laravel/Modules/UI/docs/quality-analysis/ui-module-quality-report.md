@@ -74,15 +74,8 @@
 - [PHPStan Compliance](./phpstan-compliance.md)
 - [Optimization Recommendations](./optimization_recommendations.md)
 - [Modularity Optimizations](./modularity-optimizations.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Xot Quality Analysis](../xot/docs/quality-analysis/current-status.md)
-=======
 - [Xot Quality Analysis](../Xot/docs/quality-analysis/current-status.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Xot Quality Analysis](../xot/docs/quality-analysis/current-status.md)
->>>>>>> dev
 
 ## 📝 Note
 

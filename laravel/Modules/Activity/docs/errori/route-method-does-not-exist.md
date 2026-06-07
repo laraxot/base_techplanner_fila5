@@ -310,21 +310,12 @@ foreach (glob('Modules/*/app/Filament/Resources/*/Pages/*.php') as $file) {
 ## Collegamenti
 
 ### Documentazione Correlata
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Activity Module - README](../readme.md)
-- [XotBase Architecture](../../xot/docs/xotbase-architecture-complete.md)
-- [Differenza Standalone vs Resource Pages](../../xot/docs/filament/pages-types.md)
-=======
 - [Activity Module - README](../README.md)
 - [XotBase Architecture](../../Xot/docs/xotbase-architecture-complete.md)
 - [Differenza Standalone vs Resource Pages](../../Xot/docs/filament/pages-types.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Activity Module - README](../readme.md)
 - [XotBase Architecture](../../xot/docs/xotbase-architecture-complete.md)
 - [Differenza Standalone vs Resource Pages](../../xot/docs/filament/pages-types.md)
->>>>>>> dev
 
 ### Fix Correlati
 - [Modulo Disabilitato](./modulo-disabilitato.md)

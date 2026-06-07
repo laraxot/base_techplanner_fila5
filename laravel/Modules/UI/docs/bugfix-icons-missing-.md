@@ -94,22 +94,15 @@ php artisan config:clear
 
 - [Sistema Icone UI](../icon-system.md)
 - [Blade Icons Documentation](../blade-icons.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [XotBaseServiceProvider](../xotbaseserviceprovider.md)
-=======
 - [XotBaseServiceProvider](../XotBaseServiceProvider.md)
->>>>>>> 4b6b99016 (first commit)
 
 ---
 
 **Data**: 27 Gennaio 2025
-=======
 - [XotBaseServiceProvider](../xotbaseserviceprovider.md)
 
 ---
 
->>>>>>> dev
 **Modulo**: UI
 **Tipo**: Bug Fix
 **Priorità**: Alta

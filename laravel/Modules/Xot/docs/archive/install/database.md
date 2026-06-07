@@ -86,18 +86,10 @@ return $def1;
 
 ## Collegamenti tra versioni di database.md
 * [database.md](docs/tecnico/database/database.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [database.md](../../../xot/project_docs/install/database.md)
-* [database.md](../../../tenant/project_docs/it/config/database.md)
-=======
 * [database.md](../../../Xot/project_docs/install/database.md)
 * [database.md](../../../Tenant/project_docs/it/config/database.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [database.md](../../../xot/project_docs/install/database.md)
 * [database.md](../../../tenant/project_docs/it/config/database.md)
->>>>>>> dev
 
 ### Versione Incoming
 

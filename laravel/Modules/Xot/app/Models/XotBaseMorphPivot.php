@@ -17,16 +17,6 @@ use function Safe\preg_match;
  * Centralizes common MorphPivot configurations and behaviors.
  * The $connection is automatically set based on the child class namespace.
  *
-<<<<<<< HEAD
- * @property string|int $id
- * @property string $morph_type
- * @property string|int $morph_id
- * @property string|null $related_type
- * @property string|int|null $related_id
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property Carbon|null $deleted_at
-=======
  * @property string|int      $id
  * @property string          $morph_type
  * @property string|int      $morph_id
@@ -35,7 +25,6 @@ use function Safe\preg_match;
  * @property Carbon|null     $created_at
  * @property Carbon|null     $updated_at
  * @property Carbon|null     $deleted_at
->>>>>>> dev
  * @property string|int|null $created_by
  * @property string|int|null $updated_by
  * @property string|int|null $deleted_by
@@ -95,24 +84,12 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
     public function getConnectionName(): ?string
     {
         if (isset($this->connection)) {
-<<<<<<< HEAD
-            /** @var string */
-            return $this->connection;
-=======
             return $this->normalizeConnectionName($this->connection);
->>>>>>> dev
         }
 
         // Extract module name from namespace: Modules\Rating\... → rating
         $namespace = static::class;
         $matches = [];
-<<<<<<< HEAD
-        if (preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) === 1 && isset($matches[1])) {
-            return strtolower($matches[1]);
-        }
-
-        return parent::getConnectionName();
-=======
         if (1 === preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) && isset($matches[1])) {
             return strtolower($matches[1]);
         }
@@ -131,7 +108,6 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
         }
 
         return $connection;
->>>>>>> dev
     }
 
     /**

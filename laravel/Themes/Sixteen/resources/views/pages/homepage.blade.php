@@ -16,18 +16,12 @@
                         Accedi ai servizi digitali, consulta le informazioni e resta aggiornato su tutte le iniziative del territorio.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
                         <a href="/servizi" class="btn btn-outline-primary bg-white text-primary-600 hover:bg-primary-50">
                             Esplora i servizi
                         </a>
                         <a href="/contatti" class="btn btn-secondary bg-primary-700 hover:bg-primary-800 border-primary-700">
                             Contatta l'ufficio
                         </a>
-<<<<<<< HEAD
-=======
                         <x-bootstrap-italia.button
                             variant="outline-primary"
                             href="/servizi"
@@ -40,9 +34,6 @@
                             class="bg-primary-700 hover:bg-primary-800 border-primary-700">
                             Contatta l'ufficio
                         </x-bootstrap-italia.button>
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                     </div>
                 </div>
                 <div class="hidden lg:block">
@@ -123,21 +114,9 @@
             </div>
             
             <div class="text-center mt-10">
-<<<<<<< HEAD
-<<<<<<< HEAD
                 <a class="btn btn-outline-primary" href="/servizi">
                     Tutti i servizi
                 </a>
-=======
-                <x-bootstrap-italia.button variant="outline-primary" href="/servizi">
-                    Tutti i servizi
-                </x-bootstrap-italia.button>
->>>>>>> 4b6b99016 (first commit)
-=======
-                <a class="btn btn-outline-primary" href="/servizi">
-                    Tutti i servizi
-                </a>
->>>>>>> dev
             </div>
         </div>
     </section>
@@ -154,21 +133,9 @@
                         Resta aggiornato su eventi e iniziative del territorio
                     </p>
                 </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
                 <a class="btn btn-outline-primary" href="/notizie">
                     Tutte le notizie
                 </a>
-=======
-                <x-bootstrap-italia.button variant="outline-primary" href="/notizie">
-                    Tutte le notizie
-                </x-bootstrap-italia.button>
->>>>>>> 4b6b99016 (first commit)
-=======
-                <a class="btn btn-outline-primary" href="/notizie">
-                    Tutte le notizie
-                </a>
->>>>>>> dev
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -228,18 +195,12 @@
                     I nostri uffici sono a tua disposizione per fornirti supporto e assistenza
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
                     <a href="/contatti" class="btn btn-outline-primary bg-white text-primary-600 hover:bg-primary-50">
                         Contatta gli uffici
                     </a>
                     <a href="tel:+390612345678" class="btn btn-secondary bg-primary-700 hover:bg-primary-800 border-primary-700">
                         Chiama: 06 1234567
                     </a>
-<<<<<<< HEAD
-=======
                     <x-bootstrap-italia.button
                         variant="outline-primary"
                         href="/contatti"
@@ -252,12 +213,12 @@
                         class="bg-primary-700 hover:bg-primary-800 border-primary-700">
                         Chiama: 06 1234567
                     </x-bootstrap-italia.button>
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                 </div>
             </div>
         </div>
     </section>
 
 </x-layouts.main>
+
+
+

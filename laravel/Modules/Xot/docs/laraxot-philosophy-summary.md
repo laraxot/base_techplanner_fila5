@@ -13,11 +13,7 @@
 
 ### 2. **Consistency Over Flexibility**
 
-<<<<<<< HEAD
-**Predictable behavior is more valuable than unlimited options:**
-=======
 **<nome progetto>able behavior is more valuable than unlimited options:**
->>>>>>> dev
 
 - Same file structure across all modules
 - Same inheritance patterns for all models
@@ -75,11 +71,7 @@
 
 ### Technical Benefits
 
-<<<<<<< HEAD
-1. **Predictable Autoloading**: No ambiguous class resolution
-=======
 1. **<nome progetto>able Autoloading**: No ambiguous class resolution
->>>>>>> dev
 2. **Consistent Behavior**: Same results in all environments
 3. **Easy Maintenance**: Clear, unambiguous code structure
 4. **Fast Debugging**: Obvious source of truth for each entity
@@ -166,8 +158,4 @@ composer dump-autoload
 
 ---
 
-<<<<<<< HEAD
-**Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
-=======
 **Philosophy Summary**: Laraxot values simplicity, consistency, and <nome progetto>ability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
->>>>>>> dev

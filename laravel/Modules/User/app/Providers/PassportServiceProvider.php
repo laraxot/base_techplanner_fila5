@@ -5,11 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Providers;
 
 use Carbon\CarbonInterval;
-<<<<<<< HEAD
-use Illuminate\Support\Facades\Gate;
-use Illuminate\Support\ServiceProvider;
-use Laravel\Passport\Passport;
-=======
 use Illuminate\Support\ServiceProvider;
 use Laravel\Passport\AuthCode;
 use Laravel\Passport\Client;
@@ -17,7 +12,6 @@ use Laravel\Passport\DeviceCode;
 use Laravel\Passport\Passport;
 use Laravel\Passport\RefreshToken;
 use Laravel\Passport\Token;
->>>>>>> dev
 use Modules\User\Models\OauthAuthCode;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthDeviceCode;
@@ -30,18 +24,9 @@ use Webmozart\Assert\Assert;
  *
  * Configura Laravel Passport per l'autenticazione OAuth2.
  * Utilizza la configurazione centralizzata da config/user/passport.php.
-<<<<<<< HEAD
-<<<<<<< HEAD
  *
  * @SuppressWarnings("PHPMD.StaticAccess")
  * @SuppressWarnings("PHPMD.CouplingBetweenObjects")
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
- *
- * @SuppressWarnings("PHPMD.StaticAccess")
- * @SuppressWarnings("PHPMD.CouplingBetweenObjects")
->>>>>>> dev
  */
 class PassportServiceProvider extends ServiceProvider
 {
@@ -107,18 +92,6 @@ class PassportServiceProvider extends ServiceProvider
     /**
      * Configura i modelli personalizzati.
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /**
-     * Configura i modelli personalizzati.
-     */
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    /**
-     * Configura i modelli personalizzati.
-     */
->>>>>>> dev
     protected function configureModels(): void
     {
         $models = config('user.passport.models', []);
@@ -126,22 +99,6 @@ class PassportServiceProvider extends ServiceProvider
 
         $tokenModel = $models['token'] ?? OauthToken::class;
         Assert::stringNotEmpty($tokenModel);
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Assert::subclassOf($tokenModel, \Laravel\Passport\Token::class);
-
-        $refreshTokenModel = $models['refresh_token'] ?? OauthRefreshToken::class;
-        Assert::stringNotEmpty($refreshTokenModel);
-        Assert::subclassOf($refreshTokenModel, \Laravel\Passport\RefreshToken::class);
-
-        $authCodeModel = $models['auth_code'] ?? OauthAuthCode::class;
-        Assert::stringNotEmpty($authCodeModel);
-        Assert::subclassOf($authCodeModel, \Laravel\Passport\AuthCode::class);
-
-        $clientModel = config('user.passport.client_model', OauthClient::class);
-        Assert::stringNotEmpty($clientModel);
-        Assert::subclassOf($clientModel, \Laravel\Passport\Client::class);
-=======
         Assert::subclassOf($tokenModel, Token::class);
 
         $refreshTokenModel = $models['refresh_token'] ?? OauthRefreshToken::class;
@@ -155,50 +112,16 @@ class PassportServiceProvider extends ServiceProvider
         $clientModel = config('user.passport.client_model', OauthClient::class);
         Assert::stringNotEmpty($clientModel);
         Assert::subclassOf($clientModel, Client::class);
->>>>>>> dev
 
         Passport::useTokenModel($tokenModel);
         Passport::useRefreshTokenModel($refreshTokenModel);
         Passport::useAuthCodeModel($authCodeModel);
         Passport::useClientModel($clientModel);
-<<<<<<< HEAD
-=======
-        $refreshTokenModel = $models['refresh_token'] ?? OauthRefreshToken::class;
-        Assert::stringNotEmpty($refreshTokenModel);
-        $authCodeModel = $models['auth_code'] ?? OauthAuthCode::class;
-        Assert::stringNotEmpty($authCodeModel);
-
-        $clientModel = config('user.passport.client_model', OauthClient::class);
-        Assert::stringNotEmpty($clientModel);
-
-        // @phpstan-ignore argument.type - Passport v5 compatibility issue
-        \Laravel\Passport\Passport::useTokenModel($tokenModel);
-        // @phpstan-ignore argument.type - Passport v5 compatibility issue
-        \Laravel\Passport\Passport::useRefreshTokenModel($refreshTokenModel);
-        // @phpstan-ignore argument.type - Passport v5 compatibility issue
-        \Laravel\Passport\Passport::useAuthCodeModel($authCodeModel);
-        // @phpstan-ignore argument.type - Passport v5 compatibility issue
-        \Laravel\Passport\Passport::useClientModel($clientModel);
->>>>>>> 4b6b99016 (first commit)
-
-        // @phpstan-ignore-next-line - method_exists check kept for backward compatibility with older Passport versions
-        if (method_exists(Passport::class, 'useDeviceCodeModel')) {
-            $deviceCodeModel = $models['device_code'] ?? OauthDeviceCode::class;
-            Assert::stringNotEmpty($deviceCodeModel);
-<<<<<<< HEAD
-            Assert::subclassOf($deviceCodeModel, \Laravel\Passport\DeviceCode::class);
-=======
-            /* @var class-string<\Laravel\Passport\DeviceCode> $deviceCodeModel */
->>>>>>> 4b6b99016 (first commit)
-            Passport::useDeviceCodeModel($deviceCodeModel);
-        }
-=======
 
         $deviceCodeModel = $models['device_code'] ?? OauthDeviceCode::class;
         Assert::stringNotEmpty($deviceCodeModel);
         Assert::subclassOf($deviceCodeModel, DeviceCode::class);
         Passport::useDeviceCodeModel($deviceCodeModel);
->>>>>>> dev
     }
 
     /**
@@ -219,19 +142,15 @@ class PassportServiceProvider extends ServiceProvider
         $scopes = config('user.passport.scopes', []);
         Assert::isArray($scopes);
 
-        foreach ($scopes as $key => $value) {
-            Assert::stringNotEmpty($key);
-            Assert::stringNotEmpty($value);
-        }
-
         if (! empty($scopes)) {
-<<<<<<< HEAD
-            // PHPStan: dopo i controlli Assert, l'array è garantito essere array<string, string>
             /** @var array<string, string> $typedScopes */
-=======
-            /** @phpstan-ignore varTag.nativeType */
->>>>>>> dev
-            $typedScopes = $scopes;
+            $typedScopes = [];
+            foreach ($scopes as $key => $value) {
+                Assert::stringNotEmpty($key);
+                Assert::stringNotEmpty($value);
+                $typedScopes[$key] = $value;
+            }
+
             Passport::tokensCan($typedScopes);
         }
     }

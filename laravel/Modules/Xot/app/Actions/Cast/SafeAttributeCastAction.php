@@ -5,10 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Cast;
 
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
-use InvalidArgumentException;
-=======
->>>>>>> dev
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -34,38 +30,24 @@ class SafeAttributeCastAction
     /**
      * Verifica se un attributo esiste e ha un valore non null su un modello.
      *
-<<<<<<< HEAD
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-=======
      * @param Model  $model     Il modello Eloquent
      * @param string $attribute Il nome dell'attributo
      *
->>>>>>> dev
      * @return bool True se l'attributo esiste e ha un valore non null
      */
     public function hasAttribute(Model $model, string $attribute): bool
     {
         Assert::stringNotEmpty($attribute);
 
-<<<<<<< HEAD
-        return $model->getAttribute($attribute) !== null;
-=======
         return null !== $model->getAttribute($attribute);
->>>>>>> dev
     }
 
     /**
      * Verifica se un attributo esiste e ha un valore non vuoto su un modello.
      *
-<<<<<<< HEAD
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-=======
      * @param Model  $model     Il modello Eloquent
      * @param string $attribute Il nome dell'attributo
      *
->>>>>>> dev
      * @return bool True se l'attributo esiste e ha un valore non vuoto
      */
     public function hasNonEmptyAttribute(Model $model, string $attribute): bool
@@ -74,26 +56,16 @@ class SafeAttributeCastAction
 
         $value = $model->getAttribute($attribute);
 
-<<<<<<< HEAD
-        return $value !== null && $value !== '';
-=======
         return null !== $value && '' !== $value;
->>>>>>> dev
     }
 
     /**
      * Ottiene un attributo con cast sicuro a string.
      *
-<<<<<<< HEAD
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-     * @param  string|null  $default  Valore di default se l'attributo non esiste o è null
-=======
      * @param Model       $model     Il modello Eloquent
      * @param string      $attribute Il nome dell'attributo
      * @param string|null $default   Valore di default se l'attributo non esiste o è null
      *
->>>>>>> dev
      * @return string Il valore dell'attributo convertito in string
      */
     public function getStringAttribute(Model $model, string $attribute, ?string $default = ''): string
@@ -102,11 +74,7 @@ class SafeAttributeCastAction
 
         $value = $model->getAttribute($attribute);
 
-<<<<<<< HEAD
-        if ($value === null) {
-=======
         if (null === $value) {
->>>>>>> dev
             return $default ?? '';
         }
 
@@ -116,16 +84,10 @@ class SafeAttributeCastAction
     /**
      * Ottiene un attributo con cast sicuro a int.
      *
-<<<<<<< HEAD
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-     * @param  int|null  $default  Valore di default se l'attributo non esiste o è null
-=======
      * @param Model    $model     Il modello Eloquent
      * @param string   $attribute Il nome dell'attributo
      * @param int|null $default   Valore di default se l'attributo non esiste o è null
      *
->>>>>>> dev
      * @return int Il valore dell'attributo convertito in int
      */
     public function getIntAttribute(Model $model, string $attribute, ?int $default = 0): int
@@ -134,11 +96,7 @@ class SafeAttributeCastAction
 
         $value = $model->getAttribute($attribute);
 
-<<<<<<< HEAD
-        if ($value === null) {
-=======
         if (null === $value) {
->>>>>>> dev
             return $default ?? 0;
         }
 
@@ -148,16 +106,10 @@ class SafeAttributeCastAction
     /**
      * Ottiene un attributo con cast sicuro a float.
      *
-<<<<<<< HEAD
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-     * @param  float|null  $default  Valore di default se l'attributo non esiste o è null
-=======
      * @param Model      $model     Il modello Eloquent
      * @param string     $attribute Il nome dell'attributo
      * @param float|null $default   Valore di default se l'attributo non esiste o è null
      *
->>>>>>> dev
      * @return float Il valore dell'attributo convertito in float
      */
     public function getFloatAttribute(Model $model, string $attribute, ?float $default = 0.0): float
@@ -166,11 +118,7 @@ class SafeAttributeCastAction
 
         $value = $model->getAttribute($attribute);
 
-<<<<<<< HEAD
-        if ($value === null) {
-=======
         if (null === $value) {
->>>>>>> dev
             return $default ?? 0.0;
         }
 
@@ -180,16 +128,10 @@ class SafeAttributeCastAction
     /**
      * Ottiene un attributo con cast sicuro a boolean.
      *
-<<<<<<< HEAD
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-     * @param  bool|null  $default  Valore di default se l'attributo non esiste o è null
-=======
      * @param Model     $model     Il modello Eloquent
      * @param string    $attribute Il nome dell'attributo
      * @param bool|null $default   Valore di default se l'attributo non esiste o è null
      *
->>>>>>> dev
      * @return bool Il valore dell'attributo convertito in boolean
      */
     public function getBooleanAttribute(Model $model, string $attribute, ?bool $default = false): bool
@@ -198,11 +140,7 @@ class SafeAttributeCastAction
 
         $value = $model->getAttribute($attribute);
 
-<<<<<<< HEAD
-        if ($value === null) {
-=======
         if (null === $value) {
->>>>>>> dev
             return $default ?? false;
         }
 
@@ -212,16 +150,10 @@ class SafeAttributeCastAction
     /**
      * Ottiene un attributo con cast sicuro a array.
      *
-<<<<<<< HEAD
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-     * @param  array|null  $default  Valore di default se l'attributo non esiste o è null
-=======
      * @param Model      $model     Il modello Eloquent
      * @param string     $attribute Il nome dell'attributo
      * @param array|null $default   Valore di default se l'attributo non esiste o è null
      *
->>>>>>> dev
      * @return array Il valore dell'attributo convertito in array
      */
     public function getArrayAttribute(Model $model, string $attribute, ?array $default = []): array
@@ -230,11 +162,7 @@ class SafeAttributeCastAction
 
         $value = $model->getAttribute($attribute);
 
-<<<<<<< HEAD
-        if ($value === null) {
-=======
         if (null === $value) {
->>>>>>> dev
             return $default ?? [];
         }
 
@@ -244,18 +172,11 @@ class SafeAttributeCastAction
     /**
      * Ottiene un attributo con cast sicuro a un tipo specifico.
      *
-<<<<<<< HEAD
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-     * @param  string  $type  Il tipo di cast desiderato (string, int, float, bool, array)
-     * @param  mixed  $default  Valore di default se l'attributo non esiste o è null
-=======
      * @param Model  $model     Il modello Eloquent
      * @param string $attribute Il nome dell'attributo
      * @param string $type      Il tipo di cast desiderato (string, int, float, bool, array)
      * @param mixed  $default   Valore di default se l'attributo non esiste o è null
      *
->>>>>>> dev
      * @return mixed Il valore dell'attributo convertito nel tipo specificato
      */
     public function getTypedAttribute(Model $model, string $attribute, string $type, mixed $default = null): mixed
@@ -269,27 +190,17 @@ class SafeAttributeCastAction
             'float' => $this->getFloatAttribute($model, $attribute, is_float($default) ? $default : null),
             'bool' => $this->getBooleanAttribute($model, $attribute, is_bool($default) ? $default : null),
             'array' => $this->getArrayAttribute($model, $attribute, is_array($default) ? $default : null),
-<<<<<<< HEAD
-            default => throw new InvalidArgumentException("Tipo non supportato: {$type}"),
-=======
             default => throw new \InvalidArgumentException("Tipo non supportato: {$type}"),
->>>>>>> dev
         };
     }
 
     /**
      * Verifica se un attributo esiste e ha un valore specifico.
      *
-<<<<<<< HEAD
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-     * @param  mixed  $expectedValue  Il valore atteso
-=======
      * @param Model  $model         Il modello Eloquent
      * @param string $attribute     Il nome dell'attributo
      * @param mixed  $expectedValue Il valore atteso
      *
->>>>>>> dev
      * @return bool True se l'attributo esiste e ha il valore atteso
      */
     public function hasAttributeValue(Model $model, string $attribute, mixed $expectedValue): bool
@@ -304,20 +215,12 @@ class SafeAttributeCastAction
     /**
      * Ottiene un attributo con validazione di tipo e valore.
      *
-<<<<<<< HEAD
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-     * @param  string  $type  Il tipo di cast desiderato
-     * @param  callable|null  $validator  Funzione di validazione opzionale
-     * @param  mixed  $default  Valore di default se la validazione fallisce
-=======
      * @param Model         $model     Il modello Eloquent
      * @param string        $attribute Il nome dell'attributo
      * @param string        $type      Il tipo di cast desiderato
      * @param callable|null $validator Funzione di validazione opzionale
      * @param mixed         $default   Valore di default se la validazione fallisce
      *
->>>>>>> dev
      * @return mixed Il valore dell'attributo validato e convertito
      */
     public function getValidatedAttribute(
@@ -332,11 +235,7 @@ class SafeAttributeCastAction
 
         $value = $this->getTypedAttribute($model, $attribute, $type, $default);
 
-<<<<<<< HEAD
-        if ($validator !== null && ! $validator($value)) {
-=======
         if (null !== $validator && ! $validator($value)) {
->>>>>>> dev
             return $default;
         }
 

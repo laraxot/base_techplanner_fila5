@@ -21,8 +21,6 @@ return [
         'geocode' => 'Geocodierung',
     ],
     'fields' => [
-<<<<<<< HEAD
-=======
         'use_my_location' => [
             'label' => 'Meinen Standort verwenden',
         ],
@@ -31,21 +29,13 @@ return [
             'placeholder' => 'Adresse eingeben',
             'use_my_location' => 'Meinen Standort verwenden',
         ],
->>>>>>> dev
         'model_type' => [
             'label' => 'Modelltyp',
             'placeholder' => 'Modelltyp auswählen',
             'help' => 'Mit der Adresse verknüpfter Modelltyp',
             'description' => 'Typ des Modells, das diese Adresse besitzt',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'model_id' => [
             'label' => 'Modell-ID',
@@ -53,14 +43,7 @@ return [
             'help' => 'Kennung des verknüpften Modells',
             'description' => 'ID des Modells, das diese Adresse besitzt',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'name' => [
             'label' => 'Name',
@@ -68,14 +51,7 @@ return [
             'help' => 'Ein identifizierender Name für diese Adresse, z.B. "Zuhause" oder "Büro"',
             'helper_text' => '',
             'description' => 'Identifizierender Adressname',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'description' => [
             'label' => 'Beschreibung',
@@ -83,14 +59,7 @@ return [
             'help' => 'Zusätzliche Hinweise zur Adresse',
             'description' => 'Zusätzliche Adressbeschreibung',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'street' => [
             'label' => 'Straße',
@@ -98,14 +67,7 @@ return [
             'help' => 'Straßenadresse mit Hausnummer',
             'description' => 'Straßenadresse',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'city' => [
             'label' => 'Stadt',
@@ -113,14 +75,7 @@ return [
             'help' => 'Stadtname',
             'description' => 'Stadtname',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'state' => [
             'label' => 'Bundesland/Provinz',
@@ -128,14 +83,7 @@ return [
             'help' => 'Bundesland oder Provinz',
             'description' => 'Bundesland oder Provinz',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'postal_code' => [
             'label' => 'Postleitzahl',
@@ -143,14 +91,7 @@ return [
             'help' => 'PLZ oder Postleitzahl',
             'description' => 'Postleitzahl',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'country' => [
             'label' => 'Land',
@@ -158,14 +99,7 @@ return [
             'help' => 'Ländername',
             'description' => 'Ländername',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'latitude' => [
             'label' => 'Breitengrad',
@@ -173,14 +107,7 @@ return [
             'help' => 'Geografische Breitengrad-Koordinate',
             'description' => 'Breitengrad-Koordinate',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'longitude' => [
             'label' => 'Längengrad',
@@ -188,46 +115,20 @@ return [
             'help' => 'Geografische Längengrad-Koordinate',
             'description' => 'Längengrad-Koordinate',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'is_primary' => [
             'label' => 'Primäre Adresse',
             'help' => 'Als primäre Adresse markieren',
             'description' => 'Ob dies die primäre Adresse ist',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'is_verified' => [
             'label' => 'Verifizierte Adresse',
             'help' => 'Adresse wurde überprüft',
             'description' => 'Ob diese Adresse überprüft wurde',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'tooltip' => '',
-        ],
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
             'tooltip' => '',
         ],
     ],
@@ -242,5 +143,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

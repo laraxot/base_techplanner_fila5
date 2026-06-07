@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-# Git Conflict Resolution Audit
-
-## Data
-<<<<<<< HEAD
-- [DATE]
-=======
 - 2025-01-06
->>>>>>> 4b6b99016 (first commit)
 
 ## File Coinvolti
 
@@ -43,11 +35,7 @@
 Tutte le verifiche hanno avuto esito positivo.
 
 ---
-<<<<<<< HEAD
-=======
 Ultimo aggiornamento: 2025-01-06
->>>>>>> 4b6b99016 (first commit)
-=======
 # Conflict Resolution — Module UI
 
 ## Summary
@@ -111,4 +99,3 @@ Ultimo aggiornamento: 2025-01-06
 
 ## Backlinks
 - [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)
->>>>>>> dev

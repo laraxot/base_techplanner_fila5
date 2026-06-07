@@ -30,15 +30,8 @@ Il modulo User è attualmente in fase di analisi con PHPStan. Questo documento t
 
 ## Collegamenti
 - [Documentazione Generale PHPStan](/docs/phpstan.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Linee Guida PHPStan Livello 10](/docs/phpstan/phpstan_level10_linee_guida.md)
-=======
 - [Linee Guida PHPStan Livello 10](/docs/phpstan/PHPSTAN_LEVEL10_LINEE_GUIDA.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Linee Guida PHPStan Livello 10](/docs/phpstan/phpstan_level10_linee_guida.md)
->>>>>>> dev
 - [Contratti del Modulo User](/docs/modules/user/contracts.md)
 - [Best Practices per i Modelli](/docs/modules/user/models.md)
 

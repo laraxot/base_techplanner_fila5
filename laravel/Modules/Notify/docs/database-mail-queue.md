@@ -30,40 +30,15 @@ class SendTemplatedEmailJob implements ShouldQueue
      */
     public $tries = 3;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /**
-     * Timeout del job in secondi.
-     *
-     * @var int
-     */
-    public $timeout = 60;
-
-    /**
-     * Costruttore del job.
-     *
-=======
-=======
->>>>>>> dev
      * Timeout del job in secondi.
     public $timeout = 60;
 
      * Costruttore del job.
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
      * @param string $to Email destinatario
      * @param string $mailable Classe mailable
      * @param array<string, mixed> $data Dati per il template
      * @param string|null $locale Lingua del template
-<<<<<<< HEAD
-<<<<<<< HEAD
      */
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     public function __construct(
         protected string $to,
         protected string $mailable,
@@ -139,25 +114,13 @@ return [
             'retry_after' => 90,
             'block_for' => null,
         ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     ],
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
     'failed' => [
         'driver' => env('QUEUE_FAILED_DRIVER', 'database-uuids'),
         'database' => env('DB_CONNECTION', 'mysql'),
         'table' => 'failed_jobs',
-<<<<<<< HEAD
-<<<<<<< HEAD
     ],
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];
 ```
 
@@ -174,31 +137,15 @@ class QueueWorkerManager
     public function startWorkers(): void
     {
         $workerCount = config('notify.queue.workers', 2);
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
 
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         for ($i = 0; $i < $workerCount; $i++) {
             Process::run('php artisan queue:work --queue=emails --tries=3');
         }
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /**
      * Monitora lo stato dei worker.
-     */
-=======
      * Monitora lo stato dei worker.
->>>>>>> 4b6b99016 (first commit)
-=======
-     * Monitora lo stato dei worker.
->>>>>>> dev
     public function monitorWorkers(): array
     {
         return [
@@ -224,18 +171,8 @@ SendTemplatedEmailJob::dispatch(
 
 // Invio multiplo
 $users->each(function ($user) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    SendTemplatedEmailJob::dispatch(
         $user->email,
-        WelcomeEmail::class,
-        ['user' => $user]
-=======
         $user->email,
->>>>>>> 4b6b99016 (first commit)
-=======
-        $user->email,
->>>>>>> dev
     )->onQueue('emails');
 });
 ```
@@ -243,14 +180,7 @@ $users->each(function ($user) {
 ### 2. Gestione Worker
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
 # Avvia worker dedicato
 php artisan queue:work --queue=emails
 
@@ -260,13 +190,7 @@ php artisan queue:monitor
 # Gestione failed jobs
 php artisan queue:failed
 php artisan queue:retry all
-<<<<<<< HEAD
-<<<<<<< HEAD
 ```
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Best Practices
 
@@ -285,13 +209,7 @@ php artisan queue:retry all
     'emails-high' => 100,  // 100/min
     'emails-normal' => 50, // 50/min
     'emails-bulk' => 10,   // 10/min
-<<<<<<< HEAD
-<<<<<<< HEAD
 ],
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ```
 
 ### 2. Monitoraggio
@@ -303,23 +221,12 @@ $counter = Counter::create('emails_sent_total', 'Total emails sent')
 
 $histogram = Histogram::create('email_sending_duration_seconds', 'Time spent sending emails')
     ->observe($duration);
-<<<<<<< HEAD
-<<<<<<< HEAD
-```
 
 ### 3. Retry Strategy
 
-```php
-=======
 
 ### 3. Retry Strategy
 
->>>>>>> 4b6b99016 (first commit)
-=======
-
-### 3. Retry Strategy
-
->>>>>>> dev
 public function backoff(): array
 {
     return [
@@ -346,29 +253,11 @@ Log::channel('mail')->error('Email sending failed', [
     'error' => $e->getMessage(),
     'trace' => $e->getTraceAsString(),
 ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
-```
-
-### 2. Notifiche
-
-```php
-Notification::route('slack', config('notify.error_channel'))
-    ->notify(new FailedMailNotification([
-        'to' => $this->to,
-        'error' => $e->getMessage(),
-=======
-=======
->>>>>>> dev
 
 ### 2. Notifiche
 
 Notification::route('slack', config('notify.error_channel'))
     ->notify(new FailedMailNotification([
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ]));
 ```
 
@@ -383,14 +272,8 @@ $this->call('queue:prune-failed', [
 // Rimuovi job completati
 $this->call('queue:prune-batches', [
     '--hours' => 24
-<<<<<<< HEAD
-<<<<<<< HEAD
 ]);
 ```
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Scaling
 
@@ -400,19 +283,12 @@ $this->call('queue:prune-batches', [
 # Supervisor config
 [program:<nome progetto>-worker]
 process_name=%(program_name)s_%(process_num)02d
-<<<<<<< HEAD
-<<<<<<< HEAD
-command=php /var/www/html/_bases/base_<nome progetto>/laravel/artisan queue:work redis --queue=emails
-=======
 command=php artisan queue:work redis --queue=emails
 
 command=php artisan queue:work redis --queue=emails
->>>>>>> 4b6b99016 (first commit)
-=======
 command=php artisan queue:work redis --queue=emails
 
 command=php artisan queue:work redis --queue=emails
->>>>>>> dev
 autostart=true
 autorestart=true
 numprocs=4
@@ -430,24 +306,12 @@ RateLimiter::for('mail-domain', function ($job) {
 // Rate limiter globale
 RateLimiter::for('mail-global', function () {
     return Limit::perMinute(1000);
-<<<<<<< HEAD
-<<<<<<< HEAD
-});
-```
 
 ### 3. Sharding
 
-```php
-=======
 
 ### 3. Sharding
 
->>>>>>> 4b6b99016 (first commit)
-=======
-
-### 3. Sharding
-
->>>>>>> dev
 // Distribuzione su multiple code
 $queue = 'emails-' . ($user->id % 4); // 4 code
 
@@ -469,21 +333,10 @@ $metrics = [
     'email_sending_duration' => [
         'type' => 'histogram',
         'help' => 'Email sending duration',
-<<<<<<< HEAD
-<<<<<<< HEAD
-    ],
-    'failed_jobs_total' => [
-        'type' => 'counter',
-        'help' => 'Total failed jobs',
-    ],
-=======
     'failed_jobs_total' => [
         'help' => 'Total failed jobs',
->>>>>>> 4b6b99016 (first commit)
-=======
     'failed_jobs_total' => [
         'help' => 'Total failed jobs',
->>>>>>> dev
 ];
 ```
 
@@ -509,27 +362,14 @@ if ($failedJobs > $threshold) {
         ->error("High email failure rate detected")
         ->send();
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 ```
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Manutenzione
 
 ### 1. Pulizia
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
 # Pulizia job vecchi
 php artisan queue:prune-failed --hours=168
 php artisan queue:prune-batches --hours=24
@@ -546,23 +386,12 @@ php artisan backup:run --only-db --filename=queue_backup
 
 // Backup failed jobs
 php artisan queue:failed-table > failed_jobs_backup.sql
-<<<<<<< HEAD
-<<<<<<< HEAD
-```
 
 ### 3. Ripristino
 
-```php
-=======
 
 ### 3. Ripristino
 
->>>>>>> 4b6b99016 (first commit)
-=======
-
-### 3. Ripristino
-
->>>>>>> dev
 // Ripristino job falliti
 php artisan queue:retry all
 php artisan queue:restart
@@ -571,21 +400,12 @@ php artisan queue:restart
 ## Collegamenti
 - [Database Mail System](database-mail-system.md)
 - [Mail Templates](database-mail-templates.md)
-<<<<<<< HEAD
-- [Queue Configuration](../../../docs/queue-configuration.md)
-=======
 - [Queue Configuration](../../../../docs/queue-configuration.md)
->>>>>>> dev
 
 ## Vedi Anche
 - [Laravel Queues](https://laravel.com/docs/queues)
 - [Horizon Documentation](https://laravel.com/docs/horizon)
 - [Redis Documentation](https://redis.io/documentation)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> dev
 # Sistema di Code per Email - il progetto
 
 ## Panoramica
@@ -967,25 +787,13 @@ php artisan queue:restart
 ## Collegamenti
 - [Database Mail System](database-mail-system.md)
 - [Mail Templates](database-mail-templates.md)
-<<<<<<< HEAD
-- [Queue Configuration](../../../docs/queue-configuration.md)
-=======
 - [Queue Configuration](../../../../docs/queue-configuration.md)
->>>>>>> dev
 
 ## Vedi Anche
 - [Laravel Queues](https://laravel.com/docs/queues)
 - [Horizon Documentation](https://laravel.com/docs/horizon)
-<<<<<<< HEAD
-- [Queue Configuration](../../../project_docs/queue-configuration.md)
-=======
 - [Queue Configuration](../../../../docs/project/queue-configuration.md)
->>>>>>> dev
 
 - [Laravel Queues](https://laravel.com/project_docs/queues)
 - [Horizon Documentation](https://laravel.com/project_docs/horizon)
 - [Redis Documentation](https://redis.io/documentation)
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

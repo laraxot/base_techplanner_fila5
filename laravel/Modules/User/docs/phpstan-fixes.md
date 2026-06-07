@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PHPStan Fixes and Type System Improvements
 
 ## Overview
@@ -183,7 +182,6 @@ After applying fixes:
 - Safe functions provide exception-throwing alternatives to standard PHP functions
 - All Filament components should extend XotBase classes for consistency
 - Type system improvements enhance code reliability and maintainability 
-<<<<<<< HEAD
 
 
 --- Merged from phpstan-fixes-2025-10-01.md ---
@@ -422,9 +420,6 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 **Obiettivo**: 0 errori User + Xot
 
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 ---
 module: theme
 topic: phpstan-fixes
@@ -432,4 +427,3 @@ canonical: ../../../Themes/docs/shared-components/phpstan-fixes-Modules.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-Modules.md
->>>>>>> dev

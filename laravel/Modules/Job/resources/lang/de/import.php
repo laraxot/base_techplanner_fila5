@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -57,29 +53,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'job_id' => [
-            'label' => 'Auftrags-ID',
-        ],
-        'importable_type' => [
-            'label' => 'Importierbarer Typ',
-        ],
-        'file_path' => [
-            'label' => 'Dateipfad',
-        ],
-        'status' => [
-            'label' => 'Status',
-        ],
-        'created_at' => [
-            'label' => 'Erstellt Am',
-        ],
-        'completed_at' => [
-            'label' => 'Abgeschlossen Am',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [

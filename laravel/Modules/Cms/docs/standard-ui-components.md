@@ -1,10 +1,6 @@
 # Standard UI Components in il progetto
 
-<<<<<<< HEAD
-> **Nota**: Questo documento è una copia sincronizzata di [/docs/implementazione/standard_ui_components.md](../../../../docs/implementazione/standard_ui_components.md)
-=======
 > **Nota**: Questo documento è una copia sincronizzata di [/docs/implementazione/standard_ui_components.md](../../../../../docs/implementazione/standard_ui_components.md)
->>>>>>> dev
 >
 > Per modifiche, aggiornare il file originale e sincronizzare le modifiche qui.
 
@@ -72,12 +68,5 @@
 
 ## Collegamenti tra versioni di standard_ui_components.md
 * [standard_ui_components.md](docs/implementazione/standard_ui_components.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [standard_ui_components.md](laravel/modules/cms/docs/standard_ui_components.md)
-=======
 * [standard_ui_components.md](laravel/Modules/Cms/docs/standard_ui_components.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [standard_ui_components.md](laravel/modules/cms/docs/standard_ui_components.md)
->>>>>>> dev

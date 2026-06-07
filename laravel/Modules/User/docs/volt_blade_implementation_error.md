@@ -1,16 +1,6 @@
-<<<<<<< HEAD
-# Analisi dell'Errore di Implementazione Volt/Blade
-
-## Collegamenti correlati
-<<<<<<< HEAD
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
-=======
 - [README modulo User](./README.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
->>>>>>> 4b6b99016 (first commit)
 
 ## Identificazione dell'Errore
 
@@ -98,7 +88,6 @@ Come correttamente indicato, per i form è preferibile utilizzare un widget Fila
 4. **Coerenza**: Mantiene uno stile coerente con il resto dell'applicazione
 
 Questo approccio sarà documentato in dettaglio nel file `VOLT_BLADE_IMPLEMENTATION.md`.
-=======
 ---
 module: theme
 topic: volt_blade_implementation_error
@@ -106,4 +95,3 @@ canonical: ../../../Themes/docs/shared-components/volt_blade_implementation_erro
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt_blade_implementation_error.md
->>>>>>> dev

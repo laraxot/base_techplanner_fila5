@@ -18,11 +18,7 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-<<<<<<< HEAD
-            // if (! $this->hasColumn('uuid')) {
-=======
             // if (! $this->hasColumn('uuid'))
->>>>>>> dev
             //    $table->uuid('uuid')->nullable();
             // }
 

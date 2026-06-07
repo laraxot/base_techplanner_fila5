@@ -232,11 +232,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 
 ### Analisi Pre-Refactoring
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
-<<<<<<< HEAD
-- [Refactoring Plan](../../docs/baseuser-dry-violation-[date].md) - Piano esecutivo
-=======
 - [Refactoring Plan](../../../docs/baseuser-dry-violation-[date].md) - Piano esecutivo
->>>>>>> dev
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
@@ -244,13 +240,8 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 - [User Module README](./readme.md)
 
 ### Root Progetto
-<<<<<<< HEAD
-- [Code Quality](../../docs/code-quality-analysis.md)
-- [DRY Violations](../../docs/dry-violations-analysis.md)
-=======
 - [Code Quality](../../../docs/code-quality-analysis.md)
 - [DRY Violations](../../../docs/dry-violations-analysis.md)
->>>>>>> dev
 
 ### Spatie Documentation
 - [Laravel Permission](https://spatie.be/docs/laravel-permission/v6/introduction)
@@ -350,4 +341,3 @@ Il refactoring di `BaseUser` è stato un **successo completo**:
 **Status**: ✅ PRODUCTION READY  
 **Risk Level**: 🟢 LOW  
 **Confidence**: 💯 HIGH
-

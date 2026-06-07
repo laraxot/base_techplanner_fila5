@@ -4,23 +4,12 @@
 Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 
 ## Struttura
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Completa](../../modules/xot/docs/module_xot.md)
-=======
 - [Documentazione Completa](../../Modules/Xot/docs/module_xot.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione Completa](../../modules/xot/docs/module_xot.md)
->>>>>>> dev
 
 ## Componenti Principali
 
 ### Datas
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [MetatagData](../../modules/xot/docs/datas/metatagdata.md) - Gestione meta tag e configurazione Filament
 
 ### Actions
@@ -39,8 +28,6 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 - [Roadmap](../../modules/xot/docs/roadmap.md)
 - [Implementazione](../../modules/xot/docs/implementation.md)
 - [Integrazione](../../modules/xot/docs/integration.md)
-<<<<<<< HEAD
-=======
 - [MetatagData](../../Modules/Xot/docs/datas/MetatagData.md) - Gestione meta tag e configurazione Filament
 
 ### Actions
@@ -59,6 +46,3 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 - [Roadmap](../../Modules/Xot/docs/roadmap.md)
 - [Implementazione](../../Modules/Xot/docs/implementation.md)
 - [Integrazione](../../Modules/Xot/docs/integration.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

@@ -187,11 +187,7 @@ return [
 ```php
 <?php
 
-<<<<<<< HEAD
-namespace Modules\SaluteOra\app\Providers\Filament;
-=======
 namespace Modules\healthcare_app\app\Providers\Filament;
->>>>>>> dev
 
 use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
 
@@ -238,11 +234,7 @@ class AdminPanelProvider extends XotBasePanelProvider
                 'resourceTimeGrid',
             ],
             
-<<<<<<< HEAD
-            // Configurazioni specifiche per SaluteOra
-=======
             // Configurazioni specifiche per healthcare_app
->>>>>>> dev
             'locale' => 'it',
             'timezone' => 'Europe/Rome',
             'firstDay' => 1,
@@ -324,11 +316,7 @@ class FullCalendarDebug extends Command
 }
 ```
 
-<<<<<<< HEAD
-## Best Practices per SaluteOra
-=======
 ## Best Practices per healthcare_app
->>>>>>> dev
 
 ### 1. Sicurezza Licenza
 ```php
@@ -421,11 +409,7 @@ const calendarOptions = {
 
 ## Conclusioni
 
-<<<<<<< HEAD
-La gestione delle licenze FullCalendar Scheduler richiede attenzione particolare, specialmente in ambienti di produzione sanitari come SaluteOra. Seguire questa guida garantisce una configurazione corretta e la risoluzione dei problemi più comuni.
-=======
 La gestione delle licenze FullCalendar Scheduler richiede attenzione particolare, specialmente in ambienti di produzione sanitari come healthcare_app. Seguire questa guida garantisce una configurazione corretta e la risoluzione dei problemi più comuni.
->>>>>>> dev
 
 **Punti Chiave:**
 1. **Licenza obbligatoria** per uso commerciale in produzione

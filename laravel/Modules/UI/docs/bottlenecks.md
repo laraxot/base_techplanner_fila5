@@ -127,15 +127,8 @@
 
 ### Collegamenti Interni
 - [Roadmap](roadmap.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Best Practices](best-practices.md)
-=======
 - [Best Practices](BEST-PRACTICES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Best Practices](best-practices.md)
->>>>>>> dev
 ### Versione HEAD
 
 - [Testing](testing.md)
@@ -145,10 +138,6 @@
 - [Testing](testing.md)
 ## Collegamenti tra versioni di bottlenecks.md
 * [bottlenecks.md](../../../../bashscripts/docs/bottlenecks.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [bottlenecks.md](../../chart/docs/bottlenecks.md)
 * [bottlenecks.md](../../chart/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../gdpr/docs/bottlenecks.md)
@@ -168,8 +157,6 @@
 * [bottlenecks.md](../../activity/docs/bottlenecks.md)
 * [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../cms/docs/bottlenecks.md)
-<<<<<<< HEAD
-=======
 * [bottlenecks.md](../../Chart/docs/bottlenecks.md)
 * [bottlenecks.md](../../Chart/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
@@ -189,8 +176,5 @@
 * [bottlenecks.md](../../Activity/docs/bottlenecks.md)
 * [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ---

@@ -1,15 +1,4 @@
-<<<<<<< HEAD
-# CLAUDE.md
-
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
-## Project Architecture
-
-<<<<<<< HEAD
-This is a Laravel application built with a **modular architecture** using the `nwidart/laravel-modules` package and **Filament v5** as the admin panel framework. The codebase follows a domain-driven design approach where each module represents a specific business domain.
-=======
 This is a Laravel application built with a **modular architecture** using the `nwidart/laravel-modules` package and **Filament v4** as the admin panel framework. The codebase follows a domain-driven design approach where each module represents a specific business domain.
->>>>>>> 4b6b99016 (first commit)
 
 ### Dual-Root Structure
 The project has a unique dual-root structure:
@@ -18,11 +7,7 @@ The project has a unique dual-root structure:
 
 ### Core Technologies
 - **Laravel Framework**: Base web application framework
-<<<<<<< HEAD
-- **Filament v5**: Admin panel framework for all UI components
-=======
 - **Filament v4**: Admin panel framework for all UI components
->>>>>>> 4b6b99016 (first commit)
 - **Laravel Modules**: Modular architecture implementation with `wikimedia/composer-merge-plugin`
 - **Pest**: Testing framework (with strict .env.testing configuration)
 - **Vite**: Frontend build tool with Tailwind CSS v4
@@ -69,11 +54,7 @@ Modules/ModuleName/
 ```
 
 ### Filament Integration
-<<<<<<< HEAD
-All admin interfaces are built using Filament v5:
-=======
 All admin interfaces are built using Filament v4:
->>>>>>> 4b6b99016 (first commit)
 - Resources are located in `Modules/*/app/Filament/Resources/`
 - Custom pages in `Modules/*/app/Filament/Pages/`
 - Widgets in `Modules/*/app/Filament/Widgets/`
@@ -491,7 +472,6 @@ This rule must be remembered and applied in all development activities, ensuring
 - **Cache**: Database/Array
 - **Queue**: Database/Sync
 - **Frontend**: Vite + TailwindCSS v4
-=======
 # CLAUDE.md — On-Demand Stub
 
 Guida operativa completa: [docs/wiki/](docs/wiki/) · bootstrap: [agent-bootstrap-compact.md](docs/wiki/concepts/agent-bootstrap-compact.md)
@@ -517,4 +497,3 @@ cd laravel && composer test   # Pest
 Dettaglio architettura, XotBase, migrazioni, test: **wiki on-demand**, non preloadare questo file oltre lo stub.
 
 *Stub ≤50 righe — aggiornato 2026-06-06*
->>>>>>> dev

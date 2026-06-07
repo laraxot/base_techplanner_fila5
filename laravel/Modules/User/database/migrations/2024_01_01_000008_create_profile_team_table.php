@@ -19,41 +19,19 @@ return new class extends XotBaseMigration {
         // -- CREATE --
         $this->tableCreate(static function (Blueprint $table): void {
             $table->id();
-<<<<<<< HEAD
-<<<<<<< HEAD
-            $table->unsignedBigInteger('profile_id')->nullable()->index();
-=======
             $table->uuid('profile_id')->nullable()->index();
->>>>>>> 4b6b99016 (first commit)
-=======
-            $table->uuid('profile_id')->nullable()->index();
->>>>>>> dev
             $table->foreignId('team_id');
             $table->string('role')->nullable();
             $table->text('permissions')->nullable();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
             // Indice univoco per evitare duplicati profile_id + team_id
->>>>>>> 4b6b99016 (first commit)
-=======
-            // Indice univoco per evitare duplicati profile_id + team_id
->>>>>>> dev
             $table->unique(['profile_id', 'team_id']);
         });
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
             // Aggiorniamo i timestamp e soft deletes
-<<<<<<< HEAD
-            $this->updateTimestamps(
-                table: $table,
-                hasSoftDeletes: true,
-            );
-=======
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
->>>>>>> dev
         });
     }
 };

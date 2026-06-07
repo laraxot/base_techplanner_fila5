@@ -1,13 +1,7 @@
 # Factory Coverage Report - CMS Module
 
 ## 📊 Status Report
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Date:** 2025-08-22
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Module:** CMS
 
 ## ✅ Factory Coverage Complete

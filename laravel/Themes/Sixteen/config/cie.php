@@ -293,12 +293,4 @@ return [
         'terms_of_service_url' => env('CIE_TERMS_URL', '/terms'),
         'data_retention_days' => env('CIE_DATA_RETENTION', 365),
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 4b6b99016 (first commit)
-=======
-];
->>>>>>> dev

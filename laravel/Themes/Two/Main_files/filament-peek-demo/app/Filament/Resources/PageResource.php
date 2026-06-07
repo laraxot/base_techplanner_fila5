@@ -2,10 +2,6 @@
 
 namespace App\Filament\Resources;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 use App\Filament\Fields\PageContent;
 use App\Filament\Resources\PageResource\Pages\CreatePage;
 use App\Filament\Resources\PageResource\Pages\EditPage;
@@ -22,8 +18,6 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
-<<<<<<< HEAD
-=======
 use Filament\Schemas\Schema;
 use Filament\Schemas\Components\Grid;
 use Filament\Forms\Components\TextInput;
@@ -43,9 +37,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Pboivin\FilamentPeek\Forms\Actions\InlinePreviewAction;
 use Pboivin\FilamentPeek\Tables\Actions\ListPreviewAction;
 
@@ -53,21 +44,9 @@ class PageResource extends Resource
 {
     protected static ?string $model = Page::class;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document';
 
     protected static string|\UnitEnum|null $navigationGroup = 'Site';
-=======
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document';
-
-    protected static string | \UnitEnum | null $navigationGroup = 'Site';
->>>>>>> 4b6b99016 (first commit)
-=======
-    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document';
-
-    protected static string|\UnitEnum|null $navigationGroup = 'Site';
->>>>>>> dev
 
     public static function form(Schema $schema): Schema
     {
@@ -131,3 +110,7 @@ class PageResource extends Resource
         ];
     }
 }
+
+
+
+

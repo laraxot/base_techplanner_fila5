@@ -92,9 +92,4 @@ Verificare che:
 - [User Module Documentation](readme.md)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
-<<<<<<< HEAD
-- [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
-=======
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
->>>>>>> dev
-

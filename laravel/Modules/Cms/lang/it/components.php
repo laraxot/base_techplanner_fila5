@@ -96,10 +96,6 @@ return [
             'back' => 'Indietro',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Components',
     'plural_label' => 'Components (Plurale)',
     'navigation' => [
@@ -144,9 +140,4 @@ return [
             'label' => 'Elimina Components',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

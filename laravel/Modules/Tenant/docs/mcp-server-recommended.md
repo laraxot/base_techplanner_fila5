@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # MCP Server Consigliati per il Modulo Tenant
 
 ## Scopo del Modulo
@@ -22,33 +21,6 @@ Gestione multi-tenant, isolamento dati e provisioning tenant.
 
 ## Note
 - Adatta la configurazione per esigenze di isolamento o sincronizzazione avanzata.
-<<<<<<< HEAD
-=======
-# MCP Server Consigliati per il Modulo Tenant
-
-## Scopo del Modulo
-Gestione multi-tenant, isolamento dati e provisioning tenant.
-
-## Server MCP Consigliati
-- `filesystem`: Per gestione file e configurazioni tenant.
-- `fetch`: Per provisioning e sincronizzazione dati tra tenant.
-- `memory`: Per stato temporaneo e sessioni tenant.
-
-## Configurazione Minima Esempio
-```json
-{
-  "mcpServers": {
-    "filesystem": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-filesystem"] },
-    "fetch": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-fetch"] },
-    "memory": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-memory"] }
-  }
-}
-```
-
-## Note
-- Adatta la configurazione per esigenze di isolamento o sincronizzazione avanzata.
->>>>>>> 4b6b99016 (first commit)
-=======
 ---
 module: theme
 topic: mcp-server-recommended
@@ -56,4 +28,3 @@ canonical: ../../../Themes/docs/shared-components/mcp-server-recommended-1-Modul
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/mcp-server-recommended-1-Modules.md
->>>>>>> dev

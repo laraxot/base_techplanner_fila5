@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 # User - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: [DATE]
@@ -263,8 +259,6 @@ class DoctorScope implements Scope
 ---
 
 **Filosofia**: STI Unity, RBAC Standard, Multi-Tenant Isolation, Identity Foundation
-<<<<<<< HEAD
-=======
 # User Module: Philosophy, Purpose, and Design Principles
 
 **Date:** December 23, 2025
@@ -324,6 +318,3 @@ The `User` module, as the guardian of identity and access, significantly benefit
 5.  **Sequential Thinking (MCP)**: Crucial for analyzing complex authorization cascades or multi-factor authentication flows, helping to break down and understand intricate security mechanisms.
 
 By leveraging these MCPs, the `User` module can ensure its critical role in managing digital identities is more efficient, secure, and transparent, ultimately contributing to a more robust and trustworthy application.
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

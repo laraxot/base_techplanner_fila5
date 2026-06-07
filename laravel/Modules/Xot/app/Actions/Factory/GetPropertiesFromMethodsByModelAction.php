@@ -12,19 +12,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Factory;
 
-<<<<<<< HEAD
-use Exception;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\Relation;
-use Illuminate\Support\Str;
-use ReflectionMethod;
-use Spatie\QueueableAction\QueueableAction;
-use SplFileObject;
-use Webmozart\Assert\Assert;
-
-use function Safe\preg_replace;
-
-=======
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Str;
@@ -34,7 +21,6 @@ use function Safe\preg_replace;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
->>>>>>> dev
 /**
  * Classe per estrarre proprietà dai metodi di relazione di un modello.
  *
@@ -47,12 +33,8 @@ class GetPropertiesFromMethodsByModelAction
     /**
      * Estrae le proprietà dai metodi di relazione del modello.
      *
-<<<<<<< HEAD
-     * @param  Model  $model  Il modello da analizzare
-=======
      * @param Model $model Il modello da analizzare
      *
->>>>>>> dev
      * @return array<string, string> Dati estratti dalle relazioni
      */
     public function execute(Model $model): array
@@ -68,28 +50,17 @@ class GetPropertiesFromMethodsByModelAction
 
             // Utilizziamo la reflection per ispezionare il codice
             try {
-<<<<<<< HEAD
-                $reflection = new ReflectionMethod($model, $method);
-                $filename = $reflection->getFileName();
-
-                if ($filename === false) {
-=======
                 $reflection = new \ReflectionMethod($model, $method);
                 $filename = $reflection->getFileName();
 
                 if (false === $filename) {
->>>>>>> dev
                     continue; // Saltiamo i metodi senza file (es. metodi interni)
                 }
 
                 Assert::fileExists($filename, "Il file {$filename} non esiste");
 
                 // Leggiamo il contenuto del metodo
-<<<<<<< HEAD
-                $file = new SplFileObject($filename);
-=======
                 $file = new \SplFileObject($filename);
->>>>>>> dev
 
                 $file->seek($reflection->getStartLine() - 1);
                 $startLine = $file->key();
@@ -120,17 +91,10 @@ class GetPropertiesFromMethodsByModelAction
 
                 // Estrazione del corpo della funzione
                 $begin = mb_strpos($codeStr, 'function(');
-<<<<<<< HEAD
-                $begin = $begin !== false ? $begin : 0;
-
-                $end = mb_strrpos($codeStr, '}');
-                $end = $end !== false ? $end : mb_strlen($codeStr);
-=======
                 $begin = false !== $begin ? $begin : 0;
 
                 $end = mb_strrpos($codeStr, '}');
                 $end = false !== $end ? $end : mb_strlen($codeStr);
->>>>>>> dev
 
                 $length = $end - $begin + 1;
                 Assert::greaterThan($length, 0, 'La lunghezza del corpo della funzione deve essere positiva');
@@ -140,11 +104,7 @@ class GetPropertiesFromMethodsByModelAction
 
                 // Cerchiamo relazioni belongsTo
                 $this->extractBelongsToRelations($codeStr, $model, $method, $data);
-<<<<<<< HEAD
-            } catch (Exception $e) {
-=======
             } catch (\Exception $e) {
->>>>>>> dev
                 // Se c'è un errore nell'analisi del metodo, lo ignoriamo e passiamo al successivo
                 continue;
             }
@@ -156,28 +116,17 @@ class GetPropertiesFromMethodsByModelAction
     /**
      * Estrae le relazioni belongsTo dal codice.
      *
-<<<<<<< HEAD
-     * @param  string  $codeStr  Il codice da analizzare
-     * @param  Model  $model  Il modello
-     * @param  string  $method  Il nome del metodo
-     * @param  array<string, string>  &$data  L'array in cui salvare i dati estratti
-=======
      * @param string                $codeStr Il codice da analizzare
      * @param Model                 $model   Il modello
      * @param string                $method  Il nome del metodo
      * @param array<string, string> &$data   L'array in cui salvare i dati estratti
->>>>>>> dev
      */
     private function extractBelongsToRelations(string $codeStr, Model $model, string $method, array &$data): void
     {
         $search = '$this->belongsTo(';
         $pos = mb_stripos($codeStr, $search);
 
-<<<<<<< HEAD
-        if ($pos === false) {
-=======
         if (false === $pos) {
->>>>>>> dev
             return; // Il metodo non contiene una relazione belongsTo
         }
 
@@ -186,21 +135,13 @@ class GetPropertiesFromMethodsByModelAction
             $relationObj = $model->$method();
 
             // Verifichiamo che sia effettivamente una relazione
-<<<<<<< HEAD
-            if (! ($relationObj instanceof Relation)) {
-=======
             if (! $relationObj instanceof Relation) {
->>>>>>> dev
                 return;
             }
 
             // Verifichiamo che il metodo getForeignKeyName esista
             if (! method_exists($relationObj, 'getForeignKeyName')) {
-<<<<<<< HEAD
-                throw new Exception('Il metodo getForeignKeyName non esiste nella relazione');
-=======
                 throw new \Exception('Il metodo getForeignKeyName non esiste nella relazione');
->>>>>>> dev
             }
 
             // Otteniamo il nome della chiave esterna
@@ -215,11 +156,7 @@ class GetPropertiesFromMethodsByModelAction
             // Assert::isCallable rimosso - metodo verificato a compile time
 
             $type = 'factory('.$relatedClass.'::class)';
-<<<<<<< HEAD
-        } catch (Exception $e) {
-=======
         } catch (\Exception $e) {
->>>>>>> dev
             // In caso di errore, ignoriamo la relazione
             return;
         }

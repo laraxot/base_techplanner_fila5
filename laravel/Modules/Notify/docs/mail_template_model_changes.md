@@ -130,23 +130,14 @@ protected $casts = [
 
 ## Collegamenti Correlati
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Modifiche Migrazione](./migration_changes.md)
 - [Regole Migrazioni](./migration_rules.md)
 - [Documentazione Template](./email_templates.md)
 - [Best Practices](./best-practices.md)
-<<<<<<< HEAD
-=======
 - [Modifiche Migrazione](./MIGRATION_CHANGES.md)
 - [Regole Migrazioni](./MIGRATION_RULES.md)
 - [Documentazione Template](./EMAIL_TEMPLATES.md)
 - [Best Practices](./BEST-PRACTICES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Note Importanti
 

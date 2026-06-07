@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# PHPStan Action Plan - [DATE]
-=======
 # PHPStan Action Plan - 2025-11-18
->>>>>>> 4b6b99016 (first commit)
-=======
 # PHPStan Action Plan - [DATE]
->>>>>>> dev
 
 ## Executive Summary
 
@@ -270,14 +263,7 @@ class ChartDataValidator
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 **Last Updated**: 2025-11-18
 **Next Review**: 2025-11-25
->>>>>>> 4b6b99016 (first commit)
-=======
 
->>>>>>> dev
 **Status**: 🟡 IN PROGRESS

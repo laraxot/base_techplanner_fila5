@@ -6,15 +6,7 @@ namespace Modules\Cms\Filament\Resources\PageContentResource\Pages;
 
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
 // use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
-=======
-use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
->>>>>>> 4b6b99016 (first commit)
-=======
-// use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
->>>>>>> dev
 use Modules\Cms\Filament\Resources\PageContentResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 
@@ -29,15 +21,7 @@ class EditPageContent extends XotBaseEditRecord
         return [
             'view' => ViewAction::make(),
             'delete' => DeleteAction::make(),
-<<<<<<< HEAD
-<<<<<<< HEAD
             // 'locale-switcher' => LocaleSwitcher::make(), // Temporarily disabled until lara-zeus package is working
-=======
-            'locale-switcher' => LocaleSwitcher::make(),
->>>>>>> 4b6b99016 (first commit)
-=======
-            // 'locale-switcher' => LocaleSwitcher::make(), // Temporarily disabled until lara-zeus package is working
->>>>>>> dev
         ];
     }
 }

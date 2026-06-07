@@ -19,37 +19,15 @@ final readonly class UserNameFieldsResolver
 
     public ?string $name;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     public ?string $firstName;
 
     public ?string $lastName;
-=======
-    public ?string $first_name;
-
-    public ?string $last_name;
->>>>>>> 4b6b99016 (first commit)
-=======
-    public ?string $firstName;
-
-    public ?string $lastName;
->>>>>>> dev
 
     public function __construct(User $user)
     {
         $this->name = $this->resolveName($user);
-<<<<<<< HEAD
-<<<<<<< HEAD
         $this->firstName = $this->resolveName($user);
         $this->lastName = $this->resolveSurname($user);
-=======
-        $this->first_name = $this->resolveName($user);
-        $this->last_name = $this->resolveSurname($user);
->>>>>>> 4b6b99016 (first commit)
-=======
-        $this->firstName = $this->resolveName($user);
-        $this->lastName = $this->resolveSurname($user);
->>>>>>> dev
     }
 
     public static function make(User $user): self
@@ -72,10 +50,6 @@ final readonly class UserNameFieldsResolver
      */
     private function resolveNameFields(User $idpUser, string $searchMethod): string
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         $this->validateSearchMethod($searchMethod);
 
         $nameSection = $this->determineNameField($idpUser, $searchMethod);
@@ -139,27 +113,6 @@ final readonly class UserNameFieldsResolver
 
     private function getRawUserData(User $idpUser): array
     {
-<<<<<<< HEAD
-=======
-        if (! in_array($searchMethod, [self::NAME_SEARCH, self::SURNAME_SEARCH], strict: true)) {
-            throw new \InvalidArgumentException('Metodo di ricerca non valido');
-        }
-
-        $name = $idpUser->getName();
-        if (! is_string($name) || empty($name)) {
-            return '';
-        }
-
-        $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($name, $searchMethod);
-
-        if ($nameSection->isNotEmpty()) {
-            return $nameSection->toString();
-        }
-
-        // Ottenere i dati raw in modo sicuro attraverso reflection
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         $raw = [];
         try {
             $reflection = new \ReflectionClass($idpUser);
@@ -182,60 +135,7 @@ final readonly class UserNameFieldsResolver
             // Fallback silenzioso
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         return $raw;
-=======
-        // Tenta di ottenere un nome dai dati raw
-        $nameField = '';
-        if (isset($raw['name']) && is_string($raw['name']) && ! empty($raw['name'])) {
-            $nameField = $raw['name'];
-        }
-
-        if (empty($nameField)) {
-            return '';
-        }
-
-        $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($nameField, $searchMethod);
-        if (! $nameSection->isNotEmpty()) {
-            // If both sections were empty, try the "hardest way"
-            // by analyzing email address
-            $email = $idpUser->getEmail();
-            if (! is_string($email) || empty($email)) {
-                return '';
-            }
-
-            return Str::of($email)
-                ->trim()
-                ->before('@')
-                ->$searchMethod('.') // If no point is available, the whole string should be returned
-                ->trim()
-                ->title()
-                ->toString();
-        }
-
-        if (filter_var($nameSection->toString(), FILTER_VALIDATE_EMAIL)) {
-            // If both sections were empty, try the "hardest way"
-            // by analyzing email address
-            $email = $idpUser->getEmail();
-            if (! is_string($email) || empty($email)) {
-                return '';
-            }
-
-            return Str::of($email)
-                ->trim()
-                ->before('@')
-                ->$searchMethod('.') // If no point is available, the whole string should be returned
-                ->trim()
-                ->title()
-                ->toString();
-        }
-
-        return $nameSection->toString();
->>>>>>> 4b6b99016 (first commit)
-=======
-        return $raw;
->>>>>>> dev
     }
 
     private function resolveNameFieldByNameAttributeAnalysis(string $nameField, string $searchMethod): Stringable

@@ -1,13 +1,7 @@
 # Navigation Translations Completion - Global Roadmap
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2026-01-09  
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data**: 2026-01-09  
->>>>>>> dev
 **Modulo**: Lang (Coordinamento Globale)  
 **Status**: 📝 **ROADMAP CREATA**
 
@@ -165,33 +159,17 @@ Per ogni risorsa, le traduzioni navigation seguono questo pattern:
 
 ## 📚 Documentazione Correlata
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Job Module Roadmap](../../job/docs/navigation-translations-completion-roadmap-[date].md)
-- [User Module Roadmap](../../user/docs/navigation-translations-completion-roadmap-[date].md)
-- [Translation Standards](../../xot/docs/translation-standards.md)
-=======
 - [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [Translation Standards](../../Xot/docs/translation-standards.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Job Module Roadmap](../../Job/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [User Module Roadmap](../../User/docs/navigation-translations-completion-roadmap-2026-01-09.md)
 - [Translation Standards](../../Xot/docs/translation-standards.md)
->>>>>>> dev
 - [Navigation Translations Fixes](./navigation-translations-fixes.md)
 
 ---
 
 **Status**: 📝 **ROADMAP CREATA - PRONTA PER IMPLEMENTAZIONE**
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2026-01-09
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: 2026-01-09
->>>>>>> dev

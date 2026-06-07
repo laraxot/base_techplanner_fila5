@@ -12,31 +12,15 @@ return [
             'label' => 'Destinatario',
             'placeholder' => 'Inserisci numero di telefono',
             'helper_text' => 'Inserisci il numero con prefisso internazionale (es. +39)',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Inserisci testo del messaggio',
             'helper_text' => 'Il messaggio non può superare i 160 caratteri',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'driver' => [
             'label' => 'Provider',
@@ -50,16 +34,8 @@ return [
                 'gammu' => 'Gammu',
                 'netfun' => 'Netfun',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -72,14 +48,6 @@ return [
         'success' => 'SMS inviato con successo',
         'error' => 'Errore nell\'invio dell\'SMS: :error',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

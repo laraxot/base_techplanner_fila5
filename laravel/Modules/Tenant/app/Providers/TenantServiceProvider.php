@@ -69,21 +69,6 @@ class TenantServiceProvider extends XotBaseServiceProvider
 
     public function registerDB(): void
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        // Skip database purge/reconnect during testing to preserve test DB mappings
-        if ($this->app->environment('testing')) {
-            return;
-        }
-
->>>>>>> 4b6b99016 (first commit)
-        Schema::defaultStringLength(191);
-
-        if (Request::has('act') && Request::input('act') === 'migrate') {
-            DB::purge('mysql'); // Call to a member function prepare() on null
-            DB::reconnect('mysql');
-=======
         Schema::defaultStringLength(191);
 
         $preMergeDefaultRaw = Config::get('database.default');
@@ -92,7 +77,6 @@ class TenantServiceProvider extends XotBaseServiceProvider
         if (Request::has('act') && Request::input('act') === 'migrate') {
             DB::purge($preMergeDefaultConn); // Call to a member function prepare() on null
             DB::reconnect($preMergeDefaultConn);
->>>>>>> dev
         }
 
         $raw = TenantService::config('database');
@@ -122,33 +106,6 @@ class TenantServiceProvider extends XotBaseServiceProvider
             }
 
             $name = $module->getSnakeName();
-<<<<<<< HEAD
-<<<<<<< HEAD
-            $upperName = strtoupper($name);
-
-            if (isset($connections[$default]) && is_array($connections[$default]) && ! isset($connections[$name])) {
-                /** @var array<string, mixed> $moduleConfig */
-                $moduleConfig = $connections[$default];
-
-                // Override with module-specific env variables if they exist
-                $moduleConfig['database'] = env("DB_DATABASE_{$upperName}", Arr::get($moduleConfig, 'database'));
-                $moduleConfig['username'] = env("DB_USERNAME_{$upperName}", Arr::get($moduleConfig, 'username'));
-                $moduleConfig['password'] = env("DB_PASSWORD_{$upperName}", Arr::get($moduleConfig, 'password'));
-                $moduleConfig['host'] = env("DB_HOST_{$upperName}", Arr::get($moduleConfig, 'host', '127.0.0.1'));
-                $moduleConfig['port'] = env("DB_PORT_{$upperName}", Arr::get($moduleConfig, 'port', '3306'));
-
-                $connections[$name] = $moduleConfig;
-            }
-=======
-            // *
-            if (isset($connections[$default]) && ! isset($connections[$name])) {
-                // @var array|float|int|string|null $defaultConnection
-                $defaultConnection = $connections[$default];
-                $connections[$name] = $defaultConnection;
-            }
-            // */
->>>>>>> 4b6b99016 (first commit)
-=======
             $upperName = strtoupper($name);
 
             if (isset($connections[$default]) && ! isset($connections[$name])) {
@@ -165,28 +122,11 @@ class TenantServiceProvider extends XotBaseServiceProvider
 
                 $connections[$name] = $moduleConfig;
             }
->>>>>>> dev
         }
 
         $data = Arr::set($data, 'connections', $connections);
         Config::set('database', $data);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        // Skip purge/reconnect during testing to preserve test DB mappings
-        if (! $this->app->environment('testing')) {
-            // Call to a member function prepare() on null
-            // Database connection [mysql] not configured.
-            DB::purge('mysql');
-            DB::reconnect();
-        }
-=======
-        // Call to a member function prepare() on null
-        // Database connection [mysql] not configured.
-        DB::purge('mysql');
-        DB::reconnect();
->>>>>>> 4b6b99016 (first commit)
-=======
         // Skip purge/reconnect during testing to preserve test DB mappings
         if (! $this->app->environment('testing')) {
             // Call to a member function prepare() on null — connessione default da .env (mariadb|mysql ecc.)
@@ -195,7 +135,6 @@ class TenantServiceProvider extends XotBaseServiceProvider
             DB::purge($purgeConnName);
             DB::reconnect();
         }
->>>>>>> dev
     }
 
     #[Override]

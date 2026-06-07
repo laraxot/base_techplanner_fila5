@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 # __php-code-analysis-tools
 
 <!-- Contenuto migrato da _docs/__php-code-analysis-tools.txt -->
 
-=======
->>>>>>> dev
 https://github.com/PHPCheckstyle/phpcheckstyle
 
 https://scrutinizer-ci.com/
@@ -23,8 +20,3 @@ https://github.com/phan/phan
 https://github.com/overtrue/phplint
 
 https://phpmd.org/
-
-<<<<<<< HEAD
-=======
-
->>>>>>> dev

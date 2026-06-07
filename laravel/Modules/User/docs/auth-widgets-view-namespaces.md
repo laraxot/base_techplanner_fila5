@@ -100,23 +100,12 @@ Per ogni nuovo widget di autenticazione:
 - [ ] View minimalista (solo styling)
 - [ ] Logica centralizzata nel widget PHP
 ## Collegamenti
-<<<<<<< HEAD
-- [Documentazione Root: Widget View Namespaces](../../../project_docs/frontend/widget-view-namespaces.md)
-- [Struttura Temi](../../../project_docs/tecnico/themes/theme-structure.md)
-- [Documentazione Root: Widget View Namespaces](../../../docs/frontend/widget-view-namespaces.md)
-- [Struttura Temi](../../../docs/tecnico/themes/theme-structure.md)
-- [Implementazione Auth Pages](auth-pages-implementation.md)
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Dicembre 2024*
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione Root: Widget View Namespaces](../../../../docs/project/frontend/widget-view-namespaces.md)
 - [Struttura Temi](../../../../docs/project/tecnico/themes/theme-structure.md)
 - [Documentazione Root: Widget View Namespaces](../../../../docs/frontend/widget-view-namespaces.md)
 - [Struttura Temi](../../../../docs/tecnico/themes/theme-structure.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
->>>>>>> dev
 # Widget di Autenticazione: Namespace delle View
 
 ## ⚠️ **Regola Critica**
@@ -259,11 +248,6 @@ Per ogni nuovo widget di autenticazione:
 - [ ] Logica centralizzata nel widget PHP
 
 ## Collegamenti
-<<<<<<< HEAD
-- [Documentazione Root: Widget View Namespaces](../../../docs/frontend/widget-view-namespaces.md)
-- [Struttura Temi](../../../docs/tecnico/themes/theme-structure.md)
-=======
 - [Documentazione Root: Widget View Namespaces](../../../../docs/frontend/widget-view-namespaces.md)
 - [Struttura Temi](../../../../docs/tecnico/themes/theme-structure.md)
->>>>>>> dev
 - [Implementazione Auth Pages](auth-pages-implementation.md)

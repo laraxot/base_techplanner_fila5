@@ -33,27 +33,15 @@ cd laravel
 
 ## Collegamenti alla Documentazione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md): Documentazione dei conflitti risolti nel modulo UI.
-=======
 - [CONFLITTI_MERGE_RISOLTI.md](CONFLITTI_MERGE_RISOLTI.md): Documentazione dei conflitti risolti nel modulo UI.
->>>>>>> 4b6b99016 (first commit)
-=======
 - [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md): Documentazione dei conflitti risolti nel modulo UI.
->>>>>>> dev
 - [actions/table_layout_toggle.md](actions/table_layout_toggle.md): Documentazione dell'azione TableLayoutToggle.
 - [components.md](components.md): Documentazione dei componenti UI, incluso AddressField.
 
 ## Collegamenti Principali
 
-<<<<<<< HEAD
-- [Risoluzione Conflitti Git](../../../../docs/risoluzione_conflitti_git.md): Documentazione principale sulla risoluzione dei conflitti git.
-- [UI Conflict Links](../../../../docs/ui_conflict_links.md): Collegamenti ai file di risoluzione dei conflitti nel modulo UI.
-=======
 - [Risoluzione Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md): Documentazione principale sulla risoluzione dei conflitti git.
 - [UI Conflict Links](../../../../../docs/ui_conflict_links.md): Collegamenti ai file di risoluzione dei conflitti nel modulo UI.
->>>>>>> dev
 # Test di Risoluzione Conflitti nel Modulo UI
 
 ## Descrizione
@@ -89,24 +77,12 @@ cd laravel
 
 ## Collegamenti alla Documentazione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md): Documentazione dei conflitti risolti nel modulo UI.
-=======
 - [CONFLITTI_MERGE_RISOLTI.md](CONFLITTI_MERGE_RISOLTI.md): Documentazione dei conflitti risolti nel modulo UI.
->>>>>>> 4b6b99016 (first commit)
-=======
 - [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md): Documentazione dei conflitti risolti nel modulo UI.
->>>>>>> dev
 - [actions/table_layout_toggle.md](actions/table_layout_toggle.md): Documentazione dell'azione TableLayoutToggle.
 - [components.md](components.md): Documentazione dei componenti UI, incluso AddressField.
 
 ## Collegamenti Principali
 
-<<<<<<< HEAD
-- [Risoluzione Conflitti Git](../../../../docs/risoluzione_conflitti_git.md): Documentazione principale sulla risoluzione dei conflitti git.
-- [UI Conflict Links](../../../../docs/ui_conflict_links.md): Collegamenti ai file di risoluzione dei conflitti nel modulo UI.
-=======
 - [Risoluzione Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md): Documentazione principale sulla risoluzione dei conflitti git.
 - [UI Conflict Links](../../../../../docs/ui_conflict_links.md): Collegamenti ai file di risoluzione dei conflitti nel modulo UI.
->>>>>>> dev

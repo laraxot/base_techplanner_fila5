@@ -9,8 +9,4 @@
 - Filtro semplificato e affidabile dei dispositivi attivi.
 
 ## Collegamenti
-<<<<<<< HEAD
-- Documentazione principale: [Ris. conflitti Git - Modulo Notify](../../../docs/risoluzione_conflitti_git.md#modulo-notify)
-=======
 - Documentazione principale: [Ris. conflitti Git - Modulo Notify](../../../../docs/risoluzione_conflitti_git.md#modulo-notify)
->>>>>>> dev

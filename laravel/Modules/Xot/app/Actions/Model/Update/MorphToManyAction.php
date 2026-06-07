@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model\Update;
 
-<<<<<<< HEAD
-use Exception;
-=======
->>>>>>> dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Support\Arr;
@@ -30,17 +26,10 @@ class MorphToManyAction
     /**
      * Execute the action to update morphToMany relationships.
      *
-<<<<<<< HEAD
-     * @param  Model  $row  The model instance to update
-     * @param  RelationDTO  $relationDTO  Data transfer object containing relation information
-     *
-     * @throws Exception When data is not in correct format or relation is invalid
-=======
      * @param Model       $row         The model instance to update
      * @param RelationDTO $relationDTO Data transfer object containing relation information
      *
      * @throws \Exception When data is not in correct format or relation is invalid
->>>>>>> dev
      */
     public function execute(Model $row, RelationDTO $relationDTO): void
     {
@@ -57,11 +46,7 @@ class MorphToManyAction
         }
 
         if (! \is_array($data)) {
-<<<<<<< HEAD
-            throw new Exception('['.__LINE__.']['.class_basename($this).']');
-=======
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
->>>>>>> dev
         }
 
         if (! Arr::isAssoc($data)) {

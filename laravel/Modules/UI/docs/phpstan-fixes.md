@@ -62,15 +62,8 @@ if (isset($record->attribute)) {
 # PHPStan Status: Modules/UI
 
 ## Analysis
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Date**: [DATE]
-=======
 - **Date**: 2025-12-24
->>>>>>> 4b6b99016 (first commit)
-=======
 - **Date**: [DATE]
->>>>>>> dev
 - **Total Errors**: 0
 - **Status**: Passed
 

@@ -44,11 +44,7 @@ Dopo un'analisi approfondita, è stato determinato che:
    - L'uso della chiave `navigation` è intenzionale e necessario per il funzionamento del modulo Notify
 
 2. **Eccezioni alle convenzioni generali**
-<<<<<<< HEAD
-   - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di SaluteOra
-=======
 - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di Quaeris
->>>>>>> dev
    - Questa eccezione è documentata e intenzionale
 
 ## Convenzioni Corrette per il Modulo Notify
@@ -85,21 +81,9 @@ return [
 
 ## Conclusione
 
-<<<<<<< HEAD
-Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono correttamente le convenzioni specifiche del modulo. Non è necessario modificare questi file per conformarsi alle convenzioni generali di SaluteOra, poiché rappresentano un'eccezione documentata.
-
-## Riferimenti
-
-<<<<<<< HEAD
-- [Convenzioni Generali di Traduzione](../../lang/docs/translation_keys_rules.md)
-- [Convenzioni Specifiche del Modulo Notify](./translation_conventions.md)
-- [Regole per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
-=======
 - [Convenzioni Generali di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Convenzioni Specifiche del Modulo Notify](./TRANSLATION_CONVENTIONS.md)
 - [Regole per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono correttamente le convenzioni specifiche del modulo. Non è necessario modificare questi file per conformarsi alle convenzioni generali di Quaeris, poiché rappresentano un'eccezione documentata.
 
 ## Riferimenti
@@ -107,4 +91,3 @@ Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono corre
 - [Convenzioni Generali di Traduzione](../../lang/docs/translation_keys_rules.md)
 - [Convenzioni Specifiche del Modulo Notify](./translation_conventions.md)
 - [Regole per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
->>>>>>> dev

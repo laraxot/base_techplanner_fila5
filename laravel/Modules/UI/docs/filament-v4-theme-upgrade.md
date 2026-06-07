@@ -1,8 +1,5 @@
 # Filament v4 Theme Upgrade Guide - Modulo UI
-<<<<<<< HEAD
 **Data**: 10 Dicembre 2025
-=======
->>>>>>> dev
 **Modulo**: UI (Theme Components)
 **Versione**: 4.0
 **Stato**: Ready for Implementation

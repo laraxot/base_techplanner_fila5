@@ -149,10 +149,4 @@ Dopo aver applicato le correzioni, verificare con:
 - [Root PHPStan Rules](../../../docs/phpstan_rules.md)
 - [Employee Module Structure](./module_structure.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-07-31*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

@@ -316,11 +316,5 @@ class Create{ModelName}Action
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Ultimo aggiornamento:** Gennaio 2025
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Versione:** 2.0 - Consolidata DRY + KISS

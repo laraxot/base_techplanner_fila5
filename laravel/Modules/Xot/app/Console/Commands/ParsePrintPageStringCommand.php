@@ -8,10 +8,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Console\Commands;
 
-<<<<<<< HEAD
-use Exception;
-=======
->>>>>>> dev
 use Illuminate\Console\Command;
 use Modules\Xot\Actions\ParsePrintPageStringAction;
 
@@ -42,11 +38,7 @@ class ParsePrintPageStringCommand extends Command
     {
         $str = $this->argument('str');
         if (! is_string($str)) {
-<<<<<<< HEAD
-            throw new Exception('argument str must be a string');
-=======
             throw new \Exception('argument str must be a string');
->>>>>>> dev
         }
         dddx(app(ParsePrintPageStringAction::class)->execute($str));
     }

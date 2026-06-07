@@ -74,10 +74,5 @@ La soluzione è stata verificata con:
 
 ## Collegamenti Bidirezionali
 
-<<<<<<< HEAD
-- [Documentazione principale risoluzione conflitti git](../../../../docs/risoluzione_conflitti_git.md)
-- [Documentazione dettagliata VideoEntry](../../../../docs/video_entry_conflict.md)
-=======
 - [Documentazione principale risoluzione conflitti git](../../../../../docs/risoluzione_conflitti_git.md)
 - [Documentazione dettagliata VideoEntry](../../../../../docs/video_entry_conflict.md)
->>>>>>> dev

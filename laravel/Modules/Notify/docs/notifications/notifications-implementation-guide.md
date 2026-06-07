@@ -45,16 +45,9 @@ class RecordNotification extends Notification implements ShouldQueue
     public function toMail(object $notifiable): MailMessage
     {
         return (new MailMessage)
-<<<<<<< HEAD
-<<<<<<< HEAD
-            ->subject('Notifica da SaluteOra')
-=======
             ->subject('Notifica da ')
             ->subject('Notifica da <nome progetto>')
->>>>>>> 4b6b99016 (first commit)
-=======
 ->subject('Notifica da Quaeris')
->>>>>>> dev
             ->greeting('Ciao ' . $this->record->name)
             ->line('Contenuto della notifica...')
             ->action('Visualizza', url('/'))
@@ -167,18 +160,9 @@ public function toMail(object $notifiable): \Illuminate\Mail\Mailable
 
 ## Collegamenti alla Documentazione Correlata
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [ATTACHMENTS_USAGE.md](../email-sending/attachments_usage.md)
-- [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
-- [EMAIL_TROUBLESHOOTING.md](../email-sending/email_troubleshooting.md)
-=======
 - [ATTACHMENTS_USAGE.md](../email-sending/ATTACHMENTS_USAGE.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)
 - [EMAIL_TROUBLESHOOTING.md](../email-sending/EMAIL_TROUBLESHOOTING.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [ATTACHMENTS_USAGE.md](../email-sending/attachments_usage.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
 - [EMAIL_TROUBLESHOOTING.md](../email-sending/email_troubleshooting.md)
->>>>>>> dev

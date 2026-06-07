@@ -280,15 +280,8 @@ quality-check:
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Creato**: [DATE]
-=======
 **Creato**: 2025-01-29
->>>>>>> 4b6b99016 (first commit)
-=======
 **Creato**: [DATE]
->>>>>>> dev
 **Tipo**: Regola Quality Gate Obbligatoria
 **Applicazione**: Ogni modifica file
 **Severità**: 🔴 CRITICA

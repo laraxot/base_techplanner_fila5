@@ -6,10 +6,6 @@ return [
     'add_attachment' => [
         'title' => 'Anhänge',
         'label' => 'Anhang hochladen',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'fields' => [
         ],
     ],
@@ -25,11 +21,5 @@ return [
     'fields' => [
     ],
     'actions' => [
-<<<<<<< HEAD
-=======
-        'fields' => [],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ],
 ];

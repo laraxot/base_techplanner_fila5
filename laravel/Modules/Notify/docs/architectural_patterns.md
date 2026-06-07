@@ -1,10 +1,6 @@
 # Pattern Architetturali per le Notifiche
 
-<<<<<<< HEAD
-Questo documento analizza i pattern architetturali utilizzati nel sistema di notifiche di SaluteOra, con particolare attenzione alla selezione del driver e alla gestione delle dipendenze.
-=======
 Questo documento analizza i pattern architetturali utilizzati nel sistema di notifiche di Quaeris, con particolare attenzione alla selezione del driver e alla gestione delle dipendenze.
->>>>>>> dev
 
 ## Confronto tra Pattern Architetturali
 

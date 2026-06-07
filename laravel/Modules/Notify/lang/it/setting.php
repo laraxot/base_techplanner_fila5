@@ -7,10 +7,6 @@ return [
         'label' => 'Impostazioni Notifiche',
         'group' => 'Notifiche',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Setting',
     'plural_label' => 'Setting (Plurale)',
     'fields' => [
@@ -44,9 +40,4 @@ return [
             'label' => 'Elimina Setting',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

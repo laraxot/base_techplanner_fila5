@@ -1,12 +1,7 @@
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
 
-<<<<<<< HEAD
-**Data**: 27 Gennaio 2025
-**Status**: ✅ COMPLETATO CON SUCCESSO
-=======
 **Data**: 27 Gennaio 2025  
 **Status**: ✅ COMPLETATO CON SUCCESSO  
->>>>>>> dev
 **Errori Corretti**: 1 errore di sintassi constructor
 
 ## 📋 Panoramica Correzioni
@@ -188,18 +183,10 @@ public function __construct(string $output)
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README.md Modulo Job](./readme.md)
-- [Queue Management](./queue/readme.md)
-=======
 - [README.md Modulo Job](./README.md)
 - [Queue Management](./queue/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README.md Modulo Job](./README.md)
 - [Queue Management](./queue/README.md)
->>>>>>> dev
 - [Best Practices](./best-practices.md)
 
 ### **Risorse Esterne**
@@ -209,22 +196,9 @@ public function __construct(string $output)
 
 ---
 
-<<<<<<< HEAD
-**🔄 Ultimo aggiornamento**: 27 Gennaio 2025
-**📦 Versione**: 2.0
-**🐛 PHPStan Level**: 9 ✅
-**🌐 Translation Standards**: IT/EN complete ✅
-**🚀 Performance**: 95/100 score
-**✨ Test Coverage**: 85% ✅
-=======
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025  
 **📦 Versione**: 2.0  
 **🐛 PHPStan Level**: 9 ✅  
 **🌐 Translation Standards**: IT/EN complete ✅  
 **🚀 Performance**: 95/100 score  
 **✨ Test Coverage**: 85% ✅
-
-
-
-
->>>>>>> dev

@@ -373,13 +373,7 @@ return [
 
 ### Caso Reale: ListLogActivitiesAction
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 27 Ottobre 2025
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **File**: `Modules/Activity/app/Filament/Actions/ListLogActivitiesAction.php`
 **Errore**: Estensione diretta di `Filament\Actions\Action`
 
@@ -419,15 +413,8 @@ return [
 - [XotBaseWidget](../app/Filament/Widgets/XotBaseWidget.php)
 
 ### Errori Simili Documentati
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [No Hint Path Defined](../../activity/docs/errori/no-hint-path-defined.md)
-=======
 - [No Hint Path Defined](../../Activity/docs/errori/no-hint-path-defined.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [No Hint Path Defined](../../activity/docs/errori/no-hint-path-defined.md)
->>>>>>> dev
 - [Service Provider Issues](./service-provider-issues.md)
 
 ---

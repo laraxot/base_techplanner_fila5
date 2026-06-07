@@ -4,23 +4,12 @@ Questo documento serve come indice centrale per tutta la documentazione del prog
 
 ## Linee Guida Generali
 Le linee guida complete per la documentazione sono disponibili in:
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Linee Guida per la Documentazione](../../../xot/project_docs/guidelines/documentation.md)
-=======
 - [Linee Guida per la Documentazione](../../../Xot/project_docs/guidelines/documentation.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Linee Guida per la Documentazione](../../../xot/project_docs/guidelines/documentation.md)
->>>>>>> dev
 
 ## Documentazione per Modulo
 
 ### Core
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Xot Module](../../../xot/docs/readme.md)
 - [UI Module](../../../ui/docs/readme.md)
 - [CMS Module](../../../cms/docs/readme.md)
@@ -73,8 +62,6 @@ Le linee guida complete per la documentazione sono disponibili in:
 - [Changelog](../../../xot/project_docs/changelog/readme.md)
 - [Contributing](../../../xot/project_docs/contributing.md)
 - [Security](../../../xot/project_docs/security.md)
-<<<<<<< HEAD
-=======
 - [Xot Module](../../../Xot/docs/README.md)
 - [UI Module](../../../UI/docs/README.md)
 - [CMS Module](../../../Cms/docs/README.md)
@@ -127,9 +114,6 @@ Le linee guida complete per la documentazione sono disponibili in:
 - [Changelog](../../../Xot/project_docs/changelog/README.md)
 - [Contributing](../../../Xot/project_docs/contributing.md)
 - [Security](../../../Xot/project_docs/security.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 # Regole di Documentazione
 
 ## Panoramica
@@ -138,23 +122,14 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 ## Collegamenti
 
 ### Documentazione Correlata
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming_conventions.md) - Regole di naming per campi, classi e directory
 - [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
-<<<<<<< HEAD
-=======
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./NAMING_CONVENTIONS.md) - Regole di naming per campi, classi e directory
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Validazione dei Collegamenti
 
@@ -163,40 +138,24 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-[Documento in Modulo Altro](../../altromodulo/docs/documento.md)
-=======
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
->>>>>>> 4b6b99016 (first commit)
 [Documento in Root](../../../docs/documento.md)
-=======
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
->>>>>>> dev
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 [Documento Correlato](../xot/docs/documento.md)
 [Documento Correlato](../xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
-<<<<<<< HEAD
-=======
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ```
 
 ### Checklist di Validazione
@@ -206,15 +165,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] Usa la notazione corretta per i percorsi relativi
 - [ ] I percorsi sono compatibili con diversi sistemi operativi
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
-=======
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
->>>>>>> dev
 
 ## Validazione dei Collegamenti
 
@@ -223,40 +175,24 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-[Documento in Modulo Altro](../../altromodulo/docs/documento.md)
-=======
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
->>>>>>> 4b6b99016 (first commit)
 [Documento in Root](../../../docs/documento.md)
-=======
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
->>>>>>> dev
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 [Documento Correlato](../xot/docs/documento.md)
 [Documento Correlato](../xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
-<<<<<<< HEAD
-=======
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ```
 
 ### Checklist di Validazione
@@ -266,15 +202,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] Usa la notazione corretta per i percorsi relativi
 - [ ] I percorsi sono compatibili con diversi sistemi operativib6f667c (.)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
-=======
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
->>>>>>> dev
 
 ## Validazione dei Collegamenti
 
@@ -283,40 +212,24 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-[Documento in Modulo Altro](../../altromodulo/docs/documento.md)
-=======
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
->>>>>>> 4b6b99016 (first commit)
 [Documento in Root](../../../docs/documento.md)
-=======
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
->>>>>>> dev
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 [Documento Correlato](../xot/docs/documento.md)
 [Documento Correlato](../xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
-<<<<<<< HEAD
-=======
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ```
 
 ### Checklist di Validazione

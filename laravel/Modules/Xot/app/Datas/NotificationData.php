@@ -12,7 +12,7 @@ use Spatie\LaravelData\Data;
  *
  * @phpstan-consistent-constructor
  */
-final class NotificationData extends Data
+class NotificationData extends Data
 {
     /**
      * @param array  $channels        Canali di notifica disponibili
@@ -57,8 +57,8 @@ final class NotificationData extends Data
     /**
      * Create a new instance of NotificationData with default values.
      */
-    public static function make(): static
+    public static function make(): self
     {
-        return new static();
+        return new self();
     }
 }

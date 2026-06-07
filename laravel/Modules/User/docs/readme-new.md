@@ -967,15 +967,8 @@ test('user can switch teams', function () {
 - **Fixed**: File locking pattern implementation
 - **Improved**: Security alert widgets
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-See [CHANGELOG.md](./changelog.md) for full history.
-=======
 See [CHANGELOG.md](./CHANGELOG.md) for full history.
->>>>>>> 4b6b99016 (first commit)
-=======
 See [CHANGELOG.md](./changelog.md) for full history.
->>>>>>> dev
 
 ---
 
@@ -993,25 +986,14 @@ See [CHANGELOG.md](./changelog.md) for full history.
 - Social login enhancements
 - Advanced audit reporting
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-See [ROADMAP.md](./roadmap.md) for details.
-=======
 See [ROADMAP.md](./ROADMAP.md) for details.
->>>>>>> 4b6b99016 (first commit)
-=======
 See [ROADMAP.md](./roadmap.md) for details.
->>>>>>> dev
 
 ---
 
 ## 📖 Related Documentation
 
 ### Internal Modules
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Xot Module](../xot/docs/readme.md) - Core foundation
 - [Activity Module](../activity/docs/readme.md) - Activity tracking
 - [Lang Module](../lang/docs/readme.md) - Translations
@@ -1019,8 +1001,6 @@ See [ROADMAP.md](./roadmap.md) for details.
 
 ### Project Documentation
 - [CLAUDE.md](../../../claude.md) - Project architecture
-<<<<<<< HEAD
-=======
 - [Xot Module](../Xot/docs/README.md) - Core foundation
 - [Activity Module](../Activity/docs/README.md) - Activity tracking
 - [Lang Module](../Lang/docs/README.md) - Translations
@@ -1028,11 +1008,8 @@ See [ROADMAP.md](./roadmap.md) for details.
 
 ### Project Documentation
 - [CLAUDE.md](../../../CLAUDE.md) - Project architecture
->>>>>>> 4b6b99016 (first commit)
 - [Security Guidelines](../../../docs/security.md)
-=======
 - [Security Guidelines](../../../../docs/security.md)
->>>>>>> dev
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

@@ -25,11 +25,7 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 use Override;
 
 /**
-<<<<<<< HEAD
- * @property \Filament\Schemas\Schema $pushForm
-=======
  * @property Schema $pushForm
->>>>>>> dev
  */
 class SendFirebasePushNotificationPage extends XotBasePage
 {
@@ -64,11 +60,7 @@ class SendFirebasePushNotificationPage extends XotBasePage
     }
 
     /**
-<<<<<<< HEAD
-     * @return array<string, \Filament\Forms\Components\TextInput|\Filament\Forms\Components\Textarea|\Filament\Forms\Components\Select|\Filament\Forms\Components\Toggle|\Filament\Forms\Components\KeyValue>
-=======
      * @return array<string, TextInput|Textarea|Select|Toggle|KeyValue>
->>>>>>> dev
      */
     public function getPushFormSchema(): array
     {
@@ -137,11 +129,7 @@ class SendFirebasePushNotificationPage extends XotBasePage
                 ->send();
 
             // Loggare l'invio
-<<<<<<< HEAD
-            Log::info('Notifica push inviata con successo', [
-=======
             Log::debug('Notifica push inviata con successo', [
->>>>>>> dev
                 'token' => $data['token'],
                 'title' => $data['title'],
                 'type' => $data['notification_type'],

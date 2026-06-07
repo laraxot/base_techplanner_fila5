@@ -68,18 +68,10 @@ php artisan activity:shop:checkout cart_12345_xxx
 - [Glossario Shop](./10_glossario.md)
 - [Confronto Approcci](./07_confronto_approcci.md)
 - [Build from Scratch](./build_from_scratch.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README Prediction Market](../prediction_market/readme.md)
-- [README Bank](../bank/readme.md)
-=======
 - [README Prediction Market](../prediction_market/README.md)
 - [README Bank](../bank/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README <nome progetto>ion Market](../<nome progetto>ion_market/readme.md)
 - [README Bank](../bank/readme.md)
->>>>>>> dev
 
 ---
 **Questa documentazione è neutra e riutilizzabile, senza riferimenti a progetti specifici, e segue le regole di neutralità e modularità.**

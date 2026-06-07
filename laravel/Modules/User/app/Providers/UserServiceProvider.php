@@ -15,28 +15,16 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\Rules\Password;
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Livewire\Livewire;
-=======
 use Livewire\Livewire;
 use Modules\Notify\Emails\SpatieEmail;
 use Modules\User\Datas\PasswordData;
->>>>>>> dev
 use Modules\User\Filament\Widgets\Auth\ForgotPasswordWidget;
 use Modules\User\Filament\Widgets\Auth\LoginWidget;
 use Modules\User\Filament\Widgets\Auth\PasswordResetConfirmWidget;
 use Modules\User\Filament\Widgets\Auth\PasswordResetWidget;
 use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Filament\Widgets\Auth\ResetPasswordWidget;
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-use Modules\Notify\Emails\SpatieEmail;
-use Modules\User\Datas\PasswordData;
-=======
 use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
->>>>>>> dev
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Webmozart\Assert\Assert;
@@ -53,14 +41,7 @@ class UserServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
-<<<<<<< HEAD
-<<<<<<< HEAD
         $this->registerLivewireAuthWidgets();
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-        $this->registerLivewireAuthWidgets();
->>>>>>> dev
         // $this->registerEventListener();
         $this->registerPasswordRules();
         $this->registerPulse();
@@ -68,34 +49,6 @@ class UserServiceProvider extends XotBaseServiceProvider
         $this->registerPolicies();
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /**
-     * Registra i widget Livewire auth per le viste Blade/Folio.
-     * In Livewire v4, resolveClassComponentClassName con namespace '::' cerca SOLO in classNamespaces
-     * (non in classComponents), quindi Livewire::component('user::...', class) non funziona.
-     * Usare addComponent($class) che usa hash-based naming, compatibile con @livewire(Class::class).
-     */
-    protected function registerLivewireAuthWidgets(): void
-    {
-        $widgets = [
-            LoginWidget::class,
-            RegisterWidget::class,
-            ResetPasswordWidget::class,
-            PasswordResetWidget::class,
-            ForgotPasswordWidget::class,
-            PasswordResetConfirmWidget::class,
-        ];
-
-        foreach ($widgets as $class) {
-            Livewire::addComponent($class);
-        }
-    }
-
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     #[\Override]
     public function register(): void
     {
@@ -131,10 +84,6 @@ class UserServiceProvider extends XotBaseServiceProvider
             // ✅ FIX CRITICO: Imposta il destinatario dell'email con metodo Laravel standard
             if (method_exists($notifiable, 'getEmailForPasswordReset')) {
                 $emailAddress = $notifiable->getEmailForPasswordReset();
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
                 if (is_string($emailAddress)) {
                     $email->to($emailAddress);
                 } else {
@@ -146,18 +95,6 @@ class UserServiceProvider extends XotBaseServiceProvider
                     $email->to($emailAddress);
                 } else {
                     throw new \InvalidArgumentException('Email address must be a string.');
-<<<<<<< HEAD
-=======
-                if (is_string($emailAddress) || is_array($emailAddress) || is_object($emailAddress)) {
-                    $email->to($emailAddress);
-                }
-            } elseif (isset($notifiable->email)) {
-                $emailAddress = $notifiable->email;
-                if (is_string($emailAddress) || is_array($emailAddress) || is_object($emailAddress)) {
-                    $email->to($emailAddress);
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                 }
             } else {
                 // Fallback per debug
@@ -191,10 +128,6 @@ class UserServiceProvider extends XotBaseServiceProvider
             ]);
             if (method_exists($notifiable, 'getEmailForPasswordReset')) {
                 $emailAddress = $notifiable->getEmailForPasswordReset();
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
                 if (is_string($emailAddress)) {
                     $email->to($emailAddress);
                 } else {
@@ -206,18 +139,6 @@ class UserServiceProvider extends XotBaseServiceProvider
                     $email->to($emailAddress);
                 } else {
                     throw new \InvalidArgumentException('Email address must be a string.');
-<<<<<<< HEAD
-=======
-                if (is_string($emailAddress) || is_array($emailAddress) || is_object($emailAddress)) {
-                    $email->to($emailAddress);
-                }
-            } elseif (isset($notifiable->email)) {
-                $emailAddress = $notifiable->email;
-                if (is_string($emailAddress) || is_array($emailAddress) || is_object($emailAddress)) {
-                    $email->to($emailAddress);
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                 }
             }
 
@@ -241,8 +162,6 @@ class UserServiceProvider extends XotBaseServiceProvider
     }
 
     /**
-<<<<<<< HEAD
-=======
      * Registra i widget Livewire auth per le viste Blade/Folio.
      * In Livewire v4, resolveClassComponentClassName con namespace '::' cerca SOLO in classNamespaces
      * (non in classComponents), quindi Livewire::component('user::...', class) non funziona.
@@ -266,7 +185,6 @@ class UserServiceProvider extends XotBaseServiceProvider
     }
 
     /**
->>>>>>> dev
      * Register policies (excluding OAuth ones which are handled by PassportServiceProvider).
      */
     protected function registerPolicies(): void

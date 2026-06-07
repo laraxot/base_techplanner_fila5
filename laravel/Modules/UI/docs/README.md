@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# 🎨 UI Module - Componenti e Interfaccia Utente
-
-[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
-[![Filament 5.x](https://img.shields.io/badge/Filament-5.x-blue.svg)](https://filamentphp.com/)
-[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
-
-> **Version**: 4.1.0
-> **Status**: ✅ UI Components Module
-
-## 📋 Panoramica
-
-Il modulo **UI** fornisce componenti, widget e funzionalità di interfaccia utente condivise per l'ecosistema Laraxot.
-
-## ⚡ Funzionalità Core
-
-### 🧩 Blade Components
-=======
 # 🎨 **UI Module** - Sistema Avanzato Componenti Interfaccia
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -50,21 +31,11 @@ Il modulo **UI** è il cuore dell'interfaccia utente dell'applicazione, fornendo
 ## ⚡ **Funzionalità Core**
 
 ### 🧩 **Blade Components**
->>>>>>> 4b6b99016 (first commit)
 ```php
 // Componente riutilizzabile
 <x-ui.card>
     <x-slot:header>
         <h2>Dashboard</h2>
-<<<<<<< HEAD
-    </x-slot:header>
-    <x-ui.button variant="primary">Crea Nuovo</x-ui.button>
-</x-ui.card>
-```
-
-### 🎨 Filament Widgets
-```php
-=======
     </x-slot>
 
     <x-ui.button variant="primary">
@@ -84,7 +55,6 @@ Il modulo **UI** è il cuore dell'interfaccia utente dell'applicazione, fornendo
 ### 🎨 **Filament Widgets**
 ```php
 // Widget calendario personalizzato
->>>>>>> 4b6b99016 (first commit)
 class UserCalendarWidget extends XotBaseWidget
 {
     protected static string $view = 'ui::filament.widgets.user-calendar';
@@ -99,28 +69,6 @@ class UserCalendarWidget extends XotBaseWidget
 }
 ```
 
-<<<<<<< HEAD
-### 📱 TableLayoutEnum System
-Sistema di layout per tabelle Filament (lista/griglia) con traduzioni automatiche.
-
-## 📦 Installazione
-
-```bash
-php artisan module:enable UI
-php artisan vendor:publish --tag=ui-config
-npm run build
-```
-
-## 🎯 Regole Critiche
-
-### ❌ MAI usare ->label()
-```php
-// ERRORE
-TextColumn::make('name')->label('Nome')
-
-// ✅ CORRETTO
-TextColumn::make('name')
-=======
 ### 📱 **TableLayoutEnum System**
 ```php
 // Sistema layout tabelle responsive
@@ -166,22 +114,17 @@ Action::make('save')->label('Salva')
 // ✅ CORRETTO - Usa il sistema di traduzioni automatico
 TextColumn::make('name')
 Action::make('save')
->>>>>>> 4b6b99016 (first commit)
 ```
 
 ### ✅ SEMPRE usa transClass() negli Enum
 ```php
-<<<<<<< HEAD
-=======
 // ✅ CORRETTO - Implementazione Enum con TransTrait
 use Modules\Xot\Filament\Traits\TransTrait;
 
->>>>>>> 4b6b99016 (first commit)
 enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 {
     use TransTrait;
 
-=======
 ---
 title: "UI Module Documentation"
 type: documentation
@@ -251,7 +194,6 @@ resources/views/components/ui/
 ## AI Workflows
 - [AI Methodologies](./ai-methodologies.md)
 ||||||| parent of 9a84589 (.)
->>>>>>> dev
     case LIST = 'list';
     case GRID = 'grid';
 
@@ -259,10 +201,6 @@ resources/views/components/ui/
     {
         return $this->transClass(self::class, $this->value . '.label');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 }
 ```
 
@@ -284,8 +222,6 @@ resources/views/components/ui/
 - [Xot Module](../xot/docs/readme.md) - Framework core
 - [User Module](../user/docs/readme.md) - Gestione utenti
 - [Lang Module](../lang/docs/readme.md) - Traduzioni
-<<<<<<< HEAD
-=======
 
     public function getTableContentGrid(): array
     {
@@ -692,28 +628,22 @@ protected TableLayoutEnum $layout = TableLayoutEnum::GRID;
 - **🌐 Languages**: 3 (IT, EN, DE)
 - **🧪 Test Coverage**: 95%
 - **⚡ Performance Score**: 97/100
->>>>>>> 4b6b99016 (first commit)
 
 ---
 
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025
 **📦 Versione**: 4.1.0
-<<<<<<< HEAD
-=======
 
 ---
 
 **🔄 
 **📦 Versione**: 4.1.0
->>>>>>> dev
 
 ## 🔁 CI & Semantic Versioning
 Workflow: `.github/workflows/semantic-versioning.yml`
 
 ## 📄 License
 MIT
-<<<<<<< HEAD
-=======
 **🐛 PHPStan level 10**: File core certificati ✅
 **🐛 PHPStan Level 9**: File core certificati ✅
 **🐛 PHPStan Level 9**: File core certificati ✅
@@ -734,8 +664,6 @@ MIT
 *Ultimo aggiornamento: gennaio 2025*
 *Ultimo aggiornamento: gennaio 2025*
 *Ultimo aggiornamento: gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 
 
 ## Standard Rules & Workflow
@@ -750,4 +678,3 @@ MIT
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
->>>>>>> dev

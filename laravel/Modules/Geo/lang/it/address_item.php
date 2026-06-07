@@ -10,39 +10,19 @@ return [
             'help' => 'Numero di telefono associato all\'indirizzo',
             'helper_text' => '',
             'description' => 'Numero di telefono fisso o principale collegato a questo indirizzo.',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'name' => [
             'label' => 'Nome indirizzo',
             'placeholder' => 'Es. Sede legale, Studio medico',
             'help' => 'Etichetta descrittiva per riconoscere rapidamente l\'indirizzo.',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => 'Nome o titolo con cui identifichi questo indirizzo (es. Sede operativa, Magazzino].',
             'tooltip' => '',
-=======
-            'description' => 'Nome o titolo con cui identifichi questo indirizzo (es. Sede operativa, Magazzino).',
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => 'Nome o titolo con cui identifichi questo indirizzo (es. Sede operativa, Magazzino].',
-            'tooltip' => '',
->>>>>>> dev
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Aggiungi una descrizione dell\'indirizzo',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'help' => 'Dettagli aggiuntivi utili (scala, interno, citofono, note logistiche].',
             'helper_text' => '',
             'description' => 'Descrizione libera dell\'indirizzo, visibile solo agli operatori.',
@@ -63,101 +43,40 @@ return [
             'helper_text' => '',
             'description' => 'Numero civico dell\'indirizzo, comprensivo di eventuali interni o scale.',
             'tooltip' => '',
-<<<<<<< HEAD
-=======
-            'help' => 'Dettagli aggiuntivi utili (scala, interno, citofono, note logistiche).',
-            'helper_text' => '',
-            'description' => 'Descrizione libera dell\'indirizzo, visibile solo agli operatori.',
-        ],
-        'route' => [
-            'label' => 'Via/Piazza',
-            'placeholder' => 'Via/Piazza e nome della via (es. Via Roma)',
-            'help' => 'Nome della via, piazza o corso.',
-            'helper_text' => '',
-            'description' => 'Campo testuale per indicare la via o la piazza (es. Via Roma, Piazza Duomo).',
-        ],
-        'street_number' => [
-            'label' => 'Civico',
-            'placeholder' => 'Numero civico (es. 10, 10/A)',
-            'help' => 'Numero civico associato alla via indicata.',
-            'helper_text' => '',
-            'description' => 'Numero civico dell\'indirizzo, comprensivo di eventuali interni o scale.',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'locality' => [
             'label' => 'Città/Comune',
             'placeholder' => 'Inserisci la località o frazione',
             'help' => 'Località, frazione o quartiere dell\'indirizzo.',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => 'Città o Comune (es. Milano, Firenze].',
             'tooltip' => '',
-=======
-            'description' => 'Città o Comune (es. Milano, Firenze).',
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => 'Città o Comune (es. Milano, Firenze].',
-            'tooltip' => '',
->>>>>>> dev
         ],
         'administrative_area_level_3' => [
             'label' => 'Comune',
             'placeholder' => 'Inserisci il comune',
             'help' => 'Comune in cui si trova l\'indirizzo.',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'description' => 'Comune di appartenenza (es. Milano, Firenze].',
             'icon' => 'heroicon-o-building-office',
             'color' => 'primary',
             'tooltip' => '',
-<<<<<<< HEAD
-=======
-            'description' => 'Comune di appartenenza (es. Milano, Firenze).',
-            'icon' => 'heroicon-o-building-office',
-            'color' => 'primary',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'administrative_area_level_2' => [
             'label' => 'Provincia',
             'placeholder' => 'Inserisci la provincia',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'help' => 'Provincia di appartenenza (sigla o nome].',
             'helper_text' => '',
             'description' => 'Provincia di appartenenza (es. MI, FI].',
             'icon' => 'heroicon-o-map-pin',
             'color' => 'danger',
             'tooltip' => '',
-<<<<<<< HEAD
-=======
-            'help' => 'Provincia di appartenenza (sigla o nome).',
-            'helper_text' => '',
-            'description' => 'Provincia di appartenenza (es. MI, FI).',
-            'icon' => 'heroicon-o-map-pin',
-            'color' => 'danger',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'administrative_area_level_1' => [
             'label' => 'Regione',
             'placeholder' => 'Inserisci la regione',
             'help' => 'Regione amministrativa.',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'description' => 'Regione di appartenenza (es. Lombardia, Toscana].',
             'icon' => 'heroicon-o-globe-alt',
             'color' => 'purple',
@@ -170,38 +89,14 @@ return [
             'helper_text' => '',
             'description' => 'Codice ISO alpha-2 della nazione (es. IT per Italia].',
             'tooltip' => '',
-<<<<<<< HEAD
-=======
-            'description' => 'Regione di appartenenza (es. Lombardia, Toscana).',
-            'icon' => 'heroicon-o-globe-alt',
-            'color' => 'purple',
-        ],
-        'country' => [
-            'label' => 'Codice Nazione',
-            'placeholder' => 'Inserisci il codice ISO della nazione (es. IT)',
-            'help' => 'Codice ISO della nazione (es. IT, US).',
-            'helper_text' => '',
-            'description' => 'Codice ISO alpha-2 della nazione (es. IT per Italia).',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'postal_code' => [
             'label' => 'CAP',
             'placeholder' => 'Inserisci il CAP',
             'help' => 'Codice di avviamento postale dell\'indirizzo.',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => 'Codice di avviamento postale (es. 00100].',
             'tooltip' => '',
-=======
-            'description' => 'Codice di avviamento postale (es. 00100).',
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => 'Codice di avviamento postale (es. 00100].',
-            'tooltip' => '',
->>>>>>> dev
         ],
         'formatted_address' => [
             'label' => 'Indirizzo completo',
@@ -209,74 +104,31 @@ return [
             'help' => 'Rappresentazione completa dell\'indirizzo.',
             'helper_text' => '',
             'description' => 'Indirizzo completo così come restituito dal servizio di geocoding.',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'place_id' => [
             'label' => 'Place ID',
             'placeholder' => 'Identificativo univoco del luogo',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'help' => 'Identificativo univoco del luogo nel servizio di geocoding (es. Google Places].',
             'helper_text' => '',
             'description' => 'Codice tecnico che identifica in modo univoco questo indirizzo in sistemi esterni.',
             'tooltip' => '',
-<<<<<<< HEAD
-=======
-            'help' => 'Identificativo univoco del luogo nel servizio di geocoding (es. Google Places).',
-            'helper_text' => '',
-            'description' => 'Codice tecnico che identifica in modo univoco questo indirizzo in sistemi esterni.',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'latitude' => [
             'label' => 'Latitudine',
             'placeholder' => 'Inserisci la latitudine',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'help' => 'Coordinata geografica di latitudine (es. 41.9028].',
             'helper_text' => '',
             'description' => 'Valore numerico della latitudine in formato decimale.',
             'tooltip' => '',
-<<<<<<< HEAD
-=======
-            'help' => 'Coordinata geografica di latitudine (es. 41.9028).',
-            'helper_text' => '',
-            'description' => 'Valore numerico della latitudine in formato decimale.',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'longitude' => [
             'label' => 'Longitudine',
             'placeholder' => 'Inserisci la longitudine',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'help' => 'Coordinata geografica di longitudine (es. 12.4964].',
             'helper_text' => '',
             'description' => 'Valore numerico della longitudine in formato decimale.',
             'tooltip' => '',
-<<<<<<< HEAD
-=======
-            'help' => 'Coordinata geografica di longitudine (es. 12.4964).',
-            'helper_text' => '',
-            'description' => 'Valore numerico della longitudine in formato decimale.',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'fax' => [
             'label' => 'Fax',
@@ -284,14 +136,7 @@ return [
             'help' => 'Numero di fax associato all\'indirizzo.',
             'helper_text' => '',
             'description' => 'Numero di fax del recapito, usato per comunicazioni tradizionali.',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'mobile' => [
             'label' => 'Cellulare',
@@ -299,14 +144,7 @@ return [
             'help' => 'Numero di telefono cellulare associato all\'indirizzo.',
             'helper_text' => '',
             'description' => 'Numero di telefono mobile per contatti rapidi.',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'pec' => [
             'label' => 'PEC',
@@ -314,14 +152,7 @@ return [
             'help' => 'Indirizzo di Posta Elettronica Certificata.',
             'helper_text' => '',
             'description' => 'Indirizzo PEC utilizzato per comunicazioni ufficiali.',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'whatsapp' => [
             'label' => 'WhatsApp',
@@ -329,14 +160,7 @@ return [
             'help' => 'Numero di telefono utilizzato per WhatsApp.',
             'helper_text' => '',
             'description' => 'Recapito WhatsApp per comunicazioni via chat.',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'email' => [
             'label' => 'Email',
@@ -344,14 +168,7 @@ return [
             'help' => 'Indirizzo email associato all\'indirizzo.',
             'helper_text' => '',
             'description' => 'Indirizzo email di contatto per questo recapito.',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'notes' => [
             'label' => 'Note',
@@ -359,10 +176,6 @@ return [
             'help' => 'Note aggiuntive sull\'indirizzo o sulle modalità di consegna.',
             'helper_text' => '',
             'description' => 'Spazio libero per annotazioni operative o contestuali sull\'indirizzo.',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -388,11 +201,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Address Item',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
 ];

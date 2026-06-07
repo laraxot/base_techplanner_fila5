@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Flusso degli Eventi - Prediction Market
-=======
 # Flusso degli Eventi - <nome progetto>ion Market
->>>>>>> dev
 
 ## 1. Creazione Mercato
 ```mermaid

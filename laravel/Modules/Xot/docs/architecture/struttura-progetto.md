@@ -127,12 +127,7 @@ rm -rf database/migrations
 
 ## Collegamenti Bidirezionali
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Generale](../../../../docs/readme.md) - Indice della documentazione
-=======
 - [Documentazione Generale](../../../../../docs/readme.md) - Indice della documentazione
->>>>>>> dev
 - [Convenzioni di Naming](../namespace-conventions.md) - Convenzioni per i namespace
 - [Architettura Folio+Volt](../folio_volt_architecture.md) - Architettura frontend
 - [Struttura dei Percorsi - Tema One](../../../themes/one/docs/project-paths.md) - Guida dettagliata sui percorsi corretti nel progetto
@@ -140,8 +135,6 @@ rm -rf database/migrations
 * [struttura-progetto.md](docs/tecnico/struttura/struttura-progetto.md)
 * [struttura-progetto.md](docs/tecnico/struttura-progetto.md)
 * [struttura-progetto.md](../../../xot/docs/architecture/struttura-progetto.md)
-<<<<<<< HEAD
-=======
 - [Documentazione Generale](../../../../docs/README.md) - Indice della documentazione
 - [Convenzioni di Naming](../namespace-conventions.md) - Convenzioni per i namespace
 - [Architettura Folio+Volt](../folio_volt_architecture.md) - Architettura frontend
@@ -150,6 +143,3 @@ rm -rf database/migrations
 * [struttura-progetto.md](docs/tecnico/struttura/struttura-progetto.md)
 * [struttura-progetto.md](docs/tecnico/struttura-progetto.md)
 * [struttura-progetto.md](../../../Xot/docs/architecture/struttura-progetto.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

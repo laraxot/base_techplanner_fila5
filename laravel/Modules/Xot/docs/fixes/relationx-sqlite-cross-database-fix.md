@@ -2,13 +2,7 @@
 
 ## Problema Risolto
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 26 Settembre 2025
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: <nome progetto>_data.customer_user`
 
 ## Causa Radice
@@ -80,15 +74,8 @@ echo $tenants->count(); // ✅ Output: 1
 ## Riferimenti
 
 - [Customer User Fix Summary](../../<nome progetto>/docs/customer_user_fix_summary.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
-=======
 - [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
->>>>>>> dev
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura
@@ -105,17 +92,12 @@ echo $tenants->count(); // ✅ Output: 1
 
 ## Problema Risolto
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 26 Settembre 2025
->>>>>>> 4b6b99016 (first commit)
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: quaeris_data.customer_user`
 
 ## Causa Radice
 
 Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`quaeris_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
-=======
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: healthcare_app_data.customer_user`
 
 ## Causa Radice
@@ -126,7 +108,6 @@ Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome
 ## Causa Radice
 
 Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`modulo_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
->>>>>>> dev
 
 ## Soluzione Implementata
 
@@ -164,12 +145,8 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 - ✅ Multi-tenancy cross-database
 
 ### Moduli Affetti
-<<<<<<< HEAD
-- **Quaeris Module**: Customer-User relationships
-=======
 - **healthcare_app Module**: Customer-User relationships
 - **Modulo con database separato**: Customer-User relationships
->>>>>>> dev
 - **User Module**: HasTenants trait functionality
 - **Tutti i moduli**: che usano `belongsToManyX` con database separati
 
@@ -197,18 +174,10 @@ echo $tenants->count(); // ✅ Output: 1
 
 ## Riferimenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Customer User Fix Summary](../../quaeris/docs/customer_user_fix_summary.md)
-- [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
-=======
 - [Customer User Fix Summary](../../Quaeris/docs/customer_user_fix_summary.md)
 - [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Customer User Fix Summary](../../healthcare_app/docs/customer_user_fix_summary.md)
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
->>>>>>> dev
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura

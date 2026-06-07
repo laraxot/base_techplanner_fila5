@@ -1,18 +1,10 @@
 # Implementazione degli Avatar
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README modulo User](./readme.md)
-- [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header_language_selector_with_flags.md)
-=======
 - [README modulo User](./README.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README modulo User](./readme.md)
 - [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header_language_selector_with_flags.md)
->>>>>>> dev
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -131,18 +123,10 @@ Il sistema di avatar può essere esteso in futuro per includere:
 # Implementazione degli Avatar
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README modulo User](./readme.md)
-- [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header_language_selector_with_flags.md)
-=======
 - [README modulo User](./README.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README modulo User](./readme.md)
 - [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header_language_selector_with_flags.md)
->>>>>>> dev
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

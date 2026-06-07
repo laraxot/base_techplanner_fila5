@@ -233,11 +233,5 @@ Prima di considerare completata la risoluzione:
 ---
 
 *Roadmap creata il: Gennaio 2025*  
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Gennaio 2025*  
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 *Nota: Questa roadmap aggiorna quella precedente che mostrava 110 errori*

@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\Lang\Filament\Resources\Pages;
 
 use Filament\Actions\Action;
-<<<<<<< HEAD
-=======
 use Filament\Actions\ActionGroup;
->>>>>>> dev
 use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
 use LaraZeus\SpatieTranslatable\Resources\Pages\ListRecords\Concerns\Translatable;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -20,11 +17,7 @@ abstract class LangBaseListRecords extends XotBaseListRecords
     protected static string $resource; // = SectionResource::class;
 
     /**
-<<<<<<< HEAD
-     * @return array<string, Action>
-=======
      * @return array<string, Action|ActionGroup>
->>>>>>> dev
      */
     #[\Override]
     protected function getHeaderActions(): array
@@ -32,10 +25,7 @@ abstract class LangBaseListRecords extends XotBaseListRecords
         $parentActions = parent::getHeaderActions();
 
         // Assicurarsi che tutte le azioni abbiano chiavi stringa
-<<<<<<< HEAD
-=======
         /** @var array<string, Action|ActionGroup> $actions */
->>>>>>> dev
         $actions = [
             'locale_switcher' => LocaleSwitcher::make(),
         ];

@@ -34,18 +34,9 @@ Se si identifica un file con naming non conforme:
 3. Rimuovere il file con naming errato
 
 ## Riferimenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Regole Generali per le Traduzioni](../../lang/docs/translation_keys_rules.md)
-- [Best Practices per le Traduzioni](../../lang/docs/translation_keys_best_practices.md)
-- [Convenzioni di Traduzione nel Modulo Notify](./translation_conventions.md)
-=======
 - [Regole Generali per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Convenzioni di Traduzione nel Modulo Notify](./TRANSLATION_CONVENTIONS.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Regole Generali per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Convenzioni di Traduzione nel Modulo Notify](./TRANSLATION_CONVENTIONS.md)
->>>>>>> dev

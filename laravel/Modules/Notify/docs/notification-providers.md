@@ -1,10 +1,6 @@
 # Guida Completa ai Provider di Notifiche 
 
-<<<<<<< HEAD
-Questo documento fornisce una panoramica completa dell'architettura standardizzata per tutti i provider di notifiche supportati nel modulo Notify di SaluteOra.
-=======
 Questo documento fornisce una panoramica completa dell'architettura standardizzata per tutti i provider di notifiche supportati nel modulo Notify di Quaeris.
->>>>>>> dev
 
 ## Principi Architetturali per Tutti i Provider
 

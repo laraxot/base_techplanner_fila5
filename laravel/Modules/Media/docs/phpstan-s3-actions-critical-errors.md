@@ -176,11 +176,5 @@ $effectiveUri = is_array($metadata) && isset($metadata['effectiveUri'])
 3. **Safe Functions**: Import e utilizzo devono essere consistenti
 4. **Documentation**: Critical per mantenere consistenza nel team
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 *Status: COMPLETATO CON SUCCESSO - TUTTI GLI ERRORI RISOLTI*

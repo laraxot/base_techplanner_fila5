@@ -195,13 +195,6 @@ Always run `php artisan optimize:clear && ./vendor/bin/phpstan analyse` after ma
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-*
-=======
 *Last Updated: 2025-08-27*
->>>>>>> 4b6b99016 (first commit)
-=======
 *
->>>>>>> dev
 *Architecture Version: XotBase 2.0*

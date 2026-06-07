@@ -6,15 +6,8 @@
 ## Problemi Identificati e Risolti
 
 ### 1. ✅ Conflitti Git nel .gitignore
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Problema**: Centinaia di marker di conflitto Git  nel file `.gitignore`.
-=======
 **Problema**: Centinaia di marker di conflitto Git (`<<<<<<< HEAD`, `=======`, `>>>>>>>`) nel file `.gitignore`.
->>>>>>> 4b6b99016 (first commit)
-=======
 **Problema**: Centinaia di marker di conflitto Git  nel file `.gitignore`.
->>>>>>> dev
 
 **Soluzione**: Creato un nuovo `.gitignore` pulito seguendo le best practice standard, rimuovendo tutti i conflitti.
 
@@ -23,19 +16,9 @@
 ### 2. ✅ Conflitto in mysql-db-connector.js
 **Problema**: Conflitto di merge non risolto in `bashscripts/mcp/mysql-db-connector.js`:
 ```javascript
-<<<<<<< HEAD
-<<<<<<< HEAD
-console.error('MySQL MCP Server started ');
-=======
-<<<<<<< HEAD
 console.error('MySQL MCP Server started for base_techplanner_fila4_mono');
-=======
 console.error('MySQL MCP Server started for base_ptvx_fila4_mono');
->>>>>>> laraxot/develop
->>>>>>> 4b6b99016 (first commit)
-=======
 console.error('MySQL MCP Server started ');
->>>>>>> dev
 ```
 
 **Soluzione**: Risolto mantenendo la versione corretta per `base_techplanner_fila4_mono`.
@@ -104,18 +87,11 @@ bashscripts/
 
 ## Comandi Utili
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Verificare conflitti rimanenti
-=======
 ### Verificare conflitti rimanenti:
 ```bash
 grep -r "<<<<<<< HEAD" bashscripts/
 ```
->>>>>>> 4b6b99016 (first commit)
-=======
 ### Verificare conflitti rimanenti
->>>>>>> dev
 
 ### Organizzare script:
 ```bash

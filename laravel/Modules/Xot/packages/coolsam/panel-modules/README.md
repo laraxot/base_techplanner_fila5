@@ -9,11 +9,6 @@
 
 Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel-modules`
 
-<<<<<<< HEAD
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-
-<<<<<<< HEAD
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
@@ -383,10 +378,7 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 
->>>>>>> 4b6b99016 (first commit)
-=======
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
->>>>>>> dev
 v2, [see the documentation here](https://github.com/savannabits/filament-modules/tree/main#readme) to get started.**
 
 For example, if you have two modules (**Blog** and **Pos**), you should be able to have filament installed in each module with separate resources as below:
@@ -400,10 +392,6 @@ Additionally, each of these can have its own customized login page which redirec
 You can read more about Multiple Context for Filament [Here](https://github.com/iotronlab/filament-multi-guard).
 
 If this is your goal, then you are in the right place.
-<<<<<<< HEAD
-=======
- 
->>>>>>> dev
 
 ## Installation
 Before you proceed, this guide assumes that you have configured your app fully to work with Laravel Modules. If you haven't, follow the [Laravel Modules Docs](https://docs.laravelmodules.com/v9/installation-and-setup) before proceeding.
@@ -427,10 +415,6 @@ Additionally, each of these can have its own customized login page which redirec
 You can read more about Multiple Context for Filament [Here](https://github.com/iotronlab/filament-multi-guard).
 
 If this is your goal, then you are in the right place.
-<<<<<<< HEAD
-=======
- 
->>>>>>> dev
 
 ## Installation
 Before you proceed, this guide assumes that you have configured your app fully to work with Laravel Modules. If you haven't, follow the [Laravel Modules Docs](https://docs.laravelmodules.com/v9/installation-and-setup) before proceeding.
@@ -492,25 +476,11 @@ composer test
 
 ## Changelog
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Please see [CHANGELOG](changelog.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](contributing.md) for details.
-=======
-=======
->>>>>>> dev
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Security Vulnerabilities
 
@@ -523,12 +493,5 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## License
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-The MIT License (MIT). Please see [License File](license.md) for more information.
-=======
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
->>>>>>> 4b6b99016 (first commit)
-=======
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
->>>>>>> dev

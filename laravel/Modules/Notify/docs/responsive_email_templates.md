@@ -2,11 +2,7 @@
 
 ## Introduzione
 
-<<<<<<< HEAD
-Questa guida fornisce una panoramica completa sulla creazione e l'utilizzo di template email HTML responsive nel contesto di SaluteOra, con focus su compatibilità, engagement e best practices di settore. 
-=======
 Questa guida fornisce una panoramica completa sulla creazione e l'utilizzo di template email HTML responsive nel contesto di Quaeris, con focus su compatibilità, engagement e best practices di settore.
->>>>>>> dev
 
 ## Principi Fondamentali
 
@@ -78,11 +74,7 @@ Migliore esperienza su client moderni:
 </div>
 ```
 
-<<<<<<< HEAD
-Per SaluteOra, si raccomanda un **approccio ibrido**:
-=======
 Per Quaeris, si raccomanda un **approccio ibrido**:
->>>>>>> dev
 - Struttura base con tabelle per massima compatibilità
 - CSS moderno con fallback per funzionalità avanzate
 
@@ -191,20 +183,11 @@ I template nella directory `mail-layouts` supportano variabili Blade:
 
 ## Riferimenti e Approfondimenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Guida ai Layout Email](./mail_layouts_guide.md)
 - [Email Best Practices](./mail-templates/email_best_practices.md)
 - [HTML Email Compatibility](./mail-templates/html_email_compatibility.md)
 - [MailPace Integration](./mail-templates/mailpace_templates_integration.md)
-<<<<<<< HEAD
-=======
 - [Guida ai Layout Email](./MAIL_LAYOUTS_GUIDE.md)
 - [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
 - [HTML Email Compatibility](./mail-templates/HTML_EMAIL_COMPATIBILITY.md)
 - [MailPace Integration](./mail-templates/MAILPACE_TEMPLATES_INTEGRATION.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

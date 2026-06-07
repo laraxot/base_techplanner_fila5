@@ -2,11 +2,8 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
 namespace Modules\Tenant\Tests\Unit\Actions;
 
->>>>>>> dev
 use Modules\Tenant\Actions\GetTenantNameAction;
 use Tests\TestCase;
 

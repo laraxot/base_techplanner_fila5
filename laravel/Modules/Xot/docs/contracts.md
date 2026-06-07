@@ -1,22 +1,4 @@
-<<<<<<< HEAD
-# Contratti del Modulo Xot
-
-## Descrizione
-Il modulo Xot definisce vari contratti (interfacce) che standardizzano il comportamento dei modelli e delle classi nel sistema Laraxot.
-
-## UserContract
-
-### Ubicazione
-`Modules\Xot\Contracts\UserContract`
-
-### Scopo
-Definisce l'interfaccia per tutti i modelli User nel sistema, includendo autenticazione, autorizzazione, ruoli, permessi e media.
-
-<<<<<<< HEAD
-### Problema Critico Identificato ([DATE])
-=======
 ### Problema Critico Identificato (2025-01-06)
->>>>>>> 4b6b99016 (first commit)
 
 **ERRORE PHPSTAN**: Il metodo `hasPermissionTo()` è utilizzato in tutte le policy ma non è definito nel contratto `UserContract`.
 
@@ -92,19 +74,11 @@ Contratto per modelli che hanno profili.
 **ALTA PRIORITÀ**: Risolvere il problema `hasPermissionTo()` per eliminare 350+ errori PHPStan.
 
 ## Collegamenti
-<<<<<<< HEAD
-- [Policy PHPStan Errors](../user/project_docs/policy-phpstan-errors.md)
-- [Root PHPStan Errors](../../project_docs/troubleshooting/phpstan-errors.md)
-- [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
-
-=======
 - [Policy PHPStan Errors](../User/project_docs/policy-phpstan-errors.md)
 - [Root PHPStan Errors](../../project_docs/troubleshooting/phpstan-errors.md)
 - [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
 
 *Ultimo aggiornamento: 2025-01-06*
->>>>>>> 4b6b99016 (first commit)
-=======
 
 //--- Illuminate\Database\Eloquent\Relations\relation (abstract class Relation)
 ->getRelated()
@@ -119,4 +93,3 @@ public function whereHas($relation, Closure $callback = null, $operator = '>=', 
 
 //---- Illuminate\Database\Eloquent\Builder  (class Builder)
  public function getModel()
->>>>>>> dev

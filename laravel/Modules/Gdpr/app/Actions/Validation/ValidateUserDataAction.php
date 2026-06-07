@@ -16,11 +16,8 @@ class ValidateUserDataAction
 
     /**
      * @param array<string, mixed> $formData
-<<<<<<< HEAD
-=======
      * @param array<string, mixed> $formData
      * @param array<string, mixed> $formData
->>>>>>> dev
      *
      * @return array<string, mixed>
      */

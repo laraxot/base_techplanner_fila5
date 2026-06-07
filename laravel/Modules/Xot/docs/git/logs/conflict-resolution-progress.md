@@ -89,13 +89,7 @@ Questo documento tiene traccia dello stato di avanzamento della risoluzione dei 
 - **File in corso**: 0 (0%)
 - **File da risolvere**: ~294 (98%)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 Ultimo aggiornamento: Gennaio 2025
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Prossimi Passaggi
 

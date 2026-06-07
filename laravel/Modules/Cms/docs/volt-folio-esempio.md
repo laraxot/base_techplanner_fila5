@@ -86,23 +86,14 @@ rules([
 
 $submit = function () {
     $this->validate();
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     // Logica di invio
     session()->flash('success', 'Messaggio inviato con successo!');
     
-<<<<<<< HEAD
-=======
 
     // Logica di invio
     session()->flash('success', 'Messaggio inviato con successo!');
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     $this->reset();
 };
 
@@ -146,15 +137,8 @@ state(['search' => '']);
 
 $users = computed(function () {
     return User::query()
-<<<<<<< HEAD
-<<<<<<< HEAD
-        ->when($this->search, fn($query) => 
-=======
         ->when($this->search, fn($query) =>
->>>>>>> 4b6b99016 (first commit)
-=======
         ->when($this->search, fn($query) => 
->>>>>>> dev
             $query->where('name', 'like', "%{$this->search}%")
         )
         ->latest()
@@ -164,18 +148,10 @@ $users = computed(function () {
 ?>
 
 <div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <input type="text" 
-           wire:model.live="search" 
-=======
     <input type="text"
            wire:model.live="search"
->>>>>>> 4b6b99016 (first commit)
-=======
     <input type="text" 
            wire:model.live="search" 
->>>>>>> dev
            placeholder="Cerca utenti...">
 
     <ul>
@@ -306,10 +282,6 @@ class ContactFormTest extends TestCase
 - [Repository Esempio](https://github.com/jasonlbeggs/laravel-news-volt-folio-example)
 - [Documentazione Laravel Volt](https://livewire.laravel.com/project_docs/volt)
 - [Documentazione Laravel Folio](https://github.com/laravel/folio)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Livewire](https://livewire.laravel.com) 
-=======
 - [Livewire](https://livewire.laravel.com)
 # Esempio Pratico: Laravel Volt con Folio
 
@@ -589,7 +561,4 @@ class ContactFormTest extends TestCase
 - [Documentazione Laravel Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Laravel Folio](https://github.com/laravel/folio)
 - [Livewire](https://livewire.laravel.com)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Livewire](https://livewire.laravel.com) 
->>>>>>> dev

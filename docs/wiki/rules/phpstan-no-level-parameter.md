@@ -16,11 +16,15 @@
 
 **The level is configured in `phpstan.neon` and must NOT be overridden or modified.**
 
-## 🔒 NEVER MODIFY phpstan.neon
+## 🔒 NEVER MODIFY phpstan.neon — SOLO UTENTE (IO)
 
-**CRITICAL**: The `phpstan.neon` file is SACRED and IMMUTABLE.
+**CRITICAL**: `laravel/phpstan.neon` è **immutabile per gli agenti**. Solo l'utente (IO) può modificarlo.
 
-### ❌ FORBIDDEN
+Gli agenti: **leggere** il neon, **eseguire** PHPStan, **correggere il codice** in `Modules/`. Mai edit sul file neon.
+
+Standing rule: [phpstan-neon-user-only-standing.md](../memories/phpstan-neon-user-only-standing.md)
+
+### ❌ FORBIDDEN (agenti)
 ```bash
 # ❌ NEVER edit phpstan.neon
 vim phpstan.neon

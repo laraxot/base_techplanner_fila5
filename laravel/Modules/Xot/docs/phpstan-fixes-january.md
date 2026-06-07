@@ -191,15 +191,8 @@ public function getModels(): array
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README.md Modulo Xot](./readme.md)
-=======
 - [README.md Modulo Xot](./README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README.md Modulo Xot](./readme.md)
->>>>>>> dev
 - [Service Architecture](./service-architecture.md)
 - [Best Practices](./best-practices.md)
 
@@ -388,21 +381,13 @@ public function getAllColors(): array
 - [Exception Handler Types](exceptions/exception-handler-types.md)
 - [PHPStan Level 10 Guide](phpstan_livello10_linee_guida.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
 *Ultimo aggiornamento: Gennaio 2025*
 
 *Ultimo aggiornamento: Gennaio 2025*
 
 *Ultimo aggiornamento: Gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 
 
->>>>>>> dev
 
 ## Collegamenti Correlati
 - [Architettura Modulo Xot](./architecture.md)
@@ -605,15 +590,8 @@ public function getModels(): array
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README.md Modulo Xot](./readme.md)
-=======
 - [README.md Modulo Xot](./README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README.md Modulo Xot](./readme.md)
->>>>>>> dev
 - [Service Architecture](./service-architecture.md)
 - [Best Practices](./best-practices.md)
 
@@ -802,12 +780,6 @@ public function getAllColors(): array
 - [Exception Handler Types](exceptions/exception-handler-types.md)
 - [PHPStan Level 10 Guide](phpstan_livello10_linee_guida.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-
-=======
 *Ultimo aggiornamento: Gennaio 2025*
 
 *Ultimo aggiornamento: Gennaio 2025*
@@ -815,12 +787,9 @@ public function getAllColors(): array
 *Ultimo aggiornamento: Gennaio 2025*
 
 *Ultimo aggiornamento: Gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 
 
 
->>>>>>> dev
 
 ## Collegamenti Correlati
 - [Architettura Modulo Xot](./architecture.md)
@@ -1015,15 +984,8 @@ public function getModels(): array
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README.md Modulo Xot](./readme.md)
-=======
 - [README.md Modulo Xot](./README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README.md Modulo Xot](./readme.md)
->>>>>>> dev
 - [Service Architecture](./service-architecture.md)
 - [Best Practices](./best-practices.md)
 
@@ -1041,14 +1003,6 @@ public function getModels(): array
 **🚀 Performance**: 98/100 score
 **✨ Test Coverage**: 90% ✅
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 *Ultimo aggiornamento: Gennaio 2025*
 
 *Ultimo aggiornamento: Gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev

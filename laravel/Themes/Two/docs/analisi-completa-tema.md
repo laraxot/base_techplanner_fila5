@@ -895,12 +895,6 @@ Questo lo renderà la **scelta ideale** per applicazioni Laravel che richiedono 
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Ultimo aggiornamento**: Gennaio 2025  
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Versione analisi**: 1.0  
 **Prossima revisione**: Febbraio 2025

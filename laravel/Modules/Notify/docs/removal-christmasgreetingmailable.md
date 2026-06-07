@@ -1,13 +1,7 @@
 # Rimozione ChristmasGreetingMailable - Report Completo
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 19 Dicembre 2025  
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data**: 19 Dicembre 2025  
->>>>>>> dev
 **Stato**: ✅ Già Rimosso / Mai Creato (Identificata come "Cagata")  
 **Filosofia**: DRY + KISS + Clean Code + Genericity
 
@@ -185,15 +179,8 @@ Una sola classe (`SpatieEmail`) per tutte le email stagionali, non una per ogni 
 
 ## 🔗 Riferimenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [ZEN_STRATEGY.md](./refactoring/zen_strategy.md) - Filosofia Zen per sistema stagionale
-=======
 - [ZEN_STRATEGY.md](./refactoring/ZEN_STRATEGY.md) - Filosofia Zen per sistema stagionale
->>>>>>> 4b6b99016 (first commit)
-=======
 - [ZEN_STRATEGY.md](./refactoring/ZEN_STRATEGY.md) - Filosofia Zen per sistema stagionale
->>>>>>> dev
 - [removal-getseasonalemaillayoutaction.md](./removal-getseasonalemaillayoutaction.md) - Rimozione GetSeasonalEmailLayoutAction
 - [seasonal-email-templates.md](./seasonal-email-templates.md) - Guida completa template stagionali
 

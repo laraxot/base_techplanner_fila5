@@ -75,15 +75,8 @@ Il tema **Zero** implementa un layout email basato sul **Design System Italiano*
 - ✅ TailwindCSS-inspired spacing e colori
 - ✅ Integrazione completa con spatie/laravel-database-mail-templates
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Documentazione**: [Themes/Zero/docs/mail-layouts.md](../../../../themes/zero/docs/mail-layouts.md)
-=======
 **Documentazione**: [Themes/Zero/docs/mail-layouts.md](../../../../Themes/Zero/docs/mail-layouts.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 **Documentazione**: [Themes/Zero/docs/mail-layouts.md](../../../../themes/zero/docs/mail-layouts.md)
->>>>>>> dev
 
 ## Implementazione getHtmlLayout()
 
@@ -349,15 +342,8 @@ class EmailLayoutResource extends XotBaseResource
 
 ### Documentazione Interna
 - [Spatie Database Mail Templates Deep Dive](./spatie-database-mail-templates-deep-dive.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Mail Layouts README](../resources/mail-layouts/readme.md)
-=======
 - [Mail Layouts README](../resources/mail-layouts/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Mail Layouts README](../resources/mail-layouts/readme.md)
->>>>>>> dev
 - [SpatieEmail Class](../app/Emails/SpatieEmail.php)
 
 ### Esempi Layout
@@ -370,4 +356,3 @@ class EmailLayoutResource extends XotBaseResource
 **Ultimo aggiornamento**: 27 Ottobre 2025  
 **Pattern**: Layout per tema con fallback chain  
 **Status**: ✅ IMPLEMENTATO
-

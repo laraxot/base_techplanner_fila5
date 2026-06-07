@@ -17,10 +17,6 @@ return [
         'icon' => 'media-main-animated',
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'name' => [
             'label' => 'Name',
             'tooltip' => '',
@@ -102,29 +98,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
-=======
-        'name' => 'Name',
-        'guard_name' => 'Guard',
-        'collection_name' => 'Collection',
-        'filename' => 'Filename',
-        'mime_type' => 'Type',
-        'human_readable_size' => 'Size',
-        'permissions' => 'Permissions',
-        'updated_at' => 'Updated at',
-        'first_name' => 'First Name',
-        'last_name' => 'Last Name',
-        'select_all' => [
-            'name' => 'Select All',
-            'message' => '',
-        ],
-        'creator' => [
-            'name' => 'Creator',
-        ],
-        'uploaded_at' => 'Uploaded at',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ],
     'actions' => [
         'import' => [
@@ -140,14 +113,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

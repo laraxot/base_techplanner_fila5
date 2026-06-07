@@ -2,44 +2,21 @@
 
 namespace App\Providers\Filament;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use Filament\Pages\Dashboard;
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Navigation\NavigationGroup;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Filament\Pages\Dashboard;
-=======
-use Filament\Pages;
->>>>>>> 4b6b99016 (first commit)
-=======
-use Filament\Pages\Dashboard;
->>>>>>> dev
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Assets\Js;
 use Filament\Support\Colors\Color;
 use Filament\Support\Facades\FilamentAsset;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
-=======
-use Filament\Widgets;
->>>>>>> 4b6b99016 (first commit)
-=======
-use Filament\Widgets\AccountWidget;
-use Filament\Widgets\FilamentInfoWidget;
->>>>>>> dev
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
@@ -107,3 +84,5 @@ class AdminPanelProvider extends PanelProvider
         });
     }
 }
+
+

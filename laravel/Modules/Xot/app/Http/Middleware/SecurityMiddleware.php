@@ -4,26 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Http\Middleware;
 
-<<<<<<< HEAD
-use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Symfony\Component\HttpFoundation\Response;
-use Webmozart\Assert\Assert;
-=======
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
->>>>>>> dev
 
 use function Safe\json_encode;
 use function Safe\preg_match;
 
-<<<<<<< HEAD
-=======
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
 
->>>>>>> dev
 /**
  * Middleware di sicurezza avanzato.
  *
@@ -35,11 +24,7 @@ class SecurityMiddleware
     /**
      * Handle an incoming request.
      */
-<<<<<<< HEAD
-    public function handle(Request $request, Closure $next): Response
-=======
     public function handle(Request $request, \Closure $next): Response
->>>>>>> dev
     {
         // 1. Rate Limiting avanzato
         $this->applyAdvancedRateLimiting($request);
@@ -47,16 +32,12 @@ class SecurityMiddleware
         // 2. Headers di sicurezza
         $response = $next($request);
         Assert::isInstanceOf($response, Response::class);
-<<<<<<< HEAD
-        $this->addSecurityHeaders($response);
-=======
 
         // Skip security headers for Debugbar routes in local environment
         // to allow Debugbar to function properly
         if (! $this->isDebugbarRoute($request) || ! app()->environment('local')) {
             $this->addSecurityHeaders($response);
         }
->>>>>>> dev
 
         // 3. Logging sicurezza
         $this->logSecurityEvents($request, $response);
@@ -71,8 +52,6 @@ class SecurityMiddleware
     }
 
     /**
-<<<<<<< HEAD
-=======
      * Check if the request is for Debugbar routes.
      */
     private function isDebugbarRoute(Request $request): bool
@@ -85,7 +64,6 @@ class SecurityMiddleware
     }
 
     /**
->>>>>>> dev
      * Applica rate limiting avanzato.
      */
     private function applyAdvancedRateLimiting(Request $request): void
@@ -317,11 +295,7 @@ class SecurityMiddleware
         }
 
         // Log tentativi di accesso falliti
-<<<<<<< HEAD
-        if ($response->getStatusCode() === 401 || $response->getStatusCode() === 403) {
-=======
         if (401 === $response->getStatusCode() || 403 === $response->getStatusCode()) {
->>>>>>> dev
             Log::warning('Failed access attempt', $securityData);
         }
 
@@ -374,11 +348,7 @@ class SecurityMiddleware
         ];
 
         foreach ($suspiciousUserAgents as $suspicious) {
-<<<<<<< HEAD
-            if ($userAgent !== null && stripos($userAgent, $suspicious) !== false) {
-=======
             if (null !== $userAgent && false !== stripos($userAgent, $suspicious)) {
->>>>>>> dev
                 return true;
             }
         }
@@ -394,11 +364,7 @@ class SecurityMiddleware
         $inputs = $request->all();
 
         foreach ($inputs as $key => $value) {
-<<<<<<< HEAD
-            if ($value !== null && is_string($value)) {
-=======
             if (null !== $value && is_string($value)) {
->>>>>>> dev
                 $this->validateStringInput($key, $value);
             } elseif (is_array($value)) {
                 $this->validateArrayInput($key, $value);

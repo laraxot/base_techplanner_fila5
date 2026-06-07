@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -16,27 +14,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
-<<<<<<< HEAD
-=======
-use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
-use Illuminate\Database\Eloquent\Relations\{HasMany, BelongsTo, MorphMany, BelongsToMany};
-use Illuminate\Database\Eloquent\Casts\Attribute;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Illuminate\Support\Str;
 
 /**
  * Modello per i servizi comunali (Municipal Service)
-<<<<<<< HEAD
-<<<<<<< HEAD
- *
-=======
- * 
->>>>>>> 4b6b99016 (first commit)
- * Rappresenta i servizi erogati dall'ente ai cittadini
- * secondo l'ontologia AGID e le specifiche dei servizi pubblici
-=======
  *
  * Rappresenta i servizi erogati dall'ente ai cittadini
  * secondo l'ontologia AGID e le specifiche dei servizi pubblici
@@ -75,32 +56,28 @@ use Illuminate\Support\Str;
  * @property array|null $service_outcomes
  * @property array|null $quality_standards
  * @property array|null $satisfaction_metrics
- * @property \Carbon\Carbon|null $last_updated
- * @property \Carbon\Carbon|null $next_review_date
+ * @property Carbon|null $last_updated
+ * @property Carbon|null $next_review_date
  * @property bool $is_active
  * @property bool $is_public
  * @property bool $is_digital
  * @property bool $is_accessible
  * @property int $priority_level
  * @property array|null $metadata
- * @property \Carbon\Carbon|null $created_at
- * @property \Carbon\Carbon|null $updated_at
- * @property \Carbon\Carbon|null $deleted_at
- *
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Carbon|null $deleted_at
  * @property-read OrganizationalUnit|null $organizationalUnit
  * @property-read self|null $parentService
- * @property-read \Illuminate\Database\Eloquent\Collection<int, self> $subServices
- * @property-read \Illuminate\Database\Eloquent\Collection<int, ContactPoint> $contacts
- * @property-read \Illuminate\Database\Eloquent\Collection<int, PublicDocument> $documents
- * @property-read \Illuminate\Database\Eloquent\Collection<int, MunicipalLocation> $locations
->>>>>>> dev
+ * @property-read Collection<int, self> $subServices
+ * @property-read Collection<int, ContactPoint> $contacts
+ * @property-read Collection<int, PublicDocument> $documents
+ * @property-read Collection<int, MunicipalLocation> $locations
  */
 class MunicipalService extends Model
 {
     use HasFactory, SoftDeletes;
 
-<<<<<<< HEAD
-=======
     /**
      * Tipologie di servizio secondo AGID
      */
@@ -157,7 +134,6 @@ class MunicipalService extends Model
         'kiosk' => 'Chiosco Digitale',
     ];
 
->>>>>>> dev
     protected $table = 'sixteen_municipal_services';
 
     protected $fillable = [
@@ -235,65 +211,6 @@ class MunicipalService extends Model
     ];
 
     /**
-<<<<<<< HEAD
-     * Tipologie di servizio secondo AGID
-     */
-    public const SERVICE_TYPES = [
-        'administrative' => 'Servizio Amministrativo',
-        'demographic' => 'Servizio Demografico',
-        'social' => 'Servizio Sociale',
-        'educational' => 'Servizio Educativo',
-        'cultural' => 'Servizio Culturale',
-        'sports' => 'Servizio Sportivo',
-        'environmental' => 'Servizio Ambientale',
-        'urban_planning' => 'Servizio Urbanistico',
-        'economic' => 'Servizio Economico',
-        'tourism' => 'Servizio Turistico',
-        'transport' => 'Servizio Trasporti',
-        'safety' => 'Servizio Sicurezza',
-        'health' => 'Servizio Sanitario',
-        'digital' => 'Servizio Digitale',
-        'other' => 'Altro',
-    ];
-
-    /**
-     * Stati del servizio
-     */
-    public const SERVICE_STATUSES = [
-        'active' => 'Attivo',
-        'suspended' => 'Sospeso',
-        'discontinued' => 'Sospeso Definitivamente',
-        'in_development' => 'In Sviluppo',
-        'testing' => 'In Fase di Test',
-        'maintenance' => 'In Manutenzione',
-    ];
-
-    /**
-     * Livelli di servizio
-     */
-    public const SERVICE_LEVELS = [
-        'essential' => 'Servizio Essenziale',
-        'standard' => 'Servizio Standard',
-        'premium' => 'Servizio Premium',
-        'emergency' => 'Servizio di Emergenza',
-    ];
-
-    /**
-     * Metodi di erogazione
-     */
-    public const DELIVERY_METHODS = [
-        'online' => 'Online',
-        'in_person' => 'Di Persona',
-        'phone' => 'Telefonico',
-        'email' => 'Email',
-        'mail' => 'Posta',
-        'mobile_app' => 'App Mobile',
-        'kiosk' => 'Chiosco Digitale',
-    ];
-
-    /**
-=======
->>>>>>> dev
      * Relazione con l'unità organizzativa responsabile
      */
     public function organizationalUnit(): BelongsTo
@@ -399,8 +316,6 @@ class MunicipalService extends Model
     }
 
     /**
-<<<<<<< HEAD
-=======
      * Ottiene i requisiti formattati
      */
     public function getFormattedRequirements(): array
@@ -619,7 +534,6 @@ class MunicipalService extends Model
     }
 
     /**
->>>>>>> dev
      * Accessor per il nome del tipo di servizio
      */
     protected function serviceTypeName(): Attribute
@@ -690,391 +604,50 @@ class MunicipalService extends Model
                 if (empty($this->attributes['slug'])) {
                     $this->attributes['slug'] = Str::slug($value);
                 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
                 return $value;
             }
         );
     }
 
     /**
-<<<<<<< HEAD
-     * Ottiene i requisiti formattati
-     */
-    public function getFormattedRequirements(): array
-    {
-<<<<<<< HEAD
-        if (! $this->requirements || ! is_array($this->requirements)) {
-=======
-        if (!$this->requirements || !is_array($this->requirements)) {
->>>>>>> 4b6b99016 (first commit)
-            return [];
-        }
-
-        return collect($this->requirements)
-            ->map(function ($requirement) {
-                if (is_string($requirement)) {
-                    return ['description' => $requirement, 'mandatory' => true];
-                }
-<<<<<<< HEAD
-
-=======
->>>>>>> 4b6b99016 (first commit)
-                return $requirement;
-            })
-            ->toArray();
-    }
-
-    /**
-     * Ottiene le procedure formattate
-     */
-    public function getFormattedProcedures(): array
-    {
-<<<<<<< HEAD
-        if (! $this->procedures || ! is_array($this->procedures)) {
-=======
-        if (!$this->procedures || !is_array($this->procedures)) {
->>>>>>> 4b6b99016 (first commit)
-            return [];
-        }
-
-        return collect($this->procedures)
-            ->map(function ($procedure, $index) {
-                if (is_string($procedure)) {
-                    return ['step' => $index + 1, 'description' => $procedure];
-                }
-<<<<<<< HEAD
-
-=======
->>>>>>> 4b6b99016 (first commit)
-                return array_merge(['step' => $index + 1], $procedure);
-            })
-            ->toArray();
-    }
-
-    /**
-     * Ottiene i documenti richiesti formattati
-     */
-    public function getFormattedRequiredDocuments(): array
-    {
-<<<<<<< HEAD
-        if (! $this->required_documents || ! is_array($this->required_documents)) {
-=======
-        if (!$this->required_documents || !is_array($this->required_documents)) {
->>>>>>> 4b6b99016 (first commit)
-            return [];
-        }
-
-        return collect($this->required_documents)
-            ->map(function ($document) {
-                if (is_string($document)) {
-                    return ['name' => $document, 'mandatory' => true];
-                }
-<<<<<<< HEAD
-
-=======
->>>>>>> 4b6b99016 (first commit)
-                return $document;
-            })
-            ->toArray();
-    }
-
-    /**
-     * Ottiene i costi formattati
-     */
-    public function getFormattedCosts(): array
-    {
-<<<<<<< HEAD
-        if (! $this->costs || ! is_array($this->costs)) {
-=======
-        if (!$this->costs || !is_array($this->costs)) {
->>>>>>> 4b6b99016 (first commit)
-            return [];
-        }
-
-        return collect($this->costs)
-            ->map(function ($cost) {
-                if (is_numeric($cost)) {
-                    return ['amount' => $cost, 'description' => 'Costo del servizio'];
-                }
-<<<<<<< HEAD
-
-=======
->>>>>>> 4b6b99016 (first commit)
-                return $cost;
-            })
-            ->toArray();
-    }
-
-    /**
-     * Ottiene i canali digitali formattati
-     */
-    public function getFormattedDigitalChannels(): array
-    {
-<<<<<<< HEAD
-        if (! $this->digital_channels || ! is_array($this->digital_channels)) {
-=======
-        if (!$this->digital_channels || !is_array($this->digital_channels)) {
->>>>>>> 4b6b99016 (first commit)
-            return [];
-        }
-
-        return collect($this->digital_channels)
-            ->mapWithKeys(function ($url, $channel) {
-                $channelNames = [
-                    'website' => 'Sito Web',
-                    'app' => 'App Mobile',
-                    'portal' => 'Portale',
-                    'pec' => 'PEC',
-                    'spid' => 'SPID',
-                    'cie' => 'CIE',
-                    'pagopa' => 'PagoPA',
-                ];
-<<<<<<< HEAD
-
-=======
-                
->>>>>>> 4b6b99016 (first commit)
-                return [$channelNames[$channel] ?? $channel => $url];
-            })
-            ->toArray();
-    }
-
-    /**
-     * Ottiene le FAQ formattate
-     */
-    public function getFormattedFaq(): array
-    {
-<<<<<<< HEAD
-        if (! $this->faq || ! is_array($this->faq)) {
-=======
-        if (!$this->faq || !is_array($this->faq)) {
->>>>>>> 4b6b99016 (first commit)
-            return [];
-        }
-
-        return collect($this->faq)
-            ->map(function ($item, $index) {
-                if (is_array($item) && isset($item['question']) && isset($item['answer'])) {
-                    return $item;
-                }
-<<<<<<< HEAD
-
-=======
->>>>>>> 4b6b99016 (first commit)
-                return ['question' => "Domanda {$index}", 'answer' => $item];
-            })
-            ->toArray();
-    }
-
-    /**
-     * Verifica se il servizio è gratuito
-     */
-    public function isFree(): bool
-    {
-<<<<<<< HEAD
-        if (! $this->costs || ! is_array($this->costs)) {
-=======
-        if (!$this->costs || !is_array($this->costs)) {
->>>>>>> 4b6b99016 (first commit)
-            return true;
-        }
-
-        return collect($this->costs)->every(function ($cost) {
-            $amount = is_array($cost) ? ($cost['amount'] ?? 0) : $cost;
-<<<<<<< HEAD
-
-=======
->>>>>>> 4b6b99016 (first commit)
-            return $amount == 0;
-        });
-    }
-
-    /**
-     * Verifica se il servizio è completamente digitale
-     */
-    public function isFullyDigital(): bool
-    {
-<<<<<<< HEAD
-        return $this->is_digital &&
-               is_array($this->delivery_methods) &&
-               in_array('online', $this->delivery_methods) &&
-               ! in_array('in_person', $this->delivery_methods);
-=======
-        return $this->is_digital && 
-               is_array($this->delivery_methods) &&
-               in_array('online', $this->delivery_methods) &&
-               !in_array('in_person', $this->delivery_methods);
->>>>>>> 4b6b99016 (first commit)
-    }
-
-    /**
-     * Ottiene il tempo di elaborazione stimato
-     */
-    public function getProcessingTimeFormatted(): ?string
-    {
-<<<<<<< HEAD
-        if (! $this->processing_time) {
-=======
-        if (!$this->processing_time) {
->>>>>>> 4b6b99016 (first commit)
-            return null;
-        }
-
-        // Se è un numero, assume giorni lavorativi
-        if (is_numeric($this->processing_time)) {
-            $days = (int) $this->processing_time;
-<<<<<<< HEAD
-
-=======
->>>>>>> 4b6b99016 (first commit)
-            return $days === 1 ? '1 giorno lavorativo' : "{$days} giorni lavorativi";
-        }
-
-        return $this->processing_time;
-    }
-
-    /**
-     * Verifica se il servizio necessita di aggiornamento
-     */
-    public function needsReview(): bool
-    {
-<<<<<<< HEAD
-        if (! $this->next_review_date) {
-=======
-        if (!$this->next_review_date) {
->>>>>>> 4b6b99016 (first commit)
-            return false;
-        }
-
-        return $this->next_review_date->isPast();
-    }
-
-    /**
-     * Ottiene informazioni per il citizen journey
-     */
-    public function getCitizenJourney(): array
-    {
-        return [
-            'discover' => [
-                'name' => $this->name,
-                'description' => $this->short_description,
-                'category' => $this->category,
-                'target_audience' => $this->target_audience,
-            ],
-            'understand' => [
-                'requirements' => $this->getFormattedRequirements(),
-                'procedures' => $this->getFormattedProcedures(),
-                'required_documents' => $this->getFormattedRequiredDocuments(),
-                'costs' => $this->getFormattedCosts(),
-                'processing_time' => $this->getProcessingTimeFormatted(),
-            ],
-            'access' => [
-                'delivery_methods' => $this->delivery_methods,
-                'digital_channels' => $this->getFormattedDigitalChannels(),
-                'appointment_required' => $this->appointment_required,
-                'appointment_url' => $this->appointment_url,
-                'locations' => $this->physical_locations,
-            ],
-            'complete' => [
-                'online_form_url' => $this->online_form_url,
-                'contact_info' => $this->contact_info,
-                'outcomes' => $this->service_outcomes,
-            ],
-        ];
-    }
-
-    /**
-     * Boot del modello
-     */
-    protected static function boot()
-=======
      * Boot del modello
      */
     protected static function boot(): void
->>>>>>> dev
     {
         parent::boot();
 
         // Genera slug se mancante
-<<<<<<< HEAD
-        static::creating(function ($model) {
-=======
         static::creating(function ($model): void {
->>>>>>> dev
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->name);
             }
         });
 
         // Assicura unicità dello slug
-<<<<<<< HEAD
-        static::creating(function ($model) {
-=======
         static::creating(function ($model): void {
->>>>>>> dev
             $originalSlug = $model->slug;
             $counter = 1;
 
             while (static::where('slug', $model->slug)->exists()) {
-<<<<<<< HEAD
-<<<<<<< HEAD
                 $model->slug = $originalSlug.'-'.$counter;
-=======
-                $model->slug = $originalSlug . '-' . $counter;
->>>>>>> 4b6b99016 (first commit)
-=======
-                $model->slug = $originalSlug.'-'.$counter;
->>>>>>> dev
                 $counter++;
             }
         });
 
         // Set default values
-<<<<<<< HEAD
-        static::creating(function ($model) {
-            if (is_null($model->service_status)) {
-                $model->service_status = 'active';
-            }
-<<<<<<< HEAD
-=======
         static::creating(function ($model): void {
             if (is_null($model->service_status)) {
                 $model->service_status = 'active';
             }
->>>>>>> dev
 
             if (is_null($model->priority_level)) {
                 $model->priority_level = 1;
             }
 
-<<<<<<< HEAD
-=======
-            
-            if (is_null($model->priority_level)) {
-                $model->priority_level = 1;
-            }
-            
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             if (is_null($model->last_updated)) {
                 $model->last_updated = now();
             }
         });
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4b6b99016 (first commit)
-=======
-}
->>>>>>> dev

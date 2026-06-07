@@ -16,10 +16,7 @@
  *
  * @return JsonResponse The JSON response
  */
-<<<<<<< HEAD
-=======
 
->>>>>>> dev
 declare(strict_types=1);
 
 namespace Modules\User\Http\Controllers\Api;

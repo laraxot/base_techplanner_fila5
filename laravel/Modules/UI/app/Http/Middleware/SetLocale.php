@@ -26,15 +26,7 @@ final class SetLocale
         App::setLocale($locale);
 
         $response = $next($request);
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! $response instanceof Response) {
-=======
-        if (! ($response instanceof Response)) {
->>>>>>> 4b6b99016 (first commit)
-=======
-        if (! $response instanceof Response) {
->>>>>>> dev
             throw new \RuntimeException('Middleware must return a Response instance');
         }
 

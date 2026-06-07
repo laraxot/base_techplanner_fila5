@@ -2,22 +2,15 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(Modules\Geo\Tests\TestCase::class);
-=======
 namespace Modules\Geo\Tests\Unit\Models;
 
 uses(TestCase::class);
->>>>>>> dev
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Geo\Models\Address;
 use Modules\Geo\Models\Comune;
 use Modules\Geo\Models\Province;
-<<<<<<< HEAD
-=======
 use Modules\Geo\Tests\TestCase;
->>>>>>> dev
 
 beforeEach(function () {
     $this->address = Address::factory()->create();

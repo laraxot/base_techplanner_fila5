@@ -210,50 +210,30 @@ Questo pattern può essere applicato a:
 - [Best Practices](best_practices.md)
 
 ### Root Documentation
-<<<<<<< HEAD
-- [Filament Table Columns Best Practices](../../../docs/filament-table-columns-best-practices.md)
-- [Composite Columns Pattern](../../../docs/composite-columns-pattern.md)
-- [UI/UX Standards](../../../docs/ui-ux-standards.md)
-
-### Altri Moduli
-<<<<<<< HEAD
-=======
 - [Filament Table Columns Best Practices](../../../../docs/filament-table-columns-best-practices.md)
 - [Composite Columns Pattern](../../../../docs/composite-columns-pattern.md)
 - [UI/UX Standards](../../../../docs/ui-ux-standards.md)
 
 ### Altri Moduli
->>>>>>> dev
 - [TechPlanner Contacts Column](../../techplanner/docs/contacts-column-implementation-complete.md)
 - [UI Components](../../ui/docs/components.md)
 
 ## Changelog
 
 ### [DATE]
-<<<<<<< HEAD
-=======
 - [TechPlanner Contacts Column](../../TechPlanner/docs/contacts-column-implementation-complete.md)
 - [UI Components](../../UI/docs/components.md)
 
 ## Changelog
 
 ### 2025-08-01
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 - **Creazione**: Documentazione iniziale del pattern
 - **Standardizzazione**: Pattern derivato da TechPlanner
 - **Best Practices**: Definite regole architetturali
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-08-01*  
->>>>>>> 4b6b99016 (first commit)
-=======
 *Ultimo aggiornamento: [DATE]*  
->>>>>>> dev
 *Autore: Sistema Laraxot*  
 *Versione: 1.0*

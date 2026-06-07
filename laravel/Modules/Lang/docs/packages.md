@@ -3,21 +3,12 @@
 ## Pacchetti Utilizzati
 
 ### Core
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [laraxot/module_xot_fila3](../xot/docs/packages.md) - Modulo base per funzionalità comuni
-- [laraxot/module_ui](../ui/docs/packages.md) - Componenti UI e temi
-- [laraxot/module_tenant_fila3](../tenant/docs/packages.md) - Gestione multi-tenant
-=======
 - [laraxot/module_xot_fila3](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila3](../Tenant/docs/packages.md) - Gestione multi-tenant
->>>>>>> 4b6b99016 (first commit)
-=======
 - [laraxot/module_xot_fila5](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila5](../Tenant/docs/packages.md) - Gestione multi-tenant
->>>>>>> dev
 
 ### Localizzazione
 - [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
@@ -74,20 +65,6 @@
 ### Versione HEAD
 
 ## Collegamenti tra versioni di packages.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [packages.md](../../../gdpr/docs/packages.md)
-* [packages.md](../../../notify/docs/packages.md)
-* [packages.md](../../../xot/docs/packages.md)
-* [packages.md](../../../user/docs/packages.md)
-* [packages.md](../../../ui/docs/packages.md)
-* [packages.md](../../../lang/docs/packages.md)
-* [packages.md](../../../job/docs/packages.md)
-* [packages.md](../../../media/docs/packages.md)
-* [packages.md](../../../tenant/docs/packages.md)
-=======
-=======
->>>>>>> dev
 * [packages.md](../../../Gdpr/docs/packages.md)
 * [packages.md](../../../Notify/docs/packages.md)
 * [packages.md](../../../Xot/docs/packages.md)
@@ -97,10 +74,6 @@
 * [packages.md](../../../Job/docs/packages.md)
 * [packages.md](../../../Media/docs/packages.md)
 * [packages.md](../../../Tenant/docs/packages.md)
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ### Versione Incoming
 

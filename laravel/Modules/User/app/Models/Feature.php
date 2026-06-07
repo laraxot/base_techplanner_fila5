@@ -6,26 +6,12 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Modules\User\Database\Factories\FeatureFactory;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * @method static FeatureFactory  factory($count = null, $state = [])
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
  * @method static Builder|Feature newModelQuery()
  * @method static Builder|Feature newQuery()
  * @method static Builder|Feature query()
@@ -56,11 +42,8 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $deleter
  *
-<<<<<<< HEAD
-=======
  * @method static \Modules\User\Database\Factories\FeatureFactory factory($count = null, $state = [])
  *
->>>>>>> dev
  * @mixin \Eloquent
  */
 class Feature extends BaseModel

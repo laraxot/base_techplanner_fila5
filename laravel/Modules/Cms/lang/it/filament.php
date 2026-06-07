@@ -36,15 +36,7 @@ return [
                         'fields' => [
                             'label' => 'Etichetta Link',
                             'url' => 'URL',
-<<<<<<< HEAD
-<<<<<<< HEAD
                             'icon' => 'Icona (opzionale]',
-=======
-                            'icon' => 'Icona (opzionale)',
->>>>>>> 4b6b99016 (first commit)
-=======
-                            'icon' => 'Icona (opzionale]',
->>>>>>> dev
                         ],
                     ],
                 ],
@@ -91,10 +83,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Filament',
     'plural_label' => 'Filament (Plurale)',
     'navigation' => [
@@ -139,9 +127,4 @@ return [
             'label' => 'Elimina Filament',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

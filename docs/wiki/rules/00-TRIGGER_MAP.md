@@ -1,24 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Trigger map"
-type: rule
-tags: [rules, trigger-map, agent]
-created: 2026-06-06
-updated: 2026-06-06
-qmd: "trigger map agent rules laravel runtime bootstrap"
-issues:
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/21"
-discussions:
-  - "https://github.com/laraxot/base_techplanner_fila5/discussions/19"
----
-
-# Trigger map
-
-- Runtime 500 before page render: use [runtime bootstrap failure prevention](../concepts/runtime-bootstrap-failure-prevention.md).
-- Missing view under `pub_theme`: inspect tenant theme resolution and clear compiled views.
-- GitHub CI failure: inspect Action logs before editing.
-- Wiki/documentation edit: include YAML frontmatter with issue and discussion links.
-=======
 title: "Unified Trigger Map"
 type: rule
 tags: [trigger-map, on-demand, routing, bootstrap, mandatory-discipline]
@@ -132,6 +112,7 @@ related:
 | Wikilink / cross-reference cleanup | `docs/wiki/how-to/wikilink-cross-reference.md` |
 | Context-mode / ctx compression / verifica installazione | `docs/wiki/concepts/context-mode-usage.md`, `docs/wiki/how-to/context-mode-setup.md`, `docs/wiki/concepts/context-mode-cli-reference.md` |
 | PHPStan module analysis | `docs/wiki/rules/phpstan-rules.md` |
+| PHPStan neon — solo utente modifica `phpstan.neon` | `docs/wiki/rules/phpstan-no-level-parameter.md`, `docs/wiki/rules/phpstan-config.md` |
 | New module wiki bootstrap | `docs/wiki/how-to/module-wiki-documentation.md`, `docs/wiki/concepts/module-structure.md` |
 | Module/Theme semantic release + marketing README (vetrina) | `docs/wiki/standards/module-theme-release-showcase-standard.md` + root `.github/workflows/semantic-release.yml` + `module-release.yml` |
 | property_exists on Eloquent | `docs/wiki/rules/coding-standards.md`, `docs/wiki/memories/eloquent-hasattribute-not-property-exists.md` |
@@ -655,4 +636,3 @@ Rules, skills, commands, and memories are **NOT** pre-loaded into context.
 They live exclusively in the wiki and load on-demand via QMD search or trigger map lookup.
 
 > This is the **canonical source of truth**. Do not duplicate this mapping elsewhere.
->>>>>>> dev

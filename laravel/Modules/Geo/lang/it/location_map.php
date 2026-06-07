@@ -7,10 +7,6 @@ return [
         'label' => 'Mappa Posizioni',
         'group' => 'Geo',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Location Map',
     'plural_label' => 'Location Map (Plurale)',
     'fields' => [
@@ -44,9 +40,4 @@ return [
             'label' => 'Elimina Location Map',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

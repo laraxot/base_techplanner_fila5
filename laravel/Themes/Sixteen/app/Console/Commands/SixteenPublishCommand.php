@@ -42,15 +42,7 @@ class SixteenPublishCommand extends Command
 
         // Show completion message
         $this->info('✅ Sixteen theme published successfully!');
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         $this->comment('Next steps:');
         $this->line('• Update your .env file with Sixteen configuration variables');
         $this->line('• Run "npm run build" to compile theme assets');
@@ -58,12 +50,4 @@ class SixteenPublishCommand extends Command
 
         return self::SUCCESS;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4b6b99016 (first commit)
-=======
-}
->>>>>>> dev

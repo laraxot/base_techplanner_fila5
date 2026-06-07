@@ -266,11 +266,7 @@ php artisan notify:benchmark
 ## Collegamenti
 
 - [Linee Guida Riusabilità](reusability_guidelines.md)
-<<<<<<< HEAD
-- [Piano Implementazione](../../../docs/module_reusability_implementation_plan.md)
-=======
 - [Piano Implementazione](../../../../docs/module_reusability_implementation_plan.md)
->>>>>>> dev
 - [Script Controllo](../../../bashscripts/check_module_reusability.sh)
 
 *Ultimo aggiornamento: gennaio 2025*

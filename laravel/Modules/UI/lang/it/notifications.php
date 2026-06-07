@@ -13,10 +13,6 @@ return [
             'body' => 'Si è verificato un errore durante la transizione di stato: :error',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Notifications',
     'plural_label' => 'Notifications (Plurale)',
     'navigation' => [
@@ -61,9 +57,4 @@ return [
             'label' => 'Elimina Notifications',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

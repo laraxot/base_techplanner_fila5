@@ -54,15 +54,8 @@ class MioServizio
         protected UserContract $user
     ) {
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function eseguiOperazione(): void
     {
         // Utilizzo dell'interfaccia UserContract
@@ -88,28 +81,14 @@ use Illuminate\Support\Facades\Hash;
 public function register(array $data): UserContract
 {
     $user = app(UserContract::class);
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     $user->name = $data['name'];
     $user->email = $data['email'];
     $user->password = Hash::make($data['password']);
     $user->save();
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     return $user;
 }
 ```

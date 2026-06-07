@@ -1,17 +1,7 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 use App\Http\Middleware\EncryptCookies;
 use App\Http\Middleware\VerifyCsrfToken;
-=======
-use App\Http\Middleware\VerifyCsrfToken;
-use App\Http\Middleware\EncryptCookies;
->>>>>>> 4b6b99016 (first commit)
-=======
-use App\Http\Middleware\EncryptCookies;
-use App\Http\Middleware\VerifyCsrfToken;
->>>>>>> dev
 use Laravel\Sanctum\Sanctum;
 
 return [
@@ -77,3 +67,5 @@ return [
     ],
 
 ];
+
+

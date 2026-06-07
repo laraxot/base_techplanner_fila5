@@ -4,15 +4,8 @@
 
 **PHPStan Level 10**: ✅ **PASSED** - No errors found
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Last Analysis**: [DATE]
-=======
 **Last Analysis**: 2025-11-05
->>>>>>> 4b6b99016 (first commit)
-=======
 **Last Analysis**: [DATE]
->>>>>>> dev
 
 ## 🎯 Module Overview
 
@@ -28,15 +21,8 @@
 - **Errors Found**: 0 (as of September 22, 2025)
 - **Status**: ✅ Already clean
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Current Status ([DATE])
-=======
 ### Current Status (2025-11-05)
->>>>>>> 4b6b99016 (first commit)
-=======
 ### Current Status ([DATE])
->>>>>>> dev
 - **Current Errors**: 0
 - **PHPStan Level**: 10 (upgraded from Level 9)
 - **Status**: ✅ Fully PHPStan Level 10 Compliant
@@ -129,15 +115,8 @@
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Analysis Date**: [DATE]
-=======
 **Analysis Date**: 2025-11-05
->>>>>>> 4b6b99016 (first commit)
-=======
 **Analysis Date**: [DATE]
->>>>>>> dev
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1
 **Status**: ✅ Fully PHPStan Level 10 Compliant

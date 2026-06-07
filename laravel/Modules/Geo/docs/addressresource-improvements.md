@@ -1,15 +1,8 @@
 # Suggerimenti di Miglioramento per AddressResource.php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `/laravel/Modules/Geo/app/Filament/Resources/AddressResource.php`  
-=======
 **Data**: 2025-07-30
 **File**: `/laravel/Modules/Geo/app/Filament/Resources/AddressResource.php`
->>>>>>> 4b6b99016 (first commit)
-=======
 **File**: `/laravel/Modules/Geo/app/Filament/Resources/AddressResource.php`  
->>>>>>> dev
 **Priorità**: Alta (per performance e manutenibilità)
 
 ## 🎯 Obiettivi di Miglioramento
@@ -106,15 +99,8 @@ protected static function getCachedProvinces(int $regionId): array
 class GeoDataService
 {
     public function getRegionOptions(): array
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getProvinceOptions(int $regionId): array  
-=======
     public function getProvinceOptions(int $regionId): array
->>>>>>> 4b6b99016 (first commit)
-=======
     public function getProvinceOptions(int $regionId): array  
->>>>>>> dev
     public function getLocalityOptions(int $regionId, int $provinceId): array
     public function getPostalCodeOptions(int $regionId, int $provinceId, ?int $localityId = null): array
 }
@@ -123,15 +109,8 @@ class GeoDataService
 public static function getFormSchema(): array
 {
     $geoService = app(GeoDataService::class);
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     return [
         // Utilizzo del service per le opzioni
         'administrative_area_level_1' => Select::make('administrative_area_level_1')
@@ -219,15 +198,8 @@ public static function getSearchStep(): array
 - [ ] Pulizia codice e formattazione
 - [ ] Aggiungere loading states
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Fase 2 (Settimana 3-4): UX e Validazioni  
-=======
 ### Fase 2 (Settimana 3-4): UX e Validazioni
->>>>>>> 4b6b99016 (first commit)
-=======
 ### Fase 2 (Settimana 3-4): UX e Validazioni  
->>>>>>> dev
 - [ ] Integrazione Google Maps nel form
 - [ ] Implementare validazioni geografiche
 - [ ] Aggiungere feedback utente migliorato
@@ -263,15 +235,8 @@ public static function getSearchStep(): array
 - Validation rules personalizzate
 - Cache mechanisms
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Integration Tests  
-=======
 ### Integration Tests
->>>>>>> 4b6b99016 (first commit)
-=======
 ### Integration Tests  
->>>>>>> dev
 - Form submission completa
 - Cascade updates tra Select
 - Google Maps integration

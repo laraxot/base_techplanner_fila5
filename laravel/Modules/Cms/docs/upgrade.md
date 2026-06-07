@@ -29,15 +29,7 @@ Infine, se si sono pubblicati il file di configurazione o i modelli Blade, assic
 php artisan module_cms:show-versions
 ```
 ## Collegamenti tra versioni di upgrade.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [upgrade.md](laravel/modules/lang/docs/upgrade.md)
-* [upgrade.md](laravel/modules/cms/docs/upgrade.md)
-=======
 * [upgrade.md](laravel/Modules/Lang/docs/upgrade.md)
 * [upgrade.md](laravel/Modules/Cms/docs/upgrade.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [upgrade.md](laravel/modules/lang/docs/upgrade.md)
 * [upgrade.md](laravel/modules/cms/docs/upgrade.md)
->>>>>>> dev

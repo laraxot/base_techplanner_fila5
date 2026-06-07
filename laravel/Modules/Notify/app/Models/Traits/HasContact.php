@@ -21,15 +21,8 @@ trait HasContact
 {
     /**
      * Initialize the trait
-<<<<<<< HEAD
-     *
-     * @return void
-     */
-    protected function initializeHasContact()
-=======
      */
     protected function initializeHasContact(): void
->>>>>>> dev
     {
         // Automatically create a random token
         $fields = Arr::map(ContactTypeEnum::cases(), fn ($item) => $item->value);

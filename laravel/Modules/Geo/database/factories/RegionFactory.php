@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\Geo\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-<<<<<<< HEAD
-=======
 use Illuminate\Database\Eloquent\Model;
->>>>>>> dev
 use Modules\Geo\Models\Region;
 
 /**
@@ -69,22 +66,11 @@ class RegionFactory extends Factory
      */
     public function northern(): static
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         /*
          * @param  array<string, mixed>  $attributes
          * @return array<string, mixed>
          */
-<<<<<<< HEAD
-        return $this->state(function (array $attributes, ?\Illuminate\Database\Eloquent\Model $model = null) {
-=======
-        return $this->state(function (array $attributes): array {
->>>>>>> 4b6b99016 (first commit)
-=======
         return $this->state(function (array $attributes, ?Model $model = null) {
->>>>>>> dev
             $regioniNord = [
                 'Lombardia',
                 'Piemonte',
@@ -99,24 +85,12 @@ class RegionFactory extends Factory
             /** @var string $regionName */
             $regionName = $this->faker->randomElement($regioniNord);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             /** @var array<string, mixed> $result */
             $result = array_merge($attributes, [
                 'name' => $regionName,
             ]);
 
             return $result;
-<<<<<<< HEAD
-=======
-            return array_merge($attributes, [
-                'name' => $regionName,
-            ]);
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         });
     }
 
@@ -125,22 +99,11 @@ class RegionFactory extends Factory
      */
     public function central(): static
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         /*
          * @param  array<string, mixed>  $attributes
          * @return array<string, mixed>
          */
-<<<<<<< HEAD
-        return $this->state(function (array $attributes, ?\Illuminate\Database\Eloquent\Model $model = null) {
-=======
-        return $this->state(function (array $attributes): array {
->>>>>>> 4b6b99016 (first commit)
-=======
         return $this->state(function (array $attributes, ?Model $model = null) {
->>>>>>> dev
             $regioniCentro = [
                 'Lazio',
                 'Toscana',
@@ -153,24 +116,12 @@ class RegionFactory extends Factory
             /** @var string $regionName */
             $regionName = $this->faker->randomElement($regioniCentro);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             /** @var array<string, mixed> $result */
             $result = array_merge($attributes, [
                 'name' => $regionName,
             ]);
 
             return $result;
-<<<<<<< HEAD
-=======
-            return array_merge($attributes, [
-                'name' => $regionName,
-            ]);
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         });
     }
 
@@ -179,22 +130,11 @@ class RegionFactory extends Factory
      */
     public function southern(): static
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         /*
          * @param  array<string, mixed>  $attributes
          * @return array<string, mixed>
          */
-<<<<<<< HEAD
-        return $this->state(function (array $attributes, ?\Illuminate\Database\Eloquent\Model $model = null) {
-=======
-        return $this->state(function (array $attributes): array {
->>>>>>> 4b6b99016 (first commit)
-=======
         return $this->state(function (array $attributes, ?Model $model = null) {
->>>>>>> dev
             $regioniSud = [
                 'Campania',
                 'Puglia',
@@ -207,24 +147,12 @@ class RegionFactory extends Factory
             /** @var string $regionName */
             $regionName = $this->faker->randomElement($regioniSud);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             /** @var array<string, mixed> $result */
             $result = array_merge($attributes, [
                 'name' => $regionName,
             ]);
 
             return $result;
-<<<<<<< HEAD
-=======
-            return array_merge($attributes, [
-                'name' => $regionName,
-            ]);
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         });
     }
 

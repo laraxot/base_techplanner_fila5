@@ -2,18 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(Modules\User\Tests\TestCase::class);
-
-use Modules\User\Facades\FilamentShield;
-=======
-namespace Modules\User\Tests\Unit\Facades;
-
-uses(TestCase::class);
-
-use Modules\User\Facades\FilamentShield;
-use Modules\User\Tests\TestCase;
->>>>>>> dev
 
 test('FilamentShield facade can be accessed', function () {
     expect(class_exists(FilamentShield::class))->toBeTrue();

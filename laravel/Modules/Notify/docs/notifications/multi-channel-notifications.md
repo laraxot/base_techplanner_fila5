@@ -1,21 +1,11 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Implementazione di Notifiche Multi-Canale 
-
-Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di <nome progetto>.
-Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di SaluteOra.
-=======
 # Implementazione di Notifiche Multi-Canale
 
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di .
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di <nome progetto>.
->>>>>>> 4b6b99016 (first commit)
-=======
 # Implementazione di Notifiche Multi-Canale 
 
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di <nome progetto>.
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di Quaeris.
->>>>>>> dev
 
 ## Indice
 
@@ -30,18 +20,10 @@ Questa documentazione descrive come implementare correttamente notifiche multi-c
 
 ## Introduzione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<nome progetto> utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
-SaluteOra utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
-=======
  utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
 <nome progetto> utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
->>>>>>> 4b6b99016 (first commit)
-=======
 <nome progetto> utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
 Quaeris utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
->>>>>>> dev
 
 ## Architettura delle Notifiche
 
@@ -85,28 +67,14 @@ Quando si utilizza `SpatieEmail` con le notifiche, è **fondamentale** impostare
 public function toMail($notifiable): SpatieEmail
 {
     $email = new SpatieEmail($this->record, $this->slug);
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     // IMPORTANTE: garantisci che ci sia sempre un destinatario
     if (method_exists($notifiable, 'routeNotificationFor')) {
         $email->to($notifiable->routeNotificationFor('mail'));
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     return $email;
 }
 ```
@@ -126,18 +94,10 @@ public function toMail($notifiable): SpatieEmail
 
 ### Configurazione Provider SMS
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<nome progetto> supporta diversi provider SMS. La configurazione di base prevede:
-SaluteOra supporta diversi provider SMS. La configurazione di base prevede:
-=======
  supporta diversi provider SMS. La configurazione di base prevede:
 <nome progetto> supporta diversi provider SMS. La configurazione di base prevede:
->>>>>>> 4b6b99016 (first commit)
-=======
 <nome progetto> supporta diversi provider SMS. La configurazione di base prevede:
 Quaeris supporta diversi provider SMS. La configurazione di base prevede:
->>>>>>> dev
 
 1. Installazione del provider scelto:
    ```bash
@@ -242,37 +202,19 @@ class AppointmentNotification extends Notification
 {
     protected $record;
     protected $slug;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function __construct($record, $slug)
     {
         $this->record = $record;
         $this->slug = $slug;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function via($notifiable)
     {
         // Determina dinamicamente i canali basandosi sulle preferenze dell'utente
         $channels = ['mail'];
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         
         if ($notifiable->sms_notifications_enabled) {
             $channels[] = TwilioChannel::class;
@@ -289,8 +231,6 @@ class AppointmentNotification extends Notification
     {
         $email = new SpatieEmail($this->record, $this->slug);
         
-<<<<<<< HEAD
-=======
 
         if ($notifiable->sms_notifications_enabled) {
             $channels[] = TwilioChannel::class;
@@ -307,44 +247,25 @@ class AppointmentNotification extends Notification
     {
         $email = new SpatieEmail($this->record, $this->slug);
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         // IMPORTANTE: imposta esplicitamente il destinatario
         if (method_exists($notifiable, 'routeNotificationFor')) {
             $email->to($notifiable->routeNotificationFor('mail'));
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         
         return $email;
     }
     
-<<<<<<< HEAD
-=======
 
         return $email;
     }
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     public function toTwilio($notifiable)
     {
         return (new TwilioSmsMessage())
             ->content("Notifica: {$this->record->title}");
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function toTelegram($notifiable)
     {
         return TelegramMessage::create()
@@ -355,18 +276,10 @@ class AppointmentNotification extends Notification
 
 ## Implementazione Netfun SMS
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di <nome progetto>, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
-Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di SaluteOra, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
-=======
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di , implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di <nome progetto>, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
->>>>>>> 4b6b99016 (first commit)
-=======
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di <nome progetto>, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di Quaeris, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
->>>>>>> dev
 
 ### 1. Configurazione
 
@@ -376,28 +289,18 @@ Per prima cosa, aggiungiamo la configurazione nel file `config/sms.php`:
 // config/sms.php
 return [
     // Altre configurazioni...
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     'netfun' => [
         'username' => env('NETFUN_USERNAME'),
         'password' => env('NETFUN_PASSWORD'),
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
-<<<<<<< HEAD
-        'sender' => env('NETFUN_SENDER', 'SaluteOra'),
-=======
 
     'netfun' => [
         'username' => env('NETFUN_USERNAME'),
         'password' => env('NETFUN_PASSWORD'),
         'sender' => env('NETFUN_SENDER', ''),
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
->>>>>>> 4b6b99016 (first commit)
-=======
 'sender' => env('NETFUN_SENDER', 'Quaeris'),
->>>>>>> dev
         'api_url' => env('NETFUN_API_URL', 'https://api.netfun.it/sms/v1/'),
     ],
 ];
@@ -408,18 +311,10 @@ Assicurati di aggiungere le corrispondenti variabili al tuo file `.env`:
 ```
 NETFUN_USERNAME=your_username
 NETFUN_PASSWORD=your_password
-<<<<<<< HEAD
-<<<<<<< HEAD
-NETFUN_SENDER=<nome progetto>
-NETFUN_SENDER=SaluteOra
-=======
 NETFUN_SENDER=
 NETFUN_SENDER=<nome progetto>
->>>>>>> 4b6b99016 (first commit)
-=======
 NETFUN_SENDER=<nome progetto>
 NETFUN_SENDER=Quaeris
->>>>>>> dev
 ```
 
 ### 2. Creazione della Queueable Action
@@ -439,28 +334,14 @@ use Illuminate\Support\Str;
 class SendNetfunSMSAction
 {
     use QueueableAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     protected string $username;
     protected string $password;
     protected string $sender;
     protected string $apiUrl;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function __construct()
     {
         $this->username = config('sms.netfun.username');
@@ -468,36 +349,20 @@ class SendNetfunSMSAction
         $this->sender = config('sms.netfun.sender');
         $this->apiUrl = config('sms.netfun.api_url');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function execute(string $to, string $message, array $options = [])
     {
         // Normalizza il numero di telefono (formato E.164)
         $to = $this->normalizePhoneNumber($to);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         
         // Genera un ID di riferimento univoco per il messaggio
         $reference = $options['reference'] ?? (string) Str::uuid();
         
-<<<<<<< HEAD
-=======
 
         // Genera un ID di riferimento univoco per il messaggio
         $reference = $options['reference'] ?? (string) Str::uuid();
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         try {
             $response = Http::post($this->apiUrl, [
                 'username' => $this->username,
@@ -509,37 +374,21 @@ class SendNetfunSMSAction
                 // Altri parametri opzionali
                 'date' => $options['scheduled_date'] ?? null, // Data pianificata di invio
             ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             
             if ($response->successful()) {
                 $responseData = $response->json();
                 
-<<<<<<< HEAD
-=======
 
             if ($response->successful()) {
                 $responseData = $response->json();
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                 Log::info('SMS Netfun inviato con successo', [
                     'to' => $to,
                     'reference' => $reference,
                     'message_id' => $responseData['message_id'] ?? null,
                 ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
                 
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
                 
->>>>>>> dev
                 return [
                     'success' => true,
                     'message_id' => $responseData['message_id'] ?? null,
@@ -552,15 +401,8 @@ class SendNetfunSMSAction
                     'status' => $response->status(),
                     'response' => $response->json(),
                 ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
                 
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
                 
->>>>>>> dev
                 return [
                     'success' => false,
                     'error' => $response->json()['message'] ?? 'Errore sconosciuto',
@@ -573,10 +415,6 @@ class SendNetfunSMSAction
                 'reference' => $reference,
                 'error' => $e->getMessage(),
             ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             
             throw $e;
         }
@@ -585,8 +423,6 @@ class SendNetfunSMSAction
     /**
      * Normalizza il numero di telefono nel formato E.164
      * 
-<<<<<<< HEAD
-=======
 
             throw $e;
         }
@@ -595,9 +431,6 @@ class SendNetfunSMSAction
     /**
      * Normalizza il numero di telefono nel formato E.164
      *
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
      * @param string $phoneNumber
      * @return string
      */
@@ -605,44 +438,23 @@ class SendNetfunSMSAction
     {
         // Rimuovi tutti i caratteri non numerici
         $digits = preg_replace('/[^0-9]/', '', $phoneNumber);
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         // Se il numero non inizia con '+' e non ha un prefisso internazionale,
         // aggiungi il prefisso italiano per default
         if (!Str::startsWith($phoneNumber, '+')) {
             // Se il numero inizia con '00', sostituisci con '+'
             if (Str::startsWith($digits, '00')) {
                 $digits = '+' . substr($digits, 2);
-<<<<<<< HEAD
-<<<<<<< HEAD
-            } 
-=======
             }
->>>>>>> 4b6b99016 (first commit)
-=======
             } 
->>>>>>> dev
             // Se il numero inizia con '3' (cellulare italiano), aggiungi prefisso italiano
             elseif (Str::startsWith($digits, '3')) {
                 $digits = '+39' . $digits;
             }
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return $digits;
     }
 }
@@ -663,23 +475,14 @@ class NetfunSMSMessage
     public ?string $sender = null;
     public ?string $reference = null;
     public ?string $scheduledDate = null;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     /**
      * Imposta il contenuto del messaggio
      * 
-<<<<<<< HEAD
-=======
 
     /**
      * Imposta il contenuto del messaggio
      *
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
      * @param string $content
      * @return $this
      */
@@ -688,23 +491,14 @@ class NetfunSMSMessage
         $this->content = $content;
         return $this;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     /**
      * Imposta il mittente del messaggio
      * 
-<<<<<<< HEAD
-=======
 
     /**
      * Imposta il mittente del messaggio
      *
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
      * @param string $sender
      * @return $this
      */
@@ -713,23 +507,14 @@ class NetfunSMSMessage
         $this->sender = $sender;
         return $this;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     /**
      * Imposta un riferimento personalizzato
      * 
-<<<<<<< HEAD
-=======
 
     /**
      * Imposta un riferimento personalizzato
      *
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
      * @param string $reference
      * @return $this
      */
@@ -738,23 +523,14 @@ class NetfunSMSMessage
         $this->reference = $reference;
         return $this;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     /**
      * Pianifica l'invio del messaggio
      * 
-<<<<<<< HEAD
-=======
 
     /**
      * Pianifica l'invio del messaggio
      *
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
      * @param string $date Formato: 'Y-m-d H:i:s'
      * @return $this
      */
@@ -763,23 +539,14 @@ class NetfunSMSMessage
         $this->scheduledDate = $date;
         return $this;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     /**
      * Converte l'oggetto in array di opzioni
      * 
-<<<<<<< HEAD
-=======
 
     /**
      * Converte l'oggetto in array di opzioni
      *
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
      * @return array
      */
     public function toArray(): array
@@ -809,36 +576,20 @@ use Modules\Notify\Datas\NetfunSMSMessage;
 class NetfunChannel
 {
     protected SendNetfunSMSAction $sendSMSAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function __construct(SendNetfunSMSAction $sendSMSAction)
     {
         $this->sendSMSAction = $sendSMSAction;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     /**
      * Invia la notifica tramite Netfun SMS
      * 
-<<<<<<< HEAD
-=======
 
     /**
      * Invia la notifica tramite Netfun SMS
      *
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
      * @param mixed $notifiable
      * @param \Illuminate\Notifications\Notification $notification
      * @return array|null
@@ -849,10 +600,6 @@ class NetfunChannel
         if (!$to = $notifiable->routeNotificationForNetfun($notification)) {
             return null;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         
         // Ottieni il messaggio dalla notifica
         $message = $notification->toNetfun($notifiable);
@@ -861,8 +608,6 @@ class NetfunChannel
             throw new \Exception('Il metodo toNetfun() deve restituire un\'istanza di NetfunSMSMessage');
         }
         
-<<<<<<< HEAD
-=======
 
         // Ottieni il messaggio dalla notifica
         $message = $notification->toNetfun($notifiable);
@@ -871,9 +616,6 @@ class NetfunChannel
             throw new \Exception('Il metodo toNetfun() deve restituire un\'istanza di NetfunSMSMessage');
         }
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         // Esegui l'invio tramite la Queueable Action
         // L'esecuzione avverrà in modo asincrono (in background)
         return $this->sendSMSAction
@@ -900,27 +642,18 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use Notifiable;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     // ... altri metodi e proprietà
     
     /**
      * Restituisce il numero di telefono per invio notifiche Netfun
      * 
-<<<<<<< HEAD
-=======
 
     // ... altri metodi e proprietà
 
     /**
      * Restituisce il numero di telefono per invio notifiche Netfun
      *
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
      * @param \Illuminate\Notifications\Notification $notification
      * @return string|null
      */
@@ -947,36 +680,20 @@ use Modules\Notify\Datas\NetfunSMSMessage;
 class AppointmentReminder extends Notification
 {
     protected $appointment;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function __construct($appointment)
     {
         $this->appointment = $appointment;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     /**
      * Definisci i canali su cui inviare la notifica
      * 
-<<<<<<< HEAD
-=======
 
     /**
      * Definisci i canali su cui inviare la notifica
      *
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
      * @param mixed $notifiable
      * @return array
      */
@@ -984,39 +701,20 @@ class AppointmentReminder extends Notification
     {
         return ['mail', NetfunChannel::class];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     /**
      * Formatta il messaggio per il canale Netfun
      * 
-<<<<<<< HEAD
-=======
 
     /**
      * Formatta il messaggio per il canale Netfun
      *
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
      * @param mixed $notifiable
      * @return \Modules\Notify\Datas\NetfunSMSMessage
      */
     public function toNetfun($notifiable)
     {
         $date = $this->appointment->date->format('d/m/Y H:i');
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-        return (new NetfunSMSMessage())
-            ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. <nome progetto>.")
-            ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. SaluteOra.")
-            ->reference('app_' . $this->appointment->id);
-    }
-    
-=======
 
         return (new NetfunSMSMessage())
             ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. .")
@@ -1024,8 +722,6 @@ class AppointmentReminder extends Notification
             ->reference('app_' . $this->appointment->id);
     }
 
->>>>>>> 4b6b99016 (first commit)
-=======
         
         return (new NetfunSMSMessage())
             ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. <nome progetto>.")
@@ -1033,7 +729,6 @@ class AppointmentReminder extends Notification
             ->reference('app_' . $this->appointment->id);
     }
     
->>>>>>> dev
     // Altri metodi per altri canali (mail, ecc.)
 }
 ```
@@ -1057,15 +752,8 @@ use Illuminate\Support\Facades\Http;
 class NetfunSMSTest extends TestCase
 {
     use DatabaseTransactions;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function testSendSMS()
     {
         // Mock della risposta HTTP
@@ -1075,10 +763,6 @@ class NetfunSMSTest extends TestCase
                 'message_id' => '123456789',
             ], 200),
         ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         
         $user = User::factory()->create([
             'phone_number' => '+393401234567',
@@ -1088,11 +772,6 @@ class NetfunSMSTest extends TestCase
         
         $message = (new NetfunSMSMessage())
             ->content('Test SMS da <nome progetto>')
-<<<<<<< HEAD
-            ->content('Test SMS da SaluteOra')
-            ->reference('test_123');
-        
-=======
 
         $user = User::factory()->create([
             'phone_number' => '+393401234567',
@@ -1105,26 +784,16 @@ class NetfunSMSTest extends TestCase
             ->content('Test SMS da <nome progetto>')
             ->reference('test_123');
 
->>>>>>> 4b6b99016 (first commit)
-=======
 ->content('Test SMS da Quaeris')
             ->reference('test_123');
         
->>>>>>> dev
         $result = $action->execute(
             $user->phone_number,
             $message->content,
             $message->toArray()
         );
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         $this->assertTrue($result['success']);
         $this->assertEquals('123456789', $result['message_id']);
     }
@@ -1150,30 +819,18 @@ class AppointmentReminderController extends Controller
     public function sendReminder(Request $request, Appointment $appointment)
     {
         $sendSMSAction = app(SendNetfunSMSAction::class);
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-        $message = (new NetfunSMSMessage())
-            ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. <nome progetto>.")
-            ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. SaluteOra.")
-            ->reference('app_' . $appointment->id);
-        
-=======
 
         $message = (new NetfunSMSMessage())
             ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. .")
             ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. <nome progetto>.")
             ->reference('app_' . $appointment->id);
 
->>>>>>> 4b6b99016 (first commit)
-=======
         
         $message = (new NetfunSMSMessage())
             ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. <nome progetto>.")
 ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. Quaeris.")
             ->reference('app_' . $appointment->id);
         
->>>>>>> dev
         // Esecuzione asincrona
         $sendSMSAction->onQueue('sms')
             ->execute(
@@ -1181,15 +838,8 @@ class AppointmentReminderController extends Controller
                 $message->content,
                 $message->toArray()
             );
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return response()->json([
             'message' => 'Promemoria inviato con successo',
         ]);
@@ -1283,12 +933,6 @@ TELEGRAM_BOT_TOKEN=12345:ABC...
 
 ## Collegamenti alla Documentazione Correlata
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
-- [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
-- [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
-=======
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./NOTIFICATIONS_IMPLEMENTATION_GUIDE.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./SMS_PROVIDER_CONFIGURATION.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./TELEGRAM_NOTIFICATIONS_GUIDE.md)
@@ -2051,9 +1695,6 @@ TELEGRAM_BOT_TOKEN=12345:ABC...
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./NOTIFICATIONS_IMPLEMENTATION_GUIDE.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./SMS_PROVIDER_CONFIGURATION.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./TELEGRAM_NOTIFICATIONS_GUIDE.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
->>>>>>> dev

@@ -377,21 +377,12 @@ La cartella `docs/` è ben organizzata con:
 
 ### Documentazione Correlata
 - [Roadmap Progetto](../../../docs/roadmap_project.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Modulo User](../../user/docs/roadmap_complete.md)
-- [Modulo Media](../../media/docs/readme.md)
-- [Theme Sixteen](../../../themes/sixteen/docs/readme.md)
-=======
 - [Modulo User](../../User/docs/roadmap_complete.md)
 - [Modulo Media](../../Media/docs/README.md)
 - [Theme Sixteen](../../../Themes/Sixteen/docs/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Modulo User](../../user/docs/roadmap_complete.md)
 - [Modulo Media](../../media/docs/readme.md)
 - [Theme Sixteen](../../../themes/sixteen/docs/readme.md)
->>>>>>> dev
 
 ### Resources
 - [Filament Documentation](https://filamentphp.com/docs)
@@ -402,19 +393,10 @@ La cartella `docs/` è ben organizzata con:
 ---
 
 **Versione**: 1.0.0
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Maintainer**: CMS Team
-**Status**: 🚧 In Development (65% completo)
-**Prossima Revisione**: [DATE]
-=======
 **Ultimo Aggiornamento**: 2025-01-01
 **Maintainer**: CMS Team
 **Status**: 🚧 In Development (65% completo)
 **Prossima Revisione**: 2025-02-01
->>>>>>> 4b6b99016 (first commit)
-=======
 **Maintainer**: CMS Team
 **Status**: 🚧 In Development (65% completo)
 **Prossima Revisione**: [DATE]
->>>>>>> dev

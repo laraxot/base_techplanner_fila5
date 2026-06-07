@@ -32,15 +32,7 @@ return [
     'exists' => 'La selezione per :attribute non è valida.',
     'file' => 'The :attribute must be a file.',
     'filled' => ':attribute è obbligatorio.',
-<<<<<<< HEAD
-<<<<<<< HEAD
     'image' => ':attribute deve essere un\'immagine.',
-=======
-    'image' => ":attribute deve essere un'immagine.",
->>>>>>> 4b6b99016 (first commit)
-=======
-    'image' => ':attribute deve essere un\'immagine.',
->>>>>>> dev
     'in' => 'La selezione per :attribute non è valida.',
     'in_array' => 'The :attribute field does not exist in :other.',
     'integer' => ':attribute deve essere un numero intero.',
@@ -136,10 +128,6 @@ return [
             'new_password_confirmation' => 'Conferma nuova password',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Validation',
     'plural_label' => 'Validation (Plurale)',
     'navigation' => [
@@ -184,9 +172,4 @@ return [
             'label' => 'Elimina Validation',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

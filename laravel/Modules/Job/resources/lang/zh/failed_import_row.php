@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -51,26 +47,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'import_batch_id' => [
-            'label' => '导入批次ID',
-        ],
-        'row_index' => [
-            'label' => '行索引',
-        ],
-        'errors' => [
-            'label' => '错误',
-        ],
-        'data' => [
-            'label' => '数据',
-        ],
-        'created_at' => [
-            'label' => '创建时间',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -81,12 +57,4 @@ return [
             'label' => '修复行',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 4b6b99016 (first commit)
-=======
-];
->>>>>>> dev

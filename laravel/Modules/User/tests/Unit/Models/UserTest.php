@@ -2,20 +2,11 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\User\Tests\Unit\Models;
-
->>>>>>> dev
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Enums\UserType;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 // Import per le funzioni Safe
 
 uses(TestCase::class);
@@ -23,27 +14,11 @@ uses(TestCase::class);
 beforeEach(function (): void {
     /** @var User $user */
     $user = User::factory()->create([
-<<<<<<< HEAD
-=======
-uses(TestCase::class);
-
-beforeEach(function (): void {
-    $this->user = User::factory()->create([
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         'type' => UserType::MasterAdmin,
         'email' => fake()->unique()->safeEmail(),
         'password' => Hash::make('password123'),
     ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
     $this->user = $user;
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    $this->user = $user;
->>>>>>> dev
 });
 
 test('user can be created', function (): void {

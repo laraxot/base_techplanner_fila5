@@ -11,10 +11,5 @@
 - Mantenimento dell'utilizzo di `tap($this->model)->update($up)` per garantire coerenza e robustezza.
 
 ## Collegamenti
-<<<<<<< HEAD
-- [Linee Guida Generali per la Risoluzione dei Conflitti Git](../../../../docs/risoluzione_conflitti_git.md)
-- [Documentazione Conflitti Git nei Moduli](../../../../docs/conflitti_git_moduli.md)
-=======
 - [Linee Guida Generali per la Risoluzione dei Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md)
 - [Documentazione Conflitti Git nei Moduli](../../../../../docs/conflitti_git_moduli.md)
->>>>>>> dev

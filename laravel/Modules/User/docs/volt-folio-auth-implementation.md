@@ -1,18 +1,7 @@
-<<<<<<< HEAD
-# Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio
-
-## Collegamenti correlati
-<<<<<<< HEAD
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Errors](./volt_errors.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-=======
 - [README modulo User](./README.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Volt Errors](./VOLT_ERRORS.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
->>>>>>> 4b6b99016 (first commit)
 
 ## Introduzione
 
@@ -546,17 +535,10 @@ Seguendo queste linee guida per l'implementazione delle pagine di autenticazione
 # Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Errors](./volt_errors.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-=======
 - [README modulo User](./README.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Volt Errors](./VOLT_ERRORS.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
->>>>>>> 4b6b99016 (first commit)
 
 ## Introduzione
 
@@ -1087,7 +1069,6 @@ Seguendo queste linee guida per l'implementazione delle pagine di autenticazione
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Livewire](https://livewire.laravel.com/docs)
-=======
 ---
 module: theme
 topic: volt-folio-auth-implementation
@@ -1095,4 +1076,3 @@ canonical: ../../../Themes/docs/shared-components/volt-folio-auth-implementation
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-auth-implementation.md
->>>>>>> dev

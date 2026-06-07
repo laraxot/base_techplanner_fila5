@@ -9,25 +9,14 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Filament;
 
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Str;
-use ReflectionClass;
-=======
 use Illuminate\Support\Str;
 
 use function Safe\file;
 
->>>>>>> dev
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Finder\SplFileInfo as File;
 use Webmozart\Assert\Assert;
 
-<<<<<<< HEAD
-use function Safe\file;
-
-=======
->>>>>>> dev
 class GenerateFormByFileAction
 {
     use QueueableAction;
@@ -35,12 +24,8 @@ class GenerateFormByFileAction
     /**
      * Genera un form Filament basato su un file di risorsa.
      *
-<<<<<<< HEAD
-     * @param  File  $file  Il file della risorsa Filament
-=======
      * @param File $file Il file della risorsa Filament
      *
->>>>>>> dev
      * @return int Numero di input aggiunti
      */
     public function execute(File $file): int
@@ -86,11 +71,7 @@ class GenerateFormByFileAction
 
         $fillable = $modelInstance->getFillable();
 
-<<<<<<< HEAD
-        $reflection_class = new ReflectionClass($class_name);
-=======
         $reflection_class = new \ReflectionClass($class_name);
->>>>>>> dev
 
         // Verifichiamo che il metodo form esista
         if (! $reflection_class->hasMethod('form')) {
@@ -105,37 +86,20 @@ class GenerateFormByFileAction
         Assert::string($file_name = $form_method->getFileName(), '['.__LINE__.']['.class_basename($this).']');
         // $contents= $file->getContents();
         $source = file($file_name);
-<<<<<<< HEAD
-        $body = implode('', \array_slice($source, $start_line, $length));
-=======
         Assert::isArray($source);
         $body = '';
         foreach (\array_slice($source, $start_line, $length) as $line) {
             $body .= (string) $line;
         }
->>>>>>> dev
 
         // Otteniamo i metodi della classe risorsa
         $resourceMethods = get_class_methods($resourceInstance);
 
-<<<<<<< HEAD
-        Log::debug('GenerateFormByFileAction', [
-            'line' => __LINE__,
-            'method' => __METHOD__,
-            'fillable' => $fillable,
-        ]);
-
-=======
->>>>>>> dev
         // Contiamo gli input aggiunti
         $inputCount = 0;
         foreach ($fillable as $field) {
             if (in_array($field, $resourceMethods)) {
-<<<<<<< HEAD
-                $inputCount++;
-=======
                 ++$inputCount;
->>>>>>> dev
             }
         }
 
@@ -145,11 +109,7 @@ class GenerateFormByFileAction
     /**
      * Mostra informazioni di debug su un file.
      *
-<<<<<<< HEAD
-     * @param  File  $file  Il file da analizzare
-=======
      * @param File $file Il file da analizzare
->>>>>>> dev
      */
     public function ddFile(File $file): void
     {

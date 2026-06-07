@@ -70,15 +70,8 @@ class Region extends Model
         ['codice' => 'LAZ', 'nome' => 'Lazio'],
         // ...
     ];
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     // Oppure con caricamento da file JSON
     protected function getRows()
     {
@@ -192,21 +185,12 @@ Una migrazione a Laravel Sushi potrebbe essere riconsiderata, con un costo di co
 
 ## Collegamenti a Documentazione Correlata
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Modulo Core: Architettura](../../xot/project_docs/module-architecture.md)
-- [Best Practices per i Modelli](../../xot/project_docs/model-best-practices.md)
-- [Pattern di Data Access](../../xot/project_docs/data-access-patterns.md)
-=======
 - [Modulo Core: Architettura](../../Xot/project_docs/module-architecture.md)
 - [Best Practices per i Modelli](../../Xot/project_docs/model-best-practices.md)
 - [Pattern di Data Access](../../Xot/project_docs/data-access-patterns.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Modulo Core: Architettura](../../xot/project_docs/module-architecture.md)
 - [Best Practices per i Modelli](../../xot/project_docs/model-best-practices.md)
 - [Pattern di Data Access](../../xot/project_docs/data-access-patterns.md)
->>>>>>> dev
 - [Laravel Sushi GitHub](https://github.com/calebporzio/sushi)
 
 ---

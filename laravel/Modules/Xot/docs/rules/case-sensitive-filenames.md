@@ -1,12 +1,6 @@
 # 📋 **Regola: Nomi File Case-Sensitive**
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 11 Novembre 2025
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Categoria**: Convenzioni di Codice
 **Priorità**: CRITICA ⚠️
 

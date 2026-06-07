@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 https://frostbutter.com/articles/htaccess-cache-control-for-a-faster-website/
 
 # Start Cache control
@@ -29,5 +27,3 @@ https://frostbutter.com/articles/redirect-http-to-https-force-https-with-htacces
 # redirect all http to https
 RewriteCond %{HTTPS} off 
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
->>>>>>> dev
-

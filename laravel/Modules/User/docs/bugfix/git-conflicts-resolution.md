@@ -104,21 +104,12 @@ git status --porcelain | grep "^UU\|^AA\|^DD"
 
 ## 🔗 Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Priority Decision Rules](../../xot/docs/priority-decision-rules.md)
-- [Super Mucca Workflow](../../xot/docs/super-mucca-workflow.md)
-- [Git Conflict Resolution Guide](../../xot/docs/git-conflict-resolution.md)
-=======
 - [Priority Decision Rules](../../Xot/docs/priority-decision-rules.md)
 - [Super Mucca Workflow](../../Xot/docs/super-mucca-workflow.md)
 - [Git Conflict Resolution Guide](../../Xot/docs/git-conflict-resolution.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Priority Decision Rules](../../xot/docs/priority-decision-rules.md)
 - [Super Mucca Workflow](../../xot/docs/super-mucca-workflow.md)
 - [Git Conflict Resolution Guide](../../xot/docs/git-conflict-resolution.md)
->>>>>>> dev
 
 ---
 

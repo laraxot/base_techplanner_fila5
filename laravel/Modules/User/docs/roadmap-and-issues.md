@@ -3,11 +3,7 @@
 **Modulo**: User (Authentication, Authorization, Profiles)  
 **Data Analisi**: 1 Ottobre 2025  
 **Maintainer**: Team FixCity  
-<<<<<<< HEAD
-**Status PHPStan**: ⚠️ 95 errori (Level 9)
-=======
 **Status PHPStan**: ⚠️ 95 errori (Level 10)
->>>>>>> dev
 
 ---
 
@@ -27,11 +23,7 @@
 
 ---
 
-<<<<<<< HEAD
-## 🔴 ERRORI PHPSTAN DA CORREGGERE (95)
-=======
 ## 🔴 COMPLETED PHPSTAN DA CORREGGERE (95)
->>>>>>> dev
 
 ### Categorizzazione Errori
 
@@ -255,11 +247,7 @@ php artisan queue:prune-failed --hours=48
 - [ ] Cleanup PHPStan suppressions
 
 **Totale**: ~6 ore  
-<<<<<<< HEAD
-**Risultato**: ✅ 0 errori PHPStan Level 9
-=======
 **Risultato**: ✅ 0 errori PHPStan Level 10
->>>>>>> dev
 
 ---
 
@@ -325,11 +313,7 @@ php artisan queue:prune-failed --hours=48
 - [ ] **User Analytics**
   - Activity metrics
   - Engagement tracking
-<<<<<<< HEAD
-  - Churn prediction
-=======
   - Churn <nome progetto>ion
->>>>>>> dev
 
 ---
 
@@ -385,29 +369,15 @@ php artisan queue:prune-failed --hours=48
 
 ## 🔗 Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [← User Module README](./readme.md)
-=======
 - [← User Module README](./README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [← User Module README](./readme.md)
->>>>>>> dev
 - [← PHPStan Fixes 2025-10-01](./phpstan-fixes-2025-10-01.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
 - [← Root Documentation](../../../docs/index.md)
 
 ---
 
-<<<<<<< HEAD
-**Status**: ⚠️ 95 ERRORI DA CORREGGERE  
-=======
 **Status**: ⚠️ 95 COMPLETED DA CORREGGERE  
->>>>>>> dev
 **Priorità**: 🟡 ALTA  
 **Timeline**: 2 Ottobre 2025  
 **Effort**: ~6 ore → 100% CLEAN
-
-
-

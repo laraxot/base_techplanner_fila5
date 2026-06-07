@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 Create a Laravel Marketplace with Stripe using Cashier and this package
 https://hbakouane.medium.com/create-a-laravel-marketplace-with-stripe-using-cashier-and-this-package-9bbf56078215
 
@@ -245,25 +243,3 @@ https://github.com/overtrue/laravel-shopping-cart
 https://github.com/wowpowhub/shopping-cart-php/tree/main/app/Models/Cart   !!!! CON ADDON !!!!
 
 https://git.tibidono.com/package/laravelshoppingcart
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> dev
-

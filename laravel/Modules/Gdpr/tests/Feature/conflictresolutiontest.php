@@ -2,14 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(\Modules\Gdpr\Tests\TestCase::class);
-
-namespace Modules\Gdpr\Tests\Feature;
-
-use Modules\Gdpr\Models\Profile;
-use Modules\Gdpr\Models\Treatment;
-=======
 namespace Modules\Gdpr\Tests\Feature;
 
 uses(TestCase::class);
@@ -17,7 +9,6 @@ uses(TestCase::class);
 use Modules\Gdpr\Models\Profile;
 use Modules\Gdpr\Models\Treatment;
 use Modules\Gdpr\Tests\TestCase;
->>>>>>> dev
 
 it('verifica che le classi corrette siano istanziabili', function (): void {
     expect(new Treatment())->toBeInstanceOf(Treatment::class);

@@ -102,20 +102,12 @@ return [
             'date_range' => 'Periodo',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 
     // Coordinate Picker - Map Controls
     'coordinate-picker' => [
@@ -145,5 +137,4 @@ return [
         'no_results' => 'Keine Ergebnisse',
         'coordinates_set' => 'Koordinaten gesetzt',
     ],
->>>>>>> dev
 ];

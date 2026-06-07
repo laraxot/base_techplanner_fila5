@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 
->>>>>>> dev
 -----------------------------------------------------------------------------------
 https://github.com/cheesegrits/filament-google-maps
 star:204
@@ -32,53 +26,29 @@ star: 11
 updated: 7 months ago
 ----------------------------------------------------------------------------------
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 
->>>>>>> dev
 https://packagist.org/packages/tanthammar/filament-extras
 
 https://github.com/tanthammar/filament-extras/blob/main/src/Forms/AddressFields.php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 
 https://github.com/Lecturize/Laravel-Addresses/blob/master/src/Models/Address.php
 
 
-<<<<<<< HEAD
-=======
 https://github.com/Lecturize/Laravel-Addresses/blob/master/src/Models/Address.php
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 https://laraveldaily.com/code-examples/example/laravel-filament-filamentadmin-com/map
 
 https://laraveldaily.com/post/laravel-get-latitude-longitude-from-address-geocoder
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 
 https://dev.to/bradisrad83/browser-location-with-laravel-livewire-54bd
 
 
 
-<<<<<<< HEAD
-=======
 https://dev.to/bradisrad83/browser-location-with-laravel-livewire-54bd
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 <script>
  function getLocation() {
    if (navigator.geolocation) {
@@ -94,26 +64,14 @@ function showPosition(position) {
 }
 </script>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 
 
 
 
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 https://polodev.github.io/tuts/2018/11/05/nearby-location-using-latitude-and-longitude-in-laravel-application-mysql-query-plus-vue-implementation/
 
 https://github.com/geocoder-php/GeocoderLaravel
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 # Integrazione Filament nel Modulo Geo
 
 ## AddressResource: regole, filosofia e best practice
@@ -203,6 +161,3 @@ Modules/Geo/app/Filament/Resources/
 - **Filosofia**: Un solo punto di verità, nessun path assoluto, nessun lock-in.
 - **Religione**: "Non avrai altro path all'infuori del relativo".
 - **Zen**: Serenità nella navigazione, nessun errore di path, nessun link rotto dopo un refactor.
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

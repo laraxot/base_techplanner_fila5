@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# 🎞️ **Media Module** - High-Performance Asset Management
-
-[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
-[![PHPStan level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
-[![Visual Engine](https://img.shields.io/badge/Engine-FFmpeg%20%7C%20Imagick%20%7C%20LibVips-blueviolet.svg)](https://ffmpeg.org/)
-
-> **🚀 Modulo Media**: Il centro di comando per le risorse digitali di Laraxot. Non è un semplice uploader: è una pipeline di trasformazione che gestisce compressione, transcoding video, ottimizzazione immagini e storage distribuito (S3/Cloud).
-
-## 📋 **Panoramica**
-
-Il modulo **Media** automatizza il ciclo di vita di ogni byte multimediale caricato.
-
-=======
 ---
 title: "Media Module Documentation"
 type: documentation
@@ -33,15 +18,12 @@ Gestisce le funzionalità specifiche del dominio Media.
 
 ## Cosa copre (business)
 ||||||| parent of 53258b2 (.)
->>>>>>> dev
 - 🖼️ **Smart Transformations**: Generazione automatica di preview, thumbnail e formati next-gen (WebP/AVIF).
 - 🎥 **Video Transcoding**: Engine FFmpeg integrato per convertire video in formati streaming-efficient (H.264/VP9).
 - ☁️ **Cloud Native**: Supporto multi-disk trasparente (Local, S3, Azure) gestito dall'astrazione CloudStorage.
 - 🛡️ **Safe Uploads**: Validazione rigorosa di MIME types, dimensioni e scan anti-malware integrato.
 - 🎨 **Visual Library**: Interfaccia Filament per gestire migliaia di file con drag-and-drop e visualizzazione a griglia.
 
-<<<<<<< HEAD
-=======
 - **Upload & gestione file**: associazione media a record di dominio (es. avatar, documenti, allegati).
 - **Integrazione UI**: componenti/risorse Filament per caricare e gestire media.
 - **Policy**: regole condivise su naming, storage e sicurezza (validazioni, mime types).
@@ -49,7 +31,6 @@ Gestisce le funzionalità specifiche del dominio Media.
 ## Struttura
 
 ||||||| parent of 53258b2 (.)
->>>>>>> dev
 ## ⚡ **Funzionalità Core**
 
 ### 🧩 **Lazy Conversions**
@@ -64,27 +45,6 @@ Le conversioni non bloccano la UI. Vengono processate in background tramite il m
 ```php
 $model->addMedia($file)->toMediaCollection('gallery');
 ```
-<<<<<<< HEAD
-
-### ⚙️ **Recupero URL Ottimizzata**
-```php
-echo $model->getFirstMediaUrl('gallery', 'webp-compressed');
-```
-
-## 📚 **Documentazione Centrale**
-
-- 📖 **[Indice Documentazione](./00-index.md)** - Mappa navigazione completa.
-- 🙏 **[Filosofia Media](./philosophy.md)** - La gestione degli asset digitali.
-- 🎥 **[FFmpeg Guide](./ffmpeg-integration.md)** - Come scaliamo il processing video.
-- ☁️ **[Storage Strategy](./file-management.md)** - Dove e come salviamo i dati.
-
----
-
-**🔄 Ultimo aggiornamento**: 31 Gennaio 2026
-**📦 Versione**: 3.2.0
-**✅ PHPStan level 10**: Compliance nativa garantita
-
-=======
 Media/
 ├── app/
 │   ├── Models/
@@ -111,7 +71,6 @@ Media/
 ## AI Workflows
 - [AI Methodologies](./ai-methodologies.md)
 ||||||| parent of 53258b2 (.)
->>>>>>> dev
 ## 🚀 Release su GitHub
 Le release sono basate su tag Git e possono includere release notes generate automaticamente.
 Workflow locale: `.github/workflows/release.yml`.
@@ -123,8 +82,6 @@ Workflow locale: `.github/workflows/release.yml`.
 - Marco Sottana <marco.sottana@gmail.com>
 
 **License:** MIT
-<<<<<<< HEAD
-=======
 # 📁 **Media Module** - Sistema Avanzato Gestione File Multimediali
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -430,8 +387,6 @@ ffmpeg -codecs
 **🌐 Translation Standards**: File traduzione certificati ✅
 **🚀 Performance**: 95/100 score
 **🔧 S3Test Corrections**: Completate ✅
->>>>>>> 4b6b99016 (first commit)
-=======
 
 
 ## Standard Rules & Workflow
@@ -446,4 +401,3 @@ ffmpeg -codecs
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
->>>>>>> dev

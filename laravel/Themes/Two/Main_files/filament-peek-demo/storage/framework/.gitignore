@@ -7,7 +7,4 @@ routes.php
 routes.scanned.php
 schedule-*
 services.json
-<<<<<<< HEAD
-=======
 _docs/
->>>>>>> dev

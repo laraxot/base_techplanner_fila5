@@ -43,11 +43,7 @@ Sistema di analisi e monitoraggio degli utenti, inclusi pattern di utilizzo, met
 
 ### Pending
 - Real-time monitoring
-<<<<<<< HEAD
-- Predictive analytics
-=======
 - <nome progetto>ive analytics
->>>>>>> dev
 - Custom metrics
 - Export system
 

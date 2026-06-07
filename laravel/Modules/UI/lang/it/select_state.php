@@ -10,14 +10,7 @@ return [
             'help' => 'Stato attuale della selezione',
             'description' => 'Stato selezionabile',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'message' => [
             'label' => 'Messaggio',
@@ -25,10 +18,6 @@ return [
             'help' => 'Messaggio informativo per la selezione',
             'description' => 'Testo del messaggio',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -54,11 +43,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Select State',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
 ];

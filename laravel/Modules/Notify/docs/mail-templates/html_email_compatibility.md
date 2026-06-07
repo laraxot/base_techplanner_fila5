@@ -2,11 +2,7 @@
 
 ## Introduzione
 
-<<<<<<< HEAD
-Questo documento fornisce linee guida dettagliate per garantire la massima compatibilità dei template email utilizzati nel modulo Notify di SaluteOra con i diversi client email.
-=======
 Questo documento fornisce linee guida dettagliate per garantire la massima compatibilità dei template email utilizzati nel modulo Notify di Quaeris con i diversi client email.
->>>>>>> dev
 
 ## Compatibilità Client Email
 
@@ -132,17 +128,9 @@ I template nella directory `mail-layouts` seguono queste linee guida di compatib
 
 ## Riferimenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Guida ai Layout Email](../mail_layouts_guide.md)
-- [Integrazione MailPace](./mailpace_templates_integration.md)
-=======
 - [Guida ai Layout Email](../MAIL_LAYOUTS_GUIDE.md)
 - [Integrazione MailPace](./MAILPACE_TEMPLATES_INTEGRATION.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Guida ai Layout Email](../MAIL_LAYOUTS_GUIDE.md)
 - [Integrazione MailPace](./MAILPACE_TEMPLATES_INTEGRATION.md)
->>>>>>> dev
 - [Campaign Monitor Guide](https://www.campaignmonitor.com/css/)
 - [Email Client Market Share](https://emailclientmarketshare.com/)

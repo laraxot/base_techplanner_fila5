@@ -13,10 +13,6 @@ return [
         ],
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'file' => [
             'label' => 'Datei',
             'tooltip' => '',
@@ -96,42 +92,12 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        'file' => 'Datei',
-        'file_hint' => 'Einen Anhang hochladen',
-        'name' => [
-            'label' => 'Name',
-        ],
-        'guard_name' => 'Guard',
-        'collection_name' => [
-            'label' => 'Sammlung',
-        ],
-        'filename' => 'Dateiname',
-        'mime_type' => 'Typ',
-        'human_readable_size' => [
-            'label' => 'Größe',
-        ],
-        'permissions' => 'Berechtigungen',
-        'updated_at' => 'Aktualisiert am',
-        'first_name' => 'Vorname',
-        'last_name' => 'Nachname',
-        'select_all' => [
-            'name' => 'Alle auswählen',
-            'message' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'creator' => [
             'name' => 'Ersteller',
             'full_name' => [
                 'label' => 'Ersteller',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -148,15 +114,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'uploaded_at' => 'Aktualisiert am',
-        'created_at' => [
-            'label' => 'Hochgeladen am',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -173,14 +130,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

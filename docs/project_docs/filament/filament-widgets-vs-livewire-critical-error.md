@@ -216,10 +216,4 @@ public function getFormSchema(): array
 **IMPATTO: ALTO**  
 **EFFORT: BASSO**  
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Agosto 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

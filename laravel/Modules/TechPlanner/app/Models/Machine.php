@@ -42,14 +42,7 @@ use Illuminate\Support\Carbon;
  * @property-read Profile|null $updater
  * @property-read Collection<int, DeviceVerification> $verifications
  * @property-read int|null $verifications_count
-<<<<<<< HEAD
-<<<<<<< HEAD
  *
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
- *
->>>>>>> dev
  * @method static Builder<static>|Machine newModelQuery()
  * @method static Builder<static>|Machine newQuery()
  * @method static Builder<static>|Machine query()
@@ -77,19 +70,9 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|Machine whereUpdatedAt($value)
  * @method static Builder<static>|Machine whereUpdatedBy($value)
  * @method static Builder<static>|Machine whereWarrantyExpiration($value)
-<<<<<<< HEAD
-<<<<<<< HEAD
  *
  * @property-read Profile|null $deleter
  *
-=======
- * @property-read Profile|null $deleter
->>>>>>> 4b6b99016 (first commit)
-=======
- *
- * @property-read Profile|null $deleter
- *
->>>>>>> dev
  * @mixin \Eloquent
  */
 class Machine extends Device

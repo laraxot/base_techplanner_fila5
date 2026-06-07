@@ -209,11 +209,7 @@ use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Modules\Activity\Models\Activity;
 
-<<<<<<< HEAD
-class SchedeEmailStatsWidget extends BaseWidget
-=======
 class SchedaEmailStatsWidget extends BaseWidget
->>>>>>> dev
 {
     protected function getStats(): array
     {
@@ -360,21 +356,12 @@ public function it_logs_activity_when_sending_email(): void
 
 ## 🔗 Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Ptv - Analisi Filosofica](../../../ptv/docs/activity-log-email-tracking-philosophical-analysis.md)
-- [Ptv - Implementation Guide](../../../ptv/docs/activity-log-email-tracking-implementation.md)
-- [Activity - README](../../readme.md)
-=======
 - [Ptv - Analisi Filosofica](../../../Ptv/docs/activity-log-email-tracking-philosophical-analysis.md)
 - [Ptv - Implementation Guide](../../../Ptv/docs/activity-log-email-tracking-implementation.md)
 - [Activity - README](../../README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Ptv - Analisi Filosofica](../../../ptv/docs/activity-log-email-tracking-philosophical-analysis.md)
 - [Ptv - Implementation Guide](../../../ptv/docs/activity-log-email-tracking-implementation.md)
 - [Activity - README](../../readme.md)
->>>>>>> dev
 - [Activity - LogActivityAction](../../app/Actions/LogActivityAction.php)
 
 ---

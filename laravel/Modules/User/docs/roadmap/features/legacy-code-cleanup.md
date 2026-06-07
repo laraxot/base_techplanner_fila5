@@ -56,11 +56,7 @@ Clean up and modernize the User module codebase by removing legacy code and upda
    - Run full test suite
    - Performance testing
 ## Links
-<<<<<<< HEAD
-- [Back to Roadmap](../../docs/roadmap.md)
-=======
 - [Back to Roadmap](../../../docs/roadmap.md)
->>>>>>> dev
 - [Back to Roadmap](../../project_docs/roadmap.md)
 - Related: [Documentation Enhancement](./documentation-enhancement.md)
 - Related: [PHPStan Level 7 Compliance](./phpstan-level7-compliance.md)

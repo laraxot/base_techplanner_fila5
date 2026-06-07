@@ -25,10 +25,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -110,40 +106,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'uuid' => [
-            'label' => 'UUID',
-        ],
-        'connection' => [
-            'label' => 'Connessione',
-        ],
-        'queue' => [
-            'label' => 'Coda',
-        ],
-        'payload' => [
-            'label' => 'Payload',
-        ],
-        'exception' => [
-            'label' => 'Eccezione',
-        ],
-        'failed_at' => [
-            'label' => 'Fallito il',
-        ],
-        'attempts' => 'Tentativi',
-        'max_attempts' => 'Tentativi Massimi',
-        'status' => 'Stato',
-        'created_at' => 'Creato il',
-        'updated_at' => 'Aggiornato il',
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -259,12 +221,5 @@ return [
         'icon' => 'job-failed-job',
     ],
     'label' => 'failed job',
-<<<<<<< HEAD
-<<<<<<< HEAD
     'plural_label' => 'Failed Job (Plurale)',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'plural_label' => 'Failed Job (Plurale)',
->>>>>>> dev
 ];

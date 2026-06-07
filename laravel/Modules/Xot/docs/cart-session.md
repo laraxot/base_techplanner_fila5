@@ -1,6 +1,4 @@
 
-<<<<<<< HEAD
-=======
 https://github.com/seikan/Cart/blob/master/class.Cart.php
 
 https://www.codexworld.com/simple-php-shopping-cart-using-sessions/
@@ -72,35 +70,3 @@ https://github.com/Tefoh/Cart
 
 
 https://github.com/Codexshaper/laravel-woocommerce
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> dev

@@ -10,10 +10,6 @@ return [
     'fields' => [
         'location' => [
             'label' => 'location',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -30,11 +26,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Dotswan Map',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
 ];

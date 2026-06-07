@@ -1,14 +1,8 @@
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 15 Ottobre 2025
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data**: 15 Ottobre 2025
->>>>>>> dev
 **Versione**: 2.0 ULTIMATE
 **Confidenza**: 99.9% (Dati Reali dal Codice)
 

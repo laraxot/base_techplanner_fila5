@@ -93,18 +93,7 @@ public static function init(): self
 - Mantenere solo commenti che aggiungono valore reale
 
 ## Collegamenti
-<<<<<<< HEAD
-- [../../docs/clean-code-no-obvious-comments.md](../../../docs/clean-code-no-obvious-comments.md)
-- [wizard-steps.md](wizard-steps.md)
-- [wizard-schema-separation.md](wizard-schema-separation.md)
-
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-08-04*
->>>>>>> 4b6b99016 (first commit)
-=======
 - [../../../docs/clean-code-no-obvious-comments.md](../../../../docs/clean-code-no-obvious-comments.md)
 - [wizard-steps.md](wizard-steps.md)
 - [wizard-schema-separation.md](wizard-schema-separation.md)
-
->>>>>>> dev

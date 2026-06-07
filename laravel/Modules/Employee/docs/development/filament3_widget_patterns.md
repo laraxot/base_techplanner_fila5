@@ -309,10 +309,4 @@ class TimeClockWidget extends XotBaseWidget
 - [Widget Documentation](https://filamentphp.com/docs/3.x/widgets/custom)
 - [UI Components Usage](.cursor/rules/ui-components-usage.mdc)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

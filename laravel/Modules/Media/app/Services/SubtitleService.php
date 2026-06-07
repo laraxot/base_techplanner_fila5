@@ -158,13 +158,8 @@ class SubtitleService
                     'item_i' => $item_i,
                     'start' => $start,
                     'end' => $end,
-<<<<<<< HEAD
-                    'time' => secondsToHms($start).','.secondsToHms($end),
-                    'text' => $item->__toString(),
-=======
                     'time' => $this->secondsToHms($start).','.$this->secondsToHms($end),
                     'text' => (string) $item,
->>>>>>> dev
                 ];
                 $data[] = $tmp;
                 $item_i++;
@@ -176,8 +171,6 @@ class SubtitleService
         return $data;
     }
 
-<<<<<<< HEAD
-=======
     private function secondsToHms(int|float $seconds): string
     {
         $totalMs = (int) round($seconds * 1000);
@@ -189,7 +182,6 @@ class SubtitleService
         return sprintf('%02d:%02d:%02d,%03d', $hours, $minutes, $secs, $ms);
     }
 
->>>>>>> dev
     /**
      * Undocumented function.
      */

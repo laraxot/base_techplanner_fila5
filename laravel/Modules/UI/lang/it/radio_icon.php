@@ -6,10 +6,6 @@ return [
     'fields' => [
         'newstate' => [
             'label' => 'newstate',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -37,11 +33,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Radio Icon',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
 ];

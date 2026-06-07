@@ -8,10 +8,6 @@ return [
     'sent' => 'E-mail per il reset della password inviata!',
     'token' => 'Questo token per il reset della password non è valido.',
     'user' => 'Non esiste alcun utente associato a questo indirizzo e-mail.',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Passwords',
     'plural_label' => 'Passwords (Plurale)',
     'navigation' => [
@@ -56,9 +52,4 @@ return [
             'label' => 'Elimina Passwords',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

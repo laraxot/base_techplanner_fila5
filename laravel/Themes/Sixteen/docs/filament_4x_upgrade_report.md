@@ -69,11 +69,7 @@
 ### Comandi Aggiornati
 ```bash
 # Build assets
-<<<<<<< HEAD
-cd /var/www/_bases/base_fixcity_fila4_mono/laravel/Themes/Sixteen
-=======
 cd /var/www/_bases/base_fixcity_fila5_mono/laravel/Themes/Sixteen
->>>>>>> dev
 npm run build
 
 # Deploy assets
@@ -220,11 +216,4 @@ ls -lh public/assets/  # Verify assets
 - [x] No breaking changes required
 - [x] Documentation updated
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-*Ultimo aggiornamento: 2025-09-30*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 *Tema Sixteen pienamente compatibile con Filament 4.0.20*

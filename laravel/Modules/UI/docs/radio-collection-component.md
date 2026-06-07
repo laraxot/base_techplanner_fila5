@@ -93,15 +93,8 @@ If radio buttons are not selecting properly, check:
 
 ## Changelog
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### [DATE]
-=======
 ### 2025-06-27
->>>>>>> 4b6b99016 (first commit)
-=======
 ### [DATE]
->>>>>>> dev
 
 - Initial documentation
 - Added troubleshooting section for selection issues
@@ -200,15 +193,8 @@ If radio buttons are not selecting properly, check:
 
 ## Changelog
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### [DATE]
-=======
 ### 2025-06-27
->>>>>>> 4b6b99016 (first commit)
-=======
 ### [DATE]
->>>>>>> dev
 
 - Initial documentation
 - Added troubleshooting section for selection issues

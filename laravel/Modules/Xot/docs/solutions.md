@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 # Soluzioni Tecniche - Modulo Xot
 
 ## Problemi Identificati e Soluzioni
@@ -262,7 +258,3 @@ class CacheTest extends TestCase {
 5. Mantenere compatibilità con le versioni precedenti
 
 ---
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev

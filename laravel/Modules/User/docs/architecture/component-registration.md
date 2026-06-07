@@ -1,18 +1,10 @@
 # Registrazione dei Componenti Blade nel Modulo User
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.
-<<<<<<< HEAD
-<<<<<<< HEAD
-> La documentazione principale e completa si trova nel [modulo UI](../../../ui/docs/architecture/component-registration.md).
-> La documentazione principale e completa si trova nel [modulo UI](../../../ui/project_docs/architecture/component-registration.md).
-=======
 > La documentazione principale e completa si trova nel [modulo UI](../../../UI/docs/architecture/component-registration.md).
 > La documentazione principale e completa si trova nel [modulo UI](../../../UI/project_docs/architecture/component-registration.md).
->>>>>>> 4b6b99016 (first commit)
-=======
 > La documentazione principale e completa si trova nel [modulo UI](../../../ui/docs/architecture/component-registration.md).
 > La documentazione principale e completa si trova nel [modulo UI](../../../ui/project_docs/architecture/component-registration.md).
->>>>>>> dev
 ## Implementazione Corretta nel Modulo User
 Nel modulo User, tutti i componenti Blade devono seguire la struttura standard:
 ```
@@ -31,22 +23,13 @@ I componenti possono essere utilizzati nei template Blade con il prefisso del na
     <!-- Contenuto del dropdown -->
 </x-user::profile.dropdown>
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Documentazione principale sulla registrazione dei componenti](../ui/docs/architecture/component-registration.md)
 - [Implementazione di UserServiceProvider](../User/app/Providers/UserServiceProvider.php)
 - [Documentazione principale sulla registrazione dei componenti](../ui/docs/architecture/component-registration.md)
 - [Implementazione di UserServiceProvider](Modules/User/app/Providers/UserServiceProvider.php)
 - [Documentazione principale sulla registrazione dei componenti](modules/ui/project_docs/architecture/component-registration.md)
-<<<<<<< HEAD
-=======
 - [Documentazione principale sulla registrazione dei componenti](../UI/docs/architecture/component-registration.md)
 - [Implementazione di UserServiceProvider](../User/app/Providers/UserServiceProvider.php)
 - [Documentazione principale sulla registrazione dei componenti](../UI/docs/architecture/component-registration.md)
 - [Implementazione di UserServiceProvider](Modules/User/app/Providers/UserServiceProvider.php)
 - [Documentazione principale sulla registrazione dei componenti](Modules/UI/project_docs/architecture/component-registration.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

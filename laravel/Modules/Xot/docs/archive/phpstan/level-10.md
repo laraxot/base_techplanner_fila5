@@ -516,10 +516,6 @@
 > TODO: descrivere soluzioni architetturali e funzionali
 
 ## Collegamenti tra versioni di level_10.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [level_10.md](laravel/modules/gdpr/project_docs/phpstan/level_10.md)
 * [level_10.md](laravel/modules/notify/project_docs/phpstan/level_10.md)
 * [level_10.md](laravel/modules/xot/project_docs/phpstan/level_10.md)
@@ -530,8 +526,6 @@
 * [level_10.md](laravel/modules/media/project_docs/phpstan/level_10.md)
 * [level_10.md](laravel/modules/tenant/project_docs/phpstan/level_10.md)
 * [level_10.md](laravel/modules/activity/project_docs/phpstan/level_10.md)
-<<<<<<< HEAD
-=======
 * [level_10.md](laravel/Modules/Gdpr/project_docs/phpstan/level_10.md)
 * [level_10.md](laravel/Modules/Notify/project_docs/phpstan/level_10.md)
 * [level_10.md](laravel/Modules/Xot/project_docs/phpstan/level_10.md)
@@ -542,9 +536,6 @@
 * [level_10.md](laravel/Modules/Media/project_docs/phpstan/level_10.md)
 * [level_10.md](laravel/Modules/Tenant/project_docs/phpstan/level_10.md)
 * [level_10.md](laravel/Modules/Activity/project_docs/phpstan/level_10.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 # PHPStan Report - Livello 10
 
 ## Errori rilevati
@@ -1063,10 +1054,6 @@
 > TODO: descrivere soluzioni architetturali e funzionali
 
 ## Collegamenti tra versioni di level_10.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [level_10.md](laravel/modules/gdpr/docs/phpstan/level_10.md)
 * [level_10.md](laravel/modules/notify/docs/phpstan/level_10.md)
 * [level_10.md](laravel/modules/xot/docs/phpstan/level_10.md)
@@ -1077,8 +1064,6 @@
 * [level_10.md](laravel/modules/media/docs/phpstan/level_10.md)
 * [level_10.md](laravel/modules/tenant/docs/phpstan/level_10.md)
 * [level_10.md](laravel/modules/activity/docs/phpstan/level_10.md)
-<<<<<<< HEAD
-=======
 * [level_10.md](laravel/Modules/Gdpr/docs/phpstan/level_10.md)
 * [level_10.md](laravel/Modules/Notify/docs/phpstan/level_10.md)
 * [level_10.md](laravel/Modules/Xot/docs/phpstan/level_10.md)
@@ -1089,6 +1074,3 @@
 * [level_10.md](laravel/Modules/Media/docs/phpstan/level_10.md)
 * [level_10.md](laravel/Modules/Tenant/docs/phpstan/level_10.md)
 * [level_10.md](laravel/Modules/Activity/docs/phpstan/level_10.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

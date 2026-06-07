@@ -52,10 +52,6 @@ return [
         'event_updated' => 'Evento aggiornato con successo',
         'event_deleted' => 'Evento eliminato con successo',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Calendar',
     'plural_label' => 'Calendar (Plurale)',
     'navigation' => [
@@ -100,9 +96,4 @@ return [
             'label' => 'Elimina Calendar',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

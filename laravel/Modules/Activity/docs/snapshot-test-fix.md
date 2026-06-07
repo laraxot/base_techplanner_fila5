@@ -144,20 +144,11 @@ Questo fix applica lo STESSO pattern di:
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 **Data:** [DATE]
 **Stato:** Pronto per implementazione
 **Pattern:** Reflection + Documentation Verification ✅
 **Riferimenti:** `stored-event-test-fix.md`, `test-failure-patterns-[DATE].md`
-<<<<<<< HEAD
-=======
 **Data:** 2026-01-10
 **Stato:** Pronto per implementazione
 **Pattern:** Reflection + Documentation Verification ✅
 **Riferimenti:** `stored-event-test-fix.md`, `test-failure-patterns-2026-01-10.md`
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

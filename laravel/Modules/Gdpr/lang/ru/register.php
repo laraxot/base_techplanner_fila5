@@ -34,11 +34,7 @@ return [
             'cta' => 'Наймитесь ведущими компаниями Laravel',
         ],
     ],
-<<<<<<< HEAD
-    'social_proof' => 'Присоединяйтесь к сообществу LaravelPizza',
-=======
     'social_proof' => 'Присоединяйтесь к сообществу <nome progetto>',
->>>>>>> dev
     'fields' => [
         'first_name' => [
             'label' => 'Имя',
@@ -112,11 +108,7 @@ return [
     'login' => 'Войти',
     'required_consent_missing' => 'Вы должны принять все обязательные согласия для продолжения.',
     'success' => 'Регистрация успешно завершена! Ваш аккаунт создан в соответствии с GDPR.',
-<<<<<<< HEAD
-    'success_message' => 'Добро пожаловать в LaravelPizza Meetups! Ваша регистрация завершена и все ваши согласия правильно записаны.',
-=======
     'success_message' => 'Добро пожаловать в <nome progetto> Meetups! Ваша регистрация завершена и все ваши согласия правильно записаны.',
->>>>>>> dev
     'error' => 'Ошибка регистрации',
     'error_message' => 'Произошла ошибка при регистрации. Пожалуйста, попробуйте позже. Если проблема продолжается, обратитесь в нашу поддержку.',
     'clickbait' => [
@@ -132,22 +124,14 @@ return [
         'by_registering' => 'Регистрируясь, вы принимаете наши Условия и Политику конфиденциальности',
     ],
     'seo' => [
-<<<<<<< HEAD
-        'description' => 'Присоединяйтесь к сообществу LaravelPizza для эксклюзивных митапов, премиум-уроков и нетворкинга. Бесплатный доступ к семинарам и общественным мероприятиям.',
-=======
         'description' => 'Присоединяйтесь к сообществу <nome progetto> для эксклюзивных митапов, премиум-уроков и нетворкинга. Бесплатный доступ к семинарам и общественным мероприятиям.',
->>>>>>> dev
         'laravel_meetup' => 'Laravel митап',
         'laravel_community' => 'Laravel сообщество',
         'php_developer_community' => 'Сообщество PHP разработчиков',
         'laravel_tutorials' => 'Laravel уроки',
         'laravel_workshops' => 'Laravel мастер-классы',
         'laravel_networking' => 'Laravel нетворкинг',
-<<<<<<< HEAD
-        'laravelpizza' => 'LaravelPizza',
-=======
         '<nome progetto>' => '<nome progetto>',
->>>>>>> dev
     ],
     'navigation' => [
         'label' => 'Missing Navigation Label',

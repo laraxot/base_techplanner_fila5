@@ -1,10 +1,6 @@
 # Implementazione del Selettore di Lingua e Dropdown Utente nell'Header
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Documentazione centrale](/project_docs/readme.md)
 - [Collegamenti documentazione](/project_docs/collegamenti-documentazione.md)
 - [Documentazione sezioni](/project_docs/sections.md)
@@ -13,8 +9,6 @@
 - [Implementazione Logout](/laravel/modules/user/project_docs/logout_blade_implementation.md)
 - [Analisi Errore Logout](/laravel/modules/user/project_docs/logout_blade_error_analysis.md)
 - [Errore Eventi Logout](/laravel/modules/user/project_docs/logout_event_error.md)
-<<<<<<< HEAD
-=======
 - [Documentazione centrale](/project_docs/README.md)
 - [Collegamenti documentazione](/project_docs/collegamenti-documentazione.md)
 - [Documentazione sezioni](/project_docs/sections.md)
@@ -23,9 +17,6 @@
 - [Implementazione Logout](/laravel/Modules/User/project_docs/LOGOUT_BLADE_IMPLEMENTATION.md)
 - [Analisi Errore Logout](/laravel/Modules/User/project_docs/LOGOUT_BLADE_ERROR_ANALYSIS.md)
 - [Errore Eventi Logout](/laravel/Modules/User/project_docs/LOGOUT_EVENT_ERROR.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Panoramica
 
@@ -271,15 +262,8 @@ Dove:
 - `flags` è la sottodirectory all'interno della cartella `svg`
 - `it`, `gb`, `fr` sono i codici ISO dei paesi
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Per maggiori dettagli, consultare la [documentazione sui componenti SVG delle bandiere](/laravel/modules/ui/project_docs/flags_components.md).
-=======
 Per maggiori dettagli, consultare la [documentazione sui componenti SVG delle bandiere](/laravel/Modules/UI/project_docs/FLAGS_COMPONENTS.md).
->>>>>>> 4b6b99016 (first commit)
-=======
 Per maggiori dettagli, consultare la [documentazione sui componenti SVG delle bandiere](/laravel/modules/ui/project_docs/flags_components.md).
->>>>>>> dev
 
 ## Considerazioni Tecniche
 
@@ -288,15 +272,8 @@ Per maggiori dettagli, consultare la [documentazione sui componenti SVG delle ba
 Il componente Dropdown Utente deve essere compatibile con il sistema di gestione della sessione di Laravel:
 
 1. Il link di logout deve inviare una richiesta GET al percorso `/logout`
-<<<<<<< HEAD
-<<<<<<< HEAD
-2. Il file `logout.blade.php` deve gestire correttamente gli eventi di logout come descritto in [LOGOUT_EVENT_ERROR.md](/laravel/modules/user/project_docs/logout_event_error.md)
-=======
 2. Il file `logout.blade.php` deve gestire correttamente gli eventi di logout come descritto in [LOGOUT_EVENT_ERROR.md](/laravel/Modules/User/project_docs/LOGOUT_EVENT_ERROR.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 2. Il file `logout.blade.php` deve gestire correttamente gli eventi di logout come descritto in [LOGOUT_EVENT_ERROR.md](/laravel/modules/user/project_docs/logout_event_error.md)
->>>>>>> dev
 
 ### Sicurezza
 
@@ -316,12 +293,5 @@ L'implementazione del selettore di lingua e del dropdown utente nell'header migl
 Questa implementazione segue le convenzioni standard per la gestione dei contenuti statici e l'integrazione con i sistemi di autenticazione e localizzazione.
 Questa implementazione segue le convenzioni di <main module> per la gestione dei contenuti statici e l'integrazione con i sistemi di autenticazione e localizzazione.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Per i dettagli specifici sull'implementazione nel tema One, consultare la [documentazione del tema](/laravel/themes/one/project_docs/sections/header_language_user_dropdown.md).
-=======
 Per i dettagli specifici sull'implementazione nel tema One, consultare la [documentazione del tema](/laravel/Themes/One/project_docs/sections/HEADER_LANGUAGE_USER_DROPDOWN.md).
->>>>>>> 4b6b99016 (first commit)
-=======
 Per i dettagli specifici sull'implementazione nel tema One, consultare la [documentazione del tema](/laravel/themes/one/project_docs/sections/header_language_user_dropdown.md).
->>>>>>> dev

@@ -188,15 +188,6 @@
 - Rendere le azioni ovvie e intuitive
 - Testare l'usabilità con utenti reali
 
-<<<<<<< HEAD
-## Best Practices per il Web Design
-
-### Accessibilità
-- Garantire il contrasto sufficiente per la leggibilità
-- Utilizzare dimensioni dei font adeguate
-- Fornire alternative testuali per le immagini
-- Supportare la navigazione da tastiera
-=======
 ## 8. Kinetisches Design (Design in Movimento)
 
 ### Principio
@@ -237,7 +228,6 @@
 - Garantire il contrasto sufficiente (AAA preferito, AA minimo).
 - Navigazione completa da tastiera (Tab-index e focus states chiari).
 - Uso di `aria-label` e HTML semantico (`role="article"`, `<nav>`, `<main>`).
->>>>>>> dev
 
 ### Responsive Design
 - Progettare per tutti i dispositivi

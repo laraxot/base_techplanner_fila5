@@ -13,30 +13,16 @@ use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
-<<<<<<< HEAD
-use Symfony\Component\Console\Input\InputOption;
-=======
->>>>>>> dev
 
 class SuperAdminCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
-     *
-     * @var string
-=======
->>>>>>> dev
      */
     protected $name = 'user:super-admin';
 
     /**
      * The console command description.
-<<<<<<< HEAD
-     *
-     * @var string
-=======
->>>>>>> dev
      */
     protected $description = 'Assign super-admin to user';
 
@@ -69,10 +55,6 @@ class SuperAdminCommand extends Command
         $this->info('super-admin assigned to '.$email);
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     /*
      * Get the console command options.
      */
@@ -82,18 +64,4 @@ class SuperAdminCommand extends Command
     //        ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
-<<<<<<< HEAD
-=======
-    /**
-     * Get the console command options.
-     */
-    protected function getOptions(): array
-    {
-        return [
-            ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
-        ];
-    }
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 }

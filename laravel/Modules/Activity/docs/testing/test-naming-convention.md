@@ -46,11 +46,7 @@ done
 
 ## 📚 Riferimenti
 
-<<<<<<< HEAD
-- [Regola Critica Progetto](../../../../docs/regole-critiche/test-naming-pascalcase.md)
-=======
 - [Regola Critica Progetto](../../../../../docs/regole-critiche/test-naming-pascalcase.md)
->>>>>>> dev
 - [PHPStan Best Practices](../phpstan/best-practices.md)
 
 ---

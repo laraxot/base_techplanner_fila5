@@ -9,14 +9,6 @@ use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
@@ -32,24 +24,10 @@ use Override;
 use Webmozart\Assert\Assert;
 
 /**
-<<<<<<< HEAD
- * @property \Filament\Schemas\Schema $emailForm
- */
-<<<<<<< HEAD
-class TestSmtpPage extends XotBasePage
-{
-=======
-class TestSmtpPage extends XotBasePage implements HasForms
-{
-    use InteractsWithForms;
-
->>>>>>> 4b6b99016 (first commit)
-=======
  * @property Schema $emailForm
  */
 class TestSmtpPage extends XotBasePage
 {
->>>>>>> dev
     public ?array $emailData = [];
 
     public ?string $error_message = null;

@@ -127,15 +127,8 @@ class GeoDataService
     public function getCap(string $provinceCode, string $cityCode): ?string
     {
         $cities = $this->getCities($provinceCode);
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         $city = collect($cities)
             ->firstWhere('id', $cityCode);
 
@@ -174,15 +167,8 @@ class LocationForm
                         ->selectablePlaceholder(false),
 
                     'province' => Select::make('province')
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        ->options(fn (Get $get) => 
-=======
                         ->options(fn (Get $get) =>
->>>>>>> 4b6b99016 (first commit)
-=======
                         ->options(fn (Get $get) => 
->>>>>>> dev
                             $geoService->getProvinces($get('region'))
                         )
                         ->searchable()
@@ -193,15 +179,8 @@ class LocationForm
                         ->selectablePlaceholder(false),
 
                     'city' => Select::make('city')
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        ->options(fn (Get $get) => 
-=======
                         ->options(fn (Get $get) =>
->>>>>>> 4b6b99016 (first commit)
-=======
                         ->options(fn (Get $get) => 
->>>>>>> dev
                             $geoService->getCities($get('province'))
                         )
                         ->searchable()
@@ -212,15 +191,8 @@ class LocationForm
                         ->selectablePlaceholder(false),
 
                     'cap' => Select::make('cap')
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        ->options(fn (Get $get) => 
-=======
                         ->options(fn (Get $get) =>
->>>>>>> 4b6b99016 (first commit)
-=======
                         ->options(fn (Get $get) => 
->>>>>>> dev
                             collect($geoService->getCities($get('province')))
                                 ->firstWhere('id', $get('city'))['cap']
                         )
@@ -298,18 +270,9 @@ class GeoDataValidator
    - API esterna
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Squire](../../geo/project_docs/squire-integration.md)
-- [Best Practices Filament](../../../project_docs/filament-best-practices.md)
-- [Clean Code](../../../project_docs/clean-code.md) 
-=======
 - [Documentazione Squire](../../Geo/project_docs/squire-integration.md)
 - [Best Practices Filament](../../../project_docs/filament-best-practices.md)
 - [Clean Code](../../../project_docs/clean-code.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione Squire](../../geo/project_docs/squire-integration.md)
 - [Best Practices Filament](../../../../docs/project/filament-best-practices.md)
 - [Clean Code](../../../../docs/project/clean-code.md) 
->>>>>>> dev

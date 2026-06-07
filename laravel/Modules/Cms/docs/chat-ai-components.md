@@ -10,10 +10,6 @@ Questo documento descrive le componenti UI ispirate al template "ChatAI" di [Tai
 
 ## Componenti proposti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - **ChatWindowComponent**  
   Contenitore principale della chat; gestisce la visibilità, il layout e lo stato di apertura/chiusura.
 
@@ -33,8 +29,6 @@ Questo documento descrive le componenti UI ispirate al template "ChatAI" di [Tai
   Pannello laterale per liste di conversazioni salvate, contatti o opzioni avanzate.
 
 - **ChatLauncherComponent**  
-<<<<<<< HEAD
-=======
 - **ChatWindowComponent**
   Contenitore principale della chat; gestisce la visibilità, il layout e lo stato di apertura/chiusura.
 
@@ -54,9 +48,6 @@ Questo documento descrive le componenti UI ispirate al template "ChatAI" di [Tai
   Pannello laterale per liste di conversazioni salvate, contatti o opzioni avanzate.
 
 - **ChatLauncherComponent**
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
   Pulsante flottante (FAB) per aprire o chiudere la finestra di chat.
 
 ## Motivazioni per la documentazione
@@ -68,12 +59,6 @@ Questo documento descrive le componenti UI ispirate al template "ChatAI" di [Tai
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Template Tailkit ChatAI](https://tailkit.com/templates#chatai)  
-- [Blocchi di Contenuto](blocks.md)  
-- [Documentazione Root](../../../project_docs/readme.md)
-=======
 - [Template Tailkit ChatAI](https://tailkit.com/templates#chatai)
 - [Blocchi di Contenuto](blocks.md)
 - [Documentazione Root](../../../project_docs/README.md)
@@ -122,9 +107,6 @@ Questo documento descrive le componenti UI ispirate al template "ChatAI" di [Tai
 - [Template Tailkit ChatAI](https://tailkit.com/templates#chatai)
 - [Blocchi di Contenuto](blocks.md)
 - [Documentazione Root](../../../docs/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Template Tailkit ChatAI](https://tailkit.com/templates#chatai)  
 - [Blocchi di Contenuto](blocks.md)  
 - [Documentazione Root](../../../../docs/project/readme.md)
->>>>>>> dev

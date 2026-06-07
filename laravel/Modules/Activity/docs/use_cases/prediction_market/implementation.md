@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-# Implementazione del Prediction Market
-
-Questa guida fornisce i passaggi per implementare un prediction market nel modulo `Activity` utilizzando l'Event Sourcing.
-=======
 # Implementazione del <nome progetto>ion Market
 
 Questa guida fornisce i passaggi per implementare un <nome progetto>ion market nel modulo `Activity` utilizzando l'Event Sourcing.
->>>>>>> dev
 
 ## Passaggi Principali
 
@@ -19,11 +13,7 @@ Questa guida fornisce i passaggi per implementare un <nome progetto>ion market n
    - Assicurarsi che ogni evento contenga i dati necessari per aggiornare lo stato.
 
 3. **Implementazione della Radice Aggregate**
-<<<<<<< HEAD
-   - Creare `PredictionMarketAggregateRoot` per gestire la logica di business.
-=======
    - Creare `<nome progetto>ionMarketAggregateRoot` per gestire la logica di business.
->>>>>>> dev
    - Garantire che la radice aggregate impedisca operazioni non valide (es. scommesse su mercati chiusi).
 
 4. **Sviluppo dei Proiettori**
@@ -68,26 +58,15 @@ Analizzando piattaforme di successo, possiamo integrare diverse best practices n
 ```php
 namespace Modules\Activity\Http\Controllers;
 
-<<<<<<< HEAD
-use Modules\Activity\Aggregates\PredictionMarketAggregateRoot;
-use Illuminate\Http\Request;
-
-class PredictionMarketController
-=======
 use Modules\Activity\Aggregates\<nome progetto>ionMarketAggregateRoot;
 use Illuminate\Http\Request;
 
 class <nome progetto>ionMarketController
->>>>>>> dev
 {
     public function createMarket(Request $request)
     {
         $marketId = uniqid();
-<<<<<<< HEAD
-        $aggregate = PredictionMarketAggregateRoot::createMarket(
-=======
         $aggregate = <nome progetto>ionMarketAggregateRoot::createMarket(
->>>>>>> dev
             $marketId,
             $request->input('title'),
             $request->input('description'),
@@ -99,11 +78,7 @@ class <nome progetto>ionMarketController
 
     public function placeBet(Request $request, $marketId)
     {
-<<<<<<< HEAD
-        $aggregate = PredictionMarketAggregateRoot::retrieve($marketId);
-=======
         $aggregate = <nome progetto>ionMarketAggregateRoot::retrieve($marketId);
->>>>>>> dev
         $aggregate->placeBet(
             auth()->user()->uuid,
             $request->input('option_id'),

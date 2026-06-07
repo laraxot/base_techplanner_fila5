@@ -42,8 +42,6 @@ use Spatie\LaravelData\Data;
  * @property string                                                          $color_hamburger
  * @property string                                                          $color_banner
  * @property string                                                          $favicon
-<<<<<<< HEAD
-=======
  * @property string                                                          $title
  * @property string                                                          $sitename
  * @property string                                                          $subtitle
@@ -224,7 +222,6 @@ use Spatie\LaravelData\Data;
  * @property string                                                          $color_hamburger
  * @property string                                                          $color_banner
  * @property string                                                          $favicon
->>>>>>> dev
  * @property array<string, array{key?: string, color: string, hex?: string}> $colors
  *
  * @method string getBrandLogoBase64() Get the brand logo as base64 data URI for inline embedding

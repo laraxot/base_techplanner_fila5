@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Risoluzione Merge Conflicts Massivi - [DATE]
-=======
 # Risoluzione Merge Conflicts Massivi - 2025-11-04
->>>>>>> 4b6b99016 (first commit)
-=======
 # Risoluzione Merge Conflicts Massivi - [DATE]
->>>>>>> dev
 
 ## 🔥 Problema Iniziale
 

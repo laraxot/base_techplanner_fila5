@@ -17,9 +17,5 @@ Ho aggiornato ulteriormente la documentazione per riflettere un cambiamento nell
 
 **Collegamenti correlati**:
 - [Documentazione DoctorResource](../modules/patient/docs/doctor-resource-update.md)
-<<<<<<< HEAD
-- [Documentazione principale](../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
-=======
 - [Documentazione principale](../../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
->>>>>>> dev
 - [Documentazione Doctor Model](../modules/patient/docs/doctor-model-update.md)

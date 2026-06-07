@@ -29,8 +29,6 @@ Note:
 - Configurazione Tailwind in `tailwind.config.js` con colori Bootstrap Italia
 - Classi custom minime solo per componenti complessi (mappa, rating)
 
-<<<<<<< HEAD
-=======
 ## Runtime produzione (`/it`)
 
 - View canonica: `laravel/Themes/Sixteen/resources/views/components/blocks/ticket/layout.blade.php`
@@ -39,5 +37,4 @@ Note:
 - Guscio Folio: `<main data-page="page-shell">` (no `ticket-list` sul tema)
 - Wiki: [theme-page-shell](../../docs/wiki/concepts/theme-page-shell.md), [theme-as-vestito](../../../../docs/wiki/concepts/theme-as-vestito-philosophy.md)
 
->>>>>>> dev
 

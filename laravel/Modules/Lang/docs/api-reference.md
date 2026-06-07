@@ -826,21 +826,12 @@ public function get(string $key, array $replace = [], ?string $locale = null): s
 ## 🔗 **Riferimenti e Collegamenti**
 
 ### **1. Documentazione**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README.md](readme.md) - Documentazione principale
-- [BEST_PRACTICES.md](best_practices.md) - Best practices
-- [TROUBLESHOOTING.md](troubleshooting.md) - Troubleshooting
-=======
 - [README.md](README.md) - Documentazione principale
 - [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices
 - [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Troubleshooting
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README.md](readme.md) - Documentazione principale
 - [BEST_PRACTICES.md](best_practices.md) - Best practices
 - [TROUBLESHOOTING.md](troubleshooting.md) - Troubleshooting
->>>>>>> dev
 - [config/lang.php](../config/lang.php) - Configurazione
 
 ### **2. Esempi**

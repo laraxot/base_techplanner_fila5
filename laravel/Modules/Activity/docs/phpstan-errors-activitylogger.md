@@ -108,11 +108,4 @@ return [
 - Il loop `foreach` garantisce il tipo corretto senza problemi con `stdClass`
 - L'annotazione PHPDoc completa aiuta PHPStan
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-01-27*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
-

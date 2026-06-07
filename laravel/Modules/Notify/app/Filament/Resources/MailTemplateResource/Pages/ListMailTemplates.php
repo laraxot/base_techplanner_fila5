@@ -17,23 +17,10 @@ class ListMailTemplates extends LangBaseListRecords
     public function getTableColumns(): array
     {
         return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'slug' => TextColumn::make('slug')->searchable()->sortable(),
             // TextColumn::make('mailable')->searchable()->sortable(),
             'subject' => TextColumn::make('subject')->searchable()->sortable(),
             'counter' => TextColumn::make('counter')->searchable()->sortable(),
-<<<<<<< HEAD
-=======
-            TextColumn::make('slug')->searchable()->sortable(),
-            // TextColumn::make('mailable')->searchable()->sortable(),
-            TextColumn::make('subject')->searchable()->sortable(),
-            TextColumn::make('counter')->searchable()->sortable(),
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ];
     }
 }

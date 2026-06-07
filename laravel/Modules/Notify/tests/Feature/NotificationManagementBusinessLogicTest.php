@@ -2,23 +2,12 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(\Modules\Notify\Tests\TestCase::class);
-=======
-namespace Modules\Notify\Tests\Feature;
-
-uses(TestCase::class);
->>>>>>> dev
 
 use Modules\Notify\Helpers\ConfigHelper;
 use Modules\Notify\Models\Contact;
 use Modules\Notify\Models\Notification;
 use Modules\Notify\Models\NotificationTemplate;
 use Modules\Notify\Models\NotificationType;
-<<<<<<< HEAD
-=======
-use Modules\Notify\Tests\TestCase;
->>>>>>> dev
 
 describe('Notification Management Business Logic', function () {
     it('can create notification with basic information', function () {

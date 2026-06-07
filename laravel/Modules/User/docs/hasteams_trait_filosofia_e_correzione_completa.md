@@ -256,15 +256,8 @@ Creare test per verificare:
 
 ### 3. **Documentazione Collegamenti**
 Aggiornare:
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [docs/USER_MODULE.md](../../../docs/user_module.md)
-=======
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [docs/USER_MODULE.md](../../../../docs/user_module.md)
->>>>>>> dev
 - [Modules/User/docs/traits.md](traits.md)
 - File .mdc per Cursor e Windsurf
 
@@ -282,23 +275,13 @@ Il trait `HasTeams` ora è:
 ## 🔗 **Collegamenti Bidirezionali**
 
 ### **📚 Documentazione Root**
-<<<<<<< HEAD
-- [docs/laraxot_conventions.md](../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
-<<<<<<< HEAD
-- [docs/USER_MODULE.md](../../../docs/user_module.md) - Documentazione generale modulo User
-- [docs/phpstan_fixes.md](../../../docs/phpstan_fixes.md) - Guide PHPStan
-- [docs/TRAIT_BEST_PRACTICES.md](../../../docs/trait_best_practices.md) - Best practices per trait
-=======
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md) - Documentazione generale modulo User
 - [docs/phpstan_fixes.md](../../../docs/phpstan_fixes.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../docs/TRAIT_BEST_PRACTICES.md) - Best practices per trait
->>>>>>> 4b6b99016 (first commit)
-=======
 - [docs/laraxot_conventions.md](../../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
 - [docs/USER_MODULE.md](../../../../docs/user_module.md) - Documentazione generale modulo User
 - [docs/phpstan_fixes.md](../../../../docs/phpstan_fixes.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../../docs/trait_best_practices.md) - Best practices per trait
->>>>>>> dev
 
 ### **📁 Documentazione Modulo User**
 - [traits.md](traits.md) - Documentazione completa trait modulo User

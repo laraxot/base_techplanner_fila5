@@ -1,14 +1,7 @@
 # Xot Module - Core Foundation
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Last Update**: [DATE]
-=======
 **Last Update**: 2025-12-05
->>>>>>> 4b6b99016 (first commit)
-=======
 **Last Update**: [DATE]
->>>>>>> dev
 **Status**: ✅ Production Ready
 **PHPStan Level**: 10
 **Maintainers**: Laraxot Team
@@ -641,15 +634,8 @@ Located in `bashscripts/`:
 
 ### Quality & Tools
 - [Code Quality Tools](./code-quality-tools.md) - PHPStan, Pint, PHPInsights
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Automation Scripts](./bashscripts/readme.md) - Available automation scripts
-=======
 - [Automation Scripts](./bashscripts/README.md) - Available automation scripts
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Automation Scripts](./bashscripts/readme.md) - Available automation scripts
->>>>>>> dev
 - [PHPStan Patterns](./phpstan-pattern-soluzioni.md) - Common PHPStan solutions
 
 ### Migration & Upgrade
@@ -667,15 +653,8 @@ Located in `bashscripts/`:
 
 ## 🔄 Recent Updates
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### v3.0.0 - [DATE]
-=======
 ### v3.0.0 - 2025-12-05
->>>>>>> 4b6b99016 (first commit)
-=======
 ### v3.0.0 - [DATE]
->>>>>>> dev
 - **Added**: Laravel 12 support
 - **Added**: Filament 4 support
 - **Added**: PHP 8.3 support
@@ -683,29 +662,15 @@ Located in `bashscripts/`:
 - **Changed**: Improved XotData caching mechanism
 - **Fixed**: Git merge conflict resolution improvements
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### v2.9.0 - [DATE]
-=======
 ### v2.9.0 - 2025-11-18
->>>>>>> 4b6b99016 (first commit)
-=======
 ### v2.9.0 - [DATE]
->>>>>>> dev
 - **Added**: New XotBaseChartWidget
 - **Fixed**: HasXotTable duplicate if statements
 - **Fixed**: Mass syntax errors across modules
 - **Improved**: PHP Insights score (Code: 52.6%, Complexity: 93.1%)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-See [CHANGELOG.md](./changelog.md) for full history.
-=======
 See [CHANGELOG.md](./CHANGELOG.md) for full history.
->>>>>>> 4b6b99016 (first commit)
-=======
 See [CHANGELOG.md](./changelog.md) for full history.
->>>>>>> dev
 
 ---
 
@@ -722,25 +687,14 @@ See [CHANGELOG.md](./changelog.md) for full history.
 - Real-time update support for widgets
 - Advanced caching strategies
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-See [ROADMAP.md](./roadmap.md) for details.
-=======
 See [ROADMAP.md](./ROADMAP.md) for details.
->>>>>>> 4b6b99016 (first commit)
-=======
 See [ROADMAP.md](./roadmap.md) for details.
->>>>>>> dev
 
 ---
 
 ## 📖 Related Documentation
 
 ### Internal Modules
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [User Module](../user/docs/readme.md) - User management and authentication
 - [UI Module](../ui/docs/readme.md) - UI components and design system
 - [Tenant Module](../tenant/docs/readme.md) - Multi-tenancy support
@@ -750,8 +704,6 @@ See [ROADMAP.md](./roadmap.md) for details.
 ### Project Documentation
 - [CLAUDE.md](../../../claude.md) - Project architecture and development rules
 - [Project README](../../../readme.md) - Main project documentation
-<<<<<<< HEAD
-=======
 - [User Module](../User/docs/README.md) - User management and authentication
 - [UI Module](../UI/docs/README.md) - UI components and design system
 - [Tenant Module](../Tenant/docs/README.md) - Multi-tenancy support
@@ -761,9 +713,6 @@ See [ROADMAP.md](./roadmap.md) for details.
 ### Project Documentation
 - [CLAUDE.md](../../../CLAUDE.md) - Project architecture and development rules
 - [Project README](../../../README.md) - Main project documentation
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ### External Resources
 - [Laravel 12 Documentation](https://laravel.com/docs/12.x)
@@ -784,15 +733,8 @@ Contributions to the Xot module should follow strict guidelines as it's the foun
 3. Update documentation
 4. Follow architectural patterns
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-See [CONTRIBUTING.md](./contributing.md) for detailed guidelines.
-=======
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
->>>>>>> 4b6b99016 (first commit)
-=======
 See [CONTRIBUTING.md](./contributing.md) for detailed guidelines.
->>>>>>> dev
 
 ---
 
@@ -803,13 +745,7 @@ Part of the Laraxot PTVX ecosystem.
 ---
 
 **Module**: Xot (Core Foundation)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Version**: 3.0.0
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Framework**: Laravel 12 + Filament 4 + PHP 8.3
 **PHPStan**: Level 10 ✅
 **Test Coverage**: 85%+ ✅

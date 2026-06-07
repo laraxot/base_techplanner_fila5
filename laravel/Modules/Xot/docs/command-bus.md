@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 Command Bus in Laravel Published 21 Mar 2019
 https://martinbean.dev/blog/2019/03/21/command-bus-in-laravel/
 
@@ -18,4 +15,3 @@ https://laravel-italia.it/articoli/implementare-un-command-bus-con-laravel-tacti
 https://github.com/jildertmiedema/laravel-tactician  on 11 Sep 2020
 
 https://github.com/broadway/broadway 
->>>>>>> dev

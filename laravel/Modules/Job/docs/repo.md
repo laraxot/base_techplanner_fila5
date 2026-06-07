@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-https://github.com/mooxphp/jobs/tree/main
-
-<<<<<<< HEAD
-=======
 ### Versione HEAD
 
 ## Collegamenti tra versioni di repo.md
@@ -12,8 +7,6 @@ https://github.com/mooxphp/jobs/tree/main
 ### Versione Incoming
 
 ---
->>>>>>> 4b6b99016 (first commit)
-=======
 ---
 module: theme
 topic: repo
@@ -21,4 +14,3 @@ canonical: ../../../Themes/docs/shared-components/repo.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/repo.txt
->>>>>>> dev

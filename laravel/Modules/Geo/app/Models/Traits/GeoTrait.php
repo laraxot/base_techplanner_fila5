@@ -190,11 +190,7 @@ trait GeoTrait
         if (null === $address) {
             return null;
         }
-<<<<<<< HEAD
-        if (is_string($address) && isJson($address)) {
-=======
         if (is_string($address) && \Illuminate\Support\Str::isJson($address)) {
->>>>>>> dev
             $geo = GeoData::from(json_decode($address, true, 512, JSON_THROW_ON_ERROR));
             $latlng = $geo->latlng;
             $lat = is_float($latlng['lat'] ?? null) || is_int($latlng['lat'] ?? null) ? (float) ($latlng['lat']) : null;
@@ -238,11 +234,7 @@ trait GeoTrait
     {
         // *
 
-<<<<<<< HEAD
-        if (is_string($value) && isJson((string) $value)) {
-=======
         if (is_string($value) && \Illuminate\Support\Str::isJson((string) $value)) {
->>>>>>> dev
             /*
              * @var array<string, mixed>
              */
@@ -322,11 +314,7 @@ trait GeoTrait
         if (null === $this->address) {
             return null;
         }
-<<<<<<< HEAD
-        if (is_string($this->address) && isJson($this->address)) {
-=======
         if (is_string($this->address) && \Illuminate\Support\Str::isJson($this->address)) {
->>>>>>> dev
             /*
              * $addr = json_decode($this->address);
              * if (\is_object($addr)) {

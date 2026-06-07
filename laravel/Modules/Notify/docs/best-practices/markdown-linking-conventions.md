@@ -9,20 +9,6 @@
 ### ❌ ERRATO: Percorsi Assoluti
 
 ```markdown
-<<<<<<< HEAD
-<<<<<<< HEAD
-[Convenzioni di Naming per le Interfacce](modules/notify/docs/interface_naming_convention.md)
-[Chiarimento sulla Struttura delle Interfacce](modules/notify/docs/interface_structure_clarification.md)
-[Architettura dei Contratti](modules/notify/docs/contracts_architecture.md)
-[Convenzioni di Naming per le Interfacce](modules/notify/docs/interface_naming_convention.md)
-[Chiarimento sulla Struttura delle Interfacce](modules/notify/docs/interface_structure_clarification.md)
-[Architettura dei Contratti](modules/notify/docs/contracts_architecture.md)
-[Convenzioni di Naming per le Interfacce](modules/notify/docs/interface_naming_convention.md)
-[Chiarimento sulla Struttura delle Interfacce](modules/notify/docs/interface_structure_clarification.md)
-[Architettura dei Contratti](modules/notify/docs/contracts_architecture.md)
-=======
-=======
->>>>>>> dev
 [Convenzioni di Naming per le Interfacce](Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
@@ -32,47 +18,26 @@
 [Convenzioni di Naming per le Interfacce](Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ```
 
 ### ✅ CORRETTO: Percorsi Relativi
 
 ```markdown
-<<<<<<< HEAD
-<<<<<<< HEAD
-[Convenzioni di Naming per le Interfacce](./interface_naming_convention.md)
-[Chiarimento sulla Struttura delle Interfacce](./interface_structure_clarification.md)
-[Architettura dei Contratti](./contracts_architecture.md)
-=======
 [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
->>>>>>> dev
 ```
 
 Per collegamenti a documenti in altre directory:
 
 ```markdown
-<<<<<<< HEAD
-<<<<<<< HEAD
-[Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation_keys_rules.md)
-[Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
-=======
 [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
->>>>>>> dev
 ```
 
 ## Motivazione

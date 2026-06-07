@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-# Architettura a Moduli vs Domain per Prediction Market
-
-## Introduzione
-Un prediction market può essere implementato sia seguendo una struttura a moduli (Laravel Modules) sia una struttura a bounded context (Domain). Qui spieghiamo differenze, vantaggi, svantaggi e best practice.
-
-## Struttura a Moduli (Laravel Modules)
-- Ogni modulo è un dominio funzionale isolato (es. PredictionMarket, User, Payment).
-=======
 # Architettura a Moduli vs Domain per <nome progetto>ion Market
 
 ## Introduzione
@@ -14,17 +5,12 @@ Un <nome progetto>ion market può essere implementato sia seguendo una struttura
 
 ## Struttura a Moduli (Laravel Modules)
 - Ogni modulo è un dominio funzionale isolato (es. <nome progetto>ionMarket, User, Payment).
->>>>>>> dev
 - Ogni modulo ha la sua `app/`, `config/`, `database/`, `resources/`, `routes/`, `tests/`, `composer.json`, `module.json`.
 - Ideale per progetti enterprise, multi-team, multi-prodotto.
 - Esempio:
 ```
 Modules/
-<<<<<<< HEAD
-  PredictionMarket/
-=======
   <nome progetto>ionMarket/
->>>>>>> dev
     app/Events/
     app/Actions/
     app/Projectors/
@@ -44,20 +30,12 @@ Modules/
 ```
 
 ## Struttura a Domain (Bounded Context)
-<<<<<<< HEAD
-- Tutto il dominio prediction market è in una cartella (es. `app/Domain/PredictionMarket/`).
-=======
 - Tutto il dominio <nome progetto>ion market è in una cartella (es. `app/Domain/<nome progetto>ionMarket/`).
->>>>>>> dev
 - Suddivisione interna: `Events/`, `Actions/`, `Projectors/`, ecc.
 - Ideale per progetti monolitici o con pochi domini.
 - Esempio:
 ```
-<<<<<<< HEAD
-app/Domain/PredictionMarket/
-=======
 app/Domain/<nome progetto>ionMarket/
->>>>>>> dev
   Events/
   Actions/
   Projectors/
@@ -96,20 +74,13 @@ app/Domain/<nome progetto>ionMarket/
 - [CQRS e DDD](https://martinfowler.com/bliki/CQRS.html)
 - [Best practice modularità](https://laravelmodules.com/docs/12/basic-usage/creating-a-module)
 - [Esempi di modularizzazione](https://github.com/nWidart/laravel-modules)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Indice prediction_market](./readme.md)
-=======
 - [Indice prediction_market](./README.md)
->>>>>>> 4b6b99016 (first commit)
 - [Architettura prediction_market](./02_architettura.md)
 - [Best practice prediction_market](./04_best_practice.md)
 - [API prediction_market](./06_api.md)
 - [Testing prediction_market](./07_test.md)
-=======
 - [Indice <nome progetto>ion_market](./readme.md)
 - [Architettura <nome progetto>ion_market](./02_architettura.md)
 - [Best practice <nome progetto>ion_market](./04_best_practice.md)
 - [API <nome progetto>ion_market](./06_api.md)
 - [Testing <nome progetto>ion_market](./07_test.md)
->>>>>>> dev

@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(Modules\Cms\Tests\TestCase::class);
-=======
-namespace Modules\Cms\Tests\Unit\Datas;
->>>>>>> dev
 
 use Modules\Cms\Datas\BlockData;
 use Modules\Cms\Datas\FooterData;

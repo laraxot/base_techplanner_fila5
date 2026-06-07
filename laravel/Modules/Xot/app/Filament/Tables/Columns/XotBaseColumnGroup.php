@@ -13,10 +13,6 @@ use Filament\Tables\Columns\ColumnGroup as FilamentColumnGroup;
  *
  * @method static static make(string $name) Create a new instance of the column group
  */
-<<<<<<< HEAD
-abstract class XotBaseColumnGroup extends FilamentColumnGroup {}
-=======
 abstract class XotBaseColumnGroup extends FilamentColumnGroup
 {
 }
->>>>>>> dev

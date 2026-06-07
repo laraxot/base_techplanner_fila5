@@ -120,21 +120,12 @@ class NotificationLogResource extends XotBaseResource
 - [Regole Windsurf](../../../../.windsurf/rules/filament-xotbase-resource-best-practices.mdc)
 
 ### Documentazione Moduli
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Notify Module README](../../../notify/project_docs/readme.md)
-- [User Module README](../../../user/project_docs/readme.md)
-- [<nome progetto> Module README](../../../<nome progetto>/project_docs/readme.md)
-=======
 - [Notify Module README](../../../Notify/project_docs/README.md)
 - [User Module README](../../../User/project_docs/README.md)
 - [<nome progetto> Module README](../../../<nome progetto>/project_docs/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Notify Module README](../../../notify/project_docs/readme.md)
 - [User Module README](../../../user/project_docs/readme.md)
 - [<nome progetto> Module README](../../../<nome progetto>/project_docs/readme.md)
->>>>>>> dev
 
 ### Standard di Riferimento
 - [NavigationLabelTrait](../traits/navigation-label-trait.md)

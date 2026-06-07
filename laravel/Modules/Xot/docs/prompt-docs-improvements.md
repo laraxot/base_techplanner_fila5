@@ -1,24 +1,14 @@
 # Miglioramenti al Prompt docs.txt
 
 > **Collegamenti correlati**
-<<<<<<< HEAD
-<<<<<<< HEAD
-> - [README.md documentazione generale](../../../../docs/readme.md)
-> - [Struttura dei Prompt](./prompts.md)
-> - [Regole per i Prompt](./prompt_rules.md)
-> - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
-=======
 > - [README.md documentazione generale](../../../../docs/README.md)
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./PROMPT_RULES.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 > - [README.md documentazione generale](../../../../../docs/readme.md)
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
->>>>>>> dev
 > - [Documentazione miglioramenti prompt docs.txt](../../../../bashscripts/docs/prompt_docs_improvements.md)
 
 ## Introduzione

@@ -7,20 +7,12 @@ namespace Modules\Xot\Filament\Resources\CacheLockResource\Pages;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\CacheLockResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-<<<<<<< HEAD
-use Override;
-=======
->>>>>>> dev
 
 class ListCacheLocks extends XotBaseListRecords
 {
     protected static string $resource = CacheLockResource::class;
 
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     public function getTableColumns(): array
     {
         return [

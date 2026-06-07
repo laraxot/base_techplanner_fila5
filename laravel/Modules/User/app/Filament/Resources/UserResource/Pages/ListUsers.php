@@ -49,19 +49,9 @@ class ListUsers extends BaseListUsers
         ];
     }
 
-<<<<<<< HEAD
-    /**
-     * @phpstan-ignore-next-line
-     */
     #[\Override]
     public function getTableActions(): array
     {
-        /* @phpstan-ignore-next-line */
-=======
-    #[\Override]
-    public function getTableActions(): array
-    {
->>>>>>> dev
         return [
             'change_password' => ChangePasswordAction::make()->tooltip('Cambio Password')->iconButton(),
             ...parent::getTableActions(),

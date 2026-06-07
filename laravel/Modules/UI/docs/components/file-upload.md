@@ -80,12 +80,7 @@ Forms\Components\FileUpload::make('document')
 ## Collegamenti Correlati
 
 - [Documentazione Filament Forms](https://filamentphp.com/docs/3.x/forms/fields/file-upload)
-<<<<<<< HEAD
-- [Gestione Upload in il progetto](../../../docs/upload-management.md)
-- [Convenzioni di Naming](../../../docs/convenzioni-naming-campi.md)
-=======
 - [Gestione Upload in il progetto](../../../../docs/upload-management.md)
 - [Convenzioni di Naming](../../../../docs/convenzioni-naming-campi.md)
->>>>>>> dev
 ## Collegamenti tra versioni di file-upload.md
 * [file-upload.md](../filament-components/file-upload.md)

@@ -439,15 +439,8 @@ private function getPasswordLegacy(): string
 ```
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README Comandi Console](readme.md)
-=======
 - [README Comandi Console](README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README Comandi Console](readme.md)
->>>>>>> dev
 - [ChangePasswordCommand](change-password-command.md)
 - [AssignModuleCommand](assign-module-command.md)
 - [Testing Strategy](../testing/console-commands-testing.md)
@@ -463,11 +456,4 @@ private function getPasswordLegacy(): string
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-01-27*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
-

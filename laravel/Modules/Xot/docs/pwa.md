@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 https://www.freecodecamp.org/news/build-a-pwa-from-scratch-with-html-css-and-javascript/
 https://devcoffee-pwa.netlify.app/
 
@@ -14,4 +11,3 @@ https://medium.com/james-johnson/a-simple-progressive-web-app-tutorial-f9708e5f2
 
 https://www.telerik.com/blogs/from-responsive-to-progressive-making-tripxpert-a-progressive-web-app
 https://demos.telerik.com/aspnet-mvc/tripxpert/   !!!!!
->>>>>>> dev

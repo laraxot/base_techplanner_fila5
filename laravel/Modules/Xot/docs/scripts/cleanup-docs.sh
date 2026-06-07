@@ -6,11 +6,7 @@
 set -e
 
 MODULE=${1:-"Xot"}
-<<<<<<< HEAD
-DOCS_DIR="/var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/$MODULE/docs"
-=======
 DOCS_DIR="/var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/$MODULE/docs"
->>>>>>> dev
 
 if [ ! -d "$DOCS_DIR" ]; then
     echo "❌ Directory non trovata: $DOCS_DIR"
@@ -119,4 +115,3 @@ echo "  - $DOCS_DIR/archive/historical/"
 echo "  - $DOCS_DIR/archive/duplicates/"
 echo "  - $DOCS_DIR/archive/uppercase/"
 echo ""
-

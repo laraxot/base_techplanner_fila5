@@ -9,10 +9,6 @@ return [
             'placeholder' => 'html_layout_path',
             'helper_text' => 'html_layout_path',
             'description' => 'html_layout_path',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -38,11 +34,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Html Layout Path Select',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
 ];

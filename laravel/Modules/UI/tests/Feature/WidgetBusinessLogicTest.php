@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\UI\Tests\Feature;
-
->>>>>>> dev
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Livewire\Livewire;
 use Modules\UI\Filament\Widgets\GroupWidget;
@@ -107,13 +102,6 @@ it('group widget can group related content', function (): void {
     expect($widget)->not()->toBeNull();
     expect($widget)->toBeInstanceOf(GroupWidget::class);
 
-<<<<<<< HEAD
-    // Verifica che il widget abbia le proprietà necessarie
-    expect($widget->getHeading())->toBeString();
-=======
-    expect(method_exists($widget, 'render'))->toBeTrue();
-    expect(method_exists($widget, 'getFormSchema'))->toBeTrue();
->>>>>>> dev
 });
 
 it('redirect widget can handle redirects', function (): void {
@@ -124,14 +112,6 @@ it('redirect widget can handle redirects', function (): void {
     expect($widget)->not()->toBeNull();
     expect($widget)->toBeInstanceOf(RedirectWidget::class);
 
-<<<<<<< HEAD
-    // Verifica che il widget abbia le proprietà necessarie
-    expect($widget->getHeading())->toBeString();
-    expect($widget->getDescription())->toBeString();
-=======
-    expect(method_exists($widget, 'render'))->toBeTrue();
-    expect(method_exists($widget, 'getFormSchema'))->toBeTrue();
->>>>>>> dev
 });
 
 it('user calendar widget can display calendar', function (): void {
@@ -149,21 +129,6 @@ it('widgets can be configured with custom data', function (): void {
     // Arrange
     $widget = new StatWithIconWidget();
 
-<<<<<<< HEAD
-    // Act
-    $widget->heading = 'Custom Heading';
-    $widget->icon = 'heroicon-o-chart-bar';
-    $widget->color = 'success';
-
-    // Assert
-    expect($widget->heading)->toBe('Custom Heading');
-    expect($widget->icon)->toBe('heroicon-o-chart-bar');
-    expect($widget->color)->toBe('success');
-=======
-    expect(method_exists($widget, 'render'))->toBeTrue();
-    expect(method_exists($widget, 'getFormSchema'))->toBeTrue();
-    expect(method_exists($widget, 'getData'))->toBeTrue();
->>>>>>> dev
 });
 
 it('widgets can handle empty data gracefully', function (): void {

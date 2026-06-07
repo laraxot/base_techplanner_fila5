@@ -11,10 +11,6 @@ return [
     'fields' => [
         'delete' => [
             'label' => 'delete',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -63,26 +59,4 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-<<<<<<< HEAD
-=======
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'attach' => [
-            'label' => 'attach',
-        ],
-        'detach' => [
-            'label' => 'detach',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -30,12 +30,8 @@
                             {{ $step == $currentStep ? 'bg-blue-600 text-white' : '' }}
                             {{ $step > $currentStep ? 'bg-gray-100 text-gray-400' : '' }}">
                             @if($step < $currentStep)
-<<<<<<< HEAD
-                                <x-heroicon-o-check class="w-4 h-4" />
-=======
                                 <x-filament::icon icon="heroicon-o-check" class="w-4 h-4" />
 f7ac8eda (.)
->>>>>>> dev
                             @else
                                 {{ $step }}
                             @endif
@@ -52,12 +48,8 @@ f7ac8eda (.)
         @if($currentStep > $totalSteps)
             <div class="bg-white rounded-lg shadow-sm border border-green-200 p-8 text-center">
                 <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-<<<<<<< HEAD
-                    <x-heroicon-o-check class="w-8 h-8 text-green-600" />
-=======
                     <x-filament::icon icon="heroicon-o-check" class="w-8 h-8 text-green-600" />
 f7ac8eda (.)
->>>>>>> dev
                 </div>
                 
                 <h2 class="text-2xl font-bold text-gray-900 mb-2">Prenotazione Confermata!</h2>
@@ -143,12 +135,8 @@ f7ac8eda (.)
                                                         <p class="text-sm text-gray-600">{{ $office->phone }}</p>
                                                     @endif
                                                 </div>
-<<<<<<< HEAD
-                                                <x-heroicon-o-arrow-right class="w-5 h-5 text-gray-400" />
-=======
                                                 <x-filament::icon icon="heroicon-o-arrow-right" class="w-5 h-5 text-gray-400" />
 f7ac8eda (.)
->>>>>>> dev
                                             </div>
                                         </button>
                                     @endforeach
@@ -189,12 +177,8 @@ f7ac8eda (.)
                         @if($appointmentDate)
                             <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
                                 <div class="flex items-center">
-<<<<<<< HEAD
-                                    <x-heroicon-o-calendar class="w-5 h-5 text-blue-600 mr-3" />
-=======
                                     <x-filament::icon icon="heroicon-o-calendar" class="w-5 h-5 text-blue-600 mr-3" />
 f7ac8eda (.)
->>>>>>> dev
                                     <span class="text-blue-800">
                                         Data selezionata: {{ $selectedDateFormatted }}
                                     </span>
@@ -233,12 +217,8 @@ f7ac8eda (.)
                         @if($selectedSlot)
                             <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
                                 <div class="flex items-center">
-<<<<<<< HEAD
-                                    <x-heroicon-o-clock class="w-5 h-5 text-blue-600 mr-3" />
-=======
                                     <x-filament::icon icon="heroicon-o-clock" class="w-5 h-5 text-blue-600 mr-3" />
 f7ac8eda (.)
->>>>>>> dev
                                     <span class="text-blue-800">
                                         Orario selezionato: {{ $selectedTimeFormatted }}
                                     </span>
@@ -261,12 +241,8 @@ f7ac8eda (.)
                                     wire:click="toggleSelfBooking"
                                     class="p-4 border rounded-lg text-center transition-colors
                                         {{ $isSelf ? 'border-blue-300 bg-blue-50 text-blue-800' : 'border-gray-200 hover:border-gray-300' }}">
-<<<<<<< HEAD
-                                    <x-heroicon-o-user class="w-8 h-8 mx-auto mb-2" />
-=======
                                     <x-filament::icon icon="heroicon-o-user" class="w-8 h-8 mx-auto mb-2" />
 f7ac8eda (.)
->>>>>>> dev
                                     <div class="font-medium">Per me stesso</div>
                                 </button>
                                 
@@ -275,12 +251,8 @@ f7ac8eda (.)
                                     wire:click="toggleSelfBooking"
                                     class="p-4 border rounded-lg text-center transition-colors
                                         {{ !$isSelf ? 'border-blue-300 bg-blue-50 text-blue-800' : 'border-gray-200 hover:border-gray-300' }}">
-<<<<<<< HEAD
-                                    <x-heroicon-o-users class="w-8 h-8 mx-auto mb-2" />
-=======
                                     <x-filament::icon icon="heroicon-o-users" class="w-8 h-8 mx-auto mb-2" />
 f7ac8eda (.)
->>>>>>> dev
                                     <div class="font-medium">Per altra persona</div>
                                 </button>
                             </div>
@@ -420,12 +392,8 @@ f7ac8eda (.)
 
                         <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
                             <div class="flex">
-<<<<<<< HEAD
-                                <x-heroicon-o-exclamation-triangle class="w-5 h-5 text-yellow-600 mr-3 flex-shrink-0" />
-=======
                                 <x-filament::icon icon="heroicon-o-exclamation-triangle" class="w-5 h-5 text-yellow-600 mr-3 flex-shrink-0" />
 f7ac8eda (.)
->>>>>>> dev
                                 <div class="text-sm text-yellow-800">
                                     <strong>Importante:</strong> Porta con te i documenti richiesti e presenta il codice di conferma all'ufficio.
                                 </div>
@@ -449,12 +417,8 @@ f7ac8eda (.)
                     wire:click="previousStep"
                     variant="secondary"
                     {{ $isFirstStep ? 'disabled' : '' }}>
-<<<<<<< HEAD
-                    <x-heroicon-o-arrow-left class="w-4 h-4 mr-2" />
-=======
                     <x-filament::icon icon="heroicon-o-arrow-left" class="w-4 h-4 mr-2" />
 f7ac8eda (.)
->>>>>>> dev
                     Indietro
                 </x-button>
 
@@ -463,12 +427,8 @@ f7ac8eda (.)
                         wire:click="nextStep"
                         variant="primary">
                         Avanti
-<<<<<<< HEAD
-                        <x-heroicon-o-arrow-right class="w-4 h-4 ml-2" />
-=======
                         <x-filament::icon icon="heroicon-o-arrow-right" class="w-4 h-4 ml-2" />
 f7ac8eda (.)
->>>>>>> dev
                     </x-button>
                 @else
                     <x-button 

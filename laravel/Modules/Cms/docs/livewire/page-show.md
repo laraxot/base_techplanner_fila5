@@ -33,11 +33,4 @@ Vedi file: `Modules/Cms/app/Http/Livewire/Page/Show.php`
 ---
 
 ## Collegamenti
-<<<<<<< HEAD
-- [Indice CMS](../../../../docs/modules/cms.md)
-
-> Aggiornato da Windsurf AI il 17/04/2025
-=======
 - [Indice CMS](../../../../../docs/modules/cms.md)
-
->>>>>>> dev

@@ -6,10 +6,6 @@ return [
     'title' => 'Attachments',
     'label' => 'Upload attachment',
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'file' => [
             'label' => 'file',
             'tooltip' => '',
@@ -44,14 +40,5 @@ return [
     ],
     'plural_label' => 'Missing Plural label',
     'actions' => [
-<<<<<<< HEAD
-=======
-        'file' => 'file',
-        'file_hint' => '',
-        'name' => 'Name',
-        'name_hint' => 'file name',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ],
 ];

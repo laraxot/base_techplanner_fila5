@@ -166,32 +166,18 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 
 ### Strategici
 - [Strategia Contenuti CMS](pages-content-strategy.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Componenti Servizi](../../themes/one/docs/components/services-blocks.md)
-=======
 - [Componenti Servizi](../../Themes/One/docs/components/services-blocks.md)
->>>>>>> 4b6b99016 (first commit)
 - [Content Strategy Frontend](../../../docs/frontend/content-strategy.md)
 
 ### Tecnici
 - [Blocks Architecture](blocks.md)
-<<<<<<< HEAD
-- [Component System](../../themes/one/docs/components.md)
-=======
 - [Component System](../../Themes/One/docs/components.md)
->>>>>>> 4b6b99016 (first commit)
 - [Content Management](content-management.md)
 
 ### Filosofici
 - [Architettura Sistema](../../../docs/architettura_sistema.md)
 - [Rules](../../../docs/rules.md)
-<<<<<<< HEAD
-- [README Principale](../../../docs/readme.md)
-=======
 - [README Principale](../../../docs/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Componenti Servizi](../../themes/one/docs/components/services-blocks.md)
 - [Content Strategy Frontend](../../../../docs/frontend/content-strategy.md)
 
@@ -204,7 +190,6 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 - [Architettura Sistema](../../../../docs/architettura_sistema.md)
 - [Rules](../../../../docs/rules.md)
 - [README Principale](../../../../docs/readme.md)
->>>>>>> dev
 
 ## ✅ Checklist Completamento
 

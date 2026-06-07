@@ -12,14 +12,8 @@ use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< HEAD
-use Filament\Tables\Table; // Already there, but explicitly for boolean()
-use Illuminate\Database\Eloquent\Builder;
-use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages;
-=======
 // Already there, but explicitly for boolean()
 use Illuminate\Database\Eloquent\Builder;
->>>>>>> dev
 use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages\ListOauthRefreshTokens;
 use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages\ViewOauthRefreshToken;
 use Modules\User\Models\OauthRefreshToken;

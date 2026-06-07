@@ -193,10 +193,4 @@ Ogni nuovo modello deve essere documentato in:
 - [Best Practices Laravel](laraxot-conventions.md)
 - [Regole Migrazioni](migrations.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: giugno 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

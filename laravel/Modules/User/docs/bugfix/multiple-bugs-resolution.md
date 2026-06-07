@@ -202,23 +202,14 @@ public function render(): View
 
 ## 🔗 Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Priority Decision Rules](../../xot/docs/priority-decision-rules.md)
 - [Super Mucca Workflow](../../xot/docs/super-mucca-workflow.md)
 - [Git Conflict Resolution](./git-conflicts-resolution-2025-12-16.md)
 - [TenantService Actions](../../tenant/docs/configuration.md)
-<<<<<<< HEAD
-=======
 - [Priority Decision Rules](../../Xot/docs/priority-decision-rules.md)
 - [Super Mucca Workflow](../../Xot/docs/super-mucca-workflow.md)
 - [Git Conflict Resolution](./git-conflicts-resolution-2025-12-16.md)
 - [TenantService Actions](../../Tenant/docs/configuration.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ---
 

@@ -173,12 +173,5 @@ trait SushiToJsons
 ## Collegamenti Bidirezionali
 
 - [Documento principale risoluzione conflitti](risoluzione_conflitti.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione modulo Tenant](../../tenant/docs/risoluzione_conflitti.md)
-=======
 - [Documentazione modulo Tenant](../../Tenant/docs/risoluzione_conflitti.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione modulo Tenant](../../tenant/docs/risoluzione_conflitti.md)
->>>>>>> dev

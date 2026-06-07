@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-# 🐄 DRY & KISS Analysis - Gdpr
-
-<<<<<<< HEAD
-**Data:** [DATE] | **Status:** ✅
-=======
 **Data:** 2025-10-15 | **Status:** ✅
->>>>>>> 4b6b99016 (first commit)
 
 ## 📊 Struttura
 Models: 13 | Resources: 4 | Actions: 0 | Docs: 74
@@ -21,7 +14,6 @@ Models: 13 | Resources: 4 | Actions: 0 | Docs: 74
 Resources (4): Helpers (~80 LOC)
 
 **Status:** 🟢 OTTIMO
-=======
 # DRY & KISS Analysis - Modulo Gdpr
 
 **Data:** 15 Ottobre 2025  
@@ -55,5 +47,3 @@ abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 
 ---
 [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
-
->>>>>>> dev

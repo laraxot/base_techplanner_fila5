@@ -8,10 +8,6 @@ return [
         'create' => 'Aggiungi Luogo',
         'edit' => 'Modifica Luogo',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Places',
     'plural_label' => 'Places (Plurale)',
     'navigation' => [
@@ -56,9 +52,4 @@ return [
             'label' => 'Elimina Places',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

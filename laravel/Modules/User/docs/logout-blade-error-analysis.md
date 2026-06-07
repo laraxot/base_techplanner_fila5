@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-# Analisi Approfondita dell'Errore nell'Implementazione del Logout
-
-## Collegamenti correlati
-<<<<<<< HEAD
-- [Documentazione centrale](/docs/readme.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Implementazione Logout](logout_blade_implementation.md)
-- [Analisi Logout](logout_blade_analysis.md)
-- [Conclusioni Logout](logout_blade_conclusions.md)
-- [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
-=======
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
@@ -18,7 +5,6 @@
 - [Analisi Logout](LOGOUT_BLADE_ANALYSIS.md)
 - [Conclusioni Logout](LOGOUT_BLADE_CONCLUSIONS.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
->>>>>>> 4b6b99016 (first commit)
 
 ## Errore Fondamentale Identificato
 
@@ -124,15 +110,6 @@ Questi errori evidenziano l'importanza di:
 # Analisi Approfondita dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-- [Documentazione centrale](/docs/readme.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Implementazione Logout](logout_blade_implementation.md)
-- [Analisi Logout](logout_blade_analysis.md)
-- [Conclusioni Logout](logout_blade_conclusions.md)
-- [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
-=======
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
@@ -140,7 +117,6 @@ Questi errori evidenziano l'importanza di:
 - [Analisi Logout](LOGOUT_BLADE_ANALYSIS.md)
 - [Conclusioni Logout](LOGOUT_BLADE_CONCLUSIONS.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
->>>>>>> 4b6b99016 (first commit)
 
 ## Errore Fondamentale Identificato
 
@@ -243,7 +219,6 @@ Questi errori evidenziano l'importanza di:
 - Analizzare attentamente il codice esistente prima di proporre modifiche
 - Comprendere a fondo le classi base e le loro restrizioni
 - Rispettare le convenzioni e le strutture del progetto <nome progetto>
-=======
 ---
 module: theme
 topic: logout-blade-error-analysis
@@ -251,4 +226,3 @@ canonical: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
->>>>>>> dev

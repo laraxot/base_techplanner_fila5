@@ -63,8 +63,6 @@ protected function getHeaderActions(): array
 #### Benefici
 - Risoluzione dell'errore `return.type` per `getHeaderActions()`.
 - Migliore aderenza alle convenzioni di tipizzazione degli array associativi nei metodi Filament.
-<<<<<<< HEAD
-=======
 
 ## scan 2026-05-21 (livello max)
 
@@ -82,4 +80,3 @@ protected function getHeaderActions(): array
 **bootstrap:** corretto anche `Lang/TranslationFileForm::getFormSchema()` da istanza a `static` (fatal al caricamento classi).
 
 *ultimo aggiornamento: 2026-05-21*
->>>>>>> dev

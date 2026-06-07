@@ -28,17 +28,10 @@ Cerca tutte le occorrenze del vecchio pattern nei file Blade:
 
 ```bash
 # Cerca showPageContent
-<<<<<<< HEAD
-grep -r "showPageContent" --include="*.blade.php" /var/www/html/_bases/base_predict_fila3_mono/laravel
-
-# Cerca showPageSidebarContent
-grep -r "showPageSidebarContent" --include="*.blade.php" /var/www/html/_bases/base_predict_fila3_mono/laravel
-=======
 grep -r "showPageContent" --include="*.blade.php" /var/www/html/_bases/base_predict_fila5_mono/laravel
 
 # Cerca showPageSidebarContent
 grep -r "showPageSidebarContent" --include="*.blade.php" /var/www/html/_bases/base_predict_fila5_mono/laravel
->>>>>>> dev
 ```
 
 ### 2. Pattern di Migrazione

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ----------------------------------------
 https://laravel-news.com/google-natural-language-api-for-laravel   !!!!!!!!!!!!!!!!
 
@@ -121,13 +119,3 @@ https://cloud.google.com/natural-language/docs/analyzing-entities  !!!!!!!!!!!!!
 ----------------------------------------------------------
 
 https://accidentalfactors.com/part-of-speech-tagging/
-
-
-
-
-
-
-
-
->>>>>>> dev
-

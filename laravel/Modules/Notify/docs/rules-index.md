@@ -27,11 +27,6 @@ This file documents the rules and standards specific to the Notify module.
 - Test each notification channel separately
 - Mock external services in unit tests
 
-<<<<<<< HEAD
-## Related Documentation
-- [README](./readme.md)
-- [phpstan](./phpstan.md)
-=======
 ## Architectural Violations — Do Not Repeat
 
 ### No HTTP controllers
@@ -44,4 +39,3 @@ See: [no-http-controllers.md](./no-http-controllers.md)
 - [README](./readme.md)
 - [phpstan](./phpstan.md)
 - [No HTTP controllers](./no-http-controllers.md)
->>>>>>> dev

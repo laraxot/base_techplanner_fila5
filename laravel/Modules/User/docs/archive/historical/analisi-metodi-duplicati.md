@@ -2,11 +2,7 @@
 
 ## Riferimento Principale
 
-<<<<<<< HEAD
-📚 **Documento Completo:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
-=======
 📚 **Documento Completo:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
->>>>>>> dev
 
 ## Stato del Modulo User
 
@@ -144,11 +140,7 @@ protected function registerObservers(): void
 
 ## Link Correlati
 
-<<<<<<< HEAD
-- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
-=======
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
->>>>>>> dev
 - 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
 - 📖 [Architettura User](./core/architecture.md)
 - 📖 [Regole Business Logic](./business-logic-deep-dive.md)
@@ -157,4 +149,3 @@ protected function registerObservers(): void
 
 **Data:** 2025-10-15  
 **Status:** 📋 Draft per Review
-

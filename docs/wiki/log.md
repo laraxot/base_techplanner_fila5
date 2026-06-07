@@ -1,24 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "TechPlanner wiki log"
-type: log
-tags: [wiki, log, second-brain]
-created: 2026-06-06
-updated: 2026-06-06
-qmd: "wiki log second brain runtime bootstrap fixes"
-issues:
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/21"
-discussions:
-  - "https://github.com/laraxot/base_techplanner_fila5/discussions/19"
----
-
-# TechPlanner wiki log
-
-## 2026-06-06
-
-- Added runtime bootstrap prevention notes for Composer autoload case sensitivity, tenant SQLite config, and User trait method collisions.
-- Added smoke-test sequence for `composer dump-autoload`, `php artisan optimize:clear`, `php artisan about`, and FO HTTP checks.
-=======
 title: "TechPlanner LLM Wiki Log"
 type: "log"
 tags:
@@ -56,4 +36,3 @@ discussions:
 - **corruzione post-merge** — 59 PHP syntax error ripristinati da `origin/master`; bootstrap `php artisan about` OK; recovery docblock/import/`$name` comandi; quality gate: `laravel/tools/post-edit-php.sh`
 - **phpstan Modules** — parse blocker risolti (alias `Builder` duplicati); full run 4800 file → **413 errori** tipizzati; memoria: [phpstan-modules-zero-2026-06-06](./memories/phpstan-modules-zero-2026-06-06.md), Fix #2 in [phpstan-fixes-log](../laravel/Modules/Xot/docs/wiki/concepts/phpstan-fixes-log.md)
 - Added `public-theme-resolution-and-vite-assets`: prevent wrong `pub_theme` diagnosis and missing Vite deploy assets for Theme Two.
->>>>>>> dev

@@ -49,22 +49,6 @@ Questo documento descrive l'implementazione dei template Design Comuni nel tema 
 ### Header Comunale
 ```blade
 {{-- themes/sixteen/components/header-comune.blade.php --}}
-<<<<<<< HEAD
-<header class="it-header-wrapper">
-    <div class="it-nav-wrapper">
-        <div class="it-header-center-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="it-header-center-content-wrapper">
-                            <div class="it-brand-wrapper">
-                                <a href="{{ route('comune.homepage') }}">
-                                    <img src="{{ theme_asset('images/logo-comune.png') }}" alt="Logo Comune" class="icon">
-                                    <div class="it-brand-text">
-                                        <h2>{{ config('comune.nome') }}</h2>
-                                        <h3>Comune di {{ config('comune.nome') }}</h3>
-                                    </div>
-=======
 @php
     $nav_items = [
         ['label' => 'Home', 'route' => 'comune.homepage', 'active' => request()->routeIs('comune.homepage')],
@@ -136,7 +120,6 @@ Questo documento descrive l'implementazione dei template Design Comuni nel tema 
                             <div class="it-search-wrapper">
                                 <a class="search-link" href="#" aria-label="Cerca nel sito">
                                     <i class="fas fa-search"></i>
->>>>>>> dev
                                 </a>
                             </div>
                         </div>
@@ -144,39 +127,6 @@ Questo documento descrive l'implementazione dei template Design Comuni nel tema 
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-        
-        <div class="it-header-navbar-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-lg">
-                            <button class="custom-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link {{ request()->routeIs('comune.homepage') ? 'active' : '' }}" href="{{ route('comune.homepage') }}">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link {{ request()->routeIs('comune.servizi*') ? 'active' : '' }}" href="{{ route('comune.servizi') }}">Servizi</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link {{ request()->routeIs('comune.novita*') ? 'active' : '' }}" href="{{ route('comune.novita') }}">Novità</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link {{ request()->routeIs('comune.contatti') ? 'active' : '' }}" href="{{ route('comune.contatti') }}">Contatti</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link {{ request()->routeIs('fixcity.*') ? 'active' : '' }}" href="{{ route('fixcity.tickets.index') }}">Segnalazioni</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-=======
     </div>
 
     <div class="it-header-navbar-wrapper">
@@ -202,7 +152,6 @@ Questo documento descrive l'implementazione dei template Design Comuni nel tema 
                             </div>
                         </div>
                     </nav>
->>>>>>> dev
                 </div>
             </div>
         </div>
@@ -216,56 +165,6 @@ Questo documento descrive l'implementazione dei template Design Comuni nel tema 
 <footer class="it-footer">
     <div class="it-footer-main">
         <div class="container">
-<<<<<<< HEAD
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="it-brand-wrapper">
-                        <a href="{{ route('comune.homepage') }}">
-                            <img src="{{ theme_asset('images/logo-comune.png') }}" alt="Logo Comune" class="icon">
-                            <div class="it-brand-text">
-                                <h3>{{ config('comune.nome') }}</h3>
-                                <small>Comune di {{ config('comune.nome') }}</small>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4">
-                    <h4>Contatti</h4>
-                    <div class="it-footer-address">
-                        <p>{{ config('comune.indirizzo') }}</p>
-                        <p>{{ config('comune.cap') }} {{ config('comune.nome') }} ({{ config('comune.provincia') }})</p>
-                        <p>Tel: {{ config('comune.telefono') }}</p>
-                        <p>Email: {{ config('comune.email') }}</p>
-                        <p>PEC: {{ config('comune.pec') }}</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4">
-                    <h4>Link Utili</h4>
-                    <ul class="it-footer-list">
-                        <li><a href="{{ route('comune.servizi') }}">Servizi</a></li>
-                        <li><a href="{{ route('comune.novita') }}">Novità</a></li>
-                        <li><a href="{{ route('comune.contatti') }}">Contatti</a></li>
-                        <li><a href="{{ route('comune.documenti') }}">Documenti</a></li>
-                        <li><a href="{{ route('comune.eventi') }}">Eventi</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="it-footer-secondary">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="it-footer-small-prints">
-                        <p>&copy; {{ date('Y') }} Comune di {{ config('comune.nome') }} - Tutti i diritti riservati</p>
-                        <p>P.IVA: {{ config('comune.piva') }} - Codice Fiscale: {{ config('comune.cf') }}</p>
-                    </div>
-                </div>
-            </div>
-=======
             <section>
                 <div class="row clearfix">
                     <div class="col-sm-12">
@@ -333,16 +232,12 @@ Questo documento descrive l'implementazione dei template Design Comuni nel tema 
                 <li class="list-inline-item"><a href="#" title="Privacy policy">Privacy policy</a></li>
                 <li class="list-inline-item"><a href="#" title="Mappa del sito">Mappa del sito</a></li>
             </ul>
->>>>>>> dev
         </div>
     </div>
 </footer>
 ```
 
-<<<<<<< HEAD
-=======
 
->>>>>>> dev
 ### Homepage Comunale
 ```blade
 {{-- themes/sixteen/pages/comune/homepage.blade.php --}}

@@ -46,11 +46,7 @@ class JobStatsOverview extends BaseWidget
                 : '0';
 
             $totalTime = $totalSeconds > 0
-<<<<<<< HEAD
-                ? $this->formatSeconds($totalSeconds).'s'
-=======
                 ? $this->formatSeconds($totalSeconds)
->>>>>>> dev
                 : '0';
         }
 

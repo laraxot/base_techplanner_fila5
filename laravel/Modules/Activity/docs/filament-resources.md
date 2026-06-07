@@ -163,18 +163,10 @@ class ListSnapshots extends XotBaseListRecords
 ## Riferimenti
 
 - [Documentazione Filament](https://filamentphp.com/docs/tables)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [XotBaseListRecords](../xot/docs/filament-pages.md)
-- [Best Practices Filament](../xot/docs/filament-best-practices.md)
-=======
 - [XotBaseListRecords](../Xot/docs/filament-pages.md)
 - [Best Practices Filament](../Xot/docs/filament-best-practices.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [XotBaseListRecords](../xot/docs/filament-pages.md)
 - [Best Practices Filament](../xot/docs/filament-best-practices.md)
->>>>>>> dev
 - [Compatibilità dei Metodi in PHP](https://www.php.net/manual/en/language.oop5.inheritance.php)
 # Filament Resources nel Modulo Activity
 
@@ -341,16 +333,8 @@ class ListSnapshots extends XotBaseListRecords
 ## Riferimenti
 
 - [Documentazione Filament](https://filamentphp.com/project_docs/tables)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [XotBaseListRecords](../xot/project_docs/filament-pages.md)
-- [Best Practices Filament](../xot/project_docs/filament-best-practices.md)
-=======
 - [XotBaseListRecords](../Xot/project_docs/filament-pages.md)
 - [Best Practices Filament](../Xot/project_docs/filament-best-practices.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [XotBaseListRecords](../xot/project_docs/filament-pages.md)
 - [Best Practices Filament](../xot/project_docs/filament-best-practices.md)
->>>>>>> dev
 - [Compatibilità dei Metodi in PHP](https://www.php.net/manual/en/language.oop5.inheritance.php)

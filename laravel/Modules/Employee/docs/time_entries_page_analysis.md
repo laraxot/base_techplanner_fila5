@@ -36,13 +36,7 @@ This document analyses the provided screenshot and derives a faithful, optimized
 
 ### mapping from current module capabilities
 - `TimeClockWidget` already builds day sessions for TODAY. We can generalize to a service:
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   - `TimeEntriesService::buildSessionsForRange(int $userId, Carbon $start, Carbon $end): array{byDate: array<string, list<TimeEntrySessionView>>, summary: WeekSummaryView, contracts: list<DayContractView>}`.
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
   - Reuse the same pairing logic (IN → OUT) applied to an entire range.
 
 ### implementation outline
@@ -62,5 +56,3 @@ This document analyses the provided screenshot and derives a faithful, optimized
 ### open questions / future work
 - Contract hours source per weekday: configuration table vs. HR integration.
 - Added/Reduced logic: confirm semantics (overtime vs. manual adjustments).
-
-

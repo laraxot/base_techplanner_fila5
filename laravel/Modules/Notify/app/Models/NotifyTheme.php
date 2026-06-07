@@ -66,13 +66,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder|NotifyTheme whereUpdatedBy($value)
  * @method static Builder|NotifyTheme whereViewParams($value)
  *
-<<<<<<< HEAD
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
-=======
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
->>>>>>> dev
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  *

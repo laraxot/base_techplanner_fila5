@@ -31,16 +31,8 @@ class MyCustomWidget extends XotBaseWidget
 
 ## Riferimenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Filament Widgets](../xot/docs/filament/widgets/index.md)
-- [Documentazione Filament Widgets](../xot/docs/filament/widgets/index.md)
-=======
 - [Documentazione Filament Widgets](../Xot/docs/filament/widgets/index.md)
 - [Documentazione Filament Widgets](../Xot/docs/filament/widgets/index.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione Filament Widgets](../xot/docs/filament/widgets/index.md)
 - [Documentazione Filament Widgets](../xot/docs/filament/widgets/index.md)
->>>>>>> dev
 - [XotBaseWidget](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)

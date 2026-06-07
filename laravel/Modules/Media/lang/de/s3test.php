@@ -64,31 +64,15 @@ return [
             'label' => 'Anhang',
             'placeholder' => 'Wählen Sie eine Datei zum Anhängen',
             'helper_text' => 'Testdatei zur Überprüfung der S3-Operationen',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'debug_output' => [
             'label' => 'Debug-Ausgabe',
             'placeholder' => 'Testergebnisse werden hier angezeigt',
             'helper_text' => 'Detaillierte Ausgabe der ausgeführten Tests',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'messages' => [
@@ -117,10 +101,6 @@ return [
         'check_cloudfront_config' => 'Überprüfen Sie die CloudFront-Konfiguration',
         'contact_admin' => 'Kontaktieren Sie den Systemadministrator',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -130,9 +110,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

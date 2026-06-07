@@ -55,15 +55,8 @@ class User extends Authenticatable
 ## Documentazione Correlata
 
 - [Integrazione Laravel Passport](../passport.md) - Configurazione e utilizzo di OAuth2 con Laravel Passport
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Modello BaseUser](../baseuser.md) - Modello utente che utilizza questo trait
-=======
 - [Modello BaseUser](../BaseUser.md) - Modello utente che utilizza questo trait
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Modello BaseUser](../baseuser.md) - Modello utente che utilizza questo trait
->>>>>>> dev
 
 ### Versione Incoming
 

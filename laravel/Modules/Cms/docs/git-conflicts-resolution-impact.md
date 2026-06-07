@@ -1,14 +1,7 @@
 # Impatto Risoluzione Conflitti Git - Modulo Cms
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Data: [DATE]
-=======
 ## Data: 2025-01-06
->>>>>>> 4b6b99016 (first commit)
-=======
 ## Data: [DATE]
->>>>>>> dev
 
 ## Contesto
 Il modulo Cms è stato coinvolto indirettamente nella risoluzione di conflitti Git che hanno interessato moduli correlati. Questo documento analizza l'impatto e le implicazioni per il sistema di gestione contenuti.
@@ -48,15 +41,8 @@ Il modulo Cms è stato coinvolto indirettamente nella risoluzione di conflitti G
 
 ### 1. Gestione Dipendenze
 **Problema**: Conflitti in moduli correlati possono impattare Cms
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Soluzione**: 
-=======
 **Soluzione**:
->>>>>>> 4b6b99016 (first commit)
-=======
 **Soluzione**: 
->>>>>>> dev
 - Monitorare sempre i moduli correlati (Geo, User)
 - Testare integrazioni dopo risoluzioni
 - Documentare dipendenze cross-modulo
@@ -162,21 +148,12 @@ php artisan lang:check
 ## Documentazione Correlata
 
 ### Moduli Correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Geo Conflict Resolution](../../geo/project_docs/conflict-resolution.md)
-- [User Theme Conflicts](../../user/project_docs/theme-translation-conflicts-resolution.md)
-- [Xot Git Conflicts](../../xot/project_docs/git-conflicts-resolution-[date].md)
-=======
 - [Geo Conflict Resolution](../../Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](../../User/project_docs/theme-translation-conflicts-resolution.md)
 - [Xot Git Conflicts](../../Xot/project_docs/git-conflicts-resolution-2025-01-06.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Geo Conflict Resolution](../../geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](../../user/project_docs/theme-translation-conflicts-resolution.md)
 - [Xot Git Conflicts](../../xot/project_docs/git-conflicts-resolution-[date].md)
->>>>>>> dev
 
 ### Documentazione Cms
 - [Content Management](content-management.md)
@@ -216,21 +193,12 @@ php artisan lang:check
 ## Collegamenti Correlati
 
 ### Documentazione Moduli
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Geo Conflict Resolution](../../geo/project_docs/conflict-resolution.md)
-- [User Theme Conflicts](../../user/project_docs/theme-translation-conflicts-resolution.md)
-- [Xot Git Conflicts](../../xot/project_docs/git-conflicts-resolution-[date].md)
-=======
 - [Geo Conflict Resolution](../../Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](../../User/project_docs/theme-translation-conflicts-resolution.md)
 - [Xot Git Conflicts](../../Xot/project_docs/git-conflicts-resolution-2025-01-06.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Geo Conflict Resolution](../../geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](../../user/project_docs/theme-translation-conflicts-resolution.md)
 - [Xot Git Conflicts](../../xot/project_docs/git-conflicts-resolution-[date].md)
->>>>>>> dev
 
 ### Documentazione Cms
 - [Content Management](content-management.md)
@@ -239,18 +207,9 @@ php artisan lang:check
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-**Autore**: Sistema di correzione automatica
-**Stato**: ✅ Completato
-=======
 **Ultimo aggiornamento**: 2025-01-06
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: [DATE]
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
->>>>>>> dev

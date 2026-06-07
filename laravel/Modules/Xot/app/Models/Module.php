@@ -10,20 +10,6 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\ModuleFactory;
 use Nwidart\Modules\Facades\Module as ModuleFacade;
 use Nwidart\Modules\Module as NModule;
-<<<<<<< HEAD
-use Sushi\Sushi;
-
-use function Safe\json_encode;
-
-/**
- * @property int $id
- * @property string|null $name
- * @property string|null $description
- * @property bool|null $status
- * @property int|null $priority
- * @property string|null $path
- * @property string|null $icon
-=======
 
 use function Safe\json_encode;
 
@@ -37,7 +23,6 @@ use Sushi\Sushi;
  * @property int|null                     $priority
  * @property string|null                  $path
  * @property string|null                  $icon
->>>>>>> dev
  * @property array<array-key, mixed>|null $colors
  *
  * @method static Builder<static>|Module newModelQuery()
@@ -52,15 +37,9 @@ use Sushi\Sushi;
  * @method static Builder<static>|Module wherePriority($value)
  * @method static Builder<static>|Module whereStatus($value)
  *
-<<<<<<< HEAD
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $deleter
- * @property-read ProfileContract|null $updater
-=======
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
->>>>>>> dev
  *
  * @method static ModuleFactory factory($count = null, $state = [])
  *
@@ -82,20 +61,11 @@ final class Module extends BaseModel
     ];
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
      * @var string
      */
     protected $connection = 'xot';
 
     /**
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
      * @return array<int, array<string, mixed>>
      */
     public function getRows(): array
@@ -120,15 +90,10 @@ final class Module extends BaseModel
             ];
         });
 
-<<<<<<< HEAD
-        /** @var array<int, array<string, mixed>> */
-        return array_values($modules);
-=======
         /** @var array<int, array<string, mixed>> $rows */
         $rows = array_values($modules);
 
         return $rows;
->>>>>>> dev
     }
 
     protected function casts(): array

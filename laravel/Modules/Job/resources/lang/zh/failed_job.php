@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -51,26 +47,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'connection' => [
-            'label' => '连接',
-        ],
-        'queue' => [
-            'label' => '队列',
-        ],
-        'payload' => [
-            'label' => '内容',
-        ],
-        'exception' => [
-            'label' => '异常',
-        ],
-        'failed_at' => [
-            'label' => '失败时间',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -81,12 +57,4 @@ return [
             'label' => '删除',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 4b6b99016 (first commit)
-=======
-];
->>>>>>> dev

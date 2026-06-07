@@ -83,12 +83,8 @@ trait HasCommonScopes
     /**
      * Scope query to records created after a date.
      *
-<<<<<<< HEAD
-     * @param  Builder<static>  $query
-=======
      * @param Builder<static> $query
      *
->>>>>>> dev
      * @return Builder<static>
      */
     public function scopeCreatedAfter(Builder $query, mixed $date): Builder
@@ -99,12 +95,8 @@ trait HasCommonScopes
     /**
      * Scope query to records created before a date.
      *
-<<<<<<< HEAD
-     * @param  Builder<static>  $query
-=======
      * @param Builder<static> $query
      *
->>>>>>> dev
      * @return Builder<static>
      */
     public function scopeCreatedBefore(Builder $query, mixed $date): Builder
@@ -115,12 +107,8 @@ trait HasCommonScopes
     /**
      * Scope query to records updated after a date.
      *
-<<<<<<< HEAD
-     * @param  Builder<static>  $query
-=======
      * @param Builder<static> $query
      *
->>>>>>> dev
      * @return Builder<static>
      */
     public function scopeUpdatedAfter(Builder $query, mixed $date): Builder
@@ -131,12 +119,8 @@ trait HasCommonScopes
     /**
      * Scope query to records created by a specific user.
      *
-<<<<<<< HEAD
-     * @param  Builder<static>  $query
-=======
      * @param Builder<static> $query
      *
->>>>>>> dev
      * @return Builder<static>
      */
     public function scopeCreatedBy(Builder $query, string|int $userId): Builder
@@ -153,13 +137,8 @@ trait HasCommonScopes
             return false;
         }
 
-<<<<<<< HEAD
-        return $this->published_at !== null &&
-               $this->published_at->isPast();
-=======
         return null !== $this->published_at
                && $this->published_at->isPast();
->>>>>>> dev
     }
 
     /**
@@ -175,10 +154,6 @@ trait HasCommonScopes
      */
     public function isActive(): bool
     {
-<<<<<<< HEAD
-        return isset($this->is_active) && $this->is_active === true;
-=======
         return isset($this->is_active) && true === $this->is_active;
->>>>>>> dev
     }
 }

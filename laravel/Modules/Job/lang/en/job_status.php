@@ -19,91 +19,43 @@ return [
             'label' => 'Nome',
             'tooltip' => 'Nome del job monitorato',
             'placeholder' => 'Inserisci nome del job',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Guard associato al job',
             'placeholder' => 'Seleziona guard',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'permissions' => [
             'label' => 'Permessi',
             'tooltip' => 'Permessi associati al job',
             'placeholder' => 'Seleziona permessi',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'updated_at' => [
             'label' => 'Aggiornato il',
             'tooltip' => 'Data dell\'ultimo aggiornamento dello stato del job',
             'placeholder' => 'Data di aggiornamento',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome dell\'utente che ha creato o gestisce il job',
             'placeholder' => 'Nome responsabile',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'last_name' => [
             'label' => 'Cognome',
             'tooltip' => 'Cognome dell\'utente che ha creato o gestisce il job',
             'placeholder' => 'Cognome responsabile',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -180,14 +132,6 @@ return [
         'job_exported' => 'Dati esportati correttamente',
     ],
     'title' => 'job status',
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

@@ -123,20 +123,11 @@ Per evitare errori nei file di traduzione:
 
 ## Collegamenti alla documentazione correlata
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Regole generali per i file di traduzione](/laravel/modules/xot/docs/translation_rules.md)
-- [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
-
-=======
 - [Regole generali per i file di traduzione](/laravel/Modules/Xot/docs/translation_rules.md)
 - [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
 
 *Ultimo aggiornamento: 3 Giugno 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Regole generali per i file di traduzione](/laravel/modules/xot/docs/translation_rules.md)
 - [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
 
 *Ultimo aggiornamento: 3 Giugno 2025*
->>>>>>> dev

@@ -25,13 +25,6 @@
 **PHPStan Errors**: 82 errors (all related to non-existent models)
 
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-*
-=======
 *Last Updated: 2025-10-13*
->>>>>>> 4b6b99016 (first commit)
-=======
 *
->>>>>>> dev
 *Note: File was .skip'd to achieve zero PHPStan errors while models are being implemented*

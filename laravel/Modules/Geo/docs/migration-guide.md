@@ -184,15 +184,8 @@ trait SushiToJsons
     protected function loadFromJson(): array
     {
         $path = $this->getJsonFile();
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         if (!File::exists($path)) {
             return [];
         }
@@ -309,53 +302,28 @@ class SushiCommand extends Command
 
         try {
             $path = base_path('database/content/comuni.json');
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             if (!File::exists($path)) {
                 $this->error('File comuni.json non trovato');
                 return 1;
             }
-<<<<<<< HEAD
-<<<<<<< HEAD
-            
-            $data = json_decode(File::get($path), true);
-            
-=======
 
             $data = json_decode(File::get($path), true);
 
->>>>>>> 4b6b99016 (first commit)
-=======
             
             $data = json_decode(File::get($path), true);
             
->>>>>>> dev
             if (json_last_error() !== JSON_ERROR_NONE) {
                 $this->error('Errore nel parsing del file JSON: ' . json_last_error_msg());
                 return 1;
             }
-<<<<<<< HEAD
-<<<<<<< HEAD
-            
-            DB::table('comuni')->truncate();
-            
-=======
 
             DB::table('comuni')->truncate();
 
->>>>>>> 4b6b99016 (first commit)
-=======
             
             DB::table('comuni')->truncate();
             
->>>>>>> dev
             foreach ($data as $comune) {
                 DB::table('comuni')->insert([
                     'id' => $comune['id'],
@@ -369,15 +337,8 @@ class SushiCommand extends Command
                     'updated_at' => $comune['updated_at'] ?? now(),
                 ]);
             }
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             $this->info('Database SQLite di Sushi aggiornato con successo');
             return 0;
         } catch (\Exception $e) {
@@ -407,57 +368,29 @@ class SushiCommand extends Command
         try {
             $count = DB::table('comuni')->count();
             $this->info("Numero di comuni: {$count}");
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             $regioni = DB::table('comuni')
                 ->select('regione')
                 ->distinct()
                 ->count();
             $this->info("Numero di regioni: {$regioni}");
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             $province = DB::table('comuni')
                 ->select('provincia')
                 ->distinct()
                 ->count();
             $this->info("Numero di province: {$province}");
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             $cap = DB::table('comuni')
                 ->select('cap')
                 ->distinct()
                 ->count();
             $this->info("Numero di CAP: {$cap}");
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             return 0;
         } catch (\Exception $e) {
             $this->error('Errore durante la verifica dello stato del database: ' . $e->getMessage());
@@ -496,15 +429,8 @@ class ComuneTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         $this->testData = [
             [
                 'id' => 1,
@@ -529,15 +455,8 @@ class ComuneTest extends TestCase
                 'updated_at' => now(),
             ],
         ];
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         File::put(
             base_path('database/content/comuni.json'),
             json_encode($this->testData, JSON_PRETTY_PRINT)
@@ -555,15 +474,8 @@ class ComuneTest extends TestCase
     public function it_can_load_comuni_from_json()
     {
         $comuni = Comune::all();
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         $this->assertCount(2, $comuni);
         $this->assertEquals('Milano', $comuni[0]->comune);
         $this->assertEquals('Sesto San Giovanni', $comuni[1]->comune);

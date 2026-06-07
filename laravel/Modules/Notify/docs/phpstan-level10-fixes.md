@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 # PHPStan Level 10 Fixes - Notify Module
 
 ## Overview
@@ -64,9 +60,6 @@ COMPOSER_DISABLE_XDEBUG_WARN=1 ./vendor/bin/phpstan analyse Modules/Notify --lev
 - ✅ Syntax errors fixed in language files
 - ⚠️ Type-related errors remain
 - ⚠️ Database-related errors remain
-<<<<<<< HEAD
-- ⚠️ Configuration-related errors remain
-=======
 # Correzioni PHPStan Livello 10 - Modulo Notify
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo Notify e le relative soluzioni implementate.
@@ -263,7 +256,4 @@ Fino ad ora, abbiamo risolto la maggior parte degli errori di livello 10 in entr
 4. Estendere le correzioni ad altri moduli utilizzando i pattern stabiliti
 
 5. Aggiornare le linee guida di sviluppo per prevenire errori simili in futuro 
->>>>>>> 4b6b99016 (first commit)
-=======
 - ⚠️ Configuration-related errors remain
->>>>>>> dev

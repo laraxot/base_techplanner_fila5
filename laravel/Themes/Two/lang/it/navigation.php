@@ -12,9 +12,7 @@ return [
     'portfolio' => 'Portfolio',
     'news' => 'Notizie',
     'blog' => 'Blog',
-<<<<<<< HEAD
-=======
     'login_cta' => 'Accedi',
     'dashboard_cta' => 'Area personale',
->>>>>>> dev
 ];
+

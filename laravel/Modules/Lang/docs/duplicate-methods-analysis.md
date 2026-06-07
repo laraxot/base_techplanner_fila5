@@ -1,13 +1,7 @@
 # Analisi Metodi Duplicati - Modulo Lang
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data Generazione**: 2025-10-15 06:41:17
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data Generazione**: 2025-10-15 06:41:17
->>>>>>> dev
 **Totale Gruppi di Duplicati**:
 
 ## Sommario Esecutivo

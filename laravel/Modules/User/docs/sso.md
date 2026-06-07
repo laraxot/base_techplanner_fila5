@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 # 🔑 SINGLE SIGN-ON (SSO) - GUIDA IMPLEMENTAZIONE
 
 **Versione**: 1.0  
@@ -729,9 +725,4 @@ class SsoTest extends TestCase
 
 **Status**: Pianificato Q1 2026  
 **Priority**: MEDIUM  
-<<<<<<< HEAD
-=======
 https://fusionauth.io/blog/single-sign-on-laravel-fusionauth
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

@@ -69,13 +69,7 @@ Documentazione della risoluzione dei conflitti Git nel modulo Xot che bloccavano
 - [Script Risoluzione Conflitti](../../../bashscripts/docs/conflict_resolution_script_improvements.md)
 - [Report Completo PHPStan Fixes](../../../bashscripts/docs/phpstan_fixes_comprehensive_report.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Dicembre 2024*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 # Risoluzione Conflitti Git - Modulo Xot
 
 ## Panoramica
@@ -147,10 +141,4 @@ Documentazione della risoluzione dei conflitti Git nel modulo Xot che bloccavano
 - [Script Risoluzione Conflitti](../../../bashscripts/docs/conflict_resolution_script_improvements.md)
 - [Report Completo PHPStan Fixes](../../../bashscripts/docs/phpstan_fixes_comprehensive_report.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Dicembre 2024*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

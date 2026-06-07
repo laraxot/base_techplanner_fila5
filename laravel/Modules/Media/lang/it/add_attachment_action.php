@@ -6,10 +6,6 @@ return [
     'title' => 'Allegati',
     'label' => 'Carica allegato',
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'file' => [
             'label' => 'file',
             'tooltip' => '',
@@ -57,14 +53,5 @@ return [
         'delete' => [
             'label' => 'Elimina Add Attachment Action',
         ],
-<<<<<<< HEAD
-=======
-        'file' => 'file',
-        'file_hint' => '',
-        'name' => 'Nome',
-        'name_hint' => 'nome del file',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ],
 ];

@@ -15,10 +15,6 @@ return [
         'icon' => 'gdpr-treatment',
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'name' => [
             'label' => 'Nome Trattamento',
             'tooltip' => '',
@@ -72,23 +68,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        'name' => 'Nome Trattamento',
-        'purpose' => 'Finalità',
-        'legal_basis' => 'Base Giuridica',
-        'data_categories' => 'Categorie di Dati',
-        'retention_period' => 'Periodo di Conservazione',
-        'security_measures' => 'Misure di Sicurezza',
-        'data_transfers' => 'Trasferimenti Dati',
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'legal_bases' => [
@@ -99,17 +78,8 @@ return [
         'public_interest' => 'Interesse Pubblico',
         'legitimate_interests' => 'Interessi Legittimi',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

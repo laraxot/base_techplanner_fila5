@@ -6,13 +6,6 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Modules\User\Database\Factories\ExtraFactory;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\BaseExtra;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
@@ -49,23 +42,12 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * @method static ExtraFactory factory($count = null, $state = [])
- *
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
  * @mixin IdeHelperExtra
  *
  * @property ProfileContract|null $deleter
  *
-<<<<<<< HEAD
-=======
  * @method static \Modules\User\Database\Factories\ExtraFactory factory($count = null, $state = [])
  *
->>>>>>> dev
  * @mixin \Eloquent
  */
 final class Extra extends BaseExtra

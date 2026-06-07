@@ -23,11 +23,7 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-<<<<<<< HEAD
-            // if (! $this->hasColumn('email')) {
-=======
             // if (! $this->hasColumn('email'))
->>>>>>> dev
             //    $table->string('email')->nullable();
             // }
             $this->updateUser($table);

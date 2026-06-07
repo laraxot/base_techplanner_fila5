@@ -200,10 +200,4 @@ Questa regola è ora permanentemente implementata per prevenire errori futuri!
 - [English Naming Rule](.cursor/rules/english-naming-critical-rule.mdc)
 - [Professional Standards](../README.md#naming-standards)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

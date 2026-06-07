@@ -107,11 +107,7 @@ docs/
 **Esempi trovati**:
 ```markdown
 [regole php](docs/standards/php-inheritance-rules.md)
-<<<<<<< HEAD
-public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
-=======
 public static string $projectBasePath = '../../../docs/standards/php-inheritance-rules.md)
->>>>>>> dev
 // Path configurabili tramite env, non hardcoded
 ```
 
@@ -154,24 +150,13 @@ docs/
 
 ### Da Modules/Xot/docs/ a root docs/
 ```markdown
-<<<<<<< HEAD
-[guida principale](../../../docs/guide.md)
-=======
 [guida principale](../../../../docs/guide.md)
->>>>>>> dev
 ```
 
 ### Tra moduli (Xot → User)
 ```markdown
-<<<<<<< HEAD
-<<<<<<< HEAD
-[user docs](../../user/docs/user-guide.md)
-=======
 [user docs](../../User/docs/user-guide.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 [user docs](../../user/docs/user-guide.md)
->>>>>>> dev
 ```
 
 ### All'interno dello stesso modulo
@@ -276,4 +261,3 @@ find . -name "readme.md" -o -name "Readme.md"
 2. **Applicare a tutti i moduli**: Replicare miglioramenti in Modules/*/docs/
 3. **Verificare backlink**: Assicurare collegamenti bidirezionali
 4. **Index centrali**: Creare README.md con indici per navigazione rapida
-

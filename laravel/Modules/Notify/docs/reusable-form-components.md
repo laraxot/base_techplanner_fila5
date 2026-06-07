@@ -121,11 +121,7 @@ class ChannelCheckboxList extends CheckboxList
 ### KISS (Keep It Simple, Stupid)
 - Simple API for reusing complex form fields
 - Minimal configuration needed when using these components
-<<<<<<< HEAD
-- Clear and predictable behavior
-=======
 - Clear and <nome progetto>able behavior
->>>>>>> dev
 
 ### Maintainability
 - Changes to mail template or channel selection logic only need to be made in one place
@@ -167,15 +163,8 @@ These components are used in `SendRecordsNotificationBulkAction` to replace the 
 ## Related Documentation
 - [Send Notification Bulk Action](./send-notification-bulk-action.md)
 - [Enums Documentation](../enums/)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Filament Extension Rules](../filament_extension_rules.md)
-=======
 - [Filament Extension Rules](../FILAMENT_EXTENSION_RULES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Filament Extension Rules](../FILAMENT_EXTENSION_RULES.md)
->>>>>>> dev
 
 ## Last Updated
 December 19, 2025

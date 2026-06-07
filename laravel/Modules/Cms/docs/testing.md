@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 # Cms Module Testing Guide
 
 ## Overview
 
-<<<<<<< HEAD
-This module follows the project's [testing guidelines](../docs/testing.md) and uses Pest PHP as the testing framework.
-=======
 This module follows the project's [testing guidelines](../../docs/TESTING.md) and uses Pest PHP as the testing framework.
->>>>>>> dev
 
 ## Test Structure
 
@@ -68,8 +60,6 @@ Run a specific test file:
 2. **Test Edge Cases**: Include tests for validation errors and edge cases
 3. **Keep Tests Focused**: Each test should verify one specific behavior
 4. **Use Descriptive Names**: Test names should clearly indicate what's being tested
-<<<<<<< HEAD
-=======
 # Testing Documentation
 
 ## Overview
@@ -427,6 +417,3 @@ Remember: Good tests are the foundation of reliable software development.
 ---
 
 *Last updated: January 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

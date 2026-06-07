@@ -2,18 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(Modules\UI\Tests\TestCase::class);
-
-use Illuminate\View\Component;
-=======
-namespace Modules\UI\Tests\Unit\Components;
-
-uses(TestCase::class);
-
-use Illuminate\View\Component;
-use Modules\UI\Tests\TestCase;
->>>>>>> dev
 
 test('ui components can be rendered', function () {
     $component = new class extends Component {

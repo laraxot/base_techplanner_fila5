@@ -186,15 +186,8 @@ LogicException: Plugin [spatie-translatable] is not registered for panel [xxx::a
 
 **Fix**: Registrare plugin nel panel provider
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Documentazione**: [Notify - Plugin Not Registered](../../notify/docs/errori/plugin-spatie-translatable-not-registered.md)
-=======
 **Documentazione**: [Notify - Plugin Not Registered](../../Notify/docs/errori/plugin-spatie-translatable-not-registered.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 **Documentazione**: [Notify - Plugin Not Registered](../../notify/docs/errori/plugin-spatie-translatable-not-registered.md)
->>>>>>> dev
 
 ### Errore: Undefined Method getTranslation()
 
@@ -328,18 +321,10 @@ $value = $model->field;  // Ritorna traduzione 'en' se esiste, altrimenti fallba
 - [Spatie Laravel Translatable Docs](https://spatie.be/docs/laravel-translatable/v6/introduction)
 
 ### Documentazione Interna
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Notify Integration](../../notify/docs/spatie-translatable-integration.md)
-- [Xot Filament Best Practices](../../xot/docs/filament-best-practices.md)
-=======
 - [Notify Integration](../../Notify/docs/spatie-translatable-integration.md)
 - [Xot Filament Best Practices](../../Xot/docs/filament-best-practices.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Notify Integration](../../notify/docs/spatie-translatable-integration.md)
 - [Xot Filament Best Practices](../../xot/docs/filament-best-practices.md)
->>>>>>> dev
 
 ---
 

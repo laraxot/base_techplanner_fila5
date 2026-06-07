@@ -17,11 +17,6 @@ abstract class BasePivot extends XotBasePivot
 {
     /**
      * The connection name for the model.
-<<<<<<< HEAD
-     *
-     * @var string
-=======
->>>>>>> dev
      */
     protected $connection = 'cms';
 }

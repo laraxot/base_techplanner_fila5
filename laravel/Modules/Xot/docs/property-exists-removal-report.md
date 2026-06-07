@@ -1,12 +1,6 @@
 # Report Rimozione property_exists() - Modulo Xot
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2025-01-05
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Autore**: Cascade AI
 **Stato**: ✅ COMPLETATO
 
@@ -100,15 +94,8 @@ if (isset($table->$tableProp) && is_string($table->$tableProp)) {
 
 Aggiunta sezione di stato:
 ```markdown
-<<<<<<< HEAD
-<<<<<<< HEAD
-## ✅ STATO: property_exists() ELIMINATO (Data: [DATE])
-=======
 ## ✅ STATO: property_exists() ELIMINATO (Data: 2025-01-05)
->>>>>>> 4b6b99016 (first commit)
-=======
 ## ✅ STATO: property_exists() ELIMINATO (Data: [DATE])
->>>>>>> dev
 
 **Nel modulo Xot, `property_exists()` è stato completamente eliminato dal codice eseguibile.**
 
@@ -287,12 +274,5 @@ La rimozione di `property_exists()` dal modulo Xot rappresenta un importante pas
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Report generato automaticamente - Cascade AI - [DATE]*
-=======
 *Report generato automaticamente - Cascade AI - 2025-01-05*
->>>>>>> 4b6b99016 (first commit)
-=======
 *Report generato automaticamente - Cascade AI - [DATE]*
->>>>>>> dev

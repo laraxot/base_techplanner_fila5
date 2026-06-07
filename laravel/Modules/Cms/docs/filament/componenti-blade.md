@@ -145,24 +145,12 @@ Per domande o problemi con i componenti Filament:
 
 ## Collegamenti correlati
 
-<<<<<<< HEAD
-- [Regole per l'uso dei componenti Filament](../../../../docs/rules/filament-components.mdc)
-- [Documentazione Filament nel CMS](../../../../docs/filament/componenti-blade.md)
-=======
 - [Regole per l'uso dei componenti Filament](../../../../../docs/rules/filament-components.mdc)
 - [Documentazione Filament nel CMS](../../../../../docs/filament/componenti-blade.md)
->>>>>>> dev
 - [Convenzioni namespace Filament](../convenzioni-namespace-filament.md)
 - [Personalizzazioni avanzate Filament](../filament-personalizzazioni-avanzate.md)
 
 ## Collegamenti tra versioni di componenti-blade.md
 * [componenti-blade.md](docs/filament/componenti-blade.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [componenti-blade.md](laravel/modules/cms/docs/filament/componenti-blade.md)
-=======
 * [componenti-blade.md](laravel/Modules/Cms/docs/filament/componenti-blade.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [componenti-blade.md](laravel/modules/cms/docs/filament/componenti-blade.md)
->>>>>>> dev

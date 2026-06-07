@@ -18,94 +18,44 @@ return [
         'id' => [
             'label' => 'ID',
             'placeholder' => 'ID della pagina',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'title' => [
             'label' => 'Titolo',
             'placeholder' => 'Titolo della pagina',
             'helper_text' => 'title',
             'description' => 'title',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'slug' => [
             'label' => 'Slug',
             'placeholder' => 'Slug della pagina',
             'helper_text' => 'slug',
             'description' => 'slug',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'content' => [
             'label' => 'Contenuto',
             'placeholder' => 'Contenuto della pagina',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'meta_title' => [
             'label' => 'Meta Titolo',
             'placeholder' => 'Meta titolo per SEO',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'meta_description' => [
             'label' => 'Meta Descrizione',
             'placeholder' => 'Meta descrizione per SEO',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'status' => [
             'label' => 'Stato',
@@ -116,18 +66,9 @@ return [
                 'scheduled' => 'Programmata',
                 'archived' => 'Archiviata',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'layout' => [
             'label' => 'Layout',
@@ -137,74 +78,34 @@ return [
                 'full-width' => 'Larghezza piena',
                 'sidebar' => 'Con barra laterale',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'parent_id' => [
             'label' => 'Pagina Genitore',
             'placeholder' => 'Seleziona la pagina genitore',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'order' => [
             'label' => 'Ordine',
             'placeholder' => 'Ordine di visualizzazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'lang' => [
             'label' => 'Lingua',
             'placeholder' => 'Seleziona la lingua della pagina',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'placeholder' => 'Data e ora ultima modifica',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -280,47 +181,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'Attiva/Disattiva Colonne',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'delete' => [
-            'label' => 'delete',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'message' => [
-            'label' => 'message',
-        ],
-        'footer_blocks' => [
-            'label' => 'footer_blocks',
-        ],
-        'caption' => [
-            'label' => 'caption',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -369,14 +229,6 @@ return [
             'heading' => 'Footer',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Page',
     'plural_label' => 'Page (Plurale)',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Page',
-    'plural_label' => 'Page (Plurale)',
->>>>>>> dev
 ];

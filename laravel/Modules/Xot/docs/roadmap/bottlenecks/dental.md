@@ -212,12 +212,5 @@
 ## Collegamenti tra versioni di dental.md
 * [dental.md](docs/moduli/dental.md)
 * [dental.md](docs/roadmap/moduli/dental.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [dental.md](../../../xot/docs/roadmap/bottlenecks/dental.md)
-=======
 * [dental.md](../../../Xot/docs/roadmap/bottlenecks/dental.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [dental.md](../../../xot/docs/roadmap/bottlenecks/dental.md)
->>>>>>> dev

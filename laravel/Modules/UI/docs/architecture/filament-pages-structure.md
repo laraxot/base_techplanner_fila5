@@ -177,19 +177,9 @@ class S3Test extends XotBasePage
 
 ## Collegamenti
 - [Filament Extension Rules](../../../.cursor/rules/filament-extension-rules.mdc)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [UI Module README](./readme.md)
-- [Blade Components](./blade-components.md)
-
-=======
 - [UI Module README](./README.md)
 - [Blade Components](./blade-components.md)
 
 *Ultimo aggiornamento: 2025-01-06*
->>>>>>> 4b6b99016 (first commit)
-=======
 - [UI Module README](./readme.md)
 - [Blade Components](./blade-components.md)
-
->>>>>>> dev

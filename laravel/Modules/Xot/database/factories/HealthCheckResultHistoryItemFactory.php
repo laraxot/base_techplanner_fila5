@@ -8,11 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Xot\Models\HealthCheckResultHistoryItem;
 
 /**
-<<<<<<< HEAD
- * HealthCheckResultHistoryItem Factory
-=======
  * HealthCheckResultHistoryItem Factory.
->>>>>>> dev
  *
  * @extends Factory<HealthCheckResultHistoryItem>
  */

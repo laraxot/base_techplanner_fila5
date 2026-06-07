@@ -7,10 +7,6 @@ return [
     'reset' => 'Your password has been reset!',
     'sent' => 'We have e-mailed your password reset link!',
     'token' => 'This password reset token is invalid.',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'user' => 'We can\'t find a user with that e-mail address.',
     'navigation' => [
         'label' => 'Missing Navigation Label',
@@ -25,10 +21,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
-    'user' => "We can't find a user with that e-mail address.",
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

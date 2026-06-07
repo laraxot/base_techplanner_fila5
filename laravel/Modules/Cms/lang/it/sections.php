@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -44,17 +40,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
-=======
-        'name' => 'Nome',
-        'slug' => 'Slug',
-        'class' => 'Classi CSS',
-        'id' => 'ID HTML',
-        'background_color' => 'Colore Sfondo',
-        'text_color' => 'Colore Testo',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ],
     'blocks' => [
         'logo' => [
@@ -96,10 +81,6 @@ return [
         'style' => 'Stile',
         'content' => 'Contenuti',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Sections',
     'plural_label' => 'Sections (Plurale)',
     'navigation' => [
@@ -124,9 +105,4 @@ return [
             'label' => 'Elimina Sections',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

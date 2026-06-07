@@ -216,12 +216,6 @@ Modules/TechPlanner/
 ---
 
 **Status**: ✅ Homepage completamente funzionante
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Last Update**: 2024-12-27
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Author**: Sistema di correzione automatica
 **Next Steps**: Implementazione controller API e sistema di autenticazione

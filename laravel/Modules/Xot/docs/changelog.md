@@ -1,13 +1,6 @@
 # Changelog - Modulo Xot
 
-<<<<<<< HEAD
-Tutte le modifiche significative al modulo Xot saranno documentate in questo file.
-
-<<<<<<< HEAD
-## [[DATE]] - Sessione Fix Critica
-=======
 ## [2025-06-04] - Sessione Fix Critica
->>>>>>> 4b6b99016 (first commit)
 
 ### Fixed
 - **HasXotTable.php**: Risolti if duplicati (3x) e array malformati da merge conflict
@@ -42,7 +35,6 @@ Tutte le modifiche significative al modulo Xot saranno documentate in questo fil
 - Categorie: Added, Changed, Deprecated, Removed, Fixed, Security
 - Link relativi ai documenti di dettaglio
 - Focus su COSA è cambiato e PERCHÉ
-=======
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -184,4 +176,3 @@ All notable changes to `:package_name` will be documented in this file.
 **Maintained by:** Team Laraxot PTVX
 **Format:** [Keep a Changelog](https://keepachangelog.com/)
 **Versioning:** [Semantic Versioning](https://semver.org/)
->>>>>>> dev

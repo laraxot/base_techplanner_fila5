@@ -55,12 +55,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  *
  * @property ProfileContract|null $deleter
  *
-<<<<<<< HEAD
- * @method static AttachmentFactory factory($count = null, $state = [])
-=======
  * @method static AttachmentFactory                factory($count = null, $state = [])
  * @method        array<int, array<string, mixed>> getSushiRows()
->>>>>>> dev
  *
  * @mixin \Eloquent
  */
@@ -69,22 +65,14 @@ class Attachment extends BaseModelLang implements HasMedia
     use InteractsWithMedia;
     use SushiToJsons;
 
-<<<<<<< HEAD
-    /** @var array<int, string> */
-    public $translatable = [
-=======
     /** @var list<string> */
     public array $translatable = [
->>>>>>> dev
         'title',
         'description',
         'attachment',
     ];
 
-<<<<<<< HEAD
-=======
     /** @var list<string> */
->>>>>>> dev
     protected $fillable = [
         'title',
         'description',
@@ -93,20 +81,8 @@ class Attachment extends BaseModelLang implements HasMedia
         'attachment',
     ];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    protected $casts = [
-        // 'title' => 'array',
-        'attachment' => 'array',
-    ];
-
->>>>>>> 4b6b99016 (first commit)
-    protected array $schema = [
-=======
     /** @var array<string, string> */
     protected $schema = [
->>>>>>> dev
         'id' => 'integer',
         'title' => 'json',
         'description' => 'json',
@@ -184,11 +160,7 @@ class Attachment extends BaseModelLang implements HasMedia
     public function asset(): string
     {
         // PHPStan L10: Check attachment is array before array_values
-<<<<<<< HEAD
-        if (! is_array($this->attachment)) {
-=======
         if (! \is_array($this->attachment)) {
->>>>>>> dev
             return '';
         }
 
@@ -203,11 +175,7 @@ class Attachment extends BaseModelLang implements HasMedia
         }
 
         $file = $values[0];
-<<<<<<< HEAD
-        if (! is_string($file)) {
-=======
         if (! \is_string($file)) {
->>>>>>> dev
             return '';
         }
 
@@ -218,11 +186,7 @@ class Attachment extends BaseModelLang implements HasMedia
 
         $url = $storage->url($file);
 
-<<<<<<< HEAD
-        return is_string($url) ? $url : '';
-=======
         return \is_string($url) ? $url : '';
->>>>>>> dev
     }
 
     /**

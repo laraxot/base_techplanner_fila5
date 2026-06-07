@@ -13,10 +13,6 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice.
 
 ## Collegamenti tra versioni di README.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -91,8 +87,6 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
-<<<<<<< HEAD
-=======
 * [README.md](docs/laravel-app/phpstan/README.md)
 * [README.md](docs/laravel-app/README.md)
 * [README.md](docs/moduli/struttura/README.md)
@@ -167,9 +161,6 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 # Standard Xot: Ereditarietà dei Modelli
 
@@ -181,25 +172,16 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 > Esempio di errore tipico: `Unknown column 'certifications' in 'field list'`.
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Modello Doctor (Patient)](../../../patient/docs/models/doctor.md)
 - [Gestione campi e migrazioni con STI (README Patient)](../../../patient/docs/readme.md)
 - [DoctorResource: Step Informazioni Personali (Patient)](../../../patient/docs/filament/resources/doctor-resource.md)
 - [Struttura progetto e STI (Patient)](../../../patient/docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../patient/docs/database/migrations.md)
-<<<<<<< HEAD
-=======
 - [Modello Doctor (Patient)](../../../Patient/docs/Models/Doctor.md)
 - [Gestione campi e migrazioni con STI (README Patient)](../../../Patient/docs/README.md)
 - [DoctorResource: Step Informazioni Personali (Patient)](../../../Patient/docs/filament/resources/doctor-resource.md)
 - [Struttura progetto e STI (Patient)](../../../Patient/docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../Patient/docs/database/migrations.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Regola generale
 

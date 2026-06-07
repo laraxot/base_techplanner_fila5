@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\User\Tests\Unit\Actions;
-
->>>>>>> dev
 use Jenssegers\Agent\Agent;
 use Modules\User\Actions\GetCurrentDeviceAction;
 use Modules\User\Models\Device;

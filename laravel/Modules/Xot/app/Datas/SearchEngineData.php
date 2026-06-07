@@ -12,7 +12,7 @@ use Spatie\LaravelData\Data;
  *
  * @phpstan-consistent-constructor
  */
-final class SearchEngineData extends Data
+class SearchEngineData extends Data
 {
     /**
      * @param string                   $driver         Driver del motore di ricerca (algolia, meilisearch, ecc.)
@@ -37,8 +37,8 @@ final class SearchEngineData extends Data
     /**
      * Create a new instance of SearchEngineData with default values.
      */
-    public static function make(): static
+    public static function make(): self
     {
-        return new static();
+        return new self();
     }
 }

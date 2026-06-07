@@ -19,16 +19,8 @@ return [
         'id' => [
             'label' => 'ID',
             'helper_text' => 'Уникальный идентификатор шаблона',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'mailable' => [
             'label' => 'Класс Mailable',
@@ -36,14 +28,7 @@ return [
             'help' => 'PHP класс, который обрабатывает отправку email',
             'helper_text' => 'PHP класс, управляющий отправкой email',
             'description' => 'mailable',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'subject' => [
             'label' => 'Тема',
@@ -51,14 +36,7 @@ return [
             'help' => 'Тема, которая появится в письме',
             'helper_text' => 'Тема письма',
             'description' => 'subject',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'html_template' => [
             'label' => 'HTML содержимое',
@@ -66,14 +44,7 @@ return [
             'help' => 'Содержимое письма в формате HTML',
             'helper_text' => 'HTML содержимое email шаблона',
             'description' => 'html_template',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'text_template' => [
             'label' => 'Текстовое содержимое',
@@ -81,125 +52,57 @@ return [
             'help' => 'Текстовая версия письма для клиентов, не поддерживающих HTML',
             'helper_text' => 'Текстовая версия email шаблона',
             'description' => 'text_template',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'version' => [
             'label' => 'Версия',
             'help' => 'Номер версии шаблона',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Создано',
             'helper_text' => 'Дата создания шаблона',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'updated_at' => [
             'label' => 'Последнее изменение',
             'helper_text' => 'Дата последнего изменения шаблона',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'from_email' => [
             'label' => 'Email отправителя',
             'helper_text' => 'Адрес электронной почты отправителя',
             'placeholder' => 'noreply@example.com',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'from_name' => [
             'label' => 'Имя отправителя',
             'helper_text' => 'Отображаемое имя отправителя',
             'placeholder' => 'Название компании',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'variables' => [
             'label' => 'Доступные переменные',
             'helper_text' => 'Список переменных, которые можно использовать в шаблоне',
             'placeholder' => 'напр: {{name}}, {{email}}',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'is_markdown' => [
             'label' => 'Использовать Markdown',
             'helper_text' => 'Указывает, использует ли шаблон синтаксис Markdown',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'status' => [
             'label' => 'Статус',
             'helper_text' => 'Текущий статус шаблона',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'description' => '',
         ],
@@ -238,71 +141,27 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'layout' => [
-            'label' => 'layout',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'slug' => [
             'label' => 'slug',
             'description' => 'slug',
             'helper_text' => 'slug',
             'placeholder' => 'slug',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'name' => [
             'description' => 'Название шаблона',
             'helper_text' => 'Описательное имя для идентификации шаблона',
             'placeholder' => 'Напр: Добро пожаловать, Подтверждение заказа, Сброс пароля',
             'label' => 'Название шаблона',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'params' => [
             'label' => 'Параметры',
             'helper_text' => 'Введите параметры, разделенные запятыми, которые можно использовать в шаблоне',
             'placeholder' => 'name, email, date, company',
             'description' => 'Доступные параметры для email шаблона',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
     ],
     'filters' => [
@@ -432,14 +291,6 @@ return [
     'model' => [
         'label' => 'email шаблон',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

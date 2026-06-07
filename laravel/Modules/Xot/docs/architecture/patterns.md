@@ -81,21 +81,12 @@ Elenco di pratiche da evitare nello sviluppo.
 - Tight Coupling
 
 ## Collegamenti tra versioni di patterns.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [patterns.md](../../../xot/docs/en/patterns.md)
-* [patterns.md](../../../xot/docs/it/patterns.md)
-* [patterns.md](../../../xot/docs/architecture/patterns.md)
-=======
 * [patterns.md](../../../Xot/docs/en/patterns.md)
 * [patterns.md](../../../Xot/docs/it/patterns.md)
 * [patterns.md](../../../Xot/docs/architecture/patterns.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [patterns.md](../../../xot/docs/en/patterns.md)
 * [patterns.md](../../../xot/docs/it/patterns.md)
 * [patterns.md](../../../xot/docs/architecture/patterns.md)
->>>>>>> dev
 
 ### Versione Incoming
 
@@ -103,65 +94,37 @@ Elenco di pratiche da evitare nello sviluppo.
 
 ## Clean Architecture
 ```txt
-<<<<<<< HEAD
-${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/clean_architecture.txt}
-=======
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/clean_architecture.txt}
->>>>>>> dev
 ```
 
 ## Clean Code
 ```txt
-<<<<<<< HEAD
-${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/clean_code.txt}
-=======
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/clean_code.txt}
->>>>>>> dev
 ```
 
 ## Command Bus
 ```txt
-<<<<<<< HEAD
-${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/command_bus.txt}
-=======
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/command_bus.txt}
->>>>>>> dev
 ```
 
 ## Repositories
 ```txt
-<<<<<<< HEAD
-${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/repositories.txt}
-=======
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/repositories.txt}
->>>>>>> dev
 ```
 
 ## Contracts
 ```txt
-<<<<<<< HEAD
-${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/contracts.txt}
-=======
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/contracts.txt}
->>>>>>> dev
 ```
 
 ## Presenters
 ```txt
-<<<<<<< HEAD
-${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/presenter.txt}
-=======
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/presenter.txt}
->>>>>>> dev
 ```
 
 ## Bad Practices to Avoid
 ```txt
-<<<<<<< HEAD
-${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/bad_practices.txt}
-=======
 ${cat /mnt/f/var/www/healthcare_app/laravel/Modules/Xot/_docs/bad_practices.txt}
->>>>>>> dev
 ```
 
 ---

@@ -104,14 +104,7 @@ File `tests/Feature/ScheduleBusinessLogicTest.php` will be DELETED because:
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Date**: 2026-01-09
->>>>>>> 4b6b99016 (first commit)
-=======
 **Date**: [DATE]
->>>>>>> dev
 **Status**: Test File Deleted
 **Reason**: Complete schema mismatch - test was fiction, not reality

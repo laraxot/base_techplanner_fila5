@@ -9,28 +9,16 @@ use Modules\Xot\Providers\XotBaseThemeServiceProvider;
 class ThemeServiceProvider extends XotBaseThemeServiceProvider
 {
     public string $name = 'Two';
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 
     public string $nameLower = 'two';
 
     protected string $module_dir = __DIR__;
 
-<<<<<<< HEAD
-=======
-    public string $nameLower = 'two';
-    protected string $module_dir = __DIR__;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     protected string $module_ns = __NAMESPACE__;
 
     public function register(): void
     {
         parent::register();
-        // Aggiungi qui solo logica specifica del tema
     }
 
     public function boot(): void

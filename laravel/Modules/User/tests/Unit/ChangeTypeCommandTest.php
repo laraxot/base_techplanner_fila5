@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\User\Tests\Unit;
-
->>>>>>> dev
 use Illuminate\Console\Command;
 use Modules\User\Console\Commands\ChangeTypeCommand;
 use Modules\Xot\Datas\XotData;

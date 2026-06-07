@@ -145,34 +145,17 @@ Modules/User/resources/views/pages/Auth/Logout.blade.php  # NO: maiuscole
 - Le cartelle standard Laravel devono sempre essere in lowercase
 - Le pagine Folio devono seguire la struttura `resources/views/pages/`
 ## Collegamenti tra versioni di CONVENTIONS.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [CONVENTIONS.md](../../../xot/project_docs/conventions.md)
-* [CONVENTIONS.md](../../../dental/project_docs/conventions.md)
-* [CONVENTIONS.md](../../../patient/project_docs/conventions.md)
-=======
 * [CONVENTIONS.md](../../../Xot/project_docs/CONVENTIONS.md)
 * [CONVENTIONS.md](../../../Dental/project_docs/CONVENTIONS.md)
 * [CONVENTIONS.md](../../../Patient/project_docs/CONVENTIONS.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [CONVENTIONS.md](../../../xot/project_docs/conventions.md)
 * [CONVENTIONS.md](../../../dental/project_docs/conventions.md)
 * [CONVENTIONS.md](../../../patient/project_docs/conventions.md)
->>>>>>> dev
 
 ## Collegamenti tra versioni di conventions.md
 * [conventions.md](../../../../project_docs/tecnico/filament/conventions.md)
 * [conventions.md](../../../../project_docs/conventions.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [conventions.md](../../dental/project_docs/conventions.md)
-* [conventions.md](../../patient/project_docs/conventions.md)
-=======
 * [conventions.md](../../Dental/project_docs/conventions.md)
 * [conventions.md](../../Patient/project_docs/conventions.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [conventions.md](../../dental/project_docs/conventions.md)
 * [conventions.md](../../patient/project_docs/conventions.md)
->>>>>>> dev

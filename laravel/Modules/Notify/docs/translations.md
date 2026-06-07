@@ -85,25 +85,14 @@ Notification::make()
 ## Collegamenti Bidirezionali
 
 ### Collegamenti nella Root
-<<<<<<< HEAD
-- [Architettura delle Traduzioni](../../../../docs/architecture/translations.md)
-- [Gestione Lingue](../../../../docs/architecture/languages.md)
-
-### Collegamenti ai Moduli
-<<<<<<< HEAD
-- [LangServiceProvider](../../lang/docs/service-provider.md)
-=======
 - [LangServiceProvider](../../Lang/docs/service-provider.md)
->>>>>>> 4b6b99016 (first commit)
 - [Regole Traduzioni](../../../../docs/regole/traduzioni.md)
-=======
 - [Architettura delle Traduzioni](../../../../../docs/architecture/translations.md)
 - [Gestione Lingue](../../../../../docs/architecture/languages.md)
 
 ### Collegamenti ai Moduli
 - [LangServiceProvider](../../Lang/docs/service-provider.md)
 - [Regole Traduzioni](../../../../../docs/regole/traduzioni.md)
->>>>>>> dev
 
 ## Note Importanti
 
@@ -119,28 +108,6 @@ Notification::make()
 
 ```
 ## Collegamenti tra versioni di translations.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [translations.md](../../../chart/docs/translations.md)
-* [translations.md](../../../reporting/docs/translations.md)
-* [translations.md](../../../gdpr/docs/translations.md)
-* [translations.md](../../../notify/docs/translations.md)
-* [translations.md](../../../xot/docs/roadmap/lang/translations.md)
-* [translations.md](../../../xot/docs/translations.md)
-* [translations.md](../../../dental/docs/translations.md)
-* [translations.md](../../../user/docs/translations.md)
-* [translations.md](../../../ui/docs/translations.md)
-* [translations.md](../../../lang/docs/packages/translations.md)
-* [translations.md](../../../lang/docs/translations.md)
-* [translations.md](../../../job/docs/translations.md)
-* [translations.md](../../../media/docs/translations.md)
-* [translations.md](../../../tenant/docs/translations.md)
-* [translations.md](../../../activity/docs/translations.md)
-* [translations.md](../../../patient/docs/translations.md)
-* [translations.md](../../../cms/docs/translations.md)
-=======
-=======
->>>>>>> dev
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)
 * [translations.md](../../../Gdpr/docs/translations.md)
@@ -158,9 +125,5 @@ Notification::make()
 * [translations.md](../../../Activity/docs/translations.md)
 * [translations.md](../../../Patient/docs/translations.md)
 * [translations.md](../../../Cms/docs/translations.md)
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ---

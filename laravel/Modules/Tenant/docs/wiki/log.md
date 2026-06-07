@@ -1,24 +1,3 @@
-<<<<<<< HEAD
----
-title: "Tenant wiki log"
-type: log
-tags: [tenant, sqlite, database, runtime]
-created: 2026-06-06
-updated: 2026-06-06
-qmd: "tenant sqlite database config username password runtime bootstrap"
-issues:
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/21"
-discussions:
-  - "https://github.com/laraxot/base_techplanner_fila5/discussions/19"
----
-
-# Tenant wiki log
-
-## 2026-06-06
-
-- Prevented bootstrap fatal in `TenantServiceProvider::registerDB()` by reading module-cloned connection keys with `Arr::get()`.
-- Rule: tenant DB config must support SQLite default connections that do not define `username`, `password`, `host`, or `port`.
-=======
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
@@ -53,4 +32,3 @@ _No activity yet. Start by ingesting raw documents._
 
 **Last Activity:** None  
 **Total Operations:** 0
->>>>>>> dev

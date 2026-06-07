@@ -4,15 +4,8 @@
 
 **NON possono esistere file con lo stesso nome che differiscono solo per maiuscole/minuscole nella stessa directory.**
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Riferimento completo: [Xot Module Case Sensitivity Rules](../../xot/docs/case-sensitivity-rules.md)
-=======
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../xot/docs/case-sensitivity-rules.md)
->>>>>>> dev
 
 ## File/Directory Rimossi da User Module
 

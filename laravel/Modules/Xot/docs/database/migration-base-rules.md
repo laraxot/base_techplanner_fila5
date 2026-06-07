@@ -2,25 +2,14 @@
 
 ## Regola universale
 - Usa sempre anonymous class: `return new class extends XotBaseMigration { ... }`
-<<<<<<< HEAD
-- Non implementare mai il metodo `down` se estendi XotBaseMigration
-=======
 - Usa sempre `$model_class` invece di `$table` e `$connection`
 - NON implementare il metodo `down()` (XotBaseMigration lo gestisce automaticamente)
 - Il nome del file DEVE terminare con `_table.php`
->>>>>>> dev
 - Per aggiungere colonne a tabelle esistenti:
   - Copia la migrazione originale, aggiorna il timestamp
   - Aggiungi la colonna in `tableUpdate` solo se non esiste (`if (! $this->hasColumn(...))`)
   - Aggiorna sempre questa doc, la root docs e la doc del modulo
 
-<<<<<<< HEAD
-## Motivazione
-- Prevenire conflitti di nomi
-- Garantire rollback sicuro
-- Compliance PHPStan livello 10
-- Facilitare troubleshooting e ripresa lavoro
-=======
 ## Convenzioni di Nomenclatura
 
 **REGOLA UNIVERSALE**: Tutte le migrazioni DEVONO seguire il pattern `create`:
@@ -73,7 +62,6 @@ return new class extends XotBaseMigration
     }
 };
 ```
->>>>>>> dev
 
 ## Checklist rapida
 - [ ] Anonymous class
@@ -82,38 +70,21 @@ return new class extends XotBaseMigration
 - [ ] Aggiorna sempre la doc
 
 ## Cross-reference
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Update migrazioni Performance](../../performance/project_docs/migration_update_rules.md)
-- [Root MODULE_NAMESPACE_RULES.md](../../../project_docs/module_namespace_rules.md)
-=======
 - [Update migrazioni Performance](../../Performance/project_docs/migration_update_rules.md)
 - [Root MODULE_NAMESPACE_RULES.md](../../../project_docs/MODULE_NAMESPACE_RULES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Update migrazioni Performance](../../performance/project_docs/migration_update_rules.md)
 - [Root MODULE_NAMESPACE_RULES.md](../../../project_docs/module_namespace_rules.md)
->>>>>>> dev
 
 ---
 
 ## Backlink
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Regole update migrazioni Performance](../../performance/project_docs/migration_update_rules.md) ← questa doc è sempre aggiornata
-- [Ripresa lavoro migrazioni in root](../../../project_docs/module_namespace_rules.md)
-
-=======
 - [Regole update migrazioni Performance](../../Performance/project_docs/migration_update_rules.md) ← questa doc è sempre aggiornata
 - [Ripresa lavoro migrazioni in root](../../../project_docs/MODULE_NAMESPACE_RULES.md)
 
 Ultimo aggiornamento: 2025-05-13
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Regole update migrazioni Performance](../../performance/project_docs/migration_update_rules.md) ← questa doc è sempre aggiornata
 - [Ripresa lavoro migrazioni in root](../../../project_docs/module_namespace_rules.md)
 
->>>>>>> dev
 
 ---
 
@@ -125,15 +96,8 @@ Ultimo aggiornamento: 2025-05-13
 ---
 
 **Backlink modulo Performance:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Modules/Performance/project_docs/azioni_organizzativa.md](../../performance/project_docs/azioni_organizzativa.md)
-=======
 - [Modules/Performance/project_docs/azioni_organizzativa.md](../../Performance/project_docs/azioni_organizzativa.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Modules/Performance/project_docs/azioni_organizzativa.md](../../performance/project_docs/azioni_organizzativa.md)
->>>>>>> dev
 
 ---
 

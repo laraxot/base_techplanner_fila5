@@ -69,11 +69,7 @@ final class SendTwilioSMSAction implements SmsActionContract
             $to = '+39'.$to;
         }
 
-<<<<<<< HEAD
-        $from = $smsData->from ?? $this->defaultSender;
-=======
         $from = $smsData->from ?: $this->defaultSender;
->>>>>>> dev
 
         // Twilio richiede l'autenticazione Basic
         $client = new Client([

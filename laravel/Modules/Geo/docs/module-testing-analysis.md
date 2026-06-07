@@ -16,10 +16,7 @@ Questo documento fornisce un'analisi completa dello stato attuale di factory, se
 - **Test**: 90%+ copertura per business logic critica
 - **Documentazione**: Cartelle docs ottimizzate come memoria AI
 
-<<<<<<< HEAD
 ## 📈 Stato Attuale Aggiornato
-=======
->>>>>>> dev
 
 ### ✅ Moduli Completati (Test Business Logic)
 
@@ -355,10 +352,6 @@ Questo documento fornisce un'analisi completa dello stato attuale di factory, se
 ## 📚 Documentazione e Riferimenti
 
 ### File di Analisi Moduli
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [<nome progetto>](../laravel/modules/<nome progetto>/docs/module-analysis-complete.md)
 - [<nome modulo>](../laravel/modules/<nome modulo>/docs/module-analysis-complete.md)
 - [<nome progetto>](../laravel/modules/<nome progetto>/docs/module-analysis-complete.md)
@@ -376,8 +369,6 @@ Questo documento fornisce un'analisi completa dello stato attuale di factory, se
 
 ### Documentazione Root
 - [README Principale](../readme.md)
-<<<<<<< HEAD
-=======
 - [<nome progetto>](../laravel/Modules/<nome progetto>/docs/module-analysis-complete.md)
 - [<nome modulo>](../laravel/Modules/<nome modulo>/docs/module-analysis-complete.md)
 - [<nome progetto>](../laravel/Modules/<nome progetto>/docs/module-analysis-complete.md)
@@ -395,21 +386,15 @@ Questo documento fornisce un'analisi completa dello stato attuale di factory, se
 
 ### Documentazione Root
 - [README Principale](../README.md)
->>>>>>> 4b6b99016 (first commit)
 - [Analisi Testing](../docs/module-testing-analysis.md)
 
 ---
 
-<<<<<<< HEAD
-=======
 **Ultimo aggiornamento**: Dicembre 2024
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Analisi Testing](../../docs/module-testing-analysis.md)
 
 ---
 
->>>>>>> dev
 **Versione**: 2.1
 **Stato**: 100% moduli completati (14/14) ✅
 **Copertura Media**: 85%

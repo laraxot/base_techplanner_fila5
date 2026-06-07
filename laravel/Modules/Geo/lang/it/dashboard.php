@@ -12,15 +12,7 @@ return [
         ],
         'label' => 'Dashboard',
         'sort' => 30,
-<<<<<<< HEAD
-<<<<<<< HEAD
         'icon' => 'ui-dashboard',
-=======
-        'icon' => 'ui-dashboard', // Aggiornamento dell'icona della dashboard usando la nuova icona dashboard
->>>>>>> 4b6b99016 (first commit)
-=======
-        'icon' => 'ui-dashboard',
->>>>>>> dev
     ],
     'widgets' => [
         'total_locations' => 'Totale Località',
@@ -33,10 +25,6 @@ return [
         'places_by_category' => 'Luoghi per Categoria',
         'activity_timeline' => 'Timeline Attività',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Dashboard',
     'plural_label' => 'Dashboard (Plurale)',
     'fields' => [
@@ -70,9 +58,4 @@ return [
             'label' => 'Elimina Dashboard',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

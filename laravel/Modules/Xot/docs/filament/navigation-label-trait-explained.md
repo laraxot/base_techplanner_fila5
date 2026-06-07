@@ -313,15 +313,8 @@ Ordinare risorse per frequenza uso:
 ## Collegamenti
 
 ### Documentazione Interna
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Progressioni MailTemplate Integration](../../progressioni/docs/mailtemplate-resource-integration.md)
-=======
 - [Progressioni MailTemplate Integration](../../Progressioni/docs/mailtemplate-resource-integration.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Progressioni MailTemplate Integration](../../progressioni/docs/mailtemplate-resource-integration.md)
->>>>>>> dev
 - [TransTrait](./trans-trait.md)
 - [GetTransKeyAction](../actions/get-trans-key-action.md)
 

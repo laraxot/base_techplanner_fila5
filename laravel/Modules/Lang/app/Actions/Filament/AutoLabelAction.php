@@ -6,10 +6,7 @@ namespace Modules\Lang\Actions\Filament;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\Field;
-<<<<<<< HEAD
-=======
 use Filament\Infolists\Components\Entry;
->>>>>>> dev
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Tables\Columns\Column;
@@ -32,11 +29,7 @@ class AutoLabelAction
      * Undocumented function.
      * return number of input added.
      */
-<<<<<<< HEAD
-    public function execute(Field|BaseFilter|Column|Step|Action|Section $component, string $type = 'label'): Field|BaseFilter|Column|Step|Action|Section
-=======
     public function execute(Field|Entry|BaseFilter|Column|Step|Action|Section $component, string $type = 'label'): Field|Entry|BaseFilter|Column|Step|Action|Section
->>>>>>> dev
     {
         $backtrace = debug_backtrace();
         $backtrace_slice = array_slice($backtrace, 2);

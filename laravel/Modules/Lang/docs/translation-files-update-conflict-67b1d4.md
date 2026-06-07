@@ -1,15 +1,8 @@
 # Aggiornamento File di Traduzione - Gennaio 2025
 
 ## Data Aggiornamento
-<<<<<<< HEAD
-<<<<<<< HEAD
-[DATE]
-=======
 2025-01-27
->>>>>>> 4b6b99016 (first commit)
-=======
 [DATE]
->>>>>>> dev
 
 ## File Modificati
 
@@ -127,21 +120,12 @@ return [
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Translation Rules](../xot/docs/translation_rules.md)
-- [Translation Standards](./translation-standards.md)
-- [Best Practices](../xot/docs/translations-best-practices.md)
-=======
 - [Translation Rules](../Xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Translation Rules](../xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../xot/docs/translations-best-practices.md)
->>>>>>> dev
 
 ## Prossimi Passi
 

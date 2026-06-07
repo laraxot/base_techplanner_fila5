@@ -28,11 +28,7 @@ use Webmozart\Assert\Assert;
 use function Safe\json_encode;
 
 /**
-<<<<<<< HEAD
- * @property \Filament\Schemas\Schema $notificationForm
-=======
  * @property Schema $notificationForm
->>>>>>> dev
  */
 class SendPushNotificationPage extends XotBasePage
 {
@@ -184,12 +180,8 @@ class SendPushNotificationPage extends XotBasePage
         // Verifichiamo che deviceToken sia una stringa non vuota (per soddisfare il tipo non-empty-string)
         Assert::stringNotEmpty($deviceToken, 'Il token del dispositivo non può essere vuoto');
 
-<<<<<<< HEAD
-        $message = CloudMessage::withTarget('token', $deviceToken)
-=======
         $message = CloudMessage::new()
             ->withToken($deviceToken)
->>>>>>> dev
             ->withHighestPossiblePriority()
             ->withData($messageData);
 

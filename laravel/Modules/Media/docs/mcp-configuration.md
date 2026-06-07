@@ -36,11 +36,8 @@ The Media module's MCP configuration enables AI assistants to interact with:
     },
     "filesystem": {
       "command": "npx",
-<<<<<<< HEAD
-=======
       "args": ["-y", "@modelcontextprotocol/server-filesystem", ". progetto>/laravel"],
 ||||||| parent of 53258b2 (.)
->>>>>>> dev
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_laravelpizza/laravel"],
       "description": "Access to Media module files"
     },
@@ -48,11 +45,8 @@ The Media module's MCP configuration enables AI assistants to interact with:
       "command": "npx",
       "args": ["-y", "@bytebase/dbhub"],
       "env": {
-<<<<<<< HEAD
-=======
         "DATABASE_URL": "sqlite://. progetto>/laravel/database/database.sqlite"
 ||||||| parent of 53258b2 (.)
->>>>>>> dev
         "DATABASE_URL": "sqlite:///var/www/_bases/base_laravelpizza/laravel/database/database.sqlite"
       },
       "description": "SQLite database queries"
@@ -68,11 +62,7 @@ The Media module's MCP configuration enables AI assistants to interact with:
 ### Asana Integration
 ```bash
 # Create task
-<<<<<<< HEAD
-"Create task in 'LaravelPizza - Media Module' project: 'Increase test coverage to 90%'"
-=======
 "Create task in '<nome progetto> - Media Module' project: 'Increase test coverage to 90%'"
->>>>>>> dev
 
 # Update status
 "Update task 'Reduce PHPStan suppressions' status to 'In Progress'"
@@ -125,15 +115,9 @@ The Media module's MCP configuration enables AI assistants to interact with:
 
 ## 📚 Related Documentation
 
-<<<<<<< HEAD
-- [Asana MCP Configuration](../../../docs/mcp-asana-configuration.md)
-- [ClickUp MCP Configuration](../../../docs/mcp-clickup-configuration.md)
-- [Redmine MCP Configuration](../../../docs/mcp-redmine-configuration.md)
-=======
 - [Asana MCP Configuration](../../../../docs/mcp-asana-configuration.md)
 - [ClickUp MCP Configuration](../../../../docs/mcp-clickup-configuration.md)
 - [Redmine MCP Configuration](../../../../docs/mcp-redmine-configuration.md)
->>>>>>> dev
 - [Media Module Roadmap](./roadmap-[date].md)
 
 ---

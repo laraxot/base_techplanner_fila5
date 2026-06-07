@@ -9,10 +9,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 ## 🚀 **Inizio Rapido**
 
 ### **Per Sviluppatori**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 1. [README.md](readme.md) - Documentazione principale e panoramica
 2. [config/lang.php](../config/lang.php) - Configurazione centralizzata
 3. [EXAMPLES.md](examples.md) - Esempi pratici e casi d'uso
@@ -26,8 +22,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 1. [API_REFERENCE.md](api_reference.md) - Riferimento API completo
 2. [EXAMPLES.md](examples.md) - Esempi di integrazione
 3. [BEST_PRACTICES.md](best_practices.md) - Pattern di implementazione
-<<<<<<< HEAD
-=======
 1. [README.md](README.md) - Documentazione principale e panoramica
 2. [config/lang.php](../config/lang.php) - Configurazione centralizzata
 3. [EXAMPLES.md](EXAMPLES.md) - Esempi pratici e casi d'uso
@@ -41,9 +35,6 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 1. [API_REFERENCE.md](API_REFERENCE.md) - Riferimento API completo
 2. [EXAMPLES.md](EXAMPLES.md) - Esempi di integrazione
 3. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Pattern di implementazione
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ---
 
@@ -58,15 +49,8 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Setup Iniziale**: [README.md](README.md#installazione)
 - **Configurazione**: [README.md](README.md#configurazione)
 - **Utilizzo Base**: [README.md](README.md#utilizzo)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Esempi Pratici**: [EXAMPLES.md](examples.md)
-=======
 - **Esempi Pratici**: [EXAMPLES.md](EXAMPLES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - **Esempi Pratici**: [EXAMPLES.md](examples.md)
->>>>>>> dev
 
 ### **🎨 Integrazione Filament**
 - **Componenti Automatici**: [EXAMPLES.md](EXAMPLES.md#integrazione-filament)
@@ -102,14 +86,8 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - **Migrazione**: [BEST_PRACTICES.md](BEST_PRACTICES.md#migrazione-versioni)
 - **Rollback**: [BEST_PRACTICES.md](BEST_PRACTICES.md#rollback-e-recovery)
 - **Backup**: [TROUBLESHOOTING.md](TROUBLESHOOTING.md#emergenze-e-rollback)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - **Repository Composer Path**: [bugfix/composer-path-repository-priority.md](bugfix/composer-path-repository-priority.md)
->>>>>>> dev
 
 ---
 
@@ -122,18 +100,10 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - Utilizzo helper `__()` e `trans()`
 
 **Documenti da Leggere**
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. [README.md](readme.md) - Sezioni: Panoramica, Installazione, Utilizzo
-2. [EXAMPLES.md](examples.md) - Sezioni: Struttura File Base
-=======
 1. [README.md](README.md) - Sezioni: Panoramica, Installazione, Utilizzo
 2. [EXAMPLES.md](EXAMPLES.md) - Sezioni: Struttura File Base
->>>>>>> 4b6b99016 (first commit)
-=======
 1. [README.md](readme.md) - Sezioni: Panoramica, Installazione, Utilizzo
 2. [EXAMPLES.md](examples.md) - Sezioni: Struttura File Base
->>>>>>> dev
 3. [config/lang.php](../config/lang.php) - Configurazioni base
 
 **Obiettivi**
@@ -148,21 +118,12 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - Validazione e controllo qualità
 
 **Documenti da Leggere**
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. [BEST_PRACTICES.md](best_practices.md) - Tutte le sezioni
-2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
-3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
-=======
 1. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Tutte le sezioni
 2. [EXAMPLES.md](EXAMPLES.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Problemi comuni
->>>>>>> 4b6b99016 (first commit)
-=======
 1. [BEST_PRACTICES.md](best_practices.md) - Tutte le sezioni
 2. [EXAMPLES.md](examples.md) - Integrazione Filament e Testing
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi comuni
->>>>>>> dev
 
 **Obiettivi**
 - Implementare best practices
@@ -176,21 +137,12 @@ Questo indice fornisce una mappa completa della documentazione del modulo Lang, 
 - Estensioni e plugin
 
 **Documenti da Leggere**
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. [API_REFERENCE.md](api_reference.md) - Tutte le sezioni
-2. [BEST_PRACTICES.md](best_practices.md) - Pattern avanzati
-3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
-=======
 1. [API_REFERENCE.md](API_REFERENCE.md) - Tutte le sezioni
 2. [BEST_PRACTICES.md](BEST_PRACTICES.md) - Pattern avanzati
 3. [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Problemi complessi
->>>>>>> 4b6b99016 (first commit)
-=======
 1. [API_REFERENCE.md](api_reference.md) - Tutte le sezioni
 2. [BEST_PRACTICES.md](best_practices.md) - Pattern avanzati
 3. [TROUBLESHOOTING.md](troubleshooting.md) - Problemi complessi
->>>>>>> dev
 
 **Obiettivi**
 - Estendere funzionalità
@@ -344,8 +296,5 @@ php artisan lang:debug [--log-missing] [--log-performance]
 **Versione**: 2.0.0
 **Autore**: Team Laraxot
 **Mantenuto da**: Community Laraxot
-<<<<<<< HEAD
-=======
 
 - [Conflict Resolution](conflict-resolution.md)
->>>>>>> dev

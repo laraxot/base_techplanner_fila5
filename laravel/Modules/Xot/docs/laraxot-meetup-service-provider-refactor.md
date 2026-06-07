@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Laraxot MeetupServiceProvider Refactor - [DATE]
-
-=======
 # Laraxot MeetupServiceProvider Refactor - 2025-12-16
 
 **Data**: 2025-12-16
->>>>>>> 4b6b99016 (first commit)
-=======
 # Laraxot MeetupServiceProvider Refactor - [DATE]
 
->>>>>>> dev
 **Analista**: Super Mucca AI
 **Status**: ✅ COMPLETATO - Piena Compliance Laraxot
 

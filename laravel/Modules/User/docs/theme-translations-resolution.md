@@ -398,11 +398,7 @@ php artisan lang:missing --locale=it,en,de
 - [Filament Best Practices](filament_best_practices.md)
 
 ### Collegamenti Esterni
-<<<<<<< HEAD
-- [Translation Standards](../../../project_docs/translation-standards.md)
-=======
 - [Translation Standards](../../../../docs/project/translation-standards.md)
->>>>>>> dev
 - [Theme Documentation](../../../themes/two/project_docs/readme.md)
 
 ## Note per Sviluppatori

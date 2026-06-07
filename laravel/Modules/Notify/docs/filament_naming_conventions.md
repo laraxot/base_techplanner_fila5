@@ -1,10 +1,6 @@
 # Convenzioni di Naming per Filament 
 
-<<<<<<< HEAD
-Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema SaluteOra, con particolare attenzione alle pagine e alle risorse.
-=======
 Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema Quaeris, con particolare attenzione alle pagine e alle risorse.
->>>>>>> dev
 
 ## Convenzioni di Naming per Pagine Filament
 

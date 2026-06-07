@@ -5,19 +5,13 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Forms\Components;
 
 use Filament\Forms\Components\Field;
-<<<<<<< HEAD
-=======
 use Modules\Xot\Actions\View\GetViewByClassAction;
->>>>>>> dev
 
 /**
  * Base class for form components.
  *
  * @method static static make(string $name) Create a new instance of the component
  */
-<<<<<<< HEAD
-abstract class XotBaseField extends Field {}
-=======
 abstract class XotBaseField extends Field
 {
     /**
@@ -37,4 +31,3 @@ abstract class XotBaseField extends Field
         return app(GetViewByClassAction::class)->execute($class);
     }
 }
->>>>>>> dev

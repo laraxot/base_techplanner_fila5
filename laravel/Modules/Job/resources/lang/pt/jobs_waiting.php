@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -75,38 +71,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'connection' => [
-            'label' => 'Conexão',
-        ],
-        'queue' => [
-            'label' => 'Fila',
-        ],
-        'payload' => [
-            'label' => 'Carga Útil',
-        ],
-        'attempts' => [
-            'label' => 'Tentativas',
-        ],
-        'status' => [
-            'label' => 'Status',
-        ],
-        'display_name' => [
-            'label' => 'Nome de Exibição',
-        ],
-        'reserved_at' => [
-            'label' => 'Reservado Em',
-        ],
-        'available_at' => [
-            'label' => 'Disponível Em',
-        ],
-        'created_at' => [
-            'label' => 'Criado Em',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [

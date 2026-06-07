@@ -64,31 +64,15 @@ return [
             'label' => 'Allegato',
             'placeholder' => 'Seleziona un file da allegare',
             'helper_text' => 'File di test per verificare le operazioni S3',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'debug_output' => [
             'label' => 'Output Debug',
             'placeholder' => 'I risultati dei test appariranno qui',
             'helper_text' => 'Output dettagliato dei test eseguiti',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'messages' => [
@@ -117,10 +101,6 @@ return [
         'check_cloudfront_config' => 'Verifica la configurazione CloudFront',
         'contact_admin' => 'Contatta l\'amministratore del sistema',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'S3test',
     'plural_label' => 'S3test (Plurale)',
     'navigation' => [
@@ -134,9 +114,4 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

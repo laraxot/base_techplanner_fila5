@@ -1,13 +1,7 @@
 # Raccomandazioni per lo Sviluppo del Sistema Email Stagionali
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 19 Dicembre 2025  
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data**: 19 Dicembre 2025  
->>>>>>> dev
 **Progetto**: TechPlanner Laravel Multi-Tenant Application  
 **Tipo**: Linee guida e raccomandazioni  
 **Stato**: ✅ Completato  
@@ -232,13 +226,7 @@ Queste raccomandazioni rappresentano un punto di riferimento per tutti gli svilu
 ---
 
 **Autore**: iFlow CLI  
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 19 Dicembre 2025  
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data**: 19 Dicembre 2025  
->>>>>>> dev
 **Versione**: 1.0  
 **Approvazione**: Sistema Pronto per la Produzione

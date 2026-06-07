@@ -4,17 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Enums;
 
-<<<<<<< HEAD
-use Filament\Support\Contracts\HasColor;
-use Filament\Support\Contracts\HasIcon;
-use Filament\Support\Contracts\HasLabel;
-use Modules\Xot\Filament\Traits\TransTrait;
-=======
 use Modules\Xot\Traits\EnumTrait;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
->>>>>>> dev
 
 /**
  * Enum per i driver SMS supportati
@@ -24,11 +17,7 @@ use Filament\Support\Contracts\HasLabel;
  */
 enum SmsDriverEnum: string implements HasColor, HasIcon, HasLabel
 {
-<<<<<<< HEAD
-    use TransTrait;
-=======
     use EnumTrait;
->>>>>>> dev
 
     case SMSFACTOR = 'smsfactor';
     case TWILIO = 'twilio';
@@ -38,27 +27,6 @@ enum SmsDriverEnum: string implements HasColor, HasIcon, HasLabel
     case NETFUN = 'netfun';
     case AGILETELECOM = 'agiletelecom';
 
-<<<<<<< HEAD
-    public function getLabel(): string
-    {
-        return $this->transClass(self::class, $this->value.'.label');
-    }
-
-    public function getColor(): string
-    {
-        return $this->transClass(self::class, $this->value.'.color');
-    }
-
-    public function getIcon(): string
-    {
-        return $this->transClass(self::class, $this->value.'.icon');
-    }
-
-    public function getDescription(): string
-    {
-        return $this->transClass(self::class, $this->value.'.description');
-    }
-=======
     
 
     
@@ -66,7 +34,6 @@ enum SmsDriverEnum: string implements HasColor, HasIcon, HasLabel
     
 
     
->>>>>>> dev
 
     /**
      * Restituisce il driver predefinito dal file di configurazione

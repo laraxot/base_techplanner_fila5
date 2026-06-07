@@ -7,10 +7,6 @@ return [
         'label' => 'Navigation Label',
         'group' => 'Geo',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Webbingbrasil Map',
     'plural_label' => 'Webbingbrasil Map (Plurale)',
     'fields' => [
@@ -44,9 +40,4 @@ return [
             'label' => 'Elimina Webbingbrasil Map',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

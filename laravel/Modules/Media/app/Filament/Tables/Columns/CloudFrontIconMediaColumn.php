@@ -18,14 +18,6 @@ class CloudFrontIconMediaColumn extends IconColumn
             if (is_object($record) && method_exists($record, 'getFirstMedia')) {
                 return $record->getFirstMedia($attachment);
             }
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-=======
-            return null;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         })
             ->icon('heroicon-o-document-text')
             ->color(function ($record) use ($attachment): string {

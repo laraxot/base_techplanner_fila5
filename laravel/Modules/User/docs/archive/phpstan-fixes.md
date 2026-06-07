@@ -205,15 +205,9 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 ## 🔗 Collegamenti
 
 - [← User Module README](./readme.md)
-<<<<<<< HEAD
-- [← PHPStan Session Report](../../../docs/phpstan/filament-v4-fixes-session.md)
-- [← Final Report](../../../docs/phpstan/final-report-session-2025-10-01.md)
-- [← Root Documentation](../../../docs/index.md)
-=======
 - [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Final Report](../../../../docs/phpstan/final-report-session-2025-10-01.md)
 - [← Root Documentation](../../../../docs/index.md)
->>>>>>> dev
 
 ---
 
@@ -236,5 +230,3 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 **PHPStan Level**: 9  
 **Prossima sessione**: 2 Ottobre 2025  
 **Obiettivo**: 0 errori User + Xot
-
-

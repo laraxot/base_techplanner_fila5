@@ -198,11 +198,7 @@ class UserServiceProvider extends XotBaseServiceProvider
 
 ```json
 {
-<<<<<<< HEAD
-    "name": "laraxot/module_user_fila3",
-=======
     "name": "laraxot/module_user_fila5",
->>>>>>> dev
     "extra": {
         "laravel": {
             "providers": [

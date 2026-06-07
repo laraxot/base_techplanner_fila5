@@ -153,8 +153,6 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 **Ultimo aggiornamento**: Gennaio 2025
 **Motivazione**: Enforcement della separazione tra codice applicativo e script operativi
 **Filosofia**: "Separazione delle responsabilità, organizzazione scalabile, deploy pulito"
-<<<<<<< HEAD
-=======
 ## Regola Operativa Rafforzata
 
 Gli script standalone di progetto non devono vivere dentro `laravel/Modules/*/`.
@@ -170,4 +168,3 @@ Motivo:
 - separa chiaramente codice applicativo da tooling operativo
 - evita che PHPStan/quality gates del modulo analizzino script non applicativi
 - riallinea `base_predict_fila5` ai progetti gemelli sotto `/var/www/_bases`
->>>>>>> dev

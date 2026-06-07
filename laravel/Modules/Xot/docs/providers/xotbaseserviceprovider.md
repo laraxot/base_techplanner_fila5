@@ -1,14 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 ---
 description:
 globs:
 alwaysApply: false
 ---
-<<<<<<< HEAD
-=======
 # XotBaseServiceProvider
 
 ## Descrizione
@@ -184,6 +178,3 @@ try {
 3. I percorsi sono relativi alla root del modulo
 4. Le eccezioni vengono gestite con fallback appropriati
 5. La registrazione dei componenti è automatica ma configurabile
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

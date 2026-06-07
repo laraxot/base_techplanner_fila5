@@ -24,24 +24,8 @@ Route::middleware('api')->group(function () {
     if (file_exists(base_path('Modules/TechPlanner/routes/api.php'))) {
         require base_path('Modules/TechPlanner/routes/api.php');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
     // Carica rotte API del modulo Xot
     if (file_exists(base_path('Modules/Xot/routes/api.php'))) {
         require base_path('Modules/Xot/routes/api.php');
     }
 });
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

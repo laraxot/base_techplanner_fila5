@@ -19,12 +19,6 @@
 - Test che verifica la presenza di tutte le chiavi di traduzione.
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [docs root](../../../../docs/actions.md)
-- [docs Xot](../../../xot/docs/module_namespace_rules.md)
-
-=======
 - [docs root](../../../../project_docs/actions.md)
 - [docs Xot](../../../Xot/project_docs/MODULE_NAMESPACE_RULES.md)
 # Gestione automatica delle label in Filament tramite LangServiceProvider
@@ -50,9 +44,5 @@
 ## Collegamenti
 - [docs root](../../../../docs/actions.md)
 - [docs Xot](../../../Xot/docs/MODULE_NAMESPACE_RULES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [docs root](../../../../../docs/actions.md)
 - [docs Xot](../../../xot/docs/module_namespace_rules.md)
-
->>>>>>> dev

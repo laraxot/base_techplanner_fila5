@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\User\Tests\Unit\Datas;
-
->>>>>>> dev
 use Modules\User\Datas\PasswordData;
 use Modules\User\Tests\TestCase;
 use Spatie\LaravelData\Data;
@@ -143,10 +138,5 @@ test('password data has correct strict types declaration', function (): void {
 
     if ($filename) {
         $content = file_get_contents($filename);
-<<<<<<< HEAD
-        expect($content)->toContain('declare(strict_types=1);');
-=======
-        expect($content)->toContain('');
->>>>>>> dev
     }
 });

@@ -1,21 +1,12 @@
 # Utilizzo di mcamara/laravel-localization
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README modulo Lang](./readme.md)
-- [Best Practices Chiavi di Traduzione](./translation_keys_best_practices.md)
-- [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header_language_selector_with_flags.md)
-=======
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
->>>>>>> dev
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -247,21 +238,12 @@ Questi middleware sono già configurati  e non è necessario modificarli.
 # Utilizzo di mcamara/laravel-localization
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README modulo Lang](./readme.md)
-- [Best Practices Chiavi di Traduzione](./translation_keys_best_practices.md)
-- [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header_language_selector_with_flags.md)
-=======
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
->>>>>>> dev
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

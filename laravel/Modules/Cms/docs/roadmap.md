@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 # Roadmap (Module Cms)
 
 ## Current roadmap
@@ -75,7 +72,6 @@ Il modulo Cms fornisce:
 - Buona copertura test (91 file)
 - 10 suppressioni PHPStan da risolvere
 - Sistema blocks funzionante ma estensibile
->>>>>>> dev
 # 🎯 CMS MODULE - ROADMAP 2025
 
 **Modulo**: Cms ([Description])  
@@ -284,20 +280,13 @@ Cms Module
 
 ---
 
-<<<<<<< HEAD
-**Last Updated**: 2025-10-01
-=======
 **
->>>>>>> dev
 **Next Review**: 2025-11-01
 **Status**: 🚧 PLANNING  
 **Confidence Level**: 70%  
 
 ---
 
-<<<<<<< HEAD
-*Questa roadmap è specifica per il modulo Cms e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
-=======
 # CMS Module - Complete Roadmap
 
 ## Module Overview
@@ -500,7 +489,4 @@ Cms/
 **Last Updated**: 2026-01-02
 **Maintainer**: Team Laraxot
 **Status**: Active Development
->>>>>>> 4b6b99016 (first commit)
-=======
 *Questa roadmap è specifica per il modulo Cms e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
->>>>>>> dev

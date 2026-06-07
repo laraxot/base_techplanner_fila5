@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\Cms\Http\Middleware;
 
 use Illuminate\Contracts\Http\Kernel;
-<<<<<<< HEAD
-=======
 use Illuminate\Database\Eloquent\ModelNotFoundException;
->>>>>>> dev
 use Illuminate\Http\Request;
 use Modules\Cms\Models\Page;
 use Symfony\Component\HttpFoundation\Response;
@@ -32,9 +29,6 @@ class PageSlugMiddleware
             return $response;
         }
 
-<<<<<<< HEAD
-        $middlewares = Page::getMiddlewareBySlug($slug);
-=======
         try {
             $middlewares = Page::getMiddlewareBySlug($slug);
         } catch (ModelNotFoundException $e) {
@@ -44,7 +38,6 @@ class PageSlugMiddleware
             // Any other error - continue without middleware
             $middlewares = [];
         }
->>>>>>> dev
         // Should return ["auth", "Modules\User\Http\Middleware\EnsureUserHasType:doctor"]
 
         if (empty($middlewares)) {

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 @props([
     'title' => '',
     'description' => '',
@@ -46,8 +42,6 @@
                             <div class="text-sm text-gray-500">
                                 {{ $stat['description'] }}
                             </div>
-<<<<<<< HEAD
-=======
 {{-- Stats Overview Block - Theme Two --}}
 <section class="py-12 {{ $background_color ?? 'bg-gray-50' }}">
     <div class="max-w-6xl mx-auto px-4">
@@ -67,21 +61,14 @@
                         @endif
                         @if(isset($stat['description']))
                             <div class="text-sm text-gray-600">{{ $stat['description'] }}</div>
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                         @endif
                     </div>
                 @endforeach
             </div>
         @endif
     </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
 </section>
-=======
-</section>
->>>>>>> 4b6b99016 (first commit)
-=======
-</section>
->>>>>>> dev
+
+
+
+

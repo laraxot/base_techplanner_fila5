@@ -432,13 +432,8 @@ test('hasRole works with guard parameter', function () {
 - [API Reference](https://github.com/spatie/laravel-permission/blob/main/src/Traits/HasRoles.php)
 
 ### Root Progetto
-<<<<<<< HEAD
-- [DRY Violations](../../../docs/dry-violations-analysis.md)
-- [Code Quality](../../../docs/code-quality-analysis.md)
-=======
 - [DRY Violations](../../../../docs/dry-violations-analysis.md)
 - [Code Quality](../../../../docs/code-quality-analysis.md)
->>>>>>> dev
 
 ## Conclusioni
 
@@ -461,4 +456,3 @@ La rimozione dei metodi duplicati in `BaseUser`:
 
 > **"Se esiste già, non reinventare la ruota"**  
 > Spatie ha fatto il lavoro per noi, usalo!
-

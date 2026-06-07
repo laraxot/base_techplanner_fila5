@@ -95,11 +95,7 @@ class ColumnBuilder
     /**
      * Status badge column with standard colors.
      *
-<<<<<<< HEAD
-     * @param  array<string, string>  $customColors  Custom color mappings
-=======
      * @param array<string, string> $customColors Custom color mappings
->>>>>>> dev
      */
     public static function statusBadge(array $customColors = []): TextColumn
     {
@@ -118,11 +114,7 @@ class ColumnBuilder
     /**
      * Priority badge column.
      *
-<<<<<<< HEAD
-     * @param  array<string, string>  $customColors  Custom color mappings
-=======
      * @param array<string, string> $customColors Custom color mappings
->>>>>>> dev
      */
     public static function priorityBadge(array $customColors = []): TextColumn
     {
@@ -196,11 +188,7 @@ class ColumnBuilder
         bool $sortable = true,
         bool $dateTime = true,
         bool $toggleable = true,
-<<<<<<< HEAD
-        bool $hiddenByDefault = true
-=======
         bool $hiddenByDefault = true,
->>>>>>> dev
     ): TextColumn {
         $column = TextColumn::make('updated_at')
             ->sortable($sortable);

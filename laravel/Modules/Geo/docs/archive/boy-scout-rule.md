@@ -93,15 +93,8 @@ Questa regola è **SACRA** e **IMMUTABILE** nel progetto <nome progetto>. Ogni m
 ## Collegamenti
 
 - [Regola Cursor](../../.cursor/rules/boy-scout-rule.mdc)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Regola <nome progetto>](../laravel/modules/<nome progetto>/docs/boy-scout-rule.md)
-=======
 - [Regola <nome progetto>](../laravel/Modules/<nome progetto>/docs/boy-scout-rule.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Regola <nome progetto>](../laravel/modules/<nome progetto>/docs/boy-scout-rule.md)
->>>>>>> dev
 - [Convenzioni Laraxot](laraxot-conventions.md)
 - [Best Practices](best-practices.md)
 

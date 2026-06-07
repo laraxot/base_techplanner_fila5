@@ -16,10 +16,7 @@
  *
  * @return RedirectResponse a redirect response to the home page
  */
-<<<<<<< HEAD
-=======
 
->>>>>>> dev
 declare(strict_types=1);
 
 namespace Modules\User\Http\Controllers\Auth;
@@ -55,15 +52,7 @@ class EmailVerificationController extends Controller
         $user->markEmailAsVerified();
 
         // Verificare che l'utente implementi l'interfaccia MustVerifyEmail
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! $user instanceof MustVerifyEmail) {
-=======
-        if (! ($user instanceof MustVerifyEmail)) {
->>>>>>> 4b6b99016 (first commit)
-=======
-        if (! $user instanceof MustVerifyEmail) {
->>>>>>> dev
             throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia MustVerifyEmail');
         }
 

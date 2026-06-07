@@ -8,168 +8,78 @@ return [
             'label' => 'Pagina',
             'placeholder' => 'Inserisci il numero di pagina',
             'help' => 'Numero di pagina da visualizzare',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'per_page' => [
             'label' => 'Per pagina',
             'placeholder' => 'Inserisci il numero di elementi per pagina',
             'help' => 'Numero di elementi da visualizzare per pagina',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'total' => [
             'label' => 'Totale',
             'placeholder' => 'Numero totale di elementi',
             'help' => 'Numero totale di elementi disponibili',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'last_page' => [
             'label' => 'Ultima pagina',
             'placeholder' => 'Numero dell\'ultima pagina',
             'help' => 'Numero dell\'ultima pagina disponibile',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'from' => [
             'label' => 'Da',
             'placeholder' => 'Indice del primo elemento',
             'help' => 'Indice del primo elemento nella pagina corrente',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'to' => [
             'label' => 'A',
             'placeholder' => 'Indice dell\'ultimo elemento',
             'help' => 'Indice dell\'ultimo elemento nella pagina corrente',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'has_more_pages' => [
             'label' => 'Ha più pagine',
             'help' => 'Indica se ci sono più pagine disponibili',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'has_previous_page' => [
             'label' => 'Ha pagina precedente',
             'help' => 'Indica se esiste una pagina precedente',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'has_next_page' => [
             'label' => 'Ha pagina successiva',
             'help' => 'Indica se esiste una pagina successiva',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'current_page' => [
             'label' => 'Pagina corrente',
             'placeholder' => 'Numero della pagina corrente',
             'help' => 'Numero della pagina attualmente visualizzata',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'validation' => [
@@ -235,10 +145,6 @@ return [
         'offset' => 'Offset',
     ],
     'per_page_options' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         10 => '10 per pagina',
         25 => '25 per pagina',
         50 => '50 per pagina',
@@ -246,18 +152,6 @@ return [
         250 => '250 per pagina',
         500 => '500 per pagina',
         1000 => '1000 per pagina',
-<<<<<<< HEAD
-=======
-        '10' => '10 per pagina',
-        '25' => '25 per pagina',
-        '50' => '50 per pagina',
-        '100' => '100 per pagina',
-        '250' => '250 per pagina',
-        '500' => '500 per pagina',
-        '1000' => '1000 per pagina',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ],
     'pagination_controls' => [
         'first' => 'Prima',
@@ -283,10 +177,6 @@ return [
         'loading' => 'Caricamento...',
         'error' => 'Errore nel caricamento',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Pagination',
     'plural_label' => 'Pagination (Plurale)',
     'navigation' => [
@@ -311,9 +201,4 @@ return [
             'label' => 'Elimina Pagination',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

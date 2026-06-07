@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Architettura di un Prediction Market
-=======
 # Architettura di un <nome progetto>ion Market
->>>>>>> dev
 
 ## Pattern Principali
 - **Event Sourcing**: ogni cambiamento di stato è registrato come evento immutabile.

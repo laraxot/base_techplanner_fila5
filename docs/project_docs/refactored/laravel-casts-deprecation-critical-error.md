@@ -216,10 +216,4 @@ protected function casts(): array
 **IMPATTO: ALTO**  
 **EFFORT: MEDIO**  
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Agosto 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

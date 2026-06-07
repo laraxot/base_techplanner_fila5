@@ -15,10 +15,6 @@ use Themes\Sixteen\Contracts\MenuFilterInterface;
 class MenuBuilder
 {
     protected Collection $slimHeader;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 
     protected Collection $header;
 
@@ -26,14 +22,6 @@ class MenuBuilder
 
     protected Collection $footerBar;
 
-<<<<<<< HEAD
-=======
-    protected Collection $header;
-    protected Collection $footer;
-    protected Collection $footerBar;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     protected array $filters = [];
 
     public function __construct()
@@ -51,15 +39,7 @@ class MenuBuilder
     {
         $processedItems = $this->transformItems($items);
         $this->slimHeader = $this->slimHeader->merge($processedItems);
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         return $this;
     }
 
@@ -70,15 +50,7 @@ class MenuBuilder
     {
         $processedItems = $this->transformItems($items);
         $this->header = $this->header->merge($processedItems);
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         return $this;
     }
 
@@ -89,15 +61,7 @@ class MenuBuilder
     {
         $processedItems = $this->transformItems($items);
         $this->footer = $this->footer->merge($processedItems);
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         return $this;
     }
 
@@ -108,15 +72,7 @@ class MenuBuilder
     {
         $processedItems = $this->transformItems($items);
         $this->footerBar = $this->footerBar->merge($processedItems);
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         return $this;
     }
 
@@ -126,14 +82,7 @@ class MenuBuilder
     public function setFilters(array $filters): self
     {
         $this->filters = $filters;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         return $this;
     }
 
@@ -189,10 +138,6 @@ class MenuBuilder
     {
         $config = config('sixteen.menu', []);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         if (! empty($config['slim_header'])) {
             $this->addSlimHeader($config['slim_header']);
         }
@@ -206,24 +151,6 @@ class MenuBuilder
         }
 
         if (! empty($config['footer_bar'])) {
-<<<<<<< HEAD
-=======
-        if (!empty($config['slim_header'])) {
-            $this->addSlimHeader($config['slim_header']);
-        }
-
-        if (!empty($config['header'])) {
-            $this->addHeader($config['header']);
-        }
-
-        if (!empty($config['footer'])) {
-            $this->addFooter($config['footer']);
-        }
-
-        if (!empty($config['footer_bar'])) {
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             $this->addFooterBar($config['footer_bar']);
         }
 
@@ -244,20 +171,6 @@ class MenuBuilder
     }
 
     /**
-<<<<<<< HEAD
-     * Trasforma e processa gli elementi del menu
-     */
-    protected function transformItems(array $items): Collection
-    {
-        return collect($items)
-            ->map([$this, 'processMenuItem'])
-            ->filter() // Rimuove elementi false/null dai filtri
-            ->values(); // Re-index array
-    }
-
-    /**
-=======
->>>>>>> dev
      * Processa un singolo elemento del menu
      */
     public function processMenuItem($item): array|false|null
@@ -281,15 +194,7 @@ class MenuBuilder
         foreach ($this->filters as $filter) {
             if ($filter instanceof MenuFilterInterface) {
                 $item = $filter->filter($item);
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
                 // Se il filtro restituisce false, rimuovi l'elemento
                 if ($item === false) {
                     return false;
@@ -315,42 +220,13 @@ class MenuBuilder
         }
 
         // Aggiungi proprietà di default
-<<<<<<< HEAD
-        $item = array_merge([
-=======
         return array_merge([
->>>>>>> dev
             'active' => false,
             'target' => null,
             'icon' => null,
             'badge' => null,
             'attributes' => [],
         ], $item);
-<<<<<<< HEAD
-
-        return $item;
-    }
-
-    /**
-     * Determina il tipo di elemento del menu
-     */
-    protected function determineItemType(array $item): string
-    {
-        if (isset($item['dropdown'])) {
-            return 'dropdown';
-        }
-
-        if (isset($item['megamenu'])) {
-            return 'megamenu';
-        }
-
-        if (isset($item['url']) || isset($item['route'])) {
-            return 'link';
-        }
-
-        return 'text';
-=======
->>>>>>> dev
     }
 
     /**
@@ -384,15 +260,7 @@ class MenuBuilder
     /**
      * Trova un elemento del menu per ID
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function findItem(string $id, ?string $menu = null): ?array
-=======
-    public function findItem(string $id, string $menu = null): array|null
->>>>>>> 4b6b99016 (first commit)
-=======
-    public function findItem(string $id, ?string $menu = null): ?array
->>>>>>> dev
     {
         $menus = $menu ? [$menu => $this->{$menu}] : [
             'slim_header' => $this->slimHeader,
@@ -414,15 +282,7 @@ class MenuBuilder
     /**
      * Rimuovi un elemento del menu per ID
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function removeItem(string $id, ?string $menu = null): self
-=======
-    public function removeItem(string $id, string $menu = null): self
->>>>>>> 4b6b99016 (first commit)
-=======
-    public function removeItem(string $id, ?string $menu = null): self
->>>>>>> dev
     {
         $menus = $menu ? [$menu] : ['slim_header', 'header', 'footer', 'footer_bar'];
 
@@ -438,15 +298,7 @@ class MenuBuilder
     /**
      * Aggiorna un elemento del menu
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function updateItem(string $id, array $updates, ?string $menu = null): self
-=======
-    public function updateItem(string $id, array $updates, string $menu = null): self
->>>>>>> 4b6b99016 (first commit)
-=======
-    public function updateItem(string $id, array $updates, ?string $menu = null): self
->>>>>>> dev
     {
         $menus = $menu ? [$menu] : ['slim_header', 'header', 'footer', 'footer_bar'];
 
@@ -455,14 +307,7 @@ class MenuBuilder
                 if (isset($item['id']) && $item['id'] === $id) {
                     return array_merge($item, $updates);
                 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
                 return $item;
             });
         }
@@ -480,33 +325,14 @@ class MenuBuilder
             'header_count' => $this->header->count(),
             'footer_count' => $this->footer->count(),
             'footer_bar_count' => $this->footerBar->count(),
-<<<<<<< HEAD
-<<<<<<< HEAD
             'total_items' => $this->slimHeader->count() +
                            $this->header->count() +
                            $this->footer->count() +
-=======
-            'total_items' => $this->slimHeader->count() + 
-                           $this->header->count() + 
-                           $this->footer->count() + 
->>>>>>> 4b6b99016 (first commit)
-=======
-            'total_items' => $this->slimHeader->count() +
-                           $this->header->count() +
-                           $this->footer->count() +
->>>>>>> dev
                            $this->footerBar->count(),
             'has_dropdowns' => $this->header->contains('type', 'dropdown'),
             'has_megamenus' => $this->header->contains('type', 'megamenu'),
         ];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 4b6b99016 (first commit)
-=======
 
     /**
      * Trasforma e processa gli elementi del menu
@@ -539,4 +365,3 @@ class MenuBuilder
         return 'text';
     }
 }
->>>>>>> dev

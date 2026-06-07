@@ -94,10 +94,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Cms',
     'plural_label' => 'Cms (Plurale)',
     'navigation' => [
@@ -142,9 +138,4 @@ return [
             'label' => 'Elimina Cms',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -2,24 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-/**
- * Übersetzungen für ContactColumn - Filament-Spalte für Kontakte
- *
- * Übersetzungsdatei für die wiederverwendbare ContactColumn
- * die ContactTypeEnum für zentralisiertes Rendering verwendet.
- *
- * @author Laraxot Team
- *
- * @version 1.0
- *
- * @since 2025-08-01
- */
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 return [
     'label' => 'Kontakte',
     'no_contacts' => 'Keine Kontakte verfügbar',
@@ -36,10 +18,6 @@ return [
         'contact_link' => 'Kontaktlink',
         'no_contacts' => 'Keine Kontakte verfügbar',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -52,9 +30,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

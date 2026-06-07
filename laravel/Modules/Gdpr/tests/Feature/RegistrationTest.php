@@ -2,13 +2,9 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-/**
-=======
 namespace Modules\Gdpr\Tests\Feature;
 
 /*
->>>>>>> dev
  * Registration Flow Integration Tests.
  *
  * These tests verify the full registration pipeline used by the GDPR RegisterWidget.

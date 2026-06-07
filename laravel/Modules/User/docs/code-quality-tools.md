@@ -179,21 +179,12 @@ npm install
 - [Stylelint Documentation](https://stylelint.io/)
 
 ### **Guide Specifiche**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [PHP Code Quality Guide](../xot/docs/php-code-quality.md)
-- [Frontend Code Quality Guide](../xot/docs/frontend-code-quality.md)
-- [Security Best Practices](../xot/docs/security-best-practices.md)
-=======
 - [PHP Code Quality Guide](../Xot/docs/php-code-quality.md)
 - [Frontend Code Quality Guide](../Xot/docs/frontend-code-quality.md)
 - [Security Best Practices](../Xot/docs/security-best-practices.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [PHP Code Quality Guide](../xot/docs/php-code-quality.md)
 - [Frontend Code Quality Guide](../xot/docs/frontend-code-quality.md)
 - [Security Best Practices](../xot/docs/security-best-practices.md)
->>>>>>> dev
 
 ---
 
@@ -205,12 +196,3 @@ npm install
 ---
 
 *Il modulo User mantiene i più alti standard di qualità del codice attraverso l'utilizzo di strumenti di analisi all'avanguardia.*
-
-
-
-
-
-
-
-
-

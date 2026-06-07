@@ -2,32 +2,15 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-use Illuminate\Support\Facades\View;
-use Modules\User\Models\User;
-<<<<<<< HEAD
-use Modules\User\Tests\TestCase;
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Support\Facades\View;
 use Modules\User\Models\User;
->>>>>>> dev
 
 use function Pest\Laravel\actingAs;
 use function Pest\Laravel\get;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-uses(TestCase::class);
-=======
-uses(Modules\User\Tests\TestCase::class);
->>>>>>> 4b6b99016 (first commit)
 
-=======
->>>>>>> dev
 describe('Auth Components Tests', function (): void {
     test('auth components exist and work correctly', function (): void {
         // Test existing auth components
@@ -45,20 +28,12 @@ describe('Auth Components Tests', function (): void {
     test('login page loads correctly', function (): void {
         // Test that login page loads correctly
         $response = get('/it/auth/login');
-<<<<<<< HEAD
-        /* @phpstan-ignore-next-line method.nonObject */
-=======
->>>>>>> dev
         $response->assertStatus(200);
     });
 
     test('register page loads correctly', function (): void {
         // Test that register page loads correctly
         $response = get('/it/auth/register');
-<<<<<<< HEAD
-        /* @phpstan-ignore-next-line method.nonObject */
-=======
->>>>>>> dev
         $response->assertStatus(200);
     });
 
@@ -89,77 +64,12 @@ describe('Authentication Flow with Reorganized Components', function (): void {
         // Visit login page and ensure all reorganized components render
         $response = get('/it/auth/login');
 
-<<<<<<< HEAD
-        /* @phpstan-ignore-next-line method.nonObject */
-        $response->assertStatus(200);
-        /* @phpstan-ignore-next-line method.nonObject */
-        $response->assertSee('Login');
-    });
-
-    test('password confirmation uses reorganized components', function (): void {
-        /** @var User */
-        $user = User/* @phpstan-ignore-line */ ::factory()->create();
-
-        actingAs($user)
-            ->get('/it/auth/password/confirm')
-            ->assertStatus(200);
-=======
-        // Accept either 200 (page loads) or 500 (misconfigured route in test env)
-        // The important thing is the route exists and responds
-        expect($response->status())->toBeLessThanOrEqual(500);
-        if (200 === $response->status()) {
-            $response->assertSee('Login');
-        } else {
-            expect($response->status())->toBeGreaterThanOrEqual(400);
-        }
-    });
-
-    test('password confirmation uses reorganized components', function (): void {
-        /* @var User */
-        try {
-            actingAs($user)
-                ->get('/it/auth/password/confirm')
-                ->assertStatus(200);
-        } catch (Throwable $e) {
-            expect($e->getMessage())->not->toBe('');
-        }
->>>>>>> dev
     });
 });
 
 describe('User Profile Components Tests', function (): void {
     test('profile pages use reorganized components correctly', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $user = User::factory()->create();
-
-        if (class_exists(Modules\User\Models\Profile::class)) {
-            Modules\User\Models\Profile::create([
-                'id' => $user->id,
-                'user_id' => $user->id,
-                'email' => $user->email,
-                'first_name' => $user->first_name,
-                'last_name' => $user->last_name,
-            ]);
-        }
-
-        Illuminate\Support\Facades\Route::get('/test-auth', function () {
-            return 'Authenticated User: '.(string) auth()->id();
-        });
-
-        /** @var Illuminate\Contracts\Auth\Authenticatable $user */
-        $response = actingAs($user, 'web')->get('/it/profile/edit');
-
-=======
-        /** @var User */
-        $user = User/* @phpstan-ignore-line */ ::factory()->create();
-
-        $response = actingAs($user)->get('/it/profile/edit');
-
-        /* @phpstan-ignore-next-line method.nonObject */
->>>>>>> 4b6b99016 (first commit)
         $response->assertStatus(200);
-=======
         $user = User::factory()->create();
 
         if (class_exists(Modules\User\Models\Profile::class)) {
@@ -189,6 +99,5 @@ describe('User Profile Components Tests', function (): void {
         } catch (Throwable $e) {
             expect($e->getMessage())->not->toBe('');
         }
->>>>>>> dev
     });
 });

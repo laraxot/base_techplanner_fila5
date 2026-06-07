@@ -207,13 +207,6 @@ return [
 
 ## Collegamenti
 - [Mailpace Templates](https://github.com/mailpace/templates)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Email Best Practices](./email_best_practices.md)
-=======
 - [Email Best Practices](./EMAIL_BEST_PRACTICES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Email Best Practices](./email_best_practices.md)
->>>>>>> dev
 - [Template Management](./template-management.md) 

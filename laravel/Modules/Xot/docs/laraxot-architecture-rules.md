@@ -361,9 +361,6 @@ BadgeColumn::make('status')
 - [Spatie Queueable Actions](https://github.com/spatie/laravel-queueable-action)
 
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 # Laraxot Architecture Rules - Xot Module
 
 ## 🎯 Regole Fondamentali Laraxot
@@ -727,6 +724,3 @@ BadgeColumn::make('status')
 - [Spatie Queueable Actions](https://github.com/spatie/laravel-queueable-action)
 
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

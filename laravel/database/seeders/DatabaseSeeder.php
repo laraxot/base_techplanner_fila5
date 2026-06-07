@@ -2,21 +2,9 @@
 
 namespace Database\Seeders;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Illuminate\Database\Seeder;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Modules\User\Models\User;
-=======
-use Modules\User\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
->>>>>>> 4b6b99016 (first commit)
-=======
-use Illuminate\Database\Seeder;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Modules\User\Models\User;
->>>>>>> dev
 
 class DatabaseSeeder extends Seeder
 {
@@ -33,3 +21,5 @@ class DatabaseSeeder extends Seeder
         ]);
     }
 }
+
+

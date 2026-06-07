@@ -10,14 +10,7 @@ return [
             'help' => 'The identifying name of the template',
             'tooltip' => 'This field is required',
             'helper_text' => 'Inserisci un nome descrittivo per il template',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'subject' => [
             'label' => 'Subject',
@@ -25,76 +18,38 @@ return [
             'help' => 'The subject that will appear in the notification',
             'tooltip' => 'This field is required',
             'helper_text' => 'Oggetto visualizzato nella notifica (es. oggetto email)',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'body_text' => [
             'label' => 'Text',
             'placeholder' => 'Enter notification text',
             'help' => 'The text content of the notification',
             'tooltip' => 'This field is required',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'body_html' => [
             'label' => 'HTML',
             'placeholder' => 'Enter notification HTML content',
             'help' => 'The HTML content of the notification',
             'tooltip' => 'This field is required',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'preview_data' => [
             'label' => 'Preview Data',
             'placeholder' => 'Enter preview data',
             'help' => 'The data used to display the preview',
             'tooltip' => 'JSON format',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Descrizione del template',
             'placeholder' => 'es: Template per le notifiche di scadenza',
             'helper_text' => 'Breve descrizione dello scopo del template',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'type' => [
             'label' => 'Tipo',
@@ -108,83 +63,39 @@ return [
                 'telegram' => 'Telegram',
                 'whatsapp' => 'WhatsApp',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'content' => [
             'label' => 'Contenuto',
             'tooltip' => 'Corpo del messaggio',
             'placeholder' => 'Inserisci il testo del messaggio',
             'helper_text' => 'Contenuto principale della notifica',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'variables' => [
             'label' => 'Variabili',
             'tooltip' => 'Variabili disponibili',
             'placeholder' => '{{nome}}, {{email}}, ecc.',
             'helper_text' => 'Variabili che possono essere utilizzate nel template',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato del template',
             'helper_text' => 'Se attivo, il template può essere utilizzato per l\'invio di notifiche',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'description' => '',
->>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Data creazione',
             'tooltip' => 'Data di creazione del template',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'updated_at' => [
             'label' => 'Ultima modifica',
             'tooltip' => 'Data dell\'ultima modifica del template',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'navigation' => [
@@ -241,14 +152,6 @@ return [
             'error_message' => 'Errore nell\'invio della notifica di test',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

@@ -31,15 +31,7 @@ use Modules\Xot\Filament\Traits\TransTrait;
  * - Stato operativo (business_closed)
  * - Settore merceologico (activity)
  */
-<<<<<<< HEAD
-<<<<<<< HEAD
 enum CompanyItemEnum: string implements HasColor, HasIcon, HasLabel
-=======
-enum CompanyItemEnum: string implements HasLabel, HasIcon, HasColor
->>>>>>> 4b6b99016 (first commit)
-=======
-enum CompanyItemEnum: string implements HasColor, HasIcon, HasLabel
->>>>>>> dev
 {
     use TransTrait;
 
@@ -86,29 +78,13 @@ enum CompanyItemEnum: string implements HasColor, HasIcon, HasLabel
         $cases = self::cases();
         /** @var array<string, TextInput|Toggle> $result */
         $result = [];
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         foreach ($cases as $item) {
             $fieldName = $item->value;
             $label = $item->getLabel();
             $icon = $item->getIcon();
             $isRequired = $item === self::COMPANY_NAME;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
             if ($item === self::BUSINESS_CLOSED) {
                 $result[$fieldName] = Toggle::make($fieldName)
                     ->label($label);
@@ -116,29 +92,13 @@ enum CompanyItemEnum: string implements HasColor, HasIcon, HasLabel
                 $input = TextInput::make($fieldName)
                     ->label($label)
                     ->prefixIcon($icon);
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
                 if ($isRequired) {
                     $input->required();
                 } else {
                     $input->nullable();
                 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
                 $result[$fieldName] = $input;
             }
         }
@@ -263,12 +223,4 @@ enum CompanyItemEnum: string implements HasColor, HasIcon, HasLabel
             },
         ];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4b6b99016 (first commit)
-=======
-}
->>>>>>> dev

@@ -31,10 +31,6 @@ class ConsentResource extends XotBaseResource
     public function getTableColumns(): array
     {
         return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'id' => TextColumn::make('id')->searchable(),
             TextColumn::make('treatment.name')->searchable(),
             'subject_id' => TextColumn::make('subject_id')->searchable(),
@@ -43,19 +39,6 @@ class ConsentResource extends XotBaseResource
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
             'updated_at' => TextColumn::make('updated_at')
-<<<<<<< HEAD
-=======
-            TextColumn::make('id')->searchable(),
-            TextColumn::make('treatment.name')->searchable(),
-            TextColumn::make('subject_id')->searchable(),
-            TextColumn::make('created_at')
-                ->dateTime()
-                ->sortable()
-                ->toggleable(isToggledHiddenByDefault: true),
-            TextColumn::make('updated_at')
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),

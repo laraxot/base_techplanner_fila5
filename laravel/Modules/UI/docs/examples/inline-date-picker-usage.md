@@ -132,14 +132,8 @@ class AdvancedBookingForm
                     return $this->availabilityService->getAvailableDates(
                         serviceId: $serviceId,
                         locationId: $locationId,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                         startDate: Carbon::today(),
                         endDate: Carbon::today()->addMonths(3)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                     );
                 })
                 ->calendarConfig([
@@ -295,13 +289,7 @@ class CustomCalendarForm
             InlineDatePicker::make('special_date')
                 ->enabledDates(function () {
                     // Date con stati speciali
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     return SpecialDate::query()
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                         ->where('is_active', true)
                         ->where('date', '>=', now())
                         ->get()
@@ -327,13 +315,7 @@ class CustomCalendarForm
                 ])
                 ->afterStateUpdated(function ($state) {
                     // Carica metadati per la data selezionata
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     $specialDate = SpecialDate::whereDate('date', $state)->first();
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
                     if ($specialDate) {
                         $this->selectedDateMetadata = $specialDate->metadata;
@@ -346,39 +328,21 @@ class CustomCalendarForm
 
     private function isHoliday(string $date): bool
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         return SpecialDate::whereDate('date', $date)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             ->where('type', 'holiday')
             ->exists();
     }
 
     private function isHighDemand(string $date): bool
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         return SpecialDate::whereDate('date', $date)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             ->where('priority', 'high')
             ->exists();
     }
 
     private function isPremiumOnly(string $date): bool
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         return SpecialDate::whereDate('date', $date)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             ->where('type', 'premium_only')
             ->exists();
     }

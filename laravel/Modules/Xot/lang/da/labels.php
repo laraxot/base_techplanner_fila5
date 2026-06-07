@@ -1,15 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-/**
- * da.
- */
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 declare(strict_types=1);
 
 return [
@@ -123,15 +113,7 @@ return [
                 ],
             ],
             'territories' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'canada' => 'Canada\'s provinser og territorier',
-=======
-                'canada' => "Canada's provinser og territorier",
->>>>>>> 4b6b99016 (first commit)
-=======
-                'canada' => 'Canada\'s provinser og territorier',
->>>>>>> dev
             ],
             'timezone' => 'Tidszone',
         ],
@@ -150,10 +132,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -167,9 +145,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

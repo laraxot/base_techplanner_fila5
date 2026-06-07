@@ -103,10 +103,6 @@ use Filament\Widgets\Concerns\CanPoll;
         return User::where('last_active_at', '>', now()->subMinutes(5))->count();
 ## Collegamenti Bidirezionali
 ### Modulo Xot (Core)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [README.md](../../../xot/docs/readme.md) - Indice principale della documentazione
 - [Widget Filament](../../../xot/docs/filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
 - [Polling nei Widget](../../../xot/docs/filament/widgets/filament_widgets_polling.md) - Implementazione del polling
@@ -123,8 +119,6 @@ use Filament\Widgets\Concerns\CanPoll;
 ### Documentazione Interna
 - [README del modulo User](../readme.md) - Indice principale del modulo User
 - [Filament Best Practices](../filament_best_practices.md) - Best practices generali per Filament
-<<<<<<< HEAD
-=======
 - [README.md](../../../Xot/docs/README.md) - Indice principale della documentazione
 - [Widget Filament](../../../Xot/docs/filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
 - [Polling nei Widget](../../../Xot/docs/filament/widgets/FILAMENT_WIDGETS_POLLING.md) - Implementazione del polling
@@ -141,9 +135,6 @@ use Filament\Widgets\Concerns\CanPoll;
 ### Documentazione Interna
 - [README del modulo User](../README.md) - Indice principale del modulo User
 - [Filament Best Practices](../FILAMENT_BEST_PRACTICES.md) - Best practices generali per Filament
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ## Risorse Utili
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Laravel Blade](https://laravel.com/docs/blade)

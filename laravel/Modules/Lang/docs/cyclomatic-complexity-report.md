@@ -1,13 +1,7 @@
 # Cyclomatic Complexity Report - Module: Lang
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Generated:** 2025-10-01 19:44:11
->>>>>>> 4b6b99016 (first commit)
-=======
 **Generated:** 2025-10-01 19:44:11
->>>>>>> dev
 **Analyzer:** Super Mucca 🐮
 
 ---

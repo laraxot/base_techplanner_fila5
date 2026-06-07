@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 https://www.magutti.com/
 
 https://laravelarticle.com/laravel-option-framework
@@ -19,9 +17,3 @@ https://lean-admin.dev/
 
 in nodejs ma sembra carino
 https://ghost.org/
-
-
-
-
->>>>>>> dev
-

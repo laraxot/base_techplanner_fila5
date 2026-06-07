@@ -128,23 +128,14 @@ protected function getFooterWidgets(): array
 ## Riferimenti e Collegamenti
 ### Documentazione Correlata
 - [Modules/User/docs/best-practices/filament-widgets.md](../best-practices/filament-widgets.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Modules/Xot/docs/filament/widgets/base-chart-widget.md](../../../xot/docs/filament/widgets/base-chart-widget.md)
 - [Modules/<nome progetto>/docs/dashboard-implementation.md](../../../<nome progetto>/docs/dashboard-implementation.md)
 - [Modules/User/project_docs/best-practices/filament-widgets.md](../best-practices/filament-widgets.md)
 - [Modules/Xot/project_docs/filament/widgets/base-chart-widget.md](../../../xot/project_docs/filament/widgets/base-chart-widget.md)
-<<<<<<< HEAD
-=======
 - [Modules/Xot/docs/filament/widgets/base-chart-widget.md](../../../Xot/docs/filament/widgets/base-chart-widget.md)
 - [Modules/<nome progetto>/docs/dashboard-implementation.md](../../../<nome progetto>/docs/dashboard-implementation.md)
 - [Modules/User/project_docs/best-practices/filament-widgets.md](../best-practices/filament-widgets.md)
 - [Modules/Xot/project_docs/filament/widgets/base-chart-widget.md](../../../Xot/project_docs/filament/widgets/base-chart-widget.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 - [Modules/<nome progetto>/project_docs/dashboard-implementation.md](../../../<nome progetto>/project_docs/dashboard-implementation.md)
 ### Widget Correlati
 - `UsersChartWidget`: Esempio di implementazione corretta dei filtri
@@ -159,10 +150,4 @@ protected function getFooterWidgets(): array
 - **Problema**: Widget non riceveva filtri Dashboard
 - **Soluzione**: Accesso sicuro con fallback appropriati
 - **Impatto**: Risolto per tutti i widget che usano lo stesso pattern
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

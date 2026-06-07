@@ -197,13 +197,7 @@ Ogni campo deve avere la seguente struttura completa:
 ---
 
 **Versione**: 1.0
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2025-08-08
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data**: 2025-08-08
->>>>>>> dev
 **Stato**: Implementazione in corso
 **Responsabile**: Sistema automatico DRY/KISS

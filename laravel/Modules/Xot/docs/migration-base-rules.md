@@ -21,93 +21,48 @@
 - [ ] Aggiorna sempre la doc
 
 ## Cross-reference
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Update migrazioni Performance](../../performance/project_docs/migration_update_rules.md)
-- [Root MODULE_NAMESPACE_RULES.md](../../../project_docs/module_namespace_rules.md)
-=======
 - [Update migrazioni Performance](../../Performance/project_docs/migration_update_rules.md)
 - [Root MODULE_NAMESPACE_RULES.md](../../../project_docs/MODULE_NAMESPACE_RULES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Update migrazioni Performance](../../performance/project_docs/migration_update_rules.md)
 - [Root MODULE_NAMESPACE_RULES.md](../../../../docs/project/module_namespace_rules.md)
->>>>>>> dev
 
 ---
 
 ## Backlink
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Regole update migrazioni Performance](../../performance/project_docs/migration_update_rules.md) ← questa doc è sempre aggiornata
-- [Ripresa lavoro migrazioni in root](../../../project_docs/module_namespace_rules.md)
-
-=======
 - [Regole update migrazioni Performance](../../Performance/project_docs/migration_update_rules.md) ← questa doc è sempre aggiornata
 - [Ripresa lavoro migrazioni in root](../../../project_docs/MODULE_NAMESPACE_RULES.md)
 
 Ultimo aggiornamento: 2025-05-13
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Regole update migrazioni Performance](../../performance/project_docs/migration_update_rules.md) ← questa doc è sempre aggiornata
 - [Ripresa lavoro migrazioni in root](../../../../docs/project/module_namespace_rules.md)
 
->>>>>>> dev
 
 ---
 
 ## Regola generale: Nome univoco per Action custom Filament
 
 - Ogni Action custom Filament deve avere un nome univoco passato a `make()` o impostato come default.
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Vedi esempio e motivazione in [Modules/Performance/project_docs/azioni_organizzativa.md](../../Performance/project_docs/azioni_organizzativa.md#[DATE]-regola-nome-univoco-per-headeraction-filament)
-=======
 - Vedi esempio e motivazione in [Modules/Performance/project_docs/azioni_organizzativa.md](../../Performance/project_docs/azioni_organizzativa.md#2025-05-14-regola-nome-univoco-per-headeraction-filament)
->>>>>>> 4b6b99016 (first commit)
-=======
 - Vedi esempio e motivazione in [Modules/Performance/project_docs/azioni_organizzativa.md](../../Performance/project_docs/azioni_organizzativa.md#[DATE]-regola-nome-univoco-per-headeraction-filament)
->>>>>>> dev
 
 ---
 
 **Backlink modulo Performance:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Modules/Performance/project_docs/azioni_organizzativa.md](../../performance/project_docs/azioni_organizzativa.md)
-=======
 - [Modules/Performance/project_docs/azioni_organizzativa.md](../../Performance/project_docs/azioni_organizzativa.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Modules/Performance/project_docs/azioni_organizzativa.md](../../performance/project_docs/azioni_organizzativa.md)
->>>>>>> dev
 
 ---
 
 ## Pattern definitivo HeaderAction custom Filament 3
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Segui SEMPRE il pattern documentato in [Modules/Performance/project_docs/azioni_organizzativa.md#[DATE]-pattern-definitivo-headeraction-custom-filament-3]
-=======
 - Segui SEMPRE il pattern documentato in [Modules/Performance/project_docs/azioni_organizzativa.md#2025-05-14-pattern-definitivo-headeraction-custom-filament-3]
->>>>>>> 4b6b99016 (first commit)
-=======
 - Segui SEMPRE il pattern documentato in [Modules/Performance/project_docs/azioni_organizzativa.md#[DATE]-pattern-definitivo-headeraction-custom-filament-3]
->>>>>>> dev
 - Il pattern Filament 2 (override statico di make) è obsoleto e genera errori: non usarlo mai nei nuovi moduli o refactoring.
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Regola colonne tabellari Filament ([DATE])
-=======
 ## Regola colonne tabellari Filament (2025-05-14)
->>>>>>> 4b6b99016 (first commit)
-=======
 ## Regola colonne tabellari Filament ([DATE])
->>>>>>> dev
 
 - Le colonne delle tabelle Filament devono essere derivate solo dal modello e dalla migrazione.
 - La UI può mostrare solo un sottoinsieme delle colonne, secondo le regole documentate in Performance.
@@ -115,35 +70,21 @@ Ultimo aggiornamento: 2025-05-13
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Regola estensione modelli aggregati ([DATE])
-=======
 ## Regola estensione modelli aggregati (2025-05-15)
->>>>>>> 4b6b99016 (first commit)
-=======
 ## Regola estensione modelli aggregati ([DATE])
->>>>>>> dev
 
 - I modelli aggregati e di totali del modulo Performance (es. OrganizzativaTotValutatoreId) devono estendere il `BaseModel` locale (`Modules\Performance\Models\BaseModel`), **NON** `Modules\Xot\Models\BaseModel`.
 - **Motivazione**: isolamento, override locale, necessità di personalizzazione e compatibilità con logiche specifiche del modulo Performance.
 - **Pattern**: i modelli aggregati e di totali in Performance estendono sempre il BaseModel locale.
 - **Anti-pattern**: estendere `Modules\Xot\Models\BaseModel` o centralizzare logiche che devono restare locali.
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Memoria storica**: rollback della regola il [DATE], documentato in Performance/project_docs/organizzativa-models.md e qui. Precedente regola ([DATE]) annullata per esigenze di override e compatibilità.
-=======
 - **Memoria storica**: rollback della regola il 2025-05-15, documentato in Performance/project_docs/organizzativa-models.md e qui. Precedente regola (2025-05-14) annullata per esigenze di override e compatibilità.
->>>>>>> 4b6b99016 (first commit)
 - Ogni violazione va documentata e corretta anche nella root docs.
 - Vedi dettaglio e memoria storica in [Modules/Performance/project_docs/organizzativa-models.md](../../Performance/project_docs/organizzativa-models.md#organizzativatotvalutatoreid-regola-di-estensione)
 - [docs/links.md root](../../../project_docs/links.md)
-=======
 - **Memoria storica**: rollback della regola il [DATE], documentato in Performance/project_docs/organizzativa-models.md e qui. Precedente regola ([DATE]) annullata per esigenze di override e compatibilità.
 - Ogni violazione va documentata e corretta anche nella root docs.
 - Vedi dettaglio e memoria storica in [Modules/Performance/project_docs/organizzativa-models.md](../../Performance/project_docs/organizzativa-models.md#organizzativatotvalutatoreid-regola-di-estensione)
 - [docs/links.md root](../../../../docs/project/links.md)
->>>>>>> dev
 
 > ⚠️ **Warning**: Estendere Xot\BaseModel può causare override indesiderati, perdita di flessibilità e problemi di compatibilità con logiche locali. Seguire sempre la regola sopra per tutti i modelli di totali/aggregati in Performance.
 

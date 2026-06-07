@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 https://github.com/kdion4891/laravel-livewire-forms
 
 
@@ -80,27 +78,3 @@ https://laracasts.com/series/guest-spotlight/episodes/3
 
 
 https://hdtuto.com/article/livewire-crud-laravel-7-example
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> dev
-

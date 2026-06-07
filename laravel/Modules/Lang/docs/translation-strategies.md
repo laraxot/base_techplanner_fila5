@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
 # Strategie di Gestione delle Traduzioni in Laravel
 
 ## Indice
@@ -74,15 +67,8 @@ lang/
 - `__()`: Helper per stringhe di traduzione
   - Restituisce `null` se chiamato senza parametri
   - Sintassi: `__('chiave.traduzione')`
-<<<<<<< HEAD
-<<<<<<< HEAD
   
-=======
 
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
 - `trans()`: Versione più flessibile
   - Restituisce l'istanza del Translator se chiamato senza parametri
   - Utile per metodi concatenati: `trans()->getLocale()`
@@ -98,13 +84,7 @@ trans('messages.welcome', ['name' => $user->name]);
 // Con namespace
 __('auth::validation.required')
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 // Nei file blade
 {{ __('Benvenuto') }}
 {!! __('<strong>Importante</strong>') !!}
@@ -179,12 +159,6 @@ public function handle($request, Closure $next)
     if (session()->has('locale')) {
         app()->setLocale(session('locale'));
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-=======
-=======
->>>>>>> dev
 
     return $next($request);
 }
@@ -441,10 +415,6 @@ public function handle($request, Closure $next)
         app()->setLocale(session('locale'));
     }
 
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     return $next($request);
 }
 ```

@@ -1,14 +1,7 @@
 # Analisi Completa TableLayoutEnum
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Data: [DATE]
-=======
 ## Data: 2025-01-06
->>>>>>> 4b6b99016 (first commit)
-=======
 ## Data: [DATE]
->>>>>>> dev
 
 ## Panoramica
 
@@ -338,28 +331,16 @@ class TableLayoutEnumTest extends TestCase
 
 - [Usage Guide](table-layout-enum-usage.md)
 - [Conflict Resolution](conflict-resolution-tablelayoutenum.md)
-<<<<<<< HEAD
-- [Translation Standards](../../../docs/translation_standards.md)
-- [Filament Best Practices](../../../docs/filament_best_practices.md)
-
-<<<<<<< HEAD
-# Analisi Completa TableLayoutEnum
-
-## Data: [DATE]
-=======
 *Ultimo aggiornamento: 2025-01-06*
 # Analisi Completa TableLayoutEnum
 
 ## Data: 2025-01-06
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Translation Standards](../../../../docs/translation_standards.md)
 - [Filament Best Practices](../../../../docs/filament_best_practices.md)
 
 # Analisi Completa TableLayoutEnum
 
 ## Data: [DATE]
->>>>>>> dev
 
 ## Panoramica
 
@@ -689,16 +670,6 @@ class TableLayoutEnumTest extends TestCase
 
 - [Usage Guide](table-layout-enum-usage.md)
 - [Conflict Resolution](conflict-resolution-tablelayoutenum.md)
-<<<<<<< HEAD
-- [Translation Standards](../../../docs/translation_standards.md)
-- [Filament Best Practices](../../../docs/filament_best_practices.md)
-
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-01-06*
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Translation Standards](../../../../docs/translation_standards.md)
 - [Filament Best Practices](../../../../docs/filament_best_practices.md)
-
->>>>>>> dev

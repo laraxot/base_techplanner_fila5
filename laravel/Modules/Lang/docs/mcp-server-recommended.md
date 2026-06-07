@@ -19,11 +19,6 @@ Gestione traduzioni, localizzazione e internazionalizzazione.
 
 ## Note
 - Estendi la configurazione per supportare traduzioni dinamiche o servizi esterni.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> dev
 # MCP Server Consigliati per il Modulo Lang
 
 ## Scopo del Modulo
@@ -45,7 +40,3 @@ Gestione traduzioni, localizzazione e internazionalizzazione.
 
 ## Note
 - Estendi la configurazione per supportare traduzioni dinamiche o servizi esterni.
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

@@ -1,25 +1,16 @@
 # Best Practices per Volt e Folio
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [README modulo Xot](./readme.md)
 - [Struttura dei moduli](./module_structure.md)
 - [Convenzioni di Path](../user/project_docs/path_conventions.md)
 - [Implementazione Auth con Volt e Folio](../user/project_docs/volt_folio_auth_implementation.md)
 - [Analisi Logout Blade](../user/project_docs/logout_blade_analysis.md)
-<<<<<<< HEAD
-=======
 - [README modulo Xot](./README.md)
 - [Struttura dei moduli](./MODULE_STRUCTURE.md)
 - [Convenzioni di Path](../User/project_docs/PATH_CONVENTIONS.md)
 - [Implementazione Auth con Volt e Folio](../User/project_docs/VOLT_FOLIO_AUTH_IMPLEMENTATION.md)
 - [Analisi Logout Blade](../User/project_docs/LOGOUT_BLADE_ANALYSIS.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Introduzione
 

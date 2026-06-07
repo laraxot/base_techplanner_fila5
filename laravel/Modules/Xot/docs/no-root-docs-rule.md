@@ -39,15 +39,8 @@ find var/www/html/_bases/base_<nome progetto>/docs$|^docs$)"
 ```
 
 ## DATA IMPLEMENTAZIONE:
-<<<<<<< HEAD
-<<<<<<< HEAD
-[DATE] - Regola implementata e verificata
-=======
 2025-08-08 - Regola implementata e verificata
->>>>>>> 4b6b99016 (first commit)
-=======
 [DATE] - Regola implementata e verificata
->>>>>>> dev
 
 ## RESPONSABILITÀ:
 Tutti gli sviluppatori e AI devono rispettare questa regola senza eccezioni.

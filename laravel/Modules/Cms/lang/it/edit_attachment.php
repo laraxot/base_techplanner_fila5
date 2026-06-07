@@ -14,10 +14,6 @@ return [
             'label' => 'cancel',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Edit Attachment',
     'plural_label' => 'Edit Attachment (Plurale)',
     'navigation' => [
@@ -51,9 +47,4 @@ return [
             'description' => '',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -23,106 +23,50 @@ return [
             'label' => 'Numero di telefono',
             'placeholder' => 'Inserisci il numero di telefono',
             'helper_text' => 'Inserisci il numero di telefono con prefisso internazionale (es. +39)',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Inserisci il messaggio',
             'helper_text' => 'Il messaggio non può superare i 4096 caratteri',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'driver' => [
             'label' => 'Provider WhatsApp',
             'placeholder' => 'Seleziona il provider WhatsApp',
             'helper_text' => 'Seleziona il provider WhatsApp da utilizzare',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'template' => [
             'label' => 'Template',
             'placeholder' => 'Inserisci il nome del template',
             'helper_text' => 'Nome del template (opzionale)',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'parameters' => [
             'label' => 'Parametri',
             'placeholder' => 'Inserisci i parametri',
             'helper_text' => 'Parametri per il template (opzionale)',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'media_url' => [
             'label' => 'URL Media',
             'placeholder' => 'Inserisci l\'URL del media',
             'helper_text' => 'URL del media (opzionale)',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'media_type' => [
             'label' => 'Tipo Media',
             'placeholder' => 'Seleziona il tipo di media',
             'helper_text' => 'Seleziona il tipo di media',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'drivers' => [
@@ -145,14 +89,6 @@ return [
         'success' => 'WhatsApp inviato con successo',
         'error' => 'Si è verificato un errore durante l\'invio del WhatsApp',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

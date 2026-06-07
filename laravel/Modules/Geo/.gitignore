@@ -119,10 +119,7 @@ Thumbs.db
 # ==============================================
 # LANGUAGE FILES
 # ==============================================
-<<<<<<< HEAD
 lang/lang/
-=======
->>>>>>> dev
 resources/lang/
 
 # ==============================================
@@ -161,9 +158,6 @@ test_geo_data.sql
 # 🚫 File specifici del progetto
 *.fila2
 laravel
-<<<<<<< HEAD
-public_html
-=======
 public_html
 lang/lang/
 _docs/
@@ -179,5 +173,3 @@ _docs/
 *.orig
 *.rej
 *~head
-
->>>>>>> dev

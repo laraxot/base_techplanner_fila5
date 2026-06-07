@@ -12,25 +12,16 @@ La migrazione del database crea una tabella `addresses` con la seguente struttur
 Schema::create('addresses', function (Blueprint $table) {
     $table->id();
     $table->nullableMorphs('addressable'); // Relazione polimorfica
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     // Campi informativi
     $table->string('name')->nullable()->comment('Nome identificativo dell\'indirizzo');
     $table->text('description')->nullable()->comment('Descrizione opzionale');
     
-<<<<<<< HEAD
-=======
 
     // Campi informativi
     $table->string('name')->nullable()->comment('Nome identificativo dell\'indirizzo');
     $table->text('description')->nullable()->comment('Descrizione opzionale');
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     // Campi indirizzo (evitando prefissi ridondanti)
     $table->string('route')->nullable()->comment('Via/Piazza');
     $table->string('street_number')->nullable()->comment('Numero civico');
@@ -40,24 +31,13 @@ Schema::create('addresses', function (Blueprint $table) {
     $table->string('administrative_area_level_1')->nullable()->comment('Stato/Paese');
     $table->string('country', 2)->nullable()->comment('Codice paese ISO');
     $table->string('postal_code', 20)->nullable()->comment('CAP');
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     // Dati di geocoding
     $table->text('formatted_address')->nullable();
     $table->string('place_id')->nullable()->comment('ID Google Places');
     $table->decimal('latitude', 15, 10)->nullable();
     $table->decimal('longitude', 15, 10)->nullable();
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     // Campi tipo indirizzo
     $table->string('type', 50)->nullable()->index()->comment('Tipo indirizzo (home, work, etc.)');
@@ -66,8 +46,6 @@ Schema::create('addresses', function (Blueprint $table) {
     // Dati aggiuntivi
     $table->json('extra_data')->nullable();
     
-<<<<<<< HEAD
-=======
 
     // Campi tipo indirizzo
     $table->string('type', 50)->nullable()->index()->comment('Tipo indirizzo (home, work, etc.)');
@@ -76,9 +54,6 @@ Schema::create('addresses', function (Blueprint $table) {
     // Dati aggiuntivi
     $table->json('extra_data')->nullable();
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     // Timestamps e soft delete
     $table->timestamps();
     $table->softDeletes();
@@ -105,15 +80,8 @@ use Modules\Geo\Contracts\HasGeolocation;
 
 /**
  * Class Address - Modello per gli indirizzi conforme a schema.org/PostalAddress.
-<<<<<<< HEAD
-<<<<<<< HEAD
- * 
-=======
  *
->>>>>>> 4b6b99016 (first commit)
-=======
  * 
->>>>>>> dev
  * @see https://schema.org/PostalAddress
  */
 class Address extends BaseModel implements HasGeolocation
@@ -196,15 +164,8 @@ class Address extends BaseModel implements HasGeolocation
     {
         return $this->morphTo();
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Ottiene la latitudine.
      */
@@ -278,27 +239,18 @@ class Address extends BaseModel implements HasGeolocation
             }
         });
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     /**
      * Restituisce i dati in formato Schema.org PostalAddress.
      * 
      * @see https://schema.org/PostalAddress
      * 
-<<<<<<< HEAD
-=======
 
     /**
      * Restituisce i dati in formato Schema.org PostalAddress.
      *
      * @see https://schema.org/PostalAddress
      *
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
      * @return array<string, mixed>
      */
     public function toSchemaOrg(): array
@@ -330,15 +282,8 @@ class Address extends BaseModel implements HasGeolocation
             'description' => $description,
             'street_number' => $components->get('street_number')['long_name'] ?? null,
             'route' => $components->get('route')['long_name'] ?? null,
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'locality' => $components->get('locality')['long_name'] ?? 
-=======
             'locality' => $components->get('locality')['long_name'] ??
->>>>>>> 4b6b99016 (first commit)
-=======
             'locality' => $components->get('locality')['long_name'] ?? 
->>>>>>> dev
                          $components->get('administrative_area_level_3')['long_name'] ?? null,
             'administrative_area_level_3' => $components->get('administrative_area_level_2')['long_name'] ?? null, // Provincia
             'administrative_area_level_2' => $components->get('administrative_area_level_1')['long_name'] ?? null, // Regione

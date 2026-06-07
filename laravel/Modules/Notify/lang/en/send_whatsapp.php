@@ -23,31 +23,15 @@ return [
             'label' => 'Destinatario',
             'placeholder' => 'Inserisci il numero',
             'helper_text' => 'Numero di telefono del destinatario',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Scrivi il messaggio',
             'helper_text' => 'Contenuto del messaggio WhatsApp',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -63,14 +47,6 @@ return [
         'error' => 'Si è verificato un errore durante l\'invio del messaggio WhatsApp',
         'confirmation' => 'Sei sicuro di voler inviare questo messaggio WhatsApp?',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

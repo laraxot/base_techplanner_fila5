@@ -216,10 +216,6 @@ Aggiornamento massivo documentazione progetto con:
 
 ### Documentazione Moduli
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Xot Module](./readme.md) - Questo file
 - [Tenant Module](../../tenant/docs/readme.md)
 - [IndennitaResponsabilita Module](../../indennitaresponsabilita/docs/readme.md)
@@ -229,8 +225,6 @@ Aggiornamento massivo documentazione progetto con:
 ### bashscripts
 
 - [bashscripts README](../../../bashscripts/readme.md)
-<<<<<<< HEAD
-=======
 - [Xot Module](./README.md) - Questo file
 - [Tenant Module](../../Tenant/docs/README.md)
 - [IndennitaResponsabilita Module](../../IndennitaResponsabilita/docs/README.md)
@@ -240,9 +234,6 @@ Aggiornamento massivo documentazione progetto con:
 ### bashscripts
 
 - [bashscripts README](../../../bashscripts/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 - [Script Documentation](../../../bashscripts/docs/)
 
 ### External

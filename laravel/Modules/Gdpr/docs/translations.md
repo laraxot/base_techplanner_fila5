@@ -2,18 +2,10 @@
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
-- [Regole Generali Traduzioni](../../xot/docs/translations.md)
-=======
 - [Modulo Lang](../../Lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
 - [Regole Generali Traduzioni](../../xot/docs/translations.md)
->>>>>>> dev
 
 ## Struttura
 
@@ -63,10 +55,6 @@ return [
 ];
 ```
 ## Collegamenti tra versioni di translations.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [translations.md](laravel/modules/chart/docs/translations.md)
 * [translations.md](laravel/modules/reporting/docs/translations.md)
 * [translations.md](laravel/modules/gdpr/docs/translations.md)
@@ -84,8 +72,6 @@ return [
 * [translations.md](laravel/modules/activity/docs/translations.md)
 * [translations.md](laravel/modules/patient/docs/translations.md)
 * [translations.md](laravel/modules/cms/docs/translations.md)
-<<<<<<< HEAD
-=======
 * [translations.md](laravel/Modules/Chart/docs/translations.md)
 * [translations.md](laravel/Modules/Reporting/docs/translations.md)
 * [translations.md](laravel/Modules/Gdpr/docs/translations.md)
@@ -103,6 +89,3 @@ return [
 * [translations.md](laravel/Modules/Activity/docs/translations.md)
 * [translations.md](laravel/Modules/Patient/docs/translations.md)
 * [translations.md](laravel/Modules/Cms/docs/translations.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

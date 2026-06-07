@@ -292,10 +292,7 @@ accessibility@fixcity.it
 
 ---
 
-<<<<<<< HEAD
 **Last Updated**: 2025-10-01  
-=======
->>>>>>> dev
 **Target Date**: 2025-10-15  
 **Status**: 🎯 90% → Target 100%  
 **Priority**: CRITICAL  

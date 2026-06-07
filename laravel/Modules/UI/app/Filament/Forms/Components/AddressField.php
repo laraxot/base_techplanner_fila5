@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Forms\Components;
 
-<<<<<<< HEAD
-use Filament\Forms\Components\Field;
-=======
->>>>>>> dev
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Grid;
@@ -15,19 +11,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
-<<<<<<< HEAD
-=======
 use Modules\Xot\Filament\Forms\Components\XotBaseField;
->>>>>>> dev
 use Webmozart\Assert\Assert;
 
 // use Squire\Models\Country;
 
-<<<<<<< HEAD
-class AddressField extends Field
-=======
 class AddressField extends XotBaseField
->>>>>>> dev
 {
     /** @var string|callable|null */
     public $relationship;
@@ -38,11 +27,7 @@ class AddressField extends XotBaseField
     {
         parent::setUp();
 
-<<<<<<< HEAD
-        $this->afterStateHydrated(function (AddressField $_component, mixed $record) {
-=======
         $this->afterStateHydrated(function (AddressField $_component, mixed $record): void {
->>>>>>> dev
             $data = [
                 'country' => null,
                 'street' => null,
@@ -51,15 +36,7 @@ class AddressField extends XotBaseField
                 'zip' => null,
             ];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
             if (! $record instanceof Model) {
-=======
-            if (! ($record instanceof Model)) {
->>>>>>> 4b6b99016 (first commit)
-=======
-            if (! $record instanceof Model) {
->>>>>>> dev
                 return;
             }
 

@@ -32,13 +32,8 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|NotifyThemeable whereUpdatedAt($value)
  * @method static Builder|NotifyThemeable whereUpdatedBy($value)
  *
-<<<<<<< HEAD
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
-=======
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
->>>>>>> dev
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  *

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 # Integrazione Documentazione
 
 ## Documentazione Collegata
@@ -78,7 +74,3 @@
 ### Versione Incoming
 
 ---
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev

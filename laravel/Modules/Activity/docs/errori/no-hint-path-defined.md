@@ -469,10 +469,6 @@ docker-compose restart app
 ## Collegamenti
 
 ### Documentazione Correlata
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Activity Module - README](../readme.md)
 - [XotBaseServiceProvider Architecture](../../xot/docs/service-provider-architecture.md)
 - [Xot Module - README](../../xot/docs/readme.md)
@@ -482,8 +478,6 @@ docker-compose restart app
 
 ### Sistema Architecture
 - [Service Provider Architecture](../../xot/docs/service-provider-architecture.md) - Architettura completa del sistema ServiceProvider
-<<<<<<< HEAD
-=======
 - [Activity Module - README](../README.md)
 - [XotBaseServiceProvider Architecture](../../Xot/docs/service-provider-architecture.md)
 - [Xot Module - README](../../Xot/docs/README.md)
@@ -493,11 +487,8 @@ docker-compose restart app
 
 ### Sistema Architecture
 - [Service Provider Architecture](../../Xot/docs/service-provider-architecture.md) - Architettura completa del sistema ServiceProvider
->>>>>>> 4b6b99016 (first commit)
 - [Laraxot Conventions](../../../docs/laraxot-conventions.md) - Convenzioni generali
-=======
 - [Laraxot Conventions](../../../../docs/laraxot-conventions.md) - Convenzioni generali
->>>>>>> dev
 
 ---
 

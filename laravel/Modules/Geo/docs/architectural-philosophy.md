@@ -215,15 +215,8 @@ $success = $action->execute($client);
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 **Last Updated**: December 2025
->>>>>>> 4b6b99016 (first commit)
-=======
 
->>>>>>> dev
 **Architectural Version**: 2.0
 **Compliance**: PHPStan Level 10 ✅
 **Patterns**: Strategy, Command, Adapter, Observer ✅

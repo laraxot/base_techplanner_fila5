@@ -5,10 +5,6 @@ declare(strict_types=1);
 return [
     'name' => 'name',
     'value' => 'value',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Update Job',
     'plural_label' => 'Update Job (Plurale)',
     'navigation' => [
@@ -53,9 +49,4 @@ return [
             'label' => 'Elimina Update Job',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

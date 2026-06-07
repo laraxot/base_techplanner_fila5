@@ -187,8 +187,4 @@ For questions about PHPStan configuration or error resolution:
 
 ---
 
-<<<<<<< HEAD
 *This documentation is maintained as part of our commitment to code quality and type safety across all modules.*
-=======
-*This documentation is maintained as part of our commitment to code quality and type safety across all modules.*
->>>>>>> dev

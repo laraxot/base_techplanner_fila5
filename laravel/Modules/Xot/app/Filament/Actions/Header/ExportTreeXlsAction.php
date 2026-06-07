@@ -44,26 +44,15 @@ class ExportTreeXlsAction extends Action
                 // $query = $livewire->getFilteredTableQuery(); // ->getQuery(); // Staudenmeir\LaravelCte\Query\Builder
                 // $rows = $query->get();
                 Assert::implementsInterface($record, HasRecursiveRelationshipsContract::class);
-<<<<<<< HEAD
-                $rows = $record->descendantsAndSelf;
-=======
                 /** @var Model&HasRecursiveRelationshipsContract $treeRecord */
                 $treeRecord = $record;
                 $rows = $treeRecord->descendantsAndSelf;
->>>>>>> dev
                 Assert::isInstanceOf($rows, Collection::class);
                 $resource = $livewire->getResource();
                 $fields = [];
                 if (method_exists($resource, 'getXlsFields')) {
                     $fields = $resource::getXlsFields($tableFilters);
                     // Convertiamo tutti i valori a stringhe
-<<<<<<< HEAD
-                    $fields = array_map(fn ($field) => is_string($field) ? $field : ((string) $field), (array) $fields);
-                    // PHPStan: $fields is array after array_map
-                }
-
-                /** @var array<int, string> $fields */
-=======
                     $fields = array_values(array_map(
                         static fn (mixed $field): string => is_string($field) ? $field : (string) $field,
                         (array) $fields,
@@ -71,7 +60,6 @@ class ExportTreeXlsAction extends Action
                 }
 
                 /* @var array<int, string> $fields */
->>>>>>> dev
                 return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, $fields);
             });
     }

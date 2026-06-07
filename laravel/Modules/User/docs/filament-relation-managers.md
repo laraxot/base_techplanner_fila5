@@ -92,10 +92,6 @@ use Filament\Tables\Columns\TextColumn;
 - Mantenere una struttura coerente in tutti i RelationManager
 ## Riferimenti
 - [Documentazione Filament RelationManager](https://filamentphp.com/project_docs/tables#relation-managers)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [XotBaseRelationManager](../xot/project_docs/filament-relation-managers.md)
 - [Sistema di Traduzione](../xot/project_docs/translation-system.md)
 - [Best Practices Filament](../xot/project_docs/filament-best-practices.md)
@@ -103,8 +99,6 @@ use Filament\Tables\Columns\TextColumn;
 - [XotBaseRelationManager](../xot/docs/filament-relation-managers.md)
 - [Sistema di Traduzione](../xot/docs/translation-system.md)
 - [Best Practices Filament](../xot/docs/filament-best-practices.md)
-<<<<<<< HEAD
-=======
 - [XotBaseRelationManager](../Xot/project_docs/filament-relation-managers.md)
 - [Sistema di Traduzione](../Xot/project_docs/translation-system.md)
 - [Best Practices Filament](../Xot/project_docs/filament-best-practices.md)
@@ -112,9 +106,6 @@ use Filament\Tables\Columns\TextColumn;
 - [XotBaseRelationManager](../Xot/docs/filament-relation-managers.md)
 - [Sistema di Traduzione](../Xot/docs/translation-system.md)
 - [Best Practices Filament](../Xot/docs/filament-best-practices.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 # Filament Relation Managers nel Modulo User
 
 ## Struttura dei Relation Managers
@@ -288,18 +279,9 @@ class TeamsRelationManager extends XotBaseRelationManager
 ## Riferimenti
 
 - [Documentazione Filament RelationManager](https://filamentphp.com/docs/tables#relation-managers)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [XotBaseRelationManager](../xot/docs/filament-relation-managers.md)
-- [Sistema di Traduzione](../xot/docs/translation-system.md)
-- [Best Practices Filament](../xot/docs/filament-best-practices.md)
-=======
 - [XotBaseRelationManager](../Xot/docs/filament-relation-managers.md)
 - [Sistema di Traduzione](../Xot/docs/translation-system.md)
 - [Best Practices Filament](../Xot/docs/filament-best-practices.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [XotBaseRelationManager](../xot/docs/filament-relation-managers.md)
 - [Sistema di Traduzione](../xot/docs/translation-system.md)
 - [Best Practices Filament](../xot/docs/filament-best-practices.md)
->>>>>>> dev

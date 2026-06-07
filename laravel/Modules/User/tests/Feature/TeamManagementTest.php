@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\User\Tests\Feature;
-
->>>>>>> dev
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Notification;
 use Modules\User\Models\Team;

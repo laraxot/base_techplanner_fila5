@@ -1,21 +1,13 @@
 # Implementazione Corretta delle Pagine Auth 
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione centrale](../../../docs/readme.md)
-- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
-=======
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
->>>>>>> dev
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Volt Errors](./volt_errors.md)
 - [Volt Folio Logout](./volt_folio_logout.md)
 - [Volt Logout Action](./volt_logout_action.md)
-<<<<<<< HEAD
-=======
 - [Documentazione centrale](../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
@@ -23,17 +15,14 @@
 - [Volt Errors](./VOLT_ERRORS.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
->>>>>>> 4b6b99016 (first commit)
 
 ## Introduzione
 
 Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di SaluteOra, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
-=======
 
 ## Introduzione
 
 Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di healthcare_app, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
->>>>>>> dev
 
 ## Struttura delle Directory
 

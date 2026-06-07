@@ -168,11 +168,7 @@ $this->assertTrue(property_exists($model, 'field_name')); // Sempre false
 ```
 
 ### Documentazione Correlata
-<<<<<<< HEAD
-- [Root Docs: Eloquent Models Property Verification](../../../docs/eloquent-models-property-verification.md)
-=======
 - [Root Docs: Eloquent Models Property Verification](../../../../docs/eloquent-models-property-verification.md)
->>>>>>> dev
 - [.cursor/rules/property_exists_eloquent_models.mdc](../../../.cursor/rules/property_exists_eloquent_models.mdc)
 - [.windsurf/rules/property_exists_eloquent_models.mdc](../../../.windsurf/rules/property_exists_eloquent_models.mdc)
 - [Laravel AI Guidelines](../../.ai/guidelines/eloquent_models_property_verification.md)
@@ -184,10 +180,4 @@ $this->assertTrue(property_exists($model, 'field_name')); // Sempre false
 4. Verifica di logiche correlate nei trait e BaseModel
 5. Aggiornamento documentazione moduli specifici
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: agosto 2025 - Regola critica per architettura Laraxot PTVX*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

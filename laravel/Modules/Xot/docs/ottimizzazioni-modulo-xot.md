@@ -203,13 +203,7 @@ echo "✅ Validazione completata!"
 echo "🔄 Aggiornamento documentazione modulo Xot..."
 
 # Aggiorna timestamp
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 find docs/ -name "*.md" -exec sed -i 's/Ultimo aggiornamento:.*/Ultimo aggiornamento: '$(date +%Y-%m-%d)'/' {} \;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 # Aggiorna versioni
 find docs/ -name "*.md" -exec sed -i 's/Laravel [0-9]\+/Laravel 11/' {} \;
@@ -347,35 +341,17 @@ docs/
 ## Collegamenti Bidirezionali
 
 ### Documentazione Correlata
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README](../readme.md) - Panoramica modulo Xot
-=======
 - [README](../README.md) - Panoramica modulo Xot
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README](../readme.md) - Panoramica modulo Xot
->>>>>>> dev
 - [Convenzioni](./core/conventions.md) - Convenzioni unificate
 - [Best Practices](./core/best-practices.md) - Best practices consolidate
 
 ### Documentazione Root
-<<<<<<< HEAD
-- [docs/ottimizzazioni-sistema.md](../../../docs/ottimizzazioni-sistema.md) - Ottimizzazioni sistema generale
-- [docs/architettura-moduli.md](../../../docs/architettura-moduli.md) - Architettura moduli
-
----
-
-<<<<<<< HEAD
-=======
 **Ultimo aggiornamento:** 2025-01-06
->>>>>>> 4b6b99016 (first commit)
-=======
 - [docs/ottimizzazioni-sistema.md](../../../../docs/ottimizzazioni-sistema.md) - Ottimizzazioni sistema generale
 - [docs/architettura-moduli.md](../../../../docs/architettura-moduli.md) - Architettura moduli
 
 ---
 
->>>>>>> dev
 **Stato:** In implementazione
 **Responsabile:** Team Sviluppo Xot

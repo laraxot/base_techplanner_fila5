@@ -17,10 +17,6 @@ return [
         'icon' => 'media-main-animated',
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -102,29 +98,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
-=======
-        'name' => 'Nome',
-        'guard_name' => 'Guard',
-        'collection_name' => 'Collezione',
-        'filename' => 'Nome File',
-        'mime_type' => 'Tipo',
-        'human_readable_size' => 'Dimensione',
-        'permissions' => 'Permessi',
-        'updated_at' => 'Aggiornato il',
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'select_all' => [
-            'name' => 'Seleziona Tutti',
-            'message' => '',
-        ],
-        'creator' => [
-            'name' => 'Creatore',
-        ],
-        'uploaded_at' => 'Caricato il',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ],
     'actions' => [
         'import' => [
@@ -143,14 +116,6 @@ return [
     'model' => [
         'label' => 'media.model',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Media',
     'plural_label' => 'Media (Plurale)',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Media',
-    'plural_label' => 'Media (Plurale)',
->>>>>>> dev
 ];

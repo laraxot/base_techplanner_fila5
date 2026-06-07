@@ -78,21 +78,12 @@ Translation files include extra messages beyond immediate needs to:
 ## Integration Points
 
 ### Module Documentation
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Primary**: [User Module Login Widget Audit](../laravel/modules/user/docs/login-widget-translation-audit.md)
-- **Supporting**: [Widget Translation Rules](../laravel/modules/user/docs/widget-translation-rules.md)
-- **Architecture**: [User Authentication Documentation](../laravel/modules/user/docs/authentication.md)
-=======
 - **Primary**: [User Module Login Widget Audit](../laravel/Modules/User/docs/login-widget-translation-audit.md)
 - **Supporting**: [Widget Translation Rules](../laravel/Modules/User/docs/widget-translation-rules.md)
 - **Architecture**: [User Authentication Documentation](../laravel/Modules/User/docs/authentication.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - **Primary**: [User Module Login Widget Audit](../laravel/modules/user/docs/login-widget-translation-audit.md)
 - **Supporting**: [Widget Translation Rules](../laravel/modules/user/docs/widget-translation-rules.md)
 - **Architecture**: [User Authentication Documentation](../laravel/modules/user/docs/authentication.md)
->>>>>>> dev
 
 ### Development Standards
 This audit reinforces the following project standards:
@@ -150,18 +141,10 @@ The comprehensive approach taken demonstrates:
 ## Related Documentation
 
 ### Module Level
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [User Module Translation Guidelines](../laravel/modules/user/docs/widget-translation-rules.md)
-- [User Module Authentication](../laravel/modules/user/docs/authentication.md)
-=======
 - [User Module Translation Guidelines](../laravel/Modules/User/docs/widget-translation-rules.md)
 - [User Module Authentication](../laravel/Modules/User/docs/authentication.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [User Module Translation Guidelines](../laravel/modules/user/docs/widget-translation-rules.md)
 - [User Module Authentication](../laravel/modules/user/docs/authentication.md)
->>>>>>> dev
 - [Widget Development Standards](../laravel/Modules/User/docs/widgets/)
 
 ### Project Level

@@ -10,7 +10,7 @@ use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent as SpatieStored
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventCollection;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder;
 use Spatie\EventSourcing\StoredEvents\ShouldBeStored;
-use Spatie\SchemalessAttributes\SchemalessAttributes;
+use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
 /**
  * Class StoredEvent.
@@ -23,7 +23,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property int $event_version
  * @property string $event_class
  * @property array<array-key, mixed> $event_properties
- * @property SchemalessAttributes $meta_data
+ * @property \Spatie\SchemalessAttributes\SchemalessAttributes $meta_data
  * @property string $created_at
  * @property string|null $updated_by
  * @property string|null $created_by
@@ -54,6 +54,10 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent withMetaDataAttributes()
  * @method static StoredEventFactory factory($count = null, $state = [])
  *
+ * @property string|null $updated_at
+ *
+ * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereUpdatedAt($value)
+ *
  * @mixin \Eloquent
  */
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
@@ -61,6 +65,7 @@ class StoredEvent extends SpatieStoredEvent
 {
     use HasXotFactory;
 
+    /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
     protected $connection = 'activity';
 
     protected $table = 'stored_events';

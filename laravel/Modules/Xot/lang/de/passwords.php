@@ -8,10 +8,6 @@ return [
     'sent' => 'Wir haben dir einen Link zum zurücksetzen deiners Passworts gesendet!',
     'token' => 'Der Token zum zurücksetzen des passworts ist ungültig.',
     'user' => 'Wir können keinen Benutzer mit der E-Mailadresse finden.',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -25,9 +21,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

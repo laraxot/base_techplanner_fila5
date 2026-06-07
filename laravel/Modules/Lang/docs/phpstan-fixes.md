@@ -88,12 +88,6 @@ private function castWithAction(mixed $value): string
 - **Method Signatures**: Allineate tutte le signature con le classi base
 
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 *Ultimo aggiornamento: Gennaio 2025*
->>>>>>> dev
 *Stato: ✅ Completato - 0 errori PHPStan*

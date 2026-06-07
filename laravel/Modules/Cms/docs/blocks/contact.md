@@ -87,8 +87,6 @@ Il blocco può essere utilizzato in vari contesti:
    - ARIA labels
    - Focus states
 
-<<<<<<< HEAD
-=======
 ## Blade Namespace Rule
 
 Se il blocco `contact.main` usa sottocomponenti del tema, il naming deve distinguere fra:
@@ -98,7 +96,6 @@ Se il blocco `contact.main` usa sottocomponenti del tema, il naming deve disting
 
 Non usare `<x-pub_theme::components.blocks.contact.info />`, perche' `view:cache` non riesce a risolverlo come anonymous component.
 
->>>>>>> dev
 ## Implementazione
 
 1. **Validazione**:

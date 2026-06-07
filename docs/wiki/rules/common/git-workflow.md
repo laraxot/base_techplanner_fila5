@@ -1,6 +1,10 @@
 # Git Workflow
 
-## Regola Prima di Tutto
+## Forward-only (prima di tutto)
+
+**Git solo in avanti:** `git show` / `blame` / `diff` per studiare; **mai** ripristinare snapshot storici come fix (`checkout --`, `restore --source`, `show ref:path > file`). Canon: [git-forward-only.md](../git-forward-only.md).
+
+## Regola commit
 
 `git commit` e `git push` NON sono step automatici di fine task.
 Sono consentiti solo dopo quality gate completi, test pertinenti, runtime verificato e docs allineati.

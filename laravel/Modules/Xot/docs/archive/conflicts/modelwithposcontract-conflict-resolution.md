@@ -41,15 +41,8 @@ La correzione è stata verificata assicurandosi che:
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione sulla Risoluzione dei Conflitti](../risoluzione_conflitti_merge.md)
-=======
 - [Documentazione sulla Risoluzione dei Conflitti](../RISOLUZIONE_CONFLITTI_MERGE.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione sulla Risoluzione dei Conflitti](../risoluzione_conflitti_merge.md)
->>>>>>> dev
 - [Best Practices per la Gestione dei Conflitti Git](../../../../project_docs/risoluzione_conflitti_git.md)
 # Risoluzione del Conflitto in ModelWithPosContract.php
 
@@ -94,14 +87,7 @@ La correzione è stata verificata assicurandosi che:
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione sulla Risoluzione dei Conflitti](../risoluzione_conflitti_merge.md)
-=======
 - [Documentazione sulla Risoluzione dei Conflitti](../RISOLUZIONE_CONFLITTI_MERGE.md)
->>>>>>> 4b6b99016 (first commit)
 - [Best Practices per la Gestione dei Conflitti Git](../../../../docs/risoluzione_conflitti_git.md)
-=======
 - [Documentazione sulla Risoluzione dei Conflitti](../risoluzione_conflitti_merge.md)
 - [Best Practices per la Gestione dei Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md)
->>>>>>> dev

@@ -51,8 +51,6 @@
 
 ---
 
-<<<<<<< HEAD
-=======
 ## 1.5 UI Components
 
 ### Logo
@@ -69,7 +67,6 @@
 
 ---
 
->>>>>>> dev
 ## 2. Block Components
 
 ### 2.1 Hero Block
@@ -185,11 +182,7 @@
 **Enhancements Needed**:
 - [ ] Update to brand gradient (#667eea → #764ba2)
 - [ ] Add hover lift animation
-<<<<<<< HEAD
-- [ ] Add particle background effect
-=======
 - [x] Add particle background effect (vedi [particles-component](particles-component.md))
->>>>>>> dev
 - [ ] Add trust indicators
 - [ ] A/B test different CTAs
 

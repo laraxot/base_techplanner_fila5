@@ -15,11 +15,7 @@ I temi sono organizzati nella cartella `Themes` e ciascuno ha la propria struttu
 L'errore comune `Unable to locate file in Vite manifest: resources/css/app.css` indica che gli asset non sono stati pubblicati correttamente. Per risolvere:
 
 ```bash
-<<<<<<< HEAD
-cd /var/www/html/_bases/base_fixcity_fila3_mono/laravel/Themes/NomeTema
-=======
 cd /var/www/html/_bases/base_fixcity_fila5_mono/laravel/Themes/NomeTema
->>>>>>> dev
 npm run copy
 ```
 
@@ -44,11 +40,7 @@ php artisan theme:create NomeTema
 Dopo modifiche agli asset (CSS, JS, immagini), eseguire:
 
 ```bash
-<<<<<<< HEAD
-cd /var/www/html/_bases/base_fixcity_fila3_mono/laravel/Themes/NomeTema
-=======
 cd /var/www/html/_bases/base_fixcity_fila5_mono/laravel/Themes/NomeTema
->>>>>>> dev
 npm run copy
 ```
 

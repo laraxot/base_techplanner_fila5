@@ -5,13 +5,8 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions;
 
 use Illuminate\Contracts\View\View;
-<<<<<<< HEAD
-use Illuminate\Support\Str;
-use InvalidArgumentException;
-=======
 use Illuminate\Support\Facades\View as ViewFacade;
 use Illuminate\Support\Str;
->>>>>>> dev
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -24,39 +19,23 @@ class GetViewByClassAction
     /**
      * Ottiene una vista basata su una classe.
      *
-<<<<<<< HEAD
-     * @param  string  $class  Nome della classe
-     * @param  array<string, mixed>  $params  Parametri da passare alla vista
-     * @param  string|null  $viewName  Nome personalizzato della vista
-=======
      * @param string               $class    Nome della classe
      * @param array<string, mixed> $params   Parametri da passare alla vista
      * @param string|null          $viewName Nome personalizzato della vista
->>>>>>> dev
      */
     public function execute(string $class, array $params = [], ?string $viewName = null): View
     {
         $viewName ??= $this->getViewNameFromClass($class);
-<<<<<<< HEAD
-
-        /** @var view-string $viewName */
-        return view($viewName, $params);
-=======
         /* @var view-string $viewName */
 
         return ViewFacade::make($viewName, $params);
->>>>>>> dev
     }
 
     /**
      * Risolve il percorso della view basato sul namespace della classe.
      *
-<<<<<<< HEAD
-     * @param  string  $class  Il nome completo della classe
-=======
      * @param string $class Il nome completo della classe
      *
->>>>>>> dev
      * @return string Il percorso della view
      */
     public function executeOld(string $class): string
@@ -65,13 +44,8 @@ class GetViewByClassAction
         $arr = explode('\\', $class);
 
         // Verifica che la classe sia nel namespace Modules
-<<<<<<< HEAD
-        if ($arr[0] !== 'Modules') {
-            throw new InvalidArgumentException('Class must be in Modules namespace');
-=======
         if ('Modules' !== $arr[0]) {
             throw new \InvalidArgumentException('Class must be in Modules namespace');
->>>>>>> dev
         }
 
         $module = $arr[1];
@@ -87,11 +61,7 @@ class GetViewByClassAction
     /**
      * Ottiene il nome della vista dal nome della classe.
      *
-<<<<<<< HEAD
-     * @param  string  $class  Nome della classe
-=======
      * @param string $class Nome della classe
->>>>>>> dev
      */
     protected function getViewNameFromClass(string $class): string
     {

@@ -13,21 +13,6 @@ use Illuminate\Support\Carbon;
 use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHistoryItem;
 
 /**
-<<<<<<< HEAD
- * @property int $id
- * @property string $check_name
- * @property string $check_label
- * @property string $status
- * @property string|null $notification_message
- * @property string|null $short_summary
- * @property array<array-key, mixed> $meta
- * @property string $ended_at
- * @property string $batch
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
-=======
  * @property int                     $id
  * @property string                  $check_name
  * @property string                  $check_label
@@ -41,7 +26,6 @@ use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHi
  * @property Carbon|null             $updated_at
  * @property string|null             $updated_by
  * @property string|null             $created_by
->>>>>>> dev
  *
  * @method static Builder<static>|HealthCheckResultHistoryItem newModelQuery()
  * @method static Builder<static>|HealthCheckResultHistoryItem newQuery()

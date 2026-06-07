@@ -114,15 +114,8 @@ abstract class Base[Model|Pivot|MorphPivot] extends XotBase[Model|Pivot|MorphPiv
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Audit Completo](./model_inheritance_audit.md)
-=======
 - [Audit Completo](./MODEL_INHERITANCE_AUDIT.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Audit Completo](./model_inheritance_audit.md)
->>>>>>> dev
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
@@ -242,15 +235,8 @@ abstract class Base[Model|Pivot|MorphPivot] extends XotBase[Model|Pivot|MorphPiv
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Audit Completo](./model_inheritance_audit.md)
-=======
 - [Audit Completo](./MODEL_INHERITANCE_AUDIT.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Audit Completo](./model_inheritance_audit.md)
->>>>>>> dev
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)

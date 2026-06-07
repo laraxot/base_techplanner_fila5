@@ -1,12 +1,6 @@
 # Refactoring RecordNotification - Zen Delegation Pattern
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 19 Dicembre 2025  
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Stato**: ✅ Implementato  
 **Motivazione**: Zen Delegation, DRY assoluto, SRP
 
@@ -259,15 +253,8 @@ $client->notify($notification); // via() determina canali da routeNotificationFo
 
 ## 🔗 Riferimenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md](./record_notification_zen_constructor.md) - Filosofia Zen Delegation
-=======
 - [RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md](./RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md) - Filosofia Zen Delegation
->>>>>>> 4b6b99016 (first commit)
-=======
 - [RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md](./record_notification_zen_constructor.md) - Filosofia Zen Delegation
->>>>>>> dev
 - [record-notification.md](../notifications/record-notification.md) - Documentazione completa RecordNotification
 - [record-notification-constructor-slug.md](./record-notification-constructor-slug.md) - Refactoring precedente (Lazy Resolution, ora superato)
 - [send-record-notification-action.md](../actions/send-record-notification-action.md) - Documentazione SendRecordNotificationAction

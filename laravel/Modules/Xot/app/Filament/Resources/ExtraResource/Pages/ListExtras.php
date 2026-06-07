@@ -13,10 +13,6 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Modules\Xot\Filament\Resources\ExtraResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-<<<<<<< HEAD
-use Override;
-=======
->>>>>>> dev
 
 /**
  * @see ExtraResource
@@ -25,11 +21,7 @@ class ListExtras extends XotBaseListRecords
 {
     protected static string $resource = ExtraResource::class;
 
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     public function getTableColumns(): array
     {
         return [
@@ -43,11 +35,7 @@ class ListExtras extends XotBaseListRecords
     /**
      * @return array<BaseFilter>
      */
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     public function getTableFilters(): array
     {
         return [];
@@ -56,11 +44,7 @@ class ListExtras extends XotBaseListRecords
     /**
      * @return array<string, Action|ActionGroup>
      */
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     public function getTableActions(): array
     {
         return [
@@ -71,11 +55,7 @@ class ListExtras extends XotBaseListRecords
     /**
      * @return array<string, BulkAction>
      */
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     public function getTableBulkActions(): array
     {
         return [

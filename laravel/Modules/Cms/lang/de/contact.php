@@ -20,103 +20,49 @@ return [
             'label' => 'Titolo Contatto',
             'placeholder' => 'Inserisci il titolo (es. Studio Dentistico)',
             'help' => 'Nome o titolo principale per identificare il contatto',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Descrivi brevemente l\'attività dello studio',
             'help' => 'Breve descrizione delle attività e servizi offerti',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'email' => [
             'label' => 'Email di Contatto',
             'placeholder' => 'inserisci@email.it',
             'help' => 'Indirizzo email principale per le comunicazioni',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'phone' => [
             'label' => 'Numero di Telefono',
             'placeholder' => '+39 06 1234567',
             'help' => 'Numero di telefono principale dello studio',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'address' => [
             'label' => 'Indirizzo Completo',
             'placeholder' => 'Via Roma, 123 - 00100 Roma',
             'help' => 'Indirizzo fisico completo dello studio',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'map_url' => [
             'label' => 'Link Mappa',
             'placeholder' => 'https://maps.google.com/...',
             'help' => 'URL per aprire la posizione su Google Maps o servizi simili',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -148,14 +94,6 @@ return [
         'loading' => 'Caricamento contatti in corso...',
         'saved' => 'Modifiche salvate correttamente',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

@@ -138,16 +138,10 @@ class S3Test extends XotBasePage
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Filament Best Practices](../../xot/docs/filament_best_practices.md)
 - [XotBasePage Implementation](../../xot/docs/xotbasepage_implementation.md)
 - [DRY + KISS Principles](../../xot/docs/dry_kiss_principles.md)
 
-<<<<<<< HEAD
-=======
 - [Filament Best Practices](../../Xot/docs/filament_best_practices.md)
 - [XotBasePage Implementation](../../Xot/docs/xotbasepage_implementation.md)
 - [DRY + KISS Principles](../../Xot/docs/dry_kiss_principles.md)
@@ -298,6 +292,3 @@ class S3Test extends XotBasePage
 - [DRY + KISS Principles](../../Xot/docs/dry_kiss_principles.md)
 
 *Ultimo aggiornamento: giugno 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 https://laravel-news.com/quickly-dumping-laravel-queries
 
 \DB::enableQueryLog(); // Enable query log
@@ -11,4 +8,3 @@ dd(\DB::getQueryLog()); // Show results of log
 
 
 $sql = Str::replaceArray('?', $query->getBindings(), $query->toSql());
->>>>>>> dev

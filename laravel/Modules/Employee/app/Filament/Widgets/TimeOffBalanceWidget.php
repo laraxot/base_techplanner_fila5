@@ -5,11 +5,7 @@ declare(strict_types=1);
 namespace Modules\Employee\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
-<<<<<<< HEAD
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-=======
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
->>>>>>> dev
 use Override;
 use Webmozart\Assert\Assert;
 
@@ -19,11 +15,7 @@ use Webmozart\Assert\Assert;
  * Displays monthly/annual leave balances including vacation days,
  * ROL, permits, overtime bank, and other time-off categories.
  */
-<<<<<<< HEAD
-class TimeOffBalanceWidget extends XotBaseWidget
-=======
 class TimeOffBalanceWidget extends XotBaseSchemaWidget
->>>>>>> dev
 {
     protected string $view = 'employee::filament.widgets.time-off-balance-widget';
 

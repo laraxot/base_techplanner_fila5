@@ -140,22 +140,11 @@ return [
 - **Colori sbagliati**: Verificare uso di `currentColor` invece di colori fissi
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [UI Module Icons](../laravel/modules/ui/docs/icons.md)
-- [Filament Icon Registration](../laravel/modules/xot/docs/filament-assets.md)
-- [Accessibility Guidelines](../docs/accessibility-standards.md)
-
-=======
 - [UI Module Icons](../laravel/Modules/UI/docs/icons.md)
 - [Filament Icon Registration](../laravel/Modules/Xot/docs/filament-assets.md)
 - [Accessibility Guidelines](../docs/accessibility-standards.md)
 
 *Ultimo aggiornamento: Agosto 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 - [UI Module Icons](../laravel/modules/ui/docs/icons.md)
 - [Filament Icon Registration](../laravel/modules/xot/docs/filament-assets.md)
 - [Accessibility Guidelines](../../docs/accessibility-standards.md)
-
->>>>>>> dev

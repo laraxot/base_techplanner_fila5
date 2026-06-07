@@ -1,9 +1,5 @@
 # PHPStan Roadmap - Geo Module
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 > **Created**: [DATE]  
 > **Updated**: [DATE]
 > **Status**: ✅ Fully Compliant (Level 10)  
@@ -64,26 +60,17 @@ return $this->state(
 - **Backward compatibility**: Factory usage patterns unchanged
 - **Type safety**: Enhanced PHPStan compliance without runtime impact
 - **Code quality**: Cleaner, more documented factory methods
-<<<<<<< HEAD
-=======
 > **Date**: 2026-01-14
 > **Status**: ✅ Fully Compliant (Level 10)
 > **Errors**: 0
 
 ## Current Status
 The **Geo** module is fully compliant with PHPStan Level 10. No errors were reported in the latest analysis.
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Maintenance Strategy
 1.  **Strict Typing**: Ensure all new code uses strict types (`declare(strict_types=1);`).
 2.  **Regular Checks**: Run PHPStan before every commit.
 3.  **Documentation**: Keep PHPDocs up-to-date for complex types.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 4.  **Factory Patterns**: Apply consistent callable structure for all new state methods.
 
 ## Future Goals
@@ -95,12 +82,7 @@ The **Geo** module is fully compliant with PHPStan Level 10. No errors were repo
 
 **Status**: ✅ Fully Compliant (Level 10)
 **Next**: Monitor for any future regressions
-<<<<<<< HEAD
-=======
 
 ## Future Goals
 - Maintain 0 errors.
 - Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

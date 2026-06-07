@@ -2,20 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(\Modules\Notify\Tests\TestCase::class);
-
-use Illuminate\Database\Eloquent\Model;
-use Modules\Notify\Models\BaseModel;
-=======
-namespace Modules\Notify\Tests\Unit\Models;
-
-uses(TestCase::class);
-
-use Illuminate\Database\Eloquent\Model;
-use Modules\Notify\Models\BaseModel;
-use Modules\Notify\Tests\TestCase;
->>>>>>> dev
 
 beforeEach(function () {
     $this->baseModel = new class extends BaseModel

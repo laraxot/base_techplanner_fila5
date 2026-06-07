@@ -2,25 +2,10 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-use Illuminate\Database\QueryException;
-<<<<<<< HEAD
-use Modules\Xot\Models\Module;
-use Modules\Xot\Tests\TestCase;
-
-uses(TestCase::class);
-=======
-use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Modules\Xot\Models\Module;
-
-uses(DatabaseTransactions::class);
->>>>>>> 4b6b99016 (first commit)
-=======
 namespace Modules\Xot\Tests\Feature;
 
 use Illuminate\Database\QueryException;
 use Modules\Xot\Models\Module;
->>>>>>> dev
 
 it('can create module', function () {
     // Arrange
@@ -42,15 +27,7 @@ it('can create module', function () {
         'slug' => 'test-module',
         'version' => '1.0.0',
         'enabled' => true,
-<<<<<<< HEAD
-<<<<<<< HEAD
     ], 'sushi');
-=======
-    ]);
->>>>>>> 4b6b99016 (first commit)
-=======
-    ], 'sushi');
->>>>>>> dev
 
     $this->assertEquals('TestModule', $module->name);
     $this->assertEquals('test-module', $module->slug);
@@ -87,15 +64,7 @@ it('can update module version', function () {
     $this->assertDatabaseHas('modules', [
         'id' => $module->id,
         'version' => '2.0.0',
-<<<<<<< HEAD
-<<<<<<< HEAD
     ], 'sushi');
-=======
-    ]);
->>>>>>> 4b6b99016 (first commit)
-=======
-    ], 'sushi');
->>>>>>> dev
 });
 
 it('can manage module dependencies', function () {
@@ -199,15 +168,7 @@ it('can validate module version format', function () {
         $this->assertDatabaseHas('modules', [
             'id' => $module->id,
             'version' => $version,
-<<<<<<< HEAD
-<<<<<<< HEAD
         ], 'sushi');
-=======
-        ]);
->>>>>>> 4b6b99016 (first commit)
-=======
-        ], 'sushi');
->>>>>>> dev
     }
 });
 
@@ -226,15 +187,7 @@ it('can manage module installation date', function () {
     $this->assertDatabaseHas('modules', [
         'id' => $module->id,
         'installed_at' => $installationDate,
-<<<<<<< HEAD
-<<<<<<< HEAD
     ], 'sushi');
-=======
-    ]);
->>>>>>> 4b6b99016 (first commit)
-=======
-    ], 'sushi');
->>>>>>> dev
 });
 
 it('can manage module update history', function () {

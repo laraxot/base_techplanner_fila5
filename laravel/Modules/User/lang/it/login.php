@@ -30,7 +30,7 @@ return [
         'login' => [
             'label' => 'Accedi',
             'success' => 'Accesso effettuato con successo',
-            'error' => 'Credenziali non valide',
+            'error' => 'Le credenziali inserite non sono corrette.',
         ],
         'register' => [
             'label' => 'Registrati',
@@ -66,7 +66,7 @@ return [
     'subtitle_start' => 'Oppure',
     'subtitle_link' => 'crea un nuovo account',
     'page' => [
-        'title' => 'Benvenuto a LaravelPizza! 🍕',
+        'title' => 'Benvenuto a <nome progetto>! 🍕',
         'subtitle' => 'Accedi alla community di developer e pizza lovers',
     ],
     'already_registered' => 'Non hai ancora un account?',

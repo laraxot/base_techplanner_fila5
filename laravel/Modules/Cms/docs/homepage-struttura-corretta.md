@@ -7,15 +7,8 @@ Questo documento descrive in dettaglio la struttura e il contenuto corretto che 
 ## Contenuto Testuale Ufficiale
 
 ### Titolo Principale
-<<<<<<< HEAD
-<<<<<<< HEAD
-"Benvenuta su Salute Orale,"
-=======
 "Benvenuta su <slogan>,"
->>>>>>> 4b6b99016 (first commit)
-=======
 "Benvenuta su Salute Orale,"
->>>>>>> dev
 
 ### Testo Principale
 Il testo principale da mostrare è:
@@ -31,15 +24,8 @@ Il pulsante deve contenere il testo: "INIZIA ORA"
 ## Elementi Visivi Richiesti
 
 1. **Intestazione**:
-<<<<<<< HEAD
-<<<<<<< HEAD
-   - Logo "Salute Orale" (con la "O" stilizzata) 
-=======
    - Logo "<slogan>" (con la "O" stilizzata)
->>>>>>> 4b6b99016 (first commit)
-=======
    - Logo "Salute Orale" (con la "O" stilizzata) 
->>>>>>> dev
    - Selettore lingua (IT/EN)
 
 2. **Sezione Centrale**:
@@ -88,12 +74,5 @@ Per verificare che l'implementazione sia corretta:
 3. Compromettere l'efficacia comunicativa del portale
 4. Non rispettare gli accordi con i partner del progetto
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Questo documento serve come riferimento definitivo per il contenuto dell'homepage e deve essere consultato prima di qualsiasi modifica all'interfaccia utente del portale il progetto. 
-=======
 Questo documento serve come riferimento definitivo per il contenuto dell'homepage e deve essere consultato prima di qualsiasi modifica all'interfaccia utente del portale il progetto.
->>>>>>> 4b6b99016 (first commit)
-=======
 Questo documento serve come riferimento definitivo per il contenuto dell'homepage e deve essere consultato prima di qualsiasi modifica all'interfaccia utente del portale il progetto. 
->>>>>>> dev

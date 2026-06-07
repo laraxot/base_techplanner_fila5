@@ -8,154 +8,73 @@ return [
             'label' => 'Endpoint',
             'placeholder' => 'Enter API endpoint',
             'help' => 'URL of the API endpoint',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'method' => [
             'label' => 'Method',
             'placeholder' => 'Select HTTP method',
             'help' => 'HTTP method for the request',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'headers' => [
             'label' => 'Headers',
             'placeholder' => 'Configure request headers',
             'help' => 'HTTP headers for the request',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'parameters' => [
             'label' => 'Parameters',
             'placeholder' => 'Configure request parameters',
             'help' => 'Parameters for the API request',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'body' => [
             'label' => 'Body',
             'placeholder' => 'Enter request body',
             'help' => 'HTTP request body',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'timeout' => [
             'label' => 'Timeout',
             'placeholder' => 'Enter timeout in seconds',
             'help' => 'Request timeout in seconds',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'retries' => [
             'label' => 'Retries',
             'placeholder' => 'Enter number of retries',
             'help' => 'Number of retries for the request',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'rate_limit' => [
             'label' => 'Rate Limit',
             'placeholder' => 'Enter rate limit',
             'help' => 'Requests per minute limit',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'authentication' => [
             'label' => 'Authentication',
             'placeholder' => 'Configure authentication',
             'help' => 'API authentication configuration',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'validation' => [
@@ -246,10 +165,6 @@ return [
         'multipart' => 'Multipart',
     ],
     'status_codes' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         200 => '200 - OK',
         201 => '201 - Created',
         204 => '204 - No Content',
@@ -273,22 +188,5 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
-<<<<<<< HEAD
-=======
-        '200' => '200 - OK',
-        '201' => '201 - Created',
-        '204' => '204 - No Content',
-        '400' => '400 - Bad Request',
-        '401' => '401 - Unauthorized',
-        '403' => '403 - Forbidden',
-        '404' => '404 - Not Found',
-        '429' => '429 - Too Many Requests',
-        '500' => '500 - Internal Server Error',
-        '502' => '502 - Bad Gateway',
-        '503' => '503 - Service Unavailable',
-        '504' => '504 - Gateway Timeout',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ],
 ];

@@ -36,11 +36,7 @@ jobs:
         with:
           fetch-depth: 0
           fetch-tags: true
-<<<<<<< HEAD
-          token: ${{ github.token }}
-=======
           token: ${{ secrets.GITHUB_TOKEN }}
->>>>>>> dev
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -145,11 +141,7 @@ jobs:
             CLAUDE.md
             docs/**/*.md
         env:
-<<<<<<< HEAD
-          GITHUB_TOKEN: ${{ github.token }}
-=======
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
->>>>>>> dev
 
       - name: Update project version files
         run: |
@@ -201,8 +193,4 @@ jobs:
             # This would trigger module-specific workflow if changes detected
             echo "Module ${{ matrix.module }} found, checking for changes..."
             # You can add logic here to trigger module-specific releases
-<<<<<<< HEAD
           fi
-=======
-          fi
->>>>>>> dev

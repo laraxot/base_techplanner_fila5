@@ -282,12 +282,6 @@ Vedere: `Modules/<nome progetto>/docs/factories/phpstan-factory-compliance.md`
 - **Compliance Safe functions** per file operations
 - **Documentazione completa** di tutti i pattern
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Dicembre 2024*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 *Versione: 1.0*
 *Compatibilità: PHPStan 1.10+, Larastan 3.x, Laravel 11+* 

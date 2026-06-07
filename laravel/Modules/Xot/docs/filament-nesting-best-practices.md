@@ -2,12 +2,8 @@
 
 ## 📋 Introduzione
 
-<<<<<<< HEAD
-Questo documento fornisce best practices per implementare Filament Nesting in progetti Laraxot, basandosi sulla documentazione ufficiale di Filament 5.x e sulla strategia di implementazione nel modulo Quaeris.
-=======
 Questo documento fornisce best practices per implementare Filament Nesting in progetti Laraxot, basandosi sulla documentazione ufficiale di Filament 5.x e sulla strategia di implementazione nel modulo healthcare_app.
 Questo documento fornisce best practices per implementare Filament Nesting in progetti Laraxot, basandosi sulla documentazione ufficiale di Filament 5.x e sulla strategia di implementazione nel modulo ExternalProject.
->>>>>>> dev
 
 ---
 
@@ -417,12 +413,8 @@ protected static bool $shouldRegisterNavigation = false; // ✅
 - **Filament Nesting**: https://filamentphp.com/docs/5.x/resources/nesting
 - **Filament Relation Managers**: https://filamentphp.com/docs/5.x/resources/managing-relationships
 - **XotBaseResource**: `/Modules/Xot/docs/filament/resources.md`
-<<<<<<< HEAD
-- **Quaeris Nesting Strategy**: `/Modules/Quaeris/docs/filament-nesting-strategy.md`
-=======
 - **healthcare_app Nesting Strategy**: `/Modules/healthcare_app/docs/filament-nesting-strategy.md`
 - **ExternalProject Nesting Strategy**: `/Modules/ExternalProject/docs/filament-nesting-strategy.md`
->>>>>>> dev
 
 ---
 

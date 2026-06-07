@@ -2,28 +2,11 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\Cms\Tests\Feature\Frontoffice\FolioRoutes;
-
->>>>>>> dev
 use Modules\Cms\Tests\TestCase;
 
 uses(TestCase::class);
 
 it('GET /it/artisan-commands-manager returns acceptable status', function (): void {
-<<<<<<< HEAD
-    /** @phpstan-ignore-next-line property.notFound */
-    $res = $this->get('/it/artisan-commands-manager');
-    /** @phpstan-ignore-next-line method.nonObject */
-    $status = (int) $res->getStatusCode();
-    if ($status >= 500) {
-        /* @phpstan-ignore-next-line property.notFound */
-=======
-    $res = $this->get('/it/artisan-commands-manager');
-    $status = (int) $res->getStatusCode();
-    if ($status >= 500) {
->>>>>>> dev
         $this->markTestSkipped('Server error on /it/artisan-commands-manager: '.$status);
     }
     $this->assertTrue(

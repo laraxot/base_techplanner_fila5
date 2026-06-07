@@ -4,21 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Database\Seeders;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Seeder;
 use InvalidArgumentException;
-=======
-use InvalidArgumentException;
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Database\Seeder;
->>>>>>> 4b6b99016 (first commit)
-=======
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Database\Seeder;
-use InvalidArgumentException;
->>>>>>> dev
 use Modules\Tenant\Models\Domain;
 
 class DomainsSeeder extends Seeder

@@ -1,17 +1,9 @@
 # Filament Blade Components Usage (CMS)
 
 ## Collegamenti
-<<<<<<< HEAD
-- [Documentazione Root](../../../../project_docs/collegamenti-documentazione.md) - Indice centrale dei collegamenti
-<<<<<<< HEAD
-- [Documentazione in Themes/One](../../../../themes/one/project_docs/filament-blade-components.md) - Contesto del tema principale
-=======
 - [Documentazione in Themes/One](../../../../Themes/One/project_docs/filament-blade-components.md) - Contesto del tema principale
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione Root](../../../../../docs/project/collegamenti-documentazione.md) - Indice centrale dei collegamenti
 - [Documentazione in Themes/One](../../../../themes/one/project_docs/filament-blade-components.md) - Contesto del tema principale
->>>>>>> dev
 
 Per le best practice di **Filament** (https://filamentphp.com/project_docs/3.x/support/blade-components/overview), utilizziamo sempre i componenti Blade di Filament per elementi interattivi e di navigazione.
 
@@ -22,21 +14,12 @@ Per le best practice di **Filament** (https://filamentphp.com/project_docs/3.x/s
 
 ### Esempio consigliato
 ```blade
-<<<<<<< HEAD
-<<<<<<< HEAD
-<x-filament::button 
-    size="sm" 
-    href="{{ route('register.type', ['type' => $type]) }}" 
-=======
 <x-filament::button
     size="sm"
     href="{{ route('register.type', ['type' => $type]) }}"
->>>>>>> 4b6b99016 (first commit)
-=======
 <x-filament::button 
     size="sm" 
     href="{{ route('register.type', ['type' => $type]) }}" 
->>>>>>> dev
     tag="a"
 >
     {{ ucfirst($type) }}
@@ -51,12 +34,6 @@ Per le best practice di **Filament** (https://filamentphp.com/project_docs/3.x/s
 ```
 
 ## Collegamenti tra versioni di filament-blade-components.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [filament-blade-components.md](laravel/modules/cms/project_docs/filament-blade-components.md)
-* [filament-blade-components.md](laravel/themes/one/project_docs/filament-blade-components.md)
-
-=======
 * [filament-blade-components.md](laravel/Modules/Cms/project_docs/filament-blade-components.md)
 * [filament-blade-components.md](laravel/Themes/One/project_docs/filament-blade-components.md)
 # Filament Blade Components Usage (CMS)
@@ -93,9 +70,5 @@ Per le best practice di **Filament** (https://filamentphp.com/docs/3.x/support/b
 ## Collegamenti tra versioni di filament-blade-components.md
 * [filament-blade-components.md](laravel/Modules/Cms/docs/filament-blade-components.md)
 * [filament-blade-components.md](laravel/Themes/One/docs/filament-blade-components.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [filament-blade-components.md](laravel/modules/cms/project_docs/filament-blade-components.md)
 * [filament-blade-components.md](laravel/themes/one/project_docs/filament-blade-components.md)
-
->>>>>>> dev

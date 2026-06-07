@@ -4,123 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Cms\Tests\Feature;
 
-<<<<<<< HEAD
-use Filament\Forms\Components\Builder\Block;
-=======
->>>>>>> dev
 use Modules\Cms\Tests\TestCase;
 use Modules\UI\Actions\Block\GetAllBlocksAction;
 use Modules\UI\View\Components\Render\Blocks;
 
 use function Pest\Laravel\get;
-<<<<<<< HEAD
-use function Safe\file_get_contents;
-use function Safe\json_decode;
-=======
->>>>>>> dev
 
 use Spatie\LaravelData\DataCollection;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
-describe('Filament Builder Blocks System', function () {
-    test('blocks discovery system finds all available blocks', function () {
-        $allBlocks = app(GetAllBlocksAction::class)->execute();
-
-        $this->assertInstanceOf(DataCollection::class, $allBlocks);
-        $this->assertGreaterThan(0, $allBlocks->count(), 'At least one block should be discovered');
-
-        // Verify each block has required properties
-        $allBlocks->each(function ($block) {
-            $blockArray = $block->toArray();
-            $this->assertIsArray($blockArray);
-            $this->assertArrayHasKey('name', $blockArray);
-            $this->assertArrayHasKey('class', $blockArray);
-            $this->assertArrayHasKey('module', $blockArray);
-            $this->assertArrayHasKey('path', $blockArray);
-
-            $this->assertTrue(class_exists($block->class), "Block class {$block->class} should exist");
-        });
-    });
-
-    test('xot base block pattern is followed by cms blocks', function () {
-        $allBlocks = app(GetAllBlocksAction::class)->execute();
-
-        $cmsBlocks = $allBlocks->filter(fn ($block) => 'Cms' === $block->module);
-
-        $this->assertGreaterThan(0, $cmsBlocks->count(), 'CMS module should have blocks');
-
-        $cmsBlocks->each(function ($block) {
-            $blockClass = $block->class;
-            if (! class_exists($blockClass)) {
-                return;
-            }
-
-            $reflection = new \ReflectionClass($blockClass);
-
-            // Verify extends XotBaseBlock or has make() method
-            $this->assertTrue($reflection->hasMethod('make'), "Block {$blockClass} should have make() method");
-            $this->assertTrue($reflection->hasMethod('getBlockSchema'), "Block {$blockClass} should have getBlockSchema() method");
-        });
-    });
-
-    test('page component renders blocks correctly', function () {
-        // Mock a simple page data structure
-        $pageData = [
-            'content_blocks' => [
-                'it' => [
-                    [
-                        'type' => 'test-block',
-                        'data' => [
-                            'view' => 'test::components.blocks.test.default',
-                            'title' => 'Test Block Title',
-                            'content' => 'Test block content',
-                        ],
-                    ],
-                ],
-            ],
-        ];
-
-        // Test that blocks are properly structured
-        $this->assertIsArray($pageData['content_blocks']);
-        $this->assertIsArray($pageData['content_blocks']['it']);
-
-        $block = $pageData['content_blocks']['it'][0];
-        $this->assertIsArray($block);
-        $this->assertArrayHasKey('type', $block);
-        $this->assertArrayHasKey('data', $block);
-        $this->assertIsArray($block['data']);
-        $this->assertArrayHasKey('view', $block['data']);
-    });
-
-    test('block naming conventions are consistent', function () {
-        $allBlocks = app(GetAllBlocksAction::class)->execute();
-
-        $allBlocks->each(function ($block) {
-            // Verify snake_case naming
-            $this->assertIsString($block->name);
-            $this->assertMatchesRegularExpression('/^[a-z]+(_[a-z]+)*$/', $block->name, "Block name {$block->name} should be snake_case");
-
-            // Verify class naming (PascalCase ending with Block)
-            $className = class_basename($block->class);
-            if (str_ends_with($className, 'Block')) {
-                $this->assertMatchesRegularExpression(
-                    '/^[A-Z][a-zA-Z]*Block$/',
-                    $className,
-                    "Block class {$className} should be PascalCase ending with 'Block'",
-                );
-            }
-        });
-    });
-
-    test('block views follow theme pattern', function () {
-        // Test with actual homepage JSON
-<<<<<<< HEAD
-        $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
-=======
-        $homepageJsonPath = config_path('local/<nome progetto>/database/content/pages/home.json');
->>>>>>> 4b6b99016 (first commit)
         if (! file_exists($homepageJsonPath)) {
             $this->assertTrue(true);
 
@@ -157,11 +50,6 @@ describe('Filament Builder Blocks System', function () {
     });
 
     test('json storage pattern is consistent', function () {
-<<<<<<< HEAD
-        $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
-=======
-        $homepageJsonPath = config_path('local/<nome progetto>/database/content/pages/home.json');
->>>>>>> 4b6b99016 (first commit)
         if (! file_exists($homepageJsonPath)) {
             $this->assertTrue(true);
 
@@ -230,11 +118,6 @@ describe('Filament Builder Blocks System', function () {
         $this->assertStringContainsString('slug="home"', $content);
 
         // Verify blocks are rendered
-<<<<<<< HEAD
-        $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
-=======
-        $homepageJsonPath = config_path('local/<nome progetto>/database/content/pages/home.json');
->>>>>>> 4b6b99016 (first commit)
         if (! file_exists($homepageJsonPath)) {
             $this->assertTrue(true);
 
@@ -268,11 +151,6 @@ describe('Filament Builder Blocks System', function () {
     });
 
     test('block data validation and security', function () {
-<<<<<<< HEAD
-        $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
-=======
-        $homepageJsonPath = config_path('local/<nome progetto>/database/content/pages/home.json');
->>>>>>> 4b6b99016 (first commit)
         if (! file_exists($homepageJsonPath)) {
             $this->assertTrue(true);
 
@@ -345,11 +223,6 @@ describe('Filament Builder Blocks System', function () {
 
     test('performance considerations are implemented', function () {
         // Test that JSON loading is efficient
-<<<<<<< HEAD
-        $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
-=======
-        $homepageJsonPath = config_path('local/<nome progetto>/database/content/pages/home.json');
->>>>>>> 4b6b99016 (first commit)
         if (! file_exists($homepageJsonPath)) {
             $this->assertTrue(true);
 
@@ -380,7 +253,6 @@ describe('Filament Builder Blocks System', function () {
         $this->assertLessThan(2.0, $renderTime, 'Page rendering should be reasonably fast');
     });
 });
-=======
 test('blocks discovery returns a data collection', function (): void {
     $allBlocks = app(GetAllBlocksAction::class)->execute();
 
@@ -417,4 +289,3 @@ test('homepage request is reachable when route is available', function (): void 
 
     expect($response->status())->toBeInt();
 });
->>>>>>> dev

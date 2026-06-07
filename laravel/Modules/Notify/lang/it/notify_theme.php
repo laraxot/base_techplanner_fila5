@@ -16,32 +16,16 @@ return [
             'tooltip' => 'Nome del tema',
             'placeholder' => 'es: Tema Aziendale',
             'help' => 'Inserisci un nome descrittivo per il tema',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Descrizione del tema',
             'placeholder' => 'es: Tema standard per le comunicazioni aziendali',
             'help' => 'Breve descrizione dello scopo del tema',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'colors' => [
             'label' => 'Colori',
@@ -64,16 +48,8 @@ return [
                     'placeholder' => 'es: #F5A623',
                 ],
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'typography' => [
             'label' => 'Tipografia',
@@ -91,16 +67,8 @@ return [
                     'placeholder' => 'es: Helvetica, Arial, sans-serif',
                 ],
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'layout' => [
             'label' => 'Layout',
@@ -116,16 +84,8 @@ return [
                     'tooltip' => 'Stile del piè di pagina',
                 ],
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'assets' => [
             'label' => 'Risorse',
@@ -141,46 +101,22 @@ return [
                     'tooltip' => 'Immagine di sfondo',
                 ],
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'is_default' => [
             'label' => 'Predefinito',
             'tooltip' => 'Imposta come tema predefinito',
             'help' => 'Il tema predefinito verrà utilizzato per tutte le notifiche senza tema specifico',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato di attivazione del tema',
             'help' => 'Solo i temi attivi possono essere utilizzati',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -214,18 +150,9 @@ return [
                 'cancel' => 'No, annulla',
             ],
         ],
-<<<<<<< HEAD
-<<<<<<< HEAD
         'delete' => [
             'tooltip' => 'delete',
         ],
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-        'delete' => [
-            'tooltip' => 'delete',
-        ],
->>>>>>> dev
     ],
     'messages' => [
         'created' => [
@@ -256,14 +183,6 @@ return [
     'model' => [
         'label' => 'Tema Notifica',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Notify Theme',
     'plural_label' => 'Notify Theme (Plurale)',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Notify Theme',
-    'plural_label' => 'Notify Theme (Plurale)',
->>>>>>> dev
 ];

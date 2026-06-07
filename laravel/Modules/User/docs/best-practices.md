@@ -59,11 +59,7 @@ public function addMember(Team $team, User $user)
 - [Linee guida Actions](mdc:actions.mdc)
 - [Linee guida Activitylog](mdc:activitylog.mdc)
 - [Testing](mdc:testing.md)
-<<<<<<< HEAD
-- [Documentazione centrale](mdc:../../../../docs/index.md)
-=======
 - [Documentazione centrale](mdc:../../../../../docs/index.md)
->>>>>>> dev
 
 ## Migration modulari: path corretto obbligatorio
 

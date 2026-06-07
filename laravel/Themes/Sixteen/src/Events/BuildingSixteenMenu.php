@@ -9,11 +9,7 @@ use Themes\Sixteen\Services\MenuBuilder;
 
 /**
  * Event che viene lanciato durante la costruzione del menu del tema Sixteen
-<<<<<<< HEAD
  * 
-=======
- *
->>>>>>> dev
  * Questo event permette di modificare il menu prima che venga renderizzato,
  * seguendo il pattern dell'official Italia Design Theme
  */
@@ -24,12 +20,7 @@ class BuildingSixteenMenu
     public function __construct(
         public MenuBuilder $menuBuilder,
         public string $location
-<<<<<<< HEAD
-    ) {
-    }
-=======
     ) {}
->>>>>>> dev
 
     /**
      * Aggiunge elementi al menu corrente in base alla location
@@ -42,10 +33,7 @@ class BuildingSixteenMenu
             'footer' => $this->menuBuilder->addFooter($items),
             'footer_bar' => $this->menuBuilder->addFooterBar($items),
             default => throw new \InvalidArgumentException("Unknown menu location: {$this->location}")
-<<<<<<< HEAD
             default => throw new \InvalidArgumentException("Unknown menu location: {$this->location}")
-=======
->>>>>>> dev
         };
     }
 
@@ -65,3 +53,4 @@ class BuildingSixteenMenu
         return $this->location;
     }
 }
+

@@ -82,10 +82,6 @@ Questo errore viola i principi fondamentali dell'architettura modulare Laraxot e
 - [modularity-hardcoded-names.md](./modularity-hardcoded-names.md) - Regole globali di modularità
 
 ### Modulo Notify
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [modularity-hardcoded-names.md](../laravel/modules/notify/docs/modularity-hardcoded-names.md) - Correzione critica per modulo Notify
 
 ### Modulo UI
@@ -93,8 +89,6 @@ Questo errore viola i principi fondamentali dell'architettura modulare Laraxot e
 
 ### Modulo Xot
 - [modularity-optimizations.md](../laravel/modules/xot/docs/modularity-optimizations.md) - Ottimizzazioni per modularità
-<<<<<<< HEAD
-=======
 - [modularity-hardcoded-names.md](../laravel/Modules/Notify/docs/modularity-hardcoded-names.md) - Correzione critica per modulo Notify
 
 ### Modulo UI
@@ -102,9 +96,6 @@ Questo errore viola i principi fondamentali dell'architettura modulare Laraxot e
 
 ### Modulo Xot
 - [modularity-optimizations.md](../laravel/Modules/Xot/docs/modularity-optimizations.md) - Ottimizzazioni per modularità
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ### Regole Cursor
 - [modularity-hardcoded-names.mdc](../.cursor/rules/modularity-hardcoded-names.mdc) - Regole critiche per modularità
@@ -309,21 +300,12 @@ Dopo la correzione completa, tutti i comandi devono restituire **0 occorrenze**.
 - [modularity-hardcoded-names.md](./modularity-hardcoded-names.md) - Regole globali di modularità
 
 ### Modulo Specifico
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Notify: Modularity Corrections](../laravel/modules/notify/docs/modularity-hardcoded-names.md)
-- [UI: Modularity Optimizations](../laravel/modules/ui/docs/modularity-optimizations.md)
-- [Xot: Modularity Optimizations](../laravel/modules/xot/docs/modularity-optimizations.md)
-=======
 - [Notify: Modularity Corrections](../laravel/Modules/Notify/docs/modularity-hardcoded-names.md)
 - [UI: Modularity Optimizations](../laravel/Modules/UI/docs/modularity-optimizations.md)
 - [Xot: Modularity Optimizations](../laravel/Modules/Xot/docs/modularity-optimizations.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Notify: Modularity Corrections](../laravel/modules/notify/docs/modularity-hardcoded-names.md)
 - [UI: Modularity Optimizations](../laravel/modules/ui/docs/modularity-optimizations.md)
 - [Xot: Modularity Optimizations](../laravel/modules/xot/docs/modularity-optimizations.md)
->>>>>>> dev
 
 ### Regole e Memorie
 - [Cursor Rules: Modularity](../.cursor/rules/modularity-hardcoded-names.mdc)
@@ -338,12 +320,6 @@ Dopo la correzione completa, tutti i comandi devono restituire **0 occorrenze**.
 **Impatto**: Compromissione completa dell'architettura modulare
 **Timeline**: Correzione completa richiesta entro 1 mese
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Ultimo aggiornamento**: 2025-01-06
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Responsabile**: Team di sviluppo Laraxot
 **Stato**: Audit completato, correzioni in corso

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 # 📚 **Indice Documentazione Modulo Activity**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -26,8 +22,6 @@
 - ✅ **[PHPStan Compliance](./phpstan-analysis.md)** - Report sulla stabilità Level 10.
 - 🔬 **[Testing Strategy](./testing-strategy-implementation.md)** - Approccio Pest/PHPUnit per il modulo.
 - 🧹 **[PHPMD Fixes](./phpmd-fixes.md)** - Risoluzione dei problemi di complessità cicromatica.
-<<<<<<< HEAD
-=======
 - 🧪 **PSR-4 Test Helpers** - Preferire Pest e classi anonime nei test; evitare classi helper top-level non allineate al filepath.
 
 ## 📋 **Documenti Prodotto & Sviluppo**
@@ -65,7 +59,6 @@
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
 - `spatie/laravel-activitylog` - Audit trail
 - `spatie/laravel-event-sourcing` - Event sourcing, CQRS
->>>>>>> dev
 
 ## 🔗 **Moduli Correlati**
 - [Xot](../../xot/docs/readme.md) - Core framework.
@@ -74,8 +67,6 @@
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-<<<<<<< HEAD
-=======
 # Activity Module - Documentation Index
 
 **Last Update**: 13 Dicembre 2025
@@ -200,8 +191,6 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 ---
 
 *Modulo di riferimento per PHPStan compliance nel progetto Laraxot*
->>>>>>> 4b6b99016 (first commit)
-=======
 
 ## Dependency Intelligence
 
@@ -213,4 +202,3 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 - Riferimento globale: [Pre-Edit Docs-First Rule](../../../../docs/rules/pre-edit-docs-first-rule.md)
 - Memory: [Pre-Edit Docs-First Memory](../../../../docs/memory/pre-edit-docs-first-memory.md)
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
->>>>>>> dev

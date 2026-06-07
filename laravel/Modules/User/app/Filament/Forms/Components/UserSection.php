@@ -14,14 +14,6 @@ use Filament\Schemas\Components\Section;
 
 class UserSection extends Section
 {
-<<<<<<< HEAD
-    public static function getDefaultName(): ?string
-    {
-        return 'user';
-    }
-
-=======
->>>>>>> dev
     protected function setUp(): void
     {
         parent::setUp();
@@ -36,12 +28,9 @@ class UserSection extends Section
             ]),
         ]);
     }
-<<<<<<< HEAD
-=======
 
     public static function getDefaultName(): ?string
     {
         return 'user';
     }
->>>>>>> dev
 }

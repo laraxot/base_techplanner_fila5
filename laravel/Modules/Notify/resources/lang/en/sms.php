@@ -7,10 +7,6 @@ return [
         'recipient' => [
             'label' => 'Recipient',
             'helper_text' => 'Enter the phone number in international format (e.g. +393401234567).',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'description' => '',
         ],
@@ -19,43 +15,18 @@ return [
             'helper_text' => 'Enter the phone number in international format (e.g. +393401234567).',
             'tooltip' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'to' => [
-             'label' => 'Recipient',
-             'helper_text' => 'Enter the phone number in international format (e.g. +393401234567).',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'message' => [
             'label' => 'Message',
             'helper_text' => 'Enter the message content (max 160 characters for a single SMS).',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'driver' => [
             'label' => 'SMS Driver',
             'helper_text' => 'Select the provider for sending the SMS.',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -88,10 +59,6 @@ return [
             'label' => 'Provider',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -101,9 +68,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

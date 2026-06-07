@@ -55,10 +55,7 @@ public function form(Form $form): Form
 
 ### ⚠️ Richiede Attenzione
 - **Xot/Helpers/Helper.php**: File con conflitti complessi, richiede risoluzione manuale
-<<<<<<< HEAD
 
-=======
->>>>>>> dev
 ## Script Creati
 
 ### 1. `fix_filament4_conflicts.sh`

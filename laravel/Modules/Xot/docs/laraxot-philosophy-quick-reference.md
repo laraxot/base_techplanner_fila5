@@ -80,11 +80,7 @@ composer dump-autoload
 ## 🎯 Why This Matters
 
 ### Benefits
-<<<<<<< HEAD
-- ✅ Predictable autoloading
-=======
 - ✅ <nome progetto>able autoloading
->>>>>>> dev
 - ✅ Reliable test execution
 - ✅ Easy maintenance
 - ✅ Fast debugging

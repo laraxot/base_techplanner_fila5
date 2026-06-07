@@ -22,10 +22,6 @@ return [
     'fields' => [
         'edit' => [
             'label' => 'Modifica',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -71,32 +67,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'payload' => [
-            'label' => 'Contenuto',
-        ],
-        'id' => [
-            'label' => 'ID',
-        ],
-        'queue' => [
-            'label' => 'Coda',
-        ],
-        'attempts' => [
-            'label' => 'Tentativi',
-        ],
-        'reserved_at' => [
-            'label' => 'Riservato il',
-        ],
-        'available_at' => [
-            'label' => 'Disponibile il',
-        ],
-        'created_at' => [
-            'label' => 'Creato il',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'navigation' => [
@@ -107,12 +77,4 @@ return [
     ],
     'label' => 'Lavoro',
     'plural_label' => 'Lavori',
-<<<<<<< HEAD
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 4b6b99016 (first commit)
-=======
-];
->>>>>>> dev

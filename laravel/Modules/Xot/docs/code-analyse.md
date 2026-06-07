@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 //----------------------------------------------------------
 phpstan
 install:
@@ -80,16 +78,3 @@ https://github.com/enlightn/enlightn
  "phan/phan": "^4.0",
         "phpmetrics/phpmetrics": "^2.7",
         "phpunit/php-code-coverage": "^9.2",
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> dev
-

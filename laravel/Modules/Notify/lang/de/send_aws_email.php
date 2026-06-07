@@ -20,86 +20,41 @@ return [
             'label' => 'Destinatario Email',
             'placeholder' => 'Inserisci indirizzo email destinatario',
             'help' => 'Indirizzo email del destinatario principale del messaggio',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'subject' => [
             'label' => 'Oggetto Email',
             'placeholder' => 'Inserisci l\'oggetto del messaggio',
             'help' => 'Testo che apparirà come oggetto dell\'email ricevuta',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'body_html' => [
             'label' => 'Corpo HTML',
             'placeholder' => 'Inserisci il contenuto HTML dell\'email',
             'help' => 'Contenuto formattato in HTML per email con layout avanzato',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'template' => [
             'label' => 'Template Email',
             'placeholder' => 'Seleziona un template predefinito',
             'help' => 'Template predefinito da utilizzare per la formattazione dell\'email',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'add_attachments' => [
             'label' => 'Allegati Email',
             'placeholder' => 'Carica file da allegare al messaggio',
             'help' => 'File allegati che verranno inviati insieme all\'email',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -120,14 +75,6 @@ return [
         'queue' => 'Email aggiunta alla coda di invio',
         'failed' => 'Invio email fallito',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

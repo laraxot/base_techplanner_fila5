@@ -5,29 +5,14 @@ declare(strict_types=1);
 namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use Modules\User\Models\AuthenticationLog;
->>>>>>> 4b6b99016 (first commit)
-=======
-use Modules\User\Models\AuthenticationLog;
->>>>>>> dev
 
 class AuthenticationLogFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    protected $model = \Modules\User\Models\AuthenticationLog::class;
-=======
     protected $model = AuthenticationLog::class;
->>>>>>> 4b6b99016 (first commit)
-=======
-    protected $model = AuthenticationLog::class;
->>>>>>> dev
 
     /**
      * Define the model's default state.

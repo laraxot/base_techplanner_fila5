@@ -48,15 +48,7 @@ class YourResource extends Resource
 - Aggiunta tipizzazione stretta
 - Implementata integrazione Laraxot
 ## Collegamenti tra versioni di media-relation-manager.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [media-relation-manager.md](../../../media/docs/filament/relation-managers/media-relation-manager.md)
-* [media-relation-manager.md](../../../media/docs/resources/media-relation-manager.md)
-=======
 * [media-relation-manager.md](../../../Media/docs/filament/relation-managers/media-relation-manager.md)
 * [media-relation-manager.md](../../../Media/docs/resources/media-relation-manager.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [media-relation-manager.md](../../../media/docs/filament/relation-managers/media-relation-manager.md)
 * [media-relation-manager.md](../../../media/docs/resources/media-relation-manager.md)
->>>>>>> dev

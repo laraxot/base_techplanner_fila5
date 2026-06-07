@@ -281,15 +281,8 @@ public function run(): void
 ## Link Documentazione
 
 ### <nome progetto> Module
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
-=======
 - [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/UserFactory-advanced-improvements-analysis.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
->>>>>>> dev
 - [Implementation Completed](../../<nome progetto>/docs/factories/userfactory_implementation_completed.md)
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
@@ -299,13 +292,8 @@ public function run(): void
 - [BaseUser Architecture](./parental_inheritance.md)
 
 ### Root Documentation
-<<<<<<< HEAD
-- [UserFactory <nome progetto> Integration](../../../../docs/userfactory_<nome progetto>_integration.md)
-- [Testing Standards](../../../../docs/testing_standards.md)
-=======
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
 - [Testing Standards](../../../../../docs/testing_standards.md)
->>>>>>> dev
 # UserFactory Advanced Integration - Modulo User & <nome progetto>
 
 ## Post Deep-Study Analysis
@@ -589,15 +577,8 @@ public function run(): void
 ## Link Documentazione
 
 ### <nome progetto> Module
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
-=======
 - [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/UserFactory-advanced-improvements-analysis.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
->>>>>>> dev
 - [Implementation Completed](../../<nome progetto>/docs/factories/userfactory_implementation_completed.md)
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
@@ -607,10 +588,5 @@ public function run(): void
 - [BaseUser Architecture](./parental_inheritance.md)
 
 ### Root Documentation
-<<<<<<< HEAD
-- [UserFactory <nome progetto> Integration](../../../../docs/userfactory_<nome progetto>_integration.md)
-- [Testing Standards](../../../../docs/testing_standards.md)
-=======
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
 - [Testing Standards](../../../../../docs/testing_standards.md)
->>>>>>> dev

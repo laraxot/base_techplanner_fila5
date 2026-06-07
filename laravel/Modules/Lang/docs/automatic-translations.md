@@ -109,10 +109,6 @@ Per gli step dei wizard, la chiave di traduzione segue un formato leggermente di
 ```
 
 ## Collegamenti Bidirezionali
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [LangServiceProvider](/var/www/html/base_<nome progetto>/laravel/Modules/Lang/app/Providers/LangServiceProvider.php)
 - [Convenzioni di Traduzione](/var/www/html/base_<nome progetto>/laravel/modules/lang/docs/translation-conventions.md)
 - [Best Practices Filament](/var/www/html/base_<nome progetto>/laravel/modules/xot/docs/filament-best-practices.md)
@@ -120,8 +116,6 @@ Per gli step dei wizard, la chiave di traduzione segue un formato leggermente di
 ## Collegamenti tra versioni di automatic-translations.md
 * [automatic-translations.md](../../ui/docs/filament/automatic-translations.md)
 
-<<<<<<< HEAD
-=======
 - [LangServiceProvider](Modules/Lang/app/Providers/LangServiceProvider.php)
 - [Convenzioni di Traduzione](Modules/Lang/project_docs/translation-conventions.md)
 - [Best Practices Filament](Modules/Xot/project_docs/filament-best-practices.md)
@@ -245,6 +239,3 @@ Per gli step dei wizard, la chiave di traduzione segue un formato leggermente di
 
 ## Collegamenti tra versioni di automatic-translations.md
 * [automatic-translations.md](../../UI/docs/filament/automatic-translations.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

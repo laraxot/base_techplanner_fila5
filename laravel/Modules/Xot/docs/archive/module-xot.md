@@ -2,17 +2,10 @@
 # Modulo Xot
 
 ## Informazioni Generali
-<<<<<<< HEAD
-- **Nome**: `laraxot/module_xot_fila3`
-- **Descrizione**: Modulo core del repository laraxot
-- **Namespace**: `Modules\Xot`
-- **Repository**: https://github.com/laraxot/module_xot_fila3
-=======
 - **Nome**: `laraxot/module_xot_fila5`
 - **Descrizione**: Modulo core del repository laraxot
 - **Namespace**: `Modules\Xot`
 - **Repository**: https://github.com/laraxot/module_xot_fila5
->>>>>>> dev
 
 ## Service Providers
 1. `Modules\Xot\Providers\XotServiceProvider`

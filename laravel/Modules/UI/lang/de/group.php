@@ -6,10 +6,6 @@ return [
     'fields' => [
         'lavoratore' => [
             'label' => 'lavoratore',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -68,32 +64,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
-        ],
-        'qua' => [
-            'label' => 'qua',
-        ],
-        'rep' => [
-            'label' => 'rep',
-        ],
-        'periodo' => [
-            'label' => 'periodo',
-        ],
-        'info' => [
-            'label' => 'info',
-        ],
-        'diritto' => [
-            'label' => 'diritto',
-        ],
-        'motivo/invio email' => [
-            'label' => 'motivo/invio email',
-        ],
-        'motivo/invio_email' => [
-            'label' => 'motivo/invio_email',
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -221,21 +221,12 @@ $table->index(['morphable_id', 'morphable_type']); // Performance
 ## 🔗 **Collegamenti e Risorse**
 
 ### **Documentazione Correlata**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Regole Migrazioni Base](../../xot/docs/migration_rules.md)
-- [UUID Implementation](../../user/docs/uuid_implementation.md)
-- [Polymorphic Relationships](../../xot/docs/polymorphic_relationships.md)
-=======
 - [Regole Migrazioni Base](../../Xot/docs/migration_rules.md)
 - [UUID Implementation](../../User/docs/uuid_implementation.md)
 - [Polymorphic Relationships](../../Xot/docs/polymorphic_relationships.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Regole Migrazioni Base](../../xot/docs/migration_rules.md)
 - [UUID Implementation](../../user/docs/uuid_implementation.md)
 - [Polymorphic Relationships](../../xot/docs/polymorphic_relationships.md)
->>>>>>> dev
 - [System Architecture](../system_architecture.md)
 
 ### **Esempi Pratici**
@@ -260,12 +251,6 @@ $table->index(['morphable_id', 'morphable_type']); // Performance
 
 **Questa lezione cambierà il mio approccio a tutte le future modifiche al sistema.**
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 *Caso studio: Migration Activity Table con polimorfismo UUID*
 *Status: ✅ Lezione appresa e memorizzata permanentemente*

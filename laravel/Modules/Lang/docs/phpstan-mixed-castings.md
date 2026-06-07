@@ -215,11 +215,7 @@ Dopo aver applicato le correzioni:
 
 ## Backlink
 
-<<<<<<< HEAD
-- [Root PHPStan Rules](../../../docs/phpstan_rules.md)
-=======
 - [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
->>>>>>> dev
 - [Lang Module Structure](./readme.md)
 - [Xot Safe Casting Actions](../../xot/docs/safe-casting-actions.md)
 
@@ -440,11 +436,6 @@ Dopo aver applicato le correzioni:
 
 ## Backlink
 
-<<<<<<< HEAD
-- [Root PHPStan Rules](../../../docs/phpstan_rules.md)
-=======
 - [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
->>>>>>> dev
 - [Lang Module Structure](./readme.md)
 - [Xot Safe Casting Actions](../../xot/docs/safe-casting-actions.md)
-

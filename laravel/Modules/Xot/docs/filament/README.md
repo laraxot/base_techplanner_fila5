@@ -14,10 +14,6 @@ Questa cartella contiene la documentazione relativa all'implementazione di Filam
 Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend.
 
 ## Collegamenti tra versioni di README.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -94,8 +90,6 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../cms/project_docs/components/readme.md)
 * [README.md](../../../../themes/two/project_docs/readme.md)
 * [README.md](../../../../themes/one/project_docs/readme.md)
-<<<<<<< HEAD
-=======
 * [README.md](bashscripts/project_docs/README.md)
 * [README.md](bashscripts/project_docs/it/README.md)
 * [README.md](docs/laravel-app/phpstan/README.md)
@@ -172,9 +166,6 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../Cms/project_docs/components/README.md)
 * [README.md](../../../../Themes/Two/project_docs/README.md)
 * [README.md](../../../../Themes/One/project_docs/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Regola sulle closure void nelle azioni custom Filament
 
@@ -236,13 +227,6 @@ $prefix = static::$translationPrefix;
 ```
 
 ## Moduli che fanno riferimento a questa regola
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
-=======
 - [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
->>>>>>> dev
 // Aggiungere qui altri moduli se necessario

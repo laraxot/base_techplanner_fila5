@@ -81,41 +81,20 @@ use Sushi\Sushi;
 class ComuneSushi extends \Illuminate\Database\Eloquent\Model
 {
     use Sushi;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Disable auto-incrementing IDs
      */
     public $incrementing = false;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * The "type" of the auto-incrementing ID.
      */
     protected $keyType = 'string';
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * The attributes that should be cast.
      */
@@ -125,15 +104,8 @@ class ComuneSushi extends \Illuminate\Database\Eloquent\Model
         'cap' => 'array',
         'popolazione' => 'integer',
     ];
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Cache duration in seconds (1 week)
      */
@@ -145,29 +117,15 @@ class ComuneSushi extends \Illuminate\Database\Eloquent\Model
     public function getRows()
     {
         $cacheKey = 'sushi_comuni_data';
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return Cache::remember($cacheKey, $this->sushiCacheDuration, function () {
             $path = module_path('Geo', 'Resources/json/comuni.json');
             return json_decode(File::get($path), true);
         });
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Get the connection for the model.
      */
@@ -175,69 +133,34 @@ class ComuneSushi extends \Illuminate\Database\Eloquent\Model
     {
         return 'sushi';
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     // Relazioni
     public function regione()
     {
         return $this->belongsTo(Regione::class, 'regione.codice', 'codice');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function provincia()
     {
         return $this->belongsTo(Provincia::class, 'provincia.codice', 'codice');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     // Scope
     public function scopeByRegion($query, string $regionCode)
     {
         return $query->where('regione->codice', $regionCode);
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function scopeByProvince($query, string $provinceCode)
     {
         return $query->where('provincia->codice', $provinceCode);
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     // Metodi statici per compatibilità
     public static function allRegions()
     {
@@ -247,15 +170,8 @@ class ComuneSushi extends \Illuminate\Database\Eloquent\Model
             ->get()
             ->pluck('nome', 'codice');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public static function getProvincesByRegion(string $regionCode)
     {
         return static::query()
@@ -265,15 +181,8 @@ class ComuneSushi extends \Illuminate\Database\Eloquent\Model
             ->get()
             ->pluck('nome', 'codice');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Clear all cached data
      */
@@ -390,13 +299,6 @@ Basandoci sull'analisi, raccomandiamo l'adozione di Laravel Sushi per il modello
 ## Link Correlati
 - [Documentazione Ufficiale Sushi](https://github.com/calebporzio/sushi)
 - [Guida alla Migrazione](migration-guide.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Benchmark Dettagliati](benchmarks/readme.md)
-=======
 - [Benchmark Dettagliati](benchmarks/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Benchmark Dettagliati](benchmarks/readme.md)
->>>>>>> dev
 - [Documentazione GeoJsonModel](geo-json-model.md)

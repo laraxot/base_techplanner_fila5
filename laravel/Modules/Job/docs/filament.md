@@ -1,18 +1,10 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 4b6b99016 (first commit)
 https://gitlab.com/amvisor/filament-failed-jobs/-/blob/master/src/FilamentFailedJobsServiceProvider.php
 
 https://github.com/croustibat/filament-jobs-monitor
 
 https://medium.com/@laravelprotips/laravel-filament-top-12-plugins-simplified-with-demonstrations-a87aa3b63a6d
 
-<<<<<<< HEAD
-
-
-=======
 ### Versione HEAD
 
 ## Collegamenti tra versioni di filament.md
@@ -29,8 +21,6 @@ https://medium.com/@laravelprotips/laravel-filament-top-12-plugins-simplified-wi
 ### Versione Incoming
 
 ---
->>>>>>> 4b6b99016 (first commit)
-=======
 ---
 module: theme
 topic: filament
@@ -38,4 +28,3 @@ canonical: ../../../Themes/docs/shared-components/filament-Modules.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/filament-Modules.txt
->>>>>>> dev

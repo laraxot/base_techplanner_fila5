@@ -622,18 +622,19 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
         /** @var array<int, array<string, mixed>> */
         $contentBlocks = is_array($this->content_blocks) ? $this->content_blocks : [];
 
-        /* @phpstan-ignore-next-line */
-        return collect($contentBlocks)->filter(function (array $value) use ($name_blocks): bool {
-            $shouldExclude = false;
-            foreach ($name_blocks as $block) {
-                if (($value['type'] ?? null) === $block) {
-                    $shouldExclude = true;
-                    break;
+        return collect($contentBlocks)
+            ->filter(function (array $value) use ($name_blocks): bool {
+                foreach ($name_blocks as $block) {
+                    if (($value['type'] ?? null) === $block) {
+                        return false;
+                    }
                 }
-            }
 
-            return ! $shouldExclude;
-        })->values()->toArray();
+                return true;
+            })
+            ->values()
+            ->map(static fn (array $value): array => $value)
+            ->all();
     }
 
     /**

@@ -77,15 +77,8 @@
 ### 1. Struttura Log
 ```json
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "timestamp": "[DATE] 10:00:00",
-=======
     "timestamp": "2024-03-20 10:00:00",
->>>>>>> 4b6b99016 (first commit)
-=======
     "timestamp": "[DATE] 10:00:00",
->>>>>>> dev
     "level": "error",
     "message": "SMS sending failed",
     "context": {

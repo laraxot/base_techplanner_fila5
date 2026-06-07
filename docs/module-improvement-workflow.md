@@ -94,11 +94,4 @@ Migliorare sistematicamente tutti i moduli utilizzando PHPStan livello 10, PHPMD
 - [Git Conflicts Resolution](./git-conflicts-resolution-2025-01-06.md)
 - [Module Analysis Report](./module-analysis-report-2025-01-06.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-01-06*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
-

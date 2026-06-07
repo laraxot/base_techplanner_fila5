@@ -29,24 +29,12 @@ docs/cache/
 cache/
 
 # ==============================================
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 80226b25c (.)
 # MERGE / CONFLICT BACKUP SYMLINKS (mai in git — LFS GH008)
 # ==============================================
 *~cc6378f*
 *~cc6378f (*)
 
 # ==============================================
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> 80226b25c (.)
-=======
->>>>>>> dev
 # CACHE & TEMPORARY FILES
 # ==============================================
 *.cache
@@ -120,10 +108,7 @@ Thumbs.db
 *.old
 *.old1
 *.old2
-<<<<<<< HEAD
-=======
 *.old*
->>>>>>> dev
 *.backup
 *.backup.*
 *.bak
@@ -182,8 +167,6 @@ test_notifications.sql
 *.old
 laravel
 public_html
-<<<<<<< HEAD
-=======
 lang/lang/
 _docs/
 _docs/
@@ -216,5 +199,3 @@ config/config
 *.orig
 *.rej
 *~head
-
->>>>>>> dev

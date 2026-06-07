@@ -1,13 +1,7 @@
 # Factory Coverage Report - Activity Module
 
 ## 📊 Status Report
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Date:** 2025-08-22
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Module:** Activity
 
 ## ✅ Factory Coverage Complete

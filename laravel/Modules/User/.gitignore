@@ -102,11 +102,8 @@ Thumbs.db
 *.old2
 *.backup
 *.backup.*
-<<<<<<< HEAD
-=======
 *.backup-*
 *.backup_*
->>>>>>> dev
 *.bak
 *.bakcup
 *.new
@@ -163,8 +160,6 @@ user_test_data.csv
 *.fila2
 laravel
 public_html
-<<<<<<< HEAD
-=======
 lang/lang/
 _docs/
 _docs/
@@ -179,5 +174,3 @@ _docs/
 *.orig
 *.rej
 *~head
-
->>>>>>> dev

@@ -170,15 +170,7 @@
 
 ## Collegamenti tra versioni di search.md
 * [search.md](docs/rules/search.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [search.md](../../../xot/docs/features/search.md)
-* [search.md](../../../xot/docs/rules/search.md)
-=======
 * [search.md](../../../Xot/docs/features/search.md)
 * [search.md](../../../Xot/docs/rules/search.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [search.md](../../../xot/docs/features/search.md)
 * [search.md](../../../xot/docs/rules/search.md)
->>>>>>> dev

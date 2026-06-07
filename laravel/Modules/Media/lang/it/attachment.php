@@ -13,10 +13,6 @@ return [
         ],
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'file' => [
             'label' => 'file',
             'tooltip' => '',
@@ -96,42 +92,12 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        'file' => 'file',
-        'file_hint' => 'Carica un allegato',
-        'name' => [
-            'label' => 'Nome',
-        ],
-        'guard_name' => 'Guard',
-        'collection_name' => [
-            'label' => 'Collezione',
-        ],
-        'filename' => 'Nome File',
-        'mime_type' => 'Tipo',
-        'human_readable_size' => [
-            'label' => 'Dimensione',
-        ],
-        'permissions' => 'Permessi',
-        'updated_at' => 'Aggiornato il',
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'select_all' => [
-            'name' => 'Seleziona Tutti',
-            'message' => '',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'creator' => [
             'name' => 'Creatore',
             'full_name' => [
                 'label' => 'Creatore',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -148,15 +114,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'uploaded_at' => 'Aggiornato il',
-        'created_at' => [
-            'label' => 'Caricato il',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -173,14 +130,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Attachment',
     'plural_label' => 'Attachment (Plurale)',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Attachment',
-    'plural_label' => 'Attachment (Plurale)',
->>>>>>> dev
 ];

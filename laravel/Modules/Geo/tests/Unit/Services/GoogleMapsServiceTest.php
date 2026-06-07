@@ -2,11 +2,8 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
 namespace Modules\Geo\Tests\Unit\Services;
 
->>>>>>> dev
 use Modules\Geo\Services\GoogleMapsService;
 use Modules\Geo\Tests\TestCase;
 

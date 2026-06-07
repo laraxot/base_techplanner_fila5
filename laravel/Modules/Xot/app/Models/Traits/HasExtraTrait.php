@@ -8,20 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Support\Str;
 use Modules\Xot\Contracts\ExtraContract;
-<<<<<<< HEAD
-use Spatie\SchemalessAttributes\SchemalessAttributes;
-use Webmozart\Assert\Assert;
-
-use function Safe\json_encode;
-
-/**
- * Modules\Xot\Models\HasExtraTrait.
- *
- * @property string $currency
- * @property float $price
- * @property string $price_complete
- * @property int $qty
-=======
 
 use function Safe\json_encode;
 
@@ -35,7 +21,6 @@ use Webmozart\Assert\Assert;
  * @property float              $price
  * @property string             $price_complete
  * @property int                $qty
->>>>>>> dev
  * @property ExtraContract|null $extra
  */
 trait HasExtraTrait
@@ -57,18 +42,11 @@ trait HasExtraTrait
             Model::class,
             '['.__LINE__.']['.class_basename($this).']['.$extra_class.']',
         );
-<<<<<<< HEAD
-        // Assert::isInstanceOf($extra_class, ExtraContract::class, '['.__LINE__.']['.class_basename($this).']['.$extra_class.']');
-        // Assert::implementsInterface($extra_class, ExtraContract::class, '['.__LINE__.']['.class_basename($this).']['.$extra_class.']');
-
-        return $this->morphOne($extra_class, 'model');
-=======
 
         /** @var class-string<Model> $extraClass */
         $extraClass = $extra_class;
 
         return $this->morphOne($extraClass, 'model');
->>>>>>> dev
     }
 
     public function getExtra(string $name): array|bool|float|int|string|null
@@ -97,11 +75,7 @@ trait HasExtraTrait
     }
 
     /**
-<<<<<<< HEAD
-     * @param  int|float|string|array<string, mixed>|bool|null  $value
-=======
      * @param int|float|string|array<string, mixed>|bool|null $value
->>>>>>> dev
      */
     public function setExtra(string $name, int|float|string|array|bool|null $value): void
     {

@@ -1,12 +1,6 @@
 # Fix: SushiToJsonIntegrationTest - Database Connection Configuration
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2025-01-22
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Problema**: Test fallisce con "Database connection [tenant] not configured"
 **Principio**: Il sito funziona, quindi il test deve essere corretto per riflettere il comportamento reale
 

@@ -39,18 +39,10 @@ class UserResource extends \Modules\Xot\Filament\Resources\XotBaseResource
 ### Versione HEAD
 
 ## Collegamenti tra versioni di resource.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [resource.md](../../../xot/project_docs/filament/resource.md)
-* [resource.md](../../../xot/project_docs/resource.md)
-=======
 * [resource.md](../../../Xot/project_docs/filament/resource.md)
 * [resource.md](../../../Xot/project_docs/resource.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [resource.md](../../../xot/project_docs/filament/resource.md)
 * [resource.md](../../../xot/project_docs/resource.md)
->>>>>>> dev
 
 ### Versione Incoming
 

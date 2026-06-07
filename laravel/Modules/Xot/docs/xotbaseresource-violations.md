@@ -297,21 +297,12 @@ return [
 ## Collegamenti Documentazione
 
 ### Documentazione Moduli
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Progressioni: XotBaseResource Violations](../laravel/modules/progressioni/docs/xotbaseresource-violations-critical.md)
-- [Xot: XotBaseResource Rules](../laravel/modules/xot/docs/filament/resources/xot-base-resource.md)
-- [Xot: Filament Resource Guidelines](../laravel/modules/xot/docs/rules/filament-resource-guidelines.md)
-=======
 - [Progressioni: XotBaseResource Violations](../laravel/Modules/Progressioni/docs/xotbaseresource-violations-critical.md)
 - [Xot: XotBaseResource Rules](../laravel/Modules/Xot/docs/filament/resources/xot-base-resource.md)
 - [Xot: Filament Resource Guidelines](../laravel/Modules/Xot/docs/rules/filament-resource-guidelines.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Progressioni: XotBaseResource Violations](../laravel/modules/progressioni/docs/xotbaseresource-violations-critical.md)
 - [Xot: XotBaseResource Rules](../laravel/modules/xot/docs/filament/resources/xot-base-resource.md)
 - [Xot: Filament Resource Guidelines](../laravel/modules/xot/docs/rules/filament-resource-guidelines.md)
->>>>>>> dev
 
 ### Regole Correlate
 - [Sistema Traduzioni](translation-system.md)
@@ -319,10 +310,4 @@ return [
 - [Architettura Modulare](modular-architecture.md)
 
 *Documento creato: agosto 2025*
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: agosto 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

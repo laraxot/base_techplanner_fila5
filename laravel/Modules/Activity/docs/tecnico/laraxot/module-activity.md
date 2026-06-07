@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Modulo Activity
 
 ## Overview
@@ -76,11 +75,7 @@ use Modules\Activity\Filament\Resources\ActivityResource;
 class ActivityResource extends XotBaseResource
 {
     protected static ?string $model = Activity::class;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
     public static function getTableColumns(): array
     {
         return [
@@ -104,19 +99,11 @@ class ActivityTest extends TestCase
     public function test_can_log_activity(): void
     {
         $user = User::factory()->create();
-<<<<<<< HEAD
-        
-        Activity::log('Test activity', [
-            'user_id' => $user->id
-        ]);
-        
-=======
 
         Activity::log('Test activity', [
             'user_id' => $user->id
         ]);
 
->>>>>>> 4b6b99016 (first commit)
         $this->assertDatabaseHas('activities', [
             'description' => 'Test activity',
             'user_id' => $user->id
@@ -157,9 +144,6 @@ class ActivityTest extends TestCase
 3. **Manutenzione**:
    - Pulizia periodica dei log
    - Backup dei dati di attività
-<<<<<<< HEAD
-   - Monitoraggio delle performance 
-=======
    - Monitoraggio delle performance
 # Modulo Activity
 
@@ -308,8 +292,6 @@ class ActivityTest extends TestCase
    - Pulizia periodica dei log
    - Backup dei dati di attività
    - Monitoraggio delle performance
->>>>>>> 4b6b99016 (first commit)
-=======
 ---
 module: theme
 topic: module-activity
@@ -317,4 +299,3 @@ canonical: ../../../../../Themes/docs/shared-components/module-activity.md
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
->>>>>>> dev

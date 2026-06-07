@@ -53,10 +53,4 @@ Da identificare e correggere sistematicamente.
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-01-22*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

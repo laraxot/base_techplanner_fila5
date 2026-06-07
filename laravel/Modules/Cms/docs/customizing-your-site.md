@@ -75,18 +75,12 @@ class Foo extends bar
 </div>
 
 ## Collegamenti tra versioni di customizing-your-site.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [customizing-your-site.md](laravel/modules/gdpr/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](laravel/modules/xot/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](laravel/modules/ui/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](laravel/modules/tenant/project_docs/it/customizing-your-site.md)
 * [customizing-your-site.md](laravel/modules/cms/project_docs/customizing-your-site.md)
 
-<<<<<<< HEAD
-=======
 * [customizing-your-site.md](laravel/Modules/Gdpr/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](laravel/Modules/Xot/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](laravel/Modules/UI/project_docs/customizing-your-site.md)
@@ -174,6 +168,3 @@ class Foo extends bar
 * [customizing-your-site.md](laravel/Modules/UI/docs/customizing-your-site.md)
 * [customizing-your-site.md](laravel/Modules/Tenant/docs/it/customizing-your-site.md)
 * [customizing-your-site.md](laravel/Modules/Cms/docs/customizing-your-site.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

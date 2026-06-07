@@ -1,9 +1,6 @@
 # Filament 4.x Upgrade - Modulo UI
 
-<<<<<<< HEAD
 **Data**: 2025-09-30
-=======
->>>>>>> dev
 **Status**: ✅ COMPLETATO
 **Versione Filament**: 4.0.20
 
@@ -148,18 +145,10 @@ La view `ui::filament.widgets.user-calendar` deve essere aggiornata per mostrare
 3. **Funzionalità**: Metodi `fetchEvents()`, `getFormSchema()`, `onDateSelect()` sono pronti per la riattivazione
 4. **Testing**: Testare approfonditamente il widget quando il pacchetto sarà aggiornato
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-09-30*
-*Modulo UI compatibile con Filament 4.0.20*
-# Filament 4.x Upgrade - Modulo UI
-
-**Data**: 2025-09-30
-=======
 *Ultimo aggiornamento: [DATE]*
 *Modulo UI compatibile con Filament 4.0.20*
 # Filament 4.x Upgrade - Modulo UI
 
->>>>>>> dev
 **Status**: ✅ COMPLETATO
 **Versione Filament**: 4.0.20
 
@@ -304,9 +293,5 @@ La view `ui::filament.widgets.user-calendar` deve essere aggiornata per mostrare
 3. **Funzionalità**: Metodi `fetchEvents()`, `getFormSchema()`, `onDateSelect()` sono pronti per la riattivazione
 4. **Testing**: Testare approfonditamente il widget quando il pacchetto sarà aggiornato
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-09-30*
-=======
 *Ultimo aggiornamento: [DATE]*
->>>>>>> dev
 *Modulo UI compatibile con Filament 4.0.20*

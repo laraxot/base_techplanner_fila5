@@ -13,31 +13,15 @@ return [
             'label' => 'Test Datei',
             'placeholder' => 'Datei hochladen um S3 zu testen',
             'helper_text' => 'Datei wird zu S3 hochgeladen um die Konfiguration zu testen',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'debug_output' => [
             'label' => 'Debug Ergebnisse',
             'placeholder' => 'Test Ergebnisse erscheinen hier',
             'helper_text' => 'Detaillierte Ausgabe der AWS Konfigurationstests',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -97,10 +81,6 @@ return [
         'complete' => '✅ Vollständig',
         'incomplete' => '❌ Unvollständig',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -110,9 +90,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

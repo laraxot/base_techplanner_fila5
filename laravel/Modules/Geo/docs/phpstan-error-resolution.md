@@ -45,15 +45,8 @@ Risolti sistematicamente 9 errori PHPStan critici attraverso l'analisi del codic
 - Aggiunta documentazione PHPDoc completa
 - Verificata compatibilità PHPStan livello 9
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Documentazione**: [Chart Model Fixes](../laravel/modules/chart/docs/phpstan/chart-model-fixes.md)
-=======
 **Documentazione**: [Chart Model Fixes](../laravel/Modules/Chart/docs/phpstan/chart-model-fixes.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 **Documentazione**: [Chart Model Fixes](../laravel/modules/chart/docs/phpstan/chart-model-fixes.md)
->>>>>>> dev
 
 ## Impatto Architetturale
 
@@ -84,23 +77,14 @@ Risolti sistematicamente 9 errori PHPStan critici attraverso l'analisi del codic
 
 ## Collegamenti Tecnici
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Correzioni Dettagliate](../laravel/modules/xot/docs/phpstan-fixes-[date].md)
 - [Regole PHPStan Critiche](../laravel/modules/xot/docs/phpstan-critical-rules.md)
 - [Linee Guida Livello 10](../laravel/modules/xot/docs/phpstan-level10-guidelines.md)
 - [Chart Model Fixes](../laravel/modules/chart/docs/phpstan/chart-model-fixes.md)
-<<<<<<< HEAD
-=======
 - [Correzioni Dettagliate](../laravel/Modules/Xot/docs/phpstan-fixes-2025-01-06.md)
 - [Regole PHPStan Critiche](../laravel/Modules/Xot/docs/phpstan-critical-rules.md)
 - [Linee Guida Livello 10](../laravel/Modules/Xot/docs/phpstan-level10-guidelines.md)
 - [Chart Model Fixes](../laravel/Modules/Chart/docs/phpstan/chart-model-fixes.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Memoria Tecnica
 

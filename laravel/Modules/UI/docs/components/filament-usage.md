@@ -8,10 +8,6 @@ il progetto utilizza Filament come starterkit sia per il backend che per il fron
 ## Collegamenti alla Documentazione
 
 ### Documentazione Principale
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Best Practices Components](../../../cms/docs/best-practices/components.md)
 - [Documentazione Ufficiale Filament](https://filamentphp.com/docs/3.x/support/blade-components)
 - [Guida all'Implementazione dei Componenti](../../../cms/docs/components/readme.md)
@@ -20,8 +16,6 @@ il progetto utilizza Filament come starterkit sia per il backend che per il fron
 - [Documentazione Dettagliata del Footer](../../../../themes/one/docs/components/layouts/footer.md)
 - [Navigation Component](../../../../themes/one/docs/components/layouts/navigation.md)
 - [Form Components](../../../cms/docs/components/forms/readme.md)
-<<<<<<< HEAD
-=======
 - [Best Practices Components](../../../Cms/docs/best-practices/components.md)
 - [Documentazione Ufficiale Filament](https://filamentphp.com/docs/3.x/support/blade-components)
 - [Guida all'Implementazione dei Componenti](../../../Cms/docs/components/README.md)
@@ -30,9 +24,6 @@ il progetto utilizza Filament come starterkit sia per il backend che per il fron
 - [Documentazione Dettagliata del Footer](../../../../Themes/One/docs/components/layouts/footer.md)
 - [Navigation Component](../../../../Themes/One/docs/components/layouts/navigation.md)
 - [Form Components](../../../Cms/docs/components/forms/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Componenti Disponibili
 
@@ -133,18 +124,9 @@ it('uses filament button component as link correctly', function () {
 - Mantenere la coerenza nell'utilizzo dei componenti in tutto il progetto
 
 ## Vedi Anche
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Tema One Documentation](../../../../themes/one/docs/readme.md)
-- [Filament Admin Panel](../../../cms/docs/admin/filament.md)
-- [Linee Guida per il Web Design](../../../cms/docs/webdesign/readme.md)
-=======
 - [Tema One Documentation](../../../../Themes/One/docs/README.md)
 - [Filament Admin Panel](../../../Cms/docs/admin/filament.md)
 - [Linee Guida per il Web Design](../../../Cms/docs/webdesign/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Tema One Documentation](../../../../themes/one/docs/readme.md)
 - [Filament Admin Panel](../../../cms/docs/admin/filament.md)
 - [Linee Guida per il Web Design](../../../cms/docs/webdesign/readme.md)
->>>>>>> dev

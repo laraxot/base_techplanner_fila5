@@ -10,6 +10,8 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_techplanner_fila5/discussions/19"
 related:
+  - ../rules/git-forward-only.md
+  - ../memories/git-forward-only-standing-rule.md
   - ../rules/00-TRIGGER_MAP.md
   - ../../stories/story-git-collision-resolution.md
   - ../../stories/STORY-147-git-collision-cleanup.md
@@ -33,6 +35,7 @@ Procedura per risolvere collisioni Git su larga scala nel monorepo TechPlanner, 
 3. **`docs/wiki/`** → preferire **theirs** (SSoT second brain)
 4. **Lockfile** → theirs poi `composer validate` / `composer install`
 5. **Conflitto con lato vuoto** → tenere il lato con contenuto
+6. **JSON Sushi CMS** (`config/local/*/database/content/sections/`) → **un solo file per slug**: non lasciare sia `1.json` che `header.json` (Sushi carica tutti `*.json` → `sole()` fallisce con `MultipleRecordsFoundException`)
 
 ## Comandi rapidi
 
@@ -41,15 +44,16 @@ Procedura per risolvere collisioni Git su larga scala nel monorepo TechPlanner, 
 git diff --name-only --diff-filter=U | wc -l
 rg -l '^<<<<<<< ' .
 
-# Ripristino selettivo da origin/dev (stub)
-git show origin/dev:AGENTS.md > AGENTS.md
-git show origin/dev:CLAUDE.md > CLAUDE.md
-git checkout origin/dev -- docs/wiki
+# Studio read-only (MAI redirect > file — vedi git-forward-only.md)
+git show origin/dev:laravel/Modules/Xot/app/Providers/XotServiceProvider.php | less
+git diff HEAD -- path/to/file.php
 
 # Verifica post-sweep
 rg '^<<<<<<< ' laravel --glob '*.{php,blade.php,json,neon}'
 cd laravel && php artisan test --filter=MigrationSyntax
 ```
+
+**Forward-only:** risoluzione marker e sintassi solo con patch manuale sul working tree. Vietato `git checkout <ref> --`, `git restore --source=`, `git show ref:path > path`.
 
 ## Script Python (multi-pass)
 
@@ -64,7 +68,7 @@ Regole implementate:
 
 - PHP/Blade → delegati a `fix-conflicts.php` (incoming/dev, non HEAD cieco)
 - Altri testi → incoming side in `resolve-conflict-markers.py`
-- Post-pass → `repair-php-after-conflict-resolution.sh` (`php -l` + checkout da `origin/master`)
+- Post-pass → `repair-php-after-conflict-resolution.sh` (`php -l` + patch forward — **no** `git checkout` da commit storico; vedi [git-forward-only.md](../rules/git-forward-only.md))
 - Concept: [git-collision-prevention-and-repair](../concepts/git-collision-prevention-and-repair.md)
 
 ### Recovery post-sweep (critico)
@@ -73,8 +77,7 @@ Se PHPStan/`php -l` segnala `unexpected token "protected"` in Factory o ServiceP
 
 ```bash
 bashscripts/tools/git/repair-php-after-conflict-resolution.sh
-# oppure ripristino puntuale da commit pre-conflitto
-git checkout 6b9f55ad -- laravel/Modules/User/database/factories/
+# Se serve il contratto storico: git show <sha>:path (read-only) → patch manuale sul file attuale
 php artisan package:discover
 ```
 
@@ -88,8 +91,8 @@ Alcuni file su `origin/dev` hanno **corruzione strutturale** senza `<<<<<<<`: me
 **Recovery:**
 
 1. `php -l` su `Modules/*/app/**/*.php` — inventario syntax error
-2. Per ogni file rotto: `git show origin/master:laravel/<path>` se valido → restore
-3. Se master assente o invalido: fix manuale + cherry-pick metodi da dev
+2. Per ogni file rotto: `git show origin/master:laravel/<path>` — **solo lettura**; applicare patch forward sul file corrente
+3. Se master assente o invalido: fix manuale; integrare metodi necessari da dev senza checkout/restore
 4. Bootstrap: `cd laravel && php artisan about`
 5. Comandi Artisan: verificare `protected $name` o `$signature` su ogni `Console/Commands/*`
 
@@ -119,18 +122,9 @@ Esegue in sequenza: **PHPStan** → **PHPMD** (`phpmd.xml`) → **PHPInsights** 
 ## Post-risoluzione
 
 1. Aggiornare `docs/wiki/log.md`
-<<<<<<< HEAD
-2. **Quality gate per ogni file PHP toccato** — `./tools/post-edit-php.sh <file>` (phpstan + phpmd + phpinsights)
-3. **Pest regressione** — `UserMigrationSyntaxTest` (marker + syntax migrazioni User)
-4. `git add` file risolti
-5. Completare merge: `git commit` (solo su richiesta utente)
-
-Memoria: [post-edit-php-quality-gate](../memories/post-edit-php-quality-gate.md)
-=======
 2. `git add` file risolti
 3. Completare merge: `git commit` (solo su richiesta utente)
 4. `post-edit-php.sh` su ogni file PHP toccato
->>>>>>> 06ccbd93 (.)
 
 ## Anti-pattern
 

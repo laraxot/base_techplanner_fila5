@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Widget Translation Rules - SaluteOra Project
-=======
 # Widget Translation Rules - Laraxot Project
->>>>>>> dev
 
 ## Core Principles
 
@@ -200,8 +196,4 @@ This document serves as a reference for:
 - Code quality requirements
 - Documentation standards
 
-<<<<<<< HEAD
-All widget development should follow these rules to maintain consistency and quality across the SaluteOra project.
-=======
 All widget development should follow these rules to maintain consistency and quality across the Laraxot project.
->>>>>>> dev

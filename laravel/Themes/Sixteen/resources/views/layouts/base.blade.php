@@ -12,28 +12,15 @@
         <!-- Favicon -->
 		<link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
 
-<<<<<<< HEAD
-=======
         {{-- Tailwind CSS (replicates Bootstrap Italia design tokens) --}}
         @vite(['resources/css/app.css'], 'themes/Sixteen')
 
->>>>>>> dev
         <style>
             [x-cloak] {
                 display: none !important;
             }
         </style>
 
-<<<<<<< HEAD
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-        <!-- Font Awesome for icon classes used in theme (fas/fa-*) -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfGw1ZrYJ24lF+qvQ4qzC2Q8Q2G3Kf0QfQwY2Z6YvGZrj4qk5j8V+KQw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        @filamentStyles
-        @vite(['resources/css/app.css'], 'themes/Sixteen')
-
-=======
->>>>>>> dev
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
@@ -41,12 +28,5 @@
     <body>
         @yield('body')
 
-<<<<<<< HEAD
-        @livewire('notifications')
-
-        @filamentScripts
-        @vite(['resources/js/app.js'], 'themes/Sixteen')
-=======
->>>>>>> dev
     </body>
 </html>

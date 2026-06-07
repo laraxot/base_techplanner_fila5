@@ -7,16 +7,6 @@
 ### ✅ Path Corretti
 
 ```
-<<<<<<< HEAD
-<<<<<<< HEAD
-/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/SMS
-/var/www/html/saluteora/laravel/Modules/Notify/app/Http/Controllers
-/var/www/html/saluteora/laravel/Modules/Notify/app/Providers
-/var/www/html/saluteora/laravel/Modules/Notify/app/Models
-/var/www/html/saluteora/laravel/Modules/Notify/app/Filament
-=======
-=======
->>>>>>> dev
 Modules/Notify/app/Actions/SMS
 Modules/Notify/app/Http/Controllers
 Modules/Notify/app/Providers
@@ -27,23 +17,11 @@ Modules/Notify/app/Http/Controllers
 Modules/Notify/app/Providers
 Modules/Notify/app/Models
 Modules/Notify/app/Filament
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ```
 
 ### ❌ Path Errati
 
 ```
-<<<<<<< HEAD
-<<<<<<< HEAD
-/var/www/html/saluteora/laravel/Modules/Notify/App/Actions/SMS
-/var/www/html/saluteora/laravel/Modules/Notify/App/Http/Controllers
-/var/www/html/saluteora/laravel/Modules/Notify/App/Providers
-=======
-=======
->>>>>>> dev
 Modules/Notify/App/Actions/SMS
 Modules/Notify/App/Http/Controllers
 Modules/Notify/App/Providers
@@ -53,10 +31,6 @@ Modules/Notify/App/Providers
 Modules/Notify/App/Actions/SMS
 Modules/Notify/App/Http/Controllers
 Modules/Notify/App/Providers
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ```
 
 ## Struttura Corretta dei Namespace
@@ -91,19 +65,12 @@ namespace Modules\Notify\App\Datas;
 
 **Path fisico corretto:**
 ```
-<<<<<<< HEAD
-<<<<<<< HEAD
-/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/SMS/SendNetfunSmsAction.php
-=======
 Modules/Notify/app/Actions/SMS/SendNetfunSmsAction.php
 Modules/Notify/app/Actions/SMS/SendNetfunSmsAction.php
 Modules/Notify/app/Actions/SMS/SendNetfunSmsAction.php
->>>>>>> 4b6b99016 (first commit)
-=======
 Modules/Notify/app/Actions/SMS/SendNetfunSmsAction.php
 Modules/Notify/app/Actions/SMS/SendNetfunSmsAction.php
 Modules/Notify/app/Actions/SMS/SendNetfunSmsAction.php
->>>>>>> dev
 ```
 
 **Namespace corretto:**
@@ -115,19 +82,12 @@ namespace Modules\Notify\Actions\SMS;
 
 **Path fisico corretto:**
 ```
-<<<<<<< HEAD
-<<<<<<< HEAD
-/var/www/html/saluteora/laravel/Modules/Notify/app/Http/Controllers/NotificationController.php
-=======
 Modules/Notify/app/Http/Controllers/NotificationController.php
 Modules/Notify/app/Http/Controllers/NotificationController.php
 Modules/Notify/app/Http/Controllers/NotificationController.php
->>>>>>> 4b6b99016 (first commit)
-=======
 Modules/Notify/app/Http/Controllers/NotificationController.php
 Modules/Notify/app/Http/Controllers/NotificationController.php
 Modules/Notify/app/Http/Controllers/NotificationController.php
->>>>>>> dev
 ```
 
 **Namespace corretto:**
@@ -139,19 +99,12 @@ namespace Modules\Notify\Http\Controllers;
 
 **Path fisico corretto:**
 ```
-<<<<<<< HEAD
-<<<<<<< HEAD
-/var/www/html/saluteora/laravel/Modules/Notify/app/Providers/NotifyServiceProvider.php
-=======
 Modules/Notify/app/Providers/NotifyServiceProvider.php
 Modules/Notify/app/Providers/NotifyServiceProvider.php
 Modules/Notify/app/Providers/NotifyServiceProvider.php
->>>>>>> 4b6b99016 (first commit)
-=======
 Modules/Notify/app/Providers/NotifyServiceProvider.php
 Modules/Notify/app/Providers/NotifyServiceProvider.php
 Modules/Notify/app/Providers/NotifyServiceProvider.php
->>>>>>> dev
 ```
 
 **Namespace corretto:**
@@ -163,19 +116,12 @@ namespace Modules\Notify\Providers;
 
 **Path fisico corretto:**
 ```
-<<<<<<< HEAD
-<<<<<<< HEAD
-/var/www/html/saluteora/laravel/Modules/Notify/app/Datas/NetfunSMSMessage.php
-=======
 Modules/Notify/app/Datas/NetfunSMSMessage.php
 Modules/Notify/app/Datas/NetfunSMSMessage.php
 Modules/Notify/app/Datas/NetfunSMSMessage.php
->>>>>>> 4b6b99016 (first commit)
-=======
 Modules/Notify/app/Datas/NetfunSMSMessage.php
 Modules/Notify/app/Datas/NetfunSMSMessage.php
 Modules/Notify/app/Datas/NetfunSMSMessage.php
->>>>>>> dev
 ```
 
 **Namespace corretto:**
@@ -192,17 +138,10 @@ namespace Modules\Notify\App\Datas;
 
 ## Motivo di questa Regola
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Questa struttura di namespace mantiene compatibilità con la convenzione di Laravel e il sistema di moduli Nwidart, anche se i file sono fisicamente organizzati in modo diverso. Questo approccio è stato adottato per standardizzare i namespace in tutto il progetto SaluteOra.
-=======
 Questa struttura di namespace mantiene compatibilità con la convenzione di Laravel e il sistema di moduli Nwidart, anche se i file sono fisicamente organizzati in modo diverso. Questo approccio è stato adottato per standardizzare i namespace in tutto il progetto .
 Questa struttura di namespace mantiene compatibilità con la convenzione di Laravel e il sistema di moduli Nwidart, anche se i file sono fisicamente organizzati in modo diverso. Questo approccio è stato adottato per standardizzare i namespace in tutto il progetto <nome progetto>.
->>>>>>> 4b6b99016 (first commit)
-=======
 Questa struttura di namespace mantiene compatibilità con la convenzione di Laravel e il sistema di moduli Nwidart, anche se i file sono fisicamente organizzati in modo diverso. Questo approccio è stato adottato per standardizzare i namespace in tutto il progetto .
 Questa struttura di namespace mantiene compatibilità con la convenzione di Laravel e il sistema di moduli Nwidart, anche se i file sono fisicamente organizzati in modo diverso. Questo approccio è stato adottato per standardizzare i namespace in tutto il progetto <nome progetto>.
->>>>>>> dev
 
 ## Esempio per Datas
 
@@ -221,18 +160,6 @@ namespace Modules\Notify\Datas; // CORRETTO
 ## Collegamento alle Regole Generali
 
 Per le regole generali e condivise tra tutti i moduli, consulta anche:
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Regole generali per i namespace (Xot)](../../xot/docs/namespace-rules.md): linee guida ufficiali e motivazioni delle scelte di struttura dei namespace nei moduli Laraxot.
-
-## Collegamenti
-
-- [Regole Generali per i Namespace](/laravel/modules/xot/docs/namespace-rules.md)
-- [Convenzioni di Codice](/laravel/modules/xot/docs/code-conventions.md)
-- [Struttura dei Moduli](/laravel/modules/xot/docs/module-structure.md)
-=======
-=======
->>>>>>> dev
 - [Regole generali per i namespace (Xot)](../../Xot/docs/NAMESPACE-RULES.md): linee guida ufficiali e motivazioni delle scelte di struttura dei namespace nei moduli Laraxot.
 
 ## Collegamenti
@@ -240,30 +167,18 @@ Per le regole generali e condivise tra tutti i moduli, consulta anche:
 - [Regole Generali per i Namespace](/laravel/Modules/Xot/docs/NAMESPACE-RULES.md)
 - [Convenzioni di Codice](/laravel/Modules/Xot/docs/CODE-CONVENTIONS.md)
 - [Struttura dei Moduli](/laravel/Modules/Xot/docs/MODULE-STRUCTURE.md)
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-- [Collegamento Bidirezionale: Documentazione Root](../../../../docs/links.md)
-=======
 - [Collegamento Bidirezionale: Documentazione Root](../../../../../docs/links.md)
->>>>>>> dev
 
 ### Esempio 5: Console Command
 
 **Path fisico corretto:**
 ```
-<<<<<<< HEAD
-<<<<<<< HEAD
-/var/www/html/saluteora/laravel/Modules/Notify/app/Console/Commands/AnalyzeTranslationFiles.php
-=======
 Modules/Notify/app/Console/Commands/AnalyzeTranslationFiles.php
 Modules/Notify/app/Console/Commands/AnalyzeTranslationFiles.php
 Modules/Notify/app/Console/Commands/AnalyzeTranslationFiles.php
->>>>>>> 4b6b99016 (first commit)
-=======
 Modules/Notify/app/Console/Commands/AnalyzeTranslationFiles.php
 Modules/Notify/app/Console/Commands/AnalyzeTranslationFiles.php
 Modules/Notify/app/Console/Commands/AnalyzeTranslationFiles.php
->>>>>>> dev
 ```
 
 **Namespace corretto:**
@@ -280,11 +195,6 @@ namespace Modules\Notify\App\Console\Commands;
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> dev
 *Ultimo aggiornamento: 2025-05-12*
 # Regole per Path e Namespace nel Modulo Notify
 
@@ -421,11 +331,7 @@ Per le regole generali e condivise tra tutti i moduli, consulta anche:
 - [Regole Generali per i Namespace](/laravel/Modules/Xot/docs/NAMESPACE-RULES.md)
 - [Convenzioni di Codice](/laravel/Modules/Xot/docs/CODE-CONVENTIONS.md)
 - [Struttura dei Moduli](/laravel/Modules/Xot/docs/MODULE-STRUCTURE.md)
-<<<<<<< HEAD
-- [Collegamento Bidirezionale: Documentazione Root](../../../../docs/links.md)
-=======
 - [Collegamento Bidirezionale: Documentazione Root](../../../../../docs/links.md)
->>>>>>> dev
 
 ### Esempio 5: Console Command
 
@@ -449,7 +355,3 @@ namespace Modules\Notify\App\Console\Commands;
 ---
 
 *Ultimo aggiornamento: 2025-05-12*
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

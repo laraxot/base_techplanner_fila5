@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -51,26 +47,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'name' => [
-            'label' => 'Nome',
-        ],
-        'description' => [
-            'label' => 'Descrizione',
-        ],
-        'color' => [
-            'label' => 'Colore',
-        ],
-        'created_at' => [
-            'label' => 'Creato il',
-        ],
-        'updated_at' => [
-            'label' => 'Aggiornato il',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -81,12 +57,4 @@ return [
             'label' => 'Assegna al lavoro',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 4b6b99016 (first commit)
-=======
-];
->>>>>>> dev

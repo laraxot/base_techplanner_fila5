@@ -57,74 +57,42 @@ class ImportGeoData extends Command
     public function handle()
     {
         $path = module_path('Geo', 'resources/json/comuni.json');
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         if (!file_exists($path)) {
             $this->error("comuni.json not found at: {$path}");
             return 1;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-        $json = json_decode(file_get_contents($path), true);
-        
-=======
 
         $json = json_decode(file_get_contents($path), true);
 
->>>>>>> 4b6b99016 (first commit)
-=======
         
         $json = json_decode(file_get_contents($path), true);
         
->>>>>>> dev
         if (json_last_error() !== JSON_ERROR_NONE) {
             $this->error('Invalid JSON: ' . json_last_error_msg());
             return 1;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         
         $this->info('Starting import of Italian geographical data...');
         
         DB::transaction(function () use ($json) {
             $bar = $this->output->createProgressBar(count($json));
             
-<<<<<<< HEAD
-=======
 
         $this->info('Starting import of Italian geographical data...');
 
         DB::transaction(function () use ($json) {
             $bar = $this->output->createProgressBar(count($json));
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             foreach ($json as $item) {
                 // Import region
                 $region = Region::firstOrCreate(
                     ['code' => $item['regione']['codice']],
                     ['name' => $item['regione']['nome']]
                 );
-<<<<<<< HEAD
-<<<<<<< HEAD
                 
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
                 
->>>>>>> dev
                 // Import province
                 $province = Province::firstOrCreate(
                     ['code' => $item['provincia']['codice']],
@@ -135,15 +103,8 @@ class ImportGeoData extends Command
                         'code_iso' => $item['sigla'],
                     ]
                 );
-<<<<<<< HEAD
-<<<<<<< HEAD
                 
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
                 
->>>>>>> dev
                 // Import city
                 $city = City::firstOrCreate(
                     ['code' => $item['codice']],
@@ -155,15 +116,8 @@ class ImportGeoData extends Command
                         'population' => $item['popolazione'] ?? null,
                     ]
                 );
-<<<<<<< HEAD
-<<<<<<< HEAD
                 
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
                 
->>>>>>> dev
                 // Import CAPs
                 foreach (($item['cap'] ?? []) as $capCode) {
                     Cap::firstOrCreate(
@@ -173,10 +127,6 @@ class ImportGeoData extends Command
                         ]
                     );
                 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
                 
                 $bar->advance();
             }
@@ -184,8 +134,6 @@ class ImportGeoData extends Command
             $bar->finish();
             $this->newLine(2);
             
-<<<<<<< HEAD
-=======
 
                 $bar->advance();
             }
@@ -193,9 +141,6 @@ class ImportGeoData extends Command
             $bar->finish();
             $this->newLine(2);
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             $this->info('Geographical data imported successfully!');
             $this->info(sprintf(
                 '- %d regions\n- %d provinces\n- %d cities\n- %d CAPs',
@@ -205,15 +150,8 @@ class ImportGeoData extends Command
                 Cap::count()
             ));
         });
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return 0;
     }
 }
@@ -258,37 +196,19 @@ public static function form(Form $form): Form
     return $form
         ->schema([
             // Other fields...
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             Forms\Components\Card::make()
                 ->schema([
                     Forms\Components\TextInput::make('address')
                         ->label(__('geo::location.address'))
                         ->required(),
-<<<<<<< HEAD
-<<<<<<< HEAD
                         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
                         
->>>>>>> dev
                     Forms\Components\Grid::make(2)
                         ->schema([
                             LocationSelect::make('region_id')
                                 ->getRegionSelect(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
                                 
                             LocationSelect::make('province_id')
                                 ->getProvinceSelect(),
@@ -296,8 +216,6 @@ public static function form(Form $form): Form
                             LocationSelect::make('city_id')
                                 ->getCitySelect(),
                                 
-<<<<<<< HEAD
-=======
 
                             LocationSelect::make('province_id')
                                 ->getProvinceSelect(),
@@ -305,9 +223,6 @@ public static function form(Form $form): Form
                             LocationSelect::make('city_id')
                                 ->getCitySelect(),
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                             LocationSelect::make('cap')
                                 ->getCapSelect(),
                         ]),

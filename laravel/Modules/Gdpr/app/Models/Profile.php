@@ -9,13 +9,6 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Modules\Gdpr\Database\Factories\ProfileFactory;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Modules\User\Models\BaseProfile;
 use Modules\User\Models\Device;
 use Modules\User\Models\DeviceProfile;
@@ -65,8 +58,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property Collection<int, Device>                                   $mobileDevices
  * @property int|null                                                  $mobile_devices_count
  * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
-<<<<<<< HEAD
-=======
  * @property string                                                    $id
  * @property string|null                                               $post_type
  * @property string|null                                               $bio
@@ -109,7 +100,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property ProfileContract|null                                      $updater
  * @property User|null                                                 $user
  * @property string|null                                               $user_name
->>>>>>> dev
  * @property int|null                                                  $notifications_count
  * @property Collection<int, Permission>                               $permissions
  * @property int|null                                                  $permissions_count
@@ -119,13 +109,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property User|null                                                 $user
  * @property string|null                                               $user_name
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * @method static ProfileFactory          factory($count = null, $state = [])
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
  * @method static Builder<static>|Profile newModelQuery()
  * @method static Builder<static>|Profile newQuery()
  * @method static Builder<static>|Profile permission($permissions, $without = false)
@@ -154,8 +137,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder<static>|Profile withoutRole($roles, $guard = null)
  *
  * @property ProfileContract|null $deleter
-<<<<<<< HEAD
-=======
  * @property string|null          $fiscal_code
  * @property string|null          $notes
  * @property string|null          $fiscal_code
@@ -167,15 +148,10 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder<static>|Profile                         whereFiscalCode($value)
  * @method static Builder<static>|Profile                         whereNotes($value)
  * @method static Builder<static>|Profile                         byUuid(string $uuid)
->>>>>>> dev
  *
  * @mixin \Eloquent
  */
 class Profile extends BaseProfile
 {
-<<<<<<< HEAD
-    /** @var string */
-=======
->>>>>>> dev
     protected $connection = 'gdpr';
 }

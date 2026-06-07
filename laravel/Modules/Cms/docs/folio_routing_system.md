@@ -175,18 +175,6 @@ new class extends Component {
     public array $data = [];
     public string $pageSlug = '';
     
-<<<<<<< HEAD
-    // ✅ mount() prepara i dati da passare alla pagina CMS
-    public function mount(): void
-    {
-        // Lo slug per il JSON del dettaglio è 'container0.view' (es. events.view)
-        $this->pageSlug = $this->container0 . '.view';
-        
-        // Passa container0 e slug0 ai componenti inclusi
-        $this->data = [
-            'container0' => $this->container0,
-            'slug0' => $this->slug0,
-=======
     // ✅ mount() riceve i segmenti Folio — mai request()->route()
     public function mount(string $container0, string $slug0 = ''): void
     {
@@ -196,7 +184,6 @@ new class extends Component {
         $this->data = [
             'container0' => $container0,
             'slug0' => $slug0,
->>>>>>> dev
         ];
     }
 };
@@ -204,22 +191,15 @@ new class extends Component {
 
 <x-layouts.app>
     @volt('container0.view')
-<<<<<<< HEAD
-    <div>
-=======
     <div class="page-content content" data-slug="{{ $pageSlug }}" data-side="content">
->>>>>>> dev
         <x-page side="content" :slug="$pageSlug" :data="$data" />
     </div>
     @endvolt
 </x-layouts.app>
 ```
 
-<<<<<<< HEAD
-=======
 > **Aggiornamento 2026-06-05:** `@volt('container0.view')` è statico (= `name()`). **Mai** `@volt($pageSlug)`. Per `[container1]` usare `@volt('container1.index')`. Canon: [wiki/concepts/folio-page-shell-pattern.md](wiki/concepts/folio-page-shell-pattern.md).
 
->>>>>>> dev
 **Principio chiave (REGOLA OBBLIGATORIA):** 
 - Il file di routing **NON DEVE** contenere logica di business
 - Deve **SOLO** passare `$pageSlug` e `$data` al componente `<x-page>`
@@ -301,11 +281,7 @@ if ($content === null && $pageSlug === '') {
         'slug0' => $slug0,
     ])
 @elseif($pageSlug)
-<<<<<<< HEAD
-    <x-page side="content" :slug="$pageSlug" :container0="$container0" :slug0="$slug0" />
-=======
     <x-page side="content" :slug="$pageSlug" :data="$data" />
->>>>>>> dev
 @endif
 ```
 
@@ -320,21 +296,12 @@ new class extends Component {
     public string $slug0;
     public ?object $item = null;
     
-<<<<<<< HEAD
-    public function mount(): void
-    {
-        $this->container0 = request()->route('container0') ?? '';
-        $this->slug0 = request()->route('slug0') ?? '';
-        // ❌ SBAGLIATO - Volt gestisce automaticamente l'iniezione dei parametri route grazie all'integrazione con Laravel Folio
-        $this->resolveContent();  // ❌ VIOLA il principio agnostico
-=======
     public function mount(string $container0, string $slug0 = ''): void
     {
         $this->container0 = $container0;
         $this->slug0 = $slug0;
         // ❌ SBAGLIATO — anche con mount() tipizzato, resolveContent() viola il principio agnostico
         $this->resolveContent();
->>>>>>> dev
     }
     
     // ❌ MAI - Questo va nel Content Resolver, non nel Router!
@@ -374,17 +341,6 @@ new class extends Component {
     public string $slug0 = '';
     public array $data = [];
     
-<<<<<<< HEAD
-    // ✅ mount() per preparare i dati per il content-resolver
-    public function mount(): void
-    {
-        // Lo slug per il JSON del dettaglio è 'container0.view' (es. events.view)
-        // Questo permette di caricare events_view.json dal CMS
-        $this->data = [
-            'container0' => $this->container0,
-            'slug0' => $this->slug0,
-            'view_slug' => $this->container0 . '.view',
-=======
     public function mount(string $container0, string $slug0 = ''): void
     {
         $this->container0 = $container0;
@@ -394,7 +350,6 @@ new class extends Component {
             'container0' => $container0,
             'slug0' => $slug0,
             'view_slug' => $container0 . '.view',
->>>>>>> dev
         ];
     }
 };

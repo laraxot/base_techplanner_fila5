@@ -1,88 +1,5 @@
-<<<<<<< HEAD
-# Analisi Violazione Filosofia Laraxot - Migration Teams
-
-## Data
-2025-11-30
-
-## ⚠️ VIOLAZIONE GRAVE IDENTIFICATA
-
-Il file `Modules/User/database/migrations/2025_05_16_221811_add_owner_id_to_teams_table.php` **viola gravemente la filosofia, religione e politica Laraxot**.
-
-## Problema Identificato
-
-### Violazione Principio Fondamentale
-
-**Regola Laraxot**: "Una Tabella = Una Migrazione"
-
-Il file `2025_05_16_221811_add_owner_id_to_teams_table.php` è una **migrazione separata** per aggiungere la colonna `owner_id` alla tabella `teams`. Questo viola la regola fondamentale:
-
-> **Per modificare una tabella esistente:**
-> 1. **MODIFICARE** direttamente la migrazione originale
-> 2. **AGGIORNARE** il timestamp nel nome del file
-> 3. **NON creare** mai nuove migrazioni separate
-
-### Analisi del File Problematico
-
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
-use Modules\Xot\Database\Migrations\XotBaseMigration;
-
-return new class extends XotBaseMigration
-{
-    protected string $table_name = 'teams';
-
-    public function up(): void
-    {
-        $this->tableUpdate(function (Blueprint $table): void {
-            if (! Schema::hasColumn($this->table_name, 'owner_id')) {
-                $table->uuid('owner_id')->nullable()->after('id');
-            }
-        });
-    }
-};
-```
-
-**Problemi**:
-1. ❌ È una migrazione separata per modificare `teams`
-2. ❌ Il nome `add_owner_id_to_teams_table` indica chiaramente che è un "update" separato
-3. ❌ Viola il principio "Una Tabella = Una Migrazione"
-4. ❌ Frammenta la storia evolutiva della tabella `teams`
-
-## Soluzione Corretta
-
-### Step 1: Trovare Migrazione Originale
-
-Devo trovare la migrazione originale di creazione della tabella `teams` e modificarla direttamente.
-
-### Step 2: Modificare Migrazione Originale
-
-Aggiungere la colonna `owner_id` nella migrazione originale, aggiornando il timestamp.
-
-### Step 3: Eliminare Migrazione Separata
-
-Rimuovere il file `2025_05_16_221811_add_owner_id_to_teams_table.php` dopo aver integrato la logica nella migrazione originale.
-
-## Principi Laraxot Violati
-
-1. **Single Source of Truth**: La struttura di `teams` dovrebbe essere in un solo file
-2. **Evoluzione Organica**: La migrazione dovrebbe "crescere" nel tempo, non frammentarsi
-3. **Anti-Frammentazione**: Evitare esplosione di micro-migrazioni
-4. **Coerenza Temporale**: Timestamp dovrebbe riflettere ultima modifica significativa
-
-## Riferimenti
-
-- [Filosofia Migrazioni Laraxot](./laraxot-migration-philosophy.md)
-<<<<<<< HEAD
-- [Principi Migrazioni UUID e Polimorfismo](../../geo/docs_project/archive/principi_migrazioni_laraxot_uuid_polimorfismo.md)
-- [Regole Aggiornamento Migrazioni](../../xot/docs/migration-update-rules.md)
-=======
 - [Principi Migrazioni UUID e Polimorfismo](../../Geo/docs_project/archive/principi_migrazioni_laraxot_uuid_polimorfismo.md)
 - [Regole Aggiornamento Migrazioni](../../Xot/docs/migration-update-rules.md)
->>>>>>> 4b6b99016 (first commit)
 
 ## Checklist Correzione
 
@@ -134,7 +51,6 @@ Questa migrazione contiene:
 - Controlli condizionali per idempotenza
 
 **La filosofia Laraxot è stata rispettata!** 🎉
-=======
 ---
 module: theme
 topic: migration-teams-owner-id-violation-analysis
@@ -142,4 +58,3 @@ canonical: ../../../Themes/docs/shared-components/migration-teams-owner-id-viola
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-teams-owner-id-violation-analysis.md
->>>>>>> dev

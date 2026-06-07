@@ -19,220 +19,104 @@ return [
             'label' => 'ID',
             'tooltip' => 'Identificativo unico del job batch',
             'placeholder' => 'ID del Batch',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome del batch di job',
             'placeholder' => 'Inserisci nome batch',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'total_jobs' => [
             'label' => 'Jobs Totali',
             'tooltip' => 'Numero totale di jobs nel batch',
             'placeholder' => 'Numero di jobs totali',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'pending_jobs' => [
             'label' => 'Jobs in Attesa',
             'tooltip' => 'Numero di jobs ancora in attesa di elaborazione',
             'placeholder' => 'Jobs in attesa',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'failed_jobs' => [
             'label' => 'Jobs Falliti',
             'tooltip' => 'Numero di jobs che hanno fallito',
             'placeholder' => 'Jobs falliti',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'failed_job_ids' => [
             'label' => 'ID Jobs Falliti',
             'tooltip' => 'Identificativo dei jobs che hanno fallito',
             'placeholder' => 'ID dei jobs falliti',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'options' => [
             'label' => 'Opzioni',
             'tooltip' => 'Opzioni di configurazione per il job batch',
             'placeholder' => 'Seleziona opzioni',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Creato il',
             'tooltip' => 'Data di creazione del job batch',
             'placeholder' => 'Data creazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'cancelled_at' => [
             'label' => 'Cancellato il',
             'tooltip' => 'Data di cancellazione del batch',
             'placeholder' => 'Data cancellazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'finished_at' => [
             'label' => 'Terminato il',
             'tooltip' => 'Data di terminazione del batch',
             'placeholder' => 'Data di terminazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Guard a cui è associato il job batch',
             'placeholder' => 'Seleziona guard',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'permissions' => [
             'label' => 'Permessi',
             'tooltip' => 'Permessi associati al job batch',
             'placeholder' => 'Seleziona permessi',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'updated_at' => [
             'label' => 'Aggiornato il',
             'tooltip' => 'Data dell\'ultimo aggiornamento del batch',
             'placeholder' => 'Data aggiornamento',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome dell\'utente associato',
             'placeholder' => 'Inserisci nome',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'last_name' => [
             'label' => 'Cognome',
             'tooltip' => 'Cognome dell\'utente associato',
             'placeholder' => 'Inserisci cognome',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -247,17 +131,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -332,14 +205,6 @@ return [
     'model' => [
         'label' => 'job batch.model',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

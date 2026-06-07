@@ -104,11 +104,5 @@ PHPStan analysis was blocked by a syntax error in the Cms module, but PHPMD anal
 ---
 
 **Report Generated**: 2025-11-11
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Next Review**: After fixing Cms module syntax error
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Target Completion**: 2025-11-20

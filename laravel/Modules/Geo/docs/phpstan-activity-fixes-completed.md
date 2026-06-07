@@ -3,10 +3,6 @@
 ## 🎯 Errori Risolti
 
 ### 1. StoredEventFactory.php ✅
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 **Errore**: `array_merge` con parametri mixed  
 **Soluzione**: Cast esplicito `is_array()` per type safety
 
@@ -16,8 +12,6 @@
 
 ### 3. File Traduzione ✅
 **Errore**: Chiavi 'navigation' e 'fields' duplicate  
-<<<<<<< HEAD
-=======
 **Errore**: `array_merge` con parametri mixed
 **Soluzione**: Cast esplicito `is_array()` per type safety
 
@@ -27,23 +21,13 @@
 
 ### 3. File Traduzione ✅
 **Errore**: Chiavi 'navigation' e 'fields' duplicate
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Soluzione**: Rimozione sezioni duplicate
 
 ## 📊 Verifica PHPStan Level 9
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-# ✅ StoredEventFactory: No errors  
-=======
 # ✅ StoredEventFactory: No errors
->>>>>>> 4b6b99016 (first commit)
-=======
 # ✅ StoredEventFactory: No errors  
->>>>>>> dev
 # ✅ ActivityMassSeeder: No errors
 # ✅ lang/de/activity.php: No errors
 # ✅ lang/en/activity.php: No errors
@@ -66,10 +50,4 @@ array_merge(
 \Modules\Module\Database\Factories\ModelFactory::new()
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

@@ -76,10 +76,6 @@ return [
             'js_injected_from_controller' => 'Javascript indsat fra en Controller',
             'using_blade_extensions' => 'Anvender Blade-udvidelser',
             'using_access_helper' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
                 'array_permissions' => 'Anvender \'Acess Helper\' med en liste af rettighedsnavne eller rettighedsid\'er hvor brugeren skal opfylde alle rettigheder.',
                 'array_permissions_not' => 'Anvender \'Access Helper\' med en liste af rettighedsnavne eller id\'er hvor brugeren ikke behøver at opfylde alle rettigheder.',
                 'array_roles' => 'Anvender \'Access Helper\' med en liste af rollenavne eller rolleid\'er hvor brugeren skal opfylde alle rettigheder.',
@@ -92,23 +88,6 @@ return [
             'view_console_it_works' => 'Vis konsol og du burde kunne se \'it works!\', som kommer fra FrontendController@index',
             'you_can_see_because' => 'Du kan se dette fordi du har rollen \':role\'!',
             'you_can_see_because_permission' => 'Du kan se dette fordi du har rettigheden \':permission\'!',
-<<<<<<< HEAD
-=======
-                'array_permissions' => "Anvender 'Acess Helper' med en liste af rettighedsnavne eller rettighedsid'er hvor brugeren skal opfylde alle rettigheder.",
-                'array_permissions_not' => 'Anvender \'Access Helper\' med en liste af rettighedsnavne eller id\'er hvor brugeren ikke behøver at opfylde alle rettigheder.',
-                'array_roles' => "Anvender 'Access Helper' med en liste af rollenavne eller rolleid'er hvor brugeren skal opfylde alle rettigheder.",
-                'array_roles_not' => 'Anvender \'Access Helper\' med en liste af rollenavne eller rolleid\'er hvor brugeren ikke behøver at opfylde alle rettigheder.',
-                'permission_id' => "Anvender 'Access Helper' med rettighedsid",
-                'permission_name' => "Anvender 'Access Helper' med rettighedsnavn",
-                'role_id' => "Anvender 'Access Helper' med rolleid",
-                'role_name' => "Anvender 'Access Helper' med rollenavn",
-            ],
-            'view_console_it_works' => "Vis konsol og du burde kunne se 'it works!', som kommer fra FrontendController@index",
-            'you_can_see_because' => "Du kan se dette fordi du har rollen ':role'!",
-            'you_can_see_because_permission' => "Du kan se dette fordi du har rettigheden ':permission'!",
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'user' => [
             'profile_updated' => 'Profil opdateret.',
@@ -116,10 +95,6 @@ return [
         ],
         'welcome_to' => 'Velkommen til :place',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -133,9 +108,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

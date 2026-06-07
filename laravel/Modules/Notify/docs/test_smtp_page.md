@@ -12,18 +12,10 @@ Il sistema rileverà in automatico la configurazione di default, ma si potrà be
 
 Inseriti le varie impostazioni, si potrà verificare il funzionamento di una determinata configurazione email.
 ## Collegamenti tra versioni di test-smtp-page.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [test-smtp-page.md](../../../notify/project_docs/test-smtp-page.md)
-* [test-smtp-page.md](../../../cms/project_docs/test-smtp-page.md)
-=======
 * [test-smtp-page.md](../../../Notify/project_docs/test-smtp-page.md)
 * [test-smtp-page.md](../../../Cms/project_docs/test-smtp-page.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [test-smtp-page.md](../../../Notify/project_docs/test-smtp-page.md)
 * [test-smtp-page.md](../../../Cms/project_docs/test-smtp-page.md)
->>>>>>> dev
 
 
 ### Versione Incoming
@@ -31,4 +23,3 @@ Inseriti le varie impostazioni, si potrà verificare il funzionamento di una det
 Inseriti le varie impostazioni, si potrà verificare il funzionamento di una determinata configurazione email.
 
 ---
-

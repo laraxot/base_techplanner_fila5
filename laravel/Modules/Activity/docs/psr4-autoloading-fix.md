@@ -303,11 +303,6 @@ Namespace\Class → file/path/Class.php
 
 Questa regola DEVE essere rispettata al 100% per tutti i file, inclusi i test.
 
-<<<<<<< HEAD
----
-
-**Autore**: Claude Code
-=======
 ## Seconda ondata PSR-4 (Marzo 2026)
 
 Moduli coinvolti: Activity, Notify, Xot, User.
@@ -323,7 +318,6 @@ obsoleto — non richiedono modifiche al codice, solo `composer dump-autoload`.
 
 ---
 
->>>>>>> dev
 **PHPStan Level**: 10
 **PSR-4 Compliance**: 100%
 **Status**: ✅ Completato e Verificato

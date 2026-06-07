@@ -179,10 +179,6 @@ class PatientResource extends XotBaseResource
 
 ## Collegamenti tra versioni di filament.md
 * [filament.md](docs/tecnico/filament/filament.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [filament.md](../../../chart/docs/filament.md)
 * [filament.md](../../../gdpr/docs/filament.md)
 * [filament.md](../../../xot/docs/technical/filament.md)
@@ -191,8 +187,6 @@ class PatientResource extends XotBaseResource
 * [filament.md](../../../job/docs/filament.md)
 * [filament.md](../../../activity/docs/filament.md)
 * [filament.md](../../../cms/docs/filament.md)
-<<<<<<< HEAD
-=======
 * [filament.md](../../../Chart/docs/filament.md)
 * [filament.md](../../../Gdpr/docs/filament.md)
 * [filament.md](../../../Xot/docs/technical/filament.md)
@@ -201,6 +195,3 @@ class PatientResource extends XotBaseResource
 * [filament.md](../../../Job/docs/filament.md)
 * [filament.md](../../../Activity/docs/filament.md)
 * [filament.md](../../../Cms/docs/filament.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

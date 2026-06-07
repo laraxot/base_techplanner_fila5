@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\UI\Tests\Feature\Filament\Widgets;
-
->>>>>>> dev
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Modules\UI\Filament\Widgets\StatsOverviewWidget;
 use Tests\TestCase;
@@ -68,11 +63,6 @@ test('stats overview widget has correct strict types declaration', function (): 
 
     if ($filename) {
         $content = file_get_contents($filename);
-<<<<<<< HEAD
-        expect($content)->toContain('declare(strict_types=1);');
-=======
-        expect($content)->toContain('');
->>>>>>> dev
     }
 });
 

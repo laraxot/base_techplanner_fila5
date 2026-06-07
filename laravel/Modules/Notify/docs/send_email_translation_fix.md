@@ -125,19 +125,11 @@ Ogni campo ora ha la struttura espansa completa:
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../project_docs/translation_standards_links.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)- [Documentazione Root](../project_docs/translation_standards_links.md)
-=======
 - [Documentazione Root](../../docs/translation_standards_links.md)
 - [Regole Helper Text](../../docs/translation-helper-text-standards.md)
 - [Best Practices Filament](../../docs/filament_translation_best_practices.md)
 - [Documentazione Root](../project_docs/translation_standards_links.md)
 - [Best Practices Filament](../../docs/filament_translation_best_practices.md)- [Documentazione Root](../project_docs/translation_standards_links.md)
->>>>>>> dev
 - [Regole Helper Text](../project_docs/translation-helper-text-standards.md)
 - [Best Practices Filament](../project_docs/filament_translation_best_practices.md)
 
@@ -162,11 +154,5 @@ Ogni campo ora ha la struttura espansa completa:
 ],
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-01-06* 
->>>>>>> 4b6b99016 (first commit)
-=======
 *Ultimo aggiornamento: 2025-01-06* 
->>>>>>> dev

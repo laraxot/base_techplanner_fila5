@@ -1,22 +1,9 @@
-<<<<<<< HEAD
-# Conclusioni e Raccomandazioni per logout.blade.php
-
-## Collegamenti correlati
-<<<<<<< HEAD
-- [README modulo User](./readme.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Auth Pages Implementation](./auth_pages_implementation.md)
-- [Logout Blade Implementation](./logout_blade_implementation.md)
-- [Logout Blade Analysis](./logout_blade_analysis.md)
-- [Convenzioni Path](./path_conventions.md)
-=======
 - [README modulo User](./README.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
 - [Logout Blade Analysis](./LOGOUT_BLADE_ANALYSIS.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
->>>>>>> 4b6b99016 (first commit)
 
 ## Sintesi dell'Analisi
 
@@ -101,21 +88,12 @@ L'implementazione raccomandata rappresenta la soluzione più semplice, efficient
 # Conclusioni e Raccomandazioni per logout.blade.php
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-- [README modulo User](./readme.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Auth Pages Implementation](./auth_pages_implementation.md)
-- [Logout Blade Implementation](./logout_blade_implementation.md)
-- [Logout Blade Analysis](./logout_blade_analysis.md)
-- [Convenzioni Path](./path_conventions.md)
-=======
 - [README modulo User](./README.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
 - [Logout Blade Analysis](./LOGOUT_BLADE_ANALYSIS.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
->>>>>>> 4b6b99016 (first commit)
 
 ## Sintesi dell'Analisi
 
@@ -197,7 +175,6 @@ Se si desidera mantenere un'interazione utente durante il processo di logout, si
 ## Conclusione
 
 L'implementazione raccomandata rappresenta la soluzione più semplice, efficiente e coerente con le convenzioni del progetto <nome progetto> per il logout degli utenti. Questa implementazione garantisce una buona esperienza utente e mantiene tutte le necessarie misure di sicurezza.
-=======
 ---
 module: theme
 topic: logout-blade-conclusions
@@ -205,4 +182,3 @@ canonical: ../../../Themes/docs/shared-components/logout-blade-conclusions.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-conclusions.md
->>>>>>> dev

@@ -24,20 +24,12 @@ class BelongsToManyAction
          * 'relation' => $relation, ]);
          */
         if (
-<<<<<<< HEAD
-            \in_array('to', array_keys($relationDTO->data), false) ||
-                \in_array('from', array_keys($relationDTO->data), false)
-        ) {
-            // $this->saveMultiselectTwoSides($row, $relation->name, $relation->data);
-            Assert::isArray($to = $relationDTO->data['to'] ?? []);
-=======
             \in_array('to', array_keys($relationDTO->data), false)
                 || \in_array('from', array_keys($relationDTO->data), false)
         ) {
             // $this->saveMultiselectTwoSides($row, $relation->name, $relation->data);
             Assert::isArray($to = $relationDTO->data['to'] ?? []);
             $to = array_map(static fn (mixed $id): string => (string) $id, $to);
->>>>>>> dev
             $rows->sync($to);
             $status = 'collegati ['.implode(', ', $to).'] ';
             Session::flash('status', $status);

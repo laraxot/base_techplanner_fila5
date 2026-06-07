@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Convenzioni di Naming per Acronimi 
-=======
 # Convenzioni di Naming per Acronimi
->>>>>>> 4b6b99016 (first commit)
-=======
 # Convenzioni di Naming per Acronimi
->>>>>>> dev
 
 ## Regola Fondamentale
 
@@ -90,12 +83,6 @@ Non ci sono eccezioni a questa regola. Tutti gli acronimi, indipendentemente dal
 Per identificare i file che non rispettano questa convenzione, è possibile utilizzare il seguente comando:
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-find /var/www/html/saluteora/laravel/Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
-=======
-=======
->>>>>>> dev
 find Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
 find Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
 find Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
@@ -191,10 +178,6 @@ Per identificare i file che non rispettano questa convenzione, è possibile util
 
 ```bash
 find Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ```
 
 ## Riferimenti

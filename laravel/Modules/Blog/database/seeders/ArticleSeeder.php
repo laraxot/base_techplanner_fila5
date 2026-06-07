@@ -60,7 +60,7 @@ class ArticleSeeder extends Seeder
     {
         $date = $this->date->subDay();
 
-        /* @phpstan-ignore-next-line argument.type */
+        Assert::notEmpty($this->categories, 'Categories must not be empty');
         $category_key = array_rand($this->categories);
         Assert::keyExists($this->categories, $category_key, 'Category key must exist');
 

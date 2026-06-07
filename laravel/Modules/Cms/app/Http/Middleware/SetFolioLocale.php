@@ -19,18 +19,6 @@ class SetFolioLocale
 {
     public function handle(Request $request, \Closure $next): mixed
     {
-<<<<<<< HEAD
-        // Priority 1: If user is logged in and has a saved language, use that
-        if ($request->user() && $request->user()->lang) {
-            $userLocale = $request->user()->lang;
-            app()->setLocale($userLocale);
-            LaravelLocalization::setLocale($userLocale);
-
-            return $next($request);
-        }
-
-=======
->>>>>>> dev
         // Get the first segment from the URL
         $segments = $request->segments();
         $firstSegment = $segments[0] ?? '';
@@ -46,16 +34,6 @@ class SetFolioLocale
         /** @var string $defaultLocale */
         $defaultLocale = config('app.locale', 'it');
 
-<<<<<<< HEAD
-        // Check if first segment is a supported locale
-        if (in_array($firstSegment, $supportedLocales, true)) {
-            app()->setLocale($firstSegment);
-        } else {
-            // Use default locale if first segment is not a locale
-            app()->setLocale($defaultLocale);
-        }
-
-=======
         // Priority 1: Check if first segment is a supported locale (URL Overrides User Preference)
         if (in_array($firstSegment, $supportedLocales, true)) {
             $locale = $firstSegment;
@@ -74,7 +52,6 @@ class SetFolioLocale
         app()->setLocale($locale);
         LaravelLocalization::setLocale($locale);
 
->>>>>>> dev
         return $next($request);
     }
 }

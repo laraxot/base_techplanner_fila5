@@ -4,28 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Models;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Modules\TechPlanner\Models\Profile;
-use Modules\Employee\Database\Factories\DepartmentFactory;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Modules\Employee\Database\Factories\DepartmentFactory;
 use Modules\TechPlanner\Models\Profile;
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-use Modules\Employee\Database\Factories\DepartmentFactory;
-use Modules\TechPlanner\Models\Profile;
->>>>>>> dev
 
 /**
  * Class Department.
@@ -42,26 +26,12 @@ use Modules\TechPlanner\Models\Profile;
  * @property-read Profile|null $creator
  * @property-read Profile|null $deleter
  * @property-read Profile|null $updater
-<<<<<<< HEAD
-<<<<<<< HEAD
  *
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
- *
->>>>>>> dev
  * @method static DepartmentFactory factory($count = null, $state = [])
  * @method static Builder<static>|Department newModelQuery()
  * @method static Builder<static>|Department newQuery()
  * @method static Builder<static>|Department query()
-<<<<<<< HEAD
-<<<<<<< HEAD
  *
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
- *
->>>>>>> dev
  * @mixin \Eloquent
  */
 class Department extends BaseModel

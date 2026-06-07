@@ -45,11 +45,7 @@ L'implementazione attuale include:
 3. **Gestione opzionale di nome e MIME type**: Personalizzazione flessibile degli allegati
 4. **Documentazione PHPDoc completa**: Miglior supporto IDE e type hints
 
-<<<<<<< HEAD
-Per maggiori dettagli, consultare [ATTACHMENTS_USAGE.md](./ATTACHMENTS_USAGE.md).
-=======
 Per maggiori dettagli, consultare [ATTACHMENTS_USAGE.md](./attachments_usage.md).
->>>>>>> dev
 
 ### 2. Errore: "View [notify::emails.template-name] not found"
 
@@ -208,12 +204,6 @@ public function test_can_send_email_with_attachments()
 
 ## Collegamenti alla Documentazione Correlata
 
-<<<<<<< HEAD
-- [ATTACHMENTS_USAGE.md](./ATTACHMENTS_USAGE.md)
-- [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)
-- [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/SPATIE_MAIL_TEMPLATES_STRUCTURE.md)
-=======
 - [ATTACHMENTS_USAGE.md](./attachments_usage.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
->>>>>>> dev

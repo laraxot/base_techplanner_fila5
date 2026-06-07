@@ -45,12 +45,8 @@ use Spatie\Translatable\HasTranslations;
  *
  * @property ProfileContract|null $deleter
  *
-<<<<<<< HEAD
- * @method static PageContentFactory factory($count = null, $state = [])
-=======
  * @method static PageContentFactory               factory($count = null, $state = [])
  * @method        array<int, array<string, mixed>> getSushiRows()
->>>>>>> dev
  *
  * @mixin \Eloquent
  */
@@ -59,13 +55,8 @@ class PageContent extends BaseModel
     use HasTranslations;
     use SushiToJsons;
 
-<<<<<<< HEAD
-    /** @var array<int, string> */
-    public $translatable = [
-=======
     /** @var list<string> */
     public array $translatable = [
->>>>>>> dev
         'name',
         'blocks',
     ];
@@ -77,12 +68,8 @@ class PageContent extends BaseModel
         'blocks',
     ];
 
-<<<<<<< HEAD
-    protected array $schema = [
-=======
     /** @var array<string, string> */
     protected $schema = [
->>>>>>> dev
         'id' => 'integer',
         'name' => 'json',
         'slug' => 'string',
@@ -94,12 +81,6 @@ class PageContent extends BaseModel
     ];
 
     /**
-<<<<<<< HEAD
-     * @return array<string, mixed>
-     */
-    /**
-=======
->>>>>>> dev
      * @return array<int, array<string, mixed>>
      */
     public function getRows(): array

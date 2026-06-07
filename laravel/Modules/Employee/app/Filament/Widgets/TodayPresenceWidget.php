@@ -6,11 +6,7 @@ namespace Modules\Employee\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
 use Modules\Employee\Models\Employee;
-<<<<<<< HEAD
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-=======
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
->>>>>>> dev
 use Override;
 
 /**
@@ -19,11 +15,7 @@ use Override;
  * Displays who is present today with real-time counters,
  * employee avatars, and detailed presence information.
  */
-<<<<<<< HEAD
-class TodayPresenceWidget extends XotBaseWidget
-=======
 class TodayPresenceWidget extends XotBaseSchemaWidget
->>>>>>> dev
 {
     protected string $view = 'employee::filament.widgets.today-presence-widget';
 

@@ -278,11 +278,7 @@ public function redirectToProvider(string $provider)
 *"BaseUser is the bedrock upon which all security stands"*
 - UUID-based identity across all systems
 - Immutable core properties (id, email)
-<<<<<<< HEAD
-- Predictable behavior in all contexts
-=======
 - <nome progetto>able behavior in all contexts
->>>>>>> dev
 
 #### **2. Water (Adaptability)**
 *"Authentication flows like water, taking the shape of any system"*
@@ -493,11 +489,7 @@ User Module Dependencies:
 **Modulo**: User (Authentication & Authorization)
 **Status**: 90% COMPLETATO
 **Priority**: HIGH
-<<<<<<< HEAD
-**PHPStan**: ✅ Level 9 (0 errori)
-=======
 **PHPStan**: ✅ Level 10 (0 errori)
->>>>>>> dev
 **Filament**: ✅ 4.x Compatibile
 
 ---
@@ -576,11 +568,7 @@ User Module
 - [x] **Notification System**: User notifications
 
 ### 🔧 Technical Excellence
-<<<<<<< HEAD
-- [x] **PHPStan Level 9**: 0 errori
-=======
 - [x] **PHPStan Level 10**: 0 errori
->>>>>>> dev
 - [x] **Filament 4.x**: Compatibilità completa
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
@@ -747,11 +735,7 @@ User Module
 **Status**: 95% COMPLETATO
 
 #### ✅ Completed
-<<<<<<< HEAD
-- [x] PHPStan Level 9 compliance
-=======
 - [x] PHPStan Level 10 compliance
->>>>>>> dev
 - [x] Type safety implementation
 - [x] Error handling improvement
 - [x] Code documentation
@@ -810,11 +794,7 @@ User Module
 ## 🎯 SUCCESS METRICS
 
 ### 📊 Technical Metrics
-<<<<<<< HEAD
-- [x] **PHPStan Level 9**: 0 errori ✅
-=======
 - [x] **PHPStan Level 10**: 0 errori ✅
->>>>>>> dev
 - [x] **Filament 4.x**: Compatibile ✅
 - [ ] **Test Coverage**: 80% (target)
 - [ ] **Response Time**: < 200ms
@@ -978,11 +958,8 @@ User Module
 
 ---
 
-<<<<<<< HEAD
 **Last Updated**: 2025-10-01
 **Next Review**: 2025-11-01
-=======
->>>>>>> dev
 **Status**: 🚧 ACTIVE DEVELOPMENT
 **Confidence Level**: 98%
 

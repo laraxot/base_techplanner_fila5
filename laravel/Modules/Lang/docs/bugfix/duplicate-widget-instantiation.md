@@ -145,15 +145,8 @@ public function __construct()
 - [LanguageSwitcher Component](../app/View/Components/LanguageSwitcher.php)
 - [LanguageSwitcherWidget](../app/Filament/Widgets/LanguageSwitcherWidget.php)
 - [Widgets Documentation](./widgets.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Super Mucca Workflow](../../xot/docs/super-mucca-workflow.md)
-=======
 - [Super Mucca Workflow](../../Xot/docs/super-mucca-workflow.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Super Mucca Workflow](../../xot/docs/super-mucca-workflow.md)
->>>>>>> dev
 
 ---
 

@@ -196,15 +196,8 @@ TextInput::make('full_name')
 ## Collegamenti
 - [Form Components](form-components.md)
 - [Naming Conventions](naming-conventions.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Translation System](../../lang/docs/translation-system.md)
-=======
 - [Translation System](../../Lang/docs/translation-system.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Translation System](../../lang/docs/translation-system.md)
->>>>>>> dev
 
 ## Vedi Anche
 - [VSCode PHP Setup](vscode-php-setup.md)
@@ -408,21 +401,12 @@ TextInput::make('full_name')
 ## Collegamenti
 - [Form Components](form-components.md)
 - [Naming Conventions](naming-conventions.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Translation System](../../lang/project_docs/translation-system.md)
-- [Translation System](../../lang/project_docs/translation-system.md)
-- [Translation System](../../lang/project_docs/translation-system.md)
-=======
 - [Translation System](../../Lang/project_docs/translation-system.md)
 - [Translation System](../../Lang/project_docs/translation-system.md)
 - [Translation System](../../Lang/project_docs/translation-system.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Translation System](../../lang/project_docs/translation-system.md)
 - [Translation System](../../lang/project_docs/translation-system.md)
 - [Translation System](../../lang/project_docs/translation-system.md)
->>>>>>> dev
 
 ## Vedi Anche
 - [VSCode PHP Setup](vscode-php-setup.md)

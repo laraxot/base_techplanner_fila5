@@ -211,13 +211,6 @@ vs
 ## Collegamenti
 
 - [Filament Resources Coverage Analysis](./filament-resources-coverage-analysis.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Filosofia Modulo User](./filosofia_modulo_user.md)
-=======
 - [Filosofia Modulo User](./FILOSOFIA_MODULO_USER.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Filosofia Modulo User](./filosofia_modulo_user.md)
->>>>>>> dev
 - [Filament Best Practices](./filament-best-practices.md)

@@ -1,11 +1,5 @@
 # Employee Module - Implementation Results
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ## Date: 02/09/2025
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Summary of Changes Implemented
 

@@ -9,10 +9,6 @@ return [
             'description' => 'method',
             'helper_text' => 'method',
             'placeholder' => 'method',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
         '_tpl' => [
@@ -39,17 +35,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
-        ],
-        '_tpl' => [
-            'label' => '_tpl',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

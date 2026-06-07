@@ -1,14 +1,7 @@
 # AddressColumn Implementation Plan
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Date**: 2025-12-12
->>>>>>> 4b6b99016 (first commit)
-=======
 **Date**: [DATE]
->>>>>>> dev
 **Module**: Geo
 **Status**: 📋 **PLANNING**
 

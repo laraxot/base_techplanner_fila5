@@ -150,20 +150,12 @@ class MyAction
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-=======
 namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> dev
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
-<<<<<<< HEAD
-use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
-=======
 use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
->>>>>>> dev
 
 class ViewQuestionChart extends XotBaseViewRecord
 {
@@ -205,11 +197,7 @@ class ViewQuestionChart extends XotBaseViewRecord
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-namespace Modules\Quaeris\Filament\Widgets;
-=======
 namespace Modules\healthcare_app\Filament\Widgets;
->>>>>>> dev
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -265,17 +253,10 @@ class QuestionChartFilterWidget extends XotBaseWidget
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-namespace Modules\Quaeris\Filament\Resources;
-
-use Modules\Xot\Filament\Resources\XotBaseResource;
-use Modules\Quaeris\Models\QuestionChart;
-=======
 namespace Modules\healthcare_app\Filament\Resources;
 
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\healthcare_app\Models\QuestionChart;
->>>>>>> dev
 
 class QuestionChartResource extends XotBaseResource
 {

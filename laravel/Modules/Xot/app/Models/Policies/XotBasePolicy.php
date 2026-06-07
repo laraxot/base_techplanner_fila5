@@ -9,10 +9,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Models\Policies;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
-<<<<<<< HEAD
-=======
 use Illuminate\Auth\Access\Response;
->>>>>>> dev
 use Modules\Xot\Contracts\UserContract;
 
 // use Modules\Xot\Datas\XotData;
@@ -30,11 +27,7 @@ abstract class XotBasePolicy
         });
     }
 
-<<<<<<< HEAD
-    public function viewAny(UserContract $userContract): bool
-=======
     public function viewAny(UserContract $user): Response|bool
->>>>>>> dev
     {
         return false;
     }

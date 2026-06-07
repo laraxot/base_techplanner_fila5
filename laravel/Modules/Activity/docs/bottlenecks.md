@@ -318,37 +318,19 @@ class ListActivities extends XotBasePage
 
 ## Collegamenti Bidirezionali
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README Activity](./readme.md)
-=======
 - [README Activity](./README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README Activity](./readme.md)
->>>>>>> dev
 - [Roadmap](./roadmap.md)
 - [Struttura del Modulo](./structure.md)
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Torna a README](./readme.md)
-=======
 - [Torna a README](./README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Torna a README](./readme.md)
->>>>>>> dev
 - [Vai a Roadmap](./roadmap.md)
 - [Vai a Struttura](./structure.md)
 
 ## Collegamenti tra versioni di bottlenecks.md
 * [bottlenecks.md](../../../../bashscripts/docs/bottlenecks.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [bottlenecks.md](../../chart/docs/bottlenecks.md)
 * [bottlenecks.md](../../chart/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../gdpr/docs/bottlenecks.md)
@@ -368,8 +350,6 @@ class ListActivities extends XotBasePage
 * [bottlenecks.md](../../media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../cms/docs/bottlenecks.md)
-<<<<<<< HEAD
-=======
 * [bottlenecks.md](../../Chart/docs/bottlenecks.md)
 * [bottlenecks.md](../../Chart/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
@@ -389,6 +369,3 @@ class ListActivities extends XotBasePage
 * [bottlenecks.md](../../Media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

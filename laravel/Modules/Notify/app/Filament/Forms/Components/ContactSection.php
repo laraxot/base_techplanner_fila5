@@ -24,15 +24,7 @@ class ContactSection extends XotBaseSection
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @return array<int|string, TextInput>
-=======
-     * @return array<string, TextInput>
->>>>>>> 4b6b99016 (first commit)
-=======
-     * @return array<int|string, TextInput>
->>>>>>> dev
      */
     protected function getFormSchema(): array
     {

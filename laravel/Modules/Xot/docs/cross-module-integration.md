@@ -193,18 +193,10 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 - **Traduzioni**: `Modules\Progressioni\lang\it\integparam.php`
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Modulo Sigma](/laravel/modules/sigma/docs/readme.md)
-- [Modulo Progressioni](/laravel/modules/progressioni/docs/readme.md)
-=======
 - [Modulo Sigma](/laravel/Modules/Sigma/docs/README.md)
 - [Modulo Progressioni](/laravel/Modules/Progressioni/docs/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Modulo Sigma](/laravel/modules/sigma/docs/readme.md)
 - [Modulo Progressioni](/laravel/modules/progressioni/docs/readme.md)
->>>>>>> dev
 ```
 
 ## Checklist per Integrazioni Cross-Module
@@ -228,23 +220,14 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 - [ ] Implementare test automatizzati
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Modulo Sigma](/laravel/modules/sigma/docs/readme.md)
 - [Modulo Progressioni](/laravel/modules/progressioni/docs/readme.md)
 - [Filament Resources Best Practices](/docs/filament-best-practices.md)
 - [Translation Standards](/docs/translation-standards.md)
 
-<<<<<<< HEAD
-=======
 - [Modulo Sigma](/laravel/Modules/Sigma/docs/README.md)
 - [Modulo Progressioni](/laravel/Modules/Progressioni/docs/README.md)
 - [Filament Resources Best Practices](/docs/filament-best-practices.md)
 - [Translation Standards](/docs/translation-standards.md)
 
 *Ultimo aggiornamento: 5 giugno 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

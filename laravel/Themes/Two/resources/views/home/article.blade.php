@@ -1,9 +1,5 @@
 <article class="flex flex-col shadow my-4">
     <!-- Article Image -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     <a href="#" class="hover:opacity-75" aria-label="Vai all'articolo: {{ $getRecord()->question_txt ?? 'Technology' }}">
         <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=1" alt="">
     </a>
@@ -15,8 +11,6 @@
         </p>
         <a href="#" class="pb-6" aria-label="Leggi l'anteprima dell'articolo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..</a>
         <a href="#" class="uppercase text-gray-800 hover:text-black">Continue Reading <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-<<<<<<< HEAD
-=======
     <a href="#" class="hover:opacity-75">
         <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=1">
     </a>
@@ -28,8 +22,5 @@
         </p>
         <a href="#" class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..</a>
         <a href="#" class="uppercase text-gray-800 hover:text-black">Continue Reading <i class="fas fa-arrow-right"></i></a>
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     </div>
 </article>

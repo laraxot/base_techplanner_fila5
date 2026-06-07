@@ -1,14 +1,7 @@
 # Risoluzione Conflitti Git - Modulo Geo
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Data: [DATE]
-=======
 ## Data: 2025-01-06
->>>>>>> 4b6b99016 (first commit)
-=======
 ## Data: [DATE]
->>>>>>> dev
 
 ## File Corretti
 
@@ -102,10 +95,6 @@ use function Safe\json_decode;
 
 ## Verifiche Post-Correzione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 
 ### 2. Validazione PHPStan
 ```bash
@@ -143,11 +132,7 @@ php artisan lang:check
 - [Address Implementation](address-implementation.md)
 - [Locality Model](models/locality.md)
 - [Filament Integration](filament-integration.md)
-<<<<<<< HEAD
-- [Translation Guidelines](../../../project_docs/translation-standards.md)
-=======
 - [Translation Guidelines](../../../../docs/project/translation-standards.md)
->>>>>>> dev
 
 ### Note per Sviluppatori
 1. **Sempre** usare `declare(strict_types=1);` nei file di traduzione
@@ -170,12 +155,6 @@ php artisan lang:check
 
 **Ultimo aggiornamento**: [DATE]
 **Autore**: Sistema di correzione automatica
-<<<<<<< HEAD
-**Stato**: ✅ Completato
-=======
 ### 1. Controllo Conflitti
 ```bash
->>>>>>> 4b6b99016 (first commit)
-=======
 **Stato**: ✅ Completato
->>>>>>> dev

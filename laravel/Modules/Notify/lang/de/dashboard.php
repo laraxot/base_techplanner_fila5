@@ -87,17 +87,8 @@ return [
         'no_data' => 'Nessun dato disponibile per il periodo selezionato',
         'loading' => 'Caricamento dati in corso...',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -11,15 +11,8 @@ Sia il modulo Cms che il modulo User seguono le stesse convenzioni di namespace 
 
 Per dettagli specifici, consulta:
 - [Convenzioni Namespace Filament](./convenzioni-namespace-filament.md) in questo modulo
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Convenzioni di Namespace](../../user/project_docs/namespace-conventions.md) nel modulo User
-=======
 - [Convenzioni di Namespace](../../User/project_docs/namespace-conventions.md) nel modulo User
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Convenzioni di Namespace](../../user/project_docs/namespace-conventions.md) nel modulo User
->>>>>>> dev
 
 ## Punti di Integrazione
 
@@ -29,18 +22,10 @@ Per dettagli specifici, consulta:
 
 ## Collegamenti Bidirezionali
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Convenzioni di Namespace nel modulo User](../../user/project_docs/namespace-conventions.md)
-- [Best Practices Filament nel modulo User](../../user/project_docs/filament_best_practices.md)
-=======
 - [Convenzioni di Namespace nel modulo User](../../User/project_docs/namespace-conventions.md)
 - [Best Practices Filament nel modulo User](../../User/project_docs/FILAMENT_BEST_PRACTICES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Convenzioni di Namespace nel modulo User](../../user/project_docs/namespace-conventions.md)
 - [Best Practices Filament nel modulo User](../../user/project_docs/filament_best_practices.md)
->>>>>>> dev
 
 ---
 
@@ -51,12 +36,6 @@ Quando aggiungi nuovi componenti Filament, assicurati di:
 3. Mantenere aggiornata la documentazione in entrambi i moduli
 
 ## Collegamenti tra versioni di user-link.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [user-link.md](laravel/modules/lang/project_docs/user-link.md)
-* [user-link.md](laravel/modules/cms/project_docs/user-link.md)
-
-=======
 * [user-link.md](laravel/Modules/Lang/project_docs/user-link.md)
 * [user-link.md](laravel/Modules/Cms/project_docs/user-link.md)
 # Collegamento al Modulo User
@@ -96,9 +75,5 @@ Quando aggiungi nuovi componenti Filament, assicurati di:
 ## Collegamenti tra versioni di user-link.md
 * [user-link.md](laravel/Modules/Lang/docs/user-link.md)
 * [user-link.md](laravel/Modules/Cms/docs/user-link.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [user-link.md](laravel/modules/lang/project_docs/user-link.md)
 * [user-link.md](laravel/modules/cms/project_docs/user-link.md)
-
->>>>>>> dev

@@ -36,22 +36,14 @@ The Cms module's MCP configuration enables AI assistants to interact with:
     },
     "filesystem": {
       "command": "npx",
-<<<<<<< HEAD
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_laravelpizza/laravel"],
-=======
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "./laravel"],
->>>>>>> dev
       "description": "Access to Cms module files"
     },
     "database": {
       "command": "npx",
       "args": ["-y", "@bytebase/dbhub"],
       "env": {
-<<<<<<< HEAD
-        "DATABASE_URL": "sqlite:///var/www/_bases/base_laravelpizza/laravel/database/database.sqlite"
-=======
         "DATABASE_URL": "sqlite://./laravel/database/database.sqlite"
->>>>>>> dev
       },
       "description": "SQLite database queries"
     }
@@ -119,15 +111,9 @@ The Cms module's MCP configuration enables AI assistants to interact with:
 
 ## 📚 Related Documentation
 
-<<<<<<< HEAD
-- [Asana MCP Configuration](../../../docs/mcp-asana-configuration.md)
-- [ClickUp MCP Configuration](../../../docs/mcp-clickup-configuration.md)
-- [Redmine MCP Configuration](../../../docs/mcp-redmine-configuration.md)
-=======
 - [Asana MCP Configuration](../../../../docs/mcp-asana-configuration.md)
 - [ClickUp MCP Configuration](../../../../docs/mcp-clickup-configuration.md)
 - [Redmine MCP Configuration](../../../../docs/mcp-redmine-configuration.md)
->>>>>>> dev
 - [Cms Module Roadmap](./roadmap-[date].md)
 
 ---

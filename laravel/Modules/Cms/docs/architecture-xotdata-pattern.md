@@ -31,15 +31,8 @@ Successivamente è stato commesso un **errore di analisi superficiale**:
 
 2. WIDGET LOGIN (Livewire):
    - Classe: Modules\User\Filament\Widgets\Auth\LoginWidget
-<<<<<<< HEAD
-<<<<<<< HEAD
-   - Metodo: login() 
-=======
    - Metodo: login()
->>>>>>> 4b6b99016 (first commit)
-=======
    - Metodo: login() 
->>>>>>> dev
    - Test: LoginWidgetTest.php (widget/unità)
 
 3. ALTRI COMPONENT:
@@ -56,15 +49,8 @@ Successivamente è stato commesso un **errore di analisi superficiale**:
 - Test delle validazioni del form
 - Test dell'autenticazione via widget
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-// laravel/Modules/Cms/tests/Feature/Auth/AuthenticationTest.php  
-=======
 // laravel/Modules/Cms/tests/Feature/Auth/AuthenticationTest.php
->>>>>>> 4b6b99016 (first commit)
-=======
 // laravel/Modules/Cms/tests/Feature/Auth/AuthenticationTest.php  
->>>>>>> dev
 - Test dell'autenticazione Volt
 - Test della pagina /it/auth/login
 
@@ -102,27 +88,18 @@ function createTestUser(array $attributes = []): UserContract
         'password' => Hash::make('password123'),
         'name' => fake()->name(),
     ];
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     $userData = array_merge($defaultData, $attributes);
     
     /** @var UserContract&\Illuminate\Database\Eloquent\Model $user */
     $user = $userClass::factory()->create($userData);
     
-<<<<<<< HEAD
-=======
 
     $userData = array_merge($defaultData, $attributes);
 
     /** @var UserContract&\Illuminate\Database\Eloquent\Model $user */
     $user = $userClass::factory()->create($userData);
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     return $user;
 }
 ```
@@ -180,38 +157,21 @@ function createTestUser(array $attributes = []): UserContract
 ## 📖 **Documentazione di Riferimento**
 
 ### **Pattern XotData**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [docs/xotdata-architecture-critical-error-fix.md](../../../project_docs/xotdata-architecture-critical-error-fix.md)
-- [laravel/Modules/Xot/project_docs/architecture-violations-and-fixes.md](../../xot/project_docs/architecture-violations-and-fixes.md)
-=======
 - [docs/xotdata-architecture-critical-error-fix.md](../../../docs/xotdata-architecture-critical-error-fix.md)
 - [laravel/Modules/Xot/docs/architecture-violations-and-fixes.md](../../Xot/docs/architecture-violations-and-fixes.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [docs/xotdata-architecture-critical-error-fix.md](../../../../docs/project/xotdata-architecture-critical-error-fix.md)
 - [laravel/Modules/Xot/project_docs/architecture-violations-and-fixes.md](../../xot/project_docs/architecture-violations-and-fixes.md)
->>>>>>> dev
 
 ### **Struttura Testing**
 - [laravel/Modules/User/tests/Feature/Filament/Widgets/LoginWidgetTest.php](../../User/tests/Feature/Filament/Widgets/LoginWidgetTest.php)
 - [laravel/Modules/Cms/tests/Feature/Auth/AuthenticationTest.php](../tests/Feature/Auth/AuthenticationTest.php)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### **Sistema Folio/Volt** 
-- [laravel/Themes/One/project_docs/folio-pages.md](../../../themes/one/project_docs/folio-pages.md)
-- [laravel/Themes/One/project_docs/routing_with_folio_volt.md](../../../themes/one/project_docs/routing_with_folio_volt.md)
-=======
 ### **Sistema Folio/Volt**
 - [laravel/Themes/One/docs/folio-pages.md](../../../Themes/One/docs/folio-pages.md)
 - [laravel/Themes/One/docs/routing_with_folio_volt.md](../../../Themes/One/docs/routing_with_folio_volt.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 ### **Sistema Folio/Volt** 
 - [laravel/Themes/One/project_docs/folio-pages.md](../../../themes/one/project_docs/folio-pages.md)
 - [laravel/Themes/One/project_docs/routing_with_folio_volt.md](../../../themes/one/project_docs/routing_with_folio_volt.md)
->>>>>>> dev
 
 ## 🎯 **Obiettivo Finale**
 
@@ -223,24 +183,14 @@ LoginTest.php → Pagina /it/auth/login (Folio/Volt)
 ├── Processo autenticazione
 └── Gestione errori
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-LoginWidgetTest.php → Widget Livewire  
-=======
 LoginWidgetTest.php → Widget Livewire
->>>>>>> 4b6b99016 (first commit)
-=======
 LoginWidgetTest.php → Widget Livewire  
->>>>>>> dev
 ├── Rendering widget
 ├── Validazione campi
 ├── Metodi del widget
 └── Interazioni specifiche
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Dicembre 2024 - Analisi completa e correzione pattern*
 # Architettura XotData Pattern - Errore Critico Risolto e Analisi Approfondita
 
@@ -422,6 +372,3 @@ LoginWidgetTest.php → Widget Livewire
 ```
 
 *Ultimo aggiornamento: Dicembre 2024 - Analisi completa e correzione pattern*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

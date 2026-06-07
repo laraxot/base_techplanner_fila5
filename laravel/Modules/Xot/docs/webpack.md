@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 //------------------------
 https://stackoverflow.com/questions/61047279/laravel-mix-multiple-entry-points-multiple-outputs
 https://codeutility.org/javascript-laravel-mix-multiple-entry-points-multiple-outputs-stack-overflow/
@@ -23,4 +20,3 @@ Then call it on your directory:
 mapScripts('resources/js', 'public/js');
 
 //---------------------------------------------------------------
->>>>>>> dev

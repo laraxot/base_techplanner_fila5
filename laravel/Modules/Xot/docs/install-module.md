@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
  public function test(){
 
         $vendor_name='laraxot/module_formx';
@@ -34,4 +31,3 @@
 
         rename(base_path('Modules/'.$old_dir),base_path('Modules/'.$new_dir));
     }
->>>>>>> dev

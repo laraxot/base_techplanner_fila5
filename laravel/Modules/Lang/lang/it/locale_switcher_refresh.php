@@ -9,10 +9,6 @@ return [
             'placeholder' => 'locale',
             'helper_text' => 'locale',
             'description' => 'locale',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -38,11 +34,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Locale Switcher Refresh',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
 ];

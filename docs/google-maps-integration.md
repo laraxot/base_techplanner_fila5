@@ -64,14 +64,4 @@ composer require webbingbrasil/filament-maps
 3. **Testare funzionalità dopo installazione**
 4. **Documentare configurazione nei moduli**
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-01-06*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
-
-
-
-

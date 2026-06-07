@@ -1,12 +1,6 @@
 # Pattern per Riferimenti User - Laraxot
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2025-01-10
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Obiettivo**: Standardizzare i riferimenti a User nel sistema Laraxot
 **Problema**: PHPStan segnala errori su `App\Models\User` che non esiste
 
@@ -229,10 +223,4 @@ if ($user instanceof UserContract) {
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-01-10*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

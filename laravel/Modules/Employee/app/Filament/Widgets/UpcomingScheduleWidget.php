@@ -6,11 +6,7 @@ namespace Modules\Employee\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
 use Modules\Employee\Models\Employee;
-<<<<<<< HEAD
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-=======
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
->>>>>>> dev
 use Override;
 
 /**
@@ -19,11 +15,7 @@ use Override;
  * Displays upcoming events for the next 7 days including absences,
  * smart working, transfers, and other schedule items.
  */
-<<<<<<< HEAD
-class UpcomingScheduleWidget extends XotBaseWidget
-=======
 class UpcomingScheduleWidget extends XotBaseSchemaWidget
->>>>>>> dev
 {
     protected string $view = 'employee::filament.widgets.upcoming-schedule-widget';
 

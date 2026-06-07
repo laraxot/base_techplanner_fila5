@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Database\Factories;
 
-<<<<<<< HEAD
-=======
 use Carbon\Carbon;
->>>>>>> dev
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Tenant\Models\Tenant;
 use Modules\Tenant\Models\TenantSubscription;
@@ -34,13 +31,8 @@ class TenantSubscriptionFactory extends Factory
             'current_storage_gb' => round(random_int(0, 5000) / 100, 2),
             'billing_cycle' => ['monthly', 'yearly'][array_rand(['monthly', 'yearly'])],
             'billing_amount' => round(random_int(1000, 50000) / 100, 2),
-<<<<<<< HEAD
-            'next_billing_date' => \Carbon\Carbon::now()->addDays(random_int(1, 365)),
-            'expires_at' => \Carbon\Carbon::now()->addDays(random_int(1, 365)),
-=======
             'next_billing_date' => Carbon::now()->addDays(random_int(1, 365)),
             'expires_at' => Carbon::now()->addDays(random_int(1, 365)),
->>>>>>> dev
         ];
     }
 }

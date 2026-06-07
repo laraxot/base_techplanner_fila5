@@ -9,24 +9,13 @@ return [
             'description' => 'level',
             'helper_text' => 'level',
             'placeholder' => 'level',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'content' => [
             'label' => 'content',
             'description' => 'content',
             'helper_text' => 'content',
             'placeholder' => 'content',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -52,11 +41,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Heading',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
 ];

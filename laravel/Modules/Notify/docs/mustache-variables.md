@@ -1,14 +1,7 @@
 # Mustache Variables - SpatieEmail Template System
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date**: [DATE]  
-=======
 **Date**: 2025-12-19  
->>>>>>> 4b6b99016 (first commit)
-=======
 **Date**: 2025-12-19  
->>>>>>> dev
 **Module**: Notify  
 **Status**: ✅ Documentazione Completa
 
@@ -119,15 +112,8 @@ $user = User::find(1);
 | `{{ last_name }}` | string | Cognome | `"Rossi"` |
 | `{{ email }}` | string | Email | `"mario@example.com"` |
 | `{{ phone }}` | string | Telefono (se presente) | `"+39 123 456 7890"` |
-<<<<<<< HEAD
-<<<<<<< HEAD
-| `{{ created_at }}` | datetime | Data di creazione | `"[DATE] 10:30:00"` |
-=======
 | `{{ created_at }}` | datetime | Data di creazione | `"2025-01-15 10:30:00"` |
->>>>>>> 4b6b99016 (first commit)
-=======
 | `{{ created_at }}` | datetime | Data di creazione | `"2025-01-15 10:30:00"` |
->>>>>>> dev
 
 **Nota**: Le variabili disponibili dipendono dal modello specifico passato. Verifica il modello per vedere tutte le proprietà accessibili.
 
@@ -151,15 +137,8 @@ $email->mergeData([
     'discount_percentage' => 20,
     'gift_card_value' => 50,
     'offer_url' => route('christmas-offer'),
-<<<<<<< HEAD
-<<<<<<< HEAD
-    'expiration_date' => '[DATE]',
-=======
     'expiration_date' => '2025-12-31',
->>>>>>> 4b6b99016 (first commit)
-=======
     'expiration_date' => '2025-12-31',
->>>>>>> dev
     'promo_code' => 'NATALE2025',
 ]);
 
@@ -327,15 +306,8 @@ $email = new SpatieEmail($client, 'christmas-newsletter');
 $email->mergeData([
     'discount' => 25,
     'promo_code' => 'NATALE25',
-<<<<<<< HEAD
-<<<<<<< HEAD
-    'expires' => '[DATE]',
-=======
     'expires' => '2025-12-31',
->>>>>>> 4b6b99016 (first commit)
-=======
     'expires' => '2025-12-31',
->>>>>>> dev
 ]);
 ```
 
@@ -380,11 +352,5 @@ $email->mergeData([
 ---
 
 **Creato per facilitare lo sviluppo di template email professionali**  
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-12-19*
->>>>>>> 4b6b99016 (first commit)
-=======
 *Ultimo aggiornamento: 2025-12-19*
->>>>>>> dev

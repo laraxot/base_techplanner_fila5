@@ -2,13 +2,9 @@
 
 ## Obiettivo
 
-<<<<<<< HEAD
-Il componente `XotBasePlaceholder` è stato introdotto per aderire rigorosamente al principio architetturale "NON estendere MAI classi Filament direttamente". Questo componente funge da classe base astratta per tutti i placeholder personalizzati all'interno del progetto, garantendo che le estensioni di Filament avvengano tramite la gerarchia `XotBase`.
-=======
 `XotBasePlaceholder` esiste come **bridge legacy** per i casi storici in cui il progetto ha esteso `Filament\Forms\Components\Placeholder` senza passare direttamente da Filament.
 
 Non e un componente da promuovere nei nuovi sviluppi.
->>>>>>> dev
 
 ## Gerarchia di Ereditarietà
 
@@ -23,9 +19,6 @@ Modules\Cms\Filament\Forms\Components\DownloadAttachmentPlaceHolder
 
 ## Implementazione
 
-<<<<<<< HEAD
-Il componente `XotBasePlaceholder` estende direttamente `Filament\Forms\Components\Placeholder`. Al momento, non introduce logica aggiuntiva ma serve come punto di estensione standardizzato e centralizzato.
-=======
 Il componente `XotBasePlaceholder` estende direttamente `Filament\Forms\Components\Placeholder`.
 
 Va letto nel contesto Filament 5.x:
@@ -35,7 +28,6 @@ Va letto nel contesto Filament 5.x:
 - `content()` e un alias di `state()`
 
 Quindi `XotBasePlaceholder` oggi e principalmente un artefatto di compatibilita.
->>>>>>> dev
 
 ```php
 <?php
@@ -52,17 +44,6 @@ class XotBasePlaceholder extends Placeholder
 }
 ```
 
-<<<<<<< HEAD
-## Benefici
-
--   **Aderenza alle Regole Architetturali**: Garantisce che i principi Laraxot di estensione dei componenti Filament siano rispettati.
--   **Centralizzazione**: Fornisce un punto unico per l'aggiunta di funzionalità comuni o per l'override di comportamenti predefiniti dei placeholder in futuro.
--   **Migliore Manutenibilità**: Simplifica la gestione e l'aggiornamento dei placeholder personalizzati, isolando le dipendenze dirette dalle classi Filament.
--   **Conformità PHPStan**: Aiuta a risolvere potenziali problemi di type hinting e analisi statica, come quelli relativi alla risoluzione delle view (`view-string`), incanalandoli attraverso una classe base gestita.
-
-## Uso
-
-=======
 ## Posizione Architetturale Corrente
 
 ### Nuovo sviluppo
@@ -90,7 +71,6 @@ Usare invece:
 
 Da considerare legacy:
 
->>>>>>> dev
 I placeholder personalizzati, come `DownloadAttachmentPlaceHolder`, devono ora estendere `XotBasePlaceholder`:
 
 ```php
@@ -110,14 +90,6 @@ class DownloadAttachmentPlaceHolder extends XotBasePlaceholder
 
 ## Collegamenti Utili
 
-<<<<<<< HEAD
--   [Filament Class Extension Rules](../../../docs/filament-class-extension-rules.md)
-<<<<<<< HEAD
--   [DownloadAttachmentPlaceHolder Documentation](../../cms/docs/filament/forms/components/download-attachment-placeholder.md) (da creare)
-=======
 -   [DownloadAttachmentPlaceHolder Documentation](../../Cms/docs/filament/forms/components/download-attachment-placeholder.md) (da creare)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Schemas Unified Religion](../../../../../../docs/schemas-unified-religion.md)
 - [Infolists for Summary](../../widgets/infolists-for-summary.md)
->>>>>>> dev

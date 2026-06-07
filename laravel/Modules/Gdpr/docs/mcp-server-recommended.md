@@ -19,9 +19,6 @@ Gestione privacy, consensi e compliance GDPR.
 
 ## Note
 - Adatta la configurazione a seconda dei requisiti di compliance e audit.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 # MCP Server Consigliati per il Modulo Gdpr
 
 ## Scopo del Modulo
@@ -43,6 +40,3 @@ Gestione privacy, consensi e compliance GDPR.
 
 ## Note
 - Adatta la configurazione a seconda dei requisiti di compliance e audit.
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

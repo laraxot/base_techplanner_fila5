@@ -14,10 +14,6 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Modules\Xot\Filament\Resources\LogResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-<<<<<<< HEAD
-use Override;
-=======
->>>>>>> dev
 
 /**
  * @see LogResource
@@ -26,11 +22,7 @@ class ListLogs extends XotBaseListRecords
 {
     protected static string $resource = LogResource::class;
 
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     public function getTableColumns(): array
     {
         return [
@@ -58,11 +50,7 @@ class ListLogs extends XotBaseListRecords
         ];
     }
 
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     public function getTableFilters(): array
     {
         return [
@@ -82,11 +70,7 @@ class ListLogs extends XotBaseListRecords
     /**
      * @return array<string, Action|ActionGroup>
      */
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     public function getTableActions(): array
     {
         return [
@@ -98,11 +82,7 @@ class ListLogs extends XotBaseListRecords
     /**
      * @return array<string, BulkAction>
      */
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     public function getTableBulkActions(): array
     {
         return [

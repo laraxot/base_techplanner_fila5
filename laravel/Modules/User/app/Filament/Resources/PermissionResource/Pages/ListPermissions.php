@@ -97,17 +97,8 @@ class ListPermissions extends XotBaseListRecords
                             $rolesRelation = $record->roles();
                             $roleData = $data['role'];
                             if (is_array($roleData) || is_int($roleData) || is_string($roleData)) {
-<<<<<<< HEAD
-<<<<<<< HEAD
                                 $syncData = is_array($roleData) ? $roleData : [$roleData];
                                 $rolesRelation->sync($syncData);
-=======
-                                $rolesRelation->sync($roleData);
->>>>>>> 4b6b99016 (first commit)
-=======
-                                $syncData = is_array($roleData) ? $roleData : [$roleData];
-                                $rolesRelation->sync($syncData);
->>>>>>> dev
                                 $record->save();
                             }
                         }
@@ -117,18 +108,10 @@ class ListPermissions extends XotBaseListRecords
                     Select::make('role')->options(function () use ($roleModel): array {
                         /** @var Builder<Role> $query */
                         $query = $roleModel::query();
-<<<<<<< HEAD
-                        /** @var \Illuminate\Support\Collection<string|int, string> $collection */
-                        $collection = $query->pluck('name', 'id');
-
-                        /* @var array<string|int, string> $options */
-                        return $collection->toArray();
-=======
 
                         return $query->pluck('name', 'id')
                             ->mapWithKeys(static fn (mixed $name, mixed $id): array => is_string($name) || is_int($name) ? [(string) $id => (string) $name] : [])
                             ->all();
->>>>>>> dev
                     })->required(),
                 ])
                 ->deselectRecordsAfterCompletion(),

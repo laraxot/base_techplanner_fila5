@@ -114,14 +114,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property-read Collection<int, Treatment> $treatments
  * @property-read int|null $treatments_count
  * @property-read int|null $work_hours_count
-<<<<<<< HEAD
-<<<<<<< HEAD
  *
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
- *
->>>>>>> dev
  * @method static EmployeeFactory factory($count = null, $state = [])
  * @method static Builder<static>|Employee newModelQuery()
  * @method static Builder<static>|Employee newQuery()
@@ -155,21 +148,10 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|Employee whereUpdatedBy($value)
  * @method static Builder<static>|Employee withoutPermission($permissions)
  * @method static Builder<static>|Employee withoutRole($roles, $guard = null)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
  *
  * @property-read Employee|null $manager
  * @property-read Collection<int, Employee> $subordinates
  *
-<<<<<<< HEAD
-=======
- * @property-read Employee|null $manager
- * @property-read Collection<int, Employee> $subordinates
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
  * @mixin \Eloquent
  */
 class Employee extends User
@@ -262,15 +244,7 @@ class Employee extends User
     {
         $status = $this->status;
         $statusStr = is_string($status) ? $status : '';
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         return match ($statusStr) {
             'active' => 'Attivo',
             'inactive' => 'Inattivo',

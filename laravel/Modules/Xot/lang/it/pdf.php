@@ -6,10 +6,6 @@ return [
     'fields' => [
         'pdf' => [
             'label' => 'pdf',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -37,11 +33,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Pdf',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
 ];

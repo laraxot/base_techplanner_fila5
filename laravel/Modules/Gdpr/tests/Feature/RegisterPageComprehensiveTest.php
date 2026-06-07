@@ -2,13 +2,9 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-/**
-=======
 namespace Modules\Gdpr\Tests\Feature;
 
 /*
->>>>>>> dev
  * Comprehensive Registration Page Tests.
  *
  * Tests for /en/auth/register and /it/auth/register pages including:
@@ -341,10 +337,7 @@ it('widget is not visible to authenticated users', function (): void {
     $this->actingAs($user);
 
     $widget = new Modules\Gdpr\Filament\Widgets\Auth\RegisterWidget();
-<<<<<<< HEAD
-=======
     $widget = new Modules\Gdpr\Filament\Widgets\Auth\RegisterWidget();
->>>>>>> dev
     expect($widget->canView())->toBeFalse();
 });
 

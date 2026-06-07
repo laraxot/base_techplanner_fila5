@@ -2,11 +2,8 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
 namespace Modules\Gdpr\Tests\Feature;
 
->>>>>>> dev
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Models\Event;
 use Modules\Gdpr\Models\Treatment;
@@ -15,8 +12,6 @@ use Modules\User\Models\User;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
-=======
 beforeEach(function (): void {
     // Skip if database not available
     try {
@@ -26,7 +21,6 @@ beforeEach(function (): void {
     }
 });
 
->>>>>>> dev
 it('can create and manage gdpr consents', function (): void {
     // Arrange
     $user = User::factory()->create();

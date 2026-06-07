@@ -281,11 +281,7 @@ return [
         'username' => env('SMSHOSTING_USERNAME'),
         'password' => env('SMSHOSTING_PASSWORD'),
         'sender' => env('SMSHOSTING_SENDER', '<nome progetto>'),
-<<<<<<< HEAD
-        'sender' => env('SMSHOSTING_SENDER', 'SaluteOra'),
-=======
 'sender' => env('SMSHOSTING_SENDER', 'Quaeris'),
->>>>>>> dev
     ],
 ];
 ```
@@ -741,13 +737,8 @@ public function toTwilio($notifiable)
     return (new TwilioSmsMessage())
         ->content("<nome progetto>: Promemoria appuntamento {$this->appointment->formatted_date}. 
         Per annullare rispondere NO. Per info: <nome progetto>.it/privacy");
-<<<<<<< HEAD
-        ->content("SaluteOra: Promemoria appuntamento {$this->appointment->formatted_date}. 
-        Per annullare rispondere NO. Per info: saluteora.it/privacy");
-=======
 ->content("Quaeris: Promemoria appuntamento {$this->appointment->formatted_date}. 
         Per annullare rispondere NO. Per info: Quaeris.it/privacy");
->>>>>>> dev
 }
 ```
 
@@ -797,20 +788,7 @@ class ConsentLog extends Model
 
 ## Collegamenti alla Documentazione Correlata
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [MULTI_CHANNEL_NOTIFICATIONS.md](./multi_channel_notifications.md)
-- [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
-- [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
-- [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
-=======
-=======
->>>>>>> dev
 - [MULTI_CHANNEL_NOTIFICATIONS.md](./MULTI_CHANNEL_NOTIFICATIONS.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./SMS_PROVIDER_CONFIGURATION.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./NOTIFICATIONS_IMPLEMENTATION_GUIDE.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./TELEGRAM_NOTIFICATIONS_GUIDE.md)
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

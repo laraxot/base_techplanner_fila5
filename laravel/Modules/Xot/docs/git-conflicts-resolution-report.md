@@ -78,16 +78,8 @@ I seguenti 4 file PHP hanno ancora conflitti di merge:
 - Il progetto non ha PHPMD e PHPInsights installati
 
 ## Data
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Data rilevamento**: [DATE]
-- **Data risoluzione**: [DATE]
-=======
 - **Data rilevamento**: 2025-11-12
 - **Data risoluzione**: 2025-11-12
->>>>>>> 4b6b99016 (first commit)
-=======
 - **Data rilevamento**: [DATE]
 - **Data risoluzione**: [DATE]
->>>>>>> dev
 - **Percentuale completamento**: 95%

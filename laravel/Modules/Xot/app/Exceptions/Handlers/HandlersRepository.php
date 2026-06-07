@@ -4,14 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Exceptions\Handlers;
 
-<<<<<<< HEAD
-use Closure;
-use ReflectionClass;
-use ReflectionFunction;
-use Throwable;
-
-=======
->>>>>>> dev
 /**
  * The handlers repository.
  */
@@ -59,11 +51,7 @@ class HandlersRepository
     /**
      * Retrieve all reporters handling the given exception.
      */
-<<<<<<< HEAD
-    public function getReportersByException(Throwable $e): array
-=======
     public function getReportersByException(\Throwable $e): array
->>>>>>> dev
     {
         return array_filter(
             $this->reporters,
@@ -74,11 +62,7 @@ class HandlersRepository
     /**
      * Retrieve all renderers handling the given exception.
      */
-<<<<<<< HEAD
-    public function getRenderersByException(Throwable $e): array
-=======
     public function getRenderersByException(\Throwable $e): array
->>>>>>> dev
     {
         return array_filter(
             $this->renderers,
@@ -89,11 +73,7 @@ class HandlersRepository
     /**
      * Retrieve all console renderers handling the given exception.
      */
-<<<<<<< HEAD
-    public function getConsoleRenderersByException(Throwable $e): array
-=======
     public function getConsoleRenderersByException(\Throwable $e): array
->>>>>>> dev
     {
         return array_filter(
             $this->consoleRenderers,
@@ -104,31 +84,18 @@ class HandlersRepository
     /**
      * Determine whether the given handler can handle the provided exception.
      */
-<<<<<<< HEAD
-    protected function handlesException(callable $handler, Throwable $e): bool
-    {
-        if ($handler instanceof Closure) {
-            $reflection = new ReflectionFunction($handler);
-        } else {
-            $reflection = new ReflectionFunction(Closure::fromCallable($handler));
-=======
     protected function handlesException(callable $handler, \Throwable $e): bool
     {
         if ($handler instanceof \Closure) {
             $reflection = new \ReflectionFunction($handler);
         } else {
             $reflection = new \ReflectionFunction(\Closure::fromCallable($handler));
->>>>>>> dev
         }
 
         if (! ($params = $reflection->getParameters())) {
             return false;
         }
 
-<<<<<<< HEAD
-        return $params[0]->getClass() instanceof ReflectionClass ? $params[0]->getClass()->isInstance($e) : true;
-=======
         return $params[0]->getClass() instanceof \ReflectionClass ? $params[0]->getClass()->isInstance($e) : true;
->>>>>>> dev
     }
 }

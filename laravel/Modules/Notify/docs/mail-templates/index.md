@@ -1,23 +1,13 @@
 # Indice Documentazione Template Email
 
 ## Collegamenti Correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Indice Documentazione Notify](../index.md)
 - [README Modulo Notify](../readme.md)
 - [Sistema Email](../database-mail-system.md)
 - [Template Email](../email_templates.md)
-<<<<<<< HEAD
-- [Documentazione Generale ](../../../../../docs/readme.md)
-- [Documentazione Generale <nome progetto>](../../../../../docs/readme.md)
-- [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
-=======
 - [Documentazione Generale ](../../../../../../docs/readme.md)
 - [Documentazione Generale <nome progetto>](../../../../../../docs/readme.md)
 - [Collegamenti Documentazione](../../../../../../docs/collegamenti-documentazione.md)
->>>>>>> dev
 
 ## Struttura e Architettura
 - [Struttura Layout](./layout_structure.md) - Struttura dei layout email
@@ -64,8 +54,6 @@
 - [Note di Implementazione](./implementation_notes.md) - Note sull'implementazione dei template
 - [Risoluzione Problemi](./troubleshooting.md) - Guida alla risoluzione dei problemi comuni
 - [Allegati](./attachments.md) - Gestione degli allegati nei template email
-<<<<<<< HEAD
-=======
 - [Indice Documentazione Notify](../INDEX.md)
 - [README Modulo Notify](../README.md)
 - [Sistema Email](../database-mail-system.md)
@@ -119,17 +107,8 @@
 - [Note di Implementazione](./IMPLEMENTATION_NOTES.md) - Note sull'implementazione dei template
 - [Risoluzione Problemi](./TROUBLESHOOTING.md) - Guida alla risoluzione dei problemi comuni
 - [Allegati](./ATTACHMENTS.md) - Gestione degli allegati nei template email
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Note sulla Manutenzione
 Questa documentazione viene aggiornata regolarmente. Prima di apportare modifiche al codice dei template email, consultare la documentazione pertinente e aggiornare i documenti correlati.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 Ultimo aggiornamento: 14 Maggio 2025
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

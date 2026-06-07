@@ -3,10 +3,7 @@
 /**
  * --.
  */
-<<<<<<< HEAD
-=======
 
->>>>>>> dev
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;

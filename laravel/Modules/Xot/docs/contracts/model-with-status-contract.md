@@ -83,18 +83,9 @@ $latestStatus = $order->latestStatus();
 
 ## Collegamenti
 - [ModelContract](model-contract.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Status Management](../features/status-management.md)
-- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
-- [Contracts Overview](./readme.md)
-=======
 - [Status Management](../features/STATUS-MANAGEMENT.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Contracts Overview](./README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Status Management](../features/status-management.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Contracts Overview](./readme.md)
->>>>>>> dev

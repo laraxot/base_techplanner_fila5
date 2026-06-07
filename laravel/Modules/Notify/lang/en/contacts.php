@@ -16,64 +16,32 @@ return [
             'tooltip' => 'Nome del contatto',
             'placeholder' => 'es: Mario Rossi',
             'help' => 'Inserisci il nome completo del contatto',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'email' => [
             'label' => 'Email',
             'tooltip' => 'Indirizzo email del contatto',
             'placeholder' => 'es: mario.rossi@example.com',
             'help' => 'Inserisci un indirizzo email valido',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'phone' => [
             'label' => 'Telefono',
             'tooltip' => 'Numero di telefono del contatto',
             'placeholder' => 'es: +39 123 456 7890',
             'help' => 'Inserisci il numero con prefisso internazionale',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'telegram_chat_id' => [
             'label' => 'Chat ID Telegram',
             'tooltip' => 'ID della chat Telegram del contatto',
             'placeholder' => 'es: 123456789',
             'help' => 'ID numerico fornito dal bot Telegram',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'group' => [
             'label' => 'Gruppo',
@@ -94,16 +62,8 @@ return [
                     'tooltip' => 'Team di supporto',
                 ],
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'channels' => [
             'label' => 'Canali',
@@ -127,16 +87,8 @@ return [
                     'tooltip' => 'Notifiche push sul browser',
                 ],
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'preferences' => [
             'label' => 'Preferenze',
@@ -167,45 +119,21 @@ return [
                     'help' => 'Le notifiche verranno inviate al termine del periodo di silenzio',
                 ],
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato di attivazione del contatto',
             'help' => 'Disattiva temporaneamente l\'invio di notifiche a questo contatto',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'last_notified_at' => [
             'label' => 'Ultima notifica',
             'tooltip' => 'Data e ora dell\'ultima notifica inviata',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -284,14 +212,6 @@ return [
             'tooltip' => 'Filtra per data ultima notifica',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

@@ -6,23 +6,11 @@ namespace Themes\Sixteen\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-<<<<<<< HEAD
-use Themes\Sixteen\Models\User;
-
-/**
- * Evento lanciato quando un utente si autentica con successo tramite SPID
-<<<<<<< HEAD
- *
-=======
- * 
->>>>>>> 4b6b99016 (first commit)
-=======
 use Modules\User\Models\User;
 
 /**
  * Evento lanciato quando un utente si autentica con successo tramite SPID
  *
->>>>>>> dev
  * Questo evento permette di reagire all'autenticazione SPID
  * per logging, analytics, integrazione con sistemi esterni, etc.
  */
@@ -33,29 +21,16 @@ class SpidAuthenticated
     public function __construct(
         public User $user,
         public array $spidAttributes
-<<<<<<< HEAD
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> 4b6b99016 (first commit)
-=======
-    ) {}
->>>>>>> dev
 
     /**
      * Ottiene il provider SPID utilizzato
      */
     public function getProvider(): ?string
     {
-<<<<<<< HEAD
-        return $this->spidAttributes['provider'] ?? null;
-=======
         $value = $this->spidAttributes['provider'] ?? null;
 
         return is_string($value) ? $value : null;
->>>>>>> dev
     }
 
     /**
@@ -63,13 +38,9 @@ class SpidAuthenticated
      */
     public function getAuthLevel(): ?int
     {
-<<<<<<< HEAD
-        return $this->spidAttributes['auth_level'] ?? null;
-=======
         $value = $this->spidAttributes['auth_level'] ?? null;
 
         return is_int($value) ? $value : null;
->>>>>>> dev
     }
 
     /**
@@ -77,13 +48,9 @@ class SpidAuthenticated
      */
     public function getFiscalCode(): ?string
     {
-<<<<<<< HEAD
-        return $this->spidAttributes['fiscal_code'] ?? null;
-=======
         $value = $this->spidAttributes['fiscal_code'] ?? null;
 
         return is_string($value) ? $value : null;
->>>>>>> dev
     }
 
     /**
@@ -116,12 +83,4 @@ class SpidAuthenticated
             'timestamp' => now()->toISOString(),
         ];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4b6b99016 (first commit)
-=======
-}
->>>>>>> dev

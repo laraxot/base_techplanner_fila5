@@ -2,16 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(Modules\Lang\Tests\TestCase::class);
-
-use Modules\Lang\Actions\ReadTranslationFileAction;
-=======
-uses(TestCase::class);
-
-use Modules\Lang\Actions\ReadTranslationFileAction;
-use Modules\Lang\Tests\TestCase;
->>>>>>> dev
 
 // Helper functions for this test
 if (! function_exists('createTranslationFile')) {

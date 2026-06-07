@@ -11,18 +11,6 @@ use Illuminate\Support\ServiceProvider;
 use Laravel\Folio\Folio;
 use Livewire\Volt\Volt;
 use Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter;
-<<<<<<< HEAD
-use Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect;
-use Modules\Tenant\Services\TenantService;
-use Modules\Xot\Datas\XotData;
-use Nwidart\Modules\Facades\Module;
-<<<<<<< HEAD
-
-use function Safe\realpath;
-
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 use Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes;
 use Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect;
 use Modules\Cms\Http\Middleware\SetFolioLocale;
@@ -32,7 +20,6 @@ use Nwidart\Modules\Facades\Module;
 
 use function Safe\realpath;
 
->>>>>>> dev
 use Webmozart\Assert\Assert;
 
 class FolioVoltServiceProvider extends ServiceProvider
@@ -61,15 +48,7 @@ class FolioVoltServiceProvider extends ServiceProvider
         try {
             // Verifica se siamo in ambiente console e se il problema "env" è presente
             // In questo caso, usa array vuoto per permettere al server di partire
-<<<<<<< HEAD
-<<<<<<< HEAD
             if (app()->runningInConsole() && ! app()->environment('testing')) {
-=======
-            if (app()->runningInConsole()) {
->>>>>>> 4b6b99016 (first commit)
-=======
-            if (app()->runningInConsole() && ! app()->environment('testing')) {
->>>>>>> dev
                 // Durante il bootstrap dei comandi artisan, potrebbe esserci un problema
                 // con la risoluzione di "env" come classe. Usiamo array vuoto come fallback.
                 $base_middleware = [];
@@ -82,31 +61,18 @@ class FolioVoltServiceProvider extends ServiceProvider
                     }
                 }
             }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 
             // Assicuriamoci che 'web' sia presente se non siamo in console (o siamo in testing)
             if (! \in_array('web', $base_middleware, true)) {
                 array_unshift($base_middleware, 'web');
             }
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         } catch (\Exception $e) {
             // Se c'è un errore nel caricamento della configurazione middleware, usa array vuoto
             // Questo evita errori durante il bootstrap quando la configurazione non è disponibile
             $base_middleware = [];
         }
 
-<<<<<<< HEAD
-        // $base_middleware[]=\Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class;
-=======
         $base_middleware[] = LaravelLocalizationRoutes::class;
->>>>>>> dev
         $base_middleware[] = LocaleSessionRedirect::class;
         $base_middleware[] = LaravelLocalizationRedirectFilter::class;
         // $base_middleware[]=\Mcamara\LaravelLocalization\Middleware\LocaleCookieRedirect::class;
@@ -127,54 +93,21 @@ class FolioVoltServiceProvider extends ServiceProvider
         $modules = Module::all();
         $paths = [];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        // Register Folio paths WITHOUT locale-setting middleware to avoid serialization issues
-        // The locale will be set in the page templates themselves
-
         // Verifica che il percorso tema esista e sia una directory prima di passarlo a Folio
         if (File::exists($theme_path) && File::isDirectory($theme_path)) {
-            // Registra Folio per ogni lingua supportata - WITHOUT locale middleware
-=======
-        // Verifica che il percorso tema esista e sia una directory prima di passarlo a Folio
-        if (File::exists($theme_path) && File::isDirectory($theme_path)) {
-            // Registra Folio per ogni lingua supportata
->>>>>>> 4b6b99016 (first commit)
-=======
-        // Verifica che il percorso tema esista e sia una directory prima di passarlo a Folio
-        if (File::exists($theme_path) && File::isDirectory($theme_path)) {
->>>>>>> dev
             foreach ($supportedLocales as $locale) {
                 Folio::path($theme_path)
                     ->uri($locale)
                     ->middleware([
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        '*' => $base_middleware, // No locale-setting middleware here
-=======
-                        '*' => array_merge($base_middleware, [
-                            function ($request, callable $next) use ($locale) {
-                                app()->setLocale($locale);
-
-                                return $next($request);
-                            },
-                        ]),
->>>>>>> 4b6b99016 (first commit)
-=======
                         '*' => [
                             SetFolioLocale::class,
                             ...$base_middleware,
                         ],
->>>>>>> dev
                     ]);
             }
             $paths[] = $theme_path;
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         // Theme Livewire block components: livewire/ → blocks.events.detail, components/blocks → events.detail
         $theme_views = \dirname($theme_path);
         $theme_livewire = $theme_views.\DIRECTORY_SEPARATOR.'livewire';
@@ -186,47 +119,20 @@ class FolioVoltServiceProvider extends ServiceProvider
             $paths[] = realpath($theme_components_blocks);
         }
 
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         foreach ($modules as $module) {
             $path = $module->getPath().'/resources/views/pages';
             if (! File::exists($path) || ! File::isDirectory($path)) {
                 continue;
             }
             $paths[] = $path;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            // Registra Folio per ogni lingua supportata - WITHOUT locale middleware
-=======
-            // Registra Folio per ogni lingua supportata
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             foreach ($supportedLocales as $locale) {
                 Folio::path($path)
                     ->uri($locale)
                     ->middleware([
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        '*' => $base_middleware, // No locale-setting middleware here
-=======
-                        '*' => array_merge($base_middleware, [
-                            function ($request, callable $next) use ($locale) {
-                                app()->setLocale($locale);
-
-                                return $next($request);
-                            },
-                        ]),
->>>>>>> 4b6b99016 (first commit)
-=======
                         '*' => [
                             SetFolioLocale::class,
                             ...$base_middleware,
                         ],
->>>>>>> dev
                     ]);
             }
         }

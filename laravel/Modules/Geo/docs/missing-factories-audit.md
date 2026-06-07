@@ -2,15 +2,8 @@
 
 ## Situazione Critica Identificata
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Data audit**: [DATE]
-=======
 **Data audit**: 2025-01-06
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data audit**: [DATE]
->>>>>>> dev
 **Gravità**: CRITICA - 8 factory mancanti su 11 models
 
 ## Models senza Factory
@@ -154,26 +147,13 @@
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README Modulo Geo](./readme.md)
-=======
 - [README Modulo Geo](./README.md)
->>>>>>> 4b6b99016 (first commit)
 - [Factory Audit Root](../../../docs/factory-audit-2025.md)
-=======
 - [README Modulo Geo](./readme.md)
 - [Factory Audit Root](../../../../docs/factory-audit-2025.md)
->>>>>>> dev
 - [Address Implementation](./address-implementation.md)
 - [Sushi Implementation](./sushi-implementation.md)
 
 ---
 **Errore gravissimo da non ripetere mai più**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-01-06*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

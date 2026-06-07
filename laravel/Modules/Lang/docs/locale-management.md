@@ -88,58 +88,30 @@ class SetLocale
         if (Session::has('locale')) {
             App::setLocale(Session::get('locale'));
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         // 2. Verifica la lingua nell'URL (se usi mcamara/laravel-localization)
         $locale = $request->segment(1);
         if (in_array($locale, config('laravellocalization.supportedLocales'))) {
             App::setLocale($locale);
             Session::put('locale', $locale);
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         // 3. Verifica l'header Accept-Language
         if (!$request->hasHeader('X-Language')) {
             $preferredLanguage = $request->getPreferredLanguage(
                 array_keys(config('laravellocalization.supportedLocales'))
             );
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             if ($preferredLanguage) {
                 App::setLocale($preferredLanguage);
                 Session::put('locale', $preferredLanguage);
             }
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return $next($request);
     }
 }
@@ -185,15 +157,8 @@ try {
     if (App::isLocale('it')) {
         return response()->view('errors.custom', ['message' => 'Si è verificato un errore'], 500);
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     return response()->view('errors.custom', ['message' => 'An error occurred'], 500);
 }
 ```
@@ -207,23 +172,14 @@ try {
 public function boot()
 {
     parent::boot();
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     // Imposta la lingua all'avvio
     $this->app->setLocale(config('app.locale'));
     
-<<<<<<< HEAD
-=======
 
     // Imposta la lingua all'avvio
     $this->app->setLocale(config('app.locale'));
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     // Altri boot...
 }
 ```
@@ -263,17 +219,11 @@ if (! function_exists('get_locale_name')) {
 function translate_with_fallback($key, $replace = [], $locale = null)
 {
     $translation = __($key, $replace, $locale);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     if ($translation === $key && App::getLocale() !== config('app.fallback_locale')) {
         $translation = __($key, $replace, config('app.fallback_locale'));
     }
     
-<<<<<<< HEAD
-=======
 
     if ($translation === $key && App::getLocale() !== config('app.fallback_locale')) {
         $translation = __($key, $replace, config('app.fallback_locale'));
@@ -542,9 +492,6 @@ function translate_with_fallback($key, $replace = [], $locale = null)
         $translation = __($key, $replace, config('app.fallback_locale'));
     }
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     return $translation;
 }
 ```

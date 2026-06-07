@@ -19,35 +19,17 @@ return [
             'label' => 'Chiave',
             'placeholder' => 'Inserisci la chiave (es. APP_NAME)',
             'help' => 'Nome della variabile d\'ambiente in maiuscolo',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'value' => [
             'label' => 'Valore',
             'placeholder' => 'Inserisci il valore',
             'help' => 'Valore della variabile d\'ambiente',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'type' => [
             'label' => 'Tipo',
@@ -61,18 +43,9 @@ return [
                 'array' => 'Array',
                 'null' => 'Nullo',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'environment' => [
             'label' => 'Ambiente',
@@ -85,51 +58,24 @@ return [
                 'production' => 'Produzione',
                 'all' => 'Tutti gli ambienti',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'is_sensitive' => [
             'label' => 'Dato Sensibile',
             'help' => 'Indica se il valore contiene dati sensibili da mascherare',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Descrizione dettagliata dello scopo della variabile',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'group' => [
             'label' => 'Gruppo',
@@ -144,10 +90,6 @@ return [
                 'services' => 'Servizi',
                 'other' => 'Altro',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -157,14 +99,6 @@ return [
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'telegram_bot_token' => [
-            'description' => 'telegram_bot_token',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -229,14 +163,6 @@ return [
         ],
     ],
     'title' => 'env',
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

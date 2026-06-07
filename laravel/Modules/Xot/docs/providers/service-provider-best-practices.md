@@ -27,17 +27,10 @@ Il provider `XotBaseServiceProvider` rappresenta la base architetturale per tutt
 - Chiarire la logica dei fallback e dei path di default
 
 ## Backlink
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Torna a README.md del modulo Xot](../readme.md)
-=======
 - [Torna a README.md del modulo Xot](../README.md)
->>>>>>> 4b6b99016 (first commit)
 - [Collegamento a docs/links.md della root](../../../../docs/links.md)
-=======
 - [Torna a README.md del modulo Xot](../readme.md)
 - [Collegamento a docs/links.md della root](../../../../../docs/links.md)
->>>>>>> dev
 
 ## Utilizzo di GetModulePathByGeneratorAction
 

@@ -2,15 +2,9 @@
 
 ## Problema Identificato
 
-<<<<<<< HEAD
-**Errore**: `SQLSTATE[HY000]: General error: 1 no such table: quaeris_data.customer_user`
-
-**Contesto**: Il trait `HasTenants` utilizza `belongsToManyX` per creare relazioni cross-database tra User (quaeris_user) e Customer (quaeris_data).
-=======
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: app_data.customer_user`
 
 **Contesto**: Il trait `HasTenants` utilizza `belongsToManyX` per creare relazioni cross-database tra User (app_user) e Customer (app_data).
->>>>>>> dev
 
 ## Analisi del Trait HasTenants
 
@@ -22,27 +16,16 @@ return $this->belongsToManyX($tenant_class);
 
 ### Flusso di Esecuzione
 1. `User::tenants()` chiama `belongsToManyX(Customer::class)`
-<<<<<<< HEAD
-2. `belongsToManyX` rileva che User è in `quaeris_user` e Customer è in `quaeris_data`
-3. Cerca la tabella pivot `CustomerUser` nel database `quaeris_data`
-4. Aggiunge il prefisso database: `quaeris_data.customer_user`
-=======
 2. `belongsToManyX` rileva che User è in `app_user` e Customer è in `app_data`
 3. Cerca la tabella pivot `CustomerUser` nel database `app_data`
 4. Aggiunge il prefisso database: `app_data.customer_user`
->>>>>>> dev
 5. SQLite non riconosce questa sintassi e fallisce
 
 ## Architettura Multi-Tenant
 
 ### Separazione Database
-<<<<<<< HEAD
-- **User Database**: `quaeris_user` - Gestione utenti e autenticazione
-- **Tenant Databases**: `quaeris_data` - Dati specifici per customer/tenant
-=======
 - **User Database**: `app_user` - Gestione utenti e autenticazione
 - **Tenant Databases**: `app_data` - Dati specifici per customer/tenant
->>>>>>> dev
 - **Pivot Tables**: Nel database del tenant per isolamento dati
 
 ### Filosofia Laraxot
@@ -73,11 +56,7 @@ Sostituire `belongsToManyX` con relazioni `belongsToMany` esplicite per cross-da
 
 ### Moduli Affetti
 - **User Module**: Trait HasTenants
-<<<<<<< HEAD
-- **Quaeris Module**: Customer-User relationships
-=======
 - **ExternalProject Module**: Customer-User relationships
->>>>>>> dev
 - **Altri Moduli**: Qualsiasi relazione cross-database
 
 ### Funzionalità Compromesse
@@ -97,26 +76,15 @@ $tenants = $user->tenants; // Dovrebbe funzionare senza errori
 ### Test 2: Verifica Cross-Database Query
 ```php
 use Modules\User\Models\User;
-<<<<<<< HEAD
-use Modules\Quaeris\Models\Customer;
-=======
 use Modules\ExternalProject\Models\Customer;
->>>>>>> dev
 $user = User::with('tenants')->find('0199690d-481a-7101-ac17-7518b3959314');
 // Verifica che la query sia corretta
 ```
 
 ## Riferimenti Correlati
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Quaeris Customer User Table Issue](../../quaeris/docs/customer_user_table_issue.md)
-=======
 - [Quaeris Customer User Table Issue](../../Quaeris/docs/customer_user_table_issue.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [ExternalProject Customer User Table Issue](../../<nome progetto>/docs/customer_user_table_issue.md)
->>>>>>> dev
 - [Traits Complete Guide](./traits-complete-guide.md)
 - [Jetstream vs Laraxot Philosophy](./jetstream-vs-laraxot-philosophy.md)
 - [Database Errors](./database-errors.md)
@@ -151,11 +119,7 @@ echo 'HasTenants works! Count: ' . \$tenants->count();
 php artisan tinker --execute="
 use Modules\User\Models\User;
 \$user = User::find('0199690d-481a-7101-ac17-7518b3959314');
-<<<<<<< HEAD
-\$tenants = \$user->getTenants(app('filament')->getPanel('quaeris::admin'));
-=======
 \$tenants = \$user->getTenants(app('filament')->getPanel('ptvx::admin'));
->>>>>>> dev
 echo 'getTenants works! Count: ' . count(\$tenants); // ✅ Funziona
 "
 ```

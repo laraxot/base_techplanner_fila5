@@ -52,8 +52,6 @@ return [
         'login_link' => 'Sign in',
         'register_link' => 'Register',
     ],
-<<<<<<< HEAD
-=======
     'profile_services' => [
         'services' => 'My Services',
         'practices' => 'My Practices',
@@ -61,7 +59,6 @@ return [
         'settings' => 'Settings',
         'logout' => 'Log Out',
     ],
->>>>>>> dev
     'navigation' => [
         'open_menu' => 'Open main menu',
         'close_menu' => 'Close main menu',
@@ -70,19 +67,10 @@ return [
         'profile' => 'Profile',
         'settings' => 'Settings',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

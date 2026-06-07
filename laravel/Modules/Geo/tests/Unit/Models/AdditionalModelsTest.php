@@ -2,13 +2,9 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(Modules\Geo\Tests\TestCase::class);
-=======
 namespace Modules\Geo\Tests\Unit\Models;
 
 uses(TestCase::class);
->>>>>>> dev
 
 use Modules\Geo\Models\County;
 use Modules\Geo\Models\GeoNamesCap;
@@ -16,10 +12,7 @@ use Modules\Geo\Models\Locality;
 use Modules\Geo\Models\Place;
 use Modules\Geo\Models\PlaceType;
 use Modules\Geo\Models\State;
-<<<<<<< HEAD
-=======
 use Modules\Geo\Tests\TestCase;
->>>>>>> dev
 
 test('State model can be instantiated', function () {
     $state = new State();

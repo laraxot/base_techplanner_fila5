@@ -131,10 +131,4 @@
 - [ ] Test di validazione PHPStan
 - [ ] Test funzionali del modulo
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: $(date)* 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

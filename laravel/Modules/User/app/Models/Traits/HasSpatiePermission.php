@@ -11,11 +11,6 @@ trait HasSpatiePermission
 {
     use HasPermissions;
     use HasRoles;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> dev
     /*
         public function roles(): BelongsToMany
         {
@@ -27,8 +22,4 @@ trait HasSpatiePermission
             return $this->belongsToManyX(Permission::class);
         }
         */
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 }

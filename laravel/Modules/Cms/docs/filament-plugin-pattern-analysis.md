@@ -1,12 +1,6 @@
 # Filament Plugin Pattern Analysis - Cms Module
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2026-01-09  
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Modulo**: Cms  
 **Status**: 📝 **ANALISI COMPLETATA**
 
@@ -328,12 +322,5 @@ public static function getFormSchema(): array
 
 **Status**: 📝 **ANALISI COMPLETATA**
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2026-01-09
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: [DATE]
->>>>>>> dev

@@ -5,12 +5,8 @@
 ### 1. **Missing Module Documentation**
 
 #### Modules Without README.md
-<<<<<<< HEAD
-- [ ] **Quaeris** - Core business module needs comprehensive documentation
-=======
 - [ ] **healthcare_app** - Core business module needs comprehensive documentation
 - [ ] **ExternalProject** - Core business module needs comprehensive documentation
->>>>>>> dev
 - [ ] **Limesurvey** - External integration documentation missing
 - [ ] **CloudStorage** - Cloud service integration patterns undocumented
 - [ ] **DbForge** - Database tools documentation incomplete
@@ -233,12 +229,8 @@ php artisan laraxot:make:resource CustomerResource --module=CustomerManagement
 ### Phase 1: Critical Gaps (High Priority)
 
 #### 1.1 Module Documentation (Weeks 1-2)
-<<<<<<< HEAD
-- [ ] Create comprehensive README.md for Quaeris module
-=======
 - [ ] Create comprehensive README.md for healthcare_app module
 - [ ] Create comprehensive README.md for ExternalProject module
->>>>>>> dev
 - [ ] Document Limesurvey integration patterns
 - [ ] Create CloudStorage service documentation
 - [ ] Complete DbForge database tools documentation

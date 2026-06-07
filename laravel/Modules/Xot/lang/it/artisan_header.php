@@ -17,10 +17,6 @@ return [
             'label' => 'filament:clear-cached-components',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Artisan Header',
     'plural_label' => 'Artisan Header (Plurale)',
     'navigation' => [
@@ -54,9 +50,4 @@ return [
             'description' => '',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

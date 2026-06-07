@@ -2,10 +2,6 @@
 
 namespace App\Filament\Resources;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 use App\Filament\Resources\MenuResource\Pages;
 use App\Filament\Resources\MenuResource\Pages\EditMenu;
 use App\Filament\Resources\MenuResource\Pages\ListMenus;
@@ -20,8 +16,6 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
-<<<<<<< HEAD
-=======
 use Filament\Schemas\Schema;
 use Filament\Forms\Components\Repeater;
 use Filament\Schemas\Components\Grid;
@@ -38,29 +32,14 @@ use Filament\Forms;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 class MenuResource extends Resource
 {
     protected static ?string $model = Menu::class;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-clipboard-document-list';
 
     protected static string|\UnitEnum|null $navigationGroup = 'Site';
-=======
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-clipboard-document-list';
-
-    protected static string | \UnitEnum | null $navigationGroup = 'Site';
->>>>>>> 4b6b99016 (first commit)
-=======
-    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-clipboard-document-list';
-
-    protected static string|\UnitEnum|null $navigationGroup = 'Site';
->>>>>>> dev
 
     protected static ?string $navigationLabel = 'Navigation';
 
@@ -123,3 +102,7 @@ class MenuResource extends Resource
         ];
     }
 }
+
+
+
+

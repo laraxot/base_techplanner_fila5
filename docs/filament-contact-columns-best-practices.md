@@ -279,10 +279,4 @@ Questo pattern può essere riutilizzato in altri moduli che hanno informazioni d
 **IMPATTO: MEDIO**  
 **EFFORT: BASSO**  
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Agosto 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

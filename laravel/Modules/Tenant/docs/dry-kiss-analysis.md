@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-# 🐄 DRY & KISS Analysis - Tenant
-
-<<<<<<< HEAD
-**Data:** [DATE] | **Status:** ✅
-=======
 **Data:** 2025-10-15 | **Status:** ✅
->>>>>>> 4b6b99016 (first commit)
 
 ## 📊 Struttura
 Models: 11 | Resources: 1 | Services: 6 | Actions: 2 | Docs: 45
@@ -28,7 +21,6 @@ abstract class BaseModel extends EloquentModel  // ⚠️
 2. Services (6): Audit vs Actions (2)
 
 **Status:** 🟡 RICHIEDE ATTENZIONE
-=======
 ---
 module: theme
 topic: dry-kiss-analysis
@@ -36,4 +28,3 @@ canonical: ../../../Themes/docs/shared-components/dry-kiss-analysis-2025-10-15-M
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-2025-10-15-Modules.md
->>>>>>> dev

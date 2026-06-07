@@ -11,11 +11,7 @@ use Modules\Employee\Actions\BuildTimelineVisualizationAction;
 use Modules\Employee\Actions\BuildWorkHoursForRangeAction;
 use Modules\Employee\Actions\ExportTimeDataAction;
 use Modules\Employee\Actions\GetCurrentEmployeeDataAction;
-<<<<<<< HEAD
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-=======
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
->>>>>>> dev
 use Override;
 
 /**
@@ -28,11 +24,7 @@ use Override;
  * - Indicatori di stato (arancione "Problemi", verde completato, etc.)
  * - Navigazione settimana e export functionality
  */
-<<<<<<< HEAD
-class WorkHoursBoardWidget extends XotBaseWidget
-=======
 class WorkHoursBoardWidget extends XotBaseSchemaWidget
->>>>>>> dev
 {
     protected string $view = 'employee::filament.widgets.work-hours-board';
 
@@ -126,11 +118,9 @@ class WorkHoursBoardWidget extends XotBaseSchemaWidget
     {
         $days = [];
 
-        /** @var Carbon $current */
-        $current = $this->weekStart->copy();
-        while ($current->lte($this->weekEnd)) {
-            assert($current instanceof Carbon);
-            $dateKey = $current->toDateString();
+        $currentDate = $this->weekStart->copy();
+        while ($currentDate->lte($this->weekEnd)) {
+            $dateKey = $currentDate->toDateString();
 
             // Safe access to timeline data
             $sessionBlocks = is_array($timelineData['sessionBlocks'] ?? null) ? $timelineData['sessionBlocks'] : [];
@@ -147,16 +137,6 @@ class WorkHoursBoardWidget extends XotBaseSchemaWidget
             // Calcola ore totali giorno
             $totalHours = 0;
             if (! empty($dayBlocks)) {
-<<<<<<< HEAD
-                $durations = array_column($dayBlocks, 'duration');
-                $totalHours = array_sum($durations);
-            }
-
-            /** @var \Carbon\Carbon $currentCarbon */
-            $currentCarbon = $current;
-            $days[$dateKey] = [
-                // @phpstan-ignore-next-line
-=======
                 /** @var array<int, float|int> $durations */
                 $durations = array_values(array_map(
                     static fn (mixed $duration): float => is_numeric($duration) ? (float) $duration : 0.0,
@@ -165,25 +145,20 @@ class WorkHoursBoardWidget extends XotBaseSchemaWidget
                 $totalHours = array_sum($durations);
             }
 
-            /** @var Carbon $currentCarbon */
-            $currentCarbon = $current;
             $days[$dateKey] = [
->>>>>>> dev
-                'date' => Carbon::parse($currentCarbon)->format('d'),
-                // @phpstan-ignore-next-line
-                'dayName' => Carbon::parse($currentCarbon)->locale('it')->translatedFormat('D'),
-                // @phpstan-ignore-next-line
-                'fullDate' => Carbon::parse($currentCarbon)->locale('it')->translatedFormat('dddd D MMMM'),
+                'date' => $currentDate->format('d'),
+                'dayName' => $currentDate->translatedFormat('D'),
+                'fullDate' => $currentDate->translatedFormat('dddd D MMMM'),
                 'totalHours' => $totalHours,
                 'status' => $dayStatus['status'] ?? 'no_work',
                 'indicator' => $dayStatus['indicator'] ?? '',
                 'color' => $dayStatus['color'] ?? 'gray',
-                'isToday' => $current->isToday(),
-                'isWeekend' => $current->isWeekend(),
+                'isToday' => $currentDate->isToday(),
+                'isWeekend' => $currentDate->isWeekend(),
                 'sessions' => $dayBlocks,
             ];
 
-            $current->addDay();
+            $currentDate = $currentDate->copy()->addDay();
         }
 
         return $days;

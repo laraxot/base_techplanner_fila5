@@ -153,11 +153,7 @@ Per le regole generali e condivise tra tutti i moduli, consulta anche:
 - [Regole Generali per i Namespace](/laravel/modules/xot/docs/namespace-rules.md)
 - [Convenzioni di Codice](/laravel/modules/xot/docs/code-conventions.md)
 - [Struttura dei Moduli](/laravel/modules/xot/docs/module-structure.md)
-<<<<<<< HEAD
-- [Collegamento Bidirezionale: Documentazione Root](../../../../docs/links.md)
-=======
 - [Collegamento Bidirezionale: Documentazione Root](../../../../../docs/links.md)
->>>>>>> dev
 
 ### Esempio 5: Console Command
 
@@ -317,11 +313,7 @@ Per le regole generali e condivise tra tutti i moduli, consulta anche:
 - [Regole Generali per i Namespace](/laravel/modules/xot/docs/namespace-rules.md)
 - [Convenzioni di Codice](/laravel/modules/xot/docs/code-conventions.md)
 - [Struttura dei Moduli](/laravel/modules/xot/docs/module-structure.md)
-<<<<<<< HEAD
-- [Collegamento Bidirezionale: Documentazione Root](../../../../docs/links.md)
-=======
 - [Collegamento Bidirezionale: Documentazione Root](../../../../../docs/links.md)
->>>>>>> dev
 
 ### Esempio 5: Console Command
 
@@ -343,4 +335,3 @@ namespace Modules\Notify\App\Console\Commands;
 > **Nota:** Anche per i comandi console, il namespace non deve mai includere il segmento `App`.
 
 ---
-

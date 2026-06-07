@@ -74,10 +74,6 @@
                     :aria-label="__('pub_theme::cookies.accept_all')"
                 >
                     {{ __('pub_theme::cookies.accept_all') }}
-<<<<<<< HEAD
-=======
-=======
->>>>>>> dev
                     :aria-label="__('pub_theme::cookies.accept_all')"
                 >
                     {{ __('pub_theme::cookies.accept_all') }}

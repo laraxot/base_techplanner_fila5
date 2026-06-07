@@ -9,10 +9,6 @@ return [
             'placeholder' => 'mail_template_slug',
             'helper_text' => 'mail_template_slug',
             'description' => 'mail_template_slug',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -38,11 +34,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Mail Template Select',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
 ];

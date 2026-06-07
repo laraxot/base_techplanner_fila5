@@ -139,15 +139,8 @@ return array(
 - **File standardizzati**: 15 file principali
 - **Problemi risolti**: Riferimenti circolari, sintassi obsoleta
 - **Miglioramenti**: Struttura espansa completa, traduzioni specifiche
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Documentazione**: [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
-=======
 - **Documentazione**: [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - **Documentazione**: [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
->>>>>>> dev
 
 #### File Completati
 1. `progressioni.php` - Traduzioni principali
@@ -262,18 +255,10 @@ return [
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
-- [Xot Best Practices](../../laravel/modules/xot/docs/translations-best-practices.md)
-=======
 - [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
 - [Xot Best Practices](../../laravel/Modules/Xot/docs/translations-best-practices.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
 - [Xot Best Practices](../../laravel/modules/xot/docs/translations-best-practices.md)
->>>>>>> dev
 - [Laraxot Conventions](laraxot-conventions.md)
 
 ## Note Tecniche
@@ -290,10 +275,4 @@ return [
 3. **Organizzazione**: Struttura gerarchica coerente
 4. **Naming**: Convenzioni standardizzate
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Giugno 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

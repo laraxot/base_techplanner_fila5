@@ -1,12 +1,6 @@
 # ArtisanService Refactoring Report
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Date:** 2025-10-01
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Module:** Xot
 **Status:** ✅ Completed Successfully
 

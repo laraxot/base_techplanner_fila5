@@ -44,10 +44,6 @@ public function getTableHeaderActions(): array
 ```php
 public function getListTableColumns(): array
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     return [
         // Esempio di colonna standard
         Tables\Columns\TextColumn::make('name')
@@ -61,20 +57,11 @@ public function getListTableColumns(): array
             ->label('Dati Lavoratore')
             ->view('filament.tables.columns.worker-data'), // Esempio di vista custom
     ];
-<<<<<<< HEAD
-=======
     // Definisce le colonne per il layout lista
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 }
 
 public function getGridTableColumns(): array
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     return [
         // Le colonne in griglia devono anch'esse essere array associativi
         'name' => Tables\Columns\TextColumn::make('name')
@@ -93,15 +80,10 @@ public function getGridTableColumns(): array
 - **✅ CORRETTO**: `return ['column_key' => TextColumn::make('column_name'), ...];`
 
 
-<<<<<<< HEAD
-=======
     // Definisce le colonne per il layout griglia
 }
 ```
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ### Filtri
 ```php
 public function getTableFilters(): array
@@ -154,12 +136,6 @@ public function getTableFiltersFormColumns(): int
 
 ## Link Correlati
 
-<<<<<<< HEAD
-- [Documentazione Filament](../../../docs/filament/index.md)
-- [Gestione Tabelle](../../../docs/filament/tables.md)
-- [Azioni Personalizzate](../../../docs/filament/actions.md)
-=======
 - [Documentazione Filament](../../../../docs/filament/index.md)
 - [Gestione Tabelle](../../../../docs/filament/tables.md)
 - [Azioni Personalizzate](../../../../docs/filament/actions.md)
->>>>>>> dev

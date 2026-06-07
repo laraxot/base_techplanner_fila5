@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-# PHPStan Level 10 - Scripts Utility Roadmap
-
-<<<<<<< HEAD
-=======
 **Data**: 2026-01-09  
->>>>>>> 4b6b99016 (first commit)
 **Modulo**: Cms  
 **Livello PHPStan**: 10  
 **Errori Totali**: 32  
@@ -242,11 +236,7 @@ cd /var/www/_bases/base_laravelpizza/laravel
 
 **Status**: 🔄 **IN IMPLEMENTAZIONE**
 
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2026-01-09
->>>>>>> 4b6b99016 (first commit)
 
 ---
 
@@ -268,7 +258,6 @@ cd /var/www/_bases/base_laravelpizza/laravel
    - ✅ Casting esplicito per stringhe (righe 159, 162, 166, 193, 194)
    - ⏳ Riga 122: `Cannot call method create() on mixed` - **In corso**
 
-=======
 # PHPStan Legacy Scripts Status
 
 **Modulo**: Cms  
@@ -332,7 +321,6 @@ Se un callback puo' restituire collezioni, array o singoli record, conviene pass
 ## Nota operativa
 
 Su questi due file non e' stata applicata una patch di codice in questa sessione, perche' il gate PHPStan corrente e' gia' verde e una modifica cosmetica ai legacy script avrebbe aumentato il rischio senza chiudere un errore reale.
->>>>>>> dev
 ### ⏳ In Lavoro
 
 **`populate_database_comprehensive.php`** - **0/10 errori risolti**
@@ -368,12 +356,5 @@ Su questi due file non e' stata applicata una patch di codice in questa sessione
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2026-01-09
->>>>>>> 4b6b99016 (first commit)
-=======
 **
->>>>>>> dev

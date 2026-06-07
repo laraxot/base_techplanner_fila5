@@ -168,11 +168,7 @@ TenantService::assignUserToTenant($user, $tenant);
 1. **Advanced Analytics**
    - Limited user behavior analytics
    - Missing engagement metrics
-<<<<<<< HEAD
-   - No predictive churn analysis
-=======
    - No <nome progetto>ive churn analysis
->>>>>>> dev
    - Missing user journey mapping
 
 2. **Self-Service Features**

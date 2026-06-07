@@ -2,11 +2,7 @@
 
 ## Core Principle: Consistency Above All
 
-<<<<<<< HEAD
-**In Laraxot architecture, consistency and predictability are more valuable than flexibility and options.**
-=======
 **In Laraxot architecture, consistency and <nome progetto>ability are more valuable than flexibility and options.**
->>>>>>> dev
 
 ## The Three Pillars of Laraxot Consistency
 
@@ -38,11 +34,7 @@
 
 ### Technical Benefits
 
-<<<<<<< HEAD
-1. **Predictable Autoloading**: No ambiguous class resolution
-=======
 1. **<nome progetto>able Autoloading**: No ambiguous class resolution
->>>>>>> dev
 2. **Reliable Test Execution**: Consistent test discovery and coverage
 3. **Easy Maintenance**: Clear, unambiguous code structure
 4. **Fast Debugging**: Obvious source of truth for each entity
@@ -51,11 +43,7 @@
 
 1. **Reduced Cognitive Load**: Developers know exactly where to find things
 2. **Faster Onboarding**: Clear patterns for new team members
-<<<<<<< HEAD
-3. **Reliable Code Generation**: Tools work predictably
-=======
 3. **Reliable Code Generation**: Tools work <nome progetto>ably
->>>>>>> dev
 4. **Scalable Architecture**: Consistent patterns scale well
 
 ### Business Benefits
@@ -174,11 +162,7 @@ composer dump-autoload
 ### Laraxot Core Values
 
 1. **Simplicity**: Clear, unambiguous patterns
-<<<<<<< HEAD
-2. **Predictability**: Consistent behavior across environments
-=======
 2. **<nome progetto>ability**: Consistent behavior across environments
->>>>>>> dev
 3. **Maintainability**: Easy to understand and modify
 4. **Scalability**: Patterns that grow with the application
 

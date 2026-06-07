@@ -10,10 +10,7 @@ use Modules\Tenant\Models\Traits\SushiToJsons;
  * Class BaseModelJsons.
  *
  * @property array $form
-<<<<<<< HEAD
-=======
  * @property array<string, mixed> $schema
->>>>>>> dev
  */
 abstract class BaseModelJsons extends BaseModel
 {

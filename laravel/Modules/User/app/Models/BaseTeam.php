@@ -13,13 +13,6 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\User\Contracts\TeamContract;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Modules\User\Database\Factories\TeamFactory;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -41,13 +34,6 @@ use Modules\Xot\Datas\XotData;
  * @property EloquentCollection<int, Model&UserContract> $users
  * @property int|null                                    $users_count
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * @method static TeamFactory  factory($count = null, $state = [])
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
  * @method static Builder|Team newModelQuery()
  * @method static Builder|Team newQuery()
  * @method static Builder|Team query()
@@ -114,15 +100,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     #[\Override]
     public function allUsers(): Collection
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! $this->owner instanceof User) {
-=======
-        if (! ($this->owner instanceof User)) {
->>>>>>> 4b6b99016 (first commit)
-=======
-        if (! $this->owner instanceof User) {
->>>>>>> dev
             return $this->users;
         }
 

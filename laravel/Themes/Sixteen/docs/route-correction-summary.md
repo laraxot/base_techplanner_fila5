@@ -41,11 +41,7 @@
 Il sistema Laraxot utilizza route dinamiche per le pagine:
 
 ```php
-<<<<<<< HEAD
-// File: resources/views/pages/pages/[slug].blade.php
-=======
 // File: resources/views/pages/[container0]/[slug0]/index.blade.php
->>>>>>> dev
 name('page_slug.view');
 
 render(function (View $view, string $slug) {
@@ -168,14 +164,5 @@ foreach ($pages as $page) {
 - [Layout Usage Patterns](layout-usage-patterns.md)
 - [Solution Summary](solution-summary.md)
 - [Login Page](resources/views/pages/auth/login.blade.php)
-<<<<<<< HEAD
-- [Route File](resources/views/pages/pages/[slug].blade.php)
-
-<<<<<<< HEAD
-=======
-*Ultimo aggiornamento: 2025-01-06* 
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Route Contract](./page-directory-structure.md)
 
->>>>>>> dev

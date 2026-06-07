@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 <footer class="bg-white" role="contentinfo">
-=======
-<footer class="bg-white">
->>>>>>> 4b6b99016 (first commit)
-=======
-<footer class="bg-white" role="contentinfo">
->>>>>>> dev
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Informazioni -->
@@ -50,25 +42,16 @@
                 </h3>
                 <ul class="space-y-2">
                     <li class="text-gray-600">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
                         <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
                         {{ config('mail.from.address') }}
                     </li>
                     <li class="text-gray-600">
                         <i class="fas fa-phone mr-2" aria-hidden="true"></i>
-<<<<<<< HEAD
-=======
                         <i class="fas fa-envelope mr-2"></i>
                         {{ config('mail.from.address') }}
                     </li>
                     <li class="text-gray-600">
                         <i class="fas fa-phone mr-2"></i>
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                         {{ config('app.phone') }}
                     </li>
                 </ul>
@@ -83,3 +66,6 @@
         </div>
     </div>
 </footer>
+
+
+

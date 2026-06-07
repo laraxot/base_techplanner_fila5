@@ -316,13 +316,7 @@ class GetTimeClockDataAction
         
         return new TimeClockData(
             currentTime: Carbon::now()->format('H:i'),
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
             todayDate: Carbon::now()->locale('it')->isoFormat('dddd D MMMM YYYY'),
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             todayEntries: $todayEntries->map(fn($entry) => [
                 'time' => $entry->timestamp->format('H:i'),
                 'type' => $entry->type->value,

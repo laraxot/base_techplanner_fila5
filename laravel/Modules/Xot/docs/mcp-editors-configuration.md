@@ -2,11 +2,7 @@
 
 ## Panoramica
 
-<<<<<<< HEAD
-Questo documento descrive la configurazione dei server MCP (Model Context Protocol) per gli editor AI utilizzati nello sviluppo del progetto Quaeris Fila4 Mono.
-=======
 Questo documento descrive la configurazione dei server MCP (Model Context Protocol) per gli editor AI utilizzati nello sviluppo del progetto healthcare_app Fila4 Mono.
->>>>>>> dev
 
 ## Cos'è MCP?
 

@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -87,58 +83,12 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'name' => [
-            'label' => 'Nombre',
-        ],
-        'host' => [
-            'label' => 'Host',
-        ],
-        'port' => [
-            'label' => 'Puerto',
-        ],
-        'username' => [
-            'label' => 'Nombre de Usuario',
-        ],
-        'password' => [
-            'label' => 'Contraseña',
-        ],
-        'encryption' => [
-            'label' => 'Cifrado',
-        ],
-        'from_address' => [
-            'label' => 'Dirección Remitente',
-        ],
-        'from_name' => [
-            'label' => 'Nombre Remitente',
-        ],
-        'status' => [
-            'label' => 'Estado',
-        ],
-        'last_tested_at' => [
-            'label' => 'Última Prueba En',
-        ],
-        'created_at' => [
-            'label' => 'Creado En',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'body_html' => [
             'description' => 'Cuerpo HTML',
             'helper_text' => 'Contenido HTML del correo',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'label' => '',
-            'tooltip' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [

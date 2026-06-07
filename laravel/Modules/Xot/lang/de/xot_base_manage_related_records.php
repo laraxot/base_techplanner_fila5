@@ -11,10 +11,6 @@ return [
     'fields' => [
         'delete' => [
             'label' => 'delete',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -59,26 +55,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'attach' => [
-            'label' => 'attach',
-        ],
-        'detach' => [
-            'label' => 'detach',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

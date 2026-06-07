@@ -312,10 +312,6 @@ public function it_shows_loading_state(): void
 - [WCAG Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 
 ## Collegamenti tra versioni di README.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -392,8 +388,6 @@ public function it_shows_loading_state(): void
 * [README.md](laravel/modules/cms/docs/components/readme.md)
 * [README.md](laravel/themes/two/docs/readme.md)
 * [README.md](laravel/themes/one/docs/readme.md)
-<<<<<<< HEAD
-=======
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
 * [README.md](docs/laravel-app/phpstan/README.md)
@@ -470,6 +464,3 @@ public function it_shows_loading_state(): void
 * [README.md](laravel/Modules/Cms/docs/components/README.md)
 * [README.md](laravel/Themes/Two/docs/README.md)
 * [README.md](laravel/Themes/One/docs/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

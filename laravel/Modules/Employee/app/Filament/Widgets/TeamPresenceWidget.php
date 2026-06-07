@@ -12,11 +12,7 @@ use Filament\Schemas\Components\Actions;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Modules\Employee\Models\Employee;
-<<<<<<< HEAD
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-=======
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
->>>>>>> dev
 use Override;
 
 /**
@@ -25,11 +21,7 @@ use Override;
  * Displays current team presence status with department filtering
  * and detailed view capabilities.
  */
-<<<<<<< HEAD
-class TeamPresenceWidget extends XotBaseWidget
-=======
 class TeamPresenceWidget extends XotBaseSchemaWidget
->>>>>>> dev
 {
     protected static ?int $sort = 4;
 
@@ -162,8 +154,10 @@ class TeamPresenceWidget extends XotBaseSchemaWidget
     private function renderStatsDisplay(array $presenceData): string
     {
         try {
-            /** @phpstan-ignore-next-line */
-            return view('employee::widgets.team-presence.stats-display', [
+            /** @var view-string $view */
+            $view = 'employee::widgets.team-presence.stats-display';
+
+            return view($view, [
                 'present' => $presenceData['present'],
                 'absent' => $presenceData['absent'],
                 'presentCount' => is_countable($presenceData['present'])
@@ -184,8 +178,10 @@ class TeamPresenceWidget extends XotBaseSchemaWidget
     private function renderPresenceList(array $presenceData): string
     {
         try {
-            /** @phpstan-ignore-next-line */
-            return view('employee::widgets.team-presence.presence-list', [
+            /** @var view-string $view */
+            $view = 'employee::widgets.team-presence.presence-list';
+
+            return view($view, [
                 'present' => is_array($presenceData['present']) ? $presenceData['present'] : [],
                 'absent' => is_array($presenceData['absent']) ? $presenceData['absent'] : [],
             ])->render();

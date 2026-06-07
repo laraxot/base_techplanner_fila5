@@ -302,15 +302,8 @@ class SmsIntegrationTest extends TestCase
 ### 1. Log Structure
 ```json
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "timestamp": "[DATE] 10:00:00",
-=======
     "timestamp": "2024-03-20 10:00:00",
->>>>>>> 4b6b99016 (first commit)
-=======
     "timestamp": "[DATE] 10:00:00",
->>>>>>> dev
     "template_id": 1,
     "recipient": "+1234567890",
     "content": "Test message",

@@ -9,14 +9,7 @@ return [
             'placeholder' => 'key',
             'helper_text' => 'key',
             'description' => 'key',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'data' => [
             'pippo' => [
@@ -24,29 +17,16 @@ return [
                 'helper_text' => 'data.pippo',
                 'placeholder' => 'data.pippo',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'pippo' => [
             'description' => 'pippo',
             'helper_text' => 'pippo',
             'placeholder' => 'pippo',
             'label' => 'pippo',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
         'pluto' => [
@@ -54,14 +34,6 @@ return [
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'pluto' => [
-            'description' => 'pluto',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'snapshots' => [
             'fields' => [
@@ -74,19 +46,10 @@ return [
                     ],
                 ],
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'content' => [
             'snapshots' => [
@@ -446,19 +409,10 @@ return [
                     'description' => 'content.stats.no_show_rate',
                 ],
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -472,10 +426,6 @@ return [
             'label' => 'lang',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Edit Translation File',
     'plural_label' => 'Edit Translation File (Plurale)',
     'navigation' => [
@@ -489,9 +439,4 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

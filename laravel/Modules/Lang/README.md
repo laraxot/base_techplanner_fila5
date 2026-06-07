@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Lang Module
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -171,8 +169,6 @@ php artisan lang:publish
 **Quality**: PHPStan Level 10
 
 *Traduzioni automatiche per tutto l'ecosistema: 3 lingue, auto-risoluzione, editor visuale in Filament.*
-=======
->>>>>>> 4b6b99016 (first commit)
 # 🌍 Lang - Il SISTEMA di TRADUZIONI più POTENTE! 🗣️
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
@@ -651,11 +647,7 @@ php artisan test --filter=SyncTest
 ## 📚 Documentazione COMPLETA
 
 ### 🎯 **Guide Principali**
-<<<<<<< HEAD
-- [📖 Documentazione Completa](docs/readme.md)
-=======
 - [📖 Documentazione Completa](docs/README.md)
->>>>>>> 4b6b99016 (first commit)
 - [🌍 Gestione Lingue](docs/languages.md)
 - [🤖 Auto-Translation](docs/auto-translate.md)
 - [📊 Analytics](docs/analytics.md)
@@ -726,7 +718,6 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
   <br>
   <em>Costruito con ❤️ per la comunità Laravel</em>
 </div>
-=======
 # 🌐 Lang
 
 [![Domain-i18n](https://img.shields.io/badge/Domain-i18n-5E35B1.svg)](#)
@@ -783,4 +774,3 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 ---
 
 **Modulo** `lang` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
->>>>>>> dev

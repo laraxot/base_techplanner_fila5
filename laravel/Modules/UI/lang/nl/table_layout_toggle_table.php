@@ -23,10 +23,6 @@ return [
             'placeholder' => 'Selecteer indelingstype',
             'tooltip' => 'Kies tussen lijst- en rasterweergave',
             'help' => 'Kies het meest geschikte indelingstype om de gegevens weer te geven',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -40,11 +36,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

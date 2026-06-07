@@ -1,15 +1,8 @@
 # Incompatibilità tra metodi statici e di istanza in Filament
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo Activity.
-<<<<<<< HEAD
-<<<<<<< HEAD
-> La documentazione principale e completa si trova nel [modulo UI](../../../ui/docs/filament/errors/static-instance-method-incompatibility.md).
-=======
 > La documentazione principale e completa si trova nel [modulo UI](../../../UI/docs/filament/errors/static-instance-method-incompatibility.md).
->>>>>>> 4b6b99016 (first commit)
-=======
 > La documentazione principale e completa si trova nel [modulo UI](../../../ui/docs/filament/errors/static-instance-method-incompatibility.md).
->>>>>>> dev
 
 ## Errore incontrato
 
@@ -64,13 +57,6 @@ Questi devono tutti essere metodi di istanza, non statici.
 
 ## Riferimenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Principio di sostituzione di Liskov](../../../ui/docs/filament/errors/static-instance-method-incompatibility.md)
-=======
 - [Principio di sostituzione di Liskov](../../../UI/docs/filament/errors/static-instance-method-incompatibility.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Principio di sostituzione di Liskov](../../../ui/docs/filament/errors/static-instance-method-incompatibility.md)
->>>>>>> dev
 - [Documentazione ufficiale Filament](https://filamentphp.com/docs/3.x/tables/columns)

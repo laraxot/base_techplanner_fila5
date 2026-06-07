@@ -1,12 +1,6 @@
 # Forbidden Attributes in XotBaseResource Classes
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ## Date: 2026-01-09
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Overview
 
@@ -64,33 +58,18 @@ Remove all forbidden attributes from XotBaseResource classes and ensure proper t
 
 ## Verification Status
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Last Verification**: [DATE]  
-=======
 **Last Verification**: 2026-01-09  
->>>>>>> 4b6b99016 (first commit)
-=======
 **Last Verification**: [DATE]  
->>>>>>> dev
 **Status**: ✅ **ALL RESOURCES COMPLIANT - PROPERTIES REMOVED**
 
 All Resources extending `XotBaseResource` have been verified and cleaned. All forbidden properties (including commented ones) have been removed from:
 - `XotBaseResource.php` - All commented properties removed
 - `UserResource.php` - Commented `$navigationIcon` removed
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Verification Report**: See `forbidden-resource-attributes-verification-[DATE].md`  
-**Removal Report**: See `forbidden-properties-removal-complete-[DATE].md`
-=======
 **Verification Report**: See `forbidden-resource-attributes-verification-2026-01-09.md`  
 **Removal Report**: See `forbidden-properties-removal-complete-2026-01-09.md`
->>>>>>> 4b6b99016 (first commit)
-=======
 **Verification Report**: See `forbidden-resource-attributes-verification-[DATE].md`  
 **Removal Report**: See `forbidden-properties-removal-complete-[DATE].md`
->>>>>>> dev
 
 ### Key Findings
 

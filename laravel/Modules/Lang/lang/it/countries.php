@@ -3,13 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    // Europa
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'it' => 'Italia',
     'fr' => 'Francia',
     'de' => 'Germania',
@@ -54,13 +47,6 @@ return [
     'ge' => 'Georgia',
     'am' => 'Armenia',
     'az' => 'Azerbaigian',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    // Americhe
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'us' => 'Stati Uniti d\'America',
     'ca' => 'Canada',
     'mx' => 'Messico',
@@ -103,13 +89,6 @@ return [
     'kn' => 'Saint Kitts e Nevis',
     'dm' => 'Dominica',
     'bs' => 'Bahamas',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    // Asia
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'cn' => 'Cina',
     'jp' => 'Giappone',
     'kr' => 'Corea del Sud',
@@ -154,13 +133,6 @@ return [
     'kg' => 'Kirghizistan',
     'tj' => 'Tagikistan',
     'tm' => 'Turkmenistan',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    // Africa
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'eg' => 'Egitto',
     'ly' => 'Libia',
     'tn' => 'Tunisia',
@@ -215,13 +187,6 @@ return [
     'ao' => 'Angola',
     'aq' => 'Antartide',
     'zr' => 'Zaire',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    // Oceania
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'au' => 'Australia',
     'ax' => 'Isole Aland',
     'nz' => 'Nuova Zelanda',
@@ -239,13 +204,6 @@ return [
     'pw' => 'Palau',
     'fm' => 'Micronesia',
     'mh' => 'Isole Marshall',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    // Altri
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'xk' => 'Kosovo',
     'va' => 'Città del Vaticano',
     'sm' => 'San Marino',
@@ -298,10 +256,6 @@ return [
     'mp' => 'Isole Marianne Settentrionali',
     'um' => 'Isole Minori Esterne degli Stati Uniti',
     'eh' => 'Sahara Occidentale',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Countries',
     'plural_label' => 'Countries (Plurale)',
     'navigation' => [
@@ -346,9 +300,4 @@ return [
             'label' => 'Elimina Countries',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

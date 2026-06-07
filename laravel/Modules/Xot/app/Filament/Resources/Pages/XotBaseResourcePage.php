@@ -14,14 +14,6 @@ abstract class XotBaseResourcePage extends FilamentResourcePage
     use HasRelationManagers;
     use InteractsWithRecord;
     use NavigationLabelTrait;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     protected static string $resource;
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-
-    protected static string $resource;
->>>>>>> dev
 }

@@ -2,15 +2,8 @@
 
 ## Status: ✅ COMPLETATO (0 errori)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Data: [DATE]
-=======
 ## Data: 2025-01-22
->>>>>>> 4b6b99016 (first commit)
-=======
 ## Data: [DATE]
->>>>>>> dev
 
 ## Progresso
 ```
@@ -344,14 +337,7 @@ Sistema di notifiche multi-canale (email, SMS, database, Telegram, WhatsApp) con
 ---
 
 **Status**: ✅ COMPLETATO
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Data completamento**: [DATE]
-=======
 **Data completamento**: 2025-01-22
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data completamento**: [DATE]
->>>>>>> dev
 **Files corretti**: 13
 **Confidenza**: MASSIMA 🚀

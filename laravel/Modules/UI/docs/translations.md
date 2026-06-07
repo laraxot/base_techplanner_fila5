@@ -2,18 +2,10 @@
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
-- [Regole Generali Traduzioni](../../xot/docs/translations.md)
-=======
 - [Modulo Lang](../../Lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
 - [Regole Generali Traduzioni](../../xot/docs/translations.md)
->>>>>>> dev
 
 ## Struttura
 
@@ -61,10 +53,6 @@ return [
 ];
 ```
 ## Collegamenti tra versioni di translations.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [translations.md](../../../chart/docs/translations.md)
 * [translations.md](../../../reporting/docs/translations.md)
 * [translations.md](../../../gdpr/docs/translations.md)
@@ -82,8 +70,6 @@ return [
 * [translations.md](../../../activity/docs/translations.md)
 * [translations.md](../../../patient/docs/translations.md)
 * [translations.md](../../../cms/docs/translations.md)
-<<<<<<< HEAD
-=======
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)
 * [translations.md](../../../Gdpr/docs/translations.md)
@@ -101,6 +87,3 @@ return [
 * [translations.md](../../../Activity/docs/translations.md)
 * [translations.md](../../../Patient/docs/translations.md)
 * [translations.md](../../../Cms/docs/translations.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

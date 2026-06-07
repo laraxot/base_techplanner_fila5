@@ -9,9 +9,5 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 
 class EditMediaConvert extends XotBaseEditRecord
 {
-<<<<<<< HEAD
-    protected static string $resource = MediaConvertResource::class;
-=======
     public static string $resource = MediaConvertResource::class;
->>>>>>> dev
 }

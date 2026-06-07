@@ -1,18 +1,4 @@
-<<<<<<< HEAD
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
 # Modulo Notify - Analisi Completa
-=======
-=======
->>>>>>> dev
 # Modulo Notify - Documentazione
 
 ## 📚 Overview
@@ -60,15 +46,8 @@ Supporta template dinamici, allegati binari, multi-canale e integrazione complet
 - **[Spatie Mail Templates Deep Dive](./spatie-database-mail-templates-deep-dive.md)**  
   Sistema template email database
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **[Email Layouts Best Practices](./mail-templates/email_layouts_best_practices.md)**  
-=======
 - **[Email Layouts Best Practices](./mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)**  
->>>>>>> 4b6b99016 (first commit)
-=======
 - **[Email Layouts Best Practices](./mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)**  
->>>>>>> dev
   Best practices layout email
 
 #### Notifications
@@ -255,68 +234,28 @@ Notification::route('mail', 'to@example.com')->notify($notify);
 
 ---
 
-<<<<<<< HEAD
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
-=======
->>>>>>> dev
 **Ultimo aggiornamento**: Novembre 2025 (PSR-4 fixes)  
 **Versione**: 1.1  
 **Stato**: PSR-4 compliant, test business logic completati (95% copertura)  
 **Prossimi passi**: Completamento test modelli base  
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Changelog**: [CHANGELOG.md](./changelog.md)
-=======
 **Changelog**: [CHANGELOG.md](./CHANGELOG.md)
->>>>>>> 4b6b99016 (first commit)
-=======
-=======
 **Changelog**: [CHANGELOG.md](./CHANGELOG.md)
 
->>>>>>> dev
 ## 🔗 Collegamenti
 
 ### Moduli Correlati
 
 #### Ptv (Schede Valutazione)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **[Complete PDF Email Guide](../../ptv/docs/pdf-email-attachments-complete-guide.md)**  
-=======
 - **[Complete PDF Email Guide](../../Ptv/docs/pdf-email-attachments-complete-guide.md)**  
->>>>>>> 4b6b99016 (first commit)
-=======
 - **[Complete PDF Email Guide](../../Ptv/docs/pdf-email-attachments-complete-guide.md)**  
->>>>>>> dev
   Caso d'uso completo: invio schede valutazione con PDF
 
 - **[SendMailByRecord Action](../../Ptv/app/Actions/Scheda/SendMailByRecord.php)**  
   Implementation reference
 
 #### Xot (Core Framework)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **[GetPdfContentByRecordAction](../../xot/docs/actions/pdf-content-generation-technical.md)**  
-=======
 - **[GetPdfContentByRecordAction](../../Xot/docs/actions/pdf-content-generation-technical.md)**  
->>>>>>> 4b6b99016 (first commit)
-=======
 - **[GetPdfContentByRecordAction](../../Xot/docs/actions/pdf-content-generation-technical.md)**  
->>>>>>> dev
   Generazione PDF binario da record
 
 - **[PDF Actions](../../Xot/app/Actions/Pdf/)**  
@@ -325,21 +264,12 @@ Notification::route('mail', 'to@example.com')->notify($notify);
 ### Documentazione Interna
 
 #### Email System
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Email Layouts Best Practices](./mail-templates/email_layouts_best_practices.md)
-- [Spatie Mail Templates Structure](./mail-templates/spatie_mail_templates_structure.md)
-- [Email Troubleshooting](./email-sending/email_troubleshooting.md)
-=======
 - [Email Layouts Best Practices](./mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)
 - [Spatie Mail Templates Structure](./mail-templates/SPATIE_MAIL_TEMPLATES_STRUCTURE.md)
 - [Email Troubleshooting](./email-sending/EMAIL_TROUBLESHOOTING.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Email Layouts Best Practices](./mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)
 - [Spatie Mail Templates Structure](./mail-templates/SPATIE_MAIL_TEMPLATES_STRUCTURE.md)
 - [Email Troubleshooting](./email-sending/EMAIL_TROUBLESHOOTING.md)
->>>>>>> dev
 
 #### Notifications
 - [Notifications Implementation Guide](./notifications/notifications_implementation_guide.md)
@@ -484,14 +414,8 @@ Log::channel('email')->info('Email sent', [
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Ultimo aggiornamento:** 2025-01-22  
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento:** 2025-01-22  
->>>>>>> dev
 **Versione:** 2.1.0  
 **Stato:** ✅ Production Ready  
 **PHPStan Level:** 10

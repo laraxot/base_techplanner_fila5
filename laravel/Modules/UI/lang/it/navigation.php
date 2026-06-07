@@ -3,62 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-    'fields' => [
-        'items' => [
-            'label' => 'items',
-            'placeholder' => 'items',
-            'helper_text' => 'items',
-            'description' => 'items',
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'label' => [
-            'label' => 'label',
-            'placeholder' => 'label',
-            'helper_text' => 'label',
-            'description' => 'label',
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-        ],
-        'url' => [
-            'label' => 'url',
-            'placeholder' => 'url',
-            'helper_text' => 'url',
-            'description' => 'url',
-<<<<<<< HEAD
-            'tooltip' => '',
-        ],
-    ],
-    'label' => 'Navigation',
-    'plural_label' => 'Navigation (Plurale)',
-    'navigation' => [
-        'name' => 'Navigation',
-        'plural' => 'Navigation',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Navigation',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
-    ],
-    'actions' => [
-        'create' => [
-            'label' => 'Crea Navigation',
-        ],
-        'edit' => [
-            'label' => 'Modifica Navigation',
-        ],
-        'delete' => [
-            'label' => 'Elimina Navigation',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
     'navigation' => [
         'label' => 'Navigazione',
         'plural_label' => 'Navigazioni',
@@ -107,7 +51,6 @@ return [
             'success' => 'Navigazione eliminata con successo',
             'failure' => 'Errore nell\'eliminazione della navigazione',
             'confirm' => 'Sei sicuro di voler eliminare questa navigazione?',
->>>>>>> dev
         ],
     ],
 ];

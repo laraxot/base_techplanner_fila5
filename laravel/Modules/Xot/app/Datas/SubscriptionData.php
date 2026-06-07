@@ -11,18 +11,17 @@ use Spatie\LaravelData\Data;
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  *
  * @phpstan-consistent-constructor
+ *
+ * @param bool $enable
+ * @param string $driver
+ * @param array<string, string|int> $plans
+ * @param string $currency
+ * @param array<int, class-string<\Illuminate\Database\Eloquent\Model>> $allowedModels
+ * @param bool $trialEnabled
+ * @param int $trialDays
  */
 final class SubscriptionData extends Data
 {
-    /**
-     * @param bool                                                          $enable
-     * @param string                                                        $driver
-     * @param array<string, string|int>                                     $plans
-     * @param string                                                        $currency
-     * @param array<int, class-string<\Illuminate\Database\Eloquent\Model>> $allowedModels
-     * @param bool                                                          $trialEnabled
-     * @param int                                                           $trialDays
-     */
     public function __construct(
         public readonly bool $enable = false,
         public readonly string $driver = 'stripe',
@@ -37,8 +36,8 @@ final class SubscriptionData extends Data
     /**
      * Create a new instance of SubscriptionData with default values.
      */
-    public static function make(): static
+    public static function make(): self
     {
-        return new static();
+        return new self();
     }
 }

@@ -1,6 +1,4 @@
 
-<<<<<<< HEAD
-=======
 la base
 https://jqueryui.com/draggable/#sortable
 https://jqueryui.com/sortable/
@@ -35,4 +33,3 @@ https://codecanyon.net/item/jsorted-a-plugin-for-sorting-things/1960457
 
 drag molto bello, non centra con ordinamento
 https://codecanyon.net/item/ultimate-drag-and-drop-engine/8950566
->>>>>>> dev

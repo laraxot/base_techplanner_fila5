@@ -36,22 +36,14 @@ The Notify module's MCP configuration enables AI assistants to interact with:
     },
     "filesystem": {
       "command": "npx",
-<<<<<<< HEAD
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_laravelpizza/laravel"],
-=======
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_<nome progetto>/laravel"],
->>>>>>> dev
       "description": "Access to Notify module files"
     },
     "database": {
       "command": "npx",
       "args": ["-y", "@bytebase/dbhub"],
       "env": {
-<<<<<<< HEAD
-        "DATABASE_URL": "sqlite:///var/www/_bases/base_laravelpizza/laravel/database/database.sqlite"
-=======
         "DATABASE_URL": "sqlite:///var/www/_bases/base_<nome progetto>/laravel/database/database.sqlite"
->>>>>>> dev
       },
       "description": "SQLite database queries"
     }
@@ -66,11 +58,7 @@ The Notify module's MCP configuration enables AI assistants to interact with:
 ### Asana Integration
 ```bash
 # Create task
-<<<<<<< HEAD
-"Create task in 'LaravelPizza - Notify Module' project: 'Implement template preview feature'"
-=======
 "Create task in '<nome progetto> - Notify Module' project: 'Implement template preview feature'"
->>>>>>> dev
 
 # Update status
 "Update task 'Test notification channels' status to 'In Progress'"
@@ -123,15 +111,9 @@ The Notify module's MCP configuration enables AI assistants to interact with:
 
 ## 📚 Related Documentation
 
-<<<<<<< HEAD
-- [Asana MCP Configuration](../../../docs/mcp-asana-configuration.md)
-- [ClickUp MCP Configuration](../../../docs/mcp-clickup-configuration.md)
-- [Redmine MCP Configuration](../../../docs/mcp-redmine-configuration.md)
-=======
 - [Asana MCP Configuration](../../../../docs/mcp-asana-configuration.md)
 - [ClickUp MCP Configuration](../../../../docs/mcp-clickup-configuration.md)
 - [Redmine MCP Configuration](../../../../docs/mcp-redmine-configuration.md)
->>>>>>> dev
 - [Notify Module Roadmap](./roadmap-[date].md)
 
 ---

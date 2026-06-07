@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 -- rami puliti
 http://cssdeck.com/labs/pure-css-tree-menu-framework
 
@@ -83,4 +80,3 @@ http://preview.codecanyon.net/item/drop-down-tree-combo-box-tree-view-with-autoc
 
 //--- darci un occhio a sto cms
 https://www.silverstripe.org/
->>>>>>> dev

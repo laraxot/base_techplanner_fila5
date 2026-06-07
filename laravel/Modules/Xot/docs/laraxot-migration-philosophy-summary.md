@@ -13,11 +13,7 @@ In Laraxot architecture, we **NEVER** create multiple `create_table` migration f
 - No ambiguity about which migration defines the "real" table structure
 - Clear, linear evolution of database schema
 
-<<<<<<< HEAD
-### 2. **Predictable Migration Order**
-=======
 ### 2. **<nome progetto>able Migration Order**
->>>>>>> dev
 - No confusion about which migration runs first
 - Consistent behavior across all environments (local, staging, production)
 - Eliminates race conditions in migration execution
@@ -61,23 +57,14 @@ Modules/User/database/migrations/
 ├── 2024_01_01_000001_create_users_table.php
 ├── 2024_01_01_000011_create_roles_table.php      # Single authoritative
 ├── 2024_01_01_000021_create_permissions_table.php
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 └── 2026_02_22_000000_create_profiles_table.php   # Modifiche: stessa migrazione, timestamp aggiornato
 ```
 
 Modifiche schema: editare la stessa migrazione e aggiornare il timestamp nel nome file.
 
-<<<<<<< HEAD
-=======
 └── 2024_06_15_143000_add_team_id_to_roles.php    # Schema evolution
 ```
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ### ❌ WRONG
 ```
 Modules/User/database/migrations/
@@ -90,10 +77,6 @@ Modules/User/database/migrations/
 
 ### ✅ CREATE NEW MIGRATION
 - **New Table**: `create_{table}_table.php`
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - **Data Migrations**: `migrate_{purpose}.php` (solo trasformazioni dati)
 
 ### ❌ NEVER CREATE NEW MIGRATION
@@ -110,8 +93,6 @@ Modules/User/database/migrations/
 - **Modifiche**: Modificare questo file e aggiornare il timestamp nel nome
 
 ### 2. Data Migration Migrations
-<<<<<<< HEAD
-=======
 - **Schema Changes**: `add_{column}_to_{table}.php`
 - **Data Migrations**: `migrate_{purpose}.php`
 
@@ -132,9 +113,6 @@ Modules/User/database/migrations/
 - **Examples**: `add_column`, `remove_column`, `change_column`
 
 ### 3. Data Migration Migrations
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 - **Pattern**: `{timestamp}_migrate_{purpose}.php`
 - **Purpose**: Transform or seed data
 - **Examples**: `migrate_user_roles`, `seed_default_permissions`
@@ -166,11 +144,7 @@ When duplicate migrations are discovered:
 ### Laraxot Core Values
 - **Simplicity**: One table, one migration, no exceptions
 - **Clarity**: Clear, unambiguous schema definitions
-<<<<<<< HEAD
-- **Predictability**: Consistent migration behavior across environments
-=======
 - **<nome progetto>ability**: Consistent migration behavior across environments
->>>>>>> dev
 - **Maintainability**: Easy to understand and modify schema evolution
 
 ### Why This Matters

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> dev
 # Filament Class Extension Rules
 
 **Fundamental Principle**: Never extend Filament classes directly - always use XotBase classes.
@@ -240,10 +235,6 @@ app(CreateUserAction::class)->execute($data);
 ---
 
 **Philosophy**: DRY + KISS - Do not duplicate, do not complicate, always use base classes.
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 # Regole di Estensione delle Classi Filament
 
 ## Regola Fondamentale
@@ -303,15 +294,8 @@ class SendSMSPage extends XotBasePage
 Per verificare che tutte le classi seguano questa regola:
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-find /var/www/html/saluteora/laravel/Modules -path "*/Filament/*/*.php" -type f -exec grep -l "extends.*Filament" {} \;
-=======
 find Modules -path "*/Filament/*/*.php" -type f -exec grep -l "extends.*Filament" {} \;
->>>>>>> 4b6b99016 (first commit)
-=======
 find Modules -path "*/Filament/*/*.php" -type f -exec grep -l "extends.*Filament" {} \;
->>>>>>> dev
 ```
 
 Le pagine che violano questa regola devono essere immediatamente corrette per mantenere l'integrità dell'architettura.

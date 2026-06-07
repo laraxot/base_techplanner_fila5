@@ -1,32 +1,4 @@
-<<<<<<< HEAD
-# Struttura delle Pagine con Laravel Folio
-
-## Introduzione
-
-Laravel Folio viene utilizzato per gestire le pagine frontend del tema One. Questo documento spiega come sono organizzate le pagine e quali convenzioni seguire.
-
-## Struttura delle Directory
-
-```
-Themes/One/resources/views/pages/
-├── index.blade.php             # Homepage principale
-├── about.blade.php             # Pagina "Chi siamo"
-├── pages/                      # Sottocartella per le pagine dinamiche
-│   ├── index.blade.php         # Indice delle pagine dinamiche
-│   └── [slug].blade.php        # Gestore per le pagine dinamiche dal CMS
-└── ... altre sezioni ...
-```
-
-## Convenzioni di Nomenclatura
-
-Laravel Folio utilizza delle convenzioni specifiche:
-
-- `/` → `index.blade.php`
-<<<<<<< HEAD
-- `/pages` → `pages/index.blade.php` 
-=======
 - `/pages` → `pages/index.blade.php`
->>>>>>> 4b6b99016 (first commit)
 - `/pages/{slug}` → `pages/[slug].blade.php`
 
 ## File [slug].blade.php
@@ -45,11 +17,7 @@ name('page_slug.view');
 render(function (View $view, string $slug) {
     $locale = app()->getLocale();
     $page = Page::firstWhere(['slug' => $slug]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
     return $view->with('page', $page);
 });
 ?>
@@ -83,9 +51,6 @@ render(function (View $view) {
                 Tutte le Pagine
             </h1>
         </div>
-<<<<<<< HEAD
-        
-=======
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach($pages as $page)
@@ -238,7 +203,6 @@ render(function (View $view) {
             </h1>
         </div>
 
->>>>>>> 4b6b99016 (first commit)
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach($pages as $page)
                 <a href="{{ url('/' . $locale . '/pages/' . $page->slug) }}" class="block p-6 bg-white shadow-sm rounded-lg hover:shadow-md transition">
@@ -313,7 +277,6 @@ Per creare una nuova pagina nel tema One:
 - Verificare che il modello `Page` contenga lo slug corretto
 - Controllare i logs per eventuali errori
 - Se i link non funzionano, assicurarsi che includano la locale corrente (ad es. `/it/pages/pagina`)
-=======
 ---
 module: theme
 topic: folio-pages
@@ -321,4 +284,3 @@ canonical: ../../../../../Themes/docs/shared-components/folio-pages-1.md
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/folio-pages-1.md
->>>>>>> dev

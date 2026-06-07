@@ -9,10 +9,6 @@ return [
             'heading' => 'empty',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Health Overview',
     'plural_label' => 'Health Overview (Plurale)',
     'navigation' => [
@@ -57,9 +53,4 @@ return [
             'label' => 'Elimina Health Overview',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

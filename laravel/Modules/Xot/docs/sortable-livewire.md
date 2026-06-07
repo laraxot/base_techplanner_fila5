@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 https://sbsharma.com/laravel-jquery-ui-sortable-database-update-livewire/
 
 
@@ -12,5 +10,3 @@ https://opensourcelibs.com/lib/livewire-sortablejs
 
 
 https://github.com/livewire/sortable
->>>>>>> dev
-

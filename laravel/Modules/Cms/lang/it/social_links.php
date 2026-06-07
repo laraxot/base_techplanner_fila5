@@ -9,66 +9,34 @@ return [
             'placeholder' => 'title',
             'helper_text' => 'title',
             'description' => 'title',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'links' => [
             'label' => 'links',
             'placeholder' => 'links',
             'helper_text' => 'links',
             'description' => 'links',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'platform' => [
             'label' => 'platform',
             'placeholder' => 'platform',
             'helper_text' => 'platform',
             'description' => 'platform',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'url' => [
             'label' => 'url',
             'placeholder' => 'url',
             'helper_text' => 'url',
             'description' => 'url',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'icon' => [
             'label' => 'icon',
             'placeholder' => 'icon',
             'helper_text' => 'icon',
             'description' => 'icon',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -94,11 +62,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Social Links',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
 ];

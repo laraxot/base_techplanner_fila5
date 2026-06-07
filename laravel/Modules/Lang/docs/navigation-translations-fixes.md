@@ -1,15 +1,8 @@
 # Correzioni Traduzioni Navigation - Modulo Lang
 
 ## Data Intervento
-<<<<<<< HEAD
-<<<<<<< HEAD
-**[DATE]** - Sistemazione traduzioni secondo regole DRY + KISS
-=======
 **2025-08-07** - Sistemazione traduzioni secondo regole DRY + KISS
->>>>>>> 4b6b99016 (first commit)
-=======
 **[DATE]** - Sistemazione traduzioni secondo regole DRY + KISS
->>>>>>> dev
 
 ## Analisi File
 
@@ -87,23 +80,13 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [Audit Generale Traduzioni Navigation](../../docs/navigation-translations-audit.md)
-<<<<<<< HEAD
-- [Documentazione Modulo Lang](readme.md)
-- [Sistema Localizzazione](comprehensive_guide.md)
-- [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
-=======
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
 - [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
 - [Documentazione Modulo Lang](readme.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
 - [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
->>>>>>> dev
 
 ## Note Tecniche
 
@@ -119,13 +102,6 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 3. **Documentazione**: Mantenere aggiornata la documentazione delle traduzioni
 4. **Standard**: Continuare ad applicare le regole DRY + KISS
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Verifica completata il: [DATE]*
-=======
 *Verifica completata il: 2025-08-07*
->>>>>>> 4b6b99016 (first commit)
-=======
 *Verifica completata il: [DATE]*
->>>>>>> dev
 *Status: CONFORME agli standard*

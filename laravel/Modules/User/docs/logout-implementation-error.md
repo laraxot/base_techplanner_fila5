@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-# Analisi dell'Errore nell'Implementazione del Logout
-
-## Collegamenti correlati
-<<<<<<< HEAD
-- [Documentazione centrale](/docs/readme.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Implementazione Logout](logout_blade_implementation.md)
-- [Analisi Logout](logout_blade_analysis.md)
-- [Conclusioni Logout](logout_blade_conclusions.md)
-- [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
-=======
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
@@ -18,7 +5,6 @@
 - [Analisi Logout](LOGOUT_BLADE_ANALYSIS.md)
 - [Conclusioni Logout](LOGOUT_BLADE_CONCLUSIONS.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
->>>>>>> 4b6b99016 (first commit)
 
 ## Errore Identificato
 
@@ -83,15 +69,6 @@ La documentazione è stata aggiornata per riflettere queste raccomandazioni e pe
 # Analisi dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-- [Documentazione centrale](/docs/readme.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Implementazione Logout](logout_blade_implementation.md)
-- [Analisi Logout](logout_blade_analysis.md)
-- [Conclusioni Logout](logout_blade_conclusions.md)
-- [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
-=======
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
@@ -99,7 +76,6 @@ La documentazione è stata aggiornata per riflettere queste raccomandazioni e pe
 - [Analisi Logout](LOGOUT_BLADE_ANALYSIS.md)
 - [Conclusioni Logout](LOGOUT_BLADE_CONCLUSIONS.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
->>>>>>> 4b6b99016 (first commit)
 
 ## Errore Identificato
 
@@ -161,7 +137,6 @@ Se si desidera mantenere la conferma di logout, è preferibile utilizzare un wid
 L'errore principale nell'implementazione attuale è l'utilizzo di un approccio non ottimale e non conforme alle convenzioni di <nome progetto> per il logout. La soluzione raccomandata è utilizzare l'approccio "Folio con PHP puro" per un logout immediato, o in alternativa, implementare un widget Filament per il logout con conferma.
 
 La documentazione è stata aggiornata per riflettere queste raccomandazioni e per fornire esempi di implementazione corretta.
-=======
 ---
 module: theme
 topic: logout-implementation-error
@@ -169,4 +144,3 @@ canonical: ../../../Themes/docs/shared-components/logout-implementation-error.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-error.md
->>>>>>> dev

@@ -76,13 +76,6 @@ Total: 12 tests, 10 converted from PHPUnit to Pest
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Date**: 2026-01-09
->>>>>>> 4b6b99016 (first commit)
-=======
 **Date**: [DATE]
->>>>>>> dev
 **Status**: Complete

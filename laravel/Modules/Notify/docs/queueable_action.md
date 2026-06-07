@@ -38,12 +38,5 @@ $action->dispatch($user);
 
 ## Collegamenti
 - [Documentazione ufficiale](https://github.com/spatie/laravel-queueable-action)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README Notify](readme.md)
-=======
 - [README Notify](README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [README Notify](readme.md)
->>>>>>> dev

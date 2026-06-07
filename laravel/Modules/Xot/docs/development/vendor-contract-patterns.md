@@ -132,12 +132,4 @@ interface PassportHasApiTokensContract
 ---
 
 **Maintained by**: Claude Sonnet 4.5
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 **Last updated**: 2025-12-12
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev

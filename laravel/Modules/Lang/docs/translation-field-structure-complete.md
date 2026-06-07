@@ -310,18 +310,10 @@ return [
 
 ## Collegamenti Bidirezionali
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
-- [User Module Translation Rules](../modules/user/docs/widget-translation-rules.md)
-=======
 - [<nome progetto> Translation Audit](../Modules/<nome progetto>/docs/translation_audit_city_fields.md)
 - [User Module Translation Rules](../Modules/User/docs/widget-translation-rules.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
 - [User Module Translation Rules](../modules/user/docs/widget-translation-rules.md)
->>>>>>> dev
 - [Translation Syntax Fixes](translation_syntax_fixes.md)
 - [Windsurf Translation Rules](../.windsurf/rules/translation-complete-structure.mdc)
 
@@ -338,11 +330,5 @@ grep -r "label.*Città" laravel/Modules/*/lang/de/ laravel/Modules/*/lang/en/
 cd laravel && ./vendor/bin/phpstan analyze Modules/*/lang/ --level=9
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-08-08 - Struttura completa standardizzata*
->>>>>>> 4b6b99016 (first commit)
-=======
 *Ultimo aggiornamento: [DATE] - Struttura completa standardizzata*
->>>>>>> dev

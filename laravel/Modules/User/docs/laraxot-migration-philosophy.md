@@ -35,14 +35,8 @@ La migration è stata modificata per **estendere** la tabella `roles` esistente 
 3. **Controllo colonne**: Verificare l'esistenza delle colonne prima di aggiungerle con `hasColumn()`
 4. **Controllo indici**: Verificare l'esistenza degli indici prima di crearli
 5. **Rollback sicuro**: Rimuovere solo le colonne aggiunte, non quelle originali
-<<<<<<< HEAD
-<<<<<<< HEAD
 6. **Modifiche schema**: Modificare la **stessa** migrazione esistente e aggiornare il **timestamp** nel nome file (NON creare `add_column_to_table.php` separate)
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 6. **Modifiche schema**: Modificare la **stessa** migrazione esistente e aggiornare il **timestamp** nel nome file (NON creare `add_column_to_table.php` separate)
->>>>>>> dev
 
 ## Principi Laraxot Rispettati
 

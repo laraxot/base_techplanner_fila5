@@ -54,38 +54,22 @@ Questo documento descrive le regole e le best practices per i prompt di document
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-[Documento in Modulo Altro](../../altromodulo/docs/documento.md)
-=======
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
->>>>>>> 4b6b99016 (first commit)
 [Documento in Root](../../../docs/documento.md)
-=======
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
->>>>>>> dev
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
-<<<<<<< HEAD
-<<<<<<< HEAD
-[Documento Correlato](../xot/docs/documento.md)
-[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
-[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
-=======
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 [Documento Correlato](../xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
->>>>>>> dev
 ```
 
 ### Checklist di Validazione
@@ -112,15 +96,8 @@ con collegamenti bidirezionali...
 
 ## Collegamenti
 - [Regole di Documentazione](../documentation_rules.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Gestione della Documentazione](../documentation_management.md)
-=======
 - [Gestione della Documentazione](../DOCUMENTATION_MANAGEMENT.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Gestione della Documentazione](../documentation_management.md)
->>>>>>> dev
 - [Best Practices](../best-practices.md)
 
 ## Validazione e Correzione dei Percorsi

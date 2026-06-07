@@ -5,10 +5,6 @@ declare(strict_types=1);
 return [
     'name' => 'name',
     'value' => 'value',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Xot Base Job',
     'plural_label' => 'Xot Base Job (Plurale)',
     'navigation' => [
@@ -53,9 +49,4 @@ return [
             'label' => 'Elimina Xot Base Job',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

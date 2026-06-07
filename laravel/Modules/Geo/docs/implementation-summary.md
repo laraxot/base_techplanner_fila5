@@ -297,12 +297,6 @@ Il componente non solo elimina duplicazione, ma stabilisce un **pattern replicab
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Dicembre 2024*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 **Il successo di questo caso studio conferma l'importanza di identificare e risolvere proattivamente la duplicazione di codice prima che diventi un debito tecnico significativo.**

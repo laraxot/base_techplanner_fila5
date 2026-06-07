@@ -258,24 +258,15 @@ Prima di committare file di test:
 
 ## Collegamenti ai Moduli
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Testing PSR-4 Compliance - Modulo Xot](../modules/xot/docs/testing-psr4-compliance.md)
 - [Testing Guide - Modulo <nome modulo>](../modules/<nome modulo>/docs/testing.md)
 
 ---
 
-<<<<<<< HEAD
-=======
 - [Testing PSR-4 Compliance - Modulo Xot](../Modules/Xot/docs/testing-psr4-compliance.md)
 - [Testing Guide - Modulo <nome modulo>](../Modules/<nome modulo>/docs/testing.md)
 
 ---
 
 *Ultimo aggiornamento: 2025-01-06*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 *Standard: PSR-4, PHPStan livello 9+, Laraxot conventions*

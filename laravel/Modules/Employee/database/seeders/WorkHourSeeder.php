@@ -4,18 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Database\Seeders;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
-=======
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Carbon\Carbon;
->>>>>>> 4b6b99016 (first commit)
-=======
-use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Factories\Factory;
->>>>>>> dev
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Collection;
 use Modules\Employee\Models\WorkHour;

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Migration Patterns
-=======
 # Migration Patterns - Media Module
 
 ## Conformità XotBaseMigration
@@ -156,4 +153,3 @@ Anche le migrazioni che **modificano** tabelle esistenti devono usare `create_`:
 - [Root Migration Rules](../../../.windsurf/rules/migration-complete-rules.md)
 
 *Ultimo aggiornamento: 2026-02-26*
->>>>>>> dev

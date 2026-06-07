@@ -111,11 +111,5 @@ composer dump-autoload
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-01-06*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 *Conformità: PSR-4, PHPStan livello 9+, Laraxot standards*

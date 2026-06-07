@@ -282,11 +282,7 @@ Test policy integration with Filament resources and controllers.
 
 ## Related Documentation
 
-<<<<<<< HEAD
-- [Main Policies Documentation](../../../docs/policies_implementation.md)
-=======
 - [Main Policies Documentation](../../../../docs/policies_implementation.md)
->>>>>>> dev
 - [User Authentication](./authentication.md)
 - [Permissions and Roles](./permissions.md)
 - [Team Management](./teams.md)

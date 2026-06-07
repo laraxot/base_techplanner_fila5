@@ -153,11 +153,7 @@ Gli errori rimanenti (94) sono principalmente:
 
 - [Test di Validazione](../../tests/Unit/UserModulePhpstanFixesTest.php)
 - [Configurazione Password](../../config/password.php)
-<<<<<<< HEAD
-- [Documentazione Root](../../../docs/user-module-phpstan-fixes.md)
-=======
 - [Documentazione Root](../../../../docs/user-module-phpstan-fixes.md)
->>>>>>> dev
 
 ## Note per il Futuro
 
@@ -165,4 +161,3 @@ Gli errori rimanenti (94) sono principalmente:
 2. **Data Classes**: Definire sempre tutte le proprietà readonly nel costruttore
 3. **Actions**: Usare proprietà readonly solo quando necessario e inizializzarle correttamente
 4. **Test**: Creare sempre test di validazione per le correzioni PHPStan
-

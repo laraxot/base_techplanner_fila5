@@ -40,15 +40,9 @@ vendor/
 *.bakcup
 *.backup.*
 node_modules
-<<<<<<< HEAD
-<<<<<<< HEAD
 *.*Zone.Identifier
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 *.*Zone.Identifier
 _docs/
 
 # Database locale vector search (non versionare)
 ruvector.db
->>>>>>> dev

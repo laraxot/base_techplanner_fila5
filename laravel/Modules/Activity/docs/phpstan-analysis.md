@@ -1,12 +1,6 @@
 # PHPStan Analysis - Activity Module
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2025-10-10T12:40:18+02:00
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Livello**: MAX (9)
 **Files Analizzati**: 68 (app + tests)
 
@@ -227,14 +221,7 @@ Gli errori rimanenti sono principalmente:
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Report generato**: [DATE]T12:40:18+02:00
-=======
 **Report generato**: 2025-10-10T12:40:18+02:00
->>>>>>> 4b6b99016 (first commit)
-=======
 **Report generato**: [DATE]T12:40:18+02:00
->>>>>>> dev
 **Analista**: Cascade AI
 **Prossimo modulo**: Blog

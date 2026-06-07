@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Geo Module Documentation\n\nHandles geographic data and maps.\n\n## Contents\n- [Static Map Implementation](static-map-clickable-implementation.md)\n- [Italian Address Structure](models/address-italian-structure.md)
-=======
 # 🌍 **Geo Module** - Gestione Avanzata Dati Geografici
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -457,8 +453,6 @@ php artisan test
 **Versione**: 2.0.0
 **Autore**: Team Laraxot
 **Licenza**: MIT License
->>>>>>> 4b6b99016 (first commit)
-=======
 ---
 title: "Geo Module Documentation"
 type: documentation
@@ -528,4 +522,3 @@ Geo module owns ALL geo-spatial concerns. Other modules (Fixcity, Transport, Log
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
->>>>>>> dev

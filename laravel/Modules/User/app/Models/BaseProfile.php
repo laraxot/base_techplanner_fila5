@@ -4,26 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-// // use Illuminate\Support\Str;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection;
-=======
-// use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Concerns\HasUuids;
->>>>>>> 4b6b99016 (first commit)
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Notifications\DatabaseNotification;
-use Illuminate\Notifications\DatabaseNotificationCollection;
-use Illuminate\Notifications\Notifiable;
-<<<<<<< HEAD
-use Illuminate\Support\Str;
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 // // use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -31,7 +11,6 @@ use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Str;
->>>>>>> dev
 use Modules\Media\Models\Media;
 use Modules\User\Models\Traits\IsProfileTrait;
 use Modules\Xot\Contracts\ProfileContract;
@@ -44,16 +23,8 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
 
 /**
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @property int                                                       $id
  * @property string                                                    $uuid
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
- * @property int                                                       $id
- * @property string                                                    $uuid
->>>>>>> dev
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes         $extra
  * @property string                                                    $avatar
  * @property Collection<int, DeviceUser>                               $deviceUsers
@@ -84,74 +55,24 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @method static Builder|ProfileContract permission($permissions, $without = false)
  * @method static Builder|ProfileContract query()
  * @method static Builder|ProfileContract role($roles, $guard = null, $without = false)
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @method static Builder|ProfileContract byUuid(string $uuid)
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
- * @method static Builder|ProfileContract byUuid(string $uuid)
->>>>>>> dev
  * @method static Builder|BaseProfile     withExtraAttributes()
  * @method static Builder|ProfileContract withoutPermission($permissions)
  * @method static Builder|ProfileContract withoutRole($roles, $guard = null)
  *
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
-<<<<<<< HEAD
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-// @see Modules/Xot/docs/spatie-schemaless-attributes.md
->>>>>>> dev
 abstract class BaseProfile extends BaseModel implements ProfileContract
 {
     use HasChildren;
     use HasRoles;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // use HasUuids;
-=======
-    use HasUuids;
->>>>>>> 4b6b99016 (first commit)
-=======
 
     // use HasUuids;
->>>>>>> dev
     use InteractsWithMedia;
     use IsProfileTrait;
     use Notifiable;
     use SchemalessAttributesTrait;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // use SoftDeletes;
-
-    /**
-     * The "booted" method of the model.
-     */
-    protected static function booted(): void
-    {
-        static::creating(static function (self $model): void {
-            if (empty($model->uuid)) {
-                $model->uuid = (string) Str::uuid();
-            }
-        });
-    }
-
-    /**
-     * Scope per lookup da API/Android/Postgres (usa uuid, non id).
-     */
-    public function scopeByUuid(Builder $query, string $uuid): Builder
-    {
-        return $query->where('uuid', $uuid);
-    }
-=======
-    use SoftDeletes;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
     /**
      * Undocumented variable.
@@ -161,13 +82,6 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 
     /** @var list<string> */
     protected $fillable = [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        'id',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         'uuid',
         'user_id',
         'type',
@@ -198,13 +112,6 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         'user',
     ];
 
-<<<<<<< HEAD
-    /** @var array */
-    protected $formlessAttributes = [
-        'extra',
-    ];
-
-=======
     /** @var list<string> */
     protected array $formlessAttributes = [
         'extra',
@@ -218,7 +125,6 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         return $query->where('uuid', $uuid);
     }
 
->>>>>>> dev
     // ✅ CORRETTO: NON implementare scopeWithExtraAttributes() manualmente
     // Il trait SchemalessAttributesTrait lo fornisce automaticamente!
     // NOTA: BaseProfile ha attributo 'extra' diretto, non relazione 'extra'
@@ -275,8 +181,6 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 
         return $userLang;
     }
-<<<<<<< HEAD
-=======
     // use SoftDeletes;
 
     /**
@@ -290,22 +194,13 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
             }
         });
     }
->>>>>>> dev
 
     /** @return array<string, string> */
     #[\Override]
     protected function casts(): array
     {
         return [
-<<<<<<< HEAD
-<<<<<<< HEAD
             'id' => 'integer',
-=======
-            'id' => 'string',
->>>>>>> 4b6b99016 (first commit)
-=======
-            'id' => 'integer',
->>>>>>> dev
             'uuid' => 'string',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',

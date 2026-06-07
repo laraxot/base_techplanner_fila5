@@ -6,23 +6,11 @@ namespace Themes\Sixteen\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-<<<<<<< HEAD
-use Themes\Sixteen\Models\User;
-
-/**
- * Evento lanciato quando un utente effettua il logout da SPID
-<<<<<<< HEAD
- *
-=======
- * 
->>>>>>> 4b6b99016 (first commit)
-=======
 use Modules\User\Models\User;
 
 /**
  * Evento lanciato quando un utente effettua il logout da SPID
  *
->>>>>>> dev
  * Questo evento permette di reagire al logout SPID per cleanup,
  * logging, sincronizzazione con sistemi esterni, etc.
  */
@@ -33,33 +21,13 @@ class SpidLoggedOut
     public function __construct(
         public User $user,
         public array $spidAttributes
-<<<<<<< HEAD
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> 4b6b99016 (first commit)
-=======
-    ) {}
->>>>>>> dev
 
     /**
      * Ottiene il provider SPID utilizzato
      */
     public function getProvider(): ?string
     {
-<<<<<<< HEAD
-        return $this->spidAttributes['provider'] ?? null;
-    }
-
-    /**
-     * Ottiene il codice fiscale dell'utente
-     */
-    public function getFiscalCode(): ?string
-    {
-        return $this->spidAttributes['fiscal_code'] ?? null;
-=======
         $value = $this->spidAttributes['provider'] ?? null;
 
         return is_string($value) ? $value : null;
@@ -73,7 +41,6 @@ class SpidLoggedOut
         $value = $this->spidAttributes['fiscal_code'] ?? null;
 
         return is_string($value) ? $value : null;
->>>>>>> dev
     }
 
     /**
@@ -88,12 +55,4 @@ class SpidLoggedOut
             'logout_timestamp' => now()->toISOString(),
         ];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4b6b99016 (first commit)
-=======
-}
->>>>>>> dev

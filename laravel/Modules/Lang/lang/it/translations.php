@@ -8,10 +8,6 @@ return [
         'create' => 'Crea',
         'edit' => 'Modifica',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Translations',
     'plural_label' => 'Translations (Plurale)',
     'navigation' => [
@@ -56,9 +52,4 @@ return [
             'label' => 'Elimina Translations',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

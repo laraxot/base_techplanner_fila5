@@ -18,86 +18,39 @@ return [
         'edit' => [
             'label' => 'Modifica',
             'tooltip' => 'Modifica file di traduzione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'toggleColumns' => [
             'label' => 'Mostra/Nascondi Colonne',
             'tooltip' => 'Mostra o nascondi colonne della tabella',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'reorderRecords' => [
             'label' => 'Riordina Record',
             'tooltip' => 'Riordina i record nella tabella',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'resetFilters' => [
             'label' => 'Reset Filtri',
             'tooltip' => 'Ripristina i filtri ai valori predefiniti',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'content' => [
             'description' => 'Contenuto del file di traduzione',
             'helper_text' => '',
             'placeholder' => 'Inserisci contenuto traduzione',
             'label' => 'Contenuto',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'applyFilters' => [
             'label' => 'Applica Filtri',
             'tooltip' => 'Applica i filtri selezionati',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'snapshots' => [
             'fields' => [
@@ -116,42 +69,21 @@ return [
                     ],
                 ],
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'openFilters' => [
             'label' => 'Apri Filtri',
             'tooltip' => 'Apri il pannello dei filtri',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'key' => [
             'label' => 'Chiave',
             'placeholder' => 'Inserisci chiave traduzione',
             'help' => 'Chiave identificativa della traduzione',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -161,14 +93,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'delete' => [
-            'label' => 'delete',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'navigation' => [
@@ -182,14 +106,6 @@ return [
         'placeholder' => 'Seleziona file traduzione',
         'helper_text' => 'File di traduzione per la gestione delle lingue',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Translation File',
     'plural_label' => 'Translation File (Plurale)',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Translation File',
-    'plural_label' => 'Translation File (Plurale)',
->>>>>>> dev
 ];

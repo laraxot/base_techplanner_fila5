@@ -1,13 +1,7 @@
 # 🧘 Pattern: Extract Method (Clean Code)
 
 **Status**: ✅ Pattern Consolidato  
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 19 Dicembre 2025  
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Modulo**: Notify  
 **Filosofia**: Clean Code, SRP, Leggibilità
 

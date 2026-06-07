@@ -121,15 +121,8 @@ try {
 - [Best Practices](../best-practices.md)
 
 ## Data Correzione
-<<<<<<< HEAD
-<<<<<<< HEAD
-[DATE]
-=======
 2025-01-06
->>>>>>> 4b6b99016 (first commit)
-=======
 [DATE]
->>>>>>> dev
 
 ## Autore
 AI Assistant

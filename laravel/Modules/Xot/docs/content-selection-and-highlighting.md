@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 module: theme
 topic: content-selection-and-highlighting
@@ -8,4 +5,3 @@ canonical: ../../../Themes/docs/shared-components/content_selection_and_highligh
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/content_selection_and_highlighting.txt
->>>>>>> dev

@@ -15,10 +15,6 @@ return [
         'icon' => 'ui-geo-place',
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -79,21 +75,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
-=======
-        'name' => 'Nome',
-        'description' => 'Descrizione',
-        'category' => 'Categoria',
-        'location' => 'Località',
-        'rating' => 'Valutazione',
-        'opening_hours' => 'Orari di Apertura',
-        'contact_info' => 'Contatti',
-        'website' => 'Sito Web',
-        'photos' => 'Foto',
-        'amenities' => 'Servizi',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ],
     'categories' => [
         'restaurant' => 'Ristorante',
@@ -109,14 +90,6 @@ return [
         'share' => 'Condividi',
         'bookmark' => 'Salva',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

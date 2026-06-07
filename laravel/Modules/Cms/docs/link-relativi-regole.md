@@ -7,26 +7,15 @@
 ### ❌ **VIETATO - Link Assoluti**
 ```markdown
 [Link errato](/var/www/html/_bases/<directory progetto>/docs/file.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-[Link errato](../../laravel/modules/cms/docs/file.md)
-=======
 [Link errato](../../laravel/Modules/Cms/docs/file.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 [Link errato](../../laravel/modules/cms/docs/file.md)
->>>>>>> dev
 ```
 
 ### ✅ **CORRETTO - Link Relativi**
 ```markdown
 [Link corretto](./file.md)
 [Link corretto](../altro-modulo/docs/file.md)
-<<<<<<< HEAD
-[Link alla root](../../../docs/file.md)
-=======
 [Link alla root](../../../../docs/file.md)
->>>>>>> dev
 ```
 
 ## 🎯 **Motivazioni Filosofiche**
@@ -53,11 +42,7 @@
 
 ### **Dal modulo Cms alla root docs**
 ```
-<<<<<<< HEAD
-Percorso: Modules/Cms/docs/ → ../../../docs/
-=======
 Percorso: Modules/Cms/docs/ → ../../../../docs/
->>>>>>> dev
 Logica:
   Modules/Cms/docs/ → ../ (torna a Modules/)
   Modules/ → ../ (torna a laravel/)
@@ -96,47 +81,27 @@ Link: ./components/
 [Gestione Homepage](/var/www/html/_bases/<directory progetto>/docs/gestione-homepage.md)
 
 <!-- DOPO (CORRETTO) -->
-<<<<<<< HEAD
-[Gestione Homepage](../../../docs/gestione-homepage.md)
-=======
 [Gestione Homepage](../../../../docs/gestione-homepage.md)
->>>>>>> dev
 ```
 
 ### **Caso 2: Link ad altro modulo**
 ```markdown
 <!-- PRIMA (ERRATO) -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 [Modulo User](/var/www/html/_bases/<directory progetto>/laravel/modules/user/docs/readme.md)
 
 <!-- DOPO (CORRETTO) -->
 [Modulo User](../../user/docs/readme.md)
-<<<<<<< HEAD
-=======
 [Modulo User](/var/www/html/_bases/<directory progetto>/laravel/Modules/User/docs/README.md)
 
 <!-- DOPO (CORRETTO) -->
 [Modulo User](../../User/docs/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ```
 
 ### **Caso 3: Link interno al modulo**
 ```markdown
 <!-- PRIMA (ERRATO) -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-[Componenti](../../laravel/modules/cms/docs/components/header.md)
-=======
 [Componenti](../../laravel/Modules/Cms/docs/components/header.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 [Componenti](../../laravel/modules/cms/docs/components/header.md)
->>>>>>> dev
 
 <!-- DOPO (CORRETTO) -->
 [Componenti](./components/header.md)

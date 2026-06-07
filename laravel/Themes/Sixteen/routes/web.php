@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
 
->>>>>>> dev
 use Illuminate\Support\Facades\Route;
 use Themes\Sixteen\Http\Controllers\ComuneController;
 
@@ -18,11 +15,7 @@ use Themes\Sixteen\Http\Controllers\ComuneController;
 |
 */
 
-<<<<<<< HEAD
-Route::prefix('comune')->name('comune.')->group(function () {
-=======
 Route::prefix('comune')->name('comune.')->group(function (): void {
->>>>>>> dev
     // Homepage
     Route::get('/', [ComuneController::class, 'homepage'])->name('homepage');
 

@@ -2,16 +2,9 @@
 
 ## Introduzione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di SaluteOra, in particolare per la gestione dei template email.
-=======
 Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di , in particolare per la gestione dei template email.
 Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di <nome progetto>, in particolare per la gestione dei template email.
->>>>>>> 4b6b99016 (first commit)
-=======
 Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di Quaeris, in particolare per la gestione dei template email.
->>>>>>> dev
 
 ## Panoramica del Pacchetto
 
@@ -25,37 +18,21 @@ Il pacchetto `filament-title-with-slug` di Camya fornisce un componente speciali
 - **Supporto Dark Mode**: Compatibilità con il tema scuro di Filament
 - **Validazione Avanzata**: Regole di validazione personalizzabili
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Compatibilità con SaluteOra
-
-Il componente è compatibile con l'architettura di SaluteOra e può essere integrato seguendo le convenzioni del progetto:
-=======
 ### Compatibilità con
 
 Il componente è compatibile con l'architettura di  e può essere integrato seguendo le convenzioni del progetto:
 ### Compatibilità con <nome progetto>
 
 Il componente è compatibile con l'architettura di <nome progetto> e può essere integrato seguendo le convenzioni del progetto:
->>>>>>> 4b6b99016 (first commit)
-=======
 ### Compatibilità con Quaeris
 
 Il componente è compatibile con l'architettura di Quaeris e può essere integrato seguendo le convenzioni del progetto:
->>>>>>> dev
 
 - Non utilizza componenti UI personalizzati
 - Può essere configurato per restituire array associativi con chiavi stringhe
 - Supporta la localizzazione attraverso file di traduzione
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Si integra con il pattern di form di Filament utilizzato 
-=======
 - Si integra con il pattern di form di Filament utilizzato
->>>>>>> 4b6b99016 (first commit)
-=======
 - Si integra con il pattern di form di Filament utilizzato 
->>>>>>> dev
 
 ## Installazione
 
@@ -75,16 +52,9 @@ php artisan vendor:publish --tag="filament-title-with-slug-config"
 
 ### Configurazione Base
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di SaluteOra:
-=======
 Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di :
 Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di <nome progetto>:
->>>>>>> 4b6b99016 (first commit)
-=======
 Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di Quaeris:
->>>>>>> dev
 
 ```php
 use Camya\Filament\Forms\Components\TitleWithSlugInput;
@@ -97,38 +67,22 @@ public static function getFormSchema(): array
             fieldSlug: 'slug',
         )
         ->columnSpanFull(),
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         // Altri campi del form
         'subject' => Forms\Components\TextInput::make('subject')
             ->required()
             ->maxLength(255),
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             
         'html_template' => Forms\Components\RichEditor::make('html_template')
             ->required()
             ->columnSpanFull(),
             
-<<<<<<< HEAD
-=======
 
         'html_template' => Forms\Components\RichEditor::make('html_template')
             ->required()
             ->columnSpanFull(),
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         'text_template' => Forms\Components\Textarea::make('text_template')
             ->maxLength(65535)
             ->columnSpanFull(),
@@ -138,16 +92,9 @@ public static function getFormSchema(): array
 
 ### Personalizzazione Avanzata
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Per adattare il componente alle esigenze specifiche di SaluteOra:
-=======
 Per adattare il componente alle esigenze specifiche di :
 Per adattare il componente alle esigenze specifiche di <nome progetto>:
->>>>>>> 4b6b99016 (first commit)
-=======
 Per adattare il componente alle esigenze specifiche di Quaeris:
->>>>>>> dev
 
 ```php
 'titleSlug' => TitleWithSlugInput::make(
@@ -184,16 +131,9 @@ Il componente mostra un'anteprima dell'URL completo, personalizzabile attraverso
 
 ```php
 ->urlPath('/mail-templates/')
-<<<<<<< HEAD
-<<<<<<< HEAD
-->urlHost('https://saluteora.example.com')
-=======
 ->urlHost('https://<nome progetto>.example.com')
 ->urlHost('https://<nome progetto>.example.com')
->>>>>>> 4b6b99016 (first commit)
-=======
 ->urlHost('https://Quaeris.example.com')
->>>>>>> dev
 ->urlHostVisible(true)
 ```
 
@@ -223,29 +163,15 @@ Per la validazione dell'unicità, il componente offre parametri specifici:
 Il componente può generare un link per visualizzare direttamente la risorsa:
 
 ```php
-<<<<<<< HEAD
-<<<<<<< HEAD
-->urlVisitLinkRoute(fn(?Model $record) => $record?->slug 
-=======
 ->urlVisitLinkRoute(fn(?Model $record) => $record?->slug
->>>>>>> 4b6b99016 (first commit)
-=======
 ->urlVisitLinkRoute(fn(?Model $record) => $record?->slug 
->>>>>>> dev
     ? route('notify.mail-templates.view', ['slug' => $record->slug])
     : null)
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Vantaggi per SaluteOra
-=======
 ## Vantaggi per
 ## Vantaggi per <nome progetto>
->>>>>>> 4b6b99016 (first commit)
-=======
 ## Vantaggi per Quaeris
->>>>>>> dev
 
 L'integrazione di questo componente nel modulo Notify offrirebbe:
 
@@ -257,14 +183,6 @@ L'integrazione di questo componente nel modulo Notify offrirebbe:
 
 ## Considerazioni per l'Implementazione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Conformità con le Convenzioni di SaluteOra
-
-Per rispettare le convenzioni del progetto, è necessario:
-
-1. **Traduzione**: Configurare le etichette per utilizzare il sistema di traduzione di SaluteOra anziché testi hardcoded
-=======
 ### Conformità con le Convenzioni di
 
 Per rispettare le convenzioni del progetto, è necessario:
@@ -275,14 +193,11 @@ Per rispettare le convenzioni del progetto, è necessario:
 Per rispettare le convenzioni del progetto, è necessario:
 
 1. **Traduzione**: Configurare le etichette per utilizzare il sistema di traduzione di <nome progetto> anziché testi hardcoded
->>>>>>> 4b6b99016 (first commit)
-=======
 ### Conformità con le Convenzioni di Quaeris
 
 Per rispettare le convenzioni del progetto, è necessario:
 
 1. **Traduzione**: Configurare le etichette per utilizzare il sistema di traduzione di Quaeris anziché testi hardcoded
->>>>>>> dev
 2. **Array Associativo**: Utilizzare chiavi stringhe nell'array di schema del form
 3. **Nomenclatura**: Seguire le convenzioni di nomenclatura del progetto
 
@@ -303,15 +218,8 @@ public static function getFormSchema(): array
             if (!$record?->slug) return null;
             return route('notify.mail-templates.view', ['slug' => $record->slug]);
         }),
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         // Altri campi...
     ];
 }
@@ -322,45 +230,24 @@ public static function getFormSchema(): array
 ### Potenziali Limitazioni
 
 1. **Dipendenza Esterna**: Introduce una dipendenza aggiuntiva nel progetto
-<<<<<<< HEAD
-<<<<<<< HEAD
-2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di SaluteOra
-=======
 2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di
 2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di <nome progetto>
->>>>>>> 4b6b99016 (first commit)
-=======
 2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di Quaeris
->>>>>>> dev
 3. **Modifiche Future**: Come ogni dipendenza, è soggetto a cambiamenti nelle versioni future
 
 ### Alternative
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di SaluteOra
-=======
 1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di
 1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di <nome progetto>
->>>>>>> 4b6b99016 (first commit)
-=======
 1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di Quaeris
->>>>>>> dev
 2. **Approccio Modulare**: Utilizzare i componenti nativi di Filament con logica personalizzata
 3. **Altri Pacchetti**: Valutare pacchetti alternativi con funzionalità simili
 
 ## Conclusioni
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di SaluteOra potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
-=======
 Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di  potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
 Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di <nome progetto> potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
->>>>>>> 4b6b99016 (first commit)
-=======
 Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di Quaeris potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
->>>>>>> dev
 
 L'implementazione dovrebbe seguire le convenzioni del progetto, con particolare attenzione alla localizzazione e alla struttura del form schema.
 
@@ -368,12 +255,6 @@ L'implementazione dovrebbe seguire le convenzioni del progetto, con particolare 
 
 - [Repository GitHub del Pacchetto](https://github.com/camya/filament-title-with-slug)
 - [Documentazione Filament](https://filamentphp.com/docs)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Implementazione Modello con Slug](./model_slug_implementation.md)
-- [Implementazione Risorsa con Slug](./resource_slug_implementation.md)
-- [Miglioramenti UI/UX](./ui_ux_enhancements.md)
-=======
 - [Implementazione Modello con Slug](./MODEL_SLUG_IMPLEMENTATION.md)
 - [Implementazione Risorsa con Slug](./RESOURCE_SLUG_IMPLEMENTATION.md)
 - [Miglioramenti UI/UX](./UI_UX_ENHANCEMENTS.md)
@@ -596,9 +477,6 @@ L'implementazione dovrebbe seguire le convenzioni del progetto, con particolare 
 - [Implementazione Modello con Slug](./MODEL_SLUG_IMPLEMENTATION.md)
 - [Implementazione Risorsa con Slug](./RESOURCE_SLUG_IMPLEMENTATION.md)
 - [Miglioramenti UI/UX](./UI_UX_ENHANCEMENTS.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Implementazione Modello con Slug](./model_slug_implementation.md)
 - [Implementazione Risorsa con Slug](./resource_slug_implementation.md)
 - [Miglioramenti UI/UX](./ui_ux_enhancements.md)
->>>>>>> dev

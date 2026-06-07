@@ -32,12 +32,5 @@ Implementato pattern corretto per factory riutilizzabili con namespace dinamico.
 - **Factory riutilizzabili** per tutti i progetti
 - **Type safety** migliorata per configurazioni
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 *Ultimo aggiornamento: gennaio 2025*
->>>>>>> dev
-

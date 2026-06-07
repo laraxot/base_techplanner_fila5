@@ -47,10 +47,6 @@ return [
                 'placeholder' => 'Seleziona i canali',
                 'tooltip' => 'Canali di invio disponibili',
                 'options' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
                     'email' => [
                         'label' => 'Email',
                     ],
@@ -66,16 +62,6 @@ return [
                     'telegram' => [
                         'label' => 'Telegram',
                     ],
-<<<<<<< HEAD
-=======
-                    'email' => ['label' => 'Email'],
-                    'sms' => ['label' => 'SMS'],
-                    'push' => ['label' => 'Push Notification'],
-                    'whatsapp' => ['label' => 'WhatsApp'],
-                    'telegram' => ['label' => 'Telegram'],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                 ],
             ],
             'variables' => [
@@ -107,10 +93,6 @@ return [
             'category' => [
                 'label' => 'Categoria',
                 'options' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
                     'welcome' => [
                         'label' => 'Benvenuto',
                     ],
@@ -120,36 +102,17 @@ return [
                     'notification' => [
                         'label' => 'Notifica',
                     ],
-<<<<<<< HEAD
-=======
-                    'welcome' => ['label' => 'Benvenuto'],
-                    'reminder' => ['label' => 'Promemoria'],
-                    'notification' => ['label' => 'Notifica'],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                 ],
             ],
             'is_active' => [
                 'label' => 'Stato',
                 'options' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
                     'active' => [
                         'label' => 'Attivo',
                     ],
                     'inactive' => [
                         'label' => 'Inattivo',
                     ],
-<<<<<<< HEAD
-=======
-                    'active' => ['label' => 'Attivo'],
-                    'inactive' => ['label' => 'Inattivo'],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
                 ],
             ],
         ],
@@ -185,10 +148,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -202,9 +161,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

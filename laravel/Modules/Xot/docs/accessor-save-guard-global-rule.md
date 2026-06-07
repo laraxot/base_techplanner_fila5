@@ -67,11 +67,7 @@ public function get<Nome>Attribute(?type $value): ?type
 ### Scopo Business
 
 **Nei sistemi PA (PTVX)**:
-<<<<<<< HEAD
-- Schede valutazione calcolano valori durante edit
-=======
 - Scheda valutazione calcola valori durante edit
->>>>>>> dev
 - Performance evaluation aggrega dati storici
 - Indennità calcola importi da timbrature
 
@@ -128,11 +124,7 @@ if (null == $this->getKey()) {
 
 6. ⏳ **Rating/Models/Traits/RatingTrait.php**
 7. ⏳ **Ptv/Models/BaseScheda.php**
-<<<<<<< HEAD
-8. ⏳ **Progressioni/Models/Schede.php**
-=======
 8. ⏳ **Progressioni/Models/Scheda.php**
->>>>>>> dev
 9. ⏳ **Performance/Models/StabiDirigente.php**
 10. ⏳ **User/Models/BaseTenant.php**
 
@@ -227,11 +219,7 @@ public function getMediaAttribute(): float {
 **Settimana 2**:
 - [ ] Rating/RatingTrait
 - [ ] Ptv/BaseScheda
-<<<<<<< HEAD
-- [ ] Progressioni/Schede
-=======
 - [ ] Progressioni/Scheda
->>>>>>> dev
 
 **Settimana 3**:
 - [ ] Altri moduli + cleanup finale
@@ -301,10 +289,6 @@ test('accessor salva se model ha PK', function () {
 ## Collegamenti
 
 ### Implementazioni Modulo-Specifiche
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Sigma - SchedaTrait Fix](../../sigma/docs/fix-duplicate-entry-error-summary.md)
 - [Performance - MutatorTrait](../../performance/docs/mutator-guard-fix.md) (da creare)
 - [IndennitaCondizioniLavoro - MutatorTrait](../../indennitacondizionilavoro/docs/accessor-guard.md) (da creare)
@@ -312,8 +296,6 @@ test('accessor salva se model ha PK', function () {
 ### Documentazione Pattern
 - [Accessor Pattern](../../sigma/docs/scheda-trait-accessor-pattern.md)
 - [Refactoring Philosophy](../../sigma/docs/accessor-refactoring-philosophy.md)
-<<<<<<< HEAD
-=======
 - [Sigma - SchedaTrait Fix](../../Sigma/docs/fix-duplicate-entry-error-summary.md)
 - [Performance - MutatorTrait](../../Performance/docs/mutator-guard-fix.md) (da creare)
 - [IndennitaCondizioniLavoro - MutatorTrait](../../IndennitaCondizioniLavoro/docs/accessor-guard.md) (da creare)
@@ -321,9 +303,6 @@ test('accessor salva se model ha PK', function () {
 ### Documentazione Pattern
 - [Accessor Pattern](../../Sigma/docs/scheda-trait-accessor-pattern.md)
 - [Refactoring Philosophy](../../Sigma/docs/accessor-refactoring-philosophy.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ### Regole Globali
 - [.cursor/rules/accessor-save-guard.mdc](../../../.cursor/rules/accessor-save-guard.mdc) (da creare)
@@ -331,15 +310,8 @@ test('accessor salva se model ha PK', function () {
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Creato**: [DATE]
-=======
 **Creato**: 2025-01-29
->>>>>>> 4b6b99016 (first commit)
-=======
 **Creato**: [DATE]
->>>>>>> dev
 **Tipo**: Regola Architettutale Globale
 **Applicazione**: Tutti i moduli
 **Severità**: 🔴 CRITICA

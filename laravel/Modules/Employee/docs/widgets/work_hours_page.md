@@ -18,13 +18,7 @@ This guide documents how to implement the WorkHoursPage for the Employee module,
 `BuildTimeEntriesForRangeAction::execute(int $userId, Carbon $start, Carbon $end): array` returns
 ```
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   byDate: { [date: string]: Array<{ start: string, end: string|null, status: string }> },
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
   summary: { workedMinutes: int, addedMinutes: int, reducedMinutes: int, contractMinutes: int },
   contracts: { [date: string]: int }
 }
@@ -53,5 +47,3 @@ This guide documents how to implement the WorkHoursPage for the Employee module,
 
 ### references
 - Spatie Queueable Actions: https://github.com/spatie/laravel-queueable-action
-
-

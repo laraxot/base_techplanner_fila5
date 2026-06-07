@@ -749,32 +749,17 @@ class BatchPdfGenerator
 
 ## 📚 References
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [HTML2PDF Best Practices](../xot/docs/html2pdf-best-practices.md)
-- [Lang Module README](./readme.md)
-=======
 - [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
 - [Lang Module README](./README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
 - [Lang Module README](./README.md)
->>>>>>> dev
 - [Filament Internationalization](https://filamentphp.com/docs/3.x/panels/translations)
 - [Laravel Localization](https://laravel.com/docs/localization)
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**
-=======
 **Last Updated:** 2025-12-09
->>>>>>> 4b6b99016 (first commit)
-=======
 **Last Updated:** 2025-12-09
->>>>>>> dev
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅

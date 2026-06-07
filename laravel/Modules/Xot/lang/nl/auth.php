@@ -10,10 +10,6 @@ return [
     ],
     'throttle' => 'Te veel aanmeld pogingen, probeer het nog eens na :seconds seconden.',
     'unknown' => 'Onbekende fout opgetreden',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -27,9 +23,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

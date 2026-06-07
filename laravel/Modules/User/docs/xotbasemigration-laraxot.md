@@ -334,11 +334,7 @@ sed -i 's/extends XotBaseMigration/extends XotBaseMigration/g' Modules/User/data
 ## Riferimenti
 
 - [XotBaseMigration Documentation](../../xot/docs/xotbasemigration-guide.md)
-<<<<<<< HEAD
-- [Laraxot Philosophy](../../docs/laraxot-philosophy.md)
-=======
 - [Laraxot Philosophy](../../../docs/laraxot-philosophy.md)
->>>>>>> dev
 - [Migration Best Practices](migration-best-practices.md)
 - [PHPStan Configuration](../../../phpstan.neon)
 

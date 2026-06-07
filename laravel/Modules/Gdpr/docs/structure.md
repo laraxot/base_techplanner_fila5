@@ -1,25 +1,14 @@
 # Modulo Gdpr
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Data: [DATE] 19:09:55
-=======
 Data: 2025-04-23 19:09:55
->>>>>>> 4b6b99016 (first commit)
-=======
 Data: [DATE] 19:09:55
->>>>>>> dev
 
 ## Informazioni generali
 
 - **Namespace principale**: Modules\\Gdpr
 Modules\\Gdpr\\Database\\Factories
 Modules\\Gdpr\\Database\\Seeders
-<<<<<<< HEAD
-- **Pacchetto Composer**: laraxot/module_gdpr_fila3
-=======
 - **Pacchetto Composer**: laraxot/module_gdpr_fila5
->>>>>>> dev
 Marco Sottana
 - **Dipendenze**: statikbe/laravel-cookie-consent * repositories type path url ../Xot type path url ../Tenant type path url ../UI scripts post-autoload-dump1 @php artisan vendor:publish --provider='Statikbe\\CookieConsent\\CookieConsentServiceProvider' --tag='cookie-public'
 - **Totale file PHP**: 68
@@ -356,10 +345,6 @@ tests/Unit
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [structure.md](laravel/modules/gdpr/docs/structure.md)
 * [structure.md](laravel/modules/notify/docs/structure.md)
 * [structure.md](laravel/modules/xot/docs/structure.md)
@@ -375,8 +360,6 @@ tests/Unit
 * [structure.md](laravel/modules/cms/docs/structure.md)
 * [structure.md](laravel/modules/cms/docs/themes/structure.md)
 * [structure.md](laravel/modules/cms/docs/components/structure.md)
-<<<<<<< HEAD
-=======
 * [structure.md](laravel/Modules/Gdpr/docs/structure.md)
 * [structure.md](laravel/Modules/Notify/docs/structure.md)
 * [structure.md](laravel/Modules/Xot/docs/structure.md)
@@ -392,6 +375,3 @@ tests/Unit
 * [structure.md](laravel/Modules/Cms/docs/structure.md)
 * [structure.md](laravel/Modules/Cms/docs/themes/structure.md)
 * [structure.md](laravel/Modules/Cms/docs/components/structure.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

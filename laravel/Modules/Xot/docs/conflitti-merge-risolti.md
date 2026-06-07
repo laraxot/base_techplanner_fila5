@@ -101,15 +101,8 @@ Per prevenire problemi simili in futuro, si raccomanda di:
 
 ### Caso concreto: XotBaseManageRelatedRecords.php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Durante la risoluzione dei conflitti, nel file `Modules/Xot/app/Filament/Resources/XotBaseResource/Pages/XotBaseManageRelatedRecords.php` sono emerse chiamate sia a `getListTableColumns` che a `getTableColumns`. In linea con le regole di standardizzazione adottate nel progetto (vedi [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)), è stato scelto di mantenere **solo** `getTableColumns` come metodo per la definizione delle colonne delle tabelle Filament.
-=======
 Durante la risoluzione dei conflitti, nel file `Modules/Xot/app/Filament/Resources/XotBaseResource/Pages/XotBaseManageRelatedRecords.php` sono emerse chiamate sia a `getListTableColumns` che a `getTableColumns`. In linea con le regole di standardizzazione adottate nel progetto (vedi [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md)), è stato scelto di mantenere **solo** `getTableColumns` come metodo per la definizione delle colonne delle tabelle Filament.
->>>>>>> 4b6b99016 (first commit)
-=======
 Durante la risoluzione dei conflitti, nel file `Modules/Xot/app/Filament/Resources/XotBaseResource/Pages/XotBaseManageRelatedRecords.php` sono emerse chiamate sia a `getListTableColumns` che a `getTableColumns`. In linea con le regole di standardizzazione adottate nel progetto (vedi [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)), è stato scelto di mantenere **solo** `getTableColumns` come metodo per la definizione delle colonne delle tabelle Filament.
->>>>>>> dev
 
 **Motivazione:**
 - Coerenza con lo standard Filament e con le regole di progetto
@@ -117,24 +110,10 @@ Durante la risoluzione dei conflitti, nel file `Modules/Xot/app/Filament/Resourc
 - Facilità di upgrade futuro e riduzione delle ambiguità
 
 **Backlink:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Regola generale e motivazione in FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)
-=======
 - [Regola generale e motivazione in FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Regola generale e motivazione in FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)
->>>>>>> dev
 
 ---
 ## Conclusioni
 
 La risoluzione dei conflitti di merge ha ripristinato la corretta funzionalità delle classi nel modulo Xot, permettendo l'analisi statica con PHPStan e garantendo il corretto funzionamento dell'applicazione. Le soluzioni implementate hanno mantenuto la coerenza del codice e migliorato la robustezza delle classi interessate.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

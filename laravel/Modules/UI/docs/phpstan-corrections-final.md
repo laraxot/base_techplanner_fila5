@@ -107,13 +107,7 @@
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2025-01-06
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Status**: ✅ Tutte le correzioni completate
 **PHPStan Level**: 10 ✅
 **Errori totali**: 0 ✅

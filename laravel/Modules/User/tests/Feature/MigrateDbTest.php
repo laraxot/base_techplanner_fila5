@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\User\Tests\Feature;
-
->>>>>>> dev
 use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);

@@ -1,10 +1,5 @@
 # Standard per le Migrazioni in <nome progetto>
 
-<<<<<<< HEAD
-## Introduzione
-
-Questo documento definisce gli standard e le best practices da seguire per tutte le migrazioni nei moduli di <nome progetto>. Questi standard sono fondamentali per garantire la coerenza e la correttezza delle migrazioni in tutto il progetto.
-=======
 ## Convenzioni di Nomenclatura
 
 ### REGOLA UNIVERSALE
@@ -31,23 +26,15 @@ Indipendentemente dal tipo di operazione (CREATE, ADD, CHANGE, FIX), il nome del
 - ❌ `2026_02_13_171410_fix_causer_id_to_uuid.php`
 
 ---
->>>>>>> dev
 
 ## Principi Fondamentali
 
 1. **Estensione della classe base**: Tutte le migrazioni devono estendere `XotBaseMigration`
-<<<<<<< HEAD
-2. **Proprietà obbligatorie**: Ogni migrazione deve definire le proprietà `$table` e `$connection`
-3. **Documentazione completa**: Ogni migrazione deve includere una documentazione che descriva lo scopo della tabella
-4. **Verifica delle tabelle correlate**: Prima di creare foreign keys, verificare sempre l'esistenza della tabella correlata
-5. **Gestione dei timestamp**: Utilizzare sempre `$this->updateTimestamps()` per gestire i timestamp
-=======
 2. **Proprietà obbligatorie**: Ogni migrazione deve definire `$model_class`
 3. **Documentazione completa**: Ogni migrazione deve includere un docblock che descriva lo scopo
 4. **Verifica delle tabelle correlate**: Prima di creare foreign keys, verificare sempre l'esistenza della tabella correlata
 5. **Gestione dei timestamp**: Utilizzare sempre `$this->updateTimestamps()` per gestire i timestamp
 6. **Nome file**: Il file DEVE terminare con `_table.php`
->>>>>>> dev
 
 ## Struttura Standard delle Migrazioni
 
@@ -57,67 +44,23 @@ Indipendentemente dal tipo di operazione (CREATE, ADD, CHANGE, FIX), il nome del
 declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
-<<<<<<< HEAD
-use Illuminate\Support\Facades\Schema;
-=======
 use Modules\NomeModello\Models\NomeModello;
->>>>>>> dev
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /**
  * Migrazione per [scopo della migrazione].
  *
-<<<<<<< HEAD
- * @see docs/standards/migrations.md
- */
-return new class extends XotBaseMigration
-{
-    /**
-     * Nome della tabella.
-     *
-     * @var string
-     */
-    protected string $table = 'nome_tabella';
-
-    /**
-     * Connessione al database.
-     *
-     * @var string
-     */
-    protected ?string $connection = 'mysql'; // o altra connessione appropriata
-=======
  * @see docs/database/migrations.md
  */
 return new class extends XotBaseMigration
 {
     protected ?string $model_class = NomeModello::class;
->>>>>>> dev
 
     /**
      * Run the migrations.
      */
     public function up(): void
     {
-<<<<<<< HEAD
-        $this->tableCreate(function (Blueprint $table) {
-            $table->id(); // o altro tipo di chiave primaria
-
-            // Definizione dei campi
-
-            // Utilizziamo updateTimestamps per gestire created_at, updated_at e deleted_at
-            $this->updateTimestamps($table, true); // true per includere soft delete
-
-            // Verifica se le tabelle correlate esistono prima di creare foreign keys
-            if (Schema::connection($this->getConnection())->hasTable('tabella_correlata')) {
-                $table->foreign('campo_id')
-                    ->references('id')
-                    ->on('tabella_correlata')
-                    ->onDelete('cascade');
-            }
-
-            // Indici
-            $table->index('campo_id');
-=======
         // Per creare una nuova tabella
         $this->tableCreate(function (Blueprint $table) {
             $table->uuid('id')->primary();
@@ -130,7 +73,6 @@ return new class extends XotBaseMigration
             if (! $this->hasColumn('nome_colonna')) {
                 $table->string('nome_colonna')->nullable();
             }
->>>>>>> dev
         });
     }
 };
@@ -200,21 +142,12 @@ if (! $this->hasIndex('nome_indice')) {
 
 Ogni modulo può avere best practices specifiche per le migrazioni. Consultare la documentazione del modulo per ulteriori dettagli:
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/project_docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/project_docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/project_docs/migration_best_practices.md)
-=======
 - [Best Practices per le Migrazioni nel Modulo Patient](/laravel/Modules/Patient/project_docs/MIGRATION_BEST_PRACTICES.md)
 - [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/Modules/Tenant/project_docs/MIGRATION_BEST_PRACTICES.md)
 - [Best Practices per le Migrazioni nel Modulo User](/laravel/Modules/User/project_docs/MIGRATION_BEST_PRACTICES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/project_docs/migration_best_practices.md)
 - [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/project_docs/migration_best_practices.md)
 - [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/project_docs/migration_best_practices.md)
->>>>>>> dev
 
 ## Errori Comuni e Come Evitarli
 

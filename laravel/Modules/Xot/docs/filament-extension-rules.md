@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Filament Class Extension Rules - base_techplanner_fila4_mono
-=======
 # Filament Class Extension Rules - base_techplanner_fila5_mono
->>>>>>> dev
 
 Questa pagina esiste per compatibilità e storico del modulo.
 
@@ -12,8 +8,4 @@ La **documentazione canonica** (aggiornata e senza duplicazioni) è in:
 
 Link diretto (relativo da questo file):
 
-<<<<<<< HEAD
-- [Filament Extension Rules (Architecture)](../../../docs/architecture/filament-extension-rules.md)
-=======
 - [Filament Extension Rules (Architecture)](../../../../docs/architecture/filament-extension-rules.md)
->>>>>>> dev

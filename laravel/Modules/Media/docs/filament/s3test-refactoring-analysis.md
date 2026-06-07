@@ -128,21 +128,14 @@ protected function getFormSchema(): array
 
 ## 🔗 **Collegamenti Documentazione**
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Media Module README](../readme.md)
-=======
 - [Media Module README](../README.md)
->>>>>>> 4b6b99016 (first commit)
 - [Filament Best Practices](../../../docs/filament-best-practices.md)
 - [Translation Rules](../../../docs/translation-rules.md)
 - [PHPStan Guidelines](../../../docs/phpstan-guidelines.md)
-=======
 - [Media Module README](../readme.md)
 - [Filament Best Practices](../../../../docs/filament-best-practices.md)
 - [Translation Rules](../../../../docs/translation-rules.md)
 - [PHPStan Guidelines](../../../../docs/phpstan-guidelines.md)
->>>>>>> dev
 
 ## 📊 **Metriche Miglioramento**
 

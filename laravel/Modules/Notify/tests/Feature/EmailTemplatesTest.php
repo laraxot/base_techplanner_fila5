@@ -2,19 +2,10 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-use Illuminate\Support\Facades\File;
-<<<<<<< HEAD
-use Modules\Notify\Tests\TestCase;
-=======
-use Tests\TestCase;
->>>>>>> 4b6b99016 (first commit)
-=======
 namespace Modules\Notify\Tests\Feature;
 
 use Illuminate\Support\Facades\File;
 use Modules\Notify\Tests\TestCase;
->>>>>>> dev
 
 uses(TestCase::class);
 
@@ -23,11 +14,6 @@ test('html template contains optional function', function (): void {
     $filePath = base_path('Modules/Notify/resources/views/emails/html.blade.php');
 
     // Verifico che il file esiste
-<<<<<<< HEAD
-    $this->assertTrue(File::exists($filePath), 'Il file html.blade.php non esiste');
-=======
-    $this->assertTrue(File::exists($filePath));
->>>>>>> dev
 
     // Leggo il contenuto del file
     $content = File::get($filePath);
@@ -43,11 +29,6 @@ test('html template contains optional function', function (): void {
     $hasSubjectVar = str_contains($content, '$subject');
 
     $this->assertTrue($hasEmailData || $hasSubjectVar, 'Il template html.blade.php non gestisce subject via $email_data o $subject');
-<<<<<<< HEAD
-    $this->assertTrue($hasOptional, 'Il template html.blade.php non utilizza optional() per gestire dati email');
-=======
-    $this->assertTrue($hasOptional, 'Il template html.blade.php non utilizza optional()');
->>>>>>> dev
 });
 
 test('sunny sample template exists', function (): void {
@@ -55,11 +36,6 @@ test('sunny sample template exists', function (): void {
     $filePath = base_path('Modules/Notify/resources/views/emails/samples/sunny.blade.php');
 
     // Verifico che il file esiste
-<<<<<<< HEAD
-    $this->assertTrue(File::exists($filePath), 'Il file sunny.blade.php non esiste');
-=======
-    $this->assertTrue(File::exists($filePath));
->>>>>>> dev
 
     // Leggo il contenuto del file
     $content = File::get($filePath);
@@ -73,11 +49,6 @@ test('ark sample template exists', function (): void {
     $filePath = base_path('Modules/Notify/resources/views/emails/samples/ark.blade.php');
 
     // Verifico che il file esiste
-<<<<<<< HEAD
-    $this->assertTrue(File::exists($filePath), 'Il file ark.blade.php non esiste');
-=======
-    $this->assertTrue(File::exists($filePath));
->>>>>>> dev
 
     // Leggo il contenuto del file
     $content = File::get($filePath);

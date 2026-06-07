@@ -161,14 +161,7 @@
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Data Objects Patient](../patient/docs/data-objects.md)
-=======
 - [Data Objects Patient](../Patient/docs/data-objects.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Data Objects Patient](../patient/docs/data-objects.md)
->>>>>>> dev
 - [Best Practices](./best-practices.md)
 - [Convenzioni di Codice](./coding-standards.md)

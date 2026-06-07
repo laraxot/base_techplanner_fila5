@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(Modules\Cms\Tests\TestCase::class);
-=======
-namespace Modules\Cms\Tests\Unit\View;
->>>>>>> dev
 
 use Modules\Cms\View\Components\AppLayout;
 use Modules\Cms\View\Components\GuestLayout;

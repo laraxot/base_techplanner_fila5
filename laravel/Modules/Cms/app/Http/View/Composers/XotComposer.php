@@ -22,25 +22,11 @@ final class XotComposer
     public function compose(View $view): void
     {
         $user = Auth::user();
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         if (! $user instanceof Authenticatable) {
             return;
         }
 
         if (! $user instanceof UserContract) {
-<<<<<<< HEAD
-=======
-        if (! ($user instanceof Authenticatable)) {
-            return;
-        }
-
-        if (! ($user instanceof UserContract)) {
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             return;
         }
 

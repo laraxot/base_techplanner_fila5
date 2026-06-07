@@ -5,13 +5,6 @@ declare(strict_types=1);
 ?>
 @props(['widget'])
 <div>
-<<<<<<< HEAD
-    {{--  
-    <x-dynamic-component :component="$widget" />
-    --}}
-    
-    @livewire($widget, $block->data)
-=======
     @php
         $canRenderWidget = is_string($widget)
             && $widget !== ''
@@ -32,5 +25,4 @@ declare(strict_types=1);
     @if ($canRenderWidget)
         @livewire($widget, $livewireParams)
     @endif
->>>>>>> dev
 </div>

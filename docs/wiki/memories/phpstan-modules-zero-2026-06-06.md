@@ -23,15 +23,23 @@ related:
 cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 ```
 
-**Mai** modificare `phpstan.neon` né baseline per mascherare errori.
+**Solo l'utente** modifica `laravel/phpstan.neon`. Gli agenti: zero edit su quel file (né ignore, né excludePaths, né level). Correggere sempre il codice in `Modules/`. Canon: [phpstan-no-level-parameter.md](../rules/phpstan-no-level-parameter.md).
 
-## Stato 2026-06-07 (TechPlanner Modules)
+## Stato corrente (TechPlanner Modules)
 
 | Metrica | Valore |
 |---------|--------|
-| File analizzati | 4993 |
+| File analizzati | ~5007 |
 | Errori PHPStan | **0** |
-| Comando | `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1` |
+| Comando | `cd laravel && ./vendor/bin/phpstan analyse --memory-limit=-1` |
+
+### Stato analisi Modules (codice)
+
+- **5007 file** analizzati — **0 errori** nel codice sorgente.
+- Exit code 1 possibile per **ignore obsoleto** in `phpstan.neon` (es. `#Static call to instance method Nwidart#` non più matchato) — **solo l'utente** rimuove la riga o riattiva `reportUnmatchedIgnoredErrors: false`.
+- Fix codice già in tree: `HandlerDecorator::renderForConsole` via `call_user_func`; `Address::getProvincia` con guard come `getRegione()`.
+
+Vedi [phpstan-config.md](../rules/phpstan-config.md).
 
 Fix riusabili applicati:
 
@@ -53,8 +61,30 @@ Fix riusabili applicati:
 
 ```bash
 cd laravel && ./vendor/bin/phpstan analyse Modules
-# 4993 file, [OK] No errors
+# 5007 file, [OK] No errors
 ```
+
+### Blocker `phpstan.parse` — file lang corrotti (2026-06-07)
+
+Sintomo: decine di errori `T_SR`, `empty array elements`, `unexpected ','` su `*/lang/**/*.php`.
+
+| Causa | Fix forward-only |
+|-------|------------------|
+| Marker Git (`<<<<<<<`, `>>>>>>> dev`) in array traduzioni | Ripulire manualmente; tenere solo valori finali (es. `'tooltip' => ''`) |
+| Path duplicato `Modules/Job/lang/lang/it/*` (merge errato) | **Eliminare** la cartella `lang/lang/`; SSoT = `Modules/Job/lang/it/` |
+| Array malformato (`Lang/lang/it/.php` con `),` extra) | Correggere struttura PHP; validare con `php -l` |
+
+Pre-flight prima di PHPStan:
+
+```bash
+cd laravel
+grep -r '^<<<<<<<' Modules/*/lang --include='*.php' && exit 1 || true
+find Modules -path '*/lang/lang' -type d -print   # deve essere vuoto (salvo User/Xot vendor shield)
+find Modules -path '*/lang/*' -name '*.php' -exec php -l {} \; 2>&1 | grep -v 'No syntax'
+./vendor/bin/phpstan analyse --memory-limit=-1
+```
+
+**Non** usare `git checkout --` su file lang: riscrivere forward-only ([git-forward-only.md](../rules/git-forward-only.md)).
 
 Pattern DTO: per DTO concreti con factory locali `make()`/`from()`, usare ritorno `self` e `new self()`.
 Non usare `new static()` se la factory non deve supportare late static binding: PHPStan puo' segnalarlo come `new.static`, oppure come `return.type` se si forza `new self()` mantenendo `static`.

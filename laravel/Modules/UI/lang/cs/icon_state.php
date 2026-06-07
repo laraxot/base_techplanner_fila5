@@ -10,14 +10,7 @@ return [
             'help' => 'Identifikační název prvku',
             'description' => 'Název objektu',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'edit-name' => [
             'label' => 'Upravit název',
@@ -25,14 +18,7 @@ return [
             'help' => 'Upravit existující název',
             'description' => 'Akce pro úpravu názvu',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'change-state' => [
             'label' => 'Změnit stav',
@@ -40,14 +26,7 @@ return [
             'help' => 'Upravit aktuální stav',
             'description' => 'Akce pro změnu stavu',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'state' => [
             'label' => 'Stav',
@@ -55,14 +34,7 @@ return [
             'help' => 'Aktuální stav prvku',
             'description' => 'Aktuální systémová podmínka',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'message' => [
             'label' => 'Zpráva',
@@ -70,14 +42,7 @@ return [
             'help' => 'Informativní zpráva',
             'description' => 'Text zprávy',
             'helper_text' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
     ],
     'messages' => [
@@ -91,10 +56,6 @@ return [
             'title' => 'Chyba přechodu',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -106,9 +67,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

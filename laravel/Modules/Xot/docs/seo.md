@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 Now Let's see Some Laravel SEO Packages
 
 6. Laravel Meta Manager
@@ -22,4 +19,3 @@ It is the most used SEO package in the Laravel Development Services. It helps wi
 10. Laravel-SEO
 
 One more handy Package of SEO that helps you by inserting, delete and managing the meta tags easily. Laravel developers can also add the structured data using Laravel-SEO packages effortlessly.
->>>>>>> dev

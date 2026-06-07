@@ -8,10 +8,6 @@ return [
     'C' => 'C',
     'D' => 'D',
     'E' => 'E',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Xls Import Action',
     'plural_label' => 'Xls Import Action (Plurale)',
     'navigation' => [
@@ -56,9 +52,4 @@ return [
             'label' => 'Elimina Xls Import Action',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -24,28 +24,14 @@ return [
             'placeholder' => 'Inserisci l\'ID della chat',
             'helper_text' => 'ID della chat Telegram di destinazione',
             'description' => 'Identificativo univoco della chat Telegram',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Inserisci il messaggio da inviare',
             'helper_text' => 'Contenuto del messaggio Telegram',
             'description' => 'Testo del messaggio da inviare tramite Telegram',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'parse_mode' => [
             'label' => 'Formato',
@@ -57,14 +43,7 @@ return [
                 'html' => 'HTML',
                 'markdown' => 'Markdown',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -88,14 +67,6 @@ return [
         'error' => 'Si è verificato un errore durante l\'invio del messaggio Telegram',
         'confirmation' => 'Sei sicuro di voler inviare questo messaggio Telegram?',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

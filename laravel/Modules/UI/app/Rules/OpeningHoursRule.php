@@ -32,16 +32,11 @@ class OpeningHoursRule implements ValidationRule
          * }
          * }
          */
-<<<<<<< HEAD
-        foreach ($days as $dayKey => $dayLabel) {
-            /* @phpstan-ignore-next-line */
-=======
         if (! \is_array($value)) {
             return;
         }
 
         foreach ($days as $dayKey => $dayLabel) {
->>>>>>> dev
             $dayHours = $value[$dayKey] ?? [];
 
             if (! \is_array($dayHours)) {

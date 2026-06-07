@@ -2,15 +2,8 @@
 
 ## Coverage Results
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date**: [DATE]  
-=======
 **Date**: 2026-01-18  
->>>>>>> 4b6b99016 (first commit)
-=======
 **Date**: [DATE]  
->>>>>>> dev
 **Module**: Media  
 **Status**: Tests pass but 0.00% per-module code coverage
 
@@ -67,12 +60,4 @@ PY
 - The Media module test suite is now stable and reflects the actual runtime schema.
 - Coverage is currently 0% because the executed tests do not hit code paths under `Modules/Media/app` that are counted as executable statements by the coverage driver.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 Last updated: 2026-01-18
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev

@@ -44,28 +44,14 @@ if(in_array($this->getColumnType('subject'), ['text', 'string'])) {
     DB::table('mail_templates')->whereNotNull('subject')->update([
         'subject' => DB::raw("JSON_OBJECT('it', subject)")
     ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
 
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
     // Passo 2: Gestire i valori NULL (opzionale)
     DB::table('mail_templates')->whereNull('subject')->update([
         'subject' => DB::raw("JSON_OBJECT('it', '')")
     ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
 
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
     // Passo 3: Ora è sicuro cambiare il tipo di colonna
     $table->json('subject')->nullable()->change();
 }
@@ -89,15 +75,8 @@ MailTemplate::whereNotNull('subject')->each(function ($template) {
 
 Un'altra strategia sicura è:
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. **Creare una nuova colonna** JSON 
-=======
 1. **Creare una nuova colonna** JSON
->>>>>>> 4b6b99016 (first commit)
-=======
 1. **Creare una nuova colonna** JSON
->>>>>>> dev
 2. **Migrare i dati** dalla vecchia colonna a quella nuova, convertendoli
 3. **Eliminare la vecchia colonna**
 4. **Rinominare** la nuova colonna
@@ -107,36 +86,16 @@ Un'altra strategia sicura è:
 if(in_array($this->getColumnType('subject'), ['text', 'string'])) {
     // Passo 1: Aggiungi colonna temporanea
     $table->json('subject_json')->nullable()->after('subject');
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
 
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
     // Passo 2: Migra i dati (da eseguire dopo la modifica dello schema)
     Schema::table('mail_templates', function (Blueprint $table) {
         DB::statement("UPDATE mail_templates SET subject_json = JSON_OBJECT('it', subject) WHERE subject IS NOT NULL");
     });
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-    // Passo 3: Elimina vecchia colonna
-    $table->dropColumn('subject');
-    
-=======
-=======
->>>>>>> dev
 
     // Passo 3: Elimina vecchia colonna
     $table->dropColumn('subject');
 
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     // Passo 4: Rinomina nuova colonna
     $table->renameColumn('subject_json', 'subject');
 }
@@ -164,24 +123,12 @@ if(!$this->hasColumn('subject')) {
 }
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Applicazione a SaluteOra
-
-Nel contesto di SaluteOra, tutte le migrazioni che coinvolgono la conversione di campi esistenti a JSON devono seguire queste linee guida, in particolare:
-=======
-=======
->>>>>>> dev
 ## Applicazione a
 
 Nel contesto di , tutte le migrazioni che coinvolgono la conversione di campi esistenti a JSON devono seguire queste linee guida, in particolare:
 ## Applicazione a <nome progetto>
 
 Nel contesto di <nome progetto>, tutte le migrazioni che coinvolgono la conversione di campi esistenti a JSON devono seguire queste linee guida, in particolare:
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 1. Le migrazioni per `mail_templates` e tabelle simili
 2. Campi multilingua che utilizzano il trait `HasTranslations`
@@ -192,12 +139,6 @@ Nel contesto di <nome progetto>, tutte le migrazioni che coinvolgono la conversi
 È necessario esaminare tutte le migrazioni esistenti per identificare pattern simili di conversione diretta a JSON:
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-grep -r "json.*change" /var/www/html/saluteora/laravel/Modules/*/database/migrations/
-=======
-=======
->>>>>>> dev
 grep -r "json.*change" Modules/*/database/migrations/
 grep -r "json.*change" Modules/*/database/migrations/
 grep -r "json.*change" Modules/*/database/migrations/
@@ -346,10 +287,6 @@ Nel contesto di <main module>, tutte le migrazioni che coinvolgono la conversion
 
 ```bash
 grep -r "json.*change" Modules/*/database/migrations/
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ```
 
 I problemi più comuni si verificano in migrazioni che coinvolgono campi con traduzioni multilingua o configurazioni serializzate.

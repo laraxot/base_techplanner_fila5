@@ -9,26 +9,13 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-=======
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Modules\User\Database\Factories\RoleFactory;
->>>>>>> 4b6b99016 (first commit)
-=======
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
->>>>>>> dev
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
@@ -39,74 +26,6 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\User\Models\Role.
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property int                                                        $id
- * @property string                                                     $uuid
- * @property string|null                                                $team_id
- * @property string                                                     $name
- * @property string                                                     $guard_name
- * @property string|null                                                $display_name
- * @property string|null                                                $description
- * @property Carbon|null                                                $created_at
- * @property Carbon|null                                                $updated_at
- * @property string|null                                                $updated_by
- * @property string|null                                                $created_by
- * @property Collection<int, Permission>                                $permissions
- * @property int|null                                                   $permissions_count
- * @property Team|null                                                  $team
- * @property Collection<int, Model&\Modules\Xot\Contracts\UserContract> $users
- * @property int|null                                                   $users_count
- * @property PermissionRole|null                                        $pivot
-=======
- * <<<<<<< HEAD
- * =======
- *
- * >>>>>>> 024bfed1 (.)
- *
- * @property int                                                                                      $id
- *                                                                                                                       =======
- * @property string                                                                                   $id
- * @property string                                                                                   $uuid
- * @property string|null                                                                              $team_id
- * @property string                                                                                   $name
- * @property string                                                                                   $guard_name
- * @property Carbon|null                                                                              $created_at
- * @property Carbon|null                                                                              $updated_at
- * @property Collection<int, Permission>                                                              $permissions
- * @property int|null                                                                                 $permissions_count
- * @property Team|null                                                                                $team
- * @property EloquentCollection<int, Model&UserContract>                                              $users
- * @property int|null                                                                                 $users_count
- *                                                                                                                       =======
- * @property int                                                                                      $id
- * @property string                                                                                   $uuid
- * @property string|null                                                                              $team_id
- * @property string                                                                                   $name
- * @property string                                                                                   $guard_name
- * @property \Illuminate\Support\Carbon|null                                                          $created_at
- * @property \Illuminate\Support\Carbon|null                                                          $updated_at
- * @property \Illuminate\Database\Eloquent\Collection<int, \Spatie\Permission\Models\Permission>      $permissions
- * @property int|null                                                                                 $permissions_count
- * @property Team|null                                                                                $team
- * @property \Illuminate\Database\Eloquent\Collection<int, Model&\Modules\Xot\Contracts\UserContract> $users
- * @property int|null                                                                                 $users_count
- *                                                                                                                       >>>>>>> 2880e04a (.)
- *                                                                                                                       =======
- * @property int                                                                                      $id
- * @property string|null                                                                              $team_id
- * @property string                                                                                   $name
- * @property string                                                                                   $guard_name
- * @property \Illuminate\Support\Carbon|null                                                          $created_at
- * @property \Illuminate\Support\Carbon|null                                                          $updated_at
- * @property \Illuminate\Support\Collection<int, Permission>                                          $permissions
- * @property int|null                                                                                 $permissions_count
- * @property Team|null                                                                                $team
- * @property \Illuminate\Database\Eloquent\Collection<int, User>                                      $users
- * @property int|null                                                                                 $users_count
- *                                                                                                                       >>>>>>> 5aac2b68 (.)
->>>>>>> 4b6b99016 (first commit)
-=======
  * @property int                                 $id
  * @property string                              $uuid
  * @property string|null                         $team_id
@@ -124,7 +43,6 @@ use Webmozart\Assert\Assert;
  * @property Collection<int, Model&UserContract> $users
  * @property int|null                            $users_count
  * @property PermissionRole|null                 $pivot
->>>>>>> dev
  *
  * @method static Builder|Role newModelQuery()
  * @method static Builder|Role newQuery()
@@ -135,10 +53,6 @@ use Webmozart\Assert\Assert;
  * @method static Builder|Role whereName($value)
  * @method static Builder|Role whereTeamId($value)
  * @method static Builder|Role whereUpdatedAt($value)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
  * @method static Builder|Role whereId($value)
  * @method static Builder|Role whereCreatedBy($value)
  * @method static Builder|Role whereUpdatedBy($value)
@@ -148,42 +62,6 @@ use Webmozart\Assert\Assert;
  * @method static static       firstOrCreate(array $attributes, array $values = [])
  * @method static static       updateOrCreate(array $attributes, array $values = [])
  *
-<<<<<<< HEAD
- * @mixin \Eloquent
-=======
- *
- * @property int $id
- *
- * @method static Builder|Role whereId($value)
- *
- * @property string|null $updated_by
- * @property string|null $created_by
- *
- * @method static Builder|Role whereCreatedBy($value)
- * @method static Builder|Role whereUpdatedBy($value)
- *
- * @mixin Eloquent
- *
- * @method static Builder|Role withoutPermission($permissions)
- *
- * @property PermissionRole|null $pivot
- *
- * @mixin IdeHelperRole
- *
- * @property string|null $display_name
- * @property string|null $description
- *
- * @method static RoleFactory          factory($count = null, $state = [])
- * @method static Builder<static>|Role whereDescription($value)
- * @method static Builder<static>|Role whereDisplayName($value)
- * @method static static               firstOrCreate(array $attributes, array $values = [])
- * @method static static               updateOrCreate(array $attributes, array $values = [])
- *
- * @mixin \Eloquent
- *
- * @phpstan-ignore-next-line
->>>>>>> 4b6b99016 (first commit)
-=======
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
@@ -192,7 +70,6 @@ use Webmozart\Assert\Assert;
  * @method static Builder<static>|Role                         whereUuid($value)
  *
  * @mixin \Eloquent
->>>>>>> dev
  */
 class Role extends SpatieRole
 {
@@ -208,15 +85,8 @@ class Role extends SpatieRole
 
     final public const ROLE_USER = 3;
 
-<<<<<<< HEAD
-    /** @var string */
     protected $connection = 'user';
 
-    /** @var string */
-=======
-    protected $connection = 'user';
-
->>>>>>> dev
     protected $keyType = 'int';
 
     /** @var list<string> */

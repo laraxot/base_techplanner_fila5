@@ -1,12 +1,6 @@
 # Regola Critica: Soluzione Intelligente e Professionale
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2025-01-22
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Status**: ✅ Regola Critica OBBLIGATORIA
 **Integrazione**: Metodologia Super Mucca
 
@@ -279,14 +273,7 @@ Questa regola si integra perfettamente con la [Metodologia Super Mucca](./super-
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2025-01-22
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: [DATE]
->>>>>>> dev
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA

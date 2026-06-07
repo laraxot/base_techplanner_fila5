@@ -1,14 +1,7 @@
 # Code Quality Improvements - Documento Consolidato
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Data creazione**: [DATE]
-=======
 **Data creazione**: 2025-01-22
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data creazione**: [DATE]
->>>>>>> dev
 **Filosofia**: Super Mucca + DRY + KISS + Type Safety
 **Obiettivo**: Miglioramento continuo qualità codice basato su best practices 2024-2025
 
@@ -354,14 +347,7 @@ $content = file_get_contents($path); // Lancia eccezione se fallisce
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2025-01-22
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: [DATE]
->>>>>>> dev
 **Versione**: 1.0.0
 **Status**: In progress

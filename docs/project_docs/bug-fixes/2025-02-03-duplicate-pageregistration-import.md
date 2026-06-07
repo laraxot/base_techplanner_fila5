@@ -1,12 +1,6 @@
 # Bug Fix: Duplicate PageRegistration Import
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Date:** 2025-02-03
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Module:** Activity
 **File:** `Modules/Activity/app/Filament/Resources/ActivityResource.php`
 

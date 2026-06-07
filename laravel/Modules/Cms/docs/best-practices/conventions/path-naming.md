@@ -27,11 +27,7 @@ In Laravel e nei moduli, alcune directory DEVONO essere in lowercase:
 - ❌ Il file `section.blade.php` per il componente Section è stato creato in `Modules/Cms/Resources/views/components` (ERRATO)
 - ✅ Il percorso corretto è `Modules/Cms/resources/views/components/section.blade.php` (CORRETTO)
 
-<<<<<<< HEAD
-Per approfondimenti, vedere [Analisi Gestione Percorsi (Root)](../../../../../docs/error_analysis/path_management.md)
-=======
 Per approfondimenti, vedere [Analisi Gestione Percorsi (Root)](../../../../../../docs/error_analysis/path_management.md)
->>>>>>> dev
 
 ### Motivazioni
 1. **Compatibilità**:
@@ -153,14 +149,6 @@ ls -la
 
 ## Collegamenti
 - [Struttura Moduli](../architecture/module-structure.md)
-<<<<<<< HEAD
-- [Documentazione Root – Naming Conventions](../../../../docs/regole/naming-convention.md)
-<<<<<<< HEAD
-- [Documentazione Root – Indice](../../../../docs/readme.md)
-=======
 - [Documentazione Root – Indice](../../../../docs/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione Root – Naming Conventions](../../../../../docs/regole/naming-convention.md)
 - [Documentazione Root – Indice](../../../../../docs/readme.md)
->>>>>>> dev

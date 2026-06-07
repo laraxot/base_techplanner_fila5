@@ -44,15 +44,8 @@ Per tutti i dati geografici statici (regioni, province, comuni, cap) di dimensio
 - Aggiornare la documentazione di Geo/docs, <nome progetto>/docs e questa stessa doc con collegamenti bidirezionali.
 
 Per dettagli implementativi e best practice vedi:
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Geo/docs/geo-json-model.md](../../geo/docs/geo-json-model.md)
-=======
 - [Geo/docs/geo-json-model.md](../../Geo/docs/geo-json-model.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Geo/docs/geo-json-model.md](../../geo/docs/geo-json-model.md)
->>>>>>> dev
 - [<nome progetto>/docs/geo-integration.md](../../<nome progetto>/docs/geo-integration.md)
 - [Questa stessa doc (Xot/module-structure.md)](module-structure.md)
 
@@ -81,10 +74,6 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 ## Collegamenti
 
 ### Documentazione Correlata
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](./directory-case-sensitivity.md) - Regole per la case sensitivity
@@ -95,8 +84,6 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 - [Cms](../cms/project_docs/readme.md) - Gestione contenuti
 - [Lang](../lang/project_docs/readme.md) - Traduzioni
 - [User](../user/project_docs/readme.md) - Gestione utenti
-<<<<<<< HEAD
-=======
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](./DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity
@@ -107,9 +94,6 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 - [Cms](../Cms/project_docs/README.md) - Gestione contenuti
 - [Lang](../Lang/project_docs/README.md) - Traduzioni
 - [User](../User/project_docs/README.md) - Gestione utenti
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Struttura Dettagliata
 
@@ -267,10 +251,6 @@ User/
 ## Collegamenti Moduli
 
 ### Modulo UI
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Componenti Volt](../ui/project_docs/components/volt.md)
 - [Layout](../ui/project_docs/layouts.md)
 - [Temi](../ui/project_docs/themes.md)
@@ -336,8 +316,6 @@ User/
 - [Grafici](../chart/project_docs/charts.md)
 - [Dashboard](../chart/project_docs/dashboard.md)
 - [Visualizzazione](../chart/project_docs/visualization.md)
-<<<<<<< HEAD
-=======
 - [Componenti Volt](../UI/project_docs/components/volt.md)
 - [Layout](../UI/project_docs/layouts.md)
 - [Temi](../UI/project_docs/themes.md)
@@ -403,9 +381,6 @@ User/
 - [Grafici](../Chart/project_docs/charts.md)
 - [Dashboard](../Chart/project_docs/dashboard.md)
 - [Visualizzazione](../Chart/project_docs/visualization.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 # Struttura dei Moduli Laravel
 
@@ -548,8 +523,4 @@ Se trovi una directory con case errato:
 6. Committa le modifiche
 
 ## Collegamenti tra versioni di module_structure.md
-<<<<<<< HEAD
-* [module_structure.md](../../../../project_docs/error_analysis/module_structure.md)
-=======
 * [module_structure.md](../../../../../docs/project/error_analysis/module_structure.md)
->>>>>>> dev

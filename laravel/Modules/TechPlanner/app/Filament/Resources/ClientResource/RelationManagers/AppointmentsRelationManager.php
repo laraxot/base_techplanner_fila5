@@ -4,26 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Filament\Resources\ClientResource\RelationManagers;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Override;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Filament\Tables\Columns;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\TechPlanner\Filament\Resources\AppointmentResource;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Override;
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-use Override;
->>>>>>> dev
 
 class AppointmentsRelationManager extends XotBaseRelationManager
 {

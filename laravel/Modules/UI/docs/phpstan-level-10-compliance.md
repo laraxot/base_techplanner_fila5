@@ -1,28 +1,14 @@
 # PHPStan Level 10 Compliance - UI Module
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2025-12-10
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: [DATE]
->>>>>>> dev
 **Status**: ✅ Completamente conforme a PHPStan Level 10
 
 ## 📊 Stato Corrente
 - **Errori PHPStan**: 0
 - **Livello analisi**: Level 10 (massimo)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Data ultima verifica**: [DATE]
-=======
 - **Data ultima verifica**: 2025-12-10
->>>>>>> 4b6b99016 (first commit)
-=======
 - **Data ultima verifica**: [DATE]
->>>>>>> dev
 
 ## 🔧 Correzioni Applicate
 

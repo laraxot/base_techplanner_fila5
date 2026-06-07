@@ -9,13 +9,6 @@ use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Modules\User\Database\Factories\DeviceFactory;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -26,13 +19,6 @@ use Modules\Xot\Datas\XotData;
  * @property EloquentCollection<int, Model&UserContract> $users
  * @property int|null                                    $users_count
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * @method static DeviceFactory  factory($count = null, $state = [])
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
  * @method static Builder|Device newModelQuery()
  * @method static Builder|Device newQuery()
  * @method static Builder|Device query()
@@ -82,8 +68,6 @@ use Modules\Xot\Datas\XotData;
  *
  * @property ProfileContract|null $deleter
  *
-<<<<<<< HEAD
-=======
  * @method static \Modules\User\Database\Factories\DeviceFactory factory($count = null, $state = [])
  *
  * @property string|null $name
@@ -92,7 +76,6 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder<static>|Device whereName($value)
  * @method static Builder<static>|Device whereType($value)
  *
->>>>>>> dev
  * @mixin \Eloquent
  */
 class Device extends BaseModel

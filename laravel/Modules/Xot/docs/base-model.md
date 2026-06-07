@@ -70,23 +70,15 @@ abstract class XotBaseModel extends Model
 Each module has its own BaseModel that extends XotBaseModel:
 
 ```php
-<<<<<<< HEAD
-// Example from Quaeris module
-=======
 // Example from healthcare_app module
 // Example from ExternalProject module
->>>>>>> dev
 abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 {
     use Cachable;
     use HasExtraTrait;
     use InteractsWithMedia;
 
-<<<<<<< HEAD
-    protected $connection = 'quaeris'; // Module-specific connection
-=======
     protected $connection = 'healthcare_app'; // Module-specific connection
->>>>>>> dev
 
     protected $with = [
         'extra', // Always load extra fields
@@ -114,12 +106,8 @@ class SurveyPdf extends XotBaseModel // Never do this!
 
 ✅ **CORRECT:**
 ```php
-<<<<<<< HEAD
-// In Quaeris module
-=======
 // In healthcare_app module
 // In ExternalProject module
->>>>>>> dev
 class SurveyPdf extends BaseModel // Extends module's BaseModel
 ```
 
@@ -207,11 +195,7 @@ class SurveyPdf extends BaseModel
 
 ### KISS (Keep It Simple, Stupid)
 - Clear inheritance chain
-<<<<<<< HEAD
-- Predictable patterns
-=======
 - <nome progetto>able patterns
->>>>>>> dev
 - Minimal configuration needed
 
 ## Type Safety and Contracts

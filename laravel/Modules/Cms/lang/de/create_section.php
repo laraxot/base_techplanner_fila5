@@ -6,10 +6,6 @@ return [
     'fields' => [
         'name' => [
             'label' => 'name',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -211,110 +207,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'slug' => [
-            'label' => 'slug',
-        ],
-        'items' => [
-            'label' => 'items',
-        ],
-        'label' => [
-            'label' => 'label',
-        ],
-        'url' => [
-            'label' => 'url',
-        ],
-        'target' => [
-            'label' => 'target',
-        ],
-        'is_active' => [
-            'label' => 'is_active',
-        ],
-        'content' => [
-            'label' => 'content',
-        ],
-        'level' => [
-            'label' => 'level',
-        ],
-        'title' => [
-            'label' => 'title',
-        ],
-        'text' => [
-            'label' => 'text',
-        ],
-        'background' => [
-            'label' => 'background',
-        ],
-        'buttons' => [
-            'label' => 'buttons',
-        ],
-        'class' => [
-            'label' => 'class',
-        ],
-        'link' => [
-            'label' => 'link',
-        ],
-        'image' => [
-            'label' => 'image',
-        ],
-        'ratio' => [
-            'label' => 'ratio',
-        ],
-        'alt' => [
-            'label' => 'alt',
-        ],
-        'caption' => [
-            'label' => 'caption',
-        ],
-        'img_uuid' => [
-            'label' => 'img_uuid',
-        ],
-        'gallery' => [
-            'label' => 'gallery',
-        ],
-        'subtitle' => [
-            'label' => 'subtitle',
-        ],
-        'version' => [
-            'label' => 'version',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'method' => [
-            'label' => 'method',
-        ],
-        'video' => [
-            'label' => 'video',
-        ],
-        'blocks' => [
-            'label' => 'blocks',
-        ],
-        'links' => [
-            'label' => 'links',
-        ],
-        'email' => [
-            'label' => 'email',
-        ],
-        'number' => [
-            'label' => 'number',
-        ],
-        'stats' => [
-            'label' => 'stats',
-        ],
-        'icon' => [
-            'label' => 'icon',
-        ],
-        'platform' => [
-            'label' => 'platform',
-        ],
-        'social_links' => [
-            'label' => 'social_links',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -331,10 +223,6 @@ return [
             'label' => 'activeLocale',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -344,9 +232,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

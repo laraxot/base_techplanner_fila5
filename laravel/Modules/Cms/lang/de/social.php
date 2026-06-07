@@ -9,52 +9,27 @@ return [
             'placeholder' => 'title',
             'helper_text' => 'title',
             'description' => 'title',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'social_links' => [
             'label' => 'social_links',
             'placeholder' => 'social_links',
             'helper_text' => 'social_links',
             'description' => 'social_links',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'platform' => [
             'label' => 'platform',
             'placeholder' => 'platform',
             'helper_text' => 'platform',
             'description' => 'platform',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'url' => [
             'label' => 'url',
             'placeholder' => 'url',
             'helper_text' => 'url',
             'description' => 'url',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
         ],
     ],
@@ -69,11 +44,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -10,15 +10,7 @@ use Themes\Sixteen\Models\User;
 
 /**
  * Evento lanciato quando un utente si autentica con successo tramite SPID
-<<<<<<< HEAD
-<<<<<<< HEAD
  *
-=======
- * 
->>>>>>> 4b6b99016 (first commit)
-=======
- *
->>>>>>> dev
  * Questo evento permette di reagire all'autenticazione SPID
  * per logging, analytics, integrazione con sistemi esterni, etc.
  */
@@ -29,16 +21,7 @@ class SpidAuthenticated
     public function __construct(
         public User $user,
         public array $spidAttributes
-<<<<<<< HEAD
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> 4b6b99016 (first commit)
-=======
-    ) {}
->>>>>>> dev
 
     /**
      * Ottiene il provider SPID utilizzato
@@ -94,12 +77,6 @@ class SpidAuthenticated
             'timestamp' => now()->toISOString(),
         ];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4b6b99016 (first commit)
-=======
-}
->>>>>>> dev
+
+

@@ -11,21 +11,12 @@
 // Modules/Geo/app/Models/BaseModel.php
 abstract class BaseModel extends Model
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    use HasFactory;  // ← GIÀ PRESENTE QUI
-    use Updater;
-    
-=======
     use \Modules\Xot\Models\Traits\HasXotFactory;  // ← GIÀ PRESENTE QUI
     use Updater;
 
->>>>>>> 4b6b99016 (first commit)
-=======
     use HasFactory;  // ← GIÀ PRESENTE QUI
     use Updater;
     
->>>>>>> dev
     // Metodo newFactory() ereditato automaticamente
 }
 ```
@@ -33,15 +24,8 @@ abstract class BaseModel extends Model
 ### Modelli con Violazioni
 1. **Province.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO
 2. **PlaceType.php** - ❌ `use HasFactory` + `newFactory()` → ✅ CORRETTO
-<<<<<<< HEAD
-<<<<<<< HEAD
-3. **State.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO  
-=======
 3. **State.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO
->>>>>>> 4b6b99016 (first commit)
-=======
 3. **State.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO  
->>>>>>> dev
 4. **Place.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO
 5. **Comune.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO
 6. **County.php** - ✅ Era già corretto
@@ -53,18 +37,10 @@ abstract class BaseModel extends Model
 // ❌ PRIMA - Con duplicazioni
 class PlaceType extends BaseModel
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    use HasFactory;  // DUPLICAZIONE!
-    
-=======
     use \Modules\Xot\Models\Traits\HasXotFactory;  // DUPLICAZIONE!
 
->>>>>>> 4b6b99016 (first commit)
-=======
     use HasFactory;  // DUPLICAZIONE!
     
->>>>>>> dev
     protected static function newFactory(): \Modules\Geo\Database\Factories\PlaceTypeFactory
     {
         return \Modules\Geo\Database\Factories\PlaceTypeFactory::new();
@@ -76,15 +52,8 @@ class PlaceType extends BaseModel
 {
     // NIENTE trait duplicati!
     // NIENTE metodi newFactory()!
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     protected $fillable = [
         'name',
         'description',
@@ -119,15 +88,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 - **Catena ereditarietà** pulita e prevedibile
 - **Manutenzione** centralizzata in BaseModel
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Performance  
-=======
 ### Performance
->>>>>>> 4b6b99016 (first commit)
-=======
 ### Performance  
->>>>>>> dev
 - **Nessun overhead** trait duplicati
 - **Memory usage** ottimizzato
 - **Class loading** più veloce
@@ -160,15 +122,8 @@ grep -r "use HasFactory" Modules/*/app/Models/ | grep -v BaseModel
 ### Altri Moduli da Verificare
 Questo pattern di violazione potrebbe esistere in altri moduli:
 - **User**: BaseUser vs User, Doctor, Patient
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **<main module>**: BaseModel vs modelli specifici  
-=======
 - **<main module>**: BaseModel vs modelli specifici
->>>>>>> 4b6b99016 (first commit)
-=======
 - **<main module>**: BaseModel vs modelli specifici  
->>>>>>> dev
 - **Notify**: BaseModel vs modelli notifica
 - **Cms**: BaseModel vs modelli content
 

@@ -1,14 +1,7 @@
 # Gestione della Homepage in il progetto
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Questo documento fornisce una panoramica generale della gestione della homepage in il progetto. Per i dettagli tecnici dell'implementazione, consultare la [documentazione tecnica nel modulo CMS](../laravel/modules/cms/project_docs/homepage.md).
-=======
 Questo documento fornisce una panoramica generale della gestione della homepage in il progetto. Per i dettagli tecnici dell'implementazione, consultare la [documentazione tecnica nel modulo CMS](../laravel/Modules/Cms/project_docs/homepage.md).
->>>>>>> 4b6b99016 (first commit)
-=======
 Questo documento fornisce una panoramica generale della gestione della homepage in il progetto. Per i dettagli tecnici dell'implementazione, consultare la [documentazione tecnica nel modulo CMS](../laravel/modules/cms/project_docs/homepage.md).
->>>>>>> dev
 
 ## Panoramica
 
@@ -42,15 +35,8 @@ Il file `1.json` contiene la struttura completa della homepage:
 {
     "id": "1",
     "title": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "it": "il progetto - Promozione della salute orale per le gestanti"
-=======
         "it": "il progetto - Promozione della <slogan> per le gestanti"
->>>>>>> 4b6b99016 (first commit)
-=======
         "it": "il progetto - Promozione della salute orale per le gestanti"
->>>>>>> dev
     },
     "slug": "home",
     "content_blocks": {
@@ -124,21 +110,12 @@ I contenuti della homepage sono gestiti attraverso un sistema basato su JSON che
 - Flessibilità nella struttura
 
 Per i dettagli tecnici sulla gestione dei contenuti, consultare:
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Tecnica CMS](../laravel/modules/cms/project_docs/homepage.md)
-- [Gestione dei Blocchi](../laravel/modules/cms/project_docs/content-blocks.md)
-- [Sistema dei Temi](../laravel/modules/cms/project_docs/themes.md)
-=======
 - [Documentazione Tecnica CMS](../laravel/Modules/Cms/project_docs/homepage.md)
 - [Gestione dei Blocchi](../laravel/Modules/Cms/project_docs/content-blocks.md)
 - [Sistema dei Temi](../laravel/Modules/Cms/project_docs/themes.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione Tecnica CMS](../laravel/modules/cms/project_docs/homepage.md)
 - [Gestione dei Blocchi](../laravel/modules/cms/project_docs/content-blocks.md)
 - [Sistema dei Temi](../laravel/modules/cms/project_docs/themes.md)
->>>>>>> dev
 
 ## Collegamenti alla Documentazione
 

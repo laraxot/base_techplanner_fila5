@@ -4,15 +4,8 @@ use function Safe\file_get_contents;
 use function Safe\json_decode;
 
 $locale = app()->getLocale();
-<<<<<<< HEAD
-<<<<<<< HEAD
-$content = json_decode(file_get_contents(base_path('laravel/config/local/<nome progetto>/database/content/about.json')), true);
-=======
 $content = json_decode(file_get_contents(base_path('laravel/config/local/<nome progetto>/database/content/pages/about.json')), true);
->>>>>>> 4b6b99016 (first commit)
-=======
 $content = json_decode(file_get_contents(base_path('laravel/config/local/<nome progetto>/database/content/about.json')), true);
->>>>>>> dev
 $blocks = $content['content_blocks'][$locale] ?? [];
 
 ?>

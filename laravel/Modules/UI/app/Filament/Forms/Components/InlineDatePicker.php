@@ -104,10 +104,7 @@ class InlineDatePicker extends XotBaseDatePicker
      * Imposta le date abilitate.
      *
      * @param array<string>|\Closure $dates
-<<<<<<< HEAD
-=======
      * @param array<string>|\Closure $dates
->>>>>>> dev
      */
     public function enabledDates(array|\Closure $dates): static
     {
@@ -120,10 +117,7 @@ class InlineDatePicker extends XotBaseDatePicker
      * Imposta il mese corrente di visualizzazione.
      *
      * @param string $month Formato Y-m (es. '2025-06')
-<<<<<<< HEAD
-=======
      * @param string $month Formato Y-m (es. '2025-06')
->>>>>>> dev
      */
     public function currentViewMonth(string $month): static
     {
@@ -197,17 +191,11 @@ class InlineDatePicker extends XotBaseDatePicker
             $this->currentViewMonth = now()->format('Y-m');
         }
 
-<<<<<<< HEAD
-        /** @phpstan-ignore method.nonObject */
-        $targetMonth = Carbon::createFromFormat('Y-m', $this->currentViewMonth)->startOfMonth();
-        /** @phpstan-ignore-next-line */
-=======
         $targetMonthRaw = Carbon::createFromFormat('Y-m', $this->currentViewMonth);
         if (! $targetMonthRaw) {
             $targetMonthRaw = Carbon::now();
         }
         $targetMonth = $targetMonthRaw->startOfMonth();
->>>>>>> dev
         $firstDay = $targetMonth->copy()->startOfWeek(Carbon::MONDAY);
         $lastDay = $targetMonth->copy()->endOfMonth()->endOfWeek(Carbon::SUNDAY);
 
@@ -250,23 +238,16 @@ class InlineDatePicker extends XotBaseDatePicker
             $weeks->push($week->toArray());
         }
 
-<<<<<<< HEAD
-        return [
-=======
         $res = [
->>>>>>> dev
             'weeks' => $weeks->toArray(),
             'month' => $targetMonth,
             'monthName' => $targetMonth->translatedFormat('F'),
             'year' => $targetMonth->year,
             'weekdays' => $this->getLocalizedWeekdays(),
         ];
-<<<<<<< HEAD
-=======
 
         /* @var array<string, mixed> $res */
         return $res;
->>>>>>> dev
     }
 
     /**
@@ -278,11 +259,7 @@ class InlineDatePicker extends XotBaseDatePicker
     {
         $calendarData = $this->generateCalendarData();
 
-<<<<<<< HEAD
-        return array_merge(parent::getViewData(), [
-=======
         $res = array_merge(parent::getViewData(), [
->>>>>>> dev
             'calendarData' => $calendarData,
             'currentViewMonth' => $this->currentViewMonth,
             'currentValue' => $this->getState(),
@@ -292,12 +269,9 @@ class InlineDatePicker extends XotBaseDatePicker
             'year' => $calendarData['year'],
             'weekdays' => $calendarData['weekdays'],
         ]);
-<<<<<<< HEAD
-=======
 
         /* @var array<string, mixed> $res */
         return $res;
->>>>>>> dev
     }
 
     /**
@@ -311,17 +285,12 @@ class InlineDatePicker extends XotBaseDatePicker
         $monday = Carbon::now()->startOfWeek(Carbon::MONDAY);
 
         for ($i = 0; $i < 7; ++$i) {
-<<<<<<< HEAD
-            /* @phpstan-ignore property.nonObject */
-            $weekdays[] = $monday->copy()->addDays($i)->locale(App::getLocale())->shortLocaleDayOfWeek[0];
-=======
             $dayCarbon = $monday->copy()->addDays($i)->locale(App::getLocale());
             if (! $dayCarbon instanceof Carbon) {
                 throw new \RuntimeException('Expected Carbon instance');
             }
             $shortDay = $dayCarbon->shortLocaleDayOfWeek;
             $weekdays[] = \is_string($shortDay) ? mb_substr($shortDay, 0, 1) : (string) $shortDay;
->>>>>>> dev
         }
 
         return $weekdays;

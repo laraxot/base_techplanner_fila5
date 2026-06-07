@@ -157,19 +157,11 @@ Alpine.data('navigation', () => ({
 ```
 
 ## Links
-<<<<<<< HEAD
-- [Documentazione Filament Forms](../../../docs/filament-forms.md)
-- [Gestione Contenuti](../../../docs/content-management.md)
-- [Best Practices UI](../../../docs/ui-best-practices.md)
-- [Sistema di Blocchi (root)](../../../docs/blocks-system.md)
-- [Collegamenti alla documentazione principale](../../../docs/collegamenti-documentazione.md)
-=======
 - [Documentazione Filament Forms](../../../../docs/filament-forms.md)
 - [Gestione Contenuti](../../../../docs/content-management.md)
 - [Best Practices UI](../../../../docs/ui-best-practices.md)
 - [Sistema di Blocchi (root)](../../../../docs/blocks-system.md)
 - [Collegamenti alla documentazione principale](../../../../docs/collegamenti-documentazione.md)
->>>>>>> dev
 
 ## Note
 - La configurazione è salvata in JSON per versionamento

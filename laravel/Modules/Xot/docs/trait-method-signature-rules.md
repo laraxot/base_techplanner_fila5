@@ -134,14 +134,6 @@ If you encounter this error:
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-*
-=======
 *Last Updated: 2025-08-27*
->>>>>>> 4b6b99016 (first commit)
-=======
 *
->>>>>>> dev
 *Trait Standards Version: 2.0*
-

@@ -2,21 +2,10 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(Modules\User\Tests\TestCase::class);
-=======
-namespace Modules\User\Tests\Unit\Enums;
-
-uses(TestCase::class);
->>>>>>> dev
 
 use Modules\User\Enums\SocialProviderEnum;
 use Modules\User\Enums\SystemRole;
 use Modules\User\Enums\UserType;
-<<<<<<< HEAD
-=======
-use Modules\User\Tests\TestCase;
->>>>>>> dev
 
 test('UserType enum has all cases', function () {
     $cases = UserType::cases();

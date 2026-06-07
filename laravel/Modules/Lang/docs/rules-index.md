@@ -2,10 +2,6 @@
 
 This module follows the global Laraxot coding standards.
 
-<<<<<<< HEAD
-- [Coding Standards](../../../docs/laraxot-coding-standards.md)
-=======
 - [Coding Standards](../../../../docs/laraxot-coding-standards.md)
 - [Chaos Monkey Translation Fallbacks](./chaos-monkey-translation-fallbacks.md)
 - [Package Dependency Chaos Map](./package-dependency-chaos-map.md)
->>>>>>> dev

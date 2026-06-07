@@ -2,17 +2,10 @@
 
 ## 🐄✨ Riferimenti Principali
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-📚 **DOCUMENTO MASTER (LEGGERE PRIMA!):** [../../../docs/analisi-metodi-duplicati-MASTER.md](../../../docs/analisi-metodi-duplicati-master.md)
-=======
 📚 **DOCUMENTO MASTER (LEGGERE PRIMA!):** [../../../docs/analisi-metodi-duplicati-MASTER.md](../../../docs/analisi-metodi-duplicati-MASTER.md)
->>>>>>> 4b6b99016 (first commit)
 📖 **Documento Originale:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
-=======
 📚 **DOCUMENTO MASTER (LEGGERE PRIMA!):** [../../../../docs/analisi-metodi-duplicati-MASTER.md](../../../../docs/analisi-metodi-duplicati-master.md)
 📖 **Documento Originale:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
->>>>>>> dev
 
 > ⚠️ **IMPORTANTE:** Questo documento è specifico per il modulo Xot. Per l'analisi completa con dati reali, ROI, implementazioni concrete e migration guide, consultare il DOCUMENTO MASTER.
 
@@ -326,11 +319,7 @@ Se l'unificazione viene implementata correttamente:
 
 ## Link Utili
 
-<<<<<<< HEAD
-- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
-=======
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
->>>>>>> dev
 - 📖 [Regole Service Provider](./service-provider.md)
 - 📖 [Regole BaseModel](./model-inheritance-rules.md)
 - 📖 [Regole Resources Filament](./filament-4-laraxot-rules.md)
@@ -339,15 +328,8 @@ Se l'unificazione viene implementata correttamente:
 
 | Data | Versione | Modifiche |
 |------|----------|-----------|
-<<<<<<< HEAD
-<<<<<<< HEAD
-| [DATE] | 1.0 | Creazione documento iniziale |
-=======
 | 2025-10-15 | 1.0 | Creazione documento iniziale |
->>>>>>> 4b6b99016 (first commit)
-=======
 | [DATE] | 1.0 | Creazione documento iniziale |
->>>>>>> dev
 
 ---
 

@@ -34,10 +34,6 @@ return [
         'type' => 'Tipo',
         'btn' => 'Salva',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Filament Navigation',
     'plural_label' => 'Filament Navigation (Plurale)',
     'navigation' => [
@@ -82,9 +78,4 @@ return [
             'label' => 'Elimina Filament Navigation',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

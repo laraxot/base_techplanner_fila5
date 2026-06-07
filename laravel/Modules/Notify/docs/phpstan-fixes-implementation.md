@@ -3,15 +3,8 @@
 ## 🎯 Errori Risolti
 
 ### ConfigHelper.php - Type Safety Enhancement
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/Notify/app/Helpers/ConfigHelper.php`  
-=======
 **File**: `Modules/Notify/app/Helpers/ConfigHelper.php`
->>>>>>> 4b6b99016 (first commit)
-=======
 **File**: `Modules/Notify/app/Helpers/ConfigHelper.php`
->>>>>>> dev
 **Errori risolti**: 11 errori di type mismatch
 
 #### Problemi Identificati
@@ -26,15 +19,8 @@
 4. **Type safety** completa per tutti i metodi
 
 ### XotData.php - Metodo Mancante Aggiunto
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/Xot/app/Datas/XotData.php`  
-=======
 **File**: `Modules/Xot/app/Datas/XotData.php`
->>>>>>> 4b6b99016 (first commit)
-=======
 **File**: `Modules/Xot/app/Datas/XotData.php`
->>>>>>> dev
 **Errore risolto**: Metodo `getProjectNamespace()` non esistente
 
 #### Implementazione
@@ -49,15 +35,8 @@ public function getProjectNamespace(): string
 ```
 
 ### NotifyThemeableFactory.php - Pattern Dinamico
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/Notify/database/factories/NotifyThemeableFactory.php`  
-=======
 **File**: `Modules/Notify/database/factories/NotifyThemeableFactory.php`
->>>>>>> 4b6b99016 (first commit)
-=======
 **File**: `Modules/Notify/database/factories/NotifyThemeableFactory.php`
->>>>>>> dev
 **Risultato**: Factory completamente riutilizzabile
 
 ## ✅ Benefici Ottenuti
@@ -117,15 +96,8 @@ protected function getProjectNamespace(): string
 ### Post-Correzioni
 ```bash
 # PHPStan clean
-<<<<<<< HEAD
-<<<<<<< HEAD
-./vendor/bin/phpstan analyze Modules/Notify --level=9  
-=======
 ./vendor/bin/phpstan analyze Modules/Notify --level=9
->>>>>>> 4b6b99016 (first commit)
-=======
 ./vendor/bin/phpstan analyze Modules/Notify --level=9
->>>>>>> dev
 # Result: 0 errors found ✅
 ```
 
@@ -143,17 +115,8 @@ protected function getProjectNamespace(): string
 ### Validazione
 ```bash
 # Test PHPStan
-<<<<<<< HEAD
-<<<<<<< HEAD
-cd /var/www/html/_bases/base_<nome progetto>/laravel
-cd /var/www/html/_bases/base_saluteora/laravel
-cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
-=======
 cd laravel
->>>>>>> 4b6b99016 (first commit)
-=======
 cd laravel
->>>>>>> dev
 ./vendor/bin/phpstan analyze Modules/Notify --level=9
 
 # Test funzionalità
@@ -170,16 +133,8 @@ Applicare gli stessi pattern di type safety agli altri moduli:
 
 - [Optimization Recommendations](optimization_recommendations.md)
 - [Reusability Guidelines](reusability_guidelines.md)
-<<<<<<< HEAD
-- [PHPStan Best Practices](../../../docs/phpstan-best-practices.md)
-
-<<<<<<< HEAD
-
-=======
-=======
 - [PHPStan Best Practices](../../../../docs/phpstan-best-practices.md)
 
->>>>>>> dev
 *Ultimo aggiornamento: gennaio 2025*
 # Implementazione Correzioni PHPStan - Modulo Notify
 
@@ -313,13 +268,6 @@ Applicare gli stessi pattern di type safety agli altri moduli:
 
 - [Optimization Recommendations](optimization_recommendations.md)
 - [Reusability Guidelines](reusability_guidelines.md)
-<<<<<<< HEAD
-- [PHPStan Best Practices](../../../docs/phpstan-best-practices.md)
-
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 - [PHPStan Best Practices](../../../../docs/phpstan-best-practices.md)
 
 *Ultimo aggiornamento: gennaio 2025*
->>>>>>> dev

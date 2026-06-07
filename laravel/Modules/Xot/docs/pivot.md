@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
 //https://github.com/larastan/larastan/issues/515
 
 /**
@@ -39,4 +35,3 @@ class MyCustomModel extends Model {}
 
 getModel - Builder
 paginate - Builder
->>>>>>> dev

@@ -128,11 +128,7 @@ Applicare gli stessi pattern di type safety agli altri moduli:
 
 - [Optimization Recommendations](optimization_recommendations.md)
 - [Reusability Guidelines](reusability_guidelines.md)
-<<<<<<< HEAD
-- [PHPStan Best Practices](../../../docs/phpstan-best-practices.md)
-=======
 - [PHPStan Best Practices](../../../../docs/phpstan-best-practices.md)
->>>>>>> dev
 
 # Implementazione Correzioni PHPStan - Modulo Notify
 
@@ -266,9 +262,4 @@ Applicare gli stessi pattern di type safety agli altri moduli:
 
 - [Optimization Recommendations](optimization_recommendations.md)
 - [Reusability Guidelines](reusability_guidelines.md)
-<<<<<<< HEAD
-- [PHPStan Best Practices](../../../docs/phpstan-best-practices.md)
-=======
 - [PHPStan Best Practices](../../../../docs/phpstan-best-practices.md)
->>>>>>> dev
-

@@ -892,10 +892,7 @@ if ('serviceWorker' in navigator) {
 
 ### 6. Content Freshness Signals
 
-<<<<<<< HEAD
 #### Dynamic "Last Updated" Timestamps
-=======
->>>>>>> dev
 
 ```blade
 {{-- Ticket detail page --}}
@@ -1031,8 +1028,5 @@ Alpine.data('liveStats', () => ({
 ---
 
 **Document Version**: 1.0
-<<<<<<< HEAD
 **Last Updated**: October 3, 2025
-=======
->>>>>>> dev
 **Next Review**: January 2026

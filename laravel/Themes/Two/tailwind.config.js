@@ -21,20 +21,11 @@ export default {
           800: '#075985',
           900: '#0c4a6e',
         },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         brand: {
           blue: '#1E5A96',
           green: '#2D8659',
           orange: '#D35400',
         },
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         secondary: {
           50: '#f8fafc',
           100: '#f1f5f9',
@@ -59,4 +50,3 @@ export default {
     require('flowbite/plugin'),
   ],
 }
-

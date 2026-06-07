@@ -207,11 +207,7 @@ view:cache compila
 
 ---
 
-<<<<<<< HEAD
-**Data migrazione**: 2025-12-12
-=======
 **Data migrazione**: [DATE]
->>>>>>> dev
 **Versione Filament**: v4.x
 **Files modificati**: 4
 **Errori risolti**: 2 (form.actions, form component)

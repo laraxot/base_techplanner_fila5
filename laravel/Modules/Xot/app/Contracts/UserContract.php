@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Contracts;
 
-<<<<<<< HEAD
-use BackedEnum;
-=======
->>>>>>> dev
 use Filament\Models\Contracts\HasName;
 use Filament\Models\Contracts\HasTenants;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -24,10 +20,7 @@ use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Role as UserRole;
 use Modules\User\Models\Team;
 use Modules\User\Models\Tenant;
-<<<<<<< HEAD
-=======
 use Nwidart\Modules\Laravel\Module;
->>>>>>> dev
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\Permission\Contracts\Permission;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
@@ -35,24 +28,9 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
 /**
  * Modules\Xot\Contracts\UserContract.
  *
-<<<<<<< HEAD
- * @property string|null $id
- * @property string|null $email
- * @property string|null $first_name
- * @property string|null $last_name
- * @property string|null $full_name
- * @property string|null $name
- * @property string|null $phone
- * @property string|null $type
- * @property string|null $current_team_id
- * @property TeamContract $currentTeam
- * @property ProfileContract|null $profile
- * @property Collection<int, UserRole> $roles
- * @property Collection<int, Team> $teams
- * @property Collection<int, Tenant> $tenants
-=======
  * @property string|null               $id
  * @property string|null               $email
+ * @property \Illuminate\Support\Carbon|null $email_verified_at
  * @property string|null               $first_name
  * @property string|null               $last_name
  * @property string|null               $full_name
@@ -65,7 +43,6 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  * @property Collection<int, UserRole> $roles
  * @property Collection<int, Team>     $teams
  * @property Collection<int, Tenant>   $tenants
->>>>>>> dev
  *
  * @phpstan-require-extends Model
  *
@@ -91,19 +68,13 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Create a new personal access token for the user.
      *
-<<<<<<< HEAD
-     * @param  array<int, string>  $scopes
-=======
      * @param array<int, string> $scopes
->>>>>>> dev
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;
 
     /**
      * Passport API tokens support.
      */
-    // @phpstan-ignore-next-line interface should extend this contract
-
     /**
      * Determine if the model has (one of) the given role(s).
      */
@@ -156,12 +127,8 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Revoke the given role from the model.
      *
-<<<<<<< HEAD
-     * @param  string|int|array|UserRole|Collection|BackedEnum  ...$role
-=======
      * @param string|int|array|UserRole|Collection|\BackedEnum ...$role
      *
->>>>>>> dev
      * @return $this
      */
     public function removeRole(...$role);
@@ -187,11 +154,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     public function switchTeam(TeamContract $team): bool;
 
     /**
-<<<<<<< HEAD
-     * @return array<string, \Nwidart\Modules\Laravel\Module>
-=======
      * @return array<string, Module>
->>>>>>> dev
      */
     public function getModules(): array;
 

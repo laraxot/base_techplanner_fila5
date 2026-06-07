@@ -163,21 +163,12 @@ class NavigationTest extends TestCase
 ## Fase 7: Documentazione
 
 ### 7.1 Aggiornare
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Header Components](./header_components.md)
-- [Navigation Structure](./navigation_structure.md)
-- [Security Best Practices](./security_best_practices.md)
-=======
 - [Header Components](./HEADER_COMPONENTS.md)
 - [Navigation Structure](./NAVIGATION_STRUCTURE.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Header Components](./header_components.md)
 - [Navigation Structure](./navigation_structure.md)
 - [Security Best Practices](./security_best_practices.md)
->>>>>>> dev
 
 ## Timeline
 
@@ -204,18 +195,9 @@ class NavigationTest extends TestCase
    - Cache settings
 
 ## Collegamenti Correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Header Components](./header_components.md)
-- [Navigation Structure](./navigation_structure.md)
-- [Security Best Practices](./security_best_practices.md) 
-=======
 - [Header Components](./HEADER_COMPONENTS.md)
 - [Navigation Structure](./NAVIGATION_STRUCTURE.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md) 
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Header Components](./header_components.md)
 - [Navigation Structure](./navigation_structure.md)
 - [Security Best Practices](./security_best_practices.md) 
->>>>>>> dev

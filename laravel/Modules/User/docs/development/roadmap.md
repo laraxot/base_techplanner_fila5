@@ -1,165 +1,4 @@
-<<<<<<< HEAD
-### Versione HEAD
-
-# Roadmap Modulo User
-
-## Funzionalità Future
-
-### Autenticazione
-1. **Miglioramento OAuth**
-   - Implementazione refresh token automatico
-   - Supporto per più provider social
-   - Gestione avanzata scadenza token
-
-2. **Two Factor Authentication**
-   - Supporto per app authenticator
-   - Backup codes
-   - Remember device
-
-3. **Single Sign-On**
-   - Integrazione con SAML
-   - Supporto per OpenID Connect
-   - Gestione sessioni cross-domain
-
-### Autorizzazione
-1. **Ruoli e Permessi**
-   - Sistema di ereditarietà ruoli
-   - Permessi dinamici
-   - Audit log autorizzazioni
-
-2. **Policy Management**
-   - Editor visuale policy
-   - Testing policy
-   - Documentazione automatica
-
-3. **Access Control**
-   - IP whitelisting
-   - Geolocation based access
-   - Time-based restrictions
-
-### Profili Utente
-1. **Gestione Profili**
-   - Profili multipli per utente
-   - Custom fields
-   - Import/Export dati
-
-2. **Preferenze**
-   - UI customization
-   - Notification preferences
-   - Language preferences
-
-3. **Privacy**
-   - GDPR compliance
-   - Data retention
-   - Privacy settings
-
-## Miglioramenti Pianificati
-
-### Performance
-1. **Ottimizzazione Database**
-   - Query optimization
-   - Indexing strategy
-   - Caching layer
-
-2. **API Performance**
-   - Response compression
-   - Batch operations
-   - Rate limiting
-
-3. **UI Performance**
-   - Lazy loading
-   - Code splitting
-   - Asset optimization
-
-### Sicurezza
-1. **Hardening**
-   - Security headers
-   - CSRF protection
-   - XSS prevention
-
-2. **Monitoring**
-   - Security logging
-   - Alert system
-   - Audit trail
-
-3. **Compliance**
-   - GDPR updates
-   - Privacy laws
-   - Security standards
-
-### UX/UI
-1. **Interface**
-   - Dark mode
-   - Responsive design
-   - Accessibility
-
-2. **Workflow**
-   - Onboarding flow
-   - Error handling
-   - Success feedback
-
-3. **Documentation**
-   - User guides
-   - API documentation
-   - Code examples
-
-## Timeline
-
-### Q1 2024
-- Implementazione refresh token
-- Sistema di ereditarietà ruoli
-- Ottimizzazione query database
-
-### Q2 2024
-- Supporto SAML
-- Editor policy visuale
-- Security hardening
-
-### Q3 2024
-- Profili multipli
-- GDPR compliance
-- UI improvements
-
-### Q4 2024
-- Geolocation access
-- Performance optimization
-- Documentation updates
-
-## Contribuire
-
-### Come Contribuire
-1. Fork repository
-2. Crea branch feature
-3. Commit changes
-4. Push branch
-5. Crea Pull Request
-
-### Standard di Codice
-- PSR-12 compliance
-- PHPDoc comments
-- Unit tests
-- Integration tests
-
-### Processo di Review
-1. Code review
-2. Test automation
-3. Documentation
-4. Merge approval
-
-## Riferimenti
-
-### Documentazione
-- [Laravel Authentication](https://laravel.com/project_docs/12.x/authentication)
-- [Laravel Authorization](https://laravel.com/project_docs/12.x/authorization)
-- [Laravel Security](https://laravel.com/project_docs/12.x/security)
-
-### Collegamenti Interni
-- [Bottlenecks](bottlenecks.md)
-<<<<<<< HEAD
-- [Best Practices](best-practices.md)
-=======
 - [Best Practices](BEST-PRACTICES.md)
->>>>>>> 4b6b99016 (first commit)
 - [Testing](testing.md)
 
 ### Versione HEAD
@@ -181,22 +20,6 @@
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](bashscripts/project_docs/roadmap.md)
 * [roadmap.md](docs/roadmap.md)
-<<<<<<< HEAD
-* [roadmap.md](../../../gdpr/project_docs/roadmap.md)
-* [roadmap.md](../../../notify/project_docs/roadmap.md)
-* [roadmap.md](../../../xot/project_docs/roadmap.md)
-* [roadmap.md](../../../dental/project_docs/roadmap.md)
-* [roadmap.md](../../../user/project_docs/roadmap.md)
-* [roadmap.md](../../../ui/project_docs/roadmap.md)
-* [roadmap.md](../../../lang/project_docs/roadmap.md)
-* [roadmap.md](../../../job/project_docs/roadmap.md)
-* [roadmap.md](../../../media/project_docs/roadmap.md)
-* [roadmap.md](../../../tenant/project_docs/roadmap.md)
-* [roadmap.md](../../../activity/project_docs/roadmap.md)
-* [roadmap.md](../../../patient/project_docs/roadmap.md)
-* [roadmap.md](../../../cms/project_docs/roadmap.md)
-* [roadmap.md](../../../../themes/one/project_docs/roadmap.md)
-=======
 * [roadmap.md](../../../Gdpr/project_docs/roadmap.md)
 * [roadmap.md](../../../Notify/project_docs/roadmap.md)
 * [roadmap.md](../../../Xot/project_docs/roadmap.md)
@@ -211,7 +34,6 @@
 * [roadmap.md](../../../Patient/project_docs/roadmap.md)
 * [roadmap.md](../../../Cms/project_docs/roadmap.md)
 * [roadmap.md](../../../../Themes/One/project_docs/roadmap.md)
->>>>>>> 4b6b99016 (first commit)
 
 
 ---
@@ -275,10 +97,7 @@ Overall Module Completion: 82%
    - User authentication (100%)
    - Password validation rules (100%)
    - Status: ✅ Completed
-<<<<<<< HEAD
-=======
    - Date: 2025-04-01
->>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Code Coverage: 98%
      * Security Audit: Passed
@@ -296,10 +115,7 @@ Overall Module Completion: 82%
    - HasAuthenticationLogTrait (100%)
    - PasswordValidationRules trait (100%)
    - Status: ✅ Completed
-<<<<<<< HEAD
-=======
    - Date: 2025-04-01
->>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Code Coverage: 96%
      * PHPStan Level: 7
@@ -315,10 +131,7 @@ Overall Module Completion: 82%
    - Team user relationships (100%)
    - Role management within teams (100%)
    - Status: ✅ Completed
-<<<<<<< HEAD
-=======
    - Date: 2025-04-01
->>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Code Coverage: 95%
      * Performance: 150ms avg response
@@ -334,10 +147,7 @@ Overall Module Completion: 82%
    - Tenant user relationships (100%)
    - Multi-tenancy support (100%)
    - Status: ✅ Completed
-<<<<<<< HEAD
-=======
    - Date: 2025-04-01
->>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Code Coverage: 97%
      * Data Isolation: 100%
@@ -357,10 +167,7 @@ Overall Module Completion: 82%
    - Fix undefined property access (30%)
    - Priority: High
    - Status: In Progress
-<<<<<<< HEAD
-=======
    - Target Date: Q2 2025
->>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Files Analyzed: 65/100
      * Critical Issues: 8
@@ -373,10 +180,7 @@ Overall Module Completion: 82%
    - Advanced filtering (50%)
    - Priority: High
    - Status: In Progress
-<<<<<<< HEAD
-=======
    - Target Date: Q2 2025
->>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Log Coverage: 85%
      * Alert Accuracy: 95%
@@ -389,10 +193,7 @@ Overall Module Completion: 82%
    - Permission inheritance (35%)
    - Priority: Medium
    - Status: In Progress
-<<<<<<< HEAD
-=======
    - Target Date: Q3 2025
->>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Permission Types: 25/40
      * Role Types: 8/12
@@ -404,10 +205,7 @@ Overall Module Completion: 82%
    - Profile verification system (35%)
    - Priority: Medium
    - Status: In Progress
-<<<<<<< HEAD
-=======
    - Target Date: Q3 2025
->>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Field Coverage: 50%
      * Settings Types: 15/30
@@ -420,10 +218,7 @@ Overall Module Completion: 82%
    - Profile synchronization (20%)
    - Priority: Low
    - Status: In Progress
-<<<<<<< HEAD
-=======
    - Target Date: Q4 2025
->>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Providers: 2/8
      * Auth Success Rate: 95%
@@ -436,10 +231,7 @@ Overall Module Completion: 82%
    - Update deprecated methods (35%)
    - Priority: High
    - Status: In Progress
-<<<<<<< HEAD
-=======
    - Target Date: Q2 2025
->>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Code Removed: 15k lines
      * Complexity Reduction: 25%
@@ -451,10 +243,7 @@ Overall Module Completion: 82%
    - Add code examples (35%)
    - Priority: Medium
    - Status: In Progress
-<<<<<<< HEAD
-=======
    - Target Date: Q3 2025
->>>>>>> 4b6b99016 (first commit)
    - Metrics:
      * Doc Coverage: 45%
      * Example Coverage: 40%
@@ -491,7 +280,6 @@ Overall Module Completion: 82%
 
 ---
 
-=======
 ---
 title: "roadmap — puntatore"
 type: reference
@@ -503,4 +291,3 @@ updated: 2026-05-21
 Contenuto in wiki di progetto — non duplicare nei moduli ([#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
 
 → [docs/wiki/rules/00-TRIGGER_MAP.md](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
->>>>>>> dev

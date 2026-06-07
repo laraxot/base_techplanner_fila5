@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Migrazione da Services ad Actions
 
 ## Architettura Precedente: Services
@@ -121,7 +120,6 @@ public function store(Request $request, CreateUserAction $action)
     $action->onQueue('users')->execute($userData);
 }
 ```
-<<<<<<< HEAD
 
 ## Caso Speciale: Filament Widgets
 
@@ -174,9 +172,6 @@ class SimpleChartWidget extends XotBaseChartWidget
 - [Chart Widget Best Practices (Quaeris)](../../../quaeris/docs/chart-widget-best-practices.md)
 - [Critical No Services Rule](../critical-no-services-rule.md)
 ```
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 # Actions Over Services
 
 Regola architetturale canonica del progetto:
@@ -210,4 +205,3 @@ Regola architetturale canonica del progetto:
 
 - [product-docs-governance.md](../product-docs-governance.md)
 - [PRODUCT_DOCS_INDEX_2026_03_12.md](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
->>>>>>> dev

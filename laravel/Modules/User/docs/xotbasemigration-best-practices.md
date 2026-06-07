@@ -47,11 +47,7 @@ if (!Schema::hasColumn('users', 'state')) {
 - Aggiornare la documentazione ogni volta che si introduce una nuova convenzione o helper in XotBaseMigration.
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-- [Migrazioni del Database](mdc:../../../docs/database-migrations.md)
-=======
 - [Migrazioni del Database](mdc:../../../../docs/database-migrations.md)
->>>>>>> dev
 - [Moderazione e Wizard Generici](mdc:MODERATION_WIZARD_GENERIC.mdc)
 - [Contratti e Interfacce Moderazione](mdc:MODERATION_CONTRACTS.mdc)
 - [Configurazione Stati Utente](mdc:USER_STATES.mdc)

@@ -19,23 +19,16 @@ Questo documento serve come indice centrale per il tema Zero, fornendo una guida
 - **Integrazione Filament**: Compatibilità completa con i componenti Filament
 
 ## Collegamenti Correlati
-<<<<<<< HEAD
-- [Documentazione Generale SaluteOra](../../../docs/README.md)
-=======
 - [AI Methodologies](./ai-methodologies.md)
 - [Documentazione Generale Progetto](../../../docs/README.md) (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> dev
 - [Collegamenti Documentazione](../../../docs/collegamenti-documentazione.md)
 - [Standard di Documentazione](../../../docs/DOCUMENTATION_STANDARDS.md)
 - [Modulo UI](../../Modules/UI/docs/README.md)
 - [Modulo Xot](../../Modules/Xot/docs/README.md)
 
-<<<<<<< HEAD
-=======
 ### Moduli Integrati
 - [Performance Actions Reference](./performance-actions-reference.md) - Riferimento action calcolo performance
 
->>>>>>> dev
 ## Categorie Principali
 
 ### Architettura e Struttura
@@ -46,14 +39,8 @@ Questo documento serve come indice centrale per il tema Zero, fornendo una guida
 
 ### Personalizzazione
 - [Personalizzazione](./customization.md) - Guida alla personalizzazione del tema
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Readonly Field Styling](./readonly-field-styling.md) - Pattern UI/UX per campi readonly/calcolati
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Readonly Field Styling](./readonly-field-styling.md) - Pattern UI/UX per campi readonly/calcolati
->>>>>>> dev
 - [Esempi](./examples.md) - Esempi pratici di personalizzazione
 - [Autenticazione](./authentication.md) - Componenti di autenticazione
 - [Esempi Autenticazione](./auth_examples.md) - Esempi di pagine di autenticazione
@@ -179,16 +166,7 @@ Questa documentazione viene aggiornata regolarmente. Prima di apportare modifich
 - Vedi anche: [../../../docs/README.md](../../../docs/README.md)
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Aggiunto**: Sistema di documentazione automatica moduli
-- **Integrato**: Refresh intelligente form reattivi
-- **Migliorato**: Sistema di tracking e audit trail
-=======
 *Ultimo aggiornamento: Gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 - **Aggiunto**: Sistema di documentazione automatica moduli
 - **Integrato**: Refresh intelligente form reattivi
 - **Migliorato**: Sistema di tracking e audit trail
->>>>>>> dev

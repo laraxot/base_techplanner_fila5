@@ -71,24 +71,14 @@ final class SendNetfunSMSAction implements SmsActionContract
         ];
 
         // Normalizza il numero di telefono usando l'azione dedicata
-<<<<<<< HEAD
-        $recipient = app(NormalizePhoneNumberAction::class)->execute($smsData->recipient);
-
-        $plainText = strip_tags($smsData->body);
-=======
         $recipient = app(NormalizePhoneNumberAction::class)->execute($smsData->getRecipient());
 
         $plainText = strip_tags($smsData->getBody());
->>>>>>> dev
         $textTemplate = mb_convert_encoding($plainText, 'UTF-8', 'UTF-8');
 
         $body = [
             'api_token' => $this->token,
-<<<<<<< HEAD
-            'sender' => $smsData->from ?? $this->defaultSender,
-=======
             'sender' => $smsData->from ?: $this->defaultSender,
->>>>>>> dev
             'text_template' => $textTemplate,
             'async' => true,
             'utf8_enabled' => true,

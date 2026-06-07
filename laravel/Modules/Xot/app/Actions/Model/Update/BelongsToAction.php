@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model\Update;
 
-<<<<<<< HEAD
-use Exception;
-=======
->>>>>>> dev
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -36,20 +32,9 @@ class BelongsToAction
          * }
          */
 
-<<<<<<< HEAD
-        if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
-<<<<<<< HEAD
-            /** @phpstan-ignore-next-line argument.unresolvableType */
-=======
->>>>>>> 4b6b99016 (first commit)
-            $related_id = Arr::first($relationDTO->data);
-            if ($related_id === null) {
-=======
         if (! Arr::isAssoc($relationDTO->data) && 1 === \count($relationDTO->data)) {
-            /** @phpstan-ignore-next-line argument.unresolvableType */
-            $related_id = Arr::first($relationDTO->data);
+            $related_id = reset($relationDTO->data);
             if (null === $related_id) {
->>>>>>> dev
                 return;
             }
 
@@ -59,13 +44,8 @@ class BelongsToAction
                 $related = $related->first(); // Prendi il primo modello della collezione
             }
 
-<<<<<<< HEAD
-            if (! ($related instanceof Model)) {
-                throw new Exception('Expected a single model, got null or invalid object.');
-=======
             if (! $related instanceof Model) {
                 throw new \Exception('Expected a single model, got null or invalid object.');
->>>>>>> dev
             }
             $res = $rows->associate($related);
             $res->save();
@@ -76,13 +56,8 @@ class BelongsToAction
         if (Arr::isAssoc($relationDTO->data)) {
             $sub = $rows->firstOrCreate();
             // $sub = $rows->first() ?? $rows->getModel();
-<<<<<<< HEAD
-            if ($sub === null) {
-                throw new Exception('['.__LINE__.']['.class_basename($this).']');
-=======
             if (null === $sub) {
                 throw new \Exception('['.__LINE__.']['.class_basename($this).']');
->>>>>>> dev
             }
 
             app(RelationAction::class)->execute($sub, $relationDTO->data);

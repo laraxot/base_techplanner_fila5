@@ -19,51 +19,30 @@ Questo documento serve come indice centrale per il modulo Tenant, fornendo una g
 - **Migrazioni Automatiche**: Migrazioni automatiche per nuovi tenant
 
 ## Collegamenti Correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Generale <nome progetto>](../../../../docs/readme.md)
-- [Collegamenti Documentazione](../../../../docs/collegamenti-documentazione.md)
-- [Standard di Documentazione](../../../../docs/documentation_standards.md)
-- [Modulo Xot](../../xot/docs/readme.md)
-- [Modulo Lang](../../lang/docs/readme.md)
-- [Modulo UI](../../ui/docs/readme.md)
-=======
 - [Documentazione Generale <nome progetto>](../../../../docs/README.md)
 - [Collegamenti Documentazione](../../../../docs/collegamenti-documentazione.md)
 - [Standard di Documentazione](../../../../docs/DOCUMENTATION_STANDARDS.md)
 - [Modulo Xot](../../Xot/docs/README.md)
 - [Modulo Lang](../../Lang/docs/README.md)
 - [Modulo UI](../../UI/docs/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione Generale <nome progetto>](../../../../../docs/readme.md)
 - [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
 - [Standard di Documentazione](../../../../../docs/documentation_standards.md)
 - [Modulo Xot](../../xot/docs/readme.md)
 - [Modulo Lang](../../lang/docs/readme.md)
 - [Modulo UI](../../ui/docs/readme.md)
->>>>>>> dev
 
 ## Categorie Principali
 
 ### Architettura e Struttura
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [README](./readme.md) - Panoramica generale del modulo
 - [Architettura](./architecture/readme.md) - Architettura generale del modulo
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
 - [Modelli](./models/readme.md) - Documentazione dei modelli Eloquent
-<<<<<<< HEAD
-=======
 - [README](./README.md) - Panoramica generale del modulo
 - [Architettura](./architecture/README.md) - Architettura generale del modulo
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
 - [Modelli](./models/README.md) - Documentazione dei modelli Eloquent
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 - [Eventi](./events.md) - Eventi e listeners
 
 ### Gestione Tenant
@@ -76,18 +55,10 @@ Questo documento serve come indice centrale per il modulo Tenant, fornendo una g
 ### Filament UI
 - [Risorse Filament](./filament-resources.md) - Componenti Filament Resources
 - [Pagine Filament](./filament-pages.md) - Componenti Filament Pages
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Form Filament](./forms/readme.md) - Form personalizzati
-- [Convenzioni Filament](./filament_extension_pattern.md) - Pattern di estensione per Filament
-=======
 - [Form Filament](./Forms/README.md) - Form personalizzati
 - [Convenzioni Filament](./FILAMENT_EXTENSION_PATTERN.md) - Pattern di estensione per Filament
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Form Filament](./forms/readme.md) - Form personalizzati
 - [Convenzioni Filament](./filament_extension_pattern.md) - Pattern di estensione per Filament
->>>>>>> dev
 
 ### API e Integrazione
 - [API RESTful](./api.md) - API per la gestione dei tenant
@@ -95,10 +66,6 @@ Questo documento serve come indice centrale per il modulo Tenant, fornendo una g
 - [Webhooks](./webhooks.md) - Sistema di webhook per eventi tenant
 
 ### Configurazione
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Struttura Config](./config_structure.md) - Struttura dei file di configurazione
 - [Configurazione Multi-Tenant](./multi-tenant-config.md) - Configurazione sistema multi-tenant
 - [Principi di Configurazione](./configurations_usage_principles.md) - Principi per l'utilizzo delle configurazioni
@@ -115,9 +82,6 @@ Questo documento serve come indice centrale per il modulo Tenant, fornendo una g
 
 ### Testing e Qualità
 - [PHPStan Level 10](./phpstan/index.md) - Correzioni per PHPStan Level 10
-<<<<<<< HEAD
-- [Testing](./testing.md) - Strategie e approcci per il testing
-=======
 - [Struttura Config](./CONFIG_STRUCTURE.md) - Struttura dei file di configurazione
 - [Configurazione Multi-Tenant](./multi-tenant-config.md) - Configurazione sistema multi-tenant
 - [Principi di Configurazione](./CONFIGURATIONS_USAGE_PRINCIPLES.md) - Principi per l'utilizzo delle configurazioni
@@ -135,11 +99,8 @@ Questo documento serve come indice centrale per il modulo Tenant, fornendo una g
 ### Testing e Qualità
 - [PHPStan Level 10](./phpstan/INDEX.md) - Correzioni per PHPStan Level 10
 - [Testing](./TESTING.md) - Strategie e approcci per il testing
->>>>>>> 4b6b99016 (first commit)
-=======
 - [PHPStan Cluster 2026-03-10](./phpstan-cluster-2026-03-10.md) - Factory `DatabaseConfig` e modello canonico mancante
 - [Testing](./testing.md) - Strategie e approcci per il testing
->>>>>>> dev
 - [Test Multi-Tenant](./multi-tenant-testing.md) - Test specifici per ambiente multi-tenant
 
 ## Linee Guida per l'Implementazione
@@ -186,10 +147,6 @@ Implementare una gestione robusta degli errori per gestire i fallimenti nell'acc
 ## Sottocartelle
 
 ### Actions
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Index](./actions/index.md) - Indice della documentazione sulle azioni
 
 ### Architettura
@@ -215,8 +172,6 @@ Implementare una gestione robusta degli errori per gestire i fallimenti nell'acc
 
 ### Traits
 - [Index](./traits/index.md) - Indice della documentazione sui traits
-<<<<<<< HEAD
-=======
 - [Index](./Actions/INDEX.md) - Indice della documentazione sulle azioni
 
 ### Architettura
@@ -242,9 +197,6 @@ Implementare una gestione robusta degli errori per gestire i fallimenti nell'acc
 
 ### Traits
 - [Index](./Traits/INDEX.md) - Indice della documentazione sui traits
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Collegamenti alla Documentazione Correlata
 - [Panoramica Architettura](./architecture.md)
@@ -260,22 +212,13 @@ Questa documentazione viene aggiornata regolarmente. Prima di apportare modifich
 - **Gennaio 2025**: Risoluzione sistematica di tutti i conflitti Git nei file di documentazione
 - Il file `lang/it/tenant_theme.php` è stato risolto manualmente mantenendo PSR-12, strict_types, array short syntax e solo chiavi effettive, come richiesto dagli standard PHPStan livello 10
 - **Filosofia di risoluzione**: Approccio olistico con analisi manuale approfondita, mantenimento integrità architetturale, documentazione bidirezionale aggiornata
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Vedi anche: [../../../../docs/README.md](../../../../docs/readme.md)
-- Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
-
-=======
 - Vedi anche: [../../../../docs/README.md](../../../../docs/README.md)
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 
 *Ultimo aggiornamento: Gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 - Vedi anche: [../../../../../docs/README.md](../../../../../docs/readme.md)
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 
 *Ultimo aggiornamento: Gennaio 2025*
 
 - [Conflict Resolution](conflict-resolution.md)
->>>>>>> dev

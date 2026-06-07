@@ -116,8 +116,6 @@ database_old
 *.fila2
 laravel
 public_html
-<<<<<<< HEAD
-=======
 lang/lang/
 _docs/
 _docs/
@@ -132,5 +130,3 @@ docs/archive/
 *.orig
 *.rej
 *~head
-
->>>>>>> dev

@@ -4,27 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Traits;
 
-<<<<<<< HEAD
-use BackedEnum;
-use Modules\Lang\Actions\SaveTransAction;
-use Modules\Xot\Actions\File\SvgExistsAction;
-use UnitEnum;
-
-trait NavigationLabelTrait
-{
-<<<<<<< HEAD
-    use TransTrait;
-=======
-    use TransFuncTrait;
->>>>>>> 4b6b99016 (first commit)
-=======
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Xot\Actions\File\SvgExistsAction;
 
 trait NavigationLabelTrait
 {
     use TransTrait;
->>>>>>> dev
 
     // public function getModelLabel(): string
     // {
@@ -44,11 +29,7 @@ trait NavigationLabelTrait
         return static::transFunc(__FUNCTION__);
     }
 
-<<<<<<< HEAD
-    public static function getNavigationGroup(): UnitEnum|string|null
-=======
     public static function getNavigationGroup(): \UnitEnum|string|null
->>>>>>> dev
     {
         return static::transFunc(__FUNCTION__);
     }
@@ -74,11 +55,7 @@ trait NavigationLabelTrait
 
         $value = intval($res);
 
-<<<<<<< HEAD
-        if ($value === 0) {
-=======
         if (0 === $value) {
->>>>>>> dev
             $key = static::getKeyTransFunc(__FUNCTION__);
             $value = rand(1, 100);
             app(SaveTransAction::class)->execute($key, $value);
@@ -87,11 +64,7 @@ trait NavigationLabelTrait
         return $value;
     }
 
-<<<<<<< HEAD
-    public static function getNavigationIcon(): BackedEnum|string|null
-=======
     public static function getNavigationIcon(): \BackedEnum|string|null
->>>>>>> dev
     {
         $default = 'heroicon-o-question-mark-circle';
 

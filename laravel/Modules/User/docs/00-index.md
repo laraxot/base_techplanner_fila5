@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 # 📚 **Indice Documentazione Modulo User**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -16,10 +12,7 @@
 - 🔐 **[Authentication Flow](./authentication.md)** - Dettagli sul ciclo di vita della sessione.
 - 📜 **[Permissions System](./permissions.md)** - Gestione ruoli e permessi con Spatie.
 - 🎫 **[Passport & SSO](./passport-integration.md)** - Integrazione OAuth2 e Single Sign-On.
-<<<<<<< HEAD
-=======
 - 🧷 **[Passport Model Wrappers](./passport-model-wrappers.md)** - Mappa obbligatoria tra model vendor Passport e wrapper `Oauth*` locali.
->>>>>>> dev
 - 🛡️ **[2FA Guide](./2fa-guide.md)** - Implementazione dell'autenticazione a due fattori.
 
 ## 👤 **Profilo & Moderazione**
@@ -31,13 +24,6 @@
 - 🏗️ **[Filament Resources](./filament-resources-updated.md)** - Gestione utenti, ruoli e permessi in v5.
 - 🔑 **[Passport Cluster](./passport-cluster-summary.md)** - Gestione centralizzata delle chiavi API.
 - ⚡ **[Auth Widgets](./login-widget-fix.md)** - Componenti di login/registrazione riutilizzabili.
-<<<<<<< HEAD
-
-## 🧪 **Qualità e Sviluppo**
-- ✅ **[PHPStan Analysis](./phpstan-level10-user-fixes.md)** - Report di conformità Level 10.
-- 🔬 **[Testing Identity](./testing.md)** - Test di autenticazione e autorizzazione (Pest).
-- 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
-=======
 - 🔐 **[Socialite + Microsoft OAuth](./socialite-microsoft-integration.md)** - Integrazione autenticazione Microsoft (NEW)
 
 ## 🧪 **Qualità e Sviluppo**
@@ -47,13 +33,10 @@
 - 🔬 **[Testing Identity](./testing.md)** - Test di autenticazione e autorizzazione (Pest).
 - 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
 - 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.
->>>>>>> dev
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./todo.md)** - Strategia per gestire i 550+ documenti accumulati.
 
-<<<<<<< HEAD
-=======
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
 - `laravel/passport` - OAuth2 API
@@ -62,14 +45,11 @@
 - `jenssegers/agent` - User-Agent
 - `spatie/laravel-personal-data-export` - Export GDPR
 
->>>>>>> dev
 ## 🔗 **Moduli Correlati**
 - [Xot](../../xot/docs/readme.md) - Core per la gestione dei trait `HasTeams`.
 - [Tenant](../../tenant/docs/readme.md) - Risoluzione del Tenant corrente per l'utente.
 
 ---
-<<<<<<< HEAD
-=======
 # User Module Documentation Index
 
 **Last Update**: 18 Dicembre 2025  
@@ -142,12 +122,9 @@
 
 ---
 
->>>>>>> 4b6b99016 (first commit)
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-=======
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
->>>>>>> dev

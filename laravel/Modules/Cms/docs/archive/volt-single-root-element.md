@@ -50,14 +50,7 @@ Wrappare sempre gli elementi multipli in un singolo elemento container:
 - [Struttura Layout](struttura-layout-componenti-blade-<nome progetto>.md)
 
 ## Vedi Anche
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Principale](../../docs/index.md)
-=======
 - [Documentazione Principale](../../docs/INDEX.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione Principale](../../../docs/index.md)
->>>>>>> dev
 - [Best Practices Frontend](web-design-rules.md)
 - [Gestione Componenti](components.md)

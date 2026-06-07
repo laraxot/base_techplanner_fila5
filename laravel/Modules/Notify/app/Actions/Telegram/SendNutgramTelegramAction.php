@@ -65,18 +65,6 @@ final class SendNutgramTelegramAction
      */
     public function execute(TelegramData $telegramData): array
     {
-<<<<<<< HEAD
-        // Log di debug se abilitato
-        if ($this->debug) {
-            Log::debug('Invio Telegram Nutgram', [
-                'chat_id' => $telegramData->chatId,
-                'message_length' => strlen($telegramData->text),
-                'type' => $telegramData->type,
-            ]);
-        }
-
-=======
->>>>>>> dev
         $client = new Client([
             'timeout' => $this->timeout,
             'base_uri' => $this->apiUrl,
@@ -136,11 +124,7 @@ final class SendNutgramTelegramAction
             $this->vars['status_txt'] = $responseContent;
             $this->vars['response_data'] = $responseData;
 
-<<<<<<< HEAD
-            Log::info('Telegram Nutgram inviato con successo', [
-=======
             Log::debug('Telegram Nutgram inviato con successo', [
->>>>>>> dev
                 'chat_id' => $telegramData->chatId,
                 'response_code' => $statusCode,
             ]);

@@ -51,14 +51,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static EloquentBuilder<static>|Translation whereValue($value)
  *
  * @property ProfileContract|null $deleter
-<<<<<<< HEAD
-=======
  * @property string|null          $locale
  * @property int|null             $user_id
  *
  * @method static EloquentBuilder<static>|Translation whereLocale($value)
  * @method static EloquentBuilder<static>|Translation whereUserId($value)
->>>>>>> dev
  *
  * @mixin \Eloquent
  */

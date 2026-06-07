@@ -1,12 +1,6 @@
 # Media Module: Philosophy, Purpose, and Design Principles
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Date:** December 23, 2025
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## 🎯 Purpose and Core Responsibilities
 

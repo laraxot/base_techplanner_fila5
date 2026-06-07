@@ -20,18 +20,9 @@ return [
     'fields' => [
         'device_token' => [
             'label' => 'Token Dispositivo',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'type' => [
             'label' => 'Tipo',
@@ -40,10 +31,6 @@ return [
                 'data' => 'Dati',
                 'both' => 'Entrambi',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -59,31 +46,12 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'title' => [
-            'label' => 'Titolo',
-        ],
-        'body' => [
-            'label' => 'Contenuto',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'data' => [
             'label' => 'Dati Aggiuntivi',
             'description' => 'Dati in formato JSON da inviare con la notifica',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -96,14 +64,6 @@ return [
             'label' => 'Anteprima',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Send Push Notification',
     'plural_label' => 'Send Push Notification (Plurale)',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Send Push Notification',
-    'plural_label' => 'Send Push Notification (Plurale)',
->>>>>>> dev
 ];

@@ -4,18 +4,10 @@
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione completa sull'architettura Folio + Volt + Filament](./folio_volt_architecture.md)
-- [README](../readme.md) - Panoramica del modulo Xot
-- [Struttura dei moduli](./module_structure.md) - Convenzioni di struttura dei moduli
-- [Convenzioni di naming](../../../project_docs/convenzioni-naming-campi.md) - Convenzioni per i nomi dei campi
-=======
 - [Documentazione completa sull'architettura Folio + Volt + Filament](./folio_volt_architecture.md)
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Struttura dei moduli](./module_structure.md) - Convenzioni di struttura dei moduli
 - [Convenzioni di naming](../../../../docs/project/convenzioni-naming-campi.md) - Convenzioni per i nomi dei campi
->>>>>>> dev
 
 ### Moduli Collegati
 - [UI](../ui/project_docs/readme.md) - Componenti di interfaccia
@@ -201,18 +193,12 @@ $submit = function() {
 - [Documentazione completa sull'architettura Folio + Volt + Filament](./folio_volt_architecture.md)
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Struttura dei moduli](./module_structure.md) - Convenzioni di struttura dei moduli
-<<<<<<< HEAD
-- [Convenzioni di naming](../../../docs/convenzioni-naming-campi.md) - Convenzioni per i nomi dei campi
-=======
 - [Convenzioni di naming](../../../../docs/convenzioni-naming-campi.md) - Convenzioni per i nomi dei campi
->>>>>>> dev
 
 ### Moduli Collegati
 - [UI](../ui/docs/readme.md) - Componenti di interfaccia
 - [Cms](../cms/docs/readme.md) - Gestione contenuti
 - [Lang](../lang/docs/readme.md) - Traduzioni
-<<<<<<< HEAD
-=======
 - [Documentazione completa sull'architettura Folio + Volt + Filament](./FOLIO_VOLT_ARCHITECTURE.md)
 - [README](../README.md) - Panoramica del modulo Xot
 - [Struttura dei moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
@@ -222,9 +208,6 @@ $submit = function() {
 - [UI](../UI/docs/README.md) - Componenti di interfaccia
 - [Cms](../Cms/docs/README.md) - Gestione contenuti
 - [Lang](../Lang/docs/README.md) - Traduzioni
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Struttura
 
@@ -331,10 +314,6 @@ $submit = function() {
 ## Collegamenti Moduli
 
 ### Modulo UI
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Componenti Volt](../ui/docs/components/volt.md)
 - [Layout](../ui/docs/layouts.md)
 - [Temi](../ui/docs/themes.md)
@@ -400,8 +379,6 @@ $submit = function() {
 - [Grafici](../chart/docs/charts.md)
 - [Dashboard](../chart/docs/dashboard.md)
 - [Visualizzazione](../chart/docs/visualization.md)
-<<<<<<< HEAD
-=======
 - [Componenti Volt](../UI/docs/components/volt.md)
 - [Layout](../UI/docs/layouts.md)
 - [Temi](../UI/docs/themes.md)
@@ -467,6 +444,3 @@ $submit = function() {
 - [Grafici](../Chart/docs/charts.md)
 - [Dashboard](../Chart/docs/dashboard.md)
 - [Visualizzazione](../Chart/docs/visualization.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

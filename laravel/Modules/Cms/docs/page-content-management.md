@@ -7,10 +7,6 @@ Questo documento fornisce una panoramica del sistema di gestione dei contenuti d
 ## Collegamenti
 
 ### Documentazione Completa
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Documentazione Modulo Cms](../laravel/modules/cms/project_docs/page-content-management.md)
 
 ### Moduli Correlati
@@ -19,8 +15,6 @@ Questo documento fornisce una panoramica del sistema di gestione dei contenuti d
 
 ## Note
 Questa documentazione contiene solo una panoramica generale. Per i dettagli completi, consultare la documentazione del modulo Cms. 
-<<<<<<< HEAD
-=======
 - [Documentazione Modulo Cms](../laravel/Modules/Cms/project_docs/page-content-management.md)
 
 ### Moduli Correlati
@@ -29,6 +23,3 @@ Questa documentazione contiene solo una panoramica generale. Per i dettagli comp
 
 ## Note
 Questa documentazione contiene solo una panoramica generale. Per i dettagli completi, consultare la documentazione del modulo Cms.
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

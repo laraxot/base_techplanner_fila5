@@ -1,45 +1,30 @@
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Volt Folio Logout](./volt_folio_logout.md)
 - [Implementazione Logout](./logout_blade_implementation.md)
-<<<<<<< HEAD
-=======
 - [README modulo User](./README.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Implementazione Logout](./LOGOUT_BLADE_IMPLEMENTATION.md)
->>>>>>> 4b6b99016 (first commit)
 
 ## Panoramica
 
 Questo documento descrive come implementare nell'header di SaluteOra:
-=======
 
 ## Panoramica
 
 Questo documento descrive come implementare nell'header di healthcare_app:
->>>>>>> dev
 1. Un selettore di lingua
 2. Un dropdown con l'avatar dell'utente contenente il link di logout
 
 ## Struttura Attuale dell'Header
 
-<<<<<<< HEAD
-L'header di SaluteOra è gestito tramite:
-- **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
-- **Configurazione JSON**: `/config/local/saluteora/database/content/sections/1.json`
-=======
 L'header di healthcare_app è gestito tramite:
 - **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
 - **Configurazione JSON**: `/config/local/healthcare_app/database/content/sections/1.json`
->>>>>>> dev
 
 Il componente header legge i blocchi dal file JSON e li renderizza in base alla lingua corrente. Attualmente l'header contiene:
 - Un logo
@@ -229,11 +214,7 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "pub_theme::components.blocks.logo",
                     "src": "patient::images/logo.svg",
-<<<<<<< HEAD
-                    "alt": "Logo SaluteOra",
-=======
                     "alt": "Logo healthcare_app",
->>>>>>> dev
                     "width": 150,
                     "height": 32
                 }
@@ -307,11 +288,7 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "pub_theme::components.blocks.logo",
                     "src": "patient::images/logo.svg",
-<<<<<<< HEAD
-                    "alt": "SaluteOra Logo",
-=======
                     "alt": "healthcare_app Logo",
->>>>>>> dev
                     "width": 150,
                     "height": 32
                 }

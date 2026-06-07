@@ -317,8 +317,4 @@ Column (Filament - DO NOT REFERENCE)
 - [Never Use Label Rule](../never_use_label_rule.md)
 - [XotBaseColumn](../../../../Xot/app/Filament/Tables/Columns/XotBaseColumn.php)
 - [Translation Pattern](../../translations/)
-<<<<<<< HEAD
-- [docs/blade-components.md](../../../docs/blade-components.md)
-=======
 - [docs/blade-components.md](../../../../docs/blade-components.md)
->>>>>>> dev

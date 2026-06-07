@@ -23,10 +23,6 @@ return [
             'placeholder' => 'Seleziona tipo di layout',
             'tooltip' => 'Scegli tra vista a elenco e vista a griglia',
             'help' => 'Scegli il tipo di layout più adatto per visualizzare i dati',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -44,11 +40,4 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-<<<<<<< HEAD
-=======
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

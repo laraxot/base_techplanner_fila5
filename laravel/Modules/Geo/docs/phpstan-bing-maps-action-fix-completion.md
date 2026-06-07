@@ -1,12 +1,6 @@
 # PHPStan Fix Completion - GetAddressFromBingMapsAction - Gennaio 2026
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2026-01-09  
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Stato**: ✅ COMPLETATO CON SUCCESSO  
 **File**: `Modules/Geo/app/Actions/Bing/GetAddressFromBingMapsAction.php`
 
@@ -89,18 +83,10 @@ Basato sulla documentazione `phpstan-code-quality-guide.md`:
 
 - [File Corretto](../app/Actions/Bing/GetAddressFromBingMapsAction.php) 
 - [Documento Roadmap](./phpstan-bing-maps-action-fix-roadmap.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [PHPStan Code Quality Guide](../../../xot/docs/phpstan-code-quality-guide.md)
-- [Best Practices Geocoding](../readme.md)
-=======
 - [PHPStan Code Quality Guide](../../../Xot/docs/phpstan-code-quality-guide.md)
 - [Best Practices Geocoding](../README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [PHPStan Code Quality Guide](../../../xot/docs/phpstan-code-quality-guide.md)
 - [Best Practices Geocoding](../readme.md)
->>>>>>> dev
 
 ## 🎯 Impatto sul Sistema
 
@@ -114,12 +100,5 @@ Basato sulla documentazione `phpstan-code-quality-guide.md`:
 **Autore**: iFlow CLI  
 **Approvazione**: Completo e verificato  
 **Status**: Pronto per produzione  
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Data Completamento**: [DATE]
-=======
 **Data Completamento**: 2026-01-09
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data Completamento**: [DATE]
->>>>>>> dev

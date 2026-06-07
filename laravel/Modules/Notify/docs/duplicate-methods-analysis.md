@@ -1,13 +1,7 @@
 # Analisi Metodi Duplicati - Modulo Notify
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data Generazione**: 2025-10-15 06:41:17
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data Generazione**: 2025-10-15 06:41:17
->>>>>>> dev
 **Totale Gruppi di Duplicati**: 
 
 ## Sommario Esecutivo
@@ -694,4 +688,3 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 - **70-89%**: Raccomandato
 - **50-69%**: Valutare caso per caso
 - **< 50%**: Richiede analisi dettagliata
-

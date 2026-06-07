@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\User\Tests\Feature;
-
->>>>>>> dev
 use Illuminate\Console\Application;
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;

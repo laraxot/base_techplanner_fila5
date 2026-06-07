@@ -1,12 +1,6 @@
 # Testing Fixes Roadmap - Correzione Test Falliti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2025-01-22
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Status**: In Progress
 **Principio Fondamentale**: Il sito funziona, quindi se un test fallisce è il test che sbaglia
 
@@ -122,21 +116,12 @@ $currentTeam = $user->currentTeam;
 ## 📚 Documentazione di Riferimento
 
 - [Testing Best Practices](testing-best-practices.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Testing Priority Rule](../geo/docs/testing-priority-rule.md)
-- [No RefreshDatabase Policy](../activity/docs/testing/no-refresh-database-policy.md)
-- [Test Fix Philosophy](../ui/docs/test-fix-philosophy.md)
-=======
 - [Testing Priority Rule](../Geo/docs/testing-priority-rule.md)
 - [No RefreshDatabase Policy](../Activity/docs/testing/no-refresh-database-policy.md)
 - [Test Fix Philosophy](../UI/docs/test-fix-philosophy.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Testing Priority Rule](../geo/docs/testing-priority-rule.md)
 - [No RefreshDatabase Policy](../activity/docs/testing/no-refresh-database-policy.md)
 - [Test Fix Philosophy](../ui/docs/test-fix-philosophy.md)
->>>>>>> dev
 
 ## 🔄 Workflow per Ogni Test
 
@@ -150,13 +135,6 @@ $currentTeam = $user->currentTeam;
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2025-01-22
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: [DATE]
->>>>>>> dev
 **Prossimo step**: Correggere ArtisanServiceTest.php

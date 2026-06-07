@@ -675,15 +675,8 @@ test('no memory leaks in repeated operations', function (): void {
 ### Internal Documentation
 - [Root Testing Organization](../../../project_docs/testing-organization.md)
 - [<nome progetto> Testing Guidelines](../../<nome progetto>/project_docs/testing.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Cms Testing Guidelines](../../cms/project_docs/testing.md)
-=======
 - [Cms Testing Guidelines](../../Cms/project_docs/testing.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Cms Testing Guidelines](../../cms/project_docs/testing.md)
->>>>>>> dev
 
 ### Framework Documentation
 - [Xot Framework Architecture](./architecture.md)

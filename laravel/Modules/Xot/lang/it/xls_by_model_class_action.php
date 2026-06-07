@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 return [
     'id' => 'id',
     'level' => 'level',
@@ -62,9 +58,3 @@ return [
         ],
     ],
 ];
-<<<<<<< HEAD
-=======
-return ['id' => 'id', 'level' => 'level', 'name' => 'name', 'color' => 'color', 'created_by' => 'created_by', 'updated_by' => 'updated_by', 'deleted_by' => 'deleted_by', 'created_at' => 'created_at', 'updated_at' => 'updated_at', 'deleted_at' => 'deleted_at'];
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

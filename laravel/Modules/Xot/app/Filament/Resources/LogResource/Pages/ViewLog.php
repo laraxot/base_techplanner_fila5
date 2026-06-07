@@ -9,10 +9,6 @@ use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Modules\Xot\Filament\Resources\LogResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
-<<<<<<< HEAD
-use Override;
-=======
->>>>>>> dev
 
 use function Safe\json_encode;
 
@@ -20,11 +16,7 @@ class ViewLog extends XotBaseViewRecord
 {
     protected static string $resource = LogResource::class;
 
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     protected function getInfolistSchema(): array
     {
         $log = $this->getRecord()->getModel();

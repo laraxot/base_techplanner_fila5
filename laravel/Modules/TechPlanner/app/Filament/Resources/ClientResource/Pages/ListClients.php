@@ -4,14 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Filament\Resources\ClientResource\Pages;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Modules\Geo\Actions\UpdateCoordinatesAction;
-use Illuminate\Database\Eloquent\Collection;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Exception;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
@@ -21,55 +13,23 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\Relation;
-=======
-use Illuminate\Database\Eloquent\Relations\Relation;
-use Illuminate\Support\Arr;
->>>>>>> 4b6b99016 (first commit)
-=======
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Relations\Relation;
->>>>>>> dev
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Session;
 use Livewire\Attributes\On;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
-use Modules\Geo\Actions\UpdateCoordinatesAction;
+use Modules\Geo\Actions\UpdateCoordinatesFromAddressAction;
 use Modules\Geo\Filament\Actions\UpdateCoordinatesBulkAction;
 use Modules\Geo\Filament\Tables\Columns\AddressColumn; // NEW IMPORT
 use Modules\Notify\Filament\Actions\SendRecordsNotificationBulkAction;
 use Modules\Notify\Filament\Tables\Columns\ContactColumn;
-<<<<<<< HEAD
-=======
-use Modules\Notify\Filament\Tables\Columns\ContactColumn;
-use Modules\Notify\Filament\Actions\SendRecordsNotificationBulkAction; // NEW IMPORT
-use Modules\Geo\Filament\Actions\UpdateCoordinatesBulkAction;
-use Modules\Geo\Filament\Tables\Columns\AddressColumn;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 use Modules\TechPlanner\Filament\Imports\ClientImporter;
 use Modules\TechPlanner\Filament\Resources\ClientResource;
 use Modules\TechPlanner\Models\Client;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Override;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Throwable;
-
-use function Safe\preg_replace;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 /**
  * @property ClientResource $resource
@@ -125,15 +85,7 @@ class ListClients extends XotBaseListRecords
             'company_name' => TextColumn::make('company_name')
                 ->searchable()
                 ->sortable()
-<<<<<<< HEAD
-<<<<<<< HEAD
                 // ->formatStateUsing(fn($record) => dddx($record))
-=======
-                //->formatStateUsing(fn($record) => dddx($record))
->>>>>>> 4b6b99016 (first commit)
-=======
-                // ->formatStateUsing(fn($record) => dddx($record))
->>>>>>> dev
                 ->wrap(),
             'fiscal_code' => TextColumn::make('fiscal_code')->toggleable(isToggledHiddenByDefault: true),
             'full_address' => TextColumn::make('full_address')
@@ -153,14 +105,6 @@ class ListClients extends XotBaseListRecords
         return $columns;
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     public function getTableFilters(): array
     {
         // Cache del filtro attività per ridurre query e memory usage
@@ -224,38 +168,26 @@ class ListClients extends XotBaseListRecords
 
         Client::whereNull('latitude')
             ->orWhereNull('longitude')
-            ->chunk($batchSize, function ($clients) use (&$totalProcessed, &$totalSuccess, &$errors) {
-                /** @var \Illuminate\Database\Eloquent\Collection<int, Client> $clients */
-                /** @var UpdateCoordinatesAction $action */
-                $action = app(UpdateCoordinatesAction::class);
-                // Client extends Model, so Collection<int, Client> is compatible with Collection<int, Model>
-                /** @phpstan-ignore-next-line */
-                $result = $action->execute($clients);
+            ->chunk($batchSize, function ($clients) use (&$totalProcessed, &$totalSuccess, &$errors): void {
+                /** @var Collection<int, Client> $clients */
+                $action = app(UpdateCoordinatesFromAddressAction::class);
 
-                if ($result === null) {
-                    return;
-                }
-
-                $totalSuccess += (int) $result->successCount;
-                $totalProcessed += (int) $result->totalProcessed;
-
-                // Collect errors for notification
-                $resultErrors = is_array($result->errors) ? $result->errors : [];
-                foreach ($resultErrors as $error) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    if (! is_array($error)) {
-=======
-                    if (!is_array($error)) {
->>>>>>> 4b6b99016 (first commit)
-=======
-                    if (! is_array($error)) {
->>>>>>> dev
+                foreach ($clients as $client) {
+                    if (! $client instanceof Client) {
                         continue;
                     }
-                    $model = isset($error['model']) ? (string) $error['model'] : 'Unknown';
-                    $errorMsg = isset($error['error']) ? (string) $error['error'] : 'Unknown error';
-                    $errors[] = "Error updating {$model}: {$errorMsg}";
+
+                    ++$totalProcessed;
+
+                    if ($action->execute($client)) {
+                        ++$totalSuccess;
+
+                        continue;
+                    }
+
+                    foreach ($action->getErrors() as $error) {
+                        $errors[] = 'Error updating client #'.(string) $client->getKey().': '.(string) $error;
+                    }
                 }
             });
 
@@ -361,13 +293,6 @@ class ListClients extends XotBaseListRecords
         $this->applySort('distance');
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     protected function getTableQuery(): Builder
     {
         $query = parent::getTableQuery();
@@ -390,11 +315,13 @@ class ListClients extends XotBaseListRecords
         $latitude = Session::get('user_latitude');
         $longitude = Session::get('user_longitude');
 
+        /** @var Builder<Client> $query */
         return $query->when($latitude && $longitude, function (Builder $q) use ($latitude, $longitude): Builder {
-            /** @phpstan-ignore-next-line */
-            $q->withDistance($latitude, $longitude)->orderByDistance($latitude, $longitude);
+            $lat = is_numeric($latitude) ? (float) $latitude : 0.0;
+            $lng = is_numeric($longitude) ? (float) $longitude : 0.0;
 
-            return $q;
+            /** @var Builder<Client> $q */
+            return $q->withDistance($lat, $lng)->orderByDistance($lat, $lng);
         });
     }
 }

@@ -54,10 +54,6 @@ class SixteenInstallCommand extends Command
     protected function createEnvTemplate(): void
     {
         $this->info('📄 Creating .env template...');
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 
         $envExample = base_path('.env.sixteen.example');
 
@@ -65,8 +61,6 @@ class SixteenInstallCommand extends Command
 
         File::put($envExample, $template);
 
-<<<<<<< HEAD
-=======
         
         $envExample = base_path('.env.sixteen.example');
         
@@ -74,9 +68,6 @@ class SixteenInstallCommand extends Command
         
         File::put($envExample, $template);
         
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         $this->comment("Created {$envExample}");
         $this->line('You can copy these variables to your .env file');
     }
@@ -139,40 +130,20 @@ ENV;
     protected function showCompletionMessage(): void
     {
         $this->info('🎉 Sixteen theme installed successfully!');
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         $this->comment('Next steps:');
         $this->line('1. Copy variables from .env.sixteen.example to your .env file');
         $this->line('2. Customize the configuration in config/sixteen/sixteen.php');
         $this->line('3. Run "npm install && npm run build" to build assets');
         $this->line('4. Update your layout to use pub_theme views');
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         $this->warn('⚠️  Remember to:');
         $this->line('• Configure your web server to serve static assets');
         $this->line('• Set up proper permissions for the public/themes directory');
         $this->line('• Test accessibility features with screen readers');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4b6b99016 (first commit)
-=======
-}
->>>>>>> dev
+
+
+
+

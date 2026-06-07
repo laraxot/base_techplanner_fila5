@@ -1,10 +1,6 @@
 # 🧬 Schemaless Attributes in Themes
 
 **Status:** ✅ STANDARD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 **Central Reference:** [Xot Schemaless Guide](../../Modules/Xot/docs/spatie-schemaless-attributes.md)
 
 ---
@@ -70,8 +66,6 @@ $record->save();
 - [Xot Schemaless Guide](../../Modules/Xot/docs/spatie-schemaless-attributes.md)
 - [UI Themes Detailed Guide](../../Modules/UI/docs/themes/schemaless-attributes-guide.md)
 - [Rating Schemaless Docs](../../Modules/Rating/docs/schemaless-attributes.md)
-<<<<<<< HEAD
-=======
 **Reference:** [Global Rules](../../../Modules/Xot/docs/schemaless-attributes-rules.md)
 
 ---
@@ -93,6 +87,3 @@ I temi possono utilizzare modelli che implementano Schemaless Attributes.
 2.  **Forms**: Quando si creano form per attributi extra, usare la dot notation nei nomi dei campi se supportato dal backend, oppure gestire la serializzazione.
 
 ---
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

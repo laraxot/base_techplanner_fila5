@@ -1,7 +1,5 @@
 # Laraxot Migration Architecture Philosophy
 
-<<<<<<< HEAD
-=======
 ## 🚨 ABSOLUTE RULE: NEVER USE DESTRUCTIVE MIGRATION COMMANDS
 
 **FORBIDDEN - NEVER USE THESE COMMANDS:**
@@ -15,7 +13,6 @@
 
 **ALTERNATIVE**: Use proper migration updates following Laraxot philosophy - one migration per table, modify existing migrations with timestamp updates, never drop or recreate.
 
->>>>>>> dev
 ## Core Migration Principles
 
 ### The Single Source of Truth Principle
@@ -24,11 +21,7 @@
 
 ### Why This Architecture Matters
 
-<<<<<<< HEAD
-1. **Predictable Schema Evolution**: Clear, linear progression of database changes
-=======
 1. **<nome progetto>able Schema Evolution**: Clear, linear progression of database changes
->>>>>>> dev
 2. **Environment Consistency**: Same migration order across all environments
 3. **Maintainability**: Single file to modify for each table's base schema
 4. **DRY Compliance**: Eliminates redundant schema definitions
@@ -68,24 +61,13 @@ $this->tableUpdate(function (Blueprint $table) {
 
 ### Migration Types and Their Purpose
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-#### 1. Table Creation Migrations (UNICA per tabella)
-=======
 #### 1. Table Creation Migrations
->>>>>>> 4b6b99016 (first commit)
-=======
 #### 1. Table Creation Migrations (UNICA per tabella)
->>>>>>> dev
 - **Pattern**: `{timestamp}_create_{table}_table.php`
 - **Purpose**: Define the base table schema
 - **Rule**: Exactly ONE per table per module
 - **Example**: `2024_01_01_000011_create_roles_table.php`
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 #### 2. Modifiche allo schema: stessa migrazione
 - **Regola**: Per modificare campi o aggiungere colonne, **NON** creare nuove migrazioni separate
 - **Procedura**: Modificare la **stessa** migrazione esistente e aggiornare il **timestamp** nel nome del file
@@ -95,8 +77,6 @@ $this->tableUpdate(function (Blueprint $table) {
 #### 3. Data Migration Migrations (solo per trasformazioni dati)
 - **Pattern**: `{timestamp}_migrate_{purpose}.php`
 - **Purpose**: Transform or seed data (NON modifiche schema)
-<<<<<<< HEAD
-=======
 #### 2. Schema Evolution Migrations
 - **Pattern**: `{timestamp}_{action}_{table}.php`
 - **Purpose**: Modify existing table schema
@@ -107,9 +87,6 @@ $this->tableUpdate(function (Blueprint $table) {
 #### 3. Data Migration Migrations
 - **Pattern**: `{timestamp}_migrate_{purpose}.php`
 - **Purpose**: Transform or seed data
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 - **Examples**:
   - `2024_08_10_migrate_user_roles.php`
   - `2024_09_15_seed_default_permissions.php`
@@ -143,43 +120,25 @@ Modules/User/database/migrations/
 ├── 2024_01_01_000001_create_users_table.php
 ├── 2024_01_01_000011_create_roles_table.php      # Single authoritative
 ├── 2024_01_01_000021_create_permissions_table.php
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 └── 2026_02_22_000000_create_profiles_table.php   # Modifiche: stessa migrazione, timestamp aggiornato
 ```
 
 **NON** creare `add_team_id_to_roles.php` separata: modificare `create_roles_table.php` e aggiornare il timestamp.
 
-<<<<<<< HEAD
-=======
 └── 2024_06_15_143000_add_team_id_to_roles.php    # Schema evolution
 ```
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 #### Schema Evolution Approach
 
 When you need to modify a table:
 
 1. **NEVER** create a new `create_table` migration
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 2. **NEVER** creare migrazioni separate tipo `add_column_to_table`
 3. **ALWAYS** modificare la **stessa** migrazione esistente
 4. **ALWAYS** aggiornare il timestamp nel nome del file
 5. **USE** `XotBaseMigration::tableUpdate()` per aggiunte sicure
-<<<<<<< HEAD
-=======
 2. **ALWAYS** create a schema evolution migration
 3. **USE** `XotBaseMigration::tableUpdate()` for safe modifications
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ### XotBaseMigration Best Practices
 
@@ -243,75 +202,20 @@ Each module should:
 3. Document migration dependencies in module README
 4. Follow consistent naming conventions
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 ### Main-Module Dependency Rule
 
 **Modelli strettamente dipendenti dal main_module** (es. Profile): la migrazione deve stare nel modulo main (es. TechPlanner), NON in moduli generici (User). Profile è dominio del main_module.
 
-<<<<<<< HEAD
-#### Esempio Pratico: Profile
-
-```php
-// ❌ SBAGLIATO - Profile nel modulo User
-Modules/User/database/migrations/2026_02_22_000000_create_profiles_table.php
-
-// ✅ CORRETTO - Profile nel main_module (TechPlanner)
-Modules/TechPlanner/database/migrations/2026_02_22_000000_create_profiles_table.php
-```
-
-Perché? Profile è un modello strettamente legato all'applicazione principale (TechPlanner), non è un modello generico come User o Role.
-
-### Profile with UUID for Android/Postgres
-
-Per tabelle che devono essere compatibili con applicazioni Android e Postgres, usare:
-- `id` auto-increment (bigint) - per relazioni interne Laravel
-- `uuid` colonna separata - per referenziazione da app Android/Postgres
-
-```php
-// Profile migration: id auto-increment + uuid per Android/Postgres
-class CreateProfilesTable extends XotBaseMigration
-{
-    protected ?string $model_class = Profile::class;
-
-    public function up(): void
-    {
-        $this->tableCreate(static function (Blueprint $table): void {
-            $table->id();                      // bigint auto-increment (Laravel)
-            $table->uuid('uuid')->unique();    // per Android/Postgres
-            $table->string('user_id', 36)->index()->nullable();
-            $table->string('first_name')->nullable();
-            $table->string('last_name')->nullable();
-            // ... altri campi
-            $table->timestamps();
-        });
-    }
-}
-```
-
-```php
-// Model: usa id come chiave primaria
-class Profile extends BaseProfile
-{
-    // $id è int (auto-increment)
-    // $uuid è string (per Android/Postgres)
-}
-```
-=======
 ### Profile with UUID for Android/Postgres
 
 Per tabelle che devono essere compatibili con applicazioni Android e Postgres, usare:
 - `id` auto-increment (bigint)
 - `uuid` colonna separata per referenziazione esterna
->>>>>>> dev
 
 ### Screenshots and Docs Location
 
 **REGOLA**: Gli screenshot e la documentazione visuale devono essere salvati nelle cartelle `docs/` dentro i moduli e i temi, MAI in `/tmp` o altre posizioni.
 
-<<<<<<< HEAD
 ```bash
 # ✅ CORRETTO
 laravel/Modules/User/docs/screenshots/login-widget.png
@@ -510,9 +414,6 @@ protected function registerLivewireAuthWidgets(): void
 | Form non funziona | `$wire` non definito | Verificare Alpine.js (vedi sezione precedente) |
 | Labels in inglese | Traduzioni mancanti | Aggiungere in lang/xx/ |
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 ### Alpine.js and Livewire in Themes
 
 **REGOLA**: Alpine.js è fornito automaticamente da Livewire/Filament. NON includere Alpine.js nel bundle del tema.
@@ -521,7 +422,6 @@ protected function registerLivewireAuthWidgets(): void
 
 **REGOLA**: I form devono essere gestiti SEMPRE tramite Filament Widget, NON con form HTML tradizionali.
 
->>>>>>> dev
 ### Exception Cases
 
 **The ONLY exception** to the one-migration-per-table rule:

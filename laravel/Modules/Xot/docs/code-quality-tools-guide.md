@@ -1,14 +1,7 @@
 # 🔧 CODE QUALITY TOOLS GUIDE - Strumenti di Analisi Codice PHP
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Data Creazione**: [DATE]
-=======
 **Data Creazione**: 2025-01-27
->>>>>>> 4b6b99016 (first commit)
-=======
 **Data Creazione**: [DATE]
->>>>>>> dev
 **Status**: 🚀 ATTIVO
 **Scope**: Tutti i moduli e temi
 **Priority**: CRITICAL
@@ -813,16 +806,9 @@ jobs:
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 **Last Updated**: 2025-01-27
 **Next Review**: 2025-02-27
->>>>>>> 4b6b99016 (first commit)
-=======
 
->>>>>>> dev
 **Status**: 🚀 ACTIVE IMPLEMENTATION
 **Confidence Level**: 95%
 

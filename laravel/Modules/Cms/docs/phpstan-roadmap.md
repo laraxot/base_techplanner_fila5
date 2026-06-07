@@ -1,9 +1,5 @@
 # PHPStan Roadmap - Cms Module
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 > **Created**: [DATE]  
 > **Updated**: [DATE]
 > **Status**: 🔴 High Priority  
@@ -261,8 +257,6 @@ public function testDataGenerationEndToEnd(): void
 
 **Status**: Requires detailed planning
 **Next**: Start with ThemeComposer fixes
-<<<<<<< HEAD
-=======
 > **Date**: 2026-01-14
 > **Status**: ✅ Fully Compliant (Level 10)
 > **Errors**: 0
@@ -278,6 +272,3 @@ The **Cms** module is fully compliant with PHPStan Level 10. No errors were repo
 ## Future Goals
 - Maintain 0 errors.
 - Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

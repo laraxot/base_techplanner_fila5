@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 # Laraxot Architecture Rules - Xot Module
 
 ## 🎯 Regole Fondamentali Laraxot
@@ -154,22 +150,14 @@ class MyAction
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-=======
 namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> dev
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
-<<<<<<< HEAD
-use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
-=======
 use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
 use Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
->>>>>>> dev
 
 class ViewQuestionChart extends XotBaseViewRecord
 {
@@ -211,12 +199,8 @@ class ViewQuestionChart extends XotBaseViewRecord
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-namespace Modules\Quaeris\Filament\Widgets;
-=======
 namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\ExternalProject\Filament\Widgets;
->>>>>>> dev
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -272,12 +256,6 @@ class QuestionChartFilterWidget extends XotBaseWidget
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-namespace Modules\Quaeris\Filament\Resources;
-
-use Modules\Xot\Filament\Resources\XotBaseResource;
-use Modules\Quaeris\Models\QuestionChart;
-=======
 namespace Modules\healthcare_app\Filament\Resources;
 
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -286,7 +264,6 @@ namespace Modules\ExternalProject\Filament\Resources;
 
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\ExternalProject\Models\QuestionChart;
->>>>>>> dev
 
 class QuestionChartResource extends XotBaseResource
 {
@@ -391,8 +368,6 @@ BadgeColumn::make('status')
 - [Spatie Queueable Actions](https://github.com/spatie/laravel-queueable-action)
 
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
-<<<<<<< HEAD
-=======
 # Laraxot Architecture: Philosophy, Religion, Politics, and Zen
 
 ## Core Philosophy (Filosofia)
@@ -538,6 +513,3 @@ Laraxot is not just a framework but a **way of thinking** about application deve
 - **Type Safety over Speed**: Strong typing for long-term maintainability
 
 This architecture creates a harmonious system where all components work together in a predictable, maintainable way.
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

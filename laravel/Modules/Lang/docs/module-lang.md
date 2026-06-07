@@ -1,44 +1,16 @@
 # Modulo Lang
 
 ## Informazioni Generali
-<<<<<<< HEAD
-- **Nome**: `laraxot/module_lang_fila3`
-- **Descrizione**: Modulo per la gestione delle traduzioni e localizzazione
-- **Namespace**: `Modules\Lang`
-- **Repository**: https://github.com/laraxot/module_lang_fila3.git
-=======
 - **Nome**: `laraxot/module_lang_fila5`
 - **Descrizione**: Modulo per la gestione delle traduzioni e localizzazione
 - **Namespace**: `Modules\Lang`
 - **Repository**: https://github.com/laraxot/module_lang_fila5.git
->>>>>>> dev
 
 ### Versione HEAD
 
 ## Collegamenti ai Moduli
 
 ### Moduli con Traduzioni
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Modulo Patient](../../patient/docs/translations.md) - Traduzioni per il modulo paziente
-- [Modulo User](../../user/docs/translations.md) - Traduzioni per la gestione utenti
-- [Modulo UI](../../ui/docs/translations.md) - Traduzioni per i componenti UI
-- [Modulo Cms](../../cms/docs/translations.md) - Traduzioni per il CMS
-- [Modulo Media](../../media/docs/translations.md) - Traduzioni per la gestione media
-- [Modulo Dental](../../dental/docs/translations.md) - Traduzioni per il modulo dentale
-- [Modulo Activity](../../activity/docs/translations.md) - Traduzioni per le attività
-- [Modulo Chart](../../chart/docs/translations.md) - Traduzioni per i grafici
-- [Modulo Gdpr](../../gdpr/docs/translations.md) - Traduzioni per la privacy
-- [Modulo Job](../../job/docs/translations.md) - Traduzioni per i job
-- [Modulo Notify](../../notify/docs/translations.md) - Traduzioni per le notifiche
-- [Modulo Reporting](../../reporting/docs/translations.md) - Traduzioni per i report
-- [Modulo Tenant](../../tenant/docs/translations.md) - Traduzioni per il multi-tenant
-
-### Regole Generali
-- [Regole Traduzioni](../../xot/docs/translations.md) - Documentazione base sulle traduzioni
-=======
-=======
->>>>>>> dev
 - [Modulo Patient](../../Patient/docs/translations.md) - Traduzioni per il modulo paziente
 - [Modulo User](../../User/docs/translations.md) - Traduzioni per la gestione utenti
 - [Modulo UI](../../UI/docs/translations.md) - Traduzioni per i componenti UI
@@ -55,10 +27,6 @@
 
 ### Regole Generali
 - [Regole Traduzioni](../../Xot/docs/translations.md) - Documentazione base sulle traduzioni
-<<<<<<< HEAD
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 - [Composer merge plugin](composer-merge-plugin.md) - Integrazione pacchetti locali
 
 ### Versione Incoming
@@ -318,18 +286,10 @@ public function testTranslations()
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Modulo Patient](../../patient/docs/translations.md) - Esempio di implementazione delle traduzioni
-- [Regole Generali Traduzioni](../../xot/docs/translations.md)
-=======
 - [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
->>>>>>> dev
 
 ## Esempi
 

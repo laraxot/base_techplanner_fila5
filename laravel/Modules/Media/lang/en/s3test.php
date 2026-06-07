@@ -64,31 +64,15 @@ return [
             'label' => 'Attachment',
             'placeholder' => 'Select a file to attach',
             'helper_text' => 'Test file to verify S3 operations',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'debug_output' => [
             'label' => 'Debug Output',
             'placeholder' => 'Test results will appear here',
             'helper_text' => 'Detailed output of executed tests',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'messages' => [
@@ -117,10 +101,6 @@ return [
         'check_cloudfront_config' => 'Check CloudFront configuration',
         'contact_admin' => 'Contact system administrator',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -130,9 +110,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

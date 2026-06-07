@@ -1,12 +1,6 @@
 # ⚠️ REGOLA CRITICA - Namespace Laravel Modules OBBLIGATORIA
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2025-01-22
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Status**: ✅ Regola Critica OBBLIGATORIA
 **Fonte**: [Laravel Modules Documentation](https://laravelmodules.com/docs/12/getting-started/introduction)
 
@@ -151,14 +145,7 @@ Prima di ogni commit, verificare:
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2025-01-22
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: [DATE]
->>>>>>> dev
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA

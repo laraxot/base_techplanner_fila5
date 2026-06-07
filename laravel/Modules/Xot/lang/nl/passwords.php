@@ -8,10 +8,6 @@ return [
     'sent' => 'We hebben uw wachtwoord reset link ge-e-maild!',
     'token' => 'Dit wachtwoord reset token is ongeldig.',
     'user' => 'We kunnen geen gebruiker met dat e-mailadres vinden',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -25,9 +21,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

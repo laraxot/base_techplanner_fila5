@@ -13,48 +13,6 @@ use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Datas\Transformers\AssetTransformer;
-<<<<<<< HEAD
-use Spatie\LaravelData\Attributes\WithTransformer;
-use Spatie\LaravelData\Concerns\WireableData;
-use Spatie\LaravelData\Data;
-use Throwable;
-
-use function Safe\file_get_contents;
-
-/**
- * Class MetatagData
- *
- * @property string $title
- * @property string $sitename
- * @property string $subtitle
- * @property string|null $generator
- * @property string $charset
- * @property string|null $author
- * @property string|null $description
- * @property string|null $keywords
- * @property string $nome_regione
- * @property string $nome_comune
- * @property string $site_title
- * @property string $logo
- * @property string $logo_square
- * @property string $logo_header
- * @property string $logo_header_dark
- * @property string $logo_height
- * @property string $logo_footer
- * @property string $logo_alt
- * @property string $hide_megamenu
- * @property string $hero_type
- * @property string $facebook_href
- * @property string $twitter_href
- * @property string $youtube_href
- * @property string $fastlink
- * @property string $color_primary
- * @property string $color_title
- * @property string $color_megamenu
- * @property string $color_hamburger
- * @property string $color_banner
- * @property string $favicon
-=======
 use Modules\Xot\Support\PaDesignColors;
 
 use function Safe\file_get_contents;
@@ -96,7 +54,6 @@ use Spatie\LaravelData\Data;
  * @property string                                                          $color_hamburger
  * @property string                                                          $color_banner
  * @property string                                                          $favicon
->>>>>>> dev
  * @property array<string, array{key?: string, color: string, hex?: string}> $colors
  *
  * @method string getBrandLogoBase64() Get the brand logo as base64 data URI for inline embedding
@@ -213,11 +170,7 @@ class MetatagData extends Data implements Wireable
             $path = app(AssetAction::class)->execute($this->logo_header);
 
             return asset($path);
-<<<<<<< HEAD
-        } catch (Throwable $e) {
-=======
         } catch (\Throwable $e) {
->>>>>>> dev
             return asset($this->logo_header);
         }
     }
@@ -238,11 +191,7 @@ class MetatagData extends Data implements Wireable
             $path = app(AssetAction::class)->execute($this->logo_header_dark);
 
             return asset($path);
-<<<<<<< HEAD
-        } catch (Throwable $e) {
-=======
         } catch (\Throwable $e) {
->>>>>>> dev
             return asset($this->logo_header_dark);
         }
     }
@@ -289,11 +238,7 @@ class MetatagData extends Data implements Wireable
 
             // Return as data URI
             return "data:{$mimeType};base64,{$base64Content}";
-<<<<<<< HEAD
-        } catch (Throwable $e) {
-=======
         } catch (\Throwable $e) {
->>>>>>> dev
             // Fallback: try with the raw logo_header path
             try {
                 $fallbackPath = public_path($this->logo_header);
@@ -304,11 +249,7 @@ class MetatagData extends Data implements Wireable
 
                     return "data:{$mimeType};base64,{$base64Content}";
                 }
-<<<<<<< HEAD
-            } catch (Throwable $fallbackException) {
-=======
             } catch (\Throwable $fallbackException) {
->>>>>>> dev
                 // Log the error but don't break the application
                 Log::warning('Could not generate base64 logo', [
                     'original_error' => $e->getMessage(),
@@ -427,11 +368,7 @@ class MetatagData extends Data implements Wireable
     {
         try {
             return app(AssetAction::class)->execute($this->favicon);
-<<<<<<< HEAD
-        } catch (Throwable $e) {
-=======
         } catch (\Throwable $e) {
->>>>>>> dev
             return asset($this->favicon);
         }
     }
@@ -458,26 +395,11 @@ class MetatagData extends Data implements Wireable
     /**
      * Get the default Filament colors configuration.
      *
-<<<<<<< HEAD
-     * @return array<string, array<int, string>>
-     */
-    public function getFilamentColors(): array
-    {
-        return [
-            'danger' => Color::Red,
-            'gray' => Color::Zinc,
-            'info' => Color::Blue,
-            'primary' => Color::Amber,
-            'success' => Color::Green,
-            'warning' => Color::Amber,
-        ];
-=======
      * @return array<string, array<int, string>|string>
      */
     public function getFilamentColors(): array
     {
         return PaDesignColors::filamentPalette();
->>>>>>> dev
     }
 
     /**
@@ -490,8 +412,6 @@ class MetatagData extends Data implements Wireable
     {
         $filamentColors = $this->getFilamentColors();
         $customColors = [];
-<<<<<<< HEAD
-=======
         $normalizedFilamentColors = [];
 
         foreach ($filamentColors as $key => $value) {
@@ -505,7 +425,6 @@ class MetatagData extends Data implements Wireable
 
             $normalizedFilamentColors[$key] = [(string) $value];
         }
->>>>>>> dev
 
         // Convert custom color format to Filament color format
         foreach ($this->colors as $key => $value) {
@@ -516,11 +435,7 @@ class MetatagData extends Data implements Wireable
             }
         }
 
-<<<<<<< HEAD
-        return array_merge($filamentColors, $customColors);
-=======
         return array_merge($normalizedFilamentColors, $customColors);
->>>>>>> dev
     }
 
     /**
@@ -744,11 +659,7 @@ class MetatagData extends Data implements Wireable
      * Concatenate a title to the existing title.
      * This method allows adding page-specific titles to the base site title.
      *
-<<<<<<< HEAD
-     * @param  string|null  $title  The title to concatenate
-=======
      * @param string|null $title The title to concatenate
->>>>>>> dev
      */
     public function concatTitle(?string $title): self
     {
@@ -770,11 +681,7 @@ class MetatagData extends Data implements Wireable
      * Concatenate a description to the existing description.
      * This method allows adding page-specific descriptions to the base site description.
      *
-<<<<<<< HEAD
-     * @param  string|null  $description  The description to concatenate
-=======
      * @param string|null $description The description to concatenate
->>>>>>> dev
      */
     public function concatDescription(?string $description): self
     {

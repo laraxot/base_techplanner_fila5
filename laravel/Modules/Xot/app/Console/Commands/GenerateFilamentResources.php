@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Console\Commands;
 
-<<<<<<< HEAD
-use Exception;
-=======
->>>>>>> dev
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
@@ -64,11 +60,7 @@ class GenerateFilamentResources extends Command
             ];
             try {
                 Artisan::call('make:filament-resource', $params);
-<<<<<<< HEAD
-            } catch (Exception $e) {
-=======
             } catch (\Exception $e) {
->>>>>>> dev
                 $this->error($e->getMessage());
             }
             $this->info("Resource generata per il modello: {$modelName}");

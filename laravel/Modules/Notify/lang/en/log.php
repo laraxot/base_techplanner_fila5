@@ -6,10 +6,6 @@ return [
     'fields' => [
         'recipient' => [
             'label' => 'recipient',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -74,35 +70,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
-        ],
-        'subject' => [
-            'label' => 'subject',
-        ],
-        'status' => [
-            'label' => 'status',
-        ],
-        'sent_at' => [
-            'label' => 'sent_at',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-    ],
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

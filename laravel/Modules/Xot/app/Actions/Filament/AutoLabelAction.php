@@ -76,7 +76,7 @@ class AutoLabelAction
                 $label_key1 = $trans_key.'.fields.'.$componentName;
                 $label1 = trans($label_key1);
 
-                if ($label_key1 !== $label1 && is_string($label1)) {
+                if ($label_key1 !== $label1) {
                     $label_value = $label1;
                 }
 

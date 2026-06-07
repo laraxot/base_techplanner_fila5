@@ -296,11 +296,4 @@ $testProps = [
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-*Ultimo aggiornamento: Luglio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 *Versione Sistema Blocchi: 1.0*

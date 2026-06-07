@@ -1,9 +1,6 @@
 # Rapporto Aggiornamento Filament 4.x - Modulo UI
 
-<<<<<<< HEAD
 **Data**: 2025-01-27
-=======
->>>>>>> dev
 **Status**: ✅ COMPLETATO
 **Versione Filament**: 4.0.17
 
@@ -90,11 +87,7 @@ class SimpleCalendarWidget extends \Filament\Widgets\Widget
 
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Pacchetto FullCalendar](https://github.com/saade/filament-fullcalendar)
-<<<<<<< HEAD
-- [Documentazione Modulo UI](../README.md)
-=======
 - [Documentazione Modulo UI](../readme.md)
->>>>>>> dev
 
 ## 📋 Checklist Completata
 
@@ -119,16 +112,9 @@ class SimpleCalendarWidget extends \Filament\Widgets\Widget
 - Widget base di Filament 4.x
 - Sistema di autenticazione e autorizzazione
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-27*
-# Rapporto Aggiornamento Filament 4.x - Modulo UI
-
-**Data**: 2025-01-27
-=======
 *Ultimo aggiornamento: [DATE]*
 # Rapporto Aggiornamento Filament 4.x - Modulo UI
 
->>>>>>> dev
 **Status**: ✅ COMPLETATO
 **Versione Filament**: 4.0.17
 
@@ -215,11 +201,7 @@ class SimpleCalendarWidget extends \Filament\Widgets\Widget
 
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Pacchetto FullCalendar](https://github.com/saade/filament-fullcalendar)
-<<<<<<< HEAD
-- [Documentazione Modulo UI](../README.md)
-=======
 - [Documentazione Modulo UI](../readme.md)
->>>>>>> dev
 
 ## 📋 Checklist Completata
 
@@ -244,8 +226,4 @@ class SimpleCalendarWidget extends \Filament\Widgets\Widget
 - Widget base di Filament 4.x
 - Sistema di autenticazione e autorizzazione
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-27*
-=======
 *Ultimo aggiornamento: [DATE]*
->>>>>>> dev

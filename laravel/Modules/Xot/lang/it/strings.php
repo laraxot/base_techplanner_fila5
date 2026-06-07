@@ -7,18 +7,8 @@ return [
         'access' => [
             'users' => [
                 'delete_user_confirm' => 'Sei sicuro di voler eliminare definitivamente questo utente? Ovunque ci sia un riferimento a questo utente all\'interno dell\'applicazione si vedrà un errore. Procedi a tuo rischio e pericolo, non si potrà annullare questa operazione.',
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'if_confirmed_off' => '(Se non è confermato]',
                 'restore_user_confirm' => 'Ripristinare l\'utente al suo stato originario?',
-=======
-                'if_confirmed_off' => '(Se non è confermato)',
-                'restore_user_confirm' => "Ripristinare l'utente al suo stato originario?",
->>>>>>> 4b6b99016 (first commit)
-=======
-                'if_confirmed_off' => '(Se non è confermato]',
-                'restore_user_confirm' => 'Ripristinare l\'utente al suo stato originario?',
->>>>>>> dev
             ],
         ],
         'dashboard' => [
@@ -92,10 +82,6 @@ return [
             'js_injected_from_controller' => 'Javascript iniettato da un controller',
             'using_blade_extensions' => 'Usando estensioni Blade',
             'using_access_helper' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
                 'array_permissions' => 'Si sta usando l\'Access Helper con un array di nomi o ID di permessi, l\'utente li deve possedere tutti.',
                 'array_permissions_not' => 'Si sta usando l\'Access Helper con un array di nomi o ID di permessi, l\'utente non li deve possedere tutti.',
                 'array_roles' => 'Si sta usando l\'Access Helper con un array di nomi o ID di ruoli, l\'utente li deve possedere tutti.',
@@ -106,21 +92,6 @@ return [
                 'role_name' => 'Si sta usando l\'Access Helper con un nome di ruolo',
             ],
             'view_console_it_works' => 'Apri la console Javascript del browser, dovresti vedere \'it works!\' generato da FrontendController@index',
-<<<<<<< HEAD
-=======
-                'array_permissions' => "Si sta usando l'Access Helper con un array di nomi o ID di permessi, l'utente li deve possedere tutti.",
-                'array_permissions_not' => "Si sta usando l'Access Helper con un array di nomi o ID di permessi, l'utente non li deve possedere tutti.",
-                'array_roles' => "Si sta usando l'Access Helper con un array di nomi o ID di ruoli, l'utente li deve possedere tutti.",
-                'array_roles_not' => "Si sta usando l'Access Helper con un array di nomi o ID di ruoli, l'utente non li deve possedere tutti.",
-                'permission_id' => "Si sta usando l'Access Helper con un ID di permesso",
-                'permission_name' => "Si sta usando l'Access Helper con un nome di permesso",
-                'role_id' => "Si sta usando l'Access Helper con un ID di ruolo",
-                'role_name' => "Si sta usando l'Access Helper con un nome di ruolo",
-            ],
-            'view_console_it_works' => "Apri la console Javascript del browser, dovresti vedere 'it works!' generato da FrontendController@index",
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             'you_can_see_because' => 'Puoi vedere questo perché il tuo ruolo è \':role\'!',
             'you_can_see_because_permission' => 'Puoi vedere questo perché hai il permesso \':permission\'!',
         ],
@@ -130,10 +101,6 @@ return [
         ],
         'welcome_to' => 'Benvenuto su :place',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Strings',
     'plural_label' => 'Strings (Plurale)',
     'navigation' => [
@@ -178,9 +145,4 @@ return [
             'label' => 'Elimina Strings',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

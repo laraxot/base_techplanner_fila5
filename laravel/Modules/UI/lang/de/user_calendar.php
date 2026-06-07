@@ -5,10 +5,6 @@ declare(strict_types=1);
 return [
     'months' => [
         'long' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             0 => 'Gennaio',
             1 => 'Febbraio',
             2 => 'Marzo',
@@ -35,45 +31,10 @@ return [
             9 => 'Ott',
             10 => 'Nov',
             11 => 'Dic',
-<<<<<<< HEAD
-=======
-            '0' => 'Gennaio',
-            '1' => 'Febbraio',
-            '2' => 'Marzo',
-            '3' => 'Aprile',
-            '4' => 'Maggio',
-            '5' => 'Giugno',
-            '6' => 'Luglio',
-            '7' => 'Agosto',
-            '8' => 'Settembre',
-            '9' => 'Ottobre',
-            '10' => 'Novembre',
-            '11' => 'Dicembre',
-        ],
-        'short' => [
-            '0' => 'Gen',
-            '1' => 'Feb',
-            '2' => 'Mar',
-            '3' => 'Apr',
-            '4' => 'Mag',
-            '5' => 'Giu',
-            '6' => 'Lug',
-            '7' => 'Ago',
-            '8' => 'Set',
-            '9' => 'Ott',
-            '10' => 'Nov',
-            '11' => 'Dic',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'weekdays' => [
         'long' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             0 => 'Domenica',
             1 => 'Lunedì',
             2 => 'Martedì',
@@ -99,36 +60,6 @@ return [
             4 => 'Gi',
             5 => 'Ve',
             6 => 'Sa',
-<<<<<<< HEAD
-=======
-            '0' => 'Domenica',
-            '1' => 'Lunedì',
-            '2' => 'Martedì',
-            '3' => 'Mercoledì',
-            '4' => 'Giovedì',
-            '5' => 'Venerdì',
-            '6' => 'Sabato',
-        ],
-        'short' => [
-            '0' => 'Dom',
-            '1' => 'Lun',
-            '2' => 'Mar',
-            '3' => 'Mer',
-            '4' => 'Gio',
-            '5' => 'Ven',
-            '6' => 'Sab',
-        ],
-        'min' => [
-            '0' => 'Do',
-            '1' => 'Lu',
-            '2' => 'Ma',
-            '3' => 'Me',
-            '4' => 'Gi',
-            '5' => 'Ve',
-            '6' => 'Sa',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'buttons' => [
@@ -151,42 +82,21 @@ return [
             'placeholder' => 'Inserisci un titolo',
             'helper_text' => 'Inserisci un titolo descrittivo',
             'description' => 'Titolo dell\'evento',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'starts_at' => [
             'label' => 'Inizio',
             'placeholder' => 'Seleziona data e ora di inizio',
             'helper_text' => 'Data e ora di inizio dell\'evento',
             'description' => 'Data e ora di inizio',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'ends_at' => [
             'label' => 'Fine',
             'placeholder' => 'Seleziona data e ora di fine',
             'helper_text' => 'Data e ora di fine dell\'evento',
             'description' => 'Data e ora di fine',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -212,10 +122,6 @@ return [
         'date' => 'Inserisci una data valida',
         'after' => 'La data di fine deve essere successiva alla data di inizio',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -225,9 +131,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

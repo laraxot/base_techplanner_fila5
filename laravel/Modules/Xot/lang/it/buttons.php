@@ -38,10 +38,6 @@ return [
     'close' => 'Chiudi',
     'back' => 'Indietro',
     'confirm' => 'Conferma',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Buttons',
     'plural_label' => 'Buttons (Plurale)',
     'navigation' => [
@@ -86,9 +82,4 @@ return [
             'label' => 'Elimina Buttons',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -6,10 +6,6 @@ return [
     'fields' => [
         'view' => [
             'label' => 'view',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -37,11 +33,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Xot Base',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
 ];

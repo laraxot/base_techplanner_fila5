@@ -9,17 +9,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreateMailTemplatesTable.
  */
-<<<<<<< HEAD
-<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
-=======
-return new class extends XotBaseMigration {
->>>>>>> 4b6b99016 (first commit)
-=======
-return new class extends XotBaseMigration
-{
->>>>>>> dev
     /**
      * Run the migrations.
      */

@@ -5,10 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\File;
 
 use BladeUI\Icons\Factory as IconFactory;
-<<<<<<< HEAD
-use Exception;
-=======
->>>>>>> dev
 use Illuminate\Support\Facades\App;
 
 /**
@@ -21,12 +17,8 @@ class SvgExistsAction
     /**
      * Verifica se l'SVG esiste nei set di icone registrati.
      *
-<<<<<<< HEAD
-     * @param  string  $svgName  Il nome dell'SVG da verificare (es: 'heroicon-o-user')
-=======
      * @param string $svgName Il nome dell'SVG da verificare (es: 'heroicon-o-user')
      *
->>>>>>> dev
      * @return bool true se l'SVG esiste, false altrimenti
      */
     public function execute(string $svgName): bool
@@ -35,8 +27,6 @@ class SvgExistsAction
             return false;
         }
 
-<<<<<<< HEAD
-=======
         // BladeUI Kit icon check: only for standard sets (heroicon-*, etc.)
         // Geo SVGs use "geo-" prefix (e.g., "geo-magnifying-glass") — served via <img> or Lit JS, not BladeUI Kit
         if (str_starts_with($svgName, 'geo-')) {
@@ -47,16 +37,11 @@ class SvgExistsAction
             return file_exists($svgPath);
         }
 
->>>>>>> dev
         /** @var IconFactory $iconsFactory */
         $iconsFactory = App::make(IconFactory::class);
         try {
             $iconsFactory->svg($svgName);
-<<<<<<< HEAD
-        } catch (Exception $e) {
-=======
         } catch (\Exception $e) {
->>>>>>> dev
             return false;
         }
 

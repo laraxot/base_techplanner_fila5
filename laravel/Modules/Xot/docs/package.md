@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 ---
 title: Package utilizzati
 description: Package utilizzati
@@ -18,7 +14,3 @@ Pacchetto utilizzato per la gestione delle relazioni padre/figlio
 ## https://github.com/spatie/laravel-event-sourcing/tree/main
 
 Pacchetto per gestire e tener traccia degli eventi
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev

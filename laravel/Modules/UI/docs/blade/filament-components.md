@@ -1,16 +1,10 @@
 # Utilizzo dei componenti Blade di Filament
 
-<<<<<<< HEAD
-## Regola fondamentale
-
-Nel progetto <nome progetto>, esiste una regola fondamentale: **utilizzare sempre i componenti Blade forniti da Filament quando disponibili**, invece di creare componenti personalizzati duplicati.
-=======
 ## Regola fondamentale (obbligatoria)
 
 **Se esiste una soluzione Filament, usare sempre quella.** Canon progetto: [filament-first-rule.md](../../../../../docs/wiki/rules/filament-first-rule.md) (Rule 019). Memoria agenti: [filament-first-mandatory-agents.md](../../../../../docs/wiki/memories/filament-first-mandatory-agents.md).
 
 Wiki modulo: [filament-first-blade-canonical.md](../wiki/concepts/filament-first-blade-canonical.md).
->>>>>>> dev
 
 ## Vantaggi dei componenti Filament
 
@@ -34,9 +28,6 @@ Filament mette a disposizione molti componenti Blade riutilizzabili:
 | Card | `<x-filament::card>` | Card personalizzate |
 | Icon | `<x-filament::icon>` | Icon personalizzate |
 | Modal | `<x-filament::modal>` | Modal personalizzate |
-<<<<<<< HEAD
-| Tabs | `<x-filament::tabs>` | Tab personalizzati |
-=======
 | Tabs | `<x-filament::tabs>` + `<x-filament::tabs.item>` | `nav-tabs` Bootstrap, shim `data-bs-toggle="tab"` |
 
 ### Tabs (Filament 5)
@@ -52,7 +43,6 @@ Frontoffice senza Livewire dedicato — pattern [Alpine](https://filamentphp.com
 ```
 
 Caso Fixcity `/it`: [STORY-065](../../../../../docs/stories/STORY-065-it-segnalazioni-filament-tabs.md).
->>>>>>> dev
 
 ## Esempi di utilizzo
 
@@ -121,22 +111,7 @@ Per migrare da componenti personalizzati a componenti Filament:
 
 ## Documentazione di riferimento
 
-<<<<<<< HEAD
-- [Documentazione ufficiale Filament Blade Components](https://filamentphp.com/docs/3.x/support/blade-components)
-- [Dropdown](https://filamentphp.com/docs/3.x/support/blade-components/dropdown)
-- [Button](https://filamentphp.com/docs/3.x/support/blade-components/button)
-- [Card](https://filamentphp.com/docs/3.x/support/blade-components/card)
-- [Icon](https://filamentphp.com/docs/3.x/support/blade-components/icon)
-- [Modal](https://filamentphp.com/docs/3.x/support/blade-components/modal)
-
-## Moduli correlati
-
-<<<<<<< HEAD
-- [User](../../user/docs/blade/using-filament-components.md) - Implementazione dei componenti profilo con Filament
-=======
 - [User](../../User/docs/blade/using-filament-components.md) - Implementazione dei componenti profilo con Filament
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Filament 5 — Components overview](https://filamentphp.com/docs/5.x/components/overview)
 - [Tabs](https://filamentphp.com/docs/5.x/components/tabs)
 - [Button](https://filamentphp.com/docs/5.x/components/button)
@@ -147,4 +122,3 @@ Per migrare da componenti personalizzati a componenti Filament:
 ## Moduli correlati
 
 - [User](../../user/docs/blade/using-filament-components.md) - Implementazione dei componenti profilo con Filament
->>>>>>> dev

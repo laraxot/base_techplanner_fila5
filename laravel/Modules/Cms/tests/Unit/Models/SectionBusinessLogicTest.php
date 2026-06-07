@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(Modules\Cms\Tests\TestCase::class);
-
-=======
->>>>>>> dev
 use Modules\Cms\Models\BaseModelLang;
 use Modules\Cms\Models\Section;
 use Modules\Cms\Models\Traits\HasBlocks;
@@ -21,10 +16,6 @@ describe('Section Business Logic', function (): void {
 
     test('section has translatable fields configured', function (): void {
         $section = new Section();
-<<<<<<< HEAD
-=======
-        $section = new Section();
->>>>>>> dev
 
         expect($section->translatable)->toEqual([
             'name',
@@ -34,10 +25,6 @@ describe('Section Business Logic', function (): void {
 
     test('section has expected fillable fields', function (): void {
         $section = new Section();
-<<<<<<< HEAD
-=======
-        $section = new Section();
->>>>>>> dev
         $expectedFillable = [
             'name',
             'slug',
@@ -61,31 +48,11 @@ describe('Section Business Logic', function (): void {
 
     test('section has correct casts for multilingual and structured data', function (): void {
         $section = new Section();
-<<<<<<< HEAD
-        /** @phpstan-ignore-next-line method.nonObject */
-        $casts = $section->getCasts();
-
-        /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
-        expect($casts['name'])->toBe('array');
-        /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
-        expect($casts['blocks'])->toBe('array');
-        /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
-=======
-        $section = new Section();
-        $casts = $section->getCasts();
-
-        expect($casts['name'])->toBe('array');
-        expect($casts['blocks'])->toBe('array');
->>>>>>> dev
         expect($casts['id'])->toBe('string');
     });
 
     test('section has schema definition for structured data', function (): void {
         $section = new Section();
-<<<<<<< HEAD
-=======
-        $section = new Section();
->>>>>>> dev
 
         // Use reflection to access protected $schema property
         $reflection = new ReflectionClass($section);
@@ -102,10 +69,6 @@ describe('Section Business Logic', function (): void {
 
     test('section can get rows for sushi functionality', function (): void {
         $section = new Section();
-<<<<<<< HEAD
-=======
-        $section = new Section();
->>>>>>> dev
 
         expect(method_exists($section, 'getRows'))->toBeTrue();
         expect($section->getRows())->toBeArray();

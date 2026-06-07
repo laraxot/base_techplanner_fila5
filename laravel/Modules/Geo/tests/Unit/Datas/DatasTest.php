@@ -2,13 +2,9 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(Modules\Geo\Tests\TestCase::class);
-=======
 namespace Modules\Geo\Tests\Unit\Datas;
 
 uses(TestCase::class);
->>>>>>> dev
 
 use Modules\Geo\Datas\AddressData;
 use Modules\Geo\Datas\BingMapData;
@@ -26,10 +22,7 @@ use Modules\Geo\Datas\RouteData;
 use Modules\Geo\Datas\TimeZoneData;
 use Modules\Geo\Datas\TravelTimeData;
 use Modules\Geo\Datas\UpdateCoordinatesResult;
-<<<<<<< HEAD
-=======
 use Modules\Geo\Tests\TestCase;
->>>>>>> dev
 
 test('CoordinatesData can be instantiated', function () {
     // Check if class exists and can be instantiated

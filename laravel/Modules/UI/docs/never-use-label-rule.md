@@ -154,15 +154,9 @@ rules:
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [Translation Standards](../../../docs/translation-standards.md)
-- [Filament Best Practices](../../../docs/filament-best-practices.md)
-- [LangServiceProvider Documentation](../../../docs/lang-service-provider.md)
-=======
 - [Translation Standards](../../../../docs/translation-standards.md)
 - [Filament Best Practices](../../../../docs/filament-best-practices.md)
 - [LangServiceProvider Documentation](../../../../docs/lang-service-provider.md)
->>>>>>> dev
 
 ## Memoria Permanente
 
@@ -174,15 +168,8 @@ rules:
 - SEMPRE testare le traduzioni prima del commit
 # REGOLA CRITICA: MAI usare ->label()
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Data: [DATE]
-=======
 ## Data: 2025-01-06
->>>>>>> 4b6b99016 (first commit)
-=======
 ## Data: [DATE]
->>>>>>> dev
 
 ## ❌ ERRORE CRITICO - NON FARE MAI QUESTO
 
@@ -347,15 +334,9 @@ rules:
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [Translation Standards](../../../docs/translation-standards.md)
-- [Filament Best Practices](../../../docs/filament-best-practices.md)
-- [LangServiceProvider Documentation](../../../docs/lang-service-provider.md)
-=======
 - [Translation Standards](../../../../docs/translation-standards.md)
 - [Filament Best Practices](../../../../docs/filament-best-practices.md)
 - [LangServiceProvider Documentation](../../../../docs/lang-service-provider.md)
->>>>>>> dev
 
 ## Memoria Permanente
 
@@ -371,10 +352,4 @@ rules:
 
 - SEMPRE testare le traduzioni prima del commit
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-01-06*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

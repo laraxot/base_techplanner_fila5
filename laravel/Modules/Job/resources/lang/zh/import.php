@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -57,29 +53,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'job_id' => [
-            'label' => '任务ID',
-        ],
-        'importable_type' => [
-            'label' => '可导入类型',
-        ],
-        'file_path' => [
-            'label' => '文件路径',
-        ],
-        'status' => [
-            'label' => '状态',
-        ],
-        'created_at' => [
-            'label' => '创建时间',
-        ],
-        'completed_at' => [
-            'label' => '完成时间',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -90,12 +63,4 @@ return [
             'label' => '上传',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 4b6b99016 (first commit)
-=======
-];
->>>>>>> dev

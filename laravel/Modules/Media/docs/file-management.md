@@ -77,15 +77,8 @@ Schema::table('users', function (Blueprint $table) {
 });
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Per una documentazione dettagliata sulla mappatura dei campi, consulta la [Mappatura dei Campi Database nel Modulo Patient](/laravel/modules/patient/docs/database_field_mapping.md).
-=======
 Per una documentazione dettagliata sulla mappatura dei campi, consulta la [Mappatura dei Campi Database nel Modulo Patient](/laravel/Modules/Patient/docs/DATABASE_FIELD_MAPPING.md).
->>>>>>> 4b6b99016 (first commit)
-=======
 Per una documentazione dettagliata sulla mappatura dei campi, consulta la [Mappatura dei Campi Database nel Modulo Patient](/laravel/modules/patient/docs/database_field_mapping.md).
->>>>>>> dev
 
 ## Accesso ai File
 
@@ -161,15 +154,8 @@ protected static function booted()
 ## Documentazione Correlata
 
 - [Gestione dei File Upload in Filament](/docs/filament-file-uploads.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Mappatura dei Campi Database nel Modulo Patient](/laravel/modules/patient/docs/database_field_mapping.md)
-=======
 - [Mappatura dei Campi Database nel Modulo Patient](/laravel/Modules/Patient/docs/DATABASE_FIELD_MAPPING.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Mappatura dei Campi Database nel Modulo Patient](/laravel/modules/patient/docs/database_field_mapping.md)
->>>>>>> dev
 - [Migrazioni del Database](/docs/database-migrations.md)
 - [Gestione degli Utenti](/docs/user-management.md)
 - [Pattern di Ereditarietà dei Modelli](/docs/model-inheritance-patterns.md)

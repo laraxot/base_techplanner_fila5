@@ -11,10 +11,6 @@ return [
             'description' => 'Non hai accesso a nessun modulo amministrativo.',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Widgets',
     'plural_label' => 'Widgets (Plurale)',
     'navigation' => [
@@ -48,14 +44,11 @@ return [
             'description' => '',
         ],
     ],
-<<<<<<< HEAD
-=======
     'infolist' => [
         'record_not_available' => [
             'label' => 'Contenuto non disponibile o non visibile.',
         ],
     ],
->>>>>>> dev
     'actions' => [
         'create' => [
             'label' => 'Crea Widgets',
@@ -67,9 +60,4 @@ return [
             'label' => 'Elimina Widgets',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

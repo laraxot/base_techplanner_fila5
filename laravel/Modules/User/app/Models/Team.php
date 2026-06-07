@@ -6,17 +6,8 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-=======
-use Modules\User\Database\Factories\TeamFactory;
->>>>>>> 4b6b99016 (first commit)
-=======
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
->>>>>>> dev
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -43,13 +34,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property Collection<int, User>           $users
  * @property int|null                        $users_count
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * @method static TeamFactory  factory($count = null, $state = [])
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
  * @method static Builder|Team newModelQuery()
  * @method static Builder|Team newQuery()
  * @method static Builder|Team query()
@@ -83,8 +67,6 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $deleter
  *
-<<<<<<< HEAD
-=======
  * @method static \Modules\User\Database\Factories\TeamFactory factory($count = null, $state = [])
  *
  * @property string|null                     $slug
@@ -101,20 +83,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Team whereSettings($value)
  * @method static Builder<static>|Team whereSlug($value)
  *
->>>>>>> dev
  * @mixin \Eloquent
  */
 class Team extends BaseTeam
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
     // use SoftDeletes;
-=======
-    use SoftDeletes;
->>>>>>> 4b6b99016 (first commit)
-=======
-    // use SoftDeletes;
->>>>>>> dev
 
     protected $fillable = [
         'user_id',
@@ -126,14 +99,11 @@ class Team extends BaseTeam
         'settings',
     ];
 
-<<<<<<< HEAD
-=======
     public function permissions(): HasMany
     {
         return $this->hasMany(TeamPermission::class);
     }
 
->>>>>>> dev
     /**
      * Get the attributes that should be cast.
      *
@@ -146,12 +116,4 @@ class Team extends BaseTeam
             'settings' => 'array',
         ];
     }
-<<<<<<< HEAD
-
-    public function permissions(): \Illuminate\Database\Eloquent\Relations\HasMany
-    {
-        return $this->hasMany(TeamPermission::class);
-    }
-=======
->>>>>>> dev
 }

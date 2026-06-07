@@ -2,11 +2,8 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
 namespace Modules\Geo\Tests\Unit\Actions;
 
->>>>>>> dev
 use Modules\Geo\Actions\FormatCoordinatesAction;
 use Modules\Geo\Tests\TestCase;
 

@@ -7,14 +7,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Modules\User\Database\Factories\PermissionFactory;
->>>>>>> 4b6b99016 (first commit)
-=======
 use Modules\Xot\Contracts\ProfileContract;
->>>>>>> dev
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
@@ -35,13 +28,6 @@ use Spatie\Permission\Models\Permission as SpatiePermission;
  * @property Collection<int, User>       $users
  * @property int|null                    $users_count
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * @method static PermissionFactory          factory($count = null, $state = [])
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
  * @method static Builder<static>|Permission newModelQuery()
  * @method static Builder<static>|Permission newQuery()
  * @method static Builder<static>|Permission permission($permissions, $without = false)
@@ -59,15 +45,12 @@ use Spatie\Permission\Models\Permission as SpatiePermission;
  * @method static static                     firstOrCreate(array $attributes, array $values = [])
  * @method static static                     updateOrCreate(array $attributes, array $values = [])
  *
-<<<<<<< HEAD
-=======
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
  * @method static \Modules\User\Database\Factories\PermissionFactory factory($count = null, $state = [])
  *
->>>>>>> dev
  * @mixin \Eloquent
  */
 class Permission extends SpatiePermission
@@ -76,15 +59,8 @@ class Permission extends SpatiePermission
     use RelationX;
     use Updater;
 
-<<<<<<< HEAD
-    /** @var string */
     protected $connection = 'user';
 
-    /** @var string */
-=======
-    protected $connection = 'user';
-
->>>>>>> dev
     protected $table = 'permissions';
 
     /** @var list<string> */

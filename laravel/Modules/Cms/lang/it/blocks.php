@@ -28,8 +28,6 @@ return [
             'orientation' => 'Orientamento',
         ],
     ],
-<<<<<<< HEAD
-=======
     'header_nav' => [
         'label' => 'Navigazione Header',
         'fields' => [
@@ -45,7 +43,6 @@ return [
             'children' => 'Sottomenu',
         ],
     ],
->>>>>>> dev
     'actions' => [
         'label' => 'Azioni',
         'fields' => [
@@ -160,10 +157,6 @@ return [
             'label' => 'Etichetta',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Blocks',
     'plural_label' => 'Blocks (Plurale)',
     'fields' => [
@@ -186,9 +179,4 @@ return [
             'description' => '',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

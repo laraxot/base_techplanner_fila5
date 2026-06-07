@@ -1,12 +1,6 @@
 # Correzioni Critiche PHPMD - Analisi e Piano
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2025-12-23
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Obiettivo**: Identificare e correggere solo problemi critici (codice morto, bug evidenti)
 
 ## 🔍 Analisi Warning UnusedLocalVariable

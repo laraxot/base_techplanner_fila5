@@ -32,12 +32,6 @@ class Headernav extends XotBasePage implements HasForms
     use InteractsWithForms;
 
     /**
-<<<<<<< HEAD
-     * @var HeadernavData|null the form data
-     */
-    public ?HeadernavData $headernavData = null;
-
-=======
      * @var HeadernavData the form data
      */
     public ?HeadernavData $headernavData = null;
@@ -47,7 +41,6 @@ class Headernav extends XotBasePage implements HasForms
      *
      * @var array<string, mixed>
      */
->>>>>>> dev
     public array $data = [];
 
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document-text';

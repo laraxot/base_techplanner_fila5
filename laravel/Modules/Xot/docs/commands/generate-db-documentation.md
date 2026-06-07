@@ -36,18 +36,9 @@ php artisan xot:generate-db-documentation {schema_file} {output_dir?}
 5. Conforme alle convenzioni Laraxot/<nome progetto>
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Database Guidelines](../database-guidelines.md)
-- [Documentation Guidelines](../documentation-guidelines.md)
-- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
-=======
 - [Database Guidelines](../DATABASE-GUIDELINES.md)
 - [Documentation Guidelines](../DOCUMENTATION-GUIDELINES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Database Guidelines](../database-guidelines.md)
 - [Documentation Guidelines](../documentation-guidelines.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
->>>>>>> dev

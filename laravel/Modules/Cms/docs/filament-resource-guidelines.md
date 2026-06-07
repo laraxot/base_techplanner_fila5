@@ -51,15 +51,8 @@ class MenuResource extends XotBaseResource
 - Only implements getFormSchema() ✓
 - No unnecessary method overrides ✓
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-#### ✅ PageContentResource - CORRECT  
-=======
 #### ✅ PageContentResource - CORRECT
->>>>>>> 4b6b99016 (first commit)
-=======
 #### ✅ PageContentResource - CORRECT  
->>>>>>> dev
 - Extends LangBaseResource (for multilingual support) ✓
 - Only implements getFormSchema() ✓
 - No unnecessary method overrides ✓
@@ -142,13 +135,6 @@ All Cms resources must be tested to ensure:
 
 ### Related Documentation
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [XotBaseResource Documentation](../../xot/docs/filament/resources/xot-base-resource.md)
-- [LangBaseResource Documentation](../../lang/docs/filament/lang-base-resource.md)
-- [Multilingual Best Practices](../../lang/docs/translation-best-practices.md)
-- [Filament Resource Guidelines](../../xot/docs/filament-resource-rules.md)
-=======
 - [XotBaseResource Documentation](../../Xot/docs/filament/resources/xot-base-resource.md)
 - [LangBaseResource Documentation](../../Lang/docs/filament/lang-base-resource.md)
 - [Multilingual Best Practices](../../Lang/docs/translation-best-practices.md)
@@ -293,10 +279,7 @@ All Cms resources must be tested to ensure:
 - [LangBaseResource Documentation](../../Lang/docs/filament/lang-base-resource.md)
 - [Multilingual Best Practices](../../Lang/docs/translation-best-practices.md)
 - [Filament Resource Guidelines](../../Xot/docs/filament-resource-rules.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [XotBaseResource Documentation](../../xot/docs/filament/resources/xot-base-resource.md)
 - [LangBaseResource Documentation](../../lang/docs/filament/lang-base-resource.md)
 - [Multilingual Best Practices](../../lang/docs/translation-best-practices.md)
 - [Filament Resource Guidelines](../../xot/docs/filament-resource-rules.md)
->>>>>>> dev

@@ -157,8 +157,4 @@ public function test_section_renders_blocks()
 ## Collegamenti
 - [Documentazione Blade](https://laravel.com/docs/blade)
 - [Section Component](section-component.md)
-<<<<<<< HEAD
-- [Documentazione Root](../../../../docs/components.md)
-=======
 - [Documentazione Root](../../../../../docs/components.md)
->>>>>>> dev

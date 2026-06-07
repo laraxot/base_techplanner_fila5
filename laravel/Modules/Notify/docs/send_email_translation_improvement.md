@@ -253,13 +253,8 @@ return [
 ### 1. Controllo Sintassi PHP
 ```bash
 cd /var/www/html/_bases/base_<nome progetto>/laravel
-<<<<<<< HEAD
-cd /var/www/html/_bases/base_saluteora/laravel
-cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
-=======
 cd /var/www/html/_bases/base_Quaeris/laravel
 cd /var/www/html/_bases/base_techplanner_fila5_mono/laravel
->>>>>>> dev
 php -l Modules/Notify/lang/it/send_email.php
 
 # Output: No syntax errors detected
@@ -283,29 +278,17 @@ php -l Modules/Notify/lang/it/send_email.php
 ## 🔗 Collegamenti
 
 ### Documentazione Correlata
-<<<<<<< HEAD
-- [Regole Traduzioni Laraxot](../../../docs/translation-standards.md)
-<<<<<<< HEAD
-- [Best Practice Filament](../../../docs/filament-best-practices.md)
-- [Regole Traduzioni Laraxot](../../../project_docs/translation-standards.md)
-- [Best Practice Filament](../../../docs/filament-best-practices.md)- [Regole Traduzioni Laraxot](../../../project_docs/translation-standards.md)
-- [Best Practice Filament](../../../project_docs/filament-best-practices.md)
-- [Struttura Modulo Notify](./readme.md)
-=======
 - [Best Practice Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../project_docs/translation-standards.md)
 - [Best Practice Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../project_docs/translation-standards.md)
 - [Best Practice Filament](../../../project_docs/FILAMENT-BEST-PRACTICES.md)
 - [Struttura Modulo Notify](./README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Regole Traduzioni Laraxot](../../../../docs/translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Best Practice Filament](../../../../docs/project/FILAMENT-BEST-PRACTICES.md)
 - [Struttura Modulo Notify](./README.md)
->>>>>>> dev
 
 ### File Modificati
 - `laravel/Modules/Notify/lang/it/send_email.php` - File principale migliorato

@@ -11,10 +11,6 @@ return [
         'missing_opening_time' => 'If you specify :session closing time for :day, you must also specify opening time.',
         'opening_before_closing' => 'The :session opening time for :day must be before closing time.',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -28,9 +24,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

@@ -8,76 +8,36 @@ return [
             'label' => 'Language',
             'placeholder' => 'Select language',
             'helper_text' => 'Currently selected interface language',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'available_languages' => [
             'label' => 'Available Languages',
             'placeholder' => 'Available languages list',
             'helper_text' => 'Languages available for interface selection',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'value' => [
             'label' => 'Value',
             'placeholder' => 'Enter value',
             'helper_text' => 'Translation value',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'key' => [
             'label' => 'Key',
             'placeholder' => 'Enter translation key',
             'helper_text' => 'Unique identifier for the translation',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'locale' => [
             'label' => 'Locale',
             'placeholder' => 'Select locale',
             'helper_text' => 'Language locale code (e.g. it, en, de)',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -145,14 +105,6 @@ return [
         'heading' => 'Language Service',
         'description' => 'Manage translations and available languages in the system',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

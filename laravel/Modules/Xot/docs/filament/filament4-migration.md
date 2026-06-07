@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 # Filament 5.x Migration Guide
 
 **Data**: 2026-01-30
@@ -159,9 +155,3 @@ Chart.register(ChartDataLabels);
 
 - [Filament 5.x Upgrade Guide](https://filamentphp.com/docs/5.x/upgrade-guide)
 - [Livewire 4.x Upgrade Guide](https://livewire.laravel.com/docs/4.x/upgrading)
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
-

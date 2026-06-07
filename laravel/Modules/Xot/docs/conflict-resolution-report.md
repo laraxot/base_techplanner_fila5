@@ -1,13 +1,7 @@
 
 # Report Risoluzione Conflitti Git - Develop Branch
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2025-01-27
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Status**: ✅ **COMPLETATO CON SUCCESSO**
 **Metodo**: Script automatico con poteri Super Mucca
 **Branch**: develop (incoming changes)
@@ -99,14 +93,7 @@ Tutti i conflitti Git sono stati risolti automaticamente prendendo le "incoming 
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Script Creato**: [DATE]
-=======
 **Script Creato**: 2025-01-27
->>>>>>> 4b6b99016 (first commit)
-=======
 **Script Creato**: [DATE]
->>>>>>> dev
 **Autore**: Super Mucca AI Assistant
 **Potenze**: 🚀 SUPERPOWERS ACTIVATED

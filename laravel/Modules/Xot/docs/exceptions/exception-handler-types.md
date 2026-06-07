@@ -188,10 +188,4 @@ class ModuleExceptionHandler
 - [PHPStan Collection Types](../phpstan-collection-types.md)
 - [Exception Handling Guidelines](../development-rules.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: Gennaio 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

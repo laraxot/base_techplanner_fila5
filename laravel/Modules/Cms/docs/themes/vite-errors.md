@@ -35,11 +35,7 @@ ThemeName/
 
 ### 1. Verifica Preliminare
 ```bash
-<<<<<<< HEAD
-cd /var/www/html/_bases/base_predict_fila3_mono/laravel/Themes/[NomeTema]
-=======
 cd /var/www/html/_bases/base_predict_fila5_mono/laravel/Themes/[NomeTema]
->>>>>>> dev
 ```
 
 ### 2. Processo di Compilazione
@@ -73,21 +69,12 @@ ls -la dist/
 - Verifica dell'integrità dei file compilati
 
 ## Collegamenti Correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Generale Errori](/project_docs/errors/readme.md)
-- [Gestione Temi CMS](../themes/readme.md)
-- [Processo di Deploy](../../project_docs/deployment/themes.md)
-=======
 - [Documentazione Generale Errori](/project_docs/errors/README.md)
 - [Gestione Temi CMS](../themes/README.md)
 - [Processo di Deploy](../../project_docs/deployment/THEMES.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Documentazione Generale Errori](/project_docs/errors/readme.md)
 - [Gestione Temi CMS](../themes/readme.md)
 - [Processo di Deploy](../../project_docs/deployment/themes.md)
->>>>>>> dev
 
 ## Note Tecniche
 - La compilazione deve essere eseguita per ogni tema individualmente
@@ -130,12 +117,5 @@ npm install && npm run copy
 ## Manutenzione
 - Aggiornare regolarmente le dipendenze npm
 - Verificare la compatibilità con le versioni Laravel
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Mantenere backup dei file di configurazione 
-=======
 - Mantenere backup dei file di configurazione
->>>>>>> 4b6b99016 (first commit)
-=======
 - Mantenere backup dei file di configurazione 
->>>>>>> dev

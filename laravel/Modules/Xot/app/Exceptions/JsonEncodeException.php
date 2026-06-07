@@ -8,59 +8,33 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Exceptions;
 
-<<<<<<< HEAD
-use Exception;
-use Illuminate\Http\Response;
-use Override;
-
-class JsonEncodeException extends ApplicationException
-{
-    #[Override]
-=======
 use Illuminate\Http\Response;
 
 class JsonEncodeException extends ApplicationException
 {
     #[\Override]
->>>>>>> dev
     public function status(): int
     {
         return Response::HTTP_BAD_REQUEST;
     }
 
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     public function help(): string
     {
         $res = trans('exception.json_not_encoded.help');
         if (! \is_string($res)) {
-<<<<<<< HEAD
-            throw new Exception('['.__LINE__.']['.class_basename($this).']');
-=======
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
->>>>>>> dev
         }
 
         return $res;
     }
 
-<<<<<<< HEAD
-    #[Override]
-=======
     #[\Override]
->>>>>>> dev
     public function error(): string
     {
         $res = trans('exception.json_not_encoded.error');
         if (! \is_string($res)) {
-<<<<<<< HEAD
-            throw new Exception('['.__LINE__.']['.class_basename($this).']');
-=======
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
->>>>>>> dev
         }
 
         return $res;

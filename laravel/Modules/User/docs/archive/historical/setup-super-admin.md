@@ -389,13 +389,8 @@ php artisan view:cache
 - [Create Users Table](../database/migrations/)
 
 ### Root Progetto
-<<<<<<< HEAD
-- [Setup Guide](../../../docs/setup-guide.md)
-- [Database Configuration](../../../docs/database-configuration.md)
-=======
 - [Setup Guide](../../../../docs/setup-guide.md)
 - [Database Configuration](../../../../docs/database-configuration.md)
->>>>>>> dev
 
 ## Codice Sorgente
 
@@ -440,4 +435,3 @@ Il comando `user:super-admin` è fondamentale per il setup iniziale dell'applica
 4. ✅ Verifica funzionamento
 
 Con questa guida, il setup dovrebbe essere straightforward e senza errori! 🚀
-

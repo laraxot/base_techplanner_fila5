@@ -1,25 +1,16 @@
 # Sistema di Routing e Localizzazione con Laravel Folio
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Indice documentazione CMS](/laravel/modules/cms/project_docs/index.md)
 - [Gestione Route Folio](/laravel/modules/cms/project_docs/gestione-route-folio.md)
 - [Frontoffice Flow](/laravel/modules/cms/project_docs/frontoffice-flow.md)
 - [Volt Folio Structure](/laravel/modules/cms/project_docs/volt_folio_structure.md)
 - [Documentazione generale progetto](/project_docs/readme.md)
-<<<<<<< HEAD
-=======
 - [Indice documentazione CMS](/laravel/Modules/Cms/project_docs/index.md)
 - [Gestione Route Folio](/laravel/Modules/Cms/project_docs/gestione-route-folio.md)
 - [Frontoffice Flow](/laravel/Modules/Cms/project_docs/frontoffice-flow.md)
 - [Volt Folio Structure](/laravel/Modules/Cms/project_docs/volt_folio_structure.md)
 - [Documentazione generale progetto](/project_docs/README.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Panoramica
 
@@ -45,30 +36,16 @@ public function registerFolio(): void
     // Ottiene i middleware di base dal TenantService
     $middleware = TenantService::config('middleware');
     $base_middleware = Arr::get($middleware, 'base', []);
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     // Aggiunge middleware per la localizzazione
     $base_middleware[] = \Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect::class;
     $base_middleware[] = \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter::class;
 
     // Ottiene il percorso del tema corrente
     $theme_path = XotData::make()->getPubThemeViewPath('pages');
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     // Ottiene la lingua corrente
     $currentLocale = LaravelLocalization::setLocale() ?? app()->getLocale();
 
@@ -140,15 +117,8 @@ Le lingue supportate sono definite in `config/laravellocalization.php`:
     ],
     'en' => [
         'name' => 'English',
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'script' => 'Latn', 
-=======
         'script' => 'Latn',
->>>>>>> 4b6b99016 (first commit)
-=======
         'script' => 'Latn', 
->>>>>>> dev
         'native' => 'English',
         'regional' => 'en_GB',
     ],
@@ -232,12 +202,5 @@ Il sistema di routing Folio si integra con il `XotComposer` per:
 ### Aggiunta di Nuove Lingue
 1. Aggiungere la configurazione in `laravellocalization.php`
 2. Creare i file di traduzione corrispondenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-3. Testare le rotte con la nuova lingua 
-=======
 3. Testare le rotte con la nuova lingua
->>>>>>> 4b6b99016 (first commit)
-=======
 3. Testare le rotte con la nuova lingua 
->>>>>>> dev

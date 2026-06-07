@@ -15,10 +15,6 @@ return [
     'bottom-right' => [
         'label' => 'basso a destra',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Corner Position',
     'plural_label' => 'Corner Position (Plurale)',
     'navigation' => [
@@ -63,9 +59,4 @@ return [
             'label' => 'Elimina Corner Position',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

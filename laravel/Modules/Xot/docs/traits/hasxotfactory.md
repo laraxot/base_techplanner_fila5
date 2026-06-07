@@ -344,15 +344,8 @@ protected static function newFactory(): Factory
 
 - [GetFactoryAction](../actions/get-factory-action.md)
 - [BaseModel](../models/basemodel.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [BasePivot](../../user/docs/models/basepivot.md)
-=======
 - [BasePivot](../../User/docs/models/basepivot.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [BasePivot](../../user/docs/models/basepivot.md)
->>>>>>> dev
 - [Testing Guide](../testing/factory-testing.md)
 - [Laravel Factories Documentation](https://laravel.com/docs/eloquent-factories)
 

@@ -212,15 +212,8 @@ final class SendTwilioWhatsAppAction implements WhatsAppProviderActionInterface
 
         // Crea il client Twilio
         $client = new Client([
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'base_uri' => "https://api.{$this->edge}.twilio.com/[DATE]/",
-=======
             'base_uri' => "https://api.{$this->edge}.twilio.com/2010-04-01/",
->>>>>>> 4b6b99016 (first commit)
-=======
             'base_uri' => "https://api.{$this->edge}.twilio.com/2010-04-01/",
->>>>>>> dev
             'auth' => [$this->accountSid, $this->authToken],
             'timeout' => $this->timeout,
             'http_errors' => false,
@@ -491,15 +484,8 @@ Per integrare con Twilio:
 1. Creare un account su [Twilio](https://www.twilio.com/)
 2. Acquisire un numero WhatsApp Business o configurare un Sandbox
 3. Configurare Account SID e Auth Token
-<<<<<<< HEAD
-<<<<<<< HEAD
-4. Utilizzare l'endpoint REST `/[DATE]/Accounts/{AccountSid}/Messages.json`
-=======
 4. Utilizzare l'endpoint REST `/2010-04-01/Accounts/{AccountSid}/Messages.json`
->>>>>>> 4b6b99016 (first commit)
-=======
 4. Utilizzare l'endpoint REST `/2010-04-01/Accounts/{AccountSid}/Messages.json`
->>>>>>> dev
 
 ### Vonage API per WhatsApp
 
@@ -775,15 +761,8 @@ final class SendTwilioWhatsAppAction implements WhatsAppProviderActionInterface
 
         // Crea il client Twilio
         $client = new Client([
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'base_uri' => "https://api.{$this->edge}.twilio.com/[DATE]/",
-=======
             'base_uri' => "https://api.{$this->edge}.twilio.com/2010-04-01/",
->>>>>>> 4b6b99016 (first commit)
-=======
             'base_uri' => "https://api.{$this->edge}.twilio.com/2010-04-01/",
->>>>>>> dev
             'auth' => [$this->accountSid, $this->authToken],
             'timeout' => $this->timeout,
             'http_errors' => false,
@@ -1054,15 +1033,8 @@ Per integrare con Twilio:
 1. Creare un account su [Twilio](https://www.twilio.com/)
 2. Acquisire un numero WhatsApp Business o configurare un Sandbox
 3. Configurare Account SID e Auth Token
-<<<<<<< HEAD
-<<<<<<< HEAD
-4. Utilizzare l'endpoint REST `/[DATE]/Accounts/{AccountSid}/Messages.json`
-=======
 4. Utilizzare l'endpoint REST `/2010-04-01/Accounts/{AccountSid}/Messages.json`
->>>>>>> 4b6b99016 (first commit)
-=======
 4. Utilizzare l'endpoint REST `/2010-04-01/Accounts/{AccountSid}/Messages.json`
->>>>>>> dev
 
 ### Vonage API per WhatsApp
 

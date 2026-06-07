@@ -2,11 +2,7 @@
 
 ## Introduzione
 
-<<<<<<< HEAD
-Questo documento analizza un approccio avanzato per la generazione di slug da titoli nei form Filament, con particolare attenzione alla preservazione degli slug per i contenuti già pubblicati. Questa metodologia è particolarmente rilevante per il modulo Notify di SaluteOra, in particolare per la gestione dei template email.
-=======
 Questo documento analizza un approccio avanzato per la generazione di slug da titoli nei form Filament, con particolare attenzione alla preservazione degli slug per i contenuti già pubblicati. Questa metodologia è particolarmente rilevante per il modulo Notify di Quaeris, in particolare per la gestione dei template email.
->>>>>>> dev
 
 ## Concetto Base
 
@@ -171,15 +167,8 @@ public static function getFormSchema(): array
 
 ### 1. Pacchetto TitleWithSlugInput
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Come documentato in [TITLE_WITH_SLUG_COMPONENT.md](./title_with_slug_component.md), il pacchetto `filament-title-with-slug` offre funzionalità simili con un'interfaccia più ricca. Tuttavia, l'approccio presentato qui può essere implementato senza dipendenze aggiuntive.
-=======
 Come documentato in [TITLE_WITH_SLUG_COMPONENT.md](./TITLE_WITH_SLUG_COMPONENT.md), il pacchetto `filament-title-with-slug` offre funzionalità simili con un'interfaccia più ricca. Tuttavia, l'approccio presentato qui può essere implementato senza dipendenze aggiuntive.
->>>>>>> 4b6b99016 (first commit)
-=======
 Come documentato in [TITLE_WITH_SLUG_COMPONENT.md](./TITLE_WITH_SLUG_COMPONENT.md), il pacchetto `filament-title-with-slug` offre funzionalità simili con un'interfaccia più ricca. Tuttavia, l'approccio presentato qui può essere implementato senza dipendenze aggiuntive.
->>>>>>> dev
 
 ### 2. Reindirizzamenti Automatici
 
@@ -193,28 +182,15 @@ In alternativa o in aggiunta, è possibile implementare un sistema di reindirizz
 
 L'implementazione di una generazione intelligente di slug per i template email migliora significativamente la stabilità e l'usabilità del sistema. Preservando gli slug dei template pubblicati, si prevengono problemi di accessibilità e si garantisce un'esperienza utente coerente.
 
-<<<<<<< HEAD
-Per il modulo Notify di SaluteOra, questa soluzione rappresenta un equilibrio ottimale tra automazione e controllo, con particolare attenzione alla preservazione dei link esistenti.
-=======
 Per il modulo Notify di Quaeris, questa soluzione rappresenta un equilibrio ottimale tra automazione e controllo, con particolare attenzione alla preservazione dei link esistenti.
->>>>>>> dev
 
 ## Riferimenti
 
 - [Articolo Laravel News](https://laravel-news.com/generating-slugs-from-a-title-in-filament)
 - [Documentazione Filament Forms](https://filamentphp.com/docs/3.x/forms/advanced)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Implementazione Modello con Slug](./model_slug_implementation.md)
-- [Componente TitleWithSlug](./title_with_slug_component.md)
-- [Miglioramenti UI/UX per Slug](./ui_ux_enhancements.md)
-=======
 - [Implementazione Modello con Slug](./MODEL_SLUG_IMPLEMENTATION.md)
 - [Componente TitleWithSlug](./TITLE_WITH_SLUG_COMPONENT.md)
 - [Miglioramenti UI/UX per Slug](./UI_UX_ENHANCEMENTS.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Implementazione Modello con Slug](./MODEL_SLUG_IMPLEMENTATION.md)
 - [Componente TitleWithSlug](./TITLE_WITH_SLUG_COMPONENT.md)
 - [Miglioramenti UI/UX per Slug](./UI_UX_ENHANCEMENTS.md)
->>>>>>> dev

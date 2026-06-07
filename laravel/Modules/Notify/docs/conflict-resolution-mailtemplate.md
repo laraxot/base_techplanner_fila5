@@ -65,22 +65,13 @@ Verificare che:
 - Le traduzioni includano le chiavi per `sms_template`
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Notify Module Documentation](readme.md)
-=======
 - [Notify Module Documentation](README.md)
->>>>>>> 4b6b99016 (first commit)
 - [SMS Implementation Guide](sms_implementation.md)
 - [Mail Templates Structure](mail_templates_structure.md)
 - [Translation Standards](translation_standards.md)
 - [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
 
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: giugno 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Notify Module Documentation](README.md)
 - [SMS Implementation Guide](sms_implementation.md)
 - [Mail Templates Structure](mail_templates_structure.md)
@@ -88,7 +79,6 @@ Verificare che:
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
->>>>>>> dev
 # Risoluzione Conflitti MailTemplate.php
 
 ## Contesto del Conflitto
@@ -156,22 +146,13 @@ Verificare che:
 - Le traduzioni includano le chiavi per `sms_template`
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Notify Module Documentation](readme.md)
-=======
 - [Notify Module Documentation](README.md)
->>>>>>> 4b6b99016 (first commit)
 - [SMS Implementation Guide](sms_implementation.md)
 - [Mail Templates Structure](mail_templates_structure.md)
 - [Translation Standards](translation_standards.md)
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
 
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: giugno 2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Notify Module Documentation](README.md)
 - [SMS Implementation Guide](sms_implementation.md)
 - [Mail Templates Structure](mail_templates_structure.md)
@@ -179,4 +160,3 @@ Verificare che:
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
->>>>>>> dev

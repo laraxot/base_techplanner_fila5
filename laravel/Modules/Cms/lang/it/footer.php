@@ -7,16 +7,8 @@ return [
         'view' => [
             'label' => 'Visualizzazione',
             'tooltip' => 'Seleziona la visualizzazione da mostrare',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -27,10 +19,6 @@ return [
             'color' => 'primary',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Footer',
     'plural_label' => 'Footer (Plurale)',
     'navigation' => [
@@ -44,9 +32,4 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

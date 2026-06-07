@@ -96,23 +96,14 @@ test('it can integrate with laravel', function () {
 ### Versione HEAD
 
 ## Collegamenti tra versioni di testing.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 * [testing.md](../../../xot/docs/packages/testing.md)
 * [testing.md](../../../xot/docs/development/testing.md)
 * [testing.md](../../../cms/docs/frontoffice/testing.md)
 * [testing.md](../../../../themes/one/docs/testing.md)
-<<<<<<< HEAD
-=======
 * [testing.md](../../../Xot/docs/packages/testing.md)
 * [testing.md](../../../Xot/docs/development/testing.md)
 * [testing.md](../../../Cms/docs/frontoffice/testing.md)
 * [testing.md](../../../../Themes/One/docs/testing.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ### Versione Incoming
 

@@ -1,12 +1,6 @@
 # Memento - Base TechPlanner Fila3
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 Ultimo aggiornamento: 2025-01-13
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## 🏗 Struttura del Progetto
 

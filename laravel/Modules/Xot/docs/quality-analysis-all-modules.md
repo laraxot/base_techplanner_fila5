@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-# Analisi Qualità Codice - Tutti i Moduli (PHPMD)
-
-<<<<<<< HEAD
-=======
 **Data**: 2025-12-23
->>>>>>> 4b6b99016 (first commit)
 **Obiettivo**: Analisi sistematica completa della qualità del codice di tutti i moduli
 **Strumento**: PHPMD (PHP Mess Detector)
 **Livello PHPStan**: max (già verificato - 0 errori)
@@ -95,7 +89,6 @@
 - **PHPInsights**: Strumento non installato nel progetto. Analisi limitata a PHPMD.
 - **Focus**: Qualità codice mantenuta, codice morto rimosso
 - **PHPStan**: Sempre priorità massima (0 errori mantenuto)
-=======
 ---
 module: theme
 topic: quality-analysis-all-modules
@@ -103,4 +96,3 @@ canonical: ../../../Themes/docs/shared-components/quality-all-modules.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-all-modules.md
->>>>>>> dev

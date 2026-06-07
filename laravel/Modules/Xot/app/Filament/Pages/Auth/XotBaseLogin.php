@@ -6,10 +6,6 @@ namespace Modules\Xot\Filament\Pages\Auth;
 
 use Filament\Auth\Pages\Login;
 
-<<<<<<< HEAD
-abstract class XotBaseLogin extends Login {}
-=======
 abstract class XotBaseLogin extends Login
 {
 }
->>>>>>> dev

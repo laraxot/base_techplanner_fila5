@@ -115,17 +115,10 @@ private function formatContacts(Client $record): string
 - [MEMORY 4b9bd23e]: Regole architetturali Filament
 
 ### Pattern Corretti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [TechPlanner ContactsColumn](../../techplanner/docs/contacts-column-implementation-complete.md)
-=======
 - [TechPlanner ContactsColumn](../../TechPlanner/docs/contacts-column-implementation-complete.md)
->>>>>>> 4b6b99016 (first commit)
 - [Filament Best Practices](../../../docs/filament-best-practices.md)
-=======
 - [TechPlanner ContactsColumn](../../techplanner/docs/contacts-column-implementation-complete.md)
 - [Filament Best Practices](../../../../docs/filament-best-practices.md)
->>>>>>> dev
 
 ## AZIONI CORRETTIVE
 
@@ -143,12 +136,6 @@ private function formatContacts(Client $record): string
 **PRIORITÀ**: Immediata - Correggere subito  
 **LEZIONE**: SEMPRE studiare docs/memories prima di implementare  
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2025-08-01*  
->>>>>>> 4b6b99016 (first commit)
-=======
 *Ultimo aggiornamento: [DATE]*  
->>>>>>> dev
 *Errori identificati e documentati per prevenzione futura*

@@ -44,10 +44,6 @@
 
 ## Collegamenti
 - [Roadmap Principale](../../roadmap.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Best Practices](../../best-practices.md)
 - [Performance Guidelines](../../performance/optimization.md)
 ## Collegamenti tra versioni di performance.md
@@ -59,8 +55,6 @@
 * [performance.md](../../../lang/docs/packages/performance.md)
 * [performance.md](../../../job/docs/packages/performance.md)
 * [performance.md](../../../cms/docs/frontoffice/performance.md)
-<<<<<<< HEAD
-=======
 - [Best Practices](../../BEST-PRACTICES.md)
 - [Performance Guidelines](../../performance/optimization.md)
 ## Collegamenti tra versioni di performance.md
@@ -72,6 +66,3 @@
 * [performance.md](../../../Lang/docs/packages/performance.md)
 * [performance.md](../../../Job/docs/packages/performance.md)
 * [performance.md](../../../Cms/docs/frontoffice/performance.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

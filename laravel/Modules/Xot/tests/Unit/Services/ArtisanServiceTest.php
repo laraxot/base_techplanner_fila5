@@ -2,28 +2,14 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\Xot\Tests\Unit\Services;
-
->>>>>>> dev
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Request;
 use Modules\Xot\Services\ArtisanService;
-<<<<<<< HEAD
-use Tests\TestCase;
-=======
->>>>>>> dev
 
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
 
-<<<<<<< HEAD
-uses(TestCase::class);
-
-=======
->>>>>>> dev
 beforeEach(function (): void {
     // Configure mysql connection for tests (required by ArtisanService)
     Config::set('database.connections.mysql', [
@@ -53,11 +39,6 @@ test('artisan service act method handles migrate command', function (): void {
 
     // @phpstan-ignore-next-line - Pest expectation method
     expect($result)->toBeString();
-<<<<<<< HEAD
-    /** @var string $result */
-=======
-    /* @var string $result */
->>>>>>> dev
     // @phpstan-ignore-next-line - Pest expectation method
     expect(str_contains($result, 'Migration completed'))->toBeTrue();
 });
@@ -74,11 +55,6 @@ test('artisan service act method handles module parameter', function (): void {
 
     // @phpstan-ignore-next-line - Pest expectation method
     expect($result)->toBeString();
-<<<<<<< HEAD
-    /** @var string $result */
-=======
-    /* @var string $result */
->>>>>>> dev
     // @phpstan-ignore-next-line - Pest expectation method
     expect(str_contains($result, 'Module migration'))->toBeTrue();
 });
@@ -93,11 +69,6 @@ test('artisan service handles non-string module parameter', function (): void {
 
     // @phpstan-ignore-next-line - Pest expectation method
     expect($result)->toBeString();
-<<<<<<< HEAD
-    /** @var string $result */
-=======
-    /* @var string $result */
->>>>>>> dev
     // @phpstan-ignore-next-line - Pest expectation method
     expect(str_contains($result, 'Migration'))->toBeTrue();
 });

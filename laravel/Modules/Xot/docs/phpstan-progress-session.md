@@ -1,12 +1,6 @@
 # PHPStan Level 10 - Sessione di Correzione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 9 Gennaio 2026  
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Status**: 🔄 **IN CORSO** (64% completato)
 
 ---
@@ -130,12 +124,5 @@ return $result;
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE] - Sessione in corso
-=======
 **Ultimo aggiornamento**: 2026-01-09 - Sessione in corso
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: [DATE] - Sessione in corso
->>>>>>> dev

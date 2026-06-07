@@ -3,23 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    /*
-     * |--------------------------------------------------------------------------
-     * | Authentication Language Lines
-     * |--------------------------------------------------------------------------
-     * |
-     * | The following language lines are used during authentication for various
-     * | messages that we need to display to the user. You are free to modify
-     * | these language lines according to your application's requirements.
-     * |
-     */
-
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     'failed' => 'Credenziali non valide.',
     'password' => 'La password fornita non è corretta.',
     'throttle' => 'Troppi tentativi di accesso. Riprova tra :seconds secondi.',
@@ -87,10 +70,6 @@ return [
         'settings' => 'Impostazioni',
         'logout' => 'Disconnetti',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Auth',
     'plural_label' => 'Auth (Plurale)',
     'navigation' => [
@@ -135,9 +114,4 @@ return [
             'label' => 'Elimina Auth',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

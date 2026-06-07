@@ -90,7 +90,7 @@ return [
     'subtitle_start' => 'Or',
     'subtitle_link' => 'create a new account',
     'page' => [
-        'title' => 'Welcome to LaravelPizza! 🍕',
+        'title' => 'Welcome to <nome progetto>! 🍕',
         'subtitle' => 'Join the community of developers and pizza lovers',
     ],
     'already_registered' => 'Don\'t have an account yet?',
@@ -108,4 +108,13 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+    'login-via' => 'Or continue with',
+    'google' => 'Google',
+    'microsoft' => 'Microsoft',
+    'social' => [
+        'title' => 'Or continue with',
+        'google' => 'Sign in with Google',
+        'microsoft' => 'Sign in with Microsoft',
+        'github' => 'Sign in with GitHub',
+    ],
 ];

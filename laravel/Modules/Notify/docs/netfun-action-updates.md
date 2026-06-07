@@ -319,11 +319,5 @@ Questi miglioramenti garantiscono:
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: 2023-05-12*
->>>>>>> 4b6b99016 (first commit)
-=======
 *Ultimo aggiornamento: [DATE]*
->>>>>>> dev

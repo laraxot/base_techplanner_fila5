@@ -43,29 +43,15 @@ The Activity module provides comprehensive activity logging and audit trail func
 **Justification:** Organize activity logs by tenant for multi-tenant audit and compliance requirements.
 
 ### 5. Customer Activity Tracking
-<<<<<<< HEAD
 **Parent Resource:** CustomerResource (from Quaeris module)
-=======
-<<<<<<< HEAD
-**Parent Resource:** CustomerResource (from Quaeris module)
-=======
 **Parent Resource:** CustomerResource (from healthcare_app module)
->>>>>>> 4467550 (.)
->>>>>>> dev
 **Child Resource:** ActivityResource
 **Relationship:** Customer (as subject) hasMany Activities
 **Justification:** Track all activities related to customer records for business audit trails.
 
 ### 6. Survey Activity Logs
-<<<<<<< HEAD
 **Parent Resource:** SurveyPdfResource (from Quaeris module)
-=======
-<<<<<<< HEAD
-**Parent Resource:** SurveyPdfResource (from Quaeris module)
-=======
 **Parent Resource:** SurveyPdfResource (from healthcare_app module)
->>>>>>> 4467550 (.)
->>>>>>> dev
 **Child Resource:** ActivityResource
 **Relationship:** SurveyPdf (as subject) hasMany Activities
 **Justification:** Monitor all activities related to specific surveys for compliance and tracking.
@@ -177,11 +163,7 @@ Pattern minimo (quando applicabile):
 
 ### 1. Intelligent Activity Analysis
 - Automated anomaly detection in activity patterns
-<<<<<<< HEAD
-- Predictive analytics for security threats
-=======
 - <nome progetto>ive analytics for security threats
->>>>>>> dev
 - Machine learning-based activity categorization
 
 ### 2. Advanced Compliance Features

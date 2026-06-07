@@ -220,33 +220,18 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 
 ## 🔗 **Related Documentation**
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Widget Test Patterns](../cms/docs/tests/widget-test-patterns.md)
-- [Architecture Separation Rules](../cms/docs/tests/architecture-separation-rules.md)
-- [XotData Testing Strategy](xotdata_testing.md)
-=======
 - [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../Cms/docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](XOTDATA_TESTING.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Widget Test Patterns](../cms/docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../cms/docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](xotdata_testing.md)
->>>>>>> dev
 
 ---
 
 **Status**: ✅ Best Practices Validate  
 **Enforcement**: Obbligatorio per tutti i test  
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Version**: 1.0 - Gold Standard
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Last Update**: Dicembre 2024 
 ### Esempio unit test semplice
 ```php
@@ -302,12 +287,4 @@ function mockXotData(): void
 - Architecture Separation Rules (Cms)
 - XotData Testing Strategy (XOTDATA_TESTING.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 Status: Best Practices consolidate — Last Update: Dicembre 2024
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
-
-

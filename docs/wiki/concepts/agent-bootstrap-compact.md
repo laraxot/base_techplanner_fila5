@@ -1,31 +1,9 @@
 ---
-<<<<<<< HEAD
-title: "Agent bootstrap compact"
-type: concept
-tags: [agent, bootstrap, qmd, wiki]
-created: 2026-06-06
-updated: 2026-06-06
-qmd: "agent bootstrap compact qmd wiki trigger map"
-issues:
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/21"
-discussions:
-  - "https://github.com/laraxot/base_techplanner_fila5/discussions/19"
----
-
-# Agent bootstrap compact
-
-Before technical changes:
-
-- Read `AGENTS.md` and `laravel/AGENTS.md` when present.
-- Search the wiki with the task topic.
-- Prefer owner docs over global summaries.
-- After reusable fixes, update root wiki and the local owner wiki log.
-=======
 title: "Agent bootstrap compatto — SSoT sessione"
 type: concept
 tags: [bootstrap, tokens, on-demand, agent, second-brain, trigger-map]
 created: 2026-06-05
-updated: 2026-06-06
+updated: 2026-06-07
 qmd: "agent bootstrap compact preload token second brain trigger map qmd on-demand techplanner"
 issues:
   - "https://github.com/laraxot/base_techplanner_fila5/issues/11"
@@ -37,6 +15,7 @@ related:
   - ../how-to/multi-agent-coordination-discipline.md
   - ../rules/00-TRIGGER_MAP.md
   - ../memories/agent-token-bootstrap-slim.md
+  - ../rules/git-forward-only.md
   - ../../bashscripts/tools/prompts/llm-wiki.txt
 ---
 
@@ -44,15 +23,16 @@ related:
 
 > **Unico preload.** Resto: `00-TRIGGER_MAP` riga task → `qmd search` → `Read` owner. Stub IDE ≤50 righe.
 
-## Workflow (5 passi)
+## Workflow (sessione)
 
-0. **Multi-agente** — stesso task su più agenti: leggi `docs/chat/INDEX.md` + handoff topic → `git remote -v` → `gh issue list --search "<topic>"` → commenta issue. Canon: [multi-agent-coordination-discipline.md](../how-to/multi-agent-coordination-discipline.md) · `.cursor/rules/multi-agent-coordination.mdc`
-1. **Ogni `.md` wiki** — `git remote -v` → `gh issue list --search "<topic>"` → se manca `gh issue create` + discussion → frontmatter **`issues:` + `discussions:`** URL numerati **prima di salvare**. Canon: [wiki-markdown-frontmatter-mandatory.md](../rules/wiki-markdown-frontmatter-mandatory.md) · `.cursor/rules/wiki-markdown-frontmatter-mandatory.mdc`
-2. Questo file
-3. `docs/chat/INDEX.md` se handoff / task condiviso
-4. `00-TRIGGER_MAP.md` → **1 riga** dominio
-5. `bashscripts/docs/llm-wiki-qmd.sh search "<topic>" -c tp-wiki-<scope> -n 5 --files` (vedi [qmd-search-guide](../how-to/qmd-search-guide.md))
-6. Grep owner → Read max 5 file — **mai** `@codebase`, cartelle `docs/` intere
+0. **Git forward-only** — studia history (`show`/`blame`); **mai** `checkout --`, `restore --source`, `show ref:path > file`. Canon: [git-forward-only.md](../rules/git-forward-only.md) · `.cursor/rules/git-forward-only.mdc`
+1. **Multi-agente** — stesso task su più agenti: leggi `docs/chat/INDEX.md` + handoff topic → `git remote -v` → `gh issue list --search "<topic>"` → commenta issue. Canon: [multi-agent-coordination-discipline.md](../how-to/multi-agent-coordination-discipline.md) · `.cursor/rules/multi-agent-coordination.mdc`
+2. **Ogni `.md` wiki** — `git remote -v` → `gh issue list --search "<topic>"` → se manca `gh issue create` + discussion → frontmatter **`issues:` + `discussions:`** URL numerati **prima di salvare**. Canon: [wiki-markdown-frontmatter-mandatory.md](../rules/wiki-markdown-frontmatter-mandatory.md) · `.cursor/rules/wiki-markdown-frontmatter-mandatory.mdc`
+3. Questo file
+4. `docs/chat/INDEX.md` se handoff / task condiviso
+5. `00-TRIGGER_MAP.md` → **1 riga** dominio
+6. `bashscripts/docs/llm-wiki-qmd.sh search "<topic>" -c tp-wiki-<scope> -n 5 --files` (vedi [qmd-search-guide](../how-to/qmd-search-guide.md))
+7. Grep owner → Read max 5 file — **mai** `@codebase`, cartelle `docs/` intere
 
 ## Token
 
@@ -62,6 +42,7 @@ related:
 | Bash/git output >20 righe | `ctx_execute` / `ctx_batch_execute` |
 | Ripetere policy già in `.cursor/rules` | URL `.../issues/N` specifici in frontmatter |
 | «Dovrebbe funzionare» | Comando + HTTP/browser evidence |
+| **`git checkout <sha> -- <file>`** (ripristino) | `git show` + patch manuale forward-only |
 
 Overflow: `context-overflow-prevention.md` · Router: `llm-wiki.txt`
 
@@ -73,7 +54,7 @@ Overflow: `context-overflow-prevention.md` · Router: `llm-wiki.txt`
 | HTTP | No Controllers | `no-controllers-rule.md` |
 | Filament | XotBase*, no `->label()` | `filament-rules-summary.md` |
 | DB | Dati sacri; 1 model = 1 migrate | `bmad/architecture.md` |
-| Git | Forward-only; **no** branch/checkout | `git-forward-only.md` |
+| Git | **Forward-only** — studia history, **mai** ripristinare file da commit | [git-forward-only.md](../rules/git-forward-only.md) |
 | BMAD | Issue+Discussion→STORY→`.dev.md`→code | `bmad-story-github-links-mandatory.md` |
 | Multi-agente | Stesso task → `docs/chat/` + issue owner | `multi-agent-coordination-discipline.md` |
 | Wiki | Frontmatter YAML + **issues + discussions GitHub** | `wiki-markdown-frontmatter-mandatory.md` |
@@ -112,4 +93,3 @@ Lock: `touch file.lock` → edit → `rm -f file.lock`. PHP: PHPStan L10 + phpmd
 ## Chiusura
 
 `verify-llm-wiki.sh` · `llm-wiki-qmd.sh update` · `docs/wiki/log.md` se policy cambia · firma issue `— Agente (modello)`.
->>>>>>> dev

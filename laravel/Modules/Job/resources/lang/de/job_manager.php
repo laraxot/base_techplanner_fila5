@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -69,35 +65,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'name' => [
-            'label' => 'Name',
-        ],
-        'queue' => [
-            'label' => 'Warteschlange',
-        ],
-        'status' => [
-            'label' => 'Status',
-        ],
-        'progress' => [
-            'label' => 'Fortschritt',
-        ],
-        'started_at' => [
-            'label' => 'Gestartet Am',
-        ],
-        'last_heartbeat' => [
-            'label' => 'Letzter Herzschlag',
-        ],
-        'created_at' => [
-            'label' => 'Erstellt Am',
-        ],
-        'updated_at' => [
-            'label' => 'Aktualisiert Am',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [

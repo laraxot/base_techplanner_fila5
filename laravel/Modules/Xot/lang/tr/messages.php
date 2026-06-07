@@ -17,15 +17,7 @@ return [
     ],
     'environment' => [
         'title' => 'Ortam Ayarları',
-<<<<<<< HEAD
-<<<<<<< HEAD
         'save' => '.env\'yi Kaydet',
-=======
-        'save' => ".env'yi Kaydet",
->>>>>>> 4b6b99016 (first commit)
-=======
-        'save' => '.env\'yi Kaydet',
->>>>>>> dev
         'success' => '.env dosyanız kaydedildi.',
         'errors' => '.env dosyanız kaydedilemedi, lütfen manuel yaratınız.',
     ],
@@ -34,10 +26,6 @@ return [
         'finished' => 'Uygulama başarıyla yüklendi.',
         'exit' => 'Çıkış yapmak için tıklayınız',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -51,9 +39,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

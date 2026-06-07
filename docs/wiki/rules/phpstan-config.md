@@ -4,6 +4,10 @@
 
 **Configurazione PHPStan ESCLUSIVAMENTE in `laravel/phpstan.neon`.**
 
+**Solo l'utente (IO)** può modificare `phpstan.neon`. Gli agenti: **vietato** qualsiasi edit — eseguire analisi e correggere solo codice in `Modules/`.
+
+Standing rule: [phpstan-neon-user-only-standing.md](../memories/phpstan-neon-user-only-standing.md)
+
 ### ❌ VIETATO
 - `phpstan.neon.dist` in moduli o temi
 - `phpstan*.json` file di output committati
@@ -43,12 +47,39 @@ Aggiungere ai `.gitignore` di moduli e temi:
 phpstan*.json
 ```
 
+## excludePaths — test annidati
+
+I moduli usano sia `tests/` sia `Tests/` (es. Tenant: `Modules/Tenant/Tests/Unit/`). Il pattern a un solo livello **non** esclude le sottocartelle:
+
+```neon
+# ❌ non basta — analizza ancora Tests/Unit/*.php
+- ./*/Tests/*
+
+# ✅ ricorsivo
+- ./*/tests/**
+- ./*/Tests/**
+```
+
+Sintomo: centinaia di errori `method.internalClass` (Pest) su file sotto `Tests/Feature`, `Tests/Unit`, ecc.
+
 ## Comando Corretto
 
 ```bash
-cd /var/www/_bases/base_ptvx_fila5_mono/laravel
-./vendor/bin/phpstan analyse --level=10
+cd laravel
+./vendor/bin/phpstan analyse --memory-limit=-1
 ```
+
+Livello e path sono in `phpstan.neon` — **mai** passare `--level` da CLI.
+
+## Pre-flight lang (parse blocker)
+
+Prima di `./vendor/bin/phpstan analyse`, se compaiono errori `phpstan.parse` su file sotto `lang/`:
+
+1. Cercare marker merge: `grep -r '^<<<<<<<' Modules/*/lang --include='*.php'`
+2. Eliminare path duplicati `lang/lang/` (es. Job: usare solo `Modules/Job/lang/it/`)
+3. Validare sintassi: `php -l` sui file segnalati
+
+Dettaglio: [phpstan-modules-zero-2026-06-06.md](../memories/phpstan-modules-zero-2026-06-06.md).
 
 ## Collegamenti
 

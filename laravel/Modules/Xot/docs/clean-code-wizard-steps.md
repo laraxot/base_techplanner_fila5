@@ -26,25 +26,11 @@ protected static function getPersonalStep(): Forms\Components\Wizard\Step
 ```
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Applicazione e nota nel modulo Patient](../../patient/docs/clean-code-wizard-steps.md)
-=======
 - [Applicazione e nota nel modulo Patient](../../Patient/docs/clean-code-wizard-steps.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Applicazione e nota nel modulo Patient](../../patient/docs/clean-code-wizard-steps.md)
->>>>>>> dev
 
 **Questa regola è trasversale e vincolante per tutti i moduli.**
 
 ## Collegamenti tra versioni di clean-code-wizard-steps.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [clean-code-wizard-steps.md](../../patient/docs/clean-code-wizard-steps.md)
-=======
 * [clean-code-wizard-steps.md](../../Patient/docs/clean-code-wizard-steps.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 * [clean-code-wizard-steps.md](../../patient/docs/clean-code-wizard-steps.md)
->>>>>>> dev

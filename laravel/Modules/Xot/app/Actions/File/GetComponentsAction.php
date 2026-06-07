@@ -4,31 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
-<<<<<<< HEAD
-use Exception;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\ComponentFileData;
-use ReflectionClass;
-use Spatie\LaravelData\DataCollection;
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-=======
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Str;
-use Modules\Xot\Datas\ComponentFileData;
->>>>>>> dev
 
 use function Safe\json_decode;
 use function Safe\json_encode;
 
-<<<<<<< HEAD
-=======
 use Spatie\LaravelData\DataCollection;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
->>>>>>> dev
 class GetComponentsAction
 {
     use QueueableAction;
@@ -78,11 +64,7 @@ class GetComponentsAction
         $comps = [];
 
         foreach ($files as $file) {
-<<<<<<< HEAD
-            if ($file->getExtension() !== 'php') {
-=======
             if ('php' !== $file->getExtension()) {
->>>>>>> dev
                 continue;
             }
 
@@ -97,11 +79,7 @@ class GetComponentsAction
             $comp_name = $prefix.$comp_name;
             $comp_ns = $namespace.'\\'.$class_name;
 
-<<<<<<< HEAD
-            if ($relative_path !== '') {
-=======
             if ('' !== $relative_path) {
->>>>>>> dev
                 $comp_name = '';
                 $piece = collect(explode('\\', $relative_path))
                     ->map(fn ($item) => Str::slug(Str::snake($item)))
@@ -114,19 +92,11 @@ class GetComponentsAction
 
             try {
                 if (! class_exists($comp_ns)) {
-<<<<<<< HEAD
-                    throw new Exception("La classe {$comp_ns} non esiste");
-                }
-
-                /** @var class-string<object> $comp_ns */
-                $reflection = new ReflectionClass($comp_ns);
-=======
                     throw new \Exception("La classe {$comp_ns} non esiste");
                 }
 
                 /** @var class-string<object> $comp_ns */
                 $reflection = new \ReflectionClass($comp_ns);
->>>>>>> dev
                 if ($reflection->isAbstract()) {
                     continue;
                 }
@@ -136,11 +106,7 @@ class GetComponentsAction
                     'class' => $class_name,
                     'ns' => $comp_ns,
                 ])->toArray();
-<<<<<<< HEAD
-            } catch (Exception $e) {
-=======
             } catch (\Exception $e) {
->>>>>>> dev
                 /*
                  * dddx([
                  * 'comp_name' => $comp_name,

@@ -14,19 +14,11 @@ Il file `.env.testing` deve essere una copia esatta del `.env` con una sola modi
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-<<<<<<< HEAD
-DB_DATABASE=laravelpizza_data
-DB_USERNAME=marco
-DB_PASSWORD=marco
-
-DB_DATABASE_USER=laravelpizza_user
-=======
 DB_DATABASE=<nome progetto>_data
 DB_USERNAME=marco
 DB_PASSWORD=marco
 
 DB_DATABASE_USER=<nome progetto>_user
->>>>>>> dev
 DB_USERNAME_USER=marco
 DB_PASSWORD_USER=marco
 ```
@@ -36,19 +28,11 @@ DB_PASSWORD_USER=marco
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-<<<<<<< HEAD
-DB_DATABASE=laravelpizza_data_test
-DB_USERNAME=marco
-DB_PASSWORD=marco
-
-DB_DATABASE_USER=laravelpizza_user_test
-=======
 DB_DATABASE=<nome progetto>_data_test
 DB_USERNAME=marco
 DB_PASSWORD=marco
 
 DB_DATABASE_USER=<nome progetto>_user_test
->>>>>>> dev
 DB_USERNAME_USER=marco
 DB_PASSWORD_USER=marco
 ```
@@ -56,15 +40,9 @@ DB_PASSWORD_USER=marco
 ### MAI FARE QUESTO (ERRORI COMUNI)
 ```bash
 # ❌ SBAGLIATO - Inventare database che non esistono nel .env
-<<<<<<< HEAD
-NOTIFY_DB_DATABASE=laravelpizza_data_test
-GEO_DB_DATABASE=laravelpizza_data_test
-MEDIA_DB_DATABASE=laravelpizza_data_test
-=======
 NOTIFY_DB_DATABASE=<nome progetto>_data_test
 GEO_DB_DATABASE=<nome progetto>_data_test
 MEDIA_DB_DATABASE=<nome progetto>_data_test
->>>>>>> dev
 
 # ❌ SBAGLIATO - Cambiare la struttura delle connessioni
 DB_CONNECTION=user
@@ -81,20 +59,12 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 // ❌ SBAGLIATO - Non fare mai questo nel database.php
 'notify' => [
     'driver' => 'mysql',
-<<<<<<< HEAD
-    'database' => env('NOTIFY_DB_DATABASE', 'laravelpizza_notify_test'),
-=======
     'database' => env('NOTIFY_DB_DATABASE', '<nome progetto>_notify_test'),
->>>>>>> dev
     ...
 ],
 'geo' => [
     'driver' => 'mysql',
-<<<<<<< HEAD
-    'database' => env('GEO_DB_DATABASE', 'laravelpizza_geo_test'),
-=======
     'database' => env('GEO_DB_DATABASE', '<nome progetto>_geo_test'),
->>>>>>> dev
     ...
 ],
 
@@ -128,11 +98,7 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 
 ### Database
 - `DB_CONNECTION=mysql`: Usa MySQL per i test
-<<<<<<< HEAD
-- Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
-=======
 - Database con suffisso "_test" (es. `healthcare_app_data_test`, `healthcare_app_user_test`)
->>>>>>> dev
 - **MAI** usare SQLite per i test, nemmeno per convenienza
 
 ### Motivazione
@@ -232,11 +198,7 @@ protected function setUp(): void
 $moduleConnections = [
     'user', 'notify', 'geo', 'media', 'job', 'xot',
     'activity', 'cms', 'gdpr', 'lang', 'meetup', 'seo', 'tenant',
-<<<<<<< HEAD
-    'quaeris', 'limesurvey',
-=======
     'healthcare_app', 'limesurvey',
->>>>>>> dev
 ];
 
 foreach ($moduleConnections as $connection) {

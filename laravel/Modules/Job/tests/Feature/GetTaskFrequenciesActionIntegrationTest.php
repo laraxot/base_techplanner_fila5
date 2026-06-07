@@ -2,16 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(\Modules\Job\Tests\TestCase::class);
-
-use Modules\Job\Actions\GetTaskFrequenciesAction;
-=======
-uses(TestCase::class);
-
-use Modules\Job\Actions\GetTaskFrequenciesAction;
-use Modules\Job\Tests\TestCase;
->>>>>>> dev
 
 describe('GetTaskFrequenciesAction Integration', function () {
     beforeEach(function () {

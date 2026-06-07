@@ -7,10 +7,6 @@ namespace Modules\UI\Filament\Forms\Components;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
-<<<<<<< HEAD
-use Spatie\ModelStates\HasStatesContract;
-=======
->>>>>>> dev
 
 class SelectState extends XotBaseSelect
 {
@@ -19,11 +15,7 @@ class SelectState extends XotBaseSelect
         parent::setUp();
 
         //  $this->selectablePlaceholder(false);
-<<<<<<< HEAD
-        $this->options(function ((Model&HasStatesContract)|null $record): array {
-=======
         $this->options(function (?Model $record): array {
->>>>>>> dev
             $name = $this->getName();
             if (null === $record) {
                 $model = $this->getModel();
@@ -59,12 +51,6 @@ class SelectState extends XotBaseSelect
                 return [];
             }
 
-<<<<<<< HEAD
-            // Record implements HasStatesContract which provides getStatesFor()
-            $statesCollection = $record->getStatesFor($name);
-            // getStatesFor() returns Collection which has toArray()
-            $statesRaw = $statesCollection->toArray();
-=======
             if (! method_exists($record, 'getStatesFor')) {
                 return [];
             }
@@ -73,7 +59,6 @@ class SelectState extends XotBaseSelect
             $statesRaw = \is_object($statesCollection) && method_exists($statesCollection, 'toArray')
                 ? $statesCollection->toArray()
                 : [];
->>>>>>> dev
             /** @var array<int|string, mixed> $states */
             $states = $statesRaw;
             $statesKeys = array_map(static fn ($v) => \is_string($v) ? $v : (string) $v, array_values($states));

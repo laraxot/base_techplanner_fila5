@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Componenti di Navigazione 
-=======
 # Componenti di Navigazione
 
 ## Indice
@@ -182,7 +178,6 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
 - [Layout](./layout-components.md)
 - [Accessibilità](./standards/accessibility.md)
 # Componenti di Navigazione
->>>>>>> 4b6b99016 (first commit)
 
 ## Indice
 - [Panoramica](#panoramica)
@@ -252,11 +247,7 @@ I componenti di navigazione devono utilizzare sempre le funzioni di localizzazio
 
 ### Traduzioni Necessarie
 
-<<<<<<< HEAD
-Assicurarsi che le seguenti chiavi di traduzione siano definite in `/var/www/html/saluteora/laravel/lang/{locale}/auth.php`:
-=======
 Assicurarsi che le seguenti chiavi di traduzione siano definite in `lang/{locale}/auth.php`:
->>>>>>> 4b6b99016 (first commit)
 
 ```php
 return [
@@ -299,7 +290,6 @@ return [
    - Utilizzare i componenti Filament per icone e avatar: `<x-filament::icon>`, `<x-filament::avatar>`
    - Utilizzare i componenti Filament per i dropdown quando possibile
    - Utilizzare i separatori corretti nei dropdown (div con bordo, non componenti inesistenti)
-=======
 ---
 module: theme
 topic: navigation-components
@@ -307,4 +297,3 @@ canonical: ../../../Themes/docs/shared-components/navigation-components.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/navigation-components.md
->>>>>>> dev

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 # Implementazione Xot
 
 ## Struttura del Codice
@@ -306,7 +302,3 @@ class XotPageTest extends TestCase
 ### Versione Incoming
 
 ---
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev

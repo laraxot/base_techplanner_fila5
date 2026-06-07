@@ -2,21 +2,10 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-uses(Modules\UI\Tests\TestCase::class);
-=======
-namespace Modules\UI\Tests\Unit\Enums;
-
-uses(TestCase::class);
->>>>>>> dev
 
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Enums\TableLayoutEnum;
-<<<<<<< HEAD
-=======
-use Modules\UI\Tests\TestCase;
->>>>>>> dev
 
 it('has enum values', function (): void {
     expect(TableLayoutEnum::LIST->value)->toBe('list');

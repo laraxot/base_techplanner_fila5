@@ -7,10 +7,6 @@ return [
         'recipient' => [
             'label' => 'Destinatario',
             'helper_text' => 'Inserisci il numero di telefono nel formato internazionale (es. +393401234567).',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'description' => '',
         ],
@@ -19,43 +15,18 @@ return [
             'helper_text' => 'Inserisci il numero di telefono nel formato internazionale (es. +393401234567).',
             'tooltip' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'to' => [
-             'label' => 'Destinatario', // Fallback for old code
-             'helper_text' => 'Inserisci il numero di telefono nel formato internazionale (es. +393401234567).',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'message' => [
             'label' => 'Messaggio',
             'helper_text' => 'Inserisci il contenuto del messaggio (max 160 caratteri per un singolo SMS).',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'driver' => [
             'label' => 'Driver SMS',
             'helper_text' => 'Seleziona il provider per l\'invio dell\'SMS.',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -88,10 +59,6 @@ return [
             'label' => 'Provider',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -101,9 +68,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

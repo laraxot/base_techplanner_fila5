@@ -15,10 +15,6 @@ use Themes\Sixteen\Contracts\MenuFilterInterface;
 class MenuBuilder
 {
     protected Collection $slimHeader;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 
     protected Collection $header;
 
@@ -26,14 +22,9 @@ class MenuBuilder
 
     protected Collection $footerBar;
 
-<<<<<<< HEAD
-=======
     protected Collection $header;
     protected Collection $footer;
     protected Collection $footerBar;
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     protected array $filters = [];
 
     public function __construct()
@@ -51,15 +42,7 @@ class MenuBuilder
     {
         $processedItems = $this->transformItems($items);
         $this->slimHeader = $this->slimHeader->merge($processedItems);
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         return $this;
     }
 
@@ -70,15 +53,7 @@ class MenuBuilder
     {
         $processedItems = $this->transformItems($items);
         $this->header = $this->header->merge($processedItems);
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         return $this;
     }
 
@@ -89,15 +64,7 @@ class MenuBuilder
     {
         $processedItems = $this->transformItems($items);
         $this->footer = $this->footer->merge($processedItems);
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         return $this;
     }
 
@@ -108,15 +75,7 @@ class MenuBuilder
     {
         $processedItems = $this->transformItems($items);
         $this->footerBar = $this->footerBar->merge($processedItems);
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         return $this;
     }
 
@@ -126,14 +85,7 @@ class MenuBuilder
     public function setFilters(array $filters): self
     {
         $this->filters = $filters;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
         return $this;
     }
 
@@ -189,10 +141,6 @@ class MenuBuilder
     {
         $config = config('sixteen.menu', []);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         if (! empty($config['slim_header'])) {
             $this->addSlimHeader($config['slim_header']);
         }
@@ -206,8 +154,6 @@ class MenuBuilder
         }
 
         if (! empty($config['footer_bar'])) {
-<<<<<<< HEAD
-=======
         if (!empty($config['slim_header'])) {
             $this->addSlimHeader($config['slim_header']);
         }
@@ -221,9 +167,6 @@ class MenuBuilder
         }
 
         if (!empty($config['footer_bar'])) {
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             $this->addFooterBar($config['footer_bar']);
         }
 
@@ -278,15 +221,7 @@ class MenuBuilder
         foreach ($this->filters as $filter) {
             if ($filter instanceof MenuFilterInterface) {
                 $item = $filter->filter($item);
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
                 // Se il filtro restituisce false, rimuovi l'elemento
                 if ($item === false) {
                     return false;
@@ -374,15 +309,7 @@ class MenuBuilder
     /**
      * Trova un elemento del menu per ID
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function findItem(string $id, ?string $menu = null): ?array
-=======
-    public function findItem(string $id, string $menu = null): array|null
->>>>>>> 4b6b99016 (first commit)
-=======
-    public function findItem(string $id, ?string $menu = null): ?array
->>>>>>> dev
     {
         $menus = $menu ? [$menu => $this->{$menu}] : [
             'slim_header' => $this->slimHeader,
@@ -404,15 +331,7 @@ class MenuBuilder
     /**
      * Rimuovi un elemento del menu per ID
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function removeItem(string $id, ?string $menu = null): self
-=======
-    public function removeItem(string $id, string $menu = null): self
->>>>>>> 4b6b99016 (first commit)
-=======
-    public function removeItem(string $id, ?string $menu = null): self
->>>>>>> dev
     {
         $menus = $menu ? [$menu] : ['slim_header', 'header', 'footer', 'footer_bar'];
 
@@ -428,15 +347,7 @@ class MenuBuilder
     /**
      * Aggiorna un elemento del menu
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function updateItem(string $id, array $updates, ?string $menu = null): self
-=======
-    public function updateItem(string $id, array $updates, string $menu = null): self
->>>>>>> 4b6b99016 (first commit)
-=======
-    public function updateItem(string $id, array $updates, ?string $menu = null): self
->>>>>>> dev
     {
         $menus = $menu ? [$menu] : ['slim_header', 'header', 'footer', 'footer_bar'];
 
@@ -445,14 +356,7 @@ class MenuBuilder
                 if (isset($item['id']) && $item['id'] === $id) {
                     return array_merge($item, $updates);
                 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-
->>>>>>> dev
                 return $item;
             });
         }
@@ -470,32 +374,16 @@ class MenuBuilder
             'header_count' => $this->header->count(),
             'footer_count' => $this->footer->count(),
             'footer_bar_count' => $this->footerBar->count(),
-<<<<<<< HEAD
-<<<<<<< HEAD
             'total_items' => $this->slimHeader->count() +
                            $this->header->count() +
                            $this->footer->count() +
-=======
-            'total_items' => $this->slimHeader->count() + 
-                           $this->header->count() + 
-                           $this->footer->count() + 
->>>>>>> 4b6b99016 (first commit)
-=======
-            'total_items' => $this->slimHeader->count() +
-                           $this->header->count() +
-                           $this->footer->count() +
->>>>>>> dev
                            $this->footerBar->count(),
             'has_dropdowns' => $this->header->contains('type', 'dropdown'),
             'has_megamenus' => $this->header->contains('type', 'megamenu'),
         ];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4b6b99016 (first commit)
-=======
-}
->>>>>>> dev
+
+
+
+

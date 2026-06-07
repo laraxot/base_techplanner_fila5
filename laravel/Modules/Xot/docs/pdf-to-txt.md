@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 https://dev.to/snehalk/how-to-read-content-from-pdf-document-in-laravel-8-4f6d
 
 
@@ -112,4 +109,3 @@ https://www.thetechplatform.com/post/how-to-easily-extract-any-text-from-a-pdf-i
 ---------------------------------------------------------------
 ---------------------------------------------------------------
 ---------------------------------------------------------------
->>>>>>> dev

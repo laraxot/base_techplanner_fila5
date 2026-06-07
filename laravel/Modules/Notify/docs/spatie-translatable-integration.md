@@ -260,23 +260,13 @@ Schema::table('mail_templates', function (Blueprint $table) {
 
 ### Documentazione Interna
 - [Errore Plugin Not Registered](./errori/plugin-spatie-translatable-not-registered.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Lang Module README](../../lang/docs/readme.md)
-- [Filament Panels Configuration](../../xot/docs/filament/panel-configuration.md)
-=======
 - [Lang Module README](../../Lang/docs/README.md)
 - [Filament Panels Configuration](../../Xot/docs/filament/panel-configuration.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Lang Module README](../../lang/docs/readme.md)
 - [Filament Panels Configuration](../../xot/docs/filament/panel-configuration.md)
->>>>>>> dev
 
 ---
 
 **Ultimo aggiornamento**: 27 Ottobre 2025  
 **Status**: ✅ PLUGIN REGISTRATO  
 **Compatibilità**: Filament 4.x
-
-

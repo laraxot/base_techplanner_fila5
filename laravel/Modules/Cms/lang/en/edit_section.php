@@ -8,488 +8,236 @@ return [
             'label' => 'Nome Sezione',
             'placeholder' => 'Nome identificativo della sezione',
             'help' => 'Nome interno per identificare questa sezione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'slug' => [
             'label' => 'Slug',
             'placeholder' => 'nome-sezione',
             'help' => 'Identificativo univoco della sezione (solo lettere minuscole, trattini e numeri)',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'title' => [
             'label' => 'Titolo',
             'placeholder' => 'Inserisci il titolo',
             'help' => 'Titolo della sezione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Testo descrittivo della sezione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'content' => [
             'label' => 'Contenuto',
             'placeholder' => 'Contenuto principale della sezione',
             'helper_text' => 'Testo e media che compongono la sezione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'view' => [
             'label' => 'Template',
             'placeholder' => 'Seleziona template di visualizzazione',
             'helper_text' => 'Template utilizzato per renderizzare questa sezione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'blocks' => [
             'label' => 'Blocchi',
             'help' => 'Blocchi di contenuto della sezione',
             'placeholder' => 'Aggiungi blocchi alla sezione',
             'helper_text' => 'Blocchi di contenuto che compongono la sezione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'company_name' => [
             'label' => 'Ragione Sociale',
             'placeholder' => 'Azienda S.p.A.',
             'help' => 'Nome completo dell\'azienda',
             'helper_text' => 'Ragione sociale dell\'azienda',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'logo' => [
             'label' => 'Logo',
             'help' => 'Carica il file del logo',
             'placeholder' => 'Seleziona logo aziendale',
             'helper_text' => 'Logo rappresentativo dell\'azienda',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'esempio@dominio.com',
             'help' => 'Indirizzo email valido',
             'helper_text' => 'Indirizzo email principale',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'phone' => [
             'label' => 'Telefono',
             'placeholder' => '+39 06 1234567',
             'help' => 'Numero di telefono con prefisso internazionale',
             'helper_text' => 'Numero di telefono di contatto',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'address' => [
             'label' => 'Indirizzo',
             'placeholder' => 'Via Roma 1, 00100 Roma RM',
             'help' => 'Indirizzo completo',
             'helper_text' => 'Indirizzo fisico dell\'azienda',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'copyright' => [
             'label' => 'Copyright',
             'placeholder' => ' 2023 Nome Azienda',
             'help' => 'Testo del copyright',
             'helper_text' => 'Testo di copyright da visualizzare',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'links' => [
             'label' => 'Collegamenti',
             'placeholder' => 'Aggiungi link di navigazione',
             'helper_text' => 'Lista di collegamenti per la navigazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'label' => [
             'label' => 'Etichetta',
             'placeholder' => 'Testo del link',
             'helper_text' => 'Testo visibile per il collegamento',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'url' => [
             'label' => 'URL',
             'placeholder' => 'https://esempio.com',
             'help' => 'Inserisci un URL valido (inizia con http:// o https://)',
             'helper_text' => 'Indirizzo web di destinazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'target' => [
             'label' => 'Destinazione',
             'placeholder' => '_blank per nuova finestra',
             'helper_text' => 'Come aprire il collegamento',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'icon' => [
             'label' => 'Icona',
             'help' => 'Seleziona un\'icona da visualizzare',
             'placeholder' => 'Seleziona icona',
             'helper_text' => 'Icona da associare al link',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'social_links' => [
             'label' => 'Social Media',
             'help' => 'Collegamenti ai profili social',
             'placeholder' => 'Aggiungi profili social',
             'helper_text' => 'Collegamenti ai profili social dell\'azienda',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'platform' => [
             'label' => 'Piattaforma',
             'help' => 'Seleziona la piattaforma social',
             'placeholder' => 'Facebook, Instagram, LinkedIn',
             'helper_text' => 'Nome della piattaforma social',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'width' => [
             'label' => 'Larghezza',
             'placeholder' => 'Larghezza in px o %',
             'helper_text' => 'Larghezza dell\'elemento visivo',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'height' => [
             'label' => 'Altezza',
             'placeholder' => 'es. auto o 200px',
             'help' => 'Altezza in pixel o lasciare su auto',
             'helper_text' => 'Altezza dell\'elemento visivo',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'cta_color' => [
             'label' => 'Colore CTA',
             'help' => 'Colore per i pulsanti e le azioni principali',
             'placeholder' => '#FF5733 o nome colore',
             'helper_text' => 'Colore dei pulsanti call-to-action',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'text_color' => [
             'label' => 'Colore Testo',
             'help' => 'Colore del testo principale',
             'placeholder' => '#333333 o nome colore',
             'helper_text' => 'Colore del testo nella sezione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'caption' => [
             'label' => 'Didascalia',
             'placeholder' => 'Descrizione dell\'immagine',
             'helper_text' => 'Testo descrittivo per immagini',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'video' => [
             'label' => 'Video',
             'placeholder' => 'URL del video',
             'helper_text' => 'Video da incorporare nella sezione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'img_uuid' => [
             'label' => 'ID Immagine',
             'placeholder' => 'UUID dell\'immagine',
             'helper_text' => 'Identificatore univoco dell\'immagine',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'level' => [
             'label' => 'Livello',
             'placeholder' => 'Livello gerarchico',
             'helper_text' => 'Livello di profondità nella struttura',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'text' => [
             'label' => 'Testo',
             'placeholder' => 'Contenuto testuale',
             'helper_text' => 'Testo semplice della sezione',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'error_message' => [
             'label' => 'Messaggio Errore',
             'placeholder' => 'Testo per errori',
             'helper_text' => 'Messaggio mostrato in caso di errore',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'success_message' => [
             'label' => 'Messaggio Successo',
             'placeholder' => 'Testo per successo',
             'helper_text' => 'Messaggio mostrato quando l\'operazione è riuscita',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
     ],
     'actions' => [
@@ -559,10 +307,6 @@ return [
         'slug_exists' => 'Questo slug è già in uso',
         'min' => 'Il valore deve essere almeno :min',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -572,9 +316,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

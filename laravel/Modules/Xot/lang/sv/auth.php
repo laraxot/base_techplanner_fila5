@@ -10,10 +10,6 @@ return [
     ],
     'throttle' => 'För många misslyckade försök att logga in i rad. Du kan försöka igen om :seconds sekunder.',
     'unknown' => 'Hm.. Något gick snett, ett okänt fel.',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -27,9 +23,4 @@ return [
     ],
     'actions' => [
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

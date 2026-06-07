@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\UI\Tests\Feature;
-
->>>>>>> dev
 use Illuminate\Support\Facades\View;
 use Tests\TestCase;
 
@@ -21,11 +16,6 @@ beforeEach(function () {
 
 test('kalshi inspired hero component renders without errors', function () {
     $componentData = [
-<<<<<<< HEAD
-        'title' => 'Test Prediction Platform',
-=======
-        'title' => 'Test <nome progetto>ion Platform',
->>>>>>> dev
         'subtitle' => 'Trade on real events with confidence',
         'cta_text' => 'Start Trading',
         'cta_link' => '/markets',
@@ -40,11 +30,6 @@ test('kalshi inspired hero component renders without errors', function () {
     expect($view)->not()->toBeNull();
 
     $html = $view->render();
-<<<<<<< HEAD
-    expect($html)->toContain('Test Prediction Platform');
-=======
-    expect($html)->toContain('Test <nome progetto>ion Platform');
->>>>>>> dev
     expect($html)->toContain('Trade on real events with confidence');
     expect($html)->toContain('Start Trading');
     expect($html)->toContain('View Markets');
@@ -59,11 +44,6 @@ test('kalshi hero shows statistics when enabled', function () {
     expect($html)->toContain('250+');
     expect($html)->toContain('Active Markets');
     expect($html)->toContain('50K+');
-<<<<<<< HEAD
-    expect($html)->toContain('Total Predictions');
-=======
-    expect($html)->toContain('Total <nome progetto>ions');
->>>>>>> dev
     expect($html)->toContain('89%');
     expect($html)->toContain('Accuracy Rate');
     expect($html)->toContain('5K+');
@@ -77,11 +57,6 @@ test('kalshi hero hides statistics when disabled', function () {
 
     $html = $view->render();
     expect($html)->not()->toContain('Active Markets');
-<<<<<<< HEAD
-    expect($html)->not()->toContain('Total Predictions');
-=======
-    expect($html)->not()->toContain('Total <nome progetto>ions');
->>>>>>> dev
 });
 
 test('kalshi hero shows categories when enabled', function () {

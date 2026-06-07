@@ -15,10 +15,6 @@ return [
         'icon' => 'ui-geo-location',
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         'name' => [
             'label' => 'Name',
             'tooltip' => '',
@@ -31,13 +27,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
-=======
-        'name' => 'Name',
-        'address' => 'Address',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         'city' => [
             'label' => 'City',
             'placeholder' => 'Select a city',
@@ -46,10 +35,6 @@ return [
             'description' => 'City of the address',
             'icon' => 'heroicon-o-building-office',
             'color' => 'primary',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'helper_text' => '',
         ],
         'province' => [
@@ -94,19 +79,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
-=======
-        ],
-        'province' => 'Province',
-        'postal_code' => 'Postal Code',
-        'country' => 'Country',
-        'latitude' => 'Latitude',
-        'longitude' => 'Longitude',
-        'type' => 'Type',
-        'status' => 'Status',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     ],
     'types' => [
         'business' => 'Business',
@@ -119,14 +91,6 @@ return [
         'get_directions' => 'Get Directions',
         'copy_coordinates' => 'Copy Coordinates',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

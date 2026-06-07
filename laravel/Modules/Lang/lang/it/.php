@@ -2,22 +2,13 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 return array (
   'sections' => 
   array (
     'empty' => 
     array (
-<<<<<<< HEAD
-      'label' => 'empty',
-      'heading' => 'empty',
-=======
       'label' => 'empty11',
       'heading' => 'empty12',
->>>>>>> dev
     ),
   ),
   'actions' => 
@@ -45,35 +36,7 @@ return array (
   ),
   'label' => 'Missing Label',
   'plural_label' => 'Missing Plural label',
-  'fields' => 
-<<<<<<< HEAD
+  'fields' =>
   array (
   ),
 );
-=======
-return [
-    'sections' => [
-        'empty' => [
-            'label' => 'empty',
-            'heading' => 'empty',
-        ],
-    ],
-    'actions' => [
-        'profile' => [
-            'label' => 'profile',
-            'icon' => 'profile',
-            'tooltip' => 'profile',
-        ],
-        'logout' => [
-            'label' => 'logout',
-            'icon' => 'logout',
-            'tooltip' => 'logout',
-        ],
-    ],
-];
->>>>>>> 4b6b99016 (first commit)
-=======
-  array ()
-  ),
-);
->>>>>>> dev

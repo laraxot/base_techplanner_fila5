@@ -1,12 +1,6 @@
 # PHPStan Level 10 - Sessione Completata
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 9 Gennaio 2026  
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Status**: ✅ **COMPLETATO** (97% errori risolti)
 
 ---
@@ -167,12 +161,5 @@ Tutti i moduli principali sono ora conformi a PHPStan Level 10.
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE] - Sessione completata
-=======
 **Ultimo aggiornamento**: 2026-01-09 - Sessione completata
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: [DATE] - Sessione completata
->>>>>>> dev

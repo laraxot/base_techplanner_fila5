@@ -19,16 +19,8 @@ return [
         'id' => [
             'label' => 'ID',
             'helper_text' => 'Identificador único do modelo',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'mailable' => [
             'label' => 'Classe Mailable',
@@ -36,14 +28,7 @@ return [
             'help' => 'A classe PHP que lida com o envio de e-mails',
             'helper_text' => 'Classe PHP que gerencia o envio de e-mails',
             'description' => 'mailable',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'subject' => [
             'label' => 'Assunto',
@@ -51,14 +36,7 @@ return [
             'help' => 'O assunto que aparecerá no e-mail',
             'helper_text' => 'Assunto do e-mail',
             'description' => 'subject',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'html_template' => [
             'label' => 'Conteúdo HTML',
@@ -66,14 +44,7 @@ return [
             'help' => 'O conteúdo do e-mail em formato HTML',
             'helper_text' => 'Conteúdo HTML do modelo de e-mail',
             'description' => 'html_template',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'text_template' => [
             'label' => 'Conteúdo de Texto',
@@ -81,125 +52,57 @@ return [
             'help' => 'Versão de texto do e-mail para clientes que não suportam HTML',
             'helper_text' => 'Versão de texto do modelo de e-mail',
             'description' => 'text_template',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'version' => [
             'label' => 'Versão',
             'help' => 'Número da versão do modelo',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'created_at' => [
             'label' => 'Criado em',
             'helper_text' => 'Data de criação do modelo',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'updated_at' => [
             'label' => 'Última Modificação',
             'helper_text' => 'Data da última modificação do modelo',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'from_email' => [
             'label' => 'E-mail do remetente',
             'helper_text' => 'Endereço de e-mail do remetente',
             'placeholder' => 'noreply@exemplo.com',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'from_name' => [
             'label' => 'Nome do remetente',
             'helper_text' => 'Nome exibido do remetente',
             'placeholder' => 'Nome da Empresa',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'variables' => [
             'label' => 'Variáveis disponíveis',
             'helper_text' => 'Lista de variáveis que podem ser usadas no modelo',
             'placeholder' => 'ex: {{name}}, {{email}}',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'is_markdown' => [
             'label' => 'Usar Markdown',
             'helper_text' => 'Indica se o modelo usa sintaxe Markdown',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> dev
         ],
         'status' => [
             'label' => 'Status',
             'helper_text' => 'Status atual do modelo',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'description' => '',
         ],
@@ -238,71 +141,27 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'layout' => [
-            'label' => 'layout',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
         'slug' => [
             'label' => 'slug',
             'description' => 'slug',
             'helper_text' => 'slug',
             'placeholder' => 'slug',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'name' => [
             'description' => 'Nome do modelo',
             'helper_text' => 'Nome descritivo para identificar o modelo',
             'placeholder' => 'Ex: Bem-vindo, Confirmação de pedido, Redefinição de senha',
             'label' => 'Nome do Modelo',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
         'params' => [
             'label' => 'Parâmetros',
             'helper_text' => 'Insira os parâmetros separados por vírgula que podem ser usados no modelo',
             'placeholder' => 'name, email, date, company',
             'description' => 'Parâmetros disponíveis para o modelo de e-mail',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-            'tooltip' => '',
->>>>>>> dev
         ],
     ],
     'filters' => [
@@ -432,14 +291,6 @@ return [
     'model' => [
         'label' => 'modelo de e-mail',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> dev
 ];

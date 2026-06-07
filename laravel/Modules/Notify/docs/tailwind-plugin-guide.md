@@ -64,14 +64,8 @@ module.exports = {
 
 ## 4. Best Practice
 - Documentare ogni plugin in `/docs` e `/Themes/One/project_docs/`.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 - Documentare ogni plugin in `/docs` e `/Themes/One/docs/`.
->>>>>>> 4b6b99016 (first commit)
-=======
 - Documentare ogni plugin in `/docs` e `/Themes/One/docs/`.
->>>>>>> dev
 - Usare i plugin per pattern condivisi (bottoni, alert, badge, card, ecc.).
 - Versionare e testare i plugin per evitare regressioni.
 - Integrare plugin solo se realmente riutilizzati da più moduli/temi.
@@ -89,14 +83,8 @@ module.exports = {
 
 ## 6. Collegamenti e Risorse
 - [Tailwind CSS Plugin Docs](https://tailwindcss.com/project_docs/plugins)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 - [Tailwind CSS Plugin Docs](https://tailwindcss.com/docs/plugins)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Tailwind CSS Plugin Docs](https://tailwindcss.com/docs/plugins)
->>>>>>> dev
 - [Webcrunch: Creare Plugin Tailwind](https://webcrunch.com/posts/create-a-tailwind-css-plugin-from-scratch)
 
 ---

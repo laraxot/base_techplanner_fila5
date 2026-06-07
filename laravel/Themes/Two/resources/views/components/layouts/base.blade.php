@@ -22,10 +22,6 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         @filamentStyles
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         @vite(['resources/css/app.css'], 'themes/Two')
 
         <!-- CSRF Token -->
@@ -47,23 +43,5 @@
         @livewireScripts
         @filamentScripts
         @vite(['resources/js/app.js'], 'themes/Two')
-<<<<<<< HEAD
-=======
-        @vite(['Resources/css/app.css'],'themes/Two/dist')
-
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-    </head>
-
-    <body>
-        @yield('body')
-
-        @livewire('notifications')
-
-        @filamentScripts
-        @vite(['Resources/js/app.js'],'themes/Two/dist')
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     </body>
 </html>

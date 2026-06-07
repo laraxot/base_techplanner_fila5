@@ -17,10 +17,6 @@ return [
             'label' => 'activeLocale',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Edit Mail Template',
     'plural_label' => 'Edit Mail Template (Plurale)',
     'navigation' => [
@@ -54,9 +50,4 @@ return [
             'description' => '',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

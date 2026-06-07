@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 https://healthchecks.io/
 
 Simple and Effective Cron Job Monitoring
@@ -16,10 +15,7 @@ https://github.com/spatie/laravel-schedule-monitor
 ----------------------------
 https://inspector.dev/laravel/
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 4b6b99016 (first commit)
 -------------------------------
 https://simple-web.dev/the-laravel-scheduler-without-cronjobs
 
@@ -31,12 +27,8 @@ https://www.thisprogrammingthing.com/what-the-f-ck-is-with-all-the-artisan-comma
 https://github.com/robersonfaria/laravel-database-schedule
 https://github.com/spatie/laravel-schedule-monitor
 https://github.com/hmazter/laravel-schedule-list
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
 ---
 module: theme
 topic: schedule
@@ -44,4 +36,3 @@ canonical: ../../../Themes/docs/shared-components/schedule.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/schedule.txt
->>>>>>> dev

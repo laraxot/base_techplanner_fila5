@@ -38,25 +38,16 @@ Il `RouteServiceProvider` gestisce:
 ## Collegamenti Bidirezionali
 - [Documentazione Generale dei Moduli](/docs/modules.md)
 - [Configurazione Job](/docs/module_job.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Best Practices PHPStan](/docs/phpstan/phpstan_level10_linee_guida.md)
 
 # Analisi Dettagliata del Modulo Job
 
 Data: [DATE] 19:09:55
-<<<<<<< HEAD
-=======
 - [Best Practices PHPStan](/docs/phpstan/PHPSTAN_LEVEL10_LINEE_GUIDA.md)
 
 # Analisi Dettagliata del Modulo Job
 
 Data: 2025-04-23 19:09:55
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 
 ## Informazioni generali
 
@@ -64,11 +55,7 @@ Data: 2025-04-23 19:09:55
 - **Namespaces secondari**:
   - Modules\\Job\\Database\\Factories
   - Modules\\Job\\Database\\Seeders
-<<<<<<< HEAD
-- **Pacchetto Composer**: laraxot/module_job_fila3
-=======
 - **Pacchetto Composer**: laraxot/module_job_fila5
->>>>>>> dev
 - **Autore**: Marco Sottana
 - **Dipendenze**:
   - repositories_comment
@@ -150,10 +137,6 @@ namespace Modules\Job\App\Filament\Resources;
 
 - [Analisi strutturale complessiva](/docs/phpstan/modules_structure_analysis.md)
 - [Report PHPStan](/docs/phpstan/)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [Documentazione Xot](laravel/modules/xot/docs/readme.md)
 - [Documentazione UI](laravel/modules/ui/docs/readme.md)
 - [Convenzioni dei Namespace](laravel/docs/module_namespace_rules.md)
@@ -179,8 +162,6 @@ namespace Modules\Job\App\Filament\Resources;
 ### Versione Incoming
 
 * [structure.md](../../../cms/docs/components/structure.md)
-<<<<<<< HEAD
-=======
 - [Documentazione Xot](laravel/Modules/Xot/docs/README.md)
 - [Documentazione UI](laravel/Modules/UI/docs/README.md)
 - [Convenzioni dei Namespace](laravel/docs/MODULE_NAMESPACE_RULES.md)
@@ -206,6 +187,3 @@ namespace Modules\Job\App\Filament\Resources;
 ### Versione Incoming
 
 * [structure.md](../../../Cms/docs/components/structure.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

@@ -133,10 +133,6 @@ protected static string $view = 'user::widgets.edit-user';
 - Check responsive design and accessibility
 - Validate form submission and error handling
 ## Related Documentation
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [User Module Widget Structure](../modules/user/project_docs/widgets_structure.md)
 - [EditUserWidget Documentation](../modules/user/project_docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/project_docs/widgets/translation-guidelines.md)
@@ -145,8 +141,6 @@ protected static string $view = 'user::widgets.edit-user';
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
-<<<<<<< HEAD
-=======
 - [User Module Widget Structure](../Modules/User/project_docs/widgets_structure.md)
 - [EditUserWidget Documentation](../Modules/User/project_docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../Modules/User/project_docs/widgets/translation-guidelines.md)
@@ -155,9 +149,6 @@ protected static string $view = 'user::widgets.edit-user';
 - [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ## Memory Integration
 This document serves as a reference for:
 - Widget development standards

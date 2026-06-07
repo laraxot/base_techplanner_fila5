@@ -108,55 +108,27 @@ use NotificationChannels\Twilio\TwilioSmsMessage;
 class AppointmentReminder extends Notification
 {
     protected $appointment;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function __construct($appointment)
     {
         $this->appointment = $appointment;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function via($notifiable)
     {
         return [TwilioChannel::class];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function toTwilio($notifiable)
     {
         $formattedDate = $this->appointment->formatted_date;
         $formattedTime = $this->appointment->formatted_time;
         $doctor = $this->appointment->doctor->name;
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return (new TwilioSmsMessage())
             ->content("Promemoria: hai un appuntamento il {$formattedDate} alle {$formattedTime} con il Dr. {$doctor}. Conferma rispondendo SI o annulla con NO.");
     }
@@ -174,68 +146,36 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     use Notifiable;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-    // ...
-    
-=======
 
     // ...
 
->>>>>>> 4b6b99016 (first commit)
-=======
     
     // ...
     
->>>>>>> dev
     public function routeNotificationForTwilio()
     {
         // Garantisci che il numero sia in formato E.164 (es. +393331234567)
         $phoneNumber = $this->phone_number;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         
         // Rimuovi eventuali spazi o caratteri non numerici
         $phoneNumber = preg_replace('/[^0-9]/', '', $phoneNumber);
         
-<<<<<<< HEAD
-=======
 
         // Rimuovi eventuali spazi o caratteri non numerici
         $phoneNumber = preg_replace('/[^0-9]/', '', $phoneNumber);
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         // Se inizia con 0, sostituisci con +39
         if (strpos($phoneNumber, '0') === 0) {
             $phoneNumber = '+39' . substr($phoneNumber, 1);
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         // Se non ha prefisso, aggiungi +39
         if (strpos($phoneNumber, '+') !== 0) {
             $phoneNumber = '+39' . $phoneNumber;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return $phoneNumber;
     }
 }
@@ -272,21 +212,12 @@ use Illuminate\Support\Facades\Log;
 class SendSMSHostingAction
 {
     use QueueableAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-    protected $client;
-    
-=======
 
     protected $client;
 
->>>>>>> 4b6b99016 (first commit)
-=======
     
     protected $client;
     
->>>>>>> dev
     public function __construct()
     {
         $this->client = new Client(
@@ -294,15 +225,8 @@ class SendSMSHostingAction
             config('sms.smshosting.password')
         );
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function execute(string $to, string $content, array $options = [])
     {
         try {
@@ -312,29 +236,15 @@ class SendSMSHostingAction
                 'from' => config('sms.smshosting.sender'),
                 'options' => $options,
             ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             Log::info('SMS inviato con successo', [
                 'to' => $to,
                 'provider' => 'SMSHosting',
                 'message_id' => $response->getId() ?? null,
             ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             return $response;
         } catch (\Exception $e) {
             Log::error('Errore invio SMS', [
@@ -342,15 +252,8 @@ class SendSMSHostingAction
                 'provider' => 'SMSHosting',
                 'error' => $e->getMessage(),
             ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             throw $e;
         }
     }
@@ -368,48 +271,25 @@ use Modules\Notify\Actions\SMS\SendSMSHostingAction;
 class SMSHostingChannel
 {
     protected $sendSMSAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function __construct(SendSMSHostingAction $sendSMSAction)
     {
         $this->sendSMSAction = $sendSMSAction;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function send($notifiable, Notification $notification)
     {
         if (! $to = $notifiable->routeNotificationForSMSHosting()) {
             return;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-        $message = $notification->toSMSHosting($notifiable);
-        
-=======
 
         $message = $notification->toSMSHosting($notifiable);
 
->>>>>>> 4b6b99016 (first commit)
-=======
         
         $message = $notification->toSMSHosting($notifiable);
         
->>>>>>> dev
         // Esecuzione asincrona dell'azione
         return $this->sendSMSAction->onQueue('sms')
             ->execute($to, $message->content, $message->options);
@@ -425,18 +305,10 @@ return [
     'smshosting' => [
         'username' => env('SMSHOSTING_USERNAME'),
         'password' => env('SMSHOSTING_PASSWORD'),
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'sender' => env('SMSHOSTING_SENDER', '<nome progetto>'),
-        'sender' => env('SMSHOSTING_SENDER', 'SaluteOra'),
-=======
         'sender' => env('SMSHOSTING_SENDER', ''),
         'sender' => env('SMSHOSTING_SENDER', '<nome progetto>'),
->>>>>>> 4b6b99016 (first commit)
-=======
         'sender' => env('SMSHOSTING_SENDER', '<nome progetto>'),
 'sender' => env('SMSHOSTING_SENDER', 'Quaeris'),
->>>>>>> dev
     ],
 ];
 ```
@@ -450,23 +322,12 @@ class SMSHostingMessage
 {
     public $content;
     public $options = [];
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function __construct($content = '')
     {
         $this->content = $content;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     public function content($content)
     {
@@ -486,8 +347,6 @@ class SMSHostingMessage
     {
         $this->options['flash'] = true;
         
-<<<<<<< HEAD
-=======
 
     public function content($content)
     {
@@ -507,9 +366,6 @@ class SMSHostingMessage
     {
         $this->options['flash'] = true;
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         return $this;
     }
 }
@@ -531,39 +387,23 @@ use Illuminate\Support\Facades\Log;
 class SendTelcobSMSAction
 {
     use QueueableAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     protected $apiKey;
     protected $sender;
     protected $baseUrl = 'https://api.telcob.com/sms/v1';
     
-<<<<<<< HEAD
-=======
 
     protected $apiKey;
     protected $sender;
     protected $baseUrl = 'https://api.telcob.com/sms/v1';
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     public function __construct()
     {
         $this->apiKey = config('sms.telcob.api_key');
         $this->sender = config('sms.telcob.sender');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function execute(string $to, string $message, array $options = [])
     {
         try {
@@ -576,15 +416,8 @@ class SendTelcobSMSAction
                 'from' => $this->sender,
                 'options' => $options,
             ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             if ($response->successful()) {
                 Log::info('SMS Telcob inviato con successo', [
                     'to' => $to,
@@ -597,30 +430,16 @@ class SendTelcobSMSAction
                     'body' => $response->json(),
                 ]);
             }
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             return $response;
         } catch (\Exception $e) {
             Log::error('Errore invio SMS Telcob', [
                 'to' => $to,
                 'error' => $e->getMessage(),
             ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             throw $e;
         }
     }
@@ -638,48 +457,25 @@ use Modules\Notify\Actions\SMS\SendTelcobSMSAction;
 class TelcobChannel
 {
     protected $sendSMSAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function __construct(SendTelcobSMSAction $sendSMSAction)
     {
         $this->sendSMSAction = $sendSMSAction;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function send($notifiable, Notification $notification)
     {
         if (! $to = $notifiable->routeNotificationForTelcob()) {
             return;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-        $message = $notification->toTelcob($notifiable);
-        
-=======
 
         $message = $notification->toTelcob($notifiable);
 
->>>>>>> 4b6b99016 (first commit)
-=======
         
         $message = $notification->toTelcob($notifiable);
         
->>>>>>> dev
         // Esecuzione asincrona dell'azione
         return $this->sendSMSAction->onQueue('sms')
             ->execute($to, $message->content, $message->options ?? []);
@@ -716,49 +512,24 @@ class PhoneNumberFormatter
     {
         // Rimuovi tutti i caratteri non numerici
         $phoneNumber = preg_replace('/[^0-9+]/', '', $phoneNumber);
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         // Se il numero inizia con + è già in formato internazionale
         if (strpos($phoneNumber, '+') === 0) {
             return $phoneNumber;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         // Se inizia con 00, sostituisci con +
         if (strpos($phoneNumber, '00') === 0) {
             return '+' . substr($phoneNumber, 2);
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         // Se inizia con 0, assumi che sia un numero italiano e rimuovi lo 0
         if (strpos($phoneNumber, '0') === 0) {
             return '+' . $defaultCountryCode . substr($phoneNumber, 1);
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         
         // Altrimenti aggiungi solo il prefisso
         return '+' . $defaultCountryCode . $phoneNumber;
@@ -768,8 +539,6 @@ class PhoneNumberFormatter
     {
         $e164 = self::formatToE164($phoneNumber);
         
-<<<<<<< HEAD
-=======
 
         // Altrimenti aggiungi solo il prefisso
         return '+' . $defaultCountryCode . $phoneNumber;
@@ -779,9 +548,6 @@ class PhoneNumberFormatter
     {
         $e164 = self::formatToE164($phoneNumber);
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         // I numeri di cellulare italiani iniziano con +393
         return preg_match('/^\+393\d{8,9}$/', $e164) === 1;
     }
@@ -801,41 +567,20 @@ use Modules\Notify\Channels\SMSHostingChannel;
 class MockSMSChannel extends SMSHostingChannel
 {
     public $messages = [];
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function send($notifiable, Notification $notification)
     {
         $to = $notifiable->routeNotificationForSMSHosting();
         $message = $notification->toSMSHosting($notifiable);
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         $this->messages[] = [
             'to' => $to,
             'content' => $message->content,
         ];
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return true;
     }
 }
@@ -860,10 +605,6 @@ class SMSNotificationTest extends TestCase
         // Arrange
         $user = User::factory()->create(['phone_number' => '+393331234567']);
         $appointment = Appointment::factory()->create(['user_id' => $user->id]);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         
         $mockChannel = new MockSMSChannel();
         $this->app->instance(SMSHostingChannel::class, $mockChannel);
@@ -871,8 +612,6 @@ class SMSNotificationTest extends TestCase
         // Act
         $user->notify(new AppointmentReminder($appointment));
         
-<<<<<<< HEAD
-=======
 
         $mockChannel = new MockSMSChannel();
         $this->app->instance(SMSHostingChannel::class, $mockChannel);
@@ -880,46 +619,27 @@ class SMSNotificationTest extends TestCase
         // Act
         $user->notify(new AppointmentReminder($appointment));
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         // Assert
         $this->assertCount(1, $mockChannel->messages);
         $this->assertEquals('+393331234567', $mockChannel->messages[0]['to']);
         $this->assertStringContainsString($appointment->formatted_date, $mockChannel->messages[0]['content']);
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function testSMSNotSentWhenPhoneInvalid()
     {
         // Arrange
         Notification::fake();
         $user = User::factory()->create(['phone_number' => 'invalid-number']);
         $appointment = Appointment::factory()->create(['user_id' => $user->id]);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         
         // Act
         $user->notify(new AppointmentReminder($appointment));
         
-<<<<<<< HEAD
-=======
 
         // Act
         $user->notify(new AppointmentReminder($appointment));
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         // Assert
         Notification::assertNothingSent();
     }
@@ -942,47 +662,27 @@ class ImportantNotification extends Notification
 {
     protected $record;
     protected $slug;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function __construct($record, $slug)
     {
         $this->record = $record;
         $this->slug = $slug;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     
     public function via($notifiable)
     {
         $channels = ['mail'];
         
-<<<<<<< HEAD
-=======
 
     public function via($notifiable)
     {
         $channels = ['mail'];
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         // Aggiungi SMS solo se l'utente ha un numero di telefono valido
         if ($notifiable->phone_number && $notifiable->sms_notifications_enabled) {
             $channels[] = TwilioChannel::class;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         
         return $channels;
     }
@@ -991,8 +691,6 @@ class ImportantNotification extends Notification
     {
         $email = new SpatieEmail($this->record, $this->slug);
         
-<<<<<<< HEAD
-=======
 
         return $channels;
     }
@@ -1001,30 +699,18 @@ class ImportantNotification extends Notification
     {
         $email = new SpatieEmail($this->record, $this->slug);
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         // IMPORTANTE: garantisci che ci sia sempre un destinatario
         if (method_exists($notifiable, 'routeNotificationFor')) {
             $email->to($notifiable->routeNotificationFor('mail'));
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         
         return $email;
     }
     
-<<<<<<< HEAD
-=======
 
         return $email;
     }
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     public function toTwilio($notifiable)
     {
         return (new TwilioSmsMessage())
@@ -1048,57 +734,29 @@ use Modules\Notify\Notifications\SMSFailureNotification;
 class SendNotificationWithRetryAction
 {
     use QueueableAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     // Configurazione della coda
     public $tries = 3;
     public $backoff = 60; // 1 minuto tra i tentativi
     public $queue = 'notifications';
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function execute($notifiable, $notification, array $options = [])
     {
         try {
             // Invio della notifica
             $notifiable->notify($notification);
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             // Registrazione del successo
             Log::info('Notifica inviata con successo', [
                 'notifiable_type' => get_class($notifiable),
                 'notifiable_id' => $notifiable->id,
                 'notification_class' => get_class($notification),
             ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             return true;
         } catch (\Exception $e) {
             // Registrazione dell'errore
@@ -1108,23 +766,14 @@ class SendNotificationWithRetryAction
                 'notification_class' => get_class($notification),
                 'attempt' => $options['attempt'] ?? 1,
             ]);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             
             // Incrementa il contatore di tentativi
             $attempt = ($options['attempt'] ?? 1) + 1;
             
-<<<<<<< HEAD
-=======
 
             // Incrementa il contatore di tentativi
             $attempt = ($options['attempt'] ?? 1) + 1;
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             // Se non abbiamo superato il numero massimo di tentativi, ritenta
             if ($attempt <= $this->tries) {
                 // Pianifica un nuovo tentativo dopo il backoff
@@ -1134,28 +783,14 @@ class SendNotificationWithRetryAction
                 // Invia notifica di fallimento via email se abbiamo esaurito i tentativi
                 $this->sendFailureNotification($notifiable, $notification);
             }
-<<<<<<< HEAD
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
             
->>>>>>> dev
             // Propaga l'eccezione per gestione esterna
             throw $e;
         }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     protected function sendFailureNotification($notifiable, $notification)
     {
         // Controlla se il notifiable ha un indirizzo email
@@ -1181,10 +816,6 @@ use Modules\Notify\Notifications\AppointmentReminder;
 class AppointmentService
 {
     public function sendReminders($appointments)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     {   
         $sendNotificationAction = app(SendNotificationWithRetryAction::class);
         
@@ -1192,8 +823,6 @@ class AppointmentService
             // Crea la notifica
             $notification = new AppointmentReminder($appointment);
             
-<<<<<<< HEAD
-=======
     {
         $sendNotificationAction = app(SendNotificationWithRetryAction::class);
 
@@ -1201,9 +830,6 @@ class AppointmentService
             // Crea la notifica
             $notification = new AppointmentReminder($appointment);
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             // Invia la notifica con gestione tentativi via Queueable Action
             // L'esecuzione sarà asincrona sulla coda 'notifications'
             $sendNotificationAction->onQueue('notifications')
@@ -1232,24 +858,14 @@ Quando si inviano SMS, è necessario rispettare le normative GDPR:
 public function toTwilio($notifiable)
 {
     return (new TwilioSmsMessage())
-<<<<<<< HEAD
-<<<<<<< HEAD
-        ->content("<nome progetto>: Promemoria appuntamento {$this->appointment->formatted_date}. 
-        Per annullare rispondere NO. Per info: <nome progetto>.it/privacy");
-        ->content("SaluteOra: Promemoria appuntamento {$this->appointment->formatted_date}. 
-        Per annullare rispondere NO. Per info: saluteora.it/privacy");
-=======
         ->content(": Promemoria appuntamento {$this->appointment->formatted_date}.
         Per annullare rispondere NO. Per info: <nome progetto>.it/privacy");
         ->content("<nome progetto>: Promemoria appuntamento {$this->appointment->formatted_date}.
         Per annullare rispondere NO. Per info: <nome progetto>.it/privacy");
->>>>>>> 4b6b99016 (first commit)
-=======
         ->content("<nome progetto>: Promemoria appuntamento {$this->appointment->formatted_date}. 
         Per annullare rispondere NO. Per info: <nome progetto>.it/privacy");
 ->content("Quaeris: Promemoria appuntamento {$this->appointment->formatted_date}. 
         Per annullare rispondere NO. Per info: Quaeris.it/privacy");
->>>>>>> dev
 }
 ```
 
@@ -1273,55 +889,27 @@ class ConsentLog extends Model
         'consent_text',
         'revoked_at',
     ];
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     protected $casts = [
         'consented_at' => 'datetime',
         'revoked_at' => 'datetime',
     ];
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function user()
     {
         return $this->belongsTo(User::class);
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function scopeActive($query)
     {
         return $query->whereNotNull('consented_at')
             ->whereNull('revoked_at');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     public function scopeForChannel($query, $channel)
     {
         return $query->where('channel', $channel);
@@ -1331,20 +919,11 @@ class ConsentLog extends Model
 
 ## Collegamenti alla Documentazione Correlata
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 - [MULTI_CHANNEL_NOTIFICATIONS.md](./multi_channel_notifications.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
-<<<<<<< HEAD
-=======
 - [MULTI_CHANNEL_NOTIFICATIONS.md](./MULTI_CHANNEL_NOTIFICATIONS.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./SMS_PROVIDER_CONFIGURATION.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./NOTIFICATIONS_IMPLEMENTATION_GUIDE.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./TELEGRAM_NOTIFICATIONS_GUIDE.md)
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

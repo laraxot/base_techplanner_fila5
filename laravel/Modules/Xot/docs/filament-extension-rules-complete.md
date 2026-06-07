@@ -2,15 +2,8 @@
 
 **Principio Fondamentale**: Mai estendere classi Filament direttamente - sempre usare classi XotBase
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2025-12-22
->>>>>>> 4b6b99016 (first commit)
-=======
 **Ultimo aggiornamento**: [DATE]
->>>>>>> dev
 
 ---
 

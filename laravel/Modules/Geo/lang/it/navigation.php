@@ -252,10 +252,6 @@ return [
         'public' => 'Pubblico',
         'private' => 'Privato',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Navigation',
     'plural_label' => 'Navigation (Plurale)',
     'fields' => [
@@ -278,9 +274,4 @@ return [
             'description' => '',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

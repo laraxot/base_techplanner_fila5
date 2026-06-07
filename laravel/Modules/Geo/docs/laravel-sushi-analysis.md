@@ -72,54 +72,26 @@ use Sushi\Sushi;
 class Comune extends Model
 {
     use Sushi;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Indica a Sushi di non utilizzare timestamps
      */
     public $timestamps = false;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Dimensione dei chunk per l'inserimento (ottimizzato per SQLite)
      */
     public $sushiInsertChunkSize = 50;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Cache duration in seconds (1 week)
      */
     protected const CACHE_TTL = 604800;
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Definisce le colonne del modello con i rispettivi tipi
      */
@@ -132,15 +104,8 @@ class Comune extends Model
         'codiceCatastale' => 'string',
         'popolazione' => 'integer'
     ];
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Definisce i cast per le colonne JSON
      */
@@ -149,15 +114,8 @@ class Comune extends Model
         'provincia' => 'array',
         'cap' => 'array',
     ];
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Ottiene i dati dal file JSON con caching
      */
@@ -165,28 +123,14 @@ class Comune extends Model
     {
         $path = module_path('Geo', 'resources/json/comuni.json');
         $cacheKey = 'geo_comuni_json_' . md5($path);
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return Cache::rememberForever($cacheKey, function () use ($path) {
             return json_decode(file_get_contents($path), true);
         });
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Indica a Sushi di memorizzare i dati nella cache
      */
@@ -194,15 +138,8 @@ class Comune extends Model
     {
         return true;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * File di riferimento per invalidare la cache
      */
@@ -210,15 +147,8 @@ class Comune extends Model
     {
         return module_path('Geo', 'resources/json/comuni.json');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Personalizza la tabella dopo la migrazione
      */
@@ -227,15 +157,8 @@ class Comune extends Model
         $table->index('nome');
         $table->index(['regione->codice', 'provincia->codice']);
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Scope per filtrare per regione
      */
@@ -244,15 +167,8 @@ class Comune extends Model
         return $query->where('regione->codice', $regionCode)
                      ->orderBy('nome');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Scope per filtrare per provincia
      */
@@ -261,15 +177,8 @@ class Comune extends Model
         return $query->where('provincia->codice', $provinceCode)
                      ->orderBy('nome');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Scope per cercare per nome
      */
@@ -277,10 +186,6 @@ class Comune extends Model
     {
         $query = $query->where('nome', 'like', '%' . $name . '%')
                        ->orderBy('nome');
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
                        
         if ($limit > 0) {
             $query->limit($limit);
@@ -289,8 +194,6 @@ class Comune extends Model
         return $query;
     }
     
-<<<<<<< HEAD
-=======
 
         if ($limit > 0) {
             $query->limit($limit);
@@ -299,9 +202,6 @@ class Comune extends Model
         return $query;
     }
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     /**
      * Scope per filtrare per CAP
      */
@@ -309,43 +209,22 @@ class Comune extends Model
     {
         return $query->whereJsonContains('cap', $cap);
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Verifica se il CAP è valido
      */
     public static function isValidCap(string $cap): bool
     {
         $cacheKey = 'geo_valid_cap_' . md5($cap);
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return Cache::remember($cacheKey, self::CACHE_TTL, function () use ($cap) {
             return static::byCap($cap)->exists();
         });
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Ottiene la gerarchia completa di un comune
      */
@@ -354,10 +233,6 @@ class Comune extends Model
         if (!$cap && !$comune) {
             return null;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         
         $cacheKey = 'geo_gerarchia_' . md5((string)$cap . (string)$comune);
         
@@ -378,8 +253,6 @@ class Comune extends Model
                 return null;
             }
             
-<<<<<<< HEAD
-=======
 
         $cacheKey = 'geo_gerarchia_' . md5((string)$cap . (string)$comune);
 
@@ -400,9 +273,6 @@ class Comune extends Model
                 return null;
             }
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
             return [
                 'regione' => $result->regione,
                 'provincia' => $result->provincia,
@@ -411,15 +281,8 @@ class Comune extends Model
             ];
         });
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Restituisce le regole di validazione per i form
      */
@@ -436,53 +299,30 @@ class Comune extends Model
             }],
         ];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Pulisce tutta la cache
      */
     public static function clearCache(): array
     {
         $clearedKeys = [];
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         // Pulisci la cache dei dati JSON
         $jsonCacheKey = 'geo_comuni_json_' . md5(module_path('Geo', 'resources/json/comuni.json'));
         Cache::forget($jsonCacheKey);
         $clearedKeys[] = $jsonCacheKey;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         
         // Pulisci la cache di Sushi
         static::clearSushiCache();
         $clearedKeys[] = 'sushi_cache';
         
-<<<<<<< HEAD
-=======
 
         // Pulisci la cache di Sushi
         static::clearSushiCache();
         $clearedKeys[] = 'sushi_cache';
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         // Pulisci le chiavi di cache specifiche
         $searchPatterns = [
             'geo_search_',
@@ -491,53 +331,30 @@ class Comune extends Model
             'geo_region_',
             'geo_province_',
         ];
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         foreach ($searchPatterns as $pattern) {
             for ($i = 0; $i < 10; $i++) {
                 $testKey = $pattern . md5((string)$i);
                 Cache::forget($testKey);
             }
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         
         return $clearedKeys;
     }
     
-<<<<<<< HEAD
-=======
 
         return $clearedKeys;
     }
 
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
     /**
      * Restituisce tutte le regioni
      */
     public static function getRegioni(): Collection
     {
         $cacheKey = 'geo_regioni_all';
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return Cache::remember($cacheKey, self::CACHE_TTL, function () {
             return static::query()
                 ->get(['regione'])
@@ -546,30 +363,16 @@ class Comune extends Model
                 ->values();
         });
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Restituisce tutte le province di una regione
      */
     public static function getProvinceByRegione(string $regioneCode): Collection
     {
         $cacheKey = 'geo_province_by_regione_' . $regioneCode;
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return Cache::remember($cacheKey, self::CACHE_TTL, function () use ($regioneCode) {
             return static::byRegion($regioneCode)
                 ->get(['provincia'])
@@ -578,30 +381,16 @@ class Comune extends Model
                 ->values();
         });
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Restituisce tutti i comuni di una provincia
      */
     public static function getCittaByProvincia(string $provinciaCode): Collection
     {
         $cacheKey = 'geo_citta_by_provincia_' . $provinciaCode;
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return Cache::remember($cacheKey, self::CACHE_TTL, function () use ($provinciaCode) {
             return static::byProvince($provinciaCode)
                 ->get(['nome'])
@@ -610,30 +399,16 @@ class Comune extends Model
                 ->values();
         });
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
     
->>>>>>> dev
     /**
      * Restituisce tutti i CAP di una città
      */
     public static function getCapByCitta(string $citta): Collection
     {
         $cacheKey = 'geo_cap_by_citta_' . md5($citta);
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 4b6b99016 (first commit)
-=======
         
->>>>>>> dev
         return Cache::remember($cacheKey, self::CACHE_TTL, function () use ($citta) {
             return static::where('nome', $citta)
                 ->get(['cap'])
@@ -789,13 +564,6 @@ Per procedere, si consiglia di:
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Documento creato il: 28/05/2025*  
-=======
 *Documento creato il: 28/05/2025*
->>>>>>> 4b6b99016 (first commit)
-=======
 *Documento creato il: 28/05/2025*  
->>>>>>> dev
 *Autore: Team <main module>*

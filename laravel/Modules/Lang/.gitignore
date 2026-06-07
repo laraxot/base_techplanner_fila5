@@ -96,11 +96,8 @@ Thumbs.db
 *.old2
 *.backup
 *.backup.*
-<<<<<<< HEAD
-=======
 *.backup-*
 *.backup_*
->>>>>>> dev
 *.bak
 *.bakcup
 *.new
@@ -117,11 +114,8 @@ Thumbs.db
 # ==============================================
 docs/phpstan/
 docs/cache/
-<<<<<<< HEAD
-=======
 docs/archive/
 docs/archive/**
->>>>>>> dev
 
 # ==============================================
 # OLD DIRECTORIES (LEGACY CLEANUP)
@@ -162,8 +156,6 @@ public_html
 # ==============================================
 # END OF LANG .GITIGNORE
 # ==============================================
-<<<<<<< HEAD
-=======
 lang/lang/
 _docs/
 _docs/
@@ -177,5 +169,3 @@ packages/lara-zeus/
 *.orig
 *.rej
 *~head
-
->>>>>>> dev

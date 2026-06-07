@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
 https://github.com/statikbe/laravel-filament-chained-translation-manager
 
 https://filamentphp.com/plugins/34ml-translatable-field
@@ -20,8 +16,6 @@ https://filamentphp.com/plugins/34ml-translatable-field
 ## Extra risorse da _docs
 
 (Nessun nuovo link da aggiungere: i link di _docs/filament.txt sono già presenti in questo file)
-<<<<<<< HEAD
-=======
 # Filament nel modulo Lang
 
 ## Scopo
@@ -133,6 +127,3 @@ Per dettagli completi, vedere: `laravel/docs/composer-merge-plugin.md`
 
 ---
 **Ultimo aggiornamento:** Gennaio 2026
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev

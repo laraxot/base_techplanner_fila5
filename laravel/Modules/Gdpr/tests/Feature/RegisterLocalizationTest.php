@@ -2,13 +2,9 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-/**
-=======
 namespace Modules\Gdpr\Tests\Feature;
 
 /*
->>>>>>> dev
  * Localization Tests for Registration Page.
  *
  * Tests that all supported locales have complete translations:

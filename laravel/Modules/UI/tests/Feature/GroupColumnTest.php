@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\UI\Tests\Feature;
-
->>>>>>> dev
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\View\ComponentAttributeBag;
 use Modules\UI\Filament\Tables\Columns\GroupColumn;

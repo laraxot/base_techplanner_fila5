@@ -24,11 +24,7 @@ Each module's composer.json should have:
 
 ### Modules with CORRECT configuration:
 - User ✓
-<<<<<<< HEAD
-- Quaeris ✓
-=======
 - healthcare_app ✓
->>>>>>> dev
 - UI ✓
 - Tenant ✓
 - Limesurvey ✓

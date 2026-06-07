@@ -1,11 +1,5 @@
 # Sessione PHPStan Completa - Tutti i Moduli
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **Data**: 2025-11-05
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 **Obiettivo**: Portare tutti i moduli a PHPStan Level 10 (0 errori)
 **Status**: ⏳ IN CORSO
 

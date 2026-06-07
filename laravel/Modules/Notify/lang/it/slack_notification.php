@@ -7,10 +7,6 @@ return [
         'label' => 'Slack Notification',
         'group' => 'Notifiche',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
     'label' => 'Slack Notification',
     'plural_label' => 'Slack Notification (Plurale)',
     'fields' => [
@@ -44,9 +40,4 @@ return [
             'label' => 'Elimina Slack Notification',
         ],
     ],
-<<<<<<< HEAD
-=======
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
 ];

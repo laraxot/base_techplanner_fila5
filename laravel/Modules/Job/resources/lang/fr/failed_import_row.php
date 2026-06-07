@@ -14,10 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -51,26 +47,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'import_batch_id' => [
-            'label' => 'ID du Lot d\'Importation',
-        ],
-        'row_index' => [
-            'label' => 'Index de Ligne',
-        ],
-        'errors' => [
-            'label' => 'Erreurs',
-        ],
-        'data' => [
-            'label' => 'Données',
-        ],
-        'created_at' => [
-            'label' => 'Créé À',
->>>>>>> 4b6b99016 (first commit)
-=======
->>>>>>> dev
         ],
     ],
     'actions' => [

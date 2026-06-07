@@ -139,18 +139,9 @@ Event::dispatch('user.action', [
    - Input validation
 
 ## Collegamenti Correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Header Components](./header_components.md)
-- [Security Best Practices](./security_best_practices.md)
-- [Session Management](./session_management.md) 
-=======
 - [Header Components](./HEADER_COMPONENTS.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md) 
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Header Components](./header_components.md)
 - [Security Best Practices](./security_best_practices.md)
 - [Session Management](./session_management.md) 
->>>>>>> dev

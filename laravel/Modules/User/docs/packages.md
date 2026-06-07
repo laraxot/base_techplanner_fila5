@@ -1,23 +1,9 @@
-<<<<<<< HEAD
-# Pacchetti del Modulo User
-
-## Pacchetti Utilizzati
-### Core
-<<<<<<< HEAD
-- [laraxot/module_xot_fila3](../xot/docs/packages.md) - Modulo base per funzionalità comuni
-- [laraxot/module_ui](../ui/docs/packages.md) - Componenti UI e temi
-- [laraxot/module_tenant_fila3](../tenant/docs/packages.md) - Gestione multi-tenant
-- [laraxot/module_xot_fila3](../xot/project_docs/packages.md) - Modulo base per funzionalità comuni
-- [laraxot/module_ui](../ui/project_docs/packages.md) - Componenti UI e temi
-- [laraxot/module_tenant_fila3](../tenant/project_docs/packages.md) - Gestione multi-tenant
-=======
 - [laraxot/module_xot_fila3](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila3](../Tenant/docs/packages.md) - Gestione multi-tenant
 - [laraxot/module_xot_fila3](../Xot/project_docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/project_docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila3](../Tenant/project_docs/packages.md) - Gestione multi-tenant
->>>>>>> 4b6b99016 (first commit)
 ### Autenticazione
 - [laravel/fortify](https://github.com/laravel/fortify)
   - Autenticazione
@@ -58,26 +44,6 @@
 - [Performance](packages/performance.md)
 ### Versione HEAD
 ## Collegamenti tra versioni di packages.md
-<<<<<<< HEAD
-* [packages.md](../../../gdpr/docs/packages.md)
-* [packages.md](../../../notify/docs/packages.md)
-* [packages.md](../../../xot/docs/packages.md)
-* [packages.md](../../../user/docs/packages.md)
-* [packages.md](../../../ui/docs/packages.md)
-* [packages.md](../../../lang/docs/packages.md)
-* [packages.md](../../../job/docs/packages.md)
-* [packages.md](../../../media/docs/packages.md)
-* [packages.md](../../../tenant/docs/packages.md)
-* [packages.md](../../../gdpr/project_docs/packages.md)
-* [packages.md](../../../notify/project_docs/packages.md)
-* [packages.md](../../../xot/project_docs/packages.md)
-* [packages.md](../../../user/project_docs/packages.md)
-* [packages.md](../../../ui/project_docs/packages.md)
-* [packages.md](../../../lang/project_docs/packages.md)
-* [packages.md](../../../job/project_docs/packages.md)
-* [packages.md](../../../media/project_docs/packages.md)
-* [packages.md](../../../tenant/project_docs/packages.md)
-=======
 * [packages.md](../../../Gdpr/docs/packages.md)
 * [packages.md](../../../Notify/docs/packages.md)
 * [packages.md](../../../Xot/docs/packages.md)
@@ -96,10 +62,8 @@
 * [packages.md](../../../Job/project_docs/packages.md)
 * [packages.md](../../../Media/project_docs/packages.md)
 * [packages.md](../../../Tenant/project_docs/packages.md)
->>>>>>> 4b6b99016 (first commit)
 ### Versione Incoming
 ---
-=======
 ---
 module: theme
 topic: packages
@@ -107,4 +71,3 @@ canonical: ../../../Themes/docs/shared-components/packages.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/packages.md
->>>>>>> dev

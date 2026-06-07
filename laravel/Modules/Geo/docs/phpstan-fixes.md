@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PHPStan Fixes for Geo Module
 
 This document outlines the PHPStan-related fixes and improvements made to the Geo module to ensure type safety and code quality at PHPStan level 9.
@@ -67,15 +66,12 @@ All changes have been verified with PHPStan level 9. To run the analysis:
 ## Related Documentation
 
 - [PHPStan Documentation](https://phpstan.org/)
-<<<<<<< HEAD
 - [Laravel Data Documentation](https://spatie.be/project_docs/laravel-data/v3/introduction)
 - [Geo Module Architecture](architecture.md)
 
 
 --- Merged from phpstan-fixes-2025-01-27.md ---
 
-=======
->>>>>>> dev
 # Correzioni PHPStan Modulo Geo - 2025-01-27
 
 **Data**: 2025-01-27  
@@ -165,10 +161,6 @@ Il widget fa parte del piano di migrazione a Filament 4.x documentato in:
 
 - [Documentazione Compatibilità Filament 4.x](./filament_4x_compatibility.md)
 - [Documentazione Widget Disabilitati](./widgets/disabled_widgets.md)
-<<<<<<< HEAD
-- [Piano Migrazione Filament](../../docs/filament_4x_migration_plan.md)
-
-=======
 - [Laravel Data Documentation](https://spatie.be/docs/laravel-data/v3/introduction)
 - [Geo Module Architecture](architecture.md)
 # PHPStan Fixes for Geo Module
@@ -241,9 +233,6 @@ All changes have been verified with PHPStan level 9. To run the analysis:
 - [PHPStan Documentation](https://phpstan.org/)
 - [Laravel Data Documentation](https://spatie.be/docs/laravel-data/v3/introduction)
 - [Geo Module Architecture](architecture.md)
->>>>>>> 4b6b99016 (first commit)
-=======
 - [Piano Migrazione Filament](../../../docs/filament_4x_migration_plan.md)
 
 *Ultimo aggiornamento: 2025-01-27*
->>>>>>> dev
