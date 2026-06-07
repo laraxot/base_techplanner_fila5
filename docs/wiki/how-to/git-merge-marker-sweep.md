@@ -119,12 +119,23 @@ bash ./tools/post-edit-php.sh Modules/<Modulo>/path/to/File.php [Modules/<Modulo
 
 Esegue in sequenza: **PHPStan** → **PHPMD** (`phpmd.xml`) → **PHPInsights** → **Pest** (path modulo opzionale).
 
+## Orphan marker (senza `<<<<<<<` in testa)
+
+Dopo sweep automatico possono restare righe `>>>>>>> sha` o `=======` orfane in `.md` / `.backup`:
+
+```bash
+python3 bashscripts/tools/git/resolve-conflict-markers.py
+# oppure strip mirato — vedi memoria git-collision-sweep-complete.md
+find laravel/Themes -name '*.backup' -delete
+```
+
 ## Post-risoluzione
 
-1. Aggiornare `docs/wiki/log.md`
+1. Aggiornare `docs/wiki/log.md` o memoria `git-collision-sweep-complete.md`
 2. `git add` file risolti
 3. Completare merge: `git commit` (solo su richiesta utente)
 4. `post-edit-php.sh` su ogni file PHP toccato
+5. `UserMigrationSyntaxTest` (118 test) come rete sicurezza migrazioni User
 
 ## Anti-pattern
 
