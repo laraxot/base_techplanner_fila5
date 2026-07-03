@@ -424,6 +424,9 @@ class Page extends BaseModelLang
         'updated_by' => 'string',
     ];
 
+    /**
+     * @return array<int, array<string, mixed>>
+     */
     public function getRows(): array
     {
         return $this->getSushiRows();
@@ -438,6 +441,9 @@ class Page extends BaseModelLang
         }
     }
 
+    /**
+     * @return array<array-key, mixed>
+     */
     public static function getMiddlewareBySlug(string $slug): array
     {
         $page = self::findUniqueBySlug($slug);

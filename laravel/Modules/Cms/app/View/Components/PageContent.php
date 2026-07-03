@@ -13,6 +13,7 @@ use Webmozart\Assert\Assert;
 
 class PageContent extends Component
 {
+    /** @var array<array-key, BlockData> */
     public array $blocks = [];
 
     public function __construct(public string $slug)

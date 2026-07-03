@@ -21,14 +21,14 @@ final class Page extends Component
 
     public string $slug = '';
 
-    /** @var DataCollection<BlockData>|array */
+    /** @var DataCollection<int, BlockData>|array<string, BlockData> */
     public DataCollection|array $blocks;
 
     /** @var array<string, mixed> */
     public array $data = [];
 
     /**
-     * @param array<string, mixed> $data Opaque context bag (container0, slug0, models, …)
+     * @param  array<string, mixed>  $data  Opaque context bag (container0, slug0, models, …)
      */
     public function __construct(
         string $side = 'content',
@@ -39,15 +39,15 @@ final class Page extends Component
         $this->side = $side;
         $this->data = $data;
 
-        if (null === $slug && isset($data['slug'])) {
+        if ($slug === null && isset($data['slug'])) {
             $slug = (string) $data['slug'];
         }
 
-        if (null === $slug) {
+        if ($slug === null) {
             $slug = '';
         }
 
-        if (null !== $type) {
+        if ($type !== null) {
             $slug = $type.'-'.$slug;
         }
 
