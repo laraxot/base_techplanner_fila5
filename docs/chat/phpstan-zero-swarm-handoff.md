@@ -228,3 +228,35 @@ issue.
   `laravel/` superproject). Commented status on issue
   [laraxot/module_ui_fila5#5](https://github.com/laraxot/module_ui_fila5/issues/5).
 - No new second-brain pattern needed beyond the existing `missingType.iterableValue` memory entry.
+
+### Cms
+
+- Baseline (this session start): 35 `missingType.iterableValue` errors remaining in `Modules/Cms`
+  (prior swarm sessions had already fixed part of the module — see
+  `git log --oneline -- Modules/Cms` for `fix: add array shape docblocks to ...Cms...` commits).
+- Fixed all 35: added precise `@method`/`@property`/`@param`/`@return` array shapes to
+  `Menu`, `Page`, `PageContent`, `Section`, `Module`, `BaseTreeModel` models (batch-committed
+  earlier in the swarm as part of commit `227aabe0`), plus in this pass:
+  `Page::getRows()` / `Page::getMiddlewareBySlug()`, `Module::getRows()`,
+  `HasBlocks::compile()` param, `View\Components\Page::$blocks`,
+  `View\Components\PageContent::$blocks`, `View\Composers\ThemeComposer::getMenuUrl()`
+  (both the live `app/View/Composers/ThemeComposer.php` and an orphan duplicate class at
+  `resources/views/Composers/ThemeComposer.php` — same FQCN, not autoloaded, but still
+  scanned by phpstan since it's under `Modules/`), and `MenuFactory::definition()`.
+- Result: **0 `missingType.iterableValue`** in `Modules/Cms`. 15 errors remain, all pre-existing
+  and out of scope for this task (`missingType.generics` x11, `argument.type` x2 in `HasBlocks`
+  in the context of `Page`/`Section`, 1 more `missingType.generics` in `AttachmentFactory` and
+  the orphan `ThemeComposer`).
+- Verified with `./vendor/bin/phpstan analyse Modules/Cms --memory-limit=-1 --error-format=json`
+  and `./vendor/bin/pint` (scoped to the 8 touched files — running bare `pint Modules/Cms`
+  reformats the *entire* module including unrelated files still mid-edit by other swarm agents;
+  always scope pint to your own changed files during the swarm, not the whole module).
+- Hit a transient full-repo PHPStan bootstrap failure (`syntax error, unexpected token "<<"`)
+  caused by another concurrent agent leaving literal `<<<<<<<` conflict markers across
+  `Modules/UI/**` mid-edit — not caused by this session, resolved itself once that agent's
+  edit completed; retried until clean. No `Modules/UI` files touched here.
+- No new second-brain pattern needed; the existing `missingType.iterableValue` memory entry
+  and `phpstan-modules-sweep-2026-07-01.md` already cover this fix category.
+- `laravel/Modules/Cms` has no separate git remote (`git remote -v` from `laravel/Modules/Cms`
+  is empty — it's part of the `laraxot/base_techplanner_fila5` superproject checkout, not its
+  own submodule/subtree), so no separate GitHub issue comment was posted; tracked here only.
