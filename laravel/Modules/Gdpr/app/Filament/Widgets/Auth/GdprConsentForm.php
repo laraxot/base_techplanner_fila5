@@ -105,6 +105,9 @@ class GdprConsentForm extends XotBaseSchemaWidget
         return 'filament.widgets.auth.register';
     }
 
+    /**
+     * @param  array<string, mixed>  $formData
+     */
     protected function logRegistrationAttempt(array $formData): void
     {
         $email = app(SafeStringCastAction::class)->execute($formData['email']);
