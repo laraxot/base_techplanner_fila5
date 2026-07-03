@@ -91,4 +91,10 @@ laravel/coverage_report/
 laravel/coverage_xml/
 tests/coverage/
 coverage/
-coverage.xml/ruvector.db
+coverage.xml/ruvector.db.vscode/
+.vscode.backup-20260120_154353/
+.agent/
+.vscode/
+.vscode*/
+.vscode
+.agent
