@@ -9,14 +9,13 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\User\Contracts\HasShieldPermissions;
 use Modules\User\Datas\FilamentShieldData;
-
-use function Safe\class_implements;
-use function Safe\class_uses;
-
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Traits\HasRoles;
 use Webmozart\Assert\Assert;
+
+use function Safe\class_implements;
+use function Safe\class_uses;
 
 /**
  * ---.
@@ -133,6 +132,9 @@ class Utils
         return FilamentShieldData::make()->filament_user->name;
     }
 
+    /**
+     * @return array<array-key, mixed>
+     */
     public static function getGeneralResourcePermissionPrefixes(): array
     {
         Assert::isArray($res = config('filament-shield.permission_prefixes.resource'), 'wip');
@@ -209,6 +211,9 @@ class Utils
         config(['filament-shield.exclude.enabled' => false]);
     }
 
+    /**
+     * @return array<array-key, mixed>
+     */
     public static function getExcludedResouces(): array
     {
         Assert::isArray($res = config('filament-shield.exclude.resources'));
@@ -216,6 +221,9 @@ class Utils
         return $res;
     }
 
+    /**
+     * @return array<array-key, mixed>
+     */
     public static function getExcludedPages(): array
     {
         Assert::isArray($res = config('filament-shield.exclude.pages'));
@@ -223,6 +231,9 @@ class Utils
         return $res;
     }
 
+    /**
+     * @return array<array-key, mixed>
+     */
     public static function getExcludedWidgets(): array
     {
         Assert::isArray($res = config('filament-shield.exclude.widgets'));
@@ -254,6 +265,9 @@ class Utils
             : '';
     }
 
+    /**
+     * @return array<array-key, mixed>
+     */
     public static function getResourcePermissionPrefixes(string $resourceFQCN): array
     {
         $res = static::doesResourceHaveCustomPermissions($resourceFQCN)

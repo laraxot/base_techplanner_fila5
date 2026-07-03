@@ -33,8 +33,10 @@ class MyProfilePage extends XotBasePage implements HasSchemas
 {
     use InteractsWithSchemas;
 
+    /** @var array<string, mixed>|null */
     public ?array $profileData = [];
 
+    /** @var array<string, mixed>|null */
     public ?array $passwordData = [];
 
     protected string $view = 'user::filament.pages.my-profile';
@@ -246,6 +248,9 @@ class MyProfilePage extends XotBasePage implements HasSchemas
      * }
      */
 
+    /**
+     * @return array<int, Action>
+     */
     protected function getUpdateProfileFormActions(): array
     {
         return [
@@ -253,6 +258,9 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         ];
     }
 
+    /**
+     * @return array<int, Action>
+     */
     protected function getUpdatePasswordFormActions(): array
     {
         return [
@@ -263,7 +271,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     // ...
 
     /**
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {
