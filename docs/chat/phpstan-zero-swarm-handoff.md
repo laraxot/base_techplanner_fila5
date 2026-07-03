@@ -260,3 +260,52 @@ issue.
 - `laravel/Modules/Cms` has no separate git remote (`git remote -v` from `laravel/Modules/Cms`
   is empty — it's part of the `laraxot/base_techplanner_fila5` superproject checkout, not its
   own submodule/subtree), so no separate GitHub issue comment was posted; tracked here only.
+
+## Swarm session update (2026-07-03, missingType.iterableValue — Gdpr/TechPlanner/Employee)
+
+### Gdpr
+- Baseline: 7 `missingType.iterableValue` errors. After: 0.
+- Files fixed: `ConsentInfolist.php`, `ProfileInfolist.php` (added `@return array<string, Component>`),
+  `ConsentResource.php::getTableColumns()` (added `@return array<int|string, TextColumn>`),
+  `GdprConsentForm.php` / `RegisterWidget.php::logRegistrationAttempt()` (added `@param array<string, mixed> $formData`),
+  `Profile.php` (`@method childrenWith(array<int, string> $relations)` / `childrenWithCount(...)`).
+- Note: `ConsentInfolist.php` fix was already applied concurrently by another swarm agent by the time
+  this agent got to it (no conflict, same fix).
+- Remaining Gdpr errors (out of scope for this phase): `missingType.generics` (Consent/Event relations,
+  factories) and `larastan.noEnvCallsOutsideOfConfig` (config/config.php, config/consent.php) — Phase 2/3 work.
+
+### TechPlanner
+- Baseline: 6 `missingType.iterableValue` errors. After: 0.
+- Files fixed: `ClientMapWidget.php::getData()` (`@return array<string, mixed>`),
+  `Client.php` (`@method update(array<string, mixed> $values)`),
+  `MedicalDirector.php` (`@method array<string, mixed> toArray()`),
+  `EventResource.php` / `LocationResource.php` / `ParticipantResource.php::toArray()`
+  (added `@return array<string, mixed>`).
+- Transient environment issue during verification: a concurrent swarm agent had a mid-merge-conflict
+  state in `Modules/UI` (many files with `<<<<<<< HEAD` markers, including one non-test file
+  `Modules/UI/app/Rules/OpeningHoursRule.php`), which broke the Filament panel bootstrap that
+  `phpstan analyse` needs even when only targeting `Modules/TechPlanner`. Waited ~3 minutes for the
+  other agent to resolve; conflicts cleared from app code (some lingered in `Modules/UI/tests/*`,
+  which don't affect bootstrap). Re-ran clean after that.
+
+### Employee
+- Prior session already fixed 12→0 Employee PHPStan errors (widget `#[Override]`, duplicate page,
+  `array_sum` typing) — see "Employee (12 errori → 0)" section above. Re-measured 2026-07-03:
+  5 NEW `missingType.iterableValue` errors had appeared since (module actively developed:
+  `Dashboard.php`, `WorkHoursBoardWidget.php`).
+- Baseline (this session): 5 `missingType.iterableValue` errors. After: 0.
+- Files fixed: `Dashboard.php::getWidgetsColumns()` (`@return int|array<string, int>`),
+  `WorkHoursBoardWidget.php` (`@var array<string, mixed>` on `$weekData`, `$timelineData`,
+  `$employeeInfo`, `$summaryData`).
+
+### Cross-module note
+- `php artisan test` was unusable during this session due to an unrelated concurrent-swarm breakage:
+  `Modules/Activity/tests/TestCase.php::getPackageProviders()` signature incompatible with
+  `Modules\Xot\Tests\XotBaseTestCase` (another agent's in-flight edit). Not caused by, or fixed by,
+  this session's changes — verification here relied on `phpstan analyse <module>` only (per-file
+  `missingType.iterableValue` count went to 0 in all three modules, confirmed via JSON error-format).
+- No `.lock` files left behind by this session in Gdpr/TechPlanner/Employee.
+- No new second-brain pattern needed; the `array<string, mixed>` / `array<K, V>` shape pattern for
+  Filament schema arrays, `toArray()` transformers, and Livewire component properties matches the
+  existing convention already used across Blog/User/Activity/Rating/Cms modules (grepped for
+  `@return array<string, Component>` and `@method static array<...> toArray()` as reference before fixing).
