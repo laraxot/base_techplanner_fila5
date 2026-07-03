@@ -27,6 +27,8 @@ class EsendexSendAction
 
     /**
      * Sends an SMS message.
+     *
+     * @return array<int|string, mixed>
      */
     public function execute(SmsData $smsData): array
     {
@@ -87,6 +89,8 @@ class EsendexSendAction
     /**
      * Authenticates the user given it's username and password.
      * Returns the pair user_key, Session_key.
+     *
+     * @return list<string>|null
      */
     public function login(): ?array
     {

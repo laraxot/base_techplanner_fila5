@@ -9,10 +9,12 @@ declare(strict_types=1);
 namespace Modules\UI\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
+use Filament\Widgets\Widget;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 abstract class RowWidget extends XotBaseSchemaWidget
 {
+    /** @var array<int, Widget> */
     public array $widgets = [];
 
     protected string $view = 'ui::filament.widgets.row';

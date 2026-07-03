@@ -8,13 +8,23 @@ use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use Modules\Blog\Actions\Category\GetBloodline;
 use Modules\Blog\Models\Article;
+use Modules\Blog\Models\Category;
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
 
 class ArticleData extends Data implements \Stringable
 {
-    public string $title;
+    public string ;
 
+    /**
+     *  array<string, mixed>|string           
+     *  array<int, array<string, mixed>>|null 
+     *  array<string, mixed>|null             
+     *  array<string, mixed>|null             
+     *  Collection<int, Category>|null        
+     *  array<int, array<string, mixed>>|null 
+     *  Collection<int, string>|null          
+     */
     public function __construct(
         public string $id,
         public string $uuid,
@@ -77,6 +87,9 @@ class ArticleData extends Data implements \Stringable
         return '['.__LINE__.']['.__FILE__.']';
     }
 
+    /**
+     *  Collection<int, Category>
+     */
     public function getCategories(): Collection
     {
         return app(GetBloodline::class)->execute($this->category_id);

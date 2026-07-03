@@ -17,12 +17,17 @@ use Modules\Xot\Actions\Cast\SafeArrayByModelCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * @implements WithMapping<Model>
+ */
 class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, WithMapping
 {
     use Exportable;
 
+    /** @var Collection<int, Model> */
     public Collection $collection;
 
+    /** @var array<int, string> */
     public array $headings;
 
     public ?string $transKey;
@@ -31,7 +36,8 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     public ?array $fields = null;
 
     /**
-     * @param array<int, string> $fields
+     * @param  Collection<int, Model>  $collection
+     * @param  array<int, string>  $fields
      */
     public function __construct(Collection $collection, ?string $transKey = null, array $fields = [])
     {
@@ -40,6 +46,9 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
         $this->fields = $fields;
     }
 
+    /**
+     * @return array<int, string>
+     */
     public function getHead(): array
     {
         if (\is_array($this->fields) && ! empty($this->fields)) {
@@ -52,6 +61,9 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
         return array_keys($head->getAttributes());
     }
 
+    /**
+     * @return array<int|string, string>
+     */
     public function headings(): array
     {
         $headings = $this->getHead();
@@ -60,14 +72,20 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
         return app(TransArrayAction::class)->execute($headings, $transKey);
     }
 
+    /**
+     * @return Collection<int, Model>
+     */
     public function collection(): Collection
     {
         return $this->collection;
     }
 
+    /**
+     * @return array<int|string, mixed>
+     */
     public function map(mixed $row): array
     {
-        if (null === $this->fields || empty($this->fields)) {
+        if ($this->fields === null || empty($this->fields)) {
             Assert::isInstanceOf($row, Model::class);
             $res = app(SafeArrayByModelCastAction::class)->execute($row);
 

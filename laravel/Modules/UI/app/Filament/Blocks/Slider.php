@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\UI\Filament\Blocks;
 
 use Filament\Forms\Components\Builder\Block;
+use Filament\Forms\Components\Component;
 use Filament\Forms\Components\Radio;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
@@ -33,6 +34,9 @@ final class Slider
             ->columns(1);
     }
 
+    /**
+     * @return array<string, Component>
+     */
     public static function getFormSchema(): array
     {
         return [

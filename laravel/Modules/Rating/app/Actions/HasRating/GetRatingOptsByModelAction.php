@@ -13,6 +13,8 @@ class GetRatingOptsByModelAction
 
     /**
      * Undocumented function.
+     *
+     * @return array<int, string|null>
      */
     public function execute(HasRatingContract $model): array
     {

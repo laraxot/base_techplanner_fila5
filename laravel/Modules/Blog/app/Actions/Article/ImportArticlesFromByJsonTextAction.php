@@ -8,12 +8,11 @@ use Carbon\Carbon;
 use Illuminate\Support\Str;
 use Modules\Blog\Models\Article;
 use Modules\Blog\Models\Category;
-
-use function Safe\json_decode;
-
 use Spatie\MediaLibrary\MediaCollections\FileAdder;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+
+use function Safe\json_decode;
 
 class ImportArticlesFromByJsonTextAction
 {
@@ -43,11 +42,11 @@ class ImportArticlesFromByJsonTextAction
             }
 
             $parent_category_id = null;
-            /** @var array $categories */
+            /** @var array<int, array<string, mixed>> $categories */
             $categories = $j['category'] ?? [];
             Assert::isArray($categories, 'Category must be an array');
 
-            /** @var array $cat */
+            /** @var array<string, mixed> $cat */
             foreach ($categories as $cat) {
                 // dddx($category);
                 Assert::isArray($cat, 'Category item must be an array');
@@ -73,7 +72,7 @@ class ImportArticlesFromByJsonTextAction
                 'title' => $j['title'],
                 'slug' => $j['slug'],
                 'status' => $j['status'],
-                'status_display' => 'open' === $j['status_display'],
+                'status_display' => $j['status_display'] === 'open',
                 'bet_end_date' => $bet_end_date,
                 'event_start_date' => $event_start_date,
                 'event_end_date' => $event_end_date,
@@ -96,9 +95,9 @@ class ImportArticlesFromByJsonTextAction
 
             $article = Article::firstOrCreate($article_where, $article_data);
 
-            /** @var array $outcomes */
+            /** @var array<int, array<string, mixed>> $outcomes */
             $outcomes = $j['outcomes'];
-            /** @var array $rating */
+            /** @var array<string, mixed> $rating */
             foreach ($outcomes as $rating) {
                 $rating_where = [
                     'title' => $rating['title'] ?? '',

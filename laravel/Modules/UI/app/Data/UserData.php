@@ -14,8 +14,9 @@ final class UserData extends Data
         public string $email,
         public ?string $avatar,
         public ?string $role,
+        /** @var list<string> */
         public array $permissions,
+        /** @var array<string, mixed> */
         public array $settings,
-    ) {
-    }
+    ) {}
 }

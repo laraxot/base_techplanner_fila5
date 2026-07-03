@@ -39,6 +39,9 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
         return $this === self::LIST;
     }
 
+    /**
+     * @return array<string, int>|null
+     */
     public function getTableContentGrid(): ?array
     {
         return $this->isGridLayout()
@@ -52,11 +55,19 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
             : null;
     }
 
+    /**
+     * @param  array<int, mixed>  $listColumns
+     * @param  array<int, mixed>  $gridColumns
+     * @return array<int, mixed>
+     */
     public function getTableColumns(array $listColumns, array $gridColumns): array
     {
         return $this->isGridLayout() ? $gridColumns : $listColumns;
     }
 
+    /**
+     * @return array<string, string>
+     */
     public static function getOptions(): array
     {
         return [

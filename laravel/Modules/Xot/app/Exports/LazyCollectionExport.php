@@ -16,10 +16,14 @@ use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\WithMapping;
 use Modules\Lang\Actions\TransCollectionAction;
 
+/**
+ * @implements WithMapping<mixed>
+ */
 class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, WithMapping
 {
     use Exportable;
 
+    /** @var array<int, string> */
     public array $headings;
 
     public ?string $transKey;
@@ -28,7 +32,8 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
     public array $fields = [];
 
     /**
-     * @param array<int, string> $fields
+     * @param  LazyCollection<int, mixed>  $collection
+     * @param  array<int, string>  $fields
      */
     public function __construct(
         public LazyCollection $collection,
@@ -67,20 +72,26 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
          */
     }
 
+    /**
+     * @return Collection<int, int|string>
+     */
     public function getHead(): Collection
     {
         if (! empty($this->fields)) {
-            return collect($this->fields);
+            /** @var list<int|string> $fields */
+            $fields = $this->fields;
+
+            return collect($fields);
         }
 
         $head = $this->collection->first();
         $headArray = $this->normalizeRow($head);
 
-        return collect($headArray)->keys();
+        return collect(array_keys($headArray));
     }
 
     /**
-     * @return array<int, string>
+     * @return array<int|string, mixed>
      */
     public function headings(): array
     {
@@ -91,6 +102,9 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
         return $headings->toArray();
     }
 
+    /**
+     * @return LazyCollection<int, mixed>
+     */
     public function collection(): LazyCollection
     {
         return $this->collection;
@@ -98,8 +112,10 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
 
     /**
      * Returns an iterator for the current collection.
+     *
+     * @return Iterator<int, mixed>
      */
-    public function iterator(): \Iterator
+    public function iterator(): Iterator
     {
         return new \ArrayIterator(iterator_to_array($this->collection->getIterator(), false));
     }
@@ -109,7 +125,7 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
      */
     private function normalizeRow(mixed $row): array
     {
-        if (null === $row) {
+        if ($row === null) {
             return [];
         }
 

@@ -14,17 +14,17 @@ use Spatie\Translatable\HasTranslations;
 /**
  * Modules\Cms\Models\PageContent.
  *
- * @property string                       $id
+ * @property string $id
  * @property array<array-key, mixed>|null $name
- * @property string|null                  $slug
+ * @property string|null $slug
  * @property array<array-key, mixed>|null $blocks
- * @property Carbon|null                  $created_at
- * @property Carbon|null                  $updated_at
- * @property string|null                  $created_by
- * @property string|null                  $updated_by
- * @property ProfileContract|null         $creator
- * @property mixed                        $translations
- * @property ProfileContract|null         $updater
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property ProfileContract|null $creator
+ * @property mixed $translations
+ * @property ProfileContract|null $updater
  *
  * @method static Builder<static>|PageContent newModelQuery()
  * @method static Builder<static>|PageContent newQuery()
@@ -34,19 +34,19 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|PageContent whereCreatedBy($value)
  * @method static Builder<static>|PageContent whereId($value)
  * @method static Builder<static>|PageContent whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
- * @method static Builder<static>|PageContent whereJsonContainsLocales(string $column, array $locales, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|PageContent whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
  * @method static Builder<static>|PageContent whereLocale(string $column, string $locale)
- * @method static Builder<static>|PageContent whereLocales(string $column, array $locales)
+ * @method static Builder<static>|PageContent whereLocales(string $column, array<int, string> $locales)
  * @method static Builder<static>|PageContent whereName($value)
  * @method static Builder<static>|PageContent whereSlug($value)
  * @method static Builder<static>|PageContent whereUpdatedAt($value)
  * @method static Builder<static>|PageContent whereUpdatedBy($value)
- * @method static int                         count()
+ * @method static int count()
  *
  * @property ProfileContract|null $deleter
  *
- * @method static PageContentFactory               factory($count = null, $state = [])
- * @method        array<int, array<string, mixed>> getSushiRows()
+ * @method static PageContentFactory factory($count = null, $state = [])
+ * @method array<int, array<string, mixed>> getSushiRows()
  *
  * @mixin \Eloquent
  */

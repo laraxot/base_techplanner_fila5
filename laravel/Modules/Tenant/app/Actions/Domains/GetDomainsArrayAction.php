@@ -15,6 +15,9 @@ class GetDomainsArrayAction
 {
     use QueueableAction;
 
+    /**
+     * @return array<int, array{id: string, name: string}>
+     */
     public function execute(): array
     {
         $res = $this->recurse(config_path());
@@ -26,9 +29,12 @@ class GetDomainsArrayAction
         ]);
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function recurse(string $path): array
     {
-        $filesystem = new Filesystem;
+        $filesystem = new Filesystem();
         $directories = $filesystem->directories($path);
         $res = [];
         foreach ($directories as $dir) {
@@ -46,6 +52,10 @@ class GetDomainsArrayAction
         return $res;
     }
 
+    /**
+     * @param  array<string, mixed>  $data
+     * @return list<string>
+     */
     public function collapse(array $data, string $k = ''): array
     {
         $res = [];

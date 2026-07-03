@@ -13,7 +13,10 @@ class GetBloodline
 {
     use QueueableAction;
 
-    public function execute(?int $category_id): Collection
+    /**
+     *  Collection<int, Category>
+     */
+    public function execute(?int ): Collection
     {
         if (null === $category_id) {
             return collect([]);

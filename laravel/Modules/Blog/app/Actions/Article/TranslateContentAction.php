@@ -31,12 +31,12 @@ class TranslateContentAction
         Assert::isInstanceOf($model, $class, '['.__LINE__.']['.__FILE__.']');
         /** @var Article $model */
 
-        /** @var array $model_contents */
+        /** @var array<string, mixed> $model_contents */
         $model_contents = $model->toArray();
         Assert::isArray($model_contents, '['.__LINE__.']['.__FILE__.']');
 
         if ($data['content_blocks'] ?? false) {
-            /** @var array $model_content */
+            /** @var array<string, mixed> $model_content */
             $model_content = $model_contents['content_blocks'];
 
             // per ora do per scontato che la traduzione italiana esista
@@ -49,7 +49,7 @@ class TranslateContentAction
         }
 
         if ($data['sidebar_blocks'] ?? false) {
-            /** @var array $model_content */
+            /** @var array<string, mixed> $model_content */
             $model_content = $model_contents['sidebar_blocks'];
 
             // per ora do per scontato che la traduzione italiana esista
@@ -58,11 +58,11 @@ class TranslateContentAction
                     $model_content[$locale] = $model_content['it'] ?? [];
                 }
             }
-            $model->sidebar_blocks = $model_content;
+            ->sidebar_blocks = json_encode(, JSON_THROW_ON_ERROR);
         }
 
         if ($data['footer_blocks'] ?? false) {
-            /** @var array $model_content */
+            /** @var array<string, mixed> $model_content */
             $model_content = $model_contents['footer_blocks'];
 
             // per ora do per scontato che la traduzione italiana esista
@@ -71,7 +71,7 @@ class TranslateContentAction
                     $model_content[$locale] = $model_content['it'] ?? [];
                 }
             }
-            $model->footer_blocks = $model_content;
+            ->footer_blocks = json_encode(, JSON_THROW_ON_ERROR);
         }
 
         $model->update();
