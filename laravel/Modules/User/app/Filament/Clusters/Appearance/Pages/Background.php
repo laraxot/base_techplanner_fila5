@@ -88,6 +88,9 @@ class Background extends XotBasePage
         $this->form->fill($data);
     }
 
+    /**
+     * @return array<int, Action>
+     */
     protected function getUpdateFormActions(): array
     {
         return [
@@ -96,7 +99,7 @@ class Background extends XotBasePage
     }
 
     /**
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {

@@ -95,6 +95,9 @@ class Alignment extends XotBasePage
         $this->form->fill($data);
     }
 
+    /**
+     * @return array<int, Action>
+     */
     protected function getUpdateFormActions(): array
     {
         return [
@@ -103,7 +106,7 @@ class Alignment extends XotBasePage
     }
 
     /**
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {
