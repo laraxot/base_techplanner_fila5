@@ -202,3 +202,29 @@ Second-brain: the "Spatie LaravelData class-level vs constructor-level @param" p
 yet in `bashscripts/ai/wiki/memories/phpstan-missing-type-patterns-2026-06.md` — worth adding since
 Xot/Blog/Cms all use this Data pattern heavily and other modules will likely hit the same silent-ignore
 issue.
+
+### UI
+
+- Baseline: 34 `missingType.iterableValue` errors in `Modules/UI` (module-scoped phpstan run).
+- Fixed all 34, across 19 files: `app/Data/UserData.php`, `app/Datas/UserData.php`,
+  `app/Enums/TableLayoutEnum.php`, `app/Filament/Blocks/{Category,Contact,ImagesGallery,Page,Post,Slider}.php`,
+  `app/Filament/Forms/Components/{EnumSelect,LocationSelector,YearSelect}.php`,
+  `app/Filament/Widgets/{OverlookWidget,RowWidget,StatWithIconWidget,UserCalendarWidget}.php`,
+  `app/Forms/Components/RadioCardSelector.php`, `app/Livewire/Components/Map/InteractiveMap.php`,
+  `app/Rules/OpeningHoursRule.php`. Added `array<K,V>`/`list<T>` docblocks per the documented pattern
+  (no new `array<mixed>` blanket types — every shape was read off the real body/call site).
+- Found a real bug while at it: `RadioCardSelector::getCards()` had **no `return` statement** — it always
+  implicitly returned `null` against an `array` return type. Fixed to return the evaluated/validated array.
+- **Critical, out-of-scope discovery**: ~50 files under `Modules/UI/app/`, `database/factories/`, and
+  `lang/` had **unresolved git merge-conflict markers** (`<<<<<<< HEAD` / `>>>>>>> c001364 (.)`) committed
+  straight into HEAD. This produced PHP parse errors that silently broke Filament panel bootstrap and made
+  it impossible to run PHPStan on the module at all (`Application bootstrap failed`). Resolved all of them
+  by keeping the HEAD side (consistent with the already-committed intent of removing the dead
+  Map/Geocoding service abstraction) and dropping the stale `c001364` side. Test files under `tests/` were
+  left untouched (excluded from `phpstan.neon` paths anyway, out of scope for this pass, high blast radius).
+- Result: Modules/UI phpstan run goes from "bootstrap crash" to a clean run with 3 unrelated pre-existing
+  issues left (`missingType.generics` on `SliderDataCollection`, 2x `trait.unused`) — 0 `missingType.iterableValue`.
+- `Modules/UI` is its own git repo (`laraxot/module_ui_fila5`); committed there directly (not in the
+  `laravel/` superproject). Commented status on issue
+  [laraxot/module_ui_fila5#5](https://github.com/laraxot/module_ui_fila5/issues/5).
+- No new second-brain pattern needed beyond the existing `missingType.iterableValue` memory entry.
