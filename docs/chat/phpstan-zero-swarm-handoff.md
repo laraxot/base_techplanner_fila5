@@ -93,3 +93,46 @@ Coordinamento: issue #22 (`laraxot/base_techplanner_fila5`) per handoff cross-se
 | `laraxot/module_xot_fila5` | spatie/laravel-pdf, Safe json_decode | Da creare |
 
 Firma: — opencode (deepseek-v4-flash-free)
+
+### Lang
+
+2026-07-03 status check: `missingType.iterableValue` already at **0** before this session started
+(previous commits `ee86c5fc`, `ca288363` had already closed it out). No changes needed.
+
+### Tenant
+
+2026-07-03: `missingType.iterableValue` **20 → 0**. Files changed:
+- `app/Actions/Domains/GetDomainsArrayAction.php` — added `@return array<int, array{id: string, name: string}>`
+  on `execute()`, `@return array<string, mixed>` on `recurse()`, `@param array<array-key, mixed>` +
+  `@return list<string>` on `collapse()`. Used `/** @var array<int, array{id: string, name: string}> */`
+  to help PHPStan through `Arr::map()`'s generic inference.
+- `app/Models/BaseModelJsons.php` — `@property array $form` → `@property array<string, mixed> $form`.
+- `app/Models/Domain.php`, `app/Models/TenantDomain.php` — added
+  `@return array<int, array{id: string, name: string}>` to `getRows()` (delegates to `GetDomainsArrayAction`).
+- `app/Models/Tenant.php` — `@property array|null $settings` → `array<string, mixed>|null`; `@method`
+  tags for `create()`/`firstOrCreate()` given `array<string, mixed>` param types.
+- `app/Providers/TenantServiceProvider.php` — three `@var array|float|int|string|null` inline annotations
+  → `array<mixed>|float|int|string|null` (bare `array` inside a union still trips
+  `missingType.iterableValue`).
+- `app/Services/Config/Contracts/ConfigResolverInterface.php`,
+  `Resolvers/MorphMapConfigResolver.php`, `Resolvers/StandardConfigResolver.php`,
+  `Services/TenantService.php` — the shared signature
+  `string|int|array|null $default` / `float|int|string|array|null` return needed
+  `@param array<mixed>|int|string|null $default` / `@return float|int|string|array<mixed>|null`
+  docblock overrides on every implementation (interface + 2 resolvers + facade), since native PHP
+  union types can't carry generics — pattern worth reusing wherever a bare `array` sits inside a
+  scalar union type hint.
+- `Resolvers/StandardConfigResolver::handleMissingConfig()` — same `array<mixed>|int|string|null $default`
+  pattern added.
+
+No files skipped. `./vendor/bin/pint --dirty` run (repo-wide dirty set unrelated to Tenant, Tenant files
+came back clean). Full-tree `phpstan analyse Modules/Tenant` intermittently failed to bootstrap during
+this session because unrelated concurrent swarm agents were mid-edit on `Modules/UI` (many files showing
+`unexpected token "<<"` — heredoc/merge artifacts, not caused by this session); verified instead via
+per-file `phpstan analyse <file>` on all 10 changed files, all showing 0 `missingType.iterableValue` and
+no new errors. Commit: `635876a2` on branch `dev`.
+
+Second-brain: no new pattern beyond what's already in
+`bashscripts/ai/wiki/memories/phpstan-missing-type-patterns-2026-06.md` (the "bare array inside a
+union type hint" case is a direct instance of the documented `param/return generico array` row, just
+spelled out for scalar unions specifically for future search-ability).
