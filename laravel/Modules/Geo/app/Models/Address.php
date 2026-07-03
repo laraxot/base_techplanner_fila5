@@ -164,6 +164,9 @@ class Address extends BaseModel
      * return $this->belongsTo(Regione::class, 'administrative_area_level_1', 'name');
      * }
      */
+    /**
+     * @return array{codice: mixed, nome: mixed}|null
+     */
     public function getRegione(): ?array
     {
         $res = Comune::select('regione')
@@ -184,6 +187,9 @@ class Address extends BaseModel
         return $res->first();
     }
 
+    /**
+     * @return array{codice: mixed, nome: mixed}|null
+     */
     public function getProvincia(): ?array
     {
         $res = Comune::select('provincia')
@@ -204,6 +210,9 @@ class Address extends BaseModel
         return $res->first();
     }
 
+    /**
+     * @return array<string, mixed>|null
+     */
     public function getLocality(): ?array
     {
         return Comune::where('codice', $this->locality)
