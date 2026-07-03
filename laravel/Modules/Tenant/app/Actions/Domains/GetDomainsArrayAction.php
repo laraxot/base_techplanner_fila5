@@ -23,10 +23,13 @@ class GetDomainsArrayAction
         $res = $this->recurse(config_path());
         $res1 = $this->collapse($res);
 
-        return Arr::map($res1, fn (string $value) => [
+        /** @var array<int, array{id: string, name: string}> $mapped */
+        $mapped = Arr::map($res1, fn (string $value) => [
             'id' => $value,
             'name' => $value,
         ]);
+
+        return $mapped;
     }
 
     /**
@@ -53,7 +56,7 @@ class GetDomainsArrayAction
     }
 
     /**
-     * @param  array<string, mixed>  $data
+     * @param  array<array-key, mixed>  $data
      * @return list<string>
      */
     public function collapse(array $data, string $k = ''): array
