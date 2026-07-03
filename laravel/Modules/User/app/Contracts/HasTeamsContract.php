@@ -19,13 +19,13 @@ use Modules\User\Models\Role;
 /**
  * Modules\User\Contracts\HasTeamsContract.
  *
- * @property int               $id
- * @property string            $name
- * @property string            $two_factor_secret
+ * @property int $id
+ * @property string $name
+ * @property string $two_factor_secret
  * @property TeamContract|null $currentTeam
- * @property Collection        $tokens
- * @property Carbon|null       $two_factor_confirmed_at
- * @property int               $current_team_id
+ * @property Collection $tokens
+ * @property Carbon|null $two_factor_confirmed_at
+ * @property int $current_team_id
  *
  * @phpstan-require-extends Model
  *
@@ -97,6 +97,8 @@ interface HasTeamsContract
 
     /**
      * Get the user's permissions for the given team.
+     *
+     * @return array<int, string>
      */
     public function teamPermissions(TeamContract $teamContract): array;
 

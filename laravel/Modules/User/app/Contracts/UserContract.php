@@ -89,6 +89,9 @@ interface UserContract extends Authenticatable
     /**
      * Determine if the user has the given role.
      */
+    /**
+     * @param  string|array<int, string>|Role|\Illuminate\Support\Collection<int, string>  $roles
+     */
     public function hasRole(string|array|Role|\Illuminate\Support\Collection $roles, ?string $guard = null): bool;
 
     /**
@@ -134,7 +137,7 @@ interface UserContract extends Authenticatable
     /**
      * Create a new personal access token for the user.
      *
-     * @param array<int, string> $scopes
+     * @param  array<int, string>  $scopes
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;
 
