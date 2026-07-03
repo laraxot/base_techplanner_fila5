@@ -46,7 +46,7 @@ final readonly class UserNameFieldsResolver
     }
 
     /**
-     * @param string $searchMethod use self constants (NAME_SEARCH, SURNAME_SEARCH)
+     * @param  string  $searchMethod  use self constants (NAME_SEARCH, SURNAME_SEARCH)
      */
     private function resolveNameFields(User $idpUser, string $searchMethod): string
     {
@@ -103,7 +103,7 @@ final readonly class UserNameFieldsResolver
             ->before('@');
 
         // Use conditional logic instead of dynamic method call for type safety
-        if (self::NAME_SEARCH === $searchMethod) {
+        if ($searchMethod === self::NAME_SEARCH) {
             return $emailPart->before('.')->trim()->title();
         }
 
@@ -111,6 +111,9 @@ final readonly class UserNameFieldsResolver
         return $emailPart->after('.')->trim()->title();
     }
 
+    /**
+     * @return array<array-key, mixed>
+     */
     private function getRawUserData(User $idpUser): array
     {
         $raw = [];

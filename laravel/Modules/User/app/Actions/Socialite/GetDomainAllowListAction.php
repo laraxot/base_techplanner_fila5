@@ -17,11 +17,12 @@ class GetDomainAllowListAction
 
     public function __construct(
         private readonly Arr $arrHelper,
-    ) {
-    }
+    ) {}
 
     /**
      * Execute the action.
+     *
+     * @return array<array-key, mixed>
      */
     public function execute(): array
     {
