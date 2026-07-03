@@ -80,13 +80,13 @@ class SearchPlacesAction
      */
     private function parseResponse(string $response): Collection
     {
-        /** @var array<array{
+        /** @var array<int, array{
          *     display_name: string,
          *     lat: string,
          *     lon: string,
          *     type: string,
          *     importance: float,
-         *     address: array
+         *     address: array<string, mixed>
          * }> $data */
         $data = json_decode($response, true);
 
