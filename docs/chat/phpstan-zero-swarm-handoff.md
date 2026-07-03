@@ -136,3 +136,69 @@ Second-brain: no new pattern beyond what's already in
 `bashscripts/ai/wiki/memories/phpstan-missing-type-patterns-2026-06.md` (the "bare array inside a
 union type hint" case is a direct instance of the documented `param/return generico array` row, just
 spelled out for scalar unions specifically for future search-ability).
+
+### Xot (continuation, 2026-07-03 later session)
+
+Picked up from prior batch (commit `ee86c5fc`) which had already fixed most of Xot's
+`missingType.iterableValue`. Re-measured: 51 remaining across 24 files. Fixed all 51 → **0**.
+
+Files changed (docblock-only, array shapes added, no behavior change):
+- `app/Exceptions/Handlers/HandlersRepository.php` — `@var array<int, callable>` on the 3 handler
+  properties, `@return array<int, callable>` on the 3 getters.
+- `helpers/Helper.php` — `@param array<string, mixed> $params` on `getFilename()`/`in_admin()`/`inAdmin()`,
+  `@return array<int, string>` on `getModelFields()`, `@param array<int|string, mixed> $replace` on
+  `trans_string()`. (Pre-existing unrelated `isset.offset` errors at line 267 left untouched — out of
+  scope for this category.)
+- `app/Datas/ArticleData.php`, `AuthData.php`, `FilemanagerData.php`, `MailData.php`,
+  `SubscriptionData.php` — Spatie LaravelData classes had their `@param` array-shape tags on the
+  **class-level** docblock instead of on `__construct()`; PHPStan only honors constructor-level
+  `@param` for promoted properties, so the class-level tags were being silently ignored. Fix: moved
+  array-typed `@param` tags down to a `/** @param ... */` block directly above `__construct(`.
+  **This is the pattern worth remembering**: for `final class X extends Spatie\LaravelData\Data`,
+  put `@param` array shapes on the constructor doc comment, not the class doc comment.
+- `app/Datas/PdfData.php` — `@var array<int, int>` on `$margins` (a fixed 4-int array).
+- `Services/ArrayService.php` and its duplicate `app/Services/ArrayService.php` (same class/namespace,
+  pre-existing duplication, left as-is per no-delete-without-confirmation) — typed `diff_assoc_recursive()`
+  params/return as `array<int|string, mixed>` and added explicit `array` type hints (were untyped mixed
+  params relying only on docblock).
+- `app/Actions/Query/GetFieldnamesByTablenameAction.php` — `@return list<string>` (was bare `list`).
+- `app/Events/CommandOutputEvent.php`, `app/Exceptions/ApplicationError.php` — `@return array<string, string>`
+  on `broadcastWith()`/`toArray()`/`jsonSerialize()`.
+- `app/Exceptions/Handlers/HandlerDecorator.php` — `@param array<int, mixed> $parameters` on `__call()`.
+- `app/Filament/Schemas/Components/XotBaseGroup.php`, `XotBaseSection.php` — the `@method static static
+  make(...)` PHPDoc tags had a bare `array` in the union; retyped to `array<int|string, mixed>` matching
+  the real Filament v4 `Group::make(array|Closure $schema)` / `Section::make(string|array|Htmlable|Closure|null $heading)`
+  signatures (the existing `@method` tags were already stale/mismatched with the real parent signatures —
+  not fixed further here, out of scope for this category).
+- `app/Filament/Widgets/EnvWidget.php` — `@var array<int, string>` on `$only`.
+- `app/Filament/Widgets/XotBaseTableWidget.php` — `@param array<string, mixed> $filters` on `updateFilters()`.
+- `app/Http/Controllers/XotBaseController.php` — `@param array<string, mixed> $result` /
+  `@param array<int|string, mixed> $errorMessages`.
+- `app/Http/Middleware/SecurityMiddleware.php` — `@param array<int|string, mixed>` on
+  `validateArrayInput()`'s `$value` and `getArrayDepth()`'s `$array`.
+- `app/Providers/XotBaseServiceProvider.php` — `@return array<int, string>` on `provides()`.
+- `app/Traits/EnumTrait.php` — `@return array<string, string>` on `toArray()` (fixes it for every enum
+  using the trait: PdfEngineEnum, DayOfWeek, GenderEnum, YesNoEnum, etc. — one shared trait fix cascades).
+
+Verification: individual `php -l` on every touched file (all pass) plus full
+`phpstan analyse Modules/Xot --memory-limit=-1` run, confirming
+`missingType.iterableValue` count is **0** for the whole module and no new error categories were
+introduced (remaining Xot errors: 73 `missingType.generics`, 17 `argument.type`, 14 `trait.unused`,
+7 `class.notFound`, 6 `method.nonObject`, 4 `generics.notSubtype`, 3 `return.type`, 2 `isset.offset`,
+1 each of `method.notFound`/`method.abstract`/`return.phpDocType` — all pre-existing, belong to later
+phases). `./vendor/bin/pint` run clean on all touched files. Commit: `2cb7c185` on branch `dev`
+(HandlersRepository.php/ArticleData.php/AuthData.php/Helper.php landed in an earlier auto-commit during
+the same session, content verified intact).
+
+**Blocker hit mid-session** (not caused by this work, now resolved): `Modules/UI` had ~65 files with
+unresolved git merge-conflict markers (`<<<<<<< HEAD`) from a concurrent swarm agent's in-progress merge,
+which broke PHPStan's app bootstrap (`Modules/UI/app/Providers/Filament/AdminPanelProvider.php` is
+required during Filament panel discovery, which every `phpstan analyse` invocation triggers regardless
+of the `Modules/Xot` path argument). Waited it out; UI agent resolved its conflicts and bootstrap works
+again. Worth noting in second-brain: **a syntax error in ANY module can block phpstan runs scoped to
+ANY other module**, because Larastan's bootstrap eagerly loads all Filament panel providers app-wide.
+
+Second-brain: the "Spatie LaravelData class-level vs constructor-level @param" pattern is new and not
+yet in `bashscripts/ai/wiki/memories/phpstan-missing-type-patterns-2026-06.md` — worth adding since
+Xot/Blog/Cms all use this Data pattern heavily and other modules will likely hit the same silent-ignore
+issue.
