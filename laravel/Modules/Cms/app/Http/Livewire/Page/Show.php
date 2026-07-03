@@ -20,6 +20,7 @@ class Show extends Component
 
     public bool $debug = false;
 
+    /** @var array<string, mixed> */
     public array $pageContent = [];
 
     public function mount(): void
@@ -35,6 +36,7 @@ class Show extends Component
         ]);
     }
 
+    /** @return array<string, string> */
     protected function rules(): array
     {
         return [
@@ -60,6 +62,7 @@ class Show extends Component
         $this->pageContent = $this->fetchPageContent();
     }
 
+    /** @return array<string, mixed> */
     protected function fetchPageContent(): array
     {
         try {
