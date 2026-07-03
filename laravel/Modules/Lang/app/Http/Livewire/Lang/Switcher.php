@@ -22,6 +22,7 @@ class Switcher extends Component
 {
     public string $lang;
 
+    /** @var array<string, array<string, mixed>> */
     public array $langs;
 
     public string $url;

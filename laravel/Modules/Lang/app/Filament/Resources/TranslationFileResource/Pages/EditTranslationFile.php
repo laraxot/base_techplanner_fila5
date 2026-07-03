@@ -40,6 +40,11 @@ class EditTranslationFile extends XotBaseEditRecord
         ];
     }
 
+    /**
+     * @param array<string, mixed> $array
+     *
+     * @return array<int|string, mixed>
+     */
     public function makeFromArray(array $array, string $prefix = ''): array
     {
         $fields = [];

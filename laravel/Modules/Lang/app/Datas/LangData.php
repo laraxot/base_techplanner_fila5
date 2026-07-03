@@ -37,7 +37,9 @@ class LangData extends Data
     /**
      * Crea una collezione di dati di lingua.
      *
-     * @return DataCollection<LangData>
+     * @param EloquentCollection<array-key, mixed>|Collection<array-key, mixed>|array<array-key, mixed> $data
+     *
+     * @return DataCollection<int, LangData>
      */
     public static function collection(EloquentCollection|Collection|array $data): DataCollection
     {

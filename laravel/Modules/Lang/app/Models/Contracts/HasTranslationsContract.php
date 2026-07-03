@@ -19,6 +19,8 @@ interface HasTranslationsContract
     /**
      * Imposta la traduzione di un attributo in una specifica lingua.
      *
+     * @param int|array<array-key, mixed>|string|null $value
+     *
      * @return self L'istanza corrente del modello, per supportare method chaining
      */
     public function setTranslation(string $key, string $locale, int|array|string|null $value): self;
