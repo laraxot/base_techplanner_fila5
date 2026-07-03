@@ -152,9 +152,9 @@ class SafeAttributeCastAction
      *
      * @param Model      $model     Il modello Eloquent
      * @param string     $attribute Il nome dell'attributo
-     * @param array|null $default   Valore di default se l'attributo non esiste o è null
+     * @param array<int|string, mixed>|null $default   Valore di default se l'attributo non esiste o è null
      *
-     * @return array Il valore dell'attributo convertito in array
+     * @return array<int|string, mixed> Il valore dell'attributo convertito in array
      */
     public function getArrayAttribute(Model $model, string $attribute, ?array $default = []): array
     {
