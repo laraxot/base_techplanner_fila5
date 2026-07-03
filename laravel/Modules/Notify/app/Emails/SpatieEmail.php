@@ -30,6 +30,7 @@ class SpatieEmail extends TemplateMailable
 {
     public string $slug;
 
+    /** @var array<string, mixed> */
     public array $data = [];
 
     // use our custom mail template model
@@ -106,6 +107,9 @@ class SpatieEmail extends TemplateMailable
         return $this;
     }
 
+    /**
+     * @param  array<string, mixed>  $data
+     */
     public function mergeData(array $data): self
     {
         $this->data = array_merge($this->data, $data);
@@ -131,7 +135,7 @@ class SpatieEmail extends TemplateMailable
      */
     public function envelope(): Envelope
     {
-        $envelope = new Envelope;
+        $envelope = new Envelope();
 
         // Set the recipient if available
         if ($this->recipient) {
@@ -179,6 +183,9 @@ class SpatieEmail extends TemplateMailable
         return $res->as($filename)->withMime($mime);
     }
 
+    /**
+     * @param  array<string, mixed>  $attachment
+     */
     public function getAttachmentFromData(array $attachment): Attachment
     {
         $res = Attachment::fromData(static fn () => $attachment['data']);

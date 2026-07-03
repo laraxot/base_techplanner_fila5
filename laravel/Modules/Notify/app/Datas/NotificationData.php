@@ -26,6 +26,7 @@ class NotificationData extends Data
 
     public string $body;
 
+    /** @var list<string> */
     public array $channels = [];
 
     /**

@@ -18,6 +18,9 @@ class TicketStatusChangedNotification extends Notification
         public string $newStatus
     ) {}
 
+    /**
+     * @return array<int, string>
+     */
     public function via(mixed $notifiable): array
     {
         return ['mail', 'database'];
@@ -25,7 +28,7 @@ class TicketStatusChangedNotification extends Notification
 
     public function toMail(mixed $notifiable): MailMessage
     {
-        return (new MailMessage)
+        return (new MailMessage())
             ->subject('Ticket Status Changed')
             ->line("Ticket status has changed from {$this->oldStatus} to {$this->newStatus}")
             ->action('View Ticket', url('/'));
