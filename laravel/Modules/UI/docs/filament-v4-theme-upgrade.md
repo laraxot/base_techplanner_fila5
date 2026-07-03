@@ -1,5 +1,8 @@
 # Filament v4 Theme Upgrade Guide - Modulo UI
+<<<<<<< HEAD
+=======
 **Data**: 10 Dicembre 2025
+>>>>>>> c001364 (.)
 **Modulo**: UI (Theme Components)
 **Versione**: 4.0
 **Stato**: Ready for Implementation
@@ -346,4 +349,8 @@ npm run build
 **Versione**: 1.0
 **Stato**: Ready for Implementation
 **Priority**: HIGH
+<<<<<<< HEAD
 **Deadline**: 31 Dicembre 2025
+=======
+**Deadline**: 31 Dicembre 2025
+>>>>>>> c001364 (.)

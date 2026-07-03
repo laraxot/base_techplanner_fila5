@@ -176,11 +176,11 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a array.
      *
-     * @param object     $object   L'oggetto da cui ottenere la proprietà
-     * @param string     $property Il nome della proprietà
-     * @param array|null $default  Valore di default se la proprietà non esiste o è null
+     * @param object                          $object   L'oggetto da cui ottenere la proprietà
+     * @param string                          $property Il nome della proprietà
+     * @param array<int|string, mixed>|null $default  Valore di default se la proprietà non esiste o è null
      *
-     * @return array Il valore della proprietà convertito in array
+     * @return array<int|string, mixed> Il valore della proprietà convertito in array
      */
     public function getArrayProperty(object $object, string $property, ?array $default = []): array
     {
@@ -290,10 +290,10 @@ class SafeObjectCastAction
     /**
      * Esegue un metodo su un oggetto in modo sicuro.
      *
-     * @param object $object     L'oggetto su cui eseguire il metodo
-     * @param string $method     Il nome del metodo
-     * @param array  $parameters I parametri del metodo
-     * @param mixed  $default    Valore di default se il metodo non esiste o fallisce
+     * @param object              $object     L'oggetto su cui eseguire il metodo
+     * @param string              $method     Il nome del metodo
+     * @param array<int, mixed>   $parameters I parametri del metodo
+     * @param mixed               $default    Valore di default se il metodo non esiste o fallisce
      *
      * @return mixed Il risultato del metodo o il valore di default
      */

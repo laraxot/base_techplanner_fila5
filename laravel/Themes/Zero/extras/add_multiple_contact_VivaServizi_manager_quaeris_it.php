@@ -23,7 +23,7 @@ $response = curl_exec($ch);
 $json = json_decode($response);
 
 $data = [
-'a1' => [
+    'a1' => [
         'survey_pdf_id' => '44',
         'email' => 'vair81@gmail.com',
         'mobile_phone' => '',
@@ -60,7 +60,7 @@ $data = [
     //   'email' => 'davide.vaira@quaeris.it',
     //   'language' => 'it',
     //   'usesleft' => '1',
-  
+
     //   'first_name' => '',
     //   'last_name' => '',
     //   'attribute_1' => '02.07.2024', // Data cr.
@@ -70,8 +70,7 @@ $data = [
     //   'attribute_5' => 'Variaz. anagrafiche ', // motivo_contatto
     //   'attribute_6' => '', // Numero telefono
     // ]
-    
-    
+
 ];
 
 $headers = [
@@ -86,7 +85,7 @@ curl_setopt_array($ch, [
     CURLOPT_POST => true,
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_VERBOSE => true,
-CURLOPT_POSTFIELDS => ['data' => json_encode($data)],
+    CURLOPT_POSTFIELDS => ['data' => json_encode($data)],
 ]);
 
 $response = curl_exec($ch);
@@ -113,4 +112,3 @@ function curl_postfields_flatten($data, $prefix = '')
 
     return $output;
 }
-

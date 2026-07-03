@@ -19,15 +19,15 @@ class Image
                 TextInput::make('url'),
                 Select::make('ratio')
                     ->options(static::getRatios())
-                    ->afterStateHydrated(function (mixed $state, mixed $set): void {
-                        if (! $state && is_callable($set)) {
+                    ->afterStateHydrated(function ($state, callable $set): void {
+                        if (! $state) {
                             $set('ratio', '4-3');
                         }
                     }),
                 TextInput::make('alt')->columnSpanFull(),
                 TextInput::make('caption')->columnSpanFull(),
             ])
-            ->columns('form' === $context ? 2 : 1);
+            ->columns($context === 'form' ? 2 : 1);
     }
 
     /**
@@ -51,6 +51,9 @@ class Image
         };
     }
 
+    /**
+     * @return array<int, FileUpload|TextInput>
+     */
     public static function getFormSchema(): array
     {
         return [

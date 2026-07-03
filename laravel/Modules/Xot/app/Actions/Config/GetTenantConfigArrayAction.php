@@ -11,6 +11,9 @@ class GetTenantConfigArrayAction
 {
     use QueueableAction;
 
+    /**
+     * @return array<string, mixed>
+     */
     public function execute(string $name): array
     {
         $path = app(GetTenantConfigPathAction::class)->execute($name);

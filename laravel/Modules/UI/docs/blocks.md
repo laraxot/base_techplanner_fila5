@@ -19,6 +19,8 @@ https://tw-elements.com/docs/standard/navigation/navbar/
 https://freefrontend.com/tailwind-navbars/
 
 https://preline.co/docs/mega-menu.html
+<<<<<<< HEAD
+=======
 # Blocchi
 
 ## Panoramica
@@ -203,3 +205,4 @@ Per gestire correttamente le route nei blocchi, seguire queste linee guida:
 * [blocks.md](../../../Cms/docs/blocks.md)
 * [blocks.md](../../../../Themes/One/docs/blocks.md)
 * [blocks.md](../../../../Themes/One/docs/components/blocks.md)
+>>>>>>> c001364 (.)

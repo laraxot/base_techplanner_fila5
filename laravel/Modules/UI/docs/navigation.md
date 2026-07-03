@@ -41,6 +41,12 @@ $page->navigation
 * [navigation.md](../../../cms/docs/blocks/navigation.md)
 * [navigation.md](../../../cms/docs/navigation.md)
 * [navigation.md](../../../cms/docs/components/navigation.md)
+<<<<<<< HEAD
+
+### Versione Incoming
+
+---
+=======
 * [navigation.md](../../../Gdpr/docs/navigation.md)
 * [navigation.md](../../../Xot/docs/navigation.md)
 * [navigation.md](../../../UI/docs/navigation.md)
@@ -51,3 +57,4 @@ $page->navigation
 ### Versione Incoming
 
 ---
+>>>>>>> c001364 (.)

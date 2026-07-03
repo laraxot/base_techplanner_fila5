@@ -1,5 +1,5 @@
 includes:
-    - ./phpstan-baseline.neon
+    # - ./phpstan-baseline.neon
     - ./vendor/larastan/larastan/extension.neon
     - ./vendor/nesbot/carbon/extension.neon
     - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
@@ -14,14 +14,14 @@ parameters:
 
     ignoreErrors:
         - '#PHPDoc tag @mixin contains unknown class #'
-        #- '#Static call to instance method Nwidart#'
+        # - '#Static call to instance method Nwidart#'
         # - "#^Unsafe usage of new static#"
         - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#'
-        - identifier: missingType.generics
-        - identifier: missingType.iterableValue
-        - identifier: larastan.noEnvCallsOutsideOfConfig
-        - '#is used zero times and is not analysed#'
-        - identifier: method.unused
+        # - identifier: missingType.generics
+        # - identifier: missingType.iterableValue
+        # - identifier: larastan.noEnvCallsOutsideOfConfig
+        # - '#is used zero times and is not analysed#'
+        # - identifier: method.unused
         # - identifier: method.internalClass
         # - identifier: method.internal
         # - identifier: function.alreadyNarrowedType

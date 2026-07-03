@@ -4,4 +4,8 @@ topic: custom_theme
 canonical: ../../../Themes/docs/shared-components/custom-theme.txt
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/custom-theme.txt
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/custom-theme.txt
+>>>>>>> c001364 (.)

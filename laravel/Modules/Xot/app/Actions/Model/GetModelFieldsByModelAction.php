@@ -17,6 +17,8 @@ class GetModelFieldsByModelAction
 
     /**
      * Execute the action.
+     *
+     * @return array<int, string>
      */
     public function execute(Model $model): array
     {

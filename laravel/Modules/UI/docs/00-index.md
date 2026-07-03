@@ -54,6 +54,10 @@
 - 🏗️ **[Tailwind v4 Upgrade](./filament-v4-theme-upgrade.md)** - Guida alla migrazione verso l'ultima versione di Tailwind.
 - 🛣️ **[Folio & Volt Themes](./struttura-themes-folio.md)** - Gestione dei temi nelle pagine Folio.
 - 🧪 **[Table Layout Enum](./table-layout-enum-complete-guide.md)** - Standardizzazione dei layout tabelle.
+<<<<<<< HEAD
+- 🐛 **[Bugfix Cambia layout](./bugfix-table-layout-toggle-not-working.md)** - Sync `layoutView` / sessione (toggle lista-griglia).
+=======
+>>>>>>> c001364 (.)
 
 ## 🧪 **Qualità e Sviluppo**
 - ✅ **[PHPStan Analysis](./phpstan-level-10-cleanup.md)** - Report di conformità Level 10.
@@ -71,8 +75,11 @@
 - [Cms](../../cms/docs/readme.md) - Layout dei contenuti e blocchi.
 
 ---
+<<<<<<< HEAD
+=======
 # Documentation Index
 # Documentation Index
+>>>>>>> c001364 (.)
 
 ## 🏛️ **Design Comuni Italia - Replication**
 
@@ -104,4 +111,8 @@
 
 ## Dependency Intelligence
 
+<<<<<<< HEAD
 - [Dependency intelligence](dependency-intelligence.md)
+=======
+- [Dependency intelligence](dependency-intelligence.md)
+>>>>>>> c001364 (.)

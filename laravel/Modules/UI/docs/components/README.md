@@ -274,6 +274,8 @@ class ButtonBrowserTest extends DuskTestCase
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+<<<<<<< HEAD
+=======
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
 * [README.md](docs/laravel-app/phpstan/README.md)
@@ -350,3 +352,4 @@ class ButtonBrowserTest extends DuskTestCase
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
+>>>>>>> c001364 (.)

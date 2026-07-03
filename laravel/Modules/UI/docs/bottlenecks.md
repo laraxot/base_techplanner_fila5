@@ -127,7 +127,10 @@
 
 ### Collegamenti Interni
 - [Roadmap](roadmap.md)
+<<<<<<< HEAD
+=======
 - [Best Practices](BEST-PRACTICES.md)
+>>>>>>> c001364 (.)
 - [Best Practices](best-practices.md)
 ### Versione HEAD
 
@@ -157,6 +160,10 @@
 * [bottlenecks.md](../../activity/docs/bottlenecks.md)
 * [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../cms/docs/bottlenecks.md)
+<<<<<<< HEAD
+
+---
+=======
 * [bottlenecks.md](../../Chart/docs/bottlenecks.md)
 * [bottlenecks.md](../../Chart/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
@@ -178,3 +185,4 @@
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
 
 ---
+>>>>>>> c001364 (.)

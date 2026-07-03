@@ -50,9 +50,6 @@ use Webmozart\Assert\Assert;
  * @method static Builder<static>|TemporaryUpload whereDeletedAt($value)
  * @method static Builder<static>|TemporaryUpload whereDeletedBy($value)
  * @method static Builder<static>|TemporaryUpload whereUpdatedBy($value)
- *
- * @mixin IdeHelperTemporaryUpload
- *
  * @method static TemporaryUploadFactory factory($count = null, $state = [])
  *
  * @property-read ProfileContract|null $creator
@@ -74,7 +71,9 @@ use Webmozart\Assert\Assert;
  */
 class TemporaryUpload extends BaseModel implements HasMedia
 {
+    /** @phpstan-use HasXotFactory<TemporaryUploadFactory> */
     use HasXotFactory;
+
     use InteractsWithMedia;
     use MassPrunable;
 
@@ -82,6 +81,7 @@ class TemporaryUpload extends BaseModel implements HasMedia
 
     public static ?string $disk = null;
 
+    /** @var string */
     protected $connection = 'media';
 
     /**
@@ -92,14 +92,11 @@ class TemporaryUpload extends BaseModel implements HasMedia
     public static function findByMediaUuid(?string $mediaUuid): ?self
     {
         Assert::string($mediaModelClass = config('media-library.media_model'));
-        Assert::classExists($mediaModelClass);
-        Assert::true(is_a($mediaModelClass, Media::class, true), 'media-library.media_model must be a Media model class');
-
-        /** @var class-string<Media> $mediaModelClass */
-        $mediaModelClass = $mediaModelClass;
 
         /**
          * @var Media|null $media
+         *
+         * @phpstan-ignore-next-line
          */
         $media = $mediaModelClass::query()->where('uuid', $mediaUuid)->first();
 
@@ -196,7 +193,7 @@ class TemporaryUpload extends BaseModel implements HasMedia
             return;
         }
 
-        $conversion = $this->addMediaConversion('preview')->nonQueued();
+        $conversion = $this->addMediaConversion('preview');
 
         $previewManipulation = $this->getPreviewManipulation();
 

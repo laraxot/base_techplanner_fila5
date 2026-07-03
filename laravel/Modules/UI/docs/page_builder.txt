@@ -4,4 +4,8 @@ topic: page_builder
 canonical: ../../../Themes/docs/shared-components/page-builder.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/page-builder.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/page-builder.md
+>>>>>>> c001364 (.)

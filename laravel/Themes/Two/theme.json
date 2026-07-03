@@ -26,5 +26,4 @@
     "providers": [
         "Themes\\Two\\Providers\\ThemeServiceProvider"
     ]
-    }
 }

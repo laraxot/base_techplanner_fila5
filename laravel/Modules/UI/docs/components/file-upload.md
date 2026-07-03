@@ -83,4 +83,8 @@ Forms\Components\FileUpload::make('document')
 - [Gestione Upload in il progetto](../../../../docs/upload-management.md)
 - [Convenzioni di Naming](../../../../docs/convenzioni-naming-campi.md)
 ## Collegamenti tra versioni di file-upload.md
+<<<<<<< HEAD
 * [file-upload.md](../filament-components/file-upload.md)
+=======
+* [file-upload.md](../filament-components/file-upload.md)
+>>>>>>> c001364 (.)

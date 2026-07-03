@@ -139,8 +139,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property Collection<int, OauthClient> $oauthApps
  * @property int|null                     $oauth_apps_count
  *
- * @method static Builder<static>|User childrenWith(array $relations)
- * @method static Builder<static>|User childrenWithCount(array $relations)
+ * @method static Builder<static>|User childrenWith(array<int, string> $relations)
+ * @method static Builder<static>|User childrenWithCount(array<int, string> $relations)
  * @method static Builder<static>|User whereSurname($value)
  * @method static Builder<static>|User whereTwoFactorConfirmedAt($value)
  * @method static Builder<static>|User whereTwoFactorRecoveryCodes($value)

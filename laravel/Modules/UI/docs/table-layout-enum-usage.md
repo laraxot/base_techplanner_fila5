@@ -278,8 +278,11 @@ $columns = $this->layout->getTableColumns($listColumns, $gridColumns);
 - [Filament Components Guide](components.md)
 - [Translation Standards](translations.md)
 - [Table Components](table-components.md)
+<<<<<<< HEAD
+=======
 - [HasXotTable Trait](../../Xot/docs/has-xot-table.md)
 - [Root Documentation: UI Components](../../../docs/components/ui-components.md)
+>>>>>>> c001364 (.)
 - [HasXotTable Trait](../../xot/docs/has-xot-table.md)
 - [Root Documentation: UI Components](../../../../docs/components/ui-components.md)
 # TableLayoutEnum Usage Guide
@@ -358,4 +361,8 @@ class ListUsers extends ListRecords
 
 Il metodo `getTableColumns()` ora richiede due parametri:
 - `$listColumns`: Array delle colonne per layout lista
+<<<<<<< HEAD
 - `$gridColumns`: Array delle colonne per layout griglia
+=======
+- `$gridColumns`: Array delle colonne per layout griglia
+>>>>>>> c001364 (.)

@@ -8,7 +8,7 @@
     $initialSelectedStatuses = $vm->selectedStatuses();
 @endphp
 
-{{-- Design Comuni reference: https://italia.github.io/design-comuni-pagine-statiche/sito/segnalazioni-elenco.html --}}
+{{-- Design Comuni reference: https://italia.github.io/design-comuni-pagine-statiche/sito/ticket-list.html --}}
 <div class="container" id="main-container">
 
 {{-- Alpine: sync desktop ↔ modale; app.js applica filtro mappa su filter-types-updated --}}
@@ -201,7 +201,7 @@
             <div class="modal-content">
                 <div class="modal-header border-bottom-0">
                     <h2 class="title-medium-semi-bold" id="modal-categories-title">{{ $vm->filtersTitle() }}</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('Chiudi') }}"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('pub_theme::ui.close') }}"></button>
                 </div>
                 <div class="modal-body text-black">
                     @include('pub_theme::components.blocks.ticket.filters-sidebar', [

@@ -19,9 +19,9 @@ return [
      */
     'drivers' => [
         'twilio' => [
-            'account_sid' => env('TWILIO_ACCOUNT_SID'),
-            'auth_token' => env('TWILIO_AUTH_TOKEN'),
-            'from' => env('TWILIO_WHATSAPP_FROM'),
+            'account_sid' => config('notify.whatsapp.twilio.account_sid'),
+            'auth_token' => config('notify.whatsapp.twilio.auth_token'),
+            'from' => config('notify.whatsapp.twilio.from'),
         ],
         'vonage' => [
             'api_key' => env('VONAGE_KEY'),

@@ -303,4 +303,8 @@ Applicare la stessa logica a tutti i file di traduzione con conflitti simili:
 - **Modulo**: UI
 - **File**: Multipli file di traduzione
 - **Tipo Conflitto**: Dichiarazione PHP e sintassi array
+<<<<<<< HEAD
 - **Scelta**: Versione HEAD (con strict types e sintassi moderna)
+=======
+- **Scelta**: Versione HEAD (con strict types e sintassi moderna)
+>>>>>>> c001364 (.)

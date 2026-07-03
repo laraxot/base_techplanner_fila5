@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 # 🎨 **UI Module** - Sistema Avanzato Componenti Interfaccia
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -125,6 +127,7 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 {
     use TransTrait;
 
+>>>>>>> c001364 (.)
 ---
 title: "UI Module Documentation"
 type: documentation
@@ -139,6 +142,14 @@ updated: 2026-06-05
 
 Il modulo **UI** fornisce componenti Blade, widget Filament e asset condivisi per tutti i moduli e temi.
 
+<<<<<<< HEAD
+**Quick Start:**
+- **[Architecture Patterns](./architecture-patterns.md)** — Design system, component hierarchy, theming
+- **[Disabled Components](./disabled-components.md)** — Deprecation info & migration paths
+- **[Design Comuni Implementation](./DESIGN_COMUNI_IMPLEMENTATION.md)** — Integration guide
+
+=======
+>>>>>>> c001364 (.)
 ## Struttura Componenti
 
 ```
@@ -223,6 +234,8 @@ resources/views/components/ui/
 - [User Module](../user/docs/readme.md) - Gestione utenti
 - [Lang Module](../lang/docs/readme.md) - Traduzioni
 
+<<<<<<< HEAD
+=======
     public function getTableContentGrid(): array
     {
         return match($this) {
@@ -634,6 +647,7 @@ protected TableLayoutEnum $layout = TableLayoutEnum::GRID;
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025
 **📦 Versione**: 4.1.0
 
+>>>>>>> c001364 (.)
 ---
 
 **🔄 
@@ -644,6 +658,8 @@ Workflow: `.github/workflows/semantic-versioning.yml`
 
 ## 📄 License
 MIT
+<<<<<<< HEAD
+=======
 **🐛 PHPStan level 10**: File core certificati ✅
 **🐛 PHPStan Level 9**: File core certificati ✅
 **🐛 PHPStan Level 9**: File core certificati ✅
@@ -664,6 +680,7 @@ MIT
 *Ultimo aggiornamento: gennaio 2025*
 *Ultimo aggiornamento: gennaio 2025*
 *Ultimo aggiornamento: gennaio 2025*
+>>>>>>> c001364 (.)
 
 
 ## Standard Rules & Workflow
@@ -677,4 +694,27 @@ MIT
 - [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — Pattern per caricamento efficiente
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
+<<<<<<< HEAD
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+---
+
+## ✅ PHPStan Status — Verifica 2026-07-01
+
+| Data | Livello | Errori |
+|------|---------|--------|
+| 2026-07-01 | max | **0** |
+
+```bash
+./vendor/bin/phpstan analyze Modules/UI --level=max --memory-limit=512M
+# [OK] No errors
+```
+
+Modulo conforme alle regole Laraxot:
+- Classi Filament estendono XotBase (mai direttamente Filament)
+- Nessun label/placeholder/tooltip hardcoded
+- Nessun BadgeColumn (usa TextColumn::make()->badge())
+- Actions usano QueueableAction pattern
+- Nessun Service tradizionale
+=======
+- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+>>>>>>> c001364 (.)

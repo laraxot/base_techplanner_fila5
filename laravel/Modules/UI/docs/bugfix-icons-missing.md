@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 - [XotBaseServiceProvider](../XotBaseServiceProvider.md)
 
 ---
@@ -7,10 +9,15 @@
 **Tipo**: Bug Fix
 **Priorità**: Alta
 **Stato**: ✅ Risolto
+>>>>>>> c001364 (.)
 ---
 module: theme
 topic: bugfix-icons-missing
 canonical: ../../../Themes/docs/shared-components/bugfix-icons-missing.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/bugfix-icons-missing.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/bugfix-icons-missing.md
+>>>>>>> c001364 (.)

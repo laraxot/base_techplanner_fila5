@@ -17,6 +17,8 @@ class GetAllModuleTranslationAction
 
     /**
      * Restituisce il path completo del file di traduzione dato un key.
+     *
+     * @return array<int, array{key: string, path: string}>
      */
     public function execute(): array
     {

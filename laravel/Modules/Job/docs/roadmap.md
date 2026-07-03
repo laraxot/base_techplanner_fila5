@@ -1,6 +1,3 @@
-**Last Updated**: 2026-01-02
-**Maintainer**: Team Laraxot
-**Status**: Active Development
 # 🎯 JOB MODULE - ROADMAP 2025
 
 **Modulo**: Job ([Description])  

@@ -269,4 +269,8 @@ done
 - **REGOLA CRITICA**: Sincronizzazione obbligatoria tra lingue
 - **REGOLA CRITICA**: Struttura espansa per tutti i campi
 - **REGOLA CRITICA**: Sintassi moderna e tipizzazione stretta
+<<<<<<< HEAD
 - **REGOLA CRITICA**: Controllo automatico con script
+=======
+- **REGOLA CRITICA**: Controllo automatico con script
+>>>>>>> c001364 (.)

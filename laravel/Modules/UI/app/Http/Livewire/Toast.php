@@ -16,10 +16,5 @@ final class Toast extends Component
     public function render(): View
     {
         $view = 'ui::livewire.toast';
-        $view_params = [
-            'view' => $view,
-        ];
-
-        return view($view, $view_params);
     }
 }

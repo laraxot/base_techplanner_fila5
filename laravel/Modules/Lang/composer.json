@@ -12,9 +12,6 @@
         "translations",
         "localization"
     ],
-    "description": "",
-    "license": "MIT",
-    "homepage": "https://github.com/laraxot/module_lang_fila3.git",
     "license": "MIT",
     "homepage": "https://github.com/laraxot/module_lang_fila5.git",
     "authors": [
@@ -27,11 +24,9 @@
         "mcamara/laravel-localization": "*",
         "lara-zeus/spatie-translatable": "*",
         "rinvex/countries": "^9.1",
-    "repositories_comment": "Local path package (lara-zeus/spatie-translatable) moved to root composer.json for proper priority. DO NOT add Packagist here.",
         "spatie/laravel-sluggable": "*",
         "php": "^8.3"
     },
-    "require-comment": {},
     "repositories": [
         {
             "type": "path",
@@ -44,29 +39,6 @@
         {
             "type": "path",
             "url": "../UI"
-        }
-        
-    ],
-    "repositories-comment": [
-        {
-            "type": "path",
-            "url": "./packages/lara-zeus/spatie-translatable"
-        },
-        {
-            "type": "composer",
-            "url": "https://packagist.org",
-            "canonical": false
-        }
-    ],
-    "repositories-comment": [
-        {
-            "type": "path",
-            "url": "./packages/lara-zeus/spatie-translatable"
-        },
-        {
-            "type": "composer",
-            "url": "https://packagist.org",
-            "canonical": false
         }
     ],
     "autoload": {

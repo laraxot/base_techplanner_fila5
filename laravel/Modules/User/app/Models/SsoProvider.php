@@ -24,9 +24,9 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property string|null $redirect_url
  * @property string|null $metadata_url
  * @property string|null $scopes
- * @property array|null  $settings
- * @property array|null  $domain_whitelist
- * @property array|null  $role_mapping
+ * @property array<string, mixed>|null  $settings
+ * @property array<int, string>|null  $domain_whitelist
+ * @property array<string, mixed>|null  $role_mapping
  * @property bool        $is_active
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at

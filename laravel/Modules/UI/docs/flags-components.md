@@ -10,6 +10,8 @@
 
 ## Panoramica
 
+<<<<<<< HEAD
+=======
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Documentazione UI](/laravel/Modules/UI/docs/README.md)
@@ -22,15 +24,19 @@
 Il modulo UI di  include una vasta collezione di SVG di bandiere nazionali che possono essere utilizzati come componenti Blade. Questi componenti sono autoregistrati e possono essere facilmente integrati in qualsiasi parte dell'applicazione, incluso il selettore di lingue nell'header.
 Il modulo UI di <nome progetto> include una vasta collezione di SVG di bandiere nazionali che possono essere utilizzati come componenti Blade. Questi componenti sono autoregistrati e possono essere facilmente integrati in qualsiasi parte dell'applicazione, incluso il selettore di lingue nell'header.
 Il modulo UI di <nome progetto> include una vasta collezione di SVG di bandiere nazionali che possono essere utilizzati come componenti Blade. Questi componenti sono autoregistrati e possono essere facilmente integrati in qualsiasi parte dell'applicazione, incluso il selettore di lingue nell'header.
+>>>>>>> c001364 (.)
 Il modulo UI di Quaeris include una vasta collezione di SVG di bandiere nazionali che possono essere utilizzati come componenti Blade. Questi componenti sono autoregistrati e possono essere facilmente integrati in qualsiasi parte dell'applicazione, incluso il selettore di lingue nell'header.
 
 ## Struttura dei Componenti Bandiera
 
 I file SVG delle bandiere sono archiviati in:
 ```
+<<<<<<< HEAD
+=======
 Modules/UI/resources/svg/flags/
 Modules/UI/resources/svg/flags/
 Modules/UI/resources/svg/flags/
+>>>>>>> c001364 (.)
 /var/www/html/Quaeris/laravel/Modules/UI/resources/svg/flags/
 ```
 
@@ -85,10 +91,13 @@ I componenti SVG supportano tutti gli attributi HTML standard, inclusi:
     class="h-6 w-6 rounded-full shadow-sm" 
     title="Italiano" 
     aria-label="Seleziona lingua italiana" 
+<<<<<<< HEAD
+=======
 <x-ui-flags.it
     class="h-6 w-6 rounded-full shadow-sm"
     title="Italiano"
     aria-label="Seleziona lingua italiana"
+>>>>>>> c001364 (.)
 />
 ```
 
@@ -154,6 +163,8 @@ Le bandiere devono essere utilizzate come icone Filament:
 2. **Personalizzazione**: Facile da personalizzare con classi CSS
 3. **Prestazioni**: Gli SVG sono leggeri e non richiedono richieste HTTP aggiuntive
 4. **Accessibilità**: Possibilità di aggiungere attributi di accessibilità
+<<<<<<< HEAD
+=======
 5. **Coerenza**: Utilizzo di componenti nativi di
 5. **Coerenza**: Utilizzo di componenti nativi di <nome progetto>
 5. **Coerenza**: Utilizzo di componenti nativi di <nome progetto>
@@ -347,6 +358,7 @@ Le bandiere devono essere utilizzate come icone Filament:
 3. **Prestazioni**: Gli SVG sono leggeri e non richiedono richieste HTTP aggiuntive
 4. **Accessibilità**: Possibilità di aggiungere attributi di accessibilità
 5. **Coerenza**: Utilizzo di componenti nativi di <nome progetto>
+>>>>>>> c001364 (.)
 5. **Coerenza**: Utilizzo di componenti nativi di Quaeris
 
 ## Bandiere Disponibili
@@ -403,4 +415,8 @@ Per visualizzare correttamente le bandiere, è necessario:
 
 ## Conclusione
 
+<<<<<<< HEAD
 L'utilizzo dei componenti SVG delle bandiere del modulo UI è il modo più efficace per rendere il selettore di lingue nell'header più accattivante e visibile. Questi componenti sono già integrati  e possono essere facilmente utilizzati in qualsiasi parte dell'applicazione.
+=======
+L'utilizzo dei componenti SVG delle bandiere del modulo UI è il modo più efficace per rendere il selettore di lingue nell'header più accattivante e visibile. Questi componenti sono già integrati  e possono essere facilmente utilizzati in qualsiasi parte dell'applicazione.
+>>>>>>> c001364 (.)

@@ -39,4 +39,3 @@
         <circle cx="170" cy="30" r="12" fill="{{ $color }}" opacity="0.4"/>
     </svg>
 @endif
-

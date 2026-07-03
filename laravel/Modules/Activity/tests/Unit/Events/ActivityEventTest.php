@@ -2,21 +2,17 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Activity\Tests\TestCase::class);
-
 use Modules\Activity\Events\ActivityEvent;
+use Modules\Activity\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-test('ActivityEvent can be instantiated', function () {
-    $event = new ActivityEvent;
+uses(TestCase::class);
 
-    expect($event)->toBeObject();
+test('ActivityEvent uses expected Laravel event traits', function () {
+    $event = new ActivityEvent();
+
+    $traitNames = (new ReflectionClass($event))->getTraitNames();
+    Assert::assertContains('Illuminate\Broadcasting\InteractsWithSockets', $traitNames);
+    Assert::assertContains('Illuminate\Foundation\Events\Dispatchable', $traitNames);
+    Assert::assertContains('Illuminate\Queue\SerializesModels', $traitNames);
 });
-
-test('ActivityEvent has expected properties', function () {
-    $event = new ActivityEvent;
-
-    // Siccome ActivityEvent è una classe vuota, testiamo solo che possa essere istanziata
-    expect($event)->toBeInstanceOf(\Illuminate\Foundation\Events\Dispatchable::class)
-        ->and($event)->toBeInstanceOf(\Illuminate\Queue\SerializesModels::class)
-        ->and($event)->toBeInstanceOf(\Illuminate\Contracts\Broadcasting\ShouldBroadcastNow::class);
-})->skip('Skipping because we need to check actual class definition');

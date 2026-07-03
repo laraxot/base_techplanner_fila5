@@ -41,9 +41,9 @@ class SafeArrayCastAction
      * Converte in modo sicuro un valore mixed in array.
      *
      * @param mixed      $value   Il valore da convertire
-     * @param array|null $default Valore di default se la conversione fallisce (default: [])
+     * @param array<int|string, mixed>|null $default Valore di default se la conversione fallisce (default: [])
      *
-     * @return array Il valore convertito
+     * @return array<int|string, mixed> Il valore convertito
      */
     public function execute(mixed $value, ?array $default = []): array
     {
@@ -94,10 +94,10 @@ class SafeArrayCastAction
      * Converte un valore in array con validazione di chiavi richieste.
      *
      * @param mixed      $value        Il valore da convertire
-     * @param array      $requiredKeys Chiavi che devono essere presenti
-     * @param array|null $default      Valore di default se la conversione fallisce
+     * @param array<int|string, mixed> $requiredKeys Chiavi che devono essere presenti
+     * @param array<int|string, mixed>|null $default      Valore di default se la conversione fallisce
      *
-     * @return array Il valore convertito con chiavi validate
+     * @return array<int|string, mixed> Il valore convertito con chiavi validate
      */
     public function executeWithKeys(mixed $value, array $requiredKeys, ?array $default = []): array
     {
@@ -120,8 +120,8 @@ class SafeArrayCastAction
      * Converte un valore in array con filtro di chiavi.
      *
      * @param mixed      $value       Il valore da convertire
-     * @param array      $allowedKeys Solo queste chiavi saranno mantenute
-     * @param array|null $default     Valore di default se la conversione fallisce
+     * @param array<int|string, mixed> $allowedKeys Solo queste chiavi saranno mantenute
+     * @param array<int|string, mixed>|null $default     Valore di default se la conversione fallisce
      *
      * @return array Il valore convertito con solo le chiavi permesse
      */
@@ -179,7 +179,7 @@ class SafeArrayCastAction
      * Metodo statico di convenienza per chiamate dirette.
      *
      * @param mixed      $value   Il valore da convertire
-     * @param array|null $default Valore di default se la conversione fallisce (default: [])
+     * @param array<int|string, mixed>|null $default Valore di default se la conversione fallisce (default: [])
      *
      * @return array Il valore convertito in array
      */
@@ -192,8 +192,8 @@ class SafeArrayCastAction
      * Metodo statico per cast con chiavi richieste.
      *
      * @param mixed      $value        Il valore da convertire
-     * @param array      $requiredKeys Chiavi che devono essere presenti
-     * @param array|null $default      Valore di default se la conversione fallisce
+     * @param array<int|string, mixed> $requiredKeys Chiavi che devono essere presenti
+     * @param array<int|string, mixed>|null $default      Valore di default se la conversione fallisce
      *
      * @return array Il valore convertito con chiavi validate
      */
@@ -206,8 +206,8 @@ class SafeArrayCastAction
      * Metodo statico per cast con filtro di chiavi.
      *
      * @param mixed      $value       Il valore da convertire
-     * @param array      $allowedKeys Solo queste chiavi saranno mantenute
-     * @param array|null $default     Valore di default se la conversione fallisce
+     * @param array<int|string, mixed> $allowedKeys Solo queste chiavi saranno mantenute
+     * @param array<int|string, mixed>|null $default     Valore di default se la conversione fallisce
      *
      * @return array Il valore convertito con solo le chiavi permesse
      */

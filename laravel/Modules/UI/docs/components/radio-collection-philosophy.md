@@ -126,4 +126,8 @@ The component should evolve through:
 
 The RadioCollection component is not merely a UI element but a complex system that bridges user intent and application state. Its design must balance technical considerations with human factors, composability with reliability, and simplicity with power.
 
+<<<<<<< HEAD
 When properly implemented, it becomes invisible—users don't think about the component itself, only about the choice they're making. This invisibility of interface is the ultimate goal of thoughtful component design.
+=======
+When properly implemented, it becomes invisible—users don't think about the component itself, only about the choice they're making. This invisibility of interface is the ultimate goal of thoughtful component design.
+>>>>>>> c001364 (.)

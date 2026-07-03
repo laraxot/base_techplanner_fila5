@@ -262,6 +262,41 @@ trait HasCoordinatePicker
     /**
      * Reverse geocodes coordinates to a structured address.
      * Returns a rich array for better form integration.
+     *
+     * @return array{
+     *     display_name: string,
+     *     address: string,
+     *     provider: string,
+     *     place_id: mixed,
+     *     osm_type: mixed,
+     *     osm_id: mixed,
+     *     licence: mixed,
+     *     importance: float|null,
+     *     type: mixed,
+     *     class: mixed,
+     *     boundingbox: array<int, mixed>|null,
+     *     street: string,
+     *     street_number: string,
+     *     zip: string,
+     *     postcode: string,
+     *     city: string,
+     *     suburb: string,
+     *     province: string,
+     *     state: string,
+     *     country: string,
+     *     country_code: string,
+     *     structured: array{
+     *         road: string,
+     *         house_number: string,
+     *         city: string,
+     *         postcode: string,
+     *         state: string,
+     *         country: string,
+     *         city_district: string
+     *     },
+     *     address_details: array<string, mixed>,
+     *     raw: array<string, mixed>
+     * }|null
      */
     #[ExposedLivewireMethod]
     #[Renderless]
@@ -349,6 +384,11 @@ trait HasCoordinatePicker
         return '';
     }
 
+    /**
+     * @param array<string, mixed> $data
+     *
+     * @return array<string, mixed>
+     */
     public static function extractCoordinates(array $data, string $field = 'coordinates', string $latColumn = 'latitude', string $lngColumn = 'longitude'): array
     {
         $coordinates = $data[$field] ?? null;

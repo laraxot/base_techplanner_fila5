@@ -14,7 +14,6 @@ use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\SelectFilter;
-use Modules\Job\Filament\Widgets\ClockWidget;
 use Modules\Media\Actions\Video\ConvertVideoByMediaConvertAction;
 use Modules\Media\Datas\ConvertData;
 use Modules\Media\Filament\Resources\MediaConvertResource;
@@ -24,7 +23,7 @@ use Override;
 
 class ListMediaConverts extends XotBaseListRecords
 {
-    public static string $resource = MediaConvertResource::class;
+    protected static string $resource = MediaConvertResource::class;
 
     /**
      * @return array<string, Tables\Columns\Column>
@@ -109,8 +108,6 @@ class ListMediaConverts extends XotBaseListRecords
      */
     protected function getHeaderWidgets(): array
     {
-        return [
-            ClockWidget::class,
-        ];
+        return [];
     }
 }

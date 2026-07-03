@@ -50,6 +50,7 @@ abstract class ListLogActivities extends XotBasePage
 
     protected string $view = 'activity::filament.pages.list-log-activities';
 
+    /** @var Collection<string, string> */
     protected static Collection $fieldLabelMap;
 
     public function mount(int|string $record): void
@@ -64,10 +65,14 @@ abstract class ListLogActivities extends XotBasePage
 
         // Convert to string (__() returns string|array|null)
         if (is_array($breadcrumb)) {
-            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
+            return implode(' ', array_map(fn (mixed $value): string => (string) $value, $breadcrumb));
         }
 
-        return (string) $breadcrumb;
+        if (is_string($breadcrumb)) {
+            return $breadcrumb;
+        }
+
+        return '';
     }
 
     public function getTitle(): string
@@ -84,12 +89,19 @@ abstract class ListLogActivities extends XotBasePage
 
         // __() returns string|array|null
         if (is_array($title)) {
-            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
+            return implode(' ', array_map(fn (mixed $value): string => (string) $value, $title));
         }
 
-        return (string) $title;
+        if (is_string($title)) {
+            return $title;
+        }
+
+        return '';
     }
 
+    /**
+     * @return LengthAwarePaginator<int, Activity>
+     */
     public function getActivities(): LengthAwarePaginator
     {
         // PHPStan Level 10: Type safety for Eloquent relations
@@ -149,6 +161,10 @@ abstract class ListLogActivities extends XotBasePage
     {
         $resource = static::getResource();
         if (! class_exists($resource) || ! method_exists($resource, 'canRestore')) {
+            return false;
+        }
+
+        if (! isset($this->record) || ! $this->record instanceof Model) {
             return false;
         }
 
@@ -253,7 +269,9 @@ abstract class ListLogActivities extends XotBasePage
     protected function sendRestoreSuccessNotification(): Notification
     {
         $title = __('activity::activities.events.restore_successful');
-        $titleString = is_array($title) ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title)) : (string) $title;
+        $titleString = is_array($title)
+            ? implode(' ', array_map(fn (mixed $value): string => (string) $value, $title))
+            : (is_string($title) ? $title : '');
 
         return Notification::make()
             ->title($titleString)
@@ -264,7 +282,9 @@ abstract class ListLogActivities extends XotBasePage
     protected function sendRestoreFailureNotification(?string $message = null): Notification
     {
         $title = __('activity::activities.events.restore_failed');
-        $titleString = is_array($title) ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title)) : (string) $title;
+        $titleString = is_array($title)
+            ? implode(' ', array_map(fn (mixed $value): string => (string) $value, $title))
+            : (is_string($title) ? $title : '');
 
         $notification = Notification::make()
             ->title($titleString)

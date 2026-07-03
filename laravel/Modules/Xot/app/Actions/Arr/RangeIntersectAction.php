@@ -15,6 +15,8 @@ class RangeIntersectAction
 
     /**
      * ---.
+     *
+     * @return array{0: int, 1: int}|bool
      */
     public function execute(int $a0, int $b0, int $a1, int $b1): array|bool
     {

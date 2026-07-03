@@ -27,6 +27,11 @@
 
 ## Stato
 - ❌ Conflitti da risolvere
+<<<<<<< HEAD
+- 📅 Data rilevamento: [DATE]
+- 🔄 Priorità: ALTA - Componenti UI critici
+=======
 - 📅 Data rilevamento: 2025-11-12
 - 📅 Data rilevamento: [DATE]
 - 🔄 Priorità: ALTA - Componenti UI critici
+>>>>>>> c001364 (.)

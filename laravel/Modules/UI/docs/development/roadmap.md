@@ -154,7 +154,10 @@
 
 ### Collegamenti Interni
 - [Bottlenecks](bottlenecks.md)
+<<<<<<< HEAD
+=======
 - [Best Practices](BEST-PRACTICES.md)
+>>>>>>> c001364 (.)
 - [Best Practices](best-practices.md)
 - [Testing](testing.md)
 
@@ -176,10 +179,13 @@
 - [Guida Sviluppo](./development.md)
 - [Best Practices](./best-practices.md)
 - [Architettura](./architecture.md)
+<<<<<<< HEAD
+=======
 - [Documentazione UI](./README.md)
 - [Guida Sviluppo](./DEVELOPMENT.md)
 - [Best Practices](./BEST-PRACTICES.md)
 - [Architettura](./ARCHITECTURE.md)
+>>>>>>> c001364 (.)
 
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](bashscripts/docs/roadmap.md)
@@ -198,6 +204,8 @@
 * [roadmap.md](../../../patient/docs/roadmap.md)
 * [roadmap.md](../../../cms/docs/roadmap.md)
 * [roadmap.md](../../../../themes/one/docs/roadmap.md)
+<<<<<<< HEAD
+=======
 * [roadmap.md](../../../Gdpr/docs/roadmap.md)
 * [roadmap.md](../../../Notify/docs/roadmap.md)
 * [roadmap.md](../../../Xot/docs/roadmap.md)
@@ -212,6 +220,7 @@
 * [roadmap.md](../../../Patient/docs/roadmap.md)
 * [roadmap.md](../../../Cms/docs/roadmap.md)
 * [roadmap.md](../../../../Themes/One/docs/roadmap.md)
+>>>>>>> c001364 (.)
 
 ---
 
@@ -377,4 +386,8 @@ Overall Module Completion: 60%
 
 [More details in docs/roadmap/weekly/week2.md]
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> c001364 (.)

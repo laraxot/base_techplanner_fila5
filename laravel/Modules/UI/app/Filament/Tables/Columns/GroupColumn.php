@@ -8,6 +8,9 @@ use Filament\Tables\Columns\Column;
 
 class GroupColumn extends Column
 {
+    /**
+     * @var array<int|string, mixed>
+     */
     public array $form = [];
 
     /**
@@ -27,19 +30,21 @@ class GroupColumn extends Column
         // Component initialization logic
     }
 
-    public function getFields(): array
+    /**
+     * @return array<Column>
+     */
+    public function getSchema(): array
     {
-        /* @var array<string, mixed> */
         return $this->schema;
     }
 
     /**
-     * @param array<int|string, mixed> $form
+     * @param  array<int|string, mixed>  $form
      */
     public function schema(array $form): self
     {
         // Type-check to ensure all elements are Column instances
-        $filtered = array_filter($form, function (mixed $item): bool {
+        $filtered = array_filter($form, static function (mixed $item): bool {
             return $item instanceof Column;
         });
 

@@ -15,8 +15,8 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * @property int|null             $id
  * @property string|null          $name
- * @property array|null           $scopes
- * @property array|null           $parameters
+ * @property array<int, string>|null           $scopes
+ * @property array<string, mixed>|null           $parameters
  * @property bool|null            $stateless
  * @property bool|null            $active
  * @property bool|null            $socialite
@@ -114,6 +114,7 @@ class SocialProvider extends BaseModel
         'updated_by' => 'string',
     ];
 
+    /** @return array<int, array<string, mixed>> */
     public function getRows(): array
     {
         return $this->getSushiRows();

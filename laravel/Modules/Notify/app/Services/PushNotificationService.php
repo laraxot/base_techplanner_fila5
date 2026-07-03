@@ -25,8 +25,10 @@ use function Safe\json_encode;
  */
 class PushNotificationService
 {
+    /** @var array<string, array<string, mixed>> */
     private array $config;
 
+    /** @var array<int, string> */
     private array $platforms = ['fcm', 'apns', 'webpush'];
 
     public function __construct()
@@ -51,6 +53,10 @@ class PushNotificationService
 
     /**
      * Invia notifica push a un singolo dispositivo
+     *
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
+     * @return array<string, array<string, mixed>>
      */
     public function sendToDevice(string $token, array $notification, array $data = []): array
     {
@@ -80,6 +86,11 @@ class PushNotificationService
 
     /**
      * Invia notifica push a multiple dispositivi
+     *
+     * @param  array<int, string>  $tokens
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
+     * @return array<string, array<string, mixed>>
      */
     public function sendToDevices(array $tokens, array $notification, array $data = []): array
     {
@@ -114,6 +125,10 @@ class PushNotificationService
 
     /**
      * Invia notifica push a un topic
+     *
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
+     * @return array<string, array<string, mixed>>
      */
     public function sendToTopic(string $topic, array $notification, array $data = []): array
     {
@@ -142,6 +157,10 @@ class PushNotificationService
 
     /**
      * Invia notifica push a tutti gli utenti
+     *
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
+     * @return array<string, mixed>
      */
     public function sendToAll(array $notification, array $data = []): array
     {
@@ -160,6 +179,10 @@ class PushNotificationService
 
     /**
      * Invia notifica push programmata
+     *
+     * @param  array<int, string>  $tokens
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
      */
     public function scheduleNotification(array $tokens, array $notification, array $data, DateTime $scheduleTime): string
     {
@@ -182,6 +205,10 @@ class PushNotificationService
 
     /**
      * Invia notifica push con template
+     *
+     * @param  array<int, string>  $tokens
+     * @param  array<string, mixed>  $variables
+     * @return array<string, mixed>
      */
     public function sendWithTemplate(string $templateId, array $tokens, array $variables = []): array
     {
@@ -199,6 +226,11 @@ class PushNotificationService
 
     /**
      * Invia notifica push con targeting avanzato
+     *
+     * @param  array<string, mixed>  $criteria
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
+     * @return array<string, mixed>
      */
     public function sendWithTargeting(array $criteria, array $notification, array $data = []): array
     {
@@ -216,6 +248,10 @@ class PushNotificationService
 
     /**
      * Invia notifica push a una specifica piattaforma
+     *
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
+     * @return array<string, mixed>
      */
     private function sendToPlatform(string $platform, string $token, array $notification, array $data): array
     {
@@ -229,6 +265,10 @@ class PushNotificationService
 
     /**
      * Invia notifica FCM
+     *
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
+     * @return array<string, mixed>
      */
     private function sendFCMNotification(string $token, array $notification, array $data): array
     {
@@ -277,6 +317,10 @@ class PushNotificationService
 
     /**
      * Invia notifica APNS
+     *
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
+     * @return array<string, mixed>
      */
     private function sendAPNSNotification(string $token, array $notification, array $data): array
     {
@@ -304,6 +348,10 @@ class PushNotificationService
 
     /**
      * Invia notifica Web Push
+     *
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
+     * @return array<string, mixed>
      */
     private function sendWebPushNotification(string $token, array $notification, array $data): array
     {
@@ -329,6 +377,11 @@ class PushNotificationService
 
     /**
      * Invia notifica batch a una piattaforma
+     *
+     * @param  array<int, string>  $tokens
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
+     * @return array<string, mixed>
      */
     private function sendBatchToPlatform(string $platform, array $tokens, array $notification, array $data): array
     {

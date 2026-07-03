@@ -4,4 +4,8 @@ topic: theme
 canonical: ../../../Themes/docs/shared-components/theme.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/theme.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/theme.md
+>>>>>>> c001364 (.)

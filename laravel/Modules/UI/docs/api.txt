@@ -4,4 +4,8 @@ topic: api
 canonical: ../../../Themes/docs/shared-components/api.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/api.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/api.md
+>>>>>>> c001364 (.)

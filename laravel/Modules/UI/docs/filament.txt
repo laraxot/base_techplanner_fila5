@@ -4,4 +4,8 @@ topic: filament
 canonical: ../../../Themes/docs/shared-components/filament-Modules.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/filament-Modules.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/filament-Modules.md
+>>>>>>> c001364 (.)

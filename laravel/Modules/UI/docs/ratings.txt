@@ -4,4 +4,8 @@ topic: ratings
 canonical: ../../../Themes/docs/shared-components/ratings.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/ratings.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/ratings.md
+>>>>>>> c001364 (.)

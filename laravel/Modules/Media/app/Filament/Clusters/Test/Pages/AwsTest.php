@@ -14,6 +14,7 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Actions;
+use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Modules\Media\Filament\Clusters\Test;
 use Modules\Xot\Filament\Pages\XotBasePage;
@@ -24,6 +25,7 @@ class AwsTest extends XotBasePage
 {
     protected static ?string $cluster = Test::class;
 
+    /** @var array<string, mixed> */
     public array $testResults = [];
 
     public string $activeTab = 's3';
@@ -32,9 +34,7 @@ class AwsTest extends XotBasePage
 
     private const KEY_PREVIEW_LENGTH = 8;
 
-    /**
-     * @var array<string, string>
-     */
+    /** @var array<string, string> */
     public array $connectionTests = [
         's3' => 'Test S3 Connection',
         'cloudfront' => 'Test CloudFront',
@@ -42,6 +42,9 @@ class AwsTest extends XotBasePage
         'full' => 'Full Diagnostic',
     ];
 
+    /**
+     * @return array<int, Component>
+     */
     protected function getS3TestSchema(): array
     {
         return [
@@ -70,6 +73,9 @@ class AwsTest extends XotBasePage
         ];
     }
 
+    /**
+     * @return array<int, Component>
+     */
     protected function getCloudFrontTestSchema(): array
     {
         return [
@@ -88,11 +94,14 @@ class AwsTest extends XotBasePage
         ];
     }
 
+    /**
+     * @return array<int, Component>
+     */
     protected function getIamTestSchema(): array
     {
         return [
             Section::make('IAM Permissions Test')->schema([
-                TextInput::make('iam_user')->default(env('AWS_ACCESS_KEY_ID')),
+                TextInput::make('iam_user')->default(config('filesystems.disks.s3.key')),
                 Actions::make([
                     Action::make('test_iam_credentials')->action('testIamCredentials'),
                     Action::make('test_iam_policies')->color('warning')->action('testIamPolicies'),
@@ -106,6 +115,9 @@ class AwsTest extends XotBasePage
         ];
     }
 
+    /**
+     * @return array<int, Component>
+     */
     protected function getDiagnosticsSchema(): array
     {
         return [
@@ -231,6 +243,9 @@ class AwsTest extends XotBasePage
     }
 
     /* Helper Methods */
+    /**
+     * @return array<string, mixed>
+     */
     protected function getAwsConfig(): array
     {
         return [

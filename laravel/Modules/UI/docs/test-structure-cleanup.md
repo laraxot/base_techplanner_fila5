@@ -229,4 +229,8 @@ Modules/UI/tests/Unit/Widgets/
 **Cleanup Status**: Ready for implementation
 **Impact**: Medium risk, improves code quality and test reliability
 **Time Estimate**: 15-30 minutes
+<<<<<<< HEAD
 **Files Affected**: 13 files to move, 4 directories to create, 1 directory to remove
+=======
+**Files Affected**: 13 files to move, 4 directories to create, 1 directory to remove
+>>>>>>> c001364 (.)

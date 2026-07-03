@@ -38,7 +38,10 @@ Entrambi i temi contengono i seguenti file di traduzione:
 11. `patient.php` - Gestione pazienti
 12. `studio.php` - Gestione studi
 
+<<<<<<< HEAD
+=======
 ## Correzioni Applicate (2025-01-06)
+>>>>>>> c001364 (.)
 ## Correzioni Applicate ([DATE])
 
 ### 1. Problema: Traduzione mancante `pub_theme::appointment.fields.state.label`
@@ -74,7 +77,10 @@ Entrambi i temi contengono i seguenti file di traduzione:
 - `duration` - Durata
 - `emergency` - Emergenza
 
+<<<<<<< HEAD
+=======
 ### 4. Problema: Testo hardcoded in italiano per i referti (2025-01-06)
+>>>>>>> c001364 (.)
 ### 4. Problema: Testo hardcoded in italiano per i referti ([DATE])
 
 **Causa**: Il file `appointment/item.blade.php` conteneva testo hardcoded in italiano per la sezione referti:
@@ -235,6 +241,10 @@ return [
 ---
 
 **Ultimo aggiornamento**: [DATE]
+<<<<<<< HEAD
+**Versione**: 2.2
+**Autore**: AI Assistant
+=======
 - [Modules/<nome modulo>/docs/translation_quality_standards.md](../laravel/Modules/<nome modulo>/docs/translation_quality_standards.md)
 - [Modules/<nome progetto>/docs/translation_quality_standards.md](../laravel/Modules/<nome progetto>/docs/translation_quality_standards.md)
 - [Modules/<nome modulo>/docs/translation_quality_standards.md](../laravel/Modules/<nome modulo>/docs/translation_quality_standards.md)
@@ -247,3 +257,4 @@ return [
 **Ultimo aggiornamento**: 2025-01-06
 **Versione**: 2.2
 **Autore**: AI Assistant
+>>>>>>> c001364 (.)

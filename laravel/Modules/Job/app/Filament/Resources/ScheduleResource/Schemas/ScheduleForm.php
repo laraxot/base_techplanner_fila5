@@ -26,7 +26,7 @@ use Webmozart\Assert\Assert;
  */
 class ScheduleForm extends XotBaseResourceForm
 {
-    /** @var DataCollection<CommandData>|null */
+    /** @var DataCollection<int, CommandData>|null */
     protected static ?DataCollection $commands = null;
 
     /**
@@ -105,7 +105,7 @@ class ScheduleForm extends XotBaseResourceForm
                     ->reorderable(false),
                 TextInput::make('expression')
                     ->placeholder('* * * * *')
-                    ->rules([new Corn])
+                    ->rules([new Corn()])
                     ->required(),
                 TagsInput::make('environments')->placeholder(null),
                 TextInput::make('log_filename'),

@@ -22,7 +22,6 @@ class UserCalendarWidget extends XotBaseSchemaWidget
         $actionSuffix = Str::of($function)->studly()->append('Action')->toString();
         $resource = XotData::make()->getUserResourceClassByType($this->type);
         $model = $resource::getModel();
-        $modelString = \is_string($model) ? $model : (string) $model;
 
         return Str::of($modelString)
             ->replace('\Models\\', '\\Actions\\')
@@ -31,9 +30,8 @@ class UserCalendarWidget extends XotBaseSchemaWidget
     }
 
     /**
-     * @param array<string, mixed> $fetchInfo
-     * @param array<string, mixed> $fetchInfo
-     *
+     * @param  array<string, mixed>  $fetchInfo
+     * @param  array<string, mixed>  $fetchInfo
      * @return array<int, array<string, mixed>>
      */
     public function fetchEvents(array $fetchInfo): array

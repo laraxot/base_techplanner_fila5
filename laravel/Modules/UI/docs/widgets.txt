@@ -4,4 +4,8 @@ topic: widgets
 canonical: ../../../Themes/docs/shared-components/widgets.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/widgets.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/widgets.md
+>>>>>>> c001364 (.)

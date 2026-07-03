@@ -4,4 +4,8 @@ topic: effetcts
 canonical: ../../../Themes/docs/shared-components/effetcts.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/effetcts.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/effetcts.md
+>>>>>>> c001364 (.)

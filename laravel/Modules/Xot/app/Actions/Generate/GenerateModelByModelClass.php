@@ -15,6 +15,9 @@ class GenerateModelByModelClass
 {
     use QueueableAction;
 
+    /**
+     * @var array<string, mixed>
+     */
     public array $replaces = [];
 
     /**
@@ -98,6 +101,9 @@ class GenerateModelByModelClass
          */
     }
 
+    /**
+     * @param array<string, mixed> $replaces
+     */
     public function setCustomReplaces(array $replaces): self
     {
         $this->replaces = array_merge($this->replaces, $replaces);

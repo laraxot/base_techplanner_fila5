@@ -255,7 +255,10 @@ php artisan ui:accessibility-check
 
 ## Collegamenti
 
+<<<<<<< HEAD
+=======
 *Ultimo aggiornamento: gennaio 2025*
+>>>>>>> c001364 (.)
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Components Guide](components.md)
 - [TableLayoutEnum Guide](table-layout-enum-complete-guide.md)
@@ -508,7 +511,14 @@ php artisan ui:accessibility-check
 
 ## Collegamenti
 
+<<<<<<< HEAD
+- [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
+- [Components Guide](components.md)
+- [TableLayoutEnum Guide](table-layout-enum-complete-guide.md)
+
+=======
 *Ultimo aggiornamento: gennaio 2025*
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Components Guide](components.md)
 - [TableLayoutEnum Guide](table-layout-enum-complete-guide.md)
+>>>>>>> c001364 (.)

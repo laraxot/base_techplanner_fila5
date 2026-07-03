@@ -1,6 +1,9 @@
 # Filament 4.x Upgrade - Modulo UI
 
+<<<<<<< HEAD
+=======
 **Data**: 2025-09-30
+>>>>>>> c001364 (.)
 **Status**: ✅ COMPLETATO
 **Versione Filament**: 4.0.20
 
@@ -294,4 +297,8 @@ La view `ui::filament.widgets.user-calendar` deve essere aggiornata per mostrare
 4. **Testing**: Testare approfonditamente il widget quando il pacchetto sarà aggiornato
 
 *Ultimo aggiornamento: [DATE]*
+<<<<<<< HEAD
 *Modulo UI compatibile con Filament 4.0.20*
+=======
+*Modulo UI compatibile con Filament 4.0.20*
+>>>>>>> c001364 (.)

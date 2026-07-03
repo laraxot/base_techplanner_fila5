@@ -3,7 +3,7 @@ title: "Sixteen Theme Wiki Index"
 type: index
 tags: [sixteen, theme, wiki, index, frontoffice]
 created: 2026-04-15
-updated: 2026-06-05
+updated: 2026-06-13
 qmd: "sixteen theme wiki index frontoffice folio filament parity docs"
 issues:
   - "https://github.com/laraxot/theme_sixteen_fila5/issues/54"
@@ -35,6 +35,12 @@ Le regole generiche di context compression restano nel wiki root e nel modulo AI
 - [llm-wiki prompt](../../../../bashscripts/tools/prompts/llm-wiki.txt) — router agente
 - [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
 
+## Testing / PHPStan (2026-06-13)
+
+- [theme-component-test-contract](./concepts/theme-component-test-contract.md) — test UI module → path componenti Sixteen
+- [completion-roadmap](./overviews/completion-roadmap.md) — priorità chiusura tema FO
+- [phpstan-compliance](./concepts/phpstan-compliance.md) — stato + confine neon `Modules/` only
+
 ## Header / auth slim (HTML + visual parity — religione permanente)
 - [design-comuni-header-parity](../../../../docs/wiki/rules/design-comuni-header-parity.md) — rule root
 - [header-html-visual-parity-rule](../../../../docs/wiki/memories/header-html-visual-parity-rule.md) — memoria
@@ -59,7 +65,7 @@ Le regole generiche di context compression restano nel wiki root e nel modulo AI
 
 ## Pagine
 - [geo-map-lit-reconstruction-guide.md](../../../Modules/Geo/docs/wiki/concepts/geo-map-lit-reconstruction-guide.md) — ricostruire mappa `/it` da documentazione
-- [segnalazioni-elenco-map-integration.md](./concepts/segnalazioni-elenco-map-integration.md) — blade, filtri, contratto JSON
+- [ticket-list-map-integration.md](./concepts/ticket-list-map-integration.md) — blade, filtri, contratto JSON
 - [geo-map-marker-civic-pin-theme-boundary.md](./concepts/geo-map-marker-civic-pin-theme-boundary.md) — override CSS marker
 - [geo-map-popup-leaflet-boundary.md](./concepts/geo-map-popup-leaflet-boundary.md) — popup + conflitti CSS tema
 - [geo-map-lit-reconstruction-guide.md](../../../Modules/Geo/docs/wiki/concepts/geo-map-lit-reconstruction-guide.md) — ricostruzione marker + popup (SSoT modulo Geo)
@@ -81,7 +87,7 @@ Le regole generiche di context compression restano nel wiki root e nel modulo AI
 - [fo-pa-tokens-uniformity](../architecture/fo-pa-tokens-uniformity.md) — token PA + `.fo-filament-form-shell`; no hex per `data-page`
 - [auth-login-ux-design-wcag](./design/auth-login-ux-design-wcag.md) — login/register WCAG + Filament primary
 - [filament-first-frontoffice](./concepts/filament-first-frontoffice.md) — Filament Blade su FO (`x-filament::tabs` su `/it`, skin Design Comuni)
-- [segnalazioni-elenco-filament-tabs](./concepts/segnalazioni-elenco-filament-tabs.md) — tab Mappa/Elenco STORY-065
+- [ticket-list-filament-tabs](./concepts/ticket-list-filament-tabs.md) — tab Mappa/Elenco STORY-065
 - [wizard-parity-documentation-map](./concepts/wizard-parity-documentation-map.md) — ordine lettura parity segnalazione (dry tema)
 - [bootstrap-italia-tailwind-philosophy](./concepts/bootstrap-italia-tailwind-philosophy.md) — `@apply` come alias, HTML semantico
 - [daisyui-pro-contro-metriche](./concepts/daisyui-pro-contro-metriche.md) — sintesi tema; SSoT in modulo Cms

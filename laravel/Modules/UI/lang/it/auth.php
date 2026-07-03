@@ -38,13 +38,6 @@ return [
         'login_link' => 'Accedi',
         'register_link' => 'Registrati',
     ],
-    'user_menu_profile' => [
-        'services' => 'I miei servizi',
-        'practices' => 'Le mie pratiche',
-        'notifications' => 'Notifiche',
-        'settings' => 'Impostazioni',
-        'logout' => 'Esci',
-    ],
     'logout' => [
         'title' => 'Logout',
         'confirm_message' => 'Sei sicuro di voler effettuare il logout?',

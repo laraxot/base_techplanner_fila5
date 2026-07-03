@@ -4,4 +4,8 @@ topic: carousel_slider
 canonical: ../../../Themes/docs/shared-components/carousel-slider.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/carousel-slider.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/carousel-slider.md
+>>>>>>> c001364 (.)

@@ -52,13 +52,6 @@ return [
         'login_link' => 'Sign in',
         'register_link' => 'Register',
     ],
-    'profile_services' => [
-        'services' => 'My Services',
-        'practices' => 'My Practices',
-        'notifications' => 'Notifications',
-        'settings' => 'Settings',
-        'logout' => 'Log Out',
-    ],
     'navigation' => [
         'open_menu' => 'Open main menu',
         'close_menu' => 'Close main menu',

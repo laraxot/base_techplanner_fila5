@@ -1,4 +1,12 @@
-# PHPStan Fixes – Gennaio 2025
+# PHPStan Fixes — Job
+
+## 2026-06-10 — STORY-307 · L10 · 0 errori codice
+
+795→0. [#336](https://github.com/laraxot/base_fixcity_fila5/issues/336). `GetTaskFrequenciesAction` + test Assert.
+
+---
+
+## Storico — Gennaio 2025
 
 ## ✅ Stato complessivo
 
@@ -66,7 +74,6 @@ protected function getHeaderActions(): array
 - `docs/phpstan-level7-guide.md` – guida completa allineata al livello 7
 - `docs/phpstan/guida_filament_table_actions.md` – best practice sulle azioni Filament
 
-> Ultimo aggiornamento: Gennaio 2025 — Stato: ✅ Completato (0 errori)
 
 ---
 
@@ -86,17 +93,3 @@ protected function getHeaderActions(): array
 - [lang-link.md](../../../activity/docs/lang-link.md)
 - [lang-link.md](../../../patient/docs/lang-link.md)
 - [lang-link.md](../../../cms/docs/lang-link.md)
-- [lang-link.md](../../../Chart/docs/lang-link.md)
-- [lang-link.md](../../../Reporting/docs/lang-link.md)
-- [lang-link.md](../../../Gdpr/docs/lang-link.md)
-- [lang-link.md](../../../Notify/docs/lang-link.md)
-- [lang-link.md](../../../Xot/docs/lang-link.md)
-- [lang-link.md](../../../Dental/docs/lang-link.md)
-- [lang-link.md](../../../User/docs/lang-link.md)
-- [lang-link.md](../../../UI/docs/lang-link.md)
-- [lang-link.md](../../../Job/docs/lang-link.md)
-- [lang-link.md](../../../Media/docs/lang-link.md)
-- [lang-link.md](../../../Tenant/docs/lang-link.md)
-- [lang-link.md](../../../Activity/docs/lang-link.md)
-- [lang-link.md](../../../Patient/docs/lang-link.md)
-- [lang-link.md](../../../Cms/docs/lang-link.md)

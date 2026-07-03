@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\UI\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Modules\UI\Models\Category;
 
 class CategoryFactory extends Factory
 {
@@ -19,8 +18,5 @@ class CategoryFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition(): array
-    {
-        return [];
-    }
+    public function definition(): array {}
 }

@@ -38,14 +38,20 @@ I nomi specifici dell'applicazione devono apparire solo:
 4. Usare esempi generici nelle spiegazioni
 
 ## Collegamenti Bidirezionali
+<<<<<<< HEAD
+=======
 - [README](README.md)
+>>>>>>> c001364 (.)
 - [README](readme.md)
 - [Design System](design-system.md)
 - [Componenti](components.md)
 
 ## Vedi Anche
+<<<<<<< HEAD
+=======
 - [Documentazione Principale](../../../docs/README.md)
 - [Standard di Codice](../../../docs/standards/coding-standards.md)
+>>>>>>> c001364 (.)
 - [Documentazione Principale](../../../../docs/readme.md)
 - [Standard di Codice](../../../../docs/standards/coding-standards.md)
 # Regole di Naming nei Moduli
@@ -86,15 +92,24 @@ I nomi specifici dell'applicazione devono apparire solo:
 4. Usare esempi generici nelle spiegazioni
 
 ## Collegamenti Bidirezionali
+<<<<<<< HEAD
+=======
 - [README](README.md)
+>>>>>>> c001364 (.)
 - [README](readme.md)
 - [Design System](design-system.md)
 - [Componenti](components.md)
 
 ## Vedi Anche
+<<<<<<< HEAD
+- [Documentazione Principale](../../../../docs/project/readme.md)
+- [Standard di Codice](../../../../docs/project/standards/coding-standards.md)
+- [Best Practices](../../../../docs/project/standards/best-practices.md)
+=======
 - [Documentazione Principale](../../../project_docs/README.md)
 - [Standard di Codice](../../../project_docs/standards/coding-standards.md)
 - [Best Practices](../../../project_docs/standards/best-practices.md)
 - [Documentazione Principale](../../../../docs/project/readme.md)
 - [Standard di Codice](../../../../docs/project/standards/coding-standards.md)
 - [Best Practices](../../../../docs/project/standards/best-practices.md)
+>>>>>>> c001364 (.)

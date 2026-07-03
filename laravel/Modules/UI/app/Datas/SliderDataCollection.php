@@ -9,12 +9,7 @@ use Spatie\LaravelData\DataCollection;
 
 final class SliderDataCollection extends Data
 {
-    /**
-     * @var DataCollection<SliderData>
-     */
     public DataCollection $slider_data;
 
-    public function __construct()
-    {
-    }
+    public function __construct() {}
 }

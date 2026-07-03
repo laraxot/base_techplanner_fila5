@@ -161,8 +161,11 @@ public function eventDidMount(): string
 
 ## Ultimo aggiornamento
 [DATE]
+<<<<<<< HEAD
+=======
 - [Modules/UI/docs/full-calendar.md](../Modules/UI/docs/full-calendar.md)
 - [Regole .mdc](../.cursor/rules/cursor.mdc), [../.windsurf/rules/windsurf.mdc]
 
 ## Ultimo aggiornamento
 2025-06-04
+>>>>>>> c001364 (.)

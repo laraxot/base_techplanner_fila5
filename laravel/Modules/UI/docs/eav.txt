@@ -4,4 +4,8 @@ topic: eav
 canonical: ../../../Themes/docs/shared-components/eav.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/eav.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/eav.md
+>>>>>>> c001364 (.)

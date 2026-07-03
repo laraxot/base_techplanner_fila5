@@ -3,7 +3,10 @@
 ## Current Status: ✅ PASSED
 - **PHPStan Level**: 10
 - **Errors**: 0
+<<<<<<< HEAD
+=======
 - **Last Checked**: 2025-11-17
+>>>>>>> c001364 (.)
 - **Last Checked**: [DATE]
 
 ## Module Overview
@@ -71,5 +74,9 @@ The UI module integrates with:
 ---
 
 *Status: ✅ PHPStan Level 10 Compliant*
+<<<<<<< HEAD
+*
+=======
 *Last Updated: 2025-11-17*
 *
+>>>>>>> c001364 (.)

@@ -4,4 +4,8 @@ topic: megamenu
 canonical: ../../../Themes/docs/shared-components/megamenu.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/megamenu.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/megamenu.md
+>>>>>>> c001364 (.)

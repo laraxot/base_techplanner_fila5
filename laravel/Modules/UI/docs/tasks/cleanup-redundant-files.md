@@ -18,4 +18,8 @@ Ripulire il modulo UI da file di backup, duplicati e file temporanei che creano 
 
 ## 🔗 Riferimenti
 - [Roadmap UI](../roadmap.md)
+<<<<<<< HEAD
 - [Filosofia UI](../filosofia-modulo-ui.md)
+=======
+- [Filosofia UI](../filosofia-modulo-ui.md)
+>>>>>>> c001364 (.)

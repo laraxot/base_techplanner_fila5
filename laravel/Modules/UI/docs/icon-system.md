@@ -331,13 +331,19 @@ Tutte le icone sono compatibili con Filament 4.x e versioni successive.
 
 ## 📝 Changelog
 
+<<<<<<< HEAD
+=======
 ### v1.1.0 - 2025-01-27
+>>>>>>> c001364 (.)
 ### v1.1.0 - [DATE]
 - **🔧 Icone Aggiuntive**: Aggiunte icone mancanti (cancel, save, logout, showPassword, user-main, user-team, user-user-tenant)
 - **🐛 Bug Fix**: Risolto errore "SvgNotFound" per icona "cancel"
 - **📝 Traduzioni**: Aggiornati file di traduzione per utilizzare prefisso "ui-" corretto
 
+<<<<<<< HEAD
+=======
 ### v1.0.0 - 2025-01-27
+>>>>>>> c001364 (.)
 ### v1.0.0 - [DATE]
 - **🎨 Sistema Icone**: Implementato sistema completo di icone SVG
 - **🔧 Registrazione Automatica**: Icone registrate automaticamente
@@ -350,4 +356,8 @@ Tutte le icone sono compatibili con Filament 4.x e versioni successive.
 - Validazione sicura dei percorsi: uso di `Symfony\Component\Finder\SplFileInfo` prima di costruire i nomi delle icone.
 - Prefisso garantito stringa: cast esplicito e fallback `''` per i set personalizzati.
 - Verifiche qualità: PHPStan L10 ✅, PHPMD ✅, PHPInsights ✅ (nota: soglia complessità legacy ancora 20).
+<<<<<<< HEAD
 - Documentare nuove icone o prefissi aggiuntivi in questa sezione prima del rilascio.
+=======
+- Documentare nuove icone o prefissi aggiuntivi in questa sezione prima del rilascio.
+>>>>>>> c001364 (.)

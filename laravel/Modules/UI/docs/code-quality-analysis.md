@@ -1,7 +1,10 @@
 # Analisi Qualità Codice - Modulo UI
 
 ## Data
+<<<<<<< HEAD
+=======
 2025-01-06
+>>>>>>> c001364 (.)
 [DATE]
 
 ## Strumenti Utilizzati
@@ -51,6 +54,12 @@ Eseguire `./vendor/bin/rector process Modules/UI --dry-run` per vedere le modifi
 
 ## Collegamenti
 
+<<<<<<< HEAD
+- [Module Analysis Report](../../../../docs/module-analysis-report-[date].md)
+- [PHPStan Level 10 Fixes](../../../../docs/phpstan-level10-fixes-[date].md)
+
+*Ultimo aggiornamento: [DATE]*
+=======
 - [Module Analysis Report](../../../docs/module-analysis-report-2025-01-06.md)
 - [PHPStan Level 10 Fixes](../../../docs/phpstan-level10-fixes-2025-01-06.md)
 
@@ -59,3 +68,4 @@ Eseguire `./vendor/bin/rector process Modules/UI --dry-run` per vedere le modifi
 - [PHPStan Level 10 Fixes](../../../../docs/phpstan-level10-fixes-[date].md)
 
 *Ultimo aggiornamento: [DATE]*
+>>>>>>> c001364 (.)

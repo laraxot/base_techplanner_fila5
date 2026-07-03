@@ -227,4 +227,8 @@ composer format        # Formatta il codice
 - File upload
 
 ## Changelog
+<<<<<<< HEAD
 Le modifiche vengono tracciate nel repository GitHub.
+=======
+Le modifiche vengono tracciate nel repository GitHub.
+>>>>>>> c001364 (.)

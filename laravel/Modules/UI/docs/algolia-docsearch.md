@@ -77,11 +77,14 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 * [algolia-docsearch.md](../../../xot/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../ui/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../cms/docs/algolia-docsearch.md)
+<<<<<<< HEAD
+=======
 * [algolia-docsearch.md](../../../Chart/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Gdpr/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Xot/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../UI/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Cms/docs/algolia-docsearch.md)
+>>>>>>> c001364 (.)
 
 ### Versione Incoming
 
@@ -165,6 +168,12 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 * [algolia-docsearch.md](../../../xot/project_docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../ui/project_docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../cms/project_docs/algolia-docsearch.md)
+<<<<<<< HEAD
+
+### Versione Incoming
+
+---
+=======
 * [algolia-docsearch.md](../../../Chart/project_docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Gdpr/project_docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Xot/project_docs/algolia-docsearch.md)
@@ -174,3 +183,4 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 ### Versione Incoming
 
 ---
+>>>>>>> c001364 (.)

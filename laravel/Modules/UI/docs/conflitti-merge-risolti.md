@@ -1,6 +1,9 @@
 # Conflitti di Merge Risolti nel Modulo UI
 
+<<<<<<< HEAD
+=======
 ## Conflitti Risolti (2025-05-13)
+>>>>>>> c001364 (.)
 ## Conflitti Risolti ([DATE])
 
 ### 1. UIServiceProvider.php
@@ -66,6 +69,8 @@ Questa documentazione integra le informazioni sui conflitti risolti, fornendo de
 # Conflitti di Merge Risolti nel Modulo UI
 
 ## Conflitti Risolti ([DATE])
+<<<<<<< HEAD
+=======
 - [Vedi anche: UI/docs/README.md](./README.md)
 - [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
 - [Vedi anche: Blog/docs/README.md](../../Blog/docs/README.md)
@@ -74,6 +79,7 @@ Questa documentazione integra le informazioni sui conflitti risolti, fornendo de
 # Conflitti di Merge Risolti nel Modulo UI
 
 ## Conflitti Risolti (2025-05-13)
+>>>>>>> c001364 (.)
 
 ### 1. UIServiceProvider.php
 
@@ -135,8 +141,11 @@ Questa documentazione integra le informazioni sui conflitti risolti, fornendo de
 - [Vedi anche: Blog/docs/README.md](../../blog/docs/readme.md)
 - [Vedi anche: Cms/docs/README.md](../../cms/docs/readme.md)
 - [Vedi anche: Comment/docs/README.md](../../comment/docs/readme.md)
+<<<<<<< HEAD
+=======
 - [Vedi anche: UI/docs/README.md](./README.md)
 - [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
 - [Vedi anche: Blog/docs/README.md](../../Blog/docs/README.md)
 - [Vedi anche: Cms/docs/README.md](../../Cms/docs/README.md)
 - [Vedi anche: Comment/docs/README.md](../../Comment/docs/README.md)
+>>>>>>> c001364 (.)

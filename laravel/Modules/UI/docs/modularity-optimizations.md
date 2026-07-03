@@ -210,7 +210,10 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 
 ## Documentazione Correlata
 
+<<<<<<< HEAD
+=======
 - [UI Best Practices](./best-practices/README.md)
+>>>>>>> c001364 (.)
 - [Root Docs: Modularity Hardcoded Names](../../../../docs/modularity-hardcoded-names.md)
 - [Regole Cursor: Modularity Rules](../../../.cursor/rules/modularity-hardcoded-names.mdc)
 - [UI Architecture Overview](./architecture-overview.md)
@@ -232,4 +235,8 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 
 ---
 
+<<<<<<< HEAD
 **Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
+=======
+**Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
+>>>>>>> c001364 (.)

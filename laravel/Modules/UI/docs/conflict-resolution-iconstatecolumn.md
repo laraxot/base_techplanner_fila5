@@ -68,7 +68,10 @@ Il file `Modules/UI/app/Filament/Tables/Columns/IconStateColumn.php` presenta co
 
 - [selectstatecolumn.md](selectstatecolumn.md)
 - [table-components.md](table-components.md)
+<<<<<<< HEAD
+=======
 *Ultimo aggiornamento: 29 luglio 2025*
+>>>>>>> c001364 (.)
 - [Modules/UI/docs/](../../docs/)
 
 # Risoluzione Conflitto IconStateColumn.php
@@ -145,4 +148,7 @@ Il file `Modules/UI/app/Filament/Tables/Columns/IconStateColumn.php` presenta co
 - [Modules/UI/project_docs/](../project_docs/)
 - [Modules/UI/project_docs/](../project_docs/)
 
+<<<<<<< HEAD
+=======
 *Ultimo aggiornamento: 29 luglio 2025*
+>>>>>>> c001364 (.)

@@ -4,4 +4,8 @@ topic: tailwind_themes
 canonical: ../../../Themes/docs/shared-components/tailwind-themes.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/tailwind-themes.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/tailwind-themes.md
+>>>>>>> c001364 (.)

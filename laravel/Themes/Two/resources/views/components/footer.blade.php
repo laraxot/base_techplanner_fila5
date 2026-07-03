@@ -47,11 +47,6 @@
                     </li>
                     <li class="text-gray-600">
                         <i class="fas fa-phone mr-2" aria-hidden="true"></i>
-                        <i class="fas fa-envelope mr-2"></i>
-                        {{ config('mail.from.address') }}
-                    </li>
-                    <li class="text-gray-600">
-                        <i class="fas fa-phone mr-2"></i>
                         {{ config('app.phone') }}
                     </li>
                 </ul>
@@ -66,6 +61,3 @@
         </div>
     </div>
 </footer>
-
-
-

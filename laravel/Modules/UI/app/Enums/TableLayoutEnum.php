@@ -4,23 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\UI\Enums;
 
-use Modules\Xot\Traits\EnumTrait;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
-use Filament\Tables\Columns\Column;
-use Filament\Tables\Columns\ColumnGroup;
-use Filament\Tables\Columns\Layout\Component;
+use Modules\Xot\Traits\EnumTrait;
 
-/**
- * Enum for managing table layout types in Filament UI components.
- *
- * This enum provides standardized layout options for tables and data grids,
- * allowing users to toggle between list and grid views with appropriate
- * styling and column configurations.
- *
- * @see \Modules\UI\docs\table-layout-enum-usage.md
- */
 enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 {
     use EnumTrait;
@@ -33,24 +21,6 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
         return self::LIST;
     }
 
-    
-
-    
-
-    
-
-    
-
-    public function getTooltip(): string
-    {
-        return $this->transClass(self::class, $this->value.'.tooltip');
-    }
-
-    public function getHelperText(): string
-    {
-        return $this->transClass(self::class, $this->value.'.helper_text');
-    }
-
     public function toggle(): self
     {
         return match ($this) {
@@ -61,22 +31,14 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 
     public function isGridLayout(): bool
     {
-        return self::GRID === $this;
+        return $this === self::GRID;
     }
 
     public function isListLayout(): bool
     {
-        return self::LIST === $this;
+        return $this === self::LIST;
     }
 
-    /**
-     * Get the responsive grid configuration for table content.
-     *
-     * Returns the number of columns for different screen sizes when using
-     * grid layout, or null for list layout.
-     *
-     * @return array<string, int>|null Grid configuration or null for list layout
-     */
     public function getTableContentGrid(): ?array
     {
         return $this->isGridLayout()
@@ -90,19 +52,6 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
             : null;
     }
 
-    /**
-     * Get the appropriate table columns for this layout type.
-     *
-     * This method replaces the old debug_backtrace approach with explicit
-     * parameter passing for better type safety and testability.
-     *
-     * @param array<Column|ColumnGroup|Component> $listColumns Columns for list layout
-     * @param array<Column|ColumnGroup|Component> $gridColumns Columns for grid layout
-     * @param array<Column|ColumnGroup|Component> $listColumns Columns for list layout
-     * @param array<Column|ColumnGroup|Component> $gridColumns Columns for grid layout
-     *
-     * @return array<Column|ColumnGroup|Component>
-     */
     public function getTableColumns(array $listColumns, array $gridColumns): array
     {
         return $this->isGridLayout() ? $gridColumns : $listColumns;

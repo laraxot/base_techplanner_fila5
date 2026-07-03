@@ -4,4 +4,8 @@ topic: flip_cards
 canonical: ../../../Themes/docs/shared-components/flip-cards.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/flip-cards.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/flip-cards.md
+>>>>>>> c001364 (.)

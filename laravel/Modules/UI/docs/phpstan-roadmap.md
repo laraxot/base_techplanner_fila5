@@ -1,6 +1,9 @@
 # PHPStan Roadmap - UI Module
 
+<<<<<<< HEAD
+=======
 > **Date**: 2026-01-14
+>>>>>>> c001364 (.)
 > **Date**: [DATE]
 > **Status**: ✅ Fully Compliant (Level 10)
 > **Errors**: 0
@@ -15,4 +18,8 @@ The **UI** module is fully compliant with PHPStan Level 10. No errors were repor
 
 ## Future Goals
 - Maintain 0 errors.
+<<<<<<< HEAD
 - Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
+=======
+- Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
+>>>>>>> c001364 (.)

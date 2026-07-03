@@ -78,5 +78,3 @@ mount(function () {
     </x-filament::page>
 </div>
 @endvolt
-
-

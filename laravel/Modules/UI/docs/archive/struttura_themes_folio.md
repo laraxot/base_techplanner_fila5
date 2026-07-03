@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+# Struttura Themes e Folio in Quaeris
+
+=======
 # Struttura Themes e Folio in Laraxot
+>>>>>>> c001364 (.)
 ## ⚠️ ATTENZIONE CRITICA
 
 **NON CREARE MAI FILE IN**: `/laravel/resources/views/pages/`
@@ -7,7 +12,12 @@
 
 ## Struttura del Progetto
 
+<<<<<<< HEAD
+Il progetto Quaeris utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
+
+=======
 Il progetto Laraxot utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
+>>>>>>> c001364 (.)
 ```
 /laravel/
 ├── resources/views/pages/          # ❌ NON USARE MAI

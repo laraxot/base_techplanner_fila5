@@ -1,6 +1,9 @@
 # UI Module: Philosophy, Purpose, and Design Principles
 
+<<<<<<< HEAD
+=======
 **Date:** December 23, 2025
+>>>>>>> c001364 (.)
 
 ## 🎯 Purpose and Core Responsibilities
 
@@ -52,4 +55,8 @@ The `UI` module, as the guardian of the application's user interface, can signif
 4.  **Git (MCP)**: Aids in reviewing changes to UI components, styles, scripts, or layout files, ensuring visual consistency and adherence to design systems.
 5.  **Playwright/Puppeteer (MCP)**: Crucial for end-to-end testing of UI components, visual regression testing, and verifying responsiveness across different devices and browsers, directly supporting a high-quality user experience.
 
+<<<<<<< HEAD
 By leveraging these MCPs, the `UI` module can ensure its critical role in delivering an engaging and effective user interface is more efficient, verifiable, and transparent, ultimately contributing to a superior user experience.
+=======
+By leveraging these MCPs, the `UI` module can ensure its critical role in delivering an engaging and effective user interface is more efficient, verifiable, and transparent, ultimately contributing to a superior user experience.
+>>>>>>> c001364 (.)

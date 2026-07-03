@@ -329,6 +329,9 @@ Creare un ecosistema UI "Headless-first" che permetta di cambiare radicalmente i
 - [ ] Performance Lighthouse > 90 su pagine UI intensive.
 
 ---
+<<<<<<< HEAD
+**
+=======
 # Roadmap Modulo UI - Completamento e Miglioramenti
 
 **Data Creazione**: 2026-01-02
@@ -602,3 +605,4 @@ Completare il modulo UI con tutte le funzionalità mancanti, migliorare qualità
 
 **Filosofia**: UI fornisce componenti riutilizzabili e design system - nessuna business logic, solo presentazione.
 **
+>>>>>>> c001364 (.)

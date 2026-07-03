@@ -9,7 +9,7 @@ use Themes\Sixteen\Services\MenuBuilder;
 
 /**
  * Event che viene lanciato durante la costruzione del menu del tema Sixteen
- * 
+ *
  * Questo event permette di modificare il menu prima che venga renderizzato,
  * seguendo il pattern dell'official Italia Design Theme
  */
@@ -32,8 +32,7 @@ class BuildingSixteenMenu
             'header' => $this->menuBuilder->addHeader($items),
             'footer' => $this->menuBuilder->addFooter($items),
             'footer_bar' => $this->menuBuilder->addFooterBar($items),
-            default => throw new \InvalidArgumentException("Unknown menu location: {$this->location}")
-            default => throw new \InvalidArgumentException("Unknown menu location: {$this->location}")
+            default => throw new \InvalidArgumentException("Unknown menu location: {$this->location}"),
         };
     }
 
@@ -53,4 +52,3 @@ class BuildingSixteenMenu
         return $this->location;
     }
 }
-

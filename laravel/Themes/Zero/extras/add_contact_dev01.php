@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 error_reporting(E_ALL);
 ini_set('display_errors', true);
@@ -38,7 +39,7 @@ $headers = [
 ];
 
 curl_setopt_array($ch, [
-CURLOPT_HTTPHEADER => $headers,
+    CURLOPT_HTTPHEADER => $headers,
     CURLOPT_URL => $base_url.$addContact,
     CURLOPT_CUSTOMREQUEST => 'POST',
     CURLOPT_POST => true,
@@ -53,4 +54,3 @@ $response = curl_exec($ch);
 echo '<pre>'.print_r($response, true).'</pre>';
 
 curl_close($ch);
-

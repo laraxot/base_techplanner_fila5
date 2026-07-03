@@ -11,8 +11,6 @@ final class TestChartWidget extends ChartWidget
 {
     public int $qid = 0;
 
-    public string $max_height = '200px';
-
     public string $type = 'line';
 
     // protected static ?string $heading = 'Blog Posts';
@@ -30,7 +28,6 @@ final class TestChartWidget extends ChartWidget
 
     protected function getData(): array
     {
-        $this->maxHeight = $this->max_height;
 
         return [
             'datasets' => [

@@ -31,7 +31,7 @@ class GetUserDataAction
         $avatarValue = null;
         if (isset($user->profile_photo_path) && is_string($user->profile_photo_path)) {
             $avatarValue = $user->profile_photo_path;
-        } elseif ($user->relationLoaded('profile') && null !== $user->profile) {
+        } elseif ($user->relationLoaded('profile') && $user->profile !== null) {
             $profile = $user->profile;
             if (is_object($profile) && method_exists($profile, 'getAvatarUrl')) {
                 $avatarValue = $profile->getAvatarUrl();
@@ -48,11 +48,10 @@ class GetUserDataAction
 
         // Get settings - could be in profile or extra attributes
         $settingsArray = [];
-        if ($user->relationLoaded('profile') && null !== $user->profile) {
+        if ($user->relationLoaded('profile') && $user->profile !== null) {
             $profile = $user->profile;
             if (is_object($profile) && isset($profile->extra)) {
                 $extra = $profile->extra;
-                $settingsArray = is_array($extra) ? $extra : [];
             }
         }
 
@@ -60,15 +59,14 @@ class GetUserDataAction
         // method_exists() è sempre true perché User ha HasPermissions trait
         /** @var Collection<int, Permission> $allPermissions */
         $allPermissions = $user->getAllPermissions();
-        /** @var array<string> $permissions */
         $permissions = $allPermissions->pluck('name')->toArray();
 
         return new UserData(
             id: (int) $user->id,
             name: (string) ($user->name ?? ''),
             email: (string) ($user->email ?? ''),
-            avatar: null !== $avatarValue ? (string) $avatarValue : null,
-            role: null !== $roleValue ? (string) $roleValue : null,
+            avatar: $avatarValue !== null ? (string) $avatarValue : null,
+            role: $roleValue !== null ? (string) $roleValue : null,
             permissions: $permissions ?? [],
             settings: $settingsArray,
         );

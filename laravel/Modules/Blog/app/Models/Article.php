@@ -61,7 +61,7 @@ use Webmozart\Assert\Assert;
  * @property string                      $description
  * @property string                      $main_image_upload
  * @property string                      $main_image_url
- * @property array|string                $content_blocks
+ * @property array<string, mixed>|string $content_blocks
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Article article(string $id)
  * @method static \Illuminate\Database\Eloquent\Builder|Article author(string $profile_id)
@@ -79,12 +79,12 @@ use Webmozart\Assert\Assert;
  * @method static \Illuminate\Database\Eloquent\Builder|Article search(string $searching)
  * @method static \Illuminate\Database\Eloquent\Builder|Article showHomepage()
  * @method static \Illuminate\Database\Eloquent\Builder|Article tag(string $id)
- * @method static \Illuminate\Database\Eloquent\Builder|Article withAllTags((ArrayAccess|Tag|array|string) $tags, ?string $type = null)
+ * @method static \Illuminate\Database\Eloquent\Builder|Article withAllTags((ArrayAccess|Tag|array<int, string>|string) $tags, ?string $type = null)
  * @method static \Illuminate\Database\Eloquent\Builder|Article withAllTagsOfAnyType($tags)
- * @method static \Illuminate\Database\Eloquent\Builder|Article withAnyTags((ArrayAccess|Tag|array|string) $tags, ?string $type = null)
+ * @method static \Illuminate\Database\Eloquent\Builder|Article withAnyTags((ArrayAccess|Tag|array<int, string>|string) $tags, ?string $type = null)
  * @method static \Illuminate\Database\Eloquent\Builder|Article withAnyTagsOfAnyType($tags)
  * @method static \Illuminate\Database\Eloquent\Builder|Article withTrashed()
- * @method static \Illuminate\Database\Eloquent\Builder|Article withoutTags((ArrayAccess|Tag|array|string) $tags, ?string $type = null)
+ * @method static \Illuminate\Database\Eloquent\Builder|Article withoutTags((ArrayAccess|Tag|array<int, string>|string) $tags, ?string $type = null)
  * @method static \Illuminate\Database\Eloquent\Builder|Article withoutTrashed()
  *
  * @property string                          $id
@@ -102,8 +102,8 @@ use Webmozart\Assert\Assert;
  * @property string|null                     $updated_by
  * @property string|null                     $created_by
  * @property string|null                     $deleted_by
- * @property array|null                      $footer_blocks
- * @property array|null                      $sidebar_blocks
+ * @property array<string, mixed>|null       $footer_blocks
+ * @property array<string, mixed>|null       $sidebar_blocks
  * @property int                             $is_featured
  * @property string|null                     $closed_at
  * @property Category|null                   $category
@@ -128,7 +128,7 @@ use Webmozart\Assert\Assert;
  * @method static \Illuminate\Database\Eloquent\Builder|Article whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Article whereIsFeatured($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Article whereLocale(string $column, string $locale)
- * @method static \Illuminate\Database\Eloquent\Builder|Article whereLocales(string $column, array $locales)
+ * @method static \Illuminate\Database\Eloquent\Builder|Article whereLocales(string $column, array<int, string> $locales)
  * @method static \Illuminate\Database\Eloquent\Builder|Article whereMainImageUpload($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Article whereMainImageUrl($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Article wherePicture($value)
@@ -178,7 +178,7 @@ use Webmozart\Assert\Assert;
  * @property RatingMorph $pivot
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Article whereJsonContainsLocale(string $column, string $locale, ?mixed $value)
- * @method static \Illuminate\Database\Eloquent\Builder|Article whereJsonContainsLocales(string $column, array $locales, ?mixed $value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Article whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value)
  * @method static \Illuminate\Database\Eloquent\Builder|Article whereRewardedAt($value)
  *
  * @property ProfileContract|null $creator
@@ -209,19 +209,19 @@ use Webmozart\Assert\Assert;
  * @method static EloquentBuilder<static>|Article                       whereSumCreditNo($value)
  * @method static EloquentBuilder<static>|Article                       whereSumCreditYes($value)
  * @method static EloquentBuilder<static>|Article                       whereType($value)
- * @method static EloquentBuilder<static>|Article                       withAnyTagsOfType(array|string $type)
+ * @method static EloquentBuilder<static>|Article                       withAnyTagsOfType(array<int, string>|string $type)
  * @method static Article|null                                          first()
  * @method static Collection<int, Article>                              get()
- * @method static Article                                               create(array $attributes = [])
- * @method static Article                                               firstOrCreate(array $attributes = [], array $values = [])
+ * @method static Article                                               create(array<string, mixed> $attributes = [])
+ * @method static Article                                               firstOrCreate(array<string, mixed> $attributes = [], array<string, mixed> $values = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Article where((string|Closure) $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Article whereNotNull((string|Expression) $columns)
  * @method static int                                                   count(string $columns = '*')
  *
  * @property \Modules\Xot\Contracts\ProfileContract|null $deleter
  *
- * @method static EloquentBuilder<static>|Article childrenWith(array $relations)
- * @method static EloquentBuilder<static>|Article childrenWithCount(array $relations)
+ * @method static EloquentBuilder<static>|Article childrenWith(array<int, string> $relations)
+ * @method static EloquentBuilder<static>|Article childrenWithCount(array<int, string> $relations)
  *
  * @mixin \Eloquent
  */
@@ -318,7 +318,7 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
      * @param string $locale            Il codice della lingua richiesta
      * @param bool   $useFallbackLocale Se utilizzare o meno la lingua di fallback
      *
-     * @return array|string|int|null Il valore tradotto dell'attributo
+     * @return array<string, mixed>|string|int|null Il valore tradotto dell'attributo
      */
     public function getTranslation(string $key, string $locale, bool $useFallbackLocale = true): array|string|int|null
     {
@@ -594,9 +594,10 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
         return 'slug';
     }
 
-    /* ----
     /**
-     * @return array<string, mixed>
+     * @param array<int, string> $name_blocks
+     *
+     * @return array<int, array<string, mixed>>
      */
     public function getOnlyContentBlocks(array $name_blocks): array
     {
@@ -615,6 +616,8 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
     }
 
     /**
+     * @param array<int, string> $name_blocks
+     *
      * @return array<int, array<string, mixed>>
      */
     public function getExceptContentBlocks(array $name_blocks): array

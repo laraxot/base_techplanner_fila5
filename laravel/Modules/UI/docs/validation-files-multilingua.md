@@ -190,7 +190,10 @@ Verificare che i parametri `:day` e `:session` vengano sostituiti correttamente 
 
 ## Collegamenti
 - [Opening Hours Rule](../app/Rules/OpeningHoursRule.php)
+<<<<<<< HEAD
+=======
 - [TransTrait Documentation](../../Xot/docs/trans_trait.md)
+>>>>>>> c001364 (.)
 - [TransTrait Documentation](../../xot/docs/trans_trait.md)
 - [Opening Hours Field](./opening_hours_field.md)
 - [Localization Guidelines](./localization_guidelines.md)
@@ -388,9 +391,16 @@ Verificare che i parametri `:day` e `:session` vengano sostituiti correttamente 
 
 ## Collegamenti
 - [Opening Hours Rule](../app/Rules/OpeningHoursRule.php)
+<<<<<<< HEAD
+=======
 - [TransTrait Documentation](../../Xot/docs/trans_trait.md)
+>>>>>>> c001364 (.)
 - [TransTrait Documentation](../../xot/docs/trans_trait.md)
 - [Opening Hours Field](./opening_hours_field.md)
 - [Localization Guidelines](./localization_guidelines.md)
 
+<<<<<<< HEAD
 *Implementazione completata: gennaio 2025*
+=======
+*Implementazione completata: gennaio 2025*
+>>>>>>> c001364 (.)

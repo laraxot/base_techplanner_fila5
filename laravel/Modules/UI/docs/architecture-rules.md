@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 - [Best Practices UI](./UI_BEST_PRACTICES.md)
 - [Guida Componenti](./COMPONENTS_GUIDE.md)
 - [Componenti Blade Filament](https://filamentphp.com/docs/3.x/support/blade-components/overview)
@@ -707,6 +709,7 @@ class UIServiceProvider extends XotBaseServiceProvider
    - Utilizzare i componenti responsive appropriati
    - Mantenere la coerenza con il tema dark/light
    - Gestire correttamente il logout con CSRF
+>>>>>>> c001364 (.)
 ---
 title: "architecture-rules — puntatore"
 type: reference
@@ -717,4 +720,8 @@ updated: 2026-05-21
 
 Contenuto in wiki di progetto — non duplicare nei moduli ([#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
 
+<<<<<<< HEAD
 → [docs/wiki/rules/00-TRIGGER_MAP.md](../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+=======
+→ [docs/wiki/rules/00-TRIGGER_MAP.md](../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+>>>>>>> c001364 (.)

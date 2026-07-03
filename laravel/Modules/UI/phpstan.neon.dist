@@ -44,4 +44,8 @@ parameters:
     treatPhpDocTypesAsCertain: false
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
+<<<<<<< HEAD
     checkModelProperties: false
+=======
+    checkModelProperties: false
+>>>>>>> c001364 (.)

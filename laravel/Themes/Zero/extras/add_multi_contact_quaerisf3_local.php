@@ -39,19 +39,19 @@ $data = [
         'attribute_2' => '123',
         'attribute_3' => '123',
     ],
-'a2' => [
+    'a2' => [
         'survey_pdf_id' => '10',
         'mobile_phone' => '321456789',
         'email' => 'aldo@email.com',
         'language' => 'it',
         'usesleft' => 1,
-    
+
         'first_name' => 'Aldo',
         'last_name' => 'Aldo',
         'attribute_1' => '123',
         'attribute_2' => '123',
         'attribute_3' => '123',
-],
+    ],
 
 ];
 
@@ -71,7 +71,7 @@ curl_setopt_array($ch, [
     CURLOPT_POST => true,
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_VERBOSE => true,
-// CURLOPT_POSTFIELDS => curl_postfields_flatten($data),
+    // CURLOPT_POSTFIELDS => curl_postfields_flatten($data),
     CURLOPT_POSTFIELDS => ['data' => json_encode($data)],
 ]);
 
@@ -102,4 +102,3 @@ function curl_postfields_flatten($data, $prefix = '')
 
     return $output;
 }
-

@@ -274,7 +274,10 @@ php phpmd.phar Modules/UI/database/factories text cleancode,codesize,controversi
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
+=======
 - [← UI Module README](../README.md)
+>>>>>>> c001364 (.)
 - [← UI Module README](../readme.md)
 - [← Components Documentation](./components.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
@@ -285,4 +288,8 @@ php phpmd.phar Modules/UI/database/factories text cleancode,codesize,controversi
 **Status**: ✅ ECCELLENTE
 **PHPStan**: ✅ 0 errori
 **Priorità Miglioramenti**: 🟡 MEDIA (già ottimo)
+<<<<<<< HEAD
 **Focus**: Accessibility + Documentation
+=======
+**Focus**: Accessibility + Documentation
+>>>>>>> c001364 (.)

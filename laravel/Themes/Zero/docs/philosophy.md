@@ -395,3 +395,4 @@ Zero theme è il tema baseline che implementa perfettamente la filosofia "Vestit
 
 **Ultimo Aggiornamento**: 2025-01-18  
 **Versione**: 1.0.0
+

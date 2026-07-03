@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Http\Livewire\Schedule;
 
+use Illuminate\Console\Scheduling\Event;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
@@ -16,6 +17,7 @@ use Modules\Xot\Actions\GetViewAction;
  */
 class Status extends Component
 {
+    /** @var array<string, mixed> */
     public array $form_data = [];
 
     public string $out = '';
@@ -77,15 +79,24 @@ class Status extends Component
         $this->out .= '<hr/>';
     }
 
+    /**
+     * @return Collection<int, Event>
+     */
     public function getScheduledJobs(): Collection
     {
         if (app()->runningInConsole()) {
-            return collect([]);
+            /** @var Collection<int, Event> $empty */
+            $empty = collect([]);
+
+            return $empty;
         }
         // Kernel removed in laravel 11
         // new Kernel(app(), new Dispatcher);
         $schedule = app(Schedule::class);
 
-        return collect($schedule->events());
+        /** @var Collection<int, Event> $events */
+        $events = collect($schedule->events())->values();
+
+        return $events;
     }
 }

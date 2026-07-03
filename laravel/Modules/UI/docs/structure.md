@@ -1,6 +1,9 @@
 # Modulo UI
 
+<<<<<<< HEAD
+=======
 Data: 2025-04-23 19:09:56
+>>>>>>> c001364 (.)
 Data: [DATE] 19:09:56
 
 ## Informazioni generali
@@ -517,6 +520,8 @@ tests_old
 * [structure.md](../../../cms/docs/structure.md)
 * [structure.md](../../../cms/docs/themes/structure.md)
 * [structure.md](../../../cms/docs/components/structure.md)
+<<<<<<< HEAD
+=======
 * [structure.md](../../../Gdpr/docs/structure.md)
 * [structure.md](../../../Notify/docs/structure.md)
 * [structure.md](../../../Xot/docs/structure.md)
@@ -532,3 +537,4 @@ tests_old
 * [structure.md](../../../Cms/docs/structure.md)
 * [structure.md](../../../Cms/docs/themes/structure.md)
 * [structure.md](../../../Cms/docs/components/structure.md)
+>>>>>>> c001364 (.)

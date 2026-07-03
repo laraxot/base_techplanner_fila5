@@ -21,6 +21,8 @@ Gestione interfaccia utente, componenti, asset e frontend.
 
 ## Note
 - Personalizza la configurazione per esigenze di frontend avanzato.
+<<<<<<< HEAD
+=======
 # MCP Server Consigliati per il Modulo UI
 
 ## Scopo del Modulo
@@ -44,3 +46,4 @@ Gestione interfaccia utente, componenti, asset e frontend.
 
 ## Note
 - Personalizza la configurazione per esigenze di frontend avanzato.
+>>>>>>> c001364 (.)

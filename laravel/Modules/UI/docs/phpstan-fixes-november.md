@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 - [UI Module README](README.md)
 - [Architecture Rules](architecture_rules.md)
 
@@ -8,10 +10,15 @@
 ---
 
 *Ultimo aggiornamento: 11 Novembre 2025*
+>>>>>>> c001364 (.)
 ---
 module: theme
 topic: phpstan-fixes-november
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-november-2025.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-november-2025.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-november-2025.md
+>>>>>>> c001364 (.)

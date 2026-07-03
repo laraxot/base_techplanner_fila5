@@ -1,6 +1,9 @@
 # Analisi Errori PHPStan - Modulo UI
 
+<<<<<<< HEAD
+=======
 **Data**: 2025-12-23
+>>>>>>> c001364 (.)
 **Modulo**: UI
 **Livello PHPStan**: max
 **Status**: ✅ Corretto (0 errori)
@@ -75,4 +78,8 @@ public function getIconForOption(string $value): ?string
 
 ## 📝 Note
 
+<<<<<<< HEAD
 Le correzioni mantengono la logica esistente ma aggiungono type guards espliciti che permettono a PHPStan di inferire correttamente i tipi. Il codice è più type-safe e PHPStan-compliant.
+=======
+Le correzioni mantengono la logica esistente ma aggiungono type guards espliciti che permettono a PHPStan di inferire correttamente i tipi. Il codice è più type-safe e PHPStan-compliant.
+>>>>>>> c001364 (.)

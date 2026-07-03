@@ -4,4 +4,8 @@ topic: chunk
 canonical: ../../../Themes/docs/shared-components/chunk.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/chunk.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/chunk.md
+>>>>>>> c001364 (.)

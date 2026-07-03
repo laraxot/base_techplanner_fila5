@@ -103,9 +103,12 @@ Questo approccio dichiarativo permette di definire form complessi in modo chiaro
 
 Per una documentazione più approfondita sull'utilizzo dei widget Filament in il progetto, consulta:
 
+<<<<<<< HEAD
+=======
 - [Utilizzo dei Widget Filament per i Form](../laravel/Modules/Cms/docs/filament_forms.md) - Documentazione tecnica dettagliata
 - [Creazione di Componenti Personalizzati](../laravel/Modules/Cms/docs/custom_filament_components.md) (da creare)
 - [Best Practices per i Form in il progetto](../laravel/Modules/Cms/docs/form_best_practices.md) (da creare)
+>>>>>>> c001364 (.)
 - [Utilizzo dei Widget Filament per i Form](../laravel/modules/cms/docs/filament_forms.md) - Documentazione tecnica dettagliata
 - [Creazione di Componenti Personalizzati](../laravel/modules/cms/docs/custom_filament_components.md) (da creare)
 - [Best Practices per i Form in il progetto](../laravel/modules/cms/docs/form_best_practices.md) (da creare)
@@ -218,13 +221,20 @@ Questo approccio dichiarativo permette di definire form complessi in modo chiaro
 
 Per una documentazione più approfondita sull'utilizzo dei widget Filament in il progetto, consulta:
 
+<<<<<<< HEAD
+=======
 - [Utilizzo dei Widget Filament per i Form](../laravel/Modules/Cms/docs/filament_forms.md) - Documentazione tecnica dettagliata
 - [Creazione di Componenti Personalizzati](../laravel/Modules/Cms/docs/custom_filament_components.md) (da creare)
 - [Best Practices per i Form in il progetto](../laravel/Modules/Cms/docs/form_best_practices.md) (da creare)
+>>>>>>> c001364 (.)
 - [Utilizzo dei Widget Filament per i Form](../laravel/modules/cms/docs/filament_forms.md) - Documentazione tecnica dettagliata
 - [Creazione di Componenti Personalizzati](../laravel/modules/cms/docs/custom_filament_components.md) (da creare)
 - [Best Practices per i Form in il progetto](../laravel/modules/cms/docs/form_best_practices.md) (da creare)
 
 ## Conclusione
 
+<<<<<<< HEAD
 L'utilizzo esclusivo dei widget Filament per i form in il progetto rappresenta una scelta strategica che ha portato a un'interfaccia utente coerente, robusta e facilmente manutenibile. Questa decisione architetturale supporta gli obiettivi del progetto in termini di qualità del codice, velocità di sviluppo e esperienza utente.
+=======
+L'utilizzo esclusivo dei widget Filament per i form in il progetto rappresenta una scelta strategica che ha portato a un'interfaccia utente coerente, robusta e facilmente manutenibile. Questa decisione architetturale supporta gli obiettivi del progetto in termini di qualità del codice, velocità di sviluppo e esperienza utente.
+>>>>>>> c001364 (.)

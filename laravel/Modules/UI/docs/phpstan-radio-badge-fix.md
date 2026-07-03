@@ -1,7 +1,10 @@
 # Correzione Errori PHPStan - RadioBadge.php
 
 ## Data Aggiornamento
+<<<<<<< HEAD
+=======
 2025-01-27
+>>>>>>> c001364 (.)
 [DATE]
 
 ## File Modificato
@@ -148,7 +151,10 @@ class RadioBadge extends Radio
 # Correzione Errori PHPStan - RadioBadge.php
 
 ## Data Aggiornamento
+<<<<<<< HEAD
+=======
 2025-01-27
+>>>>>>> c001364 (.)
 [DATE]
 
 ## File Modificato
@@ -297,4 +303,8 @@ class RadioBadge extends Radio
 - [PHPStan Intersection Types](https://phpstan.org/writing-php-code/phpdoc-types#intersection-types)
 - [Filament HasColor Interface](https://filamentphp.com/project_docs/3.x/support/colors)
 - [Filament HasIcon Interface](https://filamentphp.com/project_docs/3.x/support/icons)
+<<<<<<< HEAD
 - [PHPStan Intersection Types](https://phpstan.org/writing-php-code/phpdoc-types#intersection-types)
+=======
+- [PHPStan Intersection Types](https://phpstan.org/writing-php-code/phpdoc-types#intersection-types)
+>>>>>>> c001364 (.)

@@ -32,10 +32,8 @@ final class IconStateSplitColumn extends Column
     /**
      * Configure the state class and model class for this column.
      *
-     * @param string $stateClass The state machine class (e.g., AppointmentState::class)
-     * @param string $modelClass The model class (e.g., Appointment::class)
-     * @param string $stateClass The state machine class (e.g., AppointmentState::class)
-     * @param string $modelClass The model class (e.g., Appointment::class)
+     * @param  string  $stateClass  The state machine class (e.g., AppointmentState::class)
+     * @param  string  $modelClass  The model class (e.g., Appointment::class)
      */
     public function stateClass(string $stateClass, string $modelClass): static
     {
@@ -61,13 +59,13 @@ final class IconStateSplitColumn extends Column
                 continue;
             }
 
-            $labelString = (string) $stateInstance->label();
+            $labelString = $stateInstance->label();
 
             $result[$stateKey] = [
                 'class' => $stateInstance,
-                'icon' => (string) $stateInstance->icon(),
+                'icon' => $stateInstance->icon(),
                 'label' => $labelString,
-                'color' => (string) $stateInstance->color(),
+                'color' => $stateInstance->color(),
                 'tooltip' => $labelString,
             ];
         }
@@ -130,7 +128,7 @@ final class IconStateSplitColumn extends Column
     #[On('table-action')]
     public function handleTableAction(string $action, int|string $recordId): void
     {
-        if ('prova' === $action) {
+        if ($action === 'prova') {
             $this->prova($recordId);
         }
     }
@@ -207,12 +205,13 @@ final class IconStateSplitColumn extends Column
     private function getProvaAction(): Action
     {
         $record = $this->getRecord();
+        $recordIdRaw = \is_object($record) && isset($record->id) ? $record->id : null;
+        $recordId = \is_int($recordIdRaw) || \is_string($recordIdRaw) ? $recordIdRaw : '';
 
         return Action::make('prova')
             ->icon('heroicon-m-plus')
             ->color('primary')
-            ->action(static function () use ($record): void {
-                $recordId = $record && isset($record->id) ? ((string) $record->id) : 'N/A';
+            ->action(static function () use ($recordId): void {
                 Notification::make()
                     ->title(__('ui::actions.prova.title'))
                     ->body(__('ui::actions.prova.body', ['id' => $recordId]))
@@ -222,31 +221,29 @@ final class IconStateSplitColumn extends Column
     }
 
     /**
-     * @param array{class: StateContract, icon: string, label: string, color: string, tooltip: string} $stateData
-     * @param array{class: StateContract, icon: string, label: string, color: string, tooltip: string} $stateData
+     * @param  array{class: StateContract, icon: string, label: string, color: string, tooltip: string}  $stateData
      */
     private function getTransitionAction(string $stateKey, array $stateData): ?Action
     {
         $record = $this->getRecord();
         $recordIdRaw = \is_object($record) && isset($record->id) ? $record->id : null;
 
-        if (null === $recordIdRaw || (! \is_int($recordIdRaw) && ! \is_string($recordIdRaw))) {
+        if ($recordIdRaw === null || (! \is_int($recordIdRaw) && ! \is_string($recordIdRaw))) {
             return null;
         }
 
-        $recordId = \is_int($recordIdRaw) ? $recordIdRaw : (string) $recordIdRaw;
         $stateClass = $stateData['class'];
         $stateClassName = $stateClass::class;
 
-        if (! $this->canTransitionTo($recordId, $stateClassName)) {
+        if (! $this->canTransitionTo($recordIdRaw, $stateClassName)) {
             return null;
         }
 
         return Action::make("transition_to_{$stateKey}")
             ->icon($stateData['icon'])
             ->color($stateData['color'])
-            ->action(function () use ($recordId, $stateClassName): void {
-                $this->transitionState($recordId, $stateClassName);
+            ->action(function () use ($recordIdRaw, $stateClassName): void {
+                $this->transitionState($recordIdRaw, $stateClassName);
             });
     }
 

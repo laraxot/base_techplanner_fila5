@@ -4,6 +4,7 @@
         class="btn btn-primary btn-icon btn-full"
         id="header-user-toggle"
         data-bs-toggle="dropdown"
+        data-bs-display="static"
         data-focus-mouse="false"
         aria-expanded="false"
         aria-controls="header-user-menu"
@@ -42,24 +43,24 @@
             <div class="col-12">
                 <div class="link-list-wrapper">
                     <ul class="link-list">
-<li>
-    <a class="dropdown-item list-item" href="{{ route('services.categories') }}" role="menuitem">
-        <span>{{ __('pub_theme::header.user.dropdown.my_services.label') }}</span>
-    </a>
-</li>
-<li>
-    <a class="dropdown-item list-item" href="{{ route('dashboard') }}" role="menuitem">
-        <span>{{ __('pub_theme::header.user.dropdown.my_practices.label') }}</span>
-    </a>
-</li>
-<li>
-    <a class="dropdown-item list-item" href="{{ route('area-personale.notifiche') }}" role="menuitem">
-        <span>{{ __('pub_theme::header.user.dropdown.notifications.label') }}</span>
-        @if (($unreadNotificationsCount ?? 0) > 0)
-            <span class="badge badge-primary ml-2">{{ $unreadNotificationsCount }}</span>
-        @endif
-    </a>
-</li>
+                        <li>
+                            <a class="dropdown-item list-item" href="{{ route('services.categories') }}" role="menuitem">
+                                <span>{{ __('pub_theme::header.user.dropdown.my_services.label') }}</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item list-item" href="{{ route('dashboard') }}" role="menuitem">
+                                <span>{{ __('pub_theme::header.user.dropdown.my_practices.label') }}</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item list-item" href="{{ route('notifications') }}" role="menuitem">
+                                <span>{{ __('pub_theme::header.user.dropdown.notifications.label') }}</span>
+                                @if (($unreadNotificationsCount ?? 0) > 0)
+                                    <span class="badge badge-primary ml-2">{{ $unreadNotificationsCount }}</span>
+                                @endif
+                            </a>
+                        </li>
                         <li><span class="divider"></span></li>
                         <li>
                             <a class="dropdown-item list-item" href="{{ route('profile.edit') }}" role="menuitem">
@@ -67,12 +68,15 @@
                             </a>
                         </li>
                         <li>
-                            <a class="list-item left-icon" href="{{ route('logout') }}" role="menuitem">
-                                <svg class="icon icon-primary icon-sm left" aria-hidden="true">
-                                    <use href="/themes/Sixteen/design-comuni/assets/bootstrap-italia/dist/svg/sprites.svg#it-external-link"></use>
-                                </svg>
-                                <span class="fw-bold">{{ __('pub_theme::header.user.dropdown.logout.label') }}</span>
-                            </a>
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+                                <button type="submit" class="list-item left-icon" role="menuitem">
+                                    <svg class="icon icon-primary icon-sm left" aria-hidden="true">
+                                        <use href="/themes/Sixteen/design-comuni/assets/bootstrap-italia/dist/svg/sprites.svg#it-external-link"></use>
+                                    </svg>
+                                    <span class="fw-bold">{{ __('pub_theme::header.user.dropdown.logout.label') }}</span>
+                                </button>
+                            </form>
                         </li>
                     </ul>
                 </div>

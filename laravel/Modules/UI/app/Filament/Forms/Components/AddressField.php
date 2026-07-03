@@ -27,28 +27,16 @@ class AddressField extends XotBaseField
     {
         parent::setUp();
 
-        $this->afterStateHydrated(function (AddressField $_component, mixed $record): void {
-            $data = [
-                'country' => null,
-                'street' => null,
-                'city' => null,
-                'state' => null,
-                'zip' => null,
-            ];
-
+        $this->afterStateHydrated(function (self $component, ?Model $record): void {
             if (! $record instanceof Model) {
                 return;
             }
 
-            $relationship = $this->getRelationship();
+            $relationship = $component->getRelationship();
             if ($relationship && $record->relationLoaded($relationship)) {
-                $address = $record->getRelationValue($relationship);
-                if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
-                    $data = $address->toArray();
-                }
+                $related = $record->getRelation($relationship);
+                $component->state($related instanceof Model ? $related->toArray() : []);
             }
-
-            // }
         });
 
         $this->dehydrated(false);

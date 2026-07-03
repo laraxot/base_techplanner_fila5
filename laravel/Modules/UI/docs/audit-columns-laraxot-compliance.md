@@ -1,6 +1,9 @@
 # Audit e Correzione Colonne Filament - Modulo UI
 
+<<<<<<< HEAD
+=======
 **Data**: 11 Novembre 2025
+>>>>>>> c001364 (.)
 **Status**: ✅ COMPLETATO
 
 ## Analisi Completa
@@ -143,4 +146,8 @@ final class MyCustomColumn extends XotBaseColumn
 ## Riferimenti
 
 - [Laraxot Architectural Rules](../../../../.windsurf/rules/laraxot-architectural-rules.md)
+<<<<<<< HEAD
 - [IconColumn Fix](../bugfix/iconcolumn-extends-filament-column.md)
+=======
+- [IconColumn Fix](../bugfix/iconcolumn-extends-filament-column.md)
+>>>>>>> c001364 (.)

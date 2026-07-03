@@ -35,7 +35,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property string|null                                               $avatar
  * @property string|null                                               $timezone
  * @property string|null                                               $locale
- * @property array                                                     $preferences
+ * @property array<string, mixed>                                                     $preferences
  * @property string                                                    $status
  * @property SchemalessAttributes                                      $extra
  * @property string                                                    $avatar
@@ -135,8 +135,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property string|null $campground_short
  *
  * @method static Builder<static>|Profile byUuid(string $uuid)
- * @method static Builder<static>|Profile childrenWith(array $relations)
- * @method static Builder<static>|Profile childrenWithCount(array $relations)
+ * @method static Builder<static>|Profile childrenWith(array<int, string> $relations)
+ * @method static Builder<static>|Profile childrenWithCount(array<int, string> $relations)
  * @method static Builder<static>|Profile whereAddress($value)
  * @method static Builder<static>|Profile whereAdministrativeAreaLevel1($value)
  * @method static Builder<static>|Profile whereAdministrativeAreaLevel1Short($value)

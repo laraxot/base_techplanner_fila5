@@ -2,14 +2,20 @@
 
 declare(strict_types=1);
 
+namespace Modules\Job\Tests\Feature;
+
+use Modules\Job\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('default database connection is configured', function () {
-    expect(config('database.default'))->not->toBeEmpty();
+    Assert::assertNotEmpty(config('database.default'));
 });
 
 test('database configuration has required connections', function () {
     $connections = config('database.connections');
 
-    expect($connections)->toBeArray()
-        ->and($connections)->toHaveKey('mysql');
+    Assert::assertIsArray($connections);
+    Assert::assertArrayHasKey('mysql', $connections);
 });

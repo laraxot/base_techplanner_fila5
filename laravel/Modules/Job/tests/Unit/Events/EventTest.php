@@ -5,38 +5,46 @@ declare(strict_types=1);
 namespace Modules\Job\Tests\Unit\Events;
 
 use Modules\Job\Events\Event;
+use Modules\Job\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+use function Safe\class_uses;
+use function Safe\file_get_contents;
+
+uses(TestCase::class);
 
 describe('Event', function () {
     it('can be instantiated', function () {
-        $event = new class extends Event {};
-        expect($event)->toBeInstanceOf(Event::class);
+        $event = new class() extends Event {};
+        Assert::assertInstanceOf(Event::class, $event);
     });
 
     it('uses Dispatchable trait', function () {
         $traits = class_uses(Event::class);
 
-        expect($traits)->toContain('Illuminate\Foundation\Events\Dispatchable');
+        Assert::assertContains('Illuminate\Foundation\Events\Dispatchable', $traits);
     });
 
     it('uses strict types', function () {
-        $reflection = new ReflectionClass(Event::class);
+        $reflection = new \ReflectionClass(Event::class);
         $filename = $reflection->getFileName();
 
-        expect($filename)->not->toBeNull();
+        Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
-        expect($content)->toContain('');
+        Assert::assertStringContainsString('declare(strict_types=1)', $content);
     });
 
     it('has correct namespace', function () {
-        $reflection = new ReflectionClass(Event::class);
+        $reflection = new \ReflectionClass(Event::class);
 
-        expect($reflection->getNamespaceName())->toBe('Modules\Job\Events');
+        Assert::assertSame('Modules\Job\Events', $reflection->getNamespaceName());
     });
 
     it('has required imports', function () {
-        $filename = (new ReflectionClass(Event::class))->getFileName();
+        $filename = (new \ReflectionClass(Event::class))->getFileName();
+        Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
 
-        expect($content)->toContain('use Illuminate\Foundation\Events\Dispatchable;');
+        Assert::assertStringContainsString('use Illuminate\Foundation\Events\Dispatchable;', $content);
     });
 });

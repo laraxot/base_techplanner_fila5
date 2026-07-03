@@ -62,6 +62,8 @@ Forms\Components\FileUpload::make('certifications')
 ## Vedi Anche
 - [Filament FileUpload Documentation](https://filamentphp.com/docs/forms/fields#file-upload)
 - [Best Practices](../../xot/docs/filament-best-practices.md)
+<<<<<<< HEAD
+=======
 - [README](../../Patient/docs/README.md)
 - [Filament Resources](../../Patient/docs/filament-resources.md)
 - [Form Components](../../Patient/docs/filament-form-components.md)
@@ -69,6 +71,7 @@ Forms\Components\FileUpload::make('certifications')
 ## Vedi Anche
 - [Filament FileUpload Documentation](https://filamentphp.com/docs/forms/fields#file-upload)
 - [Best Practices](../../Xot/docs/filament-best-practices.md)
+>>>>>>> c001364 (.)
 # Componenti FileUpload in Filament
 
 ## Errore Comune: prefixIcon
@@ -133,6 +136,8 @@ Forms\Components\FileUpload::make('certifications')
 ## Vedi Anche
 - [Filament FileUpload Documentation](https://filamentphp.com/project_docs/forms/fields#file-upload)
 - [Best Practices](../../xot/project_docs/filament-best-practices.md)
+<<<<<<< HEAD
+=======
 - [README](../../Patient/project_docs/README.md)
 - [Filament Resources](../../Patient/project_docs/filament-resources.md)
 - [Form Components](../../Patient/project_docs/filament-form-components.md)
@@ -140,3 +145,4 @@ Forms\Components\FileUpload::make('certifications')
 ## Vedi Anche
 - [Filament FileUpload Documentation](https://filamentphp.com/project_docs/forms/fields#file-upload)
 - [Best Practices](../../Xot/project_docs/filament-best-practices.md)
+>>>>>>> c001364 (.)

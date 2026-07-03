@@ -4,23 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Media\Tests\Unit\Models;
 
-uses(TestCase::class);
-
 use Modules\Media\Models\BaseModel;
 use Modules\Media\Models\MediaConvert;
 use Modules\Media\Tests\TestCase;
 
-describe('MediaConvert Model', function () {
-    it('extends BaseModel', function(): void {
-        // Assert
-        expect(is_a(MediaConvert::class, BaseModel::class, true))->toBeTrue();
+uses(TestCase::class);
+
+describe('MediaConvert Model', function (): void {
+    it('extends BaseModel', function (): void {
+        expect(new MediaConvert())->toBeInstanceOf(BaseModel::class);
     });
 
-    it('has correct fillable fields', function(): void {
-        // Arrange
-        $model = new MediaConvert;
+    it('has correct fillable fields', function (): void {
+        $model = new MediaConvert();
 
-        // Assert
         expect($model->getFillable())->toContain('media_id');
         expect($model->getFillable())->toContain('format');
         expect($model->getFillable())->toContain('codec_video');
@@ -37,42 +34,33 @@ describe('MediaConvert Model', function () {
         expect($model->getFillable())->toContain('execution_time');
     });
 
-    it('has media relationship', function(): void {
-        // Arrange
-        $model = new MediaConvert;
+    it('has media relationship', function (): void {
+        $model = new MediaConvert();
 
-        // Assert
-        expect(method_exists($model, 'media'))->toBeTrue();
+        expect((new \ReflectionClass($model))->hasMethod('media'))->toBeTrue();
     });
 
-    it('has getDiskAttribute accessor', function(): void {
-        // Assert
-        expect(method_exists(MediaConvert::class, 'getDiskAttribute'))->toBeTrue();
+    it('has getDiskAttribute accessor', function (): void {
+        expect((new \ReflectionClass(MediaConvert::class))->hasMethod('getDiskAttribute'))->toBeTrue();
     });
 
-    it('has getFileAttribute accessor', function(): void {
-        // Assert
-        expect(method_exists(MediaConvert::class, 'getFileAttribute'))->toBeTrue();
+    it('has getFileAttribute accessor', function (): void {
+        expect((new \ReflectionClass(MediaConvert::class))->hasMethod('getFileAttribute'))->toBeTrue();
     });
 
-    it('has getConvertedFileAttribute accessor', function(): void {
-        // Assert
-        expect(method_exists(MediaConvert::class, 'getConvertedFileAttribute'))->toBeTrue();
+    it('has getConvertedFileAttribute accessor', function (): void {
+        expect((new \ReflectionClass(MediaConvert::class))->hasMethod('getConvertedFileAttribute'))->toBeTrue();
     });
 
-    it('has connection', function(): void {
-        // Arrange
-        $model = new MediaConvert;
+    it('has connection', function (): void {
+        $model = new MediaConvert();
 
-        // Assert
         expect($model->getConnectionName())->toBe('media');
     });
 
-    it('uses HasXotFactory trait', function(): void {
-        // Arrange
+    it('uses HasXotFactory trait', function (): void {
         $traits = class_uses_recursive(MediaConvert::class);
 
-        // Assert
         expect(in_array('Modules\Xot\Models\Traits\HasXotFactory', $traits, true))->toBeTrue();
     });
 });

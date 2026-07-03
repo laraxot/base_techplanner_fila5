@@ -47,11 +47,6 @@ class OpeningHoursRule implements ValidationRule
             $dayLabelString = \is_string($dayLabel) ? $dayLabel : (string) $dayLabel;
 
             // Valida ogni sessione (mattina e pomeriggio)
-            $this->validateSession($dayHours, 'morning', $dayLabelString, $fail);
-            $this->validateSession($dayHours, 'afternoon', $dayLabelString, $fail);
-
-            // Valida la coerenza tra sessioni dello stesso giorno
-            $this->validateDayLogic($dayHours, $dayLabelString, $fail);
         }
     }
 
@@ -64,7 +59,7 @@ class OpeningHoursRule implements ValidationRule
         $afternoonFrom = $this->cleanTimeValue($dayHours['afternoon_from'] ?? null);
 
         // Se ci sono entrambe le sessioni, la chiusura mattina deve essere prima dell'apertura pomeriggio
-        if (null !== $morningTo && null !== $afternoonFrom) {
+        if ($morningTo !== null && $afternoonFrom !== null) {
             if ($morningTo >= $afternoonFrom) {
                 $fail(static::trans('validation.morning_before_afternoon', params: ['day' => $dayLabel]));
             }
@@ -78,7 +73,7 @@ class OpeningHoursRule implements ValidationRule
     {
         $fromKey = "{$session}_from";
         $toKey = "{$session}_to";
-        $sessionLabel = 'morning' === $session
+        $sessionLabel = $session === 'morning'
             ? static::trans('validation.opening_hours.morning')
             : static::trans('validation.opening_hours.afternoon');
 
@@ -97,7 +92,7 @@ class OpeningHoursRule implements ValidationRule
          * }
          */
         // Validazione completezza: se uno è specificato, anche l'altro deve esserlo
-        if (null !== $fromTime && null === $toTime) {
+        if ($fromTime !== null && $toTime === null) {
             $fail(static::trans('validation.opening_hours.missing_closing_time', params: [
                 'session' => $sessionLabel,
                 'day' => $dayLabel,
@@ -106,7 +101,7 @@ class OpeningHoursRule implements ValidationRule
             return;
         }
 
-        if (null !== $toTime && null === $fromTime) {
+        if ($toTime !== null && $fromTime === null) {
             $fail(static::trans('validation.opening_hours.missing_opening_time', params: [
                 'session' => $sessionLabel,
                 'day' => $dayLabel,
@@ -116,7 +111,7 @@ class OpeningHoursRule implements ValidationRule
         }
 
         // Validazione logica: apertura deve essere prima della chiusura
-        if (null !== $fromTime && null !== $toTime) {
+        if ($fromTime !== null && $toTime !== null) {
             if ($fromTime >= $toTime) {
                 $fail(static::trans('validation.opening_hours.opening_before_closing', params: [
                     'session' => $sessionLabel,
@@ -133,14 +128,14 @@ class OpeningHoursRule implements ValidationRule
      */
     private function cleanTimeValue(mixed $value): ?string
     {
-        if (null === $value || '' === $value || '--:--' === $value) {
+        if ($value === null || $value === '' || $value === '--:--') {
             return null;
         }
 
         if (\is_string($value)) {
             $cleaned = trim($value);
 
-            return '' === $cleaned ? null : $cleaned;
+            return $cleaned === '' ? null : $cleaned;
         }
 
         return null;

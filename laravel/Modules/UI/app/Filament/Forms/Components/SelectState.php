@@ -14,10 +14,9 @@ class SelectState extends XotBaseSelect
     {
         parent::setUp();
 
-        //  $this->selectablePlaceholder(false);
         $this->options(function (?Model $record): array {
             $name = $this->getName();
-            if (null === $record) {
+            if ($record === null) {
                 $model = $this->getModel();
                 if (\is_string($model) && class_exists($model)) {
                     $instance = app($model);
@@ -28,22 +27,6 @@ class SelectState extends XotBaseSelect
                             if (! \is_array($statesRaw)) {
                                 $statesRaw = Arr::wrap($statesRaw);
                             }
-                            /** @var array<int|string, mixed> $statesRaw */
-                            $states = $statesRaw;
-                            $statesKeys = array_map(static fn ($v) => \is_string($v) ? $v : (string) $v, array_values($states));
-                            $statesValues = array_map(static fn ($v) => \is_string($v) ? $v : (string) $v, array_values($states));
-
-                            $combined = array_combine($statesKeys, $statesValues);
-                            /** @var array<int|string, int|string> $combinedTyped */
-                            $combinedTyped = $combined ? $combined : [];
-                            $statesKeys = array_map(static fn ($v) => \is_string($v) ? $v : (string) $v, array_values($states));
-                            $statesValues = array_map(static fn ($v) => \is_string($v) ? $v : (string) $v, array_values($states));
-
-                            $combined = array_combine($statesKeys, $statesValues);
-                            /** @var array<int|string, int|string> $combinedTyped */
-                            $combinedTyped = $combined ? $combined : [];
-
-                            return $combinedTyped;
                         }
                     }
                 }
@@ -61,15 +44,8 @@ class SelectState extends XotBaseSelect
                 : [];
             /** @var array<int|string, mixed> $states */
             $states = $statesRaw;
-            $statesKeys = array_map(static fn ($v) => \is_string($v) ? $v : (string) $v, array_values($states));
-            $statesValues = array_map(static fn ($v) => \is_string($v) ? $v : (string) $v, array_values($states));
 
-            $combined = array_combine($statesKeys, $statesValues);
-            /** @var array<int|string, int|string> $combinedTyped */
-            $combinedTyped = $combined ? $combined : [];
-
-            return $combinedTyped;
+            return $states;
         });
-        $this->required();
     }
 }

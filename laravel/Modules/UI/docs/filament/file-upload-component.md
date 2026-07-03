@@ -70,7 +70,13 @@ Forms\Components\FileUpload::make('document')
 ## Riferimenti
 
 - [Documentazione Filament FileUpload](https://filamentphp.com/docs/3.x/forms/fields/file-upload)
+<<<<<<< HEAD
+- [API Components Filament](../ui/docs/filament/components-api.md)
+
+> **NOTA**: Questa documentazione segue la regola di centralizzare tutte le documentazioni UI nel modulo UI con collegamenti bidirezionali dagli altri moduli.
+=======
 - [API Components Filament](../UI/docs/filament/components-api.md)
 - [API Components Filament](../ui/docs/filament/components-api.md)
 
 > **NOTA**: Questa documentazione segue la regola di centralizzare tutte le documentazioni UI nel modulo UI con collegamenti bidirezionali dagli altri moduli.
+>>>>>>> c001364 (.)

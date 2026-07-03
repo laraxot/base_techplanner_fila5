@@ -301,4 +301,8 @@ class ExampleComponent extends Component
 **Responsabile:** Team UI
 **Data:** 2025-01-XX
 **Stato:** In Analisi
+<<<<<<< HEAD
 **Priorità:** ALTA
+=======
+**Priorità:** ALTA
+>>>>>>> c001364 (.)

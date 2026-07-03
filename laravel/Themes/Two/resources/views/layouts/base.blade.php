@@ -37,4 +37,3 @@
         @vite(['resources/js/app.js'], 'themes/Two')
     </body>
 </html>
-

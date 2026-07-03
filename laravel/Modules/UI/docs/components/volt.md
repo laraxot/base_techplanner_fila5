@@ -9,7 +9,10 @@ Nel progetto la regola di default per le componenti Volt interattive è la sinta
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Livewire](https://livewire.laravel.com)
 - [Filament](https://filamentphp.com)
+<<<<<<< HEAD
+=======
 - [Documentazione UI](../README.md)
+>>>>>>> c001364 (.)
 - [Documentazione UI](../readme.md)
 - [Best Practices](../best-practices.md)
 - [Layout](../layouts.md)
@@ -394,6 +397,8 @@ mount(function() {
 - [Grafici](../../chart/docs/charts.md)
 - [Dashboard](../../chart/docs/dashboard.md)
 - [Visualizzazione](../../chart/docs/visualization.md)
+<<<<<<< HEAD
+=======
 - [Core](../../Xot/docs/core.md)
 - [Servizi](../../Xot/docs/services.md)
 - [Traits](../../Xot/docs/traits.md)
@@ -459,3 +464,4 @@ mount(function() {
 - [Grafici](../../Chart/docs/charts.md)
 - [Dashboard](../../Chart/docs/dashboard.md)
 - [Visualizzazione](../../Chart/docs/visualization.md)
+>>>>>>> c001364 (.)

@@ -18,6 +18,8 @@ class GetProductsArrayDummyAction
      * Execute the function with the given model class.
      *
      * @throws \Exception Generating Factory [factory_class] press [F5] to refresh page [__LINE__][__FILE__]
+     *
+     * @return array<int, array<string, mixed>>
      */
     public function execute(): array
     {

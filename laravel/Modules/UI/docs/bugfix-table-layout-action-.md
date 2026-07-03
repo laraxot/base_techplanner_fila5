@@ -173,8 +173,15 @@ curl -I http://127.0.0.1:8001/Quaeris/admin/gaia/survey-pdfs
 
 ---
 
+<<<<<<< HEAD
+**Modulo**: UI
+**Tipo**: Bug Fix
+**Priorità**: Alta
+**Stato**: ✅ Risolto
+=======
 **Data**: 27 Gennaio 2025
 **Modulo**: UI
 **Tipo**: Bug Fix
 **Priorità**: Alta
 **Stato**: ✅ Risolto
+>>>>>>> c001364 (.)

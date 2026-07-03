@@ -130,4 +130,8 @@ Piano di risoluzione per il tema Two: `laravel/Themes/Two/docs/wcag-techniques-r
 ## 🔗 Collegamenti
 - [Performance](./performance.md)
 - [UI Standards](./ui-standards.md)
+<<<<<<< HEAD
 - [Componenti Base](../base-components.md)
+=======
+- [Componenti Base](../base-components.md)
+>>>>>>> c001364 (.)

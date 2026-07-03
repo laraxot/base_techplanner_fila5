@@ -18,6 +18,8 @@ Homepage `/it`: `grid/2col.blade.php` → `ticket/column-main.blade.php` → CTA
 | CTA mappa/lista | `components/blocks/cta/ticket.blade.php` | **vietato** `cta/segnalazione` — vedi [no-italian-component-names](../rules/no-italian-component-names.md) |
 | Include | `@include('pub_theme::components.blocks.cta.ticket', ['cta' => $cta])` | `$cta` da `TicketLayoutViewModel::cta()` |
 
+**URL CTA:** solo `LaravelLocalization::localizeURL($path)` nel blade — **vietato** `FrontofficeUrl` (scope header/CMS nav, non blocchi CTA).
+
 Testo UI «Fai una segnalazione» resta in `lang/it/` — non nel nome file.
 
 File legacy (altre pagine): `ticket-layout/layout.blade.php` (e varianti elenco).
@@ -35,7 +37,7 @@ Pattern attivo:
 Asset: `@vite` manifest tema → `public_html/themes/Sixteen/assets/map-lit-*.js`  
 **Non** usare CDN Leaflet nel tema se il bundle Geo è attivo.
 
-`body[data-page="segnalazioni-elenco"]` — regole CSS listing in `listing-parity.css`, `07-map-clusters-and-leaflet.css`.
+`body[data-page="ticket-list"]` — regole CSS listing in `listing-parity.css`, `07-map-clusters-and-leaflet.css`.
 
 ## Filtri
 
@@ -62,6 +64,7 @@ Properties minime per marker/popup:
 - Popup **senza** vuoto header (vedi runbook sotto)
 - Hover cluster/marker: ombra only, no transform
 - Ricerca indirizzo collassabile (controllo lente)
+- Producer GeoJSON: `Modules/Fixcity/app/Actions/GenerateTicketsJsonAction.php`
 
 ## Build obbligatoria dopo modifica JS/CSS
 

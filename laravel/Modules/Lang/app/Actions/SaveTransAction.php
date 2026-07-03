@@ -16,6 +16,8 @@ class SaveTransAction
 
     /**
      * Undocumented function.
+     *
+     * @param int|string|array<array-key, mixed>|Htmlable|null $data
      */
     public function execute(string $key, int|string|array|Htmlable|null $data): void
     {

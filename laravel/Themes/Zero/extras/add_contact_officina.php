@@ -23,7 +23,7 @@ $json = json_decode($response);
 
 $data = [
     'survey_pdf_id' => '12',
-// 'mobile_phone' => '+391234567890',
+    // 'mobile_phone' => '+391234567890',
     'email' => 'prova_ora@mail.com',
     'language' => 'it',
     'usesleft' => '1',
@@ -55,4 +55,3 @@ $response = curl_exec($ch);
 echo '<pre>'.print_r($response, true).'</pre>';
 
 curl_close($ch);
-

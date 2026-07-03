@@ -13,7 +13,6 @@ use Filament\Tables\Columns\IconColumn;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Modules\Xot\Contracts\StateContract as XotStateContract;
 
 class IconStateColumn extends IconColumn
 {
@@ -22,16 +21,13 @@ class IconStateColumn extends IconColumn
         parent::setUp();
         // $this->getStateUsing(fn() => true); // the column requires a state to be passed to it
 
-        $this->icon(function (XotStateContract $state) {
-            return $state->icon();
-        });
+        $this->tooltip(function (mixed $state): ?string {
+            if (! \is_object($state) || ! method_exists($state, 'label')) {
+                return null;
+            }
+            $label = $state->label();
 
-        $this->color(function (XotStateContract $state) {
-            return $state->color();
-        });
-
-        $this->tooltip(function (XotStateContract $state) {
-            return $state->label();
+            return \is_string($label) ? $label : null;
         });
         // $this->label('aaa');
 
@@ -42,7 +38,7 @@ class IconStateColumn extends IconColumn
                         ->options(function (Model $record, string $_state): array {
                             $name = $this->getName();
                             $state = $record->getAttribute($name);
-                            if (null === $state) {
+                            if ($state === null) {
                                 if (! method_exists($record, 'getDefaultStateFor')) {
                                     return [];
                                 }
@@ -81,7 +77,7 @@ class IconStateColumn extends IconColumn
                                 return [];
                             }
 
-                            return Arr::mapWithKeys($statesArray, function (mixed $stateItem) use ($record): array {
+                            return collect($statesArray)->mapWithKeys(function (mixed $stateItem) use ($record): array {
                                 if (! is_string($stateItem)) {
                                     return [];
                                 }
@@ -90,7 +86,7 @@ class IconStateColumn extends IconColumn
                                 $label = __('pub_theme::'.$model.'_states.'.$stateItem.'.label');
 
                                 return [$stateItem => $label];
-                            });
+                            })->toArray();
                         })
                         ->required()
                         ->reactive(),
@@ -110,7 +106,7 @@ class IconStateColumn extends IconColumn
                             return false;
                         }
 
-                        $newStateClass = Arr::get($statesArray, (string) $newState);
+                        $newStateClass = is_string($newState) ? ($statesArray[$newState] ?? null) : null;
                         if (! is_string($newStateClass) || ! class_exists($newStateClass)) {
                             return false;
                         }

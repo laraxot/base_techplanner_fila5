@@ -111,7 +111,10 @@ Per migrare da componenti personalizzati a componenti Filament:
 
 ## Documentazione di riferimento
 
+<<<<<<< HEAD
+=======
 - [User](../../User/docs/blade/using-filament-components.md) - Implementazione dei componenti profilo con Filament
+>>>>>>> c001364 (.)
 - [Filament 5 — Components overview](https://filamentphp.com/docs/5.x/components/overview)
 - [Tabs](https://filamentphp.com/docs/5.x/components/tabs)
 - [Button](https://filamentphp.com/docs/5.x/components/button)
@@ -121,4 +124,8 @@ Per migrare da componenti personalizzati a componenti Filament:
 
 ## Moduli correlati
 
+<<<<<<< HEAD
 - [User](../../user/docs/blade/using-filament-components.md) - Implementazione dei componenti profilo con Filament
+=======
+- [User](../../user/docs/blade/using-filament-components.md) - Implementazione dei componenti profilo con Filament
+>>>>>>> c001364 (.)

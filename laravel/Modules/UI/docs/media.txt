@@ -4,4 +4,8 @@ topic: media
 canonical: ../../../Themes/docs/shared-components/media.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/media.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/media.md
+>>>>>>> c001364 (.)

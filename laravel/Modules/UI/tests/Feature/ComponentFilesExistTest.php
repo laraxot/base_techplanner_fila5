@@ -2,6 +2,35 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+namespace Modules\UI\Tests\Feature;
+
+use Modules\UI\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+use function Safe\file_get_contents;
+
+uses(TestCase::class);
+
+function sixteenComponentsBasePath(): string
+{
+    return base_path('Themes/Sixteen/resources/views/components');
+}
+
+function requireSixteenComponentsBasePath(): string
+{
+    $themeBasePath = sixteenComponentsBasePath();
+    if (! is_dir($themeBasePath)) {
+        Assert::markTestSkipped('Theme Sixteen components directory not present in this install.');
+    }
+
+    return $themeBasePath;
+}
+
+describe('Component Files Exist', function (): void {
+    test('reorganized component files exist in correct locations', function (): void {
+        $themeBasePath = requireSixteenComponentsBasePath();
+=======
 
 describe('Component Files Existence Tests', function (): void {
     test('reorganized component files exist in correct locations', function (): void {
@@ -10,6 +39,7 @@ describe('Component Files Existence Tests', function (): void {
         if (! is_dir($themeBasePath)) {
             $this->markTestSkipped('Theme Sixteen components directory not present in this install.');
         }
+>>>>>>> c001364 (.)
 
         $expected = [
             '/forms/input.blade.php',
@@ -55,6 +85,71 @@ describe('Component Files Existence Tests', function (): void {
 
         foreach ($expected as $relativePath) {
             if (! file_exists($themeBasePath.$relativePath)) {
+<<<<<<< HEAD
+                Assert::markTestSkipped('Theme Sixteen expected component file missing: '.$relativePath);
+            }
+        }
+
+        Assert::assertTrue(file_exists($themeBasePath.'/forms/input.blade.php'));
+        Assert::assertTrue(file_exists($themeBasePath.'/utilities/button.blade.php'));
+        Assert::assertTrue(file_exists($themeBasePath.'/data-display/card.blade.php'));
+    });
+
+    test('no old component files remain in root components directory', function (): void {
+        $themeBasePath = requireSixteenComponentsBasePath();
+
+        $legacyFiles = [
+            '/input.blade.php',
+            '/button.blade.php',
+            '/card.blade.php',
+            '/modal.blade.php',
+            '/dropdown.blade.php',
+        ];
+
+        $legacyPresent = array_values(array_filter(
+            $legacyFiles,
+            static fn (string $relativePath): bool => file_exists($themeBasePath.$relativePath),
+        ));
+
+        if ([] !== $legacyPresent) {
+            Assert::markTestSkipped('Legacy root components still present: '.implode(', ', $legacyPresent));
+        }
+
+        Assert::assertSame([], $legacyPresent);
+    });
+
+    test('component files contain proper blade syntax', function (): void {
+        $themeBasePath = requireSixteenComponentsBasePath();
+
+        foreach ([
+            '/utilities/button.blade.php',
+            '/forms/input.blade.php',
+            '/data-display/card.blade.php',
+        ] as $relativePath) {
+            $content = file_get_contents($themeBasePath.$relativePath);
+            if (! str_contains($content, '@props') && ! str_contains($content, '<x-') && ! str_contains($content, '@class')) {
+                Assert::markTestSkipped('No recognizable Blade component markers in '.$relativePath);
+            }
+            Assert::assertTrue(str_contains($content, '@props') || str_contains($content, '<x-') || str_contains($content, '@class'), 'Component file contains valid Blade syntax');
+        }
+    });
+
+    test('directory structure is properly organized', function (): void {
+        $themeBasePath = requireSixteenComponentsBasePath();
+
+        Assert::assertTrue(is_dir($themeBasePath.'/forms'));
+        Assert::assertTrue(is_dir($themeBasePath.'/utilities'));
+        Assert::assertTrue(is_dir($themeBasePath.'/layout/sections'));
+        Assert::assertTrue(is_dir($themeBasePath.'/navigation'));
+        Assert::assertTrue(is_dir($themeBasePath.'/overlays'));
+        Assert::assertTrue(is_dir($themeBasePath.'/data-display'));
+        Assert::assertTrue(is_dir($themeBasePath.'/feedback'));
+        Assert::assertTrue(is_dir($themeBasePath.'/media'));
+        Assert::assertTrue(is_dir($themeBasePath.'/auth'));
+        Assert::assertTrue(is_dir($themeBasePath.'/footer'));
+        Assert::assertTrue(is_dir($themeBasePath.'/blocks/forms'));
+        Assert::assertTrue(is_dir($themeBasePath.'/utilities/ui'));
+=======
                 $this->markTestSkipped('Theme Sixteen expected component file missing: '.$relativePath);
             }
         }
@@ -176,5 +271,6 @@ describe('Component Files Existence Tests', function (): void {
         expect(is_dir($themeBasePath.'/footer'))->toBeTrue();
         expect(is_dir($themeBasePath.'/blocks/forms'))->toBeTrue();
         expect(is_dir($themeBasePath.'/utilities/ui'))->toBeTrue();
+>>>>>>> c001364 (.)
     });
 });

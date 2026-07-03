@@ -67,8 +67,8 @@ return [
      * |--------------------------------------------------------------------------
      */
     'retry' => [
-        'attempts' => env('TELEGRAM_RETRY_ATTEMPTS', 3),
-        'delay' => env('TELEGRAM_RETRY_DELAY', 60),
+        'attempts' => config('notify.telegram.retry.attempts', 3),
+        'delay' => config('notify.telegram.retry.delay', 60),
     ],
     /*
      * |--------------------------------------------------------------------------
@@ -76,8 +76,8 @@ return [
      * |--------------------------------------------------------------------------
      */
     'rate_limit' => [
-        'enabled' => env('TELEGRAM_RATE_LIMIT_ENABLED', true),
-        'max_attempts' => env('TELEGRAM_RATE_LIMIT_MAX_ATTEMPTS', 30),
-        'decay_minutes' => env('TELEGRAM_RATE_LIMIT_DECAY_MINUTES', 1),
+        'enabled' => config('notify.telegram.rate_limit.enabled', true),
+        'max_attempts' => config('notify.telegram.rate_limit.max_attempts', 30),
+        'decay_minutes' => config('notify.telegram.rate_limit.decay_minutes', 1),
     ],
 ];

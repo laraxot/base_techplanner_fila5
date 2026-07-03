@@ -4,4 +4,8 @@ topic: blocks
 canonical: ../../../Themes/docs/shared-components/blocks.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/blocks.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/blocks.md
+>>>>>>> c001364 (.)

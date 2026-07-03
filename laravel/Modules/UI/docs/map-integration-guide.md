@@ -1,12 +1,56 @@
 # 🗺️ GUIDA INTEGRAZIONE MAPPA INTERATTIVA
 
 **Modulo**: UI (User Interface)
+<<<<<<< HEAD
+=======
 **Data**: 2025-01-27
+>>>>>>> c001364 (.)
 **Versione**: 1.0
 **Stato**: 🚧 IN SVILUPPO
 
 ---
 
+<<<<<<< HEAD
+## ⚠️ STATO ATTUALE (2026-07-02)
+
+Questo documento descrive una visione/roadmap per l'integrazione mappa, **mai completata**. Il codice
+realmente presente in `Modules/UI/app/Livewire/Components/Map/InteractiveMap.php` non corrisponde
+agli snippet sotto (namespace, nomi classi e API sono di design, non implementati).
+
+Un audit (`ponytail-audit`) ha verificato che `MapServiceContract` e `GeocodingServiceContract`
+(le interfacce previste per astrarre l'accesso ai dati mappa/geocoding) avevano **un solo
+implementatore ciascuna** (`NullMapService`, `NullGeocodingService`, entrambe stub "modulo Geo
+assente") e **nessun binding** in alcun `ServiceProvider` di alcun modulo del progetto. Il risultato
+pratico era che ogni chiamata a `app(MapServiceContract::class)` lanciava una
+`BindingResolutionException`, silenziosamente ingoiata dai `try/catch(\Exception $e)` del
+componente: la mappa era quindi già di fatto non funzionante in produzione, ma lo nascondeva
+un layer di astrazione morto.
+
+È stato deciso di **rimuovere l'astrazione** invece di completarla:
+
+- Cancellati: `Modules/UI/app/Contracts/MapServiceContract.php`,
+  `Modules/UI/app/Contracts/GeocodingServiceContract.php`,
+  `Modules/UI/app/Services/Map/NullMapService.php`,
+  `Modules/UI/app/Services/Map/NullGeocodingService.php` (cartella `Services/Map/` rimossa perché
+  rimasta vuota).
+- `InteractiveMap.php` ora implementa direttamente, senza layer DI, lo stesso comportamento no-op
+  che i Null service davano già oggi:
+  - `loadMarkers()`: `markers` e `stats` sempre vuoti.
+  - `exportData()`: esporta sempre payload vuoti (CSV vuoto, GeoJSON `FeatureCollection` vuota, KML
+    vuoto, JSON `[]`), il download/notifica funzionano comunque.
+  - `searchAddress()`: mostra sempre l'errore "Indirizzo non trovato: geocoding non disponibile
+    (modulo Geo assente)." invece di lanciare un'eccezione ingoiata.
+  - `getSuggestions()`: restituisce sempre `[]`.
+
+**Per rendere la mappa realmente funzionante in futuro** serve un vero `MapServiceContract` (o
+funzione equivalente) con un binding esplicito in un `ServiceProvider`, tipicamente registrato
+quando il modulo `Geo` è installato e disponibile — non una nuova interfaccia astratta senza
+implementazione reale come quella appena rimossa.
+
+---
+
+=======
+>>>>>>> c001364 (.)
 ## 🎯 PANORAMICA
 
 Questa guida descrive l'integrazione di funzionalità mappa interattiva nel modulo UI, ispirate al progetto [farmshops.eu](https://farmshops.eu/). L'obiettivo è fornire componenti riutilizzabili per visualizzazioni geografiche in tutta l'applicazione FixCity.
@@ -585,7 +629,10 @@ class GeocodingService
 - [Livewire Components](https://laravel-livewire.com/docs/2.x/quickstart)
 
 ### 📖 Documentazione Correlata
+<<<<<<< HEAD
+=======
 - [Farmshops.eu Analysis](../Geo/docs/farmshops-analysis.md)
+>>>>>>> c001364 (.)
 - [Farmshops.eu Analysis](../geo/docs/farmshops-analysis.md)
 - [Geo Module Documentation](../Geo/docs/)
 - [UI Component API](component-api.md)
@@ -593,12 +640,19 @@ class GeocodingService
 
 ---
 
+<<<<<<< HEAD
+=======
 **Last Updated**: 2025-01-27
 **Next Review**: 2025-02-27
+>>>>>>> c001364 (.)
 
 **Status**: 🚧 IN SVILUPPO
 **Confidence Level**: 90%
 
 ---
 
+<<<<<<< HEAD
 *Questa guida fornisce le basi per implementare funzionalità mappa interattiva nel modulo UI, migliorando significativamente l'esperienza utente con visualizzazioni geografiche avanzate.*
+=======
+*Questa guida fornisce le basi per implementare funzionalità mappa interattiva nel modulo UI, migliorando significativamente l'esperienza utente con visualizzazioni geografiche avanzate.*
+>>>>>>> c001364 (.)

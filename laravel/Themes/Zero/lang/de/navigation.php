@@ -13,4 +13,3 @@ return [
     'news' => 'Nachrichten',
     'blog' => 'Blog',
 ];
-

@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 - 2025-01-06
 
 ## File Coinvolti
@@ -36,6 +38,7 @@ Tutte le verifiche hanno avuto esito positivo.
 
 ---
 Ultimo aggiornamento: 2025-01-06
+>>>>>>> c001364 (.)
 # Conflict Resolution — Module UI
 
 ## Summary
@@ -98,4 +101,8 @@ Ultimo aggiornamento: 2025-01-06
 - composer.json
 
 ## Backlinks
+<<<<<<< HEAD
 - [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)
+=======
+- [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)
+>>>>>>> c001364 (.)

@@ -74,6 +74,12 @@ Modules/UI/
 * [analysis.md](../../../media/docs/analysis.md)
 * [analysis.md](../../../media/docs/phpstan/analysis.md)
 * [analysis.md](../../../../themes/one/docs/analysis.md)
+<<<<<<< HEAD
+
+### Versione Incoming
+
+---
+=======
 * [analysis.md](../../../Notify/docs/analysis.md)
 * [analysis.md](../../../Notify/docs/phpstan/analysis.md)
 * [analysis.md](../../../Xot/docs/analysis.md)
@@ -91,3 +97,4 @@ Modules/UI/
 ### Versione Incoming
 
 ---
+>>>>>>> c001364 (.)

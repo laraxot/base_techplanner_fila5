@@ -132,8 +132,11 @@ class AdvancedBookingForm
                     return $this->availabilityService->getAvailableDates(
                         serviceId: $serviceId,
                         locationId: $locationId,
+<<<<<<< HEAD
+=======
                         startDate: Carbon::today(),
                         endDate: Carbon::today()->addMonths(3)
+>>>>>>> c001364 (.)
                     );
                 })
                 ->calendarConfig([
@@ -289,7 +292,10 @@ class CustomCalendarForm
             InlineDatePicker::make('special_date')
                 ->enabledDates(function () {
                     // Date con stati speciali
+<<<<<<< HEAD
+=======
                     return SpecialDate::query()
+>>>>>>> c001364 (.)
                         ->where('is_active', true)
                         ->where('date', '>=', now())
                         ->get()
@@ -315,7 +321,10 @@ class CustomCalendarForm
                 ])
                 ->afterStateUpdated(function ($state) {
                     // Carica metadati per la data selezionata
+<<<<<<< HEAD
+=======
                     $specialDate = SpecialDate::whereDate('date', $state)->first();
+>>>>>>> c001364 (.)
 
                     if ($specialDate) {
                         $this->selectedDateMetadata = $specialDate->metadata;
@@ -328,21 +337,30 @@ class CustomCalendarForm
 
     private function isHoliday(string $date): bool
     {
+<<<<<<< HEAD
+=======
         return SpecialDate::whereDate('date', $date)
+>>>>>>> c001364 (.)
             ->where('type', 'holiday')
             ->exists();
     }
 
     private function isHighDemand(string $date): bool
     {
+<<<<<<< HEAD
+=======
         return SpecialDate::whereDate('date', $date)
+>>>>>>> c001364 (.)
             ->where('priority', 'high')
             ->exists();
     }
 
     private function isPremiumOnly(string $date): bool
     {
+<<<<<<< HEAD
+=======
         return SpecialDate::whereDate('date', $date)
+>>>>>>> c001364 (.)
             ->where('type', 'premium_only')
             ->exists();
     }
@@ -433,4 +451,8 @@ class InlineDatePickerTest extends TestCase
 ---
 
 *Ultima modifica: Gennaio 2025*
+<<<<<<< HEAD
 *Versione: 1.0.0*
+=======
+*Versione: 1.0.0*
+>>>>>>> c001364 (.)

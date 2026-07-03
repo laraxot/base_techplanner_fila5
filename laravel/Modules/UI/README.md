@@ -45,6 +45,8 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ## Documentazione
 
+<<<<<<< HEAD
+=======
 # 🎨 UI Module - Eleva la Tua Interfaccia al Livello Successivo! 🚀
 
 ![GitHub issues](https://img.shields.io/github/issues/laraxot/module_ui_fila3)
@@ -289,6 +291,7 @@ This project is distributed under the MIT license. See the [LICENSE](LICENSE) fi
 Este proyecto está distribuido bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
+>>>>>>> c001364 (.)
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
@@ -297,4 +300,8 @@ Este proyecto está distribuido bajo la licencia MIT. Ver el archivo [LICENSE](L
 
 ---
 
+<<<<<<< HEAD
 **Modulo** `ui` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+**Modulo** `ui` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+>>>>>>> c001364 (.)

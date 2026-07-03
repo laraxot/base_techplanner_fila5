@@ -4,4 +4,8 @@ topic: custom_firm_fields
 canonical: ../../../Themes/docs/shared-components/custom-firm-fields.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/custom-firm-fields.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/custom-firm-fields.md
+>>>>>>> c001364 (.)

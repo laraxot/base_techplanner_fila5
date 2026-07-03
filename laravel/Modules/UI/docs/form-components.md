@@ -8,7 +8,10 @@ Un componente avanzato per la selezione di date che mostra un calendario inline 
 ```php
 use Modules\UI\Filament\Forms\Components\InlineDatePicker;
 InlineDatePicker::make('appointment_date')
+<<<<<<< HEAD
+=======
     ->enabledDates(['2025-06-05', '2025-06-21', '2025-06-25'])
+>>>>>>> c001364 (.)
     ->enabledDates(['[DATE]', '[DATE]', '[DATE]'])
     ->calendarConfig([
         'locale' => 'it',
@@ -61,7 +64,10 @@ Lo stile del componente può essere personalizzato sovrascrivendo le classi CSS 
 // Ottenere le date abilitate
 $enabledDates = $datePicker->getEnabledDates();
 // Verificare se una data è abilitata
+<<<<<<< HEAD
+=======
 $isEnabled = $datePicker->isDateEnabled('2025-06-15');
+>>>>>>> c001364 (.)
 $isEnabled = $datePicker->isDateEnabled('[DATE]');
 // Generare la griglia di un mese specifico
 $monthGrid = $datePicker->generateMonthGrid(2025, 6);
@@ -213,6 +219,8 @@ form.addEventListener('submit', (e) => {
 - [Documentazione Frontend](../cms/docs/frontend-architecture.md)
 * [form-components.md](../../../ui/docs/form-components.md)
 * [form-components.md](../../../ui/docs/roadmap/form-components.md)
+<<<<<<< HEAD
+=======
 - [Documentazione Frontend](../Cms/project_docs/frontend-architecture.md)
 ## Collegamenti tra versioni di form-components.md
 * [form-components.md](../../../UI/project_docs/form-components.md)
@@ -220,6 +228,7 @@ form.addEventListener('submit', (e) => {
 - [Documentazione Frontend](../Cms/docs/frontend-architecture.md)
 * [form-components.md](../../../UI/docs/form-components.md)
 * [form-components.md](../../../UI/docs/roadmap/form-components.md)
+>>>>>>> c001364 (.)
 # Componenti Form
 
 ## Introduzione
@@ -236,7 +245,10 @@ Un componente avanzato per la selezione di date che mostra un calendario inline 
 use Modules\UI\Filament\Forms\Components\InlineDatePicker;
 
 InlineDatePicker::make('appointment_date')
+<<<<<<< HEAD
+=======
     ->enabledDates(['2025-06-05', '2025-06-21', '2025-06-25'])
+>>>>>>> c001364 (.)
     ->enabledDates(['[DATE]', '[DATE]', '[DATE]'])
     ->calendarConfig([
         'locale' => 'it',
@@ -310,7 +322,10 @@ InlineDatePicker::make('appointment_date')
 $enabledDates = $datePicker->getEnabledDates();
 
 // Verificare se una data è abilitata
+<<<<<<< HEAD
+=======
 $isEnabled = $datePicker->isDateEnabled('2025-06-15');
+>>>>>>> c001364 (.)
 $isEnabled = $datePicker->isDateEnabled('[DATE]');
 
 // Generare la griglia di un mese specifico
@@ -516,7 +531,10 @@ form.addEventListener('submit', (e) => {
 ## Collegamenti tra versioni di form-components.md
 * [form-components.md](../../../ui/project_docs/form-components.md)
 * [form-components.md](../../../ui/project_docs/roadmap/form-components.md)
+<<<<<<< HEAD
+=======
 - [Documentazione Frontend](../Cms/project_docs/frontend-architecture.md)
 ## Collegamenti tra versioni di form-components.md
 * [form-components.md](../../../UI/project_docs/form-components.md)
 * [form-components.md](../../../UI/project_docs/roadmap/form-components.md)
+>>>>>>> c001364 (.)

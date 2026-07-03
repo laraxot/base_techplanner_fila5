@@ -57,10 +57,13 @@
 3. Seguire le convenzioni di naming del progetto
 4. Aggiornare la documentazione quando vengono aggiunti nuovi componenti
 ## Collegamenti tra versioni di filament-components.md
+<<<<<<< HEAD
+=======
 * [filament-components.md](../../User/docs/best-practices/filament-components.md)
 * [filament-components.md](../../Cms/docs/best-practices/filament-components.md)
 * [filament-components.md](../../Cms/docs/filament-components.md)
 * [filament-components.md](../../../docs/rules/filament-components.md)
+>>>>>>> c001364 (.)
 * [filament-components.md](../../user/docs/best-practices/filament-components.md)
 * [filament-components.md](../../cms/docs/best-practices/filament-components.md)
 * [filament-components.md](../../cms/docs/filament-components.md)
@@ -126,6 +129,12 @@
 3. Seguire le convenzioni di naming del progetto
 4. Aggiornare la documentazione quando vengono aggiunti nuovi componenti
 ## Collegamenti tra versioni di filament-components.md
+<<<<<<< HEAD
+* [filament-components.md](../../user/project_docs/best-practices/filament-components.md)
+* [filament-components.md](../../cms/project_docs/best-practices/filament-components.md)
+* [filament-components.md](../../cms/project_docs/filament-components.md)
+* [filament-components.md](../../../../docs/project/rules/filament-components.md)
+=======
 * [filament-components.md](../../User/project_docs/best-practices/filament-components.md)
 * [filament-components.md](../../Cms/project_docs/best-practices/filament-components.md)
 * [filament-components.md](../../Cms/project_docs/filament-components.md)
@@ -134,3 +143,4 @@
 * [filament-components.md](../../cms/project_docs/best-practices/filament-components.md)
 * [filament-components.md](../../cms/project_docs/filament-components.md)
 * [filament-components.md](../../../../docs/project/rules/filament-components.md)
+>>>>>>> c001364 (.)

@@ -765,4 +765,8 @@ class ComponentUsageTracker
 
 *Documento creato: Gennaio 2025*
 *Principi: DRY + KISS + SOLID + ROBUST + Laraxot*
+<<<<<<< HEAD
 *Stato: 🟡 Buona Base ma Necessita Refactoring Componenti*
+=======
+*Stato: 🟡 Buona Base ma Necessita Refactoring Componenti*
+>>>>>>> c001364 (.)

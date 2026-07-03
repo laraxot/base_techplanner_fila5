@@ -107,7 +107,13 @@
 
 ---
 
+<<<<<<< HEAD
+**Status**: ✅ Tutte le correzioni completate
+**PHPStan Level**: 10 ✅
+**Errori totali**: 0 ✅
+=======
 **Data**: 2025-01-06
 **Status**: ✅ Tutte le correzioni completate
 **PHPStan Level**: 10 ✅
 **Errori totali**: 0 ✅
+>>>>>>> c001364 (.)

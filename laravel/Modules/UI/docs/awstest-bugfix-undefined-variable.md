@@ -174,4 +174,8 @@ Per tutti i widget che utilizzano AWS SDK:
 **Data correzione**: 6 Gennaio 2025
 **PHPStan Level**: 9 ✅
 **Status**: Completamente Risolto
+<<<<<<< HEAD
 **Tipo**: Errore Strutturale + Problemi di Tipizzazione
+=======
+**Tipo**: Errore Strutturale + Problemi di Tipizzazione
+>>>>>>> c001364 (.)
