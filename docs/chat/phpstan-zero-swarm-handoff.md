@@ -16,11 +16,30 @@ discussions:
 
 # Handoff — PHPStan 0 + Second Brain
 
-## Stato attuale
+## Stato attuale (aggiornato 2026-07-03, sessione swarm phase 1)
+
+**Nota:** la riga "0 errori" sotto e' storica (2026-06-06/07). Misurato di nuovo il 2026-07-03 con
+`./vendor/bin/phpstan analyse Modules --memory-limit=-1 --error-format=json`: **1891 errori** al baseline,
+scesi a **1475** dopo la prima ondata di fix `missingType.iterableValue` (swarm parallelo, 7 agenti per modulo).
+Vedi `.planning/` (PROJECT.md, ROADMAP.md, STATE.md) per il piano completo a 5 fasi verso zero.
+
+Distribuzione residua per categoria (2026-07-03, post batch 1):
+- missingType.generics: 626
+- missingType.iterableValue: 606 (era 858)
+- larastan.noEnvCallsOutsideOfConfig: 239
+- resto (argument.type, trait.unused, return.type, class/property/interface.notFound, ecc.): ~90
+
+Gate qualita' canonico per ogni file modificato: `./tools/post-edit-php.sh <file> [pest-path]`
+(phpstan + phpmd se disponibile + phpinsights + pest). phpmd non e' installato in vendor/bin al 2026-07-03
+(skip automatico dello script, non e' un blocco).
+
+Coordinamento: issue #22 (`laraxot/base_techplanner_fila5`) per handoff cross-sessione; questo file per bus locale swarm.
+
+## Stato storico (2026-06-06/07, pre-regressione)
 
 | Area | Stato |
 |------|-------|
-| PHPStan full project (L10) | **0 errori** ✅ |
+| PHPStan full project (L10) | **0 errori** ✅ (storico, non piu' valido al 2026-07-03) |
 | QMD embed | 288/20488 vettori (background, CPU) |
 | Verify gate | **40 PASS, 0 FAIL** (2 WARN: archive/backup) |
 | BMAD v6 | 9 skills + 15 comandi installati |
