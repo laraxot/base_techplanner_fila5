@@ -161,7 +161,7 @@ class PasswordData extends Data
     /**
      * Get both password form components.
      *
-     * @return array<TextInput>
+     * @return list<TextInput>
      */
     public function getPasswordFormComponents(string $field_name): array
     {
@@ -177,6 +177,7 @@ class PasswordData extends Data
         ];
     }
 
+    /** @return array<string, FormsTextInput> */
     public static function getFormSchema(): array
     {
         return [

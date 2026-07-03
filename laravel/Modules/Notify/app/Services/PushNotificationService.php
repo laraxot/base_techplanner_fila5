@@ -219,7 +219,7 @@ class PushNotificationService
         }
 
         $notification = $this->processTemplate($template, $variables);
-        $data = isset($template['data']) && is_array($template['data']) ? $template['data'] : [];
+        $data = $template['data'];
 
         return $this->sendToDevices($tokens, $notification, $data);
     }
@@ -420,6 +420,10 @@ class PushNotificationService
 
     /**
      * Invia notifica topic a una piattaforma
+     *
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
+     * @return array<string, mixed>
      */
     private function sendTopicToPlatform(string $platform, string $topic, array $notification, array $data): array
     {
@@ -434,6 +438,10 @@ class PushNotificationService
 
     /**
      * Invia notifica FCM topic
+     *
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
+     * @return array<string, mixed>
      */
     private function sendFCMTopicNotification(string $topic, array $notification, array $data): array
     {
@@ -477,6 +485,9 @@ class PushNotificationService
 
     /**
      * Raggruppa token per piattaforma
+     *
+     * @param  array<int, string>  $tokens
+     * @return array<string, array<int, string>>
      */
     private function groupTokensByPlatform(array $tokens): array
     {
@@ -509,6 +520,8 @@ class PushNotificationService
 
     /**
      * Ottieni tutti i token attivi
+     *
+     * @return array<int, string>
      */
     private function getAllActiveTokens(): array
     {
@@ -519,6 +532,8 @@ class PushNotificationService
 
     /**
      * Ottieni template notifica
+     *
+     * @return array{title: string, body: string, icon: string, data: array<string, mixed>}|null
      */
     private function getTemplate(string $templateId): ?array
     {
@@ -548,6 +563,10 @@ class PushNotificationService
 
     /**
      * Processa template con variabili
+     *
+     * @param  array<string, mixed>  $template
+     * @param  array<string, mixed>  $variables
+     * @return array<string, mixed>
      */
     private function processTemplate(array $template, array $variables): array
     {
@@ -568,6 +587,9 @@ class PushNotificationService
 
     /**
      * Ottieni token per criteri
+     *
+     * @param  array<string, mixed>  $criteria
+     * @return array<int, string>
      */
     private function getTokensByCriteria(array $criteria): array
     {
@@ -578,6 +600,10 @@ class PushNotificationService
 
     /**
      * Invia notifica APNS topic
+     *
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
+     * @return array<string, mixed>
      */
     private function sendAPNSTopicNotification(string $topic, array $notification, array $data): array
     {
@@ -590,6 +616,10 @@ class PushNotificationService
 
     /**
      * Invia notifica Web Push topic
+     *
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
+     * @return array<string, mixed>
      */
     private function sendWebPushTopicNotification(string $topic, array $notification, array $data): array
     {

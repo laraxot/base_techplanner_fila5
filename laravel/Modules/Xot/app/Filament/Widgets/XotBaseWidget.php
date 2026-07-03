@@ -98,6 +98,9 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         return $schema;
     }
 
+    /**
+     * @return array<array-key, mixed>
+     */
     public function getFormFill(): array
     {
         $model = $this->getFormModel();
@@ -238,4 +241,3 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         }
     }
 }
-

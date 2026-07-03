@@ -24,6 +24,11 @@ class ComponentFileData extends Data
 
     public ?string $ns = null;
 
+    /**
+     * @param EloquentCollection<int, static>|Collection<int, static>|array<int, static|array<string, mixed>> $data
+     *
+     * @return DataCollection<int, static>
+     */
     public static function collection(EloquentCollection|Collection|array $data): DataCollection
     {
         return self::collect($data, DataCollection::class);

@@ -13,6 +13,8 @@ class EditProfile extends XotBaseEditProfile
 
     /**
      * Costruisce il form schema per la pagina di modifica profilo.
+     *
+     * @return list<\Filament\Schemas\Components\Component>
      */
     public function getFormSchema(): array
     {

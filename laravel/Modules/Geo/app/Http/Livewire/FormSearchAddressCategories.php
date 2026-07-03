@@ -24,6 +24,7 @@ class FormSearchAddressCategories extends Component
     // public \Illuminate\Support\HtmlString $slot;
     public string $name = 'address';
 
+    /** @var array<string, mixed> */
     public array $form_data = [];
 
     public bool $showActivityTypes = false;

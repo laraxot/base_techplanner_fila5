@@ -19,6 +19,10 @@ class TranslatorService extends LaravelTranslator
 
     /**
      * Get the translation for the given key.
+     *
+     * @param array<array-key, mixed> $replace
+     *
+     * @return string|array<array-key, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
     {

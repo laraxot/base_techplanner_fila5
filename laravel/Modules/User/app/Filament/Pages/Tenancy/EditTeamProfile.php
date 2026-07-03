@@ -14,6 +14,7 @@ class EditTeamProfile extends EditTenantProfile
         return 'Team profile';
     }
 
+    /** @return list<TextInput> */
     public function getFormSchema(): array
     {
         return [

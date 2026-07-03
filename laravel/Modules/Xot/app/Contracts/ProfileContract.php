@@ -33,12 +33,16 @@ interface ProfileContract extends HasMedia
     /**
      * Grant the given permission(s) to a role.
      *
+     * @param string|int|array<int, string|int|Permission>|Permission|\Illuminate\Support\Collection<int, string|int|Permission> $permissions
+     *
      * @return $this
      */
     public function givePermissionTo(string|int|array|Permission|\Illuminate\Support\Collection $permissions = []);
 
     /**
      * Assign the given role to the model.
+     *
+     * @param array<int, string|int|\Spatie\Permission\Contracts\Role>|string|int|\Spatie\Permission\Contracts\Role|\Illuminate\Support\Collection<int, string|int|\Spatie\Permission\Contracts\Role> $roles
      *
      * @return $this
      */
@@ -47,6 +51,8 @@ interface ProfileContract extends HasMedia
 
     /**
      * Determine if the model has (one of) the given role(s).
+     *
+     * @param string|int|array<int, string|int|\Spatie\Permission\Contracts\Role>|\Spatie\Permission\Contracts\Role|\Illuminate\Support\Collection<int, string|int|\Spatie\Permission\Contracts\Role> $roles
      */
     public function hasRole(
         string|int|array|\Spatie\Permission\Contracts\Role|\Illuminate\Support\Collection $roles,
@@ -57,6 +63,8 @@ interface ProfileContract extends HasMedia
      * Determine if the model has any of the given role(s).
      *
      * Alias to hasRole() but without Guard controls
+     *
+     * @param string|int|array<int, string|int|\Spatie\Permission\Contracts\Role>|\Spatie\Permission\Contracts\Role|\Illuminate\Support\Collection<int, string|int|\Spatie\Permission\Contracts\Role> $roles
      */
     public function hasAnyRole(string|int|array|\Spatie\Permission\Contracts\Role|\Illuminate\Support\Collection $roles = [
     ]): bool;

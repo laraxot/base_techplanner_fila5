@@ -17,6 +17,7 @@ class RegisterTeam extends RegisterTenant
         return 'Register team';
     }
 
+    /** @return list<TextInput> */
     public function getFormSchema(): array
     {
         return [

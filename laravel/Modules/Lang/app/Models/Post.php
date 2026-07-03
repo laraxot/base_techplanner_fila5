@@ -307,6 +307,9 @@ class Post extends BaseModel
         return $value ?? '';
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function toSearchableArray(): array
     {
         return $this->only(self::SEARCHABLE_FIELDS);

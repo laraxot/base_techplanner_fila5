@@ -345,6 +345,9 @@ if (! function_exists('getModuleNameFromModelName')) {
 }
 
 if (! function_exists('getAllModules')) {
+    /**
+     * @return array<array-key, mixed>
+     */
     function getAllModules(): array
     {
         return Module::all();

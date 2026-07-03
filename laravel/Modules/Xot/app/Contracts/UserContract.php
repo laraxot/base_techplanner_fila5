@@ -77,6 +77,8 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      */
     /**
      * Determine if the model has (one of) the given role(s).
+     *
+     * @param string|int|array<int, string|int|UserRole>|UserRole|Collection<int, string|int|UserRole> $roles
      */
     public function hasRole(
         string|int|array|UserRole|Collection $roles,
@@ -86,12 +88,16 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Assign the given role to the model.
      *
+     * @param array<int, string|int|UserRole>|string|int|UserRole|Collection<int, string|int|UserRole> $roles
+     *
      * @return $this
      */
     public function assignRole(array|string|int|UserRole|Collection $roles = []);
 
     /**
      * Remove all current roles and set the given ones.
+     *
+     * @param array<int, string|int|UserRole>|string|int|UserRole|Collection<int, string|int|UserRole> $roles
      *
      * @return $this
      */
@@ -127,7 +133,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Revoke the given role from the model.
      *
-     * @param string|int|array|UserRole|Collection|\BackedEnum ...$role
+     * @param string|int|array<int, string|int|UserRole>|UserRole|Collection<int, string|int|UserRole>|\BackedEnum ...$role
      *
      * @return $this
      */

@@ -23,6 +23,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
 {
     use Exportable;
 
+    /** @var array<int, string> */
     public array $headings = [];
 
     /** @var array<int, int|string> */
@@ -90,6 +91,9 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
         return $result;
     }
 
+    /**
+     * @return array<int|string, mixed>
+     */
     public function headings(): array
     {
         /** @var Collection<int|string, mixed> $headingsWithKeys */

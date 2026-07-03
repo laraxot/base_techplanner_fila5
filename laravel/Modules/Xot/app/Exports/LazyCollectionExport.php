@@ -79,6 +79,9 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
         return collect($headArray)->keys();
     }
 
+    /**
+     * @return array<int, string>
+     */
     public function headings(): array
     {
         $headings = $this->getHead();

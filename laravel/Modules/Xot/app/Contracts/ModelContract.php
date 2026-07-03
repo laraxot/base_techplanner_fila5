@@ -32,19 +32,19 @@ use Illuminate\Support\Carbon;
  * @method string    getRouteKey()
  * @method string    getRouteKeyName()
  * @method string    getTable()
- * @method mixed     with($array)
- * @method array     getFillable()
- * @method mixed     fill($array)
- * @method mixed     getConnection()
- * @method mixed     update($params)
- * @method mixed     delete()
- * @method mixed     detach($params)
- * @method mixed     attach($params)
- * @method array     treeLabel()
- * @method array     treeSons()
- * @method array     toArray()
- * @method BelongsTo user()
- * @method mixed     getAttributeValue(string $key)
+ * @method mixed                with($array)
+ * @method array<string, mixed> getFillable()
+ * @method mixed                fill($array)
+ * @method mixed                getConnection()
+ * @method mixed                update($params)
+ * @method mixed                delete()
+ * @method mixed                detach($params)
+ * @method mixed                attach($params)
+ * @method array<int, mixed>    treeLabel()
+ * @method array<int, mixed>    treeSons()
+ * @method array<string, mixed> toArray()
+ * @method BelongsTo            user()
+ * @method mixed                getAttributeValue(string $key)
  *
  * @phpstan-require-extends Model
  *
@@ -70,12 +70,16 @@ interface ModelContract
     /**
      * Fill the model with an array of attributes. Force mass assignment.
      *
+     * @param array<string, mixed> $attributes
+     *
      * @return $this
      */
     public function forceFill(array $attributes);
 
     /**
      * Save the model to the database.
+     *
+     * @param array<string, mixed> $options
      *
      * @return bool
      */
@@ -84,15 +88,15 @@ interface ModelContract
     /**
      * Convert the model instance to an array representation.
      *
-     * @return array<mixed>
+     * @return array<string, mixed>
      */
     public function toArray();
 
     /**
      * Create a new instance of the given model.
      *
-     * @param array $attributes
-     * @param bool  $exists
+     * @param array<string, mixed> $attributes
+     * @param bool                 $exists
      *
      * @return static
      */

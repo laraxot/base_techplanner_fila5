@@ -9,7 +9,6 @@ declare(strict_types=1);
 namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Modules\Lang\Actions\GetAllTranslationAction;
 use Modules\Lang\Database\Factories\TranslationFileFactory;
@@ -53,6 +52,7 @@ class TranslationFile extends BaseModel
         'content',
     ];
 
+    /** @var array<string, string> */
     protected array $form = [
         'key' => 'string',
         'path' => 'string',
@@ -61,15 +61,15 @@ class TranslationFile extends BaseModel
         'content' => 'json',
     ];
 
+    /**
+     * @return array<int, array<string, mixed>>
+     */
     public function getRows(): array
     {
         $files = app(GetAllTranslationAction::class)->execute();
 
-        return Arr::map($files, function ($item) {
-            if (! is_array($item)) {
-                return [];
-            }
-
+        $rows = [];
+        foreach ($files as $item) {
             $item['id'] = isset($item['key']) ? (string) $item['key'] : '';
             $item['name'] = isset($item['path']) ? basename((string) $item['path'], '.php') : '';
 
@@ -99,8 +99,10 @@ class TranslationFile extends BaseModel
              * }
              */
             // dddx($item);
-            return $item;
-        });
+            $rows[] = $item;
+        }
+
+        return $rows;
     }
 
     /**

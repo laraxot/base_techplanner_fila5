@@ -21,11 +21,11 @@ class ImportArticlesFromByJsonTextAction
 
     public function execute(string $json_text): void
     {
-        /** @var array $json */
+        /** @var array<string, mixed>|Collection<array-key, mixed> $json */
         $json = json_decode($json_text, true);
         Assert::isArray($json, '['.__LINE__.']['.__FILE__.']');
 
-        /** @var array $j */
+        /** @var array<string, mixed>|array<key, mixed> $j */
         foreach ($json as $j) {
             Assert::isArray($j, 'Each element must be an array');
 

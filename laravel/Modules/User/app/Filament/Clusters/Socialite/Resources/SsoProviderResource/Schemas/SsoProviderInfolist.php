@@ -8,6 +8,7 @@ use Filament\Infolists\Components\TextEntry;
 
 class SsoProviderInfolist
 {
+    /** @return array<string, TextEntry> */
     public static function getInfolistSchema(): array
     {
         return [
