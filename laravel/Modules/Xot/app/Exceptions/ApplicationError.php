@@ -20,6 +20,9 @@ readonly class ApplicationError implements \JsonSerializable, Arrayable, Jsonabl
         private string $error = '',
     ) {}
 
+    /**
+     * @return array<string, string>
+     */
     public function toArray(): array
     {
         return [
@@ -28,6 +31,9 @@ readonly class ApplicationError implements \JsonSerializable, Arrayable, Jsonabl
         ];
     }
 
+    /**
+     * @return array<string, string>
+     */
     #[\Override]
     public function jsonSerialize(): array
     {

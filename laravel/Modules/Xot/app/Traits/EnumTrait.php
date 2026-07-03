@@ -153,6 +153,9 @@ trait EnumTrait
         return [];
     }
 
+    /**
+     * @return array<string, string>
+     */
     public static function toArray(): array
     {
         $cases = static::cases();
