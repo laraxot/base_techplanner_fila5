@@ -106,6 +106,7 @@ class Comune extends BaseModel
         'lng',
     ];
 
+    /** @var array<string, string> */
     protected array $schema = [
         'id' => 'integer',
         'title' => 'json',
@@ -126,6 +127,9 @@ class Comune extends BaseModel
         return module_path('Geo', 'resources/json/comuni.json');
     }
 
+    /**
+     * @return array<int, array<string, mixed>>
+     */
     public function getRows(): array
     {
         return $this->getSushiRows();
