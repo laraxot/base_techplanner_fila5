@@ -14,15 +14,19 @@ class ThemeData extends Data
 
     public string $description = '';
 
+    /** @var list<string> */
     public array $keywords = [];
 
     public bool $active = true;
 
     public int $order = 0;
 
+    /** @var array<string, string> */
     public array $aliases = [];
 
+    /** @var list<string> */
     public array $files = [];
 
+    /** @var array<string, string> */
     public array $requires = [];
 }
