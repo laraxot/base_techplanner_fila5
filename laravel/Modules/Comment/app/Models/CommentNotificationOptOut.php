@@ -27,8 +27,8 @@ use Spatie\Comments\Models\CommentNotificationOptOut as BaseCommentNotificationO
  *
  * @method static CommentNotificationOptOut|null first()
  * @method static Collection<int, CommentNotificationOptOut> get()
- * @method static CommentNotificationOptOut create(array $attributes = [])
- * @method static CommentNotificationOptOut firstOrCreate(array $attributes = [], array $values = [])
+ * @method static CommentNotificationOptOut create(array<string, mixed> $attributes = [])
+ * @method static CommentNotificationOptOut firstOrCreate(array<string, mixed> $attributes = [], array<string, mixed> $values = [])
  * @method static Builder<static>|CommentNotificationOptOut where((string|Closure) $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
  * @method static Builder<static>|CommentNotificationOptOut whereNotNull((string|Expression) $columns)
  * @method static int count(string $columns = '*')

@@ -52,8 +52,8 @@ use Spatie\Comments\Models\CommentNotificationSubscription as BaseCommentNotific
  *
  * @method static CommentNotificationSubscription|null first()
  * @method static Collection<int, CommentNotificationSubscription> get()
- * @method static CommentNotificationSubscription create(array $attributes = [])
- * @method static CommentNotificationSubscription firstOrCreate(array $attributes = [], array $values = [])
+ * @method static CommentNotificationSubscription create(array<string, mixed> $attributes = [])
+ * @method static CommentNotificationSubscription firstOrCreate(array<string, mixed> $attributes = [], array<string, mixed> $values = [])
  * @method static Builder<static>|CommentNotificationSubscription where((string|Closure) $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
  * @method static Builder<static>|CommentNotificationSubscription whereNotNull((string|Expression) $columns)
  * @method static int count(string $columns = '*')
