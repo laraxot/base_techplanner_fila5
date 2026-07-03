@@ -309,3 +309,37 @@ issue.
   Filament schema arrays, `toArray()` transformers, and Livewire component properties matches the
   existing convention already used across Blog/User/Activity/Rating/Cms modules (grepped for
   `@return array<string, Component>` and `@method static array<...> toArray()` as reference before fixing).
+
+### Rating
+
+- Baseline (2026-07-03, this session): only 3 `missingType.iterableValue` left (prior swarm passes had already
+  cleared the rest of the module's ~13 original errors).
+- Files: `Modules/Rating/app/Actions/HasRating/GetRatingOptsByModelAction.php` (added
+  `@return array<int, string|null>` for the `pluck('title', 'ratings.id')->toArray()` result),
+  `Modules/Rating/app/Models/BaseRating.php` and `Modules/Rating/app/Models/Rating.php` (both had a stale
+  `@method static ... withExtraAttributes(array|string $attributes = [], ...)` PHPDoc tag copy of the real
+  `scopeWithExtraAttributes()` signature, which already used `array<string, mixed>|string` — the `@method` tag
+  just hadn't been kept in sync; fixed to match).
+- Result: 0 `missingType.iterableValue` in `Modules/Rating` after fix.
+- These edits ended up swept into a concurrent agent's commit `227aabe0` (same working tree, `git add -A`
+  race) rather than a dedicated Rating commit — verified the diff content is correct and intact at HEAD.
+
+### Comment
+
+- Baseline (2026-07-03, this session): 9 `missingType.iterableValue` across 3 model files (matches the ~9
+  baseline estimate).
+- Pattern: all 9 were `@method static <Model> create(array $attributes = [])` /
+  `firstOrCreate(array $attributes = [], array $values = [])` PHPDoc tags with bare `array` — same known
+  pattern already documented in `bashscripts/ai/wiki/memories/phpstan-missing-type-patterns-2026-06.md` (not
+  a new pattern, no wiki update needed). Fixed to `array<string, mixed>`.
+- Files: `Modules/Comment/app/Models/CommentNotificationOptOut.php`,
+  `Modules/Comment/app/Models/CommentNotificationSubscription.php`, `Modules/Comment/app/Models/Reaction.php`.
+- Result: 0 `missingType.iterableValue` in `Modules/Comment` after fix (30 total errors remain, all other
+  categories, out of scope for this pass). Committed as `081ed113`.
+- Hit two swarm-collision issues while verifying: (1) `CommentNotificationOptOut.php` got reverted mid-edit
+  by a concurrent process and had to be reapplied; (2) `./vendor/bin/phpstan analyse` repeatedly hit
+  `Application bootstrap failed` / `syntax error, unexpected token "<<"` because `Modules/UI` had ~70+ files
+  with live unresolved `<<<<<<< HEAD` conflict markers from another concurrent agent mid-merge (same episode
+  documented above under "UI") — Larastan boots the whole app (Filament panel discovery walks every module),
+  so any module's broken PHP blocks every other agent's verification run. Waited it out (~3 min) until the
+  other agent's fix converged.
