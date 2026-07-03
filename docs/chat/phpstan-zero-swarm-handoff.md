@@ -257,9 +257,9 @@ issue.
   edit completed; retried until clean. No `Modules/UI` files touched here.
 - No new second-brain pattern needed; the existing `missingType.iterableValue` memory entry
   and `phpstan-modules-sweep-2026-07-01.md` already cover this fix category.
-- `laravel/Modules/Cms` has no separate git remote (`git remote -v` from `laravel/Modules/Cms`
-  is empty — it's part of the `laraxot/base_techplanner_fila5` superproject checkout, not its
-  own submodule/subtree), so no separate GitHub issue comment was posted; tracked here only.
+- `laravel/Modules/Cms` has its own remote (`laraxot/module_cms_fila5`); posted a status comment
+  on the relevant open issue [laraxot/module_cms_fila5#11](https://github.com/laraxot/module_cms_fila5/issues/11)
+  ("COPILOT: Redundancy & phpstan — Cms").
 
 ## Swarm session update (2026-07-03, missingType.iterableValue — Gdpr/TechPlanner/Employee)
 
