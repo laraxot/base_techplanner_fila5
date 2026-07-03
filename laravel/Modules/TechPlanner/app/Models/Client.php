@@ -148,7 +148,7 @@ use function Safe\preg_replace;
  * @method static Builder<static>|Client orWhereNull($columns, $boolean = 'and')
  * @method static Builder<static>|Client where($column, $operator = null, $value = null, $boolean = 'and')
  * @method static Collection<int, static> get($columns = ['*'])
- * @method static int update(array $values)
+ * @method static int update(array<string, mixed> $values)
  * @method static void chunk(int $count, callable $callback)
  *
  * @mixin \Eloquent

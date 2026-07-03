@@ -26,6 +26,8 @@ class ClientMapWidget extends XotBaseWidget
 
     /**
      * Ottiene i dati dei clienti per la mappa.
+     *
+     * @return array<string, mixed>
      */
     protected function getData(): array
     {
