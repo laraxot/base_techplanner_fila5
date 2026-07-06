@@ -5,9 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Exports;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Collection;
+use Illuminate\Support\Collection as SupportCollection;
 use Maatwebsite\Excel\Concerns\Exportable;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\WithHeadings;
@@ -24,26 +25,27 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 {
     use Exportable;
 
-    /** @var Collection<int, Model> */
-    public Collection $collection;
+    /** @var SupportCollection<int, mixed>|EloquentCollection<int, Model> */
+    public SupportCollection|EloquentCollection $collection;
 
     /** @var array<int, string> */
     public array $headings;
 
     public ?string $transKey;
 
-    /** @var array<int, string> */
+    /** @var array<int, string>|null */
     public ?array $fields = null;
 
     /**
-     * @param  Collection<int, Model>  $collection
-     * @param  array<int, string>  $fields
+     * @param SupportCollection<int, mixed>|EloquentCollection<int, Model> $collection
+     * @param array<int, string>                                           $fields
      */
-    public function __construct(Collection $collection, ?string $transKey = null, array $fields = [])
+    public function __construct(SupportCollection|EloquentCollection $collection, ?string $transKey = null, array $fields = [])
     {
         $this->collection = $collection;
         $this->transKey = $transKey;
         $this->fields = $fields;
+        $this->headings = [];
     }
 
     /**
@@ -73,9 +75,9 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     }
 
     /**
-     * @return Collection<int, Model>
+     * @return SupportCollection<int, mixed>|EloquentCollection<int, Model>
      */
-    public function collection(): Collection
+    public function collection(): SupportCollection|EloquentCollection
     {
         return $this->collection;
     }
@@ -85,24 +87,23 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
      */
     public function map(mixed $row): array
     {
-        if ($this->fields === null || empty($this->fields)) {
+        if (null === $this->fields || empty($this->fields)) {
             Assert::isInstanceOf($row, Model::class);
             $res = app(SafeArrayByModelCastAction::class)->execute($row);
 
-            return Arr::map($res, function ($value, $_key) {
+            return array_values(Arr::map($res, function ($value, $_key): string {
                 if ($value instanceof \BackedEnum) {
                     if (method_exists($value, 'getLabel')) {
-                        return $value->getLabel();
+                        return SafeStringCastAction::cast($value->getLabel());
                     }
 
-                    return $value->value;
+                    return SafeStringCastAction::cast($value->value);
                 }
 
                 return SafeStringCastAction::cast($value);
-            });
+            }));
         }
 
-        // return collect($row)->only($this->fields)->toArray();
         $data = [];
 
         foreach ($this->fields as $field) {
@@ -112,7 +113,7 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
                     $value = $value->getLabel();
                 }
             }
-            $data[$field] = $value;
+            $data[] = SafeStringCastAction::cast($value);
         }
 
         return $data;

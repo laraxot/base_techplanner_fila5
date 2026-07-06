@@ -106,9 +106,4 @@ Forms\Components\FileUpload::make('certification')
 - [Documentazione Filament](./resources.md)
 - [Form Components](../form-components.md)
 - [Filament Resources Structure](../filament-resources-structure.md)
-<<<<<<< HEAD
 - [Documentazione specifica nel modulo Patient](../../patient/docs/filament-component-methods.md)
-=======
-- [Documentazione specifica nel modulo Patient](../../Patient/docs/filament-component-methods.md)
-- [Documentazione specifica nel modulo Patient](../../patient/docs/filament-component-methods.md)
->>>>>>> c001364 (.)

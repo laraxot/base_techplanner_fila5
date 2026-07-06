@@ -221,19 +221,12 @@ Questo pattern può essere applicato a:
 ## Changelog
 
 ### [DATE]
-- [TechPlanner Contacts Column](../../TechPlanner/docs/contacts-column-implementation-complete.md)
-- [UI Components](../../UI/docs/components.md)
-
-## Changelog
-
-### 2025-08-01
 - **Creazione**: Documentazione iniziale del pattern
 - **Standardizzazione**: Pattern derivato da TechPlanner
 - **Best Practices**: Definite regole architetturali
 
 ---
 
-*Ultimo aggiornamento: 2025-08-01*  
 *Ultimo aggiornamento: [DATE]*  
 *Autore: Sistema Laraxot*  
 *Versione: 1.0*

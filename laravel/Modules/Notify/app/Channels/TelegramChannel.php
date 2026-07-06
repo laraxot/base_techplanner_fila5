@@ -53,6 +53,9 @@ class TelegramChannel
 
         $action = $this->factory->create();
 
-        return $action->execute($telegramData);
+        /** @var array<string, mixed> $result */
+        $result = $action->execute($telegramData);
+
+        return $result;
     }
 }

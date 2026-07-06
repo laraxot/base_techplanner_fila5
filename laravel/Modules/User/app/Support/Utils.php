@@ -9,13 +9,14 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\User\Contracts\HasShieldPermissions;
 use Modules\User\Datas\FilamentShieldData;
+
+use function Safe\class_implements;
+use function Safe\class_uses;
+
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Traits\HasRoles;
 use Webmozart\Assert\Assert;
-
-use function Safe\class_implements;
-use function Safe\class_uses;
 
 /**
  * ---.
@@ -133,13 +134,16 @@ class Utils
     }
 
     /**
-     * @return array<array-key, mixed>
+     * @return list<string>
      */
     public static function getGeneralResourcePermissionPrefixes(): array
     {
         Assert::isArray($res = config('filament-shield.permission_prefixes.resource'), 'wip');
 
-        return $res;
+        return array_values(array_map(
+            static fn (mixed $item): string => Assert::string($item),
+            $res
+        ));
     }
 
     public static function getPagePermissionPrefix(): string
@@ -212,33 +216,42 @@ class Utils
     }
 
     /**
-     * @return array<array-key, mixed>
+     * @return list<string>
      */
     public static function getExcludedResouces(): array
     {
         Assert::isArray($res = config('filament-shield.exclude.resources'));
 
-        return $res;
+        return array_values(array_map(
+            static fn (mixed $item): string => Assert::string($item),
+            $res
+        ));
     }
 
     /**
-     * @return array<array-key, mixed>
+     * @return list<string>
      */
     public static function getExcludedPages(): array
     {
         Assert::isArray($res = config('filament-shield.exclude.pages'));
 
-        return $res;
+        return array_values(array_map(
+            static fn (mixed $item): string => Assert::string($item),
+            $res
+        ));
     }
 
     /**
-     * @return array<array-key, mixed>
+     * @return list<string>
      */
     public static function getExcludedWidgets(): array
     {
         Assert::isArray($res = config('filament-shield.exclude.widgets'));
 
-        return $res;
+        return array_values(array_map(
+            static fn (mixed $item): string => Assert::string($item),
+            $res
+        ));
     }
 
     public static function isRolePolicyRegistered(): bool
@@ -260,13 +273,20 @@ class Utils
      */
     public static function showModelPath(string $resourceFQCN): string
     {
-        return config('filament-shield.shield_resource.show_model_path', true)
-            ? (new ($resourceFQCN::getModel())())::class
-            : '';
+        $modelClass = $resourceFQCN::getModel();
+        Assert::string($modelClass);
+
+        if (! config('filament-shield.shield_resource.show_model_path', true)) {
+            return '';
+        }
+
+        Assert::classExists($modelClass);
+
+        return $modelClass;
     }
 
     /**
-     * @return array<array-key, mixed>
+     * @return list<string>
      */
     public static function getResourcePermissionPrefixes(string $resourceFQCN): array
     {
@@ -275,7 +295,10 @@ class Utils
             : static::getGeneralResourcePermissionPrefixes();
         Assert::isArray($res);
 
-        return $res;
+        return array_values(array_map(
+            static fn (mixed $item): string => Assert::string($item),
+            $res
+        ));
     }
 
     public static function getRoleModel(): string

@@ -4,6 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Comment\Support;
 
+/**
+ * @property-read string|null $email
+ * @property-read string|null $name
+ * @property-read string|null $url
+ * @property-read string|null $avatar
+ */
 class CommentatorProperties
 {
     /** @param array<string, mixed> $properties */

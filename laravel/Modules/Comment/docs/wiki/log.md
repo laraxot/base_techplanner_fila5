@@ -1,8 +1,14 @@
-## [2026-06-07] quality | PHPStan full Modules — native comment typing
+## [2026-06-29] boundary | Comment → User (DIP) — round 2
 
-- Full gate root: `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1` → **4993 file, zero errori**.
-- Pattern Comment: `view-string` locale prima di `view()`, collection generic da liste tipizzate, `class_exists()` per `class-string`, niente Spatie policy type hint nel core nativo.
-- File principali: `CommentConfig`, `Comment`, `HasComments`, `CommentsComponent`, `CommentPolicy`, `ConfigCommenti`.
+- Index wiki + `depends-on-user-module.md` (manifest User senza Comment)
+- Temi FO: user-comment-module-boundary (Sixteen, Zero, Meetup, Barthelemy, Two)
+- Xot: [module-user-comment-dependency-governance.md](concepts/module-user-comment-dependency-governance.md)
+
+## [2026-06-29] boundary | Comment → User (DIP)
+
+- [depends-on-user-module.md](concepts/depends-on-user-module.md)
+- [can-comment-contract-owner.md](concepts/can-comment-contract-owner.md) — BaseUser non implementa
+- GitHub: [#216](https://github.com/laraxot/base_predict_fila5/issues/216) / [D#217](https://github.com/laraxot/base_predict_fila5/discussions/217)
 
 ## [2026-06-05] concept | Spatie Comments — integrazione FO ticket
 
@@ -80,3 +86,16 @@
 - Layer wiki: `docs/wiki/` — LLM-maintained, sintesi ad alto riuso.
 - Schema: `docs/.schema/WIKI_SCHEMA.md`
 - Adozione moduli: `docs/project/llm-wiki-module-adoption.md`
+
+## [2026-06-10] STORY-291 | Spatie v2 parity gap analysis
+- Creato: concepts/spatie-v2-parity-gap-analysis.md
+- Implementato: ReactionCollection summary count, Reaction::$collectionClass, shouldBeAutomaticallyApproved granulare, MentionSearchComponent registration
+- Rimosso: packages/spatie/ residuo
+- Test: ReactionCollectionTest, ShouldBeAutomaticallyApprovedTest, CommentEngineLivewireRegistrationTest
+- GitHub: base #317, discussion #318, module #7
+
+## [2026-06-10] GitHub modulo — STORY-291 backlog
+- Abilitate discussions su laraxot/module_comment_fila5
+- Discussion hub: #11
+- Issue backlog: #8 mentions, #9 Filament, #10 audit ripgrep
+- Commenti cross-link su #7, base #317

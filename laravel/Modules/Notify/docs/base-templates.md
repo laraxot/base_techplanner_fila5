@@ -242,8 +242,6 @@ Ogni template accetta le seguenti variabili comuni:
 - [Documentazione MailPace](https://github.com/mailpace/templates)
 - [Struttura Template](./MAIL_TEMPLATES_STRUCTURE.md)
 - [Best Practices](./EMAIL_HTML_BEST_PRACTICES.md)
-- [Struttura Template](./MAIL_TEMPLATES_STRUCTURE.md)
-- [Best Practices](./EMAIL_HTML_BEST_PRACTICES.md)
 
 ## Supporto
 

@@ -20,7 +20,8 @@ final class Std extends Component
      */
     public function __construct(
         public string $tpl = '',
-    ) {}
+    ) {
+    }
 
     public function render(): Renderable
     {
@@ -29,5 +30,8 @@ final class Std extends Component
          */
         $view = app(GetViewAction::class)->execute($this->tpl);
 
+        $view_params = [];
+
+        return view($view, $view_params);
     }
 }

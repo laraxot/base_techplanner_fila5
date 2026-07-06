@@ -591,8 +591,4 @@ protected function getOptions(): array
 
 **Versione:** 1.0  
 **Ultimo Aggiornamento:** Gennaio 2026  
-<<<<<<< HEAD
 **Mantenuto da:** Quaeris Development Team
-=======
-**Mantenuto da:** Quaeris Development Team
->>>>>>> c001364 (.)

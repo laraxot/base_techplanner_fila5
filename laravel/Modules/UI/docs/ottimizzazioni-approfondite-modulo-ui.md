@@ -288,8 +288,4 @@ php artisan test --testsuite=UI
 **Impatto:** Tutti i moduli e sviluppatori
 **Stato:** In attesa implementazione
 **Responsabile:** Team UI
-<<<<<<< HEAD
 **Data:** 2025-01-XX
-=======
-**Data:** 2025-01-XX
->>>>>>> c001364 (.)

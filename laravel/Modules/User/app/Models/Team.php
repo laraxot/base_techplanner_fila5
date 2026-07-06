@@ -63,8 +63,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static static               firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static               updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  *
- * @mixin IdeHelperTeam
- *
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\User\Database\Factories\TeamFactory factory($count = null, $state = [])
@@ -99,6 +97,9 @@ class Team extends BaseTeam
         'settings',
     ];
 
+    /**
+     * @return HasMany<TeamPermission, $this>
+     */
     public function permissions(): HasMany
     {
         return $this->hasMany(TeamPermission::class);

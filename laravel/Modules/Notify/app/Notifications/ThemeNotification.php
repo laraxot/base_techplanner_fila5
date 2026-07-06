@@ -20,8 +20,6 @@ class ThemeNotification extends Notification implements ShouldQueue
     public array $attachments;
 
     /**
-     * Create a new notification instance.
-     *
      * @param  array<string, mixed>  $view_params
      */
     public function __construct(
@@ -30,9 +28,7 @@ class ThemeNotification extends Notification implements ShouldQueue
     ) {}
 
     /**
-     * Get the notification's delivery channels.
-     *
-     * @return array<int, string>
+     * @return list<string>
      */
     public function via(CanThemeNotificationContract $notifiable): array
     {
@@ -73,7 +69,8 @@ class ThemeNotification extends Notification implements ShouldQueue
 
     /**
      * Get the array representation of the notification.
-     *
+     */
+    /**
      * @return array<string, mixed>
      */
     public function toArray(CanThemeNotificationContract $notifiable): array

@@ -7,11 +7,11 @@ namespace Modules\Geo\Actions;
 class FilterCoordinatesInRadius
 {
     /**
-     * Filtra Coordinate In Raggio.
+     * @param array<mixed> $coordinateArray
      *
-     * @param  array<int, array<string, string>>  $coordinateArray
-     * @return array<int, array<string, string>>
+     * @return array<mixed>
      */
+    // filtra Coordinate In Raggio
     public function execute(float $latPartenza, float $lonPartenza, array $coordinateArray, int $raggio): array
     {
         $coordinateInRaggio = [];

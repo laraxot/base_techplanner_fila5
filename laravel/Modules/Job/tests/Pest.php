@@ -14,7 +14,7 @@ use Modules\Job\Models\JobBatch;
  */
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function createJob(array $attributes = []): Job
 {
@@ -22,7 +22,7 @@ function createJob(array $attributes = []): Job
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function makeJob(array $attributes = []): Job
 {
@@ -35,7 +35,7 @@ function makeJob(array $attributes = []): Job
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function createJobBatch(array $attributes = []): JobBatch
 {
@@ -43,7 +43,7 @@ function createJobBatch(array $attributes = []): JobBatch
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function makeJobBatch(array $attributes = []): JobBatch
 {

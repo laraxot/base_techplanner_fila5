@@ -15,16 +15,7 @@ class GetOpenWeatherDataAction
     private const ENDPOINT = 'https://api.openweathermap.org/data/2.5/weather';
 
     /**
-     * @return array{
-     *     temperature: mixed,
-     *     feels_like: mixed,
-     *     humidity: mixed,
-     *     pressure: mixed,
-     *     weather: array{main: mixed, description: mixed, icon: mixed},
-     *     wind: array{speed: mixed, direction: mixed},
-     *     clouds: mixed,
-     *     timestamp: mixed,
-     * }|null
+     * @return array<string, mixed>|null
      */
     public function execute(float $latitude, float $longitude): ?array
     {

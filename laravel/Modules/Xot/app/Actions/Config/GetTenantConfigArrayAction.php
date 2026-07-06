@@ -28,6 +28,13 @@ class GetTenantConfigArrayAction
             return [];
         }
 
-        return $content;
+        $result = [];
+        foreach ($content as $key => $value) {
+            if (is_string($key)) {
+                $result[$key] = $value;
+            }
+        }
+
+        return $result;
     }
 }

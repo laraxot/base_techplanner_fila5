@@ -6,13 +6,12 @@ use Modules\Job\Models\Result;
 use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
 use function Safe\json_encode;
 
 uses(TestCase::class);
 
 it('can create task with basic information', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $taskData = [
         'description' => 'Pulizia database giornaliera',
         'command' => 'db:cleanup',
@@ -48,7 +47,7 @@ it('can create task with basic information', function (): void {
 });
 
 it('can manage task activation and deactivation', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $task = Task::create([
         'description' => 'Test Task',
         'command' => 'test:command',
@@ -68,7 +67,7 @@ it('can manage task activation and deactivation', function (): void {
 });
 
 it('can handle task parameters and compilation', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $task = Task::create([
         'description' => 'Task con parametri',
         'command' => 'user:process',
@@ -88,7 +87,7 @@ it('can handle task parameters and compilation', function (): void {
 });
 
 it('can manage task frequencies', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $task = Task::create([
         'description' => 'Task con frequenze',
         'command' => 'report:generate',
@@ -115,7 +114,7 @@ it('can manage task frequencies', function (): void {
 });
 
 it('can handle task notifications', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $task = Task::create([
         'description' => 'Task con notifiche',
         'command' => 'backup:create',
@@ -133,7 +132,7 @@ it('can handle task notifications', function (): void {
 });
 
 it('can manage task execution settings', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $task = Task::create([
         'description' => 'Task con impostazioni esecuzione',
         'command' => 'heavy:process',
@@ -154,7 +153,7 @@ it('can manage task execution settings', function (): void {
 });
 
 it('can handle task cleanup settings', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $task = Task::create([
         'description' => 'Task con pulizia automatica',
         'command' => 'logs:cleanup',
@@ -171,7 +170,7 @@ it('can handle task cleanup settings', function (): void {
 });
 
 it('can manage task results and history', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $task = Task::create([
         'description' => 'Task con risultati',
         'command' => 'test:command',
@@ -204,7 +203,7 @@ it('can manage task results and history', function (): void {
 });
 
 it('can handle task priority management', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $highPriorityTask = Task::create([
         'description' => 'Task alta priorità',
         'command' => 'critical:process',
@@ -224,12 +223,12 @@ it('can handle task priority management', function (): void {
     ]);
 
     // Non possiamo testare priority_id perché non esiste nella tabella
-    Assert::assertStringContainsString((string) 'alta', (string) $highPriorityTask->description);
-    Assert::assertStringContainsString((string) 'bassa', (string) $lowPriorityTask->description);
+    Assert::assertStringContainsString((string)'alta', (string)$highPriorityTask->description);
+    Assert::assertStringContainsString((string)'bassa', (string)$lowPriorityTask->description);
 });
 
 it('can manage task timezone handling', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $romeTask = Task::create([
         'description' => 'Task Roma',
         'command' => 'local:process',
@@ -253,7 +252,7 @@ it('can manage task timezone handling', function (): void {
 });
 
 it('can handle task status transitions', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $task = Task::create([
         'description' => 'Task con transizioni stato',
         'command' => 'status:test',
@@ -274,7 +273,7 @@ it('can handle task status transitions', function (): void {
 });
 
 it('can handle task ordering and sorting', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $task1 = Task::create([
         'description' => 'Primo task',
         'command' => 'first:command',
@@ -299,7 +298,7 @@ it('can handle task ordering and sorting', function (): void {
 });
 
 it('can handle task maintenance mode', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $maintenanceTask = Task::create([
         'description' => 'Task manutenzione',
         'command' => 'maintenance:task',

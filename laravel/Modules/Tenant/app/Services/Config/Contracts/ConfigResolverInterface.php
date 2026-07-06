@@ -17,7 +17,8 @@ interface ConfigResolverInterface
     /**
      * Resolve the configuration value for the given key.
      *
-     * @param  array<mixed>|int|string|null  $default
+     * @param  string|int|array<mixed>|null  $default
+     *
      * @return float|int|string|array<mixed>|null
      */
     public function resolve(string $key, string|int|array|null $default = null): float|int|string|array|null;

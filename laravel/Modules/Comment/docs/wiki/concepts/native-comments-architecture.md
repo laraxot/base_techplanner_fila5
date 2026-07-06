@@ -194,7 +194,7 @@ Vedi workflow `/internalize-spatie-comments` e [spatie-package-inventory.md](spa
 
 - [ ] `rg 'Spatie\\Comments' laravel/` → 0 (escluso docs storici)
 - [ ] `packages/spatie` eliminata
-- [ ] `TicketSpatieCommentsTest` verde (rinominato)
+- [ ] `TicketCommentsTest` verde
 - [ ] FO `/it/tickets/{id}` commento auth + guest read-only
 - [ ] PHPStan L10 module Comment
 

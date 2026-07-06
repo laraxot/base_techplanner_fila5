@@ -73,6 +73,7 @@ use Webmozart\Assert\Assert;
  */
 class Role extends SpatieRole
 {
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
     use HasXotFactory;
     use RelationX;
     use Updater;
@@ -108,7 +109,7 @@ class Role extends SpatieRole
     }
 
     /**
-     * Get all of the teams the user belongs to.
+     * @return BelongsTo<Model, $this>
      */
     public function team(): BelongsTo
     {
@@ -120,7 +121,7 @@ class Role extends SpatieRole
     }
 
     /**
-     * A role may be given various permissions.
+     * @return BelongsToMany<Permission, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
      */
     public function permissions(): BelongsToMany
     {

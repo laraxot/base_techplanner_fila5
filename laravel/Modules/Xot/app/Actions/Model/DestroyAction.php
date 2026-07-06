@@ -16,6 +16,10 @@ class DestroyAction
      * @param array<string, mixed> $_data
      * @param array<string, mixed> $_rules
      */
+    /**
+     * @param array<string, mixed> $_data
+     * @param array<string, mixed> $_rules
+     */
     public function execute(Model $model, array $_data, array $_rules): Model
     {
         // prende la chiave del modello

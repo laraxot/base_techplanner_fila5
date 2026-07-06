@@ -25,7 +25,7 @@ class ComponentFileData extends Data
     public ?string $ns = null;
 
     /**
-     * @param EloquentCollection<int, static>|Collection<int, static>|array<int, static|array<string, mixed>> $data
+     * @param EloquentCollection<int, mixed>|Collection<int, mixed>|array<int, mixed> $data
      *
      * @return DataCollection<int, static>
      */

@@ -147,7 +147,7 @@ class Activity extends SpatieActivity
     /**
      * Scope activities by batch UUID.
      *
-     * @param  Builder<static>  $query
+     * @param Builder<static> $query
      * @return Builder<static>
      */
     public function scopeForBatch(Builder $query, string $batchUuid): Builder
@@ -158,7 +158,7 @@ class Activity extends SpatieActivity
     /**
      * Scope activities that belong to any batch.
      *
-     * @param  Builder<static>  $query
+     * @param Builder<static> $query
      * @return Builder<static>
      */
     public function scopeHasBatch(Builder $query): Builder

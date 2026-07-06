@@ -276,8 +276,4 @@ Seguire queste convenzioni per le chiavi di traduzione:
 - [Documentazione Filament - Dropdown](https://filamentphp.com/docs/3.x/support/blade-components/dropdown)
 - [Documentazione Filament - Loading Indicator](https://filamentphp.com/docs/3.x/support/blade-components/loading-indicator)
 - [Heroicons](https://heroicons.com/)
-<<<<<<< HEAD
 - [Tailwind CSS](https://tailwindcss.com/)
-=======
-- [Tailwind CSS](https://tailwindcss.com/)
->>>>>>> c001364 (.)

@@ -1,9 +1,5 @@
 # Strategia Correzione Errori PHPStan - RadioBadge.php
 
-<<<<<<< HEAD
-=======
-**Data**: 2025-12-23
->>>>>>> c001364 (.)
 **File**: `app/Filament/Forms/Components/RadioBadge.php`
 **Errori**: 3
 
@@ -125,8 +121,4 @@ public function getColorForOption(string $value): string
 
 ## 📝 Note
 
-<<<<<<< HEAD
 Il codice verifica già le interfacce a runtime (line 43), ma PHPStan ha bisogno di type guards espliciti o PHPDoc corretto per inferire i tipi corretti.
-=======
-Il codice verifica già le interfacce a runtime (line 43), ma PHPStan ha bisogno di type guards espliciti o PHPDoc corretto per inferire i tipi corretti.
->>>>>>> c001364 (.)

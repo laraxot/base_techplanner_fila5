@@ -1,9 +1,5 @@
 # Code Coverage: UI
 
-<<<<<<< HEAD
-=======
-**Date:** 2026-01-17
->>>>>>> c001364 (.)
 **Lines Coverage:** N/A (Failed to parse)
 **Test Exit Code:** 2
 
@@ -87,8 +83,4 @@ endor/laravel/framework/src/Illuminate/Container/Container.php:1415
   Duration: 33.74s
 
 
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> c001364 (.)

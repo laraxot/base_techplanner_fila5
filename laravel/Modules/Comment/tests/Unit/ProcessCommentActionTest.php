@@ -2,9 +2,10 @@
 
 declare(strict_types=1);
 
-use Modules\Comment\Actions\ProcessCommentAction;
+use Modules\Comment\Actions\Comment\ProcessCommentAction;
 use Modules\Comment\Models\Comment;
 use Modules\Comment\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
@@ -17,7 +18,7 @@ it('copia original_text quando non ci sono transformer', function (): void {
 
     app(ProcessCommentAction::class)->handle($comment);
 
-    expect($comment->text)->toBe('Testo semplice');
+    Assert::assertSame('Testo semplice', $comment->text);
 });
 
 it('trasforma markdown in html', function (): void {
@@ -27,5 +28,5 @@ it('trasforma markdown in html', function (): void {
 
     app(ProcessCommentAction::class)->handle($comment);
 
-    expect($comment->text)->toContain('<strong>grassetto</strong>');
+    Assert::assertStringContainsString('<strong>grassetto</strong>', (string) $comment->text);
 });

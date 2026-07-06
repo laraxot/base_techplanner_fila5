@@ -1014,18 +1014,9 @@ UI Module
 
 ---
 
-<<<<<<< HEAD
-=======
-**Last Updated**: 2025-10-01
-**Next Review**: 2025-11-01
->>>>>>> c001364 (.)
 **Status**: 🚧 ACTIVE DEVELOPMENT
 **Confidence Level**: 90%
 
 ---
 
-<<<<<<< HEAD
 *Questa roadmap è specifica per il modulo UI e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
-=======
-*Questa roadmap è specifica per il modulo UI e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
->>>>>>> c001364 (.)

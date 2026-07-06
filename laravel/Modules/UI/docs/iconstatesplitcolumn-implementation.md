@@ -486,11 +486,6 @@ document.addEventListener('state-transition', function(event) {
 **Compatibility**: Filament 3.x, Laravel 10.x
 
 ---
-<<<<<<< HEAD
-=======
-**Last Updated**: June 2025
-**Version**: 2.1
->>>>>>> c001364 (.)
 
 **Compatibility**: Filament 3.x, Laravel 10.x
 **Compatibility**: Filament 3.x, Laravel 10.x
@@ -500,22 +495,12 @@ document.addEventListener('state-transition', function(event) {
 **Compatibility**: Filament 3.x, Laravel 10.x
 
 ---
-<<<<<<< HEAD
-=======
-**Last Updated**: June 2025
-**Version**: 2.1
->>>>>>> c001364 (.)
 
 **Compatibility**: Filament 3.x, Laravel 10.x
 **Compatibility**: Filament 3.x, Laravel 10.x
 **Compatibility**: Filament 3.x, Laravel 10.x
 **Compatibility**: Filament 3.x, Laravel 10.x
 ---
-<<<<<<< HEAD
-=======
-**Last Updated**: June 2025
-**Version**: 2.1
->>>>>>> c001364 (.)
 
 **Compatibility**: Filament 3.x, Laravel 10.x
 # IconStateSplitColumn Implementation
@@ -847,16 +832,7 @@ document.addEventListener('state-transition', function(event) {
 
 ---
 
-<<<<<<< HEAD
 
 **Compatibility**: Filament 3.x, Laravel 10.x
 **Compatibility**: Filament 3.x, Laravel 10.x
 **Compatibility**: Filament 3.x, Laravel 10.x
-=======
-**Last Updated**: June 2025
-**Version**: 2.1
-
-**Compatibility**: Filament 3.x, Laravel 10.x
-**Compatibility**: Filament 3.x, Laravel 10.x
-**Compatibility**: Filament 3.x, Laravel 10.x
->>>>>>> c001364 (.)

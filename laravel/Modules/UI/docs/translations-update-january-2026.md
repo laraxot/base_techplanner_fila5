@@ -143,15 +143,6 @@ Tutte le traduzioni seguono la struttura espansa:
 - [Laraxot Translation Philosophy](../../Xot/docs/translation-philosophy.md)
 - [Translation Standards](../../Xot/docs/translation-standards.md)
 - [UI Module Documentation](../README.md)
-<<<<<<< HEAD
 
 *Intervento completato il: 2026-01-22*
 *Conforme alle regole DRY + KISS*
-=======
-- [Laraxot Translation Philosophy](../../Xot/docs/translation-philosophy.md)
-- [Translation Standards](../../Xot/docs/translation-standards.md)
-- [UI Module Documentation](../README.md)
-
-*Intervento completato il: 2026-01-22*
-*Conforme alle regole DRY + KISS*
->>>>>>> c001364 (.)

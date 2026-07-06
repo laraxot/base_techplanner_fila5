@@ -36,14 +36,6 @@ Depending on where your site is hosted, you may need to configure your server to
 * [custom-404-page.md](../../../ui/docs/custom-404-page.md)
 * [custom-404-page.md](../../../tenant/docs/it/custom-404-page.md)
 * [custom-404-page.md](../../../cms/docs/custom-404-page.md)
-<<<<<<< HEAD
-=======
-* [custom-404-page.md](../../../Gdpr/docs/custom-404-page.md)
-* [custom-404-page.md](../../../Xot/docs/custom-404-page.md)
-* [custom-404-page.md](../../../UI/docs/custom-404-page.md)
-* [custom-404-page.md](../../../Tenant/docs/it/custom-404-page.md)
-* [custom-404-page.md](../../../Cms/docs/custom-404-page.md)
->>>>>>> c001364 (.)
 
 ### Versione Incoming
 
@@ -90,19 +82,7 @@ Depending on where your site is hosted, you may need to configure your server to
 * [custom-404-page.md](../../../ui/project_docs/custom-404-page.md)
 * [custom-404-page.md](../../../tenant/project_docs/it/custom-404-page.md)
 * [custom-404-page.md](../../../cms/project_docs/custom-404-page.md)
-<<<<<<< HEAD
 
 ### Versione Incoming
 
 ---
-=======
-* [custom-404-page.md](../../../Gdpr/project_docs/custom-404-page.md)
-* [custom-404-page.md](../../../Xot/project_docs/custom-404-page.md)
-* [custom-404-page.md](../../../UI/project_docs/custom-404-page.md)
-* [custom-404-page.md](../../../Tenant/project_docs/it/custom-404-page.md)
-* [custom-404-page.md](../../../Cms/project_docs/custom-404-page.md)
-
-### Versione Incoming
-
----
->>>>>>> c001364 (.)

@@ -30,7 +30,7 @@ class NotificationData extends Data
     public array $channels = [];
 
     /**
-     * @var DataCollection<AttachmentData>
+     * @var DataCollection<int, AttachmentData>
      */
     public ?DataCollection $attachments = null;
 

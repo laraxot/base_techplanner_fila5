@@ -10,7 +10,7 @@ use Modules\Lang\Models\BaseModelLang;
 use Webmozart\Assert\Assert;
 
 /**
- * @implements CastsAttributes<mixed, mixed>
+ * @implements CastsAttributes<mixed, array<string, mixed>>
  */
 class LangField implements CastsAttributes
 {

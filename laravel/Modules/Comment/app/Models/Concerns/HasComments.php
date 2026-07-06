@@ -9,59 +9,73 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Collection;
-use Modules\Comment\Models\Contracts\CanComment;
+use Modules\Comment\Datas\CommentConfigData;
 use Modules\Comment\Enums\NotificationSubscriptionType;
 use Modules\Comment\Exceptions\CannotCreateComment;
 use Modules\Comment\Models\Comment;
 use Modules\Comment\Models\CommentNotificationSubscription;
-use Modules\Comment\Support\CommentConfig;
+use Modules\Comment\Models\Contracts\CanComment;
+use RuntimeException;
 
 trait HasComments
 {
-    public function comments(): MorphMany
+    /** @return MorphMany<Comment, $this> */
+    public function comments(): MorphMany // @phpstan-ignore method.childReturnType
     {
-        return $this->morphMany(CommentConfig::commentModelClass(), 'commentable');
+        /** @var class-string<Comment> $commentClass */
+        $commentClass = CommentConfigData::make()->models['comment'];
+
+        return $this->morphMany($commentClass, 'commentable'); // @phpstan-ignore return.type
     }
 
+    /** @return MorphMany<CommentNotificationSubscription, $this> */
     public function notificationSubscriptions(): MorphMany
     {
-        return $this->morphMany(CommentConfig::commentNotificationSubscriptionModelClass(), 'commentable');
+        /** @var class-string<CommentNotificationSubscription> $subscriptionClass */
+        $subscriptionClass = CommentConfigData::make()->models['comment_notification_subscription'];
+
+        return $this->morphMany($subscriptionClass, 'commentable'); // @phpstan-ignore return.type
     }
 
+    /** @return Collection<int, CanComment> */
     public function subscribers(?NotificationSubscriptionType $type = null): Collection
     {
-        $subscriptions = $this
+        return $this
             ->notificationSubscriptions()
             ->when($type, fn (Builder $builder) => $builder->where('type', $type))
             ->with('subscriber')
-            ->get();
+            ->get()
+            ->map(fn (CommentNotificationSubscription $subscription): ?Model => $subscription->subscriber)
+            ->filter(static fn (?Model $subscriber): bool => $subscriber instanceof CanComment)
+            ->map(static function (Model $subscriber): CanComment {
+                if (! $subscriber instanceof CanComment) {
+                    throw new RuntimeException('Subscriber must implement CanComment.');
+                }
 
-        $subscribers = [];
-        foreach ($subscriptions as $subscription) {
-            if (! $subscription instanceof CommentNotificationSubscription) {
-                continue;
-            }
+                return $subscriber;
+            })
+            ->values()
+            ->pipe(static function (Collection $subscribers): Collection {
+                /** @var Collection<int, CanComment> $typed */
+                $typed = $subscribers;
 
-            $subscriber = $subscription->subscriber;
-            if ($subscriber instanceof Model) {
-                $subscribers[] = $subscriber;
-            }
-        }
-
-        return collect($subscribers);
+                return $typed;
+            });
     }
 
     public function comment(string $text, ?CanComment $commentator = null): Comment
     {
         $commentator ??= auth()->user();
 
-        if (! CommentConfig::allowAnonymousComments()) {
+        if (! CommentConfigData::make()->allowAnonymous) {
             if (! $commentator) {
                 throw CannotCreateComment::userIsRequired();
             }
         }
 
-        $parentId = $this::class === CommentConfig::commentModelClass()
+        /** @var class-string<Comment> $commentClass */
+        $commentClass = CommentConfigData::make()->models['comment'];
+        $parentId = $this::class === $commentClass
             ? $this->getKey()
             : null;
 
@@ -89,7 +103,8 @@ trait HasComments
      */
     public function participatingCommentators(): Collection
     {
-        return $this->comments()
+        /** @var Collection<int, CanComment> $participants */
+        $participants = $this->comments()
             ->distinct('commentator_id', 'commentator_type')
             ->get()
             ->map(function (Comment $comment): array {
@@ -102,15 +117,41 @@ trait HasComments
                 return $related['commentator_type'] !== null;
             })
             ->groupBy('commentator_type')
-            ->map(fn (Collection $related) => $related->pluck('commentator_id')->toArray())
-            ->flatMap(function (array $ids, string $class) {
+            ->map(fn (Collection $related): array => $related->pluck('commentator_id')->toArray())
+            ->flatMap(function (array $ids, string $class): Collection {
                 if (! class_exists($class)) {
                     $resolved = Relation::getMorphedModel($class);
                     $class = is_string($resolved) ? $resolved : $class;
                 }
 
-                return $class::query()->whereIn((new $class)->getKeyName(), $ids)->get();
+                if (! class_exists($class)) {
+                    /** @var Collection<int, CanComment> $empty */
+                    $empty = new Collection;
+
+                    return $empty;
+                }
+
+                /** @var class-string<Model> $modelClass */
+                $modelClass = $class;
+                /** @var Model $model */
+                $model = new $modelClass;
+
+                $resolved = $modelClass::query()
+                    ->whereIn($model->getKeyName(), $ids)
+                    ->get()
+                    ->filter(static fn (Model $item): bool => $item instanceof CanComment)
+                    ->map(static fn (Model $item): CanComment => $item);
+
+                /** @var Collection<int, CanComment> $resolved */
+                return $resolved;
             });
+
+        return $participants->pipe(static function (Collection $collection): Collection {
+            /** @var Collection<int, CanComment> $typed */
+            $typed = $collection;
+
+            return $typed;
+        });
     }
 
     abstract public function commentableName(): string;

@@ -241,12 +241,6 @@ public static function getTableActions(): array
 ## Collegamenti Bidirezionali
 
 ### Collegamenti nella Root
-- [XotBaseResource](../../Xot/project_docs/XotBaseResource.md)
-- [Architettura Filament](../../../../docs/architecture/filament.md)
-- [Gestione Notifiche](../../../../docs/architecture/notifications.md)
-
-### Collegamenti ai Moduli
-- [XotBaseResource](../../Xot/docs/XotBaseResource.md)
 - [Architettura Filament](../../../../../docs/project/architecture/filament.md)
 - [Gestione Notifiche](../../../../../docs/project/architecture/notifications.md)
 
@@ -290,3 +284,4 @@ public static function getTableActions(): array
 
 
 ---
+

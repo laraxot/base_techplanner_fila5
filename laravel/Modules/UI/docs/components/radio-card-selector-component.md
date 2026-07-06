@@ -271,12 +271,6 @@ RadioCardSelector::make('item')
 
 ## 🔗 **Collegamenti**
 
-<<<<<<< HEAD
-=======
-- [Widget FindDoctorAndAppointment](../../../../Modules/<nome progetto>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
-- [Componenti UI Overview](../components.md)
-- [Best Practices Filament](../../../../docs/filament-best-practices.md)
->>>>>>> c001364 (.)
 - [Widget FindDoctorAndAppointment](../../../../modules/<nome progetto>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
 - [Componenti UI Overview](../components.md)
 - [Best Practices Filament](../../../../../docs/filament-best-practices.md)
@@ -286,8 +280,4 @@ RadioCardSelector::make('item')
 **Autore**: Implementazione completata per <nome progetto> widget
 **Ultima modifica**: Gennaio 2025
 **Versione**: 1.0.0
-<<<<<<< HEAD
 **Status**: ✅ Production Ready
-=======
-**Status**: ✅ Production Ready
->>>>>>> c001364 (.)

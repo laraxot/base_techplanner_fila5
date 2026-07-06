@@ -38,7 +38,6 @@ class SendTemplatedEmailJob implements ShouldQueue
      * @param string $mailable Classe mailable
      * @param array<string, mixed> $data Dati per il template
      * @param string|null $locale Lingua del template
-     */
     public function __construct(
         protected string $to,
         protected string $mailable,
@@ -114,13 +113,11 @@ return [
             'retry_after' => 90,
             'block_for' => null,
         ],
-    ],
 
     'failed' => [
         'driver' => env('QUEUE_FAILED_DRIVER', 'database-uuids'),
         'database' => env('DB_CONNECTION', 'mysql'),
         'table' => 'failed_jobs',
-    ],
 ];
 ```
 
@@ -137,14 +134,12 @@ class QueueWorkerManager
     public function startWorkers(): void
     {
         $workerCount = config('notify.queue.workers', 2);
-        
 
         for ($i = 0; $i < $workerCount; $i++) {
             Process::run('php artisan queue:work --queue=emails --tries=3');
         }
     }
 
-     * Monitora lo stato dei worker.
      * Monitora lo stato dei worker.
     public function monitorWorkers(): array
     {
@@ -172,7 +167,6 @@ SendTemplatedEmailJob::dispatch(
 // Invio multiplo
 $users->each(function ($user) {
         $user->email,
-        $user->email,
     )->onQueue('emails');
 });
 ```
@@ -190,7 +184,6 @@ php artisan queue:monitor
 # Gestione failed jobs
 php artisan queue:failed
 php artisan queue:retry all
-```
 
 ## Best Practices
 
@@ -209,7 +202,6 @@ php artisan queue:retry all
     'emails-high' => 100,  // 100/min
     'emails-normal' => 50, // 50/min
     'emails-bulk' => 10,   // 10/min
-],
 ```
 
 ### 2. Monitoraggio
@@ -221,9 +213,6 @@ $counter = Counter::create('emails_sent_total', 'Total emails sent')
 
 $histogram = Histogram::create('email_sending_duration_seconds', 'Time spent sending emails')
     ->observe($duration);
-
-### 3. Retry Strategy
-
 
 ### 3. Retry Strategy
 
@@ -272,8 +261,6 @@ $this->call('queue:prune-failed', [
 // Rimuovi job completati
 $this->call('queue:prune-batches', [
     '--hours' => 24
-]);
-```
 
 ## Scaling
 
@@ -283,9 +270,6 @@ $this->call('queue:prune-batches', [
 # Supervisor config
 [program:<nome progetto>-worker]
 process_name=%(program_name)s_%(process_num)02d
-command=php artisan queue:work redis --queue=emails
-
-command=php artisan queue:work redis --queue=emails
 command=php artisan queue:work redis --queue=emails
 
 command=php artisan queue:work redis --queue=emails
@@ -306,9 +290,6 @@ RateLimiter::for('mail-domain', function ($job) {
 // Rate limiter globale
 RateLimiter::for('mail-global', function () {
     return Limit::perMinute(1000);
-
-### 3. Sharding
-
 
 ### 3. Sharding
 
@@ -333,8 +314,6 @@ $metrics = [
     'email_sending_duration' => [
         'type' => 'histogram',
         'help' => 'Email sending duration',
-    'failed_jobs_total' => [
-        'help' => 'Total failed jobs',
     'failed_jobs_total' => [
         'help' => 'Total failed jobs',
 ];
@@ -362,7 +341,6 @@ if ($failedJobs > $threshold) {
         ->error("High email failure rate detected")
         ->send();
 }
-```
 
 ## Manutenzione
 
@@ -386,9 +364,6 @@ php artisan backup:run --only-db --filename=queue_backup
 
 // Backup failed jobs
 php artisan queue:failed-table > failed_jobs_backup.sql
-
-### 3. Ripristino
-
 
 ### 3. Ripristino
 

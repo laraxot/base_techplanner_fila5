@@ -135,7 +135,7 @@ class SpatieEmail extends TemplateMailable
      */
     public function envelope(): Envelope
     {
-        $envelope = new Envelope();
+        $envelope = new Envelope;
 
         // Set the recipient if available
         if ($this->recipient) {
@@ -163,7 +163,7 @@ class SpatieEmail extends TemplateMailable
     }
 
     /**
-     * @param  array{path: string, as?: string, mime?: string}  $attachment
+     * @param  array<string, string>  $attachment
      */
     public function getAttachmentFromPath(array $attachment): Attachment
     {
@@ -223,16 +223,14 @@ class SpatieEmail extends TemplateMailable
 
         foreach ($attachments as $item) {
             $attachment = null;
-            if (isset($item['path']) && file_exists($item['path'])) {
+            $path = $item['path'] ?? null;
+            if (is_string($path) && $path !== '' && file_exists($path)) {
                 /** @var array{path: string, as?: string, mime?: string} $pathAttachment */
-                $pathAttachment = ['path' => $item['path']];
-                if (isset($item['as']) && is_string($item['as'])) {
-                    $pathAttachment['as'] = $item['as'];
-                }
-                if (isset($item['mime']) && is_string($item['mime'])) {
-                    $pathAttachment['mime'] = $item['mime'];
-                }
-
+                $pathAttachment = [
+                    'path' => $path,
+                    'as' => $item['as'] ?? null,
+                    'mime' => $item['mime'] ?? null,
+                ];
                 $attachment = $this->getAttachmentFromPath($pathAttachment);
             }
 

@@ -12,9 +12,6 @@ Il modulo Notify è progettato per essere **completamente riutilizzabile** tra d
 $user = \Modules\<nome modulo>\Models\User::factory()->create();
 'database' => '<nome progetto>_test',
 $this->app['config']->set('database.connections.<nome progetto>_test', [
-$user = \Modules\<nome modulo>\Models\User::factory()->create();
-'database' => '<nome progetto>_test',
-$this->app['config']->set('database.connections.<nome progetto>_test', [
 ```
 
 ✅ **SEMPRE utilizzare pattern riutilizzabili:**
@@ -32,7 +29,6 @@ Il modulo Notify deve utilizzare `XotData::make()->getUserClass()` per ottenere 
 use Modules\Xot\Datas\XotData;
 
 // Invece di: \Modules\<nome modulo>\Models\User::class
-// Invece di: \Modules\<nome modulo>\Models\User::class
 $userClass = XotData::make()->getUserClass();
 $user = $userClass::factory()->create();
 ```
@@ -42,7 +38,6 @@ Per i test che richiedono configurazioni database specifiche:
 
 ```php
 // Invece di: '<nome progetto>_test'
-// Invece di: 'saluteora_test'
 $testDatabase = config('database.default') . '_test';
 $this->app['config']->set("database.connections.{$testDatabase}", [
     // configurazione
@@ -72,8 +67,6 @@ $this->artisan('migrate', ['--database' => '<nome progetto>_test']);
 ### ❌ Configurazioni Project-Specific
 ```php
 // VIETATO: Configurazioni specifiche del progetto
-'app_name' => '',
-'tenant_model' => \Modules\<nome modulo>\Models\Studio::class,
 'app_name' => '',
 'tenant_model' => \Modules\<nome modulo>\Models\Studio::class,
 ```
@@ -124,7 +117,6 @@ protected function createTestUser(): mixed
 Prima di committare modifiche al modulo Notify:
 
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
-- [ ] Nessun riferimento hardcoded a "saluteora" o altri nomi di progetti
 - [ ] Utilizzo di `XotData::make()->getUserClass()` per la classe User
 - [ ] Configurazioni database dinamiche nei test
 - [ ] Nessun import diretto di modelli da altri progetti
@@ -139,14 +131,12 @@ Per verificare che il modulo sia veramente riutilizzabile:
 ```bash
 # Cerca hardcoding di nomi progetti
 grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclude-dir=vendor
-grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclude-dir=vendor
 
 # Cerca import diretti da altri moduli
 grep -r "use Modules\\\\[^N][^o][^t][^i][^f][^y]" Modules/Notify/
 
 # Cerca configurazioni hardcoded
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
-grep -r "database.*saluteora\|app.*saluteora" Modules/Notify/
 ```
 
 ## Benefici della Riusabilità

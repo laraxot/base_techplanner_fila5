@@ -8,15 +8,15 @@ use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Support\Facades\Gate;
+use InvalidArgumentException;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Modules\Comment\Enums\NotificationSubscriptionType;
+use Modules\Comment\Models\Comment;
 use Modules\Comment\Models\Contracts\CanComment;
 use Modules\Comment\Models\Contracts\Commentable;
-use Modules\Comment\Support\CommentConfig;
+use Modules\Comment\Support\CommentConfigUi;
 
 class CommentsComponent extends Component
 {
@@ -30,7 +30,7 @@ class CommentsComponent extends Component
 
     public bool $showAvatars = true;
 
-    public bool $showNotificationOptions = false;
+    public bool $notifyOptions = false;
 
     public bool $newestFirst = false;
 
@@ -38,9 +38,17 @@ class CommentsComponent extends Component
 
     public bool $showReactions = false;
 
-    public string $selectedNotificationSubscriptionType = '';
+    public string $notifySubType = '';
 
-    public ?string $noCommentsText = null;
+    public bool $readOnly = false;
+
+    public ?bool $hideAvatars = null;
+
+    public bool $hideNotifyOptions = true;
+
+    public bool $noReplies = true;
+
+    public bool $noReactions = true;
 
     /** @var array<string, string> */
     protected $listeners = [
@@ -48,29 +56,21 @@ class CommentsComponent extends Component
         'reply-created' => 'saveNotificationSubscription',
     ];
 
-    public function mount(
-        ?Model $model = null,
-        bool $readOnly = false,
-        ?bool $hideAvatars = null,
-        bool $hideNotificationOptions = true,
-        bool $newestFirst = false,
-        bool $noReplies = true,
-        bool $noReactions = true,
-    ): void {
+    public function mount(?Model $model = null): void
+    {
         $this->model = $model;
-        $this->writable = ! $readOnly;
-        $this->showReplies = ! $noReplies;
-        $this->showReactions = ! $noReactions;
-        $this->newestFirst = $newestFirst;
-        $this->showNotificationOptions = ! $hideNotificationOptions;
-        $this->showAvatars = $hideAvatars !== null ? ! $hideAvatars : CommentConfig::showAvatars();
+        $this->writable = ! $this->readOnly;
+        $this->showReplies = ! $this->noReplies;
+        $this->showReactions = ! $this->noReactions;
+        $this->notifyOptions = ! $this->hideNotifyOptions;
+        $this->showAvatars = $this->hideAvatars !== null ? ! $this->hideAvatars : CommentConfigUi::showAvatars();
 
         $user = auth()->user();
         if ($user instanceof CanComment && $this->model instanceof Commentable) {
-            $notificationType = $user->notificationSubscriptionType($this->model);
-        $this->selectedNotificationSubscriptionType = $notificationType !== null
-            ? $notificationType->value
-            : NotificationSubscriptionType::Participating->value;
+            $subscriptionType = $user->notificationSubscriptionType($this->model);
+            $this->notifySubType = $subscriptionType !== null
+                ? $subscriptionType->value
+                : NotificationSubscriptionType::Participating->value;
         }
     }
 
@@ -82,10 +82,11 @@ class CommentsComponent extends Component
 
         $this->text = '';
 
-        $pageName = CommentConfig::paginationPageName();
+        $pageName = CommentConfigUi::paginationPageName();
         if ($this->newestFirst) {
             $this->resetPage($pageName);
-        } else {
+        }
+        if (! $this->newestFirst) {
             $this->gotoPage($this->comments()->lastPage(), $pageName);
         }
 
@@ -96,14 +97,14 @@ class CommentsComponent extends Component
 
     public function updateSelectedNotificationSubscriptionType(string $type): void
     {
-        $this->selectedNotificationSubscriptionType = $type;
+        $this->notifySubType = $type;
 
         $this->saveNotificationSubscription();
     }
 
     public function saveNotificationSubscription(): void
     {
-        if (! $this->showNotificationOptions || ! $this->model instanceof Commentable) {
+        if (! $this->notifyOptions || ! $this->model instanceof Commentable) {
             return;
         }
 
@@ -112,7 +113,7 @@ class CommentsComponent extends Component
             return;
         }
 
-        $type = NotificationSubscriptionType::from($this->selectedNotificationSubscriptionType);
+        $type = NotificationSubscriptionType::from($this->notifySubType);
 
         if ($type === NotificationSubscriptionType::None) {
             $currentUser->unsubscribeFromCommentNotifications($this->model);
@@ -123,6 +124,9 @@ class CommentsComponent extends Component
         $currentUser->subscribeToCommentNotifications($this->model, $type);
     }
 
+    /**
+     * @return LengthAwarePaginator<int, Comment>
+     */
     #[Computed]
     public function comments(): LengthAwarePaginator
     {
@@ -133,11 +137,6 @@ class CommentsComponent extends Component
                 'nestedComments.commentator',
                 'reactions.commentator',
                 'nestedComments.reactions.commentator',
-                'nestedComments' => function ($builder): void {
-                    if ($builder instanceof HasMany && $this->newestFirst) {
-                        $builder->latest();
-                    }
-                },
             ])
             ->when(
                 $this->newestFirst,
@@ -145,48 +144,30 @@ class CommentsComponent extends Component
                 fn (Builder $builder) => $builder->oldest(),
             );
 
-        return $query->paginate(
-            CommentConfig::paginationCount(),
+        $perPage = CommentConfigUi::paginationCount();
+
+        /** @var LengthAwarePaginator<int, Comment> $paginator */
+        $paginator = $query->paginate(
+            $perPage,
             ['*'],
-            CommentConfig::paginationPageName(),
+            CommentConfigUi::paginationPageName(),
         );
-    }
 
-    public function paginationView(): string
-    {
-        $theme = CommentConfig::paginationTheme();
-
-        if (view()->exists($theme)) {
-            return $theme;
-        }
-
-        if (view()->exists('livewire::'.$theme)) {
-            return 'livewire::'.$theme;
-        }
-
-        return 'livewire::tailwind';
+        return $paginator;
     }
 
     public function render(): View
     {
-        /** @var view-string $viewName */
-        $viewName = 'comment::livewire.comments';
+        /** @var view-string $view */
+        $view = 'comment::livewire.comments';
 
-        return view($viewName, $this->getViewData());
-    }
-
-    /**
-     * @return array<string, mixed>
-     */
-    protected function getViewData(): array
-    {
-        return [];
+        return view($view);
     }
 
     private function resolveCommentable(): Commentable
     {
         if (! $this->model instanceof Commentable) {
-            throw new \InvalidArgumentException('CommentsComponent requires a Commentable model.');
+            throw new InvalidArgumentException('CommentsComponent requires a Commentable model.');
         }
 
         return $this->model;

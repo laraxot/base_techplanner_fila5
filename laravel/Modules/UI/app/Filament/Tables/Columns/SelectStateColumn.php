@@ -7,18 +7,16 @@ namespace Modules\UI\Filament\Tables\Columns;
 use Filament\Tables\Columns\SelectColumn;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 class SelectStateColumn extends SelectColumn
 {
     protected function setUp(): void
     {
         parent::setUp();
-
-        $this->options(function (Model $record): array {
+        $this->options(function (Model $record, mixed $state): array {
             $name = $this->getName();
-            $state = $record->getAttribute($name);
-
-            if ($state === null) {
+            if (null === $state) {
                 if (! method_exists($record, 'getDefaultStateFor')) {
                     return [];
                 }
@@ -26,25 +24,27 @@ class SelectStateColumn extends SelectColumn
                 $states = Arr::wrap($defaultStates);
                 /** @var array<int|string, mixed> $states */
                 $states = \is_array($states) ? $states : [];
-            } else {
-                $states = [];
-                try {
-                    if (\is_object($state) && method_exists($state, 'transitionableStates')) {
-                        $transitionableStates = $state->transitionableStates();
-                        if (is_iterable($transitionableStates)) {
-                            $states = \is_array($transitionableStates) ? $transitionableStates : iterator_to_array($transitionableStates);
-                        }
+
+                return $this->combineStateOptions($states);
+            }
+
+            $states = [];
+            try {
+                if (\is_object($state) && method_exists($state, 'transitionableStates')) {
+                    $transitionableStates = $state->transitionableStates();
+                    if (is_iterable($transitionableStates)) {
+                        $states = \is_array($transitionableStates) ? $transitionableStates : iterator_to_array($transitionableStates);
                     }
-                    if (! method_exists($record, 'getStatesFor')) {
-                        return [];
-                    }
-                    $fetchedStates = $record->getStatesFor($name);
-                    $statesArray = \is_object($fetchedStates) && method_exists($fetchedStates, 'toArray')
-                        ? $fetchedStates->toArray()
-                        : [];
-                    $states = $statesArray;
-                } catch (\Throwable) {
                 }
+            } catch (\Exception) {
+                if (! method_exists($record, 'getStatesFor')) {
+                    return [];
+                }
+                $fetchedStates = $record->getStatesFor($name);
+                $statesArray = \is_object($fetchedStates) && method_exists($fetchedStates, 'toArray')
+                    ? $fetchedStates->toArray()
+                    : [];
+                $states = $statesArray;
             }
 
             /** @var array<int|string, mixed> $states */
@@ -60,7 +60,7 @@ class SelectStateColumn extends SelectColumn
                         }
                     } catch (\ReflectionException) {
                     }
-                    if ($stateNameProperty !== null) {
+                    if (null !== $stateNameProperty) {
                         $statesValues = array_values($states);
                         /** @var list<int|string> $statesValuesTyped */
                         $statesValuesTyped = $statesValues;
@@ -74,12 +74,10 @@ class SelectStateColumn extends SelectColumn
                 return \is_string($item) || \is_int($item);
             });
 
-            $values = array_map('strval', $statesFiltered);
-
-            return array_combine($values, $values);
+            return $this->combineStateOptions($statesFiltered);
         });
 
-        $this->updateStateUsing(function (Model $record, mixed $stateRaw): void {
+        $this->beforeStateUpdated(static function (Model $record, mixed $stateRaw): void {
             if (! \is_string($stateRaw)) {
                 return;
             }
@@ -98,5 +96,25 @@ class SelectStateColumn extends SelectColumn
 
             $recordState->transitionTo($state, $message);
         });
+    }
+
+    /**
+     * @param array<int|string, mixed> $states
+     *
+     * @return array<int|string, string>
+     */
+    private function combineStateOptions(array $states): array
+    {
+        $statesKeys = array_map(
+            static fn ($key) => SafeStringCastAction::cast($key),
+            array_keys($states),
+        );
+        $statesValues = array_map(
+            static fn ($value) => SafeStringCastAction::cast($value),
+            array_values($states),
+        );
+        $combined = array_combine($statesKeys, $statesValues);
+
+        return $combined ? $combined : [];
     }
 }

@@ -8,7 +8,9 @@ use Filament\Infolists\Components\TextEntry;
 
 class OauthRefreshTokenInfolist
 {
-    /** @return array<string, TextEntry> */
+    /**
+     * @return array<string, TextEntry>
+     */
     public static function getInfolistSchema(): array
     {
         return [

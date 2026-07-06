@@ -6,17 +6,17 @@ namespace Modules\Comment\Policies;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
+use Modules\Comment\Datas\CommentConfigData;
 use Modules\Comment\Models\Contracts\CanComment;
-use Modules\Comment\Support\CommentConfig;
 
 /**
- * Policy motore commenti Laraxot — usa {@see CanComment} nativo, non Spatie\Comments\…\CanComment.
+ * Policy motore commenti Laraxot — {@see CanComment} owner User, non Spatie\Comments\…\CanComment.
  */
 class CommentPolicy
 {
     public function create(?CanComment $user): bool
     {
-        if (CommentConfig::allowAnonymousComments()) {
+        if (CommentConfigData::make()->allowAnonymous) {
             return true;
         }
 
@@ -25,7 +25,7 @@ class CommentPolicy
 
     public function update(?CanComment $user, Model $comment): bool
     {
-        if ($user !== null && $this->approvingUsers($comment)->contains($user)) {
+        if ($user !== null && $this->isApprovingUser($user, $comment)) {
             return true;
         }
 
@@ -34,7 +34,7 @@ class CommentPolicy
 
     public function delete(?CanComment $user, Model $comment): bool
     {
-        if ($user !== null && $this->approvingUsers($comment)->contains($user)) {
+        if ($user !== null && $this->isApprovingUser($user, $comment)) {
             return true;
         }
 
@@ -43,7 +43,7 @@ class CommentPolicy
 
     public function react(CanComment $user, Model $commentableModel): bool
     {
-        return true;
+        return $this->create($user) && $commentableModel->exists();
     }
 
     public function see(?CanComment $user, Model $comment): bool
@@ -60,17 +60,17 @@ class CommentPolicy
             return true;
         }
 
-        return $this->approvingUsers($comment)->contains($user);
+        return $this->isApprovingUser($user, $comment);
     }
 
     public function approve(CanComment $user, Model $comment): bool
     {
-        return $this->approvingUsers($comment)->contains($user);
+        return $this->isApprovingUser($user, $comment);
     }
 
     public function reject(CanComment $user, Model $comment): bool
     {
-        return $this->approvingUsers($comment)->contains($user);
+        return $this->isApprovingUser($user, $comment);
     }
 
     private function commentMadeBy(?CanComment $user, Model $comment): bool
@@ -93,28 +93,38 @@ class CommentPolicy
             && $user->getKey() === $commentator->getKey();
     }
 
-    /** @return Collection<int, CanComment|object> */
+    private function isApprovingUser(CanComment $user, Model $comment): bool
+    {
+        return $this->approvingUsers($comment)->contains(
+            static fn (CanComment $approver): bool => $approver->getMorphClass() === $user->getMorphClass()
+                && $approver->getKey() === $user->getKey(),
+        );
+    }
+
+    /** @return Collection<int, CanComment> */
+    /** @phpstan-return Collection<int, CanComment> */
     private function approvingUsers(Model $comment): Collection
     {
         if (! method_exists($comment, 'getApprovingUsers')) {
-            /** @var Collection<int, CanComment|object> $empty */
-            $empty = collect();
-
-            return $empty;
+            return new Collection;
         }
 
         $users = $comment->getApprovingUsers();
+        if (! $users instanceof Collection) {
+            if (! is_iterable($users)) {
+                return new Collection;
+            }
 
-        if ($users instanceof Collection) {
-            /** @var Collection<int, CanComment|object> $valued */
-            $valued = $users->values();
-
-            return $valued;
+            $users = new Collection(is_array($users) ? $users : iterator_to_array($users));
         }
 
-        /** @var Collection<int, CanComment|object> $result */
-        $result = collect([$users]);
+        $approvers = [];
+        foreach ($users as $approver) {
+            if ($approver instanceof CanComment) {
+                $approvers[] = $approver;
+            }
+        }
 
-        return $result;
+        return new Collection($approvers);
     }
 }

@@ -53,6 +53,9 @@ class WhatsAppChannel
 
         $action = $this->factory->create();
 
-        return $action->execute($whatsAppData);
+        /** @var array<string, mixed> $result */
+        $result = $action->execute($whatsAppData);
+
+        return $result;
     }
 }

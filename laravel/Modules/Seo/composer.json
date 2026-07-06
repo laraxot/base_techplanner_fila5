@@ -28,6 +28,11 @@
             "Modules\\Seo\\Database\\Seeders\\": "database/seeders/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Seo\\Tests\\": "tests/"
+        }
+    },
     "require": {
         "spatie/laravel-sitemap": "^7.0"
     },

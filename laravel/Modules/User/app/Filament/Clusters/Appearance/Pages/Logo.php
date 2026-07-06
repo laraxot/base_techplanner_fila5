@@ -79,7 +79,7 @@ class Logo extends XotBasePage
     }
 
     /**
-     * @return array<int, Action>
+     * @return array<Action>
      */
     protected function getUpdateLogoFormActions(): array
     {
@@ -89,7 +89,7 @@ class Logo extends XotBasePage
     }
 
     /**
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {

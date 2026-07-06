@@ -10,6 +10,7 @@ use Illuminate\Database\Seeder;
 use Modules\Comment\Database\Factories\CommentFactory;
 use Modules\Comment\Models\Comment;
 use Modules\User\Models\User;
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
 
 class CommentSeeder extends Seeder
 {
@@ -37,7 +38,7 @@ class CommentSeeder extends Seeder
                     $user = $users->random();
                     $id = $user?->getKey();
 
-                    return is_int($id) ? $id : (int) ($id ?? 1);
+                    return is_int($id) ? $id : SafeIntCastAction::cast($id ?? 1);
                 },
             ]);
 
@@ -57,7 +58,7 @@ class CommentSeeder extends Seeder
                         $user = $users->random();
                         $id = $user?->getKey();
 
-                        return is_int($id) ? $id : (int) ($id ?? 1);
+                        return is_int($id) ? $id : SafeIntCastAction::cast($id ?? 1);
                     },
                 ]);
         }
@@ -74,7 +75,7 @@ class CommentSeeder extends Seeder
                     $user = $users->random();
                     $id = $user?->getKey();
 
-                    return is_int($id) ? $id : (int) ($id ?? 1);
+                    return is_int($id) ? $id : SafeIntCastAction::cast($id ?? 1);
                 },
             ]);
 

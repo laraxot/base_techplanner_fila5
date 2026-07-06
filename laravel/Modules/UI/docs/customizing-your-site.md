@@ -96,19 +96,6 @@ class Foo extends bar
 * [customizing-your-site.md](../../../ui/docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../tenant/docs/it/customizing-your-site.md)
 * [customizing-your-site.md](../../../cms/docs/customizing-your-site.md)
-<<<<<<< HEAD
-=======
-* [customizing-your-site.md](../../../Gdpr/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Xot/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../UI/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Tenant/project_docs/it/customizing-your-site.md)
-* [customizing-your-site.md](../../../Cms/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Gdpr/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Xot/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../UI/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Tenant/docs/it/customizing-your-site.md)
-* [customizing-your-site.md](../../../Cms/docs/customizing-your-site.md)
->>>>>>> c001364 (.)
 
 ### Versione Incoming
 
@@ -198,24 +185,7 @@ class Foo extends bar
 * [customizing-your-site.md](../../../ui/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../tenant/project_docs/it/customizing-your-site.md)
 * [customizing-your-site.md](../../../cms/project_docs/customizing-your-site.md)
-<<<<<<< HEAD
 
 ### Versione Incoming
 
 ---
-=======
-* [customizing-your-site.md](../../../Gdpr/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Xot/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../UI/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Tenant/docs/it/customizing-your-site.md)
-* [customizing-your-site.md](../../../Cms/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Gdpr/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Xot/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../UI/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Tenant/project_docs/it/customizing-your-site.md)
-* [customizing-your-site.md](../../../Cms/project_docs/customizing-your-site.md)
-
-### Versione Incoming
-
----
->>>>>>> c001364 (.)

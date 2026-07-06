@@ -13,7 +13,7 @@ use Webmozart\Assert\Assert;
 
 class PageContent extends Component
 {
-    /** @var array<array-key, BlockData> */
+    /** @var array<int, BlockData> */
     public array $blocks = [];
 
     public function __construct(public string $slug)
@@ -32,7 +32,10 @@ class PageContent extends Component
         if (! is_array($blocks)) {
             $blocks = [];
         }
-        $this->blocks = BlockData::collect($blocks);
+        $collected = BlockData::collect($blocks);
+        /** @var array<int, BlockData> $indexedBlocks */
+        $indexedBlocks = array_values($collected instanceof \Spatie\LaravelData\DataCollection ? $collected->all() : (array) $collected);
+        $this->blocks = $indexedBlocks;
     }
 
     /**

@@ -52,7 +52,7 @@ class CommentFactory extends Factory
      */
     public function approved(): static
     {
-        return $this->state(fn (array $attributes) => [
+        return $this->state(fn (array $attributes) => [ // Unused; state callbacks ignore attributes
             'approved_at' => now(),
         ]);
     }
@@ -62,7 +62,7 @@ class CommentFactory extends Factory
      */
     public function pending(): static
     {
-        return $this->state(fn (array $attributes) => [
+        return $this->state(fn (array $attributes) => [ // Unused; state callbacks ignore attributes
             'approved_at' => null,
         ]);
     }
@@ -72,7 +72,7 @@ class CommentFactory extends Factory
      */
     public function asReply(Comment $parentComment): static
     {
-        return $this->state(fn (array $attributes) => [
+        return $this->state(fn (array $attributes) => [ // Unused; state callbacks ignore attributes
             'parent_id' => $parentComment->id,
             'commentable_type' => $parentComment->commentable_type,
             'commentable_id' => $parentComment->commentable_id,

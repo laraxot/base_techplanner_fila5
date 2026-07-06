@@ -15,9 +15,7 @@ class GenerateModelByModelClass
 {
     use QueueableAction;
 
-    /**
-     * @var array<string, mixed>
-     */
+    /** @var array<string, string> */
     public array $replaces = [];
 
     /**
@@ -102,7 +100,7 @@ class GenerateModelByModelClass
     }
 
     /**
-     * @param array<string, mixed> $replaces
+     * @param array<string, string> $replaces
      */
     public function setCustomReplaces(array $replaces): self
     {

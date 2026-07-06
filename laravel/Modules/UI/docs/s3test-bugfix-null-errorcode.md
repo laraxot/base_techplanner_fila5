@@ -121,18 +121,10 @@ try {
 - [Best Practices](../best-practices.md)
 
 ## Data Correzione
-<<<<<<< HEAD
-=======
-2025-01-06
->>>>>>> c001364 (.)
 [DATE]
 
 ## Autore
 AI Assistant
 
 ## Status
-<<<<<<< HEAD
 ✅ Risolto e testato
-=======
-✅ Risolto e testato
->>>>>>> c001364 (.)

@@ -414,7 +414,3 @@ class Doctor extends BaseModel
 
 ---
 
-<<<<<<< HEAD
-=======
-*Ultimo aggiornamento: Dicembre 2024*
->>>>>>> c001364 (.)

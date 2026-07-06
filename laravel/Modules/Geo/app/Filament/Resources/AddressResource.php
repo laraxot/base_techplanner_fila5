@@ -94,7 +94,7 @@ class AddressResource extends XotBaseResource
     }
 
     /**
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
     public static function getSearchStep(): array
     {

@@ -129,12 +129,6 @@ Components should never rely on variables that haven't been explicitly defined a
 
 ## Related Documentation
 
-<<<<<<< HEAD
-=======
-- [Block Components Overview](./blocks/README.md)
-- [Component Architecture](./components/README.md)
-- [Section Architecture](./sections/README.md)
->>>>>>> c001364 (.)
 - [Block Components Overview](./blocks/readme.md)
 - [Component Architecture](./components/readme.md)
 - [Section Architecture](./sections/readme.md)
@@ -274,19 +268,9 @@ Components should never rely on variables that haven't been explicitly defined a
 
 ## Related Documentation
 
-<<<<<<< HEAD
-=======
-- [Block Components Overview](./blocks/README.md)
-- [Component Architecture](./components/README.md)
-- [Section Architecture](./sections/README.md)
->>>>>>> c001364 (.)
 - [Block Components Overview](./blocks/readme.md)
 - [Component Architecture](./components/readme.md)
 - [Section Architecture](./sections/readme.md)
 
 > **Note**: This document is the primary reference for Blade data handling patterns across all modules.
-<<<<<<< HEAD
 > All module-specific implementations should link back to this document.
-=======
-> All module-specific implementations should link back to this document.
->>>>>>> c001364 (.)

@@ -103,11 +103,5 @@ Sono stati creati test per verificare:
 - `tests/Feature/GroupColumnTest.php` (nuovo)
 
 ## Collegamenti
-<<<<<<< HEAD
 - [ProgressioniResource Usage](../../progressioni/docs/progressioni-resource.md)
 - [Filament Tables Documentation](https://filamentphp.com/docs/3.x/tables/columns)
-=======
-- [ProgressioniResource Usage](../../Progressioni/docs/progressioni-resource.md)
-- [ProgressioniResource Usage](../../progressioni/docs/progressioni-resource.md)
-- [Filament Tables Documentation](https://filamentphp.com/docs/3.x/tables/columns)
->>>>>>> c001364 (.)

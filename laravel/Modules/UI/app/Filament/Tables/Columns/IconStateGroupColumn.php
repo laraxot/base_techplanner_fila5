@@ -90,7 +90,15 @@ class IconStateGroupColumn extends ColumnGroup
             $column->action(
                 Action::make($stateKey.'-action')
                     ->requiresConfirmation()
-                    ->schema(function () use ($stateInstance): array {
+                    ->modalHeading(function (Model $record) use ($stateInstance) {
+                        // StateContract provides modalHeading()
+                        return $stateInstance->modalHeading();
+                    })
+                    ->modalDescription(function (Model $record) use ($stateInstance) {
+                        // StateContract provides modalDescription()
+                        return $stateInstance->modalDescription();
+                    })
+                    ->schema(function (Model $record) use ($stateInstance) {
                         // StateContract provides modalFormSchema()
                         return $stateInstance->modalFormSchema();
                     })
@@ -104,7 +112,7 @@ class IconStateGroupColumn extends ColumnGroup
                     })
             );
 
-            $visibleValue = $this->data[$visibleKey] ?? false;
+            $column->visible((bool) ($this->data[$visibleKey] ?? false));
             $columns[] = $column;
         }
 

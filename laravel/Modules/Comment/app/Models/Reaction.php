@@ -7,13 +7,14 @@ namespace Modules\Comment\Models;
 use Closure;
 use Illuminate\Contracts\Database\Query\Expression;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 use Modules\Comment\Database\Factories\ReactionFactory;
+use Modules\Comment\Models\Collections\ReactionCollection;
+use Modules\Comment\Models\Comment;
 use Modules\Xot\Contracts\ProfileContract;
-use Spatie\Comments\Models\Collections\ReactionCollection;
-use Spatie\Comments\Models\Reaction as BaseReaction;
 
 /**
  * @property int $id
@@ -49,10 +50,9 @@ use Spatie\Comments\Models\Reaction as BaseReaction;
  * @property-read Comment|null $comment
  * @property-read Model|\Eloquent $commentator
  *
- * @method static ReactionCollection<int, static> all($columns = ['*'])
- * @method static ReactionCollection<int, static> get($columns = ['*'])
+ * @method static \Illuminate\Database\Eloquent\Collection<int, static> all($columns = ['*'])
+ * @method static \Illuminate\Database\Eloquent\Collection<int, static> get($columns = ['*'])
  * @method static Reaction|null first()
- * @method static Collection<int, Reaction> get()
  * @method static Reaction create(array<string, mixed> $attributes = [])
  * @method static Reaction firstOrCreate(array<string, mixed> $attributes = [], array<string, mixed> $values = [])
  * @method static Builder<static>|Reaction where((string|Closure) $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
@@ -61,7 +61,23 @@ use Spatie\Comments\Models\Reaction as BaseReaction;
  *
  * @mixin \Eloquent
  */
-class Reaction extends BaseReaction
+class Reaction extends BaseModel
 {
-    protected $connection = 'comment';
+    /** @var class-string<ReactionCollection> */
+    protected static string $collectionClass = ReactionCollection::class;
+
+    protected $guarded = [];
+
+    /** @return BelongsTo<Comment, $this> */
+    public function comment(): BelongsTo
+    {
+        return $this->belongsTo(Comment::class);
+    }
+
+    /** @return MorphTo<Model, $this> */
+    public function commentator(): MorphTo
+    {
+        return $this->morphTo();
+    }
+
 }

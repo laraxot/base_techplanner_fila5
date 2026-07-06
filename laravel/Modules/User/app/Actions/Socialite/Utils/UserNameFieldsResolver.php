@@ -46,7 +46,7 @@ final readonly class UserNameFieldsResolver
     }
 
     /**
-     * @param  string  $searchMethod  use self constants (NAME_SEARCH, SURNAME_SEARCH)
+     * @param string $searchMethod use self constants (NAME_SEARCH, SURNAME_SEARCH)
      */
     private function resolveNameFields(User $idpUser, string $searchMethod): string
     {
@@ -103,7 +103,7 @@ final readonly class UserNameFieldsResolver
             ->before('@');
 
         // Use conditional logic instead of dynamic method call for type safety
-        if ($searchMethod === self::NAME_SEARCH) {
+        if (self::NAME_SEARCH === $searchMethod) {
             return $emailPart->before('.')->trim()->title();
         }
 
@@ -112,10 +112,11 @@ final readonly class UserNameFieldsResolver
     }
 
     /**
-     * @return array<array-key, mixed>
+     * @return array<string, mixed>
      */
     private function getRawUserData(User $idpUser): array
     {
+        /** @var array<string, mixed> $raw */
         $raw = [];
         try {
             $reflection = new \ReflectionClass($idpUser);
@@ -124,14 +125,18 @@ final readonly class UserNameFieldsResolver
                 $method->setAccessible(true);
                 $rawValue = $method->invoke($idpUser);
                 if (is_array($rawValue)) {
-                    $raw = $rawValue;
+                    foreach ($rawValue as $key => $value) {
+                        $raw[(string) $key] = $value;
+                    }
                 }
             } elseif ($reflection->hasProperty('user')) {
                 $property = $reflection->getProperty('user');
                 $property->setAccessible(true);
                 $userData = $property->getValue($idpUser);
                 if (is_array($userData)) {
-                    $raw = $userData;
+                    foreach ($userData as $key => $value) {
+                        $raw[(string) $key] = $value;
+                    }
                 }
             }
         } catch (\ReflectionException $e) {

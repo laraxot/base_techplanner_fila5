@@ -398,13 +398,6 @@ Restituisce il testo di aiuto tradotto per il layout.
 
 ## Collegamenti
 
-<<<<<<< HEAD
-=======
-- [TransTrait Documentation](../../Xot/docs/filament/trans-trait.md)
-- [UI Module Architecture](architecture_rules.md)
-- [Filament Best Practices](../../../docs/filament_best_practices.md)
-- [Translation Standards](../../../docs/translation_standards.md)
->>>>>>> c001364 (.)
 - [TransTrait Documentation](../../xot/docs/filament/trans-trait.md)
 - [UI Module Architecture](architecture_rules.md)
 - [Filament Best Practices](../../../../docs/filament_best_practices.md)
@@ -415,8 +408,4 @@ Restituisce il testo di aiuto tradotto per il layout.
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 2.0.0
-<<<<<<< HEAD
 **Compatibilità**: Filament 3.x, Laravel 10.x, PHP 8.1+
-=======
-**Compatibilità**: Filament 3.x, Laravel 10.x, PHP 8.1+
->>>>>>> c001364 (.)

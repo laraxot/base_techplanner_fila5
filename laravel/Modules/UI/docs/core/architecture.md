@@ -221,9 +221,4 @@ public function boot(): void
 
 ---
 
-<<<<<<< HEAD
 **Versione:** 2.0 - Consolidata DRY + KISS
-=======
-**Ultimo aggiornamento:** Gennaio 2025
-**Versione:** 2.0 - Consolidata DRY + KISS
->>>>>>> c001364 (.)

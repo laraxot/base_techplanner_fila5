@@ -3,3 +3,4 @@ Note: Using configuration file ./laravel/phpstan.neon.
 
 
  [OK] No errors                                                                                           
+

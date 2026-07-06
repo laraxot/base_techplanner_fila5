@@ -44,9 +44,7 @@ class PdfData extends Data
 
     public string $encoding = 'UTF-8';
 
-    /**
-     * @var array<int, int>
-     */
+    /** @var array{0: int, 1: int, 2: int, 3: int} */
     public array $margins = [5, 5, 5, 8];
 
     public bool $pdfa = false;
@@ -151,7 +149,7 @@ class PdfData extends Data
     }
 
     /**
-     * @param  array<string, mixed>  $params
+     * @param array<string, mixed> $params
      */
     public function view(string $view, array $params = []): self
     {

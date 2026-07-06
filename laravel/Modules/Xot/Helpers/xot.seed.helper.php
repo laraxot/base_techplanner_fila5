@@ -9,6 +9,7 @@
 
 declare(strict_types=1);
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Cache;
 
@@ -28,9 +29,12 @@ function xotSeedModelOnce(string $modelClass): void
 
     // Import the model class
     $modelInstance = app($modelClass);
+    if (! $modelInstance instanceof Model) {
+        return;
+    }
 
     // Check if model exists
-    if ($modelInstance->count() > 0) {
+    if ($modelInstance->newQuery()->count() > 0) {
         // Model already exists, mark as seeded
         Cache::put($cacheKey, true, 24 * 60 * 60); // Cache for 24 hours
         return;
@@ -47,8 +51,8 @@ function xotSeedModelOnce(string $modelClass): void
             // Create seeder instance and run its seed method
             $seeder = new $seederClass();
 
-            if ($seeder instanceof Seeder) {
-                $seeder->run();
+            if ($seeder instanceof Seeder && is_callable([$seeder, "run"])) {
+                $seeder->{"run"}();
 
                 // Mark as seeded
                 Cache::put($cacheKey, true, 24 * 60 * 60);

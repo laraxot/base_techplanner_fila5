@@ -1,9 +1,5 @@
 # 🔧 PSR-4 Fix Implementation Plan - UI Module
 
-<<<<<<< HEAD
-=======
-**Data**: Dicembre 15, 2025
->>>>>>> c001364 (.)
 **Modulo**: UI
 **Tipo Fix**: Namespace correction (Modules\Notify → Modules\UI)
 
@@ -294,8 +290,4 @@ After: Level 10 PASS ✅
 
 **Prossimo Step**: IMPLEMENTAZIONE → seguire Step 1-9
 
-<<<<<<< HEAD
 🤖 Generated with [Claude Code](https://claude.com/claude-code)
-=======
-🤖 Generated with [Claude Code](https://claude.com/claude-code)
->>>>>>> c001364 (.)

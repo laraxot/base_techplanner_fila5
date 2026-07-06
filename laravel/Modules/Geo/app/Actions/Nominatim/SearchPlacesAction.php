@@ -80,7 +80,7 @@ class SearchPlacesAction
      */
     private function parseResponse(string $response): Collection
     {
-        /** @var array<int, array{
+        /** @var array<array{
          *     display_name: string,
          *     lat: string,
          *     lon: string,

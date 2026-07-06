@@ -63,7 +63,7 @@ Livewire alias: `comments` → `Spatie\LivewireComments\Livewire\CommentsCompone
 | `Comment` model | Extends `Spatie\Comments\Models\Comment`; hook `saving` colonne legacy |
 | `CommentsComponent` | `HasComments::comment()` via contratto `Commentable` |
 | Guest FO | Lista read-only + login `/it/auth/login` |
-| Test | `TicketSpatieCommentsTest` — `DatabaseTransactions` + `Fixcity\Tests\TestCase` |
+| Test | `TicketCommentsTest` — `DatabaseTransactions` + `Fixcity\Tests\TestCase` |
 
 ### Root cause risolta (schema legacy)
 

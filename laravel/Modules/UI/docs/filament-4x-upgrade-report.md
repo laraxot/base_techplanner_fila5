@@ -1,9 +1,5 @@
 # Rapporto Aggiornamento Filament 4.x - Modulo UI
 
-<<<<<<< HEAD
-=======
-**Data**: 2025-01-27
->>>>>>> c001364 (.)
 **Status**: ✅ COMPLETATO
 **Versione Filament**: 4.0.17
 
@@ -229,8 +225,4 @@ class SimpleCalendarWidget extends \Filament\Widgets\Widget
 - Widget base di Filament 4.x
 - Sistema di autenticazione e autorizzazione
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: [DATE]*
-=======
-*Ultimo aggiornamento: [DATE]*
->>>>>>> c001364 (.)

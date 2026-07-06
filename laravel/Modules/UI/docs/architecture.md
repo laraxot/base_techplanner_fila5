@@ -1,11 +1,5 @@
 # UI Module - Architecture Guide (2025)
 
-<<<<<<< HEAD
-=======
-> **Last Updated:** 2025-11-19
-# UI Module - Architecture Guide (2025)
-
->>>>>>> c001364 (.)
 > **
 > **PHPStan Level:** 10
 > **Status:** Shared UI Components & Filament Customizations
@@ -677,8 +671,4 @@ The UI module is a **well-architected, feature-rich Filament customization layer
 ---
 
 **Document Version:** 1.0
-<<<<<<< HEAD
 **Author:** Claude Code Analysis
-=======
-**Author:** Claude Code Analysis
->>>>>>> c001364 (.)

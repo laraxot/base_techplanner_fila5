@@ -29,12 +29,6 @@ docs/cache/
 cache/
 
 # ==============================================
-# MERGE / CONFLICT BACKUP SYMLINKS (mai in git — LFS GH008)
-# ==============================================
-*~cc6378f*
-*~cc6378f (*)
-
-# ==============================================
 # CACHE & TEMPORARY FILES
 # ==============================================
 *.cache
@@ -199,3 +193,8 @@ config/config
 *.orig
 *.rej
 *~head
+
+ruvector.db
+.ai*
+_bmad
+agentdb.rvf

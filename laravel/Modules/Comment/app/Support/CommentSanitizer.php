@@ -4,35 +4,41 @@ declare(strict_types=1);
 
 namespace Modules\Comment\Support;
 
+use Modules\Comment\Datas\CommentConfigData;
+use Symfony\Component\HtmlSanitizer\HtmlSanitizer;
+use Symfony\Component\HtmlSanitizer\HtmlSanitizerConfig;
+
 class CommentSanitizer
 {
     public function sanitize(string $text): string
     {
-        $config = CommentConfig::allowedAttributes();
-
-        $processed = $text;
-
-        foreach ($config as $attribute => $allowedElements) {
-            if (! is_string($attribute) || ! is_array($allowedElements)) {
-                continue;
-            }
-            // Sanitization is handled by the HTML purifier
-        }
-
-        return strip_tags($processed, $this->getAllowedTags());
+        return (new HtmlSanitizer($this->buildConfig()))->sanitize($text);
     }
 
-    /**
-     * @return list<string>
-     */
-    private function getAllowedTags(): array
+    private function buildConfig(): HtmlSanitizerConfig
     {
-        $tags = ['p', 'br', 'strong', 'em', 'u', 's', 'blockquote', 'pre', 'code'];
+        $config = new HtmlSanitizerConfig;
+        $config = $config->allowRelativeLinks();
+        $config = $config->allowRelativeMedias();
+        $config = $config->allowSafeElements();
 
-        if (CommentConfig::mentionsEnabled()) {
-            $tags[] = 'span';
+        $commentConfig = CommentConfigData::make();
+
+        foreach ($commentConfig->allowedAttributes as $element => $attributes) {
+            if (! is_string($element) || ! is_array($attributes)) {
+                continue;
+            }
+
+            /** @var list<string> $allowedAttributes */
+            $allowedAttributes = array_values(array_filter($attributes, is_string(...)));
+
+            $config = $config->allowElement($element, $allowedAttributes);
         }
 
-        return $tags;
+        if ($commentConfig->mentions['enabled'] ?? false) {
+            $config = $config->allowElement('span', ['data-mention', 'class']);
+        }
+
+        return $config;
     }
 }

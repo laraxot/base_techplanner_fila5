@@ -249,7 +249,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
      */
 
     /**
-     * @return array<int, Action>
+     * @return array<Action>
      */
     protected function getUpdateProfileFormActions(): array
     {
@@ -259,7 +259,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     }
 
     /**
-     * @return array<int, Action>
+     * @return array<Action>
      */
     protected function getUpdatePasswordFormActions(): array
     {
@@ -271,7 +271,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     // ...
 
     /**
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {

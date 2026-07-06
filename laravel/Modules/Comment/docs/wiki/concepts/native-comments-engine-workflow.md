@@ -101,7 +101,7 @@ Eliminare `laravel/Modules/Comment/packages/spatie/` e possedere un motore comme
 3. Rimuovere `composer.json` require `spatiex/*` e path repositories `packages/spatie`
 4. Rimuovere autoload `Spatie\Comments\` → `packages/...`
 5. `rm -rf packages/spatie`
-6. PHPStan L10 modulo Comment + test Fixcity `TicketSpatieCommentsTest` → `TicketCommentsTest`
+6. PHPStan L10 modulo Comment + test Fixcity `TicketCommentsTest`
 
 ## Definition of Done
 

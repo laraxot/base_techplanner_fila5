@@ -1,16 +1,5 @@
 # Ponytail audit — Notify (over-engineering)
 
-**Ultimo run:** 2026-07-02  
-**Remediation run #5:** rimozione file inattivi e PHPStan pulito
-
-| # | Azione | Stato |
-|---|--------|-------|
-| N5 | action SMS inattive, Data class, test, pagina Netfun rimossi | ✅ 2026-07-02 |
-| N9 | `storage/app/ai/generate-notify-sms-tests.php` rimosso | ✅ 2026-07-02 |
-| N10 | `app/Channels/SmsChannel/TelegramChannel/WhatsAppChannel` — rimossi `@var` inutili | ✅ 2026-07-02 |
-| — | PHPStan `Modules/Notify` | ✅ 0 errori |
-| — | Pest `Modules/Notify` | ❌ bloccato da DB MySQL (credenziali `.env.testing` non valide) |
-
 **Ultimo run:** 2026-07-01  
 **Remediation run #4:** consolidamento SMS su driver canonico `smsfactor`
 
@@ -27,7 +16,7 @@
 **Modulo:** notifiche multi-canale.  
 **Hub:** [../../../../docs/audit/ponytail-audit.md](../../../../docs/audit/ponytail-audit.md)  
 **Remediation:** [../../../../docs/project/ponytail-audit-remediation.md](../../../../docs/project/ponytail-audit-remediation.md)  
-**GitHub monorepo:** [Issue #221](https://github.com/laraxot/base_quaeris_fila5/issues) · [Discussion #222](https://github.com/laraxot/base_quaeris_fila5/discussions) · [Discussion #228](https://github.com/laraxot/base_quaeris_fila5/discussions)
+**GitHub monorepo:** [Issue #221](https://github.com/laraxot/base_predict_fila5/issues/221) · [Discussion #222](https://github.com/laraxot/base_predict_fila5/discussions/222) · [Discussion #228](https://github.com/laraxot/base_predict_fila5/discussions/228)
 
 ## Scopo business
 

@@ -1,46 +1,47 @@
 ---
-title: "Handoff — PHPStan Modules zero 2026-07-03"
+title: "PHPStan Modules zero coordination"
 type: chat
-tags: [phpstan, modules, multi-agent, handoff, quality]
+tags: [phpstan, modules, multi-agent, coordination]
 created: 2026-07-03
 updated: 2026-07-03
-qmd: "phpstan modules zero errors multi agent handoff quality locks"
+qmd: "phpstan modules zero errors multi agent coordination"
 issues:
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/22"
-discussions:
-  - "https://github.com/laraxot/base_techplanner_fila5/discussions/19"
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/34"
+discussions: []
 ---
 
-# Handoff — PHPStan Modules zero
+# PHPStan Modules zero coordination
 
-## Stato iniziale
+## 2026-07-03 — Codex (`gpt-5-codex`)
 
-Comando richiesto:
+Command run from `laravel/`:
 
 ```bash
-cd laravel && ./vendor/bin/phpstan analyse Modules
+./vendor/bin/phpstan analyse Modules --memory-limit=-1 --error-format=json --no-progress
 ```
 
-Esito iniziale: PHPStan usa `laravel/phpstan.neon`, analizza 5442 file e termina con `1000+ errors` (output limitato da PHPStan).
+Initial totals:
 
-Prime classi di errore viste:
+- `file_errors`: 1474
+- `errors`: 0
+- config: root `laravel/phpstan.neon` only; do not modify it
 
-- `trait.unused`
-- `class.notFound`
-- `missingType.iterableValue`
-- `missingType.generics`
-- `assign.propertyType`
-- `argument.type`
+Top identifiers:
 
-## Disciplina
+- `missingType.generics`: 599
+- `missingType.iterableValue`: 458
+- `larastan.noEnvCallsOutsideOfConfig`: 239
+- `argument.type`: 47
+- `trait.unused`: 37
 
-- Non modificare `laravel/phpstan.neon`.
-- Prima di ogni edit: verificare `file.lock`, creare lock, editare, validare, rimuovere lock.
-- Fix minimi: preferire tipi reali, import corretti, generics PHPDoc e rimozione di PHPDoc errati.
-- Se un test cerca qualcosa che non esiste, correggere il test invece di creare artefatti finti.
+Coordination rules:
 
-## Avanzamento
+- before editing any file, check `file.lock`; if present, skip that file
+- create companion `file.lock`, edit, validate, then remove lock
+- avoid `phpstan.neon` changes and baselines
+- prefer narrow fixes that remove real type ambiguity
 
-- 2026-07-03 Codex: avvio da Blog, perché PHPStan mostra lì i primi errori concreti e ripetibili.
+Current Codex focus:
 
-— Codex (`gpt-5-codex`)
+- high-count config files and small enum/interface symbol errors first
+- update module docs/wiki only when a reusable fix pattern is confirmed

@@ -10,6 +10,7 @@
         "spam-protection"
     ],
     "priority": 50,
+    "enabled": false,
     "providers": [
         "Modules\\Comment\\Providers\\CommentServiceProvider",
         "Modules\\Comment\\Providers\\CommentEngineServiceProvider",
@@ -21,7 +22,7 @@
         "User",
         "Notification"
     ],
-    "version": "1.0.0",
+    "version": "2.0.0",
     "minimumCoreVersion": "10.0",
     "author": {
         "name": "Team Laraxot",

@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Support;
 
 use Filament\Tables\Table;
-use Mockery\MockInterface;
 use Modules\Xot\Filament\Traits\HasXotTable;
 
 class HasTableWithoutOptionalMethodsTestClass
@@ -29,11 +28,11 @@ class HasTableWithoutOptionalMethodsTestClass
     }
 
     /**
-     * @return Table&MockInterface
+     * @return Table&\Mockery\MockInterface
      */
     public function getTable(): Table
     {
-        /** @var Table&MockInterface $mock */
+        /** @var Table&\Mockery\MockInterface $mock */
         $mock = \Mockery::mock(Table::class);
 
         return $mock;
@@ -225,26 +224,42 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
-    public function deselectAllTableRecords(): void {}
+    public function deselectAllTableRecords(): void
+    {
+    }
 
-    public function mountTableAction(): void {}
+    public function mountTableAction(): void
+    {
+    }
 
-    public function mountTableBulkAction(): void {}
+    public function mountTableBulkAction(): void
+    {
+    }
 
     public function mountedTableActionRecord(): mixed
     {
         return null;
     }
 
-    public function replaceMountedTableAction(): void {}
+    public function replaceMountedTableAction(): void
+    {
+    }
 
-    public function replaceMountedTableBulkAction(): void {}
+    public function replaceMountedTableBulkAction(): void
+    {
+    }
 
-    public function resetTableSearch(): void {}
+    public function resetTableSearch(): void
+    {
+    }
 
-    public function resetTableColumnSearch(): void {}
+    public function resetTableColumnSearch(): void
+    {
+    }
 
-    public function toggleTableReordering(): void {}
+    public function toggleTableReordering(): void
+    {
+    }
 
     public function parseTableFilterName(): string
     {

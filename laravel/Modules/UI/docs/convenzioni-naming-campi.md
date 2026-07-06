@@ -214,8 +214,4 @@ TextInput::make('full_name')
 * [convenzioni-naming-campi.md](../../../../../docs/project/convenzioni-naming-campi.md)
 - [Documentazione Filament Forms](https://filamentphp.com/project_docs/3.x/forms/fields/text-input)
 - [Best Practices Database](../../../../docs/project/database/best-practices.md)
-<<<<<<< HEAD
 - [Convenzioni API](../../../../docs/project/api/convenzioni.md)
-=======
-- [Convenzioni API](../../../../docs/project/api/convenzioni.md)
->>>>>>> c001364 (.)

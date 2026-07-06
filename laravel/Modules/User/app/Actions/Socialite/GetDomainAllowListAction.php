@@ -17,24 +17,25 @@ class GetDomainAllowListAction
 
     public function __construct(
         private readonly Arr $arrHelper,
-    ) {}
+    ) {
+    }
 
     /**
      * Execute the action.
      *
-     * @return array<array-key, mixed>
+     * @return array<int, string>
      */
     public function execute(): array
     {
-        $res = config('filament-socialite.domain_allowlist');
+        $res = config('socialite.domain_allowlist', []);
         if (\is_string($res)) {
             return $this->arrHelper->wrap($res);
         }
 
         if (\is_array($res)) {
-            return $res;
+            return array_values(array_map(static fn (mixed $item): string => (string) $item, $res));
         }
 
-        throw new \Exception('check config filament-socialite.domain_allowlist');
+        return [];
     }
 }

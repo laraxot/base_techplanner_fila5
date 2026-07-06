@@ -408,8 +408,4 @@ public function register(): void
 **Filosofia**: Fenomenologia Quantistica applicata al Design Temporale
 **Compatibilità**: Laraxot , Filament 4.x, Alpine.js 3.x
 **Compatibilità**: Laraxot <nome progetto>, Filament 3.x, Alpine.js 3.x
-<<<<<<< HEAD
 **Filosofia**: Fenomenologia Quantistica applicata al Design Temporale
-=======
-**Filosofia**: Fenomenologia Quantistica applicata al Design Temporale
->>>>>>> c001364 (.)

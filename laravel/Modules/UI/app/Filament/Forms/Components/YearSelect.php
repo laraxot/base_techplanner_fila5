@@ -60,7 +60,7 @@ class YearSelect extends XotBaseSelect
 
         $years = [];
 
-        for ($year = $start; $year <= $end; $year++) {
+        for ($year = $start; $year <= $end; ++$year) {
             $years[$year] = (string) $year;
         }
 

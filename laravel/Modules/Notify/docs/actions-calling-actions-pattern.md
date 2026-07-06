@@ -1,7 +1,6 @@
 # Pattern: Actions che chiamano altre Actions
 
 **Data**: 2025-01-18  
-**Data**: 2025-01-18  
 **Modulo**: Notify  
 **Status**: ✅ Pattern consolidato
 
@@ -212,8 +211,6 @@ Prima di aggiungere dependency injection nel costruttore per chiamare altre Acti
 ## Documentazione Correlata
 
 - [Queueable Actions Pattern](../Geo/docs/architectural-philosophy.md#action-architecture-pattern)
-- [Action Execution Pattern](../../Xot/docs/action-execution-pattern.md)
-- [Spatie QueueableAction Documentation](../../../docs/patterns/queueable-actions.md)
 - [Action Execution Pattern](../../Xot/docs/action-execution-pattern.md)
 - [Spatie QueueableAction Documentation](../../../../docs/patterns/queueable-actions.md)
 

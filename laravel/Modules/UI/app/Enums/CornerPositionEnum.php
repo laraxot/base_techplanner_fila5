@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\UI\Enums;
 
+use Filament\Support\Contracts\HasColor;
+use Filament\Support\Contracts\HasIcon;
+use Filament\Support\Contracts\HasLabel;
+use Modules\Xot\Traits\EnumTrait;
+
 enum CornerPositionEnum: string implements HasColor, HasIcon, HasLabel
 {
     use EnumTrait;

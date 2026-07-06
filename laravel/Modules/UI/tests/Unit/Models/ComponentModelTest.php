@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\UI\Tests\Unit\Models;
 
 use Modules\UI\Models\Component;
-<<<<<<< HEAD
 use Modules\UI\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -30,18 +29,6 @@ describe('Component Model', function (): void {
 
     test('has fillable attributes', function (): void {
         /** @phpstan-ignore-next-line -- Component model is optional, guarded by setUp */
-=======
-
-describe('Component Model', function (): void {
-    it('can be instantiated', function (): void {
-        $component = new Component();
-        $component = new Component();
-        expect($component)->toBeInstanceOf(Component::class);
-    });
-
-    it('has fillable attributes', function (): void {
-        $component = new Component();
->>>>>>> c001364 (.)
         $component = new Component();
         $expected = [
             'name', 'theme_id', 'is_active', 'version', 'dependencies',
@@ -52,7 +39,6 @@ describe('Component Model', function (): void {
         ];
 
         foreach ($expected as $field) {
-<<<<<<< HEAD
             /* @phpstan-ignore-next-line -- Component model is optional */
             Assert::assertTrue(in_array($field, $component->getFillable()));
         }
@@ -114,52 +100,5 @@ describe('Component Model', function (): void {
         /** @phpstan-ignore-next-line -- Component::class resolves to string even if class absent */
         $reflection = new \ReflectionClass(Component::class);
         Assert::assertSame('Modules\UI\Models', $reflection->getNamespaceName());
-=======
-            expect(in_array($field, $component->getFillable()))->toBeTrue();
-        }
-    });
-
-    it('has casts defined', function (): void {
-        $component = new Component();
-        $component = new Component();
-        $casts = $component->getCasts();
-
-        expect($casts['is_active'])->toBe('boolean')
-            ->and($casts['is_cacheable'])->toBe('boolean')
-            ->and($casts['dependencies'])->toBe('array')
-            ->and($casts['validation_rules'])->toBe('array')
-            ->and($casts['data_schema'])->toBe('array')
-            ->and($casts['responsive_breakpoints'])->toBe('array')
-            ->and($casts['supports_lazy_loading'])->toBe('boolean')
-            ->and($casts['lazy_loading_threshold'])->toBe('integer')
-            ->and($casts['cache_duration'])->toBe('integer');
-    });
-
-    it('has theme relationship', function (): void {
-        $reflection = new ReflectionClass(Component::class);
-        expect($reflection->hasMethod('theme'))->toBeTrue();
-    });
-
-    it('has correct table name', function (): void {
-        $component = new Component();
-        $component = new Component();
-        expect($component->getTable())->toBe('components');
-    });
-
-    it('extends BaseModel', function (): void {
-        $reflection = new ReflectionClass(Component::class);
-        expect($reflection->isSubclassOf(Modules\UI\Models\BaseModel::class))->toBeTrue();
-    });
-
-    it('uses strict types', function (): void {
-        $reflection = new ReflectionClass(Component::class);
-        $content = file_get_contents($reflection->getFileName());
-        expect($content)->toContain('');
-    });
-
-    it('has correct namespace', function (): void {
-        $reflection = new ReflectionClass(Component::class);
-        expect($reflection->getNamespaceName())->toBe('Modules\UI\Models');
->>>>>>> c001364 (.)
     });
 });

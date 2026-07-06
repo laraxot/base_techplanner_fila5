@@ -65,16 +65,7 @@ class OSMMapWidget extends Widget
     }
 
     /**
-     * @return array{
-     *     markers: array<int, array{
-     *         position: array{lat: float, lng: float},
-     *         title: string,
-     *         content: string,
-     *         icon?: array{url: string, scaledSize: array{width: int, height: int}}
-     *     }>,
-     *     center: array{lat: float, lng: float},
-     *     zoom: int
-     * }
+     * @return array<string, mixed>
      */
     protected function getData(): array
     {

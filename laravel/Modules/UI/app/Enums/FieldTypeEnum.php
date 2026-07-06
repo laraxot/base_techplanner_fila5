@@ -9,13 +9,18 @@ declare(strict_types=1);
 
 namespace Modules\UI\Enums;
 
+use Filament\Support\Contracts\HasColor;
+use Filament\Support\Contracts\HasIcon;
+use Filament\Support\Contracts\HasLabel;
+use Modules\Xot\Traits\EnumTrait;
+
 /**
  * Defines the different types of appointments in the system.
  *
- * @method static self fromName(string $name)
- * @method static self fromValue(string $value)
- * @method static self tryFromName(string $name)
- * @method static self tryFromValue(string $value)
+ * @method static self        fromName(string $name)
+ * @method static self        fromValue(string $value)
+ * @method static self        tryFromName(string $name)
+ * @method static self        tryFromValue(string $value)
  * @method static array<self> cases()
  */
 enum FieldTypeEnum: string implements HasColor, HasIcon, HasLabel

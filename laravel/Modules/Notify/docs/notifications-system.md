@@ -135,7 +135,6 @@ return [
 ## Collegamenti
 - [Documentazione API](./api.md)
 - [Template Email](./templates.md)
-- [Guida Contribuzione](./CONTRIBUTING.md)
 - [Guida Contribuzione](./contributing.md)
 
 ## Note

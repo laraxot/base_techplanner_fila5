@@ -7,9 +7,7 @@ namespace Modules\Xot\Exports;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection;
-// use Maatwebsite\Excel\Concerns\FromCollection;
 use Illuminate\Support\LazyCollection;
-use Iterator;
 use Maatwebsite\Excel\Concerns\Exportable;
 use Maatwebsite\Excel\Concerns\FromIterator;
 use Maatwebsite\Excel\Concerns\WithHeadings;
@@ -24,7 +22,7 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
     use Exportable;
 
     /** @var array<int, string> */
-    public array $headings;
+    public array $headings = [];
 
     public ?string $transKey;
 
@@ -32,20 +30,16 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
     public array $fields = [];
 
     /**
-     * @param  LazyCollection<int, mixed>  $collection
-     * @param  array<int, string>  $fields
+     * @param LazyCollection<int, mixed> $collection
+     * @param array<int, string>         $fields
      */
     public function __construct(
         public LazyCollection $collection,
         ?string $transKey = null,
         array $fields = [],
     ) {
-        // $this->headings = count($headings) > 0 ? $headings : collect($collection->first())->keys()->toArray();
-
         $this->transKey = $transKey;
         $this->fields = $fields;
-
-        // $this->headings = $headings->toArray();
     }
 
     /**
@@ -64,42 +58,49 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
                 return [$key => $rowArray[$key] ?? null];
             })
             ->toArray();
-
-        /*
-         * return [
-         * $row->,
-         * ];
-         */
     }
 
     /**
-     * @return Collection<int, int|string>
+     * @return Collection<int, string>
      */
     public function getHead(): Collection
     {
         if (! empty($this->fields)) {
-            /** @var list<int|string> $fields */
-            $fields = $this->fields;
-
-            return collect($fields);
+            return collect($this->fields)->values();
         }
 
         $head = $this->collection->first();
         $headArray = $this->normalizeRow($head);
 
-        return collect(array_keys($headArray));
+        return collect(array_keys($headArray))
+            ->map(static fn (int|string $key): string => (string) $key)
+            ->values();
     }
 
     /**
-     * @return array<int|string, mixed>
+     * @return array<int|string, string>
      */
     public function headings(): array
     {
         $headings = $this->getHead();
         $transKey = $this->transKey;
-        $headings = app(TransCollectionAction::class)->execute($headings, $transKey);
+        $headingCollection = collect();
 
-        return $headings->toArray();
+        foreach ($headings as $heading) {
+            $headingCollection->put((string) $heading, $heading);
+        }
+
+        $translated = app(TransCollectionAction::class)->execute($headingCollection, $transKey);
+
+        $result = [];
+        foreach ($translated->all() as $key => $value) {
+            if (! is_string($value)) {
+                continue;
+            }
+            $result[is_int($key) ? $key : (string) $key] = $value;
+        }
+
+        return $result;
     }
 
     /**
@@ -111,11 +112,9 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
     }
 
     /**
-     * Returns an iterator for the current collection.
-     *
-     * @return Iterator<int, mixed>
+     * @return \Iterator<int, mixed>
      */
-    public function iterator(): Iterator
+    public function iterator(): \Iterator
     {
         return new \ArrayIterator(iterator_to_array($this->collection->getIterator(), false));
     }
@@ -125,22 +124,19 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
      */
     private function normalizeRow(mixed $row): array
     {
-        if ($row === null) {
+        if (null === $row) {
             return [];
         }
 
         if ($row instanceof Arrayable) {
-            /* @var array<int|string, mixed> */
             return $row->toArray();
         }
 
         if (is_array($row)) {
-            /* @var array<int|string, mixed> */
             return $row;
         }
 
         if ($row instanceof \Traversable) {
-            /* @var array<int|string, mixed> */
             return iterator_to_array($row);
         }
 

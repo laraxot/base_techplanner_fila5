@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
-
 use Filament\Tables\Enums\PaginationMode;
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Filament\Pages\ListLogActivities;
@@ -13,7 +12,7 @@ use PHPUnit\Framework\Assert;
 
 function makeListLogActivitiesPage(): ListLogActivities
 {
-    return new class() extends ListLogActivities
+    return new class extends ListLogActivities
     {
         public static function getResource(): string
         {

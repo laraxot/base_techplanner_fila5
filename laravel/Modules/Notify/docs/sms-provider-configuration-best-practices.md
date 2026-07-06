@@ -105,7 +105,6 @@ $token = config('services.netfun.token');
 |----------|---------------------|------------------------|
 | Netfun | `https://v2.smsviainternet.it/api/rest/v1/sms-batch.json` | username/password |
 | Twilio | `https://api.twilio.com/2010-04-01/Accounts/{account_sid}/Messages.json` | account_sid/auth_token |
-| Twilio | `https://api.twilio.com/2010-04-01/Accounts/{account_sid}/Messages.json` | account_sid/auth_token |
 | Vonage | `https://rest.nexmo.com/sms/json` | api_key/api_secret |
 | SMSHosting | `https://api.smshosting.it/rest/api/sms/send` | token |
 | Telcob | `https://api.telcob.com/sms/v1/send` | api_key |

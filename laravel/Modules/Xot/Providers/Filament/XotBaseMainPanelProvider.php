@@ -11,14 +11,15 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers\Filament;
 
+use Filament\Panel;
 use Filament\PanelProvider;
 
-class XotBaseMainPanelProvider extends PanelProvider
+abstract class XotBaseMainPanelProvider extends PanelProvider
 {
     /**
      * Get the panels that this provider should register.
      *
-     * @return array<int, Filament\Panel>
+     * @return array<int, Panel>
      */
     public function getPanels(): array
     {
@@ -38,8 +39,7 @@ class XotBaseMainPanelProvider extends PanelProvider
     /**
      * Get the Filament resources (icons, css, scripts) that this provider should register.
      *
-     * @return array<string, string>
-     */
+     * */
     public function getResourcesPath(): string
     {
         return '';

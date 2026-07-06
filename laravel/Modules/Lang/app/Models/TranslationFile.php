@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Modules\Lang\Actions\GetAllTranslationAction;
 use Modules\Lang\Database\Factories\TranslationFileFactory;
@@ -68,13 +69,22 @@ class TranslationFile extends BaseModel
     {
         $files = app(GetAllTranslationAction::class)->execute();
 
-        $rows = [];
-        foreach ($files as $item) {
-            $item['id'] = isset($item['key']) ? (string) $item['key'] : '';
-            $item['name'] = isset($item['path']) ? basename((string) $item['path'], '.php') : '';
+        /** @var array<int, array<string, mixed>> $result */
+        $result = Arr::map($files, function ($item) {
+            if (! is_array($item)) {
+                return [];
+            }
+
+            $key = $item['key'] ?? null;
+            $keyStr = is_string($key) ? $key : (string) $key;
+            $item['id'] = isset($item['key']) ? $keyStr : '';
+
+            $pathValue = $item['path'] ?? null;
+            $pathStr = is_string($pathValue) ? $pathValue : (string) $pathValue;
+            $item['name'] = isset($item['path']) ? basename($pathStr, '.php') : '';
 
             if (isset($item['path'])) {
-                $path = (string) $item['path'];
+                $path = $pathStr;
                 if (File::exists($path)) {
                     try {
                         $content = File::getRequire($path);
@@ -99,10 +109,10 @@ class TranslationFile extends BaseModel
              * }
              */
             // dddx($item);
-            $rows[] = $item;
-        }
+            return $item;
+        });
 
-        return $rows;
+        return $result;
     }
 
     /**

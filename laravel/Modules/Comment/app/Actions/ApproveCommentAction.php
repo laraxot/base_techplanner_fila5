@@ -6,7 +6,7 @@ namespace Modules\Comment\Actions;
 
 use Modules\Comment\Events\CommentApprovedEvent;
 use Modules\Comment\Models\Comment;
-use Modules\Comment\Support\CommentConfig;
+use Modules\Comment\Support\CommentConfigNotifications;
 use Spatie\QueueableAction\QueueableAction;
 
 class ApproveCommentAction
@@ -29,6 +29,10 @@ class ApproveCommentAction
         ]);
 
         event(new CommentApprovedEvent($comment));
+
+        if (CommentConfigNotifications::enabled()) {
+            CommentConfigNotifications::sendApprovedAction()->execute($comment);
+        }
 
         return $comment;
     }

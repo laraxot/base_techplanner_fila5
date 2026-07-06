@@ -65,7 +65,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
  * @property array<int, array{name: string, generated: bool, src: string}> $entry_conversions
  * @property EloquentCollection<int, MediaConvert> $mediaConverts
  * @property int|null $media_converts_count
- *
  * @method static Builder|Media newModelQuery()
  * @method static Builder|Media newQuery()
  * @method static Builder|Media ordered()
@@ -109,16 +108,16 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
  */
 class Media extends SpatieMedia
 {
-    /** @use HasXotFactory<MediaFactory> */
+    /** @use HasXotFactory<\Modules\Media\Database\Factories\MediaFactory> */
     use HasXotFactory;
-
     use Updater;
 
     /** @var string */
     protected $connection = 'media';
 
     /**
-     * @param  array<int, string>  $uuids
+     * @param array<int, string> $uuids
+     *
      * @return MediaCollection<int, self>
      */
     public static function findWithTemporaryUploadInCurrentSession(array $uuids): MediaCollection

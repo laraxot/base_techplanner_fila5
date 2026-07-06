@@ -6,7 +6,6 @@ namespace Modules\Cms\Models\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Illuminate\Database\MultipleRecordsFoundException;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Str;
 use Modules\Cms\Datas\BlockData;
@@ -16,6 +15,9 @@ use Modules\Xot\Datas\XotData;
  * Trait for Models that have blocks.
  *
  * @phpstan-require-extends Model
+ *
+ * @method        mixed                                         getTranslation(string $key, string $locale, bool $useFallbackLocale = true)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> query()
  */
 trait HasBlocks
 {
@@ -58,8 +60,11 @@ trait HasBlocks
         // which is needed for dynamic query resolution
         $blockDataInstances = [];
         foreach ($blocks as $key => $block) {
-            /** @var array<string, mixed> $block */
+            if (! is_array($block)) {
+                continue;
+            }
             $type = (string) ($block['type'] ?? 'unknown');
+            /** @var array<string, mixed> $data */
             $data = (array) ($block['data'] ?? []);
             $slug = isset($block['slug']) ? (string) $block['slug'] : null;
             $active = (bool) ($block['active'] ?? true);
@@ -74,7 +79,8 @@ trait HasBlocks
     }
 
     /**
-     * @param  array<array-key, mixed>  $blocks
+     * @param array<int|string, mixed> $blocks
+     *
      * @return array<string, mixed>
      */
     public function compile(array $blocks): array
@@ -105,8 +111,9 @@ trait HasBlocks
      * Cercato il record per slug, itera sui blocchi e filtra per side quando fornito.
      * Struttura attesa: blocks = [{type, data, slug?, side?}, ...]
      *
-     * @param  string  $slug  The section/page slug
-     * @param  string|null  $side  The side to get blocks for (null for all blocks)
+     * @param string      $slug The section/page slug
+     * @param string|null $side The side to get blocks for (null for all blocks)
+     *
      * @return array<string, BlockData>
      */
     public static function getBlocksBySlug(string $slug, ?string $side = null): array
@@ -115,11 +122,6 @@ trait HasBlocks
             $record = static::query()->where('slug', $slug)->sole();
         } catch (ModelNotFoundException) {
             return [];
-        } catch (MultipleRecordsFoundException) {
-            $record = static::query()->where('slug', $slug)->latest()->first();
-            if (! $record instanceof Model) {
-                return [];
-            }
         }
 
         if (! $record instanceof Model) {

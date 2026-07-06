@@ -8,15 +8,18 @@ use Spatie\LaravelData\Data;
 
 final class UserData extends Data
 {
+    /**
+     * @param array<int, string>   $permissions
+     * @param array<string, mixed> $settings
+     */
     public function __construct(
         public int $id,
         public string $name,
         public string $email,
         public ?string $avatar,
         public ?string $role,
-        /** @var list<string> */
         public array $permissions,
-        /** @var array<string, mixed> */
         public array $settings,
-    ) {}
+    ) {
+    }
 }

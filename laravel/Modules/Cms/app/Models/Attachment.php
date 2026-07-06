@@ -124,7 +124,9 @@ class Attachment extends BaseModelLang implements HasMedia
      * }
      */
 
-    /** @return array<int, array<string, mixed>> */
+    /**
+     * @return array<int, array<string, mixed>>
+     */
     public function getRows(): array
     {
         return $this->getSushiRows();

@@ -138,8 +138,6 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
             </svg>
             <div>
                 <p style="margin: 0 0 2px; font-weight: 600; color: #4338ca;">{{ __('notify.appointment.fields.location.label') }}</p>
-                <p style="margin: 0; font-size: 16px; color: #334155;">{{ $location ?? ' Centro Medico, Via Roma 123, 00100 Roma' }}</p>
-                <p style="margin: 0; font-size: 16px; color: #334155;">{{ $location ?? '<nome progetto> Centro Medico, Via Roma 123, 00100 Roma' }}</p>
 <p style="margin: 0; font-size: 16px; color: #334155;">{{ $location ?? 'Quaeris Centro Medico, Via Roma 123, 00100 Roma' }}</p>
             </div>
         </div>
@@ -174,8 +172,6 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
     
     <div style="text-align: center; margin: 30px 0;">
         <img style="max-width: 100%; height: auto; border-radius: 8px;" src="{{ $map_image ?? asset('modules/notify/images/map.png') }}" alt="Mappa della posizione">
-        <p style="margin: 10px 0 0; font-size: 14px; color: #64748b;">{{ $map_caption ?? ' Centro Medico, Via Roma 123, 00100 Roma' }}</p>
-        <p style="margin: 10px 0 0; font-size: 14px; color: #64748b;">{{ $map_caption ?? '<nome progetto> Centro Medico, Via Roma 123, 00100 Roma' }}</p>
 <p style="margin: 10px 0 0; font-size: 14px; color: #64748b;">{{ $map_caption ?? 'Quaeris Centro Medico, Via Roma 123, 00100 Roma' }}</p>
     </div>
     

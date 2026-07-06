@@ -53,38 +53,22 @@ class GenerateUIScreenshotsAction
     {
         $results = [];
         
-<<<<<<< HEAD
-=======
-        
->>>>>>> c001364 (.)
         // Assicurati che la directory di output esista
         if (!file_exists($outputDir)) {
             mkdir($outputDir, 0755, true);
         }
         
-<<<<<<< HEAD
-=======
-        
->>>>>>> c001364 (.)
         foreach ($routes as $route) {
             try {
                 $url = route($route);
                 $fileName = Str::slug($route) . '.png';
                 $outputPath = $outputDir . '/' . $fileName;
                 
-<<<<<<< HEAD
-=======
-                
->>>>>>> c001364 (.)
                 Log::info("Generating screenshot for route: {$route}", [
                     'url' => $url,
                     'output_path' => $outputPath
                 ]);
                 
-<<<<<<< HEAD
-=======
-                
->>>>>>> c001364 (.)
                 $screenshotPath = $this->mcpService->puppeteer()->captureScreenshot(
                     $url,
                     $outputPath,
@@ -95,10 +79,6 @@ class GenerateUIScreenshotsAction
                     ], $options)
                 );
                 
-<<<<<<< HEAD
-=======
-                
->>>>>>> c001364 (.)
                 if ($screenshotPath) {
                     $results[$route] = $screenshotPath;
                     Log::info("Screenshot generated successfully", [
@@ -119,10 +99,6 @@ class GenerateUIScreenshotsAction
             }
         }
         
-<<<<<<< HEAD
-=======
-        
->>>>>>> c001364 (.)
         return $results;
     }
 }
@@ -174,13 +150,6 @@ class ThemeFileService
         try {
             $content = $this->mcpService->filesystem()->readFile($fullPath);
             
-<<<<<<< HEAD
-=======
-
-        try {
-            $content = $this->mcpService->filesystem()->readFile($fullPath);
-
->>>>>>> c001364 (.)
             return $content ?: null;
         } catch (\Exception $e) {
             Log::error("Failed to read theme file", [
@@ -189,10 +158,6 @@ class ThemeFileService
                 'message' => $e->getMessage()
             ]);
             
-<<<<<<< HEAD
-=======
-            
->>>>>>> c001364 (.)
             return null;
         }
     }
@@ -210,10 +175,6 @@ class ThemeFileService
     {
         $fullPath = $this->getThemePath($themeName) . '/' . $filePath;
         
-<<<<<<< HEAD
-=======
-        
->>>>>>> c001364 (.)
         try {
             // Assicurati che la directory esista
             $directory = dirname($fullPath);
@@ -221,10 +182,6 @@ class ThemeFileService
                 mkdir($directory, 0755, true);
             }
             
-<<<<<<< HEAD
-=======
-            
->>>>>>> c001364 (.)
             return $this->mcpService->filesystem()->writeFile($fullPath, $content);
         } catch (\Exception $e) {
             Log::error("Failed to write theme file", [
@@ -233,10 +190,6 @@ class ThemeFileService
                 'message' => $e->getMessage()
             ]);
             
-<<<<<<< HEAD
-=======
-            
->>>>>>> c001364 (.)
             return false;
         }
     }
@@ -257,14 +210,6 @@ class ThemeFileService
             $fullPath .= '/' . $directory;
         }
         
-<<<<<<< HEAD
-=======
-
-        if ($directory) {
-            $fullPath .= '/' . $directory;
-        }
-
->>>>>>> c001364 (.)
         try {
             return $this->mcpService->filesystem()->listDirectory($fullPath);
         } catch (\Exception $e) {
@@ -274,10 +219,6 @@ class ThemeFileService
                 'message' => $e->getMessage()
             ]);
             
-<<<<<<< HEAD
-=======
-            
->>>>>>> c001364 (.)
             return [];
         }
     }
@@ -341,10 +282,6 @@ class UICacheService
     {
         $cacheKey = $this->generateComponentCacheKey($componentName, $props);
         
-<<<<<<< HEAD
-=======
-        
->>>>>>> c001364 (.)
         try {
             return $this->mcpService->redis()->set(
                 $cacheKey,
@@ -360,10 +297,6 @@ class UICacheService
                 'message' => $e->getMessage()
             ]);
             
-<<<<<<< HEAD
-=======
-            
->>>>>>> c001364 (.)
             return false;
         }
     }
@@ -387,17 +320,6 @@ class UICacheService
                 return $cached['html'];
             }
             
-<<<<<<< HEAD
-=======
-
-        try {
-            $cached = $this->mcpService->redis()->get($cacheKey);
-
-            if ($cached && isset($cached['html'])) {
-                return $cached['html'];
-            }
-
->>>>>>> c001364 (.)
             return null;
         } catch (\Exception $e) {
             Log::error("Failed to get cached UI component", [
@@ -405,10 +327,6 @@ class UICacheService
                 'message' => $e->getMessage()
             ]);
             
-<<<<<<< HEAD
-=======
-            
->>>>>>> c001364 (.)
             return null;
         }
     }
@@ -434,17 +352,6 @@ class UICacheService
                     $this->mcpService->redis()->delete($key);
                 }
                 
-<<<<<<< HEAD
-=======
-
-            try {
-                $keys = $this->mcpService->redis()->keys($pattern);
-
-                foreach ($keys as $key) {
-                    $this->mcpService->redis()->delete($key);
-                }
-
->>>>>>> c001364 (.)
                 return true;
             } catch (\Exception $e) {
                 Log::error("Failed to invalidate UI component cache", [
@@ -452,20 +359,12 @@ class UICacheService
                     'message' => $e->getMessage()
                 ]);
                 
-<<<<<<< HEAD
-=======
-                
->>>>>>> c001364 (.)
                 return false;
             }
         } else {
             // Invalida un componente specifico
             $cacheKey = $this->generateComponentCacheKey($componentName, $props);
             
-<<<<<<< HEAD
-=======
-            
->>>>>>> c001364 (.)
             try {
                 return $this->mcpService->redis()->delete($cacheKey);
             } catch (\Exception $e) {
@@ -474,10 +373,6 @@ class UICacheService
                     'message' => $e->getMessage()
                 ]);
                 
-<<<<<<< HEAD
-=======
-                
->>>>>>> c001364 (.)
                 return false;
             }
         }
@@ -495,10 +390,6 @@ class UICacheService
     {
         $propsHash = md5(json_encode($props));
         
-<<<<<<< HEAD
-=======
-        
->>>>>>> c001364 (.)
         return "ui_component_{$componentName}_{$propsHash}";
     }
 }
@@ -549,19 +440,11 @@ class AnalyzeUIAccessibilityAction
             // Estrai il contenuto HTML della pagina
             $html = $this->mcpService->puppeteer()->extractContent($url, 'html');
             
-<<<<<<< HEAD
-=======
-            
->>>>>>> c001364 (.)
             if (!$html) {
                 Log::error("Failed to extract HTML content", [
                     'url' => $url
                 ]);
                 
-<<<<<<< HEAD
-=======
-                
->>>>>>> c001364 (.)
                 return new UIAnalysisData(
                     score: 0,
                     issues: ['Failed to extract HTML content'],
@@ -569,10 +452,6 @@ class AnalyzeUIAccessibilityAction
                 );
             }
             
-<<<<<<< HEAD
-=======
-            
->>>>>>> c001364 (.)
             // Analizza l'accessibilità con sequential-thinking
             $analysis = $this->mcpService->sequentialThinking()->analyze(
                 $html,
@@ -583,14 +462,6 @@ class AnalyzeUIAccessibilityAction
             $accessibilityIssues = $analysis['accessibility']['issues'] ?? [];
             $suggestions = $analysis['accessibility']['suggestions'] ?? [];
             
-<<<<<<< HEAD
-=======
-
-            $accessibilityScore = $analysis['accessibility']['score'] ?? 0;
-            $accessibilityIssues = $analysis['accessibility']['issues'] ?? [];
-            $suggestions = $analysis['accessibility']['suggestions'] ?? [];
-
->>>>>>> c001364 (.)
             return new UIAnalysisData(
                 score: $accessibilityScore,
                 issues: $accessibilityIssues,
@@ -603,10 +474,6 @@ class AnalyzeUIAccessibilityAction
                 'trace' => $e->getTraceAsString()
             ]);
             
-<<<<<<< HEAD
-=======
-            
->>>>>>> c001364 (.)
             return new UIAnalysisData(
                 score: 0,
                 issues: ['Analysis failed: ' . $e->getMessage()],
@@ -639,37 +506,21 @@ class CachedUIComponent extends Component
      */
     public string $componentName;
     
-<<<<<<< HEAD
-=======
-    
->>>>>>> c001364 (.)
     /**
      * @var array<string, mixed>
      */
     public array $componentProps = [];
     
-<<<<<<< HEAD
-=======
-    
->>>>>>> c001364 (.)
     /**
      * @var int
      */
     public int $cacheTtl = 3600;
     
-<<<<<<< HEAD
-=======
-    
->>>>>>> c001364 (.)
     /**
      * @var bool
      */
     public bool $forceRefresh = false;
     
-<<<<<<< HEAD
-=======
-    
->>>>>>> c001364 (.)
     /**
      * Monta il componente.
      *
@@ -686,10 +537,6 @@ class CachedUIComponent extends Component
         $this->cacheTtl = $cacheTtl;
     }
     
-<<<<<<< HEAD
-=======
-    
->>>>>>> c001364 (.)
     /**
      * Forza l'aggiornamento del componente.
      *
@@ -700,10 +547,6 @@ class CachedUIComponent extends Component
         $this->forceRefresh = true;
     }
     
-<<<<<<< HEAD
-=======
-    
->>>>>>> c001364 (.)
     /**
      * Renderizza il componente.
      *
@@ -731,27 +574,6 @@ class CachedUIComponent extends Component
             $uiCacheService->cacheComponent($this->componentName, $this->componentProps, $html, $this->cacheTtl);
         }
         
-<<<<<<< HEAD
-=======
-
-        /** @var UICacheService $uiCacheService */
-        $uiCacheService = app(UICacheService::class);
-
-        $html = null;
-
-        if (!$this->forceRefresh) {
-            $html = $uiCacheService->getCachedComponent($this->componentName, $this->componentProps);
-        }
-
-        if ($html === null) {
-            // Renderizza il componente
-            $html = view("ui::components.{$this->componentName}", $this->componentProps)->render();
-
-            // Memorizza in cache
-            $uiCacheService->cacheComponent($this->componentName, $this->componentProps, $html, $this->cacheTtl);
-        }
-
->>>>>>> c001364 (.)
         return view('ui::livewire.cached-ui-component', [
             'html' => $html
         ]);
@@ -785,14 +607,6 @@ $analyze = function () {
         /** @var AnalyzeUIAccessibilityAction $analyzeAction */
         $analyzeAction = app(AnalyzeUIAccessibilityAction::class);
         
-<<<<<<< HEAD
-=======
-
-    try {
-        /** @var AnalyzeUIAccessibilityAction $analyzeAction */
-        $analyzeAction = app(AnalyzeUIAccessibilityAction::class);
-
->>>>>>> c001364 (.)
         $this->analysisResult = $analyzeAction->execute($this->url);
     } catch (\Exception $e) {
         $this->addError('analysis', $e->getMessage());
@@ -815,10 +629,6 @@ $analyze = function () {
         </div>
         @error('analysis') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
     </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> c001364 (.)
     
     @if($analysisResult)
         <div class="mt-6 bg-white shadow overflow-hidden sm:rounded-lg">
@@ -890,8 +700,4 @@ $analyze = function () {
 
 ## Conclusione
 
-<<<<<<< HEAD
 L'integrazione dei server MCP con il modulo UI consente di migliorare significativamente le funzionalità del modulo, fornendo automazione del browser per testing e screenshot, gestione efficiente dei file per asset UI, caching di componenti UI e analisi dell'interfaccia utente. Seguendo le linee guida e gli esempi forniti in questo documento, è possibile implementare queste funzionalità in modo conforme alle regole di sviluppo stabilite per i progetti base_<nome progetto>_fila5_mono.
-=======
-L'integrazione dei server MCP con il modulo UI consente di migliorare significativamente le funzionalità del modulo, fornendo automazione del browser per testing e screenshot, gestione efficiente dei file per asset UI, caching di componenti UI e analisi dell'interfaccia utente. Seguendo le linee guida e gli esempi forniti in questo documento, è possibile implementare queste funzionalità in modo conforme alle regole di sviluppo stabilite per i progetti base_<nome progetto>_fila5_mono.
->>>>>>> c001364 (.)

@@ -94,14 +94,6 @@ php artisan config:clear
 
 - [Sistema Icone UI](../icon-system.md)
 - [Blade Icons Documentation](../blade-icons.md)
-<<<<<<< HEAD
-=======
-- [XotBaseServiceProvider](../XotBaseServiceProvider.md)
-
----
-
-**Data**: 27 Gennaio 2025
->>>>>>> c001364 (.)
 - [XotBaseServiceProvider](../xotbaseserviceprovider.md)
 
 ---
@@ -109,8 +101,4 @@ php artisan config:clear
 **Modulo**: UI
 **Tipo**: Bug Fix
 **Priorità**: Alta
-<<<<<<< HEAD
 **Stato**: ✅ Risolto
-=======
-**Stato**: ✅ Risolto
->>>>>>> c001364 (.)

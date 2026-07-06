@@ -132,10 +132,6 @@ docs/cache/
 # ==============================================
 # LANGUAGE FILES (generated / duplicated)
 # ==============================================
-<<<<<<< HEAD
-=======
-lang/lang/
->>>>>>> c001364 (.)
 resources/lang/
 
 
@@ -193,9 +189,6 @@ docs/legacy/**
 *~REMOTE
 *.orig
 *.rej
-<<<<<<< HEAD
 *~head
 
-=======
-*~head
->>>>>>> c001364 (.)
+agentdb.rvf

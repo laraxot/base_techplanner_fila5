@@ -7,104 +7,74 @@ namespace Modules\Comment\Support;
 use Illuminate\Support\Str;
 
 /**
- * Configuration for the Comment module.
- * Italian-named replacement for Spatie Config.
+ * Legacy Italian facade — delegates to {@see CommentConfig} (SSOT).
+ *
+ * @deprecated Use CommentConfig directly. Kept for backward compatibility only.
  */
 class ConfigCommenti
 {
-    /**
-     * Get the comment model class.
-     */
     public static function modelloCommento(): string
     {
-        return \Modules\Comment\Models\Comment::class;
+        return CommentConfig::commentModelClass();
     }
 
-    /**
-     * Get the reaction model class.
-     */
     public static function modelloReazione(): string
     {
-        return \Modules\Comment\Models\Reaction::class;
+        return CommentConfig::reactionModelClass();
     }
 
-    /**
-     * Get the comment notification subscription model class.
-     */
     public static function modelloSottoscrizioneNotifica(): string
     {
-        return \Modules\Comment\Models\CommentNotificationSubscription::class;
+        return CommentConfig::commentNotificationSubscriptionModelClass();
     }
 
-    /**
-     * Get the name field for the commentator model.
-     */
     public static function campoNomeModelloCommentatore(): string
     {
-        $value = config('commenti.commentator_name_field', 'name');
-
-        return is_string($value) ? $value : 'name';
+        return CommentConfig::commentatorModelNameField();
     }
 
-    /**
-     * Get the avatar field for the commentator model.
-     */
     public static function campoAvatarModelloCommentatore(): string
     {
-        $value = config('commenti.commentator_avatar_field', 'avatar_url');
-
-        return is_string($value) ? $value : 'avatar_url';
+        return CommentConfig::commentatorModelAvatarField();
     }
 
-    /**
-     * Get the default Gravatar image.
-     */
     public static function immagineDefaultGravatar(): string
     {
-        $value = config('commenti.gravatar_default_image', 'mp');
-
-        return is_string($value) ? $value : 'mp';
+        return CommentConfig::gravatarDefaultImage();
     }
 
-    /**
-     * Get the markdown parser.
-     */
     public static function markdownParser(): callable
     {
-        $value = config('commenti.markdown_parser', fn (string $text) => Str::markdown($text));
+        $parser = config('commenti.markdown_parser');
 
-        return is_callable($value) ? $value : fn (string $text): string => Str::markdown($text);
+        if (is_callable($parser)) {
+            return $parser;
+        }
+
+        return static fn (string $text): string => Str::markdown($text);
     }
 
-    /**
-     * Get the mentions parser.
-     */
     public static function mentionsParser(): callable
     {
-        $value = config('commenti.mentions_parser', fn (string $text) => $text);
+        $parser = config('commenti.mentions_parser');
 
-        return is_callable($value) ? $value : fn (string $text): string => $text;
+        if (is_callable($parser)) {
+            return $parser;
+        }
+
+        return static fn (string $text): string => $text;
     }
 
-    /**
-     * Check if comments are threaded.
-     */
     public static function commentiThreaded(): bool
     {
         return (bool) config('commenti.threaded', true);
     }
 
-    /**
-     * Check if comments require approval.
-     */
     public static function richiedeApprovazione(): bool
     {
         return (bool) config('commenti.require_approval', false);
     }
 
-    /**
-     * Get the default subscription type.
-     */
     public static function tipoSottoscrizioneDefault(): string
     {
         $value = config('commenti.default_subscription_type', 'participating');

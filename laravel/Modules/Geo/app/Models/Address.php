@@ -120,6 +120,8 @@ class Address extends BaseModel
 
     /**
      * Get the parent model.
+     *
+     * @return MorphTo<Model, $this>
      */
     public function model(): MorphTo
     {
@@ -128,6 +130,8 @@ class Address extends BaseModel
 
     /**
      * Relazione polimorfica (alternativa con nome più descrittivo).
+     *
+     * @return MorphTo<Model, $this>
      */
     public function addressable(): MorphTo
     {
@@ -188,7 +192,7 @@ class Address extends BaseModel
     }
 
     /**
-     * @return array{codice: mixed, nome: mixed}|null
+     * @return array{codice: string, nome: string}|null
      */
     public function getProvincia(): ?array
     {
@@ -197,15 +201,14 @@ class Address extends BaseModel
             ->orderBy('provincia->nome')
             ->where('provincia->codice', $this->administrative_area_level_2)
             ->get()
-            ->map(function ($item) {
-                $provincia = $item->provincia;
-                if (! is_array($provincia) || ! isset($provincia['codice'], $provincia['nome'])) {
-                    return null;
-                }
+            ->map(function ($item): array {
+                $provincia = is_array($item->provincia ?? null) ? $item->provincia : [];
 
-                return ['codice' => $provincia['codice'] ?? null, 'nome' => $provincia['nome'] ?? null];
-            })
-            ->filter(fn ($p) => isset($p['codice'], $p['nome']));
+                return [
+                    'codice' => is_string($provincia['codice'] ?? null) ? $provincia['codice'] : '',
+                    'nome' => is_string($provincia['nome'] ?? null) ? $provincia['nome'] : '',
+                ];
+            });
 
         return $res->first();
     }
@@ -215,10 +218,15 @@ class Address extends BaseModel
      */
     public function getLocality(): ?array
     {
-        return Comune::where('codice', $this->locality)
+        $comune = Comune::where('codice', $this->locality)
             ->distinct()
-            ->first()
-            ?->toArray();
+            ->first();
+
+        if (null === $comune) {
+            return null;
+        }
+
+        return $comune->attributesToArray();
     }
 
     /**
@@ -381,6 +389,11 @@ class Address extends BaseModel
     /**
      * Scope per cercare indirizzi nelle vicinanze.
      */
+    /**
+     * @param Builder<static> $query
+     *
+     * @return Builder<static>
+     */
     public function scopeNearby(Builder $query, float $latitude, float $longitude, float $radiusKm = 10): Builder
     {
         return $query
@@ -395,6 +408,11 @@ class Address extends BaseModel
     /**
      * Scope a query to only include primary addresses.
      */
+    /**
+     * @param Builder<static> $query
+     *
+     * @return Builder<static>
+     */
     public function scopePrimary(Builder $query): Builder
     {
         return $query->where('is_primary', true);
@@ -402,6 +420,11 @@ class Address extends BaseModel
 
     /**
      * Scope a query to filter by address type.
+     */
+    /**
+     * @param Builder<static> $query
+     *
+     * @return Builder<static>
      */
     public function scopeOfType(Builder $query, string|AddressTypeEnum $type): Builder
     {

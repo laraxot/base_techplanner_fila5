@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Spatie\LivewireComments;
 
 use Composer\InstalledVersions;
@@ -26,7 +24,7 @@ class LivewireCommentsServiceProvider extends PackageServiceProvider
             ->hasViews('comments');
     }
 
-    public function packageBooted(): void
+    public function packageBooted()
     {
         $this
             ->registerComponents()
@@ -61,16 +59,6 @@ class LivewireCommentsServiceProvider extends PackageServiceProvider
         });
     }
 
-    public function registerPolicies(): self
-    {
-        Gate::define('createComment', [Config::commentPolicyClass(), 'create']);
-
-        Gate::policy(Config::commentModelClass(), Config::commentPolicyClass());
-        Gate::policy(Config::reactionModelClass(), Config::reactionPolicyClass());
-
-        return $this;
-    }
-
     protected function registerComponents(): self
     {
         Blade::componentNamespace('Spatie\\LivewireComments\\View\\Components', 'comments');
@@ -78,6 +66,16 @@ class LivewireCommentsServiceProvider extends PackageServiceProvider
         Livewire::component('comments', CommentsComponent::class);
         Livewire::component('comments-comment', CommentComponent::class);
         Livewire::component('comments-mention-search', MentionSearchComponent::class);
+
+        return $this;
+    }
+
+    public function registerPolicies(): self
+    {
+        Gate::define('createComment', [Config::commentPolicyClass(), 'create']);
+
+        Gate::policy(Config::commentModelClass(), Config::commentPolicyClass());
+        Gate::policy(Config::reactionModelClass(), Config::reactionPolicyClass());
 
         return $this;
     }

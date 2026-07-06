@@ -6,6 +6,8 @@ namespace Modules\UI\Livewire\Components\Map;
 
 use Illuminate\Contracts\View\View;
 use Livewire\Component;
+use Modules\Geo\Services\GeocodingService;
+use Modules\Geo\Services\MapService;
 use Webmozart\Assert\Assert;
 
 /**
@@ -16,10 +18,12 @@ use Webmozart\Assert\Assert;
  */
 final class InteractiveMap extends Component
 {
+    /** @var array{0: float, 1: float} */
     public array $center = [45.4642, 9.1900]; // Milano
 
     public int $zoom = 10;
 
+    /** @var array<int, array<string, mixed>> */
     public array $markers = [];
 
     /** @var array<string, mixed> */
@@ -34,6 +38,10 @@ final class InteractiveMap extends Component
         'location_types' => [],
     ];
 
+    /** @var array<string, mixed>|null */
+    public ?array $selectedMarker = null;
+
+    /** @var array<string, mixed> */
     public array $stats = [];
 
     public bool $showControls = true;
@@ -54,6 +62,10 @@ final class InteractiveMap extends Component
         'refreshMap' => 'loadMarkers',
     ];
 
+    /**
+     * @param array{0: float, 1: float}|null $center
+     * @param array<string, mixed>           $filters
+     */
     public function mount(?array $center = null, ?int $zoom = null, array $filters = []): void
     {
         if ($center) {
@@ -95,8 +107,8 @@ final class InteractiveMap extends Component
     /**
      * Aggiorna i filtri.
      *
-     * @param  array<string, mixed>  $filters
-     * @param  array<string, mixed>  $filters
+     * @param array<string, mixed> $filters
+     * @param array<string, mixed> $filters
      */
     public function updateFilters(array $filters): void
     {
@@ -106,6 +118,9 @@ final class InteractiveMap extends Component
 
     /**
      * Aggiorna i bounds della mappa.
+     */
+    /**
+     * @param array<string, float> $bounds
      */
     public function updateBounds(array $bounds): void
     {
@@ -119,6 +134,19 @@ final class InteractiveMap extends Component
     public function loadMarkers(): void
     {
         $this->isLoading = true;
+
+        try {
+            $mapService = app(MapService::class);
+            $filters = $this->getMapFilters();
+            $this->markers = $mapService->getMarkers($filters);
+            $this->stats = $mapService->getMapStats($filters);
+        } catch (\Exception $e) {
+            $this->addError('map', 'Errore nel caricamento dei marker: '.$e->getMessage());
+            $this->markers = [];
+            $this->stats = [];
+        } finally {
+            $this->isLoading = false;
+        }
     }
 
     /**
@@ -132,7 +160,28 @@ final class InteractiveMap extends Component
     /**
      * Esporta i dati della mappa.
      */
-    public function exportData(string $format = 'json'): void {}
+    public function exportData(string $format = 'json'): void
+    {
+        try {
+            $mapService = app(MapService::class);
+            $data = $mapService->exportData($this->getMapFilters(), $format);
+
+            $filename = 'map_export_'.now()->format('Y_m_d_H_i_s').'.'.$format;
+
+            $this->dispatch('downloadFile', [
+                'content' => $data,
+                'filename' => $filename,
+                'mimeType' => $this->getMimeType($format),
+            ]);
+
+            $this->dispatch('notify', [
+                'type' => 'success',
+                'message' => 'Dati esportati con successo!',
+            ]);
+        } catch (\Exception $e) {
+            $this->addError('export', 'Errore nell\'esportazione: '.$e->getMessage());
+        }
+    }
 
     /**
      * Cerca un indirizzo.
@@ -143,10 +192,49 @@ final class InteractiveMap extends Component
             return;
         }
 
+        try {
+            $geocodingService = app(GeocodingService::class);
+            $result = $geocodingService->geocodeAddress($this->searchQuery);
+            Assert::isArray($result, 'Geocoding result must be array');
+
+            $address = $result['address'] ?? '';
+            Assert::string($address, 'Address must be string');
+
+            $this->center = [$result['latitude'], $result['longitude']];
+            $this->zoom = 15;
+
+            $this->dispatch('updateMapCenter', $this->center, $this->zoom);
+
+            $this->dispatch('notify', [
+                'type' => 'success',
+                'message' => 'Indirizzo trovato: '.$address,
+            ]);
+        } catch (\Exception $e) {
+            $this->addError('search', 'Indirizzo non trovato: '.$e->getMessage());
+        }
     }
 
     /**
      * Ottiene suggerimenti per la ricerca.
+     *
+     * @return array<int, array<string, mixed>>
+     */
+    public function getSuggestions(): array
+    {
+        if (\strlen($this->searchQuery) < 3) {
+            return [];
+        }
+
+        try {
+            $geocodingService = app(GeocodingService::class);
+
+            /** @var array<int, array<string, mixed>> $suggestions */
+            $suggestions = $geocodingService->getSuggestions($this->searchQuery);
+
+            return $suggestions;
+        } catch (\Exception $e) {
+            return [];
+        }
     }
 
     /**
@@ -237,6 +325,18 @@ final class InteractiveMap extends Component
 
     /**
      * Ottiene le proprietà computate.
+     *
+     * @return array<string, int>
+     */
+    public function getMarkersByTypeProperty(): array
+    {
+        /** @var array<string, int> $grouped */
+        $grouped = collect($this->markers)
+            ->groupBy('type')
+            ->map(static fn ($markers) => $markers->count())
+            ->all();
+
+        return $grouped;
     }
 
     public function getVisibleMarkersCountProperty(): int
@@ -260,5 +360,23 @@ final class InteractiveMap extends Component
             'kml' => 'application/vnd.google-earth.kml+xml',
             default => 'application/json',
         };
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    private function getMapFilters(): array
+    {
+        $filters = [];
+
+        foreach ($this->filters as $key => $value) {
+            if (! \is_string($key)) {
+                continue;
+            }
+
+            $filters[$key] = $value;
+        }
+
+        return $filters;
     }
 }

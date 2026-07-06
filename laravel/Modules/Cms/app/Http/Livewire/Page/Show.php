@@ -8,7 +8,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Cache;
 use Livewire\Component;
 use Modules\Cms\Models\Page;
-use Modules\Xot\Services\ThemeService;
+use Modules\Xot\Actions\Theme\GetThemeAction;
 
 class Show extends Component
 {
@@ -32,11 +32,13 @@ class Show extends Component
     {
         return view('cms::livewire.page.show', [
             'pageContent' => $this->pageContent,
-            'theme' => $this->theme ?? ThemeService::getTheme(),
+            'theme' => $this->theme ?? app(GetThemeAction::class)->execute(),
         ]);
     }
 
-    /** @return array<string, string> */
+    /**
+     * @return array<string, string>
+     */
     protected function rules(): array
     {
         return [
@@ -49,7 +51,7 @@ class Show extends Component
 
     protected function loadPageContent(): void
     {
-        $cacheKey = 'page_content_'.$this->slug.'_'.($this->theme ?? ThemeService::getTheme());
+        $cacheKey = 'page_content_'.$this->slug.'_'.($this->theme ?? app(GetThemeAction::class)->execute());
 
         if ($this->cache) {
             $this->pageContent = Cache::remember($cacheKey, now()->addHours(24), function (): array {
@@ -62,7 +64,9 @@ class Show extends Component
         $this->pageContent = $this->fetchPageContent();
     }
 
-    /** @return array<string, mixed> */
+    /**
+     * @return array<string, mixed>
+     */
     protected function fetchPageContent(): array
     {
         try {

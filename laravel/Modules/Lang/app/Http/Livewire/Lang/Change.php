@@ -51,7 +51,9 @@ class Change extends Component
 
             return $item;
         });
-        $this->langs = $langs;
+        /** @var array<string, array<string, mixed>> $mappedLangs */
+        $mappedLangs = $langs;
+        $this->langs = $mappedLangs;
     }
 
     // public function switchLang(string $lang): Application|RedirectResponse|Redirector

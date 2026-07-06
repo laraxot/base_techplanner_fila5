@@ -11,7 +11,7 @@ use Modules\Geo\Support\GeoMapDataset;
  * @phpstan-type GeoDataset array{type: string, features: list<array{
  *     type: string,
  *     properties: array<string, scalar|null>,
- *     geometry: array{type: string, coordinates: array<int, mixed>}
+ *     geometry: array{type: string, coordinates: array<mixed>}
  * }>}
  * @phpstan-type GeoMapConfig array{
  *     defaultZoom: int,

@@ -229,7 +229,6 @@ public function toMail(object $notifiable): MailMessage
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-- [README.md Modulo Notify](./README.md)
 - [README.md Modulo Notify](./readme.md)
 - [Template Management](./template-management.md)
 - [Best Practices](./best-practices.md)
@@ -247,3 +246,5 @@ public function toMail(object $notifiable): MailMessage
 **🌐 Translation Standards**: IT/EN complete ✅  
 **🚀 Performance**: 92/100 score  
 **✨ Test Coverage**: 95% ✅
+
+

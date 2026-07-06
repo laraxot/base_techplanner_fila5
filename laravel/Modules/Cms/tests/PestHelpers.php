@@ -12,7 +12,6 @@ use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\MockObject\MockObject;
 
 use function Safe\file_get_contents;
 use function Safe\json_decode;
@@ -24,7 +23,7 @@ use function Safe\json_decode;
  */
 function cmsTest(): TestCase
 {
-    if (TestCase::$currentTest !== null) {
+    if (null !== TestCase::$currentTest) {
         return TestCase::$currentTest;
     }
 
@@ -35,76 +34,13 @@ function cmsTest(): TestCase
     return $test;
 }
 
-/**
- * Load homepage JSON content for testing.
- *
- * @return array<string, mixed>
- */
-function cmsLoadHomepageJson(): array
-{
-    $jsonPath = config_path('local/<nome progetto>/database/content/home.json');
-
-    if (! file_exists($jsonPath)) {
-        return [];
-    }
-
-    $content = file_get_contents($jsonPath);
-    $data = json_decode($content, true);
-
-    if (is_array($data) && cmsHasStringKeys($data)) {
-        return $data;
-    }
-
-    return [];
-}
-
-/**
- * Check if an array has only string keys.
- *
- * @phpstan-assert-if-true array<string, mixed> $data
- *
- * @param  array<mixed>  $data
- */
-function cmsHasStringKeys(array $data): bool
-{
-    foreach (array_keys($data) as $key) {
-        if (! is_string($key)) {
-            return false;
-        }
-    }
-
-    return true;
-}
-
-/**
- * Get homepage blocks for a specific locale.
- *
- * @return array<string, mixed>
- */
-function cmsHomepageBlocksForLocale(string $locale): array
-{
-    $homepageData = cmsLoadHomepageJson();
-    $contentBlocks = $homepageData['content_blocks'] ?? [];
-
-    if (! is_array($contentBlocks)) {
-        return [];
-    }
-
-    $blocks = $contentBlocks[$locale] ?? [];
-
-    /** @var array<string, mixed> $blocks */
-    $blocks = is_array($blocks) ? $blocks : [];
-
-    return $blocks;
-}
-
 function cmsGenerateUniqueEmail(): string
 {
     return TestCase::pestGenerateUniqueEmail();
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function cmsCreateTestUser(array $attributes = []): UserContract
 {
@@ -112,7 +48,7 @@ function cmsCreateTestUser(array $attributes = []): UserContract
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function cmsCreateUnverifiedUser(array $attributes = []): User
 {
@@ -122,8 +58,9 @@ function cmsCreateUnverifiedUser(array $attributes = []): User
 /**
  * @template T of object
  *
- * @param  class-string<T>  $class
- * @return T&MockObject
+ * @param class-string<T> $class
+ *
+ * @return T&PHPUnit\Framework\MockObject\MockObject
  */
 function cmsCreateMock(string $class): object
 {
@@ -152,7 +89,8 @@ function cmsJsonDecodeFile(string $path): array
 }
 
 /**
- * @param  array<string, string>  $headers
+ * @param array<string, string> $headers
+ *
  * @return TestResponse<Response>
  */
 function cmsGet(string $uri, array $headers = []): TestResponse
@@ -161,7 +99,8 @@ function cmsGet(string $uri, array $headers = []): TestResponse
 }
 
 /**
- * @param  array<string, string>  $headers
+ * @param array<string, string> $headers
+ *
  * @return TestResponse<Response>
  */
 function cmsGetOrSkipOnServerError(string $uri, array $headers = []): TestResponse
@@ -176,8 +115,9 @@ function cmsGetOrSkipOnServerError(string $uri, array $headers = []): TestRespon
 }
 
 /**
- * @param  array<string, mixed>  $data
- * @param  array<string, string>  $headers
+ * @param array<string, mixed>  $data
+ * @param array<string, string> $headers
+ *
  * @return TestResponse<Response>
  */
 function cmsPost(string $uri, array $data = [], array $headers = []): TestResponse
@@ -206,7 +146,8 @@ function cmsAssertGuest(?string $guard = null): void
 }
 
 /**
- * @param  array<string, mixed>  $data
+ * @param array<string, mixed> $data
+ *
  * @return TestResponse<Response>
  */
 function cmsActingAsGet(Authenticatable $user, string $uri, array $data = []): TestResponse

@@ -176,10 +176,6 @@ return [
 
 ## 🔗 Collegamenti
 
-<<<<<<< HEAD
-=======
-- [**README Modulo UI**](../README.md)
->>>>>>> c001364 (.)
 - [**README Modulo UI**](../readme.md)
 - [**Sistema Layout**](../layout/layout-system.md)
 - [**Gestione Asset**](../assets/asset-management.md)
@@ -187,7 +183,3 @@ return [
 
 ---
 
-<<<<<<< HEAD
-=======
-*Ultimo aggiornamento: giugno 2025*
->>>>>>> c001364 (.)

@@ -8,8 +8,8 @@ use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Modules\Media\Providers\MediaServiceProvider;
 use Modules\User\Providers\UserServiceProvider;
+use Modules\Xot\Providers\XotServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
-use PHPUnit\Framework\MockObject\MockObject;
 
 /**
  * Base test case for Media module.
@@ -35,7 +35,7 @@ abstract class TestCase extends XotBaseTestCase
      * @template T of object
      *
      * @param  class-string<T>  $class
-     * @return T&MockObject
+     * @return T&\PHPUnit\Framework\MockObject\MockObject
      */
     public function makeTestMock(string $class): object
     {

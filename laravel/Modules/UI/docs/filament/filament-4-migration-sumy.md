@@ -4,8 +4,4 @@ topic: filament-4-migration-sumy
 canonical: ../../../../Themes/docs/shared-components/filament-4-migration-summary.md
 ---
 
-<<<<<<< HEAD
 See canonical documentation: ../../../../Themes/docs/shared-components/filament-4-migration-summary.md
-=======
-See canonical documentation: ../../../../Themes/docs/shared-components/filament-4-migration-summary.md
->>>>>>> c001364 (.)

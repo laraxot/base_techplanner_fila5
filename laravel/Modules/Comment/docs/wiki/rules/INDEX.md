@@ -50,3 +50,6 @@ Le Rules progettuali vivono qui, nel wiki del Module **Comment**, e vengono cari
 3. Aggiorna questo indice se la Rules e' ricorrente
 4. Committa: `docs: add rules <nome>`
 
+- [no-livewire-filament-widgets-only](./no-livewire-filament-widgets-only.md)
+- [phpstan-module-scoped-analysis](./phpstan-module-scoped-analysis.md)
+- [filament-resource-schema-triad.md](filament-resource-schema-triad.md) — triade Form/Infolist/Table CommentResource

@@ -1,9 +1,5 @@
 # Analisi Approfondita del Modulo UI
 
-<<<<<<< HEAD
-=======
-> **Generato**: 2025-12-24
->>>>>>> c001364 (.)
 > **Generato**: [DATE]
 > **Scopo**: Documentare la filosofia, logica, business logic e architettura del modulo UI
 
@@ -682,8 +678,4 @@ Laravel risolve automaticamente override temi con view namespace precedence.
 - [Never Use Label Rule](./never-use-label-rule.md)
 - [Components Guide](./components-guide.md)
 - [Filament 4 Migration Guide](./filament/filament-4-migration-guide.md)
-<<<<<<< HEAD
 - [Architecture Documentation](./architecture.md)
-=======
-- [Architecture Documentation](./architecture.md)
->>>>>>> c001364 (.)

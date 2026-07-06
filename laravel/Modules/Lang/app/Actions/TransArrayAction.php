@@ -20,7 +20,7 @@ class TransArrayAction
     /**
      * Esegue la traduzione di una collezione.
      *
-     * @param array<array-key, mixed> $array
+     * @param array<int|string, mixed> $array
      *
      * @return array<int|string, string>
      */
@@ -31,7 +31,7 @@ class TransArrayAction
             if (is_array($result)) {
                 $stringResult = [];
                 foreach ($result as $key => $value) {
-                    $stringResult[$key] = (string) $value;
+                    $stringResult[$key] = is_string($value) ? $value : '';
                 }
 
                 return $stringResult;
@@ -46,7 +46,7 @@ class TransArrayAction
         if (is_array($result)) {
             $stringResult = [];
             foreach ($result as $key => $value) {
-                $stringResult[$key] = (string) $value;
+                $stringResult[$key] = is_string($value) ? $value : '';
             }
 
             return $stringResult;

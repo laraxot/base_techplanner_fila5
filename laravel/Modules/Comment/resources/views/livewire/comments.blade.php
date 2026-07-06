@@ -7,7 +7,7 @@
 @endphp
 
 <section class="comment-section space-y-4" @class(['comment-section-newest-first' => $newestFirst])>
-    @if($writable && $showNotificationOptions && Auth::check())
+    @if($writable && $notifyOptions && Auth::check())
         <div class="text-end text-sm">
             <label for="comment-subscription" class="sr-only">{{ __('comment::txt.notification_subscription') }}</label>
             <select
@@ -16,7 +16,7 @@
                 class="rounded-md border border-gray-300 text-sm dark:border-gray-600 dark:bg-gray-800"
             >
                 @foreach(NotificationSubscriptionType::cases() as $case)
-                    <option value="{{ $case->value }}" @selected($selectedNotificationSubscriptionType === $case->value)>
+                    <option value="{{ $case->value }}" @selected($notifySubType === $case->value)>
                         {{ $case->description() }}
                     </option>
                 @endforeach

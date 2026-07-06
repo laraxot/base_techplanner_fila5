@@ -145,12 +145,8 @@ class CustomMiddleware
 }
 
 // Non hardcodare percorsi delle risorse
-<<<<<<< HEAD
 <img src="/var/www/html/Quaeris/laravel/public/images/avatar.png">
 
-=======
-<img src="/var/www/html/ptvx/laravel/public/images/avatar.png">
->>>>>>> c001364 (.)
 // Non duplicare la registrazione dei componenti
 Blade::component('ui::components.icon', 'ui.icon');
 

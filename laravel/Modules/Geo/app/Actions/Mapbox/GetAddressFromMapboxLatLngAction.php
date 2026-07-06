@@ -7,8 +7,8 @@ namespace Modules\Geo\Actions\Mapbox;
 use GuzzleHttp\Promise\PromiseInterface;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
-use Modules\Geo\Datas\AddressData;
-use Modules\Geo\Datas\MapboxMapData;
+use Modules\Geo\Datas\Geocoding\AddressData;
+use Modules\Geo\Datas\MapPlatforms\MapboxMapData;
 use Modules\Geo\Exceptions\InvalidLocationException;
 
 /**
@@ -56,7 +56,7 @@ class GetAddressFromMapboxLatLngAction
     }
 
     /**
-     * @return array<string, mixed>
+     * @return array<mixed>
      */
     private function makeApiRequest(float $latitude, float $longitude, string $apiKey): array
     {
@@ -87,7 +87,7 @@ class GetAddressFromMapboxLatLngAction
     }
 
     /**
-     * @param array<string, mixed> $response
+     * @param array<mixed> $response
      */
     private function parseResponse(array $response): MapboxMapData
     {

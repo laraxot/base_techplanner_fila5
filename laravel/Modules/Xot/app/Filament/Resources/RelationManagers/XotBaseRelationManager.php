@@ -20,7 +20,9 @@ use Filament\Tables\Columns\Layout\Component as LayoutComponent;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use stdClass;
 use Webmozart\Assert\Assert;
@@ -30,7 +32,18 @@ use Webmozart\Assert\Assert;
  */
 abstract class XotBaseRelationManager extends FilamentRelationManager
 {
-    use HasXotTable;
+    use HasRelationshipModelClass;
+    use HasXotTable {
+        HasRelationshipModelClass::getModelClass insteadof HasXotTable;
+    }
+
+    /**
+     * @param array<string, bool|float|int|string|null> $params
+     */
+    public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
+    {
+        return static::$resource::trans($key, $exceptionIfNotExist, $params);
+    }
 
     protected static string $relationship = '';
 
@@ -44,7 +57,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      */
     public function getResource(): string
     {
-        if (isset(static::$resource) && \is_string(static::$resource) && static::$resource !== '') {
+        if (isset(static::$resource) && \is_string(static::$resource) && '' !== static::$resource) {
             return static::$resource;
         }
 
@@ -90,9 +103,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         return $schema->components($components);
     }
 
-    /**
-     * @return array<int|string, Component>
-     */
+    /** @return array<int|string, Component> */
     public function getFormSchema(): array
     {
         return $this->getResource()::getFormSchema();
@@ -153,7 +164,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
 
             // $column è già verificato come instance di Column|LayoutComponent sopra
             $name = method_exists($column, 'getName') ? $column->getName() : (string) spl_object_hash($column);
-            $nameStr = \is_string($name) ? $name : (string) $name;
+            $nameStr = SafeStringCastAction::cast($name);
             $assoc[$nameStr] = $column;
         }
 
@@ -176,7 +187,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['edit'] = EditAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
-                if ($record === null) {
+                if (null === $record) {
                     return false;
                 }
 
@@ -186,7 +197,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['detach'] = DetachAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
-                if ($record === null) {
+                if (null === $record) {
                     return false;
                 }
 
@@ -256,9 +267,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk delete action can be performed on the given record.
      */
-    public function canDeleteBulk(Model|stdClass|null $record): bool
+    public function canDeleteBulk(Model|\stdClass|null $record): bool
     {
-        if ($record instanceof stdClass) {
+        if ($record instanceof \stdClass) {
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }
@@ -269,9 +280,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk detach action can be performed on the given record.
      */
-    public function canDetachBulk(Model|stdClass|null $record): bool
+    public function canDetachBulk(Model|\stdClass|null $record): bool
     {
-        if ($record instanceof stdClass) {
+        if ($record instanceof \stdClass) {
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }

@@ -913,8 +913,4 @@ $logout = function () {
 - ✅ Utilizzare i componenti appropriati
 - ✅ Seguire la struttura standard
 - ✅ Gestire correttamente le traduzioni
-<<<<<<< HEAD
 - ✅ Testare in entrambi gli stati
-=======
-- ✅ Testare in entrambi gli stati
->>>>>>> c001364 (.)

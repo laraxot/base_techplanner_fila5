@@ -20,7 +20,7 @@ class BuildMailMessageAction
 
     /**
      * @param  array<string, mixed>  $view_params
-     * @param  DataCollection<AttachmentData>  $dataCollection
+     * @param  DataCollection<int, AttachmentData>|null  $dataCollection
      */
     public function execute(
         string $name,
@@ -28,6 +28,7 @@ class BuildMailMessageAction
         array $view_params = [],
         ?DataCollection $dataCollection = null,
     ): MailMessage {
+        /** @var array<string, mixed> $view_params */
         $view_params = array_merge($model->toArray(), $view_params);
 
         $type = 'email';
@@ -60,7 +61,7 @@ class BuildMailMessageAction
         $viewParams['body_html'] = $bodyHtml;
         $viewParams['subject'] = $subject;
 
-        $email = (new MailMessage())
+        $email = (new MailMessage)
             ->from($fromAddress, $fromName)
             ->subject($subject)
             ->view($view_html, $viewParams);

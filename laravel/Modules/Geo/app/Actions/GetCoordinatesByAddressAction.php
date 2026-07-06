@@ -7,7 +7,8 @@ namespace Modules\Geo\Actions;
 use Filament\Notifications\Notification;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
-use Modules\Geo\Datas\CoordinatesData;
+use Modules\Geo\Datas\Location\CoordinatesData;
+use Modules\Xot\Actions\Cast\SafeFloatCastAction;
 
 class GetCoordinatesByAddressAction
 {
@@ -109,7 +110,7 @@ class GetCoordinatesByAddressAction
     /**
      * Execute an HTTP GET request and always return a typed Response.
      *
-     * @param  array<string, mixed>  $params
+     * @param array<string, mixed> $params
      */
     private function makeHttpRequest(string $url, array $params): Response
     {
@@ -120,26 +121,27 @@ class GetCoordinatesByAddressAction
     private function getFromBing(string $address): ?CoordinatesData
     {
         $apiKey = config('services.bing.maps_api_key');
-        if (! is_string($apiKey) || $apiKey === '') {
+        if (! is_string($apiKey) || '' === $apiKey) {
             return null;
         }
 
         $data = $this->getBingResponse($address, $apiKey);
 
         $coordinates = $this->extractBingCoordinates($data);
-        if ($coordinates === null) {
+        if (null === $coordinates) {
             return null;
         }
 
         return new CoordinatesData(
-            latitude: (float) ($coordinates[0] ?? 0),
-            longitude: (float) ($coordinates[1] ?? 0),
+            latitude: SafeFloatCastAction::cast($coordinates[0] ?? 0),
+            longitude: SafeFloatCastAction::cast($coordinates[1] ?? 0),
         );
     }
 
     /**
-     * @param  array<string, mixed>  $data
-     * @return array<int, mixed>|null
+     * @param array<mixed> $data
+     *
+     * @return array<mixed>|null
      */
     private function extractBingCoordinates(array $data): ?array
     {
@@ -203,7 +205,7 @@ class GetCoordinatesByAddressAction
     private function getFromOpenCage(string $address): ?CoordinatesData
     {
         $apiKey = config('services.opencage.api_key');
-        if (! is_string($apiKey) || $apiKey === '') {
+        if (! is_string($apiKey) || '' === $apiKey) {
             return null;
         }
 

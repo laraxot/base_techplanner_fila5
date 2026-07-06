@@ -1,30 +1,26 @@
-# 📚 COMMENT Module - Documentation Index
-
-**Path**: `laravel/Modules/Comment/docs/`  
-**Modulo**: @Modules/Comment
-
-## 📄 Documenti
-
-### Product
-| File | Scopo |
-|------|-------|
-| PRD.md | Product Requirements |
-| PRODUCT_ROADMAP.md | Roadmap |
-| PRODUCT_STRATEGY.md | Strategy |
-| PRODUCT_LAUNCH_PLAN.md | Launch Plan |
-
-### Development
-| File | Scopo |
-|------|-------|
-| GSD_WORKFLOW.md | GSD Workflow |
-| SPRINT_PLANNING.md | Sprint Planning |
-| USER_RESEARCH.md | User Research |
-
-## 🔗 Riferimenti
-
-- [Xot Module](../Xot/docs/00-index.md) - Base classes
-- [AGENTS.md](../../../../AGENTS.md) - Project guidelines
-
+---
+title: "Comment module docs index"
+type: index
+tags: [comment, module, index]
+qmd: true
 ---
 
-**Ultimo Aggiornamento**: 2026-03-24
+# Comment Module Docs Index
+
+**Path**: `laravel/Modules/Comment/docs/`
+
+## Hub canonici
+
+| File | Scopo |
+|---|---|
+| [raw/reference/ds4-cli-integrations.md](./raw/reference/ds4-cli-integrations.md) | Integrazione ds4 con CLI |
+
+## Regole
+
+- Comment può dipendere da User (per autenticazione)
+- User NON deve dipendere da Comment
+
+## Riferimenti
+
+- [Predict module](../../Modules/Predict/docs/00-INDEX.md)
+- [User module](../User/docs/00-INDEX.md)

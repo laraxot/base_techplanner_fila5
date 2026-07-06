@@ -1,7 +1,6 @@
 # Risoluzione Conflitti Git e Correzione Errori PHPStan - Modulo Notify
 
 ## Data
-2025-11-24
 [DATE]
 
 ## Riepilogo Esecutivo
@@ -167,7 +166,6 @@ Durante la risoluzione:
 
 ## Collegamenti
 
-- [Git Conflicts Guide](../../Geo/docs_project/git-conflicts-resolution-guide.md)
 - [Git Conflicts Guide](../../geo/docs_project/git-conflicts-resolution-guide.md)
 - [Notify Best Practices](best-practices.md)
 - [PHPStan Configuration](../../phpstan.neon)

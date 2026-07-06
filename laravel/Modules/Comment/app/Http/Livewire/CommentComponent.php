@@ -34,21 +34,10 @@ class CommentComponent extends Component
 
     public bool $showReactions = false;
 
-    public function mount(
-        Comment $comment,
-        bool $showAvatar = true,
-        bool $newestFirst = false,
-        bool $writable = true,
-        bool $showReplies = false,
-        bool $showReactions = false,
-    ): void {
+    public function mount(Comment $comment): void
+    {
         $this->commentId = $comment->id;
         $this->comment = $comment;
-        $this->showAvatar = $showAvatar;
-        $this->newestFirst = $newestFirst;
-        $this->writable = $writable;
-        $this->showReplies = $showReplies;
-        $this->showReactions = $showReactions;
     }
 
     public function startEditing(): void
@@ -147,10 +136,12 @@ class CommentComponent extends Component
 
         if ($reactionModel) {
             $reactionModel->delete();
-        } else {
-            $this->comment->react($reaction);
+            $this->comment->load('reactions');
+
+            return;
         }
 
+        $this->comment->react($reaction);
         $this->comment->load('reactions');
     }
 
@@ -162,10 +153,10 @@ class CommentComponent extends Component
             blade;
         }
 
-        /** @var view-string $viewName */
-        $viewName = 'comment::livewire.comment';
+        /** @var view-string $view */
+        $view = 'comment::livewire.comment';
 
-        return view($viewName, [
+        return view($view, [
             'comment' => $this->comment,
         ]);
     }

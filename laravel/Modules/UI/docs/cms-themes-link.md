@@ -15,13 +15,6 @@ Secondo le regole di organizzazione della documentazione:
 - [Processo di Build del Tema](../../cms/docs/theme-build-process.md) - Dettagli sul processo di build
 - [Struttura dei Temi](../../cms/docs/themes/structure.md) - Organizzazione dei file nei temi
 - [Frontoffice](../../cms/docs/frontoffice.md) - Documentazione completa sul frontend
-<<<<<<< HEAD
-=======
-- [Compilazione dei Temi](../../Cms/docs/theme_compilation.md) - Processo di compilazione e pubblicazione dei temi
-- [Processo di Build del Tema](../../Cms/docs/theme-build-process.md) - Dettagli sul processo di build
-- [Struttura dei Temi](../../Cms/docs/themes/structure.md) - Organizzazione dei file nei temi
-- [Frontoffice](../../Cms/docs/frontoffice.md) - Documentazione completa sul frontend
->>>>>>> c001364 (.)
 
 ## Implementazione dei Temi
 
@@ -33,10 +26,6 @@ I componenti UI definiti in questo modulo vengono utilizzati nei temi attraverso
 
 ## Collegamenti ai Temi nella Root
 
-<<<<<<< HEAD
-=======
-Questo documento è collegato bidirezionalmente con [themes-ui-link.md](../../Cms/docs/themes-ui-link.md) nel modulo Cms.
->>>>>>> c001364 (.)
 - [Compilazione Temi](../../../../docs/compilazione_temi.md) - Collegamento nella root alla documentazione sulla compilazione dei temi
 - [Theme Links](../../../../docs/theme-links.md) - Collegamenti nella root alla documentazione sui temi
 
@@ -62,13 +51,6 @@ Secondo le regole di organizzazione della documentazione:
 - [Processo di Build del Tema](../../cms/project_docs/theme-build-process.md) - Dettagli sul processo di build
 - [Struttura dei Temi](../../cms/project_docs/themes/structure.md) - Organizzazione dei file nei temi
 - [Frontoffice](../../cms/project_docs/frontoffice.md) - Documentazione completa sul frontend
-<<<<<<< HEAD
-=======
-- [Compilazione dei Temi](../../Cms/project_docs/theme_compilation.md) - Processo di compilazione e pubblicazione dei temi
-- [Processo di Build del Tema](../../Cms/project_docs/theme-build-process.md) - Dettagli sul processo di build
-- [Struttura dei Temi](../../Cms/project_docs/themes/structure.md) - Organizzazione dei file nei temi
-- [Frontoffice](../../Cms/project_docs/frontoffice.md) - Documentazione completa sul frontend
->>>>>>> c001364 (.)
 
 ## Implementazione dei Temi
 
@@ -80,10 +62,6 @@ I componenti UI definiti in questo modulo vengono utilizzati nei temi attraverso
 
 ## Collegamenti ai Temi nella Root
 
-<<<<<<< HEAD
-=======
-Questo documento è collegato bidirezionalmente con [themes-ui-link.md](../../Cms/project_docs/themes-ui-link.md) nel modulo Cms.
->>>>>>> c001364 (.)
 - [Compilazione Temi](../../../../docs/project/compilazione_temi.md) - Collegamento nella root alla documentazione sulla compilazione dei temi
 - [Theme Links](../../../../docs/project/theme-links.md) - Collegamenti nella root alla documentazione sui temi
 
@@ -91,8 +69,4 @@ Questo documento è collegato bidirezionalmente con [themes-ui-link.md](../../Cm
 
 Questo documento è collegato bidirezionalmente con [themes-ui-link.md](../../cms/project_docs/themes-ui-link.md) nel modulo Cms.
 
-<<<<<<< HEAD
 > Aggiorna entrambi i riferimenti se modifichi la documentazione dei temi o aggiungi nuove sezioni.
-=======
-> Aggiorna entrambi i riferimenti se modifichi la documentazione dei temi o aggiungi nuove sezioni.
->>>>>>> c001364 (.)

@@ -1,14 +1,10 @@
 # Azioni SMS
 
 ## Interfaccia
-# Azioni SMS
-
-## Interfaccia
 
 Tutte le azioni di invio SMS devono implementare l'interfaccia `SmsActionInterface`:
 
 ```php
-namespace Modules\Notify\Contracts\SMS;
 namespace Modules\Notify\Contracts\SMS;
 
 interface SmsActionInterface

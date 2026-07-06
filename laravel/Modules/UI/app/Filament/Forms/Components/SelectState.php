@@ -6,6 +6,7 @@ namespace Modules\UI\Filament\Forms\Components;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 
 class SelectState extends XotBaseSelect
@@ -16,7 +17,7 @@ class SelectState extends XotBaseSelect
 
         $this->options(function (?Model $record): array {
             $name = $this->getName();
-            if ($record === null) {
+            if (null === $record) {
                 $model = $this->getModel();
                 if (\is_string($model) && class_exists($model)) {
                     $instance = app($model);
@@ -27,6 +28,9 @@ class SelectState extends XotBaseSelect
                             if (! \is_array($statesRaw)) {
                                 $statesRaw = Arr::wrap($statesRaw);
                             }
+
+                            /* @var array<int|string, mixed> $statesRaw */
+                            return $this->combineStateOptions($statesRaw);
                         }
                     }
                 }
@@ -45,7 +49,28 @@ class SelectState extends XotBaseSelect
             /** @var array<int|string, mixed> $states */
             $states = $statesRaw;
 
-            return $states;
+            return $this->combineStateOptions($states);
         });
+        $this->required();
+    }
+
+    /**
+     * @param array<int|string, mixed> $states
+     *
+     * @return array<int|string, string>
+     */
+    private function combineStateOptions(array $states): array
+    {
+        $statesKeys = array_map(
+            static fn ($key) => SafeStringCastAction::cast($key),
+            array_keys($states),
+        );
+        $statesValues = array_map(
+            static fn ($value) => SafeStringCastAction::cast($value),
+            array_values($states),
+        );
+        $combined = array_combine($statesKeys, $statesValues);
+
+        return $combined ? $combined : [];
     }
 }

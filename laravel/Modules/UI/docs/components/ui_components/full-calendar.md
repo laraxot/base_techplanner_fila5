@@ -13,11 +13,6 @@ The FullCalendar component is implemented following these principles:
 
 ## Links to Detailed Documentation
 
-<<<<<<< HEAD
-=======
-- [UI Component Documentation](../laravel/Modules/UI/docs/components/full-calendar.md)
-- [Implementation in Ptv Module](../laravel/Modules/Ptv/docs/features/full-calendar.md)
->>>>>>> c001364 (.)
 - [UI Component Documentation](../laravel/modules/ui/docs/components/full-calendar.md)
 - [Implementation in Ptv Module](../laravel/modules/ptv/docs/features/full-calendar.md)
 - [Cursor Implementation Rules](../.cursor/rules/full_calendar_rules.mdc)
@@ -48,9 +43,4 @@ When making changes to the FullCalendar component:
 4. Verify compliance with rules in Cursor and Windsurf .mdc files
 5. Ensure all class names and attributes follow English naming conventions
 
-<<<<<<< HEAD
 *
-=======
-*Last updated: June 2025*
-*
->>>>>>> c001364 (.)

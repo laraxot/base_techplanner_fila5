@@ -84,8 +84,6 @@ php artisan optimize:clear
 ```
 
 **Documentazione correlata**:
-- [Xot/docs/module-namespace-path-convention.md](../../Xot/docs/module-namespace-path-convention.md)
-- [Xot/docs/modules/structure.md](../../Xot/docs/modules/structure.md)
 - [Xot/docs/module-namespace-path-convention.md](../../xot/docs/module-namespace-path-convention.md)
 - [Xot/docs/modules/structure.md](../../xot/docs/modules/structure.md)
 
@@ -94,3 +92,4 @@ php artisan optimize:clear
 **Verifica**: Gennaio 2025  
 **Status**: ✅ File conformi PSR-4  
 **Azione**: Nessuna (già corretti)
+

@@ -29,16 +29,8 @@ Il modulo UI è l'esempio **perfetto** di come dovrebbe essere un BaseModel quan
 - ✅ Connection automatica da XotBaseModel
 
 ## 🔗 Collegamenti
-<<<<<<< HEAD
-=======
-[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
->>>>>>> c001364 (.)
 [DRY/KISS Global](../../../docs/dry_kiss_analysis_[date].md)
 
 ---
 
-<<<<<<< HEAD
 **Conclusione:** 🏆 **GOLD STANDARD** per BaseModel minimali!
-=======
-**Conclusione:** 🏆 **GOLD STANDARD** per BaseModel minimali!
->>>>>>> c001364 (.)

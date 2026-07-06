@@ -187,10 +187,6 @@ public function testAndReturnData(): array // Viola SRP
 - [Best Practices](best-practices.md) - Migliori pratiche
 
 ## Data Correzione
-<<<<<<< HEAD
-=======
-2025-01-06
->>>>>>> c001364 (.)
 [DATE]
 
 ## Correzioni Aggiuntive Implementate
@@ -275,8 +271,4 @@ curl -I http://127.0.0.1:8000/ui/admin/test/s3-test
 ✅ **RISOLTO E TESTATO**
 
 ## Priorità
-<<<<<<< HEAD
 🟢 Completato
-=======
-🟢 Completato
->>>>>>> c001364 (.)

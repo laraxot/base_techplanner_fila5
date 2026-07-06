@@ -4,14 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Blocks;
 
-use Filament\Forms\Components\Component;
 use Filament\Forms\Components\RichEditor;
 use Modules\Xot\Filament\Blocks\XotBaseBlock;
 
 final class Page extends XotBaseBlock
 {
     /**
-     * @return array<int, Component>
+     * @return array<int, \Filament\Schemas\Components\Component>
      */
     public static function getFormSchema(): array
     {

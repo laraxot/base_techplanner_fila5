@@ -16,11 +16,7 @@ Questo documento descrive la corretta gestione delle risorse pubbliche (immagini
 La struttura corretta per le risorse pubbliche  è la seguente:
 
 ```
-<<<<<<< HEAD
 /var/www/html/Quaeris/
-=======
-/var/www/html/ptvx/
->>>>>>> c001364 (.)
 ├── public_html/           # Directory pubblica principale
 │   ├── images/            # Immagini pubbliche
 │   ├── css/               # File CSS
@@ -30,22 +26,14 @@ La struttura corretta per le risorse pubbliche  è la seguente:
 └── laravel/               # Applicazione Laravel (NON contiene file pubblici)
 ```
 
-<<<<<<< HEAD
 > **IMPORTANTE**: MAI utilizzare `/var/www/html/Quaeris/laravel/public/` per i file pubblici. Questa cartella non è accessibile via web nel setup di Quaeris.
 
-=======
-> **IMPORTANTE**: MAI utilizzare `/var/www/html/ptvx/laravel/public/` per i file pubblici. Questa cartella non è accessibile via web nel setup di Laraxot.
->>>>>>> c001364 (.)
 ## Tipi di Risorse
 
 ### Immagini
 
-<<<<<<< HEAD
 Le immagini devono essere posizionate in `/var/www/html/Quaeris/public_html/images/` e organizzate in sottocartelle per tipologia:
 
-=======
-Le immagini devono essere posizionate in `/var/www/html/ptvx/public_html/images/` e organizzate in sottocartelle per tipologia:
->>>>>>> c001364 (.)
 - `/images/avatars/` - Avatar utenti
 - `/images/logos/` - Loghi
 - `/images/icons/` - Icone
@@ -123,13 +111,8 @@ I font devono essere posizionati in `/public_html/fonts/` e organizzati per fami
 ```blade
 <a href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')) }}">
     <img 
-<<<<<<< HEAD
 src="{{ asset('images/logos/Quaeris-logo.svg') }}" 
         alt="Quaeris"
-=======
-        src="{{ asset('images/logos/ptvx-logo.svg') }}" 
-        alt="Laraxot" 
->>>>>>> c001364 (.)
         class="h-8"
     >
 </a>
@@ -144,8 +127,4 @@ src="{{ asset('images/logos/Quaeris-logo.svg') }}"
 
 ## Conclusione
 
-<<<<<<< HEAD
 Seguendo queste linee guida per la gestione delle risorse pubbliche, si garantisce che tutte le risorse siano correttamente accessibili via web e organizzate in modo coerente, facilitando la manutenzione e l'evoluzione del progetto Quaeris.
-=======
-Seguendo queste linee guida per la gestione delle risorse pubbliche, si garantisce che tutte le risorse siano correttamente accessibili via web e organizzate in modo coerente, facilitando la manutenzione e l'evoluzione del progetto Laraxot.
->>>>>>> c001364 (.)

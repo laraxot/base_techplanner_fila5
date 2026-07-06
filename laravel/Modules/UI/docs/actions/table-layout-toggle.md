@@ -5,19 +5,9 @@ Azione Filament per il toggle del layout delle tabelle tra vista griglia e lista
 
 ## Caratteristiche
 - Supporto per layout griglia e lista
-<<<<<<< HEAD
-- Integrazione con Livewire (`$layoutView` sulla pagina ListRecords)
-- Persistenza dello stato del layout in sessione
-- Icone e tooltip dinamici dal layout corrente
-
-## Contratto runtime (obbligatorio)
-
-La tabella Filament legge `$layoutView` tramite `HasXotTable::table()`. L’azione deve aggiornare **sia** la sessione **sia** `$livewire->layoutView` al click. Vedi [bugfix toggle non funzionante](../bugfix-table-layout-toggle-not-working.md) e [contratto Xot](../../Xot/docs/filament/table-layout-toggle-contract.md).
-=======
 - Integrazione con Livewire
 - Persistenza dello stato del layout
 - Supporto per tooltip e icone dinamiche
->>>>>>> c001364 (.)
 
 ## Miglioramenti PHPStan Livello 9
 Le seguenti modifiche sono state apportate per soddisfare PHPStan livello 9:
@@ -60,10 +50,6 @@ class MyListRecords extends ListRecords
 4. Mantenere la persistenza dello stato
 
 ## Collegamenti alla Documentazione
-<<<<<<< HEAD
-=======
-- [Risoluzione Conflitti UI](../CONFLITTI_MERGE_RISOLTI.md): Documentazione dei conflitti risolti
->>>>>>> c001364 (.)
 - [Risoluzione Conflitti UI](../conflitti_merge_risolti.md): Documentazione dei conflitti risolti
 - [Test di Risoluzione Conflitti](../test_conflicts_resolution.md): Test automatici che verificano la corretta risoluzione
 
@@ -75,19 +61,9 @@ Azione Filament per il toggle del layout delle tabelle tra vista griglia e lista
 
 ## Caratteristiche
 - Supporto per layout griglia e lista
-<<<<<<< HEAD
-- Integrazione con Livewire (`$layoutView` sulla pagina ListRecords)
-- Persistenza dello stato del layout in sessione
-- Icone e tooltip dinamici dal layout corrente
-
-## Contratto runtime (obbligatorio)
-
-La tabella Filament legge `$layoutView` tramite `HasXotTable::table()`. L’azione deve aggiornare **sia** la sessione **sia** `$livewire->layoutView` al click. Vedi [bugfix toggle non funzionante](../bugfix-table-layout-toggle-not-working.md) e [contratto Xot](../../Xot/docs/filament/table-layout-toggle-contract.md).
-=======
 - Integrazione con Livewire
 - Persistenza dello stato del layout
 - Supporto per tooltip e icone dinamiche
->>>>>>> c001364 (.)
 
 ## Miglioramenti PHPStan Livello 9
 Le seguenti modifiche sono state apportate per soddisfare PHPStan livello 9:
@@ -130,15 +106,7 @@ class MyListRecords extends ListRecords
 4. Mantenere la persistenza dello stato
 
 ## Collegamenti alla Documentazione
-<<<<<<< HEAD
 - [Risoluzione Conflitti UI](../conflitti_merge_risolti.md): Documentazione dei conflitti risolti
 - [Test di Risoluzione Conflitti](../test_conflicts_resolution.md): Test automatici che verificano la corretta risoluzione
 
 [Torna alla documentazione UI](/docs/modules/module_ui.md#actions)
-=======
-- [Risoluzione Conflitti UI](../CONFLITTI_MERGE_RISOLTI.md): Documentazione dei conflitti risolti
-- [Risoluzione Conflitti UI](../conflitti_merge_risolti.md): Documentazione dei conflitti risolti
-- [Test di Risoluzione Conflitti](../test_conflicts_resolution.md): Test automatici che verificano la corretta risoluzione
-
-[Torna alla documentazione UI](/docs/modules/module_ui.md#actions)
->>>>>>> c001364 (.)

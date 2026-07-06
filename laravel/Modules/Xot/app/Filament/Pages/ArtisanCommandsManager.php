@@ -15,7 +15,7 @@ use Modules\Xot\Actions\ExecuteArtisanCommandAction;
  */
 class ArtisanCommandsManager extends XotBasePage
 {
-    /** @var array<int, string> */
+    /** @var list<string> */
     public array $output = [];
 
     public string $currentCommand = '';
@@ -112,9 +112,6 @@ class ArtisanCommandsManager extends XotBasePage
             ->send();
     }
 
-    /**
-     * @return array<int, Action>
-     */
     protected function getHeaderActions(): array
     {
         return [

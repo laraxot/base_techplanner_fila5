@@ -3,10 +3,6 @@
 ## Pacchetti Utilizzati
 
 ### Core
-<<<<<<< HEAD
-=======
-- [laraxot/module_xot_fila3](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
->>>>>>> c001364 (.)
 - [laraxot/module_xot_fila5](../xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [filament/filament](https://filamentphp.com) - Admin panel e componenti UI
 - [tailwindcss/tailwindcss](https://tailwindcss.com) - Framework CSS utility-first
@@ -68,23 +64,7 @@
 * [packages.md](../../../job/docs/packages.md)
 * [packages.md](../../../media/docs/packages.md)
 * [packages.md](../../../tenant/docs/packages.md)
-<<<<<<< HEAD
 
 ### Versione Incoming
 
 ---
-=======
-* [packages.md](../../../Gdpr/docs/packages.md)
-* [packages.md](../../../Notify/docs/packages.md)
-* [packages.md](../../../Xot/docs/packages.md)
-* [packages.md](../../../User/docs/packages.md)
-* [packages.md](../../../UI/docs/packages.md)
-* [packages.md](../../../Lang/docs/packages.md)
-* [packages.md](../../../Job/docs/packages.md)
-* [packages.md](../../../Media/docs/packages.md)
-* [packages.md](../../../Tenant/docs/packages.md)
-
-### Versione Incoming
-
----
->>>>>>> c001364 (.)

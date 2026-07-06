@@ -68,12 +68,8 @@ I componenti di navigazione devono utilizzare sempre le funzioni di localizzazio
 
 ### Traduzioni Necessarie
 
-<<<<<<< HEAD
 Assicurarsi che le seguenti chiavi di traduzione siano definite in `/var/www/html/Quaeris/laravel/lang/{locale}/auth.php`:
 
-=======
-Assicurarsi che le seguenti chiavi di traduzione siano definite in `/var/www/html/ptvx/laravel/lang/{locale}/auth.php`:
->>>>>>> c001364 (.)
 ```php
 return [
     'login' => [

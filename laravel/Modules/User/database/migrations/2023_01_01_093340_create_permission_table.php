@@ -4,23 +4,22 @@ declare(strict_types=1);
 
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class() extends XotBaseMigration
-{
+return new class extends XotBaseMigration {
     /**
      * Run the migrations.
      */
     public function up(): void
     {
         /**
-         * @var array<string, string> $tableNames
+         * @var array<mixed> $tableNames
          */
         $tableNames = config('permission.table_names');
         /**
-         * @var array<string, string|null> $columnNames
+         * @var array<mixed> $columnNames
          */
         $columnNames = config('permission.column_names');
         /**
-         * @var bool $teams
+         * @var array<mixed> $teams
          */
         $teams = config('permission.teams');
 
@@ -45,7 +44,7 @@ return new class() extends XotBaseMigration
         try {
             // Verifica se l'applicazione è completamente inizializzata
             if (app()->bound('cache')) {
-                app('cache')->store($cache_store !== 'default' ? $cache_store : null)->forget($cache_key);
+                app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
             }
         } catch (Exception $e) {
             // Silently ignore cache errors during package discovery

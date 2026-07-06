@@ -12,7 +12,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Ultimo bump: 2026_06_10_141000 — consolida add_attribute_changes + fix_causer + update_schema
  * Contratto: laravel/Modules/Activity/docs/wiki/concepts/activity-log-single-migration-contract.md
  */
-return new class() extends XotBaseMigration
+return new class extends XotBaseMigration
 {
     protected ?string $model_class = Activity::class;
 

@@ -15,10 +15,10 @@ use Modules\User\Models\OauthToken;
  *
  * @property Collection<int, OauthAuthCode> $authCodes
  * @property int|null                       $auth_codes_count
- * @property array<int, string>                          $grant_types
+ * @property list<string>                   $grant_types
  * @property User                           $owner
  * @property string|null                    $plain_secret
- * @property array<int, string>                          $redirect_uris
+ * @property list<string>                   $redirect_uris
  * @property string|null                    $secret
  * @property Collection<int, OauthToken>    $tokens
  * @property int|null                       $tokens_count
@@ -40,6 +40,9 @@ class Client extends PassportClient
      */
     public function initializeHasUniqueStringIds(): void
     {
-        parent::initializeHasUniqueStringIds();
+        // @phpstan-ignore-next-line
+        if (method_exists(parent::class, 'initializeHasUniqueStringIds')) {
+            parent::initializeHasUniqueStringIds();
+        }
     }
 }

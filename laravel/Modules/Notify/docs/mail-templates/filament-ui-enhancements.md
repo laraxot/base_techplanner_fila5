@@ -119,7 +119,6 @@ Card::make()
 ### 1. Form Completo
 ```php
 public static function form(Form $form): Form
-public static function form(Form $form): Form
 {
     return $form
         ->schema([

@@ -28,7 +28,7 @@ class EnvWidget extends Widget implements HasActions, HasForms
     /** @var array<string, mixed>|null */
     public ?array $data = [];
 
-    /** @var array<int, string> */
+    /** @var list<string> */
     public array $only = [];
 
     protected string $view = 'xot::filament.widgets.env';
@@ -86,7 +86,7 @@ class EnvWidget extends Widget implements HasActions, HasForms
                 ->placeholder('AIzaSyAuB_...')
                 ->helperText('telegram_bot_token'),
         ];
-        $selected = $this->only === [] ? $all : Arr::only($all, $this->only);
+        $selected = [] === $this->only ? $all : Arr::only($all, $this->only);
 
         /** @var array<Component> $components */
         $components = array_values($selected);

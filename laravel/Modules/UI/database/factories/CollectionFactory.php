@@ -7,6 +7,9 @@ namespace Modules\UI\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\UI\Models\Collection;
 
+/**
+ * @extends Factory<Collection>
+ */
 class CollectionFactory extends Factory
 {
     /**
@@ -19,5 +22,14 @@ class CollectionFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition(): array {}
+    public function definition(): array
+    {
+        return [
+            'name' => fake()->words(2, true),
+            'type' => 'block',
+            'theme_id' => 1,
+            'is_active' => true,
+            'order' => 0,
+        ];
+    }
 }

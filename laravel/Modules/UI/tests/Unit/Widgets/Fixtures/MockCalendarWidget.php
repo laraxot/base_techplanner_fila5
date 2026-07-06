@@ -6,7 +6,6 @@ namespace Modules\UI\Tests\Unit\Widgets\Fixtures;
 
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\TextInput;
-<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 
 class MockCalendarWidget extends BaseCalendarWidgetStub
@@ -22,16 +21,6 @@ class MockCalendarWidget extends BaseCalendarWidgetStub
     {
         unset($fetchInfo);
 
-=======
-use Modules\UI\Filament\Widgets\BaseCalendarWidget;
-
-class MockCalendarWidget extends BaseCalendarWidget
-{
-    public string $model = MockEventModel::class;
-
-    public function fetchEvents(array $fetchInfo): array
-    {
->>>>>>> c001364 (.)
         return [
             [
                 'id' => 1,
@@ -50,12 +39,9 @@ class MockCalendarWidget extends BaseCalendarWidget
         ];
     }
 
-<<<<<<< HEAD
     /**
      * @return array<int, Component>
      */
-=======
->>>>>>> c001364 (.)
     public function getFormSchema(): array
     {
         return [

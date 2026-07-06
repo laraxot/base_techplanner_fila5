@@ -53,6 +53,9 @@ class SmsChannel
 
         $action = $this->factory->create();
 
-        return $action->execute($smsData);
+        /** @var array<string, mixed> $result */
+        $result = $action->execute($smsData);
+
+        return $result;
     }
 }

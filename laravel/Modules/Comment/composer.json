@@ -11,8 +11,11 @@
     }],
     "require": {
         "php": "^8.1",
-        "spatiex/laravel-comments": "*",
-        "spatiex/laravel-comments-livewire": "*"
+        "spatie/laravel-markdown": "*",
+        "spatie/laravel-queueable-action": "^2.16",
+        "symfony/html-sanitizer": "*",
+        "webmozart/assert": "*",
+        "livewire/livewire": "*"
     },
     "require-dev": {
     },
@@ -32,7 +35,8 @@
             "Modules\\Comment\\Database\\Factories\\": "database/factories/",
             "Modules\\Comment\\Database\\Seeders\\": "database/seeders/",
             "Modules\\Comment\\Tests\\": "tests/",
-            "Spatie\\Comments\\": "packages/spatie/laravel-comments/src/"
+            "Spatie\\Comments\\": "packages/spatie/laravel-comments/src",
+            "Spatie\\LivewireComments\\": "packages/spatie/laravel-comments-livewire/src"
         }
     },
     "autoload-dev": {
@@ -47,25 +51,18 @@
         },
         {
             "type": "path",
+            "url": "../User"
+        },
+        {
+            "type": "path",
             "url": "../Tenant"
         },
         {
             "type": "path",
             "url": "../UI"
-        },
-        {
-            "type": "path",
-            "url": "./packages/spatie/laravel-comments"
-        },
-        {
-            "type": "path",
-            "url": "./packages/spatie/laravel-comments-livewire"
         }
     ],
     "scripts": {
-        "post-autoload-dump": [
-            "@php vendor/bin/testbench package:discover --ansi"
-        ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate"
         ],

@@ -136,7 +136,6 @@ TitleWithSlugInput::make()
 use Camya\Filament\Forms\Components\TitleWithSlugInput;
 
 public static function form(Form $form): Form
-public static function form(Form $form): Form
 {
     return $form
         ->schema([

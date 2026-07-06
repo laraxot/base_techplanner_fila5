@@ -9,8 +9,8 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
 use Modules\UI\Providers\UIServiceProvider;
 use Modules\UI\Tests\Support\EnsuresUiDatabaseSchema;
+use Modules\User\Models\User;
 use Modules\User\Providers\UserServiceProvider;
-use Modules\Xot\Datas\XotData;
 use Modules\Xot\Tests\XotBaseTestCase;
 
 /**
@@ -48,7 +48,7 @@ abstract class TestCase extends XotBaseTestCase
         $connections = config('database.connections', []);
 
         foreach (array_keys($connections) as $connection) {
-            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
                 continue;
             }
 
@@ -56,7 +56,7 @@ abstract class TestCase extends XotBaseTestCase
             DB::purge($connection);
         }
 
-        config(['auth.providers.users.model' => XotData::make()->getUserClass()]);
+        config(['auth.providers.users.model' => User::class]);
 
         $this->ensureUiSchema();
     }

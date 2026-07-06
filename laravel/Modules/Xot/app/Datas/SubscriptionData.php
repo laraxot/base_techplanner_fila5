@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Datas;
 
-use Illuminate\Database\Eloquent\Model;
 use Spatie\LaravelData\Data;
 
 /**
@@ -16,8 +15,8 @@ use Spatie\LaravelData\Data;
 final class SubscriptionData extends Data
 {
     /**
-     * @param  array<string, string|int>  $plans
-     * @param  array<int, class-string<Model>>  $allowedModels
+     * @param array<string, string|int>                                     $plans
+     * @param array<int, class-string<\Illuminate\Database\Eloquent\Model>> $allowedModels
      */
     public function __construct(
         public readonly bool $enable = false,
@@ -27,7 +26,8 @@ final class SubscriptionData extends Data
         public readonly array $allowedModels = [],
         public readonly bool $trialEnabled = true,
         public readonly int $trialDays = 14,
-    ) {}
+    ) {
+    }
 
     /**
      * Create a new instance of SubscriptionData with default values.

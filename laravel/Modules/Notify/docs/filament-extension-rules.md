@@ -295,7 +295,6 @@ Per verificare che tutte le classi seguano questa regola:
 
 ```bash
 find Modules -path "*/Filament/*/*.php" -type f -exec grep -l "extends.*Filament" {} \;
-find Modules -path "*/Filament/*/*.php" -type f -exec grep -l "extends.*Filament" {} \;
 ```
 
 Le pagine che violano questa regola devono essere immediatamente corrette per mantenere l'integrità dell'architettura.

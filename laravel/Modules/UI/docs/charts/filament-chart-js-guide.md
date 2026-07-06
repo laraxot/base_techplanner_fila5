@@ -98,10 +98,6 @@ protected function getOptions(): array
 ## 4. Professional Configuration (Standards 2026)
 
 To achieve a premium "SaaS" look, configure your `getOptions()` to control fonts, layouts, and tooltips.
-<<<<<<< HEAD
-=======
-See the **[LimeSurvey Professional Charts Guide](../../../Limesurvey/docs/professional-charts-and-pdfs.md)** for the detailed specification on:
->>>>>>> c001364 (.)
 See the **[LimeSurvey Professional Charts Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)** for the detailed specification on:
 -   Font consistency (Inter/Roboto).
 -   Legend positioning.
@@ -120,12 +116,5 @@ The architectural standard for Quaeris is **Spatie Laravel PDF** (a wrapper arou
 
 ---
 **See Also**:
-<<<<<<< HEAD
 -   [Dashboard Best Practices](../../../limesurvey/docs/dashboard-best-practices.md)
 -   [Professional Charts & PDF Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)
-=======
--   [Dashboard Best Practices](../../../Limesurvey/docs/dashboard-best-practices.md)
--   [Professional Charts & PDF Guide](../../../Limesurvey/docs/professional-charts-and-pdfs.md)
--   [Dashboard Best Practices](../../../limesurvey/docs/dashboard-best-practices.md)
--   [Professional Charts & PDF Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)
->>>>>>> c001364 (.)

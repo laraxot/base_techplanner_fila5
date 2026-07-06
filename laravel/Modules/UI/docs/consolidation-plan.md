@@ -77,10 +77,6 @@ Consolidare la documentazione rimuovendo duplicati e file obsoleti, mantenendo u
 - ✅ `phpstan-fixes.md` → Mantenere
 - ✅ `phpstan-fixes-summary.md` → Mantenere
 
-<<<<<<< HEAD
-=======
-**Nota**: File con date nei nomi (`phpstan-level-10-cleanup-2025-11-06.md`, `dry-kiss-analysis-2025-10-15.md`) dovrebbero essere spostati in `archive/` o consolidati.
->>>>>>> c001364 (.)
 **Nota**: File con date nei nomi (`phpstan-level-10-cleanup-[DATE].md`, `dry-kiss-analysis-[DATE].md`) dovrebbero essere spostati in `archive/` o consolidati.
 
 ### 7. VSCode Documentation
@@ -124,11 +120,6 @@ Consolidare la documentazione rimuovendo duplicati e file obsoleti, mantenendo u
 
 ## File con Date nei Nomi (da Spostare in Archive)
 
-<<<<<<< HEAD
-=======
-1. `dry-kiss-analysis-2025-10-15.md` → `archive/dry-kiss-analysis.md`
-2. `phpstan-level-10-cleanup-2025-11-06.md` → `archive/phpstan-level-10-cleanup.md`
->>>>>>> c001364 (.)
 1. `dry-kiss-analysis-[DATE].md` → `archive/dry-kiss-analysis.md`
 2. `phpstan-level-10-cleanup-[DATE].md` → `archive/phpstan-level-10-cleanup.md`
 3. `phpstan-fixes-gennaio-2025.md` → Consolidare in `phpstan-compliance.md`
@@ -190,13 +181,6 @@ Per ogni coppia di file duplicati:
 
 ---
 
-<<<<<<< HEAD
 **Data creazione**: [DATE]
 **Status**: Piano da implementare
 **Priorità**: Alta
-=======
-**Data creazione**: 2025-01-06
-**Data creazione**: [DATE]
-**Status**: Piano da implementare
-**Priorità**: Alta
->>>>>>> c001364 (.)

@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Spatie\Comments;
 
 use Illuminate\Support\Facades\Blade;
@@ -26,18 +24,11 @@ class CommentsServiceProvider extends PackageServiceProvider
             ->hasMigration('create_comments_tables');
     }
 
-    public function packageBooted(): void
+    public function packageBooted()
     {
         $this
             ->registerRoutes()
             ->registerBladeComponents();
-    }
-
-    public function registerBladeComponents(): self
-    {
-        Blade::component('comments::signed.signedLayout', 'comments::signed-layout');
-
-        return $this;
     }
 
     protected function registerRoutes(): self
@@ -59,6 +50,13 @@ class CommentsServiceProvider extends PackageServiceProvider
                 Route::post('comment-subscription/unsubscribe-all', [UnsubscribeFromAllNotificationsController::class, 'unsubscribeAll']);
             });
         });
+
+        return $this;
+    }
+
+    public function registerBladeComponents(): self
+    {
+        Blade::component('comments::signed.signedLayout', 'comments::signed-layout');
 
         return $this;
     }

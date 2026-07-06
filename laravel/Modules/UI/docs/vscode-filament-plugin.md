@@ -196,10 +196,6 @@ TextInput::make('full_name')
 ## Collegamenti
 - [Form Components](form-components.md)
 - [Naming Conventions](naming-conventions.md)
-<<<<<<< HEAD
-=======
-- [Translation System](../../Lang/docs/translation-system.md)
->>>>>>> c001364 (.)
 - [Translation System](../../lang/docs/translation-system.md)
 
 ## Vedi Anche
@@ -404,12 +400,6 @@ TextInput::make('full_name')
 ## Collegamenti
 - [Form Components](form-components.md)
 - [Naming Conventions](naming-conventions.md)
-<<<<<<< HEAD
-=======
-- [Translation System](../../Lang/project_docs/translation-system.md)
-- [Translation System](../../Lang/project_docs/translation-system.md)
-- [Translation System](../../Lang/project_docs/translation-system.md)
->>>>>>> c001364 (.)
 - [Translation System](../../lang/project_docs/translation-system.md)
 - [Translation System](../../lang/project_docs/translation-system.md)
 - [Translation System](../../lang/project_docs/translation-system.md)
@@ -419,8 +409,4 @@ TextInput::make('full_name')
 - [Development Tools](development-tools.md)
 - [Filament Documentation](https://filamentphp.com/docs)
 - [Filament Documentation](https://filamentphp.com/docs)
-<<<<<<< HEAD
 - [Filament Documentation](https://filamentphp.com/docs)
-=======
-- [Filament Documentation](https://filamentphp.com/docs)
->>>>>>> c001364 (.)

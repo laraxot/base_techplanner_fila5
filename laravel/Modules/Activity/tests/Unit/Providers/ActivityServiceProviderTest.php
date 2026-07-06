@@ -3,12 +3,11 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit\Providers;
-
 use Modules\Activity\Providers\ActivityServiceProvider;
 use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Activity\Tests\TestCase::class);
 
 test('activity service provider exposes expected metadata', function (): void {
     $provider = new ActivityServiceProvider(app());
@@ -18,10 +17,10 @@ test('activity service provider exposes expected metadata', function (): void {
     $name = $reflection->getProperty('name');
     $name->setAccessible(true);
 
-    $moduleDir = $reflection->getProperty('module_dir');
+    $moduleDir = $reflection->getProperty('moduleDir');
     $moduleDir->setAccessible(true);
 
-    $moduleNs = $reflection->getProperty('module_ns');
+    $moduleNs = $reflection->getProperty('moduleNs');
     $moduleNs->setAccessible(true);
 
     Assert::assertSame('Activity', $name->getValue($provider));

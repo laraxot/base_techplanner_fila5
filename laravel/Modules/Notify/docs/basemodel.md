@@ -23,7 +23,6 @@ class NotificationTemplate extends BaseModel {}
 
 ## Collegamenti
 - [../module_notify.md](../module_notify.md)
-- [../../Patient/docs/basemodel.md](../../Patient/docs/basemodel.md)
 - [../../Patient/docs/basemodel.md](../../patient/docs/basemodel.md)
 - Regola "evita override inutili" nei prompt e docs root.
 

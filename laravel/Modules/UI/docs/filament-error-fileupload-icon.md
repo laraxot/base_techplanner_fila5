@@ -22,14 +22,6 @@ Il metodo `icon()` **NON esiste** sul componente `Filament\Forms\Components\File
 
 ## Collegamenti tra versioni di filament-error-fileupload-icon.md
 * [filament-error-fileupload-icon.md](../../patient/docs/filament-error-fileupload-icon.md)
-<<<<<<< HEAD
-=======
-- [Errore e best practice modulo Patient](../../Patient/docs/filament-error-fileupload-icon.md)
-- [Tabella metodi supportati](filament-component-methods.md)
-
-## Collegamenti tra versioni di filament-error-fileupload-icon.md
-* [filament-error-fileupload-icon.md](../../Patient/docs/filament-error-fileupload-icon.md)
->>>>>>> c001364 (.)
 # Errore: Metodo `icon()` su FileUpload di Filament
 
 ## Descrizione
@@ -54,11 +46,3 @@ Il metodo `icon()` **NON esiste** sul componente `Filament\Forms\Components\File
 
 ## Collegamenti tra versioni di filament-error-fileupload-icon.md
 * [filament-error-fileupload-icon.md](../../patient/project_docs/filament-error-fileupload-icon.md)
-<<<<<<< HEAD
-=======
-- [Errore e best practice modulo Patient](../../Patient/project_docs/filament-error-fileupload-icon.md)
-- [Tabella metodi supportati](filament-component-methods.md)
-
-## Collegamenti tra versioni di filament-error-fileupload-icon.md
-* [filament-error-fileupload-icon.md](../../Patient/project_docs/filament-error-fileupload-icon.md)
->>>>>>> c001364 (.)

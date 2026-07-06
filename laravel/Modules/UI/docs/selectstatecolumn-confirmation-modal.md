@@ -34,10 +34,6 @@ Questo documento descrive l'implementazione di una modale di conferma con textar
 - Verificare i permessi dell'utente prima di consentire la transizione
 
 ## Documentazione Correlata
-<<<<<<< HEAD
-=======
-- [SelectStateColumn.md](./SelectStateColumn.md)
->>>>>>> c001364 (.)
 - [SelectStateColumn.md](./selectstatecolumn.md)
 - [Filament Modals Documentation](https://filamentphp.com/docs/3.x/panels/modals)
 - [State Management](./state-management.md)
@@ -90,10 +86,6 @@ Questo documento descrive l'implementazione di una modale di conferma con textar
 - Verificare i permessi dell'utente prima di consentire la transizione
 
 ## Documentazione Correlata
-<<<<<<< HEAD
-=======
-- [SelectStateColumn.md](./SelectStateColumn.md)
->>>>>>> c001364 (.)
 - [SelectStateColumn.md](./selectstatecolumn.md)
 - [Filament Modals Documentation](https://filamentphp.com/project_docs/3.x/panels/modals)
 - [Filament Modals Documentation](https://filamentphp.com/project_docs/3.x/panels/modals)
@@ -111,8 +103,4 @@ Verificare che:
 2. Il messaggio venga passato correttamente alla transizione
 3. La modale si chiuda in entrambi gli scenari
 4. Lo stato venga aggiornato correttamente nel database
-<<<<<<< HEAD
 5. Gli errori vengano gestiti in modo appropriato
-=======
-5. Gli errori vengano gestiti in modo appropriato
->>>>>>> c001364 (.)

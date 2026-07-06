@@ -28,6 +28,7 @@ use Override;
  */
 class SendNetfunSmsPage extends XotBasePage
 {
+    /** @var array<string, mixed>|null */
     public ?array $smsData = [];
 
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-device-phone-mobile';
@@ -148,6 +149,9 @@ class SendNetfunSmsPage extends XotBasePage
         }
     }
 
+    /**
+     * @return array<int, Action>
+     */
     protected function getSmsFormActions(): array
     {
         return [

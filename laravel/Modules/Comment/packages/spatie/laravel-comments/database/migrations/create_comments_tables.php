@@ -26,7 +26,7 @@ return new class extends Migration
             $this->nullableMorphs($table, 'commentator', 'commentator_reactions');
             $table->foreignId('comment_id')->references('id')->on('comments')->cascadeOnDelete();
 
-            if (in_array(Schema::getConnection()->getConfig('driver'), ['mysql', 'mariadb'], true)) {
+            if (Schema::getConnection()->getConfig('driver') === 'mysql') {
                 $table->string('reaction')->collation('utf8mb4_bin');
             } else {
                 $table->string('reaction');

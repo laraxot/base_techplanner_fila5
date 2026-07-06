@@ -46,8 +46,6 @@ Dopo un'analisi approfondita, è stato determinato che:
 2. **Eccezioni alle convenzioni generali**
    - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di
    - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di <nome progetto>
-   - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di
-   - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di <nome progetto>
    - Questa eccezione è documentata e intenzionale
 
 ## Convenzioni Corrette per il Modulo Notify

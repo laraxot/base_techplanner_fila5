@@ -15,9 +15,7 @@ class SaveTransAction
     use QueueableAction;
 
     /**
-     * Undocumented function.
-     *
-     * @param int|string|array<array-key, mixed>|Htmlable|null $data
+     * @param array<string, mixed>|int|string|Htmlable|null $data
      */
     public function execute(string $key, int|string|array|Htmlable|null $data): void
     {
@@ -58,8 +56,11 @@ class SaveTransAction
             throw new \Exception('Error in SaveTransAction');
         }
 
+        /** @var array<string, mixed> $saveData */
+        $saveData = $cont;
+
         app(SaveArrayAction::class)->execute(
-            data: $cont,
+            data: $saveData,
             filename: $filename,
         );
     }

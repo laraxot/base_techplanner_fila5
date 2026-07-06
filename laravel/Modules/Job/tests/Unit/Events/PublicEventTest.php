@@ -3,16 +3,14 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Events;
-
+use function Safe\class_uses;
 use Illuminate\Broadcasting\Channel;
 use Modules\Job\Events\PublicEvent;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-use function Safe\class_uses;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(\Modules\Job\Tests\TestCase::class);
 
 describe('PublicEvent', function () {
     it('implements ShouldBroadcast', function () {
@@ -30,7 +28,7 @@ describe('PublicEvent', function () {
     });
 
     it('has color property', function () {
-        $event = new PublicEvent();
+        $event = new PublicEvent;
 
         Assert::assertSame('black', $event->color);
     });

@@ -20,9 +20,8 @@ class ResetComponent extends Component
 
     /**
      * Summary of emailSentMessage.
-     *
-     * @var bool|string|array<int, string>
      */
+    /** @var array<string, mixed>|bool|string */
     public bool|string|array $emailSentMessage = false;
 
     public function sendResetPasswordLink(): void
@@ -31,7 +30,7 @@ class ResetComponent extends Component
 
         $response = Password::broker()->sendResetLink(['email' => $this->email]);
 
-        if ($response === Password::RESET_LINK_SENT) {
+        if (Password::RESET_LINK_SENT === $response) {
             $message = trans($response);
             if (is_array($message)) {
                 $this->emailSentMessage = implode(' ', array_map(

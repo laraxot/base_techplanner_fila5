@@ -456,9 +456,6 @@ class ContactRequest extends FormRequest
 
 ## Riferimenti
 
-- [AddressItemEnum Pattern](../Geo/docs/addressitemenum-migration-pattern.md)
-- [XotBaseMigration Documentation](../../Xot/docs/migration-patterns.md)
-- [Filament Integration](../../docs/filament-integration.md)
 - [AddressItemEnum Pattern](../geo/docs/addressitemenum-migration-pattern.md)
 - [XotBaseMigration Documentation](../../xot/docs/migration-patterns.md)
 - [Filament Integration](../../../docs/filament-integration.md)

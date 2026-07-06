@@ -243,7 +243,6 @@ public function sendReminder(Appointment $appointment)
         $appointment->patient->notify(
             new AppointmentReminderNotification(
                 appointmentDate: $appointment->date,
-                appointmentDate: $appointment->date,
                 doctorName: $appointment->doctor->name,
                 location: $appointment->location,
                 notes: $appointment->notes

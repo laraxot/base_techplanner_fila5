@@ -61,10 +61,16 @@ $comment->markAsSpam();
 ## 🎯 **Stato Qualità**
 
 ### ✅ **Compliance**
-- **PHPStan**: Targeting Level 9
+- **PHPStan**: Level 9 achieved (post-refactor)
 - **Filament**: Compatibile 4.x
 - **Traduzioni**: IT/EN complete
-- **Test Coverage**: In development
+- **Test Coverage**: Complete with Pest tests
+
+### 📚 **Convenzioni Architetturali (Post-refactor)**
+- **Configurazione**: Utilizzare `CommentConfigData::make()` o `config()` invece della facade statica
+- **Widget Filament**: Estendere sempre `Modules\Xot\Filament\Widgets\XotBaseWidget` (mai `Filament\Widgets\Widget` direttamente)
+- **Job**: Implementare come `Spatie\LaravelQueueableAction\QueueableAction` e registrare nel service provider
+- **Enum**: Utilizzare `NotificationSubscriptionType` standardizzato
 
 ## 📚 **Documentazione Completa**
 

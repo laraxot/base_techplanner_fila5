@@ -133,8 +133,8 @@ public function boot(): void
 
 - [Laravel Module Development](https://nwidart.com/laravel-modules/v6/introduction) 
 ## Collegamenti tra versioni di xotbaseserviceprovider.md
-* [xotbaseserviceprovider.md](../../../Xot/docs/providers/xotbaseserviceprovider.md)
 * [xotbaseserviceprovider.md](../../../xot/docs/providers/xotbaseserviceprovider.md)
 
 
 ---
+

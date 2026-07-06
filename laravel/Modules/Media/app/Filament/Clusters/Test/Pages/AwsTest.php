@@ -14,7 +14,6 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Actions;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Modules\Media\Filament\Clusters\Test;
 use Modules\Xot\Filament\Pages\XotBasePage;
@@ -43,7 +42,7 @@ class AwsTest extends XotBasePage
     ];
 
     /**
-     * @return array<int, Component>
+     * @return array<int, \Filament\Schemas\Components\Component>
      */
     protected function getS3TestSchema(): array
     {
@@ -74,7 +73,7 @@ class AwsTest extends XotBasePage
     }
 
     /**
-     * @return array<int, Component>
+     * @return array<int, \Filament\Schemas\Components\Component>
      */
     protected function getCloudFrontTestSchema(): array
     {
@@ -95,7 +94,7 @@ class AwsTest extends XotBasePage
     }
 
     /**
-     * @return array<int, Component>
+     * @return array<int, \Filament\Schemas\Components\Component>
      */
     protected function getIamTestSchema(): array
     {
@@ -116,7 +115,7 @@ class AwsTest extends XotBasePage
     }
 
     /**
-     * @return array<int, Component>
+     * @return array<int, \Filament\Schemas\Components\Component>
      */
     protected function getDiagnosticsSchema(): array
     {

@@ -4,37 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\AI\Tests\Unit\Services;
 
-use Modules\AI\Services\AIService;
-use Tests\TestCase;
+use Modules\AI\Actions\CompletionAction;
+use Modules\AI\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-/**
- * Test suite for AIService
- *
- * @TODO: Implement proper tests for actual AIService methods:
- * - classifyTicket()
- * - suggestSolutions()
- * - analyzeSentiment()
- * - predictPriority()
- * - optimizeRouting()
- * - generateAutoResponse()
- * - analyzePatterns()
- * - suggestImprovements()
- */
-class AIServiceTest extends TestCase
-{
-    protected AIService $service;
+uses(TestCase::class);
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->service = new AIService;
-    }
+beforeEach(function (): void {
+    /** @var TestCase $this */
+    $this->action = new CompletionAction;
+});
 
-    /**
-     * Placeholder test - AIService needs proper implementation
-     */
-    public function test_service_can_be_instantiated(): void
-    {
-        $this->assertInstanceOf(AIService::class, $this->service);
-    }
-}
+describe('CompletionAction', function (): void {
+    test('_action_can_be_instantiated', function (): void {
+        /** @var TestCase $this */
+        Assert::assertInstanceOf(CompletionAction::class, $this->action);
+    });
+});
