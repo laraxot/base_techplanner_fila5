@@ -1,10 +1,13 @@
 # PHPStan Level 10 Compliance Status
 
-**Last Updated**: 2025-12-10  
-**Status**: ✅ FULLY COMPLIANT (0 errors)
+**Last Updated**: 2026-07-06
+
+**Status**: ✅ FULLY COMPLIANT (0 errors, level max)
+
+Baseline sessione 2026-07-06: 254 → 0, in una passata condivisa con Employee/Notify/User/Xot. TechPlanner era, insieme a Employee, l'unico modulo la cui `tests/TestCase.php` estendeva direttamente `Illuminate\Foundation\Testing\TestCase` invece di `Modules\Xot\Tests\XotBaseTestCase`; il resto del batch di errori è stato risolto in parallelo (vedi `Modules/Employee/docs/phpstan-compliance-status.md` per l'analisi completa della causa radice condivisa).
 
 ## Summary
-The TechPlanner module is now fully compliant with PHPStan Level 10 analysis. All static analysis errors have been resolved, ensuring type safety and code quality.
+The TechPlanner module is fully compliant with PHPStan Level 10 analysis. All static analysis errors have been resolved, ensuring type safety and code quality.
 
 ## Fixed Issues
 

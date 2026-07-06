@@ -3,7 +3,7 @@ title: "Notify — test doubles e helper PHPStan"
 type: concept
 tags: [notify, phpstan, pest, testing, doubles]
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-07-06
 qmd: "Notify NotificationManager test doubles trait PHPStan Pest mockService"
 issues:
   - "https://github.com/laraxot/module_fixcity_fila5/issues/52"
@@ -73,3 +73,9 @@ cd laravel
 ./vendor/bin/phpstan analyse Modules/Notify/tests
 ./vendor/bin/pest Modules/Notify/tests
 ```
+
+Aggiornamento 2026-07-06:
+
+- `NetfunSendActionTest` usa varianti Safe e restringe i tipi reflection prima di leggere nomi/file.
+- `NotificationManagerTest` usa recipient reali Eloquent nei punti in cui il servizio richiede `Model`.
+- PHPStan globale su `Modules` e tornato a zero errori; PHPMD resta bloccato dall'assenza locale di `tools/phpmd.phar`.

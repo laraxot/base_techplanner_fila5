@@ -137,3 +137,9 @@ Tutti i BaseModel dei moduli devono:
 **Status**: ✅ COMPLETATO  
 **Conformità**: ✅ Laraxot + Filament 4 + PHP 8.3 + PHPStan Max  
 **Prossimo Modulo**: Rating (6 errori)
+
+## Aggiornamento verificato (2026-07-06)
+
+**Nota di correzione**: questo documento affermava che `HasXotFactory` "NON è generico". Non è più vero — nella versione attuale del trait (`Modules/Xot/app/Models/Traits/HasXotFactory.php`) è dichiarato `/** @template-covariant TFactory of Factory */ trait HasXotFactory`. Se un `BaseModel` dichiara `/** @use HasXotFactory<TFactory> */`, oggi è corretto, non un errore.
+
+Ri-verificato con `phpstan analyse Modules/Comment --memory-limit=-1`: **0 errori** (10 → 0 in questa sessione). Il problema reale trovato oggi era diverso da quello descritto sopra: due coppie di file duplicati per differenza di maiuscole/minuscole nel path (`tests/fixtures/concerns/` vs `tests/Fixtures/Concerns/`, `tests/support/` vs `tests/Support/`), tipico di un checkout fatto in origine su filesystem case-insensitive — rimossi i duplicati minuscoli, tenute le versioni PascalCase effettivamente importate dal codice. Rimosso anche un test (`InteractsWithCommentsContractTest.php`) che verificava un trait (`Modules\Comment\Models\Concerns\InteractsWithComments`) disattivato deliberatamente (esiste solo come `.bak`, nessun uso in produzione) — il test andava rimosso, non il trait riattivato. Dettagli completi: `docs/chat/phpstan-modules-progress-2026-07-06-pm.md` (root del repo).

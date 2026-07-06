@@ -17,7 +17,7 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
+    /* @var \Modules\Xot\Tests\TestCase $this */
     $this->action = app(SavePhpArrayAction::class);
     $this->tempDir = sys_get_temp_dir().DIRECTORY_SEPARATOR.'pest_test_'.uniqid();
     if (! file_exists($this->tempDir)) {

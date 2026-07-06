@@ -13,7 +13,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
+    /* @var \Modules\Xot\Tests\TestCase $this */
     $this->action = new GetPdfContentByRecordAction();
 });
 
@@ -77,8 +77,7 @@ describe('Get Pdf Content By Record Action', function (): void {
     test('it generates enhanced filename for performance models', function (): void {
         // Arrange - Create a mock model with performance fields
         /** @var TestCase $this */
-        $record = new class() extends Model
-        {
+        $record = new class extends Model {
             protected $table = 'test_performance';
 
             protected $fillable = ['id', 'matr', 'cognome', 'nome'];
@@ -147,7 +146,7 @@ describe('Get Pdf Content By Record Action', function (): void {
     test('it throws exception for empty html content', function (): void {
         // This test would require mocking view rendering to return empty content
         // Implementation depends on testing infrastructure setup
-        /** @var TestCase $this */
+        /* @var \Modules\Xot\Tests\TestCase $this */
         $this->skipTest('Requires view mocking infrastructure');
     });
 
@@ -179,14 +178,14 @@ describe('Get Pdf Content By Record Action', function (): void {
     test('it logs errors when pdf generation fails', function (): void {
         // This test would require mocking HTML2PDF to throw exceptions
         // Implementation depends on testing infrastructure setup
-        /** @var TestCase $this */
+        /* @var \Modules\Xot\Tests\TestCase $this */
         $this->skipTest('Requires HTML2PDF mocking infrastructure');
     });
 
     test('it returns valid pdf content when view exists', function (): void {
         // This test would require creating actual test views
         // Implementation depends on test view infrastructure
-        /** @var TestCase $this */
+        /* @var \Modules\Xot\Tests\TestCase $this */
         $this->skipTest('Requires test view infrastructure');
     });
 });

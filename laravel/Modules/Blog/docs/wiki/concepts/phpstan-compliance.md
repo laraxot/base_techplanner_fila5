@@ -3,7 +3,7 @@ title: "Blog Module - PHPStan Type Compliance"
 type: concept
 tags: [blog, phpstan, types, compliance, quality, static-analysis]
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-07-06
 related:
   - ../../../../Themes/Sixteen/docs/wiki/concepts/phpstan-compliance.md
   - ../../../../../docs/wiki/concepts/phpstan-level-max-compliance.md
@@ -120,6 +120,15 @@ vendor/bin/pest laravel/Modules/Blog/tests --parallel
 - [x] Tests pass
 - [x] CI/CD validates on push
 
+## Aggiornamento 2026-07-06
+
+Trovata e rimossa una duplicazione: `app/tests/Unit/SumTest.php` (posizione
+sbagliata, test sotto `app/` invece di `tests/`) era un duplicato
+byte-identico di `tests/Unit/SumTest.php`, entrambi dichiaravano la stessa
+`function sum()` globale — causava un conflitto quando si analizzava tutto
+`Modules/` insieme. Rimossa la copia in `app/tests/`. Ri-verificato:
+`./vendor/bin/phpstan analyse Modules/Blog` → `[OK] No errors`.
+
 ## Next Review
 
 **Scheduled**: 2026-06-17
@@ -127,5 +136,5 @@ vendor/bin/pest laravel/Modules/Blog/tests --parallel
 ---
 
 **Maintainer**: Dev Agent 3  
-**Last Updated**: 2026-06-10  
+**Last Updated**: 2026-07-06  
 **Status**: GREEN

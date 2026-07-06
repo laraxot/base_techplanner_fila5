@@ -79,3 +79,9 @@ cd /var/www/_bases/base_fixcity_fila5_mono/laravel
 
 **Modulo Blog - PHPStan Level 10 Compliant!** 🎉
 
+## Aggiornamento verificato (2026-07-06)
+
+Il percorso `cd /var/www/_bases/base_fixcity_fila5_mono/laravel` sopra è copiato da un altro progetto — il path corretto in questo repo è `cd /var/www/_bases/base_techplanner_fila5/laravel`.
+
+Ri-verificato con `phpstan analyse Modules/Blog --memory-limit=-1`: **0 errori**, confermato. Unico fix necessario in questa sessione: `Modules/Blog/app/tests/Unit/SumTest.php` usava `expect($result)->toBe(3)`, che sotto `level: max` viola la regola sulle classi `@internal` (`Pest\Mixins\Expectation`, `method.internalClass`) perché il file non è nel namespace `Pest`. Convertito in `PHPUnit\Framework\Assert::assertSame(3, $result)`. Nessuna modifica alla logica del test. Dettagli: `docs/chat/phpstan-modules-progress-2026-07-06-pm.md` (root del repo).
+
