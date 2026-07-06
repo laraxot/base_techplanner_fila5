@@ -30,7 +30,6 @@ parameters:
         - ./*/vendor/*
         - ./*/build/*
         - ./*/docs/*
-        - ./*/tests/*
         - ./*/packages/*
         - ./*/phpinsights.php
         - ./*/rector.php
