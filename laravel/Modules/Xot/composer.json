@@ -105,7 +105,8 @@
             "Coolsam\\FilamentModules\\": "packages/coolsam/panel-modules/src/"
         },
         "files": [
-            "helpers/Helper.php"
+            "helpers/Helper.php",
+            "helpers/xot.seed.helper.php"
         ]
     },
     "autoload-dev": {

@@ -1,3 +1,21 @@
+---
+title: "Themes Wiki Log"
+type: log
+tags: [themes, wiki, second-brain, log]
+created: "2026-04-28"
+updated: "2026-07-06"
+qmd: "themes wiki log second brain module root hygiene"
+issues:
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/39"
+discussions:
+  - "https://github.com/laraxot/base_techplanner_fila5/discussions/12"
+---
+
+## [2026-07-06] module-root hygiene | tema non impattato
+
+- Nuova regola root: `docs/wiki/rules/module-root-cleanup-rules.md` governa le root dei moduli (cartelle lowercase, no `.txt`, solo `README.md` come markdown root).
+- Per i temi resta valida la disciplina docs/README e no `.txt` root; nessuna cartella tema e stata modificata in questa passata.
+
 ## [2026-07-06] phpstan Modules | nessun impatto sui temi
 
 - PHPStan globale su `Modules` e stato riportato a zero errori senza modificare temi o asset frontoffice.

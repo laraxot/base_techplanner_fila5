@@ -3,11 +3,14 @@ title: "Module Root Cleanup Rules"
 type: rule
 tags: [module, structure, cleanup, naming]
 created: 2026-01-21
-updated: 2026-07-01
+updated: 2026-07-06
 qmd: module root no txt files no uppercase folders only readme nwidart sacred manifest never delete
-issues: []
-discussions: []
+issues:
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/39"
+discussions:
+  - "https://github.com/laraxot/base_techplanner_fila5/discussions/12"
 related:
+  - ../../../../../../docs/wiki/rules/module-root-cleanup-rules.md
   - ../../../../../../docs/wiki/concepts/nwidart-module-skeleton-contract.md
   - ../../../../../../docs/wiki/memories/nwidart-sacred-manifests-incident.md
 ---
@@ -57,6 +60,10 @@ find . -maxdepth 1 -name "*.md" -type f | grep -v README.md
 # 3. Trova cartelle con maiuscoli nella root
 find . -maxdepth 1 -type d | grep -E "[A-Z]"
 ```
+
+## Stato Xot 2026-07-06
+
+Le cartelle `Datas/`, `_docs/`, `claude-code-bmad-skills/`, `Filament/`, `Providers/` non esistono nella root di `Modules/Xot`. La root Xot contiene solo `README.md` come markdown e nessun `.txt`.
 
 ## Canon
 

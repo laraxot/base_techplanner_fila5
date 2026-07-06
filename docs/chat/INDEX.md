@@ -55,6 +55,8 @@ Canon: [multi-agent-coordination-discipline.md](../wiki/how-to/multi-agent-coord
 | 2026-07-06 | [phpstan-modules-progress-2026-07-06-pm.md](./phpstan-modules-progress-2026-07-06-pm.md) | Modules/ portato a 0 errori PHPStan (lavoro convergente multi-agente); docs di modulo aggiornati con root cause reali | [#34](https://github.com/laraxot/base_techplanner_fila5/issues/34) |
 | 2026-07-06 | [second-brain-qmd-cache-bug-2026-07-06.md](./second-brain-qmd-cache-bug-2026-07-06.md) | Bug wrapper qmd **risolto** (cache vuota → indice reale), embedding vettoriali in corso | — |
 | 2026-07-06 | [phpstan-collision-bugs-round-2026-07-06.md](./phpstan-collision-bugs-round-2026-07-06.md) | Round bug reali da collisione multi-agente (namespace corrotto, funzione globale duplicata, merge marker, @var fittizio) → 0 errori riconfermato | [#34](https://github.com/laraxot/base_techplanner_fila5/issues/34) |
+| 2026-07-06 | [phpstan-modules-progress-2026-07-06-pm.md](./phpstan-modules-progress-2026-07-06-pm.md) (append serale) | Pulizia root moduli/temi: cartelle maiuscole, `.txt`, `.md` extra rimossi (grande convergenza multi-agente); `Themes/Two/Resources/` flaggato, non toccato (referenziato da Vite) | — |
+| 2026-07-06 | [phpstan-modules-zero-confirmed-and-phpmd-fix-2026-07-06.md](./phpstan-modules-zero-confirmed-and-phpmd-fix-2026-07-06.md) | Riconferma indipendente 0 errori (cache pulita, 2x); fix `tools/phpmd.sh` (phpmd globale via phive, sbloccava Codex) | [#34](https://github.com/laraxot/base_techplanner_fila5/issues/34) |
 
 ## Sessioni archivio
 

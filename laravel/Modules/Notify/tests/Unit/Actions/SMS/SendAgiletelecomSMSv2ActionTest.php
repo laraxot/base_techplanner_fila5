@@ -30,8 +30,12 @@ describe('SendAgiletelecomSMSv2Action', function () {
         $reflection = new \ReflectionClass(new SendAgiletelecomSMSv2Action);
         $method = $reflection->getMethod('execute');
         $params = $method->getParameters();
+        $type = $params[0]->getType();
 
-        assertReflectionTypeName($params[0]->getType(), SmsData::class);
+        /** @phpstan-ignore method.internalClass */
+        expect($type)->toBeInstanceOf(\ReflectionNamedType::class);
+        /** @phpstan-ignore method.internalClass */
+        expect($type instanceof \ReflectionNamedType ? $type->getName() : '')->toBe(SmsData::class);
     });
 
     it('execute returns array', function () {
@@ -39,7 +43,10 @@ describe('SendAgiletelecomSMSv2Action', function () {
         $method = $reflection->getMethod('execute');
         $returnType = $method->getReturnType();
 
-        assertReflectionTypeName($returnType, 'array');
+        /** @phpstan-ignore method.internalClass */
+        expect($returnType)->toBeInstanceOf(\ReflectionNamedType::class);
+        /** @phpstan-ignore method.internalClass */
+        expect($returnType instanceof \ReflectionNamedType ? $returnType->getName() : '')->toBe('array');
     });
 
     it('uses strict types', function () {

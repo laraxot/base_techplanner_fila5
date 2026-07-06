@@ -120,3 +120,24 @@ Ho fatto un controllo proattivo su tutto `Modules/tests/**/*.php` cercando altre
 Trovate anche due file (`Modules/Xot/tests/PestStubs.php` e `Modules/Xot/tests/Support/PestFunctionBridge.php`) che ridichiarano `it/test/describe/beforeEach/afterEach/uses/expect/skip` come funzioni globali proprie — potenzialmente pericolosissimo se mai caricati insieme o insieme alle funzioni reali di Pest. Verificato che **non sono referenziati** in nessun `composer.json`/`phpstan.neon` di questo repo (solo `Modules/Gdpr/tests/PestStubs.php`, file diverso, è referenziato) quindi non causano collisioni attive ora. Non toccati: fanno parte del refactor "Xot Pest bridge" in corso da un altro agente in questa stessa sessione — da monitorare quando quel lavoro converge, perché se uno di questi due file venisse mai aggiunto a un `autoload-dev.files` o `bootstrapFiles`, romperebbe l'esecuzione reale dei test in tutto il progetto.
 
 — Claude (`claude-sonnet-5`)
+
+## Pulizia root moduli/temi (cartelle maiuscole, .txt, .md extra) — 2026-07-06 sera
+
+Regola ricordata dall'utente: root dei moduli senza cartelle con maiuscole (a parte le convenzionali `app/`, `config/`, ecc. già minuscole), niente `.txt`, solo `README.md` come `.md`. Grande convergenza multi-agente: la maggior parte del lavoro (centinaia di file `.txt`/`.md` sparsi in Xot, Activity, Cms, Job, Notify, UI, User, spostati in `docs/` o rimossi) è stata fatta da altri agenti in parallelo mentre verificavo. Mio contributo diretto:
+
+- `Modules/Gdpr/Enums/ConsentType.php`: rimosso (non autoloadabile, fuori da `app/`; conteneva codice con blocco di commento non chiuso correttamente/rotto; `app/Enums/ConsentType.php` è la versione reale e funzionante).
+- `Modules/UI/Config/` (config.php, laravel-localization.php, laravellocalization.php): rimossa intera cartella, duplicati byte-identici di `Modules/UI/config/` (minuscolo).
+- `Modules/Activity/.md`: file vuoto (0 byte), rimosso.
+- `Modules/Cms/.docs_directory_violation_reminder.md`: duplicato quasi identico (una riga di differenza, una data) di `.docs-directory-violation-reminder.md` — tenuto quest'ultimo, rimosso l'altro.
+- `Modules/Activity/CHANGELOG.md`, `Modules/AI/CHANGELOG.md`, `Modules/Gdpr/CHANGELOG.md`: placeholder triviali ("generato da semantic-release"), rimossi dalla root — il changelog reale vive già in `docs/CHANGELOG.md` per ciascun modulo.
+- `Modules/Activity/docs/changelog.md`, `Modules/Gdpr/docs/changelog.md`: duplicati case-only di `docs/CHANGELOG.md` (stesso contenuto), rimossi.
+
+**Verificato con grep incrociato su tutto il progetto prima di ogni rimozione** (lezione da un errore precedente con `GeoTrait.php`): tutti i file sopra erano genuinamente non referenziati o duplicati byte-identici, tranne uno caso rilevante:
+
+**`Themes/Two/Resources/` (maiuscolo) — NON toccato**: sembrava un duplicato morto di `Themes/Two/resources/` (minuscolo, molto più ricco di contenuto), ma un grep ha rivelato che `@vite('Resources/js/app.js', '../laravel/Themes/Two/Resources/dist')` nei blade layout (sia nella versione minuscola che maiuscola dei file) referenzia esplicitamente il path maiuscolo per la pipeline Vite. Rimuoverlo senza controllare `vite.config.js` del tema rischierebbe di rompere la build assets. Richiede intervento dedicato, fuori scope per una rimozione rapida.
+
+Verificato dopo ogni rimozione: `phpstan analyse` sul modulo toccato → 0 errori in tutti i casi.
+
+`Modules/docs/` e `Themes/docs/` non sono moduli/temi (nessun `module.json`/`composer.json`/`theme.json`) — cartelle di documentazione condivisa, fuori scope per questa regola.
+
+— Claude (`claude-sonnet-5`)
