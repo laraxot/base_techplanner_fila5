@@ -10,34 +10,34 @@ use function Safe\glob;
 
 uses(\Modules\User\Tests\TestCase::class);
 
-/** @return list<string> */
-function getUserMigrationFiles(): array
-{
+/** @var Closure(): list<string> $migrationFiles */
+$migrationFiles = static function (): array {
     $basePath = dirname(__DIR__, 4).'/database/migrations';
     $files = glob($basePath.'/*.php');
 
     sort($files);
 
-    /** @var list<string> $files */
     return $files;
-}
+};
 
-it('does not contain merge conflict markers in user migrations', function (): void {
-    foreach (getUserMigrationFiles() as $migrationFile) {
+it('does not contain merge conflict markers in user migrations', function () use ($migrationFiles): void {
+    foreach ($migrationFiles() as $migrationFile) {
         $contents = file_get_contents($migrationFile);
 
-        Assert::assertNotFalse($contents, "Could not read {$migrationFile}");
         Assert::assertStringNotContainsString('<<<<<<<', $contents, "Merge conflict marker in {$migrationFile}");
     }
 });
 
-it('has valid php syntax in user migrations', function (): void {
-    foreach (getUserMigrationFiles() as $migrationFile) {
+it('has valid php syntax in user migrations', function () use ($migrationFiles): void {
+    foreach ($migrationFiles() as $migrationFile) {
         $output = [];
         $exitCode = 0;
 
         exec('php -l '.escapeshellarg($migrationFile), $output, $exitCode);
-        /** @var list<string> $output */
+        if (! is_array($output)) {
+            $output = [];
+        }
+
         $outputLines = array_map(static fn (mixed $line): string => (string) $line, $output);
         Assert::assertSame(0, $exitCode, implode(PHP_EOL, $outputLines));
     }

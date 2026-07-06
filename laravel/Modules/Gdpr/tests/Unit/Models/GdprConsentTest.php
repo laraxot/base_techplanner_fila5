@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Gdpr\Tests\Unit\Models;
 
+use Illuminate\Support\Facades\DB;
 use Modules\Gdpr\Database\Factories\ConsentFactory;
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use Throwable;
 
 uses(TestCase::class);
 
@@ -20,25 +22,7 @@ beforeEach(function () {
     // Skip if database not available
     try {
         DB::connection()->getPdo();
-    } catch (Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
-
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        DB::connection()->getPdo();
-    } catch (Exception $e) {
-        $this->markTestSkipped('Database not available: '.$e->getMessage());
-    }
-});
-
-beforeEach(function () {
-    // Skip if database not available
-    try {
-        DB::connection()->getPdo();
-    } catch (Exception $e) {
+    } catch (Throwable $e) {
         $this->markTestSkipped('Database not available: '.$e->getMessage());
     }
 });

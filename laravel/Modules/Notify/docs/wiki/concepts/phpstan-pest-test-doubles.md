@@ -78,4 +78,5 @@ Aggiornamento 2026-07-06:
 
 - `NetfunSendActionTest` usa varianti Safe e restringe i tipi reflection prima di leggere nomi/file.
 - `NotificationManagerTest` usa recipient reali Eloquent nei punti in cui il servizio richiede `Model`.
+- I test helper globali condivisi tra moduli devono essere idempotenti (`function_exists`) quando PHPStan carica piu suite nello stesso processo.
 - PHPStan globale su `Modules` e tornato a zero errori; PHPMD resta bloccato dall'assenza locale di `tools/phpmd.phar`.
