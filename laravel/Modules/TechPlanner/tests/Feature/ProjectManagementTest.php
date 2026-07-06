@@ -5,8 +5,10 @@ declare(strict_types=1);
 namespace Modules\TechPlanner\Tests\Feature;
 
 use Carbon\Carbon;
+use Modules\TechPlanner\Tests\TestCase;
 
 beforeEach(function () {
+    /** @var TestCase $this */
     $this->project = createProject([
         'name' => 'Test Project',
         'status' => 'active',
@@ -32,6 +34,7 @@ describe('Project Management Business Logic', function () {
     });
 
     test('project can have multiple tasks', function () {
+        /** @var TestCase $this */
         $task1 = createTask([
             'project_id' => $this->project->id,
             'name' => 'Task 1',
@@ -53,6 +56,7 @@ describe('Project Management Business Logic', function () {
     });
 
     test('project calculates completion percentage correctly', function () {
+        /** @var TestCase $this */
         createTask([
             'project_id' => $this->project->id,
             'name' => 'Completed Task',
@@ -70,6 +74,7 @@ describe('Project Management Business Logic', function () {
     });
 
     test('project can be assigned resources', function () {
+        /** @var TestCase $this */
         $resource = createResource([
             'name' => 'Developer',
             'type' => 'human',
@@ -100,6 +105,7 @@ describe('Project Management Business Logic', function () {
     });
 
     test('project can calculate total estimated hours', function () {
+        /** @var TestCase $this */
         createTask([
             'project_id' => $this->project->id,
             'estimated_hours' => 20,
@@ -115,6 +121,7 @@ describe('Project Management Business Logic', function () {
     });
 
     test('project status transitions are valid', function () {
+        /** @var TestCase $this */
         expect($this->project->canTransitionTo('in_progress'))->toBeTrue();
         expect($this->project->canTransitionTo('completed'))->toBeFalse(); // Can't skip to completed
 
@@ -126,6 +133,7 @@ describe('Project Management Business Logic', function () {
 
 describe('Task Management', function () {
     test('task belongs to project', function () {
+        /** @var TestCase $this */
         $task = createTask([
             'project_id' => $this->project->id,
             'name' => 'Test Task',
@@ -135,6 +143,7 @@ describe('Task Management', function () {
     });
 
     test('task can have dependencies', function () {
+        /** @var TestCase $this */
         $task1 = createTask([
             'project_id' => $this->project->id,
             'name' => 'First Task',
@@ -151,6 +160,7 @@ describe('Task Management', function () {
     });
 
     test('task calculates progress correctly', function () {
+        /** @var TestCase $this */
         $task = createTask([
             'project_id' => $this->project->id,
             'estimated_hours' => 10,
@@ -164,6 +174,7 @@ describe('Task Management', function () {
 
 describe('Resource Management', function () {
     test('resource can be allocated to multiple projects', function () {
+        /** @var TestCase $this */
         $resource = createResource([
             'name' => 'Senior Developer',
             'type' => 'human',
@@ -183,6 +194,7 @@ describe('Resource Management', function () {
     });
 
     test('resource availability is calculated correctly', function () {
+        /** @var TestCase $this */
         $resource = createResource([
             'name' => 'Designer',
             'availability' => 100,
@@ -198,6 +210,7 @@ describe('Resource Management', function () {
 
 describe('Project Analytics', function () {
     test('project tracks time accurately', function () {
+        /** @var TestCase $this */
         $task = createTask([
             'project_id' => $this->project->id,
             'estimated_hours' => 20,
@@ -208,6 +221,7 @@ describe('Project Analytics', function () {
     });
 
     test('project calculates critical path', function () {
+        /** @var TestCase $this */
         $task1 = createTask([
             'project_id' => $this->project->id,
             'name' => 'Critical Task 1',

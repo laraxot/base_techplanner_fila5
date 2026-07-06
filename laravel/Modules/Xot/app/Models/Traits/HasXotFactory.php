@@ -20,13 +20,10 @@ trait HasXotFactory
     /**
      * Create a new factory instance for the model.
      *
-     * @return TFactory
+     * @return Factory<covariant Model>
      */
-    protected static function newFactory()
+    protected static function newFactory(): Factory
     {
-        /** @var TFactory $factory */
-        $factory = app(GetFactoryAction::class)->execute(static::class);
-
-        return $factory;
+        return app(GetFactoryAction::class)->execute(static::class);
     }
 }

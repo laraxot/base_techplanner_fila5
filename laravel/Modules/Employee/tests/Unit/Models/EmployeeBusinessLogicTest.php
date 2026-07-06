@@ -5,8 +5,12 @@ declare(strict_types=1);
 namespace Modules\Employee\Tests\Unit\Models;
 
 use Carbon\Carbon;
+use Modules\Employee\Models\Employee;
 use Modules\Employee\Models\User;
 use Modules\Employee\Models\WorkHour;
+use Modules\Employee\Tests\TestCase;
+
+uses(TestCase::class);
 
 beforeEach(function () {
     $this->employee = createEmployee([
@@ -32,7 +36,7 @@ beforeEach(function () {
 
 describe('Employee Model Business Logic', function () {
     test('employee can be created with required data', function () {
-        expect($this->employee)->toBeEmployee();
+        expect($this->employee)->toBeInstanceOf(Employee::class);
         expect($this->employee->employee_code)->toBe('EMP001');
         expect($this->employee->status)->toBe('active');
     });

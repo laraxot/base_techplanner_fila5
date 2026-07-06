@@ -1,12 +1,11 @@
 <?php
 
 declare(strict_types=1);
-use Tests\TestCase;
 
-uses(TestCase::class);
+uses(Tests\TestCase::class);
 
 test('cta ticket block renders with defaults', function (): void {
-    /** @var TestCase $this */
+    /** @var Tests\TestCase $this */
     $view = $this->view('pub_theme::components.blocks.cta.ticket', [
         'cta' => [],
     ]);
@@ -17,7 +16,7 @@ test('cta ticket block renders with defaults', function (): void {
 });
 
 test('cta ticket block renders custom payload', function (): void {
-    /** @var TestCase $this */
+    /** @var Tests\TestCase $this */
     $view = $this->view('pub_theme::components.blocks.cta.ticket', [
         'cta' => [
             'title' => 'Custom title',

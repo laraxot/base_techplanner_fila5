@@ -2,17 +2,11 @@
 
 declare(strict_types=1);
 
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Modules\Employee\Models\Employee;
 use Modules\Employee\Models\WorkHour;
-use Modules\Employee\Tests\TestCase;
 
-// ✅ CONFIGURAZIONE CORRETTA PEST + DATABASE TRANSACTIONS
-uses(TestCase::class, DatabaseTransactions::class)->in('Feature', 'Unit', 'Integration');
-
-expect()->extend('toBeEmployee', fn () => $this->toBeInstanceOf(Employee::class));
-
-expect()->extend('toBeWorkHour', fn () => $this->toBeInstanceOf(WorkHour::class));
+// Ogni file test dichiara uses(\Modules\Employee\Tests\TestCase::class, ...) singolarmente.
+// Vietato uses()->in() qui (PHPStan method.internalClass / undefined $this in Pest extension).
 
 function createEmployee(array $attributes = []): Employee
 {

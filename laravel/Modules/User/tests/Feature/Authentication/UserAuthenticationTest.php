@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 use Illuminate\Auth\Notifications\VerifyEmail;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\Permission;
@@ -15,6 +17,7 @@ use Modules\User\Tests\Traits\HasUserTestCase;
 uses(TestCase::class, HasUserTestCase::class);
 
 beforeEach(function () {
+    /** @var TestCase $this */
     $user = User::factory()->create([
         'password' => Hash::make('password123'),
         'is_active' => true,
@@ -27,6 +30,7 @@ beforeEach(function () {
 
 describe('User Authentication', function () {
     it('can authenticate with valid credentials', function () {
+        /** @var TestCase $this */
         $result = Auth::attempt([
             'email' => $this->user->email,
             'password' => 'password123',
@@ -37,6 +41,7 @@ describe('User Authentication', function () {
     });
 
     it('cannot authenticate with invalid password', function () {
+        /** @var TestCase $this */
         $result = Auth::attempt([
             'email' => $this->user->email,
             'password' => 'wrongpassword',
@@ -75,6 +80,7 @@ describe('User Authentication', function () {
     });
 
     it('can logout user', function () {
+        /** @var TestCase $this */
         Auth::login($this->user);
         expect(Auth::check())->toBe(true);
 
@@ -96,6 +102,7 @@ describe('User Password Management', function () {
     });
 
     it('can change password', function () {
+        /** @var TestCase $this */
         $newPassword = 'newpassword123';
         $this->user->update([
             'password' => Hash::make($newPassword),
@@ -117,6 +124,7 @@ describe('User Password Management', function () {
     });
 
     it('can set password expiration', function () {
+        /** @var TestCase $this */
         $expirationDate = now()->addDays(90);
         $this->user->update([
             'password_expires_at' => $expirationDate,
@@ -133,6 +141,7 @@ describe('User Password Management', function () {
 
 describe('User Remember Token', function () {
     it('can generate remember token', function () {
+        /** @var TestCase $this */
         $token = Str::random(60);
         $this->user->forceFill(['remember_token' => $token])->save();
 
@@ -140,6 +149,7 @@ describe('User Remember Token', function () {
     });
 
     it('can authenticate using remember token', function () {
+        /** @var TestCase $this */
         $token = Str::random(60);
         $this->user->forceFill(['remember_token' => $token])->save();
 
@@ -199,6 +209,7 @@ describe('User Email Verification', function () {
 
 describe('User Authorization', function () {
     it('can assign and check roles', function () {
+        /** @var TestCase $this */
         $adminRole = Role::factory()->create(['name' => 'admin']);
         $editorRole = Role::factory()->create(['name' => 'editor']);
 
@@ -210,6 +221,7 @@ describe('User Authorization', function () {
     });
 
     it('can assign and check permissions', function () {
+        /** @var TestCase $this */
         $editPermission = Permission::factory()->create(['name' => 'edit posts']);
         $deletePermission = Permission::factory()->create(['name' => 'delete posts']);
 
@@ -221,6 +233,7 @@ describe('User Authorization', function () {
     });
 
     it('can inherit permissions from roles', function () {
+        /** @var TestCase $this */
         $role = Role::factory()->create(['name' => 'editor']);
         $permission = Permission::factory()->create(['name' => 'edit posts']);
 
@@ -231,6 +244,7 @@ describe('User Authorization', function () {
     });
 
     it('can check multiple permissions', function () {
+        /** @var TestCase $this */
         $permission1 = Permission::factory()->create(['name' => 'edit posts']);
         $permission2 = Permission::factory()->create(['name' => 'delete posts']);
 
@@ -241,6 +255,7 @@ describe('User Authorization', function () {
     });
 
     it('can remove roles and permissions', function () {
+        /** @var TestCase $this */
         $role = Role::factory()->create(['name' => 'editor']);
         $permission = Permission::factory()->create(['name' => 'edit posts']);
 
@@ -260,14 +275,17 @@ describe('User Authorization', function () {
 
 describe('User OAuth Authentication', function () {
     it('can have oauth clients', function () {
-        expect($this->user->clients())->toBeInstanceOf(Illuminate\Database\Eloquent\Relations\MorphMany::class);
+        /** @var TestCase $this */
+        expect($this->user->clients())->toBeInstanceOf(MorphMany::class);
     });
 
     it('can have oauth tokens', function () {
+        /** @var TestCase $this */
         expect($this->user->tokens())->toBeInstanceOf(HasMany::class);
     });
 
     it('can find user for passport', function () {
+        /** @var TestCase $this */
         $user = User::findForPassport($this->user->email);
 
         expect($user)->not->toBeNull();
@@ -275,6 +293,7 @@ describe('User OAuth Authentication', function () {
     });
 
     it('can validate password for passport', function () {
+        /** @var TestCase $this */
         $isValid = $this->user->validateForPassportPasswordGrant('password123');
 
         expect($isValid)->toBe(true);
@@ -283,17 +302,20 @@ describe('User OAuth Authentication', function () {
 
 describe('User Authentication Logging', function () {
     it('can log authentication attempts', function () {
-        expect($this->user->authentications())->toBeInstanceOf(Illuminate\Database\Eloquent\Relations\MorphMany::class);
+        /** @var TestCase $this */
+        expect($this->user->authentications())->toBeInstanceOf(MorphMany::class);
     });
 
     it('can get latest authentication log', function () {
+        /** @var TestCase $this */
         expect($this->user->latestAuthentication())
-            ->toBeInstanceOf(Illuminate\Database\Eloquent\Relations\MorphOne::class);
+            ->toBeInstanceOf(MorphOne::class);
     });
 });
 
 describe('User Session Management', function () {
     it('can store user in session', function () {
+        /** @var TestCase $this */
         Auth::login($this->user);
 
         expect(Auth::check())->toBe(true);
@@ -301,12 +323,14 @@ describe('User Session Management', function () {
     });
 
     it('can remember user across sessions', function () {
+        /** @var TestCase $this */
         Auth::login($this->user, true);
 
         expect($this->user->fresh()->remember_token)->not->toBeNull();
     });
 
     it('can clear user session on logout', function () {
+        /** @var TestCase $this */
         Auth::login($this->user);
         expect(Auth::check())->toBe(true);
 
@@ -317,12 +341,14 @@ describe('User Session Management', function () {
 
 describe('User Two Factor Authentication', function () {
     it('can enable two factor authentication', function () {
+        /** @var TestCase $this */
         $this->user->update(['is_otp' => true]);
 
         expect($this->user->fresh()->is_otp)->toBe(true);
     });
 
     it('can disable two factor authentication', function () {
+        /** @var TestCase $this */
         $this->user->update(['is_otp' => false]);
 
         expect($this->user->fresh()->is_otp)->toBe(false);

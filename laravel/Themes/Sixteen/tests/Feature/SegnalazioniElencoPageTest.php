@@ -1,12 +1,11 @@
 <?php
 
 declare(strict_types=1);
-use Tests\TestCase;
 
-uses(TestCase::class);
+uses(Tests\TestCase::class);
 
 test('homepage loads successfully', function (): void {
-    /** @var TestCase $this */
+    /** @var Tests\TestCase $this */
     $response = $this->get('/it');
 
     $response->assertStatus(200);
@@ -14,7 +13,7 @@ test('homepage loads successfully', function (): void {
 });
 
 test('homepage has required components', function (): void {
-    /** @var TestCase $this */
+    /** @var Tests\TestCase $this */
     $response = $this->get('/it');
 
     $response->assertStatus(200);
@@ -24,7 +23,7 @@ test('homepage has required components', function (): void {
 });
 
 test('homepage has breadcrumb', function (): void {
-    /** @var TestCase $this */
+    /** @var Tests\TestCase $this */
     $response = $this->get('/it');
 
     $response->assertStatus(200);
@@ -34,7 +33,7 @@ test('homepage has breadcrumb', function (): void {
 });
 
 test('homepage has map and list tabs', function (): void {
-    /** @var TestCase $this */
+    /** @var Tests\TestCase $this */
     $response = $this->get('/it');
 
     $response->assertStatus(200);
@@ -43,7 +42,7 @@ test('homepage has map and list tabs', function (): void {
 });
 
 test('homepage has filters', function (): void {
-    /** @var TestCase $this */
+    /** @var Tests\TestCase $this */
     $response = $this->get('/it');
 
     $response->assertStatus(200);
@@ -51,7 +50,7 @@ test('homepage has filters', function (): void {
 });
 
 test('homepage has cta section', function (): void {
-    /** @var TestCase $this */
+    /** @var Tests\TestCase $this */
     $response = $this->get('/it');
 
     $response->assertStatus(200);
@@ -60,7 +59,7 @@ test('homepage has cta section', function (): void {
 });
 
 test('homepage has contacts section', function (): void {
-    /** @var TestCase $this */
+    /** @var Tests\TestCase $this */
     $response = $this->get('/it');
 
     $response->assertStatus(200);
@@ -68,7 +67,7 @@ test('homepage has contacts section', function (): void {
 });
 
 test('homepage has rating feedback', function (): void {
-    /** @var TestCase $this */
+    /** @var Tests\TestCase $this */
     $response = $this->get('/it');
 
     $response->assertStatus(200);
@@ -76,7 +75,7 @@ test('homepage has rating feedback', function (): void {
 });
 
 test('segnalazioni elenco test page loads successfully', function (): void {
-    /** @var TestCase $this */
+    /** @var Tests\TestCase $this */
     $response = $this->get('/it/tests/ticket-list');
 
     $response->assertStatus(200);

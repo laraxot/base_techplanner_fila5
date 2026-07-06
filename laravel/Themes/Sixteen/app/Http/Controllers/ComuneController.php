@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Http\Controllers;
 
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\View\View;
@@ -83,7 +82,7 @@ class ComuneController extends Controller
     /**
      * Invia messaggio di contatto
      */
-    public function sendContact(Request $request): RedirectResponse
+    public function sendContact(Request $request): \Illuminate\Http\RedirectResponse
     {
         $request->validate([
             'nome' => 'required|string|max:255',

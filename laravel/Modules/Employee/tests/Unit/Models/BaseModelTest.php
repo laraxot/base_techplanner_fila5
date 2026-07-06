@@ -6,6 +6,9 @@ namespace Modules\Employee\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Employee\Models\BaseModel;
+use Modules\Employee\Tests\TestCase;
+
+uses(TestCase::class);
 
 test('base model extends eloquent model', function () {
     expect($this->baseModel)->toBeInstanceOf(Model::class);

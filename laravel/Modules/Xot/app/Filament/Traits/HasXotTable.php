@@ -19,9 +19,6 @@ use Filament\Actions\ViewAction;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
 use Filament\Tables;
-use Filament\Tables\Columns\Column;
-use Filament\Tables\Columns\ColumnGroup;
-use Filament\Tables\Columns\Layout\Component as LayoutComponent;
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Enums\FiltersLayout;
@@ -79,7 +76,7 @@ trait HasXotTable
      * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
-     * @return array<int|string, Action|ActionGroup>
+     * @return array<string, Action|ActionGroup>
      */
     public function getTableHeaderActions(): array
     {
@@ -94,24 +91,24 @@ trait HasXotTable
 
         // dddx(method_exists($resource, 'canAttach'));
 
-        $actions = [
-            CreateAction::make(),
-        ];
+        $actions = [];
+
+        $actions['create'] = CreateAction::make();
 
         if ($this->shouldShowAssociateAction()) {
-            $actions[] = AssociateAction::make()
+            $actions['associate'] = AssociateAction::make()
                 ->label('')
                 ->icon('heroicon-o-paper-clip');
         }
 
         if (is_object($resource) && method_exists($resource, 'canAttach')) {
-            $actions[] = AttachAction::make()
+            $actions['attach'] = AttachAction::make()
                 ->icon('heroicon-o-link')
                 ->iconButton()
                 ->visible(static fn (): bool => (bool) $resource->canAttach());
         }
 
-        $actions[] = TableLayoutToggleTableAction::make('layout');
+        $actions['layout'] = TableLayoutToggleTableAction::make('layout');
 
         return $actions;
     }
@@ -121,7 +118,7 @@ trait HasXotTable
      *
      * In content-grid ogni riga mostra label e valore sulla stessa linea (es. «Ente: 123»).
      *
-     * @return array<int, Column|ColumnGroup|LayoutComponent>
+     * @return array<int, Tables\Columns\Column|Stack>
      */
     public function getGridTableColumns(): array
     {
@@ -135,7 +132,7 @@ trait HasXotTable
 
                 $gridColumn->formatStateUsing(
                     static function (mixed $state) use ($labelText): string {
-                        if (null === $state || '' === $state) {
+                        if ($state === null || $state === '') {
                             return $labelText.': —';
                         }
 
@@ -211,23 +208,23 @@ trait HasXotTable
             ->filtersLayout(FiltersLayout::AboveContent)
             ->filtersFormColumns($this->getTableFiltersFormColumns())
             ->persistFiltersInSession()
-            ->headerActions(array_values($this->getTableHeaderActions()))
-            ->recordActions(array_values($this->getTableActions()))
-            ->bulkActions(array_values($this->getTableBulkActions()))
+            ->headerActions($this->getTableHeaderActions())
+            ->recordActions($this->getTableActions())
+            ->toolbarActions($this->getTableBulkActions())
             ->recordActionsPosition(RecordActionsPosition::BeforeColumns)
-            ->emptyStateActions(array_values($this->getTableEmptyStateActions()))
+            ->emptyStateActions($this->getTableEmptyStateActions())
             ->striped()
             ->paginated($this->getTablePaginated());
 
         // Configurazioni opzionali personalizzabili
         $sortColumn = $this->getDefaultTableSortColumn();
         $sortDirection = $this->getDefaultTableSortDirection();
-        if (null !== $sortColumn && null !== $sortDirection) {
+        if ($sortColumn !== null && $sortDirection !== null) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
 
         $pollInterval = $this->getTablePollInterval();
-        if (null !== $pollInterval) {
+        if ($pollInterval !== null) {
             $table = $table->poll($pollInterval);
         }
 
@@ -254,12 +251,12 @@ trait HasXotTable
      * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
-     * @return array<int|string, Action|ActionGroup>
+     * @return array<string, Action|ActionGroup>
      */
     /**
      * @deprecated override the `table()` method to configure the table
      *
-     * @return array<int|string, Action|ActionGroup>
+     * @return array<string, Action|ActionGroup>
      */
     public function getTableActions(): array
     {
@@ -340,7 +337,7 @@ trait HasXotTable
      * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
-     * @return array<int|string, BulkAction>
+     * @return array<string, BulkAction>
      */
     public function getTableBulkActions(): array
     {
@@ -356,9 +353,10 @@ trait HasXotTable
     /**
      * Get model class.
      *
-     * @throws \Exception Se non viene trovata una classe modello valida
      *
      * @return class-string<Model>
+     *
+     * @throws \Exception Se non viene trovata una classe modello valida
      */
     public function getModelClass(): string
     {
@@ -384,13 +382,13 @@ trait HasXotTable
     {
         $search = $this->tableSearch ?? null;
 
-        return null !== $search ? SafeStringCastAction::cast($search) : null;
+        return $search !== null ? SafeStringCastAction::cast($search) : null;
     }
 
     /**
      * Get list table columns.
      *
-     * @return array<string, Column>
+     * @return array<string, Tables\Columns\Column>
      */
     abstract protected function getTableColumns(): array;
 
@@ -426,7 +424,7 @@ trait HasXotTable
     /**
      * Get table empty state actions.
      *
-     * @return array<int|string, Action>
+     * @return array<string, Action>
      */
     protected function getTableEmptyStateActions(): array
     {
@@ -481,7 +479,7 @@ trait HasXotTable
      * Get table pagination options.
      * Can return bool (true/false) or array of page sizes [10, 25, 50, 100].
      *
-     * @return bool|array<int, int|string>
+     * @return bool|array<int>
      */
     protected function getTablePaginated(): bool|array
     {

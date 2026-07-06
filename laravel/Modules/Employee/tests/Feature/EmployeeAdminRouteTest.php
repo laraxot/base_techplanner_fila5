@@ -6,8 +6,9 @@ namespace Modules\Employee\Tests\Feature;
 
 use Filament\Facades\Filament;
 use Filament\Panel;
+use Modules\Employee\Tests\TestCase;
 
-uses(\Modules\Employee\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Employee Admin Route', function () {
     it('redirects to login when not authenticated', function () {

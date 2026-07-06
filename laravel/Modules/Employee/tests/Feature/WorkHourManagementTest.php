@@ -7,6 +7,9 @@ namespace Modules\Employee\Tests\Feature;
 use Carbon\Carbon;
 use Modules\Employee\Enums\WorkHourTypeEnum;
 use Modules\Employee\Models\WorkHour;
+use Modules\Employee\Tests\TestCase;
+
+uses(TestCase::class);
 
 beforeEach(function () {
     $this->employee = createEmployee();

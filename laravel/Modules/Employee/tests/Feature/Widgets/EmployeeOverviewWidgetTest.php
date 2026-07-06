@@ -9,6 +9,9 @@ use Livewire\Livewire;
 use Modules\Employee\Filament\Widgets\EmployeeOverviewWidget;
 use Modules\Employee\Models\Employee;
 use Modules\Employee\Models\WorkHour;
+use Modules\Employee\Tests\TestCase;
+
+uses(TestCase::class);
 
 /**
  * Test per il widget EmployeeOverviewWidget.

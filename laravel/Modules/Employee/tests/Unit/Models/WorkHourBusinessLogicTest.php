@@ -6,6 +6,9 @@ namespace Modules\Employee\Tests\Unit\Models;
 
 use Carbon\Carbon;
 use Modules\Employee\Models\WorkHour;
+use Modules\Employee\Tests\TestCase;
+
+uses(TestCase::class);
 
 beforeEach(function () {
     $this->employee = createEmployee();

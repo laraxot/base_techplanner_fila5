@@ -7,7 +7,6 @@ namespace Themes\Sixteen\Filters;
 use Exception;
 use Illuminate\Support\Facades\Route;
 use Themes\Sixteen\Contracts\MenuFilterInterface;
-
 use function Safe\parse_url;
 
 /**

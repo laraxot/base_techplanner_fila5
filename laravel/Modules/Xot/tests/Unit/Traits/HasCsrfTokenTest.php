@@ -10,13 +10,15 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 it('sets csrf token on mount', function (): void {
+    /** @var TestCase $this */
     $token = 'test-token-123';
 
     $session = Mockery::mock();
     $session->allows(['token' => $token]);
     App::instance('session', $session);
 
-    $class = new class {
+    $class = new class()
+    {
         public string $_token = '';
 
         public function mount(): void
@@ -37,9 +39,11 @@ it('sets csrf token on mount', function (): void {
 });
 
 it('verifies csrf token', function (): void {
+    /** @var TestCase $this */
     $token = 'secret-token';
 
-    $class = new class {
+    $class = new class()
+    {
         public string $_token = '';
 
         public function verifyCsrfToken(): bool

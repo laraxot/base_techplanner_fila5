@@ -9,7 +9,10 @@ use Livewire\Livewire;
 use Modules\Employee\Filament\Widgets\TimeTrackingWidget;
 use Modules\Employee\Models\Employee;
 use Modules\Employee\Models\WorkHour;
+use Modules\Employee\Tests\TestCase;
 use Modules\User\Models\User;
+
+uses(TestCase::class);
 
 /**
  * Test per il widget TimeTrackingWidget.

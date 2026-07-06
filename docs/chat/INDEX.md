@@ -51,6 +51,9 @@ Canon: [multi-agent-coordination-discipline.md](../wiki/how-to/multi-agent-coord
 | 2026-06-06 | [handoff-bmad-architecture-one-migration-per-model-2026-06-06.md](./handoff-bmad-architecture-one-migration-per-model-2026-06-06.md) | N modelli = N migrazioni create_* per modulo | [#23](https://github.com/laraxot/base_techplanner_fila5/issues/23) |
 | 2026-06-06 | [handoff-composer-go-2026-06-06.md](./handoff-composer-go-2026-06-06.md) | composer go + fix blocks.governance.cards | [#21](https://github.com/laraxot/base_techplanner_fila5/issues/21) |
 
+| 2026-07-06 | [phpstan-pest-this-binding-fix-2026-07-06.md](./phpstan-pest-this-binding-fix-2026-07-06.md) | Fix sistemico Pest `$this` binding (AST-based) + collisione lock Geo revertita | [#34](https://github.com/laraxot/base_techplanner_fila5/issues/34) |
+| 2026-07-06 | [phpstan-modules-progress-2026-07-06-pm.md](./phpstan-modules-progress-2026-07-06-pm.md) | Blog e Comment a 0 errori PHPStan, nota bug ambiente DB test | [#34](https://github.com/laraxot/base_techplanner_fila5/issues/34) |
+
 ## Sessioni archivio
 
 | Data | Slug | Argomento |
