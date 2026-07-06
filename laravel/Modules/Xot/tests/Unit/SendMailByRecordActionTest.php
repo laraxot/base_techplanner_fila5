@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Mail\SendMailByRecordAction;
 use Modules\Xot\Tests\TestCase;
+
+uses(TestCase::class);
 
 it('throws if record has no email', function (): void {
     /** @var TestCase $this */

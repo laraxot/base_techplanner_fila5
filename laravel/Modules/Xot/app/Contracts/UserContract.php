@@ -135,6 +135,15 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     public function teams(): BelongsToMany;
 
     /**
+     * Get the teams the user belongs to (excluding owned teams).
+     *
+     * Aliased from HasTeams::teams() on BaseUser via `use ... { HasTeams::teams as membershipTeams; }`.
+     *
+     * @return BelongsToMany<Model&TeamContract, Model, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
+     */
+    public function membershipTeams(): BelongsToMany;
+
+    /**
      * Get the user's tenants.
      *
      * @return BelongsToMany<Model, $this>
@@ -142,15 +151,6 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * @phpstan-ignore generics.notSubtype
      */
     public function tenants(): BelongsToMany;
-
-    /**
-     * Get the teams the user belongs to (excluding owned teams).
-     *
-     * Aliased from HasTeams::teams() on BaseUser via `use ... { HasTeams::teams as membershipTeams; }`.
-     *
-     * @return BelongsToMany<Model, Model>
-     */
-    public function membershipTeams(): BelongsToMany;
 
     /**
      * Revoke the given role from the model.

@@ -13,6 +13,7 @@ use Modules\Employee\Models\User;
 use Modules\Employee\Models\WorkHour;
 use Modules\Employee\Providers\EmployeeServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
+use PHPUnit\Framework\Assert;
 
 /**
  * Base test case per il modulo Employee.
@@ -52,5 +53,33 @@ abstract class TestCase extends XotBaseTestCase
             ...parent::getPackageProviders($app),
             EmployeeServiceProvider::class,
         ];
+    }
+
+    public function employee(): Employee
+    {
+        Assert::assertNotNull($this->employee);
+
+        return $this->employee;
+    }
+
+    public function workHourModel(): WorkHour
+    {
+        Assert::assertNotNull($this->workHour);
+
+        return $this->workHour;
+    }
+
+    public function todayDate(): Carbon
+    {
+        Assert::assertNotNull($this->today);
+
+        return $this->today;
+    }
+
+    public function user(): User
+    {
+        Assert::assertNotNull($this->user);
+
+        return $this->user;
     }
 }

@@ -16,6 +16,13 @@ discussions:
 
 # TechPlanner LLM Wiki Log
 
+## 2026-07-06
+
+- **PHPStan Modules zero errors (4th iteration)** — `./vendor/bin/phpstan analyse Modules` → **0 errori**. Ultimi 3 fixati in `User/app/Models/Traits/HasTeams.php`: `@phpstan-ignore return.type` per invarianza `BelongsToMany<TDeclaringModel>` quando `belongsToManyX()` restituisce `$this` ma il contratto dichiara `Model`. Pattern già esistente in `UserContract.php:151`.
+- **PHIVE installato** — `~/.local/bin/phive` v0.16.0; php-cs-fixer già globale (`/usr/local/bin/php-cs-fixer` v3.95.11)
+- **Cleanup completato** — nessun `PhpstanTraitProbe`, `app/Phpstan`, `pest.php` (minuscolo) presente
+- **QMD non disponibile** — binario `qmd` non trovato; `llm-wiki-qmd.sh` richiede installazione
+
 ## 2026-06-07
 
 - **PHPStan Modules zero errori** — da `laravel/`: `./vendor/bin/phpstan analyse Modules --memory-limit=-1` → **4993 file, [OK] No errors**. Fix principali: Comment generic/view-string/class-string, Blog `ProfileContract` no Fixcity, Xot form fill/view/string palette, Geo raw SQL con binding, Notify enum/attachment shape, Employee case-only page.

@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Modules\Xot\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Xot\Actions\Config\GetTenantConfigPathAction;
 use Modules\Xot\Tests\TestCase;
@@ -10,6 +9,8 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_put_contents;
 use function Safe\unlink;
+
+uses(TestCase::class);
 
 it('returns empty array when tenant config file does not exist', function (): void {
     /** @var TestCase $this */

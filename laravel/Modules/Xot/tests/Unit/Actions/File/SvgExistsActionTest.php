@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Modules\Xot\Actions\File\SvgExistsAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+uses(TestCase::class);
 
 it('verifies svg existence', function (): void {
     /** @var TestCase $this */

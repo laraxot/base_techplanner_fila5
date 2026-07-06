@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
@@ -11,6 +10,8 @@ use Modules\Xot\Actions\File\GetModulePathAction;
 use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('handles absolute urls in AssetAction', function (): void {
     /** @var TestCase $this */

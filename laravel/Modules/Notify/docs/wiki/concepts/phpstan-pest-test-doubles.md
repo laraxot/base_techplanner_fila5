@@ -51,6 +51,12 @@ Espongono metodi `public` che delegano ai `protected` del trait — pattern KISS
 
 Preferire `createStub` / `createUnitMock` + `expectsOnce()` da `XotBaseTestCase`, non `Mockery::shouldReceive()->once()` (PHPStan L10 su union Mockery).
 
+### 4. Test reflection PHPStan-safe
+
+- Usare `Safe\class_uses()` e `Safe\file_get_contents()` nei test strutturali.
+- Prima di chiamare `ReflectionType::getName()`, restringere a `ReflectionNamedType`; `ReflectionUnionType` e `ReflectionIntersectionType` non espongono `getName()`.
+- `ReflectionClass::getFileName()` puo restituire `false`: verificare e passare una stringa a `file_get_contents()`.
+
 ## Cosa resta per Notify
 
 | Task | Priorità |

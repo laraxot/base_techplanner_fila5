@@ -2,12 +2,13 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Actions\File\ViewPathAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('calculates view path correctly', function (): void {
     /** @var TestCase $this */

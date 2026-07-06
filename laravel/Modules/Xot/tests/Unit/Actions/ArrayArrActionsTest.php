@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Filament\Support\RawJs;
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction as ArrDiffAssocRecursiveAction;
 use Modules\Xot\Actions\Arr\RangeIntersectAction as ArrRangeIntersectAction;
@@ -19,6 +18,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 use function Safe\mkdir;
+uses(TestCase::class);
 
 it('normalizes nested numeric strings in diff fixType for Arr namespace', function (): void {
     $input = ['items' => [

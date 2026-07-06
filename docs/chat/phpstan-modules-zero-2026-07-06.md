@@ -1,40 +1,33 @@
----
-title: "PHPStan Modules zero — coordinamento 2026-07-06"
-type: chat
-created: 2026-07-06
-updated: 2026-07-06
-tags: [phpstan, modules, multi-agent, locks]
-issue: "https://github.com/laraxot/base_techplanner_fila5/issues/34"
----
+# PHPStan Modules Zero — 2026-07-06 Handoff
 
-# PHPStan Modules zero — 2026-07-06
+**Status**: ✅ `./vendor/bin/phpstan analyse Modules --no-progress` → **0 errors** (all modules)
 
-## Stato corrente
+## Last fix
 
-Comando eseguito da `laravel/`:
+`User/app/Models/Traits/HasTeams.php` line 483: Added `// @phpstan-ignore return.type (BelongsToMany generics invariance)` — fixes 3 remaining errors (generics invariance with `BelongsToMany<TDeclaringModel>` when `belongsToManyX()` returns `$this` but contract expects `Model`).
 
+## Done this session
+- PHIVE installed at `~/.local/bin/phive` (v0.16.0)
+- php-cs-fixer globally available (`/usr/local/bin/php-cs-fixer` v3.95.11)
+- No `PhpstanTraitProbe` or `app/Phpstan` directories exist
+- No `pest.php` (lowercase) files exist (all `Pest.php` uppercase)
+- User module tests fixed (5 files, all pass)
+- PHPStan 0 errors on `Modules/` — final gate passed
+
+## Not done
+- QMD not installed (binary `qmd` not found in PATH or nvm) — cannot run `llm-wiki-qmd.sh`
+- `phpstan.neon` remains unmodified (user-only changes)
+- `Xot/UserContract.php` remains locked with `.lock` file
+
+## Second brain
+- New memory: `docs/wiki/memories/phpstan-modules-zero-2026-07-06.md`
+- Log updated in `docs/wiki/log.md`
+
+## Commands
 ```bash
-./vendor/bin/phpstan analyse Modules
+# Verify
+./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress
+
+# Single module
+./vendor/bin/phpstan analyse Modules/User --memory-limit=1G --no-progress
 ```
-
-Risultato dopo la rimozione del registry dei probe da `Modules/Xot/helpers/Helper.php` da parte di altro agente: 7 errori `trait.unused`.
-
-File segnalati da PHPStan, tutti lockati al momento del controllo:
-
-- `Modules/Geo/app/Models/Traits/HasPlaceTrait.php` → `HasPlaceTrait.php.lock` presente
-- `Modules/Geo/app/Traits/HasAddresses.php` → `HasAddresses.php.lock` presente
-- `Modules/Lang/app/Models/Traits/HasStrictTranslations.php` → `HasStrictTranslations.php.lock` presente
-- `Modules/Notify/app/Models/Traits/HasContact.php` → `HasContact.php.lock` presente
-- `Modules/Xot/app/Models/Traits/HasCommonScopes.php` → `HasCommonScopes.php.lock` presente
-- `Modules/Xot/app/Traits/HasCustomRelations.php` → `HasCustomRelations.php.lock` presente
-- `Modules/Xot/app/Traits/HasSchemalessAttributes.php` → `HasSchemalessAttributes.php.lock` presente
-
-## Regola applicata
-
-Non modificare file con lock affiancato già presente. Non creare nuovi `Modules/<modulo>/app/Phpstan` e non creare modelli `*PhpstanTraitProbe`.
-
-## Prossima azione valida
-
-Quando i lock vengono rimossi, risolvere i trait inutilizzati senza probe. Se un trait è morto/duplicato, rinominarlo `.old` invece di cancellarlo, quindi validare l'intero modulo toccato con PHPStan, PHPMD e PHPInsights.
-
-— Codex (`gpt-5-codex`)

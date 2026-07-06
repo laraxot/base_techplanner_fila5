@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Modules\Tenant\Database\Factories\TenantFactory;
 use Modules\Tenant\Models\Tenant;
 use Modules\User\Database\Factories\UserFactory;
@@ -10,6 +9,8 @@ use Modules\User\Models\User;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('can create a test user', function () {
     $email = 'test-'.uniqid('', true).'@example.com';

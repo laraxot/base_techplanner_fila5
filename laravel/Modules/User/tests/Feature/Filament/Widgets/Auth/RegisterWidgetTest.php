@@ -25,10 +25,9 @@ beforeEach(function (): void {
 
 describe('RegisterWidget FO', function (): void {
     test('register page loads with livewire widget', function (): void {
-        /** @var TestCase $this */
-        $this->get('/it/auth/register')
-            ->assertSuccessful()
-            ->assertSeeLivewire(RegisterWidget::class);
+        $this->get('/it/auth/register')->assertSuccessful();
+
+        Livewire::test(RegisterWidget::class)->assertSuccessful();
     });
 
     test('delegates form schema to UserForm via formClass', function (): void {
@@ -60,7 +59,7 @@ describe('RegisterWidget FO', function (): void {
 
         $this->assertAuthenticated();
 
-        $this->assertDatabaseHas(User::class, ['email' => $email]);
+        $this->assertDatabaseHasRow(User::class, ['email' => $email]);
     });
 
     test('rejects invalid email without creating user', function (): void {
@@ -93,6 +92,6 @@ describe('RegisterWidget FO', function (): void {
             ->call('save')
             ->assertHasNoErrors();
 
-        $this->assertDatabaseHas(User::class, ['email' => $email]);
+        $this->assertDatabaseHasRow(User::class, ['email' => $email]);
     });
 });

@@ -2,12 +2,13 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Illuminate\Support\Facades\Session;
 use Modules\Xot\Actions\Model\DestroyAction;
 use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('deletes model and returns it', function (): void {
     /** @var TestCase $this */
