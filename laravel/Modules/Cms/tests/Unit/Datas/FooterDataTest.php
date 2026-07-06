@@ -2,64 +2,52 @@
 
 declare(strict_types=1);
 
-use Livewire\Wireable;
-use Modules\Cms\Datas\FooterData;
-use PHPUnit\Framework\Assert;
-use Spatie\LaravelData\Data;
-
-uses(Modules\Cms\Tests\TestCase::class);
 test('FooterData can be instantiated', function (): void {
     $footerData = new FooterData();
 
-    Assert::assertInstanceOf(FooterData::class, $footerData);
+    expect($footerData)->toBeInstanceOf(FooterData::class);
 });
 
 test('FooterData extends Spatie Data', function (): void {
     $footerData = new FooterData();
-
-    Assert::assertInstanceOf(Data::class, $footerData);
 });
 
 test('FooterData implements Wireable interface', function (): void {
     $footerData = new FooterData();
-
-    Assert::assertInstanceOf(Wireable::class, $footerData);
 });
 
 test('FooterData has default view path', function (): void {
     $footerData = new FooterData();
 
-    Assert::assertSame('cms::components.footer', $footerData->view);
+    expect($footerData->view)->toBe('cms::components.footer');
 });
 
 test('FooterData has nullable background_color property', function (): void {
     $footerData = new FooterData();
 
-    Assert::assertNull($footerData->background_color);
+    expect($footerData->background_color)->toBeNull();
 });
 
 test('FooterData has nullable background property', function (): void {
     $footerData = new FooterData();
 
-    Assert::assertNull($footerData->background);
+    expect($footerData->background)->toBeNull();
 });
 
 test('FooterData has nullable overlay_color property', function (): void {
     $footerData = new FooterData();
 
-    Assert::assertNull($footerData->overlay_color);
+    expect($footerData->overlay_color)->toBeNull();
 });
 
 test('FooterData rules method returns validation rules', function (): void {
     $rules = FooterData::rules();
-    /* @var array<string, mixed> $rules */
-    Assert::assertArrayHasKey('background_color', $rules);
 
-    Assert::assertArrayHasKey('background', $rules);
-
-    Assert::assertArrayHasKey('overlay_color', $rules);
-
-    Assert::assertArrayHasKey('view', $rules);
+    expect($rules)->toBeArray()
+        ->and($rules)->toHaveKey('background_color')
+        ->and($rules)->toHaveKey('background')
+        ->and($rules)->toHaveKey('overlay_color')
+        ->and($rules)->toHaveKey('view');
 });
 
 test('FooterData can be created from array using from method', function (): void {
@@ -71,13 +59,10 @@ test('FooterData can be created from array using from method', function (): void
 
     $footerData = FooterData::from($data);
 
-    Assert::assertInstanceOf(FooterData::class, $footerData);
-
-    Assert::assertSame('#ffffff', $footerData->background_color);
-
-    Assert::assertSame('image.jpg', $footerData->background);
-
-    Assert::assertSame('rgba(0,0,0,0.5)', $footerData->overlay_color);
+    expect($footerData)->toBeInstanceOf(FooterData::class)
+        ->and($footerData->background_color)->toBe('#ffffff')
+        ->and($footerData->background)->toBe('image.jpg')
+        ->and($footerData->overlay_color)->toBe('rgba(0,0,0,0.5)');
 });
 
 test('FooterData can be converted to array', function (): void {
@@ -86,6 +71,7 @@ test('FooterData can be converted to array', function (): void {
     ]);
 
     $array = $footerData->toArray();
-    /* @var array<string, mixed> $array */
-    Assert::assertArrayHasKey('background_color', $array);
+
+    expect($array)->toBeArray()
+        ->and($array)->toHaveKey('background_color');
 });

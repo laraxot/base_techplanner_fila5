@@ -27,7 +27,6 @@ parameters:
         # - identifier: function.alreadyNarrowedType
 
     excludePaths:
-        - ./vendor/*
         - ./*/vendor/*
         - ./*/build/*
         - ./*/docs/*
